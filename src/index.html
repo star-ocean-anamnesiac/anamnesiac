@@ -23,14 +23,6 @@
     <meta name="msapplication-TileColor" content="#052697">
     <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
     <meta name="theme-color" content="#052697">
-
-    <script>
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/ngsw-worker.js')
-          .then(() => console.log('Service worker installed!'))
-          .catch(err => console.error('Error', err));
-      }
-    </script>
 </head>
   <body>
     <app-root></app-root>
