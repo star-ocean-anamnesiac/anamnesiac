@@ -62,6 +62,12 @@ export class CharacterListPage implements OnInit, OnDestroy {
   }
 
   public loadCharacter(char: Character) {
+
+    if(char.name === this.getPreviouslyLoadedChar()) {
+      this.loadCharacterModal(char.name);
+      return;
+    }
+
     this.router.navigate([], {
       relativeTo: this.activatedRoute,
       queryParams: {
@@ -353,7 +359,7 @@ export class CharacterModal implements OnInit {
 
     this.tabs.select('stats');
 
-    this.notes = markdown.toHTML(this.char.notes.trim());
+    this.notes = markdown.toHTML((this.char.notes || '').trim());
   }
 
   dismiss() {
