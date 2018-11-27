@@ -6,7 +6,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve -o --port 6789",
-    "build": "ng build",
+    "build": "ng build --prod",
     "lint": "ng lint"
   },
   "private": true,

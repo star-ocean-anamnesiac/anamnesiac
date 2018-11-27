@@ -86,8 +86,8 @@ export interface Character {
   // the list of skills for the character. see above for what this contains.
   skills: Skill[];
 
-  // the rush effect for the character. it can contain fields from Effect and Skill
-  rush: Effect & Skill;
+  // the rush effect for the character. it can contain fields from Talent and Skill
+  rush: Talent & Skill;
 
   // the personalized notes for the character. long form text can be entered here.
   notes?: string;
