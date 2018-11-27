@@ -5,11 +5,6 @@ import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 
 if (environment.production) {
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/ngsw-worker.js')
-      .then(() => console.log('Service worker installed!'))
-      .catch(err => console.error('Error', err));
-  }
   enableProdMode();
 }
 
