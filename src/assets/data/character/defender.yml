@@ -1,0 +1,67 @@
+
+- name: A2
+  cat: gl
+  rating: 10
+  picture: https://vignette.wikia.nocookie.net/starocean/images/b/b1/A2_icon.png/revision/latest?cb=20180817021940
+  weapon: greatsword
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 21945
+    atk: 3041
+    int: 1510
+    def: 2789
+    hit: 833
+    grd: 1043
+
+  talents:
+    - name: "Vortex of Hatred"
+      effects: 
+        - desc: HP +20%
+          all: true
+        - desc: Will not flinch to damage under 20% max HP
+          all: true
+    - name: "Dark Impulse"
+      effects: 
+        - desc: AP 100% Recovery when Just Timing evasion
+        - desc: Recover 10 AP to all allies when Just Timing evasion
+    - name: "Blade of Inorganic"
+      effects: 
+        - desc: Single target damage +20%
+          all: true
+        - desc: Single target damage +40% when HP is 100%
+          all: true
+    - name: "Beautiful World"
+      effects: 
+        - desc: ATK +20%
+        - desc: DEF +20%
+
+  skills:
+    - name: "YoRHa Arms: Eleven"
+      power: ATK x600%
+      ap: 27
+      maxHits: 5
+    - name: "YoRHa Arms: Twelve"
+      power: ATK x1240%
+      ap: 52
+      maxHits: 4
+    - name: "YoRHa Pod: One"
+      power: ATK x180%
+      ap: 13
+      maxHits: 1
+    - name: "YoRHa Pod: Two"
+      power: ATK x380%
+      ap: 20
+      maxHits: 1
+      
+  rush:
+    name: "YoRHa Arms: One Hundred"
+    effects: 
+      - desc: Single Target Damage +50%
+        duration: 20
+      - desc: Recover 15% of max HP every 3 seconds
+        duration: 20
+    power: ATK x4500%
+    maxHits: 25

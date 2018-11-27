@@ -1,0 +1,70 @@
+
+- name: Sophia Esteed (Summer)
+  cat: gl
+  rating: 8
+  picture: https://vignette.wikia.nocookie.net/starocean/images/c/cf/Everlasting_summer_sophia_esteed_icon.png/revision/latest?cb=20180817014337
+  weapon: orb
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 13965
+    atk: 1747
+    int: 3010
+    def: 1327
+    hit: 1050
+    grd: 1148
+
+  talents:
+    - name: "Witch of the Beach"
+      effects: 
+        - desc: INT +20%
+        - desc: Recover allies AP when using offensive symbology
+    - name: "Master at Rallying"
+      effects: 
+        - desc: AP consumption -40%
+        - desc: INT damage -30% when skill chain 3+
+    - name: "Cat Beachball & Cat Sandals"
+      effects: 
+        - desc: ATK/INT damage +20%
+          all: true
+        - desc: Nullify "movement speed down" effect
+          all: Close Range
+    - name: "Connection (Eternal Summer)"
+      effects: 
+        - desc: Reduce symbology cast time by 30%
+        - desc: AP consumption -10%
+
+  skills:
+    - name: "Lightning Wave"
+      element: Thunder
+      power: INT x???%
+      ap: 20
+      maxHits: 0
+    - name: "Faerie Light Wave"
+      power: INT x???%
+      ap: 30
+      maxHits: 0
+    - name: "Lightning Strike"
+      element: Thunder
+      power: +25% ATK to party
+      ap: 47
+      maxHits: 0
+    - name: "Thunder Flare Wave"
+      power: INT x???%
+      ap: 0
+      maxHits: 0
+      
+  rush:
+    name: "Lightning Serve"
+    element: Thunder
+    effects: 
+      - desc: +40% INT
+        all: true
+        duration: 20
+      - desc: Recover 50% HP
+        all: true
+        duration: 20
+    power: INT x3000%
+    maxHits: 0

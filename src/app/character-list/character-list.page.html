@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Characters
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="blank-slate" *ngIf="isError">
+    No characters match this filter.
+  </div>
+
+  <div class="blank-slate" *ngIf="allCharacters.length === 0">
+      <ion-spinner></ion-spinner> &nbsp;&nbsp;&nbsp; Loading...
+  </div>
+
+  <ion-list>
+    <ion-list-header>
+      <ion-label><strong>Top Tier (10/10)</strong></ion-label>
+    </ion-list-header>
+
+    <ion-item *ngFor="let char of sortedCharacters.top" detail (click)="loadCharacter(char)">
+      <ng-container *ngTemplateOutlet="character; context: { char: char }"></ng-container>
+    </ion-item>
+    
+    <ion-list-header>
+      <ion-label><strong>Great (8-9/10)</strong></ion-label>
+    </ion-list-header>
+
+    <ion-item *ngFor="let char of sortedCharacters.great" detail (click)="loadCharacter(char)">
+      <ng-container *ngTemplateOutlet="character; context: { char: char }"></ng-container>
+    </ion-item>
+    
+    <ion-list-header>
+      <ion-label><strong>Good (6-7/10)</strong></ion-label>
+    </ion-list-header>
+
+    <ion-item *ngFor="let char of sortedCharacters.good" detail (click)="loadCharacter(char)">
+      <ng-container *ngTemplateOutlet="character; context: { char: char }"></ng-container>
+    </ion-item>
+    
+    <ion-list-header>
+      <ion-label><strong>Average (4-5/10)</strong></ion-label>
+    </ion-list-header>
+
+    <ion-item *ngFor="let char of sortedCharacters.average" detail (click)="loadCharacter(char)">
+      <ng-container *ngTemplateOutlet="character; context: { char: char }"></ng-container>
+    </ion-item>
+    
+    <ion-list-header>
+      <ion-label><strong>Bad (1-3/10)</strong></ion-label>
+    </ion-list-header>
+
+    <ion-item *ngFor="let char of sortedCharacters.bad" detail (click)="loadCharacter(char)">
+      <ng-container *ngTemplateOutlet="character; context: { char: char }"></ng-container>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ng-template #character let-char="char">
+  <ion-img slot="start" [src]="'assets/classes/' + char.type + '.png'" class="asset-icon"></ion-img> 
+  <ion-img slot="start" [src]="char.picture" class="mini-picture-icon"></ion-img>
+
+  <ion-label>
+    <h3>{{ char.star }}★ {{ char.name }}</h3>
+    <p>{{ convertWeaponType(char.weapon) }}</p>
+  </ion-label>
+</ng-template>

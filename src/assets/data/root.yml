@@ -1,0 +1,33 @@
+
+classes:
+  - Attacker
+  - Defender
+  - Healer
+  - Invoker
+  - Sharpshooter
+
+weapons:
+  - id: arm
+    name: Arms
+  - id: bns
+    name: Blade & Sheath
+  - id: bow
+    name: Bow
+  - id: dagger
+    name: Dagger
+  - id: greatsword
+    name: Greatsword
+  - id: gun
+    name: Gun
+  - id: knuckle
+    name: Knuckles
+  - id: ohs
+    name: One Handed Sword
+  - id: orb
+    name: Orb
+  - id: staff
+    name: Staff
+
+accessories:
+  - id: all
+    name: All

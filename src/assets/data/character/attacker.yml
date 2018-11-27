@@ -1,0 +1,66 @@
+
+- name: 2B
+  cat: gl
+  rating: 10
+  picture: https://vignette.wikia.nocookie.net/starocean/images/0/0a/2b_icon.png/revision/latest?cb=20180817021908
+  weapon: ohs
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15855
+    atk: 2704
+    int: 1549
+    def: 1969
+    hit: 1134
+    grd: 826
+
+  talents:
+    - name: "Quiet Determination"
+      effects: 
+        - desc: ATK +40%
+          all: true
+        - desc: ATK +60% when HP 100% 
+          all: true
+    - name: "Automated Infantry Android"
+      effects: 
+        - desc: Evasion AP consumption -100% when Just Timing evasion
+    - name: "Silver Protection"
+      effects: 
+        - desc: AP recovery from normal attacks +100%
+          all: true
+    - name: "Prayer"
+      effects: 
+        - desc: Evasion AP consumption -50% 
+        - desc: Enables evasion during air attacks
+        - desc: Imbues attacks with light/dark element
+
+  skills:
+    - name: "YoRHa Arms: One"
+      power: ATK x380%
+      ap: 22
+      maxHits: 2
+    - name: "YoRHa Arms: Two"
+      power: ATK x1100%
+      ap: 42
+      maxHits: 2
+    - name: "YoRHa Pod: One"
+      power: ATK x180%
+      ap: 13
+      maxHits: 1
+    - name: "YoRHa Pod: Two"
+      power: ATK x380%
+      ap: 20
+      maxHits: 1
+
+  rush:
+    name: "YoRHa Arms: Zero"
+    effects: 
+      - desc: All elemental damage +70%
+        duration: 20
+      - desc: All elemental damage +50%
+        all: true
+        duration: 20
+    power: ATK x4000%
+    maxHits: 27

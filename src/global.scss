@@ -9,3 +9,27 @@
 @import '~@ionic/angular/css/text-alignment.css';
 @import '~@ionic/angular/css/text-transformation.css';
 @import '~@ionic/angular/css/flex-utils.css';
+
+.asset-icon {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.mini-picture-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.blank-slate {
+  display: flex;
+  font-size: 250%;
+  color: #888;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: calc(100% - 52px);
+  text-align: center;
+  padding: 20px;
+}

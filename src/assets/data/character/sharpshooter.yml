@@ -1,0 +1,68 @@
+
+- name: 9S
+  cat: gl
+  rating: 10
+  picture: https://vignette.wikia.nocookie.net/starocean/images/1/13/9s_icon.png/revision/latest?cb=20180817021925
+  weapon: ohs
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 14280
+    atk: 2868
+    int: 1537
+    def: 1773
+    hit: 1371
+    grd: 924
+
+  talents:
+    - name: "Fleeting Gentleness"
+      effects: 
+        - desc: ATK +45%
+          all: true
+        - desc: ATK +55% when HP 100%
+          all: true
+    - name: "Scanner Type"
+      effects: 
+        - desc: Evasion AP consumption -50%
+          all: true
+        - desc: Movement speed +30%
+          all: true
+    - name: "Blade of Revenge"
+      effects: 
+        - desc: Enables evasion during air attacks
+        - desc: Movement distance & speed +100%
+    - name: "Whereabouts of Brethren"
+      effects: 
+        - desc: ATK +15%
+        - desc: HIT +10%
+
+  skills:
+    - name: "YoRHa Arms: Three"
+      power: ATK x920%
+      ap: 53
+      maxHits: 1
+    - name: "YoRHa Arms: Four"
+      power: ATK x620%
+      ap: 26
+      maxHits: 1
+    - name: "YoRHa Pod: One"
+      power: ATK x180%
+      ap: 13
+      maxHits: 1
+    - name: "YoRHa Pod: Two"
+      power: ATK x380%
+      ap: 20
+      maxHits: 1
+      
+  rush:
+    name: "YoRHa Hack: Zero"
+    effects: 
+      - desc: Recover 50% HP
+        all: true
+      - desc: ATK damage +30% 
+        duration: 20
+        all: true
+    power: ATK x4000%
+    maxHits: 16

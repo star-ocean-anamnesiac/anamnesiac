@@ -1,0 +1,72 @@
+
+- name: Sophia Esteed
+  cat: gl
+  rating: 8
+  picture: https://vignette.wikia.nocookie.net/starocean/images/3/3b/Sophia_esteed_icon.png/revision/latest?cb=20180817014248
+  weapon: staff
+  ace: true
+  limited: false
+  star: 5
+
+  stats:
+    hp: 12285
+    atk: 1563
+    int: 4095
+    def: 1327
+    hit: 1057
+    grd: 833
+
+  talents:
+    - name: "Active Female High School Student"
+      effects: 
+        - desc: INT +50%
+    - name: "Jealous Person"
+      effects: 
+        - desc: Critical rate +30%
+          all: Caster
+    - name: "Skillful at Getting By"
+      effects: 
+        - desc: AP consumption -20%
+          all: Caster
+    - name: "Connection"
+      effects: 
+        - desc: Reduce symbology cast time by 30%
+
+  skills:
+    - name: "Plunging Fire Bolts"
+      element: Fire
+      power: INT x???%
+      ap: 20
+      maxHits: 0
+    - name: "Stone Rain"
+      element: Earth
+      power: INT x???%
+      ap: 35
+      maxHits: 0
+    - name: "Enhance"
+      element: Fire
+      power: +25% ATK to party
+      ap: 60
+      maxHits: 0
+    - name: "Violent Explosion"
+      element: Fire
+      power: INT x???%
+      ap: 45
+      maxHits: 0
+      
+  rush:
+    name: "Meteor Swarm"
+    effects: 
+      - desc: +70% INT
+        duration: 20
+      - desc: -60% AP cost
+        duration: 20
+    power: INT x3500%
+    maxHits: 0
+
+  notes: >
+      _Sophia is a caster_
+
+      **This is line 2**
+
+      *This is line 3*

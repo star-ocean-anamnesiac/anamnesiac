@@ -4,12 +4,12 @@
 /** Ionic CSS Variables **/
 :root {
   /** primary **/
-  --ion-color-primary: #3880ff;
-  --ion-color-primary-rgb: 56, 128, 255;
+  --ion-color-primary: #052697;
+  --ion-color-primary-rgb: 5, 38, 151;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
-  --ion-color-primary-shade: #3171e0;
-  --ion-color-primary-tint: #4c8dff;
+  --ion-color-primary-shade: #042185;
+  --ion-color-primary-tint: #1e3ca1;
 
   /** secondary **/
   --ion-color-secondary: #0cd1e8;
@@ -74,4 +74,89 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+  
+  /** color: attacker **/
+  --ion-color-attacker: #fe0101;
+  --ion-color-attacker-rgb: 254, 1, 1;
+  --ion-color-attacker-contrast: #ffffff;
+  --ion-color-attacker-contrast-rgb: 255, 255, 255;
+  --ion-color-attacker-shade: #e00101;
+  --ion-color-attacker-tint: #fe1a1a;
+
+  /** color: defender **/
+  --ion-color-defender: #807138;
+  --ion-color-defender-rgb: 189, 192, 98;
+  --ion-color-defender-contrast: #ffffff;
+  --ion-color-defender-contrast-rgb: 255, 255, 255;
+  --ion-color-defender-shade: #716331;
+  --ion-color-defender-tint: #8d7f4c;
+
+  /** color: healer **/
+  --ion-color-healer: #0e8768;
+  --ion-color-healer-rgb: 0, 197, 154;
+  --ion-color-healer-contrast: #ffffff;
+  --ion-color-healer-contrast-rgb: 255, 255, 255;
+  --ion-color-healer-shade: #0c775c;
+  --ion-color-healer-tint: #269377;
+
+  /** color: invoker **/
+  --ion-color-invoker: #c256e2;
+  --ion-color-invoker-rgb: 194, 86, 226;
+  --ion-color-invoker-contrast: #ffffff;
+  --ion-color-invoker-contrast-rgb: 255, 255, 255;
+  --ion-color-invoker-shade: #ab4cc7;
+  --ion-color-invoker-tint: #c867e5;
+
+  /** color: sharpshooter **/
+  --ion-color-sharpshooter: #0e3482;
+  --ion-color-sharpshooter-rgb: 14, 52, 130;
+  --ion-color-sharpshooter-contrast: #ffffff;
+  --ion-color-sharpshooter-contrast-rgb: 255, 255, 255;
+  --ion-color-sharpshooter-shade: #0c2e72;
+  --ion-color-sharpshooter-tint: #26488f;
+}
+
+.ion-color-attacker {
+  --ion-color-base: var(--ion-color-attacker) !important;
+  --ion-color-base-rgb: var(--ion-color-attacker-rgb) !important;
+  --ion-color-contrast: var(--ion-color-attacker-contrast) !important;
+  --ion-color-contrast-rgb: var(--ion-color-attacker-contrast-rgb) !important;
+  --ion-color-shade: var(--ion-color-attacker-shade) !important;
+  --ion-color-tint: var(--ion-color-attacker-tint) !important;
+}
+
+.ion-color-defender {
+  --ion-color-base: var(--ion-color-defender) !important;
+  --ion-color-base-rgb: var(--ion-color-defender-rgb) !important;
+  --ion-color-contrast: var(--ion-color-defender-contrast) !important;
+  --ion-color-contrast-rgb: var(--ion-color-defender-contrast-rgb) !important;
+  --ion-color-shade: var(--ion-color-defender-shade) !important;
+  --ion-color-tint: var(--ion-color-defender-tint) !important;
+}
+
+.ion-color-healer {
+  --ion-color-base: var(--ion-color-healer) !important;
+  --ion-color-base-rgb: var(--ion-color-healer-rgb) !important;
+  --ion-color-contrast: var(--ion-color-healer-contrast) !important;
+  --ion-color-contrast-rgb: var(--ion-color-healer-contrast-rgb) !important;
+  --ion-color-shade: var(--ion-color-healer-shade) !important;
+  --ion-color-tint: var(--ion-color-healer-tint) !important;
+}
+
+.ion-color-invoker {
+  --ion-color-base: var(--ion-color-invoker) !important;
+  --ion-color-base-rgb: var(--ion-color-invoker-rgb) !important;
+  --ion-color-contrast: var(--ion-color-invoker-contrast) !important;
+  --ion-color-contrast-rgb: var(--ion-color-invoker-contrast-rgb) !important;
+  --ion-color-shade: var(--ion-color-invoker-shade) !important;
+  --ion-color-tint: var(--ion-color-invoker-tint) !important;
+}
+
+.ion-color-sharpshooter {
+  --ion-color-base: var(--ion-color-sharpshooter) !important;
+  --ion-color-base-rgb: var(--ion-color-sharpshooter-rgb) !important;
+  --ion-color-contrast: var(--ion-color-sharpshooter-contrast) !important;
+  --ion-color-contrast-rgb: var(--ion-color-sharpshooter-contrast-rgb) !important;
+  --ion-color-shade: var(--ion-color-sharpshooter-shade) !important;
+  --ion-color-tint: var(--ion-color-sharpshooter-tint) !important;
 }
