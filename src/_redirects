@@ -1,3 +1,3 @@
-/characters   /index.html 200
-/items        /index.html 200
+/characters/* /index.html 200
+/items/*      /index.html 200
 /home         /index.html 200
