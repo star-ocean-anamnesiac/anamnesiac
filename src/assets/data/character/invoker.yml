@@ -37,23 +37,21 @@
       element: Fire
       power: INT x???%
       ap: 20
-      maxHits: 0
+      maxHits: -1
     - name: "Stone Rain"
       element: Earth
       power: INT x???%
       ap: 35
-      maxHits: 0
+      maxHits: -1
     - name: "Enhance"
       element: Fire
-      power: 0
       ap: 60
-      maxHits: 0
       notes: +25% ATK to party. A good buff skill!
     - name: "Violent Explosion"
       element: Fire
       power: INT x???%
       ap: 45
-      maxHits: 0
+      maxHits: -1
       
   rush:
     name: "Meteor Swarm"
@@ -63,7 +61,7 @@
       - desc: -60% AP cost
         duration: 20
     power: INT x3500%
-    maxHits: 0
+    maxHits: -1
 
   notes: >
       _Sophia is a caster_
