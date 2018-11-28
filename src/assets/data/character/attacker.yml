@@ -19,9 +19,9 @@
   talents:
     - name: "Quiet Determination"
       effects: 
-        - desc: ATK +40%
+        - desc: ATK +25%
           all: true
-        - desc: ATK +60% when HP 100% 
+        - desc: ATK +45% when HP 100% 
           all: true
     - name: "Automated Infantry Android"
       effects: 
@@ -42,7 +42,7 @@
       ap: 22
       maxHits: 2
     - name: "YoRHa Arms: Two"
-      power: ATK x1100%
+      power: ATK x800%
       ap: 42
       maxHits: 2
     - name: "YoRHa Pod: One"
@@ -57,10 +57,62 @@
   rush:
     name: "YoRHa Arms: Zero"
     effects: 
-      - desc: All elemental damage +70%
+      - desc: All elemental damage +55%
         duration: 20
       - desc: All elemental damage +50%
         all: true
         duration: 20
     power: ATK x4000%
     maxHits: 27
+    
+- name: Fidel
+  cat: gl
+  rating: 7
+  picture: https://vignette.wikia.nocookie.net/starocean/images/0/0a/2b_icon.png/revision/latest?cb=20180817021908
+  weapon: ohs
+  ace: true
+  limited: false
+  star: 5
+
+  stats:
+    hp: 15,960
+    atk: 2,363
+    int: 1,522
+    def: 1,930
+    hit: 1,162
+    grd: 812
+
+  talents:
+    - name: "Fortitude & Vigor II"
+      effects: 
+        - desc: ATK +40%
+          all: true
+    - name: "Father's Teachings"
+      effects: 
+        - desc: AP cost -15%
+
+  skills:
+    - name: "Double Slash"
+      power: ATK x200%
+      ap: 20
+      maxHits: 2
+    - name: "Air Slash"
+      power: ATK x200%
+      ap: 20
+      maxHits: 2
+    - name: "Cyclone Blade"
+      power: ATK x310%
+      ap: 29
+      maxHits: 5
+    - name: "Air Raid"
+      power: ATK x460%
+      ap: 35
+      maxHits: 5
+
+  rush:
+    name: "Ethereal Blast"
+    effects: 
+      - AP cost -60%
+        duration: 20
+    power: ATK x3000%
+    maxHits: 12
