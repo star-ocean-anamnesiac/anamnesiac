@@ -230,7 +230,7 @@ export class CharacterListPage implements OnInit, OnDestroy {
               <ion-row *ngFor="let talent of char.talents; let i = index">
                 <ion-col>
                   <ion-card>
-                    <ion-card-header><ion-card-title>Talent {{ i + 1 }}: {{ talent.name }}</ion-card-title></ion-card-header>
+                    <ion-card-header><ion-card-title>{{ talent.name }}</ion-card-title></ion-card-header>
                     <ion-card-content>
                       <ol>
                         <li *ngFor="let effect of talent.effects">
@@ -253,11 +253,14 @@ export class CharacterListPage implements OnInit, OnDestroy {
                 <ion-col>
                   <ion-card>
                     <ion-card-header>
-                    <ion-card-title>Skill {{ i + 1 }}: {{ skill.name }} ({{ skill.ap }} AP)</ion-card-title>
+                    <ion-card-title>{{ skill.name }} ({{ skill.ap }} AP)</ion-card-title>
                     </ion-card-header>
                     <ion-card-content>
                       <div *ngIf="skill.element"><strong>Element:</strong> {{ skill.element }}</div>
-                      {{ skill.power }} <span *ngIf="skill.maxHits">({{ skill.maxHits }} hits)</span>
+                      <div *ngIf="skill.power">
+                        <strong>Power:</strong> {{ skill.power }} <span *ngIf="skill.maxHits">({{ skill.maxHits }} hits)</span>
+                      </div>
+                      <div *ngIf="skill.notes">{{ skill.notes }}</div>
                     </ion-card-content>
                   </ion-card>
                 </ion-col>

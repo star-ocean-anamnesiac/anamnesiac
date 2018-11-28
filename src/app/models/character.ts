@@ -34,6 +34,9 @@ export interface Skill {
 
   // the element of the skill
   element?: string;
+
+  // user entered notes. does not support markdown!
+  notes?: string;
 }
 
 export interface Effect {
