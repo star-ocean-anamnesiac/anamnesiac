@@ -176,7 +176,7 @@ export class CharacterListPage implements OnInit, OnDestroy {
       <ion-col class="tall-col">
 
         <ion-tabs #tabs>
-          <ion-tab tab="stats">
+          <ion-tab tab="stats" class="stats-tab">
 
             <ion-row>
               <ion-col>
@@ -345,6 +345,18 @@ export class CharacterListPage implements OnInit, OnDestroy {
 
     .notes {
       white-space: pre-wrap;
+    }
+
+    .stats-tab {
+      justify-content: flex-start;
+    }
+
+    .stats-tab ion-row {
+      flex: 1;
+    }
+
+    .stats-tab ion-card {
+      height: 80%;
     }
   `]
 })
