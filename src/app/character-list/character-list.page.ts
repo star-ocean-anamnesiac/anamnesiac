@@ -137,7 +137,7 @@ export class CharacterListPage implements OnInit, OnDestroy {
       this.searchValue = '';
       return;
     }
-    const str = ev.detail.data;
+    const str = ev.target.value;
     this.searchValue = str;
   }
 
