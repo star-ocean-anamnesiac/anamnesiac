@@ -75,11 +75,11 @@
   star: 5
 
   stats:
-    hp: 15,960
-    atk: 2,363
-    int: 1,522
-    def: 1,930
-    hit: 1,162
+    hp: 15960
+    atk: 2363
+    int: 1522
+    def: 1930
+    hit: 1162
     grd: 812
 
   talents:
@@ -112,7 +112,7 @@
   rush:
     name: "Ethereal Blast"
     effects: 
-      - AP cost -60%
+      - desc: AP cost -60%
         duration: 20
     power: ATK x3000%
     maxHits: 12
