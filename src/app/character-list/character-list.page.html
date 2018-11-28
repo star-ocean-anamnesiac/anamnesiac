@@ -16,50 +16,49 @@
   </div>
 
   <div class="blank-slate" *ngIf="allCharacters.length === 0">
-      <ion-spinner></ion-spinner> &nbsp;&nbsp;&nbsp; Loading...
+    <ion-spinner></ion-spinner> &nbsp;&nbsp;&nbsp; Loading...
   </div>
 
-  <ion-list>
-    <ion-list-header>
-      <ion-label><strong>Top Tier (10/10)</strong></ion-label>
-    </ion-list-header>
+  <ion-row *ngIf="allCharacters.length > 0 && !isError">
+    <ion-col text-center>
+      <ion-button [disabled]="sorting === 'alpha'" color="tertiary" (click)="sorting = 'alpha'">Sort: Name</ion-button>
+    </ion-col>
 
-    <ion-item *ngFor="let char of sortedCharacters.top" detail (click)="loadCharacter(char)">
-      <ng-container *ngTemplateOutlet="character; context: { char: char }"></ng-container>
-    </ion-item>
-    
-    <ion-list-header>
-      <ion-label><strong>Great (8-9/10)</strong></ion-label>
-    </ion-list-header>
+    <ion-col text-center>
+      <ion-button [disabled]="sorting === 'weapon'" color="tertiary" (click)="sorting = 'weapon'">Sort: Weapon</ion-button>
+    </ion-col>
 
-    <ion-item *ngFor="let char of sortedCharacters.great" detail (click)="loadCharacter(char)">
-      <ng-container *ngTemplateOutlet="character; context: { char: char }"></ng-container>
-    </ion-item>
-    
-    <ion-list-header>
-      <ion-label><strong>Good (6-7/10)</strong></ion-label>
-    </ion-list-header>
+    <ion-col text-center>
+      <ion-button [disabled]="sorting === 'tier'" color="tertiary" (click)="sorting = 'tier'">Sort: Tier</ion-button>
+    </ion-col>
+  </ion-row>
 
-    <ion-item *ngFor="let char of sortedCharacters.good" detail (click)="loadCharacter(char)">
-      <ng-container *ngTemplateOutlet="character; context: { char: char }"></ng-container>
-    </ion-item>
-    
-    <ion-list-header>
-      <ion-label><strong>Average (4-5/10)</strong></ion-label>
-    </ion-list-header>
-
-    <ion-item *ngFor="let char of sortedCharacters.average" detail (click)="loadCharacter(char)">
-      <ng-container *ngTemplateOutlet="character; context: { char: char }"></ng-container>
-    </ion-item>
-    
-    <ion-list-header>
-      <ion-label><strong>Bad (1-3/10)</strong></ion-label>
-    </ion-list-header>
-
-    <ion-item *ngFor="let char of sortedCharacters.bad" detail (click)="loadCharacter(char)">
+  <ion-list *ngIf="sorting === 'alpha'">
+    <ion-item *ngFor="let char of alphaSortedCharacters" detail (click)="loadCharacter(char)">
       <ng-container *ngTemplateOutlet="character; context: { char: char }"></ng-container>
     </ion-item>
   </ion-list>
+
+  <ion-list *ngIf="sorting === 'weapon'">
+    <ion-item-group *ngFor="let weapon of allWeapons">
+      <ion-item-divider><strong>{{ convertWeaponType(weapon) }}</strong></ion-item-divider>
+
+      <ion-item *ngFor="let char of weaponSortedCharacters[weapon]" detail (click)="loadCharacter(char)">
+        <ng-container *ngTemplateOutlet="character; context: { char: char }"></ng-container>
+      </ion-item>
+    </ion-item-group>
+  </ion-list>
+
+  <ion-list *ngIf="sorting === 'tier'">
+    <ion-item-group *ngFor="let tier of allTiers">
+      <ion-item-divider><strong>{{ tier }}</strong></ion-item-divider>
+
+      <ion-item *ngFor="let char of tierSortedCharacters[tier]" detail (click)="loadCharacter(char)">
+        <ng-container *ngTemplateOutlet="character; context: { char: char }"></ng-container>
+      </ion-item>
+    </ion-item-group>
+  </ion-list>
+
 </ion-content>
 
 <ng-template #character let-char="char">

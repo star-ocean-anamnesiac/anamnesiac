@@ -10,6 +10,7 @@ import { DataService } from '../data.service';
 import { Character } from '../models/character';
 import { Subscription } from 'rxjs';
 import { ModalController, NavParams, Tabs } from '@ionic/angular';
+import { LocalStorage } from 'ngx-webstorage';
 
 @Component({
   selector: 'app-character-list',
@@ -21,13 +22,16 @@ export class CharacterListPage implements OnInit, OnDestroy {
   public isError: boolean;
   public allCharacters: Character[] = [];
 
-  public sortedCharacters: { [key: string]: Character[] } = {
-    top: [],
-    great: [],
-    good: [],
-    average: [],
-    bad: []
-  };
+  @LocalStorage()
+  public sorting: 'tier'|'alpha'|'weapon';
+
+  public tierSortedCharacters: { [key: string]: Character[] } = {};
+  public allTiers: string[] = [];
+
+  public alphaSortedCharacters: Character[] = [];
+
+  public weaponSortedCharacters: { [key: string]: Character[] } = {};
+  public allWeapons: string[] = [];
 
   private character$: Subscription;
   private hasModal: boolean;
@@ -37,9 +41,11 @@ export class CharacterListPage implements OnInit, OnDestroy {
     private router: Router,
     private activatedRoute: ActivatedRoute,
     private modalCtrl: ModalController
-    ) {}
+  ) {}
 
   ngOnInit() {
+    if(!this.sorting) { this.sorting = 'alpha'; }
+
     this.router.events
       .pipe(
         filter(x => x instanceof NavigationEnd)
@@ -113,22 +119,35 @@ export class CharacterListPage implements OnInit, OnDestroy {
 
     this.isError = false;
 
-    const grouped = _(arr)
+    // alpha sorting
+    this.alphaSortedCharacters = _.sortBy(arr, 'name');
+
+    // weapon sorting
+    this.weaponSortedCharacters = _(arr)
+      .sortBy(arr, 'name')
+      .groupBy('weapon')
+      .value();
+    this.allWeapons = _.sortBy(Object.keys(this.weaponSortedCharacters));
+
+    // tier sorting
+    this.tierSortedCharacters = _(arr)
       .sortBy([(char) => -char.rating, 'name'])
       .groupBy(char => {
-        if(char.rating >= 10) { return 'top'; }
-        if(char.rating >= 8 && char.rating <= 9) { return 'great'; }
-        if(char.rating >= 6 && char.rating <= 7) { return 'good'; }
-        if(char.rating >= 4 && char.rating <= 3) { return 'average'; }
-        return 'bad';
+        if(char.rating >= 10) { return 'Top Tier (10/10)'; }
+        if(char.rating >= 8 && char.rating <= 9) { return 'Great (8-9/10)'; }
+        if(char.rating >= 6 && char.rating <= 7) { return 'Good (6-7/10)'; }
+        if(char.rating >= 4 && char.rating <= 3) { return 'Average (4-5/10)'; }
+        return 'Bad (1-3/10)';
       })
       .value();
-
-    this.sortedCharacters.top = grouped.top || [];
-    this.sortedCharacters.great = grouped.great || [];
-    this.sortedCharacters.good = grouped.good || [];
-    this.sortedCharacters.average = grouped.average || [];
-    this.sortedCharacters.bad = grouped.bad || [];
+    this.allTiers = _.sortBy(Object.keys(this.tierSortedCharacters), (tier) => {
+      if(tier === 'Top Tier (10/10)') { return 0; }
+      if(tier === 'Great (8/9-10)')   { return 1; }
+      if(tier === 'Good (6-7/10)')    { return 2; }
+      if(tier === 'Average (4/5-10)') { return 3; }
+      if(tier === 'Bad (1-3/10)')     { return 4; }
+      return 10;
+    });
 
     if(this.getPreviouslyLoadedChar()) {
       this.loadCharacterModal(this.getPreviouslyLoadedChar());
