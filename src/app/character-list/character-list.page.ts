@@ -225,7 +225,7 @@ export class CharacterListPage implements OnInit, OnDestroy {
 
           </ion-tab>
 
-          <ion-tab tab="talentskills">
+          <ion-tab tab="talents">
             <ion-grid>
               <ion-row *ngFor="let talent of char.talents; let i = index">
                 <ion-col>
@@ -243,6 +243,11 @@ export class CharacterListPage implements OnInit, OnDestroy {
                   </ion-card>
                 </ion-col>
               </ion-row>
+            </ion-grid>
+          </ion-tab>
+
+          <ion-tab tab="skillsrush">
+            <ion-grid>
 
               <ion-row *ngFor="let skill of char.skills; let i = index">
                 <ion-col>
@@ -298,13 +303,18 @@ export class CharacterListPage implements OnInit, OnDestroy {
               <ion-icon name="analytics"></ion-icon>
             </ion-tab-button>
 
-            <ion-tab-button tab="talentskills">
-              <ion-label>Talents/Skills/Rush</ion-label>
+            <ion-tab-button tab="talents">
+              <ion-label>Talents</ion-label>
               <ion-icon name="bookmark"></ion-icon>
             </ion-tab-button>
 
+            <ion-tab-button tab="skillsrush">
+              <ion-label>Skills/Rush</ion-label>
+              <ion-icon name="flash"></ion-icon>
+            </ion-tab-button>
+
             <ion-tab-button tab="notes">
-              <ion-label>Notes</ion-label>
+              <ion-label>Unit Evaluation</ion-label>
               <ion-icon name="paper"></ion-icon>
             </ion-tab-button>
 
