@@ -161,7 +161,7 @@ export class CharacterListPage implements OnInit, OnDestroy {
   </ion-header>
   <ion-content>
     <ion-row class="profile-row">
-      <ion-col size="3">
+      <ion-col size-xs="6" size-md="3">
         <ion-img [src]="char.picture" class="picture"></ion-img>
       </ion-col>
 
