@@ -1,0 +1,12 @@
+
+- name: Knuckles of Hope
+  cat: 'gl'
+  star: 5
+  picture: https://cdn.discordapp.com/attachments/466813695931056139/493273858799829003/Fallen_Hope.jpg
+  atk: 474
+  int: 478
+  factor1: Light damage +15%
+  factor2: DEF +10%
+  factor3: Crit chance +4%
+  thirdFactorLB: 5
+  obtained: Coin Shop (Michael)

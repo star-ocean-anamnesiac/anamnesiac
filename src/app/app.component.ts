@@ -74,8 +74,8 @@ export class AppComponent {
     }
 
     this.loadClassData(this.dataService.classes);
-    this.loadWeaponData(this.dataService.weapons);
-    this.loadAccessoryData(this.dataService.accessories);
+    this.loadWeaponData(this.dataService.weaponTypes);
+    this.loadAccessoryData(this.dataService.accessoryTypes);
   }
 
   private loadClassData(classes) {
@@ -102,7 +102,7 @@ export class AppComponent {
     this.appPages.push({
       title: 'Weapon List',
       url: '/items',
-      queryParams: { filter: 'weapon' },
+      queryParams: { type: 'weapon' },
       icon: 'color-filter'
     });
 
@@ -110,7 +110,7 @@ export class AppComponent {
       this.appPages.push({
           title: name,
           url: '/items',
-          queryParams: { filter: 'weapon', subtype: id },
+          queryParams: { type: 'weapon', subtype: id },
           icon: '',
           visibleIf: '/items',
         });
@@ -121,7 +121,7 @@ export class AppComponent {
     this.appPages.push({
       title: 'Accessory List',
       url: '/items',
-      queryParams: { filter: 'accessory' },
+      queryParams: { type: 'accessory' },
       icon: 'magnet'
     });
 
@@ -129,7 +129,7 @@ export class AppComponent {
       this.appPages.push({
           title: name,
           url: '/items',
-          queryParams: { filter: 'accessory' },
+          queryParams: { type: 'accessory' },
           icon: '',
           visibleIf: '/items',
         });

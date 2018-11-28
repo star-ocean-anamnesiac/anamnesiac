@@ -1,0 +1,13 @@
+
+- name: Beastlord
+  cat: 'gl'
+  star: 5
+  picture: https://cdn.discordapp.com/attachments/492565553886658570/492584112238886922/soanamnesis.png
+  atk: 963
+  int: 958
+  element: Light
+  factor1: Imbues attacks with light element
+  factor2: Damage -10%
+  factor3: AP consumption -10%
+  thirdFactorLB: 5
+  obtained: Gacha (Limited)

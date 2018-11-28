@@ -1,0 +1,12 @@
+
+- name: Eldar Lord Rapier
+  cat: 'gl'
+  star: 5
+  picture: https://cdn.discordapp.com/attachments/466813654835265566/466833783568728074/unknown.png
+  atk: 474
+  int: 476
+  factor1: Dark damage +30%
+  factor2: Cursed Reaping Spark damage +20%
+  factor3: INT +20%
+  thirdFactorLB: 5
+  obtained: Coin Shop (Frost)

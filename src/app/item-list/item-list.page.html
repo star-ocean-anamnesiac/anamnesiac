@@ -6,18 +6,68 @@
     <ion-title>
       Items
     </ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button (click)="toggleSearch()">
+        <ion-icon name="search"></ion-icon>
+      </ion-button> 
+      <ion-button (click)="openSort($event)">
+        <ion-icon name="funnel"></ion-icon>
+      </ion-button> 
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
-
+  
 <ion-content>
-  <ion-list>
-    <ion-item *ngFor="let item of items">
-      <ion-icon [name]="item.icon" slot="start"></ion-icon>
-      {{item.title}}
-      <div class="item-note" slot="end">
-        {{item.note}}
-      </div>
+
+  <div class="blank-slate" *ngIf="isError">
+    No items match this filter.
+  </div>
+
+  <div class="blank-slate" *ngIf="allItems.length === 0">
+    <ion-spinner></ion-spinner> &nbsp;&nbsp;&nbsp; Loading...
+  </div>
+
+  <ion-searchbar *ngIf="showSearch" 
+                  showCancelButton
+                  (ionCancel)="closeSearch()" 
+                  (ionInput)="updateSearchValue($event)"
+  ></ion-searchbar>
+    
+  <ion-list *ngIf="!isError && sorting === 'alpha'">
+    <ion-item *ngFor="let item of alphaSortedItems | filterBy: { name: searchValue }" detail (click)="loadItem(item)">
+      <ng-container *ngTemplateOutlet="items; context: { item: item }"></ng-container>
     </ion-item>
   </ion-list>
-  
+
+  <ion-list *ngIf="!isError && sorting === 'type'">
+    <ion-item-group *ngFor="let itemType of allItemTypes">
+      <ion-item-divider><strong>{{ convertWeaponType(itemType) }}</strong></ion-item-divider>
+
+      <ion-item *ngFor="let item of typeSortedItems[itemType]" detail (click)="loadItem(item)">
+        <ng-container *ngTemplateOutlet="items; context: { item: item }"></ng-container>
+      </ion-item>
+    </ion-item-group>
+  </ion-list>
+
+  <ion-list *ngIf="!isError && sorting === 'element'">
+    <ion-item-group *ngFor="let element of allElements">
+      <ion-item-divider><strong>{{ element }}</strong></ion-item-divider>
+
+      <ion-item *ngFor="let item of elementSortedItems[element]" detail (click)="loadItem(item)">
+        <ng-container *ngTemplateOutlet="items; context: { item: item }"></ng-container>
+      </ion-item>
+    </ion-item-group>
+  </ion-list>
+
 </ion-content>
+
+<ng-template #items let-item="item">
+  <ion-img slot="start" [src]="item.picture" class="mini-picture-icon"></ion-img>
+
+  <ion-label>
+    <h3>{{ item.star }}★ {{ item.name }}</h3>
+    <p *ngIf="item.type === 'weapon'">{{ weaponDesc(item) }}</p>
+    <p *ngIf="item.type === 'accessory'">{{ item.def }} DEF</p>
+  </ion-label>
+</ng-template>

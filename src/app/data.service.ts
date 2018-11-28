@@ -3,11 +3,13 @@
 import YAML from 'js-yaml';
 import axios from 'axios';
 
-import { Injectable } from '@angular/core';
-import { Character } from './models/character';
 import { BehaviorSubject } from 'rxjs';
+import { Injectable } from '@angular/core';
 
-interface Item {
+import { Character } from './models/character';
+import { Item } from './models/item';
+
+interface ListItem {
   id: string;
   name: string;
 }
@@ -17,13 +19,16 @@ interface Item {
 })
 export class DataService {
 
-  public classes: Item[] = [];
-  public weapons: Item[] = [];
-  public accessories: Item[] = [];
+  public classes: ListItem[] = [];
+  public weaponTypes: ListItem[] = [];
+  public accessoryTypes: ListItem[] = [];
 
   public characters$: BehaviorSubject<Character[]> = new BehaviorSubject<Character[]>([]);
+  public items$: BehaviorSubject<Item[]> = new BehaviorSubject<Item[]>([]);
 
   private characters: Character[] = [];
+  private items: Item[] = [];
+
   private itemNameHash: any = {};
 
   constructor() { }
@@ -33,8 +38,8 @@ export class DataService {
     const { classes, weapons, accessories } = YAML.safeLoad(data);
 
     this.classes = classes.map(x => ({ id: x.toLowerCase(), name: x }));
-    this.weapons = weapons;
-    this.accessories = accessories;
+    this.weaponTypes = weapons;
+    this.accessoryTypes = accessories;
 
     weapons.forEach(({ id, name }) => this.itemNameHash[id] = name);
 
@@ -54,6 +59,32 @@ export class DataService {
       this.characters.push(...characters);
 
       this.characters$.next(this.characters);
+    });
+
+    this.weaponTypes.forEach(async ({ id }) => {
+      const { data } = await axios.get(`assets/data/item/weapon/${id}.yml`);
+      const weapons = YAML.safeLoad(data);
+
+      weapons.forEach(weap => {
+        weap.type = 'weapon';
+        weap.subtype = id;
+      });
+      this.items.push(...weapons);
+
+      this.items$.next(this.items);
+    });
+
+    this.accessoryTypes.forEach(async ({ id }) => {
+      const { data } = await axios.get(`assets/data/item/accessory/${id}.yml`);
+      const accessories = YAML.safeLoad(data);
+
+      accessories.forEach(weap => {
+        weap.type = 'accessory';
+        weap.subtype = id;
+      });
+      this.items.push(...accessories);
+
+      this.items$.next(this.items);
     });
   }
 }

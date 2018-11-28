@@ -1,0 +1,16 @@
+
+- name: Striped Cat Mitts
+  cat: 'gl'
+  star: 5
+  picture: https://media.discordapp.net/attachments/492565135916007434/492654170789249024/soanamnesis.png
+  atk: 961
+  int: 958
+  element: Light
+  factor1: Imbue light element / +20% light damage
+  factor2: -10% AP cost
+  factor3: 80% chance to survive a lethal attack at 10% or more HP
+  thirdFactorLB: 5
+  obtained: Gacha (Limited)
+
+  notes: >
+    It's an item, 'kay?

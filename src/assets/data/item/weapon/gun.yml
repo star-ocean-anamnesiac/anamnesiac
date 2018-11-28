@@ -1,0 +1,12 @@
+
+- name: Divine Wave Gun
+  cat: 'gl'
+  star: 5
+  picture: https://cdn.discordapp.com/attachments/466813623352688660/483978431676022790/Divine_Wave_Gun.jpg
+  atk: 962
+  int: 959
+  factor1: Damage dealt to demons +40%
+  factor2: 80% chance of surviving a lethal attack at greater than 10% HP
+  factor3: Damage taken -15% when in front of target
+  thirdFactorLB: 5
+  obtained: Gacha

@@ -4,13 +4,16 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 
-import { ItemListPage } from './item-list.page';
+import { FilterPipeModule } from 'ngx-filter-pipe';
+
+import { ItemListPage, ItemModal, ItemSortPopover } from './item-list.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
+    FilterPipeModule,
     RouterModule.forChild([
       {
         path: '',
@@ -18,6 +21,7 @@ import { ItemListPage } from './item-list.page';
       }
     ])
   ],
-  declarations: [ItemListPage]
+  entryComponents: [ItemModal, ItemSortPopover],
+  declarations: [ItemListPage, ItemModal, ItemSortPopover]
 })
 export class ItemListPageModule {}

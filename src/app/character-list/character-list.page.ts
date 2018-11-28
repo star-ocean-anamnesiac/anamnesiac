@@ -1,16 +1,16 @@
 
 import * as _ from 'lodash';
+import { Subscription } from 'rxjs';
 import { filter } from 'rxjs/operators';
 import { markdown } from 'markdown';
+import { LocalStorage } from 'ngx-webstorage';
 
+import { ModalController, NavParams, Tabs, PopoverController } from '@ionic/angular';
 import { Component, OnInit, OnDestroy, ViewChild } from '@angular/core';
 import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 
 import { DataService } from '../data.service';
 import { Character } from '../models/character';
-import { Subscription } from 'rxjs';
-import { ModalController, NavParams, Tabs, PopoverController } from '@ionic/angular';
-import { LocalStorage } from 'ngx-webstorage';
 
 @Component({
   selector: 'app-character-list',

@@ -1,0 +1,12 @@
+
+- name: Blackseed Watermelon Orb
+  cat: 'gl'
+  star: 5
+  picture: https://cdn.discordapp.com/attachments/480829610549051392/481451868384526336/Black_Thunder_Watermelon_Ball.jpg
+  atk: 959
+  int: 965
+  factor1: Lightning/Dark damage +30%
+  factor2: 80% chance to survive a lethal attack when HP is greater than 10%
+  factor3: Damage taken -30% at less than 50% hHP
+  thirdFactorLB: 5
+  obtained: Gacha

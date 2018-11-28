@@ -1,0 +1,12 @@
+
+- name: Reformed SRF Arrow
+  cat: 'gl'
+  star: 5
+  picture: https://cdn.discordapp.com/attachments/466814042514653194/471345801784852480/unknown.png
+  atk: 477
+  element: Wind
+  factor1: Imbues attacks with wind element
+  factor2: Rapacious Sparrows damage +20%
+  factor3: Additional hit that deals 5% of damage dealt on normal attacks
+  thirdFactorLB: 5
+  obtained: Coin Shop (Jie Revorse)
