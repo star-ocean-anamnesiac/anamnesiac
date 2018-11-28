@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 
+import { FilterPipeModule } from 'ngx-filter-pipe';
+
 import { CharacterListPage, CharacterModal, CharacterSortPopover } from './character-list.page';
 
 @NgModule({
@@ -11,6 +13,7 @@ import { CharacterListPage, CharacterModal, CharacterSortPopover } from './chara
     CommonModule,
     FormsModule,
     IonicModule,
+    FilterPipeModule,
     RouterModule.forChild([
       {
         path: '',

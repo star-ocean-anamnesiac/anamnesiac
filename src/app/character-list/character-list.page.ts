@@ -33,6 +33,9 @@ export class CharacterListPage implements OnInit, OnDestroy {
   public weaponSortedCharacters: { [key: string]: Character[] } = {};
   public allWeapons: string[] = [];
 
+  public showSearch: boolean;
+  public searchValue = '';
+
   private character$: Subscription;
   private hasModal: boolean;
 
@@ -85,6 +88,7 @@ export class CharacterListPage implements OnInit, OnDestroy {
     });
   }
 
+  // UI MODIFYING FUNCTIONS
   public async loadCharacterModal(name: string) {
     if(this.hasModal) { return; }
 
@@ -120,6 +124,29 @@ export class CharacterListPage implements OnInit, OnDestroy {
     return await popover.present();
   }
 
+  public toggleSearch() {
+    this.showSearch = !this.showSearch;
+
+    if(!this.showSearch) {
+      this.closeSearch();
+    }
+  }
+
+  public updateSearchValue(ev) {
+    if(!ev.detail) {
+      this.searchValue = '';
+      return;
+    }
+    const str = ev.detail.data;
+    this.searchValue = str;
+  }
+
+  public closeSearch() {
+    this.showSearch = false;
+    this.searchValue = '';
+  }
+
+  // CHARACTER LIST SORTING
   private updateCharacterList() {
     let arr = this.allCharacters;
 
@@ -353,6 +380,11 @@ export class CharacterSortPopover {
 
           <ion-tab-bar slot="bottom">
 
+            <ion-tab-button tab="notes">
+              <ion-label>Unit Evaluation</ion-label>
+              <ion-icon name="paper"></ion-icon>
+            </ion-tab-button>
+
             <ion-tab-button tab="stats">
               <ion-label>Stats</ion-label>
               <ion-icon name="analytics"></ion-icon>
@@ -366,11 +398,6 @@ export class CharacterSortPopover {
             <ion-tab-button tab="skillsrush">
               <ion-label>Skills/Rush</ion-label>
               <ion-icon name="flash"></ion-icon>
-            </ion-tab-button>
-
-            <ion-tab-button tab="notes">
-              <ion-label>Unit Evaluation</ion-label>
-              <ion-icon name="paper"></ion-icon>
             </ion-tab-button>
 
           </ion-tab-bar>
@@ -440,7 +467,7 @@ export class CharacterModal implements OnInit {
     this.char = this.navParams.get('character');
     this.weap = this.navParams.get('weapon');
 
-    this.tabs.select('stats');
+    this.tabs.select('notes');
 
     this.notes = markdown.toHTML((this.char.notes || '').trim());
   }

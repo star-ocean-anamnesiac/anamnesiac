@@ -8,6 +8,9 @@
     </ion-title>
 
     <ion-buttons slot="end">
+      <ion-button (click)="toggleSearch()">
+        <ion-icon name="search"></ion-icon>
+      </ion-button> 
       <ion-button (click)="openSort($event)">
         <ion-icon name="funnel"></ion-icon>
       </ion-button> 
@@ -25,8 +28,14 @@
     <ion-spinner></ion-spinner> &nbsp;&nbsp;&nbsp; Loading...
   </div>
 
+  <ion-searchbar *ngIf="showSearch" 
+                 showCancelButton
+                 (ionCancel)="closeSearch()" 
+                 (ionInput)="updateSearchValue($event)"
+  ></ion-searchbar>
+
   <ion-list *ngIf="sorting === 'alpha'">
-    <ion-item *ngFor="let char of alphaSortedCharacters" detail (click)="loadCharacter(char)">
+    <ion-item *ngFor="let char of alphaSortedCharacters | filterBy: { name: searchValue }" detail (click)="loadCharacter(char)">
       <ng-container *ngTemplateOutlet="character; context: { char: char }"></ng-container>
     </ion-item>
   </ion-list>
