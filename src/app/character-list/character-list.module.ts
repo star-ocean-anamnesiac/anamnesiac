@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 
-import { CharacterListPage, CharacterModal } from './character-list.page';
+import { CharacterListPage, CharacterModal, CharacterSortPopover } from './character-list.page';
 
 @NgModule({
   imports: [
@@ -18,7 +18,7 @@ import { CharacterListPage, CharacterModal } from './character-list.page';
       }
     ])
   ],
-  entryComponents: [CharacterModal],
-  declarations: [CharacterListPage, CharacterModal]
+  entryComponents: [CharacterModal, CharacterSortPopover],
+  declarations: [CharacterListPage, CharacterModal, CharacterSortPopover]
 })
 export class CharacterListPageModule {}

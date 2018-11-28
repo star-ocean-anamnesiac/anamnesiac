@@ -6,6 +6,12 @@
     <ion-title>
       Characters
     </ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button (click)="openSort($event)">
+        <ion-icon name="funnel"></ion-icon>
+      </ion-button> 
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -18,20 +24,6 @@
   <div class="blank-slate" *ngIf="allCharacters.length === 0">
     <ion-spinner></ion-spinner> &nbsp;&nbsp;&nbsp; Loading...
   </div>
-
-  <ion-row *ngIf="allCharacters.length > 0 && !isError">
-    <ion-col text-center>
-      <ion-button [disabled]="sorting === 'alpha'" color="tertiary" (click)="sorting = 'alpha'">Sort: Name</ion-button>
-    </ion-col>
-
-    <ion-col text-center>
-      <ion-button [disabled]="sorting === 'weapon'" color="tertiary" (click)="sorting = 'weapon'">Sort: Weapon</ion-button>
-    </ion-col>
-
-    <ion-col text-center>
-      <ion-button [disabled]="sorting === 'tier'" color="tertiary" (click)="sorting = 'tier'">Sort: Tier</ion-button>
-    </ion-col>
-  </ion-row>
 
   <ion-list *ngIf="sorting === 'alpha'">
     <ion-item *ngFor="let char of alphaSortedCharacters" detail (click)="loadCharacter(char)">

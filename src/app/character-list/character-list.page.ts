@@ -9,7 +9,7 @@ import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 import { DataService } from '../data.service';
 import { Character } from '../models/character';
 import { Subscription } from 'rxjs';
-import { ModalController, NavParams, Tabs } from '@ionic/angular';
+import { ModalController, NavParams, Tabs, PopoverController } from '@ionic/angular';
 import { LocalStorage } from 'ngx-webstorage';
 
 @Component({
@@ -40,6 +40,7 @@ export class CharacterListPage implements OnInit, OnDestroy {
     private dataService: DataService,
     private router: Router,
     private activatedRoute: ActivatedRoute,
+    private popoverCtrl: PopoverController,
     private modalCtrl: ModalController
   ) {}
 
@@ -99,9 +100,24 @@ export class CharacterListPage implements OnInit, OnDestroy {
       }
     });
 
-    modal.onDidDismiss().then((() => this.hasModal = false));
+    modal.onDidDismiss().then(() => this.hasModal = false);
 
     await modal.present();
+  }
+
+  public async openSort(ev) {
+    const popover = await this.popoverCtrl.create({
+      component: CharacterSortPopover,
+      event: ev,
+      translucent: true
+    });
+
+    popover.onDidDismiss().then(({ data }) => {
+      if(!data) { return; }
+      this.sorting = <'tier'|'alpha'|'weapon'>data;
+    });
+
+    return await popover.present();
   }
 
   private updateCharacterList() {
@@ -163,6 +179,23 @@ export class CharacterListPage implements OnInit, OnDestroy {
     const parameters = new URLSearchParams(window.location.search);
     return parameters.get('char');
   }
+}
+
+@Component({
+  template: `
+  <ion-content>
+    <ion-list>
+      <ion-list-header>Sort By</ion-list-header>
+      <ion-item (click)="popoverCtrl.dismiss('alpha')"><ion-label>Character Name</ion-label></ion-item>
+      <ion-item (click)="popoverCtrl.dismiss('weapon')"><ion-label>Character Weapon</ion-label></ion-item>
+      <ion-item (click)="popoverCtrl.dismiss('tier')"><ion-label>Character Tier</ion-label></ion-item>
+    </ion-list>
+  </ion-content>
+  `,
+  styles: []
+})
+export class CharacterSortPopover {
+  constructor(public popoverCtrl: PopoverController) {}
 }
 
 @Component({
