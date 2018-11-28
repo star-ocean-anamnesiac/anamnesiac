@@ -1,5 +1,5 @@
 
-# Amnesiac
+# Amnesiac [![Build Status](https://travis-ci.org/seiyria/anamnesiac.svg?branch=master)](https://travis-ci.org/seiyria/anamnesiac)
 
 A Star Ocean: Anamnesis companion app.
 
