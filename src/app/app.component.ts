@@ -35,6 +35,8 @@ export class AppComponent {
     }
   ];
 
+  public a2hsPrompt: any;
+
   constructor(
     private dataService: DataService,
     private platform: Platform,
@@ -47,10 +49,20 @@ export class AppComponent {
     this.watchRouteChanges();
   }
 
+  public a2hs() {
+    this.a2hsPrompt.prompt();
+    this.a2hsPrompt = null;
+  }
+
   private initializeApp() {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
+    });
+
+    window.addEventListener('beforeinstallprompt', e => {
+      e.preventDefault();
+      this.a2hsPrompt = e;
     });
   }
 
