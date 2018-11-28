@@ -44,7 +44,7 @@
     <ion-item-group *ngFor="let itemType of allItemTypes">
       <ion-item-divider><strong>{{ convertWeaponType(itemType) }}</strong></ion-item-divider>
 
-      <ion-item *ngFor="let item of typeSortedItems[itemType]" detail (click)="loadItem(item)">
+      <ion-item *ngFor="let item of typeSortedItems[itemType] | filterBy: { name: searchValue }" detail (click)="loadItem(item)">
         <ng-container *ngTemplateOutlet="items; context: { item: item }"></ng-container>
       </ion-item>
     </ion-item-group>
@@ -54,7 +54,7 @@
     <ion-item-group *ngFor="let element of allElements">
       <ion-item-divider><strong>{{ element }}</strong></ion-item-divider>
 
-      <ion-item *ngFor="let item of elementSortedItems[element]" detail (click)="loadItem(item)">
+      <ion-item *ngFor="let item of elementSortedItems[element] | filterBy: { name: searchValue }" detail (click)="loadItem(item)">
         <ng-container *ngTemplateOutlet="items; context: { item: item }"></ng-container>
       </ion-item>
     </ion-item-group>
