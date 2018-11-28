@@ -10,10 +10,12 @@ const ROOT_FILE = 'src/assets/data/root.yml';
 
 test('All items have valid information', async t => {
   const data = await promises.readFile(ROOT_FILE, 'utf-8');
-  const { weapons } = YAML.safeLoad(data);
+  const { weapons, accessories } = YAML.safeLoad(data);
+
+  const allItems = weapons.map(({ id }) => `weapon/${id}`).concat(accessories.map(({ id }) => `accessory/${id}`));
   
-  await Promise.all(weapons.map(async ({ id }) => {
-    const data = await promises.readFile(`src/assets/data/character/${id}.yml`, 'utf-8');
+  await Promise.all(allItems.map(async (path) => {
+    const data = await promises.readFile(`src/assets/data/item/${path}.yml`, 'utf-8');
     const items: Item[] = YAML.safeLoad(data);
 
     items.forEach(item => {
@@ -28,7 +30,7 @@ test('All items have valid information', async t => {
 
       t.truthy(item.factor1, 'item should have at least one factor' + parenName);
       t.truthy(item.obtained, 'item must mention where it is obtained' + parenName);
-      
+
     });
   }));
 });
