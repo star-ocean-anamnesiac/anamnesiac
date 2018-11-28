@@ -125,7 +125,7 @@ export class AppComponent {
       icon: 'magnet'
     });
 
-    weapons.forEach(({ id, name }) => {
+    weapons.forEach(({ name }) => {
       this.appPages.push({
           title: name,
           url: '/items',

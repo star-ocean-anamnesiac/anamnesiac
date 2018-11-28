@@ -7,7 +7,8 @@
     "ng": "ng",
     "start": "ng serve -o --port 6789",
     "build": "ng build --prod",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "test": "npm run lint && npm run build"
   },
   "private": true,
   "dependencies": {

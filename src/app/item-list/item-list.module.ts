@@ -6,7 +6,8 @@ import { RouterModule } from '@angular/router';
 
 import { FilterPipeModule } from 'ngx-filter-pipe';
 
-import { ItemListPage, ItemModal, ItemSortPopover } from './item-list.page';
+import { ItemListPage } from './item-list.page';
+import { ItemModal, ItemSortPopover } from './item-list.ui';
 
 @NgModule({
   imports: [

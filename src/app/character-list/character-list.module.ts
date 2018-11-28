@@ -6,7 +6,8 @@ import { RouterModule } from '@angular/router';
 
 import { FilterPipeModule } from 'ngx-filter-pipe';
 
-import { CharacterListPage, CharacterModal, CharacterSortPopover } from './character-list.page';
+import { CharacterListPage } from './character-list.page';
+import { CharacterModal, CharacterSortPopover } from './character-list.ui';
 
 @NgModule({
   imports: [
