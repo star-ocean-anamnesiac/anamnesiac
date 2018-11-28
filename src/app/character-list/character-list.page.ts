@@ -30,6 +30,7 @@ export class CharacterListPage implements OnInit, OnDestroy {
   };
 
   private character$: Subscription;
+  private hasModal: boolean;
 
   constructor(
     private dataService: DataService,
@@ -78,8 +79,11 @@ export class CharacterListPage implements OnInit, OnDestroy {
   }
 
   public async loadCharacterModal(name: string) {
+    if(this.hasModal) { return; }
 
     const character = _.find(this.allCharacters, { name });
+
+    this.hasModal = true;
 
     const modal = await this.modalCtrl.create({
       component: CharacterModal,
@@ -89,7 +93,9 @@ export class CharacterListPage implements OnInit, OnDestroy {
       }
     });
 
-    return await modal.present();
+    modal.onDidDismiss().then((() => this.hasModal = false));
+
+    await modal.present();
   }
 
   private updateCharacterList() {
