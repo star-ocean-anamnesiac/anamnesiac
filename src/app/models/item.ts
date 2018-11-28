@@ -4,6 +4,9 @@ export interface Item {
   // item name
   name: string;
 
+  // whether the character is on global or jp
+  cat: 'gl'|'jp';
+
   // item type - this is done internally, automatically
   type: 'weapon'|'accessory';
 
@@ -32,17 +35,17 @@ export interface Item {
   factor1: string;
 
   // the second factor of the item
-  factor2: string;
+  factor2?: string;
 
   // the third factor of the item
   factor3?: string;
 
   // the LB level the third factor is obtained at (0-5)
-  thirdFactorLB: number;
+  thirdFactorLB?: number;
 
   // where the item is obtained (Gacha, Shop, etc)
   obtained: string;
 
   // item notes
-  notes: string;
+  notes?: string;
 }
