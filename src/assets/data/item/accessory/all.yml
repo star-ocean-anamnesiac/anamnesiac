@@ -1,0 +1,12 @@
+
+- name: Emil Mask
+  cat: 'gl'
+  star: 5
+  picture: https://cdn.discordapp.com/attachments/466812051436732417/512712350617567239/Emil_Mask.png
+  def: 728
+  factor1: 40% chance of freezing nullification
+  factor2: 2% HP recovery every 5 seconds
+  obtained: NieR Geared Wisp (Gacha/Drop)
+
+  notes: >
+    It's an accessory, 'kay?
