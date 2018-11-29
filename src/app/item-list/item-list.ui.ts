@@ -76,7 +76,10 @@ export class ItemSortPopover {
               <ion-row *ngIf="item.factor3">
                 <ion-col>
                   <ion-card>
-                    <ion-card-content>{{ item.factor3 }}</ion-card-content>
+                    <ion-card-content>
+                    {{ item.factor3 }}
+                    <p *ngIf="item.thirdFactorLB"><em>Unlocked at LB{{ item.thirdFactorLB }}</em></p>
+                    </ion-card-content>
                   </ion-card>
                 </ion-col>
               </ion-row>

@@ -104,7 +104,16 @@ export class CharacterListPage implements OnInit, OnDestroy {
       }
     });
 
-    modal.onDidDismiss().then(() => this.hasModal = false);
+    modal.onDidDismiss().then(() => {
+      this.hasModal = false;
+
+      this.router.navigate([], {
+        relativeTo: this.activatedRoute,
+        queryParams: {
+          filter: this.getCurrentFilter()
+        }
+      });
+    });
 
     await modal.present();
   }
