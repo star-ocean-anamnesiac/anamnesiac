@@ -70,7 +70,7 @@ export class AppComponent {
   }
 
   private watchBackButton() {
-    this.platform.backButton.subscribe(async () => {
+    this.platform.backButton.subscribeWithPriority(500, async () => {
       try {
           const element = await this.modalCtrl.getTop();
           if(element) { element.dismiss(); }
