@@ -76,7 +76,7 @@ export class AppComponent {
       this.a2hsPrompt = e;
     });
   }
-  
+
   @HostListener('document:ionBackButton', ['$event'])
   async watchBackButton() {
     try {
