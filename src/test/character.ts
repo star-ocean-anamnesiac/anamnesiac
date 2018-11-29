@@ -4,7 +4,7 @@ import test from 'ava';
 import * as YAML from 'js-yaml';
 import * as _ from 'lodash';
 
-import { Character } from '../src/app/models/character';
+import { Character } from '../app/models/character';
 
 const ROOT_FILE = 'src/assets/data/root.yml';
 
