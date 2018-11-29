@@ -71,18 +71,17 @@ export class AppComponent {
       this.splashScreen.hide();
     });
 
+    window.onpopstate = async () => {
+      try {
+          const element = await this.modalCtrl.getTop();
+          if(element) { element.dismiss(); }
+      } catch (e) {}
+    };
+
     window.addEventListener('beforeinstallprompt', e => {
       e.preventDefault();
       this.a2hsPrompt = e;
     });
-  }
-
-  @HostListener('document:ionBackButton', ['$event'])
-  async watchBackButton() {
-    try {
-        const element = await this.modalCtrl.getTop();
-        if(element) { element.dismiss(); }
-    } catch (e) {}
   }
 
   private async loadRootData() {
