@@ -1,6 +1,6 @@
 import { filter } from 'rxjs/operators';
 
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, HostListener } from '@angular/core';
 
 import { Platform, ModalController, Toggle } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
@@ -71,21 +71,18 @@ export class AppComponent {
       this.splashScreen.hide();
     });
 
-    this.watchBackButton();
-
     window.addEventListener('beforeinstallprompt', e => {
       e.preventDefault();
       this.a2hsPrompt = e;
     });
   }
-
-  private watchBackButton() {
-    this.platform.backButton.subscribeWithPriority(500, async () => {
-      try {
-          const element = await this.modalCtrl.getTop();
-          if(element) { element.dismiss(); }
-      } catch (e) {}
-    });
+  
+  @HostListener('document:ionBackButton', ['$event'])
+  async watchBackButton() {
+    try {
+        const element = await this.modalCtrl.getTop();
+        if(element) { element.dismiss(); }
+    } catch (e) {}
   }
 
   private async loadRootData() {
