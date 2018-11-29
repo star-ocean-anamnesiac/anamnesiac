@@ -2,7 +2,7 @@ import { filter } from 'rxjs/operators';
 
 import { Component } from '@angular/core';
 
-import { Platform } from '@ionic/angular';
+import { Platform, ModalController } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { Router, NavigationEnd } from '@angular/router';
@@ -41,6 +41,7 @@ export class AppComponent {
     private dataService: DataService,
     private platform: Platform,
     private splashScreen: SplashScreen,
+    private modalCtrl: ModalController,
     private statusBar: StatusBar,
     private router: Router
   ) {
@@ -60,9 +61,20 @@ export class AppComponent {
       this.splashScreen.hide();
     });
 
+    this.watchBackButton();
+
     window.addEventListener('beforeinstallprompt', e => {
       e.preventDefault();
       this.a2hsPrompt = e;
+    });
+  }
+
+  private watchBackButton() {
+    this.platform.backButton.subscribe(async () => {
+      try {
+          const element = await this.modalCtrl.getTop();
+          if(element) { element.dismiss(); }
+      } catch (e) {}
     });
   }
 
