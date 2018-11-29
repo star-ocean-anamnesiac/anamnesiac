@@ -32,6 +32,12 @@
             </ion-item>
 
           </ion-menu-toggle>
+
+          <ion-item>
+            <ion-label>Global</ion-label>
+            <ion-toggle [checked]="isJP" [(ngModel)]="_jpToggle" (ionChange)="setRegion()"></ion-toggle>
+            <ion-label text-right>Japan</ion-label>
+          </ion-item>
         </ion-list>
       </ion-content>
       

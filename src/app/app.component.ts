@@ -1,13 +1,14 @@
 import { filter } from 'rxjs/operators';
 
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 
-import { Platform, ModalController } from '@ionic/angular';
+import { Platform, ModalController, Toggle } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { Router, NavigationEnd } from '@angular/router';
 
 import { DataService } from './data.service';
+import { LocalStorage } from 'ngx-webstorage';
 
 interface Page {
   title: string;
@@ -24,6 +25,11 @@ interface Page {
   templateUrl: 'app.component.html'
 })
 export class AppComponent {
+
+  public _jpToggle: boolean;
+
+  @LocalStorage()
+  public isJP: boolean;
 
   public activePage: string;
 
@@ -53,6 +59,10 @@ export class AppComponent {
   public a2hs() {
     this.a2hsPrompt.prompt();
     this.a2hsPrompt = null;
+  }
+
+  public setRegion() {
+    this.isJP = this._jpToggle;
   }
 
   private initializeApp() {

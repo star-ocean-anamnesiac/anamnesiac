@@ -7,7 +7,7 @@
       Characters
     </ion-title>
 
-    <ion-buttons slot="end">
+    <ion-buttons slot="end" *ngIf="!isError">
       <ion-button (click)="toggleSearch()">
         <ion-icon name="search"></ion-icon>
       </ion-button> 
@@ -34,13 +34,13 @@
                  (ionInput)="updateSearchValue($event)"
   ></ion-searchbar>
 
-  <ion-list *ngIf="sorting === 'alpha'">
+  <ion-list *ngIf="!isError && sorting === 'alpha'">
     <ion-item *ngFor="let char of alphaSortedCharacters | filterBy: { name: searchValue }" detail (click)="loadCharacter(char)">
       <ng-container *ngTemplateOutlet="character; context: { char: char }"></ng-container>
     </ion-item>
   </ion-list>
 
-  <ion-list *ngIf="sorting === 'weapon'">
+  <ion-list *ngIf="!isError && sorting === 'weapon'">
     <ion-item-group *ngFor="let weapon of allWeapons">
       <ion-item-divider><strong>{{ convertWeaponType(weapon) }}</strong></ion-item-divider>
 
@@ -50,7 +50,7 @@
     </ion-item-group>
   </ion-list>
 
-  <ion-list *ngIf="sorting === 'tier'">
+  <ion-list *ngIf="!isError && sorting === 'tier'">
     <ion-item-group *ngFor="let tier of allTiers">
       <ion-item-divider><strong>{{ tier }}</strong></ion-item-divider>
 

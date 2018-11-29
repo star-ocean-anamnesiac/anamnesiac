@@ -2,7 +2,7 @@
 import * as _ from 'lodash';
 import { Subscription } from 'rxjs';
 import { filter } from 'rxjs/operators';
-import { LocalStorage } from 'ngx-webstorage';
+import { LocalStorage, LocalStorageService } from 'ngx-webstorage';
 
 import { ModalController, PopoverController } from '@ionic/angular';
 import { Component, OnInit, OnDestroy } from '@angular/core';
@@ -39,8 +39,11 @@ export class CharacterListPage implements OnInit, OnDestroy {
   private character$: Subscription;
   private hasModal: boolean;
 
+  private region: 'gl'|'jp';
+
   constructor(
     private dataService: DataService,
+    private localStorage: LocalStorageService,
     private router: Router,
     private activatedRoute: ActivatedRoute,
     private popoverCtrl: PopoverController,
@@ -50,22 +53,41 @@ export class CharacterListPage implements OnInit, OnDestroy {
   ngOnInit() {
     if(!this.sorting) { this.sorting = 'alpha'; }
 
+    this.localStorage.observe('isJP').subscribe(val => {
+      this.updateRegionBasedOn(val);
+    });
+
     this.router.events
       .pipe(
         filter(x => x instanceof NavigationEnd)
       )
       .subscribe((x: NavigationEnd) => {
+        this.updateRegionBasedOn(this.localStorage.retrieve('isJP'));
         this.updateCharacterList();
       });
 
     this.character$ = this.dataService.characters$.subscribe(chars => {
       this.allCharacters = chars;
+      this.updateRegionBasedOn(this.localStorage.retrieve('isJP'));
       this.updateCharacterList();
     });
   }
 
   ngOnDestroy() {
     this.character$.unsubscribe();
+  }
+
+  private updateRegionBasedOn(val: boolean) {
+    this.region = val ? 'jp' : 'gl';
+
+    this.router.navigate([], {
+      relativeTo: this.activatedRoute,
+      queryParams: {
+        filter: this.getCurrentFilter(),
+        region: this.region,
+        char: this.getPreviouslyLoadedChar()
+      }
+    });
   }
 
   public convertWeaponType(type: string): string {
@@ -83,6 +105,7 @@ export class CharacterListPage implements OnInit, OnDestroy {
       relativeTo: this.activatedRoute,
       queryParams: {
         filter: this.getCurrentFilter(),
+        region: this.region,
         char: char.name
       }
     });
@@ -110,7 +133,8 @@ export class CharacterListPage implements OnInit, OnDestroy {
       this.router.navigate([], {
         relativeTo: this.activatedRoute,
         queryParams: {
-          filter: this.getCurrentFilter()
+          filter: this.getCurrentFilter(),
+          region: this.region
         }
       });
     });
@@ -163,6 +187,8 @@ export class CharacterListPage implements OnInit, OnDestroy {
     if(curFilter) {
       arr = this.allCharacters.filter(char => char.type === curFilter);
     }
+
+    arr = arr.filter(char => char.cat === this.region);
 
     if(arr.length === 0) {
       this.isError = true;

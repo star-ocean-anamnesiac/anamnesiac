@@ -2,7 +2,7 @@
 import * as _ from 'lodash';
 import { Subscription } from 'rxjs';
 import { filter } from 'rxjs/operators';
-import { LocalStorage } from 'ngx-webstorage';
+import { LocalStorage, LocalStorageService } from 'ngx-webstorage';
 
 import { ModalController, PopoverController } from '@ionic/angular';
 import { Component, OnInit, OnDestroy } from '@angular/core';
@@ -39,8 +39,11 @@ export class ItemListPage implements OnInit, OnDestroy {
   private item$: Subscription;
   private hasModal: boolean;
 
+  private region: 'gl'|'jp';
+
   constructor(
     private dataService: DataService,
+    private localStorage: LocalStorageService,
     private router: Router,
     private activatedRoute: ActivatedRoute,
     private popoverCtrl: PopoverController,
@@ -50,22 +53,41 @@ export class ItemListPage implements OnInit, OnDestroy {
   ngOnInit() {
     if(!this.sorting) { this.sorting = 'alpha'; }
 
+    this.localStorage.observe('isJP').subscribe(val => {
+      this.updateRegionBasedOn(val);
+    });
+
     this.router.events
       .pipe(
         filter(x => x instanceof NavigationEnd)
       )
       .subscribe((x: NavigationEnd) => {
+        this.updateRegionBasedOn(this.localStorage.retrieve('isJP'));
         this.updateItemsList();
       });
 
     this.item$ = this.dataService.items$.subscribe(items => {
       this.allItems = items;
+      this.updateRegionBasedOn(this.localStorage.retrieve('isJP'));
       this.updateItemsList();
     });
   }
 
   ngOnDestroy() {
     this.item$.unsubscribe();
+  }
+
+  private updateRegionBasedOn(val: boolean) {
+    this.region = val ? 'jp' : 'gl';
+
+    this.router.navigate([], {
+      relativeTo: this.activatedRoute,
+      queryParams: {
+        ...this.getCurrentFilter(),
+        region: this.region,
+        item: this.getPreviouslyLoadedItem()
+      }
+    });
   }
 
   public convertWeaponType(type: string): string {
@@ -84,6 +106,7 @@ export class ItemListPage implements OnInit, OnDestroy {
       relativeTo: this.activatedRoute,
       queryParams: {
         ...this.getCurrentFilter(),
+        region: this.region,
         item: item.name
       }
     });
@@ -111,7 +134,8 @@ export class ItemListPage implements OnInit, OnDestroy {
       this.router.navigate([], {
         relativeTo: this.activatedRoute,
         queryParams: {
-          ...this.getCurrentFilter()
+          ...this.getCurrentFilter(),
+          region: this.region
         }
       });
     });
@@ -177,6 +201,8 @@ export class ItemListPage implements OnInit, OnDestroy {
     if(subtype) {
       arr = this.allItems.filter(item => item.subtype === subtype);
     }
+
+    arr = arr.filter(item => item.cat === this.region);
 
     if(arr.length === 0) {
       this.isError = true;
