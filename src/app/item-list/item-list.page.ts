@@ -116,7 +116,9 @@ export class ItemListPage implements OnInit, OnDestroy {
   public async loadItemModal(name: string) {
     if(this.hasModal) { return; }
 
-    const item = _.find(this.allItems, { name });
+    const item = _.find(this.allItems, { name, cat: this.region });
+
+    if(!item) { return; }
 
     this.hasModal = true;
 

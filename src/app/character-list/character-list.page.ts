@@ -115,7 +115,9 @@ export class CharacterListPage implements OnInit, OnDestroy {
   public async loadCharacterModal(name: string) {
     if(this.hasModal) { return; }
 
-    const character = _.find(this.allCharacters, { name });
+    const character = _.find(this.allCharacters, { name, cat: this.region });
+
+    if(!character) { return; }
 
     this.hasModal = true;
 
