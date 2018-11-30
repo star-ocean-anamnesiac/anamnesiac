@@ -54,50 +54,11 @@ export class CharacterSortPopover {
         <ion-tabs #tabs>
           <ion-tab tab="stats" class="stats-tab">
 
-            <ion-row>
-              <ion-col>
-                <ion-card>
-                  <ion-card-header><ion-card-title>HP</ion-card-title></ion-card-header>
-                  <ion-card-content>{{ char.stats.hp | number }}</ion-card-content>
-                </ion-card>
-              </ion-col>
-              <ion-col>
-                <ion-card>
-                  <ion-card-header><ion-card-title>HIT</ion-card-title></ion-card-header>
-                  <ion-card-content>{{ char.stats.hit | number }}</ion-card-content>
-                </ion-card>
-              </ion-col>
-            </ion-row>
-
-            <ion-row>
-              <ion-col>
-                <ion-card>
-                  <ion-card-header><ion-card-title>ATK</ion-card-title></ion-card-header>
-                  <ion-card-content>{{ char.stats.atk | number }}</ion-card-content>
-                </ion-card>
-              </ion-col>
-              <ion-col>
-                <ion-card>
-                  <ion-card-header><ion-card-title>INT</ion-card-title></ion-card-header>
-                  <ion-card-content>{{ char.stats.int | number }}</ion-card-content>
-                </ion-card>
-              </ion-col>
-            </ion-row>
-
-            <ion-row>
-              <ion-col>
-                <ion-card>
-                  <ion-card-header><ion-card-title>DEF</ion-card-title></ion-card-header>
-                  <ion-card-content>{{ char.stats.def | number }}</ion-card-content>
-                </ion-card>
-              </ion-col>
-              <ion-col>
-                <ion-card>
-                  <ion-card-header><ion-card-title>GRD</ion-card-title></ion-card-header>
-                  <ion-card-content>{{ char.stats.grd | number }}</ion-card-content>
-                </ion-card>
-              </ion-col>
-            </ion-row>
+            <ion-list>
+              <ion-item *ngFor="let stat of ['hp', 'hit', 'atk', 'int', 'def', 'grd']">
+                <strong>{{ stat.toUpperCase() }}</strong>: {{ char.stats[stat] | number }}
+              </ion-item>
+            </ion-list>
 
           </ion-tab>
 
@@ -237,18 +198,6 @@ export class CharacterSortPopover {
 
     .notes {
       white-space: pre-wrap;
-    }
-
-    .stats-tab {
-      justify-content: flex-start;
-    }
-
-    .stats-tab ion-row {
-      flex: 1;
-    }
-
-    .stats-tab ion-card {
-      height: 80%;
     }
   `]
 })
