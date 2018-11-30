@@ -65,7 +65,7 @@
     power: ATK x4000%
     maxHits: 27
     
-- name: fidel
+- name: Fidel
   cat: gl
   rating: 7
   picture: https://vignette.wikia.nocookie.net/starocean/images/0/0a/2b_icon.png/revision/latest?cb=20180817021908
@@ -116,3 +116,57 @@
         duration: 20
     power: ATK x3000%
     maxHits: 12
+    
+- name: Cliff
+  cat: gl
+  rating: 6
+  picture: https://vignette.wikia.nocookie.net/starocean/images/0/0a/2b_icon.png/revision/latest?cb=20180817021908
+  weapon: knuckles
+  ace: true
+  limited: false
+  star: 5
+
+  stats:
+    hp: 15750
+    atk: 3183
+    int: 1522
+    def: 1930
+    hit: 1162
+    grd: 812
+
+  talents:
+    - name: "Klaus Champion II"
+      effects: 
+        - desc: AP Cost -40% 
+    - name: "Greater Master of the Training Hall"
+      effects: 
+        - desc: ATK +30% 
+    - name: "Revolutionary Spirit"
+      effects:
+        - desc: Critical Rate +20%
+
+  skills:
+    - name: "Triple Kick"
+      power: ATK x250%
+      ap: 24
+      maxHits: 2
+    - name: "Crescent Locus"
+      power: ATK x150%
+      ap: 17
+      maxHits: 4
+    - name: "Acrobat Locus"
+      power: ATK x710%
+      ap: 41
+      maxHits: 4
+    - name: "Fists of Fury"
+      power: ATK x780%
+      ap: 43
+      maxHits: 25
+
+  rush:
+    name: "Steel Fists of Fury"
+    effects: 
+      - desc: N/A
+        duration: 0
+    power: ATK x4500%
+    maxHits: 25
