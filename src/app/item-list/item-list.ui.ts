@@ -39,7 +39,7 @@ export class ItemSortPopover {
         <ion-img [src]="'assets/items/' + item.picture + '.png'" class="picture"></ion-img>
       </ion-col>
 
-      <ion-col>
+      <ion-col class="shrink-top-margin">
         <p>{{ item.star }}★ {{ type }}</p>
         <p>
           <span *ngIf="item.atk" class="middot-after">{{ item.atk }} ATK</span>

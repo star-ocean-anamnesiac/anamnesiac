@@ -41,7 +41,7 @@ export class CharacterSortPopover {
         <ion-img [src]="'assets/characters/' + char.picture + '.png'" class="picture"></ion-img>
       </ion-col>
 
-      <ion-col>
+      <ion-col class="shrink-top-margin">
         <p>{{ char.star }}★ {{ char.ace ? 'ACE' : '' }} {{ char.limited ? '(Limited)' : '' }}</p>
         <p>Weapon: {{ weap }}<p>
       </ion-col>
