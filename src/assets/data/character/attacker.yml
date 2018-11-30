@@ -68,7 +68,7 @@
 - name: Fidel
   cat: gl
   rating: 7
-  picture: fidel.png
+  picture: fidel
   weapon: ohs
   ace: true
   limited: false
