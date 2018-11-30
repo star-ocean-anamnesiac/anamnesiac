@@ -64,7 +64,7 @@
 
 <ng-template #character let-char="char">
   <ion-img slot="start" [src]="'assets/classes/' + char.type + '.png'" class="asset-icon"></ion-img> 
-  <ion-img slot="start" [src]="char.picture" class="mini-picture-icon"></ion-img>
+  <ion-img slot="start" [src]="'assets/characters/' + char.picture + '.png'" class="mini-picture-icon"></ion-img>
 
   <ion-label>
     <h3>{{ char.star }}★ {{ char.name }}</h3>

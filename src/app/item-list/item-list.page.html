@@ -63,7 +63,7 @@
 </ion-content>
 
 <ng-template #items let-item="item">
-  <ion-img slot="start" [src]="item.picture" class="mini-picture-icon"></ion-img>
+  <ion-img slot="start" [src]="'assets/items/' + item.picture + '.png'" class="mini-picture-icon"></ion-img>
 
   <ion-label>
     <h3>{{ item.star }}★ {{ item.name }}</h3>

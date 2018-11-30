@@ -2,7 +2,7 @@
 - name: A2
   cat: gl
   rating: 10
-  picture: https://vignette.wikia.nocookie.net/starocean/images/b/b1/A2_icon.png/revision/latest?cb=20180817021940
+  picture: a2
   weapon: greatsword
   ace: true
   limited: true

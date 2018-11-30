@@ -2,7 +2,7 @@
 - name: Holy Rod
   cat: 'gl'
   star: 5
-  picture: https://cdn.discordapp.com/attachments/466813638447988736/466843427976380437/unknown.png
+  picture: holyrod
   atk: 0
   int: 835
   factor1: Light damage +15%

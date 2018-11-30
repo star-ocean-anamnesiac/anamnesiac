@@ -36,7 +36,7 @@ export class ItemSortPopover {
   <ion-content>
     <ion-row class="profile-row">
       <ion-col size-xs="6" size-md="3">
-        <ion-img [src]="item.picture" class="picture"></ion-img>
+        <ion-img [src]="'assets/items/' + item.picture + '.png'" class="picture"></ion-img>
       </ion-col>
 
       <ion-col>

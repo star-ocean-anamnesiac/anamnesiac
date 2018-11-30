@@ -2,7 +2,7 @@
 - name: Divine Wave Gun
   cat: 'gl'
   star: 5
-  picture: https://cdn.discordapp.com/attachments/466813623352688660/483978431676022790/Divine_Wave_Gun.jpg
+  picture: divinewavegun
   atk: 962
   int: 959
   factor1: Damage dealt to demons +40%

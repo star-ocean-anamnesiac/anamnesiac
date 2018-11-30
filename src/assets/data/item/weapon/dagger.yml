@@ -2,7 +2,7 @@
 - name: Golden-bolt Destroyers
   cat: 'gl'
   star: 5
-  picture: https://cdn.discordapp.com/attachments/466813845198077963/471344048557522956/unknown.png
+  picture: goldenboltdestroyers
   atk: 471
   element: Lightning
   factor1: Imbues attacks with lightning element

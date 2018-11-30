@@ -2,7 +2,7 @@
 - name: Type-4O Sword
   cat: 'gl'
   star: 5
-  picture: https://cdn.discordapp.com/attachments/466813613785743360/501685504501350410/Type-4O_Sword.png
+  picture: type4osword
   atk: 964
   int: 958
   factor1: All attribute damage +50% / Damage to mechs +50%

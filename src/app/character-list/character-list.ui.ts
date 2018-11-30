@@ -38,7 +38,7 @@ export class CharacterSortPopover {
   <ion-content>
     <ion-row class="profile-row">
       <ion-col size-xs="6" size-md="3">
-        <ion-img [src]="char.picture" class="picture"></ion-img>
+        <ion-img [src]="'assets/characters/' + char.picture + '.png'" class="picture"></ion-img>
       </ion-col>
 
       <ion-col>

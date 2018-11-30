@@ -2,7 +2,7 @@
 - name: 9S
   cat: gl
   rating: 10
-  picture: https://vignette.wikia.nocookie.net/starocean/images/1/13/9s_icon.png/revision/latest?cb=20180817021925
+  picture: 9s
   weapon: ohs
   ace: true
   limited: true

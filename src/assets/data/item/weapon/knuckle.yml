@@ -2,7 +2,7 @@
 - name: Knuckles of Hope
   cat: 'gl'
   star: 5
-  picture: https://cdn.discordapp.com/attachments/466813695931056139/493273858799829003/Fallen_Hope.jpg
+  picture: knucklesofhope
   atk: 474
   int: 478
   factor1: Light damage +15%

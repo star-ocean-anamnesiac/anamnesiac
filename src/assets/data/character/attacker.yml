@@ -2,7 +2,7 @@
 - name: 2B
   cat: gl
   rating: 10
-  picture: https://vignette.wikia.nocookie.net/starocean/images/0/0a/2b_icon.png/revision/latest?cb=20180817021908
+  picture: 2b
   weapon: ohs
   ace: true
   limited: true
