@@ -37,6 +37,9 @@ export interface Skill {
 
   // user entered notes. does not support markdown!
   notes?: string;
+
+  // if this skill should be higlighted
+  highlight?: boolean;
 }
 
 export interface Effect {
@@ -65,7 +68,7 @@ export interface Character {
   // the rating 0-10
   rating: number;
 
-  // a url to the picture of the character
+  // a ref to the picture of the character (in assets/character)
   picture: string;
 
   // the weapon type the character uses. use the shorthand (ie, ohs) not the expanded form (One Handed Sword)

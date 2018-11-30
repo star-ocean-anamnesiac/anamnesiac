@@ -16,7 +16,7 @@ export interface Item {
   // the star rating in game (1-5)
   star: number;
 
-  // a url to the picture of the item
+  // a ref to the picture of the character (in assets/item)
   picture: string;
 
   // the level 20 atk of the item (for weapons)

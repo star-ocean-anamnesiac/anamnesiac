@@ -41,6 +41,7 @@
       power: ATK x380%
       ap: 22
       maxHits: 2
+      highlight: true
     - name: "YoRHa Arms: Two"
       power: ATK x800%
       ap: 42

@@ -129,7 +129,10 @@ export class CharacterSortPopover {
                 <ion-col>
                   <ion-card>
                     <ion-card-header>
-                    <ion-card-title>{{ skill.name }} ({{ skill.ap }} AP)</ion-card-title>
+                    <ion-card-title>
+                      <ion-icon name="star" *ngIf="skill.highlight"></ion-icon>
+                      {{ skill.name }} ({{ skill.ap }} AP)
+                    </ion-card-title>
                     </ion-card-header>
                     <ion-card-content>
                       <div *ngIf="skill.element"><strong>Element:</strong> {{ skill.element }}</div>
