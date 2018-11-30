@@ -43,8 +43,7 @@ export class ItemSortPopover {
         <p>{{ item.star }}★ {{ type }}</p>
         <p>
           <span *ngIf="item.atk" class="middot-after">{{ item.atk }} ATK</span>
-          <span *ngIf="item.int" class="middot-after">{{ item.int }} INT</span>
-          <span *ngIf="item.element">{{ item.element || 'No Element' }}</span>
+          <span *ngIf="item.int">{{ item.int }} INT</span>
           <span *ngIf="item.def">{{ item.def }} DEF</span>
         </p>
         <p>Obtained: {{ item.obtained }}</p>
