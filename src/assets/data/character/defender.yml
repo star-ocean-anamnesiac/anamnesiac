@@ -357,9 +357,9 @@
 
   skills:
     - name: "Annihiliating Air Slash"
-      power: ATK x???%
-      ap: -1
-      maxHits: -1
+      power: ATK x200%
+      ap: 20
+      maxHits: 5
       highlight: true
     - name: "Double Slash"
       power: ATK x200%
@@ -382,5 +382,5 @@
     effects: 
       - desc: AP cost -50%
         duration: 20
-    power: ATK x???%
-    maxHits: -1
+    power: ATK x3500%
+    maxHits: 10
