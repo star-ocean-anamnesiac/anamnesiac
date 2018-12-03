@@ -158,18 +158,77 @@
         - desc: Damage dealt to beasts +60%
 
   skills:
-    - name: "Mirror Blade"
-      power: ATK x610%
-      ap: 38
-      maxHits: 5
+    - name: "Double Slash"
+      power: ATK x200%
+      ap: 20
+      maxHits: 2
     - name: "Vampiric Flash"
       power: ATK x220%
       ap: 32
       maxHits: 6
-    - name: "Bloodstorm Revolution"
-      power: ATK x550%
+    - name: "Nether Strike"
+      power: ATK x250%
+      ap: 24
+      maxHits: 5
+      element: Fire
+    - name: "Air Slash"
+      power: ATK x200%
+      ap: 20
+      maxHits: 2
+      
+  rush:
+    name: "Nether Strike"
+    element: Fire
+    effects: 
+      - desc:	Heals 20% of max HP every 4 seconds
+        duration: 20
+        all: true
+    power: ATK x3000%
+    maxHits: 7
+
+- name: Stephen D. Kenny
+  cat: gl
+  rating: 3
+  picture: stephendkenny
+  weapon: bns
+  star: 4
+
+  stats:
+    hp: 17010
+    atk: 1811
+    int: 1234
+    def: 2126
+    hit: 658
+    grd: 868
+
+  talents:
+    - name: "Guardian of Light"
+      effects: 
+        - desc: DEF +40%
+          all: true
+        - desc: Damage +10%
+          all: true
+    - name: "Imposing Presence IV"
+      effects: 
+        - desc: Will not flinch to damage under 20% max HP
+          all: Close Range
+    - name: "Will of the Universe"
+      effects: 
+        - desc: Critical rate +20%
+
+  skills:
+    - name: "Mirror Blade"
+      power: ATK x610%
       ap: 38
-      maxHits: 10
+      maxHits: 5
+    - name: "Flying Guillotine"
+      power: ATK x370%
+      ap: 32
+      maxHits: 6
+    - name: "Diabolic Edge"
+      power: ATK x340%
+      ap: 29
+      maxHits: 2
       highlight: true
     - name: "Dragon Roar"
       power: ATK x340%
@@ -179,10 +238,9 @@
       highlight: true
       
   rush:
-    name: "Nether Strike"
-    element: Fire
+    name: "Blade Vortex"
     effects: 
-      - desc:	Heals 20% of max HP every 4 seconds
+      - desc: Will not flinch to damage under 40% max HP
         duration: 20
         all: true
     power: ATK x3000%
