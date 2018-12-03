@@ -204,7 +204,7 @@ export class CharacterListPage implements OnInit, OnDestroy {
 
     // weapon sorting
     this.weaponSortedCharacters = _(arr)
-      .sortBy(arr, 'name')
+      .sortBy('name')
       .groupBy('weapon')
       .value();
     this.allWeapons = _.sortBy(Object.keys(this.weaponSortedCharacters));
