@@ -318,3 +318,69 @@
         all: true
     power: ATK x4000%
     maxHits: 6
+    
+- name: Dias Flac
+  cat: gl
+  rating: 7.5
+  picture: diasflac
+  weapon: bns
+  ace: true
+  star: 5
+
+  stats:
+    hp: 22155
+    atk: 2799
+    int: 1509
+    def: 2867
+    hit: 812
+    grd: 1036
+
+  talents:
+    - name: "Expel's Renowned Swordsman"
+      effects: 
+        - desc: DEF +20%
+          all: true
+        - desc: ATK damage taken -20%
+          all: true
+    - name: "Aloof Swordsmanship"
+      effects: 
+        - desc: ATK +30%
+        - desc: DEF +20%
+    - name: "Oath to Cecille"
+      effects: 
+        - desc: Will not flinch to damage under 25% max HP
+          all: Close Range
+    - name: "Encountered a Worthy Rival"
+      effects: 
+        - desc: Damage +20%
+          all: Attackers & Defenders
+
+  skills:
+    - name: "Annihiliating Air Slash"
+      power: ATK x???%
+      ap: -1
+      maxHits: -1
+      highlight: true
+    - name: "Double Slash"
+      power: ATK x200%
+      ap: 20
+      maxHits: 2
+      highlight: true
+    - name: "Diabolic Edge"
+      power: ATK x340%
+      ap: 29
+      maxHits: 2
+    - name: "Dragon Roar"
+      power: ATK x340%
+      ap: 29
+      maxHits: 2
+      element: Dark
+      highlight: true
+      
+  rush:
+    name: "Deadly Illusion"
+    effects: 
+      - desc: AP cost -50%
+        duration: 20
+    power: ATK x???%
+    maxHits: -1
