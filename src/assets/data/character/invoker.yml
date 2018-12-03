@@ -259,3 +259,65 @@
    
   notes: >
     'kay?
+
+- name: Faize Sheifa Beleth
+  cat: gl
+  rating: 7
+  picture: faizesheifabeleth
+  weapon: bns
+  limited: false
+  star: 5
+
+  stats:
+    hp: 13020
+    atk: 1458
+    int: 3124
+    def: 1076
+    hit: 924
+    grd: 749
+
+  talents:
+    - name: "The Gifted One II"
+      effects: 
+        - desc: Damage to single targets +30%
+          all: true
+        - desc: Chance to stun +15%
+          all: true
+    - name: "Eldarian Honor II"
+      effects: 
+        - desc: At 10% HP or higher, has an 80% chance to survive a lethal attack
+        - desc: Reduce casting time by 80%
+
+  skills:
+    - name: "Cursed Devourer"
+      element: Dark
+      power: INT x570%
+      ap: 42
+      maxHits: 5
+      highlight: true
+    - name: "Cursed Vampiric Blade"
+      element: Dark
+      power: INT x370%
+      ap: 32
+      maxHits: 5
+    - name: "Cursed Shadow Needles"
+      element: Dark
+      power: INT x240%
+      ap: 23
+      maxHits: 5
+      highlight: true
+    - name: "Cursed Reaping Spark"
+      element: Dark
+      power: INT x520%
+      ap: 37
+      maxHits: 12
+      highlight: true
+      
+  rush:
+    name: "Eldar Necrospike"
+    element: Dark
+    effects: 
+      - desc: AP cost -30%
+        duration: 20
+    power: INT x3000%
+    maxHits: 12
