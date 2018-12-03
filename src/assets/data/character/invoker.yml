@@ -69,3 +69,67 @@
       **This is line 2**
 
       *This is line 3*
+      
+- name: Myuria Tionysus
+  cat: gl
+  rating: 7.5
+  picture: myuriationysus
+  weapon: staff
+  ace: true
+  limited: false
+  star: 5
+
+  stats:
+    hp: 12285
+    atk: 1537
+    int: 3822
+    def: 1339
+    hit: 1057
+    grd: 833
+
+  talents:
+    - name: "Enchanted Perfume II"
+      effects: 
+        - desc: Easier to stun +30%
+    - name: "Hardier Warrior of Morphus"
+      effects: 
+        - desc: INT +30%
+    - name: "In Loving Memory of Lucien II"
+      effects: 
+        - desc: Reduce casting time by 30%
+    - name: "Adult's Composure"
+      effects: 
+        - desc: AP cost -20%
+
+  skills:
+    - name: "Deep Freeze"
+      element: Ice
+      power: INT x460%
+      ap: 35
+      maxHits: 9
+    - name: "Thunder Flare"
+      element: Lightning
+      power: INT x460%
+      ap: 35
+      maxHits: 4
+      highlight: true
+    - name: "Arctic Impact"
+      element: Ice
+      power: INT x670%
+      ap: 42
+      maxHits: 3
+      highlight: true
+    - name: "Plasma Cyclone"
+      element: Lightning
+      power: INT x700%
+      ap: 50
+      maxHits: 6
+      
+  rush:
+    name: "Ultraviolet Extinction"
+    element: Lightning
+    effects: 
+      - desc: +80% INT
+        duration: 20
+    power: INT x3500%
+    maxHits: 2
