@@ -65,3 +65,64 @@
         duration: 20
     power: ATK x4500%
     maxHits: 25
+
+- name: Victor
+  cat: gl
+  rating: 6
+  picture: victor
+  weapon: bns
+  ace: true
+  star: 5
+
+  stats:
+    hp: 18795
+    atk: 2074
+    int: 1365
+    def: 2336
+    hit: 738
+    grd: 952
+
+  talents:
+    - name: "The King's Chosen Glory"
+      effects: 
+        - desc: DEF +50%
+          all: true
+        - desc: Damage +10%
+          all: true
+    - name: "What Friends Are For IV"
+      effects: 
+        - desc: Will not flinch to damage under 25% max HP
+          all: true
+    - name: "Indomitable Spirit"
+      effects: 
+        - desc: At 10% HP or higher, 80% chance to survive a lethal attack
+
+  skills:
+    - name: "Mirror Blade"
+      power: ATK x610%
+      ap: 38
+      maxHits: 5
+    - name: "Vampiric Flash"
+      power: ATK x220%
+      ap: 32
+      maxHits: 6
+    - name: "Bloodstorm Revolution"
+      power: ATK x550%
+      ap: 38
+      maxHits: 10
+      highlight: true
+    - name: "Dragon Roar"
+      power: ATK x340%
+      ap: 29
+      maxHits: 2
+      element: Dark
+      highlight: true
+      
+  rush:
+    name: "Diabolic Edge - Whirlwind"
+    effects: 
+      - desc: Damage taken -50%
+        duration: 20
+        all: true
+    power: ATK x3000%
+    maxHits: 15
