@@ -245,3 +245,76 @@
         all: true
     power: ATK x3000%
     maxHits: 7
+    
+- name: Myuria Tionysus (Summer)
+  cat: gl
+  rating: 8.5
+  picture: everlastingsummermyuriationysus
+  weapon: bns
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 21945
+    atk: 2258
+    int: 1563
+    def: 2324
+    hit: 826
+    grd: 1050
+
+  talents:
+    - name: "Excellent Proportions"
+      effects: 
+        - desc: HP +20%
+          all: true
+        - desc: Will not flinch to damage under 20% max HP
+          all: true
+    - name: "Aroma Suntan Lotion"
+      effects: 
+        - desc: INT damage taken -20%
+          all: true
+    - name: "Skillful Temptation"
+      effects: 
+        - desc: ATK +40% when under aggro
+        - desc: AP cost -20% when under aggro
+    - name: "Vacation Pareo"
+      effects:
+        - desc: Single target damage +20% when not under aggro
+          all: true
+        - desc: Ease of stun +15% when not under aggro
+          all: true
+
+  skills:
+    - name: "Air Slash"
+      power: ATK x200%
+      ap: 20
+      maxHits: 2
+    - name: "Aura Wall"
+      power: ATK 200%
+      ap: 20
+      maxHits: 20
+      highlight: true
+    - name: "Bloodstorm Revolution"
+      power: ATK x550%
+      ap: 38
+      maxHits: 10
+    - name: "Thunderfire Slash"
+      power: ATK x340%
+      ap: 29
+      maxHits: 2
+      element: Dark
+      highlight: true
+      
+  rush:
+    name: "Lightning Speed Sword Draw Attack"
+    element: Lightning
+    effects: 
+      - desc: AP cost -40%
+        duration: 20
+        all: true
+      - desc: Recover 15% max HP every 3 seconds
+        duration: 20
+        all: true
+    power: ATK x4000%
+    maxHits: 6
