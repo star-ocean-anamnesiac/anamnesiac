@@ -66,10 +66,10 @@
     power: ATK x4500%
     maxHits: 25
 
-- name: Victor
+- name: Victor Oakville
   cat: gl
   rating: 6
-  picture: victor
+  picture: victoroakville
   weapon: bns
   ace: true
   star: 5
@@ -126,3 +126,64 @@
         all: true
     power: ATK x3000%
     maxHits: 15
+
+- name: Shimada
+  cat: gl
+  rating: 3
+  picture: shimada
+  weapon: bns
+  star: 4
+
+  stats:
+    hp: 18480
+    atk: 1799
+    int: 1248
+    def: 1930
+    hit: 658
+    grd: 868
+
+  talents:
+    - name: "Former Glory III"
+      effects: 
+        - desc: Absorb 30% damage as HP
+    - name: "A Filet Mignon!"
+      effects: 
+        - desc:	Heals 3% of max HP every 3 seconds
+    - name: "Moving up in the World IV"
+      effects: 
+        - desc: Will not flinch to damage under 25% max HP
+          all: Close Range
+    - name: "Carnivore"
+      effects: 
+        - desc: Damage dealt to beasts +60%
+
+  skills:
+    - name: "Mirror Blade"
+      power: ATK x610%
+      ap: 38
+      maxHits: 5
+    - name: "Vampiric Flash"
+      power: ATK x220%
+      ap: 32
+      maxHits: 6
+    - name: "Bloodstorm Revolution"
+      power: ATK x550%
+      ap: 38
+      maxHits: 10
+      highlight: true
+    - name: "Dragon Roar"
+      power: ATK x340%
+      ap: 29
+      maxHits: 2
+      element: Dark
+      highlight: true
+      
+  rush:
+    name: "Nether Strike"
+    element: Fire
+    effects: 
+      - desc:	Heals 20% of max HP every 4 seconds
+        duration: 20
+        all: true
+    power: ATK x3000%
+    maxHits: 7
