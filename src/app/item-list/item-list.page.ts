@@ -218,7 +218,7 @@ export class ItemListPage implements OnInit, OnDestroy {
 
     // type sorting
     this.typeSortedItems = _(arr)
-      .sortBy(arr, 'name')
+      .sortBy('name')
       .groupBy('subtype')
       .value();
     this.allItemTypes = _.sortBy(Object.keys(this.typeSortedItems));
