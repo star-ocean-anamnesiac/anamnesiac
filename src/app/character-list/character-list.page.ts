@@ -211,7 +211,7 @@ export class CharacterListPage implements OnInit, OnDestroy {
 
     // tier sorting
     this.tierSortedCharacters = _(arr)
-      .sortBy([(char) => -char.rating, 'name'])
+      .sortBy([(char) => -Math.floor(char.rating), 'name'])
       .groupBy(char => {
         if(char.rating >= 10) { return 'Top Tier (10/10)'; }
         if(char.rating >= 8 && char.rating <= 9) { return 'Great (8-9/10)'; }
