@@ -75,7 +75,7 @@
       
 - name: Myuria Tionysus
   cat: gl
-  rating: 7.5
+  rating: 7
   picture: myuriationysus
   weapon: staff
   ace: true
@@ -138,7 +138,7 @@
 
 - name: Ronyx J. Kenny
   cat: gl
-  rating: 4.5
+  rating: 4
   picture: ronyxjkenny
   weapon: bow
   star: 5
