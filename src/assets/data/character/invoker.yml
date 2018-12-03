@@ -35,23 +35,26 @@
   skills:
     - name: "Plunging Fire Bolts"
       element: Fire
-      power: INT x???%
+      power: INT x200%
       ap: 20
-      maxHits: -1
+      maxHits: 6
+      highlight: true
     - name: "Stone Rain"
       element: Earth
-      power: INT x???%
+      power: INT x460%
       ap: 35
-      maxHits: -1
+      maxHits: 5
     - name: "Enhance"
       element: Fire
       ap: 60
       notes: +25% ATK to party. A good buff skill!
+      highlight: true
     - name: "Violent Explosion"
       element: Fire
-      power: INT x???%
+      power: INT x770%
       ap: 45
-      maxHits: -1
+      maxHits: 14
+      highlight: true
       
   rush:
     name: "Meteor Swarm"
@@ -61,7 +64,7 @@
       - desc: -60% AP cost
         duration: 20
     power: INT x3500%
-    maxHits: -1
+    maxHits: 9
 
   notes: >
       _Sophia is a caster_
