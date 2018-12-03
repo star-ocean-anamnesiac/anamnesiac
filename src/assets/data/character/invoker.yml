@@ -79,7 +79,6 @@
   picture: myuriationysus
   weapon: staff
   ace: true
-  limited: false
   star: 5
 
   stats:
@@ -142,8 +141,6 @@
   rating: 4.5
   picture: ronyxjkenny
   weapon: bow
-  ace: true
-  limited: false
   star: 5
 
   stats:
@@ -196,3 +193,69 @@
         all: true
     power: INT x2500%
     maxHits: 10
+
+- name: Lymle Lemuri Phi
+  cat: gl
+  rating: 4
+  picture: lymlelemuriphi
+  weapon: staff
+  limited: false
+  star: 5
+
+  stats:
+    hp: 11130
+    atk: 1391
+    int: 3479
+    def: 1604
+    hit: 966
+    grd: 749
+
+  talents:
+    - name: "Enchanted Artirstry"
+      effects: 
+        - desc: DEF +30%
+    - name: "Big Doggie Bite"
+      effects: 
+        - desc: Damage taken -30%
+    - name: "Grampa's Wish"
+      effects: 
+        - desc: Will not flinch if damage is less than 20% of max HP
+
+  skills:
+    - name: "Plunging Fire Bolts"
+      element: Fire
+      power: INT x200%
+      ap: 20
+      maxHits: 6
+      highlight: true
+    - name: "Volcanic Burst"
+      element: Fire
+      power: INT x670%
+      ap: 42
+      maxHits: 13
+      highlight: true
+    - name: "Wind Blade"
+      element: Wind
+      power: INT x190%
+      ap: 20
+      maxHits: 2
+    - name: "Tornado"
+      element: Wind
+      power: INT x460%
+      ap: 35
+      maxHits: 2
+      highlight: true
+      
+  rush:
+    name: "Trinity Blaze"
+    element: Fire
+    effects: 
+      - desc: INT +100%
+        duration: 20
+      - desc: Reduce casting time by 70%
+        duration: 20
+    power: INT x2500%
+    maxHits: 6
+   
+  notes: >
+    'kay?
