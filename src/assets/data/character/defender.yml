@@ -321,7 +321,7 @@
     
 - name: Dias Flac
   cat: gl
-  rating: 7.5
+  rating: 7
   picture: diasflac
   weapon: bns
   ace: true
