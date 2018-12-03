@@ -222,7 +222,7 @@ export class CharacterListPage implements OnInit, OnDestroy {
       .value();
     this.allTiers = _.sortBy(Object.keys(this.tierSortedCharacters), (tier) => {
       if(tier === 'Top Tier (10/10)') { return 0; }
-      if(tier === 'Great (8/9-10)')   { return 1; }
+      if(tier === 'Great (8-9/10)')   { return 1; }
       if(tier === 'Good (6-7/10)')    { return 2; }
       if(tier === 'Average (4/5-10)') { return 3; }
       if(tier === 'Bad (1-3/10)')     { return 4; }
