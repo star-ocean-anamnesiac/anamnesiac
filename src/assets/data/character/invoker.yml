@@ -136,3 +136,63 @@
         duration: 20
     power: INT x3500%
     maxHits: 2
+
+- name: Ronyx J. Kenny
+  cat: gl
+  rating: 4.5
+  picture: ronyxjkenny
+  weapon: bow
+  ace: true
+  limited: false
+  star: 5
+
+  stats:
+    hp: 12810
+    atk: 1723
+    int: 2100
+    def: 1076
+    hit: 938
+    grd: 756
+
+  talents:
+    - name: "Symbologist's Awakening II"
+      effects: 
+        - desc: INT +40%
+    - name: "Military Might II"
+      effects: 
+        - desc: Damage +20%
+        - desc: AP cost -20%
+
+  skills:
+    - name: "Stone Rain"
+      element: Earth
+      power: INT x460%
+      ap: 35
+      maxHits: 5
+    - name: "Explosion"
+      element: Fire
+      power: INT x460%
+      ap: 35
+      maxHits: 14
+      highlight: true
+    - name: "Terra Hammer"
+      element: Earth
+      power: INT x670%
+      ap: 42
+      maxHits: 6
+    - name: "Volcanic Burst"
+      element: Fire
+      power: INT x670%
+      ap: 42
+      maxHits: 13
+      highlight: true
+      
+  rush:
+    name: "Explode"
+    element: Fire
+    effects: 
+      - desc: Reduce casting time by 50%
+        duration: 20
+        all: true
+    power: INT x2500%
+    maxHits: 10
