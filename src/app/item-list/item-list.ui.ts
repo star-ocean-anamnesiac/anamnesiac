@@ -149,6 +149,10 @@ export class ItemSortPopover {
     .middot-after:after {
       content: ' · ';
     }
+
+    p {
+      color: #fff;
+    }
   `]
 })
 export class ItemModal implements OnInit {
