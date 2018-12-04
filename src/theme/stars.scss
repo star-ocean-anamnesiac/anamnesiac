@@ -139,6 +139,10 @@ ion-tab-bar {
 ion-list {
   background: transparent !important;
 
+  ion-list-header {
+    color: #fff;
+  }
+
   ion-item {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -166,4 +170,8 @@ ion-icon {
 
 ol {
   margin-block-start: 0;
+}
+
+ion-item-divider {
+  @include item-gradient();
 }
