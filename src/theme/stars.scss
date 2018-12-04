@@ -3,12 +3,12 @@ $border-color: #2f45bd;
 
 @mixin item-gradient() {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#163c87+0,1f82d0+100 */
-  background: #163c87; /* Old browsers */
-  background: -moz-linear-gradient(left, #163c87 0%, #1f82d0 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #163c87 0%,#1f82d0 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #163c87 0%,#1f82d0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: #163c87 !important; /* Old browsers */
+  background: -moz-linear-gradient(left, #163c87 0%, #1f82d0 100%) !important; /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #163c87 0%,#1f82d0 100%) !important; /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #163c87 0%,#1f82d0 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
-  color: #fff;
+  color: #fff !important;
 }
 
 // thanks to: https://codepen.io/angiebadfox/pen/RRdQAb
@@ -173,5 +173,9 @@ ol {
 }
 
 ion-item-divider {
+  @include item-gradient();
+}
+
+ion-searchbar .searchbar-input {
   @include item-gradient();
 }
