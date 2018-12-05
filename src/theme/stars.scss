@@ -128,7 +128,13 @@ ion-tab-bar {
   background: transparent !important;
 
   ion-tab-button {
-    color: #aaa;
+		color: #aaa;
+		
+		&:hover {
+			ion-label {
+				color: #ccc;
+			}
+		}
 
     &.tab-selected {
       color: #fff;
