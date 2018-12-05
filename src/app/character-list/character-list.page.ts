@@ -36,6 +36,7 @@ export class CharacterListPage implements OnInit, OnDestroy {
   public showSearch: boolean;
   public searchValue = '';
 
+  private router$: Subscription;
   private character$: Subscription;
   private hasModal: boolean;
 
@@ -57,7 +58,7 @@ export class CharacterListPage implements OnInit, OnDestroy {
       this.updateRegionBasedOn(val);
     });
 
-    this.router.events
+    this.router$ = this.router.events
       .pipe(
         filter(x => x instanceof NavigationEnd)
       )
@@ -74,6 +75,7 @@ export class CharacterListPage implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
+    this.router$.unsubscribe();
     this.character$.unsubscribe();
   }
 
