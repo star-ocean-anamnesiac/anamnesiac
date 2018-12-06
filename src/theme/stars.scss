@@ -85,6 +85,10 @@ $bxshadow-small: box-shadow(800);
 	}
 }
 
+.stars {
+	position: absolute;
+}
+
 .stars.large {
 	height: 3px;
 	width: 3px;
