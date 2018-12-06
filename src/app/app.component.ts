@@ -1,8 +1,9 @@
 import { filter } from 'rxjs/operators';
+import { interval } from 'rxjs';
 
-import { Component, ViewChild, HostListener } from '@angular/core';
+import { Component } from '@angular/core';
 
-import { Platform, ModalController, Toggle } from '@ionic/angular';
+import { Platform, ModalController } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { Router, NavigationEnd } from '@angular/router';
@@ -169,6 +170,7 @@ export class AppComponent {
   }
 
   private watchAppChanges() {
+    interval(60).subscribe(() => this.updates.checkForUpdate());
     this.updates.available.subscribe(() => {
       this.canUpdate = true;
     });
