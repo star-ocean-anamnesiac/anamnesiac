@@ -9,6 +9,7 @@ import { Router, NavigationEnd } from '@angular/router';
 
 import { DataService } from './data.service';
 import { LocalStorage } from 'ngx-webstorage';
+import { SwUpdate } from '@angular/service-worker';
 
 interface Page {
   title: string;
@@ -42,6 +43,7 @@ export class AppComponent {
   ];
 
   public a2hsPrompt: any;
+  public canUpdate: boolean;
 
   constructor(
     private dataService: DataService,
@@ -49,11 +51,13 @@ export class AppComponent {
     private splashScreen: SplashScreen,
     private modalCtrl: ModalController,
     private statusBar: StatusBar,
-    private router: Router
+    private router: Router,
+    private updates: SwUpdate
   ) {
     this.initializeApp();
     this.loadRootData();
     this.watchRouteChanges();
+    this.watchAppChanges();
   }
 
   public a2hs() {
@@ -162,5 +166,16 @@ export class AppComponent {
       .subscribe((x: NavigationEnd) => {
         this.activePage = x.url.split('?')[0];
       });
+  }
+
+  private watchAppChanges() {
+    this.updates.available.subscribe(() => {
+      this.canUpdate = true;
+    });
+  }
+
+  public async doAppUpdate() {
+    await this.updates.activateUpdate();
+    document.location.reload();
   }
 }

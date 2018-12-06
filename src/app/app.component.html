@@ -15,6 +15,10 @@
         <div class="stars large"></div>
 
         <ion-list>
+          <ion-item *ngIf="canUpdate" (click)="doAppUpdate()">
+            <ion-icon slot="start" name="logo-ionic"></ion-icon> Update available! Click to update.
+          </ion-item>
+
           <ion-item *ngIf="a2hsPrompt" (click)="a2hs()">
             <ion-icon slot="start" name="add"></ion-icon> Add to Homescreen
           </ion-item>
