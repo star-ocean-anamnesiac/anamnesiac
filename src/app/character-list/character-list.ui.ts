@@ -36,6 +36,11 @@ export class CharacterSortPopover {
     </ion-toolbar>
   </ion-header>
   <ion-content>
+
+    <div class="stars small"></div>
+    <div class="stars medium"></div>
+    <div class="stars large"></div>
+
     <ion-row class="profile-row">
       <ion-col size-xs="6" size-md="3">
         <ion-img [src]="'assets/characters/' + char.picture + '.png'" class="picture"></ion-img>
@@ -110,7 +115,7 @@ export class CharacterSortPopover {
                 <ion-col>
                   <ion-card>
                     <ion-card-header>
-                    <ion-card-title>Rush: {{ char.rush.name }}</ion-card-title>
+                      <ion-card-title>Rush: {{ char.rush.name }}</ion-card-title>
                     </ion-card-header>
                     <ion-card-content>
                       <div *ngIf="char.rush.element"><strong>Element:</strong> {{ char.rush.element }}</div>
@@ -198,6 +203,10 @@ export class CharacterSortPopover {
 
     .notes {
       white-space: pre-wrap;
+    }
+
+    p {
+      color: #fff;
     }
   `]
 })

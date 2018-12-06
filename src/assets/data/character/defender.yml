@@ -65,3 +65,322 @@
         duration: 20
     power: ATK x4500%
     maxHits: 25
+
+- name: Victor Oakville
+  cat: gl
+  rating: 6
+  picture: victoroakville
+  weapon: bns
+  ace: true
+  star: 5
+
+  stats:
+    hp: 18795
+    atk: 2074
+    int: 1365
+    def: 2336
+    hit: 738
+    grd: 952
+
+  talents:
+    - name: "The King's Chosen Glory"
+      effects: 
+        - desc: DEF +50%
+          all: true
+        - desc: Damage +10%
+          all: true
+    - name: "What Friends Are For IV"
+      effects: 
+        - desc: Will not flinch to damage under 25% max HP
+          all: true
+    - name: "Indomitable Spirit"
+      effects: 
+        - desc: At 10% HP or higher, 80% chance to survive a lethal attack
+
+  skills:
+    - name: "Mirror Blade"
+      power: ATK x610%
+      ap: 38
+      maxHits: 5
+    - name: "Vampiric Flash"
+      power: ATK x220%
+      ap: 32
+      maxHits: 6
+    - name: "Bloodstorm Revolution"
+      power: ATK x550%
+      ap: 38
+      maxHits: 10
+      highlight: true
+    - name: "Dragon Roar"
+      power: ATK x340%
+      ap: 29
+      maxHits: 2
+      element: Dark
+      highlight: true
+      
+  rush:
+    name: "Diabolic Edge - Whirlwind"
+    effects: 
+      - desc: Damage taken -50%
+        duration: 20
+        all: true
+    power: ATK x3000%
+    maxHits: 15
+
+- name: Shimada
+  cat: gl
+  rating: 3
+  picture: shimada
+  weapon: bns
+  star: 4
+
+  stats:
+    hp: 18480
+    atk: 1799
+    int: 1248
+    def: 1930
+    hit: 658
+    grd: 868
+
+  talents:
+    - name: "Former Glory III"
+      effects: 
+        - desc: Absorb 30% damage as HP
+    - name: "A Filet Mignon!"
+      effects: 
+        - desc:	Heals 3% of max HP every 3 seconds
+    - name: "Moving up in the World IV"
+      effects: 
+        - desc: Will not flinch to damage under 25% max HP
+          all: Close Range
+    - name: "Carnivore"
+      effects: 
+        - desc: Damage dealt to beasts +60%
+
+  skills:
+    - name: "Double Slash"
+      power: ATK x200%
+      ap: 20
+      maxHits: 2
+    - name: "Vampiric Flash"
+      power: ATK x220%
+      ap: 32
+      maxHits: 6
+    - name: "Nether Strike"
+      power: ATK x250%
+      ap: 24
+      maxHits: 5
+      element: Fire
+    - name: "Air Slash"
+      power: ATK x200%
+      ap: 20
+      maxHits: 2
+      
+  rush:
+    name: "Nether Strike"
+    element: Fire
+    effects: 
+      - desc:	Heals 20% of max HP every 4 seconds
+        duration: 20
+        all: true
+    power: ATK x3000%
+    maxHits: 7
+
+- name: Stephen D. Kenny
+  cat: gl
+  rating: 3
+  picture: stephendkenny
+  weapon: bns
+  star: 4
+
+  stats:
+    hp: 17010
+    atk: 1811
+    int: 1234
+    def: 2126
+    hit: 658
+    grd: 868
+
+  talents:
+    - name: "Guardian of Light"
+      effects: 
+        - desc: DEF +40%
+          all: true
+        - desc: Damage +10%
+          all: true
+    - name: "Imposing Presence IV"
+      effects: 
+        - desc: Will not flinch to damage under 20% max HP
+          all: Close Range
+    - name: "Will of the Universe"
+      effects: 
+        - desc: Critical rate +20%
+
+  skills:
+    - name: "Mirror Blade"
+      power: ATK x610%
+      ap: 38
+      maxHits: 5
+    - name: "Flying Guillotine"
+      power: ATK x370%
+      ap: 32
+      maxHits: 6
+    - name: "Diabolic Edge"
+      power: ATK x340%
+      ap: 29
+      maxHits: 2
+      highlight: true
+    - name: "Dragon Roar"
+      power: ATK x340%
+      ap: 29
+      maxHits: 2
+      element: Dark
+      highlight: true
+      
+  rush:
+    name: "Blade Vortex"
+    effects: 
+      - desc: Will not flinch to damage under 40% max HP
+        duration: 20
+        all: true
+    power: ATK x3000%
+    maxHits: 7
+    
+- name: Myuria Tionysus (Summer)
+  cat: gl
+  rating: 8.5
+  picture: everlastingsummermyuriationysus
+  weapon: bns
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 21945
+    atk: 2258
+    int: 1563
+    def: 2324
+    hit: 826
+    grd: 1050
+
+  talents:
+    - name: "Excellent Proportions"
+      effects: 
+        - desc: HP +20%
+          all: true
+        - desc: Will not flinch to damage under 20% max HP
+          all: true
+    - name: "Aroma Suntan Lotion"
+      effects: 
+        - desc: INT damage taken -20%
+          all: true
+    - name: "Skillful Temptation"
+      effects: 
+        - desc: ATK +40% when under aggro
+        - desc: AP cost -20% when under aggro
+    - name: "Vacation Pareo"
+      effects:
+        - desc: Single target damage +20% when not under aggro
+          all: true
+        - desc: Ease of stun +15% when not under aggro
+          all: true
+
+  skills:
+    - name: "Air Slash"
+      power: ATK x200%
+      ap: 20
+      maxHits: 2
+    - name: "Aura Wall"
+      power: ATK 200%
+      ap: 20
+      maxHits: 20
+      highlight: true
+    - name: "Bloodstorm Revolution"
+      power: ATK x550%
+      ap: 38
+      maxHits: 10
+    - name: "Thunderfire Slash"
+      power: ATK x340%
+      ap: 29
+      maxHits: 2
+      element: Dark
+      highlight: true
+      
+  rush:
+    name: "Lightning Speed Sword Draw Attack"
+    element: Lightning
+    effects: 
+      - desc: AP cost -40%
+        duration: 20
+        all: true
+      - desc: Recover 15% max HP every 3 seconds
+        duration: 20
+        all: true
+    power: ATK x4000%
+    maxHits: 6
+    
+- name: Dias Flac
+  cat: gl
+  rating: 7
+  picture: diasflac
+  weapon: bns
+  ace: true
+  star: 5
+
+  stats:
+    hp: 22155
+    atk: 2799
+    int: 1509
+    def: 2867
+    hit: 812
+    grd: 1036
+
+  talents:
+    - name: "Expel's Renowned Swordsman"
+      effects: 
+        - desc: DEF +20%
+          all: true
+        - desc: ATK damage taken -20%
+          all: true
+    - name: "Aloof Swordsmanship"
+      effects: 
+        - desc: ATK +30%
+        - desc: DEF +20%
+    - name: "Oath to Cecille"
+      effects: 
+        - desc: Will not flinch to damage under 25% max HP
+          all: Close Range
+    - name: "Encountered a Worthy Rival"
+      effects: 
+        - desc: Damage +20%
+          all: Attackers & Defenders
+
+  skills:
+    - name: "Annihiliating Air Slash"
+      power: ATK x200%
+      ap: 20
+      maxHits: 5
+      highlight: true
+    - name: "Double Slash"
+      power: ATK x200%
+      ap: 20
+      maxHits: 2
+      highlight: true
+    - name: "Diabolic Edge"
+      power: ATK x340%
+      ap: 29
+      maxHits: 2
+    - name: "Dragon Roar"
+      power: ATK x340%
+      ap: 29
+      maxHits: 2
+      element: Dark
+      highlight: true
+      
+  rush:
+    name: "Deadly Illusion"
+    effects: 
+      - desc: AP cost -50%
+        duration: 20
+    power: ATK x3500%
+    maxHits: 10

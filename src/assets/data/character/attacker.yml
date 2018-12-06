@@ -66,7 +66,7 @@
     power: ATK x4000%
     maxHits: 27
     
-- name: Fidel
+- name: Fidel Camuze
   cat: gl
   rating: 7
   picture: fidel
@@ -118,7 +118,7 @@
     power: ATK x3000%
     maxHits: 12
     
-- name: Cliff
+- name: Cliff Fittir
   cat: gl
   rating: 6
   picture: clifffittir

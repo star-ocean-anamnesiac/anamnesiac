@@ -36,6 +36,7 @@ export class ItemListPage implements OnInit, OnDestroy {
   public showSearch: boolean;
   public searchValue = '';
 
+  private router$: Subscription;
   private item$: Subscription;
   private hasModal: boolean;
 
@@ -57,7 +58,7 @@ export class ItemListPage implements OnInit, OnDestroy {
       this.updateRegionBasedOn(val);
     });
 
-    this.router.events
+    this.router$ = this.router.events
       .pipe(
         filter(x => x instanceof NavigationEnd)
       )
@@ -74,6 +75,7 @@ export class ItemListPage implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
+    this.router$.unsubscribe();
     this.item$.unsubscribe();
   }
 
@@ -218,7 +220,7 @@ export class ItemListPage implements OnInit, OnDestroy {
 
     // type sorting
     this.typeSortedItems = _(arr)
-      .sortBy(arr, 'name')
+      .sortBy('name')
       .groupBy('subtype')
       .value();
     this.allItemTypes = _.sortBy(Object.keys(this.typeSortedItems));

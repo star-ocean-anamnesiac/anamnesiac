@@ -36,6 +36,7 @@ export class CharacterListPage implements OnInit, OnDestroy {
   public showSearch: boolean;
   public searchValue = '';
 
+  private router$: Subscription;
   private character$: Subscription;
   private hasModal: boolean;
 
@@ -57,7 +58,7 @@ export class CharacterListPage implements OnInit, OnDestroy {
       this.updateRegionBasedOn(val);
     });
 
-    this.router.events
+    this.router$ = this.router.events
       .pipe(
         filter(x => x instanceof NavigationEnd)
       )
@@ -74,6 +75,7 @@ export class CharacterListPage implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
+    this.router$.unsubscribe();
     this.character$.unsubscribe();
   }
 
@@ -204,14 +206,14 @@ export class CharacterListPage implements OnInit, OnDestroy {
 
     // weapon sorting
     this.weaponSortedCharacters = _(arr)
-      .sortBy(arr, 'name')
+      .sortBy('name')
       .groupBy('weapon')
       .value();
     this.allWeapons = _.sortBy(Object.keys(this.weaponSortedCharacters));
 
     // tier sorting
     this.tierSortedCharacters = _(arr)
-      .sortBy([(char) => -char.rating, 'name'])
+      .sortBy([(char) => -Math.floor(char.rating), 'name'])
       .groupBy(char => {
         if(char.rating >= 10) { return 'Top Tier (10/10)'; }
         if(char.rating >= 8 && char.rating <= 9) { return 'Great (8-9/10)'; }
@@ -222,7 +224,7 @@ export class CharacterListPage implements OnInit, OnDestroy {
       .value();
     this.allTiers = _.sortBy(Object.keys(this.tierSortedCharacters), (tier) => {
       if(tier === 'Top Tier (10/10)') { return 0; }
-      if(tier === 'Great (8/9-10)')   { return 1; }
+      if(tier === 'Great (8-9/10)')   { return 1; }
       if(tier === 'Good (6-7/10)')    { return 2; }
       if(tier === 'Average (4/5-10)') { return 3; }
       if(tier === 'Bad (1-3/10)')     { return 4; }

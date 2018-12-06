@@ -35,23 +35,26 @@
   skills:
     - name: "Plunging Fire Bolts"
       element: Fire
-      power: INT x???%
+      power: INT x200%
       ap: 20
-      maxHits: -1
+      maxHits: 6
+      highlight: true
     - name: "Stone Rain"
       element: Earth
-      power: INT x???%
+      power: INT x460%
       ap: 35
-      maxHits: -1
+      maxHits: 5
     - name: "Enhance"
       element: Fire
       ap: 60
       notes: +25% ATK to party. A good buff skill!
+      highlight: true
     - name: "Violent Explosion"
       element: Fire
-      power: INT x???%
+      power: INT x770%
       ap: 45
-      maxHits: -1
+      maxHits: 14
+      highlight: true
       
   rush:
     name: "Meteor Swarm"
@@ -61,7 +64,7 @@
       - desc: -60% AP cost
         duration: 20
     power: INT x3500%
-    maxHits: -1
+    maxHits: 9
 
   notes: >
       _Sophia is a caster_
@@ -69,3 +72,252 @@
       **This is line 2**
 
       *This is line 3*
+      
+- name: Myuria Tionysus
+  cat: gl
+  rating: 7
+  picture: myuriationysus
+  weapon: staff
+  ace: true
+  star: 5
+
+  stats:
+    hp: 12285
+    atk: 1537
+    int: 3822
+    def: 1339
+    hit: 1057
+    grd: 833
+
+  talents:
+    - name: "Enchanted Perfume II"
+      effects: 
+        - desc: Easier to stun +30%
+    - name: "Hardier Warrior of Morphus"
+      effects: 
+        - desc: INT +30%
+    - name: "In Loving Memory of Lucien II"
+      effects: 
+        - desc: Reduce casting time by 30%
+    - name: "Adult's Composure"
+      effects: 
+        - desc: AP cost -20%
+
+  skills:
+    - name: "Deep Freeze"
+      element: Ice
+      power: INT x460%
+      ap: 35
+      maxHits: 9
+    - name: "Thunder Flare"
+      element: Lightning
+      power: INT x460%
+      ap: 35
+      maxHits: 4
+      highlight: true
+    - name: "Arctic Impact"
+      element: Ice
+      power: INT x670%
+      ap: 42
+      maxHits: 3
+      highlight: true
+    - name: "Plasma Cyclone"
+      element: Lightning
+      power: INT x700%
+      ap: 50
+      maxHits: 6
+      
+  rush:
+    name: "Ultraviolet Extinction"
+    element: Lightning
+    effects: 
+      - desc: +80% INT
+        duration: 20
+    power: INT x3500%
+    maxHits: 2
+
+- name: Ronyx J. Kenny
+  cat: gl
+  rating: 4
+  picture: ronyxjkenny
+  weapon: bow
+  star: 5
+
+  stats:
+    hp: 12810
+    atk: 1723
+    int: 2100
+    def: 1076
+    hit: 938
+    grd: 756
+
+  talents:
+    - name: "Symbologist's Awakening II"
+      effects: 
+        - desc: INT +40%
+    - name: "Military Might II"
+      effects: 
+        - desc: Damage +20%
+        - desc: AP cost -20%
+
+  skills:
+    - name: "Stone Rain"
+      element: Earth
+      power: INT x460%
+      ap: 35
+      maxHits: 5
+    - name: "Explosion"
+      element: Fire
+      power: INT x460%
+      ap: 35
+      maxHits: 14
+      highlight: true
+    - name: "Terra Hammer"
+      element: Earth
+      power: INT x670%
+      ap: 42
+      maxHits: 6
+    - name: "Volcanic Burst"
+      element: Fire
+      power: INT x670%
+      ap: 42
+      maxHits: 13
+      highlight: true
+      
+  rush:
+    name: "Explode"
+    element: Fire
+    effects: 
+      - desc: Reduce casting time by 50%
+        duration: 20
+        all: true
+    power: INT x2500%
+    maxHits: 10
+
+- name: Lymle Lemuri Phi
+  cat: gl
+  rating: 4
+  picture: lymlelemuriphi
+  weapon: staff
+  limited: false
+  star: 5
+
+  stats:
+    hp: 11130
+    atk: 1391
+    int: 3479
+    def: 1604
+    hit: 966
+    grd: 749
+
+  talents:
+    - name: "Enchanted Artirstry"
+      effects: 
+        - desc: DEF +30%
+    - name: "Big Doggie Bite"
+      effects: 
+        - desc: Damage taken -30%
+    - name: "Grampa's Wish"
+      effects: 
+        - desc: Will not flinch if damage is less than 20% of max HP
+
+  skills:
+    - name: "Plunging Fire Bolts"
+      element: Fire
+      power: INT x200%
+      ap: 20
+      maxHits: 6
+      highlight: true
+    - name: "Volcanic Burst"
+      element: Fire
+      power: INT x670%
+      ap: 42
+      maxHits: 13
+      highlight: true
+    - name: "Wind Blade"
+      element: Wind
+      power: INT x190%
+      ap: 20
+      maxHits: 2
+    - name: "Tornado"
+      element: Wind
+      power: INT x460%
+      ap: 35
+      maxHits: 2
+      highlight: true
+      
+  rush:
+    name: "Trinity Blaze"
+    element: Fire
+    effects: 
+      - desc: INT +100%
+        duration: 20
+      - desc: Reduce casting time by 70%
+        duration: 20
+    power: INT x2500%
+    maxHits: 6
+   
+  notes: >
+    'kay?
+
+- name: Faize Sheifa Beleth
+  cat: gl
+  rating: 7
+  picture: faizesheifabeleth
+  weapon: bns
+  limited: false
+  star: 5
+
+  stats:
+    hp: 13020
+    atk: 1458
+    int: 3124
+    def: 1076
+    hit: 924
+    grd: 749
+
+  talents:
+    - name: "The Gifted One II"
+      effects: 
+        - desc: Damage to single targets +30%
+          all: true
+        - desc: Chance to stun +15%
+          all: true
+    - name: "Eldarian Honor II"
+      effects: 
+        - desc: At 10% HP or higher, has an 80% chance to survive a lethal attack
+        - desc: Reduce casting time by 80%
+
+  skills:
+    - name: "Cursed Devourer"
+      element: Dark
+      power: INT x570%
+      ap: 42
+      maxHits: 5
+      highlight: true
+    - name: "Cursed Vampiric Blade"
+      element: Dark
+      power: INT x370%
+      ap: 32
+      maxHits: 5
+    - name: "Cursed Shadow Needles"
+      element: Dark
+      power: INT x240%
+      ap: 23
+      maxHits: 5
+      highlight: true
+    - name: "Cursed Reaping Spark"
+      element: Dark
+      power: INT x520%
+      ap: 37
+      maxHits: 12
+      highlight: true
+      
+  rush:
+    name: "Eldar Necrospike"
+    element: Dark
+    effects: 
+      - desc: AP cost -30%
+        duration: 20
+    power: INT x3000%
+    maxHits: 12
