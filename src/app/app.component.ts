@@ -174,6 +174,8 @@ export class AppComponent {
     this.updates.available.subscribe(() => {
       this.canUpdate = true;
     });
+
+    this.updates.checkForUpdate();
   }
 
   public async doAppUpdate() {
