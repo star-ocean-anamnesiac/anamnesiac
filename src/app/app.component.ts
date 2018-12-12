@@ -170,7 +170,7 @@ export class AppComponent {
   }
 
   private watchAppChanges() {
-    interval(1000 * 60 * 60).subscribe(() => this.updates.checkForUpdate());
+    interval(1000 * 60 * 15).subscribe(() => this.updates.checkForUpdate());
     this.updates.available.subscribe(() => {
       this.canUpdate = true;
     });
