@@ -190,7 +190,7 @@ export class ItemModal implements OnInit {
   dismiss() {
     this.modalCtrl.dismiss();
   }
-  
+
   share() {
     if(!(<any>navigator).share) {
       alert('You cannot share at this time, sorry.');
