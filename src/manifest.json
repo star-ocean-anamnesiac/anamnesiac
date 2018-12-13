@@ -2,6 +2,7 @@
     "name": "Star Ocean: Anamnesiac",
     "short_name": "Anamnesiac",
     "start_url": "index.html",
+    "scope": "/",
     "icons": [
         {
             "src": "assets/favicon/android-chrome-192x192.png",

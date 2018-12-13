@@ -27,6 +27,9 @@ export class ItemSortPopover {
     <ion-toolbar color="primary">
       <ion-title>{{ item.name }}</ion-title>
       <ion-buttons slot="end">
+        <ion-button icon-only (click)="share()" *ngIf="showShare">
+          <ion-icon name="share"></ion-icon>
+        </ion-button>
         <ion-button (click)="dismiss()">
           Close
         </ion-button>
@@ -34,6 +37,11 @@ export class ItemSortPopover {
     </ion-toolbar>
   </ion-header>
   <ion-content>
+
+    <div class="stars small"></div>
+    <div class="stars medium"></div>
+    <div class="stars large"></div>
+
     <ion-row class="profile-row">
       <ion-col size-xs="6" size-md="3">
         <ion-img [src]="'assets/items/' + item.picture + '.png'" class="picture"></ion-img>
@@ -162,12 +170,15 @@ export class ItemModal implements OnInit {
   public type: string;
   public notes: string;
 
+  public showShare: boolean;
+
   @ViewChild('tabs')
   public tabs: Tabs;
 
   constructor(private navParams: NavParams, private modalCtrl: ModalController) {}
 
   ngOnInit() {
+    this.showShare = !!(<any>navigator).share;
     this.item = this.navParams.get('item');
     this.type = this.navParams.get('type');
 
@@ -178,5 +189,17 @@ export class ItemModal implements OnInit {
 
   dismiss() {
     this.modalCtrl.dismiss();
+  }
+  
+  share() {
+    if(!(<any>navigator).share) {
+      alert('You cannot share at this time, sorry.');
+      return;
+    }
+
+    (<any>navigator).share({
+      title: this.item.name,
+      url: location.href
+    });
   }
 }

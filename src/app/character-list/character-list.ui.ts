@@ -29,6 +29,9 @@ export class CharacterSortPopover {
       <ion-img slot="start" [src]="'assets/classes/' + char.type + '.png'" class="asset-icon"></ion-img>
       <ion-title>{{ char.name }}</ion-title>
       <ion-buttons slot="end">
+        <ion-button icon-only (click)="share()" *ngIf="showShare">
+          <ion-icon name="share"></ion-icon>
+        </ion-button>
         <ion-button (click)="dismiss()">
           Close
         </ion-button>
@@ -42,7 +45,7 @@ export class CharacterSortPopover {
     <div class="stars large"></div>
 
     <ion-row class="profile-row">
-      <ion-col size-xs="6" size-md="3">
+      <ion-col size-xs="4" size-md="3">
         <ion-img [src]="'assets/characters/' + char.picture + '.png'" class="picture"></ion-img>
       </ion-col>
 
@@ -217,12 +220,15 @@ export class CharacterModal implements OnInit {
   public weap: string;
   public notes: string;
 
+  public showShare: boolean;
+
   @ViewChild('tabs')
   public tabs: Tabs;
 
   constructor(private navParams: NavParams, private modalCtrl: ModalController) {}
 
   ngOnInit() {
+    this.showShare = !!(<any>navigator).share;
     this.char = this.navParams.get('character');
     this.weap = this.navParams.get('weapon');
 
@@ -233,5 +239,17 @@ export class CharacterModal implements OnInit {
 
   dismiss() {
     this.modalCtrl.dismiss();
+  }
+  
+  share() {
+    if(!(<any>navigator).share) {
+      alert('You cannot share at this time, sorry.');
+      return;
+    }
+
+    (<any>navigator).share({
+      title: this.char.name,
+      url: location.href
+    });
   }
 }
