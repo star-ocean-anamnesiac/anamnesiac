@@ -8,6 +8,7 @@ import { Injectable } from '@angular/core';
 
 import { Character } from './models/character';
 import { Item } from './models/item';
+import { Update } from './models/update';
 
 interface ListItem {
   id: string;
@@ -28,12 +29,14 @@ export class DataService {
 
   private characters: Character[] = [];
   private items: Item[] = [];
+  public updates: Update[] = [];
 
   private itemNameHash: any = {};
 
   constructor() { }
 
   async loadRootData() {
+    this.loadChangelog();
     const { data } = await axios.get('assets/data/root.yml');
     const { classes, weapons, accessories } = YAML.safeLoad(data);
 
@@ -44,6 +47,11 @@ export class DataService {
     weapons.forEach(({ id, name }) => this.itemNameHash[id] = name);
 
     this.loadAllDetailData();
+  }
+
+  private async loadChangelog() {
+    const { data } = await axios.get('assets/data/changelog.yml');
+    this.updates = YAML.safeLoad(data);
   }
 
   public properifyItem(id: string): string {

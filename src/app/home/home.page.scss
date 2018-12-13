@@ -1,4 +1,12 @@
+ion-item {
+  flex-direction: row;
+}
 
-p {
-  font-size: 150%;
+ion-label p {
+  color: #fff;
+}
+
+.updates {
+  height: calc(65%);
+  overflow: scroll;
 }

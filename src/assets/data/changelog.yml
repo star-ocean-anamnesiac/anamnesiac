@@ -1,0 +1,47 @@
+- date: 2018-12-15
+  characterAdditions:
+    - name: 2B
+      notes: 2B was added as a rank 10/10
+
+- date: 2018-12-15
+  characterChanges: 
+    - name: A2
+      notes: A2 was moved to rank 9/10
+
+- date: 2018-12-15
+  itemAdditions:
+    - name: Beastlord
+      notes: It was added.
+
+- date: 2018-12-15
+  itemChanges:
+    - name: Divine Wave Gun
+      notes: MLB factor is 5, not 4
+
+- date: 2018-12-15
+  characterAdditions:
+    - name: 2B
+      notes: 2B was added as a rank 10/10
+  characterChanges: 
+    - name: A2
+      notes: A2 was moved to rank 9/10
+  itemAdditions:
+    - name: Beastlord
+      notes: It was added.
+  itemChanges:
+    - name: Divine Wave Gun
+      notes: MLB factor is 5, not 4
+
+- date: 2018-12-15
+  characterAdditions:
+    - name: 2B
+      notes: 2B was added as a rank 10/10
+  characterChanges: 
+    - name: A2
+      notes: A2 was moved to rank 9/10
+  itemAdditions:
+    - name: Beastlord
+      notes: It was added.
+  itemChanges:
+    - name: Divine Wave Gun
+      notes: MLB factor is 5, not 4

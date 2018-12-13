@@ -17,7 +17,7 @@
 
   <ion-card>
     <ion-card-header>
-        <h1 text-center>Welcome to Star Ocean: Anamnesiac</h1>
+      <h3 text-center>Welcome to Star Ocean: Anamnesiac</h3>
     </ion-card-header>
 
     <ion-card-content>
@@ -30,5 +30,21 @@
       </p>
     </ion-card-content>
   </ion-card>
+
+  <ion-list>
+    <ion-item-divider><strong>Recent Updates</strong></ion-item-divider>
+  </ion-list>
+
+  <ion-list class="updates">
+    <ion-item *ngFor="let update of updates">
+      <ion-label>
+        <h2>{{ update.date | date:'longDate' }}</h2>
+        <p *ngIf="update.characterAdditions">New Characters: {{ formatUpdate(update.characterAdditions) }}</p>
+        <p *ngIf="update.characterChanges">Modified Characters: {{ formatUpdate(update.characterChanges) }}</p>
+        <p *ngIf="update.itemAdditions">New Items: {{ formatUpdate(update.itemAdditions) }}</p>
+        <p *ngIf="update.itemChanges">Modified Items: {{ formatUpdate(update.itemChanges) }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
 
 </ion-content>
