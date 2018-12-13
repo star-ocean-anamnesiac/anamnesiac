@@ -144,6 +144,7 @@ export class ItemSortPopover {
 
     .notes {
       white-space: pre-wrap;
+      color: #fff;
     }
 
     .middot-after:after {
