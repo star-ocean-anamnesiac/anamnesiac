@@ -65,9 +65,9 @@ export class DataService {
 
       characters.forEach(char => char.type = id);
       this.characters.push(...characters);
-
-      this.characters$.next(this.characters);
     });
+
+    this.characters$.next(this.characters);
 
     this.weaponTypes.forEach(async ({ id }) => {
       const { data } = await axios.get(`assets/data/item/weapon/${id}.yml`);
@@ -78,8 +78,6 @@ export class DataService {
         weap.subtype = id;
       });
       this.items.push(...weapons);
-
-      this.items$.next(this.items);
     });
 
     this.accessoryTypes.forEach(async ({ id }) => {
@@ -91,8 +89,8 @@ export class DataService {
         weap.subtype = id;
       });
       this.items.push(...accessories);
-
-      this.items$.next(this.items);
     });
+
+    this.items$.next(this.items);
   }
 }
