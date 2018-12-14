@@ -63,6 +63,7 @@ export class ItemListPage implements OnInit, OnDestroy {
         filter(x => x instanceof NavigationEnd)
       )
       .subscribe((x: NavigationEnd) => {
+        if(!_.includes(x.url, 'items')) { return; }
         this.updateRegionBasedOn(this.localStorage.retrieve('isJP'));
         this.updateItemsList();
       });

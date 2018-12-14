@@ -63,6 +63,7 @@ export class CharacterListPage implements OnInit, OnDestroy {
         filter(x => x instanceof NavigationEnd)
       )
       .subscribe((x: NavigationEnd) => {
+        if(!_.includes(x.url, 'characters')) { return; }
         this.updateRegionBasedOn(this.localStorage.retrieve('isJP'));
         this.updateCharacterList();
       });
