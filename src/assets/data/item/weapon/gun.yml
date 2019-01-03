@@ -2,7 +2,7 @@
 - name: Divine Wave Gun
   cat: 'gl'
   star: 5
-  picture: divinewavegun
+  picture: guns/Sacred Gun・Divine Blue (Divine Wave Gun)
   atk: 962
   int: 959
   factor1: Damage dealt to demons +40%
