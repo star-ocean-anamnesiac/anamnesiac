@@ -2,7 +2,7 @@
 - name: Type-4O Sword
   cat: 'gl'
   star: 5
-  picture: type4osword
+  picture: onehandedswords/Type-4O
   atk: 964
   int: 958
   factor1: All attribute damage +50% / Damage to mechs +50%
