@@ -2,7 +2,7 @@
 - name: Striped Cat Mitts
   cat: 'gl'
   star: 5
-  picture: stripedcatmitts
+  picture: arms/Stripe Cat Punch (Striped Cat Mitts)
   atk: 961
   int: 958
   element: Light
