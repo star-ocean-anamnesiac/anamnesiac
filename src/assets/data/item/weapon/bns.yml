@@ -2,7 +2,7 @@
 - name: Eldar Lord Rapier
   cat: 'gl'
   star: 5
-  picture: eldarlordrapier
+  picture: bladeandsheaths/Eldar Lord Rapier
   atk: 474
   int: 476
   factor1: Dark damage +30%
