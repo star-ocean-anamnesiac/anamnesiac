@@ -2,7 +2,7 @@
 - name: Beastlord
   cat: 'gl'
   star: 5
-  picture: beastlord
+  picture: greatswords/Beastlord
   atk: 963
   int: 958
   element: Light
