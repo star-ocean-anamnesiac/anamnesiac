@@ -2,7 +2,7 @@
 - name: Knuckles of Hope
   cat: 'gl'
   star: 5
-  picture: knucklesofhope
+  picture: knuckles/Fallen Knuckles (Knuckles of Hope)
   atk: 474
   int: 478
   factor1: Light damage +15%
