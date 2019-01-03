@@ -2,7 +2,7 @@
 - name: Blackseed Watermelon Orb
   cat: 'gl'
   star: 5
-  picture: blackseedwatermelonorb
+  picture: orbs/Black Thunder Watermelon Ball (Blackseed Watermelon Orb)
   atk: 959
   int: 965
   factor1: Lightning/Dark damage +30%
