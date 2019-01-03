@@ -2,7 +2,7 @@
 - name: Reformed SRF Arrow
   cat: 'gl'
   star: 5
-  picture: reformedsrfarrow
+  picture: bows/SRF Bow・Remodelled (Reformed SRF Arrow)
   atk: 477
   element: Wind
   factor1: Imbues attacks with wind element
