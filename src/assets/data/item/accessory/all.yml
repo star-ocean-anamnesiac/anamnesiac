@@ -2,7 +2,7 @@
 - name: Emil Mask
   cat: 'gl'
   star: 5
-  picture: emilmask
+  picture: accessories/Emil's Face (Emil Mask)
   def: 728
   factor1: 40% chance of freezing nullification
   factor2: 2% HP recovery every 5 seconds
