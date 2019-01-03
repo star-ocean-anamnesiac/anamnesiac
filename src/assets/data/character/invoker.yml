@@ -321,3 +321,68 @@
         duration: 20
     power: INT x3000%
     maxHits: 12
+
+
+- name: Celine Jules
+  cat: gl
+  rating: 5.5
+  picture: celinejules
+  weapon: staff
+  limited: false
+  star: 5
+  ace: true
+
+  stats:
+    hp: 12390
+    atk: 1537
+    int: 2718
+    def: 1379
+    hit: 1050
+    grd: 826
+
+  talents:
+    - name: "Treasure Hunter II"
+      effects: 
+        - desc: INT +30%
+          all: true
+    - name: "Enchanted Symbology"
+      effects: 
+        - desc: +25% chance to silence on all attacks
+    - name: "A Lady's Poise II"
+      effects:
+        - desc: +20% INT damage dealt when at 100% HP
+    - name: "Marze Born & Raised"
+      effects:
+        - desc: -30% cast time
+        - desc: -20% AP cost
+
+  skills:
+    - name: "Silencing Star Light"
+      element: Light
+      power: INT x440%
+      ap: 36
+      maxHits: 1
+    - name: "Silent Lightning"
+      element: Lightning
+      power: INT x220%
+      ap: 23
+      maxHits: 10
+    - name: "Silencing Sunflare"
+      element: Light
+      power: INT x570%
+      ap: 42
+      maxHits: 6
+    - name: "Silencing Cyclone"
+      element: Thunder
+      power: INT x700%
+      ap: 50
+      maxHits: 6
+      
+  rush:
+    name: "Silencing Southern Cross"
+    element: Light
+    effects: 
+      - desc: +50% INT
+        duration: 20
+    power: INT x3500%
+    maxHits: 6
