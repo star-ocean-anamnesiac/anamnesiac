@@ -9,7 +9,7 @@
     "build": "ng build --prod",
     "lint": "ng lint",
     "validate": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\"}' ava-ts src/test/**/*.ts",
-    "test": "npm run validate && npm run lint && npm run build"
+    "test": "npm run validate && npm run lint && npm run build && node scripts/sync"
   },
   "private": true,
   "dependencies": {
