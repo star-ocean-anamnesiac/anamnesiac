@@ -4,6 +4,8 @@ const PRIVATE_KEY = process.env.PRIVATE_KEY;
 const SPREADSHEET_KEY = process.env.SPREADSHEET_KEY;
 const REGION = process.env.REGION || 'gl';
 
+if(!SERVICE_EMAIL || !PRIVATE_KEY || !SPREADSHEET_KEY) process.exit(0);
+
 const { interval } = require('rxjs');
 const { map } = require('rxjs/operators');
 const fs = require('fs');
