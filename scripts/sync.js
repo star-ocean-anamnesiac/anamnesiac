@@ -102,7 +102,7 @@ const updateCharacters = async (doc, worksheets, data) => {
     };
 
     filteredChars.forEach((char, i) => {
-      updateCell(cells, i * 12, `=IMAGE("https://anamnesiac.seiyria.com/assets/characters/${char.picture}.png", 4, 128, 128)`);
+      updateCell(cells, i * 12, `=IMAGE("https://anamnesiac.seiyria.com/assets/characters/${char.picture.split(' ').join('%20')}.png", 4, 128, 128)`);
       updateCell(cells, (i * 12) + 1, `${char.name}\n\n${char.rating}/10\n\n${char.limited ? 'Limited' : 'Permanent'}\n\n${char.ace ? 'ACE' : ''}`);
       updateCell(cells, (i * 12) + 2, allWeaponClasses[char.weapon]);
       updateCell(cells, (i * 12) + 3, allTalents(char));
@@ -146,7 +146,7 @@ const updateItems = async (doc, worksheets, data) => {
     });
 
     filteredItems.forEach((item, i) => {
-      updateCell(cells, i * 9, `=IMAGE("https://anamnesiac.seiyria.com/assets/items/${item.picture}.png", 4, 128, 128)`);
+      updateCell(cells, i * 9, `=IMAGE("https://anamnesiac.seiyria.com/assets/items/${item.picture.split(' ').join('%20')}.png", 4, 128, 128)`);
       updateCell(cells, (i * 9) + 1, `${item.name}\n\n${item.obtained}`);
       updateCell(cells, (i * 9) + 2, item.atk);
       updateCell(cells, (i * 9) + 3, item.int);
