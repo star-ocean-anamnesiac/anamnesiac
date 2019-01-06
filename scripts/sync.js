@@ -108,10 +108,11 @@ const updateCharacters = async (doc, worksheets, data) => {
       updateCell(cells, (i * 12) + 3, allTalents(char));
       updateCell(cells, (i * 12) + 4, rush(char));
       updateCell(cells, (i * 12) + 5, char.notes);
-      updateCell(cells, (i * 12) + 6, skill(char, 0));
-      updateCell(cells, (i * 12) + 7, skill(char, 1));
-      updateCell(cells, (i * 12) + 8, skill(char, 2));
-      updateCell(cells, (i * 12) + 9, skill(char, 3));
+      updateCell(cells, (i * 12) + 6, '');
+      updateCell(cells, (i * 12) + 7, skill(char, 0));
+      updateCell(cells, (i * 12) + 8, skill(char, 1));
+      updateCell(cells, (i * 12) + 9, skill(char, 2));
+      updateCell(cells, (i * 12) + 10, skill(char, 3));
     });
   };
 };
