@@ -217,8 +217,8 @@ export class CharacterListPage implements OnInit, OnDestroy {
       .sortBy([(char) => -Math.floor(char.rating), 'name'])
       .groupBy(char => {
         if(char.rating >= 10) { return 'Top Tier (10/10)'; }
-        if(char.rating >= 8 && char.rating <  9) { return 'Great (8-9/10)'; }
-        if(char.rating >= 6 && char.rating <  7) { return 'Good (6-7/10)'; }
+        if(char.rating >= 8 && char.rating < 10) { return 'Great (8-9/10)'; }
+        if(char.rating >= 6 && char.rating <  8) { return 'Good (6-7/10)'; }
         if(char.rating >= 4 && char.rating <  6) { return 'Average (4-5/10)'; }
         return 'Bad (1-3/10)';
       })
