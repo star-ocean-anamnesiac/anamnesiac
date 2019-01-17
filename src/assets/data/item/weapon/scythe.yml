@@ -1,0 +1,12 @@
+
+- name: Eldar's Scythe
+  cat: 'jp'
+  star: 5
+  picture: scythes/Eldar Scythe
+  atk: 533
+  int: 526
+  factor1: +20% DMG on Bloodstorm Revolution
+  factor2: +10% element damage
+  factor3: -10% DMG taken during CA
+  thirdFactorLB: 5
+  obtained: Sahariel Plunderer Exchange
