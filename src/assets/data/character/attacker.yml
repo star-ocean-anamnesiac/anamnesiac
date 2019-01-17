@@ -404,7 +404,7 @@
     effects: 
       - Cure status ailments
         all: true
-        duration: N/A
+        duration: 0
       - desc: Single Target Damage Dealt +40%
         all: true
         duration: 20
