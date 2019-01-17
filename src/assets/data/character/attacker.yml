@@ -402,7 +402,7 @@
   rush:
     name: "Celestial Sword"
     effects: 
-      - Cure status ailments
+      - desc: Cure status ailments
         all: true
         duration: 0
       - desc: Single Target Damage Dealt +40%
