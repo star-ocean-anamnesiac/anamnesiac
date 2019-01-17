@@ -122,12 +122,14 @@ export class CharacterSortPopover {
                     </ion-card-header>
                     <ion-card-content>
                       <div *ngIf="char.rush.element"><strong>Element:</strong> {{ char.rush.element }}</div>
-                      {{ char.rush.power }} <span *ngIf="char.rush.maxHits">({{ char.rush.maxHits }} hits)</span>
+                      {{ char.rush.power }} <span *ngIf="char.rush.maxHits">({{ char.rush.maxHits }} Hits)</span>
                       <ol>
                         <li *ngFor="let effect of char.rush.effects">
                         {{ effect.desc }}
-                        <span *ngIf="effect.all">(All {{ effect.all === true ? 'Allies' : effect.all }})</span>
-                        <span *ngIf="effect.duration">({{ effect.duration }} seconds)</span>
+                        <span *ngIf="effect.all">
+                          (All {{ effect.all === true ? 'Allies' : effect.all }}<span *ngIf="effect.duration"> {{ effect.duration }}s</span>)
+                        </span>
+                        <span *ngIf="effect.duration"></span>
                         </li>
                       </ol>
                     </ion-card-content>
