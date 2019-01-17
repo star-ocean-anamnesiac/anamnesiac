@@ -903,7 +903,7 @@
   cat: gl
   rating: 5
   picture: michael
-  weapon: Knuckles
+  weapon: knuckle
   ace: true
   limited: false
   star: 5
@@ -967,7 +967,7 @@
   cat: gl
   rating: 10
   picture: christmaswinterskyfidelcamuze
-  weapon: Gun
+  weapon: gun
   ace: true
   limited: true
   star: 5
@@ -1032,7 +1032,7 @@
   cat: gl
   rating: 1
   picture: weepywelchvineyard
-  weapon: Knuckles
+  weapon: knuckle
   limited: true
   star: 5
 
