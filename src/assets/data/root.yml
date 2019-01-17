@@ -15,6 +15,8 @@ weapons:
     name: Bow
   - id: dagger
     name: Dagger
+  - id: dualswords
+    name: Dual Swords
   - id: greatsword
     name: Greatsword
   - id: gun
