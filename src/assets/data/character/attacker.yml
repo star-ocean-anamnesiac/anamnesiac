@@ -171,3 +171,981 @@
         duration: 0
     power: ATK x4500%
     maxHits: 25
+
+- name: Anne Patriceani
+  cat: gl
+  rating: 3
+  picture: annepatriceani
+  weapon: knuckle
+  limited: false
+  star: 5
+
+  stats:
+    hp: 14070
+    atk: 2167
+    int: 1405
+    def: 1759
+    hit: 1043
+    grd: 756
+
+  talents:
+    - name: "Stellar Support"
+      effects: 
+        - desc: Critical Rate +30%
+          all: true
+    - name: "Grandmother's Teachings II"
+      effects: 
+        - desc: No Flinching to Damage < 20% of Max HP
+
+  skills:
+    - name: "Triple Kick"
+      power: ATK x250%
+      ap: 24
+      maxHits: 2
+    - name: "Hammer of Might"
+      power: ATK x230%
+      ap: 24
+      maxHits: 1
+    - name: "Drill Spike"
+      power: ATK x190%
+      ap: 20
+      maxHits: 4
+    - name: "X Claw"
+      power: ATK x310%
+      ap: 29
+      maxHits: 6
+
+  rush:
+    name: "Blazing Cannon"
+    effects: 
+      - desc: Critical Rate +60%
+        all: true
+        duration: 20
+    power: ATK x2500%
+    maxHits: 8
+    element: Fire
+    
+- name: Daril Camuze
+  cat: gl
+  rating: 5
+  picture: darilcamuze
+  weapon: ohs
+  limited: false
+  star: 5
+
+  stats:
+    hp: 14385
+    atk: 2153
+    int: 1391
+    def: 1799
+    hit: 1022
+    grd: 749
+
+  talents:
+    - name: "Patriotism at Its Finest"
+      effects: 
+        - desc: AP Cost -20%
+          all: true
+    - name: "Finest Instructor of the Blade II"
+      effects: 
+        - desc: No Flinching to Damage < 20% of Max HP
+    - name: "Camuze Way"
+      effects: 
+        - desc: Damage Dealt to Humanoids +60%
+
+  skills:
+    - name: "Rising Blade"
+      power: ATK x410%
+      ap: 32
+      maxHits: 5
+    - name: "Shotgun Blast"
+      power: ATK x190%
+      ap: 20
+      maxHits: 4
+      element: Lightning
+    - name: "Side Kick"
+      power: ATK x250%
+      ap: 24
+      maxHits: 3
+    - name: "Helm Splitter"
+      power: ATK x500%
+      ap: 35
+      maxHits: 1
+
+  rush:
+    name: "Ethereal Blast"
+    effects: 
+      - desc: AP cost -40%
+        duration: 20
+    power: ATK x2500%
+    maxHits: 12
+    element: Light
+    
+- name: Roddick Farrence
+  cat: gl
+  rating: 8
+  picture: roddickfarrence
+  weapon: ohs
+  ace: true
+  limited: false
+  star: 5
+
+  stats:
+    hp: 15750
+    atk: 3090
+    int: 1537
+    def: 1983
+    hit: 1134
+    grd: 812
+
+  talents:
+    - name: "Transcending Space-time II"
+      effects: 
+        - desc: Symbol Invoking Time -20%
+          all: true
+    - name: "Astounding Eldarian Swordplay"
+      effects: 
+        - desc: Chance to Cause Stun +40%
+          all: true
+    - name: "Defense Force of Kratus"
+      effects: 
+        - desc: ATK +30%
+
+  skills:
+    - name: "Double Slash"
+      power: ATK x200%
+      ap: 20
+      maxHits: 2
+    - name: "Air Slash"
+      power: ATK x200%
+      ap: 20
+      maxHits: 2
+    - name: "Shotgun Blast"
+      power: ATK x190%
+      ap: 20
+      maxHits: 4
+      element: Lightning
+    - name: "Dragon Slash"
+      power: ATK x400%
+      ap: 35
+      maxHits: 2
+      element: Lightning
+
+  rush:
+    name: "Omega Thunderclap Blade"
+    effects: 
+      - desc: AP cost -40%
+        duration: 20
+      - desc: Damage Taken -20%
+        duration: 20
+    power: ATK x3000%
+    maxHits: 7
+    element: Lightning
+    
+- name: Reimi Saionji (Summer)
+  cat: gl
+  rating: 7
+  picture: everlastingsummerreimisaionji
+  weapon: ohs
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 2718
+    int: 1563
+    def: 1957
+    hit: 1127
+    grd: 833
+
+  talents:
+    - name: "Mind's Eye View II"
+      effects: 
+        - desc: ATK +40% when not in front of target
+          all: true
+    - name: "Lethal Swing"
+      effects: 
+        - desc: ATK +25% when in front of target
+          all: true
+        - desc: Rush Combo Damage +10%
+          all: true
+    - name: "Handmade Dolls II"
+      effects: 
+        - desc: AP recovery from normal attacks +80%
+          all: Close Range
+        - desc: Nullifies Rush Gauge Reduction Field
+          all: Close Range
+    - name: "Hit-the-Watermelon"
+      effects: 
+        - desc: AP Cost -25% during 3 skill combos or more
+
+  skills:
+    - name: "Combo Breaker"
+      power: ATK x300%
+      ap: 23
+      maxHits: 4
+      highlight: true
+    - name: "Summer Smoothie"
+      power: ATK x450%
+      ap: 32
+      maxHits: 1
+    - name: "Smackdown"
+      power: ATK x180%
+      ap: 17
+      maxHits: 5
+    - name: "Crescent Mirage"
+      power: ATK x200%
+      ap: 20
+      maxHits: 4
+
+  rush:
+    name: "Celestial Sword"
+    effects: 
+      - desc: Cure status ailments
+        all: true
+        duration: 0
+      - desc: Single Target Damage Dealt +40%
+        all: true
+        duration: 20
+    power: ATK x3500%
+    maxHits: 7
+    
+- name: Lenneth
+  cat: gl
+  rating: 6
+  picture: lenneth
+  weapon: ohs
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 2730
+    int: 1601
+    def: 1930
+    hit: 1134
+    grd: 819
+
+  talents:
+    - name: "Greater Will of the Creator"
+      effects: 
+        - desc: ATK +30%
+          all: true
+    - name: "The Dusk of Ragnarok"
+      effects: 
+        - desc: Rush Combo Damage +20%
+          all: true
+    - name: "Platina's Heart"
+      effects: 
+        - desc: +15% chance of adding silence to all attacks
+
+  skills:
+    - name: "Glowing Pierce"
+      power: ATK x170%
+      ap: 18
+      maxHits: 3
+      highlight: true
+    - name: "Sky-High Break"
+      power: ATK x500%
+      ap: 35
+      maxHits: 3
+    - name: "Heaven and Hell"
+      power: ATK x220%
+      ap: 22
+      maxHits: 5
+    - name: "Valkyrie's Mercy"
+      power: ATK x700%
+      ap: 36
+      maxHits: 5
+
+  rush:
+    name: "Nibelung Valesti"
+    effects: 
+      - desc: DEF -30% (All Enemies/20 seconds)
+        all: enemies
+        duration: 20
+    power: ATK x3500%
+    maxHits: 8
+    
+- name: Claude C. Kenny
+  cat: gl
+  rating: 7
+  picture: claudeckenny
+  weapon: ohs
+  ace: true
+  limited: false
+  star: 5
+
+  stats:
+    hp: 15750
+    atk: 2730
+    int: 1537
+    def: 1983
+    hit: 1120
+    grd: 826
+
+  talents:
+    - name: "Hero's Resolve II"
+      effects: 
+        - desc: ATK +50%
+          all: Attackers
+    - name: "Learned Finesse II"
+      effects: 
+        - desc: ATK +50%
+          all: Defenders
+    - name: "Greater Hero's Might"
+      effects: 
+        - desc: Damage taken -20%
+          all: Healers
+    - name: "Passed Down Martial Arts"
+      effects: 
+        - desc: Normal attack AP recovery +100%
+          all: true
+
+  skills:
+    - name: "Double Slash"
+      power: ATK x200%
+      ap: 20
+      maxHits: 2
+    - name: "Air Slash"
+      power: ATK x200%
+      ap: 20
+      maxHits: 2
+    - name: "Helm Render"
+      power: ATK x440%
+      ap: 30
+      maxHits: 1
+    - name: "Sword Bomber"
+      power: ATK x550%
+      ap: 38
+      maxHits: 2
+
+  rush:
+    name: "Mirror Blade Tempest"
+    effects: 
+      - desc: Damage Dealt +30%
+        all: true
+        duration: 20
+    power: ATK x3000%
+    maxHits: 8
+   
+- name: Phia Melle
+  cat: gl
+  rating: 5
+  picture: phiamelle
+  weapon: dagger
+  limited: false
+  star: 5
+
+  stats:
+    hp: 12915
+    atk: 2584
+    int: 1391
+    def: 1292
+    hit: 1134
+    grd: 847
+
+  talents:
+    - name: "Raven Sword II"
+      effects: 
+        - desc: Critical hit chance +50%
+    - name: "Knight's Integrity II"
+      effects: 
+        - desc: Critical hit damage +50%
+    - name: "A Highlander's Pride"
+      effects: 
+        - desc: ATK +20% and DEF -20%
+
+  skills:
+    - name: "Liquid Bite"
+      power: ATK x170%
+      ap: 18
+      maxHits: 2
+      element: Ice
+    - name: "Unholy Terror"
+      power: ATK x310%
+      ap: 29
+      maxHits: 5
+    - name: "Sylvan Shot"
+      power: ATK x200%
+      ap: 20
+      maxHits: 8
+    - name: "Frore Dancing Sword"
+      power: ATK x400%
+      ap: 32
+      maxHits: 7
+
+  rush:
+    name: "Unholy Torrent"
+    effects: 
+      - desc: Ocassionally freezes foes.
+        duration: N/A
+    power: ATK x4000%
+    maxHits: 13
+    
+- name: Albel Nox
+  cat: gl
+  rating: 6
+  picture: albelnox
+  weapon: bns
+  ace: true
+  limited: false
+  star: 5
+
+  stats:
+    hp: 15750
+    atk: 2716
+    int: 1496
+    def: 2009
+    hit: 1113
+    grd: 847
+
+  talents:
+    - name: "Evil Eye II"
+      effects: 
+        - desc: DEF -30%
+          all: Enemies
+    - name: "Black Brigade Fury II"
+      effects: 
+        - desc: ATK +30%
+          all: Attackers & Defenders
+    - name: "Savage Blade II"
+      effects: 
+        - desc: Damage to single target +20%
+    - name: "Magician's Clothes"
+      effects: 
+        - desc: AP Reduction -20%
+
+  skills:
+    - name: "Unbridled Air Slash"
+      power: ATK x210%
+      ap: 21
+      maxHits: 2
+    - name: "Aura Wall"
+      power: ATK x200%
+      ap: 20
+      maxHits: 20
+    - name: "Unbridled Double Slashr"
+      power: ATK x4o0%
+      ap: 30
+      maxHits: 4
+    - name: "Vampiric Flash"
+      power: ATK x220%
+      ap: 32
+      maxHits: 6
+
+  rush:
+    name: "Hydra Roar"
+    effects: 
+      - desc: ATK +100% & DEF -50%
+        duration: 15
+    power: ATK x4000%
+    maxHits: 6
+    
+- name: Ilia Silvestri
+  cat: gl
+  rating: 4
+  picture: iliasilvestri
+  weapon: knuckle
+  limited: false
+  star: 5
+
+  stats:
+    hp: 14070
+    atk: 2377
+    int: 1405
+    def: 1759
+    hit: 1043
+    grd: 756
+
+  talents:
+    - name: "Even Greater Instincts II"
+      effects: 
+        - desc: ATK +30%
+          all: true
+    - name: "All-Seeing Eye II"
+      effects: 
+        - desc: Damage to multiple targets +20%
+          all: true
+    - name: "Mother of Symbology"
+      effects: 
+        - desc: AP Reduction -10%
+    - name: "Quiet Devotion"
+      effects: 
+        - desc: Fire Element Damage +20%
+          all: true
+
+  skills:
+    - name: "Palm of Destruction"
+      power: ATK x240%
+      ap: 23
+      maxHits: 4
+    - name: "Crescent Locus"
+      power: ATK x150%
+      ap: 17
+      maxHits: 4
+    - name: "Fiery Hammer of Might"
+      power: ATK x270%
+      ap: 26
+      maxHits: 1
+      element: Fire
+    - name: "X Claw"
+      power: ATK x310%
+      ap: 29
+      maxHits: 6
+
+  rush:
+    name: "Divine Hammer"
+    effects: 
+      - desc: AP Reduction -20%
+        all: Attackers & Invokers
+        duration: 20
+    power: ATK x3000%
+    maxHits: 14
+    
+- name: Clair Lasbard (Halloween)
+  cat: gl
+  rating: 9
+  picture: halloweendemonclairlasbard
+  weapon: dualsword
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 3245
+    int: 1549
+    def: 1969
+    hit: 1134
+    grd: 833
+
+  talents:
+    - name: "Black Ribbon II"
+      effects: 
+        - desc: ATK +15%
+    - name: "Mischievous Wings II"
+      effects: 
+        - desc: +15% ATK damage when hit count is over 50
+          all: true
+    - name: "Heart-Shaped Tail II"
+      effects: 
+        - desc: -25% AP consumption
+        - desc: +15% ATK when hit count is over 100
+    - name: "Prayer"
+      effects: 
+        - desc: Will not flinch to attacks under 15% of max HP
+          all: Attackers
+
+  skills:
+    - name: "Enchanting Twin Thrust"
+      power: ATK x370%
+      ap: 28
+      maxHits: 2
+      element: Fire
+      highlight: true
+    - name: "Sinistral Edge"
+      power: ATK x150%
+      ap: 14
+      maxHits: 2
+    - name: "Dextral Slaughter"
+      power: ATK x220%
+      ap: 22
+      maxHits: 2
+    - name: "Hazy Wheel"
+      power: ATK x440%
+      ap: 32
+      maxHits: 8
+
+  rush:
+    name: "Waking Hell"
+    effects: 
+      - desc: +30% DEF
+        all: true
+        duration: 20
+      - desc: -30% DEF
+        all: Enemies
+        duration: 20
+    power: ATK x4000%
+    maxHits: 7
+    
+- name: Millie Chliette (Halloween)
+  cat: gl
+  rating: 8
+  picture: halloweenwerewolfmilliechliette
+  weapon: arm
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 2718
+    int: 1537
+    def: 1957
+    hit: 1148
+    grd: 826
+
+  talents:
+    - name: "Hand Trick II"
+      effects: 
+        - desc: +25% ATK
+          all: true
+        - desc: +35% ATK when hit count is over 100
+          all: true
+    - name: "Wolf's Appetite II"
+      effects: 
+        - desc: AP recovery from normal attacks +100%
+          all: true
+    - name: "Animal Instincts"
+      effects: 
+        - desc: Nullify movement reducing fields and rush gauge reduction fields
+          all: true
+    - name: "Full Moon Howl"
+      effects: 
+        - desc: Pumpkin Smash damage +60% when arte chain 4+
+
+  skills:
+    - name: "Lantern Burst"
+      power: ATK x190%
+      ap: 18
+      maxHits: 6
+      element: Fire
+      highlight: true
+    - name: "Howling Rocket Punch"
+      power: ATK x170%
+      ap: 14
+      maxHits: 1
+    - name: "Hammer Slammer"
+      power: ATK x340%
+      ap: 22
+      maxHits: 6
+    - name: "Pumpkin Smash"
+      power: ATK x550%
+      ap: 32
+      maxHits: 3
+
+  rush:
+    name: "Trick or Treat"
+    effects: 
+      - desc: +50% all elemental damage
+        all: true
+        duration: 20
+    power: ATK x3500%
+    maxHits: 8
+    
+- name: Fayt Leingod
+  cat: gl
+  rating: 7
+  picture: faytleingod
+  weapon: ohs
+  ace: true
+  limited: false
+  star: 5
+
+  stats:
+    hp: 15750
+    atk: 2730
+    int: 1537
+    def: 1957
+    hit: 1134
+    grd: 819
+
+  talents:
+    - name: "Star Athlete II"
+      effects: 
+        - desc: +30% ATK
+          all: true
+    - name: "Speak Softly & Carry A Big Stick"
+      effects: 
+        - desc: Imbue attacks with Fire or Light attribute
+    - name: "Feinting Tactics"
+      effects: 
+        - desc: +15% All elemental damage
+          all: true
+    - name: "Stubborn To A Fault"
+      effects: 
+        - desc: Will not flinch to damage under 10% Max HP
+          all: Self & Long Range
+
+  skills:
+    - name: "Rising Blade"
+      power: ATK x410%
+      ap: 32
+      maxHits: 5
+    - name: "Shotgun Blast"
+      power: ATK x190%
+      ap: 20
+      maxHits: 4
+      element: Lightning
+    - name: "Gliding Side Kick"
+      power: ATK x180%
+      ap: 19
+      maxHits: 3
+    - name: "Avian Air Raid"
+      power: ATK x400%
+      ap: 30
+      maxHits: 5
+      element: Light
+
+  rush:
+    name: "Colossal Ethereal Blast"
+    effects: 
+      - desc: +50% all elemental damage
+        all: true
+        duration: 20
+    power: ATK x3500%
+    maxHits: 12
+    
+- name: Michael
+  cat: gl
+  rating: 5
+  picture: michael
+  weapon: knuckle
+  ace: true
+  limited: false
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 2692
+    int: 1563
+    def: 1957
+    hit: 1141
+    grd: 833
+
+  talents:
+    - name: "Spontaneous Combustion II"
+      effects: 
+        - desc: +40% ATK
+          all: Attackers
+    - name: "Lightning-Fast Firewhips"
+      effects: 
+        - desc: -15% AP Cost
+    - name: "Hellfire II"
+      effects: 
+        - desc: +10% Fire DMG & -30% Ice DMG Taken
+    - name: "Fiery Indignation"
+      effects: 
+        - desc: +25% For Every Party Member Dead All Stats
+
+  skills:
+    - name: "Pyroclast Punch"
+      power: ATK x190%
+      ap: 18
+      maxHits: 5
+      element: Fire
+    - name: "Bosom Blow"
+      power: ATK x330%
+      ap: 30
+      maxHits: 1
+      element: Fire
+    - name: "Firefest"
+      power: ATK x660%
+      ap: 42
+      maxHits: 6
+      element: Fire
+    - name: "Lava Flow"
+      power: ATK x740%
+      ap: 52
+      maxHits: 10
+      element: Fire
+
+  rush:
+    name: "Spicule"
+    effects: 
+      - desc: -50% AP Cost
+        all: true
+        duration: 20
+    power: ATK x3500%
+    maxHits: 8
+    element: Fire
+    
+- name: Fidel Camuze (Winter)
+  cat: gl
+  rating: 10
+  picture: christmaswinterskyfidelcamuze
+  weapon: gun
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15960
+    atk: 3126
+    int: 1549
+    def: 1957
+    hit: 1247
+    grd: 812
+
+  talents:
+    - name: "The Gift of Happiness II"
+      effects: 
+        - desc: +20% ATK
+          all: true
+    - name: "A Winter Prayer II"
+      effects: 
+        - desc: AP recovery from Normal Attacks +100% when Hit Count is over 100
+          all: true
+        - desc: ATK Damage +20% when Hit Count is over 200
+          all: true
+    - name: "Colorful Galleria II"
+      effects: 
+        - desc: Bullet Barrage and Bombing Run Damage +100% when skill chain is 3+
+        - desc: Bullet Barrage and Bombing Run Damage +200% when skill chain is 5+
+    - name: "Novice Santa"
+      effects: 
+        - desc: ATK +15%
+        - desc: HIT +15%
+
+  skills:
+    - name: "Flying Skyline Spray"
+      power: ATK x170%
+      ap: 14
+      maxHits: 3
+    - name: "Flying Divebomb"
+      power: ATK x150%
+      ap: 130
+      maxHits: 3
+    - name: "Bullet Barrage"
+      power: ATK x400%
+      ap: 27
+      maxHits: 6
+    - name: "Bombing Run"
+      power: ATK x230%
+      ap: 21
+      maxHits: 6
+
+  rush:
+    name: "Holiday Surprise"
+    effects: 
+      - desc: -30% AP Cost
+        duration: 20
+      - desc: Crit Rate +20%
+        duration: 20
+    power: ATK x4000%
+    maxHits: 30
+    
+- name: Welch Vineyard (Tearful)
+  cat: gl
+  rating: 1
+  picture: weepywelchvineyard
+  weapon: knuckle
+  limited: true
+  star: 5
+
+  stats:
+    hp: 11340
+    atk: 2799
+    int: 1418
+    def: 1208
+    hit: 1057
+    grd: 749
+
+  talents:
+    - name: "Good Fortune II"
+      effects: 
+        - desc: DEF -50%
+          all: Enemies
+        - desc: DEF -50%
+          all: true
+    - name: "Braveman’s Heart II"
+      effects: 
+        - desc: ATK +30%
+    - name: "MAX Tension"
+      effects: 
+        - desc: Movement rate boost
+
+  skills:
+    - name: "Crescent Lotus"
+      power: ATK x150%
+      ap: 17
+      maxHits: 4
+    - name: "Hammer of Might"
+      power: ATK x230%
+      ap: 24
+      maxHits: 1
+    - name: "Drill Spike"
+      power: ATK x190%
+      ap: 20
+      maxHits: 4
+    - name: "X Claw"
+      power: ATK x310%
+      ap: 29
+      maxHits: 6
+
+  rush:
+    name: "Fists of Unquenchable Fury"
+    effects: 
+      - desc: ATK +50%
+        all: true
+        duration: 20
+      - desc: DEF -100%
+        all: true
+        duration: 20
+    power: ATK x2000%
+    maxHits: 20
+    
+- name: Meracle Chamlotte
+  cat: gl
+  rating: 7
+  picture: meraclechamlotte
+  weapon: knuckle
+  ace: true
+  limited: false
+  star: 5
+
+  stats:
+    hp: 14070
+    atk: 3276
+    int: 1549
+    def: 1930
+    hit: 1155
+    grd: 826
+
+  talents:
+    - name: "Hunter’s Intuition II"
+      effects: 
+        - desc: Critical Rate +30%
+        - desc: Critical Rate +30% at short range
+          all: true
+    - name: "Memories of Ocarina II"
+      effects: 
+        - desc: AP Recovery +50%
+          all: Self & Defenders
+    - name: "Isolation II"
+      effects:
+        - desc: ATK +20%
+    - name: "Cat’s Interlude"
+      effects:
+        - desc: AP Cost -20%
+        - desc: ATK +10%, +20%, +30% at 100, 150, 200 hits respectively
+
+  skills:
+    - name: "Gouging Spike"
+      power: ATK x160%
+      ap: 16
+      maxHits: 4
+    - name: "Crescent Locus"
+      power: ATK x150%
+      ap: 17
+      maxHits: 4
+    - name: "Eviscerating Claw"
+      power: ATK x250%
+      ap: 25
+      maxHits: 6
+    - name: "Claws of Fury"
+      power: ATK x700%
+      ap: 40
+      maxHits: 27
+
+  rush:
+    name: "Max Shockwave"
+    effects: 
+      - desc: AP Cost -40%
+        duration: 20
+    power: ATK x4000%
+    maxHits: 7
+    
