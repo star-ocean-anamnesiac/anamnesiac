@@ -1,0 +1,12 @@
+
+- name: Advanced Combat Symbology Textbook
+  cat: 'jp'
+  star: 5
+  picture: tomes/Advanced Combat Heraldry Manual
+  atk: 506
+  int: 509
+  factor1: INT +15%
+  factor2: Recover 5% HP every 3s
+  factor3: +10% crit chance
+  thirdFactorLB: 5
+  obtained: Tome Coin Exchange / Gacha
