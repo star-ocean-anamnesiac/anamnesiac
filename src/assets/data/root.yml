@@ -9,6 +9,8 @@ classes:
 weapons:
   - id: arm
     name: Arms
+  - id: axe
+    name: Axe
   - id: bns
     name: Blade & Sheath
   - id: bow
@@ -27,8 +29,14 @@ weapons:
     name: One Handed Sword
   - id: orb
     name: Orb
+  - id: rifle
+    name: Rifle
+  - id: scythe
+    name: Scythe
   - id: staff
     name: Staff
+  - id: tome
+    name: Tome
 
 accessories:
   - id: all
