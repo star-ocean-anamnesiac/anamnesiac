@@ -865,7 +865,7 @@
       effects: 
         - desc: +15% All elemental damage
           all: true
-        - name: "Stubborn To A Fault"
+    - name: "Stubborn To A Fault"
       effects: 
         - desc: Will not flinch to damage under 10% Max HP
           all: Self & Long Range
