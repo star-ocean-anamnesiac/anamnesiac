@@ -709,7 +709,7 @@
   cat: gl
   rating: 9
   picture: halloweendemonclairlasbard
-  weapon: Dual Swords
+  weapon: dualswords
   ace: true
   limited: true
   star: 5
@@ -775,7 +775,7 @@
   cat: gl
   rating: 8
   picture: halloweenwerewolfmilliechliette
-  weapon: Arms
+  weapon: arms
   ace: true
   limited: true
   star: 5
