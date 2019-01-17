@@ -127,7 +127,8 @@ export class CharacterSortPopover {
                         <li *ngFor="let effect of char.rush.effects">
                         {{ effect.desc }}
                         <span *ngIf="effect.all">
-                          (All {{ effect.all === true ? 'Allies' : effect.all }}<span *ngIf="effect.duration"> {{ effect.duration }}s</span>)
+                          (All {{ effect.all === true ? 'Allies' : effect.all }}
+                          <span *ngIf="effect.duration"> {{ effect.duration }}s</span>)
                         </span>
                         <span *ngIf="effect.duration"></span>
                         </li>
