@@ -803,7 +803,7 @@
       effects: 
         - desc: Nullify movement reducing fields and rush gauge reduction fields
           all: true
-        - name: "Full Moon Howl"
+    - name: "Full Moon Howl"
       effects: 
         - desc: Pumpkin Smash damage +60% when arte chain 4+
 
