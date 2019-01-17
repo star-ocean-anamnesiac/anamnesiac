@@ -1,0 +1,12 @@
+
+- name: Blue Comet Trigger
+  cat: 'jp'
+  star: 5
+  picture: rifles/Blue Comet Trigger
+  atk: 651
+  int: 649
+  factor1: +15% DMG to single targets
+  factor2: Hit Count timer +1s
+  factor3: Additional hit that deals 5% of damage dealt by normal attacks
+  thirdFactorLB: 5
+  obtained: Rifle Coin Exchange
