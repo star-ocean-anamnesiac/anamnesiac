@@ -390,6 +390,7 @@
   picture: christmassnowwhiteevelysse
   weapon: Dual Swords
   ace: true
+  limited: true
   star: 5
 
   stats:
@@ -519,11 +520,12 @@
     power: ATK x3500%
     maxHits: 12
     
-    - name: Miki Sauvester (Princess)
+- name: Miki Sauvester (Princess)
   cat: gl
   rating: 4
   picture: girlsdaymiki
   weapon: bns
+  limited: true
   star: 5
 
   stats:
