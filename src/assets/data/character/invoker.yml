@@ -35,13 +35,13 @@
   skills:
     - name: "Plunging Fire Bolts"
       element: Fire
-      power: INT x200%
+      power: INT x 200%
       ap: 20
       maxHits: 6
       highlight: true
     - name: "Stone Rain"
       element: Earth
-      power: INT x460%
+      power: INT x 460%
       ap: 35
       maxHits: 5
     - name: "Enhance"
@@ -51,7 +51,7 @@
       highlight: true
     - name: "Violent Explosion"
       element: Fire
-      power: INT x770%
+      power: INT x 770%
       ap: 45
       maxHits: 14
       highlight: true
@@ -63,15 +63,19 @@
         duration: 20
       - desc: -60% AP cost
         duration: 20
-    power: INT x3500%
+    power: INT x 3500%
     maxHits: 9
 
   notes: >
-      _Sophia is a caster_
+      _Sophia is an interesting caster. Though she is elemental locked like all of the other casters, she also brings an ATK buffing
+      skill that allows her to fit into physical attacking compositions. Due to this, if you enjoy the staff invoker play style she's
+      probably the best to invest in. Her talents all buff her, and she has a homing attack that helps deal with moving targets as
+      well. A viable self sufficient flexible caster._
 
-      **This is line 2**
+      **Rotation**
 
-      *This is line 3*
+      *Normal > CA Explosion > Fire Bolt > Explosion > Explosion (General damage rotation. Recommended with 101 AP.)*
+      *Normal > CA Fire Bolt > Explosion > Fire Bolt (Moving target rotation.)*
       
 - name: Myuria Tionysus
   cat: gl
@@ -106,24 +110,24 @@
   skills:
     - name: "Deep Freeze"
       element: Ice
-      power: INT x460%
+      power: INT x 460%
       ap: 35
       maxHits: 9
     - name: "Thunder Flare"
       element: Lightning
-      power: INT x460%
+      power: INT x 460%
       ap: 35
       maxHits: 4
       highlight: true
     - name: "Arctic Impact"
       element: Ice
-      power: INT x670%
+      power: INT x 670%
       ap: 42
       maxHits: 3
       highlight: true
     - name: "Plasma Cyclone"
       element: Lightning
-      power: INT x700%
+      power: INT x 700%
       ap: 50
       maxHits: 6
       
@@ -133,7 +137,7 @@
     effects: 
       - desc: +80% INT
         duration: 20
-    power: INT x3500%
+    power: INT x 3500%
     maxHits: 2
 
 - name: Ronyx J. Kenny
@@ -163,23 +167,23 @@
   skills:
     - name: "Stone Rain"
       element: Earth
-      power: INT x460%
+      power: INT x 460%
       ap: 35
       maxHits: 5
     - name: "Explosion"
       element: Fire
-      power: INT x460%
+      power: INT x 460%
       ap: 35
       maxHits: 14
       highlight: true
     - name: "Terra Hammer"
       element: Earth
-      power: INT x670%
+      power: INT x 670%
       ap: 42
       maxHits: 6
     - name: "Volcanic Burst"
       element: Fire
-      power: INT x670%
+      power: INT x 670%
       ap: 42
       maxHits: 13
       highlight: true
@@ -191,7 +195,7 @@
       - desc: Reduce casting time by 50%
         duration: 20
         all: true
-    power: INT x2500%
+    power: INT x 2500%
     maxHits: 10
 
 - name: Lymle Lemuri Phi
@@ -224,24 +228,24 @@
   skills:
     - name: "Plunging Fire Bolts"
       element: Fire
-      power: INT x200%
+      power: INT x 200%
       ap: 20
       maxHits: 6
       highlight: true
     - name: "Volcanic Burst"
       element: Fire
-      power: INT x670%
+      power: INT x 670%
       ap: 42
       maxHits: 13
       highlight: true
     - name: "Wind Blade"
       element: Wind
-      power: INT x190%
+      power: INT x 190%
       ap: 20
       maxHits: 2
     - name: "Tornado"
       element: Wind
-      power: INT x460%
+      power: INT x 460%
       ap: 35
       maxHits: 2
       highlight: true
@@ -254,7 +258,7 @@
         duration: 20
       - desc: Reduce casting time by 70%
         duration: 20
-    power: INT x2500%
+    power: INT x 2500%
     maxHits: 6
    
   notes: >
@@ -262,7 +266,7 @@
 
 - name: Faize Sheifa Beleth
   cat: gl
-  rating: 7
+  rating: 6
   picture: faizesheifabeleth
   weapon: bns
   limited: false
@@ -291,24 +295,24 @@
   skills:
     - name: "Cursed Devourer"
       element: Dark
-      power: INT x570%
+      power: INT x 570%
       ap: 42
       maxHits: 5
       highlight: true
     - name: "Cursed Vampiric Blade"
       element: Dark
-      power: INT x370%
+      power: INT x 370%
       ap: 32
       maxHits: 5
     - name: "Cursed Shadow Needles"
       element: Dark
-      power: INT x240%
+      power: INT x 240%
       ap: 23
       maxHits: 5
       highlight: true
     - name: "Cursed Reaping Spark"
       element: Dark
-      power: INT x520%
+      power: INT x 520%
       ap: 37
       maxHits: 12
       highlight: true
@@ -319,7 +323,7 @@
     effects: 
       - desc: AP cost -30%
         duration: 20
-    power: INT x3000%
+    power: INT x 3000%
     maxHits: 12
 
 
@@ -359,22 +363,22 @@
   skills:
     - name: "Silencing Star Light"
       element: Light
-      power: INT x440%
+      power: INT x 440%
       ap: 36
       maxHits: 1
     - name: "Silent Lightning"
       element: Lightning
-      power: INT x220%
+      power: INT x 220%
       ap: 23
       maxHits: 10
     - name: "Silencing Sunflare"
       element: Light
-      power: INT x570%
+      power: INT x 570%
       ap: 42
       maxHits: 6
     - name: "Silencing Cyclone"
       element: Thunder
-      power: INT x700%
+      power: INT x 700%
       ap: 50
       maxHits: 6
       
@@ -384,5 +388,72 @@
     effects: 
       - desc: +50% INT
         duration: 20
-    power: INT x3500%
+    power: INT x 3500%
     maxHits: 6
+
+- name: Fiore Brunellie
+  cat: gl
+  rating: 7.5
+  picture: fiorebrunelli
+  weapon: orb
+  limited: false
+  star: 5
+  ace: true
+
+  stats:
+    hp: 13965
+    atk: 1537
+    int: 3445
+    def: 1129
+    hit: 1050
+    grd: 833
+
+  talents:
+    - name: "Signeturge's Pride II"
+      effects: 
+        - desc: INT +25%
+    - name: "Inherited Symbology II"
+      effects: 
+        - desc: Int +20%
+        - desc: No flinching when casting Symbology
+          all: true
+    - name: "Infinite Curiosity"
+      effects:
+        - desc: ATK Damage +15% & INT Damage +15% when Skill Chain is 3+
+          all: true
+    - name: "Symbology of Viewing"
+      effects:
+        - desc: AP Cost -60% & Symbol invoking time -30% when Skill Chain is 3+
+
+  skills:
+    - name: "Shadow Needles"
+      element: Dark
+      power: INT x 240%
+      ap: 23
+      maxHits: 5
+    - name: "Ice Needles"
+      element: Ice
+      power: INT x 250%
+      ap: 24
+      maxHits: 9
+    - name: "Absolute-Zero Freeze"
+      element: Ice
+      power: INT x 550%
+      ap: 38
+      maxHits: 9
+    - name: "Shadowy Extinction"
+      element: Dark
+      power: INT x 670%
+      ap: 42
+      maxHits: 2
+      
+  rush:
+    name: "Final Dystopia"
+    element: Dark
+    effects: 
+      - desc: DEF -40%
+        all: Enemies
+        duration: 20
+    power: INT x 3500%
+    maxHits: 16
+    
