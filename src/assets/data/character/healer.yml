@@ -322,7 +322,7 @@
   cat: gl
   rating: 5
   picture: evelysse
-  weapon: Staff
+  weapon: staff
   ace: true
   limited: false
   star: 5
@@ -560,7 +560,7 @@
   cat: gl
   rating: 7
   picture: relia
-  weapon: Staff
+  weapon: staff
   ace: true
   limited: false
   star: 5
