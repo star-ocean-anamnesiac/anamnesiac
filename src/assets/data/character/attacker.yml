@@ -533,11 +533,11 @@
    
 - name: Phia Melle
   cat: gl
-  rating: 5
+  rating: 5.5
   picture: phiamelle
   weapon: dagger
   limited: false
-  star: 5.5
+  star: 5
 
   stats:
     hp: 12915
