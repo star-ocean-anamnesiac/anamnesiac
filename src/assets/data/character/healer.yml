@@ -606,11 +606,10 @@
       power: INT x 460%
       ap: 35
       maxHits: 5
-    - name: "Enragin Faerie Light"
+    - name: "Enraging Faerie Light"
       power: INT x 230%
       ap: 60
-      notes: ATK +20% for 20 seconds.
-      notes: Party wide heal & buff.
+      notes: ATK +20% for 20 seconds. Party wide heal & buff.
       maxHits: 1
       
   rush:
