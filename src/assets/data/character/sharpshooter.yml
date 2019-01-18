@@ -40,19 +40,19 @@
 
   skills:
     - name: "YoRHa Arms: Three"
-      power: ATK x920%
+      power: ATK x 920%
       ap: 53
       maxHits: 1
     - name: "YoRHa Arms: Four"
-      power: ATK x620%
+      power: ATK x 620%
       ap: 26
       maxHits: 1
     - name: "YoRHa Pod: One"
-      power: ATK x180%
+      power: ATK x 180%
       ap: 13
       maxHits: 1
     - name: "YoRHa Pod: Two"
-      power: ATK x380%
+      power: ATK x 380%
       ap: 20
       maxHits: 1
       
@@ -64,5 +64,544 @@
       - desc: ATK damage +30% 
         duration: 20
         all: true
-    power: ATK x4000%
+    power: ATK x 4000%
     maxHits: 16
+
+- name: Maria Traydor
+  cat: gl
+  rating: 9
+  picture: mariatraydor
+  weapon: gun
+  ace: true
+  limited: false
+  star: 5
+
+  stats:
+    hp: 14070
+    atk: 2193
+    int: 1563
+    def: 1706
+    hit: 1260
+    grd: 924
+
+  talents:
+    - name: "Natural Born Leader II"
+      effects: 
+        - desc: Damage +40%
+          all: true
+    - name: "Alternating Step II"
+      effects: 
+        - desc: Damage taken -20%
+
+  skills:
+    - name: "Aiming Device"
+      power: ATK x 200%
+      ap: 20
+      maxHits: 1
+    - name: "Crimson Squall"
+      power: ATK x 340%
+      ap: 29
+      maxHits: 9
+    - name: "Laser Bullet"
+      power: ATK x 190%
+      ap: 20
+      maxHits: 3
+    - name: "Gravity Bullet"
+      power: ATK x 230%
+      ap: 24
+      maxHits: 12
+      element: Dark
+      
+  rush:
+    name: "Energy Barrage"
+    effects: 
+      - desc: Removes Buffs
+        all: Enemies
+      - desc: Critical Rate +40%
+        duration: 20
+        all: true
+    power: ATK x 3000%
+    maxHits: 6
+    
+- name: Nel Zelpher
+  cat: gl
+  rating: 5
+  picture: nelzelpher
+  weapon: dagger
+  ace: true
+  limited: false
+  star: 5
+
+  stats:
+    hp: 15646
+    atk: 2153
+    int: 1549
+    def: 1589
+    hit: 1246
+    grd: 924
+
+  talents:
+    - name: "Prayer for Peace"
+      effects: 
+        - desc: Critical Rate +10%
+          all: true
+    - name: "Crimson Blade"
+      effects: 
+        - desc: Normal Attacks have +15% chance to Poison
+    - name: "Assassin's Stealth"
+      effects: 
+        - desc: AP Cost -15%
+          all: true
+    - name: "Covert Operation"
+      effects: 
+        - desc: Repel +1
+
+  skills:
+    - name: "Poisonous Shot"
+      power: ATK x 200%
+      ap: 20
+      maxHits: 8
+    - name: "Poisonous Guillotine"
+      power: ATK x 370%
+      ap: 32
+      maxHits: 4
+    - name: "Poisonous Terror"
+      power: ATK x 500%
+      ap: 35
+      maxHits: 10
+    - name: "Poisonous Blade"
+      power: ATK x 680%
+      ap: 40
+      maxHits: 6
+      
+  rush:
+    name: "Divine Wrath"
+    effects: 
+      - desc: Normal Attacks have +15% chance to Deadly Poison
+      - desc: Normal Attacks will do an additional hit on Normal Attacks that does 20% of your damage
+        duration: 20
+      - desc: High Chance to inflict Deadly Poison during Rush.
+    power: ATK x 2000%
+    maxHits: 18
+  
+- name: Emmerson T. Kenny
+  cat: gl
+  rating: 3
+  picture: emmersontkenny
+  weapon: gun
+  limited: false
+  star: 5
+
+  stats:
+    hp: 14280
+    atk: 1995
+    int: 1391
+    def: 1433
+    hit: 1120
+    grd: 847
+
+  talents:
+    - name: "Inspired Action II"
+      effects: 
+        - desc: Hitcount Timer +2 seconds
+          all: true
+    - name: "Daredevil's Courage II"
+      effects: 
+        - desc: Additional Hit on that Deals 20% of Damage Dealt on Normal Attacks.
+        
+  skills:
+    - name: "Heavenly Flight"
+      power: ATK x 460%
+      ap: 35
+      maxHits: 4
+    - name: "Laser Blaster"
+      power: ATK x 190%
+      ap: 20
+      maxHits: 3
+    - name: "Seraphic Thunder"
+      power: ATK x 310%
+      ap: 30
+      maxHits: 8
+      element: Lightning
+    - name: "Hunter's Moon"
+      power: ATK x 370%
+      ap: 32
+      maxHits: 7
+      
+  rush:
+    name: "Energy Burst Glaive"
+    effects: 
+      - desc: ATK +80%
+        duration: 20
+    power: ATK x 3000%
+    maxHits: 7
+    
+- name: Clair Lasbard
+  cat: gl
+  rating: 6
+  picture: clairlasbard
+  weapon: dagger
+  limited: false
+  star: 5
+
+  stats:
+    hp: 14175
+    atk: 2153
+    int: 1405
+    def: 1444
+    hit: 1134
+    grd: 840
+
+  talents:
+    - name: "Reach Further Beyond"
+      effects: 
+        - desc: ATK Damage Taken -30%
+          all: true
+    - name: "Apris's Divine Favor"
+      effects: 
+        - desc: No Flinching when taking Damage < 20% of Max HP
+          all: true
+        
+  skills:
+    - name: "Hydroblades"
+      power: ATK x 190%
+      ap: 20
+      maxHits: 2
+      element: Ice
+    - name: "Sylvan Shot"
+      power: ATK x 200%
+      ap: 20
+      maxHits: 8
+    - name: "Mirror Blade"
+      power: ATK x 680%
+      ap: 40
+      maxHits: 8
+    - name: "Victory Terror"
+      power: ATK x 500%
+      ap: 35
+      maxHits: 10
+      
+  rush:
+    name: "Flying Guillotine Slash"
+    effects: 
+      - desc: Damage Dealt +80%
+        duration: 20
+        all: true
+    power: ATK x 3000%
+    maxHits: 6
+    
+- name: Reimi Saionji
+  cat: gl
+  rating: 6
+  picture: reimisaionji
+  weapon: bow
+  ace: true
+  limited: false
+  star: 5
+
+  stats:
+    hp: 15540
+    atk: 2587
+    int: 1563
+    def: 1549
+    hit: 1246
+    grd: 945
+
+  talents:
+    - name: "Sound Judgment II"
+      effects: 
+        - desc: INT Damage Taken -40%
+          all: true
+    - name: "Greater Single-Shot"
+      effects: 
+        - desc: Damage Dealt +20%
+          all: true
+    - name: "Star Seed of Hope"
+      effects: 
+        - desc: Nullifies Status Ailments (180 seconds)
+    - name: "Descendant of Muah"
+      effects: 
+        - desc: 80% Chance of Surviving a Lethal Attack at 10% HP or more.
+
+  skills:
+    - name: "Chaotic Blossoms"
+      power: ATK x 500%
+      ap: 35
+      maxHits: 11
+    - name: "Crimson Squall"
+      power: ATK x 250%
+      ap: 24
+      maxHits: 9
+    - name: "Crescent Wings"
+      power: ATK x 230%
+      ap: 24
+      maxHits: 2
+    - name: "Rapacious Sparrow"
+      power: ATK x 410%
+      ap: 32
+      maxHits: 9
+      
+  rush:
+    name: "Lunar Divination"
+    effects: 
+      - desc: Nullifies Status Ailments
+        all: true
+      - desc: Recovers 15% of HP every 3 seconds
+        duration: 15
+        all: true
+    power: ATK x 2500%
+    maxHits: 7
+    element: Dark
+    
+- name: Miki Sauvester
+  cat: gl
+  rating: 6
+  picture: everlastingsummermikisauvester
+  weapon: bow
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 2468
+    int: 1575
+    def: 1523
+    hit: 1260
+    grd: 938
+
+  talents:
+    - name: "Undivided Attention II"
+      effects: 
+        - desc: ATK Damage Taken -20% when in front of target, 70% Chance of Surviving a Lethal Attack at > 20% HP
+          all: true
+    - name: "Stir-Fried Noodles II"
+      effects: 
+        - desc: Damage Dealt +25%
+          all: true
+    - name: "Side Order II"
+      effects: 
+        - desc: Critical Hit Chance +20% when behind target (180 seconds)
+          all: true
+    - name: "Summer Snow Cone"
+      effects: 
+        - desc: Normal Attack AP Recovery +25%
+          all: true
+
+  skills:
+    - name: "Heavenly Flight"
+      power: ATK x 310%
+      ap: 29
+      maxHits: 4
+    - name: "Sonic Thorn"
+      power: ATK x 200%
+      ap: 20
+      maxHits: 2
+    - name: "Hunter's Moon"
+      power: ATK x 310%
+      ap: 29
+      maxHits: 7
+    - name: "Howling Wind"
+      power: ATK x 550%
+      ap: 32
+      maxHits: 1
+      
+  rush:
+    name: "Rain on Your Parade"
+    effects: 
+      - desc: Critical Hit Chance 10%
+        duration: 20
+        all: true
+      - desc: Critical Hit Damage +40%
+        duration: 20
+        all: true
+    power: ATK x 3500%
+    maxHits: 24
+    
+- name: Silmeria
+  cat: gl
+  rating: 6
+  picture: silmeria
+  weapon: bow
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15540
+    atk: 2494
+    int: 1601
+    def: 1523
+    hit: 1253
+    grd: 931
+
+  talents:
+    - name: "Battle Maiden's Might"
+      effects: 
+        - desc: Damage Dealt +10% when attack hits a single enemy
+          all: true
+    - name: "Divine Arrow Burst"
+      effects: 
+        - desc: Damage Dealt +30%
+          all: true
+    - name: "Einherjar's Last Hope"
+      effects: 
+        - desc: Hit Counter +2 seconds
+          all: true
+    - name: "Yggdrasil's Fortune"
+      effects: 
+        - desc: Recovers 3% HP every 3 seconds
+        
+  skills:
+    - name: "Binding Distortion"
+      power: ATK x 190%
+      ap: 20
+      maxHits: 5
+      element: Dark
+    - name: "Volcanic Volley"
+      power: ATK x 400%
+      ap: 33
+      maxHits: 8
+    - name: "Wave Motion"
+      power: ATK x 440%
+      ap: 33
+      maxHits: 2
+    - name: "Homing Pigeons"
+      power: ATK x 290%
+      ap: 26
+      maxHits: 2
+      
+  rush:
+    name: "Nibelung Valesti"
+    effects: 
+      - desc: Critical Hit Chance 30%
+        duration: 60
+    power: ATK x 3500%
+    maxHits: 8
+    
+- name: Victor Oakville (Halloween)
+  cat: gl
+  rating: 10
+  picture: halloweenvampirevictoroakville
+  weapon: dagger
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 14280
+    atk: 2494
+    int: 1523
+    def: 1799
+    hit: 1232
+    grd: 924
+
+  talents:
+    - name: "Bloodstained Fangs II"
+      effects: 
+        - desc: Recover 10% of normal attack damage as HP
+          all: true
+    - name: "Crimson Cup II"
+      effects: 
+        - desc: Damage Dealt +30% & +10% all element damage when HP is 100%
+          all: true
+    - name: "Demon Blade"
+      effects: 
+        - desc: Recover 3% of skill attack damage as HP
+    - name: "Deep Mourning"
+      effects: 
+        - desc: AP consumption -40% when skill chain is 3+
+        
+  skills:
+    - name: "Flying Cleave"
+      power: ATK x 170%
+      ap: 15
+      maxHits: 2
+    - name: "Gyrfalcon Blade"
+      power: ATK x 150%
+      ap: 14
+      maxHits: 8
+    - name: "Demonic Shockwave"
+      power: ATK x 380%
+      ap: 27
+      maxHits: 5
+    - name: "Dragon's Might"
+      power: ATK x 420%
+      ap: 28
+      maxHits: 3
+      element: Dark
+      
+  rush:
+    name: "Thousand-Beast Demon"
+    effects: 
+      - desc: 40% HP recovery
+        all: true
+      - desc: +40% single target damage
+        duration: 20
+        all: true
+    power: ATK x 3500%
+    maxHits: 19
+    
+- name: Lymle (Official)
+  cat: gl
+  rating: 4
+  picture: federationlymlelemuriphi
+  weapon: gun
+  limited: true
+  star: 5
+
+  stats:
+    hp: 14175
+    atk: 1418
+    int: 2153
+    def: 1405
+    hit: 1148
+    grd: 840
+
+  talents:
+    - name: "Amused Feelings II"
+      effects: 
+        - desc: Damage +35%
+          all: Self & Invoker & Healer
+    - name: "Unfinished Business II"
+      effects: 
+        - desc: Damage +25%
+          all: true
+    - name: "Obscure Breath"
+      effects: 
+        - desc: Symbology invoking time -100%
+    - name: "Timebender"
+      effects: 
+        - desc: Symbology invoking time -20%
+          all: true
+        
+  skills:
+    - name: "Smart Aiming Device"
+      power: INT x 200%
+      ap: 20
+      maxHits: 1
+    - name: "Smart Gravity Bullet"
+      power: INT x 230%
+      ap: 24
+      maxHits: 12
+      element: Dark
+    - name: "Plunging Fire Bolts"
+      power: INT x 200%
+      ap: 20
+      maxHits: 6
+      element: Fire
+    - name: "Wind Blade"
+      power: INT x 190%
+      ap: 20
+      maxHits: 2
+      element: Wind
+      
+  rush:
+    name: "Cerberushot"
+    effects: 
+      - desc: Damage +60%
+        duration: 20
+        all: Self & Invoker
+    power: INT x 2500%
+    maxHits: 5
+    
