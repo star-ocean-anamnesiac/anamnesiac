@@ -17,47 +17,51 @@
     grd: 1148
 
   talents:
-    - name: "Witch of the Beach"
+    - name: "Seaside Enchantress II"
       effects: 
         - desc: INT +20%
         - desc: Recover allies AP when using offensive symbology
-    - name: "Master at Rallying"
+    - name: "Making Waves II"
       effects: 
         - desc: AP consumption -40%
         - desc: INT damage -30% when skill chain 3+
-    - name: "Cat Beachball & Cat Sandals"
+    - name: "Cat Ball and Sandals II"
       effects: 
         - desc: ATK/INT damage +20%
           all: true
         - desc: Nullify "movement speed down" effect
-          all: Close Range
-    - name: "Connection (Eternal Summer)"
+          all: Self & Close Range
+    - name: "Summer Combo"
       effects: 
         - desc: Reduce symbology cast time by 30%
         - desc: AP consumption -10%
 
   skills:
-    - name: "Lightning Wave"
-      element: Thunder
-      power: INT x???%
-      ap: 20
-      maxHits: -1
+    - name: "Thunder Wave"
+      element: Lightning
+      power: INT x 580%
+      ap: 35
+      notes: Allies recover 8 AP
+      maxHits: 4
     - name: "Faerie Light Wave"
-      power: INT x???%
+      power: INT x 120%
       ap: 30
-      maxHits: -1
+      notes: Party Heal
+      maxHits: 1
+    - name: "Lightning Wave"
+      element: Lightning
+      power: INT x 200%
+      ap: 20
+      notes: Allies recover 4 AP
+      maxHits: 10
     - name: "Lightning Strike"
-      element: Thunder
-      power: +25% ATK to party
+      element: Lightning
+      power: INT x 770%
       ap: 47
-      maxHits: -1
-    - name: "Thunder Flare Wave"
-      power: INT x???%
-      ap: -1
-      maxHits: -1
+      maxHits: 10
       
   rush:
-    name: "Lightning Serve"
+    name: "Lightning-Fast Serve"
     element: Thunder
     effects: 
       - desc: +40% INT
@@ -65,6 +69,559 @@
         duration: 20
       - desc: Recover 50% HP
         all: true
+    power: INT x 3000%
+    maxHits: 10
+
+- name: Miki Sauvester
+  cat: gl
+  rating: 3.5
+  picture: mikisauvester
+  weapon: staff
+  limited: false
+  star: 5
+
+  stats:
+    hp: 11235
+    atk: 1589
+    int: 2594
+    def: 1397
+    hit: 959
+    grd: 1043
+
+  talents:
+    - name: "Industrial Housecleaning"
+      effects: 
+        - desc: INT +30%
+    - name: "Glutton II"
+      effects: 
+        - desc: Reduce Symbol Invoking Time by 30%
+    - name: "Beginner's Luck"
+      effects: 
+        - desc: At 10% HP or higher, has a 80% chance of Surviving a Lethal Attack
+
+  skills:
+    - name: "Radiant Lancer"
+      element: Light
+      power: INT x 300%
+      ap: 27
+      maxHits: 8
+    - name: "Ex Healing"
+      power: INT x 326%
+      ap: 50
+      notes: Single Target Heal
+      maxHits: 1
+    - name: "Sunflare"
+      element: Light
+      power: INT x 570%
+      ap: 42
+      maxHits: 6
+    - name: "Faerie Star"
+      power: INT x 326%
+      ap: 70
+      notes: Party Heal
+      maxHits: 1
+      
+  rush:
+    name: "Divine Wave"
+    element: Light
+    effects: 
+      - desc: Heals 30% of Max HP every 4 seconds
+        all: true
         duration: 20
-    power: INT x3000%
-    maxHits: -1
+    power: INT x 2000%
+    maxHits: 4
+    
+- name: Millie Chliette
+  cat: gl
+  rating: 5.5
+  picture: milliechliette
+  weapon: staff
+  ace: true
+  limited: false
+  star: 5
+
+  stats:
+    hp: 13860
+    atk: 1759
+    int: 2494
+    def: 1353
+    hit: 1057
+    grd: 1134
+
+  talents:
+    - name: "Like Father, Like Daughter"
+      effects: 
+        - desc: All Elemental Damage Dealt +30%
+          all: true
+    - name: "Rabbit's Foot"
+      effects: 
+        - desc: Damage Taken -30%
+    - name: "Fortune of Mana"
+      effects: 
+        - desc: AP Cost -20%
+
+  skills:
+    - name: "Crush"
+      element: Earth
+      power: INT x 190%
+      ap: 20
+      maxHits: 2
+    - name: "Healing"
+      power: INT x 170%
+      ap: 40
+      notes: Single Target Heal
+      maxHits: 1
+    - name: "Stone Rain"
+      element: Earth
+      power: INT x 460%
+      ap: 35
+      maxHits: 5
+    - name: "Faerie Star"
+      power: INT x 326%
+      ap: 70
+      notes: Party Heal
+      maxHits: 1
+      
+  rush:
+    name: "Tractor Beam"
+    element: Earth
+    effects: 
+      - desc: Critical Hit Chance +50%
+        all: true
+        duration: 20
+      - desc: Recover 80% HP
+        all: true
+    power: INT x 2000%
+    maxHits: 11
+    
+- name: Rena Lanford
+  cat: gl
+  rating: 8
+  picture: renalanford
+  weapon: knuckle
+  ace: true
+  limited: false
+  star: 5
+
+  stats:
+    hp: 13860
+    atk: 1773
+    int: 2482
+    def: 1327
+    hit: 1064
+    grd: 1141
+
+  talents:
+    - name: "Healing Light II"
+      effects: 
+        - desc: Recovers 10% HP every 5 seconds
+          all: Short Ranged Weapon Users
+    - name: "Beyond Time & Space II"
+      effects: 
+        - desc: Symbol invoking time -80%
+    - name: "Two Mothers' Blessing"
+      effects: 
+        - desc: AP Cost -15%
+    - name: "Descendant of Nede"
+      effects: 
+        - desc: 90% chance of surviving a lethal attack at 10% HP or more
+
+  skills:
+    - name: "Radiant Lancer"
+      element: Light
+      power: INT x 300%
+      ap: 27
+      maxHits: 8
+    - name: "Laser Beams"
+      element: Light
+      power: INT x 570%
+      ap: 55
+      maxHits: 12
+    - name: "Angel Feather"
+      power: All Stats +20%
+      ap: 35
+      notes: Party Wide
+      maxHits: 1
+    - name: "Faerie Light AR"
+      power: INT x 250%
+      ap: 60
+      notes: Party Heal
+      maxHits: 1
+      
+  rush:
+    name: "Star Flare"
+    element: Light
+    effects: 
+      - desc: Critical Hit Chance +60%
+        all: Short Ranged Weapon Users
+        duration: 20
+    power: INT x 2500%
+    maxHits: 10
+    
+- name: Nel Zelpher (Oracle)
+  cat: gl
+  rating: 3
+  picture: priestessnelzelpher
+  weapon: staff
+  limited: true
+  star: 5
+
+  stats:
+    hp: 11130
+    atk: 1589
+    int: 2074
+    def: 1418
+    hit: 952
+    grd: 1043
+
+  talents:
+    - name: "Blade of Shar"
+      effects: 
+        - desc: Damage Dealt +15%
+          all: true
+    - name: "The Dancing Maiden"
+      effects: 
+        - desc: Movement rate boost
+    - name: "Secret Understanding"
+      effects: 
+        - desc: Repel +1
+
+  skills:
+    - name: "Ice Needles"
+      element: Ice
+      power: INT x 250%
+      ap: 24
+      maxHits: 9
+    - name: "Healing"
+      power: INT x 170%
+      ap: 40
+      notes: Single Target Heal
+      maxHits: 1
+    - name: "Deep Freeze"
+      element: Ice
+      power: INT x 460%
+      ap: 35
+      maxHits: 9
+    - name: "Faerie Light"
+      power: INT x 250%
+      ap: 60
+      notes: Party Heal
+      maxHits: 1
+      
+  rush:
+    name: "Arctic Impact 2R"
+    element: Ice
+    effects: 
+      - desc: 50% HP recovery
+      - desc: damage dealt +30%
+        duration: 20
+    power: INT x 2500%
+    maxHits: 3
+    
+- name: Evelysse
+  cat: gl
+  rating: 5
+  picture: evelysse
+  weapon: staff
+  ace: true
+  limited: false
+  star: 5
+
+  stats:
+    hp: 12180
+    atk: 1747
+    int: 2520
+    def: 1523
+    hit: 1071
+    grd: 1141
+
+  talents:
+    - name: "Spark of Inspiration II"
+      effects: 
+        - desc: +20% INT
+          all: true
+    - name: "A Girl of Many Talents II"
+      effects: 
+        - desc: +20% Rush DMG
+          all: true
+    - name: "Blessings of the Stars II"
+      effects: 
+        - desc: RCV 3% of Max HP / 3s
+        - desc: -20% to Rush Guage
+    - name: "Cryptic Symbology Arts"
+      effects: 
+        - desc: -25% AP Cost
+        - desc: -20% Cast Time
+
+  skills:
+    - name: "Radiant Lancer"
+      element: Light
+      power: INT x 300%
+      ap: 27
+      maxHits: 8
+    - name: "Conjure Comet"
+      element: Light
+      power: INT x 360%
+      ap: 30
+      maxHits: 5
+    - name: "Sunflare"
+      element: Light
+      power: INT x 570%
+      ap: 42
+      maxHits: 6
+    - name: "Faerie Light"
+      power: INT x 250%
+      ap: 60
+      notes: Party Heal
+      maxHits: 1
+      
+  rush:
+    name: "Celestial Calling"
+    element: Light
+    effects: 
+      - desc: Revives All Party Members at 1 HP
+        all: true
+        duration: 20
+      - desc: +100% INT
+        duration: 20
+    power: INT x 3500%
+    maxHits: 10
+    
+    notes: >
+      _Evelysse isn't some useless poster girl who looks good and orders you around. She decides to get stuck in. She also happens to
+      be the first character that has had buffs compared to their JP version counterpart. The reduction of cast times by 20% and the
+      20% reduction to her rush gauge or global exclusive buffs. These buffs however aren't enough to make Eve outstanding and they
+      still err on the side of caution with Evelysse. Her unique post rush ability to revive the party is very powerful, but the lack
+      of ability to get to use it, and the fact that as a healer you should be trying to prevent deaths, don't really do much to make
+      Eve a must pick. She also has long cast times even with the reduction so you have to pick your spells. Lancer is the best filler
+      spell she has, but an enemy that likes moving makes conjure comet's ability to home very useful. If they ever fix the fact it
+      crashes people on normal quality graphics settings. In all Evelysse is usable but not incredible, she brings some party buffs 
+      that are on the weak side but not common in overlap currently. If you want to use her though, by all means do, just know it
+      might be challenging in harder content._
+      
+      **Rotation**
+      
+      *Normal > Lancer > Spam it till out of AP. (Damage Rotation)*
+      
+      *Normal > Conjure Comet > Spam it till out of AP. (Moving target rotation.)*
+      
+      *Normal > Lancer > Faerie Light (I don't trust my party/ Rush Gain Rotation)*
+      
+      *Faerie Light > Spam it till party isn't dying. (Healing)*
+      
+- name: Sarah Jerand
+  cat: gl
+  rating: 3
+  picture: sarahjerand
+  weapon: staff
+  limited: false
+  star: 5
+
+  stats:
+    hp: 12495
+    atk: 1575
+    int: 2179
+    def: 1208
+    hit: 973
+    grd: 1050
+
+  talents:
+    - name: "Beat of My Drum II"
+      effects: 
+        - desc: +30% AP Recovery at Long Range
+          all: true
+    - name: "Healer's Touch II"
+      effects: 
+        - desc: Recover 5% HP / 5s
+          all: Long Range Weapon Users
+    - name: "Purge II"
+      effects: 
+        - desc: Nullify Poison for 90 seconds
+          all: true
+        - desc: Nullify Paralysis for 90 seconds
+          all: true
+    - name: "Premonitions"
+      effects: 
+        - desc: 80% Chance of Surviving a Lethal Attack at 10% HP or more
+
+  skills:
+    - name: "Wind Blade"
+      element: Wind
+      power: INT x 190%
+      ap: 20
+      maxHits: 2
+    - name: "Angel Feather"
+      power: All Stats +20%
+      ap: 35
+      notes: Party Wide
+      maxHits: 1
+    - name: "Tornado"
+      element: Wind
+      power: INT x 460%
+      ap: 35
+      maxHits: 2
+    - name: "Faerie Light"
+      power: INT x 250%
+      ap: 60
+      notes: Party Heal
+      maxHits: 1
+      
+  rush:
+    name: "Healing Blast Hurricane"
+    element: Wind
+    effects: 
+      - desc: 70% HP recovery
+        all: true
+      - desc: Cure Poison
+        all: true
+      - desc: Cure Paralysis
+        all: true
+    power: INT x 2000%
+    maxHits: 11
+    
+- name: Precis F. Neumann (Winter)
+  cat: gl
+  rating: 8
+  picture: christmasholynightprecis
+  weapon: staff
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 13860
+    atk: 1733
+    int: 2494
+    def: 1365
+    hit: 1057
+    grd: 1141
+
+  talents:
+    - name: "Anniversary Celebration II"
+      effects: 
+        - desc: Symbology invoking time -60%
+          all: true
+        - desc: Hit counter +2s
+          all: true
+    - name: "Twinkle Twinkle Little Star II"
+      effects: 
+        - desc: Evasion AP cost -50%
+          all: true
+        - desc: Movement speed +30%
+          all: true
+    - name: "Trump Card"
+      effects: 
+        - desc: Crit Rate and Crit Damage +20% when Hit Count is over 50
+          all: true
+        - desc: Crit Rate and Crit Damage +30% when Hit Count is over 100
+          all: true
+    - name: "A Christmas Miracle"
+      effects: 
+        - desc: Recover all ally AP when using Offensive Symbology
+
+  skills:
+    - name: "Sacred Lancer"
+      element: Light
+      power: INT x 260%
+      ap: 19
+      notes: Allies recover 6 AP
+      maxHits: 4
+    - name: "Sacred Faerie Light"
+      power: INT x 250%
+      ap: 60
+      notes: Party Heal
+      maxHits: 1
+    - name: "Sacred Rings"
+      element: Light
+      power: INT x 280%
+      ap: 22
+      notes: Allies recover 7 AP
+      maxHits: 5
+    - name: "Prismatic Rays"
+      element: Light
+      power: INT x 880%
+      ap: 33
+      notes: Allies recover 9 AP
+      maxHits: 12
+      
+  rush:
+    name: "Magical Present"
+    element: Light
+    effects: 
+      - desc: Recover 15% of Max HP every 3 seconds
+        all: true
+        duration: 20
+      - desc: Crit Rate +30%
+        all: true
+    power: INT x 3000%
+    maxHits: 5
+    
+- name: Relia
+  cat: gl
+  rating: 7
+  picture: relia
+  weapon: staff
+  ace: true
+  limited: false
+  star: 5
+
+  stats:
+    hp: 12285
+    atk: 1733
+    int: 2494
+    def: 1549
+    hit: 1057
+    grd: 1148
+
+  talents:
+    - name: "Golden Intentions II"
+      effects: 
+        - desc: AP Recovery +50% at 100% HP
+          all: true
+    - name: "A Sister’s Prayer II"
+      effects: 
+        - desc: Recover 5% HP every 3 seconds
+          all: true
+    - name: "Forehead Symbology"
+      effects: 
+        - desc: Nullifies AP Recovery Rate Reduction Fields & Movement Rate Reduction Fields
+          all: Self & Short Ranged Weapons
+    - name: "Dreams of the Future"
+      effects: 
+        - desc: Symbology invoking time -50%
+
+  skills:
+    - name: "Shiny Lancer"
+      element: Light
+      power: INT x 300%
+      ap: 27
+      maxHits: 8
+    - name: "Brute Enlightenment"
+      power: INT +25% & ATK Damage Taken -15%.
+      ap: 30
+      notes: Party wide and has a 20 second duration.
+      maxHits: 5
+    - name: "Aurora Rings"
+      element: Light
+      power: INT x 460%
+      ap: 35
+      maxHits: 5
+    - name: "Enraging Faerie Light"
+      power: INT x 230%
+      ap: 60
+      notes: ATK +20% for 20 seconds. Party wide heal & buff.
+      maxHits: 1
+      
+  rush:
+    name: "Freeze Time"
+    element: Light
+    effects: 
+      - desc: Single Target Damage +30%
+        all: true
+        duration: 20
+      - desc: Recover 15% HP every 3 seconds
+        all: true
+        duration: 20
+    power: INT x 2500%
+    maxHits: 10
+    
