@@ -40,19 +40,19 @@
 
   skills:
     - name: "YoRHa Arms: Eleven"
-      power: ATK x600%
+      power: ATK x 600%
       ap: 27
       maxHits: 5
     - name: "YoRHa Arms: Twelve"
-      power: ATK x1240%
+      power: ATK x 1240%
       ap: 52
       maxHits: 4
     - name: "YoRHa Pod: One"
-      power: ATK x180%
+      power: ATK x 180%
       ap: 13
       maxHits: 1
     - name: "YoRHa Pod: Two"
-      power: ATK x380%
+      power: ATK x 380%
       ap: 20
       maxHits: 1
       
@@ -63,7 +63,7 @@
         duration: 20
       - desc: Recover 15% of max HP every 3 seconds
         duration: 20
-    power: ATK x4500%
+    power: ATK x 4500%
     maxHits: 25
 
 - name: Victor Oakville
@@ -98,20 +98,20 @@
 
   skills:
     - name: "Mirror Blade"
-      power: ATK x610%
+      power: ATK x 610%
       ap: 38
       maxHits: 5
     - name: "Vampiric Flash"
-      power: ATK x220%
+      power: ATK x 220%
       ap: 32
       maxHits: 6
     - name: "Bloodstorm Revolution"
-      power: ATK x550%
+      power: ATK x 550%
       ap: 38
       maxHits: 10
       highlight: true
     - name: "Dragon Roar"
-      power: ATK x340%
+      power: ATK x 340%
       ap: 29
       maxHits: 2
       element: Dark
@@ -123,7 +123,7 @@
       - desc: Damage taken -50%
         duration: 20
         all: true
-    power: ATK x3000%
+    power: ATK x 3000%
     maxHits: 15
 
 - name: Shimada
@@ -158,20 +158,20 @@
 
   skills:
     - name: "Double Slash"
-      power: ATK x200%
+      power: ATK x 200%
       ap: 20
       maxHits: 2
     - name: "Vampiric Flash"
-      power: ATK x220%
+      power: ATK x 220%
       ap: 32
       maxHits: 6
     - name: "Nether Strike"
-      power: ATK x250%
+      power: ATK x 250%
       ap: 24
       maxHits: 5
       element: Fire
     - name: "Air Slash"
-      power: ATK x200%
+      power: ATK x 200%
       ap: 20
       maxHits: 2
       
@@ -182,7 +182,7 @@
       - desc:	Heals 20% of max HP every 4 seconds
         duration: 20
         all: true
-    power: ATK x3000%
+    power: ATK x 3000%
     maxHits: 7
 
 - name: Stephen D. Kenny
@@ -217,20 +217,20 @@
 
   skills:
     - name: "Mirror Blade"
-      power: ATK x610%
+      power: ATK x 610%
       ap: 38
       maxHits: 5
     - name: "Flying Guillotine"
-      power: ATK x370%
+      power: ATK x 370%
       ap: 32
       maxHits: 6
     - name: "Diabolic Edge"
-      power: ATK x340%
+      power: ATK x 340%
       ap: 29
       maxHits: 2
       highlight: true
     - name: "Dragon Roar"
-      power: ATK x340%
+      power: ATK x 340%
       ap: 29
       maxHits: 2
       element: Dark
@@ -242,7 +242,7 @@
       - desc: Will not flinch to damage under 40% max HP
         duration: 20
         all: true
-    power: ATK x3000%
+    power: ATK x 3000%
     maxHits: 7
     
 - name: Myuria Tionysus (Summer)
@@ -286,20 +286,20 @@
 
   skills:
     - name: "Air Slash"
-      power: ATK x200%
+      power: ATK x 200%
       ap: 20
       maxHits: 2
     - name: "Aura Wall"
-      power: ATK 200%
+      power: ATK x 200%
       ap: 20
       maxHits: 20
       highlight: true
     - name: "Bloodstorm Revolution"
-      power: ATK x550%
+      power: ATK x 550%
       ap: 38
       maxHits: 10
     - name: "Thunderfire Slash"
-      power: ATK x340%
+      power: ATK x 340%
       ap: 29
       maxHits: 2
       element: Dark
@@ -315,7 +315,7 @@
       - desc: Recover 15% max HP every 3 seconds
         duration: 20
         all: true
-    power: ATK x4000%
+    power: ATK x 4000%
     maxHits: 6
     
 - name: Dias Flac
@@ -356,21 +356,21 @@
 
   skills:
     - name: "Annihiliating Air Slash"
-      power: ATK x200%
+      power: ATK x 200%
       ap: 20
       maxHits: 5
       highlight: true
     - name: "Double Slash"
-      power: ATK x200%
+      power: ATK x 200%
       ap: 20
       maxHits: 2
       highlight: true
     - name: "Diabolic Edge"
-      power: ATK x340%
+      power: ATK x 340%
       ap: 29
       maxHits: 2
     - name: "Dragon Roar"
-      power: ATK x340%
+      power: ATK x 340%
       ap: 29
       maxHits: 2
       element: Dark
@@ -381,7 +381,7 @@
     effects: 
       - desc: AP cost -50%
         duration: 20
-    power: ATK x3500%
+    power: ATK x 3500%
     maxHits: 10
 
 - name: Evelysse (Winter)
@@ -426,22 +426,22 @@
 
   skills:
     - name: "Resplendent Blades"
-      power: ATK x150%
+      power: ATK x 150%
       ap: 15
       maxHits: 6
       element: Ice
       highlight: true
     - name: "Enchanting Twin Thrust"
-      power: ATK x200%
+      power: ATK x 200%
       ap: 20
       maxHits: 2
       highlight: true
     - name: "Threefold Blast"
-      power: ATK x230%
+      power: ATK x 230%
       ap: 21
       maxHits: 3
     - name: "Helix Blade"
-      power: ATK x550%
+      power: ATK x 550%
       ap: 31
       maxHits: 5
       highlight: true
@@ -453,8 +453,9 @@
         duration: 20
       - desc: ATK +30% -40%
         duration: 20
-    power: ATK x4000%
+    power: ATK x 4000%
     maxHits: 6
+    element: Ice
     
 - name: Edge Maverick
   cat: gl
@@ -492,21 +493,21 @@
 
   skills:
     - name: "Smack Down"
-      power: ATK x180%
+      power: ATK x 180%
       ap: 17
       maxHits: 5
       highlight: true
     - name: "Aura Spark"
-      power: ATK x160%
+      power: ATK x 160%
       ap: 14
       maxHits: 1
       highlight: true
     - name: "Cyclone Blade"
-      power: ATK x310%
+      power: ATK x 310%
       ap: 29
       maxHits: 5
     - name: "Raging Strike"
-      power: ATK x650%
+      power: ATK x 650%
       ap: 40
       maxHits: 1
       highlight: true
@@ -517,12 +518,12 @@
       - desc: Elemental Damage +50%
         duration: 20
         all: true
-    power: ATK x3500%
+    power: ATK x 3500%
     maxHits: 12
     
 - name: Miki Sauvester (Princess)
   cat: gl
-  rating: 4
+  rating: 4.5
   picture: girlsdaymiki
   weapon: bns
   limited: true
@@ -556,22 +557,22 @@
 
   skills:
     - name: "Bloodstorm Revolution"
-      power: ATK x550%
+      power: ATK x 550%
       ap: 38
       maxHits: 10
       highlight: true
     - name: "Nether Strike"
-      power: ATK x250%
+      power: ATK x 250%
       ap: 24
       maxHits: 5
       element: Fire
       highlight: true
     - name: "Flying Guillotine"
-      power: ATK x370%
+      power: ATK x 370%
       ap: 32
       maxHits: 6
     - name: "Vampiric Flash"
-      power: ATK x220%
+      power: ATK x 220%
       ap: 32
       maxHits: 6
       highlight: true
@@ -582,6 +583,6 @@
       - desc: Damage Taken -40%
         duration: 20
         all: true
-    power: ATK x3000%
+    power: ATK x 3000%
     maxHits: 5
     
