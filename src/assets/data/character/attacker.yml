@@ -38,20 +38,20 @@
 
   skills:
     - name: "YoRHa Arms: One"
-      power: ATK x380%
+      power: ATK x 380%
       ap: 22
       maxHits: 2
       highlight: true
     - name: "YoRHa Arms: Two"
-      power: ATK x800%
+      power: ATK x 800%
       ap: 42
       maxHits: 2
     - name: "YoRHa Pod: One"
-      power: ATK x180%
+      power: ATK x 180%
       ap: 13
       maxHits: 1
     - name: "YoRHa Pod: Two"
-      power: ATK x380%
+      power: ATK x 380%
       ap: 20
       maxHits: 1
 
@@ -63,7 +63,7 @@
       - desc: All elemental damage +50%
         all: true
         duration: 20
-    power: ATK x4000%
+    power: ATK x 4000%
     maxHits: 27
     
 - name: Fidel Camuze
@@ -94,19 +94,19 @@
 
   skills:
     - name: "Double Slash"
-      power: ATK x200%
+      power: ATK x 200%
       ap: 20
       maxHits: 2
     - name: "Air Slash"
-      power: ATK x200%
+      power: ATK x 200%
       ap: 20
       maxHits: 2
     - name: "Cyclone Blade"
-      power: ATK x310%
+      power: ATK x 310%
       ap: 29
       maxHits: 5
     - name: "Air Raid"
-      power: ATK x460%
+      power: ATK x 460%
       ap: 35
       maxHits: 5
 
@@ -115,7 +115,7 @@
     effects: 
       - desc: AP cost -60%
         duration: 20
-    power: ATK x3000%
+    power: ATK x 3000%
     maxHits: 12
     
 - name: Cliff Fittir
@@ -148,19 +148,19 @@
 
   skills:
     - name: "Triple Kick"
-      power: ATK x250%
+      power: ATK x 250%
       ap: 24
       maxHits: 2
     - name: "Crescent Locus"
-      power: ATK x150%
+      power: ATK x 150%
       ap: 17
       maxHits: 4
     - name: "Acrobat Locus"
-      power: ATK x710%
+      power: ATK x 710%
       ap: 41
       maxHits: 4
     - name: "Fists of Fury"
-      power: ATK x780%
+      power: ATK x 780%
       ap: 43
       maxHits: 25
 
@@ -169,7 +169,7 @@
     effects: 
       - desc: N/A
         duration: 0
-    power: ATK x4500%
+    power: ATK x 4500%
     maxHits: 25
 
 - name: Anne Patriceani
@@ -199,19 +199,19 @@
 
   skills:
     - name: "Triple Kick"
-      power: ATK x250%
+      power: ATK x 250%
       ap: 24
       maxHits: 2
     - name: "Hammer of Might"
-      power: ATK x230%
+      power: ATK x 230%
       ap: 24
       maxHits: 1
     - name: "Drill Spike"
-      power: ATK x190%
+      power: ATK x 190%
       ap: 20
       maxHits: 4
     - name: "X Claw"
-      power: ATK x310%
+      power: ATK x 310%
       ap: 29
       maxHits: 6
 
@@ -221,7 +221,7 @@
       - desc: Critical Rate +60%
         all: true
         duration: 20
-    power: ATK x2500%
+    power: ATK x 2500%
     maxHits: 8
     element: Fire
     
@@ -255,20 +255,20 @@
 
   skills:
     - name: "Rising Blade"
-      power: ATK x410%
+      power: ATK x 410%
       ap: 32
       maxHits: 5
     - name: "Shotgun Blast"
-      power: ATK x190%
+      power: ATK x 190%
       ap: 20
       maxHits: 4
       element: Lightning
     - name: "Side Kick"
-      power: ATK x250%
+      power: ATK x 250%
       ap: 24
       maxHits: 3
     - name: "Helm Splitter"
-      power: ATK x500%
+      power: ATK x 500%
       ap: 35
       maxHits: 1
 
@@ -277,7 +277,7 @@
     effects: 
       - desc: AP cost -40%
         duration: 20
-    power: ATK x2500%
+    power: ATK x 2500%
     maxHits: 12
     element: Light
     
@@ -313,20 +313,20 @@
 
   skills:
     - name: "Double Slash"
-      power: ATK x200%
+      power: ATK x 200%
       ap: 20
       maxHits: 2
     - name: "Air Slash"
-      power: ATK x200%
+      power: ATK x 200%
       ap: 20
       maxHits: 2
     - name: "Shotgun Blast"
-      power: ATK x190%
+      power: ATK x 190%
       ap: 20
       maxHits: 4
       element: Lightning
     - name: "Dragon Slash"
-      power: ATK x400%
+      power: ATK x 400%
       ap: 35
       maxHits: 2
       element: Lightning
@@ -338,7 +338,7 @@
         duration: 20
       - desc: Damage Taken -20%
         duration: 20
-    power: ATK x3000%
+    power: ATK x 3000%
     maxHits: 7
     element: Lightning
     
@@ -382,20 +382,20 @@
 
   skills:
     - name: "Combo Breaker"
-      power: ATK x300%
+      power: ATK x 300%
       ap: 23
       maxHits: 4
       highlight: true
     - name: "Summer Smoothie"
-      power: ATK x450%
+      power: ATK x 450%
       ap: 32
       maxHits: 1
     - name: "Smackdown"
-      power: ATK x180%
+      power: ATK x 180%
       ap: 17
       maxHits: 5
     - name: "Crescent Mirage"
-      power: ATK x200%
+      power: ATK x 200%
       ap: 20
       maxHits: 4
 
@@ -408,7 +408,7 @@
       - desc: Single Target Damage Dealt +40%
         all: true
         duration: 20
-    power: ATK x3500%
+    power: ATK x 3500%
     maxHits: 7
     
 - name: Lenneth
@@ -443,20 +443,20 @@
 
   skills:
     - name: "Glowing Pierce"
-      power: ATK x170%
+      power: ATK x 170%
       ap: 18
       maxHits: 3
       highlight: true
     - name: "Sky-High Break"
-      power: ATK x500%
+      power: ATK x 500%
       ap: 35
       maxHits: 3
     - name: "Heaven and Hell"
-      power: ATK x220%
+      power: ATK x 220%
       ap: 22
       maxHits: 5
     - name: "Valkyrie's Mercy"
-      power: ATK x700%
+      power: ATK x 700%
       ap: 36
       maxHits: 5
 
@@ -466,7 +466,7 @@
       - desc: DEF -30% (All Enemies/20 seconds)
         all: enemies
         duration: 20
-    power: ATK x3500%
+    power: ATK x 3500%
     maxHits: 8
     
 - name: Claude C. Kenny
@@ -506,19 +506,19 @@
 
   skills:
     - name: "Double Slash"
-      power: ATK x200%
+      power: ATK x 200%
       ap: 20
       maxHits: 2
     - name: "Air Slash"
-      power: ATK x200%
+      power: ATK x 200%
       ap: 20
       maxHits: 2
     - name: "Helm Render"
-      power: ATK x440%
+      power: ATK x 440%
       ap: 30
       maxHits: 1
     - name: "Sword Bomber"
-      power: ATK x550%
+      power: ATK x 550%
       ap: 38
       maxHits: 2
 
@@ -528,7 +528,7 @@
       - desc: Damage Dealt +30%
         all: true
         duration: 20
-    power: ATK x3000%
+    power: ATK x 3000%
     maxHits: 8
    
 - name: Phia Melle
@@ -537,7 +537,7 @@
   picture: phiamelle
   weapon: dagger
   limited: false
-  star: 5
+  star: 5.5
 
   stats:
     hp: 12915
@@ -560,20 +560,20 @@
 
   skills:
     - name: "Liquid Bite"
-      power: ATK x170%
+      power: ATK x 170%
       ap: 18
       maxHits: 2
       element: Ice
     - name: "Unholy Terror"
-      power: ATK x310%
+      power: ATK x 310%
       ap: 29
       maxHits: 5
     - name: "Sylvan Shot"
-      power: ATK x200%
+      power: ATK x 200%
       ap: 20
       maxHits: 8
     - name: "Frore Dancing Sword"
-      power: ATK x400%
+      power: ATK x 400%
       ap: 32
       maxHits: 7
 
@@ -587,7 +587,7 @@
     
 - name: Albel Nox
   cat: gl
-  rating: 6
+  rating: 6.5
   picture: albelnox
   weapon: bns
   ace: true
@@ -620,19 +620,19 @@
 
   skills:
     - name: "Unbridled Air Slash"
-      power: ATK x210%
+      power: ATK x 210%
       ap: 21
       maxHits: 2
     - name: "Aura Wall"
-      power: ATK x200%
+      power: ATK x 200%
       ap: 20
       maxHits: 20
     - name: "Unbridled Double Slashr"
-      power: ATK x4o0%
+      power: ATK x 400%
       ap: 30
       maxHits: 4
     - name: "Vampiric Flash"
-      power: ATK x220%
+      power: ATK x 220%
       ap: 32
       maxHits: 6
 
@@ -641,12 +641,12 @@
     effects: 
       - desc: ATK +100% & DEF -50%
         duration: 15
-    power: ATK x4000%
+    power: ATK x 4000%
     maxHits: 6
     
 - name: Ilia Silvestri
   cat: gl
-  rating: 4
+  rating: 4.5
   picture: iliasilvestri
   weapon: knuckle
   limited: false
@@ -679,20 +679,20 @@
 
   skills:
     - name: "Palm of Destruction"
-      power: ATK x240%
+      power: ATK x 240%
       ap: 23
       maxHits: 4
     - name: "Crescent Locus"
-      power: ATK x150%
+      power: ATK x 150%
       ap: 17
       maxHits: 4
     - name: "Fiery Hammer of Might"
-      power: ATK x270%
+      power: ATK x 270%
       ap: 26
       maxHits: 1
       element: Fire
     - name: "X Claw"
-      power: ATK x310%
+      power: ATK x 310%
       ap: 29
       maxHits: 6
 
@@ -702,12 +702,12 @@
       - desc: AP Reduction -20%
         all: Attackers & Invokers
         duration: 20
-    power: ATK x3000%
+    power: ATK x 3000%
     maxHits: 14
     
 - name: Clair Lasbard (Halloween)
   cat: gl
-  rating: 9
+  rating: 9.5
   picture: halloweendemonclairlasbard
   weapon: dualswords
   ace: true
@@ -741,21 +741,21 @@
 
   skills:
     - name: "Enchanting Twin Thrust"
-      power: ATK x370%
+      power: ATK x 370%
       ap: 28
       maxHits: 2
       element: Fire
       highlight: true
     - name: "Sinistral Edge"
-      power: ATK x150%
+      power: ATK x 150%
       ap: 14
       maxHits: 2
     - name: "Dextral Slaughter"
-      power: ATK x220%
+      power: ATK x 220%
       ap: 22
       maxHits: 2
     - name: "Hazy Wheel"
-      power: ATK x440%
+      power: ATK x 440%
       ap: 32
       maxHits: 8
 
@@ -768,7 +768,7 @@
       - desc: -30% DEF
         all: Enemies
         duration: 20
-    power: ATK x4000%
+    power: ATK x 4000%
     maxHits: 7
     
 - name: Millie Chliette (Halloween)
@@ -809,21 +809,21 @@
 
   skills:
     - name: "Lantern Burst"
-      power: ATK x190%
+      power: ATK x 190%
       ap: 18
       maxHits: 6
       element: Fire
       highlight: true
     - name: "Howling Rocket Punch"
-      power: ATK x170%
+      power: ATK x 170%
       ap: 14
       maxHits: 1
     - name: "Hammer Slammer"
-      power: ATK x340%
+      power: ATK x 340%
       ap: 22
       maxHits: 6
     - name: "Pumpkin Smash"
-      power: ATK x550%
+      power: ATK x 550%
       ap: 32
       maxHits: 3
 
@@ -833,7 +833,7 @@
       - desc: +50% all elemental damage
         all: true
         duration: 20
-    power: ATK x3500%
+    power: ATK x 3500%
     maxHits: 8
     
 - name: Fayt Leingod
@@ -872,20 +872,20 @@
 
   skills:
     - name: "Rising Blade"
-      power: ATK x410%
+      power: ATK x 410%
       ap: 32
       maxHits: 5
     - name: "Shotgun Blast"
-      power: ATK x190%
+      power: ATK x 190%
       ap: 20
       maxHits: 4
       element: Lightning
     - name: "Gliding Side Kick"
-      power: ATK x180%
+      power: ATK x 180%
       ap: 19
       maxHits: 3
     - name: "Avian Air Raid"
-      power: ATK x400%
+      power: ATK x 400%
       ap: 30
       maxHits: 5
       element: Light
@@ -896,7 +896,7 @@
       - desc: +50% all elemental damage
         all: true
         duration: 20
-    power: ATK x3500%
+    power: ATK x 3500%
     maxHits: 12
     
 - name: Michael
@@ -933,22 +933,22 @@
 
   skills:
     - name: "Pyroclast Punch"
-      power: ATK x190%
+      power: ATK x 190%
       ap: 18
       maxHits: 5
       element: Fire
     - name: "Bosom Blow"
-      power: ATK x330%
+      power: ATK x 330%
       ap: 30
       maxHits: 1
       element: Fire
     - name: "Firefest"
-      power: ATK x660%
+      power: ATK x 660%
       ap: 42
       maxHits: 6
       element: Fire
     - name: "Lava Flow"
-      power: ATK x740%
+      power: ATK x 740%
       ap: 52
       maxHits: 10
       element: Fire
@@ -959,7 +959,7 @@
       - desc: -50% AP Cost
         all: true
         duration: 20
-    power: ATK x3500%
+    power: ATK x 3500%
     maxHits: 8
     element: Fire
     
@@ -1002,19 +1002,19 @@
 
   skills:
     - name: "Flying Skyline Spray"
-      power: ATK x170%
+      power: ATK x 170%
       ap: 14
       maxHits: 3
     - name: "Flying Divebomb"
-      power: ATK x150%
+      power: ATK x 150%
       ap: 130
       maxHits: 3
     - name: "Bullet Barrage"
-      power: ATK x400%
+      power: ATK x 400%
       ap: 27
       maxHits: 6
     - name: "Bombing Run"
-      power: ATK x230%
+      power: ATK x 230%
       ap: 21
       maxHits: 6
 
@@ -1025,7 +1025,7 @@
         duration: 20
       - desc: Crit Rate +20%
         duration: 20
-    power: ATK x4000%
+    power: ATK x 4000%
     maxHits: 30
     
 - name: Welch Vineyard (Tearful)
@@ -1060,19 +1060,19 @@
 
   skills:
     - name: "Crescent Lotus"
-      power: ATK x150%
+      power: ATK x 150%
       ap: 17
       maxHits: 4
     - name: "Hammer of Might"
-      power: ATK x230%
+      power: ATK x 230%
       ap: 24
       maxHits: 1
     - name: "Drill Spike"
-      power: ATK x190%
+      power: ATK x 190%
       ap: 20
       maxHits: 4
     - name: "X Claw"
-      power: ATK x310%
+      power: ATK x 310%
       ap: 29
       maxHits: 6
 
@@ -1085,7 +1085,7 @@
       - desc: DEF -100%
         all: true
         duration: 20
-    power: ATK x2000%
+    power: ATK x 2000%
     maxHits: 20
     
 - name: Meracle Chamlotte
@@ -1125,19 +1125,19 @@
 
   skills:
     - name: "Gouging Spike"
-      power: ATK x160%
+      power: ATK x 160%
       ap: 16
       maxHits: 4
     - name: "Crescent Locus"
-      power: ATK x150%
+      power: ATK x 150%
       ap: 17
       maxHits: 4
     - name: "Eviscerating Claw"
-      power: ATK x250%
+      power: ATK x 250%
       ap: 25
       maxHits: 6
     - name: "Claws of Fury"
-      power: ATK x700%
+      power: ATK x 700%
       ap: 40
       maxHits: 27
 
@@ -1146,6 +1146,6 @@
     effects: 
       - desc: AP Cost -40%
         duration: 20
-    power: ATK x4000%
+    power: ATK x 4000%
     maxHits: 7
     
