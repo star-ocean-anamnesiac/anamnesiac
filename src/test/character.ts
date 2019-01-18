@@ -32,7 +32,7 @@ test('All characters have valid information', async t => {
       t.true(char.rating >= 0 && char.rating <= 10, 'rating must be between 0 and 10' + parenName);
       t.truthy(char.picture, 'must have a picture url' + parenName);
       t.truthy(weaponHash[char.weapon], `char must have a valid weapon type (${char.weapon} is invalid)` + parenName);
-      t.true(char.star >= 3 && char.star <= 5, 'rating must be between 3 and 5' + parenName);
+      t.true(char.star >= 3 && char.star <= 5, 'star level must be between 3 and 5' + parenName);
       t.true(_.isNumber(char.stats.atk), 'stats.atk must be a number' + parenName);
       t.true(_.isNumber(char.stats.int), 'stats.int must be a number' + parenName);
       t.true(_.isNumber(char.stats.def), 'stats.def must be a number' + parenName);
