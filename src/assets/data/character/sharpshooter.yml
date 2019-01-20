@@ -479,6 +479,49 @@
     power: ATK x 3500%
     maxHits: 8
     
+  notes: >
+      _Come to me, dark warriors, obsolescence awaits us!
+      
+      Silmeria arrived in an unfortunate position out the gate. Bound by the high expectations following Maria and Clair, gagged by
+      the fact that everyone owned the former. The only way Silmeria could have avoided what followed is if she had strong talents,
+      damage and kiting ability. Well, she does bring damage. Unfortunately, she is luckluster on the rest.
+      
+      Her buffing is average at best; while it's nice that she has Single Target DMG at all, 10% is barely noticeable and underwhelming
+      compared to Maria's crit chance buffs or Clair's anti-flinch. Kiting with her is a pain due to bow's generally terrible animations
+      and mechanics, with nothing to help her AP recovery. And she WILL be kiting, because she has ridiculous aggro generation.
+      
+      She is best run with a defender so she can focus on doing what she does best: damage._
+      
+      **TL DR**
+      
+      **Pros**
+      
+      - Good damage.
+      
+      - Decent rush gain.
+      
+      - Fast hitcount generation, making her a good friend to units dependent on it.
+      
+      - Rare single target DMG buff.
+            
+      - Self crit buff on Rush for Crystal Guardian
+            
+      **Cons**
+      
+      - Long rush animation guaranteed to annoy your party.
+      
+      - Bow animations make kiting bosses harder than it needs to be, and she is often forced into that due to high aggro gen.
+      
+      - Underwhelming buffs, especially compared to shooters of similar strength.
+      
+      **Rotation**
+      
+      *Normal > Homing Pigeons > Wave Motion > Homing Pigeons > * (General Combo. By timing cancel can get up to 3 pigeons.)
+      
+      *Normal > Wave Motion > Homing Pigeons > Wave Motion > Homing Pigeons (Combo #2, last pigeons requires timed canceling)
+      
+      *Normal > Wave Motion > Homing Pigeons > Wave Motion > * (with 20% AP reduction or more)
+      
 - name: Victor Oakville (Halloween)
   cat: gl
   rating: 10
