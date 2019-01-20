@@ -66,7 +66,7 @@
     power: ATK x 4500%
     maxHits: 25
 
-  notes: >
+   notes: >
       _A2 arrives exceptionally early for GL along with the other Nier characters. This also makes her the first Greatsword character
       for GL. A2 is an offensive tank, she hits very hard and even her talents are more damage focused. Like any defender she brings
       anti-flinch to the party, as well as a HP buff for the party. Her rush hits extremely hard, helps her deal even more damage and
@@ -161,7 +161,7 @@
     power: ATK x 3000%
     maxHits: 15
 
-  notes: >
+   notes: >
       _Victor is the starter defender and a non-ace, so if you picked him you kind of got a bad deal. However Victor is actually a
       solid defender who boasts incredible defensive utility and is quite difficult to kill. He increases the party's DEF by 50% and
       offers a weak damage buff. His post rush buff also decreases damage taken by 50%. His rush gain is pretty good due to his move
@@ -413,7 +413,7 @@
     power: ATK x 4000%
     maxHits: 6
     
-  notes: >
+   notes: >
       _Summer Myuria comes along to remind us she's the only alt Myuria has gotten even in JP. Which is a tragedy. As a tank SMyu is
       a solid option. She has a solid ranged combo, and aura wall gives her a good way to contribute to hit counter. Her talents 
       are a mixture of solid defence with some good offensive ones. They do require for her to hold aggro but her ranged skills help
@@ -513,7 +513,7 @@
     power: ATK x 3500%
     maxHits: 10
 
-  notes: >
+   notes: >
       _Dias is the first Ace permanent defender to come to global and is pretty good. He's an improvement over Viktor but isn't going
       to blow people away. He provides defensive buffs to the whole party, but he only gives a weak damage buff to attackers and
       defenders, and only gives anti-flinch to characters weaking close range weapons. This means his buffs aren't really relevant to
@@ -615,7 +615,7 @@
     maxHits: 6
     element: Ice
  
-   notes: >
+    notes: >
       _Evelysse has decided for Christmas, she'd like to not be forgotten on the sidelines as a pretty average healer. Instead she
       wants to enter the ring to steal A2's crown as defender queen. On top of making a Christmas Eve pun. Winter Evelysse is the
       first character who provides direct competition to a Nier character that's truly worth considering. xEve is part of the hit
@@ -719,7 +719,7 @@
     power: ATK x 3500%
     maxHits: 12
    
-      notes: >
+  notes: >
       _Edge has finally joined the fray to increase the defender pool and brings some talents worth considering, especially if you
       pull him and lack a defender currently. While he may not be as good as the two queens of tanking of A2 and xEve. He is still
       good and his HP buff inparticular is worth taking notice as it means other defenders really like him. He does have some 
