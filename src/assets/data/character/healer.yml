@@ -100,8 +100,6 @@
       
       - *Lightning Wave has a max range which can make it awkward to use.*
       
-      - *Weak party buffs*
-      
       **Rotation**
       
       *Normal > Lightning Strike > Lightning Wave > Lightning Strike > Spam it till out of AP. (Damage Rotation. Requires 2-3 AP seed.)*
@@ -376,7 +374,7 @@
       especially if she's struggling to hit with her damage spells, and her melee normals make playing her a little awkward. In
       summary Rena is the best true healer we have right now, fast cast times, a strong buff, good healing output. But her low damage
       and slow rush gain leave something to be desire._
-      
+       
       **TL DR**
       
       **Pros**
@@ -398,7 +396,7 @@
       - *Melee normals*
       
       - *Offers little to ranged characters*
-      
+       
       **Rotation**
       
       *Angel Feather (Remember to refresh this)*
@@ -406,7 +404,7 @@
       *Radiant Lancer > Faerie Light > Radiant Lancer. (Rotation with Lancer)*
       
       *Laser Beams > Faerie Light (Rotation with Beams)*
-            
+      
       *Faerie Light > Spam till the party isn't dying. (Healing)*
     
 - name: Nel Zelpher (Oracle)
@@ -695,6 +693,50 @@
     power: INT x 2000%
     maxHits: 11
     
+  notes: >
+      _Sarah enters the game as the latest non-ace 5 star that you can pull. The benefit to her is that this makes her one of the
+      better 5 stars to pull and invest in. Sarah is a budget Rena who supports a long range team over a melee composition, on top of
+      that she gains the powerful Angel Feather buff just like Rena and a grit talent with a high trigger chance, just like Rena.
+      Extra benefits she brings is that she grans immunity to and cleanses poison and paralysis, making her a great pick if you're
+      just looking for a healer for MoT ass she has the attributes to be good for solo content, plus means you don't need to use 4
+      star characters and invest in them. However while she shares many positives with our best permanent ace healer right now, she has
+      many more negatives. She lacks both AP cost reduction and faster cast times, couple that with being a staff user it means her
+      spells are both expensiveand slow, especially her party healing. She also lacks a self INT buff, giving her the lowest INT out
+      of any of the permanent healers, the only healer with less is the freebie Oracle Nel. Her lack of AP reduction means Angel Feather
+      in particular is very expensive to use which slows her rush gain right down, meaning that 3 person rushes will be common with 
+      a Sarah in your group. In summary Sarah is a significant improvement on Miki, and worth considering if you want a healer for
+      your MoT team, but if you're looking to play a healer in M2 or M3 content it may be best to look elsewhere._
+      
+      **TL DR**
+      
+      **Pros**
+      
+      - 5 star non-ace so is cheaper to max limit break and augment
+      
+      - Immunity to Poison and Paralysis. Cleansing of them post rush.
+      
+      - Grit talent makes her hard to kill.
+      
+      - Angel Feather
+      
+      **Cons**
+      
+      - 5 star non-ace so has less stats
+      
+      - Slow rush gain
+      
+      - Poor damage
+      
+      - Expensive healing
+      
+      **Rotation**
+      
+      *Angel Feather (Refresh when necessary)*
+      
+      *Normal > Tornado > Faerie Light (Rush Gain Rotation.)*
+            
+      *Faerie Light (Healing)*
+    
 - name: Precis F. Neumann (Winter)
   cat: gl
   rating: 8
@@ -772,6 +814,54 @@
     power: INT x 3000%
     maxHits: 5
     
+  notes: >
+      _Precis decides that before showing up as a permanent character, she'll join to add some Christmas cheer to your party. Winter
+      Precis is very comparable to Summer Sophia as both are AP batteries who provide AP to the party when they cast an offensive 
+      spell. Precis also provides mobility buffs to the party, only overlapping with 9S currently. Her symbology reduction time is also
+      party wide making her a good option for invoker comps as her cast time reduction is better than many characters self cast time 
+      reduction buffs. Her best attributes lie in her hit counter buffs, which buff both critical hit rate and critical hit damage, 
+      which also helps make her the best character to bring to Crystal Guadian if everyone wants to auto. On top of all that she also
+      extends the hit count timer by two seconds which means she really helps bring hit count compositions together. This means she
+      has fantastic synergy with both the winter and halloween characters. Her post rush buff also keeps that critical hit rate where
+      it was even after losing your hit counter and she provides a regen health buff, allowing her to focus on damage post rush as 
+      regen provides the sustain. She still has her weaknesses, being a staff wielder being one of them as the animations are still
+      an issue. Also she has no homing attack and because Lancer which has most of its damage on the last hit, and rays has most of
+      its damage on the initial hit, meaning that bosses that like to move a lot such as Jie can provide a real problem for her damage
+      output. In summary Winter Precis is one of the best healers you can run with right now, she works with any composition but really
+      shines with her fellow hit count lovers._
+      
+      **TL DR**
+      
+      **Pros**
+      
+      - Movement buffing talents.
+      
+      - Grants AP to the party when using offensive spells.
+      
+      - Great invoking time reduction for the party.
+      
+      - Powerful hit count buffs.
+      
+      - Strong post rush buffs.
+      
+      - Hit count timer extension gives good synergy with hit count characters.
+      
+      **Cons**
+      
+      - Staff animations
+      
+      - Struggles against fast moving targets
+      
+      - Lack of AP reduction talent
+      
+      - Lack of talent to help surviability
+      
+      **Rotation**
+      
+      *Normal > Rays > Lancer > Rays (Damage Rotation)*
+            
+      *Sacred Faerie Light (Healing)*
+    
 - name: Relia
   cat: gl
   rating: 7
@@ -830,7 +920,7 @@
       
   rush:
     name: "Freeze Time"
-    element: Light
+    element: Ice
     effects: 
       - desc: Single Target Damage +30%
         all: true
@@ -840,4 +930,46 @@
         duration: 20
     power: INT x 2500%
     maxHits: 10
+    
+  notes: >
+      _Relia joins the fray and shows us how merciless the Captain and Eve are in sending a small child into battle. Relia is an
+      interesting healer. Her damage is quite lacklustre but she offers combat buffs both in a set skill and in her party wide heal,
+      adding extra value to her heal and making you feel less bad about spamming it for rush gain. Her party wide talents also have
+      synergy, as the passive heal helps top up any chips damage taken, meaning she works well with any character with 100% hp talents.
+      Her post rush buff also increases single target damage and adds a powerful health regen buff. This whole package means that Relia
+      makes a very good "true" healer who's good at keeping the party alive. Of course like any staff wielder, animations are an issue
+      even with her invoking time buff, she also lacks damage and neither of her offensive spells are fantastic. She also has no
+      AP reduction making spells quite expensive to use. Plus she lacks any strong personal surviability talent making her quite
+      squishy. In summary, Relia is a fantastic healer if you want to play a character who lives up to the role. She both heals and
+      buffs while lacking much punch. An interesting character to play if you're a healer main._
+      
+      **TL DR**
+      
+      **Pros**
+      
+      - Brute Englightenment to buff INT and reduce ATK damage taken.
+      
+      - Party wide heal with a 20% ATK buff baked in.
+      
+      - Great invoking time reduction.
+      
+      - Strong post rush buffs.
+      
+      **Cons**
+      
+      - Staff animations.
+      
+      - Low damage.
+      
+      - Lack of AP reduction talent.
+      
+      - Lack of talent to help surviability.
+      
+      - Certain compositions with certain bosses make Brute Enlightenment a dead skill.
+      
+      **Rotation**
+      
+      *Enraging Faerie Light > Aurora Rings (Buff/Heal & Rush gai rotaion)*
+            
+      *Brute Enlightenment (Re-apply when necessary)*
     
