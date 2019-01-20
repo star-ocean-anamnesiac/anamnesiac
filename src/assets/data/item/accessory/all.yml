@@ -10,4 +10,17 @@
   obtained: NieR Geared Wisp (Gacha/Drop)
 
   notes: >
-    It's an accessory, 'kay?
+    A mask resembling Emil's face.
+
+- name: White Rose Badge
+  cat: 'gl'
+  star: 5
+  picture: accessories/White Rose Badge (White Rose Badge)
+  def: 753
+  factors:
+    - desc: 40% chance of poison nullification
+    - desc: Damage taken -5%
+  obtained: Pumpkin Cryptvine (Exchange/Drop)
+
+  notes: >
+    Anti-poison badge that draws upon the white rose's cleansing power.
