@@ -18,6 +18,10 @@ const routes: Routes = [
   {
     path: 'items',
     loadChildren: './item-list/item-list.module#ItemListPageModule'
+  },
+  {
+    path: 'party-creator',
+    loadChildren: './party-creator/party-creator.module#PartyCreatorPageModule'
   }
 ];
 

@@ -1,0 +1,22 @@
+
+.character-box {
+  &.empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.text-align-center {
+  display: flex;
+  align-items: center;
+}
+
+.additional-buff-row {
+  margin-top: 8px;
+  display: flex;
+
+  .buff-character {
+    width: 100px;
+  }
+}

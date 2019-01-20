@@ -99,6 +99,8 @@ export class AppComponent {
     this.loadClassData(this.dataService.classes);
     this.loadWeaponData(this.dataService.weaponTypes);
     this.loadAccessoryData(this.dataService.accessoryTypes);
+
+    this.addAdditionalPages();
   }
 
   private loadClassData(classes) {
@@ -156,6 +158,14 @@ export class AppComponent {
           icon: '',
           visibleIf: '/items',
         });
+    });
+  }
+
+  private addAdditionalPages() {
+    this.appPages.push({
+      title: 'Party Creator',
+      url: '/party-creator',
+      icon: 'people'
     });
   }
 

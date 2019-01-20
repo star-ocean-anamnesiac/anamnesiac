@@ -1,6 +1,9 @@
+import { Meta } from './meta';
 
 export interface Factor {
   desc: string;
+
+  meta: Meta;
 }
 
 export interface Item {

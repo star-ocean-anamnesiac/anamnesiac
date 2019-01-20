@@ -88,9 +88,17 @@
       effects: 
         - desc: ATK +40%
           all: true
+          meta:
+            priority: 2
+            buff: ATK
+            buffValue: 40
     - name: "Father's Teachings"
       effects: 
         - desc: AP cost -15%
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 15
 
   skills:
     - name: "Double Slash"
@@ -115,6 +123,10 @@
     effects: 
       - desc: AP cost -60%
         duration: 20
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 60
     power: ATK x 3000%
     maxHits: 12
     
@@ -985,12 +997,24 @@
       effects: 
         - desc: +20% ATK
           all: true
+          meta:
+            priority: 2
+            buff: ATK
+            buffValue: 20
     - name: "A Winter Prayer II"
       effects: 
         - desc: AP recovery from Normal Attacks +100% when Hit Count is over 100
           all: true
+          meta:
+            priority: 3
+            buff: AP Recovery
+            buffValue: 100
         - desc: ATK Damage +20% when Hit Count is over 200
           all: true
+          meta:
+            priority: 3
+            buff: ATK
+            buffValue: 20
     - name: "Colorful Galleria II"
       effects: 
         - desc: Bullet Barrage and Bombing Run Damage +100% when skill chain is 3+
@@ -998,7 +1022,15 @@
     - name: "Novice Santa"
       effects: 
         - desc: ATK +15%
+          meta:
+            priority: 4
+            buff: ATK
+            buffValue: 15
         - desc: HIT +15%
+          meta:
+            priority: 4
+            buff: HIT
+            buffValue: 15
 
   skills:
     - name: "Flying Skyline Spray"
@@ -1025,6 +1057,10 @@
         duration: 20
       - desc: Crit Rate +20%
         duration: 20
+        meta:
+          priority: 4
+          buff: Crit Rate
+          buffValue: 20
     power: ATK x 4000%
     maxHits: 30
     
