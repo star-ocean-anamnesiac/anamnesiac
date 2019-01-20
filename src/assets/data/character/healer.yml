@@ -331,6 +331,10 @@
     - name: "Two Mothers' Blessing"
       effects: 
         - desc: AP Cost -15%
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 15
     - name: "Descendant of Nede"
       effects: 
         - desc: 90% chance of surviving a lethal attack at 10% HP or more

@@ -285,6 +285,10 @@
             buff: ATK
             buffValue: 40
         - desc: AP cost -20% when under aggro
+          meta:
+            priority: 3
+            buff: AP Cost Reduction
+            buffValue: 20
     - name: "Vacation Pareo"
       effects:
         - desc: Single target damage +20% when not under aggro
@@ -324,6 +328,10 @@
       - desc: AP cost -40%
         duration: 20
         all: true
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 40
       - desc: Recover 15% max HP every 3 seconds
         duration: 20
         all: true

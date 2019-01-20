@@ -14,6 +14,9 @@ export interface Meta {
   // the meta-source character - THIS IS AUTOMATICALLY ASSIGNED
   sourceCharacter: string;
 
+  // the meta-source image - THIS IS AUTOMATICALLY ASSIGNED
+  sourceImage: string;
+
   // the priority of the meta
   priority: BuffPriority;
 

@@ -2,11 +2,15 @@
 $border-color: #2f45bd;
 
 @mixin item-gradient() {
+
+	$dark-color: #163c87;
+	$light-color: #1f82d0;
+
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#163c87+0,1f82d0+100 */
   --background: #163c87 !important; /* Old browsers */
   --background: -moz-linear-gradient(left, #163c87 0%, #1f82d0 100%) !important; /* FF3.6-15 */
-  --background: -webkit-linear-gradient(left, #163c87 0%,#1f82d0 100%) !important; /* Chrome10-25,Safari5.1-6 */
-  --background: linear-gradient(to right, #163c87 0%,#1f82d0 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  --background: -webkit-linear-gradient(left, #163c87 0%, #1f82d0 100%) !important; /* Chrome10-25,Safari5.1-6 */
+  --background: linear-gradient(to right, #163c87 0%, #1f82d0 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
   color: #fff !important;
 }
@@ -162,7 +166,11 @@ ion-list {
     border: 1px solid $border-color;
     border-radius: 5px;
     
-    @include item-gradient();
+		@include item-gradient();
+		
+		&.faded {
+			filter: grayscale(100%);
+		}
   }
 }
 

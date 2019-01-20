@@ -6,6 +6,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { PartyCreatorPage } from './party-creator.page';
+import { CharacterListModal } from './character-list.modal';
 
 const routes: Routes = [
   {
@@ -21,6 +22,7 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [PartyCreatorPage]
+  entryComponents: [CharacterListModal],
+  declarations: [PartyCreatorPage, CharacterListModal]
 })
 export class PartyCreatorPageModule {}

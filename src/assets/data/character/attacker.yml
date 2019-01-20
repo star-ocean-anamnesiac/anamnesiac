@@ -95,6 +95,10 @@
     - name: "Father's Teachings"
       effects: 
         - desc: AP cost -15%
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 15
 
   skills:
     - name: "Double Slash"
@@ -119,6 +123,10 @@
     effects: 
       - desc: AP cost -60%
         duration: 20
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 60
     power: ATK x 3000%
     maxHits: 12
     
@@ -997,6 +1005,10 @@
       effects: 
         - desc: AP recovery from Normal Attacks +100% when Hit Count is over 100
           all: true
+          meta:
+            priority: 3
+            buff: AP Recovery
+            buffValue: 100
         - desc: ATK Damage +20% when Hit Count is over 200
           all: true
           meta:
