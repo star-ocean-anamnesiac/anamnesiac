@@ -24,3 +24,29 @@
 
   notes: >
     Decent, damage taken is reasonable, and poison resist, while small, is at least bundled with something useful. Good for new players to grab a few copies, may want to lvl10 multiples if drops are not kind, or a few MLB if lucky.	
+
+- name: Anti Poison Amulet IV
+  cat: 'gl'
+  star: 5
+  picture: accessories/Poison Check IV(Anti-Poison Amulet IV)
+  def: 753
+  factors:
+    - desc: 50% chance of poison nullification
+    - desc: None
+  obtained: Gerel (Exchange)
+
+  notes: >
+    Not recommended due to it's inconsistencies, much safer to use a unit in order to resist poison due to 50% not being reliable. Use as DEF stat stick if you're lazy (and don't want to unequip units when switching characters).	
+
+- name: Anti Paralysis Amulet IV
+  cat: 'gl'
+  star: 5
+  picture: accessories/Paralyze Check IV (Anti-Paralysis Amulet IV)
+  def: 753
+  factors:
+    - desc: 50% Chance of Paralysis Nullification
+    - desc: None
+  obtained: Gerel (Exchange) or Coro Revorse (Exchange, Drop)
+
+  notes: >
+    Not recommended due to it's inconsistencies, much safer to use a unit in order to resist paralysis due to 50% not being reliable. Use as DEF stat stick if you're lazy (and don't want to unequip units when switching characters).
