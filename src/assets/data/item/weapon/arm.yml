@@ -6,9 +6,10 @@
   atk: 961
   int: 958
   element: Light
-  factor1: Imbue light element / +20% light damage
-  factor2: -10% AP cost
-  factor3: 80% chance to survive a lethal attack at 10% or more HP
+  factors:
+    - desc: Imbue light element / +20% light damage
+    - desc: -10% AP cost
+    - desc: 80% chance to survive a lethal attack at 10% or more HP
   thirdFactorLB: 5
   obtained: Gacha (Limited)
 

@@ -5,8 +5,9 @@
   picture: axes/Jet Hammer
   atk: 531
   int: 529
-  factor1: +20% DMG on Welch Spinning Chop
-  factor2: +10% DMG
-  factor3: -10% ATK DMG taken when attacking
+  factors:
+    - desc: +20% DMG on Welch Spinning Chop
+    - desc: +10% DMG
+    - desc: -10% ATK DMG taken when attacking
   thirdFactorLB: 5
   obtained: Cannon Dragoon Exchange

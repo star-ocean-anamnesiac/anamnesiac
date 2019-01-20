@@ -5,8 +5,9 @@
   picture: orbs/Black Thunder Watermelon Ball (Blackseed Watermelon Orb)
   atk: 959
   int: 965
-  factor1: Lightning/Dark damage +30%
-  factor2: 80% chance to survive a lethal attack when HP is greater than 10%
-  factor3: Damage taken -30% at less than 50% hHP
+  factors:
+    - desc: Lightning/Dark damage +30%
+    - desc: 80% chance to survive a lethal attack when HP is greater than 10%
+    - desc: Damage taken -30% at less than 50% hHP
   thirdFactorLB: 5
   obtained: Gacha

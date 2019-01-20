@@ -5,8 +5,9 @@
   picture: guns/Sacred Gun・Divine Blue (Divine Wave Gun)
   atk: 962
   int: 959
-  factor1: Damage dealt to demons +40%
-  factor2: 80% chance of surviving a lethal attack at greater than 10% HP
-  factor3: Damage taken -15% when in front of target
+  factors:
+    - desc: Damage dealt to demons +40%
+    - desc: 80% chance of surviving a lethal attack at greater than 10% HP
+    - desc: Damage taken -15% when in front of target
   thirdFactorLB: 5
   obtained: Gacha

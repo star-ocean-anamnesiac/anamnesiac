@@ -5,8 +5,9 @@
   picture: bladeandsheaths/Eldar Lord Rapier
   atk: 474
   int: 476
-  factor1: Dark damage +30%
-  factor2: Cursed Reaping Spark damage +20%
-  factor3: INT +20%
+  factors:
+    - desc: Dark damage +30%
+    - desc: Cursed Reaping Spark damage +20%
+    - desc: INT +20%
   thirdFactorLB: 5
   obtained: Coin Shop (Frost)

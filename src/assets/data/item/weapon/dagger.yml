@@ -5,8 +5,9 @@
   picture: daggers/Mist Blades・Takemikazuchi (Golden-Bolt Destroyers)
   atk: 471
   element: Lightning
-  factor1: Imbues attacks with lightning element
-  factor2: Poisonous Guillotine damage +20%
-  factor3: ATK +10%
+  factors:
+    - desc: Imbues attacks with lightning element
+    - desc: Poisonous Guillotine damage +20%
+    - desc: ATK +10%
   thirdFactorLB: 5
   obtained: Coin Shop (Jie Revorse)

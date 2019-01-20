@@ -5,8 +5,9 @@
   picture: knuckles/Fallen Knuckles (Knuckles of Hope)
   atk: 474
   int: 478
-  factor1: Light damage +15%
-  factor2: DEF +10%
-  factor3: Crit chance +4%
+  factors:
+    - desc: Light damage +15%
+    - desc: DEF +10%
+    - desc: Crit chance +4%
   thirdFactorLB: 5
   obtained: Coin Shop (Michael)

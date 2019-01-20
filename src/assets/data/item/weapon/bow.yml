@@ -5,8 +5,9 @@
   picture: bows/SRF Bow・Remodelled (Reformed SRF Arrow)
   atk: 477
   element: Wind
-  factor1: Imbues attacks with wind element
-  factor2: Rapacious Sparrows damage +20%
-  factor3: Additional hit that deals 5% of damage dealt on normal attacks
+  factors:
+    - desc: Imbues attacks with wind element
+    - desc: Rapacious Sparrows damage +20%
+    - desc: Additional hit that deals 5% of damage dealt on normal attacks
   thirdFactorLB: 5
   obtained: Coin Shop (Jie Revorse)

@@ -5,6 +5,7 @@
   picture: staves/Holy Rod
   atk: 0
   int: 835
-  factor1: Light damage +15%
-  factor2: Radiant Lancer damage +20%
+  factors:
+    - desc: Light damage +15%
+    - desc: Radiant Lancer damage +20%
   obtained: Coin Shop (Staff), Transmute, Gacha

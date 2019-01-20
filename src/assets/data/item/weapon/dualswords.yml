@@ -6,8 +6,9 @@
   picture: dualswords/Baphomet's Blades
   atk: 515
   int: 512
-  factor1: ATK +15%
-  factor2: Receive 10% of damage dealt as HP during normal attacks
-  factor3: Additional hit that deals 5% damage of normal attack
+  factors:
+    - desc: ATK +15%
+    - desc: Receive 10% of damage dealt as HP during normal attacks
+    - desc: Additional hit that deals 5% damage of normal attack
   thirdFactorLB: 3
   obtained: Gacha / Dual Blade Coin Exchange

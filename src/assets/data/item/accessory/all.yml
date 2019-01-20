@@ -4,8 +4,9 @@
   star: 5
   picture: accessories/Emil's Face (Emil Mask)
   def: 728
-  factor1: 40% chance of freezing nullification
-  factor2: 2% HP recovery every 5 seconds
+  factors:
+    - desc: 40% chance of freezing nullification
+    - desc: 2% HP recovery every 5 seconds
   obtained: NieR Geared Wisp (Gacha/Drop)
 
   notes: >

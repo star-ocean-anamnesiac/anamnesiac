@@ -1,4 +1,8 @@
 
+export interface Factor {
+  desc: string;
+}
+
 export interface Item {
 
   // item name
@@ -31,14 +35,8 @@ export interface Item {
   // the element of the item, if given
   element?: string;
 
-  // the first factor of the item
-  factor1: string;
-
-  // the second factor of the item
-  factor2?: string;
-
-  // the third factor of the item
-  factor3?: string;
+  // the list of factors for an item
+  factors: Factor[];
 
   // the LB level the third factor is obtained at (0-5)
   thirdFactorLB?: number;
