@@ -184,7 +184,7 @@
     power: ATK x 2000%
     maxHits: 18
 
-notes: >
+    notes: >
       _You could say there are two flavors of Nel Zepher: the flavor where the boss is vulnerable to poison and the flavor where the
       boss is not. Rare is a character who is this polarized by a singular detail.
       
@@ -515,6 +515,7 @@ notes: >
         duration: 60
     power: ATK x 3500%
     maxHits: 8
+
     notes: >
       _Come to me, dark warriors, obsolescence awaits us!
       
