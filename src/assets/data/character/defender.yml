@@ -342,6 +342,10 @@
       effects: 
         - desc: HP +20%
           all: true
+          meta:
+            priority: 4
+            buff: HP
+            buffValue: 20
         - desc: Will not flinch to damage under 20% max HP
           all: true
     - name: "Aroma Suntan Lotion"
@@ -351,11 +355,23 @@
     - name: "Skillful Temptation"
       effects: 
         - desc: ATK +40% when under aggro
+          meta:
+            priority: 3
+            buff: ATK
+            buffValue: 40
         - desc: AP cost -20% when under aggro
+          meta:
+            priority: 3
+            buff: AP Cost Reduction
+            buffValue: 20
     - name: "Vacation Pareo"
       effects:
         - desc: Single target damage +20% when not under aggro
           all: true
+          meta:
+            priority: 3
+            buff: Single Target Damage
+            buffValue: 20
         - desc: Ease of stun +15% when not under aggro
           all: true
 
@@ -387,6 +403,10 @@
       - desc: AP cost -40%
         duration: 20
         all: true
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 40
       - desc: Recover 15% max HP every 3 seconds
         duration: 20
         all: true
