@@ -96,18 +96,22 @@
       
       **Cons**
       
-      - Weakish heal
+      - Weak standalone heal. Highly depending on weaving it into her rotation for effectiveness.
+      
+      - This means the AI will suck with her. Hard.
       
       - Lightning Wave has a max range which can make it awkward to use.
       
+      - Below average rush build.
+      
       **Rotation**
       
-      *Normal > Lightning Strike > Lightning Wave > Lightning Strike > Spam it till out of AP. (Damage Rotation. Requires 2-3 AP seed.)*
+      *Normal > Lightning Strike > Lightning Wave > Lightning Strike > Spam it till out of AP. (General combo. Requires 2-3 AP seed.)*
       
-      *Normal > Lightning Strike > Faerie Light Wave > Lightning Strike > Spam it till out of AP. (Damage Rotation. No AP seed.)
+      *Normal > Lightning Strike > Faerie Light Wave > Lightning Strike > Spam it till out of AP. (No AP seed.)
       
-      *Faerie Light Wave > Spam it till party isn't dying. (Healing)*
-
+      *Thunder Flare is a workable replacement for Lightning Wave and helps her rush build, but beware its higher AP cost.
+      
 - name: Miki Sauvester
   cat: gl
   rating: 3.5
@@ -385,9 +389,7 @@
       lancer providing more damage, but lasers lets you complete rotations with faerie light faster. She has pretty slow rush gain
       especially if she's struggling to hit with her damage spells, and her melee normals make playing her a little awkward. In
       summary Rena is the best true healer we have right now, fast cast times, a strong buff, good healing output. But her low damage
-      and slow rush gain leave something to be desire._
-      
-       
+      and slow rush gain leave something to be desire._   
       
       **TL DR**
       
@@ -399,29 +401,33 @@
       
       - Hard to kill
       
-      - Angel Feather
+      - Angel Feather stacks with all party passive buffs.
       
       **Cons**
       
-      - Low damage spells
+      - Low damage
       
-      - Slow rush gain
+      - Slow rush gain, unless you put yourself in danger by meleeing the boss
       
-      - Melee normals
+      - Melee range normals
       
       - Offers little to ranged characters
       
+      - Radiant Lancer's damage and rush gain are backloaded onto the final hit, which sucks for especially mobile bosses
        
       
       **Rotation**
       
       *Angel Feather (Remember to refresh this)*
       
-      *Radiant Lancer > Faerie Light > Radiant Lancer. (Rotation with Lancer)*
+      *Normal > Laser Beams > Laser Beams (Melee rotation w/ Beams)
       
-      *Laser Beams > Faerie Light (Rotation with Beams)*
+      *Radiant Lancer > Faerie Light > Radiant Lancer. (Rotation w/ Lancer)*
+      
+      *Laser Beams > Faerie Light (Ranged rotation with Beams)*
       
       *Faerie Light > Spam till the party isn't dying. (Healing)*
+    
     
 - name: Nel Zelpher (Oracle)
   cat: gl
@@ -714,14 +720,14 @@
       better 5 stars to pull and invest in. Sarah is a budget Rena who supports a long range team over a melee composition, on top of
       that she gains the powerful Angel Feather buff just like Rena and a grit talent with a high trigger chance, just like Rena.
       Extra benefits she brings is that she grans immunity to and cleanses poison and paralysis, making her a great pick if you're
-      just looking for a healer for MoT ass she has the attributes to be good for solo content, plus means you don't need to use 4
-      star characters and invest in them. However while she shares many positives with our best permanent ace healer right now, she has
+      just looking for a healer for Maze of Tribulations, plus means you don't need to use 4 star characters and invest in them.
+      However while she shares many positives with our best permanent ace healer right now, she has
       many more negatives. She lacks both AP cost reduction and faster cast times, couple that with being a staff user it means her
-      spells are both expensiveand slow, especially her party healing. She also lacks a self INT buff, giving her the lowest INT out
+      spells are both expensive and slow, especially her party healing. She also lacks a self INT buff, giving her the lowest INT out
       of any of the permanent healers, the only healer with less is the freebie Oracle Nel. Her lack of AP reduction means Angel Feather
       in particular is very expensive to use which slows her rush gain right down, meaning that 3 person rushes will be common with 
       a Sarah in your group. In summary Sarah is a significant improvement on Miki, and worth considering if you want a healer for
-      your MoT team, but if you're looking to play a healer in M2 or M3 content it may be best to look elsewhere._
+      your Maze team, but if you're looking to play a healer in M2 or M3 content it may be best to look elsewhere._
       
       **TL DR**
       
@@ -729,21 +735,25 @@
       
       - 5 star non-ace so is cheaper to max limit break and augment
       
-      - Immunity to Poison and Paralysis. Cleansing of them post rush.
+      - Immunity to Poison and Paralysis.
+      
+      - Her rush is an excellent clutch heal and includes party cleanse.
       
       - Grit talent makes her hard to kill.
       
-      - Angel Feather
+      - Angel Feather stacks with all party passive buffs.
       
       **Cons**
       
       - 5 star non-ace so has less stats
       
+      - Slow cast times, staff casting animation and ridiculous AP costs makes clutch healing very difficult.
+      
+      - Angel Feather actively interferes with her reliability due to its lengthy cast time & AP cost.
+      
       - Slow rush gain
       
       - Poor damage
-      
-      - Expensive healing
       
       **Rotation**
       
@@ -850,23 +860,21 @@
       
       **Pros**
       
-      - Movement buffing talents.
+      - Strong buffing, inc. movement buffs, hit count buffs and an excellent post-rush buff.
       
       - Grants AP to the party when using offensive spells.
       
       - Great invoking time reduction for the party.
-      
-      - Powerful hit count buffs.
-      
-      - Strong post rush buffs.
-      
+           
       - Hit count timer extension gives good synergy with hit count characters.
       
       **Cons**
       
       - Staff animations
       
-      - Struggles against fast moving targets
+      - High animation lock; struggles against fast moving targets.
+      
+      - Sacred Lancer's damage and rush gain are backloaded onto the final hit, adding insult to injury.
       
       - Lack of AP reduction talent
       
@@ -948,44 +956,58 @@
     maxHits: 10
     
   notes: >
-      _Relia joins the fray and shows us how merciless the Captain and Eve are in sending a small child into battle. Relia is an
-      interesting healer. Her damage is quite lacklustre but she offers combat buffs both in a set skill and in her party wide heal,
-      adding extra value to her heal and making you feel less bad about spamming it for rush gain. Her party wide talents also have
-      synergy, as the passive heal helps top up any chips damage taken, meaning she works well with any character with 100% hp talents.
-      Her post rush buff also increases single target damage and adds a powerful health regen buff. This whole package means that Relia
-      makes a very good "true" healer who's good at keeping the party alive. Of course like any staff wielder, animations are an issue
-      even with her invoking time buff, she also lacks damage and neither of her offensive spells are fantastic. She also has no
-      AP reduction making spells quite expensive to use. Plus she lacks any strong personal surviability talent making her quite
-      squishy. In summary, Relia is a fantastic healer if you want to play a character who lives up to the role. She both heals and
-      buffs while lacking much punch. An interesting character to play if you're a healer main._
+      _Relia joins the fray and shows us how merciless the Captain and Eve are in sending a small child into battle. Relia is a healer
+      designed largely to be played by AI, for AI. Her ATK buff is attached to her heal which ensures she doesn't get caught up
+      in a choice between buffing and healing. She nullifies problematic fields for AI melee. Her HP regeneration helps mitigate against
+      the many hits they will inevitably take and the AP recovery allows AI to deal more damage, more often. This makes her a very
+      powerful healer for Maze of Tribulations and with the right comps and play, she can enable a single player party to survive M2
+      content or even some M3s. As few healers can fill this role as effectively, this gives her incredible longevity too._
+      
+      
+      _Unfortunately, many of these issues she addresses are not often shared by players. That, alongside her lackluster damage, hampers
+      her compared to the likes of Summer Sophia, Rena and Winter Precis. She is also a staff caster and comes with all of the related
+      downsides, inc. slow casting animations, high AP costs and clunky gameplay. Her other major achilles heel is her squshiiness, 
+      which almost necessitates a Dreaming Bear for its +20% HP buff. Finally, her Brute Enlightenment buff is better on paper than in
+      practice, and trying to maintain both is a fool's errand that results in her rush gain falling behind._
+      
+      
+      _She's a great pull if you enjoy the fantasy of playing a full-time classical RPG healer, or if you're building a single player
+      party and intend to tackle M2 content or higher with it._
       
       **TL DR**
-      
+     
       **Pros**
       
-      - Brute Englightenment to buff INT and reduce ATK damage taken.
+      - Both Faerie Light and Brute Englightenment (INT only) buffs stack with all passive party buffs, which is impressive utility.
       
-      - Party wide heal with a 20% ATK buff baked in.
+      - Faerie Light having a Growth buff baked in makes it so much easier to maintain.
+      
+      - Talents that cover many of the AI's worst flaws in single player parties.
+      
+      - One of the most future proof characters in her niche.
       
       - Great invoking time reduction.
       
-      - Strong post rush buffs.
+      - Rare single target DMG buff on her rush.
       
-      **Cons**
       
-      - Staff animations.
+      **Cons**      
       
-      - Low damage.
+      - Staff animations and high AP costs.
       
-      - Lack of AP reduction talent.
+      - Abysmal damage, among the worst in the game.
       
-      - Lack of talent to help surviability.
+      - Attempting to maintain both Brute Enlightenment and Faerie Light really screws her rush gain.
       
-      - Certain compositions with certain bosses make Brute Enlightenment a dead skill.
+      - Brute Enlightenment is a dead spell in most comps, and horrible in AI hands. Unequip it immediately for single player.
       
-      **Rotation**
+      - Low natural surviability.
+
+
+      **Rotation**   
+     
+      - Enraging Faerie Light (Healing)
       
-      *Enraging Faerie Light > Aurora Rings (Buff/Heal & Rush gai rotaion)*
-      
-      *Brute Enlightenment (Re-apply when necessary)*
-    
+      - Normal > Enraging Faerie Light > Radiant Lancer/Aurora Rings ("Damage" rotation, best for rush gain)
+
+      - Brute Enlightenment (Re-apply when necessary)*  
