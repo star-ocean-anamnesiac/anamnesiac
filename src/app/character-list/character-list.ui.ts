@@ -231,7 +231,7 @@ export class CharacterModal implements OnInit {
 
   constructor(
     private domSanitizer: DomSanitizer,
-    private navParams: NavParams, 
+    private navParams: NavParams,
     private modalCtrl: ModalController
     ) {}
 
