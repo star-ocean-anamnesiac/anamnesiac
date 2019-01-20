@@ -1,4 +1,4 @@
-
+import { Meta } from './meta';
 
 export interface StatBlock {
   hp: number;
@@ -40,6 +40,9 @@ export interface Skill {
 
   // if this skill should be higlighted
   highlight?: boolean;
+
+  // the skill metadata
+  meta: Meta;
 }
 
 export interface Effect {
@@ -52,6 +55,9 @@ export interface Effect {
 
   // how long the effect lasts in seconds
   duration?: number;
+
+  // the effect metadata
+  meta: Meta;
 }
 
 export interface Character {

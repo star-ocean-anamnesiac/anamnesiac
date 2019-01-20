@@ -242,6 +242,10 @@
       ap: 35
       notes: Party Wide
       maxHits: 1
+      meta:
+        priority: 2
+        buff: All Stats
+        buffValue: 20
     - name: "Faerie Light AR"
       power: INT x 250%
       ap: 60
@@ -255,6 +259,10 @@
       - desc: Critical Hit Chance +60%
         all: Short Ranged Weapon Users
         duration: 20
+        meta:
+          priority: 3
+          buff: Crit Chance
+          buffValue: 60
     power: INT x 2500%
     maxHits: 10
     
