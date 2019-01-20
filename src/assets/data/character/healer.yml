@@ -86,26 +86,26 @@
       
       **Pros**
       
-      - *Offensive spells restore AP to the party*
+      - Offensive spells restore AP to the party
       
-      - *Post rush buff that's powerful for self and other INT characters.*
+      - Post rush buff that's powerful for self and other INT characters.
       
-      - *High damage. Especially for a healer.*
+      - High damage. Especially for a healer.
       
-      - *Orb wielder, makes her less clunky and laggy compared to her staff counter parts.*
+      - Orb wielder, makes her less clunky and laggy compared to her staff counter parts.
       
       **Cons**
       
-      - *Weakish heal*
+      - Weakish heal
       
-      - *Lightning Wave has a max range which can make it awkward to use.*
+      - Lightning Wave has a max range which can make it awkward to use.
       
       **Rotation**
       
       *Normal > Lightning Strike > Lightning Wave > Lightning Strike > Spam it till out of AP. (Damage Rotation. Requires 2-3 AP seed.)*
       
       *Normal > Lightning Strike > Faerie Light Wave > Lightning Strike > Spam it till out of AP. (Damage Rotation. No AP seed.)
-            
+      
       *Faerie Light Wave > Spam it till party isn't dying. (Healing)*
 
 - name: Miki Sauvester
@@ -181,21 +181,21 @@
       
       **Pros**
       
-      - *5 star non-ace so is cheaper to max limit break and augment*
+      - 5 star non-ace so is cheaper to max limit break and augment
       
-      - *Powerful post rush health regen buff for the party.*
+      - Powerful post rush health regen buff for the party.
       
-      - *Grit talent makes her hard to kill. Making her viable for solo content*
+      - Grit talent makes her hard to kill. Making her viable for solo content
       
       **Cons**
       
-      - *5 star non-ace so has less stats*
+      - 5 star non-ace so has less stats
       
-      - *No talents that contribute to the party*
+      - No talents that contribute to the party
       
-      - *Poor damage*
+      - Poor damage
       
-      - *Expensive healing*
+      - Expensive healing
       
       **Rotation**
       
@@ -281,24 +281,24 @@
       
       **Pros**
       
-      - *Strong elemental damage buff for the party*
+      - Strong elemental damage buff for the party
       
-      - *Post rush buff that boosts critical rate and heals most of the party's HP*
+      - Post rush buff that boosts critical rate and heals most of the party's HP
       
-      - *Talent that helps surviability*
+      - Talent that helps surviability
       
       **Cons**
       
-      - *Damage spells take a long time to cast making them bad*
+      - Damage spells take a long time to cast making them bad
       
-      - *Common access to elemental damage buffs post rush that override her talent*
+      - Common access to elemental damage buffs post rush that override her talent
       
-      - *Boring to play optimally*
+      - Boring to play optimally
       
-      - *Expensive healing*
+      - Expensive healing
       
       **Rotation**
-            
+      
       *Normal > Faerie Star (Healing & Rush Gain)*
     
 - name: Rena Lanford
@@ -374,29 +374,33 @@
       especially if she's struggling to hit with her damage spells, and her melee normals make playing her a little awkward. In
       summary Rena is the best true healer we have right now, fast cast times, a strong buff, good healing output. But her low damage
       and slow rush gain leave something to be desire._
-       
+      
+      " "
+      
       **TL DR**
       
       **Pros**
       
-      - *Fast cast times*
+      - Fast cast times
       
-      - *Talents and post rush buff that is amazing for melee compositions*
+      - Talents and post rush buff that is amazing for melee compositions
       
-      - *Hard to kill*
+      - Hard to kill
       
-      - *Angel Feather*
+      - Angel Feather
       
       **Cons**
       
-      - *Low damage spells*
+      - Low damage spells
       
-      - *Slow rush gain*
+      - Slow rush gain
       
-      - *Melee normals*
+      - Melee normals
       
-      - *Offers little to ranged characters*
-       
+      - Offers little to ranged characters
+      
+      " "
+      
       **Rotation**
       
       *Angel Feather (Remember to refresh this)*
@@ -482,32 +486,32 @@
       
       **Pros**
       
-      - *Free MLB unit*
+      - Free MLB unit
       
-      - *Weak party damage buff*
+      - Weak party damage buff
       
-      - *Consistent damage*
+      - Consistent damage
       
       **Cons**
       
-      - *5 star non-ace so has less stats*
+      - 5 star non-ace so has less stats
       
-      - *Lack of self INT buff*
+      - Lack of self INT buff
       
-      - *Lack of party wide rush buff*
+      - Lack of party wide rush buff
       
-      - *No cast time reduction gives long casts*
+      - No cast time reduction gives long casts
       
-      - *Expensive healing*
+      - Expensive healing
       
-      - *Lack of talent that helps survivability*
+      - Lack of talent that helps survivability
       
       **Rotation**
       
       *Normal > Ice Needles > Deep Freeze > Ice Needles > Spam till out of AP (Consistent damage rotation)*
       
       *Normal > Deep Freeze > Ice Needles > Deep Freeze (Rotation during EB and against slow bosses)*
-            
+      
       *Faerie Light > Spam till the party isn't dying. (Healing)*
     
 - name: Evelysse
@@ -595,23 +599,23 @@
       
       **Pros**
       
-      - *Can revive party members by rushing*
+      - Can revive party members by rushing
       
-      - *Powerful post rush self buff that gives insane healing and damge*
+      - Powerful post rush self buff that gives insane healing and damge
       
-      - *Consistent damage*
+      - Consistent damage
       
-      - *Buffs INT and rush damage*
+      - Buffs INT and rush damage
       
-      - *Hard hitting rush compared to most healers*
+      - Hard hitting rush compared to most healers
       
       **Cons**
       
-      - *Abysmal rush gain*
+      - Abysmal rush gain
       
-      - *Lack of powerful buffs for the party*
+      - Lack of powerful buffs for the party
       
-      - *Lack of a good talent that helps survivability*
+      - Lack of a good talent that helps survivability
       
       **Rotation**
       
@@ -625,7 +629,7 @@
       
 - name: Sarah Jerand
   cat: gl
-  rating: 3
+  rating: 5
   picture: sarahjerand
   weapon: staff
   limited: false
@@ -734,7 +738,7 @@
       *Angel Feather (Refresh when necessary)*
       
       *Normal > Tornado > Faerie Light (Rush Gain Rotation.)*
-            
+      
       *Faerie Light (Healing)*
     
 - name: Precis F. Neumann (Winter)
@@ -859,7 +863,7 @@
       **Rotation**
       
       *Normal > Rays > Lancer > Rays (Damage Rotation)*
-            
+      
       *Sacred Faerie Light (Healing)*
     
 - name: Relia
@@ -970,6 +974,6 @@
       **Rotation**
       
       *Enraging Faerie Light > Aurora Rings (Buff/Heal & Rush gai rotaion)*
-            
+      
       *Brute Enlightenment (Re-apply when necessary)*
     
