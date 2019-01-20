@@ -3,6 +3,7 @@ import { markdown } from 'markdown';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { PopoverController, Tabs, NavParams, ModalController } from '@ionic/angular';
 import { Character } from '../models/character';
+import { DomSanitizer } from '@angular/platform-browser';
 
 
 @Component({
@@ -221,14 +222,18 @@ export class CharacterModal implements OnInit {
 
   public char: Character;
   public weap: string;
-  public notes: string;
+  public notes: any;
 
   public showShare: boolean;
 
   @ViewChild('tabs')
   public tabs: Tabs;
 
-  constructor(private navParams: NavParams, private modalCtrl: ModalController) {}
+  constructor(
+    private domSanitizer: DomSanitizer,
+    private navParams: NavParams, 
+    private modalCtrl: ModalController
+    ) {}
 
   ngOnInit() {
     this.showShare = !!(<any>navigator).share;
@@ -237,7 +242,11 @@ export class CharacterModal implements OnInit {
 
     this.tabs.select('notes');
 
-    this.notes = markdown.toHTML((this.char.notes || '').trim());
+    this.notes = this.domSanitizer.bypassSecurityTrustHtml(markdown
+      .toHTML((this.char.notes || '')
+      .trim())
+      .split('<p>')
+      .join('<p style="margin: 0">'));
   }
 
   dismiss() {
