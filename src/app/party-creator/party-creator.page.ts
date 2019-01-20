@@ -1,7 +1,7 @@
 
 import { includes, find, clone, groupBy, sortBy } from 'lodash';
 
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 import { ModalController } from '@ionic/angular';
 import { Subscription } from 'rxjs';
@@ -17,7 +17,7 @@ import { DataService } from '../data.service';
   templateUrl: './party-creator.page.html',
   styleUrls: ['./party-creator.page.scss'],
 })
-export class PartyCreatorPage implements OnInit {
+export class PartyCreatorPage implements OnInit, OnDestroy {
 
   private router$: Subscription;
   private characters$: Subscription;
@@ -44,7 +44,7 @@ export class PartyCreatorPage implements OnInit {
   public characterSprites: { [key: string]: string } = {};
 
   constructor(
-    private router: Router, 
+    private router: Router,
     private activatedRoute: ActivatedRoute,
     private localStorage: LocalStorageService,
     private modalCtrl: ModalController,
@@ -139,7 +139,7 @@ export class PartyCreatorPage implements OnInit {
 
     modal.onDidDismiss().then((val) => {
       const char = val.data;
-      if(!char) return;
+      if(!char) { return; }
 
       this.setChar(char, index);
 
@@ -177,18 +177,18 @@ export class PartyCreatorPage implements OnInit {
       metaRet.sourceCharacter = char.name;
 
       return metaRet;
-    }
+    };
 
     this.charRefs.forEach(charRef => {
       charRef.rush.effects.forEach(rushEff => {
-        if(!rushEff.meta) return;
+        if(!rushEff.meta) { return; }
 
         const meta = assignMeta(rushEff.meta, charRef, `${charRef.rush.name} [Rush]`);
         buffs.push(meta);
       });
 
       charRef.skills.forEach(skill => {
-        if(!skill.meta) return;
+        if(!skill.meta) { return; }
 
         const skillRef = assignMeta(skill.meta, charRef, `${skill.name} [Skill]`);
         buffs.push(skillRef);
@@ -196,7 +196,7 @@ export class PartyCreatorPage implements OnInit {
 
       charRef.talents.forEach(talent => {
         talent.effects.forEach(talEffect => {
-          if(!talEffect.meta) return;
+          if(!talEffect.meta) { return; }
 
           const talEffRef = assignMeta(talEffect.meta, charRef, `${talent.name} [Talent]`);
           buffs.push(talEffRef);
@@ -228,14 +228,15 @@ export class PartyCreatorPage implements OnInit {
 
         // rip out self buffs
         if(priorityKey === '4') {
-          this.buffs[priorityKey][buffKey].forEach(buffData => {
-            specCharacterBuffs[buffData.sourceCharacter] = specCharacterBuffs[buffData.sourceCharacter] || {};
-            specCharacterBuffs[buffData.sourceCharacter][buffData.buff] = specCharacterBuffs[buffData.sourceCharacter][buffData.buff] || 0;
-            specCharacterBuffs[buffData.sourceCharacter][buffData.buff] += buffData.buffValue;
+          this.buffs[priorityKey][buffKey].forEach(tBuffData => {
+            const char = tBuffData.sourceCharacter;
+            specCharacterBuffs[char] = specCharacterBuffs[char] || {};
+            specCharacterBuffs[char][tBuffData.buff] = specCharacterBuffs[char][tBuffData.buff] || 0;
+            specCharacterBuffs[char][tBuffData.buff] += tBuffData.buffValue;
           });
           return;
         }
-        
+
         const buffData = this.buffs[priorityKey][buffKey][0];
 
         allBuffs[buffData.buff] = allBuffs[buffData.buff] || 0;

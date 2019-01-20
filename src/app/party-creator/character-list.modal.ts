@@ -27,9 +27,9 @@ import { Character } from '../models/character';
     <div class="stars medium"></div>
     <div class="stars large"></div>
 
-    <ion-searchbar *ngIf="search" 
+    <ion-searchbar *ngIf="search"
                    showCancelButton
-                   (ionCancel)="closeSearch()" 
+                   (ionCancel)="closeSearch()"
                    (ionInput)="updateSearchValue($event)"
     ></ion-searchbar>
 
@@ -40,8 +40,8 @@ import { Character } from '../models/character';
     <ion-list *ngIf="filteredCharacters.length > 0">
       <ion-item *ngFor="let char of filteredCharacters" (click)="selectChar(char)">
         <ion-img slot="start" [src]="'assets/characters/' + char.picture + '.png'" class="mini-picture-icon"></ion-img>
-        <ion-img slot="start" [src]="'assets/classes/' + char.type + '.png'" class="asset-icon"></ion-img> 
-      
+        <ion-img slot="start" [src]="'assets/classes/' + char.type + '.png'" class="asset-icon"></ion-img>
+
         <ion-label>
           <h3>{{ char.star }}★ {{ char.name }}</h3>
         </ion-label>
@@ -82,7 +82,7 @@ export class CharacterListModal implements OnInit {
 
     this.updateFilteredCharacters();
   }
-  
+
   closeSearch() {
     this.search = false;
     this.searchValue = '';
