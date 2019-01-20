@@ -58,6 +58,7 @@
       element: Lightning
       power: INT x 770%
       ap: 47
+      notes: Allies recover 7 AP
       maxHits: 10
       
   rush:
@@ -71,6 +72,43 @@
         all: true
     power: INT x 3000%
     maxHits: 10
+        
+  notes: >
+      _For Summer, Sophia decided to try out being a healer, while not actually giving up much in the way of her damage. She has a
+      significantly higher INT stat than any other healer in the game and is an orb wielder on top, meaning she doesn't have to
+      deal with the laggy staff animations that almost every other healer currently does. Her fast casts and spells mean she isn't
+      that bad for wracking up hit count helping her rush gain. Her most powerful utility aspect however is her ability to be an
+      AP battery, where casting certain offensive spells will grant AP to the other party members. This means she's good in just
+      about any composition, though her post INT rush means she really shines with invokers. If SSophia has any weaknesses it would
+      be that her actual heal is not the most potent in a pinch and may require a cancel bonus before hand._
+      
+      **TL DR**
+      
+      **Pros**
+      
+      *Offensive spells restore AP to the party*
+      
+      *Post rush buff that's powerful for self and other INT characters.*
+      
+      *High damage. Especially for a healer.*
+      
+      *Orb wielder, makes her less clunky and laggy compared to her staff counter parts.*
+      
+      **Cons**
+      
+      *Weakish heal*
+      
+      *Lightning Wave has a max range which can make it awkward to use.*
+      
+      *Weak party buffs*
+      
+      **Rotation**
+      
+      *Normal > Lightning Strike > Lightning Wave > Lightning Strike > Spam it till out of AP. (Damage Rotation. Requires 2-3 AP seed.)*
+      
+      *Normal > Lightning Strike > Faerie Light Wave > Lightning Strike > Spam it till out of AP. (Damage Rotation. No AP seed.)
+            
+      *Faerie Light Wave > Spam it till party isn't dying. (Healing)*
 
 - name: Miki Sauvester
   cat: gl
@@ -130,6 +168,44 @@
         duration: 20
     power: INT x 2000%
     maxHits: 4
+    
+  notes: >
+      _The games starter pick for healers and a pretty terrible healer to boot, is also the worst of your five healing options. But
+      if you just picked her, don't fret too much! You can re-roll! But in seriousness she is usable if weak. She's a 5 star
+      non-ace which is important to keep in mind. She has less stats but is easier to max limit break. One of Miki's biggest
+      issues is her lack of party buffs in her talents. In fact she's the only 5 star healer in the game who doesn't provide something
+      to the party. Even the freebie 5 star of Oracle Nel does. Her party wide heal also has a massive AP cost which makes her
+      awkward to use. Miki does have her strong points however. Her post rush buff is a very powerful party wide regen. Her grit talent
+      to survive lethal damage also makes her quite hard to kill, which is useful in a healer especially for solo content. In summary, 
+      Miki is pretty weak, but she has some strong points._
+      
+      **TL DR**
+      
+      **Pros**
+      
+      *5 star non-ace so is cheaper to max limit break and augment*
+      
+      *Powerful post rush health regen buff for the party.*
+      
+      *Grit talent makes her hard to kill. Making her viable for solo content*
+      
+      **Cons**
+      
+      *5 star non-ace so has less stats*
+      
+      *No talents that contribute to the party*
+      
+      *Poor damage*
+      
+      *Expensive healing*
+      
+      **Rotation**
+      
+      *Normal > Radiant Lancer > Sunflare > Radiant Lancer (Elemental Burst Contribution Rotation)*
+      
+      *Normal > Sunflare > Radiant Lancer > Sunflare (Damage Rotation.)*
+            
+      *Normal > Faerie Star (Healing)*
     
 - name: Millie Chliette
   cat: gl
@@ -194,6 +270,39 @@
     power: INT x 2000%
     maxHits: 11
     
+  notes: >
+      _The games first ace healer, also a rare sighting of an earth caster. Millie a healer with the ability to support dps due to her
+      talents and post rush buff. Making her a significant improvement over Miki. However like most of our current healers, her damage
+      is still quite low, in fact it's so bad it's best to just focus on using a normal and heal rather than actually casting 
+      any damage spells, plus there are a lot of post rush elemental buffs that will over ride her talent buff in the game now as well.
+      On top of that even with her AP cost reduction, her heal is still very expensive, but all her other options are bad so your 
+      really taking her as a healing buff stick. In summary, Millie is a good buffer, but she is just a healing buffer so she will be
+      very boring to play._
+      
+      **TL DR**
+      
+      **Pros**
+      
+      *Strong elemental damage buff for the party*
+      
+      *Post rush buff that boosts critical rate and heals most of the party's HP*
+      
+      *Talent that helps surviability*
+      
+      **Cons**
+      
+      *Damage spells take a long time to cast making them bad*
+      
+      *Common access to elemental damage buffs post rush that override her talent*
+      
+      *Boring to play optimally*
+      
+      *Expensive healing*
+      
+      **Rotation**
+            
+      *Normal > Faerie Star (Healing & Rush Gain)*
+    
 - name: Rena Lanford
   cat: gl
   rating: 8
@@ -242,7 +351,7 @@
       ap: 35
       notes: Party Wide
       maxHits: 1
-    - name: "Faerie Light AR"
+    - name: "Faerie Light"
       power: INT x 250%
       ap: 60
       notes: Party Heal
@@ -257,6 +366,48 @@
         duration: 20
     power: INT x 2500%
     maxHits: 10
+    
+  notes: >
+      _Rena is a unique healer in the fact she uses Knuckles rather than the traditional caster type weapons such as staffs and orbs.
+      She also has the powerful party combat buff in Angel Feather that boosts all stats by 20%. Her cast times are also extremely 
+      fast and her talents suit a melee composition very well. On top of that a 90% grit chance is insanely high, especially 
+      considering her fast casting meaning she's pretty hard to kill. She does have her downsides, you can only run one of her two damage spells and they're interchangable with
+      lancer providing more damage, but lasers lets you complete rotations with faerie light faster. She has pretty slow rush gain
+      especially if she's struggling to hit with her damage spells, and her melee normals make playing her a little awkward. In
+      summary Rena is the best true healer we have right now, fast cast times, a strong buff, good healing output. But her low damage
+      and slow rush gain leave something to be desire._
+      
+      **TL DR**
+      
+      **Pros**
+      
+      *Fast cast times*
+      
+      *Talents and post rush buff that is amazing for melee compositions*
+      
+      *Hard to kill*
+      
+      *Angel Feather*
+      
+      **Cons**
+      
+      *Low damage spells*
+      
+      *Slow rush gain*
+      
+      *Melee normals*
+      
+      *Offers little to ranged characters*
+      
+      **Rotation**
+      
+      *Angel Feather (Remember to refresh this)*
+      
+      *Radiant Lancer > Faerie Light > Radiant Lancer. (Rotation with Lancer)*
+      
+      *Laser Beams > Faerie Light (Rotation with Beams)*
+            
+      *Faerie Light > Spam till the party isn't dying. (Healing)*
     
 - name: Nel Zelpher (Oracle)
   cat: gl
@@ -317,6 +468,49 @@
         duration: 20
     power: INT x 2500%
     maxHits: 3
+    
+  notes: >
+      _Oracle Nel is a free welfare 5 star unit. She just manages to edge out Miki as the worst 5 star healer in the game, but Tearful
+      Welch came along to take her title as worst free unit. Oracle Nel is still usable and isn't a pure grief character. She offers
+      a weak damage buff to the party, her repel talent helps her avoid taking aggro and her movement boost also helps her stay out of
+      trouble. She's also an ice caster which is rare and her rush doesn't deal terrible damage. Ice Needles is also a decent filler
+      spell which has homing so it'll actually hit the target helping rush gain. Her down sides, however are many. No AP or cast time
+      reduction means her healing is expensive and slow. Her post rush buff is not party wide and while it improves her damage you
+      aren't bringing a healer for their personal dps. Her stats are also quite weak, having very low INT due to the lack of a self
+      INT buff. In summary, she makes for a character that needs to be carried, will be nice to have her if you fancy a welfare
+      character run in harder content as the designated healer._
+      
+      **TL DR**
+      
+      **Pros**
+      
+      *Free MLB unit*
+      
+      *Weak party damage buff*
+      
+      *Consistent damage*
+      
+      **Cons**
+      
+      *5 star non-ace so has less stats*
+      
+      *Lack of self INT buff*
+      
+      *Lack of party wide rush buff*
+      
+      *No cast time reduction gives long casts*
+      
+      *Expensive healing*
+      
+      *Lack of talent that helps survivability*
+      
+      **Rotation**
+      
+      *Normal > Ice Needles > Deep Freeze > Ice Needles > Spam till out of AP (Consistent damage rotation)*
+      
+      *Normal > Deep Freeze > Ice Needles > Deep Freeze (Rotation during EB and against slow bosses)*
+            
+      *Faerie Light > Spam till the party isn't dying. (Healing)*
     
 - name: Evelysse
   cat: gl
@@ -398,6 +592,28 @@
       crashes people on normal quality graphics settings. In all Evelysse is usable but not incredible, she brings some party buffs 
       that are on the weak side but not common in overlap currently. If you want to use her though, by all means do, just know it
       might be challenging in harder content._
+      
+      **TL DR**
+      
+      **Pros**
+      
+      *Can revive party members by rushing*
+      
+      *Powerful post rush self buff that gives insane healing and damge*
+      
+      *Consistent damage*
+      
+      *Buffs INT and rush damage*
+      
+      *Hard hitting rush compared to most healers*
+      
+      **Cons**
+      
+      *Abysmal rush gain*
+      
+      *Lack of powerful buffs for the party*
+      
+      *Lack of a good talent that helps survivability*
       
       **Rotation**
       
