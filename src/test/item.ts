@@ -28,7 +28,7 @@ test('All items have valid information', async t => {
       t.truthy(item.picture, 'must have a picture url' + parenName);
       t.true(item.star >= 0 && item.star <= 5, 'rating must be between 1 and 5' + parenName);
 
-      t.truthy(item.factor1, 'item should have at least one factor' + parenName);
+      t.true(item.factors.length > 0, 'item should have at least one factor' + parenName);
       t.truthy(item.obtained, 'item must mention where it is obtained' + parenName);
 
     });
