@@ -10,4 +10,17 @@
   obtained: NieR Geared Wisp (Gacha/Drop)
 
   notes: >
-    It's an accessory, 'kay?
+    It's okay, it does its job on the Nier units which it comes with to help keep their HP topped off from minor incidental damage from trash mobs before the boss floor. MLBable.	
+
+- name: White Rose Badge
+  cat: 'gl'
+  star: 5
+  picture: accessories/White Rose Badge
+  def: 753
+  factors:
+    - desc: 40% chance of poison nullification
+    - desc: Damage taken -5%
+  obtained: Pumpkin Cryptvine (Exchange/Drop)
+
+  notes: >
+    Decent, damage taken is reasonable, and poison resist, while small, is at least bundled with something useful. Good for new players to grab a few copies, may want to lvl10 multiples if drops are not kind, or a few MLB if lucky.	
