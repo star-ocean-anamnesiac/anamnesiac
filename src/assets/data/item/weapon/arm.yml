@@ -67,3 +67,21 @@
   notes: >
     An alright weapon. You'll happily take it and use it on demons if you have no element option. Quite defensive factors which will
     help you stay alive.
+    
+- name: Farmer's Arms
+  cat: 'gl'
+  star: 5
+  picture: arms/Farmer's Arms
+  atk: 510
+  int: 509
+  factors:
+    - desc: +50% DMG on Lantern Burst
+    - desc: +10% Rush DMG when Hit Count is 100 or more.
+    - desc: -10% ATK DMG taken (Short Range)
+  thirdFactorLB: 5
+  obtained: Pumpkin Cryptvine Exchange
+
+  notes: >
+    An event weapon for Halloween Millie. They're pretty good for her giving Lantern Burst a huge damage boost and providing a 
+    rare buff to rush damage if you're over a certain hit count. The third factor will regularly be relevant as well so worth keeping
+    while the pool is so small.
