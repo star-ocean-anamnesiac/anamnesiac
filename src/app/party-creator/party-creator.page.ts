@@ -3,6 +3,15 @@ import { includes, find, clone, groupBy, sortBy } from 'lodash';
 
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
+
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition,
+} from '@angular/animations';
+
 import { ModalController } from '@ionic/angular';
 import { Subscription } from 'rxjs';
 import { filter } from 'rxjs/operators';
@@ -16,6 +25,25 @@ import { DataService } from '../data.service';
   selector: 'app-party-creator',
   templateUrl: './party-creator.page.html',
   styleUrls: ['./party-creator.page.scss'],
+  animations: [
+    trigger('openClose', [
+      state('open', style({
+        opacity: 1,
+        visibility: 'visible'
+      })),
+      state('closed', style({
+        opacity: 0,
+        visibility: 'hidden',
+        'max-height': '0px'
+      })),
+      transition('open => closed', [
+        animate('1s')
+      ]),
+      transition('closed => open', [
+        animate('0.5s')
+      ]),
+    ]),
+  ],
 })
 export class PartyCreatorPage implements OnInit, OnDestroy {
 
@@ -37,6 +65,8 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
     3: 'Self-conditional Buffs',
     4: 'Self-only Buffs'
   };
+
+  public priorityVisibility = [false, false, false, false];
 
   public buffs: any = {};
   public optimalBuffs: { [key: string]: number } = {};
