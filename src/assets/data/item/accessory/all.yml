@@ -155,3 +155,184 @@
   notes: >
     A slight talent upgrade to the Resolve accessory, which unfortunately we can't MLB. HP isn't bad and for what it's worth it stacks with other talents, given that HP is a pre-battle stat buff. 30% chance also visually looks better than 20%. Overall quite usable, consider on Maria/SMyuria when not running something offensive.
     
+- name: Anti-Silence Amulet IV
+  cat: 'gl'
+  star: 5
+  picture: accessories/Silence Guard (Anti-Silence Amulet IV)
+  def: 753
+  factors:
+    - desc: 50% Chance of Silence Nullification
+    - desc: None
+  obtained: Blood Valkyrie (Exchange, Drop)
+
+  notes: >
+    Not recommended due to it's inconsistencies, much safer to use a unit in order to resist silence due to 50% not being reliable. Use as DEF stat stick if you're lazy (and don't want to unequip units when switching characters).
+     
+- name: Ring of the General
+  cat: 'gl'
+  star: 5
+  picture: accessories/General Ring (Ring of General)
+  def: 728
+  factors:
+    - desc: -10% ATK DMG Taken
+    - desc: +10% GRD
+  obtained: Michael (Exchange, Drop)
+
+  notes: >
+    Average accessory, does stack with regular DMG reduction (like Maria), and adds a little bit with GRD. Otherwise, a stat stick, though notably does likely perform as well as an MLB accessory for DEF alone. 
+    
+- name: War God's Symbol
+  cat: 'gl'
+  star: 5
+  picture: accessories/Crest of the Warrior (War God's Symbol)
+  def: 728
+  factors:
+    - desc: -10% INT DMG Taken
+    - desc: +10% HIT
+  obtained: Executioner (Exchange, Drop)
+
+  notes: >
+    HIT +10% for shooters, mainly Maria, a decent substitute for Snow God, and also comes with INT damage down as a bonus. Pretty decent accessory for units who can't run something else (Hawkeye, Protection).
+    
+- name: Jinxed Necklace
+  cat: 'gl'
+  star: 5
+  picture: accessories/Bat Necklace (Jinxed Necklace)
+  def: 753
+  factors:
+    - desc: +5% Rush Combo DMG
+    - desc: 30% Chance of Surviving a Lethal Attack when 10% HP or more
+  obtained: Pumpkin Cryptvine (Achievement)
+
+  notes: >
+    Excellent. 30/10 guts in addition to a free increase in damage makes this another damage boosting accessory, which aren't common yet. High base stats help mitigate not being able to MLB this.
+    
+- name: Eagle Eye Charm
+  cat: 'gl'
+  star: 5
+  picture: accessories/Eagle Eye Charm
+  def: 728
+  factors:
+    - desc: +10% Stun Rate
+    - desc: None
+  obtained: Pumpkin Cryptvine (Achievement, Gacha Box) and Armaros (Exchange, Drop)
+
+  notes: >
+    Reasonable, slight offensive boost thanks to stun %, though unfortunate that it doesn't come with another stat.
+    
+- name: Silver Armlet
+  cat: 'gl'
+  star: 5
+  picture: accessories/Silver Armlet
+  def: 728
+  factors:
+    - desc: -10% Chance of Taking Crit Hit
+    - desc: -5%% DMG Taken
+  obtained: Luther (Exchange, Drop)
+
+  notes: >
+    Not amazing, but it's another -5% accesory and actually has a significant 2nd factor, making it quite usable.
+    
+- name: Lunar Tear Bauble
+  cat: 'gl'
+  star: 5
+  picture: accessories/Lunar Tear Bauble
+  def: 753
+  factors:
+    - desc: RCV 5% HP when DMG is Nullified by Evasion
+    - desc: Cures Status Ailments when DMG is Nullified by Evasion
+  obtained: Geared Wisp (Achievement, Drop)
+
+  notes: >
+    Certainly an interesting accessory. It's not amazing, but again has synergy on the Nier units for keeping their health high for doing something that you should be doing anyway. The guaranteed status clear is quite nice for bosses where statuses are common. May be useful for newbies in maze. 
+    
+- name: Journeyman's Charm
+  cat: 'gl'
+  star: 5
+  picture: accessories/Wayfarer's (Journeyman's) Charm
+  def: 728
+  factors:
+    - desc: +25% Chance of Paralysis Nullification
+    - desc: +25% Chance of Poison Nullification
+  obtained: Colossal Beak (Exchange, Drop)
+
+  notes: >
+    Weak 25% chance on both status, will rarely be useful aside from a trophy or DEF statstick.
+    
+- name: Healing Band
+  cat: 'gl'
+  star: 5
+  picture: accessories/Healing Bangle
+  def: 728
+  factors:
+    - desc: RCV 2% HP every 5 secs
+    - desc: 30% Chance of Surviving a Lethal Attack when 10% HP or more
+  obtained: Colossal Beak (Exchange)
+
+  notes: >
+    Minor regen is decent for topping up minor DMG for specific comps, like Nier-based teams. Paired with a low guts, may occasionally save you.
+       
+- name: Sturdy Bracelet
+  cat: 'gl'
+  star: 5
+  picture: accessories/Sturdy Bracelet
+  def: 803
+  factors:
+    - desc: -5% DMG Taken
+    - desc: None
+  obtained: Colossal Beak (Exchange)
+
+  notes: >
+    High base DEF makes this a solid statstick even at low LBs.
+       
+- name: Golden Coro Necklace
+  cat: 'gl'
+  star: 5
+  picture: accessories/Gold Koro Necklace
+  def: 728
+  factors:
+    - desc: -10% ATK DMG Taken
+    - desc: 30% Chance of Surviving a Lethal Attack when 10% HP or more
+  obtained: Christmas Horndevil (Achievement, Exchange, Drop)
+
+  notes: >
+    30/10 guts, minor ATK DMG. A reasonable defensive accessory which can be MLB'd. 
+  
+- name: Christmas Raindeer
+  cat: 'gl'
+  star: 5
+  picture: accessories/Christmas Mujin-kun
+  def: 753
+  factors:
+    - desc: RCV 2% HP every 5 secs
+    - desc: -5% AP Cost
+  obtained: Christmas Horndevil (Achievement, Exchange)
+
+  notes: >
+    AP redux. Life sustain. Heart heart heart. - Addendum: It's very good. Certain characters will benefit heavily from the AP redux, being able to sneak in another skill, hopefully their highest DPS one. 
+
+- name: Emerald Ring
+  cat: 'gl'
+  star: 5
+  picture: accessories/Emerald Ring
+  def: 728
+  factors:
+    - desc: -5% AP Cost
+    - desc: None
+  obtained: Alma (Exchange)
+
+  notes: >
+    As with the Reindeer, it boasts AP redux. Unlike the Reindeer it doesn't offer a second passive, but it can reduce the need of changing equiptment more often if you're not concerned about your HP.
+    
+- name: Quarry's Charm
+  cat: 'gl'
+  star: 5
+  picture: accessories/Target Charm
+  def: 803
+  factors:
+    - desc: -10% DMG Taken
+    - desc: Aggro +3
+  obtained: Alma (Achievement)
+
+  notes: >
+    Our first accessory that has aggro along with some reduction to DMG taken. Best suited for defenders and sharpshooters who kite and hold the enemies attention.
