@@ -80,7 +80,7 @@
 - name: Cerberus Gun
   cat: 'gl'
   star: 5
-  picture: guns/Illumination Blaster
+  picture: guns/Cerberus Blaster
   atk: 489
   int: 491
   factors:
