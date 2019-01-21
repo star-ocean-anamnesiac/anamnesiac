@@ -20,17 +20,49 @@
     - name: "Active Female High School Student"
       effects: 
         - desc: INT +50%
+          meta:
+            priority: 4
+            buff: INT
+            buffValue: 50
     - name: "Jealous Person"
       effects: 
-        - desc: Critical rate +30%
-          all: Caster
+        - desc: Critical chance +30%
+          all: Invoker
+          meta:
+            priority: 1
+            buff: Crit Chance
+            buffRole: invoker
+            buffValue: 30
+        - desc: Critical chance +30%
+          all: Healer
+          meta:
+            priority: 1
+            buff: Crit Chance
+            buffRole: healer
+            buffValue: 30
     - name: "Skillful at Getting By"
       effects: 
         - desc: AP consumption -20%
-          all: Caster
+          all: Invoker
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffRole: invoker
+            buffValue: 20
+        - desc: AP consumption -20%
+          all: Healer
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffRole: healer
+            buffValue: 20
     - name: "Connection"
       effects: 
         - desc: Reduce symbology cast time by 30%
+          meta:
+            priority: 4
+            buff: Cast Time Reduction
+            buffValue: 30
 
   skills:
     - name: "Plunging Fire Bolts"
@@ -48,6 +80,10 @@
       element: Fire
       ap: 60
       notes: +25% ATK to party. A good buff skill!
+      meta:
+        priority: 2
+        buff: ATK
+        buffValue: 25
       highlight: true
     - name: "Violent Explosion"
       element: Fire
@@ -61,8 +97,16 @@
     effects: 
       - desc: +70% INT
         duration: 20
+        meta:
+          priority: 4
+          buff: INT
+          buffValue: 70
       - desc: -60% AP cost
         duration: 20
+        meta:
+          priority: 4
+          buff: AP Cost Reduction
+          buffValue: 60
     power: INT x 3500%
     maxHits: 9
 
@@ -97,15 +141,31 @@
     - name: "Enchanted Perfume II"
       effects: 
         - desc: Easier to stun +30%
+          meta:
+            priority: 4
+            buff: Stun Chance
+            buffValue: 30
     - name: "Hardier Warrior of Morphus"
       effects: 
         - desc: INT +30%
+          meta:
+            priority: 4
+            buff: INT
+            buffValue: 30
     - name: "In Loving Memory of Lucien II"
       effects: 
         - desc: Reduce casting time by 30%
+          meta:
+            priority: 4
+            buff: Cast Time Reduction
+            buffValue: 30
     - name: "Adult's Composure"
       effects: 
         - desc: AP cost -20%
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 20
 
   skills:
     - name: "Deep Freeze"
@@ -137,6 +197,10 @@
     effects: 
       - desc: +80% INT
         duration: 20
+        meta:
+          priority: 4
+          buff: INT
+          buffValue: 80
     power: INT x 3500%
     maxHits: 2
 
@@ -159,10 +223,22 @@
     - name: "Symbologist's Awakening II"
       effects: 
         - desc: INT +40%
+          meta:
+            priority: 4
+            buff: INT
+            buffValue: 40
     - name: "Military Might II"
       effects: 
         - desc: Damage +20%
+          meta:
+            priority: 4
+            buff: Damage
+            buffValue: 20
         - desc: AP cost -20%
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 20
 
   skills:
     - name: "Stone Rain"
@@ -195,6 +271,10 @@
       - desc: Reduce casting time by 50%
         duration: 20
         all: true
+        meta:
+          priority: 1
+          buff: Cast Time Reduction
+          buffValue: 50
     power: INT x 2500%
     maxHits: 10
 
@@ -218,9 +298,17 @@
     - name: "Enchanted Artirstry"
       effects: 
         - desc: DEF +30%
+          meta:
+            priority: 4
+            buff: DEF
+            buffValue: 30
     - name: "Big Doggie Bite"
       effects: 
         - desc: Damage taken -30%
+          meta:
+            priority: 4
+            buff: Damage Taken Reduction
+            buffValue: 30
     - name: "Grampa's Wish"
       effects: 
         - desc: Will not flinch if damage is less than 20% of max HP
@@ -256,13 +344,21 @@
     effects: 
       - desc: INT +100%
         duration: 20
+        meta:
+          priority: 4
+          buff: INT
+          buffValue: 100
       - desc: Reduce casting time by 70%
         duration: 20
+        meta:
+          priority: 4
+          buff: Cast Time Reduction
+          buffValue: 70
     power: INT x 2500%
     maxHits: 6
    
   notes: >
-    'kay?
+    kay?
 
 - name: Faize Sheifa Beleth
   cat: gl
@@ -285,12 +381,24 @@
       effects: 
         - desc: Damage to single targets +30%
           all: true
+          meta:
+            priority: 1
+            buff: Single Target Damage
+            buffValue: 30
         - desc: Chance to stun +15%
           all: true
+          meta:
+            priority: 1
+            buff: Stun Chance
+            buffValue: 15
     - name: "Eldarian Honor II"
       effects: 
         - desc: At 10% HP or higher, has an 80% chance to survive a lethal attack
         - desc: Reduce casting time by 80%
+          meta:
+            priority: 4
+            buff: Cast Time Reduction
+            buffValue: 80
 
   skills:
     - name: "Cursed Devourer"
@@ -323,6 +431,10 @@
     effects: 
       - desc: AP cost -30%
         duration: 20
+        meta:
+          priority: 4
+          buff: AP Cost Reduction
+          buffValue: 30
     power: INT x 3000%
     maxHits: 12
 
@@ -349,16 +461,37 @@
       effects: 
         - desc: INT +30%
           all: true
+          meta:
+            priority: 1
+            buff: INT
+            buffValue: 30
     - name: "Enchanted Symbology"
       effects: 
         - desc: +25% chance to silence on all attacks
+          meta:
+            priority: 4
+            buff: Silence Attack Chance
+            buffValue: 25
     - name: "A Lady's Poise II"
       effects:
         - desc: +20% INT damage dealt when at 100% HP
+          meta:
+            priority: 4
+            buff: INT Damage
+            buffCondition: HP at 100%
+            buffValue: 20
     - name: "Marze Born & Raised"
       effects:
         - desc: -30% cast time
+          meta:
+            priority: 4
+            buff: Cast Time Reduction
+            buffValue: 30
         - desc: -20% AP cost
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 20
 
   skills:
     - name: "Silencing Star Light"
@@ -388,6 +521,10 @@
     effects: 
       - desc: +50% INT
         duration: 20
+        meta:
+          priority: 4
+          buff: INT
+          buffValue: 50
     power: INT x 3500%
     maxHits: 6
 
@@ -412,18 +549,49 @@
     - name: "Signeturge's Pride II"
       effects: 
         - desc: INT +25%
+          meta:
+            priority: 4
+            buff: INT
+            buffValue: 25
     - name: "Inherited Symbology II"
       effects: 
-        - desc: Int +20%
+        - desc: INT +20%
+          meta:
+            priority: 4
+            buff: INT
+            buffValue: 20
         - desc: No flinching when casting Symbology
           all: true
     - name: "Infinite Curiosity"
       effects:
-        - desc: ATK Damage +15% & INT Damage +15% when Skill Chain is 3+
+        - desc: ATK Damage +15% when Skill Chain is 3+
           all: true
+          meta:
+            priority: 1
+            buff: ATK Damage
+            buffCondition: Skill Chain 3+
+            buffValue: 15
+        - desc: INT Damage +15% when Skill Chain is 3+
+          all: true
+          meta:
+            priority: 1
+            buff: INT Damage
+            buffCondition: Skill Chain 3+
+            buffValue: 15
     - name: "Symbology of Viewing"
       effects:
-        - desc: AP Cost -60% & Symbol invoking time -30% when Skill Chain is 3+
+        - desc: AP Cost -60% when Skill Chain is 3+
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain 3+
+            buffValue: 60
+        - desc: Symbol invoking time -30% when Skill Chain is 3+
+          meta:
+            priority: 4
+            buff: Cast Time Reduction
+            buffCondition: Skill Chain 3+
+            buffValue: 30
 
   skills:
     - name: "Shadow Needles"
@@ -454,6 +622,10 @@
       - desc: DEF -40%
         all: Enemies
         duration: 20
+        meta:
+          priority: 1
+          buff: Enemy DEF Reduction
+          buffValue: 40
     power: INT x 3500%
     maxHits: 16
     

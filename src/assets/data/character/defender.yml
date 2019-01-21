@@ -21,6 +21,10 @@
       effects: 
         - desc: HP +20%
           all: true
+          meta:
+            priority: 1
+            buff: HP
+            buffValue: 20
         - desc: Will not flinch to damage under 20% max HP
           all: true
     - name: "Dark Impulse"
@@ -31,12 +35,29 @@
       effects: 
         - desc: Single target damage +20%
           all: true
+          meta:
+            priority: 1
+            buff: Single Target Damage
+            buffValue: 20
         - desc: Single target damage +40% when HP is 100%
           all: true
+          meta:
+            priority: 1
+            buff: Single Target Damage
+            buffCondition: HP is 100%
+            buffValue: 40
     - name: "Beautiful World"
       effects: 
         - desc: ATK +20%
+          meta:
+            priority: 4
+            buff: ATK
+            buffValue: 20
         - desc: DEF +20%
+          meta:
+            priority: 4
+            buff: DEF
+            buffValue: 20
 
   skills:
     - name: "YoRHa Arms: Eleven"
@@ -61,6 +82,10 @@
     effects: 
       - desc: Single Target Damage +50%
         duration: 20
+        meta:
+          priority: 4
+          buff: Single Target Damage
+          buffValue: 50
       - desc: Recover 15% of max HP every 3 seconds
         duration: 20
     power: ATK x 4500%
@@ -121,8 +146,16 @@
       effects: 
         - desc: DEF +50%
           all: true
+          meta:
+            priority: 1
+            buff: DEF
+            buffValue: 50
         - desc: Damage +10%
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 10
     - name: "What Friends Are For IV"
       effects: 
         - desc: Will not flinch to damage under 25% max HP
@@ -158,6 +191,10 @@
       - desc: Damage taken -50%
         duration: 20
         all: true
+        meta:
+          priority: 1
+          buff: Damage Taken Reduction
+          buffValue: 50
     power: ATK x 3000%
     maxHits: 15
     
@@ -230,6 +267,10 @@
     - name: "Carnivore"
       effects: 
         - desc: Damage dealt to beasts +60%
+          meta:
+            priority: 4
+            buff: Damage To Beasts
+            buffValue: 60
 
   skills:
     - name: "Double Slash"
@@ -280,8 +321,16 @@
       effects: 
         - desc: DEF +40%
           all: true
+          meta:
+            priority: 1
+            buff: DEF
+            buffValue: 40
         - desc: Damage +10%
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 10
     - name: "Imposing Presence IV"
       effects: 
         - desc: Will not flinch to damage under 20% max HP
@@ -289,6 +338,10 @@
     - name: "Will of the Universe"
       effects: 
         - desc: Critical rate +20%
+          meta:
+            priority: 4
+            buff: Crit Rate
+            buffValue: 20
 
   skills:
     - name: "Mirror Blade"
@@ -468,12 +521,28 @@
       effects: 
         - desc: DEF +20%
           all: true
+          meta:
+            priority: 1
+            buff: DEF
+            buffValue: 20
         - desc: ATK damage taken -20%
           all: true
+          meta:
+            priority: 1
+            buff: ATK Damage Taken Reduction
+            buffValue: 20
     - name: "Aloof Swordsmanship"
       effects: 
         - desc: ATK +30%
+          meta:
+            priority: 4
+            buff: ATK
+            buffValue: 30
         - desc: DEF +20%
+          meta:
+            priority: 4
+            buff: DEF
+            buffValue: 20
     - name: "Oath to Cecille"
       effects: 
         - desc: Will not flinch to damage under 25% max HP
@@ -481,7 +550,19 @@
     - name: "Encountered a Worthy Rival"
       effects: 
         - desc: Damage +20%
-          all: Attackers & Defenders
+          all: Attacker
+          meta:
+            priority: 1
+            buff: Damage
+            buffRole: attacker
+            buffValue: 20
+        - desc: Damage +20%
+          all: Defender
+          meta:
+            priority: 1
+            buff: Damage
+            buffRole: defender
+            buffValue: 20
 
   skills:
     - name: "Annihiliating Air Slash"
@@ -510,6 +591,10 @@
     effects: 
       - desc: AP cost -50%
         duration: 20
+        meta:
+          priority: 4
+          buff: AP Cost Reduction
+          buffValue: 50
     power: ATK x 3500%
     maxHits: 10
     
@@ -563,24 +648,55 @@
     - name: "Holiday Heroine"
       effects: 
         - desc: Damage taken -30% while attacking
+          meta:
+            priority: 3
+            buff: Damage Taken Reduction
+            buffCondition: While Attacking
+            buffValue: 30
         - desc: ATK damage taken -15% when Hit Count is over 50
           all: true
+          meta:
+            priority: 1
+            buff: ATK Damage Taken Reduction
+            buffCondition: Hit Count > 50
+            buffValue: 15
     - name: "Radiant Snow Crystal II"
       effects: 
         - desc: Single Target Damage +20%
           all: true
+          meta:
+            priority: 1
+            buff: Single Target Damage
+            buffValue: 20
         - desc: Single Target Damage +40% when Hit Count is over 150
           all: true
+          meta:
+            priority: 1
+            buff: Single Target Damage
+            buffCondition: Hit Count > 150
+            buffValue: 40
     - name: "Snowdrop II"
       effects: 
         - desc: HP +20%
           all: true
+          meta:
+            priority: 1
+            buff: HP
+            buffValue: 20
         - desc: No flinching when taking damage of 20% HP or less
           all: true
     - name: "Miracle Symbology"
       effects: 
         - desc: ATK +15%
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 15
         - desc: HP +15%
+          meta:
+            priority: 1
+            buff: HP
+            buffValue: 15
 
   skills:
     - name: "Resplendent Blades"
@@ -609,8 +725,16 @@
     effects: 
       - desc: AP cost -40%
         duration: 20
-      - desc: ATK +30% -40%
+        meta:
+          priority: 4
+          buff: AP Cost Reduction
+          buffValue: 40
+      - desc: ATK +30%
         duration: 20
+        meta:
+          priority: 4
+          buff: ATK
+          buffValue: 30
     power: ATK x 4000%
     maxHits: 6
     element: Ice
@@ -676,14 +800,26 @@
       effects: 
         - desc: ATK +20%
           all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 20
     - name: "A Pioneer’s Spirit"
       effects: 
         - desc: Single Target Damage +15%
           all: true
+          meta:
+            priority: 1
+            buff: Single Target Damage
+            buffValue: 15
     - name: "Youthful Spunk II"
       effects: 
         - desc: HP +40%
           all: true
+          meta:
+            priority: 1
+            buff: HP
+            buffValue: 40
     - name: "A Friend’s Promise"
       effects: 
         - desc: No flinching when taking damage of 20% HP or less
@@ -716,6 +852,10 @@
       - desc: Elemental Damage +50%
         duration: 20
         all: true
+        meta:
+          priority: 1
+          buff: Elemental Damage
+          buffValue: 50
     power: ATK x 3500%
     maxHits: 12
     
@@ -771,8 +911,16 @@
       effects: 
         - desc: DEF +20%
           all: true
+          meta:
+            priority: 1
+            buff: DEF
+            buffValue: 20
         - desc: INT +10%
           all: true
+          meta:
+            priority: 1
+            buff: INT
+            buffValue: 10
     - name: "Another Piece of Cake II"
       effects: 
         - desc: 70% of surviving a lethal attack at 5% HP or more
@@ -812,6 +960,10 @@
       - desc: Damage Taken -40%
         duration: 20
         all: true
+        meta:
+          priority: 1
+          buff: Damage Taken Reduction
+          buffValue: 40
     power: ATK x 3000%
     maxHits: 5
     

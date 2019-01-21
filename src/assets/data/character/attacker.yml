@@ -21,8 +21,16 @@
       effects: 
         - desc: ATK +25%
           all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 25
         - desc: ATK +45% when HP 100% 
           all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 45
     - name: "Automated Infantry Android"
       effects: 
         - desc: Evasion AP consumption -100% when Just Timing evasion
@@ -30,6 +38,10 @@
       effects: 
         - desc: AP recovery from normal attacks +100%
           all: true
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffValue: 100
     - name: "Prayer"
       effects: 
         - desc: Evasion AP consumption -50% 
@@ -60,9 +72,17 @@
     effects: 
       - desc: All elemental damage +55%
         duration: 20
+        meta:
+          priority: 4
+          buff: Elemental Damage
+          buffValue: 55
       - desc: All elemental damage +50%
         all: true
         duration: 20
+        meta:
+          priority: 1
+          buff: Elemental Damage
+          buffValue: 50
     power: ATK x 4000%
     maxHits: 27
     
@@ -151,12 +171,24 @@
     - name: "Klaus Champion II"
       effects: 
         - desc: AP Cost -40% 
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 40
     - name: "Greater Master of the Training Hall"
       effects: 
         - desc: ATK +30% 
+          meta:
+            priority: 4
+            buff: ATK
+            buffValue: 30
     - name: "Revolutionary Spirit"
       effects:
         - desc: Critical Rate +20%
+          meta:
+            priority: 4
+            buff: Crit Rate
+            buffValue: 20
 
   skills:
     - name: "Triple Kick"
@@ -205,6 +237,10 @@
       effects: 
         - desc: Critical Rate +30%
           all: true
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffValue: 30
     - name: "Grandmother's Teachings II"
       effects: 
         - desc: No Flinching to Damage < 20% of Max HP
@@ -233,6 +269,10 @@
       - desc: Critical Rate +60%
         all: true
         duration: 20
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 60
     power: ATK x 2500%
     maxHits: 8
     element: Fire
@@ -258,12 +298,20 @@
       effects: 
         - desc: AP Cost -20%
           all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 20
     - name: "Finest Instructor of the Blade II"
       effects: 
         - desc: No Flinching to Damage < 20% of Max HP
     - name: "Camuze Way"
       effects: 
         - desc: Damage Dealt to Humanoids +60%
+          meta:
+            priority: 4
+            buff: Humanoid Damage
+            buffValue: 60
 
   skills:
     - name: "Rising Blade"
@@ -289,6 +337,10 @@
     effects: 
       - desc: AP cost -40%
         duration: 20
+        meta:
+          priority: 4
+          buff: AP Cost Reduction
+          buffValue: 40
     power: ATK x 2500%
     maxHits: 12
     element: Light
@@ -315,13 +367,25 @@
       effects: 
         - desc: Symbol Invoking Time -20%
           all: true
+          meta:
+            priority: 1
+            buff: Cast Time Reduction
+            buffValue: 20
     - name: "Astounding Eldarian Swordplay"
       effects: 
         - desc: Chance to Cause Stun +40%
           all: true
+          meta:
+            priority: 1
+            buff: Stun Chance
+            buffValue: 40
     - name: "Defense Force of Kratus"
       effects: 
         - desc: ATK +30%
+          meta:
+            priority: 4
+            buff: ATK
+            buffValue: 30
 
   skills:
     - name: "Double Slash"
@@ -348,8 +412,16 @@
     effects: 
       - desc: AP cost -40%
         duration: 20
+        meta:
+          priority: 4
+          buff: AP Cost Reduction
+          buffValue: 40
       - desc: Damage Taken -20%
         duration: 20
+        meta:
+          priority: 4
+          buff: Damage Taken Reduction
+          buffValue: 20
     power: ATK x 3000%
     maxHits: 7
     element: Lightning
@@ -376,21 +448,44 @@
       effects: 
         - desc: ATK +40% when not in front of target
           all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffCondition: Not In Front Of Target
+            buffValue: 40
     - name: "Lethal Swing"
       effects: 
         - desc: ATK +25% when in front of target
           all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffCondition: In Front Of Target
+            buffValue: 25
         - desc: Rush Combo Damage +10%
           all: true
+          meta:
+            priority: 1
+            buff: Rush Damage
+            buffValue: 10
     - name: "Handmade Dolls II"
       effects: 
         - desc: AP recovery from normal attacks +80%
           all: Close Range
+          meta:
+            priority: 4
+            buff: AP Recovery From Normal Attacks
+            buffValue: 80
         - desc: Nullifies Rush Gauge Reduction Field
           all: Close Range
     - name: "Hit-the-Watermelon"
       effects: 
         - desc: AP Cost -25% during 3 skill combos or more
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffCondition: Skill Combo 3+
+            buffValue: 25
 
   skills:
     - name: "Combo Breaker"
@@ -420,6 +515,10 @@
       - desc: Single Target Damage Dealt +40%
         all: true
         duration: 20
+        meta:
+          priority: 4
+          buff: Single Target Damage
+          buffValue: 40
     power: ATK x 3500%
     maxHits: 7
     
@@ -445,13 +544,25 @@
       effects: 
         - desc: ATK +30%
           all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 30
     - name: "The Dusk of Ragnarok"
       effects: 
         - desc: Rush Combo Damage +20%
           all: true
+          meta:
+            priority: 1
+            buff: Rush Damage
+            buffValue: 20
     - name: "Platina's Heart"
       effects: 
         - desc: +15% chance of adding silence to all attacks
+          meta:
+            priority: 4
+            buff: Silence Attack Chance
+            buffValue: 15
 
   skills:
     - name: "Glowing Pierce"
@@ -475,9 +586,13 @@
   rush:
     name: "Nibelung Valesti"
     effects: 
-      - desc: DEF -30% (All Enemies/20 seconds)
+      - desc: DEF -30% (All Enemies)
         all: enemies
         duration: 20
+        meta:
+          priority: 1
+          buff: Enemy DEF Reduction
+          buffValue: 30
     power: ATK x 3500%
     maxHits: 8
     
@@ -503,18 +618,37 @@
       effects: 
         - desc: ATK +50%
           all: Attackers
+          meta:
+            priority: 1
+            buff: ATK
+            buffRole: attacker
+            buffValue: 50
     - name: "Learned Finesse II"
       effects: 
         - desc: ATK +50%
           all: Defenders
+          meta:
+            priority: 1
+            buff: ATK
+            buffRole: defender
+            buffValue: 50
     - name: "Greater Hero's Might"
       effects: 
         - desc: Damage taken -20%
           all: Healers
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffRole: healer
+            buffValue: 20
     - name: "Passed Down Martial Arts"
       effects: 
         - desc: Normal attack AP recovery +100%
           all: true
+          meta:
+            priority: 1
+            buff: AP Recovery From Normal Attacks
+            buffValue: 100
 
   skills:
     - name: "Double Slash"
@@ -540,6 +674,10 @@
       - desc: Damage Dealt +30%
         all: true
         duration: 20
+        meta:
+          priority: 1
+          buff: Damage
+          buffValue: 30
     power: ATK x 3000%
     maxHits: 8
    
@@ -563,12 +701,29 @@
     - name: "Raven Sword II"
       effects: 
         - desc: Critical hit chance +50%
+          meta:
+            priority: 4
+            buff: Crit Rate
+            buffValue: 50
     - name: "Knight's Integrity II"
       effects: 
         - desc: Critical hit damage +50%
+          meta:
+            priority: 4
+            buff: Crit Damage
+            buffValue: 20
     - name: "A Highlander's Pride"
       effects: 
-        - desc: ATK +20% and DEF -20%
+        - desc: ATK +20%
+          meta:
+            priority: 4
+            buff: ATK
+            buffValue: 20
+        - desc: DEF -20%
+          meta:
+            priority: 4
+            buff: DEF Reduction
+            buffValue: 20
 
   skills:
     - name: "Liquid Bite"
@@ -592,7 +747,7 @@
   rush:
     name: "Unholy Torrent"
     effects: 
-      - desc: Ocassionally freezes foes.
+      - desc: Occasionally freezes foes.
         duration: N/A
     power: ATK x4000%
     maxHits: 13
@@ -619,16 +774,40 @@
       effects: 
         - desc: DEF -30%
           all: Enemies
+          meta:
+            priority: 1
+            buff: Enemy DEF Reduction
+            buffValue: 30
     - name: "Black Brigade Fury II"
       effects: 
         - desc: ATK +30%
-          all: Attackers & Defenders
+          all: Attackers
+          meta:
+            priority: 1
+            buff: ATK
+            buffRole: attacker
+            buffValue: 30
+        - desc: ATK +30%
+          all: Defenders
+          meta:
+            priority: 1
+            buff: ATK
+            buffRole: defender
+            buffValue: 30
     - name: "Savage Blade II"
       effects: 
         - desc: Damage to single target +20%
+          meta:
+            priority: 4
+            buff: Single Target Damage
+            buffValue: 20
     - name: "Magician's Clothes"
       effects: 
-        - desc: AP Reduction -20%
+        - desc: AP Cost -20%
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 20
 
   skills:
     - name: "Unbridled Air Slash"
@@ -651,8 +830,18 @@
   rush:
     name: "Hydra Roar"
     effects: 
-      - desc: ATK +100% & DEF -50%
+      - desc: ATK +100%
         duration: 15
+        meta:
+          priority: 4
+          buff: ATK
+          buffValue: 100
+      - desc: DEF -50%
+        duration: 15
+        meta:
+          priority: 4
+          buff: DEF Reduction
+          buffValue: 50
     power: ATK x 4000%
     maxHits: 6
     
@@ -677,17 +866,33 @@
       effects: 
         - desc: ATK +30%
           all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 30
     - name: "All-Seeing Eye II"
       effects: 
         - desc: Damage to multiple targets +20%
           all: true
+          meta:
+            priority: 1
+            buff: Multiple Target Damage
+            buffValue: 20
     - name: "Mother of Symbology"
       effects: 
-        - desc: AP Reduction -10%
+        - desc: AP Cost -10%
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 4
     - name: "Quiet Devotion"
       effects: 
         - desc: Fire Element Damage +20%
           all: true
+          meta:
+            priority: 1
+            buff: Fire Damage
+            buffValue: 20
 
   skills:
     - name: "Palm of Destruction"
@@ -711,9 +916,22 @@
   rush:
     name: "Divine Hammer"
     effects: 
-      - desc: AP Reduction -20%
-        all: Attackers & Invokers
+      - desc: AP Cost -20%
+        all: Attackers
         duration: 20
+        meta:
+          priority: 4
+          buff: AP Cost Reduction
+          buffRole: attacker
+          buffValue: 20
+      - desc: AP Cost -20%
+        all: Invokers
+        duration: 20
+        meta:
+          priority: 4
+          buff: AP Cost Reduction
+          buffRole: invoker
+          buffValue: 20
     power: ATK x 3000%
     maxHits: 14
     
@@ -738,14 +956,30 @@
     - name: "Black Ribbon II"
       effects: 
         - desc: ATK +15%
+          meta:
+            priority: 4
+            buff: ATK
+            buffValue: 15
     - name: "Mischievous Wings II"
       effects: 
         - desc: +15% ATK damage when hit count is over 50
           all: true
+          meta:
+            priority: 3
+            buff: ATK
+            buffValue: 15
     - name: "Heart-Shaped Tail II"
       effects: 
         - desc: -25% AP consumption
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 25
         - desc: +15% ATK when hit count is over 100
+          meta:
+            priority: 3
+            buff: ATK
+            buffValue: 15
     - name: "Prayer"
       effects: 
         - desc: Will not flinch to attacks under 15% of max HP
@@ -777,9 +1011,17 @@
       - desc: +30% DEF
         all: true
         duration: 20
+        meta:
+          priority: 1
+          buff: DEF
+          buffValue: 30
       - desc: -30% DEF
         all: Enemies
         duration: 20
+        meta:
+          priority: 1
+          buff: Enemy DEF Reduction
+          buffValue: 30
     power: ATK x 4000%
     maxHits: 7
     
@@ -805,19 +1047,32 @@
       effects: 
         - desc: +25% ATK
           all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 25
         - desc: +35% ATK when hit count is over 100
           all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffCondition: Hit Count > 100
+            buffValue: 35
     - name: "Wolf's Appetite II"
       effects: 
         - desc: AP recovery from normal attacks +100%
           all: true
+          meta:
+            priority: 1
+            buff: AP Recovery From Normal Attacks
+            buffValue: 100
     - name: "Animal Instincts"
       effects: 
         - desc: Nullify movement reducing fields and rush gauge reduction fields
           all: true
     - name: "Full Moon Howl"
       effects: 
-        - desc: Pumpkin Smash damage +60% when arte chain 4+
+        - desc: Pumpkin Smash damage +60% when art chain 4+
 
   skills:
     - name: "Lantern Burst"
@@ -845,6 +1100,10 @@
       - desc: +50% all elemental damage
         all: true
         duration: 20
+        meta:
+          priority: 1
+          buff: Elemental Damage
+          buffValue: 50
     power: ATK x 3500%
     maxHits: 8
     
@@ -870,6 +1129,10 @@
       effects: 
         - desc: +30% ATK
           all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 30
     - name: "Speak Softly & Carry A Big Stick"
       effects: 
         - desc: Imbue attacks with Fire or Light attribute
@@ -877,6 +1140,10 @@
       effects: 
         - desc: +15% All elemental damage
           all: true
+          meta:
+            priority: 1
+            buff: Elemental Damage
+            buffValue: 15
     - name: "Stubborn To A Fault"
       effects: 
         - desc: Will not flinch to damage under 10% Max HP
@@ -908,6 +1175,10 @@
       - desc: +50% all elemental damage
         all: true
         duration: 20
+        meta:
+          priority: 1
+          buff: Elemental Damage
+          buffValue: 50
     power: ATK x 3500%
     maxHits: 12
     
@@ -933,15 +1204,38 @@
       effects: 
         - desc: +40% ATK
           all: Attackers
+          meta:
+            priority: 1
+            buff: ATK
+            buffRole: attacker
+            buffValue: 40
     - name: "Lightning-Fast Firewhips"
       effects: 
         - desc: -15% AP Cost
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 15
     - name: "Hellfire II"
       effects: 
-        - desc: +10% Fire DMG & -30% Ice DMG Taken
+        - desc: +10% Fire DMG
+          meta:
+            priority: 4
+            buff: Fire Damage
+            buffValue: 10
+        - desc: -30% Ice DMG Taken
+          meta:
+            priority: 4
+            buff: Ice Damage Reduction
+            buffValue: 30
     - name: "Fiery Indignation"
       effects: 
-        - desc: +25% For Every Party Member Dead All Stats
+        - desc: +25% All Stats For Every Party Member Dead
+          meta:
+            priority: 3
+            buff: All Stats
+            buffCondition: Per Party Member Dead
+            buffValue: 25
 
   skills:
     - name: "Pyroclast Punch"
@@ -971,6 +1265,10 @@
       - desc: -50% AP Cost
         all: true
         duration: 20
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 50
     power: ATK x 3500%
     maxHits: 8
     element: Fire
@@ -1085,11 +1383,23 @@
       effects: 
         - desc: DEF -50%
           all: Enemies
+          meta:
+            priority: 1
+            buff: Enemy DEF Reduction
+            buffValue: 50
         - desc: DEF -50%
           all: true
+          meta:
+            priority: 1
+            buff: DEF Reduction
+            buffValue: 50
     - name: "Braveman’s Heart II"
       effects: 
         - desc: ATK +30%
+          meta:
+            priority: 4
+            buff: ATK
+            buffValue: 30
     - name: "MAX Tension"
       effects: 
         - desc: Movement rate boost
@@ -1118,9 +1428,17 @@
       - desc: ATK +50%
         all: true
         duration: 20
+        meta:
+          priority: 1
+          buff: ATK
+          buffValue: 50
       - desc: DEF -100%
         all: true
         duration: 20
+        meta:
+          priority: 1
+          buff: DEF Reduction
+          buffValue: 100
     power: ATK x 2000%
     maxHits: 20
     
@@ -1145,19 +1463,62 @@
     - name: "Hunter’s Intuition II"
       effects: 
         - desc: Critical Rate +30%
+          meta:
+            priority: 4
+            buff: Crit Rate
+            buffValue: 30
         - desc: Critical Rate +30% at short range
           all: true
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffValue: 30
     - name: "Memories of Ocarina II"
       effects: 
         - desc: AP Recovery +50%
-          all: Self & Defenders
+          meta:
+            priority: 4
+            buff: AP Recovery
+            buffValue: 50
+        - desc: AP Recovery +50%
+          all: Defenders
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffRole: defender
+            buffValue: 50
     - name: "Isolation II"
       effects:
         - desc: ATK +20%
+          meta:
+            priority: 4
+            buff: ATK
+            buffValue: 20
     - name: "Cat’s Interlude"
       effects:
         - desc: AP Cost -20%
-        - desc: ATK +10%, +20%, +30% at 100, 150, 200 hits respectively
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 20
+        - desc: ATK +10% at 100 hits
+          meta:
+            priority: 4
+            buff: ATK
+            buffCondition: Hit Count > 100
+            buffValue: 10
+        - desc: ATK +20% at 150 hits
+          meta:
+            priority: 4
+            buff: ATK
+            buffCondition: Hit Count > 150
+            buffValue: 20
+        - desc: ATK +30% at 200 hits
+          meta:
+            priority: 4
+            buff: ATK
+            buffCondition: Hit Count > 200
+            buffValue: 30
 
   skills:
     - name: "Gouging Spike"
@@ -1182,6 +1543,10 @@
     effects: 
       - desc: AP Cost -40%
         duration: 20
+        meta:
+          priority: 4
+          buff: AP Cost Reduction
+          buffValue: 40
     power: ATK x 4000%
     maxHits: 7
     

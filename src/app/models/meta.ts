@@ -23,6 +23,13 @@ export interface Meta {
   // the "type" of buff of the meta (ATK, Damage, INT, etc)
   buff: string;
 
+  // the role that the buff applies to, specifically (lowercase, also)
+  buffRole: string;
+
+  // the "condition" of the buff (In front of target, not in front of target, etc)
+  // this will not be present on many buffs
+  buffCondition?: string;
+
   // the value of the buff in % (ATK +15% -> 15)
   buffValue: number;
 }

@@ -21,8 +21,17 @@
       effects: 
         - desc: ATK +45%
           all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 45
         - desc: ATK +55% when HP 100%
           all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffCondition: HP at 100%
+            buffValue: 55
     - name: "Scanner Type"
       effects: 
         - desc: Evasion AP consumption -50%
@@ -36,7 +45,15 @@
     - name: "Whereabouts of Brethren"
       effects: 
         - desc: ATK +15%
+          meta:
+            priority: 4
+            buff: ATK
+            buffValue: 15
         - desc: HIT +10%
+          meta:
+            priority: 4
+            buff: HIT
+            buffValue: 10
 
   skills:
     - name: "YoRHa Arms: Three"
@@ -64,6 +81,10 @@
       - desc: ATK damage +30% 
         duration: 20
         all: true
+        meta:
+          priority: 1
+          buff: ATK Damage
+          buffValue: 30
     power: ATK x 4000%
     maxHits: 16
 
@@ -89,9 +110,17 @@
       effects: 
         - desc: Damage +40%
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 40
     - name: "Alternating Step II"
       effects: 
         - desc: Damage taken -20%
+          meta:
+            priority: 4
+            buff: Damage Taken Reduction
+            buffValue: 20
 
   skills:
     - name: "Aiming Device"
@@ -120,6 +149,10 @@
       - desc: Critical Rate +40%
         duration: 20
         all: true
+        meta:
+          priority: 1
+          buff: Crit Chance
+          buffValue: 40
     power: ATK x 3000%
     maxHits: 6
     
@@ -143,15 +176,27 @@
   talents:
     - name: "Prayer for Peace"
       effects: 
-        - desc: Critical Rate +10%
+        - desc: Critical Chance +10%
           all: true
+          meta:
+            priority: 1
+            buff: Crit Chance
+            buffValue: 10
     - name: "Crimson Blade"
       effects: 
         - desc: Normal Attacks have +15% chance to Poison
+          meta:
+            priority: 4
+            buff: Poison Attack Chance
+            buffValue: 15
     - name: "Assassin's Stealth"
       effects: 
         - desc: AP Cost -15%
           all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 15
     - name: "Covert Operation"
       effects: 
         - desc: Repel +1
@@ -358,10 +403,18 @@
       effects: 
         - desc: INT Damage Taken -40%
           all: true
+          meta:
+            priority: 1
+            buff: INT Damage Taken Reduction
+            buffValue: 40
     - name: "Greater Single-Shot"
       effects: 
         - desc: Damage Dealt +20%
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 20
     - name: "Star Seed of Hope"
       effects: 
         - desc: Nullifies Status Ailments (180 seconds)
@@ -419,20 +472,40 @@
   talents:
     - name: "Undivided Attention II"
       effects: 
-        - desc: ATK Damage Taken -20% when in front of target, 70% Chance of Surviving a Lethal Attack at > 20% HP
+        - desc: ATK Damage Taken -20% when in front of target
+          all: true
+          meta:
+            priority: 1
+            buff: ATK Damage Taken Reduction
+            buffCondition: In Front Of Target
+            buffValue: 20
+        - desc: 70% Chance of Surviving a Lethal Attack at > 20% HP
           all: true
     - name: "Stir-Fried Noodles II"
       effects: 
         - desc: Damage Dealt +25%
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 25
     - name: "Side Order II"
       effects: 
         - desc: Critical Hit Chance +20% when behind target (180 seconds)
           all: true
+          meta:
+            priority: 1
+            buff: Crit Chance
+            buffCondition: Behind Target (180s)
+            buffValue: 20
     - name: "Summer Snow Cone"
       effects: 
         - desc: Normal Attack AP Recovery +25%
           all: true
+          meta:
+            priority: 1
+            buff: Normal Attack AP Recovery
+            buffValue: 25
 
   skills:
     - name: "Heavenly Flight"
@@ -458,9 +531,17 @@
       - desc: Critical Hit Chance 10%
         duration: 20
         all: true
+        meta:
+          priority: 1
+          buff: Crit Chance
+          buffValue: 10
       - desc: Critical Hit Damage +40%
         duration: 20
         all: true
+        meta:
+          priority: 1
+          buff: Crit Damage
+          buffValue: 40
     power: ATK x 3500%
     maxHits: 24
     
@@ -486,10 +567,18 @@
       effects: 
         - desc: Damage Dealt +10% when attack hits a single enemy
           all: true
+          meta:
+            priority: 1
+            buff: Single Target Damage
+            buffValue: 10
     - name: "Divine Arrow Burst"
       effects: 
         - desc: Damage Dealt +30%
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 30
     - name: "Einherjar's Last Hope"
       effects: 
         - desc: Hit Counter +2 seconds
@@ -522,6 +611,10 @@
     effects: 
       - desc: Critical Hit Chance 30%
         duration: 60
+        meta:
+          priority: 4
+          buff: Crit Chance
+          buffValue: 30
     power: ATK x 3500%
     maxHits: 8
 
@@ -592,14 +685,30 @@
           all: true
     - name: "Crimson Cup II"
       effects: 
-        - desc: Damage Dealt +30% & +10% all element damage when HP is 100%
+        - desc: Damage Dealt +30%
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 30
+        - desc: +10% all element damage when HP is 100%
+          all: true
+          meta:
+            priority: 1
+            buff: Elemental Damage
+            buffCondition: HP is 100%
+            buffValue: 10
     - name: "Demon Blade"
       effects: 
         - desc: Recover 3% of skill attack damage as HP
     - name: "Deep Mourning"
       effects: 
         - desc: AP consumption -40% when skill chain is 3+
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain 3+
+            buffValue: 40
         
   skills:
     - name: "Flying Cleave"
@@ -628,6 +737,10 @@
       - desc: +40% single target damage
         duration: 20
         all: true
+        meta:
+          priority: 1
+          buff: Single Target Damage
+          buffValue: 40
     power: ATK x 3500%
     maxHits: 19
     
@@ -651,18 +764,47 @@
     - name: "Amused Feelings II"
       effects: 
         - desc: Damage +35%
-          all: Self & Invoker & Healer
+          meta:
+            priority: 4
+            buff: Damage
+            buffValue: 35
+        - desc: Damage +35%
+          all: Invoker
+          meta:
+            priority: 1
+            buff: Damage
+            buffRole: invoker
+            buffValue: 35
+        - desc: Damage +35%
+          all: Healer
+          meta:
+            priority: 1
+            buff: Damage
+            buffRole: healer
+            buffValue: 35
     - name: "Unfinished Business II"
       effects: 
         - desc: Damage +25%
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 25
     - name: "Obscure Breath"
       effects: 
         - desc: Symbology invoking time -100%
+          meta:
+            priority: 4
+            buff: Cast Time Reduction
+            buffValue: 100
     - name: "Timebender"
       effects: 
         - desc: Symbology invoking time -20%
           all: true
+          meta:
+            priority: 1
+            buff: Cast Time Reduction
+            buffValue: 20
         
   skills:
     - name: "Smart Aiming Device"
@@ -690,7 +832,17 @@
     effects: 
       - desc: Damage +60%
         duration: 20
-        all: Self & Invoker
+        meta:
+          priority: 4
+          buff: Damage
+          buffValue: 60
+      - desc: Damage +60%
+        duration: 20
+        all: Invoker
+        meta:
+          priority: 1
+          buff: Damage
+          buffValue: 60
     power: INT x 2500%
     maxHits: 5
     

@@ -87,7 +87,13 @@
     
           <ion-item *ngFor="let buffData of bufftype.value; let i = index" [class.faded]="buffpriority.key !== '4' && buffpriority.key !== '3' && i > 0">
             <span slot="start">
-              {{ buffData.buff }} +{{ buffData.buffValue }}%
+              <p>{{ buffData.buff }} +{{ buffData.buffValue }}%</p>
+              <p *ngIf="buffData.buffRole">
+                <small><strong>Role:</strong> {{ buffData.buffRole | titlecase }}</small>
+              </p>
+              <p *ngIf="buffData.buffCondition">
+                <small><strong>Condition:</strong> {{ buffData.buffCondition }}</small>
+              </p>
             </span>
     
             <span slot="end" class="text-align-center">

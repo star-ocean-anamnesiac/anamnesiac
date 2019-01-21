@@ -20,21 +20,52 @@
     - name: "Seaside Enchantress II"
       effects: 
         - desc: INT +20%
+          meta:
+            priority: 4
+            buff: INT
+            buffValue: 20
         - desc: Recover allies AP when using offensive symbology
     - name: "Making Waves II"
       effects: 
-        - desc: AP consumption -40%
-        - desc: INT damage -30% when skill chain 3+
+        - desc: AP cost -40%
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 40
+        - desc: INT damage +30% when skill chain 3+
+          meta:
+            priority: 4
+            buff: INT Damage
+            buffCondition: Skill Chain 3+
+            buffValue: 30
     - name: "Cat Ball and Sandals II"
       effects: 
-        - desc: ATK/INT damage +20%
+        - desc: ATK damage +20%
           all: true
+          meta:
+            priority: 1
+            buff: INT Damage
+            buffValue: 20
+        - desc: INT damage +20%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK Damage
+            buffValue: 20
         - desc: Nullify "movement speed down" effect
           all: Self & Close Range
     - name: "Summer Combo"
       effects: 
         - desc: Reduce symbology cast time by 30%
+          meta:
+            priority: 4
+            buff: Cast Time Reduction
+            buffValue: 30
         - desc: AP consumption -10%
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 10
 
   skills:
     - name: "Thunder Wave"
@@ -68,6 +99,10 @@
       - desc: +40% INT
         all: true
         duration: 20
+        meta:
+          priority: 1
+          buff: INT
+          buffValue: 40
       - desc: Recover 50% HP
         all: true
     power: INT x 3000%
@@ -132,9 +167,17 @@
     - name: "Industrial Housecleaning"
       effects: 
         - desc: INT +30%
+          meta:
+            priority: 4
+            buff: INT
+            buffValue: 30
     - name: "Glutton II"
       effects: 
         - desc: Reduce Symbol Invoking Time by 30%
+          meta:
+            priority: 4t
+            buff: Cast Time Reduction
+            buffValue: 30
     - name: "Beginner's Luck"
       effects: 
         - desc: At 10% HP or higher, has a 80% chance of Surviving a Lethal Attack
@@ -231,12 +274,24 @@
       effects: 
         - desc: All Elemental Damage Dealt +30%
           all: true
+          meta:
+            priority: 1
+            buff: Elemental Damage
+            buffValue: 30
     - name: "Rabbit's Foot"
       effects: 
         - desc: Damage Taken -30%
+          meta:
+            priority: 4
+            buff: Damage Taken Reduction
+            buffValue: 30
     - name: "Fortune of Mana"
       effects: 
         - desc: AP Cost -20%
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 20
 
   skills:
     - name: "Crush"
@@ -267,6 +322,10 @@
       - desc: Critical Hit Chance +50%
         all: true
         duration: 20
+        meta:
+          priority: 1
+          buff: Crit Chance
+          buffValue: 50
       - desc: Recover 80% HP
         all: true
     power: INT x 2000%
@@ -330,6 +389,10 @@
     - name: "Beyond Time & Space II"
       effects: 
         - desc: Symbol invoking time -80%
+          meta:
+            priority: 4
+            buff: Cast Time Reduction
+            buffValue: 80
     - name: "Two Mothers' Blessing"
       effects: 
         - desc: AP Cost -15%
@@ -375,7 +438,7 @@
         all: Short Ranged Weapon Users
         duration: 20
         meta:
-          priority: 3
+          priority: 1
           buff: Crit Rate
           buffValue: 60
     power: INT x 2500%
@@ -450,6 +513,10 @@
       effects: 
         - desc: Damage Dealt +15%
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 15
     - name: "The Dancing Maiden"
       effects: 
         - desc: Movement rate boost
@@ -484,8 +551,12 @@
     element: Ice
     effects: 
       - desc: 50% HP recovery
-      - desc: damage dealt +30%
+      - desc: Damage dealt +30%
         duration: 20
+        meta:
+          priority: 4
+          buff: Damage
+          buffValue: 30
     power: INT x 2500%
     maxHits: 3
     
@@ -554,18 +625,34 @@
       effects: 
         - desc: +20% INT
           all: true
+          meta:
+            priority: 1
+            buff: INT
+            buffValue: 20
     - name: "A Girl of Many Talents II"
       effects: 
         - desc: +20% Rush DMG
           all: true
+          meta:
+            priority: 1
+            buff: Rush Damage
+            buffValue: 20
     - name: "Blessings of the Stars II"
       effects: 
         - desc: RCV 3% of Max HP / 3s
-        - desc: -20% to Rush Guage
+        - desc: -20% to Rush Gauge
     - name: "Cryptic Symbology Arts"
       effects: 
         - desc: -25% AP Cost
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 25
         - desc: -20% Cast Time
+          meta:
+            priority: 1
+            buff: Cast Time Reduction
+            buffValue: 20
 
   skills:
     - name: "Radiant Lancer"
@@ -598,6 +685,10 @@
         duration: 20
       - desc: +100% INT
         duration: 20
+        meta:
+          priority: 4
+          buff: INT
+          buffValue: 100
     power: INT x 3500%
     maxHits: 10
     
@@ -666,6 +757,11 @@
       effects: 
         - desc: +30% AP Recovery at Long Range
           all: true
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffCondition: Long Range
+            buffValue: 30
     - name: "Healer's Touch II"
       effects: 
         - desc: Recover 5% HP / 5s
@@ -785,6 +881,10 @@
       effects: 
         - desc: Symbology invoking time -60%
           all: true
+          meta:
+            priority: 1
+            buff: Cast Time Reduction
+            buffValue: 60
         - desc: Hit counter +2s
           all: true
     - name: "Twinkle Twinkle Little Star II"
@@ -795,10 +895,34 @@
           all: true
     - name: "Trump Card"
       effects: 
-        - desc: Crit Rate and Crit Damage +20% when Hit Count is over 50
+        - desc: Crit Rate +20% when Hit Count is over 50
           all: true
-        - desc: Crit Rate and Crit Damage +30% when Hit Count is over 100
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: Hit Count > 50
+            buffValue: 20
+        - desc: Crit Damage +20% when Hit Count is over 50
           all: true
+          meta:
+            priority: 1
+            buff: Crit Damage
+            buffCondition: Hit Count > 50
+            buffValue: 20
+        - desc: Crit Rate +30% when Hit Count is over 100
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: Hit Count > 100
+            buffValue: 30
+        - desc: Crit Damage +30% when Hit Count is over 100
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Damage
+            buffCondition: Hit Count > 100
+            buffValue: 30
     - name: "A Christmas Miracle"
       effects: 
         - desc: Recover all ally AP when using Offensive Symbology
@@ -835,8 +959,12 @@
       - desc: Recover 15% of Max HP every 3 seconds
         all: true
         duration: 20
-      - desc: Crit Rate +30%
+      - desc: Crit Chance +30%
         all: true
+        meta:
+          priority: 1
+          buff: Crit Chance
+          buffValue: 30
     power: INT x 3000%
     maxHits: 5
     
@@ -908,6 +1036,11 @@
       effects: 
         - desc: AP Recovery +50% at 100% HP
           all: true
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffCondition: HP at 100%
+            buffValue: 50
     - name: "A Sister’s Prayer II"
       effects: 
         - desc: Recover 5% HP every 3 seconds
@@ -919,6 +1052,10 @@
     - name: "Dreams of the Future"
       effects: 
         - desc: Symbology invoking time -50%
+          meta:
+            priority: 4
+            buff: Cast Time Reduction
+            buffValue: 50
 
   skills:
     - name: "Shiny Lancer"
@@ -928,6 +1065,10 @@
       maxHits: 8
     - name: "Brute Enlightenment"
       power: INT +25% & ATK Damage Taken -15%.
+      meta:
+        priority: 2
+        buff: INT
+        buffValue: 25
       ap: 30
       notes: Party wide and has a 20 second duration.
       maxHits: 5
@@ -949,6 +1090,10 @@
       - desc: Single Target Damage +30%
         all: true
         duration: 20
+        meta:
+          priority: 1
+          buff: Single Target Damage
+          buffValue: 30
       - desc: Recover 15% HP every 3 seconds
         all: true
         duration: 20
