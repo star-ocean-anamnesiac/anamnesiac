@@ -11,3 +11,95 @@
     - desc: Damage taken -15% when in front of target
   thirdFactorLB: 5
   obtained: Gacha
+
+- name: Umbral Blaster
+  cat: 'gl'
+  star: 5
+  picture: guns/Shadow Bullet (Umbral Blast)
+  atk: 850
+  int: 847
+  factors:
+    - desc: +15% damage to multiple targets
+    - desc: +20% DMG on Crimson Squall
+    - desc: +10% DMG to single target
+  thirdFactorLB: 3
+  obtained: Coin Exchange/Gacha
+
+- name: Storm Bolt
+  cat: 'gl'
+  star: 5
+  picture: guns/Storm Bolt
+  atk: 840
+  int: 843
+  factors:
+    - desc: Imbue Wind Element
+    - desc: +20% DMG on Hunter's Moon
+    - desc: None
+  thirdFactorLB: N/A
+  obtained: Coin Exchange/Gacha/Transmute
+  
+- name: Assault Laser
+  cat: 'gl'
+  star: 5
+  picture: guns/Assault Laser
+  atk: 530
+  int: 0
+  factors:
+    - desc: +15% ATK, -15% DEF
+    - desc: +20% DMG on Scatter Beam
+    - desc: None
+  thirdFactorLB: N/A
+  obtained: Coin Exchange/Gacha/Transmute
+  
+- name: Illumination Blaster
+  cat: 'gl'
+  star: 5
+  picture: guns/Illumination Blaster
+  atk: 511
+  int: 506
+  factors:
+    - desc: +30% DMG on Bombing Run
+    - desc: RCV 5% HP of DMG Dealt by Normal Attacks
+    - desc: +10% DMG Dealt to Single Target
+  thirdFactorLB: 5
+  obtained: Christmas Horndevil Exchange
+  
+- name: Frozen Revolver
+  cat: 'gl'
+  star: 5
+  picture: guns/Frozen Revolver (Icy Revolver)
+  atk: 962
+  int: 957
+  factors:
+    - desc: Imbue Ice Element and +15% DMG to Demons
+    - desc: -10% AP Cost
+    - desc: +25% Crit Chance at 100+ Hit Count
+  thirdFactorLB: 5
+  obtained: Gacha
+  
+- name: Cerberus Gun
+  cat: 'gl'
+  star: 5
+  picture: guns/Illumination Blaster
+  atk: 489
+  int: 491
+  factors:
+    - desc: +10% INT
+    - desc: +20% DMG on Cerberus Shot
+    - desc: 60% Chance to Survive a Lethal Attack at 20% HP or more
+  thirdFactorLB: 5
+  obtained: Cave Guardian Exchange
+  
+- name: Dimension Slicer
+  cat: 'gl'
+  star: 5
+  picture: guns/Spatial Gun・D Slicer
+  atk: 489
+  int: 491
+  factors:
+    - desc: +30% DMG on Energy Glaive
+    - desc: -10% AP Cost
+    - desc: +40% ATK DMG at Chain 3+
+  thirdFactorLB: 5
+  obtained: Alma Exchange
+  
