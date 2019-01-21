@@ -183,7 +183,53 @@
       - desc: High Chance to inflict Deadly Poison during Rush.
     power: ATK x 2000%
     maxHits: 18
-  
+
+  notes: >
+      _You could say there are two flavors of Nel Zepher: the flavor where the boss is vulnerable to poison and the flavor where the
+      boss is not. Rare is a character who is this polarized by a singular detail.
+      
+      A Nel against a poison-vulnerable boss has potential to be among the strongest dps in the game, capable of melting high HP bosses
+      in seconds, on top of having incredible defensive utility and a great offensive buffing kit. If the boss can't be poisoned,
+      her dps is among the worst in the game, and she becomes more of a support/utility character.
+      
+      Thankfully, that utility is pretty good. Her fast rush gain enables her to basically erase anything a boss does that
+      can feasibly be threatening with the only downside being a hitcount reset (which is granted, significant). Her AP reduction
+      raises everyone's dps, and is commonly underestimated. Her crit+10% isn't incredible, but it's a nice bonus.
+      
+      In the end, she's a character you probably won't bring to every boss. But when she's toxic, she is truly beautiful._
+      
+      **TL DR**
+      
+      **Pros**
+      
+      - Poison damage is ridiculous.
+
+      - Good general-purpose buffing.
+
+      - Fastest rush gain in the game, enabling her to effectively erase boss mechanics on command.
+
+      - Daggers are a great weapon, with excellent kiting ability.
+      
+      **Cons**
+      
+      - Without poison vulnerability, her dps is abysmal.
+
+      - A poorly played Nel can grief the party by resetting hitcount unnecessarily, cutting elem bursts short or constantly interrupting the fight.
+
+      - Repel+1 hampers her ability to assume Shooter's primary role: kiting.
+
+      - High animation lock on her best rush generation move (Poisonous Terror)
+
+      - Poisonous Blade is a horrible move with horrible tracking and a tiny hitbox, and her best dps relies on it.
+      
+      **Rotation**
+      
+      *Normal > P.Terror > P.Shot > P.Terror > * (Best Rush Gain)*
+
+      *Normal > P.Shot > P.Blade > P.Shot > * (General Damage)*
+
+      *Normal > CA P.Blade (to align) > P.Shot > P.Blade > * (Best Damage vs. Big Targets)*
+
 - name: Emmerson T. Kenny
   cat: gl
   rating: 3
@@ -478,7 +524,7 @@
         duration: 60
     power: ATK x 3500%
     maxHits: 8
-    
+
   notes: >
       _Come to me, dark warriors, obsolescence awaits us!
       
@@ -497,31 +543,31 @@
       **Pros**
       
       - Good damage.
-      
+
       - Decent rush gain.
-      
+
       - Fast hitcount generation, making her a good friend to units dependent on it.
-      
+
       - Rare single target DMG buff.
-            
+
       - Self crit buff on Rush for Crystal Guardian
-            
+
       **Cons**
-      
+
       - Long rush animation guaranteed to annoy your party.
-      
+
       - Bow animations make kiting bosses harder than it needs to be, and she is often forced into that due to high aggro gen.
-      
+
       - Underwhelming buffs, especially compared to shooters of similar strength.
       
       **Rotation**
       
       *Normal > Homing Pigeons > Wave Motion > Homing Pigeons > * (General Combo. By timing cancel can get up to 3 pigeons.)
-      
+
       *Normal > Wave Motion > Homing Pigeons > Wave Motion > Homing Pigeons (Combo #2, last pigeons requires timed canceling)
-      
+
       *Normal > Wave Motion > Homing Pigeons > Wave Motion > * (with 20% AP reduction or more)
-      
+
 - name: Victor Oakville (Halloween)
   cat: gl
   rating: 10
