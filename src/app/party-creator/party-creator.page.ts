@@ -157,7 +157,7 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
 
   private getParty(): string {
     const parameters = new URLSearchParams(window.location.search);
-    return parameters.get('party');
+    return parameters.get('party') || '';
   }
 
   private updatePictures() {
