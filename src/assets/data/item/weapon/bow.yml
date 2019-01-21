@@ -10,4 +10,141 @@
     - desc: Rapacious Sparrows damage +20%
     - desc: Additional hit that deals 5% of damage dealt on normal attacks
   thirdFactorLB: 5
-  obtained: Coin Shop (Jie Revorse)
+  obtained: Jie Revorse Exchange
+  
+  notes: >
+    A wind bow intended for Reimi. If you don't have the windburst bow this is very much worth having as an elemental bow. Extra plus
+    plus points on a good Reimi player.
+  
+- name: Aritfact Bow
+  cat: 'gl'
+  star: 5
+  picture: bows/Artifact Bow
+  atk: 477
+  factors:
+    - desc: +15% ATK
+    - desc: +10% Fire DMG Dealt
+    - desc: Hit Count Timer + 2 s
+  thirdFactorLB: 3
+  obtained: Gacha
+  
+  notes: >
+    An odd bow, seems like it's meant for Ronyx but it doesn't increase INT at all. However if you have no other bows it's not bad, strong
+    final factor and it has a good attack boost on it to make up for the lack of stats.
+    
+- name: God's Bow
+  cat: 'gl'
+  star: 5
+  picture: bows/Godbow・Nuaza (God's Bow)
+  atk: 835
+  factors:
+    - desc: +15% Ice DMG Dealt
+    - desc: +20% DMG on Heavenly Flight
+  thirdFactorLB: N/A
+  obtained: Gacha/Transmute/Coin Exchange
+  
+  notes: >
+    It's okay as an offensive stat stick, it's the only bow in both the shop and transmute pool so it's very easy to get one to mlb,
+    not that you actually want to get it to MLB.
+    
+- name: Crowned Bow
+  cat: 'gl'
+  star: 5
+  picture: bows/Billowing Bow (Crowned Bow)
+  atk: 532
+  int: 528
+  factors:
+    - desc: +20% DMG on Howling Wind
+    - desc: Recover 3% HP every 5 seconds
+    - desc: +20% Crit DMG (When attacking from behind.)
+  thirdFactorLB: 5
+  obtained: Everlasting Summer Siren Exchange
+  
+  notes: >
+    An okay bow. It's better with SMiki but it's not fantastic and there are better bows. You can use it for transmute or fodder but
+    it's not as if you can transmute it into a better bow.
+    
+- name: Arc-En-Ciel
+  cat: 'gl'
+  star: 5
+  picture: bows/Arc-En-Ciel
+  atk: 964
+  int: 963
+  element: Lightning
+  factors:
+    - desc: Imbue Lightning Element
+    - desc: Hit Count Timer + 1s
+    - desc: +20% ATK (When attacking from behind.)
+  thirdFactorLB: 5
+  obtained: Gacha
+  
+  notes: >
+    A good weapon by the sheer fact it's an element bow. The third factor is inconsistent, but characters with hit count talents will
+    appreciate the second factor. One of the best bows you can currently get.
+    
+- name: Grand Flared Bow
+  cat: 'gl'
+  star: 5
+  picture: bows/Victory Bow・Flare Spread (Grand Flared Bow)
+  atk: 859
+  int: 862
+  factors:
+    - desc: +30% DMG on Explode
+    - desc: +25% Fire DMG Dealt
+    - desc: +30% AP Recovery
+  thirdFactorLB: 5
+  obtained: Millioneyes Gacha Box
+  
+  notes: >
+    Ronyx gets a real bow, this is his BiS weapon so if you have it just stick it on your Ronyx and let him rot along with it.
+    
+- name: Shiny Rupture 
+  cat: 'gl'
+  star: 5
+  picture: bows/Shiny Rupture
+  atk: 476
+  int: 475
+  factors:
+    - desc: +20% DMG on Wave Motion
+    - desc: +10% DMG to Divine
+    - desc: Additional Hit that Deals 5% of DMG Dealt by Normal Attacks
+  thirdFactorLB: 3/4/5
+  obtained: Blood Valkyrie (Exchange)
+  
+  notes: >
+    This bow is very bad. Just use it as transmute fodder.
+    
+- name: Shiny Rupture II
+  cat: 'gl'
+  star: 5
+  picture: bows/Shiny Rupture II
+  atk: 857
+  int: 856
+  factors:
+    - desc: +20% DMG to Divinities
+    - desc: +25% DMG on Wave Motion
+    - desc: Additional Hit that Deals 5% of DMG Dealt by Normal Attacks
+  thirdFactorLB: 1/5
+  obtained: Blood Valkyrie (Exchange)
+  
+  notes: >
+    This bow is worse than the other one because you might actually pull it from Gacha. It's fodder so try to enjoy the coin it helps
+    you make.
+    
+- name: Windburst Bow
+  cat: 'gl'
+  star: 5
+  picture: bows/Airblast Bow (Windburst Bow)
+  atk: 962
+  int: 961
+  element: Wind
+  factors:
+    - desc: Imbues attacks with wind element
+    - desc: Recover 3% HP every 5 seconds
+    - desc: +15% Stun
+  thirdFactorLB: 5
+  obtained: gacha
+  
+  notes: >
+    A wind bow that retires the one you got from Jie. The recovery is a nice factor that to have, and it actually has a pretty good
+    mlb factor to reward the player for getting to that point.
