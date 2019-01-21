@@ -12,3 +12,61 @@
     - desc: AP consumption -10%
   thirdFactorLB: 5
   obtained: Gacha (Limited)
+  
+  notes: >
+    The factors aren't going to blow you away. They're strong enough though. But the biggest thing is that even on JP this is the only
+    light imbue greatsword. On top of that it's one of the only limited time weapons in the game. So if you missed it, well check out the
+    other greatswords for options.
+
+- name: Durandal
+  cat: 'gl'
+  star: 5
+  picture: greatswords/Durandal
+  atk: 516
+  int: 511
+  factors:
+    - desc: +15% ATK
+    - desc: 10% HP Drain on Normal Attacks
+    - desc: +10% DMG
+  thirdFactorLB: 3
+  obtained: Gacha/Coin Exchange
+
+  notes: >
+    A decent greatsword for A2 and future greatsword wielders especially if they're defenders. The lifesteal helps with sustain. A good 
+    neutral option if you missed out on Beastlord.
+    
+- name: Tyrfing
+  cat: 'gl'
+  star: 5
+  picture: greatswords/Tyrfing
+  atk: 516
+  int: 511
+  factors:
+    - desc: +15% Single Target DMG
+    - desc: -10% AP Cost
+    - desc: -10% DMG Taken
+  thirdFactorLB: 5
+  obtained: Gacha/Coin Exchange
+
+  notes: >
+    Isn't that strong a greatsword. It has passable factors, but those factors just don't make up for the lack of stats it has unlike 
+    the factors durandal has. On top of that, the third factor is seen on multiple accessories now. Safe to use as fodder if you have
+    Durandal.
+    
+- name: Type-4O Blade
+  cat: 'gl'
+  star: 5
+  picture: greatswords/Type-40 Blade
+  atk: 862
+  int: 857
+  factors:
+    - desc: +20% DMG on YoHRa Arms XII
+    - desc: +50% AP RCV by Normal Attacks
+    - desc: -10% ATK DMG Taken
+  thirdFactorLB: 5
+  obtained: Geared Wisp Exchange & Event
+
+  notes: >
+    If you didn't get beastlord, this is probably the best pick for your A2 unless you prefer the extra sustain of Durandal. Boosting
+    your hardest hitting move and giving increased AP recovery is good. On top of that it has gacha level stats.
+    
