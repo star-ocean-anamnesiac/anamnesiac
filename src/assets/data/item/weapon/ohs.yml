@@ -8,6 +8,6 @@
   factors:
     - desc: All attribute damage +50% / Damage to mechs +50%
     - desc: Recover 15% of damage dealt on normal attacks as HP
-    - desc: Crit chance +10%
+    - desc: Crit Rate +10%
   thirdFactorLB: 5
   obtained: Gacha (Limited)

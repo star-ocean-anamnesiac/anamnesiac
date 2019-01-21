@@ -68,7 +68,7 @@
       <ion-item-group *ngFor="let bufftype of buffpriority.value | keyvalue">
         <ion-item-divider>Buff: {{ bufftype.key }}</ion-item-divider>
   
-        <ion-item *ngFor="let buffData of bufftype.value; let i = index" [class.faded]="buffpriority.key !== '4' && i > 0">
+        <ion-item *ngFor="let buffData of bufftype.value; let i = index" [class.faded]="buffpriority.key !== '4' && buffpriority.key !== '3' && i > 0">
           <span slot="start">
             {{ buffData.buff }} +{{ buffData.buffValue }}%
           </span>

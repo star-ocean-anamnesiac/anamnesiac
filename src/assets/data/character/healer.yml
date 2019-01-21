@@ -371,12 +371,12 @@
     name: "Star Flare"
     element: Light
     effects: 
-      - desc: Critical Hit Chance +60%
+      - desc: Critical Hit Rate +60%
         all: Short Ranged Weapon Users
         duration: 20
         meta:
           priority: 3
-          buff: Crit Chance
+          buff: Crit Rate
           buffValue: 60
     power: INT x 2500%
     maxHits: 10

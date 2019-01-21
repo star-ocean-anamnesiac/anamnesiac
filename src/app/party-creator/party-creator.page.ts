@@ -250,9 +250,15 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
       Object.keys(this.buffs[priorityKey]).forEach(buffKey => {
 
         // rip out self buffs
-        if(priorityKey === '4') {
+        if(priorityKey === '4' || priorityKey === '3') {
           this.buffs[priorityKey][buffKey].forEach(tBuffData => {
+
+            // init the global one so it shows up
+            allBuffs[tBuffData.buff] = allBuffs[tBuffData.buff] || 0;
+
+            // track individual character buffs
             const char = tBuffData.sourceCharacter;
+
             specCharacterBuffs[char] = specCharacterBuffs[char] || {};
             specCharacterBuffs[char][tBuffData.buff] = specCharacterBuffs[char][tBuffData.buff] || 0;
             specCharacterBuffs[char][tBuffData.buff] += tBuffData.buffValue;

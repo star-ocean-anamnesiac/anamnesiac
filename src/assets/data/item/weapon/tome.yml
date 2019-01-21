@@ -8,6 +8,6 @@
   factors:
     - desc: INT +15%
     - desc: Recover 5% HP every 3s
-    - desc: +10% crit chance
+    - desc: +10% Crit Rate
   thirdFactorLB: 5
   obtained: Tome Coin Exchange / Gacha

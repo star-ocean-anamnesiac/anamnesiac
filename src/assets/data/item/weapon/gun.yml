@@ -96,7 +96,7 @@
   factors:
     - desc: Imbue Ice Element and +15% DMG to Demons
     - desc: -10% AP Cost
-    - desc: +25% Crit Chance at 100+ Hit Count
+    - desc: +25% Crit Rate at 100+ Hit Count
   thirdFactorLB: 5
   obtained: Gacha
   
