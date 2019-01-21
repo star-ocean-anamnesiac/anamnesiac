@@ -42,6 +42,12 @@
     <ion-list>
       <ion-item-divider><strong>Optimal Buff Matrix</strong></ion-item-divider>
     </ion-list>
+
+    <ion-list *ngIf="!getParty()">
+      <ion-item class="faded">
+        You must select a party member to see buffs.
+      </ion-item>
+    </ion-list>
   
     <ion-list>
       <ion-item *ngFor="let optbuff of optimalBuffs | keyvalue">
@@ -59,6 +65,12 @@
   
     <ion-list>
       <ion-item-divider><strong>All Party Buffs</strong></ion-item-divider>
+    </ion-list>
+
+    <ion-list *ngIf="!getParty()">
+      <ion-item class="faded">
+        You must select a party member to see buffs.
+      </ion-item>
     </ion-list>
   
     <ion-list *ngFor="let buffpriority of buffs | keyvalue">
