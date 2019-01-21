@@ -52,7 +52,7 @@
     <ion-list>
       <ion-item *ngFor="let optbuff of optimalBuffs | keyvalue">
         <ion-label>
-          <div><strong>Base Buff:</strong> {{ optbuff.key }} +{{ optbuff.value }}%</div>
+          <div><strong>Base Total:</strong> {{ optbuff.key }} +{{ optbuff.value }}%</div>
     
           <div class="additional-buff-row" *ngIf="characterOptimalBuffBoosts[optbuff.key]">
             <div class="text-align-center margin-right"><strong>Individual Totals:</strong></div>
@@ -85,7 +85,8 @@
         <ion-item-group *ngFor="let bufftype of buffpriority.value | keyvalue">
           <ion-item-divider>Buff: {{ bufftype.key }}</ion-item-divider>
     
-          <ion-item *ngFor="let buffData of bufftype.value; let i = index" [class.faded]="buffpriority.key !== '4' && buffpriority.key !== '3' && i > 0">
+          <ion-item *ngFor="let buffData of bufftype.value; let i = index" 
+                    [class.faded]="buffpriority.key !== '4' && buffpriority.key !== '3' && i > 0 && buffData.buffValue !== bufftype.value[0].buffValue">
             <span slot="start">
               <p>{{ buffData.buff }} +{{ buffData.buffValue }}%</p>
               <p *ngIf="buffData.buffRole">
