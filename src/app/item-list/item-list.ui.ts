@@ -135,15 +135,19 @@ export class ItemSortPopover {
 
     .notes {
       white-space: pre-wrap;
-      color: #fff;
     }
 
     .middot-after:after {
       content: ' · ';
     }
 
-    p {
+    .notes, p {
       color: #fff;
+      text-shadow:
+       -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+         1px 1px 0 #000;
     }
   `]
 })

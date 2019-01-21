@@ -210,11 +210,15 @@ export class CharacterSortPopover {
 
     .notes {
       white-space: pre-wrap;
-      color: #fff;
     }
 
-    p {
+    .notes, p {
       color: #fff;
+      text-shadow:
+       -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+         1px 1px 0 #000;
     }
   `]
 })
