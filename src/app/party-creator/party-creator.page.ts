@@ -29,6 +29,7 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
   private filteredCharacters: Character[];
 
   public region: string;
+  public showShare: boolean;
 
   public buffPriorityDescs = {
     1: 'Talent/Rush Buffs',
@@ -52,6 +53,7 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
     ) { }
 
   ngOnInit() {
+    this.showShare = !!(<any>navigator).share;
     this.characters.length = 4;
     this.charRefs.length = 4;
 
@@ -83,6 +85,18 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
   ngOnDestroy() {
     this.router$.unsubscribe();
     this.characters$.unsubscribe();
+  }
+
+  public share() {
+    if(!(<any>navigator).share) {
+      alert('You cannot share at this time, sorry.');
+      return;
+    }
+
+    (<any>navigator).share({
+      title: 'Anamnesiac Party Creator',
+      url: location.href
+    });
   }
 
   private updateCharacters() {

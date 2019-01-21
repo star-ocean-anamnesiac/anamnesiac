@@ -6,6 +6,11 @@
     <ion-title>
       Party Creator
     </ion-title>
+    <ion-buttons slot="end">
+      <ion-button icon-only (click)="share()" *ngIf="showShare">
+        <ion-icon name="share"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
