@@ -11,6 +11,10 @@
     - desc: Damage taken -15% when in front of target
   thirdFactorLB: 5
   obtained: Gacha
+  
+  notes: >
+    It's a good demon hating weapon and a decent neutral option since it has grit chance. Otherwise it works as a strong enough neutral
+    weapon. Worth keeping.
 
 - name: Umbral Blaster
   cat: 'gl'
@@ -24,6 +28,10 @@
     - desc: +10% DMG to single target
   thirdFactorLB: 3
   obtained: Coin Exchange/Gacha
+  
+  notes: >
+    A gun meant for Maria, so unsurprisingly, it's pretty good for Maria due to how much she uses Crimson Squall. The first factor is
+    a bit limited but getting the third factor turns it into a pretty good neutral weapon.
 
 - name: Storm Bolt
   cat: 'gl'
@@ -31,12 +39,18 @@
   picture: guns/Storm Bolt
   atk: 840
   int: 843
+  element: Wind
   factors:
     - desc: Imbue Wind Element
     - desc: +20% DMG on Hunter's Moon
     - desc: None
   thirdFactorLB: N/A
   obtained: Coin Exchange/Gacha/Transmute
+  
+  notes: >
+    An elemental weapon, while wind isn't a common element weakness it'll always contribute to elemental burst. The second factor is
+    for Emmerson so is redundant but just being an element gun is enough. It's also very easy to get to MLB due to it having three
+    methods to obtain it.
   
 - name: Assault Laser
   cat: 'gl'
@@ -51,6 +65,10 @@
   thirdFactorLB: N/A
   obtained: Coin Exchange/Gacha/Transmute
   
+  notes: >
+    This gun is bad. Please fodder it. Use it to work towards coins for Storm Bolt. Only use it if it's your only gun and you can't turn
+    it into a coin for Storm Bolt.
+  
 - name: Illumination Blaster
   cat: 'gl'
   star: 5
@@ -59,10 +77,14 @@
   int: 506
   factors:
     - desc: +30% DMG on Bombing Run
-    - desc: RCV 5% HP of DMG Dealt by Normal Attacks
+    - desc: Recover 5% of DMG Dealt by Normal Attacks as HP
     - desc: +10% DMG Dealt to Single Target
   thirdFactorLB: 5
   obtained: Christmas Horndevil Exchange
+  
+  notes: >
+    Like any event weapon it's decent for it's intended character, Winter Fidel, but bad beyond that. Even though it has lifesteal it
+    isn't good enough to be keeping if you have better options. So just fodder it.
   
 - name: Frozen Revolver
   cat: 'gl'
@@ -70,12 +92,17 @@
   picture: guns/Frozen Revolver (Icy Revolver)
   atk: 962
   int: 957
+  element: Ice
   factors:
     - desc: Imbue Ice Element and +15% DMG to Demons
     - desc: -10% AP Cost
     - desc: +25% Crit Chance at 100+ Hit Count
   thirdFactorLB: 5
   obtained: Gacha
+  
+  notes: >
+    A fantastic weapon. Has elemental imbue plus a slight racial hate. On top of that AP reduction and a powerful third factor to reward
+    the lucky and rich. If you get one of these treasure it.
   
 - name: Cerberus Gun
   cat: 'gl'
@@ -90,6 +117,10 @@
   thirdFactorLB: 5
   obtained: Cave Guardian Exchange
   
+  notes: >
+    An event weapon for Official Lymle. It is only good for Official Lymle. Use them for fodder or mlb it and stick it on Official
+    Lymle if you fancy playing her for fun from time to time.
+  
 - name: Dimension Slicer
   cat: 'gl'
   star: 5
@@ -102,4 +133,8 @@
     - desc: +40% ATK DMG at Chain 3+
   thirdFactorLB: 5
   obtained: Alma Exchange
+  
+  notes: >
+    A pretty strong neutral weapon. A 3+ chain is pretty easy on most gun characters. The first factor is for Emmerson's rush but the 
+    second and third factor are what make it a pretty solid weapon.
   
