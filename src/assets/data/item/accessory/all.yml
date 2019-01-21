@@ -146,7 +146,7 @@
   cat: 'gl'
   star: 5
   picture: accessories/Energy Bracelet
-  def: (403 LB0) 803
+  def: 803
   factors:
     - desc: +10% HP
     - desc: 30% Chance of Surviving a Lethal Attack when HP is 10% or above
