@@ -182,6 +182,8 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
     };
 
     this.charRefs.forEach(charRef => {
+      if(!charRef) { return; }
+
       charRef.rush.effects.forEach(rushEff => {
         if(!rushEff.meta) { return; }
 
