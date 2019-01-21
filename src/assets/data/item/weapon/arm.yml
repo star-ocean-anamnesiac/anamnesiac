@@ -11,7 +11,77 @@
     - desc: -10% AP cost
     - desc: 80% chance to survive a lethal attack at 10% or more HP
   thirdFactorLB: 5
-  obtained: Gacha (Limited)
+  obtained: Gacha
 
   notes: >
-    It's an item, 'kay?
+    Light imbue arms and as I type this the only elemental arms you can get. A must keep, even if you don't have HMillie these will come
+    in useful later.
+    
+- name: Atomic Arms
+  cat: 'gl'
+  star: 5
+  picture: arms/Atomic Arms
+  atk: 650
+  int: 649
+  factors:
+    - desc: +15% DMG to Single Target
+    - desc: +10% ATK DMG when Hit Count is 100 or more.
+    - desc: 5% HP recovery every 3 seconds.
+  thirdFactorLB: 5
+  obtained: Gacha/Coin Exchange
+
+  notes: >
+    They're alright if you lack other options but not ideal compared to the other coin shop or gacha alternatives. You can fodder these if
+    you have any other neutral arms weapon.
+    
+- name: Super Puncher
+  cat: 'gl'
+  star: 5
+  picture: arms/Great Punch (Super Puncher)
+  atk: 517
+  int: 510
+  factors:
+    - desc: +15% ATK
+    - desc: +50% AP Recovery Speed
+    - desc: 30% Chance to Survive a Lethal Attack at 20% or more HP
+  thirdFactorLB: 3
+  obtained: Gacha/Coin Exchange
+
+  notes: >
+    The best neutral arms you can get right now. The grit chance is super weak but you're more in it for the first two factors and
+    it'll save you now and again which you'll appreciate.
+    
+- name: Polar Bear Paws
+  cat: 'gl'
+  star: 5
+  picture: arms/Polar Bear's Punch (Polar Bear Paws)
+  atk: 960
+  int: 955
+  factors:
+    - desc: +40% DMG to Demons
+    - desc: 80% Chance to Survive a Lethal Attack at 10% or more HP
+    - desc: 5% HP recovery every 3 seconds.
+  thirdFactorLB: 5
+  obtained: Gacha
+
+  notes: >
+    An alright weapon. You'll happily take it and use it on demons if you have no element option. Quite defensive factors which will
+    help you stay alive.
+    
+- name: Farmer's Arms
+  cat: 'gl'
+  star: 5
+  picture: arms/Farmer's Arms
+  atk: 510
+  int: 509
+  factors:
+    - desc: +50% DMG on Lantern Burst
+    - desc: +10% Rush DMG when Hit Count is 100 or more.
+    - desc: -10% ATK DMG taken (Short Range)
+  thirdFactorLB: 5
+  obtained: Pumpkin Cryptvine Exchange
+
+  notes: >
+    An event weapon for Halloween Millie. They're pretty good for her giving Lantern Burst a huge damage boost and providing a 
+    rare buff to rush damage if you're over a certain hit count. The third factor will regularly be relevant as well so worth keeping
+    while the pool is so small.

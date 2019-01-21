@@ -32,7 +32,7 @@ JP and GL data are stored in the same files, but they have one primary differenc
 
 ### Metadata
 
-Some skills, talents, and rushes have a `meta` block associated with them. This is the metadata used by the Party Creator to figure out how abilities should stack. These notes are taken from [https://docs.google.com/spreadsheets/d/1Pt8C20Zcu4yRCAFIJrKwG9I-agkrhpzi6W-DSKOorDM/edit](the JP spreadsheet). If you add new skills, talents, or rushes that boost attributes, please add the meta block too!
+Some skills, talents, and rushes have a `meta` block associated with them. This is the metadata used by the Party Creator to figure out how abilities should stack. These notes are taken from [the JP spreadsheet](https://docs.google.com/spreadsheets/d/1Pt8C20Zcu4yRCAFIJrKwG9I-agkrhpzi6W-DSKOorDM/edit). If you add new skills, talents, or rushes that boost attributes, please add the meta block too!
 
 ### Reviews
 
