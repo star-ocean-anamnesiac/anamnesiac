@@ -37,6 +37,16 @@ import { Character } from '../models/character';
       There are no characters for this region.
     </div>
 
+    <ion-row *ngIf="filteredCharacters.length > 0">
+      <ion-col text-center *ngFor="let charClass of ['attacker', 'defender', 'healer', 'invoker', 'sharpshooter']">
+        <ion-button icon-only 
+                (click)="setRoleFilter(charClass)"
+                [color]="roleFilter && roleFilter === charClass ? charClass : (roleFilter ? 'medium' : charClass)">
+          <ion-img [src]="'assets/classes/' + charClass + '.png'" class="filter-icon"></ion-img> 
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
     <ion-list *ngIf="filteredCharacters.length > 0">
       <ion-item *ngFor="let char of filteredCharacters" (click)="selectChar(char)">
         <ion-img slot="start" [src]="'assets/characters/' + char.picture + '.png'" class="mini-picture-icon"></ion-img>
@@ -51,12 +61,19 @@ import { Character } from '../models/character';
   </ion-content>
   `,
   styles: [`
+    .filter-icon {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+    }
   `]
 })
 export class CharacterListModal implements OnInit {
 
-  public characters: Character[];
-  public filteredCharacters: Character[];
+  public characters: Character[] = [];
+  public filteredCharacters: Character[] = [];
+
+  public roleFilter: string;
 
   public search: boolean;
   public searchValue: string;
@@ -69,6 +86,17 @@ export class CharacterListModal implements OnInit {
   ngOnInit() {
     this.search = true;
     this.characters = this.navParams.get('characters');
+    this.updateFilteredCharacters();
+  }
+
+  setRoleFilter(charClass: string) {
+    if(this.roleFilter === charClass) {
+      this.roleFilter = '';
+      this.updateFilteredCharacters();
+      return;
+    }
+
+    this.roleFilter = charClass;
     this.updateFilteredCharacters();
   }
 
@@ -94,6 +122,10 @@ export class CharacterListModal implements OnInit {
 
     if(this.searchValue) {
       sortedChars = sortedChars.filter(x => includes(x.name.toLowerCase(), this.searchValue.toLowerCase()));
+    }
+
+    if(this.roleFilter) {
+      sortedChars = sortedChars.filter(x => x.type === this.roleFilter);
     }
 
     this.filteredCharacters = sortedChars;

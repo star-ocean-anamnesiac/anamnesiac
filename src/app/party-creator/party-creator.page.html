@@ -20,78 +20,68 @@
   <div class="stars medium"></div>
   <div class="stars large"></div>
 
-  <ion-list>
-    <ion-item-divider><strong>Chosen Party</strong></ion-item-divider>
-  </ion-list>
+  <div class="blank-slate" *ngIf="!isReady">
+    <ion-spinner></ion-spinner> Loading...
+  </div>
 
-  <ion-list>
-    <ion-item *ngFor="let char of charRefs; let i = index" detail (click)="openModal(i)">
-      <span *ngIf="!char">You need to choose a party member for slot {{ i + 1 }}</span>
-
-      <ng-container *ngIf="char">
-        <ng-container *ngTemplateOutlet="character; context: { char: char }"></ng-container>
-      </ng-container>
-
-      <!-- TODO: display something like:
-        -> return arrow, choose a weapon (have it be indented a bit)
-        -> return arrow, choose an accessory (also indented)
-
-        should only display when char chosen. popup needs to get a list of all weapons / acc.
-      -->
-    </ion-item>
-  </ion-list>
-
-  <ion-list>
-    <ion-item-divider><strong>Optimal Buff Matrix</strong></ion-item-divider>
-  </ion-list>
-
-  <ion-list>
-    <ion-item *ngFor="let optbuff of optimalBuffs | keyvalue">
-      <ion-label>
-        <div>Base Buff: {{ optbuff.key }} +{{ optbuff.value }}%</div>
+  <ng-container *ngIf="isReady">
+    <ion-list>
+      <ion-item-divider><strong>Chosen Party</strong></ion-item-divider>
+    </ion-list>
   
-        <div class="additional-buff-row" *ngIf="characterOptimalBuffBoosts[optbuff.key]">
-          <span *ngFor="let specialcharbuff of characterOptimalBuffBoosts[optbuff.key]" class="text-align-center margin-right buff-character">
-            <ion-img [src]="characterSprites[specialcharbuff.character]" class="inline-picture-icon"></ion-img> +{{ optbuff.value + specialcharbuff.boost }}%
-          </span>
-        </div>
-      </ion-label>
-    </ion-item>
-  </ion-list>
-
-  <ion-list>
-    <ion-item-divider><strong>All Party Buffs</strong></ion-item-divider>
-  </ion-list>
-
-  <ion-list *ngFor="let buffpriority of buffs | keyvalue">
-
-    <ion-item-divider><strong>Priority {{ buffpriority.key }} - {{ buffPriorityDescs[buffpriority.key] }}</strong></ion-item-divider>
-
-    <ion-item-group *ngFor="let bufftype of buffpriority.value | keyvalue">
-      <ion-item-divider>Buff: {{ bufftype.key }}</ion-item-divider>
-
-      <ion-item *ngFor="let buffData of bufftype.value; let i = index" [class.faded]="buffpriority.key !== '4' && i > 0">
-        <span slot="start">
-          {{ buffData.buff }} +{{ buffData.buffValue }}%
-        </span>
-
-        <span slot="end" class="text-align-center">
-          <ion-img [src]="characterSprites[buffData.sourceCharacter]" class="inline-picture-icon"></ion-img> {{ buffData.source }}
-        </span>
+    <ion-list>
+      <ion-item *ngFor="let char of charRefs; let i = index" detail (click)="openModal(i)">
+        <span *ngIf="!char">You need to choose a party member for slot {{ i + 1 }}</span>
+  
+        <ng-container *ngIf="char">
+          <ng-container *ngTemplateOutlet="character; context: { char: char }"></ng-container>
+        </ng-container>
       </ion-item>
-    </ion-item-group>
+    </ion-list>
+  
+    <ion-list>
+      <ion-item-divider><strong>Optimal Buff Matrix</strong></ion-item-divider>
+    </ion-list>
+  
+    <ion-list>
+      <ion-item *ngFor="let optbuff of optimalBuffs | keyvalue">
+        <ion-label>
+          <div>Base Buff: {{ optbuff.key }} +{{ optbuff.value }}%</div>
     
-  </ion-list>
-
-  <!--
-    buff table below, functionality:
-
-    - conflicts are resolved by picking the highest number from each priority (1, 2, 3)
-    - show crossed-out or faded ones if they were not chosen
-    - show priority 4 and who it is assigned to
-    - show total buffs per character
-  -->
-
+          <div class="additional-buff-row" *ngIf="characterOptimalBuffBoosts[optbuff.key]">
+            <span *ngFor="let specialcharbuff of characterOptimalBuffBoosts[optbuff.key]" class="text-align-center margin-right buff-character">
+              <ion-img [src]="characterSprites[specialcharbuff.character]" class="inline-picture-icon"></ion-img> +{{ optbuff.value + specialcharbuff.boost }}%
+            </span>
+          </div>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  
+    <ion-list>
+      <ion-item-divider><strong>All Party Buffs</strong></ion-item-divider>
+    </ion-list>
+  
+    <ion-list *ngFor="let buffpriority of buffs | keyvalue">
+  
+      <ion-item-divider><strong>Priority {{ buffpriority.key }} - {{ buffPriorityDescs[buffpriority.key] }}</strong></ion-item-divider>
+  
+      <ion-item-group *ngFor="let bufftype of buffpriority.value | keyvalue">
+        <ion-item-divider>Buff: {{ bufftype.key }}</ion-item-divider>
+  
+        <ion-item *ngFor="let buffData of bufftype.value; let i = index" [class.faded]="buffpriority.key !== '4' && i > 0">
+          <span slot="start">
+            {{ buffData.buff }} +{{ buffData.buffValue }}%
+          </span>
+  
+          <span slot="end" class="text-align-center">
+            <ion-img [src]="characterSprites[buffData.sourceCharacter]" class="inline-picture-icon"></ion-img> {{ buffData.source }}
+          </span>
+        </ion-item>
+      </ion-item-group>
+      
+    </ion-list>
+  </ng-container>
+  
 </ion-content>
 
 <ng-template #character let-char="char">

@@ -44,6 +44,8 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
 
   public characterSprites: { [key: string]: string } = {};
 
+  public isReady: boolean;
+
   constructor(
     private router: Router,
     private activatedRoute: ActivatedRoute,
@@ -74,6 +76,7 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
       });
 
     this.characters$ = this.dataService.characters$.subscribe(chars => {
+      this.isReady = true;
       this.updateRegionBasedOn(this.localStorage.retrieve('isJP'));
       this.allCharacters = chars;
 
@@ -104,6 +107,8 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
   }
 
   private updateParty() {
+    if(!this.isReady) { return; }
+
     const party = this.getParty();
     const partyChars = party.split(',');
     partyChars.forEach((charName, i) => {
