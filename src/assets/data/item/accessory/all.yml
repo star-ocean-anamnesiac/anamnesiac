@@ -50,3 +50,108 @@
 
   notes: >
     Not recommended due to it's inconsistencies, much safer to use a unit in order to resist paralysis due to 50% not being reliable. Use as DEF stat stick if you're lazy (and don't want to unequip units when switching characters).
+
+- name: Fire Amulet IV
+  cat: 'gl'
+  star: 5
+  picture: accessories/Armlet of Fire IV (Fire Armlet IV)
+  def: 753
+  factors:
+    - desc: +100% Fire Resistance
+    - desc: None
+  obtained: Gerel (Exchange)
+
+  notes: >
+    Nothing of note to use for yet, Michael being maybe the first boss where this can be useable. Use as DEF stat stick if you're lazy (and don't want to unequip units when switching characters).
+
+- name: Resolve Talisman IV
+  cat: 'gl'
+  star: 5
+  picture: accessories/Talisman of Indomitability IV (Talisman of Resolve IV)
+  def: 753
+  factors:
+    - desc: 20% Chance of Surviving a Lethal Attack at 10% HP or more
+    - desc: None
+  obtained: Jie Revorse (Exchange, Drop) and Geared Wisp (Achievement)
+
+  notes: >
+    Guts is great, but there are better alternatives. However this isn't a bad choice to use on Maria, as she does not gain from the protection armlet (true for anyone else with damage reduction). 
+  
+- name: Anti Freezing Amulet IV
+  cat: 'gl'
+  star: 5
+  picture: accessories/Freeze Check IV (Anti-Freezing Amulet IV)
+  def: 753
+  factors:
+    - desc: 50% Chance of Freezing Nullification
+    - desc: None
+  obtained: Jie Revorse (Exchange, Drop)
+
+  notes: >
+    Not recommended due to it's inconsistencies, much safer to use a unit in order to resist freezing due to 50% not being reliable. Use as DEF stat stick if you're lazy (and don't want to unequip units when switching characters).
+
+- name: Protection Armlet IV
+  cat: 'gl'
+  star: 5
+  picture: accessories/Armlet of Protection IV (Protection Armlet IV)
+  def: 753
+  factors:
+    - desc: -10% DMG Taken
+    - desc: None
+  obtained: Jie Revorse (Exchange, Drop)
+
+  notes: >
+    Great accessory to use, doesn't stack with talents but for the current meta-game, it is the go to. Flat damage reduction is great.
+
+- name: Symbol of the Snow God
+  cat: 'gl'
+  star: 5
+  picture: accessories/Crest of the Ice God (Symbol of the Snow God)
+  def: 728
+  factors:
+    - desc: 25% Chance of Freezing Nullification
+    - desc: +10% HIT
+  obtained: Eternal Queen (Exchange, Drop) and Christmas Horndevil (Achievement, Exchange)
+
+  notes: >
+    It's okay. You can throw this on a DPS if you want, but HIT has very little impact on crit chance unless your HIT reaches 1100+. Use as DEF stat stick if you're lazy (and don't want to unequip units when switching characters). If you want to try to increase your offense just a little bit, worth running on someone who can't use another accessory well. Shooters mainly. 
+
+- name: Hawkeye Charm
+  cat: 'gl'
+  star: 5
+  picture: accessories/Hawkeye Charm
+  def: 728
+  factors:
+    - desc: +10% Crit Rate
+    - desc: +5% Stun Rate
+  obtained: Eternal Queen (Achievement)
+
+  notes: >
+    Excellent accesory, its own downside being that it's not MLB-able at the moment, meaning less DEF if choosing to run it. Crit rate pre-rush is an excellent invisible damage booster (the first acc to do so) and stun rate is great when lacking either in talents. 
+    
+- name: Symbol of the Sea God
+  cat: 'gl'
+  star: 5
+  picture: accessories/Crest of the Sea God (Symbol of the Sea God)
+  def: 728
+  factors:
+    - desc: +25% Seal Resist
+    - desc: -10% INT DMG Taken
+  obtained: Millioneyes (Exchange, Drop)
+
+  notes: >
+    Beats Snow God. INT damage is at least a quantifiable stat with visible benefits, and has the bonus of not being common on too many units. However, when paired with SMyu/Reimi, this has no use aside from stat stick. MLB'able as well. Thankfully, it stacks with regular damage taken. 
+    
+- name: Energy Bracelet
+  cat: 'gl'
+  star: 5
+  picture: accessories/Energy Bracelet
+  def: (403 LB0) 803
+  factors:
+    - desc: +10% HP
+    - desc: 30% Chance of Surviving a Lethal Attack when HP is 10% or above
+  obtained: Millioneyes (Achievement)
+
+  notes: >
+    A slight talent upgrade to the Resolve accessory, which unfortunately we can't MLB. HP isn't bad and for what it's worth it stacks with other talents, given that HP is a pre-battle stat buff. 30% chance also visually looks better than 20%. Overall quite usable, consider on Maria/SMyuria when not running something offensive.
+    
