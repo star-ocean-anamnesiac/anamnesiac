@@ -39,10 +39,10 @@ import { Character } from '../models/character';
 
     <ion-row *ngIf="filteredCharacters.length > 0">
       <ion-col text-center *ngFor="let charClass of ['attacker', 'defender', 'healer', 'invoker', 'sharpshooter']">
-        <ion-button icon-only 
+        <ion-button icon-only
                 (click)="setRoleFilter(charClass)"
                 [color]="roleFilter && roleFilter === charClass ? charClass : (roleFilter ? 'medium' : charClass)">
-          <ion-img [src]="'assets/classes/' + charClass + '.png'" class="filter-icon"></ion-img> 
+          <ion-img [src]="'assets/classes/' + charClass + '.png'" class="filter-icon"></ion-img>
         </ion-button>
       </ion-col>
     </ion-row>
