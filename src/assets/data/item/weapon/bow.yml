@@ -147,3 +147,38 @@
   notes: >
     A wind bow that retires the one you got from Jie. The recovery is a nice factor that to have, and it actually has a pretty good
     mlb factor to reward the player for getting to that point.
+    
+- name: Heaven's Bow
+  cat: 'gl'
+  star: 5
+  picture: bows/Halo Stringer
+  atk: 958
+  int: 963
+  element: Light
+  factors:
+    - desc: Imbue Light Element/+20% Light DMG Dealt
+    - desc: -10% AP Cost
+    - desc: 80% Chance to Survive a Lethal Attack at 20% HP or more
+  thirdFactorLB: 5
+  obtained: gacha
+  
+  notes: >
+    A light imbue bow that offers some solid factors, it boosts light damage dealt and the AP cost reduction is sizeable enough that
+    it can be pretty relevant to allow certain damage rotations. A great pick-up if you get it.
+    
+- name: Reincarnation
+  cat: 'gl'
+  star: 5
+  picture: bows/Victory Bow・Flare Spread (Grand Flared Bow)
+  atk: 857
+  int: 863
+  factors:
+    - desc: +15% DMG on Heaven's Judgement
+    - desc: Recover 3% HP every 5 seconds at long range
+    - desc: +30% AP Recovery at long range
+  thirdFactorLB: 5
+  obtained: FFBE Gacha Box
+  
+  notes: >
+    Not a great bow, stats are decent by GL standards but it's effects are weak, even for Fina who it's intended for. Probably better
+    off at fodder unless you've nothing better.
