@@ -1,5 +1,5 @@
 
-import { includes, find, clone, groupBy, sortBy } from 'lodash';
+import { includes, find, clone, groupBy, sortBy, isUndefined } from 'lodash';
 
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
@@ -57,6 +57,8 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
   private filteredCharacters: Character[];
 
   public region: string;
+  public conditionToggle: boolean;
+  public roleToggle: boolean;
   public showShare: boolean;
 
   public buffPriorityDescs = {
@@ -89,6 +91,9 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
     this.characters.length = 4;
     this.charRefs.length = 4;
 
+    this.roleToggle = this.roleToggleParam();
+    this.conditionToggle = this.conditionalToggleParam();
+
     this.localStorage.observe('isJP').subscribe(val => {
       this.updateRegionBasedOn(val);
       this.updateCharacters();
@@ -118,6 +123,20 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
   ngOnDestroy() {
     this.router$.unsubscribe();
     this.characters$.unsubscribe();
+  }
+
+  public toggleCondition() {
+    this.conditionToggle = !this.conditionToggle;
+    this.navigateHere();
+
+    this.updateBuffs();
+  }
+
+  public toggleRole() {
+    this.roleToggle = !this.roleToggle;
+    this.navigateHere();
+
+    this.updateBuffs();
   }
 
   public share() {
@@ -165,16 +184,22 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
     this.updateBuffs();
   }
 
-  private updateRegionBasedOn(val: boolean) {
-    this.region = val ? 'jp' : 'gl';
-
+  private navigateHere() {
     this.router.navigate([], {
       relativeTo: this.activatedRoute,
       queryParams: {
         region: this.region,
-        party: this.getParty()
+        party: this.getParty(),
+        conditional: ~~this.conditionToggle,
+        role: ~~this.roleToggle
       }
     });
+  }
+
+  private updateRegionBasedOn(val: boolean) {
+    this.region = val ? 'jp' : 'gl';
+
+    this.navigateHere();
   }
 
   async openModal(index: number) {
@@ -207,6 +232,18 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
   private getParty(): string {
     const parameters = new URLSearchParams(window.location.search);
     return parameters.get('party') || '';
+  }
+
+  private conditionalToggleParam(): boolean {
+    const parameters = new URLSearchParams(window.location.search);
+    const param = parameters.get('conditional');
+    return isUndefined(param) ? true : !!+param;
+  }
+
+  private roleToggleParam(): boolean {
+    const parameters = new URLSearchParams(window.location.search);
+    const param = parameters.get('role');
+    return isUndefined(param) ? true : !!+param;
   }
 
   private updatePictures() {
@@ -297,6 +334,9 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
         }
 
         const buffData = this.buffs[priorityKey][buffKey][0];
+
+        if(buffData.buffRole && !this.roleToggle) { return; }
+        if(buffData.buffCondition && !this.conditionToggle) { return; }
 
         if(buffData.buffRole) {
 

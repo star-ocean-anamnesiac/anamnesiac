@@ -40,7 +40,16 @@
     </ion-list>
   
     <ion-list>
-      <ion-item-divider><strong>Optimal Buff Matrix</strong></ion-item-divider>
+      <ion-item-divider>
+        <strong>Optimal Buff Matrix</strong>
+
+        <ion-button color="secondary" fill="outline" icon-left slot="end" (click)="toggleRole()">
+          <ion-icon [name]="roleToggle ? 'checkbox-outline' : 'square-outline'"></ion-icon>&nbsp;Role Buffs
+        </ion-button>
+        <ion-button color="secondary" fill="outline" icon-left slot="end" (click)="toggleCondition()">
+          <ion-icon [name]="conditionToggle ? 'checkbox-outline' : 'square-outline'"></ion-icon>&nbsp;Conditional Buffs
+        </ion-button>
+      </ion-item-divider>
     </ion-list>
 
     <ion-list *ngIf="!getParty()">
@@ -86,7 +95,13 @@
           <ion-item-divider>Buff: {{ bufftype.key }}</ion-item-divider>
     
           <ion-item *ngFor="let buffData of bufftype.value; let i = index" 
-                    [class.faded]="buffpriority.key !== '4' && buffpriority.key !== '3' && i > 0 && buffData.buffValue !== bufftype.value[0].buffValue">
+                    [class.faded]="
+                    (buffpriority.key !== '4' 
+                      && buffpriority.key !== '3' 
+                      && i > 0 
+                      && buffData.buffValue !== bufftype.value[0].buffValue)
+                    || (buffData.buffRole && !roleToggle)
+                    || (buffData.buffCondition && !conditionToggle)">
             <span slot="start">
               <p>{{ buffData.buff }} +{{ buffData.buffValue }}%</p>
               <p *ngIf="buffData.buffRole">
