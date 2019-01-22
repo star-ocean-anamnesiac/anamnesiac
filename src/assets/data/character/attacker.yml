@@ -212,7 +212,6 @@
     name: "Steel Fists of Fury"
     effects: 
       - desc: N/A
-        duration: 0
     power: ATK x 4500%
     maxHits: 25
 
@@ -511,7 +510,6 @@
     effects: 
       - desc: Cure status ailments
         all: true
-        duration: 0
       - desc: Single Target Damage Dealt +40%
         all: true
         duration: 20
@@ -748,7 +746,6 @@
     name: "Unholy Torrent"
     effects: 
       - desc: Occasionally freezes foes.
-        duration: N/A
     power: ATK x4000%
     maxHits: 13
     

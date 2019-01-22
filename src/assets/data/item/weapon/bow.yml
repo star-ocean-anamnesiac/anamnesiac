@@ -40,7 +40,6 @@
   factors:
     - desc: +15% Ice DMG Dealt
     - desc: +20% DMG on Heavenly Flight
-  thirdFactorLB: N/A
   obtained: Gacha/Transmute/Coin Exchange
   
   notes: >
@@ -108,7 +107,7 @@
     - desc: +20% DMG on Wave Motion
     - desc: +10% DMG to Divine
     - desc: Additional Hit that Deals 5% of DMG Dealt by Normal Attacks
-  thirdFactorLB: 3/4/5
+  thirdFactorLB: 3
   obtained: Blood Valkyrie (Exchange)
   
   notes: >
@@ -124,7 +123,7 @@
     - desc: +20% DMG to Divinities
     - desc: +25% DMG on Wave Motion
     - desc: Additional Hit that Deals 5% of DMG Dealt by Normal Attacks
-  thirdFactorLB: 1/5
+  thirdFactorLB: 1
   obtained: Blood Valkyrie (Exchange)
   
   notes: >

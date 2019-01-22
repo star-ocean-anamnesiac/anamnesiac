@@ -175,7 +175,7 @@
       effects: 
         - desc: Reduce Symbol Invoking Time by 30%
           meta:
-            priority: 4t
+            priority: 4
             buff: Cast Time Reduction
             buffValue: 30
     - name: "Beginner's Luck"

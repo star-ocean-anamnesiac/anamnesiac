@@ -9,13 +9,13 @@ export enum BuffPriority {
 export interface Meta {
 
   // the meta-source - THIS IS AUTOMATICALLY ASSIGNED
-  source: string;
+  source?: string;
 
   // the meta-source character - THIS IS AUTOMATICALLY ASSIGNED
-  sourceCharacter: string;
+  sourceCharacter?: string;
 
   // the meta-source image - THIS IS AUTOMATICALLY ASSIGNED
-  sourceImage: string;
+  sourceImage?: string;
 
   // the priority of the meta
   priority: BuffPriority;

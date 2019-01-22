@@ -3,7 +3,7 @@ import { Meta } from './meta';
 export interface Factor {
   desc: string;
 
-  meta: Meta;
+  meta?: Meta;
 }
 
 export interface Item {
@@ -12,13 +12,13 @@ export interface Item {
   name: string;
 
   // whether the character is on global or jp
-  cat: 'gl'|'jp';
+  cat: string;
 
   // item type - this is done internally, automatically
-  type: 'weapon'|'accessory';
+  type?: string;
 
   // item subtype - this is done internally, automatically
-  subtype: string;
+  subtype?: string;
 
   // the star rating in game (1-5)
   star: number;

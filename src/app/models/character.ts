@@ -23,14 +23,14 @@ export interface Skill {
   // the name of the skill
   name: string;
 
-  // the power of the skill (f.ex, INT x5000%)
-  power: string;
+  // the power of the skill (f.ex, INT x 5000%)
+  power?: string;
 
   // the ap cost of the skill
-  ap: number;
+  ap?: number;
 
   // the number of max hits the skill can do
-  maxHits: number;
+  maxHits?: number;
 
   // the element of the skill
   element?: string;
@@ -42,7 +42,7 @@ export interface Skill {
   highlight?: boolean;
 
   // the skill metadata
-  meta: Meta;
+  meta?: Meta;
 }
 
 export interface Effect {
@@ -57,7 +57,7 @@ export interface Effect {
   duration?: number;
 
   // the effect metadata
-  meta: Meta;
+  meta?: Meta;
 }
 
 export interface Character {
@@ -69,7 +69,7 @@ export interface Character {
   type: string;
 
   // whether the character is on global or jp
-  cat: 'gl' | 'jp';
+  cat: string;
 
   // the rating 0-10
   rating: number;
@@ -81,10 +81,10 @@ export interface Character {
   weapon: string;
 
   // whether the character is ace or not
-  ace: boolean;
+  ace?: boolean;
 
   // whether the character is limited or not
-  limited: boolean;
+  limited?: boolean;
 
   // the rating of the character in game (3/4/5)
   star: number;
