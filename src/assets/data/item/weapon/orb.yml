@@ -8,6 +8,116 @@
   factors:
     - desc: Lightning/Dark damage +30%
     - desc: 80% chance to survive a lethal attack when HP is greater than 10%
-    - desc: Damage taken -30% at less than 50% hHP
+    - desc: Damage taken -30% at less than 50% HP
   thirdFactorLB: 5
   obtained: Gacha
+  
+  notes: >
+    An incredible weapon. Good for both Summer Sophia and Fiore due to it's dual element boost. It has very good defensive factors on it
+    with grit being strong on a healer like Summer Sophia in particular. Keep it if you pull it.
+    
+- name: Blue Star Gadget
+  cat: 'gl'
+  star: 5
+  picture: orbs/Bluestar Gadget
+  atk: 507
+  int: 510
+  factors:
+    - desc: +15% INT
+    - desc: -10% DMG Taken
+    - desc: Recover 10% HP every 3 seconds
+  thirdFactorLB: 5
+  obtained: Gacha / Orb Coin Exchange
+  
+  notes: >
+    If you haven't got an orb yet this is probably the one from the shop to go for. It's similar to winged scepter for staff users 
+    except more universal since it trades buffing a skill for damage reduction, which is generally nice. The INT scaling helps make
+    up for a lack of stats and getting it to MLB will give a pretty strong regen effect.
+    
+- name: Craggy Gem
+  cat: 'gl'
+  star: 5
+  picture: orbs/Rumbling Gem (Craggy Gem)
+  atk: 507
+  int: 510
+  factors:
+    - desc: +15% DMG to Mutliple Targets
+    - desc: +30% AP Recovery by Normal Attacks
+    - desc: +10% DMG
+  thirdFactorLB: 5
+  obtained: Gacha / Orb Coin Exchange
+  
+  notes: >
+    Not a bad weapon, however the Blue Star Gadget is better, especially since there are now quite a few characters who give better 
+    versions of the second and third factor in the meta, making them redundant.
+    
+- name: Oceans Eye
+  cat: 'gl'
+  star: 5
+  picture: orbs/Beach Sphere (Ocean's Eye)
+  atk: 507
+  int: 510
+  factors:
+    - desc: +20% DMG on Lightning Blast
+    - desc: +10% DMG to Single Target
+    - desc: 60% Chance to Survive a Lethal Attack at 20% HP or more
+  thirdFactorLB: 5
+  obtained: Millioneyes Exchange
+  
+  notes: >
+    The event weapon for Summer Sophia. It's pretty good for her with some reasonable factors, buffing her main damage skill, a decent
+    grit chance and a small damage buff. However there are better orbs for her so it's probably worth foddering this when you obtain
+    a superior weapon.
+    
+- name: Evil Pumpkin
+  cat: 'gl'
+  star: 5
+  picture: orbs/Magic Lantern Southern Melon Sphere (Evil Pumpkin)
+  atk: 956
+  int: 963
+  factors:
+    - desc: +20% Element DMG / +30% DMG to Plants
+    - desc: +10% Crit Rate / +10% Crit DMG
+    - desc: 5% HP Recovery every 3 seconds
+  thirdFactorLB: 3
+  obtained: Gacha
+  
+  notes: >
+    The factors may look good but don't let them fool you. There will be better orbs for certain characters that focus on their element.
+    Against plant bosses however it is very good, and getting its 3rd factor at lb3 is a nice plus for it. Worth holding on to but
+    you can do better orb wise.
+    
+- name: Langdauq Orb
+  cat: 'gl'
+  star: 5
+  picture: orbs/Landock Orb
+  atk: 528
+  int: 533
+  factors:
+    - desc: +20% DMG on Extinction
+    - desc: +10% Crit Rate
+    - desc: +50% AP RCV by Normal Attacks
+  thirdFactorLB: 5
+  obtained: Alma Achievement
+  
+  notes: >
+    Event weapon for Fiore. Not the worst factors in the world, but you should only really use this if you don't have another orb 
+    available to you.
+    
+- name: Black Globe Gear
+  cat: 'gl'
+  star: 5
+  picture: orbs/Black Globe Gear
+  atk: 960
+  int: 962
+  factors:
+    - desc: +40% Dark DMG Dealt / +10% DMG to Divine
+    - desc: +10% Crit Rate / +10% Crit DMG
+    - desc: 80% Chance to Survive a Lethal Attack when HP is 20% or more
+  thirdFactorLB: 5
+  obtained: Gacha
+  
+  notes: >
+    The BiS for Fiore. Comparing this to pumpkin may show you why pumpkin is bad. Boosts dark damage significantly while also adding a
+    slighty amount of racial hate. The third factor is a nice one if you have some kind of healing in your party. Great weapon if you
+    have Fiore so do keep it.
