@@ -6,6 +6,7 @@ export interface Note {
 
 export interface Update {
   date: string;
+  general?: Note[];
   characterAdditions?: Note[];
   characterChanges?: Note[];
   itemAdditions?: Note[];

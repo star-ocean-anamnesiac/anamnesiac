@@ -1,3 +1,8 @@
+- date: 2018-01-21
+  general:
+    - name: Party Creator
+      notes: Early version of party creator is online.
+
 - date: 2018-12-18
   characterAdditions:
     - name: 2B
