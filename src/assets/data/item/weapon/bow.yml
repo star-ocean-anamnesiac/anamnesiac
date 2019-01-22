@@ -169,7 +169,7 @@
 - name: Reincarnation
   cat: 'gl'
   star: 5
-  picture: bows/Victory Bow・Flare Spread (Grand Flared Bow)
+  picture: bows/Reincarnation
   atk: 857
   int: 863
   factors:
