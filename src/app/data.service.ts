@@ -1,5 +1,7 @@
 
 
+import { default as allAppData } from './data.json';
+
 import YAML from 'js-yaml';
 import axios from 'axios';
 
@@ -36,9 +38,10 @@ export class DataService {
   constructor() { }
 
   async loadRootData() {
+    console.log(allAppData);
+    
     this.loadChangelog();
-    const { data } = await axios.get('assets/data/root.yml');
-    const { classes, weapons, accessories } = YAML.safeLoad(data);
+    const { classes, weapons, accessories } = allAppData.root;
 
     this.classes = classes.map(x => ({ id: x.toLowerCase(), name: x }));
     this.weaponTypes = weapons;
@@ -50,8 +53,7 @@ export class DataService {
   }
 
   private async loadChangelog() {
-    const { data } = await axios.get('assets/data/changelog.yml');
-    this.updates = YAML.safeLoad(data);
+    this.updates = allAppData.changelog;
   }
 
   public properifyItem(id: string): string {
@@ -59,37 +61,11 @@ export class DataService {
   }
 
   private loadAllDetailData() {
-    this.classes.forEach(async ({ id }) => {
-      const { data } = await axios.get(`assets/data/character/${id}.yml`);
-      const characters = YAML.safeLoad(data);
-
-      characters.forEach(char => char.type = id);
-      this.characters.push(...characters);
-    });
+    this.characters = allAppData.allCharacters;
 
     this.characters$.next(this.characters);
-
-    this.weaponTypes.forEach(async ({ id }) => {
-      const { data } = await axios.get(`assets/data/item/weapon/${id}.yml`);
-      const weapons = YAML.safeLoad(data);
-
-      weapons.forEach(weap => {
-        weap.type = 'weapon';
-        weap.subtype = id;
-      });
-      this.items.push(...weapons);
-    });
-
-    this.accessoryTypes.forEach(async ({ id }) => {
-      const { data } = await axios.get(`assets/data/item/accessory/${id}.yml`);
-      const accessories = YAML.safeLoad(data);
-
-      accessories.forEach(weap => {
-        weap.type = 'accessory';
-        weap.subtype = id;
-      });
-      this.items.push(...accessories);
-    });
+    
+    this.items = allAppData.allItems;
 
     this.items$.next(this.items);
   }
