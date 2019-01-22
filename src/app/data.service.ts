@@ -2,9 +2,6 @@
 
 import { default as allAppData } from './data.json';
 
-import YAML from 'js-yaml';
-import axios from 'axios';
-
 import { BehaviorSubject } from 'rxjs';
 import { Injectable } from '@angular/core';
 
@@ -37,9 +34,7 @@ export class DataService {
 
   constructor() { }
 
-  async loadRootData() {
-    console.log(allAppData);
-    
+  async loadRootData() {    
     this.loadChangelog();
     const { classes, weapons, accessories } = allAppData.root;
 
