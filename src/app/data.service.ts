@@ -34,7 +34,7 @@ export class DataService {
 
   constructor() { }
 
-  async loadRootData() {   
+  async loadRootData() {
     this.loadChangelog();
     const { classes, weapons, accessories } = allAppData.root;
 
@@ -59,7 +59,7 @@ export class DataService {
     this.characters = allAppData.allCharacters;
 
     this.characters$.next(this.characters);
-    
+
     this.items = allAppData.allItems;
 
     this.items$.next(this.items);
