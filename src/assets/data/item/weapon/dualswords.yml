@@ -12,3 +12,96 @@
     - desc: Additional hit that deals 5% damage of normal attack
   thirdFactorLB: 3
   obtained: Gacha / Dual Blade Coin Exchange
+  
+  notes: >
+    The best dual swords in the neutral slot currently. Attack scaling, helps make up for the lack of stats, the life steal is nice for
+    sustain and the third factor is a nice damage bonus that has synergy with the second factor. Very good to pick up from the coin
+    shop.
+
+- name: Luminous Slicers
+  cat: 'gl'
+  star: 5
+  picture: dualswords/Luminous Slicers
+  atk: 652
+  int: 649
+  factors:
+    - desc: +15% DMG to Multiple Targets
+    - desc: +10% AP RCV
+    - desc: -10% ATK DMG Taken
+  thirdFactorLB: 5
+  obtained: gacha / Dual Blade Coin Exchange / Transmute
+  
+  notes: >
+    Pretty bad pair of swords. The only blades in the transmute pool so you'll be seeing these a lot when trying to make coins. The 
+    factors are bad so just fodder it.
+    
+- name: Crimson Forked Tridents
+  cat: 'gl'
+  star: 5
+  picture: dualswords/Crimson Forked Swords (Tridents)
+  atk: 963
+  int: 956
+  element: Light
+  factors:
+    - desc: Imbues attacks with light element
+    - desc: +10% Crit Rate / +15% Crit DMG
+    - desc: +30% AP RCV Speed
+  thirdFactorLB: 5
+  obtained: gacha
+  
+  notes: >
+    Light imbued dual swords that increase crit rate and damage. The third factor isn't as important due to the amount of AP recovery
+    talents we see now, so don't feel the need to get these to MLB. Good weapon for any Dual Sword user.
+    
+- name: Twin Flying Daggers
+  cat: 'gl'
+  star: 5
+  picture: dualswords/Twin Feather Daggers (Twin Flying Daggers)
+  atk: 652
+  int: 649
+  factors:
+    - desc: +20% DMG on Hazy Wheel
+    - desc: +10% DMG to Single Target (At 100% HP)
+    - desc: Hit Count Timer + 1 second
+  thirdFactorLB: 5
+  obtained: Pumpkin Cryptvine Exchange
+  
+  notes: >
+    Decent dual swords for Halloween Clair, but beyond that they aren't fantastic. Passable if nothing better but Baphomet Blades or
+    imbue weapons should see this gotten rid of.
+    
+- name: Twin Snowswords
+  cat: 'gl'
+  star: 5
+  picture: dualswords/Twin Snowswords
+  atk: 512
+  int: 507
+  factors:
+    - desc: +20% DMG on Helix Blade
+    - desc: Recover 5% HP every 3 seconds
+    - desc: -15% INT DMG Taken at 50+ Hit Count
+  thirdFactorLB: 5
+  obtained: Christmas Horndevil Exchange
+  
+  notes: >
+    Decent dual swords for Winter Evelysse, but beyond that they aren't fantastic. The damage isn't great but gives her some sustain
+    and some extra bulkiness at mlb while buffing her main damage dealing skill. Transmute if you have better.
+    
+- name: Twin Coro Swords
+  cat: 'gl'
+  star: 5
+  picture: dualswords/Twin Koro Edge (Twin Coro Blades)
+  atk: 964
+  int: 956
+  element: Ice
+  factors:
+    - desc: Imbues attacks with ice element
+    - desc: +100% AP Recovery by Normal Attacks
+    - desc: Recover 5% HP on DMG Dealt by Normal Attacks
+  thirdFactorLB: 5
+  obtained: gacha
+  
+  notes: >
+    Good pair of dual swords that with ice imbue. The other two factors reward using normals helping give both AP recovery and some 
+    sustain. All around solid weapon that you should make regular use of.
+    
