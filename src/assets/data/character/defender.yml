@@ -1033,17 +1033,17 @@
         - desc: Undermine inflicts ATK-10% debuff on target for 10s.
           meta:
             priority: 4
-            debuff: ATK
+            buff: Enemy ATK Reduction
             buffValue: 10
         - desc: Undermine inflicts INT-10% debuff on target for 10s.
           meta:
             priority: 4
-            debuff: INT
+            buff: Enemy INT Reduction
             buffValue: 10
         - desc: Undermine inflicts DEF-10% debuff on target for 10s.
           meta:
             priority: 4
-            debuff: DEF
+            buff: Enemy DEF Reduction
             buffValue: 10
     - name: "Young & Skilled"
       effects: 
