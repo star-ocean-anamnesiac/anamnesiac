@@ -94,7 +94,7 @@
         <ion-item-group *ngFor="let bufftype of buffpriority.value | keyvalue">
           <ion-item-divider>Buff: {{ bufftype.key }}</ion-item-divider>
     
-          <ion-item *ngFor="let buffData of bufftype.value; let i = index" 
+          <ion-item *ngFor="let buffData of bufftype.value; let i = index"
                     [class.faded]="
                     (buffpriority.key !== '4' 
                       && buffpriority.key !== '3' 
@@ -102,19 +102,24 @@
                       && buffData.buffValue !== bufftype.value[0].buffValue)
                     || (buffData.buffRole && !roleToggle)
                     || (buffData.buffCondition && !conditionToggle)">
-            <span slot="start">
-              <p>{{ buffData.buff }} +{{ buffData.buffValue }}%</p>
-              <p *ngIf="buffData.buffRole">
-                <small><strong>Role:</strong> {{ buffData.buffRole | titlecase }}</small>
-              </p>
-              <p *ngIf="buffData.buffCondition">
-                <small><strong>Condition:</strong> {{ buffData.buffCondition }}</small>
-              </p>
-            </span>
+
+            <ion-row class="single-talent-row">
+              <ion-col size-md="6" size-sm="12">
+                <p>{{ buffData.buff }} +{{ buffData.buffValue }}%</p>
+                <p *ngIf="buffData.buffRole">
+                  <small><strong>Role:</strong> {{ buffData.buffRole | titlecase }}</small>
+                </p>
+                <p *ngIf="buffData.buffCondition">
+                  <small><strong>Condition:</strong> {{ buffData.buffCondition }}</small>
+                </p>
+              </ion-col>
+
+              <ion-col size-md="6" size-sm="12" class="text-align-center" text-right>
+                <ion-img [src]="characterSprites[buffData.sourceCharacter]" class="inline-picture-icon"></ion-img> {{ buffData.source }}
+              </ion-col>
+                
+            </ion-row>
     
-            <span slot="end" class="text-align-center">
-              <ion-img [src]="characterSprites[buffData.sourceCharacter]" class="inline-picture-icon"></ion-img> {{ buffData.source }}
-            </span>
           </ion-item>
         </ion-item-group>
       </ng-container>

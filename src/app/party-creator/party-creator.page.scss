@@ -10,6 +10,11 @@
 .text-align-center {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+}
+
+.single-talent-row {
+  width: 100%;
 }
 
 .additional-buff-row {
