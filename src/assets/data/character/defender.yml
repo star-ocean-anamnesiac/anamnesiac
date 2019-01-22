@@ -1030,10 +1030,20 @@
           all: true
     - name: "Heart on Fire"
       effects: 
-        - desc: Undermine inflicts ATK/INT/DEF-10% debuff on target for 10s.
+        - desc: Undermine inflicts ATK-10% debuff on target for 10s.
           meta:
             priority: 4
-            debuff: ATK/INT/DEF
+            debuff: ATK
+            buffValue: 10
+        - desc: Undermine inflicts INT-10% debuff on target for 10s.
+          meta:
+            priority: 4
+            debuff: INT
+            buffValue: 10
+        - desc: Undermine inflicts DEF-10% debuff on target for 10s.
+          meta:
+            priority: 4
+            debuff: DEF
             buffValue: 10
     - name: "Young & Skilled"
       effects: 
@@ -1042,7 +1052,7 @@
           meta:
             priority: 1
             buff: Single Target Damage
-            buffValue: 40
+            buffValue: 20
         - desc: Taunt+3
           meta:
             priority: 1
@@ -1051,7 +1061,6 @@
     - name: "Knight of Grandshelt"
       effects:
         - desc: ATK+20%
-          all: true
           meta:
             priority: 4
             buff: ATK
@@ -1086,15 +1095,15 @@
       - desc: AP cost -40%
         duration: 20
         meta:
-          priority: 1
+          priority: 4
           buff: AP Cost Reduction
           buffValue: 40
       - desc: ATK Damage +30%
         duration: 20
         meta:
-            priority: 1
-            buff: ATK
-            buffValue: 30
+          priority: 1
+          buff: ATK
+          buffValue: 30
     power: ATK x 4000%
     maxHits: 12
     
@@ -1129,6 +1138,8 @@
       - Buffs can be overwritten by conditional buffs
       
       - Lacks a ranged combo
+      
+      - Lack of personal bulk
       
       **Rotation**
       
