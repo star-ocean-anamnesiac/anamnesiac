@@ -298,8 +298,22 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
 
         const buffData = this.buffs[priorityKey][buffKey][0];
 
-        allBuffs[buffData.buff] = allBuffs[buffData.buff] || 0;
-        allBuffs[buffData.buff] += buffData.buffValue;
+        if(buffData.buffRole) {
+
+          this.charRefs.forEach(charRef => {
+            if(charRef.type !== buffData.buffRole) return;
+
+            const char = charRef.name;
+
+            specCharacterBuffs[char] = specCharacterBuffs[char] || {};
+            specCharacterBuffs[char][buffData.buff] = specCharacterBuffs[char][buffData.buff] || 0;
+            specCharacterBuffs[char][buffData.buff] += buffData.buffValue;
+          });
+
+        } else {
+          allBuffs[buffData.buff] = allBuffs[buffData.buff] || 0;
+          allBuffs[buffData.buff] += buffData.buffValue;
+        }
       });
     });
 

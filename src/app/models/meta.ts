@@ -24,7 +24,7 @@ export interface Meta {
   buff: string;
 
   // the role that the buff applies to, specifically (lowercase, also)
-  buffRole: string;
+  buffRole?: string;
 
   // the "condition" of the buff (In front of target, not in front of target, etc)
   // this will not be present on many buffs
