@@ -19,19 +19,19 @@
   talents:
     - name: "Fleeting Gentleness"
       effects: 
-        - desc: ATK +45%
+        - desc: Damage +30%
           all: true
           meta:
             priority: 1
-            buff: ATK
-            buffValue: 45
-        - desc: ATK +55% when HP 100%
+            buff: Damage
+            buffValue: 30
+        - desc: ATK +40% when HP 100%
           all: true
           meta:
             priority: 1
-            buff: ATK
+            buff: Damage
             buffCondition: HP at 100%
-            buffValue: 55
+            buffValue: 40
     - name: "Scanner Type"
       effects: 
         - desc: Evasion AP consumption -50%
