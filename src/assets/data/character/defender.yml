@@ -128,7 +128,7 @@
 
 - name: Victor Oakville
   cat: gl
-  rating: 6
+  rating: 5
   picture: victoroakville
   weapon: bns
   star: 5
@@ -502,7 +502,7 @@
     
 - name: Dias Flac
   cat: gl
-  rating: 7
+  rating: 6
   picture: diasflac
   weapon: bns
   ace: true
@@ -892,7 +892,7 @@
     
 - name: Miki Sauvester (Princess)
   cat: gl
-  rating: 4.5
+  rating: 4
   picture: girlsdaymiki
   weapon: bns
   limited: true
@@ -999,4 +999,148 @@
       *Normal > Nether Strike > Bloodstorm Revolution > Nether Strike (100AP damage rotation)*
       
       *Normal > Nether Strike > Flying Guillotine > Nether Strike > Nether Strike (104AP damage rotation)*
+      
+- name: Rain
+  cat: gl
+  rating: 10
+  picture: rain
+  weapon: ohs
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 20580
+    atk: 2884
+    int: 1549
+    def: 2546
+    hit: 819
+    grd: 1022
+
+  talents:
+    - name: "Knight's Honor"
+      effects: 
+        - desc: HP +30%
+          all: true
+          meta:
+            priority: 1
+            buff: HP
+            buffValue: 30
+        - desc: Will not flinch to damage under 20% max HP
+          all: true
+    - name: "Heart on Fire"
+      effects: 
+        - desc: Undermine inflicts ATK-10% debuff on target for 10s.
+          meta:
+            priority: 4
+            buff: Enemy ATK Reduction
+            buffValue: 10
+        - desc: Undermine inflicts INT-10% debuff on target for 10s.
+          meta:
+            priority: 4
+            buff: Enemy INT Reduction
+            buffValue: 10
+        - desc: Undermine inflicts DEF-10% debuff on target for 10s.
+          meta:
+            priority: 4
+            buff: Enemy DEF Reduction
+            buffValue: 10
+    - name: "Young & Skilled"
+      effects: 
+        - desc: Single Target damage +20%
+          all: true
+          meta:
+            priority: 1
+            buff: Single Target Damage
+            buffValue: 20
+        - desc: Taunt+3
+          meta:
+            priority: 1
+            buff: Taunt
+            buffValue: 3
+    - name: "Knight of Grandshelt"
+      effects:
+        - desc: ATK+20%
+          meta:
+            priority: 4
+            buff: ATK
+            buffValue: 20
+
+  skills:
+    - name: "Undermine"
+      power: ATK x 200%
+      ap: 20
+      maxHits: 2
+    - name: "Hellfire Slash"
+      power: ATK x 550%
+      ap: 38
+      maxHits: 2
+      element: Fire
+      highlight: true
+    - name: "Flash of Steel"
+      power: ATK x 160%
+      ap: 14
+      maxHits: 2
+    - name: "Lava Floor"
+      power: ATK x 550%
+      ap: 32
+      maxHits: 2
+      element: Earth
+      highlight: true
+      
+  rush:
+    name: "Shining Nova"
+    element: Fire
+    effects: 
+      - desc: AP cost -40%
+        duration: 20
+        meta:
+          priority: 4
+          buff: AP Cost Reduction
+          buffValue: 40
+      - desc: ATK Damage +30%
+        duration: 20
+        meta:
+          priority: 1
+          buff: ATK
+          buffValue: 30
+    power: ATK x 4000%
+    maxHits: 12
     
+  notes: >
+      _Rain clocks in as another top toer defender in our current meta. Alongside high damage, he brings a 10% stat debuff that 
+      can chunk a surprising amount of a boss's inflated stats, which cannot be understated. This also makes him especially strong 
+      alongside other defenders in single player parties. His global buffs elevate him even further as well, he now has a superior HP
+      buff to A2 and xEve so will make theirs redundant, only Edge can better his 30% HP buff. Plus a multiplier increase of 110 on
+      his best skill of Lava Floor, making him pack a serious punch now. Finally, One-Handed Sword is a weapon type that covers many 
+      different elements, letting him exploit weaknesses more often than A2 and xEve at this stage. In summary the global buffs to his
+      HP buff and damage, alongside the flexibility of his weapon type and his unconditional buffs makes Rain one of the best
+      defenders on GL, leaving A2 inparticular a little nervous. Rain is easily the best of the three FFBE units._
+      
+      **TL DR**
+      
+      **Pros**
+      
+      - High DPS output
+      
+      - Anti-flinch and buffed HP buff
+      
+      - Debuffing skill
+      
+      - Unconditional buffs
+      
+      - Taunt makes him good at holding aggro
+      
+      **Cons**
+      
+      - Poor at building Hit Count
+      
+      - Buffs can be overwritten by conditional buffs
+      
+      - Lacks a ranged combo
+      
+      - Lack of personal bulk
+      
+      **Rotation**
+      
+      *Normal > Undermine > Flash of Steel > Lava Floor > Lava Floor - (Damage rotation)*    
