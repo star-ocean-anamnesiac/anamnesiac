@@ -16,9 +16,7 @@ test('All characters have valid information', async t => {
     prev[cur.id] = true;
     return prev;
   }, {});
-  
-  console.log('Valid Weapon Types: ', weapons.map(x => x.id).join(', '), weaponHash);
-  
+    
   await Promise.all(classes.map(async charClass => {
     const data = await promises.readFile(`src/assets/data/character/${charClass.toLowerCase()}.yml`, 'utf-8');
     const characters: Character[] = YAML.safeLoad(data);

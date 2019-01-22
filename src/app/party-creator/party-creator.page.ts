@@ -301,7 +301,7 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
         if(buffData.buffRole) {
 
           this.charRefs.forEach(charRef => {
-            if(charRef.type !== buffData.buffRole) return;
+            if(charRef.type !== buffData.buffRole) { return; }
 
             const char = charRef.name;
 
