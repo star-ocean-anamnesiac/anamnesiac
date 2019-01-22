@@ -1,5 +1,5 @@
 
-import { includes, find, clone, groupBy, sortBy, isUndefined } from 'lodash';
+import { includes, find, clone, groupBy, sortBy, isString } from 'lodash';
 
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
@@ -237,13 +237,13 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
   private conditionalToggleParam(): boolean {
     const parameters = new URLSearchParams(window.location.search);
     const param = parameters.get('conditional');
-    return isUndefined(param) ? true : !!+param;
+    return !isString(param) ? true : !!+param;
   }
 
   private roleToggleParam(): boolean {
     const parameters = new URLSearchParams(window.location.search);
     const param = parameters.get('role');
-    return isUndefined(param) ? true : !!+param;
+    return !isString(param) ? true : !!+param;
   }
 
   private updatePictures() {
