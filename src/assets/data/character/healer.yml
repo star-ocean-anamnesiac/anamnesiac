@@ -784,7 +784,7 @@
       maxHits: 2
     - name: "Angel Feather"
       power: All Stats +20%
-      ap: 35
+      ap: 95
       notes: Party Wide
       maxHits: 1
     - name: "Tornado"
@@ -1156,3 +1156,125 @@
       - Normal > Enraging Faerie Light > Radiant Lancer/Aurora Rings ("Damage" rotation, best for rush gain)
 
       - Brute Enlightenment (Re-apply when necessary)*  
+      
+- name: Fina
+  cat: gl
+  rating: 9
+  picture: fina
+  weapon: bow
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 12600
+    atk: 1733
+    int: 2482
+    def: 1537
+    hit: 1050
+    grd: 1134
+
+  talents:
+    - name: "Cleansing Prayer II"
+      effects: 
+        - desc: Symbology invoking time -70%
+          meta:
+            priority: 1
+            buff: Cast Time Reduction
+            buffValue: 70
+        - desc: No flinching when casting Symbology
+    - name: "White Mage"
+      effects: 
+        - desc:  Nullifies HP Reduction Field
+          all: self / close ranged weapons
+    - name: "Distinguished Soul"
+      effects: 
+        - desc: AP recovery from Normal Attacks +100%
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffValue: 100
+    - name: "Straight Shooter"
+      effects: 
+        - desc: Recover all ally AP when using Aim or Bright Shower
+
+  skills:
+    - name: "Aim"
+      power: INT x 270%
+      ap: 25
+      notes: Allies recover 4 AP
+      maxHits: 1
+    - name: "Curaga"
+      power: INT x 290%
+      ap: 60
+      notes: Party Heal
+      maxHits: 1
+    - name: "Bright Shower"
+      element: Light
+      power: INT x 310%
+      ap: 40
+      notes: Allies recover 9 AP
+      maxHits: 12
+    - name: "Angel Feather"
+      power: ATK/INT/DEF +25% 
+      ap: 85
+      notes: Party Wide
+      maxHits: 1
+      
+  rush:
+    name: "Heaven’s Judgment"
+    element: Light
+    effects: 
+      - desc: Recover 70% HP
+        all: true
+      - desc: Crit Chance +30%
+        all: true
+        meta:
+          priority: 1
+          buff: Crit Chance
+          buffValue: 30
+    power: INT x 2500%
+    maxHits: 3
+    
+  notes: >
+      _Fina is our first truly imbue-able healer (as in, battle skills). This is huge, as bows go on to cover a wide-range of elements
+      over the game's lifetime. This enables Fina to slot-in to any party on any boss and be able to contribute weakness stun 
+      (assuming a bow exists). She also eases herself in on other healer niches, with her Cheer buff and AP feeding. 
+      While she isn't the best AP battery, her Cheer being upgraded from boostin ATK/INT/DEF by 20% to 25%, competes strongly with
+      Angel feather, due to GRD in particular being a weak stat and the extra 5% makes up for the loss of HIT buffing. being able to 
+      bring both weak AP feeding with a powerful stat buff is very strong and makes up for her lack of party talent buffs. 
+      With the 70% cast time reduction buff, her ability to clutch heal is pretty good now. The catch, unfortunately, is that she is 
+      using bow; this makes her perform poorly under AI control, which makes her less than ideal for single player. That said, great
+      healer. Who may well be the current best healer we have, though it is a close contest._
+      
+      **TL DR**
+      
+      **Pros**
+      
+      - Cheer is a very powerful buffing skill
+      
+      - Grants AP to the party when using offensive skills
+      
+      - Great personal invoking time reduction.
+           
+      - Not elemental locked, can wield imbue weapons
+      
+      **Cons**
+      
+      - Has the worst AI apart from maybe Ronyx
+      
+      - Not a great AP battery compared to other healers
+      
+      - Lack of AP reduction talent
+      
+      - Lack of talent to help surviability
+      
+      **Rotation**
+      
+      *Normal > Aim > Spam till out of AP (AP feeding & Rush gain rotation)*
+      
+      *Normal > Aim > Curaga (Feed/Healing rotation)*
+      
+      *Normal > Aim > Curaga > Aim (Feed/Healing rotation with -10% AP reduction or -5% AP and 104-105 AP)*
+      
+      *Cheer (Buff when necessary)*
