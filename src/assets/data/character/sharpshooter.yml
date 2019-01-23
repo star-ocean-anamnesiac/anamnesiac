@@ -151,7 +151,7 @@
         all: true
         meta:
           priority: 1
-          buff: Crit Chance
+          buff: Crit Rate
           buffValue: 40
     power: ATK x 3000%
     maxHits: 6
@@ -180,7 +180,7 @@
           all: true
           meta:
             priority: 1
-            buff: Crit Chance
+            buff: Crit Rate
             buffValue: 10
     - name: "Crimson Blade"
       effects: 
@@ -495,7 +495,7 @@
           all: true
           meta:
             priority: 1
-            buff: Crit Chance
+            buff: Crit Rate
             buffCondition: Behind Target (180s)
             buffValue: 20
     - name: "Summer Snow Cone"
@@ -533,7 +533,7 @@
         all: true
         meta:
           priority: 1
-          buff: Crit Chance
+          buff: Crit Rate
           buffValue: 10
       - desc: Critical Hit Damage +40%
         duration: 20
@@ -613,7 +613,7 @@
         duration: 60
         meta:
           priority: 4
-          buff: Crit Chance
+          buff: Crit Rate
           buffValue: 30
     power: ATK x 3500%
     maxHits: 8

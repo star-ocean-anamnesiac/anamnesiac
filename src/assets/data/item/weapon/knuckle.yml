@@ -8,6 +8,6 @@
   factors:
     - desc: Light damage +15%
     - desc: DEF +10%
-    - desc: Crit chance +4%
+    - desc: Crit Rate +4%
   thirdFactorLB: 5
   obtained: Coin Shop (Michael)

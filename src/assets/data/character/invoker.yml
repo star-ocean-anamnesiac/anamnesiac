@@ -26,18 +26,18 @@
             buffValue: 50
     - name: "Jealous Person"
       effects: 
-        - desc: Critical chance +30%
+        - desc: Critical Rate +30%
           all: Invoker
           meta:
             priority: 1
-            buff: Crit Chance
+            buff: Crit Rate
             buffRole: invoker
             buffValue: 30
-        - desc: Critical chance +30%
+        - desc: Critical Rate +30%
           all: Healer
           meta:
             priority: 1
-            buff: Crit Chance
+            buff: Crit Rate
             buffRole: healer
             buffValue: 30
     - name: "Skillful at Getting By"

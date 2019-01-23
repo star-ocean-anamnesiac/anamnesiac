@@ -319,12 +319,12 @@
     name: "Tractor Beam"
     element: Earth
     effects: 
-      - desc: Critical Hit Chance +50%
+      - desc: Critical Hit Rate +50%
         all: true
         duration: 20
         meta:
           priority: 1
-          buff: Crit Chance
+          buff: Crit Rate
           buffValue: 50
       - desc: Recover 80% HP
         all: true
@@ -959,11 +959,11 @@
       - desc: Recover 15% of Max HP every 3 seconds
         all: true
         duration: 20
-      - desc: Crit Chance +30%
+      - desc: Crit Rate +30%
         all: true
         meta:
           priority: 1
-          buff: Crit Chance
+          buff: Crit Rate
           buffValue: 30
     power: INT x 3000%
     maxHits: 5
@@ -1227,11 +1227,11 @@
     effects: 
       - desc: Recover 70% HP
         all: true
-      - desc: Crit Chance +30%
+      - desc: Crit Rate +30%
         all: true
         meta:
           priority: 1
-          buff: Crit Chance
+          buff: Crit Rate
           buffValue: 30
     power: INT x 2500%
     maxHits: 3
