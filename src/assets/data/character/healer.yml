@@ -417,7 +417,7 @@
       maxHits: 12
     - name: "Angel Feather"
       power: All Stats +20%
-      ap: 35
+      ap: 95
       notes: Party Wide
       maxHits: 1
       meta:
@@ -1215,7 +1215,7 @@
       ap: 40
       notes: Allies recover 9 AP
       maxHits: 12
-    - name: "Angel Feather"
+    - name: "Cheer"
       power: ATK/INT/DEF +25% 
       ap: 85
       notes: Party Wide
@@ -1241,11 +1241,11 @@
       over the game's lifetime. This enables Fina to slot-in to any party on any boss and be able to contribute weakness stun 
       (assuming a bow exists). She also eases herself in on other healer niches, with her Cheer buff and AP feeding. 
       While she isn't the best AP battery, her Cheer being upgraded from boostin ATK/INT/DEF by 20% to 25%, competes strongly with
-      Angel feather, due to GRD in particular being a weak stat and the extra 5% makes up for the loss of HIT buffing. being able to 
-      bring both weak AP feeding with a powerful stat buff is very strong and makes up for her lack of party talent buffs. 
-      With the 70% cast time reduction buff, her ability to clutch heal is pretty good now. The catch, unfortunately, is that she is 
-      using bow; this makes her perform poorly under AI control, which makes her less than ideal for single player. That said, great
-      healer. Who may well be the current best healer we have, though it is a close contest._
+      Angel feather, which boosts all stats by 20%, due to GRD in particular being a weak stat and the extra 5% makes up for the loss 
+      of HIT buffing. being able to bring both weak AP feeding with a powerful stat buff is very strong and makes up for her lack of 
+      party talent buffs. With the 70% cast time reduction buff, her ability to clutch heal is pretty good now. The catch, 
+      unfortunately, is that she is using bow; this makes her perform poorly under AI control, which makes her less than ideal for 
+      single player. That said, great healer. Who may well be the current best healer we have, though it is a close contest._
       
       **TL DR**
       
