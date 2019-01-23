@@ -70,7 +70,7 @@
   <ion-img slot="start" [src]="'assets/items/' + item.picture + '.png'" class="mini-picture-icon"></ion-img>
 
   <ion-label>
-    <h3>{{ item.star }}★ {{ item.name }}</h3>
+    <h2>{{ item.star }}★ {{ item.name }}</h2>
     <p *ngIf="item.type === 'weapon'">{{ weaponDesc(item) }}</p>
     <p *ngIf="item.type === 'accessory'">{{ item.def }} DEF</p>
   </ion-label>
