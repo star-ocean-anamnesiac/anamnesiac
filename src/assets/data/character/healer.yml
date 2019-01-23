@@ -1220,6 +1220,10 @@
       ap: 85
       notes: Party Wide
       maxHits: 1
+      meta:
+        priority: 2
+        buff: ATK/INT/DEF
+        buffValue: 25
       
   rush:
     name: "Heaven’s Judgment"
