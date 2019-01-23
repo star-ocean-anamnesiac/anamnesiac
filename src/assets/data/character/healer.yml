@@ -1192,7 +1192,7 @@
         - desc: AP recovery from Normal Attacks +100%
           meta:
             priority: 1
-            buff: AP Recovery
+            buff: AP Recovery From Normal Attacks
             buffValue: 100
     - name: "Straight Shooter"
       effects: 
