@@ -876,3 +876,33 @@
             priority: 4
             buff: Crit Rate
             buffValue: 30
+  skills:
+    - name: "Shadow Needles"
+      power: INT x 240%
+      ap: 23
+      maxHits: 5
+      element: Dark
+    - name: "Aurora Rings"
+      power: INT x 460%
+      ap: 35
+      maxHits: 5
+      element: Light
+    - name: "Vampiric Blade"
+      power: INT x 370%
+      ap: 32
+      maxHits: 5
+      element: Dark
+
+  rush:
+    name: "Laser Beams Revision"
+    effects:
+      - desc: Symbology Cast Time Reduced by 50%
+        duration: 60
+        all: true
+        meta:
+          priority: 1
+          buff: Cast Time Reduction
+          buffValue: 50
+    power: INT x 2500%
+    maxHits: 12
+    element: Light
