@@ -846,3 +846,33 @@
     power: INT x 2500%
     maxHits: 5
     
+- name: Bernard
+  cat: gl
+  rating: 0
+  picture: bernard
+  weapon: gun
+  ace: false
+  limited: false
+  star: 3
+
+  stats:
+    hp: 7525
+    atk: 863
+    int: 1355
+    def: 627
+    hit: 569
+    grd: 443
+
+  talents:
+    - name: "Third Eye"
+      effects: 
+        - desc: Hit Counter +0.5 seconds
+          all: true
+    - name: "Hidden Talent"
+      effects:
+        - desc: Critical Rate +30%
+          all: false
+          meta:
+            priority: 4
+            buff: Crit Rate
+            buffValue: 30
