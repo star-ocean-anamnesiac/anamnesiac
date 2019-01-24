@@ -10,8 +10,8 @@ const sheetTypes: any = {
 };
 
 const sheetPaths = {
-  icon: 'assets/icons/+app-icons.png',
-  item: 'assets/items/+item-icons.png'
+  icon: 'assets/spritesheets/+app-icons.png',
+  item: 'assets/spritesheets/+item-icons.png'
 };
 
 @Component({

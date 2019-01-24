@@ -12,6 +12,10 @@
 
 @import 'theme/stars.scss';
 
+.preloader {
+  height: 0 !important;
+}
+
 .picture-class-chunk {
   display: flex;
   position: relative;

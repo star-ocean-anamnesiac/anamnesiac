@@ -48,7 +48,7 @@ export class ItemSortPopover {
 
     <ion-row class="profile-row">
       <ion-col size-xs="6" size-md="3">
-        <ion-img [src]="'assets/items/' + item.picture + '.png'" class="picture"></ion-img>
+        <app-appicon [name]="item.picture" type="item" [forceWidth]="128" [forceHeight]="128"></app-appicon>
       </ion-col>
 
       <ion-col class="shrink-top-margin">

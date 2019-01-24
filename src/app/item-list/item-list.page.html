@@ -82,7 +82,7 @@
 
 <ng-template #items let-item="item">
   <span slot="start" class="picture-class-chunk" [class.margin-right]="isFiltered">
-    <app-appicon [name]="item.picture" [scaleX]="0.5" [scaleY]="0.5" type="item" [forceWidth]="64" [forceHeight]="64"></app-appicon>
+    <app-appicon [name]="item.picture" type="item" [forceWidth]="64" [forceHeight]="64"></app-appicon>
     <app-appicon *ngIf="!isFiltered" margin-horizontal [name]="'menu-' + item.subtype" [scaleX]="0.5" [scaleY]="0.5"></app-appicon>
   </span>
 
