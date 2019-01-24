@@ -142,7 +142,7 @@
     - desc: Recover 3% HP every 5 seconds
     - desc: +15% Stun
   thirdFactorLB: 5
-  obtained: gacha
+  obtained: Gacha
   
   notes: >
     A wind bow that retires the one you got from Jie. The recovery is a nice factor that to have, and it actually has a pretty good
@@ -160,7 +160,7 @@
     - desc: -10% AP Cost
     - desc: 80% Chance to Survive a Lethal Attack at 20% HP or more
   thirdFactorLB: 5
-  obtained: gacha
+  obtained: Gacha
   
   notes: >
     A light imbue bow that offers some solid factors, it boosts light damage dealt and the AP cost reduction is sizeable enough that

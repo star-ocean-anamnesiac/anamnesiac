@@ -20,17 +20,10 @@ const allItems = _.flattenDeep(weapons.concat(accessories).map(({ id }) => {
   const data = fs.readFileSync(`src/assets/data/item/${path}.yml`, 'utf-8');
   const items = YAML.safeLoad(data);
 
-  if(id === 'all') {
-    accessories.forEach(weap => {
-      weap.type = 'accessory';
-      weap.subtype = id;
-    });
-  } else {
-    items.forEach(item => {
-      item.type = 'weapon';
-      item.subtype = id;
-    });
-  }
+  items.forEach(item => {
+    item.type = id === 'all' ? 'accessory' : 'weapon';
+    item.subtype = id;
+  });
 
   return items;
 }));

@@ -25,6 +25,9 @@ export class ItemSortPopover {
   template: `
   <ion-header>
     <ion-toolbar color="primary">
+      <span slot="start" class="titlebar-class-chunk">
+        <app-appicon [name]="'menu-' + item.subtype" [scaleX]="0.5" [scaleY]="0.5"></app-appicon>
+      </span>
       <ion-title>{{ item.name }}</ion-title>
       <ion-buttons slot="end">
         <ion-button icon-only (click)="share()" *ngIf="showShare">
@@ -48,7 +51,10 @@ export class ItemSortPopover {
       </ion-col>
 
       <ion-col class="shrink-top-margin">
-        <p>{{ item.star }}★ {{ type }}</p>
+        <p class="vertical-center">
+          <app-appicon [name]="'weapon-' + item.star" [scaleX]="0.5" [scaleY]="0.5" [inline]="true"></app-appicon> 
+          <span>{{ type }}</span>
+        </p>
         <p>
           <span *ngIf="item.atk" class="middot-after">{{ item.atk }} ATK</span>
           <span *ngIf="item.int">{{ item.int }} INT</span>

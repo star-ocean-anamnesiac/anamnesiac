@@ -10,3 +10,11 @@
   position: relative;
   transform-origin: top left;
 }
+
+:host {
+  display: inline-block;
+
+  &.inline-display {
+    margin-right: 8px;
+  }
+}

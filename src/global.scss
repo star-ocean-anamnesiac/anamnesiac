@@ -24,6 +24,7 @@
   max-height: 24px;
   max-width: 24px;
   margin-left: 32px;
+  margin-right: 8px;
 }
 
 .menu-chunk {
@@ -74,4 +75,9 @@ ion-item, ion-item-divider {
 
 .shrink-top-margin p {
   margin-block-start: 0.25em !important;
+}
+
+.vertical-center {
+  display: flex;
+  align-items: center;
 }

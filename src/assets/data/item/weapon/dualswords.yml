@@ -47,7 +47,7 @@
     - desc: +10% Crit Rate / +15% Crit DMG
     - desc: +30% AP RCV Speed
   thirdFactorLB: 5
-  obtained: gacha
+  obtained: Gacha
   
   notes: >
     Light imbued dual swords that increase crit rate and damage. The third factor isn't as important due to the amount of AP recovery
@@ -99,7 +99,7 @@
     - desc: +100% AP Recovery by Normal Attacks
     - desc: Recover 5% HP on DMG Dealt by Normal Attacks
   thirdFactorLB: 5
-  obtained: gacha
+  obtained: Gacha
   
   notes: >
     Good pair of dual swords that with ice imbue. The other two factors reward using normals helping give both AP recovery and some 

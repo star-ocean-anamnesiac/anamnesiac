@@ -74,7 +74,10 @@
   </span>
 
   <ion-label>
-    <h2><app-appicon [name]="'charrarity-' + char.star" [scaleX]="0.25" [scaleY]="0.25"></app-appicon> {{ char.name }}</h2>
+    <h2 class="vertical-center">
+      <app-appicon [name]="'char-' + char.star" [scaleX]="0.5" [scaleY]="0.5" [inline]="true"></app-appicon> 
+      <span>{{ char.name }}</span>
+    </h2>
     <p>{{ convertWeaponType(char.weapon) }}</p>
   </ion-label>
 </ng-template>

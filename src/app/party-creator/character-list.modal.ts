@@ -57,7 +57,10 @@ import { Character } from '../models/character';
         </span>
 
         <ion-label>
-          <h3>{{ char.star }}★ {{ char.name }}</h3>
+          <h2 class="vertical-center">
+            <app-appicon [name]="'char-' + char.star" [scaleX]="0.5" [scaleY]="0.5" [inline]="true"></app-appicon> 
+            <span>{{ char.name }}</span>
+          </h2>
         </ion-label>
       </ion-item>
     </ion-list>

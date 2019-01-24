@@ -19,6 +19,10 @@ export class AppIconComponent implements OnInit {
   @Input()
   public scaleY: number;
 
+  @Input()
+  @HostBinding('class.inline-display')
+  public inline: boolean;
+
   // @HostBinding('style.transform')
   public get scale() {
     return `scale(${this.scaleX}, ${this.scaleY})`;

@@ -8,6 +8,7 @@ import { FilterPipeModule } from 'ngx-filter-pipe';
 
 import { ItemListPage } from './item-list.page';
 import { ItemModal, ItemSortPopover } from './item-list.ui';
+import { ComponentsModule } from '../component.module';
 
 @NgModule({
   imports: [
@@ -15,6 +16,7 @@ import { ItemModal, ItemSortPopover } from './item-list.ui';
     FormsModule,
     IonicModule,
     FilterPipeModule,
+    ComponentsModule,
     RouterModule.forChild([
       {
         path: '',

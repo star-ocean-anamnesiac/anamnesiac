@@ -137,6 +137,9 @@
   </span>
 
   <ion-label>
-    <h2>{{ char.star }}★ {{ char.name }}</h2>
+    <h2 class="vertical-center">
+      <app-appicon [name]="'char-' + char.star" [scaleX]="0.5" [scaleY]="0.5" [inline]="true"></app-appicon> 
+      <span>{{ char.name }}</span>
+    </h2>
   </ion-label>
 </ng-template>
