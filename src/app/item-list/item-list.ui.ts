@@ -55,10 +55,11 @@ export class ItemSortPopover {
           <app-appicon [name]="'weapon-' + item.star" [scaleX]="0.5" [scaleY]="0.5" [inline]="true"></app-appicon>
           <span>{{ type }}</span>
         </p>
-        <p>
+        <p class="vertical-center">
           <span *ngIf="item.atk" class="middot-after">{{ item.atk }} ATK</span>
           <span *ngIf="item.int">{{ item.int }} INT</span>
           <span *ngIf="item.def">{{ item.def }} DEF</span>
+          <app-element *ngIf="item.element" [element]="item.element"></app-element>
         </p>
         <p>Obtained: {{ item.obtained }}</p>
       </ion-col>

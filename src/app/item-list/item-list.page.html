@@ -74,7 +74,9 @@
       <app-appicon [name]="'weapon-' + item.star" [scaleX]="0.5" [scaleY]="0.5" [inline]="true"></app-appicon> 
       <span>{{ item.name }}</span>
     </h2>
-    <p *ngIf="item.type === 'weapon'">{{ weaponDesc(item) }}</p>
+    <p *ngIf="item.type === 'weapon'" class="vertical-center">
+      {{ weaponDesc(item) }} <app-element *ngIf="item.element" [element]="item.element"></app-element>
+    </p>
     <p *ngIf="item.type === 'accessory'">{{ item.def }} DEF</p>
   </ion-label>
 </ng-template>

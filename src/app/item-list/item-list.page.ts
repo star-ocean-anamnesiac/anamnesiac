@@ -189,7 +189,6 @@ export class ItemListPage implements OnInit, OnDestroy {
     const arr = [];
     if(item.atk)      { arr.push(`${item.atk} ATK`); }
     if(item.int)      { arr.push(`${item.int} INT`); }
-    if(item.element)  { arr.push(item.element); }
 
     return arr.join(' · ');
   }
