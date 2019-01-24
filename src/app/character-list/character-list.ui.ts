@@ -110,10 +110,10 @@ export class CharacterSortPopover {
                   <ion-card>
                     <ion-card-header>
                     <ion-card-title>
-                    <app-appicon *ngIf="skill.highlight" 
-                                 [name]="'misc-highlight'" 
-                                 [scaleX]="0.25" 
-                                 [scaleY]="0.25" 
+                    <app-appicon *ngIf="skill.highlight"
+                                 [name]="'misc-highlight'"
+                                 [scaleX]="0.25"
+                                 [scaleY]="0.25"
                                  [inline]="true"></app-appicon>
                       {{ skill.name }} ({{ skill.ap }} AP)
                     </ion-card-title>
