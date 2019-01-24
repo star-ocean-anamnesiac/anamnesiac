@@ -5,6 +5,8 @@ import test from 'ava';
 import * as YAML from 'js-yaml';
 import * as _ from 'lodash';
 
+import { validateMeta } from './validate-meta';
+
 import { Character } from '../app/models/character';
 
 const ROOT_FILE = 'src/assets/data/root.yml';
@@ -49,6 +51,8 @@ test('All characters have valid information', async t => {
           if(eff.duration) {
             t.true(_.isNumber(eff.duration), 'talent.effect.duration must be a number' + parenName);
           }
+
+          validateMeta(t, eff.meta, parenName);
         });
       });
 
@@ -56,11 +60,19 @@ test('All characters have valid information', async t => {
         t.truthy(skill.name, 'skill.name must exist' + parenName);
         if(skill.maxHits) t.truthy(skill.power, 'skill.power must exist if it skill.maxHits exists' + parenName);
         t.truthy(skill.ap, 'skill.ap must exist' + parenName);
+
+        validateMeta(t, skill.meta, parenName);
       });
 
       t.truthy(char.rush.name, 'rush.name must exist' + parenName);
       t.truthy(char.rush.power, 'rush.power must exist' + parenName);
       t.truthy(char.rush.maxHits, 'rush.maxHits must exist' + parenName);
+
+      if(char.rush.effects && char.rush.effects.length > 0) {
+        char.rush.effects.forEach(eff => {
+          validateMeta(t, eff.meta, parenName);
+        });
+      }
     });
   }));
 });

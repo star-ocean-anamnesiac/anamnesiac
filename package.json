@@ -8,7 +8,7 @@
     "start": "ng serve -o --port 6789",
     "build": "npm run consolidate && ng build --prod",
     "lint": "ng lint",
-    "validate": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\"}' ava-ts src/test/**/*.ts",
+    "validate": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\"}' ava-ts src/test/**/*.test.ts",
     "test": "npm run validate && npm run lint && npm run build",
     "publish": "node scripts/sync",
     "consolidate": "node scripts/consolidate-data && npm run prepare:pack:appicons",

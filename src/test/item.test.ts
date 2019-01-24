@@ -26,7 +26,7 @@ test('All items have valid information', async t => {
     items.forEach(item => {
       const parenName = ` (${item.name})`;
 
-      t.truthy(item.name, 'name');
+      t.truthy(item.name, 'name must be set');
       t.falsy(item.type, 'type should not be set' + parenName);
       t.falsy(item.subtype, 'subtype should not be set' + parenName);
       t.true(item.cat === 'jp' || item.cat === 'gl', 'cat must be jp or gl' + parenName);
