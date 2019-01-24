@@ -81,7 +81,10 @@
 </ion-content>
 
 <ng-template #items let-item="item">
-  <ion-img slot="start" [src]="'assets/items/' + item.picture + '.png'" class="mini-picture-icon"></ion-img>
+  <span slot="start" class="picture-class-chunk" [class.margin-right]="isFiltered">
+    <ion-img slot="start" [src]="'assets/items/' + item.picture + '.png'" class="mini-picture-icon"></ion-img>
+    <app-appicon *ngIf="!isFiltered" margin-horizontal [name]="'menu-' + item.subtype" [scaleX]="0.5" [scaleY]="0.5"></app-appicon>
+  </span>
 
   <ion-label>
     <h2 class="vertical-center">

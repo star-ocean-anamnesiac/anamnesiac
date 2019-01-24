@@ -19,6 +19,8 @@ import { ItemModal, ItemSortPopover } from './item-list.ui';
 })
 export class ItemListPage implements OnInit, OnDestroy {
 
+  public isFiltered: boolean;
+
   public isError: boolean;
   public allItems: Item[] = [];
 
@@ -201,6 +203,7 @@ export class ItemListPage implements OnInit, OnDestroy {
     let arr = this.allItems;
 
     const { type, subtype } = this.getCurrentFilter();
+    this.isFiltered = !!subtype;
     if(type) {
       arr = this.allItems.filter(item => item.type === type);
     }
