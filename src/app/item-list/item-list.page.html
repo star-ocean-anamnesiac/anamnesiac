@@ -56,7 +56,9 @@
 
   <ion-list *ngIf="!isError && sorting === 'element'">
     <ion-item-group *ngFor="let element of allElements">
-      <ion-item-divider><strong>{{ element }}</strong></ion-item-divider>
+      <ion-item-divider>
+        <strong><app-element [element]="element"></app-element></strong>
+      </ion-item-divider>
 
       <ion-item *ngFor="let item of elementSortedItems[element] | filterBy: { name: searchValue }" detail (click)="loadItem(item)">
         <ng-container *ngTemplateOutlet="items; context: { item: item }"></ng-container>
@@ -66,7 +68,9 @@
 
   <ion-list *ngIf="!isError && sorting === 'slayer'">
     <ion-item-group *ngFor="let slayer of allSlayers">
-      <ion-item-divider><strong>{{ slayer }}-slayer</strong></ion-item-divider>
+      <ion-item-divider class="vertical-center">
+        <strong><app-slayer [slayer]="slayer"></app-slayer></strong>
+      </ion-item-divider>
 
       <ion-item *ngFor="let item of slayerSortedItems[slayer] | filterBy: { name: searchValue }" detail (click)="loadItem(item)">
         <ng-container *ngTemplateOutlet="items; context: { item: item }"></ng-container>
