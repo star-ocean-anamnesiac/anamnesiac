@@ -252,7 +252,7 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
     this.charRefs.forEach(char => {
       if(!char) { return; }
 
-      this.characterSprites[char.name] = `assets/characters/${char.picture}.png`;
+      this.characterSprites[char.name] = char.picture;
     });
   }
 

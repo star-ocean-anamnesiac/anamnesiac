@@ -69,7 +69,7 @@
 <ng-template #character let-char="char">
 
   <span slot="start" class="picture-class-chunk" [class.margin-right]="isFiltered">
-    <ion-img [src]="'assets/characters/' + char.picture + '.png'" class="mini-picture-icon"></ion-img>
+    <app-appicon [name]="char.picture" [forceWidth]="64" [forceHeight]="64" type="char"></app-appicon>
     <span class="awakened-container" *ngIf="char.awakened">
       <app-appicon [name]="'misc-awakening'" [scaleX]="0.5" [scaleY]="0.5"></app-appicon>
     </span>

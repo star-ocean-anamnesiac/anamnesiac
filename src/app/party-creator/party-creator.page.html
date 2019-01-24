@@ -66,7 +66,7 @@
           <div class="additional-buff-row" *ngIf="characterOptimalBuffBoosts[optbuff.key]">
             <div class="text-align-center margin-right"><strong>Individual Totals:</strong></div>
             <span *ngFor="let specialcharbuff of characterOptimalBuffBoosts[optbuff.key]" class="text-align-center buff-character">
-              <ion-img [src]="characterSprites[specialcharbuff.character]" class="inline-picture-icon"></ion-img> +{{ optbuff.value + specialcharbuff.boost }}%
+              <app-appicon [name]="characterSprites[specialcharbuff.character]" [forceWidth]="24" [forceHeight]="24" type="char" inline="true"></app-appicon> +{{ optbuff.value + specialcharbuff.boost }}%
             </span>
           </div>
         </ion-label>
@@ -115,7 +115,7 @@
               </ion-col>
 
               <ion-col size-md="6" size-sm="12" class="text-align-center" text-right>
-                <ion-img [src]="characterSprites[buffData.sourceCharacter]" class="inline-picture-icon"></ion-img> {{ buffData.source }}
+                <app-appicon [name]="characterSprites[buffData.sourceCharacter]" [forceWidth]="24" [forceHeight]="24" type="char" inline="true"></app-appicon> {{ buffData.source }}
               </ion-col>
                 
             </ion-row>
@@ -132,7 +132,7 @@
 <ng-template #character let-char="char">
 
   <span slot="start" class="picture-class-chunk">
-    <ion-img [src]="'assets/characters/' + char.picture + '.png'" class="mini-picture-icon"></ion-img>
+    <app-appicon [name]="char.picture" [forceWidth]="64" [forceHeight]="64" type="char"></app-appicon>
     <span class="awakened-container" *ngIf="char.awakened">
       <app-appicon [name]="'misc-awakening'" [scaleX]="0.5" [scaleY]="0.5"></app-appicon>
     </span>

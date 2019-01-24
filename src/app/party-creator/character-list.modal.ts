@@ -52,7 +52,7 @@ import { Character } from '../models/character';
       <ion-item *ngFor="let char of filteredCharacters" (click)="selectChar(char)">
 
         <span slot="start" class="picture-class-chunk">
-          <ion-img [src]="'assets/characters/' + char.picture + '.png'" class="mini-picture-icon"></ion-img>
+          <app-appicon [name]="char.picture" [forceWidth]="64" [forceHeight]="64" type="char"></app-appicon>
           <app-appicon margin-horizontal [name]="'class-' + char.type" [scaleX]="0.25" [scaleY]="0.25"></app-appicon>
         </span>
 

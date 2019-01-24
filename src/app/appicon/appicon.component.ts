@@ -3,15 +3,18 @@ import { get } from 'lodash';
 
 import * as appicons from '../../assets/icons/+app-icons.json';
 import * as itemicons from '../../assets/items/+item-icons.json';
+import * as charicons from '../../assets/characters/+char-icons.json';
 
 const sheetTypes: any = {
   icon: (<any>appicons).default || appicons,
-  item: (<any>itemicons).default || itemicons
+  item: (<any>itemicons).default || itemicons,
+  char: (<any>charicons).default || charicons
 };
 
 const sheetPaths = {
   icon: 'assets/spritesheets/+app-icons.png',
-  item: 'assets/spritesheets/+item-icons.png'
+  item: 'assets/spritesheets/+item-icons.png',
+  char: 'assets/spritesheets/+char-icons.png'
 };
 
 @Component({
@@ -45,7 +48,7 @@ export class AppIconComponent implements OnInit {
   public forceHeight: number;
 
   @Input()
-  public type: 'icon'|'item' = 'icon';
+  public type: 'icon'|'item'|'char' = 'icon';
 
   @Input()
   @HostBinding('class.inline-display')
