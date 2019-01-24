@@ -71,6 +71,9 @@ export interface Character {
   // whether the character is on global or jp
   cat: string;
 
+  // whether the character is awakened or not
+  awakened?: boolean;
+
   // the rating 0-10
   rating: number;
 

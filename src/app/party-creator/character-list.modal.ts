@@ -59,6 +59,9 @@ import { Character } from '../models/character';
         <ion-label>
           <h2 class="vertical-center">
             <app-appicon [name]="'char-' + char.star" [scaleX]="0.5" [scaleY]="0.5" [inline]="true"></app-appicon> 
+            <span class="awakened-container" *ngIf="char.awakened">
+              <app-appicon [name]="'misc-awakening'" [scaleX]="0.5" [scaleY]="0.5"></app-appicon>
+            </span>
             <span>{{ char.name }}</span>
           </h2>
         </ion-label>
@@ -68,6 +71,9 @@ import { Character } from '../models/character';
   </ion-content>
   `,
   styles: [`
+    .awakened-container {
+      margin-left: 16px;
+    }
   `]
 })
 export class CharacterListModal implements OnInit {
