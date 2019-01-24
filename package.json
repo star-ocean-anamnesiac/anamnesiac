@@ -11,7 +11,8 @@
     "validate": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\"}' ava-ts src/test/**/*.ts",
     "test": "npm run validate && npm run lint && npm run build",
     "publish": "node scripts/sync",
-    "consolidate": "node scripts/consolidate-data",
+    "consolidate": "node scripts/consolidate-data && npm run prepare",
+    "prepare:pack:appicons": "node scripts/pack-appicons",
     "postinstall": "npm run consolidate"
   },
   "private": true,
@@ -55,6 +56,7 @@
     "ava": "^0.25.0",
     "ava-ts": "^0.25.2",
     "codelyzer": "~4.5.0",
+    "spritesheet-js": "^1.2.6",
     "ts-node": "^7.0.1",
     "tslint": "~5.11.0",
     "typescript": "~3.1.6"

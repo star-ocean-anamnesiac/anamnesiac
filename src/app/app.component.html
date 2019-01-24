@@ -33,7 +33,9 @@
 
               <ion-icon slot="start" *ngIf="!p.assetIcon" [name]="p.icon"></ion-icon>
 
-              <ion-img slot="start" *ngIf="p.assetIcon" [src]="'assets/' + p.assetIcon + '.png'" class="asset-icon"></ion-img>
+              <span slot="start" *ngIf="p.assetIcon" class="menu-chunk">
+                <app-appicon [name]="p.assetIcon" [scaleX]="p.assetScale" [scaleY]="p.assetScale"></app-appicon>
+              </span>
 
               <ion-label>
                 {{ p.title }}

@@ -1,7 +1,7 @@
 
 import { includes, sortBy } from 'lodash';
 
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { ModalController, NavParams } from '@ionic/angular';
 import { Character } from '../models/character';
 
@@ -39,18 +39,22 @@ import { Character } from '../models/character';
 
     <ion-row *ngIf="filteredCharacters.length > 0">
       <ion-col text-center *ngFor="let charClass of ['attacker', 'defender', 'healer', 'invoker', 'sharpshooter']">
-        <ion-button icon-only
+        <ion-button
+                class="role-button"
                 (click)="setRoleFilter(charClass)"
                 [color]="roleFilter && roleFilter === charClass ? charClass : (roleFilter ? 'medium' : charClass)">
-          <ion-img [src]="'assets/classes/' + charClass + '.png'" class="filter-icon"></ion-img>
+          <app-appicon [name]="'class-' + charClass" [scaleX]="0.25" [scaleY]="0.25"></app-appicon>
         </ion-button>
       </ion-col>
     </ion-row>
 
     <ion-list *ngIf="filteredCharacters.length > 0">
       <ion-item *ngFor="let char of filteredCharacters" (click)="selectChar(char)">
-        <ion-img slot="start" [src]="'assets/characters/' + char.picture + '.png'" class="mini-picture-icon"></ion-img>
-        <ion-img slot="start" [src]="'assets/classes/' + char.type + '.png'" class="asset-icon"></ion-img>
+
+        <span slot="start" class="picture-class-chunk">
+          <ion-img [src]="'assets/characters/' + char.picture + '.png'" class="mini-picture-icon"></ion-img>
+          <app-appicon margin-horizontal [name]="'class-' + char.type" [scaleX]="0.25" [scaleY]="0.25"></app-appicon>
+        </span>
 
         <ion-label>
           <h3>{{ char.star }}★ {{ char.name }}</h3>
@@ -61,11 +65,6 @@ import { Character } from '../models/character';
   </ion-content>
   `,
   styles: [`
-    .filter-icon {
-      display: inline-block;
-      width: 24px;
-      height: 24px;
-    }
   `]
 })
 export class CharacterListModal implements OnInit {

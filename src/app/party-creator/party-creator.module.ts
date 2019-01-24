@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 
 import { PartyCreatorPage } from './party-creator.page';
 import { CharacterListModal } from './character-list.modal';
+import { ComponentsModule } from '../component.module';
 
 const routes: Routes = [
   {
@@ -20,6 +21,7 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
+    ComponentsModule,
     RouterModule.forChild(routes)
   ],
   entryComponents: [CharacterListModal],

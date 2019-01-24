@@ -15,6 +15,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { DataService } from './data.service';
+import { ComponentsModule } from './component.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -26,6 +27,7 @@ import { DataService } from './data.service';
     IonicModule.forRoot(),
     AppRoutingModule,
     NgxWebstorageModule.forRoot(),
+    ComponentsModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [

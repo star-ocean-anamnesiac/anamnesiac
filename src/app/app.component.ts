@@ -20,6 +20,7 @@ interface Page {
   visibleIf?: string;
   color?: string;
   assetIcon?: string;
+  assetScale?: number;
 }
 
 @Component({
@@ -116,7 +117,8 @@ export class AppComponent {
           url: '/characters',
           queryParams: { filter: id },
           icon: '',
-          assetIcon: `classes/${id}`,
+          assetIcon: `class-${id}`,
+          assetScale: 0.25,
           visibleIf: '/characters',
           color: id
         });
@@ -136,13 +138,14 @@ export class AppComponent {
           title: name,
           url: '/items',
           queryParams: { type: 'weapon', subtype: id },
-          icon: '',
+          assetIcon: `menu-${id}`,
+          assetScale: 0.5,
           visibleIf: '/items',
         });
     });
   }
 
-  private loadAccessoryData(weapons) {
+  private loadAccessoryData(accessories) {
     this.appPages.push({
       title: 'Accessory List',
       url: '/items',
@@ -150,12 +153,13 @@ export class AppComponent {
       icon: 'magnet'
     });
 
-    weapons.forEach(({ name }) => {
+    accessories.forEach(({ name, id }) => {
       this.appPages.push({
           title: name,
           url: '/items',
           queryParams: { type: 'accessory' },
-          icon: '',
+          assetIcon: `menu-${id}`,
+          assetScale: 0.5,
           visibleIf: '/items',
         });
     });

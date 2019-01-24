@@ -27,7 +27,9 @@ export class CharacterSortPopover {
   template: `
   <ion-header>
     <ion-toolbar [color]="char.type">
-      <ion-img slot="start" [src]="'assets/classes/' + char.type + '.png'" class="asset-icon"></ion-img>
+      <span slot="start" class="titlebar-class-chunk">
+        <app-appicon [name]="'class-' + char.type" [scaleX]="0.25" [scaleY]="0.25"></app-appicon>
+      </span>
       <ion-title>{{ char.name }}</ion-title>
       <ion-buttons slot="end">
         <ion-button icon-only (click)="share()" *ngIf="showShare">

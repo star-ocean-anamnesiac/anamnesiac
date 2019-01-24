@@ -130,8 +130,11 @@
 </ion-content>
 
 <ng-template #character let-char="char">
-  <ion-img slot="start" [src]="'assets/characters/' + char.picture + '.png'" class="mini-picture-icon"></ion-img>
-  <ion-img slot="start" [src]="'assets/classes/' + char.type + '.png'" class="asset-icon"></ion-img> 
+
+  <span slot="start" class="picture-class-chunk">
+    <ion-img [src]="'assets/characters/' + char.picture + '.png'" class="mini-picture-icon"></ion-img>
+    <app-appicon margin-horizontal [name]="'class-' + char.type" [scaleX]="0.25" [scaleY]="0.25"></app-appicon>
+  </span>
 
   <ion-label>
     <h2>{{ char.star }}★ {{ char.name }}</h2>

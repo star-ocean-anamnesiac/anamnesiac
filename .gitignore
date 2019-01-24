@@ -34,3 +34,4 @@ Thumbs.db
 UserInterfaceState.xcuserstate
 
 src/app/data.json
+src/assets/**/\+*

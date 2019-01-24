@@ -8,6 +8,7 @@ A Star Ocean: Anamnesis companion app.
 * nodejs
 * npm
 * git
+* imagemagick (for texture generation)
 
 # How to run?
 
@@ -16,7 +17,7 @@ A Star Ocean: Anamnesis companion app.
 
 ## Changing The Data
 
-If you modify any of the data in the YML files, you need to run `npm run conslidate` to re-generate all of the data. It's also possible that you need to do this after you run `npm i` if the `postinstall` step does not trigger correctly.
+If you modify any of the data in the YML files, you need to run `npm run consolidate` to re-generate all of the data. It's also possible that you need to do this after you run `npm i` if the `postinstall` step does not trigger correctly.
 
 # How to deploy?
 

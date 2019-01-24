@@ -8,6 +8,7 @@ import { FilterPipeModule } from 'ngx-filter-pipe';
 
 import { CharacterListPage } from './character-list.page';
 import { CharacterModal, CharacterSortPopover } from './character-list.ui';
+import { ComponentsModule } from '../component.module';
 
 @NgModule({
   imports: [
@@ -15,6 +16,7 @@ import { CharacterModal, CharacterSortPopover } from './character-list.ui';
     FormsModule,
     IonicModule,
     FilterPipeModule,
+    ComponentsModule,
     RouterModule.forChild([
       {
         path: '',

@@ -12,9 +12,28 @@
 
 @import 'theme/stars.scss';
 
-.asset-icon {
-  width: 24px !important;
-  height: 24px !important;
+.picture-class-chunk {
+  display: flex;
+  flex-direction: row;
+  max-height: 48px;
+  align-items: center;
+  margin: 0;
+}
+
+.titlebar-class-chunk {
+  max-height: 24px;
+  max-width: 24px;
+  margin-left: 32px;
+}
+
+.menu-chunk {
+  max-height: 24px;
+  max-width: 24px;
+  margin: 0;
+  margin-right: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .mini-picture-icon {
