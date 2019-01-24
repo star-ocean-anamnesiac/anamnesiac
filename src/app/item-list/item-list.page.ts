@@ -23,7 +23,7 @@ export class ItemListPage implements OnInit, OnDestroy {
   public allItems: Item[] = [];
 
   @LocalStorage()
-  public itemSorting: 'alpha'|'element'|'type';
+  public itemSorting: 'alpha'|'element'|'type'|'slayer';
 
   public elementSortedItems: { [key: string]: Item[] } = {};
   public allElements: string[] = [];

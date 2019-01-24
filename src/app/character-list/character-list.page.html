@@ -46,7 +46,7 @@
 
   <ion-list *ngIf="!isError && sorting === 'weapon'">
     <ion-item-group *ngFor="let weapon of allWeapons">
-      <ion-item-divider><strong>{{ convertWeaponType(weapon) }}</strong></ion-item-divider>
+      <ion-item-divider><strong><app-weapon [weapon]="weapon"></app-weapon></strong></ion-item-divider>
 
       <ion-item *ngFor="let char of weaponSortedCharacters[weapon]" detail (click)="loadCharacter(char)">
         <ng-container *ngTemplateOutlet="character; context: { char: char }"></ng-container>
@@ -81,6 +81,6 @@
       <app-appicon [name]="'char-' + char.star" [scaleX]="0.5" [scaleY]="0.5" [inline]="true"></app-appicon> 
       <span>{{ char.name }}</span>
     </h2>
-    <p>{{ convertWeaponType(char.weapon) }}</p>
+    <p class="vertical-center"><app-weapon [weapon]="char.weapon"></app-weapon></p>
   </ion-label>
 </ng-template>

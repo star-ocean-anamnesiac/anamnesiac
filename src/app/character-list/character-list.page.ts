@@ -93,10 +93,6 @@ export class CharacterListPage implements OnInit, OnDestroy {
     });
   }
 
-  public convertWeaponType(type: string): string {
-    return this.dataService.properifyItem(type);
-  }
-
   public loadCharacter(char: Character) {
 
     if(char.name === this.getPreviouslyLoadedChar()) {
@@ -128,7 +124,7 @@ export class CharacterListPage implements OnInit, OnDestroy {
       component: CharacterModal,
       componentProps: {
         character,
-        weapon: this.convertWeaponType(character.weapon)
+        weapon: this.dataService.properifyItem(character.weapon)
       }
     });
 
