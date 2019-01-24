@@ -58,7 +58,7 @@ import { Character } from '../models/character';
 
         <ion-label>
           <h2 class="vertical-center">
-            <app-appicon [name]="'char-' + char.star" [scaleX]="0.5" [scaleY]="0.5" [inline]="true"></app-appicon> 
+            <app-appicon [name]="'char-' + char.star" [scaleX]="0.5" [scaleY]="0.5" [inline]="true"></app-appicon>
             <span class="awakened-container" *ngIf="char.awakened">
               <app-appicon [name]="'misc-awakening'" [scaleX]="0.5" [scaleY]="0.5"></app-appicon>
             </span>

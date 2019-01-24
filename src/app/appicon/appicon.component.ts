@@ -59,7 +59,7 @@ export class AppIconComponent implements OnInit {
   get coordinates() {
     // style.object-position
     const spriteRef = appicons.frames[this.name + '.png'];
-    if(!spriteRef) return '0px 0px';
+    if(!spriteRef) { return '0px 0px'; }
 
     return `-${spriteRef.frame.x}px -${spriteRef.frame.y}px`;
   }

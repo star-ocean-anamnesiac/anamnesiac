@@ -58,7 +58,7 @@ export class CharacterSortPopover {
 
       <ion-col class="shrink-top-margin">
         <p class="vertical-center">
-          <app-appicon [name]="'char-' + char.star" [scaleX]="0.5" [scaleY]="0.5" [inline]="true"></app-appicon> 
+          <app-appicon [name]="'char-' + char.star" [scaleX]="0.5" [scaleY]="0.5" [inline]="true"></app-appicon>
           <span>{{ char.ace ? 'ACE' : '' }} {{ char.limited ? '(Limited)' : '' }}</span>
         </p>
         <p>Weapon: {{ weap }}<p>
@@ -110,7 +110,11 @@ export class CharacterSortPopover {
                   <ion-card>
                     <ion-card-header>
                     <ion-card-title>
-                    <app-appicon *ngIf="skill.highlight" [name]="'misc-highlight'" [scaleX]="0.25" [scaleY]="0.25" [inline]="true"></app-appicon> 
+                    <app-appicon *ngIf="skill.highlight" 
+                                 [name]="'misc-highlight'" 
+                                 [scaleX]="0.25" 
+                                 [scaleY]="0.25" 
+                                 [inline]="true"></app-appicon>
                       {{ skill.name }} ({{ skill.ap }} AP)
                     </ion-card-title>
                     </ion-card-header>
