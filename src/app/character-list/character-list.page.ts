@@ -187,7 +187,7 @@ export class CharacterListPage implements OnInit, OnDestroy {
     let arr = this.allCharacters;
 
     const curFilter = this.getCurrentFilter();
-    
+
     this.isFiltered = !!curFilter;
     if(curFilter) {
       arr = this.allCharacters.filter(char => char.type === curFilter);
