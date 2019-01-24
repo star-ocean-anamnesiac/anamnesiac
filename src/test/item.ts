@@ -1,5 +1,7 @@
 
 import { promises } from 'fs';
+import * as fs from 'fs';
+
 import test from 'ava';
 import * as YAML from 'js-yaml';
 import * as _ from 'lodash';
@@ -33,6 +35,8 @@ test('All items have valid information', async t => {
 
       t.true(item.factors.length > 0, 'item should have at least one factor' + parenName);
       t.truthy(item.obtained, 'item must mention where it is obtained' + parenName);
+
+      t.true(fs.existsSync(`src/assets/items/${item.picture}.png`), 'item must reference a valid image' + parenName);
 
       if(item.slayer) {
         t.true(_.includes(itemSlayers, item.slayer), 'item must have a valid slayer [check the model]' + parenName);

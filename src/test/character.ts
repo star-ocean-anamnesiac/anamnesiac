@@ -1,5 +1,6 @@
 
 import { promises } from 'fs';
+import * as fs from 'fs';
 import test from 'ava';
 import * as YAML from 'js-yaml';
 import * as _ from 'lodash';
@@ -37,6 +38,8 @@ test('All characters have valid information', async t => {
       t.true(_.isNumber(char.stats.hit), 'stats.hit must be a number' + parenName);
       t.true(_.isNumber(char.stats.grd), 'stats.grd must be a number' + parenName);
       t.true(_.isNumber(char.stats.hp), 'stats.hp must be a number' + parenName);
+
+      t.true(fs.existsSync(`src/assets/characters/${char.picture}.png`), 'character must reference a valid image' + parenName);
 
       char.talents.forEach(talent => {
         t.truthy(talent.name, 'talents must have a name' + parenName);
