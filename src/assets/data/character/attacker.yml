@@ -1547,3 +1547,126 @@
     power: ATK x 4000%
     maxHits: 7
     
+- name: Lasswell
+  cat: gl
+  rating: 7
+  picture: lasswell
+  weapon: bns
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 16065
+    atk: 2613
+    int: 1549
+    def: 1969
+    hit: 1120
+    grd: 826
+
+  talents:
+    - name: "Tranquil Spirit II"
+      effects: 
+        - desc: ATK +30%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 30
+        - desc: ATK +45%
+          all: Short Ranged Weapon Users
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 45
+    - name: "Dependable Honors Student"
+      effects: 
+        - desc: Nullifies Movement Rate Reduction Field
+          all: Short Ranged Weapon Users
+    - name: "Heir to the Blade II"
+      effects: 
+        - desc: AP usage -40% when Skill Chain is 3+
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain 3+
+            buffValue: 40
+    - name: "Undying Effort"
+      effects: 
+        - desc: Movement rate +20%
+
+  skills:
+    - name: "Exorcising Storm"
+      power: ATK x 170%
+      ap: 17
+      maxHits: 5
+      highlight: true
+    - name: "Tranquility"
+      power: ATK x 250%
+      ap: 20
+      maxHits: 2
+      highlight: true
+    - name: "Mirror of Haze"
+      power: ATK x 250%
+      ap: 20
+      maxHits: 2
+    - name: "Blade Flash - Awakened"
+      power: ATK x 450%
+      ap: 35
+      maxHits: 5
+      highlight: true
+
+  rush:
+    name: "Azure Sky"
+    effects: 
+      - desc: Damage +30%
+        all: true
+        duration: 20
+        meta:
+          priority: 1
+          buff: Damage
+          buffValue: 30
+    power: ATK x 3500%
+    maxHits: 9
+    
+    notes: >
+      _As free units go, Lasswell is surprisingly higher quality than previous offerings. He is essentially a poverty Claude, offering
+      ATK+45% to close range allies and 30% baseline. Alongside his decent dps, he is competitive with 2B in proper comps, and he 
+      nullifies Slow Fields too. On top of all of this he's also had 3 of his 4 skills buffed from JP, Tranquility and Mirror of
+      Haze both have their ATK multiplier increased from 200 to 250. His main damage dealing skill also recieves a slight buff,
+      increasing its multiplier from 400 to 450. This means he'll pack a bit more punch than originally expected._
+      
+      
+      His rush buff might as well not exist, as it is easily overwritten by the likes of Maria and 9S, and he has no AP on-hit, 
+      like 2B does. but you can't ask for everything, can you? You and your fantasies can never be quenched, can they?!_
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Strong unconditional ATK buff, that gets even better for melee characters.
+      
+      - Nullifies annoying movement fields for melee.
+      
+      - Free MLB Ace
+      
+      - Innate Ice Imbue attacks
+      
+      
+      **Cons**
+      
+      - Does little for ranged characters
+      
+      - Gives no AP recovery unlike other buffers
+      
+      - Lightning Wave has a max range which can make it awkward to use.
+      
+      - Below average rush build.
+      
+      
+      **Rotation**
+      
+      *Normal > Exorcising Storm > Tranquility > Blade Flash - Awakened > Spam it till out of AP. (General combo.)*
+    
