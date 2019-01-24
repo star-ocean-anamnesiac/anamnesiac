@@ -23,7 +23,7 @@ export class ItemListPage implements OnInit, OnDestroy {
   public allItems: Item[] = [];
 
   @LocalStorage()
-  public sorting: 'alpha'|'element'|'type';
+  public itemSorting: 'alpha'|'element'|'type';
 
   public elementSortedItems: { [key: string]: Item[] } = {};
   public allElements: string[] = [];
@@ -55,7 +55,7 @@ export class ItemListPage implements OnInit, OnDestroy {
   ) {}
 
   ngOnInit() {
-    if(!this.sorting) { this.sorting = 'alpha'; }
+    if(!this.itemSorting) { this.itemSorting = 'alpha'; }
 
     this.localStorage.observe('isJP').subscribe(val => {
       this.updateRegionBasedOn(val);
@@ -160,7 +160,7 @@ export class ItemListPage implements OnInit, OnDestroy {
 
     popover.onDidDismiss().then(({ data }) => {
       if(!data) { return; }
-      this.sorting = <'alpha'|'element'|'type'>data;
+      this.itemSorting = <'alpha'|'element'|'type'>data;
     });
 
     return await popover.present();

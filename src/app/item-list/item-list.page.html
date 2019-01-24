@@ -38,13 +38,13 @@
                   (ionInput)="updateSearchValue($event)"
   ></ion-searchbar>
     
-  <ion-list *ngIf="!isError && sorting === 'alpha'">
+  <ion-list *ngIf="!isError && itemSorting === 'alpha'">
     <ion-item *ngFor="let item of alphaSortedItems | filterBy: { name: searchValue }" detail (click)="loadItem(item)">
       <ng-container *ngTemplateOutlet="items; context: { item: item }"></ng-container>
     </ion-item>
   </ion-list>
 
-  <ion-list *ngIf="!isError && sorting === 'type'">
+  <ion-list *ngIf="!isError && itemSorting === 'type'">
     <ion-item-group *ngFor="let itemType of allItemTypes">
       <ion-item-divider><strong>{{ convertWeaponType(itemType) }}</strong></ion-item-divider>
 
@@ -54,7 +54,7 @@
     </ion-item-group>
   </ion-list>
 
-  <ion-list *ngIf="!isError && sorting === 'element'">
+  <ion-list *ngIf="!isError && itemSorting === 'element'">
     <ion-item-group *ngFor="let element of allElements">
       <ion-item-divider>
         <strong><app-element [element]="element"></app-element></strong>
@@ -66,7 +66,7 @@
     </ion-item-group>
   </ion-list>
 
-  <ion-list *ngIf="!isError && sorting === 'slayer'">
+  <ion-list *ngIf="!isError && itemSorting === 'slayer'">
     <ion-item-group *ngFor="let slayer of allSlayers">
       <ion-item-divider class="vertical-center">
         <strong><app-slayer [slayer]="slayer"></app-slayer></strong>
