@@ -37,7 +37,7 @@
 
   <ion-list class="updates">
     <ion-item *ngFor="let update of updates">
-      <ion-label>
+      <ion-label text-wrap>
         <h2>{{ update.date | date:'longDate' }}</h2>
         <p *ngIf="update.general">General Updates: {{ formatUpdate(update.general) }}</p>
         <p *ngIf="update.characterAdditions">New Characters: {{ formatUpdate(update.characterAdditions) }}</p>
