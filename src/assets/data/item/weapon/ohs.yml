@@ -5,6 +5,7 @@
   picture: onehandedswords/Type-4O
   atk: 964
   int: 958
+  slayer: Machine
   factors:
     - desc: All attribute damage +50% / Damage to mechs +50%
     - desc: Recover 15% of damage dealt on normal attacks as HP

@@ -5,6 +5,7 @@
   picture: guns/Sacred Gun・Divine Blue (Divine Wave Gun)
   atk: 962
   int: 959
+  slayer: Demon
   factors:
     - desc: Damage dealt to demons +40%
     - desc: 80% chance of surviving a lethal attack at greater than 10% HP
@@ -91,6 +92,7 @@
   atk: 962
   int: 957
   element: Ice
+  slayer: Demon
   factors:
     - desc: Imbue Ice Element and +15% DMG to Demons
     - desc: -10% AP Cost

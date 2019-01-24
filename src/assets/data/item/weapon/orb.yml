@@ -75,6 +75,7 @@
   picture: orbs/Magic Lantern Southern Melon Sphere (Evil Pumpkin)
   atk: 956
   int: 963
+  slayer: Plant
   factors:
     - desc: +20% Element DMG / +30% DMG to Plants
     - desc: +10% Crit Rate / +10% Crit DMG
@@ -110,8 +111,9 @@
   picture: orbs/Black Globe Gear
   atk: 960
   int: 962
+  slayer: Divinity
   factors:
-    - desc: +40% Dark DMG Dealt / +10% DMG to Divine
+    - desc: +40% Dark DMG Dealt / +10% DMG to Divinity
     - desc: +10% Crit Rate / +10% Crit DMG
     - desc: 80% Chance to Survive a Lethal Attack when HP is 20% or more
   thirdFactorLB: 5

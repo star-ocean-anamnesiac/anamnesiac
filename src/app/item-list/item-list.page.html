@@ -64,6 +64,16 @@
     </ion-item-group>
   </ion-list>
 
+  <ion-list *ngIf="!isError && sorting === 'slayer'">
+    <ion-item-group *ngFor="let slayer of allSlayers">
+      <ion-item-divider><strong>{{ slayer }}-slayer</strong></ion-item-divider>
+
+      <ion-item *ngFor="let item of slayerSortedItems[slayer] | filterBy: { name: searchValue }" detail (click)="loadItem(item)">
+        <ng-container *ngTemplateOutlet="items; context: { item: item }"></ng-container>
+      </ion-item>
+    </ion-item-group>
+  </ion-list>
+
 </ion-content>
 
 <ng-template #items let-item="item">
@@ -75,7 +85,9 @@
       <span>{{ item.name }}</span>
     </h2>
     <p *ngIf="item.type === 'weapon'" class="vertical-center">
-      {{ weaponDesc(item) }} <app-element *ngIf="item.element" [element]="item.element"></app-element>
+      {{ weaponDesc(item) }}
+      <app-element *ngIf="item.element" [element]="item.element"></app-element>
+      <app-slayer *ngIf="item.slayer" [slayer]="item.slayer"></app-slayer>
     </p>
     <p *ngIf="item.type === 'accessory'">{{ item.def }} DEF</p>
   </ion-label>

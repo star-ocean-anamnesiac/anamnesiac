@@ -35,8 +35,11 @@ export interface Item {
   // the level 20 def of the item (for accessories)
   def?: number;
 
-  // the element of the item, if given
+  // the element of the item, if given - Dark|Earth|Fire|Ice|Light|Lightning|Wind
   element?: string;
+
+  // the type of slayer it is - Beast|Bird|Demon|Divinity|Dragon|Human|Insect|Machine|Plant|Undead
+  slayer?: string;
 
   // the list of factors for an item
   factors: Factor[];

@@ -28,6 +28,9 @@ export class ItemListPage implements OnInit, OnDestroy {
   public elementSortedItems: { [key: string]: Item[] } = {};
   public allElements: string[] = [];
 
+  public slayerSortedItems: { [key: string]: Item[] } = {};
+  public allSlayers: string[] = [];
+
   public alphaSortedItems: Item[] = [];
 
   public typeSortedItems: { [key: string]: Item[] } = {};
@@ -232,6 +235,16 @@ export class ItemListPage implements OnInit, OnDestroy {
       .value();
 
     this.allElements = _.sortBy(Object.keys(this.elementSortedItems), el => {
+      return el === 'None' ? 'Z' : el;
+    });
+
+    // slayer sorting
+    this.slayerSortedItems = _(arr)
+      .sortBy('name')
+      .groupBy(item => item.slayer || 'None')
+      .value();
+
+    this.allSlayers = _.sortBy(Object.keys(this.slayerSortedItems), el => {
       return el === 'None' ? 'Z' : el;
     });
 

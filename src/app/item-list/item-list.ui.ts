@@ -11,6 +11,7 @@ import { Item } from '../models/item';
       <ion-list-header>Sort By</ion-list-header>
       <ion-item (click)="popoverCtrl.dismiss('alpha')"><ion-label>Item Name</ion-label></ion-item>
       <ion-item (click)="popoverCtrl.dismiss('element')"><ion-label>Item Element</ion-label></ion-item>
+      <ion-item (click)="popoverCtrl.dismiss('slayer')"><ion-label>Item Slayer</ion-label></ion-item>
       <ion-item (click)="popoverCtrl.dismiss('type')"><ion-label>Item Type</ion-label></ion-item>
     </ion-list>
   </ion-content>
@@ -60,6 +61,7 @@ export class ItemSortPopover {
           <span *ngIf="item.int">{{ item.int }} INT</span>
           <span *ngIf="item.def">{{ item.def }} DEF</span>
           <app-element *ngIf="item.element" [element]="item.element"></app-element>
+          <app-slayer *ngIf="item.slayer" [slayer]="item.slayer"></app-slayer>
         </p>
         <p>Obtained: {{ item.obtained }}</p>
       </ion-col>

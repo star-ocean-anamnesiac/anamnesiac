@@ -57,6 +57,7 @@
   picture: arms/Polar Bear's Punch (Polar Bear Paws)
   atk: 960
   int: 955
+  slayer: Demon
   factors:
     - desc: +40% DMG to Demons
     - desc: 80% Chance to Survive a Lethal Attack at 10% or more HP

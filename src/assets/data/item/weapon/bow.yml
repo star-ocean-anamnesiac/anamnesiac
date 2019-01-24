@@ -103,9 +103,10 @@
   picture: bows/Shiny Rupture
   atk: 476
   int: 475
+  slayer: Divinity
   factors:
     - desc: +20% DMG on Wave Motion
-    - desc: +10% DMG to Divine
+    - desc: +10% DMG to Divinities
     - desc: Additional Hit that Deals 5% of DMG Dealt by Normal Attacks
   thirdFactorLB: 3
   obtained: Blood Valkyrie (Exchange)
@@ -119,6 +120,7 @@
   picture: bows/Shiny Rupture II
   atk: 857
   int: 856
+  slayer: Divinity
   factors:
     - desc: +20% DMG to Divinities
     - desc: +25% DMG on Wave Motion
