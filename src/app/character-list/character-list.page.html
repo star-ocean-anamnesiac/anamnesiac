@@ -68,12 +68,12 @@
 
 <ng-template #character let-char="char">
 
-  <span slot="start" class="picture-class-chunk">
+  <span slot="start" class="picture-class-chunk" [class.margin-right]="isFiltered">
     <ion-img [src]="'assets/characters/' + char.picture + '.png'" class="mini-picture-icon"></ion-img>
     <span class="awakened-container" *ngIf="char.awakened">
       <app-appicon [name]="'misc-awakening'" [scaleX]="0.5" [scaleY]="0.5"></app-appicon>
     </span>
-    <app-appicon margin-horizontal [name]="'class-' + char.type" [scaleX]="0.25" [scaleY]="0.25"></app-appicon>
+    <app-appicon *ngIf="!isFiltered" margin-horizontal [name]="'class-' + char.type" [scaleX]="0.25" [scaleY]="0.25"></app-appicon>
   </span>
 
   <ion-label>

@@ -18,7 +18,7 @@ export class WeaponComponent implements OnInit {
   public weaponNice: string;
 
   constructor(private dataService: DataService) { }
-  
+
   ngOnInit() {
   }
 
