@@ -12,7 +12,7 @@ const sheetTypes: any = {
 const sheetPaths = {
   icon: 'assets/icons/+app-icons.png',
   item: 'assets/items/+item-icons.png'
-}
+};
 
 @Component({
   selector: 'app-appicon',
