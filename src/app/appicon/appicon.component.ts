@@ -2,6 +2,17 @@ import { Component, OnInit, Input, HostBinding } from '@angular/core';
 import { get } from 'lodash';
 
 import * as appicons from '../../assets/icons/+app-icons.json';
+import * as itemicons from '../../assets/items/+item-icons.json';
+
+const sheetTypes: any = {
+  icon: (<any>appicons).default || appicons,
+  item: (<any>itemicons).default || itemicons
+};
+
+const sheetPaths = {
+  icon: 'assets/icons/+app-icons.png',
+  item: 'assets/items/+item-icons.png'
+}
 
 @Component({
   selector: 'app-appicon',
@@ -9,6 +20,14 @@ import * as appicons from '../../assets/icons/+app-icons.json';
   styleUrls: ['./appicon.component.scss']
 })
 export class AppIconComponent implements OnInit {
+
+  get sheetUrl() {
+    return sheetPaths[this.type];
+  }
+
+  get spriteSheet() {
+    return sheetTypes[this.type];
+  }
 
   @Input()
   public name: string;
@@ -20,17 +39,37 @@ export class AppIconComponent implements OnInit {
   public scaleY: number;
 
   @Input()
+  public forceWidth: number;
+
+  @Input()
+  public forceHeight: number;
+
+  @Input()
+  public type: 'icon'|'item' = 'icon';
+
+  @Input()
   @HostBinding('class.inline-display')
   public inline: boolean;
 
-  // @HostBinding('style.transform')
   public get scale() {
-    return `scale(${this.scaleX}, ${this.scaleY})`;
+    let scaleX = this.scaleX;
+    let scaleY = this.scaleY;
+
+    if(this.forceWidth) {
+      scaleX = 1 * (this.forceWidth / this.widthNumber);
+    }
+
+    if(this.forceHeight) {
+      scaleY = 1 * (this.forceHeight / this.heightNumber);
+    }
+
+    return `scale(${scaleX}, ${scaleY})`;
   }
 
   @HostBinding('style.max-width')
   @HostBinding('style.min-width')
   get width() {
+    if(this.forceWidth) { return this.forceWidth + 'px'; }
     return (this.widthNumber * this.scaleX) + 'px';
   }
 
@@ -39,12 +78,13 @@ export class AppIconComponent implements OnInit {
   }
 
   private get widthNumber(): number {
-    return get(appicons.frames, [`${this.name}.png`, 'frame', 'w'], 0);
+    return get(this.spriteSheet.frames, [`${this.name}.png`, 'frame', 'w'], 0);
   }
 
   @HostBinding('style.max-height')
   @HostBinding('style.min-height')
   get height() {
+    if(this.forceHeight) { return this.forceHeight + 'px'; }
     return (this.heightNumber * this.scaleY) + 'px';
   }
 
@@ -53,12 +93,12 @@ export class AppIconComponent implements OnInit {
   }
 
   private get heightNumber(): number {
-    return get(appicons.frames, [`${this.name}.png`, 'frame', 'h'], 0);
+    return get(this.spriteSheet.frames, [`${this.name}.png`, 'frame', 'h'], 0);
   }
 
   get coordinates() {
     // style.object-position
-    const spriteRef = appicons.frames[this.name + '.png'];
+    const spriteRef = this.spriteSheet.frames[this.name + '.png'];
     if(!spriteRef) { return '0px 0px'; }
 
     return `-${spriteRef.frame.x}px -${spriteRef.frame.y}px`;

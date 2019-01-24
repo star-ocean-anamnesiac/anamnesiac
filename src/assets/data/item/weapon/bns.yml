@@ -2,7 +2,7 @@
 - name: Eldar Lord Rapier
   cat: 'gl'
   star: 5
-  picture: bladeandsheaths/Eldar Lord Rapier
+  picture: Eldar Lord Rapier
   atk: 474
   int: 476
   factors:

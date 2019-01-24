@@ -2,7 +2,7 @@
 - name: Reformed SRF Arrow
   cat: 'gl'
   star: 5
-  picture: bows/SRF Bow・Remodelled (Reformed SRF Arrow)
+  picture: SRF Bow・Remodelled (Reformed SRF Arrow)
   atk: 477
   element: Wind
   factors:
@@ -19,7 +19,7 @@
 - name: Aritfact Bow
   cat: 'gl'
   star: 5
-  picture: bows/Artifact Bow
+  picture: Artifact Bow
   atk: 477
   factors:
     - desc: +15% ATK
@@ -35,7 +35,7 @@
 - name: God's Bow
   cat: 'gl'
   star: 5
-  picture: bows/Godbow・Nuaza (God's Bow)
+  picture: Godbow・Nuaza (God's Bow)
   atk: 835
   factors:
     - desc: +15% Ice DMG Dealt
@@ -49,7 +49,7 @@
 - name: Crowned Bow
   cat: 'gl'
   star: 5
-  picture: bows/Billowing Bow (Crowned Bow)
+  picture: Billowing Bow (Crowned Bow)
   atk: 532
   int: 528
   factors:
@@ -66,7 +66,7 @@
 - name: Arc-En-Ciel
   cat: 'gl'
   star: 5
-  picture: bows/Arc-En-Ciel
+  picture: Arc-En-Ciel
   atk: 964
   int: 963
   element: Lightning
@@ -84,7 +84,7 @@
 - name: Grand Flared Bow
   cat: 'gl'
   star: 5
-  picture: bows/Victory Bow・Flare Spread (Grand Flared Bow)
+  picture: Victory Bow・Flare Spread (Grand Flared Bow)
   atk: 859
   int: 862
   factors:
@@ -100,7 +100,7 @@
 - name: Shiny Rupture 
   cat: 'gl'
   star: 5
-  picture: bows/Shiny Rupture
+  picture: Shiny Rupture
   atk: 476
   int: 475
   slayer: Divinity
@@ -117,7 +117,7 @@
 - name: Shiny Rupture II
   cat: 'gl'
   star: 5
-  picture: bows/Shiny Rupture II
+  picture: Shiny Rupture II
   atk: 857
   int: 856
   slayer: Divinity
@@ -135,7 +135,7 @@
 - name: Windburst Bow
   cat: 'gl'
   star: 5
-  picture: bows/Airblast Bow (Windburst Bow)
+  picture: Airblast Bow (Windburst Bow)
   atk: 962
   int: 961
   element: Wind
@@ -153,7 +153,7 @@
 - name: Heaven's Bow
   cat: 'gl'
   star: 5
-  picture: bows/Halo Stringer
+  picture: Halo Stringer
   atk: 958
   int: 963
   element: Light
@@ -171,7 +171,7 @@
 - name: Reincarnation
   cat: 'gl'
   star: 5
-  picture: bows/Reincarnation
+  picture: Reincarnation
   atk: 857
   int: 863
   factors:

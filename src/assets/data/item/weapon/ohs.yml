@@ -2,7 +2,7 @@
 - name: Type-4O Sword
   cat: 'gl'
   star: 5
-  picture: onehandedswords/Type-4O
+  picture: Type-4O
   atk: 964
   int: 958
   slayer: Machine

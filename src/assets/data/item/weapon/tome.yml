@@ -2,7 +2,7 @@
 - name: Advanced Combat Symbology Textbook
   cat: 'jp'
   star: 5
-  picture: tomes/Advanced Combat Heraldry Manual
+  picture: Advanced Combat Heraldry Manual
   atk: 506
   int: 509
   factors:

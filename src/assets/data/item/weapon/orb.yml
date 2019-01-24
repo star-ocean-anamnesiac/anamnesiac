@@ -2,7 +2,7 @@
 - name: Blackseed Watermelon Orb
   cat: 'gl'
   star: 5
-  picture: orbs/Black Thunder Watermelon Ball (Blackseed Watermelon Orb)
+  picture: Black Thunder Watermelon Ball (Blackseed Watermelon Orb)
   atk: 959
   int: 965
   factors:
@@ -19,7 +19,7 @@
 - name: Blue Star Gadget
   cat: 'gl'
   star: 5
-  picture: orbs/Bluestar Gadget
+  picture: Bluestar Gadget
   atk: 507
   int: 510
   factors:
@@ -37,7 +37,7 @@
 - name: Craggy Gem
   cat: 'gl'
   star: 5
-  picture: orbs/Rumbling Gem (Craggy Gem)
+  picture: Rumbling Gem (Craggy Gem)
   atk: 507
   int: 510
   factors:
@@ -54,7 +54,7 @@
 - name: Oceans Eye
   cat: 'gl'
   star: 5
-  picture: orbs/Beach Sphere (Ocean's Eye)
+  picture: Beach Sphere (Ocean's Eye)
   atk: 507
   int: 510
   factors:
@@ -72,7 +72,7 @@
 - name: Evil Pumpkin
   cat: 'gl'
   star: 5
-  picture: orbs/Magic Lantern Southern Melon Sphere (Evil Pumpkin)
+  picture: Magic Lantern Southern Melon Sphere (Evil Pumpkin)
   atk: 956
   int: 963
   slayer: Plant
@@ -91,7 +91,7 @@
 - name: Langdauq Orb
   cat: 'gl'
   star: 5
-  picture: orbs/Landock Orb
+  picture: Landock Orb
   atk: 528
   int: 533
   factors:
@@ -108,7 +108,7 @@
 - name: Black Globe Gear
   cat: 'gl'
   star: 5
-  picture: orbs/Black Globe Gear
+  picture: Black Globe Gear
   atk: 960
   int: 962
   slayer: Divinity

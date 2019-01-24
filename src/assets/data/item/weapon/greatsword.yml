@@ -2,7 +2,7 @@
 - name: Beastlord
   cat: 'gl'
   star: 5
-  picture: greatswords/Beastlord
+  picture: Beastlord
   atk: 963
   int: 958
   element: Light
@@ -21,7 +21,7 @@
 - name: Durandal
   cat: 'gl'
   star: 5
-  picture: greatswords/Durandal
+  picture: Durandal
   atk: 516
   int: 511
   factors:
@@ -38,7 +38,7 @@
 - name: Tyrfing
   cat: 'gl'
   star: 5
-  picture: greatswords/Tyrfing
+  picture: Tyrfing
   atk: 516
   int: 511
   factors:
@@ -56,7 +56,7 @@
 - name: Type-4O Blade
   cat: 'gl'
   star: 5
-  picture: greatswords/Type-40 Blade
+  picture: Type-40 Blade
   atk: 862
   int: 857
   factors:

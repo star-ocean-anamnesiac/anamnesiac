@@ -14,13 +14,16 @@ test('All items have valid information', async t => {
   const allData = await promises.readFile(ROOT_FILE, 'utf-8');
   const { weapons, accessories } = YAML.safeLoad(allData);
 
-  const allItems = weapons.map(({ id }) => `weapon/${id}`).concat(accessories.map(({ id }) => `accessory/${id}`));
+  const allItems = weapons.concat(accessories);
 
   const itemElements = ['Dark', 'Earth', 'Fire', 'Ice', 'Light', 'Lightning', 'Wind'];
   const itemSlayers  = ['Beast', 'Bird', 'Demon', 'Divinity', 'Dragon', 'Human', 'Insect', 'Machine', 'Plant', 'Undead'];
 
-  await Promise.all(allItems.map(async (path) => {
-    const data = await promises.readFile(`src/assets/data/item/${path}.yml`, 'utf-8');
+  await Promise.all(allItems.map(async ({ id }) => {
+
+    const type = id === 'all' ? 'accessory' : 'weapon';
+
+    const data = await promises.readFile(`src/assets/data/item/${type}/${id}.yml`, 'utf-8');
     const items: Item[] = YAML.safeLoad(data);
 
     items.forEach(item => {
@@ -36,7 +39,8 @@ test('All items have valid information', async t => {
       t.true(item.factors.length > 0, 'item should have at least one factor' + parenName);
       t.truthy(item.obtained, 'item must mention where it is obtained' + parenName);
 
-      t.true(fs.existsSync(`src/assets/items/${item.picture}.png`), 'item must reference a valid image' + parenName);
+      const subtype = id === 'all' ? 'accessory' : id;
+      t.true(fs.existsSync(`src/assets/items/${subtype}/${item.picture}.png`), 'item must reference a valid image' + parenName);
 
       if(item.slayer) {
         t.true(_.includes(itemSlayers, item.slayer), 'item must have a valid slayer [check the model]' + parenName);

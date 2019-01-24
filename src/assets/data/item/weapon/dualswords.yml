@@ -3,7 +3,7 @@
 - name: Baphomet's Blades
   cat: 'gl'
   star: 5
-  picture: dualswords/Baphomet's Blades
+  picture: Baphomet's Blades
   atk: 515
   int: 512
   factors:
@@ -21,7 +21,7 @@
 - name: Luminous Slicers
   cat: 'gl'
   star: 5
-  picture: dualswords/Luminous Slicers
+  picture: Luminous Slicers
   atk: 652
   int: 649
   factors:
@@ -38,7 +38,7 @@
 - name: Crimson Forked Tridents
   cat: 'gl'
   star: 5
-  picture: dualswords/Crimson Forked Swords (Tridents)
+  picture: Crimson Forked Swords (Tridents)
   atk: 963
   int: 956
   element: Light
@@ -56,7 +56,7 @@
 - name: Twin Flying Daggers
   cat: 'gl'
   star: 5
-  picture: dualswords/Twin Feather Daggers (Twin Flying Daggers)
+  picture: Twin Feather Daggers (Twin Flying Daggers)
   atk: 652
   int: 649
   factors:
@@ -73,7 +73,7 @@
 - name: Twin Snowswords
   cat: 'gl'
   star: 5
-  picture: dualswords/Twin Snowswords
+  picture: Twin Snowswords
   atk: 512
   int: 507
   factors:
@@ -90,7 +90,7 @@
 - name: Twin Coro Swords
   cat: 'gl'
   star: 5
-  picture: dualswords/Twin Koro Edge (Twin Coro Blades)
+  picture: Twin Koro Edge (Twin Coro Blades)
   atk: 964
   int: 956
   element: Ice

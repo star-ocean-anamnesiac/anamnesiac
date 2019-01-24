@@ -2,7 +2,7 @@
 - name: Divine Wave Gun
   cat: 'gl'
   star: 5
-  picture: guns/Sacred Gun・Divine Blue (Divine Wave Gun)
+  picture: Sacred Gun・Divine Blue (Divine Wave Gun)
   atk: 962
   int: 959
   slayer: Demon
@@ -20,7 +20,7 @@
 - name: Umbral Blaster
   cat: 'gl'
   star: 5
-  picture: guns/Shadow Bullet (Umbral Blast)
+  picture: Shadow Bullet (Umbral Blast)
   atk: 850
   int: 847
   factors:
@@ -37,7 +37,7 @@
 - name: Storm Bolt
   cat: 'gl'
   star: 5
-  picture: guns/Storm Bolt
+  picture: Storm Bolt
   atk: 840
   int: 843
   element: Wind
@@ -55,7 +55,7 @@
 - name: Assault Laser
   cat: 'gl'
   star: 5
-  picture: guns/Assault Laser
+  picture: Assault Laser
   atk: 530
   int: 0
   factors:
@@ -71,7 +71,7 @@
 - name: Illumination Blaster
   cat: 'gl'
   star: 5
-  picture: guns/Illumination Blaster
+  picture: Illumination Blaster
   atk: 511
   int: 506
   factors:
@@ -88,7 +88,7 @@
 - name: Frozen Revolver
   cat: 'gl'
   star: 5
-  picture: guns/Frozen Revolver (Icy Revolver)
+  picture: Frozen Revolver (Icy Revolver)
   atk: 962
   int: 957
   element: Ice
@@ -107,7 +107,7 @@
 - name: Cerberus Gun
   cat: 'gl'
   star: 5
-  picture: guns/Cerberus Blaster
+  picture: Cerberus Blaster
   atk: 489
   int: 491
   factors:
@@ -124,7 +124,7 @@
 - name: Dimension Slicer
   cat: 'gl'
   star: 5
-  picture: guns/Spatial Gun・D Slicer
+  picture: Spatial Gun・D Slicer
   atk: 489
   int: 491
   factors:
