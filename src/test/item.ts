@@ -9,11 +9,14 @@ import { Item } from '../app/models/item';
 const ROOT_FILE = 'src/assets/data/root.yml';
 
 test('All items have valid information', async t => {
-  const data = await promises.readFile(ROOT_FILE, 'utf-8');
-  const { weapons, accessories } = YAML.safeLoad(data);
+  const allData = await promises.readFile(ROOT_FILE, 'utf-8');
+  const { weapons, accessories } = YAML.safeLoad(allData);
 
   const allItems = weapons.map(({ id }) => `weapon/${id}`).concat(accessories.map(({ id }) => `accessory/${id}`));
-  
+
+  const itemElements = ['Dark', 'Earth', 'Fire', 'Ice', 'Light', 'Lightning', 'Wind'];
+  const itemSlayers  = ['Beast', 'Bird', 'Demon', 'Divinity', 'Dragon', 'Human', 'Insect', 'Machine', 'Plant', 'Undead'];
+
   await Promise.all(allItems.map(async (path) => {
     const data = await promises.readFile(`src/assets/data/item/${path}.yml`, 'utf-8');
     const items: Item[] = YAML.safeLoad(data);
@@ -30,6 +33,14 @@ test('All items have valid information', async t => {
 
       t.true(item.factors.length > 0, 'item should have at least one factor' + parenName);
       t.truthy(item.obtained, 'item must mention where it is obtained' + parenName);
+
+      if(item.slayer) {
+        t.true(_.includes(itemSlayers, item.slayer), 'item must have a valid slayer [check the model]' + parenName);
+      }
+
+      if(item.element) {
+        t.true(_.includes(itemElements, item.element), 'item must have a valid element [check the model]' + parenName);
+      }
 
     });
   }));
