@@ -159,6 +159,7 @@ export class CharacterListPage implements OnInit, OnDestroy {
       if(!data) { return; }
       if(data === 'show34') {
         this.show34 = !this.show34;
+        this.updateCharacterList();
         return;
       }
       this.sorting = <'tier'|'alpha'|'weapon'>data;
