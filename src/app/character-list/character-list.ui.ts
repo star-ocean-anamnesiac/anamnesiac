@@ -223,6 +223,7 @@ export class CharacterSortPopover {
 
     .profile-row {
       border-bottom: 1px solid #000;
+      margin-bottom: -5px;
     }
 
     .tall-row {
