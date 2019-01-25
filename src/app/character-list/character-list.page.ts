@@ -27,6 +27,9 @@ export class CharacterListPage implements OnInit, OnDestroy {
   @LocalStorage()
   public sorting: 'tier'|'alpha'|'weapon';
 
+  @LocalStorage()
+  public show34: boolean;
+
   public tierSortedCharacters: { [key: string]: Character[] } = {};
   public allTiers: string[] = [];
 
@@ -154,6 +157,10 @@ export class CharacterListPage implements OnInit, OnDestroy {
 
     popover.onDidDismiss().then(({ data }) => {
       if(!data) { return; }
+      if(data === 'show34') {
+        this.show34 = !this.show34;
+        return;
+      }
       this.sorting = <'tier'|'alpha'|'weapon'>data;
     });
 
@@ -187,6 +194,10 @@ export class CharacterListPage implements OnInit, OnDestroy {
     let arr = this.allCharacters;
 
     const curFilter = this.getCurrentFilter();
+
+    if(!this.show34) {
+      arr = this.allCharacters.filter(x => x.star >= 5);
+    }
 
     this.isFiltered = !!curFilter;
     if(curFilter) {

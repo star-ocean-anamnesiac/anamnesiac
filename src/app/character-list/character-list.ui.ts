@@ -4,6 +4,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { PopoverController, Tabs, NavParams, ModalController } from '@ionic/angular';
 import { Character } from '../models/character';
 import { DomSanitizer } from '@angular/platform-browser';
+import { LocalStorage } from 'ngx-webstorage';
 
 
 @Component({
@@ -14,12 +15,20 @@ import { DomSanitizer } from '@angular/platform-browser';
       <ion-item (click)="popoverCtrl.dismiss('alpha')"><ion-label>Character Name</ion-label></ion-item>
       <ion-item (click)="popoverCtrl.dismiss('weapon')"><ion-label>Character Weapon</ion-label></ion-item>
       <ion-item (click)="popoverCtrl.dismiss('tier')"><ion-label>Character Tier</ion-label></ion-item>
+      <ion-item (click)="popoverCtrl.dismiss('tier')">
+        <ion-label>Show 3* and 4*</ion-label>
+        <ion-checkbox [checked]="show34"></ion-checkbox></ion-checkbox>
+      </ion-item>
     </ion-list>
   </ion-content>
   `,
   styles: []
 })
 export class CharacterSortPopover {
+
+  @LocalStorage()
+  public show34: boolean;
+
   constructor(public popoverCtrl: PopoverController) {}
 }
 
