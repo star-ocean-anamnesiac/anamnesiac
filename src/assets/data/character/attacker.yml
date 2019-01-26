@@ -1212,11 +1212,13 @@
       power: ATK x 210%
       ap: 21
       maxHits: 2
+      highlight: true
     - name: "Aura Wall"
       power: ATK x 200%
       ap: 20
       maxHits: 20
-    - name: "Unbridled Double Slashr"
+      highlight: true
+    - name: "Unbridled Double Slash"
       power: ATK x 400%
       ap: 30
       maxHits: 4
@@ -1243,9 +1245,49 @@
     power: ATK x 4000%
     maxHits: 6
     
+  notes: >
+      _Albel enters the game as an interesting character, he treads the line between buffer and attack, doing neither very well. His
+      ATK buff works similar to Claude and at this point there are quite a few characters who match or surpass his single target
+      damage buff. His debuff isn't really that strong, or at least not enough to consider him over other characters, though it
+      does mean he makes Lenneth even worse. His post rush buff is interesting, halving his defence in exchange for doubling his
+      attack makes him a super glass cannon, any type of meaningful AP reduction while this is active will make him a powerhouse.
+      However his pre-rush damage is a bit underwhelming by comparison._
+      
+      
+      _His downsides we've touched upon, he's not a bad character by any means, but he's not really exceptional at either being a 
+      buffer, where he gets beaten out, and he has to wait till post rush to truly become a damage carry. Plus the downside of his
+      rush buff makes him very squishy so newer players may find him a bit challenging to use as they grasp game and boss fight 
+      mechanics._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Decent variety of buffs
+      
+      - High post rush damage
+      
+      - Rare debuffing of enemy talent
+      
+      
+      **Cons**
+            
+      - Super squishy post rush
+      
+      - Buffs are easily made redundant
+      
+      - Not the best skill options
+            
+      
+      **Rotation**
+      
+      *Normal > Unbridled Air Slash > Aura Wall > Unbridled Air Slash > Spam till out of AP (Damage rotation)*
+    
 - name: Ilia Silvestri
   cat: gl
-  rating: 4.5
+  rating: 4
   picture: iliasilvestri
   weapon: knuckle
   limited: false
@@ -1297,10 +1339,12 @@
       power: ATK x 240%
       ap: 23
       maxHits: 4
+      highlight: true
     - name: "Crescent Locus"
       power: ATK x 150%
       ap: 17
       maxHits: 4
+      highlight: true
     - name: "Fiery Hammer of Might"
       power: ATK x 270%
       ap: 26
@@ -1333,9 +1377,48 @@
     power: ATK x 3000%
     maxHits: 14
     
+  notes: >
+      _Ilia enters the game in order to tilt you when you pull her on a limited banner. She's quite a late arrival for a 5 star and is
+      a weak one on top. However she does have some unique things going for her on the buff front. Damage to multiple enemies is not
+      a commonly seen buff, mostly because it's not very useful in a boss fight, but for MoT and bosses with trash waves and adds 
+      it could have some relevance. Boosting fire damage dealt for the party is an odd one but if the party can exploit it on a fire
+      weak boss, it's a pretty nice buff to have. Her ATK buff isn't amazing at this point in GL a lot of characters beat it or match
+      it and have other more relevant buffs._
+      
+      
+      _Her draw backs are, as mentioned, her ATk buff just isn't that good by todays standards. Also her ATK buff and fire damage buff
+      don't have the best synergy since the fire damage is more relevant for fire invokers. Plus being a 5 star means she has less
+      stats and overall just poor damage for an attacker. She's not bad by any means but at this point in GL you can do much better._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - 5 star non-ace so costs less to limit break and augment.
+      
+      - Unique party wide buffs
+      
+      - Built in AP reduction
+      
+      
+      **Cons**
+            
+      - 5 star non-ace so has less stats.
+      
+      - Buffs aren't really that relevant outside of niche comps and content
+      
+      - ATK buff is overshadowed by many other attackers
+            
+      
+      **Rotation**
+      
+      *Normal > Palm of Destruction > Crescent Locus > Palm of Destruction > Spam till out of AP (Damage rotation)*
+    
 - name: Clair Lasbard (Halloween)
   cat: gl
-  rating: 9.5
+  rating: 9
   picture: halloweendemonclairlasbard
   weapon: dualswords
   ace: true
@@ -1394,14 +1477,17 @@
       power: ATK x 150%
       ap: 14
       maxHits: 2
+      highlight: true
     - name: "Dextral Slaughter"
       power: ATK x 220%
       ap: 22
       maxHits: 2
+      highlight: true
     - name: "Hazy Wheel"
       power: ATK x 440%
       ap: 32
       maxHits: 8
+      highlight: true
 
   rush:
     name: "Waking Hell"
@@ -1422,6 +1508,43 @@
           buffValue: 30
     power: ATK x 4000%
     maxHits: 7
+    
+  notes: >
+      _Global's first true quality damage carry comes in the form of best girl Clair. Dressed in a rather revealing outfit to boot.
+      Halloween Clair brings a lot of damage to your party, in fact past 100 hit count she has the highest DPS in the game. She has
+      hit count related buffs, one boosting her own ATK and another boosting party wide ATK damage. Her built in AP reduction allows
+      her to get out more attack. Plus her ATK buff to herself means her attack is the second highest in the game after Winter Fidel.
+      She also does bring a little utility, aside from her ATK damage buff her post rush buff increases party DEF by 30% while 
+      lowering it by the same amount for enemies._
+      
+      
+      _Clair still has her issues however, her rush gain could be better for a start. Also she's quite squishy as well so does require
+      some level of skill to use effectively. Though really in GL she's pretty hard to say no to as a damage carry in the hands of a
+      good player._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Extremely high damage output
+      
+      - Reasonably rare post rush buff and debuff
+      
+      - Built in AP reduction
+      
+      
+      **Cons**
+            
+      - Quite squishy, especially pre-rush
+      
+      - Rush gain could be better
+            
+      
+      **Rotation**
+      
+      *Normal > Sinistral Edge > Dextral Slaughter > Hazy Wheel > Spam till out of AP (Damage rotation)*
     
 - name: Millie Chliette (Halloween)
   cat: gl
@@ -1483,6 +1606,7 @@
       power: ATK x 170%
       ap: 14
       maxHits: 1
+      highlight: true
     - name: "Hammer Slammer"
       power: ATK x 340%
       ap: 22
@@ -1491,6 +1615,7 @@
       power: ATK x 550%
       ap: 32
       maxHits: 3
+      highlight: true
 
   rush:
     name: "Trick or Treat"
@@ -1504,6 +1629,46 @@
           buffValue: 50
     power: ATK x 3500%
     maxHits: 8
+    
+  notes: >
+      _Global gets its first Arms user and boy is it a cute one. Halloween Millie is a pretty strong buff character who was wronged 
+      by the introduction of 2b before her. However she's still a very strong buffer in her own right, even if overshadowed by 2B.
+      She gives both a solid attack buff and AP recovery on normals. She also has the niche ability to nullify the annoying movement
+      and rush gauge reduction fields, and unlike others who have this buff her isn't restricted, it's for the whole party. Her
+      talent with pumpkin smash means it makes for a powerful finisher to an attack chain. She also has both a solid range or melee
+      set up and being an Arms user means she actually has good normals at both long and short range. Her post rush buff also boosts
+      party elemental damage by 50%._
+      
+      
+      _She still has downsides, certain characters can surpass her ATK buff, especially with certain compositions. Arms normals have
+      a bit of an awkward range which means trying to normal may make you run into stuff while you get used to it. Also her rush
+      gain is a bit on the slow side and her AI gets very confused as to whether it wants to go range or melee._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Good party wide buffs
+      
+      - Niche buff to deal with movement and rush reduction fields
+      
+      - Very flexible with range. Can do melee or ranged combat.
+      
+      - Awooo
+      
+      
+      **Cons**
+            
+      - Ranged normals can be awkward to use at first
+      
+      - Rush gain could be better
+            
+      
+      **Rotation**
+      
+      *Normal > Lantern Burst > Howling Rocket Punch > Pumpkin Smash (Damage rotation)*
     
 - name: Fayt Leingod
   cat: gl
@@ -1557,10 +1722,12 @@
       ap: 20
       maxHits: 4
       element: Lightning
+      highlight: true
     - name: "Gliding Side Kick"
       power: ATK x 180%
       ap: 19
       maxHits: 3
+      highlight: true
     - name: "Avian Air Raid"
       power: ATK x 400%
       ap: 30
@@ -1579,6 +1746,48 @@
           buffValue: 50
     power: ATK x 3500%
     maxHits: 12
+    
+  notes: >
+      _Fayt arrived at a bad time for an attack buffer, overshadowed by 2B and to a lesser extent Halloween Millie, he never really
+      got his chance to shine like he should have. However that doesn't mean he's not aa good character. Especially since the other
+      two were limited characters while Fayt will always be available. Fayt comes with a decent attack buff that has been exceeded
+      in recent characters but may still be useful. His passive elemental buff isn't too common and his post rush upgrade of it
+      matches that of 2B and Halloween Millie. On top of that Fayt has a build in double imbue of light and fire, the fire imbue
+      being very nice as it isn't an element covered by ohs right now._
+      
+      
+      _Fayt still has downsides, aside from just being a downgrade from two limited characters. His lack of ranged filler hurts him
+      as it means his options are limited at times. Talented imbues can always be a double edge sword when bosses with resists come
+      into play and you don't have the weakness weapon to cancel out the imbue. Also his anti-flinch is pretty redundant at this
+      point with so many strong defenders._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Decent ATK buff
+      
+      - Double self imbue
+      
+      - Passive elemental damage buff
+      
+      - Awooo
+      
+      
+      **Cons**
+            
+      - Has no ranged attack
+      
+      - Needs certain weapons against bosses with elemental resist
+      
+      - His anti-flinch is pretty useless at this point
+            
+      
+      **Rotation**
+      
+      *Normal > Shotgun Blast > Gliding Side Kick > Shotgun Blast > Spam till out of AP (Damage rotation)*
     
 - name: Michael
   cat: gl
@@ -1641,16 +1850,19 @@
       ap: 18
       maxHits: 5
       element: Fire
+      highlight: true
     - name: "Bosom Blow"
       power: ATK x 330%
       ap: 30
       maxHits: 1
       element: Fire
+      highlight: true
     - name: "Firefest"
       power: ATK x 660%
       ap: 42
       maxHits: 6
       element: Fire
+      highlight: true
     - name: "Lava Flow"
       power: ATK x 740%
       ap: 52
@@ -1661,7 +1873,6 @@
     name: "Spicule"
     effects: 
       - desc: -50% AP Cost
-        all: true
         duration: 20
         meta:
           priority: 1
@@ -1670,6 +1881,48 @@
     power: ATK x 3500%
     maxHits: 8
     element: Fire
+    
+  notes: >
+      _Michael is a very unique character who at least wins kudos for having a unique design compared to other characters. He is
+      meant to be a damage carry, but to truly fill that role he needs to first die in order to get his 25% stat buff. He does bring
+      a good attack buff for attackers, but it's not stellar. He buffs his own fire damage for all his skills as well. His strongest
+      point is probably his post rush buff, a massive AP cost reduction for himself to dish out damage. Worth noting his stat buff
+      for each dead ally counts even after revives, whether that be reviving with gems. (Please don't.) Or giving him synergy with
+      Evelysse._
+      
+      
+      _Michael's downsides are many. He isn't much of a damage carry if people aren't dying for him, really adding extra emphasis to
+      the term carry. His attack buff is surpassed by plenty of attackers at this point and his selfish talents aren't really that
+      good. His attacks can also be a bit clunky to use and if there is any boss with fire resist you'd best have some knuckles with
+      an imbue they're weak or neutral too._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Unique design
+      
+      - Decent ATK buff for attackers
+      
+      - Deals decent damage
+      
+      - Really good against fire weak bosses
+      
+      
+      **Cons**
+            
+      - Has no ranged attack
+      
+      - Needs people to die to be effective
+      
+      - Needs elemental imbue knuckles if enemy resists fire
+            
+      
+      **Rotation**
+      
+      *Normal > Pyroclast Punch > Bosom Blow > Firefest (Damage rotation)*
     
 - name: Fidel Camuze (Winter)
   cat: gl
@@ -1737,14 +1990,17 @@
       power: ATK x 150%
       ap: 130
       maxHits: 3
+      highlight: true
     - name: "Bullet Barrage"
       power: ATK x 400%
       ap: 27
       maxHits: 6
+      highlight: true
     - name: "Bombing Run"
       power: ATK x 230%
       ap: 21
       maxHits: 6
+      highlight: true
 
   rush:
     name: "Holiday Surprise"
@@ -1759,6 +2015,45 @@
           buffValue: 20
     power: ATK x 4000%
     maxHits: 30
+    
+  notes: >
+      _For Christmas Fidel decides to have a go at being GLs first dual gun user. He comes as a damage carry, boasting a high amount
+      of attack power and the 2nd highest dps in the game. He does provide some utility to the party, a weak ATK buff if you don't
+      have one. AP recovery but only after 100 hits and an ATK damage buff but only after 200 hits. He self buffs his ATK and HIT
+      before even getting into combat and with his talent focusing on bombing run it's not surprising his damage revolves around 
+      spamming it with max cancel bonus, along with bullet barrage. His post rush buff reduces his AP costs to let him spam even more
+      plus he gets a nice crit bonus if one isn't already being given to boost his damage output a little._
+      
+      
+      _Winter Fidel does have some downsides. Bombing run makes you leap back which can make it awkward to use as much as you want to
+      increasing the clunk factor of the skill. Also his more powerful party buffs are behind hit counts and while 100 hits isn't
+      that difficult 200 can become a bit of a task, though reaching it before rushing will provide a good damage boost._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Brings a lot of damage
+      
+      - Some weak utility to the party
+      
+      - It's all about the damage really
+      
+            
+      **Cons**
+            
+      - Bombing Run jumping back
+      
+      - High hit count buffs
+            
+      
+      **Rotation**
+      
+      *Normal > Bombing Run > Flying Divebomb > Bombing Run > Bombing Run > Bullet Barrage (Damage rotation)*
+      
+      *Normal > Flying Divebomb > Bombing Run > Flying Divebomb > Bombing Run > Bombing Run > Bullet Barrage (Damage rotation 103+ AP)*
     
 - name: Welch Vineyard (Tearful)
   cat: gl
@@ -1807,6 +2102,7 @@
       power: ATK x 150%
       ap: 17
       maxHits: 4
+      highlight: true
     - name: "Hammer of Might"
       power: ATK x 230%
       ap: 24
@@ -1815,6 +2111,7 @@
       power: ATK x 190%
       ap: 20
       maxHits: 4
+      highlight: true
     - name: "X Claw"
       power: ATK x 310%
       ap: 29
@@ -1839,6 +2136,32 @@
           buffValue: 100
     power: ATK x 2000%
     maxHits: 20
+    
+  notes: >
+      _Tearful Welch. Welch finally gets made into a 5 star, a freebie non-ace as well. Her best role is as a griefer of the party
+      lowering everyones DEF by 50% but also all enemies as well. Her post rush buff increases party ATK by 50% and nullifies your
+      DEF with a -100% debuff so everything hits you like it was a critical hit. Tearful Welch is only good if you're seeing to add
+      some challenge to a party or do some griefing. Please kick them if they enter your rooms and leave if one joins._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Good for griefing
+      
+      - Adds a challenge to runs
+      
+            
+      **Cons**
+            
+      - Her existence
+            
+      
+      **Rotation**
+      
+      *Normal > Crescent Lotus > Drill Spike > Crescent Lotus > Spam till out of AP (Damage rotation)*
     
 - name: Meracle Chamlotte
   cat: gl
@@ -1923,10 +2246,12 @@
       power: ATK x 160%
       ap: 16
       maxHits: 4
+      highlight: true
     - name: "Crescent Locus"
       power: ATK x 150%
       ap: 17
       maxHits: 4
+      highlight: true
     - name: "Eviscerating Claw"
       power: ATK x 250%
       ap: 25
@@ -1947,6 +2272,41 @@
           buffValue: 40
     power: ATK x 4000%
     maxHits: 7
+    
+  notes: >
+      _Meracle enters as another damage carry similar to Cliff. Her buffs are generally selfish but unlike Cliff she does bring at
+      least something to the party if characters are at short range and AP recovery to defenders, these two talents mean she's a
+      good friend to defenders and in the current FFBE collab meta, that suits her very well. She gets stronger as hit count
+      increases as well but that ATK buff may well already be in effect from an ATK buffer such as 2B or Lasswell. Her damage is
+      obviously very good and her crit rate buff for short range means she's usable for Crystal Guardian._
+      
+      
+      _Her downside is simply that she doesn't really pack enough punch to justify her poor utility for the party. However if you have
+      a defender in the mix and no AP recovery for them then Meracle justifies her place in a team at that point._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Does a good amount of damage
+      
+      - Some weak utility to the party
+      
+      - Works well with hit counter characters if no ATK buffer
+      
+            
+      **Cons**
+            
+      - Party Utility is weak without the right characters
+      
+      - If no ATK buffer it requires a high hit count to get the most out of her
+            
+      
+      **Rotation**
+      
+      *Normal > Crescent Locus > Gouging Spike > CA Crescent Locus > Spam till out of AP (Damage rotation)*
     
 - name: Lasswell
   cat: gl
