@@ -243,7 +243,6 @@
   atk: 961
   int: 956
   slayer: Divinity
-  slayer: Human
   factors:
     - desc: +40% DMG to Divine / +20% DMG to Humans
     - desc: -10% AP Cost
