@@ -45,7 +45,6 @@
   factors:
     - desc: Imbue Light Element
     - desc: +20% DMG on Cyclone Blade
-  thirdFactorLB: N/A
   obtained: Gacha / OHS Coin Exchange / Transmutation
   
   notes: >
@@ -62,7 +61,6 @@
   factors:
     - desc: +15% Lightning DMG Dealt
     - desc: +20% DMG on Rising Blade
-  thirdFactorLB: N/A
   obtained: Gacha / OHS Coin Exchange / Transmutation
   
   notes: >
@@ -78,7 +76,6 @@
   factors:
     - desc: +15% ATK / -15% DEF
     - desc: +20% DMG on Air Slash
-  thirdFactorLB: N/A
   obtained: Gacha / OHS Coin Exchange / Transmutation
   
   notes: >
