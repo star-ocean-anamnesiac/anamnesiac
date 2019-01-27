@@ -278,14 +278,14 @@
   atk: 863
   int: 859
   factors:
-    - desc: +20% DMG on YoHRa Arms: Two
+    - desc: "+20% DMG on YoHRa Arms: Two"
     - desc: Recover 3% HP every 5 seconds
     - desc: +10% ATK DMG Dealt
   thirdFactorLB: 5
   obtained: Nier Event Clear
   
   notes: >
-    A weapon meant for 2b, not really needed if you have her gacha weapon. But if for new players its high stats and reasonable second
+    A weapon meant for 2B, not really needed if you have her gacha weapon. But if for new players its high stats and reasonable second
     and third factor make it a solid weapon to use.
     
 - name: Cruel Oath
@@ -295,7 +295,7 @@
   atk: 861
   int: 858
   factors:
-    - desc: +20% DMG on YoHRa Arms: Four
+    - desc: "+20% DMG on YoHRa Arms: Four"
     - desc: +30% AP RCV Speed
     - desc: -10% AP Cost
   thirdFactorLB: 5
