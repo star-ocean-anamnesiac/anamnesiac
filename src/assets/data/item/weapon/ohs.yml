@@ -23,6 +23,7 @@
   star: 5
   picture: Demonic Sword・Balmung (Cursed Balmung Blade)
   atk: 545
+  int: 0
   factors:
     - desc: +15% ATK
     - desc: +20% DMG on Helm Splitter
@@ -39,6 +40,7 @@
   star: 5
   picture: Crow Solace (Claidheamh Soluis)
   atk: 840
+  int: 0
   element: Light
   factors:
     - desc: Imbue Light Element
@@ -56,6 +58,7 @@
   star: 5
   picture: Lightning Sword
   atk: 835
+  int: 0
   factors:
     - desc: +15% Lightning DMG Dealt
     - desc: +20% DMG on Rising Blade
@@ -71,6 +74,7 @@
   star: 5
   picture: Moonite Sword (Moonstone Sword)
   atk: 835
+  int: 0
   factors:
     - desc: +15% ATK / -15% DEF
     - desc: +20% DMG on Air Slash
@@ -86,6 +90,7 @@
   star: 5
   picture: Aurora Blade
   atk: 478
+  int: 0
   slayer: Machine
   factors:
     - desc: +20% DMG on Dragon Slash
@@ -103,6 +108,7 @@
   star: 5
   picture: Ruin's Fate (Blade of Ruin)
   atk: 850
+  int: 0
   factors:
     - desc: +15% DMG to Single Targets
     - desc: +20% DMG on Air Raid
@@ -172,6 +178,7 @@
   star: 5
   picture: Criminal's Sword・Angel Slayer (Slayer of Divine Beings)
   atk: 475
+  int: 0
   element: Light
   factors:
     - desc: Gain Light Attribute
@@ -189,6 +196,7 @@
   star: 5
   picture: Slayer of Divine Beings II
   atk: 861
+  int: 0
   element: Light
   factors:
     - desc: Gain Light Attribute
@@ -206,6 +214,7 @@
   star: 5
   picture: Sacred Tear
   atk: 479
+  int: 0
   slayer: Human
   factors:
     - desc: +10% DMG on Sword Bomber
