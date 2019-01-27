@@ -401,7 +401,7 @@
 - name: Crimson Saber
   cat: 'gl'
   star: 5
-  picture: Crimson_Saber
+  picture: Crimson Saber
   atk: 861
   int: 853
   factors:
