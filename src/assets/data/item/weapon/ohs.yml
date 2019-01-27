@@ -12,3 +12,400 @@
     - desc: Crit Rate +10%
   thirdFactorLB: 5
   obtained: Gacha (Limited)
+  
+  notes: >
+    A limited weapon and a fantastic weapon for 2b and also Fayt. Great mech hate, big lifesteal bonus and a good mlb factor. Buffing
+    your attribute damage is what makes it particularly good on fayt and 2b but it's a pretty solid neutral weapon at mlb especially
+    against mech bosses.
+
+- name: Cursed Balmung Blade
+  cat: 'gl'
+  star: 5
+  picture: Demonic Sword・Balmung (Cursed Balmung Blade)
+  atk: 545
+  factors:
+    - desc: +15% ATK
+    - desc: +20% DMG on Helm Splitter
+    - desc: -10% AP Cost
+  thirdFactorLB: 3
+  obtained: Gacha / OHS Coin Exchange
+  
+  notes: >
+    A good weapon if you just started, it's 3rd lb factor is a strong one and it's ATK buff makes up for it's lack of stats. A decent
+    neutral weapon if you need one.
+    
+- name: Claidheamh Soluis
+  cat: 'gl'
+  star: 5
+  picture: Crow Solace (Claidheamh Soluis)
+  atk: 840
+  element: Light
+  factors:
+    - desc: Imbue Light Element
+    - desc: +20% DMG on Cyclone Blade
+  thirdFactorLB: N/A
+  obtained: Gacha / OHS Coin Exchange / Transmutation
+  
+  notes: >
+    A good pick from the ohs exchange. A light imbue sword, one of three in the game but the easiest to obtain. You're using this
+    purely to bring light imbue, but that's a good enough factor on it's own since it already has a decent ATK stat to make it a
+    good weapon.
+    
+- name: Lightning Sword
+  cat: 'gl'
+  star: 5
+  picture: Lightning Sword
+  atk: 835
+  factors:
+    - desc: +15% Lightning DMG Dealt
+    - desc: +20% DMG on Rising Blade
+  thirdFactorLB: N/A
+  obtained: Gacha / OHS Coin Exchange / Transmutation
+  
+  notes: >
+    A very good pick up if you plan to play Roddick since it will buff two if his skills and his rush. Outside of use with Roddick it
+    isn't that great so it comes down if you're going to play him or not whether you should invest in this sword.
+    
+- name: Moonstone Sword
+  cat: 'gl'
+  star: 5
+  picture: Moonite Sword (Moonstone Sword)
+  atk: 835
+  factors:
+    - desc: +15% ATK / -15% DEF
+    - desc: +20% DMG on Air Slash
+  thirdFactorLB: N/A
+  obtained: Gacha / OHS Coin Exchange / Transmutation
+  
+  notes: >
+    It's a worse Balmung Blade that is in the transmute pool. It's best use is as transmute fodder I'm afraid. Though works if it's
+    your only 5 star sword.
+    
+- name: Aurora Blade
+  cat: 'gl'
+  star: 5
+  picture: Aurora Blade
+  atk: 478
+  slayer: Machine
+  factors:
+    - desc: +20% DMG on Dragon Slash
+    - desc: +20% DMG to Machines
+    - desc: +4% Crit
+  thirdFactorLB: 5
+  obtained: Jie Revorse Exchange
+  
+  notes: >
+    It's just a bad weapon really. Not that great against machines even, best to use it to help transmute to better swords or as
+    fodder for coins for other weapons.
+    
+- name: Blade of Ruin
+  cat: 'gl'
+  star: 5
+  picture: Ruin's Fate (Blade of Ruin)
+  atk: 850
+  factors:
+    - desc: +15% DMG to Single Targets
+    - desc: +20% DMG on Air Raid
+    - desc: +10% DMG
+  thirdFactorLB: 5
+  obtained: Gacha
+  
+  notes: >
+    Dubbed the Blade of Ruin because it'll ruin your day when you get one off a weapon ticket. It's just not a good sword, you can do
+    much better but useable if you have no other good 5 star sword.
+    
+- name: Thunderstroke Broadsword
+  cat: 'gl'
+  star: 5
+  picture: Raikou Sword・Bolt Edge (Thunderstroke Broadsword)
+  atk: 862
+  int: 858
+  factors:
+    - desc: +20% DMG on Omega Thunderclap Blade
+    - desc: -10% INT DMG Taken
+    - desc: +15% Lightning DMG Dealt
+  thirdFactorLB: 5
+  obtained: Millioneye Exchange
+  
+  notes: >
+    It's a better version of the Lightning sword, especially at MLB. It has more stats, buffs Roddick's rush and has a defensive 
+    factor you don't commonly see being given party wide. Put this on Roddick and become the stun god he was meant to be.
+    
+- name: Centrifuge Blade
+  cat: 'gl'
+  star: 5
+  picture: Centrifuge Blade
+  atk: 513
+  int: 508
+  factors:
+    - desc: +20% DMG on Heaven's Sword
+    - desc: Recover 3% HP every 3 seconds (If behind an enemy.)
+    - desc: -10% AP Cost
+  thirdFactorLB: 5
+  obtained: Millioneye Exchange
+  
+  notes: >
+    Has a solid 3rd factor, the rest of the weapon is trash, bad stats, bad factors, not even good for Summer Reimi who it is
+    intended for. Trash it.
+    
+- name: Blaublitz
+  cat: 'gl'
+  star: 5
+  picture: Sea Treasure Sword・Blaublitz
+  atk: 513
+  int: 508
+  element: Lightning
+  factors:
+    - desc: Imbue Lightning Element
+    - desc: +20% Stun
+    - desc: +30% Crit Chance (If not targeted by an enemy.)
+  thirdFactorLB: 5
+  obtained: Gacha
+  
+  notes: >
+    An amazing sword, elemental imbue and the only lightning sword even on JP. It's 2nd factor is strong if you don't have Roddick
+    and the third factor is exceptional if you're not playing a role which wants aggro. Thought it's first two factors are plenty
+    strong enough to make use of it.
+    
+- name: Slayer of Divine Beings
+  cat: 'gl'
+  star: 5
+  picture: Criminal's Sword・Angel Slayer (Slayer of Divine Beings)
+  atk: 475
+  element: Light
+  factors:
+    - desc: Gain Light Attribute
+    - desc: +15% DMG on Heavenly Launcher
+    - desc: -10% AP Cost
+  thirdFactorLB: 3 / 4 / 5
+  obtained: Blood Valkyrie Exchange
+  
+  notes: >
+    A free light imbue sword. It's problem is that it isn't as good as the coin shop and transmutable Solus. Even it's 3rd factor
+    doesn't do enough to offset the near 400 ATK difference at MLB for both weapons.
+    
+- name: Slayer of Divine Beings II
+  cat: 'gl'
+  star: 5
+  picture: Slayer of Divine Beings II
+  atk: 861
+  element: Light
+  factors:
+    - desc: Gain Light Attribute
+    - desc: +20% DMG on Valkyrie's Mercy
+    - desc: -10% AP Cost / -10% DMG Taken
+  thirdFactorLB: 1 / 3
+  obtained: Gacha
+  
+  notes: >
+    A global exclusive weapon. A light sword that when lb3 becomes the light sword of choice over Solus. They have similar stats and
+    just having the 3rd factor is what pushes it over the edge.
+    
+- name: Sacred Tear
+  cat: 'gl'
+  star: 5
+  picture: Sacred Tear
+  atk: 479
+  slayer: Human
+  factors:
+    - desc: +10% DMG on Sword Bomber
+    - desc: +15% DMG to Humans
+    - desc: +5% ATK
+  thirdFactorLB: 5
+  obtained: Hell Siren Exchange
+  
+  notes: >
+    A bad weapon meant for Claude, Sword Bomber is a bad skill, the human hate isn't high enough and if you choose to MLB it the ATK
+    bonus isn't enough. Use them for transmute fodder.
+    
+- name: Icicle Sword
+  cat: 'gl'
+  star: 5
+  picture: Icicle Sword
+  atk: 585
+  int: 583
+  element: Ice
+  factors:
+    - desc: +15% ATK
+    - desc: Imbue Ice Element
+    - desc: -10% AP Cost
+  thirdFactorLB: 5
+  obtained: Gacha
+  
+  notes: >
+    Another top tier elemental weapon for ohs users. Icicle sword has not only Ice imbue, but an ATK buff to make up for its lack of
+    stats, plus at MLB a nice AP reduction bonus to help output more damage.
+    
+- name: Veinslay
+  cat: 'gl'
+  star: 5
+  picture: Reknowned Sword・Veinslay
+  atk: 961
+  int: 956
+  slayer: Divinity
+  slayer: Human
+  factors:
+    - desc: +40% DMG to Divine / +20% DMG to Humans
+    - desc: -10% AP Cost
+    - desc: 80% Chance to Survive a Lethal Attack at 20% or more HP
+  thirdFactorLB: 5
+  obtained: Gacha
+  
+  notes: >
+    Not a bad neutral weapon considering it gives two types of race hate buffs. It's other two factors are also nice ones to have.
+    Very good if you're playing Fayt or 2B and to a certain extent Roddick. Worth keeping just to have a nice neutral weapon if it's
+    needed.
+    
+- name: Jade Bastard Sword
+  cat: 'gl'
+  star: 5
+  picture: Jade Bastard Sword
+  atk: 492
+  int: 486
+  factors:
+    - desc: +5% ATK
+    - desc: +5% Crit Chance
+    - desc: +10% DMG on Colossal Ethereal Blast
+  thirdFactorLB: 5
+  obtained: Luther's Descent Exchange / Achievement
+  
+  notes: >
+    It's not a great event weapon, even for Fayt, useable for him if you just started but best to use the 6 copies as fodder really.
+    
+- name: Virtuous Contract
+  cat: 'gl'
+  star: 5
+  picture: Virtuous Contract
+  atk: 863
+  int: 859
+  factors:
+    - desc: +20% DMG on YoHRa Arms: Two
+    - desc: Recover 3% HP every 5 seconds
+    - desc: +10% ATK DMG Dealt
+  thirdFactorLB: 5
+  obtained: Nier Event Clear
+  
+  notes: >
+    A weapon meant for 2b, not really needed if you have her gacha weapon. But if for new players its high stats and reasonable second
+    and third factor make it a solid weapon to use.
+    
+- name: Cruel Oath
+  cat: 'gl'
+  star: 5
+  picture: Cruel Oath
+  atk: 861
+  int: 858
+  factors:
+    - desc: +20% DMG on YoHRa Arms: Four
+    - desc: +30% AP RCV Speed
+    - desc: -10% AP Cost
+  thirdFactorLB: 5
+  obtained: Nier Event Clear
+  
+  notes: >
+    A good neutral weapon for 9S since it has AP recovery and reduction, plus buffing a skill. For others it's still a highly statted
+    neutral weapon with good upsides so it can definetly be used if you've just started.
+    
+- name: Type-3 Sword
+  cat: 'gl'
+  star: 5
+  picture: Type-3 Sword
+  atk: 962
+  int: 956
+  element: Light
+  factors:
+    - desc: Imbue Light Element
+    - desc: +5% ATK / +5% HIT
+    - desc: Recover 10% HP every 3 seconds
+  thirdFactorLB: 5
+  obtained: Gacha (Limited)
+  
+  notes: >
+    Yet another light sword and a limited time one at that. A solid weapon with good stats, some slight ATK and HIT boosting and a
+    strong defensive talent as it's third factor. 
+    
+- name: Stormblade
+  cat: 'gl'
+  star: 5
+  picture: Storm Dealer
+  atk: 963
+  int: 958
+  element: Wind
+  factors:
+    - desc: Imbue Wind Element
+    - desc: Recover 5% HP of DMG Dealt by Normal Attacks
+    - desc: 50% Chance to Survive a Lethal Attack at 15% or more HP
+  thirdFactorLB: 3
+  obtained: Gacha
+  
+  notes: >
+    Our first wind imbue sword with a minor lifesteal and grit effect. You'll use it when on element, other elemental weapons beat it
+    if not. Plus side is you only need to get it to lb3 to get the third factor.
+    
+- name: MK-2 SRF Blade
+  cat: 'gl'
+  star: 5
+  picture: SRF Blade MK-2
+  atk: 493
+  int: 489
+  factors:
+    - desc: +10% DMG on Raging Strike
+    - desc: -5% DMG Taken
+    - desc: +4% Crit Chance / +10% Crit DMG
+  thirdFactorLB: 5
+  obtained: Armaros Exchange
+  
+  notes: >
+    It's slightly better than event weapons of the past, but it's still just transmute fodder.
+    
+- name: Timepiece Broadsword
+  cat: 'gl'
+  star: 5
+  picture: Clockhand's Edge
+  atk: 833
+  int: 827
+  factors:
+    - desc: +30% DMG on Ethereal Blast
+    - desc: +5% Crit Chance / +10% Crit DMG
+    - desc: +40% ATK DMG at Chain 3+
+  thirdFactorLB: 5
+  obtained: Alma Exchange
+  
+  notes: >
+    A weapon meant for Fidel. It's a decent neutral weapon, especially for those like 2B or Fayt who have self imbue already.
+    Otherwise it's pretty adverage.
+    
+- name: Earthen Crystal Edge
+  cat: 'gl'
+  star: 5
+  picture: Soil Crystal Edge
+  atk: 963
+  int: 958
+  element: Earth
+  factors:
+    - desc: Imbue Earth Element
+    - desc: Recover 10% HP of DMG Dealt by Normal Attacks
+    - desc: -10% AP Cost
+  thirdFactorLB: 5
+  obtained: Gacha
+  
+  notes: >
+    Our first earth imbue sword with a lifesteal effect. The third factor is a solid one as well, a good element weapon if you can't
+    be on element.
+    
+- name: Crimson Saber
+  cat: 'gl'
+  star: 5
+  picture: Crimson_Saber
+  atk: 861
+  int: 853
+  factors:
+    - desc: +20% DMG on Floor Lava
+    - desc: +10% ATK DMG (When Targetted by Enemy)
+    - desc: 60% Chance to Survive a Lethal Attack at 20% HP or more
+  thirdFactorLB: 5
+  obtained: FFBE Gacha box
+  
+  notes: >
+    It's okay on Rain. It adds to his
+
