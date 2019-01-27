@@ -184,7 +184,7 @@
     - desc: Gain Light Attribute
     - desc: +15% DMG on Heavenly Launcher
     - desc: -10% AP Cost
-  thirdFactorLB: 3 / 4 / 5
+  thirdFactorLB: 5
   obtained: Blood Valkyrie Exchange
   
   notes: >
@@ -202,7 +202,7 @@
     - desc: Gain Light Attribute
     - desc: +20% DMG on Valkyrie's Mercy
     - desc: -10% AP Cost / -10% DMG Taken
-  thirdFactorLB: 1 / 3
+  thirdFactorLB: 3
   obtained: Gacha
   
   notes: >
