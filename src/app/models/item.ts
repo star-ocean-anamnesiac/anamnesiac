@@ -4,6 +4,7 @@ export interface Factor {
   desc: string;
 
   meta?: Meta;
+  lb?: number;
 }
 
 export interface Item {

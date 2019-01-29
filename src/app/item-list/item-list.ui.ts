@@ -78,7 +78,12 @@ export class ItemSortPopover {
               <ion-row *ngFor="let factor of item.factors">
                 <ion-col>
                   <ion-card>
-                    <ion-card-content>{{ factor.desc }}</ion-card-content>
+                    <ion-card-content>
+                      <em *ngIf="factor.lb" class="vertical-center">
+                        Unlocked at <app-appicon [name]="'weapon-' + factor.lb" [scaleX]="0.5" [scaleY]="0.5" [inline]="true"></app-appicon>
+                      </em>
+                      <div>{{ factor.desc }}</div>
+                    </ion-card-content>
                   </ion-card>
                 </ion-col>
               </ion-row>

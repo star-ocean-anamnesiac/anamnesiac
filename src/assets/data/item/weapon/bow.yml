@@ -106,8 +106,11 @@
   slayer: Divinity
   factors:
     - desc: +20% DMG on Wave Motion
+      lb: 3
     - desc: +10% DMG to Divinities
+      lb: 4
     - desc: Additional Hit that Deals 5% of DMG Dealt by Normal Attacks
+      lb: 5
   thirdFactorLB: 3
   obtained: Blood Valkyrie (Exchange)
   
@@ -124,7 +127,9 @@
   factors:
     - desc: +20% DMG to Divinities
     - desc: +25% DMG on Wave Motion
+      lb: 1
     - desc: Additional Hit that Deals 5% of DMG Dealt by Normal Attacks
+      lb: 5
   thirdFactorLB: 1
   obtained: Blood Valkyrie (Exchange)
   

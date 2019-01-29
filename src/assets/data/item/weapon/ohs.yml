@@ -179,8 +179,11 @@
   element: Light
   factors:
     - desc: Gain Light Attribute
+      lb: 3
     - desc: +15% DMG on Heavenly Launcher
+      lb: 4
     - desc: -10% AP Cost
+      lb: 5
   thirdFactorLB: 5
   obtained: Blood Valkyrie Exchange
   
@@ -198,7 +201,9 @@
   factors:
     - desc: Gain Light Attribute
     - desc: +20% DMG on Valkyrie's Mercy
+      lb: 1
     - desc: -10% AP Cost / -10% DMG Taken
+      lb: 5
   thirdFactorLB: 3
   obtained: Gacha
   
