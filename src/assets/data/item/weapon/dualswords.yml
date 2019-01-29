@@ -41,9 +41,9 @@
   picture: Crimson Forked Swords (Tridents)
   atk: 963
   int: 956
-  element: Light
   factors:
     - desc: Imbues attacks with light element
+      element: Light
     - desc: +10% Crit Rate / +15% Crit DMG
     - desc: +30% AP RCV Speed
       lb: 5
@@ -93,9 +93,9 @@
   picture: Twin Koro Edge (Twin Coro Blades)
   atk: 964
   int: 956
-  element: Ice
   factors:
     - desc: Imbues attacks with ice element
+      element: Ice
     - desc: +100% AP Recovery by Normal Attacks
     - desc: Recover 5% HP on DMG Dealt by Normal Attacks
       lb: 5

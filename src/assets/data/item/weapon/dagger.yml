@@ -4,9 +4,9 @@
   star: 5
   picture: Mist Blades・Takemikazuchi (Golden-Bolt Destroyers)
   atk: 471
-  element: Lightning
   factors:
     - desc: Imbues attacks with lightning element
+      element: Lightning
     - desc: Poisonous Guillotine damage +20%
     - desc: ATK +10%
       lb: 5

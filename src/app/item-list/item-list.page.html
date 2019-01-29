@@ -88,13 +88,17 @@
 
   <ion-label>
     <h2 class="vertical-center">
-      <app-appicon [name]="'weapon-' + item.star" [scaleX]="0.5" [scaleY]="0.5" [inline]="true"></app-appicon> 
+      <app-appicon [name]="'char-' + item.star" [scaleX]="0.5" [scaleY]="0.5" [inline]="true"></app-appicon> 
       <span>{{ item.name }}</span>
     </h2>
     <p *ngIf="item.type === 'weapon'" class="vertical-center">
       {{ weaponDesc(item) }}
-      <app-element *ngIf="item.element" [element]="item.element"></app-element>
-      <app-slayer *ngIf="item.slayer" [slayer]="item.slayer"></app-slayer>
+      <ng-container *ngFor="let factor of item.factors">
+        <app-element *ngIf="factor.element" [element]="factor.element"></app-element>
+      </ng-container>
+      <ng-container *ngFor="let factor of item.factors">
+        <app-slayer *ngIf="factor.slayer" [slayer]="factor.slayer"></app-slayer>
+      </ng-container>
     </p>
     <p *ngIf="item.type === 'accessory'">{{ item.def }} DEF</p>
   </ion-label>

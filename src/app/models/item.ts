@@ -7,6 +7,15 @@ export interface Factor {
 
   // the LB level the factor is obtained at if not innate (1-5)
   lb?: number;
+
+  // the element of the item, if given - Dark|Earth|Fire|Ice|Light|Lightning|Wind
+  element?: string;
+
+  // the type of slayer it is - Beast|Bird|Demon|Divinity|Dragon|Human|Insect|Machine|Plant|Undead
+  slayer?: string;
+
+  // the slayer boost %
+  slayerPct?: number;
 }
 
 export interface Item {
@@ -37,12 +46,6 @@ export interface Item {
 
   // the level 20 def of the item (for accessories)
   def?: number;
-
-  // the element of the item, if given - Dark|Earth|Fire|Ice|Light|Lightning|Wind
-  element?: string;
-
-  // the type of slayer it is - Beast|Bird|Demon|Divinity|Dragon|Human|Insect|Machine|Plant|Undead
-  slayer?: string;
 
   // the list of factors for an item
   factors: Factor[];

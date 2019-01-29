@@ -5,9 +5,10 @@
   picture: Sacred Gun・Divine Blue (Divine Wave Gun)
   atk: 962
   int: 959
-  slayer: Demon
   factors:
     - desc: Damage dealt to demons +40%
+      slayer: Demon
+      slayerPct: 40
     - desc: 80% chance of surviving a lethal attack at greater than 10% HP
     - desc: Damage taken -15% when in front of target
       lb: 5
@@ -40,9 +41,9 @@
   picture: Storm Bolt
   atk: 840
   int: 843
-  element: Wind
   factors:
     - desc: Imbue Wind Element
+      element: Wind
     - desc: +20% DMG on Hunter's Moon
     - desc: None
   obtained: Coin Exchange/Gacha/Transmute
@@ -91,10 +92,11 @@
   picture: Frozen Revolver (Icy Revolver)
   atk: 962
   int: 957
-  element: Ice
-  slayer: Demon
   factors:
     - desc: Imbue Ice Element and +15% DMG to Demons
+      slayer: Demon
+      element: Ice
+      slayerPct: 15
     - desc: -10% AP Cost
     - desc: +25% Crit Rate at 100+ Hit Count
       lb: 5

@@ -5,9 +5,9 @@
   picture: Beastlord
   atk: 963
   int: 958
-  element: Light
   factors:
     - desc: Imbues attacks with light element
+      element: Light
     - desc: Damage -10%
     - desc: AP consumption -10%
       lb: 5

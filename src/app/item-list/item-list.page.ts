@@ -231,25 +231,53 @@ export class ItemListPage implements OnInit, OnDestroy {
       .value();
     this.allItemTypes = _.sortBy(Object.keys(this.typeSortedItems));
 
-    // element sorting
-    this.elementSortedItems = _(arr)
-      .sortBy('name')
-      .groupBy(item => item.element || 'None')
+    this.allElements = _(arr)
+      .map(i => i.factors.map(x => x.element))
+      .flattenDeep()
+      .compact()
+      .uniq()
+      .sortBy()
+      .tap(arr => {
+        arr.push('None');
+      })
       .value();
 
-    this.allElements = _.sortBy(Object.keys(this.elementSortedItems), el => {
-      return el === 'None' ? 'Z' : el;
-    });
+    // element sorting
+    this.elementSortedItems = {}
+    
+    _(arr)
+      .sortBy('name')
+      .forEach(item => {
+        const allElements = item.factors.map(x => x.element || 'None');
+        _.uniq(allElements).forEach(el => {
+          this.elementSortedItems[el] = this.elementSortedItems[el] || [];
+          this.elementSortedItems[el].push(item);
+        });
+      });
 
     // slayer sorting
-    this.slayerSortedItems = _(arr)
-      .sortBy('name')
-      .groupBy(item => item.slayer || 'None')
+    this.allSlayers = _(arr)
+      .map(i => i.factors.map(x => x.slayer))
+      .flattenDeep()
+      .compact()
+      .uniq()
+      .sortBy()
+      .tap(arr => {
+        arr.push('None');
+      })
       .value();
-
-    this.allSlayers = _.sortBy(Object.keys(this.slayerSortedItems), el => {
-      return el === 'None' ? 'Z' : el;
-    });
+  
+    this.slayerSortedItems = {};
+    
+    _(arr)
+      .sortBy('name')
+      .forEach(item => {
+        const allSlayers = item.factors.map(x => x.slayer || 'None');
+        _.uniq(allSlayers).forEach(el => {
+          this.slayerSortedItems[el] = this.slayerSortedItems[el] || [];
+          this.slayerSortedItems[el].push(item);
+        });
+      });
 
     if(this.getPreviouslyLoadedItem()) {
       this.loadItemModal(this.getPreviouslyLoadedItem());

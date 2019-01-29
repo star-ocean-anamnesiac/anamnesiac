@@ -5,9 +5,10 @@
   picture: Type-4O
   atk: 964
   int: 958
-  slayer: Machine
   factors:
     - desc: All attribute damage +50% / Damage to mechs +50%
+      slayer: Machine
+      slayerPct: 50
     - desc: Recover 15% of damage dealt on normal attacks as HP
     - desc: Crit Rate +10%
       lb: 5
@@ -41,9 +42,9 @@
   picture: Crow Solace (Claidheamh Soluis)
   atk: 840
   int: 0
-  element: Light
   factors:
     - desc: Imbue Light Element
+      element: Light
     - desc: +20% DMG on Cyclone Blade
   obtained: Gacha / OHS Coin Exchange / Transmutation
   
@@ -88,10 +89,11 @@
   picture: Aurora Blade
   atk: 478
   int: 0
-  slayer: Machine
   factors:
     - desc: +20% DMG on Dragon Slash
     - desc: +20% DMG to Machines
+      slayer: Machine
+      slayerPct: 20
     - desc: +4% Crit
       lb: 5
   obtained: Jie Revorse Exchange
@@ -157,9 +159,9 @@
   picture: Sea Treasure Sword・Blaublitz
   atk: 513
   int: 508
-  element: Lightning
   factors:
     - desc: Imbue Lightning Element
+      element: Lightning
     - desc: +20% Stun
     - desc: +30% Crit Chance (If not targeted by an enemy.)
       lb: 5
@@ -176,9 +178,9 @@
   picture: Criminal's Sword・Angel Slayer (Slayer of Divine Beings)
   atk: 475
   int: 0
-  element: Light
   factors:
     - desc: Gain Light Attribute
+      element: Light
       lb: 3
     - desc: +15% DMG on Heavenly Launcher
       lb: 4
@@ -196,9 +198,9 @@
   picture: Slayer of Divine Beings II
   atk: 861
   int: 0
-  element: Light
   factors:
     - desc: Gain Light Attribute
+      element: Light
     - desc: +20% DMG on Valkyrie's Mercy
       lb: 1
     - desc: -10% AP Cost / -10% DMG Taken
@@ -215,10 +217,11 @@
   picture: Sacred Tear
   atk: 479
   int: 0
-  slayer: Human
   factors:
     - desc: +10% DMG on Sword Bomber
     - desc: +15% DMG to Humans
+      slayer: Human
+      slayerPct: 15
     - desc: +5% ATK
       lb: 5
   obtained: Hell Siren Exchange
@@ -233,10 +236,10 @@
   picture: Icicle Sword
   atk: 585
   int: 583
-  element: Ice
   factors:
     - desc: +15% ATK
     - desc: Imbue Ice Element
+      element: Ice
     - desc: -10% AP Cost
       lb: 5
   obtained: Gacha
@@ -251,9 +254,13 @@
   picture: Reknowned Sword・Veinslay
   atk: 961
   int: 956
-  slayer: Divinity
   factors:
-    - desc: +40% DMG to Divine / +20% DMG to Humans
+    - desc: +40% DMG to Divine
+      slayer: Divinity
+      slayerPct: 40
+    - desc: +20% DMG to Humans
+      slayer: Human
+      slayerPct: 20
     - desc: -10% AP Cost
     - desc: 80% Chance to Survive a Lethal Attack at 20% or more HP
       lb: 5
@@ -320,9 +327,9 @@
   picture: Type-3 Sword
   atk: 962
   int: 956
-  element: Light
   factors:
     - desc: Imbue Light Element
+      element: Light
     - desc: +5% ATK / +5% HIT
     - desc: Recover 10% HP every 3 seconds
       lb: 5
@@ -338,9 +345,9 @@
   picture: Storm Dealer
   atk: 963
   int: 958
-  element: Wind
   factors:
     - desc: Imbue Wind Element
+      element: Wind
     - desc: Recover 5% HP of DMG Dealt by Normal Attacks
     - desc: 50% Chance to Survive a Lethal Attack at 15% or more HP
       lb: 3
@@ -389,9 +396,9 @@
   picture: Soil Crystal Edge
   atk: 963
   int: 958
-  element: Earth
   factors:
     - desc: Imbue Earth Element
+      element: Earth
     - desc: Recover 10% HP of DMG Dealt by Normal Attacks
     - desc: -10% AP Cost
       lb: 5

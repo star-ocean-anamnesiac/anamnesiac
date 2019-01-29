@@ -5,9 +5,9 @@
   picture: Stripe Cat Punch (Striped Cat Mitts)
   atk: 961
   int: 958
-  element: Light
   factors:
     - desc: Imbue light element / +20% light damage
+      element: Light
     - desc: -10% AP cost
     - desc: 80% chance to survive a lethal attack at 10% or more HP
       lb: 5
@@ -57,9 +57,10 @@
   picture: Polar Bear's Punch (Polar Bear Paws)
   atk: 960
   int: 955
-  slayer: Demon
   factors:
     - desc: +40% DMG to Demons
+      slayer: Demon
+      slayerPct: 40
     - desc: 80% Chance to Survive a Lethal Attack at 10% or more HP
     - desc: 5% HP recovery every 3 seconds.
       lb: 5

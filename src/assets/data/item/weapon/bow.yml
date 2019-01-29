@@ -4,9 +4,9 @@
   star: 5
   picture: SRF Bow・Remodelled (Reformed SRF Arrow)
   atk: 477
-  element: Wind
   factors:
     - desc: Imbues attacks with wind element
+      element: Wind
     - desc: Rapacious Sparrows damage +20%
     - desc: Additional hit that deals 5% of damage dealt on normal attacks
       lb: 5
@@ -69,9 +69,9 @@
   picture: Arc-En-Ciel
   atk: 964
   int: 963
-  element: Lightning
   factors:
     - desc: Imbue Lightning Element
+      element: Lightning
     - desc: Hit Count Timer + 1s
     - desc: +20% ATK (When attacking from behind.)
       lb: 5
@@ -103,11 +103,12 @@
   picture: Shiny Rupture
   atk: 476
   int: 475
-  slayer: Divinity
   factors:
     - desc: +20% DMG on Wave Motion
       lb: 3
     - desc: +10% DMG to Divinities
+      slayer: Divinity
+      slayerPct: 10
       lb: 4
     - desc: Additional Hit that Deals 5% of DMG Dealt by Normal Attacks
       lb: 5
@@ -122,9 +123,10 @@
   picture: Shiny Rupture II
   atk: 857
   int: 856
-  slayer: Divinity
   factors:
     - desc: +20% DMG to Divinities
+      slayer: Divinity
+      slayerPct: 20
     - desc: +25% DMG on Wave Motion
       lb: 1
     - desc: Additional Hit that Deals 5% of DMG Dealt by Normal Attacks
@@ -141,9 +143,9 @@
   picture: Airblast Bow (Windburst Bow)
   atk: 962
   int: 961
-  element: Wind
   factors:
     - desc: Imbues attacks with wind element
+      element: Wind
     - desc: Recover 3% HP every 5 seconds
     - desc: +15% Stun
       lb: 5
@@ -159,9 +161,9 @@
   picture: Halo Stringer
   atk: 958
   int: 963
-  element: Light
   factors:
     - desc: Imbue Light Element/+20% Light DMG Dealt
+      element: Light
     - desc: -10% AP Cost
     - desc: 80% Chance to Survive a Lethal Attack at 20% HP or more
       lb: 5

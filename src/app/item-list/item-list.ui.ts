@@ -60,8 +60,12 @@ export class ItemSortPopover {
           <span *ngIf="item.atk" class="middot-after">{{ item.atk }} ATK</span>
           <span *ngIf="item.int">{{ item.int }} INT</span>
           <span *ngIf="item.def">{{ item.def }} DEF</span>
-          <app-element *ngIf="item.element" [element]="item.element"></app-element>
-          <app-slayer *ngIf="item.slayer" [slayer]="item.slayer"></app-slayer>
+          <ng-container *ngFor="let factor of item.factors">
+            <app-element *ngIf="factor.element" [element]="factor.element"></app-element>
+          </ng-container>
+          <ng-container *ngFor="let factor of item.factors">
+            <app-slayer *ngIf="factor.slayer" [slayer]="factor.slayer"></app-slayer>
+          </ng-container>
         </p>
         <p>Obtained: {{ item.obtained }}</p>
       </ion-col>
