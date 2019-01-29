@@ -42,13 +42,14 @@ test('All items have valid information', async t => {
       const subtype = id === 'all' ? 'accessory' : id;
       t.true(fs.existsSync(`src/assets/items/${subtype}/${item.picture}.png`), 'item must reference a valid image' + parenName);
 
-      if(item.slayer) {
-        t.true(_.includes(itemSlayers, item.slayer), 'item must have a valid slayer [check the model]' + parenName);
-      }
-
-      if(item.element) {
-        t.true(_.includes(itemElements, item.element), 'item must have a valid element [check the model]' + parenName);
-      }
+      item.factors.forEach(factor => {
+        if(factor.slayer) {
+          t.true(_.includes(itemSlayers, factor.slayer), 'item must have a valid slayer [check the model]' + parenName);
+        }
+        if(factor.element) {
+          t.true(_.includes(itemElements, factor.element), 'item must have a valid element [check the model]' + parenName);
+        }
+      });
 
     });
   }));
