@@ -336,3 +336,29 @@
 
   notes: >
     Our first accessory that has aggro along with some reduction to DMG taken. Best suited for defenders and sharpshooters who kite and hold the enemies attention.
+   
+- name: Coro Plush
+  cat: 'gl'
+  star: 5
+  picture: Koro_Plushie
+  def: 728
+  factors:
+    - desc: +15% Crit Chance (When facing enemy)
+    - desc: -5% ATK DMG Taken (When close range)
+  obtained: FFBE (Gacha Box)
+
+  notes: >
+    -
+       
+- name: Moglin Plush
+  cat: 'gl'
+  star: 5
+  picture: Mog Plush
+  def: 753
+  factors:
+    - desc: 40% Chance to Survive a Lethal Attack at 20% HP or more
+    - desc: -10% DMG Taken (When far range)
+  obtained: FFBE (Achievement)
+
+  notes: >
+    -
