@@ -10,7 +10,7 @@
     - desc: Damage dealt to demons +40%
     - desc: 80% chance of surviving a lethal attack at greater than 10% HP
     - desc: Damage taken -15% when in front of target
-  thirdFactorLB: 5
+      lb: 5
   obtained: Gacha
   
   notes: >
@@ -27,7 +27,7 @@
     - desc: +15% damage to multiple targets
     - desc: +20% DMG on Crimson Squall
     - desc: +10% DMG to single target
-  thirdFactorLB: 3
+      lb: 3
   obtained: Coin Exchange/Gacha
   
   notes: >
@@ -78,7 +78,7 @@
     - desc: +30% DMG on Bombing Run
     - desc: Recover 5% of DMG Dealt by Normal Attacks as HP
     - desc: +10% DMG Dealt to Single Target
-  thirdFactorLB: 5
+      lb: 5
   obtained: Christmas Horndevil Exchange
   
   notes: >
@@ -97,7 +97,7 @@
     - desc: Imbue Ice Element and +15% DMG to Demons
     - desc: -10% AP Cost
     - desc: +25% Crit Rate at 100+ Hit Count
-  thirdFactorLB: 5
+      lb: 5
   obtained: Gacha
   
   notes: >
@@ -114,7 +114,7 @@
     - desc: +10% INT
     - desc: +20% DMG on Cerberus Shot
     - desc: 60% Chance to Survive a Lethal Attack at 20% HP or more
-  thirdFactorLB: 5
+      lb: 5
   obtained: Cave Guardian Exchange
   
   notes: >
@@ -131,7 +131,7 @@
     - desc: +30% DMG on Energy Glaive
     - desc: -10% AP Cost
     - desc: +40% ATK DMG at Chain 3+
-  thirdFactorLB: 5
+      lb: 5
   obtained: Alma Exchange
   
   notes: >

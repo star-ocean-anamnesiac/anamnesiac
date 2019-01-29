@@ -9,5 +9,5 @@
     - desc: Dark damage +30%
     - desc: Cursed Reaping Spark damage +20%
     - desc: INT +20%
-  thirdFactorLB: 5
+      lb: 5
   obtained: Coin Shop (Frost)

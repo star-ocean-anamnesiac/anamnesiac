@@ -9,7 +9,7 @@
     - desc: Imbues attacks with wind element
     - desc: Rapacious Sparrows damage +20%
     - desc: Additional hit that deals 5% of damage dealt on normal attacks
-  thirdFactorLB: 5
+      lb: 5
   obtained: Jie Revorse Exchange
   
   notes: >
@@ -25,7 +25,7 @@
     - desc: +15% ATK
     - desc: +10% Fire DMG Dealt
     - desc: Hit Count Timer + 2 s
-  thirdFactorLB: 3
+      lb: 3
   obtained: Gacha
   
   notes: >
@@ -56,7 +56,7 @@
     - desc: +20% DMG on Howling Wind
     - desc: Recover 3% HP every 5 seconds
     - desc: +20% Crit DMG (When attacking from behind.)
-  thirdFactorLB: 5
+      lb: 5
   obtained: Everlasting Summer Siren Exchange
   
   notes: >
@@ -74,7 +74,7 @@
     - desc: Imbue Lightning Element
     - desc: Hit Count Timer + 1s
     - desc: +20% ATK (When attacking from behind.)
-  thirdFactorLB: 5
+      lb: 5
   obtained: Gacha
   
   notes: >
@@ -91,7 +91,7 @@
     - desc: +30% DMG on Explode
     - desc: +25% Fire DMG Dealt
     - desc: +30% AP Recovery
-  thirdFactorLB: 5
+      lb: 5
   obtained: Millioneyes Gacha Box
   
   notes: >
@@ -111,7 +111,6 @@
       lb: 4
     - desc: Additional Hit that Deals 5% of DMG Dealt by Normal Attacks
       lb: 5
-  thirdFactorLB: 3
   obtained: Blood Valkyrie (Exchange)
   
   notes: >
@@ -130,7 +129,6 @@
       lb: 1
     - desc: Additional Hit that Deals 5% of DMG Dealt by Normal Attacks
       lb: 5
-  thirdFactorLB: 1
   obtained: Blood Valkyrie (Exchange)
   
   notes: >
@@ -148,7 +146,7 @@
     - desc: Imbues attacks with wind element
     - desc: Recover 3% HP every 5 seconds
     - desc: +15% Stun
-  thirdFactorLB: 5
+      lb: 5
   obtained: Gacha
   
   notes: >
@@ -166,7 +164,7 @@
     - desc: Imbue Light Element/+20% Light DMG Dealt
     - desc: -10% AP Cost
     - desc: 80% Chance to Survive a Lethal Attack at 20% HP or more
-  thirdFactorLB: 5
+      lb: 5
   obtained: Gacha
   
   notes: >
@@ -183,7 +181,7 @@
     - desc: +15% DMG on Heaven's Judgement
     - desc: Recover 3% HP every 5 seconds at long range
     - desc: +30% AP Recovery at long range
-  thirdFactorLB: 5
+      lb: 5
   obtained: FFBE Gacha Box
   
   notes: >

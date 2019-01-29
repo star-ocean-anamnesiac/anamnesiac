@@ -9,5 +9,5 @@
     - desc: +15% DMG to single targets
     - desc: Hit Count timer +1s
     - desc: Additional hit that deals 5% of damage dealt by normal attacks
-  thirdFactorLB: 5
+      lb: 5
   obtained: Rifle Coin Exchange

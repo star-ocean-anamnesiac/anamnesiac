@@ -9,5 +9,5 @@
     - desc: Imbues attacks with lightning element
     - desc: Poisonous Guillotine damage +20%
     - desc: ATK +10%
-  thirdFactorLB: 5
+      lb: 5
   obtained: Coin Shop (Jie Revorse)

@@ -10,7 +10,7 @@
     - desc: Imbues attacks with light element
     - desc: Damage -10%
     - desc: AP consumption -10%
-  thirdFactorLB: 5
+      lb: 5
   obtained: Gacha (Limited)
   
   notes: >
@@ -28,7 +28,7 @@
     - desc: +15% ATK
     - desc: 10% HP Drain on Normal Attacks
     - desc: +10% DMG
-  thirdFactorLB: 3
+      lb: 3
   obtained: Gacha/Coin Exchange
 
   notes: >
@@ -45,7 +45,7 @@
     - desc: +15% Single Target DMG
     - desc: -10% AP Cost
     - desc: -10% DMG Taken
-  thirdFactorLB: 5
+      lb: 5
   obtained: Gacha/Coin Exchange
 
   notes: >
@@ -63,7 +63,7 @@
     - desc: +20% DMG on YoHRa Arms XII
     - desc: +50% AP RCV by Normal Attacks
     - desc: -10% ATK DMG Taken
-  thirdFactorLB: 5
+      lb: 5
   obtained: Geared Wisp Exchange & Event
 
   notes: >

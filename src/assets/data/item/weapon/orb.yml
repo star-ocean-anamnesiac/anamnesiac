@@ -9,7 +9,7 @@
     - desc: Lightning/Dark damage +30%
     - desc: 80% chance to survive a lethal attack when HP is greater than 10%
     - desc: Damage taken -30% at less than 50% HP
-  thirdFactorLB: 5
+      lb: 5
   obtained: Gacha
   
   notes: >
@@ -26,7 +26,7 @@
     - desc: +15% INT
     - desc: -10% DMG Taken
     - desc: Recover 10% HP every 3 seconds
-  thirdFactorLB: 5
+      lb: 5
   obtained: Gacha / Orb Coin Exchange
   
   notes: >
@@ -44,7 +44,7 @@
     - desc: +15% DMG to Mutliple Targets
     - desc: +30% AP Recovery by Normal Attacks
     - desc: +10% DMG
-  thirdFactorLB: 5
+      lb: 5
   obtained: Gacha / Orb Coin Exchange
   
   notes: >
@@ -61,7 +61,7 @@
     - desc: +20% DMG on Lightning Blast
     - desc: +10% DMG to Single Target
     - desc: 60% Chance to Survive a Lethal Attack at 20% HP or more
-  thirdFactorLB: 5
+      lb: 5
   obtained: Millioneyes Exchange
   
   notes: >
@@ -80,7 +80,7 @@
     - desc: +20% Element DMG / +30% DMG to Plants
     - desc: +10% Crit Rate / +10% Crit DMG
     - desc: 5% HP Recovery every 3 seconds
-  thirdFactorLB: 3
+      lb: 3
   obtained: Gacha
   
   notes: >
@@ -98,7 +98,7 @@
     - desc: +20% DMG on Extinction
     - desc: +10% Crit Rate
     - desc: +50% AP RCV by Normal Attacks
-  thirdFactorLB: 5
+      lb: 5
   obtained: Alma Achievement
   
   notes: >
@@ -116,7 +116,7 @@
     - desc: +40% Dark DMG Dealt / +10% DMG to Divinity
     - desc: +10% Crit Rate / +10% Crit DMG
     - desc: 80% Chance to Survive a Lethal Attack when HP is 20% or more
-  thirdFactorLB: 5
+      lb: 5
   obtained: Gacha
   
   notes: >

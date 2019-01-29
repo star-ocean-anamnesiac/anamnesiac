@@ -4,6 +4,8 @@ export interface Factor {
   desc: string;
 
   meta?: Meta;
+
+  // the LB level the factor is obtained at if not innate (1-5)
   lb?: number;
 }
 
@@ -44,9 +46,6 @@ export interface Item {
 
   // the list of factors for an item
   factors: Factor[];
-
-  // the LB level the third factor is obtained at (0-5)
-  thirdFactorLB?: number;
 
   // where the item is obtained (Gacha, Shop, etc)
   obtained: string;

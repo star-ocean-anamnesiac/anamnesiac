@@ -10,7 +10,7 @@
     - desc: All attribute damage +50% / Damage to mechs +50%
     - desc: Recover 15% of damage dealt on normal attacks as HP
     - desc: Crit Rate +10%
-  thirdFactorLB: 5
+      lb: 5
   obtained: Gacha (Limited)
   
   notes: >
@@ -28,7 +28,7 @@
     - desc: +15% ATK
     - desc: +20% DMG on Helm Splitter
     - desc: -10% AP Cost
-  thirdFactorLB: 3
+      lb: 3
   obtained: Gacha / OHS Coin Exchange
   
   notes: >
@@ -93,7 +93,7 @@
     - desc: +20% DMG on Dragon Slash
     - desc: +20% DMG to Machines
     - desc: +4% Crit
-  thirdFactorLB: 5
+      lb: 5
   obtained: Jie Revorse Exchange
   
   notes: >
@@ -110,7 +110,7 @@
     - desc: +15% DMG to Single Targets
     - desc: +20% DMG on Air Raid
     - desc: +10% DMG
-  thirdFactorLB: 5
+      lb: 5
   obtained: Gacha
   
   notes: >
@@ -127,7 +127,7 @@
     - desc: +20% DMG on Omega Thunderclap Blade
     - desc: -10% INT DMG Taken
     - desc: +15% Lightning DMG Dealt
-  thirdFactorLB: 5
+      lb: 5
   obtained: Millioneye Exchange
   
   notes: >
@@ -144,7 +144,7 @@
     - desc: +20% DMG on Heaven's Sword
     - desc: Recover 3% HP every 3 seconds (If behind an enemy.)
     - desc: -10% AP Cost
-  thirdFactorLB: 5
+      lb: 5
   obtained: Millioneye Exchange
   
   notes: >
@@ -162,7 +162,7 @@
     - desc: Imbue Lightning Element
     - desc: +20% Stun
     - desc: +30% Crit Chance (If not targeted by an enemy.)
-  thirdFactorLB: 5
+      lb: 5
   obtained: Gacha
   
   notes: >
@@ -184,7 +184,6 @@
       lb: 4
     - desc: -10% AP Cost
       lb: 5
-  thirdFactorLB: 5
   obtained: Blood Valkyrie Exchange
   
   notes: >
@@ -204,7 +203,6 @@
       lb: 1
     - desc: -10% AP Cost / -10% DMG Taken
       lb: 5
-  thirdFactorLB: 3
   obtained: Gacha
   
   notes: >
@@ -222,7 +220,7 @@
     - desc: +10% DMG on Sword Bomber
     - desc: +15% DMG to Humans
     - desc: +5% ATK
-  thirdFactorLB: 5
+      lb: 5
   obtained: Hell Siren Exchange
   
   notes: >
@@ -240,7 +238,7 @@
     - desc: +15% ATK
     - desc: Imbue Ice Element
     - desc: -10% AP Cost
-  thirdFactorLB: 5
+      lb: 5
   obtained: Gacha
   
   notes: >
@@ -258,7 +256,7 @@
     - desc: +40% DMG to Divine / +20% DMG to Humans
     - desc: -10% AP Cost
     - desc: 80% Chance to Survive a Lethal Attack at 20% or more HP
-  thirdFactorLB: 5
+      lb: 5
   obtained: Gacha
   
   notes: >
@@ -276,7 +274,7 @@
     - desc: +5% ATK
     - desc: +5% Crit Chance
     - desc: +10% DMG on Colossal Ethereal Blast
-  thirdFactorLB: 5
+      lb: 5
   obtained: Luther's Descent Exchange / Achievement
   
   notes: >
@@ -292,7 +290,7 @@
     - desc: "+20% DMG on YoHRa Arms: Two"
     - desc: Recover 3% HP every 5 seconds
     - desc: +10% ATK DMG Dealt
-  thirdFactorLB: 5
+      lb: 5
   obtained: Nier Event Clear
   
   notes: >
@@ -309,7 +307,7 @@
     - desc: "+20% DMG on YoHRa Arms: Four"
     - desc: +30% AP RCV Speed
     - desc: -10% AP Cost
-  thirdFactorLB: 5
+      lb: 5
   obtained: Nier Event Clear
   
   notes: >
@@ -327,7 +325,7 @@
     - desc: Imbue Light Element
     - desc: +5% ATK / +5% HIT
     - desc: Recover 10% HP every 3 seconds
-  thirdFactorLB: 5
+      lb: 5
   obtained: Gacha (Limited)
   
   notes: >
@@ -345,7 +343,7 @@
     - desc: Imbue Wind Element
     - desc: Recover 5% HP of DMG Dealt by Normal Attacks
     - desc: 50% Chance to Survive a Lethal Attack at 15% or more HP
-  thirdFactorLB: 3
+      lb: 3
   obtained: Gacha
   
   notes: >
@@ -362,7 +360,7 @@
     - desc: +10% DMG on Raging Strike
     - desc: -5% DMG Taken
     - desc: +4% Crit Chance / +10% Crit DMG
-  thirdFactorLB: 5
+      lb: 5
   obtained: Armaros Exchange
   
   notes: >
@@ -378,7 +376,7 @@
     - desc: +30% DMG on Ethereal Blast
     - desc: +5% Crit Chance / +10% Crit DMG
     - desc: +40% ATK DMG at Chain 3+
-  thirdFactorLB: 5
+      lb: 5
   obtained: Alma Exchange
   
   notes: >
@@ -396,7 +394,7 @@
     - desc: Imbue Earth Element
     - desc: Recover 10% HP of DMG Dealt by Normal Attacks
     - desc: -10% AP Cost
-  thirdFactorLB: 5
+      lb: 5
   obtained: Gacha
   
   notes: >
@@ -413,7 +411,7 @@
     - desc: +20% DMG on Floor Lava
     - desc: +10% ATK DMG (When Targetted by Enemy)
     - desc: 60% Chance to Survive a Lethal Attack at 20% HP or more
-  thirdFactorLB: 5
+      lb: 5
   obtained: FFBE Gacha box
   
   notes: >

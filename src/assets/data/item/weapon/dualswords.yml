@@ -10,7 +10,7 @@
     - desc: ATK +15%
     - desc: Receive 10% of damage dealt as HP during normal attacks
     - desc: Additional hit that deals 5% damage of normal attack
-  thirdFactorLB: 3
+      lb: 3
   obtained: Gacha / Dual Blade Coin Exchange
   
   notes: >
@@ -28,7 +28,7 @@
     - desc: +15% DMG to Multiple Targets
     - desc: +10% AP RCV
     - desc: -10% ATK DMG Taken
-  thirdFactorLB: 5
+      lb: 5
   obtained: gacha / Dual Blade Coin Exchange / Transmute
   
   notes: >
@@ -46,7 +46,7 @@
     - desc: Imbues attacks with light element
     - desc: +10% Crit Rate / +15% Crit DMG
     - desc: +30% AP RCV Speed
-  thirdFactorLB: 5
+      lb: 5
   obtained: Gacha
   
   notes: >
@@ -63,7 +63,7 @@
     - desc: +20% DMG on Hazy Wheel
     - desc: +10% DMG to Single Target (At 100% HP)
     - desc: Hit Count Timer + 1 second
-  thirdFactorLB: 5
+      lb: 5
   obtained: Pumpkin Cryptvine Exchange
   
   notes: >
@@ -80,7 +80,7 @@
     - desc: +20% DMG on Helix Blade
     - desc: Recover 5% HP every 3 seconds
     - desc: -15% INT DMG Taken at 50+ Hit Count
-  thirdFactorLB: 5
+      lb: 5
   obtained: Christmas Horndevil Exchange
   
   notes: >
@@ -98,7 +98,7 @@
     - desc: Imbues attacks with ice element
     - desc: +100% AP Recovery by Normal Attacks
     - desc: Recover 5% HP on DMG Dealt by Normal Attacks
-  thirdFactorLB: 5
+      lb: 5
   obtained: Gacha
   
   notes: >

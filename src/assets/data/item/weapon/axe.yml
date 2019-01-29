@@ -9,5 +9,5 @@
     - desc: +20% DMG on Welch Spinning Chop
     - desc: +10% DMG
     - desc: -10% ATK DMG taken when attacking
-  thirdFactorLB: 5
+      lb: 5
   obtained: Cannon Dragoon Exchange

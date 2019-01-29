@@ -9,5 +9,5 @@
     - desc: Light damage +15%
     - desc: DEF +10%
     - desc: Crit Rate +4%
-  thirdFactorLB: 5
+      lb: 5
   obtained: Coin Shop (Michael)
