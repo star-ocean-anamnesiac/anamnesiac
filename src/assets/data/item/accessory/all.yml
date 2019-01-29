@@ -340,7 +340,7 @@
 - name: Coro Plush
   cat: 'gl'
   star: 5
-  picture: accessories/Koro Plushie
+  picture: Koro_Plushie
   def: 728
   factors:
     - desc: +15% Crit Chance (When facing enemy)
@@ -353,7 +353,7 @@
 - name: Moglin Plush
   cat: 'gl'
   star: 5
-  picture: accessories/Mog Plush
+  picture: Mog Plush
   def: 753
   factors:
     - desc: 40% Chance to Survive a Lethal Attack at 20% HP or more
