@@ -237,14 +237,14 @@ export class ItemListPage implements OnInit, OnDestroy {
       .compact()
       .uniq()
       .sortBy()
-      .tap(arr => {
-        arr.push('None');
+      .tap(innerArr => {
+        innerArr.push('None');
       })
       .value();
 
     // element sorting
-    this.elementSortedItems = {}
-    
+    this.elementSortedItems = {};
+
     _(arr)
       .sortBy('name')
       .forEach(item => {
@@ -262,13 +262,13 @@ export class ItemListPage implements OnInit, OnDestroy {
       .compact()
       .uniq()
       .sortBy()
-      .tap(arr => {
-        arr.push('None');
+      .tap(innerArr => {
+        innerArr.push('None');
       })
       .value();
-  
+
     this.slayerSortedItems = {};
-    
+
     _(arr)
       .sortBy('name')
       .forEach(item => {
