@@ -2,7 +2,7 @@
 - name: Striped Cat Mitts
   cat: 'gl'
   star: 5
-  picture: arms/Stripe Cat Punch (Striped Cat Mitts)
+  picture: Stripe Cat Punch (Striped Cat Mitts)
   atk: 961
   int: 958
   element: Light
@@ -20,7 +20,7 @@
 - name: Atomic Arms
   cat: 'gl'
   star: 5
-  picture: arms/Atomic Arms
+  picture: Atomic Arms
   atk: 650
   int: 649
   factors:
@@ -37,7 +37,7 @@
 - name: Super Puncher
   cat: 'gl'
   star: 5
-  picture: arms/Great Punch (Super Puncher)
+  picture: Great Punch (Super Puncher)
   atk: 517
   int: 510
   factors:
@@ -54,7 +54,7 @@
 - name: Polar Bear Paws
   cat: 'gl'
   star: 5
-  picture: arms/Polar Bear's Punch (Polar Bear Paws)
+  picture: Polar Bear's Punch (Polar Bear Paws)
   atk: 960
   int: 955
   slayer: Demon
@@ -72,7 +72,7 @@
 - name: Farmer's Arms
   cat: 'gl'
   star: 5
-  picture: arms/Farmer's Arms
+  picture: Farmer's Arms
   atk: 510
   int: 509
   factors:
