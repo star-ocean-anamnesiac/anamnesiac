@@ -343,8 +343,8 @@
   picture: accessories/Koro Plushie
   def: 728
   factors:
-    - desc: +15% Crit Chance (When facing enemy.)
-    - desc: -5% ATK DMG Taken (When close range.)
+    - desc: +15% Crit Chance (When facing enemy)
+    - desc: -5% ATK DMG Taken (When close range)
   obtained: FFBE (Gacha Box)
 
   notes: >
@@ -354,10 +354,10 @@
   cat: 'gl'
   star: 5
   picture: accessories/Mog Plush
-  def: -
+  def: 753
   factors:
     - desc: 40% Chance to Survive a Lethal Attack at 20% HP or more
-    - desc: -10% DMG Taken (When far range.)
+    - desc: -10% DMG Taken (When far range)
   obtained: FFBE (Achievement)
 
   notes: >
