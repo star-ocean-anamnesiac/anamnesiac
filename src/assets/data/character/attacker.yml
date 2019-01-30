@@ -2430,3 +2430,61 @@
       
       *Normal > Exorcising Storm > Tranquility > Blade Flash - Awakened > Spam it till out of AP. (General combo.)*
     
+- name: Andre
+  cat: gl
+  rating: 0
+  picture: andre
+  weapon: ohs
+  ace: false
+  limited: false
+  star: 3
+
+  stats:
+    hp: 8780
+    atk: 1299
+    int: 830
+    def: 1075
+    hit: 616
+    grd: 438
+
+  talents:
+    - name: "Young General"
+      effects: 
+        - desc: Critical Rate +10%
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffValue: 10
+    - name: "Mischievous Rascal"
+      effects:
+        - desc: Will not flinch to damage under 20% max HP
+          all: false
+        
+  skills:
+    - name: "Double Slash"
+      power: ATK x 200%
+      ap: 20
+      maxHits: 2
+    - name: "Rising Blade"
+      power: ATK x 410%
+      ap: 32
+      maxHits: 5
+    - name: "Shotgun Blast"
+      power: ATK x 190%
+      ap: 20
+      maxHits: 4
+      element: Lightning
+
+  rush:
+    name: "Revised Stampede Slash"
+    effects:
+      - desc: Critical Rate +40%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 40
+    power: ATK x 2500%
+    maxHits: 6
