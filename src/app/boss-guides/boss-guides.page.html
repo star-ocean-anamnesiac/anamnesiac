@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Boss Guides</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+    <div class="stars small"></div>
+    <div class="stars medium"></div>
+    <div class="stars large"></div>
+
+    <div class="blank-slate" *ngIf="allBosses.length === 0">
+      <ion-spinner></ion-spinner> &nbsp;&nbsp;&nbsp; Loading...
+    </div>
+
+    <ion-list>
+
+      <ion-item-group>
+        <ion-item-divider><strong>Active Events</strong></ion-item-divider>
+  
+        <ion-item *ngFor="let guide of allBosses | filterBy:{ isActive: true }" detail (click)="loadGuide(guide)">
+          <ng-container *ngTemplateOutlet="bossguide; context: { guide: guide }"></ng-container>
+        </ion-item>
+      </ion-item-group>
+
+      <ion-item-group>
+        <ion-item-divider><strong>Inactive Events</strong></ion-item-divider>
+  
+        <ion-item *ngFor="let guide of allBosses | filterBy:{ isActive: true }" detail (click)="loadGuide(guide)" class="faded">
+          <ng-container *ngTemplateOutlet="bossguide; context: { guide: guide }"></ng-container>
+        </ion-item>
+      </ion-item-group>
+      
+    </ion-list>
+
+</ion-content>
+
+<ng-template #bossguide let-guide="guide">
+  <app-appicon [name]="'boss-' + guide.image" [scaleX]="0.25" [scaleY]="0.25" [inline]="true"></app-appicon> 
+
+  <ion-label class="label-area">
+    <h2 class="vertical-center">
+      <span>{{ guide.name }}</span>
+    </h2>
+
+    <h4 class="vertical-center">
+      <app-appicon [name]="'type-' + guide.race.toLowerCase()" [scaleX]="0.25" [scaleY]="0.25"></app-appicon> <span class="race">{{ guide.race }}</span>
+    </h4>
+  </ion-label>
+</ng-template>
