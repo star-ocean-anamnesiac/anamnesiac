@@ -27,7 +27,7 @@
       <ion-item-group>
         <ion-item-divider><strong>Inactive Events</strong></ion-item-divider>
   
-        <ion-item *ngFor="let guide of allBosses | filterBy:{ isActive: true }" detail (click)="loadGuide(guide)" class="faded">
+        <ion-item *ngFor="let guide of allBosses | filterBy:{ isActive: false }" detail (click)="loadGuide(guide)" class="faded">
           <ng-container *ngTemplateOutlet="bossguide; context: { guide: guide }"></ng-container>
         </ion-item>
       </ion-item-group>
