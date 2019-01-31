@@ -4,9 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import { NavParams, ModalController } from '@ionic/angular';
 import { DomSanitizer } from '@angular/platform-browser';
 import { BossGuide } from '../models/bossguide';
-/*
-              <ion-col class="notes" [innerHTML]="notes"></ion-col>
-              */
+
 @Component({
   template: `
   <ion-header>
@@ -99,7 +97,7 @@ import { BossGuide } from '../models/bossguide';
                 <ng-container *ngIf="weakness.status">
                   <app-appicon [name]="'debuff-' + weakness.status.toLowerCase()"
                               [scaleX]="0.25"
-                              [scaleY]="0.25"></app-appicon> {{ weakness.status }}
+                              [scaleY]="0.25"></app-appicon> {{ weakness.status }} <span *ngIf="weakness.vuln">({{ weakness.vuln }})</span>
                 </ng-container>
               </li>
             </ul>
@@ -192,6 +190,7 @@ import { BossGuide } from '../models/bossguide';
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-end;
+      margin-bottom: 0;
     }
 
     .boss-list.has-bullets {

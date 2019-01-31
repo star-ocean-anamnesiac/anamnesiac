@@ -12,6 +12,9 @@ export interface Weakness {
 
   // the status effect weakness
   status?: string;
+
+  // the vulnerability string - Low, Med, High, Imm
+  vuln?: string;
 }
 
 export interface BossMove {
