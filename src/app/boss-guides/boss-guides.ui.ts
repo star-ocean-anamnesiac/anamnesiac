@@ -12,7 +12,7 @@ import { BossGuide } from '../models/bossguide';
   <ion-header>
     <ion-toolbar color="primary">
       <span slot="start" class="titlebar-class-chunk">
-        <app-appicon [name]="'boss-' + guide.image" [scaleX]="0.125" [scaleY]="0.125" [inline]="true"></app-appicon> 
+        <app-appicon [name]="'boss-' + guide.image" [scaleX]="0.125" [scaleY]="0.125" [inline]="true"></app-appicon>
       </span>
       <ion-title>
         {{ guide.name }}
@@ -46,9 +46,9 @@ import { BossGuide } from '../models/bossguide';
           <ion-col size-xs="6" size-sm="8" class="vertical-center">
             <ul class="boss-list has-bullets">
               <li class="list-appicon">
-                <app-appicon class="margin-right" 
-                            [name]="'type-' + guide.race.toLowerCase()" 
-                            [scaleX]="0.25" 
+                <app-appicon class="margin-right"
+                            [name]="'type-' + guide.race.toLowerCase()"
+                            [scaleX]="0.25"
                             [scaleY]="0.25"></app-appicon> {{ guide.race }}
               </li>
             </ul>
@@ -66,9 +66,9 @@ import { BossGuide } from '../models/bossguide';
             <ul class="boss-list has-bullets">
               <li class="list-appicon none" *ngIf="!guide.statusInflictions || guide.statusInflictions.length === 0">None</li>
               <li class="list-appicon" *ngFor="let inflict of guide.statusInflictions">
-                <app-appicon class="margin-right" 
-                            [name]="'debuff-' + inflict.toLowerCase()" 
-                            [scaleX]="0.25" 
+                <app-appicon class="margin-right"
+                            [name]="'debuff-' + inflict.toLowerCase()"
+                            [scaleX]="0.25"
                             [scaleY]="0.25"></app-appicon> {{ inflict }}
               </li>
             </ul>
@@ -91,14 +91,14 @@ import { BossGuide } from '../models/bossguide';
                 </ng-container>
 
                 <ng-container *ngIf="weakness.element">
-                  <app-appicon [name]="'el-' + weakness.element.toLowerCase()" 
-                              [scaleX]="0.25" 
+                  <app-appicon [name]="'el-' + weakness.element.toLowerCase()"
+                              [scaleX]="0.25"
                               [scaleY]="0.25"></app-appicon> {{ weakness.element }} {{ weakness.percentWeakness }}%
                 </ng-container>
 
                 <ng-container *ngIf="weakness.status">
-                  <app-appicon [name]="'debuff-' + weakness.status.toLowerCase()" 
-                              [scaleX]="0.25" 
+                  <app-appicon [name]="'debuff-' + weakness.status.toLowerCase()"
+                              [scaleX]="0.25"
                               [scaleY]="0.25"></app-appicon> {{ weakness.status }}
                 </ng-container>
               </li>
@@ -130,19 +130,19 @@ import { BossGuide } from '../models/bossguide';
         <ion-label><strong>Enrage</strong></ion-label>
 
         <div class="vertical-center">
-          <app-appicon [name]="'misery-m1'" 
+          <app-appicon [name]="'misery-m1'"
                        class="misery"
-                       [scaleX]="0.375" 
+                       [scaleX]="0.375"
                        [scaleY]="0.375"></app-appicon> {{ guide.enrage.m1 }}
 
-          <app-appicon [name]="'misery-m2'" 
+          <app-appicon [name]="'misery-m2'"
                        class="misery"
-                       [scaleX]="0.375" 
+                       [scaleX]="0.375"
                        [scaleY]="0.375"></app-appicon> {{ guide.enrage.m2 }}
 
-          <app-appicon [name]="'misery-m3'" 
+          <app-appicon [name]="'misery-m3'"
                        class="misery"
-                       [scaleX]="0.375" 
+                       [scaleX]="0.375"
                        [scaleY]="0.375"></app-appicon> {{ guide.enrage.m3 }}
         </div>
       </ion-item>
@@ -161,7 +161,7 @@ import { BossGuide } from '../models/bossguide';
               <app-appicon [name]="'misery-m' + mis"
                           *ngIf="move['m' + mis]"
                           float-right
-                          [scaleX]="0.375" 
+                          [scaleX]="0.375"
                           [scaleY]="0.375"></app-appicon>
             </ng-container>
 
@@ -184,7 +184,7 @@ import { BossGuide } from '../models/bossguide';
       </ion-item>
 
     </ion-list>
-    
+
   </ion-content>
   `,
   styles: [`

@@ -1,13 +1,13 @@
 
 export interface Weakness {
-  
+
   // a "plain" weakness, like, INT damage
   plain?: string;
 
   // a specific element, see Item->Factor#element
   element?: string;
 
-  // the percent weakness 
+  // the percent weakness
   percentWeakness?: number;
 
   // the status effect weakness

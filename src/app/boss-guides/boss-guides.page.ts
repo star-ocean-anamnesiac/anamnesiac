@@ -1,7 +1,7 @@
 
 import * as _ from 'lodash';
 
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { LocalStorageService } from 'ngx-webstorage';
 import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
 import { Subscription } from 'rxjs';
@@ -16,7 +16,7 @@ import { BossGuideModal } from './boss-guides.ui';
   templateUrl: './boss-guides.page.html',
   styleUrls: ['./boss-guides.page.scss'],
 })
-export class BossGuidesPage implements OnInit {
+export class BossGuidesPage implements OnInit, OnDestroy {
 
   public allBosses: BossGuide[] = [];
 
