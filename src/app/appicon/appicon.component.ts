@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, HostBinding } from '@angular/core';
+import { Component, OnInit, Input, HostBinding, ChangeDetectionStrategy } from '@angular/core';
 import { get } from 'lodash';
 
 import * as appicons from '../../assets/icons/+app-icons.json';
@@ -20,7 +20,8 @@ const sheetPaths = {
 @Component({
   selector: 'app-appicon',
   templateUrl: './appicon.component.html',
-  styleUrls: ['./appicon.component.scss']
+  styleUrls: ['./appicon.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppIconComponent implements OnInit {
 
