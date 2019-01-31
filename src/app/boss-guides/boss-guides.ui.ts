@@ -147,10 +147,6 @@ import { BossGuide } from '../models/bossguide';
         </div>
       </ion-item>
 
-      <ion-item-divider><strong>Boss Description</strong></ion-item-divider>
-
-      <ion-item><div padding [innerHTML]="descText"></div></ion-item>
-
       <ion-item-divider><strong>Boss Skills</strong></ion-item-divider>
 
       <ion-item *ngFor="let move of guide.moves; let i = index" text-wrap>
@@ -180,8 +176,11 @@ import { BossGuide } from '../models/bossguide';
           <div text-wrap [innerHTML]="moveTexts[i]"></div>
         </ion-label>
 
-
       </ion-item>
+
+      <ion-item-divider><strong>Boss Description</strong></ion-item-divider>
+
+      <ion-item><div padding [innerHTML]="descText"></div></ion-item>
 
     </ion-list>
 
