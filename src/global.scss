@@ -12,6 +12,10 @@
 
 @import 'theme/stars.scss';
 
+.hidden {
+  display: none;
+}
+
 .preloader {
   height: 0 !important;
 }
