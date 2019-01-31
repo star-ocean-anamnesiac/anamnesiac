@@ -171,6 +171,12 @@ export class AppComponent {
       url: '/party-creator',
       icon: 'people'
     });
+
+    this.appPages.push({
+      title: 'Boss Guides',
+      url: '/boss-guides',
+      icon: 'paper'
+    });
   }
 
   private watchRouteChanges() {

@@ -41,9 +41,9 @@ export class CharacterListPage implements OnInit, OnDestroy {
   public showSearch: boolean;
   public searchValue = '';
 
+  private storage$: Subscription;
   private router$: Subscription;
   private character$: Subscription;
-  private hasModal: boolean;
 
   private region: 'gl'|'jp';
 
@@ -59,7 +59,7 @@ export class CharacterListPage implements OnInit, OnDestroy {
   ngOnInit() {
     if(!this.sorting) { this.sorting = 'alpha'; }
 
-    this.localStorage.observe('isJP').subscribe(val => {
+    this.storage$ = this.localStorage.observe('isJP').subscribe(val => {
       this.updateRegionBasedOn(val);
     });
 
@@ -81,6 +81,7 @@ export class CharacterListPage implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
+    this.storage$.unsubscribe();
     this.router$.unsubscribe();
     this.character$.unsubscribe();
   }
@@ -117,13 +118,9 @@ export class CharacterListPage implements OnInit, OnDestroy {
 
   // UI MODIFYING FUNCTIONS
   public async loadCharacterModal(name: string) {
-    if(this.hasModal) { return; }
-
     const character = _.find(this.allCharacters, { name, cat: this.region });
 
     if(!character) { return; }
-
-    this.hasModal = true;
 
     const modal = await this.modalCtrl.create({
       component: CharacterModal,
@@ -134,8 +131,6 @@ export class CharacterListPage implements OnInit, OnDestroy {
     });
 
     modal.onDidDismiss().then(() => {
-      this.hasModal = false;
-
       this.router.navigate([], {
         relativeTo: this.activatedRoute,
         queryParams: {

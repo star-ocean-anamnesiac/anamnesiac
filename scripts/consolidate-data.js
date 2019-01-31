@@ -6,6 +6,7 @@ const fs = require('fs');
 
 const ROOT_FILE = 'src/assets/data/root.yml';
 const CHANGELOG_FILE = 'src/assets/data/changelog.yml';
+const BOSSGUIDE_FOLDER = 'src/assets/data/bossguides';
 
 const data = fs.readFileSync(ROOT_FILE, 'utf-8');
 const changelogData = fs.readFileSync(CHANGELOG_FILE, 'utf-8');
@@ -37,11 +38,19 @@ const allCharacters = _.flattenDeep(classes.map(charClass => {
   return characters;
 }));
 
+const allGuides = _.flattenDeep(fs.readdirSync(BOSSGUIDE_FOLDER).map(file => {
+  const data = fs.readFileSync(`${BOSSGUIDE_FOLDER}/${file}`, 'utf-8');
+  const bossguides = YAML.safeLoad(data);
+
+  return bossguides;
+}));
+
 const fullData = {
   root,
   changelog,
   allCharacters,
-  allItems
+  allItems,
+  allGuides
 };
 
 fs.writeFileSync('src/app/data.json', JSON.stringify(fullData));

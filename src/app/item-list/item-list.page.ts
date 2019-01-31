@@ -41,6 +41,7 @@ export class ItemListPage implements OnInit, OnDestroy {
   public showSearch: boolean;
   public searchValue = '';
 
+  private storage$: Subscription;
   private router$: Subscription;
   private item$: Subscription;
   private hasModal: boolean;
@@ -59,7 +60,7 @@ export class ItemListPage implements OnInit, OnDestroy {
   ngOnInit() {
     if(!this.itemSorting) { this.itemSorting = 'alpha'; }
 
-    this.localStorage.observe('isJP').subscribe(val => {
+    this.storage$ = this.localStorage.observe('isJP').subscribe(val => {
       this.updateRegionBasedOn(val);
     });
 
@@ -81,6 +82,7 @@ export class ItemListPage implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
+    this.storage$.unsubscribe();
     this.router$.unsubscribe();
     this.item$.unsubscribe();
   }
