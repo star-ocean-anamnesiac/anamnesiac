@@ -1,5 +1,6 @@
 {
   "name": "anamnesiac",
+  "description": "A compendium of information for Star Ocean: Anamnesis",
   "version": "1.0.0",
   "author": "Kyle Kemp <kyle@seiyria.com>",
   "homepage": "https://anamnesiac.seiyria.com",
@@ -68,6 +69,5 @@
     "ts-node": "^7.0.1",
     "tslint": "~5.11.0",
     "typescript": "~3.1.6"
-  },
-  "description": "A compendium of information for Star Ocean: Anamnesis"
+  }
 }
