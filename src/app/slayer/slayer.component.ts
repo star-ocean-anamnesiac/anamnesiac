@@ -11,6 +11,9 @@ export class SlayerComponent implements OnInit {
   @Input()
   public slayer: string;
 
+  @Input()
+  public iconOnly = false;
+
   constructor() { }
 
   ngOnInit() {

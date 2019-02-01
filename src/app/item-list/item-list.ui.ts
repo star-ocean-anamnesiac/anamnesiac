@@ -58,14 +58,8 @@ export class ItemSortPopover {
         </p>
         <p class="vertical-center">
           <span *ngIf="item.atk" class="middot-after">{{ item.atk }} ATK</span>
-          <span *ngIf="item.int">{{ item.int }} INT</span>
+          <span *ngIf="item.int"> {{ item.int }} INT</span>
           <span *ngIf="item.def">{{ item.def }} DEF</span>
-          <ng-container *ngFor="let factor of item.factors">
-            <app-element *ngIf="factor.element" [element]="factor.element"></app-element>
-          </ng-container>
-          <ng-container *ngFor="let factor of item.factors">
-            <app-slayer *ngIf="factor.slayer" [slayer]="factor.slayer"></app-slayer>
-          </ng-container>
         </p>
         <p>Obtained: {{ item.obtained }}</p>
       </ion-col>
@@ -86,7 +80,11 @@ export class ItemSortPopover {
                       <em *ngIf="factor.lb" class="vertical-center">
                         Unlocked at <app-appicon [name]="'weapon-' + factor.lb" [scaleX]="0.5" [scaleY]="0.5" [inline]="true"></app-appicon>
                       </em>
-                      <div>{{ factor.desc }}</div>
+                      <div class="vertical-center">
+                        <app-element [element]="factor.element" *ngIf="factor.element" [iconOnly]="true"></app-element>
+                        <app-slayer [slayer]="factor.slayer" *ngIf="factor.slayer" [iconOnly]="true"></app-slayer>
+                        {{ factor.desc }}
+                      </div>
                     </ion-card-content>
                   </ion-card>
                 </ion-col>

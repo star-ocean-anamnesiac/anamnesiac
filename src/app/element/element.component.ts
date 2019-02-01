@@ -11,6 +11,9 @@ export class ElementComponent implements OnInit {
   @Input()
   public element = 'None';
 
+  @Input()
+  public iconOnly = false;
+
   constructor() { }
 
   ngOnInit() {
