@@ -140,7 +140,7 @@ export class ItemSortPopover {
     }
 
     .tall-row {
-      height: calc(100% - 139px);
+      height: calc(100% - 144px);
     }
 
     .tall-col {
