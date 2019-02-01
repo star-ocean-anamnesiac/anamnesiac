@@ -21,8 +21,6 @@ import { CharacterListModal } from './character-list.modal';
 import { Character } from '../models/character';
 import { DataService } from '../data.service';
 
-const BASE_STATS = { HP: true, ATK: true, INT: true, DEF: true, GRD: true, HIT: true };
-
 @Component({
   selector: 'app-party-creator',
   templateUrl: './party-creator.page.html',
@@ -63,7 +61,9 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
   public roleToggle: boolean;
   public showShare: boolean;
 
-  public buffPriorityDescs = {
+  public readonly baseStats = { HP: true, ATK: true, INT: true, DEF: true, GRD: true, HIT: true };
+
+  public readonly buffPriorityDescs = {
     1: 'Talent/Rush Stat Buffs',
     2: 'Skill-applied Stat Buffs',
     3: 'Self-conditional Stat Buffs',
@@ -269,7 +269,7 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
 
       metaRet._metaAll = eff.all;
 
-      if(!BASE_STATS[metaRet.buff]) { metaRet.priority = 5; }
+      if(!this.baseStats[metaRet.buff]) { metaRet.priority = 5; }
 
       return metaRet;
     };
