@@ -32,7 +32,6 @@
   def: 753
   factors:
     - desc: 50% chance of poison nullification
-    - desc: None
   obtained: Gerel (Exchange)
 
   notes: >
@@ -45,7 +44,6 @@
   def: 753
   factors:
     - desc: 50% Chance of Paralysis Nullification
-    - desc: None
   obtained: Gerel (Exchange) or Coro Revorse (Exchange, Drop)
 
   notes: >
@@ -58,7 +56,6 @@
   def: 753
   factors:
     - desc: +100% Fire Resistance
-    - desc: None
   obtained: Gerel (Exchange)
 
   notes: >
@@ -71,7 +68,6 @@
   def: 753
   factors:
     - desc: 20% Chance of Surviving a Lethal Attack at 10% HP or more
-    - desc: None
   obtained: Jie Revorse (Exchange, Drop) and Geared Wisp (Achievement)
 
   notes: >
@@ -84,7 +80,6 @@
   def: 753
   factors:
     - desc: 50% Chance of Freezing Nullification
-    - desc: None
   obtained: Jie Revorse (Exchange, Drop)
 
   notes: >
@@ -97,7 +92,6 @@
   def: 753
   factors:
     - desc: -10% DMG Taken
-    - desc: None
   obtained: Jie Revorse (Exchange, Drop)
 
   notes: >
@@ -162,7 +156,6 @@
   def: 753
   factors:
     - desc: 50% Chance of Silence Nullification
-    - desc: None
   obtained: Blood Valkyrie (Exchange, Drop)
 
   notes: >
@@ -316,7 +309,6 @@
   def: 728
   factors:
     - desc: -5% AP Cost
-    - desc: None
   obtained: Alma (Exchange)
 
   notes: >

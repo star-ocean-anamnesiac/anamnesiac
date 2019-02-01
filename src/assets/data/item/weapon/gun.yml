@@ -45,7 +45,6 @@
     - desc: Imbue Wind Element
       element: Wind
     - desc: +20% DMG on Hunter's Moon
-    - desc: None
   obtained: Coin Exchange/Gacha/Transmute
   
   notes: >
@@ -62,7 +61,6 @@
   factors:
     - desc: +15% ATK, -15% DEF
     - desc: +20% DMG on Scatter Beam
-    - desc: None
   obtained: Coin Exchange/Gacha/Transmute
   
   notes: >
