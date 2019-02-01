@@ -280,7 +280,7 @@ export class CharacterSortPopover {
 
     .element-icon {
       position: absolute;
-      right: 12px;
+      right: 0;
       bottom: 0;
     }
   `]
