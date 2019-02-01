@@ -2,7 +2,7 @@
 - name: Jet Hammer
   cat: 'jp'
   star: 5
-  picture: Jet Hammer
+  picture: Jet_Hammer
   atk: 531
   int: 529
   factors:

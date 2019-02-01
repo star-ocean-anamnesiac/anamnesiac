@@ -2,7 +2,7 @@
 - name: Emil Mask
   cat: 'gl'
   star: 5
-  picture: Emil's Face (Emil Mask)
+  picture: Emil's_Face
   def: 728
   factors:
     - desc: 40% chance of freezing nullification
@@ -15,7 +15,7 @@
 - name: White Rose Badge
   cat: 'gl'
   star: 5
-  picture: White Rose Badge
+  picture: White_Rose_Badge
   def: 753
   factors:
     - desc: 40% chance of poison nullification
@@ -28,7 +28,7 @@
 - name: Anti Poison Amulet IV
   cat: 'gl'
   star: 5
-  picture: Poison Check IV(Anti-Poison Amulet IV)
+  picture: Anti_Poison_Amulet_IV
   def: 753
   factors:
     - desc: 50% chance of poison nullification
@@ -41,7 +41,7 @@
 - name: Anti Paralysis Amulet IV
   cat: 'gl'
   star: 5
-  picture: Paralyze Check IV (Anti-Paralysis Amulet IV)
+  picture: Anti_Paralysis_Amulet_IV
   def: 753
   factors:
     - desc: 50% Chance of Paralysis Nullification
@@ -54,7 +54,7 @@
 - name: Fire Amulet IV
   cat: 'gl'
   star: 5
-  picture: Armlet of Fire IV (Fire Armlet IV)
+  picture: Armlet_of_Fire_IV
   def: 753
   factors:
     - desc: +100% Fire Resistance
@@ -67,7 +67,7 @@
 - name: Resolve Talisman IV
   cat: 'gl'
   star: 5
-  picture: Talisman of Indomitability IV (Talisman of Resolve IV)
+  picture: Talisman_of_Indomitability_IV
   def: 753
   factors:
     - desc: 20% Chance of Surviving a Lethal Attack at 10% HP or more
@@ -80,7 +80,7 @@
 - name: Anti Freezing Amulet IV
   cat: 'gl'
   star: 5
-  picture: Freeze Check IV (Anti-Freezing Amulet IV)
+  picture: Anti_Freezing_Amulet_IV
   def: 753
   factors:
     - desc: 50% Chance of Freezing Nullification
@@ -93,7 +93,7 @@
 - name: Protection Armlet IV
   cat: 'gl'
   star: 5
-  picture: Armlet of Protection IV (Protection Armlet IV)
+  picture: Armlet_of_Protection
   def: 753
   factors:
     - desc: -10% DMG Taken
@@ -106,7 +106,7 @@
 - name: Symbol of the Snow God
   cat: 'gl'
   star: 5
-  picture: Crest of the Ice God (Symbol of the Snow God)
+  picture: Crest_of_the_Ice_God
   def: 728
   factors:
     - desc: 25% Chance of Freezing Nullification
@@ -119,7 +119,7 @@
 - name: Hawkeye Charm
   cat: 'gl'
   star: 5
-  picture: Hawkeye Charm
+  picture: Hawkeye_Charm
   def: 728
   factors:
     - desc: +10% Crit Rate
@@ -132,7 +132,7 @@
 - name: Symbol of the Sea God
   cat: 'gl'
   star: 5
-  picture: Crest of the Sea God (Symbol of the Sea God)
+  picture: Crest_of_the_Sea_God
   def: 728
   factors:
     - desc: +25% Seal Resist
@@ -145,7 +145,7 @@
 - name: Energy Bracelet
   cat: 'gl'
   star: 5
-  picture: Energy Bracelet
+  picture: Energy_Bracelet
   def: 803
   factors:
     - desc: +10% HP
@@ -158,7 +158,7 @@
 - name: Anti-Silence Amulet IV
   cat: 'gl'
   star: 5
-  picture: Silence Guard (Anti-Silence Amulet IV)
+  picture: Anti_Silence_Amulet_IV
   def: 753
   factors:
     - desc: 50% Chance of Silence Nullification
@@ -171,7 +171,7 @@
 - name: Ring of the General
   cat: 'gl'
   star: 5
-  picture: General Ring (Ring of General)
+  picture: General_Ring
   def: 728
   factors:
     - desc: -10% ATK DMG Taken
@@ -184,7 +184,7 @@
 - name: War God's Symbol
   cat: 'gl'
   star: 5
-  picture: Crest of the Warrior (War God's Symbol)
+  picture: Crest_of_the_Warrior
   def: 728
   factors:
     - desc: -10% INT DMG Taken
@@ -197,7 +197,7 @@
 - name: Jinxed Necklace
   cat: 'gl'
   star: 5
-  picture: Bat Necklace (Jinxed Necklace)
+  picture: Bat_Necklace
   def: 753
   factors:
     - desc: +5% Rush Combo DMG
@@ -210,11 +210,10 @@
 - name: Eagle Eye Charm
   cat: 'gl'
   star: 5
-  picture: Eagle Eye Charm
+  picture: Eagle_Eye_Charm
   def: 728
   factors:
     - desc: +10% Stun Rate
-    - desc: None
   obtained: Pumpkin Cryptvine (Achievement, Gacha Box) and Armaros (Exchange, Drop)
 
   notes: >
@@ -223,7 +222,7 @@
 - name: Silver Armlet
   cat: 'gl'
   star: 5
-  picture: Silver Armlet
+  picture: Silver_Armlet
   def: 728
   factors:
     - desc: -10% Chance of Taking Crit Hit
@@ -236,7 +235,7 @@
 - name: Lunar Tear Bauble
   cat: 'gl'
   star: 5
-  picture: Lunar Tear Bauble
+  picture: Lunar_Tear
   def: 753
   factors:
     - desc: RCV 5% HP when DMG is Nullified by Evasion
@@ -249,7 +248,7 @@
 - name: Journeyman's Charm
   cat: 'gl'
   star: 5
-  picture: Wayfarer's (Journeyman's) Charm
+  picture: Wayfarer's_Charm
   def: 728
   factors:
     - desc: +25% Chance of Paralysis Nullification
@@ -262,7 +261,7 @@
 - name: Healing Band
   cat: 'gl'
   star: 5
-  picture: Healing Bangle
+  picture: Healing_Bangle
   def: 728
   factors:
     - desc: RCV 2% HP every 5 secs
@@ -275,11 +274,10 @@
 - name: Sturdy Bracelet
   cat: 'gl'
   star: 5
-  picture: Sturdy Bracelet
+  picture: Sturdy_Bracelet
   def: 803
   factors:
     - desc: -5% DMG Taken
-    - desc: None
   obtained: Colossal Beak (Exchange)
 
   notes: >
@@ -288,7 +286,7 @@
 - name: Golden Coro Necklace
   cat: 'gl'
   star: 5
-  picture: Gold Koro Necklace
+  picture: Gold_Koro_Necklace
   def: 728
   factors:
     - desc: -10% ATK DMG Taken
@@ -301,7 +299,7 @@
 - name: Christmas Reindeer
   cat: 'gl'
   star: 5
-  picture: Christmas Mujin-kun
+  picture: Mujin_Kun
   def: 753
   factors:
     - desc: RCV 2% HP every 5 secs
@@ -314,7 +312,7 @@
 - name: Emerald Ring
   cat: 'gl'
   star: 5
-  picture: Emerald Ring
+  picture: Emerald_Ring
   def: 728
   factors:
     - desc: -5% AP Cost
@@ -327,7 +325,7 @@
 - name: Quarry's Charm
   cat: 'gl'
   star: 5
-  picture: Target Charm
+  picture: Target_Charm
   def: 803
   factors:
     - desc: -10% DMG Taken
@@ -353,7 +351,7 @@
 - name: Moglin Plush
   cat: 'gl'
   star: 5
-  picture: Mog Plush
+  picture: Moglin_Plushie
   def: 753
   factors:
     - desc: 40% Chance to Survive a Lethal Attack at 20% HP or more

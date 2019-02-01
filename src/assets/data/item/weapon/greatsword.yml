@@ -56,7 +56,7 @@
 - name: Type-4O Blade
   cat: 'gl'
   star: 5
-  picture: Type-40 Blade
+  picture: Type_4O_Blade
   atk: 862
   int: 857
   factors:

@@ -2,7 +2,7 @@
 - name: Eldar's Scythe
   cat: 'jp'
   star: 5
-  picture: Eldar Scythe
+  picture: Eldar_Scythe
   atk: 533
   int: 526
   factors:

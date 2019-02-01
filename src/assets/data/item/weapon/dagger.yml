@@ -2,7 +2,7 @@
 - name: Golden-bolt Destroyers
   cat: 'gl'
   star: 5
-  picture: Mist Blades・Takemikazuchi (Golden-Bolt Destroyers)
+  picture: Mist_Blades_Takemikazuchi
   atk: 471
   factors:
     - desc: Imbues attacks with lightning element

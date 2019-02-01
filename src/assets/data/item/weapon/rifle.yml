@@ -2,7 +2,7 @@
 - name: Blue Comet Trigger
   cat: 'jp'
   star: 5
-  picture: Blue Comet Trigger
+  picture: Blue_Comet_Trigger
   atk: 651
   int: 649
   factors:

@@ -2,7 +2,7 @@
 - name: Holy Rod
   cat: 'gl'
   star: 5
-  picture: Holy Rod
+  picture: Holy_Rod
   atk: 0
   int: 835
   factors:

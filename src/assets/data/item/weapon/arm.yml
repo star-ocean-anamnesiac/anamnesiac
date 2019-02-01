@@ -2,7 +2,7 @@
 - name: Striped Cat Mitts
   cat: 'gl'
   star: 5
-  picture: Stripe Cat Punch (Striped Cat Mitts)
+  picture: Striped_Cat_Mitts
   atk: 961
   int: 958
   factors:
@@ -20,7 +20,7 @@
 - name: Atomic Arms
   cat: 'gl'
   star: 5
-  picture: Atomic Arms
+  picture: Atomic_Arms
   atk: 650
   int: 649
   factors:
@@ -37,7 +37,7 @@
 - name: Super Puncher
   cat: 'gl'
   star: 5
-  picture: Great Punch (Super Puncher)
+  picture: Great_Punch
   atk: 517
   int: 510
   factors:
@@ -54,7 +54,7 @@
 - name: Polar Bear Paws
   cat: 'gl'
   star: 5
-  picture: Polar Bear's Punch (Polar Bear Paws)
+  picture: Polar_Bear's_Punch
   atk: 960
   int: 955
   factors:
@@ -73,7 +73,7 @@
 - name: Farmer's Arms
   cat: 'gl'
   star: 5
-  picture: Farmer's Arms
+  picture: Farmer's_Arms
   atk: 510
   int: 509
   factors:

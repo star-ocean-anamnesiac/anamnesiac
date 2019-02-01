@@ -2,7 +2,7 @@
 - name: Type-4O Sword
   cat: 'gl'
   star: 5
-  picture: Type-4O
+  picture: Type_4O
   atk: 964
   int: 958
   factors:
@@ -22,7 +22,7 @@
 - name: Cursed Balmung Blade
   cat: 'gl'
   star: 5
-  picture: Demonic Sword・Balmung (Cursed Balmung Blade)
+  picture: Demonic_Sword_Balmung
   atk: 545
   int: 0
   factors:
@@ -39,7 +39,7 @@
 - name: Claidheamh Soluis
   cat: 'gl'
   star: 5
-  picture: Crow Solace (Claidheamh Soluis)
+  picture: Crow_Solace
   atk: 840
   int: 0
   factors:
@@ -56,7 +56,7 @@
 - name: Lightning Sword
   cat: 'gl'
   star: 5
-  picture: Lightning Sword
+  picture: Lightning_Sword
   atk: 835
   int: 0
   factors:
@@ -71,7 +71,7 @@
 - name: Moonstone Sword
   cat: 'gl'
   star: 5
-  picture: Moonite Sword (Moonstone Sword)
+  picture: Moonite_Sword
   atk: 835
   int: 0
   factors:
@@ -86,7 +86,7 @@
 - name: Aurora Blade
   cat: 'gl'
   star: 5
-  picture: Aurora Blade
+  picture: Aurora_Blade
   atk: 478
   int: 0
   factors:
@@ -105,7 +105,7 @@
 - name: Blade of Ruin
   cat: 'gl'
   star: 5
-  picture: Ruin's Fate (Blade of Ruin)
+  picture: Ruin's_Fate
   atk: 850
   int: 0
   factors:
@@ -122,7 +122,7 @@
 - name: Thunderstroke Broadsword
   cat: 'gl'
   star: 5
-  picture: Raikou Sword・Bolt Edge (Thunderstroke Broadsword)
+  picture: Raikou_Sword_Bolt_Edge
   atk: 862
   int: 858
   factors:
@@ -139,7 +139,7 @@
 - name: Centrifuge Blade
   cat: 'gl'
   star: 5
-  picture: Centrifuge Blade
+  picture: Centrifuge_Blade
   atk: 513
   int: 508
   factors:
@@ -156,7 +156,7 @@
 - name: Blaublitz
   cat: 'gl'
   star: 5
-  picture: Sea Treasure Sword・Blaublitz
+  picture: Sea_Treasure_Sword_Blaublitz
   atk: 513
   int: 508
   factors:
@@ -175,7 +175,7 @@
 - name: Slayer of Divine Beings
   cat: 'gl'
   star: 5
-  picture: Criminal's Sword・Angel Slayer (Slayer of Divine Beings)
+  picture: Criminal's_Sword_Angel_Slayer
   atk: 475
   int: 0
   factors:
@@ -195,7 +195,7 @@
 - name: Slayer of Divine Beings II
   cat: 'gl'
   star: 5
-  picture: Slayer of Divine Beings II
+  picture: Slayer_of_Divine_Beings_II
   atk: 861
   int: 0
   factors:
@@ -214,7 +214,7 @@
 - name: Sacred Tear
   cat: 'gl'
   star: 5
-  picture: Sacred Tear
+  picture: Sacred_Tear
   atk: 479
   int: 0
   factors:
@@ -233,7 +233,7 @@
 - name: Icicle Sword
   cat: 'gl'
   star: 5
-  picture: Icicle Sword
+  picture: Icicle
   atk: 585
   int: 583
   factors:
@@ -251,7 +251,7 @@
 - name: Veinslay
   cat: 'gl'
   star: 5
-  picture: Reknowned Sword・Veinslay
+  picture: Reknowned_Sword_Veinslay
   atk: 961
   int: 956
   factors:
@@ -274,7 +274,7 @@
 - name: Jade Bastard Sword
   cat: 'gl'
   star: 5
-  picture: Jade Bastard Sword
+  picture: Jade_Bastard_Sword
   atk: 492
   int: 486
   factors:
@@ -290,7 +290,7 @@
 - name: Virtuous Contract
   cat: 'gl'
   star: 5
-  picture: Virtuous Contract
+  picture: Virtuous_Contract
   atk: 863
   int: 859
   factors:
@@ -307,7 +307,7 @@
 - name: Cruel Oath
   cat: 'gl'
   star: 5
-  picture: Cruel Oath
+  picture: Cruel_Oath
   atk: 861
   int: 858
   factors:
@@ -324,7 +324,7 @@
 - name: Type-3 Sword
   cat: 'gl'
   star: 5
-  picture: Type-3 Sword
+  picture: Type_3
   atk: 962
   int: 956
   factors:
@@ -342,7 +342,7 @@
 - name: Stormblade
   cat: 'gl'
   star: 5
-  picture: Storm Dealer
+  picture: Storm_Dealer
   atk: 963
   int: 958
   factors:
@@ -360,7 +360,7 @@
 - name: MK-2 SRF Blade
   cat: 'gl'
   star: 5
-  picture: SRF Blade MK-2
+  picture: SRF_Blade_MK_2
   atk: 493
   int: 489
   factors:
@@ -376,7 +376,7 @@
 - name: Timepiece Broadsword
   cat: 'gl'
   star: 5
-  picture: Clockhand's Edge
+  picture: Clockhand's_Edge
   atk: 833
   int: 827
   factors:
@@ -393,7 +393,7 @@
 - name: Earthen Crystal Edge
   cat: 'gl'
   star: 5
-  picture: Soil Crystal Edge
+  picture: Soil_Crystal_Edge
   atk: 963
   int: 958
   factors:
@@ -411,7 +411,7 @@
 - name: Crimson Saber
   cat: 'gl'
   star: 5
-  picture: Crimson Saber
+  picture: Crimson_Saber
   atk: 861
   int: 853
   factors:
