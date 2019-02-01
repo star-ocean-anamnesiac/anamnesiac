@@ -269,7 +269,7 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
 
       metaRet._metaAll = eff.all;
 
-      if(!BASE_STATS[metaRet.buff]) metaRet.priority = 5;
+      if(!BASE_STATS[metaRet.buff]) { metaRet.priority = 5; }
 
       return metaRet;
     };
@@ -341,7 +341,7 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
 
           // second pass: calculate the individual character totals with respect to the global totals
           this.buffs[priorityKey][buffKey].forEach(tBuffData => {
-            if(tBuffData._metaAll) return;
+            if(tBuffData._metaAll) { return; }
 
             // track individual character buffs
             const char = tBuffData.sourceCharacter;
