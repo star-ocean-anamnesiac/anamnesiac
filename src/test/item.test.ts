@@ -6,6 +6,8 @@ import test from 'ava';
 import * as YAML from 'js-yaml';
 import * as _ from 'lodash';
 
+import * as imageSize from 'image-size';
+
 import { Item } from '../app/models/item';
 
 const ROOT_FILE = 'src/assets/data/root.yml';
@@ -41,6 +43,11 @@ test('All items have valid information', async t => {
 
       const subtype = id === 'all' ? 'accessory' : id;
       t.true(fs.existsSync(`src/assets/items/${subtype}/${item.picture}.png`), 'item must reference a valid image' + parenName);
+
+      const itemPicInfo = imageSize(`src/assets/items/${subtype}/${item.picture}.png`);
+      t.is(itemPicInfo.type, 'png', 'item image must be a png' + parenName);
+      t.is(itemPicInfo.width, 128, 'item image width must be 128' + parenName);
+      t.is(itemPicInfo.height, 128, 'item image height must be 128' + parenName);
 
       item.factors.forEach(factor => {
         if(factor.slayer) {

@@ -5,6 +5,8 @@ import test from 'ava';
 import * as YAML from 'js-yaml';
 import * as _ from 'lodash';
 
+import * as imageSize from 'image-size';
+
 import { validateMeta } from './validate-meta';
 
 import { Character } from '../app/models/character';
@@ -43,6 +45,11 @@ test('All characters have valid information', async t => {
 
       t.true(fs.existsSync(`src/assets/characters/${char.picture}.png`), 'character must reference a valid image' + parenName);
 
+      const charPicInfo = imageSize(`src/assets/characters/${char.picture}.png`);
+      t.is(charPicInfo.type, 'png', 'char image must be a png' + parenName);
+      t.is(charPicInfo.width, 128, 'char image width must be 128' + parenName);
+      t.is(charPicInfo.height, 128, 'char image height must be 128' + parenName);
+
       char.talents.forEach(talent => {
         t.truthy(talent.name, 'talents must have a name' + parenName);
 
@@ -63,6 +70,11 @@ test('All characters have valid information', async t => {
 
         t.true(fs.existsSync(`src/assets/skills/${skill.picture}.png`), 'skill ' + skill.name + ' must reference a valid image' + parenName);
 
+        const skillPicInfo = imageSize(`src/assets/skills/${skill.picture}.png`);
+        t.is(skillPicInfo.type, 'png', 'skill ' + skill.name +  ' image must be a png' + parenName);
+        t.is(skillPicInfo.width, 64, 'skill ' + skill.name +  ' image width must be 64' + parenName);
+        t.is(skillPicInfo.height, 64, 'skill ' + skill.name +  ' image height must be 64' + parenName);
+
         validateMeta(t, skill.meta, parenName);
       });
 
@@ -70,6 +82,11 @@ test('All characters have valid information', async t => {
       t.truthy(char.rush.power, 'rush.power must exist' + parenName);
       t.truthy(char.rush.maxHits, 'rush.maxHits must exist' + parenName);
       t.true(fs.existsSync(`src/assets/rush/${char.rush.picture}.png`), 'rush ' + char.rush.name + ' must reference a valid image' + parenName);
+
+      const rushPicInfo = imageSize(`src/assets/rush/${char.rush.picture}.png`);
+      t.is(rushPicInfo.type, 'png', 'rush ' + char.rush.name +  ' image must be a png' + parenName);
+      t.is(rushPicInfo.width, 64, 'rush ' + char.rush.name +  ' image width must be 64' + parenName);
+      t.is(rushPicInfo.height, 64, 'rush ' + char.rush.name +  ' image height must be 64' + parenName);
 
       if(char.rush.effects && char.rush.effects.length > 0) {
         char.rush.effects.forEach(eff => {

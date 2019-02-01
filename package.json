@@ -64,6 +64,7 @@
     "ava": "^0.25.0",
     "ava-ts": "^0.25.2",
     "codelyzer": "~4.5.0",
+    "image-size": "^0.7.1",
     "imagemin": "^6.1.0",
     "imagemin-pngquant": "^7.0.0",
     "rimraf": "^2.6.3",
