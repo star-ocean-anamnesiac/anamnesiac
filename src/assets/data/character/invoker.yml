@@ -66,17 +66,20 @@
 
   skills:
     - name: "Plunging Fire Bolts"
+      picture: Fire_Bolts
       element: Fire
       power: INT x 200%
       ap: 20
       maxHits: 6
       highlight: true
     - name: "Stone Rain"
+      picture: Stone_Rain
       element: Earth
       power: INT x 460%
       ap: 35
       maxHits: 5
     - name: "Enhance"
+      picture: Enhance_Growth
       element: Fire
       ap: 60
       notes: +25% ATK to party. A good buff skill!
@@ -86,6 +89,7 @@
         buffValue: 25
       highlight: true
     - name: "Violent Explosion"
+      picture: Explosion
       element: Fire
       power: INT x 770%
       ap: 45
@@ -94,6 +98,7 @@
       
   rush:
     name: "Meteor Swarm"
+    picture: Meteor_Swarm_Sophia
     effects: 
       - desc: +70% INT
         duration: 20
@@ -169,23 +174,27 @@
 
   skills:
     - name: "Deep Freeze"
+      picture: Deep_Freeze
       element: Ice
       power: INT x 460%
       ap: 35
       maxHits: 9
     - name: "Thunder Flare"
+      picture: Thunder_Flare
       element: Lightning
       power: INT x 460%
       ap: 35
       maxHits: 4
       highlight: true
     - name: "Arctic Impact"
+      picture: Arctic_Blast
       element: Ice
       power: INT x 670%
       ap: 42
       maxHits: 3
       highlight: true
     - name: "Plasma Cyclone"
+      picture: Cyclone
       element: Lightning
       power: INT x 700%
       ap: 50
@@ -193,6 +202,7 @@
       
   rush:
     name: "Ultraviolet Extinction"
+    picture: Ultraviolet_Extinction_Myuria
     element: Lightning
     effects: 
       - desc: +80% INT
@@ -242,22 +252,26 @@
 
   skills:
     - name: "Stone Rain"
+      picture: Stone_Rain
       element: Earth
       power: INT x 460%
       ap: 35
       maxHits: 5
     - name: "Explosion"
+      picture: Explosion
       element: Fire
       power: INT x 460%
       ap: 35
       maxHits: 14
       highlight: true
     - name: "Terra Hammer"
+      picture: Terra_Hammer
       element: Earth
       power: INT x 670%
       ap: 42
       maxHits: 6
     - name: "Volcanic Burst"
+      picture: Volcanic_Burst
       element: Fire
       power: INT x 670%
       ap: 42
@@ -266,6 +280,7 @@
       
   rush:
     name: "Explode"
+    picture: Explode_Ronyx
     element: Fire
     effects: 
       - desc: Reduce casting time by 50%
@@ -295,7 +310,7 @@
     grd: 749
 
   talents:
-    - name: "Enchanted Artirstry"
+    - name: "Enchanted Artistry"
       effects: 
         - desc: DEF +30%
           meta:
@@ -315,23 +330,27 @@
 
   skills:
     - name: "Plunging Fire Bolts"
+      picture: Fire_Bolts
       element: Fire
       power: INT x 200%
       ap: 20
       maxHits: 6
       highlight: true
     - name: "Volcanic Burst"
+      picture: Volcanic_Burst
       element: Fire
       power: INT x 670%
       ap: 42
       maxHits: 13
       highlight: true
     - name: "Wind Blade"
+      picture: Wind_Blade
       element: Wind
       power: INT x 190%
       ap: 20
       maxHits: 2
     - name: "Tornado"
+      picture: Tornado
       element: Wind
       power: INT x 460%
       ap: 35
@@ -340,6 +359,7 @@
       
   rush:
     name: "Trinity Blaze"
+    picture: Trinity_Blaze_Lymle  
     element: Fire
     effects: 
       - desc: INT +100%
@@ -402,23 +422,27 @@
 
   skills:
     - name: "Cursed Devourer"
+      picture: Devourer
       element: Dark
       power: INT x 570%
       ap: 42
       maxHits: 5
       highlight: true
     - name: "Cursed Vampiric Blade"
+      picture: Vampiric_Blade
       element: Dark
       power: INT x 370%
       ap: 32
       maxHits: 5
     - name: "Cursed Shadow Needles"
+      picture: Shadow_Needles
       element: Dark
       power: INT x 240%
       ap: 23
       maxHits: 5
       highlight: true
     - name: "Cursed Reaping Spark"
+      picture: Reaping_Spark
       element: Dark
       power: INT x 520%
       ap: 37
@@ -427,6 +451,7 @@
       
   rush:
     name: "Eldar Necrospike"
+    picture: Eldar_Necrospike_Faize
     element: Dark
     effects: 
       - desc: AP cost -30%
@@ -495,21 +520,25 @@
 
   skills:
     - name: "Silencing Star Light"
+      picture: Star_Light
       element: Light
       power: INT x 440%
       ap: 36
       maxHits: 1
     - name: "Silent Lightning"
+      picture: Lightning
       element: Lightning
       power: INT x 220%
       ap: 23
       maxHits: 10
     - name: "Silencing Sunflare"
+      picture: Sunflare
       element: Light
       power: INT x 570%
       ap: 42
       maxHits: 6
     - name: "Silencing Cyclone"
+      picture: Cyclone
       element: Thunder
       power: INT x 700%
       ap: 50
@@ -517,6 +546,7 @@
       
   rush:
     name: "Silencing Southern Cross"
+    picture: Silent_Southern_Cross_Celine
     element: Light
     effects: 
       - desc: +50% INT
@@ -595,21 +625,25 @@
 
   skills:
     - name: "Shadow Needles"
+      picture: Shadow_Needles
       element: Dark
       power: INT x 240%
       ap: 23
       maxHits: 5
     - name: "Ice Needles"
+      picture: Ice_Needles
       element: Ice
       power: INT x 250%
       ap: 24
       maxHits: 9
     - name: "Absolute-Zero Freeze"
+      picture: Deep_Freeze
       element: Ice
       power: INT x 550%
       ap: 38
       maxHits: 9
     - name: "Shadowy Extinction"
+      picture: Extinction
       element: Dark
       power: INT x 670%
       ap: 42
@@ -617,6 +651,7 @@
       
   rush:
     name: "Final Dystopia"
+    picture: F_Dystopia_Fiore
     element: Dark
     effects: 
       - desc: DEF -40%

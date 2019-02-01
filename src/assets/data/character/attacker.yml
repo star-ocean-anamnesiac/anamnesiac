@@ -49,27 +49,32 @@
         - desc: Imbues attacks with light/dark element
 
   skills:
-    - name: "YoRHa Arms: One"
+    - name: "YoHRa Arms: One"
+      picture: YoHRa_Arms_One
       power: ATK x 380%
       ap: 22
       maxHits: 2
       highlight: true
-    - name: "YoRHa Arms: Two"
+    - name: "YoHRa Arms: Two"
+      picture: YoHRa_Arms_Two
       power: ATK x 800%
       ap: 42
       maxHits: 2
-    - name: "YoRHa Pod: One"
+    - name: "YoHRa Pod: One"
+      picture: YoHRa_Pod_One
       power: ATK x 180%
       ap: 13
       maxHits: 1
-    - name: "YoRHa Pod: Two"
+    - name: "YoHRa Pod: Two"
+      picture: YoHRa_Pod_Two
       power: ATK x 380%
       ap: 20
       maxHits: 1
       highlight: true
 
   rush:
-    name: "YoRHa Arms: Zero"
+    name: "YoHRa Arms: Zero"
+    picture: YoHRa_Arms_Ø_2B
     effects: 
       - desc: All elemental damage +55%
         duration: 20
@@ -128,14 +133,14 @@
       
       **Rotation**
       
-      - As a note YoRHa Pod: One VS YoRHa Arms: two is a personal preference. Whether you want a better ranged combo or using arms two
+      - As a note YoHRa Pod: One VS YoHRa Arms: two is a personal preference. Whether you want a better ranged combo or using arms two
       as a verticle dodge.
       
-      *Normal > YoRHa Arms: One > YoRHa Pod: Two > YoRHa Arms: One > Spam it till out of AP. (General combo.)*
+      *Normal > YoHRa Arms: One > YoHRa Pod: Two > YoHRa Arms: One > Spam it till out of AP. (General combo.)*
       
-      *Normal > YoRHa Pod: Two > YoRHa Arms: One (Miss on purpose) > YoRHa Pod: Two > Spam it till out of AP. (Ranged combo.)*
+      *Normal > YoHRa Pod: Two > YoHRa Arms: One (Miss on purpose) > YoHRa Pod: Two > Spam it till out of AP. (Ranged combo.)*
       
-      *Normal > YoRHa Pod: Two > YoRHa Pod: One > YoRHa Pod: Two > Spam it till out of AP. (Ranged combo if running ranged set up.)*
+      *Normal > YoHRa Pod: Two > YoHRa Pod: One > YoHRa Pod: Two > Spam it till out of AP. (Ranged combo if running ranged set up.)*
     
 - name: Fidel Camuze
   cat: gl
@@ -173,26 +178,31 @@
 
   skills:
     - name: "Double Slash"
+      picture: Double_Slash_I
       power: ATK x 200%
       ap: 20
       maxHits: 2
       highlight: true
     - name: "Air Slash"
+      picture: Air_Slash_I
       power: ATK x 200%
       ap: 20
       maxHits: 2
       highlight: true
     - name: "Cyclone Blade"
+      picture: Cyclone_Blade
       power: ATK x 310%
       ap: 29
       maxHits: 5
     - name: "Air Raid"
+      picture: Air_Raid
       power: ATK x 460%
       ap: 35
       maxHits: 5
 
   rush:
     name: "Ethereal Blast"
+    picture: Ethereal_Blast_Fidel
     effects: 
       - desc: AP cost -60%
         duration: 20
@@ -280,20 +290,24 @@
 
   skills:
     - name: "Triple Kick"
+      picture: Triple_Kick
       power: ATK x 250%
       ap: 24
       maxHits: 2
       highlight: true
     - name: "Crescent Locus"
+      picture: Crescent_Locus
       power: ATK x 150%
       ap: 17
       maxHits: 4
       highlight: true
     - name: "Acrobat Locus"
+      picture: Acrobat_Locus
       power: ATK x 710%
       ap: 41
       maxHits: 4
     - name: "Fists of Fury"
+      picture: Fists_of_Fury
       power: ATK x 780%
       ap: 43
       maxHits: 25
@@ -301,6 +315,7 @@
 
   rush:
     name: "Steel Fists of Fury"
+    picture: Steel_Fists_of_Fury_Cliff
     effects: 
       - desc: N/A
     power: ATK x 4500%
@@ -374,26 +389,31 @@
 
   skills:
     - name: "Triple Kick"
+      picture: Triple_Kick
       power: ATK x 250%
       ap: 24
       maxHits: 2
       highlight: true
     - name: "Hammer of Might"
+      picture: Hammer_of_Might
       power: ATK x 230%
       ap: 24
       maxHits: 1
     - name: "Drill Spike"
+      picture: Drill_Spike
       power: ATK x 190%
       ap: 20
       maxHits: 4
       highlight: true
     - name: "X Claw"
+      picture: X_Claw
       power: ATK x 310%
       ap: 29
       maxHits: 6
 
   rush:
     name: "Blazing Cannon"
+    picture: Blazing_Cannon_Anne
     effects: 
       - desc: Critical Rate +60%
         all: true
@@ -474,20 +494,24 @@
 
   skills:
     - name: "Rising Blade"
+      picture: Rising_Blade
       power: ATK x 410%
       ap: 32
       maxHits: 5
     - name: "Shotgun Blast"
+      picture: Shotgun_Blast
       power: ATK x 190%
       ap: 20
       maxHits: 4
       highlight: true
       element: Lightning
     - name: "Side Kick"
+      picture: Side_Kick
       power: ATK x 250%
       ap: 24
       maxHits: 3
     - name: "Helm Splitter"
+      picture: Helmsplitter
       power: ATK x 500%
       ap: 35
       maxHits: 1
@@ -495,6 +519,7 @@
 
   rush:
     name: "Ethereal Blast"
+    picture: Ethereal_Blast_Daril
     effects: 
       - desc: AP cost -40%
         duration: 20
@@ -590,19 +615,23 @@
 
   skills:
     - name: "Double Slash"
+      picture: Double_Slash_I
       power: ATK x 200%
       ap: 20
       maxHits: 2
     - name: "Air Slash"
+      picture: Air_Slash_I
       power: ATK x 200%
       ap: 20
       maxHits: 2
     - name: "Shotgun Blast"
+      picture: Shotgun_Blast
       power: ATK x 190%
       ap: 20
       maxHits: 4
       element: Lightning
     - name: "Dragon Slash"
+      picture: Dragon_Slash
       power: ATK x 400%
       ap: 35
       maxHits: 2
@@ -610,6 +639,7 @@
 
   rush:
     name: "Omega Thunderclap Blade"
+    picture: Omega_Thunderclap_Blade_Ratix
     effects: 
       - desc: AP cost -40%
         duration: 20
@@ -728,19 +758,23 @@
 
   skills:
     - name: "Combo Breaker"
+      picture: Combo_Breaker
       power: ATK x 300%
       ap: 23
       maxHits: 4
     - name: "Summer Smoothie"
+      picture: Helmsplitter
       power: ATK x 450%
       ap: 32
       maxHits: 1
       highlight: true
     - name: "Smackdown"
+      picture: Double_Slash_I
       power: ATK x 180%
       ap: 17
       maxHits: 5
     - name: "Crescent Mirage"
+      picture: Crescent_Mirage
       power: ATK x 200%
       ap: 20
       maxHits: 4
@@ -748,6 +782,7 @@
 
   rush:
     name: "Celestial Sword"
+    picture: Heaven's_Sword_Summer_Reimi
     effects: 
       - desc: Cure status ailments
         all: true
@@ -844,25 +879,30 @@
 
   skills:
     - name: "Glowing Pierce"
+      picture: Glowing_Pierce
       power: ATK x 170%
       ap: 18
       maxHits: 3
       highlight: true
     - name: "Sky-High Break"
+      picture: Helmsplitter
       power: ATK x 500%
       ap: 35
       maxHits: 3
     - name: "Heaven and Hell"
+      picture: Air_Slash_I
       power: ATK x 220%
       ap: 22
       maxHits: 5
     - name: "Valkyrie's Mercy"
+      picture: Valkyrie's_Mercy
       power: ATK x 700%
       ap: 36
       maxHits: 5
 
   rush:
     name: "Nibelung Valesti"
+    picture: Nibelung_Valesti_Lenneth
     effects: 
       - desc: DEF -30% (All Enemies)
         all: enemies
@@ -970,27 +1010,32 @@
 
   skills:
     - name: "Double Slash"
+      picture: Double_Slash_I
       power: ATK x 200%
       ap: 20
       maxHits: 2
       highlight: true
     - name: "Air Slash"
+      picture: Air_Slash_I
       power: ATK x 200%
       ap: 20
       maxHits: 2
       highlight: true
     - name: "Helm Render"
+      picture: Helmsplitter
       power: ATK x 440%
       ap: 30
       maxHits: 1
       highlight: true
     - name: "Sword Bomber"
+      picture: Sword_Bomber
       power: ATK x 550%
       ap: 38
       maxHits: 2
 
   rush:
     name: "Mirror Blade Tempest"
+    picture: Explode_Prince_Claude
     effects: 
       - desc: Damage Dealt +30%
         all: true
@@ -1085,6 +1130,7 @@
 
   skills:
     - name: "Liquid Bite"
+      picture: Hydroblades
       power: ATK x 170%
       ap: 18
       notes: Can freeze foes
@@ -1092,21 +1138,25 @@
       element: Ice
       highlight: true
     - name: "Unholy Terror"
+      picture: Unholy_Terror
       power: ATK x 310%
       ap: 29
       maxHits: 5
     - name: "Sylvan Shot"
+      picture: Sylvan_Shot
       power: ATK x 200%
       ap: 20
       maxHits: 8
       highlight: true
     - name: "Frore Dancing Sword"
+      picture: Dancing_Sword
       power: ATK x 400%
       ap: 32
       maxHits: 7
 
   rush:
     name: "Unholy Torrent"
+    picture: Unholy_Torrent_Phia
     effects: 
       - desc: Occasionally freezes foes.
     power: ATK x4000%
@@ -1209,26 +1259,31 @@
 
   skills:
     - name: "Unbridled Air Slash"
+      picture: Unbridled_Air_Slash
       power: ATK x 210%
       ap: 21
       maxHits: 2
       highlight: true
     - name: "Aura Wall"
+      picture: Aura_Wall
       power: ATK x 200%
       ap: 20
       maxHits: 20
       highlight: true
     - name: "Unbridled Double Slash"
+      picture: Unbridled_Double_Slash
       power: ATK x 400%
       ap: 30
       maxHits: 4
     - name: "Vampiric Flash"
+      picture: Vampiric_Flash
       power: ATK x 220%
       ap: 32
       maxHits: 6
 
   rush:
     name: "Hydra Roar"
+    picture: Hydra_Roar_Albel
     effects: 
       - desc: ATK +100%
         duration: 15
@@ -1336,27 +1391,32 @@
 
   skills:
     - name: "Palm of Destruction"
+      picture: Palm_of_Destruction
       power: ATK x 240%
       ap: 23
       maxHits: 4
       highlight: true
     - name: "Crescent Locus"
+      picture: Crescent_Locus
       power: ATK x 150%
       ap: 17
       maxHits: 4
       highlight: true
     - name: "Fiery Hammer of Might"
+      picture: Hammer_of_Might
       power: ATK x 270%
       ap: 26
       maxHits: 1
       element: Fire
     - name: "X Claw"
+      picture: X_Claw
       power: ATK x 310%
       ap: 29
       maxHits: 6
 
   rush:
     name: "Divine Hammer"
+    picture: Divine_Hammer_Ilia
     effects: 
       - desc: AP Cost -20%
         all: Attackers
@@ -1468,22 +1528,26 @@
 
   skills:
     - name: "Enchanting Twin Thrust"
+      picture: Talon_Thrust
       power: ATK x 370%
       ap: 28
       maxHits: 2
       element: Fire
       highlight: true
     - name: "Sinistral Edge"
+      picture: Sinistral_Edge
       power: ATK x 150%
       ap: 14
       maxHits: 2
       highlight: true
     - name: "Dextral Slaughter"
+      picture: Dextral_Slaughter
       power: ATK x 220%
       ap: 22
       maxHits: 2
       highlight: true
     - name: "Hazy Wheel"
+      picture: Hazy_Wheel
       power: ATK x 440%
       ap: 32
       maxHits: 8
@@ -1491,6 +1555,7 @@
 
   rush:
     name: "Waking Hell"
+    picture: Waking_Hell_HW_Clair
     effects: 
       - desc: +30% DEF
         all: true
@@ -1597,21 +1662,25 @@
 
   skills:
     - name: "Lantern Burst"
+      picture: Lantern_Burst
       power: ATK x 190%
       ap: 18
       maxHits: 6
       element: Fire
       highlight: true
     - name: "Howling Rocket Punch"
+      picture: Rocket_Punch
       power: ATK x 170%
       ap: 14
       maxHits: 1
       highlight: true
     - name: "Hammer Slammer"
+      picture: Hammer_Slammer
       power: ATK x 340%
       ap: 22
       maxHits: 6
     - name: "Pumpkin Smash"
+      picture: Pumpkin_Smash
       power: ATK x 550%
       ap: 32
       maxHits: 3
@@ -1619,6 +1688,7 @@
 
   rush:
     name: "Trick or Treat"
+    picture: Trick_or_Treat_HW_Millie
     effects: 
       - desc: +50% all elemental damage
         all: true
@@ -1714,21 +1784,25 @@
 
   skills:
     - name: "Rising Blade"
+      picture: Rising_Blade
       power: ATK x 410%
       ap: 32
       maxHits: 5
     - name: "Shotgun Blast"
+      picture: Shotgun_Blast
       power: ATK x 190%
       ap: 20
       maxHits: 4
       element: Lightning
       highlight: true
     - name: "Gliding Side Kick"
+      picture: Side_Kick
       power: ATK x 180%
       ap: 19
       maxHits: 3
       highlight: true
     - name: "Avian Air Raid"
+      picture: Avian_Air_Raid
       power: ATK x 400%
       ap: 30
       maxHits: 5
@@ -1736,6 +1810,7 @@
 
   rush:
     name: "Colossal Ethereal Blast"
+    picture: Colossal_Ethereal_Blast_Fayt
     effects: 
       - desc: +50% all elemental damage
         all: true
@@ -1846,24 +1921,28 @@
 
   skills:
     - name: "Pyroclast Punch"
+      picture: Pyroclast_Punch
       power: ATK x 190%
       ap: 18
       maxHits: 5
       element: Fire
       highlight: true
     - name: "Bosom Blow"
+      picture: Bosom_Blow
       power: ATK x 330%
       ap: 30
       maxHits: 1
       element: Fire
       highlight: true
     - name: "Firefest"
+      picture: Fire_Fest
       power: ATK x 660%
       ap: 42
       maxHits: 6
       element: Fire
       highlight: true
     - name: "Lava Flow"
+      picture: Lava_Flow
       power: ATK x 740%
       ap: 52
       maxHits: 10
@@ -1871,6 +1950,7 @@
 
   rush:
     name: "Spicule"
+    picture: Spicule_Michael
     effects: 
       - desc: -50% AP Cost
         duration: 20
@@ -1983,20 +2063,24 @@
 
   skills:
     - name: "Flying Skyline Spray"
+      picture: Skyline_Spray
       power: ATK x 170%
       ap: 14
       maxHits: 3
     - name: "Flying Divebomb"
+      picture: Stardust_Aim
       power: ATK x 150%
       ap: 130
       maxHits: 3
       highlight: true
     - name: "Bullet Barrage"
+      picture: Bullet_Barrage
       power: ATK x 400%
       ap: 27
       maxHits: 6
       highlight: true
     - name: "Bombing Run"
+      picture: Linear_Bomber
       power: ATK x 230%
       ap: 21
       maxHits: 6
@@ -2004,6 +2088,7 @@
 
   rush:
     name: "Holiday Surprise"
+    picture: Holiday_Surprise_Xmas_Fidel
     effects: 
       - desc: -30% AP Cost
         duration: 20
@@ -2086,7 +2171,7 @@
             priority: 1
             buff: DEF Reduction
             buffValue: 50
-    - name: "Braveman’s Heart II"
+    - name: "Braveman's Heart II"
       effects: 
         - desc: ATK +30%
           meta:
@@ -2098,27 +2183,32 @@
         - desc: Movement rate boost
 
   skills:
-    - name: "Crescent Lotus"
+    - name: "Crescent Locus"
+      picture: Crescent_Locus
       power: ATK x 150%
       ap: 17
       maxHits: 4
       highlight: true
     - name: "Hammer of Might"
+      picture: Hammer_of_Might
       power: ATK x 230%
       ap: 24
       maxHits: 1
     - name: "Drill Spike"
+      picture: Drill_Spike
       power: ATK x 190%
       ap: 20
       maxHits: 4
       highlight: true
     - name: "X Claw"
+      picture: X_Claw
       power: ATK x 310%
       ap: 29
       maxHits: 6
 
   rush:
     name: "Fists of Unquenchable Fury"
+    picture: Fists_of_Unquenchable_Fury_Weeping_Welch
     effects: 
       - desc: ATK +50%
         all: true
@@ -2181,7 +2271,7 @@
     grd: 826
 
   talents:
-    - name: "Hunter’s Intuition II"
+    - name: "Hunter's Intuition II"
       effects: 
         - desc: Critical Rate +30%
           meta:
@@ -2215,7 +2305,7 @@
             priority: 4
             buff: ATK
             buffValue: 20
-    - name: "Cat’s Interlude"
+    - name: "Cat's Interlude"
       effects:
         - desc: AP Cost -20%
           meta:
@@ -2243,26 +2333,31 @@
 
   skills:
     - name: "Gouging Spike"
+      picture: Drill_Spike
       power: ATK x 160%
       ap: 16
       maxHits: 4
       highlight: true
     - name: "Crescent Locus"
+      picture: Crescent_Locus
       power: ATK x 150%
       ap: 17
       maxHits: 4
       highlight: true
     - name: "Eviscerating Claw"
+      picture: Eviscerating_Claw
       power: ATK x 250%
       ap: 25
       maxHits: 6
     - name: "Claws of Fury"
+      picture: Claws_of_Fury
       power: ATK x 700%
       ap: 40
       maxHits: 27
 
   rush:
     name: "Max Shockwave"
+    picture: Max_Shockwave_Meracle
     effects: 
       - desc: AP Cost -40%
         duration: 20
@@ -2358,21 +2453,25 @@
 
   skills:
     - name: "Exorcising Storm"
+      picture: Exorcising_Storm
       power: ATK x 170%
       ap: 17
       maxHits: 5
       element: Ice
       highlight: true
     - name: "Tranquility"
+      picture: Air_Slash_II
       power: ATK x 250%
       ap: 20
       maxHits: 2
       highlight: true
     - name: "Mirror of Haze"
+      picture: Double_Slash_II
       power: ATK x 250%
       ap: 20
       maxHits: 2
     - name: "Blade Flash - Awakened"
+      picture: Blade_Flash
       power: ATK x 450%
       ap: 35
       maxHits: 5
@@ -2381,6 +2480,7 @@
 
   rush:
     name: "Azure Sky"
+    picture: Azure_Sky_Lasswell
     effects: 
       - desc: Damage +30%
         all: true
@@ -2463,14 +2563,17 @@
         
   skills:
     - name: "Double Slash"
+      picture: Double_Slash_I
       power: ATK x 200%
       ap: 20
       maxHits: 2
     - name: "Rising Blade"
+      picture: Rising_Blade
       power: ATK x 410%
       ap: 32
       maxHits: 5
     - name: "Shotgun Blast"
+      picture: Shotgun_Blast
       power: ATK x 190%
       ap: 20
       maxHits: 4
@@ -2478,6 +2581,7 @@
 
   rush:
     name: "Revised Stampede Slash"
+    picture: Revised_Stampede_Slash_Andre
     effects:
       - desc: Critical Rate +40%
         duration: 20

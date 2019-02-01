@@ -124,18 +124,29 @@ export class CharacterSortPopover {
                                  [scaleX]="0.25"
                                  [scaleY]="0.25"
                                  [inline]="true"></app-appicon>
-                      {{ skill.name }} ({{ skill.ap }} AP)
+                      {{ skill.name }}
                     </ion-card-title>
                     </ion-card-header>
                     <ion-card-content>
-                      <div *ngIf="skill.element" class="vertical-center">
-                        <strong>Element:</strong>
-                        <app-element [element]="skill.element"></app-element>
-                      </div>
-                      <div *ngIf="skill.power">
-                        <strong>Power:</strong> {{ skill.power }} <span *ngIf="skill.maxHits">({{ skill.maxHits }} hits)</span>
-                      </div>
-                      <div *ngIf="skill.notes">{{ skill.notes }}</div>
+                      <ion-row>
+                        <ion-col size="3" no-padding class="true-center">
+                          <div class="s64x64">
+                            <app-appicon [name]="skill.picture" type="skill"></app-appicon>
+                            <app-appicon [name]="'el-' + skill.element" *ngIf="skill.element" [forceWidth]="24" [forceHeight]="24" class="element-icon"></app-appicon>
+                          </div>
+                        </ion-col>
+
+                        <ion-col>
+                          <div>
+                            <strong>AP Cost:</strong>
+                            {{ skill.ap }}
+                          </div>
+                          <div *ngIf="skill.power">
+                            <strong>Power:</strong> {{ skill.power }} <span *ngIf="skill.maxHits">({{ skill.maxHits }} hits)</span>
+                          </div>
+                          <div *ngIf="skill.notes">{{ skill.notes }}</div>
+                        </ion-col>
+                      </ion-row>
                     </ion-card-content>
                   </ion-card>
                 </ion-col>
@@ -148,21 +159,29 @@ export class CharacterSortPopover {
                       <ion-card-title>Rush: {{ char.rush.name }}</ion-card-title>
                     </ion-card-header>
                     <ion-card-content>
-                      <div *ngIf="char.rush.element" class="vertical-center">
-                        <strong>Element:</strong>
-                        <app-element [element]="char.rush.element"></app-element>
-                      </div>
-                      {{ char.rush.power }} <span *ngIf="char.rush.maxHits">({{ char.rush.maxHits }} Hits)</span>
-                      <ol>
-                        <li *ngFor="let effect of char.rush.effects">
-                        {{ effect.desc }}
-                        <span *ngIf="effect.all">
-                          (All {{ effect.all === true ? 'Allies' : effect.all }}
-                          <span *ngIf="effect.duration"> {{ effect.duration }}s</span>)
-                        </span>
-                        <span *ngIf="effect.duration"></span>
-                        </li>
-                      </ol>
+
+                      <ion-row>
+                        <ion-col size="3" no-padding class="true-center">
+                          <div class="s64x64">
+                            <app-appicon [name]="char.rush.picture" type="rush"></app-appicon>
+                            <app-appicon [name]="'el-' + char.rush.element" *ngIf="char.rush.element" [forceWidth]="24" [forceHeight]="24" class="element-icon"></app-appicon>
+                          </div>
+                        </ion-col>
+
+                        <ion-col>
+                          {{ char.rush.power }} <span *ngIf="char.rush.maxHits">({{ char.rush.maxHits }} Hits)</span>
+                          <ol>
+                            <li *ngFor="let effect of char.rush.effects">
+                            {{ effect.desc }}
+                            <span *ngIf="effect.all">
+                              (All {{ effect.all === true ? 'Allies' : effect.all }}
+                              <span *ngIf="effect.duration"> {{ effect.duration }}s</span>)
+                            </span>
+                            <span *ngIf="effect.duration"></span>
+                            </li>
+                          </ol>
+                        </ion-col>
+                      </ion-row>
                     </ion-card-content>
                   </ion-card>
                 </ion-col>
@@ -249,6 +268,12 @@ export class CharacterSortPopover {
         1px -1px 0 #000,
         -1px 1px 0 #000,
          1px 1px 0 #000;
+    }
+
+    .element-icon {
+      position: absolute;
+      right: 12px;
+      bottom: 0;
     }
   `]
 })

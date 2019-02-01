@@ -4,17 +4,23 @@ import { get } from 'lodash';
 import * as appicons from '../../assets/icons/+app-icons.json';
 import * as itemicons from '../../assets/items/+item-icons.json';
 import * as charicons from '../../assets/characters/+char-icons.json';
+import * as skillicons from '../../assets/skills/+skill-icons.json';
+import * as rushicons from '../../assets/rush/+rush-icons.json';
 
 const sheetTypes: any = {
-  icon: (<any>appicons).default || appicons,
-  item: (<any>itemicons).default || itemicons,
-  char: (<any>charicons).default || charicons
+  icon:  (<any>appicons).default || appicons,
+  item:  (<any>itemicons).default || itemicons,
+  char:  (<any>charicons).default || charicons,
+  skill: (<any>skillicons).default || skillicons,
+  rush:  (<any>rushicons).default || rushicons
 };
 
 const sheetPaths = {
-  icon: 'assets/spritesheets/+app-icons.png',
-  item: 'assets/spritesheets/+item-icons.png',
-  char: 'assets/spritesheets/+char-icons.png'
+  icon:  'assets/spritesheets/+app-icons.png',
+  item:  'assets/spritesheets/+item-icons.png',
+  char:  'assets/spritesheets/+char-icons.png',
+  skill: 'assets/spritesheets/+skill-icons.png',
+  rush:  'assets/spritesheets/+rush-icons.png'
 };
 
 @Component({
@@ -49,7 +55,7 @@ export class AppIconComponent implements OnInit {
   public forceHeight: number;
 
   @Input()
-  public type: 'icon'|'item'|'char' = 'icon';
+  public type: 'icon'|'item'|'char'|'skill'|'rush' = 'icon';
 
   @Input()
   @HostBinding('class.inline-display')

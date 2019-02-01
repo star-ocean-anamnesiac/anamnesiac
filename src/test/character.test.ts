@@ -61,12 +61,15 @@ test('All characters have valid information', async t => {
         if(skill.maxHits) t.truthy(skill.power, 'skill.power must exist if it skill.maxHits exists' + parenName);
         t.truthy(skill.ap, 'skill.ap must exist' + parenName);
 
+        t.true(fs.existsSync(`src/assets/skills/${skill.picture}.png`), 'skill ' + skill.name + ' must reference a valid image' + parenName);
+
         validateMeta(t, skill.meta, parenName);
       });
 
       t.truthy(char.rush.name, 'rush.name must exist' + parenName);
       t.truthy(char.rush.power, 'rush.power must exist' + parenName);
       t.truthy(char.rush.maxHits, 'rush.maxHits must exist' + parenName);
+      t.true(fs.existsSync(`src/assets/rush/${char.rush.picture}.png`), 'rush ' + char.rush.name + ' must reference a valid image' + parenName);
 
       if(char.rush.effects && char.rush.effects.length > 0) {
         char.rush.effects.forEach(eff => {

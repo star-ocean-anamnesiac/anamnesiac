@@ -23,6 +23,9 @@ export interface Skill {
   // the name of the skill
   name: string;
 
+  // the picture for the skill
+  picture: string;
+
   // the power of the skill (f.ex, INT x 5000%)
   power?: string;
 

@@ -92,6 +92,17 @@ ion-item, ion-item-divider {
   align-items: center;
 }
 
+.true-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .margin-right {
   margin-right: 16px;
+}
+
+.s64x64 {
+  width: 64px !important;
+  height: 64px !important;
 }

@@ -69,23 +69,27 @@
 
   skills:
     - name: "Thunder Wave"
+      picture: Thunder_Flare
       element: Lightning
       power: INT x 580%
       ap: 35
       notes: Allies recover 8 AP
       maxHits: 4
     - name: "Faerie Light Wave"
+      picture: Faerie_Light
       power: INT x 120%
       ap: 30
       notes: Party Heal
       maxHits: 1
     - name: "Lightning Wave"
+      picture: Lightning
       element: Lightning
       power: INT x 200%
       ap: 20
       notes: Allies recover 4 AP
       maxHits: 10
     - name: "Lightning Strike"
+      picture: Lightning_Strike
       element: Lightning
       power: INT x 770%
       ap: 47
@@ -94,6 +98,7 @@
       
   rush:
     name: "Lightning-Fast Serve"
+    picture: Lightning_Fast_Service_Summer_Sophia
     element: Thunder
     effects: 
       - desc: +40% INT
@@ -191,21 +196,25 @@
 
   skills:
     - name: "Radiant Lancer"
+      picture: Radiant_Lancer
       element: Light
       power: INT x 300%
       ap: 27
       maxHits: 8
     - name: "Ex Healing"
+      picture: Ex_Healing
       power: INT x 326%
       ap: 50
       notes: Single Target Heal
       maxHits: 1
     - name: "Sunflare"
+      picture: Sunflare
       element: Light
       power: INT x 570%
       ap: 42
       maxHits: 6
     - name: "Faerie Star"
+      picture: Faerie_Star
       power: INT x 326%
       ap: 70
       notes: Party Heal
@@ -213,6 +222,7 @@
       
   rush:
     name: "Divine Wave"
+    picture: Divine_Wave_Miki
     element: Light
     effects: 
       - desc: Heals 30% of Max HP every 4 seconds
@@ -309,21 +319,25 @@
 
   skills:
     - name: "Crush"
+      picture: Crush
       element: Earth
       power: INT x 190%
       ap: 20
       maxHits: 2
     - name: "Healing"
+      picture: Healing
       power: INT x 170%
       ap: 40
       notes: Single Target Heal
       maxHits: 1
     - name: "Stone Rain"
+      picture: Stone_Rain
       element: Earth
       power: INT x 460%
       ap: 35
       maxHits: 5
     - name: "Faerie Star"
+      picture: Faerie_Star
       power: INT x 326%
       ap: 70
       notes: Party Heal
@@ -331,6 +345,7 @@
       
   rush:
     name: "Tractor Beam"
+    picture: Tractor_Beam_Millie
     element: Earth
     effects: 
       - desc: Critical Hit Rate +50%
@@ -424,16 +439,19 @@
 
   skills:
     - name: "Radiant Lancer"
+      picture: Radiant_Lancer
       element: Light
       power: INT x 300%
       ap: 27
       maxHits: 8
     - name: "Laser Beams"
+      picture: Laser_Beams
       element: Light
       power: INT x 570%
       ap: 55
       maxHits: 12
     - name: "Angel Feather"
+      picture: Angel_Feathers
       power: All Stats +20%
       ap: 95
       notes: Party Wide
@@ -443,6 +461,7 @@
         buff: All Stats
         buffValue: 20
     - name: "Faerie Light"
+      picture: Faerie_Light
       power: INT x 250%
       ap: 60
       notes: Party Heal
@@ -450,6 +469,7 @@
       
   rush:
     name: "Star Flare"
+    picture: Star_Flare_Rena
     element: Light
     effects: 
       - desc: Critical Hit Rate +60%
@@ -550,21 +570,25 @@
 
   skills:
     - name: "Ice Needles"
+      picture: Ice_Needles
       element: Ice
       power: INT x 250%
       ap: 24
       maxHits: 9
     - name: "Healing"
+      picture: Healing
       power: INT x 170%
       ap: 40
       notes: Single Target Heal
       maxHits: 1
     - name: "Deep Freeze"
+      picture: Deep_Freeze
       element: Ice
       power: INT x 460%
       ap: 35
       maxHits: 9
     - name: "Faerie Light"
+      picture: Faerie_Light
       power: INT x 250%
       ap: 60
       notes: Party Heal
@@ -572,6 +596,7 @@
       
   rush:
     name: "Arctic Impact 2R"
+    picture: Revised_Arctic_Impact_Priestess_Nel
     element: Ice
     effects: 
       - desc: 50% HP recovery
@@ -686,21 +711,25 @@
 
   skills:
     - name: "Radiant Lancer"
+      picture: Radiant_Lancer
       element: Light
       power: INT x 300%
       ap: 27
       maxHits: 8
     - name: "Conjure Comet"
+      picture: Conjure_Comet
       element: Light
       power: INT x 360%
       ap: 30
       maxHits: 5
     - name: "Sunflare"
+      picture: Sunflare
       element: Light
       power: INT x 570%
       ap: 42
       maxHits: 6
     - name: "Faerie Light"
+      picture: Faerie_Light
       power: INT x 250%
       ap: 60
       notes: Party Heal
@@ -708,6 +737,7 @@
       
   rush:
     name: "Celestial Calling"
+    picture: Celestial_Calling_Eve
     element: Light
     effects: 
       - desc: Revives All Party Members at 1 HP
@@ -814,21 +844,25 @@
 
   skills:
     - name: "Wind Blade"
+      picture: Wind_Blade
       element: Wind
       power: INT x 190%
       ap: 20
       maxHits: 2
     - name: "Angel Feather"
+      picture: Angel_Feathers
       power: All Stats +20%
       ap: 95
       notes: Party Wide
       maxHits: 1
     - name: "Tornado"
+      picture: Tornado
       element: Wind
       power: INT x 460%
       ap: 35
       maxHits: 2
     - name: "Faerie Light"
+      picture: Faerie_Light
       power: INT x 250%
       ap: 60
       notes: Party Heal
@@ -836,6 +870,7 @@
       
   rush:
     name: "Healing Blast Hurricane"
+    picture: Healing_Blast_Hurricane_Sarah
     element: Wind
     effects: 
       - desc: 70% HP recovery
@@ -971,23 +1006,27 @@
 
   skills:
     - name: "Sacred Lancer"
+      picture: Radiant_Lancer
       element: Light
       power: INT x 260%
       ap: 19
       notes: Allies recover 6 AP
       maxHits: 4
     - name: "Sacred Faerie Light"
+      picture: Faerie_Light
       power: INT x 250%
       ap: 60
       notes: Party Heal
       maxHits: 1
     - name: "Sacred Rings"
+      picture: Aurora_Rings
       element: Light
       power: INT x 280%
       ap: 22
       notes: Allies recover 7 AP
       maxHits: 5
     - name: "Prismatic Rays"
+      picture: Prismatic_Rays
       element: Light
       power: INT x 880%
       ap: 33
@@ -996,6 +1035,7 @@
       
   rush:
     name: "Magical Present"
+    picture: Magical_Present_Xmas_Precis
     element: Light
     effects: 
       - desc: Recover 15% of Max HP every 3 seconds
@@ -1093,7 +1133,7 @@
             buff: AP Recovery
             buffCondition: HP at 100%
             buffValue: 50
-    - name: "A Sister’s Prayer II"
+    - name: "A Sister's Prayer II"
       effects: 
         - desc: Recover 5% HP every 3 seconds
           all: true
@@ -1111,11 +1151,13 @@
 
   skills:
     - name: "Shiny Lancer"
+      picture: Radiant_Lancer
       element: Light
       power: INT x 300%
       ap: 27
       maxHits: 8
     - name: "Brute Enlightenment"
+      picture: Enlightment
       power: INT +25% & ATK Damage Taken -15%.
       meta:
         priority: 2
@@ -1125,11 +1167,13 @@
       notes: Party wide and has a 20 second duration.
       maxHits: 5
     - name: "Aurora Rings"
+      picture: Aurora_Rings
       element: Light
       power: INT x 460%
       ap: 35
       maxHits: 5
     - name: "Enraging Faerie Light"
+      picture: Faerie_Light
       power: INT x 230%
       ap: 60
       notes: ATK +20% for 20 seconds. Party wide heal & buff.
@@ -1137,6 +1181,7 @@
       
   rush:
     name: "Freeze Time"
+    picture: Freezing_Clock_Relia
     element: Ice
     effects: 
       - desc: Single Target Damage +30%
@@ -1254,22 +1299,26 @@
 
   skills:
     - name: "Aim"
+      picture: Aim
       power: INT x 270%
       ap: 25
       notes: Allies recover 4 AP
       maxHits: 1
     - name: "Curaga"
+      picture: Curaga
       power: INT x 290%
       ap: 60
       notes: Party Heal
       maxHits: 1
     - name: "Bright Shower"
+      picture: Bright_Shower
       element: Light
       power: INT x 310%
       ap: 40
       notes: Allies recover 9 AP
       maxHits: 12
     - name: "Cheer"
+      picture: Cheer
       power: ATK/INT/DEF +25% 
       ap: 85
       notes: Party Wide
@@ -1280,7 +1329,8 @@
         buffValue: 25
       
   rush:
-    name: "Heaven’s Judgment"
+    name: "Heaven's Judgment"
+    picture: Heaven's_Judge_Fina
     element: Light
     effects: 
       - desc: Recover 70% HP
