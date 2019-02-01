@@ -44,6 +44,20 @@ There are some really nifty features that work with the pipeline here. One of th
 
 **When you have finished looking at your changes, please put a comment in the Pull Request to say you've reviewed it!**
 
+### Adding Images
+
+Sometimes, you have to add an image the app doesn't have to make it all work right. This shouldn't be a frequent occurrence, but in the event that it is, please ask for the image. They need to be a specific width/height to work in the app. Here are the current sizes:
+
+* Items: 128x128
+* Characters: 128x128
+* Bosses: 64x64
+* Skills: 64x64
+* Rushes: 64x64
+
+#### Where Are The Images?
+
+At this time, images can be found [in our shared Dropbox folder](https://www.dropbox.com/sh/rf0ylyh96el7gw1/AAB26paL63wjzYRLE3-1pVvEa?dl=0), but _they are not the right size_. You can convert them using a site like CloudConvert to the right dimensions, if desired. Or just ask.
+
 #### Troubleshooting Your Submission
 
 Things happen and things break. That's okay! We have these processes in place so we catch the problem before it becomes a bigger one. When you submit your pull request, another check called `travis ci` will be running to make sure all of the data is set up correctly.
