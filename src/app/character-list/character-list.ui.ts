@@ -132,7 +132,7 @@ export class CharacterSortPopover {
                         <ion-col size="3" no-padding class="true-center">
                           <div class="s64x64">
                             <app-appicon [name]="skill.picture" type="skill"></app-appicon>
-                            <app-appicon [name]="'el-' + skill.element" 
+                            <app-appicon [name]="'el-' + skill.element.toLowerCase()" 
                                          *ngIf="skill.element" 
                                          [forceWidth]="24" 
                                          [forceHeight]="24" 
@@ -168,7 +168,7 @@ export class CharacterSortPopover {
                         <ion-col size="3" no-padding class="true-center">
                           <div class="s64x64">
                             <app-appicon [name]="char.rush.picture" type="rush"></app-appicon>
-                            <app-appicon [name]="'el-' + char.rush.element" 
+                            <app-appicon [name]="'el-' + char.rush.element.toLowerCase()" 
                                          *ngIf="char.rush.element" 
                                          [forceWidth]="24"
                                          [forceHeight]="24" 
