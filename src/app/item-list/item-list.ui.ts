@@ -53,7 +53,7 @@ export class ItemSortPopover {
 
       <ion-col class="shrink-top-margin">
         <p class="vertical-center">
-          <app-appicon [name]="'weapon-' + item.star" [scaleX]="0.5" [scaleY]="0.5" [inline]="true"></app-appicon>
+          <app-appicon [name]="'char-' + item.star" [scaleX]="0.5" [scaleY]="0.5" [inline]="true"></app-appicon>
           <span>{{ type }}</span>
         </p>
         <p class="vertical-center">
