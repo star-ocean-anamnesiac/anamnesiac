@@ -9,8 +9,8 @@ import { BossGuide } from '../models/bossguide';
   template: `
   <ion-header>
     <ion-toolbar color="primary">
-      <span slot="start" class="titlebar-class-chunk">
-        <app-appicon [name]="'boss-' + guide.image" [forceWidth]="32" [forceHeight]="32" [inline]="true"></app-appicon>
+      <span slot="start">
+        <app-appicon [name]="'boss-' + guide.image" [forceWidth]="48" [forceHeight]="48" [inline]="true"></app-appicon>
       </span>
       <ion-title>
         {{ guide.name }}
