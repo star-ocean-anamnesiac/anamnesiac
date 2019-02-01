@@ -21,6 +21,8 @@ import { CharacterListModal } from './character-list.modal';
 import { Character } from '../models/character';
 import { DataService } from '../data.service';
 
+const BASE_STATS = { HP: true, ATK: true, INT: true, DEF: true, GRD: true, HIT: true };
+
 @Component({
   selector: 'app-party-creator',
   templateUrl: './party-creator.page.html',
@@ -62,10 +64,11 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
   public showShare: boolean;
 
   public buffPriorityDescs = {
-    1: 'Talent/Rush Buffs',
-    2: 'Skill-applied Buffs',
-    3: 'Self-conditional Buffs',
-    4: 'Self-only Buffs'
+    1: 'Talent/Rush Stat Buffs',
+    2: 'Skill-applied Stat Buffs',
+    3: 'Self-conditional Stat Buffs',
+    4: 'Self-only Stat Buffs',
+    5: 'Other Buffs'
   };
 
   public priorityVisibility = [false, false, false, false];
@@ -259,10 +262,14 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
   private updateBuffs() {
     const buffs = [];
 
-    const assignMeta = (meta, char, name) => {
+    const assignMeta = (meta, eff, char, name) => {
       const metaRet = clone(meta);
       metaRet.source = name;
       metaRet.sourceCharacter = char.name;
+
+      metaRet._metaAll = eff.all;
+
+      if(!BASE_STATS[metaRet.buff]) metaRet.priority = 5;
 
       return metaRet;
     };
@@ -273,14 +280,14 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
       charRef.rush.effects.forEach(rushEff => {
         if(!rushEff.meta) { return; }
 
-        const meta = assignMeta(rushEff.meta, charRef, `${charRef.rush.name} [Rush]`);
+        const meta = assignMeta(rushEff.meta, rushEff, charRef, `${charRef.rush.name} [Rush]`);
         buffs.push(meta);
       });
 
       charRef.skills.forEach(skill => {
         if(!skill.meta) { return; }
 
-        const skillRef = assignMeta(skill.meta, charRef, `${skill.name} [Skill]`);
+        const skillRef = assignMeta(skill.meta, skill, charRef, `${skill.name} [Skill]`);
         buffs.push(skillRef);
       });
 
@@ -288,7 +295,7 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
         talent.effects.forEach(talEffect => {
           if(!talEffect.meta) { return; }
 
-          const talEffRef = assignMeta(talEffect.meta, charRef, `${talent.name} [Talent]`);
+          const talEffRef = assignMeta(talEffect.meta, talEffect, charRef, `${talent.name} [Talent]`);
           buffs.push(talEffRef);
         });
       });
@@ -304,6 +311,7 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
     });
 
     this.buffs = prioritySortedBuffs;
+    console.log(this.buffs);
 
     this.calculateOptimalBuffs();
   }
@@ -315,6 +323,39 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
     // handle the optimal buffs
     Object.keys(this.buffs).forEach(priorityKey => {
       Object.keys(this.buffs[priorityKey]).forEach(buffKey => {
+
+        // handle other buffs
+        if(priorityKey === '5') {
+
+          // first pass: calculate the global total
+          this.buffs[priorityKey][buffKey].forEach(tBuffData => {
+
+            // init the global one so it shows up
+            allBuffs[tBuffData.buff] = allBuffs[tBuffData.buff] || 0;
+
+            // if it's a priority-5 meta-all, we add it to the global (but take the max value)
+            if(tBuffData._metaAll) {
+              allBuffs[tBuffData.buff] = Math.max(allBuffs[tBuffData.buff], tBuffData.buffValue);
+            }
+          });
+
+          // second pass: calculate the individual character totals with respect to the global totals
+          this.buffs[priorityKey][buffKey].forEach(tBuffData => {
+            if(tBuffData._metaAll) return;
+
+            // track individual character buffs
+            const char = tBuffData.sourceCharacter;
+
+            specCharacterBuffs[char] = specCharacterBuffs[char] || {};
+            specCharacterBuffs[char][tBuffData.buff] = specCharacterBuffs[char][tBuffData.buff] || 0;
+
+            if(tBuffData.buffValue > allBuffs[tBuffData.buff]) {
+              specCharacterBuffs[char][tBuffData.buff] = tBuffData.buffValue - allBuffs[tBuffData.buff];
+            }
+          });
+
+          return;
+        }
 
         // rip out self buffs
         if(priorityKey === '4' || priorityKey === '3') {
@@ -330,9 +371,11 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
             specCharacterBuffs[char][tBuffData.buff] = specCharacterBuffs[char][tBuffData.buff] || 0;
             specCharacterBuffs[char][tBuffData.buff] += tBuffData.buffValue;
           });
+
           return;
         }
 
+        // if its not priority 3/4, we take the first one and work with that
         const buffData = this.buffs[priorityKey][buffKey][0];
 
         if(buffData.buffRole && !this.roleToggle) { return; }

@@ -1520,7 +1520,7 @@
           meta:
             priority: 3
             buff: ATK
-            buffValue: 15
+            buffValue: 30
     - name: "Prayer"
       effects: 
         - desc: Will not flinch to attacks under 15% of max HP
