@@ -224,6 +224,9 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
     } else {
       this.charRefs[index] = undefined;
       this.characters[index] = undefined;
+
+      this.setAccessory(null, index);
+      this.setWeapon(null, index);
     }
 
     this.updatePictures();
@@ -427,6 +430,8 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
     });
 
     this.accessoryRefs.forEach((accRef, i) => {
+      if(!accRef) { return; }
+
       accRef.factors.forEach(fact => {
         if(!fact.meta) { return; }
 
@@ -436,6 +441,8 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
     });
 
     this.weaponRefs.forEach((weapRef, i) => {
+      if(!weapRef) { return; }
+
       weapRef.factors.forEach(fact => {
         if(!fact.meta) { return; }
 
