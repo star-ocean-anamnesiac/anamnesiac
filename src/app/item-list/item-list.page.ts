@@ -117,7 +117,7 @@ export class ItemListPage implements OnInit, OnDestroy {
         this.allElements = res.allElements;
         this.allItemTypes = res.allItemTypes;
         this.allSlayers = res.allSlayers;
-        
+
         this.elementSortedItems = res.elementSortedItems;
         this.typeSortedItems = res.typeSortedItems;
         this.slayerSortedItems = res.slayerSortedItems;
