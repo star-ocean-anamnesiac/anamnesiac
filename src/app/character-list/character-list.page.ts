@@ -5,7 +5,7 @@ import { filter } from 'rxjs/operators';
 import { LocalStorage, LocalStorageService } from 'ngx-webstorage';
 
 import { ModalController, PopoverController } from '@ionic/angular';
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, NgZone } from '@angular/core';
 import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 
 import { DataService } from '../data.service';
@@ -53,7 +53,8 @@ export class CharacterListPage implements OnInit, OnDestroy {
     private router: Router,
     private activatedRoute: ActivatedRoute,
     private popoverCtrl: PopoverController,
-    private modalCtrl: ModalController
+    private modalCtrl: ModalController,
+    private ngZone: NgZone
   ) {}
 
   ngOnInit() {
@@ -70,13 +71,13 @@ export class CharacterListPage implements OnInit, OnDestroy {
       .subscribe((x: NavigationEnd) => {
         if(!_.includes(x.url, 'characters')) { return; }
         this.updateRegionBasedOn(this.localStorage.retrieve('isJP'));
-        this.updateCharacterList();
+        this.updateCharacterListOutsideZone();
       });
 
     this.character$ = this.dataService.characters$.subscribe(chars => {
       this.allCharacters = chars;
       this.updateRegionBasedOn(this.localStorage.retrieve('isJP'));
-      this.updateCharacterList();
+      this.updateCharacterListOutsideZone();
     });
   }
 
@@ -84,6 +85,31 @@ export class CharacterListPage implements OnInit, OnDestroy {
     this.storage$.unsubscribe();
     this.router$.unsubscribe();
     this.character$.unsubscribe();
+  }
+
+  private updateCharacterListOutsideZone() {
+    this.ngZone.runOutsideAngular(() => {
+      const res = this.getCharacterUpdateList();
+
+      this.ngZone.run(() => {
+
+        if(!_.isUndefined(res.isError)) {
+          this.isError = res.isError;
+          if(this.isError) { return; }
+        }
+
+        this.allTiers = res.allTiers;
+        this.allWeapons = res.allWeapons;
+
+        this.alphaSortedCharacters = res.alphaSortedCharacters;
+        this.tierSortedCharacters = res.tierSortedCharacters;
+        this.weaponSortedCharacters = res.weaponSortedCharacters;
+
+        if(this.getPreviouslyLoadedChar()) {
+          this.loadCharacterModal(this.getPreviouslyLoadedChar());
+        }
+      });
+    });
   }
 
   private updateRegionBasedOn(val: boolean) {
@@ -154,7 +180,7 @@ export class CharacterListPage implements OnInit, OnDestroy {
       if(!data) { return; }
       if(data === 'show34') {
         this.show34 = !this.show34;
-        this.updateCharacterList();
+        this.updateCharacterListOutsideZone();
         return;
       }
       this.sorting = <'tier'|'alpha'|'weapon'>data;
@@ -186,7 +212,7 @@ export class CharacterListPage implements OnInit, OnDestroy {
   }
 
   // CHARACTER LIST SORTING
-  private updateCharacterList() {
+  private getCharacterUpdateList() {
     let arr = this.allCharacters;
 
     const curFilter = this.getCurrentFilter();
@@ -203,24 +229,22 @@ export class CharacterListPage implements OnInit, OnDestroy {
     arr = arr.filter(char => char.cat === this.region);
 
     if(arr.length === 0) {
-      this.isError = true;
-      return;
+      return { isError: true };
     }
 
-    this.isError = false;
-
     // alpha sorting
-    this.alphaSortedCharacters = _.sortBy(arr, 'name');
+    const alphaSortedCharacters = _.sortBy(arr, 'name');
 
     // weapon sorting
-    this.weaponSortedCharacters = _(arr)
+    const weaponSortedCharacters = _(arr)
       .sortBy('name')
       .groupBy('weapon')
       .value();
-    this.allWeapons = _.sortBy(Object.keys(this.weaponSortedCharacters));
+
+    const allWeapons = _.sortBy(Object.keys(this.weaponSortedCharacters));
 
     // tier sorting
-    this.tierSortedCharacters = _(arr)
+    const tierSortedCharacters = _(arr)
       .sortBy([(char) => -Math.floor(char.rating), 'name'])
       .groupBy(char => {
         if(char.rating >= 10) { return 'Top Tier (10/10)'; }
@@ -231,7 +255,8 @@ export class CharacterListPage implements OnInit, OnDestroy {
         return 'Bad (1-3/10)';
       })
       .value();
-    this.allTiers = _.sortBy(Object.keys(this.tierSortedCharacters), (tier) => {
+
+    const allTiers = _.sortBy(Object.keys(this.tierSortedCharacters), (tier) => {
       if(tier === 'Top Tier (10/10)')      { return 0; }
       if(tier === 'Great (8-9/10)')        { return 1; }
       if(tier === 'Good (6-7/10)')         { return 2; }
@@ -241,9 +266,14 @@ export class CharacterListPage implements OnInit, OnDestroy {
       return 10;
     });
 
-    if(this.getPreviouslyLoadedChar()) {
-      this.loadCharacterModal(this.getPreviouslyLoadedChar());
-    }
+    return {
+      isError: false,
+      alphaSortedCharacters,
+      weaponSortedCharacters,
+      allWeapons,
+      tierSortedCharacters,
+      allTiers
+    };
   }
 
   private getCurrentFilter(): string {

@@ -5,7 +5,7 @@ import { filter } from 'rxjs/operators';
 import { LocalStorage, LocalStorageService } from 'ngx-webstorage';
 
 import { ModalController, PopoverController } from '@ionic/angular';
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, NgZone } from '@angular/core';
 import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 
 import { DataService } from '../data.service';
@@ -54,7 +54,8 @@ export class ItemListPage implements OnInit, OnDestroy {
     private router: Router,
     private activatedRoute: ActivatedRoute,
     private popoverCtrl: PopoverController,
-    private modalCtrl: ModalController
+    private modalCtrl: ModalController,
+    private ngZone: NgZone
   ) {}
 
   ngOnInit() {
@@ -71,13 +72,13 @@ export class ItemListPage implements OnInit, OnDestroy {
       .subscribe((x: NavigationEnd) => {
         if(!_.includes(x.url, 'items')) { return; }
         this.updateRegionBasedOn(this.localStorage.retrieve('isJP'));
-        this.updateItemsList();
+        this.updateItemListOutsideZone();
       });
 
     this.item$ = this.dataService.items$.subscribe(items => {
       this.allItems = items;
       this.updateRegionBasedOn(this.localStorage.retrieve('isJP'));
-      this.updateItemsList();
+      this.updateItemListOutsideZone();
     });
   }
 
@@ -97,6 +98,34 @@ export class ItemListPage implements OnInit, OnDestroy {
         region: this.region,
         item: this.getPreviouslyLoadedItem()
       }
+    });
+  }
+
+  private updateItemListOutsideZone() {
+    this.ngZone.runOutsideAngular(() => {
+      const res = this.getItemList();
+
+      this.ngZone.run(() => {
+
+        if(!_.isUndefined(res.isError)) {
+          this.isError = res.isError;
+          if(this.isError) { return; }
+        }
+
+        this.alphaSortedItems = res.alphaSortedItems;
+
+        this.allElements = res.allElements;
+        this.allItemTypes = res.allItemTypes;
+        this.allSlayers = res.allSlayers;
+        
+        this.elementSortedItems = res.elementSortedItems;
+        this.typeSortedItems = res.typeSortedItems;
+        this.slayerSortedItems = res.slayerSortedItems;
+
+        if(this.getPreviouslyLoadedItem()) {
+          this.loadItemModal(this.getPreviouslyLoadedItem());
+        }
+      });
     });
   }
 
@@ -201,7 +230,7 @@ export class ItemListPage implements OnInit, OnDestroy {
   }
 
   // ITEM LIST SORTING
-  private updateItemsList() {
+  private getItemList() {
     let arr = this.allItems;
 
     const { type, subtype } = this.getCurrentFilter();
@@ -217,23 +246,21 @@ export class ItemListPage implements OnInit, OnDestroy {
     arr = arr.filter(item => item.cat === this.region);
 
     if(arr.length === 0) {
-      this.isError = true;
-      return;
+      return { isError: true };
     }
 
-    this.isError = false;
-
     // alpha sorting
-    this.alphaSortedItems = _.sortBy(arr, 'name');
+    const alphaSortedItems = _.sortBy(arr, 'name');
 
     // type sorting
-    this.typeSortedItems = _(arr)
+    const typeSortedItems = _(arr)
       .sortBy('name')
       .groupBy('subtype')
       .value();
-    this.allItemTypes = _.sortBy(Object.keys(this.typeSortedItems));
 
-    this.allElements = _(arr)
+    const allItemTypes = _.sortBy(Object.keys(typeSortedItems));
+
+    const allElements = _(arr)
       .map(i => i.factors.map(x => x.element))
       .flattenDeep()
       .compact()
@@ -245,20 +272,20 @@ export class ItemListPage implements OnInit, OnDestroy {
       .value();
 
     // element sorting
-    this.elementSortedItems = {};
+    const elementSortedItems = {};
 
     _(arr)
       .sortBy('name')
       .forEach(item => {
-        const allElements = item.factors.map(x => x.element || 'None');
-        _.uniq(allElements).forEach(el => {
-          this.elementSortedItems[el] = this.elementSortedItems[el] || [];
-          this.elementSortedItems[el].push(item);
+        const allFoundElements = item.factors.map(x => x.element || 'None');
+        _.uniq(allFoundElements).forEach(el => {
+          elementSortedItems[el] = elementSortedItems[el] || [];
+          elementSortedItems[el].push(item);
         });
       });
 
     // slayer sorting
-    this.allSlayers = _(arr)
+    const allSlayers = _(arr)
       .map(i => i.factors.map(x => x.slayer))
       .flattenDeep()
       .compact()
@@ -269,21 +296,28 @@ export class ItemListPage implements OnInit, OnDestroy {
       })
       .value();
 
-    this.slayerSortedItems = {};
+    const slayerSortedItems = {};
 
     _(arr)
       .sortBy('name')
       .forEach(item => {
-        const allSlayers = item.factors.map(x => x.slayer || 'None');
-        _.uniq(allSlayers).forEach(el => {
-          this.slayerSortedItems[el] = this.slayerSortedItems[el] || [];
-          this.slayerSortedItems[el].push(item);
+        const allFoundSlayers = item.factors.map(x => x.slayer || 'None');
+        _.uniq(allFoundSlayers).forEach(el => {
+          slayerSortedItems[el] = slayerSortedItems[el] || [];
+          slayerSortedItems[el].push(item);
         });
       });
 
-    if(this.getPreviouslyLoadedItem()) {
-      this.loadItemModal(this.getPreviouslyLoadedItem());
-    }
+    return {
+      isError: false,
+      alphaSortedItems,
+      allItemTypes,
+      allElements,
+      allSlayers,
+      typeSortedItems,
+      slayerSortedItems,
+      elementSortedItems
+    };
   }
 
   private getCurrentFilter(): { type: string, subtype: string } {
