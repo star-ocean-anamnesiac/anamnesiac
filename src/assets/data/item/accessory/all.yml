@@ -20,6 +20,10 @@
   factors:
     - desc: 40% chance of poison nullification
     - desc: Damage taken -5%
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffValue: 5
   obtained: Pumpkin Cryptvine (Exchange/Drop)
 
   notes: >
@@ -92,6 +96,10 @@
   def: 753
   factors:
     - desc: -10% DMG Taken
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffValue: 10
   obtained: Jie Revorse (Exchange, Drop)
 
   notes: >
@@ -105,6 +113,10 @@
   factors:
     - desc: 25% Chance of Freezing Nullification
     - desc: +10% HIT
+      meta:
+        priority: 4
+        buff: HIT
+        buffValue: 10
   obtained: Eternal Queen (Exchange, Drop) and Christmas Horndevil (Achievement, Exchange)
 
   notes: >
@@ -117,7 +129,15 @@
   def: 728
   factors:
     - desc: +10% Crit Rate
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 10
     - desc: +5% Stun Rate
+      meta:
+        priority: 4
+        buff: Stun Rate
+        buffValue: 10
   obtained: Eternal Queen (Achievement)
 
   notes: >
@@ -143,6 +163,10 @@
   def: 803
   factors:
     - desc: +10% HP
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 10
     - desc: 30% Chance of Surviving a Lethal Attack when HP is 10% or above
   obtained: Millioneyes (Achievement)
 
@@ -168,7 +192,15 @@
   def: 728
   factors:
     - desc: -10% ATK DMG Taken
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
     - desc: +10% GRD
+      meta:
+        priority: 4
+        buff: GRD
+        buffValue: 10
   obtained: Michael (Exchange, Drop)
 
   notes: >
@@ -181,7 +213,15 @@
   def: 728
   factors:
     - desc: -10% INT DMG Taken
+      meta:
+        priority: 4
+        buff: INT Damage Taken Reduction
+        buffValue: 10
     - desc: +10% HIT
+      meta:
+        priority: 4
+        buff: HIT
+        buffValue: 10
   obtained: Executioner (Exchange, Drop)
 
   notes: >
@@ -194,6 +234,10 @@
   def: 753
   factors:
     - desc: +5% Rush Combo DMG
+      meta:
+        priority: 4
+        buff: Rush Damage
+        buffValue: 10
     - desc: 30% Chance of Surviving a Lethal Attack when 10% HP or more
   obtained: Pumpkin Cryptvine (Achievement)
 
@@ -207,6 +251,10 @@
   def: 728
   factors:
     - desc: +10% Stun Rate
+      meta:
+        priority: 4
+        buff: Stun Rate
+        buffValue: 10
   obtained: Pumpkin Cryptvine (Achievement, Gacha Box) and Armaros (Exchange, Drop)
 
   notes: >
@@ -220,10 +268,14 @@
   factors:
     - desc: -10% Chance of Taking Crit Hit
     - desc: -5%% DMG Taken
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffValue: 5
   obtained: Luther (Exchange, Drop)
 
   notes: >
-    Not amazing, but it's another -5% accesory and actually has a significant 2nd factor, making it quite usable.
+    Not amazing, but it's another -5% accessory and actually has a significant 2nd factor, making it quite usable.
     
 - name: Lunar Tear Bauble
   cat: 'gl'
@@ -271,6 +323,10 @@
   def: 803
   factors:
     - desc: -5% DMG Taken
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffValue: 5
   obtained: Colossal Beak (Exchange)
 
   notes: >
@@ -283,6 +339,10 @@
   def: 728
   factors:
     - desc: -10% ATK DMG Taken
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
     - desc: 30% Chance of Surviving a Lethal Attack when 10% HP or more
   obtained: Christmas Horndevil (Achievement, Exchange, Drop)
 
@@ -297,6 +357,10 @@
   factors:
     - desc: RCV 2% HP every 5 secs
     - desc: -5% AP Cost
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 5
   obtained: Christmas Horndevil (Achievement, Exchange)
 
   notes: >
@@ -309,6 +373,10 @@
   def: 728
   factors:
     - desc: -5% AP Cost
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 10
   obtained: Alma (Exchange)
 
   notes: >
@@ -321,6 +389,10 @@
   def: 803
   factors:
     - desc: -10% DMG Taken
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffValue: 10
     - desc: Aggro +3
   obtained: Alma (Achievement)
 
@@ -334,7 +406,17 @@
   def: 728
   factors:
     - desc: +15% Crit Chance (When facing enemy)
+      meta:
+        priority: 3
+        buff: Crit Rate
+        buffValue: 15
+        buffCondition: Facing Enemy
     - desc: -5% ATK DMG Taken (When close range)
+      meta:
+        priority: 3
+        buff: ATK Damage Taken Reduction
+        buffValue: 5
+        buffCondition: Close Range
   obtained: FFBE (Gacha Box)
 
   notes: >
@@ -348,6 +430,11 @@
   factors:
     - desc: 40% Chance to Survive a Lethal Attack at 20% HP or more
     - desc: -10% DMG Taken (When far range)
+      meta:
+        priority: 3
+        buff: Damage Taken Reduction
+        buffValue: 10
+        buffCondition: Far Range
   obtained: FFBE (Achievement)
 
   notes: >

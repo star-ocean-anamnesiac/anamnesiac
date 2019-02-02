@@ -603,7 +603,7 @@
           all: true
           meta:
             priority: 1
-            buff: Stun Chance
+            buff: Stun Rate
             buffValue: 40
     - name: "Defense Force of Kratus"
       effects: 

@@ -13,13 +13,16 @@ import {
 } from '@angular/animations';
 
 import { ModalController } from '@ionic/angular';
-import { Subscription } from 'rxjs';
+import { Subscription, zip } from 'rxjs';
 import { filter } from 'rxjs/operators';
 import { LocalStorageService } from 'ngx-webstorage';
 
 import { CharacterListModal } from './character-list.modal';
 import { Character } from '../models/character';
 import { DataService } from '../data.service';
+import { Item } from '../models/item';
+import { isUndefined } from 'util';
+import { ItemListModal } from './item-list.modal';
 
 @Component({
   selector: 'app-party-creator',
@@ -48,13 +51,22 @@ import { DataService } from '../data.service';
 export class PartyCreatorPage implements OnInit, OnDestroy {
 
   private router$: Subscription;
-  private characters$: Subscription;
+  private allData$: Subscription;
 
   public characters: string[] = [];
   public charRefs: Character[] = [];
 
+  public accessories: string[] = [];
+  public accessoryRefs: Item[] = [];
+
+  public weapons: string[] = [];
+  public weaponRefs: Item[] = [];
+
   private allCharacters: Character[];
   private filteredCharacters: Character[];
+
+  private allItems: Item[];
+  private filteredItems: Item[];
 
   public region: string;
   public conditionToggle: boolean;
@@ -87,7 +99,7 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
     private localStorage: LocalStorageService,
     private modalCtrl: ModalController,
     private dataService: DataService
-    ) { }
+  ) { }
 
   ngOnInit() {
     this.showShare = !!(<any>navigator).share;
@@ -113,19 +125,22 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
         this.updateBuffs();
       });
 
-    this.characters$ = this.dataService.characters$.subscribe(chars => {
-      this.isReady = true;
-      this.updateRegionBasedOn(this.localStorage.retrieve('isJP'));
-      this.allCharacters = chars;
+    this.allData$ = zip(this.dataService.characters$, this.dataService.items$)
+      .subscribe(([chars, items]) => {
+        this.isReady = true;
+        this.updateRegionBasedOn(this.localStorage.retrieve('isJP'));
+        this.allCharacters = chars;
+        this.allItems = items;
 
-      this.updateCharacters();
-      this.updateParty();
-    });
+        this.updateCharacters();
+        this.updateItems();
+        this.updateParty();
+      });
   }
 
   ngOnDestroy() {
     this.router$.unsubscribe();
-    this.characters$.unsubscribe();
+    this.allData$.unsubscribe();
   }
 
   public toggleCondition() {
@@ -158,6 +173,10 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
     this.filteredCharacters = this.allCharacters.filter(x => x.cat === this.region);
   }
 
+  private updateItems() {
+    this.filteredItems = this.allItems.filter(x => x.cat === this.region);
+  }
+
   private updateParty() {
     if(!this.isReady) { return; }
 
@@ -171,6 +190,30 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
       }
 
       this.setChar(ref, i);
+    });
+
+    const acc = this.getAccessories();
+    const accItems = acc.split(',');
+    accItems.forEach((itemName, i) => {
+      const ref = find(this.filteredItems, { name: itemName });
+      if(!ref) {
+        this.setAccessory(undefined, i);
+        return;
+      }
+
+      this.setAccessory(ref, i);
+    });
+
+    const weap = this.getWeapons();
+    const weapItems = weap.split(',');
+    weapItems.forEach((itemName, i) => {
+      const ref = find(this.filteredItems, { name: itemName });
+      if(!ref) {
+        this.setWeapon(undefined, i);
+        return;
+      }
+
+      this.setWeapon(ref, i);
     });
   }
 
@@ -187,12 +230,38 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
     this.updateBuffs();
   }
 
+  private setAccessory(acc: Item, index: number) {
+    if(acc) {
+      this.accessoryRefs[index] = acc;
+      this.accessories[index] = acc.name;
+    } else {
+      this.accessoryRefs[index] = undefined;
+      this.accessories[index] = undefined;
+    }
+
+    this.updateBuffs();
+  }
+
+  private setWeapon(weap: Item, index: number) {
+    if(weap) {
+      this.weaponRefs[index] = weap;
+      this.weapons[index] = weap.name;
+    } else {
+      this.weaponRefs[index] = undefined;
+      this.weapons[index] = undefined;
+    }
+
+    this.updateBuffs();
+  }
+
   private navigateHere() {
     this.router.navigate([], {
       relativeTo: this.activatedRoute,
       queryParams: {
         region: this.region,
         party: this.getParty(),
+        acc: this.getAccessories(),
+        weap: this.getWeapons(),
         conditional: ~~this.conditionToggle,
         role: ~~this.roleToggle
       }
@@ -215,8 +284,10 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
     });
 
     modal.onDidDismiss().then((val) => {
+      if(!val) { return; }
+
       const char = val.data;
-      if(!char) { return; }
+      if(isUndefined(char)) return;
 
       this.setChar(char, index);
 
@@ -224,7 +295,44 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
         relativeTo: this.activatedRoute,
         queryParams: {
           region: this.region,
-          party: this.characters.join(',')
+          party: this.characters.join(','),
+          acc: this.getAccessories(),
+          weap: this.getWeapons()
+        }
+      });
+    });
+
+    await modal.present();
+  }
+
+  async openItemModal(index: number, type: string) {
+
+    const modal = await this.modalCtrl.create({
+      component: ItemListModal,
+      componentProps: {
+        items: this.filteredItems.filter(x => type === 'accessory' ? (x.subtype === 'all') : x.subtype === type)
+      }
+    });
+
+    modal.onDidDismiss().then((val) => {
+      if(!val) { return; }
+
+      const item = val.data;
+      if(isUndefined(item)) return;
+
+      if(type === 'accessory') {
+        this.setAccessory(item, index);
+      } else {
+        this.setWeapon(item, index);
+      }
+
+      this.router.navigate([], {
+        relativeTo: this.activatedRoute,
+        queryParams: {
+          region: this.region,
+          party: this.getParty(),
+          acc: this.accessories.join(','),
+          weap: this.weapons.join(',')
         }
       });
     });
@@ -235,6 +343,16 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
   private getParty(): string {
     const parameters = new URLSearchParams(window.location.search);
     return parameters.get('party') || '';
+  }
+
+  private getWeapons(): string {
+    const parameters = new URLSearchParams(window.location.search);
+    return parameters.get('weap') || '';
+  }
+
+  private getAccessories(): string {
+    const parameters = new URLSearchParams(window.location.search);
+    return parameters.get('acc') || '';
   }
 
   private conditionalToggleParam(): boolean {
@@ -305,6 +423,15 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
           const talEffRef = assignMeta(talEffect.meta, talEffect, charRef, `${talent.name} [Talent]`);
           buffs.push(...talEffRef);
         });
+      });
+    });
+
+    this.accessoryRefs.forEach((accRef, i) => {
+      accRef.factors.forEach(fact => {
+        if(!fact.meta) { return; }
+
+        const factorMeta = assignMeta(fact.meta, fact, this.charRefs[i], `${accRef.name}`);
+        buffs.push(...factorMeta);
       });
     });
 

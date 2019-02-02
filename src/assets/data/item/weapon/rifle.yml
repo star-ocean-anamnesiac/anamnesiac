@@ -7,6 +7,10 @@
   int: 649
   factors:
     - desc: +15% DMG to single targets
+      meta:
+        priority: 4
+        buff: Single Target Damage
+        buffValue: 15
     - desc: Hit Count timer +1s
     - desc: Additional hit that deals 5% of damage dealt by normal attacks
       lb: 5

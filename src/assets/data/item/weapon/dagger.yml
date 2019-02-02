@@ -10,4 +10,8 @@
     - desc: Poisonous Guillotine damage +20%
     - desc: ATK +10%
       lb: 5
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 10
   obtained: Coin Shop (Jie Revorse)

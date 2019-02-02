@@ -8,9 +8,17 @@
   factors:
     - desc: Imbues attacks with light element
       element: Light
-    - desc: Damage -10%
+    - desc: Damage Taken -10%
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffValue: 10
     - desc: AP consumption -10%
       lb: 5
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 10
   obtained: Gacha (Limited)
   
   notes: >
@@ -26,9 +34,17 @@
   int: 511
   factors:
     - desc: +15% ATK
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 15
     - desc: 10% HP Drain on Normal Attacks
     - desc: +10% DMG
       lb: 3
+      meta:
+        priority: 4
+        buff: Damage
+        buffValue: 10
   obtained: Gacha/Coin Exchange
 
   notes: >
@@ -43,9 +59,21 @@
   int: 511
   factors:
     - desc: +15% Single Target DMG
+      meta:
+        priority: 4
+        buff: Single Target Damage
+        buffValue: 15
     - desc: -10% AP Cost
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 10
     - desc: -10% DMG Taken
       lb: 5
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffValue: 10
   obtained: Gacha/Coin Exchange
 
   notes: >
@@ -62,8 +90,16 @@
   factors:
     - desc: +20% DMG on YoHRa Arms XII
     - desc: +50% AP RCV by Normal Attacks
+      meta:
+        priority: 4
+        buff: AP Recovery From Normal Attacks
+        buffValue: 50
     - desc: -10% ATK DMG Taken
       lb: 5
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
   obtained: Geared Wisp Exchange & Event
 
   notes: >

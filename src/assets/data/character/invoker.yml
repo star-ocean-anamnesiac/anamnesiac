@@ -148,7 +148,7 @@
         - desc: Easier to stun +30%
           meta:
             priority: 4
-            buff: Stun Chance
+            buff: Stun Rate
             buffValue: 30
     - name: "Hardier Warrior of Morphus"
       effects: 
@@ -409,7 +409,7 @@
           all: true
           meta:
             priority: 1
-            buff: Stun Chance
+            buff: Stun Rate
             buffValue: 15
     - name: "Eldarian Honor II"
       effects: 

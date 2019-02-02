@@ -29,7 +29,7 @@
   </div>
 
   <div class="blank-slate" *ngIf="allItems.length === 0">
-    <ion-spinner></ion-spinner> &nbsp;&nbsp;&nbsp; Loading...
+    <ion-spinner color="light"></ion-spinner> &nbsp;&nbsp;&nbsp; Loading...
   </div>
 
   <ion-searchbar *ngIf="showSearch" 
@@ -83,7 +83,7 @@
 <ng-template #items let-item="item">
   <span slot="start" class="picture-class-chunk" [class.margin-right]="isFiltered">
     <app-appicon class="item-icon" [name]="item.picture" type="item" [forceWidth]="64" [forceHeight]="64"></app-appicon>
-    <app-appicon *ngIf="!isFiltered" margin-horizontal [name]="'menu-' + item.subtype" [scaleX]="0.5" [scaleY]="0.5"></app-appicon>
+    <app-appicon *ngIf="!isFiltered" margin-horizontal [name]="'menu-' + item.subtype" [scaleX]="0.375" [scaleY]="0.375"></app-appicon>
   </span>
 
   <ion-label>

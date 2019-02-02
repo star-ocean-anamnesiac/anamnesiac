@@ -8,7 +8,15 @@
   factors:
     - desc: Imbue light element / +20% light damage
       element: Light
+      meta:
+        priority: 4
+        buff: Light Damage
+        buffValue: 20
     - desc: -10% AP cost
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 10
     - desc: 80% chance to survive a lethal attack at 10% or more HP
       lb: 5
   obtained: Gacha
@@ -25,7 +33,16 @@
   int: 649
   factors:
     - desc: +15% DMG to Single Target
+      meta:
+        priority: 4
+        buff: Single Target Damage
+        buffValue: 15
     - desc: +10% ATK DMG when Hit Count is 100 or more.
+      meta:
+        priority: 3
+        buff: ATK Damage Boost
+        buffValue: 10
+        buffCondition: Hit Count > 100
     - desc: 5% HP recovery every 3 seconds.
       lb: 5
   obtained: Gacha/Coin Exchange
@@ -42,7 +59,15 @@
   int: 510
   factors:
     - desc: +15% ATK
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 15
     - desc: +50% AP Recovery Speed
+      meta:
+        priority: 4
+        buff: AP Recovery
+        buffValue: 50
     - desc: 30% Chance to Survive a Lethal Attack at 20% or more HP
       lb: 3
   obtained: Gacha/Coin Exchange
@@ -79,8 +104,18 @@
   factors:
     - desc: +50% DMG on Lantern Burst
     - desc: +10% Rush DMG when Hit Count is 100 or more.
+      meta:
+        priority: 3
+        buff: Rush Damage
+        buffValue: 10
+        buffCondition: Hit Count > 100
     - desc: -10% ATK DMG taken (Short Range)
       lb: 5
+      meta:
+        priority: 3
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+        buffCondition: Short Range
   obtained: Pumpkin Cryptvine Exchange
 
   notes: >

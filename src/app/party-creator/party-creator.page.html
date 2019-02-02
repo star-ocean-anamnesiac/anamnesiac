@@ -21,7 +21,7 @@
   <div class="stars large"></div>
 
   <div class="blank-slate" *ngIf="!isReady">
-    <ion-spinner></ion-spinner> Loading...
+    <ion-spinner color="light"></ion-spinner> Loading...
   </div>
 
   <ng-container *ngIf="isReady">
@@ -30,13 +30,31 @@
     </ion-list>
   
     <ion-list>
-      <ion-item *ngFor="let char of charRefs; let i = index" detail (click)="openModal(i)">
-        <span *ngIf="!char">You need to choose a party member for slot {{ i + 1 }}</span>
-  
-        <ng-container *ngIf="char">
-          <ng-container *ngTemplateOutlet="character; context: { char: char }"></ng-container>
-        </ng-container>
-      </ion-item>
+      <ng-container *ngFor="let char of charRefs; let i = index">
+        <ion-item detail (click)="openModal(i)">
+          <span *ngIf="!char">You need to choose a party member for slot {{ i + 1 }}</span>
+    
+          <ng-container *ngIf="char">
+            <ng-container *ngTemplateOutlet="character; context: { char: char }"></ng-container>
+          </ng-container>
+        </ion-item>
+
+        <ion-item *ngIf="charRefs[i]" class="nested-item" (click)="openItemModal(i, char.weapon)">
+          <span *ngIf="!weaponRefs[i]">Optional: Choose a weapon for slot {{ i + 1 }}</span>
+    
+          <ng-container *ngIf="weaponRefs[i]">
+            <ng-container *ngTemplateOutlet="item; context: { item: weaponRefs[i] }"></ng-container>
+          </ng-container>
+        </ion-item>
+
+        <ion-item *ngIf="charRefs[i]" class="nested-item" (click)="openItemModal(i, 'accessory')">
+          <span *ngIf="!accessoryRefs[i]">Optional: Choose an accessory for slot {{ i + 1 }}</span>
+    
+          <ng-container *ngIf="accessoryRefs[i]">
+            <ng-container *ngTemplateOutlet="item; context: { item: accessoryRefs[i] }"></ng-container>
+          </ng-container>
+        </ion-item>
+      </ng-container>
     </ion-list>
   
     <ion-list>
@@ -143,6 +161,21 @@
     <h2 class="vertical-center">
       <app-appicon [name]="'char-' + char.star" [scaleX]="0.5" [scaleY]="0.5" [inline]="true"></app-appicon> 
       <span>{{ char.name }}</span>
+    </h2>
+  </ion-label>
+</ng-template>
+
+<ng-template #item let-item="item">
+
+  <span slot="start" class="picture-class-chunk">
+    <app-appicon [name]="item.picture" [forceWidth]="64" [forceHeight]="64" type="item"></app-appicon>
+    <app-appicon margin-horizontal [name]="'menu-' + item.subtype" [scaleX]="0.375" [scaleY]="0.375"></app-appicon>
+  </span>
+
+  <ion-label>
+    <h2 class="vertical-center">
+      <app-appicon [name]="'char-' + item.star" [scaleX]="0.5" [scaleY]="0.5" [inline]="true"></app-appicon> 
+      <span>{{ item.name }}</span>
     </h2>
   </ion-label>
 </ng-template>

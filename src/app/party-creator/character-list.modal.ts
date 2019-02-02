@@ -1,7 +1,7 @@
 
 import { includes, sortBy } from 'lodash';
 
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ModalController, NavParams } from '@ionic/angular';
 import { Character } from '../models/character';
 
@@ -49,6 +49,10 @@ import { Character } from '../models/character';
     </ion-row>
 
     <ion-list *ngIf="filteredCharacters.length > 0">
+      <ion-item (click)="selectChar(null)">
+        Clear this character slot
+      </ion-item>
+
       <ion-item *ngFor="let char of filteredCharacters" (click)="selectChar(char)">
 
         <span slot="start" class="picture-class-chunk">

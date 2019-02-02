@@ -7,5 +7,9 @@
   int: 835
   factors:
     - desc: Light damage +15%
+      meta:
+        priority: 4
+        buff: Light Damage
+        buffValue: 15
     - desc: Radiant Lancer damage +20%
   obtained: Coin Shop (Staff), Transmute, Gacha

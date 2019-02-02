@@ -23,7 +23,15 @@
   atk: 477
   factors:
     - desc: +15% ATK
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 15
     - desc: +10% Fire DMG Dealt
+      meta:
+        priority: 4
+        buff: Fire Damage
+        buffValue: 10
     - desc: Hit Count Timer + 2 s
       lb: 3
   obtained: Gacha
@@ -39,6 +47,10 @@
   atk: 835
   factors:
     - desc: +15% Ice DMG Dealt
+      meta:
+        priority: 4
+        buff: Ice Damage
+        buffValue: 15
     - desc: +20% DMG on Heavenly Flight
   obtained: Gacha/Transmute/Coin Exchange
   
@@ -57,6 +69,11 @@
     - desc: Recover 3% HP every 5 seconds
     - desc: +20% Crit DMG (When attacking from behind.)
       lb: 5
+      meta:
+        priority: 3
+        buff: Crit Damage
+        buffValue: 20
+        buffCondition: Attacking From Behind
   obtained: Everlasting Summer Siren Exchange
   
   notes: >
@@ -75,6 +92,11 @@
     - desc: Hit Count Timer + 1s
     - desc: +20% ATK (When attacking from behind.)
       lb: 5
+      meta:
+        priority: 3
+        buff: ATK
+        buffValue: 20
+        buffCondition: Attacking From Behind
   obtained: Gacha
   
   notes: >
@@ -90,8 +112,16 @@
   factors:
     - desc: +30% DMG on Explode
     - desc: +25% Fire DMG Dealt
+      meta:
+        priority: 4
+        buff: Fire Damage
+        buffValue: 25
     - desc: +30% AP Recovery
       lb: 5
+      meta:
+        priority: 4
+        buff: AP Recovery
+        buffValue: 30
   obtained: Millioneyes Gacha Box
   
   notes: >
@@ -149,6 +179,10 @@
     - desc: Recover 3% HP every 5 seconds
     - desc: +15% Stun
       lb: 5
+      meta:
+        priority: 4
+        buff: Stun Rate
+        buffValue: 15
   obtained: Gacha
   
   notes: >
@@ -164,7 +198,15 @@
   factors:
     - desc: Imbue Light Element/+20% Light DMG Dealt
       element: Light
+      meta:
+        priority: 4
+        buff: Light Damage
+        buffValue: 20
     - desc: -10% AP Cost
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 10
     - desc: 80% Chance to Survive a Lethal Attack at 20% HP or more
       lb: 5
   obtained: Gacha
@@ -183,6 +225,11 @@
     - desc: +15% DMG on Heaven's Judgement
     - desc: Recover 3% HP every 5 seconds at long range
     - desc: +30% AP Recovery at long range
+      meta:
+        priority: 3
+        buff: AP Recovery
+        buffValue: 30
+        buffCondition: Long Range
       lb: 5
   obtained: FFBE Gacha Box
   

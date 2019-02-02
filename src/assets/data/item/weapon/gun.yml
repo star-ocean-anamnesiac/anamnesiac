@@ -12,6 +12,11 @@
     - desc: 80% chance of surviving a lethal attack at greater than 10% HP
     - desc: Damage taken -15% when in front of target
       lb: 5
+      meta:
+        priority: 3
+        buff: Damage Taken Reduction
+        buffValue: 15
+        buffCondition: In Front Of Target
   obtained: Gacha
   
   notes: >
@@ -26,9 +31,17 @@
   int: 847
   factors:
     - desc: +15% damage to multiple targets
+      meta:
+        priority: 4
+        buff: Multiple Target Damage
+        buffValue: 15
     - desc: +20% DMG on Crimson Squall
     - desc: +10% DMG to single target
       lb: 3
+      meta:
+        priority: 4
+        buff: Single Target Damage
+        buffValue: 10
   obtained: Coin Exchange/Gacha
   
   notes: >
@@ -59,7 +72,16 @@
   atk: 530
   int: 0
   factors:
-    - desc: +15% ATK, -15% DEF
+    - desc: +15% ATK
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 15
+    - desc: -15% DEF
+      meta:
+        priority: 4
+        buff: DEF Reduction
+        buffValue: 15
     - desc: +20% DMG on Scatter Beam
   obtained: Coin Exchange/Gacha/Transmute
   
@@ -78,6 +100,10 @@
     - desc: Recover 5% of DMG Dealt by Normal Attacks as HP
     - desc: +10% DMG Dealt to Single Target
       lb: 5
+      meta:
+        priority: 4
+        buff: Single Target Damage
+        buffValue: 10
   obtained: Christmas Horndevil Exchange
   
   notes: >
@@ -96,8 +122,17 @@
       element: Ice
       slayerPct: 15
     - desc: -10% AP Cost
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 10
     - desc: +25% Crit Rate at 100+ Hit Count
       lb: 5
+      meta:
+        priority: 3
+        buff: Crit Rate
+        buffValue: 25
+        buffCondition: Hit Count > 100
   obtained: Gacha
   
   notes: >
@@ -112,6 +147,10 @@
   int: 491
   factors:
     - desc: +10% INT
+      meta:
+        priority: 4
+        buff: INT
+        buffValue: 10
     - desc: +20% DMG on Cerberus Shot
     - desc: 60% Chance to Survive a Lethal Attack at 20% HP or more
       lb: 5
@@ -130,6 +169,10 @@
   factors:
     - desc: +30% DMG on Energy Glaive
     - desc: -10% AP Cost
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 10
     - desc: +40% ATK DMG at Chain 3+
       lb: 5
   obtained: Alma Exchange

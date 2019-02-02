@@ -6,10 +6,24 @@
   atk: 959
   int: 965
   factors:
-    - desc: Lightning/Dark damage +30%
+    - desc: Lightning damage +30%
+      meta:
+        priority: 4
+        buff: Lightning Damage
+        buffValue: 30
+    - desc: Dark damage +30%
+      meta:
+        priority: 4
+        buff: Dark Damage
+        buffValue: 30
     - desc: 80% chance to survive a lethal attack when HP is greater than 10%
     - desc: Damage taken -30% at less than 50% HP
       lb: 5
+      meta:
+        priority: 3
+        buff: Damage Taken Reduction
+        buffValue: 30
+        buffCondition: HP < 50%
   obtained: Gacha
   
   notes: >
@@ -24,7 +38,15 @@
   int: 510
   factors:
     - desc: +15% INT
+      meta:
+        priority: 4
+        buff: INT
+        buffValue: 15
     - desc: -10% DMG Taken
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffValue: 15
     - desc: Recover 10% HP every 3 seconds
       lb: 5
   obtained: Gacha / Orb Coin Exchange
@@ -41,10 +63,22 @@
   atk: 507
   int: 510
   factors:
-    - desc: +15% DMG to Mutliple Targets
+    - desc: +15% DMG to Multiple Targets
+      meta:
+        priority: 4
+        buff: Multiple Target Damage
+        buffValue: 15
     - desc: +30% AP Recovery by Normal Attacks
+      meta:
+        priority: 4
+        buff: AP Recovery From Normal Attacks
+        buffValue: 15
     - desc: +10% DMG
       lb: 5
+      meta:
+        priority: 4
+        buff: Damage
+        buffValue: 10
   obtained: Gacha / Orb Coin Exchange
   
   notes: >
@@ -60,6 +94,10 @@
   factors:
     - desc: +20% DMG on Lightning Blast
     - desc: +10% DMG to Single Target
+      meta:
+        priority: 4
+        buff: Single Target Damage
+        buffValue: 10
     - desc: 60% Chance to Survive a Lethal Attack at 20% HP or more
       lb: 5
   obtained: Millioneyes Exchange
@@ -76,10 +114,24 @@
   atk: 956
   int: 963
   factors:
-    - desc: +20% Element DMG / +30% DMG to Plants
+    - desc: +20% Element DMG
+      meta:
+        priority: 4
+        buff: Elemental Damage
+        buffValue: 15
+    - desc: +30% DMG to Plants
       slayer: Plant
       slayerPct: 20
-    - desc: +10% Crit Rate / +10% Crit DMG
+    - desc: +10% Crit Rate
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 10
+    - desc: +10% Crit DMG
+      meta:
+        priority: 4
+        buff: Crit Damage
+        buffValue: 10
     - desc: 5% HP Recovery every 3 seconds
       lb: 3
   obtained: Gacha
@@ -98,8 +150,16 @@
   factors:
     - desc: +20% DMG on Extinction
     - desc: +10% Crit Rate
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 10
     - desc: +50% AP RCV by Normal Attacks
       lb: 5
+      meta:
+        priority: 4
+        buff: AP Recovery From Normal Attacks
+        buffValue: 50
   obtained: Alma Achievement
   
   notes: >
@@ -116,7 +176,20 @@
     - desc: +40% Dark DMG Dealt / +10% DMG to Divinity
       slayer: Divinity
       slayerPct: 10
-    - desc: +10% Crit Rate / +10% Crit DMG
+      meta:
+        priority: 4
+        buff: Dark Damage
+        buffValue: 40
+    - desc: +10% Crit Rate
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 10
+    - desc: +10% Crit DMG
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 10
     - desc: 80% Chance to Survive a Lethal Attack when HP is 20% or more
       lb: 5
   obtained: Gacha

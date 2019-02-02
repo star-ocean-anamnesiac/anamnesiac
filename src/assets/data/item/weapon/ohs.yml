@@ -12,6 +12,10 @@
     - desc: Recover 15% of damage dealt on normal attacks as HP
     - desc: Crit Rate +10%
       lb: 5
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 10
   obtained: Gacha (Limited)
   
   notes: >
@@ -27,9 +31,17 @@
   int: 0
   factors:
     - desc: +15% ATK
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 15
     - desc: +20% DMG on Helm Splitter
     - desc: -10% AP Cost
       lb: 3
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 10
   obtained: Gacha / OHS Coin Exchange
   
   notes: >
@@ -61,6 +73,10 @@
   int: 0
   factors:
     - desc: +15% Lightning DMG Dealt
+      meta:
+        priority: 4
+        buff: Lightning Damage
+        buffValue: 15
     - desc: +20% DMG on Rising Blade
   obtained: Gacha / OHS Coin Exchange / Transmutation
   
@@ -75,7 +91,16 @@
   atk: 835
   int: 0
   factors:
-    - desc: +15% ATK / -15% DEF
+    - desc: +15% ATK
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 15
+    - desc: -15% DEF
+      meta:
+        priority: 4
+        buff: DEF Reduction
+        buffValue: 15
     - desc: +20% DMG on Air Slash
   obtained: Gacha / OHS Coin Exchange / Transmutation
   
@@ -94,8 +119,12 @@
     - desc: +20% DMG to Machines
       slayer: Machine
       slayerPct: 20
-    - desc: +4% Crit
+    - desc: +4% Crit Chance
       lb: 5
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 4
   obtained: Jie Revorse Exchange
   
   notes: >
@@ -110,9 +139,17 @@
   int: 0
   factors:
     - desc: +15% DMG to Single Targets
+      meta:
+        priority: 4
+        buff: Single Target Damage
+        buffValue: 15
     - desc: +20% DMG on Air Raid
     - desc: +10% DMG
       lb: 5
+      meta:
+        priority: 4
+        buff: Damage
+        buffValue: 10
   obtained: Gacha
   
   notes: >
@@ -128,8 +165,16 @@
   factors:
     - desc: +20% DMG on Omega Thunderclap Blade
     - desc: -10% INT DMG Taken
+      meta:
+        priority: 4
+        buff: INT Damage Taken Reduction
+        buffValue: 10
     - desc: +15% Lightning DMG Dealt
       lb: 5
+      meta:
+        priority: 4
+        buff: Lightning Damage
+        buffValue: 15
   obtained: Millioneye Exchange
   
   notes: >
@@ -147,6 +192,10 @@
     - desc: Recover 3% HP every 3 seconds (If behind an enemy.)
     - desc: -10% AP Cost
       lb: 5
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 10
   obtained: Millioneye Exchange
   
   notes: >
@@ -162,9 +211,18 @@
   factors:
     - desc: Imbue Lightning Element
       element: Lightning
-    - desc: +20% Stun
+    - desc: +20% Stun Chance
+      meta:
+        priority: 4
+        buff: Stun Rate
+        buffValue: 20
     - desc: +30% Crit Chance (If not targeted by an enemy.)
       lb: 5
+      meta:
+        priority: 3
+        buff: Crit Rate
+        buffValue: 30
+        buffCondition: Not Being Targeted
   obtained: Gacha
   
   notes: >
@@ -179,13 +237,17 @@
   atk: 475
   int: 0
   factors:
-    - desc: Gain Light Attribute
+    - desc: Imbue Light
       element: Light
       lb: 3
     - desc: +15% DMG on Heavenly Launcher
       lb: 4
     - desc: -10% AP Cost
       lb: 5
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 10
   obtained: Blood Valkyrie Exchange
   
   notes: >
@@ -199,12 +261,22 @@
   atk: 861
   int: 0
   factors:
-    - desc: Gain Light Attribute
+    - desc: Imbue Light Attribute
       element: Light
     - desc: +20% DMG on Valkyrie's Mercy
       lb: 1
-    - desc: -10% AP Cost / -10% DMG Taken
+    - desc: -10% AP Cost
       lb: 5
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 10
+    - desc: -10% DMG Taken
+      lb: 5
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffValue: 10
   obtained: Gacha
   
   notes: >
@@ -224,6 +296,10 @@
       slayerPct: 15
     - desc: +5% ATK
       lb: 5
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 5
   obtained: Hell Siren Exchange
   
   notes: >
@@ -238,10 +314,18 @@
   int: 583
   factors:
     - desc: +15% ATK
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 15
     - desc: Imbue Ice Element
       element: Ice
     - desc: -10% AP Cost
       lb: 5
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 15
   obtained: Gacha
   
   notes: >
@@ -262,6 +346,10 @@
       slayer: Human
       slayerPct: 20
     - desc: -10% AP Cost
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 10
     - desc: 80% Chance to Survive a Lethal Attack at 20% or more HP
       lb: 5
   obtained: Gacha
@@ -279,7 +367,15 @@
   int: 486
   factors:
     - desc: +5% ATK
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 5
     - desc: +5% Crit Chance
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 15
     - desc: +10% DMG on Colossal Ethereal Blast
       lb: 5
   obtained: Luther's Descent Exchange / Achievement
@@ -298,6 +394,10 @@
     - desc: Recover 3% HP every 5 seconds
     - desc: +10% ATK DMG Dealt
       lb: 5
+      meta:
+        priority: 4
+        buff: ATK Damage
+        buffValue: 15
   obtained: Nier Event Clear
   
   notes: >
@@ -313,8 +413,16 @@
   factors:
     - desc: "+20% DMG on YoHRa Arms: Four"
     - desc: +30% AP RCV Speed
+      meta:
+        priority: 4
+        buff: AP Recovery
+        buffValue: 30
     - desc: -10% AP Cost
       lb: 5
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 10
   obtained: Nier Event Clear
   
   notes: >
@@ -330,7 +438,16 @@
   factors:
     - desc: Imbue Light Element
       element: Light
-    - desc: +5% ATK / +5% HIT
+    - desc: +5% ATK
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 5
+    - desc: +5% HIT
+      meta:
+        priority: 4
+        buff: HIT
+        buffValue: 5
     - desc: Recover 10% HP every 3 seconds
       lb: 5
   obtained: Gacha (Limited)
@@ -366,8 +483,22 @@
   factors:
     - desc: +10% DMG on Raging Strike
     - desc: -5% DMG Taken
-    - desc: +4% Crit Chance / +10% Crit DMG
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffValue: 5
+    - desc: +4% Crit Chance
       lb: 5
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 4
+    - desc: +10% Crit DMG
+      lb: 5
+      meta:
+        priority: 4
+        buff: Crit Damage
+        buffValue: 10
   obtained: Armaros Exchange
   
   notes: >
@@ -381,14 +512,28 @@
   int: 827
   factors:
     - desc: +30% DMG on Ethereal Blast
-    - desc: +5% Crit Chance / +10% Crit DMG
+    - desc: +5% Crit Chance
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 5
+    - desc: +10% Crit DMG
+      meta:
+        priority: 4
+        buff: Crit Damage
+        buffValue: 15
     - desc: +40% ATK DMG at Chain 3+
       lb: 5
+      meta:
+        priority: 3
+        buff: ATK Damage
+        buffValue: 15
+        buffCondition: Skill Chain 2+
   obtained: Alma Exchange
   
   notes: >
     A weapon meant for Fidel. It's a decent neutral weapon, especially for those like 2B or Fayt who have self imbue already.
-    Otherwise it's pretty adverage.
+    Otherwise it's pretty average.
     
 - name: Earthen Crystal Edge
   cat: 'gl'
@@ -402,6 +547,10 @@
     - desc: Recover 10% HP of DMG Dealt by Normal Attacks
     - desc: -10% AP Cost
       lb: 5
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 10
   obtained: Gacha
   
   notes: >
@@ -415,8 +564,13 @@
   atk: 861
   int: 853
   factors:
-    - desc: +20% DMG on Floor Lava
+    - desc: +20% DMG on Lava Floor
     - desc: +10% ATK DMG (When Targetted by Enemy)
+      meta:
+        priority: 3
+        buff: ATK Damage
+        buffValue: 10
+        buffCondition: Targeted By Enemy
     - desc: 60% Chance to Survive a Lethal Attack at 20% HP or more
       lb: 5
   obtained: FFBE Gacha box

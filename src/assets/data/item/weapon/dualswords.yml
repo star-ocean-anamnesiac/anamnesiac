@@ -8,6 +8,10 @@
   int: 512
   factors:
     - desc: ATK +15%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 15
     - desc: Receive 10% of damage dealt as HP during normal attacks
     - desc: Additional hit that deals 5% damage of normal attack
       lb: 3
@@ -26,9 +30,21 @@
   int: 649
   factors:
     - desc: +15% DMG to Multiple Targets
+      meta:
+        priority: 4
+        buff: Multiple Target Damage
+        buffValue: 15
     - desc: +10% AP RCV
+      meta:
+        priority: 4
+        buff: AP Recovery
+        buffValue: 10
     - desc: -10% ATK DMG Taken
       lb: 5
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
   obtained: gacha / Dual Blade Coin Exchange / Transmute
   
   notes: >
@@ -44,9 +60,22 @@
   factors:
     - desc: Imbues attacks with light element
       element: Light
-    - desc: +10% Crit Rate / +15% Crit DMG
+    - desc: +10% Crit Rate
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 10
+    - desc: +15% Crit DMG
+      meta:
+        priority: 4
+        buff: Crit Damage
+        buffValue: 15
     - desc: +30% AP RCV Speed
       lb: 5
+      meta:
+        priority: 4
+        buff: AP Recovery
+        buffValue: 30
   obtained: Gacha
   
   notes: >
@@ -62,6 +91,11 @@
   factors:
     - desc: +20% DMG on Hazy Wheel
     - desc: +10% DMG to Single Target (At 100% HP)
+      meta:
+        priority: 3
+        buff: Single Target Damage
+        buffValue: 10
+        buffCondition: At 100% HP
     - desc: Hit Count Timer + 1 second
       lb: 5
   obtained: Pumpkin Cryptvine Exchange
@@ -81,6 +115,11 @@
     - desc: Recover 5% HP every 3 seconds
     - desc: -15% INT DMG Taken at 50+ Hit Count
       lb: 5
+      meta:
+        priority: 3
+        buff: INT Damage Taken Reduction
+        buffValue: 15
+        buffCondition: Hit Count > 50
   obtained: Christmas Horndevil Exchange
   
   notes: >
@@ -97,6 +136,10 @@
     - desc: Imbues attacks with ice element
       element: Ice
     - desc: +100% AP Recovery by Normal Attacks
+      meta:
+        priority: 4
+        buff: AP Recovery From Normal Attacks
+        buffValue: 20
     - desc: Recover 5% HP on DMG Dealt by Normal Attacks
       lb: 5
   obtained: Gacha

@@ -8,6 +8,15 @@
   factors:
     - desc: +20% DMG on Bloodstorm Revolution
     - desc: +10% element damage
+      meta:
+        priority: 4
+        buff: Elemental Damage
+        buffValue: 10
     - desc: -10% DMG taken during CA
       lb: 5
+      meta:
+        priority: 3
+        buff: Damage Taken Reduction
+        buffValue: 10
+        buffCondition: During CA
   obtained: Sahariel Plunderer Exchange
