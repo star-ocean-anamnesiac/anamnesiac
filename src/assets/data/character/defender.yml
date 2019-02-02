@@ -1151,10 +1151,6 @@
             buff: Single Target Damage
             buffValue: 20
         - desc: Taunt+3
-          meta:
-            priority: 1
-            buff: Taunt
-            buffValue: 3
     - name: "Knight of Grandshelt"
       effects:
         - desc: ATK+20%

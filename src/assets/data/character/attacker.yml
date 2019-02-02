@@ -489,7 +489,7 @@
         - desc: Damage Dealt to Humanoids +60%
           meta:
             priority: 4
-            buff: Humanoid Damage
+            buff: Damage To Humans
             buffValue: 60
 
   skills:
@@ -1915,7 +1915,12 @@
         - desc: +25% All Stats For Every Party Member Dead
           meta:
             priority: 3
-            buff: All Stats
+            buffs:
+              - ATK
+              - INT
+              - GRD
+              - HIT
+              - DEF
             buffCondition: Per Party Member Dead
             buffValue: 25
 

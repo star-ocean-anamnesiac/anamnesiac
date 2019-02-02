@@ -534,7 +534,7 @@
           all: true
           meta:
             priority: 1
-            buff: Normal Attack AP Recovery
+            buff: AP Recovery From Normal Attacks
             buffValue: 25
 
   skills:
