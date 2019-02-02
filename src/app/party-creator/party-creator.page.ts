@@ -340,7 +340,7 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
     await modal.present();
   }
 
-  private getParty(): string {
+  public getParty(): string {
     const parameters = new URLSearchParams(window.location.search);
     return parameters.get('party') || '';
   }
