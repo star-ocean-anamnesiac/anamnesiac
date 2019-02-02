@@ -41,7 +41,7 @@ import { Item } from '../models/item';
       <ion-item (click)="selectItem(null)">
         Clear this item slot
       </ion-item>
-      
+
       <ion-item *ngFor="let item of filteredItems" (click)="selectItem(item)">
 
         <span slot="start" class="picture-class-chunk">

@@ -287,7 +287,7 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
       if(!val) { return; }
 
       const char = val.data;
-      if(isUndefined(char)) return;
+      if(isUndefined(char)) { return; }
 
       this.setChar(char, index);
 
@@ -318,7 +318,7 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
       if(!val) { return; }
 
       const item = val.data;
-      if(isUndefined(item)) return;
+      if(isUndefined(item)) { return; }
 
       if(type === 'accessory') {
         this.setAccessory(item, index);
