@@ -435,6 +435,15 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
       });
     });
 
+    this.weaponRefs.forEach((weapRef, i) => {
+      weapRef.factors.forEach(fact => {
+        if(!fact.meta) { return; }
+
+        const factorMeta = assignMeta(fact.meta, fact, this.charRefs[i], `${weapRef.name}`);
+        buffs.push(...factorMeta);
+      });
+    });
+
     const prioritySortedBuffs = groupBy(buffs, 'priority');
     Object.keys(prioritySortedBuffs).forEach(priorityKey => {
       prioritySortedBuffs[priorityKey] = groupBy(prioritySortedBuffs[priorityKey], 'buff');
