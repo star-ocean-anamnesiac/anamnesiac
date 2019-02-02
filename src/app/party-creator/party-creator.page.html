@@ -168,7 +168,7 @@
 <ng-template #item let-item="item">
 
   <span slot="start" class="picture-class-chunk">
-    <app-appicon [name]="item.picture" [forceWidth]="64" [forceHeight]="64" type="item"></app-appicon>
+    <app-appicon class="item-icon" [name]="item.picture" [forceWidth]="64" [forceHeight]="64" type="item"></app-appicon>
     <app-appicon margin-horizontal [name]="'menu-' + item.subtype" [scaleX]="0.375" [scaleY]="0.375"></app-appicon>
   </span>
 
