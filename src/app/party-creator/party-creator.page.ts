@@ -270,9 +270,9 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
         metaRet.buff = buffName;
         metaRet.source = name;
         metaRet.sourceCharacter = char.name;
-  
+
         metaRet._metaAll = eff.all;
-  
+
         if(!this.baseStats[metaRet.buff]) { metaRet.priority = 5; }
 
         allMeta.push(metaRet);
