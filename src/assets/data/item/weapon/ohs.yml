@@ -6,9 +6,18 @@
   atk: 964
   int: 958
   factors:
-    - desc: All attribute damage +50% / Damage to mechs +50%
+    - desc: All attribute damage +50%
+      meta:
+        priority: 4
+        buff: Damage
+        buffValue: 50
+    - desc: Damage to mechs +50%
       slayer: Machine
       slayerPct: 50
+      meta:
+        priority: 4
+        buff: Damage To Machines
+        buffValue: 50
     - desc: Recover 15% of damage dealt on normal attacks as HP
     - desc: Crit Rate +10%
       lb: 5
@@ -119,6 +128,10 @@
     - desc: +20% DMG to Machines
       slayer: Machine
       slayerPct: 20
+      meta:
+        priority: 4
+        buff: Damage To Machines
+        buffValue: 20
     - desc: +4% Crit Chance
       lb: 5
       meta:
@@ -294,6 +307,10 @@
     - desc: +15% DMG to Humans
       slayer: Human
       slayerPct: 15
+      meta:
+        priority: 4
+        buff: Damage To Humans
+        buffValue: 15
     - desc: +5% ATK
       lb: 5
       meta:
@@ -342,9 +359,17 @@
     - desc: +40% DMG to Divine
       slayer: Divinity
       slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Divinities
+        buffValue: 50
     - desc: +20% DMG to Humans
       slayer: Human
       slayerPct: 20
+      meta:
+        priority: 4
+        buff: Damage To Humans
+        buffValue: 20
     - desc: -10% AP Cost
       meta:
         priority: 4

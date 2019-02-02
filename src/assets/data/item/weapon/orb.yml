@@ -118,10 +118,14 @@
       meta:
         priority: 4
         buff: Elemental Damage
-        buffValue: 15
+        buffValue: 20
     - desc: +30% DMG to Plants
       slayer: Plant
-      slayerPct: 20
+      slayerPct: 30
+      meta:
+        priority: 4
+        buff: Damage To Plants
+        buffValue: 30
     - desc: +10% Crit Rate
       meta:
         priority: 4
@@ -173,13 +177,18 @@
   atk: 960
   int: 962
   factors:
-    - desc: +40% Dark DMG Dealt / +10% DMG to Divinity
-      slayer: Divinity
-      slayerPct: 10
+    - desc: +40% Dark DMG Dealt
       meta:
         priority: 4
         buff: Dark Damage
         buffValue: 40
+    - desc: +10% DMG to Divinity
+      slayer: Divinity
+      slayerPct: 10
+      meta:
+        priority: 4
+        buff: Damage To Divinities
+        buffValue: 10
     - desc: +10% Crit Rate
       meta:
         priority: 4

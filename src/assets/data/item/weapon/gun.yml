@@ -9,6 +9,10 @@
     - desc: Damage dealt to demons +40%
       slayer: Demon
       slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Demons
+        buffValue: 40
     - desc: 80% chance of surviving a lethal attack at greater than 10% HP
     - desc: Damage taken -15% when in front of target
       lb: 5
@@ -121,6 +125,10 @@
       slayer: Demon
       element: Ice
       slayerPct: 15
+      meta:
+        priority: 4
+        buff: Damage To Demons
+        buffValue: 15
     - desc: -10% AP Cost
       meta:
         priority: 4

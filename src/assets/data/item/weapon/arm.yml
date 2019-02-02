@@ -86,6 +86,10 @@
     - desc: +40% DMG to Demons
       slayer: Demon
       slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Demons
+        buffValue: 40
     - desc: 80% Chance to Survive a Lethal Attack at 10% or more HP
     - desc: 5% HP recovery every 3 seconds.
       lb: 5

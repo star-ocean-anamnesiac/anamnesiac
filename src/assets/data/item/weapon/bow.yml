@@ -140,6 +140,10 @@
       slayer: Divinity
       slayerPct: 10
       lb: 4
+      meta:
+        priority: 4
+        buff: Damage To Divinities
+        buffValue: 10
     - desc: Additional Hit that Deals 5% of DMG Dealt by Normal Attacks
       lb: 5
   obtained: Blood Valkyrie (Exchange)
@@ -157,6 +161,10 @@
     - desc: +20% DMG to Divinities
       slayer: Divinity
       slayerPct: 20
+      meta:
+        priority: 4
+        buff: Damage To Divinities
+        buffValue: 20
     - desc: +25% DMG on Wave Motion
       lb: 1
     - desc: Additional Hit that Deals 5% of DMG Dealt by Normal Attacks
