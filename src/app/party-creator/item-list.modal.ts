@@ -45,7 +45,7 @@ import { Item } from '../models/item';
       <ion-item *ngFor="let item of filteredItems" (click)="selectItem(item)">
 
         <span slot="start" class="picture-class-chunk">
-          <app-appicon [name]="item.picture" [forceWidth]="64" [forceHeight]="64" type="item"></app-appicon>
+          <app-appicon class="item-icon" [name]="item.picture" [forceWidth]="64" [forceHeight]="64" type="item"></app-appicon>
           <app-appicon margin-horizontal [name]="'menu-' + item.subtype" [scaleX]="0.375" [scaleY]="0.375"></app-appicon>
         </span>
 
@@ -61,6 +61,10 @@ import { Item } from '../models/item';
   </ion-content>
   `,
   styles: [`
+    .item-icon {
+      background-color: #141D22;
+      outline: 3px solid #183454;
+    }
   `]
 })
 export class ItemListModal implements OnInit {
