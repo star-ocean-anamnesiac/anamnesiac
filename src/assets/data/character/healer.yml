@@ -458,7 +458,12 @@
       maxHits: 1
       meta:
         priority: 2
-        buff: All Stats
+        buffs:
+          - ATK
+          - INT
+          - DEF
+          - HIT
+          - GRD
         buffValue: 20
     - name: "Faerie Light"
       picture: Faerie_Light
@@ -855,6 +860,15 @@
       ap: 95
       notes: Party Wide
       maxHits: 1
+      meta:
+        priority: 2
+        buffs:
+          - ATK
+          - INT
+          - DEF
+          - HIT
+          - GRD
+        buffValue: 20
     - name: "Tornado"
       picture: Tornado
       element: Wind
@@ -1325,7 +1339,10 @@
       maxHits: 1
       meta:
         priority: 2
-        buff: ATK/INT/DEF
+        buffs:
+          - ATK
+          - INT
+          - DEF
         buffValue: 25
       
   rush:

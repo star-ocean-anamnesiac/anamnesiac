@@ -21,7 +21,10 @@ export interface Meta {
   priority: BuffPriority;
 
   // the "type" of buff of the meta (ATK, Damage, INT, etc)
-  buff: string;
+  buff?: string;
+
+  // the type of buff, if multiple. this should probably only be used for skills like Cheer and Angel Feather
+  buffs?: string[];
 
   // the role that the buff applies to, specifically (lowercase, also)
   buffRole?: string;

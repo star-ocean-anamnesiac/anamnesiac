@@ -263,15 +263,22 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
     const buffs = [];
 
     const assignMeta = (meta, eff, char, name) => {
-      const metaRet = clone(meta);
-      metaRet.source = name;
-      metaRet.sourceCharacter = char.name;
+      const allMeta = [];
 
-      metaRet._metaAll = eff.all;
+      (meta.buffs || [meta.buff]).forEach(buffName => {
+        const metaRet = clone(meta);
+        metaRet.buff = buffName;
+        metaRet.source = name;
+        metaRet.sourceCharacter = char.name;
+  
+        metaRet._metaAll = eff.all;
+  
+        if(!this.baseStats[metaRet.buff]) { metaRet.priority = 5; }
 
-      if(!this.baseStats[metaRet.buff]) { metaRet.priority = 5; }
+        allMeta.push(metaRet);
+      });
 
-      return metaRet;
+      return allMeta;
     };
 
     this.charRefs.forEach(charRef => {
@@ -281,14 +288,14 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
         if(!rushEff.meta) { return; }
 
         const meta = assignMeta(rushEff.meta, rushEff, charRef, `${charRef.rush.name} [Rush]`);
-        buffs.push(meta);
+        buffs.push(...meta);
       });
 
       charRef.skills.forEach(skill => {
         if(!skill.meta) { return; }
 
         const skillRef = assignMeta(skill.meta, skill, charRef, `${skill.name} [Skill]`);
-        buffs.push(skillRef);
+        buffs.push(...skillRef);
       });
 
       charRef.talents.forEach(talent => {
@@ -296,7 +303,7 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
           if(!talEffect.meta) { return; }
 
           const talEffRef = assignMeta(talEffect.meta, talEffect, charRef, `${talent.name} [Talent]`);
-          buffs.push(talEffRef);
+          buffs.push(...talEffRef);
         });
       });
     });
@@ -311,7 +318,6 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
     });
 
     this.buffs = prioritySortedBuffs;
-    console.log(this.buffs);
 
     this.calculateOptimalBuffs();
   }
