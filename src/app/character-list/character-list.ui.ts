@@ -16,7 +16,7 @@ import { LocalStorage } from 'ngx-webstorage';
       <ion-item (click)="popoverCtrl.dismiss('weapon')"><ion-label>Character Weapon</ion-label></ion-item>
       <ion-item (click)="popoverCtrl.dismiss('tier')"><ion-label>Character Tier</ion-label></ion-item>
       <ion-item (click)="popoverCtrl.dismiss('show34')">
-        <ion-label>Show 3* and 4*</ion-label>
+        <ion-label>Show 3*/4*</ion-label>
         <ion-checkbox [checked]="show34"></ion-checkbox>
       </ion-item>
     </ion-list>
