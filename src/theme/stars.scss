@@ -98,21 +98,21 @@ $bxshadow-small: box-shadow(800);
 	width: 3px;
 	background: transparent;
 	box-shadow: $bxshadow-large;
-	animation: blink-large 7s infinite;
+	// animation: blink-large 7s infinite;
 }
 .stars.medium {
 	height: 2px;
 	width: 2px;
 	background: transparent;
 	box-shadow: $bxshadow-medium;
-	animation: blink-medium 5s infinite;
+	// animation: blink-medium 5s infinite;
 }
 .stars.small {
 	height: 1px;
 	width: 1px;
 	background: transparent;
 	box-shadow: $bxshadow-small;
-	animation: blink-small 3s infinite;
+	// animation: blink-small 3s infinite;
 }
 
 ion-card {
