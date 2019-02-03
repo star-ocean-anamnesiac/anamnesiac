@@ -11,9 +11,6 @@ import { Item } from '../models/item';
     <ion-toolbar color="primary">
       <ion-title>Choose Party Character</ion-title>
       <ion-buttons slot="end">
-        <ion-button icon-only (click)="search = !search">
-          <ion-icon name="search"></ion-icon>
-        </ion-button>
         <ion-button (click)="dismiss()">
           Close
         </ion-button>
@@ -46,7 +43,7 @@ import { Item } from '../models/item';
 
         <span slot="start" class="picture-class-chunk">
           <app-appicon class="item-icon" [name]="item.picture" [forceWidth]="64" [forceHeight]="64" type="item"></app-appicon>
-          <app-appicon margin-horizontal [name]="'menu-' + item.subtype" [scaleX]="0.375" [scaleY]="0.375"></app-appicon>
+          <app-appicon margin-horizontal class="hidden-xs" [name]="'menu-' + item.subtype" [scaleX]="0.375" [scaleY]="0.375"></app-appicon>
         </span>
 
         <ion-label>
@@ -61,10 +58,6 @@ import { Item } from '../models/item';
   </ion-content>
   `,
   styles: [`
-    .item-icon {
-      background-color: #141D22;
-      outline: 3px solid #183454;
-    }
   `]
 })
 export class ItemListModal implements OnInit {

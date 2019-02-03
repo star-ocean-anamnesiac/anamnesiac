@@ -73,7 +73,7 @@
     <span class="awakened-container" *ngIf="char.awakened">
       <app-appicon [name]="'misc-awakening'" [scaleX]="0.5" [scaleY]="0.5"></app-appicon>
     </span>
-    <app-appicon *ngIf="!isFiltered" margin-horizontal [name]="'class-' + char.type" [scaleX]="0.25" [scaleY]="0.25"></app-appicon>
+    <app-appicon *ngIf="!isFiltered" margin-horizontal class="hidden-xs" [name]="'class-' + char.type" [scaleX]="0.25" [scaleY]="0.25"></app-appicon>
   </span>
 
   <ion-label>

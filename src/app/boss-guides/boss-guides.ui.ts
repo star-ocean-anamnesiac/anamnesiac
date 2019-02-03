@@ -56,11 +56,12 @@ import { BossGuide } from '../models/bossguide';
 
       <ion-item>
         <ion-row class="item-row">
-          <ion-col size-xs="6" size-sm="4">
+          <ion-col size-xs="6" size-sm="4" class="hidden-xs">
             <ion-label><strong>Inflicts</strong></ion-label>
           </ion-col>
 
-          <ion-col size-xs="6" size-sm="8" class="vertical-center">
+          <ion-col size-xs="12" size-sm="8" class="vertical-center expand-row">
+          <ion-label class="visible-xs expand-label"><strong>Inflicts</strong></ion-label>
             <ul class="boss-list has-bullets">
               <li class="list-appicon none" *ngIf="!guide.statusInflictions || guide.statusInflictions.length === 0">None</li>
               <li class="list-appicon" *ngFor="let inflict of guide.statusInflictions">
@@ -76,11 +77,12 @@ import { BossGuide } from '../models/bossguide';
 
       <ion-item>
         <ion-row class="item-row">
-          <ion-col size-xs="6" size-sm="4">
+          <ion-col size-xs="6" size-sm="4" class="hidden-xs">
             <ion-label><strong>Weaknesses</strong></ion-label>
           </ion-col>
 
-          <ion-col size-xs="6" size-sm="8" class="vertical-center">
+          <ion-col size-xs="12" size-sm="8" class="vertical-center expand-row">
+            <ion-label class="visible-xs expand-label"><strong>Weaknesses</strong></ion-label>
             <ul class="boss-list has-bullets">
               <li class="list-appicon none" *ngIf="!guide.weaknesses || guide.weaknesses.length === 0">None</li>
               <li class="list-appicon" *ngFor="let weakness of guide.weaknesses">
@@ -107,11 +109,12 @@ import { BossGuide } from '../models/bossguide';
 
       <ion-item>
         <ion-row class="item-row">
-          <ion-col size-xs="6" size-sm="4">
+          <ion-col size-xs="6" size-sm="4" class="hidden-xs">
             <ion-label><strong>Recommendations</strong></ion-label>
           </ion-col>
 
-          <ion-col size-xs="6" size-sm="8" class="vertical-center">
+          <ion-col size-xs="12" size-sm="8" class="vertical-center expand-row">
+            <ion-label class="visible-xs expand-label"><strong>Recommendations</strong></ion-label>
             <ul class="boss-list">
               <li class="list-appicon none" *ngIf="!guide.recommendations || guide.recommendations.length === 0">None</li>
               <li class="list-appicon" *ngFor="let recommend of guide.recommendations">
@@ -125,24 +128,32 @@ import { BossGuide } from '../models/bossguide';
       </ion-item>
 
       <ion-item>
-        <ion-label><strong>Enrage</strong></ion-label>
+        <ion-row class="item-row">
+          <ion-col size-xs="6" size-sm="4" class="hidden-xs">
+            <ion-label><strong>Enrage</strong></ion-label>
+          </ion-col>
 
-        <div class="vertical-center">
-          <app-appicon [name]="'misery-m1'"
-                       class="misery"
-                       [scaleX]="0.375"
-                       [scaleY]="0.375"></app-appicon> {{ guide.enrage.m1 }}
+          <ion-col size-xs="12" size-sm="8" class="vertical-center expand-row">
+            <ion-label class="visible-xs expand-label"><strong>Enrage</strong></ion-label>
 
-          <app-appicon [name]="'misery-m2'"
-                       class="misery"
-                       [scaleX]="0.375"
-                       [scaleY]="0.375"></app-appicon> {{ guide.enrage.m2 }}
-
-          <app-appicon [name]="'misery-m3'"
-                       class="misery"
-                       [scaleX]="0.375"
-                       [scaleY]="0.375"></app-appicon> {{ guide.enrage.m3 }}
-        </div>
+            <div class="vertical-center">
+              <app-appicon [name]="'misery-m1'"
+                           class="misery"
+                           [scaleX]="0.375"
+                           [scaleY]="0.375"></app-appicon> {{ guide.enrage.m1 }}
+    
+              <app-appicon [name]="'misery-m2'"
+                           class="misery"
+                           [scaleX]="0.375"
+                           [scaleY]="0.375"></app-appicon> {{ guide.enrage.m2 }}
+    
+              <app-appicon [name]="'misery-m3'"
+                           class="misery"
+                           [scaleX]="0.375"
+                           [scaleY]="0.375"></app-appicon> {{ guide.enrage.m3 }}
+            </div>
+          </ion-col>
+        </ion-row>
       </ion-item>
 
       <ion-item-divider><strong>Boss Skills</strong></ion-item-divider>
@@ -155,6 +166,7 @@ import { BossGuide } from '../models/bossguide';
               <app-appicon [name]="'misery-m' + mis"
                           *ngIf="move['m' + mis]"
                           float-right
+                          class="misery-move-icon"
                           [scaleX]="0.375"
                           [scaleY]="0.375"></app-appicon>
             </ng-container>
@@ -191,6 +203,7 @@ import { BossGuide } from '../models/bossguide';
       flex-wrap: wrap;
       justify-content: flex-end;
       margin-bottom: 0;
+      padding: 0;
     }
 
     .boss-list.has-bullets {
@@ -199,19 +212,6 @@ import { BossGuide } from '../models/bossguide';
 
     ion-tab.ion-page {
       overflow: auto;
-    }
-
-    .notes {
-      white-space: pre-wrap;
-    }
-
-    .notes, p {
-      color: #fff;
-      text-shadow:
-       -1px -1px 0 #000,
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-         1px 1px 0 #000;
     }
 
     .item-row {
@@ -239,6 +239,19 @@ import { BossGuide } from '../models/bossguide';
 
     small em strong {
       padding-left: 10px;
+    }
+
+    .expand-row {
+      flex-direction: column;
+    }
+
+    .expand-label {
+      width: 100%;
+      text-align: center;
+    }
+
+    .misery-move-icon {
+      margin-top: 16px;
     }
   `]
 })

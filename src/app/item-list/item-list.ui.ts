@@ -47,8 +47,8 @@ export class ItemSortPopover {
     <div class="stars large"></div>
 
     <ion-row class="profile-row">
-      <ion-col size-xs="6" size-md="3">
-        <app-appicon [name]="item.picture" type="item" [forceWidth]="128" [forceHeight]="128"></app-appicon>
+      <ion-col size-xs="5" size-md="3" size-lg="2" text-center>
+        <app-appicon class="item-icon" [name]="item.picture" type="item" [forceWidth]="128" [forceHeight]="128"></app-appicon>
       </ion-col>
 
       <ion-col class="shrink-top-margin">
@@ -61,7 +61,6 @@ export class ItemSortPopover {
           <span *ngIf="item.int"> {{ item.int }} INT</span>
           <span *ngIf="item.def">{{ item.def }} DEF</span>
         </p>
-        <p>Obtained: {{ item.obtained }}</p>
       </ion-col>
     </ion-row>
 
@@ -102,6 +101,14 @@ export class ItemSortPopover {
             </ion-row>
           </ion-tab>
 
+          <ion-tab tab="obtained">
+            <ion-list>
+              <ion-item>
+                {{ item.obtained }}
+              </ion-item>
+            </ion-list>
+          </ion-tab>
+
           <ion-tab-bar slot="bottom">
 
             <ion-tab-button tab="notes">
@@ -112,6 +119,11 @@ export class ItemSortPopover {
             <ion-tab-button tab="factors">
               <ion-label>Factors</ion-label>
               <ion-icon name="bookmark"></ion-icon>
+            </ion-tab-button>
+
+            <ion-tab-button tab="obtained">
+              <ion-label>Obtained</ion-label>
+              <ion-icon name="basket"></ion-icon>
             </ion-tab-button>
 
           </ion-tab-bar>

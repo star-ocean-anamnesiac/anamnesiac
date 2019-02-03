@@ -14,6 +14,26 @@
 
 .hidden {
   display: none;
+
+  &-xs {
+    @media only screen and (max-width: 575px) {
+      display: none !important;
+    }
+  }
+}
+
+.visible {
+  display: inline;
+
+  &-xs {
+    @media only screen and (max-width: 575px) {
+      display: inline !important;
+    }
+
+    @media only screen and (min-width: 576px) {
+      display: none !important;
+    }
+  }
 }
 
 .preloader {
@@ -27,6 +47,12 @@
   max-height: 64px;
   align-items: center;
   margin: 0;
+
+  @media only screen and (max-width: 575px) {
+    & ~ ion-label {
+      margin-left: 16px !important;
+    }
+  }
 }
 
 .titlebar-class-chunk {
@@ -105,4 +131,9 @@ ion-item, ion-item-divider {
 .s64x64 {
   width: 64px !important;
   height: 64px !important;
+}
+
+.item-icon {
+  background-color: #141D22;
+  outline: 3px solid #183454;
 }

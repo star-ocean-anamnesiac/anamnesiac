@@ -5,15 +5,20 @@ import { Component, OnInit } from '@angular/core';
 import { ModalController, NavParams } from '@ionic/angular';
 import { Character } from '../models/character';
 
+/*
+      
+      <ion-col text-center *ngFor="let charClass of ['attacker', 'defender', 'healer', 'invoker', 'sharpshooter']">
+        <ion-button>
+        </ion-button>
+      </ion-col>
+      */
+
 @Component({
   template: `
   <ion-header>
     <ion-toolbar color="primary">
       <ion-title>Choose Party Character</ion-title>
       <ion-buttons slot="end">
-        <ion-button icon-only (click)="search = !search">
-          <ion-icon name="search"></ion-icon>
-        </ion-button>
         <ion-button (click)="dismiss()">
           Close
         </ion-button>
@@ -38,13 +43,18 @@ import { Character } from '../models/character';
     </div>
 
     <ion-row *ngIf="filteredCharacters.length > 0">
-      <ion-col text-center *ngFor="let charClass of ['attacker', 'defender', 'healer', 'invoker', 'sharpshooter']">
-        <ion-button
-                class="role-button"
-                (click)="setRoleFilter(charClass)"
-                [color]="roleFilter && roleFilter === charClass ? charClass : (roleFilter ? 'medium' : charClass)">
-          <app-appicon [name]="'class-' + charClass" [scaleX]="0.25" [scaleY]="0.25"></app-appicon>
-        </ion-button>
+      <ion-col text-center>
+        <ion-segment class="segment-spacing">
+          <ion-button *ngFor="let charClass of ['attacker', 'defender', 'healer', 'invoker', 'sharpshooter']"
+                              class="role-button"
+                              (click)="setRoleFilter(charClass)"
+                              [color]="roleFilter 
+                                && roleFilter === charClass 
+                                  ? charClass 
+                                  : (roleFilter ? 'medium' : charClass)">
+            <app-appicon [name]="'class-' + charClass" [scaleX]="0.25" [scaleY]="0.25"></app-appicon>
+          </ion-button>
+        </ion-segment>
       </ion-col>
     </ion-row>
 
@@ -57,7 +67,7 @@ import { Character } from '../models/character';
 
         <span slot="start" class="picture-class-chunk">
           <app-appicon [name]="char.picture" [forceWidth]="64" [forceHeight]="64" type="char"></app-appicon>
-          <app-appicon margin-horizontal [name]="'class-' + char.type" [scaleX]="0.25" [scaleY]="0.25"></app-appicon>
+          <app-appicon margin-horizontal class="hidden-xs" [name]="'class-' + char.type" [scaleX]="0.25" [scaleY]="0.25"></app-appicon>
         </span>
 
         <ion-label>
@@ -77,6 +87,10 @@ import { Character } from '../models/character';
   styles: [`
     .awakened-container {
       margin-left: 16px;
+    }
+
+    .segment-spacing {
+      justify-content: space-evenly;
     }
   `]
 })

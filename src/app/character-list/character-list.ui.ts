@@ -57,7 +57,7 @@ export class CharacterSortPopover {
     <div class="stars large"></div>
 
     <ion-row class="profile-row">
-      <ion-col size-xs="4" size-md="3" position-relative>
+      <ion-col size-xs="5" size-md="3" size-lg="2" position-relative text-center>
         <app-appicon [name]="char.picture" [forceWidth]="128" [forceHeight]="128" type="char"></app-appicon>
 
         <span class="awakened-container" *ngIf="char.awakened">
@@ -70,7 +70,9 @@ export class CharacterSortPopover {
           <app-appicon [name]="'char-' + char.star" [scaleX]="0.5" [scaleY]="0.5" [inline]="true"></app-appicon>
           <span>{{ char.ace ? 'ACE' : '' }} {{ char.limited ? '(Limited)' : '' }}</span>
         </p>
-        <p>Weapon: {{ weap }}<p>
+        <p>
+          <app-weapon [weapon]="char.weapon"></app-weapon>
+        <p>
       </ion-col>
     </ion-row>
 

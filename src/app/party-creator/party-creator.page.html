@@ -85,7 +85,7 @@
   
     <ion-list>
       <ion-item *ngFor="let optbuff of optimalBuffs | keyvalue">
-        <ion-label>
+        <ion-label text-wrap>
           <div><strong>Base Total:</strong> {{ optbuff.key }} +{{ optbuff.value }}%</div>
     
           <div class="additional-buff-row" *ngIf="characterOptimalBuffBoosts[optbuff.key]">
@@ -111,7 +111,7 @@
     <ion-list *ngFor="let buffpriority of buffs | keyvalue; let i = index">
   
       <ion-item-divider (click)="priorityVisibility[i] = !priorityVisibility[i]">
-        <ion-icon [name]="priorityVisibility[i] ? 'arrow-dropdown' : 'arrow-dropright'"></ion-icon>
+        <ion-icon [name]="priorityVisibility[i] ? 'arrow-dropdown' : 'arrow-dropright'" class="margin-right"></ion-icon>
         <strong>Priority {{ buffpriority.key }} - {{ buffPriorityDescs[buffpriority.key] }}</strong>
       </ion-item-divider>
   
@@ -130,13 +130,15 @@
 
             <ion-row class="single-talent-row">
               <ion-col size-md="6" size-sm="12">
-                <p>{{ buffData.buff }} +{{ buffData.buffValue }}%</p>
-                <p *ngIf="buffData.buffRole">
-                  <small><strong>Role:</strong> {{ buffData.buffRole | titlecase }}</small>
-                </p>
-                <p *ngIf="buffData.buffCondition">
-                  <small><strong>Condition:</strong> {{ buffData.buffCondition }}</small>
-                </p>
+                <ion-label text-wrap>
+                  <p>{{ buffData.buff }} +{{ buffData.buffValue }}%</p>
+                  <p *ngIf="buffData.buffRole">
+                    <small><strong>Role:</strong> {{ buffData.buffRole | titlecase }}</small>
+                  </p>
+                  <p *ngIf="buffData.buffCondition">
+                    <small><strong>Condition:</strong> {{ buffData.buffCondition }}</small>
+                  </p>
+                </ion-label>
               </ion-col>
 
               <ion-col size-md="6" size-sm="12" class="text-align-center" text-right>
@@ -161,7 +163,7 @@
     <span class="awakened-container" *ngIf="char.awakened">
       <app-appicon [name]="'misc-awakening'" [scaleX]="0.5" [scaleY]="0.5"></app-appicon>
     </span>
-    <app-appicon margin-horizontal [name]="'class-' + char.type" [scaleX]="0.25" [scaleY]="0.25"></app-appicon>
+    <app-appicon margin-horizontal [name]="'class-' + char.type" class="hidden-xs" [scaleX]="0.25" [scaleY]="0.25"></app-appicon>
   </span>
 
   <ion-label>
@@ -176,7 +178,7 @@
 
   <span slot="start" class="picture-class-chunk">
     <app-appicon class="item-icon" [name]="item.picture" [forceWidth]="64" [forceHeight]="64" type="item"></app-appicon>
-    <app-appicon margin-horizontal [name]="'menu-' + item.subtype" [scaleX]="0.375" [scaleY]="0.375"></app-appicon>
+    <app-appicon margin-horizontal [name]="'menu-' + item.subtype" class="hidden-xs" [scaleX]="0.375" [scaleY]="0.375"></app-appicon>
   </span>
 
   <ion-label>
