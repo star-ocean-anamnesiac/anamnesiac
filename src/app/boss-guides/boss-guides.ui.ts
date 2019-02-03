@@ -141,12 +141,12 @@ import { BossGuide } from '../models/bossguide';
                            class="misery"
                            [scaleX]="0.375"
                            [scaleY]="0.375"></app-appicon> {{ guide.enrage.m1 }}
-    
+
               <app-appicon [name]="'misery-m2'"
                            class="misery"
                            [scaleX]="0.375"
                            [scaleY]="0.375"></app-appicon> {{ guide.enrage.m2 }}
-    
+
               <app-appicon [name]="'misery-m3'"
                            class="misery"
                            [scaleX]="0.375"

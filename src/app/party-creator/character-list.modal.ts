@@ -6,7 +6,7 @@ import { ModalController, NavParams } from '@ionic/angular';
 import { Character } from '../models/character';
 
 /*
-      
+
       <ion-col text-center *ngFor="let charClass of ['attacker', 'defender', 'healer', 'invoker', 'sharpshooter']">
         <ion-button>
         </ion-button>
@@ -48,9 +48,9 @@ import { Character } from '../models/character';
           <ion-button *ngFor="let charClass of ['attacker', 'defender', 'healer', 'invoker', 'sharpshooter']"
                               class="role-button"
                               (click)="setRoleFilter(charClass)"
-                              [color]="roleFilter 
-                                && roleFilter === charClass 
-                                  ? charClass 
+                              [color]="roleFilter
+                                && roleFilter === charClass
+                                  ? charClass
                                   : (roleFilter ? 'medium' : charClass)">
             <app-appicon [name]="'class-' + charClass" [scaleX]="0.25" [scaleY]="0.25"></app-appicon>
           </ion-button>
