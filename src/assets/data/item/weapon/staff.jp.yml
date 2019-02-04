@@ -1,0 +1,15 @@
+
+- name: Holy Rod
+  cat: jp
+  star: 5
+  picture: Holy_Rod
+  atk: 0
+  int: 835
+  factors:
+    - desc: Light damage +15%
+      meta:
+        priority: 4
+        buff: Light Damage
+        buffValue: 15
+    - desc: Radiant Lancer damage +20%
+  obtained: Coin Shop (Staff), Transmute, Gacha

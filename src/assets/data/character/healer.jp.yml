@@ -1,0 +1,160 @@
+
+- name: Sophia Esteed (Summer)
+  cat: jp
+  rating: 8
+  picture: everlastingsummersophiaesteed
+  weapon: orb
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 13965
+    atk: 1747
+    int: 3010
+    def: 1327
+    hit: 1050
+    grd: 1148
+
+  talents:
+    - name: "Seaside Enchantress II"
+      effects: 
+        - desc: INT +20%
+          meta:
+            priority: 4
+            buff: INT
+            buffValue: 20
+        - desc: Recover allies AP when using offensive symbology
+    - name: "Making Waves II"
+      effects: 
+        - desc: AP cost -40%
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 40
+        - desc: INT damage +30% when skill chain 3+
+          meta:
+            priority: 4
+            buff: INT Damage
+            buffCondition: Skill Chain 3+
+            buffValue: 30
+    - name: "Cat Ball and Sandals II"
+      effects: 
+        - desc: ATK damage +20%
+          all: true
+          meta:
+            priority: 1
+            buff: INT Damage
+            buffValue: 20
+        - desc: INT damage +20%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK Damage
+            buffValue: 20
+        - desc: Nullify "movement speed down" effect
+          all: Self & Close Range
+    - name: "Summer Combo"
+      effects: 
+        - desc: Reduce symbology cast time by 30%
+          meta:
+            priority: 4
+            buff: Cast Time Reduction
+            buffValue: 30
+        - desc: AP consumption -10%
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 10
+
+  skills:
+    - name: "Thunder Wave"
+      picture: Thunder_Flare
+      element: Lightning
+      power: INT x 580%
+      ap: 35
+      notes: Allies recover 8 AP
+      maxHits: 4
+    - name: "Faerie Light Wave"
+      picture: Faerie_Light
+      power: INT x 120%
+      ap: 30
+      notes: Party Heal
+      maxHits: 1
+    - name: "Lightning Wave"
+      picture: Lightning
+      element: Lightning
+      power: INT x 200%
+      ap: 20
+      notes: Allies recover 4 AP
+      maxHits: 10
+    - name: "Lightning Strike"
+      picture: Lightning_Strike
+      element: Lightning
+      power: INT x 770%
+      ap: 47
+      notes: Allies recover 7 AP
+      maxHits: 10
+      
+  rush:
+    name: "Lightning-Fast Serve"
+    picture: Lightning_Fast_Service_Summer_Sophia
+    element: Thunder
+    effects: 
+      - desc: +40% INT
+        all: true
+        duration: 20
+        meta:
+          priority: 1
+          buff: INT
+          buffValue: 40
+      - desc: Recover 50% HP
+        all: true
+    power: INT x 3000%
+    maxHits: 10
+        
+  notes: >
+      _For Summer, Sophia decided to try out being a healer, while not actually giving up much in the way of her damage. She has a
+      significantly higher INT stat than any other healer in the game and is an orb wielder on top, meaning she doesn't have to
+      deal with the laggy staff animations that almost every other healer currently does. Her fast casts and spells mean she isn't
+      that bad for wracking up hit count helping her rush gain._
+      
+      
+      Her most powerful utility aspect however is her ability to be an
+      AP battery, where casting certain offensive spells will grant AP to the other party members. This means she's good in just
+      about any composition, though her post INT rush means she really shines with invokers. If SSophia has any weaknesses it would
+      be that her actual heal is not the most potent in a pinch and may require a cancel bonus before hand._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Offensive spells restore AP to the party
+      
+      - Post rush buff that's powerful for self and other INT characters.
+      
+      - High damage. Especially for a healer.
+      
+      - Orb wielder, makes her less clunky and laggy compared to her staff counter parts.
+      
+      
+      **Cons**
+      
+      - Weak standalone heal. Highly depending on weaving it into her rotation for effectiveness.
+      
+      - This means the AI will suck with her. Hard.
+      
+      - Lightning Wave has a max range which can make it awkward to use.
+      
+      - Below average rush build.
+      
+      
+      **Rotation**
+      
+      *Normal > Lightning Strike > Lightning Wave > Lightning Strike > Spam it till out of AP. (General combo. Requires 2-3 AP seed.)*
+      
+      *Normal > Lightning Strike > Faerie Light Wave > Lightning Strike > Spam it till out of AP. (No AP seed.)
+      
+      *Thunder Flare is a workable replacement for Lightning Wave and helps her rush build, but beware its higher AP cost.

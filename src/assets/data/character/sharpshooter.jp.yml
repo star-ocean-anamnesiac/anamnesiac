@@ -1,0 +1,94 @@
+
+- name: 9S
+  cat: jp
+  rating: 10
+  picture: 9s
+  weapon: ohs
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 14280
+    atk: 2868
+    int: 1537
+    def: 1773
+    hit: 1371
+    grd: 924
+
+  talents:
+    - name: "Fleeting Gentleness"
+      effects: 
+        - desc: Damage +30%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 30
+        - desc: ATK +40% when HP 100%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: HP at 100%
+            buffValue: 40
+    - name: "Scanner Type"
+      effects: 
+        - desc: Evasion AP consumption -50%
+          all: true
+        - desc: Movement speed +30%
+          all: true
+    - name: "Blade of Revenge"
+      effects: 
+        - desc: Enables evasion during air attacks
+        - desc: Movement distance & speed +100%
+    - name: "Whereabouts of Brethren"
+      effects: 
+        - desc: ATK +15%
+          meta:
+            priority: 4
+            buff: ATK
+            buffValue: 15
+        - desc: HIT +10%
+          meta:
+            priority: 4
+            buff: HIT
+            buffValue: 10
+
+  skills:
+    - name: "YoHRa Arms: Three"
+      picture: Helmsplitter
+      power: ATK x 920%
+      ap: 53
+      maxHits: 1
+    - name: "YoHRa Arms: Four"
+      picture: YoHRa_Arms_Four
+      power: ATK x 620%
+      ap: 26
+      maxHits: 1
+    - name: "YoHRa Pod: One"
+      picture: YoHRa_Pod_One
+      power: ATK x 180%
+      ap: 13
+      maxHits: 1
+    - name: "YoHRa Pod: Two"
+      picture: YoHRa_Pod_Two
+      power: ATK x 380%
+      ap: 20
+      maxHits: 1
+      
+  rush:
+    name: "YoHRa Hack: Zero"
+    picture: YoHRa_Hacking_Zero_9S
+    effects: 
+      - desc: Recover 50% HP
+        all: true
+      - desc: ATK damage +30% 
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: ATK Damage
+          buffValue: 30
+    power: ATK x 4000%
+    maxHits: 16

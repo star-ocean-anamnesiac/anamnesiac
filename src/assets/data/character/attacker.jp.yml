@@ -1,0 +1,143 @@
+
+- name: 2B
+  cat: jp
+  rating: 10
+  picture: 2b
+  weapon: ohs
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15855
+    atk: 2704
+    int: 1549
+    def: 1969
+    hit: 1134
+    grd: 826
+
+  talents:
+    - name: "Quiet Determination"
+      effects: 
+        - desc: ATK +25%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 25
+        - desc: ATK +45% when HP 100% 
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 45
+    - name: "Automated Infantry Android"
+      effects: 
+        - desc: Evasion AP consumption -100% when Just Timing evasion
+    - name: "Silver Protection"
+      effects: 
+        - desc: AP recovery from normal attacks +100%
+          all: true
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffValue: 100
+    - name: "Prayer"
+      effects: 
+        - desc: Evasion AP consumption -50% 
+        - desc: Enables evasion during air attacks
+        - desc: Imbues attacks with light/dark element
+
+  skills:
+    - name: "YoHRa Arms: One"
+      picture: YoHRa_Arms_One
+      power: ATK x 380%
+      ap: 22
+      maxHits: 2
+      highlight: true
+    - name: "YoHRa Arms: Two"
+      picture: YoHRa_Arms_Two
+      power: ATK x 800%
+      ap: 42
+      maxHits: 2
+    - name: "YoHRa Pod: One"
+      picture: YoHRa_Pod_One
+      power: ATK x 180%
+      ap: 13
+      maxHits: 1
+    - name: "YoHRa Pod: Two"
+      picture: YoHRa_Pod_Two
+      power: ATK x 380%
+      ap: 20
+      maxHits: 1
+      highlight: true
+
+  rush:
+    name: "YoHRa Arms: Zero"
+    picture: YoHRa_Arms_Ø_2B
+    effects: 
+      - desc: All elemental damage +55%
+        duration: 20
+        meta:
+          priority: 4
+          buff: Elemental Damage
+          buffValue: 55
+      - desc: All elemental damage +50%
+        all: true
+        duration: 20
+        meta:
+          priority: 1
+          buff: Elemental Damage
+          buffValue: 50
+    power: ATK x 4000%
+    maxHits: 27
+    
+  notes: >
+      _The meta breaker herself. 2B enters the game way ahead of schedule and even her nerfs do little to slow her down. 2B is an 
+      all round great unit, she does good damage, has a melee and ranged combo while also providing powerful buffs. Her ATK buff is
+      only matched by Lasswell when the condition is met and she gives AP recovery on normals that allows players to have overall
+      higher damage output. She then also has a powerful elemental damage buff that matches many characters in the game post rush
+      and the icing on the cake is she has a built in double imbue of light and dark._
+      
+      
+      _For downsides the biggest one is her ATK buff conditional isn't the most consistent, each player has to keep their HP at 100%
+      without a healer or party wide healing in some form this can be very difficult to get the full benefit from. Also talent based
+      imbue is a double edged sword, while very good as it lets you use racial weapons against bosses your two imbues cover, you will
+      need elemental imbue weapons to be effective against bosses who resist them. A good example of this in GL is Michael who resists
+      everything but ice. Luckily ohs category has all but dark covered so if you have the ice imbue sword 2b can be used but you will
+      need that specific weapon, thus why it is a weakness._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Strong ATK based buff and elemental post rush buff.
+      
+      - Huge AP recovery on normal buff.
+      
+      - Cheaper dodging and can air dodge.
+      
+      - Innate Light & Dark imbue
+      
+      - Has a melee and ranged skill set.
+      
+      
+      **Cons**
+      
+      - ATK buff condition is inconsistent
+      
+      - Self imbue can be a downside against certain bosses if you don't own certain weapons.
+      
+      
+      **Rotation**
+      
+      - As a note YoHRa Pod: One VS YoHRa Arms: two is a personal preference. Whether you want a better ranged combo or using arms two
+      as a verticle dodge.
+      
+      *Normal > YoHRa Arms: One > YoHRa Pod: Two > YoHRa Arms: One > Spam it till out of AP. (General combo.)*
+      
+      *Normal > YoHRa Pod: Two > YoHRa Arms: One (Miss on purpose) > YoHRa Pod: Two > Spam it till out of AP. (Ranged combo.)*
+      
+      *Normal > YoHRa Pod: Two > YoHRa Pod: One > YoHRa Pod: Two > Spam it till out of AP. (Ranged combo if running ranged set up.)*

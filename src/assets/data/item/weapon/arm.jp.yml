@@ -1,0 +1,26 @@
+
+- name: Striped Cat Mitts
+  cat: jp
+  star: 5
+  picture: Striped_Cat_Mitts
+  atk: 961
+  int: 958
+  factors:
+    - desc: Imbue light element / +20% light damage
+      element: Light
+      meta:
+        priority: 4
+        buff: Light Damage
+        buffValue: 20
+    - desc: -10% AP cost
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 10
+    - desc: 80% chance to survive a lethal attack at 10% or more HP
+      lb: 5
+  obtained: Gacha
+
+  notes: >
+    Light imbue arms and as I type this the only elemental arms you can get. A must keep, even if you don't have HMillie these will come
+    in useful later.

@@ -1,0 +1,17 @@
+
+- name: Reformed SRF Arrow
+  cat: jp
+  star: 5
+  picture: SRF_Bow_Remodelled
+  atk: 477
+  factors:
+    - desc: Imbues attacks with wind element
+      element: Wind
+    - desc: Rapacious Sparrows damage +20%
+    - desc: Additional hit that deals 5% of damage dealt on normal attacks
+      lb: 5
+  obtained: Jie Revorse Exchange
+  
+  notes: >
+    A wind bow intended for Reimi. If you don't have the windburst bow this is very much worth having as an elemental bow. Extra plus
+    plus points on a good Reimi player.

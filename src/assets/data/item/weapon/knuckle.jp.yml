@@ -1,0 +1,25 @@
+
+- name: Knuckles of Hope
+  cat: jp
+  star: 5
+  picture: Fallen_Knuckles
+  atk: 474
+  int: 478
+  factors:
+    - desc: Light damage +15%
+      meta:
+        priority: 4
+        buff: Light Damage
+        buffValue: 15
+    - desc: DEF +10%
+      meta:
+        priority: 4
+        buff: DEF
+        buffValue: 10
+    - desc: Crit Rate +4%
+      lb: 5
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 4
+  obtained: Coin Shop (Michael)

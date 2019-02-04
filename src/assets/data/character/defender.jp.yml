@@ -1,0 +1,139 @@
+
+- name: A2
+  cat: jp
+  rating: 10
+  picture: a2
+  weapon: greatsword
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 21945
+    atk: 3041
+    int: 1510
+    def: 2789
+    hit: 833
+    grd: 1043
+
+  talents:
+    - name: "Vortex of Hatred"
+      effects: 
+        - desc: HP +20%
+          all: true
+          meta:
+            priority: 1
+            buff: HP
+            buffValue: 20
+        - desc: Will not flinch to damage under 20% max HP
+          all: true
+    - name: "Dark Impulse"
+      effects: 
+        - desc: AP 100% Recovery when Just Timing evasion
+        - desc: Recover 10 AP to all allies when Just Timing evasion
+    - name: "Blade of Inorganic"
+      effects: 
+        - desc: Single target damage +20%
+          all: true
+          meta:
+            priority: 1
+            buff: Single Target Damage
+            buffValue: 20
+        - desc: Single target damage +40% when HP is 100%
+          all: true
+          meta:
+            priority: 1
+            buff: Single Target Damage
+            buffCondition: HP is 100%
+            buffValue: 40
+    - name: "Beautiful World"
+      effects: 
+        - desc: ATK +20%
+          meta:
+            priority: 4
+            buff: ATK
+            buffValue: 20
+        - desc: DEF +20%
+          meta:
+            priority: 4
+            buff: DEF
+            buffValue: 20
+
+  skills:
+    - name: "YoHRa Arms: Eleven"
+      picture: YoHRa_Arms_Eleven
+      power: ATK x 600%
+      ap: 27
+      maxHits: 5
+    - name: "YoHRa Arms: Twelve"
+      picture: YoHRa_Arms_Twelve
+      power: ATK x 1240%
+      ap: 52
+      maxHits: 4
+    - name: "YoHRa Pod: One"
+      picture: YoHRa_Pod_One
+      power: ATK x 180%
+      ap: 13
+      maxHits: 1
+    - name: "YoHRa Pod: Two"
+      picture: YoHRa_Pod_Two
+      power: ATK x 380%
+      ap: 20
+      maxHits: 1
+      
+  rush:
+    name: "YoHRa Arms: One Hundred"
+    picture: YoHRa_Arms_One_Hundred_A2
+    effects: 
+      - desc: Single Target Damage +50%
+        duration: 20
+        meta:
+          priority: 4
+          buff: Single Target Damage
+          buffValue: 50
+      - desc: Recover 15% of max HP every 3 seconds
+        duration: 20
+    power: ATK x 4500%
+    maxHits: 25
+    
+  notes: >
+      _A2 arrives exceptionally early for GL along with the other Nier characters. This also makes her the first Greatsword character
+      for GL. A2 is an offensive tank, she hits very hard and even her talents are more damage focused. Like any defender she brings
+      anti-flinch to the party, as well as a HP buff for the party. Her rush hits extremely hard, helps her deal even more damage and
+      gives her health regen giving her sustain. This means that she is a favourite for going auto on content._
+      
+      
+      _On top of all of this 
+      perfect dodging restores AP to herself and the party. She also has the ability to either use a long or short ranged combo 
+      depending on what you want to set. It's very hard to really think of any weaknesses she has and it will be a while before we get
+      a defender that truly surpasses her. If you had to try and find one, it's that HP related talents aren't the most consistent._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Perfect dodging restores AP to the party
+      
+      - Strong buffs for both offense and defence.
+      
+      - High personal damage output, especially post rush.
+      
+      - Post rush regen gives sustain.
+      
+      
+      **Cons**
+      
+      - HP based talents aren't consistent without setting up a proper composition
+      
+      
+      **Rotation**
+      
+      *Pod 1 > Pod 2 (Ranged combo)*
+      
+      *Normal > Pod 2 > Sword 11 > Sword 12 (Melee set combo)*
+      
+      *Normal > Pod 1 > Pod 2 > CA Sword 12 (Ranged set combo)*
+      
+      *Pod 2 > Pod 1 > Pod 2 > CA Sword 12 (Ranged set combo from range)*

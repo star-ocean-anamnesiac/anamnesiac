@@ -1,0 +1,13 @@
+
+- name: Emil Mask
+  cat: jp
+  star: 5
+  picture: Emil's_Face
+  def: 728
+  factors:
+    - desc: 40% chance of freezing nullification
+    - desc: 2% HP recovery every 5 seconds
+  obtained: NieR Geared Wisp (Gacha/Drop)
+
+  notes: >
+    It's okay, it does its job on the Nier units which it comes with to help keep their HP topped off from minor incidental damage from trash mobs before the boss floor. MLBable.	

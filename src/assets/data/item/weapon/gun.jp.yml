@@ -1,0 +1,28 @@
+
+- name: Divine Wave Gun
+  cat: jp
+  star: 5
+  picture: Sacred_Gun_Divine_Blue
+  atk: 962
+  int: 959
+  factors:
+    - desc: Damage dealt to demons +40%
+      slayer: Demon
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Demons
+        buffValue: 40
+    - desc: 80% chance of surviving a lethal attack at greater than 10% HP
+    - desc: Damage taken -15% when in front of target
+      lb: 5
+      meta:
+        priority: 3
+        buff: Damage Taken Reduction
+        buffValue: 15
+        buffCondition: In Front Of Target
+  obtained: Gacha
+  
+  notes: >
+    It's a good demon hating weapon and a decent neutral option since it has grit chance. Otherwise it works as a strong enough neutral
+    weapon. Worth keeping.

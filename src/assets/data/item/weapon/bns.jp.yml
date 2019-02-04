@@ -1,0 +1,21 @@
+
+- name: Eldar Lord Rapier
+  cat: jp
+  star: 5
+  picture: Eldar_Lord_Rapier
+  atk: 474
+  int: 476
+  factors:
+    - desc: Dark damage +30%
+      meta:
+        priority: 4
+        buff: Dark Damage
+        buffValue: 30
+    - desc: Cursed Reaping Spark damage +20%
+    - desc: INT +20%
+      lb: 5
+      meta:
+        priority: 4
+        buff: INT
+        buffValue: 20
+  obtained: Coin Shop (Frost)

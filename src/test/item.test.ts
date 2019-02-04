@@ -25,11 +25,16 @@ test('All items have valid information', async t => {
 
     const type = id === 'all' ? 'accessory' : 'weapon';
 
-    const data = await promises.readFile(`src/assets/data/item/${type}/${id}.yml`, 'utf-8');
-    const items: Item[] = YAML.safeLoad(data);
+    const datagl = await promises.readFile(`src/assets/data/item/${type}/${id}.yml`, 'utf-8');
+    const itemsgl: Item[] = YAML.safeLoad(datagl);
+
+    const datajp = await promises.readFile(`src/assets/data/item/${type}/${id}.jp.yml`, 'utf-8');
+    const itemsjp: Item[] = YAML.safeLoad(datajp);
+
+    const items = itemsgl.concat(itemsjp);
 
     items.forEach(item => {
-      const parenName = ` (${item.name})`;
+      const parenName = ` (${item.name}) [${item.cat}]`;
 
       t.truthy(item.name, 'name must be set');
       t.falsy(item.type, 'type should not be set' + parenName);

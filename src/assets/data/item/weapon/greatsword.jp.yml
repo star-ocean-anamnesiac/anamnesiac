@@ -1,0 +1,27 @@
+
+- name: Beastlord
+  cat: jp
+  star: 5
+  picture: Beastlord
+  atk: 963
+  int: 958
+  factors:
+    - desc: Imbues attacks with light element
+      element: Light
+    - desc: Damage Taken -10%
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffValue: 10
+    - desc: AP consumption -10%
+      lb: 5
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 10
+  obtained: Gacha (Limited)
+  
+  notes: >
+    The factors aren't going to blow you away. They're strong enough though. But the biggest thing is that even on JP this is the only
+    light imbue greatsword. On top of that it's one of the only limited time weapons in the game. So if you missed it, well check out the
+    other greatswords for options.

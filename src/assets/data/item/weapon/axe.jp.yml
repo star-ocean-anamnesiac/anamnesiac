@@ -1,0 +1,22 @@
+
+- name: Jet Hammer
+  cat: 'jp'
+  star: 5
+  picture: Jet_Hammer
+  atk: 531
+  int: 529
+  factors:
+    - desc: +20% DMG on Welch Spinning Chop
+    - desc: +10% DMG
+      meta:
+        priority: 4
+        buff: Damage Boost
+        buffValue: 10
+    - desc: -10% ATK DMG taken when attacking
+      lb: 5
+      meta:
+        priority: 3
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+        buffCondition: When Attacking
+  obtained: Cannon Dragoon Exchange

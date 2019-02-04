@@ -23,11 +23,16 @@ test('All characters have valid information', async t => {
   }, {});
     
   await Promise.all(classes.map(async charClass => {
-    const data = await promises.readFile(`src/assets/data/character/${charClass.toLowerCase()}.yml`, 'utf-8');
-    const characters: Character[] = YAML.safeLoad(data);
+    const datagl = await promises.readFile(`src/assets/data/character/${charClass.toLowerCase()}.yml`, 'utf-8');
+    const charactersgl: Character[] = YAML.safeLoad(datagl);
+
+    const datajp = await promises.readFile(`src/assets/data/character/${charClass.toLowerCase()}.jp.yml`, 'utf-8');
+    const charactersjp: Character[] = YAML.safeLoad(datajp);
+
+    const characters = charactersgl.concat(charactersjp);
 
     characters.forEach(char => {
-      const parenName = ` (${char.name})`;
+      const parenName = ` (${char.name}) [${char.cat}]`;
 
       t.truthy(char.name, 'name');
       t.falsy(char.type, 'type should not be set' + parenName);

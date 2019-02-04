@@ -1,0 +1,23 @@
+
+
+- name: Baphomet's Blades
+  cat: jp
+  star: 5
+  picture: Baphomet's_Blades
+  atk: 515
+  int: 512
+  factors:
+    - desc: ATK +15%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 15
+    - desc: Receive 10% of damage dealt as HP during normal attacks
+    - desc: Additional hit that deals 5% damage of normal attack
+      lb: 3
+  obtained: Gacha / Dual Blade Coin Exchange
+  
+  notes: >
+    The best dual swords in the neutral slot currently. Attack scaling, helps make up for the lack of stats, the life steal is nice for
+    sustain and the third factor is a nice damage bonus that has synergy with the second factor. Very good to pick up from the coin
+    shop.

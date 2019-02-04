@@ -1,0 +1,127 @@
+
+- name: Sophia Esteed
+  cat: jp
+  rating: 8
+  picture: sophiaesteed
+  weapon: staff
+  ace: true
+  limited: false
+  star: 5
+
+  stats:
+    hp: 12285
+    atk: 1563
+    int: 4095
+    def: 1327
+    hit: 1057
+    grd: 833
+
+  talents:
+    - name: "Active Female High School Student"
+      effects: 
+        - desc: INT +50%
+          meta:
+            priority: 4
+            buff: INT
+            buffValue: 50
+    - name: "Jealous Person"
+      effects: 
+        - desc: Critical Rate +30%
+          all: Invoker
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffRole: invoker
+            buffValue: 30
+        - desc: Critical Rate +30%
+          all: Healer
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffRole: healer
+            buffValue: 30
+    - name: "Skillful at Getting By"
+      effects: 
+        - desc: AP consumption -20%
+          all: Invoker
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffRole: invoker
+            buffValue: 20
+        - desc: AP consumption -20%
+          all: Healer
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffRole: healer
+            buffValue: 20
+    - name: "Connection"
+      effects: 
+        - desc: Reduce symbology cast time by 30%
+          meta:
+            priority: 4
+            buff: Cast Time Reduction
+            buffValue: 30
+
+  skills:
+    - name: "Plunging Fire Bolts"
+      picture: Fire_Bolts
+      element: Fire
+      power: INT x 200%
+      ap: 20
+      maxHits: 6
+      highlight: true
+    - name: "Stone Rain"
+      picture: Stone_Rain
+      element: Earth
+      power: INT x 460%
+      ap: 35
+      maxHits: 5
+    - name: "Enhance"
+      picture: Enhance_Growth
+      element: Fire
+      ap: 60
+      notes: +25% ATK to party. A good buff skill!
+      meta:
+        priority: 2
+        buff: ATK
+        buffValue: 25
+      highlight: true
+    - name: "Violent Explosion"
+      picture: Explosion
+      element: Fire
+      power: INT x 770%
+      ap: 45
+      maxHits: 14
+      highlight: true
+      
+  rush:
+    name: "Meteor Swarm"
+    picture: Meteor_Swarm_Sophia
+    effects: 
+      - desc: +70% INT
+        duration: 20
+        meta:
+          priority: 4
+          buff: INT
+          buffValue: 70
+      - desc: -60% AP cost
+        duration: 20
+        meta:
+          priority: 4
+          buff: AP Cost Reduction
+          buffValue: 60
+    power: INT x 3500%
+    maxHits: 9
+
+  notes: >
+      _Sophia is an interesting caster. Though she is elemental locked like all of the other casters, she also brings an ATK buffing
+      skill that allows her to fit into physical attacking compositions. Due to this, if you enjoy the staff invoker play style she's
+      probably the best to invest in. Her talents all buff her, and she has a homing attack that helps deal with moving targets as
+      well. A viable self sufficient flexible caster._
+
+      **Rotation**
+
+      *Normal > CA Explosion > Fire Bolt > Explosion > Explosion (General damage rotation. Recommended with 101 AP.)*
+      *Normal > CA Fire Bolt > Explosion > Fire Bolt (Moving target rotation.)*

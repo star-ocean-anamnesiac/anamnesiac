@@ -1,0 +1,31 @@
+
+- name: Blackseed Watermelon Orb
+  cat: jp
+  star: 5
+  picture: Black_Thunder_Watermelon_Ball
+  atk: 959
+  int: 965
+  factors:
+    - desc: Lightning damage +30%
+      meta:
+        priority: 4
+        buff: Lightning Damage
+        buffValue: 30
+    - desc: Dark damage +30%
+      meta:
+        priority: 4
+        buff: Dark Damage
+        buffValue: 30
+    - desc: 80% chance to survive a lethal attack when HP is greater than 10%
+    - desc: Damage taken -30% at less than 50% HP
+      lb: 5
+      meta:
+        priority: 3
+        buff: Damage Taken Reduction
+        buffValue: 30
+        buffCondition: HP < 50%
+  obtained: Gacha
+  
+  notes: >
+    An incredible weapon. Good for both Summer Sophia and Fiore due to it's dual element boost. It has very good defensive factors on it
+    with grit being strong on a healer like Summer Sophia in particular. Keep it if you pull it.
