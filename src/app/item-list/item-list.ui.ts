@@ -3,6 +3,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { PopoverController, Tabs, NavParams, ModalController } from '@ionic/angular';
 
 import { Item } from '../models/item';
+import { LocalStorage } from 'ngx-webstorage';
 
 @Component({
   template: `
@@ -13,12 +14,20 @@ import { Item } from '../models/item';
       <ion-item (click)="popoverCtrl.dismiss('element')"><ion-label>Item Element</ion-label></ion-item>
       <ion-item (click)="popoverCtrl.dismiss('slayer')"><ion-label>Item Slayer</ion-label></ion-item>
       <ion-item (click)="popoverCtrl.dismiss('type')"><ion-label>Item Type</ion-label></ion-item>
+      <ion-item (click)="popoverCtrl.dismiss('show1234')">
+        <ion-label>Show 1*/2*3*/4*</ion-label>
+        <ion-checkbox [checked]="show1234"></ion-checkbox>
+      </ion-item>
     </ion-list>
   </ion-content>
   `,
   styles: []
 })
 export class ItemSortPopover {
+
+  @LocalStorage()
+  public show1234: boolean;
+
   constructor(public popoverCtrl: PopoverController) {}
 }
 

@@ -27,6 +27,9 @@ export class ItemListPage implements OnInit, OnDestroy {
   @LocalStorage()
   public itemSorting: 'alpha'|'element'|'type'|'slayer';
 
+  @LocalStorage()
+  public show1234: boolean;
+
   public elementSortedItems: { [key: string]: Item[] } = {};
   public allElements: string[] = [];
 
@@ -193,6 +196,11 @@ export class ItemListPage implements OnInit, OnDestroy {
 
     popover.onDidDismiss().then(({ data }) => {
       if(!data) { return; }
+      if(data === 'show1234') {
+        this.show1234 = !this.show1234;
+        this.updateItemListOutsideZone();
+        return;
+      }
       this.itemSorting = <'alpha'|'element'|'type'>data;
     });
 
@@ -232,6 +240,10 @@ export class ItemListPage implements OnInit, OnDestroy {
   // ITEM LIST SORTING
   private getItemList() {
     let arr = this.allItems;
+
+    if(!this.show1234) {
+      arr = arr.filter(x => x.star >= 5);
+    }
 
     const { type, subtype } = this.getCurrentFilter();
     this.isFiltered = !!subtype;
