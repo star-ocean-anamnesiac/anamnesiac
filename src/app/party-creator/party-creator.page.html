@@ -64,15 +64,21 @@
     </ion-list>
 
     <ion-row>
-      <ion-col text-right>
+      <ion-col text-center size-xs="12" size-sm="4">
         <ion-button color="secondary" fill="outline" icon-left size="small" (click)="toggleRole()">
           <ion-icon [name]="roleToggle ? 'checkbox-outline' : 'square-outline'"></ion-icon>&nbsp;Role Buffs
         </ion-button>
       </ion-col>
 
-      <ion-col>
+      <ion-col text-center size-xs="12" size-sm="4">
         <ion-button color="secondary" fill="outline" icon-left size="small" (click)="toggleCondition()">
           <ion-icon [name]="conditionToggle ? 'checkbox-outline' : 'square-outline'"></ion-icon>&nbsp;Conditional Buffs
+        </ion-button>
+      </ion-col>
+
+      <ion-col text-center size-xs="12" size-sm="4">
+        <ion-button color="secondary" fill="outline" icon-left size="small" (click)="toggleRush()">
+          <ion-icon [name]="rushToggle ? 'checkbox-outline' : 'square-outline'"></ion-icon>&nbsp;Rush Buffs
         </ion-button>
       </ion-col>
     </ion-row>

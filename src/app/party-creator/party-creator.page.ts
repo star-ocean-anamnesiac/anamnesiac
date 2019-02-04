@@ -71,6 +71,7 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
   public region: string;
   public conditionToggle: boolean;
   public roleToggle: boolean;
+  public rushToggle: boolean;
   public showShare: boolean;
 
   public readonly baseStats = { HP: true, ATK: true, INT: true, DEF: true, GRD: true, HIT: true };
@@ -108,6 +109,7 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
 
     this.roleToggle = this.roleToggleParam();
     this.conditionToggle = this.conditionalToggleParam();
+    this.rushToggle = this.rushToggleParam();
 
     this.localStorage.observe('isJP').subscribe(val => {
       this.updateRegionBasedOn(val);
@@ -145,6 +147,13 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
 
   public toggleCondition() {
     this.conditionToggle = !this.conditionToggle;
+    this.navigateHere();
+
+    this.updateBuffs();
+  }
+
+  public toggleRush() {
+    this.rushToggle = !this.rushToggle;
     this.navigateHere();
 
     this.updateBuffs();
@@ -266,7 +275,8 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
         acc: this.getAccessories(),
         weap: this.getWeapons(),
         conditional: ~~this.conditionToggle,
-        role: ~~this.roleToggle
+        role: ~~this.roleToggle,
+        rush: ~~this.rushToggle
       }
     });
   }
@@ -364,6 +374,12 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
     return !isString(param) ? true : !!+param;
   }
 
+  private rushToggleParam(): boolean {
+    const parameters = new URLSearchParams(window.location.search);
+    const param = parameters.get('rush');
+    return !isString(param) ? true : !!+param;
+  }
+
   private roleToggleParam(): boolean {
     const parameters = new URLSearchParams(window.location.search);
     const param = parameters.get('role');
@@ -409,6 +425,7 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
         if(!rushEff.meta) { return; }
 
         const meta = assignMeta(rushEff.meta, rushEff, charRef, `${charRef.rush.name} [Rush]`);
+        meta.forEach(metaItem => metaItem._isRush = true);
         buffs.push(...meta);
       });
 
@@ -478,6 +495,7 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
 
           // first pass: calculate the global total
           this.buffs[priorityKey][buffKey].forEach(tBuffData => {
+            if(!this.rushToggle && tBuffData._isRush) { return; }
 
             // init the global one so it shows up
             allBuffs[tBuffData.buff] = allBuffs[tBuffData.buff] || 0;
@@ -491,6 +509,7 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
           // second pass: calculate the individual character totals with respect to the global totals
           this.buffs[priorityKey][buffKey].forEach(tBuffData => {
             if(tBuffData._metaAll) { return; }
+            if(!this.rushToggle && tBuffData._isRush) { return; }
 
             // track individual character buffs
             const char = tBuffData.sourceCharacter;
@@ -509,6 +528,7 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
         // rip out self buffs
         if(priorityKey === '4' || priorityKey === '3') {
           this.buffs[priorityKey][buffKey].forEach(tBuffData => {
+            if(!this.rushToggle && tBuffData._isRush) { return; }
 
             // init the global one so it shows up
             allBuffs[tBuffData.buff] = allBuffs[tBuffData.buff] || 0;
@@ -529,6 +549,7 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
 
         if(buffData.buffRole && !this.roleToggle) { return; }
         if(buffData.buffCondition && !this.conditionToggle) { return; }
+        if(buffData._isRush && !this.rushToggle) { return; }
 
         if(buffData.buffRole) {
 
