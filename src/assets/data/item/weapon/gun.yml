@@ -188,4 +188,57 @@
   notes: >
     A pretty strong neutral weapon. A 3+ chain is pretty easy on most gun characters. The first factor is for Emmerson's rush but the 
     second and third factor are what make it a pretty solid weapon.
+    
+- name: Snow Crossbow
+  cat: 'gl'
+  star: 5
+  picture: Snow_Crossbow
+  atk: 533
+  int: 532
+  factors:
+    - desc: +10% ATK
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 10
+    - desc: Imbue Ice Element
+      element: Ice
+    - desc: +15% Crit Rate
+      lb: 5
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffValue: 15
+  obtained: Gacha
   
+  notes: >
+    The Icy Revolver's little brother. It's not on the level of that weapon but for those who don't have it, or for those running two
+    gun wielders. It's a good pick up. It's factors are solid and it contributes to ele damage so it's worth keeping but not chasing.
+    
+- name: Plant Slayer
+  cat: 'gl'
+  star: 5
+  picture: Plant_Felling
+  atk: 959
+  int: 958
+  factors:
+    - desc: +40% DMG to Plants
+      slayer: Plant
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Plants
+        buffValue: 40
+    - desc: 80% chance of surviving a lethal attack at greater than 20% HP
+    - desc: +20% DMG to Single Target
+      lb: 5
+      meta:
+        priority: 1
+        buff: Single Target Damage
+        buffValue: 20
+  obtained: Gacha
+  
+  notes: >
+    A neutral weapon for hating on plants. It's okay it's grit factor makes it slightly worse neutral than the wave gun and it's final
+    factor will be cancelled out or matched in GLs current defender fest of a meta, but it'll serve you well if you have no elemental
+    gun.
