@@ -33,19 +33,19 @@
         - desc: Recover 10 AP to all allies when Just Timing evasion
     - name: "Blade of Inorganic"
       effects: 
-        - desc: Single target damage +20%
+        - desc: Single target damage +15%
           all: true
           meta:
             priority: 1
             buff: Single Target Damage
-            buffValue: 20
-        - desc: Single target damage +40% when HP is 100%
+            buffValue: 15
+        - desc: Single target damage +25% when HP is 100%
           all: true
           meta:
             priority: 1
             buff: Single Target Damage
             buffCondition: HP is 100%
-            buffValue: 40
+            buffValue: 25
     - name: "Beautiful World"
       effects: 
         - desc: ATK +20%
@@ -85,12 +85,12 @@
     name: "YoHRa Arms: One Hundred"
     picture: YoHRa_Arms_One_Hundred_A2
     effects: 
-      - desc: Single Target Damage +50%
+      - desc: Single Target Damage +60%
         duration: 20
         meta:
           priority: 4
           buff: Single Target Damage
-          buffValue: 50
+          buffValue: 60
       - desc: Recover 15% of max HP every 3 seconds
         duration: 20
     power: ATK x 4500%
