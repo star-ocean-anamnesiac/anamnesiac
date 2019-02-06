@@ -268,7 +268,7 @@ export class CharacterListPage implements OnInit, OnDestroy {
           return 'Bad (1-3/10)';
         })
         .value();
-  
+
       allTiers = _.sortBy(Object.keys(tierSortedCharacters), (tier) => {
         if(tier === 'Top Tier (10/10)')      { return 0; }
         if(tier === 'Great (8-9/10)')        { return 1; }

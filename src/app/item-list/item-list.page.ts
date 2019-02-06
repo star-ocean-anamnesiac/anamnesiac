@@ -317,7 +317,7 @@ export class ItemListPage implements OnInit, OnDestroy {
     // slayer sorting
     let allSlayers = [];
     const slayerSortedItems = {};
-    
+
     if(this.itemSorting === 'slayer') {
       allSlayers = _(arr)
         .map(i => i.factors.map(x => x.slayer))
@@ -344,7 +344,7 @@ export class ItemListPage implements OnInit, OnDestroy {
     // factor sorting
     let allFactors = [];
     const factorSortedItems = {};
-    
+
     if(this.itemSorting === 'factor') {
       allFactors = _(arr)
         .map(i => i.factors.map(x => x.meta ? x.meta.buff : ''))
