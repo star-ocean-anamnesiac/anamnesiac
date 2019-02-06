@@ -25,7 +25,7 @@ export class ItemListPage implements OnInit, OnDestroy {
   public allItems: Item[] = [];
 
   @LocalStorage()
-  public itemSorting: 'alpha'|'element'|'type'|'slayer';
+  public itemSorting: 'alpha'|'element'|'type'|'slayer'|'factor';
 
   @LocalStorage()
   public show1234: boolean;
@@ -40,6 +40,9 @@ export class ItemListPage implements OnInit, OnDestroy {
 
   public typeSortedItems: { [key: string]: Item[] } = {};
   public allItemTypes: string[] = [];
+
+  public factorSortedItems: { [key: string]: Item[] } = {};
+  public allFactors: string[] = [];
 
   public showSearch: boolean;
   public searchValue = '';
@@ -120,10 +123,12 @@ export class ItemListPage implements OnInit, OnDestroy {
         this.allElements = res.allElements;
         this.allItemTypes = res.allItemTypes;
         this.allSlayers = res.allSlayers;
+        this.allFactors = res.allFactors;
 
         this.elementSortedItems = res.elementSortedItems;
         this.typeSortedItems = res.typeSortedItems;
         this.slayerSortedItems = res.slayerSortedItems;
+        this.factorSortedItems = res.factorSortedItems;
 
         if(this.getPreviouslyLoadedItem()) {
           this.loadItemModal(this.getPreviouslyLoadedItem());
@@ -201,7 +206,8 @@ export class ItemListPage implements OnInit, OnDestroy {
         this.updateItemListOutsideZone();
         return;
       }
-      this.itemSorting = <'alpha'|'element'|'type'>data;
+      this.itemSorting = <'alpha'|'element'|'type'|'slayer'|'factor'>data;
+      this.updateItemListOutsideZone();
     });
 
     return await popover.present();
@@ -262,63 +268,102 @@ export class ItemListPage implements OnInit, OnDestroy {
     }
 
     // alpha sorting
-    const alphaSortedItems = _.sortBy(arr, 'name');
+    let alphaSortedItems = [];
+
+    if(this.itemSorting === 'alpha') {
+      alphaSortedItems = _.sortBy(arr, 'name');
+    }
 
     // type sorting
-    const typeSortedItems = _(arr)
-      .sortBy('name')
-      .groupBy('subtype')
-      .value();
+    let typeSortedItems = {};
+    let allItemTypes = [];
 
-    const allItemTypes = _.sortBy(Object.keys(typeSortedItems));
+    if(this.itemSorting === 'type') {
+      typeSortedItems = _(arr)
+        .sortBy('name')
+        .groupBy('subtype')
+        .value();
 
-    const allElements = _(arr)
-      .map(i => i.factors.map(x => x.element))
-      .flattenDeep()
-      .compact()
-      .uniq()
-      .sortBy()
-      .tap(innerArr => {
-        innerArr.push('None');
-      })
-      .value();
+      allItemTypes = _.sortBy(Object.keys(typeSortedItems));
+    }
 
     // element sorting
+    let allElements = [];
     const elementSortedItems = {};
 
-    _(arr)
-      .sortBy('name')
-      .forEach(item => {
-        const allFoundElements = item.factors.map(x => x.element || 'None');
-        _.uniq(allFoundElements).forEach(el => {
-          elementSortedItems[el] = elementSortedItems[el] || [];
-          elementSortedItems[el].push(item);
+    if(this.itemSorting === 'element') {
+      allElements = _(arr)
+        .map(i => i.factors.map(x => x.element))
+        .flattenDeep()
+        .compact()
+        .uniq()
+        .sortBy()
+        .tap(innerArr => {
+          innerArr.push('None');
+        })
+        .value();
+
+      _(arr)
+        .sortBy('name')
+        .forEach(item => {
+          const allFoundElements = item.factors.map(x => x.element || 'None');
+          _.uniq(allFoundElements).forEach(el => {
+            elementSortedItems[el] = elementSortedItems[el] || [];
+            elementSortedItems[el].push(item);
+          });
         });
-      });
+    }
 
     // slayer sorting
-    const allSlayers = _(arr)
-      .map(i => i.factors.map(x => x.slayer))
-      .flattenDeep()
-      .compact()
-      .uniq()
-      .sortBy()
-      .tap(innerArr => {
-        innerArr.push('None');
-      })
-      .value();
-
+    let allSlayers = [];
     const slayerSortedItems = {};
+    
+    if(this.itemSorting === 'slayer') {
+      allSlayers = _(arr)
+        .map(i => i.factors.map(x => x.slayer))
+        .flattenDeep()
+        .compact()
+        .uniq()
+        .sortBy()
+        .tap(innerArr => {
+          innerArr.push('None');
+        })
+        .value();
 
-    _(arr)
-      .sortBy('name')
-      .forEach(item => {
-        const allFoundSlayers = item.factors.map(x => x.slayer || 'None');
-        _.uniq(allFoundSlayers).forEach(el => {
-          slayerSortedItems[el] = slayerSortedItems[el] || [];
-          slayerSortedItems[el].push(item);
+      _(arr)
+        .sortBy('name')
+        .forEach(item => {
+          const allFoundSlayers = item.factors.map(x => x.slayer || 'None');
+          _.uniq(allFoundSlayers).forEach(el => {
+            slayerSortedItems[el] = slayerSortedItems[el] || [];
+            slayerSortedItems[el].push(item);
+          });
         });
-      });
+    }
+
+    // factor sorting
+    let allFactors = [];
+    const factorSortedItems = {};
+    
+    if(this.itemSorting === 'factor') {
+      allFactors = _(arr)
+        .map(i => i.factors.map(x => x.meta ? x.meta.buff : ''))
+        .flattenDeep()
+        .compact()
+        .uniq()
+        .sortBy()
+        .value();
+
+      _(arr)
+        .sortBy('name')
+        .forEach(item => {
+          const allFoundFactors = _.compact(item.factors.map(x => x.meta ? x.meta.buff : ''));
+          _.uniq(allFoundFactors).forEach(el => {
+            factorSortedItems[el] = factorSortedItems[el] || [];
+            factorSortedItems[el].push(item);
+          });
+        });
+    }
 
     return {
       isError: false,
@@ -328,7 +373,9 @@ export class ItemListPage implements OnInit, OnDestroy {
       allSlayers,
       typeSortedItems,
       slayerSortedItems,
-      elementSortedItems
+      elementSortedItems,
+      allFactors,
+      factorSortedItems
     };
   }
 

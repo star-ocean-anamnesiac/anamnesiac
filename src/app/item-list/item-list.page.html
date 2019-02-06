@@ -78,6 +78,18 @@
     </ion-item-group>
   </ion-list>
 
+  <ion-list *ngIf="!isError && itemSorting === 'factor'">
+    <ion-item-group *ngFor="let factor of allFactors">
+      <ion-item-divider class="vertical-center">
+        <strong>{{ factor }}</strong>
+      </ion-item-divider>
+
+      <ion-item *ngFor="let item of factorSortedItems[factor] | filterBy: { name: searchValue }" detail (click)="loadItem(item)">
+        <ng-container *ngTemplateOutlet="items; context: { item: item }"></ng-container>
+      </ion-item>
+    </ion-item-group>
+  </ion-list>
+
 </ion-content>
 
 <ng-template #items let-item="item">
