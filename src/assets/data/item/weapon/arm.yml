@@ -126,3 +126,56 @@
     An event weapon for Halloween Millie. They're pretty good for her giving Lantern Burst a huge damage boost and providing a 
     rare buff to rush damage if you're over a certain hit count. The third factor will regularly be relevant as well so worth keeping
     while the pool is so small.
+    
+- name: Chocolate Arms
+  cat: 'gl'
+  star: 5
+  picture: Chocolate_Arms
+  atk: 511
+  int: 507
+  factors:
+    - desc: +20% DMG on Clockwise Arm
+    - desc: +15% DMG to Single Target when Chain 3+
+      meta:
+        priority: 3
+        buff: Single Target Damage
+        buffValue: 15
+        buffCondition: Skill Chain +3
+    - desc: Recover 5% HP of DMG Dealt by Normal Attacks
+      lb: 5
+  obtained: Mountain Motango Exchange
+
+  notes: >
+    An event weapon for Valentine Verda. It has some passable factors so if you have nothing better then you can pick this up and run
+    it. If not then fodder it.
+    
+- name: Angel Arms
+  cat: 'gl'
+  star: 5
+  picture: Peachy_Arms_Pretty_Angel
+  atk: 961
+  int: 958
+  factors:
+    - desc: Imbue Earth element / Anti-Flinch when Attacking
+      element: Earth
+    - desc: -10% DMG Taken
+      meta:
+        priority: 1
+        buff: Damage Reduction
+        buffValue: 10
+    - desc: Crit Rate +10%
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffValue: 10
+    - desc: Crit Damage +15%
+      meta:
+        priority: 1
+        buff: Crit Damage
+        buffValue: 15
+      lb: 5
+  obtained: Gacha
+
+  notes: >
+    An Earth imbue arms. It has some good factors that compliment playing aggressive with build in conditional anti-flinch, damage
+    reduction and at mlb a boost to critical hit rate and damage means it's a good elemental weapon to help contribute to stunning.
