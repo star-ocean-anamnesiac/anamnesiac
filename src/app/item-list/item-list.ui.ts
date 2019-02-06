@@ -57,7 +57,7 @@ export class ItemSortPopover {
     <div class="stars large"></div>
 
     <ion-row class="profile-row">
-      <ion-col size-xs="5" size-md="3" size-lg="2" text-center>
+      <ion-col size-xs="5" size-md="3" size-lg="3" text-center>
         <app-appicon class="item-icon" [name]="item.picture" type="item" [forceWidth]="128" [forceHeight]="128"></app-appicon>
       </ion-col>
 

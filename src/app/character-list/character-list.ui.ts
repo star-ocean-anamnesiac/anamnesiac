@@ -57,7 +57,7 @@ export class CharacterSortPopover {
     <div class="stars large"></div>
 
     <ion-row class="profile-row">
-      <ion-col size-xs="5" size-md="3" size-lg="2" position-relative text-center>
+      <ion-col size-xs="5" size-md="3" size-lg="3" position-relative text-center>
         <app-appicon [name]="char.picture" [forceWidth]="128" [forceHeight]="128" type="char"></app-appicon>
 
         <span class="awakened-container" *ngIf="char.awakened">
