@@ -163,13 +163,13 @@
         priority: 1
         buff: Damage Reduction
         buffValue: 10
-   - desc: Crit Rate +10%
-     meta:
+    - desc: Crit Rate +10%
+      meta:
         priority: 1
         buff: Crit Rate
         buffValue: 10
-   - desc: Crit Damage +15%
-     meta:
+    - desc: Crit Damage +15%
+      meta:
         priority: 1
         buff: Crit Damage
         buffValue: 15
