@@ -1410,3 +1410,180 @@
       *Normal > Aim > Curaga > Aim (Feed/Healing rotation with -10% AP reduction or -5% AP and 104-105 AP)*
       
       *Cheer (Buff when necessary)*
+      
+- name: Welch Vineyard (Valentine)
+  cat: gl
+  rating: 7
+  picture: valentinevisionarywelchvineyard
+  weapon: tome
+  ace: true
+  limited: tome
+  star: 5
+
+  stats:
+    hp: 15447
+    atk: 1747
+    int: 2898
+    def: 1327
+    hit: 1043
+    grd: 1141
+
+  talents:
+    - name: "Lady’s Charm II"
+      effects: 
+        - desc: +30% Damage Taken when under 50% HP
+          all: Enemy
+          meta:
+            priority: 3
+            buff: Enemy Damage Taken
+            buffCondition: HP is > 50%
+            buffValue: 50
+    - name: "Beach Body II"
+      effects: 
+        - desc: ATK Damage +10%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK Damage
+            buffValue: 10
+        - desc: INT Damage +10%
+          all: true
+          meta:
+            priority: 1
+            buff: INT Damage
+            buffValue: 10
+        - desc: ATK Damage +25%
+          all: true
+          meta:
+            priority: 3
+            buff: ATK Damage
+            buffCondition: Skill Chain 3+
+            buffValue: 25
+        - desc: INT Damage +25%
+          all: true
+          meta:
+            priority: 3
+            buff: INT Damage
+            buffCondition: Skill Chain 3+
+            buffValue: 25
+    - name: "Brains & Beauty"
+      effects: 
+        - desc: AP Cost -20%
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 20
+        - desc: No flinching when casting Symbology
+    - name: "Troublemaker"
+      effects: 
+        - desc: INT +15%
+          meta:
+            priority: 4
+            buff: INT
+            buffValue: 15
+        - desc: HP +10%
+          meta:
+            priority: 4
+            buff: INT
+            buffValue: 10
+
+  skills:
+    - name: "Earth Glaive Infatuation"
+      picture: Earth_Glaive
+      element: Earth
+      power: INT x 460%
+      ap: 28
+      maxHits: 2
+    - name: "Infatuated Crush"
+      picture: Crush
+      element: Earth
+      power: INT x 160%
+      ap: 15
+      maxHits: 2
+    - name: "Gluttony Bog"
+      picture: Gluttony_Bog
+      element: Earth
+      power: INT x 840%
+      ap: 34
+      maxHits: 12
+    - name: "Faerie Light"
+      picture: Faerie_Light
+      power: INT x 230%
+      ap: 60
+      maxHits: 1
+      
+  rush:
+    name: "Sweet Pressure"
+    picture: Freezing_Clock_Relia
+    element: Earth
+    effects: 
+      - desc: DEF -40%
+        all: Enemy
+        duration: 20
+        meta:
+          priority: 1
+          buff: DEF Reductiom
+          buffValue: 40
+      - desc: Recover 70% HP
+        all: true
+        duration: 20
+    power: INT x 3500%
+    maxHits: 1
+    
+  notes: >
+      _Welch gets her first Ace version and is actually pretty good. She is also the first tome user of GL which is a plus as tome
+      casting is a far bigger improvement on staff casting. Welch has quite a few things going for her on her release. For starters
+      her INT & ATK damage buffs are still quite rare and 25% is a high number for the buff currently and 10% without a condition is
+      good. Her debuff of making enemies take 30% more damage when they drop below 50% HP is pretty strong. She also deals pretty
+      good damage by healer standards, similar to SSophia in feeling like an invoker with the ability to heal, this is due to her
+      reasonably high INT stat and high multipliers of 2 of the three damage skills she has. Her Hp buff also adds some personal 
+      bulk and her spells can't be interupted allowing her to get out emergency healing. Her post rush debuff is meh, reducing DEF
+      isn't the best but it's good if you lack a source of crit buffing._
+      
+      
+      _Valentine Welch does have her downsides. For a start, being Earth locked is a pretty big draw back as Earth is not a popular
+      weakness for bosses. She also won't age well as once INT and ATK damage buffs become more common place her best quality 
+      becomes her damage taken debuff. Also compared to the other healers she's a bit lacking, while her debuffs and damage are nice
+      she doesn't bring an Angel Feather like buff to the table, nor does she AP feed, meaning she's basically a hard hitting 
+      healer with a bad element to be locked into._
+      
+      
+      
+      **TL DR**
+      
+     
+      **Pros**
+      
+      - Built in AP reduction and self INT and HP buffs.
+      
+      - Deals good damage compared to other healers.
+      
+      - Decent buffs that boost ATK & INT damage.
+      
+      - Super armor while casting.
+      
+      - Tome Caster
+      
+      - Strong de-buffs
+      
+      
+      **Cons**      
+      
+      - Earth locked.
+      
+      - Lacks traits to help surviability beyond a HP buff.
+      
+      - Her good buffs won't age well.
+      
+      - Doesn't bring any combat buffs or AP feeding unlike other top healers.
+
+
+      **Rotation**   
+     
+      - Faerie Light (Healing)
+      
+      - Normal > Gluttony Bog > Earth Glaive Infatuation > Gluttony Bog  (Damage rotation)
+
+      - Normal > Gluttony Bog > Earth Glaive Infatuation > Gluttony Bog > Gluttony Bog (Damage rotation 104+ AP)
+      
+      - Normal > Gluttony Bog > Faerie Light > Gluttony Bog  (Rush Gain rotation)
