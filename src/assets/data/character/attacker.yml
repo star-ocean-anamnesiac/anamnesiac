@@ -2670,12 +2670,12 @@
             buffValue: 15
 
   skills:
-    - name: "Counter Clockwise Armsy"
+    - name: "Counter Clockwise Arms"
       picture: Counter_Clockwise_Arm
       power: ATK x 260%
       ap: 17
       maxHits: 6
-    - name: "Counter Clockwise Armsy"
+    - name: "Counter Clockwise Arms"
       picture: Counter_Clockwise_Arm
       power: ATK x 260%
       ap: 17
@@ -2751,4 +2751,136 @@
       **Rotation**
       
       *Normal > Magnetic Love Field > Clockwise Arms > Magnetic Love Field > Spam till out of AP (Damage rotation)*
+      
+- name: Rena Lanford (Valentine)
+  cat: gl
+  rating: 10
+  picture: valentinesweetcatrenalanford
+  weapon: bns
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15435
+    atk: 2704
+    int: 1575
+    def: 1916
+    hit: 1162
+    grd: 833
+
+  talents:
+    - name: "Cat Ears II"
+      effects: 
+        - desc: ATK +40%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 40
+        - desc: ATK +60%
+          all: Short Ranged Weapon Users
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 60
+    - name: "Exposed Ferocity II"
+      effects: 
+        - desc: Nullifies Charge Assault critical penalty
+          all: Attackers
+        - desc: No flinching when taking damage of 30% HP of less when using Charge Assault
+          all: Attackers
+    - name: "Bad Luck II"
+      effects: 
+        - desc: AP recovery from normal attacks +100%
+          all: Attackers
+          meta:
+            priority: 1
+            buff: AP Recovery From Normal Attacks
+            buffValue: 100
+        - desc: Evasion AP usage -50%
+          all: Attackers
+    - name: "Sweet Present"
+      effects: 
+        - desc: 70% chance of surviving a lethal attack at 20% HP or more
+
+  skills:
+    - name: "Crescent Locus"
+      picture: Crescent_Locus
+      power: ATK x 150%
+      ap: 17
+      maxHits: 4
+      highlight: true
+    - name: "Death Palm Kiss"
+      picture: Palm_of_Destruction
+      power: ATK x 370%
+      ap: 27
+      maxHits: 1
+      highlight: true
+    - name: "X Claw Kiss"
+      picture: X_Claw
+      power: ATK x 520%
+      ap: 31
+      maxHits: 6
+    - name: "Heart Burst"
+      picture: Heart_Discharge
+      power: ATK x 1280%
+      ap: 54
+      maxHits: 9
+      highlight: true
+
+  rush:
+    name: "Love Scratch"
+    picture: Valentine_Rena_Rush
+    effects: 
+      - desc: Single Target Damage +40%
+        all: true
+        duration: 20
+        meta:
+          priority: 1
+          buff: Single Target Damage
+          buffValue: 40
+    power: ATK x 4000%
+    maxHits: 6
+    
+  notes: >
+      _Rena gets a cat girl alt so she can drain the wallets of all her fan boys. Oh and she's a really good attack buffer on top of
+      that. Rena brings a super meaty ATK buff of 40% for the party and 60% for all melee users. On top of that she gives unique buffs
+      to attackers such as a larger than usual anti-flinch effect while using Charge Assault, and nullifying charge assaults critical
+      hit penalty. Plus she gives attackers AP recovery. It helps she has some surivability as well with a pretty good grit talent. 
+      Her post rush buff is also powerful, giving a high single target buff that isn't easily matched._
+      
+      
+      _Of course there are downsides to Rena. The first being her party buffs being so limited, the lack of AP recovery means you
+      lack such an important attack buffer buff for the rest of the party. She's far more of a build around character than 2b or
+      Halloween Millie are because of this, you probably want a attacker carry and another attack buffer for the AP buff to make
+      her truly godlike, but just bringing one of those two will make a big difference as well. However it is undeniable that in
+      a proper composition VRena is the best attack buffer, but due to her limitations it's hard to recommend her over the likes
+      of 2B for pubbing._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Strong unconditional ATK buff, that gets even better for melee characters.
+      
+      - Strong and unique buffs for attackers.
+      
+      - Powerful post rush buff
+      
+      - Has built in grit chance
+      
+      
+      **Cons**
+      
+      - Does little for ranged characters
+      
+      - Gives no AP recovery to anything but attackers unlike other buffers
+      
+      
+      **Rotation**
+      
+      *Normal > Crescent Lotus > Death Palm Kiss > Heart Burst (General combo.)*
       
