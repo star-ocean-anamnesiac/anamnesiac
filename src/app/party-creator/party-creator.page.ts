@@ -72,6 +72,7 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
   public conditionToggle: boolean;
   public roleToggle: boolean;
   public rushToggle: boolean;
+  public weaponLBToggle: boolean;
   public showShare: boolean;
 
   public readonly baseStats = { HP: true, ATK: true, INT: true, DEF: true, GRD: true, HIT: true };
@@ -110,6 +111,7 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
     this.roleToggle = this.roleToggleParam();
     this.conditionToggle = this.conditionalToggleParam();
     this.rushToggle = this.rushToggleParam();
+    this.weaponLBToggle = this.weaponLBToggleParam();
 
     this.localStorage.observe('isJP').subscribe(val => {
       this.updateRegionBasedOn(val);
@@ -161,6 +163,13 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
 
   public toggleRole() {
     this.roleToggle = !this.roleToggle;
+    this.navigateHere();
+
+    this.updateBuffs();
+  }
+
+  public toggleWeaponLB() {
+    this.weaponLBToggle = !this.weaponLBToggle;
     this.navigateHere();
 
     this.updateBuffs();
@@ -275,6 +284,7 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
         acc: this.getAccessories(),
         weap: this.getWeapons(),
         conditional: ~~this.conditionToggle,
+        weaponlb: ~~this.weaponLBToggle,
         role: ~~this.roleToggle,
         rush: ~~this.rushToggle
       }
@@ -374,6 +384,12 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
     return !isString(param) ? true : !!+param;
   }
 
+  private weaponLBToggleParam(): boolean {
+    const parameters = new URLSearchParams(window.location.search);
+    const param = parameters.get('weaponlb');
+    return !isString(param) ? true : !!+param;
+  }
+
   private rushToggleParam(): boolean {
     const parameters = new URLSearchParams(window.location.search);
     const param = parameters.get('rush');
@@ -462,6 +478,8 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
 
       weapRef.factors.forEach(fact => {
         if(!fact.meta) { return; }
+
+        if(fact.lb && !this.weaponLBToggle) { return; }
 
         const factorMeta = assignMeta(fact.meta, fact, this.charRefs[i], `${weapRef.name}`);
         buffs.push(...factorMeta);
