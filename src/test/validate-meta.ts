@@ -31,6 +31,8 @@ const validMetas = [
   'Paralysis Attack Chance', 'Freeze Attack Chance',
 
   'Cast Time Reduction',
+  
+  'Enemy Damage Taken',
 
   'DEF Reduction', 'ATK Reduction', 'INT Reduction', 'HIT Reduction', 'GRD Reduction',
   'Enemy DEF Reduction', 'Enemy ATK Reduction', 'Enemy INT Reduction', 'Enemy HIT Reduction', 'Enemy GRD Reduction'
