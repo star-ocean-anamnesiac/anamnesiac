@@ -1514,7 +1514,7 @@
       
   rush:
     name: "Sweet Pressure"
-    picture: Freezing_Clock_Relia
+    picture: Sweet_Pressure_Valentine_Welch
     element: Earth
     effects: 
       - desc: DEF -40%
