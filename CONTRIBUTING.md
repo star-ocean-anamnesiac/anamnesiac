@@ -54,9 +54,18 @@ Sometimes, you have to add an image the app doesn't have to make it all work rig
 * Skills: 64x64
 * Rushes: 64x64
 
+To ensure the image is ready for being submitted, ask for help or perform these steps:
+
+* Install [GraphicsMagick](http://www.graphicsmagick.org/download.html)
+* Create a new folder with your desired image(s) in it
+* Run `gm mogrify -trim *.png`
+* Run `gm mogrify -resize RESxRES! .png` (`RESxRES` is the resolution above, such as 128x128 or 64x64. Note the `!` in the command, that is important)
+
+After following these steps, you're all set. Alternatively, contact someone on the team and we probably have to add new images anyway.
+
 #### Where Are The Images?
 
-At this time, images can be found [in our shared Dropbox folder](https://www.dropbox.com/sh/rf0ylyh96el7gw1/AAB26paL63wjzYRLE3-1pVvEa?dl=0), but _they are not the right size_. You can convert them using a site like CloudConvert to the right dimensions, if desired. Or just ask.
+At this time, images can be found [in our shared Dropbox folder](https://www.dropbox.com/sh/rf0ylyh96el7gw1/AAB26paL63wjzYRLE3-1pVvEa?dl=0), but _they are not the right size_. You can convert them using a site like CloudConvert to the right dimensions, if desired. Or just ask. When in doubt, please ask.
 
 #### Troubleshooting Your Submission
 
