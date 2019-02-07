@@ -32,7 +32,7 @@ const validMetas = [
 
   'Cast Time Reduction',
   
-  'Enemy Damage Taken',
+  'Enemy Damage Taken', 'Enemy ATK Damage Taken', 'Enemy INT Damage Taken',
 
   'DEF Reduction', 'ATK Reduction', 'INT Reduction', 'HIT Reduction', 'GRD Reduction',
   'Enemy DEF Reduction', 'Enemy ATK Reduction', 'Enemy INT Reduction', 'Enemy HIT Reduction', 'Enemy GRD Reduction'
