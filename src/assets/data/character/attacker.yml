@@ -28,8 +28,9 @@
         - desc: ATK +45% when HP 100% 
           all: true
           meta:
-            priority: 1
+            priority: 3
             buff: ATK
+            buffCondition: HP is 100%
             buffValue: 45
     - name: "Automated Infantry Android"
       effects: 
@@ -1507,7 +1508,7 @@
           all: true
           meta:
             priority: 3
-            buff: ATK
+            buff: ATK Damage
             buffValue: 15
     - name: "Heart-Shaped Tail II"
       effects: 
@@ -2047,7 +2048,7 @@
           all: true
           meta:
             priority: 3
-            buff: ATK
+            buff: ATK Damage
             buffValue: 20
     - name: "Colorful Galleria II"
       effects: 
@@ -2597,3 +2598,157 @@
           buffValue: 40
     power: ATK x 2500%
     maxHits: 6
+    
+    - name: Verda Clayman (Valentine)
+  cat: gl
+  rating: 10
+  picture: valentinepureloveverdaclayman
+  weapon: arms
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 3110
+    int: 1563
+    def: 1943
+    hit: 1271
+    grd: 833
+
+  talents:
+    - name: "First Valentine"
+      effects: 
+        - desc: ATK damage taken +15% when hit by a Short-Range skill
+          all: Enemy
+          meta:
+            priority: 3
+            buffCondition: Short Ranged Skill
+            buff: Enemy ATK Damage Taken
+            buffValue: 15
+        - desc: INT damage taken +15% when hit by a Short-Range skill
+          all: Enemy
+          meta:
+            priority: 3
+            buffCondition: Short Ranged Skill
+            buff: Enemy INT Damage Taken
+            buffValue: 15
+    - name: "Flask-Full of Emotions"
+      effects: 
+        - desc: AP usage -20% when Skill Chain at 3+
+          all: true
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain 3+
+            buffValue: 20
+    - name: "Love of Japanese Cuisine II"
+      effects: 
+        - desc: ATK Damage +100% when skill chain is 3+
+          meta:
+            priority: 3
+            buff: ATK Damage
+            buffCondition: Skill Chain 3+
+            buffValue: 100
+        - desc: ATK Damage 200% when Skill Chain when skill chain is 5+
+          meta:
+            priority: 3
+            buff: ATK Damage
+            buffCondition: Skill Chain 5+
+            buffValue: 200
+    - name: "Awkward Adolescence"
+      effects: 
+        - desc: ATK +15%
+          meta:
+            priority: 4
+            buff: ATK
+            buffValue: 15
+        - desc: HIT +15%
+          meta:
+            priority: 4
+            buff: HIT
+            buffValue: 15
+
+  skills:
+    - name: "Counter Clockwise Armsy"
+      picture: Counter_Clockwise_Arm
+      power: ATK x 260%
+      ap: 17
+      maxHits: 6
+    - name: "Counter Clockwise Armsy"
+      picture: Counter_Clockwise_Arm
+      power: ATK x 260%
+      ap: 17
+      maxHits: 6
+      highlight: true
+    - name: "Love Rocket Punch"
+      picture: Rocket_Punch
+      power: ATK x 360%
+      ap: 23
+      maxHits: 1
+      highlight: true
+    - name: "Magnetic Love Field"
+      picture: Magnetic_Field
+      power: ATK x 280%
+      ap: 24
+      maxHits: 10
+      highlight: true
+
+  rush:
+    name: "Chocolate Blessing"
+    picture: Blessing_Chocolate_Valentine_Verda
+    effects: 
+      - desc: ATK damage taken +40%
+          all: Enemy
+          meta:
+            priority: 1
+            buff: Enemy ATK Damage Taken
+            buffValue: 40
+      - desc: INT damage taken +40%
+          all: Enemy
+          meta:
+            priority: 1
+            buff: Enemy INT Damage Taken
+            buffValue: 40
+    power: ATK x 4500%
+    maxHits: 5
+    
+  notes: >
+      _Verda's valentine gift to the players is showing up before her permanent version is out. Valentine Verda joins Winter Fidel
+      and Halloween Clair as a powerful attack carry. She does her job pretty well, even providing some pretty good utility, her
+      close range attacks debuff enemies making them take more ATK and INT damage. She also provides AP reduction past a skill
+      chain of 3 for the whole party, though some characters will struggle to use this effectively. Her talent that boosts her
+      ATK damage significantly based upon her own skill chain is very powerful and doable with her low AP cost skills, bost 5
+      skill chain she'll be hitting extremely hard, especially with her debuff active. Post rush Verda helps make the parties
+      damage much better and her own even more insane with an even more potent version of her unique ATK and INT damage taken
+      debuffs._
+      
+      
+      _As for downsides it's important to say is that Verda's animations are pretty slow, which also makes her rush gain kind of
+      questionable as well. Also her AP reduction party buff isn't that amazing for certain characters so it's not much of a perk.
+      However she is meant to be a carry so as long as she's hitting hard she's doing what you wanted._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Brings a lot of damage
+      
+      - Some weak utility to the party
+      
+      - Unique debuffs to enemies
+      
+            
+      **Cons**
+            
+      - Slow attacking animations
+      
+      - Slow Rush gain
+            
+      
+      **Rotation**
+      
+      *Normal > Magnetic Love Field > Clockwise Arms > Magnetic Love Field > Spam till out of AP (Damage rotation)*
+      
