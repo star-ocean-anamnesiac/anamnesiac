@@ -2599,7 +2599,7 @@
     power: ATK x 2500%
     maxHits: 6
     
-    - name: Verda Clayman (Valentine)
+- name: Verda Clayman (Valentine)
   cat: gl
   rating: 10
   picture: valentinepureloveverdaclayman
