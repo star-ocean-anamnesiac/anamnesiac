@@ -1417,7 +1417,7 @@
   picture: valentinevisionarywelchvineyard
   weapon: tome
   ace: true
-  limited: tome
+  limited: true
   star: 5
 
   stats:
