@@ -1522,7 +1522,7 @@
         duration: 20
         meta:
           priority: 1
-          buff: DEF Reductiom
+          buff: DEF Reduction
           buffValue: 40
       - desc: Recover 70% HP
         all: true
