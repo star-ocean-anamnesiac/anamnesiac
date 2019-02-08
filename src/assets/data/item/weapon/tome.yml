@@ -63,7 +63,7 @@
         buff: Damage Taken Reduction
         buffValue: 10
     - desc: +10% Rush Combo DMG
-        meta:
+      meta:
         priority: 1
         buff: Rush Damage
         buffValue: 10
