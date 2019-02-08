@@ -1,6 +1,6 @@
 
 - name: Advanced Combat Symbology Textbook
-  cat: 'jp'
+  cat: 'gl'
   star: 5
   picture: Advanced_Combat_Heraldry_Manual
   atk: 506
@@ -19,3 +19,87 @@
         buff: Crit Rate
         buffValue: 10
   obtained: Tome Coin Exchange / Gacha
+  
+  notes: >
+    If you don't have a tome don't worry, this one is pretty good and can be used on any tome wielder you happen to get. Boosting your
+    INT helps make up for the lack of stats, it has a decent regen buff, and the crit factor is nice to have if you have no crit
+    buffing in your party.
+  
+- name: Akashic Records
+  cat: 'gl'
+  star: 5
+  picture: Akashic_Records
+  atk: 647
+  int: 657
+  factors:
+    - desc: +15% DMG to Multiple Targets
+      meta:
+        priority: 1
+        buff: Multiple Target Damage
+        buffValue: 15
+    - desc: +15% Stun
+      meta:
+        priority: 4
+        buff: Stun Rate
+        buffValue: 15
+    - desc: 80% Chance to Survive a Lethal Attack when HP is 20% or more
+      lb: 5
+  obtained: Tome Coin Exchange / Transmute / Gacha
+  
+  notes: >
+    The bad tome of the coin shop, also the only one in the transmute pool. Please make it a coin for the other actually good tome.
+  
+- name: Diary of Secrets
+  cat: 'gl'
+  star: 5
+  picture: Diary_of_Secrets
+  atk: 509
+  int: 512
+  factors:
+    - desc: +20% DMG on Gluttony Bog
+    - desc: -10% DMG Taken
+      meta:
+        priority: 1
+        buff: Damage Taken Reduction
+        buffValue: 10
+    - desc: +10% Rush Combo DMG
+      meta:
+        priority: 1
+        buff: Rush Damage
+        buffValue: 10
+      lb: 5
+  obtained: Mountain Motango Exchange
+  
+  notes: >
+    The event weapon for Valentine Welch. It's okay for her, boosts rush damage which is rare, reduces damage taken which is nice.
+    Boosts her main damage skill, but for anyone other than her, or if you obtain any better tome, it's fodder.
+  
+- name: Poems A Maiden's Love
+  cat: 'gl'
+  star: 5
+  picture: Poems_A_Maiden's_Love
+  atk: 509
+  int: 512
+  factors:
+    - desc: +40% Earth DMG Dealt
+      meta:
+        priority: 4
+        buff: Earth Damage
+        buffValue: 40
+    - desc: +30% Dark DMG Dealt
+      meta:
+        priority: 4
+        buff: Dark Damage
+        buffValue: 30
+    - desc: 80% Chance to Survive a Lethal Attack when HP is 20% or more
+    - desc: +15% Stun
+      meta:
+        priority: 4
+        buff: Stun Rate
+        buffValue: 15
+      lb: 5
+  obtained: Gacha
+  
+  notes: >
+    An exceptional tome for Valentine Welch and won't do bad in the future for any dark wielding tome caster. It's inbuilt stun boost
+    as mlb factor is nice and a good grit chance is always welcome. A must keep if you get it.
