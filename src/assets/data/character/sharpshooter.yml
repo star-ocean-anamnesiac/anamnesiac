@@ -960,3 +960,129 @@
     power: INT x 2500%
     maxHits: 12
     element: Light
+    
+- name: Clair Lasbard (Valentine)
+  cat: gl
+  rating: 5
+  picture: maidenclairlasbard
+  weapon: bow
+  limited: true
+  star: 5
+
+  stats:
+    hp: 12705
+    atk: 2048
+    int: 1418
+    def: 1601
+    hit: 1141
+    grd: 854
+
+  talents:
+    - name: "Demon Girl II"
+      effects: 
+        - desc: Damage dealt to humanoids +40%
+          meta:
+            priority: 4
+            buff: Damage To Humans
+            buffValue: 40
+    - name: "Chocolate Temptation II"
+      effects: 
+        - desc: Nullifies poison for 180 seconds
+          all: true
+    - name: "Fine Swordplay"
+      effects: 
+        - desc: AP Cost -20%
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 20
+        
+  skills:
+    - name: "Sonic Thorn"
+      picture: Sonic_Thorn
+      power: ATK x 200%
+      ap: 20
+      maxHits: 2
+    - name: "Seraphic Thunder"
+      picture: Seraphic_Thunder_II
+      power: ATK x 280%
+      ap: 27
+      maxHits: 8
+      element: Lightning
+    - name: "Hunter’s Moon"
+      picture: Hunter's_Moon
+      power: ATK x 310%
+      ap: 29
+      maxHits: 7
+    - name: "Crimson Squall"
+      picture: Crimson_Squall
+      power: ATK x 250%
+      ap: 24
+      maxHits: 9
+      
+  rush:
+    name: "Revised Heavenly Flight"
+    picture: Heavenly_Flight
+    effects: 
+      - desc: Reduces enemey ATK by 20%
+        all: Enemy
+        duration: 30
+        meta:
+          priority: 1
+          buff: Enemy ATK Reduction
+          buffValue: 20
+      - desc: Reduces enemey DEF by 20%
+        all: Enemy
+        duration: 30
+        meta:
+          priority: 1
+          buff: Enemy DEF Reduction
+          buffValue: 20
+    power: ATK x 2500%
+    maxHits: 5
+    
+  notes: >
+      _Clair joins us as a freebie for Valentine in Tri-Aces gift to us by giving us an alt of best girl. She also isn't that bad of
+      a free unit and continues the Clair trend of having some defensive utility in her talents or post rush. She's a solid character
+      who's combat style is similar to that of Maria, relying heavily on how good Crimson Squall is. This actually makes her good at
+      building up and maintaining hit count, while also giving her decent rush gain. She's a humanoid specialist with her inbuilt
+      humanoid slayer and has a built in AP reduction allowing her to spam moves even more. 
+      
+      She provides poison immunity to the party meaning she has a niche in MoT and against certain bosses like the valentine boss 
+      she releases alongside. Her real power lays in her post rush buff, a rare 30 second duration and pretty rare debuffs. While 
+      lowering enemy DEF isn't that big a damage boost unless you have no crit buffing, in theory lowering ATK is a pretty good
+      debuff for defensive utility.
+      
+      Her downsides are that she doesn't provide much other than her debuffs and poison immunity to the party, and poison immunity
+      is pretty niche even if it's nice to have. Her personal damage isn't going to blow you away just like most SS and unlike Maria
+      her talents don't make up for it as much, though on Humanoid bosses she should be pretty solid. Just overall she isn't a
+      spectacular character but like some of our other recent freebies she's okay and very much a playable character even in harder
+      content._
+      
+      **TL DR**
+      
+      **Pros**
+      
+      - Good at building and maintaing Hit Count.
+
+      - Decent rush gain.
+
+      - Effective against Humanoids.
+
+      - Poison Immunity.
+
+      - Unique and strong debuffs.
+      
+      - Free MLB non-ace 5 star.
+
+      **Cons**
+
+      - Non-ace so has less stats.
+
+      - Deals underwhelming damage outside of humanoid fights.
+
+      - Underwhelming buffs.
+      
+      **Rotation**
+      
+      *Normal > Crimson Squall > Sonic Thorn > Crimson Squall > Spam till out of AP  (General Combo.)*    
