@@ -1022,7 +1022,7 @@
       
   rush:
     name: "Revised Heavenly Flight"
-    picture: Heavenly_Flight
+    picture: Revised_Heavenly_Flight_Maiden_Clair
     effects: 
       - desc: Reduces enemey ATK by 20%
         all: Enemy
