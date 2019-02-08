@@ -1192,6 +1192,10 @@
       ap: 60
       notes: ATK +20% for 20 seconds. Party wide heal & buff.
       maxHits: 1
+      meta:
+        priority: 2
+        buff: STR
+        buffValue: 20
       
   rush:
     name: "Freeze Time"
