@@ -1194,7 +1194,7 @@
       maxHits: 1
       meta:
         priority: 2
-        buff: STR
+        buff: ATK
         buffValue: 20
       
   rush:
