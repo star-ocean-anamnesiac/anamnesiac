@@ -24,7 +24,7 @@
         buffValue: 4
   obtained: Coin Shop (Michael)
 
-notes: >
+  notes: >
     Knuckles intended for Rena. Due to Rena's unique nature as a healer who uses knuckles and casts spells these are actually pretty
     good for her, boosting her damage spells and adding a little bulk. They're fodder otherwise.
     
@@ -45,7 +45,7 @@ notes: >
       lb: 3
   obtained: Knuckles Coin Exchange / Gacha
 
-notes: >
+  notes: >
     A decent pair of knuckles for a new player, the ATK buff makes up for the lack of stats. It has some additional synergy with Cliff
     if you want him, but contributing to elemental burst will always be better.
     
@@ -70,7 +70,7 @@ notes: >
       lb: 5
   obtained: Knuckles Coin Exchange / Gacha
 
-notes: >
+  notes: >
     A good neutral weapon for Cliff as it gives him even more self buffs and buffs one of his attacks. That being said contributing to
     elemental burst is probably better in higher difficulty content so it's your decision on if it's worth keeping or not.
     
@@ -86,7 +86,7 @@ notes: >
     - desc: +20% DMG on Triple Kick
   obtained: Knuckles Coin Exchange / Gacha / Transmute
 
-notes: >
+  notes: >
     While earth is probably the worst element, if the enemy doesn't resist it, then it's all okay and you're contributing to elemental
     burst which is the important part. A couple of characters have Triple Kick so it's a slight bonus and the GL stat buff means Rena
     can use them for what it's worth. Not a bad idea to get these if you don't have the gacha earth knuckles.
@@ -106,7 +106,7 @@ notes: >
     - desc: +20% DMG on Drill Spike
   obtained: Knuckles Coin Exchange / Gacha / Transmute
 
-notes: >
+  notes: >
     Okay knuckles for Anne but they're actually best put on Michael, they best his talent based Fire damage dealt by 5% so it gives him
     a slight boost on his skills. Other than that, they're pretty bad and shouldn't be chased or exchanged for.
     
@@ -130,7 +130,7 @@ notes: >
     - desc: +20% DMG on Crescent Locus
   obtained: Knuckles Coin Exchange / Gacha / Transmute
 
-notes: >
+  notes: >
     They're a worse version of the bloody knuckles. The saving grace is perhaps that as I write this there are 8 knuckles users and
     5 of them have Crescent Locus so there's some synergy there. But it's pretty much just trash.
     
@@ -149,7 +149,7 @@ notes: >
     - desc: +20% DMG on Drill Spike
   obtained: Crystal Guardian Exchange
 
-notes: >
+  notes: >
     Knuckles intended for Anne, they aren't bad on her due to the crit rate she provides but they're trash elsewhere so stick them on
     your Crystal Guardian crit stick and move on.
     
@@ -176,7 +176,7 @@ notes: >
         buffValue: 5
   obtained: Gacha
 
-notes: >
+  notes: >
     Demon slaying weapons, they're pretty subpar if you're not fighting a demon. Has decent stats, anti-flinch is nice but the third
     factor is pretty bad.
     
@@ -208,7 +208,7 @@ notes: >
       lb: 5
   obtained: Gacha
 
-notes: >
+  notes: >
     The Bloody Knuckles on steroids and the knuckles every Rena main wants. It's INT buff makes it a must have if you want to play a lot
     of Rena. On top of that it comes with a decent amount of human hate and though it's final factor isn't great for Rena it's great
     for other knuckle users you're using it as a neutral anti-human weapon for.
@@ -231,7 +231,7 @@ notes: >
         buffValue: 20
   obtained: Executioner Exchange
 
-notes: >
+  notes: >
     Event knuckles meant for Ilia with the bonus of being an event weapon with an elemental imbue. While they aren't going to beat out
     the gacha fire knuckles you can get they're worth the pick up if you don't have them. Plus if you get the gacha gloves later 
     they're actually quite good for Ilia so just stick them on her.
@@ -259,7 +259,7 @@ notes: >
         buffValue: 5
   obtained: Coro Revorse Exchange
 
-notes: >
+  notes: >
     Some global exclusive event knuckles for Michael. They're super bad, the slayer buff is weak, the crit chance is weak and even the
     skill damage buff isn't the usual 20% so please fodder them.
     
@@ -287,7 +287,7 @@ notes: >
         buffValue: 5
   obtained: gacha
 
-notes: >
+  notes: >
     Basically the Fanged Knuckles but with better machine hate and fire imbue instead of a skill damage boost. These knuckles are now
     very good since as imbue isn't often paired with slayer in GL, especially with this big a slayer bonus. You'll really mess up
     any fire weak machines with these and they're just decent all around knuckles. The final factor is pathetic though.
@@ -315,7 +315,7 @@ notes: >
         buffValue: 30
   obtained: Armaros Exchange
 
-notes: >
+  notes: >
     Event knuckles meant for Meracle, they're pretty bad, even with some AP recovery and slight insect hate, it isn't enough to make
     them better than the majority of weapons so please fodder them.
     
@@ -333,7 +333,7 @@ notes: >
       lb: 3
   obtained: gacha
 
-notes: >
+  notes: >
     The cat claws are a pair of very good wind imbue knuckles. On top of their imbue they come with a good grit chance and the
     additional factor, while weak isn't terrible due to the fast attack speed of knuckles users.
     
@@ -359,7 +359,7 @@ notes: >
         buffCondition: Short Range
   obtained: Facula Exchange
 
-notes: >
+  notes: >
     They're okay for Mirage, like any event weapon, passable for the intended character, fodder if not.
     
 - name: Storm Wheels
@@ -387,7 +387,7 @@ notes: >
       lb: 5
   obtained: gacha
 
-notes: >
+  notes: >
     A new pair of wind knuckles, some added dragon hate on them. These ones have good sustain attatched though the third factor is a bit
     meh due to single target being so common a buff and it being conditional.
     
@@ -409,7 +409,7 @@ notes: >
       lb: 5
   obtained: Mountain Motango Exchange
 
-notes: >
+  notes: >
     Event weapons for Valentine Rena, they're okay. The ATK damage buff is good but extremely limited, it buffs one of her skills and
     a little sustain is always a nice bonus. Otherwise it's fodder.
     
@@ -437,7 +437,7 @@ notes: >
       lb: 5
   obtained: gacha
 
-notes: >
+  notes: >
     Another pair of Earth Knuckles, an upgrade on the Gaia Godfists but not worth chasing if you have them. The plant hate can be a nice
     perk as is the sustain. The MLB factor is nice if you have no crit buffer.
     
