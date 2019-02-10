@@ -11,5 +11,516 @@
         priority: 4
         buff: Light Damage
         buffValue: 15
-    - desc: Radiant Lancer damage +20%
-  obtained: Coin Shop (Staff), Transmute, Gacha
+    - desc: Radiant Lancer DMG +20%
+  obtained: Staff Coin Shop / Transmute / Gacha
+  
+  notes: >
+    It's a passable staff but there are better, the gacha pool has two 40% light damage boosters in it and radiant lancer is only really
+    relevant to several healers, all of whom either have a better spell for damage or their damage is so poor it doesn't matter anyway.
+    
+- name: Winged Scepter
+  cat: 'gl'
+  star: 5
+  picture: Green_Bunny_Scepter
+  atk: 0
+  int: 545
+  factors:
+    - desc: +15% INT
+      meta:
+        priority: 4
+        buff: INT
+        buffValue: 15
+    - desc: +20% DMG on Sunflare
+    - desc: Recover 10% HP every 3 seconds
+      lb: 3
+  obtained: Staff Coin Shop / Gacha
+  
+  notes: >
+    If you're not sure what staff to get from the coin shop, this is a good pick. It's good on any caster due to it's INT boosting, both
+    healer and invoker. It's second factor has synergy with both Miki and Eve, while the third factor is a very powerful regen and only
+    needs to be lb 3 for it so I highly recommend making the extra effort.
+    
+- name: Lightning Wand
+  cat: 'gl'
+  star: 5
+  picture: Thunder_Cane_Tall_Wand
+  atk: 0
+  int: 840
+  factors:
+    - desc: Lightning damage +15%
+      meta:
+        priority: 4
+        buff: Lightning Damage
+        buffValue: 15
+    - desc: Thunder Flare DMG +20%
+  obtained: Staff Coin Shop / Transmute / Gacha
+  
+  notes: >
+    If you've picked up Myuria and don't have a thunderbird staff, this is the best weapon for her and is easily obtainable. Boosts her
+    lightning damage spells and rush. Even adds some extra power to her Thunder Flare spell.
+    
+- name: Nightmare Wand
+  cat: 'gl'
+  star: 5
+  picture: Nightmare_Wand
+  atk: 0
+  int: 530
+  factors:
+    - desc: +15% INT
+      meta:
+        priority: 4
+        buff: INT
+        buffValue: 15
+    - desc: -15% DEF
+      meta:
+        priority: 4
+        buff: DEF Reduction
+        buffValue: 15
+    - desc: +20% DMG on Deep Freeze
+  obtained: Staff Coin Shop / Transmute / Gacha
+  
+  notes: >
+    The trash transmute and shop option. It's a much worse winged scepter which boosts an attack used by Myuria and Oracle Nel. Use it
+    as fodder.
+    
+- name: Rod of the Feather
+  cat: 'gl'
+  star: 5
+  picture: Feather_Tusk
+  atk: 0
+  int: 492
+  factors:
+    - desc: +20% DMG on Crush
+    - desc: +20% DMG to Machines
+      slayer: Machine
+      slayerPct: 20
+      meta:
+        priority: 4
+        buff: Damage To Machines
+        buffValue: 20
+    - desc: +15% DMG to Multiple Targets
+      lb: 5
+      meta:
+        priority: 1
+        buff: Multiple Target Damage
+        buffValue: 15
+  obtained: Gerel Exchange
+  
+  notes: >
+    Event weapon meant for Millie. It's fodder, the slayer factor is too low, multi target damage is bad and you shouldn't be attacking
+    with Millie anyway.
+    
+- name: Lemurisian Wand
+  cat: 'gl'
+  star: 5
+  picture: Remurick_Wand
+  atk: 0
+  int: 477
+  factors:
+    - desc: +10% INT
+      meta:
+        priority: 4
+        buff: INT
+        buffValue: 10
+    - desc: +100% DMG on Trinity Blaze
+    - desc: +10% Crit Rate
+      lb: 5
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 10
+  obtained: Frost Tree Exchange
+  
+  notes: >
+    A staff meant for Lymle that turns her into a decent enough fire caster if you lack Sophia. The INT boost helps make up for the lack
+    of stats, the third factor is a nice perk if you lack a crit buffer and doubling your rush damage is never a bad thing. It's bad
+    for anyone else compared to easily obtained staffs like Winged Scepter.
+    
+- name: Aether-In-Statis
+  cat: 'gl'
+  star: 5
+  picture: Ether_Frozen
+  atk: 0
+  int: 850
+  factors:
+    - desc: +15% DMG to Multiple Targets
+      meta:
+        priority: 1
+        buff: Multiple Target Damage
+        buffValue: 15
+    - desc: +20% DMG on Plasma Cyclone
+    - desc: +10% DMG
+      lb: 5
+      meta:
+        priority: 1
+        buff: Damage
+        buffValue: 10
+  obtained: Gacha
+  
+  notes: >
+    A poor pull from the gacha, it boosts plasma cyclone for Myuria and the AoE damage, but area of effect has such limited use in a
+    game more focused on boss encounters. I'd just fodder it but you can hold onto it if you really want.
+    
+- name: Thunderbird Staff
+  cat: 'gl'
+  star: 5
+  picture: Thunderbird_Staff
+  atk: 958
+  int: 962
+  factors:
+    - desc: +40% Lightning DMG Dealt
+      meta:
+        priority: 4
+        buff: Lightning Damage
+        buffValue: 40
+    - desc: - desc: +20% DMG to Demons
+      slayer: Demon
+      slayerPct: 20
+      meta:
+        priority: 4
+        buff: Damage To Demons
+        buffValue: 20
+    - desc: +10% DMG to Humans
+      slayer: Human
+      slayerPct: 10
+      meta:
+        priority: 4
+        buff: Damage To Humans
+        buffValue: 10
+    - desc: +30% AP RCV (If not being targetted by an enemy.)
+      lb: 3
+      meta:
+        priority: 3
+        buff: AP Recovery
+        buffValue: 30
+        buffCondition: Not Being Targetted By Enemy
+  obtained: Gacha
+  
+  notes: >
+    The best weapon for Myuria. It gives a massive boost to her lightning damage and even comes with a couple of weak slayer factors
+    but not bad to have. The MLB factor is a nice perk but is probably the weakest part about the weapon. A must keep.
+    
+- name: Infernal Sceptre
+  cat: 'gl'
+  star: 5
+  picture: Infernal_Scepter
+  atk: 956
+  int: 961
+  factors:
+    - desc: +40% Fire DMG Dealt
+      meta:
+        priority: 4
+        buff: Fire Damage
+        buffValue: 40
+    - desc: +20% DMG to Humans
+      slayer: Human
+      slayerPct: 20
+      meta:
+        priority: 4
+        buff: Damage To Humans
+        buffValue: 20
+    - desc: +15% Stun Chance
+      meta:
+        priority: 4
+        buff: Stun Rate
+        buffValue: 15
+    - desc: 70% Chance to Survive a Lethal Attack at 15% or more HP
+      lb: 3
+  obtained: Gacha
+  
+  notes: >
+    The best weapon for Sophia. It gives a massive boost to her fire damage and even comes with human slaying. A stun rate boost with
+    a nice mlb grit chance factor. It's everything Sophia could want in a staff.
+    
+- name: Crowned Scepter
+  cat: 'gl'
+  star: 5
+  picture: Reinforced_Crescent_Wand
+  atk: 487
+  int: 492
+  factors:
+    - desc: +10% DMG on Violent Explosion
+    - desc: +10% Stun Chance
+      meta:
+        priority: 4
+        buff: Stun Rate
+        buffValue: 10
+    - desc: Recover 2% HP every 5 seconds
+      lb: 5
+  obtained: Luther Exchange
+  
+  notes: >
+    Event weapon meant for Sophia. It's fodder, the factors are all just terrible.
+    
+- name: Celite Rod
+  cat: 'gl'
+  star: 5
+  picture: Celite_Rod
+  atk: 488
+  int: 493
+  factors:
+    - desc: +15% DMG on Conjure Comet
+    - desc: -10% Cast Time
+      meta:
+        priority: 4
+        buff: Cast Time Reduction
+        buffValue: 10
+    - desc: Damage Taken -5%
+      lb: 5
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffValue: 5
+  obtained: Coro Revorse Exchange
+  
+  notes: >
+    Event weapon meant for Evelysse. It's fodder, it just simply doesn't have strong enough factors on it, even for Eve. Especially
+    since Winged Scepter boosts another one of her damage skills anyway.
+    
+- name: Racket Staff
+  cat: 'gl'
+  star: 5
+  picture: Smash_Rod
+  atk: 957
+  int: 964
+  factors:
+    - desc: +20% Light DMG Dealt
+      meta:
+        priority: 4
+        buff: Light Damage
+        buffValue: 20
+    - desc: +20% DMG to Machines
+      slayer: Machine
+      slayerPct: 20
+      meta:
+        priority: 4
+        buff: Damage To Machines
+        buffValue: 20
+    - desc: +15% HP
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 15
+    - desc: Repel +1
+      lb: 5
+  obtained: Gacha
+  
+  notes: >
+    A bit of an odd staff, it deals pretty good damage for light casters, and the mlb factor helps prevent taking aggro. The HP buff is
+    pretty big as well and adds a lot of bulk meaning it's good for both Celine and the various light based healers.
+    
+- name: Ceremonial Spear
+  cat: 'gl'
+  star: 5
+  picture: Winged_Scepter
+  atk: 489
+  int: 492
+  factors:
+    - desc: +10% DMG on Tornado
+    - desc: +25% DMG to Avians
+      slayer: Avian
+      slayerPct: 25
+      meta:
+        priority: 4
+        buff: Damage To Bird
+        buffValue: 25
+    - desc: Repel +1
+      lb: 5
+  obtained: Colossal Beak Exchange
+  
+  notes: >
+    Event weapon meant for Sarah. While the slayer factor is actually reasonable, it's not enough to keep the weapon and you should just
+    fodder it.
+    
+- name: Rod of Snakes
+  cat: 'gl'
+  star: 5
+  picture: Rod_of_Snakes
+  atk: 487
+  int: 494
+  factors:
+    - desc: +10% DMG to Silencing Starlight
+    - desc: Damage Taken -5%
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffValue: 5
+    - desc: Light damage +15%
+      lb: 5
+      meta:
+        priority: 4
+        buff: Light Damage
+        buffValue: 15
+  obtained: Colossal Beak Exchange
+  
+  notes: >
+    Event weapon meant for Celine. Compared to the usual trash that is the event weapons, this one is surprisingly good. At MLB it's
+    quite comparable with Holy Wand for Celine, sacrificing stats for two beneficial factors. However there are multiple good staffs
+    for Celine in the gacha pool so you'll probably pull one of those eventually so you can use this for fodder unless you have nothing
+    better.
+    
+- name: Christmas Staff
+  cat: 'gl'
+  star: 5
+  picture: Christmas_Wand
+  atk: 526
+  int: 533
+  factors:
+    - desc: +20% DMG on Prismatic Rays
+    - desc: +10% DEF
+      meta:
+        priority: 4
+        buff: DEF
+        buffValue: 10
+    - desc: Anti-Flinch Casting
+      lb: 5
+  obtained: Christmas Horndevil Exchange
+  
+  notes: >
+    Event weapon meant for Winter Precis. It's not a terrible weapon as far as event weapons go. Boosts her best attack, gives some bulk
+    and anti-flinch while casting is a nice perk. But there are much better weapons for her and other healers going so if you have
+    better, fodder it.
+    
+- name: Santa Bunny Rod
+  cat: 'gl'
+  star: 5
+  picture: Santa_Bunny_Rod
+  atk: 958
+  int: 964
+  factors:
+    - desc: +40% Light DMG Dealt
+      meta:
+        priority: 4
+        buff: Light Damage
+        buffValue: 40
+    - desc: +20% DMG to Demons
+      slayer: Demon
+      slayerPct: 20
+      meta:
+        priority: 4
+        buff: Damage To Demons
+        buffValue: 20
+    - desc: 80% Chance to Survive a Lethal Attack at 10% or more HP
+    - desc: Anti-Flinch Casting
+      lb: 5
+  obtained: Gacha
+  
+  notes: >
+    A pretty good staff for Celine and light based healers. Boosts light damage by a lot, has some demon slaying, anti-flinch at mlb
+    and a pretty good grit chance factor makes this weapon a more defensive version of the Illuminated Staff.
+    
+- name: Illuminated Staff
+  cat: 'gl'
+  star: 5
+  picture: Santa_Bunny_Rod
+  atk: 958
+  int: 964
+  factors:
+    - desc: +40% Light DMG Dealt
+      meta:
+        priority: 4
+        buff: Light Damage
+        buffValue: 40
+    - desc: +10% Crit Chance
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 10
+    - desc: +15% Crit DMG
+      meta:
+        priority: 4
+        buff: Crit Damage
+        buffValue: 15
+    - desc: -10% ATK DMG Taken
+      meta:
+        priority: 1
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+      lb: 5
+  obtained: Gacha
+  
+  notes: >
+    A more offensive choice for light casters. The crit rate and damage boost along with the light damage boost allow them to output
+    some big numbers. The final factor gives a nice defensive buff which isn't super common to find so can have relevance.
+    
+- name: Angelic Rune Wand
+  cat: 'gl'
+  star: 5
+  picture: Angelic_Runic_Wand
+  atk: 509
+  int: 512
+  factors:
+    - desc: +20% DMG on Aurora Rings
+    - desc: -10% DMG Taken
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffValue: 10
+    - desc: +10% DEF
+      meta:
+        priority: 4
+        buff: DEF
+        buffValue: 10
+      lb: 5
+  obtained: Alma Exchange
+  
+  notes: >
+    Event weapon meant for Relia. Relia is generally best when not attacking and lancer is better than Aurora rings. It's other two
+    factors aren't actually terrible from a bulk perspective so using it for Relia isn't the worst thing, but you can do better and
+    should fodder this.
+    
+- name: Dreaming Bear
+  cat: 'gl'
+  star: 5
+  picture: Dreaming_Bear
+  atk: 959
+  int: 963
+  factors:
+    - desc: +20% HP
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 20
+    - desc: 80% Chance to Survive a Lethal Attack at 20% or more
+    - desc: -10% AP Cost
+      meta:
+        priority: 1
+        buff: AP Cost Reduction
+        buffValue: 10
+      lb: 5
+  obtained: Gacha
+  
+  notes: >
+    A more defensive orientated staff that's good for anyone. Due to it's more defensive nature it is more inclined to healers. The
+    final factor inparticular is nice for healers who don't have AP reduction themselves.
+    
+- name: Blue Sapphire Staff
+  cat: 'gl'
+  star: 5
+  picture: Blue_Sapphire_Staff
+  atk: 531
+  int: 536
+  factors:
+    - desc: +25% Ice DMG Dealt
+      meta:
+        priority: 4
+        buff: Ice Damage
+        buffValue: 25
+    - desc: +15% INT
+      meta:
+        priority: 4
+        buff: INT
+        buffValue: 15
+    - desc: -10% DMG Taken
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffValue: 10
+      lb: 5
+  obtained: Gacha
+  
+  notes: >
+    So this staff is garbage. We will get a version of Reimi to join Myuria in having ice as their secondary element, but for both you
+    want to focus on what they're good at. For INT scaling the winged scepter is better and the only character this weapon is good for
+    is if you want to maximise your meme value with Oracle Nel who is an ice based healer. Otherwise it is fodder.
+    
