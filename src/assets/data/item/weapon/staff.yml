@@ -318,7 +318,7 @@
   factors:
     - desc: +10% DMG on Tornado
     - desc: +25% DMG to Avians
-      slayer: Avian
+      slayer: Bird
       slayerPct: 25
       meta:
         priority: 4
