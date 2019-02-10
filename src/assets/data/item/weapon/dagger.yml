@@ -7,11 +7,348 @@
   factors:
     - desc: Imbues attacks with lightning element
       element: Lightning
-    - desc: Poisonous Guillotine damage +20%
+    - desc: +20% DMG on Poisonous Guillotine
     - desc: ATK +10%
       lb: 5
       meta:
         priority: 4
         buff: ATK
         buffValue: 10
-  obtained: Coin Shop (Jie Revorse)
+  obtained: Jie Revorse Exchange
+  
+  notes: >
+    A rare event weapon since it's worth keeping. Since it is MLB it actually beats our a level 10 Golden Thunderblade due to it's ATK
+    factor but the thunderblade catches back up at MLB. Has extra synergy with Nel which is worth considering if you own both daggers.
+    Just a very solid weapon to have.
+    
+- name: Golden Thunderblades
+  cat: 'gl'
+  star: 5
+  picture: Thunderous_Blades_Koganemaru
+  atk: 840
+  factors:
+    - desc: Imbues attacks with lightning element
+      element: Lightning
+    - desc: +20% DMG on Victory Terror
+  obtained: Dagger Coin Shop / Transmutation / Gacha
+  
+  notes: >
+    The best daggers you can get from the coin shop due to them being elemental imbued. Though early on they're beaten out by the
+    daggers gotten from Jie, they get better at MLB. Plus they have additional synergy with Clair which is worth considering.
+    
+- name: Serpent Edges
+  cat: 'gl'
+  star: 5
+  picture: Serpent_Edges
+  atk: 475
+  factors:
+    - desc: Imbues attacks with Ice element
+      element: Ice
+    - desc: +20% DMG on Hydroblades
+    - desc: Extends hit count timer by 0.5 seconds.
+  obtained: Jie Revorse Exchange
+  
+  notes: >
+    An event weapon that you must keep, even on JP there are no other 5 star ice daggers that you can obtain. These are very important
+    weapons.
+    
+- name: Elemental Edge
+  cat: 'gl'
+  star: 5
+  picture: Elemental_Edge
+  atk: 545
+  factors:
+    - desc: ATK +15%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 15
+    - desc: +20% DMG on Flying Guillotine
+    - desc: +4% Crit Chance
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 4
+      lb: 3
+  obtained: Dagger Coin Shop / Transmutation / Gacha
+  
+  notes: >
+    They're basically a stat stick, the third factor is bad, it's passable as a neutral weapon because of the scaling. That's it.
+    
+- name: Ice Blades
+  cat: 'gl'
+  star: 5
+  picture: Ice_Coffin
+  atk: 835
+  factors:
+    - desc: +15% Ice DMG Dealt
+      meta:
+        priority: 4
+        buff: Ice Damage
+        buffValue: 15
+    - desc: +20% DMG on Sylvan Shot
+  obtained: Dagger Coin Shop / Transmutation / Gacha
+  
+  notes: >
+    They're not a terrible neutral weapon for Clair since Hydroblades is Ice and she uses Sylvan shot, for everyone else, there are
+    better neutral weapons in the gacha pool and you can get Thunderblades from the coin shop.
+    
+- name: Dragon Spirit Blades
+  cat: 'gl'
+  star: 5
+  picture: Aquatic_Spirit_Ruby_Dragon_Blades
+  atk: 535
+  factors:
+    - desc: +15% ATK
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 15
+    - desc: -15% DEF
+      meta:
+        priority: 4
+        buff: DEF Reduction
+        buffValue: 15
+    - desc: +20% DMG on Hydroblades
+  obtained: Dagger Coin Shop / Transmutation / Gacha
+  
+  notes: >
+    Other weapons do what this does better. This is fodder. My sympathies if you pulled it. It is usable if it is your only dagger.
+    
+- name: Gan Jiang & Mo Ye
+  cat: 'gl'
+  star: 5
+  picture: Kanshou_Byakuya
+  atk: 850
+  factors:
+    - desc: +15% DMG to Single Target
+      meta:
+        priority: 1
+        buff: Single Target Damage
+        buffValue: 15
+    - desc: +20% DMG on Mirror Blade
+    - desc: +10% DMG
+      meta:
+        priority: 1
+        buff: Damage
+        buffValue: 10
+      lb: 5
+  obtained: Gacha
+  
+  notes: >
+    A passage neutral weapon. The problem it has is the damage boosting factors are hardly uncommon anymore and the skill it boosts is
+    bad. It can be of value if you're pubbing but otherwise it's just kind of average.
+  
+- name: Slayer of Men
+  cat: 'gl'
+  star: 5
+  picture: Killer's_Edge
+  atk: 584
+  int: 581
+  factors:
+    - desc: +15% ATK
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 15
+    - desc: +15% DEF
+      meta:
+        priority: 4
+        buff: DEF
+        buffValue: 15
+    - desc: +25% DMG to Humans
+      slayer: Human
+      slayerPct: 25
+      meta:
+        priority: 4
+        buff: Damage To Humans
+        buffValue: 25
+    - desc: -10% AP Cost
+      lb: 3
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 10
+  obtained: Gacha
+  
+  notes: >
+    Some pretty solid neutral daggers, the human slaying is not as powerful as the 40% we now see, but with a double stat boost to
+    increase both damage and bulk is nice. Plus the third factor is quite a good one should you get it that far.
+    
+- name: Suzaku
+  cat: 'gl'
+  star: 5
+  picture: Anti_Demon_Blades_Suzaku
+  atk: 962
+  int: 961
+  factors:
+    - desc: +40% DMG to Demons
+      slayer: Demon
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Demons
+        buffValue: 40
+    - desc: +25% AP Recovery Speed
+      meta:
+        priority: 4
+        buff: AP Recovery
+        buffValue: 25
+    - desc: +10% DMG (When not targeted by enemy.)
+      lb: 5
+      meta:
+        priority: 3
+        buff: Damage
+        buffValue: 10
+        buffCondition: Not Being Targeted By Enemy
+  obtained: Gacha
+  
+  notes: >
+    They're okay against Demons but otherwise they don't have much of a use. It's up to you whether you keep them or not.
+    
+- name: Cobalt Blades
+  cat: 'gl'
+  star: 5
+  picture: Anti_Demon_Blades_Suzaku
+  atk: 862
+  int: 858
+  factors:
+    - desc: +30% DMG on Divine Wrath (Falling Petals)
+    - desc: +20% ATK DMG
+      meta:
+        priority: 4
+        buff: ATK Damage
+        buffValue: 20
+    - desc: Recover 15% HP of DMG Dealt by Normal Attacks
+      lb: 5
+  obtained: Millioneyes Gacha Box
+  
+  notes: >
+    Daggers meant for Nel since it buffs her pretty terrible rush damage. However the second and third factor help make these just
+    stand out weapons in general off element.
+    
+- name: Ruby Princess Blades 
+  cat: 'gl'
+  star: 5
+  picture: Dancing_Daggers_Ruby_Princess
+  atk: 473
+  factors:
+    - desc: +15% DMG on Dancing Sword
+    - desc: +10% DMG to Single Target
+      meta:
+        priority: 1
+        buff: Single Target Damage
+        buffValue: 10
+    - desc: +10% DEF
+      meta:
+        priority: 4
+        buff: DEF
+        buffValue: 10
+      lb: 5
+  obtained: Hell Siren Exchange
+  
+  notes: >
+    An event weapon that is intended for Phia. The DEF buff is meant to help make up for her debuff, but overall the factors are just
+    too weak. Use it as fodder.
+    
+- name: Vouivre Nail Knives
+  cat: 'gl'
+  star: 5
+  picture: Vouivre_Nail_Knives
+  atk: 511
+  int: 508
+  factors:
+    - desc: +20% DMG on Dragon's Might
+    - desc: +30% AP Recovery Speed
+      meta:
+        priority: 4
+        buff: AP Recovery
+        buffValue: 30
+    - desc: +15% Crit Chance
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 15
+      lb: 5
+  obtained: Pumpkin Cryptvine Exchange
+  
+  notes: >
+    An event weapon that is intended for Halloween Victor. They're pretty usable for him, AP recovery and a reasonable crit bonus. But
+    really you'd be better off with an elemental weapon, but decent enough to keep for a while if you don't want to use Thunderblades.
+    
+- name: Bloodstone Protectors
+  cat: 'gl'
+  star: 5
+  picture: Protective_Light_Swords
+  atk: 962
+  int: 957
+  factors:
+    - desc: Imbue Light Attribute
+      element: Light
+    - desc: 80% Chance to Survive a Lethal Attack at 10% HP or more
+    - desc: +20% ATK DMG (When HP is 100%)
+      meta:
+        priority: 3
+        buff: ATK Damage
+        buffValue: 20
+        buffCondition: HP is 100%
+      lb: 5
+  obtained: Gacha
+  
+  notes: >
+    Light imbue weapons that are well statted and have a powerful grit chance on them. Get them to MLB for their third factor and if you
+    have some sustain to keep you topped up, these daggers will help you deal a lot of damage.
+    
+- name: Shellbreaker Sword - Habakiri
+  cat: 'gl'
+  star: 5
+  picture: Shellbreaker_Swords_Habakiri
+  atk: 959
+  int: 960
+  factors:
+    - desc: +40% DMG to Insects
+      slayer: Insect
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Insects
+        buffValue: 40
+    - desc: Recover 3% HP every 5 seconds
+    - desc: +30% AP Recovery Speed
+      meta:
+        priority: 4
+        buff: AP Recovery
+        buffValue: 30
+      lb: 5
+  obtained: Gacha
+  
+  notes: >
+    They're basically the Suzaku daggers but for bugs instead of demons. Has slightly better AP recovery and a sustain factor. They'll
+    be good as off element bug smashers, but not great beyond that.
+    
+- name: Minotaur Beastswords
+  cat: 'gl'
+  star: 5
+  picture: Beast_Destroyer_Blades_Minotauros
+  atk: 961
+  int: 959
+  factors:
+    - desc: +40% DMG to Beasts
+      slayer: Beast
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Beasts
+        buffValue: 40
+    - desc: +20% Rush Combo DMG
+      meta:
+        priority: 1
+        buff: Rush Damage
+        buffValue: 20
+    - desc: Recover 3% HP every 3 seconds
+      lb: 5
+  obtained: Gacha
+  
+  notes: >
+    Beast slaying daggers. They have a rare rush damage buff on them and the third factor gives some good sustain, a pretty good
+    neutral option and very good against Beasts.
