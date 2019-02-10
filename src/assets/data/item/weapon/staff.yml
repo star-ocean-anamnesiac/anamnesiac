@@ -173,7 +173,7 @@
         priority: 4
         buff: Lightning Damage
         buffValue: 40
-    - desc: - desc: +20% DMG to Demons
+    - desc: +20% DMG to Demons
       slayer: Demon
       slayerPct: 20
       meta:
