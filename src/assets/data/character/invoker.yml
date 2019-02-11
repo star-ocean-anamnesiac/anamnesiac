@@ -116,14 +116,45 @@
     maxHits: 9
 
   notes: >
-      _Sophia is an interesting caster. Though she is elemental locked like all of the other casters, she also brings an ATK buffing
-      skill that allows her to fit into physical attacking compositions. Due to this, if you enjoy the staff invoker play style she's
-      probably the best to invest in. Her talents all buff her, and she has a homing attack that helps deal with moving targets as
-      well. A viable self sufficient flexible caster._
+      _Sophia puts on some actual clothes to join the roster as a permanent character. She's a fire caster who has one earth spell so
+      is really lacking a second element. To make up for that she instead comes with an in combat ATK buff. Her talents are pretty
+      greedy, affecting only her or just all healers and invokers. However this makes her self-sufficient and can just slot into
+      any party as just a damage dealing fire invoker. She has an incredibly high INT stat which means she hits incredibly hard as
+      well. Post rush she starts to hit even harder and her spells are reduced in cost allowing her to chain attacks together more and
+      just hit like a truck.
+      
+      As for Sophia's negatives, well she's a staff user which means animations can be slow, she is also pretty all in on fire due
+      to the lack of a secondary element. Plus aside from her ATK buffs she really is just a greedy damage dealer if she isn't in
+      a caster focused composition._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - In combat ATK buff.
+      
+      - Good buffs for Invokers and healers.
+      
+      - Talents make her self sufficient and doesn't require party synergy.
+      
+      - Fire Bolt is a homing attack.
+      
+      
+      **Cons**
+      
+      - Talents are greedy outside of a caster composition.
+      
+      - Hard locked into fire. Has no real secondary element.
+      
+      - Staff casting.
+      
 
       **Rotation**
 
       *Normal > CA Explosion > Fire Bolt > Explosion > Explosion (General damage rotation. Recommended with 101 AP.)*
+      
       *Normal > CA Fire Bolt > Explosion > Fire Bolt (Moving target rotation.)*
       
 - name: Myuria Tionysus
@@ -213,6 +244,47 @@
           buffValue: 80
     power: INT x 3500%
     maxHits: 2
+    
+  notes: >
+      _Myuria was the starter Invoker choice and the second best pick behind Maria. Myuria is really the benchmark for what you're
+      looking for in a damage carrying invoker. She has greedy talents that make her self sufficient, and powerful spells. Plasma
+      Cyclone inparticular is a good spell for clearing trash rooms and MoT. Her secondary element is Ice, meaning she can be used
+      against Michael if you really want, her main element of lightning isn't a bad one either and her boosted stun rate means she
+      helps elemental burst more easily.
+      
+      Myuria's downsides are that she doesn't bring any talents to support the party, she is a staff caster as well so she has those
+      clunky animations. She also has some pretty high AP costs and her rush gain is quite slow, especially when there aren't
+      multiple targets to cyclone._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Plasma Cyclone for great AoE
+      
+      - Good stun rate buff.
+      
+      - Talents make her self sufficient and doesn't require party synergy.
+      
+      - Deals good damage.
+      
+      
+      **Cons**
+      
+      - Talents are greedy.
+      
+      - High AP costs.
+      
+      - Staff casting.
+      
+      - Slow rush gain.
+      
+
+      **Rotation**
+
+      *Normal > CA Thunder Flare > Plasma Cyclone > Thunder Flare (General damage rotation.)*
 
 - name: Ronyx J. Kenny
   cat: gl
@@ -292,6 +364,41 @@
           buffValue: 50
     power: INT x 2500%
     maxHits: 10
+    
+  notes: >
+      _Ronyx is a bow caster who is pretty good for buffing other INT damage dealers with his super high 40% INT buff. Post rush he
+      also reduces cast time by 50% meaning he's great if you want a buffer for your caster heavy parties. His elements of choice
+      are fire and earth with his focus being fire since his rush is fire based.
+      
+      While Ronyx may be a great buffer he's pretty garbage as a stand alone character. His cast times are slow, his stats are poor, his
+      spells are expensive and his AI is utter trash. If you want a challenge, or you want to try playing a different more challenging
+      play style then he's good for that but otherwise don't bother._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Strong party wide INT buff.
+      
+      - Reduces cast times by 50% post rush.
+      
+      - Non-ace so cheaper to MLB and augment.
+      
+      
+      **Cons**
+      
+      - Slow cast times with expensive spells which can miss.
+      
+      - Abysmal AI.
+      
+      - Non-ace so has less stats.
+      
+
+      **Rotation**
+
+      *Normal > Normal > Normal > CA Explosion > Dash Cancel > CA Explosion > Spam till out of AP (Rush / Support rotation)*
 
 - name: Lymle Lemuri Phi
   cat: gl
@@ -378,7 +485,45 @@
     maxHits: 6
    
   notes: >
-    kay?
+      _Lymle is a non-ace fire caster who is pretty average. She has greedy defensive talents that give her some bulk and her post rush
+      buff lets her deal pretty respectable damage. She also has a homing attack and her main element is fire with her secondary being
+      wind.
+      
+      Lymle's problem is that she just gets outscaled by other invokers. She's not terrible but not great either and her lack of 
+      damage boosting talents hurts her quite a bit. In the end Lymle is just underwhelming, especially compared to her ace level
+      competitors._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Non-ace so cheaper to MLB and augment.
+      
+      - Deals good damage post rush.
+      
+      - Talents give her some good survivability.
+      
+      
+      **Cons**
+      
+      - No party wide talent or post rush buffs.
+      
+      - Mediocre damage pre-rush.
+      
+      - Staff casting.
+      
+      - Non-ace so has less stats.
+      
+
+      **Rotation**
+
+      *Normal > CA Tornado > Wind Blade > Tornado (General wind damage rotation.)*
+      
+      *Normal > CA Firebolt > Volcanic Burst > Firebolt (General fire damage rotation.)*
+      
+      *Normal > CA Volcanic Burst > Firebolt > Volcanic Burst (General fire damage rotation. 105 AP.)*
 
 - name: Faize Sheifa Beleth
   cat: gl
@@ -462,11 +607,54 @@
           buffValue: 30
     power: INT x 3000%
     maxHits: 12
+    
+  notes: >
+      _Faize is a strange caster because he wields a BnS. You need to get his weapon from frost tree to make him usable as well. He
+      uses melee normals until we get a QoL update to give him ranged ones. Two of his spells are short ranged, but one can be used
+      at long range anyway. He's locked to dark which isn't a great element, however he also applies curse which helps make up for
+      his DPS. Even then his high INT stat gives him pretty good damage, especially when paired with his Rapier. He also provides
+      a strong party wide single target damage buff and a stun rate buff. Plus his grit talent helps make up for how squishy he is.
+      
+      His downsides are there though, fact he's all in on Dark is one of them. However he is still clunky to play due to melee normals
+      which can make him a challenge for newer players. He is also super squishy, with a low HP pool and crazy low defence which makes
+      him even harder for newer players._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Non-ace so cheaper to MLB and augment.
+      
+      - Has good damage output, especially for a non-ace.
+      
+      - Can inflict curse.
+      
+      - Good party wide buffs and a grit talent to help him live.
+      
+      
+      **Cons**
+      
+      - Locked into dark.
+      
+      - Extremely squishy.
+      
+      - Melee normals and short ranged spells can make him awkward to play.
+      
+      - Non-ace so has less stats.
+      
+
+      **Rotation**
+
+      *CA Shadow Needles > Reaping Spark > Shadow Needles > Spam till out of AP (Ranged damage rotation.)*
+      
+      *Normal > Shadow Needles > Reaping Spark > Cursed Devourer (Melee damage rotation.)*
 
 
 - name: Celine Jules
   cat: gl
-  rating: 5.5
+  rating: 6
   picture: celinejules
   weapon: staff
   limited: false
@@ -557,6 +745,46 @@
           buffValue: 50
     power: INT x 3500%
     maxHits: 6
+    
+  notes: >
+      _Celine is a bit of a different invoker compared to previous releases. For a start she focuses more on the utility side of things
+      than the damage. She is an ace who buffs caster comps with a party wide INT buff. She also gives herself a rare INT damage buff
+      when she has 100% HP. On top of this she has the utility of having the ability to silence foes and has plasma cyclone as her
+      off element spell which gives her a good AoE option. Being a light caster has it's perks since it's one of the more frequent
+      weaknesses as well.
+      
+      Celine does have her downsides for a start her INT buff is generally irrelevant to post rush invokers inparticular. She doesn't
+      really bring anything to the party for non-casters apart from her crowd control and silencing. She doesn't do quite as much
+      damage as her fellow invokers and her stronger spells are quite expensive. Plus she has the age old weakness of being a caster._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Plasma Cyclone for great AoE
+      
+      - Party wide INT buff for caster comps
+      
+      - Can silence enemies.
+      
+      - Deals good damage.
+      
+      
+      **Cons**
+      
+      - Doesn't bring much aside from her INT buff.
+      
+      - High AP costs.
+      
+      - Staff casting.
+      
+
+      **Rotation**
+
+      *Normal > CA Silencing Star Light > Silencing Sunflare > Silencing Star Light (General damage rotation.)*
+
 
 - name: Fiore Brunellie
   cat: gl
@@ -663,4 +891,44 @@
           buffValue: 40
     power: INT x 3500%
     maxHits: 16
+    
+  notes: >
+      _Fiore arrives to finally let players use their orb weapons as our first permanent ace orb wielder. She is a dark focused caster
+      with ice as the secondary element. She provides a weak INT buff and anti-flinch on casting for caster comps. For the general 
+      party she provides ATK & INT damage buffs past a 3+ skill chain. Her own talents help her chain quite a bit beyond 3 skills as
+      well. Her post-rush buff lowers enemy DEF by 40% which while not amazing will benefit the parties damage a little.
+      
+      As for problems well, her best buff of ATK & INT damage can be hard to use for some characters, especially if they don't have AP
+      reduction themselves. Dark isn't the best element to be focused on due to the lack of Dark bosses but at least Alma will be a 
+      boss we'll see rerun. In the end, Fiore is a solid caster and maybe worth trying if you're interested in invokers but hate
+      staff casting._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Orb casting.
+      
+      - Good buffs for casting comps.
+      
+      - Deals good damage.
+      
+      - Has homing attacks.
+      
+      
+      **Cons**
+      
+      - Dark focused caster.
+      
+      - Other party members may struggle to make use of her skill chain talent.
+      
+
+      **Rotation**
+
+      *Normal > CA Shadow Exinction > Ice Needles > Shadow Needles (General damage rotation for mobile or large enemies.)*
+      
+      *Normal > CA Shadow Exinction > Shadow Needles > Shadow Exinction (General damage rotation for multiple or small enemies.)*
+      
     
