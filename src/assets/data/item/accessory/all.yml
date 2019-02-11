@@ -439,3 +439,20 @@
 
   notes: >
     -
+    
+- name: Valentine's Pouch
+  cat: 'gl'
+  star: 5
+  picture: Valentine's_Pouch
+  def: 728
+  factors:
+    - desc: +5% HP
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 5
+    - desc: Recover 2% HP every 5 secs
+  obtained: Mountain Motango (Drop, Exchange)
+
+  notes: >
+    -
