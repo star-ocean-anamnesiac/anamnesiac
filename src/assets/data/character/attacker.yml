@@ -2699,12 +2699,14 @@
     picture: Blessing_Chocolate_Valentine_Verda
     effects: 
       - desc: ATK damage taken +40%
+        duration: 20
         all: Enemy
         meta:
           priority: 1
           buff: Enemy ATK Damage Taken
           buffValue: 40
       - desc: INT damage taken +40%
+        duration: 20
         all: Enemy
         meta:
           priority: 1
