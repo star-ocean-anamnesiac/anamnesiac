@@ -2833,7 +2833,7 @@
 
   rush:
     name: "Love Scratch"
-    picture: Valentine_Rena_Rush
+    picture: Lovely_Scratch_Valentine_Rena
     effects: 
       - desc: Single Target Damage +40%
         all: true
