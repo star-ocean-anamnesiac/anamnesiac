@@ -3,14 +3,16 @@ $border-color: #2f45bd;
 
 @mixin item-gradient() {
 
-	$dark-color: #163c87;
-	$light-color: #1f82d0;
+  --background: #163c87 !important;
+  --background: linear-gradient(to right, #163c87 0%, #1f82d0 100%) !important;
 
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#163c87+0,1f82d0+100 */
-  --background: #163c87 !important; /* Old browsers */
-  --background: -moz-linear-gradient(left, #163c87 0%, #1f82d0 100%) !important; /* FF3.6-15 */
-  --background: -webkit-linear-gradient(left, #163c87 0%, #1f82d0 100%) !important; /* Chrome10-25,Safari5.1-6 */
-  --background: linear-gradient(to right, #163c87 0%, #1f82d0 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  color: #fff !important;
+}
+
+@mixin prominent-item-gradient() {
+
+  --background: #002400 !important;
+  --background: linear-gradient(to right, #002400 0%, #52b152 100%) !important;
 
   color: #fff !important;
 }
@@ -170,6 +172,10 @@ ion-list {
 		
 		&.faded {
 			filter: grayscale(100%);
+		}
+
+		&.prominent {
+			@include prominent-item-gradient();
 		}
   }
 }

@@ -132,12 +132,15 @@
     
           <ion-item *ngFor="let buffData of bufftype.value; let i = index"
                     [class.faded]="
+                    buffData._metaAll
+                    && 
                     (buffpriority.key !== '4' 
                       && buffpriority.key !== '3' 
                       && i > 0 
                       && buffData.buffValue !== bufftype.value[0].buffValue)
                     || (buffData.buffRole && !roleToggle)
-                    || (buffData.buffCondition && !conditionToggle)">
+                    || (buffData.buffCondition && !conditionToggle)"
+                    [class.prominent]="!buffData._metaAll">
 
             <ion-row class="single-talent-row">
               <ion-col size-md="6" size-sm="12">
