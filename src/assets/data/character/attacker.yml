@@ -2886,3 +2886,141 @@
       
       *Normal > Crescent Lotus > Death Palm Kiss > Heart Burst (General combo.)*
       
+- name: Mirage Koas
+  cat: gl
+  rating: 7
+  picture: miragekoas
+  weapon: knuckle
+  ace: true
+  star: 5
+
+  stats:
+    hp: 15750
+    atk: 3243
+    int: 1563
+    def: 1930
+    hit: 1155
+    grd: 819
+
+  talents:
+    - name: "Devastating Kick II"
+      effects: 
+        - desc: ATK +20%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 20
+    - name: "Klausian Heritage II"
+      effects: 
+        - desc: ATK Damage at Short Range +20%
+          all: true
+          meta:
+            priority: 3
+            buff: ATK Damage
+            buffCondition: Short Range
+            buffValue: 20
+    - name: "Merciful Heart II"
+      effects: 
+        - desc: AP recovery from normal attacks +100% at short range
+          all: true
+          meta:
+            priority: 3
+            buff: AP Recovery From Normal Attacks
+            buffCondition: Short Range
+            buffValue: 100
+        - desc: Evasion AP usage -50%
+          all: Attackers
+    - name: "Father’s Teachings"
+      effects: 
+        - desc: Crit Rate +30%
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffValue: 30
+        - desc: Crit Damage +30%
+          meta:
+            priority: 1
+            buff: Crit Damage
+            buffValue: 30
+
+  skills:
+    - name: "Triple Kick"
+      picture: Triple_Kick
+      power: ATK x 250%
+      ap: 24
+      maxHits: 2
+    - name: "Crescent Locus"
+      picture: Crescent_Locus
+      power: ATK x 150%
+      ap: 17
+      maxHits: 4
+      highlight: true
+    - name: "Acrobat Locus"
+      picture: Acrobat_Locus
+      power: ATK x 710%
+      ap: 41
+      maxHits: 4
+      highlight: true
+    - name: "Electric Fists"
+      picture: Current_Knuckle
+      power: ATK x 410%
+      ap: 29
+      maxHits: 3
+      highlight: true
+
+  rush:
+    name: "Avenger Charge"
+    picture: Blazing_Cannon_Anne
+    effects: 
+      - desc: AP usage -30%
+        meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 30
+      - desc: Recover 10% HP every 3 seconds
+        duration: 20
+    power: ATK x 4000%
+    maxHits: 6
+    element: Fire
+    
+  notes: >
+      _Mirage joins the roster as another permanent character and attacker carry. She has a very similar move set to Cliff with only
+      her signature move being the change, though that is enough to have a different rotation. Mirage brings some party buffs to the
+      table, a weak ATK buff that will be passable if she doesn't have an attack carry. Her other two buffs are quite strong but
+      require a composition which focuses on being at close range. ATK damage buffs are still at a premium and AP recovery on normals
+      is always very nice, especially at such a high percent. Her greedy talent that buffs her crit rate and damage requires her to
+      have 100% HP which can be inconsistent, so an accessory or weapon with sustain is advised to get the most out of her. Post rush
+      Mirage can deal more damage with an AP reduction and her regen helps keep her HP topped up to pair up well with her crit talent.
+      
+      As for her weaknesses, Mirage suffers from the lack of a ranged option like other knuckle users which reduces the ability to
+      play it safe at times and bosses who like to go airborne or run around a lot can cause issues. Her buffs while good are quite
+      conditional so she requires the right composition to shine. On top of that HP buffs are quite inconsistent and are very player
+      skill reliant so aren't the best even if powerful._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Varied buffs that are quite strong.
+      
+      - Deals high damage.
+      
+      - Has post rush regen for sustain.
+      
+      
+      **Cons**
+      
+      - Buff conditions require being built around or are inconsistent.
+      
+      - Lack of a ranged attack can cause issues with cetain bosses.
+      
+      
+      **Rotation**
+      
+      *Normal > Electric Fists > Crescent Lotus > Electric Fists > Spam till out of AP (General combo.)*
+      
+      *Normal > Crescent Lotus  > Electric Fists > Acrobat Locus > Electric Fists > Spam till out of AP (Post Rush combo.)*
+      
