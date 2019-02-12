@@ -963,7 +963,7 @@
     
 - name: Clair Lasbard (Valentine)
   cat: gl
-  rating: 5
+  rating: 4
   picture: maidenclairlasbard
   weapon: bow
   limited: true
@@ -1003,6 +1003,7 @@
       power: ATK x 200%
       ap: 20
       maxHits: 2
+      highlight: true
     - name: "Seraphic Thunder"
       picture: Seraphic_Thunder_II
       power: ATK x 280%
@@ -1019,6 +1020,7 @@
       power: ATK x 250%
       ap: 24
       maxHits: 9
+      highlight: true
       
   rush:
     name: "Revised Heavenly Flight"
@@ -1086,3 +1088,129 @@
       **Rotation**
       
       *Normal > Crimson Squall > Sonic Thorn > Crimson Squall > Spam till out of AP  (General Combo.)*    
+      
+- name: Anne (Official)
+  cat: gl
+  rating: 5
+  picture: federationannepatriceani
+  weapon: gun
+  ace: true
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 2494
+    int: 1563
+    def: 1549
+    hit: 1249
+    grd: 938
+
+  talents:
+    - name: "Flawless Support II"
+      effects: 
+      - desc: All elemental damage +30%
+        all: true
+        meta:
+          priority: 1
+          buff: Elemental Damage
+          buffValue: 30
+    - name: "Headstrong"
+      effects: 
+      - desc: Single Target Damage Dealt +15% at short range.
+        all: true
+        meta:
+          priority: 3
+          buff: Single Target Damage
+          buffCondition: Short Range
+          buffValue: 15
+    - name: "Undeveloped Planet Memories II"
+      effects: 
+        - desc: AP Recovery +50% at long range
+          meta:
+            priority: 3
+            buff: AP Recovery
+            buffCondition: Long Range
+            buffValue: 50
+    - name: "Undeveloped Planet Memories II"
+      effects: 
+        - desc: AP Cost -30%
+          meta:
+            priority: 3
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain 3+
+            buffValue: 30
+        
+  skills:
+    - name: "Heavy Bullet Barrage"
+      picture: Bullet_Barrage
+      power: ATK x 400%
+      ap: 27
+      maxHits: 6
+    - name: "Divebomb"
+      picture: Seraphic_Thunder_II
+      power: ATK x 170%
+      ap: 17
+      maxHits: 3
+      highlight: true
+    - name: "Skyline Spray"
+      picture: Skyline_Spray
+      power: ATK x 200%
+      ap: 19
+      maxHits: 3
+      highlight: true
+    - name: "Death From Above"
+      picture: Crimson_Squall
+      power: ATK x 520%
+      ap: 27
+      maxHits: 8
+      
+  rush:
+    name: "Smoking Gun"
+    picture: Gunsmoke_Arts_Federation_Anne
+    effects: 
+      - desc: Critical Rate +50%
+        all: true
+        duration: 20
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 50
+    power: ATK x 3500%
+    maxHits: 19
+    
+  notes: >
+      _Anne finally arrives to show how much better the Official version is compared to her boot leg non-ace version. Though she comes
+      up kind of short. Anne suffers from being the first dual gun wielder on JP. While on GL we've been spoiled with Winter Fidel
+      Anne was the test subject for the new play style which adds some clunkiness to it. She does have her plus points, pre-rush
+      elemental damage buffs aren't super common on GL, especially at such a high %. Plus her post rush crit rate continues the Anne
+      tradition of being extremely high for GL, not as high as her non-ace version but 50% is still very high.
+      
+      However Anne's other talents are just bad, her single target damage buff beats none of the top defenders in the game currently
+      and it's even tied to a condition of being short range. Then her AP recovery talent requires players to be at long range so
+      it's good for casters but that's about it since SS will generally normal for AP recovery. Her damage is passable for an SS but
+      the lack of quality buffs really hurt her, it doesn't help that dual guns are a bit awkward to use due to their normals being
+      more midrange unlike most of their skills which can hit at a much further distance._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Strong elemental damage buff.
+
+      - Very strong post rush crit buff.
+      
+
+      **Cons**
+
+      - Woeful Single Target Damage buff.
+
+      - Ap Recovery is limited to being at long range.
+
+      - Awkward to play.
+      
+      
+      **Rotation**
+      
+      *Normal > Divebomb > Skyline Spray > Divebomb > Spam till out of AP  (General Combo.)* 
