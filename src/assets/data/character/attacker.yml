@@ -2974,7 +2974,7 @@
     picture: Festive_Avenger_Mirage
     effects: 
       - desc: AP usage -30%
-          meta:
+        meta:
             priority: 4
             buff: AP Cost Reduction
             buffValue: 30
