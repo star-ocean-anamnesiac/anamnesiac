@@ -5,7 +5,7 @@ import { filter } from 'rxjs/operators';
 import { LocalStorage, LocalStorageService } from 'ngx-webstorage';
 
 import { ModalController, PopoverController } from '@ionic/angular';
-import { Component, OnInit, OnDestroy, NgZone } from '@angular/core';
+import { Component, OnInit, OnDestroy, NgZone, ElementRef } from '@angular/core';
 import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 
 import { DataService } from '../data.service';
@@ -61,7 +61,8 @@ export class ItemListPage implements OnInit, OnDestroy {
     private activatedRoute: ActivatedRoute,
     private popoverCtrl: PopoverController,
     private modalCtrl: ModalController,
-    private ngZone: NgZone
+    private ngZone: NgZone,
+    private elementRef: ElementRef
   ) {}
 
   ngOnInit() {
@@ -218,6 +219,10 @@ export class ItemListPage implements OnInit, OnDestroy {
 
     if(!this.showSearch) {
       this.closeSearch();
+    } else {
+      setTimeout(() => {
+        this.elementRef.nativeElement.querySelector('input').focus();
+      }, 500);
     }
   }
 

@@ -1,17 +1,9 @@
 
 import { includes, sortBy } from 'lodash';
 
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core';
 import { ModalController, NavParams } from '@ionic/angular';
 import { Character } from '../models/character';
-
-/*
-
-      <ion-col text-center *ngFor="let charClass of ['attacker', 'defender', 'healer', 'invoker', 'sharpshooter']">
-        <ion-button>
-        </ion-button>
-      </ion-col>
-      */
 
 @Component({
   template: `
@@ -32,8 +24,7 @@ import { Character } from '../models/character';
     <div class="stars medium"></div>
     <div class="stars large"></div>
 
-    <ion-searchbar *ngIf="search"
-                   showCancelButton
+    <ion-searchbar showCancelButton
                    (ionCancel)="closeSearch()"
                    (ionInput)="updateSearchValue($event)"
     ></ion-searchbar>
@@ -101,18 +92,21 @@ export class CharacterListModal implements OnInit {
 
   public roleFilter: string;
 
-  public search: boolean;
   public searchValue: string;
 
   constructor(
     private navParams: NavParams,
-    private modalCtrl: ModalController
+    private modalCtrl: ModalController,
+    private elementRef: ElementRef
   ) {}
 
   ngOnInit() {
-    this.search = true;
     this.characters = this.navParams.get('characters');
     this.updateFilteredCharacters();
+
+    setTimeout(() => {
+      this.elementRef.nativeElement.querySelector('input').focus();
+    }, 500);
   }
 
   setRoleFilter(charClass: string) {
@@ -138,7 +132,6 @@ export class CharacterListModal implements OnInit {
   }
 
   closeSearch() {
-    this.search = false;
     this.searchValue = '';
     this.updateFilteredCharacters();
   }

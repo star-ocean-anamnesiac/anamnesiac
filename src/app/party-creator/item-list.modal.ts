@@ -1,7 +1,7 @@
 
 import { includes, sortBy } from 'lodash';
 
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core';
 import { ModalController, NavParams } from '@ionic/angular';
 import { Item } from '../models/item';
 
@@ -24,8 +24,7 @@ import { Item } from '../models/item';
     <div class="stars medium"></div>
     <div class="stars large"></div>
 
-    <ion-searchbar *ngIf="search"
-                   showCancelButton
+    <ion-searchbar showCancelButton
                    (ionCancel)="closeSearch()"
                    (ionInput)="updateSearchValue($event)"
     ></ion-searchbar>
@@ -65,18 +64,21 @@ export class ItemListModal implements OnInit {
   public items: Item[] = [];
   public filteredItems: Item[] = [];
 
-  public search: boolean;
   public searchValue: string;
 
   constructor(
     private navParams: NavParams,
-    private modalCtrl: ModalController
+    private modalCtrl: ModalController,
+    private elementRef: ElementRef
   ) {}
 
   ngOnInit() {
-    this.search = true;
     this.items = this.navParams.get('items');
     this.updateFilteredItems();
+
+    setTimeout(() => {
+      this.elementRef.nativeElement.querySelector('input').focus();
+    }, 500);
   }
 
   updateSearchValue(ev) {
@@ -91,7 +93,6 @@ export class ItemListModal implements OnInit {
   }
 
   closeSearch() {
-    this.search = false;
     this.searchValue = '';
     this.updateFilteredItems();
   }
