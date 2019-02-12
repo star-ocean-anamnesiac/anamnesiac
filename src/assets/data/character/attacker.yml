@@ -2971,7 +2971,7 @@
 
   rush:
     name: "Avenger Charge"
-    picture: Blazing_Cannon_Anne
+    picture: Festive_Avenger_Mirage
     effects: 
       - desc: AP usage -30%
         meta:
