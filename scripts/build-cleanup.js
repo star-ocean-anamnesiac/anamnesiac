@@ -1,9 +1,9 @@
 
 const rimraf = require('rimraf');
 
-rimraf('www/characters');
+rimraf.sync('www/characters');
 
-rimraf('www/assets/data', () => {});
+rimraf.sync('www/assets/data');
 
-rimraf('www/assets/icons/**/*.png', () => {});
-rimraf('www/assets/items/**/*.png', () => {});
+rimraf.sync('www/assets/icons/**/*.png');
+rimraf.sync('www/assets/items/**/*.png');
