@@ -51,8 +51,6 @@ test('All items have valid information', async t => {
 
       const itemPicInfo = imageSize(`src/assets/items/${subtype}/${item.picture}.png`);
       t.is(itemPicInfo.type, 'png', 'item image must be a png' + parenName);
-      t.is(itemPicInfo.width, 128, 'item image width must be 128' + parenName);
-      t.is(itemPicInfo.height, 128, 'item image height must be 128' + parenName);
 
       item.factors.forEach(factor => {
         if(factor.slayer) {

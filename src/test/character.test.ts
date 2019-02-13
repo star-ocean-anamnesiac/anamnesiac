@@ -21,7 +21,7 @@ test('All characters have valid information', async t => {
     prev[cur.id] = true;
     return prev;
   }, {});
-    
+
   await Promise.all(classes.map(async charClass => {
     const datagl = await promises.readFile(`src/assets/data/character/${charClass.toLowerCase()}.yml`, 'utf-8');
     const charactersgl: Character[] = YAML.safeLoad(datagl);
@@ -52,8 +52,6 @@ test('All characters have valid information', async t => {
 
       const charPicInfo = imageSize(`src/assets/characters/${char.picture}.png`);
       t.is(charPicInfo.type, 'png', 'char image must be a png' + parenName);
-      t.is(charPicInfo.width, 128, 'char image width must be 128' + parenName);
-      t.is(charPicInfo.height, 128, 'char image height must be 128' + parenName);
 
       char.talents.forEach(talent => {
         t.truthy(talent.name, 'talents must have a name' + parenName);
@@ -70,15 +68,13 @@ test('All characters have valid information', async t => {
 
       char.skills.forEach(skill => {
         t.truthy(skill.name, 'skill.name must exist' + parenName);
-        if(skill.maxHits) t.truthy(skill.power, 'skill.power must exist if it skill.maxHits exists' + parenName);
+        if(skill.maxHits) { t.truthy(skill.power, 'skill.power must exist if it skill.maxHits exists' + parenName); }
         t.truthy(skill.ap, 'skill.ap must exist' + parenName);
 
         t.true(fs.existsSync(`src/assets/skills/${skill.picture}.png`), 'skill ' + skill.name + ' must reference a valid image' + parenName);
 
         const skillPicInfo = imageSize(`src/assets/skills/${skill.picture}.png`);
         t.is(skillPicInfo.type, 'png', 'skill ' + skill.name +  ' image must be a png' + parenName);
-        t.is(skillPicInfo.width, 64, 'skill ' + skill.name +  ' image width must be 64' + parenName);
-        t.is(skillPicInfo.height, 64, 'skill ' + skill.name +  ' image height must be 64' + parenName);
 
         validateMeta(t, skill.meta, parenName);
       });
@@ -90,8 +86,6 @@ test('All characters have valid information', async t => {
 
       const rushPicInfo = imageSize(`src/assets/rush/${char.rush.picture}.png`);
       t.is(rushPicInfo.type, 'png', 'rush ' + char.rush.name +  ' image must be a png' + parenName);
-      t.is(rushPicInfo.width, 64, 'rush ' + char.rush.name +  ' image width must be 64' + parenName);
-      t.is(rushPicInfo.height, 64, 'rush ' + char.rush.name +  ' image height must be 64' + parenName);
 
       if(char.rush.effects && char.rush.effects.length > 0) {
         char.rush.effects.forEach(eff => {
