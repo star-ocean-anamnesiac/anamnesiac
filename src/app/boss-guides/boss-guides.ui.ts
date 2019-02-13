@@ -137,20 +137,24 @@ import { BossGuide } from '../models/bossguide';
             <ion-label class="visible-xs expand-label"><strong>Enrage</strong></ion-label>
 
             <div class="vertical-center">
-              <app-appicon [name]="'misery-m1'"
-                           class="misery"
-                           [scaleX]="0.375"
-                           [scaleY]="0.375"></app-appicon> {{ guide.enrage.m1 }}
-
-              <app-appicon [name]="'misery-m2'"
-                           class="misery"
-                           [scaleX]="0.375"
-                           [scaleY]="0.375"></app-appicon> {{ guide.enrage.m2 }}
-
-              <app-appicon [name]="'misery-m3'"
-                           class="misery"
-                           [scaleX]="0.375"
-                           [scaleY]="0.375"></app-appicon> {{ guide.enrage.m3 }}
+              <span *ngIf="guide.enrage.m1">
+                <app-appicon [name]="'misery-m1'"
+                            class="misery"
+                            [scaleX]="0.375"
+                            [scaleY]="0.375"></app-appicon> {{ guide.enrage.m1 }}
+              </span>
+              <span *ngIf="guide.enrage.m2">
+                <app-appicon [name]="'misery-m2'"
+                            class="misery"
+                            [scaleX]="0.375"
+                            [scaleY]="0.375"></app-appicon> {{ guide.enrage.m2 }}
+              </span>
+              <span *ngIf="guide.enrage.m3">
+                <app-appicon [name]="'misery-m3'"
+                            class="misery"
+                            [scaleX]="0.375"
+                            [scaleY]="0.375"></app-appicon> {{ guide.enrage.m3 }}
+              </span>
             </div>
           </ion-col>
         </ion-row>

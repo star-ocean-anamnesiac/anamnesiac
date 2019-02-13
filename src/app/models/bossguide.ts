@@ -53,8 +53,8 @@ export interface Enrage {
 
   // xx:xx for m1, m2, m3
   m1: string;
-  m2: string;
-  m3: string;
+  m2?: string;
+  m3?: string;
 }
 
 export interface BossGuide {
