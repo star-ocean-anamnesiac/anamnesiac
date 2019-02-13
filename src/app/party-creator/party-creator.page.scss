@@ -20,6 +20,7 @@
 .additional-buff-row {
   margin-top: 8px;
   display: flex;
+  flex-wrap: wrap;
 
   .buff-character {
     width: 100px;
