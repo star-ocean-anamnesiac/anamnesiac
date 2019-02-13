@@ -21,7 +21,7 @@
 - name: Winged Scepter
   cat: 'gl'
   star: 5
-  picture: Green_Bunny_Scepter
+  picture: Green_Bunny_Sceptre
   atk: 0
   int: 545
   factors:
@@ -203,7 +203,7 @@
 - name: Infernal Sceptre
   cat: 'gl'
   star: 5
-  picture: Infernal_Scepter
+  picture: Infernal_Sceptre
   atk: 956
   int: 961
   factors:
@@ -312,7 +312,7 @@
 - name: Ceremonial Spear
   cat: 'gl'
   star: 5
-  picture: Winged_Scepter
+  picture: Winged_Sceptre
   atk: 489
   int: 492
   factors:
