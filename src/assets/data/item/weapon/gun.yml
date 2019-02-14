@@ -242,3 +242,59 @@
     A neutral weapon for hating on plants. It's okay it's grit factor makes it slightly worse neutral than the wave gun and it's final
     factor will be cancelled out or matched in GLs current defender fest of a meta, but it'll serve you well if you have no elemental
     gun.
+    
+- name: Pulse Needle
+  cat: 'gl'
+  star: 5
+  picture: Pulsing_Needle
+  atk: 512
+  int: 509
+  factors:
+    - desc: +20% DMG on Bullet Locust
+    - desc: +10% ATK DMG
+      meta:
+        priority: 1
+        buff: ATK Damage
+        buffValue: 10
+    - desc: Recover 3% HP every 5 seconds
+      lb: 5
+  obtained: Facula Gacha
+  
+  notes: >
+    A decent event weapon meant for OAnne. ATK damage buffs are still at a premium on GL and some basic sustain is always welcome. If
+    you don't have a decent gun, this gun is just a good neutral option. Gets beaten out by elemental weapons or specific slayer
+    weapons though.
+    
+- name: Tempest Storm Gun
+  cat: 'gl'
+  star: 5
+  picture: Storm_Gun_Tempest
+  atk: 962
+  int: 961
+  factors:
+    - desc: Imbue Wind Element
+      element: Wind
+    - desc: +10% Crit Rate
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffValue: 10
+    - desc: +15% Crit Damage
+      meta:
+        priority: 1
+        buff: Crit Damage
+        buffValue: 15
+    - desc: +10% DMG to Single Target (When Close Range)
+      meta:
+        priority: 3
+        buff: Single Target Damage
+        buffCondition: Close Range
+        buffValue: 10
+      lb: 5
+  obtained: Gacha
+  
+  notes: >
+    An upgraded Storm Bolt but not upgraded enough to make it worth chasing, nice if you pull it. It has better stats but not by much
+    it's third factor is pretty bad on a long range weapon. However it's second factor boosts crit rate which is okay but also boosts
+    crit damage. This is very good when you consider characters like Maria and OAnne boost crit rate significantly post rush but not
+    crit damage, meaning it has good synergy with them.
