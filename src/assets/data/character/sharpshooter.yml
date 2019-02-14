@@ -343,9 +343,9 @@
     name: "Energy Burst Glaive"
     picture: Energy_Burst_Glaive_Emmerson
     effects: 
-      - desc: Damage Dealt +80% 
+      - desc: ATK +80% 
         duration: 20
-          meta:
+        meta:
             priority: 1
             buff: ATK
             buffValue: 80
