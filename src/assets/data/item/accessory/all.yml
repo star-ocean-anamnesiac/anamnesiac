@@ -456,3 +456,42 @@
 
   notes: >
     -
+    
+- name: Bunny Hair Clip
+  cat: 'gl'
+  star: 5
+  picture: Rabbit_Hair_Accessory
+  def: 728
+  factors:
+    - desc: ATK damage +20% during Assault Charge
+      meta:
+        priority: 3
+        buff: ATK Damage
+        buffCondition: Charge Assault
+        buffValue: 20
+    - desc: +5% chance of causing stun
+      meta:
+        priority: 1
+        buff: Stun Rate
+        buffValue: 5
+  obtained: Valentine Achievement
+
+  notes: >
+    -
+    
+- name: Ring of Healing
+  cat: 'gl'
+  star: 5
+  picture: Heal_Ring
+  def: 728
+  factors:
+    - desc: ATK damage taken -10%
+      meta:
+        priority: 1
+        buff: ATK Damage Taken
+        buffValue: 10
+    - desc: Recover 2% HP every 5 secs
+  obtained: Facula Gacha & Drop
+
+  notes: >
+    -
