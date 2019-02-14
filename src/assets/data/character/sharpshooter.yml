@@ -409,13 +409,13 @@
     name: "Flying Guillotine Slash"
     picture: Flying_Guillotine_Slash_Clair
     effects: 
-       - desc: Damage Dealt +80% 
-         duration: 20
-         all: true
+        - desc: Damage Dealt +80%
+          duration: 20
+          all: true
           meta:
             priority: 1
             buff: Damage
-            buffValue: 40
+            buffValue: 80
     power: ATK x 3000%
     maxHits: 6
     
