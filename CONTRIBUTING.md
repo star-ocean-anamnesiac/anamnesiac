@@ -46,26 +46,11 @@ There are some really nifty features that work with the pipeline here. One of th
 
 ### Adding Images
 
-Sometimes, you have to add an image the app doesn't have to make it all work right. This shouldn't be a frequent occurrence, but in the event that it is, please ask for the image. They need to be a specific width/height to work in the app. Here are the current sizes:
-
-* Items: 128x128
-* Characters: 128x128
-* Bosses: 64x64
-* Skills: 64x64
-* Rushes: 64x64
-
-To ensure the image is ready for being submitted, ask for help or perform these steps:
-
-* Install [GraphicsMagick](http://www.graphicsmagick.org/download.html)
-* Create a new folder with your desired image(s) in it
-* Run `gm mogrify -trim *.png`
-* Run `gm mogrify -resize RESxRES! .png` (`RESxRES` is the resolution above, such as 128x128 or 64x64. Note the `!` in the command, that is important)
-
-After following these steps, you're all set. Alternatively, contact someone on the team and we probably have to add new images anyway.
+Sometimes, you have to add an image the app doesn't have to make it all work right. This shouldn't be a frequent occurrence, but in the event that it is, please ask for the image or get it from the Dropbox. Additionally, **when you add an image, do not make a separate pull request for it, add it to your existing pull request!** This will help it pass all of the tests to ensure everything is good, and it will require less manual intervention.
 
 #### Where Are The Images?
 
-At this time, images can be found [in our shared Dropbox folder](https://www.dropbox.com/sh/rf0ylyh96el7gw1/AAB26paL63wjzYRLE3-1pVvEa?dl=0), but _they are not the right size_. You can convert them using a site like CloudConvert to the right dimensions, if desired. Or just ask. When in doubt, please ask.
+At this time, images can be found [in our shared Dropbox folder](https://www.dropbox.com/sh/rf0ylyh96el7gw1/AAB26paL63wjzYRLE3-1pVvEa?dl=0). If you add images, _only add them from this source_, and _only from the compilation folders_. Thanks in advance!
 
 #### Troubleshooting Your Submission
 
