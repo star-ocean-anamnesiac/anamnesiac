@@ -4,6 +4,7 @@ import { PopoverController, Tabs, NavParams, ModalController } from '@ionic/angu
 
 import { Item } from '../models/item';
 import { LocalStorage } from 'ngx-webstorage';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   template: `
@@ -193,14 +194,18 @@ export class ItemModal implements OnInit {
 
   public item: Item;
   public type: string;
-  public notes: string;
+  public notes: any;
 
   public showShare: boolean;
 
   @ViewChild('tabs')
   public tabs: Tabs;
 
-  constructor(private navParams: NavParams, private modalCtrl: ModalController) {}
+  constructor(
+    private domSanitizer: DomSanitizer,
+    private navParams: NavParams,
+    private modalCtrl: ModalController
+  ) {}
 
   ngOnInit() {
     this.showShare = !!(<any>navigator).share;
@@ -209,7 +214,12 @@ export class ItemModal implements OnInit {
 
     this.tabs.select('notes');
 
-    this.notes = markdown.toHTML((this.item.notes || '').trim());
+    this.notes = this.domSanitizer.bypassSecurityTrustHtml(markdown
+      .toHTML((this.item.notes || '')
+      .trim())
+      .split('<p>')
+      .join('<p style="margin: 0">')
+      .replace(/\s\s+/g, ' '));
   }
 
   dismiss() {

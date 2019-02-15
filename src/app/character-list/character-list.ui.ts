@@ -315,7 +315,8 @@ export class CharacterModal implements OnInit {
       .toHTML((this.char.notes || '')
       .trim())
       .split('<p>')
-      .join('<p style="margin: 0">'));
+      .join('<p style="margin: 0">')
+      .replace(/\s\s+/g, ' '));
   }
 
   dismiss() {
