@@ -418,9 +418,6 @@
         buffValue: 5
         buffCondition: Close Range
   obtained: FFBE (Gacha Box)
-
-  notes: >
-    -
        
 - name: Moglin Plush
   cat: 'gl'
@@ -436,9 +433,6 @@
         buffValue: 10
         buffCondition: Far Range
   obtained: FFBE (Achievement)
-
-  notes: >
-    -
     
 - name: Valentine's Pouch
   cat: 'gl'
@@ -453,9 +447,6 @@
         buffValue: 5
     - desc: Recover 2% HP every 5 secs
   obtained: Mountain Motango (Drop, Exchange)
-
-  notes: >
-    -
     
 - name: Bunny Hair Clip
   cat: 'gl'
@@ -475,9 +466,6 @@
         buff: Stun Rate
         buffValue: 5
   obtained: Valentine Achievement
-
-  notes: >
-    -
     
 - name: Ring of Healing
   cat: 'gl'
@@ -493,5 +481,3 @@
     - desc: Recover 2% HP every 5 secs
   obtained: Facula Gacha & Drop
 
-  notes: >
-    -
