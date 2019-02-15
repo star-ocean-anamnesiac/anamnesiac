@@ -92,6 +92,53 @@
           buffValue: 30
     power: ATK x 4000%
     maxHits: 16
+    
+  notes: >
+      _9S arrived early for GL with his Nier comrades and boy oh boy is he busted as hell. Due to how weak SS generally are on GL
+      currently 9S really stands out for his offensive power, his personal damage and rush damage are insane for an SS by global
+      standards. His talents help increase party wide mobility quite a lot which is a nice benfit. He also has a damage buff though
+      it isn't quite as good as Maria's due to it needing 100% HP to match hers it's still very good, even at 30% considering 
+      everything else he brings to the table. Post rush he gives a strong ATK damage buff and even heals the party so he can act
+      as a psuedo healer. Another important point is since he wields an ohs he will count as a melee weapon wielder for talents like
+      Rena's regen that only affect those who wield close range weapons.
+      
+      As for downsides 9S does have some even if he is amazing. The biggest is probably he has no ranged normals which can make 
+      playing him kind of difficult. He also lacks a homing projectile and due to the fact his attacks are 1 hit hit or miss
+      type attacks, highly mobile bosses can be problematic. Linked in with this is that he's not a good hit count builder or 
+      maintainer which is a desirable trait among Sharpshooters.
+      
+      In summary 9S is probably the best Sharpshooter in global right now, but he still has his weaknesses and will not favor highly
+      mobile bosses._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Fantastic personal damage for his role.
+
+      - Talents increase party movility greatly.
+
+      - Strong damage buff.
+
+      - OHS wielder which means close range weapon talents affect him. Also has great elemental coverage.
+      
+      
+      **Cons**
+      
+      - No ranged normals.
+
+      - Bad at building and maintain hit count.
+
+      - Skills mean he can whiff on highly mobile bosses.
+      
+      
+      **Rotation**
+      
+      *YoHRa Pod: One > YoHRa Arms: Four > YoHRa Pod: One > YoHRa Arms: Four > YoHRa Arms: Four (Ranged Combo)*
+
+      *Normal > YoHRa Arms: Four > YoHRa Pod: Two > YoHRa Arms: Four > YoHRa Arms: Four (Melee Combo)*
 
 - name: Maria Traydor
   cat: gl
@@ -165,6 +212,46 @@
           buffValue: 40
     power: ATK x 3000%
     maxHits: 6
+    
+  notes: >
+      _Maria, the OG sharpshooter, the beginner character you should pick and the benchmark of what makes a sharpshooter good. Her
+      playstyle is simple and many feel a bit boring but that's what makes her easy to pick up for beginner players. Maria has only
+      two talents, one simply reduces the damage she takes by a pretty meaty 20% which means she can take a hit or two, a useful 
+      trait to have considering she can end up getting aggro and having to kite. Her other talent is a massive 40% damage buff to
+      the party and is the main reason she is deemed so strong by many players.
+      
+      Post rush Maria also cleanses enemies of any buffs they may have and gives a pretty big 40% crit rate buff to party members,
+      further helping to increase damage output. On top of that she has Crimson Squall, a fantastic skill due to having a high hit
+      count and amazing target tracking as well as having very long range. It makes Maria fantastic at building and maintaing hit
+      count to help party wide rush gain.
+      
+      Her downsides, well she provides no defensive utility to the party like other sharpshooters do. Her biggest weakness however
+      is probably just her poor personal damage. Her DPS isn't great so she can't carry solo really, her damage is her party
+      members so she's a character that requires good players on your team to get the best out of her._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Good at building and maintaining hit count.
+
+      - Good at kiting.
+
+      - Strong damage buff.
+      
+      
+      **Cons**
+      
+      - Weak personal damage.
+
+      - Lack of defensive utility for the party.
+      
+      
+      **Rotation**
+
+      *Normal > Aiming Device > Crimson Squall > Aiming Device > Crimson Squall (General Damage)*
     
 - name: Nel Zelpher
   cat: gl
@@ -258,7 +345,9 @@
       
       In the end, she's a character you probably won't bring to every boss. But when she's toxic, she is truly beautiful._
       
+      
       **TL DR**
+      
       
       **Pros**
       
@@ -269,6 +358,7 @@
       - Fastest rush gain in the game, enabling her to effectively erase boss mechanics on command.
 
       - Daggers are a great weapon, with excellent kiting ability.
+      
       
       **Cons**
       
@@ -282,6 +372,7 @@
       - High animation lock on her best rush generation move (Poisonous Terror)
 
       - Poisonous Blade is a horrible move with horrible tracking and a tiny hitbox, and her best dps relies on it.
+      
       
       **Rotation**
       
@@ -351,6 +442,45 @@
             buffValue: 80
     power: ATK x 3000%
     maxHits: 7
+    
+  notes: >
+      _Emmerson, the bottom of the barrel SS till he gets his awakening. He has some positives, his talents mean his normals pack a
+      bit of extra punch, and he has benefits to comps built around the hit counter. He also has a pretty big post rush ATK buff
+      for himself, so he'll be a decent assist in the future too.
+      
+      The downsides, well he is providing little to no utility to the party aside from his hit count extension, and that is kind of
+      the main theme of the sharpshooter role, to be buffers. On top of that he's a gun wielder who doesn't have a ranged combo 
+      which means lots of CA usage which has a lot of risks, not only due to the penatly if you get hit but you may normal at short
+      range as a gun user. Which is suicidal in harder content.
+      
+      Emmerson is just bad, one day he'll shine, but currently he is just, bad. Not utterly worthless but I wouldn't recommend using
+      him unless you're a masochist._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Big hit count extension.
+
+      - Strong personal ATK buff post rush.
+      
+      - Non-ace so cheaper to limit break and augment.
+      
+      
+      **Cons**
+      
+      - Almost no utility.
+
+      - Lacks a ranged combo as a gun wielder.
+
+      - Non-ace so has less stats.
+      
+      
+      **Rotation**
+      
+      *Normal > Hunter's Moon > Seraphic Thunder > Hunter's Moon (General Damage)*
     
 - name: Clair Lasbard
   cat: gl
@@ -453,6 +583,7 @@
       
       - Non-ace so cheaper to limit break and augment.
       
+      
       **Cons**
       
       - Lacks offensive buffs pre-rush.
@@ -460,6 +591,7 @@
       - High animation lock on her best rush generation move (Victory Terror)
 
       - Non-ace so has less stats.
+      
       
       **Rotation**
       
@@ -543,7 +675,7 @@
     maxHits: 7
     element: Dark
     
-- name: Miki Sauvester (Summer)
+- name: Miki (Summer)
   cat: gl
   rating: 7
   picture: everlastingsummermikisauvester
@@ -732,7 +864,9 @@
       
       She is best run with a defender so she can focus on doing what she does best: damage._
       
+      
       **TL DR**
+      
       
       **Pros**
       
@@ -745,6 +879,7 @@
       - Rare single target DMG buff.
 
       - Self crit buff on Rush for Crystal Guardian
+      
 
       **Cons**
 
@@ -754,6 +889,7 @@
 
       - Underwhelming buffs, especially compared to shooters of similar strength.
       
+      
       **Rotation**
       
       *Normal > Homing Pigeons > Wave Motion > Homing Pigeons > * (General Combo. By timing cancel can get up to 3 pigeons.)
@@ -762,7 +898,7 @@
 
       *Normal > Wave Motion > Homing Pigeons > Wave Motion > * (with 20% AP reduction or more)
 
-- name: Victor Oakville (Halloween)
+- name: Victor (Halloween)
   cat: gl
   rating: 10
   picture: halloweenvampirevictoroakville
@@ -850,7 +986,7 @@
     power: ATK x 3500%
     maxHits: 19
     
-- name: Lymle (Federation)
+- name: Lymle (Official)
   cat: gl
   rating: 4
   picture: federationlymlelemuriphi
@@ -1022,7 +1158,7 @@
     maxHits: 12
     element: Light
     
-- name: Clair Lasbard (Valentine)
+- name: Clair (Valentine)
   cat: gl
   rating: 4
   picture: maidenclairlasbard
