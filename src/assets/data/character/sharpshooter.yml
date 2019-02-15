@@ -274,7 +274,8 @@
       
       - Without poison vulnerability, her dps is abysmal.
 
-      - A poorly played Nel can grief the party by resetting hitcount unnecessarily, cutting elem bursts short or constantly interrupting the fight.
+      - A poorly played Nel can grief the party by resetting hitcount unnecessarily, 
+        cutting elem bursts short or constantly interrupting the fight.
 
       - Repel+1 hampers her ability to assume Shooter's primary role: kiting.
 
@@ -342,8 +343,12 @@
     name: "Energy Burst Glaive"
     picture: Energy_Burst_Glaive_Emmerson
     effects: 
-      - desc: ATK +80%
-        duration: 20
+        - desc: ATK +80% 
+          duration: 20
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 80
     power: ATK x 3000%
     maxHits: 7
     
@@ -368,6 +373,10 @@
       effects: 
         - desc: ATK Damage Taken -30%
           all: true
+          meta:
+            priority: 1
+            buff: ATK Damage Taken Reduction
+            buffValue: 30
     - name: "Apris's Divine Favor"
       effects: 
         - desc: No Flinching when taking Damage < 20% of Max HP
@@ -400,11 +409,63 @@
     name: "Flying Guillotine Slash"
     picture: Flying_Guillotine_Slash_Clair
     effects: 
-      - desc: Damage Dealt +80%
-        duration: 20
-        all: true
+        - desc: Damage Dealt +80%
+          duration: 20
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 80
     power: ATK x 3000%
     maxHits: 6
+    
+  notes: >
+      _Clair is the original tank. The OG kite character. Even now for she is one and perhaps even the best non-ace character in the
+      game. She follows a different line of thinking for sharpshooters with her talents, being defensive utility instead of offensive
+      utility. Though her post rush damage is still the highest damage buff in the game of 80%, which is pretty huge. Her talents give
+      the party anti-flinch without needing a defender and arguably her best aspect is her ATK damage taken buff. This has yet to
+      be bettered, even on JP which is over a year ahead giving her a unique defensive niche that she will always give to any party
+      that includes her. She is a solid kite, able to use sylvan shot in particular with it's slight tracking to deal damage as she
+      moves, while victory terror deals good damage and has good rush gain when she's not got aggro.
+      
+      Clair does have her downsides. Victory Terror is her best move but without the ability dodge in the air it is risky to use
+      especially when you're the aggro target which can gimp her damage considerably. Also just being non-ace means her stats
+      themselves are lesser. Plus while post-rush she helps bring the pain she isn't a good option if you're looking for someone to
+      help the party deal damage in the same way Maria can for instance.
+      
+      In summary Clair is a fantastic character and one worth considering taking to MLB due to being cheaper to limit break and augment
+      which makes her an option worth considering for newer players wanting a decent character early. She is also pretty future proof
+      with her assist and her eventual awakening both being quite powerful._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Anti-flinch for the party. No defender required.
+
+      - The best ATK damage reduction buff in the game.
+
+      - The best post rush damage buff in the game.
+
+      - Daggers are a great weapon, with excellent kiting ability.
+      
+      - Non-ace so cheaper to limit break and augment.
+      
+      **Cons**
+      
+      - Lacks offensive buffs pre-rush.
+
+      - High animation lock on her best rush generation move (Victory Terror)
+
+      - Non-ace so has less stats.
+      
+      **Rotation**
+      
+      *Normal > Victory Terror > Sylvan Shot > Victory Terror (Best Rush Gain)*
+
+      *Normal > Sylvan Shot > Hydro Blade > Sylvan Shot > Spam till out of AP (General Damage)*
     
 - name: Reimi Saionji
   cat: gl
@@ -484,7 +545,7 @@
     
 - name: Miki Sauvester (Summer)
   cat: gl
-  rating: 6
+  rating: 7
   picture: everlastingsummermikisauvester
   weapon: bow
   ace: true

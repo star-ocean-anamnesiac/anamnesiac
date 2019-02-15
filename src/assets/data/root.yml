@@ -25,6 +25,8 @@ weapons:
     name: Gun
   - id: knuckle
     name: Knuckles
+  - id: launcher
+    name: Launchers
   - id: ohs
     name: One Handed Sword
   - id: orb

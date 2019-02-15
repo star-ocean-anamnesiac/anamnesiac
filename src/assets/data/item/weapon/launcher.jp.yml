@@ -1,0 +1,15 @@
+
+- name: Deadly Cannon
+  cat: 'jp'
+  star: 5
+  picture: Deadly_Cannon
+  atk: 662
+  int: 656
+  factors:
+    - desc: Recover 3% HP every 5 seconds
+    - desc: +15% ATK
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 15
+  obtained: Launcher Coin Exchange / Gacha
