@@ -44,6 +44,22 @@ There are some really nifty features that work with the pipeline here. One of th
 
 **When you have finished looking at your changes, please put a comment in the Pull Request to say you've reviewed it!**
 
+### Adding New Weapon Types
+
+There's a possible future in which someone else will have to add new item types. If that happens to happen, here you go:
+
+* Get the particular weapon sprite from the extract (`ItemIcon_*`)
+* Rename it `menu_<itemtype>.png`
+* Upload it to `src/assets/icons/menu`
+* Go to `src/assets/data/root.yml`
+* Edit it to have the new weapon type (following the convention that is there)
+* Go to `src/assets/items`
+* Create a new folder `<type>` (using the id of the weapon type you gave it above)
+* Upload images in here
+* Go to `src/assets/data/item/weapon`
+* Create `<type>.yml` and `<type>.jp.yml` (using the id of the weapon type you gave it above)
+* Add some items!
+
 ### Adding Images
 
 Sometimes, you have to add an image the app doesn't have to make it all work right. This shouldn't be a frequent occurrence, but in the event that it is, please ask for the image or get it from the Dropbox. Additionally, **when you add an image, do not make a separate pull request for it, add it to your existing pull request!** This will help it pass all of the tests to ensure everything is good, and it will require less manual intervention.
