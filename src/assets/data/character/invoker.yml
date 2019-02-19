@@ -305,6 +305,7 @@
     - name: "Symbologist's Awakening II"
       effects: 
         - desc: INT +40%
+          all: true
           meta:
             priority: 4
             buff: INT
@@ -930,5 +931,144 @@
       *Normal > CA Shadow Exinction > Ice Needles > Shadow Needles (General damage rotation for mobile or large enemies.)*
       
       *Normal > CA Shadow Exinction > Shadow Needles > Shadow Exinction (General damage rotation for multiple or small enemies.)*
+      
+- name: Claude (Uniform)
+  cat: gl
+  rating: 4
+  picture: formalwearclaudeckenny
+  weapon: bow
+  star: 5
+
+  stats:
+    hp: 12810
+    atk: 1444
+    int: 2310
+    def: 1076
+    hit: 938
+    grd: 756
+
+  talents:
+    - name: "Symbologist's Awakening II"
+      effects: 
+        - desc: INT +25%
+          all: true
+          meta:
+            priority: 1
+            buff: INT
+            buffValue: 25
+    - name: "A Mother’s Perception II"
+      effects: 
+        - desc: Multiple Target Damage +20%
+          all: true
+          meta:
+            priority: 4
+            buff: Multiple Target Damage
+            buffValue: 20
+    - name: "The Expel Turnabout II"
+      effects: 
+        - desc: Nullify freeze
+          duration: 90
+          all: true
+        - desc: Nullify paralysis
+          duration: 90
+          all: true
+    - name: "Blue Rose Bouquet"
+      effects:
+        - desc: AP Cost -40% when Skill Chain is 3+
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain 3+
+            buffValue: 40
+
+  skills:
+    - name: "Plunging Fire Bolts"
+      picture: Fire_Bolts
+      element: Fire
+      power: INT x 200%
+      ap: 20
+      maxHits: 6
+      highlight: true
+    - name: "Ice Needles"
+      picture: Ice_Needles
+      element: Ice
+      power: INT x 250%
+      ap: 24
+      maxHits: 9
+      highlight: true
+    - name: "Arctic Impact"
+      picture: Arctic_Blast
+      element: Ice
+      power: INT x 670%
+      ap: 42
+      maxHits: 3
+    - name: "Volcanic Burst"
+      picture: Volcanic_Burst
+      element: Fire
+      power: INT x 670%
+      ap: 42
+      maxHits: 13
+      highlight: true
+      
+  rush:
+    name: "Explode Efficiently"
+    picture: Explode_Prince_Claude
+    element: Fire
+    effects: 
+      - desc: AP Cost -50%
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 50
+      - desc: Reduce casting time by 30%
+        duration: 20
+        meta:
+          priority: 1
+          buff: Cast Time Reduction
+          buffValue: 30
+    power: INT x 3000%
+    maxHits: 10
+    
+  notes: >
+      _Claude decides to try and be just like his dear old dad and he does a pretty good job at it too. For our last freebie we get
+      Ronyx V2. Claude is probably about the same power level as Ronyx so it's not amazing but he is usable. Though the INT buff isn't
+      as high, 25% is still a good buff for casting compositions. He also comes with double status nullification against freeze and
+      paralysis adding a MoT niche he can fill for you. Fire bolts and ice needles give him cheap spells which have tracking that
+      synergise with his AP reduction talent letting him output more damage and also helping him manage with high mobility foes.
+      Post rush he halfs his AP cost and reduces his casting time by 30% allowing him to dish out even further damage. Plus a 3k
+      multiplier isn't terrible considering he's a free non-ace._
+      
+      _As for downsides, well he's Ronyx with less utility, not only is the INT buff nerfed he doesn't provide a -50% cast time 
+      reduction post rush. In fact his over all party utility is niche outside of casting comps and MoT His damage will be decent
+      but he's still a non=ace so his overall stats are still lacking. In summary Uniform Claude is a more playable Ronyx with less
+      party buffing in exchange for being a bit more fluid and satisfying in play style.
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Great party wide INT buff.
+      
+      - Has spells which track enemies.
+      
+      - Free MLB non-ace.
+      
+      
+      **Cons**
+      
+      - Lacks much utility.
+      
+      - Abysmal AI.
+      
+      - Non-ace so has less stats.
+      
+
+      **Rotation**
+
+      *Normal > CA Ice Needles > Plunging Fire Bolts > Volcanic Burst > Spam till out of AP (Fire Rotation)*
+      
+      *Normal > CA Plunging Fire Bolts > Ice Needles > Arctic Impact > Spam till out of AP (Ice Rotation)*
       
     
