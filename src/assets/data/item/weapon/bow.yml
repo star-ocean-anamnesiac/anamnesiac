@@ -244,3 +244,34 @@
   notes: >
     Not a great bow, stats are decent by GL standards but it's effects are weak, even for Fina who it's intended for. Probably better
     off at fodder unless you've nothing better.
+    
+- name: Flarecast Bow 
+  cat: 'gl'
+  star: 5
+  picture: Flarecast_Bow
+  atk: 527
+  int: 533
+  factors:
+    - desc: +20% DMG on Volcanic Burst
+    - desc: +5% INT
+      meta:
+        priority: 4
+        buff: INT
+        buffValue: 5
+    - desc: +20% Fire DMG Dealt
+      lb: 5
+      meta:
+        priority: 4
+        buff: Fire Damage
+        buffValue: 20
+    - desc: +15% Ice DMG Dealt
+      lb: 5
+      meta:
+        priority: 4
+        buff: Ice Damage
+        buffValue: 15
+  obtained: Uniform Claude Exchange
+  
+  notes: >
+    It's a bow for freebie Claude. Very good for him, can be good on Ronyx too. Not great for anyone else but maybe at a stretch Fina
+    for the tiny INT scaling boost but that's a realy stretch.
