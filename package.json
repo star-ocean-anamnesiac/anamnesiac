@@ -7,7 +7,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve -o --port 6789 --host 0.0.0.0",
-    "build": "npm run consolidate && ng build --prod",
+    "build": "npm run consolidate && ng build --prod && npm run prepare:headers",
     "lint": "ng lint",
     "validate": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\"}' ava-ts src/test/**/*.test.ts",
     "test": "npm run validate && npm run lint && npm run build",
@@ -22,6 +22,7 @@
     "prepare:pack:rushicons": "node scripts/pack-rushicons",
     "prepare:pngcrush": "node scripts/pngcrush",
     "prepare:cleanup": "node scripts/build-cleanup",
+    "prepare:headers": "node scripts/build-headers",
     "postinstall": "npm run consolidate"
   },
   "private": true,
