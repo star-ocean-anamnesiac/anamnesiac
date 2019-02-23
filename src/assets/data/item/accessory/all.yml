@@ -480,4 +480,55 @@
         buffValue: 10
     - desc: Recover 2% HP every 5 secs
   obtained: Facula Gacha & Drop
+  
+- name: Anti Curse Amulet IV
+  cat: 'gl'
+  star: 5
+  picture: Anti_Poison_Amulet_IV
+  def: 753
+  factors:
+    - desc: 50% Chance of Curse Nullification
+  obtained: Uniform Claude (Exchange, Drop)
+
+  notes: >
+    Not recommended due to it's inconsistencies.
+    
+- name: Heat Up Bangle
+  cat: 'gl'
+  star: 5
+  picture: Heat_Up_Bangle
+  def: 728
+  factors:
+    - desc: -15% DMG Taken when Hit Count 50+
+      meta:
+        priority: 3
+        buff: Damage Taken Reduction
+        buffCondition: Hit Count 50+
+        buffValue: 15
+  obtained: Facula (Achievement)
+
+  notes: >
+    It's quite bad, you want your defensive accessories to be consistent, this is not.
+    
+- name: Charm of Insight
+  cat: 'gl'
+  star: 5
+  picture: Flashing_Necklace
+  def: 728
+  factors:
+    - desc: +15% Crit Rate
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffValue: 15
+    - desc: +10% Crit Damage
+      meta:
+        priority: 1
+        buff: Crit Damage
+        buffValue: 10
+  obtained: Facula (Achievement)
+
+  notes: >
+    A pretty exceptional offensive accessory. It's factors wouldn't be terrible as a character talent which means it's very good for
+    an accessory to have them.
 
