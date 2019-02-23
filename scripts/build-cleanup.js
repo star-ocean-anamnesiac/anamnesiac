@@ -9,4 +9,6 @@ rimraf.sync('www/assets/data');
 rimraf.sync('www/assets/icons/**/*.png');
 rimraf.sync('www/assets/items/**/*.png');
 
-fs.copyFileSync('src/app/data.json', 'www/assets/data.json');
+fs.copyFileSync('src/app/data.json', 'www/data.json');
+
+console.log('Cleanup done.');
