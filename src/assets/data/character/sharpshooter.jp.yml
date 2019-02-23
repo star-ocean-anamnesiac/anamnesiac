@@ -1,7 +1,7 @@
 
 - name: 9S
   cat: jp
-  rating: 10
+  rating: 8
   picture: 9s
   weapon: ohs
   ace: true
@@ -92,3 +92,79 @@
           buffValue: 30
     power: ATK x 4000%
     maxHits: 16
+    
+- name: Reimi Saionji
+  cat: jp
+  rating: 5
+  picture: reimisaionji
+  weapon: bow
+  ace: true
+  limited: false
+  star: 5
+
+  stats:
+    hp: 15540
+    atk: 2587
+    int: 1563
+    def: 1549
+    hit: 1246
+    grd: 945
+
+  talents:
+    - name: "Sound Judgment II"
+      effects: 
+        - desc: INT Damage Taken -40%
+          all: true
+          meta:
+            priority: 1
+            buff: INT Damage Taken Reduction
+            buffValue: 40
+    - name: "Greater Single-Shot"
+      effects: 
+        - desc: Damage Dealt +20%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 20
+    - name: "Star Seed of Hope"
+      effects: 
+        - desc: Nullifies Status Ailments (180 seconds)
+    - name: "Descendant of Muah"
+      effects: 
+        - desc: 80% Chance of Surviving a Lethal Attack at 10% HP or more.
+
+  skills:
+    - name: "Chaotic Blossoms"
+      picture: Chaotic_Blossoms
+      power: ATK x 500%
+      ap: 35
+      maxHits: 11
+    - name: "Crimson Squall"
+      picture: Crimson_Squall
+      power: ATK x 250%
+      ap: 24
+      maxHits: 9
+    - name: "Crescent Wings"
+      picture: Crescent_Wings
+      power: ATK x 230%
+      ap: 24
+      maxHits: 2
+    - name: "Rapacious Sparrows"
+      picture: Savage_Sparrows
+      power: ATK x 410%
+      ap: 32
+      maxHits: 9
+      
+  rush:
+    name: "Lunar Divination"
+    picture: Lunar_Divination_Reimi
+    effects: 
+      - desc: Nullifies Status Ailments
+        all: true
+      - desc: Recovers 15% of HP every 3 seconds
+        duration: 15
+        all: true
+    power: ATK x 2500%
+    maxHits: 7
+    element: Dark
