@@ -789,7 +789,7 @@
 
 - name: Fiore Brunellie
   cat: gl
-  rating: 7.5
+  rating: 7
   picture: fiorebrunelli
   weapon: orb
   limited: false
@@ -1070,5 +1070,100 @@
       *Normal > CA Ice Needles > Plunging Fire Bolts > Volcanic Burst > Spam till out of AP (Fire Rotation)*
       
       *Normal > CA Plunging Fire Bolts > Ice Needles > Arctic Impact > Spam till out of AP (Ice Rotation)*
+      
+- name: Mavelle Froesson (Preview)
+  cat: gl
+  rating: 7
+  picture: mavellefroesson
+  weapon: orb
+  limited: false
+  star: 5
+  ace: true
+
+  stats:
+    hp: 12390
+    atk: 1563
+    int: 3805
+    def: 1339
+    hit: 1043
+    grd: 840
+
+  talents:
+    - name: "Severe Fate"
+      effects: 
+        - desc: INT +40%
+          meta:
+            priority: 4
+            buff: INT
+            buffValue: 40
+    - name: "Revival"
+      effects: 
+        - desc: After Hail Orb AP +100% for 20 seconds.
+          duration: 20
+        - desc: After Hail Orb Ice Damage +300% for 20 seconds.
+          duration: 20
+          meta:
+            priority: 3
+            buff: Ice Damage
+            buffCondition: Hail Orb
+            buffValue: 300
+    - name: "Light of Atonement"
+      effects:
+        - desc: AP recovery +100% after Shiny Lancer for 20 seconds.
+          duration: 20
+          meta:
+            priority: 3
+            buff: AP Recovery
+            buffCondition: Shiny Lancer
+            buffValue: 100
+    - name: "Ancient Secretary"
+      effects:
+        - desc: AP recover +30%
+          all: true
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffValue: 30
+        - desc: No flinching when casting Symbology.
+
+  skills:
+    - name: "Hail Orb"
+      picture: Frigid_Saucer.png
+      element: Ice
+      power: INT x 230%
+      ap: 30
+      maxHits: 2
+    - name: "Shiny Lancer"
+      picture: Radiant_Lancer
+      element: Light
+      power: INT x 300%
+      ap: 27
+      maxHits: 8
+    - name: "Aurora Rings"
+      picture: Aurora_Rings
+      element: Light
+      power: INT x 460%
+      ap: 35
+      maxHits: 5
+    - name: "Freezing Impact"
+      picture: Arctic_Impact
+      element: Ice
+      power: INT x 740%
+      ap: 45
+      maxHits: 2
+      
+  rush:
+    name: "Seventh Star"
+    picture: Seventh_Star_Mavelle
+    element: Ice
+    effects: 
+      - desc: INT Damage +50%
+        duration: 20
+        meta:
+          priority: 1
+          buff: INT Damage
+          buffValue: 40
+    power: INT x 4000%
+    maxHits: 8
       
     
