@@ -1128,7 +1128,7 @@
 
   skills:
     - name: "Hail Orb"
-      picture: Frigid_Saucer.png
+      picture: Frigid_Saucer
       element: Ice
       power: INT x 230%
       ap: 30
