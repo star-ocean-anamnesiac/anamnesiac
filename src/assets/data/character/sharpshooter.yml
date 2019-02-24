@@ -25,7 +25,7 @@
             priority: 1
             buff: Damage
             buffValue: 30
-        - desc: ATK +40% when HP 100%
+        - desc: Damage +40% when HP 100%
           all: true
           meta:
             priority: 1
@@ -1073,6 +1073,47 @@
     power: ATK x 3500%
     maxHits: 19
     
+  notes: >
+      _Victor puts on a vampire costume that makes him an Ace and also pretty godly. Halloween Victor even though he has been nerfed
+      is still the only sharpshooter to rival 9S for the top spot but is great for different reasons. Halloween Victor has a plethora
+      of buffs both offensive and defensive giving him well rounded utility. He provides a 30% damage buff and a conditional 10% buff
+      to elemental damage, which is a rare buff in GL. Post rush he also adds a 40% single target damage buff for the party on top
+      which means he is stacking 3 different damage type buffs._ 
+      
+      _His defensive utility also helps maintain that 100% HP, giving all
+      party members a 10% life steal effect on their normals as well as healing by 40% of Max HP for the party post rush. He keeps
+      himself even healthier by having healing based on his skill damage and an AP reduction buff based on skill chain helps him
+      spam skills to make him good at building and maintaining hit count._
+      
+      _As for downside his biggest is that his personal damage is nothing to boast about. However this isn't uncommon among 
+      sharpshooters and compared to those in his role it's pretty reasonable. It's very hard to really find much of a fault in Hvic's
+      tool kit beyond the fact his damage could be better but with all the buffs he's providing you don't really care that much.
+      HVic is just a great example of what you want your buffing sharpshooters to bring._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Good at building and maintaing Hit Count.
+
+      - Provides three different type of damage buffs.
+
+      - Great Synergy with 100% HP talent characters.
+
+      - Provides both sustained healing and burst healing.
+      
+
+      **Cons**
+
+      - Though damage is high for an SS leaves something to be wanted against other characters.
+      
+      
+      **Rotation**
+      
+      *Normal > Dragon's Might > Gyrfalcon Blade > Dragon's Might > Spam till out of AP  (General Combo.)*    
+    
 - name: Lymle (Official)
   cat: gl
   rating: 4
@@ -1179,6 +1220,45 @@
           buffValue: 60
     power: INT x 2500%
     maxHits: 5
+    
+  notes: >
+      _Lymle rejoins the fight to tell us that other version of her is a bootleg unofficial version. Official Lymle is a unique
+      characters, a science experiement by the devs to test out gun casters who aren't invokers but Sharpshooters. It wasn't
+      successful but it is at least interesting. Official Lymle is meant to go into a caster party, with her damage buff of 25% 
+      increasing to 35% for herself and healers plus invokers. She also gives a weak but not irrelevant 20% cast time reduction
+      to the party. Plunging firebolt is also not a terrible move for hit count since it tracks and has low cost so she can do
+      that part of the sharpshooter role pretty well. Post rush she boosts her own and invoker damage by 60% which is not a small
+      amount._
+      
+      _However outside of a very specific composition OLymle kind of falls apart. Her buffs are weak or irrelevant to non-casters.
+      Even then many invokers and healers come with casting reduction. Also her moveset is pretty poor. The moves stand along
+      aren't terrible, they see use on other characters, the problem is she has essentially gotten 4 filler moves for a move set.
+      Plus the animation lock with guns when casting is still not great, plus she feels a bit odd to play but may be worth taking
+      for a try out if you're bored._
+      
+      **TL DR**
+      
+      **Pros**
+      
+      - Good at building and maintaing Hit Count.
+
+      - Decent damage buffs for Invokers and herself.
+      
+      - Free MLB non-ace 5 star.
+      
+
+      **Cons**
+
+      - Non-ace so has less stats.
+
+      - Moveset is poor with no real power move to spam.
+
+      - Buffs are irrelevant on any non-caster character.
+      
+      
+      **Rotation**
+      
+      *Normal > Smart Aiming Device > Plunging Fire Bolts > Smart Aiming Device > Spam till out of AP  (General Combo.)*  
     
 - name: Bernard
   cat: gl
@@ -1347,6 +1427,7 @@
       
       **TL DR**
       
+      
       **Pros**
       
       - Good at building and maintaing Hit Count.
@@ -1360,6 +1441,7 @@
       - Unique and strong debuffs.
       
       - Free MLB non-ace 5 star.
+      
 
       **Cons**
 
@@ -1368,6 +1450,7 @@
       - Deals underwhelming damage outside of humanoid fights.
 
       - Underwhelming buffs.
+      
       
       **Rotation**
       
