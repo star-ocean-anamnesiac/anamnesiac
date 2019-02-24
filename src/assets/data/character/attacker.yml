@@ -3024,3 +3024,111 @@
       
       *Normal > Crescent Lotus  > Electric Fists > Acrobat Locus > Electric Fists > Spam till out of AP (Post Rush combo.)*
       
+- name: Ashton Anchors
+  cat: gl
+  rating: 7
+  picture: ashtonanchors
+  weapon: dualswords
+  ace: true
+  star: 5
+
+  stats:
+    hp: 15855
+    atk: 2823
+    int: 1523
+    def: 1904
+    hit: 1127
+    grd: 819
+
+  talents:
+    - name: "Encouragement of Gyo"
+      effects: 
+        - desc: After using a fire skill gain ATK +15%.
+          meta:
+            priority: 3
+            buff: ATK
+            buffCondition: Fire Skill
+            buffValue: 15
+        - desc: After using a fire skill gain AP.
+    - name: "Healing of Ulrun"
+      effects: 
+        - desc: After using an ice skill +150% AP recovery from normals.
+          all: true
+          meta:
+            priority: 3
+            buff: AP Recovery From Normal Attacks
+            buffValue: 150
+    - name: "Mild Mannered Atsumi"
+      effects: 
+        - desc: Elemental Damage +30%.
+          all: true
+          meta:
+            priority: 1
+            buff: Elemental Damage
+            buffValue: 30
+    - name: "One Sided Cleave"
+      effects: 
+        - desc: +10% Rush Damage when hit count is over 100.
+          meta:
+            priority: 3
+            buff: Rush Damage
+            buffCondition: Hit Count 100+
+            buffValue: 10
+        - desc: +20% Rush Damage when hit count is over 200.
+          meta:
+            priority: 3
+            buff: Rush Damage
+            buffCondition: Hit Count 200+
+            buffValue: 20
+
+  skills:
+    - name: "Piercing Thrust"
+      picture: Piercing_Blades
+      power: ATK x 150%
+      ap: 14
+      maxHits: 6
+      element: Ice
+      highlight: true
+    - name: "Twin Stab"
+      picture: Talon_Thrust
+      power: ATK x 200%
+      ap: 20
+      maxHits: 2
+      notes: Recover 5 AP
+      element: Fire
+      highlight: true
+    - name: "Northern Cross"
+      picture: Northern_Cross
+      power: ATK x 4000%
+      ap: 27
+      maxHits: 2
+      element: Ice
+      highlight: true
+    - name: "Sword Dance"
+      picture: Sword_Dance
+      power: ATK x 920%
+      ap: 37
+      maxHits: 30
+      notes: Recover 10 AP
+      element: Fire
+      highlight: true
+
+  rush:
+    name: "Tri-Ace"
+    picture: Tri_Ace_Ashton
+    effects: 
+      - desc: ATK +60% 
+        duration: 20
+        meta:
+          priority: 1
+          buff: ATK
+          buffValue: 60
+      - desc: -30% AP cost
+        duration: 20
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 30
+    power: ATK x 3500%
+    maxHits: 12
+      
