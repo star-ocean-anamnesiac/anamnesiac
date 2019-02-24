@@ -19,6 +19,8 @@ Here are a list of links:
 - [Item Images](https://github.com/seiyria/anamnesiac/tree/master/src/assets/items) - used by the items to link their appropriate image.
 - [The Characters](https://github.com/seiyria/anamnesiac/tree/master/src/assets/data/character) - sorted by class.
 - [Character Images](https://github.com/seiyria/anamnesiac/tree/master/src/assets/characters) - used by the characters to link to their appropriate image.
+- [The Boss Guides](https://github.com/seiyria/anamnesiac/tree/master/src/assets/data/bossguides) - not sorted at all!
+- [Boss Images](https://github.com/seiyria/anamnesiac/tree/master/src/assets/bosses) - used by boss guides to link to their appropriate image.
 
 You'll focus on editing the items and characters - updating their notes, adding new ones, etc. The images can also be contributed if there are any missing!
 
@@ -63,6 +65,8 @@ There's a possible future in which someone else will have to add new item types.
 ### Adding Images
 
 Sometimes, you have to add an image the app doesn't have to make it all work right. This shouldn't be a frequent occurrence, but in the event that it is, please ask for the image or get it from the Dropbox. Additionally, **when you add an image, do not make a separate pull request for it, add it to your existing pull request!** This will help it pass all of the tests to ensure everything is good, and it will require less manual intervention.
+
+Please also follow the existing naming convention when adding files! If you don't, it won't work.
 
 #### Where Are The Images?
 
