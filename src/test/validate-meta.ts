@@ -4,7 +4,7 @@ import { includes } from 'lodash';
 const validMetas = [
   'ATK', 'INT', 'DEF', 'GRD', 'HIT', 'HP',
 
-  'AP Recovery', 'AP Recovery From Normal Attacks', 'AP Cost Reduction',
+  'AP Recovery', 'AP Recovery From Normal Attacks', 'AP Cost Reduction', 'AP Cost Increase',
 
   'Elemental Damage', 'Fire Damage', 'Ice Damage', 'Light Damage', 
   'Dark Damage', 'Earth Damage', 'Lightning Damage', 'Wind Damage',
