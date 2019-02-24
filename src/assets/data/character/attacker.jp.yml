@@ -2833,7 +2833,6 @@
     - name: "Healing of Ulrun"
       effects: 
         - desc: After using an ice skill +150% AP recovery from normals.
-          all: true
           meta:
             priority: 3
             buff: AP Recovery From Normal Attacks
@@ -2849,12 +2848,14 @@
     - name: "One Sided Cleave"
       effects: 
         - desc: +10% Rush Damage when hit count is over 100.
+          all: true
           meta:
             priority: 3
             buff: Rush Damage
             buffCondition: Hit Count 100+
             buffValue: 10
         - desc: +20% Rush Damage when hit count is over 200.
+          all: true
           meta:
             priority: 3
             buff: Rush Damage
