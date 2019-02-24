@@ -3043,7 +3043,7 @@
   talents:
     - name: "Encouragement of Gyo"
       effects: 
-        - desc: After using a fire skill gain ATK +15%.
+        - desc: After using a fire skill gain ATK +15% for 10 seconds.
           meta:
             priority: 3
             buff: ATK
