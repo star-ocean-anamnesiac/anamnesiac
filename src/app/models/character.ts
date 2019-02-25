@@ -74,8 +74,8 @@ export interface Character {
   // whether the character is on global or jp
   cat: string;
 
-  // whether the character is awakened or not
-  awakened?: boolean;
+  // whether the character is awakened or not - set to true for awk10, and 9 for awk9
+  awakened?: boolean|number;
 
   // the rating 0-10
   rating: number;

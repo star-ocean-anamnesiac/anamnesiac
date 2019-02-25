@@ -50,6 +50,10 @@ test('All characters have valid information', async t => {
 
       t.true(fs.existsSync(`src/assets/characters/${char.picture}.png`), 'character must reference a valid image' + parenName);
 
+      if(char.awakened) {
+        t.true(char.awakened === true || char.awakened === 9, 'awakened must be either true or 9');
+      }
+
       const charPicInfo = imageSize(`src/assets/characters/${char.picture}.png`);
       t.is(charPicInfo.type, 'png', 'char image must be a png' + parenName);
 
