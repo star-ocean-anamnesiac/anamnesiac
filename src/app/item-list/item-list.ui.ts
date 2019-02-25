@@ -107,7 +107,7 @@ export class ItemSortPopover {
               No notes have been entered for this item.
             </div>
 
-            <ion-row>
+            <ion-row *ngIf="item.notes">
               <ion-col class="notes" [innerHTML]="notes"></ion-col>
             </ion-row>
           </ion-tab>
@@ -213,6 +213,8 @@ export class ItemModal implements OnInit {
     this.type = this.navParams.get('type');
 
     this.tabs.select('notes');
+
+    console.log(this.item.notes);
 
     this.notes = this.domSanitizer.bypassSecurityTrustHtml(markdown
       .toHTML((this.item.notes || '')

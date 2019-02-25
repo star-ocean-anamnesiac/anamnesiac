@@ -175,7 +175,7 @@
   <span slot="start" class="picture-class-chunk">
     <app-appicon [name]="char.picture" [forceWidth]="64" [forceHeight]="64" type="char"></app-appicon>
     <span class="awakened-container" *ngIf="char.awakened">
-      <app-appicon [name]="'misc-awakening'" [scaleX]="0.5" [scaleY]="0.5"></app-appicon>
+      <app-appicon [name]="char.awakened === true ? 'misc-awakening' : 'misc-awakening-9'" [scaleX]="0.5" [scaleY]="0.5"></app-appicon>
     </span>
     <app-appicon margin-horizontal [name]="'class-' + char.type" class="hidden-xs" [scaleX]="0.25" [scaleY]="0.25"></app-appicon>
   </span>

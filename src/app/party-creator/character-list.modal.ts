@@ -65,7 +65,8 @@ import { Character } from '../models/character';
           <h2 class="vertical-center">
             <app-appicon [name]="'char-' + char.star" [scaleX]="0.5" [scaleY]="0.5" [inline]="true"></app-appicon>
             <span class="awakened-container" *ngIf="char.awakened">
-              <app-appicon [name]="'misc-awakening'" [scaleX]="0.5" [scaleY]="0.5"></app-appicon>
+              <app-appicon [name]="char.awakened === true ? 'misc-awakening' : 'misc-awakening-9'"
+                           [scaleX]="0.5" [scaleY]="0.5"></app-appicon>
             </span>
             <span>{{ char.name }}</span>
           </h2>

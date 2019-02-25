@@ -61,7 +61,7 @@ export class CharacterSortPopover {
         <app-appicon [name]="char.picture" [forceWidth]="128" [forceHeight]="128" type="char"></app-appicon>
 
         <span class="awakened-container" *ngIf="char.awakened">
-          <app-appicon [name]="'misc-awakening'" [scaleX]="1" [scaleY]="1"></app-appicon>
+          <app-appicon [name]="char.awakened === true ? 'misc-awakening' : 'misc-awakening-9'" [scaleX]="1" [scaleY]="1"></app-appicon>
         </span>
       </ion-col>
 
@@ -302,7 +302,7 @@ export class CharacterModal implements OnInit {
     private domSanitizer: DomSanitizer,
     private navParams: NavParams,
     private modalCtrl: ModalController
-    ) {}
+  ) {}
 
   ngOnInit() {
     this.showShare = !!(<any>navigator).share;
