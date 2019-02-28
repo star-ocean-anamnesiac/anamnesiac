@@ -33,19 +33,19 @@
         - desc: Recover 10 AP to all allies when Just Timing evasion
     - name: "Blade of Inorganic"
       effects: 
-        - desc: Single target damage +15%
+        - desc: Single target damage +20%
           all: true
           meta:
             priority: 1
             buff: Single Target Damage
-            buffValue: 15
-        - desc: Single target damage +25% when HP is 100%
+            buffValue: 20
+        - desc: Single target damage +40% when HP is 100%
           all: true
           meta:
-            priority: 1
+            priority: 3
             buff: Single Target Damage
             buffCondition: HP is 100%
-            buffValue: 25
+            buffValue: 40
     - name: "Beautiful World"
       effects: 
         - desc: ATK +20%
@@ -97,16 +97,11 @@
     maxHits: 25
     
   notes: >
-      _A2 arrives exceptionally early for GL along with the other Nier characters. This also makes her the first Greatsword character
-      for GL. A2 is an offensive tank, she hits very hard and even her talents are more damage focused. Like any defender she brings
-      anti-flinch to the party, as well as a HP buff for the party. Her rush hits extremely hard, helps her deal even more damage and
-      gives her health regen giving her sustain. This means that she is a favourite for going auto on content._
-      
-      
-      _On top of all of this 
-      perfect dodging restores AP to herself and the party. She also has the ability to either use a long or short ranged combo 
-      depending on what you want to set. It's very hard to really think of any weaknesses she has and it will be a while before we get
-      a defender that truly surpasses her. If you had to try and find one, it's that HP related talents aren't the most consistent._
+      _A2 gets buffed to her initial JP values. She is now probably the best defender in the game now her Single Target Damage buff
+      isn't holding her back. She provides AP feeding with dodging, she has post rush-sustain. Her damage is good and she can run
+      a ranged or melee combo. She is reasonably bulky as well and really only the slow clunky play style is her biggest downside
+      along with that HP buffs are anything but consistent. Like the rest of the nier trio she's pretty broken and you'll be seeing
+      many on auto in your m3 runs to come._
       
       
       **TL DR**
