@@ -1,5 +1,4 @@
 
-import { promises } from 'fs';
 import * as fs from 'fs';
 
 import test from 'ava';
@@ -12,8 +11,8 @@ import { Item } from '../app/models/item';
 
 const ROOT_FILE = 'src/assets/data/root.yml';
 
-test('All items have valid information', async t => {
-  const allData = await promises.readFile(ROOT_FILE, 'utf-8');
+test('All items have valid information', t => {
+  const allData = fs.readFileSync(ROOT_FILE, 'utf-8');
   const { weapons, accessories } = YAML.safeLoad(allData);
 
   const allItems = weapons.concat(accessories);
@@ -21,14 +20,14 @@ test('All items have valid information', async t => {
   const itemElements = ['Dark', 'Earth', 'Fire', 'Ice', 'Light', 'Lightning', 'Wind'];
   const itemSlayers  = ['Beast', 'Bird', 'Demon', 'Divinity', 'Dragon', 'Human', 'Insect', 'Machine', 'Plant', 'Undead'];
 
-  await Promise.all(allItems.map(async ({ id }) => {
+  allItems.forEach(({ id }) => {
 
     const type = id === 'all' ? 'accessory' : 'weapon';
 
-    const datagl = await promises.readFile(`src/assets/data/item/${type}/${id}.yml`, 'utf-8');
+    const datagl = fs.readFileSync(`src/assets/data/item/${type}/${id}.yml`, 'utf-8');
     const itemsgl: Item[] = YAML.safeLoad(datagl);
 
-    const datajp = await promises.readFile(`src/assets/data/item/${type}/${id}.jp.yml`, 'utf-8');
+    const datajp = fs.readFileSync(`src/assets/data/item/${type}/${id}.jp.yml`, 'utf-8');
     const itemsjp: Item[] = YAML.safeLoad(datajp);
 
     const items = itemsgl.concat(itemsjp);
@@ -62,5 +61,5 @@ test('All items have valid information', async t => {
       });
 
     });
-  }));
+  });
 });

@@ -1,5 +1,4 @@
 
-import { promises } from 'fs';
 import * as fs from 'fs';
 import test from 'ava';
 import * as YAML from 'js-yaml';
@@ -7,10 +6,10 @@ import * as _ from 'lodash';
 
 import { BossGuide } from '../app/models/bossguide';
 
-test('All boss guides have valid information', async t => {
+test('All boss guides have valid information', t => {
 
-  await Promise.all(fs.readdirSync('src/assets/data/bossguides').map(async file => {
-    const guides = await promises.readFile(`src/assets/data/bossguides/${file}`, 'utf-8');
+  fs.readdirSync('src/assets/data/bossguides').forEach(file => {
+    const guides = fs.readFileSync(`src/assets/data/bossguides/${file}`, 'utf-8');
     const guideDatas: BossGuide[] = YAML.safeLoad(guides);
 
     guideDatas.forEach(guide => {
@@ -48,6 +47,6 @@ test('All boss guides have valid information', async t => {
         t.truthy(rec.plain || rec.unit, 'recommendation.unit or recommendation.plain must be set' + parenName);
       });
     });
-  }));
+  });
 
 });

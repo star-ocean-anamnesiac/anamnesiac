@@ -1,5 +1,4 @@
 
-import { promises } from 'fs';
 import * as fs from 'fs';
 import test from 'ava';
 import * as YAML from 'js-yaml';
@@ -13,8 +12,8 @@ import { Character } from '../app/models/character';
 
 const ROOT_FILE = 'src/assets/data/root.yml';
 
-test('All characters have valid information', async t => {
-  const data = await promises.readFile(ROOT_FILE, 'utf-8');
+test('All characters have valid information', t => {
+  const data = fs.readFileSync(ROOT_FILE, 'utf-8');
   const { classes, weapons } = YAML.safeLoad(data);
 
   const weaponHash = weapons.reduce((prev, cur) => {
@@ -22,11 +21,11 @@ test('All characters have valid information', async t => {
     return prev;
   }, {});
 
-  await Promise.all(classes.map(async charClass => {
-    const datagl = await promises.readFile(`src/assets/data/character/${charClass.toLowerCase()}.yml`, 'utf-8');
+  classes.forEach(charClass => {
+    const datagl = fs.readFileSync(`src/assets/data/character/${charClass.toLowerCase()}.yml`, 'utf-8');
     const charactersgl: Character[] = YAML.safeLoad(datagl);
 
-    const datajp = await promises.readFile(`src/assets/data/character/${charClass.toLowerCase()}.jp.yml`, 'utf-8');
+    const datajp = fs.readFileSync(`src/assets/data/character/${charClass.toLowerCase()}.jp.yml`, 'utf-8');
     const charactersjp: Character[] = YAML.safeLoad(datajp);
 
     const characters = charactersgl.concat(charactersjp);
@@ -97,5 +96,5 @@ test('All characters have valid information', async t => {
         });
       }
     });
-  }));
+  });
 });
