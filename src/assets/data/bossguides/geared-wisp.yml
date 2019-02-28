@@ -9,6 +9,9 @@
     m1: "7:00"
     m2: "7:00"
     m3: "4:00"
+    
+  statusInflictions:
+    - Freeze
 
   weaknesses:
     - element: Light
