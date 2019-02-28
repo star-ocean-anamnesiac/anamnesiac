@@ -207,3 +207,64 @@
     The BiS for Fiore. Comparing this to pumpkin may show you why pumpkin is bad. Boosts dark damage significantly while also adding a
     slighty amount of racial hate. The third factor is a nice one if you have some kind of healing in your party. Great weapon if you
     have Fiore so do keep it.
+    
+- name: Raven's Orb
+  cat: 'gl'
+  star: 5
+  picture: Raven's_Orb.png
+  atk: 958
+  int: 961
+  factors:
+    - desc: Ice damage +40%
+      meta:
+        priority: 4
+        buff: Ice Damage
+        buffValue: 40
+    - desc: Dark damage +20%
+      meta:
+        priority: 4
+        buff: Dark Damage
+        buffValue: 20
+    - desc: +10% Crit Rate
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 10
+    - desc: +15% Crit DMG
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 15
+    - desc: +10% Stun Rate
+      lb: 5
+      meta:
+        priority: 1
+        buff: Stun Rate
+        buffValue: 10
+  obtained: Gacha
+  
+  notes: >
+    The BiS orb for Mavelle. Has three fanatastic factors for her, boosting her Ice damage, increasing crit rate and damage and 
+    eventually giving a stun rate buff. It's also passable on Fiore due to it boosting her main element of Dark slightly and also
+    her off element of ice quite a bit.
+    
+- name: Cosmic Glass
+  cat: 'gl'
+  star: 5
+  picture: Cosmic_Glass
+  atk: 528
+  int: 533
+  factors:
+    - desc: +15% DMG on Seventh Star
+    - desc: Repel +1
+    - desc: +30% AP RCV by Normal Attacks
+      lb: 5
+      meta:
+        priority: 4
+        buff: AP Recovery From Normal Attacks
+        buffValue: 30
+  obtained: Monarch Zinae Exchange
+  
+  notes: >
+    Event weapon for Mavelle. It's pretty bad, slight increase to rush damage, repel to keep aggro off you and a weak AP recovery
+    on normals. Only use it if you lack anything better.
