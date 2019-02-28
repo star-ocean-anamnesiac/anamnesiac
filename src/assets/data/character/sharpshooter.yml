@@ -19,19 +19,19 @@
   talents:
     - name: "Fleeting Gentleness"
       effects: 
-        - desc: Damage +30%
+        - desc: Damage +45%
           all: true
           meta:
             priority: 1
             buff: Damage
-            buffValue: 30
-        - desc: Damage +40% when HP 100%
+            buffValue: 45
+        - desc: Damage +55% when HP 100%
           all: true
           meta:
             priority: 1
             buff: Damage
             buffCondition: HP at 100%
-            buffValue: 40
+            buffValue: 55
     - name: "Scanner Type"
       effects: 
         - desc: Evasion AP consumption -50%
@@ -94,21 +94,11 @@
     maxHits: 16
     
   notes: >
-      _9S arrived early for GL with his Nier comrades and boy oh boy is he busted as hell. Due to how weak SS generally are on GL
-      currently 9S really stands out for his offensive power, his personal damage and rush damage are insane for an SS by global
-      standards. His talents help increase party wide mobility quite a lot which is a nice benfit. He also has a damage buff though
-      it isn't quite as good as Maria's due to it needing 100% HP to match hers it's still very good, even at 30% considering 
-      everything else he brings to the table. Post rush he gives a strong ATK damage buff and even heals the party so he can act
-      as a psuedo healer. Another important point is since he wields an ohs he will count as a melee weapon wielder for talents like
-      Rena's regen that only affect those who wield close range weapons._
-      
-      _As for downsides 9S does have some even if he is amazing. The biggest is probably he has no ranged normals which can make 
-      playing him kind of difficult. He also lacks a homing projectile and due to the fact his attacks are 1 hit hit or miss
-      type attacks, highly mobile bosses can be problematic. Linked in with this is that he's not a good hit count builder or 
-      maintainer which is a desirable trait among Sharpshooters.
-      
-      _In summary 9S is probably the best Sharpshooter in global right now, but he still has his weaknesses and will not favor highly
-      mobile bosses._
+      _9S gets restored to his intial JP value on GL with the rerun and becomes by far the best SS with it. He now has the best flat
+      damage buff in the game that gets better for players when they're at 100% HP. His personal damage output is quite high, made
+      even higher with his damage buff. His attacks are still all one hit wonders, meaning he's best played at close range especially
+      since he is restricted to melee normals. He gives the party high mobility and makes for a decent kite. His post rush heals 
+      gives him additional utility. He is just pretty broken currently compared to every other SS in the game._
       
       
       **TL DR**
