@@ -211,7 +211,7 @@
 - name: Raven's Orb
   cat: 'gl'
   star: 5
-  picture: Raven's_Orb.png
+  picture: Raven's_Orb
   atk: 958
   int: 961
   factors:
