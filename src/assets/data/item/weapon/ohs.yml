@@ -6,12 +6,12 @@
   atk: 964
   int: 958
   factors:
-    - desc: All attribute damage +50%
+    - desc: All attribute damage +20%
       meta:
         priority: 4
         buff: Damage
         buffValue: 50
-    - desc: Damage to mechs +50%
+    - desc: Damage to machines +30%
       slayer: Machine
       slayerPct: 50
       meta:
@@ -22,7 +22,7 @@
     - desc: Crit Rate +10%
       lb: 5
       meta:
-        priority: 4
+        priority: 1
         buff: Crit Rate
         buffValue: 10
   obtained: Gacha (Limited)
@@ -279,7 +279,7 @@
     - desc: +20% DMG on Valkyrie's Mercy
       lb: 1
     - desc: -10% AP Cost
-      lb: 5
+      lb: 3
       meta:
         priority: 4
         buff: AP Cost Reduction
