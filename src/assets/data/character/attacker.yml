@@ -19,13 +19,13 @@
   talents:
     - name: "Quiet Determination"
       effects: 
-        - desc: ATK +25%
+        - desc: ATK +40%
           all: true
           meta:
             priority: 1
             buff: ATK
             buffValue: 25
-        - desc: ATK +45% when HP 100% 
+        - desc: ATK +60% when HP 100% 
           all: true
           meta:
             priority: 3
@@ -58,7 +58,7 @@
       highlight: true
     - name: "YoHRa Arms: Two"
       picture: YoHRa_Arms_Two
-      power: ATK x 800%
+      power: ATK x 1100%
       ap: 42
       maxHits: 2
     - name: "YoHRa Pod: One"
@@ -94,19 +94,14 @@
     maxHits: 27
     
   notes: >
-      _The meta breaker herself. 2B enters the game way ahead of schedule and even her nerfs do little to slow her down. 2B is an 
-      all round great unit, she does good damage, has a melee and ranged combo while also providing powerful buffs. Her ATK buff is
-      only matched by Lasswell when the condition is met and she gives AP recovery on normals that allows players to have overall
-      higher damage output. She then also has a powerful elemental damage buff that matches many characters in the game post rush
-      and the icing on the cake is she has a built in double imbue of light and dark._
+      _With the rerun of Nier 2b goes from top tier to meta breaking. Again. She now has the out and out best ATK buff in the game and
+      will probably be this way for a long time. Her personal damage is also quite good, especially now that arms 2 is restored to
+      how it was. Unnerfing her has basically meant anyone who got her in October or November is getting great value for money._
       
-      
-      _For downsides the biggest one is her ATK buff conditional isn't the most consistent, each player has to keep their HP at 100%
-      without a healer or party wide healing in some form this can be very difficult to get the full benefit from. Also talent based
-      imbue is a double edged sword, while very good as it lets you use racial weapons against bosses your two imbues cover, you will
-      need elemental imbue weapons to be effective against bosses who resist them. A good example of this in GL is Michael who resists
-      everything but ice. Luckily ohs category has all but dark covered so if you have the ice imbue sword 2b can be used but you will
-      need that specific weapon, thus why it is a weakness._
+      _Downsides remain the same. Self imbue is still a both a pro and a con but with ohs coverage it isn't much of a draw back. The 
+      ATK buff is still inconsistent but 40% is still as good as Fidel and better then anything Hmillie can do even with her 
+      conditional. 2B. Like all other Nier characters. Is absolutely broken for GL and if you want to face roll content just use 2b
+      and co._
       
       
       **TL DR**
@@ -134,14 +129,10 @@
       
       **Rotation**
       
-      - As a note YoHRa Pod: One VS YoHRa Arms: two is a personal preference. Whether you want a better ranged combo or using arms two
-      as a verticle dodge.
       
-      *Normal > YoHRa Arms: One > YoHRa Pod: Two > YoHRa Arms: One > Spam it till out of AP. (General combo.)*
+      *Normal > YoHRa Arms: One > YoHRa Pod: Two > YoHRa Arms: two > Spam it till out of AP. (General combo.)*
       
       *Normal > YoHRa Pod: Two > YoHRa Arms: One (Miss on purpose) > YoHRa Pod: Two > Spam it till out of AP. (Ranged combo.)*
-      
-      *Normal > YoHRa Pod: Two > YoHRa Pod: One > YoHRa Pod: Two > Spam it till out of AP. (Ranged combo if running ranged set up.)*
     
 - name: Fidel Camuze
   cat: gl
@@ -1614,7 +1605,7 @@
     
 - name: Millie Chliette (Halloween)
   cat: gl
-  rating: 8
+  rating: 7
   picture: halloweenwerewolfmilliechliette
   weapon: arm
   ace: true
@@ -3024,9 +3015,9 @@
       
       *Normal > Crescent Lotus  > Electric Fists > Acrobat Locus > Electric Fists > Spam till out of AP (Post Rush combo.)*
       
-- name: Ashton Anchors (Preview)
+- name: Ashton Anchors
   cat: gl
-  rating: 7
+  rating: 8
   picture: ashtonanchors
   weapon: dualswords
   ace: true
@@ -3041,7 +3032,7 @@
     grd: 819
 
   talents:
-    - name: "Encouragement of Gyo"
+    - name: "Creepy's Aid"
       effects: 
         - desc: After using a fire skill gain ATK +15% for 10 seconds.
           meta:
@@ -3050,14 +3041,14 @@
             buffCondition: Fire Skill
             buffValue: 15
         - desc: After using a fire skill gain AP.
-    - name: "Healing of Ulrun"
+    - name: "Weepy's Healing"
       effects: 
         - desc: After using an ice skill +150% AP recovery from normals for 10 seconds.
           meta:
             priority: 3
             buff: AP Recovery From Normal Attacks
             buffValue: 150
-    - name: "Mild Mannered Atsumi"
+    - name: "Sincere Efforts II"
       effects: 
         - desc: Elemental Damage +30%.
           all: true
@@ -3065,7 +3056,7 @@
             priority: 1
             buff: Elemental Damage
             buffValue: 30
-    - name: "One Sided Cleave"
+    - name: "Heir of Symbological Arts"
       effects: 
         - desc: +10% Rush Damage when hit count is over 100.
           all: true
@@ -3083,14 +3074,14 @@
             buffValue: 20
 
   skills:
-    - name: "Piercing Thrust"
+    - name: "Piercing Blades"
       picture: Piercing_Blades
       power: ATK x 150%
       ap: 14
       maxHits: 6
       element: Ice
       highlight: true
-    - name: "Twin Stab"
+    - name: "Twin Thrust"
       picture: Talon_Thrust
       power: ATK x 200%
       ap: 20
@@ -3132,4 +3123,43 @@
           buffValue: 30
     power: ATK x 3500%
     maxHits: 12
+    
+  notes: >
+      _Best boy Ashton arrives as the first permanent dual sword user for GL. He is a mixture of carry and buffer, providing a good
+      pre-rush elemental damage buff and a still rare rush damage buff based on hit count. His play style is fast paced and revolves
+      around making use of ice and fire skills to keep up buffs that help increase damage output. His ice skills provide him a ranged
+      combo while his fire skills a melee combo, you can switch load out depending on fight so you can make up if you lack an ice or
+      fire imbue weapon._
+      
+      _As for downsides, being a mix of buffer and carry he excels at neither, but that isn't a major downside. The bigger issues are
+      his elemental damage buff gets overwritten by quite a few characters post rush buff, including the extremely popular 2b. Also the
+      rush buff needs high hit counts to get the most out of it. However Ashton is a good, fun, fast paced all rounder._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Strong Elemental and Rush damage buff.
+      
+      - Deals good damage.
+      
+      - Has both a ranged and melee combo.
+      
+      - Fun playstyle.
+      
+      
+      **Cons**
+      
+      - Elemental damage buff gets overwritten by a lot of characters post rush. Some of which are extremely popular.
+      
+      - Rush damage buff requires high hit count to get the best from it.
+      
+      
+      **Rotation**
+      
+      *Normal > Piercing Blades > Twin Thrust > Northern Cross > Spam till out of AP (General ice combo.)*
+      
+      *Normal > Piercing Blades > Twin Thrust > Sword Dance > Spam till out of AP (General fire combo.)*
       
