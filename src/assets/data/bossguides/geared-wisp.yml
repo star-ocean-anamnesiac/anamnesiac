@@ -1,0 +1,131 @@
+- name: "Geared Wisp"
+  image: geared_wisp
+  cat: gl
+  race: Machine 
+
+  isActive: true
+
+  enrage:
+    m1: "7:00"
+    m2: "7:00"
+    m3: "4:00"
+
+  weaknesses:
+    - element: Light
+      percentWeakness: 50
+
+    - status: Silence
+      vuln: Low
+   
+  recommendations:
+    - plain: Light Damage
+    - plain: Low Animation Lock
+    - plain: High Mobility
+    - plain: Ease of Stun
+    
+  desc: >
+    Here is the event everyone is waiting for, about a year too early. SOUNDS FUN. So, what do you get to fight? Adam and Eve?  Marx? Beauvoir is pretty iconic, being in all the trailers. How about some random bird  boss that isn't even from the game?! BIRD AUTOMATA.
+
+    Bird is weak to light. Hurrah! That means sword users are easiest to arm for this. 2B and Claude are your safest bet for buffers, but Were-Millie is also a solid choice. 9S is the rare shooter that uses swords, and he is also the best equipped shooter for kiting this boss. For those that have been lucky, dagger users such as Clair and Vampire Lord Viktor, or the sole dual sword user Devil Clair, also have access to light. I cannot, in good faith, recommend any of our light caster options. Bird is just too fast for that. While anti-flinch is pretty useless because Bird is 90% burst damage, A2 and Dias can deal heavy dps and bring the right defensive support.
+
+    Melee characters beware moves with high animation lock. The likes of Lenneth and Fayt will need to play very carefully, because many of its attacks come out fast. 
+
+    Other notables include Roddick as your ever-reliable stunner (pinning this stupid bird down can save you a lot of grief), Maria for her crit support and Myuria because Plasma Cyclone will have no issues keeping up with it. 
+
+    Bird may come with mage adds dependent on difficulty--in JP it used to have adds even on Misery 3, but they removed them due to technical difficulties. It is unknown whether global will restore these adds. Just be aware they have a large HP pool and do high damage and absolutely must die before Bird gets ornery.
+
+    During its docile phase, it will largely do close range attacks. At 90% HP or after enough time, the game is on. So many of Bird's attacks are deadly from its front that you will want to dps it from the side or back whenever possible. If you're fighting in close range, be ready to dodge out at any time; all of its close range attacks are deadly and have brief tells. Master Attack is a threat to anyone at mid range minimum, so be ready to dodge when you see the bird fly up. Beware fighting it at the edge of the stage while Ritual Flame is active, because the camera makes it difficult to track the fire plumes.
+
+    If you take aggro as a ranged, watch out for Frozen Ball. The attack happens so fast that you may not notice the projectiles until it's too late. Dodge to the side or towards Bird to evade them.
+
+  moves:
+    - name: Tail Sweep
+      targets: Close
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        A basic spin attack at melee range.
+        
+    - name: Master Attack
+      targets: Close & Mid
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Bird will fly up into the air and then come crashing down onto its target. High damage. Can be used on mid-range targets.
+        
+    - name: Energy Drain
+      targets: Close
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Will perform a little twirl, generating purple energy around it. A purple aura then appears causing flinch damage and draining HP. This does deceptively high damage and comes out quickly.
+        
+    - name: Cold Blow
+      targets: Close
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Does a short hop up with wings hugged together. When it lands, it will release a blue burst that deals high damage to everyone in close range.
+        
+    - name: Freezing Laser
+      targets: Any
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Tosses a large number of orbs along the ground in front of it that each intensify and then explode into pillars of light. Can launch you in the air and juggle you for even higher damage. The orbs do not damage until they explode.
+        
+    - name: Ground Scratch
+      targets: Close
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Will do a flourish of its wings and create purple orbs on the ground that emit parallel line markers. These will fire shockwaves after 0.5 seconds.This comes in two sets: the first will travel in the direction the boss is facing. The second set will intersect with the first diagonally (like a triangle formation).
+        
+    - name: Ice Radiation
+      targets: Close
+      isSymbology: true
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Flaps its wings forward and fires a stream of ice at close-to-mid range. Hits multiple times, but has a narrow hitbox. Easily avoided. May freeze.
+        
+    - name: Frozen Ball
+      targets: Long
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Flies backwards, firing two projectiles at its target. Very fast. Don't let this catch you off guard. May freeze.
+        
+    - name: Ritual Flame
+      targets: Any
+      isSymbology: true
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Creates an exploding fire plume at the rightmost perimeter of the stage. From there, more plumes will activate around the perimeter in a clockwise order. It will regain control immediately after the first plume, so beware. May kill :P.
+        
+    - name: Freeze Billows
+      targets: Any
+      m2: true
+      m3: true
+      desc: >
+        Will leap to an edge of the stage--any edge that is around half the stage away from its current location--and do a little twirl, which sends a wave of giant green orbs careening across the stage. The first orb will come from its front, but that is the only orb that does. So you can avoid the entire attack by moving around that first orb and then staying parallel to the boss. Deceptively low damage, but very high chance of freezing.
+        
+    - name: Reverse Flame
+      targets: Any
+      isSymbology: true
+      isEnrage: true
+      m2: true
+      m3: true
+      desc: >
+        It will leap in the air. When it comes down, a spark descends from the sky in front of it (in the general direction of its target), which creates a massive explosion. It then regains control. From there, more sparks could come down--either three in a diamond formation or four in a delta formation. The order is front (> back) > left > right. Fatal damage. 
+  
