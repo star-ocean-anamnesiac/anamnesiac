@@ -1918,8 +1918,8 @@
             buff: Crit Rate
             buffCondition: Hit Count > 200
             buffValue: 30
-    - name: "Sincere Devotion"
-      effects: 
+     - name: "Sincere Devotion"
+       effects: 
         - desc: Crit Damage +10% when Hit Count is over 100
           all: true
           meta:
@@ -1941,8 +1941,8 @@
             buff: Crit Damage
             buffCondition: Hit Count > 200
             buffValue: 30
-    - name: "Proper Princess"
-      effects: 
+     - name: "Proper Princess"
+       effects: 
         - desc: ATK +30% during Charge Assault
           meta:
             priority: 3
@@ -1957,8 +1957,8 @@
             priority: 1
             buff: Single Target Damage
             buffValue: 20
-    - name: "Secret Dream"
-      effects: 
+     - name: "Secret Dream"
+       effects: 
         - desc: No Flinching when taking Damage < 10% of Max HP
         - desc: AP Cost -10%
           meta:
