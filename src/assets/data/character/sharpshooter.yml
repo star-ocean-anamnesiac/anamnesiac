@@ -1911,7 +1911,7 @@
             buff: Crit Rate
             buffCondition: Hit Count > 150
             buffValue: 20
-        - desc: Crit Rate +30% when Hit Count is over 300
+        - desc: Crit Rate +30% when Hit Count is over 200
           all: true
           meta:
             priority: 3
@@ -1934,7 +1934,7 @@
             buff: Crit Damage
             buffCondition: Hit Count > 150
             buffValue: 20
-        - desc: Crit Damage +30% when Hit Count is over 300
+        - desc: Crit Damage +30% when Hit Count is over 200
           all: true
           meta:
             priority: 3
