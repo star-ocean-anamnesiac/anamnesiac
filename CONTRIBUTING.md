@@ -19,6 +19,8 @@ Here are a list of links:
 - [Item Images](https://github.com/seiyria/anamnesiac/tree/master/src/assets/items) - used by the items to link their appropriate image.
 - [The Characters](https://github.com/seiyria/anamnesiac/tree/master/src/assets/data/character) - sorted by class.
 - [Character Images](https://github.com/seiyria/anamnesiac/tree/master/src/assets/characters) - used by the characters to link to their appropriate image.
+- [Skill Images](https://github.com/seiyria/anamnesiac/tree/master/src/assets/skills) - used by characters to link skills to their appropriate image.
+- [Rush Images](https://github.com/seiyria/anamnesiac/tree/master/src/assets/rush) - used by characters to link rushes to their appropriate image.
 - [The Boss Guides](https://github.com/seiyria/anamnesiac/tree/master/src/assets/data/bossguides) - not sorted at all!
 - [Boss Images](https://github.com/seiyria/anamnesiac/tree/master/src/assets/bosses) - used by boss guides to link to their appropriate image.
 
