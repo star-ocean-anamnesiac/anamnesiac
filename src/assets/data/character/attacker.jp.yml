@@ -2940,7 +2940,7 @@
       
     - name: "Mujin Kun, Charge!"
       effects: 
-        -ATK +25% when over 100 hit count
+        - desc: ATK +25% when over 100 hit count
           all: false
         
     - name: "Overaction"
