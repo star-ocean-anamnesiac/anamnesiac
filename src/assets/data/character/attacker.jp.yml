@@ -2913,10 +2913,10 @@
     power: ATK x 3500%
     maxHits: 12
       
- name: Precis
+- name: Precis
   cat: jp 
   rating: 4
- picture: precisf.neumann	
+  picture: precisf.neumann	
   weapon: arms
   ace: true
   limited: false
