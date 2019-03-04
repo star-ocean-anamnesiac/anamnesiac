@@ -132,7 +132,7 @@
 
 - name: Maria Traydor
   cat: gl
-  rating: 9
+  rating: 8
   picture: mariatraydor
   weapon: gun
   ace: true
@@ -591,7 +591,7 @@
     
 - name: Reimi Saionji
   cat: gl
-  rating: 6
+  rating: 5
   picture: reimisaionji
   weapon: bow
   ace: true
@@ -711,7 +711,7 @@
     
 - name: Miki (Summer)
   cat: gl
-  rating: 7
+  rating: 6
   picture: everlastingsummermikisauvester
   weapon: bow
   ace: true
@@ -1573,7 +1573,7 @@
       
       *Normal > Divebomb > Skyline Spray > Divebomb > Spam till out of AP  (General Combo.)* 
       
-- name: Maria Traydor
+- name: Maria (Awakened)
   cat: gl
   rating: 10
   picture: mariatraydor
@@ -1733,3 +1733,146 @@
       *Normal > Raptor Bullet > Aiming Device > Raptor Bullet > Raptor Bullet (General Damage)*
       
       *Normal > Crimson Squall > Aiming Device  > Crimson Squall > Crimson Squall (Rush Gain)*
+      
+- name: Maria Bridal
+  cat: gl
+  rating: 7
+  picture: mariatraydor
+  weapon: gun
+  ace: true
+  limited: True
+  star: 5
+
+  stats:
+    hp: 14070
+    atk: 2520
+    int: 1563
+    def: 1706
+    hit: 1260
+    grd: 924
+
+  talents:
+    - name: "Dignified Profile"
+      effects: 
+        - desc: Damage +40%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 40
+    - name: "Continous Thorn Attack"
+      effects: 
+        - desc: Damage +50% when hit count is over 100.
+          all: true
+          meta:
+            priority: 3
+            buff: Damage
+            buffCondition: Hit Count > 100
+            buffValue: 50
+        - desc: Damage +55% when hit count is over 150.
+          all: true
+          meta:
+            priority: 3
+            buff: Damage
+            buffCondition: Hit Count > 150
+            buffValue: 55
+        - desc: Damage +60% when hit count is over 200.
+          all: true
+          meta:
+            priority: 3
+            buff: Damage
+            buffCondition: Hit Count > 200
+            buffValue: 60
+    - name: "Hidden Passion"
+      effects: 
+        - desc: Additional Hit on that Deals 10% of Damage Dealt on Normal Attacks.
+          all: true
+    - name: "Unreturnable Child Days"
+      effects: 
+        - desc: ATK +10% at 50 hits or more.
+          meta:
+            priority: 3
+            buff: ATK
+            buffCondition: Hit Count > 50
+            buffValue: 10
+        - desc: AP Cost -15% at 50 hits or more.
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Hit Count > 50
+            buffValue: 15
+
+  skills:
+    - name: "Aiming Device (Thorn)"
+      picture: Aiming_Device
+      power: ATK x 180%
+      ap: 18
+      maxHits: 1
+    - name: "Burst Emission (Thorn)"
+      picture: Burst_Emission
+      power: ATK x 580%
+      ap: 38
+      maxHits: 6
+    - name: "Laser Bullet (Thorn)"
+      picture: Laser_Blast
+      power: ATK x 220%
+      ap: 20
+      maxHits: 3
+    - name: "Gravity Bullet (Thorn)"
+      picture: Gravity_Bullet
+      power: ATK x 270%
+      ap: 24
+      maxHits: 10
+      element: Dark
+      
+  rush:
+    name: "Ethereal Burst Emission"
+    picture: Ethereal_Burst_Emission_Bridal_Maria
+    effects: 
+      - desc: ATK +60%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: ATK
+          buffValue: 60
+    power: ATK x 4000%
+    maxHits: 6
+    
+  notes: >
+      _So Bridal Maria has arrived at the same time as her awakened form which is bad since Bridal was at least on paper an improved
+      version of Maria. However that doesn't mean she's a terrible character. She has the highest damage buff in the game at 60%.
+      Though it does require 200 hits to achieve this, Bridal Maria is capable of racking up the hits, especially since her version
+      of gravity bullet is different from the one we know with some tracking on it and is great against larger enemies. She also gets
+      a pretty big AP reduction and slight ATK buff once past 50 hits. Plus she does add a little extra damage to everyones normals
+      for a slight dps increase. Her post rush buff gives 60% ATK which means she doesn't need to worry about 2bs conditional._
+      
+      _Now for downsides. The 200 hit condition is a mighty buff and to match Awakened Maria she needs 100 hits and 150 hits to
+      match 9S for their best damage buffs. Her flat damage buff is just the Maria one. Her ATK post rush buff is kind of meh
+      considering 2b exists and that awakened Fidel is coming with a flat 50% buff as well. Her lack of Squall hurts and it's
+      replacement in burst Emissions is pretty bad. Also her rush has been bugged in JP since release and it doesn't contribute to
+      Elemental Burst. Which hurts even more so as it would have made her better against light weak bosses.
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Good at building and maintaining hit count.
+
+      - Good at kiting.
+
+      - Strong damage buff. That grows to the strongest in the game.
+      
+      
+      **Cons**
+      
+      - Weak personal damage.
+
+      - Lack of defensive utility for the party.
+      
+      
+      **Rotation**
+
+      *Normal > Gravity Bullet (Thorn) > Aiming Device (Thorn) > Gravity Bullet (Thorn) > Spam Till Out of AP (General Damage)*
