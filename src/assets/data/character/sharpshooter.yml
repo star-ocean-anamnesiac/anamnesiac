@@ -1896,7 +1896,7 @@
 
   talents:
      - name: "Fleeting Rouge of Falling Petals"
-      effects: 
+       effects: 
         - desc: Crit Rate +10% when Hit Count is over 100
           all: true
           meta:
