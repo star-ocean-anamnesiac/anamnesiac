@@ -1734,10 +1734,10 @@
       
       *Normal > Crimson Squall > Aiming Device  > Crimson Squall > Crimson Squall (Rush Gain)*
       
-- name: Maria Bridal
+- name: Maria (Bridal)
   cat: gl
   rating: 7
-  picture: mariatraydor
+  picture: bridalmariatraydor
   weapon: gun
   ace: true
   limited: True
@@ -1831,7 +1831,6 @@
     effects: 
       - desc: ATK +60%
         duration: 20
-        all: true
         meta:
           priority: 1
           buff: ATK
@@ -1851,7 +1850,8 @@
       match 9S for their best damage buffs. Her flat damage buff is just the Maria one. Her ATK post rush buff is kind of meh
       considering 2b exists and that awakened Fidel is coming with a flat 50% buff as well. Her lack of Squall hurts and it's
       replacement in burst Emissions is pretty bad. Also her rush has been bugged in JP since release and it doesn't contribute to
-      Elemental Burst. Which hurts even more so as it would have made her better against light weak bosses.
+      Elemental Burst. Which hurts even more so as it would have made her better against light weak bosses. In summary Bridal Maria
+      is a good enough unit, but she is outclassed and to get the best out of her requires more work then it seems worth._
       
       
       **TL DR**
@@ -1876,3 +1876,172 @@
       **Rotation**
 
       *Normal > Gravity Bullet (Thorn) > Aiming Device (Thorn) > Gravity Bullet (Thorn) > Spam Till Out of AP (General Damage)*
+      
+- name: Nel (Bridal)
+  cat: gl
+  rating: 7
+  picture: bridalnelzelpher
+  weapon: dagger
+  ace: true
+  limited: True
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 2482
+    int: 1549
+    def: 1589
+    hit: 1246
+    grd: 924
+
+  talents:
+     - name: "Fleeting Rouge of Falling Petals"
+      effects: 
+        - desc: Crit Rate +10% when Hit Count is over 100
+          all: true
+          meta:
+            priority: 3
+            buff: Crit Rate
+            buffCondition: Hit Count > 100
+            buffValue: 10
+        - desc: Crit Rate +20% when Hit Count is over 150
+          all: true
+          meta:
+            priority: 3
+            buff: Crit Rate
+            buffCondition: Hit Count > 150
+            buffValue: 20
+        - desc: Crit Rate +30% when Hit Count is over 300
+          all: true
+          meta:
+            priority: 3
+            buff: Crit Rate
+            buffCondition: Hit Count > 200
+            buffValue: 30
+    - name: "Sincere Devotion"
+      effects: 
+        - desc: Crit Damage +10% when Hit Count is over 100
+          all: true
+          meta:
+            priority: 3
+            buff: Crit Damage
+            buffCondition: Hit Count > 100
+            buffValue: 10
+        - desc: Crit Damage +20% when Hit Count is over 150
+          all: true
+          meta:
+            priority: 3
+            buff: Crit Damage
+            buffCondition: Hit Count > 150
+            buffValue: 20
+        - desc: Crit Damage +30% when Hit Count is over 300
+          all: true
+          meta:
+            priority: 3
+            buff: Crit Damage
+            buffCondition: Hit Count > 200
+            buffValue: 30
+    - name: "Proper Princess"
+      effects: 
+        - desc: ATK +30% during Charge Assault
+          meta:
+            priority: 3
+            buff: ATK
+            buffCondition: Charge Assault
+            buffValue: 30
+        - desc: Hit counter +3s
+          all: true
+        - desc: Single Target damage +20%
+          all: true
+          meta:
+            priority: 1
+            buff: Single Target Damage
+            buffValue: 20
+    - name: "Secret Dream"
+      effects: 
+        - desc: No Flinching when taking Damage < 10% of Max HP
+        - desc: AP Cost -10%
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 10
+
+  skills:
+    - name: "Sylvan Shot (Bloom)"
+      picture: Sylvan_Shot
+      power: ATK x 200%
+      ap: 20
+      maxHits: 8
+    - name: "Flying Guillotine (Bloom)"
+      picture: Guillotine
+      power: ATK x 290%
+      ap: 26
+      maxHits: 5
+    - name: "Dancing Sword (Bloom)"
+      picture: Dancing_Sword
+      power: ATK x 460%
+      ap: 35
+      maxHits: 7
+    - name: "Flower Wheel (Bloom)"
+      picture: Flower_Wheel
+      power: ATK x 340%
+      ap: 28
+      maxHits: 12
+      
+  rush:
+    name: "Flower Rotation Hanaichige"
+    picture: Pirouette_of_the_First_Spring_Bridal_Nel
+    effects: 
+      - desc: ATK Damage +40%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: ATK Damage
+          buffValue: 40
+    power: ATK x 4000%
+    maxHits: 6
+    
+  notes: >
+      _When I originally looked at Bridal Nel I thought she wasn't so bad, apart from her splash art, god it's ugly.
+      Then I happened to look at Xprecis and realised they shared
+      a lot of similar talents but Bridal Nel's is just twice the work. However crit damage buffers are rare and she won't drop hit
+      count unless you actually try to so you can rest easy knowing you can get to 200. So it's not an utter write off and the two
+      characters play different roles. Her AP reduction is a nice perk, though her anti-flinch seems pretty meidocre given it's low 
+      percent and her small HP pool. She has a nice 30% ATK buff on CA but that comes with risk. Her biggest bonus is her post rush.
+      The 40% ATK damage buff to the party is very good by GL standards and since we don't really run INT users outside of sometimes
+      seeing healers will always be good. Plus the single target damage buff means she gives a good variety for pubbing._
+      
+      _However Bridal Nel just isn't that amazing, she's just good. She will also be outclassed by the first decent crit buffer we
+      get that isn't a healer. Her damage output is bad, her single target damage is matched or beaten by almost every defender you
+      commonly see. There just doesn't seem to be a good reason to run Nel outside of getting a big ATK damage buff post rush in GL._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - +3 second hit count timer means you have to actually try to drop the count.
+
+      - Buffs both crit rate and crit damage.
+
+      - Meaty ATK damage buff post rush.
+      
+      
+      **Cons**
+      
+      - Weak personal damage.
+
+      - Lack of defensive utility for the party.
+      
+      - Near pointless anti-flinch and Single Target damage buffs.
+      
+      
+      **Rotation**
+
+      *Normal > CA Flying Guillotine (Bloom) > CA Sylvan Shot (Bloom) > CA Flying Guillotine (Bloom) > Spam Till Out of AP 
+      (General Damage)*
+      
+      *Normal > CA Sylvan Shot (Bloom) > CA Flying Guillotine (Bloom) > CA Sylvan Shot (Bloom) > Spam Till Out of AP 
+      (Hit Count)*
