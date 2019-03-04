@@ -2933,10 +2933,8 @@
   talents:
     - name: "Expel's Invention Maiden"
       effects: 
-        - desc: hit count timer +3 seconds
+        - desc: Hit count timer +3 seconds
           all: true
-          meta:
-            priority: 1
       
     - name: "Mujin Kun, Charge!"
       effects: 
@@ -2949,7 +2947,7 @@
           all: true
           meta:
             priority: 1
-            buff: Critical Chance
+            buff: Crit Rate
             buffValue: 30
     
     - name: "Scholarly Aspirations inherited from Father"
