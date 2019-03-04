@@ -2913,3 +2913,96 @@
     power: ATK x 3500%
     maxHits: 12
       
+ name: Precis
+  cat: jp 
+  rating: 4
+ picture: precisf.neumann	
+  weapon: arms
+  ace: true
+  limited: false
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 2573
+    int: 1537
+    def: 1969
+    hit: 1148
+    grd: 833
+
+  talents:
+    - name: "Expel's Invention Maiden"
+      effects: 
+        - desc: hit count timer +3 seconds
+          all: true
+          meta:
+            priority: 1
+      
+    - name: "Mujin Kun, Charge!"
+      effects: 
+        -ATK +25% when over 100 hit count
+          all: false
+        
+    - name: "Overaction"
+      effects: 
+        - desc: Critical Chance +30% when close range
+          all: true
+          meta:
+            priority: 1
+            buff: Critical Chance
+            buffValue: 30
+    
+    - name: "Scholarly Aspirations inherited from Father"
+      effects: 
+        - desc: Reduce AP Consumption by 40% on Skill Chain 3 and above
+
+  skills:
+    - name: "Hammer Slammer"
+      picture: Hammer_Slammer
+      power: ATK x 340%
+      ap: 22
+      maxHits: 6
+      highlight: true
+    - name: "Rocket Punch"
+      picture: Rocket_Punch
+      power: ATK x 290%
+      ap: 18
+      maxHits: 1
+      highlight: true
+    - name: "Jump 'n' Thump"
+      picture: Jump_n_Thump
+      power: ATK x 430%
+      ap: 32
+      maxHits: 1
+    - name: "Force Field"
+      picture: Force_Field
+      power: ATK x 360%
+      ap: 29
+      maxHits: 10
+      highlight: true
+
+  rush:
+    name: "Bloody Mary"
+    picture: Bloody_Mary
+    effects: 
+      - desc: Recover 15% of Max HP every 5 seconds 
+        all: true
+        duration: 20
+      
+    power: ATK x 4500%
+    maxHits: 16
+    
+  notes: >
+    
+            
+      **TL DR**
+      
+      
+      **Summary**
+      
+      Outdated unit, selfish talents without the damage to back it up.
+      
+      
+      **Rotation**
+      
+      Normal > Rocket Punch > Hammer Slammer > Jump'n'Thump*3 (Replace Hammer Slammer with Force Field if 104 AP or higher)
