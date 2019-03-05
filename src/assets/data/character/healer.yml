@@ -161,7 +161,7 @@
       
 - name: Miki Sauvester
   cat: gl
-  rating: 3.5
+  rating: 3
   picture: mikisauvester
   weapon: staff
   limited: false
@@ -779,7 +779,7 @@
       
       - Can revive party members by rushing
       
-      - Powerful post rush self buff that gives insane healing and damge
+      - Powerful post rush self buff that gives insane healing and damage
       
       - Consistent damage
       
@@ -1591,3 +1591,150 @@
       - Normal > Gluttony Bog > Earth Glaive Infatuation > Gluttony Bog > Gluttony Bog (Damage rotation 104+ AP)
       
       - Normal > Gluttony Bog > Faerie Light > Gluttony Bog  (Rush Gain rotation)
+      
+- name: Evelysse
+  cat: gl
+  rating: 7
+  picture: evelysse
+  weapon: staff
+  ace: true
+  limited: false
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 14007
+    atk: 1747
+    int: 2520
+    def: 1675
+    hit: 1071
+    grd: 1141
+
+  talents:
+    - name: "Spark of Inspiration II"
+      effects: 
+        - desc: +20% INT
+          all: true
+          meta:
+            priority: 1
+            buff: INT
+            buffValue: 20
+    - name: "A Girl of Many Talents II"
+      effects: 
+        - desc: +30% Rush DMG
+          all: true
+          meta:
+            priority: 1
+            buff: Rush Damage
+            buffValue: 30
+    - name: "Blessings of the Stars II"
+      effects: 
+        - desc: RCV 3% of Max HP / 3s
+        - desc: -40% to Rush Gauge
+    - name: "Cryptic Symbology Arts"
+      effects: 
+        - desc: -25% AP Cost
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 25
+        - desc: -40% Cast Time
+          meta:
+            priority: 1
+            buff: Cast Time Reduction
+            buffValue: 40
+    - name: "Noble Souls"
+      effects: 
+        - desc: No flinching when casting Symbology
+    - name: "Fearless Feeling"
+      effects: 
+        - desc: HP +15%
+          meta:
+            priority: 4
+            buff: HP
+            buffValue: 15
+        - desc: DEF +10%
+          meta:
+            priority: 4
+            buff: DEF
+            buffValue: 10
+
+  skills:
+    - name: "Radiant Lancer"
+      picture: Radiant_Lancer
+      element: Light
+      power: INT x 330%
+      ap: 27
+      maxHits: 8
+    - name: "Conjure Comet"
+      picture: Conjure_Comet
+      element: Light
+      power: INT x 400%
+      ap: 30
+      maxHits: 5
+    - name: "Sunflare"
+      picture: Sunflare
+      element: Light
+      power: INT x 630%
+      ap: 42
+      maxHits: 6
+    - name: "Faerie Light"
+      picture: Faerie_Light
+      power: INT x 250%
+      ap: 50
+      notes: Party Heal
+      maxHits: 1
+      
+  rush:
+    name: "Celestial Calling"
+    picture: Celestial_Calling_Eve
+    element: Light
+    effects: 
+      - desc: Revives All Party Members at 1 HP
+        all: true
+        duration: 20
+      - desc: +100% INT
+        duration: 20
+        meta:
+          priority: 4
+          buff: INT
+          buffValue: 100
+    power: INT x 4000%
+    maxHits: 10
+    
+  notes: >
+      _Evelysse gets to be the first awakened healer and she's still kind of meh. She is a significant improvement over her old self
+      this is due to to faster rush and shorter cast times. Her healing is now 10AP less as well meaning she can weave it more
+      easily and use it sooner. She also can't have her casts interupted meaning emergency heals go off more and she's had some bulk 
+      added. Her attacks and rush have also recieved damage boosts and she wasn't the weakest of healers especially post rush to begin
+      with._
+      
+      _The main problem with awakened Eve is, she's better but still has the same problems. Her rush gain is slow, she has no guts to
+      survive clutch heal moments, her casting is still slow and the added build isn't really that big of a deal. Her lack of a fifth
+      skill is odd and really an extra skill could have gone a long way in giving Eve more utility but she still will continue to
+      have to pay for her ability to res._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Can revive party members by rushing
+      
+      - Powerful post rush self buff that gives insane healing and damage
+      
+      - Consistent damage
+      
+      - Buffs INT and rush damage
+      
+      - Hard hitting rush compared to most healers
+      
+      
+      **Cons**
+      
+      - Poor rush gain
+      
+      - Lack of powerful buffs for the party
+      
+      - Lack of a good talent that helps survivability
