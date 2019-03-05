@@ -1594,13 +1594,13 @@
       
 - name: Evelysse
   cat: gl
-  rating: 5
+  rating: 7
   picture: evelysse
   weapon: staff
   ace: true
   limited: false
   awakened: true
-  star: 7
+  star: 5
 
   stats:
     hp: 14007
