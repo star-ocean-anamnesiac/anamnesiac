@@ -117,7 +117,7 @@
       targets: Any
       m2: true
       desc: >
-	Spins straight upward and shoots icicles down onto every party member. These icicles will explode into proper Deep Freeze attacks, flinching and all. Tell is difficult to see due to camera.
+        Spins straight upward and shoots icicles down onto every party member. These icicles will explode into proper Deep Freeze attacks, flinching and all. Tell is difficult to see due to camera.
 
     - name: Deadshot
       targets: Long
