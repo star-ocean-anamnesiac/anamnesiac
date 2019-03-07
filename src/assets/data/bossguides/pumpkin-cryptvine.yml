@@ -1,0 +1,131 @@
+- name: "Pumpkin Cryptvine"
+  image: pumpkin_cryptvine
+  cat: gl
+  race: Plant
+  
+  isActive: false
+
+  enrage:
+    m1: "7:00"
+    m2: "7:00"
+    m3: "4:00"		
+    
+  statusInflictions:
+    - Poison
+
+  weaknesses:
+    - element: Light
+      percentWeakness: 25
+
+    - status: Frozen
+      vuln: Low
+    - status: Paralysis		
+      vuln: Low
+
+  recommendations:
+    - plain: Light Damage
+    - plain: Low Animation Lock
+    - plain: Ease of Stun
+    
+  desc: >
+    Happy Halloween, folks! Let's celebrate with a reskin of Frost Tree.
+    
+    Oh, but this is more than a simple reskin. Pumpkin Tree is a whole different ballgame from its ice-flavored brother. For one, anti-flinch isn't nearly as important due to a focus on projectiles and burst damage rather than spawning deep freezes underneath you. This is a fight that favors melee, so characters like 2B (this is THE easiest access to light damage), Devil Clair, Werewolf Millie and Claude are highly recommended. Roddick is the star of the show, with not only easy access to Light, but also the ability to shut the tree down with fast stuns. If you bring a defender, Dias and Viktor have rotations that allow them to keep on top of the tree.
+    
+    On the shooter side, Maria is always welcome for her crit support. Reimi and Vampire Viktor may find utility as a sub for healers, especially if your party members struggle with poison.
+    
+    Several of Pumpkin Tree's attacks are projectiles that hit at mid range or longer. This makes melee safe, for the most part, as it'll use them even when you're at close range (go figure). The main attacks melee will have to look out for are Poison Powder (get away from the tree) and Rush (if you're the red target, aim it away from the group). During either of these attacks it is best for the melee stack to scatter and let them play out. Don't let Poltergeist catch you off guard--chase the tree down to avoid the projectiles!
+    
+    Ranged are safest as far from the tree as possible, but even that may not help against Poltergeist, Ectoplasm and Banana Split. Trick AND Treat and Night Terror cover a large area and reach all the way across the stage, so be mindful of the line markers. Rush can also be a problem because it's dependent entirely on the target's position. The tree is not a predictable opponent, so keep on your toes.
+    
+    Dark Night Party Mode is used when the timer runs down. Pumpkin Tree's enrage mode is just the usual AI that does hundreds of thousands of damage. but with a nasty surprise for long range. Thankfully, dodging Ectoplasm is as simple as moving in on the stupid thing. So keep dodging and dps it to victory!
+    
+  moves:
+    - name: Rush Pome Bomb (EN)
+      targets: Mid
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Launches fireballs from overhead that rain in a spread formation at long range.
+        
+    - name: Ectoplasm
+      targets: Any
+      issymbology: true
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Fires an array of blue wisp-like projectiles similar to Soul Release. These will lazily home in on the target while spreading out and do high damage. They are more easily avoided in melee range.
+        
+    - name: Banana Split (EN)
+      targets: Any
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Will toss a bombs that explode in a parallel line formation across the stage starting at mid-range.
+        
+    - name: Poltergeist (EN)
+      targets: Any
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Will perform two toss animations and then dart away from the target, lobbing blue wisplike projectiles that rain at mid and long range and trail along the ground.
+        
+    - name: Poison Powder
+      targets: Any
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Will begin rotating its upper branches, raining purple powder around it. The hitbox is delayed and only begins with the ground effect. Inflicts poison.
+        
+    - name: Rush
+      targets: Any
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Will perform two toss animations, and then charge towards his target at a diagonal angle. After the first charge, it will turn around and charge its target directly, this time crossing the stage. Very fast. High damage.
+        
+    - name: Slow as Molasses
+      targets: Any
+      isSymbology: true
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Will perform two toss animations, and then charge towards his target at a diagonal angle. After the first charge, it will turn around and charge its target directly, this time crossing the stage. Very fast. High damage.
+        
+    - name: Witching Hour
+      targets: Any
+      m2: true
+      m3: true
+      desc: >
+        Flails its vines and gathers purple energy. This enables Trick AND Treat and Night Terror (M2+)
+        
+    - name: Trick and Treat
+      targets: Any
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        It buries itself in the ground so only the pumpkin is visible. It will then dodge away from the target twice, then move towards the target and shudder for one second, before bursting out the ground and creating three massive line markers. After one second, purple wind blades will fire down the line markers in this order: Pumpkin Tree's left, its right, then its center. Under Dark Night Party Mode, this becomes MUCH faster.
+        
+    - name: Night Terror
+      targets: Any
+      m2: true
+      m3: true
+      desc: >
+        This begins like a much faster Trick and Trick. It buries itself in the ground and dodges away from the target thrice, shudders and then bursts out of the ground. The line markers will appear in one of two formations, twice in a row. The first formation will be a delta surrounding the tree. The second will be an asterisk crossing the center of the stage. Both formations will fire wind blades along the line markers quickly.
+        
+    - name: All Hallows Eve
+      targets: Any
+      isEnrage: true
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Flails its vines and gathers red energy. This is a clear signal that Pumpkin Tree has enraged.
