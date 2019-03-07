@@ -2,11 +2,11 @@
   image: millioneye
   cat: gl
   race: Demon
-	
+
   enrage:
     m1: "7:00"
     m2: "7:00"
-	    	    
+    	    
   statusInflictions:
     - Silence
 
@@ -60,58 +60,58 @@
       m1: true
       m2: true
       desc: >
-	Bubbles will appear on top of you and begin popping. Dodge immediately or be flinch-locked. May inflict silence.
+        Bubbles will appear on top of you and begin popping. Dodge immediately or be flinch-locked. May inflict silence.
 
     - name: Ancient Rock
       targets: Close
       m1: true
       m2: true
       desc: >
-	Spins away from the target and leaves multiple Crush spells on its starting location. This can and will kill anyone underneath.
+        Spins away from the target and leaves multiple Crush spells on its starting location. This can and will kill anyone underneath.
 
     - name: Ready to Rumble
       targets: Close
       m1: true
       m2: true
       desc: >
-	Plants itself onto the ground and spins, doing constant flinch damage.
+        Plants itself onto the ground and spins, doing constant flinch damage.
 
     - name: Ice Patch
       targets: Any
-issymbology: true
+      isSymbology: true
       m1: true
       m2: true
       desc: >
-	Casts a symbol and move towards its target. The spell creates grey fields that slow and nullify AP gain for all in them. In Misery 2 and up, they'll rotate through three possible formations before disappearing.
+        Casts a symbol and move towards its target. The spell creates grey fields that slow and nullify AP gain for all in them. In Misery 2 and up, they'll rotate through three possible formations before disappearing.
 
     - name: Acid Floor
       targets: Any
-issymbology: true
+      isSymbology: true
       m1: true
       m2: true
       desc: >
-	Same as Ice Patch but generates green fields instead. These fields will drain your rush. Get out of them immediately!
+        Same as Ice Patch but generates green fields instead. These fields will drain your rush. Get out of them immediately!
 
     - name: Bloodtear
       targets: Long
       m1: true
       m2: true
       desc: >
-	Points itself skyward and blinks. Then it lobs several purple projectiles toward his target that each generate a purple electricity field when they land. Large damage. Tell is difficult to see due to camera.
+        Points itself skyward and blinks. Then it lobs several purple projectiles toward his target that each generate a purple electricity field when they land. Large damage. Tell is difficult to see due to camera.
 
     - name: Dry Eye
       targets: Mid
       m1: true
       m2: true
       desc: >
-	Charges up with blue energy and then channel a three-pronged laser that hits at mid-range. Rising attacks like Resounding Wind and Summer Smoothie can take damage from these beams if used from below the boss.
+        Charges up with blue energy and then channel a three-pronged laser that hits at mid-range. Rising attacks like Resounding Wind and Summer Smoothie can take damage from these beams if used from below the boss.
 
     - name: Eye of the Beholder
       targets: Any
       m1: true
       m2: true
       desc: >
-	Moves to the end of the stage opposite its target while charging up blue energy and then charges forward with a Dry Eye laser.
+        Moves to the end of the stage opposite its target while charging up blue energy and then charges forward with a Dry Eye laser.
 
     - name: Paralyzing Waltz
       targets: Any
@@ -123,7 +123,7 @@ issymbology: true
       targets: Long
       m2: true
       desc: >
-	Floats upward and blinks, then shoots three waves of fireballs that home onto the target from above. Tell is difficult to see due to camera.
+        Floats upward and blinks, then shoots three waves of fireballs that home onto the target from above. Tell is difficult to see due to camera.
      
     - name: Grand Finale
       targets: Any
@@ -131,5 +131,5 @@ issymbology: true
       m2: true
       isEnrage: true
       desc: >
-	Icicles are shot, similar to Freezing Waltz, in an X formation at opposite corners of the map, These spawn Deep Freezes. Then it shoots another set of icicles falls down in a + formation (in the gaps). When the Deep Freezes explode, they will each strike a wide area around them for fatal damage.
+        Icicles are shot, similar to Freezing Waltz, in an X formation at opposite corners of the map, These spawn Deep Freezes. Then it shoots another set of icicles falls down in a + formation (in the gaps). When the Deep Freezes explode, they will each strike a wide area around them for fatal damage.
 
