@@ -2,6 +2,8 @@
   image: millioneye
   cat: gl
   race: Demon
+  
+  isActive: false
 
   enrage:
     m1: "7:00"
