@@ -324,7 +324,7 @@
       ap: 35
       maxHits: 6
     - name: "Empyrean Slash"
-      picture: ####### Needs update #######
+      picture: Twin_Zapper
       power: ATK x 300%
       ap: 20
       maxHits: 4
