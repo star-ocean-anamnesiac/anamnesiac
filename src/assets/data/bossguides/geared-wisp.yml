@@ -124,6 +124,7 @@
       targets: Any
       isSymbology: true
       isEnrage: true
+      m1: true
       m2: true
       m3: true
       desc: >
