@@ -3,8 +3,10 @@
   image: exiled_knight
   cat: gl
   race: Beast
+  
+  isActive: false
 
-   enrage:
+  enrage:
     m1: "7:00"
     m2: "7:00"
     m3: "3:30"
