@@ -1,0 +1,45 @@
+- name: "Cave Guardian"
+  image: cave_guardian
+  cat: gl
+  race: Machine
+
+  isActive: false
+
+  enrage:
+    m1: "7:00"
+
+  weaknesses:
+    - element: Fire
+      percentWeakness: Data Required
+    - element: Light
+      percentWeakness: Data Required
+
+  recommendations:
+    - plain: Damage
+    - plain: Anti-flinch 
+    - plain: Bodies
+    
+  desc: >
+    This feels like it's barely worth a guide, but it's a Misery boss and so here is a guide
+    
+    Anyone, even Official Lymle can toast this stupid thing. Official Lymle is probably one of the slowest ways to do it, but use your judgment. It's not like she's going to hold you back on a boss this asinine.
+    
+    So he starts with these two adds, but of course has a docile phase. This docile phase lingers for entirely too long, or until he hits about 90%, and he just stands there through the whole thing. Once he starts moving, he will scuttle over to his current target and use either Tail Smash or Broad Laser.
+    
+    Of the two, Tail Smash does more damage and I wouldn't underestimate that. If you're running with a bunch of melees and no healer, the damage will add up and stand a half-decent chance of killing people. Broad Laser is rather unthreatening by comparison and gives you a healthy timeframe to dodge before the damage box becomes active. The main threat there is if you lack anti-flinch, causing you to take the full brunt of the damage.
+    
+    He's extremely vulnerable to kiting even by units poorly suited to it. He melts super fast, usually dying in one rush combo. Perhaps later, if there's a Misery 2 or 3, it'll be worth going into more detail.
+  
+  moves:
+    - name: Tail Smash
+      targets: Close
+      m1: true
+      desc: >
+        Reels back and then does a spin attack like it's a Pokemon. High damage.
+        
+    - name: Broad Laser
+      targets: Close
+      m1: true
+      desc: >
+        Fires a green laser spray that does repeated tick damage.
+    
