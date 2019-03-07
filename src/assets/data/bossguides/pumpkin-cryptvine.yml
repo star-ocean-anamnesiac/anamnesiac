@@ -2,6 +2,8 @@
   image: pumpkin_cryptvine
   cat: gl
   race: Plant
+  
+  isActive: false
 
   enrage:
     m1: "7:00"
