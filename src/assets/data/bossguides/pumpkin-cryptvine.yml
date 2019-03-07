@@ -122,7 +122,6 @@
     - name: All Hallows Eve
       targets: Any
       isEnrage: true
-
       m1: true
       m2: true
       m3: true
