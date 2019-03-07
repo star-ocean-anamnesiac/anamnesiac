@@ -239,7 +239,145 @@
       
       *Normal > Double Slash > Air Slash > Double Slash > Spam it till out of AP. (General combo.)*
       
+- name: Fidel (Awakened)
+  cat: gl
+  rating: 6
+  picture: fidel
+  weapon: ohs
+  ace: true
+  limited: false
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 16630
+    atk: 3104
+    int: 1619
+    def: 2265
+    hit: 1177
+    grd: 852
+
+  talents:
+    - name: "Fortitude & Vigor II"
+      effects: 
+        - desc: ATK +50%
+          all: true
+          meta:
+            priority: 2
+            buff: ATK
+            buffValue: 50
+    - name: "Father's Teachings"
+      effects: 
+        - desc: AP cost -20%
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 20
+    - name: "Steadfast Courage"
+      effects:
+        - desc: Enables evasion during air attacks
+    - name: "Heir to the Camuze Style"
+      effects:
+        - desc: Single Target Damage Dealt +10% when skill chain is 3+
+          meta:
+            priority: 3
+            buff: Single Target Damage
+            buffCondition: Skill Chain 3+
+            buffValue: 10
+    - name: "Defender of the Weak"
+      effects:
+        - desc: ATK +25%
+          meta:
+            priority: 4
+            buff: ATK
+            buffValue: 25  
+        - desc: DEF +10%
+           meta:
+            priority: 4
+            buff: DEF
+            buffValue: 10  
+   - name: "Inherited Will"
+      effects:
+        - desc: Nullifies HP Reduction Field
+        
+  skills:
+    - name: "Double Slash"
+      picture: Double_Slash_I
+      power: ATK x 220%
+      ap: 20
+      maxHits: 2
+      highlight: true
+    - name: "Air Slash"
+      picture: Air_Slash_I
+      power: ATK x 220%
+      ap: 20
+      maxHits: 2
+      highlight: true
+    - name: "Cyclone Blade"
+      picture: Cyclone_Blade
+      power: ATK x 340%
+      ap: 29
+      maxHits: 5
+    - name: "Air Raid"
+      picture: Air_Raid
+      power: ATK x 720%
+      ap: 35
+      maxHits: 6
+    - name: "Empyrean Slash"
+      picture: ####### Needs update #######
+      power: ATK x 300%
+      ap: 20
+      maxHits: 4
+
+  rush:
+    name: "Ethereal Blast"
+    picture: Ethereal_Blast_Fidel
+    effects: 
+      - desc: AP cost -60%
+        duration: 20
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 60
+    power: ATK x 4000%
+    maxHits: 12
     
+  notes: > ####### Needs update for awakening #######
+      _Fidel, the starter character and sometimes face of the app icon. Fidel has suffered as time has gone on. He has the highest
+      unconditional party wide buff in the game at 40%. Though both Lasswell and 2B can surpass it with the right conditions and
+      party composition. His AP reduction talent and really potent AP reduection post rush, lets him really output a lot of damage
+      by chaining attacks._
+      
+      
+      _For downsides well all he is bringing to the party is an ATK buff, characters like 2B and Halloween Millie bring similar or
+      suprior levels of buffing with AP recovery on top. Even the freebie Ace of the FFBE collab Lasswell brings a slight bonus
+      to melee characters in movement field nullification. His damage is also not stellar, he has quite a low attack stat compared
+      to other attacks and his party wide buff and ability to spam attacks more don't make up for it compared to other attackers._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Strong ATK based buff for the party.
+      
+      - AP reduction and even more post rush allows skill spamming.
+      
+      - Can be used also be played at range with Air Slash > Empyrean Slash spam
+      
+      - Air Raid has high rush gain. This makes <20 second rushes very possible after an initial rush
+      
+      **Cons**
+      
+      - Doesn't bring any utility beyond his ATK buff.
+      
+      - All his awakening talents only effect himself
+      
+      **Rotation**
+      
+      *Normal > Double Slash / Air Slash > Empyrean Slash > Air Raid > Spam it till out of AP. (General Combo)
+
 - name: Cliff Fittir
   cat: gl
   rating: 6
