@@ -4,12 +4,10 @@
   cat: gl
   race: Beast
 
-  isActive: true
-
-  enrage:
+   enrage:
     m1: "7:00"
     m2: "7:00"
-    m3: "4:00"
+    m3: "3:30"
 
   weaknesses:
     - element: Earth
