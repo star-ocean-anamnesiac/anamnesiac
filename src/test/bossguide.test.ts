@@ -33,10 +33,12 @@ test('All boss guides have valid information', t => {
 
         if(weakness.element) {
           t.truthy(weakness.percentWeakness, 'weakness.percentWeakness must be set if element is set' + parenName);
+          t.true(fs.existsSync(`src/assets/icons/element/el-${weakness.element.toLowerCase()}.png`), 'guide must reference a valid element' + parenName);
         }
 
         if(weakness.status) {
           t.truthy(weakness.vuln, 'weakness.vuln must be set if status is set' + parenName);
+          t.true(fs.existsSync(`src/assets/icons/debuff/debuff-${weakness.status.toLowerCase()}.png`), 'guide must reference a valid status' + parenName);
         }
       });
 
