@@ -20,6 +20,8 @@ test('All boss guides have valid information', t => {
       t.true(fs.existsSync(`src/assets/bosses/boss_${guide.image}.png`), 'guide must reference a valid image' + parenName);
       t.true(guide.cat === 'jp' || guide.cat === 'gl', 'cat must be jp or gl' + parenName);
       t.truthy(guide.race, 'race must be set' + parenName);
+      
+      t.true(guide.isActive === false || guide.isActive === true, 'guide.isActive must be set to true or false' + parenName);
 
       t.truthy(guide.enrage, 'enrage must be set' + parenName);
       t.truthy(guide.enrage.m1, 'enrage.m1 must be set' + parenName);
