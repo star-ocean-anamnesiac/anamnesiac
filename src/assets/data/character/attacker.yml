@@ -241,7 +241,7 @@
       
 - name: Fidel (Awakened)
   cat: gl
-  rating: 6
+  rating: 8
   picture: fidel
   weapon: ohs
   ace: true
@@ -296,7 +296,7 @@
             priority: 4
             buff: DEF
             buffValue: 10  
-   - name: "Inherited Will"
+    - name: "Inherited Will"
       effects:
         - desc: Nullifies HP Reduction Field
         
