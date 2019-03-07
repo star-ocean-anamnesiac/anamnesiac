@@ -2,6 +2,8 @@
   image: cave_guardian
   cat: gl
   race: Machine
+  
+  isActive: false
 
   enrage:
     m1: "7:00"
