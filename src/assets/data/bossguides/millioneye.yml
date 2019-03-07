@@ -3,7 +3,6 @@
   cat: gl
   race: Demon
 	
-
   enrage:
     m1: "7:00"
     m2: "7:00"
@@ -15,7 +14,6 @@
     - element: Lightning
       percentWeakness: 20
 	
-
     - status: Paralysis
       vuln: Low
     - status: Poison
@@ -23,7 +21,6 @@
     - status: Curse
       vuln: Low
 	
-
   recommendations:
     - plain: Lightning Damage
     - plain: Anti-Flinch
@@ -55,7 +52,7 @@
       m1: true
       m2: true
       desc: >
-	Hovers in place and sparkles appear in front of it, causing damage. This strange attack is used rarely in M1 and possibly not at all in M2+.
+        Hovers in place and sparkles appear in front of it, causing damage. This strange attack is used rarely in M1 and possibly not at all in M2+.
 
     - name: Silent Reaping Spark
       targets: Any
