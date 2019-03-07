@@ -292,7 +292,7 @@
             buff: ATK
             buffValue: 25  
         - desc: DEF +10%
-           meta:
+          meta:
             priority: 4
             buff: DEF
             buffValue: 10  
