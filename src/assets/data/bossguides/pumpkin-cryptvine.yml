@@ -17,7 +17,7 @@
     - element: Light
       percentWeakness: 25
 
-    - status: Frozen
+    - status: Freeze
       vuln: Low
     - status: Paralysis		
       vuln: Low
