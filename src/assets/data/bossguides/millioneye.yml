@@ -1,0 +1,137 @@
+- name: "Millioneye"
+  image: millioneye
+  cat: gl
+  race: Demon
+  
+  isActive: false
+
+  enrage:
+    m1: "7:00"
+    m2: "7:00"
+    	    
+  statusInflictions:
+    - Silence
+
+  weaknesses:
+    - element: Lightning
+      percentWeakness: 20
+	
+    - status: Paralysis
+      vuln: Low
+    - status: Poison
+      vuln: Low
+    - status: Curse
+      vuln: Low
+	
+  recommendations:
+    - plain: Lightning Damage
+    - plain: Anti-Flinch
+    - plain: Low Animation Lock
+    - plain: Ease of Stun
+    - plain: Rush Field Nullifcation
+    - plain: Slow Field Nullification
+	    
+  desc: >
+    As you can see, there's a lot of dangerous magic and magic-looking attacks going on here, and many of them will flinch-lock you. That makes both anti-flinch and stunning very important, so it's highly recommended to bring Roddick and Viktor. Summer Myuria is also a strong pick, but is hamstrung a bit by Thunderfire Slash's backstep--make sure to maintain close range so you don't trigger Millioneye's ranged attacks!
+
+    Slower casters like Myuria may have a rough time with the constant spells and fields, so Maria, Reimi (note: 40% INT damage reduction!) and Summer Miki are preferred picks for ranged damage. Summer Reimi may be a valuable accompaniment for her ATK buff and nullification of Rush Drain Fields, though she may struggle with her own slow rush build and Deimont's constant activity. If you must bring a healer, Summer Sophia can suffice with her fast casting times and elemental weakness (which in turn helps stun), and she also nullifies the Slow Fields.
+
+    Millioneye begins the fight with an immediate, random attack. 90% of the time, this is going to be Reaping Slicer on the host, so said host is best off hanging away from their allies until Millioneye's casting animation (he will wave a tentacle aside), to keep from endangering them.
+
+    Several of Pumpkin Tree's attacks are projectiles that hit at mid range or longer. This makes melee safe, for the most part, as it'll use them even when you're at close range (go figure). The main attacks melee will have to look out for are Poison Powder (get away from the tree) and Rush (if you're the red target, aim it away from the group). During either of these attacks it is best for the melee stack to scatter and let them play out. Don't let Poltergeist catch you off guard--chase the tree down to avoid the projectiles!
+
+    While anti-flinch works wonders against him (when does it not?), all the defenders in the world can't save you if you're caught under Ancient Rock. Thankfully he only uses this on melee targets, which makes his "floating away" tell easy to spot. Ranged aggro have to contend instead with Bloodtear, which is no less deadly and its tell is obscured by a too-low camera angle.
+
+    On Misery 2 and up, Paralyzing Waltz is the biggest threat. This is due to the camera obscuring its tell, how fast the icicles come out, and the generally high damage that they do (and that's before they become Deep Freezes!). Be ready to dodge if you see him float in any upward direction--paranoia is better than death. Ranged will also have Deadshot to contend with, so it becomes ideal to utilize a melee defender rather than kite with shooters.
+
+    None of this would be too difficult if it weren't for the fields. On Misery 1 their formations are out of the way, but Misery 2 and up have them litter the entire stage and rotate between three patterns. They linger for entirely too long and Millioneye tends to be hyperactive during them. If you find your team struggling with the fields (or flinching under Reaping Spark/Ancient Rock), opt for safety and Rush to clear the stage.
+
+    Grand Finale is no joke. If you run out the enrage timer, he will spam it. The pattern for the deep freezes is an X formation then a + formation shortly after, though it may be hard to spot based on stage position. There ARE safe spots you can stand in at the edge of the map between freezes, but it is probably safer to time dodges against the edge when the explosions happen.
+	    
+  moves:
+    - name: Attack
+      targets: Close
+      m1: true
+      m2: true
+      desc: >
+        Hovers in place and sparkles appear in front of it, causing damage. This strange attack is used rarely in M1 and possibly not at all in M2+.
+
+    - name: Silent Reaping Spark
+      targets: Any
+      issymbology: true
+      m1: true
+      m2: true
+      desc: >
+        Bubbles will appear on top of you and begin popping. Dodge immediately or be flinch-locked. May inflict silence.
+
+    - name: Ancient Rock
+      targets: Close
+      m1: true
+      m2: true
+      desc: >
+        Spins away from the target and leaves multiple Crush spells on its starting location. This can and will kill anyone underneath.
+
+    - name: Ready to Rumble
+      targets: Close
+      m1: true
+      m2: true
+      desc: >
+        Plants itself onto the ground and spins, doing constant flinch damage.
+
+    - name: Ice Patch
+      targets: Any
+      isSymbology: true
+      m1: true
+      m2: true
+      desc: >
+        Casts a symbol and move towards its target. The spell creates grey fields that slow and nullify AP gain for all in them. In Misery 2 and up, they'll rotate through three possible formations before disappearing.
+
+    - name: Acid Floor
+      targets: Any
+      isSymbology: true
+      m1: true
+      m2: true
+      desc: >
+        Same as Ice Patch but generates green fields instead. These fields will drain your rush. Get out of them immediately!
+
+    - name: Bloodtear
+      targets: Long
+      m1: true
+      m2: true
+      desc: >
+        Points itself skyward and blinks. Then it lobs several purple projectiles toward his target that each generate a purple electricity field when they land. Large damage. Tell is difficult to see due to camera.
+
+    - name: Dry Eye
+      targets: Mid
+      m1: true
+      m2: true
+      desc: >
+        Charges up with blue energy and then channel a three-pronged laser that hits at mid-range. Rising attacks like Resounding Wind and Summer Smoothie can take damage from these beams if used from below the boss.
+
+    - name: Eye of the Beholder
+      targets: Any
+      m1: true
+      m2: true
+      desc: >
+        Moves to the end of the stage opposite its target while charging up blue energy and then charges forward with a Dry Eye laser.
+
+    - name: Paralyzing Waltz
+      targets: Any
+      m2: true
+      desc: >
+        Spins straight upward and shoots icicles down onto every party member. These icicles will explode into proper Deep Freeze attacks, flinching and all. Tell is difficult to see due to camera.
+
+    - name: Deadshot
+      targets: Long
+      m2: true
+      desc: >
+        Floats upward and blinks, then shoots three waves of fireballs that home onto the target from above. Tell is difficult to see due to camera.
+     
+    - name: Grand Finale
+      targets: Any
+      m1: true
+      m2: true
+      isEnrage: true
+      desc: >
+        Icicles are shot, similar to Freezing Waltz, in an X formation at opposite corners of the map, These spawn Deep Freezes. Then it shoots another set of icicles falls down in a + formation (in the gaps). When the Deep Freezes explode, they will each strike a wide area around them for fatal damage.
+
