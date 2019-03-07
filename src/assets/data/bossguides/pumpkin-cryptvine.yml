@@ -16,9 +16,9 @@
       percentWeakness: 25
 
     - status: Frozen
-       vuln: Low
+      vuln: Low
     - status: Paralysis		
-       vuln: Low
+      vuln: Low
 
   recommendations:
     - plain: Light Damage
