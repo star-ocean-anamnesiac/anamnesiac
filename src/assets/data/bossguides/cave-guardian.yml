@@ -8,9 +8,9 @@
 
   weaknesses:
     - element: Fire
-      percentWeakness: Data Required
+      percentWeakness: 0
     - element: Light
-      percentWeakness: Data Required
+      percentWeakness: 0
 
   recommendations:
     - plain: Damage
