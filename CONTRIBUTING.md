@@ -38,6 +38,8 @@ JP and GL data are stored in the same files, but they have one primary differenc
 
 Some skills, talents, and rushes have a `meta` block associated with them. This is the metadata used by the Party Creator to figure out how abilities should stack. These notes are taken from [the JP spreadsheet](https://docs.google.com/spreadsheets/d/1Pt8C20Zcu4yRCAFIJrKwG9I-agkrhpzi6W-DSKOorDM/edit). If you add new skills, talents, or rushes that boost attributes, please add the meta block too!
 
+If you need to know what a particular `meta` `buff` or `buffs` should be, you can see the list [here](https://github.com/seiyria/anamnesiac/blob/master/src/test/validate-meta.ts). Notice that there are no negative percents, nor are there anything that isn't expressed as a percent. 
+
 ### Reviews
 
 Your submissions will be reviewed both automatically and manually. Primarily, manual review is just making sure data is in the right place and that there aren't any spelling errors. The automatic review will make sure you've put in all the data _correctly_. This means that you don't have any weird weapon types, you have the correct data types set for all of the fields you edit, and that, most importantly, it doesn't break the app for other users.
