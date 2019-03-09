@@ -557,9 +557,10 @@
   def: 728
   factors:
     - desc: Hitcount Timer +0.5s
-    - desc: +10% ATK DMG when Hit Count is over 200
+    - desc: +10% ATK DMG when Hit Count is 200 or more
       meta:
         priority: 3
         buff: ATK Damage
         buffValue: 10
+        buffCondition: Hit Count is 200 or more
   obtained: Monarch Zinae (Achievement)
