@@ -1,4 +1,7 @@
 
+const exec = require('child_process').execSync;
+const fs = require('fs');
+
 const packer = require('spritesheet-js');
 const rimraf = require('rimraf');
 
@@ -17,7 +20,7 @@ packer(
 
       // rewrite atlas file
       fs.writeFileSync(
-        'src/assets/character/+char-icons.json',
+        'src/assets/characters/+char-icons.json',
         fs.readFileSync('src/assets/characters/+char-icons.json', 'utf-8').split('.formatted').join('')
       );
 
