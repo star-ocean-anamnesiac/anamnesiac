@@ -2,7 +2,7 @@
 - name: Sophia Esteed (Summer)
   cat: gl
   rating: 8
-  picture: everlastingsummersophiaesteed
+  picture: Everlasting_Summer_Sophia
   weapon: orb
   ace: true
   limited: true
@@ -162,7 +162,7 @@
 - name: Miki Sauvester
   cat: gl
   rating: 3
-  picture: mikisauvester
+  picture: Miki
   weapon: staff
   limited: false
   star: 5
@@ -279,7 +279,7 @@
 - name: Millie Chliette
   cat: gl
   rating: 5.5
-  picture: milliechliette
+  picture: Millie
   weapon: staff
   ace: true
   limited: false
@@ -400,7 +400,7 @@
 - name: Rena Lanford
   cat: gl
   rating: 8
-  picture: renalanford
+  picture: Rena
   weapon: knuckle
   ace: true
   limited: false
@@ -544,7 +544,7 @@
 - name: Nel Zelpher (Oracle)
   cat: gl
   rating: 3
-  picture: priestessnelzelpher
+  picture: Priestess_Nel
   weapon: staff
   limited: true
   star: 5
@@ -666,7 +666,7 @@
 - name: Evelysse
   cat: gl
   rating: 5
-  picture: evelysse
+  picture: Evelysse
   weapon: staff
   ace: true
   limited: false
@@ -810,7 +810,7 @@
 - name: Sarah Jerand
   cat: gl
   rating: 5
-  picture: sarahjerand
+  picture: Sarah
   weapon: staff
   limited: false
   star: 5
@@ -953,7 +953,7 @@
 - name: Precis F. Neumann (Winter)
   cat: gl
   rating: 8
-  picture: christmasholynightprecis
+  picture: Holy_White_Precis
   weapon: staff
   ace: true
   limited: true
@@ -1123,7 +1123,7 @@
 - name: Relia
   cat: gl
   rating: 7
-  picture: relia
+  picture: Relia
   weapon: staff
   ace: true
   limited: false
@@ -1277,7 +1277,7 @@
 - name: Fina
   cat: gl
   rating: 9
-  picture: fina
+  picture: Fina
   weapon: bow
   ace: true
   limited: true
@@ -1418,7 +1418,7 @@
 - name: Welch Vineyard (Valentine)
   cat: gl
   rating: 7
-  picture: valentinevisionarywelchvineyard
+  picture: Dreamful_Welch
   weapon: tome
   ace: true
   limited: true
@@ -1595,7 +1595,7 @@
 - name: Evelysse (Awakened)
   cat: gl
   rating: 7
-  picture: evelysse
+  picture: Evelysse
   weapon: staff
   ace: true
   limited: false

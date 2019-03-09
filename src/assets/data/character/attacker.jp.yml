@@ -2,7 +2,7 @@
 - name: 2B
   cat: jp
   rating: 10
-  picture: 2b
+  picture: 2B
   weapon: ohs
   ace: true
   limited: true
@@ -134,7 +134,7 @@
 - name: Fidel Camuze
   cat: jp
   rating: 6
-  picture: fidel
+  picture: Fidel
   weapon: ohs
   ace: true
   limited: false
@@ -231,7 +231,7 @@
 - name: Cliff Fittir
   cat: jp
   rating: 6
-  picture: clifffittir
+  picture: Cliff
   weapon: knuckle
   ace: true
   limited: false
@@ -332,7 +332,7 @@
 - name: Anne Patriceani
   cat: jp
   rating: 3
-  picture: annepatriceani
+  picture: Anne
   weapon: knuckle
   limited: false
   star: 5
@@ -425,7 +425,7 @@
 - name: Daril Camuze
   cat: jp
   rating: 5
-  picture: darilcamuze
+  picture: Daril
   weapon: ohs
   limited: false
   star: 5
@@ -530,7 +530,7 @@
 - name: Roddick Farrence
   cat: jp
   rating: 8
-  picture: roddickfarrence
+  picture: Ratix
   weapon: ohs
   ace: true
   limited: false
@@ -645,7 +645,7 @@
 - name: Reimi Saionji (Summer)
   cat: jp
   rating: 7
-  picture: everlastingsummerreimisaionji
+  picture: Everlasting_Summer_Reimi
   weapon: ohs
   ace: true
   limited: true
@@ -775,7 +775,7 @@
 - name: Lenneth
   cat: jp
   rating: 6
-  picture: lenneth
+  picture: Lenneth
   weapon: ohs
   ace: true
   limited: true
@@ -885,7 +885,7 @@
 - name: Claude C. Kenny
   cat: jp
   rating: 8
-  picture: claudeckenny
+  picture: Claude
   weapon: ohs
   ace: true
   limited: false
@@ -1005,7 +1005,7 @@
 - name: Phia Melle
   cat: jp
   rating: 6
-  picture: phiamelle
+  picture: Phia
   weapon: dagger
   limited: false
   star: 5
@@ -1112,7 +1112,7 @@
 - name: Albel Nox
   cat: jp
   rating: 6
-  picture: albelnox
+  picture: Albel
   weapon: bns
   ace: true
   limited: false
@@ -1241,7 +1241,7 @@
 - name: Ilia Silvestri
   cat: jp
   rating: 4
-  picture: iliasilvestri
+  picture: Ilia
   weapon: knuckle
   limited: false
   star: 5
@@ -1367,7 +1367,7 @@
 - name: Clair Lasbard (Halloween)
   cat: jp
   rating: 9
-  picture: halloweendemonclairlasbard
+  picture: Devil_Clair
   weapon: dualswords
   ace: true
   limited: true
@@ -1492,7 +1492,7 @@
 - name: Millie Chliette (Halloween)
   cat: jp
   rating: 8
-  picture: halloweenwerewolfmilliechliette
+  picture: Wolf_Millie
   weapon: arm
   ace: true
   limited: true
@@ -1610,7 +1610,7 @@
 - name: Fayt Leingod
   cat: jp
   rating: 7
-  picture: faytleingod
+  picture: Fayt
   weapon: ohs
   ace: true
   limited: false
@@ -1723,7 +1723,7 @@
 - name: Michael
   cat: jp
   rating: 5
-  picture: michael
+  picture: Michael
   weapon: knuckle
   ace: true
   limited: false
@@ -1857,7 +1857,7 @@
 - name: Fidel Camuze (Winter)
   cat: jp
   rating: 10
-  picture: christmaswinterskyfidelcamuze
+  picture: Winter_Sky_Fidel
   weapon: gun
   ace: true
   limited: true
@@ -1983,7 +1983,7 @@
 - name: Welch Vineyard (Tearful)
   cat: jp
   rating: 1
-  picture: weepywelchvineyard
+  picture: Weeping_Welch
   weapon: knuckle
   limited: true
   star: 5
@@ -2093,7 +2093,7 @@
 - name: Meracle Chamlotte
   cat: jp
   rating: 7
-  picture: meraclechamlotte
+  picture: Meracle
   weapon: knuckle
   ace: true
   limited: false
@@ -2235,7 +2235,7 @@
 - name: Lasswell
   cat: jp
   rating: 7
-  picture: lasswell
+  picture: Lasswell
   weapon: bns
   ace: true
   limited: true
@@ -2354,7 +2354,7 @@
 - name: Andre
   cat: jp
   rating: 0
-  picture: andre
+  picture: Andre
   weapon: ohs
   ace: false
   limited: false
@@ -2417,7 +2417,7 @@
 - name: Verda Clayman (Valentine)
   cat: jp
   rating: 10
-  picture: valentinepureloveverdaclayman
+  picture: Pure_Love_Verda
   weapon: arm
   ace: true
   limited: true
@@ -2560,7 +2560,7 @@
 - name: Rena Lanford (Valentine)
   cat: jp
   rating: 10
-  picture: valentinesweetcatrenalanford
+  picture: Sweet_Cat_Rena
   weapon: knuckle
   ace: true
   limited: true
@@ -2680,7 +2680,7 @@
 - name: Mirage Koas
   cat: jp
   rating: 7
-  picture: miragekoas
+  picture: Mirage
   weapon: knuckle
   ace: true
   star: 5
@@ -2807,7 +2807,7 @@
 - name: Ashton Anchors
   cat: jp
   rating: 7
-  picture: ashtonanchors
+  picture: Ashton
   weapon: dualswords
   ace: true
   star: 5
@@ -2916,7 +2916,7 @@
 - name: Precis F. Neumann
   cat: jp 
   rating: 4
-  picture: precisf.neumann	
+  picture: Precis	
   weapon: arm
   ace: true
   limited: false

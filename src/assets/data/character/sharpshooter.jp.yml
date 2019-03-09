@@ -2,7 +2,7 @@
 - name: 9S
   cat: jp
   rating: 8
-  picture: 9s
+  picture: 9S
   weapon: ohs
   ace: true
   limited: true
@@ -96,7 +96,7 @@
 - name: Reimi Saionji
   cat: jp
   rating: 5
-  picture: reimisaionji
+  picture: Reimi
   weapon: bow
   ace: true
   limited: false

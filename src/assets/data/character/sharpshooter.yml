@@ -2,7 +2,7 @@
 - name: 9S
   cat: gl
   rating: 10
-  picture: 9s
+  picture: 9S
   weapon: ohs
   ace: true
   limited: true
@@ -133,7 +133,7 @@
 - name: Maria Traydor
   cat: gl
   rating: 8
-  picture: mariatraydor
+  picture: Maria
   weapon: gun
   ace: true
   limited: false
@@ -246,7 +246,7 @@
 - name: Nel Zelpher
   cat: gl
   rating: 5
-  picture: nelzelpher
+  picture: Nel
   weapon: dagger
   ace: true
   limited: false
@@ -375,7 +375,7 @@
 - name: Emmerson T. Kenny
   cat: gl
   rating: 3
-  picture: emmersontkenny
+  picture: Emmerson
   weapon: gun
   limited: false
   star: 5
@@ -475,7 +475,7 @@
 - name: Clair Lasbard
   cat: gl
   rating: 6
-  picture: clairlasbard
+  picture: Clair
   weapon: dagger
   limited: false
   star: 5
@@ -592,7 +592,7 @@
 - name: Reimi Saionji
   cat: gl
   rating: 5
-  picture: reimisaionji
+  picture: Reimi
   weapon: bow
   ace: true
   limited: false
@@ -712,7 +712,7 @@
 - name: Miki (Summer)
   cat: gl
   rating: 6
-  picture: everlastingsummermikisauvester
+  picture: Everlasting_Summer_Miki
   weapon: bow
   ace: true
   limited: true
@@ -853,7 +853,7 @@
 - name: Silmeria
   cat: gl
   rating: 6
-  picture: silmeria
+  picture: Silmeria
   weapon: bow
   ace: true
   limited: true
@@ -978,7 +978,7 @@
 - name: Victor (Halloween)
   cat: gl
   rating: 10
-  picture: halloweenvampirevictoroakville
+  picture: Vampire_Victor
   weapon: dagger
   ace: true
   limited: true
@@ -1107,7 +1107,7 @@
 - name: Lymle (Official)
   cat: gl
   rating: 4
-  picture: federationlymlelemuriphi
+  picture: Federation_Lymle
   weapon: gun
   limited: true
   star: 5
@@ -1253,7 +1253,7 @@
 - name: Bernard
   cat: gl
   rating: 0
-  picture: bernard
+  picture: Bernard
   weapon: gun
   ace: false
   limited: false
@@ -1315,10 +1315,10 @@
     maxHits: 12
     element: Light
     
-- name: Clair (Valentine)
+- name: Clair (Girly)
   cat: gl
   rating: 4
-  picture: maidenclairlasbard
+  picture: Girl's_Day_Clair
   weapon: bow
   limited: true
   star: 5
@@ -1449,7 +1449,7 @@
 - name: Anne (Official)
   cat: gl
   rating: 5
-  picture: federationannepatriceani
+  picture: Federation_Anne
   weapon: gun
   ace: true
   star: 5
@@ -1576,7 +1576,7 @@
 - name: Maria (Awakened)
   cat: gl
   rating: 10
-  picture: mariatraydor
+  picture: Maria
   weapon: gun
   ace: true
   limited: false
@@ -1737,7 +1737,7 @@
 - name: Maria (Bridal)
   cat: gl
   rating: 7
-  picture: bridalmariatraydor
+  picture: Bridal_Maria
   weapon: gun
   ace: true
   limited: True
@@ -1880,7 +1880,7 @@
 - name: Nel (Bridal)
   cat: gl
   rating: 7
-  picture: bridalnelzelpher
+  picture: Bridal_Nel
   weapon: dagger
   ace: true
   limited: True

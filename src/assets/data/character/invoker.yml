@@ -2,7 +2,7 @@
 - name: Sophia Esteed
   cat: gl
   rating: 8
-  picture: sophiaesteed
+  picture: Sophia
   weapon: staff
   ace: true
   limited: false
@@ -160,7 +160,7 @@
 - name: Myuria Tionysus
   cat: gl
   rating: 7
-  picture: myuriationysus
+  picture: Myuria
   weapon: staff
   ace: true
   star: 5
@@ -289,7 +289,7 @@
 - name: Ronyx J. Kenny
   cat: gl
   rating: 4
-  picture: ronyxjkenny
+  picture: Ronyx
   weapon: bow
   star: 5
 
@@ -404,7 +404,7 @@
 - name: Lymle Lemuri Phi
   cat: gl
   rating: 4
-  picture: lymlelemuriphi
+  picture: Lymle
   weapon: staff
   limited: false
   star: 5
@@ -529,7 +529,7 @@
 - name: Faize Sheifa Beleth
   cat: gl
   rating: 6
-  picture: faizesheifabeleth
+  picture: Faize
   weapon: bns
   limited: false
   star: 5
@@ -656,7 +656,7 @@
 - name: Celine Jules
   cat: gl
   rating: 6
-  picture: celinejules
+  picture: Celine
   weapon: staff
   limited: false
   star: 5
@@ -790,7 +790,7 @@
 - name: Fiore Brunellie
   cat: gl
   rating: 7
-  picture: fiorebrunelli
+  picture: Fiore
   weapon: orb
   limited: false
   star: 5
@@ -935,7 +935,7 @@
 - name: Claude (Uniform)
   cat: gl
   rating: 4
-  picture: formalwearclaudeckenny
+  picture: Prince_Claude
   weapon: bow
   star: 5
 
@@ -1071,10 +1071,10 @@
       
       *Normal > CA Plunging Fire Bolts > Ice Needles > Arctic Impact > Spam till out of AP (Ice Rotation)*
       
-- name: Mavelle Froesson (Preview)
+- name: Mavelle Froesson
   cat: gl
   rating: 8
-  picture: mavellefroesson
+  picture: Mavelle
   weapon: orb
   limited: false
   star: 5

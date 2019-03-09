@@ -2,7 +2,7 @@
 - name: A2
   cat: jp
   rating: 10
-  picture: a2
+  picture: A2
   weapon: greatsword
   ace: true
   limited: true

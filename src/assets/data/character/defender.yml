@@ -2,7 +2,7 @@
 - name: A2
   cat: gl
   rating: 10
-  picture: a2
+  picture: A2
   weapon: greatsword
   ace: true
   limited: true
@@ -136,7 +136,7 @@
 - name: Victor Oakville
   cat: gl
   rating: 5
-  picture: victoroakville
+  picture: Victor
   weapon: bns
   star: 5
 
@@ -260,7 +260,7 @@
 - name: Shimada
   cat: gl
   rating: 1
-  picture: shimada
+  picture: Shimada
   weapon: bns
   star: 4
 
@@ -328,7 +328,7 @@
 - name: Stephen D. Kenny
   cat: gl
   rating: 1
-  picture: stephendkenny
+  picture: Stephen
   weapon: bns
   star: 4
 
@@ -405,7 +405,7 @@
 - name: Myuria Tionysus (Summer)
   cat: gl
   rating: 8.5
-  picture: everlastingsummermyuriationysus
+  picture: Everlasting_Summer_Myuria
   weapon: bns
   ace: true
   limited: true
@@ -544,7 +544,7 @@
 - name: Dias Flac
   cat: gl
   rating: 6
-  picture: diasflac
+  picture: Dias
   weapon: bns
   ace: true
   star: 5
@@ -683,7 +683,7 @@
 - name: Evelysse (Winter)
   cat: gl
   rating: 10
-  picture: christmassnowwhiteevelysse
+  picture: Snow_White_Evelysse
   weapon: dualswords
   ace: true
   limited: true
@@ -850,7 +850,7 @@
 - name: Edge Maverick
   cat: gl
   rating: 7
-  picture: edgemaverick
+  picture: Edge
   weapon: ohs
   ace: true
   star: 5
@@ -973,7 +973,7 @@
 - name: Miki Sauvester (Princess)
   cat: gl
   rating: 4
-  picture: girlsdaymiki
+  picture: Girl's_Day_Miki
   weapon: bns
   limited: true
   star: 5
@@ -1095,7 +1095,7 @@
 - name: Rain
   cat: gl
   rating: 10
-  picture: rain
+  picture: Rain
   weapon: ohs
   ace: true
   limited: true
@@ -1248,7 +1248,7 @@
 - name: Dias Flac
   cat: gl
   rating: 10
-  picture: diasflac
+  picture: Dias
   weapon: bns
   ace: true
   awakened: true
