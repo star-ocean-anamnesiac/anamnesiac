@@ -298,3 +298,16 @@
     it's third factor is pretty bad on a long range weapon. However it's second factor boosts crit rate which is okay but also boosts
     crit damage. This is very good when you consider characters like Maria and OAnne boost crit rate significantly post rush but not
     crit damage, meaning it has good synergy with them.
+
+- name: Blossom Blaster
+  cat: 'gl'
+  star: 5
+  picture: Floral_Shooter
+  atk: 531
+  int: 530
+  factors:
+    - desc: +20% DMG on Nettlesome Burst
+    - desc: Recover 3% HP every 5s
+    - desc: Hitcount Timer +1s
+      lb: 5
+  obtained: Giant Prismoid (Exchange)
