@@ -370,3 +370,25 @@
       lb: 5
   obtained: Giant Prismoid (Exchange)
   
+- name: Ceremonial Anemones
+  cat: 'gl'
+  star: 5
+  picture: Flowered_Blades_of_Celebration_Anemone
+  atk: 964
+  int: 963
+  factors:
+    - desc: Imbue Earth Element
+      element: Earth
+    - desc: -15% ATK DMG Taken
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffValue: 15
+    - desc: +50% AP recovery on normal attacks at 100 hits or more
+      meta:
+        priority: 4
+        buff: AP Recovery (Normal Attacks)
+        buffValue: 50
+        buffCondition: Hit Count is 100 or more
+      lb: 5
+  obtained: Gacha
+  
