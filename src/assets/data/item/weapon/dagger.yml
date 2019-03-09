@@ -352,3 +352,21 @@
   notes: >
     Beast slaying daggers. They have a rare rush damage buff on them and the third factor gives some good sustain, a pretty good
     neutral option and very good against Beasts.
+
+- name: Blooming Mist Daggers
+  cat: 'gl'
+  star: 5
+  picture: Flowmist_Daggers
+  atk: 510
+  int: 511
+  factors:
+    - desc: +15% DMG on Flower Wheel
+    - desc: 70% chance to survive a lethal attack at 15% HP or more
+    - desc: +5% ATK
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 5
+      lb: 5
+  obtained: Giant Prismoid (Exchange)
+  
