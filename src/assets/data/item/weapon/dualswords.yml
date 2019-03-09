@@ -148,3 +148,44 @@
     Good pair of dual swords that with ice imbue. The other two factors reward using normals helping give both AP recovery and some 
     sustain. All around solid weapon that you should make regular use of.
     
+- name: Double Bludgeoners
+  cat: 'gl'
+  star: 5
+  picture: Double_Masher
+  atk: 532
+  int: 529
+  factors:
+    - desc: +50% DMG on Piercing Blades
+    - desc: +15% DMG if HP is 100%
+      meta:
+        priority: 3
+        buff: Damage
+        buffValue: 15
+        buffCondition: HP = 100%
+    - desc: 50% Chance of Surviving a Lethal Attack at 15% HP or more
+      lb: 5
+  obtained: Monarch Zinae Exchange
+  
+  notes: >
+    Dual Swords meant for Ahston, they're not great, conditional damage buff, meh grit chance, piercing blades is a good attack
+    but not your main source of damage. It's passable if you have nothing better for Ashton, otherwise it is bad.
+    
+- name: Mephistofar
+  cat: 'gl'
+  star: 5
+  picture: Melpha
+  atk: 891
+  int: 889
+  factors:
+    - desc: Imbues attacks with ice element
+      element: Ice
+    - desc: Recover 10% HP on DMG Dealt by Normal Attacks, when hit count is 50+
+    - desc: +15% DMG on Swords Dance, when hit count is 100+
+      lb: 3
+  obtained: Monarch Zinae Achievement & Dual Sword Exchange Shop
+  
+  notes: >
+    Ice imbue dual swords that cost 2 coins each from the shop. They're really meant for Ashton but it's an imbue weapon with a
+    somewhat relevant second factor, though best not relied upon. Not worth lbing unless you have Ashton but well worth grabbing
+    a copy.
+    
