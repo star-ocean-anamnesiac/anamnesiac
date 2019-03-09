@@ -550,3 +550,16 @@
         buffValue: 5
   obtained: Monarch Zinae (Exchange, Drop)
 
+- name: Blitz Armlet
+  cat: 'gl'
+  star: 5
+  picture: Chain_Attack_Bracelet
+  def: 728
+  factors:
+    - desc: Hitcount Timer +0.5s
+    - desc: +10% ATK DMG when Hit Count is over 200
+      meta:
+        priority: 3
+        buff: ATK Damage
+        buffValue: 10
+  obtained: Monarch Zinae (Achievement)
