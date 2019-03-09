@@ -532,3 +532,21 @@
     A pretty exceptional offensive accessory. It's factors wouldn't be terrible as a character talent which means it's very good for
     an accessory to have them.
 
+- name: Enchanted Bird's Charm
+  cat: 'gl'
+  star: 5
+  picture: Eagle_Eye_Charm
+  def: 728
+  factors:
+    - desc: -10% Cast Time
+      meta:
+        priority: 1
+        buff: Cast Time Reduction
+        buffValue: 10
+    - desc: -5% ATK DMG Taken
+      meta:
+        priority: 1
+        buff: ATK Damage Taken Reduction
+        buffValue: 5
+  obtained: Monarch Zinae (Exchange, Drop)
+
