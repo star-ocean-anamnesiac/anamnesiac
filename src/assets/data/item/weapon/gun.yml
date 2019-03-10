@@ -311,3 +311,22 @@
     - desc: Hitcount Timer +1s
       lb: 5
   obtained: Giant Prismoid (Exchange)
+
+- name: Scarlet Rose
+  cat: 'gl'
+  star: 5
+  picture: Scarlet_Rose
+  atk: 963
+  int: 964
+  factors:
+    - desc: Imbue Earth Element
+      element: Earth
+    - desc: Recover 10% of DMG dealt by normal attacks as HP
+    - desc: 30% AP recovery at 100 hits or more
+      meta:
+        priority: 3
+        buff: AP Recovery
+        buffValue: 30
+        buffCondition: Hit Count > 100
+      lb: 5
+  obtained: Gacha
