@@ -3229,7 +3229,7 @@
       highlight: true
     - name: "Northern Cross"
       picture: Northern_Cross
-      power: ATK x 4000%
+      power: ATK x 400%
       ap: 27
       maxHits: 2
       element: Ice
@@ -3368,4 +3368,135 @@
     power: ATK x 4500%
     maxHits: 4
     
+- name: Rena (Bridal)
+  cat: gl
+  rating: 6
+  picture: Bridal_Rena
+  weapon: knuckle
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15435
+    atk: 2704
+    int: 1575
+    def: 1916
+    hit: 1162
+    grd: 833
+
+  talents:
+    - name: "Innocent Madonna Lily"
+      effects: 
+        - desc: ATK +30%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 30
+    - name: "Shower of Blue Stars"
+      effects: 
+        - desc: Single Target Damage +5% Self & Long Range Weapons.
+          meta:
+            priority: 3
+            buff: Single Target Damage
+            buffValue: 5
+            buffCondition: Long Range Weapon
+        - desc: Single Target Damage +20% Self & Long Range Weapons at 150 hits.
+          meta:
+            priority: 3
+            buff: Single Target Damage
+            buffValue: 5
+            buffCondition: Long Range Weapon & Hit Count > 150
+    - name: "Four Leaf Clover's Blessing"
+      effects: 
+        - desc: Regenerate 5% HP every 3 seconds.
+          all: true
+        - desc: Regenerate 10% HP every 3 seconds at 100 hits.
+          all: true
+    - name: "Present from 700 million years ago"
+      effects: 
+        - desc: Will not flinch to damage under 10% Max HP
+        - desc: Able to Air Dodge
+        - desc: AP Cost -20% at 50 hits
+          meta:
+            priority: 3
+            buff: AP Cost Reduction
+            buffCondition: Hit Count > 50
+            buffValue: 20
+        - desc: ATK +20% at 50 hits
+          meta:
+            priority: 3
+            buff: ATK
+            buffCondition: Hit Count > 50
+            buffValue: 20
+
+  skills:
+    - name: "Triple Kick"
+      picture: Triple_Kick
+      power: ATK x 160%
+      ap: 16
+      maxHits: 3
+    - name: "Hammer of Might"
+      picture: Hammer_of_Might
+      power: ATK x 180%
+      ap: 18
+      maxHits: 1
+      highlight: true
+    - name: "Twister"
+      picture: Roaring_Cartwheel
+      power: ATK x 420%
+      ap: 30
+      maxHits: 5
+      highlight: true
+    - name: "Flash Chariot"
+      picture: Flash_Chariot
+      power: ATK x 650%
+      ap: 38
+      maxHits: 25
+      highlight: true
+
+  rush:
+    name: "Starry Oath"
+    picture: Starry_Ace_Bridal_Rena
+    effects: 
+      - desc: Will not flinch to damage under 25% Max HP
+        all: true
+        duration: 20
+    power: ATK x 4500%
+    maxHits: 2
     
+  notes: >
+      _Rena arrives as a bride and to show that this banner should have come some time a go. Her buffs feel quite dated though some
+      are actually not bad. While her ATK buff is very bad, her single target is even worse and to top it off that's barely a post
+      rush buff with a defender in your party. However the saving grace is the regeneration buff she gives, it's very potent
+      especially when you meet 100 hit count which isn't too tall a task, it's not unreasonable to consider her for a comp which
+      wants lots of attackers. (Such as building around VRena or Awakened Dias) For a form of sustain. She has a self AP cost 
+      reduction and ATK buff at 50 hits and her rush multiplier is 4500 so she'll do a decent amount of damage overall. However
+      she's a bit of an oddball buffer but isn't unusable._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Strong Party wide HP regen
+      
+      - Deals good damage.
+      
+      - Big rush multiplier.
+      
+      
+      **Cons**
+      
+      - Awful ATK and Single Target damage buff.
+      
+      - What kind of post rush buff is that?
+      
+      
+      **Rotation**
+      
+      *Normal > Flash Chariot > Hammer of Might > Flash Chariot > Spam till out of AP (Damage combo.)*
+      
+      *Normal > Twister > Hammer of Might > Twister > Spam till out of AP (Rush combo.)*
