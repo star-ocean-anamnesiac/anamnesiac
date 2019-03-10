@@ -562,5 +562,5 @@
         priority: 3
         buff: ATK Damage
         buffValue: 10
-        buffCondition: Hit Count is 200 or more
+        buffCondition: Hit Count > 200
   obtained: Monarch Zinae (Achievement)
