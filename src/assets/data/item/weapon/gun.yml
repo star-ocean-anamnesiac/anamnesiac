@@ -327,6 +327,6 @@
         priority: 3
         buff: AP Recovery
         buffValue: 30
-        buffCondition: Hit Count is 100 or more
+        buffCondition: Hit Count > 100
       lb: 5
   obtained: Gacha
