@@ -1260,19 +1260,19 @@
   star: 3
 
   stats:
-    hp: 7525
-    atk: 863
-    int: 1355
-    def: 627
-    hit: 569
-    grd: 443
+    hp: 8510
+    atk: 1199
+    int: 851
+    def: 840
+    hit: 688
+    grd: 490
 
   talents:
     - name: "Third Eye"
       effects: 
-        - desc: Hit Counter +0.5 seconds
+        - desc: Hitcount Timer +0.5 seconds
           all: true
-    - name: "Hidden Talent"
+    - name: "Hidden Talent III"
       effects:
         - desc: Critical Rate +30%
           all: false
@@ -1281,39 +1281,36 @@
             buff: Crit Rate
             buffValue: 30
   skills:
-    - name: "Shadow Needles"
-      picture: Shadow_Needles
-      power: INT x 240%
-      ap: 23
-      maxHits: 5
-      element: Dark
-    - name: "Aurora Rings"
-      picture: Aurora_Rings
-      power: INT x 460%
-      ap: 35
-      maxHits: 5
-      element: Light
-    - name: "Vampiric Blade"
-      picture: Vampiric_Blade
-      power: INT x 370%
+    - name: "Sonic Thorn"
+      picture: Sonic_Thorn_II
+      power: ATK x 200%
+      ap: 20
+      maxHits: 2
+    - name: "Crimson Squall"
+      picture: Crimson_Squall_I
+      power: ATK x 340%
+      ap: 29
+      maxHits: 9
+    - name: "Hunter's Moon"
+      picture: Hunter's_Moon
+      power: ATK x 370%
       ap: 32
-      maxHits: 5
-      element: Dark
+      maxHits: 7
 
   rush:
-    name: "Laser Beams Revision"
+    name: "Revised Seraphic Thunder"
     picture: Revised_Seraphic_Thunder_Bernard
     effects:
-      - desc: Symbology Cast Time Reduced by 50%
-        duration: 60
+      - desc: Critical Rate +50%
+        duration: 20
         all: true
         meta:
           priority: 1
-          buff: Cast Time Reduction
+          buff: Crit Rate
           buffValue: 50
-    power: INT x 2500%
-    maxHits: 12
-    element: Light
+    power: ATK x 2500%
+    maxHits: 8
+    element: Lightning
     
 - name: Clair (Girly)
   cat: gl
