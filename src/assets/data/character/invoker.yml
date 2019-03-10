@@ -1206,4 +1206,150 @@
       
       *Normal > CA Crystalized Acrtic Impact > Dash Cancel after first hit (Nuke rotation)*
       
+- name: Evelysse (Bridal)
+  cat: gl
+  rating: 7
+  picture: Bridal_Evelysse
+  weapon: staff
+  limited: true
+  star: 5
+  ace: true
+
+  stats:
+    hp: 12180
+    atk: 1549
+    int: 3842
+    def: 1327
+    hit: 1071
+    grd: 833
+
+  talents:
+    - name: "Double Blossom Smile"
+      effects: 
+        - desc: INT +40%
+          meta:
+            priority: 4
+            buff: INT
+            buffValue: 40
+    - name: "Wedding Road's Escort"
+      effects: 
+        - desc: AP Cost -20%
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 20
+        - desc: AP Cost -30%
+          meta:
+            priority: 3
+            buff: AP Cost Reduction
+            buffCondition: Hit Count > 50
+            buffValue: 30
+        - desc: AP Cost -40%
+          meta:
+            priority: 3
+            buff: AP Cost Reduction
+            buffCondition: Hit Count > 100
+            buffValue: 40
+        - desc: AP Cost -50%
+          meta:
+            priority: 3
+            buff: AP Cost Reduction
+            buffCondition: Hit Count > 150
+            buffValue: 50
+    - name: "Coronet's Glimmer"
+      effects:
+        - desc: AP recover +80%
+          all: true
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffValue: 80
+    - name: "Orange Colored Buttercups"
+      effects:
+        - desc: Symbol invoking time -30%
+          meta:
+            priority: 1
+            buff: Cast Time Reduction
+            buffValue: 30
+        - desc: No flinching when casting Symbology.
+
+  skills:
+    - name: "Crush"
+      picture: Crush
+      element: Earth
+      power: INT x 180%
+      ap: 18
+      maxHits: 2
+    - name: "Summon Comet"
+      picture: Conjure_Comet
+      element: Light
+      power: INT x 230%
+      ap: 22
+      maxHits: 5
+    - name: "Sunflare"
+      picture: Sunflare
+      element: Light
+      power: INT x 580%
+      ap: 38
+      maxHits: 6
+    - name: "Divine Flower"
+      picture: Divine_Flower
+      element: Earth
+      power: INT x 720%
+      ap: 42
+      maxHits: 6
+      
+  rush:
+    name: "Cutting Cake"
+    picture: Cutting_Cake_Bridal_Eve
+    element: Earth
+    effects: 
+      - desc: INT Damage +40%
+        duration: 20
+        meta:
+          priority: 1
+          buff: INT Damage
+          buffValue: 40
+      - desc: AP Cost -60%
+        duration: 20
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 60
+    power: INT x 4500%
+    maxHits: 8
     
+    notes: >
+      _Evelysse shows up in a bridal gown as GL's first limited ace invoker. She actually hits exceptionally hard especially due to
+      her 4.5k rush mult and her high multiplier on her main damage dealing attack. Post rush she gets even more powerful with her
+      Int damage buff and the AP cost reduction allowed her to sling out her hard hitting spell even more. However Eve has her fair
+      share of problems. She is an INT damage carry and she does deal damage well but that's all she does. She is locked to Earth
+      which is probably the worst element to be locked to, but her off element of light at least offsets this a little. She uses a
+      staff so her animation lock is bad and her cast reduction isn't that high on top of that. Also she's reliant on her party
+      helping build up hit count to lower her AP cost. She provides standing AP recovery to the party and that's it. The rest is
+      all damage._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - High damage
+      
+      - Ap recovery buff for the party.
+      
+      
+      **Cons**
+      
+      - Earth focused.
+      
+      - Staff cast times with small cast reduction.
+      
+      - Crush is a terrible spell for your filler earth spell.
+      
+      - Provides almost nothing to the party.
+      
+      **Rotation**
+
+      *Normal > CA Crush > Summon Comet > Divine Flower > Spam till out of AP (General Rotation)*
