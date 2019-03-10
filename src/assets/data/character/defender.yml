@@ -1263,7 +1263,7 @@
     grd: 1036
 
   talents:
-    - name: "Expel's Renowned Swordsman"
+    - name: "Expel's Swordsmaster II"
       effects: 
         - desc: DEF +25%
           all: true
@@ -1277,7 +1277,7 @@
             priority: 1
             buff: ATK Damage Taken Reduction
             buffValue: 25
-    - name: "Aloof Swordsmanship"
+    - name: "Ruthless Swordsmanship II"
       effects: 
         - desc: ATK +50%
           meta:
@@ -1289,11 +1289,11 @@
             priority: 4
             buff: DEF
             buffValue: 20
-    - name: "Oath to Cecille"
+    - name: "Vow to Cecille II"
       effects: 
         - desc: Will not flinch to damage under 30% max HP
           all: Close Range
-    - name: "Encountered a Worthy Rival"
+    - name: "Equal Footing"
       effects: 
         - desc: Damage +40%
           all: Attacker
@@ -1309,10 +1309,10 @@
             buff: Damage
             buffRole: defender
             buffValue: 40
-    - name: "Aiming For Supreme Power"
+    - name: "The Fight For Supreme Power"
       effects: 
         - desc: Taunt+3
-    - name: "Aiming For Supreme Power"
+    - name: "A Mercenary's Strength"
       effects: 
         - desc: Restore 5% HP every 1 second during CA standby.
 
@@ -1341,7 +1341,7 @@
       maxHits: 2
       element: Dark
       highlight: true
-    - name: "Double Slash of Fury"
+    - name: "Unbridled Double Slash"
       picture: Unbridled_Double_Slash
       power: ATK x 440%
       ap: 30
@@ -1373,9 +1373,8 @@
       giving a 40% damage buff, matching that of base Maria._
       
       _His additional talents are underwhelming, taunt +3 should help him hold aggro and his other talent helps him regenerate health
-      by CAing. The latter can be good for sustain, especially if you're good with CA or you use it to CA away from a foe as his
-      ranged attacks remain his best. The downsides are more his composition specific talents and his skill selection doesn't have
-      much of a spammable powerhouse like Winter Evelysse or Rain have._
+      by holding CA. Not actively using it. Just standing there with it charging. Doing nothing. It's quite bad, but the improvements
+      he gets are the real powerhouses here._
       
       
       **TL DR**
