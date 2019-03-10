@@ -3300,4 +3300,72 @@
       *Normal > Piercing Blades > Twin Thrust > Northern Cross > Spam till out of AP (General ice combo.)*
       
       *Normal > Piercing Blades > Twin Thrust > Sword Dance > Spam till out of AP (General fire combo.)*
-      
+          
+- name: Angelica
+  cat: gl
+  rating: 0
+  picture: Angelica
+  weapon: knuckle
+  ace: false
+  limited: false
+  star: 3
+
+  stats:
+    hp: 8510
+    atk: 1689
+    int: 840
+    def: 1054
+    hit: 623
+    grd: 455
+
+  talents:
+    - name: "Battle Prodigy"
+      effects: 
+        - desc: AP cost -20%
+          all: false
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 20
+    - name: "Unconstrained Ambitions III"
+      effects:
+        - desc: ATK +30%
+          all: false
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 30
+    - name: "Fighter's Instinct"
+      effects:
+        - desc: Critical rate +20%
+          all: false
+          meta:
+            priority: 4
+            buff: Crit Rate
+            buffValue: 20
+  skills:
+    - name: "Triple Kick"
+      picture: Triple_Kick
+      power: ATK x 250%
+      ap: 24
+      maxHits: 3
+    - name: "Drill Spike"
+      picture: Drill_Spike
+      power: ATK x 190%
+      ap: 20
+      maxHits: 4
+    - name: "X Claw"
+      picture: X_Claw
+      power: ATK x 310%
+      ap: 29
+      maxHits: 6
+
+  rush:
+    name: "Revised Crescent Locus"
+    picture: Revised_Crescent_Locus_Angelica
+    effects:
+      - desc: N/A
+    power: ATK x 4500%
+    maxHits: 4
+    
+    
