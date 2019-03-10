@@ -1238,19 +1238,19 @@
             priority: 1
             buff: AP Cost Reduction
             buffValue: 20
-        - desc: AP Cost -30%
+        - desc: AP Cost -30% at 50 hits
           meta:
             priority: 3
             buff: AP Cost Reduction
             buffCondition: Hit Count > 50
             buffValue: 30
-        - desc: AP Cost -40%
+        - desc: AP Cost -40% at 100 hits
           meta:
             priority: 3
             buff: AP Cost Reduction
             buffCondition: Hit Count > 100
             buffValue: 40
-        - desc: AP Cost -50%
+        - desc: AP Cost -50% at 150 hits
           meta:
             priority: 3
             buff: AP Cost Reduction
