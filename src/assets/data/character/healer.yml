@@ -1738,3 +1738,68 @@
       - Lack of powerful buffs for the party
       
       - Lack of a good talent that helps survivability
+
+- name: Heinrich (Robust)
+  cat: gl
+  rating: 0
+  picture: Huge_Sword_Heinrich
+  weapon: greatsword
+  ace: false
+  limited: false
+  star: 3
+
+  stats:
+    hp: 7795
+    atk: 988
+    int: 1120
+    def: 761
+    hit: 544
+    grd: 623
+
+  talents:
+    - name: "Weapons Upgrade II"
+      effects: 
+        - desc: DEF +30% at long range
+          all: true
+          meta:
+            priority: 1
+            buff: DEF
+            buffCondition: Long Range
+            buffValue: 30
+    - name: "Valiant Soul II"
+      effects:
+        - desc: 80% chance of surviving a lethal attack at 10% HP or more
+          all: false
+        
+  skills:
+    - name: "Radiant Lancer"
+      picture: Radiant_Lancer
+      element: Light
+      power: INT x 300%
+      ap: 27
+      maxHits: 8
+    - name: "Healing"
+      picture: Healing
+      power: INT x 170%
+      ap: 40
+      maxHits: 1
+    - name: "Faerie Healing"
+      picture: Faerie_Healing
+      power: INT x 60%
+      ap: 50
+      maxHits: 1
+
+  rush:
+    name: "Revised Sunflare"
+    picture: Revised_Sunflare_Robust_Heinrich
+    effects:
+      - desc: Damage taken -50%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Damage Taken Reduction
+          buffValue: 50
+    power: INT x 2500%
+    maxHits: 6
+    
