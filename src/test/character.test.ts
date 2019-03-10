@@ -21,6 +21,8 @@ test('All characters have valid information', t => {
     return prev;
   }, {});
 
+  const characterNames = {};
+
   classes.forEach(charClass => {
     const datagl = fs.readFileSync(`src/assets/data/character/${charClass.toLowerCase()}.yml`, 'utf-8');
     const charactersgl: Character[] = YAML.safeLoad(datagl);
@@ -34,6 +36,10 @@ test('All characters have valid information', t => {
       const parenName = ` (${char.name}) [${char.cat}]`;
 
       t.truthy(char.name, 'name');
+      t.falsy(characterNames[parenName], 'name is not duplicated by any other character' + parenName);
+
+      characterNames[parenName] = true;
+
       t.falsy(char.type, 'type should not be set' + parenName);
       t.true(char.cat === 'jp' || char.cat === 'gl', 'cat must be jp or gl' + parenName);
       t.true(char.rating >= 0 && char.rating <= 10, 'rating must be between 0 and 10' + parenName);
@@ -51,6 +57,7 @@ test('All characters have valid information', t => {
 
       if(char.awakened) {
         t.true(char.awakened === true || char.awakened === 9, 'awakened must be either true or 9');
+        t.true(char.name.includes('(Awakened)'), 'name should include (Awakened)' + parenName);
       }
 
       const charPicInfo = imageSize(`src/assets/characters/${char.picture}.png`);

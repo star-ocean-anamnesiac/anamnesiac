@@ -17,6 +17,8 @@ test('All items have valid information', t => {
 
   const allItems = weapons.concat(accessories);
 
+  const itemNames = {};
+
   const itemElements = ['Dark', 'Earth', 'Fire', 'Ice', 'Light', 'Lightning', 'Wind'];
   const itemSlayers  = ['Beast', 'Bird', 'Demon', 'Divinity', 'Dragon', 'Human', 'Insect', 'Machine', 'Plant', 'Undead'];
 
@@ -36,6 +38,10 @@ test('All items have valid information', t => {
       const parenName = ` (${item.name}) [${item.cat}]`;
 
       t.truthy(item.name, 'name must be set');
+      t.falsy(itemNames[parenName], 'name is not duplicated by any other item' + parenName);
+
+      itemNames[parenName] = true;
+
       t.falsy(item.type, 'type should not be set' + parenName);
       t.falsy(item.subtype, 'subtype should not be set' + parenName);
       t.true(item.cat === 'jp' || item.cat === 'gl', 'cat must be jp or gl' + parenName);
