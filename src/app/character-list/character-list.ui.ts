@@ -180,7 +180,7 @@ export class CharacterSortPopover {
 
                         <ion-col>
                           {{ char.rush.power }} <span *ngIf="char.rush.maxHits">({{ char.rush.maxHits }} Hits)</span>
-                          <ol>
+                          <ol *ngIf="char.rush.effects">
                             <li *ngFor="let effect of char.rush.effects">
                             {{ effect.desc }}
                             <span *ngIf="effect.all">
