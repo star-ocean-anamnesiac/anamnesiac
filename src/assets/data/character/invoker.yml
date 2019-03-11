@@ -1423,3 +1423,85 @@
     power: INT x 2500%
     maxHits: 12
     element: Light
+
+
+    
+- name: Seth (Scholar)
+  cat: gl
+  rating: 0
+  picture: Manuscript_Seth
+  weapon: tome
+  ace: false
+  limited: false
+  star: 3
+
+  stats:
+    hp: 6988
+    atk: 851
+    int: 1344
+    def: 739
+    hit: 557
+    grd: 443
+
+  talents:
+    - name: "Search for Truth"
+      effects: 
+        - desc: Damage dealt +15% to single enemy
+          all: true
+          meta:
+            priority: 1
+            buff: Single Target Damage
+            buffValue: 15
+        - desc: +15% Stun Chance
+          all: true
+          meta:
+            priority: 1
+            buff: Stun Rate
+            buffValue: 15
+    - name: "Valiant Soul II"
+      effects:
+        - desc: 80% chance of surviving a lethal attack at 10% HP or more
+          all: false
+        - desc: -80% Symbology Cast Time at 10% HP or more
+          all: false
+          meta:
+            priority: 1
+            buff: Cast Time Reduction
+            buffCondition: HP > 10%
+            buffValue: 80
+        
+  skills:
+    - name: "Plunging Fire Bolts"
+      picture: Fire_Bolts
+      element: Fire
+      power: INT x 200%
+      ap: 20
+      maxHits: 6
+    - name: "Deep Freeze"
+      picture: Deep_Freeze
+      element: Ice
+      power: INT x 460%
+      ap: 35
+      maxHits: 9
+    - name: "Volcanic Burst"
+      picture: Volcanic_Burst
+      element: Fire
+      power: INT x 670%
+      ap: 42
+      maxHits: 13
+
+  rush:
+    name: "Revised Hail Orb"
+    picture: Revised_Frigid_Saucer_Manuscript_Seth
+    element: Ice
+    effects:
+      - desc: AP cost -30%
+        duration: 20
+        all: false
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 30
+    power: INT x 3000%
+    maxHits: 2
+    
