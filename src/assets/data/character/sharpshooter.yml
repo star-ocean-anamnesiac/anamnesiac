@@ -2042,3 +2042,70 @@
       
       *Normal > CA Sylvan Shot (Bloom) > CA Flying Guillotine (Bloom) > CA Sylvan Shot (Bloom) > Spam Till Out of AP 
       (Hit Count)*
+
+
+    
+- name: Hal
+  cat: gl
+  rating: 0
+  picture: Hal
+  weapon: gun
+  ace: false
+  limited: false
+  star: 3
+
+  stats:
+    hp: 9020
+    atk: 1236
+    int: 867
+    def: 936
+    hit: 710
+    grd: 539
+
+  talents:
+    - name: "Greater Eagle Eye"
+      effects: 
+        - desc: ATK -20%
+          all: Enemies
+          meta:
+            priority: 1
+            buff: Enemy ATK Reduction
+            buffValue: 20
+    - name: "A Rebel Soul II"
+      effects:
+        - desc: No flinching when taking damage of 20% HP or less
+          all: true
+        
+  skills:
+    - name: "Sonic Thorn"
+      picture: Sonic_Thorn_II
+      power: ATK x 200%
+      ap: 20
+      maxHits: 2
+    - name: "Seraphic Thunder"
+      picture: Seraphic_Thunder_I
+      element: Lightning
+      power: ATK x 330%
+      ap: 30
+      maxHits: 8
+    - name: "Hunter's Moon"
+      picture: Hunter's_Moon
+      power: ATK x 370%
+      ap: 32
+      maxHits: 7
+
+  rush:
+    name: "Revised Gravity Bullet"
+    picture: Revised_Gravity_Bullet_Hal
+    element: Dark
+    effects:
+      - desc: Damage dealt +80%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Damage
+          buffValue: 80
+    power: ATK x 3000%
+    maxHits: 15
+    
