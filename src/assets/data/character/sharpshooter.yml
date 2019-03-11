@@ -2109,3 +2109,66 @@
     power: ATK x 3000%
     maxHits: 15
     
+    
+- name: Eleanor
+  cat: gl
+  rating: 0
+  picture: Eleanor
+  weapon: dagger
+  ace: false
+  limited: false
+  star: 3
+
+  stats:
+    hp: 7945
+    atk: 1247
+    int: 890
+    def: 992
+    hit: 735
+    grd: 532
+
+  talents:
+    - name: "Deep Concentration II"
+      effects: 
+        - desc: Damage dealt +20%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 20
+    - name: "Greater Arena Expert"
+      effects:
+        - desc: Damage taken -20%
+          all: false
+          meta:
+            priority: 4
+            buff: Damage Taken Reduction
+            buffValue: 20
+        
+  skills:
+    - name: "Hydroblades"
+      picture: Hydroblades
+      element: Ice
+      power: ATK x 190%
+      ap: 20
+      maxHits: 2
+    - name: "Sylvan Shot"
+      picture: Sylvan_Shot
+      power: ATK x 200%
+      ap: 20
+      maxHits: 8
+    - name: "Victory Terror"
+      picture: Victory_Terror
+      power: ATK x 500%
+      ap: 35
+      maxHits: 10
+
+  rush:
+    name: "Revised Dancing Sword"
+    picture: Revised_Dancing_Sword_Eleanor
+    effects:
+      - desc: Remove all buffs
+        all: Enemies
+    power: ATK x 3000%
+    maxHits: 7
+        
