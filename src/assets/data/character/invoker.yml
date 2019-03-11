@@ -1258,11 +1258,11 @@
             buffValue: 50
     - name: "Coronet's Glimmer"
       effects:
-        - desc: AP recover +80%
+        - desc: AP recovery on normal +80%
           all: true
           meta:
             priority: 1
-            buff: AP Recovery
+            buff: AP Recovery From Normal Attacks
             buffValue: 80
     - name: "Orange Colored Buttercups"
       effects:
@@ -1326,8 +1326,8 @@
       share of problems. She is an INT damage carry and she does deal damage well but that's all she does. She is locked to Earth
       which is probably the worst element to be locked to, but her off element of light at least offsets this a little. She uses a
       staff so her animation lock is bad and her cast reduction isn't that high on top of that. Also she's reliant on her party
-      helping build up hit count to lower her AP cost. She provides standing AP recovery to the party and that's it. The rest is
-      all damage._
+      helping build up hit count to lower her AP cost. She provides on normal AP recovery to the party and that's it. The rest is
+      all damage. with that buff being overshadowed already._
       
       
       **TL DR**
@@ -1337,7 +1337,7 @@
       
       - High damage
       
-      - Ap recovery buff for the party.
+      - Ap recovery buff on normal for the party.
       
       
       **Cons**
@@ -1348,7 +1348,7 @@
       
       - Crush is a terrible spell for your filler earth spell.
       
-      - Provides almost nothing to the party.
+      - Provides almost nothing to the party. What she does give has been beaten by 3 characters.
       
       **Rotation**
 
