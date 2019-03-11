@@ -1924,7 +1924,7 @@
       maxHits: 1
 
   rush:
-    name: "Revised Plasma Cyclone
+    name: "Revised Plasma Cyclone"
     picture: Revised_Plasma_Cyclone_Chloe
     element: Lightning
     effects:
