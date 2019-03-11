@@ -3500,3 +3500,72 @@
       *Normal > Flash Chariot > Hammer of Might > Flash Chariot > Spam till out of AP (Damage combo.)*
       
       *Normal > Twister > Hammer of Might > Twister > Spam till out of AP (Rush combo.)*
+
+
+    
+- name: Hal (Iron-Arm)
+  cat: gl
+  rating: 0
+  picture: Strong_Arm_Hal
+  weapon: arm
+  ace: false
+  limited: false
+  star: 3
+
+  stats:
+    hp: 9030
+    atk: 1830
+    int: 1310
+    def: 1898
+    hit: 716
+    grd: 490
+
+  talents:
+    - name: "Neophilia III"
+      effects: 
+        - desc: ATK +30%
+          all: Close Range
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 30
+    - name: "Spirit of Innovation"
+      effects:
+        - desc: AP cost -15%
+          all: false
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 15
+        
+  skills:
+    - name: "Rocket Punch"
+      picture: Rocket_Punch
+      power: ATK x 290%
+      ap: 18
+      maxHits: 1
+    - name: "Hammer Slammer"
+      picture: Hammer_Slammer
+      power: ATK x 340%
+      ap: 22
+      maxHits: 6
+    - name: "Jump 'n' Thump"
+      picture: Jump_n_Thump
+      power: ATK x 430%
+      ap: 32
+      maxHits: 1
+
+  rush:
+    name: "Revised Force Field"
+    picture: Revised_Force_Field_Iron_Arm_Hal
+    effects:
+      - desc: AP cost -50%
+        duration: 20
+        all: false
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 50
+    power: ATK x 3000%
+    maxHits: 10
+    
