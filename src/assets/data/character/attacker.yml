@@ -446,6 +446,8 @@
   rush:
     name: "Steel Fists of Fury"
     picture: Steel_Fists_of_Fury_Cliff
+    effects: 
+      - desc: N/A
     power: ATK x 4500%
     maxHits: 25
     
@@ -3361,6 +3363,8 @@
   rush:
     name: "Revised Crescent Locus"
     picture: Revised_Crescent_Locus_Angelica
+    effects:
+      - desc: N/A
     power: ATK x 4500%
     maxHits: 4
     

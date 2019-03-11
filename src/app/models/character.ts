@@ -15,7 +15,7 @@ export interface Talent {
   name: string;
 
   // the effects contained in the talent
-  effects?: Effect[];
+  effects: Effect[];
 }
 
 export interface Skill {
