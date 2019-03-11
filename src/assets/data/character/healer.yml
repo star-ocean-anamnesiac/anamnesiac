@@ -1869,6 +1869,6 @@
       - desc: -20% HP recovery every 4 seconds
         duration: 20
         all: true
-    power: INT x 2o00%
+    power: INT x 2000%
     maxHits: 2
    
