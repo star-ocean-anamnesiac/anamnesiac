@@ -1802,4 +1802,73 @@
           buffValue: 50
     power: INT x 2500%
     maxHits: 6
-    
+
+- name: Pamela (Seer)
+  cat: gl
+  rating: 0
+  picture: Jewel_Pamela
+  weapon: orb
+  ace: false
+  limited: false
+  star: 3
+
+  stats:
+    hp: 6808
+    atk: 929
+    int: 1379
+    def: 817
+    hit: 574
+    grd: 628
+
+  talents:
+    - name: "Amateur Orb-Wielder II"
+      effects: 
+        - desc: +15% INT
+          all: false
+          meta:
+            priority: 4
+            buff: INT
+            buffValue: 15
+    - name: "Hope for the Future III"
+      effects:
+        - desc: -60% Symbology Cast Time at long range
+          all: false
+          meta:
+            priority: 1
+            buff: Cast Time Reduction
+            buffCondition: Long Range
+            buffValue: 60
+    - name: "Prayer for Peace"
+      effects:
+        - desc: 80% chance of surviving a lethal attack at 10% HP or more
+          all: false
+
+  skills:
+    - name: "Earth Glaive"
+      picture: Earth_Glaive
+      element: Earth
+      power: INT x 190%
+      ap: 20
+      maxHits: 2
+    - name: "Healing"
+      picture: Healing
+      power: INT x 170%
+      ap: 40
+      maxHits: 1
+    - name: "Faerie Healing"
+      picture: Faerie_Healing
+      power: INT x 60%
+      ap: 50
+      maxHits: 1
+
+  rush:
+    name: "Revised Crush"
+    picture: Revised_Crush_Seer_Pamela
+    element: Earth
+    effects:
+      - desc: -20% HP recovery every 4 seconds
+        duration: 20
+        all: true
+    power: INT x 2o00%
+    maxHits: 2
+   
