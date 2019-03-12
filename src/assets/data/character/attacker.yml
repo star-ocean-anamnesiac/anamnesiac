@@ -3384,7 +3384,7 @@
     grd: 833
 
   talents:
-    - name: "Innocent Madonna Lily"
+    - name: "Fresh Madonna Lillies II"
       effects: 
         - desc: ATK +30%
           all: true
@@ -3392,7 +3392,7 @@
             priority: 1
             buff: ATK
             buffValue: 30
-    - name: "Shower of Blue Stars"
+    - name: "Blue Star Shower II"
       effects: 
         - desc: Single Target Damage +5% Self & Long Range Weapons.
           meta:
@@ -3406,13 +3406,13 @@
             buff: Single Target Damage
             buffValue: 5
             buffCondition: Long Range Weapon & Hit Count > 150
-    - name: "Four Leaf Clover's Blessing"
+    - name: "Four Leafed Clover's Blessing II"
       effects: 
         - desc: Regenerate 5% HP every 3 seconds.
           all: true
         - desc: Regenerate 10% HP every 3 seconds at 100 hits.
           all: true
-    - name: "Present from 700 million years ago"
+    - name: "7 million year old present"
       effects: 
         - desc: Will not flinch to damage under 10% Max HP
         - desc: Able to Air Dodge
