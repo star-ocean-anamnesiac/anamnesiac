@@ -1536,19 +1536,19 @@
     - name: "Secret Arts III"
       effects:
          - desc: INT +30%
-          all: false
-          meta:
-            priority: 1
-            buff: INT
-            buffValue: 30
+           all: false
+           meta:
+             priority: 1
+             buff: INT
+             buffValue: 30
     - name: "Foresight"
       effects:
          - desc: Symbology casting time -30%
-          all: false
-          meta:
-            priority: 1
-            buff: Cast Time Reduction
-            buffValue: 30
+           all: false
+           meta:
+             priority: 1
+             buff: Cast Time Reduction
+             buffValue: 30
         
   skills:
     - name: "Ice Needles"
