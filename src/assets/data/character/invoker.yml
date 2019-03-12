@@ -1505,3 +1505,82 @@
     power: INT x 3000%
     maxHits: 2
     
+
+- name: Rochelle (Seer)
+  cat: gl
+  rating: 0
+  picture: Jewel_Rochelle
+  weapon: orb
+  ace: false
+  limited: false
+  star: 3
+
+  stats:
+    hp: 7704
+    atk: 1197
+    int: 2603
+    def: 616
+    hit: 569
+    grd: 485
+
+  talents:
+    - name: "Peering into the Crystal Ball III"
+      effects:
+        - desc: +30% Stun Chance at 100% HP
+          all: false
+          meta:
+            priority: 1
+            buff: Stun Rate
+            buffCondition: HP is 100%
+            buffValue: 30
+    - name: "Secret Arts III"
+      effects:
+         - desc: INT +30%
+           all: false
+           meta:
+             priority: 1
+             buff: INT
+             buffValue: 30
+    - name: "Foresight"
+      effects:
+         - desc: Symbology casting time -30%
+           all: false
+           meta:
+             priority: 1
+             buff: Cast Time Reduction
+             buffValue: 30
+        
+  skills:
+    - name: "Ice Needles"
+      picture: Ice_Needles
+      element: Ice
+      power: INT x 250%
+      ap: 24
+      maxHits: 9
+    - name: "Radiant Lancer"
+      picture: Radiant_Lancer
+      element: Light
+      power: INT x 300%
+      ap: 27
+      maxHits: 8
+    - name: "Arctic Impact"
+      picture: Arctic_Impact
+      element: Ice
+      power: INT x 670%
+      ap: 42
+      maxHits: 3
+
+  rush:
+    name: "Revised Conjure Comet"
+    picture: Revised_Conjure_Comet_Seer_Rochelle
+    element: Light
+    effects:
+      - desc: INT +80%
+        duration: 20
+        all: false
+        meta:
+          priority: 1
+          buff: INT
+          buffValue: 80
+    power: INT x 3000%
+    maxHits: 5
