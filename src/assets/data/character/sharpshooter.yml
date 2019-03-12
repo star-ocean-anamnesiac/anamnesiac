@@ -245,7 +245,7 @@
     
 - name: Nel Zelpher
   cat: gl
-  rating: 5
+  rating: 4
   picture: Nel
   weapon: dagger
   ace: true
@@ -711,7 +711,7 @@
     
 - name: Miki (Summer)
   cat: gl
-  rating: 6
+  rating: 9
   picture: Everlasting_Summer_Miki
   weapon: bow
   ace: true
@@ -740,29 +740,30 @@
           all: true
     - name: "Stir-Fried Noodles II"
       effects: 
-        - desc: Damage Dealt +25%
+        - desc: Damage Dealt +45%
           all: true
           meta:
             priority: 1
             buff: Damage
-            buffValue: 25
+            buffValue: 45
     - name: "Side Order II"
       effects: 
-        - desc: Critical Hit Chance +20% when behind target (180 seconds)
+        - desc: Critical Hit Chance +30% when behind target (180 seconds)
           all: true
           meta:
             priority: 1
             buff: Crit Rate
             buffCondition: Behind Target (180s)
-            buffValue: 20
+            buffValue: 30
     - name: "Summer Snow Cone"
       effects: 
-        - desc: Normal Attack AP Recovery +25%
+        - desc: Normal Attack AP Recovery +100%
           all: true
           meta:
             priority: 1
             buff: AP Recovery From Normal Attacks
-            buffValue: 25
+            buffValue: 100
+        - desc: Evasion possible while in the air.
 
   skills:
     - name: "Heavenly Flight"
@@ -804,21 +805,16 @@
           priority: 1
           buff: Crit Damage
           buffValue: 40
-    power: ATK x 3500%
+    power: ATK x 4000%
     maxHits: 24
     
   notes: >
       _Miki puts on her bikini to show us her summer body and is a rather uniqe bow ace sharpshooter. Her talents are quite conditional
       much like Summer Myuria. She helps the aggro target by giving them ATK damage reduction, and helps out damage dealers by
-      giving a crit rate boost but only if your behind the target. Her AP recovery on normals is nice but quite weak and has been
-      easily surpassed, though some of that glory should return when she is unnerfed in the summer. Her biggest selling point is
-      easily her partywide grit. 70/20 grit chance beats out any accessory based grit and does have a good trigger rate so it can
-      save your party members quite a lot._
-      
-      Her downsides, SMiki can be a bit clunky to play, some of her moves have end lag for a start. She also has weak offensive 
-      utility and some of that is situational. Her Defensive utility however is pretty amazing but it doesn't make up for the
-      lack of offensive utility, especially since boosting crit damage so much isn't as good without a much better crit rate to take
-      advantage of it._
+      giving a crit rate boost but only if your behind the target. Now with summer her AP recovery on normals is 100% which is a
+      pretty huge buff. Her damage buff is now quite good at 45% and the amazing buff she gives is still that 70/20 grit chance to
+      the party which will make her much better for the party. On top of all this her post rush crit damage boost is pretty good
+      and she now has a stronger rush. She'll stilll struggle with mobile targets but her damage output will stll be respectable._
       
       
       **TL DR**
@@ -834,10 +830,10 @@
       
       - Ap recovery on normals.
       
+      - Good damage buff
+      
 
       **Cons**
-
-      - Offensive utility is lacking and even situational.
 
       - Buffing crit damage so much isn't that good when you buff crit rate so little.
 
@@ -977,7 +973,7 @@
 
 - name: Victor (Halloween)
   cat: gl
-  rating: 10
+  rating: 9
   picture: Vampire_Victor
   weapon: dagger
   ace: true
@@ -1106,7 +1102,7 @@
     
 - name: Lymle (Official)
   cat: gl
-  rating: 4
+  rating: 3
   picture: Federation_Lymle
   weapon: gun
   limited: true
@@ -1312,9 +1308,9 @@
     maxHits: 8
     element: Lightning
     
-- name: Clair (Girly)
+- name: Clair (Valentine)
   cat: gl
-  rating: 4
+  rating: 3
   picture: Girl's_Day_Clair
   weapon: bow
   limited: true
@@ -1445,7 +1441,7 @@
       
 - name: Anne (Official)
   cat: gl
-  rating: 5
+  rating: 4
   picture: Federation_Anne
   weapon: gun
   ace: true
@@ -1733,7 +1729,7 @@
       
 - name: Maria (Bridal)
   cat: gl
-  rating: 7
+  rating: 8
   picture: Bridal_Maria
   weapon: gun
   ace: true
@@ -1749,7 +1745,7 @@
     grd: 924
 
   talents:
-    - name: "Dignified Profile"
+    - name: "A Most Dignified Profile II"
       effects: 
         - desc: Damage +40%
           all: true
@@ -1757,7 +1753,7 @@
             priority: 1
             buff: Damage
             buffValue: 40
-    - name: "Continous Thorn Attack"
+    - name: "Bramble Burst Barrage II"
       effects: 
         - desc: Damage +50% when hit count is over 100.
           all: true
@@ -1780,11 +1776,11 @@
             buff: Damage
             buffCondition: Hit Count > 200
             buffValue: 60
-    - name: "Hidden Passion"
+    - name: "Hidden Passion II"
       effects: 
         - desc: Additional Hit on that Deals 10% of Damage Dealt on Normal Attacks.
           all: true
-    - name: "Unreturnable Child Days"
+    - name: "Youthful Days"
       effects: 
         - desc: ATK +10% at 50 hits or more.
           meta:
@@ -1800,22 +1796,22 @@
             buffValue: 15
 
   skills:
-    - name: "Aiming Device (Thorn)"
+    - name: "Nettlesome Device"
       picture: Aiming_Device
       power: ATK x 180%
       ap: 18
       maxHits: 1
-    - name: "Burst Emission (Thorn)"
+    - name: "Nettlesome Burst"
       picture: Burst_Emission
       power: ATK x 580%
       ap: 38
       maxHits: 6
-    - name: "Laser Bullet (Thorn)"
+    - name: "Nettlesome Laser"
       picture: Laser_Blast
       power: ATK x 220%
       ap: 20
       maxHits: 3
-    - name: "Gravity Bullet (Thorn)"
+    - name: "Nettlesome Bullet"
       picture: Gravity_Bullet
       power: ATK x 270%
       ap: 24
@@ -1823,7 +1819,7 @@
       element: Dark
       
   rush:
-    name: "Ethereal Burst Emission"
+    name: "Ethereal Energy Burst"
     picture: Ethereal_Burst_Emission_Bridal_Maria
     effects: 
       - desc: ATK +60%
@@ -1876,7 +1872,7 @@
       
 - name: Nel (Bridal)
   cat: gl
-  rating: 7
+  rating: 8
   picture: Bridal_Nel
   weapon: dagger
   ace: true
@@ -1892,7 +1888,7 @@
     grd: 924
 
   talents:
-     - name: "Fleeting Rouge of Falling Petals"
+     - name: "Crimson Blossom Flurry II"
        effects: 
         - desc: Crit Rate +10% when Hit Count is over 100
           all: true
@@ -1915,7 +1911,7 @@
             buff: Crit Rate
             buffCondition: Hit Count > 200
             buffValue: 30
-     - name: "Sincere Devotion"
+     - name: "Sincere Devotion II"
        effects: 
         - desc: Crit Damage +10% when Hit Count is over 100
           all: true
@@ -1938,7 +1934,7 @@
             buff: Crit Damage
             buffCondition: Hit Count > 200
             buffValue: 30
-     - name: "Proper Princess"
+     - name: "A Proper Lady II"
        effects: 
         - desc: ATK +30% during Charge Assault
           meta:
@@ -1954,7 +1950,7 @@
             priority: 1
             buff: Single Target Damage
             buffValue: 20
-     - name: "Secret Dream"
+     - name: "Well Concealed Dream"
        effects: 
         - desc: No Flinching when taking Damage < 10% of Max HP
         - desc: AP Cost -10%
@@ -1964,29 +1960,29 @@
             buffValue: 10
 
   skills:
-    - name: "Sylvan Shot (Bloom)"
+    - name: "Blooming Shot"
       picture: Sylvan_Shot
       power: ATK x 200%
       ap: 20
       maxHits: 8
-    - name: "Flying Guillotine (Bloom)"
+    - name: "Bridal Guillotine"
       picture: Guillotine
       power: ATK x 290%
       ap: 26
       maxHits: 5
-    - name: "Dancing Sword (Bloom)"
+    - name: "Blooming Sword"
       picture: Dancing_Sword
       power: ATK x 460%
       ap: 35
       maxHits: 7
-    - name: "Flower Wheel (Bloom)"
+    - name: "Flower Wheel"
       picture: Flower_Wheel
       power: ATK x 340%
       ap: 28
       maxHits: 12
       
   rush:
-    name: "Flower Rotation Hanaichige"
+    name: "Bouquet of Flowers"
     picture: Pirouette_of_the_First_Spring_Bridal_Nel
     effects: 
       - desc: ATK Damage +40%
