@@ -11,7 +11,7 @@
   stats:
     hp: 13965
     atk: 1747
-    int: 3010
+    int: 3368
     def: 1327
     hit: 1050
     grd: 1148
@@ -19,11 +19,11 @@
   talents:
     - name: "Seaside Enchantress II"
       effects: 
-        - desc: INT +20%
+        - desc: INT +35%
           meta:
             priority: 4
             buff: INT
-            buffValue: 20
+            buffValue: 35
         - desc: Recover allies AP when using offensive symbology
     - name: "Making Waves II"
       effects: 
@@ -37,20 +37,20 @@
             priority: 4
             buff: INT Damage
             buffCondition: Skill Chain 3+
-            buffValue: 30
+            buffValue: 40
     - name: "Cat Ball and Sandals II"
       effects: 
         - desc: ATK damage +20%
           all: true
           meta:
             priority: 1
-            buff: INT Damage
+            buff: ATK Damage
             buffValue: 20
         - desc: INT damage +20%
           all: true
           meta:
             priority: 1
-            buff: ATK Damage
+            buff: INT Damage
             buffValue: 20
         - desc: Nullify "movement speed down" effect
           all: Self & Close Range
@@ -809,7 +809,7 @@
       
 - name: Sarah Jerand
   cat: gl
-  rating: 5
+  rating: 4
   picture: Sarah
   weapon: staff
   limited: false
@@ -1122,7 +1122,7 @@
     
 - name: Relia
   cat: gl
-  rating: 7
+  rating: 8
   picture: Relia
   weapon: staff
   ace: true
@@ -1276,7 +1276,7 @@
       
 - name: Fina
   cat: gl
-  rating: 9
+  rating: 8
   picture: Fina
   weapon: bow
   ace: true
