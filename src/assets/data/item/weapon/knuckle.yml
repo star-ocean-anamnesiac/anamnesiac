@@ -450,6 +450,7 @@
   int: 962
   factors:
     - desc: Imbue Earth Element
+      element: Earth
     - desc: +30% AP recovery on normal attacks
       meta:
         priority: 1
