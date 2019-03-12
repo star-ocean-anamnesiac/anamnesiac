@@ -523,4 +523,27 @@
     So this staff is garbage. We will get a version of Reimi to join Myuria in having ice as their secondary element, but for both you
     want to focus on what they're good at. For INT scaling the winged scepter is better and the only character this weapon is good for
     is if you want to maximise your meme value with Oracle Nel who is an ice based healer. Otherwise it is fodder.
-    
+
+
+- name: Hunter's Catpaws
+  cat: 'gl'
+  star: 5
+  picture: Hunting_Staff_Cat's_Paw
+  atk: 959
+  int: 960
+  factors:
+    - desc: Damage dealt to avians +40%
+      slayer: Bird
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage to Birds
+        buffValue: 40
+    - desc: No flinching during symbology invocation
+    - desc: +10% Stun Chance
+      meta:
+        priority: 4
+        buff: Stun Rate
+        buffValue: 10
+      lb: 5
+  obtained: Gacha
