@@ -275,3 +275,28 @@
   notes: >
     It's a bow for freebie Claude. Very good for him, can be good on Ronyx too. Not great for anyone else but maybe at a stretch Fina
     for the tiny INT scaling boost but that's a realy stretch.
+
+
+- name: Gold-horned Bow
+  cat: 'gl'
+  star: 5
+  picture: Horn_of_Gold
+  atk: 961
+  int: 961
+  factors:
+    - desc: Damage dealt to beasts +40%
+      slayer: Beast
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Beasts
+        buffValue: 40
+    - desc: No flinching when taking damage of 10% HP or less
+    - desc: ATK damage dealt +20% at 100 hits or more
+      meta:
+        priority: 3
+        buff: ATK Damage
+        buffCondition: Hit Count > 100
+        buffValue: 20
+      lb: 3
+  obtained: Gacha
