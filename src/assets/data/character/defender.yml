@@ -135,7 +135,7 @@
 
 - name: Victor Oakville
   cat: gl
-  rating: 5
+  rating: 4
   picture: Victor
   weapon: bns
   star: 5
@@ -259,7 +259,7 @@
 
 - name: Shimada
   cat: gl
-  rating: 1
+  rating: 0
   picture: Shimada
   weapon: bns
   star: 4
@@ -404,7 +404,7 @@
     
 - name: Myuria Tionysus (Summer)
   cat: gl
-  rating: 8.5
+  rating: 10
   picture: Everlasting_Summer_Myuria
   weapon: bns
   ace: true
@@ -420,7 +420,7 @@
     grd: 1050
 
   talents:
-    - name: "Excellent Proportions"
+    - name: "Big Break II"
       effects: 
         - desc: HP +20%
           all: true
@@ -430,30 +430,34 @@
             buffValue: 20
         - desc: Will not flinch to damage under 20% max HP
           all: true
-    - name: "Aroma Suntan Lotion"
+    - name: "Aromatic Sunscreen II"
       effects: 
         - desc: INT damage taken -20%
           all: true
-    - name: "Skillful Temptation"
+    - name: "Great Charisma"
       effects: 
-        - desc: ATK +40% when under aggro
+        - desc: ATK +60% when under aggro
           meta:
             priority: 3
             buff: ATK
-            buffValue: 40
+            buffValue: 60
+            buffCondition: When holding aggro
         - desc: AP cost -20% when under aggro
           meta:
             priority: 3
             buff: AP Cost Reduction
             buffValue: 20
-    - name: "Vacation Pareo"
+            buufCondition: When holding aggro
+        - desc: Rush gauge quota -30%
+    - name: "Beach Skirt Wrap"
       effects:
-        - desc: Single target damage +20% when not under aggro
+        - desc: Single target damage +30% when not under aggro
           all: true
           meta:
             priority: 3
             buff: Single Target Damage
-            buffValue: 20
+            buffValue: 30
+            buffCondition: Not holding aggro
         - desc: Ease of stun +15% when not under aggro
           all: true
 
@@ -497,21 +501,16 @@
       - desc: Recover 15% max HP every 3 seconds
         duration: 20
         all: true
-    power: ATK x 4000%
+    power: ATK x 4500%
     maxHits: 6
     
   notes: >
-      _Summer Myuria comes along to remind us she's the only alt Myuria has gotten even in JP. Which is a tragedy. As a tank SMyu is
-      a solid option. She has a solid ranged combo, and aura wall gives her a good way to contribute to hit counter. Her talents 
-      are a mixture of solid defence with some good offensive ones. They do require for her to hold aggro but her ranged skills help
-      her do that well enough, but taking an accessory which gives taunt will help her do this massively.She also happens to be the
-      only defender who reduces INT damage taken currently. Giving her a unique niche in that regard. Her rush also hits pretty
-      hard which is a nice bonus._
-      
-      
-      _Her biggest downside is her notoriously abysmal rush gain, some healers gain rush faster than her 
-      even it's so bad. In the hands of a very good player this can be offset somewhat, but it requires you to play very well. In 
-      summary Summer Myuria is a solid character but her extremely slow rush gain leaves a lot to be desired._
+      _Summer Myuria comes along to remind us she's the only alt Myuria has gotten even in JP. Which is a tragedy. Now with the 
+      shackles off Myuria becomes quite the solid tank. Her conditional of holding aggro is part of her role so you should be doing it
+      anyway. This gives a big Single target damage boost and herself a massive ATK boost as well as AP reduction. On top of this
+      her rush gain issues have been fixed by cutting the quote required, meaning she can take advantage of her juiced up rush.
+      Plus Summer Myuria still remains one of the best defenders to fight at ranged with due to her solid ranged attacks and she
+      still brings that rare INT damage reduction for the party._
       
       
       **TL DR**
@@ -529,8 +528,6 @@
       
       
       **Cons**
-      
-      - Extremely slow rush gain
       
       - Aura wall is good for hit count, but bad for damage.
       
@@ -849,7 +846,7 @@
     
 - name: Edge Maverick
   cat: gl
-  rating: 7
+  rating: 5
   picture: Edge
   weapon: ohs
   ace: true
@@ -972,7 +969,7 @@
     
 - name: Miki (Princess)
   cat: gl
-  rating: 4
+  rating: 3
   picture: Girl's_Day_Miki
   weapon: bns
   limited: true
@@ -1247,7 +1244,7 @@
       
 - name: Dias (Awakened)
   cat: gl
-  rating: 10
+  rating: 9
   picture: Dias
   weapon: bns
   ace: true
