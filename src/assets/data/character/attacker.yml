@@ -136,7 +136,7 @@
     
 - name: Fidel Camuze
   cat: gl
-  rating: 6
+  rating: 4
   picture: Fidel
   weapon: ohs
   ace: true
@@ -241,7 +241,7 @@
       
 - name: Fidel (Awakened)
   cat: gl
-  rating: 8
+  rating: 7
   picture: Fidel
   weapon: ohs
   ace: true
@@ -379,7 +379,7 @@
 
 - name: Cliff Fittir
   cat: gl
-  rating: 6
+  rating: 4
   picture: Cliff
   weapon: knuckle
   ace: true
@@ -702,7 +702,7 @@
     
 - name: Roddick Farrence
   cat: gl
-  rating: 8
+  rating: 9
   picture: Ratix
   weapon: ohs
   ace: true
@@ -826,7 +826,7 @@
     
 - name: Reimi Saionji (Summer)
   cat: gl
-  rating: 7
+  rating: 9
   picture: Everlasting_Summer_Reimi
   weapon: ohs
   ace: true
@@ -844,23 +844,23 @@
   talents:
     - name: "Mind's Eye View II"
       effects: 
-        - desc: ATK +40% when not in front of target
+        - desc: ATK +55% when not in front of target
           all: true
           meta:
             priority: 1
             buff: ATK
             buffCondition: Not In Front Of Target
-            buffValue: 40
+            buffValue: 55
     - name: "Lethal Swing"
       effects: 
-        - desc: ATK +25% when in front of target
+        - desc: ATK +45% when in front of target
           all: true
           meta:
             priority: 1
             buff: ATK
             buffCondition: In Front Of Target
-            buffValue: 25
-        - desc: Rush Combo Damage +10%
+            buffValue: 45
+        - desc: Rush Combo Damage +15%
           all: true
           meta:
             priority: 1
@@ -868,22 +868,23 @@
             buffValue: 10
     - name: "Handmade Dolls II"
       effects: 
-        - desc: AP recovery from normal attacks +80%
+        - desc: AP recovery from normal attacks +100%
           all: Close Range
           meta:
             priority: 4
             buff: AP Recovery From Normal Attacks
-            buffValue: 80
+            buffValue: 100
         - desc: Nullifies Rush Gauge Reduction Field
           all: Close Range
     - name: "Hit-the-Watermelon"
       effects: 
-        - desc: AP Cost -25% during 3 skill combos or more
+        - desc: AP Cost -50% during 3 skill combos or more
           meta:
             priority: 4
             buff: AP Cost Reduction
             buffCondition: Skill Combo 3+
-            buffValue: 25
+            buffValue: 50
+        - desc: Evasion possible during attack, even while in the air.
 
   skills:
     - name: "Combo Breaker"
@@ -922,33 +923,29 @@
           priority: 4
           buff: Single Target Damage
           buffValue: 40
-    power: ATK x 3500%
+    power: ATK x 4000%
     maxHits: 7
     
   notes: >
-      _Summer Reimi enters the game to make guys drool over her shorts and to be a solid attack buffer. Though time has seen summer
-      Reimi get powercrept little by little her buffs are still solid. AP recovery is always great to have on normals, and 80% is a
-      meaty amount. Her attack buffs are still powerful, especially when not in front of the boss and increasing rush damage is not
-      yet a common buff we see in GL so it's unlikely she'll have that made redundant in most comps. She also has a very powerful
-      post rush buff, only matched by Winter Evelysse at 150+ hit count, and curing status ailments can be relevant in certain fights._
-      
-      
-      _Reimi still has some issues beyond being powercrept. For a start her rush gain is on the slower side. Getting the most out of
-      her attack buff can be awkward as well, and the smoothie spam can make for a less then interesting playstyle. Overall Summer
-      Reimi is still a solid character in GL but is probably looking forward to the summer where hopefully her nerfs will be
-      removed and she may even get some buffs._
-      
+      _Summer Reimi enters the game to make guys drool over her shorts and to be a solid attack buffer. With the shackles taken off
+      Summer Reimi is now much more competitive providing a 45/55 conditional ATK buff, 100% AP recovery on normals for short ranged
+      attackers. She still buffs rush combo damage which still remains a rare buff on GL and links well with her new juiced up rush.
+      Plus she gives 40% Single Target damage to the party post rush and a nice nullification of status ailments which can be useful
+      in certain fights. Overall, while she may not be as good a buffer as 2b, she is certainly close to that level and a welcome
+      addition._
       
       **TL DR**
       
       
       **Pros**
       
-      - Decent ATK buffs
+      - Strong ATK buffs
       
-      - Ap recovery on normals
+      - Ap recovery on normals for close ranged fighters.
       
       - Really powerful post rush buff
+      
+      - Rush combo damage buff
       
       
       **Cons**
@@ -956,6 +953,8 @@
       - Slow rush gain
       
       - Awkward attack buff
+      
+      - Subpar moveset
       
       
       **Rotation**
@@ -966,7 +965,7 @@
     
 - name: Lenneth
   cat: gl
-  rating: 6
+  rating: 4
   picture: Lenneth
   weapon: ohs
   ace: true
@@ -1215,7 +1214,7 @@
    
 - name: Phia Melle
   cat: gl
-  rating: 6
+  rating: 4
   picture: Phia
   weapon: dagger
   limited: false
@@ -1331,7 +1330,7 @@
     
 - name: Albel Nox
   cat: gl
-  rating: 6.5
+  rating: 6
   picture: Albel
   weapon: bns
   ace: true
@@ -1471,7 +1470,7 @@
     
 - name: Ilia Silvestri
   cat: gl
-  rating: 4
+  rating: 3
   picture: Ilia
   weapon: knuckle
   limited: false
@@ -1871,7 +1870,7 @@
     
 - name: Fayt Leingod
   cat: gl
-  rating: 7
+  rating: 5
   picture: Fayt
   weapon: ohs
   ace: true
@@ -1995,7 +1994,7 @@
     
 - name: Michael
   cat: gl
-  rating: 5
+  rating: 4
   picture: Michael
   weapon: knuckle
   ace: true
@@ -2539,7 +2538,7 @@
     
 - name: Lasswell
   cat: gl
-  rating: 7
+  rating: 6
   picture: Lasswell
   weapon: bns
   ace: true
@@ -2884,7 +2883,7 @@
       
 - name: Rena Lanford (Valentine)
   cat: gl
-  rating: 10
+  rating: 8
   picture: Sweet_Cat_Rena
   weapon: knuckle
   ace: true
@@ -3369,7 +3368,7 @@
     
 - name: Rena (Bridal)
   cat: gl
-  rating: 6
+  rating: 8
   picture: Bridal_Rena
   weapon: knuckle
   ace: true
