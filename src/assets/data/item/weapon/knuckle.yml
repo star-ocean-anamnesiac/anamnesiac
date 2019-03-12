@@ -440,4 +440,26 @@
   notes: >
     Another pair of Earth Knuckles, an upgrade on the Gaia Godfists but not worth chasing if you have them. The plant hate can be a nice
     perk as is the sustain. The MLB factor is nice if you have no crit buffer.
-    
+
+
+- name: Radiant Fist
+  cat: 'gl'
+  star: 5
+  picture: Radiant_Left
+  atk: 965
+  int: 962
+  factors:
+    - desc: Imbue Earth Element
+    - desc: +30% AP recovery on normal attacks
+      meta:
+        priority: 1
+        buff: AP Recovery from Normal Attacks
+        buffValue: 30
+    - desc: ATK damage dealt +15% at 100 hits or more
+      meta:
+        priority: 3
+        buff: ATK Damage
+        buffCondition: Hit Count > 100
+        buffValue: 15
+      lb: 5
+  obtained: Gacha
