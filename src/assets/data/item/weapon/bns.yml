@@ -324,3 +324,28 @@
   notes: >
     The weapon made for Lasswell. While very pretty, it isn't as good as it looks. Multiple target damage buffing is pretty bad, the 
     third factor is nice as it's not a common buff, but overall the weapon is kind of lacking.
+
+
+- name: Predator's Saber
+  cat: 'gl'
+  star: 5
+  picture: Predatory_Saber
+  atk: 962
+  int: 960
+  factors:
+    - desc: Damage dealt to beasts +40%
+      slayer: Beast
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Beasts
+        buffValue: 40
+    - desc: Absorbs 5% of damage dealt by normal attacks as HP
+    - desc: +50% AP recovery on normal attacks at 100 hits or more
+      meta:
+        priority: 1
+        buff: AP Recovery from Normal Attacks
+        buffCondition: Hit Count > 100
+        buffValue: 50
+      lb: 3
+  obtained: Gacha
