@@ -1937,3 +1937,63 @@
           buffValue: 50
     power: INT x 2500%
     maxHits: 6
+
+
+- name: Winny
+  cat: gl
+  rating: 0
+  picture: Winny
+  weapon: staff
+  ace: false
+  limited: false
+  star: 3
+
+  stats:
+    hp: 6629
+    atk: 942
+    int: 1222
+    def: 817
+    hit: 581
+    grd: 616
+
+  talents:
+    - name: "Book Smarts"
+      effects: 
+        - desc: ATK damage taken -10%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK Damage Taken Reduction
+            buffValue: 10
+    - name: "Kindness is a Virtue III"
+      effects: 
+        - desc: Recovers 3% HP every 3 seconds
+          all: false
+
+  skills:
+    - name: "Healing"
+      picture: Healing
+      power: INT x 170%
+      ap: 40
+      maxHits: 1
+    - name: "Tornado"
+      picture: Tornado
+      element: Wind
+      power: INT x 460%
+      ap: 35
+      maxHits: 2
+    - name: "Ex Healing"
+      picture: Ex_Healing
+      power: INT x 330%
+      ap: 50
+      maxHits: 1
+      
+  rush:
+    name: "Revised Blast Hurricane"
+    picture: Revised_Blast_Hurricane_Winny
+    element: Wind
+    effects: 
+      - desc: Recovers 100% HP
+        all: true
+    power: INT x 2500%
+    maxHits: 5
