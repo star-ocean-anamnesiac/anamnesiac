@@ -1584,3 +1584,83 @@
           buffValue: 80
     power: INT x 3000%
     maxHits: 5
+
+
+- name: Renier (Scholar)
+  cat: gl
+  rating: 0
+  picture: Manuscript_Renier
+  weapon: tome
+  ace: false
+  limited: false
+  star: 3
+
+  stats:
+    hp: 7525
+    atk: 830
+    int: 1768
+    def: 649
+    hit: 557
+    grd: 497
+
+  talents:
+    - name: "Hidden Secrets III"
+      effects: 
+        - desc: +30% Stun Chance at long range
+          all: false
+          meta:
+            priority: 1
+            buff: Stun Rate
+            buffCondition: Long Range
+            buffValue: 30
+    - name: "Secret Agent Abilities II"
+      effects: 
+        - desc: INT +25%
+          all: false
+          meta:
+            priority: 4
+            buff: INT
+            buffValue: 25
+    - name: "Mysterious Past"
+      effects: 
+        - desc: Symbology casting time -35%
+          all: false
+          meta:
+            priority: 1
+            buff: Cast Time Reduction
+            buffValue: 35
+
+  skills:
+    - name: "Wind Blade"
+      picture: Wind_Blade
+      element: Wind
+      power: INT x 190%
+      ap: 20
+      maxHits: 2
+    - name: "Stone Rain"
+      picture: Stone_Rain
+      element: Earth
+      power: INT x 460%
+      ap: 35
+      maxHits: 5
+    - name: "Blast Hurricane"
+      picture: Blast_Hurricane
+      element: Wind
+      power: INT x 670%
+      ap: 42
+      maxHits: 6
+      
+  rush:
+    name: "Terra Hammer R2"
+    picture: Revised_Terra_Hammer_Manuscript_Renier
+    element: Earth
+    effects: 
+      - desc: INT +80%
+        duration: 20
+        all: false
+        meta:
+          priority: 4
+          buff: INT
+          buffValue: 80
+    power: INT x 3000%
+    maxHits: 6
