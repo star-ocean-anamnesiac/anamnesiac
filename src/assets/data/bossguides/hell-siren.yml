@@ -1,0 +1,96 @@
+
+- name: "Hell Siren"
+  image: boss_vr_siren
+  cat: gl
+  race: Bird
+  
+  isActive: true
+
+  enrage:
+    m1: "7:00"
+    m2: "7:00"
+    	    
+  statusInflictions:
+    - Nothing
+
+  weaknesses:
+    - element: Wind
+      percentWeakness: 25
+    - element: Light
+      percentWeakness: 25
+
+    - status: Frozen
+      vuln: Low
+    - status: Poison
+      vuln: Low
+    - status: Silence
+      vuln: Low
+
+  recommendations:
+    - plain: Anti-Flinch
+    - plain: Wind Damage
+    - plain: Light Damage
+    - plain: Range
+    - plain: Ease of Stun
+
+  desc: >
+    Hell Siren is a boss with many weaknesses, enabling many units to make themselves useful. Just about **anyone** will do well here, but **sword users** are especially strong due to the farmable light sword **Claidheamh Soluis**. **Gun users** can finally enjoy exploiting weaknesses with **Storm Bolt**. **Miki**, **Hana**, and shockingly **Lymle** are also of note here due to their elemental inclinations. Finally, there's **Nel**. I guess. Boss dies so quickly that the poison doesn't particularly help, but hey. You can bring her. You know. Just... have her around for fun. It's a game, after all.
+
+    Anyway, the Hell Siren's main issue is that she starts with four lesser harpies. They're a nuisance. She has a more docile phase above 90%+ HP that gives you an opening to take care of them, just don't take too long or she'll become active.
+    
+    Her attacks are damaging, but also distressingly easy to avoid. The melee attacks are roughest, with the flourish before Macabre Requiem being difficult to detect and her kicks coming out very fast. Her otherwise sluggish speed and much easier to avoid long-range attacks can make kiting with a shooter a more appealing prospect. Just... mind your allies, don't send tornadoes careening into them.
+    
+    The one attack everyone should worry about is her Crushing Charge. It has a deceptively fast startup and does significant damage. Watch for the tell and be ready to dodge.
+    
+    She will die long before there is risk of enrage, unless your team is underpowered _and_auto. But should you run down the timer, Rush Tornado is spammed. It takes a ridiculously long time to cast (enough that you might finish her off before it happens) but the tornadoes cover a large area. Time you dodge right through one of the small gaps between tornadoes to get through it, and keep dpsing.
+  
+  moves:
+    - name: Kick
+      targets: Close
+      m1: true
+      m2: true
+      desc: >
+        Hi-yaaah! Multi-hit melee attack. Fast wind up.
+    
+    - name: Macabre Requiem
+      targets: Close
+      m1: true
+      m2: true
+      desc: >
+        Does a flourish with her wings, then begins singing. Purple energy appears around her that damages and drains HP.
+    
+    - name: Reaping Spark
+      targets: Any
+      m1: true
+      m2: true
+      desc: >
+        Bubbles will appear on top of you and begin popping. Dodge immediately or be flinch-locked.
+    
+    - name: Feather Missile
+      targets: Mid
+      m1: true
+      m2: true
+      desc: >
+        Fires a spray of pink missiles that home lazily onto her target. Misses at close range, so move in.
+    
+    - name: Crushing Charge
+      targets: Any
+      m1: true
+      m2: true
+      desc: >
+        Will fly back and rise up, then perform a blazingly fast charge at her target. Can cross the stage and damage anyone in her path. High damage.
+    
+    - name: Tornado
+      targets: Any
+      m1: true
+      m2: true
+      desc: >
+        Fires a very large tornado at her target. Will damage and knock up anyone in the path.
+    
+    - name: Rush Tornado
+      targets: Any
+      isEnrage: true
+      m1: true
+      m2: true
+      desc: >
+        Curls up into a fetal position and shudders for approx. 5 seconds. Then she fires a wall of tornadoes that storm across the entire stage and cause severe damage. 
