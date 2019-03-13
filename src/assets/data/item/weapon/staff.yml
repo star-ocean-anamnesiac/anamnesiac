@@ -574,3 +574,21 @@
         buffValue: 15
       lb: 5
   obtained: Gacha
+  
+
+- name: Gold Blossom Bunny Rod
+  cat: 'gl'
+  star: 5
+  picture: Flower_Spirit_Gold_Bunny_Rod
+  atk: 529
+  int: 532
+  factors:
+    - desc: +15% damage on Brilliantly Divine Flower
+    - desc: Repel +2
+    - desc: Critical hit chance +5%
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 5
+      lb: 5
+  obtained: Monarch Chimera (Exchange)
