@@ -464,3 +464,25 @@
         buffValue: 15
       lb: 5
   obtained: Gacha
+
+
+- name: Blossom Guards
+  cat: 'gl'
+  star: 5
+  picture: Bloom_Guarder
+  atk: 512
+  int: 509
+  factors:
+    - desc: +15% damage on Floral Fists of Fury
+    - desc: +50% AP recovery on normal attacks
+      meta:
+        priority: 1
+        buff: AP Recovery from Normal Attacks
+        buffValue: 50
+    - desc: ATK +5%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 5
+      lb: 5
+  obtained: Monarch Chimera (Exchange)
