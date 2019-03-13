@@ -547,3 +547,30 @@
         buffValue: 10
       lb: 5
   obtained: Gacha
+
+
+- name: Celebration Charm
+  cat: 'gl'
+  star: 5
+  picture: Celebrate_Chime
+  atk: 959
+  int: 965
+  factors:
+    - desc: Earth damage dealt +40%
+      meta:
+        priority: 4
+        buff: Earth Damage
+        buffValue: 40
+    - desc: Critical hit chance +10%
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 10
+    - desc: INT damage dealt +15% at 100 hits or more
+      meta:
+        priority: 3
+        buff: INT Damage
+        buffCondition: Hit Count > 100
+        buffValue: 15
+      lb: 5
+  obtained: Gacha
