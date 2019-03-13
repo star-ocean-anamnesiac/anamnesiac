@@ -605,3 +605,26 @@
     is decent enough but a lot of swords will serve you better. If you're an ffbe fan you might want to keep Rain's sword for you
     collection.
 
+
+- name: Sawtooth Blade
+  cat: 'gl'
+  star: 5
+  picture: Scratch Blade
+  atk: 960
+  int: 959
+  factors:
+    - desc: Damage dealt to beasts +40%
+      slayer: Beast
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Beasts
+        buffValue: 40
+    - desc: AP cost -10%
+      meta:
+        priority: 1
+        buff: AP Cost Reduction
+        buffValue: 10
+    - desc: Recovers 5% HP every 3 seconds at 100 hits or more
+      lb: 3
+  obtained: Gacha
