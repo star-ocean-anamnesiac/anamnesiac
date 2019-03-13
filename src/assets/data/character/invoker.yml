@@ -1224,14 +1224,14 @@
     grd: 833
 
   talents:
-    - name: "Double Blossom Smile"
+    - name: "Fourfold Smile II"
       effects: 
         - desc: INT +40%
           meta:
             priority: 4
             buff: INT
             buffValue: 40
-    - name: "Wedding Road's Escort"
+    - name: "Escort To The Altar"
       effects: 
         - desc: AP Cost -20%
           meta:
@@ -1256,7 +1256,7 @@
             buff: AP Cost Reduction
             buffCondition: Hit Count > 150
             buffValue: 50
-    - name: "Coronet's Glimmer"
+    - name: "Dazzling Tiara"
       effects:
         - desc: AP recovery on normal +80%
           all: true
@@ -1264,7 +1264,7 @@
             priority: 1
             buff: AP Recovery From Normal Attacks
             buffValue: 80
-    - name: "Orange Colored Buttercups"
+    - name: "Orange Buttercups"
       effects:
         - desc: Symbol invoking time -30%
           meta:
@@ -1274,25 +1274,25 @@
         - desc: No flinching when casting Symbology.
 
   skills:
-    - name: "Crush"
+    - name: "Colourful Crush"
       picture: Crush
       element: Earth
       power: INT x 180%
       ap: 18
       maxHits: 2
-    - name: "Summon Comet"
+    - name: "Brilliant Comet"
       picture: Conjure_Comet
       element: Light
       power: INT x 230%
       ap: 22
       maxHits: 5
-    - name: "Sunflare"
+    - name: "Brilliant Sunflare"
       picture: Sunflare
       element: Light
       power: INT x 580%
       ap: 38
       maxHits: 6
-    - name: "Divine Flower"
+    - name: "Brilliantly Divine Flower"
       picture: Divine_Flower
       element: Earth
       power: INT x 720%
@@ -1300,7 +1300,7 @@
       maxHits: 6
       
   rush:
-    name: "Cutting Cake"
+    name: "Cutting of the Cake"
     picture: Cutting_Cake_Bridal_Eve
     element: Earth
     effects: 
