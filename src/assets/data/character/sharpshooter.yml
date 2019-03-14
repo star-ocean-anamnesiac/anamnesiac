@@ -2168,3 +2168,81 @@
     power: ATK x 3000%
     maxHits: 7
         
+
+- name: Boris
+  cat: gl
+  rating: 0
+  picture: Boris
+  weapon: dagger
+  ace: false
+  limited: false
+  star: 3
+
+  stats:
+    hp: 9020
+    atk: 1878
+    int: 867
+    def: 1689
+    hit: 728
+    grd: 520
+
+  talents:
+    - name: "Professional Assassin"
+      effects: 
+        - desc: Normal attacks have +10% chance to poison
+          all: false
+          meta:
+            priority: 4
+            buff: Poison Attack Chance
+            buffValue: 10
+    - name: "All Business"
+      effects: 
+        - desc: Critical hit chance +10%
+          all: true
+          meta:
+            priority: 3
+            buff: Crit Rate
+            buffValue: 10
+    - name: "Bloodcurdling Smirk"
+      effects: 
+        - desc: AP cost -15%
+          all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 15
+    - name: "Insight"
+      effects: 
+        - desc: Repel +1
+          all: false
+ 
+ skills:
+    - name: "Focused Shockwave"
+      picture: Focused_Shockwave
+      power: ATK x 190%
+      ap: 20
+      maxHits: 5
+    - name: "Dancing Sword"
+      picture: Dancing_Sword
+      power: ATK x 460%
+      ap: 35
+      maxHits: 7
+    - name: "Mirror Blade"
+      picture: Mirror_Blade
+      power: ATK x 680%
+      ap: 40
+      maxHits: 6
+
+  rush:
+    name: "Revised Unholy Terror"
+    picture: Revised_Unholy_Terror_Boris
+    effects:
+      - desc: ATK +60%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: ATK
+          buffValue: 60
+    power: ATK x 1500%
+    maxHits: 5
