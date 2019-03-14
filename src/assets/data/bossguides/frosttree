@@ -1,0 +1,101 @@
+
+- name: "Frost Tree"
+  image: frosttree
+  cat: gl
+  race: Plant
+  
+  isActive: true
+
+  enrage:
+    m1: "7:00"
+    m2: "7:00"
+    	    
+  statusInflictions:
+    - Freeze
+
+  weaknesses:
+    - element: Fire
+      percentWeakness: 25
+
+    - status: Poison
+      vuln: Low
+    - status: Curse
+      vuln: Low
+
+  recommendations:
+    - plain: Range
+    - plain: Poison
+    - plain: Anti-Flinch
+    - plain: Fire
+    - plain: Dispel
+
+  desc: >
+    Frost Tree has adds, and remains idle until attacked. Kill the adds quickly, because they will use a breath attack that causes Frozen (which will lower movespeed and open you up to critical damage from non-Ice attasks). Once active, he will use several attacks.
+
+    Frost tree is deceptively fast, but easily kited. Unfortunately, he has a fast cast time, and an even faster cast animation with near-instant spells. So if he faces you, be ready to dodge immediately, before you even see a spell effect. If someone in your party is caught in Deep Freeze or Vine Whip, you can Rush to save them from death. He is vulnerable to poison, which will help deplete his considerable HP.
+    
+    It is dangerous to bring units with high animation lock such as Cliff, and having too many melee can result in the entire group eating Earth Glaives or Deep Freeze's. It is recommended to bring ranged units and stay spread out to avoid this.
+    
+    Finally, he has an unlisted buff that takes 25% less damage from ATK-based sources. Maria and Tynave are the only counters to this, as their Rush can dispel enemy buffs.  Make sure to dispel this buff quickly so your attacker/shooter allies can deal full damage.
+    
+    His enrage mode is simply the regular AI, but with far higher damage.
+  
+  moves:
+    - name: Vine Whip
+      targets: Close
+      m1: true
+      m2: true
+      desc: >
+        Flails his vines around, juggling anyone around him.
+    
+    - name: Deep Freeze
+      targets: Long
+      isSymbology: true
+      m1: true
+      m2: true
+      desc: >
+        Area spell that flinches his target via constant tick damage and ends in one high damage burst. Causes Frozen.
+
+    - name: Arctic Impact
+      targets: Long
+      isSymbology: true
+      m1: true
+      m2: true
+      desc: >
+        A more damaging variant of Deep Freeze that bursts faster.
+    
+    - name: Permafrost
+      targets: Close
+      m1: true
+      m2: true
+      desc: >
+        Spawns multiple Deep Freeze's around the tree that deal less damage when they explode.
+    
+    - name: Earth Glaive
+      targets: Long
+      isSymbology: true
+      m1: true
+      m2: true
+      desc: >
+        Area spell that instantly juts a spike upward beneath the target for high damage.
+    
+    - name: Pome Bomb
+      targets: Mid
+      m1: true
+      m2: true
+      desc: >
+        Launches fireballs from overhead that rain upon the target in an area.
+    
+    - name: Berry Blast
+      targets: Mid
+      m1: true
+      m2: true
+      desc: >
+        This variant of Pome Bomb lingers on the ground and explodes for area of effect damage.
+        
+    - name: Fruit Missile
+      targets: Mid
+      m1: true
+      m2: true
+      desc: >
+        This variant of Pome Bomb homes in on its target.
