@@ -58,9 +58,10 @@
       m2: true
       desc: >
         Does a flourish with her wings, then begins singing. Purple energy appears around her that damages and drains HP.
-    
+
     - name: Reaping Spark
       targets: Any
+      isSymbology: true
       m1: true
       m2: true
       desc: >
@@ -82,6 +83,7 @@
     
     - name: Tornado
       targets: Any
+      isSymbology: true
       m1: true
       m2: true
       desc: >
@@ -89,6 +91,7 @@
     
     - name: Rush Tornado
       targets: Any
+      isSymbology: true
       isEnrage: true
       m1: true
       m2: true
