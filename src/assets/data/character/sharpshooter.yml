@@ -2215,8 +2215,8 @@
       effects: 
         - desc: Repel +1
           all: false
- 
- skills:
+
+  skills:
     - name: "Focused Shockwave"
       picture: Focused_Shockwave
       power: ATK x 190%
