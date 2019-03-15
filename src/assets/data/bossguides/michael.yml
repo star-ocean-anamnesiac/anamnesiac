@@ -2,7 +2,7 @@
 - name: "Michael Descends"
   image: michael
   cat: gl
-  race: Humanoid
+  race: Human
   
   isActive: true
 
