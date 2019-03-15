@@ -1,0 +1,132 @@
+
+- name: "Michael Descends"
+  image: michael
+  cat: gl
+  race: Humanoid
+  
+  isActive: true
+
+  enrage:
+    m1: "7:00"
+    m2: "7:00"
+    	    
+  statusInflictions:
+    - Nothing
+
+  weaknesses:
+    - element: Ice
+      percentWeakness: 50
+
+  resistances:
+    - element: Fire
+      percentWeakness: 90
+    - element: Lightning
+      percentWeakness: 50
+    - element: Wind
+      percentWeakness: 50
+    - element: Earth
+      percentWeakness: 50
+    - element: Light
+      percentWeakness: 50
+    - element: Dark
+      percentWeakness: 50
+
+  recommendations:
+    - plain: Ice Damage
+    - plain: Range
+    - plain: Ease of Stun
+
+  desc: >
+    Pretty much any unit that can bring ice damage will do. That means Nel, Clair, Myuria (Yes, Myuria has ice spells!) and others. His high resistance to other elements discourages the likes of Storm Bolt, so if you're not rocking ice then bring a non-elemental weapon. Even a 4 star will do. You'll thank yourself later. Unfortunately for Roddicks, Michael is a small target, so make sure you're running Air Slash and Double Slash.
+
+    Michael uses fire attacks almost exclusively, but has a -80% Fire Resistance Reduction aura so the Fire Armlet will not nullify all of his damage.
+
+    Thankfully this is not a difficult or involved fight. Michael is easily kited across the battlefield with long stretches of simply chasing his target. It is also a buggy fight, where lag can result in a uselessly moonwalking Michael or party members intermittently experiencing Spicule while others have him stand there like a punching bag. Basically, much about this fight is working against him.
+
+    Though he can be tanked normally, it's just easier to leave that job to a ranged character like Clair or Maria. Melee units would have to deal with his annoying Pyroclast Punch and Bosom Blow, which have fast startups and do large damage (assuming you don't outbulk this fight). Melee non-defenders should try to stay behind him for least likelihood to find themselves between him and his target.
+
+    I would be remiss not to mention Spicule, his signature attack. It's the most telegraphed attack in the game, with not only a dramatic startup but seconds of Michael in the sky. Learning to dodge Spicule is essential to victory (assuming you don't outbulk this fight). Run to the edge of the map and watch his shadow. Wait until you see it coming down, then begin to dodge against the wall repeatedly. If you do it right, you'll take a little bit of tick damage at most. The initial Spicule hit is the one that is 100% must-avoid, because it is the one that will break flinch and may lead to death.
+
+    If you foresee yourself or your team being unable to handle Spicule, you have the option of rushing to stop the attack entirely. Unfortunately, that won't help you on Misery 2+, because there he will open with Incineration Mode and then Spicule.
+
+    Solar Storm, his enrage, is basically like Spicule but more dramatic. The timing is different, but the attack is dodged much the same.
+
+    Not much else to say. He's a pretty hot guy.
+  
+  moves:
+    - name: Pyroclast Punch
+      targets: Close
+      m1: true
+      m2: true
+      desc: >
+        He performs five fire-charged melee attacks.
+    
+    - name: Firefest
+      targets: Long
+      m1: true
+      m2: true
+      desc: >
+        Leaps and flies away from his target, while lobbing multiple fireballs at them. The fireballs do two hits of damage. There is a second variant with the same name on M2+.
+
+    - name: Bosom Blow
+      targets: Any
+      m1: true
+      m2: true
+      desc: >
+        Becomes so hot that he can't contain all this heat. It just kind of explodes around him.
+    
+    - name: Lava Flow
+      targets: Mid
+      m1: true
+      m2: true
+      desc: >
+        Pounds the ground and causes an explosion around his target. The explosion will launch and juggle you for Michael's amusement. Large damage. Best to dodge before his fist hits the ground or simply keep moving.
+    
+    - name: Oculus Flare
+      targets: Long
+      m1: true
+      m2: true
+      desc: >
+        Will stop and reel back his fist for half a second, then fling a large and slow moving fireball that homes towards its target. It disappears after a number of "hits" or enough time elapses, which means it cannot be detonated by dodging into it.
+    
+    - name: Incineration
+      targets: Any
+      m1: true
+      m2: true
+      desc: >
+        Stands still and surrounds self with prominent fire. Afterward, will have a fiery aura around him. This activates Spicule. This can be dispelled.
+    
+    - name: Spicule
+      targets: Any
+      isEnrage: true
+      m1: true
+      m2: true
+      desc: >
+        Stands still and absorbs fire from the ground. Will launch into the air. After approx 3 seconds, will fall back down and devastate the entire stage with a fiery explosion that hits multiple times. Will warm you up to your bones. Time your dodging by watching his shadow while he's in the air. Used immediately after Incineration Mode and then at fixed intervals.
+    
+    - name: Moonwalk
+      targets: Any
+      m1: true
+      m2: true
+      desc: >
+        Michael is bad, and he knows it.
+    
+    - name: Firefest II
+      targets: Long
+      m2: true
+      desc: >
+        Leaps and flies towards his target, lobbing fireballs onto his destination--these fireballs will linger on the ground.
+    
+    - name: Flare Impact
+      targets: Close
+      m2: true
+      desc: >
+        Holds a hand high and shoots little fire sparks that surround him in a diamond formation. They will eventually explode into fire pillars that do large 
+    
+    - name: Solar Storm
+      targets: Any
+      isEnrage: true
+      m1: true
+      m2: true
+      desc: >
+        Looses a mighty cry, then hovers and charges up with giant fireballs for approx 5 seconds. He will then fire a massive laser into the sky that rains fire pillars all over the stage for fatal damage.
