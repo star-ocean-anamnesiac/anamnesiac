@@ -2246,3 +2246,70 @@
           buffValue: 60
     power: ATK x 1500%
     maxHits: 5
+
+
+- name: Katarina
+  cat: gl
+  rating: 0
+  picture: Katarina
+  weapon: bow
+  ace: false
+  limited: false
+  star: 3
+
+  stats:
+    hp: 8421
+    atk: 1153
+    int: 840
+    def: 863
+    hit: 683
+    grd: 522
+
+  talents:
+    - name: "Shrewd Tactician's Wit"
+      effects: 
+        - desc: INT -15%
+          all: Enemies
+          meta:
+            priority: 1
+            buff: Enemy INT Reduction
+            buffValue: 15
+    - name: "Impeccable Skill"
+      effects:
+        - desc: +15% Stun Chance
+          all: false
+          meta:
+            priority: 1
+            buff: Stun Rate
+            buffValue: 15
+        
+  skills:
+    - name: "Sonic Thorn"
+      picture: Sonic_Thorn
+      power: ATK x 200%
+      ap: 20
+      maxHits: 2
+    - name: "Crimson Squall"
+      picture: Crimson_Squall_I
+      power: ATK x 250%
+      ap: 24
+      maxHits: 9
+    - name: "Crescent Wings"
+      picture: Crescent_Wings
+      power: ATK x 230%
+      ap: 24
+      maxHits: 2
+
+  rush:
+    name: "Revised Savage Sparrows"
+    picture: Revised_Savage_Sparrows_Katarina
+    effects:
+      - desc: DEF -30%
+        duration: 20
+        all: Enemies
+        meta:
+          priority: 1
+          buff: Enemy DEF Reduction
+          buffValue: 30
+    power: ATK x 3000%
+    maxHits: 9
