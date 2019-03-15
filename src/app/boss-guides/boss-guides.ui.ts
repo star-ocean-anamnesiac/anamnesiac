@@ -131,7 +131,7 @@ import { BossGuide } from '../models/bossguide';
                 <ng-container *ngIf="weakness.status">
                   <app-appicon [name]="'debuff-' + resistance.status.toLowerCase()"
                               [scaleX]="0.25"
-                              [scaleY]="0.25"></app-appicon> {{ resistance.status }} 
+                              [scaleY]="0.25"></app-appicon> {{ resistance.status }}
                     <span *ngIf="resistance.vuln">({{ resistance.vuln }})</span>
                 </ng-container>
               </li>
