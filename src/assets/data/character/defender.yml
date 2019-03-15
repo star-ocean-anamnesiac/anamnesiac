@@ -1459,3 +1459,55 @@
     power: ATK x 1500%
     maxHits: 5
     
+
+- name: Renier
+  cat: gl
+  rating: 0
+  picture: Renier
+  weapon: bns
+  ace: false
+  limited: false
+  star: 3
+
+  stats:
+    hp: 12003
+    atk: 1166
+    int: 817
+    def: 1299
+    hit: 438
+    grd: 586
+
+  talents:
+    - name: "Enchanting Scents VI"
+      effects: 
+        - desc: Status ailment nullification (90 seconds)
+          all: Close Range
+        - desc: No flinching from damage taken at 15% HP or less
+          all: Close Range
+
+  skills:
+    - name: "Mirror Blade"
+      picture: Mirror_Blade_II
+      power: ATK x 610%
+      ap: 38
+      maxHits: 5
+    - name: "Vampiric Flash"
+      picture: Vampiric_Flash
+      power: ATK x 220%
+      ap: 32
+      maxHits: 6
+    - name: "Bloodstorm Revolution"
+      picture: Bloodstorm_Revolution
+      power: ATK x 550%
+      ap: 38
+      maxHits: 10
+
+  rush:
+    name: "Revised Mirror Blade"
+    picture: Revised_Mirror_Blade_Renier
+    effects:
+      - desc: Nullifies status ailments
+        duration: 20
+        all: true
+    power: ATK x 2000%
+    maxHits: 5
