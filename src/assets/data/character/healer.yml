@@ -2058,3 +2058,72 @@
         all: true
     power: INT x 2500%
     maxHits: 10
+
+
+- name: Sidonius
+  cat: gl
+  rating: 0
+  picture: Sidonius
+  weapon: staff
+  ace: false
+  limited: false
+  star: 3
+
+  stats:
+    hp: 7525
+    atk: 952
+    int: 1379
+    def: 728
+    hit: 574
+    grd: 611
+
+  talents:
+    - name: "Gentleman's Acumen II"
+      effects: 
+        - desc: INT +15%
+          all: false
+          meta:
+            priority: 4
+            buff: INT
+            buffValue: 15
+    - name: "Troubleshooter III"
+      effects: 
+        - desc: Symbology casting time -30%
+          all: false
+          meta:
+            priority: 1
+            buff: Cast Time Reduction
+            buffValue: 30
+    - name: "A Gentleman's Pride"
+      effects: 
+        - desc: 80% chance of surviving a lethal attack at 10% HP or more
+          all: false
+
+  skills:
+    - name: "Healing"
+      picture: Healing
+      power: INT x 170%
+      ap: 40
+      maxHits: 1
+    - name: "Plunging Fire Bolts"
+      picture: Fire_Bolts
+      element: Fire
+      power: INT x 200%
+      ap: 20
+      maxHits: 6
+    - name: "Antidote"
+      picture: Antidote
+      power: Cure Poison
+      ap: 20
+      maxHits: 1
+      
+  rush:
+    name: "Revised Volcanic Burst"
+    picture: Revised_Volcanic_Burst_Sidonius
+    element: Fire
+    effects: 
+      - desc: 20% HP recovery every 4 seconds
+        duration: 20
+        all: true
+    power: INT x 2000%
+    maxHits: 13
