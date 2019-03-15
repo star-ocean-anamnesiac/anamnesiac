@@ -80,6 +80,9 @@ export interface BossGuide {
   // the boss weaknesses
   weaknesses: Weakness[];
 
+  // the boss resistances
+  resistances?: Weakness[];
+
   // the status effects the boss inflicts
   statusInflictions?: string[];
 

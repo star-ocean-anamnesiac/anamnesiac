@@ -41,6 +41,22 @@ test('All boss guides have valid information', t => {
           t.true(fs.existsSync(`src/assets/icons/debuff/debuff-${weakness.status.toLowerCase()}.png`), 'guide must reference a valid status' + parenName);
         }
       });
+      
+      if(guide.resistances) {
+        guide.resistances.forEach(resistance => {
+          t.truthy(resistance.plain || resistance.element || resistance.status, 'resistance.plain, resistance.element or resistance.status must be set' + parenName);
+
+          if(resistance.element) {
+            t.truthy(resistance.percentWeakness, 'resistance.percentWeakness must be set if element is set' + parenName);
+            t.true(fs.existsSync(`src/assets/icons/element/el-${resistance.element.toLowerCase()}.png`), 'guide must reference a valid element' + parenName);
+          }
+
+          if(resistance.status) {
+            t.truthy(resistance.vuln, 'resistance.vuln must be set if status is set' + parenName);
+            t.true(fs.existsSync(`src/assets/icons/debuff/debuff-${resistance.status.toLowerCase()}.png`), 'guide must reference a valid status' + parenName);
+          }
+        });
+      }
 
       guide.moves.forEach(move => {
         t.truthy(move.name, 'move.name must be set' + parenName);
