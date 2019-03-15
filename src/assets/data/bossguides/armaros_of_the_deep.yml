@@ -1,0 +1,108 @@
+
+- name: "Armaros of the Deep"
+  image: armaros
+  cat: gl
+  race: Insect
+  
+  isActive: false
+
+  enrage:
+    m1: "7:00"
+    m2: "7:00"
+    	    
+  statusInflictions:
+    - Paralysis
+    - Poison
+
+  weaknesses:
+    - element: Wind
+      percentWeakness: 20?
+    - element: Light
+      percentWeakness: 20?
+
+    - status: Silence
+      vuln: Low
+
+  recommendations:
+    - plain: Fast attacks
+    - plain: Skills that travel through enemies
+    - plain: Characters with long dashes
+    - plain: Wind damage
+    - plain: Light damage
+
+  desc: >
+    The best way to tank Armaros is to use ranged sharpshooters like **Maria** and **Halloween Victor** due to his close range attacks being a bit quick and hard hitting. If tanking at range, be sure to pay attention to Reaping Spark and Gale Breath, as being caught by these will be dangerous without a defender for anti-flinch. If tanking in melee range, be wary of Supersonic Waves and Downward Swing as they can be quick and hit hard. Armaros will mostly stay in one place if there's a melee tank so most characters can be used, especially characters with skills like **Phia**'s Liquid Bite that can travel through enemies, as they will deal extra hits. Weapons to use for this fight are wind and light imbue weapons. Both elements deal the same amount of bonus damage, so either is fine to take into the fight.
+
+    Attacks to watch out for in this fight are Toxic Breath, Reaping Spark, Gale Blast, Tornado, and Spawn. Toxic Breath is fairly easy to dodge, but if you're caught in it, especially without anti-flinch, you may become paralyzed. The paralysis lasts quite a bit and will leave you vulnerable to more attacks, so if you end up paralyzed you're in an extremely dangerous situation.
+
+    Reaping Spark and Gale Blast are dangerous skills that hit hard especially if you flinch, as you're unable to dash out of them. If you don't have anti-flinch in the party, pay extremely close attention to these two skills and prepare to dodge well.
+
+    Tornado sounds easy to dodge if you've fought the boss Harpy, but Armaros' Tornado is slightly different. This tornado will curve and home in slightly at Armaros' target. Pay attention if you're the target and prepare to dash a few times.
+
+    Lastly, we have Spawn. In addition to being unsettling, Spawn can be deadly if you underestimate it. The insects may be slow but if you choose not to dodge, you may find yourself poisoned as they hit you. In addition to this, they may turn around and hit you again if you were hit early into their spawning.
+
+  moves:
+    - name: Downward Swing
+      targets: Close
+      m1: true
+      m2: true
+      desc: >
+        Armaros raises his two front legs and slams them down in front of him.
+
+    - name: Supersonic Waves
+      targets: Close
+      m1: true
+      m2: true
+      desc: >
+        Armaros releases a scream which creates sound waves and damages targets in front of him.
+
+    - name: Toxic Breath
+      targets: Close, Mid
+      m1: true
+      m2: true
+      desc: >
+        Armaros releases an orange gas in front of him damaging anyone caught by it. May cause paralysis.
+
+    - name: Spawn
+      targets: Any
+      m1: true
+      m2: true
+      desc: >
+        Armaros fires three orbs which spawn insects upon impact with the ground. The insects will chase the intended target for a few seconds, after which they will retreat into the ground.
+
+    - name: Tornado
+      targets: Any
+      isSymbology: true
+      m1: true
+      m2: true
+      desc: >
+        Armaros channels symbology for a few seconds and releases a tornado at his target. Slight homing on intended target.
+
+    - name: Reaping Spark
+      targets: Any
+      isSymbology: true
+      m1: true
+      m2: true
+      desc: >
+        Armaros channels symoblogy for a few seconds and spawns dark orbs on top of his target. The orbs will start popping right away.
+
+    - name: Gale Blast
+      targets: Any
+      m1: true
+      m2: true
+      desc: >
+        Armaros jumps backwards and fires a funnel of wind at his target.
+
+    - name: Tetra Gale
+      targets: Any
+      m2: true
+      desc: >
+        Armaros jumps backwards and fires funnels of wind. One straight and two diagonally.
+
+    - name: Mother Earth's Fury
+      targets: Any
+      isEnrage: true
+      m1: true
+      m2: true
+      desc: >
+        The signal that enrage has begun. Armaros will attack more frequently and all of his attacks will do massive damage. 
