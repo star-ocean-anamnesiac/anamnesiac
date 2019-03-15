@@ -1,0 +1,118 @@
+- name: "Jie Revorse"
+  image: jie_revorse
+  cat: gl
+  race: Machine
+
+  isActive: false
+
+  enrage:
+    m1: "7:00"
+    m2: "7:00"
+    
+  statusInflictions:
+    - Paralysis
+
+  weaknesses:
+    - element: Lightning
+      percentWeakness: 30
+
+    - status: Paralysis
+      vuln: Low
+   
+  recommendations:
+    - plain: Range
+    - plain: Fast Attacks
+    - plain: Lightning Damage
+    
+  desc: >
+    This Fargettian Dictator over here is fast and dangerous. He's best tanked by a ranged unit like Maria or Clair, who can kite him and bait out his ridiculous instant Rush attack. Because he moves around a lot, he isn't terribly friendly to melee characters or invokers. That said, Myuria can cover such a huge range with Plasma Cyclone that it almost doesn't matter. Roddick is also notable because of his primary lightning damage and incredible stun ability.
+
+    Jie's most common attack is his Rush, and he likes to open with it. So if you're the host, be ready to dodge as soon as you gain control, or you might take a cheap shot to the face.
+
+    For all this, he'll go down fast, so you might not see his most dangerous attacks, but I'll document them anyway:
+
+    When Jie enters Alert Mode, you'll have to worry about Unidentified Signal and Rocket Punch. Signal is aggravating because it comes out with little warning and the dodge window is small. You want to be ready to dodge repeatedly as soon as he hops to avoid the paralysis and damage. Rocket Punch is a rare attack that is easily avoided, and the least threatening of the two by far. You have literally an eternity to get out of the way when he fires his fists.
+
+    Jie will signal his enrage with Annihilation Mode, and then continue his usual AI only his attacks do fatal damage. However, he will also perform Exploding Ground at fixed intervals. This can be handled by canceling it with a Rush Combo, or by dodging repeatedly at the edge of the stage during the explosion.
+
+  moves:
+    - name: Rush
+      targets: Mid
+      m1: true
+      m2: true
+      desc: >
+        Instantly charges his target. He doesn't have a tell for this other than moving into range.
+        
+    - name: Windup Blow
+      targets: Close
+      m1: true
+      m2: true
+      desc: >
+        Swings both fists wildly while charging forward. This also has no tell, comes out instantly and covers a large distance.
+        
+    - name: Somersault Kick
+      targets: Close
+      m1: true
+      m2: true
+      desc: >
+        Does a backflip and kicks his target with a jet of blue exhaust.
+        
+    - name: Spin n' Slam
+      targets: Close
+      m1: true
+      m2: true
+      desc: >
+        Does a ground pound, damaging anyone around him. Then does a spinning attack, also damaging anyone around him.
+        
+    - name: Artillery
+      targets: Any
+      isSymbology: true
+      m1: true
+      m2: true
+      desc: >
+        Assumes a T pose, then fires missiles at his target. This is similar to Crystal Guardian's shoulder missiles, and can be dodged the same way: by moving in on him.
+        
+    - name: Alert Mode
+      targets: Any
+      isSymbology: true
+      m1: true
+      m2: true
+      desc: >
+        Assumes a T pose and gains a red and black coloration, enabling Unidentified Signal and Rocket Punch. Alert Mode can be dispelled.
+        
+    - name: Unidentified Signal
+      targets: Any
+      m1: true
+      m2: true
+      desc: >
+        Does a short hop and then sound waves will appear on top of him. If you aren't ready to dodge, expect to be struck multiple times and paralyzed.  This hits the entire battlefield.
+        
+    - name: Rocket Punch
+      targets: Close
+      m1: true
+      m2: true
+      desc: >
+        Rises into the air and fires both fists into the ground. After a delay they explode, causing massive damage if you are somehow still around them.
+        
+    - name: Annihilation Mode
+      targets: Any
+      isEnrage: true
+      m1: true
+      m2: true
+      desc: >
+        Same animation as Alert Mode. Signals Jie Revorse has enraged. Enables Exploding Ground and Deadly Artillery.
+        
+    - name: Deadly Artillery
+      targets: Any
+      m1: true
+      m2: true
+      desc: >
+        This is Artillery, except it does fatal damage. And it has a different name!
+        
+    - name: Exploding Ground
+      targets: Any
+      isEnrage: true
+      m1: true
+      m2: true
+      desc: >
+        Punches into the ground and becomes idle. A red shockwave will spread around him and after a long delay, an explosion will rock the entire stage and cause massive damage.
