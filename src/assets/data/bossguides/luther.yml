@@ -1,0 +1,124 @@
+- name: "Luther Lansfeld"
+  image: luther
+  cat: gl
+  race: Divinity
+
+  isActive: false
+
+  enrage:
+    m1: "7:00"
+    m2: "7:00"
+    
+  statusInflictions:
+    - Nothing
+
+  weaknesses:
+    - element: Fire
+      percentWeakness: 25
+
+    - element: INT Damage
+      percentWeakness: 20
+
+    - status: Poison
+      vuln: Low
+   
+  recommendations:
+    - plain: Fire Damage
+    - plain: Range
+    - plain: Fast Rush Build
+    - plain: Poison Application
+    
+  desc: >
+    Luther Lansfeld is probably our first tough permanent boss. He is largely about fast attacks and lingering AoEs, so it's a good idea to have mobile ranged characters handle aggro. Melee characters are better off in a non-aggro role because his fast and deadly melee attacks make it so being in front of him is very dangerous. As most of his attacks are burst damage, anti-flinch doesn't do much good. The only attack they'll deal with sufficiently is Laser Beams and that is the least of your worries.
+
+    Recommended kiters include Maria and Vampire Viktor. 2B is especially ideal for this fight despite being off-element due to her flexibility--she does excellent damage at range or in melee. Roddick is off-ele, but Luther stuns easily so there is that--just beware his small hitboxes. Sophia is notable for her extreme fire damage. and party buffing capability. Also due to his INT DMG vulnerability, Myuria and Faize can deal quite a bit of damage despite being off-element. There's also R-R-R-R-R-R-Lymle for fire coverage if you lack Sophia. There are 4 star fire dual swords available for Devil Clair as well.
+
+    It's worth noting that high animation lock moves like Victory Terror should be used carefully. Moves that are on the ground at least can be canceled by dodging if Luther suddenly turns to face you, And I can't stress this enough, don't stay in front of him unless you're the tank.
+
+    The Luther fight begins with him using his melee attacks. He can do them in singles or he can chain them together like he's in a fighting game or something. Generally, this should be your first hint that being in front of him is a terrible idea. Maybe he'll cast Laser Beams if you're especially unlucky--if you're the red target, wait for the ground to darken beneath you and dodge out of it. Multiple times if necessary.
+
+    But it gets worse once he uses Judgment at 90% or after enough time passes. Yes, that was his docile phase.
+
+    Orbital Satellite and Perfect Symmetry have tells that are almost indistinguishable from each other, so pay attention to the names to know which attack is coming. Orbital Satellite is painful enough for ranged characters that you may want to Rush to clear that headache from the stage entirely. Otherwise ranged characters should note that the orbs come out at Luther's side's. Move away and in on Luther as needed. Symmetry is just a matter of dodging away multiple times (they are large hitboxes) when he releases them. Melee characters are generally okay during this phase if they avoid aggro.
+
+    It's inevitable that he will use his signature attack Insanity Prelude. It is an ten second long attack that requires some timing to dodge, which is too much to ask from most pugs, so the best approach might be to just Rush it away. This is where a good Nel or Maria can really shine. If you're stuck with no meter and no hope, straddle the edge of the stage and begin dodging once you see any blue at all. Don't stop until the screen is full white and be ready to react if Luther is a jerk and follows up.
+
+    His enrage is just the usual AI that does millions of damage, so if you have his pattern down you could go on forever.
+
+  moves:
+    - name: Dispatch
+      targets: Close
+      m1: true
+      m2: true
+      desc: >
+        Does a swing of his spear and a purple wave arcs his front at close range. Very fast, will knock up and back. May follow this up immediately with Air Slash, Drastic Divide or Expansion Force.
+        
+    - name: Backwards Strike
+      targets: Close
+      m1: true
+      m2: true
+      desc: >
+        A purple wave arcs behind him after a short delay, dealing damage at close range. Beware his back if you see this attack.
+        
+    - name: Decisive Blow
+      targets: Any
+      m1: true
+      m2: true
+      desc: >
+        Faces his opponent and delays for about 2.5 seconds, then thrusts his spear. A purple wave shoots down the stage towards his target. Very fast. Does much higher damage with the thrust than the wave. May follow this up immediately with Expansion Force or Drastic Divide.
+        
+    - name: Flaming Divide
+      targets: Any
+      m1: true
+      m2: true
+      desc: >
+        Does a mighty flap of his wings and sends a wave of fire down the stage. Crosses the stage and lingers for a bit.
+        
+    - name: Expansion Force
+      targets: Close
+      m1: true
+      m2: true
+      desc: >
+        Reels back his wings and then punches the ground with each "finger", causing multiple explosions. Hits at close/mid range. Large damage.
+        
+    - name: Laser Beams
+      targets: Any
+      isSymbology: true
+      m1: true
+      m2: true
+      desc: >
+        Creates a star above the target that rains flinching laser beams down upon that location. Covers a large area. Lingers.
+        
+    - name: Position of Power
+      targets: Any
+      m1: true
+      m2: true
+      desc: >
+        Surrounds himself with purple energy. This is a signal that Galesheen Blade, Insanity Prelude, Perfect Symmetry and Orbital Satellite are enabled.
+        
+    - name: Galesheen Blade
+      targets: Close
+      m1: true
+      m2: true
+      desc: >
+        This is horizontal attack, except there is a second purple arc at mid-range immediately after the first. Very fast. Be wary.
+        
+    - name: Perfect Symmetry
+      targets: Long
+      m1: true
+      m2: true
+      desc: >
+        Bunches up his wings and gathers yellow energy into them (the wings will be held higher & closer than with Orbital Satellite).  At the 5 second mark he will release the orbs and they will fly towards his target, exploding along the ground at long range.
+        
+    - name: Insanity Prelude
+      targets: Any
+      m1: true
+      m2: true
+      desc: >
+        Creates a purple chain that changes the entire stage to a purple space background--this chain will cause damage, so keep away from his direct front. The chain pulls a giant purple bell out of the ground, which will rain blue projectiles onto each ally that then explode. After four explosions, the screen fades to white in one final strike that causes massive damage. Luther gains immediate control after this final strike, so be wary of follow up attacks.
+        
+    - name: Orbital Satellite
+      targets: Any
+      m2: true
+      desc: >
+        Bunches up his wings and gathers yellow energy into them.  At the 5 second mark he will release the orbs at his sides and they will rotate around him at mid-range and slowly spread outward from there. High damage. Lingers. Very dangerous for ranged characters. The orbs orbit Luther's original location and do not move with him.
