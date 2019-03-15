@@ -1818,3 +1818,82 @@
           buffValue: 70
     power: INT x 1500%
     maxHits: 5
+
+
+- name: Seth
+  cat: gl
+  rating: 0
+  picture: Seth
+  weapon: staff
+  ace: false
+  limited: false
+  star: 3
+
+  stats:
+    hp: 7704
+    atk: 1206
+    int: 2205
+    def: 1531
+    hit: 569
+    grd: 443
+
+  talents:
+    - name: "Highly Strung"
+      effects: 
+        - desc: +15% Stun Chance
+          all: false
+          meta:
+            priority: 1
+            buff: Stun Rate
+            buffValue: 15
+    - name: "Still Blooming"
+      effects: 
+        - desc: INT +30%
+          all: false
+          meta:
+            priority: 4
+            buff: INT
+            buffValue: 30
+    - name: "Unfaltering Chant"
+      effects: 
+        - desc: Symbology cast time -30%
+          all: false
+          meta:
+            priority: 1
+            buff: Cast Time Reduction
+            buffValue: 30
+
+  skills:
+    - name: "Radiant Lancer"
+      picture: Radiant_Lancer
+      element: Light
+      power: INT x 300%
+      ap: 27
+      maxHits: 8
+    - name: "Earth Glaive"
+      picture: Earth_Glaive
+      element: Earth
+      power: INT x 190%
+      ap: 20
+      maxHits: 2
+    - name: "Aurora Rings"
+      picture: Aurora_Rings
+      element: Light
+      power: INT x 460%
+      ap: 35
+      maxHits: 5
+      
+  rush:
+    name: "Revised Terra Hammer"
+    picture: Revised_Terra_Hammer_Seth
+    element: Earth
+    effects: 
+      - desc: INT +80%
+        duration: 20
+        all: false
+        meta:
+          priority: 4
+          buff: INT
+          buffValue: 80
+    power: INT x 3000%
+    maxHits: 6
