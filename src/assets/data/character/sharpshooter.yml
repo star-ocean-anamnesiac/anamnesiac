@@ -2376,3 +2376,62 @@
         all: true
     power: ATK x 2500%
     maxHits: 5
+
+
+- name: Pamela
+  cat: gl
+  rating: 0
+  picture: Pamela
+  weapon: bow
+  ace: false
+  limited: false
+  star: 3
+
+  stats:
+    hp: 7614
+    atk: 1166
+    int: 863
+    def: 919
+    hit: 695
+    grd: 509
+
+  talents:
+    - name: "Resistance II"
+      effects: 
+        - desc: Hit count timer +1 second
+          all: true
+    - name: "Even Greater Resolve"
+      effects: 
+        - desc: Additional hit that deals 20% of damage during normal attacks
+          all: false
+ 
+  skills:
+    - name: "Chaotic Blossoms"
+      picture: Chaotic_Blossoms_I
+      power: ATK x 500%
+      ap: 35
+      maxHits: 11
+    - name: "Heavenly Flight"
+      picture: Heavenly_Flight
+      power: ATK x 310%
+      ap: 29
+      maxHits: 4
+    - name: "Savage Sparrows"
+      picture: Savage_Sparrows
+      power: ATK x 410%
+      ap: 32
+      maxHits: 9
+
+  rush:
+    name: "Revised Crimson Squall"
+    picture: Revised_Crimson_Squall_Pamela
+    effects:
+      - desc: ATK +80%
+        duration: 20
+        all: false
+        meta:
+          priority: 1
+          buff: ATK
+          buffValue: 80
+    power: ATK x 3000%
+    maxHits: 9
