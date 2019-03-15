@@ -1,0 +1,79 @@
+- name: "King Gerel"
+  image: gerel
+  cat: gl
+  race: Plant
+
+  isActive: false
+
+  enrage:
+    m1: "7:00"
+    
+  statusInflictions:
+    - Paralysis
+
+  weaknesses:
+    - element: Wind
+      percentWeakness: 10
+   
+  recommendations:
+    - plain: Damage
+    - plain: Anti-Flinch
+    
+  desc: >
+    King Gerel doesn't discourage playstyles. You can bring anyone to this boss and stomp him.
+
+    He is accompanied by four smaller gerels and attacks with various spells, projectiles and melee attacks. He immediately opens with a random attack, so be wary of rushing in.
+
+    The gerels are slow and shambly, making it difficult for them to actually swarm you. It is recommended to kill the smaller gerels first, because the last thing you need is them sneaking up on you and paralyzing you. Always be wary while in melee range of King Gerel and keep an eye for the symbology circle. The last thing you want is stone rain to open on top of you and be caught unaware. Though it's less of an issue if you bring Anti-Flinch defenders like Viktor.
+
+    Otherwise, kill the adds, then kill the King. The fight might as well be over by the time Rush gauges are full.
+
+    If you somehow manage to see his enrage, enjoy a constant stream of Electric Discharges that do one million damage.
+
+  moves:
+    - name: Chomp
+      targets: Close
+      m1: true
+      desc: >
+        Bites the target. Chomp.
+        
+    - name: Triple Chomp
+      targets: Close
+      m1: true
+      desc: >
+        Moves into the target while chomping not one, but three times. Chomp.
+        
+    - name: Massive Stone
+      targets: Any
+      isSymbology: true
+      m1: true
+      desc: >
+        Spawns three circles in a delta formation that rain stones, dealing tick damage to anyone underneath.
+        
+    - name: Icicle Bash
+      targets: Any
+      isSymbology: true
+      m1: true
+      desc: >
+        A small projectile will float above King Gerel and fire multiple ice daggers down at the target. Misses a stationary target.
+        
+    - name: Fiery Torrent
+      targets: Any
+      isSymbology: true
+      m1: true
+      desc: >
+        Launches fireballs from overhead that rain upon the target in an area.
+        
+    - name: Acidic Drop
+      targets: Short
+      m1: true
+      desc: >
+        Vomits two waves of green projectiles in front of him. First wave hits at close range, second wave hits at mid range. He can do this while moving. May inflict paralysis.
+
+    - name: Electric Discharge
+      targets: Any
+      isSymbology: true
+      isEnrage: true
+      m1: true
+      desc: >
+        Convulses for about 5 seconds, then will spew lightning out of its mouth from above. Deals constant fatal tick damage in a very wide range.
