@@ -110,6 +110,38 @@ import { BossGuide } from '../models/bossguide';
       <ion-item>
         <ion-row class="item-row">
           <ion-col size-xs="6" size-sm="4" class="hidden-xs">
+            <ion-label><strong>Resistances</strong></ion-label>
+          </ion-col>
+
+          <ion-col size-xs="12" size-sm="8" class="vertical-center expand-row">
+            <ion-label class="visible-xs expand-label"><strong>Resistances</strong></ion-label>
+            <ul class="boss-list has-bullets">
+              <li class="list-appicon none" *ngIf="!guide.resistances || guide.resistances.length === 0">None</li>
+              <li class="list-appicon" *ngFor="let resistance of guide.resistances">
+                <ng-container *ngIf="resistance.plain">
+                  {{ resistance.plain }} {{ resistance.percentWeakness }}%
+                </ng-container>
+
+                <ng-container *ngIf="resistance.element">
+                  <app-appicon [name]="'el-' + resistance.element.toLowerCase()"
+                              [scaleX]="0.25"
+                              [scaleY]="0.25"></app-appicon> {{ resistance.element }} {{ resistance.percentWeakness }}%
+                </ng-container>
+
+                <ng-container *ngIf="weakness.status">
+                  <app-appicon [name]="'debuff-' + resistance.status.toLowerCase()"
+                              [scaleX]="0.25"
+                              [scaleY]="0.25"></app-appicon> {{ resistance.status }} <span *ngIf="resistance.vuln">({{ resistance.vuln }})</span>
+                </ng-container>
+              </li>
+            </ul>
+          </ion-col>
+        </ion-row>
+      </ion-item>
+
+      <ion-item>
+        <ion-row class="item-row">
+          <ion-col size-xs="6" size-sm="4" class="hidden-xs">
             <ion-label><strong>Recommendations</strong></ion-label>
           </ion-col>
 
