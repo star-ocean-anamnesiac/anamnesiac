@@ -128,7 +128,7 @@ import { BossGuide } from '../models/bossguide';
                               [scaleY]="0.25"></app-appicon> {{ resistance.element }} {{ resistance.percentWeakness }}%
                 </ng-container>
 
-                <ng-container *ngIf="weakness.status">
+                <ng-container *ngIf="resistance.status">
                   <app-appicon [name]="'debuff-' + resistance.status.toLowerCase()"
                               [scaleX]="0.25"
                               [scaleY]="0.25"></app-appicon> {{ resistance.status }}
