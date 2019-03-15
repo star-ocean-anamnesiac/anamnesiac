@@ -259,11 +259,11 @@ export class ItemListPage implements OnInit, OnDestroy {
     const { type, subtype } = this.getCurrentFilter();
     this.isFiltered = !!subtype;
     if(type) {
-      arr = this.allItems.filter(item => item.type === type);
+      arr = arr.filter(item => item.type === type);
     }
 
     if(subtype) {
-      arr = this.allItems.filter(item => item.subtype === subtype);
+      arr = arr.filter(item => item.subtype === subtype);
     }
 
     arr = arr.filter(item => item.cat === this.region);
