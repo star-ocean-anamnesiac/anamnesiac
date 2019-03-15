@@ -8,7 +8,6 @@
   enrage:
     m1: "7:00"
     m2: "7:00"
-    m3: "7:00"
     
   statusInflictions:
     - Paralysis
@@ -42,7 +41,7 @@
     - plain: Anti-Flinch
     
   desc: >
-    Despite that intimidating list of attacks up there, this bird is pretty easy to cook. Just about anyone can handle it, even Nel. Just look at that delicious poison vulnerability. But some helpful friends to bring along would be Summer Myuria, A2 or Dias for the anti-flinch and Roddick for the endless stunning. 9S is particularly notable because he can kite it easily.
+    Despite that intimidating list of attacks up there, this bird is pretty easy to cook. Just about anyone can handle it, even **Nel**. Just look at that delicious poison vulnerability. But some helpful friends to bring along would be **Summer Myuria**, **A2** or **Dias** for the anti-flinch and **Roddick** for the endless stunning. **9S** is particularly notable because he can kite it easily.
 
     Fighting this stupid bird is more annoying than anything else. It is constantly running around, casting instant multi-hit spells, that don't even do enough damage to be worth suffering the animations. Sure, it has better things to be doing like Shockwave or Assault Shockwave, but it's usually just an endless stream of low damage Lightning Blasts and Deep Freezes that your autoing pug healer will erase when the AI gets around it.
 
@@ -59,7 +58,6 @@
       targets: Close
       m1: true
       m2: true
-      m3: true
       desc: >
         Pecks at the target thrice. Very rare attack. Also used by its adds.
         
@@ -67,7 +65,6 @@
       targets: Close
       m1: true
       m2: true
-      m3: true
       desc: >
         Pecks at the target thrice. May poison. Very rare attack. Also used by its adds.
         
@@ -76,7 +73,6 @@
       isSymbology: true
       m1: true
       m2: true
-      m3: true
       desc: >
         Opens its mouth and flaps its wings, firing a series of heart-shaped projectiles at its target. Also used by its adds.
         
@@ -85,7 +81,6 @@
       isSymbology: true
       m1: true
       m2: true
-      m3: true
       desc: >
         Does a short hop up with wings hugged together. When it lands, it will release a blue burst that deals high damage to everyone in close range.
         
@@ -94,7 +89,6 @@
       isSymbology: true
       m1: true
       m2: true
-      m3: true
       desc: >
         Shoots an instant, lance-like stream of lightning at the target that flinches for multiple hits. Lingers. May paralyze. Boss will lead you if you're moving, so be prepared to dodge regardless.
         
@@ -103,7 +97,6 @@
       isSymbology: true
       m1: true
       m2: true
-      m3: true
       desc: >
         Instantly spawns a patch of ice beneath you that flinches for multiple hits. You must dodge when you see the boss finish casting (flapping its wings).
         
@@ -111,7 +104,6 @@
       targets: Any
       m1: true
       m2: true
-      m3: true
       desc: >
         Lobs a stream of fireballs that home in on the target. Very fast. Best handled by dodging through them, towards the boss.
         
@@ -120,7 +112,6 @@
       isSymbology: true
       m1: true
       m2: true
-      m3: true
       desc: >
         Creates a circle above the target that rains flinching stones in an area. Lingers. Covers a wide area.
         
@@ -129,7 +120,6 @@
       isSymbology: true
       m1: true
       m2: true
-      m3: true
       desc: >
         Creates an exploding fire plume at the rightmost perimeter of the stage. From there, more plumes will activate around the perimeter in a clockwise order. It will regain control immediately after the first plume, so beware. May kill :P.
         
@@ -137,7 +127,6 @@
       targets: Close
       m1: true
       m2: true
-      m3: true
       desc: >
         Leaps high into the air, and after 1.5 seconds slams down, dealing burst damage and causing an AoE shockwave. The shockwave will cause multiple hits of lesser damage.
         
@@ -145,7 +134,6 @@
       targets: Any
       m1: true
       m2: true
-      m3: true
       desc: >
         Leaps high into the air, and after 1.5 seconds slams onto the target, dealing burst damage and causing an AoE shockwave. The shockwave will cause multiple hits of lesser damage.
         
@@ -154,6 +142,5 @@
       isEnrage: true
       m1: true
       m2: true
-      m3: true
       desc: >
         Looks just like a regular shockwave. That is, until it lands and the entire party is struck multiple times for millions of damage.
