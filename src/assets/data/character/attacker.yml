@@ -3695,3 +3695,70 @@
           buffValue: 30
     power: ATK x 2500%
     maxHits: 5
+
+
+- name: Marcelle
+  cat: gl
+  rating: 0
+  picture: Marcelle
+  weapon: knuckle
+  ace: false
+  limited: false
+  star: 3
+
+  stats:
+    hp: 8421
+    atk: 1321
+    int: 817
+    def: 1054
+    hit: 635
+    grd: 450
+
+  talents:
+    - name: "Greater Survival Skills"
+      effects: 
+        - desc: ATK +20%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 20
+    - name: "Signed, Sealed, and Delivered"
+      effects: 
+        - desc: AP cost -15%
+          all: false
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 15
+ 
+  skills:
+    - name: "Crescent Locus"
+      picture: Crescent_Locus
+      power: ATK x 150%
+      ap: 17
+      maxHits: 4
+    - name: "X Claw"
+      picture: X_Claw
+      power: ATK x 310%
+      ap: 29
+      maxHits: 6
+    - name: "Roaring Cartwheel"
+      picture: Roaring_Cartwheel
+      power: ATK x 410%
+      ap: 32
+      maxHits: 5
+
+  rush:
+    name: "Revised Roaring Cartwheel"
+    picture: Revised_Roaring_Cartwheel_Marcelle
+    effects:
+      - desc: AP cost -50%
+        duration: 20
+        all: false
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 50
+    power: ATK x 3000%
+    maxHits: 7
