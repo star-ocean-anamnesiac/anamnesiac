@@ -13,6 +13,9 @@
     - Nothing
 
   weaknesses:
+    - plain: INT Damage
+      percentWeakness: 20
+    
     - element: Fire
       percentWeakness: 25
 
