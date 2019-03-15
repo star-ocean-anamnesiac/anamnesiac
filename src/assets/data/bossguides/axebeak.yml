@@ -1,0 +1,159 @@
+- name: "Colossal Axe Beak"
+  image: axebeak
+  cat: gl
+  race: Bird
+
+  isActive: false
+
+  enrage:
+    m1: "7:00"
+    m2: "7:00"
+    m3: "7:00"
+    
+  statusInflictions:
+    - Paralysis
+    - Poison
+
+  weaknesses:
+    - element: Wind
+      percentWeakness: 25
+
+    - element: Light
+      percentWeakness: 25
+
+    - status: Curse
+      vuln: Low
+   
+    - status: Freeze
+      vuln: Low
+   
+    - status: Paralysis
+      vuln: Low
+   
+    - status: Poison
+      vuln: Low
+   
+    - status: Silence
+      vuln: Low
+   
+  recommendations:
+    - plain: Damage
+    - plain: Ease of Stun
+    - plain: Anti-Flinch
+    
+  desc: >
+    Despite that intimidating list of attacks up there, this bird is pretty easy to cook. Just about anyone can handle it, even Nel. Just look at that delicious poison vulnerability. But some helpful friends to bring along would be Summer Myuria, A2 or Dias for the anti-flinch and Roddick for the endless stunning. 9S is particularly notable because he can kite it easily.
+
+    Fighting this stupid bird is more annoying than anything else. It is constantly running around, casting instant multi-hit spells, that don't even do enough damage to be worth suffering the animations. Sure, it has better things to be doing like Shockwave or Assault Shockwave, but it's usually just an endless stream of low damage Lightning Blasts and Deep Freezes that your autoing pug healer will erase when the AI gets around it.
+
+    If you're not asleep, you may want to dodge the occasional Spit Fireballs and Assault Shockwave it'll weave in there. Those actually kind of hurt. I don't know, maybe M3 will inflate its stats enough to be an actual threat. Just treat it like Frost Tree and watch your target marker (remember, red = you're the target) and dodge when you see it turn towards you and flap its wings (or when you see the name of the spell--make sure ally attack names is off under battle settings!).
+
+    Misery 2 sure doesn't change anything up. Colossal Beak just becomes faster and does more damage. It dies just as fast. Whatever.
+
+    This isn't likely to happen, but if you run down the timer it's just gonna Large Shockwave you. No power up animation, no call, no fanfare. It just leaps up and then comes down with several million damage. Rude.
+
+    If you take aggro as a ranged, watch out for Frozen Ball. The attack happens so fast that you may not notice the projectiles until it's too late. Dodge to the side or towards Bird to evade them.
+
+  moves:
+    - name: Sticking
+      targets: Close
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Pecks at the target thrice. Very rare attack. Also used by its adds.
+        
+    - name: Poison Stick
+      targets: Close
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Pecks at the target thrice. May poison. Very rare attack. Also used by its adds.
+        
+    - name: Ripple Laser
+      targets: Mid
+      isSymbology: true
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Opens its mouth and flaps its wings, firing a series of heart-shaped projectiles at its target. Also used by its adds.
+        
+    - name: Wind Blade
+      targets: Any
+      isSymbology: true
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Does a short hop up with wings hugged together. When it lands, it will release a blue burst that deals high damage to everyone in close range.
+        
+    - name: Lightning Blast - Paralysis
+      targets: Any
+      isSymbology: true
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Shoots an instant, lance-like stream of lightning at the target that flinches for multiple hits. Lingers. May paralyze. Boss will lead you if you're moving, so be prepared to dodge regardless.
+        
+    - name: Deep Freeze
+      targets: Any
+      isSymbology: true
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Instantly spawns a patch of ice beneath you that flinches for multiple hits. You must dodge when you see the boss finish casting (flapping its wings).
+        
+    - name: Spit Fireballs
+      targets: Any
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Lobs a stream of fireballs that home in on the target. Very fast. Best handled by dodging through them, towards the boss.
+        
+    - name: Rock Rain
+      targets: Any
+      isSymbology: true
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Creates a circle above the target that rains flinching stones in an area. Lingers. Covers a wide area.
+        
+    - name: Ritual Flame
+      targets: Any
+      isSymbology: true
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Creates an exploding fire plume at the rightmost perimeter of the stage. From there, more plumes will activate around the perimeter in a clockwise order. It will regain control immediately after the first plume, so beware. May kill :P.
+        
+    - name: Shockwave
+      targets: Close
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Leaps high into the air, and after 1.5 seconds slams down, dealing burst damage and causing an AoE shockwave. The shockwave will cause multiple hits of lesser damage.
+        
+    - name: Assault Shockwave
+      targets: Any
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Leaps high into the air, and after 1.5 seconds slams onto the target, dealing burst damage and causing an AoE shockwave. The shockwave will cause multiple hits of lesser damage.
+        
+    - name: Large Shockwave
+      targets: Any
+      isEnrage: true
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Looks just like a regular shockwave. That is, until it lands and the entire party is struck multiple times for millions of damage.
