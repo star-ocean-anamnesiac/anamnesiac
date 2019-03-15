@@ -16,9 +16,9 @@
 
   weaknesses:
     - element: Wind
-      percentWeakness: 20?
+      percentWeakness: 20
     - element: Light
-      percentWeakness: 20?
+      percentWeakness: 20
 
     - status: Silence
       vuln: Low
