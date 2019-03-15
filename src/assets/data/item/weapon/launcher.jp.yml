@@ -23,14 +23,114 @@
 - name: Photon Blaster
   cat: 'jp'
   star: 5
-  picture: Deadly_Cannon
+  picture: Photon_Blaster
   atk: 880
   int: 861
   factors:
-    - desc: Recover 3% HP every 5 seconds
-    - desc: +15% ATK
+    - desc: +15% DMG to Single Target
+      meta:
+        priority: 1
+        buff: Single Target Damage
+        buffValue: 15
+    - desc: +50% AP RCV by Normal Attacks
+      meta:
+        priority: 1
+        buff: AP Recovery From Normal Attacks
+        buffValue: 50
+    - desc: Recover 5% HP of DMG Dealt by Normal Attacks
+      lb: 5
+  obtained: Launcher Coin Exchange / Gacha
+  
+- name: Morphus Launcher
+  cat: 'jp'
+  star: 5
+  picture: Morphus_Launcher
+  atk: 530
+  int: 527
+  factors:
+    - desc: +20% DMG on Saint Buster
+    - desc: +15% Crit
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffValue: 15
+    - desc: -10% ATK DMG Taken
+      lb: 5
+      meta:
+        priority: 1
+        buff: ATK Damage Reduction
+        buffValue: 10
+  obtained: Vulcan's Darkness Exchange
+  
+- name: Master Cannon
+  cat: 'jp'
+  star: 5
+  picture: Master_Cannon
+  atk: 531
+  int: 526
+  factors:
+    - desc: +20% DMG on Godslayer
+    - desc: +10% DEF
       meta:
         priority: 4
-        buff: ATK
-        buffValue: 15
-  obtained: Launcher Coin Exchange / Gacha
+        buff: DEF
+        buffValue: 10
+    - desc: Anti-Flinch (While attacking)
+      lb: 5
+  obtained: Vulcan's Darkness Exchange
+  
+- name: Heraldic Cannon・Tempest
+  cat: 'jp'
+  star: 5
+  picture: Heraldic_Cannon・Tempest
+  atk: 1261
+  int: 1253
+  factors:
+    - desc: Imbue Wind Element
+    - desc: +10% HP
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 10
+    - desc: 80% Chance to Survive a Lethal Attack at 10% HP or more
+      lb: 5
+  obtained: Gacha
+  
+- name: Ultimate Cannon
+  cat: 'jp'
+  star: 5
+  picture: Ultimate_Cannon
+  atk: 1260
+  int: 1260
+  factors:
+    - desc: Imbue Dark Element
+    - desc: -10% AP cost
+      meta:
+        priority: 1
+        buff: AP Cost Reduction
+        buffValue: 10
+    - desc: +30% Crit when HC 150+
+      lb: 5
+      meta:
+        priority: 3
+        buff: Crit Rate
+        buffCondition: Hit Count > 150
+        buffValue: 30
+  obtained: Gacha
+  
+- name: Mix Star
+  cat: 'jp'
+  star: 5
+  picture: Master_Cannon
+  atk: 531
+  int: 526
+  factors:
+    - desc: +20% DMG on Nya-stice Savior
+    - desc: +10% DMG to Single Target
+      meta:
+        priority: 1
+        buff: Single Target Damage
+        buffValue: 10
+    - desc: Recover 5% HP every 3 seconds
+      lb: 5
+  obtained: Head Bull Exchange
