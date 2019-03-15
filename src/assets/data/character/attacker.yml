@@ -2662,7 +2662,8 @@
       **Rotation**
       
       *Normal > Exorcising Storm > Tranquility > Blade Flash - Awakened > Spam it till out of AP. (General combo.)*
-    
+
+
 - name: Andre
   cat: gl
   rating: 0
@@ -2673,25 +2674,25 @@
   star: 3
 
   stats:
-    hp: 8780
-    atk: 1299
-    int: 830
-    def: 1075
-    hit: 616
-    grd: 438
+    hp: 9210
+    atk: 2368
+    int: 1760
+    def: 1135
+    hit: 689
+    grd: 468
 
   talents:
     - name: "Young General"
       effects: 
-        - desc: Critical Rate +10%
+        - desc: Critical hit chance +10%
           all: true
           meta:
             priority: 1
             buff: Crit Rate
             buffValue: 10
-    - name: "Mischievous Rascal"
+    - name: "Mischievous Brat"
       effects:
-        - desc: Will not flinch to damage under 20% max HP
+        - desc: No flinching when taking damage of 20% HP or less
           all: false
         
   skills:
@@ -2707,16 +2708,16 @@
       maxHits: 5
     - name: "Shotgun Blast"
       picture: Shotgun_Blast
+      element: Lightning      
       power: ATK x 190%
       ap: 20
       maxHits: 4
-      element: Lightning
 
   rush:
     name: "Revised Stampede Slash"
     picture: Revised_Stampede_Slash_Andre
     effects:
-      - desc: Critical Rate +40%
+      - desc: Critical hit chance +40%
         duration: 20
         all: true
         meta:
@@ -2725,7 +2726,8 @@
           buffValue: 40
     power: ATK x 2500%
     maxHits: 6
-    
+
+
 - name: Verda Clayman (Valentine)
   cat: gl
   rating: 10
