@@ -90,7 +90,7 @@ export class CharacterListPage implements OnInit, OnDestroy {
 
   private updateCharacterListOutsideZone() {
     this.ngZone.runOutsideAngular(() => {
-      const res = this.getCharacterUpdateList();
+      const res = this.getCharacterUpdateList({ show34, sorting });
 
       this.ngZone.run(() => {
 
@@ -224,12 +224,12 @@ export class CharacterListPage implements OnInit, OnDestroy {
     const curFilter = this.getCurrentFilter();
 
     if(!this.show34) {
-      arr = this.allCharacters.filter(x => x.star >= 5);
+      arr = arr.filter(x => x.star >= 5);
     }
 
     this.isFiltered = !!curFilter;
     if(curFilter) {
-      arr = this.allCharacters.filter(char => char.type === curFilter);
+      arr = arr.filter(char => char.type === curFilter);
     }
 
     arr = arr.filter(char => char.cat === this.region);
@@ -254,7 +254,7 @@ export class CharacterListPage implements OnInit, OnDestroy {
         .groupBy('weapon')
         .value();
 
-      allWeapons = _.sortBy(Object.keys(this.weaponSortedCharacters));
+      allWeapons = _.sortBy(Object.keys(weaponSortedCharacters));
     }
 
     // tier sorting
