@@ -16,14 +16,12 @@
     - element: Fire
       percentWeakness: 25
 
-    - element: INT Damage
-      percentWeakness: 20
-
     - status: Poison
       vuln: Low
    
   recommendations:
     - plain: Fire Damage
+    - plain: INT Damage
     - plain: Range
     - plain: Fast Rush Build
     - plain: Poison Application
