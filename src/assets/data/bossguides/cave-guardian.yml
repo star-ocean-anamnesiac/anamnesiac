@@ -3,7 +3,7 @@
   cat: gl
   race: Machine
   
-  isActive: false
+  isActive: true
 
   enrage:
     m1: "7:00"
