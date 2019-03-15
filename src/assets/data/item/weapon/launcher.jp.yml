@@ -12,4 +12,25 @@
         priority: 4
         buff: ATK
         buffValue: 15
+    - desc: -10% ATK DMG Taken
+      lb: 5
+      meta:
+        priority: 1
+        buff: ATK Damage Reduction
+        buffValue: 10
+  obtained: Launcher Coin Exchange / Gacha
+  
+- name: Photon Blaster
+  cat: 'jp'
+  star: 5
+  picture: Deadly_Cannon
+  atk: 880
+  int: 861
+  factors:
+    - desc: Recover 3% HP every 5 seconds
+    - desc: +15% ATK
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 15
   obtained: Launcher Coin Exchange / Gacha
