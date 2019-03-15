@@ -1997,3 +1997,64 @@
         all: true
     power: INT x 2500%
     maxHits: 5
+
+
+- name: Dominic (Scholar)
+  cat: gl
+  rating: 0
+  picture: Manuscript_Dominic
+  weapon: tome
+  ace: false
+  limited: false
+  star: 3
+
+  stats:
+    hp: 7525
+    atk: 963
+    int: 1166
+    def: 751
+    hit: 557
+    grd: 628
+
+  talents:
+    - name: "Sweet Whispers II"
+      effects: 
+        - desc: ATK damage taken -20% when in front of target
+          all: true
+          meta:
+            priority: 1
+            buff: ATK Damage Taken Reduction
+            buffCondition: In Front of Target
+            buffValue: 20
+    - name: "Moment of Bliss III"
+      effects: 
+        - desc: Recovers 3% HP every 3 seconds
+          all: false
+
+  skills:
+    - name: "Lightning Blast"
+      picture: Lightning
+      element: Lightning
+      power: INT x 220%
+      ap: 23
+      maxHits: 10
+    - name: "Healing"
+      picture: Healing
+      power: INT x 170%
+      ap: 40
+      maxHits: 1
+    - name: "Faerie Healing"
+      picture: Faerie_Healing
+      power: INT x 60%
+      ap: 50
+      maxHits: 1
+      
+  rush:
+    name: "Revised Lightning Strike"
+    picture: Revised_Lightning_Strike_Manuscript_Dominic
+    element: Lightning
+    effects: 
+      - desc: Recovers 100% HP
+        all: true
+    power: INT x 2500%
+    maxHits: 10
