@@ -2313,3 +2313,66 @@
           buffValue: 30
     power: ATK x 3000%
     maxHits: 9
+
+
+- name: Dominic
+  cat: gl
+  rating: 0
+  picture: Dominic
+  weapon: dagger
+  ace: false
+  limited: false
+  star: 3
+
+  stats:
+    hp: 8510
+    atk: 1199
+    int: 807
+    def: 886
+    hit: 676
+    grd: 502
+
+  talents:
+    - name: "Fierce Onslaught"
+      effects: 
+        - desc: AP cost -10%
+          all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 10
+    - name: "Malevolent Guard"
+      effects: 
+        - desc: Nullifies poison (180 seconds)
+          all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 15
+ 
+  skills:
+    - name: "Flying Guillotine"
+      picture: Guillotine
+      power: ATK x 370%
+      ap: 32
+      maxHits: 4
+    - name: "Unholy Terror"
+      picture: Unholy_Terror
+      power: ATK x 310%
+      ap: 29
+      maxHits: 5
+    - name: "Dancing Sword"
+      picture: Dancing_Sword
+      power: ATK x 460%
+      ap: 35
+      maxHits: 7
+
+  rush:
+    name: "Revised Focused Shockwave"
+    picture: Revised_Focused_Shockwave_Dominic
+    effects:
+      - desc: Nullifies poison
+        duration: 20
+        all: true
+    power: ATK x 2500%
+    maxHits: 5
