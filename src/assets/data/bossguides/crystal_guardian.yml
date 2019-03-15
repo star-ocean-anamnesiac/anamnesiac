@@ -1,0 +1,103 @@
+- name: "Crystal Guardian"
+  image: crystal_guardian
+  cat: gl
+  race: Machine
+
+  isActive: true
+
+  enrage:
+    m1: "7:00"
+    m2: "7:00"
+    
+  statusInflictions:
+    - Nothing
+
+  weaknesses:
+    - element: Lightning
+      percentWeakness: 10
+
+    - element: Dark
+      percentWeakness: 10
+
+    - status: Paralysis
+      vuln: Low
+
+    - status: Freeze
+      vuln: Low
+
+  recommendations:
+    - plain: Critical Hit Buffs
+    - plain: Range
+    - plain: Anti-Flinch
+    - plain: Lightning Damage
+    - plain: Dark Damage
+    
+  desc: >
+    Crystal Guardian has an exclusive "mechanic," in that his defense is absurdly high. You're unlikely to do more than 0 with most attacks. That is where critical hits come in. Critical hits bypass defense, allowing you to do normal damage to Crystal Guardian. You will want to bring units that can buff critical hit rate or you'll be there a while.
+
+    Such units include: Maria (more on this in a bit), Nel, Anne
+
+    Maria's 40% crit buff is a temporary effect of her Rush and does not stack with passive crit buff talents. So Nel and Cliff's inherent crit buffs will be overwritten for the duration. With Maria you should build Rush ASAP and Rush alone because Rushes that chain with Maria's do NOT receive the benefit of her crit buff.
+
+    Anyway, Crystal Guardian itself is speedy but must be stationary to unleash attacks.
+
+    Most of these attacks are more annoying than anything due to how they interrupt your chains. For this reason, Anti-Flinch is a godsend. Remember to hug your defenders, guys.
+
+    Be wary of the adds--the stone golems have the same defense "mechanic." They're okay to leave alive, just keep aware because they tend to sneak up on people and do their body slam attack.
+
+  moves:
+    - name: Windcutter
+      targets: Mid
+      m1: true
+      m2: true
+      desc: >
+        Tosses one energy disc, then another in succession.
+        
+    - name: Wildshot
+      targets: Close
+      m1: true
+      m2: true
+      desc: >
+        Fires a stream of electricity that does constant tick damage.
+        
+    - name: Auto-Jamming
+      targets: Long
+      m1: true
+      m2: true
+      desc: >
+        Fires multiple energy orbs that will move back and forth in a delta formation and spread further and further out. This attack lingers for an extended amount of time.
+        
+    - name: Auto-Jamming II
+      targets: Long
+      m1: true
+      m2: true
+      desc: >
+        Fires energy orbs in four groups. These function the same as the regular variant, except they do not spread out. If he fires another set they end up in different locations.
+        
+    - name: Cannonade
+      targets: Close
+      m1: true
+      m2: true
+      desc: >
+        Fires three blue orbs in a triangle formation that home in on the target.
+        
+    - name: Shoulder Missiles
+      targets: Mid
+      m1: true
+      m2: true
+      desc: >
+        Fires multiple missiles at the target. Misses if close to the target.
+        
+    - name: Scoop Up
+      targets: Close
+      m1: true
+      m2: true
+      desc: >
+        Scoops target into the air with its claws. Follows up with Shoulder Missiles while target is airborne.
+        
+    - name: Laser Storm
+      targets: Close
+      m1: true
+      m2: true
+      desc: >
+        Creates orbs of light on the ground around it, which after a delay explode into light pillars. The damage only happens at the explosion.
