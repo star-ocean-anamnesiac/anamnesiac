@@ -79,7 +79,7 @@ export interface BossGuide {
 
   // the boss weaknesses
   weaknesses: Weakness[];
-  
+
   // the boss resistances
   resistances?: Weakness[];
 
