@@ -1,0 +1,158 @@
+
+- name: "Transmogrified Alma"
+  image: alma
+  cat: gl
+  race: Divinity
+  
+  isActive: false
+
+  enrage:
+    m1: "7:00"
+    m2: "7:00"
+    m3: "4:00"
+    	    
+  statusInflictions:
+    - Curse
+
+  weaknesses:
+    - plain: INT Damage
+      percentWeakness: 10
+      
+    - element: Dark
+      percentWeakness: 25
+      
+    - status: Freeze
+      vuln: Low
+
+    - status: Silence
+      vuln: Low
+
+    - status: Poison
+      vuln: Low
+
+  recommendations:
+    - plain: Range
+    - plain: INT Damage
+    - plain: Dark Damage
+    - plain: Status Nullification
+
+  desc: >
+    Alma is one giant middle finger to melees. Low mobility, but dangerous local AoEs as he casts (in M2+) and lots of movement fields to piss off Fidel and friends. Due to his INT damage weakness, invokers are ideal. Faize, this is your shining (or darkest?) moment. Fiore, Sophia and Myuria (especially with her stuns) also work very well. Silence does not appear to prevent his attacks and he is not terribly mobile in the first place, so I don't recommend trying for silence and freeze.
+
+    For maximum insurance against curse, you can bring Reimi or a healer with speedy casts like Rena, Summer Sophia, or Xmas Precis. Most shooters are fine accompaniments for their high mobility and rush buffs. Maria and 9S are always welcome kiters and a well-played Nel can Rush away his worst attacks.
+
+    If you absolutely must bring melee, bring Summer Myuria for the added stun and the easy ranged rotation. Princess Miki also brings anti-flinch, DEF and INT for mages while having a serviceable ranged rotation. Finally, Were-Millie and 2B have excellent means to fight Alma from range.
+
+    Alma always begins with Acceleration and then it's open season. All of his attacks are high damage, with obvious dramatic tells. Watch him. Watch the name of the move. Dodge accordingly. The fields from Acceleration and Initialization will make this difficult. Of note, beware dodging towards him during Baleful Winds; because his fists cover a wide range and getting hit will knock you into further blows. Also try not to steer Ogre Fall into your teammates.
+
+    The rare and aptly named Aggravation will curse you moments after the purple effect consumes the screen. Learn the timing and dodge repeatedly when the purple wave consumes the screen to avoid the curse, otherwise--Reimi, be ready to Rush and healers, be ready to spam heals like an auto-Miki on steroids. The curse flinches will kill your productivity, and you, quickly. Volcanic Burst is very rare, but deadly without anti-flinch. As you may go for runs without seeing this attack, it may not be worth bringing defender just for it. I'm sure people won't complain if you bring Summer Myuria anyway
+
+    Unlike most bosses, Misery 3 transforms his attacks for the deadlier. He loses his more predictable attacks and instead upgrades Acceleration and Initialization with local AoEs while he casts and even more fields. Ogre Fall will fire projectiles during the spinning slash. Baleful Winds generates bigger shockwaves, Initialization will fire Deflagration orbs at the red target. One of his worst attacks, Aggravation, will become more common. Volcanic Burst is the only constant, remaining rare but deadly.
+
+    Finally, he'll unlock Annihilation. Annihilation starts like Acceleration, but the lack of lightning should be a significant tell. If you are Alma's red target during Annihilation, get away from your party ASAP. If you are caught in the range of someone else's Annihilation and can't escape, then be ready to dodge into the wall until the blue explosion passes.
+
+    The changes to Acceleration, Initialization and Ogre Fall especially are where melee fighters suffer; it takes an already difficult fight, and makes it smothering. Be careful staying at any diagonal angle from him especially at the beginning. His Acceleration opening can become deadly just by scattering to the left or right during the initial seconds of the fight.
+
+    Run out the timer and you get his enrage: Fury Annihilation. This attack begins exactly like Annihilation but the blue explosion will spread from the center, covering the entire stage. Your only hope is to break for the edge immediately and dodge against it repeatedly when the blue reaches you.
+  
+  moves:
+    - name: Bosom Blast
+      targets: Close
+      m1: true
+      m2: true
+      desc: >
+        Alma will radiate a localized shockwave, then a gray Energy Drain-esque aura that lingers and ticks damage.
+    
+    - name: Lightning Blast
+      targets: Any
+      isSymbology: true
+      m1: true
+      m2: true
+      desc: >
+        Fires lightning twice: first at the 4:00 and 8:00 positions and then at the 10:00 and 2:00 positions.
+
+    - name: Seraphic Rebuttal
+      targets: Close
+      isSymbology: true
+      m1: true
+      m2: true
+      desc: >
+        Three light-blue closed-petal flowers fall from the sky in a line formation in front of him and spin, dealing heavy damage.
+    
+    - name: Acceleration
+      targets: Any
+      isSymbology: true
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Alma will begin casting with a spinning ring & blue energy. A gray wave will burst from him and consume the screen, causing gray fields that slow and nullify AP to litter the battlefield. On M3+ he will fire lightning blast (detailed above) as he casts.
+    
+    - name: Deflagration
+      targets: Any
+      isSymbology: true
+      m1: true
+      m2: true
+      desc: >
+        This has a similar startup to Acceleration, but instead launches three blue orbs (similar to Cannonade) at his red target, that home in lazily on them.
+    
+    - name: Initialization
+      targets: Any
+      isSymbology: true
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        This has a similar startup to Acceleration, but with red energy and a red wave. This will litter red fields that deal damage over time around the battlefield. On M3+, it is altered to drop two waves of earth glaives around him while he casts. The first at the same positions as Acceleration's Lightning Blast, the second in the opposite positions. He wil lalso launch small Deflagration orbs at his red target.
+    
+    - name: Ogre Fall
+      targets: Any
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Alma will fly into the air and chase after his target. After a point, he will stop and then slam into the ground. Afterward, he will perform a spinning slash. On M2+, this slash will fire a spread of orb-like projectiles. His landing zone is indicated by a circle of orbs. The projectile pattern will also appear as symbols just before he spins.
+    
+    - name: Baleful Winds
+      targets: Any
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Alma will reel back and raise his arms high, then rush forward with a series of punches that leave shockwaves. The pattern is (his) left, right, left, right. High damage. Significant delay after it completes.
+    
+    - name: Volcanic Burst
+      targets: Any
+      isSymbology: true
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Alma will begin casting with a spinning ring and no energy. When he finishes, a fire plume will appear on every party member and immediately begin causing flinch damage. After a second, it explodes into high damage. Quite difficult to get out of without anti-flinch. Very rare attack, especially below M3.
+    
+    - name: Aggravation
+      targets: Any
+      isSymbology: true
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Same startup as Acceleration and Initialization, except it is purple energy. A purple wave will spread and consume the screen... and leave everyone who did not dodge in time cursed. Curse will deal periodic damage that flinches. This is rare below M3.
+    
+    - name: Annihilation
+      targets: Any
+      isSymbology: true
+      m2: true
+      m3: true
+      desc: >
+        At first, this will look like he's starting up Acceleration, but the ring will spin and gather blue energy for longer and at increase intensity. A mass of blue energy will then consume his target and spread out, covering most of the stage and dealing severe damage.
+    
+    - name: Fury Annihilation
+      targets: Any
+      isSymbology: true
+      isEnrage: true
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        This starts up much like Annihilation, but it will begin from the center and envelop the entire stage. All you can do to avoid taking fatal damage is dodge into the wall.
