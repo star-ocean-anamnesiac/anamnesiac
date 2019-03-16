@@ -36,7 +36,9 @@
                 "input": "src/global.scss"
               }
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/lazysizes/lazysizes.js"
+            ]
           },
           "configurations": {
             "production": {
