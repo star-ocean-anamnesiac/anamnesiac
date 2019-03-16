@@ -1,5 +1,5 @@
 - name: "Crystal Guardian"
-  image: crystal_guardian
+  image: crystal-guardian
   cat: gl
   race: Machine
 
