@@ -74,7 +74,7 @@
       desc: >
         Coro raises his arms in a menacing manner and gains turquoise patterns on his body. Enables Somersault Kick, Spin & Slam, Unidentified Signal, and Rocket Punch.
 
-    - name: Summersault Kick
+    - name: Somersault Kick
       targets: Close
       m1: true
       m2: true
