@@ -1,6 +1,6 @@
 
 - name: "Blood Valkyrie"
-  image: blood_valkyrie
+  image: blood-valkyrie
   cat: gl
   race: Divinity
   
