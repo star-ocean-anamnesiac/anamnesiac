@@ -314,7 +314,6 @@
       power: ATK x 250%
       ap: 24
       maxHits: 5
-      element: Fire
     - name: "Air Slash"
       picture: Air_Slash_II
       power: ATK x 200%
