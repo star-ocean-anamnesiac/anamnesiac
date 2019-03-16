@@ -15,7 +15,8 @@
 
   weaknesses:
     - element: Ice
-
+      percentWeakness: 
+      
     - status: Freeze
       vuln: Low
     - status: Poison
