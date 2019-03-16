@@ -24,14 +24,14 @@
           meta:
             priority: 1
             buff: ATK
-            buffValue: 25
+            buffValue: 40
         - desc: ATK +60% when HP 100% 
           all: true
           meta:
             priority: 3
             buff: ATK
             buffCondition: HP is 100%
-            buffValue: 45
+            buffValue: 6045
     - name: "Automated Infantry Android"
       effects: 
         - desc: Evasion AP consumption -100% when Just Timing evasion
