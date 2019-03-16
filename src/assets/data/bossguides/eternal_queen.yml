@@ -1,0 +1,133 @@
+
+- name: "Eternal Queen"
+  image: eternal_queen
+  cat: gl
+  race: Demon
+  
+  isActive: false
+
+  enrage:
+    m1: "7:00"
+    m2: "7:00"
+    	    
+  statusInflictions:
+    - Freeze
+
+  weaknesses:
+    - element: Lightning
+      percentWeakness: 1
+
+    - status: Poison
+      vuln: Low
+      
+    - status: Paralysis
+      vuln: Low
+      
+    - status: Curse
+      vuln: Low
+      
+  recommendations:
+    - plain: Anti-Flinch
+    - plain: Lightning Damage
+    - plain: Status Nullification
+    - plain: Slow Field Nullification
+
+  desc: >
+    The Eternal Queen has a lot of symbols that cast fast and hit multiple times. There's rarely a time where anti-flinch isn't a godsend, but just saying... here, it's a godsend.
+
+    Summer Myuria is practically made for this fight due to her INT damage reduction, though it unfortunately conflicts with Reimi's better talent. That makes Viktor a suitable defensive alternative due to better synergy and high rush gain (alongside his powerful rush buff). It's worth noting that Reimi can also rush to nullify Frozen, which the Queen inflicts with most of her attacks.
+
+    Roddick and Myuria are also helpful since stunning mitigates everything and she doesn't move around too much. Other strong choices for this fight include Fidel (attack buffs), Maria/Summer Miki (dps, ease of kiting) and Nel/Claire (easy access to lightning weapons).
+
+    The Queen begins the fight mostly docile, opting to use only Boreal Blast or Ice Patch until one of two conditions are met: she reaches the 80-90% HP threshold or enough time passes. This docile stage is your best shot at killing the adds in peace, so do that because they'll use Ice Needles and Dash and generally make a headache of themselves. They can also be flinched, which means that Myuria's Plasma Cyclone can keep them under control. Just be mindful, because the incidental damage can push the Queen past her docile threshold.
+
+    Since the Frosty Enclosure variants are thwarted by anti-flinch, her most dangerous attacks will be Frosty Fire, Boreal Burst and Searing Blast. Of them, only one comes out slowly and has an obvious tell (Searing Blast). The rest will come out fast and travel fast across the stage. All will deal high damage. Be observant of the boss's animations and attack names, and you'll know when to dodge.
+
+    Her melee attacks are surprisingly painful. Be vigilant and dodge if you're in melee range of her and be mindful of your own moves that animation-lock you.
+
+    In Misery 2, she will use Shall We Dance? and Pillars of Rime. Shall We Dance? is a rare attack and will have a tell in the form of lines along the ground. Stay between the lines and take advantage of her being idle. Beware, for when her HP is low she will start following up Frosty Fire with Shall We Dance?. Pillars of Rime is more a problem for range than melee since the closest Deep Freeze spawns at Mid range, but beware the overhead swing. That won't hurt quite as much as a Helm Splitter, but it will still hurt.
+
+    As she uses most attacks at any range, there is no safe place to have aggro. Be mindful of your allies and don't move fireballs into them or something while dodging. While the Ice Sheet is annoying, it doesn't last long enough--nor is it cast often enough--to be a major issue.
+
+    Her enrage is just the usual AI but it does a ridiculous amount of damage.
+
+  moves:
+    - name: Maul
+      targets: Close
+      m1: true
+      m2: true
+      desc: >
+        Performs a sideways swipe with her wand.
+
+    - name: Helm Splitter
+      targets: Close
+      m1: true
+      m2: true
+      desc: >
+        Performs an overhead smash with her wand.
+
+    - name: Frosty Fire
+      targets: Any
+      isSymbology: true
+      m1: true
+      m2: true
+      desc: >
+        It will spin into the air and a circle marker will appear over the red target and lazily follow them. After one second, Matango will slam down for large damage. Upon landing, Matango is immobilized for 2.5 seconds.Flies to the opposite end of the stage as her target. She then waves her wand and Ice Needles will fire across the stage in a U-shaped pattern. Inflicts Frozen.
+
+    - name: Icy Enclosure
+      targets: Any
+      isSymbology: true
+      m1: true
+      m2: true
+      desc: >
+        Performs an overhead smash with her wand and causes a Deep Freeze to spawn underneath her target. It flinches you and then explodes for large damage. Inflicts Frozen.
+
+    - name: Boreal Burst
+      targets: Any
+      m1: true
+      m2: true
+      desc: >
+        Fires three blue balls that home in on the target. Inflicts Frozen.
+
+    - name: Rush
+      targets: Any
+      m1: true
+      m2: true
+      desc: >
+        Assumes a horizontal pose, then launches herself across the stage like an arrow. Very fast.
+
+    - name: Searing Blast
+      targets: Any
+      isSymbology: true
+      m1: true
+      m2: true
+      desc: >
+        Raises her wand high and generates a fire burst that launches three fireballs at her target.
+
+    - name: Ice Patch
+      targets: Any
+      isSymbology: true
+      m1: true
+      m2: true
+      desc: >
+        Spawns grey fields all over the stage that slow movement and nullify AP gain. Find a spot between them to regenerate AP.
+
+    - name: Ridicule
+      targets: Any
+      m1: true
+      m2: true
+      desc: >
+        Laughs at you for your gacha-related failures.
+
+    - name: Pillars of Rime
+      targets: Any
+      isSymbology: true
+      m2: true
+      desc: >
+        Performs an overhead smash with her wand and spawns Deep Freezes in a spread formation. Inflicts Frozen.
+
+    - name: "Shall We Dance?"
+      targets: Any
+      m2: true
+      desc: >
+        Rare attack. Shoots fireballs that fall onto the ground and then snake across the stage. There will be visible lines on the ground showing the fireballs' path. Multiple waves of fireballs. Very fast. If she is interrupted by stun, the attack will continue.
