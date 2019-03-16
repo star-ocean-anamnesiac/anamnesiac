@@ -1,5 +1,5 @@
 - name: "Geared Wisp"
-  image: geared-wisp
+  image: geared_wisp
   cat: gl
   race: Machine 
 
