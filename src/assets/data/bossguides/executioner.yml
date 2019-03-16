@@ -1,0 +1,93 @@
+
+- name: "High Executioner"
+  image: executioner
+  cat: gl
+  race: Demon
+  
+  isActive: false
+
+  enrage:
+    m1: "7:00"
+    m2: "7:00"
+    	    
+  statusInflictions:
+    - Nothing
+
+  weaknesses:
+    - element: Ice
+      percentWeakness: 1
+      
+    - status: Freeze
+      vuln: Low
+    - status: Poison
+      vuln: Low
+    - status: Silence
+      vuln: Low
+    - status: Curse
+      vuln: Low
+    - status: Paralysis
+      vuln: Low
+      
+  recommendations:
+    - plain: Anti-Flinch
+    - plain: Damage
+
+  desc: >
+    It's clear that Luther isn't sending his very best, because the Executioners... well, aren't. Just about anyone can  take these guys on and finish the fight without much issue. Some anti-flinch might be helpful here in the sense that it's also helpful during Gerel, so bring at least a Viktor, a Dias or a Summer Myuria if you want the easiest time possible.
+
+    This fight is less about the High Executioner himself and more about his two little friends. They aren't well trained, spreading their Chest Lasers and Destructions everywhere and that's annoying. It is also dangerous without anti-flinch, because it gives him the openings he needs. So, first order of business is to focus them down, preferably one at a time (they WILL have more HP than the usual boss add), and clear the stage of their nonsense.
+
+    The Executioner's biggest threat is that his spells cover a huge area. The Executioner's biggest weakness is that they are mostly straightforward symbols, they linger forever and he's completely open while they're happening. That means for everything but Plasma Cyclone, you have a multiple second window to dps him for free. The High Executioner did not originally have a Misery 2, so it's entirely possible Plasma Cyclone may actually do damage in ours. If this is the case, it is recommended to use your Rush Combo to cancel it.
+
+    Sadly, that's all there is to him. He's easily flinch-locked, has pitiful HP and only one truly dangerous attack without the looming threat of his adds. They do all of the heavy lifting here, so once they're out of the picture the fight is basically over.
+
+    If you somehow manage to run down the timer, he'll spam Gravidations and do hundreds of thousands of damage. They are just earth glaives, so watch for the ground to darken underneath you and dodge fast.
+  
+  moves:
+    - name: Chest Laser
+      targets: Close
+      m1: true
+      m2: true
+      desc: >
+        Sprays needle-like lasers onto the ground in front of him.
+    
+    - name: Destruction
+      targets: Any
+      isSymbology: true
+      m1: true
+      m2: true
+      desc: >
+        Launches a pulsing thunder flare towards his target. Crosses the battlefield, lingers for a long time, and covers a large range.
+
+    - name: Disaster
+      targets: Any
+      isSymbology: true
+      m1: true
+      m2: true
+      desc: >
+        Creates three stars around him in a delta formation that rain down flinching lasers.
+    
+    - name: Tornado
+      targets: Any
+      isSymbology: true
+      m1: true
+      m2: true
+      desc: >
+        Fires a tornado at his target. Crosses the battlefield and does large damage.
+    
+    - name: Plasma Cyclone
+      targets: Any
+      isSymbology: true
+      m1: true
+      m2: true
+      desc: >
+        Generates a massive lightning storm around him that deals constant flinch damage. Covers a very large area, with him at the epicenter.
+    
+    - name: Gravidation
+      targets: Any
+      isSymbology: true
+      isEnrage: true
+      m1: true
+      m2: true
+      desc: >
+        Basically an earth glaive that does hundreds of thousands of damage. You are very unlikely to see this.

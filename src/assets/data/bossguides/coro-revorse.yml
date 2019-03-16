@@ -1,0 +1,119 @@
+
+- name: "Coro Revorse"
+  image: coro_revorse
+  cat: gl
+  race: Machine
+  
+  isActive: false
+
+  enrage:
+    m1: "7:00"
+    m2: "4:00"
+    	    
+  statusInflictions:
+    - Paralysis
+
+  weaknesses:
+    - element: Lightning
+      percentWeakness: 10
+      
+    - element: Fire
+      percentWeakness: 15
+
+    - status: Freeze
+      vuln: Low
+
+  recommendations:
+    - plain: Range
+    - plain: Fast Attacks
+    - plain: Lightning Damage
+    - plain: Fire Damage
+
+  desc: >
+    Like his brother Jie Revorse, Coro Revorse can be a fast and dangerous boss for new players. The best way to tank Coro Revorse is to use ranged characters like Maria and Halloween Victor due to Coro’s fast and potentially deadly melee attacks. Coro tends to move around a lot so characters like Roddick, Myuria, and Sophia with Infernal Rod will be extremely useful due to their extra elemental damage and increased stun rate. Even though I say this other characters like 2B, Cliff, and Albel for example are still able to be used due to weapon types. Weapons to use for this fight are lightning and fire imbue weapons. Type-4O is extremely useful if you have one handed sword users with innate elements like 2B, Roddick, and Fayt.
+
+    Like his brother, Jie Revorse, Coro Revorse will go down quickly, but don’t let this fool you. He can still decimate your party if you’re not paying attention or bringing a weak party.
+
+    The attacks to watch out the most for are Spin & Slam, Unidentified Signal, and Rocket Punch. Spin & Slam can be very deceptive. The initial ground slam hits hard and if you don’t know the attack you might walk back in if you manage to dodge the slam due to the delay of the spin. Unidentified Signal is an annoyance if you fail to dodge because most of the time it will paralyze you and open you up for further attacks. Rocket Punch, while easy to avoid, can be deadly to the unsuspecting person that walks into the fists.
+
+    After Coro enters Annihilation Mode, he will immediately start with Zone Combustion and continue to use it until either he is defeated or your party is defeated. Do not fret though because you have a window of about 5 seconds while he charges up Zone Combustion until you have to dodge. Within that 5 seconds throw out as much damage as you can and hope for an Elemetal Burst.
+
+  moves:
+    - name: Victory Pose
+      targets: Close, Mid
+      m1: true
+      m2: true
+      desc: >
+        Coro raises his arms in a menacing manner to prepare for an attack. Followed by either Rush or Windup Blow.
+
+    - name: Rush
+      targets: Close, Mid
+      m1: true
+      m2: true
+      desc: >
+        Coro charges his target and leaves behind 2 bananas that may cause paralysis upon explosion. Used after Victory Pose.
+
+    - name: Windup Blow
+      targets: Close
+      m1: true
+      m2: true
+      desc: >
+        Coro swings both arms in front of him while moving forward. Drops 3 bananas that may cause paralysis upon explosion. Used after Victory Pose. Comes out very quickly.
+
+    - name: MIRV Banana Missile
+      targets: Mid
+      m1: true
+      m2: true
+      desc: >
+        Coro fires 2 bunches of bananas to the left and right side in front of him. The bunches explode on impact and scatter 5 bananas in a circular pattern around the impacted area. Bananas may cause paralysis upon explosion.
+
+    - name: Alert Mode
+      targets: Any
+      m1: true
+      m2: true
+      desc: >
+        Coro raises his arms in a menacing manner and gains turquoise patterns on his body. Enables Somersault Kick, Spin & Slam, Unidentified Signal, and Rocket Punch.
+
+    - name: Somersault Kick
+      targets: Close
+      m1: true
+      m2: true
+      desc: >
+        Coro does a backflip and kicks his target. Drops 3 bananas in a line behind Coro. Bananas may cause paralysis upon explosion.
+
+    - name: Spin & Slam
+      targets: Close
+      m1: true
+      m2: true
+      desc: >
+        Coro does a ground pound and deals damage on impact. This is followed by a delayed spin. Drops 4 bananas around Coro that may cause paralysis upon explosion.
+
+    - name: Unidentified Signal
+      targets: Any
+      m1: true
+      m2: true
+      desc: >
+        Coro does a short jump and releases sound waves upon landing. Be ready to dodge because this attack hits the whole field and each hit may cause paralysis. Drops 4 bananas around Coro that may cause paralysis upon explosion.
+
+    - name: Rocket Punch
+      targets: Mid
+      m1: true
+      m2: true
+      desc: >
+        Coro rises into the air and fires both fists into the ground. You will continuously take damage if standing inside the radius of the fists. Explodes after a delay and causes massive damage. Drops 3 bananas behind Coro that may cause paralysis upon explosion.
+
+    - name: Annihilation Mode
+      targets: Any
+      isEnrage: true
+      m1: true
+      m2: true
+      desc: >
+        Coro raises his arms in a menacing manner signaling that enrage mode has begun. Enables Zone Combustion.
+
+    - name: Zone Combustion
+      targets: Any
+      isEnrage: true
+      m1: true
+      m2: true
+      desc: >
+        Coro punches into the ground and becomes idle. A red shockwave will spread around his arms and cause a field wide explosion. Be prepared to dodge or receive massive damage.
