@@ -1,6 +1,6 @@
 
 - name: "Exiled Knight"
-  image: exiled-knight
+  image: exiled_knight
   cat: gl
   race: Beast
   
