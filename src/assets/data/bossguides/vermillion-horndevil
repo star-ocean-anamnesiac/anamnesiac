@@ -1,0 +1,152 @@
+
+- name: "Vermillion Horndevil"
+  image: vermillion_horndevil
+  cat: gl
+  race: Demon
+  
+  isActive: false
+
+  enrage:
+    m1: "7:00"
+    m2: "7:00"
+    m3: "4:00"
+    	    
+  statusInflictions:
+    - Nothing
+
+  weaknesses:
+    - element: Ice
+      percentWeakness: 20
+
+    - element: Light
+      percentWeakness: 5
+      
+    - status: Freeze
+      vuln: Low
+
+    - status: Poison
+      vuln: Low
+      
+    - status: Paralysis
+      vuln: Low
+      
+    - status: Curse
+      vuln: Low
+      
+  recommendations:
+    - plain: Range
+    - plain: Fast Attacks
+    - plain: Crit Rate
+    - plain: Ice Damage
+    - plain: Light Damage
+
+  desc: >
+    The best way to tank Vermillion Hound is to use ranged Sharpshooters like Maria and Halloween Victor due to all his attacks being easy to see and dodge at longer range. If chosen to tank at long range, Vermillion Hound will opt to use Steel Separation as his primary attack so characters like Roddick and Myuria will be extremely useful due to being able to have elemental advantage and increased stun rate. Be sure to take advantage of this fight by using ranged characters like Phia and Winter Fidel to deal constant damage while Vermillion is moving around. Additionally, you can opt to bring characters with critical rate increase like Holiday Precis and Maria to buff your party’s critical rate to shave off Vermillion’s high defense. Weapons to use for this fight are ice and light imbue weapons. Through a bit of testing, ice is more potent than light, so weapons like Icicle Sword, Hyouga, Icy Revolver, Twin Coro Swords, and Serpent Edges are preferred.
+
+    The attacks to watch out the most for are Chomp, Tornado Tail, Steel Separation, and Steel Separation F.
+
+    Chomp seems harmless at first, but don’t let this attack fool you. Despite there being an animation for the pounce, the initial hit will come out before the animation actually starts. If you’re not familiar with this attack, you’ll be caught off-guard by the initial hit and may receive more damage than you anticipated.
+
+    Tornado Tail, while not a threat at range, is dangerous to melee players who are not paying attention. If you choose to continue attacking in melee range while Vermillion Hound uses this attack, be prepared to dodge early as the tornados will come out faster at melee range. This attack will deal massive amounts of damage especially if you are caught between the two tornados.
+
+    Steel Separation and Steel Separation F, while also both not dangerous at range, are also dangerous to melee players. Just sticking to the sides of Vermillion will still get you hit while he charges his target. The best place to be for a melee player is behind Vermillion. Avoid moving to a wall close to Vermillion if you are the target as he will slide along the wall while he is still charging.
+
+    Unlike some bosses, Vermillion does not have a special attack. Instead, Vermillion will attack more frequently. As usual like all bosses, Vermillion’s attacks will do massive damage during enrage. As long as you’re playing at range, there should be no problem fighting Vermillion even if he is enraged. For melee players, play safe and don’t be greedy with your attacks or else you’ll be caught off-guard by Chomp.
+
+  moves:
+    - name: Chomp
+      targets: Close
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Vermillion pounces forward at his target. This attack comes slightly quick and some of the damage will be dealt before the actual pouncing animation. Prepare to dodge beforehand.
+
+    - name: Divine Burst
+      targets: Any
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Vermillion charges up and releases pillars of light, like Miki’s rush, from his body. This attack has a slow buildup and is easy to spot. Stay ranged and avoid melee as you can be hit by multiple pillars if you are standing next to Vermillion.
+
+    - name: Tornado Tail
+      targets: Any
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Vermillion jumps backwards and release two tornados, side by side, that travel in a straight line in front of Vermillion. Avoid the red line and you should not be in any trouble. If you happen to be caught in the middle of the red line, you will be hit by both tornados and take massive damage.
+
+    - name: Steel Separation
+      targets: Mid
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Vermillion jumps backwards, unfolds metallic wings at his sides, and charges his target. His wings will not increase his hitbox so the edge of the wings will pass right through you.
+
+    - name: Darksphere Tail
+      targets: Any
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Vermillion releases dark orbs of energy, from his tail, at his target. The orbs have slight homing. Move close to Vermillion to easily avoid the orbs.
+
+    - name: Tail Burst
+      targets: Close, Mid
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Vermillion jumps backwards and fires an orb of energy to the ground in front of him. Explodes on ground impact and splits into smaller orbs that fall and explode around the original impact site.
+
+    - name: Layered Divine Burst
+      targets: Any
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Similar to Divine Burst except a second Divine Burst is used right after the first one. The second Divine Burst is rotated slightly to hit the gaps the first one didn’t hit.
+
+    - name: Light Ray
+      targets: Any
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        A dark aura engulfs Vermillion. Unlocks Crystal Ray, Rotating C Ray, Steel Separation F.
+
+    - name: Crystal Ray
+      targets: Any
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Vermillion gathers energy in front of him and fires a beam of light in a straight line. Massive damage but easily avoided by simply moving left or right if you choose not to dash for whatever reason.
+
+    - name: Rotating C Ray
+      targets: Any
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Similar to Crystal Ray except that Vermillion will rotate slowly until the laser rotates clockwise 90 degrees from the original fire point. Can be avoided just by standing behind Vermillion.
+
+    - name: Steel Separation F
+      targets: Any
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Similar to Steel Separation except Vermillion jumps backwards into the air, dives downwards, and then charges his target.
+
+    - name: Blitz Mode
+      targets: Any
+      isEnrage: true
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        A dark aura engulfs Vermillion signaling that enrage mode has begun. Vermillion will attack more frequently and all of his attacks will do massive damage.
