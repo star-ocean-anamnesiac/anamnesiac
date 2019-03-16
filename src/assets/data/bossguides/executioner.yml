@@ -15,8 +15,18 @@
 
   weaknesses:
     - element: Ice
-      percentWeakness: 1
 
+    - status: Freeze
+      vuln: Low
+    - status: Poison
+      vuln: Low
+    - status: Silence
+      vuln: Low
+    - status: Curse
+      vuln: Low
+    - status: Paralysis
+      vuln: Low
+      
   recommendations:
     - plain: Anti-Flinch
     - plain: Damage
