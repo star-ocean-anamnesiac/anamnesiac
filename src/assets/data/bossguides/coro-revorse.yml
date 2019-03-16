@@ -1,6 +1,6 @@
 
 - name: "Coro Revorse"
-  image: coro_revorse
+  image: coro-revorse
   cat: gl
   race: Machine
   
