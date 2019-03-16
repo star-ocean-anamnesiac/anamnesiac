@@ -1,5 +1,5 @@
 - name: "Pumpkin Cryptvine"
-  image: pumpkin_cryptvine
+  image: pumpkin-cryptvine
   cat: gl
   race: Plant
   
