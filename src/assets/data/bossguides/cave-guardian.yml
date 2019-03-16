@@ -1,5 +1,5 @@
 - name: "Cave Guardian"
-  image: cave-guardian
+  image: cave_guardian
   cat: gl
   race: Machine
   
