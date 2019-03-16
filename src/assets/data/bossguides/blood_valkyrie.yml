@@ -1,0 +1,117 @@
+
+- name: "Blood Valkyrie"
+  image: blood_valkyrie
+  cat: gl
+  race: Divinity
+  
+  isActive: false
+
+  enrage:
+    m1: "7:00"
+    m2: "7:00"
+    	    
+  statusInflictions:
+    - Silence
+
+  weaknesses:
+    - element: Light
+      percentWeakness: 25
+
+    - status: Silence
+      vuln: Low
+
+    - status: Poison
+      vuln: Low
+      
+    - status: Paralysis
+      vuln: Low
+      
+    - status: Curse
+      vuln: Low
+      
+  recommendations:
+    - plain: Range
+    - plain: Low Animation Lock
+    - plain: Earth Damage
+    - plain: Status Nullification
+
+  desc: >
+    Blood Valkyrie is a dps race at a less-than-ideal time for it. She has an HP regen mode, a weakness that so far only swords, healers and shitty 4 star invokers can cover and on top of that she's high mobility and high damage. This means you want characters that can output high dps such as Silmeria, Summer Reimi, Summer Miki, Myuria, Summer Myuria. Good support choices include Maria (Crit), Daril (AP Redux), Nel (AP Redux/Crit), Clair (DMG), Summer Reimi (ATK), Fidel (ATK) and Summer Sophia (INT/AP Battery). Anti-flinch doesn't mean much here, so I'd avoid defenders like Viktor or Stephen that bring no damage.
+
+    Unfortunately, while Silence is a frequent proc it doesn't seem to actually do anything to Blood Valkyrie; consider Lenneth for her ATK buff only. Faize can be a boon if his Curse procs, but don't expect it to.
+
+    Roddick mains be aware that Blood Valkyrie's small hitbox limits the effectiveness of Dragon Roar and Shotgun Blast. If you intend to bring him anyway, run Air slash and Double slash to get the most out of him.
+
+    At first Blood Valkyrie only uses Deep Impact and Triple Slice, making her only dangerous to melee. This quickly changes on her first Breakthrough, where she will begin using Spiral Pierce and threatening everyone on the battlefield. Spiral Pierce has an obvious tell, but it comes out fast; if she is facing you and stopped, be ready to dodge immediately.
+
+    Fortunately, Spiral Pierce is her only ranged attack. This makes her a rather predictable opponent and one that is kited around with relative ease. Use this weakness to keep her dangerous attacks focused on a small area while your team blows her up.
+
+    Bloody Coffin is her signature attack. The single version is easy enough to dodge, but when her HP gets low she will start spawning them alongside other dangerous attacks like Spiral Pierce, Triple Slice and Deep Impalement. Stay between the red lines and keep your eyes on Blood Valkyrie to avoid any follow up Pierces that may be coming your way. Do not attempt to go inside the circle to dodge it, despite how it looks you'll be damaged by every one of the coffins when they launch.
+
+    Run out the timer, and she will use Final Breakthrough. After this, she spams Valhalla Cry. With an 8 second startup, you'd better burn her fast. Keep scattered and prepare to dodge the moment you see her sword raise (or on the eighth second if your visibility is compromised). You'll have 8 more seconds of free dps time between each Valhalla Cry, so make them count.
+
+  moves:
+    - name: Deep Impact
+      targets: Close
+      m1: true
+      m2: true
+      desc: >
+        A basic horizontal slice. Also hits at her sides. Does middling damage.
+
+    - name: Triple Slicer
+      targets: Close
+      m1: true
+      m2: true
+      desc: >
+        A combo of three diagonal slashes with the final after a short delay. Also hits at her sides. Does high damage.
+
+    - name: Spiral Pierce
+      targets: Any
+      m1: true
+      m2: true
+      desc: >
+        Holds still and gathers red energy for approx 2 seconds, then charges her target extremely fast. Crosses the stage and does high damage.
+
+    - name: Breakthrough
+      targets: Any
+      m1: true
+      m2: true
+      desc: >
+        Flies into the air and then surrounds herself with red energy. This enables Deep Impalement and Bloody Coffin and disables flinching. May follow this up directly with Spiral Pierce. While Breakthrough'd, she also periodically regens HP. On multiplayer, 30 stam regen is 7601/3s, M1 is 12,093 HP/3s and M2 is 13,367/3s. This lasts 40 seconds in total.
+
+    - name: Deep Impalement
+      targets: Close
+      m1: true
+      m2: true
+      desc: >
+        Performs a combo of: a circular slash that hits everyone around her > a thrust at her target > an upward slash into the sky. After one second, a red lance crashes onto that same spot instantly for high damage, followed by a large explosion. Only usable under Breakthrough.
+
+    - name: Cool Down
+      targets: Any
+      m1: true
+      m2: true
+      desc: >
+        Disperses her red energy. She loses access to Deep Impalement and Bloody Coffin. Enters a flinch state for 10 seconds.
+
+    - name: Bloody Coffin
+      targets: Any
+      m1: true
+      m2: true
+      desc: >
+        A bunch of coffins will form a tight circle around Blood Valkyrie and then launch outward, damaging anyone struck by them. Red lines on the ground will indicate where each coffin is going. As Blood Valkyrie's HP gets lower, she will randomly spawn these in fours (in M2+, fives) after Deep Impalement, Triple Slice or Spiral Pierce. Only usable under Breakthrough.
+
+    - name: Final Breakthrough
+      targets: Any
+      isEnrage: true
+      m1: true
+      m2: true
+      desc: >
+        She will use Breakthrough, only with a more elaborate pose and effects. This enables Valhalla Cry and is a clear signal that she is enraged.
+
+    - name: Valhalla Cry
+      targets: Any
+      isEnrage: true
+      m1: true
+      m2: true
+      desc: >
+        Holds her hand high and generates a Nibelung Valesti style sphere of runic scrawl. She will gather energy into it for 8 seconds (Yes, 8 seconds) and then raise her sword, launching a crimson spear at everyone still alive. This spear has a massive AoE despite how it looks, so dash multiple times to get out of it! Only usable under Final Breakthrough.
