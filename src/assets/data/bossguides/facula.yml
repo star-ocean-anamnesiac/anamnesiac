@@ -1,0 +1,137 @@
+
+- name: "Facula Dragon"
+  image: facula
+  cat: gl
+  race: Dragon
+  
+  isActive: false
+
+  enrage:
+    m1: "7:00"
+    m2: "7:00"
+    m3: "4:00"
+    	    
+  statusInflictions:
+    - Nothing
+
+  weaknesses:
+    - element: Wind
+      percentWeakness: 25
+
+    - status: Silence
+      vuln: Low
+
+    - status: Poison
+      vuln: Low
+    
+    - status: Freeze
+      vuln: Low
+      
+    - status: Paralysis
+      vuln: Low
+      
+    - status: Curse
+      vuln: Low
+      
+  recommendations:
+    - plain: Wind Damage
+    - plain: Status Application
+    - plain: Low Animation Lock
+    - plain: Ease of Stun
+
+  desc: >
+    So you want to take on the most literal representation of a dragon ball.
+
+    This oddball's got something for everyone. High damage burst attacks (meaning anti-flinch won't help) for the ranged characters, and enough mobility and local AoE to be a pain in the average melee's ass. Fast reflexes and situational awareness are key regardless of role.
+
+    You'll want to emphasize faster units with low or no animation lock. That means you want more Roddick (esp. for stunning),  Maria,  Vampire Viktor, 2B and the like. Melee units with high animation lock like Fayt or Lenneth can fight Facula okay, but they must be careful--one poorly timed Air Raid or Skyhigh Break can leave you floored. As he's vulnerable to several status effects, Faize and Nel can make themselves useful.
+
+    So. He's a lumbering thing that likes to stomp around and use fire attacks. You have -80% Fire Resistance just being in the arena with him, so you can forget face-tanking anything he does with a Fire Armlet. None of his attacks are difficult to avoid on M1, so the best advice is to learn to dodge Flare Breath (it is, by far, his most common attack), stay out of red circles, don't be greedy and watch for Stomp and Tail Swipe--their tells are fairly obvious.
+
+    Smart Bomb is about as complicated as it gets: when you get one of these stuck to you, you have about 6 seconds before it explodes. Make sure to run it away from your team before then, and dodge out the moment the blue light intensifies.
+
+    Unfortunately, things don't stay this simple. As Facula's HP drops, he gets faster and more aggressive, to the point where he'll be spamming three or more Solar Flares in a row, then following up with a Flare Breath before the meteors even finish falling. It becomes imperative to either stun him fast and hard (Roddick can help) or burn him before he can get too threatening.
+
+    M2 difficulty brings the unfortunate addition of Stone Spear to Facula's arsenal.  Everything about this attack is deadly and deceptively fast, from the stomp to the earth glaives. If you see him leap into the air as a melee, dodge immediately. If he leapt backwards, ranged start moving in on him immediately to evade the Glaives. Sparks Fly isn't worth consideration due to its rarity, but if you're a ranged and you see Facula tail swipe, move in on him to rid yourself of the fireballs.
+
+    His enrage is just the usual AI except it does ridiculous amounts of damage.
+
+  moves:
+    - name: Bellow
+      targets: Close
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Stomps towards its target. Once he reaches them, he looses a roar that causes damage to anyone surrounding him. Deceptive hitbox--despite that it doesn't look like it hits behind him, it will. He will often follow up Roar with Flare Breath.
+
+    - name: Stomp
+      targets: Close
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Leaps up and stomps down, causing a minor shockwave & damage. Rare in M2+.
+
+    - name: Recalescent Breath
+      targets: Close
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Leans forward and shoots a stream of fire for light damage. At < 60% HP, becomes less frequent. Rare in M2+.
+
+    - name: Flare Breath
+      targets: Any
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Leans forward and then shoots three fireballs in this order: His 4:00, his 6:00 and then his 8:00. At < 60% HP, he may use this during a Solar Flare.
+
+    - name: Tail Swipe
+      targets: Close
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Does a damaging tail whip that does the damage. Infrequent attack.
+
+    - name: Smart Bomb
+      targets: Long
+      isSymbology: true
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Casts and then releases a little blue bomb that lazily follows its target. It does no contact damage. Indeed, it is harmless until the blue light intensifies and it explodes for severe damage. The bomb has a six second timer before detonation.
+
+    - name: Solar Flare
+      targets: Any
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Does a roar, spreading red fields across the stage that damage over time. After two seconds, meteors will fall onto each field and explode for severe damage (but consume the fields). At < 60% HP, frequently chains these back-to-back. The patterns of the chained Flares will be two opposing delta formations and then a hollowed circle.
+
+    - name: Sparks Fly
+      targets: Long
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Does a tail whip, that also shoots five fireballs that lazily home in on the target. Very rare.
+
+    - name: Stone Spear
+      targets: Any
+      m2: true
+      m3: true
+      desc: >
+        Leaps straight up and stomps down, damaging with a minor shockwave. On stomp Earth Glaives will spawn in a delta formation at mid-range around him. At < 60% HP, frequently chains these back-to-back.
+
+    - name: Stone Spear II
+      targets: Any
+      m2: true
+      m3: true
+      desc: >
+        Leaps away and stomps down, damaging with a minor shockwave. On stomp Earth Glaives will spawn in a wave formation near the opposite edge of the stage. At < 60% HP, frequently chains these back-to-back.
