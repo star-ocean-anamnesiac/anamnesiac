@@ -1,5 +1,5 @@
 - name: "Jie Revorse"
-  image: jie-revorse
+  image: jie_revorse
   cat: gl
   race: Machine
 
