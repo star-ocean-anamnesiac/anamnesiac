@@ -1,6 +1,6 @@
 
 - name: "Hell Siren"
-  image: vr-siren
+  image: vr_siren
   cat: gl
   race: Bird
   
