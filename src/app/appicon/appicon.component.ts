@@ -9,7 +9,7 @@ import * as rushicons from '../../assets/rush/+rush-icons.json';
 import * as bossicons from '../../assets/bosses/+boss-icons.json';
 
 const sheetTypes: any = {
-  icon:  (<any>appicons).default || appicons,
+  app:   (<any>appicons).default || appicons,
   item:  (<any>itemicons).default || itemicons,
   char:  (<any>charicons).default || charicons,
   skill: (<any>skillicons).default || skillicons,
@@ -18,7 +18,7 @@ const sheetTypes: any = {
 };
 
 const sheetPaths = {
-  icon:  'assets/spritesheets/+app-icons.png',
+  app:   'assets/spritesheets/+app-icons.png',
   item:  'assets/spritesheets/+item-icons.png',
   char:  'assets/spritesheets/+char-icons.png',
   skill: 'assets/spritesheets/+skill-icons.png',
@@ -58,7 +58,7 @@ export class AppIconComponent implements OnInit {
   public forceHeight: number;
 
   @Input()
-  public type: 'icon'|'item'|'char'|'skill'|'rush'|'boss' = 'icon';
+  public type: 'app'|'item'|'char'|'skill'|'rush'|'boss' = 'app';
 
   @Input()
   @HostBinding('class.inline-display')

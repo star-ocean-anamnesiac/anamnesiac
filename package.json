@@ -42,6 +42,7 @@
     "@ionic-native/status-bar": "5.0.0-beta.21",
     "@ionic/angular": "^4.0.0-beta.16",
     "core-js": "^2.5.4",
+    "imagemin-webp": "^5.0.0",
     "lodash": "^4.17.11",
     "markdown": "^0.5.0",
     "ngx-filter-pipe": "^2.1.2",
