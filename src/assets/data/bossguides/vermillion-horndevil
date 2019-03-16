@@ -1,6 +1,6 @@
 
 - name: "Vermillion Horndevil"
-  image: vermillion-horndevil
+  image: vermillion_horndevil
   cat: gl
   race: Demon
   
