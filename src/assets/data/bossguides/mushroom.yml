@@ -131,7 +131,7 @@
       desc: >
         There is no animated difference between Applause and Super Applause. Applause may rarely poison and Super Applause may rarely paralyze.
 
-    - name: Corkscrew Rush: Bombs
+    - name: Corkscrew Rush - Bombs
       targets: Any
       isSymbology: true
       m2: true
