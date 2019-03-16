@@ -257,6 +257,7 @@
       
       *Normal > Bloodstorm Revolution > Dragon Roar > Mirror Blade (Damage Rotation)*
 
+
 - name: Shimada
   cat: gl
   rating: 0
@@ -275,17 +276,22 @@
   talents:
     - name: "Former Glory III"
       effects: 
-        - desc: Absorb 30% damage as HP
+        - desc: Absorbs 30% of damage dealt by normal attacks as HP
+          all: false
     - name: "A Filet Mignon!"
       effects: 
-        - desc:	Heals 3% of max HP every 3 seconds
+        - desc:	Recovers 3% HP every 3 seconds
+          all: false
     - name: "Moving up in the World IV"
       effects: 
-        - desc: Will not flinch to damage under 25% max HP
+        - desc: No flinching when taking damage of 20% HP or less
           all: Close Range
     - name: "Carnivore"
       effects: 
         - desc: Damage dealt to beasts +60%
+          all: false
+          slayer: Beast
+          slayerPct: 60
           meta:
             priority: 4
             buff: Damage To Beasts
@@ -304,26 +310,27 @@
       maxHits: 6
     - name: "Nether Strike"
       picture: Nether_Strike
+      element: Fire
       power: ATK x 250%
       ap: 24
       maxHits: 5
-      element: Fire
     - name: "Air Slash"
       picture: Air_Slash_II
       power: ATK x 200%
       ap: 20
-      maxHits: 2
+      maxHits: 1
       
   rush:
-    name: "Nether Strike"
+    name: "Scarlet Strike"
     picture: Scarlet_Strike_Shimada
     element: Fire
     effects: 
-      - desc:	Heals 20% of max HP every 4 seconds
+      - desc:	Recovers 20% HP every 4 seconds
         duration: 20
-        all: true
+        all: false
     power: ATK x 3000%
     maxHits: 7
+
 
 - name: Stephen D. Kenny
   cat: gl
