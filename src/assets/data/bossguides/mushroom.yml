@@ -1,0 +1,149 @@
+
+- name: "Mountain Matango Mushroom"
+  image: mushroom
+  cat: gl
+  race: Plant
+  
+  isActive: false
+
+  enrage:
+    m1: "7:00"
+    m2: "7:00"
+    m3: "4:00"
+    	    
+  statusInflictions:
+    - Poison
+    - Paralysis
+
+  weaknesses:
+    - element: Earth
+      percentWeakness: 20
+
+    - status: Freeze
+      vuln: Low
+
+    - status: Poison
+      vuln: Low
+      
+    - status: Paralysis
+      vuln: Low
+      
+    - status: Curse
+      vuln: Low
+      
+  recommendations:
+    - plain: Range
+    - plain: Low Animation Lock
+    - plain: Earth Damage
+    - plain: Status Nullification
+
+  desc: >
+    When I think Valentine's Day, I think flying poisonous mushrooms. Apparently, I'm not the only one, because that is the theme of SOA's first Valentine's Day boss. 
+
+    Matango boasts a rare weakness. As the girls of this event wield unconventional weapon types, those who reserve their love to only a few, specific units may find their elemental options lacking.  Only Were-Millie and R-R-R-R-R-R-R-R-R-Dream Welch are "strictly" ideal for this fight; meaning they are: ranged, able to be on-element and can dps him while he's in the air.
+
+    So a lot of people will be making do with units that can check only one or two of these conditions. Vertical tracking is important due to Matango's air time, so consider units like Maria, Silmeria, Fina and most Dagger users. Myuria and Celine don't care where the boss is, their wide-hitting spells will hit him.  Other notables include Roddick, who can help lock the damn thing down. Rain, because he doesn't need a sword to be on-element. And Reimi, who can assist with the annoying status effects. While the NieR trio can be on-element, they have no vertical tracking. They can function, but be aware of this weakness.
+
+    It is not recommended to bring units that depend on stationary, backloaded multi-hit skills like Fiore or Relia. Boss moves around way too much and it'll really hurt their rush gain. Oddly, Cat Rena is an exception to this because her heart bomber has a huge AoE and she flings the heart straight at the boss.
+
+    Matango is annoying in just about any phase of this fight, but he is least annoying during his docile phase. He starts with two mermaids that easily die. All the while, he'll chase his red target around and only occasionally break out Cube Support Window. As Cube's pattern is erratic, best to watch for an empty space, dodge into it and stay out of the center. Melee beware his Poisonous Spores. It comes out fast, deals heavy damage and finishes you off with poison.
+
+    The fight doesn't change much after Hyperspeed. If anything, it  becomes easier, as Triangle Support Window is far less difficult to deal with than Cube is. Homing Sphere looks scary, but it's deceptively easy to dodge by moving in on Matango. In general, make sure you're not between Matango and its target, and watch out for line markers and you will come out victorious.
+
+    ...on Misery 1. Misery 2 and 3 are where my above recommendations start making sense. He is at least twice as fast, but his docile phase isn't too much different than in M1. It's when he uses Speed Up Mode that this fight becomes difficult for melee and stationary-spell dependent mages to deal with.
+
+    He really, really loves Screw Rush: Bombs. He uses it a lot. Often back-to-back, three or more times in a row. It puts him in the air, has him cross the stage (rip camera), puts crazy AoE on the ground, and by the time you're recovering from one he's already started another. After enough of these, you might consider the odd Follow Wind Cube or Tri to be a slow-paced breather.
+
+    Screw Rush: Bombs chases the red target if they're running away. So red target needs to be aware of this  and not deposit a bunch of line markers on top of their backline. Others will want to move opposite matango, as you'll find a safe spot easiest that way.
+
+    When all is said and done, and he enrages, his skills just start doing millions of damage. If you already have his pattern down,  this should be no problem. Practice makes perfect.
+
+  moves:
+    - name: Swat
+      targets: Close
+      m1: true
+      desc: >
+        It will stop in front of its target for 0.5 seconds, then clap its hands together on them. This can hit at mid range. Does not use in M2+.
+
+    - name: Corkscrew Rush
+      targets: Any
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        It will reel back for 0.5 seconds and then charge forward in a screw attack that crosses the stage. Deceptively slow. High damage.
+
+    - name: Corkscrew Stamp
+      targets: Any
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        It will spin into the air and a circle marker will appear over the red target and lazily follow them. After one second, Matango will slam down for large damage. Upon landing, Matango is immobilized for 2.5 seconds.
+
+    - name: Poisonous Spore
+      targets: Close
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Will start hitting the cap on its head, releasing flinching poison powder in an AoE  around it. Deceptively high damage. High chance to poison.
+
+    - name: Cube Support Window
+      targets: Any
+      isSymbology: true
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        A mass of line markers will appear in an erratic, scattered pattern that converges in the center. Wind blades will travel down them immediately, and will converge into a tornado at the center where they meet. The tornado will linger for 1 second, then spawn line markers across the stage in a Y formation. After 1 more second, it will fire the wind blades and disperse. Very fast.
+
+    - name: Hyperspeed
+      targets: Any
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Powers up with purple energy. This is a sign its docile phase has ended. Enables Homing Sphere and Follow Wind Tri. On M2+ it will also enable Screw Rush: Bombs.
+
+    - name: Homing Sphere
+      targets: Any
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Will rise into the air and perform a little dance, summoning a mass of yellow projectiles. After 1.5 seconds, it will fire them onto the party. They seem to lazily home in around the target.
+
+    - name: Triangle Support Window
+      targets: Any
+      isSymbology: true
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        This is much like Follow Wind Cube except the line markers form a triangle askew across the stage. After the wind blades fire, another triangle line marker will appear, this one mirroring the previous. Very fast. High damage.
+
+    - name: Applause / Super Applause
+      targets: Close
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        There is no animated difference between Applause and Super Applause. Applause may rarely poison and Super Applause may rarely paralyze.
+
+    - name: Corkscrew Rush: Bombs
+      targets: Any
+      isSymbology: true
+      m2: true
+      m3: true
+      desc: >
+        It will fly into the air and then screw attack through the sky towards its target. As it does this, it will lob bombs that explode into line markers that resemble an inverted yen symbol (¥). Can and will follow the target if they are moving away from it, making this attack very unpredictable.
+
+    - name: High Speed Up Mode
+      targets: Any
+      isEnrage: true
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Powers up with purple energy. This is a sign that it has enraged.
