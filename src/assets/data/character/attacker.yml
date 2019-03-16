@@ -31,7 +31,7 @@
             priority: 3
             buff: ATK
             buffCondition: HP is 100%
-            buffValue: 6045
+            buffValue: 60
     - name: "Automated Infantry Android"
       effects: 
         - desc: Evasion AP consumption -100% when Just Timing evasion
@@ -50,23 +50,23 @@
         - desc: Imbues attacks with light/dark element
 
   skills:
-    - name: "YoHRa Arms: One"
+    - name: "YoRHa Arms: One"
       picture: YoHRa_Arms_One
       power: ATK x 380%
       ap: 22
       maxHits: 2
       highlight: true
-    - name: "YoHRa Arms: Two"
+    - name: "YoRHa Arms: Two"
       picture: YoHRa_Arms_Two
       power: ATK x 1100%
       ap: 42
       maxHits: 2
-    - name: "YoHRa Pod: One"
+    - name: "YoRHa Pod: One"
       picture: YoHRa_Pod_One
       power: ATK x 180%
       ap: 13
       maxHits: 1
-    - name: "YoHRa Pod: Two"
+    - name: "YoRHa Pod: Two"
       picture: YoHRa_Pod_Two
       power: ATK x 380%
       ap: 20
@@ -74,15 +74,15 @@
       highlight: true
 
   rush:
-    name: "YoHRa Arms: Zero"
+    name: "YoRHa Arms: Zero"
     picture: YoHRa_Arms_Ø_2B
     effects: 
-      - desc: All elemental damage +55%
+      - desc: All elemental damage +70%
         duration: 20
         meta:
           priority: 4
           buff: Elemental Damage
-          buffValue: 55
+          buffValue: 70
       - desc: All elemental damage +50%
         all: true
         duration: 20
@@ -130,9 +130,9 @@
       **Rotation**
       
       
-      *Normal > YoHRa Arms: One > YoHRa Pod: Two > YoHRa Arms: two > Spam it till out of AP. (General combo.)*
+      *Normal > YoRHa Arms: One > YoRHa Pod: Two > YoRHa Arms: two > Spam it till out of AP. (General combo.)*
       
-      *Normal > YoHRa Pod: Two > YoHRa Arms: One (Miss on purpose) > YoHRa Pod: Two > Spam it till out of AP. (Ranged combo.)*
+      *Normal > YoRHa Pod: Two > YoRHa Arms: One (Miss on purpose) > YoRHa Pod: Two > Spam it till out of AP. (Ranged combo.)*
     
 - name: Fidel Camuze
   cat: gl
