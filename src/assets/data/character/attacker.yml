@@ -3829,3 +3829,74 @@
         all: true
     power: ATK x 2500%
     maxHits: 4
+
+
+- name: Tynave
+  cat: gl
+  rating: 0
+  picture: Tynave
+  weapon: knuckle
+  ace: false
+  limited: false
+  star: 4
+
+  stats:
+    hp: 12810
+    atk: 1957
+    int: 1274
+    def: 1615
+    hit: 952
+    grd: 679
+
+  talents:
+    - name: "Dazing Diversionary Tactics"
+      effects: 
+        - desc: ATK +30%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 30
+    - name: "Unique Battle Arts"
+      effects: 
+        - desc: AP cost -15%
+          all: false
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 15
+
+  skills:
+    - name: "Hammer of Might"
+      picture: Hammer_of_Might
+      power: ATK x 230%
+      ap: 24
+      maxHits: 1
+    - name: "Drill Spike"
+      picture: Drill_Spike
+      power: ATK x 190%
+      ap: 20
+      maxHits: 4
+    - name: "X Claw"
+      picture: X_Claw
+      power: ATK x 310%
+      ap: 29
+      maxHits: 6
+    - name: "JC Somersault"
+      picture: Sumersault
+      power: ATK x 410%
+      ap: 32
+      maxHits: 3
+
+  rush:
+    name: "Sharp Talons"
+    picture: Sharp_Talons_Tyvane
+    effects:
+      - desc: Removes all buffs
+        duration: 20
+        all: Enemies
+      - desc: DEF -30%
+        duration: 20
+        all: Enemies
+    power: ATK x 2000%
+    maxHits: 4
