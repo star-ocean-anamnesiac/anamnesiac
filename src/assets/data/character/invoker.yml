@@ -1166,7 +1166,7 @@
     power: INT x 4000%
     maxHits: 8
     
-    notes: >
+  notes: >
       _Mavelle is here and brings a unique playstyle to the table. Unlike other invokers Mavelle is about being a true one skill
       wonder. She sets up her damage by using Aerial Lancer and Hail orb. After this she spends her time using her Arctic Impact and
       waiting for her AP to recharge until the buffs run out and repeat. It's not a play style for everyone but it's certainly not
@@ -1319,7 +1319,7 @@
     power: INT x 4500%
     maxHits: 8
     
-    notes: >
+  notes: >
       _Evelysse shows up in a bridal gown as GL's first limited ace invoker. She actually hits exceptionally hard especially due to
       her 4.5k rush mult and her high multiplier on her main damage dealing attack. Post rush she gets even more powerful with her
       Int damage buff and the AP cost reduction allowed her to sling out her hard hitting spell even more. However Eve has her fair
