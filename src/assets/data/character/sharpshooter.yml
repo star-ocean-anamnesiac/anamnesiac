@@ -2563,7 +2563,7 @@
 
   rush:
     name: "Quantum Explosion"
-    picture: Laser_Blast
+    picture: Quantum_Explosion_Pavine
     effects:
       - desc: Critical hit chance +50%
         duration: 20
