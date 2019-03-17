@@ -3764,3 +3764,68 @@
           buffValue: 50
     power: ATK x 3000%
     maxHits: 7
+
+
+- name: Farleen
+  cat: gl
+  rating: 0
+  picture: Farleen
+  weapon: ohs
+  ace: false
+  limited: false
+  star: 4
+
+  stats:
+    hp: 12915
+    atk: 1943
+    int: 1286
+    def: 1628
+    hit: 938
+    grd: 679
+
+  talents:
+    - name: "Greater Kingmaker"
+      effects: 
+        - desc: AP cost -20%
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 20
+    - name: "Quickest Wit"
+      effects: 
+        - desc: Nullifies poison (180 seconds)
+          all: true
+
+  skills:
+    - name: "Stampede Slash"
+      picture: Stampede_Slash
+      power: ATK x 340%
+      ap: 29
+      maxHits: 6
+    - name: "Air Slash"
+      picture: Air_Slash_I
+      power: ATK x 200%
+      ap: 20
+      maxHits: 1
+    - name: "Air Raid"
+      picture: Air_Raid
+      element: Light
+      power: ATK x 550%
+      ap: 35
+      maxHits: 6
+    - name: "Cyclone Blade"
+      picture: Cyclone_Blade
+      power: ATK x 310%
+      ap: 29
+      maxHits: 5
+
+  rush:
+    name: "Wyrm's Grasp"
+    picture: Wyrm's_Grasp_Farleen
+    element: Earth
+    effects:
+      - desc: Nullifies poison
+        duration: 20
+        all: true
+    power: ATK x 2500%
+    maxHits: 4
