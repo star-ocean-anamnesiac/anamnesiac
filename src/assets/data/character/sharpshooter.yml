@@ -2502,3 +2502,75 @@
         all: true
     power: ATK x 2500%
     maxHits: 5
+
+
+- name: Pavine
+  cat: gl
+  rating: 0
+  picture: Pavine
+  weapon: gun
+  ace: false
+  limited: false
+  star: 4
+
+  stats:
+    hp: 13020
+    atk: 1785
+    int: 1248
+    def: 1327
+    hit: 1015
+    grd: 777
+
+  talents:
+    - name: "Even More Diabolical Schemes"
+      effects: 
+        - desc: Hitcount timer +1 second
+          all: true
+    - name: "Kronos's Ultimate Weapon"
+      effects: 
+        - desc: Critical hit chance +30%
+          all: false
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffValue: 30
+    - name: "Tough like Weeds"
+      effects: 
+        - desc: Additional hit that deals 20% of damage during normal attacks
+          all: false
+
+  skills:
+    - name: "Scatter Beam"
+      picture: Break_Horn
+      power: ATK x 250%
+      ap: 24
+      maxHits: 8
+    - name: "Aiming Device"
+      picture: Aiming_Device
+      power: ATK x 200%
+      ap: 20
+      maxHits: 1
+    - name: "Laser Blast"
+      picture: Laser_Blast
+      power: ATK x 190%
+      ap: 20
+      maxHits: 3
+    - name: "Crimson Squall"
+      picture: Crimson_Squall_I
+      power: ATK x 340%
+      ap: 29
+      maxHits: 9
+
+  rush:
+    name: "Quantum Explosion"
+    picture: Quantum_Explosion_Pavine
+    effects:
+      - desc: Critical hit chance +50%
+        duration: 20
+        all: false
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 50
+    power: ATK x 2500%
+    maxHits: 3
