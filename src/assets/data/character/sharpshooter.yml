@@ -2435,3 +2435,70 @@
           buffValue: 80
     power: ATK x 3000%
     maxHits: 9
+
+
+- name: Amina
+  cat: gl
+  rating: 0
+  picture: Amina
+  weapon: bow
+  ace: false
+  limited: false
+  star: 4
+
+  stats:
+    hp: 11550
+    atk: 1759
+    int: 1300
+    def: 1418
+    hit: 1057
+    grd: 777
+
+  talents:
+    - name: "Black Tribe's Favor III"
+      effects: 
+        - desc: Nullifies curse (180 seconds)
+          all: true
+    - name: "Runemaster II"
+      effects: 
+        - desc: Damage dealt to undead +20%
+          all: true
+          slayer: Undead
+          slayerPct: 20
+          meta:
+            priority: 4
+            buff: Damage To Undead
+            buffValue: 20
+
+  skills:
+    - name: "Heavenly Flight"
+      picture: Heavenly_Flight
+      power: ATK x 310%
+      ap: 29
+      maxHits: 4
+    - name: "Hunter's Moon"
+      picture: Hunter's_Moon
+      power: ATK x 310%
+      ap: 29
+      maxHits: 7
+    - name: "Frigid Quills"
+      picture: Frigid_Quills
+      power: ATK x 310%
+      ap: 20
+      maxHits: 3
+    - name: "Seraphic Thunder"
+      picture: Seraphic_Thunder_II
+      element: Lightning
+      power: ATK x 280%
+      ap: 27
+      maxHits: 8
+
+  rush:
+    name: "Hawkeye Bolts"
+    picture: Hawkeye_Bolts_Amina
+    effects:
+      - desc: Nullifies curse
+        duration: 20
+        all: true
+    power: ATK x 2500%
+    maxHits: 5
