@@ -1968,3 +1968,80 @@
           buffValue: 50
     power: INT x 2500%
     maxHits: 3
+
+
+- name: Welch Vineyard
+  cat: gl
+  rating: 0
+  picture: Welch
+  weapon: staff
+  ace: false
+  limited: false
+  star: 4
+
+  stats:
+    hp: 10185
+    atk: 1274
+    int: 2403
+    def: 1090
+    hit: 875
+    grd: 686
+
+  talents:
+    - name: "Creative Genius III"
+      effects: 
+        - desc: INT +30%
+          all: true
+          meta:
+            priority: 4
+            buff: INT
+            buffValue: 30
+    - name: "Luck Favors the Brave II"
+      effects: 
+        - desc: Symbology cast time -20%
+          all: false
+          meta:
+            priority: 1
+            buff: Cast Time Reduction
+            buffValue: 20
+
+  skills:
+    - name: "Aurora Rings"
+      picture: Aurora_Rings
+      element: Light
+      power: INT x 460%
+      ap: 35
+      maxHits: 5
+    - name: "Stone Rain"
+      picture: Stone_Rain
+      element: Earth
+      power: INT x 460%
+      ap: 35
+      maxHits: 5
+    - name: "Sunflare"
+      picture: Sunflare
+      element: Light
+      power: INT x 570%
+      ap: 42
+      maxHits: 6
+    - name: "Terra Hammer"
+      picture: Terra_Hammer
+      element: Earth
+      power: INT x 670%
+      ap: 42
+      maxHits: 6
+
+  rush:
+    name: "Twinkly Shine"
+    picture: Revised_Sunflare_Robust_Heinrich
+    element: Light
+    effects: 
+      - desc: Damage dealt +50%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Damage
+          buffValue: 50
+    power: INT x 2500%
+    maxHits: 20
