@@ -2574,3 +2574,76 @@
           buffValue: 50
     power: ATK x 2500%
     maxHits: 3
+
+
+- name: Milla Bachtein
+  cat: gl
+  rating: 0
+  picture: Milla
+  weapon: dagger
+  ace: false
+  limited: false
+  star: 4
+
+  stats:
+    hp: 11865
+    atk: 1785
+    int: 1286
+    def: 1444
+    hit: 1022
+    grd: 770
+
+  talents:
+    - name: "Insatiable Thirst for Knowledge"
+      effects: 
+        - desc: Damage dealt +30%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 30
+    - name: "A Beautiful Future"
+      effects: 
+        - desc: +10% chance of adding paralysis to normal attacks
+          all: false
+          meta:
+            priority: 4
+            buff: Paralysis Attack Chance
+            buffValue: 10
+
+  skills:
+    - name: "Focused Shockwave"
+      picture: Focused_Shockwave
+      power: ATK x 190%
+      ap: 20
+      maxHits: 5
+    - name: "Flying Guillotine"
+      picture: Guillotine
+      power: ATK x 370%
+      ap: 32
+      maxHits: 4
+    - name: "Unholy Terror"
+      picture: Unholy_Terror
+      power: ATK x 310%
+      ap: 29
+      maxHits: 5
+    - name: "Lightning Chain"
+      picture: Lightning_Chain
+      element: Lightning
+      power: ATK x 250%
+      ap: 24
+      maxHits: 6
+
+  rush:
+    name: "Paralyzing Blow"
+    picture: Paralysing_Blow_Milla
+    effects:
+      - desc: DEF -30% %
+        duration: 20
+        all: Enemies
+        meta:
+          priority: 1
+          buff: Enemy DEF Reduction
+          buffValue: 30
+    power: ATK x 2000%
+    maxHits: 5
