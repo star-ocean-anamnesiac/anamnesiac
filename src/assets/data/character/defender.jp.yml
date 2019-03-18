@@ -137,3 +137,163 @@
       *Normal > Pod 1 > Pod 2 > CA Sword 12 (Ranged set combo)*
       
       *Pod 2 > Pod 1 > Pod 2 > CA Sword 12 (Ranged set combo from range)*
+
+- name: Dias (Awakened)
+  cat: jp
+  rating: 9
+  picture: Dias
+  weapon: bns
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 22155
+    atk: 3230
+    int: 1509
+    def: 2867
+    hit: 812
+    grd: 1036
+
+  talents:
+    - name: "Expel's Swordsmaster II"
+      effects: 
+        - desc: DEF +25%
+          all: true
+          meta:
+            priority: 1
+            buff: DEF
+            buffValue: 25
+        - desc: ATK damage taken -25%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK Damage Taken Reduction
+            buffValue: 25
+    - name: "Ruthless Swordsmanship II"
+      effects: 
+        - desc: ATK +50%
+          meta:
+            priority: 4
+            buff: ATK
+            buffValue: 50
+        - desc: DEF +20%
+          meta:
+            priority: 4
+            buff: DEF
+            buffValue: 20
+    - name: "Vow to Cecille II"
+      effects: 
+        - desc: Will not flinch to damage under 30% max HP
+          all: Close Range
+    - name: "Equal Footing"
+      effects: 
+        - desc: Damage +40%
+          all: Attacker
+          meta:
+            priority: 1
+            buff: Damage
+            buffRole: attacker
+            buffValue: 40
+        - desc: Damage +40%
+          all: Defender
+          meta:
+            priority: 1
+            buff: Damage
+            buffRole: defender
+            buffValue: 40
+    - name: "The Fight For Supreme Power"
+      effects: 
+        - desc: Taunt+3
+    - name: "A Mercenary's Strength"
+      effects: 
+        - desc: Restore 5% HP every 1 second during CA standby.
+
+  skills:
+    - name: "Annihilating Air Slash"
+      picture: Air_Slash_II
+      power: ATK x 220%
+      ap: 20
+      maxHits: 5
+      highlight: true
+    - name: "Double Slash"
+      picture: Double_Slash_II
+      power: ATK x 220%
+      ap: 20
+      maxHits: 2
+      highlight: true
+    - name: "Diabolic Edge"
+      picture: Diabolic_Whirl
+      power: ATK x 370%
+      ap: 29
+      maxHits: 2
+    - name: "Dragon Roar"
+      picture: Dragon_Roar
+      power: ATK x 340%
+      ap: 29
+      maxHits: 2
+      element: Dark
+      highlight: true
+    - name: "Double Slash of Fury"
+      picture: Unbridled_Double_Slash
+      power: ATK x 440%
+      ap: 30
+      maxHits: 4
+      
+  rush:
+    name: "Illusion"
+    picture: Deadly_Illusion_Dias
+    effects: 
+      - desc: AP cost -50%
+        duration: 20
+        meta:
+          priority: 4
+          buff: AP Cost Reduction
+          buffValue: 50
+    power: ATK x 4000%
+    maxHits: 10
+    
+  notes: >
+      _Dias was the first defender ace we had and is rewarded by being the first defender to be awakened. Rather then try and give
+      him a more all round kit like other top defenders, Dias doubles down on his composition oriented talents, in some cases
+      he literally doubles them. First off we'll go over his kit. His moves are fine, a little dated but the buffs to them help
+      increase damage output, on top of that he now has a big +50% self boost to his ATK. He has also gotten better at giving party
+      bulk with his DEF buff now at 25% for the party and reducing ATK damage by 25% only 5% less then the best ATK damage reduction
+      going._
+      
+      _His composition focused talents want him accompanied by only attackers and defenders, which sounds like Claude may be a good
+      pick to go alongside him. No only does he provide a large 30% anti-flinch buff, he essentially replaces the sharpshooters by
+      giving a 40% damage buff, matching that of base Maria._
+      
+      _His additional talents are underwhelming, taunt +3 should help him hold aggro and his other talent helps him regenerate health
+      by holding CA. Not actively using it. Just standing there with it charging. Doing nothing. It's quite bad, but the improvements
+      he gets are the real powerhouses here._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Solid ranged attacks
+      
+      - Strong party wide defensive buff.
+      
+      - Very good in a comp with just Attackers and defenders.
+      
+      
+      **Cons**
+      
+      - Some of his buffs are redundant for ranged characters.
+      
+      - Still the greatest pusher of all time.
+      
+      - Skill selection is a little lacklustre.
+      
+      
+      **Rotation**
+      
+      *Normal > Annihiliating Air Slash > Double Slash > Annihiliating Air Slash > spam this until no AP - (Damage rotation)*
+      
+      *Annihiliating Air Slash > Dragon Roar > Annihiliating Air Slash > Dragon Roar > spam this until no AP - (Range rotation)*
+    
