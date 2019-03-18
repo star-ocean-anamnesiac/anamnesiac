@@ -305,3 +305,186 @@
       - Lack of powerful buffs for the party
       
       - Lack of a good talent that helps survivability
+
+- name: Rena Lanford
+  cat: jp
+  rating: 8
+  picture: Rena
+  weapon: knuckle
+  ace: true
+  limited: false
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 16746
+    atk: 2482
+    int: 2482
+    def: 1327
+    hit: 1064
+    grd: 1141
+
+  talents:
+    - name: "Healing Light"
+      effects: 
+        - desc: Recovers 10% HP every 3, 5 seconds
+          all: Short Ranged Weapon Users, All
+    - name: "Beyond Time & Space"
+      effects: 
+        - desc: Symbol invoking time -90%
+          meta:
+            priority: 4
+            buff: Cast Time Reduction
+            buffValue: 90
+    - name: "Two Mothers' Blessing"
+      effects: 
+        - desc: AP Cost -15%
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 15
+    - name: "Descendant of Nede"
+      effects: 
+        - desc: 95% (Self) & 90% (Short Ranged Weapon Users) chance of surviving a lethal attack at 10% HP or more
+
+  skills:
+    - name: "Shiny Lancer"
+      picture: Radiant_Lancer
+      element: Light
+      power: INT x 330%
+      ap: 27
+      maxHits: 8
+    - name: "Ray"
+      picture: Laser_Beams
+      element: Light
+      power: INT x 1150%
+      ap: 55
+      maxHits: 12
+    - name: "Angel Feather"
+      picture: Angel_Feathers
+      power: All Stats +20%
+      ap: 35
+      notes: Party Wide
+      maxHits: 1
+      meta:
+        priority: 2
+        buffs:
+          - ATK
+          - INT
+          - DEF
+          - HIT
+          - GRD
+        buffValue: 20
+    - name: "Faerie Light"
+      picture: Faerie_Light
+      power: INT x 250%
+      ap: 50
+      notes: Party Heal
+      maxHits: 1
+    - name: "Current Knuckle"
+      picture: Angel_Feathers
+      power: ATK x 500%
+      ap: 29
+      maxHits: 3
+      highlight: true
+    - name: "Palm of Destruction: Angel Feather"
+      picture: Angel_Feathers
+      power: ATK x 300%
+      ap: 20
+      notes: Party Wide
+      maxHits: 1
+      meta:
+        priority: 2
+        buffs:
+          - ATK
+          - INT
+          - DEF
+          - HIT
+          - GRD
+        buffValue: 30
+      
+  rush:
+    name: "Star Flare"
+    picture: Star_Flare_Rena
+    element: Light
+    effects: 
+      - desc: Critical Hit Rate +60%
+        all: Short Ranged Weapon Users
+        duration: 20
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 60
+    power: INT x 4000%
+    maxHits: 11
+    
+  notes: >
+      _There is an 80% (90% after awakening) shortening effect of the cast and, in addition, because the weapon is a knuckle, the motion of the cast is short and the recovery motion is very fast . 
+      As a healer who will recover after seeing that it is basically hit, "The second shot came and was killed when trying to recover," but the speed of recovery that can be reduced is advantageous. 
+
+      _In addition, Angel Feather (abbreviation: AF) is an excellent skill that can temporarily strengthen both defensive and defensive parameters. 
+      The battle skills will not be overwhelmed by reinforcements such as talents, so it is possible to reduce the risk of fighting as a healer with low firepower and difficulty in buffing. 
+      It's even better if you look at the mark of parameter UP so that your buffs won't break, and if you get used to it, you will be able to put it in time. 
+      Before waking up, the AP consumption of 95 is terrific, but when waking up it drops to 35 and it can be incorporated into cancellations, so it must be awake ._
+
+      _When awakened, two physical attack techniques are added.
+      The skill feathers and angel feathers can attack while gaining the same effect as the angel feathers (although not written as a whole, but the buff gets the whole). 
+      The effective time is half, but it's hard to be bothered as you shoot while attacking._
+
+      _In addition, physical skills are different from heraldry Shiny Lancer and Ray, and damage is calculated using ATK. However, if you wake up, Rena's ATK also rises, so you do not have to think basically. 
+      In order to stabilize the turn, it is better to align the two skills other than Fairylight with two physics skills (carrent knuckle + qigong rule) or two crest techniques (angel feather + ray). 
+      Generally speaking, physical types that are easily accessible to other characters' talents are easier to handle, but the power of ray is also greatly improved by awakening, so depending on the equipment and environment, there are also crest types for light attribute weaknesses._
+
+      _As for the flow, while maintaining the buff of the angel feather, store the gauges with roar and fairy lights. When recovery is busy, buff just before rush. 
+      If recovery is complete, it is easy for the gauge to be delayed, and it is easier to catch up with the normal attack. 
+      However, since it is a healer, it is not necessary to go to the beat by force (especially heraldic type). Even if the gauge is somewhat delayed, it is good for the safe operation of the fairy light continuous hit._
+
+      _Using Rays during an Elements Burst can contribute to the extension of time, as the Elements Burst will not melt during the duration of the game and will not be resolved during that time. 
+      In addition, if you go into Ereba, you will push out the enemies, so if you hit them, stand with your friends and enemies._
+      
+      _She does have her downsides, you can only run one of her two damage spells and they're interchangable with
+      lancer providing more damage, but lasers lets you complete rotations with faerie light faster. She has pretty slow rush gain
+      especially if she's struggling to hit with her damage spells, and her melee normals make playing her a little awkward. In
+      summary Rena is the best true healer we have right now, fast cast times, a strong buff, good healing output. But her low damage
+      and slow rush gain leave something to be desire._   
+      
+      
+      **TL DR - Needs Updated**
+      
+      
+      **Pros**
+      
+      - Fast cast times
+      
+      - Talents and post rush buff that is amazing for melee compositions
+      
+      - Hard to kill
+      
+      - Angel Feather stacks with all party passive buffs.
+      
+      
+      **Cons**
+      
+      - Low damage
+      
+      - Slow rush gain, unless you put yourself in danger by meleeing the boss
+      
+      - Melee range normals
+      
+      - Offers little to ranged characters
+      
+      - Radiant Lancer's damage and rush gain are backloaded onto the final hit, which sucks for especially mobile bosses
+       
+      
+      **Rotation**
+      
+      *Angel Feather (Remember to refresh this)*
+      
+      *Normal > Laser Beams > Laser Beams (Melee rotation w/ Beams)
+      
+      *Radiant Lancer > Faerie Light > Radiant Lancer. (Rotation w/ Lancer)*
+      
+      *Laser Beams > Faerie Light (Ranged rotation with Beams)*
+      
+      *Faerie Light > Spam till the party isn't dying. (Healing)*
+    
