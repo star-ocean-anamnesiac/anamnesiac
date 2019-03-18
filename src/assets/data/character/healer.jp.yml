@@ -346,6 +346,21 @@
     - name: "Descendant of Nede"
       effects: 
         - desc: 95% (Self) & 90% (Short Ranged Weapon Users) chance of surviving a lethal attack at 10% HP or more
+    - name: "Physical Sense"
+      effects: 
+        - desc: Normal attack AP recovery amount + 100% & Damage not attacked while attacked -30%
+    - name: "I love cute things!"
+      effects: 
+        - desc: ATK +45%
+          meta:
+            priority: 4
+            buff: ATK
+            buffValue: 40
+        - desc: HP +20%
+          meta:
+            priority: 4
+            buff: HP
+            buffValue: 20
 
   skills:
     - name: "Shiny Lancer"
