@@ -397,13 +397,13 @@
       notes: Party Heal
       maxHits: 1
     - name: "Current Knuckle"
-      picture: Angel_Feathers
+      picture: Current_Knuckle
       power: ATK x 500%
       ap: 29
       maxHits: 3
       highlight: true
     - name: "Palm of Destruction: Angel Feather"
-      picture: Angel_Feathers
+      picture: Palm_of_Destruction
       power: ATK x 300%
       ap: 20
       notes: Party Wide
