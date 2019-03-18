@@ -2045,3 +2045,80 @@
           buffValue: 50
     power: INT x 2500%
     maxHits: 20
+
+
+- name: Eleyna Farrence
+  cat: gl
+  rating: 0
+  picture: Eleyna
+  weapon: staff
+  ace: false
+  limited: false
+  star: 4
+
+  stats:
+    hp: 9975
+    atk: 1286
+    int: 2403
+    def: 1103
+    hit: 882
+    grd: 686
+
+  talents:
+    - name: "Divine Revelation III"
+      effects: 
+        - desc: INT damage taken -30%
+          all: true
+          meta:
+            priority: 4
+            buff: INT Damage Taken Reduction
+            buffValue: 30
+    - name: "A Saint's Legacy"
+      effects: 
+        - desc: Stun chance +15%
+          all: false
+          meta:
+            priority: 1
+            buff: Stun Rate
+            buffValue: 15
+
+  skills:
+    - name: "Wind Blade"
+      picture: Wind_Blade
+      element: Wind
+      power: INT x 190%
+      ap: 20
+      maxHits: 2
+    - name: "Ice Needles"
+      picture: Ice_Needles
+      element: Ice
+      power: INT x 250%
+      ap: 24
+      maxHits: 9
+    - name: "Tornado"
+      picture: Tornado
+      element: Wind
+      power: INT x 460%
+      ap: 35
+      maxHits: 2
+    - name: "Arctic Impact"
+      picture: Arctic_Impact
+      element: Ice
+      power: INT x 670%
+      ap: 42
+      maxHits: 3
+
+  rush:
+    name: "Frore Blossom"
+    picture: Frore_Blossom_Eleyna
+    element: Ice
+    effects: 
+      - desc: DEF -40%
+        duration: 20
+        all: Enemies
+        meta:
+          priority: 1
+          buff: Enemy DEF Reduction
+          buffValue: 40
+    power: INT x 3000%
+    maxHits: 12
