@@ -4,7 +4,7 @@
   cat: gl
   race: Demon
   
-  isActive: false
+  isActive: true
 
   enrage:
     m1: "7:00"
