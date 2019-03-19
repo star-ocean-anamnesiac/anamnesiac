@@ -38,3 +38,10 @@
     In M2 and above, will also perform ranged attacks. Extremely high ATK in M2/M3. Recommend taking a Defnder
   
   moves:
+    - name: Rush
+      targets: Close, Mid
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Coro charges his target and leaves behind 2 bananas that may cause paralysis upon explosion.
