@@ -15,9 +15,26 @@
     - Unknown
 
   weaknesses:
+    - element: Earth
+      percentWeakness: 1
+
+    - status: Curse
+      vuln: Low
+   
+    - status: Freeze
+      vuln: Low
+   
+    - status: Poison
+      vuln: Low
 
   recommendations:
+    - plain: Earth Damage
+    - plain: Status Infliction
+    - plain: Anti-Flinch
 
   desc: >
+    Attack pattern intensifies as its HP decreases. Be aware of the rushing attacks. Will mostly do close range attacks. 
+    
+    In M2 and above, will also perform ranged attacks. Extremely high ATK in M2/M3. Recommend taking a Defnder
   
   moves:
