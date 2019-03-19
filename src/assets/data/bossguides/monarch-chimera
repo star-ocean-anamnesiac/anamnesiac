@@ -1,0 +1,23 @@
+
+- name: "Monarch Chimera"
+  image: monarch_chimera
+  cat: gl
+  race: Beast
+  
+  isActive: true
+
+  enrage:
+    m1: "7:00"
+    m2: "7:00"
+    m3: "4:00"
+    	    
+  statusInflictions:
+    - Unknown
+
+  weaknesses:
+
+  recommendations:
+
+  desc: >
+  
+  moves:
