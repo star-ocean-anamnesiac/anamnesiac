@@ -528,14 +528,17 @@
             priority: 4
             buff: INT
             buffValue: 40
+        - desc: HIT +10%
           meta:
             priority: 4
             buff: HIT
             buffValue: 10
+        - desc: GRD +10%
           meta:
             priority: 4
             buff: GRD
             buffValue: 10
+        - desc: HP +20%
           meta:
             priority: 4
             buff: HP
