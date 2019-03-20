@@ -696,7 +696,6 @@
       picture: Cure_Condition
       ap: 30
       notes: Complete recovery from abnormal condition
-      maxHits: 1
       
   rush:
     name: "Tractor Beam"
