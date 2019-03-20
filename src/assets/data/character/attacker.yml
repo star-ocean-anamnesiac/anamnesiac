@@ -3934,7 +3934,7 @@
           slayerPct: 20
           meta:
             priority: 4
-            buff: Damage To Dragon
+            buff: Damage To Dragons
             buffValue: 20
 
   skills:
