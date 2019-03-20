@@ -158,7 +158,8 @@
       *Normal > Lightning Strike > Faerie Light Wave > Lightning Strike > Spam it till out of AP. (No AP seed.)
       
       *Thunder Flare is a workable replacement for Lightning Wave and helps her rush build, but beware its higher AP cost.
-      
+
+
 - name: Miki Sauvester
   cat: gl
   rating: 3
@@ -171,7 +172,7 @@
     hp: 11235
     atk: 1589
     int: 2594
-    def: 1397
+    def: 1379
     hit: 959
     grd: 1043
 
@@ -185,14 +186,14 @@
             buffValue: 30
     - name: "Glutton II"
       effects: 
-        - desc: Reduce Symbol Invoking Time by 30%
+        - desc: Symbology cast time -30%
           meta:
             priority: 4
             buff: Cast Time Reduction
             buffValue: 30
     - name: "Beginner's Luck"
       effects: 
-        - desc: At 10% HP or higher, has a 80% chance of Surviving a Lethal Attack
+        - desc: 80% chance of surviving a lethal attack at 10% HP or more
 
   skills:
     - name: "Radiant Lancer"
@@ -203,7 +204,7 @@
       maxHits: 8
     - name: "Ex Healing"
       picture: Ex_Healing
-      power: INT x 326%
+      power: INT x 330%
       ap: 50
       notes: Single Target Heal
       maxHits: 1
@@ -223,24 +224,23 @@
   rush:
     name: "Divine Wave"
     picture: Divine_Wave_Miki
-    element: Light
     effects: 
-      - desc: Heals 30% of Max HP every 4 seconds
+      - desc: 30% HP recovery every 4 seconds
         all: true
         duration: 20
     power: INT x 2000%
     maxHits: 4
     
   notes: >
-      _The games starter pick for healers and a pretty terrible healer to boot, is also the worst of your five healing options. But
+      _The game's starter pick for healers and a pretty terrible healer to boot, is also the worst of your five healing options. But
       if you just picked her, don't fret too much! You can re-roll! But in seriousness she is usable if weak. She's a 5 star
       non-ace which is important to keep in mind. She has less stats but is easier to max limit break. One of Miki's biggest
       issues is her lack of party buffs in her talents. In fact she's the only 5 star healer in the game who doesn't provide something
-      to the party. Even the freebie 5 star of Oracle Nel does. Her party wide heal also has a massive AP cost which makes her
+      to the party. Even the freebie 5 star Oracle Nel does. Her party-wide heal also has a massive AP cost which makes her
       awkward to use._
       
       
-      _Miki does have her strong points however. Her post rush buff is a very powerful party wide regen. Her grit talent
+      _Miki does have her strong points, however. Her post rush buff is a very powerful party wide regen. Her grit talent
       to survive lethal damage also makes her quite hard to kill, which is useful in a healer especially for solo content. In summary, 
       Miki is pretty weak, but she has some strong points._
       
@@ -252,9 +252,9 @@
       
       - 5 star non-ace so is cheaper to max limit break and augment
       
-      - Powerful post rush health regen buff for the party.
+      - Powerful post rush health regen buff for the party
       
-      - Grit talent makes her hard to kill. Making her viable for solo content
+      - Grit talent makes her hard to kill, making her viable for solo content
       
       
       **Cons**
@@ -275,7 +275,8 @@
       *Normal > Sunflare > Radiant Lancer > Sunflare (Damage Rotation.)*
             
       *Normal > Faerie Star (Healing)*
-    
+
+
 - name: Millie Chliette
   cat: gl
   rating: 5.5
@@ -286,17 +287,17 @@
   star: 5
 
   stats:
-    hp: 13860
-    atk: 1759
-    int: 2494
-    def: 1353
-    hit: 1057
-    grd: 1134
+    hp: 10296
+    atk: 1307
+    int: 2583
+    def: 1758
+    hit: 785
+    grd: 842
 
   talents:
     - name: "Like Father, Like Daughter"
       effects: 
-        - desc: All Elemental Damage Dealt +30%
+        - desc: All elemental damage dealt +30%
           all: true
           meta:
             priority: 1
@@ -304,32 +305,33 @@
             buffValue: 30
     - name: "Rabbit's Foot"
       effects: 
-        - desc: Damage Taken -30%
+        - desc: Damage taken -30%
+          all: false
           meta:
             priority: 4
             buff: Damage Taken Reduction
             buffValue: 30
     - name: "Fortune of Mana"
       effects: 
-        - desc: AP Cost -20%
+        - desc: AP cost -20%
           meta:
             priority: 4
             buff: AP Cost Reduction
             buffValue: 20
 
   skills:
-    - name: "Crush"
-      picture: Crush
-      element: Earth
-      power: INT x 190%
-      ap: 20
-      maxHits: 2
     - name: "Healing"
       picture: Healing
       power: INT x 170%
       ap: 40
       notes: Single Target Heal
       maxHits: 1
+    - name: "Crush"
+      picture: Crush
+      element: Earth
+      power: INT x 190%
+      ap: 20
+      maxHits: 2
     - name: "Stone Rain"
       picture: Stone_Rain
       element: Earth
@@ -338,7 +340,7 @@
       maxHits: 5
     - name: "Faerie Star"
       picture: Faerie_Star
-      power: INT x 326%
+      power: INT x 330%
       ap: 70
       notes: Party Heal
       maxHits: 1
@@ -348,7 +350,7 @@
     picture: Tractor_Beam_Millie
     element: Earth
     effects: 
-      - desc: Critical Hit Rate +50%
+      - desc: Critical hit chance +50%
         all: true
         duration: 20
         meta:
@@ -364,7 +366,7 @@
       _The games first ace healer, also a rare sighting of an earth caster. Millie a healer with the ability to support dps due to her
       talents and post rush buff. Making her a significant improvement over Miki. However like most of our current healers, her damage
       is still quite low, in fact it's so bad it's best to just focus on using a normal and heal rather than actually casting 
-      any damage spells, plus there are a lot of post rush elemental buffs that will over ride her talent buff in the game now as well.
+      any damage spells, plus there are a lot of post rush elemental buffs that will override her talent buff in the game now as well.
       On top of that even with her AP cost reduction, her heal is still very expensive, but all her other options are bad so your 
       really taking her as a healing buff stick. In summary, Millie is a good buffer, but she is just a healing buffer so she will be
       very boring to play._
@@ -379,7 +381,7 @@
       
       - Post rush buff that boosts critical rate and heals most of the party's HP
       
-      - Talent that helps surviability
+      - Talent that helps survivability
       
       
       **Cons**
@@ -396,7 +398,8 @@
       **Rotation**
       
       *Normal > Faerie Star (Healing & Rush Gain)*
-    
+
+
 - name: Rena Lanford
   cat: gl
   rating: 8
@@ -2194,3 +2197,62 @@
         all: true
     power: INT x 2500%
     maxHits: 6
+
+
+- name: Raffine
+  cat: gl
+  rating: 0
+  picture: Raffine
+  weapon: staff
+  ace: false
+  limited: false
+  star: 4
+
+  stats:
+    hp: 10080
+    atk: 1432
+    int: 1811
+    def: 1274
+    hit: 875
+    grd: 945
+
+  talents:
+    - name: "Placid Waters"
+      effects: 
+        - desc: Nullifies status ailments (180 seconds)
+          all: false
+
+  skills:
+    - name: "Healing"
+      picture: Healing
+      power: INT x 170%
+      ap: 40
+      maxHits: 1
+    - name: "Explosion"
+      picture: Explosion
+      element: Fire
+      power: INT x 460%
+      ap: 35
+      maxHits: 14
+    - name: "Cure Condition"
+      picture: Cure_Condition
+      power: Cure All Status Ailments
+      ap: 40
+      maxHits: 1
+    - name: "Volcanic Burst"
+      picture: Volcanic_Burst
+      element: Fire
+      power: INT x 670%
+      ap: 42
+      maxHits: 13
+      
+  rush:
+    name: "Trident Strike"
+    picture: Trident_Strike_Raffine
+    element: Lightning
+    effects: 
+      - desc: Nullifies status ailments
+        all: true
+        duration: 20
+    power: INT x 2000%
+    maxHits: 10
