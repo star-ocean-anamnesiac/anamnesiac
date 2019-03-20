@@ -9,15 +9,15 @@
   star: 5
 
   stats:
-    hp: 15855
-    atk: 2704
-    int: 1549
-    def: 1969
-    hit: 1134
-    grd: 826
+    hp: 16525
+    atk: 3788
+    int: 2577
+    def: 2812
+    hit: 1184
+    grd: 866
 
   talents:
-    - name: "Quiet Determination"
+    - name: "Silent Will"
       effects: 
         - desc: ATK +40%
           all: true
@@ -25,17 +25,17 @@
             priority: 1
             buff: ATK
             buffValue: 40
-        - desc: ATK +60% when HP 100% 
+        - desc: ATK +60% when HP is 100% 
           all: true
           meta:
             priority: 3
             buff: ATK
             buffCondition: HP is 100%
             buffValue: 60
-    - name: "Automated Infantry Android"
+    - name: "Clockwork Infantry"
       effects: 
-        - desc: Evasion AP consumption -100% when Just Timing evasion
-    - name: "Silver Protection"
+        - desc: Evasion AP consumption -100% on perfect dodge
+    - name: "Holy Blessing"
       effects: 
         - desc: AP recovery from normal attacks +100%
           all: true
@@ -43,7 +43,7 @@
             priority: 1
             buff: AP Recovery
             buffValue: 100
-    - name: "Prayer"
+    - name: "Wish"
       effects: 
         - desc: Evasion AP consumption -50% 
         - desc: Enables evasion during air attacks
@@ -78,9 +78,10 @@
     picture: YoHRa_Arms_Ø_2B
     effects: 
       - desc: All elemental damage +70%
+        all: false
         duration: 20
         meta:
-          priority: 4
+          priority: 1
           buff: Elemental Damage
           buffValue: 70
       - desc: All elemental damage +50%
@@ -94,13 +95,13 @@
     maxHits: 27
     
   notes: >
-      _With the rerun of Nier 2b goes from top tier to meta breaking. Again. She now has the out and out best ATK buff in the game and
-      will probably be this way for a long time. Her personal damage is also quite good, especially now that arms 2 is restored to
+      _With the rerun of NieR, 2B goes from top tier to meta breaking. Again. She now has the out and out best ATK buff in the game and
+      will probably be this way for a long time. Her personal damage is also quite good, especially now that Arms 2 is restored to
       how it was. Unnerfing her has basically meant anyone who got her in October or November is getting great value for money._
       
-      _Downsides remain the same. Self imbue is still a both a pro and a con but with ohs coverage it isn't much of a draw back. The 
-      ATK buff is still inconsistent but 40% is still as good as Fidel and better then anything Hmillie can do even with her 
-      conditional. 2B. Like all other Nier characters. Is absolutely broken for GL and if you want to face roll content just use 2b
+      _Downsides remain the same. Self-imbue is still both a pro and a con, but with OHS coverage it isn't much of a drawback. The 
+      ATK buff is still inconsistent, but 40% is still as good as Fidel and better then anything H.Millie can do even with her 
+      conditional. 2B, like all other NieR characters, s absolutely broken for GL and if you want to faceroll content just use 2B
       and co._
       
       
@@ -115,7 +116,7 @@
       
       - Cheaper dodging and can air dodge.
       
-      - Innate Light & Dark imbue
+      - Innate Light & Dark imbue.
       
       - Has a melee and ranged skill set.
       
@@ -124,7 +125,7 @@
       
       - ATK buff condition is inconsistent
       
-      - Self imbue can be a downside against certain bosses if you don't own certain weapons.
+      - Self-imbue can be a downside against certain bosses if you don't own certain weapons.
       
       
       **Rotation**
@@ -133,7 +134,8 @@
       *Normal > YoRHa Arms: One > YoRHa Pod: Two > YoRHa Arms: two > Spam it till out of AP. (General combo.)*
       
       *Normal > YoRHa Pod: Two > YoRHa Arms: One (Miss on purpose) > YoRHa Pod: Two > Spam it till out of AP. (Ranged combo.)*
-    
+
+
 - name: Fidel Camuze
   cat: gl
   rating: 4
@@ -3900,3 +3902,136 @@
         all: Enemies
     power: ATK x 2000%
     maxHits: 4
+
+
+- name: Gunter
+  cat: gl
+  rating: 0
+  picture: Gunter
+  weapon: knuckle
+  ace: false
+  limited: false
+  star: 4
+
+  stats:
+    hp: 13020
+    atk: 1969
+    int: 1248
+    def: 1628
+    hit: 938
+    grd: 679
+
+  talents:
+    - name: "Impregnable Defense III"
+      effects: 
+        - desc: Nullifies silence (180 seconds)
+          all: true
+    - name: "Bloodlust II"
+      effects: 
+        - desc: Damage dealt to dragons +20%
+          all: true
+          slayer: Dragon
+          slayerPct: 20
+          meta:
+            priority: 4
+            buff: Damage To Dragons
+            buffValue: 20
+
+  skills:
+    - name: "Crescent Locus"
+      picture: Crescent_Locus
+      power: ATK x 150%
+      ap: 17
+      maxHits: 4
+    - name: "Triple Kick"
+      picture: Triple_Kick
+      power: ATK x 250%
+      ap: 24
+      maxHits: 3
+    - name: "JC Somersault"
+      picture: Sumersault
+      power: ATK x 410%
+      ap: 32
+      maxHits: 3
+    - name: "Acrobat Locus"
+      picture: Acrobat_Locus
+      power: ATK x 710%
+      ap: 41
+      maxHits: 7
+
+  rush:
+    name: "Unity Arts"
+    picture: Unity_Arts_Gunter
+    effects:
+      - desc: Nullifies silence
+        duration: 20
+        all: true
+    power: ATK x 2500%
+    maxHits: 4
+
+
+- name: Ted
+  cat: gl
+  rating: 0
+  picture: Ted
+  weapon: ohs
+  ace: false
+  limited: false
+  star: 4
+
+  stats:
+    hp: 13230
+    atk: 1957
+    int: 1274
+    def: 1628
+    hit: 931
+    grd: 655
+
+  talents:
+    - name: "Setting the Tone III"
+      effects: 
+        - desc: Nullifies freezing (180 seconds)
+          all: true
+    - name: "Hidden Talent V"
+      effects: 
+        - desc: Damage dealt to humanoids +20%
+          all: true
+          slayer: Human
+          slayerPct: 20
+          meta:
+            priority: 4
+            buff: Damage To Humans
+            buffValue: 20
+
+  skills:
+    - name: "Double Slash"
+      picture: Double_Slash_I
+      power: ATK x 200%
+      ap: 20
+      maxHits: 2
+    - name: "Shotgun Blast"
+      picture: Shotgun_Blast
+      element: Lightning
+      power: ATK x 190%
+      ap: 20
+      maxHits: 4
+    - name: "Rising Blade"
+      picture: Rising_Blade
+      power: ATK x 410%
+      ap: 32
+      maxHits: 5
+    - name: "Helm Splitter"
+      picture: Helmsplitter
+      power: ATK x 500%
+      ap: 35
+      maxHits: 1
+
+  rush:
+    name: "The Ultimate Ted"
+    picture: The_Ultimate_Ted
+    effects:
+      - desc: Nullifies freezing
+        duration: 20
+        all: true
+    power: ATK x 2500%
+    maxHits: 7
