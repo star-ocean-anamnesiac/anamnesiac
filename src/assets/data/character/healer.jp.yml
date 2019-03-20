@@ -503,3 +503,386 @@
       
       *Faerie Light > Spam till the party isn't dying. (Healing)*
     
+- name: Miki Sauvester (Awakened)
+  cat: jp
+  rating: 3
+  picture: Miki
+  weapon: staff
+  limited: false
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 13482
+    atk: 1589
+    int: 2793
+    def: 1397
+    hit: 1055
+    grd: 1147
+
+  talents:
+    - name: "Industrial Housecleaning"
+      effects: 
+        - desc: INT +40%, HIT +10%, GRD +10%, HP +20%
+          meta:
+            priority: 4
+            buff: INT
+            buffValue: 40
+          meta:
+            priority: 4
+            buff: HIT
+            buffValue: 10
+          meta:
+            priority: 4
+            buff: GRD
+            buffValue: 10
+          meta:
+            priority: 4
+            buff: HP
+            buffValue: 20
+    - name: "Glutton"
+      effects: 
+        - desc: Reduce Symbol Invoking Time by 40%
+          meta:
+            priority: 4
+            buff: Cast Time Reduction
+            buffValue: 40
+    - name: "Beginner's Luck"
+      effects: 
+        - desc: At 10% HP or higher, has a 80% chance of Surviving a Lethal Attack
+    - name: "Dedicated"
+      effects: 
+        - desc: Disable abnormal condition (self / 180 seconds) HP 5% recovery every 3 seconds (total) 
+    - name: "Graduation from brother and sister"
+      effects: 
+        - desc: ATK damage + 40% (overall) 
+    - name: "Dish Meister"
+      effects: 
+        - desc: Consumed AP-20% Damage + 50% of attacking crests when skill 3 or more is linked
+
+  skills:
+    - name: "Radiant Lancer"
+      picture: Radiant_Lancer
+      element: Light
+      power: INT x 330%
+      ap: 27
+      maxHits: 8
+    - name: "Ex Healing"
+      picture: Ex_Healing
+      power: INT x 326%
+      ap: 40
+      notes: Single Target Heal
+      maxHits: 1
+    - name: "Sunflare"
+      picture: Sunflare
+      element: Light
+      power: INT x 630%
+      ap: 42
+      maxHits: 6
+    - name: "Faerie Star"
+      picture: Faerie_Star
+      power: INT x 326%
+      ap: 60
+      notes: Party Heal
+      maxHits: 1
+      
+  rush:
+    name: "Divine Wave"
+    picture: Divine_Wave_Miki
+    element: Light
+    effects: 
+      - desc: Heals 30% of Max HP every 4 seconds
+        all: true
+        duration: 20
+    power: INT x 4000%
+    maxHits: 4
+    
+  notes: >
+      _Pre-awakening, she's nothing more than a healbot.  Post-awakening...healbotting is still what she's actively doing, but she's received decent
+      party buffing for ATK-based parties, and now also amazingly boasts a revive for Attackers/Defenders on her rush without having her high rush
+      gain compromised.  Also having passive Guts on top of this, she greatly exceeds Eve in both offensive and defensive support in most cases.
+      Her own damage output is still effectively nothing, though._
+
+      _It's somewhat noteworthy that Miki has by far and away the best regen available in the game on her rush prior to Awk10, but as a character
+      who easily full heals with Fairy Star and doesn't have much else to be pressing, there isn't much need for it, and it'll actually hamper her AI's
+      rush gain on auto by dissuading usage of Fairy Star postrush._
+      
+      **Rotation**
+      
+      *(Normal>)Fairy Starx2*
+
+      *Normal>Shiny Lancer>Sunshine>Shiny Lancer - Element Burst contribution*
+        
+- name: Millie Chliette (Awakened)
+  cat: jp
+  rating: 6
+  picture: Millie
+  weapon: staff
+  ace: true
+  limited: false
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 13860
+    atk: 1759
+    int: 2494
+    def: 1353
+    hit: 1057
+    grd: 1134
+
+  talents:
+    - name: "Like Father, Like Daughter"
+      effects: 
+        - desc: All Elemental Damage Dealt +30%
+          all: true
+          meta:
+            priority: 1
+            buff: Elemental Damage
+            buffValue: 30
+    - name: "Rabbit's Foot"
+      effects: 
+        - desc: Damage Taken -30%
+          meta:
+            priority: 4
+            buff: Damage Taken Reduction
+            buffValue: 30
+    - name: "Fortune of Mana"
+      effects: 
+        - desc: AP Cost -25%
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 25
+    - name: "Ready to Exceed Space-Time"
+      effects: 
+        - desc: HP 5% recovery every 3 seconds (overall) Disable sealing (self / 180 seconds)
+    - name: "The Age of Growth"
+      effects: 
+        - desc: Critical Damage + 20% (Overall) at 100% HP
+    - name: "Investigation of Music Box"
+      effects: 
+        - desc: Survive 80% chance at lethal attack with HP over 10% (overall)
+
+  skills:
+    - name: "Crush"
+      picture: Crush
+      element: Earth
+      power: INT x 210%
+      ap: 20
+      maxHits: 2
+    - name: "Healing"
+      picture: Healing
+      power: INT x 170%
+      ap: 30
+      notes: Single Target Heal
+      maxHits: 1
+    - name: "Stone Rain"
+      picture: Stone_Rain
+      element: Earth
+      power: INT x 510%
+      ap: 35
+      maxHits: 5
+    - name: "Faerie Star"
+      picture: Faerie_Star
+      power: INT x 326%
+      ap: 60
+      notes: Party Heal
+      maxHits: 1
+    - name: "Cure Condition"
+      picture: Cure_Condition
+      ap: 30
+      notes: Complete recovery from abnormal condition
+      maxHits: 1
+      
+  rush:
+    name: "Tractor Beam"
+    picture: Tractor_Beam_Millie
+    element: Earth
+    effects: 
+      - desc: Critical Hit Rate +50%
+        all: true
+        duration: 20
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 50
+      - desc: Recover 80% HP
+        all: true
+    power: INT x 3500%
+    maxHits: 11
+    
+  notes: >
+      _A passive healer, in multiple senses of the term; she has the worst offensive skillset in the game, but she passively increases both attribute
+      and critical damage for the party, in addition to unconditional 80/10 Guts and 5%/3s regen.  Her rush provides an instant heal and +50% crit 
+      rate, which synergizes well with her new awakening talents, and she's the only ace Healer with status clearing.  In short, she boosts damage 
+      output a lot and makes dying nearly impossible just by existing._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Strong elemental damage buff for the party
+      
+      - Post rush buff that boosts critical rate and heals most of the party's HP
+      
+      - Talent that helps surviability
+      
+      
+      **Cons**
+      
+      - Damage spells take a long time to cast making them bad
+      
+      - Common access to elemental damage buffs post rush that override her talent
+      
+      - Boring to play optimally
+      
+      - Expensive healing
+      
+      
+      **Rotation**
+      
+      *Normal > Faerie Star (Healing & Rush Gain)*
+    
+- name: Relia (Awakened)
+  cat: jp
+  rating: 8
+  picture: Relia
+  weapon: staff
+  ace: true
+  limited: false
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 12285
+    atk: 1733
+    int: 2494
+    def: 1549
+    hit: 1057
+    grd: 1148
+
+  talents:
+    - name: "Golden Intentions III"
+      effects: 
+        - desc: AP Recovery +100% at 100% HP
+          all: true
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffCondition: HP at 100%
+            buffValue: 100
+    - name: "A Sister's Prayer III"
+      effects: 
+        - desc: Recover 10% HP every 5 seconds when targeted, it is damage -20% (overall) & Allied AP fine recovery when using heraldic art (self)
+          all: true
+    - name: "Forehead Symbology"
+      effects: 
+        - desc: Nullifies AP Recovery Rate Reduction Fields & Movement Rate Reduction Fields
+          all: Self & Short Ranged Weapons
+    - name: "Dreams of the Future II"
+      effects: 
+        - desc: Symbology invoking time -80% and Consumption AP -20% & Super Armor while casting heraldry < 30% HP
+          meta:
+            priority: 4
+            buff: Cast Time Reduction
+            buffValue: 80
+
+  skills:
+    - name: "Shiny Lancer"
+      picture: Radiant_Lancer
+      element: Light
+      power: INT x 330%
+      ap: 27
+      maxHits: 8
+    - name: "Brute Enlightenment"
+      picture: Enlightment
+      power: INT +25% & ATK Damage Taken -15%.
+      meta:
+        priority: 2
+        buff: INT
+        buffValue: 25
+      ap: 25
+      notes: Party wide and has a 20 second duration.
+      maxHits: 5
+    - name: "Aurora Rings"
+      picture: Aurora_Rings
+      element: Light
+      power: INT x 510%
+      ap: 35
+      maxHits: 5
+    - name: "Enraging Faerie Light"
+      picture: Faerie_Light
+      power: INT x 230%
+      ap: 50
+      notes: ATK +20% for 20 seconds. Party wide heal & buff.
+      maxHits: 1
+      meta:
+        priority: 2
+        buff: ATK
+        buffValue: 20
+      
+  rush:
+    name: "Freeze Time"
+    picture: Freezing_Clock_Relia
+    element: Ice
+    effects: 
+      - desc: Single Target Damage +30%
+        all: true
+        duration: 20
+        meta:
+          priority: 1
+          buff: Single Target Damage
+          buffValue: 30
+      - desc: Recover 15% HP every 3 seconds
+        all: true
+        duration: 20
+    power: INT x 3500%
+    maxHits: 10
+    
+  notes: >
+      _Packs a slew of offensive and defensive buffs in addition to performing standard healer duties.  There's not a lot to add beyond what's already
+      on the left; she makes the party bulky enough to adequately forego Defender stacking solo, and she also supplies the highest class of AP 
+      regen available on top of stacking ATK+INT buffs, which contribute enough to make up for not having three dedicated attackers._      
+      
+      **TL DR**
+      
+     
+      **Pros**
+      
+      - Both Faerie Light and Brute Englightenment (INT only) buffs stack with all passive party buffs, which is impressive utility.
+      
+      - Faerie Light having a Growth buff baked in makes it so much easier to maintain.
+      
+      - Talents that cover many of the AI's worst flaws in single player parties.
+      
+      - One of the most future proof characters in her niche.
+      
+      - Great invoking time reduction.
+      
+      - Rare single target DMG buff on her rush.
+      
+      
+      **Cons**      
+      
+      - Staff animations and high AP costs.
+      
+      - Abysmal damage, among the worst in the game.
+      
+      - Attempting to maintain both Brute Enlightenment and Faerie Light really screws her rush gain.
+      
+      - Brute Enlightenment is a dead spell in most comps, and horrible in AI hands. Unequip it immediately for single player.
+      
+      - Low natural surviability.
+
+
+      **Rotation**   
+     
+      - Enraging Faerie Light (Healing)
+      
+      - Normal > Enraging Faerie Light > Radiant Lancer/Aurora Rings ("Damage" rotation, best for rush gain)
+
+      - Brute Enlightenment (Re-apply when necessary)*  
+      
