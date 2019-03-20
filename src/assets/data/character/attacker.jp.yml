@@ -242,8 +242,8 @@
 
   stats:
     hp: 15750
-    atk: 3183
-    int: 1522
+    atk: 3106
+    int: 1523
     def: 1930
     hit: 1162
     grd: 812
@@ -251,7 +251,8 @@
   talents:
     - name: "Klaus Champion II"
       effects: 
-        - desc: AP Cost -40% 
+        - desc: AP cost -40% 
+          all: false
           meta:
             priority: 4
             buff: AP Cost Reduction
@@ -259,13 +260,14 @@
     - name: "Greater Master of the Training Hall"
       effects: 
         - desc: ATK +30% 
+          all: false
           meta:
             priority: 4
             buff: ATK
             buffValue: 30
     - name: "Revolutionary Spirit"
       effects:
-        - desc: Critical Rate +20%
+        - desc: Critical hit chance +20%
           meta:
             priority: 4
             buff: Crit Rate
@@ -288,7 +290,7 @@
       picture: Acrobat_Locus
       power: ATK x 710%
       ap: 41
-      maxHits: 4
+      maxHits: 7
     - name: "Fists of Fury"
       picture: Fists_of_Fury
       power: ATK x 780%
@@ -332,6 +334,7 @@
       *Normal > Crescent Locus > Triple Kick > Crescent Locus > Crescent Locus > Crescent Locus > Crescent Locus > Crescent Locus >
       Fists of Fury > Dash after hit 3(General damage & rush gain combo. Requires 1 AP seed)*
 
+
 - name: Anne Patriceani
   cat: jp
   rating: 3
@@ -351,7 +354,7 @@
   talents:
     - name: "Stellar Support"
       effects: 
-        - desc: Critical Rate +30%
+        - desc: Critical hit chance +30%
           all: true
           meta:
             priority: 1
@@ -359,20 +362,20 @@
             buffValue: 30
     - name: "Grandmother's Teachings II"
       effects: 
-        - desc: No Flinching to Damage < 20% of Max HP
+        - desc: No flinching when taking damage of 20% HP or less
 
   skills:
-    - name: "Triple Kick"
-      picture: Triple_Kick
-      power: ATK x 250%
-      ap: 24
-      maxHits: 2
-      highlight: true
     - name: "Hammer of Might"
       picture: Hammer_of_Might
       power: ATK x 230%
       ap: 24
       maxHits: 1
+    - name: "Triple Kick"
+      picture: Triple_Kick
+      power: ATK x 250%
+      ap: 24
+      maxHits: 3
+      highlight: true
     - name: "Drill Spike"
       picture: Drill_Spike
       power: ATK x 190%
@@ -388,8 +391,9 @@
   rush:
     name: "Blazing Cannon"
     picture: Blazing_Cannon_Anne
+    element: Fire
     effects: 
-      - desc: Critical Rate +60%
+      - desc: Critical hit chance +60%
         all: true
         duration: 20
         meta:
@@ -398,7 +402,6 @@
           buffValue: 60
     power: ATK x 2500%
     maxHits: 8
-    element: Fire
     
   notes: >
       _WIP._
@@ -409,7 +412,7 @@
       
       **Pros**
       
-      - Gives a strong passive crit rate and an unmatched post rush buff to crit rate.
+      - Gives a strong passive crit buff and an unmatched post rush buff to crit rate.
       
       - 5 star non-ace so costs less to limit break and augment.
       
@@ -424,7 +427,8 @@
       **Rotation**
       
       *Normal > Triple Kick > Drill Spike > Triple Kick > Triple Kick (DPS & Rush gain combo)*
-    
+
+
 - name: Daril Camuze
   cat: jp
   rating: 5
