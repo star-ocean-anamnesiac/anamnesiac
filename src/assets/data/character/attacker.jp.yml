@@ -448,7 +448,7 @@
   talents:
     - name: "Patriotism at Its Finest"
       effects: 
-        - desc: AP Cost -20%
+        - desc: AP cost -20%
           all: true
           meta:
             priority: 1
@@ -456,10 +456,13 @@
             buffValue: 20
     - name: "Finest Instructor of the Blade II"
       effects: 
-        - desc: No Flinching to Damage < 20% of Max HP
+        - desc: No flinching when taking damage of 20% HP or less
     - name: "Camuze Way"
       effects: 
-        - desc: Damage Dealt to Humanoids +60%
+        - desc: Damage dealt to humanoids +60%
+          all: false
+          slayer: Human
+          slayerPct: 60
           meta:
             priority: 4
             buff: Damage To Humans
@@ -473,11 +476,11 @@
       maxHits: 5
     - name: "Shotgun Blast"
       picture: Shotgun_Blast
+      element: Lightning
       power: ATK x 190%
       ap: 20
       maxHits: 4
       highlight: true
-      element: Lightning
     - name: "Side Kick"
       picture: Side_Kick
       power: ATK x 250%
@@ -493,6 +496,7 @@
   rush:
     name: "Ethereal Blast"
     picture: Ethereal_Blast_Daril
+    element: Light
     effects: 
       - desc: AP cost -40%
         duration: 20
@@ -503,7 +507,6 @@
           buffValue: 40
     power: ATK x 2500%
     maxHits: 12
-    element: Light
     
   notes: >
       _WIP._
@@ -514,18 +517,18 @@
       
       **Pros**
       
-      - Powerful AP reduction party wide buff.
+      - Powerful AP reduction party-wide buff
       
-      - Good damage against Humanoids.
+      - Good damage against humanoids
       
-      - 5 star non-ace so costs less to limit break and augment.
+      - 5 star non-ace so costs less to limit break and augment
       
       
       **Cons**
       
-      - 5 star non-ace so has less stats.
+      - 5 star non-ace so has less stats
       
-      - Doesn't bring any utility beyond his AP reduction.
+      - Doesn't bring any utility beyond his AP reduction
       
       - Bad damage against non-humanoids
       
@@ -533,6 +536,7 @@
       **Rotation**
       
       *Normal > Helm Splitter > Shotgun Blast > Helm Splitter > Spam it till out of AP. (General combo.)*
+    
     
 - name: Roddick Farrence
   cat: jp
@@ -546,7 +550,7 @@
   stats:
     hp: 15750
     atk: 3090
-    int: 1537
+    int: 1535
     def: 1983
     hit: 1134
     grd: 812
@@ -554,7 +558,7 @@
   talents:
     - name: "Transcending Space-time II"
       effects: 
-        - desc: Symbol Invoking Time -20%
+        - desc: Symbology cast time -20%
           all: true
           meta:
             priority: 1
@@ -562,7 +566,7 @@
             buffValue: 20
     - name: "Astounding Eldarian Swordplay"
       effects: 
-        - desc: Chance to Cause Stun +40%
+        - desc: Stun chance +40%
           all: true
           meta:
             priority: 1
@@ -582,35 +586,37 @@
       power: ATK x 200%
       ap: 20
       maxHits: 2
+    - name: "Shotgun Blast"
+      picture: Shotgun_Blast
+      element: Lightning
+      power: ATK x 190%
+      ap: 20
+      maxHits: 4  
     - name: "Air Slash"
       picture: Air_Slash_I
       power: ATK x 200%
       ap: 20
       maxHits: 2
-    - name: "Shotgun Blast"
-      picture: Shotgun_Blast
-      power: ATK x 190%
-      ap: 20
-      maxHits: 4
-      element: Lightning
     - name: "Dragon Slash"
       picture: Dragon_Slash
-      power: ATK x 400%
-      ap: 35
-      maxHits: 2
       element: Lightning
+      power: ATK x 400%
+      ap: 32
+      maxHits: 2
 
   rush:
     name: "Omega Thunderclap Blade"
     picture: Omega_Thunderclap_Blade_Ratix
     effects: 
       - desc: AP cost -40%
+        all: false
         duration: 20
         meta:
           priority: 4
           buff: AP Cost Reduction
           buffValue: 40
-      - desc: Damage Taken -20%
+      - desc: Damage taken -20%
+        all: false
         duration: 20
         meta:
           priority: 4
@@ -629,18 +635,18 @@
       
       **Pros**
       
-      - Slight invoking time buff.
+      - Slight invoking time buff
       
-      - Ridiculous buff to party wide stun rate.
+      - Ridiculous party-wide stun buff
       
-      - Strong greedy post rush buff.
+      - Strong greedy post-rush buff
       
       
       **Cons**
             
-      - Brings little utility beyond his stun buff.
+      - Brings little utility beyond his stun buff
       
-      - Needs some slight build around to take advantage of his buff.
+      - Needs some slight build around to take advantage of his buff
       
       
       **Rotation**
@@ -648,7 +654,8 @@
       *Normal > Shotgun Blast > Air Slash > Dragon Slash > Spam it till out of AP. (General combo.)*
       
       *Air Slash > Dragon Slash > Air Slash > Dragon Slash (Ranged combo.)*
-    
+ 
+ 
 - name: Reimi Saionji (Summer)
   cat: jp
   rating: 7
