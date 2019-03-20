@@ -19,22 +19,22 @@
   talents:
     - name: "Quiet Determination"
       effects: 
-        - desc: ATK +25%
+        - desc: ATK +40%
           all: true
           meta:
             priority: 1
             buff: ATK
-            buffValue: 25
-        - desc: ATK +45% when HP 100% 
+            buffValue: 40
+        - desc: ATK +65% when HP is 100% 
           all: true
           meta:
             priority: 3
             buff: ATK
             buffCondition: HP is 100%
-            buffValue: 45
+            buffValue: 65
     - name: "Automated Infantry Android"
       effects: 
-        - desc: Evasion AP consumption -100% when Just Timing evasion
+        - desc: Evasion AP consumption -100% on perfect dodge
     - name: "Silver Protection"
       effects: 
         - desc: AP recovery from normal attacks +100%
@@ -52,13 +52,13 @@
   skills:
     - name: "YoHRa Arms: One"
       picture: YoHRa_Arms_One
-      power: ATK x 380%
+      power: ATK x 440%
       ap: 22
       maxHits: 2
       highlight: true
     - name: "YoHRa Arms: Two"
       picture: YoHRa_Arms_Two
-      power: ATK x 800%
+      power: ATK x 1280%
       ap: 42
       maxHits: 2
     - name: "YoHRa Pod: One"
@@ -77,20 +77,21 @@
     name: "YoHRa Arms: Zero"
     picture: YoHRa_Arms_Ø_2B
     effects: 
-      - desc: All elemental damage +55%
+      - desc: All elemental damage +50%
+        all: false
         duration: 20
         meta:
           priority: 4
           buff: Elemental Damage
-          buffValue: 55
-      - desc: All elemental damage +50%
+          buffValue: 50
+      - desc: All elemental damage +70%
         all: true
         duration: 20
         meta:
           priority: 1
           buff: Elemental Damage
-          buffValue: 50
-    power: ATK x 4000%
+          buffValue: 70
+    power: ATK x 4500%
     maxHits: 27
     
   notes: >
@@ -130,7 +131,8 @@
       *Normal > YoHRa Pod: Two > YoHRa Arms: One (Miss on purpose) > YoHRa Pod: Two > Spam it till out of AP. (Ranged combo.)*
       
       *Normal > YoHRa Pod: Two > YoHRa Pod: One > YoHRa Pod: Two > Spam it till out of AP. (Ranged combo if running ranged set up.)*
-    
+
+
 - name: Fidel Camuze
   cat: jp
   rating: 6
@@ -143,9 +145,9 @@
   stats:
     hp: 15960
     atk: 2363
-    int: 1522
-    def: 1930
-    hit: 1162
+    int: 1549
+    def: 1969
+    hit: 1127
     grd: 812
 
   talents:
@@ -192,6 +194,7 @@
   rush:
     name: "Ethereal Blast"
     picture: Ethereal_Blast_Fidel
+    element: Light
     effects: 
       - desc: AP cost -60%
         duration: 20
