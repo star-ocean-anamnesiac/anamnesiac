@@ -729,7 +729,7 @@
     hit: 1184
     grd: 852
 
- talents:
+  talents:
     - name: "Transcending Space-time II"
       effects: 
         - desc: Symbology cast time -20%
