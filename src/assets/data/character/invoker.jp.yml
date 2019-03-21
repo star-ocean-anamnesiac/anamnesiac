@@ -1,7 +1,7 @@
 
 - name: Sophia Esteed
   cat: jp
-  rating: 8
+  rating: 5
   picture: Sophia
   weapon: staff
   ace: true
@@ -26,39 +26,25 @@
             buffValue: 50
     - name: "Jealous Person"
       effects: 
-        - desc: Critical Rate +30%
+        - desc: Critical chance +30%
           all: Invoker
           meta:
             priority: 1
             buff: Crit Rate
             buffRole: invoker
-            buffValue: 30
-        - desc: Critical Rate +30%
-          all: Healer
-          meta:
-            priority: 1
-            buff: Crit Rate
-            buffRole: healer
             buffValue: 30
     - name: "Skillful at Getting By"
       effects: 
-        - desc: AP consumption -20%
+        - desc: AP cost -20%
           all: Invoker
           meta:
             priority: 1
             buff: AP Cost Reduction
             buffRole: invoker
             buffValue: 20
-        - desc: AP consumption -20%
-          all: Healer
-          meta:
-            priority: 1
-            buff: AP Cost Reduction
-            buffRole: healer
-            buffValue: 20
     - name: "Connection"
       effects: 
-        - desc: Reduce symbology cast time by 30%
+        - desc: Symbology cast time -30%
           meta:
             priority: 4
             buff: Cast Time Reduction
@@ -80,9 +66,8 @@
       maxHits: 5
     - name: "Enhance"
       picture: Enhance_Growth
-      element: Fire
       ap: 60
-      notes: +25% ATK to party. A good buff skill!
+      notes: ATK +25% to party (20 seconds). A good buff skill!
       meta:
         priority: 2
         buff: ATK
@@ -100,14 +85,16 @@
     name: "Meteor Swarm"
     picture: Meteor_Swarm_Sophia
     effects: 
-      - desc: +70% INT
+      - desc: INT +70%
         duration: 20
+        all: false
         meta:
           priority: 4
           buff: INT
           buffValue: 70
-      - desc: -60% AP cost
+      - desc: AP cost -60%
         duration: 20
+        all: false
         meta:
           priority: 4
           buff: AP Cost Reduction
@@ -125,7 +112,7 @@
       
       - In combat ATK buff.
       
-      - Good buffs for Invokers and healers.
+      - Good buffs for Invokers.
       
       - Talents make her self sufficient and doesn't require party synergy.
       
@@ -146,13 +133,15 @@
       *Normal > CA Explosion > Fire Bolt > Explosion > Explosion (General damage rotation. Recommended with 101 AP.)*
       
       *Normal > CA Fire Bolt > Explosion > Fire Bolt (Moving target rotation.)*
-      
+
+
 - name: Myuria Tionysus
   cat: jp
-  rating: 7
+  rating: 0
   picture: Myuria
   weapon: staff
   ace: true
+  limited: false
   star: 5
 
   stats:
@@ -166,9 +155,9 @@
   talents:
     - name: "Enchanted Perfume II"
       effects: 
-        - desc: Easier to stun +30%
+        - desc: Stun chance +30%
           meta:
-            priority: 4
+            priority: 1
             buff: Stun Rate
             buffValue: 30
     - name: "Hardier Warrior of Morphus"
@@ -180,7 +169,7 @@
             buffValue: 30
     - name: "In Loving Memory of Lucien II"
       effects: 
-        - desc: Reduce casting time by 30%
+        - desc: Symbology cast time -30%
           meta:
             priority: 4
             buff: Cast Time Reduction
@@ -217,7 +206,7 @@
     - name: "Plasma Cyclone"
       picture: Cyclone
       element: Lightning
-      power: INT x 700%
+      power: INT x 670%
       ap: 50
       maxHits: 6
       
@@ -226,8 +215,9 @@
     picture: Ultraviolet_Extinction_Myuria
     element: Lightning
     effects: 
-      - desc: +80% INT
+      - desc: INT +80%
         duration: 20
+        all: false
         meta:
           priority: 4
           buff: INT
@@ -244,7 +234,7 @@
       
       **Pros**
       
-      - Plasma Cyclone for great AoE
+      - Plasma Cyclone for great AoE.
       
       - Good stun rate buff.
       
@@ -267,6 +257,7 @@
       **Rotation**
 
       *Normal > CA Thunder Flare > Plasma Cyclone > Thunder Flare (General damage rotation.)*
+
 
 - name: Ronyx J. Kenny
   cat: jp
@@ -1592,3 +1583,112 @@
           buffValue: 80
     power: INT x 3000%
     maxHits: 6
+
+
+- name: Lezard Valeth
+  cat: jp
+  rating: 8
+  picture: Lezard
+  weapon: tome
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 12495
+    atk: 1549
+    int: 2744
+    def: 1385
+    hit: 1043
+    grd: 819
+
+  talents:
+    - name: "Sage's Wisdom"
+      effects: 
+        - desc: INT +20%
+          all: true
+          meta:
+            priority: 1
+            buff: INT
+            buffValue: 20
+    - name: "Affection for Goddess"
+      effects: 
+        - desc: Convert 50% of INT to ATK
+          all: Attackers, Sharpshooters, Defenders
+    - name: "Necromancy"
+      effects: 
+        - desc: INT +30% after using Dark Savior (10 seconds)
+          all: false
+          meta:
+            priority: 1
+            buff: INT
+            buffValue: 30
+        - desc: Critical chance +30% after using Mystic Cross (10 seconds)
+          all: false
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffValue: 30
+    - name: "Cruel Egoist"
+      effects: 
+        - desc: AP cost -40% when skill chain is 3+
+          all: false
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain 3+
+            buffValue: 40
+        - desc: Symbology cast time -40% when skill chain is 3+
+          all: false
+          meta:
+            priority: 1
+            buff: Cast Time Reduction
+            buffCondition: Skill Chain 3+
+            buffValue: 40
+
+  skills:
+    - name: "Prismatic Missile"
+      picture: Prismatic_Missile
+      power: INT x 670%
+      ap: 35
+      maxHits: 11
+    - name: "Mystic Cross"
+      picture: Mystic_Cross
+      element: Light
+      power: INT x 200%
+      ap: 18
+      maxHits: 4
+    - name: "Dark Savior"
+      picture: Shadow_Needles
+      element: Dark
+      power: INT x 190%
+      ap: 18
+      maxHits: 3
+    - name: "Shadow Servant"
+      picture: Shadow_Servant
+      element: Dark
+      power: INT x 720%
+      ap: 36
+      maxHits: 4
+
+  rush:
+    name: "Meteor Swarm"
+    picture: Meteor_Swarm_Lezard
+    element: Dark
+    effects: 
+      - desc: AP cost -80%
+        duration: 10
+        all: false
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 80
+      - desc: Symbology cast time -80%
+        duration: 10
+        all: false
+        meta:
+          priority: 1
+          buff: Cast Time Reduction
+          buffValue: 80
+    power: INT x 4000%
+    maxHits: 9
