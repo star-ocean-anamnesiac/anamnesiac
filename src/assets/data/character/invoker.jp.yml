@@ -1638,7 +1638,7 @@
             buff: AP Cost Reduction
             buffCondition: Skill Chain 3+
             buffValue: 40
-       - desc: Symbology cast time -40% when skill chain is 3+
+        - desc: Symbology cast time -40% when skill chain is 3+
           all: false
           meta:
             priority: 1
