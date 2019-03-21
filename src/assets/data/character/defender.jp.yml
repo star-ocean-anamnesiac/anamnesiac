@@ -601,7 +601,7 @@
       effects: 
         - desc: HP +40%
           all: true
-         - desc: No flinching to damage under 20% of max HP
+        - desc: No flinching to damage under 20% of max HP
           all: true
 
   skills:
