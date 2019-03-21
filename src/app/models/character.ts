@@ -14,6 +14,9 @@ export interface Talent {
   // the name of the talent
   name: string;
 
+  // a shorter, condensed display list of effects for redundant talent names
+  shortEffects?: string;
+
   // the effects contained in the talent
   effects: Effect[];
 }

@@ -99,7 +99,10 @@ export class CharacterSortPopover {
                   <ion-card>
                     <ion-card-header><ion-card-title>{{ talent.name }}</ion-card-title></ion-card-header>
                     <ion-card-content>
-                      <ol>
+                      <ol *ngIf="talent.shortEffects">
+                        <li>{{ talent.shortEffects }}</li>
+                      </ol>
+                      <ol *ngIf="!talent.shortEffects">
                         <li *ngFor="let effect of talent.effects">
                         {{ effect.desc }}
                         <span *ngIf="effect.all">(All {{ effect.all === true ? 'Allies' : effect.all }})</span>

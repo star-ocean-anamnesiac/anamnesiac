@@ -1889,6 +1889,7 @@
 
   talents:
      - name: "Crimson Blossom Flurry II"
+       shortEffects: "Crit Rate +10%/20%/30% when Hit Count > 100/150/200"
        effects: 
         - desc: Crit Rate +10% when Hit Count is over 100
           all: true
@@ -1912,6 +1913,7 @@
             buffCondition: Hit Count > 200
             buffValue: 30
      - name: "Sincere Devotion II"
+       shortEffects: "Crit Damage +10%/20%/30% when Hit Count > 100/150/200"
        effects: 
         - desc: Crit Damage +10% when Hit Count is over 100
           all: true
