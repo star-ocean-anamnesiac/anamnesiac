@@ -50,23 +50,23 @@
         - desc: Imbues attacks with light/dark element
 
   skills:
-    - name: "YoHRa Arms: One"
+    - name: "YoRHa Arms: One"
       picture: YoHRa_Arms_One
       power: ATK x 440%
       ap: 22
       maxHits: 2
       highlight: true
-    - name: "YoHRa Arms: Two"
+    - name: "YoRHa Arms: Two"
       picture: YoHRa_Arms_Two
       power: ATK x 1280%
       ap: 42
       maxHits: 2
-    - name: "YoHRa Pod: One"
+    - name: "YoRHa Pod: One"
       picture: YoHRa_Pod_One
       power: ATK x 180%
       ap: 13
       maxHits: 1
-    - name: "YoHRa Pod: Two"
+    - name: "YoRHa Pod: Two"
       picture: YoHRa_Pod_Two
       power: ATK x 380%
       ap: 20
@@ -74,7 +74,7 @@
       highlight: true
 
   rush:
-    name: "YoHRa Arms: Zero"
+    name: "YoRHa Arms: Zero"
     picture: YoHRa_Arms_Ø_2B
     effects: 
       - desc: All elemental damage +50%
@@ -109,28 +109,28 @@
       
       - Cheaper dodging and can air dodge.
       
-      - Innate Light & Dark imbue
+      - Innate Light & Dark imbue.
       
       - Has a melee and ranged skill set.
       
       
       **Cons**
       
-      - ATK buff condition is inconsistent
+      - ATK buff condition is inconsistent.
       
       - Self imbue can be a downside against certain bosses if you don't own certain weapons.
       
       
       **Rotation**
       
-      - As a note YoHRa Pod: One VS YoHRa Arms: two is a personal preference. Whether you want a better ranged combo or using arms two
-      as a verticle dodge.
+      - As a note YoRHa Pod: One VS YoRHa Arms: Two is a personal preference. Whether you want a better ranged combo or using Arms Two
+      as a vertical dodge.
       
-      *Normal > YoHRa Arms: One > YoHRa Pod: Two > YoHRa Arms: One > Spam it till out of AP. (General combo.)*
+      *Normal > YoRHa Arms: One > YoRHa Pod: Two > YoRHa Arms: One > Spam it till out of AP. (General combo.)*
       
-      *Normal > YoHRa Pod: Two > YoHRa Arms: One (Miss on purpose) > YoHRa Pod: Two > Spam it till out of AP. (Ranged combo.)*
+      *Normal > YoRHa Pod: Two > YoRHa Arms: One (Miss on purpose) > YoRHa Pod: Two > Spam it till out of AP. (Ranged combo.)*
       
-      *Normal > YoHRa Pod: Two > YoHRa Pod: One > YoHRa Pod: Two > Spam it till out of AP. (Ranged combo if running ranged set up.)*
+      *Normal > YoRHa Pod: Two > YoRHa Pod: One > YorHa Pod: Two > Spam it till out of AP. (Ranged combo if running ranged set up.)*
 
 
 - name: Fidel Camuze
@@ -267,7 +267,7 @@
             buffValue: 30
     - name: "Revolutionary Spirit"
       effects:
-        - desc: Critical hit chance +20%
+        - desc: Critical chance +20%
           meta:
             priority: 4
             buff: Crit Rate
@@ -354,7 +354,7 @@
   talents:
     - name: "Stellar Support"
       effects: 
-        - desc: Critical hit chance +30%
+        - desc: Critical chance +30%
           all: true
           meta:
             priority: 1
@@ -393,7 +393,7 @@
     picture: Blazing_Cannon_Anne
     element: Fire
     effects: 
-      - desc: Critical hit chance +60%
+      - desc: Critical chance +60%
         all: true
         duration: 20
         meta:
@@ -517,20 +517,20 @@
       
       **Pros**
       
-      - Powerful AP reduction party-wide buff
+      - Powerful AP reduction party-wide buff.
       
-      - Good damage against humanoids
+      - Good damage against humanoids.
       
-      - 5 star non-ace so costs less to limit break and augment
+      - 5 star non-ace so costs less to limit break and augment.
       
       
       **Cons**
       
-      - 5 star non-ace so has less stats
+      - 5 star non-ace so has less stats.
       
-      - Doesn't bring any utility beyond his AP reduction
+      - Doesn't bring any utility beyond his AP reduction.
       
-      - Bad damage against non-humanoids
+      - Bad damage against non-humanoids.
       
       
       **Rotation**
@@ -635,18 +635,18 @@
       
       **Pros**
       
-      - Slight invoking time buff
+      - Slight invoking time buff.
       
-      - Ridiculous party-wide stun buff
+      - Ridiculous party-wide stun buff.
       
-      - Strong greedy post-rush buff
+      - Strong greedy post-rush buff.
       
       
       **Cons**
             
-      - Brings little utility beyond his stun buff
+      - Brings little utility beyond his stun buff.
       
-      - Needs some slight build around to take advantage of his buff
+      - Needs some slight build around to take advantage of his buff.
       
       
       **Rotation**
@@ -685,13 +685,13 @@
             buffValue: 55
     - name: "Lethal Swing"
       effects: 
-        - desc: ATK +24% when in front of target
+        - desc: ATK +45% when in front of target
           all: true
           meta:
             priority: 1
             buff: ATK
             buffCondition: In Front Of Target
-            buffValue: 40
+            buffValue: 45
         - desc: Rush combo damage +15%
           all: true
           meta:
@@ -768,18 +768,18 @@
       
       **Pros**
       
-      - Decent ATK buffs
+      - Decent ATK buffs.
       
-      - Ap recovery on normals
+      - Ap recovery on normals.
       
-      - Really powerful post-rush buff
+      - Really powerful post-rush buff.
       
       
       **Cons**
             
-      - Slow rush gain
+      - Slow rush gain.
       
-      - Awkward attack buff
+      - Awkward attack buff.
       
       
       **Rotation**
@@ -825,7 +825,7 @@
             buffValue: 20
     - name: "Platinum Heart"
       effects: 
-        - desc: +15% chance of adding silence to all attacks
+        - desc: All attacks have +15% chance to silence
           meta:
             priority: 4
             buff: Silence Attack Chance
@@ -877,20 +877,20 @@
       
       **Pros**
       
-      - Unconditional good ATK buff
+      - Unconditional good ATK buff.
       
-      - Rush combo damage buff
+      - Rush combo damage buff.
       
       - Defence debuff on rush for enemies.
       
       
       **Cons**
             
-      - ATK buff has been exceeded by many attackers making it redundant in a lot of comps
+      - ATK buff has been exceeded by many attackers making it redundant in a lot of comps.
       
-      - Silence has a low chance to apply making it a poor talent that doesn't do much
+      - Silence has a low chance to apply making it a poor talent that doesn't do much.
       
-      - Doesn't do enough that other attackers don't already do better
+      - Doesn't do enough that other attackers don't already do better.
       
       
       **Rotation**
@@ -3156,3 +3156,125 @@
       **Rotation**
       
       *Normal > Double Slash / Air Slash > Empyrean Slash > Air Raid > Spam it till out of AP. (General Combo)
+
+
+- name: Caleen Keemosn
+  cat: gl
+  rating: 0
+  picture: Karin
+  weapon: scythe
+  ace: false
+  limited: false
+  star: 5
+
+  stats:
+    hp: 15750
+    atk: 2718
+    int: 1537
+    def: 1943
+    hit: 1134
+    grd: 854
+
+  talents:
+    - name: "Witch of Beasts"
+      effects: 
+        - desc: ATK +40%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 40
+        - desc: ATK +55% when hitcount is at 100
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffCondition: Hit Count > 100
+            buffValue: 55
+        - desc: ATK +60% when hitcount is at 250
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffCondition: Hit Count > 250
+            buffValue: 60
+    - name: "Basshen's Fox"
+      effects: 
+        - desc: AP cost -10% when hitcount is at 100
+          all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Hit Count > 100
+            buffValue: 10
+        - desc: AP cost -20% when hitcount is at 200
+          all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Hit Count > 200
+            buffValue: 20
+        - desc: AP cost -40% when hitcount is at 400
+          all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Hit Count > 400
+            buffValue: 40
+        - desc: Battle skills deal an extral hit worth 5% of damage dealt
+          all: true
+    - name: "Six Tails"
+      effects: 
+        - desc: Enables air dodge
+          all: false
+        - desc: Recover 100% HP upon successful evasion of attacks
+          all: false
+    - name: "Red Summoning Technique"
+      effects: 
+        - desc: ATK, INT, DEF, HIT, GRD +20% when hitcount is 100 or more
+          all: false
+          
+  skills:
+    - name: "Unholy Maelstrom - Kitsune"
+      picture: Unholy_Maelstrom
+      power: ATK x 540%
+      ap: 30
+      maxHits: 3
+    - name: "Purgatory Palm"
+      picture: Purgatory_Palm
+      element: Fire
+      power: ATK x 270%
+      ap: 22
+      maxHits: 5
+    - name: "Wings of Deprivation"
+      picture: Wings_of_Deprivation
+      power: ATK x 310%
+      ap: 27
+      maxHits: 12
+    - name: "Backspin Blade"
+      picture: Backspin_Blade
+      power: ATK x 750%
+      ap: 40
+      maxHits: 6
+
+  rush:
+    name: "Wailing Black Wings"
+    picture: Wailing_Black_Wings_Karin
+    effects:
+      - desc: Critical chance +30%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 30
+      - desc: Critical damage +30%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Crit Damage
+          buffValue: 30
+    power: ATK x 4500%
+    maxHits: 6
+    
