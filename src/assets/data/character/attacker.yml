@@ -122,14 +122,13 @@
       
       
       **Cons**
-      
+
       - ATK buff condition is inconsistent
       
       - Self-imbue can be a downside against certain bosses if you don't own certain weapons.
       
       
       **Rotation**
-      
       
       *Normal > YoRHa Arms: One > YoRHa Pod: Two > YoRHa Arms: two > Spam it till out of AP. (General combo.)*
       
@@ -148,9 +147,9 @@
   stats:
     hp: 15960
     atk: 2363
-    int: 1522
-    def: 1930
-    hit: 1162
+    int: 1549
+    def: 1969
+    hit: 1127
     grd: 812
 
   talents:
@@ -190,6 +189,7 @@
       maxHits: 5
     - name: "Air Raid"
       picture: Air_Raid
+      element: Light
       power: ATK x 460%
       ap: 35
       maxHits: 5
@@ -209,12 +209,12 @@
     
   notes: >
       _Fidel, the starter character and sometimes face of the app icon. Fidel has suffered as time has gone on. He has the highest
-      unconditional party wide buff in the game at 40%. Though both Lasswell and 2B can surpass it with the right conditions and
+      unconditional party-wide buff in the game at 40%, though both Lasswell and 2B can surpass it with the right conditions and
       party composition. His AP reduction talent and really potent AP reduection post rush, lets him really output a lot of damage
       by chaining attacks._
       
       
-      _For downsides well all he is bringing to the party is an ATK buff, characters like 2B and Halloween Millie bring similar or
+      _For downsides, well, all he is bringing to the party is an ATK buff, characters like 2B and Halloween Millie bring similar or
       suprior levels of buffing with AP recovery on top. Even the freebie Ace of the FFBE collab Lasswell brings a slight bonus
       to melee characters in movement field nullification. His damage is also not stellar, he has quite a low attack stat compared
       to other attacks and his party wide buff and ability to spam attacks more don't make up for it compared to other attackers._
@@ -612,7 +612,7 @@
   talents:
     - name: "Patriotism at Its Finest"
       effects: 
-        - desc: AP Cost -20%
+        - desc: AP cost -20%
           all: true
           meta:
             priority: 1
@@ -620,10 +620,13 @@
             buffValue: 20
     - name: "Finest Instructor of the Blade II"
       effects: 
-        - desc: No Flinching to Damage < 20% of Max HP
+        - desc: No flinching when taking damage of 20% HP or less
     - name: "Camuze Way"
       effects: 
-        - desc: Damage Dealt to Humanoids +60%
+        - desc: Damage dealt to humanoids +60%
+          all: false
+          slayer: Human
+          slayerPct: 60
           meta:
             priority: 4
             buff: Damage To Humans
@@ -637,11 +640,11 @@
       maxHits: 5
     - name: "Shotgun Blast"
       picture: Shotgun_Blast
+      element: Lightning
       power: ATK x 190%
       ap: 20
       maxHits: 4
       highlight: true
-      element: Lightning
     - name: "Side Kick"
       picture: Side_Kick
       power: ATK x 250%
@@ -657,6 +660,7 @@
   rush:
     name: "Ethereal Blast"
     picture: Ethereal_Blast_Daril
+    element: Light
     effects: 
       - desc: AP cost -40%
         duration: 20
@@ -667,7 +671,6 @@
           buffValue: 40
     power: ATK x 2500%
     maxHits: 12
-    element: Light
     
   notes: >
       _Papa Camuze enters the game in order to show his son how it's done. By being kind of bad as well. Daril, like his son, brings
@@ -688,18 +691,18 @@
       
       **Pros**
       
-      - Powerful AP reduction party wide buff.
+      - Powerful AP reduction party-wide buff
       
-      - Good damage against Humanoids.
+      - Good damage against humanoids
       
-      - 5 star non-ace so costs less to limit break and augment.
+      - 5 star non-ace so costs less to limit break and augment
       
       
       **Cons**
       
-      - 5 star non-ace so has less stats.
+      - 5 star non-ace so has less stats
       
-      - Doesn't bring any utility beyond his AP reduction.
+      - Doesn't bring any utility beyond his AP reduction
       
       - Bad damage against non-humanoids
       
@@ -707,7 +710,8 @@
       **Rotation**
       
       *Normal > Helm Splitter > Shotgun Blast > Helm Splitter > Spam it till out of AP. (General combo.)*
-    
+
+
 - name: Roddick Farrence
   cat: gl
   rating: 9
@@ -718,25 +722,25 @@
   star: 5
 
   stats:
-    hp: 15750
-    atk: 3090
-    int: 1537
-    def: 1983
-    hit: 1134
-    grd: 812
+    hp: 16420
+    atk: 4251
+    int: 2374
+    def: 2456
+    hit: 1184
+    grd: 852
 
   talents:
     - name: "Transcending Space-time II"
       effects: 
-        - desc: Symbol Invoking Time -20%
+        - desc: Symbology cast time -20%
           all: true
           meta:
             priority: 1
             buff: Cast Time Reduction
             buffValue: 20
-    - name: "Astounding Eldarian Swordplay"
+    - name: "Astounding Edarl Swordplay"
       effects: 
-        - desc: Chance to Cause Stun +40%
+        - desc: Stun chance +40%
           all: true
           meta:
             priority: 1
@@ -745,6 +749,7 @@
     - name: "Defense Force of Kratus"
       effects: 
         - desc: ATK +30%
+          all: false
           meta:
             priority: 4
             buff: ATK
@@ -756,35 +761,38 @@
       power: ATK x 200%
       ap: 20
       maxHits: 2
+    - name: "Shotgun Blast"
+      picture: Shotgun_Blast
+      element: Lightning
+      power: ATK x 190%
+      ap: 20
+      maxHits: 4  
     - name: "Air Slash"
       picture: Air_Slash_I
       power: ATK x 200%
       ap: 20
       maxHits: 2
-    - name: "Shotgun Blast"
-      picture: Shotgun_Blast
-      power: ATK x 190%
-      ap: 20
-      maxHits: 4
-      element: Lightning
     - name: "Dragon Slash"
       picture: Dragon_Slash
-      power: ATK x 400%
-      ap: 35
-      maxHits: 2
       element: Lightning
+      power: ATK x 400%
+      ap: 32
+      maxHits: 2
 
   rush:
     name: "Omega Thunderclap Blade"
     picture: Omega_Thunderclap_Blade_Ratix
+    element: Lightning
     effects: 
       - desc: AP cost -40%
+        all: false
         duration: 20
         meta:
           priority: 4
           buff: AP Cost Reduction
           buffValue: 40
-      - desc: Damage Taken -20%
+      - desc: Damage taken -20%
+        all: false
         duration: 20
         meta:
           priority: 4
@@ -792,7 +800,6 @@
           buffValue: 20
     power: ATK x 3000%
     maxHits: 7
-    element: Lightning
     
   notes: >
       _Roddick comes to the game to take his place as the king of cheese strats in content with his incredible 40% buff to stun chance.
@@ -812,26 +819,27 @@
       
       **Pros**
       
-      - Slight invoking time buff.
+      - Slight invoking time buff
       
-      - Ridiculous buff to party wide stun rate.
+      - Ridiculous buff to partywide stun rate
       
-      - Strong greedy post rush buff.
+      - Strong greedy post-rush buff
       
       
       **Cons**
             
-      - Brings little utility beyond his stun buff.
+      - Brings little utility beyond his stun buff
       
-      - Needs some slight build around to take advantage of his buff.
+      - Needs some slight build around to take advantage of his buff
       
       
       **Rotation**
       
-      *Normal > Shotgun Blast > Air Slash > Dragon Slash > Spam it till out of AP. (General combo.)*
+      *Normal > Shotgun Blast > Air Slash > Dragon Slash > Spam it till out of AP (General combo)*
       
-      *Air Slash > Dragon Slash > Air Slash > Dragon Slash (Ranged combo.)*
-    
+      *Air Slash > Dragon Slash > Air Slash > Dragon Slash (Ranged combo)*
+
+
 - name: Reimi Saionji (Summer)
   cat: gl
   rating: 9
@@ -843,8 +851,8 @@
 
   stats:
     hp: 15645
-    atk: 2718
-    int: 1563
+    atk: 3588
+    int: 2428
     def: 1957
     hit: 1127
     grd: 833
@@ -868,31 +876,30 @@
             buff: ATK
             buffCondition: In Front Of Target
             buffValue: 45
-        - desc: Rush Combo Damage +15%
+        - desc: Rush combo damage +15%
           all: true
           meta:
             priority: 1
             buff: Rush Damage
-            buffValue: 10
+            buffValue: 15
     - name: "Handmade Dolls II"
       effects: 
-        - desc: AP recovery from normal attacks +100%
+        - desc: AP recovery from normal attacks +80%
           all: Close Range
           meta:
             priority: 4
             buff: AP Recovery From Normal Attacks
-            buffValue: 100
+            buffValue: 80
         - desc: Nullifies Rush Gauge Reduction Field
           all: Close Range
     - name: "Hit-the-Watermelon"
       effects: 
-        - desc: AP Cost -50% during 3 skill combos or more
+        - desc: AP cost -25% when skill chain is 3 or more
           meta:
             priority: 4
             buff: AP Cost Reduction
             buffCondition: Skill Combo 3+
-            buffValue: 50
-        - desc: Evasion possible during attack, even while in the air.
+            buffValue: 25
 
   skills:
     - name: "Combo Breaker"
@@ -924,7 +931,7 @@
     effects: 
       - desc: Cure status ailments
         all: true
-      - desc: Single Target Damage Dealt +40%
+      - desc: Single target damage dealt +40%
         all: true
         duration: 20
         meta:
@@ -949,9 +956,9 @@
       
       - Strong ATK buffs
       
-      - Ap recovery on normals for close ranged fighters.
+      - Ap recovery on normals for close-ranged fighters
       
-      - Really powerful post rush buff
+      - Really powerful post-rush buff
       
       - Rush combo damage buff
       
@@ -970,7 +977,8 @@
       *Normal > Crescent Mirage > Combo Breaker > Summer Smoothie> Spam it till out of AP. (Damage combo with Combo Breaker.)*
       
       *Normal > Crescent Mirage > Smackdown > Summer Smoothie> Spam it till out of AP. (Damage combo with Smackdown.)*
-    
+
+
 - name: Lenneth
   cat: gl
   rating: 4
