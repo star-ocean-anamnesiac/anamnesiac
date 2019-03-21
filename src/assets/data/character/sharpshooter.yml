@@ -25,12 +25,12 @@
             priority: 1
             buff: Damage
             buffValue: 45
-        - desc: Damage +55% when HP 100%
+        - desc: Damage +55% when HP is at 100%
           all: true
           meta:
             priority: 1
             buff: Damage
-            buffCondition: HP at 100%
+            buffCondition: HP is 100%
             buffValue: 55
     - name: "Scanner Type"
       effects: 
@@ -56,29 +56,29 @@
             buffValue: 10
 
   skills:
-    - name: "YoHRa Arms: Three"
+    - name: "YoRHa Arms: Three"
       picture: Helmsplitter
       power: ATK x 920%
       ap: 53
       maxHits: 1
-    - name: "YoHRa Arms: Four"
+    - name: "YoRHa Arms: Four"
       picture: YoHRa_Arms_Four
       power: ATK x 620%
       ap: 26
       maxHits: 1
-    - name: "YoHRa Pod: One"
+    - name: "YoRHa Pod: One"
       picture: YoHRa_Pod_One
       power: ATK x 180%
       ap: 13
       maxHits: 1
-    - name: "YoHRa Pod: Two"
+    - name: "YoRHa Pod: Two"
       picture: YoHRa_Pod_Two
       power: ATK x 380%
       ap: 20
       maxHits: 1
       
   rush:
-    name: "YoHRa Hack: Zero"
+    name: "YoRHa Hack: Zero"
     picture: YoHRa_Hacking_Zero_9S
     effects: 
       - desc: Recover 50% HP
@@ -119,7 +119,7 @@
       
       - No ranged normals.
 
-      - Bad at building and maintain hit count.
+      - Bad at building and maintaining hitcount.
 
       - Skills mean he can whiff on highly mobile bosses.
       
@@ -129,6 +129,7 @@
       *YoHRa Pod: One > YoHRa Arms: Four > YoHRa Pod: One > YoHRa Arms: Four > YoHRa Arms: Four (Ranged Combo)*
 
       *Normal > YoHRa Arms: Four > YoHRa Pod: Two > YoHRa Arms: Four > YoHRa Arms: Four (Melee Combo)*
+
 
 - name: Maria Traydor
   cat: gl
@@ -175,25 +176,25 @@
       power: ATK x 340%
       ap: 29
       maxHits: 9
-    - name: "Laser Bullet"
+    - name: "Laser Blast"
       picture: Laser_Blast
       power: ATK x 190%
       ap: 20
       maxHits: 3
     - name: "Gravity Bullet"
       picture: Gravity_Bullet
+      element: Dark
       power: ATK x 230%
       ap: 24
       maxHits: 12
-      element: Dark
       
   rush:
     name: "Energy Barrage"
     picture: Energy_Burst_Barrage_Maria
     effects: 
-      - desc: Removes Buffs
+      - desc: Removes buffs
         all: Enemies
-      - desc: Critical Rate +40%
+      - desc: Critical chance +40%
         duration: 20
         all: true
         meta:
@@ -206,11 +207,11 @@
   notes: >
       _Maria, the OG sharpshooter, the beginner character you should pick and the benchmark of what makes a sharpshooter good. Her
       playstyle is simple and many feel a bit boring but that's what makes her easy to pick up for beginner players. Maria has only
-      two talents, one simply reduces the damage she takes by a pretty meaty 20% which means she can take a hit or two, a useful 
+      two talents. One simply reduces the damage she takes by a pretty meaty 20% which means she can take a hit or two, a useful 
       trait to have considering she can end up getting aggro and having to kite. Her other talent is a massive 40% damage buff to
       the party and is the main reason she is deemed so strong by many players._
       
-      _Post rush Maria also cleanses enemies of any buffs they may have and gives a pretty big 40% crit rate buff to party members,
+      _Post-rush Maria also cleanses enemies of any buffs they may have and gives a pretty big 40% crit rate buff to party members,
       further helping to increase damage output. On top of that she has Crimson Squall, a fantastic skill due to having a high hit
       count and amazing target tracking as well as having very long range. It makes Maria fantastic at building and maintaing hit
       count to help party wide rush gain._
@@ -242,7 +243,8 @@
       **Rotation**
 
       *Normal > Aiming Device > Crimson Squall > Aiming Device > Crimson Squall (General Damage)*
-    
+
+
 - name: Nel Zelpher
   cat: gl
   rating: 4
@@ -253,7 +255,7 @@
   star: 5
 
   stats:
-    hp: 15646
+    hp: 15645
     atk: 2153
     int: 1549
     def: 1589
@@ -261,30 +263,32 @@
     grd: 924
 
   talents:
+    - name: "Crimson Blade"
+      effects: 
+        - desc: Normal attacks have +15% chance to poison
+          all: false
+          meta:
+            priority: 4
+            buff: Poison Attack Chance
+            buffValue: 15
     - name: "Prayer for Peace"
       effects: 
-        - desc: Critical Chance +10%
+        - desc: Critical chance +10%
           all: true
           meta:
             priority: 1
             buff: Crit Rate
             buffValue: 10
-    - name: "Crimson Blade"
-      effects: 
-        - desc: Normal Attacks have +15% chance to Poison
-          meta:
-            priority: 4
-            buff: Poison Attack Chance
-            buffValue: 15
     - name: "Assassin's Stealth"
       effects: 
-        - desc: AP Cost -15%
+        - desc: AP cost -15%
           all: true
           meta:
             priority: 1
             buff: AP Cost Reduction
             buffValue: 15
     - name: "Covert Operation"
+      all: false
       effects: 
         - desc: Repel +1
 
@@ -314,10 +318,16 @@
     name: "Divine Wrath"
     picture: Divine_Wrath_Nel
     effects: 
-      - desc: Normal Attacks have +15% chance to Deadly Poison
-      - desc: Normal Attacks will do an additional hit on Normal Attacks that does 20% of your damage
+      - desc: Attacks have +15% chance to poison
         duration: 20
-      - desc: High Chance to inflict Deadly Poison during Rush.
+        all: false
+        meta:
+          priority: 4
+          buff: Poison Attack Chance
+          buffValue: 15
+      - desc: Additional hit that deals 20% more damage
+        duration: 20
+      - desc: High chance to inflict Deadly Poison during rush
     power: ATK x 2000%
     maxHits: 18
 
@@ -359,7 +369,7 @@
 
       - Repel+1 hampers her ability to assume Shooter's primary role: kiting.
 
-      - High animation lock on her best rush generation move (Poisonous Terror)
+      - High animation lock on her best rush generation move (Poisonous Terror).
 
       - Poisonous Blade is a horrible move with horrible tracking and a tiny hitbox, and her best dps relies on it.
       
@@ -371,6 +381,7 @@
       *Normal > P.Shot > P.Blade > P.Shot > * (General Damage)*
 
       *Normal > CA P.Blade (to align) > P.Shot > P.Blade > * (Best Damage vs. Big Targets)*
+
 
 - name: Emmerson T. Kenny
   cat: gl
