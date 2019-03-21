@@ -9,12 +9,12 @@
   star: 5
 
   stats:
-    hp: 13965
-    atk: 1747
-    int: 3368
-    def: 1327
-    hit: 1050
-    grd: 1148
+    hp: 14535
+    atk: 2384
+    int: 4767
+    def: 2150
+    hit: 1100
+    grd: 1198
 
   talents:
     - name: "Seaside Enchantress II"
@@ -27,12 +27,13 @@
         - desc: Recover allies AP when using offensive symbology
     - name: "Making Waves II"
       effects: 
-        - desc: AP cost -40%
+        - desc: AP cost -40% when skill chain is 3 or more
           meta:
             priority: 4
             buff: AP Cost Reduction
+            buffCondition: Skill Chain 3+
             buffValue: 40
-        - desc: INT damage +30% when skill chain 3+
+        - desc: INT damage dealt +40% when skill chain is 3 or more
           meta:
             priority: 4
             buff: INT Damage
@@ -40,30 +41,30 @@
             buffValue: 40
     - name: "Cat Ball and Sandals II"
       effects: 
-        - desc: ATK damage +20%
+        - desc: ATK damage dealt +20%
           all: true
           meta:
             priority: 1
             buff: ATK Damage
             buffValue: 20
-        - desc: INT damage +20%
+        - desc: INT damage dealt +20%
           all: true
           meta:
             priority: 1
             buff: INT Damage
             buffValue: 20
-        - desc: Nullify "movement speed down" effect
+        - desc: Nullify Movement Rate Reduction Field
           all: Self & Close Range
     - name: "Summer Combo"
       effects: 
-        - desc: Reduce symbology cast time by 30%
+        - desc: Symbology casting time -30%
           meta:
             priority: 4
             buff: Cast Time Reduction
             buffValue: 30
-        - desc: AP consumption -10%
+        - desc: AP cost -10%
           meta:
-            priority: 4
+            priority: 1
             buff: AP Cost Reduction
             buffValue: 10
 
@@ -75,12 +76,6 @@
       ap: 35
       notes: Allies recover 8 AP
       maxHits: 4
-    - name: "Faerie Light Wave"
-      picture: Faerie_Light
-      power: INT x 120%
-      ap: 30
-      notes: Party Heal
-      maxHits: 1
     - name: "Lightning Wave"
       picture: Lightning
       element: Lightning
@@ -88,6 +83,12 @@
       ap: 20
       notes: Allies recover 4 AP
       maxHits: 10
+    - name: "Faerie Light Wave"
+      picture: Faerie_Light
+      power: INT x 120%
+      ap: 30
+      notes: Party Heal
+      maxHits: 1
     - name: "Lightning Strike"
       picture: Lightning_Strike
       element: Lightning
@@ -99,9 +100,9 @@
   rush:
     name: "Lightning-Fast Serve"
     picture: Lightning_Fast_Service_Summer_Sophia
-    element: Thunder
+    element: Lightning
     effects: 
-      - desc: +40% INT
+      - desc: INT +40%
         all: true
         duration: 20
         meta:
@@ -111,7 +112,7 @@
       - desc: Recover 50% HP
         all: true
     power: INT x 3000%
-    maxHits: 10
+    maxHits: 4
         
   notes: >
       _For Summer, Sophia decided to try out being a healer, while not actually giving up much in the way of her damage. She has a
@@ -131,7 +132,7 @@
       
       **Pros**
       
-      - Offensive spells restore AP to the party
+      - Offensive spells restore AP to the party.
       
       - Post rush buff that's powerful for self and other INT characters.
       
