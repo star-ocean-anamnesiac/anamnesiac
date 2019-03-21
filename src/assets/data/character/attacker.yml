@@ -240,7 +240,8 @@
       **Rotation**
       
       *Normal > Double Slash > Air Slash > Double Slash > Spam it till out of AP. (General combo.)*
-      
+
+
 - name: Fidel (Awakened)
   cat: gl
   rating: 7
@@ -280,7 +281,7 @@
         - desc: Enables evasion during air attacks
     - name: "Heir to the Camuze Style"
       effects:
-        - desc: Single Target Damage Dealt +10% when skill chain is 3+
+        - desc: Single target damage dealt +10% when skill chain is 3+
           meta:
             priority: 3
             buff: Single Target Damage
@@ -322,6 +323,7 @@
       maxHits: 5
     - name: "Air Raid"
       picture: Air_Raid
+      element: Light
       power: ATK x 720%
       ap: 35
       maxHits: 6
@@ -334,6 +336,7 @@
   rush:
     name: "Ethereal Blast"
     picture: Ethereal_Blast_Fidel
+    element: Light
     effects: 
       - desc: AP cost -60%
         duration: 20
@@ -345,9 +348,9 @@
     maxHits: 12
     
   notes: >
-      _Fidel, the starter character and sometimes face of the app icon. He has the highest unconditional party wide buff in the game 
-      at 50% now due to awakening. His AP reduction talent and really potent AP reduection post rush, lets him really output a lot of 
-      damage by chaining attacks. Due to this, he can spam his improved Air raid (720%!!) for tons of damage and rush gain. He will 
+      _Fidel, the starter character and sometimes face of the app icon. He has the highest unconditional party-wide buff in the game 
+      at 50% now due to awakening. His AP reduction talent and really potent AP reduection post-rush, lets him really output a lot of 
+      damage by chaining attacks. Due to this, he can spam his improved Air Raid (720%!!) for tons of damage and rush gain. He will 
       be a solid pick even if there are better units out._
       
       
@@ -361,9 +364,9 @@
       
       **Pros**
       
-      - Strong ATK based buff for the party.
+      - Strong ATK based buff for the party
       
-      - AP reduction and even more post rush allows skill spamming.
+      - AP reduction and even more post rush allows skill spamming
       
       - Can be used also be played at range with Air Slash > Empyrean Slash spam
       
@@ -371,13 +374,14 @@
       
       **Cons**
       
-      - Doesn't bring any utility beyond his ATK buff.
+      - Doesn't bring any utility beyond his ATK buff
       
-      - All his awakening talents only effect himself
+      - All his awakening talents only affect himself
       
       **Rotation**
       
       *Normal > Double Slash / Air Slash > Empyrean Slash > Air Raid > Spam it till out of AP. (General Combo)
+
 
 - name: Cliff Fittir
   cat: gl
@@ -387,33 +391,33 @@
   ace: true
   limited: false
   star: 5
-
+    
   stats:
     hp: 15750
-    atk: 3183
-    int: 1522
+    atk: 3106
+    int: 1523
     def: 1930
     hit: 1162
-    grd: 812
+    grd: 812    
 
   talents:
     - name: "Klaus Champion II"
       effects: 
-        - desc: AP Cost -40% 
+        - desc: AP cost -40% 
           meta:
-            priority: 4
+            priority: 1
             buff: AP Cost Reduction
             buffValue: 40
     - name: "Greater Master of the Training Hall"
       effects: 
         - desc: ATK +30% 
           meta:
-            priority: 4
+            priority: 1
             buff: ATK
             buffValue: 30
     - name: "Revolutionary Spirit"
       effects:
-        - desc: Critical Rate +20%
+        - desc: Critical hit chance +20%
           meta:
             priority: 4
             buff: Crit Rate
@@ -424,7 +428,7 @@
       picture: Triple_Kick
       power: ATK x 250%
       ap: 24
-      maxHits: 2
+      maxHits: 3
       highlight: true
     - name: "Crescent Locus"
       picture: Crescent_Locus
@@ -436,7 +440,7 @@
       picture: Acrobat_Locus
       power: ATK x 710%
       ap: 41
-      maxHits: 4
+      maxHits: 7
     - name: "Fists of Fury"
       picture: Fists_of_Fury
       power: ATK x 780%
@@ -470,25 +474,26 @@
       
       **Pros**
       
-      - Powerful when built around.
+      - Powerful when built around
       
-      - Good for solo play.
+      - Good for solo play
       
       
       **Cons**
       
-      - Zero utility for the party.
+      - Zero utility for the party
       
-      - No ranged attack.
+      - No ranged attack
       
-      - No post rush buff.
+      - No post-rush buff
       
       
       **Rotation**
       
       *Normal > Crescent Locus > Triple Kick > Crescent Locus > Crescent Locus > Crescent Locus > Crescent Locus > Crescent Locus >
       Fists of Fury > Dash after hit 3(General damage & rush gain combo. Requires 1 AP seed)*
-
+      
+      
 - name: Anne Patriceani
   cat: gl
   rating: 3
@@ -499,16 +504,16 @@
 
   stats:
     hp: 14070
-    atk: 2167
-    int: 1405
-    def: 1759
+    atk: 3007
+    int: 2246
+    def: 2487
     hit: 1043
     grd: 756
 
   talents:
     - name: "Stellar Support"
       effects: 
-        - desc: Critical Rate +30%
+        - desc: Critical hit chance +30%
           all: true
           meta:
             priority: 1
@@ -519,17 +524,17 @@
         - desc: No Flinching to Damage < 20% of Max HP
 
   skills:
-    - name: "Triple Kick"
-      picture: Triple_Kick
-      power: ATK x 250%
-      ap: 24
-      maxHits: 2
-      highlight: true
     - name: "Hammer of Might"
       picture: Hammer_of_Might
       power: ATK x 230%
       ap: 24
       maxHits: 1
+    - name: "Triple Kick"
+      picture: Triple_Kick
+      power: ATK x 250%
+      ap: 24
+      maxHits: 3
+      highlight: true
     - name: "Drill Spike"
       picture: Drill_Spike
       power: ATK x 190%
@@ -545,6 +550,7 @@
   rush:
     name: "Blazing Cannon"
     picture: Blazing_Cannon_Anne
+    element: Fire
     effects: 
       - desc: Critical Rate +60%
         all: true
@@ -555,14 +561,13 @@
           buffValue: 60
     power: ATK x 2500%
     maxHits: 8
-    element: Fire
     
   notes: >
       _Anne is a character who fills a niche and that's about it. She's very good against the crystal Guardian, other than that
       nearly every other 5 star character in the game is better than her. She is a crit fiend and provides the best crit buff in
       the game a post rush 60%, plus a 30% crit rate for the party passively is nothing to ignore. But that's about all she has
       going for her. Her damage is bad, she gives no other utility, she has no ranged option, and being a non-ace means she has
-      less stats so is just generally squishier. If you need a character to do Crystal Guardian she's a great pick, other wise
+      less stats so is just generally squishier. If you need a character to do Crystal Guardian she's a great pick, otherwise
       ignore her._
       
       
@@ -571,22 +576,23 @@
       
       **Pros**
       
-      - Gives a strong passive crit rate and an unmatched post rush buff to crit rate.
+      - Gives a strong passive crit rate and an unmatched post-rush buff to crit rate
       
-      - 5 star non-ace so costs less to limit break and augment.
+      - 5 star non-ace so costs less to limit break and augment
       
       
       **Cons**
       
-      - 5 star non-ace so has less stats.
+      - 5 star non-ace so has less stats
       
-      - Poor damage and little utility beyond crit buffing.
+      - Poor damage and little utility beyond crit buffing
       
       
       **Rotation**
       
       *Normal > Triple Kick > Drill Spike > Triple Kick > Triple Kick (DPS & Rush gain combo)*
-    
+
+
 - name: Daril Camuze
   cat: gl
   rating: 5
@@ -4035,3 +4041,71 @@
         all: true
     power: ATK x 2500%
     maxHits: 7
+
+
+  
+- name: Delacroix
+  cat: gl
+  rating: 0
+  picture: Delacroix
+  weapon: dagger
+  ace: false
+  limited: false
+  star: 4
+
+  stats:
+    hp: 13020
+    atk: 1811
+    int: 1248
+    def: 1327
+    hit: 1015
+    grd: 763
+
+  talents:
+    - name: "Nervous Tension III"
+      effects: 
+        - desc: Nullifies paralysis (180 seconds)
+          all: true
+    - name: "Assistance II"
+      effects: 
+        - desc: Damage dealt to machines +20%
+          all: true
+          slayer: Machine
+          slayerPct: 20
+          meta:
+            priority: 4
+            buff: Damage To Machines
+            buffValue: 20
+
+  skills:
+    - name: "Flying Guillotine"
+      picture: Guillotine
+      power: ATK x 370%
+      ap: 32
+      maxHits: 4
+    - name: "Victory Terror"
+      picture: Victory_Terror
+      power: ATK x 500%
+      ap: 35
+      maxHits: 10
+    - name: "Sylvan Shot"
+      picture: Sylvan_Shot
+      power: ATK x 200%
+      ap: 20
+      maxHits: 8
+    - name: "Mirror Blade"
+      picture: Mirror_Blade
+      power: ATK x 680%
+      ap: 40
+      maxHits: 6
+
+  rush:
+    name: "Jackknife Arts"
+    picture: Jackknife_Art_Tiffan
+    effects:
+      - desc: Nullifies paralysis
+        duration: 20
+        all: true
+    power: ATK x 2500%
+    maxHits: 7
+  
