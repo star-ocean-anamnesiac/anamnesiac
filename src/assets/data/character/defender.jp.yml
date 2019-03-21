@@ -296,4 +296,266 @@
       *Normal > Annihiliating Air Slash > Double Slash > Annihiliating Air Slash > spam this until no AP - (Damage rotation)*
       
       *Annihiliating Air Slash > Dragon Roar > Annihiliating Air Slash > Dragon Roar > spam this until no AP - (Range rotation)*
+
+- name: Edge Maverick (Awakened)
+  cat: jp
+  rating: 5
+  picture: Edge
+  weapon: ohs
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 20370
+    atk: 2508
+    int: 1537
+    def: 2560
+    hit: 812
+    grd: 1036
+
+  talents:
+    - name: "Longing for the Stars III"
+      effects: 
+        - desc: ATK +25%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 25
+    - name: "A Pioneer's Spirit"
+      effects: 
+        - desc: Single Target Damage +15%
+          all: true
+          meta:
+            priority: 1
+            buff: Single Target Damage
+            buffValue: 15
+    - name: "Youthful Spunk III"
+      effects: 
+        - desc: HP +50%
+          all: true
+          meta:
+            priority: 1
+            buff: HP
+            buffValue: 50
+    - name: "A Friend's Promise"
+      effects: 
+        - desc: No flinching when taking damage of 25% HP or less
+          all: true
+    - name: "Avoid Invulnerable"
+      effects: 
+        - desc: charge assault in the air during the “Fortitude of Righteousness” attack Invalidate the critical occurrence effect of charge assault
+          all: true
+    - name: "The right hand of good luck"
+      effects: 
+        - desc: 3 Consecutive AP consumption 20% + Critical incidence rate + 30%
+          all: true
+
+  skills:
+    - name: "Smack Down"
+      picture: Double_Slash_I
+      power: ATK x 200%
+      ap: 17
+      maxHits: 5
+      highlight: true
+    - name: "Aura Spark"
+      picture: Air_Slash_I
+      power: ATK x 180%
+      ap: 14
+      maxHits: 1
+      highlight: true
+    - name: "Cyclone Blade"
+      picture: Cyclone_Blade
+      power: ATK x 340%
+      ap: 29
+      maxHits: 5
+    - name: "Raging Strike"
+      picture: Raging_Strike
+      power: ATK x 800%
+      ap: 40
+      maxHits: 1
+      highlight: true
+    - name: "Twin Zapper"
+      picture: Twin_Zapper
+      power: ATK x 300%
+      ap: 20
+      maxHits: 4
+      highlight: true
+      
+  rush:
+    name: "Mystic Cross Nova"
+    picture: Mystic_Cross_Nova_Edge
+    effects: 
+      - desc: Elemental Damage +50%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Elemental Damage
+          buffValue: 50
+    power: ATK x 4000%
+    maxHits: 12
     
+  notes: >
+      _Has a wide spread of varied buffs, in addition to boasting the largest HP buff available.  Since he carries an array of watered-down buffs
+      though, you'll never run into a situation where he contributes optimally.  While his awakening increased his damage output and gave him
+      some nice QoL perks, it didn't do much to improve him overall._      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Good variety of buffs
+      
+      - Incredible HP buff
+      
+      
+      **Cons**
+      
+      - Lacks personal healing
+      
+      - Many of his buffs are easily outclassed
+      
+      - Lacks a range combo
+      
+      
+      **Rotation**
+      
+      *Normal>Aura Spark>Twin Zapper>Raging Strike x2*
+      *Normal>Raging>Aura Spark>Raging - Unawakened*
+    
+- name: Victor Oakville (Awakened)
+  cat: jp
+  rating: 4
+  picture: Victor
+  weapon: bns
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 18795
+    atk: 2074
+    int: 1365
+    def: 2336
+    hit: 738
+    grd: 952
+
+  talents:
+    - name: "The King's Chosen Glory"
+      effects: 
+        - desc: DEF +70%
+          all: true
+          meta:
+            priority: 1
+            buff: DEF
+            buffValue: 70
+        - desc: Damage dealt +20%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 20
+    - name: "What Friends Are For IV"
+      effects: 
+        - desc: No flinching when taking damage of 30% HP or less
+          all: true
+    - name: "Indomitable Spirit"
+      effects: 
+        - desc: 80% chance to survive a lethal attack at 10% HP or more (All)
+    - name: "The Prestige of the Swordsman's Role"
+      effects: 
+        - desc: Charge A Salto Invalidate the Critical Outbreak Effect (Overall) & Inflict Freeze Outbreak Ineffective Freeze (self)
+    - name: "Convious Vow"
+      effects: 
+        - desc: Damage to Normal Attack The effect of becoming easy to be targeted from the enemy who gives the 15% absorption effect + 3
+    - name: "Cut off and complete"
+      effects: 
+        - desc: ATK +20%, DEF +10%, GRD +15%, HP +10%
+
+  skills:
+    - name: "Mirror Blade"
+      picture: Mirror_Blade_II
+      power: ATK x 1220%
+      ap: 38
+      maxHits: 5
+    - name: "Vampiric Flash"
+      picture: Vampiric_Flash
+      power: ATK x 440%
+      ap: 32
+      maxHits: 6
+    - name: "Bloodstorm Revolution"
+      picture: Bloodstorm_Revolution
+      power: ATK x 1100%
+      ap: 38
+      maxHits: 10
+      highlight: true
+    - name: "Dragon Roar"
+      picture: Dragon_Roar
+      element: Dark
+      power: ATK x 370%
+      ap: 29
+      maxHits: 2
+      highlight: true
+    - name: "Double Slash II"
+      picture: Double_Slash_II
+      power: ATK x 220%
+      ap: 20
+      maxHits: 2
+      highlight: true
+      
+  rush:
+    name: "Diabolic Edge"
+    picture: Diabolic_Edge_Victor
+    effects: 
+      - desc: Damage taken -50%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Damage Taken Reduction
+          buffValue: 50
+    power: ATK x 4000%
+    maxHits: 15
+    
+  notes: >
+      _Exists almost entirely for his rush buff, which halves damage taken and stacks additively with -ATK/INT Damage Taken, reducing most
+      incoming attacks to trivial amounts.  Awakening also provides him with party Guts when he has aggro as a nice safety net.  Offensively he's
+      weaker than a number of healers, both on a personal level and for what he enables for the party; fast runs with him usually hinge on tanking
+      hits for faster rush gain.  Note that while his DEF+70% looks huge, his crit immunity doesn't extend to the rest of the party and crits ignore
+      DEF entirely._
+
+      _Awk4 covers all party talents aside from DEF+70%.  Awk6 adds drain on normals, aggro+3, and stronger Bloodstorm without spending a 
+      single gamma._
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - 5 star non-ace so cheaper to augment and limit break
+      
+      - Great defensive buffs
+      
+      - Hard to kill
+      
+      - Good rush gain
+      
+      
+      **Cons**
+      
+      - 5 star non-ace so has less stats
+      
+      - Bloodstorm Revolution likes to send enemies skyward
+      
+      - No damage based buffs
+      
+      
+      **Rotation**
+      
+      *Normal>Bloodstorm>Double Slash>Bloodstorm*
+      
+      *Normal>Dragon>Bloodstorm>Dragon - Large enemies
+
+      *Spam Bloodstorm if either unawakened or trying to fill rush*
