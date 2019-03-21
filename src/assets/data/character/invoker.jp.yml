@@ -1683,7 +1683,6 @@
           priority: 1
           buff: AP Cost Reduction
           buffValue: 80
-    effects: 
       - desc: Symbology cast time -80%
         duration: 10
         all: false
