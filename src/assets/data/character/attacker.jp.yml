@@ -667,8 +667,8 @@
 
   stats:
     hp: 15645
-    atk: 2718
-    int: 1563
+    atk: 3588
+    int: 2428
     def: 1957
     hit: 1127
     grd: 833
@@ -676,28 +676,28 @@
   talents:
     - name: "Mind's Eye View II"
       effects: 
-        - desc: ATK +40% when not in front of target
+        - desc: ATK +55% when not in front of target
           all: true
           meta:
             priority: 1
             buff: ATK
             buffCondition: Not In Front Of Target
-            buffValue: 40
+            buffValue: 55
     - name: "Lethal Swing"
       effects: 
-        - desc: ATK +25% when in front of target
+        - desc: ATK +24% when in front of target
           all: true
           meta:
             priority: 1
             buff: ATK
             buffCondition: In Front Of Target
-            buffValue: 25
-        - desc: Rush Combo Damage +10%
+            buffValue: 40
+        - desc: Rush combo damage +15%
           all: true
           meta:
             priority: 1
             buff: Rush Damage
-            buffValue: 10
+            buffValue: 15
     - name: "Handmade Dolls II"
       effects: 
         - desc: AP recovery from normal attacks +80%
@@ -710,7 +710,9 @@
           all: Close Range
     - name: "Hit-the-Watermelon"
       effects: 
-        - desc: AP Cost -25% during 3 skill combos or more
+        - desc: Evasion possible during attack even in the air
+          all: false
+        - desc: AP cost -25% when skill chain is 3+
           meta:
             priority: 4
             buff: AP Cost Reduction
@@ -747,14 +749,14 @@
     effects: 
       - desc: Cure status ailments
         all: true
-      - desc: Single Target Damage Dealt +40%
+      - desc: Single target damage dealt +40%
         all: true
         duration: 20
         meta:
           priority: 4
           buff: Single Target Damage
           buffValue: 40
-    power: ATK x 3500%
+    power: ATK x 4000%
     maxHits: 7
     
   notes: >
@@ -770,7 +772,7 @@
       
       - Ap recovery on normals
       
-      - Really powerful post rush buff
+      - Really powerful post-rush buff
       
       
       **Cons**
@@ -785,7 +787,8 @@
       *Normal > Crescent Mirage > Combo Breaker > Summer Smoothie> Spam it till out of AP. (Damage combo with Combo Breaker.)*
       
       *Normal > Crescent Mirage > Smackdown > Summer Smoothie> Spam it till out of AP. (Damage combo with Smackdown.)*
-    
+
+
 - name: Lenneth
   cat: jp
   rating: 6
@@ -814,13 +817,13 @@
             buffValue: 30
     - name: "The Dusk of Ragnarok"
       effects: 
-        - desc: Rush Combo Damage +20%
+        - desc: Rush combo damage +20%
           all: true
           meta:
             priority: 1
             buff: Rush Damage
             buffValue: 20
-    - name: "Platina's Heart"
+    - name: "Platinum Heart"
       effects: 
         - desc: +15% chance of adding silence to all attacks
           meta:
@@ -855,8 +858,8 @@
     name: "Nibelung Valesti"
     picture: Nibelung_Valesti_Lenneth
     effects: 
-      - desc: DEF -30% (All Enemies)
-        all: enemies
+      - desc: DEF -30%
+        all: Enemies
         duration: 20
         meta:
           priority: 1
@@ -887,7 +890,7 @@
       
       - Silence has a low chance to apply making it a poor talent that doesn't do much
       
-      - Doesn't do enough other attackers don't already do better
+      - Doesn't do enough that other attackers don't already do better
       
       
       **Rotation**
@@ -895,7 +898,8 @@
       *Normal > Heaven and Hell > Glowing Pierce > Heaven and Hell> Sky-High Break (Damage rotation)*
       
       *Normal > Sky-High Break > Glowing Pierce > Sky-High Break (Rush gain rotation)*
-    
+
+
 - name: Claude C. Kenny
   cat: jp
   rating: 8
