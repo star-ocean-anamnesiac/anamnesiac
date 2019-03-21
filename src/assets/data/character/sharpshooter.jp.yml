@@ -169,7 +169,7 @@
     maxHits: 7
     element: Dark
 
-- name: Maria (Awakened)
+- name: Maria Traydor (Awakened)
   cat: jp
   rating: 10
   picture: Maria
@@ -502,7 +502,7 @@
           all: true
     - name: "Heroes on Success As a Clan"
       effects: 
-        - desc: ATK +40%, DEF +20%, HIT +10%, HP +10%
+        - desc: ATK +40%, DEF +20%, HIT +10%, HP +10% (Self)
           all: true
         
   skills:
