@@ -1587,7 +1587,7 @@
 
 - name: Lezard Valeth
   cat: jp
-  rating: 0
+  rating: 8
   picture: Lezard
   weapon: tome
   ace: true
