@@ -9,15 +9,15 @@
   star: 5
 
   stats:
-    hp: 21945
-    atk: 3041
-    int: 1510
-    def: 2789
-    hit: 833
-    grd: 1043
+    hp: 22855
+    atk: 4316
+    int: 2538
+    def: 3824
+    hit: 873
+    grd: 1093
 
   talents:
-    - name: "Vortex of Hatred"
+    - name: "Swirling Animus"
       effects: 
         - desc: HP +20%
           all: true
@@ -25,13 +25,14 @@
             priority: 1
             buff: HP
             buffValue: 20
-        - desc: Will not flinch to damage under 20% max HP
+        - desc: No flinching when taking damage of 20% HP or less
           all: true
     - name: "Dark Impulse"
       effects: 
-        - desc: AP 100% Recovery when Just Timing evasion
-        - desc: Recover 10 AP to all allies when Just Timing evasion
-    - name: "Blade of Inorganic"
+        - desc: Recovers 100% AP on perfect dodge
+          all: false
+        - desc: Recover 10 AP for all allies on perfect dodge
+    - name: "Inorganic Blade"
       effects: 
         - desc: Single target damage +20%
           all: true
@@ -49,56 +50,60 @@
     - name: "Beautiful World"
       effects: 
         - desc: ATK +20%
+          all: false
           meta:
             priority: 4
             buff: ATK
             buffValue: 20
         - desc: DEF +20%
+          all: false
           meta:
             priority: 4
             buff: DEF
             buffValue: 20
 
   skills:
-    - name: "YoHRa Arms: Eleven"
+    - name: "YoRHa Arms: Eleven"
       picture: YoHRa_Arms_Eleven
       power: ATK x 600%
       ap: 27
       maxHits: 5
-    - name: "YoHRa Arms: Twelve"
+    - name: "YoRHa Arms: Twelve"
       picture: YoHRa_Arms_Twelve
       power: ATK x 1240%
       ap: 52
       maxHits: 4
-    - name: "YoHRa Pod: One"
+    - name: "YoRHa Pod: One"
       picture: YoHRa_Pod_One
       power: ATK x 180%
       ap: 13
       maxHits: 1
-    - name: "YoHRa Pod: Two"
+    - name: "YoRHa Pod: Two"
       picture: YoHRa_Pod_Two
       power: ATK x 380%
       ap: 20
       maxHits: 1
       
   rush:
-    name: "YoHRa Arms: One Hundred"
+    name: "YoRHa Arms: One Hundred"
     picture: YoHRa_Arms_One_Hundred_A2
     effects: 
-      - desc: Single Target Damage +60%
+      - desc: Single target damage +60%
         duration: 20
+        all: false
         meta:
           priority: 4
           buff: Single Target Damage
           buffValue: 60
-      - desc: Recover 15% of max HP every 3 seconds
+      - desc: Recover 15% HP every 3 seconds
         duration: 20
+        all: false
     power: ATK x 4500%
     maxHits: 25
     
   notes: >
       _A2 gets buffed to her initial JP values. She is now probably the best defender in the game now her Single Target Damage buff
-      isn't holding her back. She provides AP feeding with dodging, she has post rush-sustain. Her damage is good and she can run
+      isn't holding her back. She provides AP feeding with dodging, she has post-rush sustain. Her damage is good and she can run
       a ranged or melee combo. She is reasonably bulky as well and really only the slow clunky play style is her biggest downside
       along with that HP buffs are anything but consistent. Like the rest of the nier trio she's pretty broken and you'll be seeing
       many on auto in your m3 runs to come._
@@ -111,11 +116,11 @@
       
       - Perfect dodging restores AP to the party
       
-      - Strong buffs for both offense and defence.
+      - Strong buffs for both offense and defence
       
-      - High personal damage output, especially post rush.
+      - High personal damage output, especially post-rush
       
-      - Post rush regen gives sustain.
+      - Post-rush regen gives sustain.
       
       
       **Cons**
@@ -132,6 +137,7 @@
       *Normal > Pod 1 > Pod 2 > CA Sword 12 (Ranged set combo)*
       
       *Pod 2 > Pod 1 > Pod 2 > CA Sword 12 (Ranged set combo from range)*
+
 
 - name: Victor Oakville
   cat: gl
@@ -157,7 +163,7 @@
             priority: 1
             buff: DEF
             buffValue: 50
-        - desc: Damage +10%
+        - desc: Damage dealt +10%
           all: true
           meta:
             priority: 1
@@ -165,15 +171,15 @@
             buffValue: 10
     - name: "What Friends Are For IV"
       effects: 
-        - desc: Will not flinch to damage under 25% max HP
+        - desc: No flinching when taking damage of 25% HP or less
           all: true
     - name: "Indomitable Spirit"
       effects: 
-        - desc: At 10% HP or higher, 80% chance to survive a lethal attack
+        - desc: 80% chance to survive a lethal attack at 10% HP or more
 
   skills:
     - name: "Mirror Blade"
-      picture: Mirror_Blade
+      picture: Mirror_Blade_II
       power: ATK x 610%
       ap: 38
       maxHits: 5
@@ -190,14 +196,14 @@
       highlight: true
     - name: "Dragon Roar"
       picture: Dragon_Roar
+      element: Dark
       power: ATK x 340%
       ap: 29
       maxHits: 2
-      element: Dark
       highlight: true
       
   rush:
-    name: "Diabolic Edge - Whirlwind"
+    name: "Diabolic Edge"
     picture: Diabolic_Edge_Victor
     effects: 
       - desc: Damage taken -50%
@@ -213,15 +219,15 @@
   notes: >
       _Victor is the starter defender and a non-ace, so if you picked him you kind of got a bad deal. However Victor is actually a
       solid defender who boasts incredible defensive utility and is quite difficult to kill. He increases the party's DEF by 50% and
-      offers a weak damage buff. His post rush buff also decreases damage taken by 50%. His rush gain is pretty good due to his move
+      offers a weak damage buff. His post-rush buff also decreases damage taken by 50%. His rush gain is pretty good due to his move
       set and he is worth considering limit breaking due to the cheaper cost of 5 stars and the fact certain permanent aces such as
-      Dias aren't significantly better than him._
+      Dias aren't significantly better._
       
       
-      _His down sides are the fact he offers little to the offensive side of the game. His
+      _His downsides are the fact he offers little to the offensive side of the game. His
       damage buff is over written by so many commonly used characters, it'll generally be irrelavant. Also his best rush gain move
       sends enemies sky high during elemental burst meaning it can't be used. His personal dps is passable, but not amazing and moves
-      like mirror blade are also a bit awkward to use. In summary, Viktor is a human wall, he's good at surviving and increasing
+      like Mirror Blade are also a bit awkward to use. In summary, Victor is a human wall, he's good at surviving and increasing
       party tankiness. But he doesn't offer much to the parties damage in return, however, if you want a defender on a budget till a 
       limited defender comes along, he's worth keeping in mind._
       
@@ -356,7 +362,7 @@
             priority: 1
             buff: DEF
             buffValue: 40
-        - desc: Damage +10%
+        - desc: Damage dealt +10%
           all: true
           meta:
             priority: 1
@@ -364,11 +370,12 @@
             buffValue: 10
     - name: "Imposing Presence IV"
       effects: 
-        - desc: Will not flinch to damage under 20% max HP
+        - desc: No flinching when taking damage of 20% HP or less
           all: Close Range
     - name: "Will of the Universe"
       effects: 
-        - desc: Critical rate +20%
+        - desc: Critical hit chance +20%
+          all: false
           meta:
             priority: 4
             buff: Crit Rate
@@ -376,7 +383,7 @@
 
   skills:
     - name: "Mirror Blade"
-      picture: Mirror_Blade
+      picture: Mirror_Blade_II
       power: ATK x 610%
       ap: 38
       maxHits: 5
@@ -385,11 +392,11 @@
       power: ATK x 370%
       ap: 32
       maxHits: 6
-    - name: "Diabolic Edge"
+    - name: "Diabolic Whirl"
       picture: Diabolic_Whirl
       power: ATK x 340%
       ap: 29
-      maxHits: 2
+      maxHits: 5
       highlight: true
     - name: "Dragon Roar"
       picture: Dragon_Roar
@@ -403,12 +410,13 @@
     name: "Blade Vortex"
     picture: Blade_Vortex_Stephen
     effects: 
-      - desc: Will not flinch to damage under 40% max HP
+      - desc: No flinching when taking damage of 60% HP or less
         duration: 20
         all: true
     power: ATK x 3000%
     maxHits: 7
-    
+
+
 - name: Myuria Tionysus (Summer)
   cat: gl
   rating: 10
@@ -419,12 +427,12 @@
   star: 5
 
   stats:
-    hp: 21945
-    atk: 2258
-    int: 1563
-    def: 2324
-    hit: 826
-    grd: 1050
+    hp: 23998
+    atk: 3168
+    int: 2439
+    def: 3162
+    hit: 866
+    grd: 1100
 
   talents:
     - name: "Big Break II"
@@ -435,45 +443,56 @@
             priority: 4
             buff: HP
             buffValue: 20
-        - desc: Will not flinch to damage under 20% max HP
+        - desc: No flinching when taking damage of 20% HP or less
           all: true
     - name: "Aromatic Sunscreen II"
       effects: 
         - desc: INT damage taken -20%
           all: true
+          meta:
+            priority: 1
+            buff: INT Damage Taken Reduction
+            buffValue: 20    
     - name: "Great Charisma"
       effects: 
-        - desc: ATK +60% when under aggro
+        - desc: Rush Gauge limit -30%
+          all: false 
+        - desc: ATK +60% when targeted by enemy
+          all: false
           meta:
             priority: 3
             buff: ATK
             buffValue: 60
             buffCondition: When holding aggro
-        - desc: AP cost -20% when under aggro
+        - desc: AP cost -20% when targeted by enemy
           meta:
             priority: 3
             buff: AP Cost Reduction
             buffValue: 20
-            buufCondition: When holding aggro
-        - desc: Rush gauge quota -30%
+            buffCondition: When holding aggro
     - name: "Beach Skirt Wrap"
       effects:
-        - desc: Single target damage +30% when not under aggro
+        - desc: Single target damage +30% when not targeted by enemy
           all: true
           meta:
             priority: 3
             buff: Single Target Damage
             buffValue: 30
             buffCondition: Not holding aggro
-        - desc: Ease of stun +15% when not under aggro
+        - desc: Stun chance +15% when not targeted by enemy
           all: true
+          meta:
+            priority: 1
+            buff: Stun Rate
+            buffValue: 15
+            buffCondition: Not holding aggro          
 
   skills:
     - name: "Air Slash"
       picture: Air_Slash_II
       power: ATK x 200%
       ap: 20
-      maxHits: 2
+      maxHits: 1
     - name: "Aura Wall"
       picture: Aura_Wall
       power: ATK x 200%
@@ -487,27 +506,27 @@
       maxHits: 10
     - name: "Thunderfire Slash"
       picture: Thunderfire_Slash
-      power: ATK x 340%
-      ap: 29
-      maxHits: 2
-      element: Dark
+      element: Lightning
+      power: ATK x 430%
+      ap: 32
+      maxHits: 1
       highlight: true
       
   rush:
-    name: "Lightning Speed Sword Draw Attack"
+    name: "Flashbolt"
     picture: Flashbolt_Summer_Myuria
     element: Lightning
     effects: 
       - desc: AP cost -40%
         duration: 20
-        all: true
+        all: false
         meta:
           priority: 1
           buff: AP Cost Reduction
           buffValue: 40
-      - desc: Recover 15% max HP every 3 seconds
+      - desc: Recover 15% HP every 3 seconds
         duration: 20
-        all: true
+        all: false
     power: ATK x 4500%
     maxHits: 6
     
@@ -531,12 +550,12 @@
       
       - Buffs herself and her party as long as she holds aggro
       
-      - INT damage reduction unique to her among defenders.
+      - INT damage reduction unique to her among defenders
       
       
       **Cons**
       
-      - Aura wall is good for hit count, but bad for damage.
+      - Aura wall is good for hit count, but bad for damage
       
       
       **Rotation**
@@ -544,7 +563,8 @@
       *Normal > Aura Wall > Air Slash > Thunderfire Slash > spam this until no AP - (need 4-5 AP seeds damage rotation)*
       
       *Normal > Air Slash > Thunderfire Slash > Air Slash > Thunderfire Slash > spam this until no AP (Range rotation)*
-    
+
+
 - name: Dias Flac
   cat: gl
   rating: 6
@@ -556,7 +576,7 @@
   stats:
     hp: 22155
     atk: 2799
-    int: 1509
+    int: 1510
     def: 2867
     hit: 812
     grd: 1036
@@ -579,29 +599,31 @@
     - name: "Aloof Swordsmanship"
       effects: 
         - desc: ATK +30%
+          all: false
           meta:
             priority: 4
             buff: ATK
             buffValue: 30
         - desc: DEF +20%
+          all: false
           meta:
             priority: 4
             buff: DEF
             buffValue: 20
     - name: "Oath to Cecille"
       effects: 
-        - desc: Will not flinch to damage under 25% max HP
+        - desc: No flinching when taking damage of 25% HP or less
           all: Close Range
     - name: "Encountered a Worthy Rival"
       effects: 
-        - desc: Damage +20%
+        - desc: Damage dealt +20%
           all: Attacker
           meta:
             priority: 1
             buff: Damage
             buffRole: attacker
             buffValue: 20
-        - desc: Damage +20%
+        - desc: Damage dealt +20%
           all: Defender
           meta:
             priority: 1
@@ -622,18 +644,18 @@
       ap: 20
       maxHits: 2
       highlight: true
+    - name: "Dragon Roar"
+      picture: Dragon_Roar
+      element: Dark
+      power: ATK x 340%
+      ap: 29
+      maxHits: 2
+      highlight: true
     - name: "Diabolic Edge"
       picture: Diabolic_Whirl
       power: ATK x 340%
       ap: 29
-      maxHits: 2
-    - name: "Dragon Roar"
-      picture: Dragon_Roar
-      power: ATK x 340%
-      ap: 29
-      maxHits: 2
-      element: Dark
-      highlight: true
+      maxHits: 5
       
   rush:
     name: "Deadly Illusion"
@@ -668,12 +690,12 @@
       
       - Solid ranged attacks
       
-      - Strong party wide defensive buff.
+      - Strong party-wide defensive buff
       
       
       **Cons**
       
-      - Most of his buffs are redundant for ranged characters.
+      - Most of his buffs are redundant for ranged characters
       
       - Has attacks which send enemies airborne during Elemental Burst
       
@@ -683,6 +705,7 @@
       *Normal > Annihiliating Air Slash > Double Slash > Annihiliating Air Slash > spam this until no AP - (Damage rotation)*
       
       *Annihiliating Air Slash > Dragon Roar > spam this until no AP (Range rotation)*
+
 
 - name: Evelysse (Winter)
   cat: gl

@@ -1,0 +1,47 @@
+
+- name: "Monarch Chimera"
+  image: monarch_chimera
+  cat: gl
+  race: Beast
+  
+  isActive: true
+
+  enrage:
+    m1: "7:00"
+    m2: "7:00"
+    m3: "4:00"
+    	    
+  statusInflictions:
+    - Unknown
+
+  weaknesses:
+    - element: Earth
+      percentWeakness: 1
+
+    - status: Curse
+      vuln: Low
+   
+    - status: Freeze
+      vuln: Low
+   
+    - status: Poison
+      vuln: Low
+
+  recommendations:
+    - plain: Earth Damage
+    - plain: Status Infliction
+    - plain: Anti-Flinch
+
+  desc: >
+    Attack pattern intensifies as its HP decreases. Be aware of the rushing attacks. Will mostly do close range attacks. 
+    
+    In M2 and above, will also perform ranged attacks. Extremely high ATK in M2/M3. Recommend taking a Defnder
+  
+  moves:
+    - name: Rush
+      targets: Close, Mid
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Charges his target.

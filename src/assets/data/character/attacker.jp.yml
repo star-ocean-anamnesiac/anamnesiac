@@ -19,22 +19,22 @@
   talents:
     - name: "Quiet Determination"
       effects: 
-        - desc: ATK +25%
+        - desc: ATK +40%
           all: true
           meta:
             priority: 1
             buff: ATK
-            buffValue: 25
-        - desc: ATK +45% when HP 100% 
+            buffValue: 40
+        - desc: ATK +65% when HP is 100% 
           all: true
           meta:
             priority: 3
             buff: ATK
             buffCondition: HP is 100%
-            buffValue: 45
+            buffValue: 65
     - name: "Automated Infantry Android"
       effects: 
-        - desc: Evasion AP consumption -100% when Just Timing evasion
+        - desc: Evasion AP consumption -100% on perfect dodge
     - name: "Silver Protection"
       effects: 
         - desc: AP recovery from normal attacks +100%
@@ -50,23 +50,23 @@
         - desc: Imbues attacks with light/dark element
 
   skills:
-    - name: "YoHRa Arms: One"
+    - name: "YoRHa Arms: One"
       picture: YoHRa_Arms_One
-      power: ATK x 380%
+      power: ATK x 440%
       ap: 22
       maxHits: 2
       highlight: true
-    - name: "YoHRa Arms: Two"
+    - name: "YoRHa Arms: Two"
       picture: YoHRa_Arms_Two
-      power: ATK x 800%
+      power: ATK x 1280%
       ap: 42
       maxHits: 2
-    - name: "YoHRa Pod: One"
+    - name: "YoRHa Pod: One"
       picture: YoHRa_Pod_One
       power: ATK x 180%
       ap: 13
       maxHits: 1
-    - name: "YoHRa Pod: Two"
+    - name: "YoRHa Pod: Two"
       picture: YoHRa_Pod_Two
       power: ATK x 380%
       ap: 20
@@ -74,23 +74,24 @@
       highlight: true
 
   rush:
-    name: "YoHRa Arms: Zero"
+    name: "YoRHa Arms: Zero"
     picture: YoHRa_Arms_Ø_2B
     effects: 
-      - desc: All elemental damage +55%
+      - desc: All elemental damage +50%
+        all: false
         duration: 20
         meta:
           priority: 4
           buff: Elemental Damage
-          buffValue: 55
-      - desc: All elemental damage +50%
+          buffValue: 50
+      - desc: All elemental damage +70%
         all: true
         duration: 20
         meta:
           priority: 1
           buff: Elemental Damage
-          buffValue: 50
-    power: ATK x 4000%
+          buffValue: 70
+    power: ATK x 4500%
     maxHits: 27
     
   notes: >
@@ -108,29 +109,30 @@
       
       - Cheaper dodging and can air dodge.
       
-      - Innate Light & Dark imbue
+      - Innate Light & Dark imbue.
       
       - Has a melee and ranged skill set.
       
       
       **Cons**
       
-      - ATK buff condition is inconsistent
+      - ATK buff condition is inconsistent.
       
       - Self imbue can be a downside against certain bosses if you don't own certain weapons.
       
       
       **Rotation**
       
-      - As a note YoHRa Pod: One VS YoHRa Arms: two is a personal preference. Whether you want a better ranged combo or using arms two
-      as a verticle dodge.
+      - As a note YoRHa Pod: One VS YoRHa Arms: Two is a personal preference. Whether you want a better ranged combo or using Arms Two
+      as a vertical dodge.
       
-      *Normal > YoHRa Arms: One > YoHRa Pod: Two > YoHRa Arms: One > Spam it till out of AP. (General combo.)*
+      *Normal > YoRHa Arms: One > YoRHa Pod: Two > YoRHa Arms: One > Spam it till out of AP. (General combo.)*
       
-      *Normal > YoHRa Pod: Two > YoHRa Arms: One (Miss on purpose) > YoHRa Pod: Two > Spam it till out of AP. (Ranged combo.)*
+      *Normal > YoRHa Pod: Two > YoRHa Arms: One (Miss on purpose) > YoRHa Pod: Two > Spam it till out of AP. (Ranged combo.)*
       
-      *Normal > YoHRa Pod: Two > YoHRa Pod: One > YoHRa Pod: Two > Spam it till out of AP. (Ranged combo if running ranged set up.)*
-    
+      *Normal > YoRHa Pod: Two > YoRHa Pod: One > YorHa Pod: Two > Spam it till out of AP. (Ranged combo if running ranged set up.)*
+
+
 - name: Fidel Camuze
   cat: jp
   rating: 6
@@ -143,9 +145,9 @@
   stats:
     hp: 15960
     atk: 2363
-    int: 1522
-    def: 1930
-    hit: 1162
+    int: 1549
+    def: 1969
+    hit: 1127
     grd: 812
 
   talents:
@@ -192,6 +194,7 @@
   rush:
     name: "Ethereal Blast"
     picture: Ethereal_Blast_Fidel
+    element: Light
     effects: 
       - desc: AP cost -60%
         duration: 20
@@ -239,8 +242,8 @@
 
   stats:
     hp: 15750
-    atk: 3183
-    int: 1522
+    atk: 3106
+    int: 1523
     def: 1930
     hit: 1162
     grd: 812
@@ -248,7 +251,8 @@
   talents:
     - name: "Klaus Champion II"
       effects: 
-        - desc: AP Cost -40% 
+        - desc: AP cost -40% 
+          all: false
           meta:
             priority: 4
             buff: AP Cost Reduction
@@ -256,13 +260,14 @@
     - name: "Greater Master of the Training Hall"
       effects: 
         - desc: ATK +30% 
+          all: false
           meta:
             priority: 4
             buff: ATK
             buffValue: 30
     - name: "Revolutionary Spirit"
       effects:
-        - desc: Critical Rate +20%
+        - desc: Critical chance +20%
           meta:
             priority: 4
             buff: Crit Rate
@@ -285,7 +290,7 @@
       picture: Acrobat_Locus
       power: ATK x 710%
       ap: 41
-      maxHits: 4
+      maxHits: 7
     - name: "Fists of Fury"
       picture: Fists_of_Fury
       power: ATK x 780%
@@ -329,6 +334,7 @@
       *Normal > Crescent Locus > Triple Kick > Crescent Locus > Crescent Locus > Crescent Locus > Crescent Locus > Crescent Locus >
       Fists of Fury > Dash after hit 3(General damage & rush gain combo. Requires 1 AP seed)*
 
+
 - name: Anne Patriceani
   cat: jp
   rating: 3
@@ -348,7 +354,7 @@
   talents:
     - name: "Stellar Support"
       effects: 
-        - desc: Critical Rate +30%
+        - desc: Critical chance +30%
           all: true
           meta:
             priority: 1
@@ -356,20 +362,20 @@
             buffValue: 30
     - name: "Grandmother's Teachings II"
       effects: 
-        - desc: No Flinching to Damage < 20% of Max HP
+        - desc: No flinching when taking damage of 20% HP or less
 
   skills:
-    - name: "Triple Kick"
-      picture: Triple_Kick
-      power: ATK x 250%
-      ap: 24
-      maxHits: 2
-      highlight: true
     - name: "Hammer of Might"
       picture: Hammer_of_Might
       power: ATK x 230%
       ap: 24
       maxHits: 1
+    - name: "Triple Kick"
+      picture: Triple_Kick
+      power: ATK x 250%
+      ap: 24
+      maxHits: 3
+      highlight: true
     - name: "Drill Spike"
       picture: Drill_Spike
       power: ATK x 190%
@@ -385,8 +391,9 @@
   rush:
     name: "Blazing Cannon"
     picture: Blazing_Cannon_Anne
+    element: Fire
     effects: 
-      - desc: Critical Rate +60%
+      - desc: Critical chance +60%
         all: true
         duration: 20
         meta:
@@ -395,7 +402,6 @@
           buffValue: 60
     power: ATK x 2500%
     maxHits: 8
-    element: Fire
     
   notes: >
       _WIP._
@@ -406,7 +412,7 @@
       
       **Pros**
       
-      - Gives a strong passive crit rate and an unmatched post rush buff to crit rate.
+      - Gives a strong passive crit buff and an unmatched post rush buff to crit rate.
       
       - 5 star non-ace so costs less to limit break and augment.
       
@@ -421,7 +427,8 @@
       **Rotation**
       
       *Normal > Triple Kick > Drill Spike > Triple Kick > Triple Kick (DPS & Rush gain combo)*
-    
+
+
 - name: Daril Camuze
   cat: jp
   rating: 5
@@ -441,7 +448,7 @@
   talents:
     - name: "Patriotism at Its Finest"
       effects: 
-        - desc: AP Cost -20%
+        - desc: AP cost -20%
           all: true
           meta:
             priority: 1
@@ -449,10 +456,13 @@
             buffValue: 20
     - name: "Finest Instructor of the Blade II"
       effects: 
-        - desc: No Flinching to Damage < 20% of Max HP
+        - desc: No flinching when taking damage of 20% HP or less
     - name: "Camuze Way"
       effects: 
-        - desc: Damage Dealt to Humanoids +60%
+        - desc: Damage dealt to humanoids +60%
+          all: false
+          slayer: Human
+          slayerPct: 60
           meta:
             priority: 4
             buff: Damage To Humans
@@ -466,11 +476,11 @@
       maxHits: 5
     - name: "Shotgun Blast"
       picture: Shotgun_Blast
+      element: Lightning
       power: ATK x 190%
       ap: 20
       maxHits: 4
       highlight: true
-      element: Lightning
     - name: "Side Kick"
       picture: Side_Kick
       power: ATK x 250%
@@ -486,6 +496,7 @@
   rush:
     name: "Ethereal Blast"
     picture: Ethereal_Blast_Daril
+    element: Light
     effects: 
       - desc: AP cost -40%
         duration: 20
@@ -496,7 +507,6 @@
           buffValue: 40
     power: ATK x 2500%
     maxHits: 12
-    element: Light
     
   notes: >
       _WIP._
@@ -507,9 +517,9 @@
       
       **Pros**
       
-      - Powerful AP reduction party wide buff.
+      - Powerful AP reduction party-wide buff.
       
-      - Good damage against Humanoids.
+      - Good damage against humanoids.
       
       - 5 star non-ace so costs less to limit break and augment.
       
@@ -520,12 +530,13 @@
       
       - Doesn't bring any utility beyond his AP reduction.
       
-      - Bad damage against non-humanoids
+      - Bad damage against non-humanoids.
       
       
       **Rotation**
       
       *Normal > Helm Splitter > Shotgun Blast > Helm Splitter > Spam it till out of AP. (General combo.)*
+    
     
 - name: Roddick Farrence
   cat: jp
@@ -539,7 +550,7 @@
   stats:
     hp: 15750
     atk: 3090
-    int: 1537
+    int: 1535
     def: 1983
     hit: 1134
     grd: 812
@@ -547,7 +558,7 @@
   talents:
     - name: "Transcending Space-time II"
       effects: 
-        - desc: Symbol Invoking Time -20%
+        - desc: Symbology cast time -20%
           all: true
           meta:
             priority: 1
@@ -555,7 +566,7 @@
             buffValue: 20
     - name: "Astounding Eldarian Swordplay"
       effects: 
-        - desc: Chance to Cause Stun +40%
+        - desc: Stun chance +40%
           all: true
           meta:
             priority: 1
@@ -575,35 +586,37 @@
       power: ATK x 200%
       ap: 20
       maxHits: 2
+    - name: "Shotgun Blast"
+      picture: Shotgun_Blast
+      element: Lightning
+      power: ATK x 190%
+      ap: 20
+      maxHits: 4  
     - name: "Air Slash"
       picture: Air_Slash_I
       power: ATK x 200%
       ap: 20
       maxHits: 2
-    - name: "Shotgun Blast"
-      picture: Shotgun_Blast
-      power: ATK x 190%
-      ap: 20
-      maxHits: 4
-      element: Lightning
     - name: "Dragon Slash"
       picture: Dragon_Slash
-      power: ATK x 400%
-      ap: 35
-      maxHits: 2
       element: Lightning
+      power: ATK x 400%
+      ap: 32
+      maxHits: 2
 
   rush:
     name: "Omega Thunderclap Blade"
     picture: Omega_Thunderclap_Blade_Ratix
     effects: 
       - desc: AP cost -40%
+        all: false
         duration: 20
         meta:
           priority: 4
           buff: AP Cost Reduction
           buffValue: 40
-      - desc: Damage Taken -20%
+      - desc: Damage taken -20%
+        all: false
         duration: 20
         meta:
           priority: 4
@@ -624,9 +637,9 @@
       
       - Slight invoking time buff.
       
-      - Ridiculous buff to party wide stun rate.
+      - Ridiculous party-wide stun buff.
       
-      - Strong greedy post rush buff.
+      - Strong greedy post-rush buff.
       
       
       **Cons**
@@ -641,7 +654,8 @@
       *Normal > Shotgun Blast > Air Slash > Dragon Slash > Spam it till out of AP. (General combo.)*
       
       *Air Slash > Dragon Slash > Air Slash > Dragon Slash (Ranged combo.)*
-    
+ 
+ 
 - name: Reimi Saionji (Summer)
   cat: jp
   rating: 7
@@ -653,8 +667,8 @@
 
   stats:
     hp: 15645
-    atk: 2718
-    int: 1563
+    atk: 3588
+    int: 2428
     def: 1957
     hit: 1127
     grd: 833
@@ -662,28 +676,28 @@
   talents:
     - name: "Mind's Eye View II"
       effects: 
-        - desc: ATK +40% when not in front of target
+        - desc: ATK +55% when not in front of target
           all: true
           meta:
             priority: 1
             buff: ATK
             buffCondition: Not In Front Of Target
-            buffValue: 40
+            buffValue: 55
     - name: "Lethal Swing"
       effects: 
-        - desc: ATK +25% when in front of target
+        - desc: ATK +45% when in front of target
           all: true
           meta:
             priority: 1
             buff: ATK
             buffCondition: In Front Of Target
-            buffValue: 25
-        - desc: Rush Combo Damage +10%
+            buffValue: 45
+        - desc: Rush combo damage +15%
           all: true
           meta:
             priority: 1
             buff: Rush Damage
-            buffValue: 10
+            buffValue: 15
     - name: "Handmade Dolls II"
       effects: 
         - desc: AP recovery from normal attacks +80%
@@ -696,7 +710,9 @@
           all: Close Range
     - name: "Hit-the-Watermelon"
       effects: 
-        - desc: AP Cost -25% during 3 skill combos or more
+        - desc: Evasion possible during attack even in the air
+          all: false
+        - desc: AP cost -25% when skill chain is 3+
           meta:
             priority: 4
             buff: AP Cost Reduction
@@ -733,14 +749,14 @@
     effects: 
       - desc: Cure status ailments
         all: true
-      - desc: Single Target Damage Dealt +40%
+      - desc: Single target damage dealt +40%
         all: true
         duration: 20
         meta:
           priority: 4
           buff: Single Target Damage
           buffValue: 40
-    power: ATK x 3500%
+    power: ATK x 4000%
     maxHits: 7
     
   notes: >
@@ -752,18 +768,18 @@
       
       **Pros**
       
-      - Decent ATK buffs
+      - Decent ATK buffs.
       
-      - Ap recovery on normals
+      - Ap recovery on normals.
       
-      - Really powerful post rush buff
+      - Really powerful post-rush buff.
       
       
       **Cons**
             
-      - Slow rush gain
+      - Slow rush gain.
       
-      - Awkward attack buff
+      - Awkward attack buff.
       
       
       **Rotation**
@@ -771,7 +787,8 @@
       *Normal > Crescent Mirage > Combo Breaker > Summer Smoothie> Spam it till out of AP. (Damage combo with Combo Breaker.)*
       
       *Normal > Crescent Mirage > Smackdown > Summer Smoothie> Spam it till out of AP. (Damage combo with Smackdown.)*
-    
+
+
 - name: Lenneth
   cat: jp
   rating: 6
@@ -800,15 +817,15 @@
             buffValue: 30
     - name: "The Dusk of Ragnarok"
       effects: 
-        - desc: Rush Combo Damage +20%
+        - desc: Rush combo damage +20%
           all: true
           meta:
             priority: 1
             buff: Rush Damage
             buffValue: 20
-    - name: "Platina's Heart"
+    - name: "Platinum Heart"
       effects: 
-        - desc: +15% chance of adding silence to all attacks
+        - desc: All attacks have +15% chance to silence
           meta:
             priority: 4
             buff: Silence Attack Chance
@@ -841,8 +858,8 @@
     name: "Nibelung Valesti"
     picture: Nibelung_Valesti_Lenneth
     effects: 
-      - desc: DEF -30% (All Enemies)
-        all: enemies
+      - desc: DEF -30%
+        all: Enemies
         duration: 20
         meta:
           priority: 1
@@ -860,20 +877,20 @@
       
       **Pros**
       
-      - Unconditional good ATK buff
+      - Unconditional good ATK buff.
       
-      - Rush combo damage buff
+      - Rush combo damage buff.
       
       - Defence debuff on rush for enemies.
       
       
       **Cons**
             
-      - ATK buff has been exceeded by many attackers making it redundant in a lot of comps
+      - ATK buff has been exceeded by many attackers making it redundant in a lot of comps.
       
-      - Silence has a low chance to apply making it a poor talent that doesn't do much
+      - Silence has a low chance to apply making it a poor talent that doesn't do much.
       
-      - Doesn't do enough other attackers don't already do better
+      - Doesn't do enough that other attackers don't already do better.
       
       
       **Rotation**
@@ -881,10 +898,11 @@
       *Normal > Heaven and Hell > Glowing Pierce > Heaven and Hell> Sky-High Break (Damage rotation)*
       
       *Normal > Sky-High Break > Glowing Pierce > Sky-High Break (Rush gain rotation)*
-    
+
+
 - name: Claude C. Kenny
   cat: jp
-  rating: 8
+  rating: 5
   picture: Claude
   weapon: ohs
   ace: true
@@ -900,7 +918,7 @@
     grd: 826
 
   talents:
-    - name: "Hero's Resolve II"
+    - name: "Hero Lineage"
       effects: 
         - desc: ATK +50%
           all: Attackers
@@ -909,7 +927,7 @@
             buff: ATK
             buffRole: attacker
             buffValue: 50
-    - name: "Learned Finesse II"
+    - name: "Proof of Growth"
       effects: 
         - desc: ATK +50%
           all: Defenders
@@ -918,7 +936,7 @@
             buff: ATK
             buffRole: defender
             buffValue: 50
-    - name: "Greater Hero's Might"
+    - name: "Hero of Light"
       effects: 
         - desc: Damage taken -20%
           all: Healers
@@ -927,7 +945,7 @@
             buff: Damage Taken Reduction
             buffRole: healer
             buffValue: 20
-    - name: "Passed Down Martial Arts"
+    - name: "Martial Arts Inherited From Mother"
       effects: 
         - desc: Normal attack AP recovery +100%
           all: true
@@ -957,15 +975,16 @@
       highlight: true
     - name: "Sword Bomber"
       picture: Sword_Bomber
+      element: Fire
       power: ATK x 550%
       ap: 38
       maxHits: 2
 
   rush:
     name: "Mirror Blade Tempest"
-    picture: Explode_Prince_Claude
+    picture: Mirror_Blade_Tempest_Claude
     effects: 
-      - desc: Damage Dealt +30%
+      - desc: Damage +30%
         all: true
         duration: 30
         meta:
@@ -984,23 +1003,24 @@
       
       **Pros**
       
-      - Powerful ATK buff for attackers and defenders
+      - Powerful ATK buff for attackers and defenders.
       
-      - Damage reduction for healers
+      - Damage reduction for healers.
       
-      - Ap recovery on Normals
+      - Ap recovery on Normals.
       
       
       **Cons**
             
-      - Poor synergy with sharpshooters and invokers
+      - Poor synergy with sharpshooters and invokers.
       
-      - Post rush buff made redundant by commonly seen characters like Maria and 9S
+      - Post rush buff made redundant by commonly seen characters like Maria and 9S.
             
       
       **Rotation**
       
       *Normal > Double Slash > Air Slash > Helm Render (Damage rotation)*
+   
    
 - name: Phia Melle
   cat: jp
@@ -3000,3 +3020,452 @@
       **Rotation**
       
       Normal > Rocket Punch > Hammer Slammer > Jump'n'Thump*3 (Replace Hammer Slammer with Force Field if 104 AP or higher)
+      
+- name: Fidel (Awakened)
+  cat: jp
+  rating: 7
+  picture: Fidel
+  weapon: ohs
+  ace: true
+  limited: false
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 16630
+    atk: 3104
+    int: 1619
+    def: 2265
+    hit: 1177
+    grd: 852
+
+  talents:
+    - name: "Fortitude & Vigor II"
+      effects: 
+        - desc: ATK +50%
+          all: true
+          meta:
+            priority: 2
+            buff: ATK
+            buffValue: 50
+    - name: "Father's Teachings"
+      effects: 
+        - desc: AP cost -20%
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 20
+    - name: "Steadfast Courage"
+      effects:
+        - desc: Enables evasion during air attacks
+    - name: "Heir to the Camuze Style"
+      effects:
+        - desc: Single Target Damage Dealt +10% when skill chain is 3+
+          meta:
+            priority: 3
+            buff: Single Target Damage
+            buffCondition: Skill Chain 3+
+            buffValue: 10
+    - name: "Defender of the Weak"
+      effects:
+        - desc: ATK +25%
+          meta:
+            priority: 4
+            buff: ATK
+            buffValue: 25  
+        - desc: DEF +10%
+          meta:
+            priority: 4
+            buff: DEF
+            buffValue: 10  
+    - name: "Inherited Will"
+      effects:
+        - desc: Nullifies HP Reduction Field
+        
+  skills:
+    - name: "Double Slash"
+      picture: Double_Slash_I
+      power: ATK x 220%
+      ap: 20
+      maxHits: 2
+      highlight: true
+    - name: "Air Slash"
+      picture: Air_Slash_I
+      power: ATK x 220%
+      ap: 20
+      maxHits: 2
+      highlight: true
+    - name: "Cyclone Blade"
+      picture: Cyclone_Blade
+      power: ATK x 340%
+      ap: 29
+      maxHits: 5
+    - name: "Air Raid"
+      picture: Air_Raid
+      power: ATK x 720%
+      ap: 35
+      maxHits: 6
+    - name: "Double Air Slash"
+      picture: Twin_Zapper
+      power: ATK x 300%
+      ap: 20
+      maxHits: 4
+
+  rush:
+    name: "Ethereal Blast"
+    picture: Ethereal_Blast_Fidel
+    effects: 
+      - desc: AP cost -60%
+        duration: 20
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 60
+    power: ATK x 4000%
+    maxHits: 12
+    
+  notes: >
+      _Fidel, the starter character and sometimes face of the app icon. He has the highest unconditional party wide buff in the game 
+      at 50% now due to awakening. His AP reduction talent and really potent AP reduection post rush, lets him really output a lot of 
+      damage by chaining attacks. Due to this, he can spam his improved Air raid (720%!!) for tons of damage and rush gain. He will 
+      be a solid pick even if there are better units out._
+      
+      
+      _Despite awakening increasing his own damage output, it doesn't change his role as being only an ATK buffer. The 50% ATK is nice
+      but with Valentine Rena and buff to 2B, he can be outshined due to those units having better party utility despite said units
+      having conditionals._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Strong ATK based buff for the party.
+      
+      - AP reduction and even more post rush allows skill spamming.
+      
+      - Can be used also be played at range with Air Slash > Empyrean Slash spam
+      
+      - Air Raid has high rush gain. This makes <20 second rushes very possible after an initial rush
+      
+      **Cons**
+      
+      - Doesn't bring any utility beyond his ATK buff.
+      
+      - All his awakening talents only effect himself
+      
+      **Rotation**
+      
+      *Normal > Double Slash / Air Slash > Empyrean Slash > Air Raid > Spam it till out of AP. (General Combo)
+
+
+- name: Caleen Keemosn
+  cat: jp
+  rating: 0
+  picture: Karin
+  weapon: scythe
+  ace: false
+  limited: false
+  star: 5
+
+  stats:
+    hp: 15750
+    atk: 2718
+    int: 1537
+    def: 1943
+    hit: 1134
+    grd: 854
+
+  talents:
+    - name: "Witch of Beasts"
+      effects: 
+        - desc: ATK +40%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 40
+        - desc: ATK +55% when hitcount is at 100
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffCondition: Hit Count > 100
+            buffValue: 55
+        - desc: ATK +60% when hitcount is at 250
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffCondition: Hit Count > 250
+            buffValue: 60
+    - name: "Basshen's Fox"
+      effects: 
+        - desc: AP cost -10% when hitcount is at 100
+          all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Hit Count > 100
+            buffValue: 10
+        - desc: AP cost -20% when hitcount is at 200
+          all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Hit Count > 200
+            buffValue: 20
+        - desc: AP cost -40% when hitcount is at 400
+          all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Hit Count > 400
+            buffValue: 40
+        - desc: Battle skills deal an extral hit worth 5% of damage dealt
+          all: true
+    - name: "Six Tails"
+      effects: 
+        - desc: Enables air dodge
+          all: false
+        - desc: Recover 100% HP upon successful evasion of attacks
+          all: false
+    - name: "Red Summoning Technique"
+      effects: 
+        - desc: ATK, INT, DEF, HIT, GRD +20% when hitcount is 100 or more
+          all: false
+          
+  skills:
+    - name: "Unholy Maelstrom - Kitsune"
+      picture: Unholy_Maelstrom
+      power: ATK x 540%
+      ap: 30
+      maxHits: 3
+    - name: "Purgatory Palm"
+      picture: Purgatory_Palm
+      element: Fire
+      power: ATK x 270%
+      ap: 22
+      maxHits: 5
+    - name: "Wings of Deprivation"
+      picture: Wings_of_Deprivation
+      power: ATK x 310%
+      ap: 27
+      maxHits: 12
+    - name: "Backspin Blade"
+      picture: Backspin_Blade
+      power: ATK x 750%
+      ap: 40
+      maxHits: 6
+
+  rush:
+    name: "Wailing Black Wings"
+    picture: Wailing_Black_Wings_Karin
+    effects:
+      - desc: Critical chance +30%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 30
+      - desc: Critical damage +30%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Crit Damage
+          buffValue: 30
+    power: ATK x 4500%
+    maxHits: 6
+    
+
+- name: Maria Traydor (Cherry Blossom)
+  cat: jp
+  rating: 8
+  picture: Sakura_Maria
+  weapon: dualswords
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 17210
+    atk: 3433
+    int: 1549
+    def: 1811
+    hit: 1148
+    grd: 826
+
+  talents:
+    - name: "Cherry Blossom Riot"
+      effects: 
+        - desc: Nullifies critical damage taken while charge assaulting
+          all: Attackers
+        - desc: ATK damage +40% while charge assaulting
+          all: Attackers
+          meta:
+            priority: 3
+            buff: ATK Damage
+            buffValue: 40
+    - name: "Adaptable"
+      effects: 
+        - desc: ATK +15% when hitcount is at 100 or more
+          all: false
+          meta:
+            priority: 1
+            buff: ATK
+            buffCondition: Hit Count > 100
+            buffValue: 15
+        - desc: ATK +30% when hitcount is at 200 or more
+          all: false
+          meta:
+            priority: 1
+            buff: ATK
+            buffCondition: Hit Count > 200
+            buffValue: 30
+    - name: "Moral Beauty"
+      effects: 
+        - desc: AP cost -40%
+          all: false
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 40
+    - name: "Hunt Leader"
+      effects: 
+        - desc: ATK +20%
+          all: false
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 20
+        - desc: HP +10%
+          all: false
+  
+  skills:
+    - name: "Sinistral Edge (Cherry Blossom)"
+      picture: Sinistral_Edge
+      power: ATK x 190%
+      ap: 14
+      maxHits: 2
+    - name: "Dextral Zapper (Cherry Blossom)"
+      picture: Dextral_Slaughter
+      power: ATK x 460%
+      ap: 31
+      maxHits: 2
+    - name: "Northern Cross (Cherry Blossom)"
+      picture: Northern_Cross
+      element: Ice
+      power: ATK x 440%
+      ap: 30
+      maxHits: 2
+    - name: "Dual Sword Arts"
+      picture: Dualsword_Arts
+      power: ATK x 710%
+      ap: 37
+      maxHits: 6
+      
+  rush:
+    name: "Radiation Device"
+    picture: Radiation_Device_Sakura_Maria
+    effects: 
+      - desc: AP cost -50%
+        all: false
+        duration: 20
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 50
+      - desc: Recover 10% HP every 3 seconds
+        all: false
+        duration: 20
+    power: ATK x 5000%
+    maxHits: 20
+    
+       
+- name: Pericci
+  cat: jp
+  rating: 0
+  picture: Pericci
+  weapon: knuckle
+  ace: true
+  limited: false
+  star: 5
+
+  stats:
+    hp: 15540
+    atk: 2730
+    int: 1549
+    def: 1930
+    hit: 1155
+    grd: 826
+
+  talents:
+    - name: "Cheerful Behaviors"
+      effects: 
+        - desc: ATK +45%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 45
+    - name: "Cat Martial Arts"
+      effects: 
+        - desc: Nullifies critical damage taken when charge assaulting
+          all: true
+    - name: "Ocarina Player"
+      effects: 
+        - desc: AP recovery from normal attacks +100%
+          all: true
+          meta:
+            priority: 1
+            buff: AP Recovery From Normal Attacks
+            buffValue: 100
+        - desc: Movement speed +30%
+          all: true
+    - name: "Lonely Person"
+      effects: 
+        - desc: Evasion AP consumption -50%
+          all: false
+        - desc: Enables air dodge
+          all: false
+        - desc: AP consumption -30% on perfect dodge (10 seconds)
+          all: false
+          
+  skills:
+    - name: "JP Somersault"
+      picture: Sumersault
+      power: ATK x 1020%
+      ap: 29
+      maxHits: 3
+    - name: "Heel Stomp"
+      picture: Axe_Kick
+      power: ATK x 300%
+      ap: 21
+      maxHits: 2
+    - name: "Hammer of Might"
+      picture: Hammer_of_Might
+      power: ATK x 320%
+      ap: 23
+      maxHits: 1
+    - name: "Palm of Destruction"
+      picture: Palm_of_Destruction
+      power: ATK x 270%
+      ap: 20
+      maxHits: 1
+
+  rush:
+    name: "Dream Hammer"
+    picture: Dream_Combo_Pericci
+    effects:
+      - desc: Critical chance +50%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 50
+    power: ATK x 4000%
+    maxHits: 1

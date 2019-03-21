@@ -9,12 +9,12 @@
   star: 5
 
   stats:
-    hp: 13965
-    atk: 1747
-    int: 3368
-    def: 1327
-    hit: 1050
-    grd: 1148
+    hp: 14535
+    atk: 2384
+    int: 4767
+    def: 2150
+    hit: 1100
+    grd: 1198
 
   talents:
     - name: "Seaside Enchantress II"
@@ -27,12 +27,13 @@
         - desc: Recover allies AP when using offensive symbology
     - name: "Making Waves II"
       effects: 
-        - desc: AP cost -40%
+        - desc: AP cost -40% when skill chain is 3 or more
           meta:
             priority: 4
             buff: AP Cost Reduction
+            buffCondition: Skill Chain 3+
             buffValue: 40
-        - desc: INT damage +30% when skill chain 3+
+        - desc: INT damage dealt +40% when skill chain is 3 or more
           meta:
             priority: 4
             buff: INT Damage
@@ -40,30 +41,30 @@
             buffValue: 40
     - name: "Cat Ball and Sandals II"
       effects: 
-        - desc: ATK damage +20%
+        - desc: ATK damage dealt +20%
           all: true
           meta:
             priority: 1
             buff: ATK Damage
             buffValue: 20
-        - desc: INT damage +20%
+        - desc: INT damage dealt +20%
           all: true
           meta:
             priority: 1
             buff: INT Damage
             buffValue: 20
-        - desc: Nullify "movement speed down" effect
+        - desc: Nullify Movement Rate Reduction Field
           all: Self & Close Range
     - name: "Summer Combo"
       effects: 
-        - desc: Reduce symbology cast time by 30%
+        - desc: Symbology casting time -30%
           meta:
             priority: 4
             buff: Cast Time Reduction
             buffValue: 30
-        - desc: AP consumption -10%
+        - desc: AP cost -10%
           meta:
-            priority: 4
+            priority: 1
             buff: AP Cost Reduction
             buffValue: 10
 
@@ -75,12 +76,6 @@
       ap: 35
       notes: Allies recover 8 AP
       maxHits: 4
-    - name: "Faerie Light Wave"
-      picture: Faerie_Light
-      power: INT x 120%
-      ap: 30
-      notes: Party Heal
-      maxHits: 1
     - name: "Lightning Wave"
       picture: Lightning
       element: Lightning
@@ -88,6 +83,12 @@
       ap: 20
       notes: Allies recover 4 AP
       maxHits: 10
+    - name: "Faerie Light Wave"
+      picture: Faerie_Light
+      power: INT x 120%
+      ap: 30
+      notes: Party Heal
+      maxHits: 1
     - name: "Lightning Strike"
       picture: Lightning_Strike
       element: Lightning
@@ -99,9 +100,9 @@
   rush:
     name: "Lightning-Fast Serve"
     picture: Lightning_Fast_Service_Summer_Sophia
-    element: Thunder
+    element: Lightning
     effects: 
-      - desc: +40% INT
+      - desc: INT +40%
         all: true
         duration: 20
         meta:
@@ -111,7 +112,7 @@
       - desc: Recover 50% HP
         all: true
     power: INT x 3000%
-    maxHits: 10
+    maxHits: 4
         
   notes: >
       _For Summer, Sophia decided to try out being a healer, while not actually giving up much in the way of her damage. She has a
@@ -131,7 +132,7 @@
       
       **Pros**
       
-      - Offensive spells restore AP to the party
+      - Offensive spells restore AP to the party.
       
       - Post rush buff that's powerful for self and other INT characters.
       
@@ -158,7 +159,8 @@
       *Normal > Lightning Strike > Faerie Light Wave > Lightning Strike > Spam it till out of AP. (No AP seed.)
       
       *Thunder Flare is a workable replacement for Lightning Wave and helps her rush build, but beware its higher AP cost.
-      
+
+
 - name: Miki Sauvester
   cat: gl
   rating: 3
@@ -171,7 +173,7 @@
     hp: 11235
     atk: 1589
     int: 2594
-    def: 1397
+    def: 1379
     hit: 959
     grd: 1043
 
@@ -185,14 +187,14 @@
             buffValue: 30
     - name: "Glutton II"
       effects: 
-        - desc: Reduce Symbol Invoking Time by 30%
+        - desc: Symbology cast time -30%
           meta:
             priority: 4
             buff: Cast Time Reduction
             buffValue: 30
     - name: "Beginner's Luck"
       effects: 
-        - desc: At 10% HP or higher, has a 80% chance of Surviving a Lethal Attack
+        - desc: 80% chance of surviving a lethal attack at 10% HP or more
 
   skills:
     - name: "Radiant Lancer"
@@ -203,7 +205,7 @@
       maxHits: 8
     - name: "Ex Healing"
       picture: Ex_Healing
-      power: INT x 326%
+      power: INT x 330%
       ap: 50
       notes: Single Target Heal
       maxHits: 1
@@ -223,24 +225,23 @@
   rush:
     name: "Divine Wave"
     picture: Divine_Wave_Miki
-    element: Light
     effects: 
-      - desc: Heals 30% of Max HP every 4 seconds
+      - desc: 30% HP recovery every 4 seconds
         all: true
         duration: 20
     power: INT x 2000%
     maxHits: 4
     
   notes: >
-      _The games starter pick for healers and a pretty terrible healer to boot, is also the worst of your five healing options. But
+      _The game's starter pick for healers and a pretty terrible healer to boot, is also the worst of your five healing options. But
       if you just picked her, don't fret too much! You can re-roll! But in seriousness she is usable if weak. She's a 5 star
       non-ace which is important to keep in mind. She has less stats but is easier to max limit break. One of Miki's biggest
       issues is her lack of party buffs in her talents. In fact she's the only 5 star healer in the game who doesn't provide something
-      to the party. Even the freebie 5 star of Oracle Nel does. Her party wide heal also has a massive AP cost which makes her
+      to the party. Even the freebie 5 star Oracle Nel does. Her party-wide heal also has a massive AP cost which makes her
       awkward to use._
       
       
-      _Miki does have her strong points however. Her post rush buff is a very powerful party wide regen. Her grit talent
+      _Miki does have her strong points, however. Her post rush buff is a very powerful party wide regen. Her grit talent
       to survive lethal damage also makes her quite hard to kill, which is useful in a healer especially for solo content. In summary, 
       Miki is pretty weak, but she has some strong points._
       
@@ -252,9 +253,9 @@
       
       - 5 star non-ace so is cheaper to max limit break and augment
       
-      - Powerful post rush health regen buff for the party.
+      - Powerful post rush health regen buff for the party
       
-      - Grit talent makes her hard to kill. Making her viable for solo content
+      - Grit talent makes her hard to kill, making her viable for solo content
       
       
       **Cons**
@@ -275,7 +276,8 @@
       *Normal > Sunflare > Radiant Lancer > Sunflare (Damage Rotation.)*
             
       *Normal > Faerie Star (Healing)*
-    
+
+
 - name: Millie Chliette
   cat: gl
   rating: 5.5
@@ -286,17 +288,17 @@
   star: 5
 
   stats:
-    hp: 13860
-    atk: 1759
-    int: 2494
-    def: 1353
-    hit: 1057
-    grd: 1134
+    hp: 10296
+    atk: 1307
+    int: 2583
+    def: 1758
+    hit: 785
+    grd: 842
 
   talents:
     - name: "Like Father, Like Daughter"
       effects: 
-        - desc: All Elemental Damage Dealt +30%
+        - desc: All elemental damage dealt +30%
           all: true
           meta:
             priority: 1
@@ -304,32 +306,33 @@
             buffValue: 30
     - name: "Rabbit's Foot"
       effects: 
-        - desc: Damage Taken -30%
+        - desc: Damage taken -30%
+          all: false
           meta:
             priority: 4
             buff: Damage Taken Reduction
             buffValue: 30
     - name: "Fortune of Mana"
       effects: 
-        - desc: AP Cost -20%
+        - desc: AP cost -20%
           meta:
             priority: 4
             buff: AP Cost Reduction
             buffValue: 20
 
   skills:
-    - name: "Crush"
-      picture: Crush
-      element: Earth
-      power: INT x 190%
-      ap: 20
-      maxHits: 2
     - name: "Healing"
       picture: Healing
       power: INT x 170%
       ap: 40
       notes: Single Target Heal
       maxHits: 1
+    - name: "Crush"
+      picture: Crush
+      element: Earth
+      power: INT x 190%
+      ap: 20
+      maxHits: 2
     - name: "Stone Rain"
       picture: Stone_Rain
       element: Earth
@@ -338,7 +341,7 @@
       maxHits: 5
     - name: "Faerie Star"
       picture: Faerie_Star
-      power: INT x 326%
+      power: INT x 330%
       ap: 70
       notes: Party Heal
       maxHits: 1
@@ -348,7 +351,7 @@
     picture: Tractor_Beam_Millie
     element: Earth
     effects: 
-      - desc: Critical Hit Rate +50%
+      - desc: Critical hit chance +50%
         all: true
         duration: 20
         meta:
@@ -364,7 +367,7 @@
       _The games first ace healer, also a rare sighting of an earth caster. Millie a healer with the ability to support dps due to her
       talents and post rush buff. Making her a significant improvement over Miki. However like most of our current healers, her damage
       is still quite low, in fact it's so bad it's best to just focus on using a normal and heal rather than actually casting 
-      any damage spells, plus there are a lot of post rush elemental buffs that will over ride her talent buff in the game now as well.
+      any damage spells, plus there are a lot of post rush elemental buffs that will override her talent buff in the game now as well.
       On top of that even with her AP cost reduction, her heal is still very expensive, but all her other options are bad so your 
       really taking her as a healing buff stick. In summary, Millie is a good buffer, but she is just a healing buffer so she will be
       very boring to play._
@@ -379,7 +382,7 @@
       
       - Post rush buff that boosts critical rate and heals most of the party's HP
       
-      - Talent that helps surviability
+      - Talent that helps survivability
       
       
       **Cons**
@@ -396,7 +399,8 @@
       **Rotation**
       
       *Normal > Faerie Star (Healing & Rush Gain)*
-    
+
+
 - name: Rena Lanford
   cat: gl
   rating: 8
@@ -2127,3 +2131,129 @@
         all: true
     power: INT x 2000%
     maxHits: 13
+
+
+- name: Hana
+  cat: gl
+  rating: 0
+  picture: Hana
+  weapon: staff
+  ace: false
+  limited: false
+  star: 4
+
+  stats:
+    hp: 10185
+    atk: 1444
+    int: 1799
+    def: 1274
+    hit: 861
+    grd: 952
+
+  talents:
+    - name: "Greater Revered Genius"
+      effects: 
+        - desc: ATK damage taken -20%
+          all: true
+          meta:
+            priority: 4
+            buff: ATK Damage Taken Reduction
+            buffValue: 20
+    - name: "A Woman of Culture III"
+      effects: 
+        - desc: Recovers 3% HP every 3 seconds
+          all: false
+
+  skills:
+    - name: "Healing"
+      picture: Healing
+      power: INT x 170%
+      ap: 40
+      maxHits: 1
+    - name: "Tornado"
+      picture: Tornado
+      element: Wind
+      power: INT x 460%
+      ap: 35
+      maxHits: 2
+    - name: "Faerie Light"
+      picture: Faerie_Light
+      power: INT x 250%
+      ap: 60
+      notes: Party Heal
+      maxHits: 1
+    - name: "Blast Hurricane"
+      picture: Blast_Hurricane
+      element: Wind
+      power: INT x 670%
+      ap: 42
+      maxHits: 6
+      
+  rush:
+    name: "Sylvan Waltz"
+    picture: Sylvan_Waltz_Hana
+    element: Wind
+    effects: 
+      - desc: Recovers 100% HP
+        all: true
+    power: INT x 2500%
+    maxHits: 6
+
+
+- name: Raffine
+  cat: gl
+  rating: 0
+  picture: Raffine
+  weapon: staff
+  ace: false
+  limited: false
+  star: 4
+
+  stats:
+    hp: 10080
+    atk: 1432
+    int: 1811
+    def: 1274
+    hit: 875
+    grd: 945
+
+  talents:
+    - name: "Placid Waters"
+      effects: 
+        - desc: Nullifies status ailments (180 seconds)
+          all: false
+
+  skills:
+    - name: "Healing"
+      picture: Healing
+      power: INT x 170%
+      ap: 40
+      maxHits: 1
+    - name: "Explosion"
+      picture: Explosion
+      element: Fire
+      power: INT x 460%
+      ap: 35
+      maxHits: 14
+    - name: "Cure Condition"
+      picture: Cure_Condition
+      power: Cure All Status Ailments
+      ap: 40
+      maxHits: 1
+    - name: "Volcanic Burst"
+      picture: Volcanic_Burst
+      element: Fire
+      power: INT x 670%
+      ap: 42
+      maxHits: 13
+      
+  rush:
+    name: "Trident Strike"
+    picture: Trident_Strike_Raffine
+    element: Lightning
+    effects: 
+      - desc: Nullifies status ailments
+        all: true
+        duration: 20
+    power: INT x 2000%
+    maxHits: 10

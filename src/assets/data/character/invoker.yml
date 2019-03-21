@@ -1041,7 +1041,7 @@
       _As for downsides, well he's Ronyx with less utility, not only is the INT buff nerfed he doesn't provide a -50% cast time 
       reduction post rush. In fact his over all party utility is niche outside of casting comps and MoT His damage will be decent
       but he's still a non=ace so his overall stats are still lacking. In summary Uniform Claude is a more playable Ronyx with less
-      party buffing in exchange for being a bit more fluid and satisfying in play style.
+      party buffing in exchange for being a bit more fluid and satisfying in play style._
       
       
       **TL DR**
@@ -1166,7 +1166,7 @@
     power: INT x 4000%
     maxHits: 8
     
-    notes: >
+  notes: >
       _Mavelle is here and brings a unique playstyle to the table. Unlike other invokers Mavelle is about being a true one skill
       wonder. She sets up her damage by using Aerial Lancer and Hail orb. After this she spends her time using her Arctic Impact and
       waiting for her AP to recharge until the buffs run out and repeat. It's not a play style for everyone but it's certainly not
@@ -1319,7 +1319,7 @@
     power: INT x 4500%
     maxHits: 8
     
-    notes: >
+  notes: >
       _Evelysse shows up in a bridal gown as GL's first limited ace invoker. She actually hits exceptionally hard especially due to
       her 4.5k rush mult and her high multiplier on her main damage dealing attack. Post rush she gets even more powerful with her
       Int damage buff and the AP cost reduction allowed her to sling out her hard hitting spell even more. However Eve has her fair
@@ -1968,3 +1968,157 @@
           buffValue: 50
     power: INT x 2500%
     maxHits: 3
+
+
+- name: Welch Vineyard
+  cat: gl
+  rating: 0
+  picture: Welch
+  weapon: staff
+  ace: false
+  limited: false
+  star: 4
+
+  stats:
+    hp: 10185
+    atk: 1274
+    int: 2403
+    def: 1090
+    hit: 875
+    grd: 686
+
+  talents:
+    - name: "Creative Genius III"
+      effects: 
+        - desc: INT +30%
+          all: true
+          meta:
+            priority: 4
+            buff: INT
+            buffValue: 30
+    - name: "Luck Favors the Brave II"
+      effects: 
+        - desc: Symbology cast time -20%
+          all: false
+          meta:
+            priority: 1
+            buff: Cast Time Reduction
+            buffValue: 20
+
+  skills:
+    - name: "Aurora Rings"
+      picture: Aurora_Rings
+      element: Light
+      power: INT x 460%
+      ap: 35
+      maxHits: 5
+    - name: "Stone Rain"
+      picture: Stone_Rain
+      element: Earth
+      power: INT x 460%
+      ap: 35
+      maxHits: 5
+    - name: "Sunflare"
+      picture: Sunflare
+      element: Light
+      power: INT x 570%
+      ap: 42
+      maxHits: 6
+    - name: "Terra Hammer"
+      picture: Terra_Hammer
+      element: Earth
+      power: INT x 670%
+      ap: 42
+      maxHits: 6
+
+  rush:
+    name: "Twinkly Shine"
+    picture: Revised_Sunflare_Robust_Heinrich
+    element: Light
+    effects: 
+      - desc: Damage dealt +50%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Damage
+          buffValue: 50
+    power: INT x 2500%
+    maxHits: 20
+
+
+- name: Eleyna Farrence
+  cat: gl
+  rating: 0
+  picture: Eleyna
+  weapon: staff
+  ace: false
+  limited: false
+  star: 4
+
+  stats:
+    hp: 9975
+    atk: 1286
+    int: 2403
+    def: 1103
+    hit: 882
+    grd: 686
+
+  talents:
+    - name: "Divine Revelation III"
+      effects: 
+        - desc: INT damage taken -30%
+          all: true
+          meta:
+            priority: 4
+            buff: INT Damage Taken Reduction
+            buffValue: 30
+    - name: "A Saint's Legacy"
+      effects: 
+        - desc: Stun chance +15%
+          all: false
+          meta:
+            priority: 1
+            buff: Stun Rate
+            buffValue: 15
+
+  skills:
+    - name: "Wind Blade"
+      picture: Wind_Blade
+      element: Wind
+      power: INT x 190%
+      ap: 20
+      maxHits: 2
+    - name: "Ice Needles"
+      picture: Ice_Needles
+      element: Ice
+      power: INT x 250%
+      ap: 24
+      maxHits: 9
+    - name: "Tornado"
+      picture: Tornado
+      element: Wind
+      power: INT x 460%
+      ap: 35
+      maxHits: 2
+    - name: "Arctic Impact"
+      picture: Arctic_Impact
+      element: Ice
+      power: INT x 670%
+      ap: 42
+      maxHits: 3
+
+  rush:
+    name: "Frore Blossom"
+    picture: Frore_Blossom_Eleyna
+    element: Ice
+    effects: 
+      - desc: DEF -40%
+        duration: 20
+        all: Enemies
+        meta:
+          priority: 1
+          buff: Enemy DEF Reduction
+          buffValue: 40
+    power: INT x 3000%
+    maxHits: 12

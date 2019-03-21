@@ -25,12 +25,12 @@
             priority: 1
             buff: HP
             buffValue: 20
-        - desc: Will not flinch to damage under 20% max HP
+        - desc: Will not flinch to damage of 20% max HP or less
           all: true
     - name: "Dark Impulse"
       effects: 
-        - desc: AP 100% Recovery when Just Timing evasion
-        - desc: Recover 10 AP to all allies when Just Timing evasion
+        - desc: Recovers 100% HP on perfect dodge
+        - desc: Recover 10 AP for all allies on perfect dodge
     - name: "Blade of Inorganic"
       effects: 
         - desc: Single target damage +20%
@@ -60,53 +60,44 @@
             buffValue: 20
 
   skills:
-    - name: "YoHRa Arms: Eleven"
+    - name: "YoRHa Arms: Eleven"
       picture: YoHRa_Arms_Eleven
       power: ATK x 600%
       ap: 27
       maxHits: 5
-    - name: "YoHRa Arms: Twelve"
+    - name: "YoRHa Arms: Twelve"
       picture: YoHRa_Arms_Twelve
       power: ATK x 1240%
       ap: 52
       maxHits: 4
-    - name: "YoHRa Pod: One"
+    - name: "YoRHa Pod: One"
       picture: YoHRa_Pod_One
       power: ATK x 180%
       ap: 13
       maxHits: 1
-    - name: "YoHRa Pod: Two"
+    - name: "YoRHa Pod: Two"
       picture: YoHRa_Pod_Two
       power: ATK x 380%
       ap: 20
       maxHits: 1
       
   rush:
-    name: "YoHRa Arms: One Hundred"
+    name: "YoRHa Arms: One Hundred"
     picture: YoHRa_Arms_One_Hundred_A2
     effects: 
-      - desc: Single Target Damage +50%
+      - desc: Single target damage +50%
         duration: 20
         meta:
           priority: 4
           buff: Single Target Damage
           buffValue: 50
-      - desc: Recover 15% of max HP every 3 seconds
+      - desc: Recover 15% HP every 3 seconds
         duration: 20
     power: ATK x 4500%
     maxHits: 25
     
   notes: >
-      _A2 arrives exceptionally early for GL along with the other Nier characters. This also makes her the first Greatsword character
-      for GL. A2 is an offensive tank, she hits very hard and even her talents are more damage focused. Like any defender she brings
-      anti-flinch to the party, as well as a HP buff for the party. Her rush hits extremely hard, helps her deal even more damage and
-      gives her health regen giving her sustain. This means that she is a favourite for going auto on content._
-      
-      
-      _On top of all of this 
-      perfect dodging restores AP to herself and the party. She also has the ability to either use a long or short ranged combo 
-      depending on what you want to set. It's very hard to really think of any weaknesses she has and it will be a while before we get
-      a defender that truly surpasses her. If you had to try and find one, it's that HP related talents aren't the most consistent._
+      _WIP_
       
       
       **TL DR**
@@ -114,18 +105,18 @@
       
       **Pros**
       
-      - Perfect dodging restores AP to the party
+      - Perfect dodging restores AP to the party.
       
       - Strong buffs for both offense and defence.
       
-      - High personal damage output, especially post rush.
+      - High personal damage output, especially post-rush.
       
-      - Post rush regen gives sustain.
+      - Post-rush regen gives sustain.
       
       
       **Cons**
       
-      - HP based talents aren't consistent without setting up a proper composition
+      - HP based talents aren't consistent without setting up a proper composition.
       
       
       **Rotation**
@@ -137,3 +128,522 @@
       *Normal > Pod 1 > Pod 2 > CA Sword 12 (Ranged set combo)*
       
       *Pod 2 > Pod 1 > Pod 2 > CA Sword 12 (Ranged set combo from range)*
+
+
+- name: Dias (Awakened)
+  cat: jp
+  rating: 9
+  picture: Dias
+  weapon: bns
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 22155
+    atk: 3230
+    int: 1509
+    def: 2867
+    hit: 812
+    grd: 1036
+
+  talents:
+    - name: "Expel's Swordsmaster II"
+      effects: 
+        - desc: DEF +25%
+          all: true
+          meta:
+            priority: 1
+            buff: DEF
+            buffValue: 25
+        - desc: ATK damage taken -25%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK Damage Taken Reduction
+            buffValue: 25
+    - name: "Ruthless Swordsmanship II"
+      effects: 
+        - desc: ATK +50%
+          meta:
+            priority: 4
+            buff: ATK
+            buffValue: 50
+        - desc: DEF +20%
+          meta:
+            priority: 4
+            buff: DEF
+            buffValue: 20
+    - name: "Vow to Cecille II"
+      effects: 
+        - desc: Will not flinch to damage under 30% max HP
+          all: Close Range
+    - name: "Equal Footing"
+      effects: 
+        - desc: Damage +40%
+          all: Attacker
+          meta:
+            priority: 1
+            buff: Damage
+            buffRole: attacker
+            buffValue: 40
+        - desc: Damage +40%
+          all: Defender
+          meta:
+            priority: 1
+            buff: Damage
+            buffRole: defender
+            buffValue: 40
+    - name: "The Fight For Supreme Power"
+      effects: 
+        - desc: Taunt+3
+    - name: "A Mercenary's Strength"
+      effects: 
+        - desc: Restore 5% HP every 1 second during CA standby.
+
+  skills:
+    - name: "Annihilating Air Slash"
+      picture: Air_Slash_II
+      power: ATK x 220%
+      ap: 20
+      maxHits: 5
+      highlight: true
+    - name: "Double Slash"
+      picture: Double_Slash_II
+      power: ATK x 220%
+      ap: 20
+      maxHits: 2
+      highlight: true
+    - name: "Diabolic Edge"
+      picture: Diabolic_Whirl
+      power: ATK x 370%
+      ap: 29
+      maxHits: 2
+    - name: "Dragon Roar"
+      picture: Dragon_Roar
+      power: ATK x 340%
+      ap: 29
+      maxHits: 2
+      element: Dark
+      highlight: true
+    - name: "Double Slash of Fury"
+      picture: Unbridled_Double_Slash
+      power: ATK x 440%
+      ap: 30
+      maxHits: 4
+      
+  rush:
+    name: "Illusion"
+    picture: Deadly_Illusion_Dias
+    effects: 
+      - desc: AP cost -50%
+        duration: 20
+        meta:
+          priority: 4
+          buff: AP Cost Reduction
+          buffValue: 50
+    power: ATK x 4000%
+    maxHits: 10
+    
+  notes: >
+      _Dias was the first defender ace we had and is rewarded by being the first defender to be awakened. Rather then try and give
+      him a more all round kit like other top defenders, Dias doubles down on his composition oriented talents, in some cases
+      he literally doubles them. First off we'll go over his kit. His moves are fine, a little dated but the buffs to them help
+      increase damage output, on top of that he now has a big +50% self boost to his ATK. He has also gotten better at giving party
+      bulk with his DEF buff now at 25% for the party and reducing ATK damage by 25% only 5% less then the best ATK damage reduction
+      going._
+      
+      _His composition focused talents want him accompanied by only attackers and defenders, which sounds like Claude may be a good
+      pick to go alongside him. No only does he provide a large 30% anti-flinch buff, he essentially replaces the sharpshooters by
+      giving a 40% damage buff, matching that of base Maria._
+      
+      _His additional talents are underwhelming, taunt +3 should help him hold aggro and his other talent helps him regenerate health
+      by holding CA. Not actively using it. Just standing there with it charging. Doing nothing. It's quite bad, but the improvements
+      he gets are the real powerhouses here._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Solid ranged attacks
+      
+      - Strong party wide defensive buff.
+      
+      - Very good in a comp with just Attackers and defenders.
+      
+      
+      **Cons**
+      
+      - Some of his buffs are redundant for ranged characters.
+      
+      - Still the greatest pusher of all time.
+      
+      - Skill selection is a little lacklustre.
+      
+      
+      **Rotation**
+      
+      *Normal > Annihiliating Air Slash > Double Slash > Annihiliating Air Slash > spam this until no AP - (Damage rotation)*
+      
+      *Annihiliating Air Slash > Dragon Roar > Annihiliating Air Slash > Dragon Roar > spam this until no AP - (Range rotation)*
+
+- name: Edge Maverick (Awakened)
+  cat: jp
+  rating: 5
+  picture: Edge
+  weapon: ohs
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 20370
+    atk: 2508
+    int: 1537
+    def: 2560
+    hit: 812
+    grd: 1036
+
+  talents:
+    - name: "Longing for the Stars III"
+      effects: 
+        - desc: ATK +25%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 25
+    - name: "A Pioneer's Spirit"
+      effects: 
+        - desc: Single Target Damage +15%
+          all: true
+          meta:
+            priority: 1
+            buff: Single Target Damage
+            buffValue: 15
+    - name: "Youthful Spunk III"
+      effects: 
+        - desc: HP +50%
+          all: true
+          meta:
+            priority: 1
+            buff: HP
+            buffValue: 50
+    - name: "A Friend's Promise"
+      effects: 
+        - desc: No flinching when taking damage of 25% HP or less
+          all: true
+    - name: "Avoid Invulnerable"
+      effects: 
+        - desc: charge assault in the air during the “Fortitude of Righteousness” attack Invalidate the critical occurrence effect of charge assault
+          all: true
+    - name: "The right hand of good luck"
+      effects: 
+        - desc: 3 Consecutive AP consumption 20% + Critical incidence rate + 30%
+          all: true
+
+  skills:
+    - name: "Smack Down"
+      picture: Double_Slash_I
+      power: ATK x 200%
+      ap: 17
+      maxHits: 5
+      highlight: true
+    - name: "Aura Spark"
+      picture: Air_Slash_I
+      power: ATK x 180%
+      ap: 14
+      maxHits: 1
+      highlight: true
+    - name: "Cyclone Blade"
+      picture: Cyclone_Blade
+      power: ATK x 340%
+      ap: 29
+      maxHits: 5
+    - name: "Raging Strike"
+      picture: Raging_Strike
+      power: ATK x 800%
+      ap: 40
+      maxHits: 1
+      highlight: true
+    - name: "Twin Zapper"
+      picture: Twin_Zapper
+      power: ATK x 300%
+      ap: 20
+      maxHits: 4
+      highlight: true
+      
+  rush:
+    name: "Mystic Cross Nova"
+    picture: Mystic_Cross_Nova_Edge
+    effects: 
+      - desc: Elemental Damage +50%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Elemental Damage
+          buffValue: 50
+    power: ATK x 4000%
+    maxHits: 12
+    
+  notes: >
+      _Has a wide spread of varied buffs, in addition to boasting the largest HP buff available.  Since he carries an array of watered-down buffs
+      though, you'll never run into a situation where he contributes optimally.  While his awakening increased his damage output and gave him
+      some nice QoL perks, it didn't do much to improve him overall._      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Good variety of buffs
+      
+      - Incredible HP buff
+      
+      
+      **Cons**
+      
+      - Lacks personal healing
+      
+      - Many of his buffs are easily outclassed
+      
+      - Lacks a range combo
+      
+      
+      **Rotation**
+      
+      *Normal>Aura Spark>Twin Zapper>Raging Strike x2*
+      *Normal>Raging>Aura Spark>Raging - Unawakened*
+    
+- name: Victor Oakville (Awakened)
+  cat: jp
+  rating: 4
+  picture: Victor
+  weapon: bns
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 18795
+    atk: 2074
+    int: 1365
+    def: 2336
+    hit: 738
+    grd: 952
+
+  talents:
+    - name: "The King's Chosen Glory"
+      effects: 
+        - desc: DEF +70%
+          all: true
+          meta:
+            priority: 1
+            buff: DEF
+            buffValue: 70
+        - desc: Damage dealt +20%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 20
+    - name: "What Friends Are For IV"
+      effects: 
+        - desc: No flinching when taking damage of 30% HP or less
+          all: true
+    - name: "Indomitable Spirit"
+      effects: 
+        - desc: 80% chance to survive a lethal attack at 10% HP or more (All)
+    - name: "The Prestige of the Swordsman's Role"
+      effects: 
+        - desc: Charge A Salto Invalidate the Critical Outbreak Effect (Overall) & Inflict Freeze Outbreak Ineffective Freeze (self)
+    - name: "Convious Vow"
+      effects: 
+        - desc: Damage to Normal Attack The effect of becoming easy to be targeted from the enemy who gives the 15% absorption effect + 3
+    - name: "Cut off and complete"
+      effects: 
+        - desc: ATK +20%, DEF +10%, GRD +15%, HP +10%
+
+  skills:
+    - name: "Mirror Blade"
+      picture: Mirror_Blade_II
+      power: ATK x 1220%
+      ap: 38
+      maxHits: 5
+    - name: "Vampiric Flash"
+      picture: Vampiric_Flash
+      power: ATK x 440%
+      ap: 32
+      maxHits: 6
+    - name: "Bloodstorm Revolution"
+      picture: Bloodstorm_Revolution
+      power: ATK x 1100%
+      ap: 38
+      maxHits: 10
+      highlight: true
+    - name: "Dragon Roar"
+      picture: Dragon_Roar
+      element: Dark
+      power: ATK x 370%
+      ap: 29
+      maxHits: 2
+      highlight: true
+    - name: "Double Slash II"
+      picture: Double_Slash_II
+      power: ATK x 220%
+      ap: 20
+      maxHits: 2
+      highlight: true
+      
+  rush:
+    name: "Diabolic Edge"
+    picture: Diabolic_Edge_Victor
+    effects: 
+      - desc: Damage taken -50%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Damage Taken Reduction
+          buffValue: 50
+    power: ATK x 4000%
+    maxHits: 15
+    
+  notes: >
+      _Exists almost entirely for his rush buff, which halves damage taken and stacks additively with -ATK/INT Damage Taken, reducing most
+      incoming attacks to trivial amounts.  Awakening also provides him with party Guts when he has aggro as a nice safety net.  Offensively he's
+      weaker than a number of healers, both on a personal level and for what he enables for the party; fast runs with him usually hinge on tanking
+      hits for faster rush gain.  Note that while his DEF+70% looks huge, his crit immunity doesn't extend to the rest of the party and crits ignore
+      DEF entirely._
+
+      _Awk4 covers all party talents aside from DEF+70%.  Awk6 adds drain on normals, aggro+3, and stronger Bloodstorm without spending a 
+      single gamma._
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - 5 star non-ace so cheaper to augment and limit break
+      
+      - Great defensive buffs
+      
+      - Hard to kill
+      
+      - Good rush gain
+      
+      
+      **Cons**
+      
+      - 5 star non-ace so has less stats
+      
+      - Bloodstorm Revolution likes to send enemies skyward
+      
+      - No damage based buffs
+      
+      
+      **Rotation**
+      
+      *Normal>Bloodstorm>Double Slash>Bloodstorm*
+      
+      *Normal>Dragon>Bloodstorm>Dragon - Large enemies
+
+      *Spam Bloodstorm if either unawakened or trying to fill rush*
+
+
+- name: Fayt Leingod (Groom)
+  cat: jp
+  rating: 9
+  picture: Groom_Fayt
+  weapon: ohs
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 20370
+    atk: 2884
+    int: 1549
+    def: 3168
+    hit: 826
+    grd: 1029
+
+  talents:
+    - name: "Prince Charming on White Horse"
+      effects: 
+        - desc: Imbues attacks with Lightning and Light
+          all: false
+    - name: "Refreshing Smile"
+      effects: 
+        - desc: All elemental damage +20%
+          all: true
+          meta:
+            priority: 1
+            buff: Elemental Damage
+            buffValue: 20
+        - desc: All elemental damage +30% when hitcount is at 100
+          all: true
+          meta:
+            priority: 1
+            buff: Elemental Damage
+            buffCondition: Hit Count > 100
+            buffValue: 30
+        - desc: All elemental damage +40% when hitcount is at 150
+          all: true
+          meta:
+            priority: 1
+            buff: Elemental Damage
+            buffCondition: Hit Count > 150
+            buffValue: 40
+    - name: "Bright Flower Noble"
+      effects: 
+        - desc: HP +40%
+          all: true
+        - desc: No flinching to damage under 20% of max HP
+          all: true
+
+  skills:
+    - name: "Shotgun Volt"
+      picture: Shotgun_Blast
+      element: Lightning
+      power: ATK x 190%
+      ap: 20
+      maxHits: 4
+    - name: "Crescent Mirage"
+      picture: Crescent_Mirage
+      power: ATK x 200%
+      ap: 20
+      maxHits: 4
+    - name: "Twin Zapper"
+      picture: Twin_Zapper
+      power: ATK x 300%
+      ap: 20
+      maxHits: 4
+    - name: "Blade Reactor"
+      picture: Blade_Reactor
+      power: ATK x 780%
+      ap: 29
+      maxHits: 3
+      
+  rush:
+    name: "Divine Strike"
+    picture: Divine_Strike_Groom_Fayt
+    effects: 
+      - desc: AP cost -60%
+        all: false
+        duration: 20
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 60
+      - desc: Damage taken -30%
+        all: true
+        duration: 20
+        meta:
+          priority: 4
+          buff: Damage Taken Reduction
+          buffValue: 30
+    power: ATK x 4000%
+    maxHits: 5
