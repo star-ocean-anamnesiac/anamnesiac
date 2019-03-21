@@ -650,7 +650,6 @@
       power: ATK x 340%
       ap: 29
       maxHits: 2
-      element: Dark
       highlight: true
     - name: "Diabolic Edge"
       picture: Diabolic_Whirl
