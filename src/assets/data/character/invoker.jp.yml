@@ -1622,13 +1622,13 @@
           meta:
             priority: 1
             buff: INT
-            buffValue: 30%
+            buffValue: 30
         - desc: Critical chance +30% after using Mystic Cross (10 seconds)
           all: false
           meta:
             priority: 1
             buff: Crit Rate
-            buffValue: 30%
+            buffValue: 30
     - name: "Cruel Egoist"
       effects: 
         - desc: AP cost -40% when skill chain is 3+
