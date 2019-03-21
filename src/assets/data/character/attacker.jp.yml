@@ -18,6 +18,7 @@
 
   talents:
     - name: "Quiet Determination"
+      shortEffects: ATK +40%, and ATK +65% at 100% HP
       effects: 
         - desc: ATK +40%
           all: true
@@ -25,7 +26,7 @@
             priority: 1
             buff: ATK
             buffValue: 40
-        - desc: ATK +65% when HP is 100% 
+        - desc: ATK +65% at 100% HP
           all: true
           meta:
             priority: 3
@@ -3179,6 +3180,7 @@
 
   talents:
     - name: "Witch of Beasts"
+      shortEffects: ATK +40%, and ATK +55%/60% when hitcount > 100/250
       effects: 
         - desc: ATK +40%
           all: true
@@ -3201,6 +3203,7 @@
             buffCondition: Hit Count > 250
             buffValue: 60
     - name: "Basshen's Fox"
+      shortEffects: AP cost -10%/20%/40% when hitcount > 100/200/400
       effects: 
         - desc: AP cost -10% when hitcount is at 100
           all: true
@@ -3232,8 +3235,32 @@
         - desc: Recover 100% HP upon successful evasion of attacks
           all: false
     - name: "Red Summoning Technique"
-      effects: 
-        - desc: ATK, INT, DEF, HIT, GRD +20% when hitcount is 100 or more
+      shortEffects: ATK, INT, DEF, HIT, GRD +20% when hitcount is 100 or more
+      effects:
+        - desc: ATK +20 when hitcount is 100 or more
+          all: false
+          meta:
+            priority: 3
+            buff: ATK
+            buffCondition: Hit Count > 100
+            buffValue: 20
+        - desc: INT +20 when hitcount is 100 or more
+          all: false
+          meta:
+            priority: 3
+            buff: INT
+            buffCondition: Hit Count > 100
+            buffValue: 20
+        - desc: DEF +20 when hitcount is 100 or more
+          all: false
+          meta:
+            priority: 3
+            buff: DEF
+            buffCondition: Hit Count > 100
+            buffValue: 20
+        - desc: HIT +20 when hitcount is 100 or more
+          all: false
+        - desc: GRD +20 when hitcount is 100 or more
           all: false
           
   skills:
@@ -3310,6 +3337,7 @@
             buff: ATK Damage
             buffValue: 40
     - name: "Adaptable"
+      shortEffects: ATK +15%/30% when hitcount > 100/200
       effects: 
         - desc: ATK +15% when hitcount is at 100 or more
           all: false
