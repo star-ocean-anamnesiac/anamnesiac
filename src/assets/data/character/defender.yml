@@ -427,12 +427,12 @@
   star: 5
 
   stats:
-    hp: 21945
-    atk: 2258
-    int: 1563
-    def: 2324
-    hit: 826
-    grd: 1050
+    hp: 23998
+    atk: 3168
+    int: 2439
+    def: 3162
+    hit: 866
+    grd: 1100
 
   talents:
     - name: "Big Break II"
@@ -443,45 +443,56 @@
             priority: 4
             buff: HP
             buffValue: 20
-        - desc: Will not flinch to damage under 20% max HP
+        - desc: No flinching when taking damage of 20% HP or less
           all: true
     - name: "Aromatic Sunscreen II"
       effects: 
         - desc: INT damage taken -20%
           all: true
+          meta:
+            priority: 1
+            buff: INT Damage Taken Reduction
+            buffValue: 20    
     - name: "Great Charisma"
       effects: 
-        - desc: ATK +60% when under aggro
+        - desc: Rush Gauge limit -30%
+          all: false 
+        - desc: ATK +60% when targeted by enemy
+          all: false
           meta:
             priority: 3
             buff: ATK
             buffValue: 60
             buffCondition: When holding aggro
-        - desc: AP cost -20% when under aggro
+        - desc: AP cost -20% when targeted by enemy
           meta:
             priority: 3
             buff: AP Cost Reduction
             buffValue: 20
-            buufCondition: When holding aggro
-        - desc: Rush gauge quota -30%
+            buffCondition: When holding aggro
     - name: "Beach Skirt Wrap"
       effects:
-        - desc: Single target damage +30% when not under aggro
+        - desc: Single target damage +30% when not targeted by enemy
           all: true
           meta:
             priority: 3
             buff: Single Target Damage
             buffValue: 30
             buffCondition: Not holding aggro
-        - desc: Ease of stun +15% when not under aggro
+        - desc: Stun chance +15% when not targeted by enemy
           all: true
+          meta:
+            priority: 1
+            buff: Stun Rate
+            buffValue: 15
+            buffCondition: Not holding aggro          
 
   skills:
     - name: "Air Slash"
       picture: Air_Slash_II
       power: ATK x 200%
       ap: 20
-      maxHits: 2
+      maxHits: 1
     - name: "Aura Wall"
       picture: Aura_Wall
       power: ATK x 200%
@@ -495,27 +506,27 @@
       maxHits: 10
     - name: "Thunderfire Slash"
       picture: Thunderfire_Slash
-      power: ATK x 340%
-      ap: 29
-      maxHits: 2
-      element: Dark
+      element: Lightning
+      power: ATK x 430%
+      ap: 32
+      maxHits: 1
       highlight: true
       
   rush:
-    name: "Lightning Speed Sword Draw Attack"
+    name: "Flashbolt"
     picture: Flashbolt_Summer_Myuria
     element: Lightning
     effects: 
       - desc: AP cost -40%
         duration: 20
-        all: true
+        all: false
         meta:
           priority: 1
           buff: AP Cost Reduction
           buffValue: 40
-      - desc: Recover 15% max HP every 3 seconds
+      - desc: Recover 15% HP every 3 seconds
         duration: 20
-        all: true
+        all: false
     power: ATK x 4500%
     maxHits: 6
     
@@ -539,12 +550,12 @@
       
       - Buffs herself and her party as long as she holds aggro
       
-      - INT damage reduction unique to her among defenders.
+      - INT damage reduction unique to her among defenders
       
       
       **Cons**
       
-      - Aura wall is good for hit count, but bad for damage.
+      - Aura wall is good for hit count, but bad for damage
       
       
       **Rotation**
@@ -552,7 +563,8 @@
       *Normal > Aura Wall > Air Slash > Thunderfire Slash > spam this until no AP - (need 4-5 AP seeds damage rotation)*
       
       *Normal > Air Slash > Thunderfire Slash > Air Slash > Thunderfire Slash > spam this until no AP (Range rotation)*
-    
+
+
 - name: Dias Flac
   cat: gl
   rating: 6
@@ -564,7 +576,7 @@
   stats:
     hp: 22155
     atk: 2799
-    int: 1509
+    int: 1510
     def: 2867
     hit: 812
     grd: 1036
@@ -587,29 +599,31 @@
     - name: "Aloof Swordsmanship"
       effects: 
         - desc: ATK +30%
+          all: false
           meta:
             priority: 4
             buff: ATK
             buffValue: 30
         - desc: DEF +20%
+          all: false
           meta:
             priority: 4
             buff: DEF
             buffValue: 20
     - name: "Oath to Cecille"
       effects: 
-        - desc: Will not flinch to damage under 25% max HP
+        - desc: No flinching when taking damage of 25% HP or less
           all: Close Range
     - name: "Encountered a Worthy Rival"
       effects: 
-        - desc: Damage +20%
+        - desc: Damage dealt +20%
           all: Attacker
           meta:
             priority: 1
             buff: Damage
             buffRole: attacker
             buffValue: 20
-        - desc: Damage +20%
+        - desc: Damage dealt +20%
           all: Defender
           meta:
             priority: 1
@@ -630,18 +644,18 @@
       ap: 20
       maxHits: 2
       highlight: true
+    - name: "Dragon Roar"
+      picture: Dragon_Roar
+      element: Dark
+      power: ATK x 340%
+      ap: 29
+      maxHits: 2
+      highlight: true
     - name: "Diabolic Edge"
       picture: Diabolic_Whirl
       power: ATK x 340%
       ap: 29
-      maxHits: 2
-    - name: "Dragon Roar"
-      picture: Dragon_Roar
-      power: ATK x 340%
-      ap: 29
-      maxHits: 2
-      element: Dark
-      highlight: true
+      maxHits: 5
       
   rush:
     name: "Deadly Illusion"
@@ -676,12 +690,12 @@
       
       - Solid ranged attacks
       
-      - Strong party wide defensive buff.
+      - Strong party-wide defensive buff
       
       
       **Cons**
       
-      - Most of his buffs are redundant for ranged characters.
+      - Most of his buffs are redundant for ranged characters
       
       - Has attacks which send enemies airborne during Elemental Burst
       
@@ -691,6 +705,7 @@
       *Normal > Annihiliating Air Slash > Double Slash > Annihiliating Air Slash > spam this until no AP - (Damage rotation)*
       
       *Annihiliating Air Slash > Dragon Roar > spam this until no AP (Range rotation)*
+
 
 - name: Evelysse (Winter)
   cat: gl
