@@ -902,7 +902,7 @@
 
 - name: Claude C. Kenny
   cat: jp
-  rating: 8
+  rating: 5
   picture: Claude
   weapon: ohs
   ace: true
@@ -918,7 +918,7 @@
     grd: 826
 
   talents:
-    - name: "Hero's Resolve II"
+    - name: "Hero Lineage"
       effects: 
         - desc: ATK +50%
           all: Attackers
@@ -927,7 +927,7 @@
             buff: ATK
             buffRole: attacker
             buffValue: 50
-    - name: "Learned Finesse II"
+    - name: "Proof of Growth"
       effects: 
         - desc: ATK +50%
           all: Defenders
@@ -936,7 +936,7 @@
             buff: ATK
             buffRole: defender
             buffValue: 50
-    - name: "Greater Hero's Might"
+    - name: "Hero of Light"
       effects: 
         - desc: Damage taken -20%
           all: Healers
@@ -945,7 +945,7 @@
             buff: Damage Taken Reduction
             buffRole: healer
             buffValue: 20
-    - name: "Passed Down Martial Arts"
+    - name: "Martial Arts Inherited From Mother"
       effects: 
         - desc: Normal attack AP recovery +100%
           all: true
@@ -975,15 +975,16 @@
       highlight: true
     - name: "Sword Bomber"
       picture: Sword_Bomber
+      element: Fire
       power: ATK x 550%
       ap: 38
       maxHits: 2
 
   rush:
     name: "Mirror Blade Tempest"
-    picture: Explode_Prince_Claude
+    picture: Mirror_Blade_Tempest_Claude
     effects: 
-      - desc: Damage Dealt +30%
+      - desc: Damage +30%
         all: true
         duration: 30
         meta:
@@ -1002,23 +1003,24 @@
       
       **Pros**
       
-      - Powerful ATK buff for attackers and defenders
+      - Powerful ATK buff for attackers and defenders.
       
-      - Damage reduction for healers
+      - Damage reduction for healers.
       
-      - Ap recovery on Normals
+      - Ap recovery on Normals.
       
       
       **Cons**
             
-      - Poor synergy with sharpshooters and invokers
+      - Poor synergy with sharpshooters and invokers.
       
-      - Post rush buff made redundant by commonly seen characters like Maria and 9S
+      - Post rush buff made redundant by commonly seen characters like Maria and 9S.
             
       
       **Rotation**
       
       *Normal > Double Slash > Air Slash > Helm Render (Damage rotation)*
+   
    
 - name: Phia Melle
   cat: jp
@@ -3278,3 +3280,192 @@
     power: ATK x 4500%
     maxHits: 6
     
+
+- name: Maria Traydor (Cherry Blossom)
+  cat: jp
+  rating: 8
+  picture: Sakura_Maria
+  weapon: dualswords
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 17210
+    atk: 3433
+    int: 1549
+    def: 1811
+    hit: 1148
+    grd: 826
+
+  talents:
+    - name: "Cherry Blossom Riot"
+      effects: 
+        - desc: Nullifies critical damage taken while charge assaulting
+          all: Attackers
+        - desc: ATK damage +40% while charge assaulting
+          all: Attackers
+          meta:
+            priority: 3
+            buff: ATK Damage
+            buffValue: 40
+    - name: "Adaptable"
+      effects: 
+        - desc: ATK +15% when hitcount is at 100 or more
+          all: false
+          meta:
+            priority: 1
+            buff: ATK
+            buffCondition: Hit Count > 100
+            buffValue: 15
+        - desc: ATK +30% when hitcount is at 200 or more
+          all: false
+          meta:
+            priority: 1
+            buff: ATK
+            buffCondition: Hit Count > 200
+            buffValue: 30
+    - name: "Moral Beauty"
+      effects: 
+        - desc: AP cost -40%
+          all: false
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 40
+    - name: "Hunt Leader"
+      effects: 
+        - desc: ATK +20%
+          all: false
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 20
+        - desc: HP +10%
+          all: false
+  
+  skills:
+    - name: "Sinistral Edge (Cherry Blossom)"
+      picture: Sinistral_Edge
+      power: ATK x 190%
+      ap: 14
+      maxHits: 2
+    - name: "Dextral Zapper (Cherry Blossom)"
+      picture: Dextral_Slaughter
+      power: ATK x 460%
+      ap: 31
+      maxHits: 2
+    - name: "Northern Cross (Cherry Blossom)"
+      picture: Northern_Cross
+      element: Ice
+      power: ATK x 440%
+      ap: 30
+      maxHits: 2
+    - name: "Dual Sword Arts"
+      picture: Dualsword_Arts
+      power: ATK x 710%
+      ap: 37
+      maxHits: 6
+      
+  rush:
+    name: "Radiation Device"
+    picture: Radiation_Device_Sakura_Maria
+    effects: 
+      - desc: AP cost -50%
+        all: false
+        duration: 20
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 50
+      - desc: Recover 10% HP every 3 seconds
+        all: false
+        duration: 20
+    power: ATK x 5000%
+    maxHits: 20
+    
+       
+- name: Pericci
+  cat: jp
+  rating: 0
+  picture: Pericci
+  weapon: knuckle
+  ace: true
+  limited: false
+  star: 5
+
+  stats:
+    hp: 15540
+    atk: 2730
+    int: 1549
+    def: 1930
+    hit: 1155
+    grd: 826
+
+  talents:
+    - name: "Cheerful Behaviors"
+      effects: 
+        - desc: ATK +45%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 45
+    - name: "Cat Martial Arts"
+      effects: 
+        - desc: Nullifies critical damage taken when charge assaulting
+          all: true
+    - name: "Ocarina Player"
+      effects: 
+        - desc: AP recovery from normal attacks +100%
+          all: true
+          meta:
+            priority: 1
+            buff: AP Recovery From Normal Attacks
+            buffValue: 100
+        - desc: Movement speed +30%
+          all: true
+    - name: "Lonely Person"
+      effects: 
+        - desc: Evasion AP consumption -50%
+          all: false
+        - desc: Enables air dodge
+          all: false
+        - desc: AP consumption -30% on perfect dodge (10 seconds)
+          all: false
+          
+  skills:
+    - name: "JP Somersault"
+      picture: Sumersault
+      power: ATK x 1020%
+      ap: 29
+      maxHits: 3
+    - name: "Heel Stomp"
+      picture: Axe_Kick
+      power: ATK x 300%
+      ap: 21
+      maxHits: 2
+    - name: "Hammer of Might"
+      picture: Hammer_of_Might
+      power: ATK x 320%
+      ap: 23
+      maxHits: 1
+    - name: "Palm of Destruction"
+      picture: Palm_of_Destruction
+      power: ATK x 270%
+      ap: 20
+      maxHits: 1
+
+  rush:
+    name: "Dream Hammer"
+    picture: Dream_Combo_Pericci
+    effects:
+      - desc: Critical chance +50%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 50
+    power: ATK x 4000%
+    maxHits: 1
