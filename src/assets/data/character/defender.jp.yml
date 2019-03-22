@@ -647,3 +647,137 @@
           buffValue: 30
     power: ATK x 4000%
     maxHits: 5
+
+   
+- name: Dias Flac (Cherry Cloud)
+  cat: jp
+  rating: 0
+  picture: Sakura_Dias
+  weapon: dagger
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 18564
+    atk: 2854
+    int: 1523
+    def: 2099
+    hit: 1239
+    grd: 910
+
+  talents:
+    - name: "Armory Contest Winner"
+      effects: 
+        - desc: No flinching when taking damage of 15% HP or less
+          all: true
+        - desc: Taunt +2
+          all: false
+    - name: "Cultivated Victories"
+      shortEffects: Damage +40% and ATK/INT damage taken -20% when targeted by enemy
+      effects: 
+        - desc: Damage +40% when targeted by enemy
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: When holding aggro
+            buffValue: 40
+        - desc: ATK damage taken -20% when targeted by enemy
+          all: true
+          meta:
+            priority: 3
+            buff: ATK Damage Taken Reduction
+            buffCondition: When holding aggro
+            buffValue: 20
+        - desc: INT damage taken -20% when targeted by enemy
+          all: true
+          meta:
+            priority: 3
+            buff: INT Damage Taken Reduction
+            buffCondition: When holding aggro
+            buffValue: 20
+    - name: "Memento Ring"
+      shortEffects: Damage +50% and critical chance +20% when not targeted by enemy
+      effects: 
+        - desc: Damage +50% when not targeted by enemy
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Not holding aggro
+            buffValue: 50
+        - desc: Critical chance +20% when not targeted by enemy
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: Not holding agro
+            buffValue: 20
+    - name: "Changing Heart"
+      effects: 
+        - desc: ATK +15%
+          all: false
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 15
+        - desc: DEF +15%
+          all: false
+          meta:
+            priority: 4
+            buff: DEF
+            buffValue: 15
+        - desc: HP +30%
+          all: false
+          meta:
+            priority: 4
+            buff: HP
+            buffValue: 30
+          
+  skills:
+    - name: "Lightning Chain (Cherry Blossom)"
+      picture: Lightning_Chain
+      element: Lightning
+      power: ATK x 160%
+      ap: 16
+      maxHits: 9
+    - name: "Flying Guillotine (Cherry Blossom)"
+      picture: Guillotine
+      power: ATK x 310%
+      ap: 19
+      maxHits: 4
+    - name: "Dancing Sword (Cherry Blossom)"
+      picture: Dancing_Sword
+      power: ATK x 1300%
+      ap: 40
+      maxHits: 7
+    - name: "Phoenix Drive"
+      picture: Phoenix_Drive
+      element: Fire
+      power: ATK x 490%
+      ap: 20
+      maxHits: 2
+
+  rush:
+    name: "Phoenix Blast"
+    picture: Phoenix_Blast_Sakura_Dias
+    element: Fire
+    effects:
+      - desc: Single target damage +30%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Single Target Damage
+          buffValue: 30
+      - desc: AP recovery +50%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: AP Recovery
+          buffValue: 50
+    power: ATK x 4000%
+    maxHits: 10
+    
