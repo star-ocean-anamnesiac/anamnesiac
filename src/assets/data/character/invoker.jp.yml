@@ -1748,6 +1748,7 @@
             buffCondition: Skill Chain 3+
             buffValue: 50
     - name: "New Step"
+      effects:
         - desc: INT Damage +50% at 100 hits
           meta:
             priority: 4
