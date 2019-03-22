@@ -687,14 +687,14 @@
           all: true
           meta:
             priority: 3
-            buff: ATK Damage Reduction
+            buff: ATK Damage Taken
             buffCondition: When holding aggro
             buffValue: 20
         - desc: INT damage taken -20% when targeted by enemy
           all: true
           meta:
             priority: 3
-            buff: INT Damage Reduction
+            buff: INT Damage Taken
             buffCondition: When holding aggro
             buffValue: 20
     - name: "Memento Ring"
