@@ -1692,3 +1692,774 @@
           buffValue: 80
     power: INT x 4000%
     maxHits: 9
+
+- name: Myuria Tionysus (Awakened)
+  cat: jp
+  rating: 7
+  picture: Myuria
+  weapon: staff
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 12285
+    atk: 1537
+    int: 4116
+    def: 1339
+    hit: 1057
+    grd: 833
+
+  talents:
+    - name: "Enchanted Perfume II"
+      effects: 
+        - desc: Easier to stun +30%
+          meta:
+            priority: 4
+            buff: Stun Rate
+            buffValue: 30
+    - name: "Hardier Warrior of Morphus II"
+      effects: 
+        - desc: INT +40%
+          meta:
+            priority: 4
+            buff: INT
+            buffValue: 40
+    - name: "In Loving Memory of Lucien III"
+      effects: 
+        - desc: Reduce casting time by 60%
+          meta:
+            priority: 4
+            buff: Cast Time Reduction
+            buffValue: 60
+    - name: "Adult's Composure"
+      effects: 
+        - desc: AP cost -20%
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 20
+    - name: "Flower Dedicated to the Grave"
+      effects:
+        - desc: AP Cost -50% when Skill Chain is 3+
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain 3+
+            buffValue: 50
+    - name: "New Step"
+        - desc: INT Damage +50% at 100 hits
+          meta:
+            priority: 4
+            buff: INT Damage
+            buffCondition: Hit Count > 100
+            buffValue: 50
+
+  skills:
+    - name: "Deep Freeze"
+      picture: Deep_Freeze
+      element: Ice
+      power: INT x 510%
+      ap: 35
+      maxHits: 9
+    - name: "Thunder Flare"
+      picture: Thunder_Flare
+      element: Lightning
+      power: INT x 1020%
+      ap: 35
+      maxHits: 4
+      highlight: true
+    - name: "Freezing Impact"
+      picture: Arctic_Blast
+      element: Ice
+      power: INT x 740%
+      ap: 42
+      maxHits: 3
+      highlight: true
+    - name: "Plasma Cyclone"
+      picture: Cyclone
+      element: Lightning
+      power: INT x 1400%
+      ap: 50
+      maxHits: 6
+    - name: "Lightning Blast"
+      picture: Lightning
+      element: Lightning
+      power: INT x 250%
+      ap: 23
+      maxHits: 10
+      
+  rush:
+    name: "Ultraviolet Extinction"
+    picture: Ultraviolet_Extinction_Myuria
+    element: Lightning
+    effects: 
+      - desc: +80% INT
+        duration: 20
+        meta:
+          priority: 4
+          buff: INT
+          buffValue: 80
+    power: INT x 4500%
+    maxHits: 2
+    
+  notes: >
+      _Though awakened Myuria still lacks party support, she doesn't need it; her own stats and skills were beefed up so much, even against enemies she does
+      neutral damage to you'd be hard pressed to get more merit out of a party buffer.  Her rush gain similarly went from abysmal to excellent, making it quite
+      feasible for her to keep her INT+80% up between rush cycles.  ATK-based characters have lately been catching up to her power, but the damage output
+      her awakening introduced was so absurd at the time that every event since her release has featured off-element resistance._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Plasma Cyclone for great AoE
+      
+      - Good stun rate buff.
+      
+      - Talents make her self sufficient and doesn't require party synergy.
+      
+      - Deals good damage.
+      
+      
+      **Cons**
+      
+      - Talents are greedy.
+      
+      - High AP costs.
+      
+      - Staff casting.
+      
+      - Slow rush gain.
+      
+
+      **Rotation**
+
+      *Normal > CA Plasma Cyclone > Thunder Flare > Plasma Cyclone*
+      
+      *Normal > Thunder Flare > Lightning Blast > Thunder Flare ^n - If casting from outside Plast Cyclone's Range*
+
+- name: Ronyx J. Kenny (Awakened)
+  cat: jp
+  rating: 4
+  picture: Ronyx
+  weapon: bow
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 15372
+    atk: 1733
+    int: 2482
+    def: 1399
+    hit: 1126
+    grd: 756
+
+  talents:
+    - name: "Symbologist's Awakening III"
+      effects: 
+        - desc: INT +60%
+          all: true
+          meta:
+            priority: 4
+            buff: INT
+            buffValue: 40
+        - desc: -70% Cast Time
+          meta:
+            priority: 1
+            buff: Cast Time Reduction
+            buffValue: 70
+    - name: "Military Might II"
+      effects: 
+        - desc: Damage +20%
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 20
+        - desc: AP cost -20%
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 20
+    - name: "Tail Lovers"
+      effects: 
+        - desc: Convert 35% of INT to ATK
+          all: Attackers, Sharpshooters, Defenders
+    - name: "Earth Federation of Hero"
+      effects: 
+        - desc: Super Armor while casting heraldry < 30% HP
+    - name: "Thought Accepted"
+      effects: 
+        - desc: INT Damage +30% when skill chain is 2
+          meta:
+            priority: 3
+            buff: INT Damage
+            buffCondition: Skill Chain 2
+            buffValue: 30
+        - desc: INT Damage +50% when skill chain is 3+
+          meta:
+            priority: 3
+            buff: INT Damage
+            buffCondition: Skill Chain 3+
+            buffValue: 50
+    - name: "Looking into the Future"
+      effects: 
+        - desc: ATK +20%
+          meta:
+            priority: 4
+            buff: ATK
+            buffValue: 20
+        - desc: DEF +30%
+          meta:
+            priority: 4
+            buff: DEF
+            buffValue: 30
+        - desc: HIT +20%
+          meta:
+            priority: 4
+            buff: HIT
+            buffValue: 20
+        - desc: HP +20%
+          meta:
+            priority: 4
+            buff: HP
+            buffValue: 20
+   
+  skills:
+    - name: "Rock Rain"
+      picture: Stone_Rain
+      element: Earth
+      power: INT x 510%
+      ap: 35
+      maxHits: 5
+    - name: "Explosion"
+      picture: Explosion
+      element: Fire
+      power: INT x 760%
+      ap: 35
+      maxHits: 14
+      highlight: true
+    - name: "Pile Hammer"
+      picture: Terra_Hammer
+      element: Earth
+      power: INT x 740%
+      ap: 42
+      maxHits: 6
+    - name: "Burst Flame"
+      picture: Volcanic_Burst
+      element: Fire
+      power: INT x 1110%
+      ap: 42
+      maxHits: 13
+      highlight: true
+    - name: "Firebolt"
+      picture: Fire_Bolts
+      element: Fire
+      power: INT x 220%
+      ap: 20
+      maxHits: 6
+      highlight: true
+      
+  rush:
+    name: "Explode"
+    picture: Explode_Ronyx
+    element: Fire
+    effects: 
+      - desc: Reduce casting time by 80%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Cast Time Reduction
+          buffValue: 80
+    power: INT x 4500%
+    maxHits: 10
+    
+  notes: >
+      _Ronyx's awakening goes all-out on his party support, amping his already unsurpassed party INT by another +20%, making his selfish talents partywide, 
+      slapping on substantial cast time reductions, INT>ATK conversion for the non-casters, and a beefy Damage+80% for everyone, giving him a kit that makes
+      him a major boon to casters but provides welcome buffs to everyone in general.  His rush gain's also been improved, but unfortunately he's still loaded with
+      slow, localized spells that require an immobile target, and with Heraldry being element-locked he's stuck in Fire-weak fights unless you only want him for his
+      buffs._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Strong party wide INT buff.
+      
+      - Reduces cast times by 50% post rush.
+      
+      - Non-ace so cheaper to MLB and augment.
+      
+      
+      **Cons**
+      
+      - Slow cast times with expensive spells which can miss.
+      
+      - Abysmal AI.
+      
+      - Non-ace so has less stats.
+      
+
+      **Rotation**
+
+      *Normal > Burst Flame > Explosion > Burst Flame*
+
+- name: Lymle Lemuri Phi (Awakened)
+  cat: jp
+  rating: 4
+  picture: Lymle
+  weapon: staff
+  limited: false
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 13356
+    atk: 1391
+    int: 3827
+    def: 1851
+    hit: 966
+    grd: 749
+
+  talents:
+    - name: "Enchanted Artistry"
+      effects: 
+        - desc: INT +10%
+          meta:
+            priority: 4
+            buff: INT
+            buffValue: 10
+        - desc: DEF +50%
+          meta:
+            priority: 4
+            buff: DEF
+            buffValue: 30
+        - desc: GRD +20%
+          meta:
+            priority: 4
+            buff: GRD
+            buffValue: 10
+        - desc: HP +20%
+          meta:
+            priority: 4
+            buff: HP
+            buffValue: 20
+    - name: "Big Doggie Bite"
+      effects: 
+        - desc: Damage taken -40%
+          meta:
+            priority: 4
+            buff: Damage Taken Reduction
+            buffValue: 40
+    - name: "Grampa's Wish"
+      effects: 
+        - desc: Will not flinch if damage is less than 40% of max HP
+    - name: "Mischievous"
+      effects: 
+        - desc: INT +20%
+          meta:
+            priority: 1
+            buff: INT
+            buffValue: 20
+    - name: "Obstinate"
+      effects: 
+        - desc: Given the damage + 60% of the fire attribute (Self, Attackers, Shooters, Defenders)
+    - name: "Closed Emotions"
+      effects: 
+        - desc: Critical hit rate +50% at skills 3+
+
+  skills:
+    - name: "Fire Bolt Drop"
+      picture: Fire_Bolts
+      element: Fire
+      power: INT x 330%
+      ap: 20
+      maxHits: 6
+      highlight: true
+    - name: "Burst Flame"
+      picture: Volcanic_Burst
+      element: Fire
+      power: INT x 1110%
+      ap: 42
+      maxHits: 13
+      highlight: true
+    - name: "Wind Blade"
+      picture: Wind_Blade
+      element: Wind
+      power: INT x 210%
+      ap: 20
+      maxHits: 2
+    - name: "Tornado"
+      picture: Tornado
+      element: Wind
+      power: INT x 510%
+      ap: 35
+      maxHits: 2
+    - name: "Explosion"
+      picture: Explosion
+      element: Fire
+      power: INT x 760%
+      ap: 35
+      maxHits: 14
+      highlight: true
+      
+  rush:
+    name: "Trinity Blaze"
+    picture: Trinity_Blaze_Lymle  
+    element: Fire
+    effects: 
+      - desc: INT +120%
+        duration: 25
+        meta:
+          priority: 4
+          buff: INT
+          buffValue: 120
+      - desc: Reduce casting time by 70%
+        duration: 25
+        meta:
+          priority: 4
+          buff: Cast Time Reduction
+          buffValue: 70
+    power: INT x 2600%
+    maxHits: 6
+   
+  notes: >
+      _Awakening's emphasized Lymle's bulk, fire damage, and rush buff; notably she now provides the party INT+20% and physical classes receive an impressive
+      Fire Damage+60%.  Her rush buff's been increased to a whopping INT+120% and lasts five seconds longer.  Her own rush gain's also gone from horrid to
+      above average.  She's still unfortunately cursed with slow and unreliable fire spells, and still lacks AP cost reduction to fit more 300% spells in, though assists
+      and teambuilding can fix the latter._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Non-ace so cheaper to MLB and augment.
+      
+      - Deals good damage post rush.
+      
+      - Talents give her some good survivability.
+      
+      
+      **Cons**
+      
+      - No party wide talent or post rush buffs.
+      
+      - Mediocre damage pre-rush.
+      
+      - Staff casting.
+      
+      - Non-ace so has less stats.
+      
+
+      **Rotation**
+
+      *Normal > CA Explosion > Burst Flame*
+
+- name: Faize Sheifa Beleth (Awakened)
+  cat: jp
+  rating: 6
+  picture: Faize
+  weapon: bns
+  limited: false
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 16926
+    atk: 1458
+    int: 3749
+    def: 1399
+    hit: 1016
+    grd: 749
+
+  talents:
+    - name: "The Gifted One II"
+      effects: 
+        - desc: Damage to single targets +40%
+          all: true
+          meta:
+            priority: 1
+            buff: Single Target Damage
+            buffValue: 40
+        - desc: Chance to stun +25%
+          all: true
+          meta:
+            priority: 1
+            buff: Stun Rate
+            buffValue: 25
+    - name: "Eldarian Honor II"
+      effects: 
+        - desc: At 10% HP or higher, has an 90% chance to survive a lethal attack
+        - desc: Reduce casting time by 90%
+          meta:
+            priority: 4
+            buff: Cast Time Reduction
+            buffValue: 90
+    - name: "Talent 3"
+      effects: 
+        - desc: Damage during " defective " attack -20% HP 25% Do not get rid of the following damage (overall) 
+    - name: "Crimson Eyesight"
+      effects: 
+        - desc: Survive at 90% non-lethal attack with more than 20% HP (all ranged weapon equipped person) 
+    - name: "Logical Thinking"
+      effects: 
+        - desc: skill 3 cooperation or more Giving INT damage + 50% 
+    - name: "Raw Serious"
+      effects: 
+        - desc: INT + 20% DEF + 30% HIT + 10% HP + 30%
+
+  skills:
+    - name: "Cursed Devourer"
+      picture: Devourer
+      element: Dark
+      power: INT x 630%
+      ap: 42
+      maxHits: 5
+    - name: "Cursed Vampiric Blade"
+      picture: Vampiric_Blade
+      element: Dark
+      power: INT x 410%
+      ap: 32
+      maxHits: 5
+    - name: "Cursed Shadow Needles"
+      picture: Shadow_Needles
+      element: Dark
+      power: INT x 270%
+      ap: 23
+      maxHits: 5
+      highlight: true
+    - name: "Cursed Reaping Spark"
+      picture: Reaping_Spark
+      element: Dark
+      power: INT x 580%
+      ap: 37
+      maxHits: 12
+      highlight: true
+    - name: "Extinction"
+      picture: Extinction
+      element: Dark
+      power: INT x 650%
+      ap: 42
+      maxHits: 2
+      highlight: true
+      
+  rush:
+    name: "Eldar Necrospike"
+    picture: Eldar_Necrospike_Faize
+    element: Dark
+    effects: 
+      - desc: AP cost -30%
+        duration: 20
+        meta:
+          priority: 4
+          buff: AP Cost Reduction
+          buffValue: 30
+    power: INT x 4500%
+    maxHits: 12
+    
+  notes: >
+      _Faize's awakening further enhances his party buffing both offensively and defensively; to oversimplify, he's effectively Capell-meets-Fiore with a side of party 
+      Guts now.  Extinction meshes with his kit well, both providing obscene rush gain and offering a delayed hit he can exploit with his new skill chain talent, but
+      you'll still be forced to bring Needles for combo filler without at least -10% AP.  His rush now has a proper mult as well.  Strong on his own, incredible with
+      INT buffs; even without them though his party support is highly appreciated.  Note that alongside his awakening (but not tied to it), he was also reworked to
+      be a Hrist-style sheath, giving him a proper ranged normal and facilitating full combos as a result.  While able to use sheathes, only his normals and rush
+      can change elements.  It hurts his combo damage significantly to use him against anything that isn't dark weak, but his talents and a functional rush may
+      be enough merit for him depending on your needs.
+      
+      If strictly interested in his party talents, he gains them all by Awk6, avoiding needing to spend any gammas and making for an accessible stunbot that
+      surpasses Ratix/Capell in performance on both manual and auto.  Awk10 adds a lot of damage output if intending to play him seriously._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Non-ace so cheaper to MLB and augment.
+      
+      - Has good damage output, especially for a non-ace.
+      
+      - Can inflict curse.
+      
+      - Good party wide buffs and a grit talent to help him live.
+      
+      
+      **Cons**
+      
+      - Locked into dark.
+      
+      - Extremely squishy.
+      
+      - Melee normals and short ranged spells can make him awkward to play.
+      
+      - Non-ace so has less stats.
+      
+
+      **Rotation**
+
+      *CA Shadow Needles > Reaping Spark > Shadow Needles > Spam till out of AP (Ranged damage rotation.)*
+      
+      *Normal > Shadow Needles > Reaping Spark > Cursed Devourer (Melee damage rotation.)*
+      
+      *Normal > Extinction > Slicer > Needles - Because of the delays on Faize's spells, everything simultaneously hits at 300% to maximize his skill chain bonus.*
+      
+      *Normal > Extinction > Slicer > Extinction^n - postrush*
+      
+      *Normal > Slicer > Extinction > Slicer^n - alt postrush; don't use during stun*
+
+- name: Celine Jules (Awakened)
+  cat: jp
+  rating: 6
+  picture: Celine
+  weapon: staff
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 12390
+    atk: 1537
+    int: 3262
+    def: 1379
+    hit: 1050
+    grd: 826
+
+  talents:
+    - name: "Treasure Hunter II"
+      effects: 
+        - desc: INT +30%
+          all: true
+          meta:
+            priority: 1
+            buff: INT
+            buffValue: 30
+    - name: "Enchanted Symbology"
+      effects: 
+        - desc: +25% chance to silence on all attacks
+          meta:
+            priority: 4
+            buff: Silence Attack Chance
+            buffValue: 25
+    - name: "A Lady's Poise II"
+      effects:
+        - desc: Super Armor while casting & +20% INT damage dealt when at 100% HP
+          meta:
+            priority: 4
+            buff: INT Damage
+            buffCondition: HP at 100%
+            buffValue: 20
+    - name: "Marze Born & Raised"
+      effects:
+        - desc: -50% cast time
+          meta:
+            priority: 4
+            buff: Cast Time Reduction
+            buffValue: 50
+        - desc: -40% AP cost
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 40
+        - desc: +10% Rush DMG
+          meta:
+            priority: 4
+            buff: Rush Damage
+            buffValue: 10
+    - name: "Willing Up Adventure"
+      effects:
+        - desc: INT +20%
+    - name: "Unrestrained Mind"
+      effects:
+        - desc: Skill 3 More than Attractive Attack of Heraldic Damage + 50%
+
+  skills:
+    - name: "Silencing Star Light"
+      picture: Star_Light
+      element: Light
+      power: INT x 790%
+      ap: 36
+      maxHits: 1
+      highlight: true
+    - name: "Silent Lightning"
+      picture: Lightning
+      element: Lightning
+      power: INT x 250%
+      ap: 23
+      maxHits: 10
+    - name: "Silencing Sunflare"
+      picture: Sunflare
+      element: Light
+      power: INT x 820%
+      ap: 42
+      maxHits: 6
+    - name: "Silencing Cyclone"
+      picture: Cyclone
+      element: Thunder
+      power: INT x 800%
+      ap: 50
+      maxHits: 6
+    - name: "Growth"
+      picture: Enhance_Growth
+      ap: 50
+      notes: +25% ATK to party for 20 seconds.
+      meta:
+        priority: 2
+        buff: ATK
+        buffValue: 25
+      highlight: true
+      
+  rush:
+    name: "Silencing Southern Cross"
+    picture: Silent_Southern_Cross_Celine
+    element: Light
+    effects: 
+      - desc: +50% INT
+        duration: 20
+        meta:
+          priority: 4
+          buff: INT
+          buffValue: 50
+    power: INT x 4000%
+    maxHits: 6
+    
+  notes: >
+      _Standard light caster.  Awakening scooped her damage output out of the gutters, though it isn't anything mindblowing still.  Her rush gain is fixed, but her rush
+      buff is still underwhelming.  Having access to Growth on top of her talents gives her the ability to buff both INT and ATK for the party._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Plasma Cyclone for great AoE
+      
+      - Party wide INT buff for caster comps
+      
+      - Can silence enemies.
+      
+      - Deals good damage.
+      
+      
+      **Cons**
+      
+      - Doesn't bring much aside from her INT buff.
+      
+      - High AP costs.
+      
+      - Staff casting.
+      
+
+      **Rotation**
+
+      *Normal > CA Silencing Star Light > Filler > Silencing Star Light^n*
+      
+      *Fillers: Growth for buffing; Sunshine for damage; Plasma Cyclone for crowd control, rush gain, and reliability*
