@@ -18,6 +18,7 @@
 
   talents:
     - name: "Silent Will"
+      shortEffects: ATK +40%, and ATK +65% at 100% HP
       effects: 
         - desc: ATK +40%
           all: true
@@ -227,7 +228,7 @@
       
       - Strong ATK based buff for the party.
       
-      - AP reduction and even more post rush allows skill spamming.
+      - AP reduction and even more post-rush allows skill spamming.
       
       
       **Cons**
@@ -403,21 +404,23 @@
   talents:
     - name: "Klaus Champion II"
       effects: 
-        - desc: AP cost -40% 
+        - desc: AP cost -40%
+          all: false
           meta:
             priority: 1
             buff: AP Cost Reduction
             buffValue: 40
     - name: "Greater Master of the Training Hall"
       effects: 
-        - desc: ATK +30% 
+        - desc: ATK +30%
+          all: false
           meta:
             priority: 1
             buff: ATK
             buffValue: 30
     - name: "Revolutionary Spirit"
       effects:
-        - desc: Critical hit chance +20%
+        - desc: Critical chance +20%
           meta:
             priority: 4
             buff: Crit Rate
@@ -513,7 +516,7 @@
   talents:
     - name: "Stellar Support"
       effects: 
-        - desc: Critical hit chance +30%
+        - desc: Critical chance +30%
           all: true
           meta:
             priority: 1
@@ -521,7 +524,7 @@
             buffValue: 30
     - name: "Grandmother's Teachings II"
       effects: 
-        - desc: No Flinching to Damage < 20% of Max HP
+        - desc: No flinching when taking damage of 20% HP or less
 
   skills:
     - name: "Hammer of Might"
@@ -552,7 +555,7 @@
     picture: Blazing_Cannon_Anne
     element: Fire
     effects: 
-      - desc: Critical Rate +60%
+      - desc: Critical chance +60%
         all: true
         duration: 20
         meta:
@@ -894,11 +897,11 @@
           all: Close Range
     - name: "Hit-the-Watermelon"
       effects: 
-        - desc: AP cost -25% when skill chain is 3 or more
+        - desc: AP cost -25% when skill chain is 3+
           meta:
             priority: 4
             buff: AP Cost Reduction
-            buffCondition: Skill Combo 3+
+            buffCondition: Skill Chain 3+
             buffValue: 25
 
   skills:
@@ -1048,8 +1051,8 @@
     name: "Nibelung Valesti"
     picture: Nibelung_Valesti_Lenneth
     effects: 
-      - desc: DEF -30% (All Enemies)
-        all: enemies
+      - desc: DEF -30%
+        all: Enemies
         duration: 20
         meta:
           priority: 1
@@ -1097,6 +1100,7 @@
       *Normal > Heaven and Hell > Glowing Pierce > Heaven and Hell> Sky-High Break (Damage rotation)*
       
       *Normal > Sky-High Break > Glowing Pierce > Sky-High Break (Rush gain rotation)*
+    
     
 - name: Claude C. Kenny
   cat: gl
@@ -1173,15 +1177,16 @@
       highlight: true
     - name: "Sword Bomber"
       picture: Sword_Bomber
+      element: Fire
       power: ATK x 550%
       ap: 38
       maxHits: 2
 
   rush:
     name: "Mirror Blade Tempest"
-    picture: Explode_Prince_Claude
+    picture: Mirror_Blade_Tempest_Claude
     effects: 
-      - desc: Damage Dealt +30%
+      - desc: Damage +30%
         all: true
         duration: 30
         meta:
@@ -1227,7 +1232,8 @@
       **Rotation**
       
       *Normal > Double Slash > Air Slash > Helm Render (Damage rotation)*
-   
+
+
 - name: Phia Melle
   cat: gl
   rating: 4
@@ -1237,24 +1243,26 @@
   star: 5
 
   stats:
-    hp: 12915
-    atk: 2584
-    int: 1391
-    def: 1292
-    hit: 1134
-    grd: 847
+    hp: 13515
+    atk: 2704
+    int: 1461
+    def: 1356
+    hit: 1184
+    grd: 887
 
   talents:
     - name: "Raven Sword II"
       effects: 
-        - desc: Critical hit chance +50%
+        - desc: Critical chance +50%
+          all: false
           meta:
             priority: 4
             buff: Crit Rate
             buffValue: 50
     - name: "Knight's Integrity II"
       effects: 
-        - desc: Critical hit damage +50%
+        - desc: Critical damage +50%
+          all: false
           meta:
             priority: 4
             buff: Crit Damage
@@ -1262,41 +1270,43 @@
     - name: "A Highlander's Pride"
       effects: 
         - desc: ATK +20%
+          all: false
           meta:
             priority: 4
             buff: ATK
             buffValue: 20
         - desc: DEF -20%
+          all: false
           meta:
             priority: 4
             buff: DEF Reduction
             buffValue: 20
 
   skills:
-    - name: "Liquid Bite"
-      picture: Hydroblades
-      power: ATK x 170%
-      ap: 18
-      notes: Can freeze foes
-      maxHits: 2
-      element: Ice
-      highlight: true
-    - name: "Unholy Terror"
-      picture: Unholy_Terror
-      power: ATK x 310%
-      ap: 29
-      maxHits: 5
-    - name: "Sylvan Shot"
-      picture: Sylvan_Shot
-      power: ATK x 200%
-      ap: 20
-      maxHits: 8
-      highlight: true
     - name: "Frore Dancing Sword"
       picture: Dancing_Sword
       power: ATK x 400%
       ap: 32
       maxHits: 7
+    - name: "Sylvan Shot"
+      picture: Sylvan_Shot
+      power: ATK x 200%
+      ap: 20
+      maxHits: 8
+      highlight: true     
+    - name: "Unholy Terror"
+      picture: Unholy_Terror
+      power: ATK x 310%
+      ap: 29
+      maxHits: 5      
+    - name: "Liquid Bite"
+      picture: Hydroblades
+      element: Ice
+      power: ATK x 170%
+      ap: 18
+      notes: Occasionally freezes foes.
+      maxHits: 2
+      highlight: true
 
   rush:
     name: "Unholy Torrent"
@@ -1343,7 +1353,8 @@
       **Rotation**
       
       *Normal > Sylvan Shot > Liquid Bite > Sylvan Shot > Spam till out of AP (Damage rotation)*
-    
+
+
 - name: Albel Nox
   cat: gl
   rating: 6
