@@ -35,7 +35,9 @@ const validMetas = [
   'Enemy Damage Taken', 'Enemy ATK Damage Taken', 'Enemy INT Damage Taken',
 
   'DEF Reduction', 'ATK Reduction', 'INT Reduction', 'HIT Reduction', 'GRD Reduction',
-  'Enemy DEF Reduction', 'Enemy ATK Reduction', 'Enemy INT Reduction', 'Enemy HIT Reduction', 'Enemy GRD Reduction'
+  'Enemy DEF Reduction', 'Enemy ATK Reduction', 'Enemy INT Reduction', 'Enemy HIT Reduction', 'Enemy GRD Reduction',
+  
+  'INT -> ATK', 'ATK -> INT'
 ];
 
 export const validateMeta = (t, meta, parenName) => {
