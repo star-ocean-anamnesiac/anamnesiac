@@ -84,7 +84,7 @@ export class CharacterSortPopover {
           <ion-tab tab="stats" class="stats-tab">
 
             <ion-list>
-              <ion-item *ngFor="let stat of ['hp', 'hit', 'atk', 'int', 'def', 'grd']">
+              <ion-item *ngFor="let stat of ['hp', 'atk', 'int', 'def', 'hit', 'grd']">
                 <app-appicon slot="start" [name]="'seed-' + stat" [scaleX]="0.25" [scaleY]="0.25"></app-appicon>
                 <strong>{{ stat.toUpperCase() }}</strong>: {{ char.stats[stat] | number }}
               </ion-item>
