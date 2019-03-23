@@ -9,12 +9,12 @@
   star: 5
 
   stats:
-    hp: 16525
-    atk: 3788
-    int: 2577
-    def: 2812
-    hit: 1184
-    grd: 866
+    hp: 15855
+    atk: 2704
+    int: 1549
+    def: 1969
+    hit: 1134
+    grd: 826
 
   talents:
     - name: "Silent Will"
@@ -111,7 +111,7 @@
       
       **Pros**
       
-      - Strong ATK based buff and elemental post rush buff.
+      - Strong ATK based buff and elemental post-rush buff.
       
       - Huge AP recovery on normal buff.
       
@@ -282,7 +282,7 @@
         - desc: Enables evasion during air attacks
     - name: "Heir to the Camuze Style"
       effects:
-        - desc: Single target damage dealt +10% when skill chain is 3+
+        - desc: Single target damage dealt +10% when skill chain is 3 or more
           meta:
             priority: 3
             buff: Single Target Damage
@@ -420,7 +420,7 @@
             buffValue: 30
     - name: "Revolutionary Spirit"
       effects:
-        - desc: Critical chance +20%
+        - desc: Critical hit chance +20%
           meta:
             priority: 4
             buff: Crit Rate
@@ -477,18 +477,18 @@
       
       **Pros**
       
-      - Powerful when built around
+      - Powerful when built around.
       
-      - Good for solo play
+      - Good for solo play.
       
       
       **Cons**
       
-      - Zero utility for the party
+      - Zero utility for the party.
       
-      - No ranged attack
+      - No ranged attack.
       
-      - No post-rush buff
+      - No post-rush buff.
       
       
       **Rotation**
@@ -507,16 +507,16 @@
 
   stats:
     hp: 14070
-    atk: 3007
-    int: 2246
-    def: 2487
+    atk: 2167
+    int: 1405
+    def: 1759
     hit: 1043
     grd: 756
 
   talents:
     - name: "Stellar Support"
       effects: 
-        - desc: Critical chance +30%
+        - desc: Critical hit chance +30%
           all: true
           meta:
             priority: 1
@@ -555,7 +555,7 @@
     picture: Blazing_Cannon_Anne
     element: Fire
     effects: 
-      - desc: Critical chance +60%
+      - desc: Critical hit chance +60%
         all: true
         duration: 20
         meta:
@@ -725,12 +725,12 @@
   star: 5
 
   stats:
-    hp: 16420
-    atk: 4251
-    int: 2374
-    def: 2456
-    hit: 1184
-    grd: 852
+    hp: 15570
+    atk: 3090
+    int: 1535
+    def: 1983
+    hit: 1134
+    grd: 812
 
   talents:
     - name: "Transcending Space-time II"
@@ -854,8 +854,8 @@
 
   stats:
     hp: 15645
-    atk: 3588
-    int: 2428
+    atk: 2718
+    int: 1563
     def: 1957
     hit: 1127
     grd: 833
@@ -897,7 +897,7 @@
           all: Close Range
     - name: "Hit-the-Watermelon"
       effects: 
-        - desc: AP cost -25% when skill chain is 3+
+        - desc: AP cost -25% when skill chain is 3 or more
           meta:
             priority: 4
             buff: AP Cost Reduction
@@ -957,22 +957,22 @@
       
       **Pros**
       
-      - Strong ATK buffs
+      - Strong ATK buffs.
       
-      - Ap recovery on normals for close-ranged fighters
+      - Ap recovery on normals for close-ranged fighters.
       
-      - Really powerful post-rush buff
+      - Really powerful post-rush buff.
       
-      - Rush combo damage buff
+      - Rush combo damage buff.
       
       
       **Cons**
             
-      - Slow rush gain
+      - Slow rush gain.
       
-      - Awkward attack buff
+      - Awkward attack buff.
       
-      - Subpar moveset
+      - Subpar moveset.
       
       
       **Rotation**
@@ -1010,7 +1010,7 @@
             buffValue: 30
     - name: "The Dusk of Ragnarok"
       effects: 
-        - desc: Rush Combo Damage +20%
+        - desc: Rush combo damage +20%
           all: true
           meta:
             priority: 1
@@ -1157,30 +1157,30 @@
             buffValue: 100
 
   skills:
-    - name: "Double Slash"
-      picture: Double_Slash_I
-      power: ATK x 200%
-      ap: 20
-      maxHits: 2
-      highlight: true
-    - name: "Air Slash"
-      picture: Air_Slash_I
-      power: ATK x 200%
-      ap: 20
-      maxHits: 2
-      highlight: true
-    - name: "Helm Render"
-      picture: Helmsplitter
-      power: ATK x 440%
-      ap: 30
-      maxHits: 1
-      highlight: true
     - name: "Sword Bomber"
       picture: Sword_Bomber
       element: Fire
       power: ATK x 550%
       ap: 38
       maxHits: 2
+    - name: "Helm Render"
+      picture: Helmsplitter
+      power: ATK x 440%
+      ap: 30
+      maxHits: 1
+      highlight: true
+    - name: "Air Slash"
+      picture: Air_Slash_I
+      power: ATK x 200%
+      ap: 20
+      maxHits: 2
+      highlight: true      
+    - name: "Double Slash"
+      picture: Double_Slash_I
+      power: ATK x 200%
+      ap: 20
+      maxHits: 2
+      highlight: true
 
   rush:
     name: "Mirror Blade Tempest"
@@ -1215,18 +1215,18 @@
       
       **Pros**
       
-      - Powerful ATK buff for attackers and defenders
+      - Powerful ATK buff for attackers and defenders.
       
-      - Damage reduction for healers
+      - Damage reduction for healers.
       
-      - Ap recovery on Normals
+      - Ap recovery on Normals.
       
       
       **Cons**
             
-      - Poor synergy with sharpshooters and invokers
+      - Poor synergy with sharpshooters and invokers.
       
-      - Post rush buff made redundant by commonly seen characters like Maria and 9S
+      - Post-rush buff made redundant by commonly seen characters like Maria and 9S.
             
       
       **Rotation**
@@ -1243,20 +1243,20 @@
   star: 5
 
   stats:
-    hp: 13515
-    atk: 2704
-    int: 1461
-    def: 1356
-    hit: 1184
-    grd: 887
+    hp: 12915
+    atk: 2584
+    int: 1391
+    def: 1292
+    hit: 1134
+    grd: 847
 
   talents:
     - name: "Raven Sword II"
       effects: 
-        - desc: Critical chance +50%
+        - desc: Critical hit chance +50%
           all: false
           meta:
-            priority: 4
+            priority: 1
             buff: Crit Rate
             buffValue: 50
     - name: "Knight's Integrity II"
@@ -1334,20 +1334,20 @@
       
       **Pros**
       
-      - High damage output
+      - High damage output.
       
       - 5 star non-ace so costs less to limit break and augment.
       
-      - Can freeze enemies
+      - Can freeze enemies.
       
       
       **Cons**
             
-      - 5 star non-ace so has less stats
+      - 5 star non-ace so has less stats.
       
-      - Provides nothing to the rest of the party
+      - Provides nothing to the rest of the party.
       
-      - Glass cannon so not new player or new content friendly
+      - Glass cannon so not new player or new content friendly.
             
       
       **Rotation**
@@ -1366,7 +1366,7 @@
 
   stats:
     hp: 15750
-    atk: 2716
+    atk: 2718
     int: 1496
     def: 2009
     hit: 1113
@@ -1382,6 +1382,7 @@
             buff: Enemy DEF Reduction
             buffValue: 30
     - name: "Black Brigade Fury II"
+      shortEffects: ATK +30% (Attackers/Defenders)
       effects: 
         - desc: ATK +30%
           all: Attackers
@@ -1399,42 +1400,42 @@
             buffValue: 30
     - name: "Savage Blade II"
       effects: 
-        - desc: Damage to single target +20%
+        - desc: Single target damage +20%
           meta:
             priority: 4
             buff: Single Target Damage
             buffValue: 20
     - name: "Magician's Clothes"
       effects: 
-        - desc: AP Cost -20%
+        - desc: AP cost -20%
           meta:
             priority: 4
             buff: AP Cost Reduction
             buffValue: 20
 
   skills:
-    - name: "Unbridled Air Slash"
-      picture: Unbridled_Air_Slash
-      power: ATK x 210%
-      ap: 21
-      maxHits: 2
-      highlight: true
     - name: "Aura Wall"
       picture: Aura_Wall
       power: ATK x 200%
       ap: 20
       maxHits: 20
       highlight: true
-    - name: "Unbridled Double Slash"
-      picture: Unbridled_Double_Slash
-      power: ATK x 400%
-      ap: 30
-      maxHits: 4
     - name: "Vampiric Flash"
       picture: Vampiric_Flash
       power: ATK x 220%
       ap: 32
       maxHits: 6
+    - name: "Unbridled Double Slash"
+      picture: Unbridled_Double_Slash
+      power: ATK x 400%
+      ap: 30
+      maxHits: 4
+    - name: "Unbridled Air Slash"
+      picture: Unbridled_Air_Slash
+      power: ATK x 210%
+      ap: 21
+      maxHits: 2
+      highlight: true
 
   rush:
     name: "Hydra Roar"
@@ -1494,7 +1495,8 @@
       **Rotation**
       
       *Normal > Unbridled Air Slash > Aura Wall > Unbridled Air Slash > Spam till out of AP (Damage rotation)*
-    
+
+
 - name: Ilia Silvestri
   cat: gl
   rating: 3
@@ -1530,14 +1532,14 @@
             buffValue: 20
     - name: "Mother of Symbology"
       effects: 
-        - desc: AP Cost -10%
+        - desc: AP cost -10%
           meta:
             priority: 4
             buff: AP Cost Reduction
             buffValue: 4
     - name: "Quiet Devotion"
       effects: 
-        - desc: Fire Element Damage +20%
+        - desc: Fire damage dealt +20%
           all: true
           meta:
             priority: 1
@@ -1545,35 +1547,36 @@
             buffValue: 20
 
   skills:
+    - name: "Crescent Locus"
+      picture: Crescent_Locus
+      power: ATK x 150%
+      ap: 17
+      maxHits: 4
+      highlight: true  
     - name: "Palm of Destruction"
       picture: Palm_of_Destruction
       power: ATK x 240%
       ap: 23
       maxHits: 4
       highlight: true
-    - name: "Crescent Locus"
-      picture: Crescent_Locus
-      power: ATK x 150%
-      ap: 17
-      maxHits: 4
-      highlight: true
-    - name: "Fiery Hammer of Might"
-      picture: Hammer_of_Might
-      power: ATK x 270%
-      ap: 26
-      maxHits: 1
-      element: Fire
     - name: "X Claw"
       picture: X_Claw
       power: ATK x 310%
       ap: 29
-      maxHits: 6
+      maxHits: 6      
+    - name: "Fiery Hammer of Might"
+      picture: Hammer_of_Might
+      element: Fire
+      power: ATK x 270%
+      ap: 26
+      maxHits: 1
 
   rush:
     name: "Divine Hammer"
     picture: Divine_Hammer_Ilia
+    shortEffects: AP cost -20% (Attackers/Invokers)
     effects: 
-      - desc: AP Cost -20%
+      - desc: AP cost -20%
         all: Attackers
         duration: 20
         meta:
@@ -1581,7 +1584,7 @@
           buff: AP Cost Reduction
           buffRole: attacker
           buffValue: 20
-      - desc: AP Cost -20%
+      - desc: AP cost -20%
         all: Invokers
         duration: 20
         meta:
@@ -1630,7 +1633,8 @@
       **Rotation**
       
       *Normal > Palm of Destruction > Crescent Locus > Palm of Destruction > Spam till out of AP (Damage rotation)*
-    
+
+
 - name: Clair Lasbard (Halloween)
   cat: gl
   rating: 9
