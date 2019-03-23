@@ -9,12 +9,12 @@
   star: 5
 
   stats:
-    hp: 22855
-    atk: 4316
-    int: 2538
-    def: 3824
-    hit: 873
-    grd: 1093
+    hp: 21945
+    atk: 3041
+    int: 1510
+    def: 2789
+    hit: 833
+    grd: 1043
 
   talents:
     - name: "Swirling Animus"
@@ -427,12 +427,12 @@
   star: 5
 
   stats:
-    hp: 23998
-    atk: 3168
-    int: 2439
-    def: 3162
-    hit: 866
-    grd: 1100
+    hp: 21945
+    atk: 2258
+    int: 1563
+    def: 2324
+    hit: 826
+    grd: 1050
 
   talents:
     - name: "Big Break II"
@@ -454,6 +454,7 @@
             buff: INT Damage Taken Reduction
             buffValue: 20    
     - name: "Great Charisma"
+      shortEffects: ATK +60% and AP cost -20% when targeted by enemy (Self)
       effects: 
         - desc: Rush Gauge limit -30%
           all: false 
@@ -465,12 +466,14 @@
             buffValue: 60
             buffCondition: When holding aggro
         - desc: AP cost -20% when targeted by enemy
+          all: false
           meta:
             priority: 3
             buff: AP Cost Reduction
             buffValue: 20
             buffCondition: When holding aggro
     - name: "Beach Skirt Wrap"
+      shortEffects: Single target damage +30% and stun chance +15% when not targeted by enemy (Party)
       effects:
         - desc: Single target damage +30% when not targeted by enemy
           all: true
@@ -688,16 +691,16 @@
       
       **Pros**
       
-      - Solid ranged attacks
+      - Solid ranged attacks.
       
-      - Strong party-wide defensive buff
+      - Strong party-wide defensive buff.
       
       
       **Cons**
       
-      - Most of his buffs are redundant for ranged characters
+      - Most of his buffs are redundant for ranged characters.
       
-      - Has attacks which send enemies airborne during Elemental Burst
+      - Has attacks which send enemies airborne during Elemental Burst.
       
       
       **Rotation**
@@ -722,18 +725,19 @@
     int: 1575
     def: 2193
     hit: 847
-    grd: 1047
+    grd: 1043
 
   talents:
-    - name: "Holiday Heroine"
+    - name: "Holiday Heroine II"
       effects: 
         - desc: Damage taken -30% while attacking
+          all: false
           meta:
             priority: 3
             buff: Damage Taken Reduction
             buffCondition: While Attacking
             buffValue: 30
-        - desc: ATK damage taken -15% when Hit Count is over 50
+        - desc: ATK damage taken -15% when hitcount is 50 or more
           all: true
           meta:
             priority: 1
@@ -741,14 +745,15 @@
             buffCondition: Hit Count > 50
             buffValue: 15
     - name: "Radiant Snow Crystal II"
+      shortEffects: Single target damage +20%, and single target damage +40$ when hitcount is 150 or more
       effects: 
-        - desc: Single Target Damage +20%
+        - desc: Single target damage +20%
           all: true
           meta:
             priority: 1
             buff: Single Target Damage
             buffValue: 20
-        - desc: Single Target Damage +40% when Hit Count is over 150
+        - desc: Single target damage +40% when hitcount is 150 or more
           all: true
           meta:
             priority: 1
@@ -781,13 +786,14 @@
   skills:
     - name: "Resplendent Blades"
       picture: Piercing_Blades
+      element: Ice
       power: ATK x 150%
       ap: 15
       maxHits: 6
-      element: Ice
       highlight: true
     - name: "Enchanting Twin Thrust"
       picture: Talon_Thrust
+      element: Fire
       power: ATK x 200%
       ap: 20
       maxHits: 2
@@ -805,10 +811,12 @@
       highlight: true
       
   rush:
-    name: "Snowman Pressure"
+    name: "Snowman Press"
     picture: Snowman_Press_Xmas_Eve
+    element: Ice
     effects: 
       - desc: AP cost -40%
+        all: false
         duration: 20
         meta:
           priority: 4
@@ -822,7 +830,6 @@
           buffValue: 30
     power: ATK x 4000%
     maxHits: 6
-    element: Ice
     
   notes: >
       _Evelysse has decided for Christmas, she'd like to not be forgotten on the sidelines as a pretty average healer. Instead she
@@ -850,22 +857,22 @@
       
       **Pros**
       
-      - Solid ranged attacks
+      - Solid ranged attacks.
       
-      - Strong party wide defensive buffs
+      - Strong party-wide defensive buffs.
       
-      - Powerful offensive buffs
+      - Powerful offensive buffs.
       
-      - Decent dps
+      - Decent dps.
       
-      - Good synergy with other hit count characters
+      - Good synergy with other hitcount characters.
       
       
       **Cons**
       
-      - Lacks personal healing
+      - Lacks personal healing.
       
-      - Helix Blade launches people
+      - Helix Blade launches people.
       
       
       **Rotation**
@@ -873,7 +880,8 @@
       *Normal > Resplendent Blades > Threefold Blast > Helix Blade > spam this until no AP - (Damage rotation)*
       
       *Resplendent Blades > Threefold Blast > Resplendent Blades > Threefold Blast > spam this until no AP (Range rotation)*
-    
+      
+      
 - name: Edge Maverick
   cat: gl
   rating: 5
@@ -901,7 +909,7 @@
             buffValue: 20
     - name: "A Pioneer's Spirit"
       effects: 
-        - desc: Single Target Damage +15%
+        - desc: Single target damage +15%
           all: true
           meta:
             priority: 1
@@ -949,7 +957,7 @@
     name: "Mystic Cross Nova"
     picture: Mystic_Cross_Nova_Edge
     effects: 
-      - desc: Elemental Damage +50%
+      - desc: Elemental damage dealt +50%
         duration: 20
         all: true
         meta:
@@ -996,7 +1004,8 @@
       **Rotation**
       
       *Normal > Raging Strike > Aura Spark > Raging Strike (Damage rotation)*
-    
+ 
+ 
 - name: Miki (Princess)
   cat: gl
   rating: 3
@@ -1445,13 +1454,13 @@
     atk: 1199
     int: 795
     def: 1400
-    hit: 468
-    grd: 611
+    hit: 438
+    grd: 581
 
   talents:
     - name: "Stalwart Defense II"
       effects: 
-        - desc: Recover 15% of damage dealt by normal attacks as HP
+        - desc: Absorb 15% of damage dealt by normal attacks as HP
           all: false
     - name: "Reprieve from Death III"
       effects:
