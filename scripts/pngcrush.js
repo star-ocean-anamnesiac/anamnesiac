@@ -24,16 +24,6 @@ const init = async () => {
     ]
   });
 
-  await imagemin([
-    'src/assets/cards/*.png'
-  ], 'src/assets/cards', {
-    plugins: [
-      webp({
-        lossless: true
-      })
-    ]
-  });
-
   console.log('Done compressing images.');
 
 };
