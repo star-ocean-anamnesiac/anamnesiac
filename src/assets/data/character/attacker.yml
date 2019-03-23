@@ -18,7 +18,6 @@
 
   talents:
     - name: "Silent Will"
-      shortEffects: ATK +40%, and ATK +60% at 100% HP (party)
       effects: 
         - desc: ATK +40%
           all: true
@@ -1382,7 +1381,7 @@
             buff: Enemy DEF Reduction
             buffValue: 30
     - name: "Black Brigade Fury II"
-      shortEffects: ATK +30% (all attackers/all defenders)
+      shortEffects: ATK +30% (Attackers/Defenders)
       effects: 
         - desc: ATK +30%
           all: Attackers
@@ -1574,7 +1573,7 @@
   rush:
     name: "Divine Hammer"
     picture: Divine_Hammer_Ilia
-    shortEffects: AP cost -20% (all attackers/all invokers)
+    shortEffects: AP cost -20% (Attackers/Invokers)
     effects: 
       - desc: AP cost -20%
         all: Attackers
@@ -1792,7 +1791,6 @@
 
   talents:
     - name: "Hand Trick II"
-      shortEffects: ATK +25%, and ATK +35% when hitcount is 100 or more (party)
       effects: 
         - desc: ATK +25%
           all: true
@@ -2218,7 +2216,7 @@
             buffCondition: Hit Count > 200
             buffValue: 20
     - name: "Colorful Galleria II"
-      shortEffects: Bullet Barrage and Bombing Run deal damage +100% when skill chain is 3 or more, and 200% when skill chain is 5 or more
+      shortEffects: Bullet Barrage and Bombing Run deal damage +100% when skill chain is 3 or more, and +200% when skill chain is 5 or more
       effects: 
         - desc: Bullet Barrage and Bombing Run deal damage +100% when skill chain is 3 or more
         - desc: Bullet Barrage and Bombing Run deal damage +200% when skill chain is 5 or more
@@ -2391,7 +2389,7 @@
   rush:
     name: "Fists of Unquenchable Fury"
     picture: Fists_of_Unquenchable_Fury_Weeping_Welch
-    shortEffects: ATK +50% and DEF -100% (party/20 seconds)
+    shortEffects: ATK +50% and DEF -100% (Party/20 seconds)
     effects: 
       - desc: ATK +50%
         all: true
@@ -2470,7 +2468,7 @@
             buff: Crit Rate
             buffValue: 30
     - name: "Memories of Ocarina II"
-      shortEffects: AP recovery +50% (self/all defenders)
+      shortEffects: AP recovery +50% (Self/Defenders)
       effects: 
         - desc: AP recovery +50%
           meta:
@@ -2611,7 +2609,6 @@
 
   talents:
     - name: "Tranquil Spirit II"
-      shortEffects: ATK +30% (party), and ATK +45% (short-range weapons)
       effects: 
         - desc: ATK +30%
           all: true
@@ -2620,7 +2617,7 @@
             buff: ATK
             buffValue: 30
         - desc: ATK +45%
-          all: short-ranged weapons
+          all: short-range weapons
           meta:
             priority: 1
             buff: ATK
@@ -2806,7 +2803,7 @@
 
   talents:
     - name: "First Valentine"
-      shortEffects: ATK/INT damage taken +15% when hit by a short-range skill (enemies/10 seconds)
+      shortEffects: ATK/INT damage taken +15% when hit by a short-range skill (Enemies/10 seconds)
       effects: 
         - desc: ATK damage taken +15% when hit by a short-range skill
           all: Enemies
@@ -2889,7 +2886,7 @@
   rush:
     name: "Chocolate Blessing"
     picture: Blessing_Chocolate_Valentine_Verda
-    shortEffects: ATK/INT damage taken +40% (all enemies/20 seconds)
+    shortEffects: ATK/INT damage taken +40% (Enemies/20 seconds)
     effects: 
       - desc: ATK damage taken +40%
         duration: 20
@@ -2967,7 +2964,6 @@
 
   talents:
     - name: "Cat Ears II"
-      shortEffects: ATK +40% (party), and ATK +60% (short-range weapons)
       effects: 
         - desc: ATK +40%
           all: true
@@ -2976,7 +2972,7 @@
             buff: ATK
             buffValue: 40
         - desc: ATK +60%
-          all: Short Ranged Weapon Users
+          all: Short-ranged Weapons
           meta:
             priority: 1
             buff: ATK
@@ -2988,7 +2984,7 @@
         - desc: No flinching when taking damage of 30% HP or less when using charge assault
           all: Attackers
     - name: "Bad Luck II"
-      shortEffects: Normal attack AP recovery +100% and evasion AP cost -50% (all attackers)
+      shortEffects: Normal attack AP recovery +100% and evasion AP cost -50% (Attackers)
       effects: 
         - desc: Normal attack AP recovery +100%
           all: Attackers
@@ -3127,7 +3123,7 @@
             buffCondition: Short Range
             buffValue: 100
     - name: "Father’s Teachings"
-      shortEffects: Critical hit chance +30% and critical hit damage +30% at 100% HP
+      shortEffects: Critical hit chance +30% and critical hit damage +30% when at 100% HP
       effects: 
         - desc: Critical hit chance +30% when at 100% HP
           meta:
@@ -3272,7 +3268,7 @@
             buff: AP Cost Reduction
             buffValue: 10
     - name: "Heir of Symbological Arts"
-      shortEffects: Rush combo damage +10%/20% when hitcount is at 100/200
+      shortEffects: Rush combo damage +10%/20% when hitcount is 100/200
       effects: 
         - desc: Rush combo damage +10% when hitcount is 100 or more
           all: false
@@ -3483,16 +3479,15 @@
             buff: AP Recovery
             buffValue: 100         
     - name: "Blue Star Shower II"
-      shortEffects: Single target damage +5%, and single target damage +20% when hitcount is 150 or more (self/long-range weapons)
       effects: 
         - desc: Single target damage +5%
-          all: long-range weapons, self
+          all: Long-range weapons, Self
           meta:
             priority: 3
             buff: Single Target Damage
             buffValue: 5
         - desc: Single target damage +20% when hitcount is 150 or more
-          all: long-range weapons, self
+          all: Long-range weapons, Self
           meta:
             priority: 3
             buff: Single Target Damage
@@ -4124,69 +4119,3 @@
     maxHits: 7
 
 
-  
-- name: Delacroix
-  cat: gl
-  rating: 0
-  picture: Delacroix
-  weapon: dagger
-  ace: false
-  limited: false
-  star: 4
-
-  stats:
-    hp: 13020
-    atk: 1811
-    int: 1248
-    def: 1327
-    hit: 1015
-    grd: 763
-
-  talents:
-    - name: "Nervous Tension III"
-      effects: 
-        - desc: Nullifies paralysis (180 seconds)
-          all: true
-    - name: "Assistance II"
-      effects: 
-        - desc: Damage dealt to machines +20%
-          all: true
-          slayer: Machine
-          slayerPct: 20
-          meta:
-            priority: 4
-            buff: Damage To Machines
-            buffValue: 20
-
-  skills:
-    - name: "Flying Guillotine"
-      picture: Guillotine
-      power: ATK x 370%
-      ap: 32
-      maxHits: 4
-    - name: "Victory Terror"
-      picture: Victory_Terror
-      power: ATK x 500%
-      ap: 35
-      maxHits: 10
-    - name: "Sylvan Shot"
-      picture: Sylvan_Shot
-      power: ATK x 200%
-      ap: 20
-      maxHits: 8
-    - name: "Mirror Blade"
-      picture: Mirror_Blade
-      power: ATK x 680%
-      ap: 40
-      maxHits: 6
-
-  rush:
-    name: "Jackknife Arts"
-    picture: Jackknife_Art_Tiffan
-    effects:
-      - desc: Nullifies paralysis
-        duration: 20
-        all: true
-    power: ATK x 2500%
-    maxHits: 7
-  
