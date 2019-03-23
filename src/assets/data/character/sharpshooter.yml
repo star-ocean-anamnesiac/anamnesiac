@@ -725,7 +725,7 @@
       *Normal > Crimson Squall > Crescent Wings > Crimson Squall > Spam till out of AP  (Elemental Burst Combo.)* 
  
  
-- name: Miki (Summer)
+- name: Miki Sauvester (Summer)
   cat: gl
   rating: 9
   picture: Everlasting_Summer_Miki
@@ -743,43 +743,43 @@
     grd: 938
 
   talents:
+    - name: "Stir-Fried Noodles II"
+      effects: 
+        - desc: Damage dealt +45%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 45  
     - name: "Undivided Attention II"
       effects: 
-        - desc: ATK Damage Taken -20% when in front of target
+        - desc: ATK damage taken -20% when in front of target
           all: true
           meta:
             priority: 1
             buff: ATK Damage Taken Reduction
             buffCondition: In Front Of Target
             buffValue: 20
-        - desc: 70% Chance of Surviving a Lethal Attack at > 20% HP
+        - desc: 70% chance of surviving a lethal attack at 20% HP or more
           all: true
-    - name: "Stir-Fried Noodles II"
-      effects: 
-        - desc: Damage Dealt +45%
-          all: true
-          meta:
-            priority: 1
-            buff: Damage
-            buffValue: 45
     - name: "Side Order II"
       effects: 
-        - desc: Critical Hit Chance +30% when behind target (180 seconds)
+        - desc: Critical hit chance +30% when behind target
           all: true
           meta:
             priority: 1
             buff: Crit Rate
-            buffCondition: Behind Target (180s)
+            buffCondition: Behind Target
             buffValue: 30
     - name: "Summer Snow Cone"
       effects: 
-        - desc: Normal Attack AP Recovery +100%
+        - desc: Normal attack AP recovery +100%
           all: true
           meta:
             priority: 1
             buff: AP Recovery From Normal Attacks
             buffValue: 100
-        - desc: Evasion possible while in the air.
+        - desc: Evasion possible while in the air
 
   skills:
     - name: "Heavenly Flight"
@@ -807,14 +807,14 @@
     name: "Rain on Your Parade"
     picture: Rain_on_Your_Parade_Summer_Miki
     effects: 
-      - desc: Critical Hit Chance 10%
+      - desc: Critical hit chance 10%
         duration: 20
         all: true
         meta:
           priority: 1
           buff: Crit Rate
           buffValue: 10
-      - desc: Critical Hit Damage +40%
+      - desc: Critical damage +40%
         duration: 20
         all: true
         meta:
@@ -861,8 +861,9 @@
       **Rotation**
       
       *Normal > Hunter's Moon > Sonic Thorn > Hunter's Moon (General Combo.)* 
-    
-- name: Silmeria
+ 
+ 
+- name: Silmeria Valkyrie
   cat: gl
   rating: 6
   picture: Silmeria
@@ -880,25 +881,25 @@
     grd: 931
 
   talents:
+    - name: "Divine Arrow Burst"
+      effects: 
+        - desc: Damage dealt +30%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 30  
     - name: "Battle Maiden's Might"
       effects: 
-        - desc: Damage Dealt +10% when attack hits a single enemy
+        - desc: Single target damage +10%
           all: true
           meta:
             priority: 1
             buff: Single Target Damage
             buffValue: 10
-    - name: "Divine Arrow Burst"
-      effects: 
-        - desc: Damage Dealt +30%
-          all: true
-          meta:
-            priority: 1
-            buff: Damage
-            buffValue: 30
     - name: "Einherjar's Last Hope"
       effects: 
-        - desc: Hit Counter +2 seconds
+        - desc: Hitcount timer +2 seconds
           all: true
     - name: "Yggdrasil's Fortune"
       effects: 
@@ -907,10 +908,10 @@
   skills:
     - name: "Binding Distortion"
       picture: Binding_Distortion
+      element: Dark
       power: ATK x 190%
       ap: 20
       maxHits: 5
-      element: Dark
     - name: "Volcanic Volley"
       picture: Heavenly_Flight
       power: ATK x 400%
@@ -925,13 +926,14 @@
       picture: Savage_Sparrows
       power: ATK x 290%
       ap: 26
-      maxHits: 2
+      maxHits: 9
       
   rush:
     name: "Nibelung Valesti"
     picture: Nibelung_Valesti_Silmeria
     effects: 
-      - desc: Critical Hit Chance 30%
+      - desc: Critical hit chance +30%
+        all: false
         duration: 60
         meta:
           priority: 4
@@ -987,7 +989,8 @@
 
       *Normal > Wave Motion > Homing Pigeons > Wave Motion > * (with 20% AP reduction or more)
 
-- name: Victor (Halloween)
+
+- name: Victor Oakville (Halloween)
   cat: gl
   rating: 9
   picture: Vampire_Victor
@@ -1007,17 +1010,17 @@
   talents:
     - name: "Bloodstained Fangs II"
       effects: 
-        - desc: Recover 10% of normal attack damage as HP
+        - desc: Absorbs 10% of normal attack damage as HP
           all: true
     - name: "Crimson Cup II"
       effects: 
-        - desc: Damage Dealt +30%
+        - desc: Damage dealt +30%
           all: true
           meta:
             priority: 1
             buff: Damage
             buffValue: 30
-        - desc: +10% all element damage when HP is 100%
+        - desc: All elemental damage +10% at 100% HP
           all: true
           meta:
             priority: 1
@@ -1026,10 +1029,11 @@
             buffValue: 10
     - name: "Demon Blade"
       effects: 
-        - desc: Recover 3% of skill attack damage as HP
+        - desc: Absorbs 3% of damage dealt by skills as HP
+          all: false
     - name: "Deep Mourning"
       effects: 
-        - desc: AP consumption -40% when skill chain is 3+
+        - desc: AP cost -40% when skill chain is 3 or more
           meta:
             priority: 4
             buff: AP Cost Reduction
@@ -1054,18 +1058,18 @@
       maxHits: 5
     - name: "Dragon's Might"
       picture: Falling_Dragon
+      element: Dark
       power: ATK x 420%
       ap: 28
       maxHits: 3
-      element: Dark
       
   rush:
     name: "Thousand-Beast Demon"
     picture: Millenium_Imprisoned_Devil_HW_Victor
     effects: 
-      - desc: 40% HP recovery
+      - desc: Recover 40% HP
         all: true
-      - desc: +40% single target damage
+      - desc: Single target damage +40%
         duration: 20
         all: true
         meta:
@@ -1115,7 +1119,8 @@
       **Rotation**
       
       *Normal > Dragon's Might > Gyrfalcon Blade > Dragon's Might > Spam till out of AP  (General Combo.)*    
-    
+
+
 - name: Lymle (Official)
   cat: gl
   rating: 3
@@ -1134,21 +1139,23 @@
 
   talents:
     - name: "Amused Feelings II"
+      shortEffects: Damage dealt +35% (Self/Healers/Invokers)
       effects: 
-        - desc: Damage +35%
+        - desc: Damage dealt +35%
+          all: false
           meta:
             priority: 4
             buff: Damage
             buffValue: 35
         - desc: Damage +35%
-          all: Invoker
+          all: Invokers
           meta:
             priority: 1
             buff: Damage
             buffRole: invoker
             buffValue: 35
         - desc: Damage +35%
-          all: Healer
+          all: Healers
           meta:
             priority: 1
             buff: Damage
@@ -1156,7 +1163,7 @@
             buffValue: 35
     - name: "Unfinished Business II"
       effects: 
-        - desc: Damage +25%
+        - desc: Damage dealt +25%
           all: true
           meta:
             priority: 1
@@ -1164,14 +1171,15 @@
             buffValue: 25
     - name: "Obscure Breath"
       effects: 
-        - desc: Symbology invoking time -100%
+        - desc: Symbology cast time -100%
+          all: false
           meta:
             priority: 4
             buff: Cast Time Reduction
             buffValue: 100
     - name: "Timebender"
       effects: 
-        - desc: Symbology invoking time -20%
+        - desc: Symbology cast time -20%
           all: true
           meta:
             priority: 1
@@ -1186,34 +1194,36 @@
       maxHits: 1
     - name: "Smart Gravity Bullet"
       picture: Gravity_Bullet
+      element: Dark
       power: INT x 230%
       ap: 24
       maxHits: 12
-      element: Dark
     - name: "Plunging Fire Bolts"
       picture: Fire_Bolts
+      element: Fire
       power: INT x 200%
       ap: 20
       maxHits: 6
-      element: Fire
     - name: "Wind Blade"
       picture: Wind_Blade
+      element: Wind
       power: INT x 190%
       ap: 20
       maxHits: 2
-      element: Wind
       
   rush:
     name: "Cerberushot"
     picture: Cerberushot_Federation_Lymle
+    element: Fire
+    shortEffects: Damage dealt +60% (Self/Invokers)
     effects: 
-      - desc: Damage +60%
+      - desc: Damage dealt +60%
         duration: 20
         meta:
           priority: 4
           buff: Damage
           buffValue: 60
-      - desc: Damage +60%
+      - desc: Damage dealt +60%
         duration: 20
         all: Invoker
         meta:
@@ -1261,7 +1271,8 @@
       **Rotation**
       
       *Normal > Smart Aiming Device > Plunging Fire Bolts > Smart Aiming Device > Spam till out of AP  (General Combo.)*  
-    
+ 
+ 
 - name: Bernard
   cat: gl
   rating: 0
@@ -1282,11 +1293,11 @@
   talents:
     - name: "Third Eye"
       effects: 
-        - desc: Hitcount Timer +0.5 seconds
+        - desc: Hitcount timer +0.5 seconds
           all: true
     - name: "Hidden Talent III"
       effects:
-        - desc: Critical Rate +30%
+        - desc: Critical hit chance +30%
           all: false
           meta:
             priority: 4
@@ -1312,8 +1323,9 @@
   rush:
     name: "Revised Seraphic Thunder"
     picture: Revised_Seraphic_Thunder_Bernard
+    element: Lightning
     effects:
-      - desc: Critical Rate +50%
+      - desc: Critical hit chance +50%
         duration: 20
         all: true
         meta:
@@ -1322,8 +1334,8 @@
           buffValue: 50
     power: ATK x 2500%
     maxHits: 8
-    element: Lightning
-    
+
+
 - name: Clair (Valentine)
   cat: gl
   rating: 3
@@ -1344,6 +1356,7 @@
     - name: "Demon Girl II"
       effects: 
         - desc: Damage dealt to humanoids +40%
+          all: false
           meta:
             priority: 4
             buff: Damage To Humans
@@ -1354,7 +1367,7 @@
           all: true
     - name: "Fine Swordplay"
       effects: 
-        - desc: AP Cost -20%
+        - desc: AP cost -20%
           meta:
             priority: 4
             buff: AP Cost Reduction
@@ -1369,10 +1382,10 @@
       highlight: true
     - name: "Seraphic Thunder"
       picture: Seraphic_Thunder_II
+      element: Lightning
       power: ATK x 280%
       ap: 27
       maxHits: 8
-      element: Lightning
     - name: "Hunter’s Moon"
       picture: Hunter's_Moon
       power: ATK x 310%
@@ -1388,15 +1401,16 @@
   rush:
     name: "Revised Heavenly Flight"
     picture: Revised_Heavenly_Flight_Maiden_Clair
+    shortEffects: ATK -20 and DEF -20 (all enemies/30 seconds)
     effects: 
-      - desc: Reduces enemey ATK by 20%
+      - desc: ATK -20%
         all: Enemy
         duration: 30
         meta:
           priority: 1
           buff: Enemy ATK Reduction
           buffValue: 20
-      - desc: Reduces enemey DEF by 20%
+      - desc: DEF -20%
         all: Enemy
         duration: 30
         meta:
@@ -1404,7 +1418,7 @@
           buff: Enemy DEF Reduction
           buffValue: 20
     power: ATK x 2500%
-    maxHits: 5
+    maxHits: 4
     
   notes: >
       _Clair joins us as a freebie for Valentine in Tri-Aces gift to us by giving us an alt of best girl. She also isn't that bad of
@@ -1454,7 +1468,8 @@
       **Rotation**
       
       *Normal > Crimson Squall > Sonic Thorn > Crimson Squall > Spam till out of AP  (General Combo.)*    
-      
+
+
 - name: Anne (Official)
   cat: gl
   rating: 4
@@ -1468,13 +1483,13 @@
     atk: 2494
     int: 1563
     def: 1549
-    hit: 1249
+    hit: 1239
     grd: 938
 
   talents:
     - name: "Flawless Support II"
       effects: 
-      - desc: All elemental damage +30%
+      - desc: All elemental damage dealt +30%
         all: true
         meta:
           priority: 1
@@ -1482,7 +1497,7 @@
           buffValue: 30
     - name: "Headstrong"
       effects: 
-      - desc: Single Target Damage Dealt +15% at short range.
+      - desc: Single target damage +15% at close range
         all: true
         meta:
           priority: 3
@@ -1491,16 +1506,17 @@
           buffValue: 15
     - name: "Undeveloped Planet Memories II"
       effects: 
-        - desc: AP Recovery +50% at long range
+        - desc: AP recovery +50% at long range
           all: true
           meta:
             priority: 3
             buff: AP Recovery
             buffCondition: Long Range
             buffValue: 50
-    - name: "Undeveloped Planet Memories II"
+    - name: "Cat Shangri-La"
       effects: 
-        - desc: AP Cost -30%
+        - desc: AP cost -30% when skill chain is 3 or more
+          all: false
           meta:
             priority: 3
             buff: AP Cost Reduction
@@ -1514,8 +1530,8 @@
       ap: 27
       maxHits: 6
     - name: "Divebomb"
-      picture: Seraphic_Thunder_II
-      power: ATK x 170%
+      picture: Reverse_Trigger
+      power: ATK x 180%
       ap: 17
       maxHits: 3
       highlight: true
@@ -1526,7 +1542,7 @@
       maxHits: 3
       highlight: true
     - name: "Death From Above"
-      picture: Crimson_Squall
+      picture: Locus_Bullet
       power: ATK x 520%
       ap: 27
       maxHits: 8
@@ -1534,8 +1550,9 @@
   rush:
     name: "Smoking Gun"
     picture: Gunsmoke_Arts_Federation_Anne
+    element: Fire
     effects: 
-      - desc: Critical Rate +50%
+      - desc: Critical hit chance +50%
         all: true
         duration: 20
         meta:
