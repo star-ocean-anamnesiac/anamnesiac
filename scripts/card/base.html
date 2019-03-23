@@ -1,0 +1,211 @@
+
+<div id="root">
+  %BASE%
+</div>
+
+<style>
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('OpenSans-Regular.ttf')  format('truetype');
+  }
+
+  * {
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .char-card {
+    min-width: 700px;
+    width: 700px;
+    max-width: 700px;
+    min-height: 170px;
+    padding-bottom: 10px;
+
+    background: linear-gradient(to bottom, #787878 0%, #323232 100%);
+
+    position: relative;
+
+    border: 2px solid #eaeaea;
+
+    margin: 10px;
+    color: #fff;
+  }
+
+  .char-region {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-transform: uppercase;
+    font-style: italic;
+    opacity: 0.7;
+  }
+
+  .char-sprite {
+    width: 110px;
+    height: 110px;
+    max-width: 110px;
+    max-height: 110px;
+
+    border: 2px solid #bbbbbb;
+    border-radius: 15px;
+
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+
+  .char-class-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .char-class-icon.item {
+    margin-left: auto;
+    margin-right: 10px;
+  }
+
+  .char-tag {
+    position: absolute;
+    display: flex;
+    align-items: center;
+
+    width: 300px;
+    max-height: 22px;
+
+    top: 20px;
+    left: 155px;
+    padding-left: 10px;
+  }
+
+  .char-tag:before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-top: 11px solid #787878;
+    border-bottom: 11px solid #787878;
+    border-right: 6px solid transparent;
+  }
+
+  .char-tag:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-top: 11px solid #787878;
+    border-bottom: 11px solid #787878;
+    border-left: 6px solid transparent;
+  }
+
+  .gradient-attacker {
+    background: linear-gradient(to right, #a01b28 0%, #373737 100%);
+  }
+
+  .gradient-defender {
+    background: linear-gradient(to right, #f7bc29 0%, #373737 100%);
+  }
+
+  .gradient-healer {
+    background: linear-gradient(to right, #22caa3 0%, #373737 100%);
+  }
+
+  .gradient-invoker {
+    background: linear-gradient(to right, #971b9f 0%, #373737 100%);
+  }
+
+  .gradient-sharpshooter {
+    background: linear-gradient(to right, #1a47a3 0%, #373737 100%);
+  }
+  
+  .rush {
+    position: absolute;
+    left: 160px;
+    top: 50px;
+  }
+
+  .rush-name {
+    display: flex;
+    align-items: center;
+  }
+
+  .rush-desc {
+    margin-left: 40px;
+  }
+
+  .rush-power {
+    margin-left: 40px;
+  }
+
+  .char-bottom-border {
+    width: 530px;
+    position: absolute;
+    border-bottom: 1px solid #acacac;
+    left: 155px;
+    top: 110px;
+  }
+
+  .char-skills {
+    margin-top: 125px;
+    margin-left: 160px;
+  }
+
+  .char-skill {
+    display: flex;
+    margin-bottom: 2px;
+  }
+
+  .char-skill-left {
+    display: flex;
+    align-items: center;
+    width: 350px;
+  }
+
+  .skill-element {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+  }
+
+  .skill-bottom-border {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 675px;
+    border-bottom: 1px solid #acacac;
+    margin-left: 10px;
+  }
+
+  .bottom-container {
+    display: flex;
+  }
+
+  .talent-container {
+    margin-left: 10px;
+    min-width: 500px;
+    max-width: 500px;
+  }
+
+  .talent {
+    margin-bottom: 10px;
+  }
+
+  .talent-name {
+    margin-left: 20px;
+  }
+
+  .talent-ability {
+    margin-left: 40px;
+    padding-right: 30px;
+  }
+
+  .stat-container {
+    display: inline-block;
+  }
+
+  .stat {
+    text-transform: uppercase;
+  }
+</style>

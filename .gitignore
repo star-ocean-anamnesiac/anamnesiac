@@ -35,3 +35,6 @@ UserInterfaceState.xcuserstate
 
 src/app/data.json
 src/assets/**/\+*
+scripts/card/compiled.html
+scripts/card/**/*.png
+src/assets/cards/**/*

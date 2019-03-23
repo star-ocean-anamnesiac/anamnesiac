@@ -99,7 +99,7 @@
   rush:
     name: "Lightning-Fast Serve"
     picture: Lightning_Fast_Service_Summer_Sophia
-    element: Thunder
+    element: Lightning
     effects: 
       - desc: +40% INT
         all: true

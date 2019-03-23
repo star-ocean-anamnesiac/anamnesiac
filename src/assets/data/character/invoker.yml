@@ -728,7 +728,7 @@
       maxHits: 6
     - name: "Silencing Cyclone"
       picture: Cyclone
-      element: Thunder
+      element: Lightning
       power: INT x 700%
       ap: 50
       maxHits: 6
