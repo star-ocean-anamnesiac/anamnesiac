@@ -80,6 +80,10 @@ test('All characters have valid information', t => {
         t.truthy(skill.name, 'skill.name must exist' + parenName);
         if(skill.maxHits) { t.truthy(skill.power, 'skill.power must exist if it skill.maxHits exists' + parenName); }
         t.truthy(skill.ap, 'skill.ap must exist' + parenName);
+        
+        if(skill.element) {
+          t.true(_.includes(['Dark', 'Earth', 'Fire', 'Ice', 'Light', 'Lightning', 'Wind'], skill.element), 'skill element must be a valid element' + parenName);
+        }
 
         t.true(fs.existsSync(`src/assets/skills/${skill.picture}.png`), 'skill ' + skill.name + ' must reference a valid image' + parenName);
 
@@ -94,6 +98,11 @@ test('All characters have valid information', t => {
       t.truthy(char.rush.maxHits, 'rush.maxHits must exist' + parenName);
       t.true(fs.existsSync(`src/assets/rush/${char.rush.picture}.png`), 'rush ' + char.rush.name + ' must reference a valid image' + parenName);
 
+        
+      if(char.rush.element) {
+        t.true(_.includes(['Dark', 'Earth', 'Fire', 'Ice', 'Light', 'Lightning', 'Wind'], char.rush.element), 'rush element must be a valid element' + parenName);
+      }
+      
       const rushPicInfo = imageSize(`src/assets/rush/${char.rush.picture}.png`);
       t.is(rushPicInfo.type, 'png', 'rush ' + char.rush.name +  ' image must be a png' + parenName);
 
