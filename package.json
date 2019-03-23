@@ -23,8 +23,7 @@
     "prepare:create:cards": "node scripts/card/compile && node scripts/card/pup",
     "prepare:pngcrush": "node scripts/pngcrush",
     "prepare:cleanup": "node scripts/build-cleanup",
-    "prepare:api": "node scripts/build-api",
-    "postinstall": "npm run consolidate"
+    "prepare:api": "node scripts/build-api"
   },
   "private": true,
   "dependencies": {

@@ -13,6 +13,7 @@ A Star Ocean: Anamnesis companion app.
 # How to run?
 
 * `npm i`
+* `npm run consolidate`
 * `npm start`
 
 ## Changing The Data
