@@ -1043,42 +1043,43 @@
     - name: "Honeymoon Dreams II"
       effects: 
         - desc: No flinching when taking damage of 20% HP or less
-          all: Self & Invokers & Healers
+          all: Invokers and Healers, Self
     - name: "Carnivore"
       effects: 
-        - desc: Recover 20% of Normal Attack damage as HP
+        - desc: Absorb 20% of damage dealt by normal attacks as HP
+          all: false
 
   skills:
-    - name: "Bloodstorm Revolution"
-      picture: Bloodstorm_Revolution
-      power: ATK x 550%
-      ap: 38
-      maxHits: 10
-      highlight: true
     - name: "Nether Strike"
       picture: Nether_Strike
+      element: Fire
       power: ATK x 250%
       ap: 24
       maxHits: 5
-      element: Fire
-      highlight: true
-    - name: "Flying Guillotine"
-      picture: Guillotine
-      power: ATK x 370%
-      ap: 32
-      maxHits: 6
+      highlight: true  
     - name: "Vampiric Flash"
       picture: Vampiric_Flash
       power: ATK x 220%
       ap: 32
       maxHits: 6
       highlight: true
+    - name: "Flying Guillotine"
+      picture: Guillotine
+      power: ATK x 370%
+      ap: 32
+      maxHits: 6      
+    - name: "Bloodstorm Revolution"
+      picture: Bloodstorm_Revolution
+      power: ATK x 550%
+      ap: 38
+      maxHits: 10
+      highlight: true
       
   rush:
     name: "Sentimental Blade"
     picture: Sentimental_Blade_Girls_Day_Miki
     effects: 
-      - desc: Damage Taken -40%
+      - desc: Damage taken -40%
         duration: 20
         all: true
         meta:
@@ -1127,7 +1128,8 @@
       *Normal > Nether Strike > Bloodstorm Revolution > Nether Strike (100AP damage rotation)*
       
       *Normal > Nether Strike > Flying Guillotine > Nether Strike > Nether Strike (104AP damage rotation)*
-      
+
+
 - name: Rain
   cat: gl
   rating: 10
@@ -1146,7 +1148,25 @@
     grd: 1022
 
   talents:
-    - name: "Knight's Honor"
+    - name: "Heart on Fire"
+      shortEffects: Undermine debuffs ATK/INT/DEF -10% for 10 seconds.
+      effects: 
+        - desc: Undermine inflicts ATK -10% debuff on target (10 seconds)
+          meta:
+            priority: 4
+            buff: Enemy ATK Reduction
+            buffValue: 10
+        - desc: Undermine inflicts INT -10% debuff on target (10 seconds)
+          meta:
+            priority: 4
+            buff: Enemy INT Reduction
+            buffValue: 10
+        - desc: Undermine inflicts DEF -10% debuff on target (10 seconds)
+          meta:
+            priority: 4
+            buff: Enemy DEF Reduction
+            buffValue: 10
+    - name: "Knight's Honor II"
       effects: 
         - desc: HP +30%
           all: true
@@ -1154,37 +1174,22 @@
             priority: 1
             buff: HP
             buffValue: 30
-        - desc: Will not flinch to damage under 20% max HP
-          all: true
-    - name: "Heart on Fire"
+        - desc: No flinching when taking damage of 20% HP or less
+          all: true            
+    - name: "Young & Skilled II"
       effects: 
-        - desc: Undermine inflicts ATK-10% debuff on target for 10s.
-          meta:
-            priority: 4
-            buff: Enemy ATK Reduction
-            buffValue: 10
-        - desc: Undermine inflicts INT-10% debuff on target for 10s.
-          meta:
-            priority: 4
-            buff: Enemy INT Reduction
-            buffValue: 10
-        - desc: Undermine inflicts DEF-10% debuff on target for 10s.
-          meta:
-            priority: 4
-            buff: Enemy DEF Reduction
-            buffValue: 10
-    - name: "Young & Skilled"
-      effects: 
-        - desc: Single Target damage +20%
+        - desc: Single target damage +20%
           all: true
           meta:
             priority: 1
             buff: Single Target Damage
             buffValue: 20
-        - desc: Taunt+3
+        - desc: Taunt +3
+          all: false
     - name: "Knight of Grandshelt"
       effects:
-        - desc: ATK+20%
+        - desc: ATK +20%
+          all: false
           meta:
             priority: 4
             buff: ATK
@@ -1198,22 +1203,22 @@
       maxHits: 2
     - name: "Hellfire Slash"
       picture: Sword_Bomber
+      element: Fire
       power: ATK x 550%
       ap: 38
       maxHits: 2
-      element: Fire
       highlight: true
     - name: "Flash of Steel"
       picture: Air_Slash_I
       power: ATK x 160%
       ap: 14
-      maxHits: 2
+      maxHits: 1
     - name: "Lava Floor"
       picture: Lava_Floor
+      element: Earth
       power: ATK x 550%
       ap: 32
       maxHits: 2
-      element: Earth
       highlight: true
       
   rush:
@@ -1227,7 +1232,7 @@
           priority: 4
           buff: AP Cost Reduction
           buffValue: 40
-      - desc: ATK Damage +30%
+      - desc: ATK damage dealt +30%
         duration: 20
         meta:
           priority: 1
@@ -1268,7 +1273,7 @@
       
       **Cons**
       
-      - Poor at building Hit Count
+      - Poor at building hitcount
       
       - Buffs can be overwritten by conditional buffs
       
@@ -1280,7 +1285,8 @@
       **Rotation**
       
       *Normal > Undermine > Flash of Steel > Lava Floor > Lava Floor - (Damage rotation)*    
-      
+  
+  
 - name: Dias (Awakened)
   cat: gl
   rating: 9
@@ -1327,18 +1333,19 @@
             buffValue: 20
     - name: "Vow to Cecille II"
       effects: 
-        - desc: Will not flinch to damage under 30% max HP
+        - desc: No flinching when taking damage of 30% HP or less
           all: Close Range
     - name: "Equal Footing"
+      shortEffects: Damage dealt +40% (Attackers/Defenders)
       effects: 
-        - desc: Damage +40%
+        - desc: Damage dealt +40%
           all: Attacker
           meta:
             priority: 1
             buff: Damage
             buffRole: attacker
             buffValue: 40
-        - desc: Damage +40%
+        - desc: Damage dealt +40%
           all: Defender
           meta:
             priority: 1
@@ -1347,7 +1354,7 @@
             buffValue: 40
     - name: "The Fight For Supreme Power"
       effects: 
-        - desc: Taunt+3
+        - desc: Taunt +3
     - name: "A Mercenary's Strength"
       effects: 
         - desc: Restore 5% HP every 1 second during CA standby.
