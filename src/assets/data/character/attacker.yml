@@ -1312,7 +1312,7 @@
     picture: Unholy_Torrent_Phia
     effects: 
       - desc: Occasionally freezes foes.
-    power: ATK x4000%
+    power: ATK x 4000%
     maxHits: 13
     
   notes: >
