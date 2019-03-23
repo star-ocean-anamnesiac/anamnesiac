@@ -2688,3 +2688,69 @@
     power: ATK x 2000%
     maxHits: 5
 
+  
+- name: Delacroix
+  cat: gl
+  rating: 0
+  picture: Delacroix
+  weapon: dagger
+  ace: false
+  limited: false
+  star: 4
+
+  stats:
+    hp: 13020
+    atk: 1811
+    int: 1248
+    def: 1327
+    hit: 1015
+    grd: 763
+
+  talents:
+    - name: "Nervous Tension III"
+      effects: 
+        - desc: Nullifies paralysis (180 seconds)
+          all: true
+    - name: "Assistance II"
+      effects: 
+        - desc: Damage dealt to machines +20%
+          all: true
+          slayer: Machine
+          slayerPct: 20
+          meta:
+            priority: 4
+            buff: Damage To Machines
+            buffValue: 20
+
+  skills:
+    - name: "Flying Guillotine"
+      picture: Guillotine
+      power: ATK x 370%
+      ap: 32
+      maxHits: 4
+    - name: "Victory Terror"
+      picture: Victory_Terror
+      power: ATK x 500%
+      ap: 35
+      maxHits: 10
+    - name: "Sylvan Shot"
+      picture: Sylvan_Shot
+      power: ATK x 200%
+      ap: 20
+      maxHits: 8
+    - name: "Mirror Blade"
+      picture: Mirror_Blade
+      power: ATK x 680%
+      ap: 40
+      maxHits: 6
+
+  rush:
+    name: "Jackknife Arts"
+    picture: Jackknife_Art_Tiffan
+    effects:
+      - desc: Nullifies paralysis
+        duration: 20
+        all: true
+    power: ATK x 2500%
+    maxHits: 7
+  
