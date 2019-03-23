@@ -405,7 +405,7 @@
       maxHits: 6
     - name: "Aqua Spread"
       picture: Hydroblades
-      element: ice
+      element: Ice
       power: ATK x 210%
       ap: 20
       maxHits: 2
