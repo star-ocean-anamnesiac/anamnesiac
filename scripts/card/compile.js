@@ -47,7 +47,7 @@ const helpers = {
 
 const allCharHTML = allCharacters.map(char => {
   return `
-<div class="char-card" data-character="${char.picture}-${char.cat}">
+<div class="char-card" data-character="${char.picture}-${char.awakened ? 'a-' : ''}${char.cat}">
 
   <img class="char-sprite" src="${inlineImg(`${ ASSET_BASE }/characters/${ char.picture }.png`)}">
 
