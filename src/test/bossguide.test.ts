@@ -32,6 +32,7 @@ test('All boss guides have valid information', t => {
         t.truthy(weakness.plain || weakness.element || weakness.status, 'weakness.plain, weakness.element or weakness.status must be set' + parenName);
 
         if(weakness.element) {
+          t.true(_.includes(['Dark', 'Earth', 'Fire', 'Ice', 'Light', 'Lightning', 'Wind'], weakness.element), 'weakness element must be a valid element' + parenName);
           t.truthy(weakness.percentWeakness, 'weakness.percentWeakness must be set if element is set' + parenName);
           t.true(fs.existsSync(`src/assets/icons/element/el-${weakness.element.toLowerCase()}.png`), 'guide must reference a valid element' + parenName);
         }
