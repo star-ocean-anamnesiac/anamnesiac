@@ -28,6 +28,7 @@
         - desc: No flinching when taking damage of 20% HP or less
           all: true
     - name: "Dark Impulse"
+      shortEffects: Recovers 100% AP (self) and 10 AP (all allies) with a perfect dodge
       effects: 
         - desc: Recovers 100% AP on perfect dodge
           all: false
@@ -40,7 +41,7 @@
             priority: 1
             buff: Single Target Damage
             buffValue: 20
-        - desc: Single target damage +40% when HP is 100%
+        - desc: Single target damage +40% at 100% HP
           all: true
           meta:
             priority: 3
@@ -48,6 +49,7 @@
             buffCondition: HP is 100%
             buffValue: 40
     - name: "Beautiful World"
+      shortEffects: ATK/DEF +20%
       effects: 
         - desc: ATK +20%
           all: false
@@ -454,10 +456,10 @@
             buff: INT Damage Taken Reduction
             buffValue: 20    
     - name: "Great Charisma"
-      shortEffects: ATK +60% and AP cost -20% when targeted by enemy (Self)
+      shortEffects: ATK +60% and AP cost -20% when targeted by enemy
       effects: 
         - desc: Rush Gauge limit -30%
-          all: false 
+          all: false
         - desc: ATK +60% when targeted by enemy
           all: false
           meta:
@@ -473,7 +475,7 @@
             buffValue: 20
             buffCondition: When holding aggro
     - name: "Beach Skirt Wrap"
-      shortEffects: Single target damage +30% and stun chance +15% when not targeted by enemy (Party)
+      shortEffects: Single target damage +30% and stun chance +15% when not targeted by enemy (party)
       effects:
         - desc: Single target damage +30% when not targeted by enemy
           all: true
@@ -618,6 +620,7 @@
         - desc: No flinching when taking damage of 25% HP or less
           all: Close Range
     - name: "Encountered a Worthy Rival"
+      shortEffects: Damage dealt +20% (all attackers/all defenders)
       effects: 
         - desc: Damage dealt +20%
           all: Attacker
@@ -745,7 +748,7 @@
             buffCondition: Hit Count > 50
             buffValue: 15
     - name: "Radiant Snow Crystal II"
-      shortEffects: Single target damage +20%, and single target damage +40$ when hitcount is 150 or more
+      shortEffects: Single target damage +20%, and single target damage +40% when hitcount is 150 or more (party)
       effects: 
         - desc: Single target damage +20%
           all: true
@@ -771,6 +774,7 @@
         - desc: No flinching when taking damage of 20% HP or less
           all: true
     - name: "Miracle Symbology"
+      shortEffects: ATK/HP +15%
       effects: 
         - desc: ATK +15%
           meta:
@@ -1042,8 +1046,8 @@
         - desc: 70% of surviving a lethal attack at 5% HP or more
     - name: "Honeymoon Dreams II"
       effects: 
-        - desc: No flinching when taking damage of 20% HP or less
-          all: Invokers and Healers, Self
+        - desc: No flinching when taking damage of 20% HP or less (self/all invokers/all healers)
+          all: false
     - name: "Carnivore"
       effects: 
         - desc: Absorb 20% of damage dealt by normal attacks as HP
@@ -1149,7 +1153,7 @@
 
   talents:
     - name: "Heart on Fire"
-      shortEffects: Undermine debuffs ATK/INT/DEF -10% for 10 seconds.
+      shortEffects: ATK/INT/DEF -10% inflicted by Undermine (enemy/10 seconds)
       effects: 
         - desc: Undermine inflicts ATK -10% debuff on target (10 seconds)
           meta:
@@ -1336,7 +1340,7 @@
         - desc: No flinching when taking damage of 30% HP or less
           all: Close Range
     - name: "Equal Footing"
-      shortEffects: Damage dealt +40% (Attackers/Defenders)
+      shortEffects: Damage dealt +40% (all attackers/all defenders)
       effects: 
         - desc: Damage dealt +40%
           all: Attacker
@@ -1357,7 +1361,7 @@
         - desc: Taunt +3
     - name: "A Mercenary's Strength"
       effects: 
-        - desc: Restore 5% HP every 1 second during CA standby.
+        - desc: Restore 5% HP every 1 second during CA standby
 
   skills:
     - name: "Annihilating Air Slash"
@@ -1446,7 +1450,8 @@
       *Normal > Annihiliating Air Slash > Double Slash > Annihiliating Air Slash > spam this until no AP - (Damage rotation)*
       
       *Annihiliating Air Slash > Dragon Roar > Annihiliating Air Slash > Dragon Roar > spam this until no AP - (Range rotation)*
-    
+ 
+ 
 - name: Gideon
   cat: gl
   rating: 0
@@ -1528,7 +1533,7 @@
       effects: 
         - desc: Status ailment nullification (90 seconds)
           all: Close Range
-        - desc: No flinching from damage taken at 15% HP or less
+        - desc: No flinching when taking damage of 15% HP or less
           all: Close Range
 
   skills:
