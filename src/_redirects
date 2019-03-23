@@ -1,5 +1,7 @@
 /data           /data.json  200     
 
+/assets/cards/  /assets/cards/index.html 200
+
 /characters/*   /index.html 200
 /items/*        /index.html 200
 /party-creator  /index.html 200

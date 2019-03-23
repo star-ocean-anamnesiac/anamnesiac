@@ -56,6 +56,19 @@ const init = async () => {
   );
   
   await browser.close();
+
+  const allCardContent = allCharacters.sort((left, right) => {
+    if(left.name < right.name) return -1;
+    if(left.name > right.name) return 1;
+    return left.cat < right.cat ? -1 : 1;
+  }).map(char => {
+    return `
+      <h3>${char.name} [${char.cat.toUpperCase()}]</h3>
+      <img src="${char.picture}-${char.awakened ? 'a-' : ''}${char.cat}.png">
+    `
+  }).join('<br>');
+
+  fs.writeFileSync('src/assets/cards/index.html', allCardContent);
 };
 
 init();
