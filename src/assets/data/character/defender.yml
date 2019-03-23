@@ -587,7 +587,7 @@
     grd: 1036
 
   talents:
-    - name: "Expel's Renowned Swordsman"
+    - name: "Expel's Swordsmaster II"
       effects: 
         - desc: DEF +20%
           all: true
@@ -601,7 +601,7 @@
             priority: 1
             buff: ATK Damage Taken Reduction
             buffValue: 20
-    - name: "Aloof Swordsmanship"
+    - name: "Ruthless Swordsmanship II"
       effects: 
         - desc: ATK +30%
           all: false
@@ -615,12 +615,12 @@
             priority: 4
             buff: DEF
             buffValue: 20
-    - name: "Oath to Cecille"
+    - name: "Vow to Cecille II"
       effects: 
         - desc: No flinching when taking damage of 25% HP or less
           all: Close Range
-    - name: "Encountered a Worthy Rival"
-      shortEffects: Damage dealt +20% (all attackers/all defenders)
+    - name: "Equal Footing"
+      shortEffects: Damage dealt +20% (Attackers/Defenders)
       effects: 
         - desc: Damage dealt +20%
           all: Attacker
@@ -642,7 +642,7 @@
       picture: Air_Slash_II
       power: ATK x 200%
       ap: 20
-      maxHits: 5
+      maxHits: 4
       highlight: true
     - name: "Double Slash"
       picture: Double_Slash_II
