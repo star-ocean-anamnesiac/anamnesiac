@@ -18,7 +18,6 @@
 
   talents:
     - name: "Fleeting Gentleness"
-      shortEffects: Damage dealt +45%, and damage dealt +55% when at 100% HP
       effects: 
         - desc: Damage dealt +45%
           all: true
@@ -26,7 +25,7 @@
             priority: 1
             buff: Damage
             buffValue: 45
-        - desc: Damage dealt +55% when HP is at 100%
+        - desc: Damage dealt +55% when at 100% HP
           all: true
           meta:
             priority: 1
@@ -190,7 +189,7 @@
       maxHits: 12
       
   rush:
-    name: "Energy Barrage"
+    name: "Energy Burst Barrage"
     picture: Energy_Burst_Barrage_Maria
     effects: 
       - desc: Removes buffs
@@ -1020,7 +1019,7 @@
             priority: 1
             buff: Damage
             buffValue: 30
-        - desc: All elemental damage +10% at 100% HP
+        - desc: All elemental damage dealt +10% when at 100% HP
           all: true
           meta:
             priority: 1
@@ -1401,7 +1400,7 @@
   rush:
     name: "Revised Heavenly Flight"
     picture: Revised_Heavenly_Flight_Maiden_Clair
-    shortEffects: ATK -20 and DEF -20 (all enemies/30 seconds)
+    shortEffects: ATK/DEF -20 (Enemies/30 seconds)
     effects: 
       - desc: ATK -20%
         all: Enemy
@@ -1598,8 +1597,9 @@
       **Rotation**
       
       *Normal > Divebomb > Skyline Spray > Divebomb > Spam till out of AP  (General Combo.)* 
-      
-- name: Maria (Awakened)
+
+
+- name: Maria Traydor (Awakened)
   cat: gl
   rating: 10
   picture: Maria
@@ -1620,7 +1620,7 @@
   talents:
     - name: "Natural Born Leader II"
       effects: 
-        - desc: Damage +50%
+        - desc: Damage dealt +50%
           all: true
           meta:
             priority: 1
@@ -1635,22 +1635,22 @@
             buffValue: 20
     - name: "Charged Kick"
       effects: 
-        - desc: Evasion AP consumption -50%
+        - desc: Evasion AP cost -50%
           all: true
-        - desc: Evasion speed and distance +100%
+        - desc: Evasion speed/distance +100%
     - name: "Bloodstained Fangs II"
       effects: 
-        - desc: Recover 10% of normal attack damage as HP at 100 hit count
+        - desc: Absorbs 10% of normal attack damage as HP when hitcount is 100 or more
           all: true
     - name: "Quark Carrier"
       effects: 
-        - desc: AP Recovery +50%
+        - desc: AP recovery +50%
           all: true
           meta:
             priority: 2
             buff: AP Recovery
             buffValue: 50
-        - desc: AP Cost -5%
+        - desc: AP cost -5%
           meta:
             priority: 1
             buff: AP Cost Reduction
@@ -1681,32 +1681,32 @@
       ap: 29
       maxHits: 9
       highlight: true
-    - name: "Laser Bullet"
+    - name: "Laser Blast"
       picture: Laser_Blast
       power: ATK x 210%
       ap: 20
       maxHits: 3
     - name: "Gravity Bullet"
       picture: Gravity_Bullet
+      element: Dark
       power: ATK x 260%
       ap: 24
       maxHits: 12
-      element: Dark
-    - name: "Raptor Buller"
+    - name: "Raptorshot"
       picture: Raptor_Bullet
+      element: Lightning
       power: ATK x 390%
       ap: 29
       maxHits: 9
-      element: lightning
       highlight: true
       
   rush:
-    name: "Energy Barrage"
+    name: "Energy Burst Barrage"
     picture: Energy_Burst_Barrage_Maria
     effects: 
-      - desc: Removes Buffs
+      - desc: Removes buffs
         all: Enemies
-      - desc: Critical Rate +40%
+      - desc: Critical hit chance +40%
         duration: 20
         all: true
         meta:
@@ -1760,7 +1760,8 @@
       
       *Normal > Crimson Squall > Aiming Device  > Crimson Squall > Crimson Squall (Rush Gain)*
       
-- name: Maria (Bridal)
+      
+- name: Maria Traydor (Bridal)
   cat: gl
   rating: 8
   picture: Bridal_Maria
@@ -1780,29 +1781,30 @@
   talents:
     - name: "A Most Dignified Profile II"
       effects: 
-        - desc: Damage +40%
+        - desc: Damage dealt +40%
           all: true
           meta:
             priority: 1
             buff: Damage
             buffValue: 40
     - name: "Bramble Burst Barrage II"
+      shortEffects: Damage dealt +50%/55%/60% when hitcount is 100/150/200 (Party)
       effects: 
-        - desc: Damage +50% when hit count is over 100.
+        - desc: Damage dealt +50% when hitcount is 100 or more
           all: true
           meta:
             priority: 3
             buff: Damage
             buffCondition: Hit Count > 100
             buffValue: 50
-        - desc: Damage +55% when hit count is over 150.
+        - desc: Damage dealt +55% when hitcount is 150 or more
           all: true
           meta:
             priority: 3
             buff: Damage
             buffCondition: Hit Count > 150
             buffValue: 55
-        - desc: Damage +60% when hit count is over 200.
+        - desc: Damage dealt +60% when hitcount is 200 or more
           all: true
           meta:
             priority: 3
@@ -1811,22 +1813,23 @@
             buffValue: 60
     - name: "Hidden Passion II"
       effects: 
-        - desc: Additional Hit on that Deals 10% of Damage Dealt on Normal Attacks.
+        - desc: Additional hit that deals 10% of damage during normal attacks
           all: true
     - name: "Youthful Days"
+      shortEffects: AP cost -15% and ATK +15% when hitcount is 50 or more
       effects: 
-        - desc: ATK +10% at 50 hits or more.
+        - desc: AP cost -15% when hitcount is 50 or more
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Hit Count > 50
+            buffValue: 15      
+        - desc: ATK +10% when hitcount is 50 or more
           meta:
             priority: 3
             buff: ATK
             buffCondition: Hit Count > 50
             buffValue: 10
-        - desc: AP Cost -15% at 50 hits or more.
-          meta:
-            priority: 1
-            buff: AP Cost Reduction
-            buffCondition: Hit Count > 50
-            buffValue: 15
 
   skills:
     - name: "Nettlesome Device"
@@ -1834,11 +1837,6 @@
       power: ATK x 180%
       ap: 18
       maxHits: 1
-    - name: "Nettlesome Burst"
-      picture: Burst_Emission
-      power: ATK x 580%
-      ap: 38
-      maxHits: 6
     - name: "Nettlesome Laser"
       picture: Laser_Blast
       power: ATK x 220%
@@ -1846,14 +1844,20 @@
       maxHits: 3
     - name: "Nettlesome Bullet"
       picture: Gravity_Bullet
+      element: Dark
       power: ATK x 270%
       ap: 24
       maxHits: 10
-      element: Dark
+    - name: "Nettlesome Burst"
+      picture: Burst_Emission
+      power: ATK x 580%
+      ap: 38
+      maxHits: 6
       
   rush:
     name: "Ethereal Energy Burst"
     picture: Ethereal_Burst_Emission_Bridal_Maria
+    element: Light
     effects: 
       - desc: ATK +60%
         duration: 20
@@ -1902,8 +1906,9 @@
       **Rotation**
 
       *Normal > Gravity Bullet (Thorn) > Aiming Device (Thorn) > Gravity Bullet (Thorn) > Spam Till Out of AP (General Damage)*
-      
-- name: Nel (Bridal)
+
+
+- name: Nel Zelpher (Bridal)
   cat: gl
   rating: 8
   picture: Bridal_Nel
@@ -1922,23 +1927,23 @@
 
   talents:
      - name: "Crimson Blossom Flurry II"
-       shortEffects: "Crit Rate +10%/20%/30% when Hit Count > 100/150/200"
+       shortEffects: Critical hit chance +10%/20%/30% when hitcount is 100/150/200 (Party)
        effects: 
-        - desc: Crit Rate +10% when Hit Count is over 100
+        - desc: Critical hit chance +10% when hitcount is 100 or more
           all: true
           meta:
             priority: 3
             buff: Crit Rate
             buffCondition: Hit Count > 100
             buffValue: 10
-        - desc: Crit Rate +20% when Hit Count is over 150
+        - desc: Critical hit chance +20% when hitcount is 150 or more
           all: true
           meta:
             priority: 3
             buff: Crit Rate
             buffCondition: Hit Count > 150
             buffValue: 20
-        - desc: Crit Rate +30% when Hit Count is over 200
+        - desc: Critical hit chance +30% when hitcount is 200 or more
           all: true
           meta:
             priority: 3
@@ -1946,23 +1951,23 @@
             buffCondition: Hit Count > 200
             buffValue: 30
      - name: "Sincere Devotion II"
-       shortEffects: "Crit Damage +10%/20%/30% when Hit Count > 100/150/200"
+       shortEffects: Critical hit damage +10%/20%/30% when hitcount is 100/150/200 (Party)
        effects: 
-        - desc: Crit Damage +10% when Hit Count is over 100
+        - desc: Critical hit damage +10% when hitcount is 100 or more
           all: true
           meta:
             priority: 3
             buff: Crit Damage
             buffCondition: Hit Count > 100
             buffValue: 10
-        - desc: Crit Damage +20% when Hit Count is over 150
+        - desc: Critical hit damage +20% when hitcount is 150 or more
           all: true
           meta:
             priority: 3
             buff: Crit Damage
             buffCondition: Hit Count > 150
             buffValue: 20
-        - desc: Crit Damage +30% when Hit Count is over 200
+        - desc: Critical hit damage +30% when hitcount is 200 or more
           all: true
           meta:
             priority: 3
@@ -1971,28 +1976,29 @@
             buffValue: 30
      - name: "A Proper Lady II"
        effects: 
-        - desc: ATK +30% during Charge Assault
+        - desc: Hitcount timer +3 seconds
+          all: true
+        - desc: Single target damage +20%
+          all: true
+          meta:
+            priority: 1
+            buff: Single Target Damage
+            buffValue: 20          
+        - desc: ATK +30% during charge assault
           meta:
             priority: 3
             buff: ATK
             buffCondition: Charge Assault
             buffValue: 30
-        - desc: Hit counter +3s
-          all: true
-        - desc: Single Target damage +20%
-          all: true
-          meta:
-            priority: 1
-            buff: Single Target Damage
-            buffValue: 20
      - name: "Well Concealed Dream"
        effects: 
-        - desc: No Flinching when taking Damage < 10% of Max HP
-        - desc: AP Cost -10%
+        - desc: No flinching when taking damage at 10% HP or less
+        - desc: AP cost -10%
           meta:
             priority: 1
             buff: AP Cost Reduction
             buffValue: 10
+        - desc: Nullifies critical damage penalty when using charge assault     
 
   skills:
     - name: "Blooming Shot"
@@ -2004,7 +2010,7 @@
       picture: Guillotine
       power: ATK x 290%
       ap: 26
-      maxHits: 5
+      maxHits: 4
     - name: "Blooming Sword"
       picture: Dancing_Sword
       power: ATK x 460%
@@ -2020,7 +2026,7 @@
     name: "Bouquet of Flowers"
     picture: Pirouette_of_the_First_Spring_Bridal_Nel
     effects: 
-      - desc: ATK Damage +40%
+      - desc: ATK damage dealt +40%
         duration: 20
         all: true
         meta:
@@ -2075,7 +2081,6 @@
       (Hit Count)*
 
 
-    
 - name: Hal
   cat: gl
   rating: 0
@@ -2086,12 +2091,12 @@
   star: 3
 
   stats:
-    hp: 9020
-    atk: 1236
-    int: 867
-    def: 936
-    hit: 710
-    grd: 539
+    hp: 8600
+    atk: 1176
+    int: 817
+    def: 886
+    hit: 670
+    grd: 509
 
   talents:
     - name: "Greater Eagle Eye"
@@ -2151,12 +2156,12 @@
   star: 3
 
   stats:
-    hp: 7945
-    atk: 1247
-    int: 890
-    def: 992
-    hit: 735
-    grd: 532
+    hp: 7525
+    atk: 1187
+    int: 840
+    def: 942
+    hit: 695
+    grd: 502
 
   talents:
     - name: "Deep Concentration II"
@@ -2198,7 +2203,7 @@
     name: "Revised Dancing Sword"
     picture: Revised_Dancing_Sword_Eleanor
     effects:
-      - desc: Remove all buffs
+      - desc: Removes all buffs
         all: Enemies
     power: ATK x 3000%
     maxHits: 7
@@ -2214,12 +2219,12 @@
   star: 3
 
   stats:
-    hp: 9020
-    atk: 1878
-    int: 867
-    def: 1689
-    hit: 728
-    grd: 520
+    hp: 8600
+    atk: 1176
+    int: 817
+    def: 886
+    hit: 688
+    grd: 490
 
   talents:
     - name: "Professional Assassin"
@@ -2311,7 +2316,7 @@
             buffValue: 15
     - name: "Impeccable Skill"
       effects:
-        - desc: +15% Stun Chance
+        - desc: Stun chance +15%
           all: false
           meta:
             priority: 1
@@ -2433,7 +2438,7 @@
   talents:
     - name: "Resistance II"
       effects: 
-        - desc: Hit count timer +1 second
+        - desc: Hitcount timer +1 second
           all: true
     - name: "Even Greater Resolve"
       effects: 
@@ -2682,3 +2687,4 @@
           buffValue: 30
     power: ATK x 2000%
     maxHits: 5
+
