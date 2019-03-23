@@ -317,6 +317,7 @@
   rush:
     name: "Divine Wrath"
     picture: Divine_Wrath_Nel
+    shortEffects: 15% chance of adding poison to attacks, and an additional hit that deals 20% more damage
     effects: 
       - desc: Attacks have +15% chance to poison
         duration: 20
