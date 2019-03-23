@@ -18,14 +18,15 @@
 
   talents:
     - name: "Fleeting Gentleness"
+      shortEffects: Damage dealt +45%, and damage dealt +55% when at 100% HP
       effects: 
-        - desc: Damage +45%
+        - desc: Damage dealt +45%
           all: true
           meta:
             priority: 1
             buff: Damage
             buffValue: 45
-        - desc: Damage +55% when HP is at 100%
+        - desc: Damage dealt +55% when HP is at 100%
           all: true
           meta:
             priority: 1
@@ -35,14 +36,14 @@
     - name: "Scanner Type"
       effects: 
         - desc: Evasion AP consumption -50%
-          all: true
+          all: false
         - desc: Movement speed +30%
-          all: true
-    - name: "Blade of Revenge"
+          all: false
+    - name: "Treacherous Blade"
       effects: 
-        - desc: Enables evasion during air attacks
+        - desc: Evasion possible during air attacks
         - desc: Movement distance & speed +100%
-    - name: "Whereabouts of Brethren"
+    - name: "Gathering Keepsakes"
       effects: 
         - desc: ATK +15%
           meta:
@@ -151,7 +152,7 @@
   talents:
     - name: "Natural Born Leader II"
       effects: 
-        - desc: Damage +40%
+        - desc: Damage dealt +40%
           all: true
           meta:
             priority: 1
@@ -194,7 +195,7 @@
     effects: 
       - desc: Removes buffs
         all: Enemies
-      - desc: Critical chance +40%
+      - desc: Critical hit chance +40%
         duration: 20
         all: true
         meta:
@@ -273,7 +274,7 @@
             buffValue: 15
     - name: "Prayer for Peace"
       effects: 
-        - desc: Critical chance +10%
+        - desc: Critical hit chance +10%
           all: true
           meta:
             priority: 1
@@ -395,18 +396,18 @@
     hp: 14280
     atk: 1995
     int: 1391
-    def: 1433
+    def: 1432
     hit: 1120
     grd: 847
 
   talents:
     - name: "Inspired Action II"
       effects: 
-        - desc: Hitcount Timer +2 seconds
+        - desc: Hitcount timer +2 seconds
           all: true
     - name: "Daredevil's Courage II"
       effects: 
-        - desc: Additional Hit on that Deals 20% of Damage Dealt on Normal Attacks.
+        - desc: Additional hit that deals 20% of damage during normal attacks
         
   skills:
     - name: "Heavenly Flight"
@@ -414,17 +415,17 @@
       power: ATK x 460%
       ap: 35
       maxHits: 4
-    - name: "Laser Blaster"
+    - name: "Laser Blast"
       picture: Laser_Blast
       power: ATK x 190%
       ap: 20
       maxHits: 3
     - name: "Seraphic Thunder"
       picture: Seraphic_Thunder_I
-      power: ATK x 310%
+      element: Lightning
+      power: ATK x 330%
       ap: 30
       maxHits: 8
-      element: Lightning
     - name: "Hunter's Moon"
       picture: Hunter's_Moon
       power: ATK x 370%
@@ -436,6 +437,7 @@
     picture: Energy_Burst_Glaive_Emmerson
     effects: 
         - desc: ATK +80% 
+          all: false
           duration: 20
           meta:
             priority: 1
@@ -482,7 +484,8 @@
       **Rotation**
       
       *Normal > Hunter's Moon > Seraphic Thunder > Hunter's Moon (General Damage)*
-    
+ 
+ 
 - name: Clair Lasbard
   cat: gl
   rating: 6
@@ -502,7 +505,7 @@
   talents:
     - name: "Reach Further Beyond"
       effects: 
-        - desc: ATK Damage Taken -30%
+        - desc: ATK damage taken -30%
           all: true
           meta:
             priority: 1
@@ -510,16 +513,16 @@
             buffValue: 30
     - name: "Apris's Divine Favor"
       effects: 
-        - desc: No Flinching when taking Damage < 20% of Max HP
+        - desc: No flinching when taking damage of 20% HP or less
           all: true
         
   skills:
     - name: "Hydroblades"
       picture: Hydroblades
+      element: Ice
       power: ATK x 190%
       ap: 20
       maxHits: 2
-      element: Ice
     - name: "Sylvan Shot"
       picture: Sylvan_Shot
       power: ATK x 200%
@@ -529,7 +532,7 @@
       picture: Mirror_Blade
       power: ATK x 680%
       ap: 40
-      maxHits: 8
+      maxHits: 6
     - name: "Victory Terror"
       picture: Victory_Terror
       power: ATK x 500%
@@ -540,7 +543,7 @@
     name: "Flying Guillotine Slash"
     picture: Flying_Guillotine_Slash_Clair
     effects: 
-        - desc: Damage Dealt +80%
+        - desc: Damage dealt +80%
           duration: 20
           all: true
           meta:
@@ -599,7 +602,8 @@
       *Normal > Victory Terror > Sylvan Shot > Victory Terror (Best Rush Gain)*
 
       *Normal > Sylvan Shot > Hydro Blade > Sylvan Shot > Spam till out of AP (General Damage)*
-    
+ 
+ 
 - name: Reimi Saionji
   cat: gl
   rating: 5
@@ -620,7 +624,7 @@
   talents:
     - name: "Sound Judgment II"
       effects: 
-        - desc: INT Damage Taken -40%
+        - desc: INT damage taken -40%
           all: true
           meta:
             priority: 1
@@ -628,7 +632,7 @@
             buffValue: 40
     - name: "Greater Single-Shot"
       effects: 
-        - desc: Damage Dealt +20%
+        - desc: Damage dealt +20%
           all: true
           meta:
             priority: 1
@@ -636,10 +640,10 @@
             buffValue: 20
     - name: "Star Seed of Hope"
       effects: 
-        - desc: Nullifies Status Ailments (180 seconds)
+        - desc: Nullifies status ailments (180 seconds)
     - name: "Descendant of Muah"
       effects: 
-        - desc: 80% Chance of Surviving a Lethal Attack at 10% HP or more.
+        - desc: 80% chance of surviving a lethal attack at 10% HP or more
 
   skills:
     - name: "Chaotic Blossoms"
@@ -666,15 +670,15 @@
   rush:
     name: "Lunar Divination"
     picture: Lunar_Divination_Reimi
+    element: Dark
     effects: 
-      - desc: Nullifies Status Ailments
+      - desc: Nullifies status ailments
         all: true
-      - desc: Recovers 15% of HP every 3 seconds
+      - desc: Recovers 15% HP every 3 seconds
         duration: 15
         all: true
     power: ATK x 2500%
     maxHits: 7
-    element: Dark
     
   notes: >
       _Reimi joins the fray as the first ace bow wielder and to get people tilted by a flock of birds. Reimi is a much more defensive
@@ -719,7 +723,8 @@
       *Normal > Rapacious Sparrows > Crimson Squall > Rapacious Sparrows (General Combo.)* 
       
       *Normal > Crimson Squall > Crescent Wings > Crimson Squall > Spam till out of AP  (Elemental Burst Combo.)* 
-    
+ 
+ 
 - name: Miki (Summer)
   cat: gl
   rating: 9
