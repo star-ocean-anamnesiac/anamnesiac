@@ -54,7 +54,7 @@ const allCharHTML = allCharacters.map(char => {
   <div class="char-tag gradient-${ char.type }">
     <img class="char-class-icon" src="${inlineImg(`${ ASSET_BASE }/icons/charclass/class-${ char.type }.png`)}">
 
-    <span class="char-name">【${ char.name }】</span>
+    <span class="char-name">&#12304;${ char.name }&#12305;</span>
 
     <img class="char-class-icon item" src="${inlineImg(`${ ASSET_BASE }/icons/menu/menu-${ char.weapon }.png`)}">
   </div>
