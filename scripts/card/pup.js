@@ -64,7 +64,7 @@ const init = async () => {
   }).map(char => {
     return `
       <h3>${char.name} [${char.cat.toUpperCase()}]</h3>
-      <img src="${char.picture}-${char.awakened ? 'a-' : ''}${char.cat}.png">
+      <img src="./cards/${char.picture}-${char.awakened ? 'a-' : ''}${char.cat}.png">
     `
   }).join('<br>');
 
