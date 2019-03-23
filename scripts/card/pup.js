@@ -46,7 +46,7 @@ const init = async () => {
 
   await Promise.all(
     allCharacters.map(char => {
-      const fileName = `${char.picture}-${char.cat}`;
+      const fileName = `${char.picture}-${char.awakened ? 'a-' : ''}${char.cat}`;
 
       return screenshotDOMElement({
         path: `src/assets/cards/${fileName}.png`,
