@@ -1068,30 +1068,30 @@
             buffValue: 20
 
   skills:
-    - name: "Liquid Bite"
-      picture: Hydroblades
-      power: ATK x 170%
-      ap: 18
-      notes: Can freeze foes
-      maxHits: 2
-      element: Ice
-      highlight: true
-    - name: "Unholy Terror"
-      picture: Unholy_Terror
-      power: ATK x 310%
-      ap: 29
-      maxHits: 5
-    - name: "Sylvan Shot"
-      picture: Sylvan_Shot
-      power: ATK x 200%
-      ap: 20
-      maxHits: 8
-      highlight: true
     - name: "Frore Dancing Sword"
       picture: Dancing_Sword
       power: ATK x 400%
       ap: 32
       maxHits: 7
+    - name: "Sylvan Shot"
+      picture: Sylvan_Shot
+      power: ATK x 200%
+      ap: 20
+      maxHits: 8
+      highlight: true     
+    - name: "Unholy Terror"
+      picture: Unholy_Terror
+      power: ATK x 310%
+      ap: 29
+      maxHits: 5      
+    - name: "Liquid Bite"
+      picture: Hydroblades
+      element: Ice
+      power: ATK x 170%
+      ap: 18
+      notes: Occasionally freezes foes.
+      maxHits: 2
+      highlight: true
 
   rush:
     name: "Unholy Torrent"
@@ -1110,26 +1110,27 @@
       
       **Pros**
       
-      - High damage output
+      - High damage output.
       
       - 5 star non-ace so costs less to limit break and augment.
       
-      - Can freeze enemies
+      - Can freeze enemies.
       
       
       **Cons**
             
-      - 5 star non-ace so has less stats
+      - 5 star non-ace so has less stats.
       
-      - Provides nothing to the rest of the party
+      - Provides nothing to the rest of the party.
       
-      - Glass cannon so not new player or new content friendly
+      - Glass cannon so not new player or new content friendly.
             
       
       **Rotation**
       
       *Normal > Sylvan Shot > Liquid Bite > Sylvan Shot > Spam till out of AP (Damage rotation)*
-    
+
+
 - name: Albel Nox
   cat: jp
   rating: 6
@@ -1174,42 +1175,42 @@
             buffValue: 30
     - name: "Savage Blade II"
       effects: 
-        - desc: Damage to single target +20%
+        - desc: Single target damage +20%
           meta:
             priority: 4
             buff: Single Target Damage
             buffValue: 20
     - name: "Magician's Clothes"
       effects: 
-        - desc: AP Cost -20%
+        - desc: AP cost -20%
           meta:
             priority: 4
             buff: AP Cost Reduction
             buffValue: 20
 
   skills:
-    - name: "Unbridled Air Slash"
-      picture: Unbridled_Air_Slash
-      power: ATK x 210%
-      ap: 21
-      maxHits: 2
-      highlight: true
     - name: "Aura Wall"
       picture: Aura_Wall
       power: ATK x 200%
       ap: 20
       maxHits: 20
       highlight: true
-    - name: "Unbridled Double Slash"
-      picture: Unbridled_Double_Slash
-      power: ATK x 400%
-      ap: 30
-      maxHits: 4
     - name: "Vampiric Flash"
       picture: Vampiric_Flash
       power: ATK x 220%
       ap: 32
       maxHits: 6
+    - name: "Unbridled Double Slash"
+      picture: Unbridled_Double_Slash
+      power: ATK x 400%
+      ap: 30
+      maxHits: 4      
+    - name: "Unbridled Air Slash"
+      picture: Unbridled_Air_Slash
+      power: ATK x 210%
+      ap: 21
+      maxHits: 2
+      highlight: true
 
   rush:
     name: "Hydra Roar"
@@ -1239,26 +1240,27 @@
       
       **Pros**
       
-      - Decent variety of buffs
+      - Decent variety of buffs.
       
-      - High post rush damage
+      - High post-rush damage.
       
-      - Rare debuffing of enemy talent
+      - Rare debuffing of enemy talent.
       
       
       **Cons**
             
-      - Super squishy post rush
+      - Super squishy post-rush.
       
-      - Buffs are easily made redundant
+      - Buffs are easily made redundant.
       
-      - Not the best skill options
+      - Not the best skill options.
             
       
       **Rotation**
       
       *Normal > Unbridled Air Slash > Aura Wall > Unbridled Air Slash > Spam till out of AP (Damage rotation)*
-    
+
+
 - name: Ilia Silvestri
   cat: jp
   rating: 4
@@ -3497,3 +3499,86 @@
           buffValue: 50
     power: ATK x 4000%
     maxHits: 1
+
+
+- name: Precis F. Neumann
+  cat: jp
+  rating: 0
+  picture: Precis
+  weapon: arm
+  ace: true
+  limited: false
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 2573
+    int: 1537
+    def: 1969
+    hit: 1148
+    grd: 833
+
+  talents:
+    - name: "Expel's Invention Maiden"
+      effects: 
+        - desc: Hitcount timer +3 seconds
+          all: true
+    - name: "Mujin-kun, Charge!"
+      effects: 
+        - desc: ATK +25% when hitcount is 100 or more
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffCondition: Hit Count > 100
+            buffValue: 25
+    - name: "Overaction"
+      effects: 
+        - desc: Critical hit chance +30% at close range
+          all: true
+          meta:
+            priority: 3
+            buff: Crit Rate
+            buffCondition: Close Range
+            buffValue: 30
+    - name: "Scholarly Aspirations Inherited from Father"
+      effects: 
+        - desc: AP cost -40% when skill chain is 3 or more
+          all: false
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain 3+
+            buffValue: 40
+  
+  skills:
+    - name: "Hammer Slammer"
+      picture: Hammer_Slammer
+      power: ATK x 340%
+      ap: 22
+      maxHits: 6
+    - name: "Rocket Punch"
+      picture: Rocket_Punch
+      power: ATK x 290%
+      ap: 18
+      maxHits: 1
+    - name: "Jump 'n' Thump"
+      picture: Jump_n_Thump
+      power: ATK x 430%
+      ap: 32
+      maxHits: 1
+    - name: "Force Field"
+      picture: Force_Field
+      power: ATK x 360%
+      ap: 29
+      maxHits: 10
+      
+  rush:
+    name: "Bloody Mary"
+    picture: Bloody_Mary
+    effects: 
+      - desc: Recover 15% HP every 5 seconds
+        all: true
+        duration: 20
+    power: ATK x 4500%
+    maxHits: 16
