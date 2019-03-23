@@ -456,9 +456,9 @@
       maxHits: 12
     - name: "Angel Feather"
       picture: Angel_Feathers
-      power: All Stats +20%
+      power: 0%
       ap: 95
-      notes: Party Wide
+      notes: All Stats +20% Party Wide
       maxHits: 1
       meta:
         priority: 2
@@ -860,9 +860,9 @@
       maxHits: 2
     - name: "Angel Feather"
       picture: Angel_Feathers
-      power: All Stats +20%
+      power: 0%
       ap: 95
-      notes: Party Wide
+      notes: All Stats +20% Party Wide
       maxHits: 1
       meta:
         priority: 2
@@ -1176,13 +1176,13 @@
       maxHits: 8
     - name: "Brute Enlightenment"
       picture: Enlightment
-      power: INT +25% & ATK Damage Taken -15%.
+      power: 0%
       meta:
         priority: 2
         buff: INT
         buffValue: 25
       ap: 30
-      notes: Party wide and has a 20 second duration.
+      notes: INT +25% & ATK Damage Taken -15% Party Wide
       maxHits: 5
     - name: "Aurora Rings"
       picture: Aurora_Rings
@@ -1341,9 +1341,9 @@
       maxHits: 12
     - name: "Cheer"
       picture: Cheer
-      power: ATK/INT/DEF +25% 
+      power: 0%
       ap: 85
-      notes: Party Wide
+      notes: ATK/INT/DEF +25% Party Wide
       maxHits: 1
       meta:
         priority: 2
