@@ -267,7 +267,7 @@
       power: ATK x 390%
       ap: 29
       maxHits: 9
-      element: lightning
+      element: Lightning
       highlight: true
       
   rush:
