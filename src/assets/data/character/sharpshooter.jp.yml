@@ -797,7 +797,7 @@
   rush:
     name: "Rocket Slippers"
     picture: Rocket_Slippers_Verda
-    shortEffects: ATK damage +30% and movement speed +30% (Party)
+    shortEffects: ATK damage +30% and movement speed +30% (All Party, 20 seconds)
     effects:
       - desc: ATK damage +30%
         duration: 20
