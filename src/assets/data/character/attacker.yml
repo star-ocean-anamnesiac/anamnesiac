@@ -18,6 +18,7 @@
 
   talents:
     - name: "Silent Will"
+      shortEffects: ATK +40%, and ATK +60% when at 100% HP (Party)
       effects: 
         - desc: ATK +40%
           all: true
@@ -25,7 +26,7 @@
             priority: 1
             buff: ATK
             buffValue: 40
-        - desc: ATK +60% at 100% HP
+        - desc: ATK +60% when at 100% HP
           all: true
           meta:
             priority: 3
@@ -76,15 +77,16 @@
   rush:
     name: "YoRHa Arms: Zero"
     picture: YoHRa_Arms_Ø_2B
+    shortEffects: All elemental damage dealt +70%/50% (Self/Party, 20 seconds)
     effects: 
-      - desc: All elemental damage +70%
+      - desc: All elemental damage dealt +70%
         all: false
         duration: 20
         meta:
           priority: 1
           buff: Elemental Damage
           buffValue: 70
-      - desc: All elemental damage +50%
+      - desc: All elemental damage dealt +50%
         all: true
         duration: 20
         meta:
@@ -785,6 +787,7 @@
     name: "Omega Thunderclap Blade"
     picture: Omega_Thunderclap_Blade_Ratix
     element: Lightning
+    shortEffects: AP cost -40% and damage taken -20% (20 seconds)
     effects: 
       - desc: AP cost -40%
         all: false
@@ -930,6 +933,7 @@
   rush:
     name: "Celestial Sword"
     picture: Heaven's_Sword_Summer_Reimi
+    shortEffects: Cures all status ailments, and single target damage dealt +40% (Party, 20 seconds)
     effects: 
       - desc: Cure status ailments
         all: true
@@ -1439,6 +1443,7 @@
   rush:
     name: "Hydra Roar"
     picture: Hydra_Roar_Albel
+    shortEffects: ATK +100% and DEF -50% (15 seconds)
     effects: 
       - desc: ATK +100%
         duration: 15
@@ -1573,7 +1578,7 @@
   rush:
     name: "Divine Hammer"
     picture: Divine_Hammer_Ilia
-    shortEffects: AP cost -20% (Attackers/Invokers)
+    shortEffects: AP cost -20% (Attackers/Invokers, 20 seconds)
     effects: 
       - desc: AP cost -20%
         all: Attackers
@@ -1851,7 +1856,7 @@
     name: "Trick or Treat"
     picture: Trick_or_Treat_HW_Millie
     effects: 
-      - desc: All elemental damage +50%
+      - desc: All elemental damage dealt +50%
         all: true
         duration: 20
         meta:
@@ -1974,7 +1979,7 @@
     name: "Colossal Ethereal Blast"
     picture: Colossal_Ethereal_Blast_Fayt
     effects: 
-      - desc: All elemental damage +50%
+      - desc: All elemental damage dealt +50%
         all: true
         duration: 20
         meta:
@@ -2261,6 +2266,7 @@
   rush:
     name: "Holiday Surprise"
     picture: Holiday_Surprise_Xmas_Fidel
+    shortEffects: AP cost -30%, and critical hit chance +20% (20 seconds)
     effects: 
       - desc: AP cost -30%
         all: false
@@ -2389,7 +2395,7 @@
   rush:
     name: "Fists of Unquenchable Fury"
     picture: Fists_of_Unquenchable_Fury_Weeping_Welch
-    shortEffects: ATK +50% and DEF -100% (Party/20 seconds)
+    shortEffects: ATK +50% and DEF -100% (Party, 20 seconds)
     effects: 
       - desc: ATK +50%
         all: true
@@ -2617,7 +2623,7 @@
             buff: ATK
             buffValue: 30
         - desc: ATK +45%
-          all: short-range weapons
+          all: Short-range weapons
           meta:
             priority: 1
             buff: ATK
@@ -2625,7 +2631,7 @@
     - name: "Dependable Honors Student"
       effects: 
         - desc: Nullifies Movement Rate Reduction Field
-          all: short-ranged weapons
+          all: Short-range weapons
     - name: "Heir to the Blade II"
       effects: 
         - desc: AP cost -40% when skill chain is 3 or more
@@ -2803,7 +2809,7 @@
 
   talents:
     - name: "First Valentine"
-      shortEffects: ATK/INT damage taken +15% when hit by a short-range skill (Enemies/10 seconds)
+      shortEffects: ATK/INT damage taken +15% when hit by a short-range skill (Enemies, 10 seconds)
       effects: 
         - desc: ATK damage taken +15% when hit by a short-range skill
           all: Enemies
@@ -2886,7 +2892,7 @@
   rush:
     name: "Chocolate Blessing"
     picture: Blessing_Chocolate_Valentine_Verda
-    shortEffects: ATK/INT damage taken +40% (Enemies/20 seconds)
+    shortEffects: ATK/INT damage taken +40% (Enemies, 20 seconds)
     effects: 
       - desc: ATK damage taken +40%
         duration: 20
@@ -3167,6 +3173,7 @@
     name: "Avenger Charge"
     picture: Festive_Avenger_Mirage
     element: Fire
+    shortEffects: AP cost -30%, and recover 10% HP every 3 seconds (20 seconds)
     effects: 
       - desc: AP cost -30%
         meta:
@@ -3464,7 +3471,7 @@
 
   talents:
     - name: "Fresh Madonna Lillies II"
-      shortEffects: ATK +30% and normal attack AP recovery +100% (party)
+      shortEffects: ATK +30% and normal attack AP recovery +100% (Party)
       effects: 
         - desc: ATK +30%
           all: true
