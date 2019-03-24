@@ -9,12 +9,12 @@
   star: 5
 
   stats:
-    hp: 14535
-    atk: 2384
-    int: 4767
-    def: 2150
-    hit: 1100
-    grd: 1198
+    hp: 13965
+    atk: 1747
+    int: 3386
+    def: 1327
+    hit: 1050
+    grd: 1148
 
   talents:
     - name: "Seaside Enchantress II"
@@ -24,8 +24,9 @@
             priority: 4
             buff: INT
             buffValue: 35
-        - desc: Recover allies AP when using offensive symbology
+        - desc: Recover AP for allies when using offensive symbology
     - name: "Making Waves II"
+      shortEffects: AP cost -40% and INT damage dealt +30% when skill chain is 3 or more
       effects: 
         - desc: AP cost -40% when skill chain is 3 or more
           meta:
@@ -53,11 +54,11 @@
             priority: 1
             buff: INT Damage
             buffValue: 20
-        - desc: Nullify Movement Rate Reduction Field
-          all: Self & Close Range
+        - desc: Nullify movement rate reduction field
+          all: Close Range, Self
     - name: "Summer Combo"
       effects: 
-        - desc: Symbology casting time -30%
+        - desc: Symbology cast time -30%
           meta:
             priority: 4
             buff: Cast Time Reduction
@@ -87,7 +88,7 @@
       picture: Faerie_Light
       power: INT x 120%
       ap: 30
-      notes: Party Heal
+      notes: Recover HP for all allies
       maxHits: 1
     - name: "Lightning Strike"
       picture: Lightning_Strike
@@ -98,9 +99,10 @@
       maxHits: 10
       
   rush:
-    name: "Lightning-Fast Serve"
+    name: "Lightning-Fast Service"
     picture: Lightning_Fast_Service_Summer_Sophia
     element: Lightning
+    shortEffects: Recover 50% HP and INT +40% (Party, 20 seconds)
     effects: 
       - desc: INT +40%
         all: true
@@ -207,7 +209,7 @@
       picture: Ex_Healing
       power: INT x 330%
       ap: 50
-      notes: Single Target Heal
+      notes: Recover a lot of HP for a single ally
       maxHits: 1
     - name: "Sunflare"
       picture: Sunflare
@@ -217,16 +219,16 @@
       maxHits: 6
     - name: "Faerie Star"
       picture: Faerie_Star
-      power: INT x 326%
+      power: INT x 330%
       ap: 70
-      notes: Party Heal
+      notes: Recover a lot of HP for all allies
       maxHits: 1
       
   rush:
     name: "Divine Wave"
     picture: Divine_Wave_Miki
     effects: 
-      - desc: 30% HP recovery every 4 seconds
+      - desc: Recover 30% HP every 4 seconds
         all: true
         duration: 20
     power: INT x 2000%
@@ -288,12 +290,12 @@
   star: 5
 
   stats:
-    hp: 10296
-    atk: 1307
-    int: 2583
-    def: 1758
-    hit: 785
-    grd: 842
+    hp: 13860
+    atk: 1759
+    int: 2494
+    def: 1353
+    hit: 1057
+    grd: 1134
 
   talents:
     - name: "Like Father, Like Daughter"
@@ -325,7 +327,7 @@
       picture: Healing
       power: INT x 170%
       ap: 40
-      notes: Single Target Heal
+      notes: Recover some HP for a single ally
       maxHits: 1
     - name: "Crush"
       picture: Crush
@@ -343,13 +345,14 @@
       picture: Faerie_Star
       power: INT x 330%
       ap: 70
-      notes: Party Heal
+      notes: Rcover a lot of HP for all allies
       maxHits: 1
       
   rush:
     name: "Tractor Beam"
     picture: Tractor_Beam_Millie
     element: Earth
+    shortEffects: Recovers 80% HP, and critical hit chance +50% (Party, 20 seconds)
     effects: 
       - desc: Critical hit chance +50%
         all: true
@@ -422,17 +425,17 @@
     - name: "Healing Light II"
       effects: 
         - desc: Recovers 10% HP every 5 seconds
-          all: Short Ranged Weapon Users
+          all: Short Range Weapons
     - name: "Beyond Time & Space II"
       effects: 
-        - desc: Symbol invoking time -80%
+        - desc: Symbol cast time -80%
           meta:
             priority: 4
             buff: Cast Time Reduction
             buffValue: 80
     - name: "Two Mothers' Blessing"
       effects: 
-        - desc: AP Cost -15%
+        - desc: AP cost -15%
           meta:
             priority: 4
             buff: AP Cost Reduction
@@ -448,17 +451,11 @@
       power: INT x 300%
       ap: 27
       maxHits: 8
-    - name: "Laser Beams"
-      picture: Laser_Beams
-      element: Light
-      power: INT x 570%
-      ap: 55
-      maxHits: 12
-    - name: "Angel Feather"
+    - name: "Angel Feather AR"
       picture: Angel_Feathers
       power: 0%
       ap: 95
-      notes: All Stats +20% Party Wide
+      notes: All allies' stats +20% for 20 seconds
       maxHits: 1
       meta:
         priority: 2
@@ -469,20 +466,27 @@
           - HIT
           - GRD
         buffValue: 20
-    - name: "Faerie Light"
+    - name: "Faerie Light AR"
       picture: Faerie_Light
       power: INT x 250%
       ap: 60
-      notes: Party Heal
-      maxHits: 1
+      notes: Recover some HP for all allies
+      maxHits: 1        
+    - name: "Laser Beams"
+      picture: Laser_Beams
+      element: Light
+      power: INT x 570%
+      ap: 55
+      maxHits: 12
+
       
   rush:
     name: "Star Flare"
     picture: Star_Flare_Rena
     element: Light
     effects: 
-      - desc: Critical Hit Rate +60%
-        all: Short Ranged Weapon Users
+      - desc: Critical hit chance +60%
+        all: Short Ranged Weapons
         duration: 20
         meta:
           priority: 1
