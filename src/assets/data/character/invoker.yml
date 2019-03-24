@@ -41,14 +41,7 @@
             priority: 1
             buff: AP Cost Reduction
             buffRole: invoker
-            buffValue: 20
-        - desc: AP cost -20%
-          all: Healers
-          meta:
-            priority: 1
-            buff: AP Cost Reduction
-            buffRole: healer
-            buffValue: 20            
+            buffValue: 20    
     - name: "Self-Mastery"
       effects: 
         - desc: Symbology cast time -30%
@@ -938,7 +931,7 @@
       *Normal > CA Shadow Exinction > Shadow Needles > Shadow Exinction (General damage rotation for multiple or small enemies.)*
 
 
-- name: Claude (Uniform)
+- name: Claude C. Kenny (Uniform)
   cat: gl
   rating: 4
   picture: Prince_Claude
@@ -971,7 +964,7 @@
             buff: Multiple Target Damage
             buffValue: 20
     - name: "The Expel Turnabout II"
-      shortEffects: Nullifies freeze/paralysis (Party, 90 seconds)
+      shortEffects: Nullifies freeze/paralysis (All Party, 90 seconds)
       effects: 
         - desc: Nullifies freeze
           duration: 90
@@ -1107,7 +1100,7 @@
             buff: INT
             buffValue: 40
     - name: "Unbreakable"
-      shortEffects: AP cost -100% and Ice skill damage +300% after using Hail Orb (20 seconds)
+      shortEffects: Ice skill damage +300% and AP cost -100% after using Hail Orb (20 seconds)
       effects: 
         - desc: AP cost +100% after using Hail Orb (20 seconds)
           duration: 20
