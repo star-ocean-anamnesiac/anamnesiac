@@ -24,9 +24,9 @@
             priority: 4
             buff: INT
             buffValue: 35
-        - desc: Recover AP for allies when using offensive symbology
+        - desc: Recover some AP for all allies when using offensive symbology
     - name: "Making Waves II"
-      shortEffects: AP cost -40% and INT damage dealt +30% when skill chain is 3 or more
+      shortEffects: INT damage dealt +30%, and AP cost -40% when skill chain is 3 or more
       effects: 
         - desc: AP cost -40% when skill chain is 3 or more
           meta:
@@ -54,8 +54,8 @@
             priority: 1
             buff: INT Damage
             buffValue: 20
-        - desc: Nullify Movement Rate Reduction Field
-          all: Close Range, Self
+        - desc: Nullify movement rate reduction field
+          all: Close Range Weapons, Self
     - name: "Summer Combo"
       effects: 
         - desc: Symbology cast time -30%
@@ -102,7 +102,7 @@
     name: "Lightning-Fast Service"
     picture: Lightning_Fast_Service_Summer_Sophia
     element: Lightning
-    shortEffects: Recover 50% HP and INT +40% (Party, 20 seconds)
+    shortEffects: Recovers 50% HP and INT +40% (All Party, 20 seconds)
     effects: 
       - desc: INT +40%
         all: true
@@ -352,7 +352,7 @@
     name: "Tractor Beam"
     picture: Tractor_Beam_Millie
     element: Earth
-    shortEffects: Recovers 80% HP, and critical hit chance +50% (Party, 20 seconds)
+    shortEffects: Recovers 80% HP, and critical hit chance +50% (All Party, 20 seconds)
     effects: 
       - desc: Critical hit chance +50%
         all: true
@@ -455,7 +455,7 @@
       picture: Angel_Feathers
       power: 0%
       ap: 95
-      notes: All stats +20% (Party, 20 seconds)
+      notes: All stats +20% (All Party, 20 seconds)
       maxHits: 1
       meta:
         priority: 2
@@ -847,7 +847,7 @@
         - desc: Recovers 5% HP every 5 seconds
           all: Long Range Weapons
     - name: "Purge II"
-      shortEffects: Nullifies poison/paralysis (Party, 90 seconds)
+      shortEffects: Nullifies poison/paralysis (All Party, 90 seconds)
       effects: 
         - desc: Nullify poison for 90 seconds
           all: true
@@ -874,7 +874,7 @@
       picture: Angel_Feathers
       power: 0%
       ap: 95
-      notes: All stats +20% (Party, 20 seconds)
+      notes: All stats +20% (All Party, 20 seconds)
       maxHits: 1
       meta:
         priority: 2
@@ -896,7 +896,7 @@
     name: "Healing Blast Hurricane"
     picture: Healing_Blast_Hurricane_Sarah
     element: Wind
-    shortEffects: Recovers 70% HP, and cures poison/paralysis (Party)
+    shortEffects: Recovers 70% HP, and cures poison/paralysis (All Party)
     effects: 
       - desc: Recovers 70% HP
         all: true
@@ -1000,7 +1000,7 @@
       effects: 
         - desc: Recover some AP for all allies when using offensive symbology          
     - name: "Trump Card"
-      shortEffects: Critical hit chance and critical damage +20% when hitcount is 50 or more, and +30% when 100 or more (Party)
+      shortEffects: Critical hit chance and critical damage +20% when hitcount is 50 or more, and +30% when 100 or more (All Party)
       effects: 
         - desc: Critical hit chance +20% when hitcount is 50 or more
           all: true
@@ -1064,7 +1064,7 @@
     name: "Magical Present"
     picture: Magical_Present_Xmas_Precis
     element: Light
-    shortEffects: Recover 15% HP every 3 seconds and critical hit chance +30% (Party, 20 seconds)
+    shortEffects: Recovers 15% HP every 3 seconds and critical hit chance +30% (All Party, 20 seconds)
     effects: 
       - desc: Recover 15% HP every 3 seconds
         all: true
@@ -1185,7 +1185,7 @@
       picture: Faerie_Light
       power: INT x 230%
       ap: 60
-      notes: ATK +20% (Party, 15 seconds) and recover some HP for all allies
+      notes: ATK +20% (party, 15 seconds) and recover some HP for all allies
       maxHits: 1
       meta:
         priority: 2
@@ -1205,7 +1205,7 @@
         buff: INT
         buffValue: 25
       ap: 65
-      notes: INT +25% and ATK damage taken -15% (Party, 20 seconds)
+      notes: INT +25% and ATK damage taken -15% (party, 20 seconds)
       maxHits: 1
     - name: "Aurora Rings"
       picture: Aurora_Rings
@@ -1218,7 +1218,7 @@
     name: "Freeze Time"
     picture: Freezing_Clock_Relia
     element: Ice
-    shortEffects: Single target damage +30%, and recovers 15% HP every 3 seconds (Party, 20 seconds)
+    shortEffects: Single target damage +30%, and recovers 15% HP every 3 seconds (All Party, 20 seconds)
     effects: 
       - desc: Single target damage +30%
         all: true
@@ -1372,7 +1372,7 @@
     name: "Heaven's Judgment"
     picture: Heaven's_Judge_Fina
     element: Light
-    shortEffects: Recovers 70% HP, and critical hit chance +30% (Party, 20 seconds)
+    shortEffects: Recovers 70% HP, and critical hit chance +30% (All Party, 20 seconds)
     effects: 
       - desc: Recover 70% HP
         all: true
