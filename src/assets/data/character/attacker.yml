@@ -4125,4 +4125,124 @@
     power: ATK x 2500%
     maxHits: 7
 
+- name: Precis F. Neumann
+  cat: gl 
+  rating: 6
+  picture: Precis	
+  weapon: arm
+  ace: true
+  limited: false
+  star: 5
 
+  stats:
+    hp: 15645
+    atk: 2573
+    int: 1537
+    def: 1969
+    hit: 1148
+    grd: 833
+
+  talents:
+    - name: "Expel's Invention Maiden"
+      effects: 
+        - desc: Hitcount timer +3 seconds
+          all: true
+      
+    - name: "Mujin-kun, Charge!"
+      effects: 
+        - desc: ATK +25% when hitcount is 100 or more
+          meta:
+            priority: 4
+            buff: ATK
+            buffCondition: Hit Count > 100
+            buffValue: 25    
+    - name: "Overaction"
+      effects: 
+        - desc: Critical hit chance +30% at close range
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: Close Range
+            buffValue: 30    
+    - name: "Scholarly Aspirations Inherited from Father"
+      effects: 
+        - desc: AP cost -40% when skill chain is 3
+          all: false
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain 3+
+            buffValue: 40
+            
+  skills:
+    - name: "Hammer Slammer"
+      picture: Hammer_Slammer
+      power: ATK x 340%
+      ap: 22
+      maxHits: 6
+      highlight: true
+    - name: "Rocket Punch"
+      picture: Rocket_Punch
+      power: ATK x 290%
+      ap: 18
+      maxHits: 1
+      highlight: true
+    - name: "Jump 'n' Thump"
+      picture: Jump_n_Thump
+      power: ATK x 430%
+      ap: 32
+      maxHits: 1
+    - name: "Force Field"
+      picture: Force_Field
+      power: ATK x 360%
+      ap: 29
+      maxHits: 10
+      highlight: true
+
+  rush:
+    name: "Bloody Mary"
+    picture: Bloody_Mary
+    effects: 
+      - desc: Recover 15% HP every 5 seconds 
+        all: true
+        duration: 20
+    power: ATK x 4500%
+    maxHits: 16
+  
+  notes: >            
+      **TL DR**
+      
+      _Precis takes off the santa costume to join us as our latest attacker permanent ace and the permanent arms user. Precis is a bit
+      of a lack luster character but isn't terrible. She has a self ATK buff that is conditional but makes up for her lack of attack
+      stat. She has a decent conditional crit chance talent and she can output some good damage by skill chaining. Plus her hc 
+      extension helps hit count compositions never actually lose hit count except after rushing, which ties in with her attack buff.
+      She also provides health regeneration totalling 60% of each characters max HP over 20 seconds. Plus her rush multiplier is
+      pretty damn juicy at 4.5k meaning that getting to 100 hits and rushing should yield a good rush._
+      
+      _Precis biggest problem is her lack of attack when her talents point towards a character more orinetated towards being a carry.
+      She NEEDS to reach 100 HC before rushing or it'll be a sad outcome from her, and her utility doesn't make up for the lack of it.
+      She also has no real move to spam in her rotation, her multipliers just aren't that high for someone who is meant to be a carry._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Post Rush Regen.
+      
+      - Long Hit Count Extension
+      
+      - Big rush multiplier.
+      
+      
+      **Cons**
+      
+      - Awful ATK stat coupled with a conditional self buff.
+      
+      - Utility is quite weak.
+   
+      **Rotation**
+      
+      Normal > Rocket Punch > Hammer Slammer > Jump'n'Thump*3 (Replace Hammer Slammer with Force Field if 104 AP or higher)
