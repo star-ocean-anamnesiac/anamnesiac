@@ -54,7 +54,7 @@
             priority: 1
             buff: INT Damage
             buffValue: 20
-        - desc: Nullify movement rate reduction field
+        - desc: Nullify Movement Rate Reduction Field
           all: Close Range, Self
     - name: "Summer Combo"
       effects: 
@@ -603,7 +603,7 @@
       picture: Faerie_Light
       power: INT x 250%
       ap: 60
-      notes: REcover some HP for all allies
+      notes: Recover some HP for all allies
       maxHits: 1
       
   rush:
@@ -753,8 +753,9 @@
     name: "Celestial Calling"
     picture: Celestial_Calling_Eve
     element: Light
+    shortEffects: Revives all dead party members at 1 HP, and INT +100% (Self, 20 seconds)
     effects: 
-      - desc: Revives dead party members at 1 HP
+      - desc: Revives all dead party members at 1 HP
         all: true
       - desc: INT +100%
         duration: 20
@@ -835,7 +836,7 @@
   talents:
     - name: "Beat of My Drum II"
       effects: 
-        - desc: AP recovery speed +30% at long range
+        - desc: AP recovery +30% at long range
           all: true
           meta:
             priority: 1
@@ -1160,7 +1161,7 @@
           meta:
             priority: 1
             buff: AP Recovery
-            buffCondition: HP at 100%
+            buffCondition: HP is 100
             buffValue: 50
     - name: "A Sister's Prayer II"
       effects: 
@@ -1218,7 +1219,7 @@
     name: "Freeze Time"
     picture: Freezing_Clock_Relia
     element: Ice
-    shortEffects: Single target damage +30%, and recover 15% HP every 3 seconds (Party, 20 seconds)
+    shortEffects: Single target damage +30%, and recovers 15% HP every 3 seconds (Party, 20 seconds)
     effects: 
       - desc: Single target damage +30%
         all: true
@@ -1227,7 +1228,7 @@
           priority: 1
           buff: Single Target Damage
           buffValue: 30
-      - desc: Recover 15% HP every 3 seconds
+      - desc: Recovers 15% HP every 3 seconds
         all: true
         duration: 20
     power: INT x 2500%
@@ -1515,6 +1516,11 @@
             buffValue: 10
 
   skills:
+    - name: "Faerie Light"
+      picture: Faerie_Light
+      power: INT x 250%
+      ap: 60
+      maxHits: 1  
     - name: "Earth Glaive Infatuation"
       picture: Earth_Glaive
       element: Earth
@@ -1532,28 +1538,22 @@
       element: Earth
       power: INT x 840%
       ap: 34
-      maxHits: 12
-    - name: "Faerie Light"
-      picture: Faerie_Light
-      power: INT x 230%
-      ap: 60
-      maxHits: 1
+      maxHits: 13
       
   rush:
     name: "Sweet Pressure"
     picture: Sweet_Pressure_Valentine_Welch
     element: Earth
     effects: 
+      - desc: Recovers 70% HP
+        all: true
       - desc: DEF -40%
-        all: Enemy
+        all: Enemies
         duration: 20
         meta:
           priority: 1
-          buff: DEF Reduction
+          buff: Enemy DEF Reduction
           buffValue: 40
-      - desc: Recover 70% HP
-        all: true
-        duration: 20
     power: INT x 3500%
     maxHits: 1
     
@@ -1614,7 +1614,8 @@
       - Normal > Gluttony Bog > Earth Glaive Infatuation > Gluttony Bog > Gluttony Bog (Damage rotation 104+ AP)
       
       - Normal > Gluttony Bog > Faerie Light > Gluttony Bog  (Rush Gain rotation)
-      
+
+
 - name: Evelysse (Awakened)
   cat: gl
   rating: 7
@@ -1636,7 +1637,7 @@
   talents:
     - name: "Spark of Inspiration II"
       effects: 
-        - desc: +20% INT
+        - desc: INT +20%
           all: true
           meta:
             priority: 1
@@ -1644,7 +1645,7 @@
             buffValue: 20
     - name: "A Girl of Many Talents II"
       effects: 
-        - desc: +30% Rush DMG
+        - desc: Rush combo damage +30%
           all: true
           meta:
             priority: 1
@@ -1652,23 +1653,23 @@
             buffValue: 30
     - name: "Blessings of the Stars II"
       effects: 
-        - desc: RCV 3% of Max HP / 3s
-        - desc: -40% to Rush Gauge
+        - desc: Recovers 10% HP every 3 seconds
+        - desc: Rush gauge quota -40%
     - name: "Cryptic Symbology Arts"
       effects: 
-        - desc: -25% AP Cost
+        - desc: AP cost -25%
           meta:
             priority: 4
             buff: AP Cost Reduction
             buffValue: 25
-        - desc: -40% Cast Time
+        - desc: Symbology cast time -40% 
           meta:
             priority: 1
             buff: Cast Time Reduction
             buffValue: 40
     - name: "Noble Souls"
       effects: 
-        - desc: No flinching when casting Symbology
+        - desc: No flinching when casting symbology
     - name: "Fearless Feeling"
       effects: 
         - desc: HP +15%
@@ -1695,19 +1696,19 @@
       power: INT x 400%
       ap: 30
       maxHits: 5
+    - name: "Faerie Light"
+      picture: Faerie_Light
+      power: INT x 250%
+      ap: 50
+      notes: Recovers HP for all allies
+      maxHits: 1      
     - name: "Sunflare"
       picture: Sunflare
       element: Light
       power: INT x 630%
       ap: 42
       maxHits: 6
-    - name: "Faerie Light"
-      picture: Faerie_Light
-      power: INT x 250%
-      ap: 50
-      notes: Party Heal
-      maxHits: 1
-      
+
   rush:
     name: "Celestial Calling"
     picture: Celestial_Calling_Eve
