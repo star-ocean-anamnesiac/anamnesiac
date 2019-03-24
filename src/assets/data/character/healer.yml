@@ -753,9 +753,8 @@
     name: "Celestial Calling"
     picture: Celestial_Calling_Eve
     element: Light
-    shortEffects: Revives all dead party members at 1 HP, and INT +100% (Self, 20 seconds)
     effects: 
-      - desc: Revives all dead party members at 1 HP
+      - desc: Revives at 1 HP
         all: true
       - desc: INT +100%
         duration: 20
@@ -997,6 +996,9 @@
           all: true
         - desc: Movement speed +30%
           all: true
+    - name: "A Christmas Miracle"
+      effects: 
+        - desc: Recover some AP for all allies when using offensive symbology          
     - name: "Trump Card"
       shortEffects: Critical hit chance and critical damage +20% when hitcount is 50 or more, and +30% when 100 or more (Party)
       effects: 
@@ -1028,9 +1030,6 @@
             buff: Crit Damage
             buffCondition: Hit Count > 100
             buffValue: 30
-    - name: "A Christmas Miracle"
-      effects: 
-        - desc: Recover all ally AP when using Offensive Symbology
 
   skills:
     - name: "Sacred Faerie Light"
@@ -1065,7 +1064,7 @@
     name: "Magical Present"
     picture: Magical_Present_Xmas_Precis
     element: Light
-    shortEffects: Recover 15% HP every 3 seconds, and critical hit chance +30% (Party, 20 seconds)
+    shortEffects: Recover 15% HP every 3 seconds and critical hit chance +30% (Party, 20 seconds)
     effects: 
       - desc: Recover 15% HP every 3 seconds
         all: true
@@ -1186,7 +1185,7 @@
       picture: Faerie_Light
       power: INT x 230%
       ap: 60
-      notes: Recovers some HP, and ATK +20% (Party, 20 seconds)
+      notes: ATK +20% (Party, 15 seconds) and recover some HP for all allies
       maxHits: 1
       meta:
         priority: 2
@@ -1314,7 +1313,7 @@
   talents:
     - name: "Straight Shooter"
       effects: 
-        - desc: Recover AP for all allies when using Aim and Bright Shower  
+        - desc: Recovers AP for all allies when using Aim and Bright Shower  
     - name: "White Mage"
       effects: 
         - desc: Nullifies HP Reduction Fields
@@ -1359,7 +1358,7 @@
       picture: Cheer
       power: 0%
       ap: 85
-      notes: Raise all allies' ATK/INT/DEF +25% (20 seconds)
+      notes: ATK/INT/DEF +25% for all allies (20 seconds)
       maxHits: 1
       meta:
         priority: 2
@@ -1373,7 +1372,7 @@
     name: "Heaven's Judgment"
     picture: Heaven's_Judge_Fina
     element: Light
-    shortEffects: Recover 70% HP, and critical hit chance +30% (Party, 20 seconds)
+    shortEffects: Recovers 70% HP, and critical hit chance +30% (Party, 20 seconds)
     effects: 
       - desc: Recover 70% HP
         all: true
@@ -1466,7 +1465,7 @@
             buffCondition: HP > 50%
             buffValue: 50
     - name: "Beach Body II"
-      shortEffects: ATK/INT damage dealt +10%, and ATK/INT damage dealt +25% when skill chain is 3 or more (Party)
+      shortEffects: ATK/INT damage dealt +10%, and ATK/INT damage dealt +25% when skill chain is 3 or more (All Party)
       effects:
         - desc: ATK damage dealt +10%
           all: true
@@ -1520,6 +1519,7 @@
       picture: Faerie_Light
       power: INT x 250%
       ap: 60
+      notes: Recover some HP for all allies
       maxHits: 1  
     - name: "Earth Glaive Infatuation"
       picture: Earth_Glaive
@@ -1714,10 +1714,9 @@
     picture: Celestial_Calling_Eve
     element: Light
     effects: 
-      - desc: Revives All Party Members at 1 HP
+      - desc: Revives at 1 HP
         all: true
-        duration: 20
-      - desc: +100% INT
+      - desc: INT 100%
         duration: 20
         meta:
           priority: 4
@@ -1762,6 +1761,7 @@
       - Lack of powerful buffs for the party
       
       - Lack of a good talent that helps survivability
+
 
 - name: Heinrich (Robust)
   cat: gl
@@ -1827,6 +1827,7 @@
     power: INT x 2500%
     maxHits: 6
 
+
 - name: Pamela (Seer)
   cat: gl
   rating: 0
@@ -1847,7 +1848,7 @@
   talents:
     - name: "Amateur Orb-Wielder II"
       effects: 
-        - desc: +15% INT
+        - desc: INT +15%
           all: false
           meta:
             priority: 4
@@ -1855,7 +1856,7 @@
             buffValue: 15
     - name: "Hope for the Future III"
       effects:
-        - desc: -60% Symbology Cast Time at long range
+        - desc: Symbology cast time -60% at long range
           all: false
           meta:
             priority: 1
@@ -1890,13 +1891,12 @@
     picture: Revised_Crush_Seer_Pamela
     element: Earth
     effects:
-      - desc: -20% HP recovery every 4 seconds
+      - desc: Recovers 20% HP every 4 seconds
         duration: 20
         all: true
     power: INT x 2000%
     maxHits: 2
    
-
 
 - name: Chloe
   cat: gl
@@ -2112,7 +2112,7 @@
             buffValue: 15
     - name: "Troubleshooter III"
       effects: 
-        - desc: Symbology casting time -30%
+        - desc: Symbology cast time -30%
           all: false
           meta:
             priority: 1
@@ -2146,7 +2146,7 @@
     picture: Revised_Volcanic_Burst_Sidonius
     element: Fire
     effects: 
-      - desc: 20% HP recovery every 4 seconds
+      - desc: Recovers 20% HP every 4 seconds
         duration: 20
         all: true
     power: INT x 2000%
