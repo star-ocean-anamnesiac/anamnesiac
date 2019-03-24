@@ -73,6 +73,7 @@
       maxHits: 5
     - name: "Enhance"
       picture: Enhance_Growth
+      power: 0%
       ap: 60
       maxHits: 1
       notes: ATK +25% (Party, 20 seconds)
