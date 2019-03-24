@@ -2755,3 +2755,139 @@
     power: ATK x 2500%
     maxHits: 7
   
+- name: Verda Kleiman
+  cat: gl
+  rating: 7
+  picture: Verda
+  weapon: gun
+  ace: true
+  limited: false
+  star: 5
+
+  stats:
+    hp: 14070
+    atk: 2482
+    int: 1589
+    def: 1733
+    hit: 1260
+    grd: 931
+
+  talents:
+    - name: "Child of Science"
+      effects: 
+        - desc: ATK -5% inflicted by Magnetic Field (10 seconds)
+          all: Enemies
+          meta:
+            priority: 4
+            buff: Enemy ATK Reduction
+            buffValue: 5
+    - name: "Modified Gun"
+      effects: 
+        - desc: Damage taken +15% inflicted by Break Horn and Break Bullet (8 seconds)
+          all: Enemies
+          meta:
+            priority: 4
+            buff: Enemy Damage Taken
+            buffValue: 15
+    - name: "Family to Protect"
+      effects:
+        - desc: Damage dealt +30%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 30
+    - name: "Commitment to Grandfather's Wishes"
+      effects: 
+        - desc: Silence immunity (180 seconds)
+          all: true
+        - desc: Nullify rush gauge reduction fields
+          all: Close-Range, Self
+          
+  skills:
+    - name: "Magnetic Field"
+      picture: Magnetic_Field
+      power: ATK x 260%
+      ap: 22
+      maxHits: 10
+    - name: "Break Horn"
+      picture: Break_Horn
+      power: ATK x 190%
+      ap: 19
+      maxHits: 8
+    - name: "Crimson Squall)"
+      picture: Crimson_Squall_I
+      power: ATK x 180%
+      ap: 18
+      maxHits: 9
+    - name: "Break Bullet"
+      picture: Gravity_Bullet
+      element: Dark
+      power: ATK x 340%
+      ap: 29
+      maxHits: 10
+
+  rush:
+    name: "Rocket Slippers"
+    picture: Rocket_Slippers_Verda
+    shortEffects: ATK damage +30% and movement speed +30% (Party)
+    effects:
+      - desc: ATK damage +30%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: ATK Damage
+          buffValue: 30
+      - desc: Movement speed +30%
+        duration: 20
+        all: true
+    power: ATK x 3500%
+    maxHits: 2
+    
+    notes: >
+      _Verda stops giving out chocolate to actually join as a permanent character and another single gun wielding ace. Like her 
+      valentine version, Verda is a debuffer, she gives the ever so slightest debuff to enemy attack that isn't all that relevant
+      due to how small it is, though her 15% damage debuff is a lot more interesting as the only person it will conflict with
+      currently is vwelch and an end to earth content should see vwelch decline in popularity somewhat. She has a pity damage buff
+      as well but with the prominence of Awakened Maria and 9S that's likely to get overlapped. Her silence immunity gives a MoT
+      niche that she can fill, and reducing rush gauge fields, even if only to certain characters, it a nice utility perk as well._
+      
+      _On top of all of this Verda gets a pretty good post rush buff, increasing movement speed short term is okay, though you
+      generally want that perk the whole fight, but only Bridal Nel can beat the ATK damage buff she comes packing which gives a pretty
+      good reason to bring her into a comp as your damage buffer and a debuffer._
+      
+      _To summarize, Verda isn't overwhelmingly strong, but she does a few things that beat out most other characters, or are only done
+      by so few characters that the overlap chance is slim which means she'll be good for debuffing. She has a good enough skill set
+      that for now, she isn't a bad character to be using as you'll always be giving something to the party unless you've somehow
+      ended up with Vwelch, Bridal Nel and Maria/9S.
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Applies Debuffs that aren't common.
+
+      - Good at building and maintaining hit count.
+
+      - Meaty ATK damage buff post rush.
+      
+      - Niche utility makes her good for Silence MoT maze and content with rush gauge fields.
+      
+      
+      **Cons**
+      
+      - Weak personal damage.
+
+      - Lack of defensive utility for the party.
+      
+      - 30% Damage buff is bad with the popularity of Awakened or partially awakened Maria and 9S.
+      
+      
+      **Rotation**
+
+      *Normal > Break Bullet > Crimson Squall > Break Bullet > Spam Till Out of AP (General Damage On Large Targets)*
+      
+      *Normal > Magnetic Field > Crimson Squall > Magnetic Field > Spam Till Out of AP (General Damage On Small Targets)*
