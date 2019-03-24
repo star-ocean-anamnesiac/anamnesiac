@@ -742,7 +742,7 @@
             priority: 1
             buff: Cast Time Reduction
             buffValue: 20
-    - name: "Astounding Edarl Swordplay"
+    - name: "Astounding Edarl Blade Arts"
       effects: 
         - desc: Stun chance +40%
           all: true
@@ -775,7 +775,7 @@
       picture: Air_Slash_I
       power: ATK x 200%
       ap: 20
-      maxHits: 2
+      maxHits: 1
     - name: "Dragon Slash"
       picture: Dragon_Slash
       element: Lightning
@@ -787,18 +787,18 @@
     name: "Omega Thunderclap Blade"
     picture: Omega_Thunderclap_Blade_Ratix
     element: Lightning
-    shortEffects: AP cost -40% and damage taken -20% (20 seconds)
+    shortEffects: AP cost -40% and damage taken -20% (60 seconds)
     effects: 
       - desc: AP cost -40%
         all: false
-        duration: 20
+        duration: 60
         meta:
           priority: 4
           buff: AP Cost Reduction
           buffValue: 40
       - desc: Damage taken -20%
         all: false
-        duration: 20
+        duration: 60
         meta:
           priority: 4
           buff: Damage Taken Reduction
@@ -1271,6 +1271,7 @@
             buff: Crit Damage
             buffValue: 20
     - name: "A Highlander's Pride"
+      shortEffects: ATK +20% and DEF -20%
       effects: 
         - desc: ATK +20%
           all: false
@@ -1315,7 +1316,7 @@
     name: "Unholy Torrent"
     picture: Unholy_Torrent_Phia
     effects: 
-      - desc: Occasionally freezes foes.
+      - desc: Occasionally freezes foes
     power: ATK x 4000%
     maxHits: 13
     
@@ -1528,7 +1529,7 @@
             buffValue: 30
     - name: "All-Seeing Eye II"
       effects: 
-        - desc: Damage to multiple targets +20%
+        - desc: Multiple target damage +20%
           all: true
           meta:
             priority: 1
@@ -1578,7 +1579,7 @@
   rush:
     name: "Divine Hammer"
     picture: Divine_Hammer_Ilia
-    shortEffects: AP cost -20% (Attackers/Invokers, 20 seconds)
+    shortEffects: AP cost -20% (Attackers / Invokers, 20 seconds)
     effects: 
       - desc: AP cost -20%
         all: Attackers
@@ -1812,7 +1813,7 @@
             buffValue: 35
     - name: "Wolf's Appetite II"
       effects: 
-        - desc: AP recovery from normal attacks +100%
+        - desc: Normal attack AP recovery +100%
           all: true
           meta:
             priority: 1
@@ -1820,7 +1821,7 @@
             buffValue: 100
     - name: "Animal Instincts"
       effects: 
-        - desc: Nullify movement reduction fields and rush gauge reduction fields
+        - desc: Nullifies movement reduction fields and rush gauge reduction fields
           all: true
     - name: "Full Moon Howl"
       effects: 
@@ -1857,8 +1858,8 @@
     picture: Trick_or_Treat_HW_Millie
     effects: 
       - desc: All elemental damage dealt +50%
-        all: true
         duration: 20
+        all: true
         meta:
           priority: 1
           buff: Elemental Damage
