@@ -425,10 +425,10 @@
     - name: "Healing Light II"
       effects: 
         - desc: Recovers 10% HP every 5 seconds
-          all: Short Range Weapons
+          all: Close Range Weapons
     - name: "Beyond Time & Space II"
       effects: 
-        - desc: Symbol cast time -80%
+        - desc: Symbology cast time -80%
           meta:
             priority: 4
             buff: Cast Time Reduction
@@ -455,7 +455,7 @@
       picture: Angel_Feathers
       power: 0%
       ap: 95
-      notes: All allies' stats +20% for 20 seconds
+      notes: All stats +20% (Party, 20 seconds)
       maxHits: 1
       meta:
         priority: 2
@@ -479,20 +479,19 @@
       ap: 55
       maxHits: 12
 
-      
   rush:
     name: "Star Flare"
     picture: Star_Flare_Rena
     element: Light
     effects: 
       - desc: Critical hit chance +60%
-        all: Short Ranged Weapons
+        all: Close Range Weapons
         duration: 20
         meta:
           priority: 1
           buff: Crit Rate
           buffValue: 60
-    power: INT x 2500%
+    power: ATK x 2500%
     maxHits: 10
     
   notes: >
@@ -568,7 +567,7 @@
   talents:
     - name: "Blade of Shar"
       effects: 
-        - desc: Damage Dealt +15%
+        - desc: Damage dealt +15%
           all: true
           meta:
             priority: 1
@@ -592,7 +591,7 @@
       picture: Healing
       power: INT x 170%
       ap: 40
-      notes: Single Target Heal
+      notes: Recover some HP for a single ally
       maxHits: 1
     - name: "Deep Freeze"
       picture: Deep_Freeze
@@ -604,15 +603,16 @@
       picture: Faerie_Light
       power: INT x 250%
       ap: 60
-      notes: Party Heal
+      notes: REcover some HP for all allies
       maxHits: 1
       
   rush:
     name: "Arctic Impact 2R"
     picture: Revised_Arctic_Impact_Priestess_Nel
     element: Ice
+    shortEffects: Recovers 50% HP, and damage dealt +30% (20 seconds)
     effects: 
-      - desc: 50% HP recovery
+      - desc: Recovers 50% HP
       - desc: Damage dealt +30%
         duration: 20
         meta:
@@ -670,7 +670,8 @@
       *Normal > Deep Freeze > Ice Needles > Deep Freeze (Rotation during EB and against slow bosses)*
       
       *Faerie Light > Spam till the party isn't dying. (Healing)*
-    
+ 
+ 
 - name: Evelysse
   cat: gl
   rating: 5
@@ -691,7 +692,7 @@
   talents:
     - name: "Spark of Inspiration II"
       effects: 
-        - desc: +20% INT
+        - desc: INT +20%
           all: true
           meta:
             priority: 1
@@ -699,7 +700,7 @@
             buffValue: 20
     - name: "A Girl of Many Talents II"
       effects: 
-        - desc: +20% Rush DMG
+        - desc: Rush combo damage +20%
           all: true
           meta:
             priority: 1
@@ -707,16 +708,16 @@
             buffValue: 20
     - name: "Blessings of the Stars II"
       effects: 
-        - desc: RCV 3% of Max HP / 3s
-        - desc: -20% to Rush Gauge
+        - desc: Recovers 3% HP every 3 seconds
+        - desc: Rush Gauge quota -20%
     - name: "Cryptic Symbology Arts"
       effects: 
-        - desc: -25% AP Cost
+        - desc: AP cost -25%
           meta:
             priority: 4
             buff: AP Cost Reduction
             buffValue: 25
-        - desc: -20% Cast Time
+        - desc: Symbology cast time -20%
           meta:
             priority: 1
             buff: Cast Time Reduction
@@ -735,28 +736,27 @@
       power: INT x 360%
       ap: 30
       maxHits: 5
+    - name: "Faerie Light"
+      picture: Faerie_Light
+      power: INT x 250%
+      ap: 60
+      notes: Recovers some HP for all allies
+      maxHits: 1      
     - name: "Sunflare"
       picture: Sunflare
       element: Light
       power: INT x 570%
       ap: 42
       maxHits: 6
-    - name: "Faerie Light"
-      picture: Faerie_Light
-      power: INT x 250%
-      ap: 60
-      notes: Party Heal
-      maxHits: 1
       
   rush:
     name: "Celestial Calling"
     picture: Celestial_Calling_Eve
     element: Light
     effects: 
-      - desc: Revives All Party Members at 1 HP
+      - desc: Revives dead party members at 1 HP
         all: true
-        duration: 20
-      - desc: +100% INT
+      - desc: INT +100%
         duration: 20
         meta:
           priority: 4
@@ -814,7 +814,8 @@
       *Normal > Lancer > Faerie Light (I don't trust my party/ Rush Gain Rotation)*
       
       *Faerie Light > Spam it till party isn't dying. (Healing)*
-      
+ 
+ 
 - name: Sarah Jerand
   cat: gl
   rating: 4
@@ -834,7 +835,7 @@
   talents:
     - name: "Beat of My Drum II"
       effects: 
-        - desc: +30% AP Recovery at Long Range
+        - desc: AP recovery speed +30% at long range
           all: true
           meta:
             priority: 1
@@ -843,19 +844,26 @@
             buffValue: 30
     - name: "Healer's Touch II"
       effects: 
-        - desc: Recover 5% HP / 5s
-          all: Long Range Weapon Users
+        - desc: Recovers 5% HP every 5 seconds
+          all: Long Range Weapons
     - name: "Purge II"
+      shortEffects: Nullifies poison/paralysis (Party, 90 seconds)
       effects: 
-        - desc: Nullify Poison for 90 seconds
+        - desc: Nullify poison for 90 seconds
           all: true
-        - desc: Nullify Paralysis for 90 seconds
+        - desc: Nullify paralysis for 90 seconds
           all: true
     - name: "Premonitions"
       effects: 
-        - desc: 80% Chance of Surviving a Lethal Attack at 10% HP or more
+        - desc: 80% chance of surviving a lethal attack at 10% HP or more
 
   skills:
+    - name: "Faerie Light"
+      picture: Faerie_Light
+      power: INT x 250%
+      ap: 60
+      notes: Party Heal
+      maxHits: 1  
     - name: "Wind Blade"
       picture: Wind_Blade
       element: Wind
@@ -866,7 +874,7 @@
       picture: Angel_Feathers
       power: 0%
       ap: 95
-      notes: All Stats +20% Party Wide
+      notes: All stats +20% (Party, 20 seconds)
       maxHits: 1
       meta:
         priority: 2
@@ -883,23 +891,18 @@
       power: INT x 460%
       ap: 35
       maxHits: 2
-    - name: "Faerie Light"
-      picture: Faerie_Light
-      power: INT x 250%
-      ap: 60
-      notes: Party Heal
-      maxHits: 1
       
   rush:
     name: "Healing Blast Hurricane"
     picture: Healing_Blast_Hurricane_Sarah
     element: Wind
+    shortEffects: Recovers 70% HP, and cures poison/paralysis (Party)
     effects: 
-      - desc: 70% HP recovery
+      - desc: Recovers 70% HP
         all: true
-      - desc: Cure Poison
+      - desc: Cure poison
         all: true
-      - desc: Cure Paralysis
+      - desc: Cure paralysis
         all: true
     power: INT x 2000%
     maxHits: 11
@@ -957,7 +960,8 @@
       *Normal > Tornado > Faerie Light (Rush Gain Rotation.)*
       
       *Faerie Light (Healing)*
-    
+
+
 - name: Precis F. Neumann (Winter)
   cat: gl
   rating: 8
@@ -978,13 +982,13 @@
   talents:
     - name: "Anniversary Celebration II"
       effects: 
-        - desc: Symbology invoking time -60%
+        - desc: Symbology cast time -60%
           all: true
           meta:
             priority: 1
             buff: Cast Time Reduction
             buffValue: 60
-        - desc: Hit counter +2s
+        - desc: Hitcount timer +2 seconds
           all: true
     - name: "Twinkle Twinkle Little Star II"
       effects: 
@@ -993,29 +997,30 @@
         - desc: Movement speed +30%
           all: true
     - name: "Trump Card"
+      shortEffects: Critical hit chance and critical damage +20% when hitcount is 50 or more, and +30% when 100 or more (Party)
       effects: 
-        - desc: Crit Rate +20% when Hit Count is over 50
+        - desc: Critical hit chance +20% when hitcount is 50 or more
           all: true
           meta:
             priority: 1
             buff: Crit Rate
             buffCondition: Hit Count > 50
             buffValue: 20
-        - desc: Crit Damage +20% when Hit Count is over 50
+        - desc: Critical damage dealt +20% when hitcount is 50 or more
           all: true
           meta:
             priority: 1
             buff: Crit Damage
             buffCondition: Hit Count > 50
             buffValue: 20
-        - desc: Crit Rate +30% when Hit Count is over 100
+        - desc: Critical hit chance +30% when hitcount is 100 or more
           all: true
           meta:
             priority: 1
             buff: Crit Rate
             buffCondition: Hit Count > 100
             buffValue: 30
-        - desc: Crit Damage +30% when Hit Count is over 100
+        - desc: Critical damage dealt +30% when hitcount is 100 or more
           all: true
           meta:
             priority: 1
@@ -1027,19 +1032,19 @@
         - desc: Recover all ally AP when using Offensive Symbology
 
   skills:
+    - name: "Sacred Faerie Light"
+      picture: Faerie_Light
+      power: INT x 250%
+      ap: 60
+      notes: Recover some HP for all allies
+      maxHits: 1  
     - name: "Sacred Lancer"
       picture: Radiant_Lancer
       element: Light
       power: INT x 260%
       ap: 19
       notes: Allies recover 6 AP
-      maxHits: 4
-    - name: "Sacred Faerie Light"
-      picture: Faerie_Light
-      power: INT x 250%
-      ap: 60
-      notes: Party Heal
-      maxHits: 1
+      maxHits: 8
     - name: "Sacred Rings"
       picture: Aurora_Rings
       element: Light
@@ -1059,11 +1064,12 @@
     name: "Magical Present"
     picture: Magical_Present_Xmas_Precis
     element: Light
+    shortEffects: Recover 15% HP every 3 seconds, and critical hit chance +30% (Party, 20 seconds)
     effects: 
-      - desc: Recover 15% of Max HP every 3 seconds
+      - desc: Recover 15% HP every 3 seconds
         all: true
         duration: 20
-      - desc: Crit Rate +30%
+      - desc: Critical hit chance +30%
         all: true
         meta:
           priority: 1
@@ -1127,7 +1133,8 @@
       *Normal > Rays > Lancer > Rays (Damage Rotation)*
       
       *Sacred Faerie Light (Healing)*
-    
+
+
 - name: Relia
   cat: gl
   rating: 8
@@ -1148,7 +1155,7 @@
   talents:
     - name: "Golden Intentions II"
       effects: 
-        - desc: AP Recovery +50% at 100% HP
+        - desc: AP recovery +50% when at 100% HP
           all: true
           meta:
             priority: 1
@@ -1157,22 +1164,34 @@
             buffValue: 50
     - name: "A Sister's Prayer II"
       effects: 
-        - desc: Recover 5% HP every 3 seconds
+        - desc: Recovers 5% HP every 3 seconds
           all: true
     - name: "Forehead Symbology"
       effects: 
-        - desc: Nullifies AP Recovery Rate Reduction Fields & Movement Rate Reduction Fields
-          all: Self & Short Ranged Weapons
+        - desc: Nullifies AP Recovery Rate Reduction Fields
+          all: Close Range Weapons, Self
+        - desc: Nullifies Movement Rate Reduction Fields
+          all: Close Range Weapons, Self          
     - name: "Dreams of the Future"
       effects: 
-        - desc: Symbology invoking time -50%
+        - desc: Symbology cast time -50%
           meta:
             priority: 4
             buff: Cast Time Reduction
             buffValue: 50
 
   skills:
-    - name: "Shiny Lancer"
+    - name: "Enraging Faerie Light"
+      picture: Faerie_Light
+      power: INT x 230%
+      ap: 60
+      notes: Recovers some HP, and ATK +20% (Party, 20 seconds)
+      maxHits: 1
+      meta:
+        priority: 2
+        buff: ATK
+        buffValue: 20  
+    - name: "Radiant Lancer"
       picture: Radiant_Lancer
       element: Light
       power: INT x 300%
@@ -1185,32 +1204,23 @@
         priority: 2
         buff: INT
         buffValue: 25
-      ap: 30
-      notes: INT +25% & ATK Damage Taken -15% Party Wide
-      maxHits: 5
+      ap: 65
+      notes: INT +25% and ATK damage taken -15% (Party, 20 seconds)
+      maxHits: 1
     - name: "Aurora Rings"
       picture: Aurora_Rings
       element: Light
       power: INT x 460%
       ap: 35
       maxHits: 5
-    - name: "Enraging Faerie Light"
-      picture: Faerie_Light
-      power: INT x 230%
-      ap: 60
-      notes: ATK +20% for 20 seconds. Party wide heal & buff.
-      maxHits: 1
-      meta:
-        priority: 2
-        buff: ATK
-        buffValue: 20
       
   rush:
     name: "Freeze Time"
     picture: Freezing_Clock_Relia
     element: Ice
+    shortEffects: Single target damage +30%, and recover 15% HP every 3 seconds (Party, 20 seconds)
     effects: 
-      - desc: Single Target Damage +30%
+      - desc: Single target damage +30%
         all: true
         duration: 20
         meta:
@@ -1281,7 +1291,8 @@
       - Normal > Enraging Faerie Light > Radiant Lancer/Aurora Rings ("Damage" rotation, best for rush gain)
 
       - Brute Enlightenment (Re-apply when necessary)*  
-      
+
+
 - name: Fina
   cat: gl
   rating: 8
@@ -1293,35 +1304,35 @@
 
   stats:
     hp: 12600
-    atk: 1733
+    atk: 1773
     int: 2482
     def: 1537
     hit: 1050
     grd: 1134
 
   talents:
+    - name: "Straight Shooter"
+      effects: 
+        - desc: Recover AP for all allies when using Aim and Bright Shower  
+    - name: "White Mage"
+      effects: 
+        - desc: Nullifies HP Reduction Fields
+          all: Close Range Weapon, Self       
     - name: "Cleansing Prayer II"
       effects: 
-        - desc: Symbology invoking time -70%
+        - desc: Symbology cast time -70%
           meta:
             priority: 1
             buff: Cast Time Reduction
             buffValue: 70
-        - desc: No flinching when casting Symbology
-    - name: "White Mage"
-      effects: 
-        - desc:  Nullifies HP Reduction Field
-          all: self / close ranged weapons
+        - desc: No flinching when casting symbology
     - name: "Distinguished Soul"
       effects: 
-        - desc: AP recovery from Normal Attacks +100%
+        - desc: Normal attack AP recovery +100%
           meta:
             priority: 1
             buff: AP Recovery From Normal Attacks
             buffValue: 100
-    - name: "Straight Shooter"
-      effects: 
-        - desc: Recover all ally AP when using Aim or Bright Shower
 
   skills:
     - name: "Aim"
@@ -1330,24 +1341,24 @@
       ap: 25
       notes: Allies recover 4 AP
       maxHits: 1
+    - name: "Bright Shower"
+      picture: Bright_Shower
+      element: Light
+      power: INT x 520%
+      ap: 40
+      notes: Allies recover 9 AP
+      maxHits: 12      
     - name: "Curaga"
       picture: Curaga
       power: INT x 290%
       ap: 60
-      notes: Party Heal
+      notes: Recover a lot of HP for all allies
       maxHits: 1
-    - name: "Bright Shower"
-      picture: Bright_Shower
-      element: Light
-      power: INT x 310%
-      ap: 40
-      notes: Allies recover 9 AP
-      maxHits: 12
     - name: "Cheer"
       picture: Cheer
       power: 0%
       ap: 85
-      notes: ATK/INT/DEF +25% Party Wide
+      notes: Raise all allies' ATK/INT/DEF +25% (20 seconds)
       maxHits: 1
       meta:
         priority: 2
@@ -1361,11 +1372,13 @@
     name: "Heaven's Judgment"
     picture: Heaven's_Judge_Fina
     element: Light
+    shortEffects: Recover 70% HP, and critical hit chance +30% (Party, 20 seconds)
     effects: 
       - desc: Recover 70% HP
         all: true
-      - desc: Crit Rate +30%
+      - desc: Critical hit chance +30%
         all: true
+        duration: 20
         meta:
           priority: 1
           buff: Crit Rate
@@ -1423,6 +1436,7 @@
       
       *Cheer (Buff when necessary)*
       
+      
 - name: Welch Vineyard (Valentine)
   cat: gl
   rating: 7
@@ -1443,35 +1457,36 @@
   talents:
     - name: "Lady’s Charm II"
       effects: 
-        - desc: +30% Damage Taken when under 50% HP
-          all: Enemy
+        - desc: Damage taken +30% when under 50% HP
+          all: Enemies
           meta:
             priority: 3
             buff: Enemy Damage Taken
-            buffCondition: HP is > 50%
+            buffCondition: HP > 50%
             buffValue: 50
     - name: "Beach Body II"
-      effects: 
-        - desc: ATK Damage +10%
+      shortEffects: ATK/INT damage dealt +10%, and ATK/INT damage dealt +25% when skill chain is 3 or more (Party)
+      effects:
+        - desc: ATK damage dealt +10%
           all: true
           meta:
             priority: 1
             buff: ATK Damage
             buffValue: 10
-        - desc: INT Damage +10%
+        - desc: INT damage dealt +10%
           all: true
           meta:
             priority: 1
             buff: INT Damage
             buffValue: 10
-        - desc: ATK Damage +25%
+        - desc: ATK damage dealt +25% when skill chain is 3 or more
           all: true
           meta:
             priority: 3
             buff: ATK Damage
             buffCondition: Skill Chain 3+
             buffValue: 25
-        - desc: INT Damage +25%
+        - desc: INT damage dealt +25% when skill chain is 3 or more
           all: true
           meta:
             priority: 3
@@ -1480,12 +1495,12 @@
             buffValue: 25
     - name: "Brains & Beauty"
       effects: 
-        - desc: AP Cost -20%
+        - desc: AP cost -20%
           meta:
             priority: 4
             buff: AP Cost Reduction
             buffValue: 20
-        - desc: No flinching when casting Symbology
+        - desc: No flinching when casting symbology
     - name: "Troublemaker"
       effects: 
         - desc: INT +15%
