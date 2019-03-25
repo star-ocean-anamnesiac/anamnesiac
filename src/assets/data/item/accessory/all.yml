@@ -569,7 +569,7 @@
         buffCondition: Hit Count > 200
   obtained: Monarch Zinae (Achievement)
   
-  - name: Forward Bangle
+- name: Forward Bangle
   cat: 'gl'
   star: 5
   picture: Forward_Bangle
