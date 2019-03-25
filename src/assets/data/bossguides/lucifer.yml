@@ -37,7 +37,7 @@
   desc: >
     None at this time.
 
-moves:
+  moves:
     - name: Tornado
       targets: Any
       isSymbology: true
