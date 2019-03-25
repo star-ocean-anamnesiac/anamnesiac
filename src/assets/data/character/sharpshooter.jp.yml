@@ -1861,7 +1861,7 @@
             buff: HP
             buffValue: 15
 
-skills:
+  skills:
     - name: "Magnetic Field"
       picture: Magnetic_Field
       power: ATK x 420%
