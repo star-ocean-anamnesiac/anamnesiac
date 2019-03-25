@@ -80,6 +80,7 @@
   rush:
     name: "YoRHa Hack: Zero"
     picture: YoHRa_Hacking_Zero_9S
+    shortEffects: Recovers 50% HP and ATK damage +30% (All Party, 20 seconds)
     effects: 
       - desc: Recover 50% HP
         all: true
@@ -191,6 +192,7 @@
   rush:
     name: "Energy Burst Barrage"
     picture: Energy_Burst_Barrage_Maria
+    shortEffects: Critical hit chance +40% (All Party) and removes buffs from enemies
     effects: 
       - desc: Removes buffs
         all: Enemies
@@ -1401,7 +1403,7 @@
   rush:
     name: "Revised Heavenly Flight"
     picture: Revised_Heavenly_Flight_Maiden_Clair
-    shortEffects: ATK/DEF -20 (Enemies/30 seconds)
+    shortEffects: ATK -20% and DEF -20 (All Enemies, 30 seconds)
     effects: 
       - desc: ATK -20%
         all: Enemy
@@ -1789,7 +1791,7 @@
             buff: Damage
             buffValue: 40
     - name: "Bramble Burst Barrage II"
-      shortEffects: Damage dealt +50%/55%/60% when hitcount is 100/150/200 (Party)
+      shortEffects: Damage dealt +50%/55%/60% when hitcount is 100/150/200 (All Party)
       effects: 
         - desc: Damage dealt +50% when hitcount is 100 or more
           all: true
@@ -1867,7 +1869,7 @@
           buff: ATK
           buffValue: 60
     power: ATK x 4000%
-    maxHits: 6
+    maxHits: 9
     
   notes: >
       _So Bridal Maria has arrived at the same time as her awakened form which is bad since Bridal was at least on paper an improved
@@ -1928,7 +1930,7 @@
 
   talents:
      - name: "Crimson Blossom Flurry II"
-       shortEffects: Critical hit chance +10%/20%/30% when hitcount is 100/150/200 (Party)
+       shortEffects: Critical hit chance +10%/20%/30% when hitcount is 100/150/200 (All Party)
        effects: 
         - desc: Critical hit chance +10% when hitcount is 100 or more
           all: true
@@ -1952,23 +1954,23 @@
             buffCondition: Hit Count > 200
             buffValue: 30
      - name: "Sincere Devotion II"
-       shortEffects: Critical hit damage +10%/20%/30% when hitcount is 100/150/200 (Party)
+       shortEffects: Critical damage +10%/20%/30% when hitcount is 100/150/200 (All Party)
        effects: 
-        - desc: Critical hit damage +10% when hitcount is 100 or more
+        - desc: Critical damage +10% when hitcount is 100 or more
           all: true
           meta:
             priority: 3
             buff: Crit Damage
             buffCondition: Hit Count > 100
             buffValue: 10
-        - desc: Critical hit damage +20% when hitcount is 150 or more
+        - desc: Critical damage +20% when hitcount is 150 or more
           all: true
           meta:
             priority: 3
             buff: Crit Damage
             buffCondition: Hit Count > 150
             buffValue: 20
-        - desc: Critical hit damage +30% when hitcount is 200 or more
+        - desc: Critical damage +30% when hitcount is 200 or more
           all: true
           meta:
             priority: 3
@@ -2830,7 +2832,7 @@
   rush:
     name: "Rocket Slippers"
     picture: Rocket_Slippers_Verda
-    shortEffects: ATK damage +30% and movement speed +30% (Party)
+    shortEffects: ATK damage +30% and movement speed +30% (All Party)
     effects:
       - desc: ATK damage +30%
         duration: 20
