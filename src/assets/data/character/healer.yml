@@ -228,7 +228,7 @@
     name: "Divine Wave"
     picture: Divine_Wave_Miki
     effects: 
-      - desc: Recover 30% HP every 4 seconds
+      - desc: Recovers 30% HP every 4 seconds
         all: true
         duration: 20
     power: INT x 2000%
@@ -821,6 +821,7 @@
   rating: 4
   picture: Sarah
   weapon: staff
+  ace: false
   limited: false
   star: 5
 
@@ -1167,11 +1168,12 @@
         - desc: Recovers 5% HP every 3 seconds
           all: true
     - name: "Forehead Symbology"
+      shortEffects: Nullifies AP Recovery Rate Reduction Fields and Movement Rate Reduction Fields (All Close Range Weapons / Self)
       effects: 
         - desc: Nullifies AP Recovery Rate Reduction Fields
-          all: Close Range Weapons, Self
+          all: Close Range Weapons / Self
         - desc: Nullifies Movement Rate Reduction Fields
-          all: Close Range Weapons, Self          
+          all: Close Range Weapons / Self          
     - name: "Dreams of the Future"
       effects: 
         - desc: Symbology cast time -50%
@@ -1317,7 +1319,7 @@
     - name: "White Mage"
       effects: 
         - desc: Nullifies HP Reduction Fields
-          all: Close Range Weapon, Self       
+          all: Close Range Weapon / Self       
     - name: "Cleansing Prayer II"
       effects: 
         - desc: Symbology cast time -70%
@@ -1457,7 +1459,7 @@
   talents:
     - name: "Lady’s Charm II"
       effects: 
-        - desc: Damage taken +30% when under 50% HP
+        - desc: Damage taken +30% at less than 50% HP
           all: Enemies
           meta:
             priority: 3
@@ -1465,7 +1467,7 @@
             buffCondition: HP > 50%
             buffValue: 50
     - name: "Beach Body II"
-      shortEffects: ATK/INT damage dealt +10%, and ATK/INT damage dealt +25% when skill chain is 3 or more (All Party)
+      shortEffects: ATK/INT damage dealt +10%, and +25% when skill chain is 3 or more (All Party)
       effects:
         - desc: ATK damage dealt +10%
           all: true
@@ -2240,7 +2242,7 @@
   talents:
     - name: "Placid Waters"
       effects: 
-        - desc: Nullifies status ailments (180 seconds)
+        - desc: Nullifies status ailments for 180 seconds
           all: false
 
   skills:
@@ -2257,7 +2259,8 @@
       maxHits: 14
     - name: "Cure Condition"
       picture: Cure_Condition
-      power: Cure All Status Ailments
+      power: 0%
+      notes: Cure all status ailments
       ap: 40
       maxHits: 1
     - name: "Volcanic Burst"
