@@ -330,3 +330,38 @@
         buffCondition: Hit Count > 100
       lb: 5
   obtained: Gacha
+  
+- name: Trigger-Happy Bunny Gun
+  cat: 'gl'
+  star: 5
+  picture: Happy_Bunny_Gun
+  atk: 962
+  int: 959
+  factors:
+    - desc: Imbue Fire Element
+      element: Fire
+    - desc: 70% Chance to Survive a Lethal Attack at 20% HP or more
+    - desc: +10% Single Target DMG
+      meta: 
+        priority: 1
+        buff: Single Target Damage
+        buffValue: 10
+      lb: 5
+  obtained: Gacha
+  
+- name: Magnetic Rouge
+  cat: 'gl'
+  star: 5
+  picture: Magnetic_Rouge
+  atk: 513
+  int: 508 
+  factors:
+    - desc: +20% DMG on Magnetic Field
+    - desc: +5% ATK
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 5
+    - desc: RCV 5% HP of DMG Dealt by Normal Attacks
+      lb: 5
+  obtained: Lucifer (Exchange)
