@@ -36,10 +36,11 @@ const helpers = {
 
     const effects = effArr.map(x => {
       const base = x.desc;
+      const effDurString = x.duration ? `/${x.duration}s` : '';
       if(x.all) {
-        return `${base} (${x.all === true ? 'All Party' : 'All ' + x.all })`;
+        return `${base} (${x.all === true ? 'All Party' : 'All ' + x.all }${effDurString})`;
       }
-      return base;
+      return `${base}${effDurString ? ' (Self' + effDurString + ')') : '';
     })
     return effects.join(', ');
   }
