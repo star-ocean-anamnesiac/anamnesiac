@@ -3510,4 +3510,1091 @@
     power: ATK x 4000%
     maxHits: 1
 
+- name: Fayt Leingod (Awakened)
+  cat: jp
+  rating: 5
+  picture: Fayt
+  weapon: ohs
+  ace: true
+  limited: false
+  awakened: true
+  star: 5
 
+  stats:
+    hp: 15750
+    atk: 2730
+    int: 1549
+    def: 1957
+    hit: 1134
+    grd: 819
+
+  talents:
+    - name: "Star Athlete III"
+      effects: 
+        - desc: ATK +40%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 40
+    - name: "Speak Softly & Carry A Big Stick"
+      effects: 
+        - desc: Imbue attacks with Fire and Light
+    - name: "Feinting Tactics"
+      effects: 
+        - desc: All elemental damage dealt +15%
+          all: true
+          meta:
+            priority: 1
+            buff: Elemental Damage
+            buffValue: 15
+        - desc: Elemental damage +30% when at 100% HP
+          all: true
+          meta:
+            priority: 3
+            buff: Elemental Damage
+            buffCondition: HP is 100%
+            buffValue: 30
+    - name: "Stubborn to a Fault"
+      effects: 
+        - desc: No flinching when taking damage of 15% HP or less
+          all: Long Range Weapons / Self
+    - name: "Avoidable"
+      effects: 
+        - desc: Enables evasion during air attacks
+        - desc: Nullifies charge assault critical damage penalty
+          all: Self
+    - name: "God Against God"
+      effects: 
+        - desc: AP cost -5%
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 5
+        - desc: charge assault Medium vertical air laid wing + 100% failure
+
+  skills:
+    - name: "Reflect Strife Flight"
+      picture: Side_Kick
+      power: ATK x 200%
+      ap: 19
+      maxHits: 3
+    - name: "Rising Blade"
+      picture: Rising_Blade
+      power: ATK x 460%
+      ap: 32
+      maxHits: 5
+    - name: "Shotgun Bolt"
+      picture: Shotgun_Blast
+      element: Lightning
+      power: ATK x 210%
+      ap: 20
+      maxHits: 4
+      highlight: true
+    - name: "Vertical Air Raid Wing"
+      picture: Avian_Air_Raid
+      element: Light
+      power: ATK x 500%
+      ap: 30
+      maxHits: 5
+      highlight: true
+    - name: "Crescent Mirage"
+      picture: Crescent_Mirage
+      power: ATK x 220%
+      ap: 20
+      maxHits: 4
+      highlight: true
+
+  rush:
+    name: "Colossal Ethereal Blast"
+    picture: Colossal_Ethereal_Blast_Fayt
+    effects: 
+      - desc: All elemental damage dealt +50%
+        all: true
+        duration: 20
+        meta:
+          priority: 1
+          buff: Elemental Damage
+          buffValue: 50
+    power: ATK x 4000%
+    maxHits: 12
+    
+  notes: >
+      _Innately does Light/Fire damage.  Buffs both ATK and attribute damage, but his ATK buff is low and his attribute buffing isn't unique.
+      Awakening similarly didn't boost his skills by as much as it needed to; he takes a lot of investment for a subpar ATK buffer._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Decent ATK buff
+      
+      - Double self imbue
+      
+      - Passive elemental damage buff
+      
+      - Awooo
+      
+      
+      **Cons**
+            
+      - Has no ranged attack
+      
+      - Needs certain weapons against bosses with elemental resist
+      
+      - His anti-flinch is pretty useless at this point
+            
+      
+      **Rotation**
+      
+      *Normal > Crescent Mirage > Shotgun Blast > Air Raid^2*
+ 
+- name: Claude C. Kenny (Awakened)
+  cat: jp
+  rating: 8
+  picture: Claude
+  weapon: ohs
+  ace: true
+  limited: false
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 15750
+    atk: 2730
+    int: 1537
+    def: 1983
+    hit: 1120
+    grd: 826
+
+  talents:
+    - name: "Hero's Resolve II"
+      effects: 
+        - desc: ATK +40%
+          all: Attackers
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 40
+        - desc: ATK +60%
+          all: Attackers
+          meta:
+            priority: 1
+            buff: ATK
+            buffRole: attacker
+            buffValue: 60
+    - name: "Learned Finesse II"
+      effects: 
+        - desc: ATK +60%
+          all: Defenders
+          meta:
+            priority: 1
+            buff: ATK
+            buffRole: defender
+            buffValue: 60
+    - name: "Greater Hero's Might"
+      effects: 
+        - desc: Damage taken -20%
+          all: Healers
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffRole: healer
+            buffValue: 20
+    - name: "Passed-Down Martial Arts"
+      effects: 
+        - desc: Normal attack AP recovery +150%
+          all: true
+          meta:
+            priority: 1
+            buff: AP Recovery From Normal Attacks
+            buffValue: 150
+    - name: "Talent 5"
+      effects: 
+        - desc: Avoid being in the air during the nesting from Asylum
+        - desc: Do not get rid of when in the air Damaged -30% 
+    - name: "At the Galactic Federation Heroes"
+      effects: 
+        - desc: ATK Damage +100% when skill chain is 3 or more
+          meta:
+            priority: 3
+            buff: ATK Damage
+            buffCondition: Skill Chain 3+
+            buffValue: 100
+
+  skills:
+    - name: "Sword Bomber"
+      picture: Sword_Bomber
+      element: Fire
+      power: ATK x 600%
+      ap: 38
+      maxHits: 2
+    - name: "Chopstick Split"
+      picture: Helmsplitter
+      power: ATK x 500%
+      ap: 30
+      maxHits: 1
+      highlight: true
+    - name: "Punch"
+      picture: Air_Slash_I
+      power: ATK x 220%
+      ap: 20
+      maxHits: 1
+      highlight: true      
+    - name: "Double Break"
+      picture: Double_Slash_I
+      power: ATK x 220%
+      ap: 20
+      maxHits: 2
+      highlight: true
+
+  rush:
+    name: "Mirror Blade Tempest"
+    picture: Mirror_Blade_Tempest_Claude
+    effects: 
+      - desc: Damage +30%
+        all: true
+        duration: 30
+        meta:
+          priority: 1
+          buff: Damage
+          buffValue: 30
+    power: ATK x 4000%
+    maxHits: 8
+    
+  notes: >
+      _Favors Attackers and Defenders with his buffing, which with the popularity and strength of Shooters tends to mean he wants a tailored party.
+      Notably he was the first character to provide AP+150% via normals, but sources of AP gain are plentiful at this point.  Doesn't do much else to
+      stand out, and really wishes he had a better rush buff._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Powerful ATK buff for attackers and defenders.
+      
+      - Damage reduction for healers.
+      
+      - Ap recovery on Normals.
+      
+      
+      **Cons**
+            
+      - Poor synergy with sharpshooters and invokers.
+      
+      - Post-rush buff made redundant by commonly seen characters like Maria and 9S.
+            
+      
+      **Rotation**
+      
+      *Normal > Punch > Double Break > Helmsplitter (Damage rotation)*
+
+- name: Roddick Farrence (Awakened)
+  cat: jp
+  rating: 9
+  picture: Ratix
+  weapon: ohs
+  ace: true
+  limited: false
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 15570
+    atk: 3328
+    int: 1535
+    def: 1983
+    hit: 1134
+    grd: 812
+
+  talents:
+    - name: "Transcending Space-time II"
+      effects: 
+        - desc: Symbology cast time -80%
+          all: true
+          meta:
+            priority: 1
+            buff: Cast Time Reduction
+            buffValue: 80
+    - name: "Astounding Edarl Blade Arts"
+      effects: 
+        - desc: Stun chance +50%
+          all: true
+          meta:
+            priority: 1
+            buff: Stun Rate
+            buffValue: 50
+    - name: "Defense Force of Kratus"
+      effects: 
+        - desc: ATK +40%
+          all: false
+          meta:
+            priority: 4
+            buff: ATK
+            buffValue: 40
+    - name: "Breath Adventurous"
+      effects: 
+        - desc: ATK · INT damage + 100% (over all enemies) 
+    - name: "Looke Saver"
+      effects: 
+        - desc: Damage to the Normal Attack 20% Additional Hit Occurrence
+        - desc: Battle Skills Additional 5% Damage to the Battle Skill (Overall)
+    - name: "Talent 6"
+      effects: 
+        - desc: CB Over 150 Overtime Idle Charge
+        - desc: ATK damage + 50% when starting up is over 400 hits
+
+  skills:
+    - name: "Double Slash"
+      picture: Double_Slash_I
+      power: ATK x 220%
+      ap: 20
+      maxHits: 2
+    - name: "Shotgun Blast"
+      picture: Shotgun_Blast
+      element: Lightning
+      power: ATK x 210%
+      ap: 20
+      maxHits: 4  
+    - name: "Air Slash"
+      picture: Air_Slash_I
+      power: ATK x 220%
+      ap: 20
+      maxHits: 1
+    - name: "Dragon Slash"
+      picture: Dragon_Slash
+      element: Lightning
+      power: ATK x 570%
+      ap: 32
+      maxHits: 2
+    - name: "Crescent Mirage"
+      picture: Crescent_Mirage
+      power: ATK x 220%
+      ap: 20
+      maxHits: 4
+
+  rush:
+    name: "Omega Thunderclap Blade"
+    picture: Omega_Thunderclap_Blade_Ratix
+    element: Lightning
+    shortEffects: AP cost -40% and damage taken -20% (60 seconds)
+    effects: 
+      - desc: AP cost -40%
+        all: false
+        duration: 60
+        meta:
+          priority: 4
+          buff: AP Cost Reduction
+          buffValue: 40
+      - desc: Damage taken -20%
+        all: false
+        duration: 60
+        meta:
+          priority: 4
+          buff: Damage Taken Reduction
+          buffValue: 20
+    power: ATK x 5000%
+    maxHits: 7
+    
+  notes: >
+      _I hope you like stun.  Additional hits on skills for the party in addition to his party stun rate increase allow him to facilitate frequent stun rates as
+      well as frequent rushes, without reliance on any other party talents.  His rush for the first time in the game's life does legitimately good damage,
+      and he now offers an ATK/INT damage taken debuff on stunned bosses that by far and away dwarfs every other available option - and since
+      stun persists through rushes, it applies there now too.  Separately from awakening and exclusive to him, his Dragon Roar has both been sped
+      up and now has a much larger hitbox, seemingly making it a reliable if not amazing option universally now._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Slight invoking time buff
+      
+      - Ridiculous buff to partywide stun rate
+      
+      - Strong greedy post-rush buff
+      
+      
+      **Cons**
+            
+      - Brings little utility beyond his stun buff
+      
+      - Needs some slight build around to take advantage of his buff
+      
+      
+      **Rotation**
+      
+      *CA Air > Mirage > Roar^n*
+      
+      *Normal > Shotgun > Air > Shotgun^n (Hitcount)*
+      
+      *Avoid Shotgun against smaller enemies due to size dependency*
+
+- name: Lenneth (Awakened)
+  cat: jp
+  rating: 4
+  picture: Lenneth
+  weapon: ohs
+  ace: true
+  limited: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 3140
+    int: 1601
+    def: 2123
+    hit: 1134
+    grd: 819
+
+  talents:
+    - name: "Greater Will of the Creator"
+      effects: 
+        - desc: ATK +40%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 30
+        - desc: Covered ATK Damaged + 15% (Overall Enemy)
+    - name: "The Dusk of Ragnarok"
+      effects: 
+        - desc: Rush combo damage +20%
+          all: true
+          meta:
+            priority: 1
+            buff: Rush Damage
+            buffValue: 20
+        - desc: Invalid Seal (total / 120 secs)
+    - name: "Platina's Heart"
+      effects: 
+        - desc: +15% chance of adding silence to all attacks
+          meta:
+            priority: 4
+            buff: Silence Attack Chance
+            buffValue: 15
+    - name: "Glitter in Ax"
+      effects: 
+        - desc: Charge critical hit by charge assault Abolish the outbreak effect During the attack. Avoidable talent in the air.
+    - name: "Sound Echoing Voice"
+      effects: 
+        - desc: AP Cost Reduction -50% when skill chain is 3 or more
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain 3+
+            buffValue: 50
+    - name: "British Invitation"
+      effects: 
+        - desc: ATK +15%
+        - desc: DEF +10%
+
+  skills:
+    - name: "Glowing Pierce"
+      picture: Glowing_Pierce
+      power: ATK x 190%
+      ap: 18
+      maxHits: 3
+      highlight: true
+    - name: "Sky-High Break"
+      picture: Helmsplitter
+      power: ATK x 550%
+      ap: 35
+      maxHits: 3
+    - name: "Heaven and Hell"
+      picture: Air_Slash_I
+      power: ATK x 240%
+      ap: 22
+      maxHits: 5
+    - name: "Valkyrie's Mercy"
+      picture: Valkyrie's_Mercy
+      power: ATK x 910%
+      ap: 36
+      maxHits: 5
+    - name: "Crescent Mirage"
+      picture: Crescent_Mirage
+      power: ATK x 200%
+      ap: 18
+      maxHits: 4
+
+  rush:
+    name: "Nibelung Valesti"
+    picture: Nibelung_Valesti_Lenneth
+    effects: 
+      - desc: DEF -30%
+        all: Enemies
+        duration: 20
+        meta:
+          priority: 1
+          buff: Enemy DEF Reduction
+          buffValue: 30
+    power: ATK x 4000%
+    maxHits: 8
+    
+  notes: >
+      _Her buffs are spread a bit thin, and her ATK Damage Taken debuff is contingent on winning dice rolls with Seal.  Though she boasts some high
+      mults, the corresponding skills are fairly slow.  Still, she has no role restrictions, and every once in awhile Seal might keep a boss from using 
+      something annoying._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Unconditional good ATK buff
+      
+      - Rush combo damage buff
+      
+      - Defence debuff on rush for enemies.
+      
+      
+      **Cons**
+            
+      - ATK buff has been exceeded by many attackers making it redundant in a lot of comps
+      
+      - Silence has a low chance to apply making it a poor talent that doesn't do much
+      
+      - Doesn't do enough other attackers don't already do better
+      
+      
+      **Rotation**
+            
+      *Normal > Glowing Pierce > Sky-High Break^n*
+      
+- name: Ashton Anchors (Awakened)
+  cat: jp
+  rating: 8
+  picture: Ashton
+  weapon: dualswords
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 15855
+    atk: 2823
+    int: 1523
+    def: 1904
+    hit: 1127
+    grd: 819
+
+  talents:
+    - name: "Creepy's Aid"
+      shortEffects: ATK +25% and slight AP recovery after using a fire skill (10 seconds)
+      effects: 
+        - desc: ATK +25% after using a fire skill (10 seconds)
+          meta:
+            priority: 3
+            buff: ATK
+            buffCondition: Fire Skill
+            buffValue: 15
+        - desc: Slight AP recovery after using a fire skill (10 seconds)
+    - name: "Weepy's Healing"
+      effects: 
+        - desc: Normal attack AP recovery +150% after using an ice skill (10 seconds)
+          meta:
+            priority: 3
+            buff: AP Recovery From Normal Attacks
+            buffValue: 150
+    - name: "Sincere Efforts II"
+      effects: 
+        - desc: All elemental damage dealt +40%
+          all: true
+          meta:
+            priority: 1
+            buff: Elemental Damage
+            buffValue: 40
+        - desc: AP cost -10%
+          all: false
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 10
+    - name: "Heir of Symbological Arts"
+      shortEffects: Rush combo damage +20%/40% when hitcount is 100/200
+      effects: 
+        - desc: Rush combo damage +20% when hitcount is 100 or more
+          all: false
+          meta:
+            priority: 3
+            buff: Rush Damage
+            buffCondition: Hit Count > 100
+            buffValue: 20
+        - desc: Rush combo damage +40% when hitcount is 200 or more
+          all: false
+          meta:
+            priority: 3
+            buff: Rush Damage
+            buffCondition: Hit Count > 200
+            buffValue: 40
+    - name: "High-Speed Slashing"
+      shortEffects: AP Consumption -30%/50% when hitcount is 150/300
+      effects: 
+        - desc: AP Consumption -30% when hitcount is 150 or more
+          all: false
+          meta:
+            priority: 3
+            buff: AP Cost Reduction
+            buffCondition: Hit Count > 150
+            buffValue: 30
+        - desc: AP Consumption -50% when hitcount is 300 or more
+          all: false
+          meta:
+            priority: 3
+            buff: AP Cost Reduction
+            buffCondition: Hit Count > 300
+            buffValue: 50
+        - desc: Critial Rate +50% when hitcount is 400 or more
+          all: false
+          meta:
+            priority: 3
+            buff: Crit Rate
+            buffCondition: Hit Count > 400
+            buffValue: 50
+    - name: "Talent 6"
+      effects: 
+        - desc: Damage to the Ice Flame Swordsman battle skill 5% additional hits occur
+
+  skills:
+    - name: "Piercing Blades"
+      picture: Piercing_Blades
+      element: Ice
+      power: ATK x 170%
+      ap: 15
+      maxHits: 6
+      highlight: true
+    - name: "Twin Thrust"
+      picture: Talon_Thrust
+      element: Fire
+      power: ATK x 220%
+      ap: 20
+      maxHits: 2
+      notes: Recovers 5 AP
+      highlight: true
+    - name: "Northern Cross"
+      picture: Northern_Cross
+      element: Ice
+      power: ATK x 440%
+      ap: 27
+      maxHits: 2
+      highlight: true
+    - name: "Sword Dance"
+      picture: Sword_Dance
+      element: Fire
+      power: ATK x 1020%
+      ap: 39
+      maxHits: 30
+      notes: Recovers 10 AP
+      highlight: true
+    - name: "Dextral Edge Flame"
+      picture: Dextral_Edge
+      element: Fire
+      power: ATK x 170%
+      ap: 14
+      maxHits: 2
+      notes: Recovers 3 AP
+      highlight: true
+      
+  rush:
+    name: "tri-Ace"
+    picture: Tri_Ace_Ashton
+    shortEffects: ATK +60% and AP cost -30% (20 seconds)
+    effects: 
+      - desc: ATK +60% 
+        duration: 20
+        meta:
+          priority: 1
+          buff: ATK
+          buffValue: 60
+      - desc: AP cost -30%
+        duration: 20
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 30
+    power: ATK x 4500%
+    maxHits: 12
+    
+  notes: >
+      _Places emphasis on hitcount and rush damage.  Excels at fighting large bosses, where Northern Cross can get more hits than advertised, but
+      depending on the fight, or the party's goals, or personal playstyle, it may be preferable to focus on racking hitcount with Sword Dance instead.
+      All five of his skills are useful; you'll want at least one of Northern Cross or Sword Dance, the rest is fair game._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Strong Elemental and Rush damage buff.
+      
+      - Deals good damage.
+      
+      - Has both a ranged and melee combo.
+      
+      - Fun playstyle.
+      
+      
+      **Cons**
+      
+      - Elemental damage buff gets overwritten by a lot of characters post rush. Some of which are extremely popular.
+      
+      - Rush damage buff requires high hit count to get the best from it.
+      
+      
+      **Rotation**
+      
+      *Normal > Piercing Blades > Twin Thrust > Northern Cross > Spam till out of AP (General ice combo.)*
+      
+      *Normal > Piercing Blades > Twin Thrust > Sword Dance > Spam till out of AP (General fire combo.)*
+      
+      *Normal > Northern Cross > Piercing Blades > Northern Cross ^n > Sword Dance (dash after first several hits)*
+
+- name: Cliff Fittir (Awakened)
+  cat: jp
+  rating: 4
+  picture: Cliff
+  weapon: knuckle
+  ace: true
+  limited: false
+  awakened: true
+  star: 5
+    
+  stats:
+    hp: 15750
+    atk: 3584
+    int: 1523
+    def: 1930
+    hit: 1162
+    grd: 812    
+
+  talents:
+    - name: "Klausian Champion II"
+      effects: 
+        - desc: AP cost -40%
+          all: false
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 40
+    - name: "Greater Master of the Training Hall"
+      effects: 
+        - desc: ATK +50%
+          all: false
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 50
+    - name: "Revolutionary Spirit"
+      effects:
+        - desc: Critical hit chance +30%
+          meta:
+            priority: 4
+            buff: Crit Rate
+            buffValue: 30
+    - name: "Unleashed"
+      effects:
+        - desc: Critical Damage +30%
+          meta:
+            priority: 4
+            buff: Crit Damage
+            buffValue: 30
+    - name: "The Fist of the Wind"
+      effects:
+        - desc: Avoid astray in the air while attacking
+        - desc: Nullifies charge assault critical damage penalty
+          all: false
+    - name: "Quark Founder"
+      shortEffects: ATK Damage +50%/100% when skill chain is 3/5
+      effects:
+        - desc: ATK damage +50% when skill chain is 3+
+          all: false
+          meta:
+            priority: 3
+            buff: ATK Damage
+            buffCondition: Skill Chain 3+
+            buffValue: 50
+        - desc: ATK damage +100% when skill chain is 5+
+          all: false
+          meta:
+            priority: 3
+            buff: ATK Damage
+            buffCondition: Skill Chain 5+
+            buffValue: 100
+
+  skills:
+    - name: "Triple Kick"
+      picture: Triple_Kick
+      power: ATK x 280%
+      ap: 24
+      maxHits: 3
+      highlight: true
+    - name: "Crescent Locus"
+      picture: Crescent_Locus
+      power: ATK x 170%
+      ap: 17
+      maxHits: 4
+      highlight: true
+    - name: "Acrobat Locus"
+      picture: Acrobat_Locus
+      power: ATK x 910%
+      ap: 41
+      maxHits: 7
+    - name: "Fists of Fury"
+      picture: Fists_of_Fury
+      power: ATK x 1000%
+      ap: 43
+      maxHits: 25
+      highlight: true
+    - name: "Might Hammer"
+      picture: Hammer_of_Might
+      power: ATK x 260%
+      ap: 24
+      maxHits: 1
+      highlight: true
+      
+  rush:
+    name: "Steel Fists of Fury"
+    picture: Steel_Fists_of_Fury_Cliff
+    effects: 
+      - desc: N/A
+    power: ATK x 5500%
+    maxHits: 25
+    
+  notes: >
+      _Exists to flex his rush damage.  He has selfish talents, and lacks a rush buff entirely, but a 5500% rush coming off the highest ATK stat in the
+      game will dent anything and everything.  His skills are also highly committal for DPS that isn't raising eyebrows, but Flash Chariot's incredible 
+      hitcount racking fulfills hitcount talents with ease, and lets him do what he does best: fill his rush gauge and flex his rush.  If you need big rush
+      damage and rapid hitcount racking, look no further._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Powerful when built around.
+      
+      - Good for solo play.
+      
+      
+      **Cons**
+      
+      - Zero utility for the party.
+      
+      - No ranged attack.
+      
+      - No post-rush buff.
+      
+      
+      **Rotation**
+      
+      *Normal > Crescent > filler > Crescent^2 > Chariot^2 - Damage*
+      
+      *(Normal>) Chariot > dash after hit 3 > repeat - hitcount/rush gain*
+
+      *Normal > Crescent > filler > Crescent^n - For enemies that don't stay still long enough for Flash Chariot*
+
+- name: Ilia Silvestri (Awakened)
+  cat: jp
+  rating: 3
+  picture: Ilia
+  weapon: knuckle
+  limited: false
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 16884
+    atk: 3090
+    int: 1405
+    def: 2111
+    hit: 1147
+    grd: 756
+
+  talents:
+    - name: "Even Greater Instincts II"
+      effects: 
+        - desc: ATK +40%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 40
+        - desc: AP recovery from normal attacks +100%
+          all: true
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffValue: 100
+    - name: "All-Seeing Eye II"
+      effects: 
+        - desc: Multiple target damage +20%
+          all: true
+          meta:
+            priority: 1
+            buff: Multiple Target Damage
+            buffValue: 20
+        - desc: Convert 45% of ATK to INT (All castors All Healer)
+    - name: "Mother of Symbology"
+      effects: 
+        - desc: AP cost -10%
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 4
+        - desc: AP cost -30% when skill chain is 3 or more
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain 3+
+            buffValue: 30
+    - name: "Quiet Devotion"
+      effects: 
+        - desc: Fire damage dealt +20%
+          all: true
+          meta:
+            priority: 1
+            buff: Fire Damage
+            buffValue: 20
+        - desc: Stun chance +20%
+          all: true
+          meta:
+            priority: 1
+            buff: Stun Rate
+            buffValue: 20
+    - name: "Ahi Liquor"
+      shortEffects: ATK Damage +50%/100% skill chain is 3/5 & Air Dodge
+      effects: 
+        - desc: ATK Damage +50% skill chain is 3+
+          meta:
+            priority: 4
+            buff: ATK Damage
+            buffCondition: Skill Chain 3+
+            buffValue: 50
+        - desc: ATK Damage +100% skill chain is 5+
+          meta:
+            priority: 4
+            buff: ATK Damage
+            buffCondition: Skill Chain 5+
+            buffValue: 100
+        - desc: Enables evasion during air attacks
+    - name: "Girl Princess Narrator"
+      shortEffects: ATK +30%, DEF +20%, HIT +10% & HP +20%
+      effects: 
+        - desc: HP +30%
+          meta:
+            priority: 4
+            buff: ATK
+            buffValue: 30
+        - desc: DEF +20%
+          meta:
+            priority: 4
+            buff: DEF
+            buffValue: 20
+        - desc: HIT +10%
+          meta:
+            priority: 4
+            buff: HIT
+            buffValue: 10
+        - desc: HP +20%
+          meta:
+            priority: 4
+            buff: HP
+            buffValue: 20
+            
+  skills:
+    - name: "Crescent Locus"
+      picture: Crescent_Locus
+      power: ATK x 150%
+      ap: 17
+      maxHits: 4
+      highlight: true  
+    - name: "Palm of Destruction"
+      picture: Palm_of_Destruction
+      power: ATK x 240%
+      ap: 23
+      maxHits: 4
+      highlight: true
+    - name: "X Claw"
+      picture: X_Claw
+      power: ATK x 310%
+      ap: 29
+      maxHits: 6      
+    - name: "Fiery Hammer of Might"
+      picture: Hammer_of_Might
+      element: Fire
+      power: ATK x 270%
+      ap: 26
+      maxHits: 1
+    - name: "Current Knuckle"
+      picture: Current_Knuckle
+      power: ATK x 410%
+      ap: 29
+      maxHits: 3
+      highlight: true
+
+  rush:
+    name: "Divine Hammer"
+    picture: Divine_Hammer_Ilia
+    shortEffects: AP cost -20% (All Attackers / Invokers, 20 seconds)
+    effects: 
+      - desc: AP cost -40%
+        all: Attackers
+        duration: 20
+        meta:
+          priority: 4
+          buff: AP Cost Reduction
+          buffRole: attacker
+          buffValue: 40
+      - desc: AP cost -40%
+        all: Invokers
+        duration: 20
+        meta:
+          priority: 4
+          buff: AP Cost Reduction
+          buffRole: invoker
+          buffValue: 40
+    power: ATK x 4500%
+    maxHits: 14
+    
+  notes: >
+      _Sort of like the Attacker counterpart to Ronyx, in that she offers conversion services for the opposite role alongside various other QoL perks
+      for everyone.  In effect she ends up playing a bit more like VCaleen.  Her ATK buff being what it is doesn't particularly make her suitable as a
+      primary buffer for ATK-based parties, but her weapon type, skillset, and other perks make her welcome to any caster comp, and her having a
+      little bit of everything makes her a safe pick for automatching._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - 5 star non-ace so costs less to limit break and augment.
+      
+      - Unique party wide buffs
+      
+      - Built in AP reduction
+      
+      
+      **Cons**
+            
+      - 5 star non-ace so has less stats.
+      
+      - Buffs aren't really that relevant outside of niche comps and content
+      
+      - ATK buff is overshadowed by many other attackers
+            
+      
+      **Rotation**
+      
+      *Normal > Palm of Destruction > Crescent Locus > Palm of Destruction > Spam till out of AP (Damage rotation)*
+      
+      *Normal > Crescent Locus > Palm of Destruction > Current Knuckle^n (Small enemies)*
