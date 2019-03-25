@@ -179,3 +179,38 @@
   notes: >
     An Earth imbue arms. It has some good factors that complement playing aggressive with build in conditional anti-flinch, damage
     reduction and at mlb a boost to critical hit rate and damage means it's a good elemental weapon to help contribute to stunning.
+
+- name: Straight Punch
+  cat: 'gl'
+  star: 5
+  picture: Straight_Punch
+  atk: 533
+  int: 527
+  factors:
+    - desc: +20% DMG on Jump n' Thump
+    - desc: Additional Hit that Deals 5% of DMG Dealt by Normal Attacks
+    - desc: +30% Crit DMG
+      meta: 
+        priority: 1 
+        buff: Crit Damage
+        buffValue: 30
+      lb: 5
+  obtained: Lucifer (Exchange)
+  
+- name: Ignition Punch
+  cat: 'gl'
+  star: 5
+  picture: Ignition_Punch
+  atk: 892
+  int: 887 
+  factors:
+    - desc: Imbue Fire Element
+      element: Fire
+    - desc: +100% AP RCV by Normal Attacks
+      meta:
+        priority: 1
+        buff: AP Recovery From Normal Attacks
+        buffValue: 100
+    - desc: +20% DMG on Jump n' Thump
+      lb: 5
+  obtained: Lucifer (Exchange), Arms Coin Exchange  
