@@ -811,4 +811,960 @@
         all: true
     power: ATK x 3500%
     maxHits: 2
+
+- name: 9S
+  cat: jp
+  rating: 8
+  picture: 9S
+  weapon: ohs
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 14280
+    atk: 2868
+    int: 1537
+    def: 1773
+    hit: 1371
+    grd: 924
+
+  talents:
+    - name: "Fleeting Gentleness"
+      effects: 
+        - desc: Damage +30%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 30
+        - desc: ATK +40% when HP 100%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: HP at 100%
+            buffValue: 40
+    - name: "Scanner Type"
+      effects: 
+        - desc: Evasion AP consumption -50%
+          all: true
+        - desc: Movement speed +30%
+          all: true
+    - name: "Blade of Revenge"
+      effects: 
+        - desc: Enables evasion during air attacks
+        - desc: Movement distance & speed +100%
+    - name: "Whereabouts of Brethren"
+      effects: 
+        - desc: ATK +15%
+          meta:
+            priority: 4
+            buff: ATK
+            buffValue: 15
+        - desc: HIT +10%
+          meta:
+            priority: 4
+            buff: HIT
+            buffValue: 10
+
+  skills:
+    - name: "YoHRa Arms: Three"
+      picture: Helmsplitter
+      power: ATK x 920%
+      ap: 53
+      maxHits: 1
+    - name: "YoHRa Arms: Four"
+      picture: YoHRa_Arms_Four
+      power: ATK x 620%
+      ap: 26
+      maxHits: 1
+    - name: "YoHRa Pod: One"
+      picture: YoHRa_Pod_One
+      power: ATK x 180%
+      ap: 13
+      maxHits: 1
+    - name: "YoHRa Pod: Two"
+      picture: YoHRa_Pod_Two
+      power: ATK x 380%
+      ap: 20
+      maxHits: 1
+      
+  rush:
+    name: "YoHRa Hack: Zero"
+    picture: YoHRa_Hacking_Zero_9S
+    effects: 
+      - desc: Recover 50% HP
+        all: true
+      - desc: ATK damage +30% 
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: ATK Damage
+          buffValue: 30
+    power: ATK x 4000%
+    maxHits: 16
     
+- name: Reimi Saionji
+  cat: jp
+  rating: 5
+  picture: Reimi
+  weapon: bow
+  ace: true
+  limited: false
+  star: 5
+
+  stats:
+    hp: 15540
+    atk: 2587
+    int: 1563
+    def: 1549
+    hit: 1246
+    grd: 945
+
+  talents:
+    - name: "Sound Judgment II"
+      effects: 
+        - desc: INT Damage Taken -40%
+          all: true
+          meta:
+            priority: 1
+            buff: INT Damage Taken Reduction
+            buffValue: 40
+    - name: "Greater Single-Shot"
+      effects: 
+        - desc: Damage Dealt +20%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 20
+    - name: "Star Seed of Hope"
+      effects: 
+        - desc: Nullifies Status Ailments (180 seconds)
+    - name: "Descendant of Muah"
+      effects: 
+        - desc: 80% Chance of Surviving a Lethal Attack at 10% HP or more.
+
+  skills:
+    - name: "Chaotic Blossoms"
+      picture: Chaotic_Blossoms
+      power: ATK x 500%
+      ap: 35
+      maxHits: 11
+    - name: "Crimson Squall"
+      picture: Crimson_Squall
+      power: ATK x 250%
+      ap: 24
+      maxHits: 9
+    - name: "Crescent Wings"
+      picture: Crescent_Wings
+      power: ATK x 230%
+      ap: 24
+      maxHits: 2
+    - name: "Rapacious Sparrows"
+      picture: Savage_Sparrows
+      power: ATK x 410%
+      ap: 32
+      maxHits: 9
+      
+  rush:
+    name: "Lunar Divination"
+    picture: Lunar_Divination_Reimi
+    effects: 
+      - desc: Nullifies Status Ailments
+        all: true
+      - desc: Recovers 15% of HP every 3 seconds
+        duration: 15
+        all: true
+    power: ATK x 2500%
+    maxHits: 7
+    element: Dark
+
+- name: Maria Traydor (Awakened)
+  cat: jp
+  rating: 10
+  picture: Maria
+  weapon: gun
+  ace: true
+  limited: false
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 15477
+    atk: 2851
+    int: 1563
+    def: 1706
+    hit: 1260
+    grd: 924
+
+  talents:
+    - name: "Natural Born Leader II"
+      effects: 
+        - desc: Damage +50%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 50
+    - name: "Alternating Step II"
+      effects: 
+        - desc: Damage taken -20%
+          meta:
+            priority: 4
+            buff: Damage Taken Reduction
+            buffValue: 20
+    - name: "Charged Kick"
+      effects: 
+        - desc: Evasion AP consumption -50%
+          all: true
+        - desc: Evasion speed and distance +100%
+    - name: "Bloodstained Fangs II"
+      effects: 
+        - desc: Recover 10% of normal attack damage as HP at 100 hit count
+          all: true
+    - name: "Quark Carrier"
+      effects: 
+        - desc: AP Recovery +50%
+          all: true
+          meta:
+            priority: 2
+            buff: AP Recovery
+            buffValue: 50
+        - desc: AP Cost -5%
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 5
+    - name: "Dreams of Peace"
+      effects: 
+        - desc: ATK +30%
+          meta:
+            priority: 4
+            buff: ATK
+            buffValue: 30
+        - desc: HP +10%
+          meta:
+            priority: 4
+            buff: HP
+            buffValue: 10
+
+  skills:
+    - name: "Aiming Device"
+      picture: Aiming_Device
+      power: ATK x 220%
+      ap: 20
+      maxHits: 1
+      highlight: true
+    - name: "Crimson Squall"
+      picture: Crimson_Squall
+      power: ATK x 380%
+      ap: 29
+      maxHits: 9
+      highlight: true
+    - name: "Laser Emission"
+      picture: Laser_Blast
+      power: ATK x 210%
+      ap: 20
+      maxHits: 3
+    - name: "Gravity Bullet"
+      picture: Gravity_Bullet
+      power: ATK x 260%
+      ap: 24
+      maxHits: 12
+      element: Dark
+    - name: "Raptor Buller"
+      picture: Raptor_Bullet
+      power: ATK x 390%
+      ap: 29
+      maxHits: 9
+      element: Lightning
+      highlight: true
+      
+  rush:
+    name: "Burst Emission"
+    picture: Energy_Burst_Barrage_Maria
+    effects: 
+      - desc: Removes Buffs
+        all: Enemies
+      - desc: Critical Rate +40%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 40
+    power: ATK x 4000%
+    maxHits: 6
+    
+  notes: >
+      _Just as 9S thought he was the undisputed champion of Sharshooters, Maria awoke to back hand him and remind him who the original
+      queen was. Welcome to Maria Ocean! Maria's awakening gives her a plethora of new goodies but lets start with commenting on the 
+      additions to her current kit. Every single skill recieves a boost to their mults, nothing major but still it increases damage.
+      Her rush has also been boosted from a 3k to 4k multiplier. Her baseline damage boost is increased from 40 to 50% meaning she has
+      the largest unconditional buff in the game. Plus her ATK and HP have both been buffed to increase her damage output and bulk._
+      
+      _Now lets cover her new toys. Maria now cuts evasion costs by 50% for the whole party. Her own personal evasion has been both
+      sped up and increased in distance, couple this with her HP buff and damage reduction talent and Maria is looking pretty good
+      for kiting. She also gains party wide lifesteal but only if the hit count is 100 or more. This isn't as good as it seems as
+      you usually rush shortly after triple digits unless you're specifically aiming for a hit count buff, such as Winter Fidel's ATK
+      damage buff at 200 hits. So the relevance of that talent is limited. Finally she also provides standing AP recovery and a slight
+      AP reduction, however -5% is pretty big for Maria as it allows her to do her rotations without AP seeds. Though it is recommended
+      to have 1 or 2 in her to dodge with after a full rotation._
+      
+      _In summary Awakened Maria has a lot more utility and damage now that makes what was already a good character, pretty insane.
+      With very few negative points._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Good at building and maintaining hit count.
+
+      - Good at kiting.
+
+      - Best unconditional damage buff.
+      
+      - A good range of utility
+      
+      
+      **Cons**
+      
+      - Lifesteal after hit count 100 can be irrelevant.
+      
+      
+      **Rotation**
+
+      *Normal > Raptor Bullet > Aiming Device > Raptor Bullet > Raptor Bullet (General Damage)*
+      
+      *Normal > Crimson Squall > Aiming Device  > Crimson Squall > Crimson Squall (Rush Gain)*
+
+- name: Nel Zelpher (Awakened)
+  cat: jp
+  rating: 4
+  picture: Nel
+  weapon: dagger
+  ace: true
+  limited: false
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 15646
+    atk: 2799
+    int: 1549
+    def: 1589
+    hit: 1371
+    grd: 924
+
+  talents:
+    - name: "Prayer for Peace"
+      effects: 
+        - desc: Critical Chance +15%
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffValue: 15
+    - name: "Crimson Blade"
+      effects: 
+        - desc: Normal Attacks have +15% chance to Poison
+          meta:
+            priority: 4
+            buff: Poison Attack Chance
+            buffValue: 15
+    - name: "Assassin's Stealth"
+      effects: 
+        - desc: AP Cost -15%
+          all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 15
+    - name: "Covert Operation"
+      effects: 
+        - desc: Repel +1 & Skill 3 cooperation ATK damage + 80%
+    - name: "Absolute Loyalty"
+      effects: 
+        - desc: ATK Damage +30% (All) & ATK damage to the enemy ATK damage + 15% (entire enemy)
+    - name: "Captain of the Enma Division"
+      effects: 
+        - desc: ATK +30% & HIT +10%
+
+  skills:
+    - name: "Sylvan Shot"
+      picture: Sylvan_Shot
+      power: ATK x 220%
+      ap: 20
+      maxHits: 8
+    - name: "Flying Guillotine"
+      picture: Guillotine
+      power: ATK x 410%
+      ap: 32
+      maxHits: 4
+    - name: "Victory Terror"
+      picture: Victory_Terror
+      power: ATK x 550%
+      ap: 35
+      maxHits: 10
+    - name: "Mirror Slice"
+      picture: Mirror_Blade
+      power: ATK x 750%
+      ap: 40
+      maxHits: 6
+    - name: "Aqua Spread"
+      picture: Hydroblades
+      element: Ice
+      power: ATK x 210%
+      ap: 20
+      maxHits: 2
+      
+  rush:
+    name: "Divine Wrath"
+    picture: Divine_Wrath_Nel
+    effects: 
+      - desc: Normal Attacks have +15% chance to Deadly Poison
+      - desc: Normal Attacks will do an additional hit on Normal Attacks that does 20% of your damage
+        duration: 20
+      - desc: High Chance to inflict Deadly Poison during Rush.
+    power: ATK x 3000%
+    maxHits: 18
+
+  notes: >
+      _Poison is powerful...when it works.  After awakening, Nel herself is also now powerful though, in addition to finally providing damage buffs alongside
+      her crit and AP reduction.  In normal circumstances she's fairly average, but against larger enemies Aqua Spread combined with her new skill chain
+      damage boosts reaches disgusting levels of damage.  So long as she can either inflict poison reliably or get 3+ hits with Aqua Spread, she's worth 
+      your time now.  Otherwise, don't bother._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Poison damage is ridiculous.
+
+      - Good general-purpose buffing.
+
+      - Fastest rush gain in the game, enabling her to effectively erase boss mechanics on command.
+
+      - Daggers are a great weapon, with excellent kiting ability.
+      
+      
+      **Cons**
+      
+      - Without poison vulnerability, her dps is abysmal.
+
+      - A poorly played Nel can grief the party by resetting hitcount unnecessarily, 
+        cutting elem bursts short or constantly interrupting the fight.
+
+      - Repel+1 hampers her ability to assume Shooter's primary role: kiting.
+
+      - High animation lock on her best rush generation move (Poisonous Terror)
+
+      - Poisonous Blade is a horrible move with horrible tracking and a tiny hitbox, and her best dps relies on it.
+      
+      
+      **Rotation**
+      
+      *Normal>Sylvan>Aqua>(Sylvan or Terror) xn*
+      *Normal>Aqua>Sylvan>Aqua xn - large enemies*
+      *Normal>Dash>Normal>Dash xn - Poshrush deadly poison procs*
+      *Sylvan>Terror>Sylvan>Terror or Sylvan spam - Unawakened/EN*
+
+- name: Emmerson T. Kenny (Awakened)
+  cat: jp
+  rating: 3
+  picture: Emmerson
+  weapon: gun
+  limited: false
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 15708
+    atk: 2793
+    int: 1391
+    def: 1718
+    hit: 1232
+    grd: 847
+
+  talents:
+    - name: "Inspired Action III"
+      effects: 
+        - desc: Hitcount Timer +3 seconds
+          all: true
+    - name: "Daredevil's Courage II"
+      effects: 
+        - desc: Additional Hit on that Deals 20% of Damage Dealt on Normal Attacks (All) & Damage to Battle Skills 5% Additional hit occurence (Self)
+    - name: "Admiral's Persuasion"
+      effects: 
+        - desc: Damge +35% & Damage every 100, 200 hits + 50%, 65% (All)
+          all: true
+    - name: "Adult Style"
+      effects: 
+        - desc: Consumes every 50, 100 hits AP-10%, -20% (All)
+          all: true
+    - name: "Beauty and Fruit Wine"
+      effects: 
+        - desc: Enemy is less likely to be targeted from the enemy + 2 chestnut rate and damage + 50% & Avoid damage by evasion Your AP 100 % recovery
+          all: true
+    - name: "Heroes on Success As a Clan"
+      effects: 
+        - desc: ATK +40%, DEF +20%, HIT +10%, HP +10% (Self)
+          all: true
+        
+  skills:
+    - name: "Heavenly Flight"
+      picture: Heavenly_Flight
+      power: ATK x 510%
+      ap: 35
+      maxHits: 4
+    - name: "Laser Emission"
+      picture: Laser_Blast
+      power: ATK x 210%
+      ap: 20
+      maxHits: 3
+    - name: "Seraphic Thunder"
+      picture: Seraphic_Thunder_I
+      power: ATK x 370%
+      ap: 30
+      maxHits: 8
+      element: Lightning
+    - name: "Hunter's Moon"
+      picture: Hunter's_Moon
+      power: ATK x 410%
+      ap: 32
+      maxHits: 7
+    - name: "Sonic Thorn"
+      picture: Sonic_Thorn_II
+      power: ATK x 220%
+      ap: 20
+      maxHits: 2
+      
+  rush:
+    name: "Energy Burst Glaive"
+    picture: Energy_Burst_Glaive_Emmerson
+    effects: 
+        - desc: ATK +80% 
+          duration: 20
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 80
+    power: ATK x 4000%
+    maxHits: 7
+    
+  notes: >
+      _Awakening Emmerson turns him from a joke to a functional character, giving him party Damage buffing and AP reduction.  He was also the founder
+      of the "additional hits on skills" buff, giving him incredible hitcount generation, though he fell out of favor hard for this once Caleen introduced giving
+      this buff partywide.  His selfish crit, ATK on rush, and AP refill on perfect dodge talents make him a decent pick for pub play, as they let him not
+      have to worry about the rest of the party's buffing to get things done.  What you will need to worry about is his skillset; Hunter's Moon is his only
+      skill with decent numbers on it, and for it to hit consistently it wants to both be used close to the target to compensate its slow projectile speed and
+      for the target to wait around inside its explosion.  He also has a horrendous dash skid, meaning you'll want +AP on normals or to perfect dodge
+      every time to compensate.  If you're willing to play around these faults he's a decent pub pick, though recent shooter carries exist that are both
+      stronger and easier to play._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Big hit count extension.
+
+      - Strong personal ATK buff post rush.
+      
+      - Non-ace so cheaper to limit break and augment.
+      
+      
+      **Cons**
+      
+      - Almost no utility.
+
+      - Lacks a ranged combo as a gun wielder.
+
+      - Non-ace so has less stats.
+      
+      
+      **Rotation**
+      
+      *Normal>Thorn>Moon>Thorn>Moon - no AP reduc*
+      
+      *Normal>Moon>Thorn>Moon*n - -AP/above 50hit*
+    
+- name: Clair Lasbard (Awakened)
+  cat: jp
+  rating: 6
+  picture: Clair
+  weapon: dagger
+  limited: false
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 18428
+    atk: 2799
+    int: 1405
+    def: 1444
+    hit: 1361
+    grd: 924
+
+  talents:
+    - name: "Reach Further Beyond"
+      effects: 
+        - desc: ATK Damage Taken -30%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK Damage Taken Reduction
+            buffValue: 30
+        - desc: INT Damage Taken -10%
+          all: true
+          meta:
+            priority: 1
+            buff: INT Damage Taken Reduction
+            buffValue: 10
+    - name: "Apris's Divine Favor"
+      effects: 
+        - desc: No Flinching when taking Damage < 25% of Max HP
+          all: true
+    - name: "Operation Force Captain"
+      effects: 
+        - desc: AP Recovery Speed +100% & Damaged when being targeted from enemies-Damaged over 30% (All)
+          all: true
+    - name: "Understanding of Childhood Friend"
+      effects: 
+        - desc: Damage -100% (Overall / 0.5 seconds) % Efforts to be easily targeted by enemies + 2 (self)
+          all: true
+    - name: "Slow Smile"
+      effects: 
+        - desc: Avoidance distance and avoidance speed + 100% & Evasive in the air during attack & Possible skill 3 linkage At the time of the above ATK damage +50%
+          all: true
+    - name: "Blink Intelligence"
+      effects: 
+        - desc: ATK +30%, HIT +20%, GRD +10%, HP +30%
+          all: true
+        
+  skills:
+    - name: "Aqua Spread"
+      picture: Hydroblades
+      power: ATK x 210%
+      ap: 20
+      maxHits: 2
+      element: Ice
+    - name: "Sylvan Shot"
+      picture: Sylvan_Shot
+      power: ATK x 220%
+      ap: 20
+      maxHits: 8
+    - name: "Mirror Slice"
+      picture: Mirror_Blade
+      power: ATK x 1430%
+      ap: 40
+      maxHits: 8
+    - name: "Victory Terror"
+      picture: Victory_Terror
+      power: ATK x 550%
+      ap: 35
+      maxHits: 10
+    - name: "Shadow Blossom"
+      picture: Shadow_Flower_Forward
+      power: ATK x 250%
+      ap: 15
+      maxHits: 6
+      
+  rush:
+    name: "Flying Guillotine Slash"
+    picture: Flying_Guillotine_Slash_Clair
+    effects: 
+        - desc: Damage Dealt +90%
+          duration: 30
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 90
+    power: ATK x 4500%
+    maxHits: 6
+    
+  notes: >
+      _Absurd damage reduction both in general and especially for whoever's holding aggro, and an insanely potent and easy to upkeep rush buff.
+      It should be stressed that whoever has aggro is given more damage mitigation by Clair's talents alone than from any single postrush Defender; she
+      enables hits to be survived even in multiplayer Supremacy.  Providing no offensive buffs pre-rush hurts her desirability for short fights and speedrun
+      comps, but she's excellent for survival and a major asset for longlasting fights.  All five of her skills are useful, so she can be customized to player 
+      preference._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Anti-flinch for the party. No defender required.
+
+      - The best ATK damage reduction buff in the game.
+
+      - The best post rush damage buff in the game.
+
+      - Daggers are a great weapon, with excellent kiting ability.
+      
+      - Non-ace so cheaper to limit break and augment.
+      
+      
+      **Cons**
+      
+      - Lacks offensive buffs pre-rush.
+
+      - High animation lock on her best rush generation move (Victory Terror)
+
+      - Non-ace so has less stats.
+      
+      
+      **Rotation**
+      
+      *Normal>filler 1>filler 2>(filler 1>)Victory Terror^n*
+      
+      *Normal>filler 1>filler 2>(filler 1>)Mirror Slice^n OR Mirror Slice>dodge after hit 4*
+      
+      *Normal>Aqua>filler>Aqua - vs fat bosses that take 4+ hits*
+      
+      
+   
+- name: Verda Kleiman
+  cat: jp
+  rating: 0
+  picture: Verda
+  weapon: gun
+  ace: true
+  limited: false
+  star: 5
+
+  stats:
+    hp: 14070
+    atk: 2482
+    int: 1589
+    def: 1733
+    hit: 1260
+    grd: 931
+
+  talents:
+    - name: "Child of Science"
+      effects: 
+        - desc: ATK -5% inflicted by Magnetic Field (10 seconds)
+          all: Enemies
+          meta:
+            priority: 4
+            buff: Enemy ATK Reduction
+            buffValue: 5
+    - name: "Modified Gun"
+      effects: 
+        - desc: Damage taken +15% inflicted by Break Horn and Break Bullet (8 seconds)
+          all: Enemies
+          meta:
+            priority: 4
+            buff: Enemy Damage Taken
+            buffValue: 15
+    - name: "Family to Protect"
+      effects:
+        - desc: Damage dealt +30%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 30
+    - name: "Commitment to Grandfather's Wishes"
+      effects: 
+        - desc: Seal immunity (180 seconds)
+          all: true
+        - desc: Nullify rush gauge reduction fields
+          all: Close-Range, Self
+          
+  skills:
+    - name: "Magnetic Field"
+      picture: Magnetic_Field
+      power: ATK x 260%
+      ap: 22
+      maxHits: 10
+    - name: "Break Horn"
+      picture: Break_Horn
+      power: ATK x 190%
+      ap: 19
+      maxHits: 8
+    - name: "Benishigure (Chain)"
+      picture: Crimson_Squall_I
+      power: ATK x 180%
+      ap: 18
+      maxHits: 9
+    - name: "Break Bullet"
+      picture: Gravity_Bullet
+      element: Dark
+      power: ATK x 340%
+      ap: 29
+      maxHits: 10
+
+  rush:
+    name: "Rocket Slippers"
+    picture: Rocket_Slippers_Verda
+    shortEffects: ATK damage +30% and movement speed +30% (All Party, 20 seconds)
+    effects:
+      - desc: ATK damage +30%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: ATK Damage
+          buffValue: 30
+      - desc: Movement speed +30%
+        duration: 20
+        all: true
+    power: ATK x 3500%
+    maxHits: 2
+    
+- name: Silmeria Valkyrie (Awakened)
+  cat: jp
+  rating: 6
+  picture: Silmeria
+  weapon: bow
+  ace: true
+  limited: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 17871
+    atk: 2868
+    int: 1601
+    def: 1523
+    hit: 1253
+    grd: 931
+
+  talents:
+    - name: "Divine Arrow Burst"
+      effects: 
+        - desc: Damage dealt +30%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 30  
+    - name: "Battle Maiden's Might"
+      effects: 
+        - desc: Single target damage +10%
+          all: true
+          meta:
+            priority: 1
+            buff: Single Target Damage
+            buffValue: 10
+    - name: "Einherjar's Last Hope"
+      effects: 
+        - desc: Hitcount timer +3 seconds
+          all: true
+    - name: "Yggdrasil's Fortune"
+      effects: 
+        - desc: Recovers 5% HP every 5 seconds
+    - name: "Goddess to a Person"
+      shortEffects: AP cost -10%/20%/30% when hitcount is 50/100/150
+      effects:
+        - desc: AP cost -10% at when hitcount is at 50 or more
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffCondition: Hit Count > 50
+            buffValue: 10
+        - desc: AP cost -20% at when hitcount is at 50 or more
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffCondition: Hit Count > 100
+            buffValue: 20
+        - desc: AP cost -30% at when hitcount is at 50 or more
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffCondition: Hit Count > 150
+            buffValue: 30
+    - name: "Object Leading"
+      effects: 
+        - desc: ATK +15%
+          meta:
+            priority: 4
+            buff: ATK
+            buffValue: 15
+        - desc: HP +15%
+          meta:
+            priority: 4
+            buff: HP
+            buffValue: 15
+
+  skills:
+    - name: "Binding Distortion"
+      picture: Binding_Distortion
+      element: Dark
+      power: ATK x 210%
+      ap: 20
+      maxHits: 5
+      highlight: true
+    - name: "Volcanic Volley"
+      picture: Heavenly_Flight
+      power: ATK x 440%
+      ap: 33
+      maxHits: 8
+    - name: "Wave Motion"
+      picture: Wave_Motion
+      power: ATK x 480%
+      ap: 33
+      maxHits: 2
+      highlight: true
+    - name: "Homing Pigeons"
+      picture: Savage_Sparrows
+      power: ATK x 320%
+      ap: 26
+      maxHits: 9
+      highlight: true
+      
+  rush:
+    name: "Nibelung Valesti"
+    picture: Nibelung_Valesti_Silmeria
+    effects: 
+      - desc: Critical hit chance +30%
+        all: false
+        duration: 60
+        meta:
+          priority: 4
+          buff: Crit Rate
+          buffValue: 30
+    power: ATK x 4000%
+    maxHits: 8
+
+  notes: >
+      _Her offensive buffing is mediocre when considering the necessary ramp-up and lack of rush buff, but her damage output and hitcount racking is 
+      solid, and she provides two welcome safety nets between her hitcount timer extension and potent party regen._
+
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Good damage.
+      - Decent rush gain.
+      - Fast hitcount generation, making her a good friend to units dependent on it.
+      - Rare single target DMG buff.
+      - Self crit buff on Rush for Crystal Guardian
+      
+      **Cons**
+      - Long rush animation guaranteed to annoy your party.
+      - Bow animations make kiting bosses harder than it needs to be, and she is often forced into that due to high aggro gen.
+      - Underwhelming buffs, especially compared to shooters of similar strength.
+      
+      
+      **Rotation**
+      
+      *Normal > Wing > Restrict > Wing^n - DPS*
+      *Normal > Restrict > Wing > Wave^n - Rush*
+      *Normal > Restrict > Wing > Restrict^n - DPS/Rush vs large enemies (9+ hits per Restrict)*
