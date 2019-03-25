@@ -40,7 +40,7 @@ const helpers = {
       if(x.all) {
         return `${base} (${x.all === true ? 'All Party' : 'All ' + x.all }${effDurString})`;
       }
-      return `${base}${effDurString ? ' (Self' + effDurString + ')' : ''};
+      return `${base}${effDurString ? ' (Self' + effDurString + ')' : ''}`;
     })
     return effects.join(', ');
   }
