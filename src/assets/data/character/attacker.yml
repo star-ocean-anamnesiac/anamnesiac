@@ -77,7 +77,7 @@
   rush:
     name: "YoRHa Arms: Zero"
     picture: YoHRa_Arms_Ø_2B
-    shortEffects: All elemental damage dealt +70%/50% (Self/Party, 20 seconds)
+    shortEffects: All elemental damage dealt +70% (Self) and +50% (All Party)(20 seconds)
     effects: 
       - desc: All elemental damage dealt +70%
         all: false
@@ -303,7 +303,7 @@
             buffValue: 10  
     - name: "Inherited Will"
       effects:
-        - desc: Nullifies HP Reduction Field
+        - desc: Nullifies HP reduction fields
         
   skills:
     - name: "Double Slash"
@@ -403,7 +403,7 @@
     grd: 812    
 
   talents:
-    - name: "Klaus Champion II"
+    - name: "Klausian Champion II"
       effects: 
         - desc: AP cost -40%
           all: false
@@ -1150,7 +1150,7 @@
             buff: Damage Taken Reduction
             buffRole: healer
             buffValue: 20
-    - name: "Passed Down Martial Arts"
+    - name: "Passed-Down Martial Arts"
       effects: 
         - desc: Normal attack AP recovery +100%
           all: true
@@ -1176,7 +1176,7 @@
       picture: Air_Slash_I
       power: ATK x 200%
       ap: 20
-      maxHits: 2
+      maxHits: 1
       highlight: true      
     - name: "Double Slash"
       picture: Double_Slash_I
@@ -1386,7 +1386,7 @@
             buff: Enemy DEF Reduction
             buffValue: 30
     - name: "Black Brigade Fury II"
-      shortEffects: ATK +30% (Attackers/Defenders)
+      shortEffects: ATK +30% (All Attackers / Defenders)
       effects: 
         - desc: ATK +30%
           all: Attackers
@@ -1579,7 +1579,7 @@
   rush:
     name: "Divine Hammer"
     picture: Divine_Hammer_Ilia
-    shortEffects: AP cost -20% (Attackers / Invokers, 20 seconds)
+    shortEffects: AP cost -20% (All Attackers / Invokers, 20 seconds)
     effects: 
       - desc: AP cost -20%
         all: Attackers
@@ -1651,7 +1651,7 @@
 
   stats:
     hp: 15645
-    atk: 3245
+    atk: 3110
     int: 1549
     def: 1969
     hit: 1134
@@ -1936,19 +1936,19 @@
             buffValue: 30
     - name: "Speak Softly & Carry A Big Stick"
       effects: 
-        - desc: Imbue attacks with Fire or Light
+        - desc: Imbue attacks with Fire and Light
     - name: "Feinting Tactics"
       effects: 
-        - desc: All elemental damage +15%
+        - desc: All elemental damage dealt +15%
           all: true
           meta:
             priority: 1
             buff: Elemental Damage
             buffValue: 15
-    - name: "Stubborn To A Fault"
+    - name: "Stubborn to a Fault"
       effects: 
-        - desc: No flinching when taking damage of 10% HP
-          all: Long Range, Self
+        - desc: No flinching when taking damage of 10% HP or less
+          all: Long Range Weapons / Self
 
   skills:
     - name: "Gliding Side Kick"
@@ -1971,10 +1971,10 @@
       highlight: true
     - name: "Avian Air Raid"
       picture: Avian_Air_Raid
+      element: Light
       power: ATK x 400%
       ap: 30
       maxHits: 5
-      element: Light
 
   rush:
     name: "Colossal Ethereal Blast"
@@ -2081,7 +2081,7 @@
             buffValue: 30
     - name: "Fiery Indignation"
       effects: 
-        - desc: For every unique party member dead, ATK/INT/DEF/HIT/GRD +25%, up to a maximum of 100%
+        - desc: ATK/INT/DEF/HIT/GRD +25% for every unique party member dead, up to a maximum of 100%
           meta:
             priority: 3
             buffs:
@@ -2810,7 +2810,7 @@
 
   talents:
     - name: "First Valentine"
-      shortEffects: ATK/INT damage taken +15% when hit by a short-range skill (Enemies, 10 seconds)
+      shortEffects: ATK/INT damage taken +15% when hit by a short-range skill (All Enemies, 10 seconds)
       effects: 
         - desc: ATK damage taken +15% when hit by a short-range skill
           all: Enemies
@@ -2893,7 +2893,7 @@
   rush:
     name: "Chocolate Blessing"
     picture: Blessing_Chocolate_Valentine_Verda
-    shortEffects: ATK/INT damage taken +40% (Enemies, 20 seconds)
+    shortEffects: ATK/INT damage taken +40% (All Enemies, 20 seconds)
     effects: 
       - desc: ATK damage taken +40%
         duration: 20
@@ -2979,7 +2979,7 @@
             buff: ATK
             buffValue: 40
         - desc: ATK +60%
-          all: Short-ranged Weapons
+          all: Close Range Weapons
           meta:
             priority: 1
             buff: ATK
@@ -2991,7 +2991,7 @@
         - desc: No flinching when taking damage of 30% HP or less when using charge assault
           all: Attackers
     - name: "Bad Luck II"
-      shortEffects: Normal attack AP recovery +100% and evasion AP cost -50% (Attackers)
+      shortEffects: Normal attack AP recovery +100% and evasion AP cost -50% (All Attackers)
       effects: 
         - desc: Normal attack AP recovery +100%
           all: Attackers
@@ -3092,6 +3092,7 @@
   picture: Mirage
   weapon: knuckle
   ace: true
+  limited: false
   star: 5
 
   stats:
@@ -3130,7 +3131,7 @@
             buffCondition: Short Range
             buffValue: 100
     - name: "Father’s Teachings"
-      shortEffects: Critical hit chance +30% and critical hit damage +30% when at 100% HP
+      shortEffects: Critical hit chance +30% and critical damage +30% when at 100% HP
       effects: 
         - desc: Critical hit chance +30% when at 100% HP
           meta:
@@ -3162,7 +3163,7 @@
       picture: Triple_Kick
       power: ATK x 250%
       ap: 24
-      maxHits: 2
+      maxHits: 3
     - name: "Electric Fists"
       picture: Current_Knuckle
       power: ATK x 410%
@@ -3174,7 +3175,7 @@
     name: "Avenger Charge"
     picture: Festive_Avenger_Mirage
     element: Fire
-    shortEffects: AP cost -30%, and recover 10% HP every 3 seconds (20 seconds)
+    shortEffects: AP cost -30%, and recovers 10% HP every 3 seconds (20 seconds)
     effects: 
       - desc: AP cost -30%
         meta:
@@ -3298,7 +3299,7 @@
       picture: Piercing_Blades
       element: Ice
       power: ATK x 150%
-      ap: 14
+      ap: 15
       maxHits: 6
       highlight: true
     - name: "Twin Thrust"
@@ -3326,7 +3327,7 @@
       highlight: true
 
   rush:
-    name: "Tri-Ace"
+    name: "tri-Ace"
     picture: Tri_Ace_Ashton
     shortEffects: ATK +60% and AP cost -30% (20 seconds)
     effects: 
@@ -3472,7 +3473,7 @@
 
   talents:
     - name: "Fresh Madonna Lillies II"
-      shortEffects: ATK +30% and normal attack AP recovery +100% (Party)
+      shortEffects: ATK +30% and normal attack AP recovery +100% (All Party)
       effects: 
         - desc: ATK +30%
           all: true
@@ -3487,15 +3488,16 @@
             buff: AP Recovery
             buffValue: 100         
     - name: "Blue Star Shower II"
+      shortEffects: Single target damage +5%, and +20% when hitcount is 150 or more (All Long Range Weapons / Self)
       effects: 
         - desc: Single target damage +5%
-          all: Long-range weapons, Self
+          all: Long Range Weapons / Self
           meta:
             priority: 3
             buff: Single Target Damage
             buffValue: 5
         - desc: Single target damage +20% when hitcount is 150 or more
-          all: Long-range weapons, Self
+          all: Long Range Weapons / Self
           meta:
             priority: 3
             buff: Single Target Damage
@@ -3503,9 +3505,9 @@
             buffCondition: Hit Count > 150
     - name: "Four-Leafed Clover Blessing II"
       effects: 
-        - desc: Recover 5% HP every 3 seconds
+        - desc: Recovers 5% HP every 3 seconds
           all: true
-        - desc: Recover 10% HP every 3 seconds when hitcount is 100 or more
+        - desc: Recovers 10% HP every 3 seconds when hitcount is 100 or more
           all: true
     - name: "7-Million-Year-Old Present"
       effects: 
@@ -3550,7 +3552,7 @@
       highlight: true
 
   rush:
-    name: "Starry Oath"
+    name: "Celestial Vow"
     picture: Starry_Ace_Bridal_Rena
     effects: 
       - desc: No flinching when taking damage of 25% HP or less
@@ -3879,13 +3881,14 @@
     - name: "Greater Kingmaker"
       effects: 
         - desc: AP cost -20%
+          all: true
           meta:
             priority: 1
             buff: AP Cost Reduction
             buffValue: 20
     - name: "Quickest Wit"
       effects: 
-        - desc: Nullifies poison (180 seconds)
+        - desc: Nullifies poison for 180 seconds
           all: true
 
   skills:
@@ -4014,7 +4017,7 @@
   talents:
     - name: "Impregnable Defense III"
       effects: 
-        - desc: Nullifies silence (180 seconds)
+        - desc: Nullifies silence for 180 seconds
           all: true
     - name: "Bloodlust II"
       effects: 
@@ -4080,7 +4083,7 @@
   talents:
     - name: "Setting the Tone III"
       effects: 
-        - desc: Nullifies freezing (180 seconds)
+        - desc: Nullifies freezing for 180 seconds
           all: true
     - name: "Hidden Talent V"
       effects: 
