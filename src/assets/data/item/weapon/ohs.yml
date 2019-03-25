@@ -609,7 +609,7 @@
 - name: Sawtooth Blade
   cat: 'gl'
   star: 5
-  picture: Scratch Blade
+  picture: Scratch_Blade
   atk: 960
   int: 959
   factors:
