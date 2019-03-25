@@ -2,7 +2,7 @@
 - name: "Ten Wisemen Lucifer"
   image: lucifer
   cat: gl
-  race: Humanoid
+  race: Human
   
   isActive: false
 
