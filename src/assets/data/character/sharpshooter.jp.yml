@@ -1768,3 +1768,136 @@
       *Normal > Wing > Restrict > Wing^n - DPS*
       *Normal > Restrict > Wing > Wave^n - Rush*
       *Normal > Restrict > Wing > Restrict^n - DPS/Rush vs large enemies (9+ hits per Restrict)*
+
+- name: Verda Kleiman (Awakened)
+  cat: jp
+  rating: 0
+  picture: Verda
+  weapon: gun
+  ace: true
+  limited: false
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 16181
+    atk: 2854
+    int: 1589
+    def: 1733
+    hit: 1260
+    grd: 931
+
+  talents:
+    - name: "Child of Science"
+      shortEffects: ATK/INT/DEF -15% inflicted by Magnetic Field (10 seconds)
+      effects: 
+        - desc: ATK -15% inflicted by Magnetic Field (10 seconds)
+          all: Enemies
+          meta:
+            priority: 4
+            buff: Enemy ATK Reduction
+            buffValue: 15
+        - desc: INT -15% inflicted by Magnetic Field (10 seconds)
+          all: Enemies
+          meta:
+            priority: 4
+            buff: Enemy INT Reduction
+            buffValue: 15
+        - desc: DEF -15% inflicted by Magnetic Field (10 seconds)
+          all: Enemies
+          meta:
+            priority: 4
+            buff: Enemy DEF Reduction
+            buffValue: 15
+    - name: "Modified Gun"
+      effects: 
+        - desc: Damage taken +20% inflicted by Break Horn and Break Bullet (8 seconds)
+          all: Enemies
+          meta:
+            priority: 4
+            buff: Enemy Damage Taken
+            buffValue: 20
+    - name: "Family to Protect"
+      shortEffects: Damage dealt +40% (All) & 80% chance of surviving a lethal attack at 10% HP or more (Close-Range Weapons)
+      effects:
+        - desc: Damage dealt +40%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 40
+        - desc: 80% chance of surviving a lethal attack at 10% HP or more
+          all: Long Range
+    - name: "Commitment to Grandfather's Wishes"
+      effects: 
+        - desc: Seal immunity (180 seconds)
+          all: true
+        - desc: Nullify rush gauge reduction fields
+          all: true
+    - name: "Tears of the Tears"
+      shortEffects: Nullifies charge assault critical damage penalty & AP cost -20%
+      effects: 
+        - desc: Nullifies charge assault critical damage penalty
+          all: true
+        - desc: AP cost -20%
+          all: true
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 20
+    - name: "Star of Hope"
+      shortEffects: No flinching when taking damage when using charge assault, ATK +15% & HP +15%
+      effects:
+        - desc: No flinching when taking damage when using charge assault
+          all: false
+        - desc: ATK +15%
+          meta:
+            priority: 4
+            buff: ATK
+            buffValue: 15
+        - desc: HP +15%
+          meta:
+            priority: 4
+            buff: HP
+            buffValue: 15
+
+skills:
+    - name: "Magnetic Field"
+      picture: Magnetic_Field
+      power: ATK x 420%
+      ap: 22
+      maxHits: 10
+    - name: "Break Horn"
+      picture: Break_Horn
+      power: ATK x 310%
+      ap: 19
+      maxHits: 8
+    - name: "Benishigure (Chain)"
+      picture: Crimson_Squall_I
+      power: ATK x 1340%
+      ap: 18
+      maxHits: 9
+    - name: "Break Bullet"
+      picture: Gravity_Bullet
+      element: Dark
+      power: ATK x 430%
+      ap: 29
+      maxHits: 10
+
+  rush:
+    name: "Rocket Slippers"
+    picture: Rocket_Slippers_Verda
+    shortEffects: ATK damage +30% and movement speed +30% (All Party, 20 seconds)
+    effects:
+      - desc: ATK damage +30%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: ATK Damage
+          buffValue: 30
+      - desc: Movement speed +30%
+        duration: 20
+        all: true
+    power: ATK x 4000%
+    maxHits: 2
