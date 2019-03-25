@@ -151,6 +151,10 @@
   factors:
     - desc: +25% Seal Resist
     - desc: -10% INT DMG Taken
+      meta:
+        priority: 4
+        buff: INT Damage Taken Reduction
+        buffValue: 10
   obtained: Millioneyes (Exchange, Drop)
 
   notes: >
@@ -564,3 +568,42 @@
         buffValue: 10
         buffCondition: Hit Count > 200
   obtained: Monarch Zinae (Achievement)
+  
+- name: Forward Bangle
+  cat: 'gl'
+  star: 5
+  picture: Forward_Bangle
+  def: 728
+  factors:
+    - desc: Anti-Flinch ≤ 5% HP
+    - desc: 30% Chance to Survive a Lethal Attack when 10%+ HP
+  obtained: Lucifer (Achievement, Exchange)
+
+- name: Gap Bangle
+  cat: 'gl'
+  star: 5
+  picture: Gap_Bangle
+  def: 753
+  factors:
+    - desc: Anti-Flinch ≤ 15% HP (When Close Range) 
+    - desc: +30% AP RCV (When Far Range)
+      meta:
+        priority: 3
+        buff: AP Recovery
+        buffValue: 30
+        buffCondition: Far Range
+  obtained: Lucifer (Achievement, Exchange)
+
+- name: Silence Guard
+  cat: 'gl'
+  star: 5
+  picture: Anti_Silence_Amulet_IV
+  def: 728
+  factors: 
+    - desc: +40% Chance of Silence Nullification
+    - desc: -5% INT DMG Taken
+      meta:
+        priority: 4
+        buff: INT Damage Taken Reduction
+        buffValue: 5
+  obtained: Lucifer (Drop, Exchange)
