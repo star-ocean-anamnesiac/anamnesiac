@@ -486,3 +486,25 @@
         buffValue: 5
       lb: 5
   obtained: Monarch Chimera (Exchange)
+  
+- name: Crimson Nail Claws
+  cat: 'gl'
+  star: 5
+  picture: Hidden_Claws_Crimson_Hawk
+  atk: 961
+  int: 957 
+  factors:
+    - desc: Imbue Fire Element
+      element: Fire
+    - desc: +10% Single Target DMG
+      meta: 
+        priority: 1
+        buff: Single Target Damage
+        buffValue: 10
+    - desc: +15% Stun
+      meta:
+        priority: 1
+        buff: Stun Rate
+        buffValue: 15
+      lb: 5
+  obtained: Gacha
