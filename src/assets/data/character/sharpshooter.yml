@@ -192,7 +192,7 @@
   rush:
     name: "Energy Burst Barrage"
     picture: Energy_Burst_Barrage_Maria
-    shortEffects: Critical hit chance +40% (All Party) and removes buffs from enemies
+    shortEffects: Removes buffs from enemies, and critical hit chance +40% (All Party, 20 seconds)
     effects: 
       - desc: Removes buffs
         all: Enemies
@@ -642,7 +642,7 @@
             buffValue: 20
     - name: "Star Seed of Hope"
       effects: 
-        - desc: Nullifies status ailments (180 seconds)
+        - desc: Nullifies status ailments for 180 seconds
     - name: "Descendant of Muah"
       effects: 
         - desc: 80% chance of surviving a lethal attack at 10% HP or more
@@ -673,6 +673,7 @@
     name: "Lunar Divination"
     picture: Lunar_Divination_Reimi
     element: Dark
+    shortEffects: Nullifies status ailments and recovers 15% HP every 3 seconds (All Party, 15 seconds)
     effects: 
       - desc: Nullifies status ailments
         all: true
@@ -1068,8 +1069,9 @@
   rush:
     name: "Thousand-Beast Demon"
     picture: Millenium_Imprisoned_Devil_HW_Victor
+    shortEffects: Recovers 40% HP, and single target damage +40% (All Party, 20 seconds)
     effects: 
-      - desc: Recover 40% HP
+      - desc: Recovers 40% HP
         all: true
       - desc: Single target damage +40%
         duration: 20
@@ -1141,7 +1143,7 @@
 
   talents:
     - name: "Amused Feelings II"
-      shortEffects: Damage dealt +35% (Self/Healers/Invokers)
+      shortEffects: Damage dealt +35% (All Healers / Invokers / Self)
       effects: 
         - desc: Damage dealt +35%
           all: false
@@ -1217,7 +1219,7 @@
     name: "Cerberushot"
     picture: Cerberushot_Federation_Lymle
     element: Fire
-    shortEffects: Damage dealt +60% (Self/Invokers)
+    shortEffects: Damage dealt +60% (All Invokers / Self, 20 seconds)
     effects: 
       - desc: Damage dealt +60%
         duration: 20
@@ -1706,6 +1708,7 @@
   rush:
     name: "Energy Burst Barrage"
     picture: Energy_Burst_Barrage_Maria
+    shortEffects: Removes buffs from enemies, and critical hit chance +40% (All Party, 20 seconds)
     effects: 
       - desc: Removes buffs
         all: Enemies
@@ -2386,7 +2389,7 @@
             buffValue: 10
     - name: "Malevolent Guard"
       effects: 
-        - desc: Nullifies poison (180 seconds)
+        - desc: Nullifies poison for 180 seconds
           all: true
           meta:
             priority: 1
@@ -2500,7 +2503,7 @@
   talents:
     - name: "Black Tribe's Favor III"
       effects: 
-        - desc: Nullifies curse (180 seconds)
+        - desc: Nullifies curse for 180 seconds
           all: true
     - name: "Runemaster II"
       effects: 
@@ -2681,7 +2684,7 @@
     name: "Paralyzing Blow"
     picture: Paralysing_Blow_Milla
     effects:
-      - desc: DEF -30% %
+      - desc: DEF -30%
         duration: 20
         all: Enemies
         meta:
@@ -2712,7 +2715,7 @@
   talents:
     - name: "Nervous Tension III"
       effects: 
-        - desc: Nullifies paralysis (180 seconds)
+        - desc: Nullifies paralysis for 180 seconds
           all: true
     - name: "Assistance II"
       effects: 
@@ -2757,6 +2760,7 @@
     power: ATK x 2500%
     maxHits: 7
   
+  
 - name: Verda Kleiman
   cat: gl
   rating: 7
@@ -2785,7 +2789,8 @@
             buffValue: 5
     - name: "Modified Gun"
       effects: 
-        - desc: Damage taken +15% inflicted by Break Horn and Break Bullet (8 seconds)
+        - desc: Damage taken +15% inflicted by Break Horn and Break Bullet
+          duration: 8
           all: Enemies
           meta:
             priority: 4
@@ -2801,10 +2806,10 @@
             buffValue: 30
     - name: "Commitment to Grandfather's Wishes"
       effects: 
-        - desc: Silence immunity (180 seconds)
+        - desc: Nullifies silence for 180 seconds
           all: true
-        - desc: Nullify rush gauge reduction fields
-          all: Close-Range, Self
+        - desc: Nullifies Rush Gauge Reduction Fields
+          all: Close-Range / Self
           
   skills:
     - name: "Magnetic Field"
@@ -2832,7 +2837,7 @@
   rush:
     name: "Rocket Slippers"
     picture: Rocket_Slippers_Verda
-    shortEffects: ATK damage +30% and movement speed +30% (All Party)
+    shortEffects: ATK damage +30% and movement speed +30% (All Party, 20 seconds)
     effects:
       - desc: ATK damage +30%
         duration: 20
