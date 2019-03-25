@@ -1,0 +1,48 @@
+
+- name: "Ten Wisemen Lucifer"
+  image: lucifer
+  cat: gl
+  race: Humanoid
+  
+  isActive: false
+
+  enrage:
+    m1: "7:00"
+    m2: "7:00"
+    m3: "4:00"
+    	    
+  statusInflictions:
+    - Floor Adhesion
+
+  weaknesses:
+    - element: Fire
+      percentWeakness: 30
+
+    - status: Freeze
+      vuln: Low
+    - status: Poison
+      vuln: Low
+    - status: Silence
+      vuln: Low
+    - status: Curse
+      vuln: Low
+    - status: Paralysis
+      vuln: Low
+
+  recommendations:
+    - plain: Fire Damage
+    - plain: Status Infliction
+    - plain: Fast Rush Build
+
+  desc: >
+    None at this time.
+
+moves:
+    - name: Tornado
+      targets: Any
+      isSymbology: true
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Channels symbology for a few seconds and releases a tornado at his target. Slight homing on intended target.
