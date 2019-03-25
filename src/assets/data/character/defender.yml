@@ -294,7 +294,7 @@
     - name: "Moving up in the World IV"
       effects: 
         - desc: No flinching when taking damage of 20% HP or less
-          all: Close Range
+          all: Close Range Weapons
     - name: "Carnivore"
       effects: 
         - desc: Damage dealt to beasts +60%
@@ -374,7 +374,7 @@
     - name: "Imposing Presence IV"
       effects: 
         - desc: No flinching when taking damage of 20% HP or less
-          all: Close Range
+          all: Close Range Weapons
     - name: "Will of the Universe"
       effects: 
         - desc: Critical hit chance +20%
@@ -457,9 +457,9 @@
             buff: INT Damage Taken Reduction
             buffValue: 20    
     - name: "Great Charisma"
-      shortEffects: ATK +60% and AP cost -20% when targeted by enemy
+      shortEffects: Rush gauge limit -30%, and ATK +60% and AP cost -20% when targeted by enemy
       effects: 
-        - desc: Rush Gauge limit -30%
+        - desc: Rush gauge limit -30%
           all: false
         - desc: ATK +60% when targeted by enemy
           all: false
@@ -510,7 +510,7 @@
       power: ATK x 550%
       ap: 38
       maxHits: 10
-    - name: "Thunderfire Slash"
+    - name: "Thunderfire Slice"
       picture: Thunderfire_Slash
       element: Lightning
       power: ATK x 430%
@@ -522,7 +522,7 @@
     name: "Flashbolt"
     picture: Flashbolt_Summer_Myuria
     element: Lightning
-    shortEffects: AP cost -40% and recovers 15% HP every 3 seconds (20 seconds)
+    shortEffects: AP cost -40%, and recovers 15% HP every 3 seconds (20 seconds)
     effects: 
       - desc: AP cost -40%
         duration: 20
@@ -590,6 +590,7 @@
 
   talents:
     - name: "Expel's Swordsmaster II"
+      shortEffects: DEF +20% and ATK damage taken -20% (All Party)
       effects: 
         - desc: DEF +20%
           all: true
@@ -604,6 +605,7 @@
             buff: ATK Damage Taken Reduction
             buffValue: 20
     - name: "Ruthless Swordsmanship II"
+      shortEffects: ATK +30% and DEF +20%
       effects: 
         - desc: ATK +30%
           all: false
@@ -620,19 +622,19 @@
     - name: "Vow to Cecille II"
       effects: 
         - desc: No flinching when taking damage of 25% HP or less
-          all: Close Range
+          all: Close Range Weapons
     - name: "Equal Footing"
-      shortEffects: Damage dealt +20% (Attackers/Defenders)
+      shortEffects: Damage dealt +20% (Attackers / Defenders)
       effects: 
         - desc: Damage dealt +20%
-          all: Attacker
+          all: Attackers
           meta:
             priority: 1
             buff: Damage
             buffRole: attacker
             buffValue: 20
         - desc: Damage dealt +20%
-          all: Defender
+          all: Defenders
           meta:
             priority: 1
             buff: Damage
@@ -659,7 +661,7 @@
       ap: 29
       maxHits: 2
       highlight: true
-    - name: "Diabolic Edge"
+    - name: "Diabolic Whirl"
       picture: Diabolic_Whirl
       power: ATK x 340%
       ap: 29
@@ -893,6 +895,7 @@
   picture: Edge
   weapon: ohs
   ace: true
+  limited: false
   star: 5
 
   stats:
@@ -962,7 +965,7 @@
     name: "Mystic Cross Nova"
     picture: Mystic_Cross_Nova_Edge
     effects: 
-      - desc: Elemental damage dealt +50%
+      - desc: All elemental damage dealt +50%
         duration: 20
         all: true
         meta:
@@ -1292,7 +1295,7 @@
       *Normal > Undermine > Flash of Steel > Lava Floor > Lava Floor - (Damage rotation)*    
   
   
-- name: Dias (Awakened)
+- name: Dias Flac (Awakened)
   cat: gl
   rating: 9
   picture: Dias
@@ -1304,13 +1307,14 @@
   stats:
     hp: 22155
     atk: 3230
-    int: 1509
+    int: 1510
     def: 2867
     hit: 812
     grd: 1036
 
   talents:
     - name: "Expel's Swordsmaster II"
+      shortEffects: DEF +25% and ATK damage taken -25% (All Party)
       effects: 
         - desc: DEF +25%
           all: true
@@ -1325,6 +1329,7 @@
             buff: ATK Damage Taken Reduction
             buffValue: 25
     - name: "Ruthless Swordsmanship II"
+      shortEffects: ATK +50% and DEF +20%
       effects: 
         - desc: ATK +50%
           meta:
@@ -1339,9 +1344,9 @@
     - name: "Vow to Cecille II"
       effects: 
         - desc: No flinching when taking damage of 30% HP or less
-          all: Close Range
+          all: Close Range Weapons
     - name: "Equal Footing"
-      shortEffects: Damage dealt +40% (Attackers/Defenders)
+      shortEffects: Damage dealt +40% (Attackers / Defenders)
       effects: 
         - desc: Damage dealt +40%
           all: Attacker
@@ -1362,14 +1367,14 @@
         - desc: Taunt +3
     - name: "A Mercenary's Strength"
       effects: 
-        - desc: Restore 5% HP every 1 second during CA standby
+        - desc: Recovers 5% HP every 1 second during charge assault
 
   skills:
     - name: "Annihilating Air Slash"
       picture: Air_Slash_II
       power: ATK x 220%
       ap: 20
-      maxHits: 5
+      maxHits: 4
       highlight: true
     - name: "Double Slash"
       picture: Double_Slash_II
@@ -1377,18 +1382,18 @@
       ap: 20
       maxHits: 2
       highlight: true
-    - name: "Diabolic Edge"
-      picture: Diabolic_Whirl
+    - name: "Dragon Roar"
+      picture: Dragon_Roar
+      element: Dark
       power: ATK x 370%
       ap: 29
       maxHits: 2
-    - name: "Dragon Roar"
-      picture: Dragon_Roar
-      power: ATK x 340%
+      highlight: true      
+    - name: "Diabolic Whirl"
+      picture: Diabolic_Whirl
+      power: ATK x 370%
       ap: 29
-      maxHits: 2
-      element: Dark
-      highlight: true
+      maxHits: 5
     - name: "Unbridled Double Slash"
       picture: Unbridled_Double_Slash
       power: ATK x 440%
