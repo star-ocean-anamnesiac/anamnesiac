@@ -1,5 +1,6 @@
 
 - name: "Facula Dragon"
+  eventName: "Quark Seeks Justice"
   image: facula
   cat: gl
   race: Dragon
