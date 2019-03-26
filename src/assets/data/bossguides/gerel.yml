@@ -1,4 +1,5 @@
 - name: "King Gerel"
+  eventName: "Eliminate The Gerel Horde!"
   image: gerel
   cat: gl
   race: Plant
