@@ -423,7 +423,7 @@
         buffCondition: Close Range
   obtained: FFBE (Gacha Box)
        
-- name: Moglin Plush
+- name: Moogle Plush
   cat: 'gl'
   star: 5
   picture: Moglin_Plushie
@@ -450,7 +450,7 @@
         buff: HP
         buffValue: 5
     - desc: Recover 2% HP every 5 secs
-  obtained: Mountain Motango (Drop, Exchange)
+  obtained: Mountain Matango Mushroom (Drop, Exchange)
     
 - name: Bunny Hair Clip
   cat: 'gl'
@@ -539,7 +539,7 @@
 - name: Enchanted Bird's Charm
   cat: 'gl'
   star: 5
-  picture: Eagle_Eye_Charm
+  picture: Demonic_Bird's_Charm
   def: 728
   factors:
     - desc: -10% Cast Time
@@ -569,6 +569,33 @@
         buffCondition: Hit Count > 200
   obtained: Monarch Zinae (Achievement)
   
+- name: Extrication Ring
+  cat: 'gl'
+  star: 5
+  picture: Rush_Ring
+  def: 728
+  factors:
+    - desc: +10% Rush Combo DMG
+      meta:
+        priority: 1
+        buff: Rush Damage
+        buffValue: 10
+  obtained: Beast Monarch (Achievement)
+  
+- name: Silence Guard
+  cat: 'gl'
+  star: 5
+  picture: Anti_Silence_Amulet_IV
+  def: 728
+  factors: 
+    - desc: +40% Chance of Silence Nullification
+    - desc: -5% INT DMG Taken
+      meta:
+        priority: 4
+        buff: INT Damage Taken Reduction
+        buffValue: 5
+  obtained: Lucifer (Drop, Exchange)  
+  
 - name: Forward Bangle
   cat: 'gl'
   star: 5
@@ -594,16 +621,3 @@
         buffCondition: Far Range
   obtained: Lucifer (Achievement, Exchange)
 
-- name: Silence Guard
-  cat: 'gl'
-  star: 5
-  picture: Anti_Silence_Amulet_IV
-  def: 728
-  factors: 
-    - desc: +40% Chance of Silence Nullification
-    - desc: -5% INT DMG Taken
-      meta:
-        priority: 4
-        buff: INT Damage Taken Reduction
-        buffValue: 5
-  obtained: Lucifer (Drop, Exchange)
