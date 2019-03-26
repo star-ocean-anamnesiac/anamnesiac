@@ -1,5 +1,6 @@
 
 - name: "Transmogrified Alma"
+  eventName: "Transmogrified Alma's Descent"
   image: alma
   cat: gl
   race: Divinity
