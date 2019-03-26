@@ -331,6 +331,23 @@
       lb: 5
   obtained: Gacha
   
+- name: Magnetic Rouge
+  cat: 'gl'
+  star: 5
+  picture: Magnetic_Rouge
+  atk: 513
+  int: 508 
+  factors:
+    - desc: +20% DMG on Magnetic Field
+    - desc: +5% ATK
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 5
+    - desc: RCV 5% HP of DMG Dealt by Normal Attacks
+      lb: 5
+  obtained: Lucifer (Exchange)
+  
 - name: Trigger-Happy Bunny Gun
   cat: 'gl'
   star: 5
@@ -349,19 +366,3 @@
       lb: 5
   obtained: Gacha
   
-- name: Magnetic Rouge
-  cat: 'gl'
-  star: 5
-  picture: Magnetic_Rouge
-  atk: 513
-  int: 508 
-  factors:
-    - desc: +20% DMG on Magnetic Field
-    - desc: +5% ATK
-      meta:
-        priority: 4
-        buff: ATK
-        buffValue: 5
-    - desc: RCV 5% HP of DMG Dealt by Normal Attacks
-      lb: 5
-  obtained: Lucifer (Exchange)
