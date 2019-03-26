@@ -1,4 +1,5 @@
 - name: "Colossal Axe Beak"
+  eventName: "Defeat Colossal Beaks"
   image: axebeak
   cat: gl
   race: Bird
