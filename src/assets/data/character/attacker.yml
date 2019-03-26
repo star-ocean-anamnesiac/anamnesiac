@@ -279,7 +279,7 @@
             buffValue: 20
     - name: "Steadfast Courage"
       effects:
-        - desc: Enables evasion during air attacks
+        - desc: Evasion possible during air attacks
     - name: "Heir to the Camuze Style"
       effects:
         - desc: Single target damage dealt +10% when skill chain is 3 or more
@@ -302,7 +302,7 @@
             buffValue: 10  
     - name: "Inherited Will"
       effects:
-        - desc: Nullifies HP reduction fields
+        - desc: Nullifies HP Reduction Fields
         
   skills:
     - name: "Double Slash"
@@ -1386,7 +1386,7 @@
             buff: Enemy DEF Reduction
             buffValue: 30
     - name: "Black Brigade Fury II"
-      shortEffects: ATK +30% (All Attackers / Defenders)
+      shortEffects: ATK +30% (All Attackers/All Defenders)
       effects: 
         - desc: ATK +30%
           all: Attackers
@@ -1936,7 +1936,7 @@
             buffValue: 30
     - name: "Speak Softly & Carry A Big Stick"
       effects: 
-        - desc: Imbue attacks with Fire and Light
+        - desc: Imbue attacks with fire and light
     - name: "Feinting Tactics"
       effects: 
         - desc: All elemental damage dealt +15%
@@ -2268,7 +2268,7 @@
   rush:
     name: "Holiday Surprise"
     picture: Holiday_Surprise_Xmas_Fidel
-    shortEffects: AP cost -30%, and critical hit chance +20% (Self/20s)
+    shortEffects: AP cost -30% and critical hit chance +20% (Self/20s)
     effects: 
       - desc: AP cost -30%
         all: false
@@ -2811,16 +2811,16 @@
 
   talents:
     - name: "First Valentine"
-      shortEffects: ATK/INT damage taken +15% when hit by a short-range skill (All Enemies/10s)
+      shortEffects: ATK/INT damage taken +15% when hit by a short range skill (All Enemies/10s)
       effects: 
-        - desc: ATK damage taken +15% when hit by a short-range skill
+        - desc: ATK damage taken +15% when hit by a short range skill (10s)
           all: Enemies
           meta:
             priority: 3
             buffCondition: Short Ranged Skill
             buff: Enemy ATK Damage Taken
             buffValue: 15
-        - desc: INT damage taken +15% when hit by a short-range skill
+        - desc: INT damage taken +15% when hit by a short range skill (10s)
           all: Enemies
           meta:
             priority: 3
@@ -3890,9 +3890,8 @@
             buffValue: 20
     - name: "Quickest Wit"
       effects: 
-        - desc: Nullifies poison
+        - desc: Nullifies poison for 180 seconds
           all: true
-          duration: 180
 
   skills:
     - name: "Stampede Slash"
@@ -4020,9 +4019,8 @@
   talents:
     - name: "Impregnable Defense III"
       effects: 
-        - desc: Nullifies silence
+        - desc: Nullifies silence for 180 seconds
           all: true
-          duration: 180
     - name: "Bloodlust II"
       effects: 
         - desc: Damage dealt to dragons +20%
@@ -4087,9 +4085,8 @@
   talents:
     - name: "Setting the Tone III"
       effects: 
-        - desc: Nullifies freezing
+        - desc: Nullifies freezing for 180 seconds
           all: true
-          duration: 180
     - name: "Hidden Talent V"
       effects: 
         - desc: Damage dealt to humanoids +20%
@@ -4214,7 +4211,7 @@
     name: "Bloody Mary"
     picture: Bloody_Mary
     effects: 
-      - desc: Recover 15% HP every 5 seconds 
+      - desc: Recovers 15% HP every 5 seconds 
         all: true
         duration: 20
     power: ATK x 4500%
