@@ -28,7 +28,7 @@
         - desc: No flinching when taking damage of 20% HP or less
           all: true
     - name: "Dark Impulse"
-      shortEffects: Recovers 100% AP (self) and 10 AP (ll allies) with a perfect dodge
+      shortEffects: On executing a perfect dodge, recovers 100% AP for self and 10 AP for all allies
       effects: 
         - desc: Recovers 100% AP on perfect dodge
           all: false
@@ -41,7 +41,7 @@
             priority: 1
             buff: Single Target Damage
             buffValue: 20
-        - desc: Single target damage +40% at 100% HP
+        - desc: Single target damage +40% when at 100% HP
           all: true
           meta:
             priority: 3
@@ -294,7 +294,7 @@
     - name: "Moving up in the World IV"
       effects: 
         - desc: No flinching when taking damage of 20% HP or less
-          all: Close Range Weapons
+          all: Short Range Weapons
     - name: "Carnivore"
       effects: 
         - desc: Damage dealt to beasts +60%
@@ -374,7 +374,7 @@
     - name: "Imposing Presence IV"
       effects: 
         - desc: No flinching when taking damage of 20% HP or less
-          all: Close Range Weapons
+          all: Short Range Weapons
     - name: "Will of the Universe"
       effects: 
         - desc: Critical hit chance +20%
@@ -522,7 +522,7 @@
     name: "Flashbolt"
     picture: Flashbolt_Summer_Myuria
     element: Lightning
-    shortEffects: AP cost -40%, and recovers 15% HP every 3 seconds (20 seconds)
+    shortEffects: AP cost -40%, and recovers 15% HP every 3 seconds (Self/20s)
     effects: 
       - desc: AP cost -40%
         duration: 20
@@ -622,9 +622,9 @@
     - name: "Vow to Cecille II"
       effects: 
         - desc: No flinching when taking damage of 25% HP or less
-          all: Close Range Weapons
+          all: Short Range Weapons
     - name: "Equal Footing"
-      shortEffects: Damage dealt +20% (Attackers / Defenders)
+      shortEffects: Damage dealt +20% (All Attackers/All Defenders)
       effects: 
         - desc: Damage dealt +20%
           all: Attackers
@@ -821,6 +821,7 @@
     name: "Snowman Press"
     picture: Snowman_Press_Xmas_Eve
     element: Ice
+    shortEffects: AP cost -40% and ATK +30% (Self/20s)
     effects: 
       - desc: AP cost -40%
         all: false
@@ -830,6 +831,7 @@
           buff: AP Cost Reduction
           buffValue: 40
       - desc: ATK +30%
+        all: false
         duration: 20
         meta:
           priority: 4
@@ -1050,7 +1052,7 @@
         - desc: 70% of surviving a lethal attack at 5% HP or more
     - name: "Honeymoon Dreams II"
       effects: 
-        - desc: No flinching when taking damage of 20% HP or less (self/all invokers/all healers)
+        - desc: No flinching when taking damage of 20% HP or less (All Invokers/All Healers/Self)
           all: false
     - name: "Carnivore"
       effects: 
@@ -1157,7 +1159,7 @@
 
   talents:
     - name: "Heart on Fire"
-      shortEffects: ATK/INT/DEF -10% inflicted by Undermine (Enemy, 10 seconds)
+      shortEffects: ATK/INT/DEF -10% inflicted by Undermine (Enemy/10s)
       effects: 
         - desc: Undermine inflicts ATK -10% debuff on target (10 seconds)
           meta:
@@ -1233,6 +1235,7 @@
     name: "Shining Nova"
     picture: Shining_Nova_Rain
     element: Fire
+    shortEffects: AP cost -40% and ATK damage dealt +30% (Self/20s)
     effects: 
       - desc: AP cost -40%
         duration: 20
@@ -1344,9 +1347,9 @@
     - name: "Vow to Cecille II"
       effects: 
         - desc: No flinching when taking damage of 30% HP or less
-          all: Close Range Weapons
+          all: Short Range Weapons
     - name: "Equal Footing"
-      shortEffects: Damage dealt +40% (Attackers / Defenders)
+      shortEffects: Damage dealt +40% (All Attackers/All Defenders)
       effects: 
         - desc: Damage dealt +40%
           all: Attacker
@@ -1487,7 +1490,7 @@
     - name: "Unwavering Faith III"
       effects: 
         - desc: No flinching when taking damage of 15% HP or less
-          all: Close Range
+          all: Short Range Weapons
         
   skills:
     - name: "Double Slash"
@@ -1536,11 +1539,12 @@
 
   talents:
     - name: "Enchanting Scents VI"
+      shortEffects: Status ailment nullification for 90 seconds, and no flinching when taking damage of 15% or less (All Short Range Weapons)
       effects: 
-        - desc: Status ailment nullification (90 seconds)
-          all: Close Range
+        - desc: Status ailment nullification for 90 seconds
+          all: Short Range Weapons
         - desc: No flinching when taking damage of 15% HP or less
-          all: Close Range
+          all: Short Range Weapons
 
   skills:
     - name: "Mirror Blade"
