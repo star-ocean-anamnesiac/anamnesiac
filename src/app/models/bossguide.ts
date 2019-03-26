@@ -61,6 +61,9 @@ export interface BossGuide {
 
   // the name of the boss
   name: string;
+  
+  // the event name for the boss
+  eventName: string;
 
   // whether or not the boss fight is active
   isActive?: boolean;
