@@ -34,7 +34,7 @@
             buffValue: 55
     - name: "Scanner Type"
       effects: 
-        - desc: Evasion AP consumption -50%
+        - desc: Evasion AP cost -50%
           all: false
         - desc: Movement speed +30%
           all: false
@@ -80,7 +80,7 @@
   rush:
     name: "YoRHa Hack: Zero"
     picture: YoHRa_Hacking_Zero_9S
-    shortEffects: Recovers 50% HP and ATK damage +30% (All Party, 20 seconds)
+    shortEffects: Recovers 50% HP and ATK damage +30% (All Party/20s)
     effects: 
       - desc: Recover 50% HP
         all: true
@@ -192,7 +192,7 @@
   rush:
     name: "Energy Burst Barrage"
     picture: Energy_Burst_Barrage_Maria
-    shortEffects: Removes buffs from enemies, and critical hit chance +40% (All Party, 20 seconds)
+    shortEffects: Removes buffs from enemies, and critical hit chance +40% (All Party/20s)
     effects: 
       - desc: Removes buffs
         all: Enemies
@@ -673,7 +673,7 @@
     name: "Lunar Divination"
     picture: Lunar_Divination_Reimi
     element: Dark
-    shortEffects: Nullifies status ailments and recovers 15% HP every 3 seconds (All Party, 15 seconds)
+    shortEffects: Nullifies status ailments and recovers 15% HP every 3 seconds (All Party/15s)
     effects: 
       - desc: Nullifies status ailments
         all: true
@@ -809,8 +809,9 @@
   rush:
     name: "Rain on Your Parade"
     picture: Rain_on_Your_Parade_Summer_Miki
+    shortEffects: Critical hit chance +10% and critical damage +40% (All Party/20s)
     effects: 
-      - desc: Critical hit chance 10%
+      - desc: Critical hit chance +10%
         duration: 20
         all: true
         meta:
@@ -1069,7 +1070,7 @@
   rush:
     name: "Thousand-Beast Demon"
     picture: Millenium_Imprisoned_Devil_HW_Victor
-    shortEffects: Recovers 40% HP, and single target damage +40% (All Party, 20 seconds)
+    shortEffects: Recovers 40% HP, and single target damage +40% (All Party/20s)
     effects: 
       - desc: Recovers 40% HP
         all: true
@@ -1143,7 +1144,7 @@
 
   talents:
     - name: "Amused Feelings II"
-      shortEffects: Damage dealt +35% (All Healers / Invokers / Self)
+      shortEffects: Damage dealt +35% (All Healers/All Invokers/Self)
       effects: 
         - desc: Damage dealt +35%
           all: false
@@ -1219,7 +1220,7 @@
     name: "Cerberushot"
     picture: Cerberushot_Federation_Lymle
     element: Fire
-    shortEffects: Damage dealt +60% (All Invokers / Self, 20 seconds)
+    shortEffects: Damage dealt +60% (All Invokers/Self/20s)
     effects: 
       - desc: Damage dealt +60%
         duration: 20
@@ -1405,7 +1406,7 @@
   rush:
     name: "Revised Heavenly Flight"
     picture: Revised_Heavenly_Flight_Maiden_Clair
-    shortEffects: ATK -20% and DEF -20 (All Enemies, 30 seconds)
+    shortEffects: ATK -20% and DEF -20% (All Enemies/30s)
     effects: 
       - desc: ATK -20%
         all: Enemy
@@ -1501,7 +1502,7 @@
           buffValue: 30
     - name: "Headstrong"
       effects: 
-      - desc: Single target damage +15% at close range
+      - desc: Single target damage +15% at short range
         all: true
         meta:
           priority: 3
@@ -1642,7 +1643,7 @@
       effects: 
         - desc: Evasion AP cost -50%
           all: true
-        - desc: Evasion speed/distance +100%
+        - desc: Evasion speed & distance +100%
     - name: "Bloodstained Fangs II"
       effects: 
         - desc: Absorbs 10% of normal attack damage as HP when hitcount is 100 or more
@@ -1708,7 +1709,7 @@
   rush:
     name: "Energy Burst Barrage"
     picture: Energy_Burst_Barrage_Maria
-    shortEffects: Removes buffs from enemies, and critical hit chance +40% (All Party, 20 seconds)
+    shortEffects: Removes buffs from enemies, and critical hit chance +40% (All Party/20s)
     effects: 
       - desc: Removes buffs
         all: Enemies
@@ -1794,7 +1795,7 @@
             buff: Damage
             buffValue: 40
     - name: "Bramble Burst Barrage II"
-      shortEffects: Damage dealt +50%/55%/60% when hitcount is 100/150/200 (All Party)
+      shortEffects: Damage dealt +50%/55%/60% when hitcount is 100/150/200 or more (All Party)
       effects: 
         - desc: Damage dealt +50% when hitcount is 100 or more
           all: true
@@ -1933,7 +1934,7 @@
 
   talents:
      - name: "Crimson Blossom Flurry II"
-       shortEffects: Critical hit chance +10%/20%/30% when hitcount is 100/150/200 (All Party)
+       shortEffects: Critical hit chance +10%/20%/30% when hitcount is 100/150/200 or more (All Party)
        effects: 
         - desc: Critical hit chance +10% when hitcount is 100 or more
           all: true
@@ -1957,7 +1958,7 @@
             buffCondition: Hit Count > 200
             buffValue: 30
      - name: "Sincere Devotion II"
-       shortEffects: Critical damage +10%/20%/30% when hitcount is 100/150/200 (All Party)
+       shortEffects: Critical damage +10%/20%/30% when hitcount is 100/150/200 or more (All Party)
        effects: 
         - desc: Critical damage +10% when hitcount is 100 or more
           all: true
@@ -2004,7 +2005,7 @@
             priority: 1
             buff: AP Cost Reduction
             buffValue: 10
-        - desc: Nullifies critical damage penalty when using charge assault     
+        - desc: Nullifies critical damage penalty during charge assault     
 
   skills:
     - name: "Blooming Shot"
@@ -2209,7 +2210,7 @@
     name: "Revised Dancing Sword"
     picture: Revised_Dancing_Sword_Eleanor
     effects:
-      - desc: Removes all buffs
+      - desc: Removes buffs
         all: Enemies
     power: ATK x 3000%
     maxHits: 7
@@ -2780,6 +2781,7 @@
 
   talents:
     - name: "Child of Science"
+      shortEffects: ATK -5% inflicted by Magnetic Field (All Enemies/10s)
       effects: 
         - desc: ATK -5% inflicted by Magnetic Field (10 seconds)
           all: Enemies
@@ -2809,7 +2811,7 @@
         - desc: Nullifies silence for 180 seconds
           all: true
         - desc: Nullifies Rush Gauge Reduction Fields
-          all: Close-Range / Self
+          all: Short Range Weapons/Self
           
   skills:
     - name: "Magnetic Field"
@@ -2837,7 +2839,7 @@
   rush:
     name: "Rocket Slippers"
     picture: Rocket_Slippers_Verda
-    shortEffects: ATK damage +30% and movement speed +30% (All Party, 20 seconds)
+    shortEffects: ATK damage +30% and movement speed +30% (All Party/20s)
     effects:
       - desc: ATK damage +30%
         duration: 20
