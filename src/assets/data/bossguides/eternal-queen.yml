@@ -1,5 +1,6 @@
 
 - name: "Eternal Queen"
+  eventName: "Summer 1"
   image: eternal_queen
   cat: gl
   race: Demon
