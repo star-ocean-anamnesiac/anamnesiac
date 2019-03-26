@@ -569,7 +569,7 @@
         buffCondition: Hit Count > 200
   obtained: Monarch Zinae (Achievement)
   
-  - name: Extrication Ring
+- name: Extrication Ring
   cat: 'gl'
   star: 5
   picture: Rush_Ring
