@@ -18,7 +18,7 @@
 
   talents:
     - name: "Silent Will"
-      shortEffects: ATK +40%, and ATK +60% when at 100% HP (Party)
+      shortEffects: ATK +40%, and ATK +60% when at 100% HP (All Party/20s)
       effects: 
         - desc: ATK +40%
           all: true
@@ -77,7 +77,7 @@
   rush:
     name: "YoRHa Arms: Zero"
     picture: YoHRa_Arms_Ø_2B
-    shortEffects: All elemental damage dealt +70% (Self) and +50% (All Party)(20 seconds)
+    shortEffects: All elemental damage dealt +70% (Self/20s) and +50% (All Party/20s)
     effects: 
       - desc: All elemental damage dealt +70%
         all: false
@@ -787,7 +787,7 @@
     name: "Omega Thunderclap Blade"
     picture: Omega_Thunderclap_Blade_Ratix
     element: Lightning
-    shortEffects: AP cost -40% and damage taken -20% (60 seconds)
+    shortEffects: AP cost -40% and damage taken -20% (Self/60s)
     effects: 
       - desc: AP cost -40%
         all: false
@@ -889,22 +889,23 @@
             buffValue: 15
     - name: "Handmade Dolls II"
       effects: 
-        - desc: AP recovery from normal attacks +80%
-          all: Close Range
+        - desc: Normal attack AP recovery +100%
+          all: Short Range Weapons
           meta:
             priority: 4
             buff: AP Recovery From Normal Attacks
-            buffValue: 80
+            buffValue: 100
         - desc: Nullifies Rush Gauge Reduction Field
-          all: Close Range
+          all: Short Range
     - name: "Hit-the-Watermelon"
       effects: 
-        - desc: AP cost -25% when skill chain is 3 or more
+        - desc: Evasion possible during air attacks      
+        - desc: AP cost -50% when skill chain is 3 or more
           meta:
             priority: 4
             buff: AP Cost Reduction
             buffCondition: Skill Chain 3+
-            buffValue: 25
+            buffValue: 50
 
   skills:
     - name: "Combo Breaker"
@@ -933,7 +934,7 @@
   rush:
     name: "Celestial Sword"
     picture: Heaven's_Sword_Summer_Reimi
-    shortEffects: Cures all status ailments, and single target damage dealt +40% (Party, 20 seconds)
+    shortEffects: Cures all status ailments, and single target damage dealt +40% (All Party/20s)
     effects: 
       - desc: Cure status ailments
         all: true
@@ -1444,7 +1445,7 @@
   rush:
     name: "Hydra Roar"
     picture: Hydra_Roar_Albel
-    shortEffects: ATK +100% and DEF -50% (15 seconds)
+    shortEffects: ATK +100% and DEF -50% (Self/15s)
     effects: 
       - desc: ATK +100%
         duration: 15
@@ -1579,7 +1580,7 @@
   rush:
     name: "Divine Hammer"
     picture: Divine_Hammer_Ilia
-    shortEffects: AP cost -20% (All Attackers / Invokers, 20 seconds)
+    shortEffects: AP cost -20% (All Attackers/All Invokers/20s)
     effects: 
       - desc: AP cost -20%
         all: Attackers
@@ -1821,7 +1822,7 @@
             buffValue: 100
     - name: "Animal Instincts"
       effects: 
-        - desc: Nullifies movement reduction fields and rush gauge reduction fields
+        - desc: Nullifies Movement Reduction Fields and Rush Gauge Reduction Fields
           all: true
     - name: "Full Moon Howl"
       effects: 
@@ -1948,7 +1949,7 @@
     - name: "Stubborn to a Fault"
       effects: 
         - desc: No flinching when taking damage of 10% HP or less
-          all: Long Range Weapons / Self
+          all: Long Range Weapons/Self
 
   skills:
     - name: "Gliding Side Kick"
@@ -2267,7 +2268,7 @@
   rush:
     name: "Holiday Surprise"
     picture: Holiday_Surprise_Xmas_Fidel
-    shortEffects: AP cost -30%, and critical hit chance +20% (20 seconds)
+    shortEffects: AP cost -30%, and critical hit chance +20% (Self/20s)
     effects: 
       - desc: AP cost -30%
         all: false
@@ -2396,7 +2397,7 @@
   rush:
     name: "Fists of Unquenchable Fury"
     picture: Fists_of_Unquenchable_Fury_Weeping_Welch
-    shortEffects: ATK +50% and DEF -100% (Party, 20 seconds)
+    shortEffects: ATK +50% and DEF -100% (All Party/20s)
     effects: 
       - desc: ATK +50%
         all: true
@@ -2475,7 +2476,7 @@
             buff: Crit Rate
             buffValue: 30
     - name: "Memories of Ocarina II"
-      shortEffects: AP recovery +50% (Self/Defenders)
+      shortEffects: AP recovery +50% (All Defenders/Self)
       effects: 
         - desc: AP recovery +50%
           meta:
@@ -2498,7 +2499,7 @@
             buff: ATK
             buffValue: 20
     - name: "Cat's Interlude"
-      shortEffects: AP cost -20%, and ATK +10%/20%/30% when hitcount is 100/150/200
+      shortEffects: AP cost -20%, and ATK +10%/20%/30% when hitcount is 100/150/200 or more
       effects:
         - desc: AP cost -20%
           meta:
@@ -2624,7 +2625,7 @@
             buff: ATK
             buffValue: 30
         - desc: ATK +45%
-          all: Short-range weapons
+          all: Short Range Weapons
           meta:
             priority: 1
             buff: ATK
@@ -2632,7 +2633,7 @@
     - name: "Dependable Honors Student"
       effects: 
         - desc: Nullifies Movement Rate Reduction Field
-          all: Short-range weapons
+          all: Short Range Weapons
     - name: "Heir to the Blade II"
       effects: 
         - desc: AP cost -40% when skill chain is 3 or more
@@ -2810,7 +2811,7 @@
 
   talents:
     - name: "First Valentine"
-      shortEffects: ATK/INT damage taken +15% when hit by a short-range skill (All Enemies, 10 seconds)
+      shortEffects: ATK/INT damage taken +15% when hit by a short-range skill (All Enemies/10s)
       effects: 
         - desc: ATK damage taken +15% when hit by a short-range skill
           all: Enemies
@@ -2893,7 +2894,7 @@
   rush:
     name: "Chocolate Blessing"
     picture: Blessing_Chocolate_Valentine_Verda
-    shortEffects: ATK/INT damage taken +40% (All Enemies, 20 seconds)
+    shortEffects: ATK/INT damage taken +40% (All Enemies/20s)
     effects: 
       - desc: ATK damage taken +40%
         duration: 20
@@ -2979,7 +2980,7 @@
             buff: ATK
             buffValue: 40
         - desc: ATK +60%
-          all: Close Range Weapons
+          all: Short Range Weapons
           meta:
             priority: 1
             buff: ATK
@@ -2988,7 +2989,7 @@
       effects: 
         - desc: Nullifies charge assault critical damage penalty
           all: Attackers
-        - desc: No flinching when taking damage of 30% HP or less when using charge assault
+        - desc: No flinching when taking damage of 30% HP or less during charge assault
           all: Attackers
     - name: "Bad Luck II"
       shortEffects: Normal attack AP recovery +100% and evasion AP cost -50% (All Attackers)
@@ -3175,7 +3176,7 @@
     name: "Avenger Charge"
     picture: Festive_Avenger_Mirage
     element: Fire
-    shortEffects: AP cost -30%, and recovers 10% HP every 3 seconds (20 seconds)
+    shortEffects: AP cost -30%, and recovers 10% HP every 3 seconds (Self/20s)
     effects: 
       - desc: AP cost -30%
         meta:
@@ -3246,7 +3247,7 @@
 
   talents:
     - name: "Creepy's Aid"
-      shortEffects: ATK +15% and slight AP recovery after using a fire skill (10 seconds)
+      shortEffects: ATK +15% and slight AP recovery after using a fire skill (10s)
       effects: 
         - desc: ATK +15% after using a fire skill (10 seconds)
           meta:
@@ -3277,7 +3278,7 @@
             buff: AP Cost Reduction
             buffValue: 10
     - name: "Heir of Symbological Arts"
-      shortEffects: Rush combo damage +10%/20% when hitcount is 100/200
+      shortEffects: Rush combo damage +10%/20% when hitcount is 100/200 or more
       effects: 
         - desc: Rush combo damage +10% when hitcount is 100 or more
           all: false
@@ -3329,7 +3330,7 @@
   rush:
     name: "tri-Ace"
     picture: Tri_Ace_Ashton
-    shortEffects: ATK +60% and AP cost -30% (20 seconds)
+    shortEffects: ATK +60% and AP cost -30% (Self/20s)
     effects: 
       - desc: ATK +60% 
         duration: 20
@@ -3488,16 +3489,16 @@
             buff: AP Recovery
             buffValue: 100         
     - name: "Blue Star Shower II"
-      shortEffects: Single target damage +5%, and +20% when hitcount is 150 or more (All Long Range Weapons / Self)
+      shortEffects: Single target damage +5%, and +20% when hitcount is 150 or more (All Long Range Weapons/Self)
       effects: 
         - desc: Single target damage +5%
-          all: Long Range Weapons / Self
+          all: Long Range Weapons/Self
           meta:
             priority: 3
             buff: Single Target Damage
             buffValue: 5
         - desc: Single target damage +20% when hitcount is 150 or more
-          all: Long Range Weapons / Self
+          all: Long Range Weapons/Self
           meta:
             priority: 3
             buff: Single Target Damage
@@ -3618,7 +3619,7 @@
     - name: "Neophilia III"
       effects: 
         - desc: ATK +30%
-          all: Close Range
+          all: Short Range
           meta:
             priority: 1
             buff: ATK
@@ -4129,6 +4130,7 @@
     power: ATK x 2500%
     maxHits: 7
 
+
 - name: Precis F. Neumann
   cat: gl 
   rating: 6
@@ -4162,12 +4164,12 @@
             buffValue: 25    
     - name: "Overaction"
       effects: 
-        - desc: Critical hit chance +30% at close range
+        - desc: Critical hit chance +30% at short range
           all: true
           meta:
             priority: 1
             buff: Crit Rate
-            buffCondition: Close Range
+            buffCondition: Short Range
             buffValue: 30    
     - name: "Scholarly Aspirations Inherited from Father"
       effects: 
