@@ -69,7 +69,7 @@
       power: 0%
       ap: 60
       maxHits: 1
-      notes: ATK +25% (Party, 20 seconds)
+      notes: ATK +25% (All Party/20s)
       meta:
         priority: 2
         buff: ATK
@@ -87,7 +87,7 @@
     name: "Meteor Swarm"
     picture: Meteor_Swarm_Sophia
     element: Fire
-    shortEffects: INT +70% and AP cost -60% (20 seconds)
+    shortEffects: INT +70% and AP cost -60% (Self/20s)
     effects: 
       - desc: INT +70%
         duration: 20
@@ -461,7 +461,7 @@
     name: "Trinity Blaze"
     picture: Trinity_Blaze_Lymle  
     element: Fire
-    shortEffects: INT +100% and symbology cast time -70% (20 seconds)
+    shortEffects: INT +100% and symbology cast time -70% (Self/20s)
     effects: 
       - desc: INT +100%
         duration: 20
@@ -552,7 +552,7 @@
             buff: Stun Rate
             buffValue: 15
     - name: "Eldarian Honor II"
-      shortEffects: 80% chance of surviving a lethal attack and symbology cast time -80% at 10% HP or more
+      shortEffects: 80% chance of surviving a lethal attack and symbology cast time -80% when at 10% HP or more
       effects: 
         - desc: 80% chance of surviving a lethal attack at 10% HP or more
         - desc: Symbology cast time -80% at 10% HP or more
@@ -964,7 +964,7 @@
             buff: Multiple Target Damage
             buffValue: 20
     - name: "The Expel Turnabout II"
-      shortEffects: Nullifies freeze/paralysis (All Party, 90 seconds)
+      shortEffects: Nullifies freeze/paralysis (All Party/90s)
       effects: 
         - desc: Nullifies freeze
           duration: 90
@@ -1014,7 +1014,7 @@
     name: "Explode Efficiently"
     picture: Explode_Prince_Claude
     element: Fire
-    shortEffects: AP cost -50% and symbology cast time -30% (20 seconds)
+    shortEffects: AP cost -50% and symbology cast time -30% (Self/20s)
     effects: 
       - desc: AP cost -50%
         duration: 20
@@ -1238,7 +1238,7 @@
             buff: INT
             buffValue: 40
     - name: "Escort To The Altar II"
-      shortEffects: AP cost -20%, and AP cost -30%/40%/50% when hitcount is 50/100/150
+      shortEffects: AP cost -20%, and AP cost -30%/40%/50% when hitcount is 50/100/150 or more
       effects: 
         - desc: AP cost -20%
           meta:
@@ -1310,7 +1310,7 @@
     name: "Cutting of the Cake"
     picture: Cutting_Cake_Bridal_Eve
     element: Earth
-    shortEffects: INT damage dealt +40% and AP cost -60% (20 seconds)
+    shortEffects: INT damage dealt +40% and AP cost -60% (Self/20s)
     effects: 
       - desc: INT damage dealt +40%
         duration: 20
@@ -1810,7 +1810,7 @@
     name: "Revised Vampiric Blade"
     picture: Revised_Vampiric_Blade_Seer_Eleanor
     element: Dark
-    shortEffects: INT +50% and symbology cast time -70% (20 seconds)
+    shortEffects: INT +50% and symbology cast time -70% (Self/20s)
     effects: 
       - desc: INT +50%
         duration: 20
