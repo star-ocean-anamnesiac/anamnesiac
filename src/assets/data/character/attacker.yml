@@ -18,7 +18,6 @@
 
   talents:
     - name: "Silent Will"
-      shortEffects: ATK +40%, and ATK +60% when at 100% HP (All Party/20s)
       effects: 
         - desc: ATK +40%
           all: true
@@ -35,10 +34,10 @@
             buffValue: 60
     - name: "Clockwork Infantry"
       effects: 
-        - desc: Evasion AP consumption -100% on perfect dodge
+        - desc: Evasion AP cost -100% on perfect dodge
     - name: "Holy Blessing"
       effects: 
-        - desc: AP recovery from normal attacks +100%
+        - desc: Normal attack AP recovery +100%
           all: true
           meta:
             priority: 1
@@ -46,9 +45,9 @@
             buffValue: 100
     - name: "Wish"
       effects: 
-        - desc: Evasion AP consumption -50% 
-        - desc: Enables evasion during air attacks
-        - desc: Imbues attacks with light/dark element
+        - desc: Evasion AP cost -50% 
+        - desc: Evasion possible during air attacks
+        - desc: Imbues attacks with light and dark
 
   skills:
     - name: "YoRHa Arms: One"
@@ -625,7 +624,7 @@
     - name: "Finest Instructor of the Blade II"
       effects: 
         - desc: No flinching when taking damage of 20% HP or less
-    - name: "Camuze Way"
+    - name: "Camuze's Way"
       effects: 
         - desc: Damage dealt to humanoids +60%
           all: false
@@ -896,7 +895,7 @@
             buff: AP Recovery From Normal Attacks
             buffValue: 100
         - desc: Nullifies Rush Gauge Reduction Field
-          all: Short Range
+          all: Short Range Weapons
     - name: "Hit-the-Watermelon"
       effects: 
         - desc: Evasion possible during air attacks      
@@ -1040,7 +1039,7 @@
       power: ATK x 500%
       ap: 35
       maxHits: 3
-    - name: "Heaven and Hell"
+    - name: "Heaven & Hell"
       picture: Air_Slash_I
       power: ATK x 220%
       ap: 22
@@ -2082,7 +2081,7 @@
             buffValue: 30
     - name: "Fiery Indignation"
       effects: 
-        - desc: ATK/INT/DEF/HIT/GRD +25% for every unique party member dead, up to a maximum of 100%
+        - desc: ATK/INT/DEF/HIT/GRD +25% for every unique party member dead, up to a maximum of +100%
           meta:
             priority: 3
             buffs:
@@ -2228,6 +2227,7 @@
         - desc: Bullet Barrage and Bombing Run deal damage +100% when skill chain is 3 or more
         - desc: Bullet Barrage and Bombing Run deal damage +200% when skill chain is 5 or more
     - name: "Novice Santa"
+      shortEffects: ATK +15% and HIT +10%
       effects: 
         - desc: ATK +15%
           meta:
@@ -2499,7 +2499,7 @@
             buff: ATK
             buffValue: 20
     - name: "Cat's Interlude"
-      shortEffects: AP cost -20%, and ATK +10%/20%/30% when hitcount is 100/150/200 or more
+      shortEffects: AP cost -20%, and ATK +10%/+20%/+30% when hitcount is 100/150/200 or more
       effects:
         - desc: AP cost -20%
           meta:
@@ -2986,6 +2986,7 @@
             buff: ATK
             buffValue: 60
     - name: "Exposed Ferocity II"
+      shortEffects: Nullifies charge assault critical damage penalty, and no flinching when taking damage of 30% HP or less during charge assault (All Attackers)
       effects: 
         - desc: Nullifies charge assault critical damage penalty
           all: Attackers
@@ -3249,16 +3250,16 @@
     - name: "Creepy's Aid"
       shortEffects: ATK +15% and slight AP recovery after using a fire skill (10s)
       effects: 
-        - desc: ATK +15% after using a fire skill (10 seconds)
+        - desc: ATK +15% after using a fire skill (10s)
           meta:
             priority: 3
             buff: ATK
             buffCondition: Fire Skill
             buffValue: 15
-        - desc: Slight AP recovery after using a fire skill (10 seconds)
+        - desc: Slight AP recovery after using a fire skill (10s)
     - name: "Weepy's Healing"
       effects: 
-        - desc: Normal attack AP recovery +150% after using an ice skill (10 seconds)
+        - desc: Normal attack AP recovery +150% after using an ice skill (10s)
           meta:
             priority: 3
             buff: AP Recovery From Normal Attacks
@@ -3278,7 +3279,7 @@
             buff: AP Cost Reduction
             buffValue: 10
     - name: "Heir of Symbological Arts"
-      shortEffects: Rush combo damage +10%/20% when hitcount is 100/200 or more
+      shortEffects: Rush combo damage +10%/+20% when hitcount is 100/200 or more
       effects: 
         - desc: Rush combo damage +10% when hitcount is 100 or more
           all: false
@@ -3889,8 +3890,9 @@
             buffValue: 20
     - name: "Quickest Wit"
       effects: 
-        - desc: Nullifies poison for 180 seconds
+        - desc: Nullifies poison
           all: true
+          duration: 180
 
   skills:
     - name: "Stampede Slash"
@@ -3988,7 +3990,7 @@
     name: "Sharp Talons"
     picture: Sharp_Talons_Tyvane
     effects:
-      - desc: Removes all buffs
+      - desc: Removes buffs
         duration: 20
         all: Enemies
       - desc: DEF -30%
@@ -4018,8 +4020,9 @@
   talents:
     - name: "Impregnable Defense III"
       effects: 
-        - desc: Nullifies silence for 180 seconds
+        - desc: Nullifies silence
           all: true
+          duration: 180
     - name: "Bloodlust II"
       effects: 
         - desc: Damage dealt to dragons +20%
@@ -4084,8 +4087,9 @@
   talents:
     - name: "Setting the Tone III"
       effects: 
-        - desc: Nullifies freezing for 180 seconds
+        - desc: Nullifies freezing
           all: true
+          duration: 180
     - name: "Hidden Talent V"
       effects: 
         - desc: Damage dealt to humanoids +20%
@@ -4173,7 +4177,7 @@
             buffValue: 30    
     - name: "Scholarly Aspirations Inherited from Father"
       effects: 
-        - desc: AP cost -40% when skill chain is 3
+        - desc: AP cost -40% when skill chain is 3 or more
           all: false
           meta:
             priority: 1
