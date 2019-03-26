@@ -1,4 +1,5 @@
 - name: "Jie Revorse"
+  eventName: "Jie Revorse Descends"
   image: jie_revorse
   cat: gl
   race: Machine
