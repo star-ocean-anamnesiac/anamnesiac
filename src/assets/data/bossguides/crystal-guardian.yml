@@ -1,4 +1,5 @@
 - name: "Crystal Guardian"
+  eventName: "Crystal Guardian Extermination"
   image: crystal_guardian
   cat: gl
   race: Machine
