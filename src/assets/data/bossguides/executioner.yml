@@ -1,5 +1,6 @@
 
 - name: "High Executioner"
+  eventName: "The Executioner Attacks"
   image: executioner
   cat: gl
   race: Demon

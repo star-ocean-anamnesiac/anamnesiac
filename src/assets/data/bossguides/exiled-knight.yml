@@ -1,5 +1,6 @@
 
 - name: "Exiled Knight"
+  eventName: "Final Fantasy Brave Exvius 1"
   image: exiled_knight
   cat: gl
   race: Beast

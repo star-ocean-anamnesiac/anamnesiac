@@ -1,5 +1,6 @@
 
 - name: "Blood Valkyrie"
+  eventName: "Valkyrie Profile 1"
   image: blood_valkyrie
   cat: gl
   race: Divinity

@@ -1,5 +1,6 @@
 
 - name: "Ten Wisemen Lucifer"
+  eventName: "Lucifer Descends"
   image: lucifer
   cat: gl
   race: Human

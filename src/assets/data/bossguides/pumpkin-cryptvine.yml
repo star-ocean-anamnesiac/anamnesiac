@@ -1,4 +1,5 @@
 - name: "Pumpkin Cryptvine"
+  eventName: "Halloween 1"
   image: pumpkin_cryptvine
   cat: gl
   race: Plant

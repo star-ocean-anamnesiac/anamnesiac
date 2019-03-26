@@ -1,5 +1,6 @@
 
 - name: "Hell Siren"
+  eventName: "VR Arena Battle"
   image: vr_siren
   cat: gl
   race: Bird

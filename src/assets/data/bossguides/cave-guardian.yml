@@ -1,4 +1,5 @@
 - name: "Cave Guardian"
+  eventName: "Federation Academy Freshman"
   image: cave_guardian
   cat: gl
   race: Machine

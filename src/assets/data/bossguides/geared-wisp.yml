@@ -1,4 +1,5 @@
 - name: "Geared Wisp"
+  eventName: "NieR: Automata 1"
   image: geared_wisp
   cat: gl
   race: Machine 

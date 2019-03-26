@@ -1,5 +1,6 @@
 
 - name: "Vermillion Horndevil"
+  eventName: "Christmas 1"
   image: vermillion_horndevil
   cat: gl
   race: Demon

@@ -1,5 +1,6 @@
 
-- name: "Michael Descends"
+- name: "Michael"
+  eventName: "Michael Descends"
   image: michael
   cat: gl
   race: Human

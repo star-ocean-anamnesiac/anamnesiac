@@ -1,4 +1,5 @@
 - name: "Millioneye"
+  eventName: "Summer 2"
   image: millioneye
   cat: gl
   race: Demon

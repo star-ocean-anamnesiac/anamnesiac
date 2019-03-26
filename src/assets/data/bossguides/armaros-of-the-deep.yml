@@ -1,5 +1,6 @@
 
 - name: "Armaros of the Deep"
+  eventName: "Armaros of the Deep Descends"
   image: armaros_of_the_deep
   cat: gl
   race: Insect

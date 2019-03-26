@@ -1,5 +1,6 @@
 
 - name: "Frost Tree"
+  eventName: "Frost Tree Extermination"
   image: frosttree
   cat: gl
   race: Plant

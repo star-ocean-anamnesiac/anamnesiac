@@ -1,5 +1,6 @@
 
 - name: "Monarch Chimera"
+  eventName: "Bride 2"
   image: monarch_chimera
   cat: gl
   race: Beast
