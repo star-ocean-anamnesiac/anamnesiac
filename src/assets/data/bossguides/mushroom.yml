@@ -1,5 +1,6 @@
 
 - name: "Mountain Matango Mushroom"
+  eventName: "Valentine 1"
   image: mushroom
   cat: gl
   race: Plant
