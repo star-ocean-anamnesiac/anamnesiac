@@ -80,7 +80,7 @@
   rush:
     name: "YoRHa Hack: Zero"
     picture: YoHRa_Hacking_Zero_9S
-    shortEffects: Recovers 50% HP and ATK damage +30% (All Party/20s)
+    shortEffects: Recovers 50% HP, and ATK damage +30% (All Party/20s)
     effects: 
       - desc: Recover 50% HP
         all: true
@@ -319,7 +319,7 @@
   rush:
     name: "Divine Wrath"
     picture: Divine_Wrath_Nel
-    shortEffects: 15% chance of adding poison to attacks, and an additional hit that deals 20% more damage
+    shortEffects: Additional hit that deals 20% more damage, and attacks have +15% chance to poison (Self/20s)
     effects: 
       - desc: Attacks have +15% chance to poison
         duration: 20
@@ -643,6 +643,7 @@
     - name: "Star Seed of Hope"
       effects: 
         - desc: Nullifies status ailments for 180 seconds
+          all: false
     - name: "Descendant of Muah"
       effects: 
         - desc: 80% chance of surviving a lethal attack at 10% HP or more
@@ -1795,7 +1796,7 @@
             buff: Damage
             buffValue: 40
     - name: "Bramble Burst Barrage II"
-      shortEffects: Damage dealt +50%/55%/60% when hitcount is 100/150/200 or more (All Party)
+      shortEffects: Damage dealt +50%/+55%/+60% when hitcount is 100/150/200 or more (All Party)
       effects: 
         - desc: Damage dealt +50% when hitcount is 100 or more
           all: true
@@ -1934,7 +1935,7 @@
 
   talents:
      - name: "Crimson Blossom Flurry II"
-       shortEffects: Critical hit chance +10%/20%/30% when hitcount is 100/150/200 or more (All Party)
+       shortEffects: Critical hit chance +10%/+20%/+30% when hitcount is 100/150/200 or more (All Party)
        effects: 
         - desc: Critical hit chance +10% when hitcount is 100 or more
           all: true
@@ -1958,7 +1959,7 @@
             buffCondition: Hit Count > 200
             buffValue: 30
      - name: "Sincere Devotion II"
-       shortEffects: Critical damage +10%/20%/30% when hitcount is 100/150/200 or more (All Party)
+       shortEffects: Critical damage +10%/+20%/+30% when hitcount is 100/150/200 or more (All Party)
        effects: 
         - desc: Critical damage +10% when hitcount is 100 or more
           all: true
@@ -2783,13 +2784,15 @@
     - name: "Child of Science"
       shortEffects: ATK -5% inflicted by Magnetic Field (All Enemies/10s)
       effects: 
-        - desc: ATK -5% inflicted by Magnetic Field (10 seconds)
+        - desc: ATK -5% inflicted by Magnetic Field
+          duration: 10
           all: Enemies
           meta:
             priority: 4
             buff: Enemy ATK Reduction
             buffValue: 5
     - name: "Modified Gun"
+      shortEffects: Damage taken +15% inflicted by Break Horn and Break Bullet (All Enemies/8s)
       effects: 
         - desc: Damage taken +15% inflicted by Break Horn and Break Bullet
           duration: 8
