@@ -180,7 +180,7 @@
   talents:
     - name: "Spark of Inspiration II"
       effects: 
-        - desc: +20% INT
+        - desc: INT +20%
           all: true
           meta:
             priority: 1
@@ -188,7 +188,7 @@
             buffValue: 20
     - name: "A Girl of Many Talents II"
       effects: 
-        - desc: +30% Rush DMG
+        - desc: Rush Damage +30%
           all: true
           meta:
             priority: 1
@@ -200,12 +200,12 @@
         - desc: -40% to Rush Gauge
     - name: "Cryptic Symbology Arts"
       effects: 
-        - desc: -25% AP Cost
+        - desc: AP cost -25%
           meta:
             priority: 4
             buff: AP Cost Reduction
             buffValue: 25
-        - desc: -40% Cast Time
+        - desc: Cast Time -40%
           meta:
             priority: 1
             buff: Cast Time Reduction
@@ -260,7 +260,7 @@
       - desc: Revives All Party Members at 1 HP
         all: true
         duration: 20
-      - desc: +100% INT
+      - desc: INT +100%
         duration: 20
         meta:
           priority: 4
@@ -331,7 +331,7 @@
           all: Short Ranged Weapon Users, All
     - name: "Beyond Time & Space"
       effects: 
-        - desc: Symbol invoking time -90%
+        - desc: Cast Time -90%
           meta:
             priority: 4
             buff: Cast Time Reduction
@@ -348,7 +348,7 @@
         - desc: 95% (Self) & 90% (Short Ranged Weapon Users) chance of surviving a lethal attack at 10% HP or more
     - name: "Physical Sense"
       effects: 
-        - desc: Normal attack AP recovery amount + 100% & Damage not attacked while attacked -30%
+        - desc: Normal attack AP recovery amount +100% & Damage not attacked while attacked -30%
     - name: "I love cute things!"
       effects: 
         - desc: ATK +40%
@@ -423,7 +423,7 @@
     picture: Star_Flare_Rena
     element: Light
     effects: 
-      - desc: Critical Hit Rate +60%
+      - desc: Critical Rate +60%
         all: Short Ranged Weapon Users
         duration: 20
         meta:
@@ -522,8 +522,9 @@
 
   talents:
     - name: "Industrial Housecleaning"
+      shortEffects:  INT +40%, HIT +10%, GRD +10%, HP +20%
       effects: 
-        - desc: INT +40%, HIT +10%, GRD +10%, HP +20%
+        - desc: INT +40%
           meta:
             priority: 4
             buff: INT
@@ -545,23 +546,23 @@
             buffValue: 20
     - name: "Glutton"
       effects: 
-        - desc: Reduce Symbol Invoking Time by 40%
+        - desc: Cast Time -40%
           meta:
             priority: 4
             buff: Cast Time Reduction
             buffValue: 40
     - name: "Beginner's Luck"
       effects: 
-        - desc: At 10% HP or higher, has a 80% chance of Surviving a Lethal Attack
+        - desc: 80% chance of Surviving a Lethal Attack At 10% HP or higher
     - name: "Dedicated"
       effects: 
         - desc: Disable abnormal condition (self / 180 seconds) HP 5% recovery every 3 seconds (total) 
     - name: "Graduation from brother and sister"
       effects: 
-        - desc: ATK damage + 40% (overall) 
+        - desc: ATK Damage +40% (overall) 
     - name: "Dish Meister"
       effects: 
-        - desc: Consumed AP-20% Damage + 50% of attacking crests when skill 3 or more is linked
+        - desc: AP Cost-20% and Damage +50% of attacking crests when skill 3 or more is linked
 
   skills:
     - name: "Radiant Lancer"
@@ -637,7 +638,7 @@
   talents:
     - name: "Like Father, Like Daughter"
       effects: 
-        - desc: All Elemental Damage Dealt +30%
+        - desc: Elemental Damage +30%
           all: true
           meta:
             priority: 1
@@ -662,10 +663,10 @@
         - desc: HP 5% recovery every 3 seconds (overall) Disable sealing (self / 180 seconds)
     - name: "The Age of Growth"
       effects: 
-        - desc: Critical Damage + 20% (Overall) at 100% HP
+        - desc: Critical Damage +20% (Overall) at 100% HP
     - name: "Investigation of Music Box"
       effects: 
-        - desc: Survive 80% chance at lethal attack with HP over 10% (overall)
+        - desc: 80% chance of surviving a lethal attack with HP over 10% (overall)
 
   skills:
     - name: "Crush"
@@ -702,7 +703,7 @@
     picture: Tractor_Beam_Millie
     element: Earth
     effects: 
-      - desc: Critical Hit Rate +50%
+      - desc: Critical Rate +50%
         all: true
         duration: 20
         meta:
@@ -785,8 +786,9 @@
         - desc: Nullifies AP Recovery Rate Reduction Fields & Movement Rate Reduction Fields
           all: Self & Short Ranged Weapons
     - name: "Dreams of the Future II"
+      shortEffects: Cast Time -80%, AP Cost -20% & Super Armor while casting heraldry < 30% HP
       effects: 
-        - desc: Symbology invoking time -80% and Consumption AP -20% & Super Armor while casting heraldry < 30% HP
+        - desc: Cast Time -80%
           meta:
             priority: 4
             buff: Cast Time Reduction
