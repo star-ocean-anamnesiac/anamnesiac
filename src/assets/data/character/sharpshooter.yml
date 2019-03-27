@@ -17,7 +17,7 @@
     grd: 924
 
   talents:
-    - name: "Fleeting Gentleness"
+    - name: "Fleeting Kindness"
       effects: 
         - desc: Damage dealt +45%
           all: true
@@ -36,13 +36,14 @@
       effects: 
         - desc: Evasion AP cost -50%
           all: false
-        - desc: Movement speed +30%
+        - desc: Movement rate +30%
           all: false
     - name: "Treacherous Blade"
       effects: 
         - desc: Evasion possible during air attacks
-        - desc: Movement distance & speed +100%
+        - desc: Evasion distance & rate +100%
     - name: "Gathering Keepsakes"
+      shortEffects: ATK +15% and HIT +10%
       effects: 
         - desc: ATK +15%
           meta:
@@ -78,13 +79,13 @@
       maxHits: 1
       
   rush:
-    name: "YoRHa Hack: Zero"
+    name: "YoRHa Hacking Attack: Zero"
     picture: YoHRa_Hacking_Zero_9S
-    shortEffects: Recovers 50% HP, and ATK damage +30% (All Party/20s)
+    shortEffects: Recovers 50% HP, and ATK damage dealt +30% (All Party/20s)
     effects: 
       - desc: Recover 50% HP
         all: true
-      - desc: ATK damage +30% 
+      - desc: ATK damage dealt +30% 
         duration: 20
         all: true
         meta:
@@ -267,7 +268,7 @@
   talents:
     - name: "Crimson Blade"
       effects: 
-        - desc: Normal attacks have +15% chance to poison
+        - desc: Normal attacks have +15% chance to inflict poison
           all: false
           meta:
             priority: 4
@@ -319,7 +320,7 @@
   rush:
     name: "Divine Wrath"
     picture: Divine_Wrath_Nel
-    shortEffects: Additional hit that deals 20% more damage, and attacks have +15% chance to poison (Self/20s)
+    shortEffects: Attacks have +15% chance to inflict poison, and an additional hit that deals 20% more damage (Self/20s)
     effects: 
       - desc: Attacks have +15% chance to poison
         duration: 20
@@ -783,7 +784,8 @@
             priority: 1
             buff: AP Recovery From Normal Attacks
             buffValue: 100
-        - desc: Evasion possible while in the air
+        - desc: Evasion possible during air attacks
+          all: false
 
   skills:
     - name: "Heavenly Flight"
@@ -1015,7 +1017,7 @@
   talents:
     - name: "Bloodstained Fangs II"
       effects: 
-        - desc: Absorbs 10% of normal attack damage as HP
+        - desc: Absorbs 10% of damage dealt by normal attacks as HP
           all: true
     - name: "Crimson Cup II"
       effects: 
@@ -1127,7 +1129,7 @@
       *Normal > Dragon's Might > Gyrfalcon Blade > Dragon's Might > Spam till out of AP  (General Combo.)*    
 
 
-- name: Lymle (Official)
+- name: Lymle Lemuri Phi (Official)
   cat: gl
   rating: 3
   picture: Federation_Lymle
@@ -1221,7 +1223,7 @@
     name: "Cerberushot"
     picture: Cerberushot_Federation_Lymle
     element: Fire
-    shortEffects: Damage dealt +60% (All Invokers/Self/20s)
+    shortEffects: Damage dealt +60% (All Invokers/All Healers/Self/20s)
     effects: 
       - desc: Damage dealt +60%
         duration: 20
@@ -1476,7 +1478,7 @@
       *Normal > Crimson Squall > Sonic Thorn > Crimson Squall > Spam till out of AP  (General Combo.)*    
 
 
-- name: Anne (Official)
+- name: Anne Patriceani (Official)
   cat: gl
   rating: 4
   picture: Federation_Anne
@@ -1663,6 +1665,7 @@
             buff: AP Cost Reduction
             buffValue: 5
     - name: "Dreams of Peace"
+      shortEffects: ATK +30% and HP +10%
       effects: 
         - desc: ATK +30%
           meta:
@@ -1998,9 +2001,9 @@
             buff: ATK
             buffCondition: Charge Assault
             buffValue: 30
-     - name: "Well Concealed Dream"
+     - name: "Well-Concealed Dream"
        effects: 
-        - desc: No flinching when taking damage at 10% HP or less
+        - desc: No flinching when taking damage of 10% HP or less
         - desc: AP cost -10%
           meta:
             priority: 1
@@ -2237,7 +2240,7 @@
   talents:
     - name: "Professional Assassin"
       effects: 
-        - desc: Normal attacks have +10% chance to poison
+        - desc: Normal attacks have +10% chance to inflict poison
           all: false
           meta:
             priority: 4
@@ -2531,6 +2534,7 @@
       maxHits: 7
     - name: "Frigid Quills"
       picture: Frigid_Quills
+      element: Ice
       power: ATK x 310%
       ap: 20
       maxHits: 3
@@ -2652,7 +2656,7 @@
             buffValue: 30
     - name: "A Beautiful Future"
       effects: 
-        - desc: +10% chance of adding paralysis to normal attacks
+        - desc: Normal attacks have +10% chance of inflicting paralysis
           all: false
           meta:
             priority: 4
@@ -2792,9 +2796,9 @@
             buff: Enemy ATK Reduction
             buffValue: 5
     - name: "Modified Gun"
-      shortEffects: Damage taken +15% inflicted by Break Horn and Break Bullet (All Enemies/8s)
+      shortEffects: Damage taken +15% inflicted by Splitshot and Gravity Slug (All Enemies/8s)
       effects: 
-        - desc: Damage taken +15% inflicted by Break Horn and Break Bullet
+        - desc: Damage taken +15% inflicted by Splitshot and Gravity Slug
           duration: 8
           all: Enemies
           meta:
@@ -2822,17 +2826,17 @@
       power: ATK x 260%
       ap: 22
       maxHits: 10
-    - name: "Break Horn"
+    - name: "Split Shot"
       picture: Break_Horn
       power: ATK x 190%
       ap: 19
       maxHits: 8
-    - name: "Crimson Squall)"
+    - name: "Continuous Crimson Squall"
       picture: Crimson_Squall_I
       power: ATK x 180%
       ap: 18
       maxHits: 9
-    - name: "Break Bullet"
+    - name: "Gravity Slug"
       picture: Gravity_Bullet
       element: Dark
       power: ATK x 340%
@@ -2840,9 +2844,9 @@
       maxHits: 10
 
   rush:
-    name: "Rocket Slippers"
+    name: "Rocket Slipper"
     picture: Rocket_Slippers_Verda
-    shortEffects: ATK damage +30% and movement speed +30% (All Party/20s)
+    shortEffects: ATK damage dealt +30% and movement rate +30% (All Party/20s)
     effects:
       - desc: ATK damage +30%
         duration: 20
@@ -2851,7 +2855,7 @@
           priority: 1
           buff: ATK Damage
           buffValue: 30
-      - desc: Movement speed +30%
+      - desc: Movement rate +30%
         duration: 20
         all: true
     power: ATK x 3500%
