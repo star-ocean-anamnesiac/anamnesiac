@@ -829,13 +829,35 @@
 
   talents:
     - name: "Divine Arrow Burst"
+      shortEffects: Damage dealt +30%/35%/40%/45% when hitcount is 0/100/150/200
       effects: 
         - desc: Damage +30%
           all: true
           meta:
             priority: 1
             buff: Damage
-            buffValue: 30  
+            buffValue: 30 
+        - desc: Damage +35%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Hit Count > 100
+            buffValue: 35
+        - desc: Damage +40%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Hit Count > 150
+            buffValue: 40  
+        - desc: Damage +45%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Hit Count > 200
+            buffValue: 45
     - name: "Battle Maiden's Might"
       effects: 
         - desc: Single target damage +10%
