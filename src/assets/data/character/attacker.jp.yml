@@ -3073,13 +3073,14 @@
         - desc: Enables evasion during air attacks
     - name: "Heir to the Camuze Style"
       effects:
-        - desc: Single Target Damage Dealt +10% when skill chain is 3+
+        - desc: Single Target Damage +10% when skill chain is 3+
           meta:
             priority: 3
             buff: Single Target Damage
             buffCondition: Skill Chain 3+
             buffValue: 10
     - name: "Defender of the Weak"
+      shortEffects: ATK +25% and DEF +10%
       effects:
         - desc: ATK +25%
           meta:
@@ -3542,13 +3543,13 @@
         - desc: Imbue attacks with Fire and Light
     - name: "Feinting Tactics"
       effects: 
-        - desc: All elemental damage dealt +15%
+        - desc: Elemental Damage +15%
           all: true
           meta:
             priority: 1
             buff: Elemental Damage
             buffValue: 15
-        - desc: Elemental damage +30% when at 100% HP
+        - desc: Elemental Damage +30% when at 100% HP
           all: true
           meta:
             priority: 3
@@ -3609,7 +3610,7 @@
     name: "Colossal Ethereal Blast"
     picture: Colossal_Ethereal_Blast_Fayt
     effects: 
-      - desc: All elemental damage dealt +50%
+      - desc: Elemental Damage +50%
         all: true
         duration: 20
         meta:
@@ -3673,7 +3674,6 @@
     - name: "Hero's Resolve II"
       effects: 
         - desc: ATK +40%
-          all: Attackers
           meta:
             priority: 1
             buff: ATK
@@ -3705,7 +3705,7 @@
             buffValue: 20
     - name: "Passed-Down Martial Arts"
       effects: 
-        - desc: Normal attack AP recovery +150%
+        - desc: AP Recovery From Normal Attacks +150%
           all: true
           meta:
             priority: 1
@@ -3814,7 +3814,7 @@
   talents:
     - name: "Transcending Space-time II"
       effects: 
-        - desc: Symbology cast time -80%
+        - desc: Cast Time -80%
           all: true
           meta:
             priority: 1
@@ -3822,7 +3822,7 @@
             buffValue: 80
     - name: "Astounding Edarl Blade Arts"
       effects: 
-        - desc: Stun chance +50%
+        - desc: Stun Rate +50%
           all: true
           meta:
             priority: 1
@@ -3838,15 +3838,15 @@
             buffValue: 40
     - name: "Breath Adventurous"
       effects: 
-        - desc: ATK · INT damage + 100% (over all enemies) 
+        - desc: ATK · INT damage + 100% (all enemies) 
     - name: "Looke Saver"
       effects: 
-        - desc: Damage to the Normal Attack 20% Additional Hit Occurrence
+        - desc: Additional hit that deals 20% of damage during normal attacks
         - desc: Battle Skills Additional 5% Damage to the Battle Skill (Overall)
     - name: "Talent 6"
       effects: 
         - desc: CB Over 150 Overtime Idle Charge
-        - desc: ATK damage + 50% when starting up is over 400 hits
+        - desc: ATK Damage +50% when hitcount is 400 or more
 
   skills:
     - name: "Double Slash"
@@ -3962,10 +3962,10 @@
             priority: 1
             buff: ATK
             buffValue: 30
-        - desc: Covered ATK Damaged + 15% (Overall Enemy)
+        - desc: Covered ATK Damaged +15% (Overall Enemy)
     - name: "The Dusk of Ragnarok"
       effects: 
-        - desc: Rush combo damage +20%
+        - desc: Rush Damage +20%
           all: true
           meta:
             priority: 1
@@ -3974,26 +3974,36 @@
         - desc: Invalid Seal (total / 120 secs)
     - name: "Platina's Heart"
       effects: 
-        - desc: +15% chance of adding silence to all attacks
+        - desc: All attacks have +15% chance of adding silence
           meta:
             priority: 4
             buff: Silence Attack Chance
             buffValue: 15
     - name: "Glitter in Ax"
       effects: 
-        - desc: Charge critical hit by charge assault Abolish the outbreak effect During the attack. Avoidable talent in the air.
+        - desc: Nullifies charge assault critical damage penalty.
+        - desc: Evasion possible during air attacks
     - name: "Sound Echoing Voice"
       effects: 
-        - desc: AP Cost Reduction -50% when skill chain is 3 or more
+        - desc: AP Cost -50% when skill chain is 3 or more
           meta:
             priority: 4
             buff: AP Cost Reduction
             buffCondition: Skill Chain 3+
             buffValue: 50
     - name: "British Invitation"
+      shortEffects: ATK +30% and HP +10%
       effects: 
-        - desc: ATK +15%
-        - desc: DEF +10%
+        - desc: ATK +30%
+          meta:
+            priority: 4
+            buff: ATK
+            buffValue: 30
+        - desc: HP +10%
+          meta:
+            priority: 4
+            buff: HP
+            buffValue: 10
 
   skills:
     - name: "Glowing Pierce"
@@ -4105,7 +4115,7 @@
             buffValue: 150
     - name: "Sincere Efforts II"
       effects: 
-        - desc: All elemental damage dealt +40%
+        - desc: Elemental Damage +40%
           all: true
           meta:
             priority: 1
@@ -4118,16 +4128,16 @@
             buff: AP Cost Reduction
             buffValue: 10
     - name: "Heir of Symbological Arts"
-      shortEffects: Rush combo damage +20%/40% when hitcount is 100/200
+      shortEffects: Rush Damage +20%/40% when hitcount is 100/200
       effects: 
-        - desc: Rush combo damage +20% when hitcount is 100 or more
+        - desc: Rush Damage +20% when hitcount is 100 or more
           all: false
           meta:
             priority: 3
             buff: Rush Damage
             buffCondition: Hit Count > 100
             buffValue: 20
-        - desc: Rush combo damage +40% when hitcount is 200 or more
+        - desc: Rush Damage +40% when hitcount is 200 or more
           all: false
           meta:
             priority: 3
@@ -4135,16 +4145,16 @@
             buffCondition: Hit Count > 200
             buffValue: 40
     - name: "High-Speed Slashing"
-      shortEffects: AP Consumption -30%/50% when hitcount is 150/300
+      shortEffects: AP Cost -30%/50% when hitcount is 150/300 and Crit Rate +50% when hitcount is 400 or more.
       effects: 
-        - desc: AP Consumption -30% when hitcount is 150 or more
+        - desc: AP Cost -30% when hitcount is 150 or more
           all: false
           meta:
             priority: 3
             buff: AP Cost Reduction
             buffCondition: Hit Count > 150
             buffValue: 30
-        - desc: AP Consumption -50% when hitcount is 300 or more
+        - desc: AP Cost -50% when hitcount is 300 or more
           all: false
           meta:
             priority: 3
@@ -4294,7 +4304,7 @@
             buffValue: 50
     - name: "Revolutionary Spirit"
       effects:
-        - desc: Critical hit chance +30%
+        - desc: Critical Rate +30%
           meta:
             priority: 4
             buff: Crit Rate
@@ -4308,7 +4318,7 @@
             buffValue: 30
     - name: "The Fist of the Wind"
       effects:
-        - desc: Avoid astray in the air while attacking
+        - desc: Evasion possible during air attacks
         - desc: Nullifies charge assault critical damage penalty
           all: false
     - name: "Quark Founder"
@@ -4442,14 +4452,15 @@
             priority: 1
             buff: Multiple Target Damage
             buffValue: 20
-        - desc: Convert 45% of ATK to INT (All castors All Healer)
+        - desc: Convert 45% of ATK to INT
+          all: Invokers, Healers
     - name: "Mother of Symbology"
       effects: 
         - desc: AP cost -10%
           meta:
             priority: 4
             buff: AP Cost Reduction
-            buffValue: 4
+            buffValue: 10
         - desc: AP cost -30% when skill chain is 3 or more
           meta:
             priority: 4
@@ -4458,13 +4469,13 @@
             buffValue: 30
     - name: "Quiet Devotion"
       effects: 
-        - desc: Fire damage dealt +20%
+        - desc: Fire Damage +20%
           all: true
           meta:
             priority: 1
             buff: Fire Damage
             buffValue: 20
-        - desc: Stun chance +20%
+        - desc: Stun Rate +20%
           all: true
           meta:
             priority: 1

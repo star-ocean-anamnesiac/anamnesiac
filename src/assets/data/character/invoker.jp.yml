@@ -44,7 +44,7 @@
             buffValue: 20
     - name: "Connection"
       effects: 
-        - desc: Symbology cast time -30%
+        - desc: Cast Time -30%
           meta:
             priority: 4
             buff: Cast Time Reduction
@@ -155,7 +155,7 @@
   talents:
     - name: "Enchanted Perfume II"
       effects: 
-        - desc: Stun chance +30%
+        - desc: Stun Rate +30%
           meta:
             priority: 1
             buff: Stun Rate
@@ -1885,7 +1885,7 @@
             buff: AP Cost Reduction
             buffValue: 20
     - name: "Tail Lovers"
-      effects: 
+      effects:
         - desc: Convert 35% of INT to ATK
           all: Attackers, Sharpshooters, Defenders
     - name: "Earth Federation of Hero"
@@ -2198,7 +2198,7 @@
             buffValue: 25
     - name: "Eldarian Honor II"
       effects: 
-        - desc: At 10% HP or higher, has an 90% chance to survive a lethal attack
+        - desc: 90% chance to survive a lethal attack at 10% HP or higher
         - desc: Cast Time -90%
           meta:
             priority: 4
@@ -2215,7 +2215,7 @@
         - desc: INT Damage +50% when skill chain is 3+
     - name: "Raw Serious"
       effects: 
-        - desc: INT +20% DEF +30% HIT +10% HP +30%
+        - desc: INT +20%, DEF +30%, HIT +10%, HP +30%
 
   skills:
     - name: "Cursed Devourer"
@@ -2344,7 +2344,7 @@
             buffValue: 30
     - name: "Enchanted Symbology"
       effects: 
-        - desc: +25% chance to silence on all attacks
+        - desc: All attacks have +25% chance of adding silence
           meta:
             priority: 4
             buff: Silence Attack Chance
