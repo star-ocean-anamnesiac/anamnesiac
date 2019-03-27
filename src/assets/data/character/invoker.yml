@@ -1366,7 +1366,7 @@
 - name: Bernard (Scholar)
   cat: gl
   rating: 0
-  picture: Bernard
+  picture: Manuscript_Bernard
   weapon: tome
   ace: false
   limited: false
