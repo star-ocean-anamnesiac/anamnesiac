@@ -1027,7 +1027,7 @@
             priority: 1
             buff: Damage
             buffValue: 30
-        - desc: All elemental damage dealt +10% when at 100% HP
+        - desc: Elemental damage dealt +10% when at 100% HP
           all: true
           meta:
             priority: 1
@@ -1497,7 +1497,7 @@
   talents:
     - name: "Flawless Support II"
       effects: 
-      - desc: All elemental damage dealt +30%
+      - desc: Elemental damage dealt +30%
         all: true
         meta:
           priority: 1
