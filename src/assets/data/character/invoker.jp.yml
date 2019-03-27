@@ -1713,7 +1713,7 @@
   talents:
     - name: "Enchanted Perfume II"
       effects: 
-        - desc: Easier to stun +30%
+        - desc: Stun Rate +30%
           meta:
             priority: 4
             buff: Stun Rate
@@ -1727,7 +1727,7 @@
             buffValue: 40
     - name: "In Loving Memory of Lucien III"
       effects: 
-        - desc: Reduce casting time by 60%
+        - desc: Cast Time -60%
           meta:
             priority: 4
             buff: Cast Time Reduction
@@ -1795,7 +1795,7 @@
     picture: Ultraviolet_Extinction_Myuria
     element: Lightning
     effects: 
-      - desc: +80% INT
+      - desc: INT +80%
         duration: 20
         meta:
           priority: 4
@@ -1866,8 +1866,8 @@
           meta:
             priority: 4
             buff: INT
-            buffValue: 40
-        - desc: -70% Cast Time
+            buffValue: 60
+        - desc: Cast Time -70%
           meta:
             priority: 1
             buff: Cast Time Reduction
@@ -2040,12 +2040,12 @@
           meta:
             priority: 4
             buff: DEF
-            buffValue: 30
+            buffValue: 50
         - desc: GRD +20%
           meta:
             priority: 4
             buff: GRD
-            buffValue: 10
+            buffValue: 20
         - desc: HP +20%
           meta:
             priority: 4
@@ -2070,10 +2070,10 @@
             buffValue: 20
     - name: "Obstinate"
       effects: 
-        - desc: Given the damage + 60% of the fire attribute (Self, Attackers, Shooters, Defenders)
+        - desc: Fire Damage +60% (Self, Attackers, Shooters, Defenders)
     - name: "Closed Emotions"
       effects: 
-        - desc: Critical hit rate +50% at skills 3+
+        - desc: Crit Rate +50% when skill chain is 3+
 
   skills:
     - name: "Fire Bolt Drop"
@@ -2121,7 +2121,7 @@
           priority: 4
           buff: INT
           buffValue: 120
-      - desc: Reduce casting time by 70%
+      - desc: Cast Time -70%
         duration: 25
         meta:
           priority: 4
@@ -2184,13 +2184,13 @@
   talents:
     - name: "The Gifted One II"
       effects: 
-        - desc: Damage to single targets +40%
+        - desc: Single Target Damage +40%
           all: true
           meta:
             priority: 1
             buff: Single Target Damage
             buffValue: 40
-        - desc: Chance to stun +25%
+        - desc: Stun Rate +25%
           all: true
           meta:
             priority: 1
@@ -2199,23 +2199,23 @@
     - name: "Eldarian Honor II"
       effects: 
         - desc: At 10% HP or higher, has an 90% chance to survive a lethal attack
-        - desc: Reduce casting time by 90%
+        - desc: Cast Time -90%
           meta:
             priority: 4
             buff: Cast Time Reduction
             buffValue: 90
     - name: "Talent 3"
       effects: 
-        - desc: Damage during " defective " attack -20% HP 25% Do not get rid of the following damage (overall) 
+        - desc: Damage during "defective" attack -20% HP 25% Do not get rid of the following damage (overall) 
     - name: "Crimson Eyesight"
       effects: 
-        - desc: Survive at 90% non-lethal attack with more than 20% HP (all ranged weapon equipped person) 
+        - desc: Survive at 90% non-lethal attack with more than 20% HP (Long Ranged Weapons) 
     - name: "Logical Thinking"
       effects: 
-        - desc: skill 3 cooperation or more Giving INT damage + 50% 
+        - desc: INT Damage +50% when skill chain is 3+
     - name: "Raw Serious"
       effects: 
-        - desc: INT + 20% DEF + 30% HIT + 10% HP + 30%
+        - desc: INT +20% DEF +30% HIT +10% HP +30%
 
   skills:
     - name: "Cursed Devourer"
@@ -2351,7 +2351,7 @@
             buffValue: 25
     - name: "A Lady's Poise II"
       effects:
-        - desc: Super Armor while casting & +20% INT damage dealt when at 100% HP
+        - desc: Super Armor while casting & INT Damage +20% when at 100% HP
           meta:
             priority: 4
             buff: INT Damage
@@ -2359,17 +2359,17 @@
             buffValue: 20
     - name: "Marze Born & Raised"
       effects:
-        - desc: -50% cast time
+        - desc: Cast Time -50%
           meta:
             priority: 4
             buff: Cast Time Reduction
             buffValue: 50
-        - desc: -40% AP cost
+        - desc: AP cost -40%
           meta:
             priority: 4
             buff: AP Cost Reduction
             buffValue: 40
-        - desc: +10% Rush DMG
+        - desc: Rush Damage +10%
           meta:
             priority: 4
             buff: Rush Damage
@@ -2379,7 +2379,7 @@
         - desc: INT +20%
     - name: "Unrestrained Mind"
       effects:
-        - desc: Skill 3 More than Attractive Attack of Heraldic Damage + 50%
+        - desc: Heraldic Damage +50% when skill chain is 3+
 
   skills:
     - name: "Silencing Star Light"
@@ -2422,7 +2422,7 @@
     picture: Silent_Southern_Cross_Celine
     element: Light
     effects: 
-      - desc: +50% INT
+      - desc: INT +50%
         duration: 20
         meta:
           priority: 4
