@@ -837,21 +837,21 @@
             priority: 1
             buff: Damage
             buffValue: 30 
-        - desc: Damage +35%
+        - desc: Damage +35% at when hitcount is at 100 or more
           all: true
           meta:
             priority: 1
             buff: Damage
             buffCondition: Hit Count > 100
             buffValue: 35
-        - desc: Damage +40%
+        - desc: Damage +40% at when hitcount is at 150 or more
           all: true
           meta:
             priority: 1
             buff: Damage
             buffCondition: Hit Count > 150
             buffValue: 40  
-        - desc: Damage +45%
+        - desc: Damage +45% at when hitcount is at 200 or more
           all: true
           meta:
             priority: 1
