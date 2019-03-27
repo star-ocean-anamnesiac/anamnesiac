@@ -351,7 +351,7 @@
   talents:
     - name: "Prayer for Peace"
       effects: 
-        - desc: Critical Chance +15%
+        - desc: Critical Rate +15%
           all: true
           meta:
             priority: 1
@@ -374,10 +374,10 @@
             buffValue: 15
     - name: "Covert Operation"
       effects: 
-        - desc: Repel +1 & Skill 3 cooperation ATK damage + 80%
+        - desc: Repel +1 & ATK Damage +80% when skill chain is 3+
     - name: "Absolute Loyalty"
       effects: 
-        - desc: ATK Damage +30% (All) & ATK damage to the enemy ATK damage + 15% (entire enemy)
+        - desc: ATK Damage +30% (All) & ATK damage to the enemy ATK damage +15% (entire enemy)
     - name: "Captain of the Enma Division"
       effects: 
         - desc: ATK +30% & HIT +10%
@@ -415,7 +415,7 @@
     picture: Divine_Wrath_Nel
     effects: 
       - desc: Normal Attacks have +15% chance to Deadly Poison
-      - desc: Normal Attacks will do an additional hit on Normal Attacks that does 20% of your damage
+      - desc: Normal Attacks will do an additional hit that does 20% of your damage
         duration: 20
       - desc: High Chance to inflict Deadly Poison during Rush.
     power: ATK x 3000%
@@ -487,23 +487,22 @@
           all: true
     - name: "Daredevil's Courage II"
       effects: 
-        - desc: Additional Hit on that Deals 20% of Damage Dealt on Normal Attacks (All) & Damage to Battle Skills 5% Additional hit occurence (Self)
+        - desc: Normal Attacks will do an additional hit that does 20% of your damage (All) & Damage to Battle Skills 5% Additional hit occurence (Self)
     - name: "Admiral's Persuasion"
       effects: 
-        - desc: Damge +35% & Damage every 100, 200 hits + 50%, 65% (All)
+        - desc: Damge +35% & Damage +50/65% every 100/200 hits (All)
           all: true
     - name: "Adult Style"
       effects: 
-        - desc: Consumes every 50, 100 hits AP-10%, -20% (All)
+        - desc: AP Cost -10/20% every 50, 100 hits (All)
           all: true
     - name: "Beauty and Fruit Wine"
       effects: 
-        - desc: Enemy is less likely to be targeted from the enemy + 2 chestnut rate and damage + 50% & Avoid damage by evasion Your AP 100 % recovery
+        - desc: Repel +2, Critial Rate and Damage +50% & Recovers 100% AP on perfect dodge
           all: true
     - name: "Heroes on Success As a Clan"
       effects: 
-        - desc: ATK +40%, DEF +20%, HIT +10%, HP +10% (Self)
-          all: true
+        - desc: ATK +40%, DEF +20%, HIT +10%, HP +10%
         
   skills:
     - name: "Heavenly Flight"
@@ -622,20 +621,20 @@
           all: true
     - name: "Operation Force Captain"
       effects: 
-        - desc: AP Recovery Speed +100% & Damaged when being targeted from enemies-Damaged over 30% (All)
+        - desc: AP Recovery Speed +100% & Damage -30% when being targeted from enemies (All)
           all: true
     - name: "Understanding of Childhood Friend"
       effects: 
-        - desc: Damage -100% (Overall / 0.5 seconds) % Efforts to be easily targeted by enemies + 2 (self)
+        - desc: Damage -100% (Overall / 0.5 seconds) & Taunt +2 (self)
           all: true
     - name: "Slow Smile"
       effects: 
-        - desc: Avoidance distance and avoidance speed + 100% & Evasive in the air during attack & Possible skill 3 linkage At the time of the above ATK damage +50%
-          all: true
+        - desc: Evasion speed and distance +100%
+        - desc: Evasion possible during air attacks
+        - desc: ATK Damage +50% when skill chain is 3+
     - name: "Blink Intelligence"
       effects: 
         - desc: ATK +30%, HIT +20%, GRD +10%, HP +30%
-          all: true
         
   skills:
     - name: "Aqua Spread"
@@ -669,7 +668,7 @@
     name: "Flying Guillotine Slash"
     picture: Flying_Guillotine_Slash_Clair
     effects: 
-        - desc: Damage Dealt +90%
+        - desc: Damage +90%
           duration: 30
           all: true
           meta:
@@ -720,8 +719,6 @@
       
       *Normal>Aqua>filler>Aqua - vs fat bosses that take 4+ hits*
       
-      
-   
 - name: Verda Kleiman
   cat: jp
   rating: 0
@@ -833,7 +830,7 @@
   talents:
     - name: "Divine Arrow Burst"
       effects: 
-        - desc: Damage dealt +30%
+        - desc: Damage +30%
           all: true
           meta:
             priority: 1
@@ -918,7 +915,7 @@
     name: "Nibelung Valesti"
     picture: Nibelung_Valesti_Silmeria
     effects: 
-      - desc: Critical hit chance +30%
+      - desc: Critical Rate +30%
         all: false
         duration: 60
         meta:
@@ -1005,16 +1002,16 @@
             buff: Enemy Damage Taken
             buffValue: 20
     - name: "Family to Protect"
-      shortEffects: Damage dealt +40% (All) & 80% chance of surviving a lethal attack at 10% HP or more (Close-Range Weapons)
+      shortEffects: Damage +40% (All) & 80% chance of surviving a lethal attack at 10% HP or more (Close Range Weapons)
       effects:
-        - desc: Damage dealt +40%
+        - desc: Damage +40%
           all: true
           meta:
             priority: 1
             buff: Damage
             buffValue: 40
         - desc: 80% chance of surviving a lethal attack at 10% HP or more
-          all: Long Range
+          all: Close Range Weapons
     - name: "Commitment to Grandfather's Wishes"
       effects: 
         - desc: Seal immunity (180 seconds)
@@ -1022,7 +1019,7 @@
         - desc: Nullify rush gauge reduction fields
           all: true
     - name: "Tears of the Tears"
-      shortEffects: Nullifies charge assault critical damage penalty & AP cost -20%
+      shortEffects: Nullifies charge assault critical damage penalty, No flinching when taking damage when using charge assault, & AP cost -20%
       effects: 
         - desc: Nullifies charge assault critical damage penalty
           all: true
@@ -1032,11 +1029,11 @@
             priority: 4
             buff: AP Cost Reduction
             buffValue: 20
-    - name: "Star of Hope"
-      shortEffects: No flinching when taking damage when using charge assault, ATK +15% & HP +15%
-      effects:
         - desc: No flinching when taking damage when using charge assault
           all: false
+    - name: "Star of Hope"
+      shortEffects: ATK +15% & HP +15%
+      effects:
         - desc: ATK +15%
           meta:
             priority: 4
@@ -1074,7 +1071,7 @@
   rush:
     name: "Rocket Slippers"
     picture: Rocket_Slippers_Verda
-    shortEffects: ATK damage +30% and movement speed +30% (All Party, 20 seconds)
+    shortEffects: ATK Damage +30% and movement speed +30% (All Party, 20 seconds)
     effects:
       - desc: ATK damage +30%
         duration: 20
