@@ -76,16 +76,16 @@
   rush:
     name: "YoRHa Arms: Zero"
     picture: YoHRa_Arms_Ø_2B
-    shortEffects: All elemental damage dealt +70% (Self/20s) and +50% (All Party/20s)
+    shortEffects: Elemental damage dealt +70% (Self/20s) and +50% (All Party/20s)
     effects: 
-      - desc: All elemental damage dealt +70%
+      - desc: Elemental damage dealt +70%
         all: false
         duration: 20
         meta:
           priority: 1
           buff: Elemental Damage
           buffValue: 70
-      - desc: All elemental damage dealt +50%
+      - desc: Elemental damage dealt +50%
         all: true
         duration: 20
         meta:
@@ -243,7 +243,7 @@
       *Normal > Double Slash > Air Slash > Double Slash > Spam it till out of AP. (General combo.)*
 
 
-- name: Fidel (Awakened)
+- name: Fidel Camuze (Awakened)
   cat: gl
   rating: 7
   picture: Fidel
@@ -289,6 +289,7 @@
             buffCondition: Skill Chain 3+
             buffValue: 10
     - name: "Defender of the Weak"
+      shortEffects: ATK +25% and DEF +10%
       effects:
         - desc: ATK +25%
           meta:
@@ -315,7 +316,7 @@
       picture: Air_Slash_I
       power: ATK x 220%
       ap: 20
-      maxHits: 2
+      maxHits: 1
       highlight: true
     - name: "Cyclone Blade"
       picture: Cyclone_Blade
@@ -390,7 +391,6 @@
   picture: Cliff
   weapon: knuckle
   ace: true
-  limited: false
   star: 5
     
   stats:
@@ -405,7 +405,6 @@
     - name: "Klausian Champion II"
       effects: 
         - desc: AP cost -40%
-          all: false
           meta:
             priority: 1
             buff: AP Cost Reduction
@@ -413,7 +412,6 @@
     - name: "Greater Master of the Training Hall"
       effects: 
         - desc: ATK +30%
-          all: false
           meta:
             priority: 1
             buff: ATK
@@ -601,7 +599,6 @@
   rating: 5
   picture: Daril
   weapon: ohs
-  limited: false
   star: 5
 
   stats:
@@ -752,7 +749,6 @@
     - name: "Defense Force of Kratus"
       effects: 
         - desc: ATK +30%
-          all: false
           meta:
             priority: 4
             buff: ATK
@@ -985,7 +981,7 @@
       *Normal > Crescent Mirage > Smackdown > Summer Smoothie> Spam it till out of AP. (Damage combo with Smackdown.)*
 
 
-- name: Lenneth
+- name: Lenneth Valkyrie
   cat: gl
   rating: 4
   picture: Lenneth
@@ -1021,7 +1017,7 @@
             buffValue: 20
     - name: "Platina's Heart"
       effects: 
-        - desc: +15% chance of adding silence to all attacks
+        - desc: All attacks have +15% chance of inflicting silence
           meta:
             priority: 4
             buff: Silence Attack Chance
@@ -1189,7 +1185,7 @@
     name: "Mirror Blade Tempest"
     picture: Mirror_Blade_Tempest_Claude
     effects: 
-      - desc: Damage +30%
+      - desc: Damage dealt +30%
         all: true
         duration: 30
         meta:
@@ -1308,7 +1304,7 @@
       element: Ice
       power: ATK x 170%
       ap: 18
-      notes: Occasionally freezes foes.
+      notes: Occasionally freezes foes
       maxHits: 2
       highlight: true
 
@@ -1365,7 +1361,6 @@
   picture: Albel
   weapon: bns
   ace: true
-  limited: false
   star: 5
 
   stats:
@@ -1667,7 +1662,7 @@
             buffValue: 15
     - name: "Mischievous Wings II"
       effects: 
-        - desc: ATK damage +15% when hitcount is 50 or more
+        - desc: ATK damage dealt +15% when hitcount is 50 or more
           all: true
           meta:
             priority: 3
@@ -1695,10 +1690,10 @@
   skills:
     - name: "Enchanting Twin Thrust"
       picture: Talon_Thrust
+      element: Fire
       power: ATK x 370%
       ap: 28
       maxHits: 2
-      element: Fire
       highlight: true
     - name: "Sinistral Edge"
       picture: Sinistral_Edge
@@ -1821,11 +1816,11 @@
             buffValue: 100
     - name: "Animal Instincts"
       effects: 
-        - desc: Nullifies Movement Reduction Fields and Rush Gauge Reduction Fields
+        - desc: Nullifies Movement Rate Reduction Fields and Rush Gauge Reduction Fields
           all: true
     - name: "Full Moon Howl"
       effects: 
-        - desc: Pumpkin Smash deals damage +60% when skill chain is 4 or more
+        - desc: Damage +60% dealt by Pumpkin Smash when skill chain is 4 or more
 
   skills:
     - name: "Lantern Burst"
@@ -1857,7 +1852,7 @@
     name: "Trick or Treat"
     picture: Trick_or_Treat_HW_Millie
     effects: 
-      - desc: All elemental damage dealt +50%
+      - desc: Elemental damage dealt +50%
         duration: 20
         all: true
         meta:
@@ -1914,7 +1909,6 @@
   picture: Fayt
   weapon: ohs
   ace: true
-  limited: false
   star: 5
 
   stats:
@@ -1936,10 +1930,10 @@
             buffValue: 30
     - name: "Speak Softly & Carry A Big Stick"
       effects: 
-        - desc: Imbue attacks with fire and light
+        - desc: Imbues attacks with fire and light
     - name: "Feinting Tactics"
       effects: 
-        - desc: All elemental damage dealt +15%
+        - desc: Elemental damage dealt +15%
           all: true
           meta:
             priority: 1
@@ -1979,8 +1973,9 @@
   rush:
     name: "Colossal Ethereal Blast"
     picture: Colossal_Ethereal_Blast_Fayt
+    element: Light
     effects: 
-      - desc: All elemental damage dealt +50%
+      - desc: Elemental damage dealt +50%
         all: true
         duration: 20
         meta:
@@ -2039,7 +2034,6 @@
   picture: Michael
   weapon: knuckle
   ace: true
-  limited: false
   star: 5
 
   stats:
@@ -2069,7 +2063,7 @@
             buffValue: 15
     - name: "Hellfire II"
       effects: 
-        - desc: Fire damage +10%
+        - desc: Fire damage dealt +10%
           meta:
             priority: 4
             buff: Fire Damage
@@ -2214,7 +2208,7 @@
             buff: AP Recovery
             buffCondition: Hit Count > 100
             buffValue: 100
-        - desc: ATK damage +20% when hitcount is 200 or more
+        - desc: ATK damage dealt +20% when hitcount is 200 or more
           all: true
           meta:
             priority: 3
@@ -2464,7 +2458,6 @@
     - name: "Hunter's Intuition II"
       effects: 
         - desc: Critical hit chance +30%
-          all: false
           meta:
             priority: 4
             buff: Crit Rate
@@ -2493,13 +2486,12 @@
     - name: "Isolation II"
       effects:
         - desc: ATK +20%
-          all: false
           meta:
             priority: 4
             buff: ATK
             buffValue: 20
     - name: "Cat's Interlude"
-      shortEffects: AP cost -20%, and ATK +10%/+20%/+30% when hitcount is 100/150/200 or more
+      shortEffects: AP cost -20%, and ATK +10%/20%/30% when hitcount is 100/150/200 or more
       effects:
         - desc: AP cost -20%
           meta:
@@ -2637,7 +2629,6 @@
     - name: "Heir to the Blade II"
       effects: 
         - desc: AP cost -40% when skill chain is 3 or more
-          all: false
           meta:
             priority: 4
             buff: AP Cost Reduction
@@ -2646,7 +2637,6 @@
     - name: "Undying Effort"
       effects: 
         - desc: Movement rate +20%
-          all: false
 
   skills:
     - name: "Exorcising Storm"
@@ -2733,8 +2723,6 @@
   rating: 0
   picture: Andre
   weapon: ohs
-  ace: false
-  limited: false
   star: 3
 
   stats:
@@ -2757,7 +2745,6 @@
     - name: "Mischievous Brat"
       effects:
         - desc: No flinching when taking damage of 20% HP or less
-          all: false
         
   skills:
     - name: "Double Slash"
@@ -2986,7 +2973,6 @@
             buff: ATK
             buffValue: 60
     - name: "Exposed Ferocity II"
-      shortEffects: Nullifies charge assault critical damage penalty, and no flinching when taking damage of 30% HP or less during charge assault (All Attackers)
       effects: 
         - desc: Nullifies charge assault critical damage penalty
           all: Attackers
@@ -3094,7 +3080,6 @@
   picture: Mirage
   weapon: knuckle
   ace: true
-  limited: false
   star: 5
 
   stats:
@@ -3184,7 +3169,7 @@
             priority: 4
             buff: AP Cost Reduction
             buffValue: 30
-      - desc: Recover 10% HP every 3 seconds
+      - desc: Recovers 10% HP every 3 seconds
         duration: 20
     power: ATK x 4000%
     maxHits: 15
@@ -3266,20 +3251,19 @@
             buffValue: 150
     - name: "Sincere Efforts II"
       effects: 
-        - desc: All elemental damage dealt +30%
+        - desc: Elemental damage dealt +30%
           all: true
           meta:
             priority: 1
             buff: Elemental Damage
             buffValue: 30
         - desc: AP cost -10%
-          all: false
           meta:
             priority: 1
             buff: AP Cost Reduction
             buffValue: 10
     - name: "Heir of Symbological Arts"
-      shortEffects: Rush combo damage +10%/+20% when hitcount is 100/200 or more
+      shortEffects: Rush combo damage +10%/20% when hitcount is 100/200 or more
       effects: 
         - desc: Rush combo damage +10% when hitcount is 100 or more
           all: false
@@ -3393,8 +3377,6 @@
   rating: 0
   picture: Angelica
   weapon: knuckle
-  ace: false
-  limited: false
   star: 3
 
   stats:
@@ -3409,7 +3391,6 @@
     - name: "Battle Prodigy"
       effects: 
         - desc: AP cost -20%
-          all: false
           meta:
             priority: 4
             buff: AP Cost Reduction
@@ -3417,7 +3398,6 @@
     - name: "Unconstrained Ambitions III"
       effects:
         - desc: ATK +30%
-          all: false
           meta:
             priority: 1
             buff: ATK
@@ -3425,11 +3405,11 @@
     - name: "Fighter's Instinct"
       effects:
         - desc: Critical hit chance +20%
-          all: false
           meta:
             priority: 4
             buff: Crit Rate
             buffValue: 20
+            
   skills:
     - name: "Triple Kick"
       picture: Triple_Kick
@@ -3474,7 +3454,7 @@
     grd: 833
 
   talents:
-    - name: "Fresh Madonna Lillies II"
+    - name: "Fresh Madonna Lilies II"
       shortEffects: ATK +30% and normal attack AP recovery +100% (All Party)
       effects: 
         - desc: ATK +30%
@@ -3505,7 +3485,7 @@
             buff: Single Target Damage
             buffValue: 20
             buffCondition: Hit Count > 150
-    - name: "Four-Leafed Clover Blessing II"
+    - name: "Four-Leafed Clover Blessings II"
       effects: 
         - desc: Recovers 5% HP every 3 seconds
           all: true
@@ -3619,8 +3599,8 @@
   talents:
     - name: "Neophilia III"
       effects: 
-        - desc: ATK +30%
-          all: Short Range
+        - desc: ATK +30% at short range
+          all: true
           meta:
             priority: 1
             buff: ATK
@@ -3657,7 +3637,6 @@
     effects:
       - desc: AP cost -50%
         duration: 20
-        all: false
         meta:
           priority: 1
           buff: AP Cost Reduction
@@ -3671,8 +3650,6 @@
   rating: 0
   picture: Anti_Sword_Andre
   weapon: dualswords
-  ace: false
-  limited: false
   star: 3
 
   stats:
@@ -3696,7 +3673,6 @@
     - name: "Crystalized Effort II"
       effects:
         - desc: No flinching when taking damage of 20% HP or less
-          all: false
         
   skills:
     - name: "Dextral Edge"
@@ -3737,8 +3713,6 @@
   rating: 0
   picture: Heinrich
   weapon: ohs
-  ace: false
-  limited: false
   star: 3
 
   stats:
@@ -3800,8 +3774,6 @@
   rating: 0
   picture: Marcelle
   weapon: knuckle
-  ace: false
-  limited: false
   star: 3
 
   stats:
@@ -3824,7 +3796,6 @@
     - name: "Signed, Sealed, and Delivered"
       effects: 
         - desc: AP cost -15%
-          all: false
           meta:
             priority: 1
             buff: AP Cost Reduction
@@ -3853,7 +3824,6 @@
     effects:
       - desc: AP cost -50%
         duration: 20
-        all: false
         meta:
           priority: 1
           buff: AP Cost Reduction
@@ -3868,7 +3838,6 @@
   picture: Farleen
   weapon: ohs
   ace: false
-  limited: false
   star: 4
 
   stats:
@@ -3957,7 +3926,6 @@
     - name: "Unique Battle Arts"
       effects: 
         - desc: AP cost -15%
-          all: false
           meta:
             priority: 1
             buff: AP Cost Reduction
@@ -3988,6 +3956,7 @@
   rush:
     name: "Sharp Talons"
     picture: Sharp_Talons_Tyvane
+    shortEffects: Removes all buffs, and DEF -30% (All Enemies/20s)
     effects:
       - desc: Removes buffs
         duration: 20
@@ -4004,8 +3973,6 @@
   rating: 0
   picture: Gunter
   weapon: knuckle
-  ace: false
-  limited: false
   star: 4
 
   stats:
@@ -4070,8 +4037,6 @@
   rating: 0
   picture: Ted
   weapon: ohs
-  ace: false
-  limited: false
   star: 4
 
   stats:
@@ -4125,7 +4090,7 @@
     name: "The Ultimate Ted"
     picture: The_Ultimate_Ted
     effects:
-      - desc: Nullifies freezing
+      - desc: Nullifies freeze
         duration: 20
         all: true
     power: ATK x 2500%
@@ -4150,12 +4115,11 @@
     grd: 833
 
   talents:
-    - name: "Expel's Invention Maiden"
+    - name: "Expel's Young Inventor II"
       effects: 
         - desc: Hitcount timer +3 seconds
           all: true
-      
-    - name: "Mujin-kun, Charge!"
+    - name: "Robbie Attack! II"
       effects: 
         - desc: ATK +25% when hitcount is 100 or more
           meta:
@@ -4163,7 +4127,7 @@
             buff: ATK
             buffCondition: Hit Count > 100
             buffValue: 25    
-    - name: "Overaction"
+    - name: "Great Action II"
       effects: 
         - desc: Critical hit chance +30% at short range
           all: true
@@ -4172,10 +4136,9 @@
             buff: Crit Rate
             buffCondition: Short Range
             buffValue: 30    
-    - name: "Scholarly Aspirations Inherited from Father"
+    - name: "Creative Spirit"
       effects: 
         - desc: AP cost -40% when skill chain is 3 or more
-          all: false
           meta:
             priority: 1
             buff: AP Cost Reduction
@@ -4208,7 +4171,7 @@
       highlight: true
 
   rush:
-    name: "Bloody Mary"
+    name: "Frankenrobbie"
     picture: Bloody_Mary
     effects: 
       - desc: Recovers 15% HP every 5 seconds 
