@@ -457,7 +457,7 @@
             buff: INT Damage Taken Reduction
             buffValue: 20    
     - name: "Great Charisma"
-      shortEffects: Rush gauge quota -30%, ATK +60% and AP cost -20% when targeted by enemy
+      shortEffects: ATK +60% and AP cost -20% when targeted by enemy, and rush gauge quota -30%
       effects: 
         - desc: Rush gauge quota -30%
           all: false
