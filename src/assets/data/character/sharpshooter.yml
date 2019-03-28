@@ -1799,7 +1799,7 @@
             buff: Damage
             buffValue: 40
     - name: "Bramble Burst Barrage II"
-      shortEffects: Damage dealt +50%/+55%/+60% when hitcount is 100/150/200 or more (All Party)
+      shortEffects: Damage dealt +50%/55%/60% when hitcount is 100/150/200 or more (All Party)
       effects: 
         - desc: Damage dealt +50% when hitcount is 100 or more
           all: true
@@ -1938,7 +1938,7 @@
 
   talents:
      - name: "Crimson Blossom Flurry II"
-       shortEffects: Critical hit chance +10%/+20%/+30% when hitcount is 100/150/200 or more (All Party)
+       shortEffects: Critical hit chance +10%/20%/30% when hitcount is 100/150/200 or more (All Party)
        effects: 
         - desc: Critical hit chance +10% when hitcount is 100 or more
           all: true
@@ -1962,7 +1962,7 @@
             buffCondition: Hit Count > 200
             buffValue: 30
      - name: "Sincere Devotion II"
-       shortEffects: Critical damage +10%/+20%/+30% when hitcount is 100/150/200 or more (All Party)
+       shortEffects: Critical damage +10%/20%/30% when hitcount is 100/150/200 or more (All Party)
        effects: 
         - desc: Critical damage +10% when hitcount is 100 or more
           all: true
