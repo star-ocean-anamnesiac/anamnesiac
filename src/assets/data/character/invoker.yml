@@ -676,14 +676,14 @@
             buffValue: 30
     - name: "Enchanted Symbology"
       effects: 
-        - desc: All attacks have +25% chance of adding silence
+        - desc: All attacks have +25% chance of inflicting silence
           meta:
             priority: 4
             buff: Silence Attack Chance
             buffValue: 25
     - name: "A Lady's Poise II"
       effects:
-        - desc: INT damage dealt +25% when at 100% HP
+        - desc: INT damage dealt +20% when at 100% HP
           meta:
             priority: 4
             buff: INT Damage
@@ -782,7 +782,7 @@
       *Normal > CA Silencing Star Light > Silencing Sunflare > Silencing Star Light (General damage rotation.)*
 
 
-- name: Fiore Brunellie
+- name: Fiore Brunelli
   cat: gl
   rating: 7
   picture: Fiore
@@ -835,7 +835,6 @@
             buffCondition: Skill Chain 3+
             buffValue: 15
     - name: "Symbology of Viewing"
-      shortEffects: AP cost -60% and symbology cast time -30% when skill chain is 3 or more
       effects:
         - desc: AP cost -60% when skill chain is 3 or more
           meta:
@@ -843,11 +842,10 @@
             buff: AP Cost Reduction
             buffCondition: Skill Chain 3+
             buffValue: 60
-        - desc: Symbology cast time -30% when skill chain is 3 or more
+        - desc: Symbology cast time -30%
           meta:
             priority: 4
             buff: Cast Time Reduction
-            buffCondition: Skill Chain 3+
             buffValue: 30
 
   skills:
@@ -1273,12 +1271,12 @@
             buffValue: 80
     - name: "Orange Buttercups"
       effects:
+        - desc: No flinching when casting symbology      
         - desc: Symbology cast time -30%
           meta:
             priority: 1
             buff: Cast Time Reduction
             buffValue: 30
-        - desc: No flinching when casting symbology
 
   skills:
     - name: "Colorful Crush"
@@ -1310,7 +1308,7 @@
     name: "Cutting of the Cake"
     picture: Cutting_Cake_Bridal_Eve
     element: Earth
-    shortEffects: INT damage dealt +40% and AP cost -60% (Self/20s)
+    shortEffects: AP cost -60% and INT damage dealt +40% (Self/20s)
     effects: 
       - desc: INT damage dealt +40%
         duration: 20
@@ -1467,7 +1465,7 @@
             buff: Stun Rate
             buffValue: 15
     - name: "Valiant Soul II"
-      shortEffects: 80% chance of surviving a lethal attack and symbology cast time -80% at 10% HP or more
+      shortEffects: 80% chance of surviving a lethal attack and symbology cast time -80% when at 10% HP or more
       effects:
         - desc: 80% chance of surviving a lethal attack at 10% HP or more
           all: false
