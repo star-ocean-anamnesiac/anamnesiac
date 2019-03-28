@@ -28,7 +28,7 @@
         - desc: No flinching when taking damage of 20% HP or less
           all: true
     - name: "Dark Impulse"
-      shortEffects: On executing a perfect dodge, recovers 100% AP for self and 10 AP for all allies
+      shortEffects: A perfect dodge recovers 100% AP for self and 10 AP for all allies
       effects: 
         - desc: Recovers 100% AP on perfect dodge
           all: false
@@ -49,7 +49,7 @@
             buffCondition: HP is 100%
             buffValue: 40
     - name: "Beautiful World"
-      shortEffects: ATK/DEF +20%
+      shortEffects: ATK +20% and DEF +20%
       effects: 
         - desc: ATK +20%
           all: false
@@ -89,7 +89,7 @@
   rush:
     name: "YoRHa Arms: One Hundred"
     picture: YoHRa_Arms_One_Hundred_A2
-    shortEffects: Single target damage +60%, and recovers 15% HP every 3 seconds (20 seconds)
+    shortEffects: Single target damage +60%, and recovers 15% HP every 3 seconds (Self/20s)
     effects: 
       - desc: Single target damage +60%
         duration: 20
@@ -158,7 +158,7 @@
     grd: 952
 
   talents:
-    - name: "The King's Chosen Glory"
+    - name: "The King's Chosen's Glory"
       effects: 
         - desc: DEF +50%
           all: true
@@ -178,7 +178,7 @@
           all: true
     - name: "Indomitable Spirit"
       effects: 
-        - desc: 80% chance to survive a lethal attack at 10% HP or more
+        - desc: 80% chance of surviving a lethal attack at 10% HP or more
 
   skills:
     - name: "Mirror Blade"
@@ -457,9 +457,9 @@
             buff: INT Damage Taken Reduction
             buffValue: 20    
     - name: "Great Charisma"
-      shortEffects: Rush gauge limit -30%, and ATK +60% and AP cost -20% when targeted by enemy
+      shortEffects: Rush gauge quota -30%, ATK +60% and AP cost -20% when targeted by enemy
       effects: 
-        - desc: Rush gauge limit -30%
+        - desc: Rush gauge quota -30%
           all: false
         - desc: ATK +60% when targeted by enemy
           all: false
@@ -737,12 +737,12 @@
   talents:
     - name: "Holiday Heroine II"
       effects: 
-        - desc: Damage taken -30% while attacking
+        - desc: Damage taken -30% when targeted by enemy
           all: false
           meta:
             priority: 3
             buff: Damage Taken Reduction
-            buffCondition: While Attacking
+            buffCondition: When Holding Aggro
             buffValue: 30
         - desc: ATK damage taken -15% when hitcount is 50 or more
           all: true
@@ -777,7 +777,7 @@
         - desc: No flinching when taking damage of 20% HP or less
           all: true
     - name: "Miracle Symbology"
-      shortEffects: ATK/HP +15%
+      shortEffects: ATK +15% and HP +15%
       effects: 
         - desc: ATK +15%
           meta:
@@ -967,7 +967,7 @@
     name: "Mystic Cross Nova"
     picture: Mystic_Cross_Nova_Edge
     effects: 
-      - desc: All elemental damage dealt +50%
+      - desc: Elemental damage dealt +50%
         duration: 20
         all: true
         meta:
@@ -1016,7 +1016,7 @@
       *Normal > Raging Strike > Aura Spark > Raging Strike (Damage rotation)*
  
  
-- name: Miki (Princess)
+- name: Miki Sauvester (Princess)
   cat: gl
   rating: 3
   picture: Girl's_Day_Miki
@@ -1209,7 +1209,7 @@
     - name: "Undermine"
       picture: Undermine
       power: ATK x 200%
-      ap: 20
+      ap: 18
       maxHits: 2
     - name: "Hellfire Slash"
       picture: Sword_Bomber
@@ -1370,7 +1370,7 @@
         - desc: Taunt +3
     - name: "A Mercenary's Strength"
       effects: 
-        - desc: Recovers 5% HP every 1 second during charge assault
+        - desc: Recovers 5% HP every 1 second during charge assault standby
 
   skills:
     - name: "Annihilating Air Slash"
@@ -1481,7 +1481,7 @@
   talents:
     - name: "Stalwart Defense II"
       effects: 
-        - desc: Absorb 15% of damage dealt by normal attacks as HP
+        - desc: Absorbs 15% of damage dealt by normal attacks as HP
           all: false
     - name: "Reprieve from Death III"
       effects:
@@ -1539,10 +1539,8 @@
 
   talents:
     - name: "Enchanting Scents VI"
-      shortEffects: Status ailment nullification for 90 seconds, and no flinching when taking damage of 15% or less (All Short Range Weapons)
       effects: 
         - desc: Status ailment nullification for 90 seconds
-          all: Short Range Weapons
         - desc: No flinching when taking damage of 15% HP or less
           all: Short Range Weapons
 
