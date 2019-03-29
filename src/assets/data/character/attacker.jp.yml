@@ -3838,7 +3838,8 @@
             buffValue: 40
     - name: "Breath Adventurous"
       effects: 
-        - desc: ATK · INT damage + 100% (all enemies) 
+        - desc: ATK/INT Damage taken +100%
+          all: Enemies
     - name: "Looke Saver"
       effects: 
         - desc: Additional hit that deals 20% of damage during normal attacks
@@ -3846,7 +3847,7 @@
           all: true
     - name: "Talent 6"
       effects: 
-        - desc: CB Over 150 Overtime Idle Charge
+        - desc: Cancel bonus starts at 150% when using Charge Assault
         - desc: ATK Damage +50% when hitcount is 400 or more
 
   skills:
