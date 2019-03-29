@@ -647,137 +647,120 @@
           buffValue: 30
     power: ATK x 4000%
     maxHits: 5
-
-   
-- name: Dias Flac (Cherry Cloud)
+    
+    
+- name: Hrist Valkyrie
   cat: jp
   rating: 0
-  picture: Sakura_Dias
-  weapon: dagger
+  picture: Hrist
+  weapon: bns
   ace: true
   limited: true
   star: 5
 
   stats:
-    hp: 18564
-    atk: 2854
-    int: 1523
-    def: 2099
-    hit: 1239
-    grd: 910
+    hp: 20370
+    atk: 2508
+    int: 1575
+    def: 2508
+    hit: 819
+    grd: 1043
 
   talents:
-    - name: "Armory Contest Winner"
+    - name: "Memories from Previous Life"
       effects: 
-        - desc: No flinching when taking damage of 15% HP or less
+        - desc: Nullifies critical damage penalty during charge assault
           all: true
-        - desc: Taunt +2
-          all: false
-    - name: "Cultivated Victories"
-      shortEffects: Damage +40% and ATK/INT damage taken -20% when targeted by enemy
-      effects: 
-        - desc: Damage +40% when targeted by enemy
-          all: true
-          meta:
-            priority: 1
-            buff: Damage
-            buffCondition: When holding aggro
-            buffValue: 40
-        - desc: ATK damage taken -20% when targeted by enemy
+        - desc: ATK damage +30% during charge assault
           all: true
           meta:
             priority: 3
-            buff: ATK Damage Taken Reduction
-            buffCondition: When holding aggro
-            buffValue: 20
-        - desc: INT damage taken -20% when targeted by enemy
+            buff: ATK Damage
+            buffCondition: When Using Charge Assault
+            buffValue: 30
+    - name: "Steel Will Strong Heart"
+      effects: 
+        - desc: Damage taken -20%
           all: true
           meta:
             priority: 3
-            buff: INT Damage Taken Reduction
-            buffCondition: When holding aggro
+            buff: Damage Taken Reduction
             buffValue: 20
-    - name: "Memento Ring"
-      shortEffects: Damage +50% and Critical Rate +20% when not targeted by enemy
+        - desc: No flinching when taking damage of 25% HP or less
+          all: true
+    - name: "Veil of Dusk"
       effects: 
-        - desc: Damage +50% when not targeted by enemy
+        - desc: Single target damage +20%
           all: true
           meta:
-            priority: 1
-            buff: Damage
-            buffCondition: Not holding aggro
+            priority: 3
+            buff: Single Target Damage
+            buffValue: 20
+        - desc: AP recovery +50%
+          all: true
+          meta:
+            priority: 3
+            buff: AP Recovery
             buffValue: 50
-        - desc: Critical Rate +20% when not targeted by enemy
-          all: true
-          meta:
-            priority: 1
-            buff: Crit Rate
-            buffCondition: Not holding agro
-            buffValue: 20
-    - name: "Changing Heart"
+    - name: "Eldest Sister Dignity"
+      shortEffects: ATK +20% and HP +15%
       effects: 
-        - desc: ATK +15%
-          all: false
+        - desc: ATK +20%
           meta:
             priority: 1
             buff: ATK
-            buffValue: 15
-        - desc: DEF +15%
-          all: false
+            buffValue: 20
+        - desc: HIT +10% when using a long range skill (6s)
           meta:
-            priority: 4
-            buff: DEF
-            buffValue: 15
-        - desc: HP +30%
-          all: false
-          meta:
-            priority: 4
-            buff: HP
-            buffValue: 30
-          
+            priority: 3
+            buff: HIT
+            buffCondition: Long Range Skill
+            buffValue: 10
+  
   skills:
-    - name: "Lightning Chain (Cherry Blossom)"
-      picture: Lightning_Chain
-      element: Lightning
-      power: ATK x 160%
-      ap: 16
-      maxHits: 9
-    - name: "Flying Guillotine (Cherry Blossom)"
-      picture: Guillotine
-      power: ATK x 310%
-      ap: 19
-      maxHits: 4
-    - name: "Dancing Sword (Cherry Blossom)"
-      picture: Dancing_Sword
-      power: ATK x 1300%
-      ap: 40
-      maxHits: 7
-    - name: "Phoenix Drive"
-      picture: Phoenix_Drive
-      element: Fire
-      power: ATK x 490%
-      ap: 20
+    - name: "Trial of Existence"
+      picture: Existence_Trail
+      power: ATK x 250%
+      ap: 18
       maxHits: 2
-
+    - name: "Purgatorial Spear"
+      picture: Nether_Strike
+      element: Fire
+      power: ATK x 160%
+      ap: 15
+      maxHits: 5
+    - name: "Inevitable Climb"
+      picture: Air_Slash_of_Fury
+      power: ATK x 180%
+      ap: 17
+      maxHits: 2
+    - name: "Entrapment"
+      picture: Crime_Attractor
+      power: ATK x 600%
+      ap: 32
+      maxHits: 2
+      
   rush:
-    name: "Phoenix Blast"
-    picture: Phoenix_Blast_Sakura_Dias
-    element: Fire
-    effects:
-      - desc: Single target damage +30%
-        duration: 20
+    name: "Dark Sky Nibelung Valesti"
+    picture: Nibelung_Valesti_Hrist
+    shortEffects: Critical hit chance +30% and critical damage +30% (All Party/20s)
+    effects: 
+      - desc: Critical hit chance +30%
         all: true
+        duration: 20
         meta:
           priority: 1
-          buff: Single Target Damage
+          buff: Crit Rate
           buffValue: 30
-      - desc: AP recovery +50%
-        duration: 20
+      - desc: Critical damage +30%
         all: true
+        duration: 20
         meta:
           priority: 1
-          buff: AP Recovery
-          buffValue: 50
+          buff: Crit Damage
+          buffValue: 30
     power: ATK x 4000%
-    maxHits: 10
+    maxHits: 7
+
     
+
