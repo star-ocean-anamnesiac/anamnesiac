@@ -1614,7 +1614,7 @@
     - name: "Affection for Goddess"
       effects: 
         - desc: Convert 50% of INT to ATK
-          all: Attackers, Sharpshooters, Defenders
+          all: Attackers/All Sharpshooters/All Defenders
     - name: "Necromancy"
       effects: 
         - desc: INT +30% after using Dark Savior (10 seconds)
@@ -1630,15 +1630,16 @@
             buff: Crit Rate
             buffValue: 30
     - name: "Cruel Egoist"
+      shortEffects: AP cost -40% and symbology cast time -40% when skill chain is 3 or more
       effects: 
-        - desc: AP cost -40% when skill chain is 3+
+        - desc: AP cost -40% when skill chain is 3 or more
           all: false
           meta:
             priority: 1
             buff: AP Cost Reduction
             buffCondition: Skill Chain 3+
             buffValue: 40
-        - desc: Symbology cast time -40% when skill chain is 3+
+        - desc: Symbology cast time -40% when skill chain is 3 or more
           all: false
           meta:
             priority: 1
@@ -1675,6 +1676,7 @@
     name: "Meteor Swarm"
     picture: Meteor_Swarm_Lezard
     element: Dark
+    shortEffects: AP cost -80% and symbology cast time -80% (Self/10s)
     effects: 
       - desc: AP cost -80%
         duration: 10
@@ -1692,6 +1694,7 @@
           buffValue: 80
     power: INT x 4000%
     maxHits: 9
+
 
 - name: Myuria Tionysus (Awakened)
   cat: jp
@@ -2466,7 +2469,6 @@
       *Fillers: Growth for buffing; Sunshine for damage; Plasma Cyclone for crowd control, rush gain, and reliability*
 
 
-
 - name: Freya
   cat: jp
   rating: 0
@@ -2573,7 +2575,6 @@
           priority: 1
           buff: AP Cost Reduction
           buffValue: 40
-    effects: 
       - desc: Critical hit chance +30%
         duration: 20
         meta:
