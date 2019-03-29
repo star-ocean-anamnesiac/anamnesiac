@@ -1615,6 +1615,10 @@
       effects: 
         - desc: Convert 50% of INT to ATK
           all: Attackers/All Sharpshooters/All Defenders
+          meta:
+            priority: 1
+            buff: INT -> ATK
+            buffValue: 50
     - name: "Necromancy"
       effects: 
         - desc: INT +30% after using Dark Savior (10 seconds)
@@ -2568,7 +2572,7 @@
     name: "Ether Strike"
     picture: Ether_Strike_Freya
     shortEffects: AP cost -40% and critical hit chance +30% (Self/20s)
-    effects: 
+    effects:
       - desc: AP cost -40%
         duration: 20
         meta:
