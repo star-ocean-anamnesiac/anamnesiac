@@ -2468,10 +2468,9 @@
       *Normal > CA Silencing Star Light > Filler > Silencing Star Light^n*
       
       *Fillers: Growth for buffing; Sunshine for damage; Plasma Cyclone for crowd control, rush gain, and reliability*
-
-
-
-- name: Freya
+      
+      
+ - name: Freya
   cat: jp
   rating: 0
   picture: Freya
@@ -2497,47 +2496,47 @@
         - desc: ATK +20%
           all: true
           meta:
-            priority: 1
+            priority: 4
             buff: ATK
             buffValue: 20
         - desc: ATK +35% at short range
           all: true
           meta:
-            priority: 1
+            priority: 4
             buff: ATK
             buffCondition: Short Range
-            buffValue: 35
+            buffValue: 35    
         - desc: INT +20%
           all: true
           meta:
-            priority: 1
-            buff: INT
+            priority: 4
+            buff: ATK
             buffValue: 20
         - desc: INT +40% at long range
           all: true
           meta:
-            priority: 1
-            buff: INT
+            priority: 4
+            buff: ATK
             buffCondition: Long Range
-            buffValue: 40
+            buffValue: 40 
     - name: "Cool-headed Glance"
-      effects: 
+      effects:
         - desc: AP cost -25% at long range
           meta:
             priority: 1
             buff: AP Cost Reduction
             buffCondition: Long Range
             buffValue: 25
-        - desc: Rush combo damage +30% when hitcount is 150 or more
+        - desc: Rush combo damage +30% when hitcount is 150 or more            
     - name: "Goddess of Fertility"
       shortEffects: ATK +10% and INT +10%
-      effects: 
+      effects:
         - desc: ATK +10%
           meta:
             priority: 1
             buff: ATK
             buffValue: 10
-       - desc: INT +10%
+        - desc: INT +10%
           meta:
             priority: 1
             buff: INT
@@ -2565,7 +2564,7 @@
       power: ATK x 910%
       ap: 32
       maxHits: 10
-
+      
   rush:
     name: "Ether Strike"
     picture: Ether_Strike_Freya
@@ -2577,11 +2576,12 @@
           priority: 1
           buff: AP Cost Reduction
           buffValue: 40
-      - desc: Critical hit chance +30%
+      - desc: critical hit chance +30%
         duration: 20
         meta:
           priority: 1
           buff: Crit Rate
           buffValue: 30
     power: INT x 4000%
-    maxHits: 6
+    maxHits: 6     
+    
