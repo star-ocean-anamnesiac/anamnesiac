@@ -2773,7 +2773,6 @@
   picture: Verda
   weapon: gun
   ace: true
-  limited: false
   star: 5
 
   stats:
@@ -2785,7 +2784,7 @@
     grd: 931
 
   talents:
-    - name: "Child of Science"
+    - name: "A Child of Science"
       shortEffects: ATK -5% inflicted by Magnetic Field (All Enemies/10s)
       effects: 
         - desc: ATK -5% inflicted by Magnetic Field
@@ -2795,7 +2794,7 @@
             priority: 4
             buff: Enemy ATK Reduction
             buffValue: 5
-    - name: "Modified Gun"
+    - name: "Upgraded Gun"
       shortEffects: Damage taken +15% inflicted by Splitshot and Gravity Slug (All Enemies/8s)
       effects: 
         - desc: Damage taken +15% inflicted by Splitshot and Gravity Slug
@@ -2805,7 +2804,7 @@
             priority: 4
             buff: Enemy Damage Taken
             buffValue: 15
-    - name: "Family to Protect"
+    - name: "Cherished Family II"
       effects:
         - desc: Damage dealt +30%
           all: true
@@ -2813,7 +2812,7 @@
             priority: 1
             buff: Damage
             buffValue: 30
-    - name: "Commitment to Grandfather's Wishes"
+    - name: "Grandfather's Will"
       effects: 
         - desc: Nullifies silence for 180 seconds
           all: true
@@ -2826,7 +2825,7 @@
       power: ATK x 260%
       ap: 22
       maxHits: 10
-    - name: "Split Shot"
+    - name: "Splitshot"
       picture: Break_Horn
       power: ATK x 190%
       ap: 19
