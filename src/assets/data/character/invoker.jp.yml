@@ -2468,3 +2468,120 @@
       *Normal > CA Silencing Star Light > Filler > Silencing Star Light^n*
       
       *Fillers: Growth for buffing; Sunshine for damage; Plasma Cyclone for crowd control, rush gain, and reliability*
+      
+      
+- name: Freya
+  cat: jp
+  rating: 0
+  picture: Freya
+  weapon: orb
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15540
+    atk: 2961
+    int: 2990
+    def: 1916
+    hit: 1141
+    grd: 833
+
+  talents:
+    - name: "Light of Purification"
+      effects: 
+        - desc: Imbues attacks with light
+    - name: "Frei's Prediction"
+      effects: 
+        - desc: ATK +20%
+          all: true
+          meta:
+            priority: 4
+            buff: ATK
+            buffValue: 20
+        - desc: ATK +35% at short range
+          all: true
+          meta:
+            priority: 4
+            buff: ATK
+            buffCondition: Short Range
+            buffValue: 35    
+        - desc: INT +20%
+          all: true
+          meta:
+            priority: 4
+            buff: ATK
+            buffValue: 20
+        - desc: INT +40% at long range
+          all: true
+          meta:
+            priority: 4
+            buff: ATK
+            buffCondition: Long Range
+            buffValue: 40 
+    - name: "Cool-headed Glance"
+      effects:
+        - desc: AP cost -25% at long range
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Long Range
+            buffValue: 25
+        - desc: Rush combo damage +30% when hitcount is 150 or more            
+    - name: "Goddess of Fertility"
+      shortEffects: ATK +10% and INT +10%
+      effects:
+        - desc: ATK +10%
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 10
+        - desc: INT +10%
+          meta:
+            priority: 1
+            buff: INT
+            buffValue: 10
+
+  skills:
+    - name: "Victory Sword"
+      picture: Victory_Sword
+      power: INT x 180%
+      ap: 19
+      maxHits: 10
+    - name: "Crimson Strike"
+      picture: Crimson_Strike
+      element: Fire
+      power: INT x 280%
+      ap: 21
+      maxHits: 5
+    - name: "Smackdown"
+      picture: Smackdown
+      power: ATK x 250%
+      ap: 17
+      maxHits: 5
+    - name: "Heavenly Punishment"
+      picture: Heavenly_Punishment
+      power: ATK x 910%
+      ap: 32
+      maxHits: 10
+      
+  rush:
+    name: "Ether Strike"
+    picture: Ether_Strike_Freya
+    shortEffects: AP cost -40% and critical hit chance +30% (Self/20s)
+    effects: 
+      - desc: AP cost -40%
+        duration: 20
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 40
+      - desc: critical hit chance +30%
+        duration: 20
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 30
+    power: INT x 4000%
+    maxHits: 6     
+    
