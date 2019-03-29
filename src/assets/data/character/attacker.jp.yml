@@ -3842,7 +3842,8 @@
     - name: "Looke Saver"
       effects: 
         - desc: Additional hit that deals 20% of damage during normal attacks
-        - desc: Battle Skills Additional 5% Damage to the Battle Skill (Overall)
+        - desc: Additional hit that deals 5% damage when using skills
+          all: true
     - name: "Talent 6"
       effects: 
         - desc: CB Over 150 Overtime Idle Charge
@@ -4170,7 +4171,7 @@
             buffValue: 50
     - name: "Talent 6"
       effects: 
-        - desc: Damage to the Ice Flame Swordsman battle skill 5% additional hits occur
+        - desc: Additional hit that deals 5% damage when using skills
 
   skills:
     - name: "Piercing Blades"
