@@ -40,6 +40,10 @@ Some skills, talents, and rushes have a `meta` block associated with them. This 
 
 If you need to know what a particular `meta` `buff` or `buffs` should be, you can see the list [here](https://github.com/seiyria/anamnesiac/blob/master/src/test/validate-meta.ts). Notice that there are no negative percents, nor are there anything that isn't expressed as a percent. 
 
+### Style Guide
+
+When editing data for Anamnesiac, please keep in mind the general style that we prefer to follow for descriptions. You can find the Style Guide [here on our wiki](https://github.com/seiyria/anamnesiac/wiki/Style-Guide).
+
 ### Reviews
 
 Your submissions will be reviewed both automatically and manually. Primarily, manual review is just making sure data is in the right place and that there aren't any spelling errors. The automatic review will make sure you've put in all the data _correctly_. This means that you don't have any weird weapon types, you have the correct data types set for all of the fields you edit, and that, most importantly, it doesn't break the app for other users.
