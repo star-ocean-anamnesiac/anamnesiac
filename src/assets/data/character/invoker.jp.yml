@@ -1614,7 +1614,11 @@
     - name: "Affection for Goddess"
       effects: 
         - desc: Convert 50% of INT to ATK
-          all: Attackers, Sharpshooters, Defenders
+          all: Attackers/All Sharpshooters/All Defenders
+          meta:
+            priority: 1
+            buff: INT -> ATK
+            buffValue: 50
     - name: "Necromancy"
       effects: 
         - desc: INT +30% after using Dark Savior (10 seconds)
@@ -1630,16 +1634,15 @@
             buff: Crit Rate
             buffValue: 30
     - name: "Cruel Egoist"
+      shortEffects: AP cost -40% and symbology cast time -40% when skill chain is 3 or more
       effects: 
-        - desc: AP cost -40% when skill chain is 3+
-          all: false
+        - desc: AP cost -40% when skill chain is 3 or more
           meta:
             priority: 1
             buff: AP Cost Reduction
             buffCondition: Skill Chain 3+
             buffValue: 40
-        - desc: Symbology cast time -40% when skill chain is 3+
-          all: false
+        - desc: Symbology cast time -40% when skill chain is 3 or more
           meta:
             priority: 1
             buff: Cast Time Reduction
@@ -1675,6 +1678,7 @@
     name: "Meteor Swarm"
     picture: Meteor_Swarm_Lezard
     element: Dark
+    shortEffects: AP cost -80% and symbology cast time -80% (Self/10s)
     effects: 
       - desc: AP cost -80%
         duration: 10
