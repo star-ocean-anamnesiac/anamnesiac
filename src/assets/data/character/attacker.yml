@@ -740,7 +740,7 @@
             buffValue: 20
     - name: "Astounding Edarl Blade Arts"
       effects: 
-        - desc: Stun chance +40%
+        - desc: Stun rate +40%
           all: true
           meta:
             priority: 1
@@ -2800,14 +2800,14 @@
     - name: "First Valentine"
       shortEffects: ATK/INT damage taken +15% when hit by a short range skill (All Enemies/10s)
       effects: 
-        - desc: ATK damage taken +15% when hit by a short range skill (10s)
+        - desc: ATK damage taken +15% inflicted by short range skills (10s)
           all: Enemies
           meta:
             priority: 3
             buffCondition: Short Ranged Skill
             buff: Enemy ATK Damage Taken
             buffValue: 15
-        - desc: INT damage taken +15% when hit by a short range skill (10s)
+        - desc: INT damage taken +15% inflicted by short range skills (10s)
           all: Enemies
           meta:
             priority: 3
@@ -2974,7 +2974,7 @@
             buffValue: 60
     - name: "Exposed Ferocity II"
       effects: 
-        - desc: Nullifies charge assault critical damage penalty
+        - desc: Nullifies critical damage penalty during charge assault
           all: Attackers
         - desc: No flinching when taking damage of 30% HP or less during charge assault
           all: Attackers
