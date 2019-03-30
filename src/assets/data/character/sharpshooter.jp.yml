@@ -1296,7 +1296,12 @@
       effects: 
         - desc: Damage taken +30% inflicted by Killing Thorn (8s)
           all: Enemies 
-          
+          meta:
+            priority: 1
+            buff: Enemy Damage Taken
+            buffCondition: With Use of Skill
+            buffValue: 30      
+            
   skills:
     - name: "Volcano Shoot"
       picture: Heavenly_Flight
@@ -1328,7 +1333,7 @@
         all: true
         meta:
           priority: 1
-          buff: ATK damage
+          buff: Elemental Damage
           buffValue: 30
     power: ATK x 3500%
     maxHits: 7
