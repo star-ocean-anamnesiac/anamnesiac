@@ -3713,8 +3713,8 @@
             buffValue: 150
     - name: "Talent 5"
       effects: 
-        - desc: Avoid being in the air during the nesting from Asylum
-        - desc: Do not get rid of when in the air Damaged -30% 
+        - desc: Evasion possible during air attacks
+        - desc: No flinching when taking damage of 30% HP or less during air attacks
     - name: "At the Galactic Federation Heroes"
       effects: 
         - desc: ATK Damage +100% when skill chain is 3 or more
