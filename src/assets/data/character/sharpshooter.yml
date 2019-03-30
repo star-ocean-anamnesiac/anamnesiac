@@ -35,9 +35,7 @@
     - name: "Scanner Type"
       effects: 
         - desc: Evasion AP cost -50%
-          all: false
         - desc: Movement rate +30%
-          all: false
     - name: "Treacherous Blade"
       effects: 
         - desc: Evasion possible during air attacks
@@ -139,7 +137,6 @@
   picture: Maria
   weapon: gun
   ace: true
-  limited: false
   star: 5
 
   stats:
@@ -254,7 +251,6 @@
   picture: Nel
   weapon: dagger
   ace: true
-  limited: false
   star: 5
 
   stats:
@@ -269,7 +265,6 @@
     - name: "Crimson Blade"
       effects: 
         - desc: Normal attacks have +15% chance to inflict poison
-          all: false
           meta:
             priority: 4
             buff: Poison Attack Chance
@@ -291,7 +286,6 @@
             buff: AP Cost Reduction
             buffValue: 15
     - name: "Covert Operation"
-      all: false
       effects: 
         - desc: Repel +1
 
@@ -322,9 +316,8 @@
     picture: Divine_Wrath_Nel
     shortEffects: Attacks have +15% chance to inflict poison, and an additional hit that deals 20% more damage (Self/20s)
     effects: 
-      - desc: Attacks have +15% chance to poison
+      - desc: Attacks have +15% chance to inflict poison
         duration: 20
-        all: false
         meta:
           priority: 4
           buff: Poison Attack Chance
@@ -392,7 +385,6 @@
   rating: 3
   picture: Emmerson
   weapon: gun
-  limited: false
   star: 5
 
   stats:
@@ -440,7 +432,6 @@
     picture: Energy_Burst_Glaive_Emmerson
     effects: 
         - desc: ATK +80% 
-          all: false
           duration: 20
           meta:
             priority: 1
@@ -494,7 +485,6 @@
   rating: 6
   picture: Clair
   weapon: dagger
-  limited: false
   star: 5
 
   stats:
@@ -613,7 +603,6 @@
   picture: Reimi
   weapon: bow
   ace: true
-  limited: false
   star: 5
 
   stats:
@@ -644,7 +633,6 @@
     - name: "Star Seed of Hope"
       effects: 
         - desc: Nullifies status ailments for 180 seconds
-          all: false
     - name: "Descendant of Muah"
       effects: 
         - desc: 80% chance of surviving a lethal attack at 10% HP or more
@@ -785,7 +773,6 @@
             buff: AP Recovery From Normal Attacks
             buffValue: 100
         - desc: Evasion possible during air attacks
-          all: false
 
   skills:
     - name: "Heavenly Flight"
@@ -940,7 +927,6 @@
     picture: Nibelung_Valesti_Silmeria
     effects: 
       - desc: Critical hit chance +30%
-        all: false
         duration: 60
         meta:
           priority: 4
@@ -1037,7 +1023,6 @@
     - name: "Demon Blade"
       effects: 
         - desc: Absorbs 3% of damage dealt by skills as HP
-          all: false
     - name: "Deep Mourning"
       effects: 
         - desc: AP cost -40% when skill chain is 3 or more
@@ -1150,7 +1135,6 @@
       shortEffects: Damage dealt +35% (All Healers/All Invokers/Self)
       effects: 
         - desc: Damage dealt +35%
-          all: false
           meta:
             priority: 4
             buff: Damage
@@ -1180,7 +1164,6 @@
     - name: "Obscure Breath"
       effects: 
         - desc: Symbology cast time -100%
-          all: false
           meta:
             priority: 4
             buff: Cast Time Reduction
@@ -1286,8 +1269,6 @@
   rating: 0
   picture: Bernard
   weapon: gun
-  ace: false
-  limited: false
   star: 3
 
   stats:
@@ -1306,7 +1287,6 @@
     - name: "Hidden Talent III"
       effects:
         - desc: Critical hit chance +30%
-          all: false
           meta:
             priority: 4
             buff: Crit Rate
@@ -1364,7 +1344,6 @@
     - name: "Demon Girl II"
       effects: 
         - desc: Damage dealt to humanoids +40%
-          all: false
           meta:
             priority: 4
             buff: Damage To Humans
@@ -1524,7 +1503,6 @@
     - name: "Cat Shangri-La"
       effects: 
         - desc: AP cost -30% when skill chain is 3 or more
-          all: false
           meta:
             priority: 3
             buff: AP Cost Reduction
@@ -1614,7 +1592,6 @@
   picture: Maria
   weapon: gun
   ace: true
-  limited: false
   awakened: true
   star: 5
 
@@ -2097,8 +2074,6 @@
   rating: 0
   picture: Hal
   weapon: gun
-  ace: false
-  limited: false
   star: 3
 
   stats:
@@ -2162,8 +2137,6 @@
   rating: 0
   picture: Eleanor
   weapon: dagger
-  ace: false
-  limited: false
   star: 3
 
   stats:
@@ -2186,7 +2159,6 @@
     - name: "Greater Arena Expert"
       effects:
         - desc: Damage taken -20%
-          all: false
           meta:
             priority: 4
             buff: Damage Taken Reduction
@@ -2225,8 +2197,6 @@
   rating: 0
   picture: Boris
   weapon: dagger
-  ace: false
-  limited: false
   star: 3
 
   stats:
@@ -2241,7 +2211,6 @@
     - name: "Professional Assassin"
       effects: 
         - desc: Normal attacks have +10% chance to inflict poison
-          all: false
           meta:
             priority: 4
             buff: Poison Attack Chance
@@ -2265,7 +2234,6 @@
     - name: "Insight"
       effects: 
         - desc: Repel +1
-          all: false
 
   skills:
     - name: "Focused Shockwave"
@@ -2304,8 +2272,6 @@
   rating: 0
   picture: Katarina
   weapon: bow
-  ace: false
-  limited: false
   star: 3
 
   stats:
@@ -2327,8 +2293,7 @@
             buffValue: 15
     - name: "Impeccable Skill"
       effects:
-        - desc: Stun chance +15%
-          all: false
+        - desc: Stun rate +15%
           meta:
             priority: 1
             buff: Stun Rate
@@ -2371,8 +2336,6 @@
   rating: 0
   picture: Dominic
   weapon: dagger
-  ace: false
-  limited: false
   star: 3
 
   stats:
@@ -2434,8 +2397,6 @@
   rating: 0
   picture: Pamela
   weapon: bow
-  ace: false
-  limited: false
   star: 3
 
   stats:
@@ -2454,7 +2415,6 @@
     - name: "Even Greater Resolve"
       effects: 
         - desc: Additional hit that deals 20% of damage during normal attacks
-          all: false
  
   skills:
     - name: "Chaotic Blossoms"
@@ -2479,7 +2439,6 @@
     effects:
       - desc: ATK +80%
         duration: 20
-        all: false
         meta:
           priority: 1
           buff: ATK
@@ -2493,8 +2452,6 @@
   rating: 0
   picture: Amina
   weapon: bow
-  ace: false
-  limited: false
   star: 4
 
   stats:
@@ -2561,8 +2518,6 @@
   rating: 0
   picture: Pavine
   weapon: gun
-  ace: false
-  limited: false
   star: 4
 
   stats:
@@ -2581,7 +2536,6 @@
     - name: "Kronos's Ultimate Weapon"
       effects: 
         - desc: Critical hit chance +30%
-          all: false
           meta:
             priority: 1
             buff: Crit Rate
@@ -2589,7 +2543,6 @@
     - name: "Tough like Weeds"
       effects: 
         - desc: Additional hit that deals 20% of damage during normal attacks
-          all: false
 
   skills:
     - name: "Scatter Beam"
@@ -2619,7 +2572,6 @@
     effects:
       - desc: Critical hit chance +50%
         duration: 20
-        all: false
         meta:
           priority: 1
           buff: Crit Rate
@@ -2633,8 +2585,6 @@
   rating: 0
   picture: Milla
   weapon: dagger
-  ace: false
-  limited: false
   star: 4
 
   stats:
@@ -2657,7 +2607,6 @@
     - name: "A Beautiful Future"
       effects: 
         - desc: Normal attacks have +10% chance of inflicting paralysis
-          all: false
           meta:
             priority: 4
             buff: Paralysis Attack Chance
@@ -2706,8 +2655,6 @@
   rating: 0
   picture: Delacroix
   weapon: dagger
-  ace: false
-  limited: false
   star: 4
 
   stats:
