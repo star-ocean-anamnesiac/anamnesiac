@@ -2585,3 +2585,124 @@
     power: INT x 4000%
     maxHits: 6     
     
+
+
+- name: Mystina
+  cat: jp
+  rating: 0
+  picture: Mystina
+  weapon: staff
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15246
+    atk: 1537
+    int: 3583
+    def: 1143
+    hit: 1064
+    grd: 826
+
+  talents:
+    - name: "Wicked Tongue"
+      effects: 
+        - desc: ATK damage dealt +40%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK Damage
+            buffValue: 40
+        - desc: INT damage dealt +40%
+          all: true
+          meta:
+            priority: 1
+            buff: INT Damage
+            buffValue: 40
+        - desc: Critical hit chance +20% when at 100% HP
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: HP is 100%
+            buffValue: 20
+        - desc: Critical damage +20% when at 100% HP
+          all: true
+          meta:
+            priority: 3
+            buff: Crit Damage
+            buffCondition: HP is 100%
+            buffValue: 20
+    - name: "Magic Academy's Top Student"
+      effects: 
+        - desc: Symbology cast time -80%
+          meta:
+            priority: 1
+            buff: Cast Time Reduction
+            buffValue: 80
+        - desc: Recovers 50% HP every 20 seconds
+    - name: "Voluptuous Magician"
+      effects: 
+        - desc: AP cost -40% when skill chain is 3 or more
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain 3+
+            buffValue: 40
+    - name: "Envy towards God Realm"
+      shortEffects: INT +30% and HP +10%
+      effects: 
+        - desc: INT +30%
+          meta:
+            priority: 1
+            buff: INT
+            buffValue: 30
+        - desc: HP +10%
+          meta:
+            priority: 1
+            buff: INT
+            buffValue: 10
+
+  skills:
+    - name: "Mystic Cross"
+      picture: Mystic_Cross
+      element: Light
+      power: INT x 360%
+      ap: 18
+      maxHits: 4
+    - name: "Fire Lance"
+      picture: Fire_Lance
+      element: Fire
+      power: INT x 380%
+      ap: 19
+      maxHits: 2
+    - name: "Fire Storm"
+      picture: Volcanic_Burst
+      element: Fire
+      power: INT x 1080%
+      ap: 52
+      maxHits: 13
+    - name: "Sacred Javelin"
+      picture: Sacred_Javelin
+      element: Light
+      power: INT x 1080%
+      ap: 52
+      maxHits: 14
+
+  rush:
+    name: "Celestial Star"
+    picture: Celestial_Star_Mystina
+    element: Light
+    effects: 
+      - desc: No flinching when casting symbology
+        duration: 40
+      - desc: AP recovery +50%
+        duration: 30
+        all: true
+        meta:
+          priority: 1
+          buff: AP Recovery
+          buffValue: 50
+    power: INT x 3500%
+    maxHits: 6
+    
