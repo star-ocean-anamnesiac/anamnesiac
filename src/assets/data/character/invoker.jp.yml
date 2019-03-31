@@ -17,34 +17,34 @@
     grd: 833
 
   talents:
-    - name: "Active Female High School Student"
+    - name: "Schoolgirl Drama"
       effects: 
         - desc: INT +50%
           meta:
             priority: 4
             buff: INT
             buffValue: 50
-    - name: "Jealous Person"
+    - name: "Green-Eyed Monster"
       effects: 
-        - desc: Critical chance +30%
-          all: Invoker
+        - desc: Critical hit chance +30%
+          all: Invokers
           meta:
             priority: 1
             buff: Crit Rate
             buffRole: invoker
-            buffValue: 30
-    - name: "Skillful at Getting By"
+            buffValue: 30        
+    - name: "Good Planner"
       effects: 
         - desc: AP cost -20%
-          all: Invoker
+          all: Invokers
           meta:
             priority: 1
             buff: AP Cost Reduction
             buffRole: invoker
-            buffValue: 20
-    - name: "Connection"
+            buffValue: 20    
+    - name: "Self-Mastery"
       effects: 
-        - desc: Cast Time -30%
+        - desc: Symbology cast time -30%
           meta:
             priority: 4
             buff: Cast Time Reduction
@@ -66,8 +66,10 @@
       maxHits: 5
     - name: "Enhance"
       picture: Enhance_Growth
+      power: 0%
       ap: 60
-      notes: ATK +25% to party (20 seconds). A good buff skill!
+      maxHits: 1
+      notes: ATK +25% (All Party/20s)
       meta:
         priority: 2
         buff: ATK
@@ -84,17 +86,17 @@
   rush:
     name: "Meteor Swarm"
     picture: Meteor_Swarm_Sophia
+    element: Fire
+    shortEffects: INT +70% and AP cost -60% (Self/20s)
     effects: 
       - desc: INT +70%
         duration: 20
-        all: false
         meta:
           priority: 4
           buff: INT
           buffValue: 70
       - desc: AP cost -60%
         duration: 20
-        all: false
         meta:
           priority: 4
           buff: AP Cost Reduction
@@ -153,11 +155,11 @@
     grd: 833
 
   talents:
-    - name: "Enchanted Perfume II"
+    - name: "Enchanted Perfume"
       effects: 
-        - desc: Stun Rate +30%
+        - desc: Stun rate +30%
           meta:
-            priority: 1
+            priority: 4
             buff: Stun Rate
             buffValue: 30
     - name: "Hardier Warrior of Morphus"
@@ -167,7 +169,7 @@
             priority: 4
             buff: INT
             buffValue: 30
-    - name: "In Loving Memory of Lucien II"
+    - name: "In Loving Memory of Lucien"
       effects: 
         - desc: Symbology cast time -30%
           meta:
@@ -206,7 +208,7 @@
     - name: "Plasma Cyclone"
       picture: Cyclone
       element: Lightning
-      power: INT x 670%
+      power: INT x 700%
       ap: 50
       maxHits: 6
       
@@ -217,7 +219,6 @@
     effects: 
       - desc: INT +80%
         duration: 20
-        all: false
         meta:
           priority: 4
           buff: INT
@@ -268,14 +269,14 @@
 
   stats:
     hp: 12810
-    atk: 1723
-    int: 2100
+    atk: 1444
+    int: 2482
     def: 1076
     hit: 938
     grd: 756
 
   talents:
-    - name: "Symbologist's Awakening II"
+    - name: "Symbologist's Awakening"
       effects: 
         - desc: INT +40%
           all: true
@@ -283,9 +284,9 @@
             priority: 4
             buff: INT
             buffValue: 40
-    - name: "Military Might II"
+    - name: "Military Might"
       effects: 
-        - desc: Damage +20%
+        - desc: Damage dealt +20%
           meta:
             priority: 4
             buff: Damage
@@ -329,7 +330,7 @@
     picture: Explode_Ronyx
     element: Fire
     effects: 
-      - desc: Reduce casting time by 50%
+      - desc: Symbology cast time -50%
         duration: 20
         all: true
         meta:
@@ -367,6 +368,7 @@
       **Rotation**
 
       *Normal > Normal > Normal > CA Explosion > Dash Cancel > CA Explosion > Spam till out of AP (Rush / Support rotation)*
+
 
 - name: Lymle Lemuri Phi
   cat: jp
@@ -1846,6 +1848,7 @@
       
       *Normal > Thunder Flare > Lightning Blast > Thunder Flare ^n - If casting from outside Plast Cyclone's Range*
 
+
 - name: Ronyx J. Kenny (Awakened)
   cat: jp
   rating: 4
@@ -1863,7 +1866,7 @@
     grd: 756
 
   talents:
-    - name: "Symbologist's Awakening III"
+    - name: "Symbologist's Awakening"
       effects: 
         - desc: INT +60%
           all: true
@@ -1871,45 +1874,48 @@
             priority: 4
             buff: INT
             buffValue: 60
-        - desc: Cast Time -70%
-          meta:
-            priority: 1
-            buff: Cast Time Reduction
-            buffValue: 70
-    - name: "Military Might II"
+    - name: "Military Might"
       effects: 
-        - desc: Damage +20%
+        - desc: Damage dealt +20%
+          all: true
           meta:
-            priority: 1
+            priority: 4
             buff: Damage
             buffValue: 20
         - desc: AP cost -20%
+          all: true
           meta:
-            priority: 1
+            priority: 4
             buff: AP Cost Reduction
             buffValue: 20
     - name: "Tail Lovers"
       effects:
         - desc: Convert 35% of INT to ATK
-          all: Attackers, Sharpshooters, Defenders
+          all: Attackers/All Sharpshooters/All Defenders
+          meta:
+            priority: 1
+            buff: INT -> ATK
+            buffValue: 35         
     - name: "Earth Federation of Hero"
       effects: 
-        - desc: Super Armor while casting heraldry < 30% HP
+        - desc: No flinching when taking damage of 30% or less while casting symbology
     - name: "Thought Accepted"
+      shortEffects: INT damage +30% when skill chain is 2 or more, and +50% when 3 or more
       effects: 
-        - desc: INT Damage +30% when skill chain is 2
+        - desc: INT damage +30% when skill chain is 2 or more
           meta:
             priority: 3
             buff: INT Damage
-            buffCondition: Skill Chain 2
+            buffCondition: Skill Chain 2+
             buffValue: 30
-        - desc: INT Damage +50% when skill chain is 3+
+        - desc: INT damage +50% when skill chain is 3 or more
           meta:
             priority: 3
             buff: INT Damage
             buffCondition: Skill Chain 3+
             buffValue: 50
     - name: "Looking into the Future"
+      shortEffects: ATK +20%, DEF +30%, HIT +20%, and HP +20%
       effects: 
         - desc: ATK +20%
           meta:
@@ -1952,10 +1958,10 @@
       power: INT x 740%
       ap: 42
       maxHits: 6
-    - name: "Burst Flame"
+    - name: "Volcanic Burst"
       picture: Volcanic_Burst
       element: Fire
-      power: INT x 1110%
+      power: INT x 1100%
       ap: 42
       maxHits: 13
       highlight: true
@@ -1972,7 +1978,7 @@
     picture: Explode_Ronyx
     element: Fire
     effects: 
-      - desc: Damage +80%
+      - desc: Damage dealt +80%
         duration: 20
         all: true
         meta:
