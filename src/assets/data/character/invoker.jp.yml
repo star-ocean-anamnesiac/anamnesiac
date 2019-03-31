@@ -403,7 +403,7 @@
             buffValue: 30
     - name: "Grampa's Wish"
       effects: 
-        - desc: Will not flinch if damage is less than 20% of max HP
+        - desc: No flinching when taking damage of 20% HP or less
 
   skills:
     - name: "Plunging Fire Bolts"
@@ -438,6 +438,7 @@
     name: "Trinity Blaze"
     picture: Trinity_Blaze_Lymle  
     element: Fire
+    shortEffects: INT +100% and symbology cast time -70% (Self/20s)
     effects: 
       - desc: INT +100%
         duration: 20
@@ -445,7 +446,7 @@
           priority: 4
           buff: INT
           buffValue: 100
-      - desc: Reduce casting time by 70%
+      - desc: Symbology cast time -70%
         duration: 20
         meta:
           priority: 4
@@ -489,6 +490,7 @@
       
       *Normal > CA Volcanic Burst > Firebolt > Volcanic Burst (General fire damage rotation. 105 AP.)*
 
+
 - name: Faize Sheifa Beleth
   cat: jp
   rating: 6
@@ -506,24 +508,25 @@
     grd: 749
 
   talents:
-    - name: "The Gifted One II"
+    - name: "The Gifted One"
       effects: 
-        - desc: Damage to single targets +30%
+        - desc: Single target damage +30%
           all: true
           meta:
             priority: 1
             buff: Single Target Damage
             buffValue: 30
-        - desc: Chance to stun +15%
+        - desc: Stun rate +15%
           all: true
           meta:
             priority: 1
             buff: Stun Rate
             buffValue: 15
-    - name: "Eldarian Honor II"
+    - name: "Eldarian Honor"
+      shortEffects: 80% chance of surviving a lethal attack and symbology cast time -80% when at 10% HP or more
       effects: 
-        - desc: At 10% HP or higher, has an 80% chance to survive a lethal attack
-        - desc: Reduce casting time by 80%
+        - desc: 80% chance of surviving a lethal attack at 10% HP or more
+        - desc: Symbology cast time -80% at 10% HP or more
           meta:
             priority: 4
             buff: Cast Time Reduction
@@ -626,7 +629,7 @@
     grd: 826
 
   talents:
-    - name: "Treasure Hunter II"
+    - name: "Treasure Hunter"
       effects: 
         - desc: INT +30%
           all: true
@@ -636,27 +639,27 @@
             buffValue: 30
     - name: "Enchanted Symbology"
       effects: 
-        - desc: +25% chance to silence on all attacks
+        - desc: All attacks have +25% chance of inflicting silence
           meta:
             priority: 4
             buff: Silence Attack Chance
             buffValue: 25
-    - name: "A Lady's Poise II"
+    - name: "A Lady's Poise"
       effects:
-        - desc: +20% INT damage dealt when at 100% HP
+        - desc: INT damage dealt +20% when at 100% HP
           meta:
             priority: 4
             buff: INT Damage
             buffCondition: HP at 100%
             buffValue: 20
-    - name: "Marze Born & Raised"
+    - name: "Marze Born and Raised"
       effects:
-        - desc: -30% cast time
+        - desc: Symbology cast time -30%
           meta:
             priority: 4
             buff: Cast Time Reduction
             buffValue: 30
-        - desc: -20% AP cost
+        - desc: AP cost -20%
           meta:
             priority: 4
             buff: AP Cost Reduction
@@ -693,7 +696,7 @@
     picture: Silent_Southern_Cross_Celine
     element: Light
     effects: 
-      - desc: +50% INT
+      - desc: INT +50%
         duration: 20
         meta:
           priority: 4
@@ -2021,6 +2024,7 @@
 
       *Normal > Burst Flame > Explosion > Burst Flame*
 
+
 - name: Lymle Lemuri Phi (Awakened)
   cat: jp
   rating: 4
@@ -2070,33 +2074,44 @@
             buffValue: 40
     - name: "Grampa's Wish"
       effects: 
-        - desc: Will not flinch if damage is less than 40% of max HP
+        - desc: No flinching when taking damage of 40% HP or less
     - name: "Mischievous"
       effects: 
         - desc: INT +20%
+          all: true
           meta:
             priority: 1
             buff: INT
             buffValue: 20
     - name: "Obstinate"
       effects: 
-        - desc: Fire Damage +60% (Self, Attackers, Shooters, Defenders)
+        - desc: Fire damage dealt +60%
+          all: Attackers/All Shooters/All Defenders/Self
+          meta:
+            priority: 3
+            buff: Fire Damage
+            buffValue: 60
     - name: "Closed Emotions"
       effects: 
-        - desc: Crit Rate +50% when skill chain is 3+
+        - desc: Critical hit chance +50% when skill chain is 3 or more
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: Skill Chain 3+
+            buffValue: 50
 
   skills:
-    - name: "Fire Bolt Drop"
+    - name: "Plunging Fire Bolts"
       picture: Fire_Bolts
       element: Fire
       power: INT x 330%
       ap: 20
       maxHits: 6
       highlight: true
-    - name: "Burst Flame"
+    - name: "Volcanic Burst"
       picture: Volcanic_Burst
       element: Fire
-      power: INT x 1110%
+      power: INT x 1100%
       ap: 42
       maxHits: 13
       highlight: true
@@ -2124,6 +2139,7 @@
     name: "Trinity Blaze"
     picture: Trinity_Blaze_Lymle  
     element: Fire
+    shortEffects: INT +120% and symbology cast time -70% (Self/25s)    
     effects: 
       - desc: INT +120%
         duration: 25
@@ -2131,7 +2147,7 @@
           priority: 4
           buff: INT
           buffValue: 120
-      - desc: Cast Time -70%
+      - desc: Cast time -70%
         duration: 25
         meta:
           priority: 4
@@ -2174,6 +2190,7 @@
 
       *Normal > CA Explosion > Burst Flame*
 
+
 - name: Faize Sheifa Beleth (Awakened)
   cat: jp
   rating: 6
@@ -2192,40 +2209,74 @@
     grd: 749
 
   talents:
-    - name: "The Gifted One II"
+    - name: "The Gifted One"
       effects: 
-        - desc: Single Target Damage +40%
+        - desc: Single target damage +40%
           all: true
           meta:
             priority: 1
             buff: Single Target Damage
             buffValue: 40
-        - desc: Stun Rate +25%
+        - desc: Stun rate +25%
           all: true
           meta:
             priority: 1
             buff: Stun Rate
             buffValue: 25
-    - name: "Eldarian Honor II"
+    - name: "Eldarian Honor"
+      shortEffects: 90% chance of surviving a lethal attack and symbology cast time -90% when at 10% HP or more
       effects: 
-        - desc: 90% chance to survive a lethal attack at 10% HP or higher
-        - desc: Cast Time -90%
+        - desc: 90% chance of surviving a lethal attack at 10% HP or more
+        - desc: Symbology cast time -90% at 10% HP or more
           meta:
             priority: 4
             buff: Cast Time Reduction
             buffValue: 90
-    - name: "Talent 3"
+    - name: "Irreproachable Conduct"
       effects: 
-        - desc: Damage during "defective" attack -20% HP 25% Do not get rid of the following damage (overall) 
-    - name: "Crimson Eyesight"
+        - desc: Damage taken -20% while attacking
+          all: true
+          meta:
+            priority: 4
+            buff: Damage Taken Reduction
+            buffValue: 20      
+        - desc: No flinching when taking damage of 25% or less
+          all: true
+    - name: "Scarlet Gaze"
       effects: 
-        - desc: Survive at 90% non-lethal attack with more than 20% HP (Long Ranged Weapons) 
+        - desc: 90% chance of surviving a lethal attack at 20% HP or more
+          all: Long Range Weapons
     - name: "Logical Thinking"
       effects: 
-        - desc: INT Damage +50% when skill chain is 3+
-    - name: "Raw Serious"
+        - desc: INT damage +50% when skill chain is 3 or more
+          meta:
+            priority: 4
+            buff: INT Damage
+            buffCondition: Skill Chain 3+
+            buffValue: 50
+    - name: "Serious and Sincere"
+      shortEffects: INT +20%, DEF +30%, HIT +10%, and HP +30%
       effects: 
-        - desc: INT +20%, DEF +30%, HIT +10%, HP +30%
+        - desc: INT +20%
+          meta:
+            priority: 4
+            buff: INT
+            buffValue: 20
+        - desc: DEF +30%
+          meta:
+            priority: 4
+            buff: DEF
+            buffValue: 30
+        - desc: HIT +10%
+          meta:
+            priority: 4
+            buff: HIT
+            buffValue: 10
+        - desc: HP +30%
+          meta:
+            priority: 4
+            buff: HP
+            buffValue: 30
 
   skills:
     - name: "Cursed Devourer"
@@ -2326,6 +2377,7 @@
       
       *Normal > Slicer > Extinction > Slicer^n - alt postrush; don't use during stun*
 
+
 - name: Celine Jules (Awakened)
   cat: jp
   rating: 6
@@ -2344,7 +2396,7 @@
     grd: 826
 
   talents:
-    - name: "Treasure Hunter II"
+    - name: "Treasure Hunter"
       effects: 
         - desc: INT +30%
           all: true
@@ -2354,22 +2406,23 @@
             buffValue: 30
     - name: "Enchanted Symbology"
       effects: 
-        - desc: All attacks have +25% chance of adding silence
+        - desc: All attacks have +25% chance of inflicting silence
           meta:
             priority: 4
             buff: Silence Attack Chance
             buffValue: 25
-    - name: "A Lady's Poise II"
+    - name: "A Lady's Poise"
       effects:
-        - desc: Super Armor while casting & INT Damage +20% when at 100% HP
+        - desc: INT damage +20% when at 100% HP
           meta:
             priority: 4
             buff: INT Damage
-            buffCondition: HP at 100%
+            buffCondition: HP is 100
             buffValue: 20
+        - desc: No flinching when casting symbology         
     - name: "Marze Born & Raised"
       effects:
-        - desc: Cast Time -50%
+        - desc: Cast time -50%
           meta:
             priority: 4
             buff: Cast Time Reduction
@@ -2379,17 +2432,26 @@
             priority: 4
             buff: AP Cost Reduction
             buffValue: 40
-        - desc: Rush Damage +10%
+        - desc: Rush combo damage +10%
           meta:
             priority: 4
             buff: Rush Damage
             buffValue: 10
-    - name: "Willing Up Adventure"
+    - name: "Rising Sense of Adventure"
       effects:
         - desc: INT +20%
-    - name: "Unrestrained Mind"
+          meta:
+            priority: 4
+            buff: INT
+            buffValue: 20   
+    - name: "Unrestrained Spirit"
       effects:
-        - desc: Heraldic Damage +50% when skill chain is 3+
+        - desc: Damage dealt +50% by symbology when skill chain is 3 or more
+          meta:
+            priority: 4
+            buff: Damage
+            buffCondition: Skill Chain 3+
+            buffValue: 20          
 
   skills:
     - name: "Silencing Star Light"
@@ -2420,7 +2482,7 @@
     - name: "Growth"
       picture: Enhance_Growth
       ap: 50
-      notes: +25% ATK to party for 20 seconds.
+      notes: ATK +25% to all allies (20s)
       meta:
         priority: 2
         buff: ATK
