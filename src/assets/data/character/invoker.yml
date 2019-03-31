@@ -5,7 +5,6 @@
   picture: Sophia
   weapon: staff
   ace: true
-  limited: false
   star: 5
 
   stats:
@@ -166,7 +165,7 @@
   talents:
     - name: "Enchanted Perfume II"
       effects: 
-        - desc: Stun chance +30%
+        - desc: Stun rate +30%
           meta:
             priority: 4
             buff: Stun Rate
@@ -398,7 +397,6 @@
   rating: 4
   picture: Lymle
   weapon: staff
-  limited: false
   star: 5
 
   stats:
@@ -525,7 +523,6 @@
   rating: 6
   picture: Faize
   weapon: bns
-  limited: false
   star: 5
 
   stats:
@@ -545,7 +542,7 @@
             priority: 1
             buff: Single Target Damage
             buffValue: 30
-        - desc: Stun chance +15%
+        - desc: Stun rate +15%
           all: true
           meta:
             priority: 1
@@ -653,7 +650,6 @@
   rating: 6
   picture: Celine
   weapon: staff
-  limited: false
   star: 5
   ace: true
 
@@ -787,7 +783,6 @@
   rating: 7
   picture: Fiore
   weapon: orb
-  limited: false
   star: 5
   ace: true
 
@@ -1077,7 +1072,6 @@
   rating: 8
   picture: Mavelle
   weapon: orb
-  limited: false
   star: 5
   ace: true
 
@@ -1127,7 +1121,6 @@
             buff: AP Recovery
             buffValue: 30
         - desc: No flinching when casting symbology
-          all: false
 
   skills:
     - name: "Hail Orb"
@@ -1366,8 +1359,6 @@
   rating: 0
   picture: Manuscript_Bernard
   weapon: tome
-  ace: false
-  limited: false
   star: 3
 
   stats:
@@ -1391,7 +1382,6 @@
     - name: "New Talent II"
       effects:
         - desc: Damage dealt +20%
-          all: false
           meta:
             priority: 1
             buff: Damage
@@ -1437,8 +1427,6 @@
   rating: 0
   picture: Manuscript_Seth
   weapon: tome
-  ace: false
-  limited: false
   star: 3
 
   stats:
@@ -1458,7 +1446,7 @@
             priority: 1
             buff: Single Target Damage
             buffValue: 15
-        - desc: Stun chance +15%
+        - desc: Stun rate +15%
           all: true
           meta:
             priority: 1
@@ -1468,9 +1456,7 @@
       shortEffects: 80% chance of surviving a lethal attack and symbology cast time -80% when at 10% HP or more
       effects:
         - desc: 80% chance of surviving a lethal attack at 10% HP or more
-          all: false
-        - desc: Symbology cast time -80% at 10% HP or more
-          all: false
+        - desc: Symbology cast time -80% when at 10% HP or more
           meta:
             priority: 1
             buff: Cast Time Reduction
@@ -1504,7 +1490,6 @@
     effects:
       - desc: AP cost -30%
         duration: 20
-        all: false
         meta:
           priority: 1
           buff: AP Cost Reduction
@@ -1518,8 +1503,6 @@
   rating: 0
   picture: Jewel_Rochelle
   weapon: orb
-  ace: false
-  limited: false
   star: 3
 
   stats:
@@ -1533,8 +1516,7 @@
   talents:
     - name: "Peering into the Crystal Ball III"
       effects:
-        - desc: Stun chance +30% when at 100% HP
-          all: false
+        - desc: Stun rate +30% when at 100% HP
           meta:
             priority: 1
             buff: Stun Rate
@@ -1543,7 +1525,6 @@
     - name: "Secret Arts III"
       effects:
          - desc: INT +30%
-           all: false
            meta:
              priority: 1
              buff: INT
@@ -1551,7 +1532,6 @@
     - name: "Foresight"
       effects:
          - desc: Symbology cast time -30%
-           all: false
            meta:
              priority: 1
              buff: Cast Time Reduction
@@ -1584,7 +1564,6 @@
     effects:
       - desc: INT +80%
         duration: 20
-        all: false
         meta:
           priority: 1
           buff: INT
@@ -1598,8 +1577,6 @@
   rating: 0
   picture: Manuscript_Renier
   weapon: tome
-  ace: false
-  limited: false
   star: 3
 
   stats:
@@ -1613,8 +1590,7 @@
   talents:
     - name: "Hidden Secrets III"
       effects: 
-        - desc: Stun chance +30% at long range
-          all: false
+        - desc: Stun rate +30% at long range
           meta:
             priority: 1
             buff: Stun Rate
@@ -1623,7 +1599,6 @@
     - name: "Secret Agent Abilities II"
       effects: 
         - desc: INT +25%
-          all: false
           meta:
             priority: 4
             buff: INT
@@ -1631,7 +1606,6 @@
     - name: "Mysterious Past"
       effects: 
         - desc: Symbology cast time -35%
-          all: false
           meta:
             priority: 1
             buff: Cast Time Reduction
@@ -1664,7 +1638,6 @@
     effects: 
       - desc: INT +80%
         duration: 20
-        all: false
         meta:
           priority: 4
           buff: INT
@@ -1678,8 +1651,6 @@
   rating: 0
   picture: Jewel_Winny
   weapon: orb
-  ace: false
-  limited: false
   star: 3
 
   stats:
@@ -1702,7 +1673,6 @@
     - name: "A Teacher's Path III"
       effects: 
         - desc: Damage dealt +30% at long range
-          all: false
           meta:
             priority: 1
             buff: Damage
@@ -1750,8 +1720,6 @@
   rating: 0
   picture: Jewel_Eleanor
   weapon: orb
-  ace: false
-  limited: false
   star: 3
 
   stats:
@@ -1766,7 +1734,6 @@
     - name: "Hard Work Pays Off III"
       effects: 
         - desc: DEF +30%
-          all: false
           meta:
             priority: 1
             buff: DEF
@@ -1774,7 +1741,6 @@
     - name: "Aspirations of Knighthood"
       effects: 
         - desc: Damage taken -15%
-          all: false
           meta:
             priority: 1
             buff: Damage Taken Reduction
@@ -1782,7 +1748,6 @@
     - name: "How You Looked that Day"
       effects: 
         - desc: No flinching when taking damage of 20% HP or less
-          all: false
 
   skills:
     - name: "Plunging Fire Bolts"
@@ -1812,14 +1777,12 @@
     effects: 
       - desc: INT +50%
         duration: 20
-        all: false
         meta:
           priority: 4
           buff: INT
           buffValue: 50
       - desc: Symbology cast time -70%
         duration: 20
-        all: false
         meta:
           priority: 1
           buff: Cast Time Reduction
@@ -1833,8 +1796,6 @@
   rating: 0
   picture: Seth
   weapon: staff
-  ace: false
-  limited: false
   star: 3
 
   stats:
@@ -1848,8 +1809,7 @@
   talents:
     - name: "Highly Strung"
       effects: 
-        - desc: Stun chance +15%
-          all: false
+        - desc: Stun rate +15%
           meta:
             priority: 1
             buff: Stun Rate
@@ -1857,7 +1817,6 @@
     - name: "Still Blooming"
       effects: 
         - desc: INT +30%
-          all: false
           meta:
             priority: 4
             buff: INT
@@ -1865,7 +1824,6 @@
     - name: "Unfaltering Chant"
       effects: 
         - desc: Symbology cast time -30%
-          all: false
           meta:
             priority: 1
             buff: Cast Time Reduction
@@ -1898,7 +1856,6 @@
     effects: 
       - desc: INT +80%
         duration: 20
-        all: false
         meta:
           priority: 4
           buff: INT
@@ -1912,8 +1869,6 @@
   rating: 0
   picture: Rochelle
   weapon: staff
-  ace: false
-  limited: false
   star: 3
 
   stats:
@@ -1936,7 +1891,6 @@
     - name: "Extreme Focus II"
       effects: 
         - desc: Damage dealt +20%
-          all: false
           meta:
             priority: 1
             buff: Damage
@@ -1983,8 +1937,6 @@
   rating: 0
   picture: Welch
   weapon: staff
-  ace: false
-  limited: false
   star: 4
 
   stats:
@@ -2007,7 +1959,6 @@
     - name: "Luck Favors the Brave II"
       effects: 
         - desc: Symbology cast time -20%
-          all: false
           meta:
             priority: 1
             buff: Cast Time Reduction
@@ -2060,8 +2011,6 @@
   rating: 0
   picture: Eleyna
   weapon: staff
-  ace: false
-  limited: false
   star: 4
 
   stats:
@@ -2083,8 +2032,7 @@
             buffValue: 30
     - name: "A Saint's Legacy"
       effects: 
-        - desc: Stun chance +15%
-          all: false
+        - desc: Stun rate +15%
           meta:
             priority: 1
             buff: Stun Rate
