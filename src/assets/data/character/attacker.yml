@@ -1820,7 +1820,7 @@
           all: true
     - name: "Full Moon Howl"
       effects: 
-        - desc: Damage +60% dealt by Pumpkin Smash when skill chain is 4 or more
+        - desc: Damage dealt +60% by Pumpkin Smash when skill chain is 4 or more
 
   skills:
     - name: "Lantern Burst"
@@ -2974,9 +2974,9 @@
             buffValue: 60
     - name: "Exposed Ferocity II"
       effects: 
-        - desc: Nullifies critical damage penalty during charge assault
+        - desc: Nullifies charge assault critical damage penalty
           all: Attackers
-        - desc: No flinching when taking damage of 30% HP or less during charge assault
+        - desc: No flinching when taking damage of 30% HP or less during a charge assault
           all: Attackers
     - name: "Bad Luck II"
       shortEffects: Normal attack AP recovery +100% and evasion AP cost -50% (All Attackers)
