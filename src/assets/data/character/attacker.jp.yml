@@ -152,7 +152,7 @@
     grd: 812
 
   talents:
-    - name: "Fortitude & Vigor II"
+    - name: "Fortitude & Vigor"
       effects: 
         - desc: ATK +40%
           all: true
@@ -250,7 +250,7 @@
     grd: 812    
 
   talents:
-    - name: "Klausian Champion II"
+    - name: "Klausian Champion"
       effects: 
         - desc: AP cost -40%
           meta:
@@ -359,7 +359,7 @@
             priority: 1
             buff: Crit Rate
             buffValue: 30
-    - name: "Grandmother's Teachings II"
+    - name: "Grandmother's Teachings"
       effects: 
         - desc: No flinching when taking damage of 20% HP or less
 
@@ -453,7 +453,7 @@
             priority: 1
             buff: AP Cost Reduction
             buffValue: 20
-    - name: "Finest Instructor of the Blade II"
+    - name: "Finest Instructor of the Blade"
       effects: 
         - desc: No flinching when taking damage of 20% HP or less
     - name: "Camuze's Way"
@@ -547,7 +547,7 @@
   star: 5
 
   stats:
-    hp: 15750
+    hp: 15570
     atk: 3090
     int: 1535
     def: 1983
@@ -555,7 +555,7 @@
     grd: 812
 
   talents:
-    - name: "Transcending Space-time II"
+    - name: "Transcending Space-time"
       effects: 
         - desc: Symbology cast time -20%
           all: true
@@ -563,9 +563,9 @@
             priority: 1
             buff: Cast Time Reduction
             buffValue: 20
-    - name: "Astounding Eldarian Swordplay"
+    - name: "Astounding Edarl Blade Arts"
       effects: 
-        - desc: Stun chance +40%
+        - desc: Stun rate +40%
           all: true
           meta:
             priority: 1
@@ -595,7 +595,7 @@
       picture: Air_Slash_I
       power: ATK x 200%
       ap: 20
-      maxHits: 2
+      maxHits: 1
     - name: "Dragon Slash"
       picture: Dragon_Slash
       element: Lightning
@@ -606,24 +606,25 @@
   rush:
     name: "Omega Thunderclap Blade"
     picture: Omega_Thunderclap_Blade_Ratix
+    element: Lightning
+    shortEffects: AP cost -40% and damage taken -20% (Self/60s)
     effects: 
       - desc: AP cost -40%
         all: false
-        duration: 20
+        duration: 60
         meta:
           priority: 4
           buff: AP Cost Reduction
           buffValue: 40
       - desc: Damage taken -20%
         all: false
-        duration: 20
+        duration: 60
         meta:
           priority: 4
           buff: Damage Taken Reduction
           buffValue: 20
     power: ATK x 3000%
     maxHits: 7
-    element: Lightning
     
   notes: >
       _WIP._
@@ -666,14 +667,14 @@
 
   stats:
     hp: 15645
-    atk: 3588
-    int: 2428
+    atk: 2718
+    int: 1563
     def: 1957
     hit: 1127
     grd: 833
 
   talents:
-    - name: "Mind's Eye View II"
+    - name: "Mind's Eye View"
       effects: 
         - desc: ATK +55% when not in front of target
           all: true
@@ -697,27 +698,26 @@
             priority: 1
             buff: Rush Damage
             buffValue: 15
-    - name: "Handmade Dolls II"
+    - name: "Handmade Dolls"
       effects: 
-        - desc: AP recovery from normal attacks +80%
-          all: Close Range
+        - desc: Normal attack AP recovery +100%
+          all: Short Range Weapons
           meta:
             priority: 4
             buff: AP Recovery From Normal Attacks
-            buffValue: 80
+            buffValue: 100
         - desc: Nullifies Rush Gauge Reduction Field
-          all: Close Range
+          all: Short Range Weapons
     - name: "Hit-the-Watermelon"
       effects: 
-        - desc: Evasion possible during attack even in the air
-          all: false
-        - desc: AP cost -25% when skill chain is 3+
+        - desc: Evasion possible during air attacks      
+        - desc: AP cost -50% when skill chain is 3 or more
           meta:
             priority: 4
             buff: AP Cost Reduction
-            buffCondition: Skill Combo 3+
-            buffValue: 25
-
+            buffCondition: Skill Chain 3+
+            buffValue: 50
+            
   skills:
     - name: "Combo Breaker"
       picture: Combo_Breaker
@@ -745,6 +745,7 @@
   rush:
     name: "Celestial Sword"
     picture: Heaven's_Sword_Summer_Reimi
+    shortEffects: Cures all status ailments, and single target damage dealt +40% (All Party/20s)
     effects: 
       - desc: Cure status ailments
         all: true
@@ -788,7 +789,7 @@
       *Normal > Crescent Mirage > Smackdown > Summer Smoothie> Spam it till out of AP. (Damage combo with Smackdown.)*
 
 
-- name: Lenneth
+- name: Lenneth Valkyrie
   cat: jp
   rating: 6
   picture: Lenneth
@@ -822,9 +823,9 @@
             priority: 1
             buff: Rush Damage
             buffValue: 20
-    - name: "Platinum Heart"
+    - name: "Platina's Heart"
       effects: 
-        - desc: All attacks have +15% chance to silence
+        - desc: All attacks have +15% chance of inflicting silence
           meta:
             priority: 4
             buff: Silence Attack Chance
@@ -842,7 +843,7 @@
       power: ATK x 500%
       ap: 35
       maxHits: 3
-    - name: "Heaven and Hell"
+    - name: "Heaven & Hell"
       picture: Air_Slash_I
       power: ATK x 220%
       ap: 22
@@ -917,7 +918,7 @@
     grd: 826
 
   talents:
-    - name: "Hero Lineage"
+    - name: "Hero's Resolve"
       effects: 
         - desc: ATK +50%
           all: Attackers
@@ -926,7 +927,7 @@
             buff: ATK
             buffRole: attacker
             buffValue: 50
-    - name: "Proof of Growth"
+    - name: "Learned Finesse"
       effects: 
         - desc: ATK +50%
           all: Defenders
@@ -935,7 +936,7 @@
             buff: ATK
             buffRole: defender
             buffValue: 50
-    - name: "Hero of Light"
+    - name: "Greater Hero's Might"
       effects: 
         - desc: Damage taken -20%
           all: Healers
@@ -944,7 +945,7 @@
             buff: Damage Taken Reduction
             buffRole: healer
             buffValue: 20
-    - name: "Martial Arts Inherited From Mother"
+    - name: "Passed-Down Martial Arts"
       effects: 
         - desc: Normal attack AP recovery +100%
           all: true
@@ -954,36 +955,36 @@
             buffValue: 100
 
   skills:
-    - name: "Double Slash"
-      picture: Double_Slash_I
-      power: ATK x 200%
-      ap: 20
-      maxHits: 2
-      highlight: true
-    - name: "Air Slash"
-      picture: Air_Slash_I
-      power: ATK x 200%
-      ap: 20
-      maxHits: 2
-      highlight: true
-    - name: "Helm Render"
-      picture: Helmsplitter
-      power: ATK x 440%
-      ap: 30
-      maxHits: 1
-      highlight: true
     - name: "Sword Bomber"
       picture: Sword_Bomber
       element: Fire
       power: ATK x 550%
       ap: 38
       maxHits: 2
+    - name: "Helm Render"
+      picture: Helmsplitter
+      power: ATK x 440%
+      ap: 30
+      maxHits: 1
+      highlight: true
+    - name: "Air Slash"
+      picture: Air_Slash_I
+      power: ATK x 200%
+      ap: 20
+      maxHits: 1
+      highlight: true      
+    - name: "Double Slash"
+      picture: Double_Slash_I
+      power: ATK x 200%
+      ap: 20
+      maxHits: 2
+      highlight: true
 
   rush:
     name: "Mirror Blade Tempest"
     picture: Mirror_Blade_Tempest_Claude
     effects: 
-      - desc: Damage +30%
+      - desc: Damage dealt +30%
         all: true
         duration: 30
         meta:
@@ -1038,28 +1039,33 @@
     grd: 847
 
   talents:
-    - name: "Raven Sword II"
+    - name: "Raven Sword"
       effects: 
         - desc: Critical hit chance +50%
+          all: false
           meta:
-            priority: 4
+            priority: 1
             buff: Crit Rate
             buffValue: 50
-    - name: "Knight's Integrity II"
+    - name: "Knight's Integrity"
       effects: 
-        - desc: Critical hit damage +50%
+        - desc: Critical damage +50%
+          all: false
           meta:
             priority: 4
             buff: Crit Damage
             buffValue: 20
     - name: "A Highlander's Pride"
+      shortEffects: ATK +20% and DEF -20%
       effects: 
         - desc: ATK +20%
+          all: false
           meta:
             priority: 4
             buff: ATK
             buffValue: 20
         - desc: DEF -20%
+          all: false
           meta:
             priority: 4
             buff: DEF Reduction
@@ -1087,7 +1093,7 @@
       element: Ice
       power: ATK x 170%
       ap: 18
-      notes: Occasionally freezes foes.
+      notes: Occasionally freezes foes
       maxHits: 2
       highlight: true
 
@@ -1095,8 +1101,8 @@
     name: "Unholy Torrent"
     picture: Unholy_Torrent_Phia
     effects: 
-      - desc: Occasionally freezes foes.
-    power: ATK x4000%
+      - desc: Occasionally freezes foes
+    power: ATK x 4000%
     maxHits: 13
     
   notes: >
@@ -1140,14 +1146,14 @@
 
   stats:
     hp: 15750
-    atk: 2716
+    atk: 2718
     int: 1496
     def: 2009
     hit: 1113
     grd: 847
 
   talents:
-    - name: "Evil Eye II"
+    - name: "Evil Eye"
       effects: 
         - desc: DEF -30%
           all: Enemies
@@ -1155,7 +1161,8 @@
             priority: 1
             buff: Enemy DEF Reduction
             buffValue: 30
-    - name: "Black Brigade Fury II"
+    - name: "Black Brigade Fury"
+      shortEffects: ATK +30% (All Attackers/All Defenders)
       effects: 
         - desc: ATK +30%
           all: Attackers
@@ -1171,7 +1178,7 @@
             buff: ATK
             buffRole: defender
             buffValue: 30
-    - name: "Savage Blade II"
+    - name: "Savage Blade"
       effects: 
         - desc: Single target damage +20%
           meta:
@@ -1202,7 +1209,7 @@
       picture: Unbridled_Double_Slash
       power: ATK x 400%
       ap: 30
-      maxHits: 4      
+      maxHits: 4
     - name: "Unbridled Air Slash"
       picture: Unbridled_Air_Slash
       power: ATK x 210%
@@ -1213,6 +1220,7 @@
   rush:
     name: "Hydra Roar"
     picture: Hydra_Roar_Albel
+    shortEffects: ATK +100% and DEF -50% (Self/15s)
     effects: 
       - desc: ATK +100%
         duration: 15
@@ -1276,7 +1284,7 @@
     grd: 756
 
   talents:
-    - name: "Even Greater Instincts II"
+    - name: "Even Greater Instincts"
       effects: 
         - desc: ATK +30%
           all: true
@@ -1284,9 +1292,9 @@
             priority: 1
             buff: ATK
             buffValue: 30
-    - name: "All-Seeing Eye II"
+    - name: "All-Seeing Eye"
       effects: 
-        - desc: Damage to multiple targets +20%
+        - desc: Multiple target damage +20%
           all: true
           meta:
             priority: 1
@@ -1294,14 +1302,14 @@
             buffValue: 20
     - name: "Mother of Symbology"
       effects: 
-        - desc: AP Cost -10%
+        - desc: AP cost -10%
           meta:
             priority: 4
             buff: AP Cost Reduction
             buffValue: 4
     - name: "Quiet Devotion"
       effects: 
-        - desc: Fire Element Damage +20%
+        - desc: Fire damage dealt +20%
           all: true
           meta:
             priority: 1
@@ -1309,35 +1317,36 @@
             buffValue: 20
 
   skills:
+    - name: "Crescent Locus"
+      picture: Crescent_Locus
+      power: ATK x 150%
+      ap: 17
+      maxHits: 4
+      highlight: true  
     - name: "Palm of Destruction"
       picture: Palm_of_Destruction
       power: ATK x 240%
       ap: 23
       maxHits: 4
       highlight: true
-    - name: "Crescent Locus"
-      picture: Crescent_Locus
-      power: ATK x 150%
-      ap: 17
-      maxHits: 4
-      highlight: true
-    - name: "Fiery Hammer of Might"
-      picture: Hammer_of_Might
-      power: ATK x 270%
-      ap: 26
-      maxHits: 1
-      element: Fire
     - name: "X Claw"
       picture: X_Claw
       power: ATK x 310%
       ap: 29
-      maxHits: 6
+      maxHits: 6      
+    - name: "Fiery Hammer of Might"
+      picture: Hammer_of_Might
+      element: Fire
+      power: ATK x 270%
+      ap: 26
+      maxHits: 1
 
   rush:
     name: "Divine Hammer"
     picture: Divine_Hammer_Ilia
+    shortEffects: AP cost -20% (All Attackers/All Invokers/20s)
     effects: 
-      - desc: AP Cost -20%
+      - desc: AP cost -20%
         all: Attackers
         duration: 20
         meta:
@@ -1345,7 +1354,7 @@
           buff: AP Cost Reduction
           buffRole: attacker
           buffValue: 20
-      - desc: AP Cost -20%
+      - desc: AP cost -20%
         all: Invokers
         duration: 20
         meta:
@@ -1384,7 +1393,8 @@
       **Rotation**
       
       *Normal > Palm of Destruction > Crescent Locus > Palm of Destruction > Spam till out of AP (Damage rotation)*
-    
+
+
 - name: Clair Lasbard (Halloween)
   cat: jp
   rating: 9
@@ -1403,45 +1413,47 @@
     grd: 833
 
   talents:
-    - name: "Black Ribbon II"
+    - name: "Black Ribbon"
       effects: 
-        - desc: ATK +15%
+        - desc: ATK +20%
           meta:
             priority: 4
             buff: ATK
-            buffValue: 15
-    - name: "Mischievous Wings II"
+            buffValue: 20
+    - name: "Mischievous Wings"
       effects: 
-        - desc: +15% ATK damage when hit count is over 50
+        - desc: ATK damage dealt +20% when hitcount is 50 or more
           all: true
           meta:
             priority: 3
             buff: ATK Damage
-            buffValue: 15
-    - name: "Heart-Shaped Tail II"
+            buffCondition: Hit Count > 50
+            buffValue: 20
+    - name: "Heart-Shaped Tail"
       effects: 
-        - desc: -25% AP consumption
+        - desc: AP cost -25%
           meta:
             priority: 4
             buff: AP Cost Reduction
             buffValue: 25
-        - desc: +15% ATK when hit count is over 100
+        - desc: ATK +20% when hitcount is 100 or more
           meta:
             priority: 3
             buff: ATK
-            buffValue: 30
+            buffCondition: Hit Count > 100
+            buffValue: 20
     - name: "Prayer"
       effects: 
-        - desc: Will not flinch to attacks under 15% of max HP
+        - desc: No flinching when taking damage of 15% HP or less
           all: Attackers
 
   skills:
     - name: "Enchanting Twin Thrust"
       picture: Talon_Thrust
+      element: Fire
       power: ATK x 370%
       ap: 28
       maxHits: 2
-      element: Fire
       highlight: true
     - name: "Sinistral Edge"
       picture: Sinistral_Edge
@@ -1466,14 +1478,14 @@
     name: "Waking Hell"
     picture: Waking_Hell_HW_Clair
     effects: 
-      - desc: +30% DEF
+      - desc: DEF +30%
         all: true
         duration: 20
         meta:
           priority: 1
           buff: DEF
           buffValue: 30
-      - desc: -30% DEF
+      - desc: DEF -30%
         all: Enemies
         duration: 20
         meta:
