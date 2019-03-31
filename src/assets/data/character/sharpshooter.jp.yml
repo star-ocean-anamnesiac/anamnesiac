@@ -1413,7 +1413,7 @@
       
   rush:
     name: "Judgment Shot"
-    picture: Judgment_Shot_Federation_Edge
+    picture: Judgement_Shot_Federation_Edge
     effects: 
       - desc: ATK damage +40%
         all: true
