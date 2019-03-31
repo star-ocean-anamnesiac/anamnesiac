@@ -1521,7 +1521,8 @@
       **Rotation**
       
       *Normal > Sinistral Edge > Dextral Slaughter > Hazy Wheel > Spam till out of AP (Damage rotation)*
-    
+
+
 - name: Millie Chliette (Halloween)
   cat: jp
   rating: 8
@@ -1542,22 +1543,22 @@
   talents:
     - name: "Hand Trick II"
       effects: 
-        - desc: +25% ATK
+        - desc: ATK +55%
           all: true
           meta:
             priority: 1
             buff: ATK
-            buffValue: 25
-        - desc: +35% ATK when hit count is over 100
+            buffValue: 55
+        - desc: ATK +55% when hitcount is 100 or more
           all: true
           meta:
             priority: 1
             buff: ATK
             buffCondition: Hit Count > 100
-            buffValue: 35
+            buffValue: 55
     - name: "Wolf's Appetite II"
       effects: 
-        - desc: AP recovery from normal attacks +100%
+        - desc: Normal attack AP recovery +100%
           all: true
           meta:
             priority: 1
@@ -1565,24 +1566,24 @@
             buffValue: 100
     - name: "Animal Instincts"
       effects: 
-        - desc: Nullify movement reducing fields and rush gauge reduction fields
+        - desc: Nullifies movement rate/rush gauge reduction fields
           all: true
     - name: "Full Moon Howl"
       effects: 
-        - desc: Pumpkin Smash damage +60% when art chain 4+
+        - desc: Damage dealt +60% by Pumpkin Smash when skill chain is 4 or more
 
   skills:
     - name: "Lantern Burst"
       picture: Lantern_Burst
+      element: Fire
       power: ATK x 190%
       ap: 18
       maxHits: 6
-      element: Fire
       highlight: true
     - name: "Howling Rocket Punch"
       picture: Rocket_Punch
       power: ATK x 170%
-      ap: 14
+      ap: 16
       maxHits: 1
       highlight: true
     - name: "Hammer Slammer"
@@ -1593,7 +1594,7 @@
     - name: "Pumpkin Smash"
       picture: Pumpkin_Smash
       power: ATK x 550%
-      ap: 32
+      ap: 39
       maxHits: 3
       highlight: true
 
@@ -1601,9 +1602,9 @@
     name: "Trick or Treat"
     picture: Trick_or_Treat_HW_Millie
     effects: 
-      - desc: +50% all elemental damage
-        all: true
+      - desc: Elemental damage dealt +50%
         duration: 20
+        all: true
         meta:
           priority: 1
           buff: Elemental Damage
@@ -1639,7 +1640,8 @@
       **Rotation**
       
       *Normal > Lantern Burst > Howling Rocket Punch > Pumpkin Smash (Damage rotation)*
-    
+
+
 - name: Fayt Leingod
   cat: jp
   rating: 7
@@ -1652,15 +1654,15 @@
   stats:
     hp: 15750
     atk: 2730
-    int: 1537
+    int: 1549
     def: 1957
     hit: 1134
     grd: 819
 
   talents:
-    - name: "Star Athlete II"
+    - name: "Star Athlete"
       effects: 
-        - desc: +30% ATK
+        - desc: ATK +30%
           all: true
           meta:
             priority: 1
@@ -1668,21 +1670,27 @@
             buffValue: 30
     - name: "Speak Softly & Carry A Big Stick"
       effects: 
-        - desc: Imbue attacks with Fire or Light attribute
+        - desc: Imbues attacks with fire and light
     - name: "Feinting Tactics"
       effects: 
-        - desc: +15% All elemental damage
+        - desc: Elemental damage dealt +15%
           all: true
           meta:
             priority: 1
             buff: Elemental Damage
             buffValue: 15
-    - name: "Stubborn To A Fault"
+    - name: "Stubborn to a Fault"
       effects: 
-        - desc: Will not flinch to damage under 10% Max HP
-          all: Self & Long Range
+        - desc: No flinching when taking damage of 10% HP or less
+          all: Long Range Weapons/Self
 
   skills:
+    - name: "Gliding Side Kick"
+      picture: Side_Kick
+      power: ATK x 180%
+      ap: 19
+      maxHits: 3
+      highlight: true  
     - name: "Rising Blade"
       picture: Rising_Blade
       power: ATK x 410%
@@ -1690,29 +1698,24 @@
       maxHits: 5
     - name: "Shotgun Blast"
       picture: Shotgun_Blast
+      element: Lightning
       power: ATK x 190%
       ap: 20
       maxHits: 4
-      element: Lightning
-      highlight: true
-    - name: "Gliding Side Kick"
-      picture: Side_Kick
-      power: ATK x 180%
-      ap: 19
-      maxHits: 3
       highlight: true
     - name: "Avian Air Raid"
       picture: Avian_Air_Raid
+      element: Light
       power: ATK x 400%
       ap: 30
       maxHits: 5
-      element: Light
 
   rush:
     name: "Colossal Ethereal Blast"
     picture: Colossal_Ethereal_Blast_Fayt
+    element: Light
     effects: 
-      - desc: +50% all elemental damage
+      - desc: Elemental damage dealt +50%
         all: true
         duration: 20
         meta:
@@ -1771,9 +1774,10 @@
     grd: 833
 
   talents:
+
     - name: "Spontaneous Combustion II"
       effects: 
-        - desc: +40% ATK
+        - desc: ATK +40%
           all: Attackers
           meta:
             priority: 1
@@ -1782,26 +1786,26 @@
             buffValue: 40
     - name: "Lightning-Fast Firewhips"
       effects: 
-        - desc: -15% AP Cost
+        - desc: AP cost -15%
           meta:
             priority: 4
             buff: AP Cost Reduction
             buffValue: 15
     - name: "Hellfire II"
       effects: 
-        - desc: +10% Fire DMG
+        - desc: Fire damage dealt +10%
           meta:
             priority: 4
             buff: Fire Damage
             buffValue: 10
-        - desc: -30% Ice DMG Taken
+        - desc: Ice damage taken -30%
           meta:
             priority: 4
             buff: Ice Damage Reduction
             buffValue: 30
     - name: "Fiery Indignation"
       effects: 
-        - desc: +25% All Stats For Every Party Member Dead
+        - desc: ATK/INT/DEF/HIT/GRD +25% for every unique party member dead, up to a maximum of +100%
           meta:
             priority: 3
             buffs:
@@ -1812,41 +1816,42 @@
               - DEF
             buffCondition: Per Party Member Dead
             buffValue: 25
-
+            
   skills:
     - name: "Pyroclast Punch"
       picture: Pyroclast_Punch
+      element: Fire
       power: ATK x 190%
       ap: 18
       maxHits: 5
-      element: Fire
       highlight: true
     - name: "Bosom Blow"
       picture: Bosom_Blow
+      element: Fire
       power: ATK x 330%
       ap: 30
       maxHits: 1
-      element: Fire
       highlight: true
     - name: "Firefest"
       picture: Fire_Fest
+      element: Fire
       power: ATK x 660%
       ap: 42
       maxHits: 6
-      element: Fire
       highlight: true
     - name: "Lava Flow"
       picture: Lava_Flow
+      element: Fire
       power: ATK x 740%
       ap: 52
       maxHits: 10
-      element: Fire
 
   rush:
     name: "Spicule"
     picture: Spicule_Michael
+    element: Fire
     effects: 
-      - desc: -50% AP Cost
+      - desc: AP cost -50%
         duration: 20
         meta:
           priority: 1
@@ -1854,7 +1859,6 @@
           buffValue: 50
     power: ATK x 3500%
     maxHits: 8
-    element: Fire
     
   notes: >
       _WIP._
@@ -1886,7 +1890,8 @@
       **Rotation**
       
       *Normal > Pyroclast Punch > Bosom Blow > Firefest (Damage rotation)*
-    
+
+
 - name: Fidel Camuze (Winter)
   cat: jp
   rating: 10
@@ -1898,16 +1903,16 @@
 
   stats:
     hp: 15960
-    atk: 3126
+    atk: 3398
     int: 1549
     def: 1957
     hit: 1247
     grd: 812
 
   talents:
-    - name: "The Gift of Happiness II"
+    - name: "The Gift of Happiness"
       effects: 
-        - desc: +20% ATK
+        - desc: ATK +20%
           all: true
           meta:
             priority: 2
@@ -1915,34 +1920,38 @@
             buffValue: 20
     - name: "A Winter Prayer II"
       effects: 
-        - desc: AP recovery from Normal Attacks +100% when Hit Count is over 100
+        - desc: Normal attack AP recovery +100% when hitcount is 100 or more
           all: true
           meta:
             priority: 3
             buff: AP Recovery
+            buffCondition: Hit Count > 100
             buffValue: 100
-        - desc: ATK Damage +20% when Hit Count is over 200
+        - desc: ATK damage dealt +20% when hitcount is 200 or more
           all: true
           meta:
             priority: 3
             buff: ATK Damage
+            buffCondition: Hit Count > 200
             buffValue: 20
     - name: "Colorful Galleria II"
+      shortEffects: Bullet Barrage and Bombing Run deal damage +100% when skill chain is 3 or more, and +200% when skill chain is 5 or more
       effects: 
-        - desc: Bullet Barrage and Bombing Run Damage +100% when skill chain is 3+
-        - desc: Bullet Barrage and Bombing Run Damage +200% when skill chain is 5+
+        - desc: Bullet Barrage and Bombing Run deal damage +100% when skill chain is 3 or more
+        - desc: Bullet Barrage and Bombing Run deal damage +200% when skill chain is 5 or more
     - name: "Novice Santa"
+      shortEffects: ATK +25% and HIT +10%
       effects: 
-        - desc: ATK +15%
+        - desc: ATK +25%
           meta:
             priority: 4
             buff: ATK
-            buffValue: 15
-        - desc: HIT +15%
+            buffValue: 25
+        - desc: HIT +10%
           meta:
             priority: 4
             buff: HIT
-            buffValue: 15
+            buffValue: 10
 
   skills:
     - name: "Flying Skyline Spray"
@@ -1953,7 +1962,7 @@
     - name: "Flying Divebomb"
       picture: Stardust_Aim
       power: ATK x 150%
-      ap: 130
+      ap: 13
       maxHits: 3
       highlight: true
     - name: "Bullet Barrage"
@@ -1972,16 +1981,23 @@
   rush:
     name: "Holiday Surprise"
     picture: Holiday_Surprise_Xmas_Fidel
+    shortEffects: AP cost -30% and critical hit chance +20% (Self/20s)
     effects: 
-      - desc: -30% AP Cost
-        duration: 20
-      - desc: Crit Rate +20%
+      - desc: AP cost -30%
+        all: false
         duration: 20
         meta:
-          priority: 4
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 30      
+      - desc: Critical hit chance +20%
+        all: false
+        duration: 20
+        meta:
+          priority: 1
           buff: Crit Rate
           buffValue: 20
-    power: ATK x 4000%
+    power: ATK x 5000%
     maxHits: 30
     
   notes: >
@@ -2012,7 +2028,8 @@
       *Normal > Bombing Run > Flying Divebomb > Bombing Run > Bombing Run > Bullet Barrage (Damage rotation)*
       
       *Normal > Flying Divebomb > Bombing Run > Flying Divebomb > Bombing Run > Bombing Run > Bullet Barrage (Damage rotation 103+ AP)*
-    
+
+
 - name: Welch Vineyard (Tearful)
   cat: jp
   rating: 1
@@ -3523,6 +3540,7 @@
     power: ATK x 4000%
     maxHits: 1
 
+
 - name: Fayt Leingod (Awakened)
   cat: jp
   rating: 5
@@ -3542,7 +3560,7 @@
     grd: 819
 
   talents:
-    - name: "Star Athlete III"
+    - name: "Star Athlete"
       effects: 
         - desc: ATK +40%
           all: true
@@ -3552,30 +3570,31 @@
             buffValue: 40
     - name: "Speak Softly & Carry A Big Stick"
       effects: 
-        - desc: Imbue attacks with Fire and Light
+        - desc: Imbues attacks with fire and light
     - name: "Feinting Tactics"
+      shortEffects: Elemental damage dealt +15%, and +30% when hitcount is 100 or more (All Party)
       effects: 
-        - desc: Elemental Damage +15%
+        - desc: Elemental damage dealt +15%
           all: true
           meta:
             priority: 1
             buff: Elemental Damage
             buffValue: 15
-        - desc: Elemental Damage +30% when at 100% HP
+        - desc: Elemental damage dealt +30% when hitcount is 100 or more
           all: true
           meta:
-            priority: 3
+            priority: 1
             buff: Elemental Damage
-            buffCondition: HP is 100%
-            buffValue: 30
+            buffCondition: Hit Count > 100
+            buffValue: 30            
     - name: "Stubborn to a Fault"
       effects: 
         - desc: No flinching when taking damage of 15% HP or less
-          all: Long Range Weapons / Self
-    - name: "Avoidable"
+          all: Long Range Weapons/Self
+    - name: "World's Hope"
       effects: 
         - desc: Enables evasion during air attacks
-        - desc: Nullifies charge assault critical damage penalty
+        - desc: Nullifies critical damage penalty during charge assault
           all: Self
     - name: "God Against God"
       effects: 
@@ -3584,33 +3603,33 @@
             priority: 4
             buff: AP Cost Reduction
             buffValue: 5
-        - desc: charge assault Medium vertical air laid wing + 100% failure
+        - desc: Damage dealt +100% by Avian Air Raid when using charge assault
 
   skills:
-    - name: "Reflect Strife Flight"
+    - name: "Gliding Side Kick"
       picture: Side_Kick
-      power: ATK x 200%
+      power: ATK x 20%
       ap: 19
       maxHits: 3
+      highlight: true  
     - name: "Rising Blade"
       picture: Rising_Blade
       power: ATK x 460%
       ap: 32
       maxHits: 5
-    - name: "Shotgun Bolt"
+    - name: "Shotgun Blast"
       picture: Shotgun_Blast
       element: Lightning
       power: ATK x 210%
       ap: 20
       maxHits: 4
       highlight: true
-    - name: "Vertical Air Raid Wing"
+    - name: "Avian Air Raid"
       picture: Avian_Air_Raid
       element: Light
       power: ATK x 500%
       ap: 30
       maxHits: 5
-      highlight: true
     - name: "Crescent Mirage"
       picture: Crescent_Mirage
       power: ATK x 220%
@@ -3621,8 +3640,9 @@
   rush:
     name: "Colossal Ethereal Blast"
     picture: Colossal_Ethereal_Blast_Fayt
+    element: Light
     effects: 
-      - desc: Elemental Damage +50%
+      - desc: Elemental damage dealt +50%
         all: true
         duration: 20
         meta:
