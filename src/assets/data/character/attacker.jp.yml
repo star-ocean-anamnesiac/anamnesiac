@@ -18,7 +18,6 @@
 
   talents:
     - name: "Quiet Determination"
-      shortEffects: ATK +40%, and ATK +65% at 100% HP
       effects: 
         - desc: ATK +40%
           all: true
@@ -26,40 +25,40 @@
             priority: 1
             buff: ATK
             buffValue: 40
-        - desc: ATK +65% at 100% HP
+        - desc: ATK +60% when at 100% HP
           all: true
           meta:
             priority: 3
             buff: ATK
             buffCondition: HP is 100%
-            buffValue: 65
-    - name: "Automated Infantry Android"
+            buffValue: 60
+    - name: "Clockwork Infantry"
       effects: 
-        - desc: Evasion AP consumption -100% on perfect dodge
-    - name: "Silver Protection"
+        - desc: Evasion AP cost -100% on perfect dodge
+    - name: "Holy Blessing"
       effects: 
-        - desc: AP recovery from normal attacks +100%
+        - desc: Normal attack AP recovery +100%
           all: true
           meta:
             priority: 1
             buff: AP Recovery
             buffValue: 100
-    - name: "Prayer"
+    - name: "Wish"
       effects: 
-        - desc: Evasion AP consumption -50% 
-        - desc: Enables evasion during air attacks
-        - desc: Imbues attacks with light/dark element
+        - desc: Evasion AP cost -50% 
+        - desc: Evasion possible during air attacks
+        - desc: Imbues attacks with light and dark
 
   skills:
     - name: "YoRHa Arms: One"
       picture: YoHRa_Arms_One
-      power: ATK x 440%
+      power: ATK x 380%
       ap: 22
       maxHits: 2
       highlight: true
     - name: "YoRHa Arms: Two"
       picture: YoHRa_Arms_Two
-      power: ATK x 1280%
+      power: ATK x 1100%
       ap: 42
       maxHits: 2
     - name: "YoRHa Pod: One"
@@ -77,22 +76,23 @@
   rush:
     name: "YoRHa Arms: Zero"
     picture: YoHRa_Arms_Ø_2B
+    shortEffects: Elemental damage dealt +70% (Self/20s) and +50% (All Party/20s)
     effects: 
-      - desc: All elemental damage +50%
+      - desc: Elemental damage dealt +70%
         all: false
-        duration: 20
-        meta:
-          priority: 4
-          buff: Elemental Damage
-          buffValue: 50
-      - desc: All elemental damage +70%
-        all: true
         duration: 20
         meta:
           priority: 1
           buff: Elemental Damage
           buffValue: 70
-    power: ATK x 4500%
+      - desc: Elemental damage dealt +50%
+        all: true
+        duration: 20
+        meta:
+          priority: 1
+          buff: Elemental Damage
+          buffValue: 50
+    power: ATK x 4000%
     maxHits: 27
     
   notes: >
@@ -188,6 +188,7 @@
       maxHits: 5
     - name: "Air Raid"
       picture: Air_Raid
+      element: Light
       power: ATK x 460%
       ap: 35
       maxHits: 5
@@ -195,7 +196,6 @@
   rush:
     name: "Ethereal Blast"
     picture: Ethereal_Blast_Fidel
-    element: Light
     effects: 
       - desc: AP cost -60%
         duration: 20
@@ -240,35 +240,33 @@
   ace: true
   limited: false
   star: 5
-
+    
   stats:
     hp: 15750
     atk: 3106
     int: 1523
     def: 1930
     hit: 1162
-    grd: 812
+    grd: 812    
 
   talents:
-    - name: "Klaus Champion II"
+    - name: "Klausian Champion II"
       effects: 
-        - desc: AP cost -40% 
-          all: false
+        - desc: AP cost -40%
           meta:
-            priority: 4
+            priority: 1
             buff: AP Cost Reduction
             buffValue: 40
     - name: "Greater Master of the Training Hall"
       effects: 
-        - desc: ATK +30% 
-          all: false
+        - desc: ATK +30%
           meta:
-            priority: 4
+            priority: 1
             buff: ATK
             buffValue: 30
     - name: "Revolutionary Spirit"
       effects:
-        - desc: Critical chance +20%
+        - desc: Critical hit chance +20%
           meta:
             priority: 4
             buff: Crit Rate
@@ -279,7 +277,7 @@
       picture: Triple_Kick
       power: ATK x 250%
       ap: 24
-      maxHits: 2
+      maxHits: 3
       highlight: true
     - name: "Crescent Locus"
       picture: Crescent_Locus
@@ -355,7 +353,7 @@
   talents:
     - name: "Stellar Support"
       effects: 
-        - desc: Critical chance +30%
+        - desc: Critical hit chance +30%
           all: true
           meta:
             priority: 1
@@ -394,7 +392,7 @@
     picture: Blazing_Cannon_Anne
     element: Fire
     effects: 
-      - desc: Critical chance +60%
+      - desc: Critical hit chance +60%
         all: true
         duration: 20
         meta:
@@ -458,7 +456,7 @@
     - name: "Finest Instructor of the Blade II"
       effects: 
         - desc: No flinching when taking damage of 20% HP or less
-    - name: "Camuze Way"
+    - name: "Camuze's Way"
       effects: 
         - desc: Damage dealt to humanoids +60%
           all: false
@@ -468,7 +466,7 @@
             priority: 4
             buff: Damage To Humans
             buffValue: 60
-
+            
   skills:
     - name: "Rising Blade"
       picture: Rising_Blade
@@ -3034,7 +3032,7 @@
       Normal > Rocket Punch > Hammer Slammer > Jump'n'Thump*3 (Replace Hammer Slammer with Force Field if 104 AP or higher)
       
       
-- name: Fidel (Awakened)
+- name: Fidel Camuze (Awakened)
   cat: jp
   rating: 7
   picture: Fidel
@@ -3070,10 +3068,10 @@
             buffValue: 20
     - name: "Steadfast Courage"
       effects:
-        - desc: Enables evasion during air attacks
+        - desc: Evasion possible during air attacks
     - name: "Heir to the Camuze Style"
       effects:
-        - desc: Single Target Damage +10% when skill chain is 3+
+        - desc: Single target damage dealt +10% when skill chain is 3 or more
           meta:
             priority: 3
             buff: Single Target Damage
@@ -3094,7 +3092,7 @@
             buffValue: 10  
     - name: "Inherited Will"
       effects:
-        - desc: Nullifies HP Reduction Field
+        - desc: Nullifies HP Reduction Fields
         
   skills:
     - name: "Double Slash"
@@ -3107,7 +3105,7 @@
       picture: Air_Slash_I
       power: ATK x 220%
       ap: 20
-      maxHits: 2
+      maxHits: 1
       highlight: true
     - name: "Cyclone Blade"
       picture: Cyclone_Blade
@@ -3116,10 +3114,11 @@
       maxHits: 5
     - name: "Air Raid"
       picture: Air_Raid
+      element: Light
       power: ATK x 720%
       ap: 35
       maxHits: 6
-    - name: "Double Air Slash"
+    - name: "Empyrean Slash"
       picture: Twin_Zapper
       power: ATK x 300%
       ap: 20
@@ -3128,6 +3127,7 @@
   rush:
     name: "Ethereal Blast"
     picture: Ethereal_Blast_Fidel
+    element: Light
     effects: 
       - desc: AP cost -60%
         duration: 20
@@ -4269,6 +4269,7 @@
       
       *Normal > Northern Cross > Piercing Blades > Northern Cross ^n > Sword Dance (dash after first several hits)*
 
+
 - name: Cliff Fittir (Awakened)
   cat: jp
   rating: 4
@@ -4306,14 +4307,14 @@
             buffValue: 50
     - name: "Revolutionary Spirit"
       effects:
-        - desc: Critical Rate +30%
+        - desc: Critical hit chance +30%
           meta:
             priority: 4
             buff: Crit Rate
             buffValue: 30
     - name: "Unleashed"
       effects:
-        - desc: Critical Damage +30%
+        - desc: Critical damage +30%
           meta:
             priority: 4
             buff: Crit Damage
@@ -4321,19 +4322,19 @@
     - name: "The Fist of the Wind"
       effects:
         - desc: Evasion possible during air attacks
-        - desc: Nullifies charge assault critical damage penalty
+        - desc: Nullifies critical damage penalty during charge assault
           all: false
     - name: "Quark Founder"
-      shortEffects: ATK Damage +50%/100% when skill chain is 3/5
+      shortEffects: ATK damage +50%/100% when skill chain is 3/5 or more
       effects:
-        - desc: ATK damage +50% when skill chain is 3+
+        - desc: ATK damage +50% when skill chain is 3 or more
           all: false
           meta:
             priority: 3
             buff: ATK Damage
             buffCondition: Skill Chain 3+
             buffValue: 50
-        - desc: ATK damage +100% when skill chain is 5+
+        - desc: ATK damage +100% when skill chain is 5 or more
           all: false
           meta:
             priority: 3
