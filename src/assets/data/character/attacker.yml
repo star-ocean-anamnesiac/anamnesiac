@@ -18,6 +18,7 @@
 
   talents:
     - name: "Silent Will"
+      shortEffects: ATK +40%, and ATK +60% when HP is 100%
       effects: 
         - desc: ATK +40%
           all: true
@@ -25,7 +26,7 @@
             priority: 1
             buff: ATK
             buffValue: 40
-        - desc: ATK +60% when at 100% HP
+        - desc: ATK +60% when HP is 100%
           all: true
           meta:
             priority: 3
@@ -282,7 +283,7 @@
         - desc: Evasion possible during air attacks
     - name: "Heir to the Camuze Style"
       effects:
-        - desc: Single target damage dealt +10% when skill chain is 3 or more
+        - desc: Single target damage dealt +10% when skill chain is >3
           meta:
             priority: 3
             buff: Single Target Damage
@@ -522,7 +523,7 @@
             buffValue: 30
     - name: "Grandmother's Teachings II"
       effects: 
-        - desc: No flinching when taking damage of 20% HP or less
+        - desc: No flinching when taking damage of 20% of max HP or less
 
   skills:
     - name: "Hammer of Might"
@@ -620,7 +621,7 @@
             buffValue: 20
     - name: "Finest Instructor of the Blade II"
       effects: 
-        - desc: No flinching when taking damage of 20% HP or less
+        - desc: No flinching when taking damage of 20% of max HP or less
     - name: "Camuze's Way"
       effects: 
         - desc: Damage dealt to humanoids +60%
@@ -1017,7 +1018,7 @@
             buffValue: 20
     - name: "Platina's Heart"
       effects: 
-        - desc: All attacks have +15% chance of inflicting silence
+        - desc: All attacks have +15% chance to inflict silence
           meta:
             priority: 4
             buff: Silence Attack Chance
@@ -1381,7 +1382,7 @@
             buff: Enemy DEF Reduction
             buffValue: 30
     - name: "Black Brigade Fury II"
-      shortEffects: ATK +30% (All Attackers/All Defenders)
+      shortEffects: ATK +30% (All Attackers/Defenders)
       effects: 
         - desc: ATK +30%
           all: Attackers
@@ -1574,7 +1575,7 @@
   rush:
     name: "Divine Hammer"
     picture: Divine_Hammer_Ilia
-    shortEffects: AP cost -20% (All Attackers/All Invokers/20s)
+    shortEffects: AP cost -20% (All Attackers/Invokers/20s)
     effects: 
       - desc: AP cost -20%
         all: Attackers
@@ -1662,7 +1663,7 @@
             buffValue: 15
     - name: "Mischievous Wings II"
       effects: 
-        - desc: ATK damage dealt +15% when hitcount is 50 or more
+        - desc: ATK damage dealt +15% when hitcount is >50
           all: true
           meta:
             priority: 3
@@ -1676,7 +1677,7 @@
             priority: 4
             buff: AP Cost Reduction
             buffValue: 25
-        - desc: ATK +15% when hitcount is 100 or more
+        - desc: ATK +15% when hitcount is >100
           meta:
             priority: 3
             buff: ATK
@@ -1684,7 +1685,7 @@
             buffValue: 15
     - name: "Prayer"
       effects: 
-        - desc: No flinching when taking damage of 15% HP or less
+        - desc: No flinching when taking damage of 15% of max HP or less
           all: Attackers
 
   skills:
@@ -1792,6 +1793,7 @@
 
   talents:
     - name: "Hand Trick II"
+      shortEffects: ATK +25%, and ATK +35% when hitcount is >100
       effects: 
         - desc: ATK +25%
           all: true
@@ -1799,7 +1801,7 @@
             priority: 1
             buff: ATK
             buffValue: 25
-        - desc: ATK +35% when hitcount is 100 or more
+        - desc: ATK +35% when hitcount is >100
           all: true
           meta:
             priority: 1
@@ -1941,7 +1943,7 @@
             buffValue: 15
     - name: "Stubborn to a Fault"
       effects: 
-        - desc: No flinching when taking damage of 10% HP or less
+        - desc: No flinching when taking damage of 10% of max HP or less
           all: Long Range Weapons/Self
 
   skills:
@@ -2201,14 +2203,14 @@
             buffValue: 20
     - name: "A Winter Prayer II"
       effects: 
-        - desc: Normal attack AP recovery +100% when hitcount is 100 or more
+        - desc: Normal attack AP recovery +100% when hitcount is >100
           all: true
           meta:
             priority: 3
             buff: AP Recovery
             buffCondition: Hit Count > 100
             buffValue: 100
-        - desc: ATK damage dealt +20% when hitcount is 200 or more
+        - desc: ATK damage dealt +20% when hitcount is >200
           all: true
           meta:
             priority: 3
@@ -2491,26 +2493,26 @@
             buff: ATK
             buffValue: 20
     - name: "Cat's Interlude"
-      shortEffects: AP cost -20%, and ATK +10%/20%/30% when hitcount is 100/150/200 or more
+      shortEffects: AP cost -20%, and ATK +10%/+20%/+30% when hitcount is >100/>150/>200
       effects:
         - desc: AP cost -20%
           meta:
             priority: 4
             buff: AP Cost Reduction
             buffValue: 20
-        - desc: ATK +10% at when hitcount is at 100 or more
+        - desc: ATK +10% at when hitcount is >100
           meta:
             priority: 4
             buff: ATK
             buffCondition: Hit Count > 100
             buffValue: 10
-        - desc: ATK +20% when hitcount is 150 or more
+        - desc: ATK +20% when hitcount is >150
           meta:
             priority: 4
             buff: ATK
             buffCondition: Hit Count > 150
             buffValue: 20
-        - desc: ATK +30% when hitcount is 200 or more
+        - desc: ATK +30% when hitcount is >200
           meta:
             priority: 4
             buff: ATK
@@ -2628,7 +2630,7 @@
           all: Short Range Weapons
     - name: "Heir to the Blade II"
       effects: 
-        - desc: AP cost -40% when skill chain is 3 or more
+        - desc: AP cost -40% when skill chain is >3
           meta:
             priority: 4
             buff: AP Cost Reduction
@@ -2744,7 +2746,7 @@
             buffValue: 10
     - name: "Mischievous Brat"
       effects:
-        - desc: No flinching when taking damage of 20% HP or less
+        - desc: No flinching when taking damage of 20% of max HP or less
         
   skills:
     - name: "Double Slash"
@@ -2816,7 +2818,7 @@
             buffValue: 15
     - name: "Flask-Full of Emotions"
       effects: 
-        - desc: AP cost -20% when skill chain is 3 or more
+        - desc: AP cost -20% when skill chain is >3
           all: true
           meta:
             priority: 4
@@ -2824,15 +2826,15 @@
             buffCondition: Skill Chain 3+
             buffValue: 20
     - name: "Love of Japanese Cuisine II"
-      shortEffects: ATK damage dealt +100% when skill chain is 3 or more, and +200% when skill chain is 5 or more
+      shortEffects: ATK damage dealt +100%/+200% when skill chain is >3/>5
       effects: 
-        - desc: ATK damage dealt +100% when skill chain is 3 or more
+        - desc: ATK damage dealt +100% when skill chain is >3
           meta:
             priority: 3
             buff: ATK Damage
             buffCondition: Skill Chain 3+
             buffValue: 100
-        - desc: ATK damage dealt +200% when when skill chain is 5 or more
+        - desc: ATK damage dealt +200% when when skill chain is >5
           meta:
             priority: 3
             buff: ATK Damage
@@ -2976,7 +2978,7 @@
       effects: 
         - desc: Nullifies charge assault critical damage penalty
           all: Attackers
-        - desc: No flinching when taking damage of 30% HP or less during a charge assault
+        - desc: No flinching when taking damage of 30% of max HP or less during a charge assault
           all: Attackers
     - name: "Bad Luck II"
       shortEffects: Normal attack AP recovery +100% and evasion AP cost -50% (All Attackers)
@@ -2991,7 +2993,7 @@
           all: Attackers
     - name: "Sweet Present"
       effects: 
-        - desc: 70% chance of surviving a lethal attack at 20% HP or more
+        - desc: 70% chance of surviving a lethal attack at 20% of max HP or more
 
   skills:
     - name: "Crescent Locus"
@@ -3118,9 +3120,9 @@
             buffCondition: Short Range
             buffValue: 100
     - name: "Father’s Teachings"
-      shortEffects: Critical hit chance +30% and critical damage +30% when at 100% HP
+      shortEffects: Critical hit chance +30% and critical damage +30% when HP is 100%
       effects: 
-        - desc: Critical hit chance +30% when at 100% HP
+        - desc: Critical hit chance +30% when HP is 100%
           meta:
             priority: 1
             buff: Crit Rate
@@ -3263,16 +3265,16 @@
             buff: AP Cost Reduction
             buffValue: 10
     - name: "Heir of Symbological Arts"
-      shortEffects: Rush combo damage +10%/20% when hitcount is 100/200 or more
+      shortEffects: Rush combo damage +10%/+20% when hitcount is >100/>200
       effects: 
-        - desc: Rush combo damage +10% when hitcount is 100 or more
+        - desc: Rush combo damage +10% when hitcount is >100
           all: false
           meta:
             priority: 3
             buff: Rush Damage
             buffCondition: Hit Count > 100
             buffValue: 10
-        - desc: Rush combo damage +20% when hitcount is 200 or more
+        - desc: Rush combo damage +20% when hitcount is >200
           all: false
           meta:
             priority: 3
@@ -3470,7 +3472,7 @@
             buff: AP Recovery
             buffValue: 100         
     - name: "Blue Star Shower II"
-      shortEffects: Single target damage +5%, and +20% when hitcount is 150 or more (All Long Range Weapons/Self)
+      shortEffects: Single target damage +5%, and single target damage +20% when hitcount is >150 (All Long Range Weapons/Self)
       effects: 
         - desc: Single target damage +5%
           all: Long Range Weapons/Self
@@ -3489,19 +3491,19 @@
       effects: 
         - desc: Recovers 5% HP every 3 seconds
           all: true
-        - desc: Recovers 10% HP every 3 seconds when hitcount is 100 or more
+        - desc: Recovers 10% HP every 3 seconds when hitcount is >100
           all: true
     - name: "7-Million-Year-Old Present"
       effects: 
-        - desc: No flinching when taking damage of 10% HP or less
+        - desc: No flinching when taking damage of 10% of max HP or less
         - desc: Evasion possible during air attacks
-        - desc: AP cost -20% when hitcount is 50 or more
+        - desc: AP cost -20% when hitcount is >50
           meta:
             priority: 3
             buff: AP Cost Reduction
             buffCondition: Hit Count > 50
             buffValue: 20
-        - desc: ATK +20% when hitcount is 50 or more
+        - desc: ATK +20% when hitcount is >50
           meta:
             priority: 3
             buff: ATK
@@ -3537,7 +3539,7 @@
     name: "Celestial Vow"
     picture: Starry_Ace_Bridal_Rena
     effects: 
-      - desc: No flinching when taking damage of 25% HP or less
+      - desc: No flinching when taking damage of 25% of max HP or less
         all: true
         duration: 20
     power: ATK x 4500%
@@ -3672,7 +3674,7 @@
             buffValue: 20
     - name: "Crystalized Effort II"
       effects:
-        - desc: No flinching when taking damage of 20% HP or less
+        - desc: No flinching when taking damage of 20% of max HP or less
         
   skills:
     - name: "Dextral Edge"
@@ -3734,7 +3736,7 @@
             buffValue: 8
     - name: "Steel Wall II"
       effects: 
-        - desc: No flinching when taking damage of 20% HP or less
+        - desc: No flinching when taking damage of 20% of max HP or less
           all: false
  
   skills:
@@ -4121,7 +4123,7 @@
           all: true
     - name: "Robbie Attack! II"
       effects: 
-        - desc: ATK +25% when hitcount is 100 or more
+        - desc: ATK +25% when hitcount is >100
           meta:
             priority: 4
             buff: ATK
@@ -4138,7 +4140,7 @@
             buffValue: 30    
     - name: "Creative Spirit"
       effects: 
-        - desc: AP cost -40% when skill chain is 3 or more
+        - desc: AP cost -40% when skill chain is >3
           meta:
             priority: 1
             buff: AP Cost Reduction
@@ -4259,16 +4261,16 @@
             buffCondition: Behind Target
             buffValue: 40
     - name: "Result of Practice"
-      shortEffects: Damage dealt +150% by Talon Pierce and Tri Zapper when skill chain is 3 or more, and +300% when skill chain is 5 or more
+      shortEffects: Damage dealt +150%/+300% by Talon Pierce and Tri Zapper when skill chain is >3/>5
       effects: 
-        - desc: Damage dealt +150% by Talon Pierce and Tri Zapper when skill chain is 3 or more
+        - desc: Damage dealt +150% by Talon Pierce and Tri Zapper when skill chain is >3
           all: true
           meta:
             priority: 3
             buff: Damage
             buffCondition: Skill Chain 3+
             buffValue: 150
-        - desc: Damage dealt +300% by Talon Pierce and Tri Zapper when skill chain is 5 or more
+        - desc: Damage dealt +300% by Talon Pierce and Tri Zapper when skill chain is >5
           meta:
             priority: 3
             buff: Damage
@@ -4276,7 +4278,7 @@
             buffValue: 300
     - name: "Mister Perfect"
       effects:
-        - desc: Normal attack AP recovery +100% when at 100% HP
+        - desc: Normal attack AP recovery +100% when HP is 100%
           meta:
             priority: 1
             buff: AP Recovery
