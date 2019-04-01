@@ -17,7 +17,8 @@
     grd: 826
 
   talents:
-    - name: "Quiet Determination"
+    - name: "Silent Will"
+      shortEffects: ATK +40%, and ATK +60% when HP is 100%    
       effects: 
         - desc: ATK +40%
           all: true
@@ -25,7 +26,7 @@
             priority: 1
             buff: ATK
             buffValue: 40
-        - desc: ATK +60% when at 100% HP
+        - desc: ATK +60% when HP is 100%
           all: true
           meta:
             priority: 3
@@ -361,7 +362,7 @@
             buffValue: 30
     - name: "Grandmother's Teachings"
       effects: 
-        - desc: No flinching when taking damage of 20% HP or less
+        - desc: No flinching when taking damage of 20% of max HP or less
 
   skills:
     - name: "Hammer of Might"
@@ -455,7 +456,7 @@
             buffValue: 20
     - name: "Finest Instructor of the Blade"
       effects: 
-        - desc: No flinching when taking damage of 20% HP or less
+        - desc: No flinching when taking damage of 20% of max HP or less
     - name: "Camuze's Way"
       effects: 
         - desc: Damage dealt to humanoids +60%
@@ -706,12 +707,12 @@
             priority: 4
             buff: AP Recovery From Normal Attacks
             buffValue: 100
-        - desc: Nullifies Rush Gauge Reduction Field
+        - desc: Nullifies rush gauge reduction field
           all: Short Range Weapons
     - name: "Hit-the-Watermelon"
       effects: 
         - desc: Evasion possible during air attacks      
-        - desc: AP cost -50% when skill chain is 3 or more
+        - desc: AP cost -50% when skill chain is >3 or more
           meta:
             priority: 4
             buff: AP Cost Reduction
@@ -825,7 +826,7 @@
             buffValue: 20
     - name: "Platina's Heart"
       effects: 
-        - desc: All attacks have +15% chance of inflicting silence
+        - desc: All attacks have +15% chance to inflict silence
           meta:
             priority: 4
             buff: Silence Attack Chance
@@ -1162,7 +1163,7 @@
             buff: Enemy DEF Reduction
             buffValue: 30
     - name: "Black Brigade Fury"
-      shortEffects: ATK +30% (All Attackers/All Defenders)
+      shortEffects: ATK +30% (All Attackers/Defenders)
       effects: 
         - desc: ATK +30%
           all: Attackers
@@ -1344,7 +1345,7 @@
   rush:
     name: "Divine Hammer"
     picture: Divine_Hammer_Ilia
-    shortEffects: AP cost -20% (All Attackers/All Invokers/20s)
+    shortEffects: AP cost -20% (All Attackers/Invokers/20s)
     effects: 
       - desc: AP cost -20%
         all: Attackers
@@ -1422,7 +1423,7 @@
             buffValue: 20
     - name: "Mischievous Wings"
       effects: 
-        - desc: ATK damage dealt +20% when hitcount is 50 or more
+        - desc: ATK damage dealt +20% when hitcount is >50
           all: true
           meta:
             priority: 3
@@ -1436,7 +1437,7 @@
             priority: 4
             buff: AP Cost Reduction
             buffValue: 25
-        - desc: ATK +20% when hitcount is 100 or more
+        - desc: ATK +20% when hitcount is >100
           meta:
             priority: 3
             buff: ATK
@@ -1444,7 +1445,7 @@
             buffValue: 20
     - name: "Prayer"
       effects: 
-        - desc: No flinching when taking damage of 15% HP or less
+        - desc: No flinching when taking damage of 15% of max HP or less
           all: Attackers
 
   skills:
@@ -1542,14 +1543,15 @@
 
   talents:
     - name: "Hand Trick II"
+      shorteffects: ATK +40%, and ATK +55% when hitcount is >100 (All Party)
       effects: 
-        - desc: ATK +55%
+        - desc: ATK +45%
           all: true
           meta:
             priority: 1
             buff: ATK
-            buffValue: 55
-        - desc: ATK +55% when hitcount is 100 or more
+            buffValue: 45
+        - desc: ATK +55% when hitcount is >100
           all: true
           meta:
             priority: 1
@@ -1570,7 +1572,7 @@
           all: true
     - name: "Full Moon Howl"
       effects: 
-        - desc: Damage dealt +60% by Pumpkin Smash when skill chain is 4 or more
+        - desc: Damage dealt +60% by Pumpkin Smash when skill chain is >4
 
   skills:
     - name: "Lantern Burst"
@@ -1681,7 +1683,7 @@
             buffValue: 15
     - name: "Stubborn to a Fault"
       effects: 
-        - desc: No flinching when taking damage of 10% HP or less
+        - desc: No flinching when taking damage of 10% of max HP or less
           all: Long Range Weapons/Self
 
   skills:
@@ -1755,7 +1757,8 @@
       **Rotation**
       
       *Normal > Shotgun Blast > Gliding Side Kick > Shotgun Blast > Spam till out of AP (Damage rotation)*
-    
+
+
 - name: Michael
   cat: jp
   rating: 5
@@ -1920,14 +1923,14 @@
             buffValue: 20
     - name: "A Winter Prayer II"
       effects: 
-        - desc: Normal attack AP recovery +100% when hitcount is 100 or more
+        - desc: Normal attack AP recovery +100% when hitcount is >100
           all: true
           meta:
             priority: 3
             buff: AP Recovery
             buffCondition: Hit Count > 100
             buffValue: 100
-        - desc: ATK damage dealt +20% when hitcount is 200 or more
+        - desc: ATK damage dealt +20% when hitcount is >200
           all: true
           meta:
             priority: 3
@@ -1935,7 +1938,7 @@
             buffCondition: Hit Count > 200
             buffValue: 20
     - name: "Colorful Galleria II"
-      shortEffects: Bullet Barrage and Bombing Run deal damage +100% when skill chain is 3 or more, and +200% when skill chain is 5 or more
+      shortEffects: Bullet Barrage and Bombing Run deal damage +100%/+200% when skill chain is >3/>5
       effects: 
         - desc: Bullet Barrage and Bombing Run deal damage +100% when skill chain is 3 or more
         - desc: Bullet Barrage and Bombing Run deal damage +200% when skill chain is 5 or more
