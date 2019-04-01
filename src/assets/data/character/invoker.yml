@@ -68,7 +68,7 @@
       power: 0%
       ap: 60
       maxHits: 1
-      notes: ATK +25% (All Party/20s)
+      notes: ATK +25% (Party/20s)
       meta:
         priority: 2
         buff: ATK
@@ -424,7 +424,7 @@
             buffValue: 30
     - name: "Grampa's Wish"
       effects: 
-        - desc: No flinching when taking damage of 20% HP or less
+        - desc: No flinching when taking damage of 20% of max HP or less
 
   skills:
     - name: "Plunging Fire Bolts"
@@ -549,10 +549,10 @@
             buff: Stun Rate
             buffValue: 15
     - name: "Eldarian Honor II"
-      shortEffects: 80% chance of surviving a lethal attack and symbology cast time -80% when at 10% HP or more
+      shortEffects: 80% chance of surviving a lethal attack and symbology cast time -80% when at 10% of max HP or more
       effects: 
-        - desc: 80% chance of surviving a lethal attack at 10% HP or more
-        - desc: Symbology cast time -80% at 10% HP or more
+        - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
+        - desc: Symbology cast time -80% when at 10% of max HP or more
           meta:
             priority: 4
             buff: Cast Time Reduction
@@ -672,14 +672,14 @@
             buffValue: 30
     - name: "Enchanted Symbology"
       effects: 
-        - desc: All attacks have +25% chance of inflicting silence
+        - desc: All attacks have +25% chance to inflict silence
           meta:
             priority: 4
             buff: Silence Attack Chance
             buffValue: 25
     - name: "A Lady's Poise II"
       effects:
-        - desc: INT damage dealt +20% when at 100% HP
+        - desc: INT damage dealt +20% when HP is 100%
           meta:
             priority: 4
             buff: INT Damage
@@ -813,16 +813,16 @@
         - desc: No flinching when casting symbology
           all: true
     - name: "Infinite Curiosity"
-      shortEffects: ATK/INT damage dealt +15% when skill chain is 3 or more (All Party)
+      shortEffects: ATK/INT damage dealt +15% when skill chain is >3 (All Party)
       effects:
-        - desc: ATK damage dealt +15% when skill chain is 3 or more
+        - desc: ATK damage dealt +15% when skill chain is >3
           all: true
           meta:
             priority: 1
             buff: ATK Damage
             buffCondition: Skill Chain 3+
             buffValue: 15
-        - desc: INT damage +15% when skill chain is 3 or more
+        - desc: INT damage +15% when skill chain is >3
           all: true
           meta:
             priority: 1
@@ -831,7 +831,7 @@
             buffValue: 15
     - name: "Symbology of Viewing"
       effects:
-        - desc: AP cost -60% when skill chain is 3 or more
+        - desc: AP cost -60% when skill chain is >3
           meta:
             priority: 4
             buff: AP Cost Reduction
@@ -967,7 +967,7 @@
           all: true
     - name: "Blue Rose Bouquet"
       effects:
-        - desc: AP cost -40% when skill chain is 3 or more
+        - desc: AP cost -40% when skill chain is >3
           meta:
             priority: 4
             buff: AP Cost Reduction
@@ -1234,26 +1234,26 @@
             buff: INT
             buffValue: 40
     - name: "Escort To The Altar II"
-      shortEffects: AP cost -20%, and AP cost -30%/40%/50% when hitcount is 50/100/150 or more
+      shortEffects: AP cost -20%, and AP cost -30%/-40%/-50% when hitcount is >50/>100/>150
       effects: 
         - desc: AP cost -20%
           meta:
             priority: 1
             buff: AP Cost Reduction
             buffValue: 20
-        - desc: AP cost -30% when hitcount is 50 or more
+        - desc: AP cost -30% when hitcount is >50
           meta:
             priority: 3
             buff: AP Cost Reduction
             buffCondition: Hit Count > 50
             buffValue: 30
-        - desc: AP cost -40% when hitcount is 100 or more
+        - desc: AP cost -40% when hitcount is >100
           meta:
             priority: 3
             buff: AP Cost Reduction
             buffCondition: Hit Count > 100
             buffValue: 40
-        - desc: AP cost -50% when hitcount is 150 or more
+        - desc: AP cost -50% when hitcount is >150
           meta:
             priority: 3
             buff: AP Cost Reduction
@@ -1377,7 +1377,7 @@
   talents:
     - name: "Advance Archaeology Knowledge III"
       effects: 
-        - desc: INT +30% when at 100% HP
+        - desc: INT +30% when HP is 100%
           all: true
           meta:
             priority: 4
@@ -1459,10 +1459,10 @@
             buff: Stun Rate
             buffValue: 15
     - name: "Valiant Soul II"
-      shortEffects: 80% chance of surviving a lethal attack and symbology cast time -80% when at 10% HP or more
+      shortEffects: 80% chance of surviving a lethal attack and symbology cast time -80% when at 10% of max HP or more
       effects:
-        - desc: 80% chance of surviving a lethal attack at 10% HP or more
-        - desc: Symbology cast time -80% when at 10% HP or more
+        - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
+        - desc: Symbology cast time -80% when at 10% of max HP or more
           meta:
             priority: 1
             buff: Cast Time Reduction
@@ -1522,7 +1522,7 @@
   talents:
     - name: "Peering into the Crystal Ball III"
       effects:
-        - desc: Stun rate +30% when at 100% HP
+        - desc: Stun rate +30% when HP is 100%
           meta:
             priority: 1
             buff: Stun Rate
@@ -1753,7 +1753,7 @@
             buffValue: 15
     - name: "How You Looked that Day"
       effects: 
-        - desc: No flinching when taking damage of 20% HP or less
+        - desc: No flinching when taking damage of 20% of max HP or less
 
   skills:
     - name: "Plunging Fire Bolts"
@@ -2118,11 +2118,11 @@
             priority: 3
             buff: Crit Damage
             buffValue: 35
-        - desc: Recovers 5% HP every 3 seconds
+        - desc: Recovers 5% of max HP every 3 seconds
           all: true
     - name: "Rational Observation"
       effects:
-        - desc: Critical hit chance +40% when at 100% HP
+        - desc: Critical hit chance +40% when HP is 100%
           meta:
             priority: 1
             buff: Crit Rate
