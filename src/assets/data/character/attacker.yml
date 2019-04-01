@@ -1793,6 +1793,7 @@
 
   talents:
     - name: "Hand Trick II"
+      shortEffects: ATK +25%, and ATK +35% when hitcount is >100
       effects: 
         - desc: ATK +25%
           all: true
