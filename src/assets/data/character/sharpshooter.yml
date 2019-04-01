@@ -18,6 +18,7 @@
 
   talents:
     - name: "Fleeting Kindness"
+      shortEffects: Damage dealt +45%, and damage dealt +55% when HP is 100%
       effects: 
         - desc: Damage dealt +45%
           all: true
@@ -25,7 +26,7 @@
             priority: 1
             buff: Damage
             buffValue: 45
-        - desc: Damage dealt +55% when at 100% HP
+        - desc: Damage dealt +55% when HP is 100%
           all: true
           meta:
             priority: 1
@@ -79,9 +80,9 @@
   rush:
     name: "YoRHa Hacking Attack: Zero"
     picture: YoHRa_Hacking_Zero_9S
-    shortEffects: Recovers 50% HP, and ATK damage dealt +30% (All Party/20s)
+    shortEffects: Recovers 50% of max HP, and ATK damage dealt +30% (All Party/20s)
     effects: 
-      - desc: Recover 50% HP
+      - desc: Recovers 50% of max HP
         all: true
       - desc: ATK damage dealt +30% 
         duration: 20
@@ -314,7 +315,7 @@
   rush:
     name: "Divine Wrath"
     picture: Divine_Wrath_Nel
-    shortEffects: Attacks have +15% chance to inflict poison, and an additional hit that deals 20% more damage (Self/20s)
+    shortEffects: High chance to inflict Deadly Poison, attacks have +15% chance to inflict poison, and an additional hit that deals 20% more damage (Self/20s)
     effects: 
       - desc: Attacks have +15% chance to inflict poison
         duration: 20
@@ -506,7 +507,7 @@
             buffValue: 30
     - name: "Apris's Divine Favor"
       effects: 
-        - desc: No flinching when taking damage of 20% HP or less
+        - desc: No flinching when taking damage of 20% of max HP or less
           all: true
         
   skills:
@@ -635,7 +636,7 @@
         - desc: Nullifies status ailments for 180 seconds
     - name: "Descendant of Muah"
       effects: 
-        - desc: 80% chance of surviving a lethal attack at 10% HP or more
+        - desc: 80% chance of surviving a lethal attack at 10% of max HP or more
 
   skills:
     - name: "Chaotic Blossoms"
@@ -663,11 +664,11 @@
     name: "Lunar Divination"
     picture: Lunar_Divination_Reimi
     element: Dark
-    shortEffects: Nullifies status ailments and recovers 15% HP every 3 seconds (All Party/15s)
+    shortEffects: Nullifies status ailments and recovers 15% of max HP every 3 seconds (All Party/15s)
     effects: 
       - desc: Nullifies status ailments
         all: true
-      - desc: Recovers 15% HP every 3 seconds
+      - desc: Recovers 15% of max HP every 3 seconds
         duration: 15
         all: true
     power: ATK x 2500%
@@ -753,7 +754,7 @@
             buff: ATK Damage Taken Reduction
             buffCondition: In Front Of Target
             buffValue: 20
-        - desc: 70% chance of surviving a lethal attack at 20% HP or more
+        - desc: 70% chance of surviving a lethal attack when at 20% of max HP or more
           all: true
     - name: "Side Order II"
       effects: 
@@ -897,7 +898,7 @@
           all: true
     - name: "Yggdrasil's Fortune"
       effects: 
-        - desc: Recovers 3% HP every 3 seconds
+        - desc: Recovers 3% of max HP every 3 seconds
         
   skills:
     - name: "Binding Distortion"
@@ -1013,7 +1014,7 @@
             priority: 1
             buff: Damage
             buffValue: 30
-        - desc: Elemental damage dealt +10% when at 100% HP
+        - desc: Elemental damage dealt +10% when HP is 100%
           all: true
           meta:
             priority: 1
@@ -1025,7 +1026,7 @@
         - desc: Absorbs 3% of damage dealt by skills as HP
     - name: "Deep Mourning"
       effects: 
-        - desc: AP cost -40% when skill chain is 3 or more
+        - desc: AP cost -40% when skill chain is >3
           meta:
             priority: 4
             buff: AP Cost Reduction
@@ -1058,9 +1059,9 @@
   rush:
     name: "Thousand-Beast Demon"
     picture: Millenium_Imprisoned_Devil_HW_Victor
-    shortEffects: Recovers 40% HP, and single target damage +40% (All Party/20s)
+    shortEffects: Recovers 40% of max HP, and single target damage +40% (All Party/20s)
     effects: 
-      - desc: Recovers 40% HP
+      - desc: Recovers 40% of max HP
         all: true
       - desc: Single target damage +40%
         duration: 20
@@ -1132,7 +1133,7 @@
 
   talents:
     - name: "Amused Feelings II"
-      shortEffects: Damage dealt +35% (All Healers/All Invokers/Self)
+      shortEffects: Damage dealt +35% (All Healers/Invokers/Self)
       effects: 
         - desc: Damage dealt +35%
           meta:
@@ -1206,7 +1207,7 @@
     name: "Cerberushot"
     picture: Cerberushot_Federation_Lymle
     element: Fire
-    shortEffects: Damage dealt +60% (All Invokers/All Healers/Self/20s)
+    shortEffects: Damage dealt +60% (All Invokers/Healers/Self/20s)
     effects: 
       - desc: Damage dealt +60%
         duration: 20
@@ -1324,7 +1325,7 @@
     maxHits: 8
 
 
-- name: Clair (Valentine)
+- name: Clair Lasbard (Valentine)
   cat: gl
   rating: 3
   picture: Girl's_Day_Clair
@@ -1502,7 +1503,7 @@
             buffValue: 50
     - name: "Cat Shangri-La"
       effects: 
-        - desc: AP cost -30% when skill chain is 3 or more
+        - desc: AP cost -30% when skill chain is >3
           meta:
             priority: 3
             buff: AP Cost Reduction
@@ -1626,7 +1627,7 @@
         - desc: Evasion speed & distance +100%
     - name: "Bloodstained Fangs II"
       effects: 
-        - desc: Absorbs 10% of normal attack damage as HP when hitcount is 100 or more
+        - desc: Absorbs 10% of normal attack damage as HP when hitcount is >100
           all: true
     - name: "Quark Carrier"
       effects: 
@@ -1690,7 +1691,7 @@
   rush:
     name: "Energy Burst Barrage"
     picture: Energy_Burst_Barrage_Maria
-    shortEffects: Removes buffs from enemies, and critical hit chance +40% (All Party/20s)
+    shortEffects: Removes all buffs from enemies, and critical hit chance +40% (All Party/20s)
     effects: 
       - desc: Removes buffs
         all: Enemies
@@ -1776,23 +1777,23 @@
             buff: Damage
             buffValue: 40
     - name: "Bramble Burst Barrage II"
-      shortEffects: Damage dealt +50%/55%/60% when hitcount is 100/150/200 or more (All Party)
+      shortEffects: Damage dealt +50%/+55%/+60% when hitcount is >100/>150/>200 (All Party)
       effects: 
-        - desc: Damage dealt +50% when hitcount is 100 or more
+        - desc: Damage dealt +50% when hitcount is >100
           all: true
           meta:
             priority: 3
             buff: Damage
             buffCondition: Hit Count > 100
             buffValue: 50
-        - desc: Damage dealt +55% when hitcount is 150 or more
+        - desc: Damage dealt +55% when hitcount is >150
           all: true
           meta:
             priority: 3
             buff: Damage
             buffCondition: Hit Count > 150
             buffValue: 55
-        - desc: Damage dealt +60% when hitcount is 200 or more
+        - desc: Damage dealt +60% when hitcount is >200
           all: true
           meta:
             priority: 3
@@ -1804,15 +1805,15 @@
         - desc: Additional hit that deals 10% of damage during normal attacks
           all: true
     - name: "Youthful Days"
-      shortEffects: AP cost -15% and ATK +15% when hitcount is 50 or more
+      shortEffects: AP cost -15% and ATK +15% when hitcount is >50
       effects: 
-        - desc: AP cost -15% when hitcount is 50 or more
+        - desc: AP cost -15% when hitcount is >50
           meta:
             priority: 1
             buff: AP Cost Reduction
             buffCondition: Hit Count > 50
             buffValue: 15      
-        - desc: ATK +10% when hitcount is 50 or more
+        - desc: ATK +10% when hitcount is >50
           meta:
             priority: 3
             buff: ATK
@@ -1915,23 +1916,23 @@
 
   talents:
      - name: "Crimson Blossom Flurry II"
-       shortEffects: Critical hit chance +10%/20%/30% when hitcount is 100/150/200 or more (All Party)
+       shortEffects: Critical hit chance +10%/+20%/+30% when hitcount is >100/>150/>200 (All Party)
        effects: 
-        - desc: Critical hit chance +10% when hitcount is 100 or more
+        - desc: Critical hit chance +10% when hitcount is >100
           all: true
           meta:
             priority: 3
             buff: Crit Rate
             buffCondition: Hit Count > 100
             buffValue: 10
-        - desc: Critical hit chance +20% when hitcount is 150 or more
+        - desc: Critical hit chance +20% when hitcount is >150
           all: true
           meta:
             priority: 3
             buff: Crit Rate
             buffCondition: Hit Count > 150
             buffValue: 20
-        - desc: Critical hit chance +30% when hitcount is 200 or more
+        - desc: Critical hit chance +30% when hitcount is >200
           all: true
           meta:
             priority: 3
@@ -1939,23 +1940,23 @@
             buffCondition: Hit Count > 200
             buffValue: 30
      - name: "Sincere Devotion II"
-       shortEffects: Critical damage +10%/20%/30% when hitcount is 100/150/200 or more (All Party)
+       shortEffects: Critical damage +10%/+20%/+30% when hitcount is >100/>150/>200 (All Party)
        effects: 
-        - desc: Critical damage +10% when hitcount is 100 or more
+        - desc: Critical damage +10% when hitcount is >100
           all: true
           meta:
             priority: 3
             buff: Crit Damage
             buffCondition: Hit Count > 100
             buffValue: 10
-        - desc: Critical damage +20% when hitcount is 150 or more
+        - desc: Critical damage +20% when hitcount is >150
           all: true
           meta:
             priority: 3
             buff: Crit Damage
             buffCondition: Hit Count > 150
             buffValue: 20
-        - desc: Critical damage +30% when hitcount is 200 or more
+        - desc: Critical damage +30% when hitcount is >200
           all: true
           meta:
             priority: 3
@@ -1980,13 +1981,13 @@
             buffValue: 30
      - name: "Well-Concealed Dream"
        effects: 
-        - desc: No flinching when taking damage of 10% HP or less
+        - desc: No flinching when taking damage of 10% of max HP or less
         - desc: AP cost -10%
           meta:
             priority: 1
             buff: AP Cost Reduction
             buffValue: 10
-        - desc: Nullifies critical damage penalty during charge assault     
+        - desc: Nullifies charge assault critical damage penalty     
 
   skills:
     - name: "Blooming Shot"
@@ -2095,7 +2096,7 @@
             buffValue: 20
     - name: "A Rebel Soul II"
       effects:
-        - desc: No flinching when taking damage of 20% HP or less
+        - desc: No flinching when taking damage of 20% of max HP or less
           all: true
         
   skills:
@@ -2606,7 +2607,7 @@
             buffValue: 30
     - name: "A Beautiful Future"
       effects: 
-        - desc: Normal attacks have +10% chance of inflicting paralysis
+        - desc: Normal attacks have +10% chance to inflict paralysis
           meta:
             priority: 4
             buff: Paralysis Attack Chance
@@ -2763,7 +2764,7 @@
       effects: 
         - desc: Nullifies silence for 180 seconds
           all: true
-        - desc: Nullifies Rush Gauge Reduction Fields
+        - desc: Nullifies rush gauge reduction fields
           all: Short Range Weapons/Self
           
   skills:
@@ -2854,6 +2855,7 @@
       
       *Normal > Magnetic Field > Crimson Squall > Magnetic Field > Spam Till Out of AP (General Damage On Small Targets)*
 
+
 - name: Edge Maverick (Federation)
   cat: gl
   rating: 0
@@ -2882,12 +2884,12 @@
         - desc: Taunt +1
     - name: "Dawn of Earth Federation"
       effects: 
-        - desc: Damage dealt +45% when at 100% HP
+        - desc: Damage dealt +45% when HP is 100%
           all: true
           meta:
             priority: 1
             buff: Damage
-            buffCondition: HP is 100
+            buffCondition: HP is 100%
             buffValue: 45
     - name: "Reckless Captain"
       effects: 
@@ -2897,7 +2899,7 @@
             priority: 3
             buff: Damage Taken Reduction
             buffValue: 15
-        - desc: No flinching when taking damage of 10% HP or less
+        - desc: No flinching when taking damage of 10% of max HP or less
           all: true
     - name: "Determined Resolve"
       effects:
