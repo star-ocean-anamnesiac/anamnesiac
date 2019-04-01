@@ -959,10 +959,10 @@
     - name: "The Expel Turnabout II"
       shortEffects: Nullifies freeze/paralysis (All Party/90s)
       effects: 
-        - desc: Nullifies freeze
+        - desc: Nullifies freeze for 90 seconds
           duration: 90
           all: true
-        - desc: Nullifies paralysis
+        - desc: Nullifies paralysis for 90 seconds
           duration: 90
           all: true
     - name: "Blue Rose Bouquet"
@@ -1092,11 +1092,16 @@
             buff: INT
             buffValue: 40
     - name: "Unbreakable"
-      shortEffects: Ice skill damage +300% and AP cost -100% after using Hail Orb (20 seconds)
+      shortEffects: Ice skill damage +300% and AP cost +100% after using Hail Orb (20s)
       effects: 
-        - desc: AP cost +100% after using Hail Orb (20 seconds)
+        - desc: AP cost +100% after using Hail Orb (20s)
           duration: 20
-        - desc: Ice skill damage +300% after using Hail Orb (20 seconds)
+          meta:
+            priority: 3
+            buff: AP Cost Increase
+            buffCondition: Hail Orb
+            buffValue: 100          
+        - desc: Ice skill damage +300% after using Hail Orb (20s)
           duration: 20
           meta:
             priority: 3
@@ -1105,7 +1110,7 @@
             buffValue: 300
     - name: "Light of Redemption"
       effects:
-        - desc: AP recovery +100% after using Aerial Lancer (20 seconds)
+        - desc: AP recovery +100% after using Aerial Lancer (20s)
           duration: 20
           meta:
             priority: 3
@@ -1236,19 +1241,19 @@
             priority: 1
             buff: AP Cost Reduction
             buffValue: 20
-        - desc: AP cost -30% when hitcount is 50
+        - desc: AP cost -30% when hitcount is 50 or more
           meta:
             priority: 3
             buff: AP Cost Reduction
             buffCondition: Hit Count > 50
             buffValue: 30
-        - desc: AP cost -40% when hitcount is 100
+        - desc: AP cost -40% when hitcount is 100 or more
           meta:
             priority: 3
             buff: AP Cost Reduction
             buffCondition: Hit Count > 100
             buffValue: 40
-        - desc: AP cost -50% when hitcount is 150
+        - desc: AP cost -50% when hitcount is 150 or more
           meta:
             priority: 3
             buff: AP Cost Reduction
@@ -1386,6 +1391,7 @@
             priority: 1
             buff: Damage
             buffValue: 20
+            
   skills:
     - name: "Shadow Needles"
       picture: Shadow_Needles
