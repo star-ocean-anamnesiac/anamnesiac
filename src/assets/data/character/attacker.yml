@@ -2993,7 +2993,7 @@
           all: Attackers
     - name: "Sweet Present"
       effects: 
-        - desc: 70% chance of surviving a lethal attack at 20% of max HP or more
+        - desc: 70% chance of surviving a lethal attack when at 20% of max HP or more
 
   skills:
     - name: "Crescent Locus"
