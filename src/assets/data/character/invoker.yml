@@ -551,8 +551,8 @@
     - name: "Eldarian Honor II"
       shortEffects: 80% chance of surviving a lethal attack and symbology cast time -80% when at 10% of max HP or more
       effects: 
-        - desc: 80% chance of surviving a lethal attack at 10% of max HP or more
-        - desc: Symbology cast time -80% at 10% of max HP or more
+        - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
+        - desc: Symbology cast time -80% when at 10% of max HP or more
           meta:
             priority: 4
             buff: Cast Time Reduction
@@ -1461,7 +1461,7 @@
     - name: "Valiant Soul II"
       shortEffects: 80% chance of surviving a lethal attack and symbology cast time -80% when at 10% of max HP or more
       effects:
-        - desc: 80% chance of surviving a lethal attack at 10% of max HP or more
+        - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
         - desc: Symbology cast time -80% when at 10% of max HP or more
           meta:
             priority: 1
@@ -2118,7 +2118,7 @@
             priority: 3
             buff: Crit Damage
             buffValue: 35
-        - desc: Recovers 5% HP every 3 seconds
+        - desc: Recovers 5% of max HP every 3 seconds
           all: true
     - name: "Rational Observation"
       effects:
