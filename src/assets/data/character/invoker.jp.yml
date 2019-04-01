@@ -2780,4 +2780,99 @@
           buffValue: 50
     power: INT x 3500%
     maxHits: 6
+
+   
+- name: Reimi Saionji (Federation)
+  cat: jp
+  rating: 0
+  picture: Federation_Reimi
+  weapon: staff
+  ace: true
+  star: 5
+
+  stats:
+    hp: 13860
+    atk: 1563
+    int: 2902
+    def: 1155
+    hit: 1043
+    grd: 840
+
+  talents:
+    - name: "Academy's Top Student"
+      effects:
+        - desc: INT +20%
+          all: true
+          meta:
+            priority: 1
+            buff: INT
+            buffValue: 20
+    - name: "Vital Check"
+      effects: 
+        - desc: Critical damage +35%
+          all: true
+          meta:
+            priority: 3
+            buff: Crit Damage
+            buffValue: 35
+        - desc: Recovers 5% HP every 3 seconds
+          all: true
+    - name: "Rational Observation"
+      effects:
+        - desc: Critical hit chance +40% when at 100% HP
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: HP is 100
+            buffValue: 40
+    - name: "Emblem of Fortune"
+      effects: 
+        - desc: Nullifies status ailments for 180 seconds
+        - desc: Symbology cast time -80% 
+          meta:
+            priority: 1
+            buff: Cast Time Reduction
+            buffValue: 80
+          
+  skills:
+    - name: "Wind Blade"
+      picture: Wind_Blade
+      element: Wind
+      power: INT x 190%
+      ap: 20
+      maxHits: 2
+    - name: "Magnum Tornado"
+      picture: Magnum_Tornado
+      element: Wind
+      power: INT x 740%
+      ap: 30
+      maxHits: 9
+    - name: "Ice Needles"
+      picture: Ice_Needles
+      element: Ice
+      power: INT x 250%
+      ap: 24
+      maxHits: 9
+    - name: "Frigid Saucer"
+      picture: Frigid_Saucer
+      element: Ice
+      power: INT x 200%
+      ap: 19
+      maxHits: 2
+
+  rush:
+    name: "Skyward Ensemble"
+    picture: Lunar_Divination_Reimi
+    element: Wind
+    effects:
+      - desc: Critical hit chance +50%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 50
+    power: ATK x 3500%
+    maxHits: 13
     
+
