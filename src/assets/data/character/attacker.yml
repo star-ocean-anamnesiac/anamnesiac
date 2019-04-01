@@ -896,7 +896,7 @@
     - name: "Hit-the-Watermelon"
       effects: 
         - desc: Evasion possible during air attacks      
-        - desc: AP cost -50% when skill chain is 3 or more
+        - desc: AP cost -50% when skill chain is >3
           meta:
             priority: 4
             buff: AP Cost Reduction
@@ -1822,7 +1822,7 @@
           all: true
     - name: "Full Moon Howl"
       effects: 
-        - desc: Damage dealt +60% by Pumpkin Smash when skill chain is 4 or more
+        - desc: Damage dealt +60% by Pumpkin Smash when skill chain is >4
 
   skills:
     - name: "Lantern Burst"
@@ -2218,10 +2218,10 @@
             buffCondition: Hit Count > 200
             buffValue: 20
     - name: "Colorful Galleria II"
-      shortEffects: Bullet Barrage and Bombing Run deal damage +100% when skill chain is 3 or more, and +200% when skill chain is 5 or more
+      shortEffects: Bullet Barrage and Bombing Run deal damage +100%/+200% when skill chain is >3/>5
       effects: 
-        - desc: Bullet Barrage and Bombing Run deal damage +100% when skill chain is 3 or more
-        - desc: Bullet Barrage and Bombing Run deal damage +200% when skill chain is 5 or more
+        - desc: Bullet Barrage and Bombing Run deal damage +100% when skill chain is >3
+        - desc: Bullet Barrage and Bombing Run deal damage +200% when skill chain is >5
     - name: "Novice Santa"
       shortEffects: ATK +15% and HIT +10%
       effects: 
