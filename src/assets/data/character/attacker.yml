@@ -896,7 +896,7 @@
     - name: "Hit-the-Watermelon"
       effects: 
         - desc: Evasion possible during air attacks      
-        - desc: AP cost -50% when skill chain is 3 or more
+        - desc: AP cost -50% when skill chain is >3
           meta:
             priority: 4
             buff: AP Cost Reduction
@@ -1822,7 +1822,7 @@
           all: true
     - name: "Full Moon Howl"
       effects: 
-        - desc: Damage dealt +60% by Pumpkin Smash when skill chain is 4 or more
+        - desc: Damage dealt +60% by Pumpkin Smash when skill chain is >4
 
   skills:
     - name: "Lantern Burst"
@@ -2218,10 +2218,10 @@
             buffCondition: Hit Count > 200
             buffValue: 20
     - name: "Colorful Galleria II"
-      shortEffects: Bullet Barrage and Bombing Run deal damage +100% when skill chain is 3 or more, and +200% when skill chain is 5 or more
+      shortEffects: Bullet Barrage and Bombing Run deal damage +100%/+200% when skill chain is >3/>5
       effects: 
-        - desc: Bullet Barrage and Bombing Run deal damage +100% when skill chain is 3 or more
-        - desc: Bullet Barrage and Bombing Run deal damage +200% when skill chain is 5 or more
+        - desc: Bullet Barrage and Bombing Run deal damage +100% when skill chain is >3
+        - desc: Bullet Barrage and Bombing Run deal damage +200% when skill chain is >5
     - name: "Novice Santa"
       shortEffects: ATK +15% and HIT +10%
       effects: 
@@ -2993,7 +2993,7 @@
           all: Attackers
     - name: "Sweet Present"
       effects: 
-        - desc: 70% chance of surviving a lethal attack at 20% of max HP or more
+        - desc: 70% chance of surviving a lethal attack when at 20% of max HP or more
 
   skills:
     - name: "Crescent Locus"
@@ -3164,14 +3164,14 @@
     name: "Avenger Charge"
     picture: Festive_Avenger_Mirage
     element: Fire
-    shortEffects: AP cost -30%, and recovers 10% HP every 3 seconds (Self/20s)
+    shortEffects: AP cost -30%, and recovers 10% of max HP every 3 seconds (Self/20s)
     effects: 
       - desc: AP cost -30%
         meta:
             priority: 4
             buff: AP Cost Reduction
             buffValue: 30
-      - desc: Recovers 10% HP every 3 seconds
+      - desc: Recovers 10% of max HP every 3 seconds
         duration: 20
     power: ATK x 4000%
     maxHits: 15
@@ -3457,7 +3457,7 @@
 
   talents:
     - name: "Fresh Madonna Lilies II"
-      shortEffects: ATK +30% and normal attack AP recovery +100% (All Party)
+      shortEffects: Normal attack AP recovery +100% and ATK +30% (All Party)
       effects: 
         - desc: ATK +30%
           all: true
@@ -3480,7 +3480,7 @@
             priority: 3
             buff: Single Target Damage
             buffValue: 5
-        - desc: Single target damage +20% when hitcount is 150 or more
+        - desc: Single target damage +20% when hitcount is >150
           all: Long Range Weapons/Self
           meta:
             priority: 3
@@ -3489,9 +3489,9 @@
             buffCondition: Hit Count > 150
     - name: "Four-Leafed Clover Blessings II"
       effects: 
-        - desc: Recovers 5% HP every 3 seconds
+        - desc: Recovers 5% of max HP every 3 seconds
           all: true
-        - desc: Recovers 10% HP every 3 seconds when hitcount is >100
+        - desc: Recovers 10% of max HP every 3 seconds when hitcount is >100
           all: true
     - name: "7-Million-Year-Old Present"
       effects: 
@@ -4176,7 +4176,7 @@
     name: "Frankenrobbie"
     picture: Bloody_Mary
     effects: 
-      - desc: Recovers 15% HP every 5 seconds 
+      - desc: Recovers 15% of max HP every 5 seconds 
         all: true
         duration: 20
     power: ATK x 4500%
