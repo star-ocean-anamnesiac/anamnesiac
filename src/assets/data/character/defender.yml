@@ -738,7 +738,6 @@
     - name: "Holiday Heroine II"
       effects: 
         - desc: Damage taken -30% when targeted by enemy
-          all: false
           meta:
             priority: 3
             buff: Damage Taken Reduction
