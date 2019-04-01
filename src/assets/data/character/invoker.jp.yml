@@ -2862,7 +2862,7 @@
 
   rush:
     name: "Skyward Ensemble"
-    picture: Lunar_Divination_Reimi
+    picture: Skyward_Ensemble_Federation_Reimi
     element: Wind
     effects:
       - desc: Critical hit chance +50%
