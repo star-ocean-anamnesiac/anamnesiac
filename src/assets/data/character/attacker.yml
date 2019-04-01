@@ -4216,3 +4216,105 @@
       **Rotation**
       
       Normal > Rocket Punch > Hammer Slammer > Jump'n'Thump*3 (Replace Hammer Slammer with Force Field if 104 AP or higher)
+
+- name: Crowe F. Almedio
+  cat: gl
+  rating: 0
+  picture: Crowe
+  weapon: dualswords
+  ace: true
+  star: 5
+
+  stats:
+    hp: 15750
+    atk: 2730
+    int: 1523
+    def: 1983
+    hit: 1120
+    grd: 833
+
+  talents:
+    - name: "All-Mighty"
+      effects: 
+        - desc: ATK +35%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 35
+        - desc: ATK +55%
+          all: Attackers
+          meta:
+            priority: 1
+            buff: ATK 
+            buffCondition: Attackers
+            buffValue: 55
+    - name: "Charismatic of SRF"
+      effects: 
+        - desc: Critical hit chance +40% when behind target 
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: Behind Target
+            buffValue: 40
+    - name: "Result of Practice"
+      shortEffects: Damage dealt +150% by Talon Pierce and Tri Zapper when skill chain is 3 or more, and +300% when skill chain is 5 or more
+      effects: 
+        - desc: Damage dealt +150% by Talon Pierce and Tri Zapper when skill chain is 3 or more
+          all: true
+          meta:
+            priority: 3
+            buff: Damage
+            buffCondition: Skill Chain 3+
+            buffValue: 150
+        - desc: Damage dealt +300% by Talon Pierce and Tri Zapper when skill chain is 5 or more
+          meta:
+            priority: 3
+            buff: Damage
+            buffCondition: Skill Chain 5+
+            buffValue: 300
+    - name: "Mister Perfect"
+      effects:
+        - desc: Normal attack AP recovery +100% when at 100% HP
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffCondition: HP is 100
+            buffValue: 100
+  
+  skills:
+    - name: "Dextral Edge"
+      picture: Dextral_Edge
+      power: ATK x 150%
+      ap: 14
+      maxHits: 2
+    - name: "Sinistral Edge"
+      picture: Sinistral_Edge
+      power: ATK x 150%
+      ap: 14
+      maxHits: 2
+    - name: "Talon Pierce"
+      picture: Talon_Thrust
+      element: Fire
+      power: ATK x 200%
+      ap: 20
+      maxHits: 2
+    - name: "Tri Zapper"
+      picture: Tri_Zapper
+      power: ATK x 230%
+      ap: 21
+      maxHits: 6
+      
+  rush:
+    name: "Flash S Alternative"
+    picture: Flash_S_Alternative_Crowe
+    effects: 
+      - desc: AP cost -80%
+        duration: 5
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 80
+    power: ATK x 3500%
+    maxHits: 13
