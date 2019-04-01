@@ -178,7 +178,7 @@
           all: true
     - name: "Indomitable Spirit"
       effects: 
-        - desc: 80% chance of surviving a lethal attack at 10% of max HP or more
+        - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
 
   skills:
     - name: "Mirror Blade"
@@ -762,7 +762,7 @@
         - desc: Single target damage +40% when hitcount is >150
           all: true
           meta:
-            priority: 1
+            priority: 1 max 
             buff: Single Target Damage
             buffCondition: Hit Count > 150
             buffValue: 40
@@ -1049,7 +1049,7 @@
             buffValue: 10
     - name: "Another Piece of Cake II"
       effects: 
-        - desc: 70% of surviving a lethal attack at 5% of max HP or more
+        - desc: 70% of surviving a lethal attack when at 5% of max HP or more
     - name: "Honeymoon Dreams II"
       effects: 
         - desc: No flinching when taking damage of 20% of max HP or less (All Invokers/Healers/Self)
