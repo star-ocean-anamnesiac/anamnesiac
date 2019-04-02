@@ -2871,7 +2871,7 @@
           priority: 1
           buff: Crit Rate
           buffValue: 50
-    power: ATK x 3500%
+    power: INT x 3500%
     maxHits: 13
     
 
