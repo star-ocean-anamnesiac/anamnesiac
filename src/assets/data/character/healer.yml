@@ -26,9 +26,9 @@
             buff: INT
             buffValue: 35
     - name: "Making Waves II"
-      shortEffects: AP cost -40% when skill chain is 3 or more, and INT damage dealt +40%
+      shortEffects: AP cost -40% when skill chain is >3, and INT damage dealt +40%
       effects: 
-        - desc: AP cost -40% when skill chain is 3 or more
+        - desc: AP cost -40% when skill chain is >3
           meta:
             priority: 4
             buff: AP Cost Reduction
@@ -53,7 +53,7 @@
             priority: 1
             buff: INT Damage
             buffValue: 20
-        - desc: Nullify Movement Rate Reduction Field
+        - desc: Nullifies movement rate reduction field
           all: Short Range Weapons/Self
     - name: "Summer Combo"
       shortEffects: Symbology cast time -30% and AP cost -10%
@@ -102,7 +102,7 @@
     name: "Lightning-Fast Service"
     picture: Lightning_Fast_Service_Summer_Sophia
     element: Lightning
-    shortEffects: Recovers 50% HP, and INT +40% (All Party/20s)
+    shortEffects: Recovers 50% of max HP, and INT +40% (All Party/20s)
     effects: 
       - desc: INT +40%
         all: true
@@ -111,7 +111,7 @@
           priority: 1
           buff: INT
           buffValue: 40
-      - desc: Recover 50% HP
+      - desc: Recovers 50% of max HP
         all: true
     power: INT x 3000%
     maxHits: 4
@@ -196,7 +196,7 @@
             buffValue: 30
     - name: "Beginner's Luck"
       effects: 
-        - desc: 80% chance of surviving a lethal attack at 10% HP or more
+        - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
 
   skills:
     - name: "Radiant Lancer"
@@ -228,7 +228,7 @@
     name: "Divine Wave"
     picture: Divine_Wave_Miki
     effects: 
-      - desc: Recovers 30% HP every 4 seconds
+      - desc: Recovers 30% of max HP every 4 seconds
         all: true
         duration: 20
     power: INT x 2000%
@@ -352,7 +352,7 @@
     name: "Tractor Beam"
     picture: Tractor_Beam_Millie
     element: Earth
-    shortEffects: Recovers 80% HP, and critical hit chance +50% (All Party/20s)
+    shortEffects: Recovers 80% of max HP, and critical hit chance +50% (All Party/20s)
     effects: 
       - desc: Critical hit chance +50%
         all: true
@@ -361,7 +361,7 @@
           priority: 1
           buff: Crit Rate
           buffValue: 50
-      - desc: Recover 80% HP
+      - desc: Recovers 80% of max HP
         all: true
     power: INT x 2000%
     maxHits: 11
@@ -424,7 +424,7 @@
   talents:
     - name: "Healing Light II"
       effects: 
-        - desc: Recovers 10% HP every 5 seconds
+        - desc: Recovers 10% of max HP every 5 seconds
           all: Short Range Weapons
     - name: "Beyond Time & Space II"
       effects: 
@@ -442,7 +442,7 @@
             buffValue: 15
     - name: "Descendant of Nede"
       effects: 
-        - desc: 90% chance of surviving a lethal attack at 10% HP or more
+        - desc: 90% chance of surviving a lethal attack when at 10% of max HP or more
 
   skills:
     - name: "Radiant Lancer"
@@ -455,7 +455,7 @@
       picture: Angel_Feathers
       power: 0%
       ap: 95
-      notes: All stats +20% (All Party/20s)
+      notes: All stats +20% (Party/20s)
       maxHits: 1
       meta:
         priority: 2
@@ -610,9 +610,9 @@
     name: "Arctic Impact 2R"
     picture: Revised_Arctic_Impact_Priestess_Nel
     element: Ice
-    shortEffects: Recovers 50% HP, and damage dealt +30% (Self/20s)
+    shortEffects: Recovers 50% of max HP, and damage dealt +30% (Self/20s)
     effects: 
-      - desc: Recovers 50% HP
+      - desc: Recovers 50% of max HP
       - desc: Damage dealt +30%
         duration: 20
         meta:
@@ -708,7 +708,7 @@
             buffValue: 20
     - name: "Blessings of the Stars II"
       effects: 
-        - desc: Recovers 3% HP every 3 seconds
+        - desc: Recovers 3% of max HP every 3 seconds
         - desc: Rush gauge quota -20%
     - name: "Cryptic Symbology Arts"
       effects: 
@@ -740,7 +740,7 @@
       picture: Faerie_Light
       power: INT x 250%
       ap: 60
-      notes: Recovers some HP for all allies
+      notes: Recover some HP for all allies
       maxHits: 1      
     - name: "Sunflare"
       picture: Sunflare
@@ -753,6 +753,7 @@
     name: "Celestial Calling"
     picture: Celestial_Calling_Eve
     element: Light
+    shortEffects: Revives at 1 HP (All Party), and INT +100% (Self/20s)
     effects: 
       - desc: Revives at 1 HP
         all: true
@@ -845,18 +846,18 @@
             buffValue: 30
     - name: "Healer's Touch II"
       effects: 
-        - desc: Recovers 5% HP every 5 seconds
+        - desc: Recovers 5% of max HP every 5 seconds
           all: Long Range Weapons
     - name: "Purge II"
       shortEffects: Nullifies poison/paralysis (All Party/90s)
       effects: 
-        - desc: Nullify poison for 90 seconds
+        - desc: Nullifies poison for 90 seconds
           all: true
-        - desc: Nullify paralysis for 90 seconds
+        - desc: Nullifies paralysis for 90 seconds
           all: true
     - name: "Premonitions"
       effects: 
-        - desc: 80% chance of surviving a lethal attack at 10% HP or more
+        - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
 
   skills:
     - name: "Faerie Light"
@@ -875,7 +876,7 @@
       picture: Angel_Feathers
       power: 0%
       ap: 95
-      notes: All stats +20% (All Party/20s)
+      notes: All stats +20% (Party/20s)
       maxHits: 1
       meta:
         priority: 2
@@ -897,13 +898,13 @@
     name: "Healing Blast Hurricane"
     picture: Healing_Blast_Hurricane_Sarah
     element: Wind
-    shortEffects: Recovers 70% HP, and cures poison/paralysis (All Party)
+    shortEffects: Recovers 70% of max HP, and nullifies poison/paralysis (All Party)
     effects: 
       - desc: Recovers 70% HP
         all: true
-      - desc: Cure poison
+      - desc: Nullifies poison
         all: true
-      - desc: Cure paralysis
+      - desc: Nullifies paralysis
         all: true
     power: INT x 2000%
     maxHits: 11
@@ -1002,30 +1003,30 @@
       effects: 
         - desc: Recover some AP for all allies when using offensive symbology          
     - name: "Trump Card"
-      shortEffects: Critical hit chance and critical damage +20% when hitcount is 50 or more, and +30% when 100 or more (All Party)
+      shortEffects: Critical hit chance and critical damage +20%/+30% when hitcount is >50/>100 (All Party)
       effects: 
-        - desc: Critical hit chance +20% when hitcount is 50 or more
+        - desc: Critical hit chance +20% when hitcount is >50
           all: true
           meta:
             priority: 1
             buff: Crit Rate
             buffCondition: Hit Count > 50
             buffValue: 20
-        - desc: Critical damage dealt +20% when hitcount is 50 or more
+        - desc: Critical damage dealt +20% when hitcount is >50
           all: true
           meta:
             priority: 1
             buff: Crit Damage
             buffCondition: Hit Count > 50
             buffValue: 20
-        - desc: Critical hit chance +30% when hitcount is 100 or more
+        - desc: Critical hit chance +30% when hitcount is >100
           all: true
           meta:
             priority: 1
             buff: Crit Rate
             buffCondition: Hit Count > 100
             buffValue: 30
-        - desc: Critical damage dealt +30% when hitcount is 100 or more
+        - desc: Critical damage dealt +30% when hitcount is >100
           all: true
           meta:
             priority: 1
@@ -1066,9 +1067,9 @@
     name: "Magical Present"
     picture: Magical_Present_Xmas_Precis
     element: Light
-    shortEffects: Recovers 15% HP every 3 seconds, and critical hit chance +30% (All Party/20s)
+    shortEffects: Recovers 15% of max HP every 3 seconds, and critical hit chance +30% (All Party/20s)
     effects: 
-      - desc: Recover 15% HP every 3 seconds
+      - desc: Recovers 15% of max HP every 3 seconds
         all: true
         duration: 20
       - desc: Critical hit chance +30%
@@ -1157,23 +1158,23 @@
   talents:
     - name: "Golden Intentions II"
       effects: 
-        - desc: AP recovery +50% when at 100% HP
+        - desc: AP recovery +50% when HP is 100%
           all: true
           meta:
             priority: 1
             buff: AP Recovery
-            buffCondition: HP is 100
+            buffCondition: HP is 100%
             buffValue: 50
     - name: "A Sister's Prayer II"
       effects: 
-        - desc: Recovers 5% HP every 3 seconds
+        - desc: Recovers 5% of max HP every 3 seconds
           all: true
     - name: "Forehead Symbology"
-      shortEffects: Nullifies AP Recovery Rate Reduction Fields and Movement Rate Reduction Fields (All Short Range Weapons/Self)
+      shortEffects: Nullifies movement rate/AP recovery rate reduction fields (All Short Range Weapons/Self)
       effects: 
-        - desc: Nullifies AP Recovery Rate Reduction Fields
+        - desc: Nullifies AP recovery rate reduction fields
           all: Short Range Weapons/Self
-        - desc: Nullifies Movement Rate Reduction Fields
+        - desc: Nullifies movement rate reduction fields
           all: Short Range Weapons/Self          
     - name: "Dreams of the Future"
       effects: 
@@ -1188,7 +1189,7 @@
       picture: Faerie_Light
       power: INT x 230%
       ap: 60
-      notes: ATK +20% (All Party/15s) and recover some HP for all allies
+      notes: ATK +20% (Party/15s) and recover some HP for all allies
       maxHits: 1
       meta:
         priority: 2
@@ -1208,7 +1209,7 @@
         buff: INT
         buffValue: 25
       ap: 65
-      notes: INT +25% and ATK damage taken -15% (All Party/20s)
+      notes: INT +25% and ATK damage taken -15% (Party/20s)
       maxHits: 1
     - name: "Aurora Rings"
       picture: Aurora_Rings
@@ -1221,7 +1222,7 @@
     name: "Freeze Time"
     picture: Freezing_Clock_Relia
     element: Ice
-    shortEffects: Single target damage +30%, and recovers 15% HP every 3 seconds (All Party/20s)
+    shortEffects: Single target damage +30%, and recovers 15% of max HP every 3 seconds (All Party/20s)
     effects: 
       - desc: Single target damage +30%
         all: true
@@ -1230,7 +1231,7 @@
           priority: 1
           buff: Single Target Damage
           buffValue: 30
-      - desc: Recovers 15% HP every 3 seconds
+      - desc: Recovers 15% of max HP every 3 seconds
         all: true
         duration: 20
     power: INT x 2500%
@@ -1319,7 +1320,7 @@
         - desc: Recovers AP for all allies when using Aim and Bright Shower  
     - name: "White Mage"
       effects: 
-        - desc: Nullifies HP Reduction Fields
+        - desc: Nullifies HP reduction fields
           all: Short Range Weapons/Self       
     - name: "Cleansing Prayer II"
       effects: 
@@ -1375,7 +1376,7 @@
     name: "Heaven's Judgment"
     picture: Heaven's_Judge_Fina
     element: Light
-    shortEffects: Recovers 70% HP, and critical hit chance +30% (All Party/20s)
+    shortEffects: Recovers 70% of max HP, and critical hit chance +30% (All Party/20s)
     effects: 
       - desc: Recover 70% HP
         all: true
@@ -1460,7 +1461,7 @@
   talents:
     - name: "Lady’s Charm II"
       effects: 
-        - desc: Damage taken +30% at less than 50% HP
+        - desc: Damage taken +30% when HP is under 50%
           all: Enemies
           meta:
             priority: 3
@@ -1468,7 +1469,7 @@
             buffCondition: HP > 50%
             buffValue: 50
     - name: "Beach Body II"
-      shortEffects: ATK/INT damage dealt +10%, and +25% when skill chain is 3 or more (All Party)
+      shortEffects: ATK/INT damage dealt +10%, and ATK/INT +25% when skill chain is >3 (All Party)
       effects:
         - desc: ATK damage dealt +10%
           all: true
@@ -1549,7 +1550,7 @@
     picture: Sweet_Pressure_Valentine_Welch
     element: Earth
     effects: 
-      - desc: Recovers 70% HP
+      - desc: Recovers 70% of max HP
         all: true
       - desc: DEF -40%
         all: Enemies
@@ -1657,7 +1658,7 @@
             buffValue: 30
     - name: "Blessings of the Stars II"
       effects: 
-        - desc: Recovers 10% HP every 3 seconds
+        - desc: Recovers 10% of max HP every 3 seconds
         - desc: Rush gauge quota -40%
     - name: "Cryptic Symbology Arts"
       effects: 
@@ -1705,7 +1706,7 @@
       picture: Faerie_Light
       power: INT x 250%
       ap: 50
-      notes: Recovers HP for all allies
+      notes: Recover HP for all allies
       maxHits: 1      
     - name: "Sunflare"
       picture: Sunflare
@@ -1718,6 +1719,7 @@
     name: "Celestial Calling"
     picture: Celestial_Calling_Eve
     element: Light
+    shortEffects: Revives at 1 HP (All Party), and INT +100% (Self/20s)
     effects: 
       - desc: Revives at 1 HP
         all: true
@@ -1797,7 +1799,7 @@
             buffValue: 30
     - name: "Valiant Soul II"
       effects:
-        - desc: 80% chance of surviving a lethal attack at 10% HP or more
+        - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
           all: false
         
   skills:
@@ -1870,7 +1872,7 @@
             buffValue: 60
     - name: "Prayer for Peace"
       effects:
-        - desc: 80% chance of surviving a lethal attack at 10% HP or more
+        - desc: 80% chance of surviving a lethal attack when at 10% HP or more
           all: false
 
   skills:
@@ -1896,7 +1898,7 @@
     picture: Revised_Crush_Seer_Pamela
     element: Earth
     effects:
-      - desc: Recovers 20% HP every 4 seconds
+      - desc: Recovers 20% of max HP every 4 seconds
         duration: 20
         all: true
     power: INT x 2000%
@@ -1931,7 +1933,7 @@
             buffValue: 20
     - name: "Rebound IV"
       effects:
-        - desc: 80% chance of surviving a lethal attack at 10% HP or more
+        - desc: 80% chance of surviving a lethal attack when at 10% HP or more
           all: false
         
   skills:
@@ -1996,7 +1998,7 @@
             buffValue: 10
     - name: "Kindness Is a Virtue III"
       effects: 
-        - desc: Recovers 3% HP every 3 seconds
+        - desc: Recovers 3% of max HP every 3 seconds
           all: false
 
   skills:
@@ -2057,7 +2059,7 @@
             buffValue: 20
     - name: "Moment of Bliss III"
       effects: 
-        - desc: Recovers 3% HP every 3 seconds
+        - desc: Recovers 3% of max HP every 3 seconds
           all: false
 
   skills:
@@ -2125,7 +2127,7 @@
             buffValue: 30
     - name: "A Gentleman's Pride"
       effects: 
-        - desc: 80% chance of surviving a lethal attack at 10% HP or more
+        - desc: 80% chance of surviving a lethal attack when at 10% HP or more
           all: false
 
   skills:
@@ -2151,7 +2153,7 @@
     picture: Revised_Volcanic_Burst_Sidonius
     element: Fire
     effects: 
-      - desc: Recovers 20% HP every 4 seconds
+      - desc: Recovers 20% of max HP every 4 seconds
         duration: 20
         all: true
     power: INT x 2000%
@@ -2186,7 +2188,7 @@
             buffValue: 20
     - name: "A Woman of Culture III"
       effects: 
-        - desc: Recovers 3% HP every 3 seconds
+        - desc: Recovers 3% of max HP every 3 seconds
           all: false
 
   skills:
