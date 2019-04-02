@@ -1,0 +1,63 @@
+- name: "Mother Virus Pod"
+  eventName: "Star Ocean Dreamers"
+  image: mother_virus_pod
+  cat: gl
+  race: Machine
+
+  isActive: true
+
+  enrage:
+    m1: "7:00"
+    
+  statusInflictions:
+    - Nothing
+
+  weaknesses:
+    - element: Wind
+      percentWeakness: 25
+    - status: Freeze
+      vuln: Low
+    - status: Poison
+      vuln: Low
+    - status: Silence
+      vuln: Low
+    - status: Curse
+      vuln: Low
+    - status: Paralysis
+      vuln: Low
+      
+  recommendations:
+    - plain: Wind Damage
+    - plain: Anti-Flinch
+    - plain: High Mobility
+    - plain: Low Animation Lock
+    - plain: Critical Hit Buffs
+    
+  desc: >
+    Mother Virus Pod is all about equal opportunity. Why make life hard only for melee, when you can piss ranged characters off too? So many of its attacks are fast and hit deceptively hard, so you have to be ready to dodge on a dime. That means characters with high animation lock need to play very carefully, I wouldn't recommend bringing the likes of Cliff, Lenneth, or Fayt unless the player's well-versed with their weaknesses.
+
+    Due to this, and its wind weakness, characters with guns and bows rule the roost. Invokers that exploit wind are rare, but if you have Federation Reimi or Lymle, this is their very specific chance to do mega damage. Due to the difficult to dodge, yet non-fatal damage flying around, this is one of the rare instances I'd recommend bringing a healer like Rena for insurance.
+
+    Unfortunately, its high defense means you'll want crits. Don't panic! This isn't nearly as bad as Crystal Guardian in this regard, but I would still consider the likes of Nel, Maria or even Anne (but really, who doesn't have Maria?) to bring it down quickly.
+
+    Mother Virus Pod begins the battle with four sword-wielding adds. While this looks intimidating, the Pod needs some time to boot; it spends the early part of the fight spamming Chaser Bomb and doing little else. Kill the adds and try to avoid damaging the Pod too much, so as to not push it past its docile threshold (90%).
+
+    If you have a Chaser Bomb stuck to you, you have 6 seconds to run it away from your team. Dodge out the moment the blue light intensifies.
+
+    There is rarely a lull between Mother Virus Pod's attacks. Melee watch and be ready to dodge if it flips into the air or reels back. If it starts up R-Drift Missile, get away from it immediately and let the attack play out. Wide Laser and Tackle Wide Laser are good reasons for any non-Defender to keep away from its front. Thankfully, both of these attacks have a delay before they start doing damage, so you have plenty of time to dodge out.
+
+    Ranged have it harder, since even a melee tank will trigger Delete Shot. Spread out if you see that giant red fireball aimed in your direction. Guided Missile takes about a second to arrive at its target, so watch and be ready to dodge when you see the missiles coming down. He tends to spam Chaser Bomb a lot on ranged targets, so that's a pain
+
+    Misery 2 unlocks Initialize Data, which is a delightful attack involving a sudden relocation followed by two giant wind blasts. Where the Pod leaps to is dependent on who it's aggro'd to, which can make it fairly unpredictable.  You can reduce the unpredictability by watching for Overflow--it almost always precedes Initialize Data.
+
+    When you see Overflow, head near the center of the stage since that is a fairly neutral position. Rush to its immediate side/back the moment it leaps. You're completely safe there. If you somehow don't make it, get ready to dodge against the edge of the stage to evade the wind blasts. Or you can dodge through them, if you're feeling especially brave. Just beware their hitboxes are quite large.
+
+    Its enrage is just the usual AI only it does hundreds of thousands of damage. Enjoy!
+
+  moves:
+    - name: Chomp
+      targets: Close
+      m1: true
+      desc: >
+        Bites the target. Chomp.
+        
