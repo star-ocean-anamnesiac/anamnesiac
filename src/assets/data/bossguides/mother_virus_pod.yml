@@ -1,0 +1,144 @@
+- name: "Mother Virus Pod"
+  eventName: "Star Ocean Dreamers"
+  image: mother_virus_pod
+  cat: gl
+  race: Machine
+
+  isActive: true
+
+  enrage:
+    m1: "7:00"
+    m2: "7:00"
+    m3: "4:00"
+    
+  statusInflictions:
+    - Nothing
+
+  weaknesses:
+    - element: Wind
+      percentWeakness: 25
+    - status: Freeze
+      vuln: Low
+    - status: Poison
+      vuln: Low
+    - status: Silence
+      vuln: Low
+    - status: Curse
+      vuln: Low
+    - status: Paralysis
+      vuln: Low
+      
+  recommendations:
+    - plain: Wind Damage
+    - plain: Anti-Flinch
+    - plain: High Mobility
+    - plain: Low Animation Lock
+    - plain: Critical Hit Buffs
+    
+  desc: >
+    Mother Virus Pod is all about equal opportunity. Why make life hard only for melee, when you can piss ranged characters off too? So many of its attacks are fast and hit deceptively hard, so you have to be ready to dodge on a dime. That means characters with high animation lock need to play very carefully, I wouldn't recommend bringing the likes of Cliff, Lenneth, or Fayt unless the player's well-versed with their weaknesses.
+
+    Due to this, and its wind weakness, characters with guns and bows rule the roost. Invokers that exploit wind are rare, but if you have Federation Reimi or Lymle, this is their very specific chance to do mega damage. Due to the difficult to dodge, yet non-fatal damage flying around, this is one of the rare instances I'd recommend bringing a healer like Rena for insurance.
+
+    Unfortunately, its high defense means you'll want crits. Don't panic! This isn't nearly as bad as Crystal Guardian in this regard, but I would still consider the likes of Nel, Maria or even Anne (but really, who doesn't have Maria?) to bring it down quickly.
+
+    Mother Virus Pod begins the battle with four sword-wielding adds. While this looks intimidating, the Pod needs some time to boot; it spends the early part of the fight spamming Chaser Bomb and doing little else. Kill the adds and try to avoid damaging the Pod too much, so as to not push it past its docile threshold (90%).
+
+    If you have a Chaser Bomb stuck to you, you have 6 seconds to run it away from your team. Dodge out the moment the blue light intensifies.
+
+    There is rarely a lull between Mother Virus Pod's attacks. Melee watch and be ready to dodge if it flips into the air or reels back. If it starts up R-Drift Missile, get away from it immediately and let the attack play out. Wide Laser and Tackle Wide Laser are good reasons for any non-Defender to keep away from its front. Thankfully, both of these attacks have a delay before they start doing damage, so you have plenty of time to dodge out.
+
+    Ranged have it harder, since even a melee tank will trigger Delete Shot. Spread out if you see that giant red fireball aimed in your direction. Guided Missile takes about a second to arrive at its target, so watch and be ready to dodge when you see the missiles coming down. He tends to spam Chaser Bomb a lot on ranged targets, so that's a pain
+
+    Misery 2 unlocks Initialize Data, which is a delightful attack involving a sudden relocation followed by two giant wind blasts. Where the Pod leaps to is dependent on who it's aggro'd to, which can make it fairly unpredictable.  You can reduce the unpredictability by watching for Overflow--it almost always precedes Initialize Data.
+
+    When you see Overflow, head near the center of the stage since that is a fairly neutral position. Rush to its immediate side/back the moment it leaps. You're completely safe there. If you somehow don't make it, get ready to dodge against the edge of the stage to evade the wind blasts. Or you can dodge through them, if you're feeling especially brave. Just beware their hitboxes are quite large.
+
+    Its enrage is just the usual AI only it does hundreds of thousands of damage. Enjoy!
+
+  moves:
+    - name: Chaser Bomb
+      targets: Any
+      symbology: true
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Casts and then releases a little blue bomb that lazily follows its target. It does no contact damage. Indeed, it is harmless until the blue light intensifies and it explodes for severe damage.
+
+    - name: Guided Missile
+      targets: Long
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Opens compartments on its front to reveal missile launchers, then fires multiple homing missiles at its ranged target. Fast.
+
+    - name: Delete Shot
+      targets: Any
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Charges a large red fireball at its front, then launches it forward at high speed. The fireball does no damage until it launches.
+        
+    - name: Tail Smash
+      targets: Close
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Reels back and then does a spin attack like it's a Pokemon. High damage.
+        
+    - name: Earthquake
+      targets: Close
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Does a flipty flop and slams down onto the ground for severe damage. Very fast.
+        
+    - name: R-Drift Missile
+      targets: Close
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Opens missile compartments and then moves around while spinning, launching missiles all around it that damage at close and mid range.
+        
+    - name: Broad Laser
+      targets: Close
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Fires a green laser spray that does repeated tick damage.
+        
+    - name: Tackle Wide Laser
+      targets: Close
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Fires a green laser spray that does repeated tick damage, and then rushes forward. Can cross the stage.
+        
+    - name: Overflow
+      targets: Any
+      m2: true
+      m3: true
+      desc: >
+        Crumples to the ground for half a second and then gets back up. This is usually followed by Initialize Data, but is rarely followed by Guided Missile instead.
+        
+    - name: Initialize Data
+      targets: Any
+      m2: true
+      m3: true
+      desc: >
+        Leaps to the edge of the stage opposite its target and fires two wind blasts. They start spread apart and then converge upon the center of the stage. There is a safe spot at its immediate sides & back throughout the attack.
+        
+    - name: Last Update
+      targets: Any
+      m1: true
+      enrage: true
+      desc: >
+        Performs an overflow, except with an energy effect. This is a clear signal that it has enraged.
