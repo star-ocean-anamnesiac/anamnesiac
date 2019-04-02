@@ -8,6 +8,8 @@
 
   enrage:
     m1: "7:00"
+    m2: "7:00"
+    m3: "4:00"
     
   statusInflictions:
     - Nothing
@@ -55,9 +57,88 @@
     Its enrage is just the usual AI only it does hundreds of thousands of damage. Enjoy!
 
   moves:
-    - name: Chomp
+    - name: Chaser Bomb
+      targets: Any
+      symbology: true
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Casts and then releases a little blue bomb that lazily follows its target. It does no contact damage. Indeed, it is harmless until the blue light intensifies and it explodes for severe damage.
+
+    - name: Guided Missile
+      targets: Long
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Opens compartments on its front to reveal missile launchers, then fires multiple homing missiles at its ranged target. Fast.
+
+    - name: Delete Shot
+      targets: Any
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Charges a large red fireball at its front, then launches it forward at high speed. The fireball does no damage until it launches.
+        
+    - name: Tail Smash
       targets: Close
       m1: true
+      m2: true
+      m3: true
       desc: >
-        Bites the target. Chomp.
+        Reels back and then does a spin attack like it's a Pokemon. High damage.
         
+    - name: Earthquake
+      targets: Close
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Does a flipty flop and slams down onto the ground for severe damage. Very fast.
+        
+    - name: R-Drift Missile
+      targets: Close
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Opens missile compartments and then moves around while spinning, launching missiles all around it that damage at close and mid range.
+        
+    - name: Broad Laser
+      targets: Close
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Fires a green laser spray that does repeated tick damage.
+        
+    - name: Tackle Wide Laser
+      targets: Close
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Fires a green laser spray that does repeated tick damage, and then rushes forward. Can cross the stage.
+        
+    - name: Overflow
+      targets: Any
+      m2: true
+      m3: true
+      desc: >
+        Crumples to the ground for half a second and then gets back up. This is usually followed by Initialize Data, but is rarely followed by Guided Missile instead.
+        
+    - name: Initialize Data
+      targets: Any
+      m2: true
+      m3: true
+      desc: >
+        Leaps to the edge of the stage opposite its target and fires two wind blasts. They start spread apart and then converge upon the center of the stage. There is a safe spot at its immediate sides & back throughout the attack.
+        
+    - name: 
+      targets: Last Update
+      m1: true
+      enrage: true
+      desc: >
+        Performs an overflow, except with an energy effect. This is a clear signal that it has enraged.
