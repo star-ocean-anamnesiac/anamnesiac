@@ -525,7 +525,7 @@
     - name: "Eldarian Honor"
       shortEffects: 80% chance of surviving a lethal attack and symbology cast time -80% when at 10% of max HP or more
       effects: 
-        - desc: 80% chance of surviving a lethal attack at 10% of max HP or more
+        - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
         - desc: Symbology cast time -80% when at 10% of max HP or more
           meta:
             priority: 4
@@ -1168,14 +1168,14 @@
     grd: 833
 
   talents:
-    - name: "Fourfold Smile II"
+    - name: "Fourfold Smile"
       effects: 
         - desc: INT +45%
           meta:
             priority: 4
             buff: INT
             buffValue: 40
-    - name: "Escort To The Altar II"
+    - name: "Escort To The Altar"
       shortEffects: AP cost -20%, and AP cost -30%/-40%/-50% when hitcount is >50/>100/>150
       effects: 
         - desc: AP cost -20%
@@ -1201,7 +1201,7 @@
             buff: AP Cost Reduction
             buffCondition: Hit Count > 150
             buffValue: 50
-    - name: "Dazzling Tiara II"
+    - name: "Dazzling Tiara"
       effects:
         - desc: Normal attack AP recovery +80%
           all: true
@@ -1312,7 +1312,7 @@
     grd: 443
 
   talents:
-    - name: "Advance Archaeology Knowledge III"
+    - name: "Advanced Archaeology Knowledge"
       effects: 
         - desc: INT +30% when HP is 100%
           all: true
@@ -1400,7 +1400,7 @@
     - name: "Valiant Soul"
       shortEffects: 80% chance of surviving a lethal attack and symbology cast time -80% when at 10% of max HP or more
       effects:
-        - desc: 80% chance of surviving a lethal attack at 10% of max HP or more
+        - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
         - desc: Symbology cast time -80% when at 10% of max HP or more
           meta:
             priority: 1
@@ -2233,8 +2233,8 @@
     - name: "Eldarian Honor"
       shortEffects: 90% chance of surviving a lethal attack and symbology cast time -90% when at 10% of max HP or more
       effects: 
-        - desc: 90% chance of surviving a lethal attack at 10% of max HP or more
-        - desc: Symbology cast time -90% at 10% of max HP or more
+        - desc: 90% chance of surviving a lethal attack when at 10% of max HP or more
+        - desc: Symbology cast time -90% when at 10% of max HP or more
           meta:
             priority: 4
             buff: Cast Time Reduction
@@ -2251,11 +2251,11 @@
           all: true
     - name: "Scarlet Gaze"
       effects: 
-        - desc: 90% chance of surviving a lethal attack at 20% of max HP or more
+        - desc: 90% chance of surviving a lethal attack when at 20% of max HP or more
           all: Long Range Weapons
     - name: "Logical Thinking"
       effects: 
-        - desc: INT damage +50% when skill chain is 3 or more
+        - desc: INT damage +50% when skill chain is >3 
           meta:
             priority: 4
             buff: INT Damage
