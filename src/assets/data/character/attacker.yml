@@ -2816,7 +2816,7 @@
             buffCondition: Short Ranged Skill
             buff: Enemy INT Damage Taken
             buffValue: 15
-    - name: "Flask-Full of Emotions"
+    - name: "Flask-Full of Emotions II"
       effects: 
         - desc: AP cost -20% when skill chain is >3
           all: true
@@ -3296,7 +3296,7 @@
       power: ATK x 200%
       ap: 20
       maxHits: 2
-      notes: Recovers 5 AP
+      notes: Recover 5 AP
       highlight: true
     - name: "Northern Cross"
       picture: Northern_Cross
@@ -3311,7 +3311,7 @@
       power: ATK x 920%
       ap: 39
       maxHits: 30
-      notes: Recovers 10 AP
+      notes: Recover 10 AP
       highlight: true
 
   rush:
