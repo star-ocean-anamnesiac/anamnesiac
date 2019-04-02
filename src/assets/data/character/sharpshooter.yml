@@ -1004,23 +1004,23 @@
   talents:
     - name: "Bloodstained Fangs II"
       effects: 
-        - desc: Absorbs 10% of damage dealt by normal attacks as HP
+        - desc: Absorbs 15% of damage dealt by normal attacks as HP
           all: true
     - name: "Crimson Cup II"
       effects: 
-        - desc: Damage dealt +30%
+        - desc: Damage dealt +40%
           all: true
           meta:
             priority: 1
             buff: Damage
-            buffValue: 30
-        - desc: Elemental damage dealt +10% when HP is 100%
+            buffValue: 40
+        - desc: Elemental damage dealt +15% when HP is 100%
           all: true
           meta:
             priority: 1
             buff: Elemental Damage
             buffCondition: HP is 100%
-            buffValue: 10
+            buffValue: 15
     - name: "Demon Blade"
       effects: 
         - desc: Absorbs 3% of damage dealt by skills as HP
@@ -1032,6 +1032,12 @@
             buff: AP Cost Reduction
             buffCondition: Skill Chain 3+
             buffValue: 40
+        - desc: ATK +30% when skill chain is >3
+          meta:
+            priority: 4
+            buff: ATK
+            buffCondition: Skill Chain 3+
+            buffValue: 30
         
   skills:
     - name: "Flying Cleave"
@@ -1070,7 +1076,7 @@
           priority: 1
           buff: Single Target Damage
           buffValue: 40
-    power: ATK x 3500%
+    power: ATK x 4000%
     maxHits: 19
     
   notes: >
