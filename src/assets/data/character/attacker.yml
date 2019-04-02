@@ -930,9 +930,9 @@
   rush:
     name: "Celestial Sword"
     picture: Heaven's_Sword_Summer_Reimi
-    shortEffects: Cures all status ailments, and single target damage dealt +40% (All Party/20s)
+    shortEffects: Nullifies all status ailments, and single target damage dealt +40% (All Party/20s)
     effects: 
-      - desc: Cure status ailments
+      - desc: Nullifies status ailments
         all: true
       - desc: Single target damage dealt +40%
         all: true
