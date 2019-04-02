@@ -18,7 +18,7 @@
 
   talents:
     - name: "Silent Will"
-      shortEffects: ATK +40%, and ATK +60% when HP is 100%    
+      shortEffects: ATK +40%, and ATK +60% when HP is 100% (All Party)
       effects: 
         - desc: ATK +40%
           all: true
@@ -712,7 +712,7 @@
     - name: "Hit-the-Watermelon"
       effects: 
         - desc: Evasion possible during air attacks      
-        - desc: AP cost -50% when skill chain is >3 or more
+        - desc: AP cost -50% when skill chain is >3
           meta:
             priority: 4
             buff: AP Cost Reduction
@@ -746,9 +746,9 @@
   rush:
     name: "Celestial Sword"
     picture: Heaven's_Sword_Summer_Reimi
-    shortEffects: Cures all status ailments, and single target damage dealt +40% (All Party/20s)
+    shortEffects: Nullifies all status ailments, and single target damage dealt +40% (All Party/20s)
     effects: 
-      - desc: Cure status ailments
+      - desc: Nullifies status ailments
         all: true
       - desc: Single target damage dealt +40%
         all: true
@@ -1938,10 +1938,10 @@
             buffCondition: Hit Count > 200
             buffValue: 20
     - name: "Colorful Galleria II"
-      shortEffects: Bullet Barrage and Bombing Run deal damage +100%/+200% when skill chain is >3/>5
+      shortEffects: Damage dealt +100%/+200% by Bullet Barrage and Bombing Run when skill chain is >3/>5
       effects: 
-        - desc: Bullet Barrage and Bombing Run deal damage +100% when skill chain is 3 or more
-        - desc: Bullet Barrage and Bombing Run deal damage +200% when skill chain is 5 or more
+        - desc: Damage dealt +100% by Bullet Barrage and Bombing Run when skill chain is >3
+        - desc: Damage dealt +200% by Bullet Barrage and Bombing Run when skill chain is >5
     - name: "Novice Santa"
       shortEffects: ATK +25% and HIT +10%
       effects: 
@@ -2039,18 +2039,18 @@
   picture: Weeping_Welch
   weapon: knuckle
   limited: true
-  star: 5
+  star: 4
 
   stats:
-    hp: 11340
-    atk: 2799
-    int: 1418
-    def: 1208
-    hit: 1057
-    grd: 749
+    hp: 10290
+    atk: 2544
+    int: 1286
+    def: 1090
+    hit: 959
+    grd: 679
 
   talents:
-    - name: "Good Fortune II"
+    - name: "Good Fortune"
       effects: 
         - desc: DEF -50%
           all: Enemies
@@ -2064,7 +2064,7 @@
             priority: 1
             buff: DEF Reduction
             buffValue: 50
-    - name: "Braveman's Heart II"
+    - name: "Braveman's Heart"
       effects: 
         - desc: ATK +30%
           meta:
@@ -2082,26 +2082,27 @@
       ap: 17
       maxHits: 4
       highlight: true
-    - name: "Hammer of Might"
-      picture: Hammer_of_Might
-      power: ATK x 230%
-      ap: 24
-      maxHits: 1
-    - name: "Drill Spike"
-      picture: Drill_Spike
-      power: ATK x 190%
-      ap: 20
-      maxHits: 4
-      highlight: true
     - name: "X Claw"
       picture: X_Claw
       power: ATK x 310%
       ap: 29
       maxHits: 6
+    - name: "Drill Spike"
+      picture: Drill_Spike
+      power: ATK x 190%
+      ap: 20
+      maxHits: 4
+      highlight: true      
+    - name: "Hammer of Might"
+      picture: Hammer_of_Might
+      power: ATK x 230%
+      ap: 24
+      maxHits: 1
 
   rush:
     name: "Fists of Unquenchable Fury"
     picture: Fists_of_Unquenchable_Fury_Weeping_Welch
+    shortEffects: ATK +50% and DEF -100% (All Party/20s)
     effects: 
       - desc: ATK +50%
         all: true
@@ -2118,7 +2119,7 @@
           buff: DEF Reduction
           buffValue: 100
     power: ATK x 2000%
-    maxHits: 20
+    maxHits: 25
     
   notes: >
       _WIP._
@@ -2142,7 +2143,8 @@
       **Rotation**
       
       *Normal > Crescent Lotus > Drill Spike > Crescent Lotus > Spam till out of AP (Damage rotation)*
-    
+  
+  
 - name: Meracle Chamlotte
   cat: jp
   rating: 7
@@ -2161,34 +2163,35 @@
     grd: 826
 
   talents:
-    - name: "Hunter's Intuition II"
+    - name: "Hunter's Intuition"
       effects: 
-        - desc: Critical Rate +30%
+        - desc: Critical hit chance +30%
           meta:
             priority: 4
             buff: Crit Rate
             buffValue: 30
-        - desc: Critical Rate +30% at short range
+        - desc: Critical hit chance +30% at short range
           all: true
           meta:
             priority: 1
             buff: Crit Rate
             buffValue: 30
-    - name: "Memories of Ocarina II"
+    - name: "Memories of Ocarina"
+      shortEffects: AP recovery +50% (All Defenders/Self)
       effects: 
-        - desc: AP Recovery +50%
+        - desc: AP recovery +50%
           meta:
             priority: 4
             buff: AP Recovery
             buffValue: 50
-        - desc: AP Recovery +50%
+        - desc: AP recovery +50%
           all: Defenders
           meta:
             priority: 1
             buff: AP Recovery
             buffRole: defender
             buffValue: 50
-    - name: "Isolation II"
+    - name: "Isolation"
       effects:
         - desc: ATK +20%
           meta:
@@ -2196,25 +2199,26 @@
             buff: ATK
             buffValue: 20
     - name: "Cat's Interlude"
+      shortEffects: AP cost -20%, and ATK +10%/+20%/+30% when hitcount is >100/>150/>200
       effects:
-        - desc: AP Cost -20%
+        - desc: AP cost -20%
           meta:
             priority: 4
             buff: AP Cost Reduction
             buffValue: 20
-        - desc: ATK +10% at 100 hits
+        - desc: ATK +10% at when hitcount is >100
           meta:
             priority: 4
             buff: ATK
             buffCondition: Hit Count > 100
             buffValue: 10
-        - desc: ATK +20% at 150 hits
+        - desc: ATK +20% when hitcount is >150
           meta:
             priority: 4
             buff: ATK
             buffCondition: Hit Count > 150
             buffValue: 20
-        - desc: ATK +30% at 200 hits
+        - desc: ATK +30% when hitcount is >200
           meta:
             priority: 4
             buff: ATK
@@ -2222,16 +2226,16 @@
             buffValue: 30
 
   skills:
-    - name: "Gouging Spike"
-      picture: Drill_Spike
-      power: ATK x 160%
-      ap: 16
-      maxHits: 4
-      highlight: true
     - name: "Crescent Locus"
       picture: Crescent_Locus
       power: ATK x 150%
       ap: 17
+      maxHits: 4
+      highlight: true  
+    - name: "Gouging Spike"
+      picture: Drill_Spike
+      power: ATK x 160%
+      ap: 16
       maxHits: 4
       highlight: true
     - name: "Eviscerating Claw"
@@ -2249,7 +2253,7 @@
     name: "Max Shockwave"
     picture: Max_Shockwave_Meracle
     effects: 
-      - desc: AP Cost -40%
+      - desc: AP cost -40%
         duration: 20
         meta:
           priority: 4
@@ -2284,7 +2288,8 @@
       **Rotation**
       
       *Normal > Crescent Locus > Gouging Spike > CA Crescent Locus > Spam till out of AP (Damage rotation)*
-    
+
+
 - name: Lasswell
   cat: jp
   rating: 7
@@ -2297,13 +2302,13 @@
   stats:
     hp: 16065
     atk: 2613
-    int: 1549
+    int: 1523
     def: 1969
     hit: 1120
     grd: 826
 
   talents:
-    - name: "Tranquil Spirit II"
+    - name: "Tranquil Spirit"
       effects: 
         - desc: ATK +30%
           all: true
@@ -2312,18 +2317,18 @@
             buff: ATK
             buffValue: 30
         - desc: ATK +45%
-          all: Short Ranged Weapon Users
+          all: Short Range Weapons
           meta:
             priority: 1
             buff: ATK
             buffValue: 45
     - name: "Dependable Honors Student"
       effects: 
-        - desc: Nullifies Movement Rate Reduction Field
-          all: Short Ranged Weapon Users
-    - name: "Heir to the Blade II"
+        - desc: Nullifies movement rate reduction fields
+          all: Short Range Weapons
+    - name: "Heir to the Blade"
       effects: 
-        - desc: AP usage -40% when Skill Chain is 3+
+        - desc: AP cost -40% when skill chain is >3
           meta:
             priority: 4
             buff: AP Cost Reduction
@@ -2336,35 +2341,36 @@
   skills:
     - name: "Exorcising Storm"
       picture: Exorcising_Storm
+      element: Ice
       power: ATK x 170%
       ap: 17
       maxHits: 5
-      element: Ice
       highlight: true
     - name: "Tranquility"
       picture: Air_Slash_II
-      power: ATK x 250%
+      power: ATK x 200%
       ap: 20
-      maxHits: 2
+      maxHits: 1
       highlight: true
     - name: "Mirror of Haze"
       picture: Double_Slash_II
-      power: ATK x 250%
+      power: ATK x 200%
       ap: 20
       maxHits: 2
     - name: "Blade Flash - Awakened"
       picture: Blade_Flash
-      power: ATK x 450%
+      element: Ice
+      power: ATK x 400%
       ap: 35
       maxHits: 5
-      element: Ice
       highlight: true
 
   rush:
     name: "Azure Sky"
     picture: Azure_Sky_Lasswell
+    element: Ice
     effects: 
-      - desc: Damage +30%
+      - desc: Damage dealt +30%
         all: true
         duration: 20
         meta:
@@ -2373,7 +2379,6 @@
           buffValue: 30
     power: ATK x 3500%
     maxHits: 9
-    element: Ice
     
   notes: >
       _WIP._
@@ -2403,7 +2408,8 @@
       **Rotation**
       
       *Normal > Exorcising Storm > Tranquility > Blade Flash - Awakened > Spam it till out of AP. (General combo.)*
-    
+
+
 - name: Andre
   cat: jp
   rating: 0
@@ -2424,16 +2430,15 @@
   talents:
     - name: "Young General"
       effects: 
-        - desc: Critical Rate +10%
+        - desc: Critical hit chance +10%
           all: true
           meta:
             priority: 1
             buff: Crit Rate
             buffValue: 10
-    - name: "Mischievous Rascal"
+    - name: "Mischievous Brat"
       effects:
-        - desc: Will not flinch to damage under 20% max HP
-          all: false
+        - desc: No flinching when taking damage of 20% of max HP or less
         
   skills:
     - name: "Double Slash"
@@ -2448,16 +2453,16 @@
       maxHits: 5
     - name: "Shotgun Blast"
       picture: Shotgun_Blast
+      element: Lightning      
       power: ATK x 190%
       ap: 20
       maxHits: 4
-      element: Lightning
 
   rush:
     name: "Revised Stampede Slash"
     picture: Revised_Stampede_Slash_Andre
     effects:
-      - desc: Critical Rate +40%
+      - desc: Critical hit chance +40%
         duration: 20
         all: true
         meta:
@@ -2467,7 +2472,8 @@
     power: ATK x 2500%
     maxHits: 6
     
-- name: Verda Clayman (Valentine)
+    
+- name: Verda Kleiman (Valentine)
   cat: jp
   rating: 10
   picture: Pure_Love_Verda
@@ -2478,7 +2484,7 @@
 
   stats:
     hp: 15645
-    atk: 3110
+    atk: 3380
     int: 1563
     def: 1943
     hit: 1271
@@ -2486,67 +2492,71 @@
 
   talents:
     - name: "First Valentine"
+      shortEffects: ATK/INT damage taken +25% when hit by a short range skill (All Enemies/20s)
       effects: 
-        - desc: ATK damage taken +15% when hit by a Short-Range skill
-          all: Enemy
+        - desc: ATK damage taken +25% inflicted by short range skills (20s)
+          all: Enemies
           meta:
             priority: 3
             buffCondition: Short Ranged Skill
             buff: Enemy ATK Damage Taken
-            buffValue: 15
-        - desc: INT damage taken +15% when hit by a Short-Range skill
-          all: Enemy
+            buffValue: 25
+        - desc: INT damage taken +25% inflicted by short range skills (20s)
+          all: Enemies
           meta:
             priority: 3
             buffCondition: Short Ranged Skill
             buff: Enemy INT Damage Taken
-            buffValue: 15
+            buffValue: 25
     - name: "Flask-Full of Emotions"
       effects: 
-        - desc: AP usage -20% when Skill Chain at 3+
+        - desc: AP cost -30% when skill chain is >3
           all: true
           meta:
             priority: 4
             buff: AP Cost Reduction
             buffCondition: Skill Chain 3+
-            buffValue: 20
+            buffValue: 30
     - name: "Love of Japanese Cuisine II"
+      shortEffects: ATK damage dealt +150%/+250% when skill chain is >3/>5
       effects: 
-        - desc: ATK Damage +100% when skill chain is 3+
+        - desc: ATK damage dealt +150% when skill chain is >3
           meta:
             priority: 3
             buff: ATK Damage
             buffCondition: Skill Chain 3+
             buffValue: 100
-        - desc: ATK Damage 200% when Skill Chain when skill chain is 5+
+        - desc: ATK damage dealt +250% when when skill chain is >5
           meta:
             priority: 3
             buff: ATK Damage
             buffCondition: Skill Chain 5+
             buffValue: 200
     - name: "Awkward Adolescence"
+      shortEffects: ATK +25% and HIT +10%
       effects: 
-        - desc: ATK +15%
+        - desc: ATK +25%
           meta:
             priority: 4
             buff: ATK
-            buffValue: 15
-        - desc: HIT +15%
+            buffValue: 25
+        - desc: HIT +10%
           meta:
             priority: 4
             buff: HIT
-            buffValue: 15
+            buffValue: 10
 
   skills:
-    - name: "Counter Clockwise Arms"
+    - name: "C Clockwise Arms"
       picture: Counter_Clockwise_Arm
       power: ATK x 260%
-      ap: 17
+      ap: 19
       maxHits: 6
-    - name: "Counter Clockwise Arms"
-      picture: Counter_Clockwise_Arm
+      highlight: true
+    - name: "Clockwise Arms"
+      picture: Clockwise_Arm
       power: ATK x 260%
-      ap: 17
+      ap: 19
       maxHits: 6
       highlight: true
     - name: "Love Rocket Punch"
@@ -2565,6 +2575,7 @@
   rush:
     name: "Chocolate Blessing"
     picture: Blessing_Chocolate_Valentine_Verda
+    shortEffects: ATK/INT damage taken +40% (All Enemies/20s)
     effects: 
       - desc: ATK damage taken +40%
         duration: 20
@@ -2580,7 +2591,7 @@
           priority: 1
           buff: Enemy INT Damage Taken
           buffValue: 40
-    power: ATK x 4500%
+    power: ATK x 5000%
     maxHits: 5
     
   notes: >
@@ -2609,7 +2620,8 @@
       **Rotation**
       
       *Normal > Magnetic Love Field > Clockwise Arms > Magnetic Love Field > Spam till out of AP (Damage rotation)*
-      
+ 
+ 
 - name: Rena Lanford (Valentine)
   cat: jp
   rating: 10
@@ -2628,39 +2640,40 @@
     grd: 833
 
   talents:
-    - name: "Cat Ears II"
+    - name: "Cat Ears"
       effects: 
-        - desc: ATK +40%
+        - desc: ATK +45%
           all: true
           meta:
             priority: 1
             buff: ATK
-            buffValue: 40
-        - desc: ATK +60%
-          all: Short Ranged Weapon Users
+            buffValue: 45
+        - desc: ATK +65%
+          all: Short Range Weapons
           meta:
             priority: 1
             buff: ATK
-            buffValue: 60
-    - name: "Exposed Ferocity II"
+            buffValue: 65
+    - name: "Exposed Ferocity"
       effects: 
-        - desc: Nullifies Charge Assault critical penalty
+        - desc: Nullifies charge assault critical damage penalty
           all: Attackers
-        - desc: No flinching when taking damage of 30% HP of less when using Charge Assault
+        - desc: No flinching when taking damage of 30% of max HP or less during a charge assault
           all: Attackers
-    - name: "Bad Luck II"
+    - name: "Bad Luck"
+      shortEffects: Normal attack AP recovery +200% and evasion AP cost -50% (All Attackers)
       effects: 
-        - desc: AP recovery from normal attacks +100%
+        - desc: Normal attack AP recovery +200%
           all: Attackers
           meta:
             priority: 1
             buff: AP Recovery From Normal Attacks
             buffValue: 100
-        - desc: Evasion AP usage -50%
+        - desc: Evasion AP cost -50%
           all: Attackers
     - name: "Sweet Present"
       effects: 
-        - desc: 70% chance of surviving a lethal attack at 20% HP or more
+        - desc: 90% chance of surviving a lethal attack when at 20% of max HP or more
 
   skills:
     - name: "Crescent Locus"
@@ -2682,7 +2695,7 @@
       maxHits: 6
     - name: "Heart Burst"
       picture: Heart_Discharge
-      power: ATK x 1280%
+      power: ATK x 1470%
       ap: 54
       maxHits: 9
       highlight: true
@@ -2691,14 +2704,14 @@
     name: "Love Scratch"
     picture: Lovely_Scratch_Valentine_Rena
     effects: 
-      - desc: Single Target Damage +40%
+      - desc: Single target damage +40%
         all: true
         duration: 20
         meta:
           priority: 1
           buff: Single Target Damage
           buffValue: 40
-    power: ATK x 4000%
+    power: ATK x 4500%
     maxHits: 6
     
   notes: >
@@ -2729,7 +2742,8 @@
       **Rotation**
       
       *Normal > Crescent Lotus > Death Palm Kiss > Heart Burst (General combo.)*
-      
+
+
 - name: Mirage Koas
   cat: jp
   rating: 7
@@ -2757,7 +2771,7 @@
             buffValue: 20
     - name: "Klausian Heritage II"
       effects: 
-        - desc: ATK Damage at Short Range +20%
+        - desc: ATK damage dealt +20% at short range
           all: true
           meta:
             priority: 3
@@ -2766,46 +2780,47 @@
             buffValue: 20
     - name: "Merciful Heart II"
       effects: 
-        - desc: AP recovery from normal attacks +100% at short range
+        - desc: Normal attack AP recovery +100% at short range
           all: true
           meta:
             priority: 3
             buff: AP Recovery From Normal Attacks
             buffCondition: Short Range
             buffValue: 100
-        - desc: Evasion AP usage -50%
-          all: Attackers
     - name: "Father’s Teachings"
+      shortEffects: Critical hit chance +30% and critical damage +30% when HP is 100%
       effects: 
-        - desc: Crit Rate +30%
+        - desc: Critical hit chance +30% when HP is 100%
           meta:
             priority: 1
             buff: Crit Rate
+            buffCondition: HP is 100
             buffValue: 30
-        - desc: Crit Damage +30%
+        - desc: Critical hit damage +30%
           meta:
             priority: 1
             buff: Crit Damage
+            buffCondition: HP is 100
             buffValue: 30
 
   skills:
-    - name: "Triple Kick"
-      picture: Triple_Kick
-      power: ATK x 250%
-      ap: 24
-      maxHits: 2
+    - name: "Acrobat Locus"
+      picture: Acrobat_Locus
+      power: ATK x 710%
+      ap: 41
+      maxHits: 7
+      highlight: true  
     - name: "Crescent Locus"
       picture: Crescent_Locus
       power: ATK x 150%
       ap: 17
       maxHits: 4
-      highlight: true
-    - name: "Acrobat Locus"
-      picture: Acrobat_Locus
-      power: ATK x 710%
-      ap: 41
-      maxHits: 4
-      highlight: true
+      highlight: true      
+    - name: "Triple Kick"
+      picture: Triple_Kick
+      power: ATK x 250%
+      ap: 24
+      maxHits: 3
     - name: "Electric Fists"
       picture: Current_Knuckle
       power: ATK x 410%
@@ -2816,17 +2831,18 @@
   rush:
     name: "Avenger Charge"
     picture: Festive_Avenger_Mirage
+    element: Fire
+    shortEffects: AP cost -30%, and recovers 10% of max HP every 3 seconds (Self/20s)
     effects: 
-      - desc: AP usage -30%
+      - desc: AP cost -30%
         meta:
             priority: 4
             buff: AP Cost Reduction
             buffValue: 30
-      - desc: Recover 10% HP every 3 seconds
+      - desc: Recovers 10% of max HP every 3 seconds
         duration: 20
     power: ATK x 4000%
-    maxHits: 6
-    element: Fire
+    maxHits: 15
     
   notes: >
       _WIP._
@@ -2856,7 +2872,8 @@
       *Normal > Electric Fists > Crescent Lotus > Electric Fists > Spam till out of AP (General combo.)*
       
       *Normal > Crescent Lotus  > Electric Fists > Acrobat Locus > Electric Fists > Spam till out of AP (Post Rush combo.)*
-      
+
+
 - name: Ashton Anchors
   cat: jp
   rating: 7
@@ -2874,82 +2891,90 @@
     grd: 819
 
   talents:
-    - name: "Encouragement of Gyo"
+    - name: "Creepy's Aid"
+      shortEffects: ATK +15% and slight AP recovery after using a fire skill (10s)
       effects: 
-        - desc: After using a fire skill gain ATK +15%.
+        - desc: ATK +15% after using a fire skill (10s)
           meta:
             priority: 3
             buff: ATK
             buffCondition: Fire Skill
             buffValue: 15
-        - desc: After using a fire skill gain AP.
-    - name: "Healing of Ulrun"
+        - desc: Slight AP recovery after using a fire skill (10s)
+    - name: "Weepy's Healing"
       effects: 
-        - desc: After using an ice skill +150% AP recovery from normals.
+        - desc: Normal attack AP recovery +150% after using an ice skill (10s)
           meta:
             priority: 3
             buff: AP Recovery From Normal Attacks
             buffValue: 150
-    - name: "Mild Mannered Atsumi"
+    - name: "Sincere Efforts"
       effects: 
-        - desc: Elemental Damage +30%.
+        - desc: Elemental damage dealt +30%
           all: true
           meta:
             priority: 1
             buff: Elemental Damage
             buffValue: 30
-    - name: "One Sided Cleave"
-      effects: 
-        - desc: +10% Rush Damage when hit count is over 100.
-          all: true
+        - desc: AP cost -10%
           meta:
-            priority: 3
-            buff: Rush Damage
-            buffCondition: Hit Count 100+
+            priority: 1
+            buff: AP Cost Reduction
             buffValue: 10
-        - desc: +20% Rush Damage when hit count is over 200.
-          all: true
+    - name: "Heir of Symbological Arts"
+      shortEffects: Rush combo damage +10%/+20% when hitcount is >100/>200
+      effects: 
+        - desc: Rush combo damage +10% when hitcount is >100
+          all: false
           meta:
             priority: 3
             buff: Rush Damage
-            buffCondition: Hit Count 200+
+            buffCondition: Hit Count > 100
+            buffValue: 10
+        - desc: Rush combo damage +20% when hitcount is >200
+          all: false
+          meta:
+            priority: 3
+            buff: Rush Damage
+            buffCondition: Hit Count > 200
             buffValue: 20
 
   skills:
-    - name: "Piercing Thrust"
+    - name: "Piercing Blades"
       picture: Piercing_Blades
-      power: ATK x 150%
-      ap: 14
-      maxHits: 6
       element: Ice
+      power: ATK x 150%
+      ap: 15
+      maxHits: 6
       highlight: true
-    - name: "Twin Stab"
+    - name: "Twin Thrust"
       picture: Talon_Thrust
+      element: Fire
       power: ATK x 200%
       ap: 20
       maxHits: 2
-      notes: Recover 5 AP
-      element: Fire
+      notes: Recovers 5 AP
       highlight: true
     - name: "Northern Cross"
       picture: Northern_Cross
-      power: ATK x 4000%
+      element: Ice
+      power: ATK x 400%
       ap: 27
       maxHits: 2
-      element: Ice
       highlight: true
     - name: "Sword Dance"
       picture: Sword_Dance
-      power: ATK x 920%
-      ap: 37
-      maxHits: 30
-      notes: Recover 10 AP
       element: Fire
+      power: ATK x 920%
+      ap: 39
+      maxHits: 30
+      notes: Recovers 10 AP
       highlight: true
 
   rush:
-    name: "Tri-Ace"
+    name: "tri-Ace"
     picture: Tri_Ace_Ashton
+    shortEffects: ATK +60% and AP cost -30% (Self/20s)
     effects: 
       - desc: ATK +60% 
         duration: 20
@@ -2957,7 +2982,7 @@
           priority: 1
           buff: ATK
           buffValue: 60
-      - desc: -30% AP cost
+      - desc: AP cost -30%
         duration: 20
         meta:
           priority: 1
@@ -2965,7 +2990,8 @@
           buffValue: 30
     power: ATK x 3500%
     maxHits: 12
-      
+
+
 - name: Precis F. Neumann
   cat: jp 
   rating: 4
@@ -4114,7 +4140,8 @@
       **Rotation**
             
       *Normal > Glowing Pierce > Sky-High Break^n*
-      
+
+
 - name: Ashton Anchors (Awakened)
   cat: jp
   rating: 8
@@ -4134,78 +4161,77 @@
 
   talents:
     - name: "Creepy's Aid"
-      shortEffects: ATK +25% and slight AP recovery after using a fire skill (10 seconds)
+      shortEffects: ATK +25% and slight AP recovery after using a fire skill (10s)
       effects: 
-        - desc: ATK +25% after using a fire skill (10 seconds)
+        - desc: ATK +25% after using a fire skill (10s)
           meta:
             priority: 3
             buff: ATK
             buffCondition: Fire Skill
-            buffValue: 15
-        - desc: Slight AP recovery after using a fire skill (10 seconds)
+            buffValue: 25
+        - desc: Slight AP recovery after using a fire skill (10s)
     - name: "Weepy's Healing"
       effects: 
-        - desc: Normal attack AP recovery +150% after using an ice skill (10 seconds)
+        - desc: Normal attack AP recovery +150% after using an ice skill (10s)
           meta:
             priority: 3
             buff: AP Recovery From Normal Attacks
             buffValue: 150
-    - name: "Sincere Efforts II"
+    - name: "Sincere Efforts"
       effects: 
-        - desc: Elemental Damage +40%
+        - desc: Elemental damage dealt +40%
           all: true
           meta:
             priority: 1
             buff: Elemental Damage
             buffValue: 40
         - desc: AP cost -10%
-          all: false
           meta:
             priority: 1
             buff: AP Cost Reduction
             buffValue: 10
     - name: "Heir of Symbological Arts"
-      shortEffects: Rush Damage +20%/40% when hitcount is 100/200
+      shortEffects: Rush combo damage +20%/+40% when hitcount is >100/>200
       effects: 
-        - desc: Rush Damage +20% when hitcount is 100 or more
+        - desc: Rush combo damage +20% when hitcount is >100
           all: false
           meta:
             priority: 3
             buff: Rush Damage
             buffCondition: Hit Count > 100
             buffValue: 20
-        - desc: Rush Damage +40% when hitcount is 200 or more
+        - desc: Rush combo damage +40% when hitcount is >200
           all: false
           meta:
             priority: 3
             buff: Rush Damage
             buffCondition: Hit Count > 200
             buffValue: 40
-    - name: "High-Speed Slashing"
-      shortEffects: AP Cost -30%/50% when hitcount is 150/300 and Crit Rate +50% when hitcount is 400 or more.
+    - name: "High-Speed Slash"
+      shortEffects: AP cost -30%/-50% when hitcount is >150/>300, and critical hit chance +50% when hitcount is >400
       effects: 
-        - desc: AP Cost -30% when hitcount is 150 or more
+        - desc: AP cost -30% when hitcount is >150
           all: false
           meta:
             priority: 3
             buff: AP Cost Reduction
             buffCondition: Hit Count > 150
             buffValue: 30
-        - desc: AP Cost -50% when hitcount is 300 or more
+        - desc: AP cost -50% when hitcount is >300
           all: false
           meta:
             priority: 3
             buff: AP Cost Reduction
             buffCondition: Hit Count > 300
             buffValue: 50
-        - desc: Critial Rate +50% when hitcount is 400 or more
+        - desc: Critial hit chance +50% when hitcount is >400
           all: false
           meta:
             priority: 3
             buff: Crit Rate
             buffCondition: Hit Count > 400
             buffValue: 50
-    - name: "Talent 6"
+    - name: "Swordsman of Ice and Flame"
       effects: 
         - desc: Additional hit that deals 5% damage when using skills
 
@@ -4223,7 +4249,7 @@
       power: ATK x 220%
       ap: 20
       maxHits: 2
-      notes: Recovers 5 AP
+      notes: Recover 5 AP
       highlight: true
     - name: "Northern Cross"
       picture: Northern_Cross
@@ -4238,21 +4264,20 @@
       power: ATK x 1020%
       ap: 39
       maxHits: 30
-      notes: Recovers 10 AP
+      notes: Recover 10 AP
       highlight: true
-    - name: "Dextral Edge Flame"
+    - name: "Dextral Edge (Flame)"
       picture: Dextral_Edge
       element: Fire
       power: ATK x 170%
       ap: 14
       maxHits: 2
-      notes: Recovers 3 AP
-      highlight: true
+      notes: Recover 3 AP        
       
   rush:
     name: "tri-Ace"
     picture: Tri_Ace_Ashton
-    shortEffects: ATK +60% and AP cost -30% (20 seconds)
+    shortEffects: ATK +60% and AP cost -30% (Self/20s)
     effects: 
       - desc: ATK +60% 
         duration: 20
@@ -4324,7 +4349,7 @@
     grd: 812    
 
   talents:
-    - name: "Klausian Champion II"
+    - name: "Klausian Champion"
       effects: 
         - desc: AP cost -40%
           all: false
@@ -4357,19 +4382,19 @@
     - name: "The Fist of the Wind"
       effects:
         - desc: Evasion possible during air attacks
-        - desc: Nullifies critical damage penalty during charge assault
+        - desc: Nullifies charge assault critical damage penalty
           all: false
     - name: "Quark Founder"
-      shortEffects: ATK damage +50%/100% when skill chain is 3/5 or more
+      shortEffects: ATK damage +50%/+100% when skill chain is >3/>5
       effects:
-        - desc: ATK damage +50% when skill chain is 3 or more
+        - desc: ATK damage +50% when skill chain is >3
           all: false
           meta:
             priority: 3
             buff: ATK Damage
             buffCondition: Skill Chain 3+
             buffValue: 50
-        - desc: ATK damage +100% when skill chain is 5 or more
+        - desc: ATK damage +100% when skill chain is >5
           all: false
           meta:
             priority: 3
@@ -4450,6 +4475,7 @@
 
       *Normal > Crescent > filler > Crescent^n - For enemies that don't stay still long enough for Flash Chariot*
 
+
 - name: Ilia Silvestri (Awakened)
   cat: jp
   rating: 3
@@ -4468,7 +4494,8 @@
     grd: 756
 
   talents:
-    - name: "Even Greater Instincts II"
+    - name: "Even Greater Instincts"
+      shortEffects: ATK +40% and normal attack AP recovery +100% (All Party)
       effects: 
         - desc: ATK +40%
           all: true
@@ -4476,13 +4503,13 @@
             priority: 1
             buff: ATK
             buffValue: 40
-        - desc: AP recovery from normal attacks +100%
+        - desc: Normal attack AP recovery +100%
           all: true
           meta:
             priority: 1
             buff: AP Recovery
             buffValue: 100
-    - name: "All-Seeing Eye II"
+    - name: "All-Seeing Eye"
       effects: 
         - desc: Multiple target damage +20%
           all: true
@@ -4491,15 +4518,20 @@
             buff: Multiple Target Damage
             buffValue: 20
         - desc: Convert 45% of ATK to INT
-          all: Invokers, Healers
+          all: Invokers/Healers
+          meta:
+            priority: 1
+            buff: ATK -> INT
+            buffValue: 45      
     - name: "Mother of Symbology"
+      shortEffects: AP cost -10%, and AP cost -30% when skill chain is >3
       effects: 
         - desc: AP cost -10%
           meta:
             priority: 4
             buff: AP Cost Reduction
             buffValue: 10
-        - desc: AP cost -30% when skill chain is 3 or more
+        - desc: AP cost -30% when skill chain is >3
           meta:
             priority: 4
             buff: AP Cost Reduction
@@ -4507,36 +4539,36 @@
             buffValue: 30
     - name: "Quiet Devotion"
       effects: 
-        - desc: Fire Damage +20%
+        - desc: Fire damage dealt +20%
           all: true
           meta:
             priority: 1
             buff: Fire Damage
             buffValue: 20
-        - desc: Stun Rate +20%
+        - desc: Stun rate +20%
           all: true
           meta:
             priority: 1
             buff: Stun Rate
             buffValue: 20
-    - name: "Ahi Liquor"
-      shortEffects: ATK Damage +50%/100% skill chain is 3/5 & Air Dodge
+    - name: "Sake-lover's Lineage"
+      shortEffects: ATK Damage +50%/+100% skill chain is >3/>5, and evasion possible during attacks
       effects: 
-        - desc: ATK Damage +50% skill chain is 3+
+        - desc: ATK damage dealt +50% when skill chain is >3
           meta:
             priority: 4
             buff: ATK Damage
             buffCondition: Skill Chain 3+
             buffValue: 50
-        - desc: ATK Damage +100% skill chain is 5+
+        - desc: ATK damage dealt +100% when skill chain is >5
           meta:
             priority: 4
             buff: ATK Damage
             buffCondition: Skill Chain 5+
             buffValue: 100
-        - desc: Enables evasion during air attacks
-    - name: "Girl Princess Narrator"
-      shortEffects: ATK +30%, DEF +20%, HIT +10% & HP +20%
+        - desc: Evasion possible during air attacks
+    - name: "Narrator of the Tale of Cinderella"
+      shortEffects: ATK +30%, DEF +20%, HIT +10%, and HP +20%
       effects: 
         - desc: HP +30%
           meta:
@@ -4593,23 +4625,14 @@
   rush:
     name: "Divine Hammer"
     picture: Divine_Hammer_Ilia
-    shortEffects: AP cost -20% (All Attackers / Invokers, 20 seconds)
+    shortEffects: AP cost -40% (All Party/20s)
     effects: 
       - desc: AP cost -40%
-        all: Attackers
+        all: true
         duration: 20
         meta:
           priority: 4
           buff: AP Cost Reduction
-          buffRole: attacker
-          buffValue: 40
-      - desc: AP cost -40%
-        all: Invokers
-        duration: 20
-        meta:
-          priority: 4
-          buff: AP Cost Reduction
-          buffRole: invoker
           buffValue: 40
     power: ATK x 4500%
     maxHits: 14
@@ -4649,7 +4672,6 @@
       *Normal > Crescent Locus > Palm of Destruction > Current Knuckle^n (Small enemies)*
 
 
-
 - name: Arngrim
   cat: jp
   rating: 0
@@ -4670,14 +4692,14 @@
   talents:
     - name: "Dauntless Courage"
       effects: 
-        - desc: Dead End deals damage +100% during charge assault
+        - desc: Damage dealt +100% by Dead End during charge assault
     - name: "Reckless"
       effects: 
-        - desc: Recovers 15% HP every 3 seconds during charge assault standby
+        - desc: Recovers 15% of max HP every 3 seconds during charge assault standby
     - name: "Will of Loyalty"
       effects: 
-        - desc: 95% chance of surviving a lethal attack at 30% HP or more
-        - desc: No flinching when taking damage of 10% HP or less
+        - desc: 95% chance of surviving a lethal attack at 30% of max HP or more
+        - desc: No flinching when taking damage of 10% of max HP or less
         - desc: DEF -30%
           all: Enemies
           meta:
@@ -4777,16 +4799,16 @@
             buffCondition: Behind Target
             buffValue: 40
     - name: "Result of Practice"
-      shortEffects: Damage dealt +150% by Talon Pierce and Tri Zapper when skill chain is 3 or more, and +300% when skill chain is 5 or more
+      shortEffects: Damage dealt +150%/+300% by Talon Pierce and Tri Zapper when skill chain is >3/>5
       effects: 
-        - desc: Damage dealt +150% by Talon Pierce and Tri Zapper when skill chain is 3 or more
+        - desc: Damage dealt +150% by Talon Pierce and Tri Zapper when skill chain is >3
           all: true
           meta:
             priority: 3
             buff: Damage
             buffCondition: Skill Chain 3+
             buffValue: 150
-        - desc: Damage dealt +300% by Talon Pierce and Tri Zapper when skill chain is 5 or more
+        - desc: Damage dealt +300% by Talon Pierce and Tri Zapper when skill chain is >5
           meta:
             priority: 3
             buff: Damage
@@ -4794,11 +4816,11 @@
             buffValue: 300
     - name: "Mister Perfect"
       effects:
-        - desc: Normal attack AP recovery +100% when at 100% HP
+        - desc: Normal attack AP recovery +100% when HP is 100%
           meta:
             priority: 1
             buff: AP Recovery
-            buffCondition: HP is 100
+            buffCondition: HP is 100%
             buffValue: 100
   
   skills:
