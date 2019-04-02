@@ -18,7 +18,7 @@
 
   talents:
     - name: "Silent Will"
-      shortEffects: ATK +40%, and ATK +60% when HP is 100%
+      shortEffects: ATK +40%, and ATK +60% when HP is 100% (All Party)
       effects: 
         - desc: ATK +40%
           all: true
@@ -1793,7 +1793,7 @@
 
   talents:
     - name: "Hand Trick II"
-      shortEffects: ATK +25%, and ATK +35% when hitcount is >100
+      shortEffects: ATK +25%, and ATK +35% when hitcount is >100 (All Party)
       effects: 
         - desc: ATK +25%
           all: true
@@ -2218,10 +2218,10 @@
             buffCondition: Hit Count > 200
             buffValue: 20
     - name: "Colorful Galleria II"
-      shortEffects: Bullet Barrage and Bombing Run deal damage +100%/+200% when skill chain is >3/>5
+      shortEffects: Damage dealt +100%/+200% by Bullet Barrage and Bombing Run when skill chain is >3/>5
       effects: 
-        - desc: Bullet Barrage and Bombing Run deal damage +100% when skill chain is >3
-        - desc: Bullet Barrage and Bombing Run deal damage +200% when skill chain is >5
+        - desc: Damage dealt +100% by Bullet Barrage and Bombing Run when skill chain is >3
+        - desc: Damage dealt +200% by Bullet Barrage and Bombing Run when skill chain is >5
     - name: "Novice Santa"
       shortEffects: ATK +15% and HIT +10%
       effects: 
@@ -2800,7 +2800,7 @@
 
   talents:
     - name: "First Valentine"
-      shortEffects: ATK/INT damage taken +15% when hit by a short range skill (All Enemies/10s)
+      shortEffects: ATK/INT damage taken +15% inflicted by short range skills (All Enemies/10s)
       effects: 
         - desc: ATK damage taken +15% inflicted by short range skills (10s)
           all: Enemies
