@@ -136,8 +136,8 @@
       desc: >
         Leaps to the edge of the stage opposite its target and fires two wind blasts. They start spread apart and then converge upon the center of the stage. There is a safe spot at its immediate sides & back throughout the attack.
         
-    - name: 
-      targets: Last Update
+    - name: Last Update
+      targets: Any
       m1: true
       enrage: true
       desc: >
