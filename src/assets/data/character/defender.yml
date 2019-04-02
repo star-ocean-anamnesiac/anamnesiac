@@ -25,7 +25,7 @@
             priority: 1
             buff: HP
             buffValue: 20
-        - desc: No flinching when taking damage of 20% HP or less
+        - desc: No flinching when taking damage of 20% of max HP or less
           all: true
     - name: "Dark Impulse"
       shortEffects: A perfect dodge recovers 100% AP for self and 10 AP for all allies
@@ -41,7 +41,7 @@
             priority: 1
             buff: Single Target Damage
             buffValue: 20
-        - desc: Single target damage +40% when at 100% HP
+        - desc: Single target damage +40% when HP is 100%
           all: true
           meta:
             priority: 3
@@ -89,7 +89,7 @@
   rush:
     name: "YoRHa Arms: One Hundred"
     picture: YoHRa_Arms_One_Hundred_A2
-    shortEffects: Single target damage +60%, and recovers 15% HP every 3 seconds (Self/20s)
+    shortEffects: Single target damage +60%, and recovers 15% of max HP every 3 seconds (Self/20s)
     effects: 
       - desc: Single target damage +60%
         duration: 20
@@ -98,7 +98,7 @@
           priority: 4
           buff: Single Target Damage
           buffValue: 60
-      - desc: Recovers 15% HP every 3 seconds
+      - desc: Recovers 15% of max HP every 3 seconds
         duration: 20
         all: false
     power: ATK x 4500%
@@ -174,11 +174,11 @@
             buffValue: 10
     - name: "What Friends Are For IV"
       effects: 
-        - desc: No flinching when taking damage of 25% HP or less
+        - desc: No flinching when taking damage of 25% of max HP or less
           all: true
     - name: "Indomitable Spirit"
       effects: 
-        - desc: 80% chance of surviving a lethal attack at 10% HP or more
+        - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
 
   skills:
     - name: "Mirror Blade"
@@ -293,7 +293,7 @@
           all: false
     - name: "Moving up in the World IV"
       effects: 
-        - desc: No flinching when taking damage of 20% HP or less
+        - desc: No flinching when taking damage of 20% of max HP or less
           all: Short Range Weapons
     - name: "Carnivore"
       effects: 
@@ -334,7 +334,7 @@
     picture: Scarlet_Strike_Shimada
     element: Fire
     effects: 
-      - desc:	Recovers 20% HP every 4 seconds
+      - desc:	Recovers 20% of max HP every 4 seconds
         duration: 20
         all: false
     power: ATK x 3000%
@@ -373,7 +373,7 @@
             buffValue: 10
     - name: "Imposing Presence IV"
       effects: 
-        - desc: No flinching when taking damage of 20% HP or less
+        - desc: No flinching when taking damage of 20% of max HP or less
           all: Short Range Weapons
     - name: "Will of the Universe"
       effects: 
@@ -413,7 +413,7 @@
     name: "Blade Vortex"
     picture: Blade_Vortex_Stephen
     effects: 
-      - desc: No flinching when taking damage of 60% HP or less
+      - desc: No flinching when taking damage of 60% of max HP or less
         duration: 20
         all: true
     power: ATK x 3000%
@@ -446,7 +446,7 @@
             priority: 4
             buff: HP
             buffValue: 20
-        - desc: No flinching when taking damage of 20% HP or less
+        - desc: No flinching when taking damage of 20% of max HP or less
           all: true
     - name: "Aromatic Sunscreen II"
       effects: 
@@ -522,7 +522,7 @@
     name: "Flashbolt"
     picture: Flashbolt_Summer_Myuria
     element: Lightning
-    shortEffects: AP cost -40%, and recovers 15% HP every 3 seconds (Self/20s)
+    shortEffects: AP cost -40%, and recovers 15% of max HP every 3 seconds (Self/20s)
     effects: 
       - desc: AP cost -40%
         duration: 20
@@ -531,7 +531,7 @@
           priority: 1
           buff: AP Cost Reduction
           buffValue: 40
-      - desc: Recover 15% HP every 3 seconds
+      - desc: Recover 15% of max HP every 3 seconds
         duration: 20
         all: false
     power: ATK x 4500%
@@ -621,10 +621,10 @@
             buffValue: 20
     - name: "Vow to Cecille II"
       effects: 
-        - desc: No flinching when taking damage of 25% HP or less
+        - desc: No flinching when taking damage of 25% of max HP or less
           all: Short Range Weapons
     - name: "Equal Footing"
-      shortEffects: Damage dealt +20% (All Attackers/All Defenders)
+      shortEffects: Damage dealt +20% (All Attackers/Defenders)
       effects: 
         - desc: Damage dealt +20%
           all: Attackers
@@ -738,13 +738,12 @@
     - name: "Holiday Heroine II"
       effects: 
         - desc: Damage taken -30% when targeted by enemy
-          all: false
           meta:
             priority: 3
             buff: Damage Taken Reduction
             buffCondition: When Holding Aggro
             buffValue: 30
-        - desc: ATK damage taken -15% when hitcount is 50 or more
+        - desc: ATK damage taken -15% when hitcount is >50
           all: true
           meta:
             priority: 1
@@ -759,7 +758,7 @@
             priority: 1
             buff: Single Target Damage
             buffValue: 20
-        - desc: Single target damage +40% when hitcount is 150 or more
+        - desc: Single target damage +40% when hitcount is >150
           all: true
           meta:
             priority: 1
@@ -774,7 +773,7 @@
             priority: 1
             buff: HP
             buffValue: 20
-        - desc: No flinching when taking damage of 20% HP or less
+        - desc: No flinching when taking damage of 20% of max HP or less
           all: true
     - name: "Miracle Symbology"
       shortEffects: ATK +15% and HP +15%
@@ -935,7 +934,7 @@
             buffValue: 40
     - name: "A Friend's Promise"
       effects: 
-        - desc: No flinching when taking damage of 20% HP or less
+        - desc: No flinching when taking damage of 20% of max HP or less
           all: true
 
   skills:
@@ -1049,10 +1048,10 @@
             buffValue: 10
     - name: "Another Piece of Cake II"
       effects: 
-        - desc: 70% of surviving a lethal attack at 5% HP or more
+        - desc: 70% of surviving a lethal attack when at 5% of max HP or more
     - name: "Honeymoon Dreams II"
       effects: 
-        - desc: No flinching when taking damage of 20% HP or less (All Invokers/All Healers/Self)
+        - desc: No flinching when taking damage of 20% of max HP or less (All Invokers/Healers/Self)
           all: false
     - name: "Carnivore"
       effects: 
@@ -1184,7 +1183,7 @@
             priority: 1
             buff: HP
             buffValue: 30
-        - desc: No flinching when taking damage of 20% HP or less
+        - desc: No flinching when taking damage of 20% of max HP or less
           all: true            
     - name: "Young & Skilled II"
       effects: 
@@ -1346,10 +1345,10 @@
             buffValue: 20
     - name: "Vow to Cecille II"
       effects: 
-        - desc: No flinching when taking damage of 30% HP or less
+        - desc: No flinching when taking damage of 30% of max HP or less
           all: Short Range Weapons
     - name: "Equal Footing"
-      shortEffects: Damage dealt +40% (All Attackers/All Defenders)
+      shortEffects: Damage dealt +40% (All Attackers/Defenders)
       effects: 
         - desc: Damage dealt +40%
           all: Attacker
@@ -1485,11 +1484,11 @@
           all: false
     - name: "Reprieve from Death III"
       effects:
-        - desc: Recovers 3% HP every 3 seconds
+        - desc: Recovers 3% of max HP every 3 seconds
           all: false
     - name: "Unwavering Faith III"
       effects: 
-        - desc: No flinching when taking damage of 15% HP or less
+        - desc: No flinching when taking damage of 15% of max HP or less
           all: Short Range Weapons
         
   skills:
@@ -1513,7 +1512,7 @@
     name: "Revised Diabolic Whirl"
     picture: Revised_Diabolical_Whirl_Gideon
     effects:
-      - desc: Recovers 20% HP every 4 seconds
+      - desc: Recovers 20% of max HP every 4 seconds
         duration: 20
         all: false
     power: ATK x 1500%
@@ -1540,8 +1539,8 @@
   talents:
     - name: "Enchanting Scents VI"
       effects: 
-        - desc: Status ailment nullification for 90 seconds
-        - desc: No flinching when taking damage of 15% HP or less
+        - desc: Nullifies status ailments for 90 seconds
+        - desc: No flinching when taking damage of 15% of max HP or less
           all: Short Range Weapons
 
   skills:
