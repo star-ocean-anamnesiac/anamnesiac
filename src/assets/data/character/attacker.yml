@@ -1656,20 +1656,20 @@
   talents:
     - name: "Black Ribbon II"
       effects: 
-        - desc: ATK +15%
+        - desc: ATK +20%
           meta:
             priority: 4
             buff: ATK
-            buffValue: 15
+            buffValue: 20
     - name: "Mischievous Wings II"
       effects: 
-        - desc: ATK damage dealt +15% when hitcount is >50
+        - desc: ATK damage dealt +30% when hitcount is >50
           all: true
           meta:
             priority: 3
             buff: ATK Damage
             buffCondition: Hit Count > 50
-            buffValue: 15
+            buffValue: 30
     - name: "Heart-Shaped Tail II"
       effects: 
         - desc: AP cost -25%
@@ -1677,12 +1677,12 @@
             priority: 4
             buff: AP Cost Reduction
             buffValue: 25
-        - desc: ATK +15% when hitcount is >100
+        - desc: ATK +20% when hitcount is >100
           meta:
             priority: 3
             buff: ATK
             buffCondition: Hit Count > 100
-            buffValue: 15
+            buffValue: 20
     - name: "Prayer"
       effects: 
         - desc: No flinching when taking damage of 15% of max HP or less
@@ -1733,7 +1733,7 @@
           priority: 1
           buff: Enemy DEF Reduction
           buffValue: 30
-    power: ATK x 4000%
+    power: ATK x 4500%
     maxHits: 7
     
   notes: >
@@ -1793,21 +1793,21 @@
 
   talents:
     - name: "Hand Trick II"
-      shortEffects: ATK +25%, and ATK +35% when hitcount is >100 (All Party)
+      shortEffects: ATK +45%, and ATK +55% when hitcount is >100 (All Party)
       effects: 
-        - desc: ATK +25%
+        - desc: ATK +45%
           all: true
           meta:
             priority: 1
             buff: ATK
-            buffValue: 25
-        - desc: ATK +35% when hitcount is >100
+            buffValue: 45
+        - desc: ATK +55% when hitcount is >100
           all: true
           meta:
             priority: 1
             buff: ATK
             buffCondition: Hit Count > 100
-            buffValue: 35
+            buffValue: 55
     - name: "Wolf's Appetite II"
       effects: 
         - desc: Normal attack AP recovery +100%
@@ -1822,7 +1822,7 @@
           all: true
     - name: "Full Moon Howl"
       effects: 
-        - desc: Damage dealt +60% by Pumpkin Smash when skill chain is >4
+        - desc: Damage dealt +100% by Pumpkin Smash when skill chain is >4
 
   skills:
     - name: "Lantern Burst"
@@ -1861,7 +1861,7 @@
           priority: 1
           buff: Elemental Damage
           buffValue: 50
-    power: ATK x 3500%
+    power: ATK x 4000%
     maxHits: 8
     
   notes: >
