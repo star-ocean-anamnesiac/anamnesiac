@@ -1425,3 +1425,94 @@
     power: ATK x 3500%
     maxHits: 11
 
+- name: Leanne
+  cat: jp
+  rating: 5
+  picture: Reanbell
+  weapon: gun
+  ace: true
+  limited: true
+  star: 0
+
+  stats:
+    hp: 15750
+    atk: 2494
+    int: 1575
+    def: 1537
+    hit: 1246
+    grd: 924
+
+  talents:
+    - name: "Smile of Miracles"
+      effects: 
+        - desc: Damage +35%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 35
+    - name: "Multi Shooting"
+      effects: 
+        - desc: ATK Damage +15% at long range
+          all: true
+          meta:
+            priority: 1
+            buff: ATK Damage
+            buffCondition: Long Range
+            buffValue: 15
+    - name: "Make-Up"
+      effects: 
+        - desc: Damage taken -15% at short range
+          all: true
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffCondition: Short Range
+            buffValue: 15
+    - name: "Farewell to the Past"
+      effects:
+        - desc: 80% Chance of Surviving a Lethal Attack at 10% HP or more
+
+  skills:
+    - name: "Stardust Aim"
+      picture: Stardust_Aim
+      power: ATK x 180%
+      ap: 17
+      maxHits: 3
+    - name: "Skyline Shooting"
+      picture: Skyline_Spray
+      power: ATK x 200%
+      ap: 19
+      maxHits: 3
+    - name: "Approach Blow"
+      picture: Approach_Blow
+      power: ATK x 220%
+      ap: 22
+      maxHits: 3
+    - name: "Destiny Rays"
+      picture: Destiny_Rays
+      power: ATK x 320%
+      ap: 26
+      maxHits: 3
+      
+  rush:
+    name: "Invincible Over"
+    picture: Azure_Sky_Lasswell
+    shortEffects: Damage +60% & critical hit chance +30% (All/20 seconds)
+    effects: 
+      - desc: Damage +60%
+        duration: 20
+        all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 60
+      - desc: Critical hit chance +30%
+        duration: 20
+        all: true
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffValue: 30
+    power: ATK x 3500%
+    maxHits: 17
