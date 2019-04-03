@@ -1617,3 +1617,125 @@
           buffValue: 40
     power: ATK x 3500%
     maxHits: 2
+
+- name: Phia Melle (Crimson Grace)
+  cat: jp
+  rating: 0
+  picture: Crimson_Grace_Phia
+  weapon: bow
+  ace: true
+  star: 5
+
+  stats:
+    hp: 14070
+    atk: 2468
+    int: 1549
+    def: 1747
+    hit: 1253
+    grd: 945
+
+  talents:
+    - name: "Oath Hidden in War Armor"
+      shortEffects: Critical hit rate +20% & critical damage +20% (All)
+      effects: 
+        - desc: Critical hit rate +20%
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffValue: 20
+        - desc: Critical damage +30%
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Damage
+            buffValue: 30
+    - name: "Never Ending Chivalry"
+      shortEffects: Critical hit rate +30%/+40% and critical damage +30%/+40% when hitcount is >100/>200 (All)
+      effects: 
+        - desc: Critical hit rate +30% when hitcount is >100/
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: Hit Count > 100
+            buffValue: 30
+        - desc: Critical hit rate +40% when hitcount is >200
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: Hit Count > 200
+            buffValue: 40
+        - desc: Critical damage +30% when hitcount is >100
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Damage
+            buffCondition: Hit Count > 100
+            buffValue: 30
+        - desc: Critical damage +40% when hitcount is >200
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Damage
+            buffCondition: Hit Count > 200
+            buffValue: 40
+    - name: "Astral's Star"
+      shortEffects: Evasion distance +100% and evasion rate +100% (Self)
+      effects: 
+        - desc: Evasion distance +100%
+        - desc: Evasion rate +100%
+    - name: "Proof of Trial"
+      shortEffects: ATK +20% & HIT +20% after using Moon Mirror (Self 10 seconds)
+      effects:
+        - desc: ATK +20% after using Moon Mirror
+          meta:
+            priority: 1
+            buff: ATK
+            buffCondition: after using Moon Mirror
+            buffValue: 20
+        - desc: HIT +20% after using Moon Mirror
+          meta:
+            priority: 1
+            buff: HIT
+            buffCondition: after using Moon Mirror
+            buffValue: 20
+            
+  skills:
+    - name: "Crimson Squall"
+      picture: Crimson_Squall
+      power: ATK x 220%
+      ap: 22
+      maxHits: 9
+    - name: "Shadow Lamp"
+      picture: Binding_Distortion
+      power: ATK x 240%
+      ap: 22
+      maxHits: 5
+    - name: "Chaotic Blossom"
+      picture: Chaotic_Blossoms_I
+      power: ATK x 620%
+      ap: 33
+      maxHits: 11
+    - name: "Lunar Mirror"
+      picture: Lunar_Mirror
+      element: Ice
+      power: ATK x 330%
+      ap: 26
+      maxHits: 5
+      
+  rush:
+    name: "Murakumo"
+    picture: Murakumo_Crimson_Grace_Phia
+    shortEffects: ATK Damage +30% (All/20s)
+    effects: 
+      - desc: ATK damage +30%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: ATK Damage
+          buffValue: 30
+    power: ATK x 4000%
+    maxHits: 24
