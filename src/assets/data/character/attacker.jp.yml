@@ -4926,7 +4926,7 @@
   rush:
     name: "Invincible Over"
     picture: Invincible_Over_Bridal_Reanbell
-    shortEffects: ATK damage +30% (All/20 seconds)
+    shortEffects: ATK damage +30% (All/20s)
     effects: 
       - desc: ATK damage +30%
         duration: 20
