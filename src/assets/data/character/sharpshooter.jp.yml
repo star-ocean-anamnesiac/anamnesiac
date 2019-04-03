@@ -1453,7 +1453,7 @@
             buffValue: 35
     - name: "Multi Shooting"
       effects: 
-        - desc: ATK Damage +15% at long range
+        - desc: ATK damage +15% at long range
           all: true
           meta:
             priority: 1
@@ -1498,7 +1498,7 @@
   rush:
     name: "Invincible Over"
     picture: Invincible_Over_Reanbell
-    shortEffects: Damage +60% & critical hit chance +30% (All/20 seconds)
+    shortEffects: Damage +60% and critical hit chance +30% (All/20s)
     effects: 
       - desc: Damage +60%
         duration: 20
@@ -1565,7 +1565,7 @@
         - desc: Hitcount timer +2 seconds
           all: true
     - name: "Abilities Unbefitting of a Princess"
-      shortEffects: AP cost -20% when skill chain >3 (Self) / ATK Damage +30% (Self)
+      shortEffects: AP cost -20% when skill chain >3 (Self) and ATK damage +30% (Self)
       effects:
         - desc: AP cost -20% when skill chain >3
           meta:
@@ -1573,7 +1573,7 @@
             buff: AP Cost Reduction
             buffCondition: Skill Chain 3+
             buffValue: 20
-        - desc: ATK Damage +30%
+        - desc: ATK damage +30%
           meta:
             priority: 1
             buff: ATK Damage
@@ -1606,8 +1606,9 @@
     name: "Simorgh Za"
     picture: Simorgh_Zai_Aya
     element: Fire
+    shortEffects: Single target damage +40% (All/20s)
     effects: 
-      - desc: Single target damage +40% (All/20 seconds)
+      - desc: Single target damage +40%
         duration: 20
         all: true
         meta:
