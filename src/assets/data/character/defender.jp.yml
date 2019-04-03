@@ -947,7 +947,7 @@
       
   rush:
     name: "Dragon Surge"
-    picture: 
+    picture: Dragon_Surge_Ciuss
     element: Ice
     shortEffects: AP cost -40% (Self/20s) and single target damage +50% (Self/20s)
     effects: 
