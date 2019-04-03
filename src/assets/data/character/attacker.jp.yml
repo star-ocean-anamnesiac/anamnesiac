@@ -4861,12 +4861,12 @@
 
 - name: Leanne (Bridal)
   cat: jp
-  rating: 5
+  rating: 0
   picture: Bridal_Reanbell
   weapon: gun
   ace: true
   limited: true
-  star: 0
+  star: 5
 
   stats:
     hp: 15750
@@ -4908,7 +4908,7 @@
       ap: 19
       maxHits: 3
     - name: "Barrage Fire"
-      picture: 
+      picture: Bullet_Barrage
       power: ATK x 400%
       ap: 27
       maxHits: 6
@@ -4918,7 +4918,7 @@
       ap: 22
       maxHits: 3
     - name: "Deadline Burst"
-      picture: 
+      picture: Deadline_Burst
       power: ATK x 530%
       ap: 34
       maxHits: 5
@@ -4937,3 +4937,92 @@
             buffValue: 30
     power: ATK x 3500%
     maxHits: 15
+
+- name: Capell
+  cat: jp
+  rating: 0
+  picture: Capell
+  weapon: ohs
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15855
+    atk: 2730
+    int: 1537
+    def: 1969
+    hit: 1134
+    grd: 819
+
+  talents:
+    - name: "Unusual Melody"
+      shortEffects: Stun rate +30% (All) / Single target damage +20% (All)
+      effects: 
+        - desc: Stun rate +30% (All)
+          all: true
+          meta:
+            priority: 1
+            buff: Stun Rate
+            buffValue: 30
+        - desc: Single target damage +20% (All)
+          all: true
+          meta:
+            priority: 1
+            buff: Single Target Damage
+            buffValue: 20
+    - name: "Forzato Strike"
+      shortEffects: AP cost -20% when skill chain is >3 (All)
+          all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain 3+
+            buffValue: 20
+    - name: "Soothing Flute"
+      shortEffects: AP Recovery Speed +50% (All)
+          all: true
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffValue: 50
+    - name: "Hymn of the Late Gods"
+      effects:
+        - desc: Nullifies status ailments (Self/180 seconds)
+
+  skills:
+    - name: "Slash Gavotte"
+      picture: Double_Slash_I
+      power: ATK x 180%
+      ap: 17
+      maxHits: 5
+    - name: "Levantine Impact"
+      picture: Helmsplitter
+      power: ATK x 700%
+      ap: 50
+      maxHits: 1
+    - name: "Whirlwind Waltz"
+      picture: Cyclone_Blade
+      power: ATK x 560%
+      ap: 38
+      maxHits: 5
+    - name: "Slashing Canon"
+      picture: Slashing_Canon
+      power: ATK x 260%
+      ap: 21
+      maxHits: 2
+      
+  rush:
+    name: "Eternal Refrain"
+    picture: Azure_Sky_Lasswell
+    shortEffects: Nullifies status ailments (Allies/20 seconds) / AP cost -50% (Self/20 seconds)
+    effects: 
+      - desc: Nullifies status ailments (Allies/20 seconds)
+      - desc: AP cost -50% (Self/20 seconds)
+          meta:
+            priority: 1
+            duration: 20
+            buff: AP Cost Reduction
+            buffValue: 50
+    power: ATK x 3500%
+    maxHits: 10
