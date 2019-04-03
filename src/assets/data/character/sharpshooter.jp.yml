@@ -1651,7 +1651,7 @@
             buff: Crit Damage
             buffValue: 30
     - name: "Never Ending Chivalry"
-      shortEffects: Critical hit rate +30%/+40% when hitcount is >100/>200 (All) \n Critical damage +30%/+40% when hitcount is >100/>200 (All)
+      shortEffects: Critical hit rate +30%/+40% when hitcount is >100/>200 (All) and critical damage +30%/+40% when hitcount is >100/>200 (All)
       effects: 
         - desc: Critical hit rate +30% when hitcount is >100/
           all: true
