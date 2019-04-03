@@ -1427,12 +1427,12 @@
 
 - name: Leanne
   cat: jp
-  rating: 5
+  rating: 0
   picture: Reanbell
   weapon: gun
   ace: true
   limited: true
-  star: 0
+  star: 5
 
   stats:
     hp: 15750
