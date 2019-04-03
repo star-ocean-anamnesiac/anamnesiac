@@ -4859,4 +4859,81 @@
     power: ATK x 3500%
     maxHits: 13
 
+- name: Leanne (Bridal)
+  cat: jp
+  rating: 5
+  picture: Bridal_Reanbell
+  weapon: gun
+  ace: true
+  limited: true
+  star: 0
 
+  stats:
+    hp: 15750
+    atk: 2718
+    int: 1575
+    def: 1930
+    hit: 1141
+    grd: 819
+
+  talents:
+    - name: "Courage and Love"
+      effects: 
+        - desc: ATK +30%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 30
+    - name: "Desire to Change"
+      effects: 
+        - desc: ATK +45% at short range
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffCondition: Short Range
+            buffValue: 45
+    - name: "Dress Change"
+      effects: 
+        - desc: AP Recovery when idle +50% if distance between self and target is Long (All Attackers & All Shooters)
+    - name: "Specially Reinforced Suits"
+      effects:
+        - desc: No flinching when taking damage of 10% of max HP or less
+
+  skills:
+    - name: "Skyline Shooting"
+      picture: Skyline_Spray
+      power: ATK x 200%
+      ap: 19
+      maxHits: 3
+    - name: "Barrage Fire"
+      picture: 
+      power: ATK x 400%
+      ap: 27
+      maxHits: 6
+    - name: "Approach Blow"
+      picture: Approach_Blow
+      power: ATK x 220%
+      ap: 22
+      maxHits: 3
+    - name: "Deadline Burst"
+      picture: 
+      power: ATK x 530%
+      ap: 34
+      maxHits: 5
+      
+  rush:
+    name: "Invincible Over"
+    picture: Azure_Sky_Lasswell
+    shortEffects: ATK damage +30% (All/20 seconds)
+    effects: 
+      - desc: ATK damage +30%
+        duration: 20
+        all: true
+          meta:
+            priority: 1
+            buff: ATK Damage
+            buffValue: 30
+    power: ATK x 3500%
+    maxHits: 15
