@@ -1610,9 +1610,9 @@
       - desc: Single target damage +40% (All/20 seconds)
         duration: 20
         all: true
-          meta:
-            priority: 1
-            buff: Single Target Damage
-            buffValue: 40
+        meta:
+          priority: 1
+          buff: Single Target Damage
+          buffValue: 40
     power: ATK x 3500%
     maxHits: 2
