@@ -1497,7 +1497,7 @@
       
   rush:
     name: "Invincible Over"
-    picture: Azure_Sky_Lasswell
+    picture: Invincible_Over_Reanbell
     shortEffects: Damage +60% & critical hit chance +30% (All/20 seconds)
     effects: 
       - desc: Damage +60%
