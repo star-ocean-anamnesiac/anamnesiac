@@ -5021,11 +5021,11 @@
     effects: 
       - desc: Nullifies status ailments (Allies/20 seconds)
       - desc: AP cost -50% (Self/20 seconds)
-          meta:
-            priority: 1
-            duration: 20
-            buff: AP Cost Reduction
-            buffValue: 50
+        meta:
+          priority: 1
+          duration: 20
+          buff: AP Cost Reduction
+          buffValue: 50
     power: ATK x 3500%
     maxHits: 10
     
