@@ -1519,12 +1519,12 @@
 
 - name: Aya
   cat: jp
-  rating: 5
+  rating: 0
   picture: Aya
   weapon: bow
   ace: true
   limited: true
-  star: 0
+  star: 5
 
   stats:
     hp: 13965
