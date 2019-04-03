@@ -898,7 +898,6 @@
       effects: 
         - desc: ATK damage taken -15% at short range (All)
     - name: "Father Inherited Strong Arms"
-      shortEffects: No flinching when taking damage of 25% of max HP or less (All) and single target damage +20% (All)
       effects: 
         - desc: No flinching when taking damage of 25% of max HP or less
           all: true
