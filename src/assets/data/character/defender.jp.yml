@@ -843,7 +843,7 @@
       
   rush:
     name: "Alfheim"
-    picture: Nibelung_Valesti_Hrist
+    picture: Alfheim_Sigmund
     shortEffects: AP cost -40% (Self/20 seconds) / ATK +30% (Self/20 seconds)
     effects: 
       - desc: AP cost -40% (Self/20 seconds)
