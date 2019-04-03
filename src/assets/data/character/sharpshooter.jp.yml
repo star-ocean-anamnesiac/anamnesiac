@@ -1570,7 +1570,7 @@
         - desc: AP cost -20% when skill chain >3
           meta:
             priority: 1
-            buff: AP cost
+            buff: AP Cost Reduction
             buffCondition: Skill Chain 3+
             buffValue: 20
         - desc: ATK Damage +30%
