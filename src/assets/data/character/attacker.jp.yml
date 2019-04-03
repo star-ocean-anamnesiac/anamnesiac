@@ -4925,7 +4925,7 @@
       
   rush:
     name: "Invincible Over"
-    picture: Azure_Sky_Lasswell
+    picture: Invincible_Over_Bridal_Reanbell
     shortEffects: ATK damage +30% (All/20 seconds)
     effects: 
       - desc: ATK damage +30%
@@ -5016,7 +5016,7 @@
       
   rush:
     name: "Eternal Refrain"
-    picture: Azure_Sky_Lasswell
+    picture: Eternal_Refrain_Capell
     shortEffects: Nullifies status ailments (Allies/20 seconds) / AP cost -50% (Self/20 seconds)
     effects: 
       - desc: Nullifies status ailments (Allies/20 seconds)
@@ -5028,4 +5028,3 @@
           buffValue: 50
     power: ATK x 3500%
     maxHits: 10
-    
