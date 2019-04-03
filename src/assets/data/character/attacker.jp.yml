@@ -4896,7 +4896,13 @@
             buffValue: 45
     - name: "Dress Change"
       effects: 
-        - desc: AP Recovery when idle +50% if distance between self and target is Long (All Attackers & All Shooters)
+        - desc: AP recovery +50% at long range
+          all: Attackers/Sharpshooters
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffCondition: Long Range
+            buffValue: 50
     - name: "Specially Reinforced Suits"
       effects:
         - desc: No flinching when taking damage of 10% of max HP or less
@@ -4926,7 +4932,7 @@
   rush:
     name: "Invincible Over"
     picture: Invincible_Over_Bridal_Reanbell
-    shortEffects: ATK damage +30% (All/20 seconds)
+    shortEffects: ATK damage +30% (All/20s)
     effects: 
       - desc: ATK damage +30%
         duration: 20
@@ -4957,15 +4963,15 @@
 
   talents:
     - name: "Unusual Melody"
-      shortEffects: Stun rate +30% (All) / Single target damage +20% (All)
+      shortEffects: Stun rate +30% (All) and single target damage +20% (All)
       effects: 
-        - desc: Stun rate +30% (All)
+        - desc: Stun rate +30%
           all: true
           meta:
             priority: 1
             buff: Stun Rate
             buffValue: 30
-        - desc: Single target damage +20% (All)
+        - desc: Single target damage +20%
           all: true
           meta:
             priority: 1
@@ -4973,7 +4979,7 @@
             buffValue: 20
     - name: "Forzato Strike"
       effects:
-        - desc: AP cost -20% when skill chain is >3 (All)
+        - desc: AP cost -20% when skill chain is >3
           all: true
           meta:
             priority: 1
@@ -4982,7 +4988,7 @@
             buffValue: 20
     - name: "Soothing Flute"
       effects:
-        - desc: AP Recovery Speed +50% (All)
+        - desc: AP recovery +50%
           all: true
           meta:
             priority: 1
@@ -4990,7 +4996,7 @@
             buffValue: 50
     - name: "Hymn of the Late Gods"
       effects:
-        - desc: Nullifies status ailments (Self/180 seconds)
+        - desc: Nullifies status ailments (Self/180s)
 
   skills:
     - name: "Slash Gavotte"
@@ -5017,10 +5023,10 @@
   rush:
     name: "Eternal Refrain"
     picture: Eternal_Refrain_Capell
-    shortEffects: Nullifies status ailments (Allies/20 seconds) / AP cost -50% (Self/20 seconds)
+    shortEffects: Nullifies status ailments (All/20s) and AP cost -50% (Self/20s)
     effects: 
-      - desc: Nullifies status ailments (Allies/20 seconds)
-      - desc: AP cost -50% (Self/20 seconds)
+      - desc: Nullifies status ailments (All/20s)
+      - desc: AP cost -50% (Self/20s)
         meta:
           priority: 1
           duration: 20
