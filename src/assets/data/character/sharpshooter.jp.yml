@@ -1604,7 +1604,7 @@
       
   rush:
     name: "Simorgh Za"
-    picture: Azure_Sky_Lasswell
+    picture: Simorgh_Zai_Aya
     element: Fire
     effects: 
       - desc: Single target damage +40% (All/20 seconds)
