@@ -1425,3 +1425,194 @@
     power: ATK x 3500%
     maxHits: 11
 
+- name: Leanne
+  cat: jp
+  rating: 0
+  picture: Reanbell
+  weapon: gun
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15750
+    atk: 2494
+    int: 1575
+    def: 1537
+    hit: 1246
+    grd: 924
+
+  talents:
+    - name: "Smile of Miracles"
+      effects: 
+        - desc: Damage +35%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 35
+    - name: "Multi Shooting"
+      effects: 
+        - desc: ATK Damage +15% at long range
+          all: true
+          meta:
+            priority: 1
+            buff: ATK Damage
+            buffCondition: Long Range
+            buffValue: 15
+    - name: "Make-Up"
+      effects: 
+        - desc: Damage taken -15% at short range
+          all: true
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffCondition: Short Range
+            buffValue: 15
+    - name: "Farewell to the Past"
+      effects:
+        - desc: 80% Chance of Surviving a Lethal Attack at 10% HP or more
+
+  skills:
+    - name: "Stardust Aim"
+      picture: Stardust_Aim
+      power: ATK x 180%
+      ap: 17
+      maxHits: 3
+    - name: "Skyline Shooting"
+      picture: Skyline_Spray
+      power: ATK x 200%
+      ap: 19
+      maxHits: 3
+    - name: "Approach Blow"
+      picture: Approach_Blow
+      power: ATK x 220%
+      ap: 22
+      maxHits: 3
+    - name: "Destiny Rays"
+      picture: Destiny_Rays
+      power: ATK x 320%
+      ap: 26
+      maxHits: 3
+      
+  rush:
+    name: "Invincible Over"
+    picture: Azure_Sky_Lasswell
+    shortEffects: Damage +60% & critical hit chance +30% (All/20 seconds)
+    effects: 
+      - desc: Damage +60%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Damage
+          buffValue: 60
+      - desc: Critical hit chance +30%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 30
+    power: ATK x 3500%
+    maxHits: 17
+
+- name: Aya
+  cat: jp
+  rating: 0
+  picture: Aya
+  weapon: bow
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 13965
+    atk: 2482
+    int: 1549
+    def: 1747
+    hit: 1253
+    grd: 952
+
+  talents:
+    - name: "Sureshot Bow"
+      effects: 
+        - desc: Damage +30%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 30
+    - name: "Stubborn Disposition"
+      shortEffects: Damage +40%/55% when hitcount is >100/200 (All)
+      effects: 
+        - desc: Damage +40% when hitcount is >100
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Hit Count > 100
+            buffValue: 40
+        - desc: Damage +55% when hitcount is >200
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Hit Count > 200
+            buffValue: 55
+    - name: "Moon Symbol's (Lunaglyph) Blessing"
+      effects: 
+        - desc: Hitcount timer +2 seconds
+          all: true
+    - name: "Abilities Unbefitting of a Princess"
+      shortEffects: AP cost -20% when skill chain >3 (Self) / ATK Damage +30% (Self)
+      effects:
+        - desc: AP cost -20% when skill chain >3
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain 3+
+            buffValue: 20
+        - desc: ATK Damage +30%
+          meta:
+            priority: 1
+            buff: ATK Damage
+            buffValue: 30
+            
+  skills:
+    - name: "Canary Cloak"
+      picture: Crescent_Wings
+      power: ATK x 220%
+      ap: 22
+      maxHits: 2
+    - name: "Raven Focus"
+      picture: Hunter's_Moon
+      power: ATK x 160%
+      ap: 16
+      maxHits: 7
+    - name: "Snipe Split"
+      picture: Snipe_Split
+      power: ATK x 380%
+      ap: 24
+      maxHits: 14
+    - name: "Phoenix Feather"
+      picture: Phoenix_Feather
+      element: Fire
+      power: ATK x 460%
+      ap: 33
+      maxHits: 6
+      
+  rush:
+    name: "Simorgh Za"
+    picture: Azure_Sky_Lasswell
+    element: Fire
+    effects: 
+      - desc: Single target damage +40% (All/20 seconds)
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Single Target Damage
+          buffValue: 40
+    power: ATK x 3500%
+    maxHits: 2

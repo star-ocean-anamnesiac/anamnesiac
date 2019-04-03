@@ -4859,4 +4859,173 @@
     power: ATK x 3500%
     maxHits: 13
 
+- name: Leanne (Bridal)
+  cat: jp
+  rating: 0
+  picture: Bridal_Reanbell
+  weapon: gun
+  ace: true
+  limited: true
+  star: 5
 
+  stats:
+    hp: 15750
+    atk: 2718
+    int: 1575
+    def: 1930
+    hit: 1141
+    grd: 819
+
+  talents:
+    - name: "Courage and Love"
+      effects: 
+        - desc: ATK +30%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 30
+    - name: "Desire to Change"
+      effects: 
+        - desc: ATK +45% at short range
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffCondition: Short Range
+            buffValue: 45
+    - name: "Dress Change"
+      effects: 
+        - desc: AP Recovery when idle +50% if distance between self and target is Long (All Attackers & All Shooters)
+    - name: "Specially Reinforced Suits"
+      effects:
+        - desc: No flinching when taking damage of 10% of max HP or less
+
+  skills:
+    - name: "Skyline Shooting"
+      picture: Skyline_Spray
+      power: ATK x 200%
+      ap: 19
+      maxHits: 3
+    - name: "Barrage Fire"
+      picture: Bullet_Barrage
+      power: ATK x 400%
+      ap: 27
+      maxHits: 6
+    - name: "Approach Blow"
+      picture: Approach_Blow
+      power: ATK x 220%
+      ap: 22
+      maxHits: 3
+    - name: "Deadline Burst"
+      picture: Deadline_Burst
+      power: ATK x 530%
+      ap: 34
+      maxHits: 5
+      
+  rush:
+    name: "Invincible Over"
+    picture: Azure_Sky_Lasswell
+    shortEffects: ATK damage +30% (All/20 seconds)
+    effects: 
+      - desc: ATK damage +30%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: ATK Damage
+          buffValue: 30
+    power: ATK x 3500%
+    maxHits: 15
+    
+- name: Capell
+  cat: jp
+  rating: 0
+  picture: Capell
+  weapon: ohs
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15855
+    atk: 2730
+    int: 1537
+    def: 1969
+    hit: 1134
+    grd: 819
+
+  talents:
+    - name: "Unusual Melody"
+      shortEffects: Stun rate +30% (All) / Single target damage +20% (All)
+      effects: 
+        - desc: Stun rate +30% (All)
+          all: true
+          meta:
+            priority: 1
+            buff: Stun Rate
+            buffValue: 30
+        - desc: Single target damage +20% (All)
+          all: true
+          meta:
+            priority: 1
+            buff: Single Target Damage
+            buffValue: 20
+    - name: "Forzato Strike"
+      effects:
+        - desc: AP cost -20% when skill chain is >3 (All)
+          all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain 3+
+            buffValue: 20
+    - name: "Soothing Flute"
+      effects:
+        - desc: AP Recovery Speed +50% (All)
+          all: true
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffValue: 50
+    - name: "Hymn of the Late Gods"
+      effects:
+        - desc: Nullifies status ailments (Self/180 seconds)
+
+  skills:
+    - name: "Slash Gavotte"
+      picture: Double_Slash_I
+      power: ATK x 180%
+      ap: 17
+      maxHits: 5
+    - name: "Levantine Impact"
+      picture: Helmsplitter
+      power: ATK x 700%
+      ap: 50
+      maxHits: 1
+    - name: "Whirlwind Waltz"
+      picture: Cyclone_Blade
+      power: ATK x 560%
+      ap: 38
+      maxHits: 5
+    - name: "Slashing Canon"
+      picture: Slashing_Canon
+      power: ATK x 260%
+      ap: 21
+      maxHits: 2
+      
+  rush:
+    name: "Eternal Refrain"
+    picture: Azure_Sky_Lasswell
+    shortEffects: Nullifies status ailments (Allies/20 seconds) / AP cost -50% (Self/20 seconds)
+    effects: 
+      - desc: Nullifies status ailments (Allies/20 seconds)
+      - desc: AP cost -50% (Self/20 seconds)
+        meta:
+          priority: 1
+          duration: 20
+          buff: AP Cost Reduction
+          buffValue: 50
+    power: ATK x 3500%
+    maxHits: 10
+    
