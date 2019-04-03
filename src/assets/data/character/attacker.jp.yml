@@ -4972,7 +4972,8 @@
             buff: Single Target Damage
             buffValue: 20
     - name: "Forzato Strike"
-      shortEffects: AP cost -20% when skill chain is >3 (All)
+      effects:
+        - desc: AP cost -20% when skill chain is >3 (All)
           all: true
           meta:
             priority: 1
@@ -4980,7 +4981,8 @@
             buffCondition: Skill Chain 3+
             buffValue: 20
     - name: "Soothing Flute"
-      shortEffects: AP Recovery Speed +50% (All)
+      effects:
+        - desc: AP Recovery Speed +50% (All)
           all: true
           meta:
             priority: 1
