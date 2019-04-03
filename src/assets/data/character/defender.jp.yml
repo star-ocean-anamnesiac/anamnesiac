@@ -852,12 +852,12 @@
           priority: 4
           buff: AP Cost Reduction
           buffValue: 40
-        - desc: ATK +30%
-          duration: 20
-          meta:
-            priority: 4
-            buff: ATK
-            buffValue: 30
+      - desc: ATK +30%
+        duration: 20
+        meta:
+          priority: 4
+          buff: ATK
+          buffValue: 30
     power: ATK x 3500%
     maxHits: 4
     
