@@ -4931,13 +4931,13 @@
       - desc: ATK damage +30%
         duration: 20
         all: true
-          meta:
-            priority: 1
-            buff: ATK Damage
-            buffValue: 30
+        meta:
+          priority: 1
+          buff: ATK Damage
+          buffValue: 30
     power: ATK x 3500%
     maxHits: 15
-
+    
 - name: Capell
   cat: jp
   rating: 0
