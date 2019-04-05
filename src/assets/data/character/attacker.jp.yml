@@ -18,7 +18,6 @@
 
   talents:
     - name: "Silent Will"
-      shortEffects: ATK +40%, and ATK +60% when HP is 100% (All Party)
       effects: 
         - desc: ATK +40%
           all: true
@@ -77,7 +76,7 @@
   rush:
     name: "YoRHa Arms: Zero"
     picture: YoHRa_Arms_Ø_2B
-    shortEffects: Elemental damage dealt +70% (Self/20s) and +50% (All Party/20s)
+    shortEffects: Elemental damage dealt +70% (Self/20s) and elemental damage dealt +50% (All Party/20s)
     effects: 
       - desc: Elemental damage dealt +70%
         all: false
@@ -707,7 +706,7 @@
             priority: 4
             buff: AP Recovery From Normal Attacks
             buffValue: 100
-        - desc: Nullifies rush gauge reduction field
+        - desc: Nullifies rush gauge reduction fields
           all: Short Range Weapons
     - name: "Hit-the-Watermelon"
       effects: 
@@ -746,7 +745,7 @@
   rush:
     name: "Celestial Sword"
     picture: Heaven's_Sword_Summer_Reimi
-    shortEffects: Nullifies all status ailments, and single target damage dealt +40% (All Party/20s)
+    shortEffects: Nullifies all status ailments and single target damage dealt +40% (All Party/20s)
     effects: 
       - desc: Nullifies status ailments
         all: true
@@ -1478,6 +1477,7 @@
   rush:
     name: "Waking Hell"
     picture: Waking_Hell_HW_Clair
+    shortEffects: DEF +30% (All Party/20s) and DEF -30% (All Enemies/20s)
     effects: 
       - desc: DEF +30%
         all: true
@@ -1543,7 +1543,6 @@
 
   talents:
     - name: "Hand Trick II"
-      shorteffects: ATK +40%, and ATK +55% when hitcount is >100 (All Party)
       effects: 
         - desc: ATK +45%
           all: true
@@ -1778,7 +1777,7 @@
 
   talents:
 
-    - name: "Spontaneous Combustion II"
+    - name: "Spontaneous Combustion"
       effects: 
         - desc: ATK +40%
           all: Attackers
@@ -1794,7 +1793,7 @@
             priority: 4
             buff: AP Cost Reduction
             buffValue: 15
-    - name: "Hellfire II"
+    - name: "Hellfire"
       effects: 
         - desc: Fire damage dealt +10%
           meta:
@@ -1921,7 +1920,7 @@
             priority: 2
             buff: ATK
             buffValue: 20
-    - name: "A Winter Prayer II"
+    - name: "A Winter Prayer"
       effects: 
         - desc: Normal attack AP recovery +100% when hitcount is >100
           all: true
@@ -1937,7 +1936,7 @@
             buff: ATK Damage
             buffCondition: Hit Count > 200
             buffValue: 20
-    - name: "Colorful Galleria II"
+    - name: "Colorful Galleria"
       shortEffects: Damage dealt +100%/+200% by Bullet Barrage and Bombing Run when skill chain is >3/>5
       effects: 
         - desc: Damage dealt +100% by Bullet Barrage and Bombing Run when skill chain is >3
@@ -2199,7 +2198,7 @@
             buff: ATK
             buffValue: 20
     - name: "Cat's Interlude"
-      shortEffects: AP cost -20%, and ATK +10%/+20%/+30% when hitcount is >100/>150/>200
+      shortEffects: ATK +10%/+20%/+30% when hitcount is >100/>150/>200, and AP cost -20%
       effects:
         - desc: AP cost -20%
           meta:
@@ -2494,14 +2493,14 @@
     - name: "First Valentine"
       shortEffects: ATK/INT damage taken +25% when hit by a short range skill (All Enemies/20s)
       effects: 
-        - desc: ATK damage taken +25% inflicted by short range skills (20s)
+        - desc: ATK damage taken +25% when hit by a short range skill (20s)
           all: Enemies
           meta:
             priority: 3
             buffCondition: Short Ranged Skill
             buff: Enemy ATK Damage Taken
             buffValue: 25
-        - desc: INT damage taken +25% inflicted by short range skills (20s)
+        - desc: INT damage taken +25% when hit by a short range skill (20s)
           all: Enemies
           meta:
             priority: 3
@@ -2517,7 +2516,7 @@
             buff: AP Cost Reduction
             buffCondition: Skill Chain 3+
             buffValue: 30
-    - name: "Love of Japanese Cuisine II"
+    - name: "Love of Japanese Cuisine"
       shortEffects: ATK damage dealt +150%/+250% when skill chain is >3/>5
       effects: 
         - desc: ATK damage dealt +150% when skill chain is >3
@@ -2761,7 +2760,7 @@
     grd: 819
 
   talents:
-    - name: "Devastating Kick II"
+    - name: "Devastating Kick"
       effects: 
         - desc: ATK +20%
           all: true
@@ -2769,7 +2768,7 @@
             priority: 1
             buff: ATK
             buffValue: 20
-    - name: "Klausian Heritage II"
+    - name: "Klausian Heritage"
       effects: 
         - desc: ATK damage dealt +20% at short range
           all: true
@@ -2778,7 +2777,7 @@
             buff: ATK Damage
             buffCondition: Short Range
             buffValue: 20
-    - name: "Merciful Heart II"
+    - name: "Merciful Heart"
       effects: 
         - desc: Normal attack AP recovery +100% at short range
           all: true
@@ -2796,7 +2795,7 @@
             buff: Crit Rate
             buffCondition: HP is 100
             buffValue: 30
-        - desc: Critical hit damage +30%
+        - desc: Critical hit damage +30% when HP is 100%
           meta:
             priority: 1
             buff: Crit Damage
@@ -2832,7 +2831,7 @@
     name: "Avenger Charge"
     picture: Festive_Avenger_Mirage
     element: Fire
-    shortEffects: AP cost -30%, and recovers 10% of max HP every 3 seconds (Self/20s)
+    shortEffects: AP cost -30% and recovers 10% of max HP every 3 seconds (Self/20s)
     effects: 
       - desc: AP cost -30%
         meta:
@@ -3010,21 +3009,19 @@
     grd: 833
 
   talents:
-    - name: "Expel's Invention Maiden"
+    - name: "Expel's Young Inventor"
       effects: 
         - desc: Hitcount timer +3 seconds
-          all: true
-      
+          all: true      
     - name: "Mujin-kun, Charge!"
       effects: 
-        - desc: ATK +25% when hitcount is 100 or more
-          all: true
+        - desc: ATK +25% when hitcount is >100
           meta:
             priority: 1
             buff: ATK
             buffCondition: Hit Count > 100
             buffValue: 25    
-    - name: "Overaction"
+    - name: "Great Action"
       effects: 
         - desc: Critical hit chance +30% at close range
           all: true
@@ -3033,9 +3030,9 @@
             buff: Crit Rate
             buffCondition: Close Range
             buffValue: 30    
-    - name: "Scholarly Aspirations Inherited from Father"
+    - name: "Creative Spirit"
       effects: 
-        - desc: AP cost -40% when skill chain is 3
+        - desc: AP cost -40% when skill chain >3
           all: false
           meta:
             priority: 1
@@ -3069,10 +3066,10 @@
       highlight: true
 
   rush:
-    name: "Bloody Mary"
+    name: "Bloody mary"
     picture: Bloody_Mary
     effects: 
-      - desc: Recover 15% HP every 5 seconds 
+      - desc: Recovers 15% HP every 5 seconds 
         all: true
         duration: 20
     power: ATK x 4500%
@@ -3109,7 +3106,7 @@
     grd: 852
 
   talents:
-    - name: "Fortitude & Vigor II"
+    - name: "Fortitude & Vigor"
       effects: 
         - desc: ATK +50%
           all: true
@@ -3129,7 +3126,7 @@
         - desc: Evasion possible during air attacks
     - name: "Heir to the Camuze Style"
       effects:
-        - desc: Single target damage dealt +10% when skill chain is 3 or more
+        - desc: Single target damage dealt +10% when skill chain is >3
           meta:
             priority: 3
             buff: Single Target Damage
@@ -3150,7 +3147,7 @@
             buffValue: 10  
     - name: "Inherited Will"
       effects:
-        - desc: Nullifies HP Reduction Fields
+        - desc: Nullifies HP reduction fields
         
   skills:
     - name: "Double Slash"
@@ -3251,7 +3248,7 @@
 
   talents:
     - name: "Witch of Beasts"
-      shortEffects: ATK +40%, and ATK +55%/60% when hitcount > 100/250
+      shortEffects: ATK +40%, and ATK +55%/+60% when hitcount is >100/>250 (All Party)
       effects: 
         - desc: ATK +40%
           all: true
@@ -3259,14 +3256,14 @@
             priority: 1
             buff: ATK
             buffValue: 40
-        - desc: ATK +55% when hitcount is at 100
+        - desc: ATK +55% when hitcount is >100
           all: true
           meta:
             priority: 1
             buff: ATK
             buffCondition: Hit Count > 100
             buffValue: 55
-        - desc: ATK +60% when hitcount is at 250
+        - desc: ATK +60% when hitcount is >250
           all: true
           meta:
             priority: 1
@@ -3274,64 +3271,64 @@
             buffCondition: Hit Count > 250
             buffValue: 60
     - name: "Basshen's Fox"
-      shortEffects: AP cost -10%/20%/40% when hitcount > 100/200/400
+      shortEffects: AP cost -10%/+20%/+40% when hitcount is >100/>200/>400 and battle skills deal an additional hit worth 5% of damage (All Party)
       effects: 
-        - desc: AP cost -10% when hitcount is at 100
+        - desc: AP cost -10% when hitcount is >100
           all: true
           meta:
             priority: 1
             buff: AP Cost Reduction
             buffCondition: Hit Count > 100
             buffValue: 10
-        - desc: AP cost -20% when hitcount is at 200
+        - desc: AP cost -20% when hitcount is >200
           all: true
           meta:
             priority: 1
             buff: AP Cost Reduction
             buffCondition: Hit Count > 200
             buffValue: 20
-        - desc: AP cost -40% when hitcount is at 400
+        - desc: AP cost -40% when hitcount is >400
           all: true
           meta:
             priority: 1
             buff: AP Cost Reduction
             buffCondition: Hit Count > 400
             buffValue: 40
-        - desc: Battle skills deal an extral hit worth 5% of damage dealt
+        - desc: Additional hit that deals 5% of damage when using skills
           all: true
     - name: "Six Tails"
       effects: 
-        - desc: Enables air dodge
+        - desc: Evasion possible during air attacks
           all: false
-        - desc: Recover 100% HP upon successful evasion of attacks
+        - desc: Recovers 100% HP upon successful evasion of attacks
           all: false
     - name: "Red Summoning Technique"
-      shortEffects: ATK, INT, DEF, HIT, GRD +20% when hitcount is 100 or more
+      shortEffects: ATK/INT/DEF/HIT/GRD +20% when hitcount is >100
       effects:
-        - desc: ATK +20 when hitcount is 100 or more
+        - desc: ATK +20 when hitcount is >100
           all: false
           meta:
             priority: 3
             buff: ATK
             buffCondition: Hit Count > 100
             buffValue: 20
-        - desc: INT +20 when hitcount is 100 or more
+        - desc: INT +20 when hitcount is >100
           all: false
           meta:
             priority: 3
             buff: INT
             buffCondition: Hit Count > 100
             buffValue: 20
-        - desc: DEF +20 when hitcount is 100 or more
+        - desc: DEF +20 when hitcount is >100
           all: false
           meta:
             priority: 3
             buff: DEF
             buffCondition: Hit Count > 100
             buffValue: 20
-        - desc: HIT +20 when hitcount is 100 or more
+        - desc: HIT +20 when hitcount is >100
           all: false
-        - desc: GRD +20 when hitcount is 100 or more
+        - desc: GRD +20 when hitcount is >100
           all: false
           
   skills:
@@ -3360,8 +3357,9 @@
   rush:
     name: "Wailing Black Wings"
     picture: Wailing_Black_Wings_Karin
+    shortEffects: Critical hit chance +30% and critical damage +30% (All Party/20s)
     effects:
-      - desc: Critical chance +30%
+      - desc: Critical hit chance +30%
         duration: 20
         all: true
         meta:
@@ -3399,25 +3397,25 @@
   talents:
     - name: "Cherry Blossom Riot"
       effects: 
-        - desc: Nullifies critical damage taken while charge assaulting
+        - desc: Nullifies charge assault critical damage penalty
           all: Attackers
-        - desc: ATK damage +40% while charge assaulting
+        - desc: ATK damage +40% during charge assault
           all: Attackers
           meta:
             priority: 3
             buff: ATK Damage
             buffValue: 40
     - name: "Adaptable"
-      shortEffects: ATK +15%/30% when hitcount > 100/200
+      shortEffects: ATK +15%/+30% when hitcount is >100/>200
       effects: 
-        - desc: ATK +15% when hitcount is at 100 or more
+        - desc: ATK +15% when hitcount is >100
           all: false
           meta:
             priority: 1
             buff: ATK
             buffCondition: Hit Count > 100
             buffValue: 15
-        - desc: ATK +30% when hitcount is at 200 or more
+        - desc: ATK +30% when hitcount is >200
           all: false
           meta:
             priority: 1
@@ -3469,6 +3467,7 @@
   rush:
     name: "Radiation Device"
     picture: Radiation_Device_Sakura_Maria
+    shortEffects: AP cost -50% and recovers 10% HP every 3 seconds (Self/20s)
     effects: 
       - desc: AP cost -50%
         all: false
@@ -3477,7 +3476,7 @@
           priority: 1
           buff: AP Cost Reduction
           buffValue: 50
-      - desc: Recover 10% HP every 3 seconds
+      - desc: Recovers 10% HP every 3 seconds
         all: false
         duration: 20
     power: ATK x 5000%
@@ -3512,11 +3511,11 @@
             buffValue: 45
     - name: "Cat Martial Arts"
       effects: 
-        - desc: Nullifies critical damage taken when charge assaulting
+        - desc: Nullifies charge assault critical damage penalty
           all: true
     - name: "Ocarina Player"
       effects: 
-        - desc: AP recovery from normal attacks +100%
+        - desc: Normal attack AP recovery +100%
           all: true
           meta:
             priority: 1
@@ -3526,11 +3525,11 @@
           all: true
     - name: "Lonely Person"
       effects: 
-        - desc: Evasion AP consumption -50%
+        - desc: Evasion AP cost -50%
           all: false
         - desc: Enables air dodge
           all: false
-        - desc: AP consumption -30% on perfect dodge (10 seconds)
+        - desc: AP cost -30% on perfect dodge (10s)
           all: false
           
   skills:
@@ -3559,7 +3558,7 @@
     name: "Dream Hammer"
     picture: Dream_Combo_Pericci
     effects:
-      - desc: Critical chance +50%
+      - desc: Critical hit chance +50%
         duration: 20
         all: true
         meta:
@@ -3601,7 +3600,7 @@
       effects: 
         - desc: Imbues attacks with fire and light
     - name: "Feinting Tactics"
-      shortEffects: Elemental damage dealt +15%, and +30% when hitcount is 100 or more (All Party)
+      shortEffects: Elemental damage dealt +15%, and elemental damage dealt +30% when hitcount is >100 (All Party)
       effects: 
         - desc: Elemental damage dealt +15%
           all: true
@@ -3609,7 +3608,7 @@
             priority: 1
             buff: Elemental Damage
             buffValue: 15
-        - desc: Elemental damage dealt +30% when hitcount is 100 or more
+        - desc: Elemental damage dealt +30% when hitcount is >100
           all: true
           meta:
             priority: 1
@@ -3618,12 +3617,12 @@
             buffValue: 30            
     - name: "Stubborn to a Fault"
       effects: 
-        - desc: No flinching when taking damage of 15% HP or less
+        - desc: No flinching when taking damage of 15% of max HP or less
           all: Long Range Weapons/Self
     - name: "World's Hope"
       effects: 
-        - desc: Enables evasion during air attacks
-        - desc: Nullifies critical damage penalty during charge assault
+        - desc: Evasion possible during air attacks
+        - desc: Nullifies charge assault critical damage penalty
           all: Self
     - name: "God Against God"
       effects: 
@@ -3712,7 +3711,8 @@
       **Rotation**
       
       *Normal > Crescent Mirage > Shotgun Blast > Air Raid^2*
- 
+
+
 - name: Claude C. Kenny (Awakened)
   cat: jp
   rating: 8
@@ -3732,9 +3732,10 @@
     grd: 826
 
   talents:
-    - name: "Hero's Resolve II"
+    - name: "Hero's Resolve"
       effects: 
         - desc: ATK +40%
+          all: true
           meta:
             priority: 1
             buff: ATK
@@ -3746,7 +3747,7 @@
             buff: ATK
             buffRole: attacker
             buffValue: 60
-    - name: "Learned Finesse II"
+    - name: "Learned Finesse"
       effects: 
         - desc: ATK +60%
           all: Defenders
@@ -3766,19 +3767,24 @@
             buffValue: 20
     - name: "Passed-Down Martial Arts"
       effects: 
-        - desc: AP Recovery From Normal Attacks +150%
+        - desc: Normal attack AP recovery +150%
           all: true
           meta:
             priority: 1
             buff: AP Recovery From Normal Attacks
             buffValue: 150
-    - name: "Talent 5"
+    - name: "Striking Out on One's Own"
       effects: 
         - desc: Evasion possible during air attacks
-        - desc: No flinching when taking damage of 30% HP or less during air attacks
-    - name: "At the Galactic Federation Heroes"
+        - desc: No flinching during air attacks
+        - desc: Damage taken -30%
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffValue: 30
+    - name: "Galactic Federation Heroes"
       effects: 
-        - desc: ATK Damage +100% when skill chain is 3 or more
+        - desc: ATK damage +100% when skill chain is >3
           meta:
             priority: 3
             buff: ATK Damage
@@ -3792,19 +3798,19 @@
       power: ATK x 600%
       ap: 38
       maxHits: 2
-    - name: "Chopstick Split"
+    - name: "Helm Render"
       picture: Helmsplitter
       power: ATK x 500%
       ap: 30
       maxHits: 1
       highlight: true
-    - name: "Punch"
+    - name: "Air Slash"
       picture: Air_Slash_I
       power: ATK x 220%
       ap: 20
       maxHits: 1
       highlight: true      
-    - name: "Double Break"
+    - name: "Double Slash"
       picture: Double_Slash_I
       power: ATK x 220%
       ap: 20
@@ -3815,7 +3821,7 @@
     name: "Mirror Blade Tempest"
     picture: Mirror_Blade_Tempest_Claude
     effects: 
-      - desc: Damage +30%
+      - desc: Damage dealt +30%
         all: true
         duration: 30
         meta:
@@ -3854,6 +3860,7 @@
       
       *Normal > Punch > Double Break > Helmsplitter (Damage rotation)*
 
+
 - name: Roddick Farrence (Awakened)
   cat: jp
   rating: 9
@@ -3873,9 +3880,9 @@
     grd: 812
 
   talents:
-    - name: "Transcending Space-time II"
+    - name: "Transcending Space-time"
       effects: 
-        - desc: Cast Time -80%
+        - desc: Symbology cast time -80%
           all: true
           meta:
             priority: 1
@@ -3883,7 +3890,7 @@
             buffValue: 80
     - name: "Astounding Edarl Blade Arts"
       effects: 
-        - desc: Stun Rate +50%
+        - desc: Stun rate +50%
           all: true
           meta:
             priority: 1
@@ -3897,20 +3904,36 @@
             priority: 4
             buff: ATK
             buffValue: 40
-    - name: "Breath Adventurous"
-      effects: 
-        - desc: ATK/INT Damage taken +100%
+    - name: "Budding Sense of Adventure"
+      shortEffects: ATK/INT damage taken +100% when stunned (All Enemies)
+      effects:
+        - desc: ATK damage taken +100% when stunned
           all: Enemies
-    - name: "Looke Saver"
+          meta:
+            priority: 4
+            buff: Enemy ATK Damage Taken
+            buffValue: 100
+        - desc: INT damage taken +100% when stunned
+          all: Enemies
+          meta:
+            priority: 4
+            buff: Enemy INT Damage Taken
+            buffValue: 100            
+    - name: "Savior of Roke"
       effects: 
         - desc: Additional hit that deals 20% of damage during normal attacks
-        - desc: Additional hit that deals 5% damage when using skills
+        - desc: Additional hit that deals 5% of damage when using skills
           all: true
-    - name: "Talent 6"
+    - name: "Bond That Transcended Time"
       effects: 
-        - desc: Cancel bonus starts at 150% when using Charge Assault
-        - desc: ATK Damage +50% when hitcount is 400 or more
-
+        - desc: Cancel bonus starts at 150% when using charge assault
+        - desc: ATK damage dealt +50% when hitcount is >400
+          meta:
+            priority: 4
+            buff: ATK Damage
+            buffCondition: Hit Count > 400
+            buffValue: 50
+            
   skills:
     - name: "Double Slash"
       picture: Double_Slash_I
@@ -3944,7 +3967,7 @@
     name: "Omega Thunderclap Blade"
     picture: Omega_Thunderclap_Blade_Ratix
     element: Lightning
-    shortEffects: AP cost -40% and damage taken -20% (60 seconds)
+    shortEffects: AP cost -40% and damage taken -20% (Self/60s)
     effects: 
       - desc: AP cost -40%
         all: false
@@ -3997,6 +4020,7 @@
       *Normal > Shotgun > Air > Shotgun^n (Hitcount)*
       
       *Avoid Shotgun against smaller enemies due to size dependency*
+
 
 - name: Lenneth (Awakened)
   cat: jp
@@ -4859,6 +4883,7 @@
     power: ATK x 3500%
     maxHits: 13
 
+
 - name: Leanne (Bridal)
   cat: jp
   rating: 0
@@ -4932,7 +4957,7 @@
   rush:
     name: "Invincible Over"
     picture: Invincible_Over_Bridal_Reanbell
-    shortEffects: ATK damage +30% (All/20s)
+    shortEffects: ATK damage dealt +30% (All Party/20s)
     effects: 
       - desc: ATK damage +30%
         duration: 20
@@ -4943,7 +4968,8 @@
           buffValue: 30
     power: ATK x 3500%
     maxHits: 15
-    
+
+
 - name: Capell
   cat: jp
   rating: 0
@@ -4963,7 +4989,6 @@
 
   talents:
     - name: "Unusual Melody"
-      shortEffects: Stun rate +30% (All) and single target damage +20% (All)
       effects: 
         - desc: Stun rate +30%
           all: true
@@ -4996,7 +5021,7 @@
             buffValue: 50
     - name: "Hymn of the Late Gods"
       effects:
-        - desc: Nullifies status ailments (Self/180s)
+        - desc: Nullifies status ailments for 180 seconds
 
   skills:
     - name: "Slash Gavotte"
@@ -5023,10 +5048,14 @@
   rush:
     name: "Eternal Refrain"
     picture: Eternal_Refrain_Capell
-    shortEffects: Nullifies status ailments (All/20s) and AP cost -50% (Self/20s)
+    shortEffects: Nullifies status ailments (All Party/20s) and AP cost -50% (Self/20s)
     effects: 
-      - desc: Nullifies status ailments (All/20s)
-      - desc: AP cost -50% (Self/20s)
+      - desc: Nullifies status ailments
+        all: true
+        duration: 20
+      - desc: AP cost -50%
+        all: false
+        duration: 20
         meta:
           priority: 1
           duration: 20
