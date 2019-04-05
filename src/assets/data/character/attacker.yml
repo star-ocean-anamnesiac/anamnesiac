@@ -18,7 +18,6 @@
 
   talents:
     - name: "Silent Will"
-      shortEffects: ATK +40%, and ATK +60% when HP is 100% (All Party)
       effects: 
         - desc: ATK +40%
           all: true
@@ -77,7 +76,7 @@
   rush:
     name: "YoRHa Arms: Zero"
     picture: YoHRa_Arms_Ø_2B
-    shortEffects: Elemental damage dealt +70% (Self/20s) and +50% (All Party/20s)
+    shortEffects: Elemental damage dealt +70% (Self/20s) and elemental damage dealt +50% (All Party/20s)
     effects: 
       - desc: Elemental damage dealt +70%
         all: false
@@ -930,7 +929,7 @@
   rush:
     name: "Celestial Sword"
     picture: Heaven's_Sword_Summer_Reimi
-    shortEffects: Nullifies all status ailments, and single target damage dealt +40% (All Party/20s)
+    shortEffects: Nullifies all status ailments and single target damage dealt +40% (All Party/20s)
     effects: 
       - desc: Nullifies status ailments
         all: true
@@ -1647,7 +1646,7 @@
 
   stats:
     hp: 15645
-    atk: 3110
+    atk: 3245
     int: 1549
     def: 1969
     hit: 1134
@@ -1718,6 +1717,7 @@
   rush:
     name: "Waking Hell"
     picture: Waking_Hell_HW_Clair
+    shortEffects: DEF +30% (All Party/20s) and DEF -30% (All Enemies/20s)    
     effects: 
       - desc: DEF +30%
         all: true
@@ -1793,7 +1793,6 @@
 
   talents:
     - name: "Hand Trick II"
-      shortEffects: ATK +45%, and ATK +55% when hitcount is >100 (All Party)
       effects: 
         - desc: ATK +45%
           all: true
@@ -2493,7 +2492,7 @@
             buff: ATK
             buffValue: 20
     - name: "Cat's Interlude"
-      shortEffects: AP cost -20%, and ATK +10%/+20%/+30% when hitcount is >100/>150/>200
+      shortEffects: ATK +10%/+20%/+30% when hitcount is >100/>150/>200, and AP cost -20%
       effects:
         - desc: AP cost -20%
           meta:
@@ -2800,16 +2799,16 @@
 
   talents:
     - name: "First Valentine"
-      shortEffects: ATK/INT damage taken +15% inflicted by short range skills (All Enemies/10s)
+      shortEffects: ATK/INT damage taken +15% when hit by a short range skill (All Enemies/10s)
       effects: 
-        - desc: ATK damage taken +15% inflicted by short range skills (10s)
+        - desc: ATK damage taken +15% when hit by a short range skill (10s)
           all: Enemies
           meta:
             priority: 3
             buffCondition: Short Ranged Skill
             buff: Enemy ATK Damage Taken
             buffValue: 15
-        - desc: INT damage taken +15% inflicted by short range skills (10s)
+        - desc: INT damage taken +15% when hit by a short range skill (10s)
           all: Enemies
           meta:
             priority: 3
@@ -2834,7 +2833,7 @@
             buff: ATK Damage
             buffCondition: Skill Chain 3+
             buffValue: 100
-        - desc: ATK damage dealt +200% when when skill chain is >5
+        - desc: ATK damage dealt +200% when skill chain is >5
           meta:
             priority: 3
             buff: ATK Damage
@@ -3128,7 +3127,7 @@
             buff: Crit Rate
             buffCondition: HP is 100
             buffValue: 30
-        - desc: Critical hit damage +30%
+        - desc: Critical hit damage +30% when HP is 100%
           meta:
             priority: 1
             buff: Crit Damage
@@ -3164,7 +3163,7 @@
     name: "Avenger Charge"
     picture: Festive_Avenger_Mirage
     element: Fire
-    shortEffects: AP cost -30%, and recovers 10% of max HP every 3 seconds (Self/20s)
+    shortEffects: AP cost -30% and recovers 10% of max HP every 3 seconds (Self/20s)
     effects: 
       - desc: AP cost -30%
         meta:
@@ -3472,7 +3471,6 @@
             buff: AP Recovery
             buffValue: 100         
     - name: "Blue Star Shower II"
-      shortEffects: Single target damage +5%, and single target damage +20% when hitcount is >150 (All Long Range Weapons/Self)
       effects: 
         - desc: Single target damage +5%
           all: Long Range Weapons/Self
@@ -3958,7 +3956,7 @@
   rush:
     name: "Sharp Talons"
     picture: Sharp_Talons_Tyvane
-    shortEffects: Removes all buffs, and DEF -30% (All Enemies/20s)
+    shortEffects: Removes all buffs and DEF -30% (All Enemies/20s)
     effects:
       - desc: Removes buffs
         duration: 20
@@ -4052,7 +4050,7 @@
   talents:
     - name: "Setting the Tone III"
       effects: 
-        - desc: Nullifies freezing for 180 seconds
+        - desc: Nullifies freeze for 180 seconds
           all: true
     - name: "Hidden Talent V"
       effects: 
@@ -4236,7 +4234,7 @@
     grd: 833
 
   talents:
-    - name: "All-Mighty"
+    - name: "Almighty II"
       effects: 
         - desc: ATK +35%
           all: true
@@ -4251,7 +4249,7 @@
             buff: ATK 
             buffCondition: Attackers
             buffValue: 55
-    - name: "Charismatic of SRF"
+    - name: "SRF Charisma II"
       effects: 
         - desc: Critical hit chance +40% when behind target 
           all: true
@@ -4260,17 +4258,17 @@
             buff: Crit Rate
             buffCondition: Behind Target
             buffValue: 40
-    - name: "Result of Practice"
-      shortEffects: Damage dealt +150%/+300% by Talon Pierce and Tri Zapper when skill chain is >3/>5
+    - name: "Fruits of Training II"
+      shortEffects: Damage dealt +150%/+300% by Talon Thrust and Threefold Blast when skill chain is >3/>5
       effects: 
-        - desc: Damage dealt +150% by Talon Pierce and Tri Zapper when skill chain is >3
+        - desc: Damage dealt +150% by Talon Thrust and Threefold Blast when skill chain is >3
           all: true
           meta:
             priority: 3
             buff: Damage
             buffCondition: Skill Chain 3+
             buffValue: 150
-        - desc: Damage dealt +300% by Talon Pierce and Tri Zapper when skill chain is >5
+        - desc: Damage dealt +300% by Talon Thrust and Threefold Blast when skill chain is >5
           meta:
             priority: 3
             buff: Damage
@@ -4296,20 +4294,20 @@
       power: ATK x 150%
       ap: 14
       maxHits: 2
-    - name: "Talon Pierce"
+    - name: "Talon Thrust"
       picture: Talon_Thrust
       element: Fire
       power: ATK x 200%
       ap: 20
       maxHits: 2
-    - name: "Tri Zapper"
+    - name: "Threefold Blast"
       picture: Tri_Zapper
       power: ATK x 230%
       ap: 21
       maxHits: 6
       
   rush:
-    name: "Flash S Alternative"
+    name: "Crosscut"
     picture: Flash_S_Alternative_Crowe
     effects: 
       - desc: AP cost -80%
