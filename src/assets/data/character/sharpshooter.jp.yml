@@ -1651,7 +1651,7 @@
             buff: Crit Damage
             buffValue: 30
     - name: "Never Ending Chivalry"
-      shortEffects: Critical hit rate +30%/+40% and critical damage +30%/+40% when hitcount is >100/>200 (All)
+      shortEffects: Critical hit rate +30%/+40% when hitcount is >100/>200 (All) and critical damage +30%/+40% when hitcount is >100/>200 (All)
       effects: 
         - desc: Critical hit rate +30% when hitcount is >100/
           all: true
@@ -1687,7 +1687,7 @@
         - desc: Evasion distance +100%
         - desc: Evasion rate +100%
     - name: "Proof of Trial"
-      shortEffects: ATK +20% & HIT +20% after using Moon Mirror (Self 10 seconds)
+      shortEffects: ATK/HIT +20% after using Moon Mirror (Self/10s)
       effects:
         - desc: ATK +20% after using Moon Mirror
           meta:
@@ -1728,7 +1728,7 @@
   rush:
     name: "Murakumo"
     picture: Murakumo_Crimson_Grace_Phia
-    shortEffects: ATK Damage +30% (All/20s)
+    shortEffects: ATK damage +30% (All/20s)
     effects: 
       - desc: ATK damage +30%
         duration: 20
