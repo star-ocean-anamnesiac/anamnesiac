@@ -10,7 +10,7 @@
 
   stats:
     hp: 14280
-    atk: 2868
+    atk: 2993
     int: 1537
     def: 1773
     hit: 1371
@@ -19,36 +19,36 @@
   talents:
     - name: "Fleeting Gentleness"
       effects: 
-        - desc: Damage +30%
+        - desc: Damage +45%
           all: true
           meta:
             priority: 1
             buff: Damage
-            buffValue: 30
-        - desc: ATK +40% when HP 100%
+            buffValue: 40
+        - desc: ATK +65% when HP is 100%
           all: true
           meta:
             priority: 1
             buff: Damage
             buffCondition: HP at 100%
-            buffValue: 40
+            buffValue: 65
     - name: "Scanner Type"
       effects: 
-        - desc: Evasion AP consumption -50%
+        - desc: Evasion AP cost -50%
           all: true
         - desc: Movement speed +30%
           all: true
-    - name: "Blade of Revenge"
+    - name: "Treacherous Blade"
       effects: 
         - desc: Enables evasion during air attacks
         - desc: Movement distance & speed +100%
-    - name: "Whereabouts of Brethren"
+    - name: "Gathering Keepsakes"
       effects: 
-        - desc: ATK +15%
+        - desc: ATK +20%
           meta:
             priority: 4
             buff: ATK
-            buffValue: 15
+            buffValue: 20
         - desc: HIT +10%
           meta:
             priority: 4
@@ -56,34 +56,35 @@
             buffValue: 10
 
   skills:
-    - name: "YoHRa Arms: Three"
+    - name: "YoRHa Arms: Three"
       picture: Helmsplitter
-      power: ATK x 920%
+      power: ATK x 1240%
       ap: 53
       maxHits: 1
-    - name: "YoHRa Arms: Four"
+    - name: "YoRHa Arms: Four"
       picture: YoHRa_Arms_Four
-      power: ATK x 620%
+      power: ATK x 840%
       ap: 26
       maxHits: 1
-    - name: "YoHRa Pod: One"
+    - name: "YoRHa Pod: One"
       picture: YoHRa_Pod_One
       power: ATK x 180%
       ap: 13
       maxHits: 1
-    - name: "YoHRa Pod: Two"
+    - name: "YoRHa Pod: Two"
       picture: YoHRa_Pod_Two
       power: ATK x 380%
       ap: 20
       maxHits: 1
       
   rush:
-    name: "YoHRa Hack: Zero"
+    name: "YoRHa Hacking Attack: Zero"
     picture: YoHRa_Hacking_Zero_9S
+    shortEffects: Recovers 50% of max HP, and ATK damage dealt +30% (All Party/20s)
     effects: 
-      - desc: Recover 50% HP
+      - desc: Recovers 50% HP
         all: true
-      - desc: ATK damage +30% 
+      - desc: ATK damage dealt +30% 
         duration: 20
         all: true
         meta:
@@ -92,7 +93,8 @@
           buffValue: 30
     power: ATK x 4000%
     maxHits: 16
-    
+
+
 - name: Reimi Saionji
   cat: jp
   rating: 5
@@ -168,6 +170,7 @@
     power: ATK x 2500%
     maxHits: 7
     element: Dark
+
 
 - name: Maria Traydor (Awakened)
   cat: jp
@@ -330,6 +333,7 @@
       
       *Normal > Crimson Squall > Aiming Device  > Crimson Squall > Crimson Squall (Rush Gain)*
 
+
 - name: Nel Zelpher (Awakened)
   cat: jp
   rating: 4
@@ -349,24 +353,24 @@
     grd: 924
 
   talents:
-    - name: "Prayer for Peace"
-      effects: 
-        - desc: Critical Rate +15%
-          all: true
-          meta:
-            priority: 1
-            buff: Crit Rate
-            buffValue: 15
     - name: "Crimson Blade"
       effects: 
-        - desc: Normal Attacks have +15% chance to Poison
+        - desc: Normal attacks have +15% chance to inflict poison
           meta:
             priority: 4
             buff: Poison Attack Chance
             buffValue: 15
+    - name: "Prayer for Peace"
+      effects: 
+        - desc: Critical hit chance +15%
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffValue: 15            
     - name: "Assassin's Stealth"
       effects: 
-        - desc: AP Cost -15%
+        - desc: AP cost -15%
           all: true
           meta:
             priority: 1
@@ -374,10 +378,42 @@
             buffValue: 15
     - name: "Covert Operation"
       effects: 
-        - desc: Repel +1 & ATK Damage +80% when skill chain is 3+
+        - desc: Repel +1
+        - desc: ATK damage dealt +80% when skill chain is >3
+          all: true
+          meta:
+            priority: 1
+            buff: ATK Damage
+            buffCondition: Skill Chain 3+
+            buffValue: 80
     - name: "Absolute Loyalty"
       effects: 
-        - desc: ATK Damage +30% (All) & ATK damage to the enemy ATK damage +15% (entire enemy)
+        - desc: Damage dealt +30%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 30
+        - desc: ATK damage taken -15% while inflicted with poison
+          all: Enemies
+          meta:
+            priority: 1
+            buff: Enemy ATK Damage Taken
+            buffCondition: Poisoned
+            buffValue: 15
+    - name: "Commander of Demon Sealing Division [Darkness]"
+      shortEffects: ATK +30% and HIT +10%
+      effects: 
+        - desc: ATK +30%
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 30
+        - desc: HIT +10%
+          meta:
+            priority: 1
+            buff: HIT
+            buffValue: 10
     - name: "Captain of the Enma Division"
       effects: 
         - desc: ATK +30% & HIT +10%
@@ -413,11 +449,13 @@
   rush:
     name: "Divine Wrath"
     picture: Divine_Wrath_Nel
+    shortEffects: Attacks have 15% chance to inflict poison, and an additional hit that deals 20% more damage (Self/20s)
     effects: 
-      - desc: Normal Attacks have +15% chance to Deadly Poison
-      - desc: Normal Attacks will do an additional hit that does 20% of your damage
+      - desc: Attacks have 15% chance to inflict poison
         duration: 20
-      - desc: High Chance to inflict Deadly Poison during Rush.
+      - desc: Additional hit that deals 20% more damage
+        duration: 20
+      - desc: High Chance to inflict Deadly Poison during Rush
     power: ATK x 3000%
     maxHits: 18
 
