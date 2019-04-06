@@ -17,7 +17,7 @@
     grd: 924
 
   talents:
-    - name: "Fleeting Gentleness"
+    - name: "Fleeting Kindness"
       effects: 
         - desc: Damage +45%
           all: true
@@ -113,9 +113,9 @@
     grd: 945
 
   talents:
-    - name: "Sound Judgment II"
+    - name: "Sound Judgment"
       effects: 
-        - desc: INT Damage Taken -40%
+        - desc: INT damage taken -40%
           all: true
           meta:
             priority: 1
@@ -123,7 +123,7 @@
             buffValue: 40
     - name: "Greater Single-Shot"
       effects: 
-        - desc: Damage Dealt +20%
+        - desc: Damage dealt +20%
           all: true
           meta:
             priority: 1
@@ -131,10 +131,10 @@
             buffValue: 20
     - name: "Star Seed of Hope"
       effects: 
-        - desc: Nullifies Status Ailments (180 seconds)
+        - desc: Nullifies status ailments for 180 seconds
     - name: "Descendant of Muah"
       effects: 
-        - desc: 80% Chance of Surviving a Lethal Attack at 10% HP or more.
+        - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
 
   skills:
     - name: "Chaotic Blossoms"
@@ -161,10 +161,11 @@
   rush:
     name: "Lunar Divination"
     picture: Lunar_Divination_Reimi
+    shortEffects: Nullifies status ailments and recovers 15% of max HP every 3 seconds (All Party/15s)
     effects: 
-      - desc: Nullifies Status Ailments
+      - desc: Nullifies status ailments
         all: true
-      - desc: Recovers 15% of HP every 3 seconds
+      - desc: Recovers 15% of max HP every 3 seconds
         duration: 15
         all: true
     power: ATK x 2500%
@@ -191,15 +192,15 @@
     grd: 924
 
   talents:
-    - name: "Natural Born Leader II"
+    - name: "Natural Born Leader"
       effects: 
-        - desc: Damage +50%
+        - desc: Damage dealt +50%
           all: true
           meta:
             priority: 1
             buff: Damage
             buffValue: 50
-    - name: "Alternating Step II"
+    - name: "Alternating Step"
       effects: 
         - desc: Damage taken -20%
           meta:
@@ -208,27 +209,28 @@
             buffValue: 20
     - name: "Charged Kick"
       effects: 
-        - desc: Evasion AP consumption -50%
+        - desc: Evasion AP cost -50%
           all: true
         - desc: Evasion speed and distance +100%
-    - name: "Bloodstained Fangs II"
+    - name: "Bloodstained Fangs"
       effects: 
-        - desc: Recover 10% of normal attack damage as HP at 100 hit count
+        - desc: Recovers 10% of damage dealt by normal attacks as HP when hitcout is >100
           all: true
     - name: "Quark Carrier"
       effects: 
-        - desc: AP Recovery +50%
+        - desc: AP recovery +50%
           all: true
           meta:
             priority: 2
             buff: AP Recovery
             buffValue: 50
-        - desc: AP Cost -5%
+        - desc: AP cost -5%
           meta:
             priority: 1
             buff: AP Cost Reduction
             buffValue: 5
     - name: "Dreams of Peace"
+      shortEffects: ATK +30% and HP +10%
       effects: 
         - desc: ATK +30%
           meta:
@@ -265,7 +267,7 @@
       ap: 24
       maxHits: 12
       element: Dark
-    - name: "Raptor Buller"
+    - name: "Raptor Bullet"
       picture: Raptor_Bullet
       power: ATK x 390%
       ap: 29
@@ -276,10 +278,11 @@
   rush:
     name: "Burst Emission"
     picture: Energy_Burst_Barrage_Maria
+    shortEffects: Removes buffs (All Enemies) and critical hit chance +40% (All Party/20s)
     effects: 
-      - desc: Removes Buffs
+      - desc: Removes buffs
         all: Enemies
-      - desc: Critical Rate +40%
+      - desc: Critical hit chance +40%
         duration: 20
         all: true
         meta:
@@ -501,6 +504,7 @@
       *Normal>Dash>Normal>Dash xn - Poshrush deadly poison procs*
       *Sylvan>Terror>Sylvan>Terror or Sylvan spam - Unawakened/EN*
 
+
 - name: Emmerson T. Kenny (Awakened)
   cat: jp
   rating: 3
@@ -519,29 +523,93 @@
     grd: 847
 
   talents:
-    - name: "Inspired Action III"
+    - name: "Inspired Action"
       effects: 
-        - desc: Hitcount Timer +3 seconds
+        - desc: Hitcount timer +3 seconds
           all: true
-    - name: "Daredevil's Courage II"
+    - name: "Daredevil's Courage"
       effects: 
-        - desc: Normal Attacks will do an additional hit that does 20% of your damage (All) & Damage to Battle Skills 5% Additional hit occurence (Self)
-    - name: "Admiral's Persuasion"
-      effects: 
-        - desc: Damge +35% & Damage +50/65% every 100/200 hits (All)
+        - desc: Additional hit that deals 30% of damage during normal attacks
           all: true
+        - desc: Additional hit that deals 5% of damage when using skills
+    - name: "Admiral's Presence"
+      shortEffects: Damage dealt +35%, and damage dealt +50%/+65% when hitcount is >100/>200 (All Party)
+      effects: 
+        - desc: Damage dealt +35%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 35 
+        - desc: Damage dealt +50% when hitcount is >100
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Hit Count > 100
+            buffValue: 50  
+        - desc: Damage dealt +65% when hitcount is >200
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Hit Count > 200
+            buffValue: 65
     - name: "Adult Style"
+      shortEffects: AP cost -10%/-20% when hitcount is >50/>100 (All Party)
       effects: 
-        - desc: AP Cost -10/20% every 50, 100 hits (All)
+        - desc: AP cost -10% when hitcount is >50
           all: true
-    - name: "Beauty and Fruit Wine"
-      effects: 
-        - desc: Repel +2, Critial Rate and Damage +50% & Recovers 100% AP on perfect dodge
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Hit Count > 50
+            buffValue: 10
+        - desc: AP cost -20%
           all: true
-    - name: "Heroes on Success As a Clan"
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Hit Count > 100
+            buffValue: 20
+    - name: "Beautiful Women and Fruit Wine"
       effects: 
-        - desc: ATK +40%, DEF +20%, HIT +10%, HP +10%
-        
+        - desc: Repel +2
+        - desc: Critical hit chance +50%
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffValue: 50
+        - desc: Critical damage +50%
+          meta:
+            priority: 1
+            buff: Crit Damage
+            buffValue: 50
+        - desc: Recovers 100% AP on perfect dodge
+    - name: "As a Family of Heroes"
+      shortEffects: ATK +40%, DEF +20%, HIT +10%, HP +10%
+      effects: 
+        - desc: ATK +40%
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 40
+        - desc: DEF +20%
+          meta:
+            priority: 1
+            buff: DEF
+            buffValue: 20
+        - desc: HIT +10%
+          meta:
+            priority: 1
+            buff: HIT
+            buffValue: 10            
+        - desc: HP +10%
+          meta:
+            priority: 1
+            buff: HP
+            buffValue: 10 
+            
   skills:
     - name: "Heavenly Flight"
       picture: Heavenly_Flight
@@ -620,7 +688,8 @@
       *Normal>Thorn>Moon>Thorn>Moon - no AP reduc*
       
       *Normal>Moon>Thorn>Moon*n - -AP/above 50hit*
-    
+
+
 - name: Clair Lasbard (Awakened)
   cat: jp
   rating: 6
@@ -641,13 +710,13 @@
   talents:
     - name: "Reach Further Beyond"
       effects: 
-        - desc: ATK Damage Taken -30%
+        - desc: ATK damage taken -30%
           all: true
           meta:
             priority: 1
             buff: ATK Damage Taken Reduction
             buffValue: 30
-        - desc: INT Damage Taken -10%
+        - desc: INT damage taken -10%
           all: true
           meta:
             priority: 1
@@ -655,32 +724,74 @@
             buffValue: 10
     - name: "Apris's Divine Favor"
       effects: 
-        - desc: No Flinching when taking Damage < 25% of Max HP
+        - desc: No flinching when taking damage of 25% of max HP or less
           all: true
-    - name: "Operation Force Captain"
+    - name: "Medical Corps Captain"
       effects: 
-        - desc: AP Recovery Speed +100% & Damage -30% when being targeted from enemies (All)
+        - desc: AP recovery +100%
           all: true
-    - name: "Understanding of Childhood Friend"
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffValue: 100
+        - desc: Damage taken -30% when targeted by enemy
+          all: true
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffCondition: When Holding Aggro
+            buffValue: 30
+    - name: "A Childhood Friend's Understanding"
       effects: 
-        - desc: Damage -100% (Overall / 0.5 seconds) & Taunt +2 (self)
+        - desc: Damage taken -100% when dodging (0.5s)
           all: true
-    - name: "Slow Smile"
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffCondition: When Evading
+            buffValue: 100
+        - desc: Taunt +2            
+    - name: "Charming Smile"
       effects: 
         - desc: Evasion speed and distance +100%
-        - desc: Evasion possible during air attacks
-        - desc: ATK Damage +50% when skill chain is 3+
-    - name: "Blink Intelligence"
+        - desc: Evasion possible during air attacks             
+        - desc: ATK damage dealt +50% when skill chain is >3
+          meta:
+            priority: 1
+            buff: ATK Damage
+            buffCondition: Skill Chain 3+
+            buffValue: 50
+    - name: "Sparkling Intelligence"
+      shortEffects: ATK +30%, HIT +20%, GRD +10%, and HP +30%
       effects: 
-        - desc: ATK +30%, HIT +20%, GRD +10%, HP +30%
+        - desc: ATK +30%
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 30
+        - desc: HIT +20%
+          meta:
+            priority: 1
+            buff: HIT
+            buffValue: 20  
+        - desc: GRD +10%
+          meta:
+            priority: 1
+            buff: GRD
+            buffValue: 10             
+        - desc: HP +30%
+          meta:
+            priority: 1
+            buff: HP
+            buffValue: 30 
         
   skills:
     - name: "Aqua Spread"
       picture: Hydroblades
+      element: Ice
       power: ATK x 210%
       ap: 20
       maxHits: 2
-      element: Ice
     - name: "Sylvan Shot"
       picture: Sylvan_Shot
       power: ATK x 220%
@@ -706,7 +817,7 @@
     name: "Flying Guillotine Slash"
     picture: Flying_Guillotine_Slash_Clair
     effects: 
-        - desc: Damage +90%
+        - desc: Damage dealt +90%
           duration: 30
           all: true
           meta:
@@ -756,7 +867,8 @@
       *Normal>filler 1>filler 2>(filler 1>)Mirror Slice^n OR Mirror Slice>dodge after hit 4*
       
       *Normal>Aqua>filler>Aqua - vs fat bosses that take 4+ hits*
-      
+ 
+ 
 - name: Verda Kleiman
   cat: jp
   rating: 0
@@ -775,23 +887,25 @@
     grd: 931
 
   talents:
-    - name: "Child of Science"
+    - name: "A Child of Science"
+      shortEffects: ATK -5% when hit by Magnetic Field (Enemy/10s)
       effects: 
-        - desc: ATK -5% inflicted by Magnetic Field (10 seconds)
+        - desc: ATK -5% when hit by Magnetic Field (10s)
           all: Enemies
           meta:
             priority: 4
             buff: Enemy ATK Reduction
             buffValue: 5
-    - name: "Modified Gun"
+    - name: "Upgraded Gun"
+      shortEffects: Damage taken +15% when hit by Break Horn and Break Bullet (Enemy/8s)
       effects: 
-        - desc: Damage taken +15% inflicted by Break Horn and Break Bullet (8 seconds)
+        - desc: Damage taken +15% when hit by Break Horn and Break Bullet (8s)
           all: Enemies
           meta:
             priority: 4
             buff: Enemy Damage Taken
             buffValue: 15
-    - name: "Family to Protect"
+    - name: "Cherished Family"
       effects:
         - desc: Damage dealt +30%
           all: true
@@ -799,12 +913,12 @@
             priority: 1
             buff: Damage
             buffValue: 30
-    - name: "Commitment to Grandfather's Wishes"
+    - name: "Grandfather's Will"
       effects: 
-        - desc: Seal immunity (180 seconds)
+        - desc: Nullifies silence for 180 seconds
           all: true
-        - desc: Nullify rush gauge reduction fields
-          all: Close-Range, Self
+        - desc: Nullifies rush gauge reduction fields
+          all: Short Range WEapons/Self
           
   skills:
     - name: "Magnetic Field"
@@ -817,7 +931,7 @@
       power: ATK x 190%
       ap: 19
       maxHits: 8
-    - name: "Benishigure (Chain)"
+    - name: "Continuous Crimson Squall"
       picture: Crimson_Squall_I
       power: ATK x 180%
       ap: 18
@@ -832,9 +946,9 @@
   rush:
     name: "Rocket Slippers"
     picture: Rocket_Slippers_Verda
-    shortEffects: ATK damage +30% and movement speed +30% (All Party, 20 seconds)
+    shortEffects: ATK damage dealt +30% and movement speed +30% (All Party/20s)
     effects:
-      - desc: ATK damage +30%
+      - desc: ATK damage dealt +30%
         duration: 20
         all: true
         meta:
@@ -846,7 +960,8 @@
         all: true
     power: ATK x 3500%
     maxHits: 2
-    
+
+
 - name: Silmeria Valkyrie (Awakened)
   cat: jp
   rating: 6
@@ -1766,9 +1881,9 @@
   rush:
     name: "Murakumo"
     picture: Murakumo_Crimson_Grace_Phia
-    shortEffects: ATK damage +30% (All/20s)
+    shortEffects: ATK damage dealt +30% (All/20s)
     effects: 
-      - desc: ATK damage +30%
+      - desc: ATK damage dealt +30%
         duration: 20
         all: true
         meta:
@@ -1777,3 +1892,117 @@
           buffValue: 30
     power: ATK x 4000%
     maxHits: 24
+
+
+   
+- name: Sophia Esteed (Youth)
+  cat: jp
+  rating: 0
+  picture: Youth_Sophia
+  weapon: dagger
+  ace: true
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 2868
+    int: 1563
+    def: 1549
+    hit: 1253
+    grd: 924
+
+  talents:
+    - name: "Yearning Feelings"
+      effects:
+        - desc: Damage dealt +40%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 40
+        - desc: Single target damage +15% at long range
+          all: true
+          meta:
+            priority: 1
+            buff: Single Target Damage
+            buffValue: 15
+    - name: "Earnest Learning of Love"
+      effects: 
+        - desc: 90% of surviving a lethal attack when at 30% of max HP or more
+          all: Long Range Weapons
+        - desc: Stun rate +15%
+          all: Long Range Weapons
+          meta:
+            priority: 1
+            buff: Stun Rate
+            buffValue: 15
+    - name: "The Power to Connect"
+      effects:
+        - desc: Normal attack AP recovery +100% at short range
+          all: true
+          meta:
+            priority: 1
+            buff: AP Recovery From Normal Attacks
+            buffCondition: Short Range
+            buffValue: 100
+        - desc: AP cost -15%
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 15
+    - name: "Unconcealable Jealousy"
+      effects: 
+        - desc: ATK +15%
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 15
+          
+  skills:
+    - name: "Flying Guillotine"
+      picture: Guillotine
+      power: ATK x 170%
+      ap: 15
+      maxHits: 2
+    - name: "Sylvan Shot"
+      picture: Sylvan_Shot
+      power: ATK x 150%
+      ap: 13
+      maxHits: 8
+    - name: "Unholy Terror"
+      picture: Unholy_Terror
+      power: ATK x 250%
+      ap: 29
+      maxHits: 5
+    - name: "Gremlin Lair"
+      picture: Gremlin's_Lair_I
+      element: Earth
+      power: ATK x 420%
+      ap: 31
+      maxHits: 10
+
+  rush:
+    name: "Blood Scylla"
+    picture: Blood_Scylla_JKJK
+    shortEffects: Recovers 30% of max HP and ATK/INT damage dealt +25% (All Party/20s)
+    effects:
+      - desc: Recovers 30% of max HP
+        duration: 20
+        all: true
+      - desc: ATK damage dealt +25%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: ATK Damage
+          buffValue: 25
+      - desc: INT damage dealt +25%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: INT Damage
+          buffValue: 25
+    power: ATK x 3500%
+    maxHits: 5
+    
