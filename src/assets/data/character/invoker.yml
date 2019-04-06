@@ -699,7 +699,7 @@
             buffValue: 20
 
   skills:
-    - name: "Silencing Star Light"
+    - name: "Silencing Starlight"
       picture: Star_Light
       element: Light
       power: INT x 440%
@@ -725,7 +725,7 @@
       maxHits: 6
       
   rush:
-    name: "Silencing Southern Cross"
+    name: "Silent Southern Cross"
     picture: Silent_Southern_Cross_Celine
     element: Light
     effects: 
@@ -957,7 +957,7 @@
             buff: Multiple Target Damage
             buffValue: 20
     - name: "The Expel Turnabout II"
-      shortEffects: Nullifies freeze/paralysis (All Party/90s)
+      shortEffects: Nullifies freeze/paralysis for 90 seconds (All Party)
       effects: 
         - desc: Nullifies freeze for 90 seconds
           duration: 90
@@ -1233,7 +1233,7 @@
             priority: 4
             buff: INT
             buffValue: 40
-    - name: "Escort To The Altar II"
+    - name: "Escort to the Altar II"
       shortEffects: AP cost -20%, and AP cost -30%/-40%/-50% when hitcount is >50/>100/>150
       effects: 
         - desc: AP cost -20%
@@ -1375,7 +1375,7 @@
     grd: 443
 
   talents:
-    - name: "Advance Archaeology Knowledge III"
+    - name: "Advanced Archaeology Knowledge III"
       effects: 
         - desc: INT +30% when HP is 100%
           all: true
@@ -2085,6 +2085,7 @@
     power: INT x 3000%
     maxHits: 12
 
+
 - name: Reimi Saionji (Federation)
   cat: gl
   rating: 0
@@ -2102,7 +2103,7 @@
     grd: 840
 
   talents:
-    - name: "Academy's Top Student"
+    - name: "Academy Top Spot II"
       effects:
         - desc: INT +20%
           all: true
@@ -2110,7 +2111,7 @@
             priority: 1
             buff: INT
             buffValue: 20
-    - name: "Vital Check"
+    - name: "Vital Signs Check II"
       effects: 
         - desc: Critical damage +35%
           all: true
@@ -2120,7 +2121,7 @@
             buffValue: 35
         - desc: Recovers 5% of max HP every 3 seconds
           all: true
-    - name: "Rational Observation"
+    - name: "Composed Observation II"
       effects:
         - desc: Critical hit chance +40% when HP is 100%
           meta:
@@ -2128,7 +2129,7 @@
             buff: Crit Rate
             buffCondition: HP is 100
             buffValue: 40
-    - name: "Emblem of Fortune"
+    - name: "Symbol of Good Luck"
       effects: 
         - desc: Nullifies status ailments for 180 seconds
         - desc: Symbology cast time -80% 
@@ -2156,7 +2157,7 @@
       power: INT x 250%
       ap: 24
       maxHits: 9
-    - name: "Frigid Saucer"
+    - name: "Frigid Cirque"
       picture: Frigid_Saucer
       element: Ice
       power: INT x 200%
