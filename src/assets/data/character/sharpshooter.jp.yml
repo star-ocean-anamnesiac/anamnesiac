@@ -1,7 +1,7 @@
 
 - name: 9S
-  cat: jp
-  rating: 8
+  cat: gl
+  rating: 10
   picture: 9S
   weapon: ohs
   ace: true
@@ -10,7 +10,7 @@
 
   stats:
     hp: 14280
-    atk: 2993
+    atk: 2868
     int: 1537
     def: 1773
     hit: 1371
@@ -18,7 +18,7 @@
 
   talents:
     - name: "Fleeting Kindness"
-      shortEffects: Damage dealt +45%, and damage dealt +55% when HP is 100%
+      shortEffects: Damage dealt +45%, and damage dealt +65% when HP is 100%
       effects: 
         - desc: Damage dealt +45%
           all: true
@@ -48,7 +48,7 @@
           meta:
             priority: 4
             buff: ATK
-            buffValue: 15
+            buffValue: 20
         - desc: HIT +10%
           meta:
             priority: 4
