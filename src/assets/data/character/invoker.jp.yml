@@ -666,7 +666,7 @@
             buffValue: 20
 
   skills:
-    - name: "Silencing Star Light"
+    - name: "Silencing Starlight"
       picture: Star_Light
       element: Light
       power: INT x 440%
@@ -692,7 +692,7 @@
       maxHits: 6
       
   rush:
-    name: "Silencing Southern Cross"
+    name: "Silent Southern Cross"
     picture: Silent_Southern_Cross_Celine
     element: Light
     effects: 
@@ -1175,7 +1175,7 @@
             priority: 4
             buff: INT
             buffValue: 40
-    - name: "Escort To The Altar"
+    - name: "Escort to the Altar"
       shortEffects: AP cost -20%, and AP cost -30%/-40%/-50% when hitcount is >50/>100/>150
       effects: 
         - desc: AP cost -20%
@@ -2051,6 +2051,7 @@
 
   talents:
     - name: "Enchanted Artistry"
+      shortEffects: INT +10%, DEF +50%, GRD +20%, and HP +20%
       effects: 
         - desc: INT +10%
           meta:
@@ -2461,7 +2462,7 @@
             buffValue: 20          
 
   skills:
-    - name: "Silencing Star Light"
+    - name: "Silencing Starlight"
       picture: Star_Light
       element: Light
       power: INT x 790%
@@ -2497,7 +2498,7 @@
       highlight: true
       
   rush:
-    name: "Silencing Southern Cross"
+    name: "Silent Southern Cross"
     picture: Silent_Southern_Cross_Celine
     element: Light
     effects: 
@@ -2651,7 +2652,7 @@
           priority: 1
           buff: AP Cost Reduction
           buffValue: 40
-      - desc: critical hit chance +30%
+      - desc: Critical hit chance +30%
         duration: 20
         meta:
           priority: 1
@@ -2723,7 +2724,7 @@
             buff: AP Cost Reduction
             buffCondition: Skill Chain 3+
             buffValue: 40
-    - name: "Envy towards God Realm"
+    - name: "Envy Towards God Realm"
       shortEffects: INT +30% and HP +10%
       effects: 
         - desc: INT +30%
@@ -2798,7 +2799,7 @@
     grd: 840
 
   talents:
-    - name: "Academy's Top Student"
+    - name: "Academy Top Spot"
       effects:
         - desc: INT +20%
           all: true
@@ -2806,7 +2807,7 @@
             priority: 1
             buff: INT
             buffValue: 20
-    - name: "Vital Check"
+    - name: "Vital Signs Check"
       effects: 
         - desc: Critical damage +35%
           all: true
@@ -2816,7 +2817,7 @@
             buffValue: 35
         - desc: Recovers 5% HP every 3 seconds
           all: true
-    - name: "Rational Observation"
+    - name: "Composed Observation"
       effects:
         - desc: Critical hit chance +40% when HP is 100%
           meta:
@@ -2824,7 +2825,7 @@
             buff: Crit Rate
             buffCondition: HP is 100
             buffValue: 40
-    - name: "Emblem of Fortune"
+    - name: "Symbol of Good Luck"
       effects: 
         - desc: Nullifies status ailments for 180 seconds
         - desc: Symbology cast time -80% 
@@ -2874,4 +2875,108 @@
     power: INT x 3500%
     maxHits: 13
     
+
+- name: Leon D.S. Gehste
+  cat: jp
+  rating: 0
+  picture: Leon
+  weapon: tome
+  ace: true
+  star: 5
+
+  stats:
+    hp: 12390
+    atk: 1575
+    int: 2718
+    def: 1365
+    hit: 1043
+    grd: 819
+
+  talents:
+    - name: "Impudent Attitude"
+      effects: 
+        - desc: ATK +30%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 30
+    - name: "Lacuer's Genius Youngster"
+      effects: 
+        - desc: INT +40%
+          all: true
+          meta:
+            priority: 1
+            buff: INT
+            buffValue: 40
+        - desc: AP recovery +30%
+          all: Long Range Weapons
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffValue: 30
+    - name: "Quick Witted"
+      effects: 
+        - desc: Damage dealt +150% by Shadow Flare after using Frigid Saucer (8s)
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Skills
+            buffValue: 150
+    - name: "True Face Concealed"
+      effects: 
+        - desc: INT +20% after using Shadow Needles (8s)
+          meta:
+            priority: 1
+            buff: INT
+            buffCondition: Shadow Needles
+            buffValue: 20
+
+  skills:
+    - name: "Frigid Saucer"
+      picture: Frigid_Saucer
+      element: Ice
+      power: INT x 190%
+      ap: 16
+      maxHits: 1
+    - name: "Deep Freeze"
+      picture: Deep_Freeze
+      element: Ice
+      power: INT x 550%
+      ap: 32
+      maxHits: 9
+      notes: Low chance to freeze
+    - name: "Shadow Flare"
+      picture: Shadow_Flare
+      element: Dark
+      power: INT x 710%
+      ap: 39
+      maxHits: 5
+    - name: "Shadow Needles"
+      picture: Shadow_Needles
+      element: Dark
+      power: INT x 160%
+      ap: 16
+      maxHits: 5
+
+  rush:
+    name: "Daemon's Gate"
+    picture: Demon's_Gate_Leon
+    element: Dark
+    shortEffects: AP cost -40% and symbology cast time -25% (Self/20s)
+    effects: 
+      - desc: AP cost -40%
+        duration: 20
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 40
+      - desc: Symbology cast time -25%
+        duration: 20
+        meta:
+          priority: 1
+          buff: Cast Time Reduction
+          buffValue: 25
+    power: INT x 3500%
+    maxHits: 15
 
