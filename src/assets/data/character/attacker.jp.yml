@@ -3066,7 +3066,7 @@
       highlight: true
 
   rush:
-    name: "Bloody mary"
+    name: "Bloody Mary"
     picture: Bloody_Mary
     effects: 
       - desc: Recovers 15% HP every 5 seconds 
@@ -3271,7 +3271,7 @@
             buffCondition: Hit Count > 250
             buffValue: 60
     - name: "Basshen's Fox"
-      shortEffects: AP cost -10%/+20%/+40% when hitcount is >100/>200/>400 and battle skills deal an additional hit worth 5% of damage (All Party)
+      shortEffects: AP cost -10%/+20%/+40% when hitcount is >100/>200/>400, and an additional hit that deals 5% of damage when using skills (All Party)
       effects: 
         - desc: AP cost -10% when hitcount is >100
           all: true
@@ -3300,7 +3300,7 @@
       effects: 
         - desc: Evasion possible during air attacks
           all: false
-        - desc: Recovers 100% HP upon successful evasion of attacks
+        - desc: Recovers 100% HP on perfect dodge
           all: false
     - name: "Red Summoning Technique"
       shortEffects: ATK/INT/DEF/HIT/GRD +20% when hitcount is >100
@@ -3527,7 +3527,7 @@
       effects: 
         - desc: Evasion AP cost -50%
           all: false
-        - desc: Enables air dodge
+        - desc: Evasion possible during air attacks
           all: false
         - desc: AP cost -30% on perfect dodge (10s)
           all: false
@@ -4022,7 +4022,7 @@
       *Avoid Shotgun against smaller enemies due to size dependency*
 
 
-- name: Lenneth (Awakened)
+- name: Lenneth Valkyrie (Awakened)
   cat: jp
   rating: 4
   picture: Lenneth
@@ -4049,44 +4049,50 @@
             priority: 1
             buff: ATK
             buffValue: 30
-        - desc: Covered ATK Damaged +15% (Overall Enemy)
+        - desc: ATK damage taken +15% when inflicted with silence
+          all: Enemies
+          meta:
+            priority: 1
+            buff: Enemy ATK Damage Taken
+            buffValue: 15   
     - name: "The Dusk of Ragnarok"
       effects: 
-        - desc: Rush Damage +20%
+        - desc: Rush combo damage +20%
           all: true
           meta:
             priority: 1
             buff: Rush Damage
             buffValue: 20
-        - desc: Invalid Seal (total / 120 secs)
+        - desc: Nullifies silence for 120 seconds
+          all: true
     - name: "Platina's Heart"
       effects: 
-        - desc: All attacks have +15% chance of adding silence
+        - desc: All attacks have +15% chance to inflict silence
           meta:
             priority: 4
             buff: Silence Attack Chance
             buffValue: 15
-    - name: "Glitter in Ax"
+    - name: "Armor Shining in the Azure Heavens"
       effects: 
         - desc: Nullifies charge assault critical damage penalty.
         - desc: Evasion possible during air attacks
-    - name: "Sound Echoing Voice"
+    - name: "A Dignified and Resounding Voice"
       effects: 
-        - desc: AP Cost -50% when skill chain is 3 or more
+        - desc: AP cost -50% when skill chain is >3
           meta:
             priority: 4
             buff: AP Cost Reduction
             buffCondition: Skill Chain 3+
             buffValue: 50
-    - name: "British Invitation"
-      shortEffects: ATK +30% and HP +10%
+    - name: "Beckoning Hands of Slain War Heroes"
+      shortEffects: ATK +15% and DEF +10%
       effects: 
-        - desc: ATK +30%
+        - desc: ATK +15%
           meta:
             priority: 4
             buff: ATK
-            buffValue: 30
-        - desc: HP +10%
+            buffValue: 15
+        - desc: DEF +10%
           meta:
             priority: 4
             buff: HP
@@ -4104,7 +4110,7 @@
       power: ATK x 550%
       ap: 35
       maxHits: 3
-    - name: "Heaven and Hell"
+    - name: "Heaven & Hell"
       picture: Air_Slash_I
       power: ATK x 240%
       ap: 22
@@ -4114,7 +4120,7 @@
       power: ATK x 910%
       ap: 36
       maxHits: 5
-    - name: "Crescent Mirage"
+    - name: "Leading Slash"
       picture: Crescent_Mirage
       power: ATK x 200%
       ap: 18
@@ -4123,6 +4129,7 @@
   rush:
     name: "Nibelung Valesti"
     picture: Nibelung_Valesti_Lenneth
+    shortEffects: DEF -30% (All Enemies/20s) and high probability of inflicting silence
     effects: 
       - desc: DEF -30%
         all: Enemies
@@ -4248,7 +4255,7 @@
             buff: AP Cost Reduction
             buffCondition: Hit Count > 300
             buffValue: 50
-        - desc: Critial hit chance +50% when hitcount is >400
+        - desc: Critical hit chance +50% when hitcount is >400
           all: false
           meta:
             priority: 3
@@ -4257,7 +4264,7 @@
             buffValue: 50
     - name: "Swordsman of Ice and Flame"
       effects: 
-        - desc: Additional hit that deals 5% damage when using skills
+        - desc: Additional hit that deals 5% of damage when using skills
 
   skills:
     - name: "Piercing Blades"
@@ -4576,7 +4583,7 @@
             buff: Stun Rate
             buffValue: 20
     - name: "Sake-lover's Lineage"
-      shortEffects: ATK Damage +50%/+100% skill chain is >3/>5, and evasion possible during attacks
+      shortEffects: ATK Damage +50%/+100% skill chain is >3/>5, and evasion possible during air attacks
       effects: 
         - desc: ATK damage dealt +50% when skill chain is >3
           meta:
@@ -4722,7 +4729,7 @@
         - desc: Recovers 15% of max HP every 3 seconds during charge assault standby
     - name: "Will of Loyalty"
       effects: 
-        - desc: 95% chance of surviving a lethal attack at 30% of max HP or more
+        - desc: 95% chance of surviving a lethal attack when at 30% of max HP or more
         - desc: No flinching when taking damage of 10% of max HP or less
         - desc: DEF -30%
           all: Enemies
@@ -4798,7 +4805,7 @@
     grd: 833
 
   talents:
-    - name: "All-Mighty"
+    - name: "Almighty"
       effects: 
         - desc: ATK +35%
           all: true
@@ -4813,7 +4820,7 @@
             buff: ATK 
             buffCondition: Attackers
             buffValue: 55
-    - name: "Charismatic of SRF"
+    - name: "SRF Charisma"
       effects: 
         - desc: Critical hit chance +40% when behind target 
           all: true
@@ -4822,7 +4829,7 @@
             buff: Crit Rate
             buffCondition: Behind Target
             buffValue: 40
-    - name: "Result of Practice"
+    - name: "Fruits of Training"
       shortEffects: Damage dealt +150%/+300% by Talon Pierce and Tri Zapper when skill chain is >3/>5
       effects: 
         - desc: Damage dealt +150% by Talon Pierce and Tri Zapper when skill chain is >3
@@ -5063,3 +5070,201 @@
           buffValue: 50
     power: ATK x 3500%
     maxHits: 10
+    
+  
+- name: Chisato Madison
+  cat: jp
+  rating: 0
+  picture: Chisato
+  weapon: knuckle
+  star: 5
+
+  stats:
+    hp: 13965
+    atk: 2350
+    int: 1432
+    def: 1733
+    hit: 1064
+    grd: 756
+
+  talents:
+    - name: "Unshakeable Journalism"
+      effects: 
+        - desc: Nullifies paralysis for 120 seconds
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 30
+        - desc: ATK +15%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 15
+    - name: "Persistent Reporter Spirit"
+      effects: 
+        - desc: Normal attack AP recovery +100% when HP is 100%
+          all: true
+          meta:
+            priority: 1
+            buff: Normal Attack AP Recovery
+            buffCondition: HP is 100
+            buffValue: 100
+    - name: "Nede's Hope"
+      effects: 
+        - desc: AP cost -40% when skill chain is >3
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain >3
+            buffValue: 40
+    - name: "Polished Self-Defense"
+      effects: 
+        - desc: Rush gauge fills slightly for all allies when using Rising Dragon
+
+  skills:
+    - name: "Twister"
+      picture: Roaring_Cartwheel
+      power: ATK x 410%
+      ap: 32
+      maxHits: 5
+    - name: "Crescent Locus"
+      picture: Crescent_Locus
+      power: ATK x 150%
+      ap: 17
+      maxHits: 4
+    - name: "Palm of Destruction"
+      picture: Palm_of_Destruction
+      power: ATK x 210%
+      ap: 18
+      maxHits: 1
+    - name: "Rising Dragon"
+      picture: Rising_Dragon
+      power: ATK x 620%
+      ap: 54
+      maxHits: 7
+      
+  rush:
+    name: "Preparation"
+    picture: Preparation_Chisato
+    effects: 
+      - desc: Damage dealt +40%
+        all: true
+        duration: 20
+        meta:
+          priority: 3
+          buff: ATK Damage
+          buffValue: 40
+    power: ATK x 3500%
+    maxHits: 10
+  
+  
+- name: Roddick Farrence (Summer)
+  cat: jp
+  rating: 8
+  picture: Beach_Ratix
+  weapon: bns
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 17441
+    atk: 3276
+    int: 1510
+    def: 1983
+    hit: 1127
+    grd: 826
+
+  talents:
+    - name: "Mischievous Smile"
+      effects: 
+        - desc: ATK +20%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK Damage
+            buffValue: 20
+    - name: "Tailed Swimmer"
+      shortEffects: Stun rate +80% (All Attackers/Defenders) and stun rate +40% (All Sharpshooters)
+      effects: 
+        - desc: Stun rate +80%
+          all: Attackers
+          meta:
+            priority: 1
+            buff: Stun Rate
+            buffRole: attacker
+            buffValue: 80
+        - desc: Stun rate +80%
+          all: Defenders
+          meta:
+            priority: 1
+            buff: Stun Rate
+            buffRole: defender
+            buffValue: 80
+        - desc: Stun rate +40%
+          all: Sharpshooters
+          meta:
+            priority: 1
+            buff: Stun Rate
+            buffRole: sharpshooter
+            buffValue: 40
+    - name: "Heraldry Parka"
+      effects: 
+        - desc: AP cost -15% when Summer Roddick is close to target
+          all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Summer Roddick is close to target
+            buffValue: 15
+    - name: "Hibiscus Boy"
+      shortEffects: ATK 20% and HP +10%
+      effects: 
+        - desc: ATK +20%
+          all: false
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 20
+        - desc: HP +10%
+          all: false
+  
+  skills:
+    - name: "Air Slash (Dawn)"
+      picture: Air_Slash_II
+      power: ATK x 420%
+      ap: 20
+      maxHits: 2
+    - name: "Mirror Slice (Dawn)"
+      picture: Mirror_Blade_II
+      power: ATK x 740%
+      ap: 26
+      maxHits: 5
+    - name: "Swift Pierce (Dawn)"
+      picture: Existence_Trail
+      power: ATK x 390%
+      ap: 16
+      maxHits: 2
+    - name: "Seven Stars Double Slash"
+      picture: Seven_Star_Double_Slash
+      power: ATK x 760%
+      ap: 28
+      maxHits: 8
+      
+  rush:
+    name: "Bluewyrm Thundersurge"
+    picture: Bluewyrm_Thundersurge_Summer_Ratix
+    element: Ice
+    effects: 
+      - desc: ATK +80%
+        all: false
+        duration: 20
+        meta:
+          priority: 1
+          buff: ATK
+          buffValue: 80
+    power: ATK x 4500%
+    maxHits: 10
+  
