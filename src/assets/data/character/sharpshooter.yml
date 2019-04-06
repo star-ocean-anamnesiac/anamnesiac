@@ -80,7 +80,7 @@
   rush:
     name: "YoRHa Hacking Attack: Zero"
     picture: YoHRa_Hacking_Zero_9S
-    shortEffects: Recovers 50% of max HP, and ATK damage dealt +30% (All Party/20s)
+    shortEffects: Recovers 50% of max HP and ATK damage dealt +30% (All Party/20s)
     effects: 
       - desc: Recovers 50% of max HP
         all: true
@@ -191,7 +191,7 @@
   rush:
     name: "Energy Burst Barrage"
     picture: Energy_Burst_Barrage_Maria
-    shortEffects: Removes buffs from enemies, and critical hit chance +40% (All Party/20s)
+    shortEffects: Removes buffs (All Enemies) and critical hit chance +40% (All Party/20s)
     effects: 
       - desc: Removes buffs
         all: Enemies
@@ -636,7 +636,7 @@
         - desc: Nullifies status ailments for 180 seconds
     - name: "Descendant of Muah"
       effects: 
-        - desc: 80% chance of surviving a lethal attack at 10% of max HP or more
+        - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
 
   skills:
     - name: "Chaotic Blossoms"
@@ -1065,7 +1065,7 @@
   rush:
     name: "Thousand-Beast Demon"
     picture: Millenium_Imprisoned_Devil_HW_Victor
-    shortEffects: Recovers 40% of max HP, and single target damage +40% (All Party/20s)
+    shortEffects: Recovers 40% of max HP and single target damage +40% (All Party/20s)
     effects: 
       - desc: Recovers 40% of max HP
         all: true
@@ -1633,7 +1633,7 @@
         - desc: Evasion speed & distance +100%
     - name: "Bloodstained Fangs II"
       effects: 
-        - desc: Absorbs 10% of normal attack damage as HP when hitcount is >100
+        - desc: Absorbs 10% of damage dealt by normal attacks as HP when hitcount is >100
           all: true
     - name: "Quark Carrier"
       effects: 
@@ -1697,7 +1697,7 @@
   rush:
     name: "Energy Burst Barrage"
     picture: Energy_Burst_Barrage_Maria
-    shortEffects: Removes all buffs from enemies, and critical hit chance +40% (All Party/20s)
+    shortEffects: Removes buffs (All Enemies) and critical hit chance +40% (All Party/20s)
     effects: 
       - desc: Removes buffs
         all: Enemies
@@ -1985,7 +1985,7 @@
             buff: ATK
             buffCondition: Charge Assault
             buffValue: 30
-     - name: "Well-Concealed Dream"
+     - name: "Well-Concealed Secrets"
        effects: 
         - desc: No flinching when taking damage of 10% of max HP or less
         - desc: AP cost -10%
@@ -2739,9 +2739,9 @@
 
   talents:
     - name: "A Child of Science"
-      shortEffects: ATK -5% inflicted by Magnetic Field (All Enemies/10s)
+      shortEffects: ATK -5% when hit by Magnetic Field (All Enemies/10s)
       effects: 
-        - desc: ATK -5% inflicted by Magnetic Field
+        - desc: ATK -5% when hit by Magnetic Field
           duration: 10
           all: Enemies
           meta:
@@ -2749,9 +2749,9 @@
             buff: Enemy ATK Reduction
             buffValue: 5
     - name: "Upgraded Gun"
-      shortEffects: Damage taken +15% inflicted by Splitshot and Gravity Slug (All Enemies/8s)
+      shortEffects: Damage taken +15% when hit by Splitshot and Gravity Slug (All Enemies/8s)
       effects: 
-        - desc: Damage taken +15% inflicted by Splitshot and Gravity Slug
+        - desc: Damage taken +15% when hit by Splitshot and Gravity Slug
           duration: 8
           all: Enemies
           meta:
@@ -2879,7 +2879,7 @@
     grd: 931
 
   talents:
-    - name: "Awakening on Muah"
+    - name: "Moore's Awakening II"
       effects: 
         - desc: Damage dealt +30%
           all: true
@@ -2888,7 +2888,7 @@
             buff: Damage
             buffValue: 30
         - desc: Taunt +1
-    - name: "Dawn of Earth Federation"
+    - name: "Dawn of the Terran Alliance II"
       effects: 
         - desc: Damage dealt +45% when HP is 100%
           all: true
@@ -2907,7 +2907,7 @@
             buffValue: 15
         - desc: No flinching when taking damage of 10% of max HP or less
           all: true
-    - name: "Determined Resolve"
+    - name: "Tenaciousness"
       effects:
         - desc: HP +30%
   
@@ -2922,12 +2922,12 @@
       power: ATK x 200%
       ap: 20
       maxHits: 1
-    - name: "Shockwave"
+    - name: "Sanguine Moon"
       picture: Hunter's_Moon
       power: ATK x 210%
       ap: 21
       maxHits: 7
-    - name: "Raptor Bullet"
+    - name: "Raptorshot"
       picture: Tri_Zapper
       element: Lightning
       power: ATK x 350%
@@ -2935,7 +2935,7 @@
       maxHits: 9
       
   rush:
-    name: "Judgment Shot"
+    name: "Retribution"
     picture: Judgement_Shot_Federation_Edge
     effects: 
       - desc: ATK damage +40%
