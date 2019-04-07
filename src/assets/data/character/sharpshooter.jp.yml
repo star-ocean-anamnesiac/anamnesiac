@@ -982,29 +982,29 @@
 
   talents:
     - name: "Divine Arrow Burst"
-      shortEffects: Damage dealt +30%/35%/40%/45% when hitcount is 0/100/150/200
+      shortEffects: Damage dealt +30%, and +35%/+40%/+45% when hitcount is >100/>150/>200 (All Party)
       effects: 
-        - desc: Damage +30%
+        - desc: Damage dealt +30%
           all: true
           meta:
             priority: 1
             buff: Damage
             buffValue: 30 
-        - desc: Damage +35% at when hitcount is at 100 or more
+        - desc: Damage dealt +35% when hitcount is >100
           all: true
           meta:
             priority: 1
             buff: Damage
             buffCondition: Hit Count > 100
             buffValue: 35
-        - desc: Damage +40% at when hitcount is at 150 or more
+        - desc: Damage dealt +40% when hitcount is >150
           all: true
           meta:
             priority: 1
             buff: Damage
             buffCondition: Hit Count > 150
             buffValue: 40  
-        - desc: Damage +45% at when hitcount is at 200 or more
+        - desc: Damage dealt +45% when hitcount is >200
           all: true
           meta:
             priority: 1
@@ -1025,29 +1025,31 @@
           all: true
     - name: "Yggdrasil's Fortune"
       effects: 
-        - desc: Recovers 5% HP every 5 seconds
-    - name: "Goddess to a Person"
-      shortEffects: AP cost -10%/20%/30% when hitcount is 50/100/150
+        - desc: Recovers 5% of max HP every 5 seconds
+          all: true
+    - name: "A Goddess Close to Mortals"
+      shortEffects: AP cost -10%/-20%/-30% when hitcount is >50/>100/>150
       effects:
-        - desc: AP cost -10% at when hitcount is at 50 or more
+        - desc: AP cost -10% when hitcount is >50
           meta:
             priority: 4
             buff: AP Cost Reduction
             buffCondition: Hit Count > 50
             buffValue: 10
-        - desc: AP cost -20% at when hitcount is at 50 or more
+        - desc: AP cost -20% when hitcount is >100
           meta:
             priority: 4
             buff: AP Cost Reduction
             buffCondition: Hit Count > 100
             buffValue: 20
-        - desc: AP cost -30% at when hitcount is at 50 or more
+        - desc: AP cost -30% when hitcount is >150
           meta:
             priority: 4
             buff: AP Cost Reduction
             buffCondition: Hit Count > 150
             buffValue: 30
     - name: "Object Leading"
+      shortEffects: ATK +15% and HP +15%
       effects: 
         - desc: ATK +15%
           meta:
@@ -1090,7 +1092,7 @@
     name: "Nibelung Valesti"
     picture: Nibelung_Valesti_Silmeria
     effects: 
-      - desc: Critical Rate +30%
+      - desc: Critical hit chance +30%
         all: false
         duration: 60
         meta:
@@ -1128,6 +1130,7 @@
       *Normal > Restrict > Wing > Wave^n - Rush*
       *Normal > Restrict > Wing > Restrict^n - DPS/Rush vs large enemies (9+ hits per Restrict)*
 
+
 - name: Verda Kleiman (Awakened)
   cat: jp
   rating: 0
@@ -1147,67 +1150,63 @@
     grd: 931
 
   talents:
-    - name: "Child of Science"
-      shortEffects: ATK/INT/DEF -15% inflicted by Magnetic Field (10 seconds)
+    - name: "A Child of Science"
+      shortEffects: ATK/INT/DEF -15% when hit by Magnetic Field (All Enemies/10s)
       effects: 
-        - desc: ATK -15% inflicted by Magnetic Field (10 seconds)
+        - desc: ATK -15% when hit by Magnetic Field (10 seconds)
           all: Enemies
           meta:
             priority: 4
             buff: Enemy ATK Reduction
             buffValue: 15
-        - desc: INT -15% inflicted by Magnetic Field (10 seconds)
+        - desc: INT -15% inflicted by Magnetic Field (1s)
           all: Enemies
           meta:
             priority: 4
             buff: Enemy INT Reduction
             buffValue: 15
-        - desc: DEF -15% inflicted by Magnetic Field (10 seconds)
+        - desc: DEF -15% when hit by Magnetic Field (10s)
           all: Enemies
           meta:
             priority: 4
             buff: Enemy DEF Reduction
             buffValue: 15
-    - name: "Modified Gun"
+    - name: "Upgraded Gun"
       effects: 
-        - desc: Damage taken +20% inflicted by Break Horn and Break Bullet (8 seconds)
+        - desc: Damage taken +20% when hit Break Horn and Break Bullet (8s)
           all: Enemies
           meta:
             priority: 4
             buff: Enemy Damage Taken
             buffValue: 20
-    - name: "Family to Protect"
-      shortEffects: Damage +40% (All) & 80% chance of surviving a lethal attack at 10% HP or more (Close Range Weapons)
+    - name: "Cherished Family"
       effects:
-        - desc: Damage +40%
+        - desc: Damage dealt +40%
           all: true
           meta:
             priority: 1
             buff: Damage
             buffValue: 40
-        - desc: 80% chance of surviving a lethal attack at 10% HP or more
+        - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
           all: Close Range Weapons
-    - name: "Commitment to Grandfather's Wishes"
+    - name: "Grandfather's Will"
       effects: 
-        - desc: Seal immunity (180 seconds)
+        - desc: Nullifies silence for 180 seconds
           all: true
-        - desc: Nullify rush gauge reduction fields
+        - desc: Nullifies rush gauge reduction fields
           all: true
-    - name: "Tears of the Tears"
-      shortEffects: Nullifies charge assault critical damage penalty, No flinching when taking damage when using charge assault, & AP cost -20%
+    - name: "Savior of Tears"
       effects: 
         - desc: Nullifies charge assault critical damage penalty
-          all: true
-        - desc: AP cost -20%
-          all: true
+        - desc: AP cost -20
           meta:
             priority: 4
             buff: AP Cost Reduction
             buffValue: 20
-        - desc: No flinching when taking damage when using charge assault
+        - desc: No flinching during charge assault
           all: false
     - name: "Star of Hope"
-      shortEffects: ATK +15% & HP +15%
+      shortEffects: ATK +15% and HP +15%
       effects:
         - desc: ATK +15%
           meta:
@@ -1231,9 +1230,9 @@
       power: ATK x 310%
       ap: 19
       maxHits: 8
-    - name: "Benishigure (Chain)"
+    - name: "Continuous Crimson Squall"
       picture: Crimson_Squall_I
-      power: ATK x 1340%
+      power: ATK x 340%
       ap: 18
       maxHits: 9
     - name: "Break Bullet"
@@ -1246,9 +1245,9 @@
   rush:
     name: "Rocket Slippers"
     picture: Rocket_Slippers_Verda
-    shortEffects: ATK Damage +30% and movement speed +30% (All Party, 20 seconds)
+    shortEffects: ATK damage dealt +30% and movement speed +30% (All Party/20s)
     effects:
-      - desc: ATK damage +30%
+      - desc: ATK damage dealt +30%
         duration: 20
         all: true
         meta:
@@ -1282,14 +1281,14 @@
   talents:
     - name: "Armory Contest Winner"
       effects: 
-        - desc: No flinching when taking damage of 15% HP or less
+        - desc: No flinching when taking damage of 15% of max HP or less
           all: true
         - desc: Taunt +2
           all: false
     - name: "Cultivated Victories"
-      shortEffects: Damage +40% and ATK/INT damage taken -20% when targeted by enemy (All Party)
+      shortEffects: Damage dealt +40% and ATK/INT damage taken -20% when targeted by enemy (All Party)
       effects: 
-        - desc: Damage +40% when targeted by enemy
+        - desc: Damage dealt +40% when targeted by enemy
           all: true
           meta:
             priority: 1
@@ -1311,7 +1310,7 @@
             buffCondition: When holding aggro
             buffValue: 20
     - name: "Memento Ring"
-      shortEffects: Damage dealt +50% and critical chance +20% when not targeted by enemy (All Party)
+      shortEffects: Damage dealt +50% and critical hit chance +20% when not targeted by enemy (All Party)
       effects: 
         - desc: Damage dealt +50% when not targeted by enemy
           all: true
@@ -1320,7 +1319,7 @@
             buff: Damage
             buffCondition: Not holding aggro
             buffValue: 50
-        - desc: Critical chance +20% when not targeted by enemy
+        - desc: Critical hit chance +20% when not targeted by enemy
           all: true
           meta:
             priority: 1
@@ -1369,7 +1368,7 @@
     - name: "Phoenix Drive"
       picture: Phoenix_Drive
       element: Fire
-      power: ATK x 490%
+      power: ATK x 520%
       ap: 20
       maxHits: 2
 
@@ -1439,7 +1438,7 @@
             buffValue: 10
     - name: "Loki's Soul"
       effects:
-        - desc: AP cost -30% when skill chain is 3 or more
+        - desc: AP cost -30% when skill chain is >3
           meta:
             priority: 1
             buff: AP Cost Reduction
@@ -1447,7 +1446,7 @@
             buffValue: 30
     - name: "Pure White Feather Decoration"
       effects: 
-        - desc: Damage taken +30% inflicted by Killing Thorn (8s)
+        - desc: Damage taken +30% when hit by Killing Thorn (8s)
           all: Enemies 
           meta:
             priority: 1
@@ -1518,9 +1517,9 @@
             buff: Damage
             buffValue: 30
         - desc: Taunt +1
-    - name: "Dawn of Earth Federation"
+    - name: "Dawn of the Terran Alliance"
       effects: 
-        - desc: Damage dealt +45% when at 100% HP
+        - desc: Damage dealt +45% when HP is 100%
           all: true
           meta:
             priority: 1
@@ -1535,7 +1534,7 @@
             priority: 3
             buff: Damage Taken Reduction
             buffValue: 15
-        - desc: No flinching when taking damage of 10% HP or less
+        - desc: No flinching when taking damage of 10% of max HP or less
           all: true
     - name: "Determined Resolve"
       effects:
@@ -1552,7 +1551,7 @@
       power: ATK x 200%
       ap: 20
       maxHits: 1
-    - name: "Shockwave"
+    - name: "Sanguine Moon"
       picture: Hunter's_Moon
       power: ATK x 210%
       ap: 21
@@ -1568,7 +1567,7 @@
     name: "Judgment Shot"
     picture: Judgement_Shot_Federation_Edge
     effects: 
-      - desc: ATK damage +40%
+      - desc: ATK damage dealt +40%
         all: true
         duration: 20
         meta:
@@ -1577,6 +1576,7 @@
           buffValue: 40
     power: ATK x 3500%
     maxHits: 11
+
 
 - name: Leanne
   cat: jp
@@ -1598,7 +1598,7 @@
   talents:
     - name: "Smile of Miracles"
       effects: 
-        - desc: Damage +35%
+        - desc: Damage dealt +35%
           all: true
           meta:
             priority: 1
@@ -1606,7 +1606,7 @@
             buffValue: 35
     - name: "Multi Shooting"
       effects: 
-        - desc: ATK damage +15% at long range
+        - desc: ATK damage dealt +15% at long range
           all: true
           meta:
             priority: 1
@@ -1624,7 +1624,7 @@
             buffValue: 15
     - name: "Farewell to the Past"
       effects:
-        - desc: 80% Chance of Surviving a Lethal Attack at 10% HP or more
+        - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
 
   skills:
     - name: "Stardust Aim"
@@ -1651,9 +1651,9 @@
   rush:
     name: "Invincible Over"
     picture: Invincible_Over_Reanbell
-    shortEffects: Damage +60% and critical hit chance +30% (All/20s)
+    shortEffects: Damage dealt +60% and critical hit chance +30% (All Party/20s)
     effects: 
-      - desc: Damage +60%
+      - desc: Damage dealt +60%
         duration: 20
         all: true
         meta:
@@ -1669,6 +1669,7 @@
           buffValue: 30
     power: ATK x 3500%
     maxHits: 17
+
 
 - name: Aya
   cat: jp
@@ -1690,23 +1691,23 @@
   talents:
     - name: "Sureshot Bow"
       effects: 
-        - desc: Damage +30%
+        - desc: Damage dealt +30%
           all: true
           meta:
             priority: 1
             buff: Damage
             buffValue: 30
     - name: "Stubborn Disposition"
-      shortEffects: Damage +40%/55% when hitcount is >100/200 (All)
+      shortEffects: Damage dealt +40%/_55% when hitcount is >100/>200 (All Party)
       effects: 
-        - desc: Damage +40% when hitcount is >100
+        - desc: Damage dealt +40% when hitcount is >100
           all: true
           meta:
             priority: 1
             buff: Damage
             buffCondition: Hit Count > 100
             buffValue: 40
-        - desc: Damage +55% when hitcount is >200
+        - desc: Damage dealt +55% when hitcount is >200
           all: true
           meta:
             priority: 1
@@ -1718,15 +1719,15 @@
         - desc: Hitcount timer +2 seconds
           all: true
     - name: "Abilities Unbefitting of a Princess"
-      shortEffects: AP cost -20% when skill chain >3 (Self) and ATK damage +30% (Self)
+      shortEffects: AP cost -20% when skill chain is >3 and ATK damage dealt +30%
       effects:
-        - desc: AP cost -20% when skill chain >3
+        - desc: AP cost -20% when skill chain is >3
           meta:
             priority: 1
             buff: AP Cost Reduction
             buffCondition: Skill Chain 3+
             buffValue: 20
-        - desc: ATK damage +30%
+        - desc: ATK damage dealt +30%
           meta:
             priority: 1
             buff: ATK Damage
@@ -1759,7 +1760,7 @@
     name: "Simorgh Za"
     picture: Simorgh_Zai_Aya
     element: Fire
-    shortEffects: Single target damage +40% (All/20s)
+    shortEffects: Single target damage +40% (All Party/20s)
     effects: 
       - desc: Single target damage +40%
         duration: 20
@@ -1770,6 +1771,7 @@
           buffValue: 40
     power: ATK x 3500%
     maxHits: 2
+
 
 - name: Phia Melle (Crimson Grace)
   cat: jp
@@ -1789,9 +1791,8 @@
 
   talents:
     - name: "Oath Hidden in War Armor"
-      shortEffects: Critical hit rate +20% & critical damage +20% (All)
       effects: 
-        - desc: Critical hit rate +20%
+        - desc: Critical hit chance +20%
           all: true
           meta:
             priority: 1
@@ -1804,16 +1805,16 @@
             buff: Crit Damage
             buffValue: 30
     - name: "Never Ending Chivalry"
-      shortEffects: Critical hit rate +30%/+40% when hitcount is >100/>200 (All) and critical damage +30%/+40% when hitcount is >100/>200 (All)
+      shortEffects: Critical hit chance and critical damage +30%/+40% when hitcount is >100/>200 (All Party)
       effects: 
-        - desc: Critical hit rate +30% when hitcount is >100/
+        - desc: Critical hit chance +30% when hitcount is >100
           all: true
           meta:
             priority: 1
             buff: Crit Rate
             buffCondition: Hit Count > 100
             buffValue: 30
-        - desc: Critical hit rate +40% when hitcount is >200
+        - desc: Critical hit chance +40% when hitcount is >200
           all: true
           meta:
             priority: 1
@@ -1835,7 +1836,6 @@
             buffCondition: Hit Count > 200
             buffValue: 40
     - name: "Astral's Star"
-      shortEffects: Evasion distance +100% and evasion rate +100% (Self)
       effects: 
         - desc: Evasion distance +100%
         - desc: Evasion rate +100%
@@ -1863,6 +1863,7 @@
       maxHits: 9
     - name: "Shadow Lamp"
       picture: Binding_Distortion
+      element: Dark
       power: ATK x 240%
       ap: 22
       maxHits: 5
@@ -1881,7 +1882,7 @@
   rush:
     name: "Murakumo"
     picture: Murakumo_Crimson_Grace_Phia
-    shortEffects: ATK damage dealt +30% (All/20s)
+    shortEffects: ATK damage dealt +30% (All Party/20s)
     effects: 
       - desc: ATK damage dealt +30%
         duration: 20
