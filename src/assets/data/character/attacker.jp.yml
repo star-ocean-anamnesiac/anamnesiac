@@ -5297,12 +5297,14 @@
     - name: "Sincere Heart"
       effects: 
         - desc: Single target damage +30% at short range
+          all: true
           meta:
             priority: 4
             buff: Single Target Damage
             buffCondition: Short Range
             buffValue: 30
         - desc: AP cost -15% at long range
+          all: true
           meta:
             priority: 4
             buff: AP Cost Reduction
@@ -5375,4 +5377,3 @@
         all: true
     power: ATK x 4500%
     maxHits: 14
-    
