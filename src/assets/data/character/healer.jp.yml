@@ -344,7 +344,7 @@
           meta:
             priority: 4
             buff: Cast Time Reduction
-            buffValue: 00
+            buffValue: 90
     - name: "Two Mothers' Blessing"
       effects: 
         - desc: AP cost -15%
