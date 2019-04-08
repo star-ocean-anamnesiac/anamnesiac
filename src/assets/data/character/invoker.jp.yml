@@ -3000,11 +3000,17 @@
   talents:
     - name: "Shining Arrow"
       effects: 
-        - desc: ATK/INT damage +35%
+        - desc: ATK damage +35%
           all: true
           meta:
             priority: 4
-            buff: ATK, INT
+            buff: ATK
+            buffValue: 35
+        - desc: INT damage +35%
+          all: true
+          meta:
+            priority: 4
+            buff: INT
             buffValue: 35
         - desc: AP cost -30% when skill chain is >3
           meta:
@@ -3021,12 +3027,20 @@
             buffValue: 60
     - name: "Role Model"
       effects: 
-        - desc: ATK/Int damage taken +15% after using Shadow Lamp
+        - desc: ATK damage taken +15% after using Shadow Lamp
           all: Enemies
           duration: 10
           meta:
             priority: 4
-            buff: Enemy ATK Damage Taken, Enemy INT Damage Taken
+            buff: Enemy ATK Damage Taken
+            buffCondition: after using Shadow Lamp
+            buffValue: 15
+        - desc: INT damage taken +15% after using Shadow Lamp
+          all: Enemies
+          duration: 10
+          meta:
+            priority: 4
+            buff: Enemy INT Damage Taken
             buffCondition: after using Shadow Lamp
             buffValue: 15
     - name: "Pitch Black Outfit"
