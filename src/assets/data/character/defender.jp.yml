@@ -17,7 +17,7 @@
     grd: 1043
 
   talents:
-    - name: "Vortex of Hatred"
+    - name: "Swirling Animus"
       effects: 
         - desc: HP +20%
           all: true
@@ -25,13 +25,14 @@
             priority: 1
             buff: HP
             buffValue: 20
-        - desc: Super Armor of 20% max HP or less
+        - desc: No flinching when taking damage of 20% of max HP or less
           all: true
     - name: "Dark Impulse"
+      shortEffects: Recovers 100% HP for self and 10 AP for all allies on perfect dodge
       effects: 
         - desc: Recovers 100% AP on perfect dodge
-        - desc: Recover 10 AP for all allies on perfect dodge
-    - name: "Blade of Inorganic"
+        - desc: Recovers 10 AP for all allies on perfect dodge
+    - name: "Inorganic Blade"
       effects: 
         - desc: Single target damage +20%
           all: true
@@ -47,6 +48,7 @@
             buffCondition: HP is 100%
             buffValue: 40
     - name: "Beautiful World"
+      shortEffects: ATK +20% and DEF +20%
       effects: 
         - desc: ATK +20%
           meta:
@@ -84,14 +86,15 @@
   rush:
     name: "YoRHa Arms: One Hundred"
     picture: YoHRa_Arms_One_Hundred_A2
+    shortEffects: Single target damage +60% and recovers 15% of max HP every 3 seconds
     effects: 
-      - desc: Single target damage +50%
+      - desc: Single target damage +60%
         duration: 20
         meta:
           priority: 4
           buff: Single Target Damage
-          buffValue: 50
-      - desc: Recover 15% HP every 3 seconds
+          buffValue: 60
+      - desc: Recovers 15% of max HP every 3 seconds
         duration: 20
     power: ATK x 4500%
     maxHits: 25
@@ -148,7 +151,7 @@
     grd: 1036
 
   talents:
-    - name: "Expel's Swordsmaster II"
+    - name: "Expel's Swordsmaster"
       effects: 
         - desc: DEF +25%
           all: true
@@ -162,7 +165,8 @@
             priority: 1
             buff: ATK Damage Taken Reduction
             buffValue: 25
-    - name: "Ruthless Swordsmanship II"
+    - name: "Ruthless Swordsmanship"
+      shortEffects: ATK +50% and DEF +20%
       effects: 
         - desc: ATK +50%
           meta:
@@ -174,20 +178,21 @@
             priority: 4
             buff: DEF
             buffValue: 20
-    - name: "Vow to Cecille II"
+    - name: "Vow to Cecille"
       effects: 
-        - desc: No flinching when taking damage of 30% HP or less
-          all: Close Range
+        - desc: No flinching when taking damage of 30% of max HP or less
+          all: Short Range Weapons
     - name: "Equal Footing"
+      shortEffects: Damage dealt +40% (All Attackers/Defenders)
       effects: 
-        - desc: Damage +40%
+        - desc: Damage dealt +40%
           all: Attacker
           meta:
             priority: 1
             buff: Damage
             buffRole: attacker
             buffValue: 40
-        - desc: Damage +40%
+        - desc: Damage dealt +40%
           all: Defender
           meta:
             priority: 1
@@ -196,10 +201,10 @@
             buffValue: 40
     - name: "The Fight For Supreme Power"
       effects: 
-        - desc: Taunt+3
+        - desc: Taunt +3
     - name: "A Mercenary's Strength"
       effects: 
-        - desc: Restore 5% HP every 1 second during CA standby.
+        - desc: Recovers 5% HP every 1 second during charge assault standby
 
   skills:
     - name: "Annihilating Air Slash"
@@ -214,18 +219,18 @@
       ap: 20
       maxHits: 2
       highlight: true
-    - name: "Diabolic Edge"
-      picture: Diabolic_Whirl
-      power: ATK x 370%
-      ap: 29
-      maxHits: 2
     - name: "Dragon Roar"
       picture: Dragon_Roar
       power: ATK x 340%
       ap: 29
       maxHits: 2
       element: Dark
-      highlight: true
+      highlight: true      
+    - name: "Diabolic Whirl"
+      picture: Diabolic_Whirl
+      power: ATK x 370%
+      ap: 29
+      maxHits: 5
     - name: "Double Slash of Fury"
       picture: Unbridled_Double_Slash
       power: ATK x 440%
@@ -233,7 +238,7 @@
       maxHits: 4
       
   rush:
-    name: "Illusion"
+    name: "Deadly Illusion"
     picture: Deadly_Illusion_Dias
     effects: 
       - desc: AP cost -50%
@@ -289,6 +294,7 @@
       
       *Annihiliating Air Slash > Dragon Roar > Annihiliating Air Slash > Dragon Roar > spam this until no AP - (Range rotation)*
 
+
 - name: Edge Maverick (Awakened)
   cat: jp
   rating: 5
@@ -307,7 +313,7 @@
     grd: 1036
 
   talents:
-    - name: "Longing for the Stars III"
+    - name: "Longing for the Stars"
       effects: 
         - desc: ATK +25%
           all: true
@@ -317,13 +323,13 @@
             buffValue: 25
     - name: "A Pioneer's Spirit"
       effects: 
-        - desc: Single Target Damage +15%
+        - desc: Single target damage +15%
           all: true
           meta:
             priority: 1
             buff: Single Target Damage
             buffValue: 15
-    - name: "Youthful Spunk III"
+    - name: "Youthful Spunk"
       effects: 
         - desc: HP +50%
           all: true
@@ -333,25 +339,38 @@
             buffValue: 50
     - name: "A Friend's Promise"
       effects: 
-        - desc: No flinching when taking damage of 25% HP or less
+        - desc: No flinching when taking damage of 25% of max HP or less
           all: true
-    - name: "Avoid Invulnerable"
+    - name: "Indominitable Sense of Justice"
       effects: 
-        - desc: charge assault in the air during the “Fortitude of Righteousness” attack Invalidate the critical occurrence effect of charge assault
-          all: true
-    - name: "The right hand of good luck"
+        - desc: Evasion possible during air attacks
+        - desc: Nullifies charge assault critical assault penalty
+    - name: "Fortune's Right Hand"
+      shortEffects: AP cost -20% and critical hit chance +3% when skill chain is >3
       effects: 
-        - desc: 3 Consecutive AP consumption 20% + Critical incidence rate + 30%
+        - desc: AP cost -20% when skill chain is >3
           all: true
-
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain 3+
+            buffValue: 20
+        - desc: Critical hit chance +30% when skill chain is >3
+          all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain 3+
+            buffValue: 30
+            
   skills:
-    - name: "Smack Down"
+    - name: "Arrow Smash"
       picture: Double_Slash_I
       power: ATK x 200%
       ap: 17
       maxHits: 5
       highlight: true
-    - name: "Aura Spark"
+    - name: "Grand Zapper"
       picture: Air_Slash_I
       power: ATK x 180%
       ap: 14
@@ -376,10 +395,10 @@
       highlight: true
       
   rush:
-    name: "Mystic Cross Nova"
+    name: "Cross Air Raid Nova"
     picture: Mystic_Cross_Nova_Edge
     effects: 
-      - desc: Elemental Damage +50%
+      - desc: Elemental damage dealt +50%
         duration: 20
         all: true
         meta:
@@ -388,7 +407,7 @@
           buffValue: 50
     power: ATK x 4000%
     maxHits: 12
-    
+ 
   notes: >
       _Has a wide spread of varied buffs, in addition to boasting the largest HP buff available.  Since he carries an array of watered-down buffs
       though, you'll never run into a situation where he contributes optimally.  While his awakening increased his damage output and gave him
@@ -417,7 +436,8 @@
       
       *Normal>Aura Spark>Twin Zapper>Raging Strike x2*
       *Normal>Raging>Aura Spark>Raging - Unawakened*
-    
+
+
 - name: Victor Oakville (Awakened)
   cat: jp
   rating: 4
@@ -443,29 +463,58 @@
             priority: 1
             buff: DEF
             buffValue: 70
-        - desc: Damage +20%
+        - desc: Damage dealt +20%
           all: true
           meta:
             priority: 1
             buff: Damage
             buffValue: 20
-    - name: "What Friends Are For IV"
+    - name: "What Friends Are For"
       effects: 
-        - desc: No flinching when taking damage of 30% HP or less
+        - desc: No flinching when taking damage of 30% of max HP or less
           all: true
     - name: "Indomitable Spirit"
       effects: 
-        - desc: 80% chance to survive a lethal attack at 10% HP or more (All)
-    - name: "The Prestige of the Swordsman's Role"
+        - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
+          all: true
+    - name: "Examplar of the Swordmaster's Dignity"
+      effects:
+        - desc: Nullifies charge assault critical damage penalty
+          all: true      
+        - desc: Nullifies critical damage taken
+        - desc: Nullifies freeze
+    - name: "Inherited Vow"
+      effects:
+        - desc: Absorbs 15% of damage dealt by normal attacks as HP
+        - desc: Taunt +3
+    - name: "Severing Regrets"
+      shortEffects: ATK +20%, DEF +10%, GRD +15%, and HP +10%
       effects: 
-        - desc: Charge A Salto Invalidate the Critical Outbreak Effect (Overall) & Inflict Freeze Outbreak Ineffective Freeze (self)
-    - name: "Convious Vow"
-      effects: 
-        - desc: Damage to Normal Attack The effect of becoming easy to be targeted from the enemy who gives the 15% absorption effect + 3
-    - name: "Cut off and complete"
-      effects: 
-        - desc: ATK +20%, DEF +10%, GRD +15%, HP +10%
-
+        - desc: ATK +20%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 20
+        - desc: DEF +10%
+          all: true
+          meta:
+            priority: 1
+            buff: DEF
+            buffValue: 10         
+        - desc: GRD +15%
+          all: true
+          meta:
+            priority: 1
+            buff: GRD
+            buffValue: 15
+        - desc: HP +10%
+          all: true
+          meta:
+            priority: 1
+            buff: HP
+            buffValue: 10
+          
   skills:
     - name: "Mirror Blade"
       picture: Mirror_Blade_II
@@ -490,7 +539,7 @@
       ap: 29
       maxHits: 2
       highlight: true
-    - name: "Double Slash II"
+    - name: "Double Slash"
       picture: Double_Slash_II
       power: ATK x 220%
       ap: 20
@@ -573,24 +622,25 @@
   talents:
     - name: "Prince Charming on White Horse"
       effects: 
-        - desc: Imbues attacks with Lightning and Light
+        - desc: Imbues attacks with lightning and light
           all: false
     - name: "Refreshing Smile"
+      shortEffects: Elemental damage dealt +20%, and elemental damage dealt +30%/+40% when hitcount is >100/>150 (All Party)
       effects: 
-        - desc: Elemental Camage +20%
+        - desc: Elemental damage dealt +20%
           all: true
           meta:
             priority: 1
             buff: Elemental Damage
             buffValue: 20
-        - desc: Elemental Damage +30% when hitcount is at 100
+        - desc: Elemental damage dealt +30% when hitcount is >100
           all: true
           meta:
             priority: 1
             buff: Elemental Damage
             buffCondition: Hit Count > 100
             buffValue: 30
-        - desc: Elemental Damage +40% when hitcount is at 150
+        - desc: Elemental damage dealt +40% when hitcount is >150
           all: true
           meta:
             priority: 1
@@ -601,8 +651,21 @@
       effects: 
         - desc: HP +40%
           all: true
-        - desc: No flinching to damage under 20% of max HP
+        - desc: No flinching when taking damage of 20% of max HP or less
           all: true
+    - name: "Love to All the World"
+      shortEffects: ATK +15% and DEF +25%
+      effects: 
+        - desc: ATK +15%
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 15
+        - desc: DEF +25%
+          meta:
+            priority: 1
+            buff: DEF
+            buffValue: 25
 
   skills:
     - name: "Shotgun Volt"
@@ -630,6 +693,7 @@
   rush:
     name: "Divine Strike"
     picture: Divine_Strike_Groom_Fayt
+    shortEffects: AP cost -60% (Self/20s) and damage taken -30% (All Party/20s)
     effects: 
       - desc: AP cost -60%
         all: false
@@ -669,7 +733,7 @@
   talents:
     - name: "Memories from Previous Life"
       effects: 
-        - desc: Nullifies critical damage penalty during charge assault
+        - desc: Nullifies charge assault critical damage penalty
           all: true
         - desc: ATK damage +30% during charge assault
           all: true
@@ -686,7 +750,7 @@
             priority: 3
             buff: Damage Taken Reduction
             buffValue: 20
-        - desc: No flinching when taking damage of 25% HP or less
+        - desc: No flinching when taking damage of 25% or max HP or less
           all: true
     - name: "Veil of Dusk"
       effects: 
@@ -703,14 +767,15 @@
             buff: AP Recovery
             buffValue: 50
     - name: "Eldest Sister Dignity"
-      shortEffects: ATK +20% and HP +15%
+      shortEffects: ATK +20% and HP +15% after using a long range skill (6s)
       effects: 
-        - desc: ATK +20%
+        - desc: ATK +20% after using a long range skill (6s)
           meta:
             priority: 1
             buff: ATK
+            buffCondition: Long Range Skill
             buffValue: 20
-        - desc: HIT +10% when using a long range skill (6s)
+        - desc: HIT +10% after using a long range skill (6s)
           meta:
             priority: 3
             buff: HIT
@@ -762,6 +827,7 @@
     power: ATK x 4000%
     maxHits: 7
 
+
 - name: Sigmund
   cat: jp
   rating: 0
@@ -784,7 +850,6 @@
       effects: 
         - desc: Imbues attacks with fire and dark
     - name: "Calm and Self-Possessed"
-      shortEffects: HP +30% (All) / No flinching when taking damage of 20% of max HP or less (All)
       effects: 
         - desc: HP +30%
           all: true
@@ -794,7 +859,6 @@
             buffValue: 30
         - desc: No flinching when taking damage of 20% of max HP or less
     - name: "Wounded Beast"
-      shortEffects: ATK +25% (All) and ATK Damage +20% (All)
       effects: 
         - desc: ATK +25%
           all: true
@@ -802,21 +866,21 @@
             priority: 1
             buff: ATK
             buffValue: 25
-        - desc: ATK Damage +20%
+        - desc: ATK damage dealt +20%
           all: true
           meta:
             priority: 1
             buff: ATK Damage
             buffValue: 20
     - name: "Resolution Filled Sword Strike"
-      shortEffects: Damage taken -50% after using Grinn Valesti (Self/1.5s) / No flinching after using Grinn Valesti (Self/1.5s)
+      shortEffects: Damage taken -50% and no flinching after using Grin Valesti (1.5s)
       effects: 
-        - desc: Damage taken -50% after using Grinn Valesti
+        - desc: Damage taken -50% after using Grinn Valesti (1.5s)
           meta:
             priority: 4
             buff: Damage Taken Reduction
             buffValue: 50
-        - desc: No flinching after using Grinn Valesti
+        - desc: No flinching after using Grinn Valesti (1.5s)
 
   skills:
     - name: "Hrotti Range"
@@ -843,7 +907,7 @@
   rush:
     name: "Alfheim"
     picture: Alfheim_Sigmund
-    shortEffects: AP cost -40% (Self/20s) / ATK +30% (Self/20s)
+    shortEffects: AP cost -40% and ATK +30% (Self/20s)
     effects: 
       - desc: AP cost -40%
         duration: 20
@@ -859,6 +923,7 @@
           buffValue: 30
     power: ATK x 3500%
     maxHits: 4
+
 
 - name: Cyuss
   cat: jp
@@ -878,16 +943,16 @@
 
   talents:
     - name: "Self Taught Swordsmanship"
-      shortEffects: ATK -15% & DEF -20% inflicted by Spirit Strike (Enemy/10s)
+      shortEffects: ATK -15% and DEF -20% when hit by Spirit Strike (Enemy/10s)
       effects: 
-        - desc: ATK -15% after using Spirit Strike
+        - desc: ATK -15% when hit by Spirit Strike
           all: Enemies
           meta:
             priority: 1
             duration: 10
             buff: Enemy ATK Reduction
             buffValue: 15
-        - desc: DEF -20% after using Spirit Strike
+        - desc: DEF -20% when hit by Spirit Strike
           all: Enemies
           meta:
             priority: 1
@@ -896,7 +961,8 @@
             buffValue: 20
     - name: "Broadminded"
       effects: 
-        - desc: ATK damage taken -15% at short range (All)
+        - desc: ATK damage taken -15% at short range
+          all: true
     - name: "Father Inherited Strong Arms"
       effects: 
         - desc: No flinching when taking damage of 25% of max HP or less
@@ -948,7 +1014,7 @@
     name: "Dragon Surge"
     picture: Dragon_Surge_Ciuss
     element: Ice
-    shortEffects: AP cost -40% (Self/20s) and single target damage +50% (Self/20s)
+    shortEffects: AP cost -40% and single target damage +50% (Self/20s)
     effects: 
         - desc: AP cost -40%
           meta:
@@ -956,7 +1022,7 @@
             duration: 20
             buff: AP Cost Reduction
             buffValue: 40
-        - desc: Single target damage +50% (Self/20s)
+        - desc: Single target damage +50%
           meta:
             priority: 1
             duration: 20
