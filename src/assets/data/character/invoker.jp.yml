@@ -3019,7 +3019,6 @@
             buffCondition: Skill Chain 3+
             buffValue: 30
         - desc: Symbology cast time -60% when skill chain is >3
-          all: true
           meta:
             priority: 4
             buff: Cast Time Reduction
@@ -3052,7 +3051,7 @@
             buff: Stun Rate
             buffCondition: after using Heraldry
             buffValue: 20
-        - desc: Additional hit that deals 00% more damage during normal attacks after using Battle Skills
+        - desc: Additional hit that deals 10% more damage during normal attacks after using Battle Skills
           duration: 10
     - name: "Loyalty to Master"
       effects: 
