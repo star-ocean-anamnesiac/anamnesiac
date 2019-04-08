@@ -5337,25 +5337,25 @@
   skills:
     - name: "Gliding Edge"
       picture: Sylvan_Shot
-      power: ATK x 200%
+      power: ATK x 180%
       ap: 13
       maxHits: 8
       highlight: true
     - name: "Mirror Slice"
       picture: Mirror_Slice
-      power: ATK x 200%
+      power: ATK x 490%
       ap: 34
       maxHits: 6
       highlight: true
     - name: "Quick Thrust"
       picture: Quick_Thrust
-      power: ATK x 310%
+      power: ATK x 250%
       ap: 18
       maxHits: 2
     - name: "Lightning Slash"
       picture: Thunderfire_Slash
       element: Lightning
-      power: ATK x 460%
+      power: ATK x 360%
       ap: 29
       maxHits: 1
 
