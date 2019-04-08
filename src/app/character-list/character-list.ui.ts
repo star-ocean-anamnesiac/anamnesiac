@@ -68,7 +68,7 @@ export class CharacterSortPopover {
       <ion-col class="shrink-top-margin">
         <p class="vertical-center">
           <app-appicon [name]="'char-' + char.star" [scaleX]="0.5" [scaleY]="0.5" [inline]="true"></app-appicon>
-          <span>{{ char.ace ? 'ACE' : '' }} {{ char.limited ? `(${char.semi ? 'Semi-' : ''}Limited)` : '' }}</span>
+          <span>{{ char.ace ? 'ACE' : '' }} {{ char.limited ? (char.semi ? 'Semi-Limited' : 'Limited') : '' }}</span>
         </p>
         <p>
           <app-weapon [weapon]="char.weapon"></app-weapon>
