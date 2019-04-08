@@ -105,7 +105,7 @@ export class CharacterSortPopover {
                       <ol *ngIf="!talent.shortEffects">
                         <li *ngFor="let effect of talent.effects">
                         {{ effect.desc }}
-                        <span *ngIf="effect.all">(All {{ effect.all === true ? 'Allies' : effect.all }})</span>
+                        <span *ngIf="effect.all">({{ effect.all === true ? 'Allies' : effect.all }})</span>
                         <span *ngIf="effect.duration">({{ effect.duration }} seconds)</span>
                         </li>
                       </ol>
@@ -187,7 +187,7 @@ export class CharacterSortPopover {
                             <li *ngFor="let effect of char.rush.effects">
                             {{ effect.desc }}
                             <span *ngIf="effect.all">
-                              (All {{ effect.all === true ? 'Allies' : effect.all }}
+                              ({{ effect.all === true ? 'Allies' : effect.all }}
                               <span *ngIf="effect.duration"> {{ effect.duration }}s</span>)
                             </span>
                             <span *ngIf="effect.duration"></span>
