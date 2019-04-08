@@ -451,7 +451,7 @@
           priority: 1
           buff: Crit Rate
           buffValue: 60
-    power: INT x 4000%
+    power: ATK x 4000%
     maxHits: 11
     
   notes: >
@@ -749,6 +749,7 @@
       maxHits: 1
     - name: "Cure Condition"
       picture: Cure_Condition
+      power: 0%
       ap: 30
       notes: Cures status ailments
       
