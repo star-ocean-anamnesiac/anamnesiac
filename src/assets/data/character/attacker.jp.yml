@@ -5267,4 +5267,112 @@
           buffValue: 80
     power: ATK x 4500%
     maxHits: 10
-  
+
+- name: Nel Zelpher (Maid)
+  cat: jp
+  rating: 0
+  picture: Main_Nel
+  weapon: bns
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15750
+    atk: 2704
+    int: 1537
+    def: 1969
+    hit: 1127
+    grd: 840
+
+  talents:
+    - name: "Sharpened Frost Blade"
+      effects: 
+        - desc: ATK +20%
+          all: true
+          meta:
+            priority: 2
+            buff: ATK
+            buffValue: 20
+    - name: "Sincere Heart"
+      effects: 
+        - desc: Single target damage +30% at short range
+          meta:
+            priority: 4
+            buff: Single Target Damage
+            buffCondition: Short Range
+            buffValue: 30
+        - desc: AP cost -15% at long range
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffCondition: Long Range
+            buffValue: 15
+    - name: "Crimson Plaited Cord"
+      effects: 
+        - desc: Normal attack AP recovery +100% when HP is 100%
+          all: true
+          meta:
+            priority: 2
+            buff: AP Recovery
+            buffCondition: HP is 100%
+            buffValue: 100
+    - name: "Sharpened Frost Blade"
+      effects: 
+        - desc: ATK +20% after using Gliding Edge
+          duration: 10
+          meta:
+            priority: 2
+            buff: ATK
+            buffCondition: after using Gliding Edge
+            buffValue: 20
+        - desc: Evasion possible during air attacks
+        - desc: Damage dealt +100% by Mirror Slice during charge assault
+          meta:
+            priority: 2
+            buff: Damage
+            buffCondition: during charge assault
+            buffValue: 100
+
+  skills:
+    - name: "Gliding Edge"
+      picture: Sylvan_Shot
+      power: ATK x 200%
+      ap: 13
+      maxHits: 8
+      highlight: true
+    - name: "Mirror Slice"
+      picture: Mirror_Slice
+      power: ATK x 200%
+      ap: 34
+      maxHits: 6
+      highlight: true
+    - name: "Quick Thrust"
+      picture: Quick_Thrust
+      power: ATK x 310%
+      ap: 18
+      maxHits: 2
+    - name: "Lightning Slash"
+      picture: Thunderfire_Slash
+      element: Lightning
+      power: ATK x 460%
+      ap: 29
+      maxHits: 1
+
+  rush:
+    name: "Wolfpack Fang"
+    picture: Wolfpack_Fang_Maid_Nel
+    shortEffects: AP cost -30% (Self/20s) and Recovers +10% of max HP every 3 seconds (Party/20s)
+    effects: 
+      - desc: AP cost -30%
+        duration: 20
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 30
+      - desc: Recovers +10% of max HP every 3 seconds
+        duration: 20
+        all: true
+    power: ATK x 4500%
+    maxHits: 14
+    
