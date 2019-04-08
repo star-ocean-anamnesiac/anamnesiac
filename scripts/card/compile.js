@@ -38,7 +38,7 @@ const helpers = {
       const base = x.desc;
       const effDurString = x.duration ? `/${x.duration}s` : '';
       if(x.all) {
-        return `${base} (${x.all === true ? 'All Party' : 'All ' + x.all }${effDurString})`;
+        return `${base} (${x.all === true ? 'Party' : x.all }${effDurString})`;
       }
       return `${base}${effDurString ? ' (Self' + effDurString + ')' : ''}`;
     })
@@ -122,7 +122,7 @@ const allCharHTML = allCharacters.map(char => {
                       ${
                         effect.all ? `
                           <span>
-                            (${ effect.all === true ? 'All Party' : 'All ' + effect.all })
+                            (${ effect.all === true ? 'Party' : effect.all })
                           </span>
                         ` : ''
                       }
