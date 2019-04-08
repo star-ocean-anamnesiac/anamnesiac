@@ -878,10 +878,10 @@
             buffValue: 30
     - name: "Not Alone"
       effects: 
-        - desc: Fairy Light Cross buffs ATK +30% when Relia (>A2) is at 100% HP
+        - desc: Fairy Light Cross increases to ATK +30% when Relia's HP is 100%
     - name: "Believing Heart"
       effects: 
-        - desc: Brute Enlightenment buffs INT +35% and ATK damage +25% when Relia (>A5) is at 100% HP
+        - desc: Brute Enlightenment increases to INT +35% and ATK damage taken -25% when Relia's HP is 100%
             
   skills:
     - name: "Enraging Faerie Light"
