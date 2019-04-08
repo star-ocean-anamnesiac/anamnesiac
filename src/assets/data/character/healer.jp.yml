@@ -10,60 +10,63 @@
 
   stats:
     hp: 13965
-    atk: 1747
-    int: 3010
-    def: 1327
+    atk: 2276
+    int: 3648
+    def: 1426
     hit: 1050
     grd: 1148
 
   talents:
-    - name: "Seaside Enchantress II"
+    - name: "Seaside Enchantress"
       effects: 
-        - desc: INT +20%
+        - desc: Recovers some AP for all allies when using offensive symbology      
+        - desc: INT +35%
           meta:
             priority: 4
             buff: INT
-            buffValue: 20
-        - desc: Recover allies AP when using offensive symbology
-    - name: "Making Waves II"
+            buffValue: 35
+    - name: "Making Waves"
+      shortEffects: AP cost -40% and INT damage dealt +40% when skill chain is >3
       effects: 
-        - desc: AP cost -40%
+        - desc: AP cost -40% when skill chain is >3
           meta:
             priority: 4
             buff: AP Cost Reduction
+            buffCondition: Skill Chain 3+
             buffValue: 40
-        - desc: INT damage +30% when skill chain 3+
+        - desc: INT damage dealt +40% when skill chain is >3
           meta:
             priority: 4
             buff: INT Damage
             buffCondition: Skill Chain 3+
-            buffValue: 30
-    - name: "Cat Ball and Sandals II"
+            buffValue: 40
+    - name: "Cat Ball and Sandals"
       effects: 
-        - desc: ATK damage +20%
-          all: true
-          meta:
-            priority: 1
-            buff: INT Damage
-            buffValue: 20
-        - desc: INT damage +20%
+        - desc: ATK damage dealt +20%
           all: true
           meta:
             priority: 1
             buff: ATK Damage
             buffValue: 20
-        - desc: Nullify "movement speed down" effect
-          all: Self & Close Range
+        - desc: INT damage dealt +20%
+          all: true
+          meta:
+            priority: 1
+            buff: INT Damage
+            buffValue: 20
+        - desc: Nullifies movement rate reduction field
+          all: Short Range Weapons/Self
     - name: "Summer Combo"
+      shortEffects: Symbology cast time -30% and AP cost -10%
       effects: 
-        - desc: Reduce symbology cast time by 30%
+        - desc: Symbology cast time -30%
           meta:
             priority: 4
             buff: Cast Time Reduction
             buffValue: 30
-        - desc: AP consumption -10%
+        - desc: AP cost -10%
           meta:
-            priority: 4
+            priority: 1
             buff: AP Cost Reduction
             buffValue: 10
 
@@ -75,12 +78,6 @@
       ap: 35
       notes: Allies recover 8 AP
       maxHits: 4
-    - name: "Faerie Light Wave"
-      picture: Faerie_Light
-      power: INT x 120%
-      ap: 30
-      notes: Party Heal
-      maxHits: 1
     - name: "Lightning Wave"
       picture: Lightning
       element: Lightning
@@ -88,6 +85,12 @@
       ap: 20
       notes: Allies recover 4 AP
       maxHits: 10
+    - name: "Faerie Light Wave"
+      picture: Faerie_Light
+      power: INT x 120%
+      ap: 30
+      notes: Recover HP for all allies
+      maxHits: 1
     - name: "Lightning Strike"
       picture: Lightning_Strike
       element: Lightning
@@ -97,21 +100,22 @@
       maxHits: 10
       
   rush:
-    name: "Lightning-Fast Serve"
+    name: "Lightning-Fast Service"
     picture: Lightning_Fast_Service_Summer_Sophia
     element: Lightning
+    shortEffects: Recovers 50% of max HP, and INT +40% (All Party/20s)
     effects: 
-      - desc: +40% INT
+      - desc: INT +40%
         all: true
         duration: 20
         meta:
           priority: 1
           buff: INT
           buffValue: 40
-      - desc: Recover 50% HP
+      - desc: Recovers 50% of max HP
         all: true
     power: INT x 3000%
-    maxHits: 10
+    maxHits: 4
         
   notes: >
       _For Summer, Sophia decided to try out being a healer, while not actually giving up much in the way of her damage. She has a
@@ -158,7 +162,8 @@
       *Normal > Lightning Strike > Faerie Light Wave > Lightning Strike > Spam it till out of AP. (No AP seed.)
       
       *Thunder Flare is a workable replacement for Lightning Wave and helps her rush build, but beware its higher AP cost.
-      
+
+
 - name: Evelysse (Awakened)
   cat: jp
   rating: 7
@@ -178,7 +183,7 @@
     grd: 1141
 
   talents:
-    - name: "Spark of Inspiration II"
+    - name: "Spark of Inspiration"
       effects: 
         - desc: INT +20%
           all: true
@@ -186,18 +191,18 @@
             priority: 1
             buff: INT
             buffValue: 20
-    - name: "A Girl of Many Talents II"
+    - name: "A Girl of Many Talents"
       effects: 
-        - desc: Rush Damage +30%
+        - desc: Rush combo damage +30%
           all: true
           meta:
             priority: 1
             buff: Rush Damage
             buffValue: 30
-    - name: "Blessings of the Stars II"
+    - name: "Blessings of the Stars"
       effects: 
-        - desc: RCV 3% of Max HP / 3s
-        - desc: -40% to Rush Gauge
+        - desc: Recovers 10% of max HP every 3 seconds
+        - desc: Rush gauge quota -40%
     - name: "Cryptic Symbology Arts"
       effects: 
         - desc: AP cost -25%
@@ -205,15 +210,16 @@
             priority: 4
             buff: AP Cost Reduction
             buffValue: 25
-        - desc: Cast Time -40%
+        - desc: Symbology cast time -40% 
           meta:
             priority: 1
             buff: Cast Time Reduction
             buffValue: 40
     - name: "Noble Souls"
       effects: 
-        - desc: No flinching when casting Symbology
+        - desc: No flinching when casting symbology
     - name: "Fearless Feeling"
+      shortEffects: HP +15% and DEF +10%
       effects: 
         - desc: HP +15%
           meta:
@@ -239,28 +245,28 @@
       power: INT x 400%
       ap: 30
       maxHits: 5
+    - name: "Faerie Light"
+      picture: Faerie_Light
+      power: INT x 250%
+      ap: 50
+      notes: Recover HP for all allies
+      maxHits: 1      
     - name: "Sunshine"
       picture: Sunflare
       element: Light
       power: INT x 630%
       ap: 42
       maxHits: 6
-    - name: "Fairy Light"
-      picture: Faerie_Light
-      power: INT x 250%
-      ap: 50
-      notes: Party Heal
-      maxHits: 1
       
   rush:
     name: "Celestial Calling"
     picture: Celestial_Calling_Eve
     element: Light
+    shortEffects: Revives at 1 HP (All Party) and INT +100% (Self/20s)
     effects: 
-      - desc: Revives All Party Members at 1 HP
+      - desc: Revives at 1 HP
         all: true
-        duration: 20
-      - desc: INT +100%
+      - desc: INT 100%
         duration: 20
         meta:
           priority: 4
@@ -306,6 +312,7 @@
       
       - Lack of a good talent that helps survivability
 
+
 - name: Rena Lanford (Awakened)
   cat: jp
   rating: 8
@@ -327,29 +334,43 @@
   talents:
     - name: "Healing Light"
       effects: 
-        - desc: Recovers 10% HP every 3, 5 seconds
-          all: Short Ranged Weapon Users, All
+        - desc: Recovers 10% of max HP every 5 seconds
+          all: true
+        - desc: Recovers 10% of max HP every 3 seconds
+          all: Short Range Weapons
     - name: "Beyond Time & Space"
       effects: 
-        - desc: Cast Time -90%
+        - desc: Symbology cast time -90%
           meta:
             priority: 4
             buff: Cast Time Reduction
             buffValue: 90
     - name: "Two Mothers' Blessing"
       effects: 
-        - desc: AP Cost -15%
+        - desc: AP cost -15%
           meta:
             priority: 4
             buff: AP Cost Reduction
-            buffValue: 15
+            buffValue: 15            
     - name: "Descendant of Nede"
       effects: 
-        - desc: 95% (Self) & 90% (Short Ranged Weapon Users) chance of surviving a lethal attack at 10% HP or more
+        - desc: 95% chance of surviving a lethal attack when at 10% of max HP or more
+        - desc: 90% chance of surviving a lethal attack when at 10% of max hp or more when Rena (>A7) is close to target
     - name: "Physical Sense"
       effects: 
-        - desc: Normal attack AP recovery amount +100% & Damage not attacked while attacked -30%
-    - name: "I love cute things!"
+        - desc: Normal attack AP recovery +100%
+          meta:
+            priority: 4
+            buff: AP Recovery
+            buffValue: 100
+        - desc: No flinching while attacking
+        - desc: Damage taken -30%
+          meta:
+            priority: 4
+            buff: Damage Taken Reduction
+            buffValue: 30
+    - name: "I Love Cute Things!"
+      shortEffects: ATK +40% and HP +20%
       effects: 
         - desc: ATK +40%
           meta:
@@ -369,17 +390,11 @@
       power: INT x 330%
       ap: 27
       maxHits: 8
-    - name: "Ray"
-      picture: Laser_Beams
-      element: Light
-      power: INT x 1150%
-      ap: 55
-      maxHits: 12
-    - name: "Angel Feather"
+    - name: "Angel Feather AR"
       picture: Angel_Feathers
-      power: All Stats +20%
+      power: 0%
       ap: 35
-      notes: Party Wide
+      notes: ATK/INT/DEF/HIT/GRD +20% (Party/20s)
       maxHits: 1
       meta:
         priority: 2
@@ -390,12 +405,18 @@
           - HIT
           - GRD
         buffValue: 20
-    - name: "Faerie Light"
+    - name: "Faerie Light AR"
       picture: Faerie_Light
       power: INT x 250%
       ap: 50
-      notes: Party Heal
-      maxHits: 1
+      notes: Recover some HP for all allies
+      maxHits: 1        
+    - name: "Ray"
+      picture: Laser_Beams
+      element: Light
+      power: INT x 1150%
+      ap: 55
+      maxHits: 12
     - name: "Current Knuckle"
       picture: Current_Knuckle
       power: ATK x 500%
@@ -406,7 +427,7 @@
       picture: Palm_of_Destruction
       power: ATK x 300%
       ap: 20
-      notes: Party Wide
+      notes: ATK/INT/DEF/HIT/GRD +30% (Party/10s)
       maxHits: 1
       meta:
         priority: 2
@@ -423,8 +444,8 @@
     picture: Star_Flare_Rena
     element: Light
     effects: 
-      - desc: Critical Rate +60%
-        all: Short Ranged Weapon Users
+      - desc: Critical hit chance +60%
+        all: Short Range Weapons
         duration: 20
         meta:
           priority: 1
@@ -502,7 +523,8 @@
       *Laser Beams > Faerie Light (Ranged rotation with Beams)*
       
       *Faerie Light > Spam till the party isn't dying. (Healing)*
-    
+ 
+ 
 - name: Miki Sauvester (Awakened)
   cat: jp
   rating: 3
