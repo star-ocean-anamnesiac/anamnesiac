@@ -94,7 +94,7 @@ export interface Character {
 
   // whether the character is limited or not
   limited?: boolean;
-  
+
   // whether the character is semi-permanent or semi-limited (will add the "Semi-" text before)
   semi?: boolean;
 
