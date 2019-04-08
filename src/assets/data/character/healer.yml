@@ -19,14 +19,14 @@
   talents:
     - name: "Seaside Enchantress II"
       effects: 
-        - desc: Recover some AP for all allies when using offensive symbology      
+        - desc: Recovers some AP for all allies when using offensive symbology      
         - desc: INT +35%
           meta:
             priority: 4
             buff: INT
             buffValue: 35
     - name: "Making Waves II"
-      shortEffects: AP cost -40% when skill chain is >3, and INT damage dealt +40%
+      shortEffects: AP cost -40% and INT damage dealt +40% when skill chain is >3
       effects: 
         - desc: AP cost -40% when skill chain is >3
           meta:
@@ -34,10 +34,11 @@
             buff: AP Cost Reduction
             buffCondition: Skill Chain 3+
             buffValue: 40
-        - desc: INT damage dealt +40%
+        - desc: INT damage dealt +40% when skill chain is >3
           meta:
             priority: 4
             buff: INT Damage
+            buffCondition: Skill Chain 3+
             buffValue: 40
     - name: "Cat Ball and Sandals II"
       effects: 
@@ -610,7 +611,7 @@
     name: "Arctic Impact 2R"
     picture: Revised_Arctic_Impact_Priestess_Nel
     element: Ice
-    shortEffects: Recovers 50% of max HP, and damage dealt +30% (Self/20s)
+    shortEffects: Recovers 50% of max HP and damage dealt +30% (Self/20s)
     effects: 
       - desc: Recovers 50% of max HP
       - desc: Damage dealt +30%
@@ -753,7 +754,7 @@
     name: "Celestial Calling"
     picture: Celestial_Calling_Eve
     element: Light
-    shortEffects: Revives at 1 HP (All Party), and INT +100% (Self/20s)
+    shortEffects: Revives at 1 HP (All Party) and INT +100% (Self/20s)
     effects: 
       - desc: Revives at 1 HP
         all: true
@@ -849,7 +850,7 @@
         - desc: Recovers 5% of max HP every 5 seconds
           all: Long Range Weapons
     - name: "Purge II"
-      shortEffects: Nullifies poison/paralysis (All Party/90s)
+      shortEffects: Nullifies poison/paralysis for 90 seconds (All Party)
       effects: 
         - desc: Nullifies poison for 90 seconds
           all: true
@@ -898,7 +899,7 @@
     name: "Healing Blast Hurricane"
     picture: Healing_Blast_Hurricane_Sarah
     element: Wind
-    shortEffects: Recovers 70% of max HP, and nullifies poison/paralysis (All Party)
+    shortEffects: Recovers 70% of max HP and nullifies poison/paralysis (All Party)
     effects: 
       - desc: Recovers 70% HP
         all: true
@@ -993,7 +994,6 @@
         - desc: Hitcount timer +2 seconds
           all: true
     - name: "Twinkle Twinkle Little Star II"
-      shortEffects: Evasion AP cost -50% and movement rate +30% (All Party)
       effects: 
         - desc: Evasion AP cost -50%
           all: true
@@ -1001,7 +1001,7 @@
           all: true
     - name: "A Christmas Miracle"
       effects: 
-        - desc: Recover some AP for all allies when using offensive symbology          
+        - desc: Recovers some AP for all allies when using offensive symbology          
     - name: "Trump Card"
       shortEffects: Critical hit chance and critical damage +20%/+30% when hitcount is >50/>100 (All Party)
       effects: 
@@ -1012,7 +1012,7 @@
             buff: Crit Rate
             buffCondition: Hit Count > 50
             buffValue: 20
-        - desc: Critical damage dealt +20% when hitcount is >50
+        - desc: Critical damage +20% when hitcount is >50
           all: true
           meta:
             priority: 1
@@ -1067,7 +1067,7 @@
     name: "Magical Present"
     picture: Magical_Present_Xmas_Precis
     element: Light
-    shortEffects: Recovers 15% of max HP every 3 seconds, and critical hit chance +30% (All Party/20s)
+    shortEffects: Recovers 15% of max HP every 3 seconds and critical hit chance +30% (All Party/20s)
     effects: 
       - desc: Recovers 15% of max HP every 3 seconds
         all: true
@@ -1222,7 +1222,7 @@
     name: "Freeze Time"
     picture: Freezing_Clock_Relia
     element: Ice
-    shortEffects: Single target damage +30%, and recovers 15% of max HP every 3 seconds (All Party/20s)
+    shortEffects: Single target damage +30% and recovers 15% of max HP every 3 seconds (All Party/20s)
     effects: 
       - desc: Single target damage +30%
         all: true
@@ -1376,7 +1376,7 @@
     name: "Heaven's Judgment"
     picture: Heaven's_Judge_Fina
     element: Light
-    shortEffects: Recovers 70% of max HP, and critical hit chance +30% (All Party/20s)
+    shortEffects: Recovers 70% of max HP and critical hit chance +30% (All Party/20s)
     effects: 
       - desc: Recover 70% HP
         all: true
@@ -1469,7 +1469,7 @@
             buffCondition: HP > 50%
             buffValue: 50
     - name: "Beach Body II"
-      shortEffects: ATK/INT damage dealt +10%, and ATK/INT +25% when skill chain is >3 (All Party)
+      shortEffects: ATK/INT damage dealt +10%/+25% when skill chain is >0/>3
       effects:
         - desc: ATK damage dealt +10%
           all: true
@@ -1483,14 +1483,14 @@
             priority: 1
             buff: INT Damage
             buffValue: 10
-        - desc: ATK damage dealt +25% when skill chain is 3 or more
+        - desc: ATK damage dealt +25% when skill chain is >3
           all: true
           meta:
             priority: 3
             buff: ATK Damage
             buffCondition: Skill Chain 3+
             buffValue: 25
-        - desc: INT damage dealt +25% when skill chain is 3 or more
+        - desc: INT damage dealt +25% when skill chain is >3
           all: true
           meta:
             priority: 3
@@ -1719,7 +1719,7 @@
     name: "Celestial Calling"
     picture: Celestial_Calling_Eve
     element: Light
-    shortEffects: Revives at 1 HP (All Party), and INT +100% (Self/20s)
+    shortEffects: Revives at 1 HP (All Party) and INT +100% (Self/20s)
     effects: 
       - desc: Revives at 1 HP
         all: true
