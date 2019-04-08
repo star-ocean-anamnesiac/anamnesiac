@@ -94,6 +94,9 @@ export interface Character {
 
   // whether the character is limited or not
   limited?: boolean;
+  
+  // whether the character is semi-permanent or semi-limited (will add the "Semi-" text before)
+  semi?: boolean;
 
   // the rating of the character in game (3/4/5)
   star: number;
