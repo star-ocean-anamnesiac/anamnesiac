@@ -103,7 +103,7 @@
     name: "Lightning-Fast Service"
     picture: Lightning_Fast_Service_Summer_Sophia
     element: Lightning
-    shortEffects: Recovers 50% of max HP, and INT +40% (All Party/20s)
+    shortEffects: Recovers 50% of max HP, and INT +40% (Party/20s)
     effects: 
       - desc: INT +40%
         all: true
@@ -353,7 +353,7 @@
     name: "Tractor Beam"
     picture: Tractor_Beam_Millie
     element: Earth
-    shortEffects: Recovers 80% of max HP, and critical hit chance +50% (All Party/20s)
+    shortEffects: Recovers 80% of max HP, and critical hit chance +50% (Party/20s)
     effects: 
       - desc: Critical hit chance +50%
         all: true
@@ -456,7 +456,7 @@
       picture: Angel_Feathers
       power: 0%
       ap: 95
-      notes: All stats +20% (Party/20s)
+      notes: ATK/INT/DEF/HIT/GRD +20% (Party/20s)
       maxHits: 1
       meta:
         priority: 2
@@ -754,7 +754,7 @@
     name: "Celestial Calling"
     picture: Celestial_Calling_Eve
     element: Light
-    shortEffects: Revives at 1 HP (All Party) and INT +100% (Self/20s)
+    shortEffects: Revives incapacitated allies at 1 HP (Party) and INT +100% (Self/20s)
     effects: 
       - desc: Revives at 1 HP
         all: true
@@ -850,7 +850,7 @@
         - desc: Recovers 5% of max HP every 5 seconds
           all: Long Range Weapons
     - name: "Purge II"
-      shortEffects: Nullifies poison/paralysis for 90 seconds (All Party)
+      shortEffects: Nullifies poison/paralysis for 90 seconds(Party)
       effects: 
         - desc: Nullifies poison for 90 seconds
           all: true
@@ -877,7 +877,7 @@
       picture: Angel_Feathers
       power: 0%
       ap: 95
-      notes: All stats +20% (Party/20s)
+      notes: ATK/INT/DEF/HIT/GRD +20% (Party/20s)
       maxHits: 1
       meta:
         priority: 2
@@ -899,7 +899,7 @@
     name: "Healing Blast Hurricane"
     picture: Healing_Blast_Hurricane_Sarah
     element: Wind
-    shortEffects: Recovers 70% of max HP and nullifies poison/paralysis (All Party)
+    shortEffects: Recovers 70% of max HP and nullifies poison/paralysis (Party)
     effects: 
       - desc: Recovers 70% HP
         all: true
@@ -1003,7 +1003,7 @@
       effects: 
         - desc: Recovers some AP for all allies when using offensive symbology          
     - name: "Trump Card"
-      shortEffects: Critical hit chance and critical damage +20%/+30% when hitcount is >50/>100 (All Party)
+      shortEffects: Critical hit chance and critical damage dealt +20%/+30% when hitcount is >50/>100 (Party)
       effects: 
         - desc: Critical hit chance +20% when hitcount is >50
           all: true
@@ -1012,7 +1012,7 @@
             buff: Crit Rate
             buffCondition: Hit Count > 50
             buffValue: 20
-        - desc: Critical damage +20% when hitcount is >50
+        - desc: Critical damage dealt +20% when hitcount is >50
           all: true
           meta:
             priority: 1
@@ -1067,7 +1067,7 @@
     name: "Magical Present"
     picture: Magical_Present_Xmas_Precis
     element: Light
-    shortEffects: Recovers 15% of max HP every 3 seconds and critical hit chance +30% (All Party/20s)
+    shortEffects: Recovers 15% of max HP every 3 seconds and critical hit chance +30% (Party/20s)
     effects: 
       - desc: Recovers 15% of max HP every 3 seconds
         all: true
@@ -1170,7 +1170,7 @@
         - desc: Recovers 5% of max HP every 3 seconds
           all: true
     - name: "Forehead Symbology"
-      shortEffects: Nullifies movement rate/AP recovery rate reduction fields (All Short Range Weapons/Self)
+      shortEffects: Nullifies movement rate/AP recovery rate reduction fields (Short Range Weapons/Self)
       effects: 
         - desc: Nullifies AP recovery rate reduction fields
           all: Short Range Weapons/Self
@@ -1222,7 +1222,7 @@
     name: "Freeze Time"
     picture: Freezing_Clock_Relia
     element: Ice
-    shortEffects: Single target damage +30% and recovers 15% of max HP every 3 seconds (All Party/20s)
+    shortEffects: Single target damage +30% and recovers 15% of max HP every 3 seconds (Party/20s)
     effects: 
       - desc: Single target damage +30%
         all: true
@@ -1362,7 +1362,7 @@
       picture: Cheer
       power: 0%
       ap: 85
-      notes: ATK/INT/DEF +25% for all allies (20 seconds)
+      notes: ATK/INT/DEF +25% (Party/20s)
       maxHits: 1
       meta:
         priority: 2
@@ -1376,7 +1376,7 @@
     name: "Heaven's Judgment"
     picture: Heaven's_Judge_Fina
     element: Light
-    shortEffects: Recovers 70% of max HP and critical hit chance +30% (All Party/20s)
+    shortEffects: Recovers 70% of max HP and critical hit chance +30% (Party/20s)
     effects: 
       - desc: Recover 70% HP
         all: true
@@ -1719,7 +1719,7 @@
     name: "Celestial Calling"
     picture: Celestial_Calling_Eve
     element: Light
-    shortEffects: Revives at 1 HP (All Party) and INT +100% (Self/20s)
+    shortEffects: Revives incapacitated allies at 1 HP (Party) and INT +100% (Self/20s)
     effects: 
       - desc: Revives at 1 HP
         all: true
@@ -2285,3 +2285,117 @@
         duration: 20
     power: INT x 2000%
     maxHits: 10
+
+
+- name: Millie Chliette (Awakened)
+  cat: gl
+  rating: 6
+  picture: Millie
+  weapon: staff
+  ace: true
+  limited: false
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 13860
+    atk: 1759
+    int: 2494
+    def: 1353
+    hit: 1057
+    grd: 1134
+
+  talents:
+    - name: "Like Father, Like Daughter"
+      effects: 
+        - desc: Elemental damage dealt +30%
+          all: true
+          meta:
+            priority: 1
+            buff: Elemental Damage
+            buffValue: 30
+    - name: "Rabbit's Foot"
+      effects: 
+        - desc: Damage taken -30%
+          meta:
+            priority: 4
+            buff: Damage Taken Reduction
+            buffValue: 30
+    - name: "Fortune of Mana"
+      effects: 
+        - desc: AP cost -25%
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 25
+    - name: "Ready to Transcend Space-Time"
+      effects: 
+        - desc: Recovers 5% of max HP every 3 seconds
+          all: true
+        - desc: Nullifies silence for 180 seconds
+          all: false
+    - name: "Wanting to Grow Up"
+      effects: 
+        - desc: Critical damage dealt +20% when HP is 100%
+          all: true
+          meta:
+            priority: 4
+            buff: Crit Damage
+            buffCondition: HP is 100
+            buffValue: 20
+    - name: "Investigating the Music Box"
+      effects: 
+        - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
+          all: true
+
+  skills:
+    - name: "Healing"
+      picture: Healing
+      power: INT x 170%
+      ap: 30
+      notes: Recover some HP for a single ally
+      maxHits: 1
+    - name: "Crush"
+      picture: Crush
+      element: Earth
+      power: INT x 210%
+      ap: 20
+      maxHits: 2
+    - name: "Stone Rain"
+      picture: Stone_Rain
+      element: Earth
+      power: INT x 510%
+      ap: 35
+      maxHits: 5
+    - name: "Faerie Star"
+      picture: Faerie_Star
+      power: INT x 330%
+      ap: 60
+      notes: Rcover a lot of HP for all allies
+      maxHits: 1
+    - name: "Cure Condition"
+      picture: Cure_Condition
+      power: 0%
+      ap: 30
+      notes: Cures status ailments
+      maxHits: 1
+      
+  rush:
+    name: "Tractor Beam"
+    picture: Tractor_Beam_Millie
+    element: Earth
+    shortEffects: Recovers 80% of max HP and critical hit chance +50% (Party/20s)
+    effects: 
+      - desc: Recovers 80% of max HP
+        all: true    
+      - desc: Critical hit chance +50%
+        all: true
+        duration: 20
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 50
+    power: INT x 3500%
+    maxHits: 11
+    
+  notes: >
