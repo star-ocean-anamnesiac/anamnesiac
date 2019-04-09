@@ -5,9 +5,7 @@ const fs = require('fs');
 
 if(!fs.existsSync(`src/assets/cards`)) fs.mkdirSync(`src/assets/cards`);
 
-const html = fs.readFileSync(__dirname + '/compiled.html', 'utf-8');
-
-const init = async () => {
+const load = async (html, characters) => {
   const browser = await puppeteer.launch();
   
   const page = await browser.newPage();
@@ -45,7 +43,7 @@ const init = async () => {
   }
 
   await Promise.all(
-    allCharacters.map(char => {
+    characters.map(char => {
       const fileName = `${char.picture}-${char.awakened ? 'a-' : ''}${char.cat}`;
 
       return screenshotDOMElement({
@@ -56,7 +54,9 @@ const init = async () => {
   );
   
   await browser.close();
+};
 
+const writeAllCards = async () => {
   const allCardContent = allCharacters.sort((left, right) => {
     if(left.name < right.name) return -1;
     if(left.name > right.name) return 1;
@@ -69,6 +69,16 @@ const init = async () => {
   }).join('<br>');
 
   fs.writeFileSync('src/assets/cards/index.html', allCardContent);
+};
+
+const init = async () => {
+  const htmlGL = fs.readFileSync(__dirname + '/compiled-gl.html', 'utf-8');
+  const htmlJP = fs.readFileSync(__dirname + '/compiled-jp.html', 'utf-8');
+
+  await load(htmlGL, allCharacters.filter(char => char.cat === 'gl'));
+  await load(htmlJP, allCharacters.filter(char => char.cat === 'jp'));
+
+  await writeAllCards();
 };
 
 init();

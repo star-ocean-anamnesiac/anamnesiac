@@ -46,7 +46,7 @@ const helpers = {
   }
 };
 
-const allCharHTML = allCharacters.map(char => {
+const allCharHTML = (chars) => chars.map(char => {
   return `
 <div class="char-card" data-character="${char.picture}-${char.awakened ? 'a-' : ''}${char.cat}">
 
@@ -168,6 +168,8 @@ const allCharHTML = allCharacters.map(char => {
 `
 });
 
-const allString = allCharHTML.join('');
+const allStringGL = allCharHTML(allCharacters.filter(char => char.cat === 'gl')).join('');
+const allStringJP = allCharHTML(allCharacters.filter(char => char.cat === 'jp')).join('');
 
-fs.writeFileSync(__dirname + '/compiled.html', baseHTML.split('%BASE%').join(allString), 'utf-8');
+fs.writeFileSync(__dirname + '/compiled-gl.html', baseHTML.split('%BASE%').join(allStringGL), 'utf-8');
+fs.writeFileSync(__dirname + '/compiled-jp.html', baseHTML.split('%BASE%').join(allStringJP), 'utf-8');
