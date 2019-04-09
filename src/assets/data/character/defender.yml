@@ -476,7 +476,7 @@
             buffValue: 20
             buffCondition: When holding aggro
     - name: "Beach Skirt Wrap"
-      shortEffects: Single target damage +30% and stun chance +15% when not targeted by enemy (All Party)
+      shortEffects: Single target damage +30% and stun chance +15% when not targeted by enemy (Party)
       effects:
         - desc: Single target damage +30% when not targeted by enemy
           all: true
@@ -590,7 +590,7 @@
 
   talents:
     - name: "Expel's Swordsmaster II"
-      shortEffects: DEF +20% and ATK damage taken -20% (All Party)
+      shortEffects: DEF +20% and ATK damage taken -20% (Party)
       effects: 
         - desc: DEF +20%
           all: true
@@ -624,7 +624,7 @@
         - desc: No flinching when taking damage of 25% of max HP or less
           all: Short Range Weapons
     - name: "Equal Footing"
-      shortEffects: Damage dealt +20% (All Attackers/Defenders)
+      shortEffects: Damage dealt +20% (Attackers/Defenders)
       effects: 
         - desc: Damage dealt +20%
           all: Attackers
@@ -1033,7 +1033,7 @@
 
   talents:
     - name: "The Old-Fashioned Way II"
-      shortEffects: DEF +20% and INT +10% (All Party)
+      shortEffects: DEF +20% and INT +10% (Party)
       effects: 
         - desc: DEF +20%
           all: true
@@ -1049,10 +1049,10 @@
             buffValue: 10
     - name: "Another Piece of Cake II"
       effects: 
-        - desc: 70% of surviving a lethal attack when at 5% of max HP or more
+        - desc: 70% chance of surviving a lethal attack when at 5% of max HP or more
     - name: "Honeymoon Dreams II"
       effects: 
-        - desc: No flinching when taking damage of 20% of max HP or less (All Invokers/Healers/Self)
+        - desc: No flinching when taking damage of 20% of max HP or less (Invokers/Healers/Self)
           all: false
     - name: "Carnivore"
       effects: 
@@ -1159,19 +1159,19 @@
 
   talents:
     - name: "Heart on Fire"
-      shortEffects: ATK/INT/DEF -10% when hit by Undermine (Enemy/10s)
+      shortEffects: ATK/INT/DEF -10% when hit by Undermine (Enemies/10s)
       effects: 
-        - desc: Undermine inflicts ATK -10% debuff on target (10 seconds)
+        - desc: Undermine inflicts ATK -10% debuff on target (10s)
           meta:
             priority: 4
             buff: Enemy ATK Reduction
             buffValue: 10
-        - desc: Undermine inflicts INT -10% debuff on target (10 seconds)
+        - desc: Undermine inflicts INT -10% debuff on target (10s)
           meta:
             priority: 4
             buff: Enemy INT Reduction
             buffValue: 10
-        - desc: Undermine inflicts DEF -10% debuff on target (10 seconds)
+        - desc: Undermine inflicts DEF -10% debuff on target (10s)
           meta:
             priority: 4
             buff: Enemy DEF Reduction
@@ -1348,7 +1348,7 @@
         - desc: No flinching when taking damage of 30% of max HP or less
           all: Short Range Weapons
     - name: "Equal Footing"
-      shortEffects: Damage dealt +40% (All Attackers/Defenders)
+      shortEffects: Damage dealt +40% (Attackers/Defenders)
       effects: 
         - desc: Damage dealt +40%
           all: Attacker
@@ -1569,3 +1569,146 @@
         all: true
     power: ATK x 2000%
     maxHits: 5
+
+
+- name: Edge Maverick (Awakened)
+  cat: gl
+  rating: 5
+  picture: Edge
+  weapon: ohs
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 20370
+    atk: 2508
+    int: 1537
+    def: 2560
+    hit: 812
+    grd: 1036
+
+  talents:
+    - name: "Longing for the Stars II"
+      effects: 
+        - desc: ATK +25%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 25
+    - name: "A Pioneer's Spirit"
+      effects: 
+        - desc: Single target damage +15%
+          all: true
+          meta:
+            priority: 1
+            buff: Single Target Damage
+            buffValue: 15
+    - name: "Youthful Spunk II"
+      effects: 
+        - desc: HP +50%
+          all: true
+          meta:
+            priority: 1
+            buff: HP
+            buffValue: 50
+    - name: "A Friend's Promise"
+      effects: 
+        - desc: No flinching when taking damage of 25% of max HP or less
+          all: true
+    - name: "Indominitable Sense of Justice"
+      effects: 
+        - desc: Evasion possible during air attacks
+        - desc: Nullifies charge assault critical assault penalty
+    - name: "Fortune's Right Hand"
+      shortEffects: AP cost -20% and critical hit chance +3% when skill chain is >3
+      effects: 
+        - desc: AP cost -20% when skill chain is >3
+          all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain 3+
+            buffValue: 20
+        - desc: Critical hit chance +30% when skill chain is >3
+          all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain 3+
+            buffValue: 30
+            
+  skills:
+    - name: "Smackdown"
+      picture: Double_Slash_I
+      power: ATK x 200%
+      ap: 17
+      maxHits: 5
+      highlight: true
+    - name: "Aura Spark"
+      picture: Air_Slash_I
+      power: ATK x 180%
+      ap: 14
+      maxHits: 1
+      highlight: true
+    - name: "Cyclone Blade"
+      picture: Cyclone_Blade
+      power: ATK x 340%
+      ap: 29
+      maxHits: 5
+    - name: "Raging Strike"
+      picture: Raging_Strike
+      power: ATK x 800%
+      ap: 40
+      maxHits: 1
+      highlight: true
+    - name: "Twin Zapper"
+      picture: Twin_Zapper
+      power: ATK x 300%
+      ap: 20
+      maxHits: 4
+      highlight: true
+      
+  rush:
+    name: "Mystic Cross Nova"
+    picture: Mystic_Cross_Nova_Edge
+    effects: 
+      - desc: Elemental damage dealt +50%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Elemental Damage
+          buffValue: 50
+    power: ATK x 4000%
+    maxHits: 12
+ 
+  notes: >
+      _Has a wide spread of varied buffs, in addition to boasting the largest HP buff available.  Since he carries an array of watered-down buffs
+      though, you'll never run into a situation where he contributes optimally.  While his awakening increased his damage output and gave him
+      some nice QoL perks, it didn't do much to improve him overall._      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Good variety of buffs
+      
+      - Incredible HP buff
+      
+      
+      **Cons**
+      
+      - Lacks personal healing
+      
+      - Many of his buffs are easily outclassed
+      
+      - Lacks a range combo
+      
+      
+      **Rotation**
+      
+      *Normal>Aura Spark>Twin Zapper>Raging Strike x2*
+      *Normal>Raging>Aura Spark>Raging - Unawakened*
