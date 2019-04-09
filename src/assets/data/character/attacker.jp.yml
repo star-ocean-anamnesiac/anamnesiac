@@ -5425,7 +5425,7 @@
           all: true
     - name: "Orthodox School Swordsmanship"
       effects: 
-        - desc: Absorbs 00% of damage dealt by normal attacks as HP when hitcount is >50
+        - desc: Absorbs 15% of damage dealt by normal attacks as HP when hitcount is >50
     - name: "Cold-blooded Tactic Theory"
       effects: 
         - desc: Damage dealt +100% by Crescent Moon Slash when using charge assault
