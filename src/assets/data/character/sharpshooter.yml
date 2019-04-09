@@ -18,7 +18,6 @@
 
   talents:
     - name: "Fleeting Kindness"
-      shortEffects: Damage dealt +45%, and damage dealt +55% when HP is 100%
       effects: 
         - desc: Damage dealt +45%
           all: true
@@ -80,7 +79,7 @@
   rush:
     name: "YoRHa Hacking Attack: Zero"
     picture: YoHRa_Hacking_Zero_9S
-    shortEffects: Recovers 50% of max HP and ATK damage dealt +30% (All Party/20s)
+    shortEffects: Recovers 50% of max HP and ATK damage dealt +30% (Party/20s)
     effects: 
       - desc: Recovers 50% of max HP
         all: true
@@ -191,7 +190,7 @@
   rush:
     name: "Energy Burst Barrage"
     picture: Energy_Burst_Barrage_Maria
-    shortEffects: Removes buffs (All Enemies) and critical hit chance +40% (All Party/20s)
+    shortEffects: Removes all buffs (Enemies) and critical hit chance +40% (Party/20s)
     effects: 
       - desc: Removes buffs
         all: Enemies
@@ -315,7 +314,7 @@
   rush:
     name: "Divine Wrath"
     picture: Divine_Wrath_Nel
-    shortEffects: High chance to inflict Deadly Poison, attacks have +15% chance to inflict poison, and an additional hit that deals 20% more damage (Self/20s)
+    shortEffects: Attacks have +15% chance to inflict poison, and an additional hit that deals 20% more damage (Self/20s)
     effects: 
       - desc: Attacks have +15% chance to inflict poison
         duration: 20
@@ -664,7 +663,7 @@
     name: "Lunar Divination"
     picture: Lunar_Divination_Reimi
     element: Dark
-    shortEffects: Nullifies status ailments and recovers 15% of max HP every 3 seconds (All Party/15s)
+    shortEffects: Nullifies status ailments and recovers 15% of max HP every 3 seconds (Party/15s)
     effects: 
       - desc: Nullifies status ailments
         all: true
@@ -800,7 +799,7 @@
   rush:
     name: "Rain on Your Parade"
     picture: Rain_on_Your_Parade_Summer_Miki
-    shortEffects: Critical hit chance +10% and critical damage +40% (All Party/20s)
+    shortEffects: Critical hit chance +10% and critical damage dealt +40% (Party/20s)
     effects: 
       - desc: Critical hit chance +10%
         duration: 20
@@ -1065,7 +1064,7 @@
   rush:
     name: "Thousand-Beast Demon"
     picture: Millenium_Imprisoned_Devil_HW_Victor
-    shortEffects: Recovers 40% of max HP and single target damage +40% (All Party/20s)
+    shortEffects: Recovers 40% of max HP and single target damage +40% (Party/20s)
     effects: 
       - desc: Recovers 40% of max HP
         all: true
@@ -1139,14 +1138,14 @@
 
   talents:
     - name: "Amused Feelings II"
-      shortEffects: Damage dealt +35% (All Healers/Invokers/Self)
+      shortEffects: Damage dealt +35% (Healers/Invokers/Self)
       effects: 
         - desc: Damage dealt +35%
           meta:
             priority: 4
             buff: Damage
             buffValue: 35
-        - desc: Damage +35%
+        - desc: Damage dealt +35%
           all: Invokers
           meta:
             priority: 1
@@ -1213,7 +1212,7 @@
     name: "Cerberushot"
     picture: Cerberushot_Federation_Lymle
     element: Fire
-    shortEffects: Damage dealt +60% (All Invokers/Healers/Self/20s)
+    shortEffects: Damage dealt +60% (Invokers/Healers/Self/20s)
     effects: 
       - desc: Damage dealt +60%
         duration: 20
@@ -1395,7 +1394,7 @@
   rush:
     name: "Revised Heavenly Flight"
     picture: Revised_Heavenly_Flight_Maiden_Clair
-    shortEffects: ATK -20% and DEF -20% (All Enemies/30s)
+    shortEffects: ATK -20% and DEF -20% (Enemies/30s)
     effects: 
       - desc: ATK -20%
         all: Enemy
@@ -1697,7 +1696,7 @@
   rush:
     name: "Energy Burst Barrage"
     picture: Energy_Burst_Barrage_Maria
-    shortEffects: Removes buffs (All Enemies) and critical hit chance +40% (All Party/20s)
+    shortEffects: Removes all buffs (Enemies) and critical hit chance +40% (Party/20s)
     effects: 
       - desc: Removes buffs
         all: Enemies
@@ -1783,7 +1782,7 @@
             buff: Damage
             buffValue: 40
     - name: "Bramble Burst Barrage II"
-      shortEffects: Damage dealt +50%/+55%/+60% when hitcount is >100/>150/>200 (All Party)
+      shortEffects: Damage dealt +50%/+55%/+60% when hitcount is >100/>150/>200 (Party)
       effects: 
         - desc: Damage dealt +50% when hitcount is >100
           all: true
@@ -1922,7 +1921,7 @@
 
   talents:
      - name: "Crimson Blossom Flurry II"
-       shortEffects: Critical hit chance +10%/+20%/+30% when hitcount is >100/>150/>200 (All Party)
+       shortEffects: Critical hit chance +10%/+20%/+30% when hitcount is >100/>150/>200 (Party)
        effects: 
         - desc: Critical hit chance +10% when hitcount is >100
           all: true
@@ -1946,23 +1945,23 @@
             buffCondition: Hit Count > 200
             buffValue: 30
      - name: "Sincere Devotion II"
-       shortEffects: Critical damage +10%/+20%/+30% when hitcount is >100/>150/>200 (All Party)
+       shortEffects: Critical damage dealt +10%/+20%/+30% when hitcount is >100/>150/>200 (Party)
        effects: 
-        - desc: Critical damage +10% when hitcount is >100
+        - desc: Critical damage dealt +10% when hitcount is >100
           all: true
           meta:
             priority: 3
             buff: Crit Damage
             buffCondition: Hit Count > 100
             buffValue: 10
-        - desc: Critical damage +20% when hitcount is >150
+        - desc: Critical damage dealt +20% when hitcount is >150
           all: true
           meta:
             priority: 3
             buff: Crit Damage
             buffCondition: Hit Count > 150
             buffValue: 20
-        - desc: Critical damage +30% when hitcount is >200
+        - desc: Critical damage dealt +30% when hitcount is >200
           all: true
           meta:
             priority: 3
@@ -2193,7 +2192,7 @@
     name: "Revised Dancing Sword"
     picture: Revised_Dancing_Sword_Eleanor
     effects:
-      - desc: Removes buffs
+      - desc: Removes all buffs
         all: Enemies
     power: ATK x 3000%
     maxHits: 7
@@ -2739,7 +2738,7 @@
 
   talents:
     - name: "A Child of Science"
-      shortEffects: ATK -5% when hit by Magnetic Field (All Enemies/10s)
+      shortEffects: ATK -5% when hit by Magnetic Field (Enemies/10s)
       effects: 
         - desc: ATK -5% when hit by Magnetic Field
           duration: 10
@@ -2749,7 +2748,7 @@
             buff: Enemy ATK Reduction
             buffValue: 5
     - name: "Upgraded Gun"
-      shortEffects: Damage taken +15% when hit by Splitshot and Gravity Slug (All Enemies/8s)
+      shortEffects: Damage taken +15% when hit by Splitshot and Gravity Slug (Enemies/8s)
       effects: 
         - desc: Damage taken +15% when hit by Splitshot and Gravity Slug
           duration: 8
@@ -2799,7 +2798,7 @@
   rush:
     name: "Rocket Slipper"
     picture: Rocket_Slippers_Verda
-    shortEffects: ATK damage dealt +30% and movement rate +30% (All Party/20s)
+    shortEffects: ATK damage dealt +30% and movement rate +30% (Party/20s)
     effects:
       - desc: ATK damage +30%
         duration: 20
@@ -2938,7 +2937,7 @@
     name: "Retribution"
     picture: Judgement_Shot_Federation_Edge
     effects: 
-      - desc: ATK damage +40%
+      - desc: ATK damage dealt +40%
         all: true
         duration: 20
         meta:
