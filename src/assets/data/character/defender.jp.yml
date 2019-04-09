@@ -359,7 +359,7 @@
           all: true
           meta:
             priority: 1
-            buff: AP Cost Reduction
+            buff: Crit Rate
             buffCondition: Skill Chain 3+
             buffValue: 30
             
