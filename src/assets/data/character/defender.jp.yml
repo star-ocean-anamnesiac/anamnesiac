@@ -1104,22 +1104,22 @@
 
   skills:
     - name: "Hard Knocker"
-      picture: 
+      picture: Bullet_Barrage
       power: ATK x 320%
       ap: 14
       maxHits: 4
     - name: "Killer Distance"
-      picture: 
+      picture: Approach_Blow
       power: ATK x 270%
       ap: 13
       maxHits: 3
     - name: "Hell Impact"
-      picture: 
+      picture: Hell_Invite
       power: ATK x 680%
       ap: 35
       maxHits: 13
     - name: "Escape Blow"
-      picture: 
+      picture: Escape_Blow
       power: ATK x 290%
       ap: 14
       maxHits: 3
