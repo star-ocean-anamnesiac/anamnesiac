@@ -34,7 +34,7 @@
             buffValue: 60
     - name: "Clockwork Infantry"
       effects: 
-        - desc: Evasion AP cost -100% on perfect dodge
+        - desc: Evasion AP cost -100% on perfect dodge (10s)
     - name: "Holy Blessing"
       effects: 
         - desc: Normal attack AP recovery +100%
@@ -5479,4 +5479,101 @@
           buffValue: 50
     power: ATK x 4000%
     maxHits: 8
+
+- name: Zephyr
+  cat: jp
+  rating: 0
+  picture: Zephyr
+  weapon: gun
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15855
+    atk: 2730
+    int: 1549
+    def: 1957
+    hit: 1134
+    grd: 812
+
+  talents:
+    - name: "Gallantry"
+      effects: 
+        - desc: ATK +43%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 30
+        - desc: ATK +60% at long range
+          all: true
+          meta:
+            priority: 3
+            buff: ATK
+            buffCondition: Long Range
+            buffValue: 60
+    - name: "Happiness Bringer"
+      effects: 
+        - desc: Normal attack AP recovery +100% when HP is 100%
+          all: true
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffCondition: HP is 100%
+            buffValue: 100
+    - name: "Hiding Embarrassment"
+      effects: 
+        - desc: Evasion AP cost -50%
+          all: true
+        - desc: Nullifies HP reduction fields
+          all: true
+    - name: "Demon Possessed Boy"
+      effects: 
+        - desc: Evasion speed & distance +100%
+        - desc: Evasion AP cost -100% on perfect dodge (10s)
+
+  skills:
+    - name: "Sideways Trigger"
+      picture: Sideways_Trigger
+      power: ATK x 350%
+      ap: 16
+      maxHits: 4
+      highlight: true
+    - name: "Reverse Trigger"
+      picture: Reverse_Trigger
+      power: ATK x 350%
+      ap: 16
+      maxHits: 4
+    - name: "Killer Distance"
+      picture: Approach_Blow
+      power: ATK x 270%
+      ap: 13
+      maxHits: 3
+    - name: "Rage Scream"
+      picture: Rage_Scream
+      power: ATK x 480%
+      ap: 21
+      maxHits: 7
+      highlight: true
+
+  rush:
+    name: "Invincible Struggle"
+    picture: Invincible_Struggle_Zephyr
+    shortEffects: AP cost -30% (Self/10s) and critical hit rate +100% (Self/10s)
+    effects: 
+      - desc: AP cost -30%
+        duration: 10
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 30
+      - desc: Critical hit rate +100%
+        duration: 10
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 100
+    power: ATK x 4000%
+    maxHits: 30
     
