@@ -24,7 +24,7 @@
           meta:
             priority: 1
             buff: Damage
-            buffValue: 40
+            buffValue: 45
         - desc: ATK +65% when HP is 100%
           all: true
           meta:
@@ -2006,4 +2006,119 @@
           buffValue: 25
     power: ATK x 3500%
     maxHits: 5
-    
+
+- name: Opera Vectra
+  cat: jp
+  rating: 0
+  picture: Opera
+  weapon: rifle
+  ace: true
+  star: 5
+
+  stats:
+    hp: 15330
+    atk: 2508
+    int: 1589
+    def: 1523
+    hit: 1267
+    grd: 924
+
+  talents:
+    - name: "The Vectra's Noblemen"
+      effects: 
+        - desc: Damage dealt +40%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 40
+        - desc: Damage dealt +60% at long range
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Long Range
+            buffValue: 60
+    - name: "Gambler"
+      effects: 
+        - desc: DEF +15% at short range
+          all: true
+          meta:
+            priority: 1
+            buff: DEF
+            buffCondition: Short Range
+            buffValue: 15
+        - desc: Stun rate +15% at long range
+          all: true
+          meta:
+            priority: 1
+            buff: Stun Rate
+            buffCondition: Long Range
+            buffValue: 15
+    - name: "Heavy Drinker"
+      effects: 
+        - desc: No flinching when attacking
+        - desc: Damage taken -40%
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffValue: 40
+    - name: "Burning Affection"
+      effects: 
+        - desc: AP cost -30% when skill chain is >3
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain 3+
+            buffValue: 30
+        - desc: ATK damage dealt +40%
+          meta:
+            priority: 4
+            buff: ATK Damage
+            buffValue: 40
+
+  skills:
+    - name: "Alpha on One"
+      picture: Alpha_On_One
+      power: ATK x 220%
+      ap: 17
+      maxHits: 5
+    - name: "Gravity Shell"
+      picture: Gravity_Shell
+      element: Dark
+      power: ATK x 360%
+      ap: 24
+      maxHits: 8
+    - name: "Spread Ray"
+      picture: Heaven_Air_Raid
+      power: ATK x 710%
+      ap: 32
+      maxHits: 5
+    - name: "Lightning Blade"
+      picture: Lightning_Blade
+      element: Lightning
+      power: ATK x 880%
+      ap: 36
+      maxHits: 5
+      
+  rush:
+    name: "Hyper Launcher"
+    picture: Hyper_Launcher_Opera
+    shortEffects: Critical rate +30% (Party/20s) and Critical damage dealt +30% (Party/20s)
+    effects: 
+      - desc: Critical rate +30%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 30
+      - desc: Critical damage dealt +30%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Crit Damage
+          buffValue: 30
+    power: ATK x 4000%
+    maxHits: 10
