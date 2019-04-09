@@ -1617,12 +1617,12 @@
       effects: 
         - desc: No flinching when taking damage of 25% of max HP or less
           all: true
-    - name: "Indominitable Sense of Justice"
+    - name: "Dauntless Sense of Justice"
       effects: 
         - desc: Evasion possible during air attacks
         - desc: Nullifies charge assault critical assault penalty
-    - name: "Fortune's Right Hand"
-      shortEffects: AP cost -20% and critical hit chance +3% when skill chain is >3
+    - name: "Lucky Right Hand"
+      shortEffects: AP cost -20% and critical hit chance +30% when skill chain is >3
       effects: 
         - desc: AP cost -20% when skill chain is >3
           all: true
