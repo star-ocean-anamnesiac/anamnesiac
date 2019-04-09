@@ -2206,6 +2206,8 @@
             priority: 1
             buff: INT
             buffValue: 30
+        - desc: Nullifies freeze for 120 seconds 
+          all: true
     - name: "Enchanted Symbology"
       effects: 
         - desc: All attacks have +25% chance to inflict silence
@@ -2221,7 +2223,7 @@
             buff: INT Damage
             buffCondition: HP is 100%
             buffValue: 20
-        - desc: No flinching when casting symbology         
+        - desc: No flinching when casting symbology
     - name: "Marze Born and Raised"
       effects:
         - desc: Symbology cast time -50%
