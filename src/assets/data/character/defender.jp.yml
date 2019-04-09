@@ -1078,7 +1078,7 @@
           all: true
           meta:
             priority: 1
-            buff: Crit Hit
+            buff: Crit Rate
             buffCondition: HP is 100%
             buffValue: 20
     - name: "Danceable"
