@@ -76,7 +76,7 @@
   rush:
     name: "YoRHa Arms: Zero"
     picture: YoHRa_Arms_Ø_2B
-    shortEffects: Elemental damage dealt +70% (Self/20s) and elemental damage dealt +50% (All Party/20s)
+    shortEffects: Elemental damage dealt +70% (Self/20s) and elemental damage dealt +50% (Party/20s)
     effects: 
       - desc: Elemental damage dealt +70%
         all: false
@@ -929,7 +929,7 @@
   rush:
     name: "Celestial Sword"
     picture: Heaven's_Sword_Summer_Reimi
-    shortEffects: Nullifies all status ailments and single target damage dealt +40% (All Party/20s)
+    shortEffects: Nullifies all status ailments and single target damage dealt +40% (Party/20s)
     effects: 
       - desc: Nullifies status ailments
         all: true
@@ -1260,7 +1260,7 @@
             buffValue: 50
     - name: "Knight's Integrity II"
       effects: 
-        - desc: Critical damage +50%
+        - desc: Critical damage dealt +50%
           all: false
           meta:
             priority: 4
@@ -1312,7 +1312,8 @@
     name: "Unholy Torrent"
     picture: Unholy_Torrent_Phia
     effects: 
-      - desc: Occasionally freezes foes
+      - desc: Rush has chance to inflict freeze
+        all: Enemies
     power: ATK x 4000%
     maxHits: 13
     
@@ -1381,7 +1382,7 @@
             buff: Enemy DEF Reduction
             buffValue: 30
     - name: "Black Brigade Fury II"
-      shortEffects: ATK +30% (All Attackers/Defenders)
+      shortEffects: ATK +30% (Attackers/Defenders)
       effects: 
         - desc: ATK +30%
           all: Attackers
@@ -1574,7 +1575,7 @@
   rush:
     name: "Divine Hammer"
     picture: Divine_Hammer_Ilia
-    shortEffects: AP cost -20% (All Attackers/Invokers/20s)
+    shortEffects: AP cost -20% (Attackers/Invokers/20s)
     effects: 
       - desc: AP cost -20%
         all: Attackers
@@ -1717,7 +1718,7 @@
   rush:
     name: "Waking Hell"
     picture: Waking_Hell_HW_Clair
-    shortEffects: DEF +30% (All Party/20s) and DEF -30% (All Enemies/20s)    
+    shortEffects: DEF +30% (Party/20s) and DEF -30% (Enemies/20s)    
     effects: 
       - desc: DEF +30%
         all: true
@@ -2392,7 +2393,7 @@
   rush:
     name: "Fists of Unquenchable Fury"
     picture: Fists_of_Unquenchable_Fury_Weeping_Welch
-    shortEffects: ATK +50% and DEF -100% (All Party/20s)
+    shortEffects: ATK +50% and DEF -100% (Party/20s)
     effects: 
       - desc: ATK +50%
         all: true
@@ -2470,7 +2471,7 @@
             buff: Crit Rate
             buffValue: 30
     - name: "Memories of Ocarina II"
-      shortEffects: AP recovery +50% (All Defenders/Self)
+      shortEffects: AP recovery +50% (Defenders/Self)
       effects: 
         - desc: AP recovery +50%
           meta:
@@ -2799,7 +2800,7 @@
 
   talents:
     - name: "First Valentine"
-      shortEffects: ATK/INT damage taken +15% when hit by a short range skill (All Enemies/10s)
+      shortEffects: ATK/INT damage taken +15% when hit by a short range skill (Enemies/10s)
       effects: 
         - desc: ATK damage taken +15% when hit by a short range skill (10s)
           all: Enemies
@@ -2882,7 +2883,7 @@
   rush:
     name: "Chocolate Blessing"
     picture: Blessing_Chocolate_Valentine_Verda
-    shortEffects: ATK/INT damage taken +40% (All Enemies/20s)
+    shortEffects: ATK/INT damage taken +40% (Enemies/20s)
     effects: 
       - desc: ATK damage taken +40%
         duration: 20
@@ -2980,7 +2981,7 @@
         - desc: No flinching when taking damage of 30% of max HP or less during a charge assault
           all: Attackers
     - name: "Bad Luck II"
-      shortEffects: Normal attack AP recovery +100% and evasion AP cost -50% (All Attackers)
+      shortEffects: Normal attack AP recovery +100% and evasion AP cost -50% (Attackers)
       effects: 
         - desc: Normal attack AP recovery +100%
           all: Attackers
@@ -3119,7 +3120,7 @@
             buffCondition: Short Range
             buffValue: 100
     - name: "Father’s Teachings"
-      shortEffects: Critical hit chance +30% and critical damage +30% when HP is 100%
+      shortEffects: Critical hit chance +30% and critical damage dealt +30% when HP is 100%
       effects: 
         - desc: Critical hit chance +30% when HP is 100%
           meta:
@@ -3127,7 +3128,7 @@
             buff: Crit Rate
             buffCondition: HP is 100
             buffValue: 30
-        - desc: Critical hit damage +30% when HP is 100%
+        - desc: Critical damage dealt +30% when HP is 100%
           meta:
             priority: 1
             buff: Crit Damage
@@ -3456,7 +3457,7 @@
 
   talents:
     - name: "Fresh Madonna Lilies II"
-      shortEffects: Normal attack AP recovery +100% and ATK +30% (All Party)
+      shortEffects: Normal attack AP recovery +100% and ATK +30% (Party)
       effects: 
         - desc: ATK +30%
           all: true
@@ -3956,7 +3957,7 @@
   rush:
     name: "Sharp Talons"
     picture: Sharp_Talons_Tyvane
-    shortEffects: Removes all buffs and DEF -30% (All Enemies/20s)
+    shortEffects: Removes all buffs and DEF -30% (Enemies/20s)
     effects:
       - desc: Removes buffs
         duration: 20
@@ -4216,6 +4217,7 @@
       **Rotation**
       
       Normal > Rocket Punch > Hammer Slammer > Jump'n'Thump*3 (Replace Hammer Slammer with Force Field if 104 AP or higher)
+
 
 - name: Crowe F. Almedio
   cat: gl
