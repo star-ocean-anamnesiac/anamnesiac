@@ -1159,7 +1159,7 @@
 
   talents:
     - name: "Heart on Fire"
-      shortEffects: ATK/INT/DEF -10% when hit by Undermine (Enemy/10s)
+      shortEffects: ATK/INT/DEF -10% when hit by Undermine (Enemies/10s)
       effects: 
         - desc: Undermine inflicts ATK -10% debuff on target (10s)
           meta:
