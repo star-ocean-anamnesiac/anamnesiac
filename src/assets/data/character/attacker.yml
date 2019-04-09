@@ -34,7 +34,7 @@
             buffValue: 60
     - name: "Clockwork Infantry"
       effects: 
-        - desc: Evasion AP cost -100% on perfect dodge
+        - desc: Evasion AP cost -100% on perfect dodge (10s)
     - name: "Holy Blessing"
       effects: 
         - desc: Normal attack AP recovery +100%
