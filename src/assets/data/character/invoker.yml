@@ -813,7 +813,7 @@
         - desc: No flinching when casting symbology
           all: true
     - name: "Infinite Curiosity"
-      shortEffects: ATK/INT damage dealt +15% when skill chain is >3 (All Party)
+      shortEffects: ATK/INT damage dealt +15% when skill chain is >3 (Party)
       effects:
         - desc: ATK damage dealt +15% when skill chain is >3
           all: true
@@ -957,7 +957,7 @@
             buff: Multiple Target Damage
             buffValue: 20
     - name: "The Expel Turnabout II"
-      shortEffects: Nullifies freeze/paralysis for 90 seconds (All Party)
+      shortEffects: Nullifies freeze/paralysis for 90 seconds (Party)
       effects: 
         - desc: Nullifies freeze for 90 seconds
           duration: 90
@@ -1234,7 +1234,7 @@
             buff: INT
             buffValue: 40
     - name: "Escort to the Altar II"
-      shortEffects: AP cost -20%, and AP cost -30%/-40%/-50% when hitcount is >50/>100/>150
+      shortEffects: AP cost -20%/-30%/-40%/-50% when hitcount is >0/>50/>100/>150
       effects: 
         - desc: AP cost -20%
           meta:
@@ -2113,7 +2113,7 @@
             buffValue: 20
     - name: "Vital Signs Check II"
       effects: 
-        - desc: Critical damage +35%
+        - desc: Critical damage dealt +35%
           all: true
           meta:
             priority: 3
@@ -2179,3 +2179,132 @@
     power: INT x 3500%
     maxHits: 13
     
+
+- name: Celine Jules (Awakened)
+  cat: gl
+  rating: 6
+  picture: Celine
+  weapon: staff
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 12390
+    atk: 1537
+    int: 3262
+    def: 1379
+    hit: 1050
+    grd: 826
+
+  talents:
+    - name: "Treasure Hunter II"
+      effects: 
+        - desc: INT +30%
+          all: true
+          meta:
+            priority: 1
+            buff: INT
+            buffValue: 30
+    - name: "Enchanted Symbology"
+      effects: 
+        - desc: All attacks have +25% chance to inflict silence
+          meta:
+            priority: 4
+            buff: Silence Attack Chance
+            buffValue: 25
+    - name: "A Lady's Poise II"
+      effects:
+        - desc: INT damage +20% when HP is 100%
+          meta:
+            priority: 4
+            buff: INT Damage
+            buffCondition: HP is 100%
+            buffValue: 20
+        - desc: No flinching when casting symbology         
+    - name: "Marze Born and Raised"
+      effects:
+        - desc: Symbology cast time -50%
+          meta:
+            priority: 4
+            buff: Cast Time Reduction
+            buffValue: 50
+        - desc: AP cost -40%
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 40
+        - desc: Rush combo damage +10%
+          meta:
+            priority: 4
+            buff: Rush Damage
+            buffValue: 10
+    - name: "Rising Sense of Adventure"
+      effects:
+        - desc: INT +20%
+          meta:
+            priority: 4
+            buff: INT
+            buffValue: 20   
+    - name: "Unrestrained Spirit"
+      effects:
+        - desc: Damage dealt +50% by symbology when skill chain is >3
+          meta:
+            priority: 4
+            buff: Damage
+            buffCondition: Skill Chain 3+
+            buffValue: 20          
+
+  skills:
+    - name: "Silencing Starlight"
+      picture: Star_Light
+      element: Light
+      power: INT x 790%
+      ap: 36
+      maxHits: 1
+      highlight: true
+    - name: "Silent Lightning"
+      picture: Lightning
+      element: Lightning
+      power: INT x 250%
+      ap: 23
+      maxHits: 10
+    - name: "Silencing Sunflare"
+      picture: Sunflare
+      element: Light
+      power: INT x 820%
+      ap: 42
+      maxHits: 6
+    - name: "Silencing Cyclone"
+      picture: Cyclone
+      element: Lightning
+      power: INT x 800%
+      ap: 50
+      maxHits: 6
+    - name: "Growth"
+      picture: Enhance_Growth
+      ap: 50
+      maxHits: 1
+      power: 0%
+      notes: ATK +25% (Party/20s)
+      meta:
+        priority: 2
+        buff: ATK
+        buffValue: 25
+      highlight: true
+      
+  rush:
+    name: "Silent Southern Cross"
+    picture: Silent_Southern_Cross_Celine
+    element: Light
+    effects: 
+      - desc: INT +50%
+        duration: 20
+        meta:
+          priority: 4
+          buff: INT
+          buffValue: 50
+    power: INT x 4000%
+    maxHits: 6
+    
+  notes: >
