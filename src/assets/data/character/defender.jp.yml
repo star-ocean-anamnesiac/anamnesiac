@@ -1030,4 +1030,114 @@
             buffValue: 50
     power: ATK x 4500%
     maxHits: 6
+
+- name: Vashyron
+  cat: jp
+  rating: 0
+  picture: Vashyron
+  weapon: gun
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 20475
+    atk: 2759
+    int: 1549
+    def: 3041
+    hit: 826
+    grd: 1022
+
+  talents:
+    - name: "Team Leader"
+      effects: 
+        - desc: HP +30%
+          all: true
+          meta:
+            priority: 1
+            buff: HP
+            buffValue: 30
+        - desc: No flinching when taking damage of 20% of max HP or less
+          all: true
+    - name: "Former Soldier's Ability"
+      effects: 
+        - desc: Single target damage +20%
+          all: true
+          meta:
+            priority: 1
+            buff: Single Target Damage
+            buffValue: 20
+        - desc: Single target damage +30% when HP is 100%
+          all: true
+          meta:
+            priority: 1
+            buff: Single Target Damage
+            buffCondition: HP is 100%
+            buffValue: 30
+        - desc: Critical hit rate +20% when HP is 100%
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Hit
+            buffCondition: HP is 100%
+            buffValue: 20
+    - name: "Danceable"
+      effects: 
+        - desc: Damage taken -100% after using Hell Impact (Self/0.5s)
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffValue: 100
+    - name: "Basel's Miser"
+      shortEffects: ATK +10% and DEF +20%
+      effects: 
+        - desc: ATK +10%
+          meta:
+            priority: 4
+            buff: ATK
+            buffValue: 10
+        - desc: DEF +20%
+          meta:
+            priority: 4
+            buff: DEF
+            buffValue: 20
+
+  skills:
+    - name: "Hard Knocker"
+      picture: 
+      power: ATK x 320%
+      ap: 14
+      maxHits: 4
+    - name: "Killer Distance"
+      picture: 
+      power: ATK x 270%
+      ap: 13
+      maxHits: 3
+    - name: "Hell Impact"
+      picture: 
+      power: ATK x 680%
+      ap: 35
+      maxHits: 13
+    - name: "Escape Blow"
+      picture: 
+      power: ATK x 290%
+      ap: 14
+      maxHits: 3
+      
+  rush:
+    name: "Invincible Drive"
+    picture: Invincible_Drive_Vashyron
+    shortEffects: Recovers +30% of max HP (Allies) and critical damage dealt +40% (Allies/20s)
+    effects: 
+      - desc: Recovers +30% of max HP
+        all: true
+      - desc: Critical damage dealt +40%
+        all: true
+        meta:
+          priority: 1
+          duration: 20
+          buff: Crit Damage
+          buffValue: 40
+    power: ATK x 4000%
+    maxHits: 15
     
