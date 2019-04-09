@@ -2104,9 +2104,9 @@
   rush:
     name: "Hyper Launcher"
     picture: Hyper_Launcher_Opera
-    shortEffects: Critical rate +30% (Party/20s) and Critical damage dealt +30% (Party/20s)
+    shortEffects: Critical hit rate +30% (Party/20s) and critical damage dealt +30% (Party/20s)
     effects: 
-      - desc: Critical rate +30%
+      - desc: Critical hit rate +30%
         duration: 20
         all: true
         meta:
