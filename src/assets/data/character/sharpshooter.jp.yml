@@ -2365,14 +2365,14 @@
         - desc: Nullifies charge assault critical damage penalty
     - name: "Perfect Makeup"
       effects: 
-        - desc: Critical hit rate +30% when hitcount is >100
+        - desc: Critical hit chance +30% when hitcount is >100
           all: true
           meta:
             priority: 1
             buff: Crit Rate
             buffCondition: Hit Count > 100
             buffValue: 30
-        - desc: Critical hit rate +45% when hitcount is >150
+        - desc: Critical hit chance +45% when hitcount is >150
           all: true
           meta:
             priority: 1
