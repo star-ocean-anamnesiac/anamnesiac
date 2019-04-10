@@ -2237,6 +2237,7 @@
   picture: Mafia
   weapon: gun
   ace: true
+  limited: true
   star: 5
 
   stats:
