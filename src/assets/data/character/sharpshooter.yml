@@ -753,7 +753,7 @@
             buff: ATK Damage Taken Reduction
             buffCondition: In Front Of Target
             buffValue: 20
-        - desc: 70% chance of surviving a lethal attack when at 20% of max HP or more
+        - desc: 70% chance of surviving a lethal attack when at 20% of max HP or more when in front of target
           all: true
     - name: "Side Order II"
       effects: 
