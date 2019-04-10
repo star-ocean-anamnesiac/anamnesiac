@@ -5560,7 +5560,7 @@
   rush:
     name: "Invincible Struggle"
     picture: Invincible_Struggle_Zephyr
-    shortEffects: AP cost -30% (Self/10s) and critical hit rate +100% (Self/10s)
+    shortEffects: AP cost -30% (Self/10s) and critical hit chance +100% (Self/10s)
     effects: 
       - desc: AP cost -30%
         duration: 10

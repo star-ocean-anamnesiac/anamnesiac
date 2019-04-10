@@ -2122,3 +2122,111 @@
           buffValue: 30
     power: ATK x 4000%
     maxHits: 10
+
+- name: Leanne (Summer)
+  cat: jp
+  rating: 0
+  picture: Beach_Reanbell
+  weapon: rifle
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15362
+    atk: 3010
+    int: 1575
+    def: 1733
+    hit: 1253
+    grd: 924
+
+  talents:
+    - name: "Suspicious Hills"
+      effects: 
+        - desc: Damage +30%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 30
+        - desc: ATK +50% when HP is 100%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: HP at 100%
+            buffValue: 50
+    - name: "Feelings for Friends"
+      effects: 
+        - desc: Absorbs 10% of damage dealt by normal attacks as HP
+          all: true
+    - name: "Pater's Present"
+      effects: 
+        - desc: No flinching when attacking
+        - desc: Damage taken -20%
+          meta:
+            priority: 4
+            buff: Damage Taken Reduction
+            buffValue: 20
+        - desc: AP cost -30% when skill chain >3
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain 3+
+            buffValue: 30
+    - name: "Waterproof"
+      shortEffects: ATK +20% and HP +10% (Self)
+      effects: 
+        - desc: ATK +20%
+          meta:
+            priority: 4
+            buff: ATK
+            buffValue: 20
+        - desc: HP +10%
+          meta:
+            priority: 4
+            buff: HP
+            buffValue: 10
+
+  skills:
+    - name: "Lay Down Snipe"
+      picture: Lay_Down_Snipe
+      power: ATK x 230%
+      ap: 15
+      maxHits: 3
+    - name: "Projectile Bolt"
+      picture: Projectile_Bolt
+      power: ATK x 840%
+      ap: 20
+      maxHits: 5
+    - name: "Heaven Air Raid"
+      picture: Heaven_Air_Raid
+      power: ATK x 180%
+      ap: 38
+      maxHits: 5
+    - name: "Warhead Delivery"
+      picture: Warhead_Delivery
+      power: ATK x 380%
+      ap: 29
+      maxHits: 1
+      
+  rush:
+    name: "Invincible Breaker"
+    picture: Invincible_Over_Summer_Reanbell
+    shortEffects: AP cost -40% (Self/20s) and ATK damage dealt +30% (Self/20s)
+    effects: 
+      - desc: AP cost -40%
+        duration: 20
+        meta:
+          priority: 4
+          buff: AP Cost Reduction
+          buffCondition: Skill Chain 3+
+          buffValue: 40
+      - desc: ATK damage dealt +30% 
+        duration: 20
+        meta:
+          priority: 1
+          buff: ATK Damage
+          buffValue: 30
+    power: ATK x 4500%
+    maxHits: 35
