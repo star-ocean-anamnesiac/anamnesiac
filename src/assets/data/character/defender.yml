@@ -1573,7 +1573,7 @@
 
 - name: Edge Maverick (Awakened)
   cat: gl
-  rating: 5
+  rating: 6
   picture: Edge
   weapon: ohs
   ace: true
@@ -1685,9 +1685,14 @@
     maxHits: 12
  
   notes: >
-      _Has a wide spread of varied buffs, in addition to boasting the largest HP buff available.  Since he carries an array of watered-down buffs
-      though, you'll never run into a situation where he contributes optimally.  While his awakening increased his damage output and gave him
-      some nice QoL perks, it didn't do much to improve him overall._      
+      _Edge's Awakening brings a host of new enhancements that do nothing to impress you. His post rush buff is still good, but his
+      talent buffs are mostly pity buffs that make him good when you're playing with random people. His saving grace is a meaty HP
+      Buff that stands out at 50%. This means he will always be contributing HP buffs to a team regardless of composition as it is
+      currently the largest by some distance. His air dodging makes him less clunky to use on top of that. Edge is more a character
+      for playing with randoms, or doing harder content solo where you combine him with someone like Dias to bulk your party._
+      
+      _To summarize, Edge is a unique character in that he's an okay character in a set up composition with friends, with one
+      outstanding buff. But for certain in-game activities he is very useful and worth considering for awakening._      
       
       **TL DR**
       
@@ -1697,6 +1702,8 @@
       - Good variety of buffs
       
       - Incredible HP buff
+      
+      - Pub Lord & Good for high end single player.
       
       
       **Cons**
