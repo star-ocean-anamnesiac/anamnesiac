@@ -1074,7 +1074,7 @@
             buff: Single Target Damage
             buffCondition: HP is 100%
             buffValue: 30
-        - desc: Critical hit rate +20% when HP is 100%
+        - desc: Critical hit chance +20% when HP is 100%
           all: true
           meta:
             priority: 1
@@ -1127,7 +1127,7 @@
   rush:
     name: "Invincible Drive"
     picture: Invincible_Drive_Vashyron
-    shortEffects: Recovers +30% of max HP (Allies) and critical damage dealt +40% (Allies/20s)
+    shortEffects: Recovers +30% of max HP (Party) and critical damage dealt +40% (Party/20s)
     effects: 
       - desc: Recovers +30% of max HP
         all: true
