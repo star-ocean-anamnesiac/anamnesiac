@@ -1015,7 +1015,7 @@
           all: true
     - name: "My First Sneakers"
       effects: 
-        - desc: AP cost -20% when Youth Mweracle is close to target
+        - desc: AP cost -20% when Youth Meracle is close to target
           all: true
           meta:
             priority: 4
