@@ -1182,9 +1182,11 @@
             buff: Single Target Damage
             buffValue: 10
     - name: "Star Ocean PR Chief"
+      effects:
         - desc: No flinching when taking damage of 25% of max HP or less
           all: true
     - name: "Ultimate Tsundere Monster"
+      effects:
         - desc: 70% chance of surviving a lethal attack when at 10% of max HP or more
 
   skills:
