@@ -3107,4 +3107,99 @@
           buffValue: 50
     power: INT x 4000%
     maxHits: 1
-    
+
+- name: Lucifer
+  cat: jp
+  rating: 0
+  picture: Lucifere
+  weapon: orb
+  ace: true
+  star: 5
+
+  stats:
+    hp: 14175
+    atk: 1523
+    int: 2718
+    def: 1155
+    hit: 1036
+    grd: 847
+
+  talents:
+    - name: "Ten Wise Men's Staff Officer"
+      effects: 
+        - desc: INT +15%
+          all: true
+          meta:
+            priority: 4
+            buff: INT
+            buffValue: 15
+    - name: "Sharp Eyes and Ears"
+      effects: 
+        - desc: Convert 55% of INT to ATK
+          all: Attackers/Sharpshooters/Defenders
+          meta:
+            priority: 1
+            buff: INT -> ATK
+            buffValue: 55
+    - name: "Observational Use Prime Field"
+      effects: 
+        - desc: Critical hit chance +20% when hitcount is >100
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: Hit Count > 100
+            buffValue: 20
+        - desc: Critical hit chance +40% when hitcount is >200
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: Hit Count > 200
+            buffValue: 40
+    - name: "Ruin of Treachery"
+      shortEffects: AP cost -50% after using Magnum Tornado (Self/10s)
+      effects: 
+        - desc: AP cost -50% after using Magnum Tornado
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 50
+
+  skills:
+    - name: "Right Wing"
+      picture: Right_Wing
+      element: Wind
+      power: INT x 540%
+      ap: 23
+      maxHits: 8
+    - name: "Left Wing"
+      picture: Left_Wing
+      element: Wind
+      power: INT x 540%
+      ap: 23
+      maxHits: 8
+    - name: "Tornado"
+      picture: Tornado
+      element: Wind
+      power: INT x 610%
+      ap: 29
+      maxHits: 2
+    - name: "Magnum Tornado"
+      picture: Magnum_Tornado
+      power: INT x 970%
+      ap: 35
+      maxHits: 9
+      
+  rush:
+    name: "Winds of Destruction"
+    picture: Winds_of_Destruction_Lucifer
+    element: Wind
+    shortEffects: INT damage dealt +60% (Self/20s)
+    effects: 
+      - desc: INT damage dealt +60%
+        duration: 20
+        meta:
+          priority: 4
+          buff: INT Damage
+          buffValue: 60
+    power: INT x 4000%
+    maxHits: 10
