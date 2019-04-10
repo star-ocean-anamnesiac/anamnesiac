@@ -80,7 +80,7 @@
   rush:
     name: "YoRHa Hacking Attack: Zero"
     picture: YoHRa_Hacking_Zero_9S
-    shortEffects: Recovers 50% of max HP, and ATK damage dealt +30% (All Party/20s)
+    shortEffects: Recovers 50% of max HP, and ATK damage dealt +30% (Party/20s)
     effects: 
       - desc: Recovers 50% HP
         all: true
@@ -161,7 +161,7 @@
   rush:
     name: "Lunar Divination"
     picture: Lunar_Divination_Reimi
-    shortEffects: Nullifies status ailments and recovers 15% of max HP every 3 seconds (All Party/15s)
+    shortEffects: Nullifies status ailments and recovers 15% of max HP every 3 seconds (Party/15s)
     effects: 
       - desc: Nullifies status ailments
         all: true
@@ -278,7 +278,7 @@
   rush:
     name: "Burst Emission"
     picture: Energy_Burst_Barrage_Maria
-    shortEffects: Removes buffs (All Enemies) and critical hit chance +40% (All Party/20s)
+    shortEffects: Removes buffs (Enemies) and critical hit chance +40% (Party/20s)
     effects: 
       - desc: Removes buffs
         all: Enemies
@@ -533,7 +533,7 @@
           all: true
         - desc: Additional hit that deals 5% of damage when using skills
     - name: "Admiral's Presence"
-      shortEffects: Damage dealt +35%, and damage dealt +50%/+65% when hitcount is >100/>200 (All Party)
+      shortEffects: Damage dealt +35%, and damage dealt +50%/+65% when hitcount is >100/>200 (Party)
       effects: 
         - desc: Damage dealt +35%
           all: true
@@ -556,7 +556,7 @@
             buffCondition: Hit Count > 200
             buffValue: 65
     - name: "Adult Style"
-      shortEffects: AP cost -10%/-20% when hitcount is >50/>100 (All Party)
+      shortEffects: AP cost -10%/-20% when hitcount is >50/>100 (Party)
       effects: 
         - desc: AP cost -10% when hitcount is >50
           all: true
@@ -946,7 +946,7 @@
   rush:
     name: "Rocket Slippers"
     picture: Rocket_Slippers_Verda
-    shortEffects: ATK damage dealt +30% and movement speed +30% (All Party/20s)
+    shortEffects: ATK damage dealt +30% and movement speed +30% (Party/20s)
     effects:
       - desc: ATK damage dealt +30%
         duration: 20
@@ -1151,7 +1151,7 @@
 
   talents:
     - name: "A Child of Science"
-      shortEffects: ATK/INT/DEF -15% when hit by Magnetic Field (All Enemies/10s)
+      shortEffects: ATK/INT/DEF -15% when hit by Magnetic Field (Enemies/10s)
       effects: 
         - desc: ATK -15% when hit by Magnetic Field (10 seconds)
           all: Enemies
@@ -1245,7 +1245,7 @@
   rush:
     name: "Rocket Slippers"
     picture: Rocket_Slippers_Verda
-    shortEffects: ATK damage dealt +30% and movement speed +30% (All Party/20s)
+    shortEffects: ATK damage dealt +30% and movement speed +30% (Party/20s)
     effects:
       - desc: ATK damage dealt +30%
         duration: 20
@@ -1271,54 +1271,54 @@
   star: 5
 
   stats:
-    hp: 18564
+    hp: 19278
     atk: 2854
     int: 1523
-    def: 2099
+    def: 2190
     hit: 1239
     grd: 910
 
   talents:
     - name: "Armory Contest Winner"
       effects: 
-        - desc: No flinching when taking damage of 15% of max HP or less
+        - desc: No flinching when taking damage of 15% of max HP or less 
           all: true
-        - desc: Taunt +2
+        - desc: Taunt +3 
           all: false
     - name: "Cultivated Victories"
-      shortEffects: Damage dealt +40% and ATK/INT damage taken -20% when targeted by enemy (All Party)
+      shortEffects: Damage dealt +45% and ATK/INT damage taken -25% when targeted by enemy (Party)
       effects: 
-        - desc: Damage dealt +40% when targeted by enemy
+        - desc: Damage dealt +45% when targeted by enemy
           all: true
           meta:
             priority: 1
             buff: Damage
             buffCondition: When holding aggro
-            buffValue: 40
-        - desc: ATK damage taken -20% when targeted by enemy
+            buffValue: 45
+        - desc: ATK damage taken -25% when targeted by enemy
           all: true
           meta:
             priority: 3
             buff: ATK Damage Taken Reduction
             buffCondition: When holding aggro
-            buffValue: 20
-        - desc: INT damage taken -20% when targeted by enemy
+            buffValue: 25
+        - desc: INT damage taken -25% when targeted by enemy
           all: true
           meta:
             priority: 3
             buff: INT Damage Taken Reduction
             buffCondition: When holding aggro
-            buffValue: 20
+            buffValue: 25
     - name: "Memento Ring"
-      shortEffects: Damage dealt +50% and critical hit chance +20% when not targeted by enemy (All Party)
+      shortEffects: Damage dealt +60% and critical hit chance +20% when not targeted by enemy (Party)
       effects: 
-        - desc: Damage dealt +50% when not targeted by enemy
+        - desc: Damage dealt +60% when not targeted by enemy
           all: true
           meta:
             priority: 1
             buff: Damage
             buffCondition: Not holding aggro
-            buffValue: 50
+            buffValue: 60
         - desc: Critical hit chance +20% when not targeted by enemy
           all: true
           meta:
@@ -1327,7 +1327,7 @@
             buffCondition: Not holding agro
             buffValue: 20
     - name: "Changing Heart"
-      shortEffects: ATK +15%, DEF +15%, and HP +30%
+      shortEffects: ATK +15%, DEF +20%, and HP +35%
       effects: 
         - desc: ATK +15%
           all: false
@@ -1335,18 +1335,18 @@
             priority: 1
             buff: ATK
             buffValue: 15
-        - desc: DEF +15%
+        - desc: DEF +20%
           all: false
           meta:
             priority: 4
             buff: DEF
-            buffValue: 15
-        - desc: HP +30%
+            buffValue: 20
+        - desc: HP +35%
           all: false
           meta:
             priority: 4
             buff: HP
-            buffValue: 30
+            buffValue: 35
           
   skills:
     - name: "Lightning Chain (Cherry Blossom)"
@@ -1375,7 +1375,7 @@
   rush:
     name: "Phoenix Blast"
     picture: Phoenix_Blast_Sakura_Dias 
-    shortEffects: Single target damage +30% and AP recovery +50% (All Party/20s)
+    shortEffects: Single target damage +30% and AP recovery +50% (Party/20s)
     element: Fire
     effects:
       - desc: Single target damage +30%
@@ -1392,7 +1392,7 @@
           priority: 1
           buff: AP Recovery
           buffValue: 50
-    power: ATK x 4000%
+    power: ATK x 4500%
     maxHits: 10
     
    
@@ -1651,7 +1651,7 @@
   rush:
     name: "Invincible Over"
     picture: Invincible_Over_Reanbell
-    shortEffects: Damage dealt +60% and critical hit chance +30% (All Party/20s)
+    shortEffects: Damage dealt +60% and critical hit chance +30% (Party/20s)
     effects: 
       - desc: Damage dealt +60%
         duration: 20
@@ -1698,7 +1698,7 @@
             buff: Damage
             buffValue: 30
     - name: "Stubborn Disposition"
-      shortEffects: Damage dealt +40%/_55% when hitcount is >100/>200 (All Party)
+      shortEffects: Damage dealt +40%/_55% when hitcount is >100/>200 (Party)
       effects: 
         - desc: Damage dealt +40% when hitcount is >100
           all: true
@@ -1760,7 +1760,7 @@
     name: "Simorgh Za"
     picture: Simorgh_Zai_Aya
     element: Fire
-    shortEffects: Single target damage +40% (All Party/20s)
+    shortEffects: Single target damage +40% (Party/20s)
     effects: 
       - desc: Single target damage +40%
         duration: 20
@@ -1805,7 +1805,7 @@
             buff: Crit Damage
             buffValue: 30
     - name: "Never Ending Chivalry"
-      shortEffects: Critical hit chance and critical damage +30%/+40% when hitcount is >100/>200 (All Party)
+      shortEffects: Critical hit chance and critical damage +30%/+40% when hitcount is >100/>200 (Party)
       effects: 
         - desc: Critical hit chance +30% when hitcount is >100
           all: true
@@ -1882,7 +1882,7 @@
   rush:
     name: "Murakumo"
     picture: Murakumo_Crimson_Grace_Phia
-    shortEffects: ATK damage dealt +30% (All Party/20s)
+    shortEffects: ATK damage dealt +30% (Party/20s)
     effects: 
       - desc: ATK damage dealt +30%
         duration: 20
@@ -1985,7 +1985,7 @@
   rush:
     name: "Blood Scylla"
     picture: Blood_Scylla_JKJK
-    shortEffects: Recovers 30% of max HP and ATK/INT damage dealt +25% (All Party/20s)
+    shortEffects: Recovers 30% of max HP and ATK/INT damage dealt +25% (Party/20s)
     effects:
       - desc: Recovers 30% of max HP
         duration: 20
