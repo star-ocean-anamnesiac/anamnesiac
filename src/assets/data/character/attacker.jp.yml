@@ -5707,7 +5707,7 @@
         - desc: INT damage dealt +20%
           all: true
     - name: "Gentle Expression"
-      shortEffects: ATK damage & INT damage dealt +30%/+40% when hitcount is >100/>200
+      shortEffects: ATK/INT damage dealt +30%/+40% when hitcount is >100/>200
       effects: 
         - desc: ATK damage dealt +30% when hitcount is >100
           all: true
