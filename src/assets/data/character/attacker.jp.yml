@@ -5576,3 +5576,109 @@
           buffValue: 100
     power: ATK x 4000%
     maxHits: 30
+
+- name: Reimi Saionji (Bridal)
+  cat: jp
+  rating: 0
+  picture: Bridal_Reimi
+  weapon: bow
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15540
+    atk: 2704
+    int: 1563
+    def: 1943
+    hit: 1141
+    grd: 840
+
+  talents:
+    - name: "Ceremonial Bow Archer"
+      effects: 
+        - desc: ATK +40%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 40
+        - desc: ATK +50% when hitcount is >100
+          all: true
+          meta:
+            priority: 3
+            buff: ATK
+            buffCondition: Hit Count > 100
+            buffValue: 50
+        - desc: ATK +60% when hitcount is >150
+          all: true
+          meta:
+            priority: 3
+            buff: ATK
+            buffCondition: Hit Count > 150
+            buffValue: 60
+    - name: "Shinto Dance"
+      effects: 
+        - desc: AP recovery +50%
+          all: true
+          meta:
+            priority: 4
+            buff: AP Recovery
+            buffValue: 50
+        - desc: Rush gauge filled 20% (Self) and 10% (Party) at mission start
+          all: true
+    - name: "Elegant Figure"
+      effects: 
+        - desc: Haze Dance and Chaotic Blossom damage dealt +100% when skill chain is >3
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Skill Chain 3+
+            buffValue: 100
+        - desc: Haze Dance and Chaotic Blossom damage dealt +200% when skill chain is >5
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Skill Chain 5+
+            buffValue: 200
+    - name: "Blooming Peony"
+      effects: 
+        - desc: Nullifies status ailments (180s)
+        - desc: Movement rate +30%
+        - desc: Evasion distance & rate +100%
+
+  skills:
+    - name: "Rainstorm"
+      picture: Rainstorm
+      power: ATK x 170%
+      ap: 15
+      maxHits: 3
+      highlight: true
+    - name: "Hazy Dance"
+      picture: Hazy_Dance
+      power: ATK x 330%
+      ap: 27
+      maxHits: 3
+    - name: "Savage Sparrows"
+      picture: Savage_Sparrows
+      power: ATK x 150%
+      ap: 14
+      maxHits: 9
+    - name: "Chaotic Blossom"
+      picture: Chaotic_Blossoms
+      power: ATK x 810%
+      ap: 40
+      maxHits: 11
+      highlight: true
+
+  rush:
+    name: "Fan Dance Fall"
+    picture: Fandance_Fall_Wedding_Reimi
+    shortEffects: Recovers 15% of max HP every 3 seconds (Party/20s)
+    effects: 
+      - desc: Recovers 15% of max HP every 3 seconds
+        all: true
+        duration: 20
+    power: ATK x 4000%
+    maxHits: 16
+    
