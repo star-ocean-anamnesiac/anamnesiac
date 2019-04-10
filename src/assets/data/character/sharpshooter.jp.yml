@@ -2329,3 +2329,135 @@
           buffValue: 40
     power: ATK x 3500%
     maxHits: 3
+
+- name: Precis Neumann (Bridal)
+  cat: jp
+  rating: 0
+  picture: Bridal_Precis
+  weapon: arm
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 14070
+    atk: 2468
+    int: 1537
+    def: 1773
+    hit: 1253
+    grd: 938
+
+  talents:
+    - name: "Flower Fairy"
+      effects: 
+        - desc: Critical hit chance +15%
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffValue: 15
+        - desc: Critical damage dealt +15%
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Damage
+            buffValue: 15
+        - desc: Nullifies charge assault critical damage penalty
+    - name: "Perfect Makeup"
+      effects: 
+        - desc: Critical hit rate +30% when hitcount is >100
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: Hit Count > 100
+            buffValue: 30
+        - desc: Critical hit rate +45% when hitcount is >150
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: Hit Count > 150
+            buffValue: 45
+        - desc: Critical damage dealt +30% when hitcount is >100
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Damage
+            buffCondition: Hit Count > 100
+            buffValue: 30
+        - desc: Critical damage dealt +45% when hitcount is >150
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Damage
+            buffCondition: Hit Count > 150
+            buffValue: 45
+    - name: "Creator of Smiles"
+      effects: 
+        - desc: Hitcount timer +2 seconds
+          all: true
+        - desc: Movement speed +30%
+          all: true
+        - desc: No flinching when attacking
+        - desc: Damage taken -30%
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffValue: 30
+    - name: "Brilliant Gerbera"
+      effects: 
+        - desc: AP cost -20% when hitcount is >50
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffCondition: Hit Count > 50
+            buffValue: 20
+        - desc: AP cost -40% when hitcount is >100
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffCondition: Hit Count > 100
+            buffValue: 40
+        - desc: ATK +20% when hitcount is >100
+          meta:
+            priority: 4
+            buff: ATK
+            buffCondition: Hit Count > 100
+            buffValue: 20
+
+  skills:
+    - name: "Hammer Slammer"
+      picture: Hammer_Slammer
+      power: ATK x 220%
+      ap: 18
+      maxHits: 6
+    - name: "Barrier"
+      picture: Force_Field
+      power: ATK x 200%
+      ap: 16
+      maxHits: 10
+    - name: "Jump 'n' Thump"
+      picture: Jump_n_Thump
+      power: ATK x 370%
+      ap: 29
+      maxHits: 1
+    - name: "Parabola Beam"
+      picture: Parabola_Beam
+      power: ATK x 730%
+      ap: 36
+      maxHits: 10
+      
+  rush:
+    name: "Happiness Charge"
+    picture: Happiness_Charge_Bridal_Precis
+    shortEffects: Damage dealt +70% (Party/20s)
+    effects: 
+      - desc: Damage dealt +70%
+        all: true
+        meta:
+          priority: 1
+          buff: Damage
+          buffValue: 70
+    power: ATK x 4000%
+    maxHits: 9
