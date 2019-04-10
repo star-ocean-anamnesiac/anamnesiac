@@ -5626,8 +5626,8 @@
             buff: AP Recovery
             buffValue: 50
         - desc: Rush gauge filled 20% (Self) and 10% (Party) at mission start
-          all: true
     - name: "Elegant Figure"
+      shortEffects: Haze Dance and Chaotic Blossom damage dealt +100%/+200% when skill chain is >3/>5
       effects: 
         - desc: Haze Dance and Chaotic Blossom damage dealt +100% when skill chain is >3
           meta:
@@ -5681,4 +5681,118 @@
         duration: 20
     power: ATK x 4000%
     maxHits: 16
-    
+
+- name: Clair Lasbard (Bridal)
+  cat: jp
+  rating: 0
+  picture: Bridal_Clair
+  weapon: dagger
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 17210
+    atk: 3245
+    int: 1549
+    def: 1983
+    hit: 1141
+    grd: 819
+
+  talents:
+    - name: "Affection for Native Land"
+      effects: 
+        - desc: ATK damage dealt +20%
+          all: true
+        - desc: INT damage dealt +20%
+          all: true
+    - name: "Gentle Expression"
+      shortEffects: ATK damage & INT damage dealt +30%/+40% when hitcount is >100/>200
+      effects: 
+        - desc: ATK damage dealt +30% when hitcount is >100
+          all: true
+          meta:
+            priority: 1
+            buff: ATK Damage
+            buffCondition: Hit Count > 100
+            buffValue: 30
+        - desc: ATK damage dealt +40% when hitcount is >200
+          all: true
+          meta:
+            priority: 1
+            buff: ATK Damage
+            buffCondition: Hit Count > 200
+            buffValue: 40
+        - desc: INT damage dealt +30% when hitcount is >100
+          all: true
+          meta:
+            priority: 1
+            buff: INT Damage
+            buffCondition: Hit Count > 100
+            buffValue: 30
+        - desc: INT damage dealt +40% when hitcount is >200
+          all: true
+          meta:
+            priority: 1
+            buff: INT Damage
+            buffCondition: Hit Count > 200
+            buffValue: 40
+    - name: "Luxurious and Gorgeous"
+      effects: 
+        - desc: AP cost -15% at long range
+          all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Long Range
+            buffValue: 15
+        - desc: Evasion possible during air attacks
+    - name: "Pure White Cymbidium"
+      shortEffects: ATK +20% and HP +10%
+      effects: 
+        - desc: ATK +20%
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 20
+        - desc: HP +10%
+          meta:
+            priority: 1
+            buff: HP
+            buffValue: 10
+
+  skills:
+    - name: "Shadow Flower"
+      picture: Shadow_Flower_Forward
+      power: ATK x 220%
+      ap: 15
+      maxHits: 6
+    - name: "Black Shadow Flower"
+      picture: Shadow_Flower_Back
+      power: ATK x 220%
+      ap: 15
+      maxHits: 6
+    - name: "Mirror Slice"
+      picture: Mirror_Slice
+      power: ATK x 1000%
+      ap: 32
+      maxHits: 6
+    - name: "Victory Terror"
+      picture: Victory_Terror
+      power: ATK x 550%
+      ap: 30
+      maxHits: 10
+
+  rush:
+    name: "Glinting Knives of Carnage"
+    picture: Glinting_Knives_of_Carnage_Wedding_Clair
+    shortEffects: ATK +80% (Self/20s)
+    effects: 
+      - desc: ATK +80%
+        duration: 20
+        meta:
+          priority: 1
+          buff: ATK
+          buffValue: 80
+    power: ATK x 4500%
+    maxHits: 1
