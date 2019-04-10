@@ -2340,87 +2340,124 @@
   star: 5
 
   stats:
-    hp: 14280
-    atk: 2993
+    hp: 14070
+    atk: 2468
     int: 1537
     def: 1773
-    hit: 1371
-    grd: 924
+    hit: 1253
+    grd: 938
 
   talents:
-    - name: ""
+    - name: "Flower Fairy"
       effects: 
-        - desc: Damage +45%
+        - desc: Critical hit chance +15%
           all: true
           meta:
             priority: 1
-            buff: Damage
+            buff: Crit Rate
+            buffValue: 15
+        - desc: Critical damage dealt +15%
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Damage
+            buffValue: 15
+        - desc: Nullifies charge assault critical damage penalty
+    - name: "Perfect Makeup"
+      effects: 
+        - desc: Critical hit rate +30% when hitcount is >100
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: Hit Count > 100
+            buffValue: 30
+        - desc: Critical hit rate +45% when hitcount is >150
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: Hit Count > 150
             buffValue: 45
-        - desc: ATK +65% when HP is 100%
+        - desc: Critical damage dealt +30% when hitcount is >100
           all: true
           meta:
             priority: 1
-            buff: Damage
-            buffCondition: HP at 100%
-            buffValue: 65
-    - name: ""
+            buff: Crit Damage
+            buffCondition: Hit Count > 100
+            buffValue: 30
+        - desc: Critical damage dealt +45% when hitcount is >150
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Damage
+            buffCondition: Hit Count > 150
+            buffValue: 45
+    - name: "Creator of Smiles"
       effects: 
-        - desc: Evasion AP cost -50%
+        - desc: Hitcount timer +2 seconds
           all: true
         - desc: Movement speed +30%
           all: true
-    - name: ""
+        - desc: No flinching when attacking
+        - desc: Damage taken -30%
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffValue: 30
+    - name: "Brilliant Gerbera"
       effects: 
-        - desc: Enables evasion during air attacks
-        - desc: Movement distance & speed +100%
-    - name: ""
-      effects: 
-        - desc: ATK +20%
+        - desc: AP cost -20% when hitcount is >50
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffCondition: Hit Count > 50
+            buffValue: 20
+        - desc: AP cost -40% when hitcount is >100
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffCondition: Hit Count > 100
+            buffValue: 40
+        - desc: ATK +20% when hitcount is >100
           meta:
             priority: 4
             buff: ATK
+            buffCondition: Hit Count > 100
             buffValue: 20
-        - desc: HIT +10%
-          meta:
-            priority: 4
-            buff: HIT
-            buffValue: 10
 
   skills:
-    - name: ""
-      picture: 
+    - name: "Hammer Slammer"
+      picture: Hammer_Slammer
       power: ATK x 220%
       ap: 18
       maxHits: 6
-    - name: ""
-      picture: 
+    - name: "Barrier"
+      picture: Force_Field
       power: ATK x 200%
       ap: 16
       maxHits: 10
-    - name: ""
-      picture: 
+    - name: "Jump 'n' Thump"
+      picture: Jump_n_Thump
       power: ATK x 370%
       ap: 29
       maxHits: 1
-    - name: ""
-      picture: 
+    - name: "Parabola Beam"
+      picture: Parabola_Beam
       power: ATK x 730%
       ap: 36
       maxHits: 10
       
   rush:
-    name: ""
-    picture: 
-    shortEffects: 
+    name: "Happiness Charge"
+    picture: Happiness_Charge_Bridal_Precis
+    shortEffects: Damage dealt +70% (Party/20s)
     effects: 
-      - desc: Recovers 50% HP
-        all: true
-      - desc: ATK damage dealt +30% 
-        duration: 20
+      - desc: Damage dealt +70%
         all: true
         meta:
           priority: 1
-          buff: ATK Damage
-          buffValue: 30
+          buff: Damage
+          buffValue: 70
     power: ATK x 4000%
     maxHits: 9
