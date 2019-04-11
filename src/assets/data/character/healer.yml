@@ -754,7 +754,7 @@
     name: "Celestial Calling"
     picture: Celestial_Calling_Eve
     element: Light
-    shortEffects: Revives incapacitated allies at 1 HP (Party) and INT +100% (Self/20s)
+    shortEffects: Revives incapacitated allies (Party) and INT +100% (Self/20s)
     effects: 
       - desc: Revives at 1 HP
         all: true
@@ -1469,7 +1469,6 @@
             buffCondition: HP > 50%
             buffValue: 50
     - name: "Beach Body II"
-      shortEffects: ATK/INT damage dealt +10%/+25% when skill chain is >0/>3
       effects:
         - desc: ATK damage dealt +10%
           all: true
@@ -1719,7 +1718,7 @@
     name: "Celestial Calling"
     picture: Celestial_Calling_Eve
     element: Light
-    shortEffects: Revives incapacitated allies at 1 HP (Party) and INT +100% (Self/20s)
+    shortEffects: Revives incapacitated allies (Party) and INT +100% (Self/20s)
     effects: 
       - desc: Revives at 1 HP
         all: true
