@@ -1142,7 +1142,7 @@
           
   skills:
     - name: "Deep Freeze"
-      picture: Deep Freeze
+      picture: Deep_Freeze
       element: Ice
       power: INT x 530%
       ap: 30
