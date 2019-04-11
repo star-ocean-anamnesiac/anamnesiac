@@ -2688,7 +2688,7 @@
   
   skills:
     - name: "Balloon Splash"
-      picture: Ballon_Splash
+      picture: Balloon_Splash
       element: Ice
       power: ATK x 250%
       ap: 14
