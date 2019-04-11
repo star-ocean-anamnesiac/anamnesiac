@@ -668,6 +668,83 @@
       *Sylvan>Terror>Sylvan>Terror or Sylvan spam - Unawakened/EN*
 
 
+- name: Emmerson T. Kenny
+  cat: jp
+  rating: 3
+  picture: Emmerson
+  weapon: gun
+  star: 5
+
+  stats:
+    hp: 14280
+    atk: 1995
+    int: 1391
+    def: 1432
+    hit: 1120
+    grd: 847
+
+  talents:
+    - name: "Inspired Action"
+      effects: 
+        - desc: Hitcount timer +2 seconds
+          all: true
+    - name: "Daredevil's Courage"
+      effects: 
+        - desc: Additional hit that deals 20% of damage during normal attacks
+        
+  skills:
+    - name: "Heavenly Flight"
+      picture: Heavenly_Flight
+      power: ATK x 460%
+      ap: 35
+      maxHits: 4
+    - name: "Laser Blast"
+      picture: Laser_Blast
+      power: ATK x 190%
+      ap: 20
+      maxHits: 3
+    - name: "Seraphic Thunder"
+      picture: Seraphic_Thunder_I
+      element: Lightning
+      power: ATK x 330%
+      ap: 30
+      maxHits: 8
+    - name: "Hunter's Moon"
+      picture: Hunter's_Moon
+      power: ATK x 370%
+      ap: 32
+      maxHits: 7
+      
+  rush:
+    name: "Energy Burst Glaive"
+    picture: Energy_Burst_Glaive_Emmerson
+    effects: 
+        - desc: ATK +80% 
+          duration: 20
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 80
+    power: ATK x 3000%
+    maxHits: 7
+    
+  notes: >
+      _Emmerson, the bottom of the barrel SS till he gets his awakening. He has some positives, his talents mean his normals pack a
+      bit of extra punch, and he has benefits to comps built around the hit counter. He also has a pretty big post rush ATK buff
+      for himself, so he'll be a decent assist in the future too._
+      
+      _The downsides, well he is providing little to no utility to the party aside from his hit count extension, and that is kind of
+      the main theme of the sharpshooter role, to be buffers. On top of that he's a gun wielder who doesn't have a ranged combo 
+      which means lots of CA usage which has a lot of risks, not only due to the penatly if you get hit but you may normal at short
+      range as a gun user. Which is suicidal in harder content.
+      
+      _Emmerson is just bad, one day he'll shine, but currently he is just, bad. Not utterly worthless but I wouldn't recommend using
+      him unless you're a masochist._
+      
+      
+      **TL DR**
+      
+      
 - name: Emmerson T. Kenny (Awakened)
   cat: jp
   rating: 3
@@ -853,6 +930,117 @@
       *Normal>Moon>Thorn>Moon*n - -AP/above 50hit*
 
 
+- name: Clair Lasbard
+  cat: jp
+  rating: 6
+  picture: Clair
+  weapon: dagger
+  star: 5
+
+  stats:
+    hp: 14175
+    atk: 2153
+    int: 1405
+    def: 1444
+    hit: 1134
+    grd: 840
+
+  talents:
+    - name: "Reach Further Beyond"
+      effects: 
+        - desc: ATK damage taken -30%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK Damage Taken Reduction
+            buffValue: 30
+    - name: "Apris's Divine Favor"
+      effects: 
+        - desc: No flinching when taking damage of 20% of max HP or less
+          all: true
+        
+  skills:
+    - name: "Hydroblades"
+      picture: Hydroblades
+      element: Ice
+      power: ATK x 190%
+      ap: 20
+      maxHits: 2
+    - name: "Sylvan Shot"
+      picture: Sylvan_Shot
+      power: ATK x 200%
+      ap: 20
+      maxHits: 8
+    - name: "Mirror Blade"
+      picture: Mirror_Blade
+      power: ATK x 680%
+      ap: 40
+      maxHits: 6
+    - name: "Victory Terror"
+      picture: Victory_Terror
+      power: ATK x 500%
+      ap: 35
+      maxHits: 10
+      
+  rush:
+    name: "Flying Guillotine Slash"
+    picture: Flying_Guillotine_Slash_Clair
+    effects: 
+        - desc: Damage dealt +80%
+          duration: 20
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 80
+    power: ATK x 3000%
+    maxHits: 6
+    
+  notes: >
+      _Clair is the original tank. The OG kite character. Even now for she is one and perhaps even the best non-ace character in the
+      game. She follows a different line of thinking for sharpshooters with her talents, being defensive utility instead of offensive
+      utility. Though her post rush damage is still the highest damage buff in the game of 80%, which is pretty huge. Her talents give
+      the party anti-flinch without needing a defender and arguably her best aspect is her ATK damage taken buff. This has yet to
+      be bettered, even on JP which is over a year ahead giving her a unique defensive niche that she will always give to any party
+      that includes her. She is a solid kite, able to use sylvan shot in particular with it's slight tracking to deal damage as she
+      moves, while victory terror deals good damage and has good rush gain when she's not got aggro._
+      
+      _Clair does have her downsides. Victory Terror is her best move but without the ability dodge in the air it is risky to use
+      especially when you're the aggro target which can gimp her damage considerably. Also just being non-ace means her stats
+      themselves are lesser. Plus while post-rush she helps bring the pain she isn't a good option if you're looking for someone to
+      help the party deal damage in the same way Maria can for instance._
+      
+      _In summary Clair is a fantastic character and one worth considering taking to MLB due to being cheaper to limit break and augment
+      which makes her an option worth considering for newer players wanting a decent character early. She is also pretty future proof
+      with her assist and her eventual awakening both being quite powerful._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Anti-flinch for the party. No defender required.
+      - The best ATK damage reduction buff in the game.
+      - The best post rush damage buff in the game.
+      - Daggers are a great weapon, with excellent kiting ability.
+      
+      - Non-ace so cheaper to limit break and augment.
+      
+      
+      **Cons**
+      
+      - Lacks offensive buffs pre-rush.
+      - High animation lock on her best rush generation move (Victory Terror)
+      - Non-ace so has less stats.
+      
+      
+      **Rotation**
+      
+      *Normal > Victory Terror > Sylvan Shot > Victory Terror (Best Rush Gain)*
+      *Normal > Sylvan Shot > Hydro Blade > Sylvan Shot > Spam till out of AP (General Damage)*
+      
+      
 - name: Clair Lasbard (Awakened)
   cat: jp
   rating: 6
@@ -1030,8 +1218,143 @@
       *Normal>filler 1>filler 2>(filler 1>)Mirror Slice^n OR Mirror Slice>dodge after hit 4*
       
       *Normal>Aqua>filler>Aqua - vs fat bosses that take 4+ hits*
- 
- 
+
+
+- name: Miki Sauvester (Summer)
+  cat: jp
+  rating: 9
+  picture: Everlasting_Summer_Miki
+  weapon: bow
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 2468
+    int: 1575
+    def: 1523
+    hit: 1260
+    grd: 938
+
+  talents:
+    - name: "Stir-Fried Noodles"
+      effects: 
+        - desc: Damage dealt +45%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 45  
+    - name: "Undivided Attention"
+      effects: 
+        - desc: ATK damage taken -20% when in front of target
+          all: true
+          meta:
+            priority: 1
+            buff: ATK Damage Taken Reduction
+            buffCondition: In Front Of Target
+            buffValue: 20
+        - desc: 70% chance of surviving a lethal attack when at 20% of max HP or more when in front of target
+          all: true
+    - name: "Side Order II"
+      effects: 
+        - desc: Critical hit chance +30% when behind target
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: Behind Target
+            buffValue: 30
+    - name: "Summer Snow Cone"
+      effects: 
+        - desc: Normal attack AP recovery +100%
+          all: true
+          meta:
+            priority: 1
+            buff: AP Recovery From Normal Attacks
+            buffValue: 100
+        - desc: Evasion possible during air attacks
+
+  skills:
+    - name: "Heavenly Flight"
+      picture: Heavenly_Flight
+      power: ATK x 310%
+      ap: 29
+      maxHits: 4
+    - name: "Sonic Thorn"
+      picture: Sonic_Thorn
+      power: ATK x 200%
+      ap: 20
+      maxHits: 2
+    - name: "Hunter's Moon"
+      picture: Hunter's_Moon
+      power: ATK x 310%
+      ap: 29
+      maxHits: 7
+    - name: "Howling Wind"
+      picture: Howling_Wind
+      power: ATK x 550%
+      ap: 32
+      maxHits: 1
+      
+  rush:
+    name: "Rain on Your Parade"
+    picture: Rain_on_Your_Parade_Summer_Miki
+    shortEffects: Critical hit chance +10% and critical damage dealt +40% (Party/20s)
+    effects: 
+      - desc: Critical hit chance +10%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 10
+      - desc: Critical damage +40%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Crit Damage
+          buffValue: 40
+    power: ATK x 4000%
+    maxHits: 24
+    
+  notes: >
+      _Miki puts on her bikini to show us her summer body and is a rather uniqe bow ace sharpshooter. Her talents are quite conditional
+      much like Summer Myuria. She helps the aggro target by giving them ATK damage reduction, and helps out damage dealers by
+      giving a crit rate boost but only if your behind the target. Now with summer her AP recovery on normals is 100% which is a
+      pretty huge buff. Her damage buff is now quite good at 45% and the amazing buff she gives is still that 70/20 grit chance to
+      the party which will make her much better for the party. On top of all this her post rush crit damage boost is pretty good
+      and she now has a stronger rush. She'll stilll struggle with mobile targets but her damage output will stll be respectable._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Party wide grit.
+      - Big crit damage buff post rush.
+      
+      - Damage reduction that helps the aggro target.
+      
+      - Ap recovery on normals.
+      
+      - Good damage buff
+      
+      **Cons**
+      - Buffing crit damage so much isn't that good when you buff crit rate so little.
+      - Howling Wind is good but clunky to use.
+      
+      - Bow AI.
+      
+      
+      **Rotation**
+      
+      *Normal > Hunter's Moon > Sonic Thorn > Hunter's Moon (General Combo.)* 
+      
+      
 - name: Verda Kleiman
   cat: jp
   rating: 0
@@ -2633,6 +2956,8 @@
   rating: 0
   picture: Beach_Evelysse
   weapon: rifle
+  ace: true
+  limited: true
   star: 5
 
   stats:
