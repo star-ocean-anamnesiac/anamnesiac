@@ -2685,7 +2685,6 @@
             buff: Damage Taken Reduction
             buffValue: 30
 
-  
   skills:
     - name: "Balloon Splash"
       picture: Balloon_Splash
