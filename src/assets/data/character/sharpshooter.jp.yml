@@ -19,7 +19,7 @@
   talents:
     - name: "Fleeting Kindness"
       effects: 
-        - desc: Damage +45%
+        - desc: Damage dealt +45%
           all: true
           meta:
             priority: 1
@@ -82,7 +82,7 @@
     picture: YoHRa_Hacking_Zero_9S
     shortEffects: Recovers 50% of max HP, and ATK damage dealt +30% (Party/20s)
     effects: 
-      - desc: Recovers 50% HP
+      - desc: Recovers 50% of max HP
         all: true
       - desc: ATK damage dealt +30% 
         duration: 20
@@ -171,6 +171,84 @@
     power: ATK x 2500%
     maxHits: 7
     element: Dark
+
+
+- name: Maria Traydor
+  cat: jp
+  rating: 8
+  picture: Maria
+  weapon: gun
+  ace: true
+  star: 5
+
+  stats:
+    hp: 14070
+    atk: 2193
+    int: 1563
+    def: 1706
+    hit: 1260
+    grd: 924
+
+  talents:
+    - name: "Natural Born Leader"
+      effects: 
+        - desc: Damage dealt +40%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 40
+    - name: "Alternating Step"
+      effects: 
+        - desc: Damage taken -20%
+          meta:
+            priority: 4
+            buff: Damage Taken Reduction
+            buffValue: 20
+
+  skills:
+    - name: "Aiming Device"
+      picture: Aiming_Device
+      power: ATK x 200%
+      ap: 20
+      maxHits: 1
+    - name: "Crimson Squall"
+      picture: Crimson_Squall
+      power: ATK x 340%
+      ap: 29
+      maxHits: 9
+    - name: "Laser Blast"
+      picture: Laser_Blast
+      power: ATK x 190%
+      ap: 20
+      maxHits: 3
+    - name: "Gravity Bullet"
+      picture: Gravity_Bullet
+      element: Dark
+      power: ATK x 230%
+      ap: 24
+      maxHits: 12
+      
+  rush:
+    name: "Energy Burst Barrage"
+    picture: Energy_Burst_Barrage_Maria
+    shortEffects: Removes all buffs (Enemies) and critical hit chance +40% (Party/20s)
+    effects: 
+      - desc: Removes buffs
+        all: Enemies
+      - desc: Critical hit chance +40%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 40
+    power: ATK x 3000%
+    maxHits: 6
+    
+  notes: >  
+      
+      **TL DR**
 
 
 - name: Maria Traydor (Awakened)
@@ -337,6 +415,94 @@
       *Normal > Crimson Squall > Aiming Device  > Crimson Squall > Crimson Squall (Rush Gain)*
 
 
+- name: Nel Zelpher
+  cat: jp
+  rating: 4
+  picture: Nel
+  weapon: dagger
+  ace: true
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 2153
+    int: 1549
+    def: 1589
+    hit: 1246
+    grd: 924
+
+  talents:
+    - name: "Crimson Blade"
+      effects: 
+        - desc: Normal attacks have +15% chance to inflict poison
+          meta:
+            priority: 4
+            buff: Poison Attack Chance
+            buffValue: 15
+    - name: "Prayer for Peace"
+      effects: 
+        - desc: Critical hit chance +10%
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffValue: 10
+    - name: "Assassin's Stealth"
+      effects: 
+        - desc: AP cost -15%
+          all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 15
+    - name: "Covert Operation"
+      effects: 
+        - desc: Repel +1
+
+  skills:
+    - name: "Sylvan Shot"
+      picture: Sylvan_Shot
+      power: ATK x 200%
+      ap: 20
+      maxHits: 8
+    - name: "Poisonous Guillotine"
+      picture: Guillotine
+      power: ATK x 370%
+      ap: 32
+      maxHits: 4
+    - name: "Victory Terror"
+      picture: Victory_Terror
+      power: ATK x 500%
+      ap: 35
+      maxHits: 10
+    - name: "Poisonous Blade"
+      picture: Mirror_Blade
+      power: ATK x 680%
+      ap: 40
+      maxHits: 6
+      
+  rush:
+    name: "Divine Wrath"
+    picture: Divine_Wrath_Nel
+    shortEffects: Attacks have +15% chance to inflict poison, and an additional hit that deals 20% more damage (Self/20s)
+    effects: 
+      - desc: Attacks have +15% chance to inflict poison
+        duration: 20
+        meta:
+          priority: 4
+          buff: Poison Attack Chance
+          buffValue: 15
+      - desc: Additional hit that deals 20% more damage
+        duration: 20
+      - desc: High chance to inflict Deadly Poison during rush
+    power: ATK x 2000%
+    maxHits: 18
+
+  notes: >
+      
+      **TL DR**
+
+
 - name: Nel Zelpher (Awakened)
   cat: jp
   rating: 4
@@ -397,7 +563,7 @@
             priority: 1
             buff: Damage
             buffValue: 30
-        - desc: ATK damage taken -15% while inflicted with poison
+        - desc: ATK damage taken -15% when poisoned
           all: Enemies
           meta:
             priority: 1
@@ -417,9 +583,6 @@
             priority: 1
             buff: HIT
             buffValue: 10
-    - name: "Captain of the Enma Division"
-      effects: 
-        - desc: ATK +30% & HIT +10%
 
   skills:
     - name: "Sylvan Shot"
@@ -580,14 +743,14 @@
             priority: 1
             buff: Crit Rate
             buffValue: 50
-        - desc: Critical damage +50%
+        - desc: Critical damage dealt +50%
           meta:
             priority: 1
             buff: Crit Damage
             buffValue: 50
         - desc: Recovers 100% AP on perfect dodge
     - name: "As a Family of Heroes"
-      shortEffects: ATK +40%, DEF +20%, HIT +10%, HP +10%
+      shortEffects: ATK +40%, DEF +20%, HIT +10%, and HP +10%
       effects: 
         - desc: ATK +40%
           meta:
@@ -888,7 +1051,7 @@
 
   talents:
     - name: "A Child of Science"
-      shortEffects: ATK -5% when hit by Magnetic Field (Enemy/10s)
+      shortEffects: ATK -5% when hit by Magnetic Field (Enemies/10s)
       effects: 
         - desc: ATK -5% when hit by Magnetic Field (10s)
           all: Enemies
@@ -897,7 +1060,7 @@
             buff: Enemy ATK Reduction
             buffValue: 5
     - name: "Upgraded Gun"
-      shortEffects: Damage taken +15% when hit by Break Horn and Break Bullet (Enemy/8s)
+      shortEffects: Damage taken +15% when hit by Break Horn and Break Bullet (Enemies/8s)
       effects: 
         - desc: Damage taken +15% when hit by Break Horn and Break Bullet (8s)
           all: Enemies
@@ -1153,7 +1316,7 @@
     - name: "A Child of Science"
       shortEffects: ATK/INT/DEF -15% when hit by Magnetic Field (Enemies/10s)
       effects: 
-        - desc: ATK -15% when hit by Magnetic Field (10 seconds)
+        - desc: ATK -15% when hit by Magnetic Field (10s)
           all: Enemies
           meta:
             priority: 4
@@ -1261,7 +1424,7 @@
     maxHits: 2
 
    
-- name: Dias Flac (Cherry Cloud)
+- name: Dias Flac (Cherry Blossom)
   cat: jp
   rating: 0
   picture: Sakura_Dias
@@ -1445,6 +1608,7 @@
             buffCondition: Skill Chain 3+
             buffValue: 30
     - name: "Pure White Feather Decoration"
+      shortEffects: Damage taken +30% when hit by Killing Thorn (Enemies/8s)
       effects: 
         - desc: Damage taken +30% when hit by Killing Thorn (8s)
           all: Enemies 
@@ -1698,7 +1862,7 @@
             buff: Damage
             buffValue: 30
     - name: "Stubborn Disposition"
-      shortEffects: Damage dealt +40%/_55% when hitcount is >100/>200 (Party)
+      shortEffects: Damage dealt +40%/+55% when hitcount is >100/>200 (Party)
       effects: 
         - desc: Damage dealt +40% when hitcount is >100
           all: true
@@ -1719,7 +1883,6 @@
         - desc: Hitcount timer +2 seconds
           all: true
     - name: "Abilities Unbefitting of a Princess"
-      shortEffects: AP cost -20% when skill chain is >3 and ATK damage dealt +30%
       effects:
         - desc: AP cost -20% when skill chain is >3
           meta:
@@ -1798,14 +1961,14 @@
             priority: 1
             buff: Crit Rate
             buffValue: 20
-        - desc: Critical damage +30%
+        - desc: Critical damage dealt +30%
           all: true
           meta:
             priority: 1
             buff: Crit Damage
             buffValue: 30
     - name: "Never Ending Chivalry"
-      shortEffects: Critical hit chance and critical damage +30%/+40% when hitcount is >100/>200 (Party)
+      shortEffects: Critical hit chance and critical damage dealt +30%/+40% when hitcount is >100/>200 (Party)
       effects: 
         - desc: Critical hit chance +30% when hitcount is >100
           all: true
@@ -1821,14 +1984,14 @@
             buff: Crit Rate
             buffCondition: Hit Count > 200
             buffValue: 40
-        - desc: Critical damage +30% when hitcount is >100
+        - desc: Critical damage dealt +30% when hitcount is >100
           all: true
           meta:
             priority: 1
             buff: Crit Damage
             buffCondition: Hit Count > 100
             buffValue: 30
-        - desc: Critical damage +40% when hitcount is >200
+        - desc: Critical damage dealt +40% when hitcount is >200
           all: true
           meta:
             priority: 1
@@ -1840,7 +2003,7 @@
         - desc: Evasion distance +100%
         - desc: Evasion rate +100%
     - name: "Proof of Trial"
-      shortEffects: ATK/HIT +20% after using Moon Mirror (Self/10s)
+      shortEffects: ATK/HIT +20% after using Moon Mirror (10s)
       effects:
         - desc: ATK +20% after using Moon Mirror
           meta:
@@ -1893,7 +2056,6 @@
           buffValue: 30
     power: ATK x 4000%
     maxHits: 24
-
 
    
 - name: Sophia Esteed (Youth)
@@ -2104,7 +2266,7 @@
   rush:
     name: "Hyper Launcher"
     picture: Hyper_Launcher_Opera
-    shortEffects: Critical hit rate +30% (Party/20s) and critical damage dealt +30% (Party/20s)
+    shortEffects: Critical hit rate +30% and critical damage dealt +30% (Party/20s)
     effects: 
       - desc: Critical hit rate +30%
         duration: 20
@@ -2122,6 +2284,7 @@
           buffValue: 30
     power: ATK x 4000%
     maxHits: 10
+
 
 - name: Leanne (Summer)
   cat: jp
@@ -2143,7 +2306,7 @@
   talents:
     - name: "Suspicious Hills"
       effects: 
-        - desc: Damage +30%
+        - desc: Damage dealt +30%
           all: true
           meta:
             priority: 1
@@ -2175,7 +2338,7 @@
             buffCondition: Skill Chain 3+
             buffValue: 30
     - name: "Waterproof"
-      shortEffects: ATK +20% and HP +10% (Self)
+      shortEffects: ATK +20% and HP +10%
       effects: 
         - desc: ATK +20%
           meta:
@@ -2213,7 +2376,7 @@
   rush:
     name: "Invincible Breaker"
     picture: Invincible_Over_Summer_Reanbell
-    shortEffects: AP cost -40% (Self/20s) and ATK damage dealt +30% (Self/20s)
+    shortEffects: AP cost -40% and ATK damage dealt +30% (Self/20s)
     effects: 
       - desc: AP cost -40%
         duration: 20
@@ -2230,6 +2393,7 @@
           buffValue: 30
     power: ATK x 4500%
     maxHits: 35
+
 
 - name: Mafia Kajita
   cat: jp
@@ -2329,6 +2493,7 @@
           buffValue: 40
     power: ATK x 3500%
     maxHits: 3
+
 
 - name: Precis Neumann (Bridal)
   cat: jp
@@ -2461,3 +2626,106 @@
           buffValue: 70
     power: ATK x 4000%
     maxHits: 9
+
+
+- name: Evelysse (Summer)
+  cat: jp
+  rating: 0
+  picture: Beach_Evelysse
+  weapon: rifle
+  star: 5
+
+  stats:
+    hp: 13755
+    atk: 2494
+    int: 1589
+    def: 1720
+    hit: 1274
+    grd: 931
+
+  talents:
+    - name: "Hate to Lose"
+      effects: 
+        - desc: Damage dealt +30%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 30
+        - desc: Damage dealt +60%
+          all: Short Range Weapons/Self
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 60
+    - name: "Sporty Beauty"
+      effects: 
+        - desc: AP recovery +50% at long range
+          all: true
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffCondition: Long Range
+            buffValue: 50
+    - name: "Life Saver"
+      effects: 
+        - desc: Rush combo damage +20% when HP is 100%
+          all: true
+          meta:
+            priority: 1
+            buff: Rush Damage
+            buffCondition: HP is 100
+            buffValue: 20
+    - name: "Summer Coro Festival"
+      effects: 
+        - desc: No flinching when attacking
+        - desc: Damage taken -30%
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffValue: 30
+
+  
+  skills:
+    - name: "Balloon Splash"
+      picture: Ballon_Splash
+      element: Ice
+      power: ATK x 250%
+      ap: 14
+      maxHits: 1
+    - name: "Spread Ray"
+      picture: Heaven_Air_Raid
+      power: ATK x 780%
+      ap: 32
+      maxHits: 5
+    - name: "Gravity Shell"
+      picture: Gravity_Shell
+      element: Dark
+      power: ATK x 340%
+      ap: 17
+      maxHits: 8
+    - name: "Aqua Ignition"
+      picture: Aqua_Ignition
+      element: Ice
+      power: ATK x 920%
+      ap: 34
+      maxHits: 5
+      
+  rush:
+    name: "Staring Splash"
+    picture: Staring_Splash_Summer_Eve
+    element: Ice
+    shortEffects: Recovers 50% of max HP and ATK damage dealt +30% (Party/20s)
+    effects: 
+      - desc: Recovers 50% of max HP
+        all: true
+      - desc: ATK damage dealt +30%
+        all: true
+        duration: 20
+        meta:
+          priority: 3
+          buff: ATK Damage
+          buffValue: 30
+    power: ATK x 4000%
+    maxHits: 9
+
