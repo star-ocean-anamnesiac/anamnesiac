@@ -4049,7 +4049,7 @@
             priority: 1
             buff: ATK
             buffValue: 30
-        - desc: ATK damage taken +15% when inflicted with silence
+        - desc: ATK damage taken +15% when silenced
           all: Enemies
           meta:
             priority: 1
@@ -5212,12 +5212,12 @@
             buffValue: 40
     - name: "Heraldry Parka"
       effects: 
-        - desc: AP cost -15% when Summer Roddick is close to target
+        - desc: AP cost -15% when Summer Roddick is at short range
           all: true
           meta:
             priority: 1
             buff: AP Cost Reduction
-            buffCondition: Summer Roddick is close to target
+            buffCondition: Summer Roddick is at short range
             buffValue: 15
     - name: "Hibiscus Boy"
       shortEffects: ATK 20% and HP +10%
@@ -5267,6 +5267,7 @@
           buffValue: 80
     power: ATK x 4500%
     maxHits: 10
+
 
 - name: Nel Zelpher (Maid)
   cat: jp
@@ -5364,7 +5365,7 @@
   rush:
     name: "Wolfpack Fang"
     picture: Wolfpack_Fang_Maid_Nel
-    shortEffects: AP cost -30% (Self/20s) and Recovers +10% of max HP every 3 seconds (Party/20s)
+    shortEffects: AP cost -30% (Self/20s) and recovers 10% of max HP every 3 seconds (Party/20s)
     effects: 
       - desc: AP cost -30%
         duration: 20
@@ -5372,11 +5373,12 @@
           priority: 1
           buff: AP Cost Reduction
           buffValue: 30
-      - desc: Recovers +10% of max HP every 3 seconds
+      - desc: Recovers 10% of max HP every 3 seconds
         duration: 20
         all: true
     power: ATK x 4500%
     maxHits: 14
+
 
 - name: Albel Nox (Black Commander)
   cat: jp
@@ -5480,6 +5482,7 @@
     power: ATK x 4000%
     maxHits: 8
 
+
 - name: Zephyr
   cat: jp
   rating: 0
@@ -5560,7 +5563,7 @@
   rush:
     name: "Invincible Struggle"
     picture: Invincible_Struggle_Zephyr
-    shortEffects: AP cost -30% (Self/10s) and critical hit chance +100% (Self/10s)
+    shortEffects: AP cost -30% and critical hit chance +100% (Self/10s)
     effects: 
       - desc: AP cost -30%
         duration: 10
@@ -5576,6 +5579,7 @@
           buffValue: 100
     power: ATK x 4000%
     maxHits: 30
+
 
 - name: Reimi Saionji (Bridal)
   cat: jp
@@ -5627,15 +5631,15 @@
             buffValue: 50
         - desc: Rush gauge filled 20% (Self) and 10% (Party) at mission start
     - name: "Elegant Figure"
-      shortEffects: Haze Dance and Chaotic Blossom damage dealt +100%/+200% when skill chain is >3/>5
+      shortEffects: Damage dealt +100%/+200% by Haze Dance and Chaotic Blossom when skill chain is >3/>5
       effects: 
-        - desc: Haze Dance and Chaotic Blossom damage dealt +100% when skill chain is >3
+        - desc: Damage dealt +100% by Haze Dance and Chaotic Blossom when skill chain is >3
           meta:
             priority: 1
             buff: Damage
             buffCondition: Skill Chain 3+
             buffValue: 100
-        - desc: Haze Dance and Chaotic Blossom damage dealt +200% when skill chain is >5
+        - desc: Damage dealt +200% by Haze Dance and Chaotic Blossom when skill chain is >5
           meta:
             priority: 1
             buff: Damage
@@ -5643,7 +5647,7 @@
             buffValue: 200
     - name: "Blooming Peony"
       effects: 
-        - desc: Nullifies status ailments (180s)
+        - desc: Nullifies status ailments for 180 seconds
         - desc: Movement rate +30%
         - desc: Evasion distance & rate +100%
 
@@ -5681,6 +5685,7 @@
         duration: 20
     power: ATK x 4000%
     maxHits: 16
+
 
 - name: Clair Lasbard (Bridal)
   cat: jp
@@ -5786,7 +5791,6 @@
   rush:
     name: "Glinting Knives of Carnage"
     picture: Glinting_Knives_of_Carnage_Wedding_Clair
-    shortEffects: ATK +80% (Self/20s)
     effects: 
       - desc: ATK +80%
         duration: 20
@@ -5796,3 +5800,101 @@
           buffValue: 80
     power: ATK x 4500%
     maxHits: 1
+    
+
+- name: Maria (Summer)
+  cat: jp
+  rating: 0
+  picture: Beach_Maria
+  weapon: greatsword
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 2770
+    int: 1537
+    def: 1916
+    hit: 1141
+    grd: 826
+
+  talents:
+    - name: "Eyes That Radiate Strength"
+      effects: 
+        - desc: ATK +45%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 45
+        - desc: ATK +60% at short range
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffCondition: Short Range
+            buffValue: 60
+    - name: "A Leader's Relaxation"
+      effects: 
+        - desc: Absorbs 10% of damage dealt by normal attacks as HP
+          all: true
+    - name: "Alternation (Beach)"
+      effects: 
+        - desc: No flinching during attacks
+        - desc: Damage taken -20%
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffValue: 20
+    - name: "Glistening Blue Mermaid"
+      effects: 
+        - desc: AP cost -30% when skill chain is >3
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain 3+
+            buffValue: 30
+        - desc: Critical hit chance +50%
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffValue: 50
+
+  skills:
+    - name: "Impact Ballista"
+      picture: Cold_Cannon
+      power: ATK x 180%
+      ap: 24
+      maxHits: 1
+    - name: "Brandish Edge"
+      picture: Cross_Slash
+      power: ATK x 340%
+      ap: 17
+      maxHits: 5
+    - name: "Tailswing Knuckle"
+      picture: Void_Claw
+      power: ATK x 250%
+      ap: 21
+      maxHits: 1
+    - name: "Gran Aqua Zapper"
+      picture: Gran_Aqua_Zapper
+      element: Ice
+      power: ATK x 550%
+      ap: 38
+      maxHits: 1
+      
+  rush:
+    name: "Divided Ocean"
+    picture: Divided_Ocean_Summer_Maria
+    effects: 
+      - desc: AP cost -60%
+        duration: 20
+        meta:
+          priority: 3
+          buff: AP Cost Reduction
+          buffValue: 60
+    power: ATK x 4000%
+    maxHits: 8
+    
+    
