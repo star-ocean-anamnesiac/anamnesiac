@@ -5903,6 +5903,7 @@
   picture: Anne
   weapon: knuckle
   limited: false
+  awakened: true
   star: 5
 
   stats:
