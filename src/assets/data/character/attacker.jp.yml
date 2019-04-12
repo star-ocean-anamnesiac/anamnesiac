@@ -5916,7 +5916,7 @@
 
   talents:
     - name: "Stellar Support"
-      shortEffects: Critical hit chance +30%/+40%/+50% when hitcount is >0/>100/>150 (Party)
+      shortEffects: Critical hit chance +30%, and critical hit chance +40%/+50% when hitcount is >100/>150 (Party)
       effects: 
         - desc: Critical hit chance +30%
           all: true
@@ -5954,7 +5954,7 @@
             buff: ATK Damage
             buffValue: 75
     - name: "Talent 3"
-      shortEffects: ATK +40%/+50%/+60% when hitcount is >0/>100/>150 (Party) 
+      shortEffects: ATK +40%, and ATK +50%/+60% when hitcount is >100/>150 (Party) 
       effects: 
         - desc: ATK +40%
           all: true
@@ -5991,7 +5991,7 @@
         - desc: Evasion possible during air attacks
           all: false
     - name: "Talent 6"
-      shortEffects: ATK +30%, DEF +10%, HIT +40%, and HP+20%
+      shortEffects: ATK +30%, DEF +10%, HIT +40%, and HP +20%
       effects: 
         - desc: ATK +30%
           all: false
