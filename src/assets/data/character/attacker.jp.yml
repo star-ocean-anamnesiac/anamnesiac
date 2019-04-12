@@ -5928,15 +5928,15 @@
           meta:
             priority: 1
             buff: Crit Rate
-	          buffCondition: Hit Count > 100
+	    buffCondition: Hit Count > 100
             buffValue: 40
         - desc: Critical hit chance +50% when hitcount is >150
           all: true
           meta:
             priority: 1
             buff: Crit Rate
-	          buffCondition: Hit Count > 150
-	          buffValue: 50
+	    buffCondition: Hit Count > 150
+	    buffValue: 50
     - name: "Grandmother's Teachings"
       effects: 
         - desc: No flinching when taking damage of 25% of max HP or less
@@ -5945,13 +5945,13 @@
           meta:
             priority: 1
             buff: AP Recovery
-	          buffValue: 100
+	    buffValue: 100
         - desc: ATK damage dealt +75% when skill chain is >3
           all: false
           meta:
             priority: 1
             buff: ATK Damage
-	          buffValue: 75
+	    buffValue: 75
     - name: "Talent 3"
       shortEffects: ATK +40%/+50%/+60% when hitcount is >0/>100/>150 (Party) 
       effects: 
@@ -5961,7 +5961,7 @@
             priority: 1
             buff: ATK
             buffCondition: Hit Count > 100            
-	          buffValue: 40
+	    buffValue: 40
         - desc: ATK +50% when hitcount is >100
           all: true
           meta:
@@ -5974,7 +5974,7 @@
             priority: 1
             buff: ATK
             buffCondition: Hit Count > 100  
-	          buffValue: 60
+	    buffValue: 60
     - name: "Talent 4"
       effects: 
         - desc: 90% chance of surviving a lethal attack when at 20% of max HP or more
