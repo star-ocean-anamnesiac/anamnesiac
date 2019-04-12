@@ -6016,7 +6016,7 @@
             priority: 4
             buff: HP
             buffValue: 20
-	    
+    
   skills:
     - name: "Hammer of Might"
       picture: Hammer_of_Might
