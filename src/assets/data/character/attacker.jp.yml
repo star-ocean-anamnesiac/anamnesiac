@@ -3271,7 +3271,7 @@
             buffCondition: Hit Count >250
             buffValue: 60
     - name: "Basshen's Fox"
-      shortEffects: AP cost -10%/+20%/+40% when hitcount is >100/>200/>400, and an additional hit that deals 5% of damage when using skills (All Party)
+      shortEffects: AP cost -10%/+20%/+40% when hitcount is >100/>200/>400, and an additional hit that deals 5% of damage when using skills (Party)
       effects: 
         - desc: AP cost -10% when hitcount is >100
           all: true
@@ -3357,7 +3357,7 @@
   rush:
     name: "Wailing Black Wings"
     picture: Wailing_Black_Wings_Karin
-    shortEffects: Critical hit chance +30% and critical damage +30% (Party/20s)
+    shortEffects: Critical hit chance +30% and critical damage dealt +30% (Party/20s)
     effects:
       - desc: Critical hit chance +30%
         duration: 20
@@ -3366,7 +3366,7 @@
           priority: 1
           buff: Crit Rate
           buffValue: 30
-      - desc: Critical damage +30%
+      - desc: Critical damage dealt +30%
         duration: 20
         all: true
         meta:
@@ -3431,6 +3431,7 @@
             buff: AP Cost Reduction
             buffValue: 40
     - name: "Hunt Leader"
+      shortEffects: ATK +30% and HP +10%
       effects: 
         - desc: ATK +30%
           all: false
@@ -3467,7 +3468,7 @@
   rush:
     name: "Radiation Device"
     picture: Radiation_Device_Sakura_Maria
-    shortEffects: AP cost -50% and recovers 10% HP every 3 seconds (Self/20s)
+    shortEffects: AP cost -50% and recovers 10% of max HP every 3 seconds (Self/20s)
     effects: 
       - desc: AP cost -50%
         all: false
@@ -3476,7 +3477,7 @@
           priority: 1
           buff: AP Cost Reduction
           buffValue: 50
-      - desc: Recovers 10% HP every 3 seconds
+      - desc: Recovers 10% of max HP every 3 seconds
         all: false
         duration: 20
     power: ATK x 5500%
@@ -4723,7 +4724,7 @@
   talents:
     - name: "Dauntless Courage"
       effects: 
-        - desc: Damage dealt +100% by Dead End during charge assault
+        - desc: Damage dealt +100% by Dead End when using charge assault
     - name: "Reckless"
       effects: 
         - desc: Recovers 15% of max HP every 3 seconds during charge assault standby
@@ -5330,7 +5331,7 @@
             buffCondition: after using Gliding Edge
             buffValue: 20
         - desc: Evasion possible during air attacks
-        - desc: Damage dealt +100% by Mirror Slice during charge assault
+        - desc: Damage dealt +100% by Mirror Slice when using charge assault
           meta:
             priority: 2
             buff: Damage
@@ -5802,7 +5803,7 @@
     maxHits: 1
     
 
-- name: Maria (Summer)
+- name: Maria Traydor (Summer)
   cat: jp
   rating: 0
   picture: Beach_Maria
