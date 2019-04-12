@@ -5897,4 +5897,166 @@
     power: ATK x 4000%
     maxHits: 8
     
+- name: Anne Patriceani (Awakened)
+  cat: jp
+  rating: 0
+  picture: Anne
+  weapon: knuckle
+  limited: false
+  star: 5
+
+  stats:
+    hp: 16884
+    atk: 2817
+    int: 1405
+    def: 1935
+    hit: 1252
+    grd: 756
+
+  talents:
+    - name: "Stellar Support"
+      shortEffects: Critical hit chance +30%/+40%/+50% when hitcount is >0/>100/>150 (Party)
+      effects: 
+        - desc: Critical hit chance +30%
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffValue: 30
+        - desc: Critical hit chance +40% when hitcount is >100
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: Hit Count > 100
+            buffValue: 40
+        - desc: Critical hit chance +50% when hitcount is >150
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: Hit Count > 150
+            buffValue: 50
+    - name: "Grandmother's Teachings"
+      effects: 
+        - desc: No flinching when taking damage of 25% of max HP or less
+        - desc: AP recovery +100%
+          all: false
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffValue: 100
+        - desc: ATK damage dealt +75% when skill chain is >3
+          all: false
+          meta:
+            priority: 1
+            buff: ATK Damage
+            buffValue: 75
+    - name: "Talent 3"
+      shortEffects: ATK +40%/+50%/+60% when hitcount is >0/>100/>150 (Party) 
+      effects: 
+        - desc: ATK +40%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 40
+        - desc: ATK +50% when hitcount is >100
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffCondition: Hit Count > 100
+            buffValue: 50
+        - desc: ATK +60% when hitcount is >150
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffCondition: Hit Count > 150
+            buffValue: 60
+    - name: "Talent 4"
+      effects: 
+        - desc: 90% chance of surviving a lethal attack when at 20% of max HP or more
+          all: false
+        - desc: Absorbs 10% of damage dealt by normal attacks as HP
+          all: false
+    - name: "Talent 5"
+      effects: 
+        - desc: Nullifies charge assault critical damage penalty
+          all: false
+        - desc: Cancel bonus starts at 200% when using charge assault
+          all: false
+        - desc: Evasion possible during air attacks
+          all: false
+    - name: "Talent 6"
+      shortEffects: ATK +30%, DEF +10%, HIT +40%, and HP+20%
+      effects: 
+        - desc: ATK +30%
+          all: false
+          meta:
+            priority: 4
+            buff: ATK
+            buffValue: 30
+        - desc: DEF +10%
+          all: false
+          meta:
+            priority: 4
+            buff: DEF
+            buffValue: 10
+        - desc: HIT +20%
+          all: false
+          meta:
+            priority: 4
+            buff: HIT
+            buffValue: 20
+        - desc: HP +20%
+          all: false
+          meta:
+            priority: 4
+            buff: HP
+            buffValue: 20
     
+  skills:
+    - name: "Hammer of Might"
+      picture: Hammer_of_Might
+      power: ATK x 260%
+      ap: 24
+      maxHits: 1
+    - name: "Triple Kick"
+      picture: Triple_Kick
+      power: ATK x 280%
+      ap: 24
+      maxHits: 3
+      highlight: true
+    - name: "Drill Spike"
+      picture: Drill_Spike
+      power: ATK x 210%
+      ap: 20
+      maxHits: 4
+      highlight: true
+    - name: "X Claw"
+      picture: X_Claw
+      power: ATK x 350%
+      ap: 29
+      maxHits: 6
+    - name: "Palm of Destruction"
+      picture: Palm_of_Destruction
+      power: ATK x 290%
+      ap: 18
+      maxHits: 1
+
+  rush:
+    name: "Blazing Cannon"
+    picture: Blazing_Cannon_Anne
+    element: Fire
+    effects: 
+      - desc: Critical hit chance +60%
+        all: true
+        duration: 20
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 60
+    power: ATK x 4500%
+    maxHits: 8	    
