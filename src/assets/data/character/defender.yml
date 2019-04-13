@@ -1622,7 +1622,6 @@
         - desc: Evasion possible during air attacks
         - desc: Nullifies charge assault critical assault penalty
     - name: "Lucky Right Hand"
-      shortEffects: AP cost -20% and critical hit chance +30% when skill chain is >3
       effects: 
         - desc: AP cost -20% when skill chain is >3
           all: true
@@ -1631,12 +1630,10 @@
             buff: AP Cost Reduction
             buffCondition: Skill Chain 3+
             buffValue: 20
-        - desc: Critical hit chance +30% when skill chain is >3
-          all: true
+        - desc: Critical hit chance +30%
           meta:
             priority: 1
             buff: Crit Rate
-            buffCondition: Skill Chain 3+
             buffValue: 30
             
   skills:
