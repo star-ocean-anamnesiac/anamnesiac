@@ -1624,7 +1624,6 @@
     - name: "Lucky Right Hand"
       effects: 
         - desc: AP cost -20% when skill chain is >3
-          all: true
           meta:
             priority: 1
             buff: AP Cost Reduction

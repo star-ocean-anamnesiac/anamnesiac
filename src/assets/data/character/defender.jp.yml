@@ -349,7 +349,6 @@
       shortEffects: AP cost -20% and critical hit chance +30% when skill chain is >3
       effects: 
         - desc: AP cost -20% when skill chain is >3
-          all: true
           meta:
             priority: 1
             buff: AP Cost Reduction
