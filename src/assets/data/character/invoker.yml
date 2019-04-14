@@ -1234,7 +1234,7 @@
             buff: INT
             buffValue: 40
     - name: "Escort to the Altar II"
-      shortEffects: AP cost -20%/-30%/-40%/-50% when hitcount is >0/>50/>100/>150
+      shortEffects: AP cost -20%, and AP cost-30%/-40%/-50% when hitcount is >50/>100/>150
       effects: 
         - desc: AP cost -20%
           meta:
@@ -2241,16 +2241,16 @@
             priority: 4
             buff: Rush Damage
             buffValue: 10
-    - name: "Rising Sense of Adventure"
+    - name: "Burgeoning Sense of Adventure"
       effects:
         - desc: INT +20%
           meta:
             priority: 4
             buff: INT
             buffValue: 20   
-    - name: "Unrestrained Spirit"
+    - name: "Unbound Heart"
       effects:
-        - desc: Damage dealt +50% by symbology when skill chain is >3
+        - desc: Damage dealt +50% by offensive symbology when skill chain is >3
           meta:
             priority: 4
             buff: Damage
