@@ -2158,6 +2158,124 @@
     maxHits: 17
 
 
+- name: Leanne (Awakened)
+  cat: jp
+  rating: 0
+  picture: Reanbell
+  weapon: gun
+  ace: true
+  limited: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 15750
+    atk: 2494
+    int: 1575
+    def: 1537
+    hit: 1246
+    grd: 924
+
+  talents:
+    - name: "Smile of Miracles"
+        - desc: Damage dealt +40%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage 
+            buffValue: 40
+    - name: "Multi Shooting"
+      effects: 
+        - desc: ATK damage dealt +20% at long range
+          all: true
+          meta:
+            priority: 1
+            buff: ATK Damage
+            buffCondition: Long Range
+            buffValue: 20
+    - name: "Make-Up"
+      effects: 
+        - desc: Damage taken -15% at short range
+          all: true
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffCondition: Short Range
+            buffValue: 15
+    - name: "Farewell to the Past"
+      effects: 
+        - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
+    - name: "Fate Conquered"
+      effects: 
+        - desc: Recovers 5% of max HP every 3 seconds
+          all: true
+    - name: "Courage Transforming"
+      effects:     
+        - desc: Critical hit chance +20% when skill chain is >3
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: Skill Chain 3+
+            buffValue: 20
+        - desc: Critical damage dealt +20% when skill chain is >3
+          meta:
+            priority: 1
+            buff: Crit Damage
+            buffCondition: Skill Chain 3+
+            buffValue: 20
+        - desc: Evasion possible during air attacks
+
+  skills:
+    - name: "Stardust Aim"
+      picture: Stardust_Aim
+      element: Ice
+      power: ATK x 310%
+      ap: 17
+      maxHits: 3
+    - name: "Skyline Shooting"
+      picture: Skyline_Spray
+      power: ATK x 340%
+      ap: 19
+      maxHits: 3
+    - name: "Approach Blow"
+      picture: Approach_Blow
+      power: ATK x 380%
+      ap: 22
+      maxHits: 3
+    - name: "Destiny Rays"
+      picture: Destiny_Rays
+      power: ATK x 550%
+      ap: 26
+      maxHits: 3
+    - name: "Barrage Fire"
+      picture: Bullet_Barrage
+      power: ATK x 680%
+      ap: 27
+      maxHits: 3
+      
+  rush:
+    name: "Invincible Over"
+    picture: Invincible_Over_Reanbell
+    shortEffects: Damage dealt +60% and critical hit chance +30% (Party/20s)
+    effects: 
+      - desc: Damage dealt +60%
+        all: true
+        duration: 20
+        meta:
+          priority: 1
+          buff: Crit Damage
+          buffValue: 60
+      - desc: Critical hit chance +30%
+        all: true
+        duration: 20
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 30
+    power: ATK x 4000%
+    maxHits: 17
+
+
 - name: Aya
   cat: jp
   rating: 0
