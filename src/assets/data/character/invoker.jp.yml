@@ -773,7 +773,7 @@
         - desc: No flinching when casting symbology
           all: true
     - name: "Infinite Curiosity"
-      shortEffects: ATK/INT damage dealt +15% when skill chain is >3 (All Party)
+      shortEffects: ATK/INT damage dealt +15% when skill chain is >3 (Party)
       effects:
         - desc: ATK damage dealt +15% when skill chain is >3
           all: true
@@ -909,7 +909,7 @@
             buff: Multiple Target Damage
             buffValue: 20
     - name: "The Expel Turnabout"
-      shortEffects: Nullifies freeze/paralysis for 90 seconds (All Party)
+      shortEffects: Nullifies freeze/paralysis for 90 seconds (Party)
       effects: 
         - desc: Nullifies freeze for 90 seconds
           duration: 90
@@ -1623,8 +1623,8 @@
             buffValue: 20
     - name: "Affection for Goddess"
       effects: 
-        - desc: Convert 50% of INT to ATK
-          all: Attackers/All Sharpshooters/All Defenders
+        - desc: Converts 50% of INT to ATK
+          all: Attackers/Sharpshooters/Defenders
           meta:
             priority: 1
             buff: INT -> ATK
@@ -2454,7 +2454,7 @@
             buffValue: 20   
     - name: "Unrestrained Spirit"
       effects:
-        - desc: Damage dealt +50% by symbology when skill chain is >3
+        - desc: Damage dealt +50% by offensive symbology when skill chain is >3
           meta:
             priority: 4
             buff: Damage
@@ -2701,7 +2701,7 @@
             buff: Crit Rate
             buffCondition: HP is 100%
             buffValue: 20
-        - desc: Critical damage +20% when HP is 100%
+        - desc: Critical damage dealt +20% when HP is 100%
           all: true
           meta:
             priority: 3
@@ -2768,6 +2768,7 @@
     name: "Celestial Star"
     picture: Celestial_Star_Mystina
     element: Light
+    shortEffects: No flinching when casting symbology (Self/40s) and AP recovery +50% (Party/30s)
     effects: 
       - desc: No flinching when casting symbology
         duration: 40
@@ -2809,7 +2810,7 @@
             buffValue: 20
     - name: "Vital Signs Check"
       effects: 
-        - desc: Critical damage +35%
+        - desc: Critical damage dealt +35%
           all: true
           meta:
             priority: 3
@@ -2980,6 +2981,7 @@
     power: INT x 3500%
     maxHits: 15
 
+
 - name: Clair Lasbard (Maid)
   cat: jp
   rating: 0
@@ -3000,13 +3002,13 @@
   talents:
     - name: "Shining Arrow"
       effects: 
-        - desc: ATK damage +35%
+        - desc: ATK damage dealt +35%
           all: true
           meta:
             priority: 4
             buff: ATK
             buffValue: 35
-        - desc: INT damage +35%
+        - desc: INT damage dealt +35%
           all: true
           meta:
             priority: 4
@@ -3025,6 +3027,7 @@
             buffCondition: Skill Chain 3+
             buffValue: 60
     - name: "Role Model"
+      shortEffects: ATK/INT damage taken +15% after using Shadow Lamp (Enemies/10s)
       effects: 
         - desc: ATK damage taken +15% after using Shadow Lamp
           all: Enemies
@@ -3044,16 +3047,17 @@
             buffValue: 15
     - name: "Pitch Black Outfit"
       effects: 
-        - desc: Stun rate +20% after using Heraldry
+        - desc: Stun rate +20% after using symbology
           duration: 10
           meta:
             priority: 4
             buff: Stun Rate
-            buffCondition: after using Heraldry
+            buffCondition: after using symbology
             buffValue: 20
-        - desc: Additional hit that deals 10% more damage during normal attacks after using Battle Skills
+        - desc: Additional hit that deals 10% more damage during normal attacks after using battle skills
           duration: 10
     - name: "Loyalty to Master"
+      shortEffects: INT +20% and HP +15%
       effects: 
         - desc: INT +20%
           meta:
@@ -3098,7 +3102,7 @@
     picture: Burst_Peony_Maid_Clair
     element: Dark
     effects: 
-      - desc: Critical hit rate +50%
+      - desc: Critical hit chance +50%
         duration: 20
         all: true
         meta:
@@ -3107,6 +3111,7 @@
           buffValue: 50
     power: INT x 4000%
     maxHits: 1
+
 
 - name: Lucifer
   cat: jp
@@ -3135,7 +3140,7 @@
             buffValue: 15
     - name: "Sharp Eyes and Ears"
       effects: 
-        - desc: Convert 55% of INT to ATK
+        - desc: Converts 55% of INT to ATK
           all: Attackers/Sharpshooters/Defenders
           meta:
             priority: 1
