@@ -2112,7 +2112,7 @@
     - name: "Farewell to the Past"
       effects:
         - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
-
+        
   skills:
     - name: "Stardust Aim"
       picture: Stardust_Aim
@@ -2134,12 +2134,12 @@
       power: ATK x 320%
       ap: 26
       maxHits: 3
-      
+
   rush:
     name: "Invincible Over"
     picture: Invincible_Over_Reanbell
     shortEffects: Damage dealt +60% and critical hit chance +30% (Party/20s)
-    effects: 
+    effects:
       - desc: Damage dealt +60%
         duration: 20
         all: true
