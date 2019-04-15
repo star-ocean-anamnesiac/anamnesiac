@@ -508,3 +508,26 @@
         buffValue: 15
       lb: 5
   obtained: Gacha
+
+
+- name: Scrap Maker
+  cat: 'gl'
+  star: 5
+  picture: Machine_Destroying_Fists_Scrap_Makers
+  atk: 960
+  int: 959
+  factors:
+    - desc: Damage dealt to machines +40%
+      meta:
+        priority: 3
+        buff: Damage To Machines
+        buffValue: 40
+    - desc: Absorbs 15% of damage dealt by normal attacks as HP
+    - desc: ATK +5% when hitcount is >50
+      meta:
+        priority: 3
+        buff: ATK
+        buffCondition: Hit Count > 50
+        buffValue: 5
+      lb: 3
+  obtained: Gacha
