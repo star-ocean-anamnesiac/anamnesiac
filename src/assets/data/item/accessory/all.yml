@@ -606,7 +606,7 @@
     - desc: 30% Chance to Survive a Lethal Attack when 10%+ HP
   obtained: Lucifer (Achievement, Exchange)
 
-- name: Gap Bangle
+- name: Combat Armlet
   cat: 'gl'
   star: 5
   picture: Gap_Bangle
@@ -621,3 +621,38 @@
         buffCondition: Far Range
   obtained: Lucifer (Achievement, Exchange)
 
+- name: Common Ring
+  cat: 'gl'
+  star: 5
+  picture: Common_Ring
+  def: 728
+  factors:
+    - desc: ATK damage taken -10%
+      meta:
+        priority: 3
+        buff: ATK Damage Taken reduction
+        buffValue: 10
+    - desc: Stun rate +5%
+      meta:
+        priority: 1
+        buff: Stun Rate
+        buffValue: 5
+  obtained: Mother Virus Pod (Drop), G-Imitation Ghost (Achievement)
+
+
+- name: Intact Talisman
+  cat: 'gl'
+  star: 5
+  picture: Robus_Talisman_IV
+  def: 753
+  factors:
+    - desc: ATK damage dealt +10% when HP is 100%
+      meta:
+        priority: 3
+        buff: ATK Damage
+        buffValue: 10
+        buffCondition: HP is 100
+    - desc: No flinching when HP is 100%
+  obtained: Mother Virus Pod (Achievement)
+  
+  
