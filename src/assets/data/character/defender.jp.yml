@@ -1453,5 +1453,101 @@
           buffValue: 50
     power: ATK x 5000%
     maxHits: 6
-    
 
+- name: Ashton Anchors (Blazing)
+  cat: jp
+  rating: 0
+  picture: Blazing_Ashton
+  weapon: greatsword
+  ace: true
+  star: 5
+
+  stats:
+    hp: 22050
+    atk: 2508
+    int: 1510
+    def: 2389
+    hit: 812
+    grd: 1029
+
+  talents:
+    - name: "Ancient Demonic Flame Dragon"
+      effects: 
+        - desc: ATK +20% after using Fire skill
+          duration: 10
+        - desc: Fire damage dealt +20% after using Ice skill
+          duration: 10
+    - name: "Brimming Confidence"
+      effects: 
+        - desc: Nullifies charge assault critical damage penalty
+        - desc: Sword Dance damage +100% when using charge assault
+    - name: "Well-Done Preference"
+      effects: 
+        - desc: HP +20%
+          all: true
+          meta:
+            priority: 1
+            buff: HP
+            buffValue: 20
+        - desc: No flinching when taking damage of 20% of max HP or less
+          all: true
+    - name: "Species Transcending Bonds"
+      effects: 
+        - desc: Single target damage dealt +20%
+          all: true
+          meta:
+            priority: 1
+            buff: Single Target Damage
+            buffValue: 20
+        - desc: Single target damage dealt +40% at close range
+          all: true
+          meta:
+            priority: 1
+            buff: Single Target Damage
+            buffCondition: Close Range
+            buffValue: 40
+
+  skills:
+    - name: "Cold Cannon"
+      picture: Cold_Cannon
+      power: ATK x 230%
+      ap: 19
+      maxHits: 1
+    - name: "Cross Slash"
+      picture: Cross_Slash
+      element: Ice
+      power: ATK x 490%
+      ap: 29
+      maxHits: 5
+    - name: "Sword Dance"
+      picture: Sword_Dance
+      element: Fire
+      power: ATK x 810%
+      ap: 42
+      maxHits: 10
+    - name: "Heat Zapper"
+      picture: Heat_Zapper
+      power: ATK x 390%
+      ap: 23
+      maxHits: 2
+      
+  rush:
+    name: "Lava Flow Dragon"
+    picture: Lavaflow_Dragon_Blazing_Ashton
+    shortEffects: Elemental damage dealt +70%/+50% (Self/Party/20s)
+    effects: 
+      - desc: Elemental damage dealt +70%
+        duration: 20
+        meta:
+          priority: 4
+          buff: Elemental Damage
+          buffValue: 70
+      - desc: Elemental damage dealt +50%
+        all: true
+        duration: 20
+        meta:
+          priority: 4
+          buff: Elemental Damage
+          buffValue: 50
+    power: ATK x 4500%
+    maxHits: 16
