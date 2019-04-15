@@ -1488,7 +1488,7 @@
           meta:
             priority: 1
             buff: HP
-            buffvalue: 20
+            buffValue: 20
         - desc: No flinching when taking damage of 20% of max HP or less
           all: true
     - name: "Species Transcending Bonds"
