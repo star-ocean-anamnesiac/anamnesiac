@@ -188,4 +188,55 @@
     Ice imbue dual swords that cost 2 coins each from the shop. They're really meant for Ashton but it's an imbue weapon with a
     somewhat relevant second factor, though best not relied upon. Not worth lbing unless you have Ashton but well worth grabbing
     a copy.
-    
+
+
+- name: Twin Beam Swords
+  cat: 'gl'
+  star: 5
+  picture: Twin_Beam_Swords
+  atk: 508
+  int: 511
+  factors:
+    - desc: Damage dealt +30% by Threefold Blast
+      meta:
+        priority: 3
+        buff: Damage
+        buffCondition: Threefold Blast
+        buffValue: 30
+    - desc: Absorbs 5% of damage dealt by normal attacks as HP
+    - desc: Damage dealt +15% when HP is 100%
+      meta:
+        priority: 4
+        buff: Damage
+        buffCondition: HP is 100
+        buffValue: 15
+      lb: 5
+  obtained: Mother Virus Pod (Exchange)
+  
+
+- name: Storm Cancer
+  cat: 'gl'
+  star: 5
+  picture: Storm_Cancer
+  atk: 962
+  int: 957
+  factors:
+    - desc: Imbues attacks with wind, and wind damage dealt +15%
+      meta:
+        priority: 3
+        buff: Damage
+        buffCondition: Wind
+        buffValue: 15
+    - desc: Recovers 5% HP every 3 seconds
+    - desc: Critical hit chance +10%
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffValue: 10
+    - desc: Critical damage dealt +20%
+      meta:
+        priority: 4
+        buff: Crit Damage
+        buffValue: 20
+      lb: 5
+  obtained: Gacha  
