@@ -365,4 +365,47 @@
         buffValue: 10
       lb: 5
   obtained: Gacha
+
+
+- name: Golden Barrel
+  cat: 'gl'
+  star: 5
+  picture: Gold_Barrel
+  atk: 510
+  int: 509
+  factors:
+    - desc: Damage dealt +20% by Raptorshot
+      meta:
+        priority: 3
+        buff: Damage
+        buffCondition: Raptorshot
+        buffValue: 20
+    - desc: Recovers 3% HP every 5 seconds
+    - desc: Normal attack AP recovery +50% when HP is 100%
+      meta:
+        priority: 4
+        buff: AP Recovery
+        buffCondition: HP is 100
+        buffValue: 50
+      lb: 5
+  obtained: Mother Virus Pod (Exchange)
+
+
+- name: Typhoon Laser
+  cat: 'gl'
+  star: 5
+  picture: Typhoon_Laser
+  atk: 961
+  int: 958
+  factors:
+    - desc: Imbues attacks with wind
+    - desc: Recovers 10% HP every 3 seconds
+    - desc: Critical hit chance +15%
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffValue: 15
+      lb: 5
+  obtained: Gacha
+  
   
