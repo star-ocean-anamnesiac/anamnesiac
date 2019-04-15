@@ -221,11 +221,12 @@
   atk: 962
   int: 957
   factors:
-    - desc: Imbues attacks with wind, and wind damage dealt +15%
+    - desc: Imbues attacks with wind
+      element: Wind
+    - desc: Wind damage dealt +15%
       meta:
         priority: 3
-        buff: Damage
-        buffCondition: Wind
+        buff: Wind Damage
         buffValue: 15
     - desc: Recovers 5% HP every 3 seconds
     - desc: Critical hit chance +10%
