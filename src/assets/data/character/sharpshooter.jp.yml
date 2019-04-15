@@ -3199,24 +3199,11 @@
             priority: 1
             buff: ATK Damage
             buffValue: 40
-        - desc: INT damage dealt +40%
-          all: true
-          meta:
-            priority: 1
-            buff: INT Damage
-            buffValue: 40
         - desc: ATK damage taken +10% when hitcount is >100
           all: Enemies
           meta:
             priority: 1
             buff: Enemy ATK Damage Taken
-            buffCondition: Hit Count > 100
-            buffValue: 10
-        - desc: INT damage taken +10% when hitcount is >100
-          all: Enemies
-          meta:
-            priority: 1
-            buff: Enemy INT Damage Taken
             buffCondition: Hit Count > 100
             buffValue: 10
         - desc: ATK damage taken +15% when hitcount is >200
@@ -3226,6 +3213,19 @@
             buff: Enemy ATK Damage Taken
             buffCondition: Hit Count > 200
             buffValue: 15
+        - desc: INT damage dealt +40%
+          all: true
+          meta:
+            priority: 1
+            buff: INT Damage
+            buffValue: 40
+        - desc: INT damage taken +10% when hitcount is >100
+          all: Enemies
+          meta:
+            priority: 1
+            buff: Enemy INT Damage Taken
+            buffCondition: Hit Count > 100
+            buffValue: 10
         - desc: INT damage taken +15% when hitcount is >200
           all: Enemies
           meta:
