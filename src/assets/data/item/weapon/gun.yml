@@ -399,6 +399,7 @@
   int: 958
   factors:
     - desc: Imbues attacks with wind
+      element: Wind
     - desc: Recovers 10% HP every 3 seconds
     - desc: Critical hit chance +15%
       meta:
