@@ -1453,5 +1453,76 @@
           buffValue: 50
     power: ATK x 5000%
     maxHits: 6
-    
 
+- name: Ashton Anchors (Blazing)
+  cat: jp
+  rating: 0
+  picture: 
+  weapon: greatsword
+  ace: true
+  star: 5
+
+  stats:
+    hp: 22050
+    atk: 2508
+    int: 1510
+    def: 2389
+    hit: 812
+    grd: 1029
+
+  talents:
+    - name: "Ancient Demonic Flame Dragon"
+      effects: 
+        - desc: 
+    - name: "Brimming Confidence"
+      effects: 
+        - desc: 
+    - name: "Well-Done Preference"
+      effects: 
+        - desc: 
+    - name: "Species Transcending Bonds"
+      effects: 
+        - desc: 
+
+  skills:
+    - name: "Cold Cannon"
+      picture: 
+      power: ATK x 230%
+      ap: 19
+      maxHits: 1
+    - name: "Cross Slash"
+      picture: 
+      power: ATK x 490%
+      ap: 29
+      maxHits: 5
+    - name: "Sword Dance"
+      picture: 
+      power: ATK x 810%
+      ap: 42
+      maxHits: 10
+    - name: "Heat Zapper"
+      picture: 
+      power: ATK x 390%
+      ap: 23
+      maxHits: 2
+      
+  rush:
+    name: "Lava Flow Dragon"
+    picture: 
+    shortEffects: Elemental damage dealt +70%/+50% (Self/Party/20s)
+    effects: 
+      - desc: Elemental damage dealt +70%
+        duration: 20
+        meta:
+          priority: 4
+          buff: Elemental Damage
+          buffValue: 70
+      - desc: Elemental damage dealt +50%
+        all: true
+        duration: 20
+        meta:
+          priority: 4
+          buff: Elemental Damage
+          buffValue: 50
+    power: ATK x 4500%
+    maxHits: 16
