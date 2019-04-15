@@ -3230,22 +3230,26 @@
     - name: "Scientific Soldier of Love and Justice"
       effects: 
         - desc: ATK +30%
+          all: true
           meta:
             priority: 4
             buff: ATK
             buffValue: 30
         - desc: ATK +40% when hitcount is >150
+          all: true
           meta:
             priority: 4
             buff: ATK
             buffCondition: Hit Count > 150
             buffValue: 40
         - desc: INT +30%
+          all: true
           meta:
             priority: 4
             buff: INT
             buffValue: 30
         - desc: INT +40% when hitcount is >150
+          all: true
           meta:
             priority: 4
             buff: INT
