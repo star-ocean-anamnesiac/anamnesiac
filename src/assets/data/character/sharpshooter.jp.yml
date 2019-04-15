@@ -3172,4 +3172,125 @@
           buffValue: 30
     power: ATK x 4000%
     maxHits: 17
-    
+
+- name: Fiore Brunelli (Nurse)
+  cat: jp
+  rating: 0
+  picture: Nurse_Fiore
+  weapon: rifle
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15435
+    atk: 2494
+    int: 1601
+    def: 1523
+    hit: 1260
+    grd: 924
+
+  talents:
+    - name: "Chief Researcher"
+      effects: 
+        - desc: ATK damage dealt +40%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK Damage
+            buffValue: 40
+        - desc: INT damage dealt +40%
+          all: true
+          meta:
+            priority: 1
+            buff: INT Damage
+            buffValue: 40
+        - desc: ATK damage taken +10% when hitcount is >100
+          all: Enemies
+          meta:
+            priority: 1
+            buff: Enemy ATK Damage Taken
+            buffCondition: Hit Count > 100
+            buffValue: 10
+        - desc: INT damage taken +10% when hitcount is >100
+          all: Enemies
+          meta:
+            priority: 1
+            buff: Enemy INT Damage Taken
+            buffCondition: Hit Count > 100
+            buffValue: 10
+        - desc: ATK damage taken +15% when hitcount is >200
+          all: Enemies
+          meta:
+            priority: 1
+            buff: Enemy ATK Damage Taken
+            buffCondition: Hit Count > 200
+            buffValue: 15
+        - desc: INT damage taken +15% when hitcount is >200
+          all: Enemies
+          meta:
+            priority: 1
+            buff: Enemy INT Damage Taken
+            buffCondition: Hit Count > 200
+            buffValue: 15
+    - name: "Lifesaving Moonlight"
+      effects: 
+        - desc: 80% chance of surviving a lethal attack when at 20% of max HP or more
+          all: true
+    - name: "Secret Physical Examination"
+      effects: 
+        - desc: Recovers +4% of max HP every 3 seconds
+          all: true
+    - name: "Barely Acceptable Nurse Outfit"
+      effects: 
+        - desc: No flinching while attacking
+        - desc: Damage taken -30%
+          meta:
+            priority: 4
+            buff: Damage Taken Reduction
+            buffValue: 30
+        - desc: AP cost -30% when skill chain is >3
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain 3+
+            buffValue: 30
+
+  skills:
+    - name: "Highwind Blast"
+      picture: Highwind_Blast
+      power: ATK x 320%
+      ap: 20
+      maxHits: 4
+    - name: "Rotate Gauge"
+      picture: Lay_Down_Snipe
+      power: ATK x 420%
+      ap: 23
+      maxHits: 3
+    - name: "Spread Ray"
+      picture: Heaven_Air_Raid
+      power: ATK x 1020%
+      ap: 41
+      maxHits: 5
+    - name: "Capsule Scatter"
+      picture: Capsule_Scatter
+      power: ATK x 900%
+      ap: 35
+      maxHits: 5
+      
+  rush:
+    name: "Fanatic Operation"
+    picture: Fanatic_Operation_Nurse_Fiore
+    shortEffects: Recovers 40% of max HP, and single target damage dealt +40% (Party/20s)
+    effects: 
+      - desc: Recovers 40% of max HP
+        all: true
+      - desc: Single target damage dealt +40% 
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Single Target Damage
+          buffValue: 40
+    power: ATK x 4000%
+    maxHits: 12
