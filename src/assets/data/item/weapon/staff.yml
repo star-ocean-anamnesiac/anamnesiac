@@ -592,3 +592,57 @@
         buffValue: 5
       lb: 5
   obtained: Monarch Chimera (Exchange)
+
+- name: Blue Moon Rod
+  cat: 'gl'
+  star: 5
+  picture: Blue_Moon_Rod
+  atk: 508
+  int: 511
+  factors:
+    - desc: Damage dealt +20% by Magnum Tornado
+      meta:
+        priority: 3
+        buff: Damage
+        buffCondition: Magnum Tornado
+        buffValue: 20
+    - desc: Damage taken -10%
+      meta:
+        priority: 3
+        buff: Damage Taken Reduction
+        buffValue: 10
+    - desc: INT damage dealt +10% when at 100% HP
+      meta:
+        priority: 3
+        buff: INT Damage
+        buffCondition: HP is 100
+        buffValue: 10
+      lb: 5
+  obtained: Mother Virus Pod (Exchange)
+  
+  
+- name: Cloud Conductor
+  cat: 'gl'
+  star: 5
+  picture: Wind_&_Thunder_Cane_Cloud_Conductor
+  atk: 957
+  int: 962
+  factors:
+    - desc: Wind damage dealt +40%
+      meta:
+        priority: 3
+        buff: Wind Damage
+        buffValue: 40
+    - desc: Lightning damage dealt +20%
+      meta:
+        priority: 3
+        buff: Lightning Damage
+        buffValue: 20
+    - desc: Stun rate +15%
+      meta:
+        priority: 1
+        buff: Stun Rate
+        buffValue: 15
+    - desc: 70% chance of surviving a lethal attack when at 20% HP or more
+      lb: 5
+  obtained: Gacha
