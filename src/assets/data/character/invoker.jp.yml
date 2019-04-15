@@ -3228,6 +3228,7 @@
 
   talents:
     - name: "Scientific Soldier of Love and Justice"
+      shortEffects: ATK/INT +30%, and ATK/INT +40% when hitcount is >150
       effects: 
         - desc: ATK +30%
           all: true
@@ -3257,17 +3258,19 @@
             buffValue: 40
     - name: "Physical Ability Reinforcement Heraldry"
       effects: 
-        - desc: Rush combo damage +20% when timer is over 60s
+        - desc: Rush combo damage +20% when stage timer is >60s
           all: true
           meta:
             priority: 1
             buff: Rush Damage
+            buffCondition: Stage Timer > 60
             buffValue: 20
-        - desc: Rush combo damage +50% when timer is over 180s
+        - desc: Rush combo damage +50% when stage timer is >180s
           all: true
           meta:
             priority: 1
             buff: Rush Damage
+            buffCondition: Stage Timer > 180
             buffValue: 50
         - desc: Movement rate +50%
           all: true
