@@ -105,4 +105,21 @@
   notes: >
     If you didn't get beastlord, this is probably the best pick for your A2 unless you prefer the extra sustain of Durandal. Boosting
     your hardest hitting move and giving increased AP recovery is good. On top of that it has gacha level stats.
-    
+ 
+
+- name: Caliburn
+  cat: 'gl'
+  star: 4
+  picture: Caliburn
+  atk: 471
+  int: 466
+  factors:
+    - desc: Imbues attacks with earth
+      element: Earth
+    - desc: ATK +5%
+      meta:
+        priority: 3
+        buff: ATK
+        buffValue: 5
+  obtained: Transmutation
+ 
