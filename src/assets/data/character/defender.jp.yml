@@ -1473,14 +1473,14 @@
   talents:
     - name: "Ancient Demonic Flame Dragon"
       effects: 
-        - desc: ATK +20% after using Fire skill
+        - desc: ATK +20% after using fire skill
           duration: 10
-        - desc: Fire damage dealt +20% after using Ice skill
+        - desc: Fire damage dealt +20% after using ice skill
           duration: 10
     - name: "Brimming Confidence"
       effects: 
         - desc: Nullifies charge assault critical damage penalty
-        - desc: Sword Dance damage +100% when using charge assault
+        - desc: Damage dealt +100% by Sword Dance when using charge assault
     - name: "Well-Done Preference"
       effects: 
         - desc: HP +20%
@@ -1510,6 +1510,7 @@
   skills:
     - name: "Cold Cannon"
       picture: Cold_Cannon
+      element: Ice
       power: ATK x 230%
       ap: 19
       maxHits: 1
@@ -1527,6 +1528,7 @@
       maxHits: 10
     - name: "Heat Zapper"
       picture: Heat_Zapper
+      element: Fire
       power: ATK x 390%
       ap: 23
       maxHits: 2
@@ -1534,6 +1536,7 @@
   rush:
     name: "Lava Flow Dragon"
     picture: Lavaflow_Dragon_Blazing_Ashton
+    element: Fire
     shortEffects: Elemental damage dealt +70%/+50% (Self/Party/20s)
     effects: 
       - desc: Elemental damage dealt +70%
