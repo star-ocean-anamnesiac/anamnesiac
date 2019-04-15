@@ -3281,7 +3281,7 @@
   rush:
     name: "Fanatic Operation"
     picture: Fanatic_Operation_Nurse_Fiore
-    shortEffects: Recovers 40% of max HP, and single target damage dealt +40% (Party/20s)
+    shortEffects: Recovers 40% of max HP (Party), and single target damage dealt +40% (Party/20s)
     effects: 
       - desc: Recovers 40% of max HP
         all: true
