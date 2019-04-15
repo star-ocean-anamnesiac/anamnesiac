@@ -1629,10 +1629,11 @@
             buff: AP Cost Reduction
             buffCondition: Skill Chain 3+
             buffValue: 20
-        - desc: Critical hit chance +30%
+        - desc: Critical hit chance +30% when skill chain is >3
           meta:
             priority: 1
             buff: Crit Rate
+            buffCondition: Skill Chain 3+
             buffValue: 30
             
   skills:
