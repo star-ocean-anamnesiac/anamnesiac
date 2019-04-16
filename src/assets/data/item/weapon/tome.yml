@@ -11,8 +11,8 @@
         priority: 4
         buff: INT
         buffValue: 15
-    - desc: Recover 5% HP every 3s
-    - desc: +10% Crit Rate
+    - desc: Recover 5% of HP every 3 seconds
+    - desc: Critical hit chance +10%
       lb: 5
       meta:
         priority: 4
@@ -32,12 +32,12 @@
   atk: 647
   int: 657
   factors:
-    - desc: +15% DMG to Multiple Targets
+    - desc: Multiple target damage +15%
       meta:
         priority: 1
         buff: Multiple Target Damage
         buffValue: 15
-    - desc: +15% Stun
+    - desc: Stun rate +15%
       meta:
         priority: 4
         buff: Stun Rate
@@ -48,7 +48,8 @@
   
   notes: >
     The bad tome of the coin shop, also the only one in the transmute pool. Please make it a coin for the other actually good tome.
-  
+
+
 - name: Diary of Secrets
   cat: 'gl'
   star: 5
@@ -103,3 +104,25 @@
   notes: >
     An exceptional tome for Valentine Welch and won't do bad in the future for any dark wielding tome caster. It's inbuilt stun boost
     as mlb factor is nice and a good grit chance is always welcome. A must keep if you get it.
+
+
+- name: Apocalypse of Creation
+  cat: 'gl'
+  star: 5
+  picture: Genesis_of_Apocalypse
+  atk: 935
+  int: 963
+  factors:
+    - desc: Dark damage dealt +40%
+      meta:
+        priority: 3
+        buff: Dark Damage
+        buffValue: 40
+    - desc: INT damage dealt +10%
+      meta:
+        priority: 3
+        buff: INT Damage
+        buffValue: 10
+    - desc: No flinching while casting symbology
+      lb: 5
+  obtained: Gacha
