@@ -408,5 +408,32 @@
         buffValue: 15
       lb: 5
   obtained: Gacha
-  
+
+
+- name: Cosmo Blaster
+  cat: 'gl'
+  star: 5
+  picture: Meteor_Gun_Cosmic_Blaster
+  atk: 960
+  int: 956
+  factors:
+    - desc: Damage dealt to demons +30%
+      slayer: Demon
+      slayerPct: 40
+      meta:
+        priority: 3
+        buff: Damage To Demons
+        buffValue: 30
+    - desc: Single target damage +20%
+      meta:
+        priority: 3
+        buff: Single Target Damage
+        buffValue: 20
+    - desc: Critical hit chance +15%
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffValue: 15
+      lb: 3
+  obtained: Gacha
   
