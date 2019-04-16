@@ -360,16 +360,16 @@
   atk: 510
   int: 511
   factors:
-    - desc: +15% DMG on Flower Wheel
-    - desc: 70% chance to survive a lethal attack at 15% HP or more
-    - desc: +5% ATK
+    - desc: Damage dealt +15% by Flower Wheel
+    - desc: 70% chance of surviving a lethal attack when at 15% of max HP or more
+    - desc: ATK +5%
       meta:
         priority: 4
         buff: ATK
         buffValue: 5
       lb: 5
   obtained: Giant Prismoid (Exchange)
-  
+
 - name: Ceremonial Anemones
   cat: 'gl'
   star: 5
@@ -377,14 +377,14 @@
   atk: 964
   int: 963
   factors:
-    - desc: Imbue Earth Element
+    - desc: Imbues attacks with earth
       element: Earth
-    - desc: -15% ATK DMG Taken
+    - desc: ATK damage taken -15%
       meta:
         priority: 4
         buff: ATK Damage Taken Reduction
         buffValue: 15
-    - desc: +50% AP recovery on normal attacks at 100 hits or more
+    - desc: Normal attack AP recovery +50% when hitcount is >100
       meta:
         priority: 4
         buff: AP Recovery From Normal Attacks
@@ -393,3 +393,25 @@
       lb: 5
   obtained: Gacha
   
+  
+- name: Luminous Laser Blade
+  cat: 'gl'
+  star: 5
+  picture: Luminous_Laser_Blades
+  atk: 963
+  int: 958
+  factors:
+    - desc: Imbues attacks with dark
+      element: Dark
+    - desc: AP recovery speed +30%
+      meta:
+        priority: 3
+        buff: AP Recovery
+        buffValue: 30
+    - desc: ATK +5%
+      meta:
+        priority: 3
+        buff: ATK
+        buffValue: 5
+      lb: 5
+  obtained: Gacha
