@@ -6,7 +6,7 @@
   atk: 474
   int: 478
   factors:
-    - desc: Light damage +15%
+    - desc: Light damage dealt +15%
       meta:
         priority: 4
         buff: Light Damage
@@ -16,7 +16,7 @@
         priority: 4
         buff: DEF
         buffValue: 10
-    - desc: Crit Rate +4%
+    - desc: Critical hit chance +4%
       lb: 5
       meta:
         priority: 4
@@ -27,7 +27,8 @@
   notes: >
     Knuckles intended for Rena. Due to Rena's unique nature as a healer who uses knuckles and casts spells these are actually pretty
     good for her, boosting her damage spells and adding a little bulk. They're fodder otherwise.
-    
+
+
 - name: Bloody Knuckles
   cat: 'gl'
   star: 5
@@ -518,6 +519,8 @@
   int: 959
   factors:
     - desc: Damage dealt to machines +40%
+      slayer: Machine
+      slayerPct: 40
       meta:
         priority: 3
         buff: Damage To Machines
@@ -531,3 +534,22 @@
         buffValue: 5
       lb: 3
   obtained: Gacha
+
+
+- name: Scarlet Fist Scorpion
+  cat: 'gl'
+  star: 5
+  picture: Scarlet_Fist_Scorpion
+  atk: 962
+  int: 958
+  factors:
+    - desc: Imbues attacks with dark
+      element: Dark
+    - desc: Recovers 5% HP every 3 seconds
+    - desc: Dark damage dealt +15%
+      meta:
+        priority: 3
+        buff: Dark Damage
+        buffValue: 15
+      lb: 5
+  obtained: Gacha  
