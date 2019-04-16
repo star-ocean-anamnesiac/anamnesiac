@@ -2946,3 +2946,116 @@
           buffValue: 40
     power: ATK x 3500%
     maxHits: 11
+
+
+- name: Sophia Esteed (Youth)
+  cat: gl
+  rating: 0
+  picture: Youth_Sophia
+  weapon: dagger
+  ace: true
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 2868
+    int: 1563
+    def: 1549
+    hit: 1253
+    grd: 924
+
+  talents:
+    - name: "Yearning Feelings"
+      effects:
+        - desc: Damage dealt +40%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 40
+        - desc: Single target damage +15% at long range
+          all: true
+          meta:
+            priority: 1
+            buff: Single Target Damage
+            buffValue: 15
+    - name: "Earnest Learning of Love"
+      effects: 
+        - desc: 90% chance of surviving a lethal attack when at 30% of max HP or more
+          all: Long Range Weapons
+        - desc: Stun rate +15%
+          all: Long Range Weapons
+          meta:
+            priority: 1
+            buff: Stun Rate
+            buffValue: 15
+    - name: "The Power to Connect"
+      effects:
+        - desc: Normal attack AP recovery +100% at short range
+          all: true
+          meta:
+            priority: 1
+            buff: AP Recovery From Normal Attacks
+            buffCondition: Short Range
+            buffValue: 100
+        - desc: AP cost -15%
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 15
+    - name: "Unconcealable Jealousy"
+      effects: 
+        - desc: ATK +15%
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 15
+          
+  skills:
+    - name: "Flying Guillotine"
+      picture: Guillotine
+      power: ATK x 170%
+      ap: 15
+      maxHits: 2
+    - name: "Sylvan Shot"
+      picture: Sylvan_Shot
+      power: ATK x 150%
+      ap: 13
+      maxHits: 8
+    - name: "Unholy Terror"
+      picture: Unholy_Terror
+      power: ATK x 310%
+      ap: 29
+      maxHits: 5
+    - name: "Gremlin Lair"
+      picture: Gremlin's_Lair_I
+      element: Earth
+      power: ATK x 420%
+      ap: 31
+      maxHits: 10
+
+  rush:
+    name: "Blood Scylla"
+    picture: Blood_Scylla_JKJK
+    shortEffects: Recovers 30% of max HP and ATK/INT damage dealt +25% (Party/20s)
+    effects:
+      - desc: Recovers 30% of max HP
+        duration: 20
+        all: true
+      - desc: ATK damage dealt +25%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: ATK Damage
+          buffValue: 25
+      - desc: INT damage dealt +25%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: INT Damage
+          buffValue: 25
+    power: ATK x 3500%
+    maxHits: 5
+    
