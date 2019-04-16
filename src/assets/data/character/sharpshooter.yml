@@ -2965,7 +2965,7 @@
     grd: 924
 
   talents:
-    - name: "Yearning Feelings"
+    - name: "Yearning II"
       effects:
         - desc: Damage dealt +40%
           all: true
@@ -2979,7 +2979,7 @@
             priority: 1
             buff: Single Target Damage
             buffValue: 15
-    - name: "Earnest Learning of Love"
+    - name: "Earnest Love of Learning II"
       effects: 
         - desc: 90% chance of surviving a lethal attack when at 30% of max HP or more
           all: Long Range Weapons
@@ -2989,7 +2989,7 @@
             priority: 1
             buff: Stun Rate
             buffValue: 15
-    - name: "The Power to Connect"
+    - name: "Bridge Building II"
       effects:
         - desc: Normal attack AP recovery +100% at short range
           all: true
@@ -3003,7 +3003,7 @@
             priority: 1
             buff: AP Cost Reduction
             buffValue: 15
-    - name: "Unconcealable Jealousy"
+    - name: "Obvious Jealousy"
       effects: 
         - desc: ATK +15%
           meta:
@@ -3012,12 +3012,12 @@
             buffValue: 15
           
   skills:
-    - name: "Flying Guillotine"
+    - name: "Whirling Severance"
       picture: Guillotine
       power: ATK x 170%
       ap: 15
       maxHits: 2
-    - name: "Sylvan Shot"
+    - name: "Scattered Shot"
       picture: Sylvan_Shot
       power: ATK x 150%
       ap: 13
@@ -3027,7 +3027,7 @@
       power: ATK x 310%
       ap: 29
       maxHits: 5
-    - name: "Gremlin Lair"
+    - name: "Ravenous Fiend"
       picture: Gremlin's_Lair_I
       element: Earth
       power: ATK x 420%
