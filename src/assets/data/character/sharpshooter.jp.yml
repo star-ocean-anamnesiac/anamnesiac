@@ -3365,7 +3365,8 @@
       effects: 
         - desc: Evasion AP cost -50%
           all: true
-        - desc: Movement distance & speed +100%
+        - desc: Evasion distance +100%
+        - desc: Evasion rate +100%
 
   skills:
     - name: "Skyline Shooting"
