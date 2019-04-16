@@ -3499,7 +3499,7 @@
       maxHits: 6
       
   rush:
-    name: "Dark Cirlce"
+    name: "Dark Circle"
     picture: Dark_Circle_Butler_Leon
     element: Dark
     shortEffects: ATK damage dealt +50 (Party/20s)
