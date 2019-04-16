@@ -3338,6 +3338,7 @@
             buffCondition: Hit Count > 200
             buffValue: 60
     - name: "Cat Counting Song"
+      shortEffects: AP cost -10%/-20% when hitcount is >50/>100
       effects: 
         - desc: AP cost -10% when hitcount is >50
           all: Long Range Weapons
@@ -3365,8 +3366,7 @@
       effects: 
         - desc: Evasion AP cost -50%
           all: true
-        - desc: Evasion distance +100%
-        - desc: Evasion rate +100%
+        - desc: Evasion rate & distance +100%
 
   skills:
     - name: "Skyline Shooting"
