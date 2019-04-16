@@ -3391,7 +3391,7 @@
       
   rush:
     name: "Cradle Song Beat"
-    picture: 
+    picture: Cradle_Song_Beat_Maid_Sophia
     shortEffects: Critical hit chance +30% and AP cost -40% (Self/20s)
     effects: 
       - desc: Critical hit chance +30%
