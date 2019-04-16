@@ -2329,7 +2329,7 @@
     grd: 819
 
   talents:
-    - name: "Impudent Attitude"
+    - name: "Pert Remark II"
       effects: 
         - desc: ATK +30%
           all: true
@@ -2337,7 +2337,7 @@
             priority: 1
             buff: ATK
             buffValue: 30
-    - name: "Lacuer's Genius Youngster"
+    - name: "Little Genius of Lacuer II"
       effects: 
         - desc: INT +40%
           all: true
@@ -2351,17 +2351,17 @@
             priority: 1
             buff: AP Recovery
             buffValue: 30
-    - name: "Quick Witted"
+    - name: "Transient Quick-Wittedness"
       effects: 
-        - desc: Damage dealt +150% by Shadow Flare after using Frigid Saucer (8s)
+        - desc: Damage dealt +150% by Shadow Flare after using Frigid Cirque Launch (8s)
           meta:
             priority: 1
             buff: Damage
             buffCondition: Skills
             buffValue: 150
-    - name: "True Face Concealed"
+    - name: "Warts and All"
       effects: 
-        - desc: INT +20% after using Shadow Needles (8s)
+        - desc: INT +20% after using Piercing Shadow Needles (8s)
           meta:
             priority: 1
             buff: INT
@@ -2369,13 +2369,13 @@
             buffValue: 20
 
   skills:
-    - name: "Frigid Saucer"
+    - name: "Frigid Cirque Launch"
       picture: Frigid_Saucer
       element: Ice
       power: INT x 190%
       ap: 16
       maxHits: 1
-    - name: "Deep Freeze"
+    - name: "Concentrated Arctic Impact"
       picture: Deep_Freeze
       element: Ice
       power: INT x 550%
@@ -2388,7 +2388,7 @@
       power: INT x 710%
       ap: 39
       maxHits: 5
-    - name: "Shadow Needles"
+    - name: "Piercing Shadow Needles"
       picture: Shadow_Needles
       element: Dark
       power: INT x 160%
@@ -2396,7 +2396,7 @@
       maxHits: 5
 
   rush:
-    name: "Daemon's Gate"
+    name: "Demon's Gate"
     picture: Demon's_Gate_Leon
     element: Dark
     shortEffects: AP cost -40% and symbology cast time -25% (Self/20s)
