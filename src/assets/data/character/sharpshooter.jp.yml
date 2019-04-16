@@ -3437,7 +3437,7 @@
             buff: INT -> ATK
             buffValue: 50
     - name: "Sensitive Listener"
-      shortEffects: ATK/INT damage dealt +20% at long range
+      shortEffects: ATK/INT damage dealt +20% at long range (Party)
       effects: 
         - desc: ATK damage dealt +20% at long range
           all: true
