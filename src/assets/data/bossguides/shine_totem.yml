@@ -1,0 +1,117 @@
+
+- name: "Shine Totem"
+  eventName: "A Moment In History"
+  image: shine_totem
+  cat: gl
+  race: Demon
+  isActive: true
+
+  enrage:
+    m1: "7:00"
+    m2: "7:00"
+    m3: "4:00"
+    	    
+  statusInflictions:
+    - Paralysis
+
+  weaknesses:
+    - element: Dark
+      percentWeakness: 25
+
+    - status: Silence
+      vuln: Low
+
+  recommendations:
+    - plain: Dark Damage
+    - plain: INT Damage
+    - plain: Crit Buffs
+    - plain: Status Nullification
+
+  desc: >
+    Here's another middle finger to pretty much every non-invoker class. Shine Totem's weakness is unfortunately not widespread, being relegated mostly to dark invokers like Fiore, Faize and Leon with a side helping of dagger users like Young Sophia, Clair and Halloween Viktor. Those characters are also the best equipped to deal with its garbage contact hitboxes and constant jumping around. Yeah. Melee characters don't have it great here. Special mention to Reimi for being able to cleanse paralysis if needed, while bringing some degree of respectable offense.
+
+    Anti-flinch is fairly pointless due to his high paralysis rate, so if you're planning on bringing Dias or Rain, it'll be for their survivability buffs only. Unfortunately, with melee suffering such punishment here, defenders with a ranged rotation like Summer Myuria are better suited.
+
+    To make matters worse, he has fairly high DEF so you might want to bridge the gap with some kind of crit buff. Maria is an ever-reliable staple for this and since she's built for kiting, that makes her a great stand-in for a defender.
+
+    Shine Totem starts with four gerels for some reason, but like most bosses with adds, it has a docile phase at > 90% HP. The gerels are easily mopped up and otherwise a complete non-issue, so let's focus on the golden elephant in the room.
+
+    There are essentially two versions of this fight: the version where you have aggro and the version where you do not. Non-aggro is a walk in the park for any ranged character, because they only have to worry about keeping their distance, ensuring they don't have Shine Escape orbs flown into them and watch for Shine Liner/High. The latter is the only thing you can reasonably expect to be a problem and that's only because of the slightly unpredictable nature of the line locations.
+    
+    Aggro Shine Totem, on the other hand, is two flavors of frustrating. The first flavor--let's call it vanilla--is where it's constantly Shine Escape-ing into the back wall and showering you in paralysis orbs. This makes it annoyingly difficult to do any kind of rotation AND you have to mind your positioning so you don't fly them into allies. Thankfully, said paralysis orbs are easily dodged so long as you have the distance.
+
+    The second flavor--let's call it strawberry--is where it's constantly flying into your face and no amount of re-positioning will keep it the fuck away from you. Your only recourse there is to make immediate distance and hope it switches back to vanilla or aggros somebody else. Obviously, you have to deal with Shine Liner/High too regardless, so enjoy that.
+
+    Misery 2 upgrades both Shine Liner and Shine Escape. Shine Escape Double doesn't change much --you are still just going to dodge to the side once and keep dpsing--but Liner High makes Totem a threat to everyone no matter where it's facing. Try not to get jumpy the moment you see the animation, because an early dodge can mean a dodge into one of his lines. Wait for the lines, then dodge the moment you see them. They spawn in a different formation every time.
+
+    Get him to enrage and you get Shine Star in return. This attack is really just about getting the timing down between when his orbs rise into the air and when the laser comes down. If you get that timing down, you still have to worry about dpsing between lasers and with their sheer speed thaaaat's a tall order. Better to just not run the timer down at all.
+  
+  moves:
+    - name: Jump Press
+      targets: Close
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Does a little flipty flop and body slams everyone in melee range. Large damage, deceptively large hitbox. May paralyze.
+
+    - name: Shine Inferno
+      targets: Close
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Reels one fist back and punches. The punch hits twice at close range and creates a dark field at mid-range that does tick damage. Less than a second later, this field will explode for large damage. May paralyze. If the fist paralyzes, it will knock you back into the field with the second hit.
+
+    - name: Shine Step
+      targets: Any
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Does a flying spin towards the current target. Contact damage possible until the very end of the animation (when he stops spinning). May paralyze.
+        
+    - name: Shine Dance
+      targets: Close
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Does a flying spin straight into the current target. Contact damage possible until the very end of the animation (when he stops spinning). Contact damage is more severe than Step or Escape. May paralyze
+        
+    - name: Shine Escape
+      targets: Any
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Does a flying spin away from its current target and releases two orbs into the air. These orbs will lazily home in on the target. They don't track horizontally while descending, so a dodge to the side can evade them. Contact damage possible until the very end of the animation (when he stops spinning). Both contact damage and orbs may paralyze. Totem will still do this alongside Shine Escape Double in M2+.
+        
+    - name: Shine Liner
+      targets: Any
+      m1: true
+      desc: >
+        Does a charge-up animation and generates five thin line AoEs in a spead formation in front of it. After half a second, it explodes, sending blue air slashes down the lines that do severe damage + high chance of paralysis. Replaced by Shine Liner High in M2+.
+        
+    - name: Shine Escape Double
+      targets: Any
+      m2: true
+      m3: true
+      desc: >
+        This is the same as Shine Escape, except it'll fly to the edge of the stage opposite his target. It will also release a second wave of two orbs after it lands. All orbs will move towards the same target. As with Shine Escape, everything paralyzes. EVERYTHING.
+        
+    - name: Shine Liner High
+      targets: Any
+      m2: true
+      m3: true
+      desc: >
+        Does a charge-up animation and generates six thick line AoEs in a spead formation all around him. After half a second, he explodes, sending blue air slashes down the lines that do severe damage + high chance of paralysis.
+        
+    - name: Shine Star
+      targets: Any
+      isEnrage: true
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Blue lights will appear at its feet and it will do a short spinning hop, releasing them into the air. A half second later, a blue sky laser will instantly zap everyone in front of him for fatal damage. May paralyze, in case that somehow matters at this point.
