@@ -349,3 +349,21 @@
         buffValue: 50
       lb: 3
   obtained: Gacha
+  
+  
+- name: Obsidian Saber
+  cat: 'gl'
+  star: 4
+  picture: Obsidian_Saber
+  atk: 470
+  int: 469
+  factors:
+    - desc: Imbues attacks with dark
+      element: Dark
+    - desc: Damage dealt +20% by Bloodstorm Revolution
+      meta:
+        priority: 3
+        buff: Damage
+        buffCondition: Bloodstorm Revolution
+        buffValue: 20
+  obtained: Transmutation
