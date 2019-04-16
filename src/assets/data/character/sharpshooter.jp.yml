@@ -2414,7 +2414,7 @@
             buffValue: 15
     - name: "Earnest Learning of Love"
       effects: 
-        - desc: 90% of surviving a lethal attack when at 30% of max HP or more
+        - desc: 90% chance of surviving a lethal attack when at 30% of max HP or more
           all: Long Range Weapons
         - desc: Stun rate +15%
           all: Long Range Weapons
@@ -2457,7 +2457,7 @@
       maxHits: 8
     - name: "Unholy Terror"
       picture: Unholy_Terror
-      power: ATK x 250%
+      power: ATK x 310%
       ap: 29
       maxHits: 5
     - name: "Gremlin Lair"
@@ -2491,6 +2491,7 @@
           buffValue: 25
     power: ATK x 3500%
     maxHits: 5
+
 
 - name: Opera Vectra
   cat: jp
@@ -2682,17 +2683,17 @@
       maxHits: 3
     - name: "Projectile Bolt"
       picture: Projectile_Bolt
-      power: ATK x 840%
+      power: ATK x 140%
       ap: 20
       maxHits: 5
     - name: "Heaven Air Raid"
       picture: Heaven_Air_Raid
-      power: ATK x 180%
+      power: ATK x 800%
       ap: 38
       maxHits: 5
     - name: "Warhead Delivery"
       picture: Warhead_Delivery
-      power: ATK x 380%
+      power: ATK x 540%
       ap: 29
       maxHits: 1
       
@@ -2723,7 +2724,7 @@
   rating: 0
   picture: Mafia
   weapon: gun
-  ace: true
+  ace: false
   limited: true
   star: 5
 
@@ -2803,11 +2804,11 @@
   rush:
     name: "Kajita Mad Soul"
     picture: Caster_Mad_Soul_Mafia
-    shortEffects: Imbue attacks with ice (Self/20s) and ice elemental damage dealt +40% (Party/20s)
+    shortEffects: Imbues attacks with ice (Self/20s) and ice damage dealt +40% (Party/20s)
     effects: 
-      - desc: Imbue attacks with ice
+      - desc: Imbues attacks with ice
         duration: 20
-      - desc: Ice elemental damage dealt +40%
+      - desc: Ice damage dealt +40%
         duration: 20
         all: true
         meta:
@@ -3173,6 +3174,7 @@
     power: ATK x 4000%
     maxHits: 17
 
+
 - name: Fiore Brunelli (Nurse)
   cat: jp
   rating: 0
@@ -3281,11 +3283,11 @@
   rush:
     name: "Fanatic Operation"
     picture: Fanatic_Operation_Nurse_Fiore
-    shortEffects: Recovers 40% of max HP (Party), and single target damage dealt +40% (Party/20s)
+    shortEffects: Recovers 40% of max HP and single target damage +40% (Party/20s)
     effects: 
       - desc: Recovers 40% of max HP
         all: true
-      - desc: Single target damage dealt +40% 
+      - desc: Single target damage +40% 
         duration: 20
         all: true
         meta:
@@ -3294,3 +3296,4 @@
           buffValue: 40
     power: ATK x 4000%
     maxHits: 12
+    
