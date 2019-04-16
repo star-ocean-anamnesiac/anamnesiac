@@ -4320,3 +4320,91 @@
           buffValue: 80
     power: ATK x 3500%
     maxHits: 13
+
+
+- name: Chisato Madison
+  cat: gl
+  rating: 0
+  picture: Chisato
+  weapon: knuckle
+  star: 5
+
+  stats:
+    hp: 13965
+    atk: 2350
+    int: 1432
+    def: 1733
+    hit: 1064
+    grd: 756
+
+  talents:
+    - name: "Unshakeable Journalism"
+      effects: 
+        - desc: Nullifies paralysis for 120 seconds
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 30
+        - desc: ATK +15%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 15
+    - name: "Persistent Reporter Spirit"
+      effects: 
+        - desc: Normal attack AP recovery +100% when HP is 100%
+          all: true
+          meta:
+            priority: 1
+            buff: AP Recovery From Normal Attacks
+            buffCondition: HP is 100
+            buffValue: 100
+    - name: "Nede's Hope"
+      effects: 
+        - desc: AP cost -40% when skill chain is >3
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain >3
+            buffValue: 40
+    - name: "Polished Self-Defense"
+      effects: 
+        - desc: Rush gauge fills slightly for all allies when using Rising Dragon
+
+  skills:
+    - name: "Twister"
+      picture: Roaring_Cartwheel
+      power: ATK x 410%
+      ap: 32
+      maxHits: 5
+    - name: "Crescent Locus"
+      picture: Crescent_Locus
+      power: ATK x 150%
+      ap: 17
+      maxHits: 4
+    - name: "Palm of Destruction"
+      picture: Palm_of_Destruction
+      power: ATK x 210%
+      ap: 18
+      maxHits: 1
+    - name: "Rising Dragon"
+      picture: Rising_Dragon
+      power: ATK x 620%
+      ap: 54
+      maxHits: 7
+      
+  rush:
+    name: "Preparation"
+    picture: Preparation_Chisato
+    effects: 
+      - desc: Damage dealt +40%
+        all: true
+        duration: 20
+        meta:
+          priority: 3
+          buff: Damage
+          buffValue: 40
+    power: ATK x 3500%
+    maxHits: 10
