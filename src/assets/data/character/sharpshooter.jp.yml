@@ -3338,7 +3338,7 @@
             buffCondition: Hit Count > 200
             buffValue: 60
     - name: "Cat Counting Song"
-      shortEffects: AP cost -10%/-20% when hitcount is >50/>100
+      shortEffects: AP cost -10%/-20% when hitcount is >50/>100 (Long Range Weapons)
       effects: 
         - desc: AP cost -10% when hitcount is >50
           all: Long Range Weapons
