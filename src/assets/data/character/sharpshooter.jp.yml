@@ -3296,4 +3296,115 @@
           buffValue: 40
     power: ATK x 4000%
     maxHits: 12
-    
+
+- name: Sophia Esteed (Maid)
+  cat: jp
+  rating: 0
+  picture: Maid_Sophia
+  weapon: gun
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 14070
+    atk: 2494
+    int: 1575
+    def: 1720
+    hit: 1253
+    grd: 931
+
+  talents:
+    - name: "Cat Eared Maid"
+      effects: 
+        - desc: Damage dealt +40%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 40
+        - desc: Damage dealt +50% when hitcount is >100
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Hit Count > 100
+            buffValue: 50
+        - desc: Damage dealt +60% when hitcount is >200
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Hit Count > 200
+            buffValue: 60
+    - name: "Cat Counting Song"
+      effects: 
+        - desc: AP cost -10% when hitcount is >50
+          all: Long Range Weapons
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Hit Count > 50
+            buffValue: 10
+        - desc: AP cost -20% when hitcount is >100
+          all: Long Range Weapons
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Hit Count > 100
+            buffValue: 20
+    - name: "Cat's Loud Chorus"
+      effects: 
+        - desc: Rush combo damage +40% when hitcount is >250
+          meta:
+            priority: 1
+            buff: Rush Damage
+            buffCondition: Hit Count > 250
+            buffValue: 40
+    - name: "Connection - Cat"
+      effects: 
+        - desc: Evasion AP cost -50%
+          all: true
+        - desc: Movement distance & speed +100%
+
+  skills:
+    - name: "Skyline Shooting"
+      picture: Skyline_Spray
+      power: ATK x 320%
+      ap: 16
+      maxHits: 3
+    - name: "Stardust Aim"
+      picture: Stardust_Aim
+      power: ATK x 290%
+      ap: 15
+      maxHits: 3
+    - name: "Hard Knocker"
+      picture: Bullet_Barrage
+      power: ATK x 310%
+      ap: 16
+      maxHits: 4
+    - name: "Sweep Trigger"
+      picture: Sweep_Trigger
+      power: ATK x 890%
+      ap: 32
+      maxHits: 11
+      
+  rush:
+    name: "Cradle Song Beat"
+    picture: Cradle_Song_Beat_Maid_Sophia
+    shortEffects: Critical hit chance +30% and AP cost -40% (Self/20s)
+    effects: 
+      - desc: Critical hit chance +30%
+        duration: 20
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 30
+      - desc: AP cost -40%
+        duration: 20
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 40
+    power: ATK x 4000%
+    maxHits: 6
