@@ -6,25 +6,27 @@
   atk: 961
   int: 958
   factors:
-    - desc: Imbue light element / +20% light damage
+    - desc: Imbues attacks with light
       element: Light
+    - desc: Light damage dealt +20%
       meta:
         priority: 4
         buff: Light Damage
         buffValue: 20
-    - desc: -10% AP cost
+    - desc: AP cost -10%
       meta:
         priority: 4
         buff: AP Cost Reduction
         buffValue: 10
-    - desc: 80% chance to survive a lethal attack at 10% or more HP
+    - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
       lb: 5
   obtained: Gacha
 
   notes: >
     Light imbue arms and as I type this the only elemental arms you can get. A must keep, even if you don't have HMillie these will come
     in useful later.
-    
+
+
 - name: Atomic Arms
   cat: 'gl'
   star: 5
@@ -32,25 +34,26 @@
   atk: 650
   int: 649
   factors:
-    - desc: +15% DMG to Single Target
+    - desc: Single target damage +15%
       meta:
         priority: 4
         buff: Single Target Damage
         buffValue: 15
-    - desc: +10% ATK DMG when Hit Count is 100 or more.
+    - desc: ATK damage dealt +10% when hit count is >100
       meta:
         priority: 3
         buff: ATK Damage Boost
         buffValue: 10
         buffCondition: Hit Count > 100
-    - desc: 5% HP recovery every 3 seconds.
+    - desc: Recovers 5% of max HP every 3 seconds
       lb: 5
   obtained: Gacha/Coin Exchange
 
   notes: >
     They're alright if you lack other options but not ideal compared to the other coin shop or gacha alternatives. You can fodder these if
     you have any other neutral arms weapon.
-    
+
+
 - name: Super Puncher
   cat: 'gl'
   star: 5
@@ -214,3 +217,21 @@
     - desc: +20% DMG on Jump n' Thump
       lb: 5
   obtained: Lucifer (Exchange), Arms Coin Exchange  
+
+
+- name: Arms of Darkness
+  cat: 'gl'
+  star: 4
+  picture: Arms_of_Darkness
+  atk: 472
+  int: 465
+  factors:
+    - desc: Imbues attacks with dark
+      element: Dark
+    - desc: Single target damage +10%
+      meta:
+        priority: 3
+        buff: Single Target Damage
+        buffValue: 10
+  obtained: Transmutation
+  
