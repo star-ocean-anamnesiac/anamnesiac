@@ -4338,7 +4338,7 @@
     grd: 756
 
   talents:
-    - name: "Unshakeable Journalism"
+    - name: "Solid Journalism II"
       effects: 
         - desc: Nullifies paralysis for 120 seconds
           all: true
@@ -4352,7 +4352,7 @@
             priority: 1
             buff: ATK
             buffValue: 15
-    - name: "Persistent Reporter Spirit"
+    - name: "Die-Hard Reporting II"
       effects: 
         - desc: Normal attack AP recovery +100% when HP is 100%
           all: true
@@ -4361,7 +4361,7 @@
             buff: AP Recovery From Normal Attacks
             buffCondition: HP is 100
             buffValue: 100
-    - name: "Nede's Hope"
+    - name: "Refined Self-Defense II"
       effects: 
         - desc: AP cost -40% when skill chain is >3
           meta:
@@ -4369,12 +4369,12 @@
             buff: AP Cost Reduction
             buffCondition: Skill Chain >3
             buffValue: 40
-    - name: "Polished Self-Defense"
+    - name: "Hope of Nede"
       effects: 
         - desc: Rush gauge fills slightly for all allies when using Rising Dragon
 
   skills:
-    - name: "Twister"
+    - name: "Roaring Cartwheel"
       picture: Roaring_Cartwheel
       power: ATK x 410%
       ap: 32
@@ -4384,7 +4384,7 @@
       power: ATK x 150%
       ap: 17
       maxHits: 4
-    - name: "Palm of Destruction"
+    - name: "Palm of Lesser Destruction"
       picture: Palm_of_Destruction
       power: ATK x 210%
       ap: 18
@@ -4396,15 +4396,15 @@
       maxHits: 7
       
   rush:
-    name: "Preparation"
+    name: "Missile Strike"
     picture: Preparation_Chisato
     effects: 
-      - desc: Damage dealt +40%
+      - desc: Damage dealt +60%
         all: true
         duration: 20
         meta:
           priority: 3
           buff: Damage
-          buffValue: 40
+          buffValue: 60
     power: ATK x 3500%
     maxHits: 10
