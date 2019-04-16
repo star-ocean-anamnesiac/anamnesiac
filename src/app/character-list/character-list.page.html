@@ -48,7 +48,7 @@
     <ion-item-group *ngFor="let weapon of allWeapons">
       <ion-item-divider><strong><app-weapon [weapon]="weapon"></app-weapon></strong></ion-item-divider>
 
-      <ion-item *ngFor="let char of weaponSortedCharacters[weapon]" detail (click)="loadCharacter(char)">
+      <ion-item *ngFor="let char of weaponSortedCharacters[weapon] | filterBy: { name: searchValue }" detail (click)="loadCharacter(char)">
         <ng-container *ngTemplateOutlet="character; context: { char: char }"></ng-container>
       </ion-item>
     </ion-item-group>
@@ -58,7 +58,7 @@
     <ion-item-group *ngFor="let tier of allTiers">
       <ion-item-divider><strong>{{ tier }}</strong></ion-item-divider>
 
-      <ion-item *ngFor="let char of tierSortedCharacters[tier]" detail (click)="loadCharacter(char)">
+      <ion-item *ngFor="let char of tierSortedCharacters[tier] | filterBy: { name: searchValue }" detail (click)="loadCharacter(char)">
         <ng-container *ngTemplateOutlet="character; context: { char: char }"></ng-container>
       </ion-item>
     </ion-item-group>
