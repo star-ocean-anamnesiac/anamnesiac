@@ -2310,3 +2310,108 @@
     maxHits: 6
     
   notes: >
+
+
+- name: Leon D.S. Gehste
+  cat: jp
+  rating: 0
+  picture: Leon
+  weapon: tome
+  ace: true
+  star: 5
+
+  stats:
+    hp: 12390
+    atk: 1575
+    int: 2718
+    def: 1365
+    hit: 1043
+    grd: 819
+
+  talents:
+    - name: "Impudent Attitude"
+      effects: 
+        - desc: ATK +30%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 30
+    - name: "Lacuer's Genius Youngster"
+      effects: 
+        - desc: INT +40%
+          all: true
+          meta:
+            priority: 1
+            buff: INT
+            buffValue: 40
+        - desc: AP recovery +30%
+          all: Long Range Weapons
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffValue: 30
+    - name: "Quick Witted"
+      effects: 
+        - desc: Damage dealt +150% by Shadow Flare after using Frigid Saucer (8s)
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Skills
+            buffValue: 150
+    - name: "True Face Concealed"
+      effects: 
+        - desc: INT +20% after using Shadow Needles (8s)
+          meta:
+            priority: 1
+            buff: INT
+            buffCondition: Shadow Needles
+            buffValue: 20
+
+  skills:
+    - name: "Frigid Saucer"
+      picture: Frigid_Saucer
+      element: Ice
+      power: INT x 190%
+      ap: 16
+      maxHits: 1
+    - name: "Deep Freeze"
+      picture: Deep_Freeze
+      element: Ice
+      power: INT x 550%
+      ap: 32
+      maxHits: 9
+      notes: Low chance to freeze
+    - name: "Shadow Flare"
+      picture: Shadow_Flare
+      element: Dark
+      power: INT x 710%
+      ap: 39
+      maxHits: 5
+    - name: "Shadow Needles"
+      picture: Shadow_Needles
+      element: Dark
+      power: INT x 160%
+      ap: 16
+      maxHits: 5
+
+  rush:
+    name: "Daemon's Gate"
+    picture: Demon's_Gate_Leon
+    element: Dark
+    shortEffects: AP cost -40% and symbology cast time -25% (Self/20s)
+    effects: 
+      - desc: AP cost -40%
+        duration: 20
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 40
+      - desc: Symbology cast time -25%
+        duration: 20
+        meta:
+          priority: 1
+          buff: Cast Time Reduction
+          buffValue: 25
+    power: INT x 3500%
+    maxHits: 15
