@@ -1668,6 +1668,7 @@
   picture: Yuuin
   weapon: dualswords
   ace: true
+  semi: true
   star: 5
 
   stats:
