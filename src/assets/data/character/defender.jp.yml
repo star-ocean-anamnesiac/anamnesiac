@@ -1721,11 +1721,16 @@
       shortEffects: Evasion possible during air attacks (Self) and ATK/INT/DEF/HIT/GRD +20% after using Helmetbreak (Self/10s)
       effects: 
         - desc: Evasion possible during air attacks
-        - desc: ATK +20% after using Helmetbreak
+        - desc: ATK/INT/DEF/HIT/GRD +20% after using Helmetbreak
           duration: 20
           meta:
             priority: 1
-            buff: ATK
+            buffs:
+              - ATK
+              - INT
+              - DEF
+              - HIT
+              - GRD
             buffValue: 20
         - desc: INT +20% after using Helmetbreak
           duration: 20
