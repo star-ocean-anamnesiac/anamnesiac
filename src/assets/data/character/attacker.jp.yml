@@ -6085,7 +6085,7 @@
         - desc: 90% chance of surviving a lethal attack when at 10% of max HP or more
     - name: "Recoro's First-Aid"
       effects: 
-        - desc: Recovers +10% of max HP every 5 seconds
+        - desc: Recovers 10% of max HP every 5 seconds
           all: true
     - name: "Tuning Arm"
       shortEffects: ATK/INT damage dealt +30% when skill chain is >3
