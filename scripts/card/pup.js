@@ -44,7 +44,7 @@ const load = async (html, characters) => {
 
   await Promise.all(
     characters.map(char => {
-      const fileName = `${char.picture}-${char.awakened ? 'a-' : ''}${char.cat}`;
+      const fileName = `${char.picture}-${char.type}-${char.awakened ? 'a-' : ''}${char.cat}`;
 
       return screenshotDOMElement({
         path: `src/assets/cards/${fileName}.png`,
@@ -64,7 +64,7 @@ const writeAllCards = async () => {
   }).map(char => {
     return `
       <h3>${char.name} [${char.cat.toUpperCase()}]</h3>
-      <img src="./cards/${char.picture}-${char.awakened ? 'a-' : ''}${char.cat}.png">
+      <img src="./cards/${char.picture}-${char.type}-${char.awakened ? 'a-' : ''}${char.cat}.png">
     `
   }).join('<br>');
 
