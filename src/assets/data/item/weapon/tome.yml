@@ -133,7 +133,7 @@
 - name: Theory of Symbology
   cat: 'gl'
   star: 5
-  picture: Meteor_Gun_Cosmic_Blaster
+  picture: Heraldry_Theories
   atk: 960
   int: 956
   factors:
