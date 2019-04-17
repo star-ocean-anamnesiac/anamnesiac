@@ -3455,6 +3455,7 @@
   weapon: orb
   ace: true
   semi: true
+  limited: true
   star: 5
 
   stats:
