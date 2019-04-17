@@ -1555,7 +1555,7 @@
     power: ATK x 4500%
     maxHits: 16
 
-- name: Tika (Attacker)
+- name: Tika (Defender)
   cat: jp
   rating: 0
   picture: Tika
