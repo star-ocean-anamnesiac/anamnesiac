@@ -1190,4 +1190,65 @@
           buffValue: 30
     power: INT x 3500%
     maxHits: 3
+
+- name: Tika (Healer)
+  cat: jp
+  rating: 0
+  picture: Tika
+  weapon: arm
+  ace: true
+  star: 5
+
+  stats:
+    hp: 
+    atk: 
+    int: 
+    def: 
+    hit: 
+    grd: 
+
+  talents:
+    - name: ""
+      effects: 
+        - desc: 
+    - name: ""
+      effects: 
+        - desc: 
+    - name: ""
+      effects: 
+        - desc: 
+    - name: ""
+      effects: 
+        - desc: 
+
+  skills:
+    - name: ""
+      picture: 
+      power: INT x 380%
+      ap: 
+      maxHits: 
+    - name: ""
+      picture: 
+      power: INT x 110%
+      ap: 
+      maxHits: 
+    - name: ""
+      picture: 
+      power: INT x 180%
+      ap: 
+      maxHits: 
+    - name: ""
+      picture: 
+      power: INT x 380%
+      ap: 
+      maxHits: 
+
+  rush:
+    name: ""
+    picture: 
+    shortEffects: 
+    effects: 
+      - desc: 
+    power: INT x 4000%
+    maxHits: 8
     
