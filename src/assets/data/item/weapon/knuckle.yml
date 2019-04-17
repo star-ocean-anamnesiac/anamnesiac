@@ -22,7 +22,7 @@
         priority: 4
         buff: Crit Rate
         buffValue: 4
-  obtained: Coin Shop (Michael)
+  obtained: Michael (Exchange)
 
   notes: >
     Knuckles intended for Rena. Due to Rena's unique nature as a healer who uses knuckles and casts spells these are actually pretty
@@ -36,20 +36,21 @@
   atk: 545
   int: 0
   factors:
-    - desc: +15% ATK
+    - desc: ATK +15%
       meta:
         priority: 4
         buff: ATK
         buffValue: 15
-    - desc: +20% DMG on Acrobatic Locus
-    - desc: Recover 10% HP of DMG Dealt by Normal Attacks
+    - desc: Damage dealt +20% by Acrobatic Locus
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP
       lb: 3
-  obtained: Knuckles Coin Exchange / Gacha
+  obtained: Knuckles Coin Exchange, Gacha
 
   notes: >
     A decent pair of knuckles for a new player, the ATK buff makes up for the lack of stats. It has some additional synergy with Cliff
     if you want him, but contributing to elemental burst will always be better.
-    
+
+
 - name: Raven Talons
   cat: 'gl'
   star: 5
@@ -57,23 +58,24 @@
   atk: 850
   int: 849
   factors:
-    - desc: +15% DMG to Single Targets
+    - desc: Single target damage +15%
       meta:
         priority: 1
         buff: Single Target Damage
         buffValue: 15
-    - desc: +20% DMG on Fists of Fury
-    - desc: +10% DMG
+    - desc: Damage dealt +20% by Fists of Fury
+    - desc: Damage dealt +10%
       meta:
         priority: 1
         buff: Damage
         buffValue: 15
       lb: 5
-  obtained: Knuckles Coin Exchange / Gacha
+  obtained: Knuckles Coin Exchange, Gacha
 
   notes: >
     A good neutral weapon for Cliff as it gives him even more self buffs and buffs one of his attacks. That being said contributing to
     elemental burst is probably better in higher difficulty content so it's your decision on if it's worth keeping or not.
+    
     
 - name: Gaia Godfists
   cat: 'gl'
@@ -84,14 +86,15 @@
   factors:
     - desc: Imbue Earth Element
       element: Earth
-    - desc: +20% DMG on Triple Kick
-  obtained: Knuckles Coin Exchange / Gacha / Transmute
+    - desc: Damage dealt +20% by Triple Kick
+  obtained: Knuckles Coin Exchange, Gacha, Transmutation
 
   notes: >
     While earth is probably the worst element, if the enemy doesn't resist it, then it's all okay and you're contributing to elemental
     burst which is the important part. A couple of characters have Triple Kick so it's a slight bonus and the GL stat buff means Rena
     can use them for what it's worth. Not a bad idea to get these if you don't have the gacha earth knuckles.
-    
+
+
 - name: Burst of Fire
   cat: 'gl'
   star: 5
@@ -104,13 +107,14 @@
         priority: 4
         buff: Fire Damage
         buffValue: 15
-    - desc: +20% DMG on Drill Spike
-  obtained: Knuckles Coin Exchange / Gacha / Transmute
+    - desc: Damage +20% by Drill Spike
+  obtained: Knuckles Coin Exchange, Gacha, Transmutation
 
   notes: >
     Okay knuckles for Anne but they're actually best put on Michael, they best his talent based Fire damage dealt by 5% so it gives him
     a slight boost on his skills. Other than that, they're pretty bad and shouldn't be chased or exchanged for.
     
+
 - name: Damask Gauntlets
   cat: 'gl'
   star: 5
@@ -118,23 +122,24 @@
   atk: 530
   int: 0
   factors:
-    - desc: +15% ATK
+    - desc: ATK +15%
       meta:
         priority: 4
         buff: ATK
         buffValue: 15
-    - desc: -15% DEF
+    - desc: DEF -15%
       meta:
         priority: 4
         buff: DEF Reduction
         buffValue: 15
-    - desc: +20% DMG on Crescent Locus
-  obtained: Knuckles Coin Exchange / Gacha / Transmute
+    - desc: Damage dealt +20% by Crescent Locus
+  obtained: Knuckles Coin Exchange, Gacha, Transmutation
 
   notes: >
     They're a worse version of the bloody knuckles. The saving grace is perhaps that as I write this there are 8 knuckles users and
     5 of them have Crescent Locus so there's some synergy there. But it's pretty much just trash.
-    
+
+
 - name: Gyro-Gear Knuckles
   cat: 'gl'
   star: 5
@@ -142,18 +147,19 @@
   atk: 475
   int: 0
   factors:
-    - desc: +20% Crit DMG
+    - desc: Critical damage dealt +20%
       meta:
         priority: 1
         buff: Crit Damage
-        buffValue: 10
-    - desc: +20% DMG on Drill Spike
-  obtained: Crystal Guardian Exchange
+        buffValue: 20
+    - desc: Damage dealt +20% by Drill Spike
+  obtained: Crystal Guardian (Exchange)
 
   notes: >
     Knuckles intended for Anne, they aren't bad on her due to the crit rate she provides but they're trash elsewhere so stick them on
     your Crystal Guardian crit stick and move on.
-    
+
+
 - name: Silver Claws
   cat: 'gl'
   star: 5
@@ -161,26 +167,28 @@
   atk: 961
   int: 962
   factors:
-    - desc: +40% DMG to Demons
+    - desc: Damage dealt to demons +40%
       slayer: Demon
       slayerPct: 40
       meta:
         priority: 4
         buff: Damage To Demons
         buffValue: 40
-    - desc: Anti-Flinch ≤ 10% HP
-    - desc: +5% ATK (When behind target.)
+    - desc: No flinching when taking damage of 10% of max HP or less
+    - desc: ATK +5% when behind target
       lb: 5
       meta:
         priority: 3
         buff: ATK
+        buffCondition: Behind Target
         buffValue: 5
   obtained: Gacha
 
   notes: >
     Demon slaying weapons, they're pretty subpar if you're not fighting a demon. Has decent stats, anti-flinch is nice but the third
     factor is pretty bad.
-    
+
+
 - name: Bloodring Knuckles
   cat: 'gl'
   star: 5
@@ -188,24 +196,24 @@
   atk: 582
   int: 582
   factors:
-    - desc: +15% ATK
+    - desc: ATK +15%
       meta:
         priority: 4
         buff: ATK
         buffValue: 15
-    - desc: +15% INT
+    - desc: INT +15%
       meta:
         priority: 4
         buff: INT
         buffValue: 15
-    - desc: +25% DMG to Humans
+    - desc: Damage dealt to humanoids +25%
       slayer: Human
       slayerPct: 25
       meta:
         priority: 4
         buff: Damage To Humans
         buffValue: 25
-    - desc: RCV 10% HP of DMG Dealt by Regular Attacks
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP
       lb: 5
   obtained: Gacha
 
@@ -213,7 +221,8 @@
     The Bloody Knuckles on steroids and the knuckles every Rena main wants. It's INT buff makes it a must have if you want to play a lot
     of Rena. On top of that it comes with a decent amount of human hate and though it's final factor isn't great for Rena it's great
     for other knuckle users you're using it as a neutral anti-human weapon for.
-    
+
+
 - name: Feral Caltrops
   cat: 'gl'
   star: 5
@@ -221,22 +230,23 @@
   atk: 488
   int: 490
   factors:
-    - desc: Imbue Fire Element
+    - desc: Imbues attacks with fire
       element: Fire
-    - desc: +15% DMG on Fiery Hammer of Might
-    - desc: +20% AP RCV by Normal Attacks
+    - desc: Damage dealt +15% by Fiery Hammer of Might
+    - desc: Normal attack AP recovery +20%
       lb: 5
       meta:
         priority: 1
         buff: AP Recovery From Normal Attacks
         buffValue: 20
-  obtained: Executioner Exchange
+  obtained: Executioner (Exchange)
 
   notes: >
     Event knuckles meant for Ilia with the bonus of being an event weapon with an elemental imbue. While they aren't going to beat out
     the gacha fire knuckles you can get they're worth the pick up if you don't have them. Plus if you get the gacha gloves later 
     they're actually quite good for Ilia so just stick them on her.
-    
+
+
 - name: Fanged Knuckles
   cat: 'gl'
   star: 5
@@ -244,26 +254,27 @@
   atk: 493
   int: 487
   factors:
-    - desc: +10% DMG on Pyroclast Punch
-    - desc: +10% DMG to Machines
+    - desc: Damage dealt +10% by Pyroclast Punch
+    - desc: Damage dealt to machines +10%
       slayer: Machine
       slayerPct: 10
       meta:
         priority: 4
         buff: Damage To Machines
         buffValue: 10
-    - desc: +5% Crit Chance
+    - desc: Critical hit chance +5%
       lb: 5
       meta:
         priority: 4
         buff: Crit Rate
         buffValue: 5
-  obtained: Coro Revorse Exchange
+  obtained: Coro Revorse (Exchange)
 
   notes: >
     Some global exclusive event knuckles for Michael. They're super bad, the slayer buff is weak, the crit chance is weak and even the
     skill damage buff isn't the usual 20% so please fodder them.
-    
+
+
 - name: Blackflame Gloves
   cat: 'gl'
   star: 5
@@ -271,16 +282,16 @@
   atk: 952
   int: 952
   factors:
-    - desc: Imbue Fire Element
+    - desc: Imbues attacks with fire
       element: Fire
-    - desc: +30% DMG to Machines
+    - desc: Damage dealt to machines +30%
       slayer: Machine
       slayerPct: 30
       meta:
         priority: 4
         buff: Damage To Machines
         buffValue: 10
-    - desc: +5% Crit Chance
+    - desc: Critical hit chance +5%
       lb: 3
       meta:
         priority: 4
@@ -292,7 +303,8 @@
     Basically the Fanged Knuckles but with better machine hate and fire imbue instead of a skill damage boost. These knuckles are now
     very good since as imbue isn't often paired with slayer in GL, especially with this big a slayer bonus. You'll really mess up
     any fire weak machines with these and they're just decent all around knuckles. The final factor is pathetic though.
-    
+
+
 - name: Hurricane Claws
   cat: 'gl'
   star: 5
@@ -300,26 +312,27 @@
   atk: 494
   int: 488
   factors:
-    - desc: +10% DMG on Claws of Fury
-    - desc: +15% DMG to Insects
+    - desc: Damage dealt +10% by Claws of Fury
+    - desc: Damage dealt to insects +15%
       slayer: Insect
       slayerPct: 15
       meta:
         priority: 4
         buff: Damage To Insects
         buffValue: 15
-    - desc: +30% AP RCV by Normal Attacks
+    - desc: Normal attack AP recovery +30%
       lb: 5
       meta:
         priority: 1
         buff: AP Recovery From Normal Attacks
         buffValue: 30
-  obtained: Armaros Exchange
+  obtained: Armaros (Exchange)
 
   notes: >
     Event knuckles meant for Meracle, they're pretty bad, even with some AP recovery and slight insect hate, it isn't enough to make
     them better than the majority of weapons so please fodder them.
-    
+ 
+ 
 - name: Cat Claws
   cat: 'gl'
   star: 5
@@ -327,17 +340,18 @@
   atk: 964
   int: 962
   factors:
-    - desc: Imbue Wind Element
+    - desc: Imbues attacks with wind
       element: Wind
-    - desc: 80% Chance to Survive a Lethal Attack at 20% HP or more
-    - desc: Additional Hit that Deals 5% of DMG Dealt by Normal Attacks
+    - desc: 80% chance of surviving a lethal attack when at 20% of max HP or more
+    - desc: Additional hit that deals 5% of damage dealt by normal attacks
       lb: 3
-  obtained: gacha
+  obtained: Gacha
 
   notes: >
     The cat claws are a pair of very good wind imbue knuckles. On top of their imbue they come with a good grit chance and the
     additional factor, while weak isn't terrible due to the fast attack speed of knuckles users.
-    
+
+
 - name: Blue Raven
   cat: 'gl'
   star: 5
@@ -345,24 +359,25 @@
   atk: 531
   int: 528
   factors:
-    - desc: +20% DMG on Electric Fist
-    - desc: +10% DMG to Single Target
+    - desc: Damage dealt +20% by Electric Fist
+    - desc: Single target damage +10%
       meta:
         priority: 1
         buff: Single Target Damage
         buffValue: 10
-    - desc: +30% AP RCV by Normal Attacks
+    - desc: Normal attack AP recovery +30% at short range
       lb: 5
       meta:
         priority: 3
-        buff: AP Recovery From Normal Attacks (When Short Range)
+        buff: AP Recovery From Normal Attacks
         buffValue: 30
         buffCondition: Short Range
-  obtained: Facula Exchange
+  obtained: Facula (Exchange)
 
   notes: >
     They're okay for Mirage, like any event weapon, passable for the intended character, fodder if not.
     
+
 - name: Storm Wheels
   cat: 'gl'
   star: 5
@@ -370,28 +385,30 @@
   atk: 958
   int: 959
   factors:
-    - desc: Imbue Wind Element / +10% DMG to Dragons
+    - desc: Imbues attacks with wind
       element: Wind
+    - desc: Damage dealt to dragons +10%     
       slayer: Dragon
       slayerPct: 10
       meta:
         priority: 4
         buff: Damage To Dragons
-        buffValue: 10
-    - desc: Recover 10% HP of DMG Dealt by Normal Attacks
-    - desc: +10% DMG to Single Target (When behind enemy.)
+        buffValue: 10        
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP
+    - desc: Single target damage +10% DMG when behind target
       meta:
         priority: 3
         buff: Single Target Damage
         buffValue: 10
         buffCondition: Behind Enemy
       lb: 5
-  obtained: gacha
+  obtained: Gacha
 
   notes: >
     A new pair of wind knuckles, some added dragon hate on them. These ones have good sustain attatched though the third factor is a bit
     meh due to single target being so common a buff and it being conditional.
-    
+
+
 - name: Sexy Nails
   cat: 'gl'
   star: 5
@@ -399,44 +416,46 @@
   atk: 523
   int: 529
   factors:
-    - desc: +20% DMG on Heart Dischange
-    - desc: +15% ATK DMG (When CAing.)
+    - desc: Damage dealt +20% by Heart Dischange
+    - desc: ATK damage dealt +15% when using charge assault
       meta:
         priority: 3
         buff: ATK damage
         buffValue: 15
         buffCondition: Charge Assault
-    - desc: Recover 3% HP every 5 seconds
+    - desc: Recovers 3% of max HP every 5 seconds
       lb: 5
-  obtained: Mountain Motango Exchange
+  obtained: Mountain Matango (Exchange)
 
   notes: >
     Event weapons for Valentine Rena, they're okay. The ATK damage buff is good but extremely limited, it buffs one of her skills and
     a little sustain is always a nice bonus. Otherwise it's fodder.
-    
-- name: Lovely Kitten Paws
+
+
+- name: Lovely Kitty Paws
   cat: 'gl'
   star: 5
   picture: Lovely_Kittens
   atk: 963
   int: 961
   factors:
-    - desc: Imbue Earth Element / +10% DMG to Plants
+    - desc: Imbues attacks with earth
       element: Earth
+    - desc: Damage dealt to plants +10%
       slayer: Plant
       slayerPct: 10
       meta:
         priority: 4
         buff: Damage To Plants
         buffValue: 10
-    - desc: Recover 10% HP of DMG Dealt by Normal Attacks
-    - desc: +15% Crit Chance
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP
+    - desc: Critical hit chance +15%
       meta:
         priority: 4
         buff: Crit Rate
         buffValue: 15
       lb: 5
-  obtained: gacha
+  obtained: Gacha
 
   notes: >
     Another pair of Earth Knuckles, an upgrade on the Gaia Godfists but not worth chasing if you have them. The plant hate can be a nice
@@ -450,14 +469,14 @@
   atk: 965
   int: 962
   factors:
-    - desc: Imbue Earth Element
+    - desc: Imbues attacks with earth
       element: Earth
-    - desc: +30% AP recovery on normal attacks
+    - desc: Normal attack AP recovery +30%
       meta:
         priority: 1
         buff: AP Recovery from Normal Attacks
         buffValue: 30
-    - desc: ATK damage dealt +15% at 100 hits or more
+    - desc: ATK damage dealt +15% when hitcount is >100
       meta:
         priority: 3
         buff: ATK Damage
@@ -474,8 +493,8 @@
   atk: 512
   int: 509
   factors:
-    - desc: +15% damage on Floral Fists of Fury
-    - desc: +50% AP recovery on normal attacks
+    - desc: Damage dealt +15% by Floral Fists of Fury
+    - desc: Normal attack AP recovery +50%
       meta:
         priority: 1
         buff: AP Recovery from Normal Attacks
@@ -487,7 +506,8 @@
         buffValue: 5
       lb: 5
   obtained: Monarch Chimera (Exchange)
-  
+
+
 - name: Crimson Nail Claws
   cat: 'gl'
   star: 5
@@ -495,14 +515,14 @@
   atk: 961
   int: 957 
   factors:
-    - desc: Imbue Fire Element
+    - desc: Imbues attacks with fire
       element: Fire
-    - desc: +10% Single Target DMG
+    - desc: Single target damage +10%
       meta: 
         priority: 1
         buff: Single Target Damage
         buffValue: 10
-    - desc: +15% Stun
+    - desc: Stun rate +15%
       meta:
         priority: 1
         buff: Stun Rate
@@ -545,7 +565,7 @@
   factors:
     - desc: Imbues attacks with dark
       element: Dark
-    - desc: Recovers 5% HP every 3 seconds
+    - desc: Recovers 5% of max HP every 3 seconds
     - desc: Dark damage dealt +15%
       meta:
         priority: 3
@@ -553,3 +573,22 @@
         buffValue: 15
       lb: 5
   obtained: Gacha  
+
+
+- name: Jingu-Style Secret Fist "White Whale"
+  cat: 'gl'
+  star: 5
+  picture: Jingu_Style_Secret_Fists_White_Whale
+  atk: 530
+  int: 528
+  factors:
+    - desc: Damage dealt +20% by Rising Dragon
+    - desc: ATK damage taken -10% at short range
+      meta:
+        priority: 3
+        buff: ATK Damage Reduction
+        buffCondition: Short Range
+        buffValue: 10
+    - desc: Hitcount timer +1 seconds
+      lb: 5
+  obtained: Shine Totem / Gleaming Simulacrum (Exchange)

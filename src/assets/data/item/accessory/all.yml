@@ -655,4 +655,19 @@
     - desc: No flinching when HP is 100%
   obtained: Mother Virus Pod (Achievement)
   
+
+- name: Reporter's Armband
+  cat: 'gl'
+  star: 5
+  picture: Newspaper_Reporter_Armband
+  def: 728
+  factors:
+    - desc: HP +10%
+      meta:
+        priority: 3
+        buff: HP
+        buffValue: 10
+    - desc: 40% chance to nullify paralysis
+  obtained: Shine Totem / Gleaming Simulacrum (Achievement, Exchange, Drop, Draw Box)
+  
   
