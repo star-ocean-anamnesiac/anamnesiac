@@ -1661,4 +1661,127 @@
           buffValue: 20
     power: INT x 4000%
     maxHits: 8
-    
+
+- name: Yrian Luxter
+  cat: jp
+  rating: 0
+  picture: Yuuin
+  weapon: dualswords
+  ace: true
+  semi: true
+  star: 5
+
+  stats:
+    hp: 22155
+    atk: 2613
+    int: 1523
+    def: 2231
+    hit: 819
+    grd: 1043
+
+  talents:
+    - name: "Noble Ideals"
+      shortEffects: HP +40% and no flinching when taking damage of 20% of max HP or less (Party)
+      effects: 
+        - desc: HP +40%
+          all: true
+          meta:
+            priority: 1
+            buff: HP
+            buffValue: 40
+        - desc: No flinching when taking damage of 20% of max HP or less
+          all: true
+    - name: "Twin Bladed Light Bearer"
+      effects: 
+        - desc: Single target damage +20%
+          all: true
+          meta:
+            priority: 1
+            buff: Single Target Damage
+            buffValue: 20
+        - desc: Single target damage +30% when HP is 100%
+          all: true
+          meta:
+            priority: 1
+            buff: Single Target Damage
+            buffCondition: HP is 100%
+            buffValue: 30
+        - desc: Single target damage +40% when HP is 100%
+          all: true
+          meta:
+            priority: 1
+            buff: Single Target Damage
+            buffCondition: HP is 100%
+            buffValue: 40
+    - name: "Brilliant Eyes of Hidden Potential"
+      effects: 
+        - desc: No flinching when attacking
+        - desc: Damage taken -20% when attacking
+    - name: "Elder Brother's Swordmanship"
+      shortEffects: Evasion possible during air attacks (Self) and ATK/INT/DEF/HIT/GRD +20% after using Helmetbreaker (Self/10s)
+      effects: 
+        - desc: Evasion possible during air attacks
+        - desc: ATK +20% after using Helmetbreaker
+          duration: 20
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 20
+        - desc: INT +20% after using Helmetbreaker
+          duration: 20
+          meta:
+            priority: 1
+            buff: INT
+            buffValue: 20
+        - desc: DEF +20% after using Helmetbreaker
+          duration: 20
+          meta:
+            priority: 1
+            buff: DEF
+            buffValue: 20
+        - desc: HIT +20% after using Helmetbreaker
+          duration: 20
+          meta:
+            priority: 1
+            buff: HIT
+            buffValue: 20
+        - desc: GRD +20% after using Helmetbreaker
+          duration: 20
+          meta:
+            priority: 1
+            buff: GRD
+            buffValue: 20
+
+  skills:
+    - name: "Air Slash"
+      picture: Tri_Zapper
+      power: ATK x 210%
+      ap: 14
+      maxHits: 6
+    - name: "Double Slash"
+      picture: Sinistral_Edge
+      power: ATK x 250%
+      ap: 16
+      maxHits: 2
+    - name: "Mirror Blade"
+      picture: Sword_Dance
+      element: Fire
+      power: ATK x 860%
+      ap: 28
+      maxHits: 30
+    - name: "Helmetbreak"
+      picture: Helmetbreak
+      power: ATK x 580%
+      ap: 23
+      maxHits: 1
+      
+  rush:
+    name: "Double Dragon Slash"
+    picture: Double_Dragon_Slash_Yuuin
+    shortEffects: Recovers +15% of max HP every 3 seconds (Party/20s)
+    effects: 
+      - desc: Recovers +15% of max HP every 3 seconds
+        all: true
+        duration: 20
+    power: ATK x 4000%
+    maxHits: 5
