@@ -3513,3 +3513,104 @@
           buffValue: 50
     power: ATK x 4000%
     maxHits: 10
+
+- name: Tika (Sharpshooter)
+  cat: jp
+  rating: 0
+  picture: Tika
+  weapon: arm
+  ace: true
+  star: 5
+
+  stats:
+    hp: 15750
+    atk: 2494
+    int: 1537
+    def: 1537
+    hit: 1253
+    grd: 952
+
+  talents:
+    - name: "Survivor of Military Transport Ship"
+      effects: 
+        - desc: 90% chance of surviving a lethal attack when at 10% of max HP or more
+    - name: "Recoro's First-Aid"
+      effects: 
+        - desc: Recovers +10% of max HP every 5 seconds
+          all: true
+    - name: "Tuning Arm"
+      shortEffects: ATK/INT damage dealt +30% when skill chain is >3
+      effects: 
+        - desc: ATK damage dealt +30% when skill chain is >3
+          meta:
+            priority: 1
+            buff: ATK Damage
+            buffCondition: Skill Chain 3+
+            buffValue: 30
+        - desc: INT damage dealt +30% when skill chain is >3
+          meta:
+            priority: 1
+            buff: INT Damage
+            buffCondition: Skill Chain 3+
+            buffValue: 30
+    - name: "Verda's Instant Bequeathing of Skill"
+      shortEffects: Damage dealt to humans/plants +20%/+30% (Party)
+      effects: 
+        - desc: Damage dealt to humans +20%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage To Humans
+            buffValue: 20
+        - desc: Damage dealt to plants +30%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage To Plants
+            buffValue: 30
+
+  skills:
+    - name: "Right Spin Arm"
+      picture: Counter_Clockwise_Arm
+      power: ATK x 260%
+      ap: 20
+      maxHits: 6
+    - name: "Rocket Punch"
+      picture: Rocket_Punch
+      power: ATK x 340%
+      ap: 21
+      maxHits: 1
+    - name: "Hopping Device"
+      picture: Jump_n_Thump
+      power: ATK x 230%
+      ap: 18
+      maxHits: 1
+    - name: "Beam Cage"
+      picture: Beam_Cage
+      power: ATK x 580%
+      ap: 29
+      maxHits: 6
+
+  rush:
+    name: "Blast Expansion"
+    picture: Blast_Expansion_Tika
+    element: Wind
+    shortEffects: AP cost -20% and damage taken -20% (Party/20s)
+    effects: 
+      - desc: AP cost -20%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 20
+      - desc: Damage taken -20%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Damage Taken Reduction
+          buffValue: 20
+    power: INT x 4000%
+    maxHits: 8
+    
