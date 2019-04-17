@@ -3346,55 +3346,105 @@
   star: 5
 
   stats:
-    hp: 
-    atk: 
-    int: 
-    def: 
-    hit: 
-    grd: 
+    hp: 12600
+    atk: 1589
+    int: 2665
+    def: 1339
+    hit: 1050
+    grd: 847
 
   talents:
-    - name: ""
+    - name: "Survivor of Military Transport Ship"
       effects: 
-        - desc: 
-    - name: ""
+        - desc: 90% chance of surviving a lethal attack when at 10% of max HP or more
+    - name: "Recoro's First-Aid"
       effects: 
-        - desc: 
-    - name: ""
+        - desc: Recovers +10% of max HP every 5 seconds
+          all: true
+    - name: "Tuning Arm"
+      shortEffects: ATK/INT damage dealt +30% when skill chain is >3
       effects: 
-        - desc: 
-    - name: ""
+        - desc: ATK damage dealt +30% when skill chain is >3
+          meta:
+            priority: 1
+            buff: ATK Damage
+            buffCondition: Skill Chain 3+
+            buffValue: 30
+        - desc: INT damage dealt +30% when skill chain is >3
+          meta:
+            priority: 1
+            buff: INT Damage
+            buffCondition: Skill Chain 3+
+            buffValue: 30
+    - name: "Successful Results from Research with Coro"
       effects: 
-        - desc: 
+        - desc: INT +20%
+          all: true
+          meta:
+            priority: 1
+            buff: INT
+            buffValue: 20
+        - desc: No flinching when casting symbology
+          all: true
+        - desc: Damage dealt to machines +40%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage To Machines
+            buffValue: 40
+        - desc: Damage dealt to undead +40%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage To Undead
+            buffValue: 40
 
   skills:
-    - name: ""
-      picture: 
-      power: INT x 380%
-      ap: 
-      maxHits: 
-    - name: ""
-      picture: 
-      power: INT x 110%
-      ap: 
-      maxHits: 
-    - name: ""
-      picture: 
-      power: INT x 180%
-      ap: 
-      maxHits: 
-    - name: ""
-      picture: 
-      power: INT x 380%
-      ap: 
-      maxHits: 
+    - name: "Blast Hurricane"
+      picture: Blast_Hurricane
+      element: Wind
+      power: INT x 940%
+      ap: 45
+      maxHits: 6
+    - name: "Wind Blade"
+      picture: Wind_Blade
+      element: Wind
+      power: INT x 350%
+      ap: 25
+      maxHits: 2
+    - name: "Tornado"
+      picture: Tornado
+      element: Wind
+      power: INT x 230%
+      ap: 19
+      maxHits: 2
+    - name: "Steam Sphere"
+      picture: Stream_Sphere
+      element: Wind
+      power: INT x 1350%
+      ap: 54
+      maxHits: 9
 
   rush:
-    name: ""
-    picture: 
-    shortEffects: 
+    name: "Blast Expansion"
+    picture: Blast_Expansion_Tika
+    element: Wind
+    shortEffects: AP cost -20% and damage taken -20% (Party/20s)
     effects: 
-      - desc: 
+      - desc: AP cost -20%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 20
+      - desc: Damage taken -20%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Damage Taken Reduction
+          buffValue: 20
     power: INT x 4000%
     maxHits: 8
     
