@@ -3475,6 +3475,7 @@
             buff: ATK -> INT
             buffValue: 50
     - name: "Supporter of Love"
+      shortEffects: AP cost -15% after using Lightning Blast and INT damage taken +15% when hit by Lightning Blast (Self/10s)
       effects: 
         - desc: AP cost -15% after using Lightning Blast
           duration: 10
