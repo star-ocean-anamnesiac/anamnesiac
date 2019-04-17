@@ -1,5 +1,5 @@
 
-- name: Advanced Combat Symbology Textbook
+- name: Tome of Advanced Magical Combat
   cat: 'gl'
   star: 5
   picture: Advanced_Combat_Heraldry_Manual
@@ -11,7 +11,7 @@
         priority: 4
         buff: INT
         buffValue: 15
-    - desc: Recover 5% of HP every 3 seconds
+    - desc: Recovers 5% of HP every 3 seconds
     - desc: Critical hit chance +10%
       lb: 5
       meta:
@@ -24,8 +24,9 @@
     If you don't have a tome don't worry, this one is pretty good and can be used on any tome wielder you happen to get. Boosting your
     INT helps make up for the lack of stats, it has a decent regen buff, and the crit factor is nice to have if you have no crit
     buffing in your party.
-  
-- name: Akashic Records
+
+
+- name: Akashic Record
   cat: 'gl'
   star: 5
   picture: Akashic_Records
@@ -50,50 +51,51 @@
     The bad tome of the coin shop, also the only one in the transmute pool. Please make it a coin for the other actually good tome.
 
 
-- name: Diary of Secrets
+- name: Secret Diary
   cat: 'gl'
   star: 5
   picture: Diary_of_Secrets
   atk: 509
   int: 512
   factors:
-    - desc: +20% DMG on Gluttony Bog
-    - desc: -10% DMG Taken
+    - desc: Damage dealt +20% by Gluttony Bog
+    - desc: Damage taken -10%
       meta:
         priority: 1
         buff: Damage Taken Reduction
         buffValue: 10
-    - desc: +10% Rush Combo DMG
+    - desc: Rush damage +10%
       meta:
         priority: 1
         buff: Rush Damage
         buffValue: 10
       lb: 5
-  obtained: Mountain Motango Exchange
+  obtained: Mountain Matango Exchange
   
   notes: >
     The event weapon for Valentine Welch. It's okay for her, boosts rush damage which is rare, reduces damage taken which is nice.
     Boosts her main damage skill, but for anyone other than her, or if you obtain any better tome, it's fodder.
-  
-- name: Poems A Maiden's Love
+ 
+ 
+- name: Book of Love Poems
   cat: 'gl'
   star: 5
   picture: Poems_A_Maiden's_Love
-  atk: 509
-  int: 512
+  atk: 957
+  int: 962
   factors:
-    - desc: +40% Earth DMG Dealt
+    - desc: Earth damage dealt +40%
       meta:
         priority: 4
         buff: Earth Damage
         buffValue: 40
-    - desc: +30% Dark DMG Dealt
+    - desc: Dark damage dealt +30%
       meta:
         priority: 4
         buff: Dark Damage
         buffValue: 30
-    - desc: 80% Chance to Survive a Lethal Attack when HP is 20% or more
-    - desc: +15% Stun
+    - desc: 80% chance of surviving a lethal attack when at 20% of max HP or more
+    - desc: Stun rate +15%
       meta:
         priority: 4
         buff: Stun Rate
@@ -126,3 +128,30 @@
     - desc: No flinching while casting symbology
       lb: 5
   obtained: Gacha
+
+
+- name: Theory of Symbology
+  cat: 'gl'
+  star: 5
+  picture: Meteor_Gun_Cosmic_Blaster
+  atk: 960
+  int: 956
+  factors:
+    - desc: AP cost -5%
+      meta:
+        priority: 3
+        buff: AP Cost Reduction
+        buffValue: 5
+    - desc: INT damage dealt +15% when HP is 100%
+      meta:
+        priority: 3
+        buff: INT Damage
+        buffCondition: HP is 100
+        buffValue: 15
+    - desc: DEF +10%
+      meta:
+        priority: 3
+        buff: DEF
+        buffValue: 10
+      lb: 5
+  obtained: Shine Totem / Gleaming Simulacrum (Exchange)
