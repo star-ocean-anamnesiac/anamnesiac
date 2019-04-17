@@ -1718,38 +1718,18 @@
         - desc: No flinching when attacking
         - desc: Damage taken -20% when attacking
     - name: "Elder Brother's Swordmanship"
-      shortEffects: Evasion possible during air attacks (Self) and ATK/INT/DEF/HIT/GRD +20% after using Helmetbreak (Self/10s)
       effects: 
         - desc: Evasion possible during air attacks
-        - desc: ATK +20% after using Helmetbreak
+        - desc: ATK/INT/DEF/HIT/GRD +20% after using Helmetbreak (Self/20s)
           duration: 20
           meta:
             priority: 1
-            buff: ATK
-            buffValue: 20
-        - desc: INT +20% after using Helmetbreak
-          duration: 20
-          meta:
-            priority: 1
-            buff: INT
-            buffValue: 20
-        - desc: DEF +20% after using Helmetbreak
-          duration: 20
-          meta:
-            priority: 1
-            buff: DEF
-            buffValue: 20
-        - desc: HIT +20% after using Helmetbreak
-          duration: 20
-          meta:
-            priority: 1
-            buff: HIT
-            buffValue: 20
-        - desc: GRD +20% after using Helmetbreak
-          duration: 20
-          meta:
-            priority: 1
-            buff: GRD
+            buffs:
+              - ATK
+              - INT
+              - DEF
+              - HIT
+              - GRD
             buffValue: 20
 
   skills:
@@ -1778,9 +1758,9 @@
   rush:
     name: "Double Dragon Slash"
     picture: Double_Dragon_Slash_Yuuin
-    shortEffects: Recovers +15% of max HP every 3 seconds (Party/20s)
+    shortEffects: Recovers 15% of max HP every 3 seconds (Party/20s)
     effects: 
-      - desc: Recovers +15% of max HP every 3 seconds
+      - desc: Recovers 15% of max HP every 3 seconds
         all: true
         duration: 20
     power: ATK x 4000%
