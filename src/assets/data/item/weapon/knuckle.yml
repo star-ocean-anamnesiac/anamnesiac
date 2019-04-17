@@ -578,7 +578,7 @@
 - name: Jingu-Style Secret Fist "White Whale"
   cat: 'gl'
   star: 5
-  picture: Jingu_Style_Secret Fists_White_Whale
+  picture: Jingu_Style_Secret_Fists_White_Whale
   atk: 530
   int: 528
   factors:
