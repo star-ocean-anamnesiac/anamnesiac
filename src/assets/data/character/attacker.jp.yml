@@ -6072,55 +6072,100 @@
   star: 5
 
   stats:
-    hp: 
-    atk: 
-    int: 
-    def: 
-    hit: 
-    grd: 
+    hp: 15750
+    atk: 2718
+    int: 1537
+    def: 1930
+    hit: 1148
+    grd: 847
 
   talents:
-    - name: ""
+    - name: "Survivor of Military Transport Ship"
       effects: 
-        - desc: 
-    - name: ""
+        - desc: 90% chance of surviving a lethal attack when at 10% of max HP or more
+    - name: "Recoro's First-Aid"
       effects: 
-        - desc: 
-    - name: ""
+        - desc: Recovers +10% of max HP every 5 seconds
+          all: true
+    - name: "Tuning Arm"
+      shortEffects: ATK/INT damage dealt +30% when skill chain is >3
       effects: 
-        - desc: 
-    - name: ""
+        - desc: ATK damage dealt +30% when skill chain is >3
+          meta:
+            priority: 1
+            buff: ATK Damage
+            buffCondition: Skill Chain 3+
+            buffValue: 30
+        - desc: INT damage dealt +30% when skill chain is >3
+          meta:
+            priority: 1
+            buff: INT Damage
+            buffCondition: Skill Chain 3+
+            buffValue: 30
+    - name: "Desire to show Welch Improvement"
+      shortEffects: ATK +30% and damage dealt to beasts/divinities +40% (Party)
       effects: 
-        - desc: 
+        - desc: ATK +30%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 30
+        - desc: Damage dealt to beasts +40%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage To Beasts
+            buffValue: 40
+        - desc: Damage dealt to divinities +40%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage To Divinities
+            buffValue: 40
 
   skills:
-    - name: ""
-      picture: 
-      power: ATK x 380%
-      ap: 
-      maxHits: 
-    - name: ""
-      picture: 
-      power: ATK x 110%
-      ap: 
-      maxHits: 
-    - name: ""
-      picture: 
-      power: ATK x 180%
-      ap: 
-      maxHits: 
-    - name: ""
-      picture: 
-      power: ATK x 380%
-      ap: 
-      maxHits: 
+    - name: "Left Spin Arm"
+      picture: Clockwise_Arm
+      power: ATK x 260%
+      ap: 20
+      maxHits: 6
+    - name: "Rocket Punch"
+      picture: Rocket_Punch
+      power: ATK x 340%
+      ap: 21
+      maxHits: 1
+    - name: "Hopping Device"
+      picture: Jump_n_Thump
+      power: ATK x 230%
+      ap: 18
+      maxHits: 1
+    - name: "Beam Cage"
+      picture: Beam_Cage
+      power: ATK x 580%
+      ap: 29
+      maxHits: 6
 
   rush:
-    name: ""
-    picture: 
-    shortEffects: 
+    name: "Blast Expansion"
+    picture: Blast_Expansion_Tika
+    element: Wind
+    shortEffects: AP cost -20% and damage taken -20% (Party/20s)
     effects: 
-      - desc: 
+      - desc: AP cost -20%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 20
+      - desc: Damage taken -20%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Damage Taken Reduction
+          buffValue: 20
     power: INT x 4000%
     maxHits: 8
     
