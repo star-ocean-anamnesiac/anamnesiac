@@ -1718,34 +1718,34 @@
         - desc: No flinching when attacking
         - desc: Damage taken -20% when attacking
     - name: "Elder Brother's Swordmanship"
-      shortEffects: Evasion possible during air attacks (Self) and ATK/INT/DEF/HIT/GRD +20% after using Helmetbreaker (Self/10s)
+      shortEffects: Evasion possible during air attacks (Self) and ATK/INT/DEF/HIT/GRD +20% after using Helmetbreak (Self/10s)
       effects: 
         - desc: Evasion possible during air attacks
-        - desc: ATK +20% after using Helmetbreaker
+        - desc: ATK +20% after using Helmetbreak
           duration: 20
           meta:
             priority: 1
             buff: ATK
             buffValue: 20
-        - desc: INT +20% after using Helmetbreaker
+        - desc: INT +20% after using Helmetbreak
           duration: 20
           meta:
             priority: 1
             buff: INT
             buffValue: 20
-        - desc: DEF +20% after using Helmetbreaker
+        - desc: DEF +20% after using Helmetbreak
           duration: 20
           meta:
             priority: 1
             buff: DEF
             buffValue: 20
-        - desc: HIT +20% after using Helmetbreaker
+        - desc: HIT +20% after using Helmetbreak
           duration: 20
           meta:
             priority: 1
             buff: HIT
             buffValue: 20
-        - desc: GRD +20% after using Helmetbreaker
+        - desc: GRD +20% after using Helmetbreak
           duration: 20
           meta:
             priority: 1
