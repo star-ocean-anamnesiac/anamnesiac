@@ -133,7 +133,7 @@
 
 - name: Maria Traydor
   cat: gl
-  rating: 8
+  rating: 6
   picture: Maria
   weapon: gun
   ace: true
@@ -482,7 +482,7 @@
  
 - name: Clair Lasbard
   cat: gl
-  rating: 6
+  rating: 5
   picture: Clair
   weapon: dagger
   star: 5
@@ -720,7 +720,7 @@
  
 - name: Miki Sauvester (Summer)
   cat: gl
-  rating: 9
+  rating: 8.5
   picture: Everlasting_Summer_Miki
   weapon: bow
   ace: true
@@ -808,7 +808,7 @@
           priority: 1
           buff: Crit Rate
           buffValue: 10
-      - desc: Critical damage +40%
+      - desc: Critical damage dealt +40%
         duration: 20
         all: true
         meta:
@@ -859,7 +859,7 @@
  
 - name: Silmeria Valkyrie
   cat: gl
-  rating: 6
+  rating: 5
   picture: Silmeria
   weapon: bow
   ace: true
@@ -1122,7 +1122,7 @@
 
 - name: Lymle Lemuri Phi (Official)
   cat: gl
-  rating: 3
+  rating: 2
   picture: Federation_Lymle
   weapon: gun
   limited: true
@@ -1332,7 +1332,7 @@
 
 - name: Clair Lasbard (Valentine)
   cat: gl
-  rating: 3
+  rating: 2
   picture: Girl's_Day_Clair
   weapon: bow
   limited: true
@@ -1757,7 +1757,7 @@
       
 - name: Maria Traydor (Bridal)
   cat: gl
-  rating: 8
+  rating: 8.5
   picture: Bridal_Maria
   weapon: gun
   ace: true
@@ -1904,7 +1904,7 @@
 
 - name: Nel Zelpher (Bridal)
   cat: gl
-  rating: 8
+  rating: 8.5
   picture: Bridal_Nel
   weapon: dagger
   ace: true
@@ -2722,7 +2722,7 @@
   
 - name: Verda Kleiman
   cat: gl
-  rating: 7
+  rating: 6
   picture: Verda
   weapon: gun
   ace: true
@@ -2863,7 +2863,7 @@
 
 - name: Edge Maverick (Federation)
   cat: gl
-  rating: 0
+  rating: 7
   picture: Federation_Edge
   weapon: gun
   ace: true
@@ -2950,7 +2950,7 @@
 
 - name: Sophia Esteed (Youth)
   cat: gl
-  rating: 0
+  rating: 9
   picture: Youth_Sophia
   weapon: dagger
   ace: true
