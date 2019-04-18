@@ -27,6 +27,7 @@
     It's a good demon hating weapon and a decent neutral option since it has grit chance. Otherwise it works as a strong enough neutral
     weapon. Worth keeping.
 
+
 - name: Umbral Blaster
   cat: 'gl'
   star: 5
@@ -34,23 +35,24 @@
   atk: 850
   int: 847
   factors:
-    - desc: +15% damage to multiple targets
+    - desc: Multiple target damage +15%
       meta:
         priority: 4
         buff: Multiple Target Damage
         buffValue: 15
-    - desc: +20% DMG on Crimson Squall
-    - desc: +10% DMG to single target
+    - desc: Damage dealt +20% by Crimson Squall
+    - desc: Single target damage +10%
       lb: 3
       meta:
         priority: 4
         buff: Single Target Damage
         buffValue: 10
-  obtained: Coin Exchange/Gacha
+  obtained: Coin Exchange, Gacha
   
   notes: >
     A gun meant for Maria, so unsurprisingly, it's pretty good for Maria due to how much she uses Crimson Squall. The first factor is
     a bit limited but getting the third factor turns it into a pretty good neutral weapon.
+
 
 - name: Storm Bolt
   cat: 'gl'
@@ -59,16 +61,17 @@
   atk: 840
   int: 843
   factors:
-    - desc: Imbue Wind Element
+    - desc: Imbues attacks with wind
       element: Wind
-    - desc: +20% DMG on Hunter's Moon
-  obtained: Coin Exchange/Gacha/Transmute
+    - desc: Damage dealt +20% by Hunter's Moon
+  obtained: Coin Exchange, Gacha, Transmutation
   
   notes: >
     An elemental weapon, while wind isn't a common element weakness it'll always contribute to elemental burst. The second factor is
     for Emmerson so is redundant but just being an element gun is enough. It's also very easy to get to MLB due to it having three
     methods to obtain it.
-  
+
+
 - name: Assault Laser
   cat: 'gl'
   star: 5
@@ -76,23 +79,24 @@
   atk: 530
   int: 0
   factors:
-    - desc: +15% ATK
+    - desc: ATK +15%
       meta:
         priority: 4
         buff: ATK
         buffValue: 15
-    - desc: -15% DEF
+    - desc: DEF -15%
       meta:
         priority: 4
         buff: DEF Reduction
         buffValue: 15
-    - desc: +20% DMG on Scatter Beam
-  obtained: Coin Exchange/Gacha/Transmute
+    - desc: Damage dealt +20% by Scatter Beam
+  obtained: Coin Exchange, Gacha, Transmutation
   
   notes: >
     This gun is bad. Please fodder it. Use it to work towards coins for Storm Bolt. Only use it if it's your only gun and you can't turn
     it into a coin for Storm Bolt.
-  
+
+
 - name: Illumination Blaster
   cat: 'gl'
   star: 5
@@ -100,9 +104,9 @@
   atk: 511
   int: 506
   factors:
-    - desc: +30% DMG on Bombing Run
-    - desc: Recover 5% of DMG Dealt by Normal Attacks as HP
-    - desc: +10% DMG Dealt to Single Target
+    - desc: Damage dealt +30% by Bombing Run
+    - desc: Absorbs 5% of damage dealt by normal attacks as HP
+    - desc: Single target damage +10%
       lb: 5
       meta:
         priority: 4
@@ -113,15 +117,18 @@
   notes: >
     Like any event weapon it's decent for it's intended character, Winter Fidel, but bad beyond that. Even though it has lifesteal it
     isn't good enough to be keeping if you have better options. So just fodder it.
-  
-- name: Frozen Revolver
+
+
+- name: Icy Revolver
   cat: 'gl'
   star: 5
   picture: Frozen_Revolver
   atk: 962
   int: 957
   factors:
-    - desc: Imbue Ice Element and +15% DMG to Demons
+    - desc: Imbues attacks with ice
+      element: Ice
+    - desc: Damage dealt to demons +15%      
       slayer: Demon
       element: Ice
       slayerPct: 15
@@ -129,12 +136,12 @@
         priority: 4
         buff: Damage To Demons
         buffValue: 15
-    - desc: -10% AP Cost
+    - desc: AP cost -10%
       meta:
         priority: 4
         buff: AP Cost Reduction
         buffValue: 10
-    - desc: +25% Crit Rate at 100+ Hit Count
+    - desc: Critical hit chance +25% when hitcount is >100
       lb: 5
       meta:
         priority: 3
@@ -146,49 +153,52 @@
   notes: >
     A fantastic weapon. Has elemental imbue plus a slight racial hate. On top of that AP reduction and a powerful third factor to reward
     the lucky and rich. If you get one of these treasure it.
-  
-- name: Cerberus Gun
+
+
+- name: Cerberus Blaster
   cat: 'gl'
   star: 5
   picture: Cerberus_Blaster
   atk: 489
   int: 491
   factors:
-    - desc: +10% INT
+    - desc: INT +10%
       meta:
         priority: 4
         buff: INT
         buffValue: 10
-    - desc: +20% DMG on Cerberus Shot
-    - desc: 60% Chance to Survive a Lethal Attack at 20% HP or more
+    - desc: Damage dealt +20% by Cerberushot
+    - desc: 60% chance of surviving a lethal attack when at 20% of max HP or more
       lb: 5
-  obtained: Cave Guardian Exchange
+  obtained: Cave Guardian (Exchange)
   
   notes: >
     An event weapon for Official Lymle. It is only good for Official Lymle. Use them for fodder or mlb it and stick it on Official
     Lymle if you fancy playing her for fun from time to time.
-  
+
+
 - name: Dimension Slicer
   cat: 'gl'
   star: 5
   picture: Spatial_Gun_Dimension_Slicer
-  atk: 489
-  int: 491
+  atk: 812
+  int: 808
   factors:
-    - desc: +30% DMG on Energy Glaive
-    - desc: -10% AP Cost
+    - desc: Damage dealt +30% by Energy Glaive
+    - desc: AP cost -10%
       meta:
         priority: 4
         buff: AP Cost Reduction
         buffValue: 10
-    - desc: +40% ATK DMG at Chain 3+
+    - desc: ATK damage dealt +40% when skill chain is >3
       lb: 5
-  obtained: Alma Exchange
+  obtained: Alma (Exchange)
   
   notes: >
     A pretty strong neutral weapon. A 3+ chain is pretty easy on most gun characters. The first factor is for Emmerson's rush but the 
     second and third factor are what make it a pretty solid weapon.
-    
+
+
 - name: Snow Crossbow
   cat: 'gl'
   star: 5
@@ -196,14 +206,14 @@
   atk: 533
   int: 532
   factors:
-    - desc: +10% ATK
+    - desc: ATK +10%
       meta:
         priority: 4
         buff: ATK
         buffValue: 10
-    - desc: Imbue Ice Element
+    - desc: Imbues attacks with ice
       element: Ice
-    - desc: +15% Crit Rate
+    - desc: Critical hit chance +15%
       lb: 5
       meta:
         priority: 1
@@ -214,7 +224,8 @@
   notes: >
     The Icy Revolver's little brother. It's not on the level of that weapon but for those who don't have it, or for those running two
     gun wielders. It's a good pick up. It's factors are solid and it contributes to ele damage so it's worth keeping but not chasing.
-    
+
+
 - name: Plant Slayer
   cat: 'gl'
   star: 5
@@ -222,16 +233,16 @@
   atk: 959
   int: 958
   factors:
-    - desc: +40% DMG to Plants
+    - desc: Damage dealt to plants +40%
       slayer: Plant
       slayerPct: 40
       meta:
         priority: 4
         buff: Damage To Plants
         buffValue: 40
-    - desc: 80% chance of surviving a lethal attack at greater than 20% HP
-    - desc: +20% DMG to Single Target
-      lb: 5
+    - desc: 80% chance of surviving a lethal attack when at 20% of max HP or more
+    - desc: Single target damage +20%
+      lb: 3
       meta:
         priority: 1
         buff: Single Target Damage
@@ -242,7 +253,8 @@
     A neutral weapon for hating on plants. It's okay it's grit factor makes it slightly worse neutral than the wave gun and it's final
     factor will be cancelled out or matched in GLs current defender fest of a meta, but it'll serve you well if you have no elemental
     gun.
-    
+ 
+ 
 - name: Pulse Needle
   cat: 'gl'
   star: 5
@@ -250,21 +262,22 @@
   atk: 512
   int: 509
   factors:
-    - desc: +20% DMG on Bullet Locust
+    - desc: Damage dealt +20% by Bullet Locust
     - desc: +10% ATK DMG
       meta:
         priority: 1
         buff: ATK Damage
         buffValue: 10
-    - desc: Recover 3% HP every 5 seconds
+    - desc: Recovers 3% of max HP every 5 seconds
       lb: 5
-  obtained: Facula Gacha
+  obtained: Facula (Draw Box)
   
   notes: >
     A decent event weapon meant for OAnne. ATK damage buffs are still at a premium on GL and some basic sustain is always welcome. If
     you don't have a decent gun, this gun is just a good neutral option. Gets beaten out by elemental weapons or specific slayer
     weapons though.
-    
+
+
 - name: Tempest Storm Gun
   cat: 'gl'
   star: 5
@@ -272,19 +285,19 @@
   atk: 962
   int: 961
   factors:
-    - desc: Imbue Wind Element
+    - desc: Imbues attacks with wind
       element: Wind
-    - desc: +10% Crit Rate
+    - desc: Critical hit chance +10%
       meta:
         priority: 1
         buff: Crit Rate
         buffValue: 10
-    - desc: +15% Crit Damage
+    - desc: Critical damage dealt +15%
       meta:
         priority: 1
         buff: Crit Damage
         buffValue: 15
-    - desc: +10% DMG to Single Target (When Close Range)
+    - desc: Single target damage +10% at close range
       meta:
         priority: 3
         buff: Single Target Damage
@@ -299,6 +312,7 @@
     crit damage. This is very good when you consider characters like Maria and OAnne boost crit rate significantly post rush but not
     crit damage, meaning it has good synergy with them.
 
+
 - name: Blossom Blaster
   cat: 'gl'
   star: 5
@@ -306,11 +320,12 @@
   atk: 531
   int: 530
   factors:
-    - desc: +20% DMG on Nettlesome Burst
-    - desc: Recover 3% HP every 5s
-    - desc: Hitcount Timer +1s
+    - desc: Damage dealt +20% by Nettlesome Burst
+    - desc: Recover 3% of max HP every 5 seconds
+    - desc: Hitcount timer +1 second
       lb: 5
   obtained: Giant Prismoid (Exchange)
+
 
 - name: Scarlet Rose
   cat: 'gl'
@@ -319,10 +334,10 @@
   atk: 963
   int: 964
   factors:
-    - desc: Imbue Earth Element
+    - desc: Imbues attacks with earth
       element: Earth
-    - desc: Recover 10% of DMG dealt by normal attacks as HP
-    - desc: 30% AP recovery at 100 hits or more
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP
+    - desc: AP recovery +30% when hitcount is >100
       meta:
         priority: 3
         buff: AP Recovery
@@ -331,6 +346,7 @@
       lb: 5
   obtained: Gacha
   
+  
 - name: Magnetic Rouge
   cat: 'gl'
   star: 5
@@ -338,16 +354,17 @@
   atk: 513
   int: 508 
   factors:
-    - desc: +20% DMG on Magnetic Field
-    - desc: +5% ATK
+    - desc: Damage dealt +20% by Magnetic Field
+    - desc: ATK +5%
       meta:
         priority: 4
         buff: ATK
         buffValue: 5
-    - desc: RCV 5% HP of DMG Dealt by Normal Attacks
+    - desc: Absorbs 5% of damage dealt by normal attacks as HP
       lb: 5
   obtained: Lucifer (Exchange)
-  
+
+
 - name: Trigger-Happy Bunny Gun
   cat: 'gl'
   star: 5
@@ -355,15 +372,15 @@
   atk: 962
   int: 959
   factors:
-    - desc: Imbue Fire Element
+    - desc: Imbues attacks with fire
       element: Fire
-    - desc: 70% Chance to Survive a Lethal Attack at 20% HP or more
-    - desc: +10% Single Target DMG
+    - desc: 70% chance of surviving a lethal attack when at 20% of max HP or more
+    - desc: Single target damage +10%
       meta: 
         priority: 1
         buff: Single Target Damage
         buffValue: 10
-      lb: 5
+      lb: 3
   obtained: Gacha
 
 
@@ -436,4 +453,18 @@
         buffValue: 15
       lb: 3
   obtained: Gacha
+  
+
+- name: Bronze Blaster
+  cat: 'gl'
+  star: 4
+  picture: Bronze_Blaster
+  atk: 470
+  int: 471
+  factors:
+    - desc: Imbues attacks with ice
+      element: Ice
+    - desc: Damage dealt +20% by Heavenly Flight
+  obtained: Transmutation, Gacha
+  
   
