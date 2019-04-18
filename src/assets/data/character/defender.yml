@@ -144,7 +144,7 @@
 
 - name: Victor Oakville
   cat: gl
-  rating: 4
+  rating: 4.5
   picture: Victor
   weapon: bns
   star: 5
@@ -269,7 +269,7 @@
 
 - name: Shimada
   cat: gl
-  rating: 0
+  rating: 1
   picture: Shimada
   weapon: bns
   star: 4
@@ -422,7 +422,7 @@
 
 - name: Myuria Tionysus (Summer)
   cat: gl
-  rating: 10
+  rating: 9.5
   picture: Everlasting_Summer_Myuria
   weapon: bns
   ace: true
@@ -719,7 +719,7 @@
 
 - name: Evelysse (Winter)
   cat: gl
-  rating: 10
+  rating: 9.5
   picture: Snow_White_Evelysse
   weapon: dualswords
   ace: true
@@ -892,7 +892,7 @@
       
 - name: Edge Maverick
   cat: gl
-  rating: 5
+  rating: 6
   picture: Edge
   weapon: ohs
   ace: true
@@ -1300,7 +1300,7 @@
   
 - name: Dias Flac (Awakened)
   cat: gl
-  rating: 9
+  rating: 8
   picture: Dias
   weapon: bns
   ace: true
@@ -1573,7 +1573,7 @@
 
 - name: Edge Maverick (Awakened)
   cat: gl
-  rating: 6
+  rating: 8
   picture: Edge
   weapon: ohs
   ace: true
