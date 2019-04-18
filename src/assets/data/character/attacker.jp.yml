@@ -6168,4 +6168,69 @@
           buffValue: 20
     power: INT x 4000%
     maxHits: 8
+
+- name: Welch Vineyard (Axe)
+  cat: jp
+  rating: 0
+  picture: Axe_Welch
+  weapon: axe
+  ace: true
+  semi: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15540
+    atk: 2744
+    int: 1563
+    def: 1916
+    hit: 1141
+    grd: 847
+
+  talents:
+    - name: "Genius Blacksmith"
+      effects: 
+        - desc: 
+    - name: "Explosive"
+      effects: 
+        - desc: 
+    - name: "Unmatched Daring"
+      effects: 
+        - desc: 
+    - name: "Dextrous Fingers"
+      effects: 
+        - desc: 
+
+  skills:
+    - name: "Welch Hurricane"
+      picture: 
+      power: ATK x 1020%
+      ap: 40
+      maxHits: 10
+    - name: "Welch Cracker"
+      picture: 
+      power: ATK x 620%
+      ap: 31
+      maxHits: 6
+    - name: "Welch Rock Bomber"
+      picture: 
+      power: ATK x 350%
+      ap: 28
+      maxHits: 10
+    - name: "Welch Spinning Chop"
+      picture: 
+      power: ATK x 990%
+      ap: 36
+      maxHits: 8
+
+  rush:
+    name: "Gigantic Welch Impact"
+    picture: Gigantic_Welch_Impact_Welch
+    shortEffects: ATK damage +50% (Party/20s)
+    effects: 
+      - desc: ATK damage +50%
+        duration: 20
+        all: true
+    power: ATK x 4000%
+    maxHits: 1
     
