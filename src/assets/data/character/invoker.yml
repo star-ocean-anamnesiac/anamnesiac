@@ -1,7 +1,7 @@
 
 - name: Sophia Esteed
   cat: gl
-  rating: 8
+  rating: 7.5
   picture: Sophia
   weapon: staff
   ace: true
@@ -148,7 +148,7 @@
 
 - name: Myuria Tionysus
   cat: gl
-  rating: 7
+  rating: 3
   picture: Myuria
   weapon: staff
   ace: true
@@ -278,7 +278,7 @@
 
 - name: Ronyx J. Kenny
   cat: gl
-  rating: 4
+  rating: 1
   picture: Ronyx
   weapon: bow
   star: 5
@@ -394,7 +394,7 @@
 
 - name: Lymle Lemuri Phi
   cat: gl
-  rating: 4
+  rating: 1
   picture: Lymle
   weapon: staff
   star: 5
@@ -520,7 +520,7 @@
 
 - name: Faize Sheifa Beleth
   cat: gl
-  rating: 6
+  rating: 6.5
   picture: Faize
   weapon: bns
   star: 5
@@ -549,7 +549,6 @@
             buff: Stun Rate
             buffValue: 15
     - name: "Eldarian Honor II"
-      shortEffects: 80% chance of surviving a lethal attack and symbology cast time -80% when at 10% of max HP or more
       effects: 
         - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
         - desc: Symbology cast time -80% when at 10% of max HP or more
@@ -647,7 +646,7 @@
 
 - name: Celine Jules
   cat: gl
-  rating: 6
+  rating: 5
   picture: Celine
   weapon: staff
   star: 5
@@ -1069,7 +1068,7 @@
 
 - name: Mavelle Froesson
   cat: gl
-  rating: 8
+  rating: 7
   picture: Mavelle
   weapon: orb
   star: 5
@@ -1210,7 +1209,7 @@
  
 - name: Evelysse (Bridal)
   cat: gl
-  rating: 7
+  rating: 6
   picture: Bridal_Evelysse
   weapon: staff
   limited: true
@@ -2088,7 +2087,7 @@
 
 - name: Reimi Saionji (Federation)
   cat: gl
-  rating: 0
+  rating: 4
   picture: Federation_Reimi
   weapon: staff
   ace: true
@@ -2182,7 +2181,7 @@
 
 - name: Celine Jules (Awakened)
   cat: gl
-  rating: 6
+  rating: 8.5
   picture: Celine
   weapon: staff
   ace: true
@@ -2314,7 +2313,7 @@
 
 - name: Leon D.S. Gehste
   cat: gl
-  rating: 0
+  rating: 8.5
   picture: Leon
   weapon: tome
   ace: true
