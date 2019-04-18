@@ -1,7 +1,7 @@
 
 - name: Sophia Esteed (Summer)
   cat: gl
-  rating: 7.5
+  rating: 8
   picture: Everlasting_Summer_Sophia
   weapon: orb
   ace: true
@@ -675,7 +675,7 @@
  
 - name: Evelysse
   cat: gl
-  rating: 4.5
+  rating: 5
   picture: Evelysse
   weapon: staff
   ace: true
@@ -967,7 +967,7 @@
 
 - name: Precis F. Neumann (Winter)
   cat: gl
-  rating: 7.5
+  rating: 8
   picture: Holy_White_Precis
   weapon: staff
   ace: true
@@ -1299,7 +1299,7 @@
 
 - name: Fina
   cat: gl
-  rating: 8.5
+  rating: 8
   picture: Fina
   weapon: bow
   ace: true
@@ -1622,7 +1622,7 @@
 
 - name: Evelysse (Awakened)
   cat: gl
-  rating: 6.5
+  rating: 7
   picture: Evelysse
   weapon: staff
   ace: true
@@ -2162,7 +2162,7 @@
 
 - name: Hana
   cat: gl
-  rating: 1
+  rating: 0
   picture: Hana
   weapon: staff
   ace: false
@@ -2289,7 +2289,7 @@
 
 - name: Millie Chliette (Awakened)
   cat: gl
-  rating: 6
+  rating: 7
   picture: Millie
   weapon: staff
   ace: true
