@@ -44,7 +44,7 @@
     - desc: Damage dealt +20% by Acrobatic Locus
     - desc: Absorbs 10% of damage dealt by normal attacks as HP
       lb: 3
-  obtained: Knuckles Coin Exchange, Gacha
+  obtained: Coin Exchange, Gacha
 
   notes: >
     A decent pair of knuckles for a new player, the ATK buff makes up for the lack of stats. It has some additional synergy with Cliff
@@ -70,7 +70,7 @@
         buff: Damage
         buffValue: 15
       lb: 5
-  obtained: Knuckles Coin Exchange, Gacha
+  obtained: Coin Exchange, Gacha
 
   notes: >
     A good neutral weapon for Cliff as it gives him even more self buffs and buffs one of his attacks. That being said contributing to
@@ -84,10 +84,10 @@
   atk: 840
   int: 841
   factors:
-    - desc: Imbue Earth Element
+    - desc: Imbues attacks with earth
       element: Earth
     - desc: Damage dealt +20% by Triple Kick
-  obtained: Knuckles Coin Exchange, Gacha, Transmutation
+  obtained: Coin Exchange, Gacha, Transmutation
 
   notes: >
     While earth is probably the worst element, if the enemy doesn't resist it, then it's all okay and you're contributing to elemental
@@ -107,8 +107,8 @@
         priority: 4
         buff: Fire Damage
         buffValue: 15
-    - desc: Damage +20% by Drill Spike
-  obtained: Knuckles Coin Exchange, Gacha, Transmutation
+    - desc: Damage dealt +20% by Drill Spike
+  obtained: Coin Exchange, Gacha, Transmutation
 
   notes: >
     Okay knuckles for Anne but they're actually best put on Michael, they best his talent based Fire damage dealt by 5% so it gives him
@@ -133,7 +133,7 @@
         buff: DEF Reduction
         buffValue: 15
     - desc: Damage dealt +20% by Crescent Locus
-  obtained: Knuckles Coin Exchange, Gacha, Transmutation
+  obtained: Coin Exchange, Gacha, Transmutation
 
   notes: >
     They're a worse version of the bloody knuckles. The saving grace is perhaps that as I write this there are 8 knuckles users and
@@ -297,7 +297,7 @@
         priority: 4
         buff: Crit Rate
         buffValue: 5
-  obtained: gacha
+  obtained: Gacha
 
   notes: >
     Basically the Fanged Knuckles but with better machine hate and fire imbue instead of a skill damage boost. These knuckles are now
@@ -592,3 +592,17 @@
     - desc: Hitcount timer +1 seconds
       lb: 5
   obtained: Shine Totem / Gleaming Simulacrum (Exchange)
+  
+  
+- name: Fists of the Titan
+  cat: 'gl'
+  star: 4
+  picture: Fists_of_the_Titan
+  atk: 470
+  int: 467
+  factors:
+    - desc: Imbues attacks with fire
+      element: Fire
+    - desc: Damage dealt +20% by Hammer of Might
+  obtained: Transmuation, Gacha  
+  
