@@ -1299,3 +1299,84 @@
           buffValue: 20
     power: INT x 4000%
     maxHits: 8
+
+- name: Mirage Koas (Bunny)
+  cat: jp
+  rating: 0
+  picture: Bunny_Ears_Mirage
+  weapon: bow
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 19845
+    atk: 1747
+    int: 2482
+    def: 1339
+    hit: 1057
+    grd: 1134
+
+  talents:
+    - name: "Elegant Flowing Hand Technique"
+      effects: 
+        - desc: Damage taken -15%
+          all: true
+        - desc: Damage taken -30%
+        - desc: Damage taken -50% when HP is <50%
+    - name: "Unshakeable Heart"
+      effects: 
+        - desc: Critical hit chance +25%
+          all: true
+        - desc: Critical damage dealt +45% when attacking enemies from anywhere other than front
+          all: true
+        - desc: Recovers 100% AP on perfect dodge
+          all: true
+    - name: "Poker Face"
+      effects: 
+        - desc: Symbology cast time -60%
+        - desc: Evasion distance & rate +100%
+        - desc: Movement rate +30
+        - desc: Damage taken -100% when dodging (Party/0.5s)
+          duration: 0.5
+    - name: "Quark's Onee-san"
+      effects: 
+        - desc: HP +40%
+
+  skills:
+    - name: "Faerie Star"
+      picture: Faerie_Star
+      power: INT x 330%
+      ap: 60
+      maxHits: 1
+    - name: "Crescent Moon"
+      picture: Crescent_Wings
+      power: INT x 540%
+      ap: 26
+      maxHits: 2
+    - name: "Full Moon"
+      picture: Hunter's_Moon
+      power: INT x 210%
+      ap: 21
+      maxHits: 7
+    - name: "Cyclone Bit"
+      picture: Cyclone_Bit
+      element: Lightning
+      power: INT x 1270%
+      ap: 39
+      maxHits: 6
+      
+  rush:
+    name: "Royal Straight Flash Chariot"
+    picture: Royal_Straight_Flash_Chariot_Bunny_Mirage
+    element: Wind
+    shortEffects: Recovers 80 of max HP and critical hit chance +50% (Party/20s)
+    effects: 
+      - desc: Recovers 80% of max HP
+        all: true
+      - desc: Critical hit chance +50%
+        all: true
+        duration: 20
+    power: INT x 3500%
+    maxHits: 12
+        
