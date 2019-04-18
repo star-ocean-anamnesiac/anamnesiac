@@ -380,7 +380,7 @@
   atk: 526
   int: 533
   factors:
-    - desc:Damage dealt +20% by Prismatic Rays
+    - desc: Damage dealt +20% by Prismatic Rays
     - desc: DEF +10%
       meta:
         priority: 4
