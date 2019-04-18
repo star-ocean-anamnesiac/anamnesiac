@@ -245,7 +245,7 @@
 
 - name: Fidel Camuze (Awakened)
   cat: gl
-  rating: 7
+  rating: 8.5
   picture: Fidel
   weapon: ohs
   ace: true
@@ -714,7 +714,7 @@
 
 - name: Roddick Farrence
   cat: gl
-  rating: 9
+  rating: 9.5
   picture: Ratix
   weapon: ohs
   ace: true
@@ -1103,7 +1103,7 @@
     
 - name: Claude C. Kenny
   cat: gl
-  rating: 8
+  rating: 6
   picture: Claude
   weapon: ohs
   ace: true
@@ -1777,7 +1777,7 @@
     
 - name: Millie Chliette (Halloween)
   cat: gl
-  rating: 7
+  rating: 9.5
   picture: Wolf_Millie
   weapon: arm
   ace: true
@@ -2032,7 +2032,7 @@
  
 - name: Michael
   cat: gl
-  rating: 4
+  rating: 3.5
   picture: Michael
   weapon: knuckle
   ace: true
@@ -2177,7 +2177,7 @@
 
 - name: Fidel Camuze (Winter)
   cat: gl
-  rating: 10
+  rating: 9
   picture: Winter_Sky_Fidel
   weapon: gun
   ace: true
@@ -2441,7 +2441,7 @@
   
 - name: Meracle Chamlotte
   cat: gl
-  rating: 7
+  rating: 7.5
   picture: Meracle
   weapon: knuckle
   ace: true
@@ -2594,7 +2594,7 @@
 
 - name: Lasswell
   cat: gl
-  rating: 6
+  rating: 5
   picture: Lasswell
   weapon: bns
   ace: true
@@ -2783,7 +2783,7 @@
 
 - name: Verda Kleiman (Valentine)
   cat: gl
-  rating: 10
+  rating: 9.5
   picture: Pure_Love_Verda
   weapon: arm
   ace: true
@@ -2944,7 +2944,7 @@
  
 - name: Rena Lanford (Valentine)
   cat: gl
-  rating: 8
+  rating: 7.5
   picture: Sweet_Cat_Rena
   weapon: knuckle
   ace: true
@@ -2978,10 +2978,9 @@
       effects: 
         - desc: Nullifies charge assault critical damage penalty
           all: Attackers
-        - desc: No flinching when taking damage of 30% of max HP or less during a charge assault
+        - desc: No flinching when taking damage of 30% of max HP or less during charge assault
           all: Attackers
     - name: "Bad Luck II"
-      shortEffects: Normal attack AP recovery +100% and evasion AP cost -50% (Attackers)
       effects: 
         - desc: Normal attack AP recovery +100%
           all: Attackers
@@ -3078,7 +3077,7 @@
 
 - name: Mirage Koas
   cat: gl
-  rating: 7
+  rating: 7.5
   picture: Mirage
   weapon: knuckle
   ace: true
@@ -3440,7 +3439,7 @@
 
 - name: Rena Lanford (Bridal)
   cat: gl
-  rating: 8
+  rating: 6
   picture: Bridal_Rena
   weapon: knuckle
   ace: true
@@ -3457,7 +3456,6 @@
 
   talents:
     - name: "Fresh Madonna Lilies II"
-      shortEffects: Normal attack AP recovery +100% and ATK +30% (Party)
       effects: 
         - desc: ATK +30%
           all: true
@@ -4221,7 +4219,7 @@
 
 - name: Crowe F. Almedio
   cat: gl
-  rating: 0
+  rating: 8
   picture: Crowe
   weapon: dualswords
   ace: true
@@ -4306,7 +4304,7 @@
       picture: Tri_Zapper
       power: ATK x 230%
       ap: 21
-      maxHits: 6
+      maxHits: 3
       
   rush:
     name: "Crosscut"
@@ -4324,7 +4322,7 @@
 
 - name: Chisato Madison
   cat: gl
-  rating: 0
+  rating: 5
   picture: Chisato
   weapon: knuckle
   star: 5
