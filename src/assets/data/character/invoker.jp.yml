@@ -3475,7 +3475,7 @@
             buff: ATK -> INT
             buffValue: 50
     - name: "Supporter of Love"
-      shortEffects: AP cost -15% after using Lightning Blast and INT damage taken +15% when hit by Lightning Blast (Self/10s)
+      shortEffects: AP cost -15% after using Lightning Blast and INT damage taken +30% when hit by Shiny Lancer (Self/10s)
       effects: 
         - desc: AP cost -15% after using Lightning Blast
           duration: 10
@@ -3483,13 +3483,13 @@
             priority: 1
             buff: AP Cost Reduction
             buffValue: 15
-        - desc: INT damage taken +15% when hit by Lightning Blast
+        - desc: INT damage taken +30% when hit by Shiny Lancer
           duration: 10
           all: Enemies
           meta:
             priority: 1
             buff: Enemy INT Damage Taken
-            buffValue: 15
+            buffValue: 30
     - name: "Deep Crimson Dress"
       effects: 
         - desc: No flinching when casting symbology
