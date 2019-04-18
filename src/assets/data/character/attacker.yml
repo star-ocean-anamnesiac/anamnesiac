@@ -245,7 +245,7 @@
 
 - name: Fidel Camuze (Awakened)
   cat: gl
-  rating: 8.5
+  rating: 8
   picture: Fidel
   weapon: ohs
   ace: true
@@ -714,7 +714,7 @@
 
 - name: Roddick Farrence
   cat: gl
-  rating: 9.5
+  rating: 9
   picture: Ratix
   weapon: ohs
   ace: true
@@ -1777,7 +1777,7 @@
     
 - name: Millie Chliette (Halloween)
   cat: gl
-  rating: 9.5
+  rating: 10
   picture: Wolf_Millie
   weapon: arm
   ace: true
@@ -2032,7 +2032,7 @@
  
 - name: Michael
   cat: gl
-  rating: 3.5
+  rating: 4
   picture: Michael
   weapon: knuckle
   ace: true
@@ -2325,7 +2325,7 @@
 
 - name: Welch Vineyard (Tearful)
   cat: gl
-  rating: 1
+  rating: 0
   picture: Weeping_Welch
   weapon: knuckle
   limited: true
@@ -2441,7 +2441,7 @@
   
 - name: Meracle Chamlotte
   cat: gl
-  rating: 7.5
+  rating: 7
   picture: Meracle
   weapon: knuckle
   ace: true
@@ -2783,7 +2783,7 @@
 
 - name: Verda Kleiman (Valentine)
   cat: gl
-  rating: 9.5
+  rating: 10
   picture: Pure_Love_Verda
   weapon: arm
   ace: true
@@ -3077,7 +3077,7 @@
 
 - name: Mirage Koas
   cat: gl
-  rating: 7.5
+  rating: 7
   picture: Mirage
   weapon: knuckle
   ace: true
