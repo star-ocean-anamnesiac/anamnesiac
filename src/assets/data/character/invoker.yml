@@ -1,7 +1,7 @@
 
 - name: Sophia Esteed
   cat: gl
-  rating: 7.5
+  rating: 8
   picture: Sophia
   weapon: staff
   ace: true
@@ -148,7 +148,7 @@
 
 - name: Myuria Tionysus
   cat: gl
-  rating: 3
+  rating: 4
   picture: Myuria
   weapon: staff
   ace: true
@@ -520,7 +520,7 @@
 
 - name: Faize Sheifa Beleth
   cat: gl
-  rating: 6.5
+  rating: 6
   picture: Faize
   weapon: bns
   star: 5
@@ -925,7 +925,7 @@
 
 - name: Claude C. Kenny (Uniform)
   cat: gl
-  rating: 4
+  rating: 1
   picture: Prince_Claude
   weapon: bow
   star: 5
@@ -2181,7 +2181,7 @@
 
 - name: Celine Jules (Awakened)
   cat: gl
-  rating: 8.5
+  rating: 8
   picture: Celine
   weapon: staff
   ace: true
@@ -2313,7 +2313,7 @@
 
 - name: Leon D.S. Gehste
   cat: gl
-  rating: 8.5
+  rating: 8
   picture: Leon
   weapon: tome
   ace: true
