@@ -33,7 +33,7 @@
     - desc: Imbues attacks with lightning
       element: Lightning
     - desc: Damage dealt +20% by Victory Terror
-  obtained: Dagger Coin Shop / Transmutation / Gacha
+  obtained: Coin Shop, Transmutation, Gacha
   
   notes: >
     The best daggers you can get from the coin shop due to them being elemental imbued. Though early on they're beaten out by the
@@ -78,7 +78,7 @@
         buff: Crit Rate
         buffValue: 4
       lb: 3
-  obtained: Dagger Coin Shop, Transmutation, Gacha
+  obtained: Coin Shop, Transmutation, Gacha
   
   notes: >
     They're basically a stat stick, the third factor is bad, it's passable as a neutral weapon because of the scaling. That's it.
@@ -97,7 +97,7 @@
         buff: Ice Damage
         buffValue: 15
     - desc: Damage dealt +20% by Sylvan Shot
-  obtained: Dagger Coin Shop, Transmutation, Gacha
+  obtained: Coin Shop, Transmutation, Gacha
   
   notes: >
     They're not a terrible neutral weapon for Clair since Hydroblades is Ice and she uses Sylvan shot, for everyone else, there are
@@ -122,7 +122,7 @@
         buff: DEF Reduction
         buffValue: 15
     - desc: Damage dealt +20% by Hydroblades
-  obtained: Dagger Coin Shop, Transmutation, Gacha
+  obtained: Coin Shop, Transmutation, Gacha
   
   notes: >
     Other weapons do what this does better. This is fodder. My sympathies if you pulled it. It is usable if it is your only dagger.
@@ -464,3 +464,16 @@
       lb: 5
   obtained: Shine Totem / Gleaming Simulacrum (Exchange)
 
+
+- name: Dragons of Defense
+  cat: 'gl'
+  star: 4
+  picture: Dragons_of_Defense
+  atk: 470
+  int: 0
+  factors:
+    - desc: Imbues attacks with ice
+      element: Ice
+    - desc: Damage dealt +20% by Mirror Blade
+  obtained: Transmutation, Gacha
+  
