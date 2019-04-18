@@ -1669,6 +1669,7 @@
   weapon: dualswords
   ace: true
   semi: true
+  limited: true
   star: 5
 
   stats:
