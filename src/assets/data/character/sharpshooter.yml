@@ -133,7 +133,7 @@
 
 - name: Maria Traydor
   cat: gl
-  rating: 6
+  rating: 7
   picture: Maria
   weapon: gun
   ace: true
@@ -382,7 +382,7 @@
 
 - name: Emmerson T. Kenny
   cat: gl
-  rating: 3
+  rating: 2
   picture: Emmerson
   weapon: gun
   star: 5
@@ -720,7 +720,7 @@
  
 - name: Miki Sauvester (Summer)
   cat: gl
-  rating: 8.5
+  rating: 9
   picture: Everlasting_Summer_Miki
   weapon: bow
   ace: true
@@ -1757,7 +1757,7 @@
       
 - name: Maria Traydor (Bridal)
   cat: gl
-  rating: 8.5
+  rating: 8
   picture: Bridal_Maria
   weapon: gun
   ace: true
@@ -1904,7 +1904,7 @@
 
 - name: Nel Zelpher (Bridal)
   cat: gl
-  rating: 8.5
+  rating: 8
   picture: Bridal_Nel
   weapon: dagger
   ace: true
