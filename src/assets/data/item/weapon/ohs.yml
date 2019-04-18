@@ -6,20 +6,20 @@
   atk: 964
   int: 958
   factors:
-    - desc: All attribute damage +20%
+    - desc: Elemental damage dealt +20%
       meta:
         priority: 4
         buff: Damage
         buffValue: 50
-    - desc: Damage to machines +30%
+    - desc: Damage dealt to machines +30%
       slayer: Machine
       slayerPct: 50
       meta:
         priority: 4
         buff: Damage To Machines
         buffValue: 50
-    - desc: Recover 15% of damage dealt on normal attacks as HP
-    - desc: Crit Rate +10%
+    - desc: Absorbs 15% of damage dealt by normal attacks as HP
+    - desc: Critical hit chance +10%
       lb: 5
       meta:
         priority: 1
@@ -32,6 +32,7 @@
     your attribute damage is what makes it particularly good on fayt and 2b but it's a pretty solid neutral weapon at mlb especially
     against mech bosses.
 
+
 - name: Cursed Balmung Blade
   cat: 'gl'
   star: 5
@@ -39,24 +40,25 @@
   atk: 545
   int: 0
   factors:
-    - desc: +15% ATK
+    - desc: ATK +15%
       meta:
         priority: 4
         buff: ATK
         buffValue: 15
-    - desc: +20% DMG on Helm Splitter
-    - desc: -10% AP Cost
+    - desc: Damage dealt +20% by Helm Splitter
+    - desc: AP cost -10%
       lb: 3
       meta:
         priority: 4
         buff: AP Cost Reduction
         buffValue: 10
-  obtained: Gacha / OHS Coin Exchange
+  obtained: Coin Exchange, Gacha
   
   notes: >
     A good weapon if you just started, it's 3rd lb factor is a strong one and it's ATK buff makes up for it's lack of stats. A decent
     neutral weapon if you need one.
-    
+
+
 - name: Claidheamh Soluis
   cat: 'gl'
   star: 5
@@ -64,16 +66,17 @@
   atk: 840
   int: 0
   factors:
-    - desc: Imbue Light Element
+    - desc: Imbues attacks with light
       element: Light
-    - desc: +20% DMG on Cyclone Blade
-  obtained: Gacha / OHS Coin Exchange / Transmutation
+    - desc: Damage dealt +20% by Cyclone Blade
+  obtained: Coin Exchange, Transmutation, Gacha
   
   notes: >
     A good pick from the ohs exchange. A light imbue sword, one of three in the game but the easiest to obtain. You're using this
     purely to bring light imbue, but that's a good enough factor on it's own since it already has a decent ATK stat to make it a
     good weapon.
-    
+
+
 - name: Lightning Sword
   cat: 'gl'
   star: 5
@@ -81,42 +84,44 @@
   atk: 835
   int: 0
   factors:
-    - desc: +15% Lightning DMG Dealt
+    - desc: Lightning damage dealt +15%
       meta:
         priority: 4
         buff: Lightning Damage
         buffValue: 15
-    - desc: +20% DMG on Rising Blade
-  obtained: Gacha / OHS Coin Exchange / Transmutation
+    - desc: Damage dealt +20% by Rising Blade
+  obtained: Gacha, Transmutation, Coin Exchange
   
   notes: >
     A very good pick up if you plan to play Roddick since it will buff two if his skills and his rush. Outside of use with Roddick it
     isn't that great so it comes down if you're going to play him or not whether you should invest in this sword.
-    
+
+
 - name: Moonstone Sword
   cat: 'gl'
   star: 5
   picture: Moonite_Sword
-  atk: 835
+  atk: 830
   int: 0
   factors:
-    - desc: +15% ATK
+    - desc: ATK +15%
       meta:
         priority: 4
         buff: ATK
         buffValue: 15
-    - desc: -15% DEF
+    - desc: DEF -15%
       meta:
         priority: 4
         buff: DEF Reduction
         buffValue: 15
-    - desc: +20% DMG on Air Slash
-  obtained: Gacha / OHS Coin Exchange / Transmutation
+    - desc: Damage dealt +20% by Air Slash
+  obtained: Coin Exchange, Transmutation, Gacha
   
   notes: >
     It's a worse Balmung Blade that is in the transmute pool. It's best use is as transmute fodder I'm afraid. Though works if it's
     your only 5 star sword.
-    
+
+
 - name: Aurora Blade
   cat: 'gl'
   star: 5
@@ -124,26 +129,27 @@
   atk: 478
   int: 0
   factors:
-    - desc: +20% DMG on Dragon Slash
-    - desc: +20% DMG to Machines
+    - desc: Damage dealt +20% by Dragon Slash
+    - desc: Damage dealt to machines +20%
       slayer: Machine
       slayerPct: 20
       meta:
         priority: 4
         buff: Damage To Machines
         buffValue: 20
-    - desc: +4% Crit Chance
+    - desc: Critical hit chance +4%
       lb: 5
       meta:
         priority: 4
         buff: Crit Rate
         buffValue: 4
-  obtained: Jie Revorse Exchange
+  obtained: Jie Revorse (Exchange)
   
   notes: >
     It's just a bad weapon really. Not that great against machines even, best to use it to help transmute to better swords or as
     fodder for coins for other weapons.
-    
+
+
 - name: Blade of Ruin
   cat: 'gl'
   star: 5
@@ -151,13 +157,13 @@
   atk: 850
   int: 0
   factors:
-    - desc: +15% DMG to Single Targets
+    - desc: Single target damage +15%
       meta:
         priority: 4
         buff: Single Target Damage
         buffValue: 15
-    - desc: +20% DMG on Air Raid
-    - desc: +10% DMG
+    - desc: Damage dealt +20% by Air Raid
+    - desc: Damage dealt +10%
       lb: 5
       meta:
         priority: 4
@@ -168,7 +174,8 @@
   notes: >
     Dubbed the Blade of Ruin because it'll ruin your day when you get one off a weapon ticket. It's just not a good sword, you can do
     much better but useable if you have no other good 5 star sword.
-    
+
+
 - name: Thunderstroke Broadsword
   cat: 'gl'
   star: 5
@@ -176,24 +183,25 @@
   atk: 862
   int: 858
   factors:
-    - desc: +20% DMG on Omega Thunderclap Blade
-    - desc: -10% INT DMG Taken
+    - desc: Damage dealt +20% by Omega Thunderclap Blade
+    - desc: INT damage taken -10%
       meta:
         priority: 4
         buff: INT Damage Taken Reduction
         buffValue: 10
-    - desc: +15% Lightning DMG Dealt
+    - desc: Lightning damage dealt +15% 
       lb: 5
       meta:
         priority: 4
         buff: Lightning Damage
         buffValue: 15
-  obtained: Millioneye Exchange
+  obtained: Millioneye (Exchange)
   
   notes: >
     It's a better version of the Lightning sword, especially at MLB. It has more stats, buffs Roddick's rush and has a defensive 
     factor you don't commonly see being given party wide. Put this on Roddick and become the stun god he was meant to be.
-    
+
+
 - name: Centrifuge Blade
   cat: 'gl'
   star: 5
@@ -201,20 +209,21 @@
   atk: 513
   int: 508
   factors:
-    - desc: +20% DMG on Heaven's Sword
-    - desc: Recover 3% HP every 3 seconds (If behind an enemy.)
-    - desc: -10% AP Cost
+    - desc: Damage dealt +20% by Heaven's Sword
+    - desc: Recovers 3% of max HP every 3 seconds when behind target
+    - desc: AP cost -10%
       lb: 5
       meta:
         priority: 4
         buff: AP Cost Reduction
         buffValue: 10
-  obtained: Millioneye Exchange
+  obtained: Millioneye (Exchange)
   
   notes: >
     Has a solid 3rd factor, the rest of the weapon is trash, bad stats, bad factors, not even good for Summer Reimi who it is
     intended for. Trash it.
-    
+
+
 - name: Blaublitz
   cat: 'gl'
   star: 5
@@ -222,14 +231,14 @@
   atk: 513
   int: 508
   factors:
-    - desc: Imbue Lightning Element
+    - desc: Imbues attacks with lightning
       element: Lightning
-    - desc: +20% Stun Chance
+    - desc: Stun rate +20%
       meta:
         priority: 4
         buff: Stun Rate
         buffValue: 20
-    - desc: +30% Crit Chance (If not targeted by an enemy.)
+    - desc: Critical hit chance +30% when not targeted by enemy
       lb: 5
       meta:
         priority: 3
@@ -242,7 +251,8 @@
     An amazing sword, elemental imbue and the only lightning sword even on JP. It's 2nd factor is strong if you don't have Roddick
     and the third factor is exceptional if you're not playing a role which wants aggro. Thought it's first two factors are plenty
     strong enough to make use of it.
-    
+
+
 - name: Slayer of Divine Beings
   cat: 'gl'
   star: 5
@@ -250,23 +260,24 @@
   atk: 475
   int: 0
   factors:
-    - desc: Imbue Light
+    - desc: Imbues attacks with light
       element: Light
       lb: 3
-    - desc: +15% DMG on Heavenly Launcher
+    - desc: DAmage dealt +15% by Heavenly Launcher
       lb: 4
-    - desc: -10% AP Cost
+    - desc: AP cost -10%
       lb: 5
       meta:
         priority: 4
         buff: AP Cost Reduction
         buffValue: 10
-  obtained: Blood Valkyrie Exchange
+  obtained: Blood Valkyrie (Exchange)
   
   notes: >
     A free light imbue sword. It's problem is that it isn't as good as the coin shop and transmutable Solus. Even it's 3rd factor
     doesn't do enough to offset the near 400 ATK difference at MLB for both weapons.
-    
+
+
 - name: Slayer of Divine Beings II
   cat: 'gl'
   star: 5
@@ -274,18 +285,18 @@
   atk: 861
   int: 0
   factors:
-    - desc: Imbue Light Attribute
+    - desc: Imbues attacks with light
       element: Light
-    - desc: +20% DMG on Valkyrie's Mercy
+    - desc: Damage dealt +20% by Valkyrie's Mercy
       lb: 1
-    - desc: -10% AP Cost
+    - desc: AP cost -10%
       lb: 3
       meta:
         priority: 4
         buff: AP Cost Reduction
         buffValue: 10
-    - desc: -10% DMG Taken
-      lb: 5
+    - desc: Damage taken -10%
+      lb: 3
       meta:
         priority: 4
         buff: Damage Taken Reduction
@@ -295,7 +306,8 @@
   notes: >
     A global exclusive weapon. A light sword that when lb3 becomes the light sword of choice over Solus. They have similar stats and
     just having the 3rd factor is what pushes it over the edge.
-    
+
+
 - name: Sacred Tear
   cat: 'gl'
   star: 5
@@ -303,26 +315,27 @@
   atk: 479
   int: 0
   factors:
-    - desc: +10% DMG on Sword Bomber
-    - desc: +15% DMG to Humans
+    - desc: Damage dealt +10% by Sword Bomber
+    - desc: Damage dealt to humans +15%
       slayer: Human
       slayerPct: 15
       meta:
         priority: 4
         buff: Damage To Humans
         buffValue: 15
-    - desc: +5% ATK
+    - desc: ATK +5%
       lb: 5
       meta:
         priority: 4
         buff: ATK
         buffValue: 5
-  obtained: Hell Siren Exchange
+  obtained: Hell Siren (Exchange)
   
   notes: >
     A bad weapon meant for Claude, Sword Bomber is a bad skill, the human hate isn't high enough and if you choose to MLB it the ATK
     bonus isn't enough. Use them for transmute fodder.
-    
+
+
 - name: Icicle Sword
   cat: 'gl'
   star: 5
@@ -330,15 +343,15 @@
   atk: 585
   int: 583
   factors:
-    - desc: +15% ATK
+    - desc: ATK +15%
       meta:
         priority: 4
         buff: ATK
         buffValue: 15
-    - desc: Imbue Ice Element
+    - desc: Imbues attacks with ice
       element: Ice
-    - desc: -10% AP Cost
-      lb: 5
+    - desc: AP cost -10%
+      lb: 3
       meta:
         priority: 4
         buff: AP Cost Reduction
@@ -348,7 +361,8 @@
   notes: >
     Another top tier elemental weapon for ohs users. Icicle sword has not only Ice imbue, but an ATK buff to make up for its lack of
     stats, plus at MLB a nice AP reduction bonus to help output more damage.
-    
+ 
+ 
 - name: Veinslay
   cat: 'gl'
   star: 5
@@ -356,34 +370,35 @@
   atk: 961
   int: 956
   factors:
-    - desc: +40% DMG to Divine
+    - desc: Damage dealt to divinities +40%
       slayer: Divinity
       slayerPct: 40
       meta:
         priority: 4
         buff: Damage To Divinities
         buffValue: 50
-    - desc: +20% DMG to Humans
+    - desc: Damage dealt to humanoids +20%
       slayer: Human
       slayerPct: 20
       meta:
         priority: 4
         buff: Damage To Humans
         buffValue: 20
-    - desc: -10% AP Cost
+    - desc: AP cost -10%
       meta:
         priority: 4
         buff: AP Cost Reduction
         buffValue: 10
-    - desc: 80% Chance to Survive a Lethal Attack at 20% or more HP
-      lb: 5
+    - desc: 80% chance of surviving a lethal attack when at 20% of max HP or more
+      lb: 3
   obtained: Gacha
   
   notes: >
     Not a bad neutral weapon considering it gives two types of race hate buffs. It's other two factors are also nice ones to have.
     Very good if you're playing Fayt or 2B and to a certain extent Roddick. Worth keeping just to have a nice neutral weapon if it's
     needed.
-    
+
+
 - name: Jade Bastard Sword
   cat: 'gl'
   star: 5
@@ -391,23 +406,24 @@
   atk: 492
   int: 486
   factors:
-    - desc: +5% ATK
+    - desc: ATK +5%
       meta:
         priority: 4
         buff: ATK
         buffValue: 5
-    - desc: +5% Crit Chance
+    - desc: Critical hit chance +5%
       meta:
         priority: 4
         buff: Crit Rate
         buffValue: 15
-    - desc: +10% DMG on Colossal Ethereal Blast
+    - desc: Damage dealt +10% by Colossal Ethereal Blast
       lb: 5
-  obtained: Luther's Descent Exchange / Achievement
+  obtained: Luther (Exchange, Achievement)
   
   notes: >
     It's not a great event weapon, even for Fayt, useable for him if you just started but best to use the 6 copies as fodder really.
-    
+   
+   
 - name: Virtuous Contract
   cat: 'gl'
   star: 5
@@ -415,20 +431,21 @@
   atk: 863
   int: 859
   factors:
-    - desc: "+20% DMG on YoHRa Arms: Two"
-    - desc: Recover 3% HP every 5 seconds
-    - desc: +10% ATK DMG Dealt
+    - desc: "Damage dealt +20% by YoRHa Arms: Two"
+    - desc: Recovers 3% of max HP every 5 seconds
+    - desc: ATK damage dealt +10%
       lb: 5
       meta:
         priority: 4
         buff: ATK Damage
         buffValue: 15
-  obtained: Nier Event Clear
+  obtained: Administrative Gear / Nier (Achievement, Event, Exchange)
   
   notes: >
     A weapon meant for 2B, not really needed if you have her gacha weapon. But if for new players its high stats and reasonable second
     and third factor make it a solid weapon to use.
-    
+
+
 - name: Cruel Oath
   cat: 'gl'
   star: 5
@@ -436,24 +453,25 @@
   atk: 861
   int: 858
   factors:
-    - desc: "+20% DMG on YoHRa Arms: Four"
-    - desc: +30% AP RCV Speed
+    - desc: "Damage dealt +20% by YoRHa Arms: Four"
+    - desc: AP recovery +30%
       meta:
         priority: 4
         buff: AP Recovery
         buffValue: 30
-    - desc: -10% AP Cost
+    - desc: AP cost -10%
       lb: 5
       meta:
         priority: 4
         buff: AP Cost Reduction
         buffValue: 10
-  obtained: Nier Event Clear
+  obtained: Administrative Gear / Nier (Achievement, Event, Exchange)
   
   notes: >
     A good neutral weapon for 9S since it has AP recovery and reduction, plus buffing a skill. For others it's still a highly statted
     neutral weapon with good upsides so it can definitely be used if you've just started.
-    
+
+
 - name: Type-3 Sword
   cat: 'gl'
   star: 5
@@ -461,26 +479,27 @@
   atk: 962
   int: 956
   factors:
-    - desc: Imbue Light Element
+    - desc: Imbues attacks with light
       element: Light
-    - desc: +5% ATK
+    - desc: ATK +5%
       meta:
         priority: 4
         buff: ATK
         buffValue: 5
-    - desc: +5% HIT
+    - desc: HIT +5%
       meta:
         priority: 4
         buff: HIT
         buffValue: 5
-    - desc: Recover 10% HP every 3 seconds
+    - desc: Recovers 10% of max HP every 3 seconds
       lb: 5
   obtained: Gacha (Limited)
   
   notes: >
     Yet another light sword and a limited time one at that. A solid weapon with good stats, some slight ATK and HIT boosting and a
     strong defensive talent as it's third factor. 
-    
+ 
+ 
 - name: Stormblade
   cat: 'gl'
   star: 5
@@ -488,17 +507,18 @@
   atk: 963
   int: 958
   factors:
-    - desc: Imbue Wind Element
+    - desc: Imbues attacks with wind
       element: Wind
-    - desc: Recover 5% HP of DMG Dealt by Normal Attacks
-    - desc: 50% Chance to Survive a Lethal Attack at 15% or more HP
+    - desc: Absorbs 5% of damage dealt by normal attacks as HP
+    - desc: 50% chance of surviving a lethal attack when at 15% of max HP or more
       lb: 3
   obtained: Gacha
   
   notes: >
     Our first wind imbue sword with a minor lifesteal and grit effect. You'll use it when on element, other elemental weapons beat it
     if not. Plus side is you only need to get it to lb3 to get the third factor.
-    
+
+
 - name: MK-2 SRF Blade
   cat: 'gl'
   star: 5
@@ -506,29 +526,30 @@
   atk: 493
   int: 489
   factors:
-    - desc: +10% DMG on Raging Strike
-    - desc: -5% DMG Taken
+    - desc: Damage dealt +10% by Raging Strike
+    - desc: Damage taken -5%
       meta:
         priority: 4
         buff: Damage Taken Reduction
         buffValue: 5
-    - desc: +4% Crit Chance
+    - desc: Critical hit chance +4%
       lb: 5
       meta:
         priority: 4
         buff: Crit Rate
         buffValue: 4
-    - desc: +10% Crit DMG
+    - desc: Critical damage dealt +10%
       lb: 5
       meta:
         priority: 4
         buff: Crit Damage
         buffValue: 10
-  obtained: Armaros Exchange
+  obtained: Armaros (Exchange)
   
   notes: >
     It's slightly better than event weapons of the past, but it's still just transmute fodder.
-    
+
+
 - name: Timepiece Broadsword
   cat: 'gl'
   star: 5
@@ -536,41 +557,42 @@
   atk: 833
   int: 827
   factors:
-    - desc: +30% DMG on Ethereal Blast
-    - desc: +5% Crit Chance
+    - desc: Damage dealt +30% by Ethereal Blast
+    - desc: Critical hit chance +5%
       meta:
         priority: 4
         buff: Crit Rate
         buffValue: 5
-    - desc: +10% Crit DMG
+    - desc: Critical damage dealt +10%
       meta:
         priority: 4
         buff: Crit Damage
         buffValue: 15
-    - desc: +40% ATK DMG at Chain 3+
+    - desc: ATK damage dealt +40% when skill chain is >3
       lb: 5
       meta:
         priority: 3
         buff: ATK Damage
         buffValue: 15
         buffCondition: Skill Chain 2+
-  obtained: Alma Exchange
+  obtained: Alma (Exchange)
   
   notes: >
     A weapon meant for Fidel. It's a decent neutral weapon, especially for those like 2B or Fayt who have self imbue already.
     Otherwise it's pretty average.
-    
+ 
+ 
 - name: Earthen Crystal Edge
   cat: 'gl'
   star: 5
   picture: Soil_Crystal_Edge
   atk: 963
-  int: 958
+  int: 957
   factors:
-    - desc: Imbue Earth Element
+    - desc: Imbues attacks with earth
       element: Earth
-    - desc: Recover 10% HP of DMG Dealt by Normal Attacks
-    - desc: -10% AP Cost
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP
+    - desc: AP cost -10%
       lb: 5
       meta:
         priority: 4
@@ -581,29 +603,31 @@
   notes: >
     Our first earth imbue sword with a lifesteal effect. The third factor is a solid one as well, a good element weapon if you can't
     be on element.
-    
+
+
 - name: Crimson Saber
   cat: 'gl'
   star: 5
   picture: Crimson_Saber
   atk: 861
-  int: 853
+  int: 859
   factors:
-    - desc: +20% DMG on Lava Floor
-    - desc: +10% ATK DMG (When Targetted by Enemy)
+    - desc: Damage dealt +20% by Lava Floor
+    - desc: ATK damage dealt +10% when targeted by enemy
       meta:
         priority: 3
         buff: ATK Damage
         buffValue: 10
         buffCondition: Targeted By Enemy
-    - desc: 60% Chance to Survive a Lethal Attack at 20% HP or more
+    - desc: 60% chance of surviving a lethal attack when at 20% of max HP or more
       lb: 5
-  obtained: FFBE Gacha box
+  obtained: Knight Exile / FFBE (Draw Box)
   
   notes: >
     It's okay on Rain. It adds to his main damage skill, and increases ATK damage when he has aggro rather than ATK. The grit chance
     is decent enough but a lot of swords will serve you better. If you're an ffbe fan you might want to keep Rain's sword for you
     collection.
+
 
 - name: Sawtooth Blade
   cat: 'gl'
@@ -624,6 +648,6 @@
         priority: 1
         buff: AP Cost Reduction
         buffValue: 10
-    - desc: Recovers 5% HP every 3 seconds at 100 hits or more
+    - desc: Recovers 5% HP every 3 seconds when hitcount is >100
       lb: 3
   obtained: Gacha
