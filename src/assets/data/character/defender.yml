@@ -144,7 +144,7 @@
 
 - name: Victor Oakville
   cat: gl
-  rating: 4.5
+  rating: 5
   picture: Victor
   weapon: bns
   star: 5
@@ -269,7 +269,7 @@
 
 - name: Shimada
   cat: gl
-  rating: 1
+  rating: 0
   picture: Shimada
   weapon: bns
   star: 4
@@ -343,7 +343,7 @@
 
 - name: Stephen D. Kenny
   cat: gl
-  rating: 1
+  rating: 0
   picture: Stephen
   weapon: bns
   star: 4
@@ -422,7 +422,7 @@
 
 - name: Myuria Tionysus (Summer)
   cat: gl
-  rating: 9.5
+  rating: 10
   picture: Everlasting_Summer_Myuria
   weapon: bns
   ace: true
@@ -892,7 +892,7 @@
       
 - name: Edge Maverick
   cat: gl
-  rating: 6
+  rating: 5
   picture: Edge
   weapon: ohs
   ace: true
@@ -1573,7 +1573,7 @@
 
 - name: Edge Maverick (Awakened)
   cat: gl
-  rating: 8
+  rating: 7
   picture: Edge
   weapon: ohs
   ace: true
