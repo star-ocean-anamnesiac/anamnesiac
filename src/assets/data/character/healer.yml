@@ -1,7 +1,7 @@
 
 - name: Sophia Esteed (Summer)
   cat: gl
-  rating: 8
+  rating: 7.5
   picture: Everlasting_Summer_Sophia
   weapon: orb
   ace: true
@@ -283,7 +283,7 @@
 
 - name: Millie Chliette
   cat: gl
-  rating: 5.5
+  rating: 5
   picture: Millie
   weapon: staff
   ace: true
@@ -551,7 +551,7 @@
     
 - name: Nel Zelpher (Oracle)
   cat: gl
-  rating: 3
+  rating: 2
   picture: Priestess_Nel
   weapon: staff
   limited: true
@@ -675,7 +675,7 @@
  
 - name: Evelysse
   cat: gl
-  rating: 5
+  rating: 4.5
   picture: Evelysse
   weapon: staff
   ace: true
@@ -967,7 +967,7 @@
 
 - name: Precis F. Neumann (Winter)
   cat: gl
-  rating: 8
+  rating: 7.5
   picture: Holy_White_Precis
   weapon: staff
   ace: true
@@ -1140,7 +1140,7 @@
 
 - name: Relia
   cat: gl
-  rating: 8
+  rating: 7
   picture: Relia
   weapon: staff
   ace: true
@@ -1299,7 +1299,7 @@
 
 - name: Fina
   cat: gl
-  rating: 8
+  rating: 8.5
   picture: Fina
   weapon: bow
   ace: true
@@ -1622,7 +1622,7 @@
 
 - name: Evelysse (Awakened)
   cat: gl
-  rating: 7
+  rating: 6.5
   picture: Evelysse
   weapon: staff
   ace: true
@@ -2143,7 +2143,8 @@
       maxHits: 6
     - name: "Antidote"
       picture: Antidote
-      power: Cure Poison
+      power: 0
+      notes: Cures poison
       ap: 20
       maxHits: 1
       
@@ -2161,7 +2162,7 @@
 
 - name: Hana
   cat: gl
-  rating: 0
+  rating: 1
   picture: Hana
   weapon: staff
   ace: false
