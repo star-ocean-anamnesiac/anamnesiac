@@ -6,24 +6,25 @@
   atk: 474
   int: 476
   factors:
-    - desc: Dark damage +30%
+    - desc: Dark damage dealt +30%
       meta:
         priority: 4
         buff: Dark Damage
         buffValue: 30
-    - desc: Cursed Reaping Spark damage +20%
+    - desc: Damage dealt +20% by Cursed Reaping Spark
     - desc: INT +20%
       lb: 5
       meta:
         priority: 4
         buff: INT
         buffValue: 20
-  obtained: Frost Tree Exhange
+  obtained: Frost Tree (Exchange)
   
   notes: >
     This is the weapon meant for Faize. Please give it to Faize or you'll never be able to actually use Faize because every other bns 
     weapon sucks for him.
-    
+
+
 - name: Murasame 
   cat: 'gl'
   star: 5
@@ -31,20 +32,21 @@
   atk: 545
   int: 0
   factors:
-    - desc: +15% ATK
+    - desc: ATK +15%
       meta:
         priority: 4
         buff: ATK
         buffValue: 15
-    - desc: +20% DMG on Bloodstorm Revolution
+    - desc: Damage dealt +20% by Bloodstorm Revolution
     - desc: Taunt +1
-      lb: 5
-  obtained: BnS Coin Exchange / Gacha
+      lb: 3
+  obtained: Coin Exchange, Gacha
   
   notes: >
     A neutral weapon with good synergy for Victor, the ATK buff makes up for the stat loss, it boosts his best attacking move and the
     extra taunt helps him hold aggro. It's also good on Princess Miki for this reason as well.
-    
+
+
 - name: Searing Sword
   cat: 'gl'
   star: 5
@@ -52,15 +54,16 @@
   atk: 840
   int: 842
   factors:
-    - desc: Imbue Fire Element
+    - desc: Imbues attacks with fire
       element: Fire
-    - desc: +20% DMG on Vampiric Flash
-  obtained: BnS Coin Exchange / Gacha / Transmute
+    - desc: Damage dealt +20% by Vampiric Flash
+  obtained: Coin Exchange, Transmutation, Gacha
   
   notes: >
     A well statted weapon with an imbue that's easily obtained. You want this, even if the second factor is bad, it's a stat stick
     helping you contribute to elemental burst and doing even more damage to fire weak enemies.
-    
+
+
 - name: Demon Saber
   cat: 'gl'
   star: 5
@@ -68,17 +71,18 @@
   atk: 835
   int: 836
   factors:
-    - desc: +15% Dark DMG Dealt
+    - desc: Dark damage dealt +15%
       meta:
         priority: 4
         buff: Dark Damage
         buffValue: 15
-    - desc: +20% DMG on Mirror Blade
-  obtained: BnS Coin Exchange / Gacha / Transmute
+    - desc: Damage dealt +20% by Mirror Blade
+  obtained: Coin Exchange, Transmutation, Gacha
   
   notes: >
     A pretty poor weapon. Boosts Dragon Roar and Mirror Blade for Victor. Can be used by Faize if you were dumb and ditched his weapon.
-    
+
+
 - name: Mizuchi
   cat: 'gl'
   star: 5
@@ -86,47 +90,49 @@
   atk: 530
   int: 0
   factors:
-    - desc: +15% ATK
+    - desc: ATK +15%
       meta:
         priority: 4
         buff: ATK
         buffValue: 15
-    - desc: -15% DEF
+    - desc: DEF -15%
       meta:
         priority: 4
         buff: DEF Reduction
         buffValue: 15
-    - desc: +20% DMG on Dragon Roar
-  obtained: BnS Coin Exchange / Gacha / Transmute
+    - desc: Damage dealt +20% by Dragon Roar
+  obtained: Coin Exchange, Transmutation, Gacha
   
   notes: >
     The transmute pool trash, just turn it into a coin for a weapon you actually want like Searing Sword.
-    
-- name: War Gods Brand 
+
+
+- name: War God's Brand 
   cat: 'gl'
   star: 5
   picture: Dragon's_Blade_Mizuchi
   atk: 835
   int: 836
   factors:
-    - desc: +20% DMG to Multiple Targets
+    - desc: Multiple target damage +20%
       meta:
         priority: 1
         buff: Multiple Target Damage
         buffValue: 20
-    - desc: +20% DMG on Dragon Roar
-    - desc: +10% DMG
+    - desc: Damage dealt +20% by Dragon Roar
+    - desc: Damage dealt +10%
       meta:
         priority: 1
         buff: Damage
         buffValue: 10
-      lb: 5
+      lb: 3
   obtained: Gacha
   
   notes: >
     It is just a bad weapon. Don't pull for it and I'm sorry if you got it. It's okay if you don't have better but there are far better
     bns now.
-    
+ 
+ 
 - name: Bluewave Sword
   cat: 'gl'
   star: 5
@@ -134,19 +140,20 @@
   atk: 531
   int: 529
   factors:
-    - desc: +20% DMG on Thunderfire Slice
+    - desc: Damage dealt +20% by Thunderfire Slice
     - desc: Taunt +1
-    - desc: +10% DEF (If being targetted by enemies.)
+    - desc: DEF +10% when targeted by enemy
       meta:
         priority: 3
         buff: DEF
         buffValue: 10
-        buffCondition: Targetted by Enemy
+        buffCondition: Targeted by Enemy
       lb: 5
-  obtained: Predate Queen Exchange
+  obtained: Predate Queen (Exchange)
   
   notes: >
     Event weapon for Summer Myuria. It's pretty passable for her but otherwise it's just fodder.
+    
     
 - name: Ryugu-Maru
   cat: 'gl'
@@ -155,22 +162,23 @@
   atk: 963
   int: 964
   factors:
-    - desc: Imbue Thunder Element
+    - desc: Imbues attacks with lightning
       element: Lightning
-    - desc: Recover 15% HP of DMG Dealt by Regular Attacks
-    - desc: -10% ATK DMG Taken (If being targetted by enemies.)
+    - desc: Absorbs 15% of damage dealt by normal attacks as HP
+    - desc: ATK damage taken -10% when targeted by enemy
       meta:
         priority: 3
         buff: ATK Damage Taken Reduction
         buffValue: 10
-        buffCondition: Targetted by Enemy
-      lb: 5
+        buffCondition: Targeted by Enemy
+      lb: 3
   obtained: Gacha
   
   notes: >
     One hell of a BnS. An elemental imbue weapon with a pretty big lifesteal effect. At MLB it gives some defensive benefit if you have
     aggro but the first two factors are good enough on their own.
-    
+
+
 - name: Augaus
   cat: 'gl'
   star: 5
@@ -178,20 +186,21 @@
   atk: 861
   int: 859
   factors:
-    - desc: +30% DMG on Diabolic Whirl
-    - desc: -10% AP Cost
+    - desc: Damage dealt +30% by Diabolic Whirl
+    - desc: AP cost -10%
       meta:
         priority: 4
         buff: AP Cost Reduction
         buffValue: 10
-    - desc: Recover 10% HP of DMG Dealt by Regular Attacks (If being targetted by enemies.)
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP when targeted by enemy
       lb: 5
-  obtained: Millioneye Exchange
+  obtained: Millioneye (Exchange)
   
   notes: >
     A weapon meant for Victor. It's final factor condition is a bit odd but it's fine. However as a neutral weapon you'd rather just
     have Murasame anyway.
-    
+
+
 - name: Hyouga
   cat: 'gl'
   star: 5
@@ -199,21 +208,22 @@
   atk: 586
   int: 582
   factors:
-    - desc: +15% ATK
+    - desc: ATK +15%
       meta:
         priority: 4
         buff: ATK
         buffValue: 15
-    - desc: Imbue Ice Element
+    - desc: Imbues attacks with ice
       element: Ice
-    - desc: Recover 10% HP of DMG Dealt by Regular Attacks
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP
       lb: 5
   obtained: Gacha
   
   notes: >
     An ice imbue BnS. It's pretty good as well since it's ATK bonus makes up for the lack of stats. If you happen to get it to MLB you
     also gain a good life steal boost which is a nice bonus. A must have for your BnS collection.
-    
+
+
 - name: Devil's Saber
   cat: 'gl'
   star: 5
@@ -221,24 +231,25 @@
   atk: 478
   int: 474
   factors:
-    - desc: Recover 5% HP of DMG Dealt by Regular Attacks
-    - desc: +4% Crit Rate
+    - desc: Absorbs 5% of damage dealt by normal attacks as HP
+    - desc: Critical hit chance +4%
       meta:
         priority: 4
         buff: Crit Rate
         buffValue: 4
-    - desc: -5% INT DMG Taken
+    - desc: INT damage taken -5%
       meta:
         priority: 1
         buff: INT Damage Taken Reduction
         buffValue: 5
       lb: 5
-  obtained: Michael Exchange
+  obtained: Michael (Exchange)
   
   notes: >
     An event weapon, with a good set of talents but with poor numbers on them. Okay if you have nothing better, otherwise use them for
     fodder.
-    
+
+
 - name: Daikiga Iwato
   cat: 'gl'
   star: 5
@@ -246,33 +257,34 @@
   atk: 491
   int: 489
   factors:
-    - desc: +10% DMG on Unbridled Double Slash
-    - desc: +15% DMG to Demons
+    - desc: Damage dealt +10% by Unbridled Double Slash
+    - desc: Damage dealt to demons +15%
       slayer: Demon
       slayerPct: 15
       meta:
         priority: 4
         buff: Damage To Demons
         buffValue: 15
-    - desc: +15% DMG to Humans
+    - desc: Damage dealt to humanoids +15%
       slayer: Human
       slayerPct: 15
       meta:
         priority: 4
         buff: Damage To Humans
         buffValue: 15
-    - desc: +5% ATK
+    - desc: ATK +5%
       meta:
         priority: 4
         buff: ATK
         buffValue: 5
       lb: 5
-  obtained: Executioners Exchange
+  obtained: Executioners (Exchange, Achievement)
   
   notes: >
     An event weapon for Albel, with a good set of talents but with poor numbers on them. Okay if you have nothing better, otherwise use 
     them for fodder.
-    
+
+
 - name: Hisuikirin
   cat: 'gl'
   star: 5
@@ -280,14 +292,14 @@
   atk: 962
   int: 958
   factors:
-    - desc: Imbue Earth Element
+    - desc: Imbues attacks with earth
       element: Earth
-    - desc: +50% AP RCV by Normal Attacks
+    - desc: Normal attack AP recovery +50%
       meta:
         priority: 1
         buff: AP Recovery From Normal Attacks
         buffValue: 50
-    - desc: +15% ATK DMG when Chain 3+
+    - desc: ATK damage dealt +15% when skill chain is >3
       meta:
         priority: 3
         buff: ATK Damage
@@ -299,7 +311,8 @@
   notes: >
     An Earth BnS, while Earth isn't the best element it still contributes to elemental burst. The other two factors are solid
     especially if you lack and ATK buffer.
-    
+
+
 - name: Purple Lightning
   cat: 'gl'
   star: 5
@@ -307,19 +320,19 @@
   atk: 862
   int: 858
   factors:
-    - desc: +20% DMG on Flash Blade
-    - desc: +15% DMG to Multiple Targets
+    - desc: Damage dealt +20% by Flash Blade
+    - desc: Multiple target damage +15%
       meta:
         priority: 1
         buff: Multiple Target Damage
         buffValue: 15
-    - desc: -10% ATK DMG Taken
+    - desc: ATK damage taken -10%
       meta:
         priority: 1
         buff: ATK Damage Taken Reduction
         buffValue: 10
       lb: 5
-  obtained: FFBE Achievement
+  obtained: Knight Exile / FFBE (Achievement)
   
   notes: >
     The weapon made for Lasswell. While very pretty, it isn't as good as it looks. Multiple target damage buffing is pretty bad, the 
@@ -341,7 +354,7 @@
         buff: Damage To Beasts
         buffValue: 40
     - desc: Absorbs 5% of damage dealt by normal attacks as HP
-    - desc: +50% AP recovery on normal attacks at 100 hits or more
+    - desc: Normal attack AP recovery +50% when hitcount is >100
       meta:
         priority: 1
         buff: AP Recovery from Normal Attacks
