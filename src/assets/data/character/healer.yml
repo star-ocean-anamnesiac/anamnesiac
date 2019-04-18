@@ -2143,7 +2143,7 @@
       maxHits: 6
     - name: "Antidote"
       picture: Antidote
-      power: 0
+      power: 0%
       notes: Cures poison
       ap: 20
       maxHits: 1
