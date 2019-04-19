@@ -1770,8 +1770,8 @@
 - name: Nel Zepher (Halloween)
   cat: jp
   rating: 0
-  picture: 
-  weapon: 
+  picture: Fallen_Angel_Nel
+  weapon: dualswords
   ace: true
   limited: true
   star: 5
