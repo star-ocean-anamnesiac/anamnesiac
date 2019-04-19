@@ -16,7 +16,7 @@
     - Curse
 
   weaknesses:
-    - plain: INT Damage
+    - plain: - INT Damage
       percentWeakness: 10
       
     - element: Dark
