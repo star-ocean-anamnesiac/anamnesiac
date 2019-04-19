@@ -28,7 +28,7 @@
         - desc: No flinching when taking damage of 20% of max HP or less
           all: true
     - name: "Dark Impulse"
-      shortEffects: Recovers 100% HP for self and 10 AP for all allies on perfect dodge
+      shortEffects: Recovers 100% AP for self and 10 AP for all allies on perfect dodge
       effects: 
         - desc: Recovers 100% AP on perfect dodge
         - desc: Recovers 10 AP for all allies on perfect dodge
@@ -1766,3 +1766,79 @@
         duration: 20
     power: ATK x 4000%
     maxHits: 5
+
+- name: Nel Zepher (Halloween)
+  cat: jp
+  rating: 0
+  picture: 
+  weapon: 
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 20265
+    atk: 2587
+    int: 1549
+    def: 2415
+    hit: 826
+    grd: 1043
+
+  talents:
+    - name: "Wings Dyed in Darkness"
+      effects: 
+        - desc: ATK/INT damage taken -20%
+          all: true
+    - name: "Residual Halo"
+      effects: 
+        - desc: No flinching when taking damage of 25% of max HP or less
+          all: true
+        - desc: No flinching when HP is 100%
+          all: true
+    - name: "Different Colored Accessory"
+      effects: 
+        - desc: ATK/INT damage dealt +20%
+          all: true
+        - desc: ATK/INT damage dealt +40% when HP is 100%
+          all: true
+    - name: "Fallen Angel's Smile"
+      shortEffects: Recovers 100% AP for self and 10 AP for all allies on perfect dodge
+      effects: 
+        - desc: Recovers 100% AP on perfect dodge
+        - desc: Recovers 10 AP for all allies on perfect dodge
+
+  skills:
+    - name: "Air Slash"
+      picture: Tri_Zapper
+      power: ATK x 300%
+      ap: 21
+      maxHits: 6
+    - name: "Rotary Black Wing"
+      picture: Dextral_Edge
+      power: ATK x 190%
+      ap: 14
+      maxHits: 2
+    - name: "Demonic Stab"
+      picture: Talon_Thrust
+      power: ATK x 510%
+      ap: 26
+      maxHits: 2
+    - name: "Swirling Sword Slash"
+      picture: Swirling_Sword_Slash
+      power: ATK x 890%
+      ap: 32
+      maxHits: 5
+      
+  rush:
+    name: "Starlight Blade"
+    picture: Starlight_Blade_Fallen_Angel_Nel
+    shortEffects: Recovers 30% of max HP (Party) and critical hit chance +40% (Party/20s)
+    effects: 
+      - desc: Recovers 30% of max HP
+        all: true
+      - desc: Critical hit chance +40%
+        all: true
+        duration: 20
+    power: ATK x 4500%
+    maxHits: 6
+    
