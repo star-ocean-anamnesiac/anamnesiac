@@ -3613,4 +3613,81 @@
           buffValue: 20
     power: INT x 4000%
     maxHits: 8
-    
+
+- name: Precis F Neumann (Operator)
+  cat: jp
+  rating: 0
+  picture: Operator_Precis
+  weapon: arm
+  ace: true
+  semi: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 18774
+    atk: 2962
+    int: 1537
+    def: 1575
+    hit: 1253
+    grd: 938
+
+  talents:
+    - name: "Machine of Confidence"
+      effects: 
+        - desc: Damage +35%
+          all: true
+        - desc: Damage +55% when hitcount is >100
+          all: true
+        - desc: Damage +75% when hitcount is >250
+          all: true
+    - name: "Blue Metallic Shine"
+      effects: 
+        - desc: Normal attack AP recovery +100%
+          all: true
+        - desc: Hitcount timer +1 second
+          all: true
+        - desc: AP cost -15% at long range
+          all: true
+    - name: "Human and Machine Unity"
+      effects: 
+        - desc: Nullifies charge assault critical damage penalty
+        - desc: No flinching when using charge assault
+        - desc: Damage taken -30%
+    - name: "Friend to all Machinery"
+      effects: 
+        - desc: ATK/HP +20%
+
+  skills:
+    - name: "Hammer Slammer"
+      picture: Hammer_Slammer
+      power: ATK x 550%
+      ap: 21
+      maxHits: 6
+    - name: "Rocket Punch"
+      picture: Rocket_Punch
+      power: ATK x 440%
+      ap: 19
+      maxHits: 1
+    - name: "Barrier"
+      picture: Force_Field
+      power: ATK x 420%
+      ap: 18
+      maxHits: 10
+    - name: "Mujin-kun Rocket"
+      picture: Mujin_kun_Rocket
+      power: ATK x 770%
+      ap: 30
+      maxHits: 5
+      
+  rush:
+    name: "Mujin-kun Super Beam"
+    picture: Mujin_kun_Super_Beam_Operator_Precis
+    shortEffects: ATK +80% and recovers 10% of max HP every 3 seconds (Self/20s)
+    effects: 
+      - desc: ATK +80%
+        duration: 20
+      - desc: Recovers 10% of max HP every 3 seconds
+        duration: 20
+    power: ATK x 4500%
+    maxHits: 10
