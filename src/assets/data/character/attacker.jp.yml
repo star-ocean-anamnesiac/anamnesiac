@@ -6247,4 +6247,81 @@
         all: true
     power: ATK x 4000%
     maxHits: 1
+
+- name: Albel Nox (Halloween)
+  cat: jp
+  rating: 0
+  picture: Wolf_Albel
+  weapon: axe
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 16979
+    atk: 3293
+    int: 1510
+    def: 1995
+    hit: 1120
+    grd: 847
+
+  talents:
+    - name: "Starving Wolf"
+      effects: 
+        - desc: ATK +20%
+          all: true
+        - desc: DEF -20% when Wolf Albel's HP is 100%
+          all: Enemies
+        - desc: DEF -30% when Wolf Albel's HP is 100%
+          all: Enemies
+    - name: "Monster of the Moonlight"
+      effects: 
+        - desc: Hitcount timer +2 seconds
+          all: true
+        - desc: AP cost -10% when hitcount is >50
+          all: true
+        - desc: AP cost -20% when hitcount is >100
+          all: true
+    - name: "Lone Wolf"
+      effects: 
+        - desc: No flinching when attacking
+        - desc: Damage taken -40%
+    - name: "Deep Twisted Regret"
+      effects: 
+        - desc: ATK +20%
+        - desc: HP +10%
+
+  skills:
+    - name: "Gravity Collider"
+      picture: Gravity_Collider
+      power: ATK x 350%
+      ap: 21
+      maxHits: 6
+    - name: "Divine Ring"
+      picture: Divine_Ring
+      power: ATK x 780%
+      ap: 39
+      maxHits: 8
+    - name: "Dragon Hammer"
+      picture: Dragon_Hammer
+      power: ATK x 280%
+      ap: 19
+      maxHits: 10
+    - name: "Demon Claw Wave"
+      picture: Demon_Claw_Wave
+      power: ATK x 840%
+      ap: 42
+      maxHits: 8
+
+  rush:
+    name: "Haō Kokutensō"
+    picture: Dynast's_Heaven_Piercer_Wolf_Albel
+    shortEffects: AP cost -40% and recovers 10% of max HP every 3 seconds (Self/20s)
+    effects: 
+      - desc: AP cost -40%
+        duration: 20
+      - desc: Recovers 10% of max HP every 3 seconds
+        duration: 20
+    power: ATK x 5000%
+    maxHits: 6
     
