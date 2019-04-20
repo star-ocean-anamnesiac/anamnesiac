@@ -4556,3 +4556,87 @@
       **Rotation**
             
       *Normal > Glowing Pierce > Sky-High Break^n*
+
+- name: Arngrim
+  cat: gl
+  rating: 0
+  picture: Arngrim
+  weapon: greatsword
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 18113
+    atk: 3356
+    int: 1523
+    def: 1995
+    hit: 1120
+    grd: 833
+
+  talents:
+    - name: "Dauntless Courage"
+      effects: 
+        - desc: Damage dealt +100% by Dead End when using charge assault
+    - name: "Reckless"
+      effects: 
+        - desc: Recovers 15% of max HP every 3 seconds during charge assault standby
+    - name: "Will of Loyalty"
+      effects: 
+        - desc: 95% chance of surviving a lethal attack when at 30% of max HP or more
+        - desc: No flinching when taking damage of 10% of max HP or less
+        - desc: DEF -30%
+          all: Enemies
+          meta:
+            priority: 3
+            buff: Enemy DEF Reduction
+            buffValue: 30
+    - name: "Veteran Warrior"
+      shortEffects: ATK +20% and HP +15%
+      effects: 
+        - desc: ATK +20%
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 20
+        - desc: HP +15%
+          meta:
+            priority: 1
+            buff: HP
+            buffValue: 15
+  
+  skills:
+    - name: "Storm Edge"
+      picture: Firestorm_Blade
+      power: ATK x 300%
+      ap: 21
+      maxHits: 4
+    - name: "Dead End"
+      picture: Dead_End
+      power: ATK x 800%
+      ap: 48
+      maxHits: 1
+    - name: "Spinning-Back Knuckle"
+      picture: Void_Claw
+      power: ATK x 160%
+      ap: 14
+      maxHits: 1
+    - name: "Highwind Swing"
+      picture: YoHRa_Arms_Eleven
+      power: ATK x 300%
+      ap: 21
+      maxHits: 5
+      
+  rush:
+    name: "Final Blast"
+    picture: Final_Blast_Arngrim
+    element: Fire
+    effects: 
+      - desc: Critical hit chance +100%
+        duration: 10
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 100
+    power: ATK x 5000%
+    maxHits: 11
