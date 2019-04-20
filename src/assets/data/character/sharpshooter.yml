@@ -3058,4 +3058,99 @@
           buffValue: 25
     power: ATK x 3500%
     maxHits: 5
+
+- name: Lenneth Valkyrie (Azure)
+  cat: gl
+  rating: 0
+  picture: Blue_Sky_Lenneth
+  weapon: bow
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 13965
+    atk: 2494
+    int: 1601
+    def: 1720
+    hit: 1253
+    grd: 931
+
+  talents:
+    - name: "Valkyrie Pride"
+      effects:
+        - desc: Damage dealt +20%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 20
+        - desc: AP recovery +30%
+          all: true
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffValue: 30
+    - name: "Arrow of Genesis"
+      effects: 
+        - desc: ATK +10% after using Starlight Fang (6s)
+          meta:
+            priority: 3
+            buff: ATK
+            buffCondition: With Use of Skill
+            buffValue: 10
+    - name: "Loki's Soul"
+      effects:
+        - desc: AP cost -30% when skill chain is >3
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain 3+
+            buffValue: 30
+    - name: "Pure White Feather Decoration"
+      shortEffects: Damage taken +30% when hit by Killing Thorn (Enemies/8s)
+      effects: 
+        - desc: Damage taken +30% when hit by Killing Thorn (8s)
+          all: Enemies 
+          meta:
+            priority: 1
+            buff: Enemy Damage Taken
+            buffCondition: With Use of Skill
+            buffValue: 30      
+            
+  skills:
+    - name: "Ardent Volcano Shot"
+      picture: Heavenly_Flight
+      power: ATK x 510%
+      ap: 33
+      maxHits: 8
+    - name: "Aiming Wing"
+      picture: Savage_Sparrows
+      power: ATK x 150%
+      ap: 15
+      maxHits: 9
+    - name: "Starlight Fang"
+      picture: Starlight_Fang
+      power: ATK x 260%
+      ap: 24
+      maxHits: 5
+    - name: "Killing Thorn"
+      picture: Killing_Thorn
+      power: ATK x 430%
+      ap: 36
+      maxHits: 10
+
+  rush:
+    name: "Blue Sky Nibelung Valesti"
+    picture: Nibelung_Valesti_Lenneth
+    effects:
+      - desc: Elemental damage dealt +50%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Elemental Damage
+          buffValue: 30
+    power: ATK x 3500%
+    maxHits: 7
     
