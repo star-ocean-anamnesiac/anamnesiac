@@ -133,7 +133,116 @@
       *Pod 2 > Pod 1 > Pod 2 > CA Sword 12 (Ranged set combo from range)*
 
 
-- name: Dias (Awakened)
+- name: Dias Flac
+  cat: jp
+  rating: 6
+  picture: Dias
+  weapon: bns
+  ace: true
+  star: 5
+
+  stats:
+    hp: 22155
+    atk: 2799
+    int: 1510
+    def: 2867
+    hit: 812
+    grd: 1036
+
+  talents:
+    - name: "Expel's Swordsmaster"
+      shortEffects: DEF +20% and ATK damage taken -20% (Party)
+      effects: 
+        - desc: DEF +20%
+          all: true
+          meta:
+            priority: 1
+            buff: DEF
+            buffValue: 20
+        - desc: ATK damage taken -20%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK Damage Taken Reduction
+            buffValue: 20
+    - name: "Ruthless Swordsmanship"
+      shortEffects: ATK +30% and DEF +20%
+      effects: 
+        - desc: ATK +30%
+          all: false
+          meta:
+            priority: 4
+            buff: ATK
+            buffValue: 30
+        - desc: DEF +20%
+          all: false
+          meta:
+            priority: 4
+            buff: DEF
+            buffValue: 20
+    - name: "Vow to Cecille"
+      effects: 
+        - desc: No flinching when taking damage of 25% of max HP or less
+          all: Short Range Weapons
+    - name: "Equal Footing"
+      shortEffects: Damage dealt +20% (Attackers/Defenders)
+      effects: 
+        - desc: Damage dealt +20%
+          all: Attackers
+          meta:
+            priority: 1
+            buff: Damage
+            buffRole: attacker
+            buffValue: 20
+        - desc: Damage dealt +20%
+          all: Defenders
+          meta:
+            priority: 1
+            buff: Damage
+            buffRole: defender
+            buffValue: 20
+
+  skills:
+    - name: "Annihilating Air Slash"
+      picture: Air_Slash_II
+      power: ATK x 200%
+      ap: 20
+      maxHits: 4
+      highlight: true
+    - name: "Double Slash"
+      picture: Double_Slash_II
+      power: ATK x 200%
+      ap: 20
+      maxHits: 2
+      highlight: true
+    - name: "Dragon Roar"
+      picture: Dragon_Roar
+      element: Dark
+      power: ATK x 340%
+      ap: 29
+      maxHits: 2
+      highlight: true
+    - name: "Diabolic Whirl"
+      picture: Diabolic_Whirl
+      power: ATK x 340%
+      ap: 29
+      maxHits: 5
+      
+  rush:
+    name: "Deadly Illusion"
+    picture: Deadly_Illusion_Dias
+    effects: 
+      - desc: AP cost -50%
+        duration: 20
+        meta:
+          priority: 4
+          buff: AP Cost Reduction
+          buffValue: 50
+    power: ATK x 3500%
+    maxHits: 10
+    
+    
+- name: Dias Flac (Awakened)
   cat: jp
   rating: 9
   picture: Dias
@@ -295,6 +404,93 @@
       *Annihiliating Air Slash > Dragon Roar > Annihiliating Air Slash > Dragon Roar > spam this until no AP - (Range rotation)*
 
 
+- name: Edge Maverick
+  cat: jp
+  rating: 5
+  picture: Edge
+  weapon: ohs
+  ace: true
+  limited: false
+  star: 5
+
+  stats:
+    hp: 20370
+    atk: 2508
+    int: 1537
+    def: 2560
+    hit: 812
+    grd: 1036
+
+  talents:
+    - name: "Longing for the Stars"
+      effects: 
+        - desc: ATK +20%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 20
+    - name: "A Pioneer's Spirit"
+      effects: 
+        - desc: Single target damage +15%
+          all: true
+          meta:
+            priority: 1
+            buff: Single Target Damage
+            buffValue: 15
+    - name: "Youthful Spunk"
+      effects: 
+        - desc: HP +40%
+          all: true
+          meta:
+            priority: 1
+            buff: HP
+            buffValue: 40
+    - name: "A Friend's Promise"
+      effects: 
+        - desc: No flinching when taking damage of 20% of max HP or less
+          all: true
+
+  skills:
+    - name: "Smack Down"
+      picture: Double_Slash_I
+      power: ATK x 180%
+      ap: 17
+      maxHits: 5
+      highlight: true
+    - name: "Aura Spark"
+      picture: Air_Slash_I
+      power: ATK x 160%
+      ap: 14
+      maxHits: 1
+      highlight: true
+    - name: "Cyclone Blade"
+      picture: Cyclone_Blade
+      power: ATK x 310%
+      ap: 29
+      maxHits: 5
+    - name: "Raging Strike"
+      picture: Raging_Strike
+      power: ATK x 650%
+      ap: 40
+      maxHits: 1
+      highlight: true
+      
+  rush:
+    name: "Mystic Cross Nova"
+    picture: Mystic_Cross_Nova_Edge
+    effects: 
+      - desc: Elemental damage dealt +50%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Elemental Damage
+          buffValue: 50
+    power: ATK x 3500%
+    maxHits: 12
+    
+    
 - name: Edge Maverick (Awakened)
   cat: jp
   rating: 5
@@ -435,6 +631,84 @@
       *Normal>Raging>Aura Spark>Raging - Unawakened*
 
 
+- name: Victor Oakville
+  cat: gl
+  rating: 5
+  picture: Victor
+  weapon: bns
+  star: 5
+
+  stats:
+    hp: 18795
+    atk: 2074
+    int: 1365
+    def: 2336
+    hit: 738
+    grd: 952
+
+  talents:
+    - name: "The King's Chosen's Glory"
+      effects: 
+        - desc: DEF +50%
+          all: true
+          meta:
+            priority: 1
+            buff: DEF
+            buffValue: 50
+        - desc: Damage dealt +10%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 10
+    - name: "What Friends Are For"
+      effects: 
+        - desc: No flinching when taking damage of 25% of max HP or less
+          all: true
+    - name: "Indomitable Spirit"
+      effects: 
+        - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
+
+  skills:
+    - name: "Mirror Blade"
+      picture: Mirror_Blade_II
+      power: ATK x 610%
+      ap: 38
+      maxHits: 5
+    - name: "Vampiric Flash"
+      picture: Vampiric_Flash
+      power: ATK x 220%
+      ap: 32
+      maxHits: 6
+    - name: "Bloodstorm Revolution"
+      picture: Bloodstorm_Revolution
+      power: ATK x 550%
+      ap: 38
+      maxHits: 10
+      highlight: true
+    - name: "Dragon Roar"
+      picture: Dragon_Roar
+      element: Dark
+      power: ATK x 340%
+      ap: 29
+      maxHits: 2
+      highlight: true
+      
+  rush:
+    name: "Diabolic Edge"
+    picture: Diabolic_Edge_Victor
+    effects: 
+      - desc: Damage taken -50%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Damage Taken Reduction
+          buffValue: 50
+    power: ATK x 3000%
+    maxHits: 15
+    
+    
 - name: Victor Oakville (Awakened)
   cat: jp
   rating: 4
@@ -622,7 +896,7 @@
         - desc: Imbues attacks with lightning and light
           all: false
     - name: "Refreshing Smile"
-      shortEffects: Elemental damage dealt +20%, and elemental damage dealt +30%/+40% when hitcount is >100/>150 (All Party)
+      shortEffects: Elemental damage dealt +20%, and elemental damage dealt +30%/+40% when hitcount is >100/>150 (Party)
       effects: 
         - desc: Elemental damage dealt +20%
           all: true
@@ -732,7 +1006,7 @@
       effects: 
         - desc: Nullifies charge assault critical damage penalty
           all: true
-        - desc: ATK damage +30% during charge assault
+        - desc: ATK damage dealt +30% when using charge assault
           all: true
           meta:
             priority: 3
@@ -747,7 +1021,7 @@
             priority: 3
             buff: Damage Taken Reduction
             buffValue: 20
-        - desc: No flinching when taking damage of 25% or max HP or less
+        - desc: No flinching when taking damage of 25% of max HP or less
           all: true
     - name: "Veil of Dusk"
       effects: 
@@ -870,7 +1144,7 @@
             buff: ATK Damage
             buffValue: 20
     - name: "Resolution Filled Sword Strike"
-      shortEffects: Damage taken -50% and no flinching after using Grin Valesti (1.5s)
+      shortEffects: Damage taken -50% and no flinching after using Grinn Valesti (1.5s)
       effects: 
         - desc: Damage taken -50% after using Grinn Valesti (1.5s)
           meta:
@@ -1027,6 +1301,7 @@
             buffValue: 50
     power: ATK x 4500%
     maxHits: 6
+
 
 - name: Vashyron
   cat: jp
@@ -1454,6 +1729,7 @@
     power: ATK x 5000%
     maxHits: 6
 
+
 - name: Ashton Anchors (Blazing)
   cat: jp
   rating: 0
@@ -1493,13 +1769,13 @@
           all: true
     - name: "Species Transcending Bonds"
       effects: 
-        - desc: Single target damage dealt +20%
+        - desc: Single target damage +20%
           all: true
           meta:
             priority: 1
             buff: Single Target Damage
             buffValue: 20
-        - desc: Single target damage dealt +40% at close range
+        - desc: Single target damage +40% at close range
           all: true
           meta:
             priority: 1
@@ -1554,6 +1830,7 @@
           buffValue: 50
     power: ATK x 4500%
     maxHits: 16
+
 
 - name: Tika (Defender)
   cat: jp
@@ -1662,6 +1939,7 @@
     power: INT x 4000%
     maxHits: 8
 
+
 - name: Yrian Luxter
   cat: jp
   rating: 0
@@ -1767,6 +2045,7 @@
     power: ATK x 4000%
     maxHits: 5
 
+
 - name: Nel Zepher (Halloween)
   cat: jp
   rating: 0
@@ -1832,7 +2111,7 @@
   rush:
     name: "Starlight Blade"
     picture: Starlight_Blade_Fallen_Angel_Nel
-    shortEffects: Recovers 30% of max HP (Party) and critical hit chance +40% (Party/20s)
+    shortEffects: Recovers 30% of max HP and critical hit chance +40% (Party/20s)
     effects: 
       - desc: Recovers 30% of max HP
         all: true
@@ -1841,4 +2120,125 @@
         duration: 20
     power: ATK x 4500%
     maxHits: 6
+
+   
+- name: Bacchus D-79
+  cat: jp
+  rating: 0
+  picture: Bacchus
+  weapon: launcher
+  ace: true
+  semi: true
+  star: 5
+
+  stats:
+    hp: 22260
+    atk: 2494
+    int: 1510
+    def: 2377
+    hit: 819
+    grd: 1022
+
+  talents:
+    - name: "Morpus Mission"
+      effects:
+        - desc: HP +20%
+          all: true
+          meta:
+            priority: 3
+            buff: HP
+            buffValue: 20
+        - desc: No flinching when taking damage of 25% of max HP or less
+          all: true
+        - desc: ATK damage taken -15% when hitcount is >150
+          all: true
+          meta:
+            priority: 3
+            buff: ATK Damage Taken Reduction
+            buffCondition: Hit Count >150
+            buffValue: 15
+    - name: "Composed Cyborg"
+      shortEffects: ATK/INT damage dealt +20%, and ATK/INT damage dealt +50% when hitcount is >250 (Party)
+      effects: 
+        - desc: ATK damage dealt +20%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK Damage
+            buffValue: 20
+        - desc: ATK damage dealt +50% when hitcount is >250
+          all: true
+          meta:
+            priority: 1
+            buff: ATK Damage
+            buffCondition: Hit Count > 250
+            buffValue: 50
+        - desc: INT damage dealt +20%
+          all: true
+          meta:
+            priority: 1
+            buff: INT Damage
+            buffValue: 20
+        - desc: INT damage dealt +50% when hitcount is >250
+          all: true
+          meta:
+            priority: 1
+            buff: INT Damage
+            buffCondition: Hit Count > 250
+            buffValue: 50
+    - name: "Impartial Justice"
+      effects: 
+        - desc: Hitcount timer +2 seconds
+          all: true
+        - desc: Damage taken -100% when dodging (0.5s)
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffCondition: When Evading
+            buffValue: 100
+    - name: "The Heat Hidden in the Steel"
+      effects: 
+        - desc: Nullifies freeze
+        - desc: No critical damage taken when hitcount is >150
+        - desc: Nullifies charge assault critical damage penalty
+
+  skills:
+    - name: "Thunder Arm"
+      picture: Thunder_Arm
+      element: Lightning
+      power: ATK x 500%
+      ap: 24
+      maxHits: 7
+    - name: "Starboard Scratch"
+      picture: Starboard_Scratch
+      power: ATK x 350%
+      ap: 13
+      maxHits: 5
+    - name: "Justice Savior"
+      picture: Justice_Savior
+      power: ATK x 1430%
+      ap: 40
+      maxHits: 10
+    - name: "Godslayer"
+      picture: Godslayer
+      power: ATK x 1320%
+      ap: 30
+      maxHits: 1
+
+  rush:
+    name: "Cosmic Combination"
+    picture: Cosmic_Combination_Bacchus
+    shortEffects: Hitcount starts at 100, and damage taken -40% (Party/20s)
+    effects:
+      - desc: Hitcount +100
+      - desc: Damage taken -40%
+        all: true
+        duration: 20
+        meta:
+          priority: 1
+          buff: Damage Taken Reduction
+          buffValue: 40
+    power: ATK x 4500%
+    maxHits: 18
     
+
