@@ -4407,115 +4407,169 @@
     power: ATK x 3500%
     maxHits: 10
 
-- name: Lezard Valeth
+- name: Silmeria Valkyrie (Awakened)
   cat: gl
-  rating: 8
-  picture: Lezard
-  weapon: tome
+  rating: 6
+  picture: Silmeria
+  weapon: bow
   ace: true
   limited: true
+  awakened: true
   star: 5
 
   stats:
-    hp: 12495
-    atk: 1549
-    int: 2744
-    def: 1385
-    hit: 1043
-    grd: 819
+    hp: 17871
+    atk: 2868
+    int: 1601
+    def: 1523
+    hit: 1253
+    grd: 931
 
   talents:
-    - name: "Sage's Wisdom"
+    - name: "Divine Arrow Burst"
+      shortEffects: Damage dealt +30%, and +35%/+40%/+45% when hitcount is >100/>150/>200 (All Party)
       effects: 
-        - desc: INT +20%
+        - desc: Damage dealt +30%
           all: true
           meta:
             priority: 1
-            buff: INT
-            buffValue: 20
-    - name: "Affection for Goddess"
+            buff: Damage
+            buffValue: 30 
+        - desc: Damage dealt +35% when hitcount is >100
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Hit Count > 100
+            buffValue: 35
+        - desc: Damage dealt +40% when hitcount is >150
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Hit Count > 150
+            buffValue: 40  
+        - desc: Damage dealt +45% when hitcount is >200
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Hit Count > 200
+            buffValue: 45
+    - name: "Battle Maiden's Might"
       effects: 
-        - desc: Converts 50% of INT to ATK
-          all: Attackers/Sharpshooters/Defenders
+        - desc: Single target damage +10%
+          all: true
           meta:
             priority: 1
-            buff: INT -> ATK
-            buffValue: 50
-    - name: "Necromancy"
+            buff: Single Target Damage
+            buffValue: 10
+    - name: "Einherjar's Last Hope"
       effects: 
-        - desc: INT +30% after using Dark Savior (10s)
-          all: false
-          meta:
-            priority: 1
-            buff: INT
-            buffValue: 30
-        - desc: Critical hit chance +30% after using Mystic Cross (12s)
-          all: false
-          meta:
-            priority: 1
-            buff: Crit Rate
-            buffValue: 30
-    - name: "Cruel Egoist"
-      shortEffects: AP cost -40% and symbology cast time -40% when skill chain is >3
+        - desc: Hitcount timer +3 seconds
+          all: true
+    - name: "Yggdrasil's Fortune"
       effects: 
-        - desc: AP cost -40% when skill chain is >3
+        - desc: Recovers 5% of max HP every 5 seconds
+          all: true
+    - name: "A Goddess Close to Mortals"
+      shortEffects: AP cost -10%/-20%/-30% when hitcount is >50/>100/>150
+      effects:
+        - desc: AP cost -10% when hitcount is >50
           meta:
-            priority: 1
+            priority: 4
             buff: AP Cost Reduction
-            buffCondition: Skill Chain 3+
-            buffValue: 40
-        - desc: Symbology cast time -40% when skill chain is >3
+            buffCondition: Hit Count > 50
+            buffValue: 10
+        - desc: AP cost -20% when hitcount is >100
           meta:
-            priority: 1
-            buff: Cast Time Reduction
-            buffCondition: Skill Chain 3+
-            buffValue: 40
+            priority: 4
+            buff: AP Cost Reduction
+            buffCondition: Hit Count > 100
+            buffValue: 20
+        - desc: AP cost -30% when hitcount is >150
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffCondition: Hit Count > 150
+            buffValue: 30
+    - name: "Object Leading"
+      shortEffects: ATK +15% and HP +15%
+      effects: 
+        - desc: ATK +15%
+          meta:
+            priority: 4
+            buff: ATK
+            buffValue: 15
+        - desc: HP +15%
+          meta:
+            priority: 4
+            buff: HP
+            buffValue: 15
 
   skills:
-    - name: "Prismatic Missile"
-      picture: Prismatic_Missile
-      element: Light
-      power: INT x 670%
-      ap: 35
-      maxHits: 11
-    - name: "Mystic Cross"
-      picture: Mystic_Cross
-      element: Light
-      power: INT x 200%
-      ap: 18
-      maxHits: 4
-    - name: "Dark Savior"
-      picture: Shadow_Needles
+    - name: "Binding Distortion"
+      picture: Binding_Distortion
       element: Dark
-      power: INT x 190%
-      ap: 18
-      maxHits: 3
-    - name: "Shadow Servant"
-      picture: Shadow_Servant
-      element: Dark
-      power: INT x 720%
-      ap: 36
-      maxHits: 4
-
+      power: ATK x 210%
+      ap: 20
+      maxHits: 5
+      highlight: true
+    - name: "Volcanic Volley"
+      picture: Heavenly_Flight
+      power: ATK x 440%
+      ap: 33
+      maxHits: 8
+    - name: "Wave Motion"
+      picture: Wave_Motion
+      power: ATK x 480%
+      ap: 33
+      maxHits: 2
+      highlight: true
+    - name: "Homing Pigeons"
+      picture: Savage_Sparrows
+      power: ATK x 320%
+      ap: 26
+      maxHits: 9
+      highlight: true
+      
   rush:
-    name: "Meteor Swarm"
-    picture: Meteor_Swarm_Lezard
-    element: Dark
-    shortEffects: AP cost -80% and symbology cast time -80% (Self/10s)
+    name: "Nibelung Valesti"
+    picture: Nibelung_Valesti_Silmeria
     effects: 
-      - desc: AP cost -80%
-        duration: 10
+      - desc: Critical hit chance +30%
         all: false
+        duration: 60
         meta:
-          priority: 1
-          buff: AP Cost Reduction
-          buffValue: 80
-      - desc: Symbology cast time -80%
-        duration: 10
-        all: false
-        meta:
-          priority: 1
-          buff: Cast Time Reduction
-          buffValue: 80
-    power: INT x 4000%
-    maxHits: 9
+          priority: 4
+          buff: Crit Rate
+          buffValue: 30
+    power: ATK x 4000%
+    maxHits: 8
+
+  notes: >
+      _Her offensive buffing is mediocre when considering the necessary ramp-up and lack of rush buff, but her damage output and hitcount racking is 
+      solid, and she provides two welcome safety nets between her hitcount timer extension and potent party regen._
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Good damage.
+      - Decent rush gain.
+      - Fast hitcount generation, making her a good friend to units dependent on it.
+      - Rare single target DMG buff.
+      - Self crit buff on Rush for Crystal Guardian
+      
+      **Cons**
+      - Long rush animation guaranteed to annoy your party.
+      - Bow animations make kiting bosses harder than it needs to be, and she is often forced into that due to high aggro gen.
+      - Underwhelming buffs, especially compared to shooters of similar strength.
+      
+      
+      **Rotation**
+      
+      *Normal > Wing > Restrict > Wing^n - DPS*
+      *Normal > Restrict > Wing > Wave^n - Rush*
+      *Normal > Restrict > Wing > Restrict^n - DPS/Rush vs large enemies (9+ hits per Restrict)*
