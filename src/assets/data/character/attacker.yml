@@ -4406,3 +4406,116 @@
           buffValue: 60
     power: ATK x 3500%
     maxHits: 10
+
+- name: Lezard Valeth
+  cat: gl
+  rating: 8
+  picture: Lezard
+  weapon: tome
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 12495
+    atk: 1549
+    int: 2744
+    def: 1385
+    hit: 1043
+    grd: 819
+
+  talents:
+    - name: "Sage's Wisdom"
+      effects: 
+        - desc: INT +20%
+          all: true
+          meta:
+            priority: 1
+            buff: INT
+            buffValue: 20
+    - name: "Affection for Goddess"
+      effects: 
+        - desc: Converts 50% of INT to ATK
+          all: Attackers/Sharpshooters/Defenders
+          meta:
+            priority: 1
+            buff: INT -> ATK
+            buffValue: 50
+    - name: "Necromancy"
+      effects: 
+        - desc: INT +30% after using Dark Savior (10s)
+          all: false
+          meta:
+            priority: 1
+            buff: INT
+            buffValue: 30
+        - desc: Critical hit chance +30% after using Mystic Cross (12s)
+          all: false
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffValue: 30
+    - name: "Cruel Egoist"
+      shortEffects: AP cost -40% and symbology cast time -40% when skill chain is >3
+      effects: 
+        - desc: AP cost -40% when skill chain is >3
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain 3+
+            buffValue: 40
+        - desc: Symbology cast time -40% when skill chain is >3
+          meta:
+            priority: 1
+            buff: Cast Time Reduction
+            buffCondition: Skill Chain 3+
+            buffValue: 40
+
+  skills:
+    - name: "Prismatic Missile"
+      picture: Prismatic_Missile
+      element: Light
+      power: INT x 670%
+      ap: 35
+      maxHits: 11
+    - name: "Mystic Cross"
+      picture: Mystic_Cross
+      element: Light
+      power: INT x 200%
+      ap: 18
+      maxHits: 4
+    - name: "Dark Savior"
+      picture: Shadow_Needles
+      element: Dark
+      power: INT x 190%
+      ap: 18
+      maxHits: 3
+    - name: "Shadow Servant"
+      picture: Shadow_Servant
+      element: Dark
+      power: INT x 720%
+      ap: 36
+      maxHits: 4
+
+  rush:
+    name: "Meteor Swarm"
+    picture: Meteor_Swarm_Lezard
+    element: Dark
+    shortEffects: AP cost -80% and symbology cast time -80% (Self/10s)
+    effects: 
+      - desc: AP cost -80%
+        duration: 10
+        all: false
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 80
+      - desc: Symbology cast time -80%
+        duration: 10
+        all: false
+        meta:
+          priority: 1
+          buff: Cast Time Reduction
+          buffValue: 80
+    power: INT x 4000%
+    maxHits: 9
