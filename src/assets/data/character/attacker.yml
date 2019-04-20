@@ -4406,3 +4406,153 @@
           buffValue: 60
     power: ATK x 3500%
     maxHits: 10
+    
+- name: Lenneth Valkyrie (Awakened)
+  cat: gl
+  rating: 4
+  picture: Lenneth
+  weapon: ohs
+  ace: true
+  limited: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 3140
+    int: 1601
+    def: 2123
+    hit: 1134
+    grd: 819
+
+  talents:
+    - name: "Greater Will of the Creator"
+      effects: 
+        - desc: ATK +40%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 30
+        - desc: ATK damage taken +15% when silenced
+          all: Enemies
+          meta:
+            priority: 1
+            buff: Enemy ATK Damage Taken
+            buffValue: 15   
+    - name: "The Dusk of Ragnarok"
+      effects: 
+        - desc: Rush combo damage +20%
+          all: true
+          meta:
+            priority: 1
+            buff: Rush Damage
+            buffValue: 20
+        - desc: Nullifies silence for 120 seconds
+          all: true
+    - name: "Platina's Heart"
+      effects: 
+        - desc: All attacks have +15% chance to inflict silence
+          meta:
+            priority: 4
+            buff: Silence Attack Chance
+            buffValue: 15
+    - name: "Armor Shining in the Azure Heavens"
+      effects: 
+        - desc: Nullifies charge assault critical damage penalty.
+        - desc: Evasion possible during air attacks
+    - name: "A Dignified and Resounding Voice"
+      effects: 
+        - desc: AP cost -50% when skill chain is >3
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain 3+
+            buffValue: 50
+    - name: "Beckoning Hands of Slain War Heroes"
+      shortEffects: ATK +15% and DEF +10%
+      effects: 
+        - desc: ATK +15%
+          meta:
+            priority: 4
+            buff: ATK
+            buffValue: 15
+        - desc: DEF +10%
+          meta:
+            priority: 4
+            buff: HP
+            buffValue: 10
+
+  skills:
+    - name: "Glowing Pierce"
+      picture: Glowing_Pierce
+      power: ATK x 190%
+      ap: 18
+      maxHits: 3
+      highlight: true
+    - name: "Sky-High Break"
+      picture: Helmsplitter
+      power: ATK x 550%
+      ap: 35
+      maxHits: 3
+    - name: "Heaven & Hell"
+      picture: Air_Slash_I
+      power: ATK x 240%
+      ap: 22
+      maxHits: 5
+    - name: "Valkyrie's Mercy"
+      picture: Valkyrie's_Mercy
+      power: ATK x 910%
+      ap: 36
+      maxHits: 5
+    - name: "Leading Slash"
+      picture: Crescent_Mirage
+      power: ATK x 200%
+      ap: 18
+      maxHits: 4
+
+  rush:
+    name: "Nibelung Valesti"
+    picture: Nibelung_Valesti_Lenneth
+    shortEffects: DEF -30% (Enemies/20s) and high probability of inflicting silence
+    effects: 
+      - desc: DEF -30%
+        all: Enemies
+        duration: 20
+        meta:
+          priority: 1
+          buff: Enemy DEF Reduction
+          buffValue: 30
+    power: ATK x 4000%
+    maxHits: 8
+    
+  notes: >
+      _Her buffs are spread a bit thin, and her ATK Damage Taken debuff is contingent on winning dice rolls with Seal.  Though she boasts some high
+      mults, the corresponding skills are fairly slow.  Still, she has no role restrictions, and every once in awhile Seal might keep a boss from using 
+      something annoying._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Unconditional good ATK buff
+      
+      - Rush combo damage buff
+      
+      - Defence debuff on rush for enemies.
+      
+      
+      **Cons**
+            
+      - ATK buff has been exceeded by many attackers making it redundant in a lot of comps
+      
+      - Silence has a low chance to apply making it a poor talent that doesn't do much
+      
+      - Doesn't do enough other attackers don't already do better
+      
+      
+      **Rotation**
+            
+      *Normal > Glowing Pierce > Sky-High Break^n*
