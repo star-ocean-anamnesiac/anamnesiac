@@ -1,7 +1,7 @@
 
 - name: 9S
   cat: jp
-  rating: 8
+  rating: 10
   picture: 9S
   weapon: ohs
   ace: true
@@ -10,7 +10,7 @@
 
   stats:
     hp: 14280
-    atk: 2993
+    atk: 2868
     int: 1537
     def: 1773
     hit: 1371
@@ -25,24 +25,23 @@
             priority: 1
             buff: Damage
             buffValue: 45
-        - desc: ATK +65% when HP is 100%
+        - desc: Damage dealt +65% when HP is 100%
           all: true
           meta:
             priority: 1
             buff: Damage
-            buffCondition: HP at 100%
+            buffCondition: HP is 100%
             buffValue: 65
     - name: "Scanner Type"
       effects: 
         - desc: Evasion AP cost -50%
-          all: true
-        - desc: Movement speed +30%
-          all: true
+        - desc: Movement rate +30%
     - name: "Treacherous Blade"
       effects: 
-        - desc: Enables evasion during air attacks
-        - desc: Movement distance & speed +100%
+        - desc: Evasion possible during air attacks
+        - desc: Evasion distance & rate +100%
     - name: "Gathering Keepsakes"
+      shortEffects: ATK +20% and HIT +10%
       effects: 
         - desc: ATK +20%
           meta:
@@ -80,7 +79,7 @@
   rush:
     name: "YoRHa Hacking Attack: Zero"
     picture: YoHRa_Hacking_Zero_9S
-    shortEffects: Recovers 50% of max HP, and ATK damage dealt +30% (Party/20s)
+    shortEffects: Recovers 50% of max HP and ATK damage dealt +30% (Party/20s)
     effects: 
       - desc: Recovers 50% of max HP
         all: true
@@ -91,9 +90,44 @@
           priority: 1
           buff: ATK Damage
           buffValue: 30
-    power: ATK x 4000%
+    power: ATK x 4500%
     maxHits: 16
+    
+  notes: >
+      _A highly mobile Shooter who interestingly uses a melee weapon, but boasts skills powerful enough to hit hard even without starting with a normal.
+      Despite his good damage output, having four single hit skills makes him the worst character in the game at hitcount generation (bad both for
+      hitcount based talents and enabling party rush gain), and while HP-contingent Damage isn't as risky as ATK, it's still not an ideal condition for what
+      you're getting out of him. Popular for autoing content due to Sword 3's efficient crowd clearing and his AI's love for spamming it._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Fantastic personal damage for his role.
 
+      - Talents increase party movility greatly.
+
+      - Strong damage buff.
+
+      - OHS wielder which means close range weapon talents affect him. Also has great elemental coverage.
+      
+      
+      **Cons**
+      
+      - No ranged normals.
+
+      - Bad at building and maintaining hitcount.
+
+      - Skills mean he can whiff on highly mobile bosses.
+      
+      
+      **Rotation**
+      
+      *YoHRa Pod: One > YoHRa Arms: Four > YoHRa Pod: One > YoHRa Arms: Four > YoHRa Arms: Four (Ranged Combo)*
+
+      *Normal > YoHRa Arms: Four > YoHRa Pod: Two > YoHRa Arms: Four > YoHRa Arms: Four (Melee Combo)*
 
 - name: Reimi Saionji
   cat: jp
