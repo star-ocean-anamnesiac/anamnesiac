@@ -1,6 +1,6 @@
 
 - name: 2B
-  cat: jp
+  cat: gl
   rating: 10
   picture: 2B
   weapon: ohs
@@ -96,7 +96,14 @@
     maxHits: 27
     
   notes: >
-      _WIP._
+      _With the rerun of NieR, 2B goes from top tier to meta breaking. Again. She now has the out and out best ATK buff in the game and
+      will probably be this way for a long time. Her personal damage is also quite good, especially now that Arms 2 is restored to
+      how it was. Unnerfing her has basically meant anyone who got her in October or November is getting great value for money._
+      
+      _Downsides remain the same. Self-imbue is still both a pro and a con, but with OHS coverage it isn't much of a drawback. The 
+      ATK buff is still inconsistent, but 40% is still as good as Fidel and better then anything H.Millie can do even with her 
+      conditional. 2B, like all other NieR characters, s absolutely broken for GL and if you want to faceroll content just use 2B
+      and co._
       
       
       **TL DR**
@@ -104,7 +111,7 @@
       
       **Pros**
       
-      - Strong ATK based buff and elemental post rush buff.
+      - Strong ATK based buff and elemental post-rush buff.
       
       - Huge AP recovery on normal buff.
       
@@ -116,23 +123,16 @@
       
       
       **Cons**
-      
       - ATK buff condition is inconsistent.
       
-      - Self imbue can be a downside against certain bosses if you don't own certain weapons.
+      - Self-imbue can be a downside against certain bosses if you don't own certain weapons.
       
       
       **Rotation**
       
-      - As a note YoRHa Pod: One VS YoRHa Arms: Two is a personal preference. Whether you want a better ranged combo or using Arms Two
-      as a vertical dodge.
-      
-      *Normal > YoRHa Arms: One > YoRHa Pod: Two > YoRHa Arms: One > Spam it till out of AP. (General combo.)*
+      *Normal > YoRHa Arms: One > YoRHa Pod: Two > YoRHa Arms: two > Spam it till out of AP. (General combo.)*
       
       *Normal > YoRHa Pod: Two > YoRHa Arms: One (Miss on purpose) > YoRHa Pod: Two > Spam it till out of AP. (Ranged combo.)*
-      
-      *Normal > YoRHa Pod: Two > YoRHa Pod: One > YorHa Pod: Two > Spam it till out of AP. (Ranged combo if running ranged set up.)*
-
 
 - name: Fidel Camuze
   cat: jp
