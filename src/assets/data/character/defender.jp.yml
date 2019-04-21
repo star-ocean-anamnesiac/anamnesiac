@@ -31,6 +31,7 @@
       shortEffects: Recovers 100% AP for self and 10 AP for all allies on perfect dodge
       effects: 
         - desc: Recovers 100% AP on perfect dodge
+          all: false
         - desc: Recovers 10 AP for all allies on perfect dodge
     - name: "Inorganic Blade"
       effects: 
@@ -43,19 +44,21 @@
         - desc: Single target damage +40% when HP is 100%
           all: true
           meta:
-            priority: 1
+            priority: 3
             buff: Single Target Damage
             buffCondition: HP is 100%
             buffValue: 40
     - name: "Beautiful World"
-      shortEffects: ATK +20% and DEF +20%
+      shortEffects: ATK +30% and DEF +20%
       effects: 
-        - desc: ATK +20%
+        - desc: ATK +30%
+          all: false
           meta:
             priority: 4
             buff: ATK
-            buffValue: 20
+            buffValue: 30
         - desc: DEF +20%
+          all: false
           meta:
             priority: 4
             buff: DEF
@@ -69,7 +72,7 @@
       maxHits: 5
     - name: "YoRHa Arms: Twelve"
       picture: YoHRa_Arms_Twelve
-      power: ATK x 1240%
+      power: ATK x 1360%
       ap: 52
       maxHits: 4
     - name: "YoRHa Pod: One"
@@ -86,21 +89,26 @@
   rush:
     name: "YoRHa Arms: One Hundred"
     picture: YoHRa_Arms_One_Hundred_A2
-    shortEffects: Single target damage +60% and recovers 15% of max HP every 3 seconds
+    shortEffects: Single target damage +60% and recovers 15% of max HP every 3 seconds (Self/20s)
     effects: 
       - desc: Single target damage +60%
         duration: 20
+        all: false
         meta:
           priority: 4
           buff: Single Target Damage
           buffValue: 60
       - desc: Recovers 15% of max HP every 3 seconds
         duration: 20
-    power: ATK x 4500%
+        all: false
+    power: ATK x 5000%
     maxHits: 25
     
   notes: >
-      _WIP_
+      _Similar offensive buffs to Xmas Eve, but tied to 100% HP instead of hitcount, and less defensive perks.  Notably on perfect dodge she both 
+      fully restores her own AP and feeds the rest of the party 10 AP, enabling an A2 with good timing to eliminate downtime after her combos and 
+      extend combos for her allies.  Her stats and damage output are top class for a Defender, and the ridiculously potent regen on her rush in
+      tandem with her ease of dodge abuse (especially when equipped with a Lunar Tear) gives her excellent longevity even without a healer._
       
       
       **TL DR**
@@ -108,18 +116,18 @@
       
       **Pros**
       
-      - Perfect dodging restores AP to the party.
+      - Perfect dodging restores AP to the party
       
-      - Strong buffs for both offense and defence.
+      - Strong buffs for both offense and defence
       
-      - High personal damage output, especially post-rush.
+      - High personal damage output, especially post-rush
       
       - Post-rush regen gives sustain.
       
       
       **Cons**
       
-      - HP based talents aren't consistent without setting up a proper composition.
+      - HP based talents aren't consistent without setting up a proper composition
       
       
       **Rotation**
@@ -131,7 +139,6 @@
       *Normal > Pod 1 > Pod 2 > CA Sword 12 (Ranged set combo)*
       
       *Pod 2 > Pod 1 > Pod 2 > CA Sword 12 (Ranged set combo from range)*
-
 
 - name: Dias Flac
   cat: jp
