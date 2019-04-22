@@ -25,7 +25,7 @@
             priority: 1
             buff: Damage
             buffValue: 45
-        - desc: Damage dealt +65% when HP is 100%
+        - desc: Damage dealt +55% when HP is 100%
           all: true
           meta:
             priority: 1
@@ -41,9 +41,9 @@
         - desc: Evasion possible during air attacks
         - desc: Evasion distance & rate +100%
     - name: "Gathering Keepsakes"
-      shortEffects: ATK +20% and HIT +10%
+      shortEffects: ATK +15% and HIT +10%
       effects: 
-        - desc: ATK +20%
+        - desc: ATK +15%
           meta:
             priority: 4
             buff: ATK
@@ -57,12 +57,12 @@
   skills:
     - name: "YoRHa Arms: Three"
       picture: Helmsplitter
-      power: ATK x 1240%
+      power: ATK x 920%
       ap: 53
       maxHits: 1
     - name: "YoRHa Arms: Four"
       picture: YoHRa_Arms_Four
-      power: ATK x 840%
+      power: ATK x 620%
       ap: 26
       maxHits: 1
     - name: "YoRHa Pod: One"
@@ -90,7 +90,7 @@
           priority: 1
           buff: ATK Damage
           buffValue: 30
-    power: ATK x 4500%
+    power: ATK x 4000%
     maxHits: 16
     
   notes: >
