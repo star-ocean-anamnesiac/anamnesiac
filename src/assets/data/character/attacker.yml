@@ -96,18 +96,12 @@
     maxHits: 27
     
   notes: >
-      _With the rerun of NieR, 2B goes from top tier to meta breaking. Again. She now has the out and out best ATK buff in the game and
-      will probably be this way for a long time. Her personal damage is also quite good, especially now that Arms 2 is restored to
-      how it was. Unnerfing her has basically meant anyone who got her in October or November is getting great value for money._
-      
-      _Downsides remain the same. Self-imbue is still both a pro and a con, but with OHS coverage it isn't much of a drawback. The 
-      ATK buff is still inconsistent, but 40% is still as good as Fidel and better then anything H.Millie can do even with her 
-      conditional. 2B, like all other NieR characters, s absolutely broken for GL and if you want to faceroll content just use 2B
-      and co._
+      _An incredible unit. Boasts amazing overall party utility, buffing ATK, AP RCV on Normal hits for everyone unlike sReimi, has an incredible post-Rush buff for the party and has kept her fluidity with her Air Dodge and dodge talents not being touched. Despite the nerfs to her ATK buffs and skill (Arms 2), she is still an absolute monster. Alongside all her utility, her actual DMG is incredible, putting all other ATK buffers to shame. Best in slot ATK buffer now and for a long time. Here's global's gFayt, enjoy your new Queen because her reign will last for a long time._
+
+      _[v2] She got buffed back to pre-rerelease JP levels early. Unconditionally better than Fidel, conditionally as good as VRena. No ATK buff will exceed her for a long time, with no weapon/class restriction. Arms 2 returns to the rotation._
       
       
       **TL DR**
-      
       
       **Pros**
       
@@ -131,9 +125,11 @@
       
       **Rotation**
       
-      *Normal > YoRHa Arms: One > YoRHa Pod: Two > YoRHa Arms: two > Spam it till out of AP. (General combo.)*
-      
-      *Normal > YoRHa Pod: Two > YoRHa Arms: One (Miss on purpose) > YoRHa Pod: Two > Spam it till out of AP. (Ranged combo.)*
+      *Pod 1 VS Arms 2 - Arms 2 is now unconditionally stronger, unless you really feel like you need to rely on a ranged combo. *
+
+      *Normal > Arms 1 > Pod 2 > Arms 2 (optional > Pod 2 > dodge) - Regular combo*
+
+      *Pod 2 > whiff Arms 1 > Pod 2*n - Ranged combo at 200%*
 
 
 - name: Fidel Camuze
@@ -214,15 +210,12 @@
       party composition. His AP reduction talent and really potent AP reduection post rush, lets him really output a lot of damage
       by chaining attacks._
       
-      
       _For downsides, well, all he is bringing to the party is an ATK buff, characters like 2B and Halloween Millie bring similar or
       suprior levels of buffing with AP recovery on top. Even the freebie Ace of the FFBE collab Lasswell brings a slight bonus
       to melee characters in movement field nullification. His damage is also not stellar, he has quite a low attack stat compared
       to other attacks and his party wide buff and ability to spam attacks more don't make up for it compared to other attackers._
       
-      
       **TL DR**
-      
       
       **Pros**
       
@@ -240,12 +233,14 @@
       
       **Rotation**
       
-      *Normal > Double Slash > Air Slash > Double Slash > Spam it till out of AP. (General combo.)*
+      *Normal > Double > Air > Double^n - Rush Gain/DPS*
+      
+      *Normal > Air > Double > Air^n - DPS, if enemy doesn't move much. (Slightly more than Double spam.)*
 
 
 - name: Fidel Camuze (Awakened)
   cat: gl
-  rating: 8
+  rating: 8.5
   picture: Fidel
   weapon: ohs
   ace: true
@@ -350,15 +345,9 @@
     maxHits: 12
     
   notes: >
-      _Fidel, the starter character and sometimes face of the app icon. He has the highest unconditional party-wide buff in the game 
-      at 50% now due to awakening. His AP reduction talent and really potent AP reduection post-rush, lets him really output a lot of 
-      damage by chaining attacks. Due to this, he can spam his improved Air Raid (720%!!) for tons of damage and rush gain. He will 
-      be a solid pick even if there are better units out._
-      
-      
-      _Despite awakening increasing his own damage output, it doesn't change his role as being only an ATK buffer. The 50% ATK is nice
-      but with Valentine Rena and buff to 2B, he can be outshined due to those units having better party utility despite said units
-      having conditionals._
+      _[v2] Fidel got a JP-side stealth buff, making his Air Raid a lot more consistent, as well as eliminating some other clunk attached to the move. With this, he now deals a significant amount of damage in addition to his buff, able to function reasonably as a DPS and carry at the same time. A solid comp would still need to build around him (adding AP somewhere, ideally), but he allows some flexibility and different compositions which don't rely as heavily on conditional buffs to maximize damage.
+
+      [Potential] With his changes, Fidel becomes a pub hero, bringing his own buffing and extremely good DPS. That said, he still suffers in premades, but will do particularly well on auto, where his particular strengths shine (Air Raid hits easily, don't need AP normals as heavily, non-conditional buff)._
       
       
       **TL DR**
@@ -382,8 +371,9 @@
       
       **Rotation**
       
-      *Normal > Double Slash / Air Slash > Empyrean Slash > Air Raid > Spam it till out of AP. (General Combo)
+      *Normal > Double > CA Air > Raid^n - If needing to step back mid rotation; Air Raid still hits from a distance.*
 
+      *Normal > Air > Double/Empyrean > Raid^n - DPS, especially if the target is large and/or slow.*
 
 - name: Cliff Fittir
   cat: gl
@@ -458,20 +448,9 @@
     maxHits: 25
     
   notes: >
-      _Cliff comes in as the first attacker carry ace. A fun knuckles wielding character who has a lot of strong selfish buffs that
-      help him dish out plenty of damage. He's good for solo content, or when the party is built for getting the best out of him.
-      His combination of ATK buff, crit rate buff and AP reduction buff gives him a faster paced playstyle then many other
-      characters in the game. His rush also packs one hell of a punch as well, with a massive multiplier on it to make up for the
-      lack of post rush buff._
-      
-      
-      _For downsides his greed is his undoing, if the party isn't playing to strengths he isn't as effective. He lacks any kind of 
-      ranged option, so playing it safe or keeping up some form of damage during certain attacks isn't really an option. Also not
-      having a post rush buff kind of sucks and means his damage really has to make up for it._
-      
+      _Great for solo content, with dirt cheap AP costs and a powerful rush. Notably Fists of Fury's multihits linger when canceling the move, allowing Cliff to avoid committing to it and rapidly build hit count. Main weakness is that his buffs are all selfish, meaning he enjoys ally buffs to get where he wants to be. Cliff is outscaled by other carries, and will be moving into the future until his awakening._
       
       **TL DR**
-      
       
       **Pros**
       
@@ -491,9 +470,13 @@
       
       **Rotation**
       
-      *Normal > Crescent Locus > Triple Kick > Crescent Locus > Crescent Locus > Crescent Locus > Crescent Locus > Crescent Locus >
-      Fists of Fury > Dash after hit 3(General damage & rush gain combo. Requires 1 AP seed)*
+      *Normal > Crescent > Triple > Fists^3 -> Non Disruptive when EB*
+
+      *Normal > Crescent > Fists (> Dash Cancel After 3rd Hit) - Low Commitment Combo*
+
+      *Normal > Crescent > Triple > Crescent^5 > Fists > Dash After Hit 3 - DPS & Decent Rush Gain (1 AP Seed Required)*
       
+      *Normal > Fist > Dash Cancel After 3rd Hit > Normal > Crescent > Crescent > Dash Cancel After 3rd Hit - Rush Only, Low DPS*
       
 - name: Anne Patriceani
   cat: gl
@@ -564,12 +547,7 @@
     maxHits: 8
     
   notes: >
-      _Anne is a character who fills a niche and that's about it. She's very good against the crystal Guardian, other than that
-      nearly every other 5 star character in the game is better than her. She is a crit fiend and provides the best crit buff in
-      the game a post rush 60%, plus a 30% crit rate for the party passively is nothing to ignore. But that's about all she has
-      going for her. Her damage is bad, she gives no other utility, she has no ranged option, and being a non-ace means she has
-      less stats so is just generally squishier. If you need a character to do Crystal Guardian she's a great pick, otherwise
-      ignore her._
+      _She buffs Critical Rate, which is only really useful in Crystal Guardian and high DEF targets (and she does very well with that). Outside of that niche need, there are much better choices to use in your party._
       
       
       **TL DR**
@@ -591,7 +569,7 @@
       
       **Rotation**
       
-      *Normal > Triple Kick > Drill Spike > Triple Kick > Triple Kick (DPS & Rush gain combo)*
+      *Normal > Triple > Drill > Triple > Triple - DPS & Rush*
 
 
 - name: Daril Camuze
@@ -673,17 +651,11 @@
     maxHits: 12
     
   notes: >
-      _Papa Camuze enters the game in order to show his son how it's done. By being kind of bad as well. Daril, like his son, brings
-      a powerful party wide utility in the form of -20% to AP cost. This grows to an even more potent -40% as a post rush buff. His
-      anti-humanoid talent does give him above average damage against humanoids but it's lacklustre otherwise. His AP reduction
-      does allow for 20 second rush cycles and helps characters such as healers who don't have reduction with their high cost
-      AP skills/spells._
-      
-      
-      _His downsides are numerous, being a 5 star he has less stats then an ace. His AP reduction is powerful but it's all he brings
-      to the table. His damage is also poor if not up against a humanoid. Plus for characters who already have large AP cost reduction
-      talents he isn't doing anything for them except post rush and that just isn't good enough. In summary Daril fills a nice niche
-      to play around with in a pre-made party but he isn't very good beyond that._
+      _His main niche is potent AP reduction; he passively provides the party -20% AP costs, which ramps up to -40% post rush. However, in caster /healer parties, a number have AP cost down passively, which lowers his efficiency there._
+
+      _-40% AP post rush also facilitates building rush more quickly for the party, making < 20 s rush rotations effortless in some cases._
+
+      _His DPS is brought up to above-average levels if able to utilize his human slayer talent. Later on there will be units with high DMG/AP cost that will benefit from his passive more._
       
       
       **TL DR**
@@ -709,12 +681,11 @@
       
       **Rotation**
       
-      *Normal > Helm Splitter > Shotgun Blast > Helm Splitter > Spam it till out of AP. (General combo.)*
-
+      *Normal > Helmsplitter > Shotgun > Helmsplitter^n*
 
 - name: Roddick Farrence
   cat: gl
-  rating: 9
+  rating: 9.5
   picture: Ratix
   weapon: ohs
   ace: true
@@ -802,16 +773,13 @@
     maxHits: 7
     
   notes: >
-      _Roddick comes to the game to take his place as the king of cheese strats in content with his incredible 40% buff to stun chance.
-      He also provides any casters with a slight cast time buff. As well as buffing his own attack. On top of that his post rush buff
-      while selfish is very powerful for him. Though the main reason to run him, is for the much easier stuns that can just lock
-      enemies in place for an entire fight._
-      
-      
-      _He does have downsides, he isn't providing any stellar party wide buffs but his stun rate. He struggles with compositions who
-      don't really benefit from bolstering rushes or with characters who aren't running an element imbue. He also doesn't pack
-      as much punch as some of the other attackers you can bring. However if you're struggling to get a clear, try finding a good
-      Roddick player and see if the extra elemental bursts make an improvement to your runs._
+      _Buffs stun rate for the party, and boasts an amazing-albeit-selfish Rush buff. Being able to chain stuns trivializes bosses, both preventing them_
+
+      _from moving and allowing the party to unload on them without worrying about dodging, bolstering both DPS and survival. His efficiency falls_
+
+      _off in fights that can be ended in a single rush; save him for content durable enough for Rush buffs and multiple stuns to matter. Best kept away _
+
+      _from humanoid bosses; his performance falls off sharply if Shotgun Blast and Dragon Slash can't get bonus hits, but is significant if they do. Is still relevant today even in JP due to his ability to stun; a fantastic unit._
       
       
       **TL DR**
@@ -835,10 +803,13 @@
       
       **Rotation**
       
-      *Normal > Shotgun Blast > Air Slash > Dragon Slash > Spam it till out of AP (General combo)*
-      
-      *Air Slash > Dragon Slash > Air Slash > Dragon Slash (Ranged combo)*
+      *Humanoid -> Air Slash + Double Slash; Shotgun & Dragon depend on size. Against groups of small targets, however, Shotgun keeps multiple stunlocked.*
 
+      *Normal > Shotgun > Air > Shotgun^n - HC & DPS Against Medium ~ Large Bosses (Not Human Size)*
+
+      *Normal > Shotgun > Air > Dragon^n - Rush Build*
+
+      *Air > Dragon > Air > Dragon^n - Ranged*
 
 - name: Reimi Saionji (Summer)
   cat: gl
@@ -944,12 +915,7 @@
     maxHits: 7
     
   notes: >
-      _Summer Reimi enters the game to make guys drool over her shorts and to be a solid attack buffer. With the shackles taken off
-      Summer Reimi is now much more competitive providing a 45/55 conditional ATK buff, 100% AP recovery on normals for short ranged
-      attackers. She still buffs rush combo damage which still remains a rare buff on GL and links well with her new juiced up rush.
-      Plus she gives 40% Single Target damage to the party post rush and a nice nullification of status ailments which can be useful
-      in certain fights. Overall, while she may not be as good a buffer as 2b, she is certainly close to that level and a welcome
-      addition._
+      _Buffed back to her JP glory, way before summer officially swings back again. Her buff becomes competitive and she is once again almost unconditionally better than even Awakened Fidel (poor guy), with a 45% ATK buff unconditionally. Her AP on normals goes back to 100%, though only for melee (admittedly a bit unfortunate) and she gets air dodge, making her Helmsplit much more usable [SUMMER SMOOTHIE]. SReimi returns. Although her moveset is still a bit subpar, there's nothing particularly terrible about it._
       
       **TL DR**
       
@@ -976,10 +942,15 @@
       
       **Rotation**
       
-      *Normal > Crescent Mirage > Combo Breaker > Summer Smoothie> Spam it till out of AP. (Damage combo with Combo Breaker.)*
-      
-      *Normal > Crescent Mirage > Smackdown > Summer Smoothie> Spam it till out of AP. (Damage combo with Smackdown.)*
+      *Can run Combo Breaker in the place of Smackdown for less AP, slightly less smooth comboing (bit slower), but more Rush Gain.*
 
+      *Normal > Crescent > Combo > Smoothie^n - DPS w/Combo*
+
+      *Normal > Crescent > Smack > Smoothie > Smoothie > Crescent - DPS w/Smack*
+
+      *Normal > Crescent > Smack > Crescent > Smoothie^n > Dash Cancel -> Smack, can end on Smoothie if planning to dash anyway.*
+
+      *Normal > Smack/Crescent > Crescent/Combo > Smoothie^n - AP Cost Reduction*
 
 - name: Lenneth Valkyrie
   cat: gl
@@ -1061,16 +1032,7 @@
     maxHits: 8
     
   notes: >
-      _Lenneth entered the game as a kind of worse Summer Reimi, and has fallen off the mark pretty fast. Her attack buff applies to
-      the party and is unconditional, but at this point it's been matched by Lasswell. Her rush combo damage buff is still on the 
-      rare side and hers is better than Summer Reimi's. Silencing on attacks is, okay, useful if it goes off but there are no
-      guarantees. Her post rush debuff is quite strong and pretty unique as well which is probaby her strongest tool left in her kit._
-      
-      
-      _However all of this doesn't really mean you want to run her. No AP recovery like most of the high tier attack buffers bring
-      her attack buff is even beaten by Fidel, never mind the likes oh Halloween Millie and 2B. Her rush debuff is nice as is her
-      rush combo damage buff but it's not enough to really make the unit more viable then several other options in both the limited 
-      and permanent ace attacker pool._
+      _At the current time, Lenneth looks to be a direct side-downgrade from sReimi and Fidel. Her damage and rush gain is nothing to write home about, being about on par with sReimi, and you lose the convenience of AP RCV on melee units, traded for her chance to Silence; Silence may occasionally stop a boss pattern from doing something annoying (or it can promote a more dangerous pattern). At best, a reasonable replacement, unless she gets buffs, will not be amazing; viable if lacking other ATK buffers._
       
       
       **TL DR**
@@ -1096,10 +1058,11 @@
       
       **Rotation**
       
-      *Normal > Heaven and Hell > Glowing Pierce > Heaven and Hell> Sky-High Break (Damage rotation)*
-      
-      *Normal > Sky-High Break > Glowing Pierce > Sky-High Break (Rush gain rotation)*
-    
+      *Normal > Pierce^n - Rush Only, Low DPS, Non-Mobile Target*
+
+      *Normal > Break/Mercy > Pierce > Break/Mercy -> Rush Gain*
+
+      *Normal > Heaven > Pierce > Heaven > Break -> DPS, no EB*
     
 - name: Claude C. Kenny
   cat: gl
@@ -1196,17 +1159,8 @@
     maxHits: 8
     
   notes: >
-      _Claude is a very specific attack buffer, he gives a massive attack boost to Attackers and Defenders, he also provides 
-      some survability to healers on top which is a nice perk. He's a character which is quite good when the meta is dominated by
-      defenders and attackers. But bad if we have any sharpshooters or invokers who see their way into frequent play. He also
-      provides everyone AP recovery on normals. Claude's buffs mean he is definetly a character suited to a certain comp. His post
-      rush buff is reasonably strong, especially if you're trying to avoid shooters as the most prominent damage buffs come from Maria
-      and 9S._
-      
-      
-      _The negatives I've already touched on, he's not offering much but AP recovery to shooters and Invokers meaning that he's kind
-      of redundant with them on his team, especially with the likes of Maria or 9S who make his post rush buff redundant as well.
-      Though over all if you build a team with Claude in mind they'll be able to dish out some serious damage._
+      _
+Claude is an interesting unit for this time in the game, as he scales well with good, strong attackers and gets worse with good shooters. 50% will be the highest ATK buff in the GL at this release, but unfortunately having three other ATK buffers makes him less of a priority and less interesting overall comparatively. It is worth noting that GL has merits (buffed weapons, early summer units, possibly earlier other limited units) which makes him much stronger compared to JP. In a pre-made comp built properly (melee, no shooters), should shine beautifully, but requires that. Notable for unconditional AP RCV, so even in a team with a shooter, he still has a bit of utility. May still be worth running in 3/1 to let the shooter have no AP regen downtime._
       
       
       **TL DR**
@@ -1231,7 +1185,6 @@
       **Rotation**
       
       *Normal > Double Slash > Air Slash > Helm Render (Damage rotation)*
-
 
 - name: Phia Melle
   cat: gl
@@ -1318,16 +1271,7 @@
     maxHits: 13
     
   notes: >
-      _A 5 star non-ace who is similar to Cliff in design. Phia has the advantage of being ranged, which means she can play things
-      a little safer then Cliff. Phia is a critical hit fiend. Boasting a huge critical hit rate and damage buff of 50% for herself.
-      She also increases her own ATK while decreasing her own DEF by 20% making her quite the glass cannon. She's great for Crystal
-      Guardian for a start, but an experienced player can use her effectively as a damage carry in a wide variety of content._
-      
-      
-      _Aside from the lesser stats of not being an Ace Phia has her fair share of issues. Just like Cliff she provides no utility to
-      the party beyond the occasional freezing of an enemy. Also her low defence coupled with the general lower stats of a non-ace
-      mean she isn't recommended for new players or taking on new content as she is extremly squishy and is best used when you know
-      how to get the best out of her and not tank the floor._
+      _Ranged Cliff, and should have similar performance. She has only selfish buffs, with no party utility to speak of besides the potential for Freeze (which only guarantees a single Crit). She has a good skillset and her buffs aren't common pre-Rush buffs, which means they don't overlap as much with Maria/SMiki & other Crit buffers. She does interestingly have a -DEF debuff in compensation for her huge self buffs, but her DEF is quite low anyway. Don't get hit._
       
       
       **TL DR**
@@ -1353,8 +1297,9 @@
       
       **Rotation**
       
-      *Normal > Sylvan Shot > Liquid Bite > Sylvan Shot > Spam till out of AP (Damage rotation)*
+      *Normal > Sylvan > Bite > Sylvan^n*
 
+      *Normal > Bite > Sylvan > Bite^n - Large, Slow Moving Targets*
 
 - name: Albel Nox
   cat: gl
@@ -1458,18 +1403,7 @@
     maxHits: 6
     
   notes: >
-      _Albel enters the game as an interesting character, he treads the line between buffer and attack, doing neither very well. His
-      ATK buff works similar to Claude and at this point there are quite a few characters who match or surpass his single target
-      damage buff. His debuff isn't really that strong, or at least not enough to consider him over other characters, though it
-      does mean he makes Lenneth even worse. His post rush buff is interesting, halving his defence in exchange for doubling his
-      attack makes him a super glass cannon, any type of meaningful AP reduction while this is active will make him a powerhouse.
-      However his pre-rush damage is a bit underwhelming by comparison._
-      
-      
-      _His downsides we've touched upon, he's not a bad character by any means, but he's not really exceptional at either being a 
-      buffer, where he gets beaten out, and he has to wait till post rush to truly become a damage carry. Plus the downside of his
-      rush buff makes him very squishy so newer players may find him a bit challenging to use as they grasp game and boss fight 
-      mechanics._
+      _A bit interesting, though on GL release will not be as stellar as he was on JP. In general stronger weapons and better access to certain buffs mean that Albel, while being a decent mix of a DPS and buffer, doesn't do either extremely well. His damage is gated by being someone who focuses on Air Slash, and his main ATK buff only applies to Attackers and Defenders, like Claude. Unlike Claude, DEF down matters little when the enemies are weaker, only adding a minor DMG increase, while Claude's unconditional AP on normals increases uptime for the whole team._
       
       
       **TL DR**
@@ -1495,8 +1429,9 @@
       
       **Rotation**
       
-      *Normal > Unbridled Air Slash > Aura Wall > Unbridled Air Slash > Spam till out of AP (Damage rotation)*
+      *Normal > Air > Aura > Air^n*
 
+      *Normal > Aura > CA Air > CA Aura > Aura^n - HC (CA during EB to prevent moving bosses around, otherwise not needed.)*
 
 - name: Ilia Silvestri
   cat: gl
@@ -1597,17 +1532,7 @@
     maxHits: 14
     
   notes: >
-      _Ilia enters the game in order to tilt you when you pull her on a limited banner. She's quite a late arrival for a 5 star and is
-      a weak one on top. However she does have some unique things going for her on the buff front. Damage to multiple enemies is not
-      a commonly seen buff, mostly because it's not very useful in a boss fight, but for MoT and bosses with trash waves and adds 
-      it could have some relevance. Boosting fire damage dealt for the party is an odd one but if the party can exploit it on a fire
-      weak boss, it's a pretty nice buff to have. Her ATK buff isn't amazing at this point in GL a lot of characters beat it or match
-      it and have other more relevant buffs._
-      
-      
-      _Her draw backs are, as mentioned, her ATk buff just isn't that good by todays standards. Also her ATK buff and fire damage buff
-      don't have the best synergy since the fire damage is more relevant for fire invokers. Plus being a 5 star means she has less
-      stats and overall just poor damage for an attacker. She's not bad by any means but at this point in GL you can do much better._
+      _Not terrible, provides an average ATK buff considering her other utility. She's meant to synergize with Invokers on maps with trash, but realistically most maps which have mobs don't really need the multi-target DMG, and most bosses come alone otherwise. For the exact composition she would support (Fire Invokers) her ATK buff is useless. Overall extremely poor synergy. If you have no other ATK buffer, she fills the role, but if you have literally any other ATK buffer, they're probably better._
       
       
       **TL DR**
@@ -1633,8 +1558,7 @@
       
       **Rotation**
       
-      *Normal > Palm of Destruction > Crescent Locus > Palm of Destruction > Spam till out of AP (Damage rotation)*
-
+      *Normal > Palm of Destruction > Crescent Locus > Palm of Destruction^n (Damage rotation)*
 
 - name: Clair Lasbard (Halloween)
   cat: gl
@@ -1738,17 +1662,7 @@
     maxHits: 7
     
   notes: >
-      _Global's first true quality damage carry comes in the form of best girl Clair. Dressed in a rather revealing outfit to boot.
-      Halloween Clair brings a lot of damage to your party, in fact past 100 hit count she has the highest DPS in the game. She has
-      hit count related buffs, one boosting her own ATK and another boosting party wide ATK damage. Her built in AP reduction allows
-      her to get out more attack. Plus her ATK buff to herself means her attack is the second highest in the game after Winter Fidel.
-      She also does bring a little utility, aside from her ATK damage buff her post rush buff increases party DEF by 30% while 
-      lowering it by the same amount for enemies._
-      
-      
-      _Clair still has her issues however, her rush gain could be better for a start. Also she's quite squishy as well so does require
-      some level of skill to use effectively. Though really in GL she's pretty hard to say no to as a damage carry in the hands of a
-      good player._
+      _HClair makes off with the weakest of the unnerfs, only getting a slight increase in ATK and her ATK DMG buffs. That said, this aligns her again with new modern levels of power, making her damage extremely solid. She is still a reasonable source of ATK DMG, especially pre-rush, and her post-rush buff isn't the worst thing, bulking while also adding a smidge of extra damage._
       
       
       **TL DR**
@@ -1772,12 +1686,11 @@
       
       **Rotation**
       
-      *Normal > Sinistral Edge > Dextral Slaughter > Hazy Wheel > Spam till out of AP (Damage rotation)*
-    
+      *Normal > Sinistral Edge > Dextral Slaughter > Hazy Wheel^n (Damage rotation)*
     
 - name: Millie Chliette (Halloween)
   cat: gl
-  rating: 10
+  rating: 9.5
   picture: Wolf_Millie
   weapon: arm
   ace: true
@@ -1865,18 +1778,7 @@
     maxHits: 8
     
   notes: >
-      _Global gets its first Arms user and boy is it a cute one. Halloween Millie is a pretty strong buff character who was wronged 
-      by the introduction of 2b before her. However she's still a very strong buffer in her own right, even if overshadowed by 2B.
-      She gives both a solid attack buff and AP recovery on normals. She also has the niche ability to nullify the annoying movement
-      and rush gauge reduction fields, and unlike others who have this buff her isn't restricted, it's for the whole party. Her
-      talent with pumpkin smash means it makes for a powerful finisher to an attack chain. She also has both a solid range or melee
-      set up and being an Arms user means she actually has good normals at both long and short range. Her post rush buff also boosts
-      party elemental damage by 50%._
-      
-      
-      _She still has downsides, certain characters can surpass her ATK buff, especially with certain compositions. Arms normals have
-      a bit of an awkward range which means trying to normal may make you run into stuff while you get used to it. Also her rush
-      gain is a bit on the slow side and her AI gets very confused as to whether it wants to go range or melee._
+      _Awoo makes her great return, with excellent unconditional buffing and a very reasonable 100 HC for her max buffing. Again, notably is less strict than 2B once her HC is reached, due to the team not being required to play around being full HP. The DMG unnerf puts her back to reasonable levels with the other unnerfed units. The only thing which holds her back at all is that GL is still a bit slow to reach even regular levels of HC._
       
       
       **TL DR**
@@ -1902,7 +1804,7 @@
       
       **Rotation**
       
-      *Normal > Lantern Burst > Howling Rocket Punch > Pumpkin Smash (Damage rotation)*
+      *Normal > Lantern Burst > Howling Rocket Punch > Pumpkin Smash^n (Damage rotation)*
 
 
 - name: Fayt Leingod
@@ -1988,18 +1890,7 @@
     maxHits: 12
     
   notes: >
-      _Fayt arrived at a bad time for an attack buffer, overshadowed by 2B and to a lesser extent Halloween Millie, he never really
-      got his chance to shine like he should have. However that doesn't mean he's not aa good character. Especially since the other
-      two were limited characters while Fayt will always be available. Fayt comes with a decent attack buff that has been exceeded
-      in recent characters but may still be useful. His passive elemental buff isn't too common and his post rush upgrade of it
-      matches that of 2B and Halloween Millie. On top of that Fayt has a build in double imbue of light and fire, the fire imbue
-      being very nice as it isn't an element covered by ohs right now._
-      
-      
-      _Fayt still has downsides, aside from just being a downgrade from two limited characters. His lack of ranged filler hurts him
-      as it means his options are limited at times. Talented imbues can always be a double edge sword when bosses with resists come
-      into play and you don't have the weakness weapon to cancel out the imbue. Also his anti-flinch is pretty redundant at this
-      point with so many strong defenders._
+      _The boy himself, who should've been a decent ATK buffer, was unfortunately powercrept before his release. Although he comes bundled with a few choice things, such as pre-Rush Elemental DMG, overall his lower ATK buff and lack of AP RCV like the limited units makes him less appealing comparatively. That said, once the limited units are not available anymore, he is fairly reasonable, with his free elemental buff making up for a bit of the damage his ATK buff loses. He does also give a slight Anti-Flinch to ranged units and comes with free imbue._
       
       
       **TL DR**
@@ -2027,12 +1918,13 @@
       
       **Rotation**
       
-      *Normal > Shotgun Blast > Gliding Side Kick > Shotgun Blast > Spam till out of AP (Damage rotation)*
- 
+      *Normal > Side Kick > Shotgun > Air Raid^n - Non-moving Smaller Targets*
+      
+      *Normal > Shotgun > Kick > Shotgun - Medium/Large Targets*
  
 - name: Michael
   cat: gl
-  rating: 4
+  rating: 3.5
   picture: Michael
   weapon: knuckle
   ace: true
@@ -2133,18 +2025,7 @@
     maxHits: 8
     
   notes: >
-      _Michael is a very unique character who at least wins kudos for having a unique design compared to other characters. He is
-      meant to be a damage carry, but to truly fill that role he needs to first die in order to get his 25% stat buff. He does bring
-      a good attack buff for attackers, but it's not stellar. He buffs his own fire damage for all his skills as well. His strongest
-      point is probably his post rush buff, a massive AP cost reduction for himself to dish out damage. Worth noting his stat buff
-      for each dead ally counts even after revives, whether that be reviving with gems. (Please don't.) Or giving him synergy with
-      Evelysse._
-      
-      
-      _Michael's downsides are many. He isn't much of a damage carry if people aren't dying for him, really adding extra emphasis to
-      the term carry. His attack buff is surpassed by plenty of attackers at this point and his selfish talents aren't really that
-      good. His attacks can also be a bit clunky to use and if there is any boss with fire resist you'd best have some knuckles with
-      an imbue they're weak or neutral too._
+      _Convince your teammates to die for you. Michael is an interesting character, with the specific unique ability that lets him get stronger as your teammates die. Unfortunately, he suffers from long skills and subpar buffs. His 40 would be nice, but it's only for Attackers, and he's at his strongest when he has no other teammates, which is unintuitive. He would be decent for pubs and soloing, but his skill lengths do hinder this quite a bit and making kiting hard. Worth noting that he does count towards his own buff, and it persists through revives, gems or otherwise._
       
       
       **TL DR**
@@ -2172,7 +2053,9 @@
       
       **Rotation**
       
-      *Normal > Pyroclast Punch > Bosom Blow > Firefest (Damage rotation)*
+      *Pyroclast is the cheapest move, Bosom is the fastest, Fire Fest is the highest DPS/rush gain unless Lava Flow is viable.*
+
+      *Normal > Pyroclast > Bosom > Fest / Lava > (Dodge if using Lava)*
 
 
 - name: Fidel Camuze (Winter)
@@ -2284,17 +2167,7 @@
     maxHits: 30
     
   notes: >
-      _For Christmas Fidel decides to have a go at being GLs first dual gun user. He comes as a damage carry, boasting a high amount
-      of attack power and the 2nd highest dps in the game. He does provide some utility to the party, a weak ATK buff if you don't
-      have one. AP recovery but only after 100 hits and an ATK damage buff but only after 200 hits. He self buffs his ATK and HIT
-      before even getting into combat and with his talent focusing on bombing run it's not surprising his damage revolves around 
-      spamming it with max cancel bonus, along with bullet barrage. His post rush buff reduces his AP costs to let him spam even more
-      plus he gets a nice crit bonus if one isn't already being given to boost his damage output a little._
-      
-      
-      _Winter Fidel does have some downsides. Bombing run makes you leap back which can make it awkward to use as much as you want to
-      increasing the clunk factor of the skill. Also his more powerful party buffs are behind hit counts and while 100 hits isn't
-      that difficult 200 can become a bit of a task, though reaching it before rushing will provide a good damage boost._
+      _Hitcount based carry who can self-sustain himself even with no other ATK buffer present. Respectable hitcount racking on his main skill, long range and quick-deploying skills make him easy and safe to play at range. Mobility of Dual Guns will take getting used to, but can be used to avoid many attacks mid-combo, with the caveat of sometimes losing DPS as well due to not wanting to move in a direction. Gets a boost at SC3/5, and his personal rush buff lasts basically indefinitely once he gets it the first time, due to the 30s timer._
       
       
       **TL DR**
@@ -2318,10 +2191,9 @@
       
       **Rotation**
       
-      *Normal > Bombing Run > Flying Divebomb > Bombing Run > Bombing Run > Bullet Barrage (Damage rotation)*
+      *Normal > Divebomb > Bombing > Divebomb > Bombing > Barrage*
       
-      *Normal > Flying Divebomb > Bombing Run > Flying Divebomb > Bombing Run > Bombing Run > Bullet Barrage (Damage rotation 103+ AP)*
-
+      *Normal > Bombing > Divebomb > Bombing^2 > Barrage - (103 ~ 104 AP Required)*
 
 - name: Welch Vineyard (Tearful)
   cat: gl
@@ -2413,10 +2285,7 @@
     maxHits: 25
     
   notes: >
-      _Tearful Welch. Welch finally gets made into a 5 star, a freebie non-ace as well. Her best role is as a griefer of the party
-      lowering everyones DEF by 50% but also all enemies as well. Her post rush buff increases party ATK by 50% and nullifies your
-      DEF with a -100% debuff so everything hits you like it was a critical hit. Tearful Welch is only good if you're seeing to add
-      some challenge to a party or do some griefing. Please kick them if they enter your rooms and leave if one joins._
+      _Troll 4* unit which became a 5* unit. Notable for being one of the few units with DEF down, which is useless due to crit's existence. She can grief allies, so if you see her, prepare to take more damage. She does have a decent party atk post-rush, at the cost of the huge DEF down._
       
       
       **TL DR**
@@ -2436,12 +2305,13 @@
       
       **Rotation**
       
-      *Normal > Crescent Lotus > Drill Spike > Crescent Lotus > Spam till out of AP (Damage rotation)*
-  
+      *Normal > Locus > Drill > CA X-Claw - X-Claw has terrible frames and no air dodge, use with caution.*
+
+      *Normal > Locus > Drill > CA Locus^n*
   
 - name: Meracle Chamlotte
   cat: gl
-  rating: 7
+  rating: 7.5
   picture: Meracle
   weapon: knuckle
   ace: true
@@ -2557,15 +2427,7 @@
     maxHits: 7
     
   notes: >
-      _Meracle enters as another damage carry similar to Cliff. Her buffs are generally selfish but unlike Cliff she does bring at
-      least something to the party if characters are at short range and AP recovery to defenders, these two talents mean she's a
-      good friend to defenders and in the current FFBE collab meta, that suits her very well. She gets stronger as hit count
-      increases as well but that ATK buff may well already be in effect from an ATK buffer such as 2B or Lasswell. Her damage is
-      obviously very good and her crit rate buff for short range means she's usable for Crystal Guardian._
-      
-      
-      _Her downside is simply that she doesn't really pack enough punch to justify her poor utility for the party. However if you have
-      a defender in the mix and no AP recovery for them then Meracle justifies her place in a team at that point._
+      _A selfish carry, like Cliff, but actually does have some minor party buffing, unlike Cliff. Should be slightly better, and also scales a bit better with hitcount. Not amazing compared to the limited carries, but should be reasonable for a while, especially as a permanent unit._
       
       
       **TL DR**
@@ -2589,8 +2451,11 @@
       
       **Rotation**
       
-      *Normal > Crescent Locus > Gouging Spike > CA Crescent Locus > Spam till out of AP (Damage rotation)*
+      *Don't be fooled by Claws' hit count and damage, it's very very slow and should only be used during burst as a combo ender.*
 
+      *Normal > Crescent > Spike > CA Crescent - DPS & Hit Count*
+
+      *Normal > Crescent > Spike > CA Claws - Combo during EB to avoid disruption.*
 
 - name: Lasswell
   cat: gl
@@ -2683,15 +2548,7 @@
     maxHits: 9
     
   notes: >
-      _As free units go, Lasswell is surprisingly higher quality than previous offerings. He is essentially a poverty Claude, offering
-      ATK+45% to close range allies and 30% baseline. Alongside his decent dps, he is competitive with 2B in proper comps, and he 
-      nullifies Slow Fields too. On top of all of this he's also had 3 of his 4 skills buffed from JP, Tranquility and Mirror of
-      Haze both have their ATK multiplier increased from 200 to 250. His main damage dealing skill also recieves a slight buff,
-      increasing its multiplier from 400 to 450. This means he'll pack a bit more punch than originally expected._
-      
-      
-      _His rush buff might as well not exist, as it is easily overwritten by the likes of Maria and 9S, and he has no AP on-hit, 
-      like 2B does. but you can't ask for everything, can you? You and your fantasies can never be quenched, can they?!_
+      _Free Fidel. He actually has solid ATK buffing, with some minor other benefits. In a sense, he's probably actually close to discount Claude, but overall he's a great attack buffer for anyone who doesn't have one already. Solid even compared to some units we have already. Minor talent buffs, significant multiplier buffs from JP, making him more viable damage-wise too._
       
       
       **TL DR**
@@ -2717,8 +2574,11 @@
       
       **Rotation**
       
-      *Normal > Exorcising Storm > Tranquility > Blade Flash - Awakened > Spam it till out of AP. (General combo.)*
+      *Storm vs Haze (Double Slash) - Personal preference. Haze does a minimal amount more DPS, but Storm is significantly faster, which means more time to dodge, etc. 
 
+      *Normal > Storm > Tranq > Flash^n*
+
+      *Normal > Storm > Tranq > Flash^n > CA Storm - 105 AP Required; Less downtime due to mitigating Flash's backstep.*
 
 - name: Andre
   cat: gl
@@ -2783,7 +2643,7 @@
 
 - name: Verda Kleiman (Valentine)
   cat: gl
-  rating: 10
+  rating: 9.5
   picture: Pure_Love_Verda
   weapon: arm
   ace: true
@@ -2903,19 +2763,8 @@
     maxHits: 5
     
   notes: >
-      _Verda's valentine gift to the players is showing up before her permanent version is out. Valentine Verda joins Winter Fidel
-      and Halloween Clair as a powerful attack carry. She does her job pretty well, even providing some pretty good utility, her
-      close range attacks debuff enemies making them take more ATK and INT damage. She also provides AP reduction past a skill
-      chain of 3 for the whole party, though some characters will struggle to use this effectively. Her talent that boosts her
-      ATK damage significantly based upon her own skill chain is very powerful and doable with her low AP cost skills, bost 5
-      skill chain she'll be hitting extremely hard, especially with her debuff active. Post rush Verda helps make the parties
-      damage much better and her own even more insane with an even more potent version of her unique ATK and INT damage taken
-      debuffs._
-      
-      
-      _As for downsides it's important to say is that Verda's animations are pretty slow, which also makes her rush gain kind of
-      questionable as well. Also her AP reduction party buff isn't that amazing for certain characters so it's not much of a perk.
-      However she is meant to be a carry so as long as she's hitting hard she's doing what you wanted._
+      _
+A carry with a unique debuff. Should avoid significant nerfs if nerfs, may possibly get some buffs, quite useful due to her nature. Interesting party utility as well with AP cost redux at SC3. It will be hard to work around this as an ally, but she can maintain it for a few seconds due to her low AP costs. Her skills are notoriously slow and her rush gain can be unreliable, so consider this the tradeoff for her buffs. Monster rush._
       
       
       **TL DR**
@@ -2939,7 +2788,9 @@
       
       **Rotation**
       
-      *Normal > Magnetic Love Field > Clockwise Arms > Magnetic Love Field > Spam till out of AP (Damage rotation)*
+      *Normal > Magnetic > CA Arm > (Rocket/Magnetic)^n*
+
+      *All of vVerda's skills can be CA'd for repositioning. Rocket and Magnetic can come down to preference. Magnetic Field has a longer animation time, but can be better with mobile and small targets due to higher area coverage.*
  
  
 - name: Rena Lanford (Valentine)
@@ -3034,19 +2885,9 @@
     maxHits: 6
     
   notes: >
-      _Rena gets a cat girl alt so she can drain the wallets of all her fan boys. Oh and she's a really good attack buffer on top of
-      that. Rena brings a super meaty ATK buff of 40% for the party and 60% for all melee users. On top of that she gives unique buffs
-      to attackers such as a larger than usual anti-flinch effect while using Charge Assault, and nullifying charge assaults critical
-      hit penalty. Plus she gives attackers AP recovery. It helps she has some surivability as well with a pretty good grit talent. 
-      Her post rush buff is also powerful, giving a high single target buff that isn't easily matched._
-      
-      
-      _Of course there are downsides to Rena. The first being her party buffs being so limited, the lack of AP recovery means you
-      lack such an important attack buffer buff for the rest of the party. She's far more of a build around character than 2b or
-      Halloween Millie are because of this, you probably want a attacker carry and another attack buffer for the AP buff to make
-      her truly godlike, but just bringing one of those two will make a big difference as well. However it is undeniable that in
-      a proper composition VRena is the best attack buffer, but due to her limitations it's hard to recommend her over the likes
-      of 2B for pubbing._
+      _VRena is hard to value. On one hand, she doesn't have AP recovery for anyone but attackers. On the other hand, she has the highest attack buff in the game for melee units. Paired with a carry or another AP recovery attacker, she is amazing. Even then, the sheer damage output of the team should just be too high to ignore. Higher ST rush buff helps a bit._
+
+      _[Potential] - VRena is hard to build around - with melee units, she only provides AP on normals to Attackers, which means either you play without it or skip out on other roles, which lowers your overall damage output. The best AP-normal unit at time of writing, 2B, now has equal buffing to her, which means most of the important things VRena does are unneeded._
       
       
       **TL DR**
@@ -3074,10 +2915,9 @@
       
       *Normal > Crescent Lotus > Death Palm Kiss > Heart Burst (General combo.)*
 
-
 - name: Mirage Koas
   cat: gl
-  rating: 7
+  rating: 7.5
   picture: Mirage
   weapon: knuckle
   ace: true
@@ -3176,18 +3016,7 @@
     maxHits: 15
     
   notes: >
-      _Mirage joins the roster as another permanent character and attacker carry. She has a very similar move set to Cliff with only
-      her signature move being the change, though that is enough to have a different rotation. Mirage brings some party buffs to the
-      table, a weak ATK buff that will be passable if she doesn't have an attack carry. Her other two buffs are quite strong but
-      require a composition which focuses on being at close range. ATK damage buffs are still at a premium and AP recovery on normals
-      is always very nice, especially at such a high percent. Her greedy talent that buffs her crit rate and damage requires her to
-      have 100% HP which can be inconsistent, so an accessory or weapon with sustain is advised to get the most out of her. Post rush
-      Mirage can deal more damage with an AP reduction and her regen helps keep her HP topped up to pair up well with her crit talent.
-      
-      As for her weaknesses, Mirage suffers from the lack of a ranged option like other knuckle users which reduces the ability to
-      play it safe at times and bosses who like to go airborne or run around a lot can cause issues. Her buffs while good are quite
-      conditional so she requires the right composition to shine. On top of that HP buffs are quite inconsistent and are very player
-      skill reliant so aren't the best even if powerful._
+      _Melee XFidel. Has her own ATK buff, a very high base ATK, and some respectable buffing for melee units. She also comes innately with some crit at 100% HP. Otherwise a pretty standard carry with some good self-sustain. Nothing particularly special about her. Does have disruption during EB, so be careful._
       
       
       **TL DR**
@@ -3211,10 +3040,11 @@
       
       **Rotation**
       
-      *Normal > Electric Fists > Crescent Lotus > Electric Fists > Spam till out of AP (General combo.)*
+      *Normal > Electric > Crescent > Electric^n*
       
-      *Normal > Crescent Lotus  > Electric Fists > Acrobat Locus > Electric Fists > Spam till out of AP (Post Rush combo.)*
+      *Normal > Crescent > Electric > Acrobat > Electric^n - Post Rush/EB*
 
+      *Acrobat lifts stunned enemies - use with caution/awareness to your teammates.*
 
 - name: Ashton Anchors
   cat: gl
@@ -3334,15 +3164,7 @@
     maxHits: 12
     
   notes: >
-      _Best boy Ashton arrives as the first permanent dual sword user for GL. He is a mixture of carry and buffer, providing a good
-      pre-rush elemental damage buff and a still rare rush damage buff based on hit count. His play style is fast paced and revolves
-      around making use of ice and fire skills to keep up buffs that help increase damage output. His ice skills provide him a ranged
-      combo while his fire skills a melee combo, you can switch load out depending on fight so you can make up if you lack an ice or
-      fire imbue weapon._
-      
-      _As for downsides, being a mix of buffer and carry he excels at neither, but that isn't a major downside. The bigger issues are
-      his elemental damage buff gets overwritten by quite a few characters post rush buff, including the extremely popular 2b. Also the
-      rush buff needs high hit counts to get the most out of it. However Ashton is a good, fun, fast paced all rounder._
+      _Ashton's party buffing looks pretty bad, and that's because it is - he's a carry, so don't be fooled. Pre-rush elemental damage helps him make the most of his imbued elements, and as a bonus he basicially has two free imbues. Hitcount racking, a bunch of cool self-buffs for using his rotation, and a solid post-rush. Other carries may bring more, but he's a solid force to be reckoned with._
       
       
       **TL DR**
@@ -3368,10 +3190,11 @@
       
       **Rotation**
       
-      *Normal > Piercing Blades > Twin Thrust > Northern Cross > Spam till out of AP (General ice combo.)*
-      
-      *Normal > Piercing Blades > Twin Thrust > Sword Dance > Spam till out of AP (General fire combo.)*
-     
+      *Normal > Piercing > Twin > Northern^n*
+
+      *Normal > Piercing > Twin > Dance^n*
+
+      *Normal > Northern > Piercing > Northern^n > Sword Dance (Dash cancel Sword Dance after the first hits contact.)*
      
 - name: Angelica
   cat: gl
@@ -3435,7 +3258,6 @@
       - desc: N/A
     power: ATK x 4500%
     maxHits: 4
-
 
 - name: Rena Lanford (Bridal)
   cat: gl
@@ -3543,13 +3365,7 @@
     maxHits: 2
     
   notes: >
-      _Rena arrives as a bride and to show that this banner should have come some time a go. Her buffs feel quite dated though some
-      are actually not bad. While her ATK buff is very bad, her single target is even worse and to top it off that's barely a post
-      rush buff with a defender in your party. However the saving grace is the regeneration buff she gives, it's very potent
-      especially when you meet 100 hit count which isn't too tall a task, it's not unreasonable to consider her for a comp which
-      wants lots of attackers. (Such as building around VRena or Awakened Dias) For a form of sustain. She has a self AP cost 
-      reduction and ATK buff at 50 hits and her rush multiplier is 4500 so she'll do a decent amount of damage overall. However
-      she's a bit of an oddball buffer but isn't unusable._
+      _WRena is a spread buffer who suffers from subpar buffing. That said, her GL exclusive buff gave her AP on normals, which is one of the most important buffs for most parties. This sets her as a sidegrade to HMillie, with a notable bonus being her regen, which is enough to recover a significant amount of health before rush. Her moveset is quite bad, with her version of Chariot being uncancelable unlike Cliff's, and nothing else doing notable damage.Her personal buffs make up for this a bit._
       
       
       **TL DR**
@@ -3573,10 +3389,11 @@
       
       **Rotation**
       
-      *Normal > Flash Chariot > Hammer of Might > Flash Chariot > Spam till out of AP (Damage combo.)*
-      
-      *Normal > Twister > Hammer of Might > Twister > Spam till out of AP (Rush combo.)*
+      *Normal > Fury > Hammer > Fury^n - Hit Count*
 
+      *Normal > Hammer > Triple > Cartwheel^n - DPS*
+
+      *Normal > Cartwheel > Hammer > Cartwheel^n - Rush*
 
 - name: Hal (Iron-Arm)
   cat: gl
@@ -3643,7 +3460,6 @@
     power: ATK x 3000%
     maxHits: 10
 
-
 - name: Andre (Armed)
   cat: gl
   rating: 0
@@ -3706,7 +3522,6 @@
     power: ATK x 2500%
     maxHits: 30
 
-
 - name: Heinrich
   cat: gl
   rating: 0
@@ -3766,7 +3581,6 @@
           buffValue: 30
     power: ATK x 2500%
     maxHits: 5
-
 
 - name: Marcelle
   cat: gl
@@ -3829,7 +3643,6 @@
           buffValue: 50
     power: ATK x 3000%
     maxHits: 7
-
 
 - name: Farleen
   cat: gl
@@ -3894,7 +3707,6 @@
         all: true
     power: ATK x 2500%
     maxHits: 4
-
 
 - name: Tynave
   cat: gl
@@ -3966,7 +3778,6 @@
     power: ATK x 2000%
     maxHits: 4
 
-
 - name: Gunter
   cat: gl
   rating: 0
@@ -4029,7 +3840,6 @@
         all: true
     power: ATK x 2500%
     maxHits: 4
-
 
 - name: Ted
   cat: gl
@@ -4094,7 +3904,6 @@
         all: true
     power: ATK x 2500%
     maxHits: 7
-
 
 - name: Precis F. Neumann
   cat: gl 
@@ -4182,16 +3991,7 @@
   notes: >            
       **TL DR**
       
-      _Precis takes off the santa costume to join us as our latest attacker permanent ace and the permanent arms user. Precis is a bit
-      of a lack luster character but isn't terrible. She has a self ATK buff that is conditional but makes up for her lack of attack
-      stat. She has a decent conditional crit chance talent and she can output some good damage by skill chaining. Plus her hc 
-      extension helps hit count compositions never actually lose hit count except after rushing, which ties in with her attack buff.
-      She also provides health regeneration totalling 60% of each characters max HP over 20 seconds. Plus her rush multiplier is
-      pretty damn juicy at 4.5k meaning that getting to 100 hits and rushing should yield a good rush._
-      
-      _Precis biggest problem is her lack of attack when her talents point towards a character more orinetated towards being a carry.
-      She NEEDS to reach 100 HC before rushing or it'll be a sad outcome from her, and her utility doesn't make up for the lack of it.
-      She also has no real move to spam in her rotation, her multipliers just aren't that high for someone who is meant to be a carry._
+      _In real talk, she's pretty below-average. Mostly unimpressive damage, especially compared to limited carries, with almost non-existent buffing otherwise. She has a regen rush, but doesn't merit the slot or level of healing to use her for that purpose either. Outscaled even not considering the GL level of powercreep without some GL exclusive buffs. Her only saving grace is some decent mults in addition to her selfish buff._
       
       
       **TL DR**
@@ -4214,8 +4014,13 @@
    
       **Rotation**
       
-      Normal > Rocket Punch > Hammer Slammer > Jump'n'Thump*3 (Replace Hammer Slammer with Force Field if 104 AP or higher)
+      *Normal > Rocket > Field > Rocket > Field^n - HC*
 
+      *Normal > Rocket > Slammer > Jump 'n' Thump^3*
+
+      *Normal > Rocket > Field > Jump 'n' Thump^3 - 104 AP Required, but can be done with 100 AP by starting w/ ranged and CAing into Thumps.*
+
+      *Normal > Field > Rocket > Field > Rocket^n - Long Ranged (AP seeded yields an extra Rocket.)*
 
 - name: Crowe F. Almedio
   cat: gl
@@ -4318,7 +4123,15 @@
           buffValue: 80
     power: ATK x 3500%
     maxHits: 13
+  
+  notes: >
+      _As a pure carry, Crowe's damage isn't bad. He's fast, fun and incentivizes back attacks for extra power. His rush looks a bit strange, but it gives him a short amount of high DPS burst (and its low time means you only need to get off the one combo). To add on to this, he does bring his own ATK buff, making him pubproof. That said, given his restriction, he's never going to be efficient as a buffer alone._
+   
+      **Rotation**
+      
+      *Normal > Dextral/Sinistral > Dextral/Sinistral > Blast^n*
 
+      *Use the Dextral or Sinistral Edge to maneuver the field as you need and to preference.*
 
 - name: Chisato Madison
   cat: gl
@@ -4372,7 +4185,7 @@
         - desc: Rush gauge fills slightly for all allies when using Rising Dragon
 
   skills:
-    - name: "Roaring Cartwheel"
+    - name: "Twister"
       picture: Roaring_Cartwheel
       power: ATK x 410%
       ap: 32
@@ -4382,7 +4195,7 @@
       power: ATK x 150%
       ap: 17
       maxHits: 4
-    - name: "Palm of Lesser Destruction"
+    - name: "Palm of Destruction"
       picture: Palm_of_Destruction
       power: ATK x 210%
       ap: 18
@@ -4394,7 +4207,7 @@
       maxHits: 7
       
   rush:
-    name: "Missile Strike"
+    name: "Preparation"
     picture: Preparation_Chisato
     effects: 
       - desc: Damage dealt +60%
@@ -4406,7 +4219,18 @@
           buffValue: 60
     power: ATK x 3500%
     maxHits: 10
-    
+  
+  notes: >
+      _Our final non-ace release, and she has a single niche as a utility unit - rush feeding. This is unique to her until some future units come, so she functionally does what Daril does, trading extra 300% combo damage slightly more rush uptime and sub 20 rush rotations (which can benefit from rush buffs). She has terrible damage by herself, but her rush buff is notably higher than any shooter damage buff. Dragon feeds 5% rush bar regardless of character, regardless of whether it hits or not. She also does have AP on norms, though locked behind 100% HP._
+   
+      **Rotation**
+      
+      *Chisato bears awkward AP costs, so it is recommended to give AP seeds or reductions.*
+
+      *Normal > Dragon^n - Rush Gain Focus*
+
+      *Normal > Dragon > Locus > Dragon - Attempt to DPS while feeding.*
+
 - name: Lenneth Valkyrie (Awakened)
   cat: gl
   rating: 4
@@ -4527,32 +4351,6 @@
     maxHits: 8
     
   notes: >
-      _Her buffs are spread a bit thin, and her ATK Damage Taken debuff is contingent on winning dice rolls with Seal.  Though she boasts some high
-      mults, the corresponding skills are fairly slow.  Still, she has no role restrictions, and every once in awhile Seal might keep a boss from using 
-      something annoying._
-      
-      
-      **TL DR**
-      
-      
-      **Pros**
-      
-      - Unconditional good ATK buff
-      
-      - Rush combo damage buff
-      
-      - Defence debuff on rush for enemies.
-      
-      
-      **Cons**
-            
-      - ATK buff has been exceeded by many attackers making it redundant in a lot of comps
-      
-      - Silence has a low chance to apply making it a poor talent that doesn't do much
-      
-      - Doesn't do enough other attackers don't already do better
-      
-      
       **Rotation**
             
       *Normal > Glowing Pierce > Sky-High Break^n*
@@ -4640,3 +4438,14 @@
           buffValue: 100
     power: ATK x 5000%
     maxHits: 11
+  
+  notes: >
+      _"Dead Ends things harder than some characters rush for." Even with all the strange GL releases, Arngrim brings one of the highest DPS numbers to date, with fairly fast and extremely powerful rotations. DEF down is not amazing, but when lacking innate crit, does come in handy, and is almost guarnateed to be unique in a party. His main shortcoming is that he needs to CA to achieve maximum output, but mitigates this with a huge 95/30 guts. In a pinch, he does have a heal on holding his CA (just charge and don't release) but it takes 6 seconds to achieve guts % HP back, making it very situational. Postrush guaranteed crit makes him a great choice for high difficulty content to bust through the inflated stats._
+   
+      **Rotation**
+      
+      *To fully unleash the lumberjack's potential, it is recommended to AP seed and equip -5% AP Cost.*
+
+      *Normal > Knuckle > CA Dead End^n - When dealing with high mobility.*
+
+      *Normal > CA Dead End > Knuckle > CA Dead End*
