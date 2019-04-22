@@ -2226,7 +2226,7 @@
     maxHits: 15
 
   notes: >
-      _Our first shota arrives, and he's also our first ever mixed ATK/INT buffer. His ATK, while not near modern values at all, is still reasonable and particularly decent in a dark caster comp to buff the shooter. He still outputs excellent damage, and even brings AP RCV for a shooter if they don't have any innately, making him a reasonable flex slot choice, if not extremely optimal. Post rush amps his damage even more and makes him smoother to play thanks to the cast time redux. Slotting a bit of AP redux gives him two Shadow Flares, which is significant. Tome casts means solid kiting and mobility.  
+      _Our first shota arrives, and he's also our first ever mixed ATK/INT buffer. His ATK, while not near modern values at all, is still reasonable and particularly decent in a dark caster comp to buff the shooter. He still outputs excellent damage, and even brings AP RCV for a shooter if they don't have any innately, making him a reasonable flex slot choice, if not extremely optimal. Post rush amps his damage even more and makes him smoother to play thanks to the cast time redux. Slotting a bit of AP redux gives him two Shadow Flares, which is significant. Tome casts means solid kiting and mobility.
 
       [Potential] Just like his sister release unit JKJK, Leon is a pubproof unit, essentially filling for the Enhance invokers without needing to upkeep the buff. He also brings an additional party buff which can actually be quite useful, unlike most other invokers, and as a bonus, also amps healer's heals, if they need it._
 
@@ -2350,8 +2350,14 @@
     maxHits: 6     
 
   notes: >
+      _A highly mobile and fast attacking Invoker who is range versatile and closer to an Attacker in playstyle. Her buffs are similar to Leon, giving mixed ATK/INT buffing. That said, it's better to consider her a carry who brings some potential party help rather than a buffer in her own right, unless in the rare caster comp. Her orbs can be imbued, but unfortunately she's innately light, and won't get more elementals until further down the line. 
+
+      [Potential] Good self damage and an existent party buff for ATK based units makes her better in pubs than premades, though for most purposes Leon actually fills the dual buff role a bit better._
+      
       **Rotation**
+      
       *Normal > Victory/Crimson > CA Smackdown > Punishment^n*
+      
       *Normal > Victory > Crimson > CA Punishment*
 
 - name: Mystina
@@ -2475,8 +2481,14 @@
     maxHits: 6
 
   notes: >
+      _Uniquely provides full values of ATK/INT DMG pre-rush, and at the moment almost uniquely provides the INT DMG compared to existing buffs. A bit of crit rate/dmg tops this off, as well as some post rush AP utility. That said, she does suffer from staff casting, despite her cast redux (though dash canceling helps with Javelin). Her damage isn't amazing, but she does her job.
+
+      [Potential] Extremely uncommon spread buffs, but still a staff caster. Good in most parties, but requires some skill and awareness as a pilot._
+      
       **Rotation**
+      
       *Normal > Lance > Cross > Javelin^n*
+      
       *Normal > CA Javelin/Storm > Cross > Javelin - (102 or cast before normal hits.)*
       
 - name: Lezard Valeth
@@ -2593,7 +2605,12 @@
     maxHits: 9
 
   notes: >
+      _Unconditionally the best VP unit. The first to introduce INT -> ATK conversion, which functions as an addtional 20% ATK buff which stacks on regular ATK buffing. Lezard himself brings excellent hitcount, elemental versatility anddamage, even off-element, if necessary. Both of his elements are very solid, unlike other casters who lack a bit in their off-elements. Tome casting makes him mobile and safe, and his HC and rush gain together give him a safety button. Innate self-crit, ATK inflation and good rush gain make him particularly excellent for difficult fights._
+      
       **Rotation**
+      
       *Prismatic Missile and Shadow Servant are interchangeable depending on weakness/preference. Alternatively, Cross can be dropped if there is little reason for crit or crit is provided elsewhere.*
+      
       *Normal > CA Cross > Saviour > Prismatic^n - Buff*
+      
       *Normal > CA Prismatic > Saviour > Prismatic^n - Buffed/PRB DPS*
