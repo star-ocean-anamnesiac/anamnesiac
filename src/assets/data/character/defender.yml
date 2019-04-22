@@ -105,11 +105,9 @@
     maxHits: 25
     
   notes: >
-      _A2 gets buffed to her initial JP values. She is now probably the best defender in the game now her Single Target Damage buff
-      isn't holding her back. She provides AP feeding with dodging, she has post-rush sustain. Her damage is good and she can run
-      a ranged or melee combo. She is reasonably bulky as well and really only the slow clunky play style is her biggest downside
-      along with that HP buffs are anything but consistent. Like the rest of the nier trio she's pretty broken and you'll be seeing
-      many on auto in your m3 runs to come._
+      _An offensive defender who brings HP based DMG buffs, which are quite useful to have your DMG and Anti-Flinch bundled up in one unit. She still gives a bit of HP buffing for DEF, while her self buffs allow her to do significant damage as well. Unlike 2B, her perfect dodge feeds the party AP and also refreshes her own AP for easy comboing uptime. Overall a great unit._
+
+      _[v2] Rebuffed to original JP levels. Slightly higher ATK and more equivalent to Rain uncondtionally, conditionally providing more damage and being slightly easier to manually play._
       
       
       **TL DR**
@@ -133,18 +131,20 @@
       
       **Rotation**
       
-      *Pod 1 > Pod 2 (Ranged combo)*
-      
-      *Normal > Pod 2 > Sword 11 > Sword 12 (Melee set combo)*
-      
-      *Normal > Pod 1 > Pod 2 > CA Sword 12 (Ranged set combo)*
-      
-      *Pod 2 > Pod 1 > Pod 2 > CA Sword 12 (Ranged set combo from range)*
+      *Sword 11 VS Pod 1 - S11 provides excellent DMG but is quite slow. P1 allows for a full ranged combo + speed at the cost of DPS. Preference.*
+
+      *Normal > Pod 2 > Sword 11 > Sword 12 - DPS Close Range*
+
+      *Normal > Pod 1 > Pod 2 > CA Sword 12 - Mixed Range*
+
+      *CA Pod 2 > Pod 1 > Pod 2 > CA Sword 12 - DPS w/ Long Range Start*
+
+      *(Pod 1 > Pod 2)^n - Ranged Only*
 
 
 - name: Victor Oakville
   cat: gl
-  rating: 5
+  rating: 4.5
   picture: Victor
   weapon: bns
   star: 5
@@ -220,19 +220,7 @@
     maxHits: 15
     
   notes: >
-      _Victor is the starter defender and a non-ace, so if you picked him you kind of got a bad deal. However Victor is actually a
-      solid defender who boasts incredible defensive utility and is quite difficult to kill. He increases the party's DEF by 50% and
-      offers a weak damage buff. His post-rush buff also decreases damage taken by 50%. His rush gain is pretty good due to his move
-      set and he is worth considering limit breaking due to the cheaper cost of 5 stars and the fact certain permanent aces such as
-      Dias aren't significantly better._
-      
-      
-      _His downsides are the fact he offers little to the offensive side of the game. His
-      damage buff is over written by so many commonly used characters, it'll generally be irrelavant. Also his best rush gain move
-      sends enemies sky high during elemental burst meaning it can't be used. His personal dps is passable, but not amazing and moves
-      like Mirror Blade are also a bit awkward to use. In summary, Victor is a human wall, he's good at surviving and increasing
-      party tankiness. But he doesn't offer much to the parties damage in return, however, if you want a defender on a budget till a 
-      limited defender comes along, he's worth keeping in mind._
+      _Starter defender, boasts high Rush Gain and is great for keeping the party alive with both his talents and his post Rush skill. For sheer defensive utility, he shouldn't be beat out too soon for his combination of talents. However, he has overall low DPS, but can loosely increase party DPS by sacrificing health for damage (Anti-Flinch). Now that he is not the sole 5★ Defender, he has begun to fall off, as he has essentially no offensive merit in both buffs and DMG._
       
       
       **TL DR**
@@ -260,12 +248,13 @@
       
       **Rotation**
       
-      *Normal > Bloodstorm Revolution > Bloodstorm Revolution (Rush gain 100AP rotation)*
-      
-      *Normal > Bloodstorm Revolution > Dragon Roar > Bloodstorm Revolution (Rush gain 105AP rotation)*
-      
-      *Normal > Bloodstorm Revolution > Dragon Roar > Mirror Blade (Damage Rotation)*
+      *(Normal >) Bloodstorm^n - HC and Rush Only*
 
+      *(Normal >) Bloodstorm > Dragon > Bloodstorm^n - Rush Intensive (105 AP Required)*
+
+      *(Normal >) Dragon^n - Clumps of Mobs*
+
+      *(Normal >) Bloodstorm > Dragon > Mirror Blade^n - DMG*
 
 - name: Shimada
   cat: gl
@@ -339,7 +328,6 @@
         all: false
     power: ATK x 3000%
     maxHits: 7
-
 
 - name: Stephen D. Kenny
   cat: gl
@@ -419,10 +407,9 @@
     power: ATK x 3000%
     maxHits: 7
 
-
 - name: Myuria Tionysus (Summer)
   cat: gl
-  rating: 10
+  rating: 9.5
   picture: Everlasting_Summer_Myuria
   weapon: bns
   ace: true
@@ -538,12 +525,7 @@
     maxHits: 6
     
   notes: >
-      _Summer Myuria comes along to remind us she's the only alt Myuria has gotten even in JP. Which is a tragedy. Now with the 
-      shackles off Myuria becomes quite the solid tank. Her conditional of holding aggro is part of her role so you should be doing it
-      anyway. This gives a big Single target damage boost and herself a massive ATK boost as well as AP reduction. On top of this
-      her rush gain issues have been fixed by cutting the quote required, meaning she can take advantage of her juiced up rush.
-      Plus Summer Myuria still remains one of the best defenders to fight at ranged with due to her solid ranged attacks and she
-      still brings that rare INT damage reduction for the party._
+      _[v2] Our second defender comes in hot with her early buff, bringing her rush gain from terrible to mediocre (which is good), raising her damage with aggro to carry-like levels, and making her ST buff competitive with the other limited defenders. She still brings HP/INT DMG defensive bulking, which is nice for when it works, and a solid stun rate buff, which you will notice when compared to not having it. Her skillset is diverse and solid, making her a great choice again._
       
       
       **TL DR**
@@ -567,10 +549,13 @@
       
       **Rotation**
       
-      *Normal > Aura Wall > Air Slash > Thunderfire Slash > spam this until no AP - (need 4-5 AP seeds damage rotation)*
-      
-      *Normal > Air Slash > Thunderfire Slash > Air Slash > Thunderfire Slash > spam this until no AP (Range rotation)*
+      *Mob/Mob Stages - Thunderfire spam or Bloodstorm spam (if you can hit multiple targets). Bloodstorm may be used (its Rush Gain and DPS are similar to Aura/Air) but it is slow, can launch and is prone to miss.*
 
+      *Normal > Aura Wall > Air Slash > Thunderfire Slash^n - (Need 4-5 AP Seeds) - DPS 
+
+      *Air Slash > Thunderfire Slash > Air Slash > Thunderfire Slash^n - Ranged 
+
+      *(Normal >) Aura Wall (Until Hit Count 150+) > Thunderfire^n - Rush Gain (Loses a lot of DPS.)*
 
 - name: Dias Flac
   cat: gl
@@ -681,16 +666,7 @@
     maxHits: 10
     
   notes: >
-      _Dias is the first Ace permanent defender to come to global and is pretty good. He's an improvement over Viktor but isn't going
-      to blow people away. He provides defensive buffs to the whole party, but he only gives a weak damage buff to attackers and
-      defenders, and only gives anti-flinch to characters weaking close range weapons. This means his buffs aren't really relevant to
-      ranged characters and with our current defender pool, reduces his relevancy because of this._
-      
-      
-      _He has a solid enough ranged combo
-      and decent damage, his post rush buff helps him really out put some damage by reducing AP cost by 50% but does nothing for the
-      party. In summary, Dias is a good character, but only good and will slowly become outclassed over time. Compared to other 
-      defenders he feels like the one least worth limit breaking._
+      _Interesting character who also subs well into a melee-heavy/only party. He buffs DMG like a shooter, but unlike in JP at the moment, he's not too terrible compared to our shooter options. He brings respectable DMG thanks to his hefty self buffs, as well as significant defensive buffs for melee allies. Similar to sMyu, his ranged skills are quite good, but he also packs the regular Double/Air for some reliable offense. Also quite reliable when soloing, but be careful when picking him in public games, as some of his buffs are redundant with any shooter._
       
       
       **TL DR**
@@ -712,10 +688,11 @@
       
       **Rotation**
       
-      *Normal > Annihiliating Air Slash > Double Slash > Annihiliating Air Slash > spam this until no AP - (Damage rotation)*
+      *Normal > Annihiliating Air Slash > Double Slash > Annihiliating Air Slash^n - (Damage rotation)*
       
-      *Annihiliating Air Slash > Dragon Roar > spam this until no AP (Range rotation)*
-
+      *Normal > Double Slash > Annihilating Air Slash > Dragon Roar - Large Targets
+      
+      *(CA Air > Dragon > Air > Dragon)^n - Ranged*
 
 - name: Evelysse (Winter)
   cat: gl
@@ -803,12 +780,12 @@
       power: ATK x 200%
       ap: 20
       maxHits: 2
-      highlight: true
     - name: "Threefold Blast"
       picture: Tri_Zapper
       power: ATK x 230%
       ap: 21
       maxHits: 3
+      highlight: true
     - name: "Helix Blade"
       picture: Helix_Blade
       power: ATK x 550%
@@ -840,24 +817,7 @@
     maxHits: 6
     
   notes: >
-      _Evelysse has decided for Christmas, she'd like to not be forgotten on the sidelines as a pretty average healer. Instead she
-      wants to enter the ring to steal A2's crown as defender queen. On top of making a Christmas Eve pun. Winter Evelysse is the
-      first character who provides direct competition to a Nier character that's truly worth considering. xEve is part of the hit
-      count characters that started with Halloween and continue in the Christmas limited characters._
-      
-      
-      _She's a bulkier A2 which deals
-      less damage in exchange. She provides the usual anti-flinch and HP buff which is common among defenders, while also providing
-      a party wide defensive buff that reduces ATK damage taken as long as the hit count is over 50, which is an easy goal to reach.
-      Offensively she provides a 20% single target damage buff without condition beating out A2 if you aren't at 100% HP. If you reach
-      150 hits, this increases to a pretty sizeable 40% buff. She has a strong ranged combo and twin helix helps bring the close range
-      pain, post rush she can spam her attacks even more with an AP reduction buff and also buffing her attack allowing her to get
-      a lot of damage out._
-      
-      
-      _Downsides is that she lacks any sustain, so she requires some form of healing from a party member or
-      her equipment. Her Helix Blade also does launch enemies during elemental burst, but not that high that it is super awkward for 
-      other melee to hit them._
+      _A slightly more defensive version of A2, bringing less damage both pre and post-rush, but higher buffing overall. Dual Swords means she plays smoothly and easily. Overall, she also has a lot of personal bulk, with a damage taken redux while attacking, and a self DEF buff, in addition to her party HP/ATK Damage redux buffs. A reasonable substitute for A2, especially in pubs. Notably has a higher damage buff, though locked behind a fairly rough hitcount. Also cute as hell. Her main damage skill does lift a reasonable amount during EB._
       
       
       **TL DR**
@@ -885,10 +845,9 @@
       
       **Rotation**
       
-      *Normal > Resplendent Blades > Threefold Blast > Helix Blade > spam this until no AP - (Damage rotation)*
-      
-      *Resplendent Blades > Threefold Blast > Resplendent Blades > Threefold Blast > spam this until no AP (Range rotation)*
-      
+      *Normal > Blades > Blast > Helix^n - DPS*
+
+      *Blades^n - Hit Count to Reach Buffing*
       
 - name: Edge Maverick
   cat: gl
@@ -977,18 +936,7 @@
     maxHits: 12
     
   notes: >
-      _Edge has finally joined the fray to increase the defender pool and brings some talents worth considering, especially if you
-      pull him and lack a defender currently. While he may not be as good as the two queens of tanking of A2 and xEve. He is still
-      good and his HP buff inparticular is worth taking notice as it means other defenders really like him. He does have some 
-      offensive buffs, but at this point there are a few characters with superior buffs that'll outclass them. His post rush buff is
-      nice but there are other characters with the same buff, including the ever popular 2B, and you do see Fayt and Halloween Millie
-      around as well, hurting that buff further._
-      
-      
-      _To summarise, it's not that Edge is a bad character, his biggest problem is that he's
-      not a great one, he's entering a role that while the pool may be small, has two of the strongest characters in the game already 
-      in it who simply outclass him. His HP buff will always be relevant though and he'll be a solid choice for pubbing so if you want
-      a defender and don't have A2 or xEve he is recommended if you like the way he plays._
+      _A bit outscaled in his non-defender buffing, but he could be considered a NieR unit lite at this point. His extra buffing is exceeded by any unit of the correct class, but he does bring a massive 40% HP buff, and is technically pub-proof due to his nature. He also comes with Elemental DMG, which though redundant with Fayt, 2B and HMillie, is actually a very reasonable buff. His main power will be when combined with someone like Dias or XEve, to get more out of the HP bulking._
       
       
       **TL DR**
@@ -1100,18 +1048,7 @@
     maxHits: 5
     
   notes: >
-      _Miki has now entered the defender pool and decided to continue her character trend of being not very good. However for a freebie
-      welfare unit, she's actually a decent character. Her buffing is limited to supporting invokers and healing, meaning she wants a
-      specific party composition. She does provide an INT and DEF buff to all characters, empwoering Invokers and Healers inparticular
-      but giving a little bit of bulkiness to her party in general. Her biggest strength is she's even harder than Viktor to kill,
-      which is saying something. Her grit chance isn't as high but is still 70% and requires a smaller amount of max HP. On top of
-      that she has a pretty large in built life steal that synergises with her grit chance which is why she's just so tanky._
-      
-      
-      _Obviously
-      though her buffs aren't great, the lack of anti-flinch for the 3 more popular roles gives it the same redundancy that Dias has
-      issues with. Bloodstorm and Nether also send character sky high during elemental burst and she only has one ranged attack. Plus
-      with her in built life steal Vampiric Flash is pointless._
+      _Now that the permanent defender pool is a bit larger, there are better options to potentially start with; that said, she's an excellent defender for newbies, stronger than the 4★ base units due to her upgrade to a non-ACE 5★. Her buffing is reasonable, though it does hurt a bit that her anti-flinch is only for healers/invokers, she does have solid sustain due to innate guts and lifesteal. Her moveset isn't the worst thing either._
       
       
       **TL DR**
@@ -1135,10 +1072,13 @@
       
       **Rotation**
       
-      *Normal > Nether Strike > Bloodstorm Revolution > Nether Strike (100AP damage rotation)*
+      *Normal > Bloodstorm > Nether > Bloodstorm - 101 AP Recommended, Low Mobility Targets*
       
-      *Normal > Nether Strike > Flying Guillotine > Nether Strike > Nether Strike (104AP damage rotation)*
+      *Normal > Nether > Bloodstorm > Nether - Faster Combo, Slightly Less DPS*
 
+      *Normal > Nether > Guillotine > Nether^n - Requires 104 AP or 5% AP Reduction*
+
+      *(Normal >) CA Guillotine > Nether > Guillotine^n - Large targets. Guillotine lingers and racks up a ton of hits giving Miki respectable DPS.*
 
 - name: Rain
   cat: gl
@@ -1253,17 +1193,7 @@
     maxHits: 12
     
   notes: >
-      _Rain clocks in as another top toer defender in our current meta. Alongside high damage, he brings a 10% stat debuff that 
-      can chunk a surprising amount of a boss's inflated stats, which cannot be understated. This also makes him especially strong 
-      alongside other defenders in single player parties. His global buffs elevate him even further as well, he now has a superior HP
-      buff to A2 and xEve so will make theirs redundant, only Edge can better his 30% HP buff. Plus a multiplier increase of 110 on
-      his best skill of Lava Floor, making him pack a serious punch now._
-      
-      
-      _Finally, One-Handed Sword is a weapon type that covers many 
-      different elements, letting him exploit weaknesses more often than A2 and xEve at this stage. In summary the global buffs to his
-      HP buff and damage, alongside the flexibility of his weapon type and his unconditional buffs makes Rain one of the best
-      defenders on GL, leaving A2 inparticular a little nervous. Rain is easily the best of the three FFBE units._
+      _Was better than expected. His buffing is mixed, but A2 and XEve both do his damage/buffing job better. That said, he does come with debuffs which are unique, so it's not all bad. Lava Floor buffed from JP, making it a monstrous skill for damage._
       
       
       **TL DR**
@@ -1295,7 +1225,9 @@
       
       **Rotation**
       
-      *Normal > Undermine > Flash of Steel > Lava Floor > Lava Floor - (Damage rotation)*    
+      *Normal > Undermine > Flash > Lava^n*
+      
+      *Normal > Lava > Undermine > Lava^n - 5% AP Cost Reduction*    
   
   
 - name: Dias Flac (Awakened)
@@ -1416,20 +1348,9 @@
     maxHits: 10
     
   notes: >
-      _Dias was the first defender ace we had and is rewarded by being the first defender to be awakened. Rather then try and give
-      him a more all round kit like other top defenders, Dias doubles down on his composition oriented talents, in some cases
-      he literally doubles them. First off we'll go over his kit. His moves are fine, a little dated but the buffs to them help
-      increase damage output, on top of that he now has a big +50% self boost to his ATK. He has also gotten better at giving party
-      bulk with his DEF buff now at 25% for the party and reducing ATK damage by 25% only 5% less then the best ATK damage reduction
-      going._
-      
-      _His composition focused talents want him accompanied by only attackers and defenders, which sounds like Claude may be a good
-      pick to go alongside him. No only does he provide a large 30% anti-flinch buff, he essentially replaces the sharpshooters by
-      giving a 40% damage buff, matching that of base Maria._
-      
-      _His additional talents are underwhelming, taunt +3 should help him hold aggro and his other talent helps him regenerate health
-      by holding CA. Not actively using it. Just standing there with it charging. Doing nothing. It's quite bad, but the improvements
-      he gets are the real powerhouses here._
+      _[v2] Excellent awakening. Stat buffs make him a bulky monster though his mults still gimp his overall damage. ATK DMG redux and DEF at higher values make him a great defensive buffer, and a reasonable DMG buffs allows him to flex in melee/atk/def comps at the same value as unawakened Maria, which ain't bad at all. His anti-flinch is still for melee only, which blows a bit. He does pick up the ability to self-sustain, but it can be hard to find time to stand still to use it, especially as a defender with aggro. May come in handy in a pinch to reach a certain HP breakpoint in a fight._
+
+      _[Potential] - Dias is a great autodefender, bringing bulk and easy to use/hit skills - note, you may need to use Diabolic Whirl, as the AI works strangely with ranged attacks. That said, in fights where his excellent defensive buffs are unneeded, he won't be quite as good. He also suffers against smaller bosses, and on the reverse side, excels supremely against bosses where Dragon Roar hits more than twice._
       
       
       **TL DR**
@@ -1455,10 +1376,11 @@
       
       **Rotation**
       
-      *Normal > Annihiliating Air Slash > Double Slash > Annihiliating Air Slash > spam this until no AP - (Damage rotation)*
+      *Normal > Annihiliating Air Slash > Double Slash > Annihiliating Air Slash^n - (Damage rotation)*
       
-      *Annihiliating Air Slash > Dragon Roar > Annihiliating Air Slash > Dragon Roar > spam this until no AP - (Range rotation)*
- 
+      *Normal > Double Slash > Annihilating Air Slash > Dragon Roar - Large Targets
+      
+      *(CA Air > Dragon > Air > Dragon)^n - Ranged*
  
 - name: Gideon
   cat: gl
@@ -1518,7 +1440,6 @@
     power: ATK x 1500%
     maxHits: 5
     
-
 - name: Renier
   cat: gl
   rating: 0
@@ -1570,10 +1491,9 @@
     power: ATK x 2000%
     maxHits: 5
 
-
 - name: Edge Maverick (Awakened)
   cat: gl
-  rating: 7
+  rating: 6
   picture: Edge
   weapon: ohs
   ace: true
@@ -1682,14 +1602,9 @@
     maxHits: 12
  
   notes: >
-      _Edge's Awakening brings a host of new enhancements that do nothing to impress you. His post rush buff is still good, but his
-      talent buffs are mostly pity buffs that make him good when you're playing with random people. His saving grace is a meaty HP
-      Buff that stands out at 50%. This means he will always be contributing HP buffs to a team regardless of composition as it is
-      currently the largest by some distance. His air dodging makes him less clunky to use on top of that. Edge is more a character
-      for playing with randoms, or doing harder content solo where you combine him with someone like Dias to bulk your party._
-      
-      _To summarize, Edge is a unique character in that he's an okay character in a set up composition with friends, with one
-      outstanding buff. But for certain in-game activities he is very useful and worth considering for awakening._      
+      _Edge wants to look good, but unfortunately his ATK buffing literally got tickled, making him a barely viable ATK buffer option with tank benefits. He may still see averagely beneficial use in auto compositions, but otherwise, his only merit is still his unparalleled HP buffing. W/o other defensive options though, it's a bit paltry. A few self talents improve his damage a bit, but without a stat buff, he doesn't shine as much as a main character should._
+
+      _[Potential] - That said, his publord potential should not be understated. The benefits of being a jack-of-all-trades unit which make him suboptimal in premades make him good in pubs. If manual, air dodge and not getting hard smacked on CA make him viable, and discount buffing with anti-flinch beats no buffing at all. Better buff choice (ATK > DMG) but worse performance than Dias slots him slightly lower._
       
       **TL DR**
       
@@ -1714,8 +1629,7 @@
       
       **Rotation**
       
-      *Normal>Aura Spark>Twin Zapper>Raging Strike x2*
-      *Normal>Raging>Aura Spark>Raging - Unawakened*
+      *Normal>Aura Spark>Twin Zapper>Raging Strike^2*
 
 - name: Hrist Valkyrie
   cat: gl
@@ -1830,3 +1744,14 @@
           buffValue: 30
     power: ATK x 4000%
     maxHits: 7
+
+  notes: >
+      _Another powerful limited defender, Hrist pairs perfectly with her banner partner Arngrim, giving more bonuses for CA while nullifying the crit penalty for getting hit during it. Very slot efficient, bringing a source of ST damage and ATK damage, as well as being the first unit to give regular damage taken redux pre-rush. She is also the first character to have an alternate normal for her weapon type, giving her range versatility and an extended close combo. Static AP regen increase accentuates her ability to play from range, and crit and crit damage together is always appreciated heavily._
+
+      _[Potential] Buff/slot efficiency shines in premade and pubbing, but given that nothing beats bringing almost every single damage type short of a shooter, Hrist is extremely suited to random party compositions. Range versatility and AP utlity only increase this factor._
+      
+      **Rotation**
+      
+      *Normal > CA Trial > Inevitable (Whiff)/CA Spear > CA Trial^n - Long Ranged*
+
+      *Normal > Inevitable > CA Trial > CA Attractor^n*
