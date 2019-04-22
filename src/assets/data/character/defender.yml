@@ -49,9 +49,9 @@
             buffCondition: HP is 100%
             buffValue: 40
     - name: "Beautiful World"
-      shortEffects: ATK +30% and DEF +20%
+      shortEffects: ATK +20% and DEF +20%
       effects: 
-        - desc: ATK +30%
+        - desc: ATK +20%
           all: false
           meta:
             priority: 4
@@ -72,7 +72,7 @@
       maxHits: 5
     - name: "YoRHa Arms: Twelve"
       picture: YoHRa_Arms_Twelve
-      power: ATK x 1360%
+      power: ATK x 1240%
       ap: 52
       maxHits: 4
     - name: "YoRHa Pod: One"
@@ -101,7 +101,7 @@
       - desc: Recovers 15% of max HP every 3 seconds
         duration: 20
         all: false
-    power: ATK x 5000%
+    power: ATK x 4500%
     maxHits: 25
     
   notes: >
