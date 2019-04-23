@@ -468,3 +468,59 @@
   obtained: Transmutation, Gacha
   
   
+- name: Phase Magnum
+  cat: 'gl'
+  star: 5
+  picture: Phase_Magnum
+  atk: 958
+  int: 957
+  factors:
+    - desc: Damage dealt to divinities +40%
+      slayer: Divinity
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Divinities
+        buffValue: 40
+    - desc: Single target damage +15%
+      meta:
+        priority: 3
+        buff: Single Target Damage
+        buffValue: 15    
+    - desc: AP cost -10
+      lb: 5
+      meta:
+        priority: 3
+        buff: AP Cost Reduction
+        buffValue: 10
+  obtained: Gacha
+
+- name: White Fang
+  cat: 'gl'
+  star: 5
+  picture: Magical_Gun_White_Fang
+  atk: 962
+  int: 958
+  factors:
+    - desc: Damage dealt to divinities +40%
+      slayer: Divinity
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Divinities
+        buffValue: 40
+    - desc: Critical hit chance +20% when hitcount is >150
+      meta:
+        priority: 3
+        buff: Crit Rate
+        buffCondition: Hit Count > 150
+        buffValue: 20
+    - desc: AP cost -10 when skill chain is >3
+      lb: 3
+      meta:
+        priority: 3
+        buff: AP Cost Reduction
+        buffCondition: Skill Chain 3+
+        buffValue: 10
+  obtained: Gacha
+  
