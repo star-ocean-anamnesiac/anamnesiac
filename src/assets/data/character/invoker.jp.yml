@@ -3699,3 +3699,90 @@
           buffValue: 20
     power: INT x 4500%
     maxHits: 19
+
+- name: Relia (Halloween)
+  cat: jp
+  rating: 0
+  picture: Pumpkin_Relia
+  weapon: staff
+  ace: true
+  limited: false
+  star: 5
+
+  stats:
+    hp: 12285
+    atk: 1537
+    int: 2718
+    def: 1353
+    hit: 1057
+    grd: 840
+
+  talents:
+    - name: "Pumpkin Costume"
+      effects: 
+        - desc: Recovers 5% of max HP every 3 seconds
+          all: true
+        - desc: Recovers 10% of max HP every 3 seconds
+          all: Short Ranged Weapons
+    - name: "I'll Trick You"
+      effects: 
+        - desc: INT +30%
+          all: true
+    - name: "Friend of Ghosts"
+      effects: 
+        - desc: Nullifies rush gauge/HP reduction fields
+          all: true
+        - desc: AP recovery +50% when HP is 100%
+          all: true
+        - desc: Stun rate: +15%
+          all: true
+    - name: "To my Beloved Older Sister"
+      effects: 
+        - desc: Symbology cast time -50%
+        - desc: No flinching when casting symbology
+
+  skills:
+    - name: "Shiny Lancer"
+      picture: Radiant_Lancer
+      element: Light
+      power: INT x 530%
+      ap: 18
+      maxHits: 8
+    - name: "Burst Flame"
+      picture: Volcanic_Burst
+      element: Fire
+      power: INT x 1000%
+      ap: 32
+      maxHits: 13
+    - name: "Growth"
+      picture: Enhance_Growth
+      power: 0%
+      ap: 60
+      maxHits: 1
+      notes: ATK +30% (Party/20s)
+      meta:
+        priority: 2
+        buff: ATK
+        buffValue: 30
+    - name: "Twinkle Bomb"
+      picture: Twinkle_Bomb
+      element: Light
+      power: INT x 1450%
+      ap: 28
+      maxHits: 7
+      
+  rush:
+    name: "Spooktacular"
+    picture: Spooktacular_Pumpkin_Relia
+    element: Light
+    shortEffects: Damage +70% (Party/20s)
+    effects: 
+      - desc: Damage dealt +70%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Damage
+          buffValue: 70
+    power: ATK x 4500%
+    maxHits: 1
