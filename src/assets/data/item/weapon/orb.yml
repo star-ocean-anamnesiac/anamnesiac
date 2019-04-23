@@ -6,18 +6,18 @@
   atk: 959
   int: 965
   factors:
-    - desc: Lightning damage +30%
+    - desc: Lightning damage dealt +30%
       meta:
         priority: 4
         buff: Lightning Damage
         buffValue: 30
-    - desc: Dark damage +30%
+    - desc: Dark damage dealt +30%
       meta:
         priority: 4
         buff: Dark Damage
         buffValue: 30
-    - desc: 80% chance to survive a lethal attack when HP is greater than 10%
-    - desc: Damage taken -30% at less than 50% HP
+    - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
+    - desc: Damage taken -30% when under 50% HP
       lb: 5
       meta:
         priority: 3
@@ -29,7 +29,8 @@
   notes: >
     An incredible weapon. Good for both Summer Sophia and Fiore due to it's dual element boost. It has very good defensive factors on it
     with grit being strong on a healer like Summer Sophia in particular. Keep it if you pull it.
-    
+
+
 - name: Blue Star Gadget
   cat: 'gl'
   star: 5
@@ -37,76 +38,79 @@
   atk: 507
   int: 510
   factors:
-    - desc: +15% INT
+    - desc: INT +15%
       meta:
         priority: 4
         buff: INT
         buffValue: 15
-    - desc: -10% DMG Taken
+    - desc: Damage taken -10%
       meta:
         priority: 4
         buff: Damage Taken Reduction
         buffValue: 15
     - desc: Recover 10% HP every 3 seconds
       lb: 5
-  obtained: Gacha / Orb Coin Exchange
+  obtained: Coin Exchange, Gacha
   
   notes: >
     If you haven't got an orb yet this is probably the one from the shop to go for. It's similar to winged scepter for staff users 
     except more universal since it trades buffing a skill for damage reduction, which is generally nice. The INT scaling helps make
     up for a lack of stats and getting it to MLB will give a pretty strong regen effect.
-    
+ 
+ 
 - name: Craggy Gem
   cat: 'gl'
   star: 5
   picture: Rumbling_Gem
-  atk: 507
-  int: 510
+  atk: 648
+  int: 651
   factors:
-    - desc: +15% DMG to Multiple Targets
+    - desc: Multiple target damage +15%
       meta:
         priority: 4
         buff: Multiple Target Damage
         buffValue: 15
-    - desc: +30% AP Recovery by Normal Attacks
+    - desc: Normal attack AP recovery +30%
       meta:
         priority: 4
         buff: AP Recovery From Normal Attacks
         buffValue: 15
-    - desc: +10% DMG
+    - desc: Damage dealt +10%
       lb: 5
       meta:
         priority: 4
         buff: Damage
         buffValue: 10
-  obtained: Gacha / Orb Coin Exchange
+  obtained: Coin Exchange, Gacha
   
   notes: >
     Not a bad weapon, however the Blue Star Gadget is better, especially since there are now quite a few characters who give better 
     versions of the second and third factor in the meta, making them redundant.
     
-- name: Oceans Eye
+    
+- name: Ocean's Eye
   cat: 'gl'
   star: 5
   picture: Beach_Sphere
-  atk: 507
-  int: 510
+  atk: 529
+  int: 532
   factors:
-    - desc: +20% DMG on Lightning Blast
-    - desc: +10% DMG to Single Target
+    - desc: Damage dealt +20% by Lightning Blast
+    - desc: Single target damage +10%
       meta:
         priority: 4
         buff: Single Target Damage
         buffValue: 10
-    - desc: 60% Chance to Survive a Lethal Attack at 20% HP or more
+    - desc: 60% chance of surviving a lethal attack when at 20% of max HP or more
       lb: 5
-  obtained: Millioneyes Exchange
+  obtained: Millioneyes (Exchange)
   
   notes: >
     The event weapon for Summer Sophia. It's pretty good for her with some reasonable factors, buffing her main damage skill, a decent
     grit chance and a small damage buff. However there are better orbs for her so it's probably worth foddering this when you obtain
     a superior weapon.
-    
+ 
+ 
 - name: Evil Pumpkin
   cat: 'gl'
   star: 5
@@ -114,29 +118,29 @@
   atk: 956
   int: 963
   factors:
-    - desc: +20% Element DMG
+    - desc: Elemental damage dealt +20%
       meta:
         priority: 4
         buff: Elemental Damage
         buffValue: 20
-    - desc: +30% DMG to Plants
+    - desc: Damage dealt to plants +30%
       slayer: Plant
       slayerPct: 30
       meta:
         priority: 4
         buff: Damage To Plants
         buffValue: 30
-    - desc: +10% Crit Rate
+    - desc: Critical hit chance +10%
       meta:
         priority: 4
         buff: Crit Rate
         buffValue: 10
-    - desc: +10% Crit DMG
+    - desc: Critical damage dealt +10%
       meta:
         priority: 4
         buff: Crit Damage
         buffValue: 10
-    - desc: 5% HP Recovery every 3 seconds
+    - desc: Recovers 5% of max HP every 3 seconds
       lb: 3
   obtained: Gacha
   
@@ -144,7 +148,8 @@
     The factors may look good but don't let them fool you. There will be better orbs for certain characters that focus on their element.
     Against plant bosses however it is very good, and getting its 3rd factor at lb3 is a nice plus for it. Worth holding on to but
     you can do better orb wise.
-    
+
+
 - name: Langdauq Orb
   cat: 'gl'
   star: 5
@@ -152,54 +157,55 @@
   atk: 528
   int: 533
   factors:
-    - desc: +20% DMG on Extinction
-    - desc: +10% Crit Rate
+    - desc: Damage dealt +20% by Extinction
+    - desc: Critical hit chance +10%
       meta:
         priority: 4
         buff: Crit Rate
         buffValue: 10
-    - desc: +50% AP RCV by Normal Attacks
+    - desc: Normal attack AP recovery +50%
       lb: 5
       meta:
         priority: 4
         buff: AP Recovery From Normal Attacks
         buffValue: 50
-  obtained: Alma Achievement
+  obtained: Transmogrified Alma (Exchange)
   
   notes: >
     Event weapon for Fiore. Not the worst factors in the world, but you should only really use this if you don't have another orb 
     available to you.
     
-- name: Black Globe Gear
+    
+- name: Black Geared Globe
   cat: 'gl'
   star: 5
   picture: Black_Globe_Sphere
   atk: 960
   int: 962
   factors:
-    - desc: +40% Dark DMG Dealt
+    - desc: Dark damage dealt +40%
       meta:
         priority: 4
         buff: Dark Damage
         buffValue: 40
-    - desc: +10% DMG to Divinity
+    - desc: Damage dealt to divinities +10% 
       slayer: Divinity
       slayerPct: 10
       meta:
         priority: 4
         buff: Damage To Divinities
         buffValue: 10
-    - desc: +10% Crit Rate
+    - desc: Critical hit chance +10%
       meta:
         priority: 4
         buff: Crit Rate
         buffValue: 10
-    - desc: +10% Crit DMG
+    - desc: Critical damage dealt +10%
       meta:
         priority: 4
         buff: Crit Rate
         buffValue: 10
-    - desc: 80% Chance to Survive a Lethal Attack when HP is 20% or more
+    - desc: 80% chance of surviving a lethal attack when at 20% of max HP or more
       lb: 5
   obtained: Gacha
   
@@ -208,35 +214,36 @@
     slighty amount of racial hate. The third factor is a nice one if you have some kind of healing in your party. Great weapon if you
     have Fiore so do keep it.
     
-- name: Raven's Orb
+    
+- name: Raven Orb
   cat: 'gl'
   star: 5
   picture: Raven's_Orb
   atk: 958
   int: 961
   factors:
-    - desc: Ice damage +40%
+    - desc: Ice damage dealt +40%
       meta:
         priority: 4
         buff: Ice Damage
         buffValue: 40
-    - desc: Dark damage +20%
+    - desc: Dark damage dealt +20%
       meta:
         priority: 4
         buff: Dark Damage
         buffValue: 20
-    - desc: +10% Crit Rate
+    - desc: Critical hit chance +10%
       meta:
         priority: 4
         buff: Crit Rate
         buffValue: 10
-    - desc: +15% Crit DMG
+    - desc: Critical damage dealt +15%
       meta:
         priority: 4
         buff: Crit Rate
         buffValue: 15
-    - desc: +10% Stun Rate
-      lb: 5
+    - desc: Stun rate +10%
+      lb: 3
       meta:
         priority: 1
         buff: Stun Rate
@@ -248,22 +255,23 @@
     eventually giving a stun rate buff. It's also passable on Fiore due to it boosting her main element of Dark slightly and also
     her off element of ice quite a bit.
     
+    
 - name: Cosmic Glass
   cat: 'gl'
   star: 5
   picture: Cosmic_Glass
-  atk: 528
-  int: 533
+  atk: 508
+  int: 513
   factors:
-    - desc: +15% DMG on Seventh Star
+    - desc: Damage dealt +15% by Seventh Star
     - desc: Repel +1
-    - desc: +30% AP RCV by Normal Attacks
+    - desc: Normal attack AP recovery +30%
       lb: 5
       meta:
         priority: 4
         buff: AP Recovery From Normal Attacks
         buffValue: 30
-  obtained: Monarch Zinae Exchange
+  obtained: Monarch Zinae (Exchange)
   
   notes: >
     Event weapon for Mavelle. It's pretty bad, slight increase to rush damage, repel to keep aggro off you and a weak AP recovery
