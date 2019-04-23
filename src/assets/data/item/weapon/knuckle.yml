@@ -606,3 +606,29 @@
     - desc: Damage dealt +20% by Hammer of Might
   obtained: Transmuation, Gacha  
   
+- name: Bloodfeast Knuckles
+  cat: 'gl'
+  star: 5
+  picture: Evil_Fists
+  atk: 959
+  int: 959
+  factors:
+    - desc: Damage dealt to divinities +40%
+      slayer: Divinity
+      slayerPct: 40
+      meta:
+        priority: 3
+        buff: Damage To Divinities
+        buffValue: 40
+    - desc: Critical damage dealt +30%
+      meta:
+        priority: 3
+        buff: Crit Damage
+        buffValue: 30
+    - desc: Damage taken -15%
+      meta:
+        priority: 3
+        buff: Damage Taken Reduction
+        buffValue: 15
+      lb: 5
+  obtained: Gacha
