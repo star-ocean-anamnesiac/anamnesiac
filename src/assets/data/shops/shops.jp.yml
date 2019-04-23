@@ -1,0 +1,41 @@
+
+- name: Blood Valkyrie
+  cat: jp
+  currency: Valkyrie Coin
+  aliases:
+    - blood
+    - valkyrie
+
+  items:
+    - name: Slayer of Divine Beings
+      stock: 2
+      cost: 2000
+      type: ohs
+    - name: Slayer of Divine Beings
+      stock: 2
+      cost: 4000
+      type: ohs
+    - name: Shiny Rupture
+      stock: 2
+      cost: 2000
+      type: bow
+    - name: Shiny Rupture
+      stock: 2
+      cost: 4000
+      type: bow
+    - name: 4-5* Char. Ticket
+      stock: 3
+      cost: 4000
+      type: draw-ticket-character
+    - name: 5* Weapon Ticket
+      stock: 1
+      cost: 3000
+      type: draw-ticket-weapon
+    - name: Rainbow Crystal
+      stock: 3
+      cost: 2500
+      type: improvement-crystal
+    - name: Barrier Blaster
+      stock: 3
+      cost: 2500
+      type: misc-barrierblaster

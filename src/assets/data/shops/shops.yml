@@ -1,5 +1,6 @@
 
 - name: Blood Valkyrie
+  cat: gl
   currency: Valkyrie Coin
   aliases:
     - blood
