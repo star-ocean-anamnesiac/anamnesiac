@@ -6488,44 +6488,59 @@
   talents:
     - name: "Ami d'enfance"
       effects: 
-        - desc: 
+        - desc: ATK +40%
+          all: true
+        - desc: ATK +65 when not targeting enemy's backside
+          all: true
     - name: "Ooneesan Idol"
       effects: 
-        - desc: 
+        - desc: Normal attack AP recovery +150%
+        - desc: Normal attack AP recovery +100%
+          all: true
+        - desc: Evasion AP cost -50%
+          all: true
     - name: "Blue Oath"
       effects: 
-        - desc: 
+        - desc: Damage taken -30% when attacking
+        - desc: Evasion possible during air attacks
+        - desc: Critical hit chance +50% when skill chain is >3
+        - desc: Critical hit chance +100% when skill chain is >5
     - name: "Courage to Step Forward"
       effects: 
-        - desc: 
+        - desc: AP +20
             
   skills:
     - name: "Mistral Slash"
-      picture: 
+      picture: Sinistral_Edge
       power: ATK x 160%
       ap: 16
       maxHits: 2
     - name: "Dextral Zapper"
-      picture: 
+      picture: Dextral_Slaughter
       power: ATK x 220%
       ap: 18
       maxHits: 2
     - name: "Stinger Edge"
-      picture: 
+      picture: Piercing_Blades
       power: ATK x 190%
       ap: 17
       maxHits: 6
     - name: "Starry Rain"
-      picture: 
+      picture: Starry_Rain
       power: ATK x 610%
       ap: 35
       maxHits: 3
 
   rush:
     name: "Blue Star Serenade"
-    picture: 
-    shortEffects: 
+    picture: Blue_Star_Serenade_Idol_Reimi
+    shortEffects: AP cost -80% (Self/8s)
     effects: 
-      - desc: 
+      - desc: AP cost -80%
+        duration: 8
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 80
     power: ATK x 4500%
     maxHits: 5
