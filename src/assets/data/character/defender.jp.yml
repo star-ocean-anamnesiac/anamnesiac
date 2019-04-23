@@ -2406,5 +2406,65 @@
           buffValue: 40
     power: ATK x 4500%
     maxHits: 18
-    
 
+- name: 
+  cat: jp
+  rating: 0
+  picture: 
+  weapon: axe
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 
+    atk: 
+    int: 
+    def: 
+    hit: 
+    grd: 
+
+  talents:
+    - name: ""
+      effects: 
+        - desc: 
+    - name: ""
+      effects: 
+        - desc: 
+    - name: ""
+      effects: 
+        - desc: 
+    - name: ""
+      effects: 
+        - desc: 
+
+  skills:
+    - name: ""
+      picture: 
+      power: ATK x 0%
+      ap: 
+      maxHits: 
+    - name: ""
+      picture: 
+      power: ATK x 0%
+      ap: 
+      maxHits: 
+    - name: ""
+      picture: 
+      power: ATK x 0%
+      ap: 
+      maxHits: 
+    - name: ""
+      picture: 
+      power: ATK x 0%
+      ap: 
+      maxHits: 
+      
+  rush:
+    name: ""
+    picture: 
+    shortEffects: 
+    effects: 
+      - desc: 
+    power: ATK x 4500%
+    maxHits: 1
