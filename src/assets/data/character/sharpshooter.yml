@@ -3073,7 +3073,7 @@
     grd: 931
 
   talents:
-    - name: "Valkyrie Pride"
+    - name: "Battle-Maiden's Dignity II"
       effects:
         - desc: Damage dealt +20%
           all: true
@@ -3087,7 +3087,7 @@
             priority: 1
             buff: AP Recovery
             buffValue: 30
-    - name: "Arrow of Genesis"
+    - name: "Genesis Arrow"
       effects: 
         - desc: ATK +10% after using Starlight Fang (6s)
           meta:
@@ -3095,7 +3095,7 @@
             buff: ATK
             buffCondition: With Use of Skill
             buffValue: 10
-    - name: "Loki's Soul"
+    - name: "Soul of Loki II"
       effects:
         - desc: AP cost -30% when skill chain is >3
           meta:
@@ -3103,7 +3103,7 @@
             buff: AP Cost Reduction
             buffCondition: Skill Chain 3+
             buffValue: 30
-    - name: "Pure White Feather Decoration"
+    - name: "Pure White Plumage"
       shortEffects: Damage taken +30% when hit by Killing Thorn (Enemies/8s)
       effects: 
         - desc: Damage taken +30% when hit by Killing Thorn (8s)
@@ -3115,12 +3115,12 @@
             buffValue: 30      
             
   skills:
-    - name: "Ardent Volcano Shot"
+    - name: "Cinder Cone Collision"
       picture: Heavenly_Flight
       power: ATK x 510%
       ap: 33
       maxHits: 8
-    - name: "Aiming Wing"
+    - name: "Homing Falcons"
       picture: Savage_Sparrows
       power: ATK x 150%
       ap: 15
@@ -3137,7 +3137,7 @@
       maxHits: 10
 
   rush:
-    name: "Blue Sky Nibelung Valesti"
+    name: "Skyrend Nibelung Valesti"
     picture: Nibelung_Valesti_Lenneth
     effects:
       - desc: Elemental damage dealt +50%
@@ -3170,7 +3170,7 @@
 
   talents:
     - name: "Divine Arrow Burst"
-      shortEffects: Damage dealt +30%, and +35%/+40%/+45% when hitcount is >100/>150/>200 (All Party)
+      shortEffects: Damage dealt +30%, and damage dealt +35%/+40%/+45% when hitcount is >100/>150/>200 (All Party)
       effects: 
         - desc: Damage dealt +30%
           all: true
@@ -3215,7 +3215,7 @@
       effects: 
         - desc: Recovers 5% of max HP every 5 seconds
           all: true
-    - name: "A Goddess Close to Mortals"
+    - name: "Goddess of Philanthropy"
       shortEffects: AP cost -10%/-20%/-30% when hitcount is >50/>100/>150
       effects:
         - desc: AP cost -10% when hitcount is >50
@@ -3236,7 +3236,7 @@
             buff: AP Cost Reduction
             buffCondition: Hit Count > 150
             buffValue: 30
-    - name: "Object Leading"
+    - name: "Object Reading"
       shortEffects: ATK +15% and HP +15%
       effects: 
         - desc: ATK +15%
