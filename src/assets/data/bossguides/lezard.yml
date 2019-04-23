@@ -1,0 +1,47 @@
+
+- name: "Lezard Valeth"
+  eventName: "Valkyrie Profile - The Purged Wizard Chapter 1"
+  image: lezard_valeth
+  cat: gl
+  race: Human
+  
+  isActive: true
+
+  enrage:
+    m1: "7:00"
+    m2: "7:00"
+    m3: "4:00"
+    	    
+  statusInflictions:
+    - Paralysis
+
+  weaknesses:
+    - element: Light
+      percentWeakness: 1
+      
+    - status: Curse
+      vuln: Low
+
+    - status: Silence
+      vuln: Low
+
+    - status: Poison
+      vuln: Low
+      
+    - status: Paralysis
+      vuln: Low
+
+  recommendations:
+    - plain: Light Damage
+
+  desc: >
+    Attack pattern intensifies as its HP decreases. Silence is effective. Curse, poison and paralysis are moderately effective. Be wary of Lightning Bolt that causes paralysis. A very powerful Blood Valkyrie will also appear in conjunction with Lezard. It is recommended to defeat Lezard first. From M2 onwards, Lezard may forcibly cause the Blood Valkyrie to gain Boosted Mode during the battle. At the start of the battle, will weaken the party's Fire element resistance by -80%.
+  
+  moves:
+    - name: Lightning Bolt
+      targets: Any
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Causes paralysis.
