@@ -2406,5 +2406,80 @@
           buffValue: 40
     power: ATK x 4500%
     maxHits: 18
-    
 
+- name: Verda Kleiman (Idol)
+  cat: jp
+  rating: 0
+  picture: Singing_Star_Verda
+  weapon: axe
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 30083
+    atk: 3010
+    int: 1575
+    def: 2508
+    hit: 840
+    grd: 1050
+
+  talents:
+    - name: "Innumberable Knowledge Star Blink"
+      effects: 
+        - desc: HP +50%
+        - desc: HP + 20%
+          all: true
+        - desc: No flinching when taking damage of 20% of max HP or less
+          all: true
+        - desc: DEF +30% when not targeting enemy's backside
+          all: true
+    - name: "Shorty Idol"
+      effects: 
+        - desc: ATK +20%
+        - desc: Damage taken +40% when Idol Verda is above 50% of max HP
+          all: Enemies
+    - name: "Throbbing Green"
+      effects: 
+        - desc: Recovers 10% of max HP every 3 seconds after guarding enemy attack (20s)
+        - desc: Can guard in all directions during charge assault standby
+        - desc: Cancel bonus starts at 150% when using charge assault
+    - name: "Wishing to be Among the Stars"
+      effects: 
+        - desc: Nullifies charge assault critical damage penalty
+        - desc: No flinching when attacking
+        - desc: Damage taken -40%
+        - desc: Evasion possible during air attacks
+
+  skills:
+    - name: "Ground Raider"
+      picture: Hammer_Cracker
+      power: ATK x 260%
+      ap: 17
+      maxHits: 6
+    - name: "Tyrant Combo"
+      picture: Tyrant_Combo
+      power: ATK x 140%
+      ap: 12
+      maxHits: 6
+    - name: "Scrapper Gyro"
+      picture: Scrapper_Gyro
+      power: ATK x 800%
+      ap: 32
+      maxHits: 10
+    - name: "Envelop Cannon"
+      picture: Envelop_Canon
+      power: ATK x 340%
+      ap: 23
+      maxHits: 2
+      
+  rush:
+    name: "Star Blink Maximizer"
+    picture: Star_Blink_Maximizer_Idol_Verda
+    shortEffects: ATK/INT damage taken +40% (Enemies/20s)
+    effects: 
+      - desc: ATK/INT damage taken +40%
+        duration: 20
+        all: Enemies
+    power: ATK x 4500%
+    maxHits: 1

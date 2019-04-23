@@ -3724,3 +3724,76 @@
         duration: 20
     power: ATK x 4500%
     maxHits: 10
+
+- name: Miki Sauvester (Idol)
+  cat: jp
+  rating: 0
+  picture: Singing_Star_Miki
+  weapon: dagger
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 14175
+    atk: 2482
+    int: 1563
+    def: 1747
+    hit: 1253
+    grd: 924
+
+  talents:
+    - name: "Sweet Tips"
+      effects: 
+        - desc: Damage dealt +30%
+          all: true
+        - desc: Damage dealt +70% when not targeting enemy's backside
+          all: true
+    - name: "Spunky Idol"
+      effects: 
+        - desc: AP recovery +100%
+        - desc: AP recovery +50%
+          all: true
+        - desc: Movement rate +50%
+          all: true
+    - name: "Passionate Red"
+      effects: 
+        - desc: 85% chance of surviving a lethal attack when at 20% of max HP or more
+          all: true
+    - name: "Melody Filled Thoughts"
+      effects: 
+        - desc: Evasion distance & rate +100%
+        - desc: Evasion possible during air attacks
+
+  skills:
+    - name: "Blade à la carte"
+      picture: Dancing_Sword
+      power: ATK x 980%
+      ap: 30
+      maxHits: 7
+    - name: "Honey Spread"
+      picture: Hydroblades
+      power: ATK x 270%
+      ap: 16
+      maxHits: 2
+    - name: "Creamy Dart"
+      picture: Lightning_Chain
+      power: ATK x 340%
+      ap: 22
+      maxHits: 9
+    - name: "Aerial à la mode"
+      picture: Aerial_à_la_Mode
+      power: ATK x 770%
+      ap: 24
+      maxHits: 2
+      
+  rush:
+    name: "Sweetheart Symphony"
+    picture: Sweetheart_Symphony_Idol_Miki
+    shortEffects: Recovers 15% of max HP every 3 seconds (Party/20s)
+    effects: 
+      - desc: Recovers 15% of max HP every 3 seconds
+        all: true
+        duration: 20
+    power: ATK x 4500%
+    maxHits: 4

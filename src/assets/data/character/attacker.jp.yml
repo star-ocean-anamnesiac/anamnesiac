@@ -6466,3 +6466,81 @@
       - desc: Elemental damage dealt +50%
     power: ATK x 5500%
     maxHits: 1
+
+- name: Reimi Saionji (Idol)
+  cat: jp
+  rating: 0
+  picture: Singing_Star_Reimi
+  weapon: dualswords
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 2835
+    int: 1549
+    def: 1852
+    hit: 1127
+    grd: 840
+    ap: 120
+
+  talents:
+    - name: "Ami d'enfance"
+      effects: 
+        - desc: ATK +40%
+          all: true
+        - desc: ATK +65 when not targeting enemy's backside
+          all: true
+    - name: "Ooneesan Idol"
+      effects: 
+        - desc: Normal attack AP recovery +150%
+        - desc: Normal attack AP recovery +100%
+          all: true
+        - desc: Evasion AP cost -50%
+          all: true
+    - name: "Blue Oath"
+      effects: 
+        - desc: Damage taken -30% when attacking
+        - desc: Evasion possible during air attacks
+        - desc: Critical hit chance +50% when skill chain is >3
+        - desc: Critical hit chance +100% when skill chain is >5
+    - name: "Courage to Step Forward"
+      effects: 
+        - desc: AP +20
+            
+  skills:
+    - name: "Mistral Slash"
+      picture: Sinistral_Edge
+      power: ATK x 160%
+      ap: 16
+      maxHits: 2
+    - name: "Dextral Zapper"
+      picture: Dextral_Slaughter
+      power: ATK x 220%
+      ap: 18
+      maxHits: 2
+    - name: "Stinger Edge"
+      picture: Piercing_Blades
+      power: ATK x 190%
+      ap: 17
+      maxHits: 6
+    - name: "Starry Rain"
+      picture: Starry_Rain
+      power: ATK x 610%
+      ap: 35
+      maxHits: 3
+
+  rush:
+    name: "Blue Star Serenade"
+    picture: Blue_Star_Serenade_Idol_Reimi
+    shortEffects: AP cost -80% (Self/8s)
+    effects: 
+      - desc: AP cost -80%
+        duration: 8
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 80
+    power: ATK x 4500%
+    maxHits: 5
