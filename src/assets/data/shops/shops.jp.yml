@@ -1,7 +1,7 @@
 
 - name: Blood Valkyrie
   cat: jp
-  currency: Valkyrie Coin
+  currency: Valkyrie Coins
   aliases:
     - blood
     - valkyrie
