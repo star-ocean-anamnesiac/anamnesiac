@@ -4,60 +4,66 @@
   star: 5
   picture: SRF_Bow_Remodelled
   atk: 477
+  int: 0
   factors:
-    - desc: Imbues attacks with wind element
+    - desc: Imbues attacks with wind
       element: Wind
-    - desc: Rapacious Sparrows damage +20%
-    - desc: Additional hit that deals 5% of damage dealt on normal attacks
+    - desc: Damage dealt +20% by Rapacious Sparrows
+    - desc: Additional hit that deals 5% of damage dealt by normal attacks
       lb: 5
-  obtained: Jie Revorse Exchange
+  obtained: Jie Revorse (Exchange)
   
   notes: >
     A wind bow intended for Reimi. If you don't have the windburst bow this is very much worth having as an elemental bow. Extra plus
     plus points on a good Reimi player.
   
-- name: Aritfact Bow
+  
+- name: Artifact Bow
   cat: 'gl'
   star: 5
   picture: Artifact_Bow
-  atk: 477
+  atk: 545
+  int: 0
   factors:
-    - desc: +15% ATK
+    - desc: ATK +15%
       meta:
         priority: 4
         buff: ATK
         buffValue: 15
-    - desc: +10% Fire DMG Dealt
+    - desc: Fire damage dealt +10%
       meta:
         priority: 4
         buff: Fire Damage
         buffValue: 10
-    - desc: Hit Count Timer + 2 s
+    - desc: Hitcount timer +2 seconds
       lb: 3
   obtained: Gacha
   
   notes: >
     An odd bow, seems like it's meant for Ronyx but it doesn't increase INT at all. However if you have no other bows it's not bad, strong
     final factor and it has a good attack boost on it to make up for the lack of stats.
-    
+
+
 - name: God's Bow
   cat: 'gl'
   star: 5
   picture: Godbow_Nuaza
   atk: 835
+  int: 0
   factors:
-    - desc: +15% Ice DMG Dealt
+    - desc: Ice damage dealt +15%
       meta:
         priority: 4
         buff: Ice Damage
         buffValue: 15
-    - desc: +20% DMG on Heavenly Flight
-  obtained: Gacha/Transmute/Coin Exchange
+    - desc: Damage dealt +20% by Heavenly Flight
+  obtained: Transmutation, Coin Exchange, Gacha
   
   notes: >
     It's okay as an offensive stat stick, it's the only bow in both the shop and transmute pool so it's very easy to get one to mlb,
     not that you actually want to get it to MLB.
-    
+
+
 - name: Crowned Bow
   cat: 'gl'
   star: 5
@@ -65,21 +71,22 @@
   atk: 532
   int: 528
   factors:
-    - desc: +20% DMG on Howling Wind
-    - desc: Recover 3% HP every 5 seconds
-    - desc: +20% Crit DMG (When attacking from behind.)
+    - desc: Damage dealt +20% by Howling Wind
+    - desc: Recovers 3% of max HP every 5 seconds
+    - desc: Critical damage dealt +20% when behind target
       lb: 5
       meta:
         priority: 3
         buff: Crit Damage
         buffValue: 20
-        buffCondition: Attacking From Behind
-  obtained: Everlasting Summer Siren Exchange
+        buffCondition: Behind Target
+  obtained: Everlasting Summer Siren / Predate Queen (Exchange)
   
   notes: >
     An okay bow. It's better with SMiki but it's not fantastic and there are better bows. You can use it for transmute or fodder but
     it's not as if you can transmute it into a better bow.
-    
+  
+  
 - name: Arc-En-Ciel
   cat: 'gl'
   star: 5
@@ -87,10 +94,10 @@
   atk: 964
   int: 963
   factors:
-    - desc: Imbue Lightning Element
+    - desc: Imbues attacks with lightning
       element: Lightning
-    - desc: Hit Count Timer + 1s
-    - desc: +20% ATK (When attacking from behind.)
+    - desc: Hitcount Timer +1 second
+    - desc: ATK +20% when behind target
       lb: 5
       meta:
         priority: 3
@@ -102,7 +109,8 @@
   notes: >
     A good weapon by the sheer fact it's an element bow. The third factor is inconsistent, but characters with hit count talents will
     appreciate the second factor. One of the best bows you can currently get.
-    
+
+
 - name: Grand Flared Bow
   cat: 'gl'
   star: 5
@@ -110,22 +118,23 @@
   atk: 859
   int: 862
   factors:
-    - desc: +30% DMG on Explode
-    - desc: +25% Fire DMG Dealt
+    - desc: Damage dealt +30% by Explode
+    - desc: Fire damage dealt +25%
       meta:
         priority: 4
         buff: Fire Damage
         buffValue: 25
-    - desc: +30% AP Recovery
+    - desc: AP recovery +30%
       lb: 5
       meta:
         priority: 4
         buff: AP Recovery
         buffValue: 30
-  obtained: Millioneyes Gacha Box
+  obtained: Millioneyes (Draw Box)
   
   notes: >
     Ronyx gets a real bow, this is his BiS weapon so if you have it just stick it on your Ronyx and let him rot along with it.
+    
     
 - name: Shiny Rupture 
   cat: 'gl'
@@ -134,9 +143,9 @@
   atk: 476
   int: 475
   factors:
-    - desc: +20% DMG on Wave Motion
+    - desc: Damage dealt +20% by Wave Motion
       lb: 3
-    - desc: +10% DMG to Divinities
+    - desc: Damage dealt to divinities +10%
       slayer: Divinity
       slayerPct: 10
       lb: 4
@@ -144,12 +153,13 @@
         priority: 4
         buff: Damage To Divinities
         buffValue: 10
-    - desc: Additional Hit that Deals 5% of DMG Dealt by Normal Attacks
+    - desc: Additional hit that deals 5% of damage dealt by normal attacks
       lb: 5
   obtained: Blood Valkyrie (Exchange)
   
   notes: >
     This bow is very bad. Just use it as transmute fodder.
+    
     
 - name: Shiny Rupture II
   cat: 'gl'
@@ -158,22 +168,23 @@
   atk: 857
   int: 856
   factors:
-    - desc: +20% DMG to Divinities
+    - desc: Damage dealt to divinities +20%
       slayer: Divinity
       slayerPct: 20
       meta:
         priority: 4
         buff: Damage To Divinities
         buffValue: 20
-    - desc: +25% DMG on Wave Motion
+    - desc: Damage dealt +25% by Wave Motion
       lb: 1
-    - desc: Additional Hit that Deals 5% of DMG Dealt by Normal Attacks
+    - desc: Additional hit that deals 5% of damage dealt by normal attacks
       lb: 5
   obtained: Blood Valkyrie (Exchange)
   
   notes: >
     This bow is worse than the other one because you might actually pull it from Gacha. It's fodder so try to enjoy the coin it helps
     you make.
+    
     
 - name: Windburst Bow
   cat: 'gl'
@@ -182,10 +193,10 @@
   atk: 962
   int: 961
   factors:
-    - desc: Imbues attacks with wind element
+    - desc: Imbues attacks with wind
       element: Wind
-    - desc: Recover 3% HP every 5 seconds
-    - desc: +15% Stun
+    - desc: Recovers 3% of max HP every 5 seconds
+    - desc: Stun rate +15%
       lb: 5
       meta:
         priority: 4
@@ -197,6 +208,7 @@
     A wind bow that retires the one you got from Jie. The recovery is a nice factor that to have, and it actually has a pretty good
     mlb factor to reward the player for getting to that point.
     
+    
 - name: Heaven's Bow
   cat: 'gl'
   star: 5
@@ -204,24 +216,26 @@
   atk: 958
   int: 963
   factors:
-    - desc: Imbue Light Element/+20% Light DMG Dealt
+    - desc: Imbues attacks with light Light Element/+20% Light DMG Dealt
       element: Light
+    - desc: Light damage dealt +20%   
       meta:
         priority: 4
         buff: Light Damage
         buffValue: 20
-    - desc: -10% AP Cost
+    - desc: AP cost -10%
       meta:
         priority: 4
         buff: AP Cost Reduction
         buffValue: 10
-    - desc: 80% Chance to Survive a Lethal Attack at 20% HP or more
+    - desc: 80% chance of surviving a lethal attack when at 20% of max HP or more
       lb: 5
   obtained: Gacha
   
   notes: >
     A light imbue bow that offers some solid factors, it boosts light damage dealt and the AP cost reduction is sizeable enough that
     it can be pretty relevant to allow certain damage rotations. A great pick-up if you get it.
+    
     
 - name: Reincarnation
   cat: 'gl'
@@ -230,20 +244,21 @@
   atk: 857
   int: 863
   factors:
-    - desc: +15% DMG on Heaven's Judgement
-    - desc: Recover 3% HP every 5 seconds at long range
-    - desc: +30% AP Recovery at long range
+    - desc: Damage dealt +15% by Heaven's Judgement
+    - desc: Recovers 3% of max HP every 5 seconds at long range
+    - desc: AP recovery +30% at long range
       meta:
         priority: 3
         buff: AP Recovery
         buffValue: 30
         buffCondition: Long Range
       lb: 5
-  obtained: FFBE Gacha Box
+  obtained: FFBE (Draw Box)
   
   notes: >
     Not a great bow, stats are decent by GL standards but it's effects are weak, even for Fina who it's intended for. Probably better
     off at fodder unless you've nothing better.
+    
     
 - name: Flarecast Bow 
   cat: 'gl'
@@ -252,25 +267,25 @@
   atk: 527
   int: 533
   factors:
-    - desc: +20% DMG on Volcanic Burst
-    - desc: +5% INT
+    - desc: Damage dealt +20% by Volcanic Burst
+    - desc: INT +5%
       meta:
         priority: 4
         buff: INT
         buffValue: 5
-    - desc: +20% Fire DMG Dealt
+    - desc: Fire damage dealt +20%
       lb: 5
       meta:
         priority: 4
         buff: Fire Damage
         buffValue: 20
-    - desc: +15% Ice DMG Dealt
+    - desc: Ice damage dealt +15%
       lb: 5
       meta:
         priority: 4
         buff: Ice Damage
         buffValue: 15
-  obtained: Uniform Claude Exchange
+  obtained: Uniform Claude (Exchange)
   
   notes: >
     It's a bow for freebie Claude. Very good for him, can be good on Ronyx too. Not great for anyone else but maybe at a stretch Fina
@@ -291,8 +306,8 @@
         priority: 4
         buff: Damage To Beasts
         buffValue: 40
-    - desc: No flinching when taking damage of 10% HP or less
-    - desc: ATK damage dealt +20% at 100 hits or more
+    - desc: No flinching when taking damage of 10% of max HP or less
+    - desc: ATK damage dealt +20% when hitcount is >100
       meta:
         priority: 3
         buff: ATK Damage
