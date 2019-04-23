@@ -7,6 +7,7 @@ export interface StatBlock {
   def: number;
   hit: number;
   grd: number;
+  ap?: number;
 }
 
 export interface Talent {
