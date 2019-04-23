@@ -315,3 +315,26 @@
         buffValue: 20
       lb: 3
   obtained: Gacha
+  
+  
+- name: Divine Elven Bow
+  cat: 'gl'
+  star: 5
+  picture: Divinity_Bow_Elven_Bow
+  atk: 965
+  int: 961
+  factors:
+    - desc: Imbues attacks with light
+      element: Light
+    - desc: Light damage dealt +20%
+      meta:
+        priority: 3
+        buff: Light Damage
+        buffValue: 20
+    - desc: ATK damage taken -15%
+      meta:
+        priority: 3
+        buff: ATK Damage Taken Reduction
+        buffValue: 15
+      lb: 5
+  obtained: Gacha  
