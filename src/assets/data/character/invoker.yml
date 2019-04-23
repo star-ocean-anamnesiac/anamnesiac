@@ -2252,10 +2252,10 @@
     grd: 833
 
   talents:
-    - name: "Light of Purification"
+    - name: "Light of Purity"
       effects: 
         - desc: Imbues attacks with light
-    - name: "Frei's Prediction"
+    - name: "Frei's Prophecy II"
       effects: 
         - desc: ATK +20%
           all: true
@@ -2283,7 +2283,7 @@
             buff: ATK
             buffCondition: Long Range
             buffValue: 40 
-    - name: "Cool-headed Glance"
+    - name: "Dispassionate Look"
       effects:
         - desc: AP cost -25% at long range
           meta:
@@ -2292,7 +2292,7 @@
             buffCondition: Long Range
             buffValue: 25
         - desc: Rush combo damage +30% when hitcount is >150       
-    - name: "Goddess of Fertility"
+    - name: "Goddess of Good Crops"
       shortEffects: ATK +10% and INT +10%
       effects:
         - desc: ATK +10%
