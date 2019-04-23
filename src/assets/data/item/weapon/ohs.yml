@@ -651,3 +651,17 @@
     - desc: Recovers 5% HP every 3 seconds when hitcount is >100
       lb: 3
   obtained: Gacha
+
+
+- name: Thunder Sword
+  cat: 'gl'
+  star: 4
+  picture: Thunder_Sword
+  atk: 470
+  int: 0
+  factors:
+    - desc: Imbues attacks with lightning
+      element: Lightning
+    - desc: Damage dealt +20% by Double Slash
+  obtained: Transmutation, Gacha
+  
