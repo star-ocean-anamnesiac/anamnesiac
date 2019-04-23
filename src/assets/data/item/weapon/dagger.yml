@@ -477,3 +477,26 @@
     - desc: Damage dealt +20% by Mirror Blade
   obtained: Transmutation, Gacha
   
+
+- name: Magatsu Divine Blades
+  cat: 'gl'
+  star: 5
+  picture: Sword_of_the_Sealed_God_Magatsu
+  atk: 957
+  int: 957
+  factors:
+    - desc: Damage dealt to divinities +40%
+      slayer: Divinity
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Divinities
+        buffValue: 40
+    - desc: Recovers 3% of max HP every 5 seconds
+    - desc: AP cost -10%
+      meta:
+        priority: 3
+        buff: AP Cost Reduction
+        buffValue: 10
+      lb: 5        
+  obtained: Gacha
