@@ -137,6 +137,146 @@
       *Normal > CA Fire Bolt > Explosion > Fire Bolt (Moving target rotation.)*
 
 
+- name: Sophia Esteed (Awakened)
+  cat: jp
+  rating: 5
+  picture: Sophia
+  weapon: staff
+  ace: true
+  limited: false
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 12285
+    atk: 1563
+    int: 4368
+    def: 1327
+    hit: 1057
+    grd: 833
+
+  talents:
+    - name: "Schoolgirl Drama"
+      effects: 
+        - desc: INT +60%
+          meta:
+            priority: 4
+            buff: INT
+            buffValue: 60
+    - name: "Green-Eyed Monster"
+      effects: 
+        - desc: Critical hit chance +30%
+          all: Invokers
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffRole: invoker
+            buffValue: 30        
+        - desc: Critical hit chance +50% when skill chain is 3>
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: Skill Chain 3+
+            buffValue: 50            
+    - name: "Good Planner"
+      effects: 
+        - desc: AP cost -20%
+          all: Invokers
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffRole: invoker
+            buffValue: 20    
+    - name: "Self-Mastery"
+      effects: 
+        - desc: Symbology cast time -50%
+          meta:
+            priority: 4
+            buff: Cast Time Reduction
+            buffValue: 50
+    - name: "Helpful Childhood Friend"
+      effects: 
+        - desc: Nullifies charge assault critical damage penalty     
+        - desc: Cancel bonus goes up one level every 0.5 seconds during charge assault standby
+    - name: "Life Decision"
+      effects: 
+        - desc: Damage dealt +50% by offensive symbology when skill chain is >3                
+        - desc: Damage taken -30% after using Fire Bolts (20s)
+          duration: 20
+          meta:
+            priority: 4
+            buff: Damage Taken Reduction
+            buffCondition: Fire Bolt
+            buffValue: 30
+        - desc: No flinching when casting symbology after using Fire Bolts (20s)
+          duration: 20
+
+  skills:
+    - name: "Plunging Fire Bolts"
+      picture: Fire_Bolts
+      element: Fire
+      power: INT x 220%
+      ap: 20
+      maxHits: 6
+      highlight: true
+    - name: "Stone Rain"
+      picture: Stone_Rain
+      element: Earth
+      power: INT x 510%
+      ap: 35
+      maxHits: 5
+    - name: "Enhance"
+      picture: Enhance_Growth
+      power: 0%
+      ap: 50
+      maxHits: 1
+      notes: ATK +25% (Party/20s)
+      meta:
+        priority: 2
+        buff: ATK
+        buffValue: 25
+      highlight: true
+    - name: "Violent Explosion"
+      picture: Explosion
+      element: Fire
+      power: INT x 1330%
+      ap: 45
+      maxHits: 14
+      highlight: true
+    - name: "Flame Spear (Growth)"
+      picture: Fire_Lance
+      element: Fire
+      power: INT x 420%
+      ap: 19
+      maxHits: 2
+      notes: ATK +30% (Party/15s)
+      meta:
+        priority: 2
+        buff: ATK
+        buffValue: 30  
+      
+  rush:
+    name: "Meteor Swarm"
+    picture: Meteor_Swarm_Sophia
+    element: Fire
+    shortEffects: INT +70% and AP cost -60% (Self/20s)
+    effects: 
+      - desc: INT +70%
+        duration: 20
+        meta:
+          priority: 4
+          buff: INT
+          buffValue: 70
+      - desc: AP cost -60%
+        duration: 20
+        meta:
+          priority: 4
+          buff: AP Cost Reduction
+          buffValue: 60
+    power: INT x 5000%
+    maxHits: 9
+
+      
 - name: Myuria Tionysus
   cat: jp
   rating: 0
@@ -1910,15 +2050,15 @@
       effects: 
         - desc: No flinching when taking damage of 30% of max HP or less while casting symbology
     - name: "Thought Accepted"
-      shortEffects: INT damage +30%/+50% when skill chain is >2/>3
+      shortEffects: INT damage dealt +30%/+50% when skill chain is >2/>3
       effects: 
-        - desc: INT damage +30% when skill chain is >2
+        - desc: INT damage dealt +30% when skill chain is >2
           meta:
             priority: 3
             buff: INT Damage
             buffCondition: Skill Chain 2+
             buffValue: 30
-        - desc: INT damage +50% when skill chain is >3
+        - desc: INT damage dealt +50% when skill chain is >3
           meta:
             priority: 3
             buff: INT Damage
