@@ -277,7 +277,7 @@
         - desc: Evasion possible during air attacks
     - name: "Heir to the Camuze Style"
       effects:
-        - desc: Single target damage dealt +10% when skill chain is >3
+        - desc: Single target damage +10% when skill chain is >3
           meta:
             priority: 3
             buff: Single Target Damage
@@ -4279,11 +4279,11 @@
             priority: 4
             buff: Silence Attack Chance
             buffValue: 15
-    - name: "Armor Shining in the Azure Heavens"
+    - name: "Shining Skyrend Armor"
       effects: 
-        - desc: Nullifies charge assault critical damage penalty.
+        - desc: Nullifies charge assault critical damage penalty
         - desc: Evasion possible during air attacks
-    - name: "A Dignified and Resounding Voice"
+    - name: "Voice of Majesty"
       effects: 
         - desc: AP cost -50% when skill chain is >3
           meta:
@@ -4291,7 +4291,7 @@
             buff: AP Cost Reduction
             buffCondition: Skill Chain 3+
             buffValue: 50
-    - name: "Beckoning Hands of Slain War Heroes"
+    - name: "Temptation of the Dead"
       shortEffects: ATK +15% and DEF +10%
       effects: 
         - desc: ATK +15%
