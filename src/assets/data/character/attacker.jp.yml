@@ -6466,3 +6466,66 @@
       - desc: Elemental damage dealt +50%
     power: ATK x 5500%
     maxHits: 1
+
+- name: Reimi Saionji (Idol)
+  cat: jp
+  rating: 0
+  picture: Singing_Star_Reimi
+  weapon: dualswords
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 2835
+    int: 1549
+    def: 1852
+    hit: 1127
+    grd: 840
+    ap: 120
+
+  talents:
+    - name: "Ami d'enfance"
+      effects: 
+        - desc: 
+    - name: "Ooneesan Idol"
+      effects: 
+        - desc: 
+    - name: "Blue Oath"
+      effects: 
+        - desc: 
+    - name: "Courage to Step Forward"
+      effects: 
+        - desc: 
+            
+  skills:
+    - name: "Mistral Slash"
+      picture: 
+      power: ATK x 160%
+      ap: 16
+      maxHits: 2
+    - name: "Dextral Zapper"
+      picture: 
+      power: ATK x 220%
+      ap: 18
+      maxHits: 2
+    - name: "Stinger Edge"
+      picture: 
+      power: ATK x 190%
+      ap: 17
+      maxHits: 6
+    - name: "Starry Rain"
+      picture: 
+      power: ATK x 610%
+      ap: 35
+      maxHits: 3
+
+  rush:
+    name: "Blue Star Serenade"
+    picture: 
+    shortEffects: 
+    effects: 
+      - desc: 
+    power: ATK x 4500%
+    maxHits: 5
