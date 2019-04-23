@@ -320,7 +320,7 @@
 - name: Divine Elven Bow
   cat: 'gl'
   star: 5
-  picture: Horn_of_Gold
+  picture: Divinity_Bow_Elven_Bow
   atk: 965
   int: 961
   factors:
