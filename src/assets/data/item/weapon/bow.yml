@@ -216,7 +216,7 @@
   atk: 958
   int: 963
   factors:
-    - desc: Imbues attacks with light Light Element/+20% Light DMG Dealt
+    - desc: Imbues attacks with light
       element: Light
     - desc: Light damage dealt +20%   
       meta:
@@ -338,3 +338,22 @@
         buffValue: 15
       lb: 5
   obtained: Gacha  
+  
+  
+- name: Bow of Fate, Mistilteinn
+  cat: 'gl'
+  star: 5
+  picture: Life_Bow_Misteltein
+  atk: 835
+  int: 826
+  factors:
+    - desc: Damage dealt +20% by Killing Thorn
+    - desc: Repel +1   
+    - desc: Critical hit chance +10% at long range
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffCondition: Long Range
+        buffValue: 10
+      lb: 5
+  obtained: Lezard + Blood Valkyrie (Achievement, Exchange)  
