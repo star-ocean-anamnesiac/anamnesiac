@@ -7,6 +7,7 @@ const fs = require('fs');
 const ROOT_FILE = 'src/assets/data/root.yml';
 const CHANGELOG_FILE = 'src/assets/data/changelog.yml';
 const BOSSGUIDE_FOLDER = 'src/assets/data/bossguides';
+const SHOP_FOLDER = 'src/assets/data/shops';
 
 const data = fs.readFileSync(ROOT_FILE, 'utf-8');
 const changelogData = fs.readFileSync(CHANGELOG_FILE, 'utf-8');
@@ -56,12 +57,20 @@ const allGuides = _.flattenDeep(fs.readdirSync(BOSSGUIDE_FOLDER).map(file => {
   return bossguides;
 }));
 
+const allShops = _.flattenDeep(fs.readdirSync(SHOP_FOLDER).map(file => {
+  const data = fs.readFileSync(`${SHOP_FOLDER}/${file}`, 'utf-8');
+  const shops = YAML.safeLoad(data);
+
+  return shops;
+}));
+
 const fullData = {
   root,
   changelog,
   allCharacters,
   allItems,
-  allGuides
+  allGuides,
+  allShops
 };
 
 fs.writeFileSync('src/app/data.json', JSON.stringify(fullData));
