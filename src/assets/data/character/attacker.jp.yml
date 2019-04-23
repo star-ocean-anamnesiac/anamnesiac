@@ -6399,4 +6399,70 @@
           buffValue: 40
     power: ATK x 4500%
     maxHits: 13
-    
+
+- name: Arumat Thanatos
+  cat: jp
+  rating: 0
+  picture: Arumat
+  weapon: scythe
+  ace: true
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 3549
+    int: 1537
+    def: 1969
+    hit: 1127
+    grd: 833
+
+  talents:
+    - name: "Eldar's Reaper"
+      effects: 
+        - desc: Imbues attacks with fire and wind
+        - desc: ATK damage dealt +50% at close range
+          all: Attackers
+    - name: "13th Independent Armored Regiment"
+      effects: 
+        - desc: Nullifies charge assault critical damage penalty
+        - desc: Cancel bonus starts at 200% when using charge assault
+    - name: "Soldier's DNA"
+      effects: 
+        - desc: AP recovery +100%
+        - desc: Recovers 100% AP on perfect dodge
+    - name: "Permanent Scars"
+      effects: 
+        - desc: ATK +30%
+
+  skills:
+    - name: "Unholy Maelstorm"
+      picture: Unholy_Maelstrom
+      power: ATK x 380%
+      ap: 25
+      maxHits: 3
+    - name: "Purgatory Palm"
+      picture: Purgatory_Palm
+      element: Fire
+      power: ATK x 190%
+      ap: 16
+      maxHits: 5
+    - name: "Bloodstorm Revolution"
+      picture: Bloodstorm_Revolution
+      power: ATK x 540%
+      ap: 27
+      maxHits: 7
+    - name: "Decapitation"
+      picture: Decapitation
+      power: ATK x 230%
+      ap: 18
+      maxHits: 2
+
+  rush:
+    name: "Aerial Gallows"
+    picture: Aerial_Gallows_Arumat
+    shortEffects: AP cost -30% and elemental damage dealt +50% (Self/20s)
+    effects: 
+      - desc: AP cost -30%
+      - desc: Elemental damage dealt +50%
+    power: ATK x 5500%
+    maxHits: 1
