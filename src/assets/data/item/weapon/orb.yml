@@ -276,3 +276,31 @@
   notes: >
     Event weapon for Mavelle. It's pretty bad, slight increase to rush damage, repel to keep aggro off you and a weak AP recovery
     on normals. Only use it if you lack anything better.
+
+
+- name: Ether Laser
+  cat: 'gl'
+  star: 5
+  picture: Vessel_of_Light_Ether_Laser
+  atk: 962
+  int: 964
+  factors:
+    - desc: Light damage dealt +40%
+      meta:
+        priority: 4
+        buff: Light Damage
+        buffValue: 40
+    - desc: Non-light elemental damage dealt +20% 
+    - desc: INT +5%
+      meta:
+        priority: 4
+        buff: INT
+        buffValue: 5
+    - desc: INT damage dealt +10% at long range
+      meta:
+        priority: 4
+        buff: INT Damage
+        buffCondition: Long Range
+        buffValue: 10
+      lb: 5
+  obtained: Gacha
