@@ -1,5 +1,6 @@
 
 - name: Blood Valkyrie
+  icon: currency-coin-basic
   cat: jp
   currency: Valkyrie Coins
   aliases:
