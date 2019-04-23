@@ -3734,7 +3734,7 @@
           all: true
         - desc: AP recovery +50% when HP is 100%
           all: true
-        - desc: Stun rate: +15%
+        - desc: Stun rate +15%
           all: true
     - name: "To my Beloved Older Sister"
       effects: 
