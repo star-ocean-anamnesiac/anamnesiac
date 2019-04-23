@@ -277,7 +277,7 @@
         - desc: Evasion possible during air attacks
     - name: "Heir to the Camuze Style"
       effects:
-        - desc: Single target damage dealt +10% when skill chain is >3
+        - desc: Single target damage +10% when skill chain is >3
           meta:
             priority: 3
             buff: Single Target Damage
