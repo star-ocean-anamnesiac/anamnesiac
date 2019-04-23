@@ -6,14 +6,14 @@
   atk: 963
   int: 958
   factors:
-    - desc: Imbues attacks with light element
+    - desc: Imbues attacks with light
       element: Light
-    - desc: Damage Taken -10%
+    - desc: Damage taken -10%
       meta:
         priority: 4
         buff: Damage Taken Reduction
         buffValue: 10
-    - desc: AP consumption -10%
+    - desc: AP cost -10%
       lb: 5
       meta:
         priority: 4
@@ -26,6 +26,7 @@
     light imbue greatsword. On top of that it's one of the only limited time weapons in the game. So if you missed it, well check out the
     other greatswords for options.
 
+
 - name: Durandal
   cat: 'gl'
   star: 5
@@ -33,54 +34,56 @@
   atk: 516
   int: 511
   factors:
-    - desc: +15% ATK
+    - desc: ATK +15%
       meta:
         priority: 4
         buff: ATK
         buffValue: 15
-    - desc: 10% HP Drain on Normal Attacks
-    - desc: +10% DMG
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP
+    - desc: DAmage dealt +10%
       lb: 3
       meta:
         priority: 4
         buff: Damage
         buffValue: 10
-  obtained: Gacha/Coin Exchange
+  obtained: Coin Exchange, Gacha
 
   notes: >
     A decent greatsword for A2 and future greatsword wielders especially if they're defenders. The lifesteal helps with sustain. A good 
     neutral option if you missed out on Beastlord.
     
+    
 - name: Tyrfing
   cat: 'gl'
   star: 5
   picture: Tyrfing
-  atk: 516
-  int: 511
+  atk: 651
+  int: 648
   factors:
-    - desc: +15% Single Target DMG
+    - desc: Single target damage +15%
       meta:
         priority: 4
         buff: Single Target Damage
         buffValue: 15
-    - desc: -10% AP Cost
+    - desc: AP cost -10%
       meta:
         priority: 4
         buff: AP Cost Reduction
         buffValue: 10
-    - desc: -10% DMG Taken
+    - desc: Damage taken -10%
       lb: 5
       meta:
         priority: 4
         buff: Damage Taken Reduction
         buffValue: 10
-  obtained: Gacha/Coin Exchange
+  obtained: Coin Exchange, Gacha
 
   notes: >
     Isn't that strong a greatsword. It has passable factors, but those factors just don't make up for the lack of stats it has unlike 
     the factors durandal has. On top of that, the third factor is seen on multiple accessories now. Safe to use as fodder if you have
     Durandal.
-    
+ 
+ 
 - name: Type-4O Blade
   cat: 'gl'
   star: 5
@@ -88,19 +91,19 @@
   atk: 862
   int: 857
   factors:
-    - desc: +20% DMG on YoHRa Arms XII
-    - desc: +50% AP RCV by Normal Attacks
+    - desc: "Damage dealt +20% by YoRHa Arms: 12"
+    - desc: Normal attack AP recovery +50%
       meta:
         priority: 4
         buff: AP Recovery From Normal Attacks
         buffValue: 50
-    - desc: -10% ATK DMG Taken
+    - desc: ATK damage taken -10%
       lb: 5
       meta:
         priority: 4
         buff: ATK Damage Taken Reduction
         buffValue: 10
-  obtained: Geared Wisp Exchange & Event
+  obtained: Geared Wisp / NieR (Exchange, Event)
 
   notes: >
     If you didn't get beastlord, this is probably the best pick for your A2 unless you prefer the extra sustain of Durandal. Boosting
@@ -121,5 +124,5 @@
         priority: 3
         buff: ATK
         buffValue: 5
-  obtained: Transmutation
+  obtained: Transmutation, Gacha
  
