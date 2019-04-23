@@ -316,7 +316,7 @@
   int: 0
   factors:
     - desc: Damage dealt +10% by Sword Bomber
-    - desc: Damage dealt to humans +15%
+    - desc: Damage dealt to humanoids +15%
       slayer: Human
       slayerPct: 15
       meta:
@@ -664,4 +664,40 @@
       element: Lightning
     - desc: Damage dealt +20% by Double Slash
   obtained: Transmutation, Gacha
+  
+  
+- name: Dainsleif
+  cat: 'gl'
+  star: 5
+  picture: Magical_Blade_Deinsleif
+  atk: 963
+  int: 958
+  factors:
+    - desc: Damage dealt to divinities +40%
+      slayer: Divinity
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Divinities
+        buffValue: 40
+    - desc: Damage dealt to humanoids +30%
+      slayer: Human
+      slayerPct: 30
+      meta:
+        priority: 4
+        buff: Damage To Humans
+        buffValue: 40        
+    - desc: Normal attack AP recovery +100%
+      meta:
+        priority: 1
+        buff: AP Recovery From Normal Attacks
+        buffValue: 100
+    - desc: ATK damage dealt +15% when skill chain is >3
+      meta:
+        priority: 3
+        buff: ATK Damage
+        buffValue: 15
+        buffCondition: Skill Chain 3+
+      lb: 3
+  obtained: Gacha  
   
