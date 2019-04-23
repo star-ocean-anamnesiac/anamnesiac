@@ -6322,4 +6322,81 @@
         duration: 20
     power: ATK x 5000%
     maxHits: 6
+
+- name: Fiore Brunelli (Halloween)
+  cat: jp
+  rating: 0
+  picture: Bandaged_Fiore
+  weapon: knuckle
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15540
+    atk: 2718
+    int: 1589
+    def: 1916
+    hit: 1155
+    grd: 819
+
+  talents:
+    - name: "Ruler of the Netherworld"
+      effects: 
+        - desc: ATK +45%
+          all: true
+        - desc: ATK +65% when HP is 100%
+          all: true
+    - name: "Candy of Seduction"
+      effects: 
+        - desc: Absorbs 10% of damage dealt by normal attacks as HP
+          all: true
+        - desc: Absorbs 2% of damage dealt by skills as HP
+    - name: "Glittering Jewelry"
+      effects: 
+        - desc: 90% chance of surviving a lethal attack when at 20% of max HP or more
+    - name: "Wish of a Better Future"
+      effects: 
+        - desc: Normal attack AP recovery +100%
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffValue: 100
+
+  skills:
+    - name: "Impulse Force"
+      picture: Palm_of_Destruction
+      power: ATK x 360%
+      ap: 26
+      maxHits: 1
+    - name: "Crescent Locus"
+      picture: Crescent_Locus
+      power: ATK x 150%
+      ap: 17
+      maxHits: 4
+    - name: "X-Claw"
+      picture: X_Claw
+      power: ATK x 700%
+      ap: 28
+      maxHits: 6
+    - name: "Gigant Fist"
+      picture: Gigant_Fist
+      power: ATK x 850%
+      ap: 55
+      maxHits: 2
+
+  rush:
+    name: "Bandage Excavate"
+    picture: Bandage_Excavate_Bandaged_Fiore
+    shortEffects: Single target damage +40% (Party/20s)
+    effects: 
+      - desc: Single target damage +40%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Single Target Damage
+          buffValue: 40
+    power: ATK x 4500%
+    maxHits: 13
     
