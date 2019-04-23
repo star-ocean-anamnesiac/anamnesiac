@@ -674,7 +674,7 @@
   int: 958
   factors:
     - desc: Damage dealt to divinities +40%
-      slayer: Divine
+      slayer: Divinity
       slayerPct: 40
       meta:
         priority: 4
@@ -685,7 +685,7 @@
       slayerPct: 30
       meta:
         priority: 4
-        buff: Damage To Divinities
+        buff: Damage To Humans
         buffValue: 40        
     - desc: Normal attack AP recovery +100%
       meta:
