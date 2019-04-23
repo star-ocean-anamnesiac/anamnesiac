@@ -4527,7 +4527,6 @@
 
   talents:
     - name: "Even Greater Instincts"
-      shortEffects: ATK +40% and normal attack AP recovery +100% (Party)
       effects: 
         - desc: ATK +40%
           all: true
@@ -4549,7 +4548,7 @@
             priority: 1
             buff: Multiple Target Damage
             buffValue: 20
-        - desc: Convert 45% of ATK to INT
+        - desc: Converts 45% of ATK to INT
           all: Invokers/Healers
           meta:
             priority: 1
@@ -4584,7 +4583,7 @@
             buff: Stun Rate
             buffValue: 20
     - name: "Sake-lover's Lineage"
-      shortEffects: ATK Damage +50%/+100% skill chain is >3/>5, and evasion possible during air attacks
+      shortEffects: ATK damage dealt +50%/+100% skill chain is >3/>5, and evasion possible during air attacks
       effects: 
         - desc: ATK damage dealt +50% when skill chain is >3
           meta:
@@ -6102,8 +6101,7 @@
             buff: INT Damage
             buffCondition: Skill Chain 3+
             buffValue: 30
-    - name: "Desire to show Welch Improvement"
-      shortEffects: ATK +30% and damage dealt to beasts/divinities +40% (Party)
+    - name: "Desire to Show Welch Improvement"
       effects: 
         - desc: ATK +30%
           all: true
