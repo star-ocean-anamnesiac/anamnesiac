@@ -94,11 +94,7 @@
     maxHits: 16
     
   notes: >
-      _9S gets restored to his intial JP value on GL with the rerun and becomes by far the best SS with it. He now has the best flat
-      damage buff in the game that gets better for players when they're at 100% HP. His personal damage output is quite high, made
-      even higher with his damage buff. His attacks are still all one hit wonders, meaning he's best played at close range especially
-      since he is restricted to melee normals. He gives the party high mobility and makes for a decent kite. His post rush heals 
-      gives him additional utility. He is just pretty broken currently compared to every other SS in the game._
+      _[v2] Very reasonable damage buffer with a unique set of buffs. Centered around buffing team mobility with dodge AP down and movespeed allows allies to maneuver around attacks more easily, and a post-rush heal allows him to keep the Nier units topped off for their buffs. He also comes with ATK damage on rush, which is uncommon at such a high value at the moment. That said, his skills are single hit and lack tracking, therefore his hit count racking is extremely weak. He is a sword user, making for a unique playstyle and allowing him to benefit from a select number of close range buffs, which would normally not be applied to shooters. His buffs align him with his full power, but he benefits the least, having dodged the nerf hammer prominently the first time around._
       
       **TL DR**
       
@@ -122,14 +118,17 @@
       
       **Rotation**
       
-      *YoHRa Pod: One > YoHRa Arms: Four > YoHRa Pod: One > YoHRa Arms: Four > YoHRa Arms: Four (Ranged Combo)*
+      *Sword 3 VS Pod 1 - 1 is likely preferred for more flexible ranged attacks, but 3 provides an air dodge and close CA, and does do reasonable DMG.*
 
-      *Normal > YoHRa Arms: Four > YoHRa Pod: Two > YoHRa Arms: Four > YoHRa Arms: Four (Melee Combo)*
+      *Normal > Sword 4 > Pod 2 > Sword 4^n - Melee Combo*
 
+      *Normal > Pod 2 > Sword 4 > CA Sword 3 - Lifted/Displaced Targets*
+
+      *Pod 1 > Sword 4 > Pod 1 > Sword 4^n - Ranged Combo*
 
 - name: Maria Traydor
   cat: gl
-  rating: 7
+  rating: 6.5
   picture: Maria
   weapon: gun
   ace: true
@@ -239,7 +238,8 @@
       **Rotation**
 
       *Normal > Aiming Device > Crimson Squall > Aiming Device > Crimson Squall (General Damage)*
-
+      
+      *Normal > Squall > Aiming > Squall^n - Higher Rush Gain (Must be at distance, normal must hit after you use Squall.)*
 
 - name: Nel Zelpher
   cat: gl
@@ -325,18 +325,9 @@
     maxHits: 18
 
   notes: >
-      _You could say there are two flavors of Nel Zepher: the flavor where the boss is vulnerable to poison and the flavor where the
-      boss is not. Rare is a character who is this polarized by a singular detail._
-      
-      _A Nel against a poison-vulnerable boss has potential to be among the strongest dps in the game, capable of melting high HP bosses
-      in seconds, on top of having incredible defensive utility and a great offensive buffing kit. If the boss can't be poisoned,
-      her dps is among the worst in the game, and she becomes more of a support/utility character._
-      
-      _Thankfully, that utility is pretty good. Her fast rush gain enables her to basically erase anything a boss does that
-      can feasibly be threatening with the only downside being a hitcount reset (which is granted, significant). Her AP reduction
-      raises everyone's dps, and is commonly underestimated. Her crit+10% isn't incredible, but it's a nice bonus._
-      
-      _In the end, she's a character you probably won't bring to every boss. But when she's toxic, she is truly beautiful._
+      _Poison is powerful, however it won't/can't always procure. Nel has decent damage and she provides a party wide -AP Cost which helps out some units. The minor crit buff can also helps boost party DPS ever so slightly. Great against units that don't resist poison. It should be noted that Nel also works decently against bosses with only 1 floor, as her AP cost reduction can amount to more rush gain in a single rotation._
+
+      _Note: Regular Poison does 1.11% Max HP / 3 sec (Enemy / 10 s); Deadly Poison does 3.33% Max HP / 4 s (Enemy / 15 s)._
       
       
       **TL DR**
@@ -369,16 +360,15 @@
       
       **Rotation**
       
-      *Normal > P.Terror > P.Shot > P.Terror > * (Best Rush Gain)*
+      *CA Terror > Shot > Terror^n - Rush Build (Better when dodging or moving a lot.)*
 
-      *Normal > P.Shot > P.Blade > P.Shot > * (General Damage)*
+      *CA Shot^n - Hit Count*
 
-      *Normal > CA P.Blade (to align) > P.Shot > P.Blade > * (Best Damage vs. Big Targets)*
-
+      *Normal > Shot > Terror > Shot^n - DPS*
 
 - name: Emmerson T. Kenny
   cat: gl
-  rating: 2
+  rating: 3
   picture: Emmerson
   weapon: gun
   star: 5
@@ -437,17 +427,7 @@
     maxHits: 7
     
   notes: >
-      _Emmerson, the bottom of the barrel SS till he gets his awakening. He has some positives, his talents mean his normals pack a
-      bit of extra punch, and he has benefits to comps built around the hit counter. He also has a pretty big post rush ATK buff
-      for himself, so he'll be a decent assist in the future too._
-      
-      _The downsides, well he is providing little to no utility to the party aside from his hit count extension, and that is kind of
-      the main theme of the sharpshooter role, to be buffers. On top of that he's a gun wielder who doesn't have a ranged combo 
-      which means lots of CA usage which has a lot of risks, not only due to the penatly if you get hit but you may normal at short
-      range as a gun user. Which is suicidal in harder content.
-      
-      _Emmerson is just bad, one day he'll shine, but currently he is just, bad. Not utterly worthless but I wouldn't recommend using
-      him unless you're a masochist._
+      _Overall weak talents. Provides the highest post rush ATK self buff ingame, but that's about it._
       
       
       **TL DR**
@@ -473,8 +453,9 @@
       
       **Rotation**
       
-      *Normal > Hunter's Moon > Seraphic Thunder > Hunter's Moon (General Damage)*
- 
+      *Normal > Moon > Thunder > Moon *
+
+      *Choosing to CA closer on Moon/Thunder can make them slightly easier to hit.*
  
 - name: Clair Lasbard
   cat: gl
@@ -543,22 +524,9 @@
     maxHits: 6
     
   notes: >
-      _Clair is the original tank. The OG kite character. Even now for she is one and perhaps even the best non-ace character in the
-      game. She follows a different line of thinking for sharpshooters with her talents, being defensive utility instead of offensive
-      utility. Though her post rush damage is still the highest damage buff in the game of 80%, which is pretty huge. Her talents give
-      the party anti-flinch without needing a defender and arguably her best aspect is her ATK damage taken buff. This has yet to
-      be bettered, even on JP which is over a year ahead giving her a unique defensive niche that she will always give to any party
-      that includes her. She is a solid kite, able to use sylvan shot in particular with it's slight tracking to deal damage as she
-      moves, while victory terror deals good damage and has good rush gain when she's not got aggro._
-      
-      _Clair does have her downsides. Victory Terror is her best move but without the ability dodge in the air it is risky to use
-      especially when you're the aggro target which can gimp her damage considerably. Also just being non-ace means her stats
-      themselves are lesser. Plus while post-rush she helps bring the pain she isn't a good option if you're looking for someone to
-      help the party deal damage in the same way Maria can for instance._
-      
-      _In summary Clair is a fantastic character and one worth considering taking to MLB due to being cheaper to limit break and augment
-      which makes her an option worth considering for newer players wanting a decent character early. She is also pretty future proof
-      with her assist and her eventual awakening both being quite powerful._
+      _Clair is a shooter with defender talents, and can subsitute for one in most cases, with -30% atk damage taken and anti-flinch for the party._
+
+      _Her +80% Damage rush buff is the largest rush buff in the game (even in JP). Overall, her damage output and rush gain aren't amazing, but she brings a great set of tools to any party. She will fall off when defenders with better damage output start being added to the game._
       
       
       **TL DR**
@@ -588,10 +556,13 @@
       
       **Rotation**
       
-      *Normal > Victory Terror > Sylvan Shot > Victory Terror (Best Rush Gain)*
+      *"CA Terror > Sylvan > Terror^n - Rush Build*
+      
+      *CA Sylvan^n - Hit Build*
 
-      *Normal > Sylvan Shot > Hydro Blade > Sylvan Shot > Spam till out of AP (General Damage)*
- 
+      *Normal >  Hydro > Sylvan > Hydro^n - Grounded/Slow Targets*
+
+      *Normal > Sylvan > Hydro > Sylvan^n - General Combo*
  
 - name: Reimi Saionji
   cat: gl
@@ -709,14 +680,15 @@
       
       **Rotation**
       
-      *Normal > Rapacious Sparrows > Crimson Squall > Rapacious Sparrows (General Combo.)* 
-      
-      *Normal > Crimson Squall > Crescent Wings > Crimson Squall > Spam till out of AP  (Elemental Burst Combo.)* 
- 
+      *Normal > Sparrows > Squall > Sparrows - Hit Count/DPS*
+
+      *Normal > Squall > Crescent > Squall^n - Element Burst*
+
+      *Sparrows will launch mobs into the air if they are staggered or in EB!* 
  
 - name: Miki Sauvester (Summer)
   cat: gl
-  rating: 9
+  rating: 8.5
   picture: Everlasting_Summer_Miki
   weapon: bow
   ace: true
@@ -815,12 +787,9 @@
     maxHits: 24
     
   notes: >
-      _Miki puts on her bikini to show us her summer body and is a rather uniqe bow ace sharpshooter. Her talents are quite conditional
-      much like Summer Myuria. She helps the aggro target by giving them ATK damage reduction, and helps out damage dealers by
-      giving a crit rate boost but only if your behind the target. Now with summer her AP recovery on normals is 100% which is a
-      pretty huge buff. Her damage buff is now quite good at 45% and the amazing buff she gives is still that 70/20 grit chance to
-      the party which will make her much better for the party. On top of all this her post rush crit damage boost is pretty good
-      and she now has a stronger rush. She'll stilll struggle with mobile targets but her damage output will stll be respectable._
+      _[v2] Exciting buffs for everyone's favorite stupid looking cute dumb pink girl. Her damage buff becomes competitive again with her JP-level buffs, falling just short of MariaA, but above unawakened Maria. Nothing changes about her DPS, but it was mildly reasonable to begin with and only suffered from inconsistent damage against highly mobile targets. Party guts is a solid as always, and you can consider her conditionals/rush buff icing on the reasonable base she provides._
+
+      _[Potential] Overall, she'll feel slightly more pub-proof thanks to her party guts. 70/20 is a great percentage to give innately, and will probably save someone's life during a run. That said, she is a bit clunky thanks to her bow skills/normals, so she loses a bit for that. You won't always have 100% AP as well, so that helps._
       
       
       **TL DR**
@@ -850,8 +819,11 @@
       
       **Rotation**
       
-      *Normal > Hunter's Moon > Sonic Thorn > Hunter's Moon (General Combo.)* 
- 
+      *CA Howling Wind - Rush Gain on mobs.*
+
+      *Normal > Moon > Thorn > Moon^n - Only if far enough for normal to hit before Moon.*
+
+      *Normal > Thorn > Moon > Thorn^n - Large Targets* 
  
 - name: Silmeria Valkyrie
   cat: gl
@@ -932,17 +904,7 @@
     maxHits: 8
 
   notes: >
-      _Come to me, dark warriors, obsolescence awaits us!_
-      
-      _Silmeria arrived in an unfortunate position out the gate. Bound by the high expectations following Maria and Clair, gagged by
-      the fact that everyone owned the former. The only way Silmeria could have avoided what followed is if she had strong talents,
-      damage and kiting ability. Well, she does bring damage. Unfortunately, she is luckluster on the rest._
-      
-      _Her buffing is average at best; while it's nice that she has Single Target DMG at all, 10% is barely noticeable and underwhelming
-      compared to Maria's crit chance buffs or Clair's anti-flinch. Kiting with her is a pain due to bow's generally terrible animations
-      and mechanics, with nothing to help her AP recovery. And she WILL be kiting, because she has ridiculous aggro generation._
-      
-      _She is best run with a defender so she can focus on doing what she does best: damage._
+      _Just like her sister, she's not anything close to an upgrade, only an alternative to the units which are available. Both were unfortunately outshined by even the nerfed summer units, and do not do themselves any favours in terms of release schedule ordering. When not bringing ST DMG on another unit, Silmeria technically has the same buff amount as Maria, with a lower crit buff (self only). However, she does bring significantly more DMG (comparable to sMiki), and Hit Count + 2 paired with actual other talents (sorry, Emmerson, you'll get your time) means it will be hard to drop a hitcount combo, making rush gain much smoother in movement heavy/annoying bosses._
       
       
       **TL DR**
@@ -972,12 +934,11 @@
       
       **Rotation**
       
-      *Normal > Homing Pigeons > Wave Motion > Homing Pigeons > * (General Combo. By timing cancel can get up to 3 pigeons.)
+      *Normal > Pigeons > Distortion > Pigeons^n - DPS*
+      
+      *Normal > Distortion > Pigeons > Wave^n - Rush*
 
-      *Normal > Wave Motion > Homing Pigeons > Wave Motion > Homing Pigeons (Combo #2, last pigeons requires timed canceling)
-
-      *Normal > Wave Motion > Homing Pigeons > Wave Motion > * (with 20% AP reduction or more)
-
+      *Normal > Distortion > Pigeons > Distortion^n - Larger targets where Distortion can hit 9+ times.*
 
 - name: Victor Oakville (Halloween)
   cat: gl
@@ -1075,21 +1036,7 @@
     maxHits: 19
     
   notes: >
-      _Victor puts on a vampire costume that makes him an Ace and also pretty godly. Halloween Victor even though he has been nerfed
-      is still the only sharpshooter to rival 9S for the top spot but is great for different reasons. Halloween Victor has a plethora
-      of buffs both offensive and defensive giving him well rounded utility. He provides a 30% damage buff and a conditional 10% buff
-      to elemental damage, which is a rare buff in GL. Post rush he also adds a 40% single target damage buff for the party on top
-      which means he is stacking 3 different damage type buffs._ 
-      
-      _His defensive utility also helps maintain that 100% HP, giving all
-      party members a 10% life steal effect on their normals as well as healing by 40% of Max HP for the party post rush. He keeps
-      himself even healthier by having healing based on his skill damage and an AP reduction buff based on skill chain helps him
-      spam skills to make him good at building and maintaining hit count._
-      
-      _As for downside his biggest is that his personal damage is nothing to boast about. However this isn't uncommon among 
-      sharpshooters and compared to those in his role it's pretty reasonable. It's very hard to really find much of a fault in Hvic's
-      tool kit beyond the fact his damage could be better but with all the buffs he's providing you don't really care that much.
-      HVic is just a great example of what you want your buffing sharpshooters to bring._
+      _[v2] HVic returns, getting one of the nastier buffs. Although solid healers are rampant on GL, his amount of lifesteal is impressive and easy to use to keep everyone topped off in medium-hard fights. With the new addition of another personal buff, his damage is competitive and his damage buffing is usable. For units whose weapons don't provide innate element damage, his aggregate pre-rush buffing is 55%, though this will usually get overriden due to post-rush elemental damage being common. Although his ST will usually not be useful, it does fill the gap between max ST damage uptime, even with current defenders._
       
       
       **TL DR**
@@ -1113,8 +1060,9 @@
       
       **Rotation**
       
-      *Normal > Dragon's Might > Gyrfalcon Blade > Dragon's Might > Spam till out of AP  (General Combo.)*    
+      *Cleave vs Shockwave - Preference. Cleave is ranged and passes through targets (trash clearing), Shockwave has close range CA which may be situationally useful.*
 
+      *Normal > Dragon > Gyrfalcon > Dragon^n*
 
 - name: Lymle Lemuri Phi (Official)
   cat: gl
@@ -1227,19 +1175,7 @@
     maxHits: 5
     
   notes: >
-      _Lymle rejoins the fight to tell us that other version of her is a bootleg unofficial version. Official Lymle is a unique
-      characters, a science experiement by the devs to test out gun casters who aren't invokers but Sharpshooters. It wasn't
-      successful but it is at least interesting. Official Lymle is meant to go into a caster party, with her damage buff of 25% 
-      increasing to 35% for herself and healers plus invokers. She also gives a weak but not irrelevant 20% cast time reduction
-      to the party. Plunging firebolt is also not a terrible move for hit count since it tracks and has low cost so she can do
-      that part of the sharpshooter role pretty well. Post rush she boosts her own and invoker damage by 60% which is not a small
-      amount._
-      
-      _However outside of a very specific composition OLymle kind of falls apart. Her buffs are weak or irrelevant to non-casters.
-      Even then many invokers and healers come with casting reduction. Also her moveset is pretty poor. The moves stand along
-      aren't terrible, they see use on other characters, the problem is she has essentially gotten 4 filler moves for a move set.
-      Plus the animation lock with guns when casting is still not great, plus she feels a bit odd to play but may be worth taking
-      for a try out if you're bored._
+      _Pretty bad moveset and being the tester for the hybird gunner/caster class makes her very strange. Her DPS is low, she's non-ACE, and her buffing is subpar so her only real upside is that she's free for players during this event. That said, with Maria being an option for a starter unit, there's almost no reason to run her, unless you really want to try a caster comp for something._
       
       **TL DR**
       
@@ -1263,8 +1199,11 @@
       
       **Rotation**
       
-      *Normal > Smart Aiming Device > Plunging Fire Bolts > Smart Aiming Device > Spam till out of AP  (General Combo.)*  
- 
+      *Normal > Aiming > Gravity/Fire > Aiming - Main DPS Combo*
+
+      *Normal > Gravity > Aiming > Gravity^n - Hit Count*
+
+      *Gravity vs Fire - Large slow targets & up close vs smaller, fast targets. Bolts will be more consistent with tracking. Gravity can CA short range.*
  
 - name: Bernard
   cat: gl
@@ -1324,7 +1263,6 @@
           buffValue: 50
     power: ATK x 2500%
     maxHits: 8
-
 
 - name: Clair Lasbard (Valentine)
   cat: gl
@@ -1410,22 +1348,7 @@
     maxHits: 4
     
   notes: >
-      _Clair joins us as a freebie for Valentine in Tri-Aces gift to us by giving us an alt of best girl. She also isn't that bad of
-      a free unit and continues the Clair trend of having some defensive utility in her talents or post rush. She's a solid character
-      who's combat style is similar to that of Maria, relying heavily on how good Crimson Squall is. This actually makes her good at
-      building up and maintaining hit count, while also giving her decent rush gain. She's a humanoid specialist with her inbuilt
-      humanoid slayer and has a built in AP reduction allowing her to spam moves even more._ 
-      
-      _She provides poison immunity to the party meaning she has a niche in MoT and against certain bosses like the valentine boss 
-      she releases alongside. Her real power lays in her post rush buff, a rare 30 second duration and pretty rare debuffs. While 
-      lowering enemy DEF isn't that big a damage boost unless you have no crit buffing, in theory lowering ATK is a pretty good
-      debuff for defensive utility._
-      
-      _Her downsides are that she doesn't provide much other than her debuffs and poison immunity to the party, and poison immunity
-      is pretty niche even if it's nice to have. Her personal damage isn't going to blow you away just like most SS and unlike Maria
-      her talents don't make up for it as much, though on Humanoid bosses she should be pretty solid. Just overall she isn't a
-      spectacular character but like some of our other recent freebies she's okay and very much a playable character even in harder
-      content._
+      _Absolutely absymal event unit. That said, her skills are actually very good, and her rush does have a fairly unique ATK down, which is a solid defensive debuff, in theory._
       
       **TL DR**
       
@@ -1456,8 +1379,7 @@
       
       **Rotation**
       
-      *Normal > Crimson Squall > Sonic Thorn > Crimson Squall > Spam till out of AP  (General Combo.)*    
-
+      *Normal > Squall > Thunder/Thorn > Squall^n (General Combo.)*    
 
 - name: Anne Patriceani (Official)
   cat: gl
@@ -1551,17 +1473,7 @@
     maxHits: 19
     
   notes: >
-      _Anne finally arrives to show how much better the Official version is compared to her boot leg non-ace version. Though she comes
-      up kind of short. Anne suffers from being the first dual gun wielder on JP. While on GL we've been spoiled with Winter Fidel
-      Anne was the test subject for the new play style which adds some clunkiness to it. She does have her plus points, pre-rush
-      elemental damage buffs aren't super common on GL, especially at such a high %. Plus her post rush crit rate continues the Anne
-      tradition of being extremely high for GL, not as high as her non-ace version but 50% is still very high._
-      
-      _However Anne's other talents are just bad, her single target damage buff beats none of the top defenders in the game currently
-      and it's even tied to a condition of being short range. Then her AP recovery talent requires players to be at long range so
-      it's good for casters but that's about it since SS will generally normal for AP recovery. Her damage is passable for an SS but
-      the lack of quality buffs really hurt her, it doesn't help that dual guns are a bit awkward to use due to their normals being
-      more midrange unlike most of their skills which can hit at a much further distance._
+      _Element buffs pre-rush are still solid, and crit at a solid percentage is also nice, but her rush gain and damage are atrocious, and single-target has become oversaturated due to GL's limited release rate. In the end, her buffing is unneeded for the character package it comes with. That said, she has dual guns and may be reasonably fun to pilot._
       
       
       **TL DR**
@@ -1585,8 +1497,7 @@
       
       **Rotation**
       
-      *Normal > Divebomb > Skyline Spray > Divebomb > Spam till out of AP  (General Combo.)* 
-
+      *Normal > Divebomb > Skyline Spray > Divebomb^n (General Combo.)* 
 
 - name: Maria Traydor (Awakened)
   cat: gl
@@ -1707,22 +1618,7 @@
     maxHits: 6
     
   notes: >
-      _Just as 9S thought he was the undisputed champion of Sharshooters, Maria awoke to back hand him and remind him who the original
-      queen was. Welcome to Maria Ocean! Maria's awakening gives her a plethora of new goodies but lets start with commenting on the 
-      additions to her current kit. Every single skill recieves a boost to their mults, nothing major but still it increases damage.
-      Her rush has also been boosted from a 3k to 4k multiplier. Her baseline damage boost is increased from 40 to 50% meaning she has
-      the largest unconditional buff in the game. Plus her ATK and HP have both been buffed to increase her damage output and bulk._
-      
-      _Now lets cover her new toys. Maria now cuts evasion costs by 50% for the whole party. Her own personal evasion has been both
-      sped up and increased in distance, couple this with her HP buff and damage reduction talent and Maria is looking pretty good
-      for kiting. She also gains party wide lifesteal but only if the hit count is 100 or more. This isn't as good as it seems as
-      you usually rush shortly after triple digits unless you're specifically aiming for a hit count buff, such as Winter Fidel's ATK
-      damage buff at 200 hits. So the relevance of that talent is limited. Finally she also provides standing AP recovery and a slight
-      AP reduction, however -5% is pretty big for Maria as it allows her to do her rotations without AP seeds. Though it is recommended
-      to have 1 or 2 in her to dodge with after a full rotation._
-      
-      _In summary Awakened Maria has a lot more utility and damage now that makes what was already a good character, pretty insane.
-      With very few negative points._
+      _[v2] With her awakening, Maria shoots back up to the top with a very solid buff, no strings attached, in addition to some other goodies. Her attack gets buffed so she actually does real damage on her rush and abilities, in addition to an excellent new skill. Raptorshot is great for tracking and hitcount, with a bonus for lingering to abuse cancel bonuses. Her dash speed/distance is excellent for kiting, but make sure you get used to the new distance - don't overshoot into the enemy's attacks. Lastly, static AP recovery helps eliminate a lot of her downtime (and any other casters/shooters who might choose to wait vs attack for AP), and she gets innate sustain at 100 HC, which is easy to hit with Squall and Raptor._
       
       
       **TL DR**
@@ -1746,14 +1642,15 @@
       
       **Rotation**
 
-      *Normal > Raptor Bullet > Aiming Device > Raptor Bullet > Raptor Bullet (General Damage)*
+      *Normal > Squall > Aiming > Squall^n - Higher Rush Gain (Must be at distance, normal must hit after you use Squall.)*
       
-      *Normal > Crimson Squall > Aiming Device  > Crimson Squall > Crimson Squall (Rush Gain)*
-      
+      *Normal > Squall > Raptor > Squall^n - Rush Gain*
+
+      *Normal > Raptor > Aiming > Raptor^n - DPS*
       
 - name: Maria Traydor (Bridal)
   cat: gl
-  rating: 8
+  rating: 8.5
   picture: Bridal_Maria
   weapon: gun
   ace: true
@@ -1859,19 +1756,7 @@
     maxHits: 9
     
   notes: >
-      _So Bridal Maria has arrived at the same time as her awakened form which is bad since Bridal was at least on paper an improved
-      version of Maria. However that doesn't mean she's a terrible character. She has the highest damage buff in the game at 60%.
-      Though it does require 200 hits to achieve this, Bridal Maria is capable of racking up the hits, especially since her version
-      of gravity bullet is different from the one we know with some tracking on it and is great against larger enemies. She also gets
-      a pretty big AP reduction and slight ATK buff once past 50 hits. Plus she does add a little extra damage to everyones normals
-      for a slight dps increase. Her post rush buff gives 60% ATK which means she doesn't need to worry about 2bs conditional._
-      
-      _Now for downsides. The 200 hit condition is a mighty buff and to match Awakened Maria she needs 100 hits and 150 hits to
-      match 9S for their best damage buffs. Her flat damage buff is just the Maria one. Her ATK post rush buff is kind of meh
-      considering 2b exists and that awakened Fidel is coming with a flat 50% buff as well. Her lack of Squall hurts and it's
-      replacement in burst Emissions is pretty bad. Also her rush has been bugged in JP since release and it doesn't contribute to
-      Elemental Burst. Which hurts even more so as it would have made her better against light weak bosses. In summary Bridal Maria
-      is a good enough unit, but she is outclassed and to get the best out of her requires more work then it seems worth._
+      _If she had one more buff, she'd be really good. As it is right now, her damage buff scales well, but is essentially outperformed by her awakened counterpart. Poor skillset and weak post-rush with any meta ATK buffer. That said, if you don't want to awaken Maria or use 9S, she's a reasonable damage buffer with excellent hitcount racking thanks to her version of Gravity Bullet. Released with JP re-release buffs._
       
       
       **TL DR**
@@ -1895,12 +1780,13 @@
       
       **Rotation**
 
-      *Normal > Gravity Bullet (Thorn) > Aiming Device (Thorn) > Gravity Bullet (Thorn) > Spam Till Out of AP (General Damage)*
+      *Normal > Bullet > Device > Bullet^n*
 
+      *You can CA Laser instead of Device to help with repositioning if needed.*
 
 - name: Nel Zelpher (Bridal)
   cat: gl
-  rating: 8
+  rating: 8.5
   picture: Bridal_Nel
   weapon: dagger
   ace: true
@@ -2027,18 +1913,7 @@
     maxHits: 6
     
   notes: >
-      _When I originally looked at Bridal Nel I thought she wasn't so bad, apart from her splash art, god it's ugly.
-      Then I happened to look at Xprecis and realised they shared
-      a lot of similar talents but Bridal Nel's is just twice the work. However crit damage buffers are rare and she won't drop hit
-      count unless you actually try to so you can rest easy knowing you can get to 200. So it's not an utter write off and the two
-      characters play different roles. Her AP reduction is a nice perk, though her anti-flinch seems pretty meidocre given it's low 
-      percent and her small HP pool. She has a nice 30% ATK buff on CA but that comes with risk. Her biggest bonus is her post rush.
-      The 40% ATK damage buff to the party is very good by GL standards and since we don't really run INT users outside of sometimes
-      seeing healers will always be good. Plus the single target damage buff means she gives a good variety for pubbing._
-      
-      _However Bridal Nel just isn't that amazing, she's just good. She will also be outclassed by the first decent crit buffer we
-      get that isn't a healer. Her damage output is bad, her single target damage is matched or beaten by almost every defender you
-      commonly see. There just doesn't seem to be a good reason to run Nel outside of getting a big ATK damage buff post rush in GL._
+      _Hit count timer means better rush gain, attached with some reasonable buffs and decent hitcount racking. That said, her buffs don't kick in for a while, especially with the state of GL's hitcount racking. She does brings ATK Damage at its max %, which is still fairly uncommon. ST Damage also means that she substitutes for a Defender if needed. Gimped by a subpar moveset, but probably the best of the first wedding releases. Released with JP re-release buffs._
       
       
       **TL DR**
@@ -2064,12 +1939,11 @@
       
       **Rotation**
 
-      *Normal > CA Flying Guillotine (Bloom) > CA Sylvan Shot (Bloom) > CA Flying Guillotine (Bloom) > Spam Till Out of AP 
-      (General Damage)*
+      *Normal > CA Shot > CA (Guillotine/Wheel) > CA Shot^n - Hit Count Build*
       
-      *Normal > CA Sylvan Shot (Bloom) > CA Flying Guillotine (Bloom) > CA Sylvan Shot (Bloom) > Spam Till Out of AP 
-      (Hit Count)*
+      *Normal > CA Guillotine > CA Shot > CA Guillotine^n - DMG. CAing keeps you in comfortable distance and targetting.*
 
+      *Use Guillotine or Wheel depending on what range is preferred.*
 
 - name: Hal
   cat: gl
@@ -2133,7 +2007,6 @@
     power: ATK x 3000%
     maxHits: 15
     
-    
 - name: Eleanor
   cat: gl
   rating: 0
@@ -2193,7 +2066,6 @@
     power: ATK x 3000%
     maxHits: 7
         
-
 - name: Boris
   cat: gl
   rating: 0
@@ -2268,7 +2140,6 @@
     power: ATK x 1500%
     maxHits: 5
 
-
 - name: Katarina
   cat: gl
   rating: 0
@@ -2332,7 +2203,6 @@
     power: ATK x 3000%
     maxHits: 9
 
-
 - name: Dominic
   cat: gl
   rating: 0
@@ -2393,7 +2263,6 @@
     power: ATK x 2500%
     maxHits: 5
 
-
 - name: Pamela
   cat: gl
   rating: 0
@@ -2447,7 +2316,6 @@
           buffValue: 80
     power: ATK x 3000%
     maxHits: 9
-
 
 - name: Amina
   cat: gl
@@ -2514,7 +2382,6 @@
     power: ATK x 2500%
     maxHits: 5
 
-
 - name: Pavine
   cat: gl
   rating: 0
@@ -2580,7 +2447,6 @@
           buffValue: 50
     power: ATK x 2500%
     maxHits: 3
-
 
 - name: Milla Bachtein
   cat: gl
@@ -2651,7 +2517,6 @@
     power: ATK x 2000%
     maxHits: 5
 
-  
 - name: Delacroix
   cat: gl
   rating: 0
@@ -2714,7 +2579,6 @@
         all: true
     power: ATK x 2500%
     maxHits: 7
-  
   
 - name: Verda Kleiman
   cat: gl
@@ -2810,21 +2674,7 @@
     maxHits: 2
     
     notes: >
-      _Verda stops giving out chocolate to actually join as a permanent character and another single gun wielding ace. Like her 
-      valentine version, Verda is a debuffer, she gives the ever so slightest debuff to enemy attack that isn't all that relevant
-      due to how small it is, though her 15% damage debuff is a lot more interesting as the only person it will conflict with
-      currently is vwelch and an end to earth content should see vwelch decline in popularity somewhat. She has a pity damage buff
-      as well but with the prominence of Awakened Maria and 9S that's likely to get overlapped. Her silence immunity gives a MoT
-      niche that she can fill, and reducing rush gauge fields, even if only to certain characters, it a nice utility perk as well._
-      
-      _On top of all of this Verda gets a pretty good post rush buff, increasing movement speed short term is okay, though you
-      generally want that perk the whole fight, but only Bridal Nel can beat the ATK damage buff she comes packing which gives a pretty
-      good reason to bring her into a comp as your damage buffer and a debuffer._
-      
-      _To summarize, Verda isn't overwhelmingly strong, but she does a few things that beat out most other characters, or are only done
-      by so few characters that the overlap chance is slim which means she'll be good for debuffing. She has a good enough skill set
-      that for now, she isn't a bad character to be using as you'll always be giving something to the party unless you've somehow
-      ended up with Vwelch, Bridal Nel and Maria/9S.
+      _Notably comes with fairly unique buffs, which are fairly specific to the Verda units with a few exceptions. Not a stellar damage buff with the new standard from awakened units, but it's reasonable if you consider her other buffing. Functionally discount 9S with much less damage, but a few bonuses which make her a reasonable alternative downgrade. Bonus against large enemies thanks to Bullet. On the whole, Verda's kit excels greatly against medium to large enemies, and can be awkward pitted against small enemies._
       
       
       **TL DR**
@@ -2852,10 +2702,11 @@
       
       **Rotation**
 
-      *Normal > Break Bullet > Crimson Squall > Break Bullet > Spam Till Out of AP (General Damage On Large Targets)*
+      *Normal > Gravity > Splitshot/Squall > Gravity^n - Larger targets, especially if Splitshot lands full hits.*
       
-      *Normal > Magnetic Field > Crimson Squall > Magnetic Field > Spam Till Out of AP (General Damage On Small Targets)*
+      *Normal > CA Field > Splitshot/Squall > Field^n - Targets too small for Gravity. Poorer rush gain, but Squall can make up some of it.*
 
+      *Splitshot VS Squall - Preference. Range variety and dependant on enemy sizes.*
 
 - name: Edge Maverick (Federation)
   cat: gl
@@ -2942,7 +2793,11 @@
           buffValue: 40
     power: ATK x 3500%
     maxHits: 11
+    
+    notes: >
+      **Rotation**
 
+      *Normal > Raptor > Aiming > Raptor^n*
 
 - name: Sophia Esteed (Youth)
   cat: gl
@@ -3054,7 +2909,16 @@
           buffValue: 25
     power: ATK x 3500%
     maxHits: 5
+    
+    notes: >
+      _JKJK (high school aged Sophia in JP) finally arrives. Although her buffing is a bit redundant and slightly dated compared to units we have now, she brings other benefits in spades. The most prominent being hitcount racking, rush gain and personal damage; all heavily dependent on the notorious move "Gremlin's Lair" (a.k.a "hamsters"). Although her damage is standard and ST doesn't beat any Defenders, she does provide AP to anyone who would really want it, and a huge 90/30 guts to anyone who wouldn't. Long range parties also get the benefit of increased stun rate, even without Roddick. Although her rush is a bit weak, it refreshes guts and the buffing is slightly better than most sources of ATK damage._
 
+      _[Potential] Due to her myriad of spread buffs, JKJK is particularly solid at pubbing, filling in three different damage buffs, as well as AP on norms and even guts/heal. You'd be perfectly fine bringing her into almost any comp, only really missing any attack buffer. She does well in premade comps as well, but this is where she particularly excels._
+
+      **Rotation**
+
+      *Normal > Lair > Sylvan > Lair^n*
+      
 - name: Lenneth Valkyrie (Azure Sky)
   cat: gl
   rating: 0
@@ -3149,7 +3013,16 @@
           buffValue: 30
     power: ATK x 3500%
     maxHits: 7
-    
+
+    notes: >
+      _SLenneth comes at a strange time, as on paper she has a lot of aggregate buffing, but unfortunately, 2/3 of them are easily replaced or common and the last requires manual application.. Elemental damage is now a very vanilla post-rush buff, with a number of units providing it, and her measly damage buff is easily overwritten. She does stack decently with another shooter, and her own DPS multiplies twofold on large targets thanks to Killing Thorn's capability for extra hits in those situations._
+
+      _[Potential] You know the drill, spread buffing is always better in pubs, so you're hitting maximum efficiency without having to rely on allies. SLenn's strongest buff, damage taken, will almost never be conflicting except in dupes, and her decent damage means she contributes decently._
+
+      **Rotation**
+
+      *Normal > Thorn > Fang > Thorn^n*
+      
 - name: Silmeria Valkyrie (Awakened)
   cat: gl
   rating: 6
