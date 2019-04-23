@@ -304,3 +304,27 @@
         buffValue: 10
       lb: 5
   obtained: Gacha
+
+- name: Vessel of Truth, Etherlight
+  cat: 'gl'
+  star: 5
+  picture: True_Vessel_Etherlight
+  atk: 832
+  int: 834
+  factors:
+    - desc: Damage dealt +15% by Heavenly Punishment
+    - desc: Normal attack AP recovery +30% at short range
+      meta:
+        priority: 4
+        buff: AP Recovery From Normal Attacks
+        buffCondition: Short Range
+        buffValue: 30
+    - desc: Damage dealt to humanoids +10% 
+      slayer: Human
+      slayerPct: 10
+      meta:
+        priority: 4
+        buff: Damage To Humans
+        buffValue: 10        
+      lb: 5
+  obtained: Lezard + Blood Valkyrie (Achievement)
