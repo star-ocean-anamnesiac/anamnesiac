@@ -11,9 +11,6 @@ const validMetas = [
   'Fire Damage', 'Ice Damage', 'Light Damage', 
   'Dark Damage', 'Earth Damage', 'Lightning Damage', 'Wind Damage',
 
-  'Non-Fire Damage', 'Non-Ice Damage', 'Non-Light Damage', 
-  'Non-Dark Damage', 'Non-Earth Damage', 'Non-Lightning Damage', 'Non-Wind Damage',
-
   'Fire Damage Reduction', 'Ice Damage Reduction', 'Light Damage Reduction', 'Dark Damage Reduction',
   'Earth Damage Reduction', 'Lightning Damage Reduction', 'Wind Damage Reduction',
 
