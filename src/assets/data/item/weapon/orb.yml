@@ -291,6 +291,15 @@
         buff: Light Damage
         buffValue: 40
     - desc: Non-light elemental damage dealt +20% 
+      meta:
+        priority: 4    
+        buffs:
+          - Dark Damage
+          - Fire Damage
+          - Ice Damage
+          - Lightning Damage
+          - Earth Damage
+          - Wind Damage
     - desc: INT +5%
       meta:
         priority: 4
