@@ -2483,3 +2483,78 @@
         all: Enemies
     power: ATK x 4500%
     maxHits: 1
+
+- name: Fayt Leingod (SRF)
+  cat: jp
+  rating: 0
+  picture: SRF_Fayt
+  weapon: ohs
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 22855
+    atk: 2608
+    int: 1619
+    def: 2446
+    hit: 866
+    grd: 1079
+    ap: 100
+
+  talents:
+    - name: "Interest in Space Pioneering History"
+      effects: 
+        - desc: Elemental damage dealt +20%
+          all: true
+        - desc: Elemental damage dealt +35% when hitcount is >100
+          all: true
+        - desc: Elemental damage dealt +50% when hitcount is >150
+          all: true
+    - name: "The True Meaning of the UP3"
+      effects: 
+        - desc: HP +50%
+          all: true
+        - desc: No flinching when taking damage of 20% of max HP or less
+          all: true
+    - name: "New Year's Resolution"
+      effects: 
+        - desc: Damage taken -40% when attacking
+        - desc: Evasion possible during air attacks
+    - name: "From Beginning to End"
+      effects: 
+        - desc: Imbues attacks with ice and light
+        - desc: AP cost -20%
+
+  skills:
+    - name: "Twin Zapper"
+      picture: Twin_Zapper
+      power: ATK x 250%
+      ap: 19
+      maxHits: 4
+    - name: "Gran Zapper"
+      picture: Gran_Aqua_Zapper
+      power: ATK x 190%
+      ap: 16
+      maxHits: 1
+    - name: "Cyclone Blade"
+      picture: Cyclone_Blade
+      power: ATK x 400%
+      ap: 23
+      maxHits: 5
+    - name: "Heaven's Sword"
+      picture: Heaven's_Sword
+      power: ATK x 1200%
+      ap: 43
+      maxHits: 3
+      
+  rush:
+    name: "Dual Raging Strike"
+    picture: Dual_Raging_Strike_SRF_Fayt
+    shortEffects: Elemental damage dealt +70% (Party/20s)
+    effects: 
+      - desc: Elemental damage dealt +70%
+        all: true
+        duration: 20
+    power: ATK x 4500%
+    maxHits: 9

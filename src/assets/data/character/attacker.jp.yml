@@ -6587,21 +6587,25 @@
   skills:
     - name: "Flame Dragon Breath"
       picture: Flame_Dragonbreath
+      element: Fire
       power: ATK x 240%
       ap: 19
       maxHits: 4
     - name: "Cold Dragon Breath"
       picture: Cold_Dragonbreath
+      element: Ice
       power: ATK x 240%
       ap: 19
       maxHits: 4
     - name: "Ground Burst"
       picture: Ground_Burst
+      element: Fire
       power: ATK x 280%
       ap: 19
       maxHits: 5
     - name: "Spinning Scythe"
       picture: Spinning_Scythe
+      element: Ice
       power: ATK x 520%
       ap: 24
       maxHits: 7
@@ -6649,7 +6653,7 @@
     - name: "Last Stroke's Judgement"
       effects: 
         - desc: Absorbs 5% of damage dealt by normal attacks as HP
-        - desc: Absorbs 5% of damage dealt by normal attacks as HP when hitcount is >100
+        - desc: Absorbs 15% of damage dealt by normal attacks as HP when hitcount is >100
     - name: "New Encounters and Adventures"
       effects: 
         - desc: HP +10%
