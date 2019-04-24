@@ -6617,3 +6617,86 @@
         duration: 20
     power: ATK x 5000%
     maxHits: 7
+
+- name: Evelysse (New Year's)
+  cat: jp
+  rating: 0
+  picture: Herald_of_Spring_Evelysse
+  weapon: greatsword
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 17831
+    atk: 3420
+    int: 1633
+    def: 2020
+    hit: 1198
+    grd: 873
+    ap: 100
+
+  talents:
+    - name: "Swift Reactions in Hagoita"
+      effects: 
+        - desc: Angel Feather's effect increased to +40% when HP is 100% and hitcount is >200
+    - name: "Victorious Perspective"
+      effects: 
+        - desc: Hitcount timer +2 seconds
+          all: true
+        - desc: Hitcount timer +3 seconds when New Year's Eve's HP is 100%
+          all: true
+    - name: "Last Stroke's Judgement"
+      effects: 
+        - desc: Absorbs 5% of damage dealt by normal attacks as HP
+        - desc: Absorbs 5% of damage dealt by normal attacks as HP when hitcount is >100
+    - name: "New Encounters and Adventures"
+      effects: 
+        - desc: HP +10%
+        - desc: ATK +20%
+
+  skills:
+    - name: "Spirit Strike - Angel Feather"
+      picture: Cold_Cannon
+      power: ATK x 150%
+      ap: 14
+      notes: ATK/INT/DEF/HIT/GRD +20% (Party/20s)
+      maxHits: 1
+      meta:
+        priority: 2
+        buffs:
+          - ATK
+          - INT
+          - DEF
+          - HIT
+          - GRD
+        buffValue: 20
+    - name: "Firestorm Blade"
+      picture: Firestorm_Blade
+      element: Fire
+      power: ATK x 580%
+      ap: 31
+      maxHits: 4
+    - name: "Air Slash of Fury"
+      picture: Air_Slash_of_Fury
+      power: ATK x 250%
+      ap: 20
+      maxHits: 2
+    - name: "Helix Splendor"
+      picture: Helix_Splendor
+      element: Light
+      power: ATK x 1020%
+      ap: 44
+      maxHits: 10
+
+  rush:
+    name: "Blessing: Rising Sun"
+    picture: Blessing_Rising_Sun_New_Years_Eve
+    shortEffects: AP cost -40% and recovers 10% of max HP every 3 seconds (Self/20s)
+    effects: 
+      - desc: AP cost -40%
+        duration: 20
+      - desc: Recovers 10% of max HP every 3 seconds
+        duration: 20
+    power: ATK x 5000%
+    maxHits: 5
