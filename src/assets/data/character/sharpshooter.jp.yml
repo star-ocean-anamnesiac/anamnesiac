@@ -3824,7 +3824,7 @@
           all: true
     - name: "Westa's Kindness"
       effects: 
-        - desc: Gain 3% Rush Gauge every 3 seconds
+        - desc: Rush gauge fills 3% every 3 seconds
           all: true
     - name: "Silver Healing Hands"
       effects: 

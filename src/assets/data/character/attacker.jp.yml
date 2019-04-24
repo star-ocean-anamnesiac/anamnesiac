@@ -5121,7 +5121,7 @@
             buffValue: 40
     - name: "Polished Self-Defense"
       effects: 
-        - desc: Rush gauge fills slightly for all allies when using Rising Dragon
+        - desc: Rush gauge fills 5% for all allies when using Rising Dragon
 
   skills:
     - name: "Twister"
@@ -6705,7 +6705,7 @@
     power: ATK x 5000%
     maxHits: 5
 
-- name: Sakura Shinguji (Sakura Taisen)
+- name: Sakura Shinguji
   cat: jp
   rating: 0
   picture: Sakura
@@ -6727,16 +6727,17 @@
     - name: "Imperial Flower Assault Troop"
       effects: 
         - desc: ATK + 50%
-        - desc: ATK + 70% at close range
+          all: true
+        - desc: ATK + 70% at short range
           all: true
     - name: "North Star Sword Style"
       effects: 
-        - desc: AP recovery when moving
+        - desc: AP recovers while moving
           all: true
     - name: "In Hot Blood"
       effects: 
         - desc: Imbues attacks with light
-        - desc: Increase allied rush gauge when using Sakura Shower or Sakura Ring
+        - desc: Rush gauge fills 3.5% for all allies when using Sakura Shower or Sakura Ring
     - name: "A Cold Pedigree"
       effects: 
         - desc: Nullifies charge assault critical damage penalty
