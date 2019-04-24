@@ -300,6 +300,7 @@
           - Lightning Damage
           - Earth Damage
           - Wind Damage
+        buffValue: 20          
     - desc: INT +5%
       meta:
         priority: 4
