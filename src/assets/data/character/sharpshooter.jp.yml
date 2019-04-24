@@ -3949,3 +3949,80 @@
         all: true
     power: ATK x 4500%
     maxHits: 3
+
+- name: Sophia Esteed (SRF)
+  cat: jp
+  rating: 0
+  picture: SRF_Sophia
+  weapon: bow
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 14520
+    atk: 3094
+    int: 1671
+    def: 1790
+    hit: 1320
+    grd: 988
+    ap: 120
+
+  talents:
+    - name: "Motivation for Research"
+      effects: 
+        - desc: Damage dealt +35%
+          -all: true
+        - desc: Damage dealt +50% when hitcount is >100
+          -all: true
+        - desc: Damage dealt +65% when hitcount is >250
+          -all: true
+    - name: "Longing to Catch-up"
+      effects: 
+        - desc: Hitcount timer +2 seconds
+          all: true
+        - desc: AP recovery +100%
+        - desc: Additional hit that deals 5% more damage when using skills
+    - name: "This Year's Goals"
+      effects: 
+        - desc: Nullifies all status ailments for 180s
+        - desc: Evasion possible during air attacks
+        - desc: Rush combo damage +60% when hitcount is >400
+    - name: "Change and Stability"
+      effects: 
+        - desc: ATK +20%
+        - desc: AP +20
+
+  skills:
+    - name: "Savage Sparrow"
+      picture: Savage_Sparrows
+      power: ATK x 160%
+      ap: 16
+      maxHits: 9
+    - name: "Crescent Wing"
+      picture: Crescent_Wings
+      power: ATK x 300%
+      ap: 29
+      maxHits: 2
+    - name: "Chaotic Blossoms"
+      picture: Chaotic_Blossoms_I
+      power: ATK x 1480%
+      ap: 50
+      maxHits: 11
+    - name: "Crimson Squall"
+      picture: Crimson_Squall_II
+      power: ATK x 1250%
+      ap: 42
+      maxHits: 9
+      
+  rush:
+    name: "Double Crescent Wing"
+    picture: Double_Crescent_Wing_SRF_Sophia
+    shortEffects: ATK +80% and AP cost -30% (Self/20s)
+    effects: 
+      - desc: ATK +80%
+        duration: 20
+      - desc: AP cost -30%
+        duration: 20
+    power: ATK x 5000%
+    maxHits: 12
