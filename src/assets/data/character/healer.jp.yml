@@ -1457,3 +1457,77 @@
         duration: 20
     power: ATK x 4000%
     maxHits: 4
+
+- name: Erica Fontaine (Sakura Taisen)
+  cat: jp
+  rating: 0
+  picture: Erika
+  weapon: gun
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 18291
+    atk: 1785
+    int: 2962
+    def: 1353
+    hit: 1036
+    grd: 1141
+    ap: 120
+
+  talents:
+    - name: "Paris Flower Assault Force"
+      effects: 
+        - desc: 90% chance of surviving a lethal attack when at 20% of max HP or more
+        - desc: 80% chance of surviving a lethal attack when at 20% of max HP or more
+          all: true
+        - desc: 90% chance of surviving a lethal attack when at 20% of max HP or more at close range
+          all: true
+    - name: "Nosy Sister"
+      effects: 
+        - desc: Recover allies' AP when casting symbology
+    - name: "Is Paris Burning?"
+      effects: 
+        - desc: Symbology cast time -60%
+        - desc: INT damage dealt +40% when skill chain is >3
+    - name: "Healing Light"
+      effects: 
+        - desc: HP +30%
+        - desc: INT +20%
+        - desc: AP +20
+
+  skills:
+    - name: "Grâce au Ciel"
+      picture: Grâce_au_Ciel
+      power: ATK x 230%
+      ap: 60
+      maxHits: 1
+    - name: "Mitraille de Balles"
+      picture: Break_Horn
+      power: ATK x 210%
+      ap: 20
+      maxHits: 8
+    - name: "Pluie de Balles"
+      picture: Crimson_Squall_I
+      power: ATK x 570%
+      ap: 25
+      maxHits: 9
+    - name: "Sacre de Lumiere"
+      picture: Sacre_de_Lumière
+      power: ATK x 810%
+      ap: 29
+      maxHits: 6
+      
+  rush:
+    name: "Évangile"
+    picture: Évangile_Erika
+    shortEffects: Recover 50% of max HP (Party) and elemental damage dealt +50% (Party/20s)
+    effects: 
+      - desc: Recover 50% of max HP
+        all: true
+      - desc: Elemental damage dealt +50%
+        all: true
+        duration: 20
+    power: ATK x 4500%
+    maxHits: 5
