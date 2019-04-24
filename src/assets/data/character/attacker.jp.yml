@@ -6548,7 +6548,7 @@
 - name: Ashton Anchors (Winter)
   cat: jp
   rating: 0
-  picture: 
+  picture: Holy_Night_Ashton
   weapon: scythe
   ace: true
   limited: true
@@ -6586,29 +6586,29 @@
 
   skills:
     - name: "Flame Dragon Breath"
-      picture: 
+      picture: Flame_Dragonbreath
       power: ATK x 240%
       ap: 19
       maxHits: 4
     - name: "Cold Dragon Breath"
-      picture: 
+      picture: Cold_Dragonbreath
       power: ATK x 240%
       ap: 19
       maxHits: 4
     - name: "Ground Burst"
-      picture: 
+      picture: Ground_Burst
       power: ATK x 280%
       ap: 19
       maxHits: 5
     - name: "Spinning Scythe"
-      picture: 
+      picture: Spinning_Scythe
       power: ATK x 520%
       ap: 24
       maxHits: 7
 
   rush:
     name: "Sacred Triangle"
-    picture: 
+    picture: Sacred_Triangle_Snowy_Sky_Ashton
     shortEffects: AP cost -30% and recovers 10% of max HP every 3 seconds (Self/20s)
     effects: 
       - desc: AP cost -30%
@@ -6617,4 +6617,3 @@
         duration: 20
     power: ATK x 5000%
     maxHits: 7
-    
