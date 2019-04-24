@@ -6544,3 +6544,76 @@
           buffValue: 80
     power: ATK x 4500%
     maxHits: 5
+
+- name: Ashton Anchors (Winter)
+  cat: jp
+  rating: 0
+  picture: Holy_Night_Ashton
+  weapon: scythe
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15855
+    atk: 3245
+    int: 1523
+    def: 1995
+    hit: 1134
+    grd: 819
+    ap: 120
+
+  talents:
+    - name: "Cooking Master"
+      effects: 
+        - desc: Elemental damage dealt +25%
+          all: true
+        - desc: Elemental damage dealt +45% when HP is 100%
+          all: true
+    - name: "Two Headed Dragon's Winter Preparation"
+      effects: 
+        - desc: Critical hit chance +20% after using fire skills (10s)
+        - desc: Absorbs 10% of damage dealt by normal attacks as HP after using ice skills (10s)
+    - name: "Wild Deer of Abundance"
+      effects: 
+        - desc: Normal attack AP recovery +150%
+          -all: true
+        - desc: Recovers 100% AP on perfect dodge
+    - name: "Finely Decorated Horns"
+      effects: 
+        - desc: ATK +20%
+        - desc: AP +20
+
+  skills:
+    - name: "Flame Dragon Breath"
+      picture: Flame_Dragonbreath
+      power: ATK x 240%
+      ap: 19
+      maxHits: 4
+    - name: "Cold Dragon Breath"
+      picture: Cold_Dragonbreath
+      power: ATK x 240%
+      ap: 19
+      maxHits: 4
+    - name: "Ground Burst"
+      picture: Ground_Burst
+      power: ATK x 280%
+      ap: 19
+      maxHits: 5
+    - name: "Spinning Scythe"
+      picture: Spinning_Scythe
+      power: ATK x 520%
+      ap: 24
+      maxHits: 7
+
+  rush:
+    name: "Sacred Triangle"
+    picture: Sacred_Triangle_Snowy_Sky_Ashton
+    shortEffects: AP cost -30% and recovers 10% of max HP every 3 seconds (Self/20s)
+    effects: 
+      - desc: AP cost -30%
+        duration: 20
+      - desc: Recovers 10% of max HP every 3 seconds
+        duration: 20
+    power: ATK x 5000%
+    maxHits: 7

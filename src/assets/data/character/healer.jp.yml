@@ -1379,3 +1379,81 @@
         duration: 20
     power: INT x 3500%
     maxHits: 12
+
+- name: Clair Lasbard (Winter)
+  cat: jp
+  rating: 0
+  picture: Snowy_Sky_Clair
+  weapon: tome
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 14249
+    atk: 1747
+    int: 2884
+    def: 1563
+    hit: 1036
+    grd: 1141
+    ap: 100
+
+  talents:
+    - name: "Doting Father's Spirit"
+      effects: 
+        - desc: Able to recover Party's HP above the limit
+        - desc: Adds an additional 10000 'Overlimit' HP
+          all: true
+    - name: "Crafty Mother's Doting Spirit"
+      effects: 
+        - desc: ATK/INT damage dealt +25%
+          all: true
+        - desc: ATK/INT damage dealt +35% when HP is 100%
+          all: true
+    - name: "Festive Storyteller"
+      effects: 
+        - desc: Symbology cast time -40%
+        - desc: No flinching when casting symbology
+    - name: "A Story Dedicated to Tria"
+      effects: 
+        - desc: HP +15%
+        - desc: INT +15%
+
+  skills:
+    - name: "Faerie Light"
+      picture: Faerie_Light
+      power: INT x 250%
+      ap: 60
+      notes: Recover HP for all allies
+      maxHits: 1
+    - name: "Lightning Blast"
+      picture: Lightning
+      element: Lightning
+      power: INT x 250%
+      ap: 19
+      maxHits: 10
+    - name: "Thunder Flare"
+      picture: Thunder_Flare
+      element: Lightning
+      power: INT x 510%
+      ap: 25
+      maxHits: 4
+    - name: "Thunder Javelin"
+      picture: Thunder_Javelin
+      element: Lightning
+      power: INT x 870%
+      ap: 27
+      maxHits: 10
+      
+  rush:
+    name: "Stellar Fairy Tale"
+    picture: Stellar_Fairy_Tale_Holy_Night_Clair
+    shortEffects: Recovers 80% of max HP (Party) and ATK/INT damage dealt +50% (Party/20s)
+    effects: 
+      - desc: Recovers 80% of max HP
+        all: true
+      - desc: ATK/INT damage dealt +50%
+        all: true
+        duration: 20
+    power: ATK x 4000%
+    maxHits: 4
