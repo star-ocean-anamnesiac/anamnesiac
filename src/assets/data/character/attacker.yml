@@ -4180,7 +4180,7 @@
             buffValue: 40
     - name: "Hope of Nede"
       effects: 
-        - desc: Rush gauge fills slightly for all allies when using Rising Dragon
+        - desc: Rush gauge fills 5% for all allies when using Rising Dragon
 
   skills:
     - name: "Twister"
