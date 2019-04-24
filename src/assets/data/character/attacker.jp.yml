@@ -6727,11 +6727,12 @@
     - name: "Imperial Flower Assault Troop"
       effects: 
         - desc: ATK + 50%
+          all: true
         - desc: ATK + 70% at close range
           all: true
     - name: "North Star Sword Style"
       effects: 
-        - desc: AP recovery when moving
+        - desc: AP recovers while moving
           all: true
     - name: "In Hot Blood"
       effects: 
