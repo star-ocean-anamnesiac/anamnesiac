@@ -3972,11 +3972,11 @@
     - name: "Motivation for Research"
       effects: 
         - desc: Damage dealt +35%
-          -all: true
+          all: true
         - desc: Damage dealt +50% when hitcount is >100
-          -all: true
+          all: true
         - desc: Damage dealt +65% when hitcount is >250
-          -all: true
+          all: true
     - name: "Longing to Catch-up"
       effects: 
         - desc: Hitcount timer +2 seconds
