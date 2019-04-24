@@ -6704,3 +6704,75 @@
         duration: 20
     power: ATK x 5000%
     maxHits: 5
+
+- name: Sakura Shinguji (Sakura Taisen)
+  cat: jp
+  rating: 0
+  picture: Sakura
+  weapon: ohs
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 2718
+    int: 1563
+    def: 1957
+    hit: 1127
+    grd: 833
+    ap: 100
+
+  talents:
+    - name: "Imperial Flower Assault Troop"
+      effects: 
+        - desc: ATK + 50%
+        - desc: ATK + 70% at close range
+          all: true
+    - name: "North Star Sword Style"
+      effects: 
+        - desc: AP recovery when moving
+          all: true
+    - name: "In Hot Blood"
+      effects: 
+        - desc: Imbues attacks with light
+        - desc: Increase allied rush gauge when using Sakura Shower or Sakura Ring
+    - name: "A Cold Pedigree"
+      effects: 
+        - desc: Nullifies charge assault critical damage penalty
+        - desc: AP recovery +100%
+        - desc: Cancel bonus starts at 200% when using charge assault
+
+  skills:
+    - name: "Sakura Viewing"
+      picture: Double_Slash_I
+      power: ATK x 320%
+      ap: 18
+      maxHits: 2
+    - name: "Sakura Ring"
+      picture: Air_Raid
+      element: Light
+      power: ATK x 720%
+      ap: 34
+      maxHits: 6
+    - name: "Sakura Petals"
+      picture: Ouka_Hoshin
+      power: ATK x 270%
+      ap: 16
+      maxHits: 1
+    - name: "Sakura Shower"
+      picture: Ouka_Kirisho
+      power: ATK x 840%
+      ap: 36
+      maxHits: 4
+
+  rush:
+    name: "Heavenly Sakura"
+    picture: Ouka_Tenshou_Sakura
+    shortEffects: ATK damage dealt +60% (Party/20s)
+    effects: 
+      - desc: ATK damage dealt +60%
+        duration: 20
+        all: true
+    power: ATK x 4500%
+    maxHits: 6
