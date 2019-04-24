@@ -1498,30 +1498,30 @@
         - desc: AP +20
 
   skills:
-    - name: ""
-      picture: 
+    - name: "Grâce au Ciel"
+      picture: Grâce_au_Ciel
       power: ATK x 230%
       ap: 60
       maxHits: 1
-    - name: ""
-      picture: 
+    - name: "Mitraille de Balles"
+      picture: Break_Horn
       power: ATK x 210%
       ap: 20
       maxHits: 8
-    - name: ""
-      picture: 
+    - name: "Pluie de Balles"
+      picture: Crimson_Squall_I
       power: ATK x 570%
       ap: 25
       maxHits: 9
-    - name: ""
-      picture: 
+    - name: "Sacre de Lumiere"
+      picture: Sacre_de_Lumière
       power: ATK x 810%
       ap: 29
       maxHits: 6
       
   rush:
     name: "Évangile"
-    picture: 
+    picture: Évangile_Erika
     shortEffects: Recover 50% of max HP (Party) and elemental damage dealt +50% (Party/20s)
     effects: 
       - desc: Recover 50% of max HP
