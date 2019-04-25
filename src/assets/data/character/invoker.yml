@@ -1162,7 +1162,6 @@
  
 - name: Bernard (Scholar)
   cat: gl
-  rating: 0
   picture: Manuscript_Bernard
   weapon: tome
   star: 3
@@ -1231,7 +1230,6 @@
     
 - name: Seth (Scholar)
   cat: gl
-  rating: 0
   picture: Manuscript_Seth
   weapon: tome
   star: 3
@@ -1307,7 +1305,6 @@
 
 - name: Rochelle (Seer)
   cat: gl
-  rating: 0
   picture: Jewel_Rochelle
   weapon: orb
   star: 3
@@ -1381,7 +1378,6 @@
 
 - name: Renier (Scholar)
   cat: gl
-  rating: 0
   picture: Manuscript_Renier
   weapon: tome
   star: 3
@@ -1455,7 +1451,6 @@
 
 - name: Winny (Seer)
   cat: gl
-  rating: 0
   picture: Jewel_Winny
   weapon: orb
   star: 3
@@ -1524,7 +1519,6 @@
 
 - name: Eleanor (Seer)
   cat: gl
-  rating: 0
   picture: Jewel_Eleanor
   weapon: orb
   star: 3
@@ -1600,7 +1594,6 @@
 
 - name: Seth
   cat: gl
-  rating: 0
   picture: Seth
   weapon: staff
   star: 3
@@ -1673,7 +1666,6 @@
 
 - name: Rochelle
   cat: gl
-  rating: 0
   picture: Rochelle
   weapon: staff
   star: 3
@@ -1741,7 +1733,6 @@
 
 - name: Welch Vineyard
   cat: gl
-  rating: 0
   picture: Welch
   weapon: staff
   star: 4
@@ -1815,7 +1806,6 @@
 
 - name: Eleyna Farrence
   cat: gl
-  rating: 0
   picture: Eleyna
   weapon: staff
   star: 4
@@ -2236,7 +2226,7 @@
       
 - name: Freya
   cat: gl
-  rating: 0
+  rating: 8.5
   picture: Freya
   weapon: orb
   ace: true
@@ -2362,7 +2352,6 @@
 
 - name: Mystina
   cat: gl
-  rating: 0
   picture: Mystina
   weapon: staff
   ace: true
@@ -2490,7 +2479,8 @@
       *Normal > Lance > Cross > Javelin^n*
       
       *Normal > CA Javelin/Storm > Cross > Javelin - (102 or cast before normal hits.)*
-      
+ 
+ 
 - name: Lezard Valeth
   cat: gl
   rating: 8
