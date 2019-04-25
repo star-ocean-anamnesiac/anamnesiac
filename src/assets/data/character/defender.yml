@@ -258,7 +258,6 @@
 
 - name: Shimada
   cat: gl
-  rating: 0
   picture: Shimada
   weapon: bns
   star: 4
@@ -331,7 +330,6 @@
 
 - name: Stephen D. Kenny
   cat: gl
-  rating: 0
   picture: Stephen
   weapon: bns
   star: 4
@@ -1384,7 +1382,6 @@
  
 - name: Gideon
   cat: gl
-  rating: 0
   picture: Gideon
   weapon: bns
   ace: false
@@ -1442,7 +1439,6 @@
     
 - name: Renier
   cat: gl
-  rating: 0
   picture: Renier
   weapon: bns
   ace: false
@@ -1633,7 +1629,6 @@
 
 - name: Hrist Valkyrie
   cat: gl
-  rating: 0
   picture: Hrist
   weapon: bns
   ace: true
