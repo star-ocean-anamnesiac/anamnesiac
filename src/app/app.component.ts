@@ -88,6 +88,9 @@ export class AppComponent {
       e.preventDefault();
       this.a2hsPrompt = e;
     });
+
+    const region = new URLSearchParams(window.location.search).get('region');
+    this.isJP = region === 'jp';
   }
 
   private async loadRootData() {
