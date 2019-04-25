@@ -1633,7 +1633,6 @@
 
 - name: Heinrich (Robust)
   cat: gl
-  rating: 0
   picture: Huge_Sword_Heinrich
   weapon: greatsword
   ace: false
@@ -1698,7 +1697,6 @@
 
 - name: Pamela (Seer)
   cat: gl
-  rating: 0
   picture: Jewel_Pamela
   weapon: orb
   ace: false
@@ -1767,7 +1765,6 @@
    
 - name: Chloe
   cat: gl
-  rating: 0
   picture: Chloe
   weapon: staff
   ace: false
@@ -1831,7 +1828,6 @@
 
 - name: Winny
   cat: gl
-  rating: 0
   picture: Winny
   weapon: staff
   ace: false
@@ -1890,7 +1886,6 @@
 
 - name: Dominic (Scholar)
   cat: gl
-  rating: 0
   picture: Manuscript_Dominic
   weapon: tome
   ace: false
@@ -1950,7 +1945,6 @@
 
 - name: Sidonius
   cat: gl
-  rating: 0
   picture: Sidonius
   weapon: staff
   ace: false
@@ -2019,7 +2013,6 @@
 
 - name: Hana
   cat: gl
-  rating: 0
   picture: Hana
   weapon: staff
   ace: false
@@ -2085,7 +2078,6 @@
 
 - name: Raffine
   cat: gl
-  rating: 0
   picture: Raffine
   weapon: staff
   ace: false
