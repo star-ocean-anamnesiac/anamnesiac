@@ -39,6 +39,9 @@ export class CharacterListPage implements OnInit, OnDestroy {
   @LocalStorage()
   public hideSemi: boolean;
 
+  @LocalStorage()
+  public gridView: boolean;
+
   public tierSortedCharacters: { [key: string]: Character[] } = {};
   public allTiers: string[] = [];
 

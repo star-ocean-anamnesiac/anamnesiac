@@ -8,6 +8,9 @@
     </ion-title>
 
     <ion-buttons slot="end" *ngIf="!isError">
+      <ion-button (click)="gridView = !gridView">
+        <ion-icon [name]="gridView ? 'list' : 'grid'"></ion-icon>
+      </ion-button> 
       <ion-button (click)="toggleSearch()">
         <ion-icon name="search"></ion-icon>
       </ion-button> 
@@ -18,7 +21,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content [class.grid]="gridView">
 
   <div class="stars small"></div>
   <div class="stars medium"></div>
@@ -39,8 +42,15 @@
   ></ion-searchbar>
 
   <ion-list *ngIf="!isError && sorting === 'alpha'">
-    <ion-item *ngFor="let char of alphaSortedCharacters | filterBy: { name: searchValue }" detail (click)="loadCharacter(char)">
-      <ng-container *ngTemplateOutlet="character; context: { char: char }"></ng-container>
+
+    <ion-item *ngFor="let char of alphaSortedCharacters | filterBy: { name: searchValue }" detail (click)="loadCharacter(char)" [class.short]="gridView">
+      <ng-container *ngIf="!gridView">
+        <ng-container *ngTemplateOutlet="character; context: { char: char }"></ng-container>
+      </ng-container>
+
+      <ng-container *ngIf="gridView">
+        <ng-container *ngTemplateOutlet="charGrid; context: { char: char }"></ng-container>
+      </ng-container>
     </ion-item>
   </ion-list>
 
@@ -48,8 +58,14 @@
     <ion-item-group *ngFor="let weapon of allWeapons">
       <ion-item-divider><strong><app-weapon [weapon]="weapon"></app-weapon></strong></ion-item-divider>
 
-      <ion-item *ngFor="let char of weaponSortedCharacters[weapon] | filterBy: { name: searchValue }" detail (click)="loadCharacter(char)">
-        <ng-container *ngTemplateOutlet="character; context: { char: char }"></ng-container>
+      <ion-item *ngFor="let char of weaponSortedCharacters[weapon] | filterBy: { name: searchValue }" detail (click)="loadCharacter(char)" [class.short]="gridView">
+        <ng-container *ngIf="!gridView">
+          <ng-container *ngTemplateOutlet="character; context: { char: char }"></ng-container>
+        </ng-container>
+  
+        <ng-container *ngIf="gridView">
+          <ng-container *ngTemplateOutlet="charGrid; context: { char: char }"></ng-container>
+        </ng-container>
       </ion-item>
     </ion-item-group>
   </ion-list>
@@ -58,13 +74,34 @@
     <ion-item-group *ngFor="let tier of allTiers">
       <ion-item-divider><strong>{{ tier }}</strong></ion-item-divider>
 
-      <ion-item *ngFor="let char of tierSortedCharacters[tier] | filterBy: { name: searchValue }" detail (click)="loadCharacter(char)">
-        <ng-container *ngTemplateOutlet="character; context: { char: char }"></ng-container>
+      <ion-item *ngFor="let char of tierSortedCharacters[tier] | filterBy: { name: searchValue }" detail (click)="loadCharacter(char)" [class.short]="gridView">
+        <ng-container *ngIf="!gridView">
+          <ng-container *ngTemplateOutlet="character; context: { char: char }"></ng-container>
+        </ng-container>
+  
+        <ng-container *ngIf="gridView">
+          <ng-container *ngTemplateOutlet="charGrid; context: { char: char }"></ng-container>
+        </ng-container>
       </ion-item>
     </ion-item-group>
   </ion-list>
 
 </ion-content>
+
+<ng-template #charGrid let-char="char">
+  <span slot="start" class="picture-class-chunk" [class.margin-right]="isFiltered">
+
+    <app-appicon [name]="char.picture" [forceWidth]="96" [forceHeight]="96" type="char"></app-appicon>
+
+    <span class="awakened-container" *ngIf="char.awakened">
+      <app-appicon [name]="char.awakened === true ? 'misc-awakening' : 'misc-awakening-9'" [scaleX]="0.5" [scaleY]="0.5"></app-appicon>
+    </span>
+
+    <app-appicon class="icon-type" [name]="'class-' + char.type" [scaleX]="0.25" [scaleY]="0.25"></app-appicon>
+    <app-appicon class="icon-star" [name]="'char-' + char.star" [scaleX]="0.5" [scaleY]="0.5"></app-appicon> 
+    <app-appicon class="icon-weapon" [name]="'menu-' + char.weapon" [scaleX]="0.5" [scaleY]="0.5"></app-appicon>
+  </span>
+</ng-template>
 
 <ng-template #character let-char="char">
 

@@ -13,7 +13,7 @@
 @import 'theme/stars.scss';
 
 .hidden {
-  display: none;
+  display: none !important;
 
   &-xs {
     @media only screen and (max-width: 575px) {
@@ -136,4 +136,43 @@ ion-item, ion-item-divider {
 .item-icon {
   background-color: #141D22;
   outline: 3px solid #183454;
+}
+
+
+.grid ion-list {
+  ion-item {
+    --padding-top: 0;
+    --padding-bottom: 0;
+    --padding-start: 0;
+    --padding-end: 0;
+
+    &.short {
+      width: 96px;
+      height: 96px;
+      float: left;
+
+      .picture-class-chunk {
+        max-height: 96px;
+      }
+      
+      .icon-type, .icon-star, .icon-weapon {
+        position: absolute;
+      }
+
+      .icon-star {
+        top: 0;
+        left: 0;
+      }
+
+      .icon-type {
+        top: 0;
+        right: 0;
+      }
+
+      .icon-weapon {
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
 }
