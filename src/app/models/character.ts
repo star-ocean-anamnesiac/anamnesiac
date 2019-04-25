@@ -82,7 +82,7 @@ export interface Character {
   awakened?: boolean|number;
 
   // the rating 0-10
-  rating: number;
+  rating?: number;
 
   // a ref to the picture of the character (in assets/character)
   picture: string;
