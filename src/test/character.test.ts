@@ -42,7 +42,6 @@ test('All characters have valid information', t => {
 
       t.falsy(char.type, 'type should not be set' + parenName);
       t.true(char.cat === 'jp' || char.cat === 'gl', 'cat must be jp or gl' + parenName);
-      t.true(char.rating >= 0 && char.rating <= 10, 'rating must be between 0 and 10' + parenName);
       t.truthy(char.picture, 'must have a picture url' + parenName);
       t.truthy(weaponHash[char.weapon], `char must have a valid weapon type (${char.weapon} is invalid)` + parenName);
       t.true(char.star >= 3 && char.star <= 5, 'star level must be between 3 and 5' + parenName);
