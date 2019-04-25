@@ -30,6 +30,15 @@ export class CharacterListPage implements OnInit, OnDestroy {
   @LocalStorage()
   public show34: boolean;
 
+  @LocalStorage()
+  public hideAce: boolean;
+
+  @LocalStorage()
+  public hideLimited: boolean;
+
+  @LocalStorage()
+  public hideSemi: boolean;
+
   public tierSortedCharacters: { [key: string]: Character[] } = {};
   public allTiers: string[] = [];
 
@@ -179,11 +188,34 @@ export class CharacterListPage implements OnInit, OnDestroy {
 
     popover.onDidDismiss().then(({ data }) => {
       if(!data) { return; }
+
+      let update = false;
+
       if(data === 'show34') {
         this.show34 = !this.show34;
+        update = true;
+      }
+
+      if(data === 'hideAce') {
+        this.hideAce = !this.hideAce;
+        update = true;
+      }
+
+      if(data === 'hideLimited') {
+        this.hideLimited = !this.hideLimited;
+        update = true;
+      }
+
+      if(data === 'hideSemi') {
+        this.hideSemi = !this.hideSemi;
+        update = true;
+      }
+
+      if(update) {
         this.updateCharacterListOutsideZone();
         return;
       }
+
       this.sorting = <'tier'|'alpha'|'weapon'>data;
       this.updateCharacterListOutsideZone();
     });
@@ -225,6 +257,18 @@ export class CharacterListPage implements OnInit, OnDestroy {
 
     if(!this.show34) {
       arr = arr.filter(x => x.star >= 5);
+    }
+
+    if(this.hideAce) {
+      arr = arr.filter(x => !x.ace);
+    }
+
+    if(this.hideLimited) {
+      arr = arr.filter(x => !x.limited);
+    }
+
+    if(this.hideSemi) {
+      arr = arr.filter(x => !x.semi);
     }
 
     this.isFiltered = !!curFilter;

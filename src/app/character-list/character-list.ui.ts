@@ -19,6 +19,18 @@ import { LocalStorage } from 'ngx-webstorage';
         <ion-label>Show 3*/4*</ion-label>
         <ion-checkbox [checked]="show34"></ion-checkbox>
       </ion-item>
+      <ion-item (click)="popoverCtrl.dismiss('hideAce')">
+        <ion-label>Show ACE</ion-label>
+        <ion-checkbox [checked]="!hideAce"></ion-checkbox>
+      </ion-item>
+      <ion-item (click)="popoverCtrl.dismiss('hideLimited')">
+        <ion-label>Show Limited</ion-label>
+        <ion-checkbox [checked]="!hideLimited"></ion-checkbox>
+      </ion-item>
+      <ion-item (click)="popoverCtrl.dismiss('hideSemi')">
+        <ion-label>Show Semi-Limited</ion-label>
+        <ion-checkbox [checked]="!hideSemi"></ion-checkbox>
+      </ion-item>
     </ion-list>
   </ion-content>
   `,
@@ -28,6 +40,15 @@ export class CharacterSortPopover {
 
   @LocalStorage()
   public show34: boolean;
+
+  @LocalStorage()
+  public hideAce: boolean;
+
+  @LocalStorage()
+  public hideLimited: boolean;
+
+  @LocalStorage()
+  public hideSemi: boolean;
 
   constructor(public popoverCtrl: PopoverController) {}
 }
