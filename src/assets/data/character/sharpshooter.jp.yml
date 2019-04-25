@@ -4102,3 +4102,65 @@
         duration: 20
     power: ATK x 4500%
     maxHits: 11
+
+- name: Vulcan S90
+  cat: jp
+  picture: 
+  weapon: launcher
+  ace: true
+  star: 5
+
+  stats:
+    hp: 
+    atk: 
+    int: 
+    def: 
+    hit: 
+    grd: 
+    ap: 100
+
+  talents:
+    - name: ""
+      effects: 
+        - desc: 
+    - name: ""
+      effects: 
+        - desc: 
+    - name: ""
+      effects: 
+        - desc: 
+    - name: ""
+      effects: 
+        - desc: 
+
+  skills:
+    - name: ""
+      picture: 
+      power: ATK x 150%
+      ap: 13
+      maxHits: 5
+    - name: ""
+      picture: 
+      power: ATK x 150%
+      ap: 13
+      maxHits: 5
+    - name: ""
+      picture: 
+      element: Lightning
+      power: ATK x 470%
+      ap: 23
+      maxHits: 7
+    - name: ""
+      picture: 
+      power: ATK x 1200%
+      ap: 40
+      maxHits: 10
+      
+  rush:
+    name: "Dimension Striker"
+    picture: 
+    shortEffects: 
+    effects: 
+      - desc: 
+    power: ATK x 4500%
+    maxHits: 5
