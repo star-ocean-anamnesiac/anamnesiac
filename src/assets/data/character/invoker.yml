@@ -2483,7 +2483,6 @@
  
 - name: Lezard Valeth
   cat: gl
-  rating: 8
   picture: Lezard
   weapon: tome
   ace: true
