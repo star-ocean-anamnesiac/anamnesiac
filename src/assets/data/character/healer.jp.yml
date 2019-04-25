@@ -1534,63 +1534,72 @@
 
 - name: Rena Lanford (Blue Sphere)
   cat: jp
-  picture: 
-  weapon: 
+  picture: Blue_Sphere_Rena
+  weapon: dagger
   ace: true
   limited: true
   star: 5
 
   stats:
-    hp: 
-    atk: 
-    int: 
-    def: 
-    hit: 
-    grd: 
+    hp: 12390
+    atk: 1759
+    int: 2482
+    def: 1549
+    hit: 1057
+    grd: 1134
     ap: 100
 
   talents:
-    - name: ""
+    - name: "A Dream to Study Abroad"
       effects: 
-        - desc: 
-    - name: ""
+        - desc: Critical hit chance +20%
+          all: true
+        - desc: Critical hit chance +40% when not behind target
+          all: true
+        - desc: Critical damage dealt +20%
+          all: true
+        - desc: Critical damage dealt +40% when not behind target
+          all: true
+    - name: "Mother's Support"
       effects: 
-        - desc: 
-    - name: ""
+        - desc: Recovers AP for allies when using skills
+    - name: "Days Surrounded by Advanced Technology"
       effects: 
-        - desc: 
-    - name: ""
+        - desc: 90% chance of surviving a lethal attack when at 10% of max HP or more when targeted by enemy
+    - name: "Path to Medical Care"
       effects: 
-        - desc: 
+        - desc: Evasion possible during air attacks
+        - desc: Symbology cast time -70% when not behind target
 
   skills:
-    - name: ""
-      picture: 
-      power: INT x 0%
-      ap: 
-      maxHits: 
-    - name: ""
-      picture: 
-      power: INT x 0%
-      ap: 
-      maxHits: 
-    - name: ""
-      picture: 
-      power: INT x 0%
-      ap: 
-      maxHits: 
-    - name: ""
-      picture: 
-      power: INT x 0%
-      ap: 
-      maxHits: 
+    - name: "Faerie Light - Blue"
+      picture: Skill_Placeholder
+      power: INT x 150%
+      ap: 30
+      maxHits: 1
+    - name: "Sylvan Shot - Blue"
+      picture: Skill_Placeholder
+      power: INT x 150%
+      ap: 15
+      maxHits: 8
+    - name: "Light Cross - Blue"
+      picture: Skill_Placeholder
+      element: Light
+      power: INT x 550%
+      ap: 19
+      maxHits: 10
+    - name: "Ray - Blue"
+      picture: Skill_Placeholder
+      element: Light
+      power: INT x 720%
+      ap: 24
+      maxHits: 13
       
   rush:
-    name: ""
-    picture: 
-    element: 
-    shortEffects: 
+    name: "Celestial Arrow"
+    picture: Celestial_Arrow_Blue_Sphere_Rena
+    shortEffects: Revives all Attackers, Shooters and Casters
     effects: 
-      - desc: 
-    power: INT x 0%
-    maxHits: 
+      - desc: Revives all Attackers, Shooters and Casters
+    power: INT x 4000%
+    maxHits: 5
