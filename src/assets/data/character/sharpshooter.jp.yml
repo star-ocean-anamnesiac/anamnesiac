@@ -4173,3 +4173,153 @@
         duration: 20
     power: ATK x 4500%
     maxHits: 5
+
+- name: Sophia Esteed (Idol)
+  cat: jp
+  picture: Singing_Star_Sophia
+  weapon: launcher
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 14175
+    atk: 2993
+    int: 1563
+    def: 1720
+    hit: 1378
+    grd: 931
+    ap: 100
+
+  talents:
+    - name: "LOVE CONNECTION"
+      effects: 
+        - desc: ATK/INT damage dealt +20%
+          all: true
+        - desc: ATK/INT damage dealt +20% when not behind target
+          all: true
+    - name: "Caretaker of the Cats"
+      effects: 
+        - desc: AP cost -15% when not behind target
+          all: true
+        - desc: AP cost -30% when HP is 100% and not behind target
+          all: true
+    - name: "Orange Connection"
+      effects: 
+        - desc: Critical hit chance +50% when HP is 100%
+        - desc: Critical damage dealt +50%
+        - desc: Damage taken -100% on perfect dodge (0.5s)
+    - name: "Feelings that Connect"
+      effects: 
+        - desc: ATK +20%
+        - desc: HIT +10%
+
+  skills:
+    - name: "Black Hole Sphere"
+      picture: Skill_Placeholder
+      power: ATK x 340%
+      ap: 32
+      maxHits: 10
+    - name: "Shocking Scratch"
+      picture: Skill_Placeholder
+      power: ATK x 170%
+      ap: 18
+      maxHits: 3
+    - name: "Quicksilver Bullet"
+      picture: Skill_Placeholder
+      power: ATK x 170%
+      ap: 18
+      maxHits: 5
+    - name: "Nyastice Savior"
+      picture: Skill_Placeholder
+      power: ATK x 710%
+      ap: 30
+      maxHits: 6
+      
+  rush:
+    name: "Nyanderful Stage"
+    picture: Nyanderful_Stage_Singing_Star_Sophia
+    shortEffects: ATK +80% and recovers 10% of max HP every 3 seconds (Self/20s)
+    effects: 
+      - desc: ATK +80%
+        duration: 20
+      - desc: Recovers 10% of max HP every 3 seconds
+        duration: 20
+    power: ATK x 5000%
+    maxHits: 5
+
+- name: Claude Kenny (Blue Sphere)
+  cat: jp
+  picture: Blue_Sphere_Claude
+  weapon: gun
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15750
+    atk: 2508
+    int: 1537
+    def: 1575
+    hit: 1232
+    grd: 931
+    ap: 100
+
+  talents:
+    - name: "Second Lieutenant's Gun Judgement"
+      effects: 
+        - desc: Damage dealt +35%
+          all: true
+        - desc: Damage dealt +70% when not behind target
+          all: true
+    - name: "Advocate of Studying Abroad"
+      effects: 
+        - desc: Normal attack AP recovery +200%
+          all: true
+        - desc: Evasion AP cost -50%
+          all: true
+        - desc: Movement rate +30%
+          all: true
+    - name: "Trials and Growth"
+      effects: 
+        - desc: Damage dealt +50% by skills when not behind target
+    - name: "Confident Poise"
+      effects: 
+        - desc: Damage taken -30%
+        - desc: No flinching when taking damage of 10% of max HP or less (Self/Healers)
+
+  skills:
+    - name: "Phase Gun - Penetrate"
+      picture: Skill_Placeholder
+      power: ATK x 0%
+      ap: 14
+      maxHits: 2
+    - name: "Phase Gun - Detonate"
+      picture: Skill_Placeholder
+      power: ATK x 0%
+      ap: 25
+      maxHits: 4
+    - name: "Phase Gun - Diffusion"
+      picture: Skill_Placeholder
+      power: ATK x 0%
+      ap: 17
+      maxHits: 6
+    - name: "Phase Gun - Tracing"
+      picture: Skill_Placeholder
+      power: ATK x 0%
+      ap: 24
+      maxHits: 8
+      
+  rush:
+    name: "7 Stars Dragon Wave"
+    picture: 7_Stars_Dragon_Wave_Blue_Sphere_Claude
+    shortEffects: AP cost -50% and single target damage +50% (Party/10s)
+    effects: 
+      - desc: AP cost -50%
+        all: true
+        duration: 10
+      - desc: Single target damage +50%
+        all: true
+        duration: 10
+    power: ATK x 4500%
+    maxHits: 9

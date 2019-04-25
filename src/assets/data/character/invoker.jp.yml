@@ -3806,7 +3806,6 @@
 
   talents:
     - name: "Fox Spirit's Pride"
-      shortEffects: ATK +40, ATK +50% at short range and INT +40%, INT +50% at long range (Party)
       effects: 
         - desc: ATK +40%
           all: true
@@ -3951,3 +3950,76 @@
         duration: 20
     power: INT x 4500%
     maxHits: 9
+
+- name: Evelysse (Idol)
+  cat: jp
+  picture: Singing_Star_Evelysse
+  weapon: scythe
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15540
+    atk: 2704
+    int: 2704
+    def: 1916
+    hit: 1162
+    grd: 833
+    ap: 100
+
+  talents:
+    - name: "My Own Starlight"
+      effects: 
+        - desc: ATK/INT +35%
+          all: true
+        - desc: ATK/INT +55% when not behind target
+          all: true
+    - name: "Always the Straight Man"
+      effects: 
+        - desc: Rush combo damage +60% when HP is 100% and hitcount is >150
+          all: true
+    - name: "Crimson Rose of Determination"
+      effects: 
+        - desc: Normal attack AP recovery +200% when not behind target
+          all: true
+        - desc: Absorbs 00% of damage dealt by normal attacks as HP
+          all: true
+    - name: "A Star that Illuminates Darkness"
+      effects: 
+        - desc: Symbology cast time -50%
+        - desc: Evasion possible during air attacks
+        - desc: Recovers 100% AP on perfect dodge
+
+  skills:
+    - name: "Illusion Feather"
+      picture: Skill_Placeholder
+      power: INT x 480%
+      ap: 23
+      maxHits: 12
+    - name: "Rotation Slash"
+      picture: Skill_Placeholder
+      power: INT x 810%
+      ap: 29
+      maxHits: 6
+    - name: "Cool Servant"
+      picture: Skill_Placeholder
+      power: INT x 1390%
+      ap: 34
+      maxHits: 6
+    - name: "Ice Cool Blast"
+      picture: Skill_Placeholder
+      power: INT x 1470%
+      ap: 37
+      maxHits: 6
+      
+  rush:
+    name: "Shout of Heart"
+    picture: Shout_of_Heart_Singing_Star_Evelysse
+    shortEffects: Elemental damage dealt +70% (Party/20s)
+    effects: 
+      - desc: Elemental damage dealt +70%
+        all: true
+        duration: 20
+    power: INT x 4500%
+    maxHits: 14

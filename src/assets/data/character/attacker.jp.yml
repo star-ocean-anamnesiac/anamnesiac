@@ -6849,3 +6849,149 @@
         duration: 20
     power: ATK x 5000%
     maxHits: 16
+
+- name: Mikasa Ackerman
+  cat: jp
+  picture: Mikasa
+  weapon: dualswords
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15750
+    atk: 2823
+    int: 1537
+    def: 1852
+    hit: 1141
+    grd: 840
+    ap: 100
+
+  talents:
+    - name: "Leader of the 104th Training Corps"
+      effects: 
+        - desc: ATK +60% when Mikasa's HP is 100%
+          all: true
+    - name: "Important Muffler"
+      effects: 
+        - desc: AP cost -30%
+        - desc: AP cost -60% when behind target
+        - desc: Absorbs 1.5% of damage dealt by skills as HP when not in front of target and skill chain is >3
+    - name: "Vertical Maneuvering Equipment"
+      effects: 
+        - desc: Cancel bonus starts at 150% when using charge assault
+        - desc: Evasion possible during air attacks
+        - desc: No flinching when in air
+    - name: "Cruel World"
+      effects: 
+        - desc: Rush combo damage +40% when hitcount is >200
+        - desc: ATK +30% when hitcount is >400
+
+  skills:
+    - name: "Swirling Cut"
+      picture: Swirling_Sword_Slash
+      power: ATK x 740%
+      ap: 38
+      maxHits: 5
+    - name: "Gale Slash"
+      picture: Skill_Placeholder
+      power: ATK x 390%
+      ap: 29
+      maxHits: 6
+    - name: "Whirlwind Cut"
+      picture: Skill_Placeholder
+      power: ATK x 390%
+      ap: 29
+      maxHits: 6
+    - name: "Soaring Spiral Slash"
+      picture: Skill_Placeholder
+      power: ATK x 520%
+      ap: 35
+      maxHits: 4
+      
+  rush:
+    name: "High Speed Reverberation Cut"
+    picture: High_Speed_Reverberation_Slash_Mikasa
+    shortEffects: AP cost -80% (Self/5s) and AP cost -60% (Party/5s)
+    effects: 
+      - desc: AP cost -80%
+        duration: 5
+      - desc: AP cost -60%
+        duration: 5
+        all: true
+    power: ATK x 5000%
+    maxHits: 10
+
+- name: Levi Ackerman
+  cat: jp
+  picture: Levi
+  weapon: dualswords
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15855
+    atk: 2835
+    int: 1510
+    def: 1878
+    hit: 1134
+    grd: 833
+    ap: 100
+
+  talents:
+    - name: "Survey Corps Squad Captain"
+      effects: 
+        - desc: Damage dealt +20%
+          all: Enemies
+        - desc: Damage dealt +50% when hitcount is >200
+          all: Enemies
+        - desc: AP cost -30%
+        - desc: AP cost -60% when hitcount is >300
+    - name: "Humanity's Strongest Soldier"
+      effects: 
+        - desc: Additional hit that deals 00% more damage when using Soaring Gale Slash or Whirlwind Cut (2s)
+    - name: "Fussy Nature"
+      effects: 
+        - desc: Imbues attackw with earth
+        - desc: Evasion possible during air attacks
+        - desc: No flinching when in air
+    - name: "Wings of Liberty"
+      effects: 
+        - desc: Cancel bonus starts at 150% when using charge assault
+        - desc: ATK +20% when hitcount is >200
+        - desc: ATK +50% when hitcount is >500
+
+  skills:
+    - name: "Falling Cut"
+      picture: Helmetbreak
+      power: ATK x 640%
+      ap: 37
+      maxHits: 1
+    - name: "Stormwind Slash"
+      picture: Skill_Placeholder
+      power: ATK x 350%
+      ap: 28
+      maxHits: 6
+    - name: "Whirlwind Slash"
+      picture: Skill_Placeholder
+      power: ATK x 350%
+      ap: 27
+      maxHits: 6
+    - name: "Spinning Slash"
+      picture: Skill_Placeholder
+      power: ATK x 750%
+      ap: 40
+      maxHits: 6
+      
+  rush:
+    name: "Spinning Top Slash"
+    picture: Gyro_Slash_Levi
+    shortEffects: AP cost -30% and critical hit chance +100% (Self/10s)
+    effects: 
+      - desc: AP cost -30%
+        duration: 10
+      - desc: Critical hit chance +100%
+        duration: 10
+    power: ATK x 5000%
+    maxHits: 10
