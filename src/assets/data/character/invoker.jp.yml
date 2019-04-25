@@ -3806,7 +3806,6 @@
 
   talents:
     - name: "Fox Spirit's Pride"
-      shortEffects: ATK +40, ATK +50% at short range and INT +40%, INT +50% at long range (Party)
       effects: 
         - desc: ATK +40%
           all: true
