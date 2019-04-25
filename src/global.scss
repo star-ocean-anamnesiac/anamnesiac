@@ -155,8 +155,13 @@ ion-item, ion-item-divider {
         max-height: 96px;
       }
       
-      .icon-type, .icon-star, .icon-weapon {
+      .icon-type, .icon-star, .icon-weapon, .icon-slayer, .icon-element {
         position: absolute;
+      }
+
+      .icon-element {
+        bottom: 0;
+        left: 0;
       }
 
       .icon-star {
@@ -169,7 +174,7 @@ ion-item, ion-item-divider {
         right: 0;
       }
 
-      .icon-weapon {
+      .icon-weapon, .icon-slayer {
         bottom: 0;
         right: 0;
       }

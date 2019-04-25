@@ -8,6 +8,9 @@
     </ion-title>
 
     <ion-buttons slot="end">
+      <ion-button (click)="gridView = !gridView">
+        <ion-icon [name]="gridView ? 'list' : 'grid'"></ion-icon>
+      </ion-button> 
       <ion-button (click)="toggleSearch()">
         <ion-icon name="search"></ion-icon>
       </ion-button> 
@@ -18,7 +21,7 @@
   </ion-toolbar>
 </ion-header>
   
-<ion-content>
+<ion-content [class.grid]="gridView">
 
   <div class="stars small"></div>
   <div class="stars medium"></div>
@@ -39,8 +42,14 @@
   ></ion-searchbar>
     
   <ion-list *ngIf="!isError && itemSorting === 'alpha'">
-    <ion-item *ngFor="let item of alphaSortedItems | filterBy: { name: searchValue }" detail (click)="loadItem(item)">
-      <ng-container *ngTemplateOutlet="items; context: { item: item }"></ng-container>
+    <ion-item *ngFor="let item of alphaSortedItems | filterBy: { name: searchValue }" detail (click)="loadItem(item)" [class.short]="gridView">
+      <ng-container *ngIf="!gridView">
+        <ng-container *ngTemplateOutlet="items; context: { item: item }"></ng-container>
+      </ng-container>
+
+      <ng-container *ngIf="gridView">
+        <ng-container *ngTemplateOutlet="itemGrid; context: { item: item }"></ng-container>
+      </ng-container>
     </ion-item>
   </ion-list>
 
@@ -48,8 +57,14 @@
     <ion-item-group *ngFor="let itemType of allItemTypes">
       <ion-item-divider><strong>{{ convertWeaponType(itemType) }}</strong></ion-item-divider>
 
-      <ion-item *ngFor="let item of typeSortedItems[itemType] | filterBy: { name: searchValue }" detail (click)="loadItem(item)">
-        <ng-container *ngTemplateOutlet="items; context: { item: item }"></ng-container>
+      <ion-item *ngFor="let item of typeSortedItems[itemType] | filterBy: { name: searchValue }" detail (click)="loadItem(item)" [class.short]="gridView">
+        <ng-container *ngIf="!gridView">
+          <ng-container *ngTemplateOutlet="items; context: { item: item }"></ng-container>
+        </ng-container>
+  
+        <ng-container *ngIf="gridView">
+          <ng-container *ngTemplateOutlet="itemGrid; context: { item: item }"></ng-container>
+        </ng-container>
       </ion-item>
     </ion-item-group>
   </ion-list>
@@ -60,8 +75,14 @@
         <strong><app-element [element]="element"></app-element></strong>
       </ion-item-divider>
 
-      <ion-item *ngFor="let item of elementSortedItems[element] | filterBy: { name: searchValue }" detail (click)="loadItem(item)">
-        <ng-container *ngTemplateOutlet="items; context: { item: item }"></ng-container>
+      <ion-item *ngFor="let item of elementSortedItems[element] | filterBy: { name: searchValue }" detail (click)="loadItem(item)" [class.short]="gridView">
+        <ng-container *ngIf="!gridView">
+          <ng-container *ngTemplateOutlet="items; context: { item: item }"></ng-container>
+        </ng-container>
+  
+        <ng-container *ngIf="gridView">
+          <ng-container *ngTemplateOutlet="itemGrid; context: { item: item }"></ng-container>
+        </ng-container>
       </ion-item>
     </ion-item-group>
   </ion-list>
@@ -72,8 +93,14 @@
         <strong><app-slayer [slayer]="slayer"></app-slayer></strong>
       </ion-item-divider>
 
-      <ion-item *ngFor="let item of slayerSortedItems[slayer] | filterBy: { name: searchValue }" detail (click)="loadItem(item)">
-        <ng-container *ngTemplateOutlet="items; context: { item: item }"></ng-container>
+      <ion-item *ngFor="let item of slayerSortedItems[slayer] | filterBy: { name: searchValue }" detail (click)="loadItem(item)" [class.short]="gridView">
+        <ng-container *ngIf="!gridView">
+          <ng-container *ngTemplateOutlet="items; context: { item: item }"></ng-container>
+        </ng-container>
+  
+        <ng-container *ngIf="gridView">
+          <ng-container *ngTemplateOutlet="itemGrid; context: { item: item }"></ng-container>
+        </ng-container>
       </ion-item>
     </ion-item-group>
   </ion-list>
@@ -84,13 +111,35 @@
         <strong>{{ factor }}</strong>
       </ion-item-divider>
 
-      <ion-item *ngFor="let item of factorSortedItems[factor] | filterBy: { name: searchValue }" detail (click)="loadItem(item)">
-        <ng-container *ngTemplateOutlet="items; context: { item: item }"></ng-container>
+      <ion-item *ngFor="let item of factorSortedItems[factor] | filterBy: { name: searchValue }" detail (click)="loadItem(item)" [class.short]="gridView">
+        <ng-container *ngIf="!gridView">
+          <ng-container *ngTemplateOutlet="items; context: { item: item }"></ng-container>
+        </ng-container>
+  
+        <ng-container *ngIf="gridView">
+          <ng-container *ngTemplateOutlet="itemGrid; context: { item: item }"></ng-container>
+        </ng-container>
       </ion-item>
     </ion-item-group>
   </ion-list>
 
 </ion-content>
+
+<ng-template #itemGrid let-item="item">
+  <span slot="start" class="picture-class-chunk">
+
+    <app-appicon class="item-icon" [name]="item.picture" [forceWidth]="96" [forceHeight]="96" type="item"></app-appicon>
+    <app-appicon class="icon-star" [name]="'char-' + item.star" [scaleX]="0.5" [scaleY]="0.5"></app-appicon> 
+
+    <ng-container *ngFor="let factor of item.factors">
+      <app-appicon *ngIf="factor.element" class="icon-element" [name]="'el-' + factor.element.toLowerCase()" [scaleX]="0.5" [scaleY]="0.5"></app-appicon>
+    </ng-container>
+    <ng-container *ngFor="let factor of item.factors">
+      <app-appicon *ngIf="factor.slayer" class="icon-slayer" [name]="'type-' + factor.slayer.toLowerCase()" [scaleX]="0.5" [scaleY]="0.5"></app-appicon>
+    </ng-container>
+
+  </span>
+</ng-template>
 
 <ng-template #items let-item="item">
   <span slot="start" class="picture-class-chunk" [class.margin-right]="isFiltered">

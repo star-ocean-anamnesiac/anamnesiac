@@ -30,6 +30,9 @@ export class ItemListPage implements OnInit, OnDestroy {
   @LocalStorage()
   public show1234: boolean;
 
+  @LocalStorage()
+  public gridView: boolean;
+
   public elementSortedItems: { [key: string]: Item[] } = {};
   public allElements: string[] = [];
 
