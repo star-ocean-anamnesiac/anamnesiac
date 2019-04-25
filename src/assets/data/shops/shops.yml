@@ -80,10 +80,23 @@
       stock: 5
       cost: 3000
       type: improvement-hammer-special       
+    - name: Reporter's Armband
+      stock: 3
+      cost: 15000
+      type: accessory      
     - name: AP Starseed
       stock: 1
       cost: 8000
       type: seed-ap   
+    - name: HP Starseed
+      stock: 0
+      cost: 1500
+      type: seed-other  
+    - name: Scoop Data
+      stock: 0
+      cost: 200
+      type: draw-gacha     
+      
     - name: 5* Weapon Ticket
       stock: 1
       cost: 3000
@@ -112,19 +125,8 @@
       stock: 1
       cost: 3000
       type: misc-barrierblaster
-    - name: Reporter's Armband
-      stock: 3
-      cost: 15000
-      type: acessory
     - name: Mission Ticket
       stock: 20
       cost: 500
       type: draw-ticket-mission    
-    - name: HP Starseed
-      stock: 0
-      cost: 1500
-      type: seed-other  
-    - name: Scoop Data
-      stock: 0
-      cost: 200
-      type: draw-gacha      
+ 
