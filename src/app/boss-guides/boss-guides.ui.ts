@@ -208,7 +208,15 @@ import { BossGuide } from '../models/bossguide';
                           [scaleY]="0.375"></app-appicon>
             </ng-container>
 
-            <strong>{{ move.name }}</strong>
+            <strong>
+              {{ move.name }}
+
+              <app-appicon [name]="'misc-highlight'"
+                          *ngIf="move.isSymbology"
+                          margin-left
+                          [scaleX]="0.25"
+                          [scaleY]="0.25"></app-appicon>
+            </strong>
 
             <br>
 
