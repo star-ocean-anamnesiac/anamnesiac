@@ -3953,63 +3953,73 @@
 
 - name: Evelysse (Idol)
   cat: jp
-  picture: 
+  picture: Singing_Star_Evelysse
   weapon: scythe
   ace: true
   limited: true
   star: 5
 
   stats:
-    hp: 
-    atk: 
-    int: 
-    def: 
-    hit: 
-    grd: 
+    hp: 15540
+    atk: 2704
+    int: 2704
+    def: 1916
+    hit: 1162
+    grd: 833
     ap: 100
 
   talents:
-    - name: ""
+    - name: "My Own Starlight"
       effects: 
-        - desc: 
-    - name: ""
+        - desc: ATK/INT +35%
+          all: true
+        - desc: ATK/INT +55% when not behind target
+          all: true
+    - name: "Always the Straight Man"
       effects: 
-        - desc: 
-    - name: ""
+        - desc: Rush combo damage +60% when HP is 100% and hitcount is >150
+          all: true
+    - name: "Crimson Rose of Determination"
       effects: 
-        - desc: 
-    - name: ""
+        - desc: Normal attack AP recovery +200% when not behind target
+          all: true
+        - desc: Absorbs 00% of damage dealt by normal attacks as HP
+          all: true
+    - name: "A Star that Illuminates Darkness"
       effects: 
-        - desc: 
+        - desc: Symbology cast time -50%
+        - desc: Evasion possible during air attacks
+        - desc: Recovers 100% AP on perfect dodge
 
   skills:
-    - name: ""
-      picture: 
-      power: INT x 0%
-      ap: 
-      maxHits: 
-    - name: ""
-      picture: 
-      power: INT x 0%
-      ap: 
-      maxHits: 
-    - name: ""
-      picture: 
-      power: INT x 0%
-      ap: 
-      maxHits: 
-    - name: ""
-      picture: 
-      power: INT x 0%
-      ap: 
-      maxHits: 
+    - name: "Illusion Feather"
+      picture: Skill_Placeholder
+      power: INT x 480%
+      ap: 23
+      maxHits: 12
+    - name: "Rotation Slash"
+      picture: Skill_Placeholder
+      power: INT x 810%
+      ap: 29
+      maxHits: 6
+    - name: "Cool Servant"
+      picture: Skill_Placeholder
+      power: INT x 1390%
+      ap: 34
+      maxHits: 6
+    - name: "Ice Cool Blast"
+      picture: Skill_Placeholder
+      power: INT x 1470%
+      ap: 37
+      maxHits: 6
       
   rush:
-    name: ""
-    picture: 
-    element: 
-    shortEffects: 
+    name: "Shout of Heart"
+    picture: Shout_of_Heart_Singing_Star_Evelysse
+    shortEffects: Elemental damage dealt +70% (Party/20s)
     effects: 
-      - desc: 
-    power: INT x 0%
-    maxHits: 
+      - desc: Elemental damage dealt +70%
+        all: true
+        duration: 20
+    power: INT x 4500%
+    maxHits: 14
