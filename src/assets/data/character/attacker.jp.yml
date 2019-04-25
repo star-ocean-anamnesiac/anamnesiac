@@ -6777,3 +6777,75 @@
         all: true
     power: ATK x 4500%
     maxHits: 6
+
+- name: Henri un Loup
+  cat: jp
+  picture: Henri
+  weapon: rifle
+  ace: true
+  star: 5
+
+  stats:
+    hp: 18648
+    atk: 3307
+    int: 1537
+    def: 1943
+    hit: 1155
+    grd: 812
+    ap: 100
+
+  talents:
+    - name: "Afflicted by Lycanthropy"
+      effects: 
+        - desc: ATK +25%
+          all: true
+        - desc: ATK +35% when hitcount is >100
+          all: true
+        - desc: ATK +45% when hitcount is >200
+          all: true
+    - name: "Arc Chief of the Human Survival Research Institute"
+      effects: 
+        - desc: ATK/INT/DEF/HIT/GRD +20% at short range
+        - desc: Storm Hound damage dealt +100%
+    - name: "The Wolf in Despair"
+      effects: 
+        - desc: Evasion distance & rate +100%
+        - desc: AP recovery +50% at long range
+        - desc: Nullifies charge assault critical damage penalty
+    - name: "A Tragic Wish for Humanity's Survival"
+      effects: 
+        - desc: ATK/HP +20%
+
+  skills:
+    - name: "Storm Hound"
+      picture: Storm_Hound
+      power: ATK x 620%
+      ap: 33
+      maxHits: 10
+    - name: "Trample Radar"
+      picture: Lay_Down_Snipe
+      power: ATK x 320%
+      ap: 19
+      maxHits: 3
+    - name: "Raptor Assault"
+      picture: Heaven_Air_Raid
+      power: ATK x 360%
+      ap: 23
+      maxHits: 5
+    - name: "Chaser Fang"
+      picture: Alpha_On_One
+      power: ATK x 200%
+      ap: 12
+      maxHits: 5
+
+  rush:
+    name: "Wild Blood Phase"
+    picture: Wild_Blood_Phase_Henri
+    shortEffects: ATK +80% and AP cost -30% (Self/20s)
+    effects: 
+      - desc: ATK +80%
+        duration: 20
+      - desc: AP cost -30%
+        duration: 20
+    power: ATK x 5000%
+    maxHits: 16
