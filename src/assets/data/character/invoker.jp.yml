@@ -3865,3 +3865,89 @@
         all: true
     power: INT x 4500%
     maxHits: 6
+
+- name: Lymle Lemuri Phi (Valentine)
+  cat: jp
+  picture: Dignified_Flower_Lymle
+  weapon: staff
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 13860
+    atk: 1537
+    int: 2730
+    def: 1155
+    hit: 1064
+    grd: 826
+    ap: 100
+
+  talents:
+    - name: "Teacher of Triom Village"
+      effects: 
+        - desc: Converts 50% of ATK to INT
+          all: Invokers/Healers
+          meta:
+            priority: 1
+            buff: ATK -> INT
+            buffValue: 50
+        - desc: Converts 60% of INT to ATK
+          all: Attackers/Sharpshooters/Defenders
+          meta:
+            priority: 1
+            buff: INT -> ATK
+            buffValue: 60
+    - name: "Greetings to Grandpa"
+      effects: 
+        - desc: Nullifies charge assault critical damage penalty
+        - desc: Cancel bonus goes up one level every 0.5 seconds during charge assault standby
+    - name: "Sister Lutea's Symbology"
+      effects: 
+        - desc: Critical hit chance +20% after using Blaze Ray or Wind Blade (15s)
+        - desc: Imbues skills with wind after using wind skill (15s)
+    - name: "Flower Nearing Purity"
+      effects: 
+        - desc: INT damage dealt +50% when skill chain >3
+        - desc: INT +20%
+        - desc: No flinching when casting symbology
+        - desc: Damage taken -50%
+
+  skills:
+    - name: "Wind Blade"
+      picture: Wind_Blade
+      element: Wind
+      power: INT x 340%
+      ap: 12
+      maxHits: 2
+    - name: "Blast Hurricane"
+      picture: Blast_Hurricane
+      element: Wind
+      power: INT x 1240%
+      ap: 38
+      maxHits: 6
+    - name: "Blaze Ray"
+      picture: Blaze_Ray
+      element: Fire
+      power: INT x 420%
+      ap: 14
+      maxHits: 1
+    - name: "Flare Torch"
+      picture: Flare_Torch
+      element: Fire
+      power: INT x 1380%
+      ap: 42
+      maxHits: 5
+      
+  rush:
+    name: "Create Inferno"
+    picture: Create_Inferno_Valentine_Lymle
+    element: Fire
+    shortEffects: Critical hit chance +70% and symbology cast time -70% (Self/20s)
+    effects: 
+      - desc: Critical hit chance +70%
+        duration: 20
+      - desc: Symbology cast time -70%
+        duration: 20
+    power: INT x 4500%
+    maxHits: 9
