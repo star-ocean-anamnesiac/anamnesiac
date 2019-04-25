@@ -3786,3 +3786,168 @@
           buffValue: 70
     power: ATK x 4500%
     maxHits: 1
+
+- name: Caleen Keemosn (Valentine)
+  cat: jp
+  picture: Sweet_Fox_Karin
+  weapon: orb
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 2678
+    int: 2665
+    def: 1943
+    hit: 1134
+    grd: 861
+    ap: 100
+
+  talents:
+    - name: "Fox Spirit's Pride"
+      shortEffects: ATK +40, ATK +50% at short range and INT +40%, INT +50% at long range (Party)
+      effects: 
+        - desc: ATK +40%
+          all: true
+        - desc: ATK +50% at short range
+          all: true
+        - desc: INT +40%
+          all: true
+        - desc: INT +50% at long range
+          all: true
+    - name: "Talented Confectioner"
+      effects: 
+        - desc: ATK/INT damage dealt +30% when hitcount is >100
+          all: true
+    - name: "Downtown Date"
+      shortEffects: AP cost -40%/-50% when skill chain is >3/>4
+      effects: 
+        - desc: AP cost -40% when skill chain is >3
+          all: true
+        - desc: AP cost -50% when skill chain is >4
+          all: true
+    - name: "Friendship Pendant"
+      effects: 
+        - desc: Critical hit chance +50% when skill chain is >3
+        - desc: Critical hit chance +100% when skill chain is >5
+        - desc: Damage taken -100% on perfect dodge (0.5s)
+
+  skills:
+    - name: "Purple Split Blade"
+      picture: Victory_Sword
+      power: INT x 240%
+      ap: 20
+      maxHits: 10
+    - name: "Sharp Tail Kicks"
+      picture: Heavenly_Punishment
+      power: ATK x 840%
+      ap: 50
+      maxHits: 10
+    - name: "Spirit Arrow"
+      picture: Spirit_Arrow
+      power: INT x 300%
+      ap: 25
+      maxHits: 2
+    - name: "Phantom Blade"
+      picture: Phantom_Blade
+      power: INT x 540%
+      ap: 34
+      maxHits: 8
+      
+  rush:
+    name: "Alluring Fox - Piercing Crimson Blade"
+    picture: Alluring_Fox_Piercing_Crimson_Valentine_Karin
+    shortEffects: AP cost -40% (Party/20s)
+    effects: 
+      - desc: AP cost -40%
+        duration: 20
+        all: true
+    power: INT x 4500%
+    maxHits: 6
+
+- name: Lymle Lemuri Phi (Valentine)
+  cat: jp
+  picture: Dignified_Flower_Lymle
+  weapon: staff
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 13860
+    atk: 1537
+    int: 2730
+    def: 1155
+    hit: 1064
+    grd: 826
+    ap: 100
+
+  talents:
+    - name: "Teacher of Triom Village"
+      effects: 
+        - desc: Converts 50% of ATK to INT
+          all: Invokers/Healers
+          meta:
+            priority: 1
+            buff: ATK -> INT
+            buffValue: 50
+        - desc: Converts 60% of INT to ATK
+          all: Attackers/Sharpshooters/Defenders
+          meta:
+            priority: 1
+            buff: INT -> ATK
+            buffValue: 60
+    - name: "Greetings to Grandpa"
+      effects: 
+        - desc: Nullifies charge assault critical damage penalty
+        - desc: Cancel bonus goes up one level every 0.5 seconds during charge assault standby
+    - name: "Sister Lutea's Symbology"
+      effects: 
+        - desc: Critical hit chance +20% after using Blaze Ray or Wind Blade (15s)
+        - desc: Imbues skills with wind after using wind skill (15s)
+    - name: "Flower Nearing Purity"
+      effects: 
+        - desc: INT damage dealt +50% when skill chain >3
+        - desc: INT +20%
+        - desc: No flinching when casting symbology
+        - desc: Damage taken -50%
+
+  skills:
+    - name: "Wind Blade"
+      picture: Wind_Blade
+      element: Wind
+      power: INT x 340%
+      ap: 12
+      maxHits: 2
+    - name: "Blast Hurricane"
+      picture: Blast_Hurricane
+      element: Wind
+      power: INT x 1240%
+      ap: 38
+      maxHits: 6
+    - name: "Blaze Ray"
+      picture: Blaze_Ray
+      element: Fire
+      power: INT x 420%
+      ap: 14
+      maxHits: 1
+    - name: "Flare Torch"
+      picture: Flare_Torch
+      element: Fire
+      power: INT x 1380%
+      ap: 42
+      maxHits: 5
+      
+  rush:
+    name: "Create Inferno"
+    picture: Create_Inferno_Valentine_Lymle
+    element: Fire
+    shortEffects: Critical hit chance +70% and symbology cast time -70% (Self/20s)
+    effects: 
+      - desc: Critical hit chance +70%
+        duration: 20
+      - desc: Symbology cast time -70%
+        duration: 20
+    power: INT x 4500%
+    maxHits: 9
