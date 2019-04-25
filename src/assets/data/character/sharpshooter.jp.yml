@@ -4026,3 +4026,79 @@
         duration: 20
     power: ATK x 5000%
     maxHits: 12
+
+- name: Pericci (Valentine)
+  cat: jp
+  picture: Innocent_Pericci
+  weapon: arm
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 2494
+    int: 1537
+    def: 1549
+    hit: 1253
+    grd: 938
+    ap: 100
+
+  talents:
+    - name: "Fluffy Note"
+      effects: 
+        - desc: Damage dealt +40%
+          all: true
+        - desc: Damage dealt +50% at long range
+          all: true
+    - name: "First Time Cooking"
+      effects: 
+        - desc: AP recovery +200% at short range
+        - desc: AP recovery +100% at long range
+    - name: "Foot Race Date"
+      shortEffects: Rush combo damage +40% (Party/180s) and evasion AP cost -50% (Party)
+      effects: 
+        - desc: Rush combo damage +40% (180s)
+          all: true
+          duration: 180
+        - desc: Evasion AP cost -50%
+          all: true
+    - name: "Heartful Tail"
+      effects: 
+        - desc: Hitcount timer +3 seconds
+          all: true
+        - desc: AP cost -20%
+        - desc: Critical hit chance +20% when hitcount is >50
+
+  skills:
+    - name: "Rocket Punch"
+      picture: Rocket_Punch
+      power: ATK x 370%
+      ap: 22
+      maxHits: 1
+    - name: "Hammer Slammer"
+      picture: Hammer_Slammer
+      power: ATK x 490%
+      ap: 24
+      maxHits: 6
+    - name: "Charming Pose"
+      picture: Charming_Pose
+      power: ATK x 460%
+      ap: 23
+      maxHits: 5
+    - name: "Spread Missiles"
+      picture: Spread_Missiles
+      power: ATK x 1240%
+      ap: 40
+      maxHits: 3
+      
+  rush:
+    name: "Lovely Dance"
+    picture: Lovely_Dance_Valentine_Pericci
+    shortEffects: Critical hit chance +60% (Party/20s)
+    effects: 
+      - desc: Critical hit chance +60%
+        all: true
+        duration: 20
+    power: ATK x 4500%
+    maxHits: 11
