@@ -40,3 +40,91 @@
       stock: 3
       cost: 2500
       type: misc-barrierblaster
+      
+
+
+- name: Interview Data (Shine Totem / Gleaming Simulacrum)
+  icon: currency-coin-basic
+  cat: gl
+  currency: Interview Data
+  aliases:
+    - interview
+    - data
+    - gleaming
+    - simulacrum
+    - shine
+    - totem
+
+  items:
+    - name: Jingu-Style Secret Fist "White Whale"
+      stock: 1
+      cost: 3000
+      type: knuckle
+    - name: Theory of Symbology
+      stock: 1
+      cost: 3000
+      type: tome
+    - name: Cat Scale Knife
+      stock: 1
+      cost: 3000
+      type: dagger
+    - name: "Armlock H: Cap Inc."
+      stock: 5
+      cost: 2000
+      type: improvement-hammer-special
+    - name: "Armlock H: Cap Inc."
+      stock: 5
+      cost: 2500
+      type: improvement-hammer-special
+    - name: "Armlock H: Cap Inc."
+      stock: 5
+      cost: 3000
+      type: improvement-hammer-special       
+    - name: AP Starseed
+      stock: 1
+      cost: 8000
+      type: shop-seed-ap   
+    - name: 5* Weapon Ticket
+      stock: 1
+      cost: 3000
+      type: draw-ticket-weapon      
+    - name: 4-5* Char Ticket
+      stock: 3
+      cost: 2000
+      type: draw-ticket-character
+    - name: L. Limit Breaker
+      stock: 1
+      cost: 4000
+      type: improvement-limitbreak
+    - name: "Plat. Hammer: Enhance"
+      stock: 10
+      cost: 500
+      type: improvement-hammer
+    - name: "Gold Hammer: Enhance"
+      stock: 10
+      cost: 300
+      type: improvement-hammer      
+    - name: Rainbow Crystal
+      stock: 3
+      cost: 2500
+      type: improvement-crystal
+    - name: Barrier Blaster
+      stock: 1
+      cost: 3000
+      type: misc-barrierblaster
+    - name: Reporter's Armband
+      stock: 3
+      cost: 15000
+      type: accessory
+    - name: Mission Ticket
+      stock: 20
+      cost: 500
+      type: draw-ticket-mission    
+    - name: HP Starseed
+      stock: 0
+      cost: 1500
+      type: seed-other  
+    - name: Scoop Data
+      stock: 0
+      cost: 200
+      type: draw-gacha      
