@@ -83,7 +83,7 @@
     - name: AP Starseed
       stock: 1
       cost: 8000
-      type: shop-seed-ap   
+      type: seed-ap   
     - name: 5* Weapon Ticket
       stock: 1
       cost: 3000
@@ -115,7 +115,7 @@
     - name: Reporter's Armband
       stock: 3
       cost: 15000
-      type: all
+      type: acessory
     - name: Mission Ticket
       stock: 20
       cost: 500
