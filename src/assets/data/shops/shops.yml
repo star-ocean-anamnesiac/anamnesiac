@@ -115,7 +115,7 @@
     - name: Reporter's Armband
       stock: 3
       cost: 15000
-      type: accessory
+      type: all
     - name: Mission Ticket
       stock: 20
       cost: 500
