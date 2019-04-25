@@ -1207,7 +1207,6 @@
  
 - name: Bernard
   cat: gl
-  rating: 0
   picture: Bernard
   weapon: gun
   star: 3
@@ -1947,7 +1946,6 @@
 
 - name: Hal
   cat: gl
-  rating: 0
   picture: Hal
   weapon: gun
   star: 3
@@ -2009,7 +2007,6 @@
     
 - name: Eleanor
   cat: gl
-  rating: 0
   picture: Eleanor
   weapon: dagger
   star: 3
@@ -2068,7 +2065,6 @@
         
 - name: Boris
   cat: gl
-  rating: 0
   picture: Boris
   weapon: dagger
   star: 3
@@ -2142,7 +2138,6 @@
 
 - name: Katarina
   cat: gl
-  rating: 0
   picture: Katarina
   weapon: bow
   star: 3
@@ -2205,7 +2200,6 @@
 
 - name: Dominic
   cat: gl
-  rating: 0
   picture: Dominic
   weapon: dagger
   star: 3
@@ -2265,7 +2259,6 @@
 
 - name: Pamela
   cat: gl
-  rating: 0
   picture: Pamela
   weapon: bow
   star: 3
@@ -2319,7 +2312,6 @@
 
 - name: Amina
   cat: gl
-  rating: 0
   picture: Amina
   weapon: bow
   star: 4
@@ -2384,7 +2376,6 @@
 
 - name: Pavine
   cat: gl
-  rating: 0
   picture: Pavine
   weapon: gun
   star: 4
@@ -2450,7 +2441,6 @@
 
 - name: Milla Bachtein
   cat: gl
-  rating: 0
   picture: Milla
   weapon: dagger
   star: 4
@@ -2519,7 +2509,6 @@
 
 - name: Delacroix
   cat: gl
-  rating: 0
   picture: Delacroix
   weapon: dagger
   star: 4
@@ -2921,7 +2910,6 @@
       
 - name: Lenneth Valkyrie (Azure Sky)
   cat: gl
-  rating: 0
   picture: Blue_Sky_Lenneth
   weapon: bow
   ace: true
