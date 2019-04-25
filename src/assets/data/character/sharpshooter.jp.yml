@@ -4102,3 +4102,74 @@
         duration: 20
     power: ATK x 4500%
     maxHits: 11
+
+- name: Vulcan S90
+  cat: jp
+  picture: Valka
+  weapon: launcher
+  ace: true
+  star: 5
+
+  stats:
+    hp: 14070
+    atk: 2468
+    int: 1601
+    def: 1733
+    hit: 1260
+    grd: 917
+    ap: 100
+
+  talents:
+    - name: "Pride of Morse"
+      effects: 
+        - desc: Damage dealt +30%
+          all: true
+        - desc: Damage dealt +55% when hitcount is >150
+          all: true
+        - desc: Damage dealt +75% when hitcount is >300
+          all: true
+    - name: "Observer of the Daft Star System"
+      effects: 
+        - desc: AP recovers while using skills
+    - name: "The Feeling of Obscurity"
+      effects: 
+        - desc: Additional hit that deals 5% more damage when using skills
+        - desc: AP recovery +100% when hitcount is >150
+    - name: "If its with Everyone"
+      effects: 
+        - desc: ATK/INT/DEF/HIT/GRD +20% when hitcount is >100
+        - desc: Damage taken -100% on perfect dodge(0.5s)
+
+  skills:
+    - name: "Starboard Scratch"
+      picture: Starboard_Scratch
+      power: ATK x 150%
+      ap: 13
+      maxHits: 5
+    - name: "Portside Scratch"
+      picture: Portside_Scratch
+      power: ATK x 150%
+      ap: 13
+      maxHits: 5
+    - name: "Thunder Arm"
+      picture: Thunder_Arm
+      element: Lightning
+      power: ATK x 470%
+      ap: 23
+      maxHits: 7
+    - name: "Saint Buster"
+      picture: Saint_Buster
+      power: ATK x 1200%
+      ap: 40
+      maxHits: 10
+      
+  rush:
+    name: "Dimension Striker"
+    picture: Dimension_Striker_Valka
+    shortEffects: Damage dealt +70% (Party/20s)
+    effects: 
+      - desc: Damage dealt +70%
+        all: true
+        duration: 20
+    power: ATK x 4500%
+    maxHits: 5
