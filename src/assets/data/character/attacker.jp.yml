@@ -6876,7 +6876,7 @@
       effects: 
         - desc: AP cost -30%
         - desc: AP cost -60% when behind target
-        - desc: Absorbs 1.5% of damage dealt when not in front of target and skill chain is >3
+        - desc: Absorbs 1.5% of damage dealt by skills as HP when not in front of target and skill chain is >3
     - name: "Vertical Maneuvering Equipment"
       effects: 
         - desc: Cancel bonus starts at 150% when using charge assault
