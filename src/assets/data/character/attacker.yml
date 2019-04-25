@@ -2196,7 +2196,6 @@
 
 - name: Welch Vineyard (Tearful)
   cat: gl
-  rating: 0
   picture: Weeping_Welch
   weapon: knuckle
   limited: true
@@ -2581,7 +2580,6 @@
 
 - name: Andre
   cat: gl
-  rating: 0
   picture: Andre
   weapon: ohs
   star: 3
@@ -3196,7 +3194,6 @@
      
 - name: Angelica
   cat: gl
-  rating: 0
   picture: Angelica
   weapon: knuckle
   star: 3
@@ -3395,7 +3392,6 @@
 
 - name: Hal (Iron-Arm)
   cat: gl
-  rating: 0
   picture: Strong_Arm_Hal
   weapon: arm
   ace: false
@@ -3460,7 +3456,6 @@
 
 - name: Andre (Armed)
   cat: gl
-  rating: 0
   picture: Anti_Sword_Andre
   weapon: dualswords
   star: 3
@@ -3522,7 +3517,6 @@
 
 - name: Heinrich
   cat: gl
-  rating: 0
   picture: Heinrich
   weapon: ohs
   star: 3
@@ -3582,7 +3576,6 @@
 
 - name: Marcelle
   cat: gl
-  rating: 0
   picture: Marcelle
   weapon: knuckle
   star: 3
@@ -3644,7 +3637,6 @@
 
 - name: Farleen
   cat: gl
-  rating: 0
   picture: Farleen
   weapon: ohs
   ace: false
@@ -3708,7 +3700,6 @@
 
 - name: Tynave
   cat: gl
-  rating: 0
   picture: Tynave
   weapon: knuckle
   ace: false
@@ -3778,7 +3769,6 @@
 
 - name: Gunter
   cat: gl
-  rating: 0
   picture: Gunter
   weapon: knuckle
   star: 4
@@ -3841,7 +3831,6 @@
 
 - name: Ted
   cat: gl
-  rating: 0
   picture: Ted
   weapon: ohs
   star: 4
@@ -4355,7 +4344,6 @@
 
 - name: Arngrim
   cat: gl
-  rating: 0
   picture: Arngrim
   weapon: greatsword
   ace: true
