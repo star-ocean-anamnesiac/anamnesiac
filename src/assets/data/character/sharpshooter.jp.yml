@@ -4236,3 +4236,66 @@
       - desc: 
     power: INT x 0%
     maxHits: 
+
+- name: Claude (Blue Sphere)
+  cat: jp
+  picture: 
+  weapon: 
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 
+    atk: 
+    int: 
+    def: 
+    hit: 
+    grd: 
+    ap: 100
+
+  talents:
+    - name: ""
+      effects: 
+        - desc: 
+    - name: ""
+      effects: 
+        - desc: 
+    - name: ""
+      effects: 
+        - desc: 
+    - name: ""
+      effects: 
+        - desc: 
+
+  skills:
+    - name: ""
+      picture: 
+      power: INT x 0%
+      ap: 
+      maxHits: 
+    - name: ""
+      picture: 
+      power: INT x 0%
+      ap: 
+      maxHits: 
+    - name: ""
+      picture: 
+      power: INT x 0%
+      ap: 
+      maxHits: 
+    - name: ""
+      picture: 
+      power: INT x 0%
+      ap: 
+      maxHits: 
+      
+  rush:
+    name: ""
+    picture: 
+    element: 
+    shortEffects: 
+    effects: 
+      - desc: 
+    power: INT x 0%
+    maxHits: 
