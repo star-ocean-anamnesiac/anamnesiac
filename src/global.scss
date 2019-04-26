@@ -140,6 +140,10 @@ ion-item, ion-item-divider {
 
 
 .grid ion-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
   ion-item {
     --padding-top: 0;
     --padding-bottom: 0;
