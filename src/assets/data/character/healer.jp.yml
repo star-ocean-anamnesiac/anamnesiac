@@ -1322,26 +1322,61 @@
       effects: 
         - desc: Damage taken -15%
           all: true
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffValue: 15
         - desc: Damage taken -30%
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffValue: 30
         - desc: Damage taken -50% when HP is <50%
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffCondition: HP is <50%
+            buffValue: 15
     - name: "Unshakeable Heart"
       effects: 
         - desc: Critical hit chance +25%
           all: true
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffValue: 25
         - desc: Critical damage dealt +45% when not in front of target
           all: true
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: Not In Front of Target
+            buffValue: 45
         - desc: Recovers 100% AP on perfect dodge
           all: true
     - name: "Poker Face"
       effects: 
         - desc: Symbology cast time -60%
+          meta:
+            priority: 1
+            buff: Cast Time Reduction
+            buffValue: 60
         - desc: Evasion distance & rate +100%
         - desc: Movement rate +30
         - desc: Damage taken -100% when dodging (Party/0.5s)
           duration: 0.5
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffCondition: When Dodging
+            buffValue: 100
     - name: "Quark's Onee-san"
       effects: 
         - desc: HP +40%
+          meta:
+            priority: 1
+            buff: HP
+            buffValue: 40
 
   skills:
     - name: "Faerie Star"
@@ -1377,6 +1412,10 @@
       - desc: Critical hit chance +50%
         all: true
         duration: 20
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 50
     power: INT x 3500%
     maxHits: 12
 
@@ -1408,16 +1447,38 @@
       effects: 
         - desc: ATK/INT damage dealt +25%
           all: true
+          meta:
+            priority: 1
+            buffs:
+              - ATK Damage
+              - INT Damage
+            buffValue: 25
         - desc: ATK/INT damage dealt +35% when HP is 100%
           all: true
+          meta:
+            priority: 1
+            buffs:
+              - ATK Damage
+              - INT Damage
+            buffCondition: HP is 100%
+            buffValue: 35
     - name: "Festive Storyteller"
       effects: 
         - desc: Symbology cast time -40%
+          meta:
+            priority: 1
+            buff: Cast Time Reduction
+            buffValue: 40
         - desc: No flinching when casting symbology
     - name: "A Story Dedicated to Tria"
       effects: 
-        - desc: HP +15%
-        - desc: INT +15%
+        - desc: HP/INT +15%
+          meta:
+            priority: 1
+            buffs:
+              - HP
+              - INT
+            buffValue: 15
 
   skills:
     - name: "Faerie Light"
@@ -1455,6 +1516,12 @@
       - desc: ATK/INT damage dealt +50%
         all: true
         duration: 20
+        meta:
+          priority: 1
+          buffs:
+            - ATK Damage
+            - INT Damage
+          buffValue: 50
     power: ATK x 4000%
     maxHits: 4
 
@@ -1490,11 +1557,28 @@
     - name: "Is Paris Burning?"
       effects: 
         - desc: Symbology cast time -60%
+          meta:
+            priority: 1
+            buff: Cast Time Reduction
+            buffValue: 60
         - desc: INT damage dealt +40% when skill chain is >3
+          meta:
+            priority: 1
+            buff: INT Damage
+            buffCondition: Skill Chain 3+
+            buffValue: 40
     - name: "Healing Light"
       effects: 
         - desc: HP +30%
+          meta:
+            priority: 1
+            buff: HP
+            buffValue: 30
         - desc: INT +20%
+          meta:
+            priority: 1
+            buff: INT
+            buffValue: 20
         - desc: AP +20
 
   skills:
@@ -1529,6 +1613,10 @@
       - desc: Elemental damage dealt +50%
         all: true
         duration: 20
+        meta:
+          priority: 1
+          buff: Elemental Damage
+          buffValue: 50
     power: ATK x 4500%
     maxHits: 5
 
@@ -1554,12 +1642,29 @@
       effects: 
         - desc: Critical hit chance +20%
           all: true
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffValue: 20
         - desc: Critical hit chance +40% when not behind target
           all: true
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: Not Behind Target
+            buffValue: 40
         - desc: Critical damage dealt +20%
           all: true
+          meta:
+            priority: 1
+            buff: Crit Damage
+            buffValue: 20
         - desc: Critical damage dealt +40% when not behind target
-          all: true
+          all: truemeta:
+            priority: 1
+            buff: Crit Damage
+            buffCondition: Not Behind Target
+            buffValue: 40
     - name: "Mother's Support"
       effects: 
         - desc: Recovers AP for allies when using skills
@@ -1570,6 +1675,11 @@
       effects: 
         - desc: Evasion possible during air attacks
         - desc: Symbology cast time -70% when not behind target
+          meta:
+            priority: 1
+            buff: Cast Time Reduction
+            buffCondition: Not Behind Target
+            buffValue: 70
 
   skills:
     - name: "Faerie Light - Blue"
