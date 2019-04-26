@@ -7293,14 +7293,14 @@
             buff: Crit Rate
             buffCondition: Skill Chain > 3
             buffValue: 50
-		- desc: Critical hit chance +100% when skill chain >5
+        - desc: Critical hit chance +100% when skill chain >5
           all: false
           meta:
             priority: 1
             buff: Crit Rate
             buffCondition: Skill Chain > 5
             buffValue: 100
-		- desc: Critical damage dealt +100% when skill chain >6
+        - desc: Critical damage dealt +100% when skill chain >6
           all: false
           meta:
             priority: 1
@@ -7315,29 +7315,29 @@
             priority: 1
             buff: AP Recovery From Normal Attacks
             buffValue: 200
-		- desc: Evasion possible during air attacks
-		  all: false
-		- desc: ATK +20% when hitcount >200
-		  all: false
+        - desc: Evasion possible during air attacks
+            all: false
+        - desc: ATK +20% when hitcount >200
+            all: false
           meta:
             priority: 3
             buff: ATK
-			buffCondition: Hit Count > 200
+            buffCondition: Hit Count > 200
             buffValue: 20
     - name: GEAR
       effects: 
-	    - desc: ATK +20%
-		  all: false
+        - desc: ATK +20%
+          all: false
           meta:
             priority: 4
             buff: ATK
             buffValue: 20
         - desc: AP +40
-		  all: false
+          all: false
         - desc: Movement rate +30%
-		  all: false
-		- desc: Damage taken -100% when using Volcanic Viper (Self/0.5s)
-		  all: false
+          all: false
+        - desc: Damage taken -100% when using Volcanic Viper (Self/0.5s)
+          all: false
           meta:
             priority: 1
             buff: Damage Taken Reduction 
