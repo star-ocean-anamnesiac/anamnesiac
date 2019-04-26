@@ -1,7 +1,6 @@
 
 - name: 9S
   cat: jp
-  rating: 10
   picture: 9S
   weapon: ohs
   ace: true
@@ -131,7 +130,6 @@
 
 - name: Reimi Saionji
   cat: jp
-  rating: 5
   picture: Reimi
   weapon: bow
   ace: true
@@ -209,7 +207,6 @@
 
 - name: Maria Traydor
   cat: jp
-  rating: 8
   picture: Maria
   weapon: gun
   ace: true
@@ -279,15 +276,9 @@
           buffValue: 40
     power: ATK x 3000%
     maxHits: 6
-    
-  notes: >  
-      
-      **TL DR**
-
 
 - name: Maria Traydor (Awakened)
   cat: jp
-  rating: 10
   picture: Maria
   weapon: gun
   ace: true
@@ -451,7 +442,6 @@
 
 - name: Nel Zelpher
   cat: jp
-  rating: 4
   picture: Nel
   weapon: dagger
   ace: true
@@ -532,14 +522,8 @@
     power: ATK x 2000%
     maxHits: 18
 
-  notes: >
-      
-      **TL DR**
-
-
 - name: Nel Zelpher (Awakened)
   cat: jp
-  rating: 4
   picture: Nel
   weapon: dagger
   ace: true
@@ -704,7 +688,6 @@
 
 - name: Emmerson T. Kenny
   cat: jp
-  rating: 3
   picture: Emmerson
   weapon: gun
   star: 5
@@ -774,14 +757,9 @@
       
       _Emmerson is just bad, one day he'll shine, but currently he is just, bad. Not utterly worthless but I wouldn't recommend using
       him unless you're a masochist._
-      
-      
-      **TL DR**
-      
-      
+
 - name: Emmerson T. Kenny (Awakened)
   cat: jp
-  rating: 3
   picture: Emmerson
   weapon: gun
   limited: false
@@ -966,7 +944,6 @@
 
 - name: Clair Lasbard
   cat: jp
-  rating: 6
   picture: Clair
   weapon: dagger
   star: 5
@@ -1077,7 +1054,6 @@
       
 - name: Clair Lasbard (Awakened)
   cat: jp
-  rating: 6
   picture: Clair
   weapon: dagger
   limited: false
@@ -1256,7 +1232,6 @@
 
 - name: Miki Sauvester (Summer)
   cat: jp
-  rating: 9
   picture: Everlasting_Summer_Miki
   weapon: bow
   ace: true
@@ -1391,7 +1366,6 @@
       
 - name: Verda Kleiman
   cat: jp
-  rating: 0
   picture: Verda
   weapon: gun
   ace: true
@@ -1484,7 +1458,6 @@
 
 - name: Silmeria Valkyrie (Awakened)
   cat: jp
-  rating: 6
   picture: Silmeria
   weapon: bow
   ace: true
@@ -1653,7 +1626,6 @@
 
 - name: Verda Kleiman (Awakened)
   cat: jp
-  rating: 0
   picture: Verda
   weapon: gun
   ace: true
@@ -1783,7 +1755,6 @@
    
 - name: Dias Flac (Cherry Blossom)
   cat: jp
-  rating: 0
   picture: Sakura_Dias
   weapon: dagger
   ace: true
@@ -1915,9 +1886,8 @@
     power: ATK x 4500%
     maxHits: 10
     
-- name: Lenneth Valkyrie (Azure Sky)
+- name: Lenneth Valkyrie (Azure)
   cat: jp
-  rating: 0
   picture: Blue_Sky_Lenneth
   weapon: bow
   ace: true
@@ -2013,7 +1983,6 @@
 
 - name: Edge Maverick (Federation)
   cat: jp
-  rating: 0
   picture: Federation_Edge
   weapon: gun
   ace: true
@@ -2100,7 +2069,6 @@
 
 - name: Leanne
   cat: jp
-  rating: 0
   picture: Reanbell
   weapon: gun
   ace: true
@@ -2193,7 +2161,6 @@
 
 - name: Aya
   cat: jp
-  rating: 0
   picture: Aya
   weapon: bow
   ace: true
@@ -2294,7 +2261,6 @@
 
 - name: Phia Melle (Crimson Grace)
   cat: jp
-  rating: 0
   picture: Crimson_Grace_Phia
   weapon: bow
   ace: true
@@ -2416,7 +2382,6 @@
    
 - name: Sophia Esteed (Youth)
   cat: jp
-  rating: 0
   picture: Youth_Sophia
   weapon: dagger
   ace: true
@@ -2528,7 +2493,6 @@
 
 - name: Opera Vectra
   cat: jp
-  rating: 0
   picture: Opera
   weapon: rifle
   ace: true
@@ -2645,7 +2609,6 @@
 
 - name: Leanne (Summer)
   cat: jp
-  rating: 0
   picture: Beach_Reanbell
   weapon: rifle
   ace: true
@@ -2754,7 +2717,6 @@
 
 - name: Mafia Kajita
   cat: jp
-  rating: 0
   picture: Mafia
   weapon: gun
   ace: false
@@ -2854,7 +2816,6 @@
 
 - name: Precis Neumann (Bridal)
   cat: jp
-  rating: 0
   picture: Bridal_Precis
   weapon: arm
   ace: true
@@ -2987,7 +2948,6 @@
 
 - name: Evelysse (Summer)
   cat: jp
-  rating: 0
   picture: Beach_Evelysse
   weapon: rifle
   ace: true
@@ -3090,7 +3050,6 @@
 
 - name: Leanne (Awakened)
   cat: jp
-  rating: 0
   picture: Reanbell
   weapon: gun
   ace: true
@@ -3210,7 +3169,6 @@
 
 - name: Fiore Brunelli (Nurse)
   cat: jp
-  rating: 0
   picture: Nurse_Fiore
   weapon: rifle
   ace: true
@@ -3332,7 +3290,6 @@
 
 - name: Sophia Esteed (Maid)
   cat: jp
-  rating: 0
   picture: Maid_Sophia
   weapon: gun
   ace: true
@@ -3445,7 +3402,6 @@
 
 - name: Leon D.S. Gehste (Butler)
   cat: jp
-  rating: 0
   picture: Butler_Leon
   weapon: dagger
   ace: true
@@ -3549,7 +3505,6 @@
 
 - name: Tika (Sharpshooter)
   cat: jp
-  rating: 0
   picture: Tika
   weapon: arm
   ace: true
@@ -3649,7 +3604,6 @@
 
 - name: Precis F Neumann (Operator)
   cat: jp
-  rating: 0
   picture: Operator_Precis
   weapon: arm
   ace: true
@@ -3764,7 +3718,6 @@
 
 - name: Miki Sauvester (Idol)
   cat: jp
-  rating: 0
   picture: Singing_Star_Miki
   weapon: dagger
   ace: true
@@ -3853,7 +3806,6 @@
 
 - name: Rena Lanford (Winter)
   cat: jp
-  rating: 0
   picture: Snow_Flower_Rena
   weapon: gun
   ace: true
@@ -3953,7 +3905,6 @@
 
 - name: Tika Blunche (New Year's)
   cat: jp
-  rating: 0
   picture: Herald_of_Spring_Tika
   weapon: rifle
   ace: true
@@ -4056,7 +4007,6 @@
 
 - name: Sophia Esteed (SRF)
   cat: jp
-  rating: 0
   picture: SRF_Sophia
   weapon: bow
   ace: true
