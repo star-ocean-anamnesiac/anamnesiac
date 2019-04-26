@@ -7248,3 +7248,141 @@
             buffValue: 100
     power: ATK x 5000%
     maxHits: 10
+
+- name: Sol
+  cat: jp
+  rating: 0
+  picture: Sol
+  weapon: One Handed Sword
+  ace: true
+  limited: false
+  star: 5
+
+  stats:
+    hp: 15855
+    atk: 3276
+    int: 1549
+    def: 1969
+    hit: 1127
+    grd: 812
+    ap: 140
+
+  talents:
+    - name: Wayfaring Bounty Hunter 
+      effects: 
+        - desc: ATK +20%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 20
+        - desc: ATK +50% when hitcount >150
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 50
+        - desc: Nullifies charge assault critical damage penalty
+          all: false
+    - name: Self Taught Martial Artist 
+      effects: 
+        - desc: Critical hit chance +50% when skill chain >3
+          all: false
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: Skill Chain > 3
+            buffValue: 50
+		- desc: Critical hit chance +100% when skill chain >5
+          all: false
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: Skill Chain > 5
+            buffValue: 100
+		- desc: Critical damage dealt +100% when skill chain >6
+          all: false
+          meta:
+            priority: 1
+            buff: Crit Damage
+            buffCondition: Skill Chain > 6
+            buffValue: 100
+    - name: Bygone Holy Knight
+      effects: 
+        - desc: Normal attack AP recovery +200%
+          all: false
+          meta:
+            priority: 1
+            buff: AP Recovery From Normal Attacks
+            buffValue: 200
+		- desc: Evasion possible during air attacks
+		  all: false
+		- desc: ATK +20% when hitcount >200
+		  all: false
+          meta:
+            priority: 3
+            buff: ATK
+			buffCondition: Hit Count > 200
+            buffValue: 20
+    - name: GEAR
+      effects: 
+	    - desc: ATK +20%
+		  all: false
+          meta:
+            priority: 4
+            buff: ATK
+            buffValue: 20
+        - desc: AP +40
+		  all: false
+        - desc: Movement rate +30%
+		  all: false
+		- desc: Damage taken -100% when using Volcanic Viper (Self/0.5s)
+		  all: false
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction 
+            buffValue: 100
+
+  skills:
+    - name: Gun Flame 
+      picture: Skill_Placeholder
+      element: Fire
+      power: ATK x 490%
+      ap: 17
+      maxHits: 3
+    - name: Volcanic Viper
+      picture: Skill_Placeholder
+      element: Fire
+      power: ATK x 200%
+      ap: 23
+      maxHits: 2
+    - name: Bandit Bringer
+      picture: Skill_Placeholder
+      element: Fire
+      power: ATK x 520%
+      ap: 24
+      maxHits: 1
+    - name: Shatter 
+      picture: Skill_Placeholder
+      element: Fire
+      power: ATK x 400%
+      ap: 19
+      maxHits: 2
+      
+  rush: 
+    name: Tyrant Rave ver.ß
+    picture: Tyrant_Rave_Sol
+    element: Fire
+    shortEffects: Hitcount +75 (Party) and AP cost -80% (Self/10s)
+    effects: 
+      - desc: Hitcount +75
+        all: true
+      - desc: AP cost -80%               
+        all: false
+        duration: 10
+        meta:
+          priority: 1
+          buff: AP Cost Reduction 
+          buffValue: 80
+    power: ATK x 5000%
+    maxHits: 4
