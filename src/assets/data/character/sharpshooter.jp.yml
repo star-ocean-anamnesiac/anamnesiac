@@ -3741,7 +3741,7 @@
             priority: 1
             buff: Damage
             buffValue: 30
-        - desc: Damage dealt +70% when not targeting enemy's backside
+        - desc: Damage dealt +70% when not behind target
           all: true
           meta:
             priority: 1
@@ -4490,7 +4490,8 @@
             priority: 1
             buff: Damage Taken Reduction
             buffValue: 30
-        - desc: No flinching when taking damage of 10% of max HP or less (Self/Healers)
+        - desc: No flinching when taking damage of 10% of max HP or less
+          all: Healers/Self
 
   skills:
     - name: "Phase Gun - Penetrate"
