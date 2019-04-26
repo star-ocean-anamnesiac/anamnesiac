@@ -6297,7 +6297,7 @@
       effects: 
         - desc: No flinching when attacking
         - desc: Damage taken -40%
-        meta:
+          meta:
             priority: 1
             buff: Damage Taken Reduction
             buffValue: 40
