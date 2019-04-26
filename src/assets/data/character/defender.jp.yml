@@ -2910,3 +2910,137 @@
         duration: 20
     power: ATK x 4500%
     maxHits: 2
+
+- name: Ricardo 
+  cat: jp
+  rating: 0
+  picture: Ricardo
+  weapon: greatsword
+  ace: true
+  semi: true
+  limited: true
+  star: 5
+
+  stats: 
+    hp: 26460
+    atk: 3041
+    int: 1496
+    def: 2363
+    hit: 805
+    grd: 1057
+
+  talents:
+    - name: Talent 1
+      effects: 
+        - desc: ATK damage taken -20%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK Damage Taken Reduction 
+            buffValue: 20
+        - desc: No flinching when taking damage of 25% of max HP or less
+          all: true
+        - desc: ATK damage taken -30%
+          all: Sharpshooters/Self
+          meta:
+            priority: 1
+            buff: ATK Damage Taken Reduction 
+            buffValue: 30
+    - name: Talent 2
+      shortEffects: Damage taken +20%, and Damage taken +40% when hitcount is >300 (Enemies)
+      effects: 
+        - desc: Damage Taken +20%
+          all: Enemies
+          meta:
+            priority: 1
+            buff: Enemy ATK Damage Taken
+            buffValue: 20
+        - desc: Damage taken +40% when hitcount is >300
+          all: Enemies
+          meta:
+            priority: 1
+            buff: Enemy ATK Damage Taken
+            buffCondition: Hit Count > 300
+            buffValue: 30
+    - name: Talent 3
+      shortEffects: Additional hit that deals 5% damage when using Battle Skills (Party) | ATK/INT/DEF/HIT/GRD +20% when hitcount >200 
+      effects: 
+        - desc:  Additional hit that deals 5% damage when using Battle Skills
+          all: true
+        - desc: ATK/INT/DEF/HIT/GRD +20% when hitcount >200
+          all: false
+          meta:
+            priority: 1
+            buff: 
+              - ATK
+              - INT
+              - DEF
+              - HIT
+              - GRD
+            buffCondition: Hit Count > 200
+            buffValue: 20
+    - name: Talent 4 
+      effects: 
+        - desc: ATK +20%
+          all: false
+          meta:
+            priority: 4
+            buff: ATK
+            buffValue: 20
+        - desc: HP +20%
+          all: false
+          meta:
+            priority: 4
+            buff: HP
+            buffValue: 20
+        - desc: Normal attack AP recovery +100%
+          all: true
+          meta:
+            priority: 1
+            buff: AP Recovery From Normal Attacks
+            buffValue: 100
+
+  skills:
+    - name: Tailswing Tackle • Rend
+      picture: Void_Claw
+      power: ATK x 280%
+      ap: 16
+      maxHits: 1
+    - name: Brandish_Edge • Rend
+      picture: Cross_Slash 
+      power: ATK x 690%
+      ap: 25
+      maxHits: 5
+    - name: Tearing Blade
+      picture: Skill_Placeholder
+      power: ATK x 350%
+      ap: 19
+      maxHits: 2
+    - name: Sword Mine Layer
+      picture: Skill_Placeholder
+      power: ATK x 790%
+      ap: 32
+      maxHits: 6
+      
+  rush:
+    name: Thousand Wedges
+    picture: Thousand_Wedges_Ricardo
+    shortEffects: ATK +80% and Critical hit chance +50% (Self/20s)
+    effects: 
+      - desc: ATK +80%
+        all: false
+        duration: 20
+        meta:
+          priority: 1
+          buff: ATK
+          buffValue: 80
+      - desc: Critical hit chance +50%               
+        all: false
+        duration: 20 
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 
+    power: ATK x 5000%
+    maxHits: 3
+    
