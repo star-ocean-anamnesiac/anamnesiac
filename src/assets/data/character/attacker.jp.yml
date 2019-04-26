@@ -6684,7 +6684,7 @@
           all: true
           meta:
             priority: 1
-            buff: AP Recovery from Normal Attacks
+            buff: AP Recovery From Normal Attacks
             buffValue: 150
         - desc: Recovers 100% AP on perfect dodge
     - name: "Finely Decorated Horns"
