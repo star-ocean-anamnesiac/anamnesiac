@@ -4607,7 +4607,7 @@
         - desc: ATK/INT/DEF/HIT/GRD +30% when hitcount is >300
           meta:
             priority: 1
-            buff:
+            buffs:
               - ATK
               - INT
               - DEF
