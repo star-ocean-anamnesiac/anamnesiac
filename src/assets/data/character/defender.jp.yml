@@ -2851,7 +2851,7 @@
             buffCondition: Gemini Not Holding Aggro
             buffValue: 30
         - desc: Damage taken -50% when targeted by enemy
-        meta:
+          meta:
             priority: 1
             buff: Damage Taken Reduction
             buffCondition: Holding Aggro
