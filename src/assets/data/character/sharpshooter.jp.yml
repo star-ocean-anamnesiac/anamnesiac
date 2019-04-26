@@ -4688,8 +4688,7 @@
           meta:
             priority: 1
             buff: Damage
-            buffValue: 30
-      effects: 
+            buffValue: 40 
         - desc: Damage dealt +50% when hitcount >100
           all: true
           meta:
