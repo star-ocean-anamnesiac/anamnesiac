@@ -1,7 +1,6 @@
 
 - name: Sophia Esteed
   cat: jp
-  rating: 5
   picture: Sophia
   weapon: staff
   ace: true
@@ -139,7 +138,6 @@
 
 - name: Sophia Esteed (Awakened)
   cat: jp
-  rating: 5
   picture: Sophia
   weapon: staff
   ace: true
@@ -279,7 +277,6 @@
       
 - name: Myuria Tionysus
   cat: jp
-  rating: 0
   picture: Myuria
   weapon: staff
   ace: true
@@ -402,7 +399,6 @@
 
 - name: Ronyx J. Kenny
   cat: jp
-  rating: 4
   picture: Ronyx
   weapon: bow
   star: 5
@@ -512,7 +508,6 @@
 
 - name: Lymle Lemuri Phi
   cat: jp
-  rating: 4
   picture: Lymle
   weapon: staff
   limited: false
@@ -633,7 +628,6 @@
 
 - name: Faize Sheifa Beleth
   cat: jp
-  rating: 6
   picture: Faize
   weapon: bns
   limited: false
@@ -753,7 +747,6 @@
 
 - name: Celine Jules
   cat: jp
-  rating: 6
   picture: Celine
   weapon: staff
   limited: false
@@ -879,7 +872,6 @@
 
 - name: Fiore Brunelli
   cat: jp
-  rating: 7
   picture: Fiore
   weapon: orb
   limited: false
@@ -1018,7 +1010,6 @@
  
 - name: Claude C Kenny (Uniform)
   cat: jp
-  rating: 4
   picture: Prince_Claude
   weapon: bow
   star: 5
@@ -1150,7 +1141,6 @@
 
 - name: Mavelle Froesson
   cat: jp
-  rating: 8
   picture: Mavelle
   weapon: orb
   limited: false
@@ -1292,7 +1282,6 @@
 
 - name: Evelysse (Bridal)
   cat: jp
-  rating: 7
   picture: Bridal_Evelysse
   weapon: staff
   limited: true
@@ -1436,7 +1425,6 @@
 
 - name: Bernard (Scholar)
   cat: jp
-  rating: 0
   picture: Bernard
   weapon: tome
   ace: false
@@ -1507,7 +1495,6 @@
 
 - name: Seth (Scholar)
   cat: jp
-  rating: 0
   picture: Manuscript_Seth
   weapon: tome
   ace: false
@@ -1585,7 +1572,6 @@
 
 - name: Rochelle (Seer)
   cat: jp
-  rating: 0
   picture: Jewel_Rochelle
   weapon: orb
   ace: false
@@ -1661,7 +1647,6 @@
 
 - name: Renier (Scholar)
   cat: jp
-  rating: 0
   picture: Manuscript_Renier
   weapon: tome
   ace: false
@@ -1737,7 +1722,6 @@
 
 - name: Lezard Valeth
   cat: jp
-  rating: 8
   picture: Lezard
   weapon: tome
   ace: true
@@ -1851,7 +1835,6 @@
 
 - name: Myuria Tionysus (Awakened)
   cat: jp
-  rating: 7
   picture: Myuria
   weapon: staff
   ace: true
@@ -2001,7 +1984,6 @@
 
 - name: Ronyx J. Kenny (Awakened)
   cat: jp
-  rating: 4
   picture: Ronyx
   weapon: bow
   awakened: true
@@ -2174,7 +2156,6 @@
 
 - name: Lymle Lemuri Phi (Awakened)
   cat: jp
-  rating: 4
   picture: Lymle
   weapon: staff
   limited: false
@@ -2341,7 +2322,6 @@
 
 - name: Faize Sheifa Beleth (Awakened)
   cat: jp
-  rating: 6
   picture: Faize
   weapon: bns
   limited: false
@@ -2528,7 +2508,6 @@
 
 - name: Celine Jules (Awakened)
   cat: jp
-  rating: 6
   picture: Celine
   weapon: staff
   ace: true
@@ -2688,7 +2667,6 @@
       
 - name: Freya
   cat: jp
-  rating: 0
   picture: Freya
   weapon: orb
   ace: true
@@ -2804,7 +2782,6 @@
 
 - name: Mystina
   cat: jp
-  rating: 0
   picture: Mystina
   weapon: staff
   ace: true
@@ -2925,7 +2902,6 @@
    
 - name: Reimi Saionji (Federation)
   cat: jp
-  rating: 0
   picture: Federation_Reimi
   weapon: staff
   ace: true
@@ -3019,7 +2995,6 @@
 
 - name: Leon D.S. Gehste
   cat: jp
-  rating: 0
   picture: Leon
   weapon: tome
   ace: true
@@ -3124,7 +3099,6 @@
 
 - name: Clair Lasbard (Maid)
   cat: jp
-  rating: 0
   picture: Maid_Clair
   weapon: bow
   limited: true
@@ -3255,7 +3229,6 @@
 
 - name: Lucifer
   cat: jp
-  rating: 0
   picture: Lucifere
   weapon: orb
   ace: true
@@ -3351,7 +3324,6 @@
 
 - name: Verda Kleiman (Hero)
   cat: jp
-  rating: 0
   picture: Hero_Verda
   weapon: orb
   ace: true
@@ -3479,7 +3451,6 @@
 
 - name: Tika (Invoker)
   cat: jp
-  rating: 0
   picture: Tika
   weapon: arm
   ace: true
@@ -3590,7 +3561,6 @@
 
 - name: Opera Vectra (Crimson)
   cat: jp
-  rating: 0
   picture: Crimson_Opera
   weapon: orb
   ace: true
@@ -3702,7 +3672,6 @@
 
 - name: Relia (Halloween)
   cat: jp
-  rating: 0
   picture: Pumpkin_Relia
   weapon: staff
   ace: true
