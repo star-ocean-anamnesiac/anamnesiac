@@ -4820,17 +4820,14 @@
       effects: 
         - desc: No flinching when attacking
           all: false
-      effects: 
         - desc: Damage taken -20%
           all: false
           meta:
             priority: 1
             buff: Damage Taken Reduction 
             buffValue: 20
-      effects: 
         - desc: No flinching when skill chain >3
           all: true
-      effects: 
         - desc: Damage Taken -50% when skill chain >3
           all: true
           meta:
