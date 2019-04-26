@@ -3728,17 +3728,34 @@
       effects: 
         - desc: INT +30%
           all: true
+          meta:
+            priority: 1
+            buff: INT
+            buffValue: 30
     - name: "Friend of Ghosts"
       effects: 
         - desc: Nullifies rush gauge/HP reduction fields
           all: true
         - desc: AP recovery +50% when HP is 100%
           all: true
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffCondition: HP is 100%
+            buffValue: 50
         - desc: Stun rate +15%
           all: true
+          meta:
+            priority: 1
+            buff: Stun Rate
+            buffCondition: 15
     - name: "To my Beloved Older Sister"
       effects: 
         - desc: Symbology cast time -50%
+          meta:
+            priority: 1
+            buff: Cast Time Reduction
+            buffValue: 50
         - desc: No flinching when casting symbology
 
   skills:
@@ -3809,28 +3826,79 @@
       effects: 
         - desc: ATK +40%
           all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 40
         - desc: ATK +50% at short range
           all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffCondition: Short Range
+            buffValue: 50
         - desc: INT +40%
           all: true
+          meta:
+            priority: 1
+            buff: INT
+            buffValue: 40
         - desc: INT +50% at long range
           all: true
+          meta:
+            priority: 1
+            buff: INT
+            buffCondition: Long Range
+            buffValue: 50
     - name: "Talented Confectioner"
       effects: 
         - desc: ATK/INT damage dealt +30% when hitcount is >100
           all: true
+          meta:
+            priority: 1
+            buffs:
+              - ATK Damage
+              - INT Damage
+            buffCondition: Hit Count > 100
+            buffValue: 30
     - name: "Downtown Date"
       shortEffects: AP cost -40%/-50% when skill chain is >3/>4
       effects: 
         - desc: AP cost -40% when skill chain is >3
           all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain 3+
+            buffValue: 40
         - desc: AP cost -50% when skill chain is >4
           all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain 4+
+            buffValue: 50
     - name: "Friendship Pendant"
       effects: 
         - desc: Critical hit chance +50% when skill chain is >3
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: Skill Chain 3+
+            buffValue: 50
         - desc: Critical hit chance +100% when skill chain is >5
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: Skill Chain 5+
+            buffValue: 100
         - desc: Damage taken -100% on perfect dodge (0.5s)
+          duration: 0.5
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffCondition: Perfect Dodge
+            buffValue: 100
 
   skills:
     - name: "Purple Split Blade"
@@ -3862,6 +3930,10 @@
       - desc: AP cost -40%
         duration: 20
         all: true
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 40
     power: INT x 4500%
     maxHits: 6
 
@@ -3880,7 +3952,6 @@
     def: 1155
     hit: 1064
     grd: 826
-    ap: 100
 
   talents:
     - name: "Teacher of Triom Village"
@@ -3904,13 +3975,30 @@
     - name: "Sister Lutea's Symbology"
       effects: 
         - desc: Critical hit chance +20% after using Blaze Ray or Wind Blade (15s)
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffValue: 20
         - desc: Imbues skills with wind after using wind skill (15s)
     - name: "Flower Nearing Purity"
       effects: 
         - desc: INT damage dealt +50% when skill chain >3
+          meta:
+            priority: 1
+            buff: INT Damage
+            buffCondition: Skill Chain 3+
+            buffValue: 50
         - desc: INT +20%
+          meta:
+            priority: 1
+            buff: INT
+            buffValue: 20
         - desc: No flinching when casting symbology
         - desc: Damage taken -50%
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffValue: 50
 
   skills:
     - name: "Wind Blade"
@@ -3946,8 +4034,16 @@
     effects: 
       - desc: Critical hit chance +70%
         duration: 20
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 70
       - desc: Symbology cast time -70%
         duration: 20
+        meta:
+          priority: 1
+          buff: Cast Time Reduction
+          buffValue: 70
     power: INT x 4500%
     maxHits: 9
 
@@ -3966,28 +4062,54 @@
     def: 1916
     hit: 1162
     grd: 833
-    ap: 100
 
   talents:
     - name: "My Own Starlight"
       effects: 
         - desc: ATK/INT +35%
           all: true
+          meta:
+            priority: 1
+            buffs:
+              - ATK
+              - INT
+            buffValue: 35
         - desc: ATK/INT +55% when not behind target
           all: true
+          meta:
+            priority: 1
+            buffs:
+              - ATK
+              - INT
+            buffCondition: Not Behind Target
+            buffValue: 55
     - name: "Always the Straight Man"
       effects: 
         - desc: Rush combo damage +60% when HP is 100% and hitcount is >150
           all: true
+          meta:
+            priority: 1
+            buff: Rush Damage
+            buffCondition: HP is 100% and Hit Count > 150
+            buffValue: 60
     - name: "Crimson Rose of Determination"
       effects: 
         - desc: Normal attack AP recovery +200% when not behind target
           all: true
+          meta:
+            priority: 1
+            buff: AP Recovery From Normal Attacks
+            buffCondition: Not Behind Target
+            buffValue: 200
         - desc: Absorbs 00% of damage dealt by normal attacks as HP
           all: true
     - name: "A Star that Illuminates Darkness"
       effects: 
         - desc: Symbology cast time -50%
+          meta:
+            priority: 1
+            buff: Cast Time Reduction
+            buffValue: 50
         - desc: Evasion possible during air attacks
         - desc: Recovers 100% AP on perfect dodge
 
@@ -4021,5 +4143,9 @@
       - desc: Elemental damage dealt +70%
         all: true
         duration: 20
+        meta:
+          priority: 1
+          buff: Elemental Damage
+          buffValue: 70
     power: INT x 4500%
     maxHits: 14
