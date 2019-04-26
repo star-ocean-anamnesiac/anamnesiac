@@ -7255,7 +7255,7 @@
   picture: Sol
   weapon: One Handed Sword
   ace: true
-  limited: false
+  limited: true
   star: 5
 
   stats:
