@@ -1,7 +1,6 @@
 
 - name: Sophia Esteed (Summer)
   cat: jp
-  rating: 8
   picture: Everlasting_Summer_Sophia
   weapon: orb
   ace: true
@@ -166,7 +165,6 @@
 
 - name: Evelysse (Awakened)
   cat: jp
-  rating: 7
   picture: Evelysse
   weapon: staff
   ace: true
@@ -315,7 +313,6 @@
 
 - name: Rena Lanford (Awakened)
   cat: jp
-  rating: 8
   picture: Rena
   weapon: knuckle
   ace: true
@@ -528,7 +525,6 @@
  
 - name: Miki Sauvester (Awakened)
   cat: jp
-  rating: 3
   picture: Miki
   weapon: staff
   limited: false
@@ -664,7 +660,6 @@
  
 - name: Millie Chliette (Awakened)
   cat: jp
-  rating: 6
   picture: Millie
   weapon: staff
   ace: true
@@ -809,7 +804,6 @@
 
 - name: Relia (Awakened)
   cat: jp
-  rating: 8
   picture: Relia
   weapon: staff
   ace: true
@@ -984,7 +978,6 @@
 
 - name: Meracle Chamlotte (Youth)
   cat: jp
-  rating: 0
   picture: Youth_Meracle
   weapon: knuckle
   ace: true
@@ -1083,7 +1076,6 @@
    
 - name: Millie Chliette (Summer)
   cat: jp
-  rating: 0
   picture: Beach_Millie
   weapon: tome
   ace: true
@@ -1193,7 +1185,6 @@
 
 - name: Tika (Healer)
   cat: jp
-  rating: 0
   picture: Tika
   weapon: arm
   ace: true
@@ -1302,7 +1293,6 @@
 
 - name: Mirage Koas (Bunny)
   cat: jp
-  rating: 0
   picture: Bunny_Ears_Mirage
   weapon: bow
   ace: true
@@ -1421,7 +1411,6 @@
 
 - name: Clair Lasbard (Winter)
   cat: jp
-  rating: 0
   picture: Snowy_Sky_Clair
   weapon: tome
   ace: true
@@ -1526,7 +1515,6 @@
 
 - name: Erica Fontaine
   cat: jp
-  rating: 0
   picture: Erika
   weapon: gun
   ace: true
