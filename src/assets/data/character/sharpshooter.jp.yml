@@ -4679,7 +4679,7 @@
           all: true
           meta:
             priority: 1 
-            buff: INT Damage Reduction 
+            buff: INT Damage Taken Reduction 
             buffValue: 40
     - name: Greater Single-Shot
       effects: 
