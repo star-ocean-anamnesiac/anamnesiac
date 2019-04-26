@@ -2971,7 +2971,7 @@
           all: false
           meta:
             priority: 1
-            buff: 
+            buffs: 
               - ATK
               - INT
               - DEF
