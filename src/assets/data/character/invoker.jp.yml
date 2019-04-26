@@ -3748,7 +3748,7 @@
           meta:
             priority: 1
             buff: Stun Rate
-            buffCondition: 15
+            buffValue: 15
     - name: "To my Beloved Older Sister"
       effects: 
         - desc: Symbology cast time -50%
@@ -3819,7 +3819,6 @@
     def: 1943
     hit: 1134
     grd: 861
-    ap: 100
 
   talents:
     - name: "Fox Spirit's Pride"
