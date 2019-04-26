@@ -4536,3 +4536,367 @@
           buffValue: 50
     power: ATK x 4500%
     maxHits: 9
+
+- name: Tika (Inscribed Star)
+  cat: jp
+  rating: 0
+  picture: Inscribed_Star_Tika
+  weapon: gun
+  ace: true
+  semi: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15750
+    atk: 2494
+    int: 1563
+    def: 1523
+    hit: 1253
+    grd: 945
+
+  talents:
+    - name: Talent 1
+      shortEffects: ATK/INT Damage +40%, and ATK/INT Damage +60% when hitcount >200 (Party)
+      effects: 
+        - desc: ATK Damage +40%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK Damage
+            buffValue: 40
+        - desc: INT Damage +40%
+          all: true
+          meta:
+            priority: 1
+            buff: INT Damage
+            buffValue: 40
+        - desc: ATK Damage +60% when hitcount is >200
+          all: true
+          meta:
+            priority: 1
+            buff: ATK Damage
+            buffCondition: Hit Count > 200
+            buffValue: 60
+        - desc: INT Damage +60% when hitcount is >200
+          all: true
+          meta:
+            priority: 1
+            buff: INT Damage
+            buffCondition: Hit Count > 200
+            buffValue: 60
+    - name: Talent 2
+      effects: 
+        - desc: Hitcount timer +2 seconds
+          all: true
+        - desc: Rush combo damage +40% when hitcount is >400
+          all: true
+          meta:
+            priority: 1
+            buff: Rush Damage 
+            buffCondition: Hit Count > 400
+            buffValue: 40
+    - name: Talent 3
+      effects: 
+        - desc: Rush gauge fills by 3% every 3 seconds
+          all: true
+    - name: Talent 4
+      shortEffects: Recovers AP for allies when using Line Gunning and Platoon Blast | ATK/INT/DEF/HIT/GRD +30% when hitcount >300
+      effects: 
+        - desc: Recovers AP for allies when using Line Gunning and Platoon Blast
+        - desc: ATK/INT/DEF/HIT/GRD +30% when hitcount is >300
+          meta:
+            priority: 1
+            buff:
+              - ATK
+              - INT
+              - DEF
+              - HIT
+              - GRD
+            buffCondition: Hit Count > 300
+            buffValue: 30
+
+  skills:
+    - name: Gunner's Line 
+      picture: Skill_Placeholder
+      power: ATK x 390%
+      ap: 17
+      maxHits: 6
+    - name: Killer Distance • Ancient 
+      picture: Approach_Blow
+      power: ATK x 470%
+      ap: 22
+      maxHits: 3
+    - name: Barrage Fire • Ancient 
+      picture: Bullet_Barrage
+      power: ATK x 510%
+      ap: 21
+      maxHits: 6
+    - name: Platoon Blast
+      picture: Skill_Placeholder
+      power: ATK x 840%
+      ap: 30
+      maxHits: 8
+      
+  rush:
+    name: Rotate Javelin
+    picture: Rotate_Javelin_Inscribed_Star_Tika
+    shortEffects: Hitcount +100 / AP cost -30%
+    effects: 
+      - desc: Hitcount +100
+      - desc: AP cost -30%               
+        all: true
+        duration: 20
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 30
+    power: ATK x 4500%
+    maxHits: 25
+   
+- name: Reimi Saionji (Awakened)
+  cat: jp
+  rating: 0
+  picture: Reimi
+  weapon: gun 
+  ace: true
+  limited: false
+  awakened: true 
+  star: 5
+
+  stats:
+    hp: 15540
+    atk: 2587
+    int: 1563
+    def: 1549
+    hit: 1246
+    grd: 945
+
+  talents:
+    - name: Sound Judgement II
+      effects: 
+        - desc: INT Damage Taken -40%
+          all: true
+          meta:
+            priority: 1 
+            buff: INT Damage Reduction 
+            buffValue: 40
+    - name: Greater Single-Shot
+      effects: 
+        - desc: Damage dealt +40%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 30
+      effects: 
+        - desc: Damage dealt +50% when hitcount >100
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 50
+        - desc: Damage dealt +70% when hitcount >200
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 70
+    - name: Star Seed of Hope
+      effects: 
+        - desc: Nullifies status ailments for 180 seconds
+          all: false
+    - name: Descendant of Muah 
+      effects: 
+        - desc: 90% chance of surviving a lethal attack when at 10% of max HP or more
+          all: Self, All Attacker, All Defender
+    - name: Daughter of the Saionji Family
+      effects: 
+        - desc: Damage taken -100% when dodging (Self/0.5s)
+          all: false
+        - desc: Movement speed +30%
+          all: false
+        - desc: AP recovery when moving 
+    - name: Promise Made Under the Stars
+      effects: 
+        - desc: Evasion possible during air attacks
+        - desc: AP cost -40% when skill chain >3
+          all: false
+          meta:
+            priority: 1
+            buff: AP Cost Reduction 
+            buffCondition: Skill Chain >3
+            buffValue: 40
+        - desc: Critical hit chance +50%
+          all: false
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffValue: 50
+
+  skills:
+    - name: Chaotic Blossoms
+      picture: Chaotic_Blossoms
+      power: ATK x 550%
+      ap: 35
+      maxHits: 11
+    - name: Crimson Squall
+      picture: Crimson_Squall
+      power: ATK x 280%
+      ap: 24
+      maxHits: 9
+    - name: Cresent Wings
+      picture: Crescent_Wings
+      power: ATK x 260%
+      ap: 24
+      maxHits: 2
+    - name: Rapacious Sparrows
+      picture: Savage_Sparrows
+      power: ATK x 460%
+      ap: 32
+      maxHits: 9
+    - name: Hazy Dance • Mist
+      picture: Hazy_Dance
+      power: ATK x 730%
+      ap: 31
+      maxHits: 3
+      
+  rush:
+    name: Lunar Divination 
+    picture: Lunar_Divination_Reimi
+    element: Dark
+    shortEffects: Nullifies status ailments and recovers 15% of max HP every 3 seconds (Party/15s)
+    effects: 
+      - desc: Nullifies status ailments 
+        all: true
+      - desc: Recovers 15% of max HP every 3 seconds               
+        all: true
+        duration: 15
+    power: ATK x 4500%
+    maxHits: 7
+    
+- name: Elphelt
+  cat: jp
+  rating: 0
+  picture: 
+  weapon: rifle
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15750
+    atk: 2494
+    int: 1575
+    def: 1537
+    hit: 1246
+    grd: 924
+
+  talents:
+    - name: Feminity Incarnate 
+      effects: 
+        - desc: Hitcount timer +1 second
+          all: true
+        - desc: Damage +35%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 35
+        - desc: Damage +55% when hitcount >100
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Hit Count > 100
+            buffValue: 55
+        - desc: Damage +75% when hitcount >250
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Hit Count > 250
+            buffValue: 75
+    - name: Unending Delusion 
+      effects: 
+        - desc: No flinching when attacking
+          all: false
+      effects: 
+        - desc: Damage taken -20%
+          all: false
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction 
+            buffValue: 20
+      effects: 
+        - desc: No flinching when skill chain >3
+          all: true
+      effects: 
+        - desc: Damage Taken -50% when skill chain >3
+          all: true
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction 
+            buffCondition: Skill Chain > 3
+            buffValue: 50
+    - name: Love Dilemma
+      effects: 
+        - desc: Recovers 15% HP every 3 seconds on perfect dodge (Party/20s)
+          all: true
+    - name: VALENTINE
+      effects: 
+        - desc: AP Recovery +100% on perfect dodge (Self/0.5s)
+          all: false
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffCondition: Perfect Dodge
+            buffValue: 100
+        - desc: Evasion rate +100% on perfect dodge (Self/0.5s)
+          all: false
+        - desc: Evasion distance +100% on perfect dodge (Self/0.5s)
+        - desc: Damage taken -100% on perfect dodge (Self/0.5s)
+          all: false
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction 
+            buffCondition: Perfect Dodge
+            buffValue: 100
+
+  skills:
+    - name: Pineberry
+      picture: Skill_Placeholder
+      power: ATK x 300%
+      ap: 14
+      maxHits: 1
+    - name: Capsule Scatter • Wedding
+      picture: Capsule_Scatter
+      power: ATK x 660%
+      ap: 23
+      maxHits: 5
+    - name: Spread Ray • Wedding
+      picture: Heaven_Air_Raid
+      power: ATK x 790%
+      ap: 25
+      maxHits: 5
+    - name: Reload & Snipe
+      picture: Skill_Placeholder
+      power: ATK x 1200%
+      ap: 30
+      maxHits: 1
+      
+  rush:
+    name: Magnum Wedding
+    picture: Magnum_Wedding_Elphelt
+    element: 
+    effects: 
+      - desc: AP cost -50%                
+        all: true
+        duration: 20 
+        meta:
+          priority: 1
+          buff: AP Cost Reduction 
+          buffValue: 50
+    power: ATK x 4500%
+    maxHits: 2  
+    
