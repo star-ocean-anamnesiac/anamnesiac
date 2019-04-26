@@ -7316,9 +7316,9 @@
             buff: AP Recovery From Normal Attacks
             buffValue: 200
         - desc: Evasion possible during air attacks
-            all: false
+          all: false
         - desc: ATK +20% when hitcount >200
-            all: false
+          all: false
           meta:
             priority: 3
             buff: ATK
