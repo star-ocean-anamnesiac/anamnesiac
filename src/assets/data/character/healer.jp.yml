@@ -1660,7 +1660,8 @@
             buff: Crit Damage
             buffValue: 20
         - desc: Critical damage dealt +40% when not behind target
-          all: truemeta:
+          all: true
+          meta:
             priority: 1
             buff: Crit Damage
             buffCondition: Not Behind Target
