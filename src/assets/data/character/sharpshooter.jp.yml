@@ -3788,7 +3788,7 @@
             priority: 1
             buff: Damage
             buffValue: 30
-        - desc: Damage dealt +70% when not targeting enemy's backside
+        - desc: Damage dealt +70% when not behind target
           all: true
           meta:
             priority: 1
