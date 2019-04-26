@@ -6564,13 +6564,13 @@
         - desc: Normal attack AP recovery +150%
           meta:
             priority: 1
-            buff: AP Recovery from Normal Attacks
+            buff: AP Recovery From Normal Attacks
             buffValue: 150
         - desc: Normal attack AP recovery +100%
           all: true
           meta:
             priority: 1
-            buff: AP Recovery from Normal Attacks
+            buff: AP Recovery From Normal Attacks
             buffValue: 100
         - desc: Evasion AP cost -50%
           all: true
