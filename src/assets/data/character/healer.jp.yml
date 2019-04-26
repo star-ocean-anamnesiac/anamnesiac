@@ -1435,7 +1435,6 @@
     def: 1563
     hit: 1036
     grd: 1141
-    ap: 100
 
   talents:
     - name: "Doting Father's Spirit"
@@ -1635,7 +1634,6 @@
     def: 1549
     hit: 1057
     grd: 1134
-    ap: 100
 
   talents:
     - name: "A Dream to Study Abroad"
