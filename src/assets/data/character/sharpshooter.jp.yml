@@ -3670,26 +3670,59 @@
       effects: 
         - desc: Damage +35%
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 35
         - desc: Damage +55% when hitcount is >100
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Hit Count > 100
+            buffValue: 55
         - desc: Damage +75% when hitcount is >250
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Hit Count > 250
+            buffValue: 75
     - name: "Blue Metallic Shine"
       effects: 
         - desc: Normal attack AP recovery +100%
           all: true
+          meta:
+            priority: 1
+            buff: AP Recovery From Normal Attacks
+            buffValue: 100
         - desc: Hitcount timer +1 second
           all: true
         - desc: AP cost -15% at long range
           all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Long Range
+            buffValue: 15
     - name: "Human and Machine Unity"
       effects: 
         - desc: Nullifies charge assault critical damage penalty
         - desc: No flinching when using charge assault
         - desc: Damage taken -30%
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffValue: 30
     - name: "Friend to all Machinery"
       effects: 
-        - desc: ATK/HP +20%
+        - desc: HP/ATK +20%
+          meta:
+            priority: 1
+            buffs:
+              - HP
+              - ATK
+            buffValue: 20
 
   skills:
     - name: "Hammer Slammer"
@@ -3720,6 +3753,10 @@
     effects: 
       - desc: ATK +80%
         duration: 20
+        meta:
+          priority: 1
+          buff: ATK
+          buffValue: 80
       - desc: Recovers 10% of max HP every 3 seconds
         duration: 20
     power: ATK x 4500%
@@ -3747,13 +3784,29 @@
       effects: 
         - desc: Damage dealt +30%
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 30
         - desc: Damage dealt +70% when not targeting enemy's backside
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 70
     - name: "Spunky Idol"
       effects: 
         - desc: AP recovery +100%
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffValue: 100
         - desc: AP recovery +50%
           all: true
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffValue: 50
         - desc: Movement rate +50%
           all: true
     - name: "Passionate Red"
@@ -3820,8 +3873,17 @@
       effects: 
         - desc: Damage dealt +40%
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 40
         - desc: Damage dealt +70% when HP is 100%
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: HP is 100%
+            buffValue: 70
     - name: "Westa's Kindness"
       effects: 
         - desc: Rush gauge fills 3% every 3 seconds
@@ -3829,8 +3891,16 @@
     - name: "Silver Healing Hands"
       effects: 
         - desc: AP recovery +100%
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffValue: 100
         - desc: AP recovery +50%
           all: true
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffValue: 50
     - name: "Breath of the Calling Spring"
       effects: 
         - desc: 80% chance of surviving a lethal attack when at 20% of max HP or more
@@ -3867,9 +3937,17 @@
     effects: 
       - desc: Critical hit chance +70%
         duration: 20
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 70
       - desc: Critical hit chance +50%
         all: true
         duration: 20
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 50
     power: ATK x 4500%
     maxHits: 12
 
@@ -3889,17 +3967,30 @@
     def: 1790
     hit: 1320
     grd: 995
-    ap: 100
 
   talents:
     - name: "Haneru Dance Furisode"
       effects: 
         - desc: Damage dealt +40%
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 40
         - desc: Damage dealt +55% when hitcount is >100
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Hit Count > 100
+            buffValue: 55
         - desc: Damage dealt +75% when hitcount is >250
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Hit Count > 250
+            buffValue: 75
     - name: "Curiousity of the Unknown"
       effects: 
         - desc: Additional hit that deals 20% more damage during normal attacks
@@ -3915,7 +4006,16 @@
       effects: 
         - desc: No flinching while attacking
         - desc: Damage taken -40%
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffValue: 40
         - desc: AP cost -40% when skill chain is >3
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain 3+
+            buffValue: 40
 
   skills:
     - name: "Alpha-on-One"
@@ -3947,6 +4047,10 @@
       - desc: Single target damage +50%
         duration: 20
         all: true
+        meta:
+          priority: 1
+          buff: Single Target Damage
+          buffValue: 50
     power: ATK x 4500%
     maxHits: 3
 
@@ -3973,24 +4077,51 @@
       effects: 
         - desc: Damage dealt +35%
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 35
         - desc: Damage dealt +50% when hitcount is >100
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Hit Count > 100
+            buffValue: 50
         - desc: Damage dealt +65% when hitcount is >250
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Hit Count > 250
+            buffValue: 65
     - name: "Longing to Catch-up"
       effects: 
         - desc: Hitcount timer +2 seconds
           all: true
         - desc: AP recovery +100%
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffValue: 100
         - desc: Additional hit that deals 5% more damage when using skills
     - name: "This Year's Goals"
       effects: 
         - desc: Nullifies all status ailments for 180s
         - desc: Evasion possible during air attacks
         - desc: Rush combo damage +60% when hitcount is >400
+          meta:
+            priority: 1
+            buff: Rush Damage
+            buffCondition: Hit Count > 400
+            buffValue: 60
     - name: "Change and Stability"
       effects: 
         - desc: ATK +20%
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 20
         - desc: AP +20
 
   skills:
@@ -4022,8 +4153,16 @@
     effects: 
       - desc: ATK +80%
         duration: 20
+        meta:
+          priority: 1
+          buff: ATK
+          buffValue: 80
       - desc: AP cost -30%
         duration: 20
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 30
     power: ATK x 5000%
     maxHits: 12
 
@@ -4042,15 +4181,23 @@
     def: 1549
     hit: 1253
     grd: 938
-    ap: 100
 
   talents:
     - name: "Fluffy Note"
       effects: 
         - desc: Damage dealt +40%
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 40
         - desc: Damage dealt +50% at long range
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Long Range
+            buffValue: 50
     - name: "First Time Cooking"
       effects: 
         - desc: AP recovery +200% at short range
@@ -4117,17 +4264,30 @@
     def: 1733
     hit: 1260
     grd: 917
-    ap: 100
 
   talents:
     - name: "Pride of Morse"
       effects: 
         - desc: Damage dealt +30%
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 30
         - desc: Damage dealt +55% when hitcount is >150
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Hit Count > 150
+            buffValue: 55
         - desc: Damage dealt +75% when hitcount is >300
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Hit Count > 300
+            buffValue: 75
     - name: "Observer of the Daft Star System"
       effects: 
         - desc: AP recovers while using skills
@@ -4135,10 +4295,31 @@
       effects: 
         - desc: Additional hit that deals 5% more damage when using skills
         - desc: AP recovery +100% when hitcount is >150
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffCondition: Hit Count > 150
+            buffValue: 100
     - name: "If its with Everyone"
       effects: 
         - desc: ATK/INT/DEF/HIT/GRD +20% when hitcount is >100
+          meta:
+            priority: 1
+            buffs:
+              - ATK
+              - INT
+              - DEF
+              - HIT
+              - GRD
+            buffCondition: Hit Count > 100
+            buffValue: 20
         - desc: Damage taken -100% on perfect dodge(0.5s)
+          duration: 0.5
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffCondition: Perfect Dodge
+            buffValue: 100
 
   skills:
     - name: "Starboard Scratch"
@@ -4171,6 +4352,10 @@
       - desc: Damage dealt +70%
         all: true
         duration: 20
+        meta:
+          priority: 1
+          buff: Damage
+          buffValue: 70
     power: ATK x 4500%
     maxHits: 5
 
@@ -4189,30 +4374,74 @@
     def: 1720
     hit: 1378
     grd: 931
-    ap: 100
 
   talents:
     - name: "LOVE CONNECTION"
       effects: 
         - desc: ATK/INT damage dealt +20%
           all: true
-        - desc: ATK/INT damage dealt +20% when not behind target
+          meta:
+            priority: 1
+            buffs:
+              - ATK Damage
+              - INT Damage
+            buffValue: 20
+        - desc: ATK/INT damage dealt +45% when not behind target
           all: true
+          meta:
+            priority: 1
+            buffs:
+              - ATK Damage
+              - INT Damage
+            buffCondition: Not Behind Target
+            buffValue: 45
     - name: "Caretaker of the Cats"
       effects: 
         - desc: AP cost -15% when not behind target
           all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Not Behind Target
+            buffValue: 15
         - desc: AP cost -30% when HP is 100% and not behind target
           all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: HP is 100% and Not Behind Target
+            buffValue: 30
     - name: "Orange Connection"
       effects: 
         - desc: Critical hit chance +50% when HP is 100%
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: HP is 100%
+            buffValue: 50
         - desc: Critical damage dealt +50%
+          meta:
+            priority: 1
+            buff: Crit Damage
+            buffValue: 50
         - desc: Damage taken -100% on perfect dodge (0.5s)
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffCondition: Perfect Dodge
+            buffValue: 100
     - name: "Feelings that Connect"
       effects: 
         - desc: ATK +20%
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 20
         - desc: HIT +10%
+          meta:
+            priority: 1
+            buff: HIT
+            buffValue: 10
 
   skills:
     - name: "Black Hole Sphere"
@@ -4243,6 +4472,10 @@
     effects: 
       - desc: ATK +80%
         duration: 20
+        meta:
+          priority: 1
+          buff: ATK
+          buffValue: 80
       - desc: Recovers 10% of max HP every 3 seconds
         duration: 20
     power: ATK x 5000%
@@ -4263,19 +4496,31 @@
     def: 1575
     hit: 1232
     grd: 931
-    ap: 100
 
   talents:
     - name: "Second Lieutenant's Gun Judgement"
       effects: 
         - desc: Damage dealt +35%
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 35
         - desc: Damage dealt +70% when not behind target
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Not Behind Target
+            buffValue: 70
     - name: "Advocate of Studying Abroad"
       effects: 
         - desc: Normal attack AP recovery +200%
           all: true
+          meta:
+            priority: 1
+            buff: AP Recovery From Normal Attacks
+            buffValue: 200
         - desc: Evasion AP cost -50%
           all: true
         - desc: Movement rate +30%
@@ -4283,30 +4528,39 @@
     - name: "Trials and Growth"
       effects: 
         - desc: Damage dealt +50% by skills when not behind target
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Not Behind Target
+            buffValue: 50
     - name: "Confident Poise"
       effects: 
         - desc: Damage taken -30%
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffValue: 30
         - desc: No flinching when taking damage of 10% of max HP or less (Self/Healers)
 
   skills:
     - name: "Phase Gun - Penetrate"
       picture: Skill_Placeholder
-      power: ATK x 0%
+      power: ATK x 200%
       ap: 14
       maxHits: 2
     - name: "Phase Gun - Detonate"
       picture: Skill_Placeholder
-      power: ATK x 0%
+      power: ATK x 750%
       ap: 25
       maxHits: 4
     - name: "Phase Gun - Diffusion"
       picture: Skill_Placeholder
-      power: ATK x 0%
+      power: ATK x 250%
       ap: 17
       maxHits: 6
     - name: "Phase Gun - Tracing"
       picture: Skill_Placeholder
-      power: ATK x 0%
+      power: ATK x 730%
       ap: 24
       maxHits: 8
       
@@ -4318,8 +4572,16 @@
       - desc: AP cost -50%
         all: true
         duration: 10
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 50
       - desc: Single target damage +50%
         all: true
         duration: 10
+        meta:
+          priority: 1
+          buff: Single Target Damage
+          buffValue: 50
     power: ATK x 4500%
     maxHits: 9
