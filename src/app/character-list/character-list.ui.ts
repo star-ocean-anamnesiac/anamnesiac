@@ -144,14 +144,14 @@ export class CharacterSortPopover {
                 <ion-col>
                   <ion-card>
                     <ion-card-header>
-                    <ion-card-title>
-                    <app-appicon *ngIf="skill.highlight"
-                                 [name]="'misc-highlight'"
-                                 [scaleX]="0.25"
-                                 [scaleY]="0.25"
-                                 [inline]="true"></app-appicon>
-                      {{ skill.name }}
-                    </ion-card-title>
+                      <ion-card-title>
+                      <app-appicon *ngIf="skill.highlight"
+                                   [name]="'misc-highlight'"
+                                   [scaleX]="0.25"
+                                   [scaleY]="0.25"
+                                   [inline]="true"></app-appicon>
+                        {{ skill.name }}
+                      </ion-card-title>
                     </ion-card-header>
                     <ion-card-content>
                       <ion-row>
@@ -206,12 +206,13 @@ export class CharacterSortPopover {
                           {{ char.rush.power }} <span *ngIf="char.rush.maxHits">({{ char.rush.maxHits }} Hits)</span>
                           <ol>
                             <li *ngFor="let effect of char.rush.effects">
-                            {{ effect.desc }}
-                            <span *ngIf="effect.all">
-                              ({{ effect.all === true ? 'Allies' : effect.all }}
-                              <span *ngIf="effect.duration"> {{ effect.duration }}s</span>)
-                            </span>
-                            <span *ngIf="effect.duration"></span>
+                              {{ effect.desc }}
+                              <span *ngIf="effect.duration">
+                                <span *ngIf="effect.all">{{{ effect.all === true ? 'Allies' : effect.all }}</span>
+                                <span *ngIf="!effect.all">{Self</span>
+                                {{ effect.duration }}s)
+                                </span>
+                              </span>
                             </li>
                           </ol>
                         </ion-col>
