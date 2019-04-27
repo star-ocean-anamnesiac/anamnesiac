@@ -1540,7 +1540,6 @@
     - name: "Bloodstained Fangs II"
       effects: 
         - desc: Absorbs 10% of damage dealt by normal attacks as HP when hitcount is >100
-          all: true
     - name: "Quark Carrier"
       effects: 
         - desc: AP recovery +50%
