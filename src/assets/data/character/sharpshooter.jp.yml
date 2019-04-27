@@ -4777,7 +4777,7 @@
 - name: Elphelt
   cat: jp
   rating: 0
-  picture: 
+  picture: Elphelt
   weapon: rifle
   ace: true
   limited: true
