@@ -2930,7 +2930,7 @@
     grd: 1057
 
   talents:
-    - name: Talent 1
+    - name: General of the Kingdom of Ruubarika
       effects: 
         - desc: ATK damage taken -20%
           all: true
@@ -2946,7 +2946,7 @@
             priority: 1
             buff: ATK Damage Taken Reduction 
             buffValue: 30
-    - name: Talent 2
+    - name: Decimating Greatsword
       shortEffects: Damage taken +20%, and Damage taken +40% when hitcount is >300 (Enemies)
       effects: 
         - desc: Damage Taken +20%
@@ -2962,8 +2962,7 @@
             buff: Enemy ATK Damage Taken
             buffCondition: Hit Count > 300
             buffValue: 40
-    - name: Talent 3
-      shortEffects: Additional hit that deals 5% damage when using Battle Skills (Party) | ATK/INT/DEF/HIT/GRD +20% when hitcount >200 
+    - name: Thoughts Behind the Mask
       effects: 
         - desc:  Additional hit that deals 5% damage when using Battle Skills
           all: true
@@ -2979,7 +2978,7 @@
               - GRD
             buffCondition: Hit Count > 200
             buffValue: 20
-    - name: Talent 4 
+    - name: Vow of the Elder Brother Who Transcends Time
       effects: 
         - desc: ATK +20%
           all: false
