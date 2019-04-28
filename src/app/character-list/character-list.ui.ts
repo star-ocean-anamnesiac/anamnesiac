@@ -209,7 +209,7 @@ export class CharacterSortPopover {
                             {{ effect.desc }}
                             <span *ngIf="effect.all">
                               ({{ effect.all === true ? 'Allies' : effect.all }}
-                              <span *ngIf="effect.duration"> {{ effect.duration }}s</span>)
+                              <span *ngIf="effect.duration">/{{ effect.duration }}s</span>)
                             </span>
                             <span *ngIf="effect.duration"></span>
                             </li>
