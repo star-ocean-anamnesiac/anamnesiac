@@ -1,7 +1,6 @@
 
 - name: 9S
   cat: jp
-  rating: 10
   picture: 9S
   weapon: ohs
   ace: true
@@ -131,7 +130,6 @@
 
 - name: Reimi Saionji
   cat: jp
-  rating: 5
   picture: Reimi
   weapon: bow
   ace: true
@@ -209,7 +207,6 @@
 
 - name: Maria Traydor
   cat: jp
-  rating: 8
   picture: Maria
   weapon: gun
   ace: true
@@ -279,15 +276,9 @@
           buffValue: 40
     power: ATK x 3000%
     maxHits: 6
-    
-  notes: >  
-      
-      **TL DR**
-
 
 - name: Maria Traydor (Awakened)
   cat: jp
-  rating: 10
   picture: Maria
   weapon: gun
   ace: true
@@ -451,7 +442,6 @@
 
 - name: Nel Zelpher
   cat: jp
-  rating: 4
   picture: Nel
   weapon: dagger
   ace: true
@@ -532,14 +522,8 @@
     power: ATK x 2000%
     maxHits: 18
 
-  notes: >
-      
-      **TL DR**
-
-
 - name: Nel Zelpher (Awakened)
   cat: jp
-  rating: 4
   picture: Nel
   weapon: dagger
   ace: true
@@ -704,7 +688,6 @@
 
 - name: Emmerson T. Kenny
   cat: jp
-  rating: 3
   picture: Emmerson
   weapon: gun
   star: 5
@@ -774,14 +757,9 @@
       
       _Emmerson is just bad, one day he'll shine, but currently he is just, bad. Not utterly worthless but I wouldn't recommend using
       him unless you're a masochist._
-      
-      
-      **TL DR**
-      
-      
+
 - name: Emmerson T. Kenny (Awakened)
   cat: jp
-  rating: 3
   picture: Emmerson
   weapon: gun
   limited: false
@@ -966,7 +944,6 @@
 
 - name: Clair Lasbard
   cat: jp
-  rating: 6
   picture: Clair
   weapon: dagger
   star: 5
@@ -1077,7 +1054,6 @@
       
 - name: Clair Lasbard (Awakened)
   cat: jp
-  rating: 6
   picture: Clair
   weapon: dagger
   limited: false
@@ -1256,7 +1232,6 @@
 
 - name: Miki Sauvester (Summer)
   cat: jp
-  rating: 9
   picture: Everlasting_Summer_Miki
   weapon: bow
   ace: true
@@ -1391,7 +1366,6 @@
       
 - name: Verda Kleiman
   cat: jp
-  rating: 0
   picture: Verda
   weapon: gun
   ace: true
@@ -1484,7 +1458,6 @@
 
 - name: Silmeria Valkyrie (Awakened)
   cat: jp
-  rating: 6
   picture: Silmeria
   weapon: bow
   ace: true
@@ -1653,7 +1626,6 @@
 
 - name: Verda Kleiman (Awakened)
   cat: jp
-  rating: 0
   picture: Verda
   weapon: gun
   ace: true
@@ -1783,7 +1755,6 @@
    
 - name: Dias Flac (Cherry Blossom)
   cat: jp
-  rating: 0
   picture: Sakura_Dias
   weapon: dagger
   ace: true
@@ -1915,9 +1886,8 @@
     power: ATK x 4500%
     maxHits: 10
     
-- name: Lenneth Valkyrie (Azure Sky)
+- name: Lenneth Valkyrie (Azure)
   cat: jp
-  rating: 0
   picture: Blue_Sky_Lenneth
   weapon: bow
   ace: true
@@ -2013,7 +1983,6 @@
 
 - name: Edge Maverick (Federation)
   cat: jp
-  rating: 0
   picture: Federation_Edge
   weapon: gun
   ace: true
@@ -2100,7 +2069,6 @@
 
 - name: Leanne
   cat: jp
-  rating: 0
   picture: Reanbell
   weapon: gun
   ace: true
@@ -2193,7 +2161,6 @@
 
 - name: Aya
   cat: jp
-  rating: 0
   picture: Aya
   weapon: bow
   ace: true
@@ -2294,7 +2261,6 @@
 
 - name: Phia Melle (Crimson Grace)
   cat: jp
-  rating: 0
   picture: Crimson_Grace_Phia
   weapon: bow
   ace: true
@@ -2416,7 +2382,6 @@
    
 - name: Sophia Esteed (Youth)
   cat: jp
-  rating: 0
   picture: Youth_Sophia
   weapon: dagger
   ace: true
@@ -2528,7 +2493,6 @@
 
 - name: Opera Vectra
   cat: jp
-  rating: 0
   picture: Opera
   weapon: rifle
   ace: true
@@ -2645,7 +2609,6 @@
 
 - name: Leanne (Summer)
   cat: jp
-  rating: 0
   picture: Beach_Reanbell
   weapon: rifle
   ace: true
@@ -2754,7 +2717,6 @@
 
 - name: Mafia Kajita
   cat: jp
-  rating: 0
   picture: Mafia
   weapon: gun
   ace: false
@@ -2854,7 +2816,6 @@
 
 - name: Precis Neumann (Bridal)
   cat: jp
-  rating: 0
   picture: Bridal_Precis
   weapon: arm
   ace: true
@@ -2987,7 +2948,6 @@
 
 - name: Evelysse (Summer)
   cat: jp
-  rating: 0
   picture: Beach_Evelysse
   weapon: rifle
   ace: true
@@ -3090,7 +3050,6 @@
 
 - name: Leanne (Awakened)
   cat: jp
-  rating: 0
   picture: Reanbell
   weapon: gun
   ace: true
@@ -3210,7 +3169,6 @@
 
 - name: Fiore Brunelli (Nurse)
   cat: jp
-  rating: 0
   picture: Nurse_Fiore
   weapon: rifle
   ace: true
@@ -3332,7 +3290,6 @@
 
 - name: Sophia Esteed (Maid)
   cat: jp
-  rating: 0
   picture: Maid_Sophia
   weapon: gun
   ace: true
@@ -3445,7 +3402,6 @@
 
 - name: Leon D.S. Gehste (Butler)
   cat: jp
-  rating: 0
   picture: Butler_Leon
   weapon: dagger
   ace: true
@@ -3549,7 +3505,6 @@
 
 - name: Tika (Sharpshooter)
   cat: jp
-  rating: 0
   picture: Tika
   weapon: arm
   ace: true
@@ -3649,7 +3604,6 @@
 
 - name: Precis F Neumann (Operator)
   cat: jp
-  rating: 0
   picture: Operator_Precis
   weapon: arm
   ace: true
@@ -3670,26 +3624,59 @@
       effects: 
         - desc: Damage +35%
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 35
         - desc: Damage +55% when hitcount is >100
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Hit Count > 100
+            buffValue: 55
         - desc: Damage +75% when hitcount is >250
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Hit Count > 250
+            buffValue: 75
     - name: "Blue Metallic Shine"
       effects: 
         - desc: Normal attack AP recovery +100%
           all: true
+          meta:
+            priority: 1
+            buff: AP Recovery From Normal Attacks
+            buffValue: 100
         - desc: Hitcount timer +1 second
           all: true
         - desc: AP cost -15% at long range
           all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Long Range
+            buffValue: 15
     - name: "Human and Machine Unity"
       effects: 
         - desc: Nullifies charge assault critical damage penalty
         - desc: No flinching when using charge assault
         - desc: Damage taken -30%
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffValue: 30
     - name: "Friend to all Machinery"
       effects: 
-        - desc: ATK/HP +20%
+        - desc: HP/ATK +20%
+          meta:
+            priority: 1
+            buffs:
+              - HP
+              - ATK
+            buffValue: 20
 
   skills:
     - name: "Hammer Slammer"
@@ -3720,6 +3707,10 @@
     effects: 
       - desc: ATK +80%
         duration: 20
+        meta:
+          priority: 1
+          buff: ATK
+          buffValue: 80
       - desc: Recovers 10% of max HP every 3 seconds
         duration: 20
     power: ATK x 4500%
@@ -3727,7 +3718,6 @@
 
 - name: Miki Sauvester (Idol)
   cat: jp
-  rating: 0
   picture: Singing_Star_Miki
   weapon: dagger
   ace: true
@@ -3747,13 +3737,29 @@
       effects: 
         - desc: Damage dealt +30%
           all: true
-        - desc: Damage dealt +70% when not targeting enemy's backside
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 30
+        - desc: Damage dealt +70% when not behind target
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 70
     - name: "Spunky Idol"
       effects: 
         - desc: AP recovery +100%
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffValue: 100
         - desc: AP recovery +50%
           all: true
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffValue: 50
         - desc: Movement rate +50%
           all: true
     - name: "Passionate Red"
@@ -3800,7 +3806,6 @@
 
 - name: Rena Lanford (Winter)
   cat: jp
-  rating: 0
   picture: Snow_Flower_Rena
   weapon: gun
   ace: true
@@ -3820,8 +3825,17 @@
       effects: 
         - desc: Damage dealt +40%
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 40
         - desc: Damage dealt +70% when HP is 100%
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: HP is 100%
+            buffValue: 70
     - name: "Westa's Kindness"
       effects: 
         - desc: Rush gauge fills 3% every 3 seconds
@@ -3829,8 +3843,16 @@
     - name: "Silver Healing Hands"
       effects: 
         - desc: AP recovery +100%
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffValue: 100
         - desc: AP recovery +50%
           all: true
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffValue: 50
     - name: "Breath of the Calling Spring"
       effects: 
         - desc: 80% chance of surviving a lethal attack when at 20% of max HP or more
@@ -3867,15 +3889,22 @@
     effects: 
       - desc: Critical hit chance +70%
         duration: 20
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 70
       - desc: Critical hit chance +50%
         all: true
         duration: 20
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 50
     power: ATK x 4500%
     maxHits: 12
 
 - name: Tika Blunche (New Year's)
   cat: jp
-  rating: 0
   picture: Herald_of_Spring_Tika
   weapon: rifle
   ace: true
@@ -3889,17 +3918,30 @@
     def: 1790
     hit: 1320
     grd: 995
-    ap: 100
 
   talents:
     - name: "Haneru Dance Furisode"
       effects: 
         - desc: Damage dealt +40%
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 40
         - desc: Damage dealt +55% when hitcount is >100
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Hit Count > 100
+            buffValue: 55
         - desc: Damage dealt +75% when hitcount is >250
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Hit Count > 250
+            buffValue: 75
     - name: "Curiousity of the Unknown"
       effects: 
         - desc: Additional hit that deals 20% more damage during normal attacks
@@ -3915,7 +3957,16 @@
       effects: 
         - desc: No flinching while attacking
         - desc: Damage taken -40%
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffValue: 40
         - desc: AP cost -40% when skill chain is >3
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain 3+
+            buffValue: 40
 
   skills:
     - name: "Alpha-on-One"
@@ -3947,12 +3998,15 @@
       - desc: Single target damage +50%
         duration: 20
         all: true
+        meta:
+          priority: 1
+          buff: Single Target Damage
+          buffValue: 50
     power: ATK x 4500%
     maxHits: 3
 
 - name: Sophia Esteed (SRF)
   cat: jp
-  rating: 0
   picture: SRF_Sophia
   weapon: bow
   ace: true
@@ -3973,24 +4027,51 @@
       effects: 
         - desc: Damage dealt +35%
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 35
         - desc: Damage dealt +50% when hitcount is >100
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Hit Count > 100
+            buffValue: 50
         - desc: Damage dealt +65% when hitcount is >250
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Hit Count > 250
+            buffValue: 65
     - name: "Longing to Catch-up"
       effects: 
         - desc: Hitcount timer +2 seconds
           all: true
         - desc: AP recovery +100%
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffValue: 100
         - desc: Additional hit that deals 5% more damage when using skills
     - name: "This Year's Goals"
       effects: 
         - desc: Nullifies all status ailments for 180s
         - desc: Evasion possible during air attacks
         - desc: Rush combo damage +60% when hitcount is >400
+          meta:
+            priority: 1
+            buff: Rush Damage
+            buffCondition: Hit Count > 400
+            buffValue: 60
     - name: "Change and Stability"
       effects: 
         - desc: ATK +20%
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 20
         - desc: AP +20
 
   skills:
@@ -4022,8 +4103,16 @@
     effects: 
       - desc: ATK +80%
         duration: 20
+        meta:
+          priority: 1
+          buff: ATK
+          buffValue: 80
       - desc: AP cost -30%
         duration: 20
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 30
     power: ATK x 5000%
     maxHits: 12
 
@@ -4042,15 +4131,23 @@
     def: 1549
     hit: 1253
     grd: 938
-    ap: 100
 
   talents:
     - name: "Fluffy Note"
       effects: 
         - desc: Damage dealt +40%
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 40
         - desc: Damage dealt +50% at long range
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Long Range
+            buffValue: 50
     - name: "First Time Cooking"
       effects: 
         - desc: AP recovery +200% at short range
@@ -4117,17 +4214,30 @@
     def: 1733
     hit: 1260
     grd: 917
-    ap: 100
 
   talents:
     - name: "Pride of Morse"
       effects: 
         - desc: Damage dealt +30%
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 30
         - desc: Damage dealt +55% when hitcount is >150
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Hit Count > 150
+            buffValue: 55
         - desc: Damage dealt +75% when hitcount is >300
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Hit Count > 300
+            buffValue: 75
     - name: "Observer of the Daft Star System"
       effects: 
         - desc: AP recovers while using skills
@@ -4135,10 +4245,31 @@
       effects: 
         - desc: Additional hit that deals 5% more damage when using skills
         - desc: AP recovery +100% when hitcount is >150
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffCondition: Hit Count > 150
+            buffValue: 100
     - name: "If its with Everyone"
       effects: 
         - desc: ATK/INT/DEF/HIT/GRD +20% when hitcount is >100
+          meta:
+            priority: 1
+            buffs:
+              - ATK
+              - INT
+              - DEF
+              - HIT
+              - GRD
+            buffCondition: Hit Count > 100
+            buffValue: 20
         - desc: Damage taken -100% on perfect dodge(0.5s)
+          duration: 0.5
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffCondition: Perfect Dodge
+            buffValue: 100
 
   skills:
     - name: "Starboard Scratch"
@@ -4171,6 +4302,10 @@
       - desc: Damage dealt +70%
         all: true
         duration: 20
+        meta:
+          priority: 1
+          buff: Damage
+          buffValue: 70
     power: ATK x 4500%
     maxHits: 5
 
@@ -4189,30 +4324,74 @@
     def: 1720
     hit: 1378
     grd: 931
-    ap: 100
 
   talents:
     - name: "LOVE CONNECTION"
       effects: 
         - desc: ATK/INT damage dealt +20%
           all: true
-        - desc: ATK/INT damage dealt +20% when not behind target
+          meta:
+            priority: 1
+            buffs:
+              - ATK Damage
+              - INT Damage
+            buffValue: 20
+        - desc: ATK/INT damage dealt +45% when not behind target
           all: true
+          meta:
+            priority: 1
+            buffs:
+              - ATK Damage
+              - INT Damage
+            buffCondition: Not Behind Target
+            buffValue: 45
     - name: "Caretaker of the Cats"
       effects: 
         - desc: AP cost -15% when not behind target
           all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Not Behind Target
+            buffValue: 15
         - desc: AP cost -30% when HP is 100% and not behind target
           all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: HP is 100% and Not Behind Target
+            buffValue: 30
     - name: "Orange Connection"
       effects: 
         - desc: Critical hit chance +50% when HP is 100%
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: HP is 100%
+            buffValue: 50
         - desc: Critical damage dealt +50%
+          meta:
+            priority: 1
+            buff: Crit Damage
+            buffValue: 50
         - desc: Damage taken -100% on perfect dodge (0.5s)
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffCondition: Perfect Dodge
+            buffValue: 100
     - name: "Feelings that Connect"
       effects: 
         - desc: ATK +20%
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 20
         - desc: HIT +10%
+          meta:
+            priority: 1
+            buff: HIT
+            buffValue: 10
 
   skills:
     - name: "Black Hole Sphere"
@@ -4243,6 +4422,10 @@
     effects: 
       - desc: ATK +80%
         duration: 20
+        meta:
+          priority: 1
+          buff: ATK
+          buffValue: 80
       - desc: Recovers 10% of max HP every 3 seconds
         duration: 20
     power: ATK x 5000%
@@ -4263,19 +4446,31 @@
     def: 1575
     hit: 1232
     grd: 931
-    ap: 100
 
   talents:
     - name: "Second Lieutenant's Gun Judgement"
       effects: 
         - desc: Damage dealt +35%
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 35
         - desc: Damage dealt +70% when not behind target
           all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Not Behind Target
+            buffValue: 70
     - name: "Advocate of Studying Abroad"
       effects: 
         - desc: Normal attack AP recovery +200%
           all: true
+          meta:
+            priority: 1
+            buff: AP Recovery From Normal Attacks
+            buffValue: 200
         - desc: Evasion AP cost -50%
           all: true
         - desc: Movement rate +30%
@@ -4283,30 +4478,40 @@
     - name: "Trials and Growth"
       effects: 
         - desc: Damage dealt +50% by skills when not behind target
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Not Behind Target
+            buffValue: 50
     - name: "Confident Poise"
       effects: 
         - desc: Damage taken -30%
-        - desc: No flinching when taking damage of 10% of max HP or less (Self/Healers)
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffValue: 30
+        - desc: No flinching when taking damage of 10% of max HP or less
+          all: Healers/Self
 
   skills:
     - name: "Phase Gun - Penetrate"
       picture: Skill_Placeholder
-      power: ATK x 0%
+      power: ATK x 200%
       ap: 14
       maxHits: 2
     - name: "Phase Gun - Detonate"
       picture: Skill_Placeholder
-      power: ATK x 0%
+      power: ATK x 750%
       ap: 25
       maxHits: 4
     - name: "Phase Gun - Diffusion"
       picture: Skill_Placeholder
-      power: ATK x 0%
+      power: ATK x 250%
       ap: 17
       maxHits: 6
     - name: "Phase Gun - Tracing"
       picture: Skill_Placeholder
-      power: ATK x 0%
+      power: ATK x 730%
       ap: 24
       maxHits: 8
       
@@ -4318,8 +4523,376 @@
       - desc: AP cost -50%
         all: true
         duration: 10
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 50
       - desc: Single target damage +50%
         all: true
         duration: 10
+        meta:
+          priority: 1
+          buff: Single Target Damage
+          buffValue: 50
     power: ATK x 4500%
     maxHits: 9
+
+- name: Tika (Inscribed Star)
+  cat: jp
+  rating: 0
+  picture: Inscribed_Star_Tika
+  weapon: gun
+  ace: true
+  semi: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15750
+    atk: 2494
+    int: 1563
+    def: 1523
+    hit: 1253
+    grd: 945
+
+  talents:
+    - name: Talent 1
+      shortEffects: ATK/INT Damage +40%, and ATK/INT Damage +60% when hitcount >200 (Party)
+      effects: 
+        - desc: ATK Damage +40%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK Damage
+            buffValue: 40
+        - desc: INT Damage +40%
+          all: true
+          meta:
+            priority: 1
+            buff: INT Damage
+            buffValue: 40
+        - desc: ATK Damage +60% when hitcount is >200
+          all: true
+          meta:
+            priority: 1
+            buff: ATK Damage
+            buffCondition: Hit Count > 200
+            buffValue: 60
+        - desc: INT Damage +60% when hitcount is >200
+          all: true
+          meta:
+            priority: 1
+            buff: INT Damage
+            buffCondition: Hit Count > 200
+            buffValue: 60
+    - name: Talent 2
+      effects: 
+        - desc: Hitcount timer +2 seconds
+          all: true
+        - desc: Rush combo damage +40% when hitcount is >400
+          all: true
+          meta:
+            priority: 1
+            buff: Rush Damage 
+            buffCondition: Hit Count > 400
+            buffValue: 40
+    - name: Talent 3
+      effects: 
+        - desc: Rush gauge fills by 3% every 3 seconds
+          all: true
+    - name: Talent 4
+      shortEffects: Recovers AP for allies when using Line Gunning and Platoon Blast | ATK/INT/DEF/HIT/GRD +30% when hitcount >300
+      effects: 
+        - desc: Recovers AP for allies when using Line Gunning and Platoon Blast
+        - desc: ATK/INT/DEF/HIT/GRD +30% when hitcount is >300
+          meta:
+            priority: 1
+            buffs:
+              - ATK
+              - INT
+              - DEF
+              - HIT
+              - GRD
+            buffCondition: Hit Count > 300
+            buffValue: 30
+
+  skills:
+    - name: Gunner's Line 
+      picture: Skill_Placeholder
+      power: ATK x 390%
+      ap: 17
+      maxHits: 6
+    - name: Killer Distance • Ancient 
+      picture: Approach_Blow
+      power: ATK x 470%
+      ap: 22
+      maxHits: 3
+    - name: Barrage Fire • Ancient 
+      picture: Bullet_Barrage
+      power: ATK x 510%
+      ap: 21
+      maxHits: 6
+    - name: Platoon Blast
+      picture: Skill_Placeholder
+      power: ATK x 840%
+      ap: 30
+      maxHits: 8
+      
+  rush:
+    name: Rotate Javelin
+    picture: Rotate_Javelin_Inscribed_Star_Tika
+    shortEffects: Hitcount +100 / AP cost -30%
+    effects: 
+      - desc: Hitcount +100
+      - desc: AP cost -30%               
+        all: true
+        duration: 20
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 30
+    power: ATK x 4500%
+    maxHits: 25
+   
+- name: Reimi Saionji (Awakened)
+  cat: jp
+  rating: 0
+  picture: Reimi
+  weapon: gun 
+  ace: true
+  limited: false
+  awakened: true 
+  star: 5
+
+  stats:
+    hp: 15540
+    atk: 2587
+    int: 1563
+    def: 1549
+    hit: 1246
+    grd: 945
+
+  talents:
+    - name: Sound Judgement II
+      effects: 
+        - desc: INT Damage Taken -40%
+          all: true
+          meta:
+            priority: 1 
+            buff: INT Damage Taken Reduction 
+            buffValue: 40
+    - name: Greater Single-Shot
+      effects: 
+        - desc: Damage dealt +40%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 40 
+        - desc: Damage dealt +50% when hitcount >100
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 50
+        - desc: Damage dealt +70% when hitcount >200
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 70
+    - name: Star Seed of Hope
+      effects: 
+        - desc: Nullifies status ailments for 180 seconds
+          all: false
+    - name: Descendant of Muah 
+      effects: 
+        - desc: 90% chance of surviving a lethal attack when at 10% of max HP or more
+          all: Self, All Attacker, All Defender
+    - name: Daughter of the Saionji Family
+      effects: 
+        - desc: Damage taken -100% when dodging (Self/0.5s)
+          all: false
+        - desc: Movement speed +30%
+          all: false
+        - desc: AP recovery when moving 
+    - name: Promise Made Under the Stars
+      effects: 
+        - desc: Evasion possible during air attacks
+        - desc: AP cost -40% when skill chain >3
+          all: false
+          meta:
+            priority: 1
+            buff: AP Cost Reduction 
+            buffCondition: Skill Chain >3
+            buffValue: 40
+        - desc: Critical hit chance +50%
+          all: false
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffValue: 50
+
+  skills:
+    - name: Chaotic Blossoms
+      picture: Chaotic_Blossoms
+      power: ATK x 550%
+      ap: 35
+      maxHits: 11
+    - name: Crimson Squall
+      picture: Crimson_Squall
+      power: ATK x 280%
+      ap: 24
+      maxHits: 9
+    - name: Cresent Wings
+      picture: Crescent_Wings
+      power: ATK x 260%
+      ap: 24
+      maxHits: 2
+    - name: Rapacious Sparrows
+      picture: Savage_Sparrows
+      power: ATK x 460%
+      ap: 32
+      maxHits: 9
+    - name: Hazy Dance • Mist
+      picture: Hazy_Dance
+      power: ATK x 730%
+      ap: 31
+      maxHits: 3
+      
+  rush:
+    name: Lunar Divination 
+    picture: Lunar_Divination_Reimi
+    element: Dark
+    shortEffects: Nullifies status ailments and recovers 15% of max HP every 3 seconds (Party/15s)
+    effects: 
+      - desc: Nullifies status ailments 
+        all: true
+      - desc: Recovers 15% of max HP every 3 seconds               
+        all: true
+        duration: 15
+    power: ATK x 4500%
+    maxHits: 7
+    
+- name: Elphelt
+  cat: jp
+  rating: 0
+  picture: Elphelt
+  weapon: rifle
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15750
+    atk: 2494
+    int: 1575
+    def: 1537
+    hit: 1246
+    grd: 924
+
+  talents:
+    - name: Feminity Incarnate 
+      effects: 
+        - desc: Hitcount timer +1 second
+          all: true
+        - desc: Damage +35%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 35
+        - desc: Damage +55% when hitcount >100
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Hit Count > 100
+            buffValue: 55
+        - desc: Damage +75% when hitcount >250
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Hit Count > 250
+            buffValue: 75
+    - name: Unending Delusion 
+      effects: 
+        - desc: No flinching when attacking
+          all: false
+        - desc: Damage taken -20%
+          all: false
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction 
+            buffValue: 20
+        - desc: No flinching when skill chain >3
+          all: true
+        - desc: Damage Taken -50% when skill chain >3
+          all: true
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction 
+            buffCondition: Skill Chain > 3
+            buffValue: 50
+    - name: Love Dilemma
+      effects: 
+        - desc: Recovers 15% HP every 3 seconds on perfect dodge (Party/20s)
+          all: true
+    - name: VALENTINE
+      effects: 
+        - desc: AP Recovery +100% on perfect dodge (Self/0.5s)
+          all: false
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffCondition: Perfect Dodge
+            buffValue: 100
+        - desc: Evasion rate +100% on perfect dodge (Self/0.5s)
+          all: false
+        - desc: Evasion distance +100% on perfect dodge (Self/0.5s)
+        - desc: Damage taken -100% on perfect dodge (Self/0.5s)
+          all: false
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction 
+            buffCondition: Perfect Dodge
+            buffValue: 100
+
+  skills:
+    - name: Pineberry
+      picture: Skill_Placeholder
+      power: ATK x 300%
+      ap: 14
+      maxHits: 1
+    - name: Capsule Scatter • Wedding
+      picture: Capsule_Scatter
+      power: ATK x 660%
+      ap: 23
+      maxHits: 5
+    - name: Spread Ray • Wedding
+      picture: Heaven_Air_Raid
+      power: ATK x 790%
+      ap: 25
+      maxHits: 5
+    - name: Reload & Snipe
+      picture: Skill_Placeholder
+      power: ATK x 1200%
+      ap: 30
+      maxHits: 1
+      
+  rush:
+    name: Magnum Wedding
+    picture: Magnum_Wedding_Elphelt
+    element: 
+    effects: 
+      - desc: AP cost -50%                
+        all: true
+        duration: 20 
+        meta:
+          priority: 1
+          buff: AP Cost Reduction 
+          buffValue: 50
+    power: ATK x 4500%
+    maxHits: 2  
+    

@@ -1,7 +1,6 @@
 
 - name: A2
   cat: jp
-  rating: 10
   picture: A2
   weapon: greatsword
   ace: true
@@ -143,7 +142,6 @@
 
 - name: Dias Flac
   cat: jp
-  rating: 6
   picture: Dias
   weapon: bns
   ace: true
@@ -252,7 +250,6 @@
     
 - name: Dias Flac (Awakened)
   cat: jp
-  rating: 9
   picture: Dias
   weapon: bns
   ace: true
@@ -414,7 +411,6 @@
 
 - name: Edge Maverick
   cat: jp
-  rating: 5
   picture: Edge
   weapon: ohs
   ace: true
@@ -501,7 +497,6 @@
     
 - name: Edge Maverick (Awakened)
   cat: jp
-  rating: 5
   picture: Edge
   weapon: ohs
   ace: true
@@ -641,7 +636,6 @@
 
 - name: Victor Oakville
   cat: jp
-  rating: 5
   picture: Victor
   weapon: bns
   star: 5
@@ -719,7 +713,6 @@
     
 - name: Victor Oakville (Awakened)
   cat: jp
-  rating: 4
   picture: Victor
   weapon: bns
   awakened: true
@@ -883,7 +876,6 @@
 
 - name: Evelysse (Winter)
   cat: jp
-  rating: 9.5
   picture: Snow_White_Evelysse
   weapon: dualswords
   ace: true
@@ -1199,7 +1191,6 @@
     
 - name: Fayt Leingod (Groom)
   cat: jp
-  rating: 9
   picture: Groom_Fayt
   weapon: ohs
   ace: true
@@ -1310,7 +1301,6 @@
     
 - name: Hrist Valkyrie
   cat: jp
-  rating: 0
   picture: Hrist
   weapon: bns
   ace: true
@@ -1425,7 +1415,6 @@
 
 - name: Sigmund
   cat: jp
-  rating: 0
   picture: Sigmund
   weapon: ohs
   ace: true
@@ -1522,7 +1511,6 @@
 
 - name: Cyuss
   cat: jp
-  rating: 0
   picture: Ciuss
   weapon: greatsword
   ace: true
@@ -1629,7 +1617,6 @@
 
 - name: Vashyron
   cat: jp
-  rating: 0
   picture: Vashyron
   weapon: gun
   ace: true
@@ -1740,7 +1727,6 @@
 
 - name: Nakamura Yuichi
   cat: jp
-  rating: 0
   picture: Yuichi
   weapon: bns
   ace: true
@@ -1822,7 +1808,6 @@
 
 - name: Rena Lanford (Summer)
   cat: jp
-  rating: 0
   picture: Beach_Rena
   weapon: dualswords
   ace: true
@@ -1922,10 +1907,8 @@
     power: ATK x 5000%
     maxHits: 11
 
-   
 - name: Cyuss Warren (Awakened)
   cat: jp
-  rating: 0
   picture: Ciuss
   weapon: greatsword
   ace: true
@@ -2053,10 +2036,8 @@
     power: ATK x 5000%
     maxHits: 6
 
-
 - name: Ashton Anchors (Blazing)
   cat: jp
-  rating: 0
   picture: Blazing_Ashton
   weapon: greatsword
   ace: true
@@ -2158,7 +2139,6 @@
 
 - name: Tika (Defender)
   cat: jp
-  rating: 0
   picture: Tika
   weapon: arm
   ace: true
@@ -2266,7 +2246,6 @@
 
 - name: Yrian Luxter
   cat: jp
-  rating: 0
   picture: Yuuin
   weapon: dualswords
   ace: true
@@ -2372,7 +2351,6 @@
 
 - name: Nel Zepher (Halloween)
   cat: jp
-  rating: 0
   picture: Fallen_Angel_Nel
   weapon: dualswords
   ace: true
@@ -2477,13 +2455,16 @@
       - desc: Critical hit chance +40%
         all: true
         duration: 20
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 40
     power: ATK x 4500%
     maxHits: 6
 
    
 - name: Bacchus D-79
   cat: jp
-  rating: 0
   picture: Bacchus
   weapon: launcher
   ace: true
@@ -2602,7 +2583,6 @@
 
 - name: Verda Kleiman (Idol)
   cat: jp
-  rating: 0
   picture: Singing_Star_Verda
   weapon: axe
   ace: true
@@ -2621,17 +2601,38 @@
     - name: "Innumberable Knowledge Star Blink"
       effects: 
         - desc: HP +50%
-        - desc: HP + 20%
+          meta:
+            priority: 4
+            buff: HP
+            buffValue: 50
+        - desc: HP +20%
           all: true
+          meta:
+            priority: 1
+            buff: HP
+            buffValue: 20
         - desc: No flinching when taking damage of 20% of max HP or less
           all: true
         - desc: DEF +30% when not targeting enemy's backside
           all: true
+          meta:
+            priority: 1
+            buff: DEF
+            buffValue: 30
     - name: "Shorty Idol"
       effects: 
         - desc: ATK +20%
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 20
         - desc: Damage taken +40% when Idol Verda's HP is >50%
           all: Enemies
+          meta:
+            priority: 1
+            buff: Enemy Damage Taken
+            buffCondition: Idol Verda's HP is >50%
+            buffValue: 40
     - name: "Throbbing Green"
       effects: 
         - desc: Recovers 10% of max HP every 3 seconds after guarding enemy attack (20s)
@@ -2642,6 +2643,10 @@
         - desc: Nullifies charge assault critical damage penalty
         - desc: No flinching when attacking
         - desc: Damage taken -40%
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffValue: 40
         - desc: Evasion possible during air attacks
 
   skills:
@@ -2674,12 +2679,17 @@
       - desc: ATK/INT damage taken +40%
         duration: 20
         all: Enemies
+        meta:
+          priority: 1
+          buffs:
+            - Enemy ATK Damage Taken
+            - Enemy INT Damage Taken
+          buffValue: 40
     power: ATK x 4500%
     maxHits: 1
 
 - name: Fayt Leingod (SRF)
   cat: jp
-  rating: 0
   picture: SRF_Fayt
   weapon: ohs
   ace: true
@@ -2693,31 +2703,57 @@
     def: 2446
     hit: 866
     grd: 1079
-    ap: 100
 
   talents:
     - name: "Interest in Space Pioneering History"
       effects: 
         - desc: Elemental damage dealt +20%
           all: true
+          meta:
+            priority: 1
+            buff: Elemental Damage
+            buffValue: 20
         - desc: Elemental damage dealt +35% when hitcount is >100
           all: true
+          meta:
+            priority: 1
+            buff: Elemental Damage
+            buffCondition: Hit Count > 100
+            buffValue: 35
         - desc: Elemental damage dealt +50% when hitcount is >150
           all: true
+          meta:
+            priority: 1
+            buff: Elemental Damage
+            buffCondition: Hit Count > 150
+            buffValue: 50
     - name: "The True Meaning of the UP3"
       effects: 
         - desc: HP +50%
           all: true
+          meta:
+            priority: 1
+            buff: HP
+            buffValue: 50
         - desc: No flinching when taking damage of 20% of max HP or less
           all: true
     - name: "New Year's Resolution"
       effects: 
         - desc: Damage taken -40% when attacking
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffCondition: Attacking
+            buffValue: 40
         - desc: Evasion possible during air attacks
     - name: "From Beginning to End"
       effects: 
         - desc: Imbues attacks with ice and light
         - desc: AP cost -20%
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 20
 
   skills:
     - name: "Twin Zapper"
@@ -2749,12 +2785,15 @@
       - desc: Elemental damage dealt +70%
         all: true
         duration: 20
+        meta:
+          priority: 1
+          buff: Elemental Damage
+          buffValue: 70
     power: ATK x 4500%
     maxHits: 9
 
 - name: Gemini Sunrise
   cat: jp
-  rating: 0
   picture: Gemini
   weapon: ohs
   ace: true
@@ -2768,16 +2807,29 @@
     def: 1353
     hit: 1036
     grd: 1141
-    ap: 100
 
   talents:
     - name: "New York Star Assault Troop"
       effects: 
         - desc: Damage taken -20%
           all: true
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffValue: 20
         - desc: Damage taken -30%  when Gemini not targeted by enemy
           all: true
-        - desc: Damage taken -50%  when targeted by enemy
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffCondition: Gemini Not Holding Aggro
+            buffValue: 30
+        - desc: Damage taken -50% when targeted by enemy
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffCondition: Holding Aggro
+            buffValue: 50
     - name: "Mifune Sword Style"
       effects: 
         - desc: No flinching when taking damage of 20% of max HP or less
@@ -2788,15 +2840,36 @@
       effects: 
         - desc: Single target damage +25%
           all: true
-        - desc: Single target damage +50% at close range
+          meta:
+            priority: 1
+            buff: Single Target Damage
+            buffValue: 25
+        - desc: Single target damage +50% at short range
           all: true
+          meta:
+            priority: 1
+            buff: Single Target Damage
+            buffCondition: Short Range
+            buffValue: 50
         - desc: AP cost -20% when Gemini targeted by enemy
           all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Gemini Holding Aggro
+            buffValue: 20
     - name: "Olympic Warrior"
       effects: 
         - desc: Taunt +3
         - desc: Evasion possible during air attacks
-        - desc: ATK/DEF +20% at close range
+        - desc: ATK/DEF +20% at short range
+          meta:
+            priority: 1
+            buffs:
+              - ATK
+              - DEF
+            buffCondition: Short Range
+            buffValue: 20
 
   skills:
     - name: "Rumbling Wheel"
@@ -2829,7 +2902,144 @@
     effects: 
       - desc: AP cost -50%
         duration: 20
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 50
       - desc: Recovers 10% of max HP every 3 seconds
         duration: 20
     power: ATK x 4500%
     maxHits: 2
+
+- name: Ricardo 
+  cat: jp
+  rating: 0
+  picture: Ricardo
+  weapon: greatsword
+  ace: true
+  semi: true
+  limited: true
+  star: 5
+
+  stats: 
+    hp: 26460
+    atk: 3041
+    int: 1496
+    def: 2363
+    hit: 805
+    grd: 1057
+
+  talents:
+    - name: General of the Kingdom of Ruubarika
+      effects: 
+        - desc: ATK damage taken -20%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK Damage Taken Reduction 
+            buffValue: 20
+        - desc: No flinching when taking damage of 25% of max HP or less
+          all: true
+        - desc: ATK damage taken -30%
+          all: Self/Sharpshooters
+          meta:
+            priority: 1
+            buff: ATK Damage Taken Reduction 
+            buffValue: 30
+    - name: Decimating Greatsword
+      shortEffects: Damage taken +20%, and Damage taken +40% when hitcount is >300 (Enemies)
+      effects: 
+        - desc: Damage Taken +20%
+          all: Enemies
+          meta:
+            priority: 1
+            buff: Enemy ATK Damage Taken
+            buffValue: 20
+        - desc: Damage taken +40% when hitcount is >300
+          all: Enemies
+          meta:
+            priority: 1
+            buff: Enemy ATK Damage Taken
+            buffCondition: Hit Count > 300
+            buffValue: 40
+    - name: Thoughts Behind the Mask
+      effects: 
+        - desc:  Additional hit that deals 5% damage when using Battle Skills
+          all: true
+        - desc: ATK/INT/DEF/HIT/GRD +20% when hitcount >200
+          all: false
+          meta:
+            priority: 3
+            buffs: 
+              - ATK
+              - INT
+              - DEF
+              - HIT
+              - GRD
+            buffCondition: Hit Count > 200
+            buffValue: 20
+    - name: Vow of the Elder Brother Who Transcends Time
+      effects: 
+        - desc: ATK +20%
+          all: false
+          meta:
+            priority: 4
+            buff: ATK
+            buffValue: 20
+        - desc: HP +20%
+          all: false
+          meta:
+            priority: 4
+            buff: HP
+            buffValue: 20
+        - desc: Normal attack AP recovery +100%
+          all: true
+          meta:
+            priority: 1
+            buff: AP Recovery From Normal Attacks
+            buffValue: 100
+
+  skills:
+    - name: Tailswing Tackle • Rend
+      picture: Void_Claw
+      power: ATK x 280%
+      ap: 16
+      maxHits: 1
+    - name: Brandish_Edge • Rend
+      picture: Cross_Slash 
+      power: ATK x 690%
+      ap: 25
+      maxHits: 5
+    - name: Tearing Blade
+      picture: Skill_Placeholder
+      power: ATK x 350%
+      ap: 19
+      maxHits: 2
+    - name: Sword Mine Layer
+      picture: Skill_Placeholder
+      power: ATK x 790%
+      ap: 32
+      maxHits: 6
+      
+  rush:
+    name: Thousand Wedges
+    picture: Thousand_Wedges_Ricardo
+    shortEffects: ATK +80% and Critical hit chance +50% (Self/20s)
+    effects: 
+      - desc: ATK +80%
+        all: false
+        duration: 20
+        meta:
+          priority: 1
+          buff: ATK
+          buffValue: 80
+      - desc: Critical hit chance +50%               
+        all: false
+        duration: 20 
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 50
+    power: ATK x 5000%
+    maxHits: 3
+    

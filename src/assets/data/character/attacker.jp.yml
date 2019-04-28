@@ -2411,7 +2411,6 @@
 
 - name: Andre
   cat: jp
-  rating: 0
   picture: Andre
   weapon: ohs
   ace: false
@@ -2474,7 +2473,6 @@
     
 - name: Verda Kleiman (Valentine)
   cat: jp
-  rating: 10
   picture: Pure_Love_Verda
   weapon: arm
   ace: true
@@ -2623,7 +2621,6 @@
  
 - name: Rena Lanford (Valentine)
   cat: jp
-  rating: 10
   picture: Sweet_Cat_Rena
   weapon: knuckle
   ace: true
@@ -2745,7 +2742,6 @@
 
 - name: Mirage Koas
   cat: jp
-  rating: 7
   picture: Mirage
   weapon: knuckle
   ace: true
@@ -2875,7 +2871,6 @@
 
 - name: Ashton Anchors
   cat: jp
-  rating: 7
   picture: Ashton
   weapon: dualswords
   ace: true
@@ -2993,7 +2988,6 @@
 
 - name: Precis F. Neumann
   cat: jp 
-  rating: 4
   picture: Precis	
   weapon: arm
   ace: true
@@ -3089,7 +3083,6 @@
       
 - name: Fidel Camuze (Awakened)
   cat: jp
-  rating: 7
   picture: Fidel
   weapon: ohs
   ace: true
@@ -3126,7 +3119,7 @@
         - desc: Evasion possible during air attacks
     - name: "Heir to the Camuze Style"
       effects:
-        - desc: Single target damage dealt +10% when skill chain is >3
+        - desc: Single target damage +10% when skill chain is >3
           meta:
             priority: 3
             buff: Single Target Damage
@@ -3231,7 +3224,6 @@
 
 - name: Caleen Keemosn
   cat: jp
-  rating: 0
   picture: Karin
   weapon: scythe
   ace: false
@@ -3379,7 +3371,6 @@
 
 - name: Maria Traydor (Cherry Blossom)
   cat: jp
-  rating: 8
   picture: Sakura_Maria
   weapon: dualswords
   ace: true
@@ -3486,7 +3477,6 @@
        
 - name: Pericci
   cat: jp
-  rating: 0
   picture: Pericci
   weapon: knuckle
   ace: true
@@ -3572,7 +3562,6 @@
 
 - name: Fayt Leingod (Awakened)
   cat: jp
-  rating: 5
   picture: Fayt
   weapon: ohs
   ace: true
@@ -3716,7 +3705,6 @@
 
 - name: Claude C. Kenny (Awakened)
   cat: jp
-  rating: 8
   picture: Claude
   weapon: ohs
   ace: true
@@ -4025,7 +4013,6 @@
 
 - name: Lenneth Valkyrie (Awakened)
   cat: jp
-  rating: 4
   picture: Lenneth
   weapon: ohs
   ace: true
@@ -4176,7 +4163,6 @@
 
 - name: Ashton Anchors (Awakened)
   cat: jp
-  rating: 8
   picture: Ashton
   weapon: dualswords
   ace: true
@@ -4364,7 +4350,6 @@
 
 - name: Cliff Fittir (Awakened)
   cat: jp
-  rating: 4
   picture: Cliff
   weapon: knuckle
   ace: true
@@ -4510,7 +4495,6 @@
 
 - name: Ilia Silvestri (Awakened)
   cat: jp
-  rating: 3
   picture: Ilia
   weapon: knuckle
   limited: false
@@ -4705,7 +4689,6 @@
 
 - name: Arngrim
   cat: jp
-  rating: 0
   picture: Arngrim
   weapon: greatsword
   ace: true
@@ -4790,7 +4773,6 @@
 
 - name: Crowe F. Almedio
   cat: jp
-  rating: 0
   picture: Crowe
   weapon: dualswords
   ace: true
@@ -4893,7 +4875,6 @@
 
 - name: Leanne (Bridal)
   cat: jp
-  rating: 0
   picture: Bridal_Reanbell
   weapon: gun
   ace: true
@@ -4976,10 +4957,116 @@
     power: ATK x 3500%
     maxHits: 15
 
+- name: Leanne (Bridal) (Awakened)
+  cat: jp
+  picture: Bridal_Reanbell
+  weapon: gun
+  ace: true
+  limited: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 15750
+    atk: 2718
+    int: 1575
+    def: 1930
+    hit: 1141
+    grd: 819
+
+  talents:
+    - name: "Courage and Love"
+      effects: 
+        - desc: ATK +40%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 40
+    - name: "Desire to Change"
+      effects: 
+        - desc: ATK +55% at short range
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffCondition: Short Range
+            buffValue: 55
+    - name: "Dress Change"
+      effects: 
+        - desc: AP recovery +50% at long range
+          all: Attackers/Sharpshooters
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffCondition: Long Range
+            buffValue: 50
+    - name: "Specially Reinforced Suits"
+      effects:
+        - desc: No flinching when taking damage of 20% of max HP or less
+    - name: "The Gospel of Basil"
+      effects: 
+        - desc: AP cost -30% when skill chain is >3
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain 3+_
+            buffValue: 30
+        - desc: Evasion possible during air attacks     
+    - name: "Vow's Kiss"
+      effects: 
+        - desc: Damage taken -100% after using a skill (0.3s)
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffCondition: When using a battle skil
+            buffValue: 100
+
+  skills:
+    - name: "Skyline Shooting"
+      picture: Skyline_Spray
+      power: ATK x 340%
+      ap: 19
+      maxHits: 3
+    - name: "Barrage Fire"
+      picture: Bullet_Barrage
+      power: ATK x 680%
+      ap: 27
+      maxHits: 6
+    - name: "Approach Blow"
+      picture: Approach_Blow
+      power: ATK x 380%
+      ap: 22
+      maxHits: 3
+    - name: "Deadline Burst"
+      picture: Deadline_Burst
+      power: ATK x 910%
+      ap: 34
+      maxHits: 5
+    - name: "Stardust Aim"
+      picture: Stardust_Aim
+      power: ATK x 310%
+      ap: 17
+      maxHits: 3   
+      
+  rush:
+    name: "Invincible Over"
+    picture: Invincible_Over_Bridal_Reanbell
+    shortEffects: ATK damage dealt +30% (Party/20s)
+    effects: 
+      - desc: ATK damage +30%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: ATK Damage
+          buffValue: 30
+    power: ATK x 4000%
+    maxHits: 15
+    
 
 - name: Capell
   cat: jp
-  rating: 0
   picture: Capell
   weapon: ohs
   ace: true
@@ -5074,7 +5161,6 @@
   
 - name: Chisato Madison
   cat: jp
-  rating: 0
   picture: Chisato
   weapon: knuckle
   star: 5
@@ -5162,7 +5248,6 @@
   
 - name: Roddick Farrence (Summer)
   cat: jp
-  rating: 8
   picture: Beach_Ratix
   weapon: bns
   ace: true
@@ -5271,7 +5356,6 @@
 
 - name: Nel Zelpher (Maid)
   cat: jp
-  rating: 0
   picture: Main_Nel
   weapon: bns
   ace: true
@@ -5382,7 +5466,6 @@
 
 - name: Albel Nox (Black Commander)
   cat: jp
-  rating: 0
   picture: Black_Commander_Albel
   weapon: greatsword
   ace: true
@@ -5485,7 +5568,6 @@
 
 - name: Zephyr
   cat: jp
-  rating: 0
   picture: Zephyr
   weapon: gun
   ace: true
@@ -5583,7 +5665,6 @@
 
 - name: Reimi Saionji (Bridal)
   cat: jp
-  rating: 0
   picture: Bridal_Remi
   weapon: bow
   ace: true
@@ -5689,7 +5770,6 @@
 
 - name: Clair Lasbard (Bridal)
   cat: jp
-  rating: 0
   picture: Bridal_Clair
   weapon: dagger
   ace: true
@@ -5804,7 +5884,6 @@
 
 - name: Maria Traydor (Summer)
   cat: jp
-  rating: 0
   picture: Beach_Maria
   weapon: greatsword
   ace: true
@@ -5899,7 +5978,6 @@
     
 - name: Anne Patriceani (Awakened)
   cat: jp
-  rating: 0
   picture: Anne
   weapon: knuckle
   limited: false
@@ -5953,7 +6031,7 @@
             priority: 1
             buff: ATK Damage
             buffValue: 75
-    - name: "Talent 3"
+    - name: "Highly Conscientious Science Officer"
       shortEffects: ATK +40%, and ATK +50%/+60% when hitcount is >100/>150 (Party) 
       effects: 
         - desc: ATK +40%
@@ -5976,13 +6054,13 @@
             buff: ATK
             buffCondition: Hit Count > 150
             buffValue: 60
-    - name: "Talent 4"
+    - name: "Vicinity of Wisdom"
       effects: 
         - desc: 90% chance of surviving a lethal attack when at 20% of max HP or more
           all: false
         - desc: Absorbs 10% of damage dealt by normal attacks as HP
           all: false
-    - name: "Talent 5"
+    - name: "Cat-Lover Without Equal"
       effects: 
         - desc: Nullifies charge assault critical damage penalty
           all: false
@@ -5990,7 +6068,7 @@
           all: false
         - desc: Evasion possible during air attacks
           all: false
-    - name: "Talent 6"
+    - name: "Ideals That Come Before Laws"
       shortEffects: ATK +30%, DEF +10%, HIT +40%, and HP +20%
       effects: 
         - desc: ATK +30%
@@ -6064,7 +6142,6 @@
 
 - name: Tika (Attacker)
   cat: jp
-  rating: 0
   picture: Tika
   weapon: arm
   ace: true
@@ -6169,7 +6246,6 @@
 
 - name: Welch Vineyard (Axe)
   cat: jp
-  rating: 0
   picture: Axe_Welch
   weapon: axe
   ace: true
@@ -6190,15 +6266,32 @@
       effects: 
         - desc: ATK +45%
           all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 45
         - desc: ATK +60% when hitcount is >150
           all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffCondition: Hit Count > 150
+            buffValue: 60
     - name: "Explosive"
       effects: 
         - desc: DEF -30% when hit by Welch Rock Bomber
+          meta:
+            priority: 1
+            buff: Enemy DEF Reduction
+            buffValue: 30
     - name: "Unmatched Daring"
       effects: 
         - desc: No flinching while attacking
         - desc: Damage taken -40%
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffValue: 40
     - name: "Dextrous Fingers"
       effects: 
         - desc: ATK/INT/DEF/HIT/GRD +20% when hitcount is >50
@@ -6243,12 +6336,15 @@
       - desc: ATK damage +50%
         duration: 20
         all: true
+        meta:
+          priority: 1
+          buff: ATK Damage
+          buffValue: 20
     power: ATK x 4000%
     maxHits: 1
 
 - name: Albel Nox (Halloween)
   cat: jp
-  rating: 0
   picture: Wolf_Albel
   weapon: axe
   ace: true
@@ -6268,26 +6364,62 @@
       effects: 
         - desc: ATK +20%
           all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 20
         - desc: DEF -20% when Wolf Albel's HP is 100%
           all: Enemies
+          meta:
+            priority: 1
+            buff: Enemy DEF Reduction
+            buffCondition: Wolf Albel's HP is 100%
+            buffValue: 20
         - desc: DEF -30% when Wolf Albel's HP is 100%
           all: Enemies
+          meta:
+            priority: 1
+            buff: Enemy DEF Reduction
+            buffCondition: Wolf Albel's HP is 100%
+            buffValue: 30
     - name: "Monster of the Moonlight"
       effects: 
         - desc: Hitcount timer +2 seconds
           all: true
         - desc: AP cost -10% when hitcount is >50
           all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Hit Count is > 50
+            buffValue: 10
         - desc: AP cost -20% when hitcount is >100
           all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Hit Count > 100
+            buffValue: 20
     - name: "Lone Wolf"
       effects: 
         - desc: No flinching when attacking
         - desc: Damage taken -40%
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffValue: 40
     - name: "Deep Twisted Regret"
       effects: 
         - desc: ATK +20%
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 20
         - desc: HP +10%
+          meta:
+            priority: 1
+            buff: HP
+            buffValue: 10
 
   skills:
     - name: "Gravity Collider"
@@ -6318,6 +6450,10 @@
     effects: 
       - desc: AP cost -40%
         duration: 20
+        meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 40
       - desc: Recovers 10% of max HP every 3 seconds
         duration: 20
     power: ATK x 5000%
@@ -6325,7 +6461,6 @@
 
 - name: Fiore Brunelli (Halloween)
   cat: jp
-  rating: 0
   picture: Bandaged_Fiore
   weapon: knuckle
   ace: true
@@ -6345,8 +6480,17 @@
       effects: 
         - desc: ATK +45%
           all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 45
         - desc: ATK +65% when HP is 100%
           all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffCondition: HP is 100%
+            buffValue: 65
     - name: "Candy of Seduction"
       effects: 
         - desc: Absorbs 10% of damage dealt by normal attacks as HP
@@ -6402,7 +6546,6 @@
 
 - name: Arumat Thanatos
   cat: jp
-  rating: 0
   picture: Arumat
   weapon: scythe
   ace: true
@@ -6420,8 +6563,13 @@
     - name: "Eldar's Reaper"
       effects: 
         - desc: Imbues attacks with fire and wind
-        - desc: ATK damage dealt +50% at close range
+        - desc: ATK damage dealt +50% at short range
           all: Attackers
+          meta:
+            priority: 1
+            buff: ATK Damage
+            buffCondition: Short Range
+            buffValue: 50
     - name: "13th Independent Armored Regiment"
       effects: 
         - desc: Nullifies charge assault critical damage penalty
@@ -6429,10 +6577,18 @@
     - name: "Soldier's DNA"
       effects: 
         - desc: AP recovery +100%
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffValue: 100
         - desc: Recovers 100% AP on perfect dodge
     - name: "Permanent Scars"
       effects: 
         - desc: ATK +30%
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 30
 
   skills:
     - name: "Unholy Maelstorm"
@@ -6463,13 +6619,22 @@
     shortEffects: AP cost -30% and elemental damage dealt +50% (Self/20s)
     effects: 
       - desc: AP cost -30%
+        duration: 20
+        meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 30
       - desc: Elemental damage dealt +50%
+        duration: 20
+        meta:
+            priority: 1
+            buff: Elemental Damage
+            buffValue: 50
     power: ATK x 5500%
     maxHits: 1
 
 - name: Reimi Saionji (Idol)
   cat: jp
-  rating: 0
   picture: Singing_Star_Reimi
   weapon: dualswords
   ace: true
@@ -6490,21 +6655,53 @@
       effects: 
         - desc: ATK +40%
           all: true
-        - desc: ATK +65 when not targeting enemy's backside
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 40
+        - desc: ATK +65 when not behind target
           all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffCondition: Not Behind Target
+            buffValue: 65
     - name: "Ooneesan Idol"
       effects: 
         - desc: Normal attack AP recovery +150%
+          meta:
+            priority: 1
+            buff: AP Recovery From Normal Attacks
+            buffValue: 150
         - desc: Normal attack AP recovery +100%
           all: true
+          meta:
+            priority: 1
+            buff: AP Recovery From Normal Attacks
+            buffValue: 100
         - desc: Evasion AP cost -50%
           all: true
     - name: "Blue Oath"
       effects: 
         - desc: Damage taken -30% when attacking
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffCondition: When Attacking
+            buffValue: 30
         - desc: Evasion possible during air attacks
         - desc: Critical hit chance +50% when skill chain is >3
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: Skill Chain 3+
+            buffValue: 50
         - desc: Critical hit chance +100% when skill chain is >5
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: Skill Chain 5+
+            buffValue: 100
     - name: "Courage to Step Forward"
       effects: 
         - desc: AP +20
@@ -6547,7 +6744,6 @@
 
 - name: Ashton Anchors (Winter)
   cat: jp
-  rating: 0
   picture: Holy_Night_Ashton
   weapon: scythe
   ace: true
@@ -6568,20 +6764,43 @@
       effects: 
         - desc: Elemental damage dealt +25%
           all: true
+          meta:
+            priority: 1
+            buff: Elemental Damage
+            buffValue: 25
         - desc: Elemental damage dealt +45% when HP is 100%
           all: true
+          meta:
+            priority: 1
+            buff: Elemental Damage
+            buffCondition: HP is 100%
+            buffValue: 45
     - name: "Two Headed Dragon's Winter Preparation"
       effects: 
         - desc: Critical hit chance +20% after using fire skills (10s)
+          duration: 10
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: After Using Fire Skill
+            buffValue: 20
         - desc: Absorbs 10% of damage dealt by normal attacks as HP after using ice skills (10s)
     - name: "Wild Deer of Abundance"
       effects: 
         - desc: Normal attack AP recovery +150%
-          -all: true
+          all: true
+          meta:
+            priority: 1
+            buff: AP Recovery From Normal Attacks
+            buffValue: 150
         - desc: Recovers 100% AP on perfect dodge
     - name: "Finely Decorated Horns"
       effects: 
         - desc: ATK +20%
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 20
         - desc: AP +20
 
   skills:
@@ -6617,6 +6836,10 @@
     effects: 
       - desc: AP cost -30%
         duration: 20
+        meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 30
       - desc: Recovers 10% of max HP every 3 seconds
         duration: 20
     power: ATK x 5000%
@@ -6624,7 +6847,6 @@
 
 - name: Evelysse (New Year's)
   cat: jp
-  rating: 0
   picture: Herald_of_Spring_Evelysse
   weapon: greatsword
   ace: true
@@ -6638,7 +6860,6 @@
     def: 2020
     hit: 1198
     grd: 873
-    ap: 100
 
   talents:
     - name: "Swift Reactions in Hagoita"
@@ -6657,7 +6878,15 @@
     - name: "New Encounters and Adventures"
       effects: 
         - desc: HP +10%
+          meta:
+            priority: 1
+            buff: HP
+            buffValue: 10
         - desc: ATK +20%
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 20
 
   skills:
     - name: "Spirit Strike - Angel Feather"
@@ -6700,6 +6929,10 @@
     effects: 
       - desc: AP cost -40%
         duration: 20
+        meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 40
       - desc: Recovers 10% of max HP every 3 seconds
         duration: 20
     power: ATK x 5000%
@@ -6707,7 +6940,6 @@
 
 - name: Sakura Shinguji
   cat: jp
-  rating: 0
   picture: Sakura
   weapon: ohs
   ace: true
@@ -6721,15 +6953,23 @@
     def: 1957
     hit: 1127
     grd: 833
-    ap: 100
 
   talents:
     - name: "Imperial Flower Assault Troop"
       effects: 
         - desc: ATK + 50%
           all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 50
         - desc: ATK + 70% at short range
           all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffCondition: Short Range
+            buffValue: 70
     - name: "North Star Sword Style"
       effects: 
         - desc: AP recovers while moving
@@ -6742,6 +6982,10 @@
       effects: 
         - desc: Nullifies charge assault critical damage penalty
         - desc: AP recovery +100%
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffValue: 100
         - desc: Cancel bonus starts at 200% when using charge assault
 
   skills:
@@ -6775,6 +7019,10 @@
       - desc: ATK damage dealt +60%
         duration: 20
         all: true
+        meta:
+            priority: 1
+            buff: ATK Damage
+            buffValue: 60
     power: ATK x 4500%
     maxHits: 6
 
@@ -6792,29 +7040,67 @@
     def: 1943
     hit: 1155
     grd: 812
-    ap: 100
 
   talents:
     - name: "Afflicted by Lycanthropy"
       effects: 
         - desc: ATK +25%
           all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 25
         - desc: ATK +35% when hitcount is >100
           all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffCondition: Hit Count is > 100
+            buffValue: 35
         - desc: ATK +45% when hitcount is >200
           all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffCondition: Hit Count is > 100
+            buffValue: 45
     - name: "Arc Chief of the Human Survival Research Institute"
       effects: 
         - desc: ATK/INT/DEF/HIT/GRD +20% at short range
-        - desc: Storm Hound damage dealt +100%
+          meta:
+            priority: 1
+            buffs:
+              - ATK
+              - INT
+              - DEF
+              - HIT
+              - GRD
+            buffCondition: Short Range
+            buffValue: 20
+        - desc: Damage dealt +100% by Storm Hound
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 100
     - name: "The Wolf in Despair"
       effects: 
         - desc: Evasion distance & rate +100%
         - desc: AP recovery +50% at long range
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffCondition: Long Range
+            buffValue: 50
         - desc: Nullifies charge assault critical damage penalty
     - name: "A Tragic Wish for Humanity's Survival"
       effects: 
-        - desc: ATK/HP +20%
+        - desc: HP/ATK +20%
+          meta:
+            priority: 1
+            buffs:
+              - HP
+              - ATK
+            buffValue: 20
 
   skills:
     - name: "Storm Hound"
@@ -6845,8 +7131,16 @@
     effects: 
       - desc: ATK +80%
         duration: 20
+        meta:
+            priority: 1
+            buff: ATK
+            buffValue: 80
       - desc: AP cost -30%
         duration: 20
+        meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 30
     power: ATK x 5000%
     maxHits: 16
 
@@ -6865,17 +7159,30 @@
     def: 1852
     hit: 1141
     grd: 840
-    ap: 100
 
   talents:
     - name: "Leader of the 104th Training Corps"
       effects: 
         - desc: ATK +60% when Mikasa's HP is 100%
           all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffCondition: Mikasa's HP is 100%
+            buffValue: 60
     - name: "Important Muffler"
       effects: 
         - desc: AP cost -30%
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 30
         - desc: AP cost -60% when behind target
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Behind Target
+            buffValue: 60
         - desc: Absorbs 1.5% of damage dealt by skills as HP when not in front of target and skill chain is >3
     - name: "Vertical Maneuvering Equipment"
       effects: 
@@ -6885,7 +7192,17 @@
     - name: "Cruel World"
       effects: 
         - desc: Rush combo damage +40% when hitcount is >200
+          meta:
+            priority: 1
+            buff: Rush Damage
+            buffCondition: Hit Count > 200
+            buffValue: 40
         - desc: ATK +30% when hitcount is >400
+          meta:
+            priority: 1
+            buff: ATK
+            buffCondition: Hit Count > 400
+            buffValue: 30
 
   skills:
     - name: "Swirling Cut"
@@ -6916,9 +7233,17 @@
     effects: 
       - desc: AP cost -80%
         duration: 5
+        meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 80
       - desc: AP cost -60%
         duration: 5
         all: true
+        meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 60
     power: ATK x 5000%
     maxHits: 10
 
@@ -6937,17 +7262,34 @@
     def: 1878
     hit: 1134
     grd: 833
-    ap: 100
 
   talents:
     - name: "Survey Corps Squad Captain"
       effects: 
         - desc: Damage dealt +20%
           all: Enemies
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 20
         - desc: Damage dealt +50% when hitcount is >200
           all: Enemies
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Hit Count > 200
+            buffValue: 50
         - desc: AP cost -30%
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 30
         - desc: AP cost -60% when hitcount is >300
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Hit Count > 300
+            buffValue: 60
     - name: "Humanity's Strongest Soldier"
       effects: 
         - desc: Additional hit that deals 00% more damage when using Soaring Gale Slash or Whirlwind Cut (2s)
@@ -6960,7 +7302,17 @@
       effects: 
         - desc: Cancel bonus starts at 150% when using charge assault
         - desc: ATK +20% when hitcount is >200
+          meta:
+            priority: 1
+            buff: ATK
+            buffCondition: Hit Count > 200
+            buffValue: 20
         - desc: ATK +50% when hitcount is >500
+          meta:
+            priority: 1
+            buff: ATK
+            buffCondition: Hit Count > 500
+            buffValue: 50
 
   skills:
     - name: "Falling Cut"
@@ -6991,7 +7343,153 @@
     effects: 
       - desc: AP cost -30%
         duration: 10
+        meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 30
       - desc: Critical hit chance +100%
         duration: 10
+        meta:
+            priority: 1
+            buff: Crit Rate
+            buffValue: 100
     power: ATK x 5000%
     maxHits: 10
+
+- name: Sol
+  cat: jp
+  rating: 0
+  picture: Sol
+  weapon: ohs
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15855
+    atk: 3276
+    int: 1549
+    def: 1969
+    hit: 1127
+    grd: 812
+    ap: 140
+
+  talents:
+    - name: Wayfaring Bounty Hunter 
+      effects: 
+        - desc: ATK +20%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 20
+        - desc: ATK +50% when hitcount >150
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 50
+        - desc: Nullifies charge assault critical damage penalty
+          all: false
+    - name: Self Taught Martial Artist 
+      effects: 
+        - desc: Critical hit chance +50% when skill chain >3
+          all: false
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: Skill Chain > 3
+            buffValue: 50
+        - desc: Critical hit chance +100% when skill chain >5
+          all: false
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: Skill Chain > 5
+            buffValue: 100
+        - desc: Critical damage dealt +100% when skill chain >6
+          all: false
+          meta:
+            priority: 1
+            buff: Crit Damage
+            buffCondition: Skill Chain > 6
+            buffValue: 100
+    - name: Bygone Holy Knight
+      effects: 
+        - desc: Normal attack AP recovery +200%
+          all: false
+          meta:
+            priority: 1
+            buff: AP Recovery From Normal Attacks
+            buffValue: 200
+        - desc: Evasion possible during air attacks
+          all: false
+        - desc: ATK +20% when hitcount >200
+          all: false
+          meta:
+            priority: 3
+            buff: ATK
+            buffCondition: Hit Count > 200
+            buffValue: 20
+    - name: GEAR
+      effects: 
+        - desc: ATK +20%
+          all: false
+          meta:
+            priority: 4
+            buff: ATK
+            buffValue: 20
+        - desc: AP +40
+          all: false
+        - desc: Movement rate +30%
+          all: false
+        - desc: Damage taken -100% when using Volcanic Viper (Self/0.5s)
+          all: false
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction 
+            buffValue: 100
+
+  skills:
+    - name: Gun Flame 
+      picture: Skill_Placeholder
+      element: Fire
+      power: ATK x 490%
+      ap: 17
+      maxHits: 3
+    - name: Volcanic Viper
+      picture: Skill_Placeholder
+      element: Fire
+      power: ATK x 200%
+      ap: 23
+      maxHits: 2
+    - name: Bandit Bringer
+      picture: Skill_Placeholder
+      element: Fire
+      power: ATK x 520%
+      ap: 24
+      maxHits: 1
+    - name: Shatter 
+      picture: Skill_Placeholder
+      element: Fire
+      power: ATK x 400%
+      ap: 19
+      maxHits: 2
+      
+  rush: 
+    name: Tyrant Rave ver.ß
+    picture: Tyrant_Rave_Sol
+    element: Fire
+    shortEffects: Hitcount +75 (Party) and AP cost -80% (Self/10s)
+    effects: 
+      - desc: Hitcount +75
+        all: true
+      - desc: AP cost -80%               
+        all: false
+        duration: 10
+        meta:
+          priority: 1
+          buff: AP Cost Reduction 
+          buffValue: 80
+    power: ATK x 5000%
+    maxHits: 4

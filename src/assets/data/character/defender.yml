@@ -278,7 +278,7 @@
           all: false
     - name: "A Filet Mignon!"
       effects: 
-        - desc:	Recovers 3% HP every 3 seconds
+        - desc:	Recovers 3% of max HP every 3 seconds
           all: false
     - name: "Moving up in the World IV"
       effects: 
@@ -463,7 +463,7 @@
             buffValue: 20
             buffCondition: When holding aggro
     - name: "Beach Skirt Wrap"
-      shortEffects: Single target damage +30% and stun chance +15% when not targeted by enemy (Party)
+      shortEffects: Single target damage +30% and stun rate +15% when not targeted by enemy (Party)
       effects:
         - desc: Single target damage +30% when not targeted by enemy
           all: true
@@ -472,7 +472,7 @@
             buff: Single Target Damage
             buffValue: 30
             buffCondition: Not holding aggro
-        - desc: Stun chance +15% when not targeted by enemy
+        - desc: Stun rate +15% when not targeted by enemy
           all: true
           meta:
             priority: 1
