@@ -41,7 +41,7 @@
                   (ionInput)="updateSearchValue($event)"
   ></ion-searchbar>
     
-  <ion-list *ngIf="!isError && itemSorting === 'alpha'">
+  <ion-list *ngIf="!isError && itemSorting === 'alpha'" class="center-container">
     <ion-item *ngFor="let item of alphaSortedItems | filterBy: { name: searchValue }" detail (click)="loadItem(item)" [class.short]="gridView">
       <ng-container *ngIf="!gridView">
         <ng-container *ngTemplateOutlet="items; context: { item: item }"></ng-container>
@@ -54,7 +54,7 @@
   </ion-list>
 
   <ion-list *ngIf="!isError && itemSorting === 'type'">
-    <ion-item-group *ngFor="let itemType of allItemTypes">
+    <ion-item-group *ngFor="let itemType of allItemTypes" class="center-container">
       <ion-item-divider><strong>{{ convertWeaponType(itemType) }}</strong></ion-item-divider>
 
       <ion-item *ngFor="let item of typeSortedItems[itemType] | filterBy: { name: searchValue }" detail (click)="loadItem(item)" [class.short]="gridView">
@@ -70,7 +70,7 @@
   </ion-list>
 
   <ion-list *ngIf="!isError && itemSorting === 'element'">
-    <ion-item-group *ngFor="let element of allElements">
+    <ion-item-group *ngFor="let element of allElements" class="center-container">
       <ion-item-divider>
         <strong><app-element [element]="element"></app-element></strong>
       </ion-item-divider>
@@ -88,7 +88,7 @@
   </ion-list>
 
   <ion-list *ngIf="!isError && itemSorting === 'slayer'">
-    <ion-item-group *ngFor="let slayer of allSlayers">
+    <ion-item-group *ngFor="let slayer of allSlayers" class="center-container">
       <ion-item-divider class="vertical-center">
         <strong><app-slayer [slayer]="slayer"></app-slayer></strong>
       </ion-item-divider>
@@ -106,7 +106,7 @@
   </ion-list>
 
   <ion-list *ngIf="!isError && itemSorting === 'factor'">
-    <ion-item-group *ngFor="let factor of allFactors">
+    <ion-item-group *ngFor="let factor of allFactors" class="center-container">
       <ion-item-divider class="vertical-center">
         <strong>{{ factor }}</strong>
       </ion-item-divider>
