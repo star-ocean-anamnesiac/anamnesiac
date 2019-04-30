@@ -176,6 +176,7 @@
       stock: 3
       cost: 45
       type: seed-ap         
+      
     - name: Pure White Barrette
       stock: 5
       cost: 20
