@@ -131,7 +131,7 @@
       type: draw-ticket-mission    
  
 
-- name: Valkyrie Coin [Blue] Exchange
+- name: Valkyrie Coin [Blue]
   icon: currency-coin-basic
   cat: gl
   currency: Valkyrie Coin [Blue]
@@ -139,6 +139,9 @@
     - Valkyrie
     - VP2
     - Lezard
+    - Lezard Valkyrie
+    - Valkyrie Lezard
+    - Valkyrie Profile
 
   items:
     - name: Magic Crystalx 100
