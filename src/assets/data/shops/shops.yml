@@ -148,6 +148,7 @@
     - name: "Blue Valkyrie Hammer: Cap Inc."
       stock: 10
       cost: 7    
+      type: improvement-hammer-special
     - name: 5* Weapon Ticket
       stock: 2
       cost: 15
