@@ -130,3 +130,64 @@
       cost: 500
       type: draw-ticket-mission    
  
+
+- name: Valkyrie Coin [Blue] Exchange
+  icon: currency-coin-basic
+  cat: gl
+  currency: Valkyrie Coin [Blue]
+  aliases:
+    - Valkyrie
+    - VP2
+    - Lezard
+
+  items:
+    - name: Magic Crystalx 100
+      stock: 0
+      cost: 1
+      type: draw-gacha  
+    - name: "Blue Valkyrie Hammer: Cap Inc."
+      stock: 10
+      cost: 7    
+    - name: 5* Weapon Ticket
+      stock: 2
+      cost: 15
+      type: draw-ticket-weapon            
+    - name: 5* Character Ticket
+      stock: 2
+      cost: 30
+      type: draw-ticket-character     
+    - name: 5* Ace Char. Ticket
+      stock: 1
+      cost: 100
+      type: draw-ticket-character 
+    - name: L. Limit Breaker
+      stock: 2
+      cost: 30
+      type: improvement-limitbreak
+    - name: L. Limit Breaker
+      stock: 2
+      cost: 40
+      type: improvement-limitbreak
+    - name: "Platinum Thread: Enhance"
+      stock: 10
+      cost: 7
+      type: improvement-thread
+    - name: AP Starseed
+      stock: 3
+      cost: 45
+      type: seed-ap         
+    - name: Pure White Barrette
+      stock: 5
+      cost: 20
+      type: accessory      
+    - name: Goddess Ear Cuff
+      stock: 5
+      cost: 25
+      type: accessory      
+    - name: Charm of Insight
+      stock: 5
+      cost: 25
+      type: accessory      
+
+
+   
