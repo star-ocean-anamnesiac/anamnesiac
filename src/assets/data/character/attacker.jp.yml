@@ -7493,3 +7493,189 @@
           buffValue: 80
     power: ATK x 5000%
     maxHits: 4
+
+- name: Jack Russell
+  cat: jp
+  picture: Jack_Russel
+  weapon: ohs
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 2730
+    int: 1537
+    def: 2009
+    hit: 1120
+    grd: 826
+
+  talents:
+    - name: "Lively Personality"
+      effects: 
+        - desc: ATK +40%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 40
+        - desc: ATK +70% when HP is 100%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffCondition: HP is 100%
+            buffValue: 70
+    - name: "Kenjutsu Training"
+      effects: 
+        - desc: Absorbs 5% of damage dealt by normal attacks as HP
+          all: true
+        - desc: Absorbs 15% of damage dealt by normal attacks as HP at short range
+          all: true
+    - name: "Fearlessness"
+      effects: 
+        - desc: Stun rate +30% when HP is 100%
+          all: true
+          meta:
+            priority: 1
+            buff: Stun Rate
+            buffCondition: HP is 100%
+            buffValue: 30
+        - desc: Critical hit chance +50% when stunned
+          all: Enemies
+    - name: "Son of the Dragon Killer"
+      effects: 
+        - desc: Normal attack AP recovery +100% at short range
+          all: true
+
+  skills:
+    - name: "Counter Slash"
+      picture: Skill_Placeholder
+      power: ATK x 290%
+      ap: 17
+      maxHits: 2
+    - name: "Jack Kick"
+      picture: Crescent_Locus
+      power: ATK x 190%
+      ap: 14
+      maxHits: 4
+    - name: "Soaring Overhead Slash"
+      picture: Helmsplitter
+      power: ATK x 720%
+      ap: 30
+      maxHits: 1
+    - name: "Beast King Thrust"
+      picture: Skill_Placeholder
+      power: ATK x 1050%
+      ap: 34
+      maxHits: 7
+
+  rush:
+    name: "Limit Exceed"
+    picture: Limit_Exceed_Jack_Russell
+    shortEffects: ATK damage dealt +60% (Party/20s)
+    effects: 
+      - desc: ATK damage dealt +60%
+        all: true
+        duration: 20
+        meta:
+          priority: 1
+          buff: ATK Damage
+          buffValue: 60
+    power: ATK x 4500%
+    maxHits: 8
+
+- name: Ridley Silverlake
+  cat: jp
+  picture: Ridley_Silverlake
+  weapon: axe
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 18396
+    atk: 3567
+    int: 1549
+    def: 1969
+    hit: 1127
+    grd: 847
+
+  talents:
+    - name: "Princess of the Great Eagle of the North"
+      effects: 
+        - desc: Great Earth Splitter's effect increased to +40% when hitcount is >300
+    - name: "Overprotective Father"
+      effects: 
+        - desc: Additional hit that deals 20% more damage during normal attacks
+        - desc: Rush combo damage +30% when hitcount is >300
+          meta:
+            priority: 1
+            buff: Rush Damage
+            buffCondition: Hit Count > 300
+            buffValue: 30
+    - name: "Faithful to Duties"
+      effects: 
+        - desc: No flinching when attacking
+        - desc: ATK damage taken -20%
+          meta:
+            priority: 1
+            buff: ATK Damage Taken Reduction
+            buffValue: 20
+        - desc: Damage taken +20% when stunned
+          all: Enemies
+    - name: "Boon of Special Education"
+      effects: 
+        - desc: ATK +30%
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 30
+        - desc: HP +20%
+          meta:
+            priority: 1
+            buff: HP
+            buffValue: 20
+
+  skills:
+    - name: "Downward Thrust"
+      picture: Skill_Placeholder
+      power: ATK x 320%
+      ap: 19
+      maxHits: 8
+    - name: "Great Earth Splitter"
+      picture: Dragon_Hammer
+      power: ATK x 350%
+      ap: 28
+      maxHits: 10
+      notes: ATK +20% (Party/10s)
+      meta:
+        priority: 2
+        buff: ATK
+        buffValue: 20
+    - name: "Spinning Axe - Great Revolution"
+      picture: Hurricane
+      power: ATK x 1020%
+      ap: 40
+      maxHits: 10
+    - name: "Spinning Axe - Consecutive Blows"
+      picture: Skill_Placeholder
+      power: ATK x 1150%
+      ap: 52
+      maxHits: 14
+
+  rush:
+    name: "Wild Pitch"
+    picture: Wild_Pitch_Ridley_Silverlake
+    shortEffects: Recovers 30% of max HP (Self) and critical hit chance +50% (Party/20s)
+    effects: 
+      - desc: Recovers 30% of max HP
+      - desc: Critical hit chance +50%
+        all: true
+        duration: 20
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 20
+    power: ATK x 5500%
+    maxHits: 17
