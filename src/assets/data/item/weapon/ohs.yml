@@ -263,7 +263,7 @@
     - desc: Imbues attacks with light
       element: Light
       lb: 3
-    - desc: DAmage dealt +15% by Heavenly Launcher
+    - desc: Damage dealt +15% by Heavenly Launcher
       lb: 4
     - desc: AP cost -10%
       lb: 5
