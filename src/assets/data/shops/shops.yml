@@ -1,11 +1,13 @@
 
 - name: Blood Valkyrie
-  icon: currency-coin-basic
+  icon: currency-coin-m1
   cat: gl
   currency: Valkyrie Coins
   aliases:
     - blood
     - valkyrie
+    - m1
+    - rerun
 
   items:
     - name: Slayer of Divine Beings
@@ -42,9 +44,8 @@
       type: misc-barrierblaster
       
 
-
 - name: Interview Data
-  icon: currency-coin-basic
+  icon: currency-coin-m1
   cat: gl
   currency: Interview Data
   aliases:
@@ -54,6 +55,7 @@
     - simulacrum
     - shine
     - totem
+    - m1
 
   items:
     - name: Jingu-Style Secret Fist "White Whale"
@@ -132,16 +134,18 @@
  
 
 - name: Valkyrie Coin [Blue]
-  icon: currency-coin-basic
+  icon: currency-coin-m2
   cat: gl
   currency: Valkyrie Coin [Blue]
   aliases:
-    - Valkyrie
-    - VP2
-    - Lezard
-    - Lezard Valkyrie
-    - Valkyrie Lezard
-    - Valkyrie Profile
+    - valkyrie
+    - vp2
+    - lezard
+    - lezard valkyrie
+    - valkyrie lezard
+    - valkyrie profile
+    - m2
+    - m3
 
   items:
     - name: Magic Crystalx 100
