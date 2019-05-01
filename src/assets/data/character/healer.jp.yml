@@ -1,6 +1,7 @@
 
 - name: Sophia Esteed (Summer)
   cat: jp
+  rating: 4
   picture: Everlasting_Summer_Sophia
   weapon: orb
   ace: true
@@ -18,7 +19,7 @@
   talents:
     - name: "Seaside Enchantress"
       effects: 
-        - desc: Recovers some AP for all allies when using offensive symbology      
+        - desc: Recovers some AP for all allies when using offensive symbology
         - desc: INT +35%
           meta:
             priority: 4
@@ -165,6 +166,7 @@
 
 - name: Evelysse (Awakened)
   cat: jp
+  rating: 2
   picture: Evelysse
   weapon: staff
   ace: true
@@ -313,6 +315,7 @@
 
 - name: Rena Lanford (Awakened)
   cat: jp
+  rating: 8
   picture: Rena
   weapon: knuckle
   ace: true
@@ -525,6 +528,7 @@
  
 - name: Miki Sauvester (Awakened)
   cat: jp
+  rating: 6
   picture: Miki
   weapon: staff
   limited: false
@@ -660,6 +664,7 @@
  
 - name: Millie Chliette (Awakened)
   cat: jp
+  rating: 4
   picture: Millie
   weapon: staff
   ace: true
@@ -804,6 +809,7 @@
 
 - name: Relia (Awakened)
   cat: jp
+  rating: 8
   picture: Relia
   weapon: staff
   ace: true
@@ -978,6 +984,7 @@
 
 - name: Meracle Chamlotte (Youth)
   cat: jp
+  rating: 4
   picture: Youth_Meracle
   weapon: knuckle
   ace: true
@@ -1076,6 +1083,7 @@
    
 - name: Millie Chliette (Summer)
   cat: jp
+  rating: 4
   picture: Beach_Millie
   weapon: tome
   ace: true
@@ -1185,6 +1193,7 @@
 
 - name: Tika (Healer)
   cat: jp
+  rating: 2
   picture: Tika
   weapon: arm
   ace: true
@@ -1293,6 +1302,7 @@
 
 - name: Mirage Koas (Bunny)
   cat: jp
+  rating: 6
   picture: Bunny_Ears_Mirage
   weapon: bow
   ace: true
@@ -1411,6 +1421,7 @@
 
 - name: Clair Lasbard (Winter)
   cat: jp
+  rating: 8
   picture: Snowy_Sky_Clair
   weapon: tome
   ace: true
@@ -1515,6 +1526,7 @@
 
 - name: Erica Fontaine
   cat: jp
+  rating: 9
   picture: Erika
   weapon: gun
   ace: true
@@ -1609,6 +1621,7 @@
 
 - name: Rena Lanford (Blue Sphere)
   cat: jp
+  rating: 8
   picture: Blue_Sphere_Rena
   weapon: dagger
   ace: true
