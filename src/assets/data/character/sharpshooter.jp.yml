@@ -3939,7 +3939,7 @@
 
 - name: Tika Blunche (New Year's)
   cat: jp
-  rating: 10
+  rating: 11
   picture: Herald_of_Spring_Tika
   weapon: rifle
   ace: true
