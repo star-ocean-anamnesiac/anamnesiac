@@ -2486,7 +2486,7 @@
    
 - name: Bacchus D-79
   cat: jp
-  rating: 10
+  rating: 11
   picture: Bacchus
   weapon: launcher
   ace: true
