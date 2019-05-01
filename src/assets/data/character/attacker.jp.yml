@@ -1,7 +1,7 @@
 
 - name: 2B
   cat: jp
-  rating: 10
+  rating: 8
   picture: 2B
   weapon: ohs
   ace: true
@@ -136,7 +136,7 @@
 
 - name: Fidel Camuze
   cat: jp
-  rating: 6
+  rating: 1
   picture: Fidel
   weapon: ohs
   ace: true
@@ -234,7 +234,7 @@
     
 - name: Cliff Fittir
   cat: jp
-  rating: 6
+  rating: 1
   picture: Cliff
   weapon: knuckle
   ace: true
@@ -336,7 +336,7 @@
 
 - name: Anne Patriceani
   cat: jp
-  rating: 3
+  rating: 1
   picture: Anne
   weapon: knuckle
   limited: false
@@ -430,7 +430,7 @@
 
 - name: Daril Camuze
   cat: jp
-  rating: 5
+  rating: 1
   picture: Daril
   weapon: ohs
   limited: false
@@ -539,7 +539,7 @@
     
 - name: Roddick Farrence
   cat: jp
-  rating: 8
+  rating: 4
   picture: Ratix
   weapon: ohs
   ace: true
@@ -658,7 +658,7 @@
  
 - name: Reimi Saionji (Summer)
   cat: jp
-  rating: 7
+  rating: 4
   picture: Everlasting_Summer_Reimi
   weapon: ohs
   ace: true
@@ -791,7 +791,7 @@
 
 - name: Lenneth Valkyrie
   cat: jp
-  rating: 6
+  rating: 1
   picture: Lenneth
   weapon: ohs
   ace: true
@@ -902,7 +902,7 @@
 
 - name: Claude C. Kenny
   cat: jp
-  rating: 5
+  rating: 1
   picture: Claude
   weapon: ohs
   ace: true
@@ -1024,7 +1024,7 @@
    
 - name: Phia Melle
   cat: jp
-  rating: 6
+  rating: 1
   picture: Phia
   weapon: dagger
   limited: false
@@ -1137,7 +1137,7 @@
 
 - name: Albel Nox
   cat: jp
-  rating: 6
+  rating: 1
   picture: Albel
   weapon: bns
   ace: true
@@ -1269,7 +1269,7 @@
 
 - name: Ilia Silvestri
   cat: jp
-  rating: 4
+  rating: 1
   picture: Ilia
   weapon: knuckle
   limited: false
@@ -1397,7 +1397,7 @@
 
 - name: Clair Lasbard (Halloween)
   cat: jp
-  rating: 9
+  rating: 4
   picture: Devil_Clair
   weapon: dualswords
   ace: true
@@ -1526,7 +1526,7 @@
 
 - name: Millie Chliette (Halloween)
   cat: jp
-  rating: 8
+  rating: 4
   picture: Wolf_Millie
   weapon: arm
   ace: true
@@ -1645,7 +1645,7 @@
 
 - name: Fayt Leingod
   cat: jp
-  rating: 7
+  rating: 1
   picture: Fayt
   weapon: ohs
   ace: true
@@ -1760,7 +1760,7 @@
 
 - name: Michael
   cat: jp
-  rating: 5
+  rating: 1
   picture: Michael
   weapon: knuckle
   ace: true
@@ -1896,7 +1896,7 @@
 
 - name: Fidel Camuze (Winter)
   cat: jp
-  rating: 10
+  rating: 8
   picture: Winter_Sky_Fidel
   weapon: gun
   ace: true
@@ -2146,7 +2146,7 @@
   
 - name: Meracle Chamlotte
   cat: jp
-  rating: 7
+  rating: 1
   picture: Meracle
   weapon: knuckle
   ace: true
@@ -2291,7 +2291,7 @@
 
 - name: Lasswell
   cat: jp
-  rating: 7
+  rating: 1
   picture: Lasswell
   weapon: bns
   ace: true
@@ -2473,6 +2473,7 @@
     
 - name: Verda Kleiman (Valentine)
   cat: jp
+  rating: 6
   picture: Pure_Love_Verda
   weapon: arm
   ace: true
@@ -2621,6 +2622,7 @@
  
 - name: Rena Lanford (Valentine)
   cat: jp
+  rating: 8
   picture: Sweet_Cat_Rena
   weapon: knuckle
   ace: true
@@ -2742,6 +2744,7 @@
 
 - name: Mirage Koas
   cat: jp
+  rating: 1
   picture: Mirage
   weapon: knuckle
   ace: true
@@ -2871,6 +2874,7 @@
 
 - name: Ashton Anchors
   cat: jp
+  rating: 4
   picture: Ashton
   weapon: dualswords
   ace: true
@@ -2988,6 +2992,7 @@
 
 - name: Precis F. Neumann
   cat: jp 
+  rating: 1
   picture: Precis	
   weapon: arm
   ace: true
@@ -3083,6 +3088,7 @@
       
 - name: Fidel Camuze (Awakened)
   cat: jp
+  rating: 4
   picture: Fidel
   weapon: ohs
   ace: true
@@ -3224,6 +3230,7 @@
 
 - name: Caleen Keemosn
   cat: jp
+  rating: 10
   picture: Karin
   weapon: scythe
   ace: false
@@ -3371,6 +3378,7 @@
 
 - name: Maria Traydor (Cherry Blossom)
   cat: jp
+  rating: 8
   picture: Sakura_Maria
   weapon: dualswords
   ace: true
@@ -3477,6 +3485,7 @@
        
 - name: Pericci
   cat: jp
+  rating: 4
   picture: Pericci
   weapon: knuckle
   ace: true
@@ -3562,6 +3571,7 @@
 
 - name: Fayt Leingod (Awakened)
   cat: jp
+  rating: 1
   picture: Fayt
   weapon: ohs
   ace: true
@@ -3705,6 +3715,7 @@
 
 - name: Claude C. Kenny (Awakened)
   cat: jp
+  rating: 4
   picture: Claude
   weapon: ohs
   ace: true
@@ -3852,7 +3863,7 @@
 
 - name: Roddick Farrence (Awakened)
   cat: jp
-  rating: 9
+  rating: 10
   picture: Ratix
   weapon: ohs
   ace: true
@@ -4013,6 +4024,7 @@
 
 - name: Lenneth Valkyrie (Awakened)
   cat: jp
+  rating: 1
   picture: Lenneth
   weapon: ohs
   ace: true
@@ -4163,6 +4175,7 @@
 
 - name: Ashton Anchors (Awakened)
   cat: jp
+  rating: 8
   picture: Ashton
   weapon: dualswords
   ace: true
@@ -4350,6 +4363,7 @@
 
 - name: Cliff Fittir (Awakened)
   cat: jp
+  rating: 6
   picture: Cliff
   weapon: knuckle
   ace: true
@@ -4495,6 +4509,7 @@
 
 - name: Ilia Silvestri (Awakened)
   cat: jp
+  rating: 6
   picture: Ilia
   weapon: knuckle
   limited: false
@@ -4689,6 +4704,7 @@
 
 - name: Arngrim
   cat: jp
+  rating: 4
   picture: Arngrim
   weapon: greatsword
   ace: true
@@ -4773,6 +4789,7 @@
 
 - name: Crowe F. Almedio
   cat: jp
+  rating: 4
   picture: Crowe
   weapon: dualswords
   ace: true
@@ -4875,6 +4892,7 @@
 
 - name: Leanne (Bridal)
   cat: jp
+  rating: 1
   picture: Bridal_Reanbell
   weapon: gun
   ace: true
@@ -4959,6 +4977,7 @@
 
 - name: Leanne (Bridal) (Awakened)
   cat: jp
+  rating: 4
   picture: Bridal_Reanbell
   weapon: gun
   ace: true
@@ -5067,6 +5086,7 @@
 
 - name: Capell
   cat: jp
+  rating: 4
   picture: Capell
   weapon: ohs
   ace: true
@@ -5161,6 +5181,7 @@
   
 - name: Chisato Madison
   cat: jp
+  rating: 1
   picture: Chisato
   weapon: knuckle
   star: 5
@@ -5248,6 +5269,7 @@
   
 - name: Roddick Farrence (Summer)
   cat: jp
+  rating: 8
   picture: Beach_Ratix
   weapon: bns
   ace: true
@@ -5356,6 +5378,7 @@
 
 - name: Nel Zelpher (Maid)
   cat: jp
+  rating: 1
   picture: Main_Nel
   weapon: bns
   ace: true
@@ -5466,6 +5489,7 @@
 
 - name: Albel Nox (Black Commander)
   cat: jp
+  rating: 4
   picture: Black_Commander_Albel
   weapon: greatsword
   ace: true
@@ -5568,6 +5592,7 @@
 
 - name: Zephyr
   cat: jp
+  rating: 8
   picture: Zephyr
   weapon: gun
   ace: true
@@ -5665,6 +5690,7 @@
 
 - name: Reimi Saionji (Bridal)
   cat: jp
+  rating: 8
   picture: Bridal_Remi
   weapon: bow
   ace: true
@@ -5770,6 +5796,7 @@
 
 - name: Clair Lasbard (Bridal)
   cat: jp
+  rating: 4
   picture: Bridal_Clair
   weapon: dagger
   ace: true
@@ -5884,6 +5911,7 @@
 
 - name: Maria Traydor (Summer)
   cat: jp
+  rating: 4
   picture: Beach_Maria
   weapon: greatsword
   ace: true
@@ -6142,6 +6170,7 @@
 
 - name: Tika (Attacker)
   cat: jp
+  rating: 1
   picture: Tika
   weapon: arm
   ace: true
@@ -6246,6 +6275,7 @@
 
 - name: Welch Vineyard (Axe)
   cat: jp
+  rating: 6
   picture: Axe_Welch
   weapon: axe
   ace: true
@@ -6345,6 +6375,7 @@
 
 - name: Albel Nox (Halloween)
   cat: jp
+  rating: 4
   picture: Wolf_Albel
   weapon: axe
   ace: true
@@ -6461,6 +6492,7 @@
 
 - name: Fiore Brunelli (Halloween)
   cat: jp
+  rating: 8
   picture: Bandaged_Fiore
   weapon: knuckle
   ace: true
@@ -6546,6 +6578,7 @@
 
 - name: Arumat Thanatos
   cat: jp
+  rating: 8
   picture: Arumat
   weapon: scythe
   ace: true
@@ -6635,6 +6668,7 @@
 
 - name: Reimi Saionji (Idol)
   cat: jp
+  rating: 8
   picture: Singing_Star_Reimi
   weapon: dualswords
   ace: true
@@ -6744,6 +6778,7 @@
 
 - name: Ashton Anchors (Winter)
   cat: jp
+  rating: 4
   picture: Holy_Night_Ashton
   weapon: scythe
   ace: true
@@ -6847,6 +6882,7 @@
 
 - name: Evelysse (New Year's)
   cat: jp
+  rating: 9
   picture: Herald_of_Spring_Evelysse
   weapon: greatsword
   ace: true
@@ -6940,6 +6976,7 @@
 
 - name: Sakura Shinguji
   cat: jp
+  rating: 9
   picture: Sakura
   weapon: ohs
   ace: true
@@ -7028,6 +7065,7 @@
 
 - name: Henri un Loup
   cat: jp
+  rating: 8
   picture: Henri
   weapon: rifle
   ace: true
@@ -7146,6 +7184,7 @@
 
 - name: Mikasa Ackerman
   cat: jp
+  rating: 6
   picture: Mikasa
   weapon: dualswords
   ace: true
@@ -7249,6 +7288,7 @@
 
 - name: Levi Ackerman
   cat: jp
+  rating: 6
   picture: Levi
   weapon: dualswords
   ace: true
@@ -7358,7 +7398,6 @@
 
 - name: Sol
   cat: jp
-  rating: 0
   picture: Sol
   weapon: ohs
   ace: true
