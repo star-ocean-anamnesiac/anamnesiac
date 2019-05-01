@@ -3934,7 +3934,7 @@
 
 - name: Lymle Lemuri Phi (Valentine)
   cat: jp
-  rating: 9
+  rating: 10
   picture: Dignified_Flower_Lymle
   weapon: staff
   ace: true
@@ -4045,7 +4045,7 @@
 
 - name: Evelysse (Idol)
   cat: jp
-  rating: 9
+  rating: 10
   picture: Singing_Star_Evelysse
   weapon: scythe
   ace: true
