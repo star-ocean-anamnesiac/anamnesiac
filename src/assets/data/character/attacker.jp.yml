@@ -3230,7 +3230,7 @@
 
 - name: Caleen Keemosn
   cat: jp
-  rating: 10
+  rating: 11
   picture: Karin
   weapon: scythe
   ace: false
@@ -3863,7 +3863,7 @@
 
 - name: Roddick Farrence (Awakened)
   cat: jp
-  rating: 10
+  rating: 11
   picture: Ratix
   weapon: ohs
   ace: true
