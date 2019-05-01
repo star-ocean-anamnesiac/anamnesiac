@@ -6882,7 +6882,7 @@
 
 - name: Evelysse (New Year's)
   cat: jp
-  rating: 9
+  rating: 10
   picture: Herald_of_Spring_Evelysse
   weapon: greatsword
   ace: true
@@ -6976,7 +6976,7 @@
 
 - name: Sakura Shinguji
   cat: jp
-  rating: 9
+  rating: 10
   picture: Sakura
   weapon: ohs
   ace: true
