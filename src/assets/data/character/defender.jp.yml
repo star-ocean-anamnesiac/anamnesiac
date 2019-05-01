@@ -1,6 +1,7 @@
 
 - name: A2
   cat: jp
+  rating: 8
   picture: A2
   weapon: greatsword
   ace: true
@@ -142,6 +143,7 @@
 
 - name: Dias Flac
   cat: jp
+  rating: 2
   picture: Dias
   weapon: bns
   ace: true
@@ -250,6 +252,7 @@
     
 - name: Dias Flac (Awakened)
   cat: jp
+  rating: 4
   picture: Dias
   weapon: bns
   ace: true
@@ -411,6 +414,7 @@
 
 - name: Edge Maverick
   cat: jp
+  rating: 4
   picture: Edge
   weapon: ohs
   ace: true
@@ -497,6 +501,7 @@
     
 - name: Edge Maverick (Awakened)
   cat: jp
+  rating: 4
   picture: Edge
   weapon: ohs
   ace: true
@@ -636,6 +641,7 @@
 
 - name: Victor Oakville
   cat: jp
+  rating: 2
   picture: Victor
   weapon: bns
   star: 5
@@ -713,6 +719,7 @@
     
 - name: Victor Oakville (Awakened)
   cat: jp
+  rating: 6
   picture: Victor
   weapon: bns
   awakened: true
@@ -876,6 +883,7 @@
 
 - name: Evelysse (Winter)
   cat: jp
+  rating: 8
   picture: Snow_White_Evelysse
   weapon: dualswords
   ace: true
@@ -1080,6 +1088,7 @@
     
 - name: Rain
   cat: jp
+  rating: 4
   picture: Rain
   weapon: ohs
   ace: true
@@ -1191,6 +1200,7 @@
     
 - name: Fayt Leingod (Groom)
   cat: jp
+  rating: 8
   picture: Groom_Fayt
   weapon: ohs
   ace: true
@@ -1301,6 +1311,7 @@
     
 - name: Hrist Valkyrie
   cat: jp
+  rating: 4
   picture: Hrist
   weapon: bns
   ace: true
@@ -1415,6 +1426,7 @@
 
 - name: Sigmund
   cat: jp
+  rating: 4
   picture: Sigmund
   weapon: ohs
   ace: true
@@ -1511,6 +1523,7 @@
 
 - name: Cyuss
   cat: jp
+  rating: 6
   picture: Ciuss
   weapon: greatsword
   ace: true
@@ -1617,6 +1630,7 @@
 
 - name: Vashyron
   cat: jp
+  rating: 6
   picture: Vashyron
   weapon: gun
   ace: true
@@ -1727,6 +1741,7 @@
 
 - name: Nakamura Yuichi
   cat: jp
+  rating: 1
   picture: Yuichi
   weapon: bns
   ace: true
@@ -1808,6 +1823,7 @@
 
 - name: Rena Lanford (Summer)
   cat: jp
+  rating: 6
   picture: Beach_Rena
   weapon: dualswords
   ace: true
@@ -1909,6 +1925,7 @@
 
 - name: Cyuss Warren (Awakened)
   cat: jp
+  rating: 9
   picture: Ciuss
   weapon: greatsword
   ace: true
@@ -2038,6 +2055,7 @@
 
 - name: Ashton Anchors (Blazing)
   cat: jp
+  rating: 8
   picture: Blazing_Ashton
   weapon: greatsword
   ace: true
@@ -2139,6 +2157,7 @@
 
 - name: Tika (Defender)
   cat: jp
+  rating: 2
   picture: Tika
   weapon: arm
   ace: true
@@ -2246,6 +2265,7 @@
 
 - name: Yrian Luxter
   cat: jp
+  rating: 8
   picture: Yuuin
   weapon: dualswords
   ace: true
@@ -2351,6 +2371,7 @@
 
 - name: Nel Zepher (Halloween)
   cat: jp
+  rating: 6
   picture: Fallen_Angel_Nel
   weapon: dualswords
   ace: true
@@ -2465,6 +2486,7 @@
    
 - name: Bacchus D-79
   cat: jp
+  rating: 10
   picture: Bacchus
   weapon: launcher
   ace: true
@@ -2583,6 +2605,7 @@
 
 - name: Verda Kleiman (Idol)
   cat: jp
+  rating: 9
   picture: Singing_Star_Verda
   weapon: axe
   ace: true
@@ -2690,6 +2713,7 @@
 
 - name: Fayt Leingod (SRF)
   cat: jp
+  rating: 8
   picture: SRF_Fayt
   weapon: ohs
   ace: true
@@ -2794,6 +2818,7 @@
 
 - name: Gemini Sunrise
   cat: jp
+  rating: 8
   picture: Gemini
   weapon: ohs
   ace: true
