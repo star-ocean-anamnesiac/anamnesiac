@@ -317,8 +317,8 @@ export class CharacterListPage implements OnInit, OnDestroy {
           if(char.rating >= 8 && char.rating < 10) { return 'Preferred in most situations'; }
           if(char.rating >= 6 && char.rating <  8) { return 'Preferred in specific situations'; }
           if(char.rating >= 4 && char.rating <  6) { return 'Good in most situations'; }
-          if(char.rating >= 1 && char.rating <  4) { return 'Good in specific situations'; }
-          if(char.rating >= 0 && char.rating <  1) { return 'Ineffective'; }
+          if(char.rating >= 2 && char.rating <  4) { return 'Good in specific situations'; }
+          if(char.rating >= 0 && char.rating <  2) { return 'Outclassed'; }
           return 'Unranked';
         })
         .value();
@@ -330,7 +330,7 @@ export class CharacterListPage implements OnInit, OnDestroy {
         if(tier === 'Preferred in specific situations')  { return 3; }
         if(tier === 'Good in most situations')           { return 4; }
         if(tier === 'Good in specific situations')       { return 5; }
-        if(tier === 'Ineffective')                       { return 6; }
+        if(tier === 'Outclassed')                        { return 6; }
         return 10;
       });
     }
