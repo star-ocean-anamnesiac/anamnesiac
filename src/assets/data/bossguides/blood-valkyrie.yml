@@ -16,7 +16,7 @@
 
   weaknesses:
     - element: Light
-      percentWeakness: 25
+      percentWeakness: 5
 
     - status: Silence
       vuln: Low
