@@ -17,7 +17,7 @@
 
   weaknesses:
     - element: Light
-      percentWeakness: 1
+      percentWeakness: 20
       
     - status: Curse
       vuln: Low
