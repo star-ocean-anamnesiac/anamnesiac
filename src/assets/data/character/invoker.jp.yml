@@ -4098,7 +4098,7 @@
             buff: AP Recovery From Normal Attacks
             buffCondition: Not Behind Target
             buffValue: 200
-        - desc: Absorbs 00% of damage dealt by normal attacks as HP
+        - desc: Absorbs 15% of damage dealt by normal attacks as HP
           all: true
     - name: "A Star that Illuminates Darkness"
       effects: 
