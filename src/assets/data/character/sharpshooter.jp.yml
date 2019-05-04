@@ -4578,7 +4578,7 @@
     power: ATK x 4500%
     maxHits: 9
 
-- name: Tika (Inscribed Star)
+- name: Tika (Teen Star)
   cat: jp
   picture: Inscribed_Star_Tika
   weapon: gun
@@ -4596,7 +4596,7 @@
     grd: 945
 
   talents:
-    - name: Talent 1
+    - name: Believe that We'll be Reunited
       shortEffects: ATK/INT Damage +40%, and ATK/INT Damage +60% when hitcount >200 (Party)
       effects: 
         - desc: ATK Damage +40%
@@ -4625,7 +4625,7 @@
             buff: INT Damage
             buffCondition: Hit Count > 200
             buffValue: 60
-    - name: Talent 2
+    - name: Daphtes' Envoy
       effects: 
         - desc: Hitcount timer +2 seconds
           all: true
@@ -4636,11 +4636,11 @@
             buff: Rush Damage 
             buffCondition: Hit Count > 400
             buffValue: 40
-    - name: Talent 3
+    - name: Never-Changing Smile
       effects: 
         - desc: Rush gauge fills by 3% every 3 seconds
           all: true
-    - name: Talent 4
+    - name: I Want to Protect Everyone
       shortEffects: Recovers AP for allies when using Line Gunning and Platoon Blast | ATK/INT/DEF/HIT/GRD +30% when hitcount >300
       effects: 
         - desc: Recovers AP for allies when using Line Gunning and Platoon Blast
@@ -4670,7 +4670,7 @@
     - name: Barrage Fire • Ancient 
       picture: Bullet_Barrage
       power: ATK x 510%
-      ap: 21
+      ap: 24
       maxHits: 6
     - name: Platoon Blast
       picture: Skill_Placeholder
@@ -4681,7 +4681,7 @@
   rush:
     name: Rotate Javelin
     picture: Rotate_Javelin_Inscribed_Star_Tika
-    shortEffects: Hitcount +100 / AP cost -30%
+    shortEffects: Hitcount starts at 100, and AP cost -30% (Party/20s)
     effects: 
       - desc: Hitcount +100
       - desc: AP cost -30%               
@@ -4712,7 +4712,7 @@
     grd: 945
 
   talents:
-    - name: Sound Judgement II
+    - name: Sound Judgement
       effects: 
         - desc: INT Damage Taken -40%
           all: true
