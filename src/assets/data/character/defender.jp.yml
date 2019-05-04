@@ -2816,6 +2816,7 @@
     power: ATK x 4500%
     maxHits: 9
 
+
 - name: Gemini Sunrise
   cat: jp
   rating: 8
@@ -2842,12 +2843,12 @@
             priority: 1
             buff: Damage Taken Reduction
             buffValue: 20
-        - desc: Damage taken -30%  when Gemini not targeted by enemy
+        - desc: Damage taken -30% when not targeted by enemy
           all: true
           meta:
             priority: 1
             buff: Damage Taken Reduction
-            buffCondition: Gemini Not Holding Aggro
+            buffCondition: Not Holding Aggro
             buffValue: 30
         - desc: Damage taken -50% when targeted by enemy
           meta:
@@ -2857,7 +2858,7 @@
             buffValue: 50
     - name: "Mifune Sword Style"
       effects: 
-        - desc: No flinching when taking damage of 20% of max HP or less
+        - desc: No flinching when taking damage of 25% of max HP or less
           all: true
         - desc: No flinching when attacking
           all: true
@@ -2923,6 +2924,7 @@
   rush:
     name: "Turning Swallow"
     picture: Turning_Swallow_Gemini
+    element: Fire
     shortEffects: AP cost -50% and recovers 10% of max HP every 3 seconds (Self/20s)
     effects: 
       - desc: AP cost -50%
