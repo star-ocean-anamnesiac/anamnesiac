@@ -4596,7 +4596,7 @@
     grd: 945
 
   talents:
-    - name: Believe That We'll Meet Again
+    - name: Believe that We'll be Reunited
       shortEffects: ATK/INT Damage +40%, and ATK/INT Damage +60% when hitcount >200 (Party)
       effects: 
         - desc: ATK Damage +40%
@@ -4625,7 +4625,7 @@
             buff: INT Damage
             buffCondition: Hit Count > 200
             buffValue: 60
-    - name: Dafutesu's Envoy
+    - name: Daphtes' Envoy
       effects: 
         - desc: Hitcount timer +2 seconds
           all: true
