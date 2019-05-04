@@ -6753,6 +6753,7 @@
       maxHits: 2
     - name: "Stinger Edge"
       picture: Piercing_Blades
+      element: Ice
       power: ATK x 190%
       ap: 17
       maxHits: 6
@@ -6765,8 +6766,10 @@
   rush:
     name: "Blue Star Serenade"
     picture: Blue_Star_Serenade_Idol_Reimi
-    shortEffects: AP cost -80% (Self/8s)
+    shortEffects: Nullifies status ailments (Party), and AP cost -80% (Self/8s)
     effects: 
+      - desc: Nullifies status ailments
+        all: true
       - desc: AP cost -80%
         duration: 8
         meta:
@@ -7312,7 +7315,7 @@
             priority: 1
             buff: Damage
             buffValue: 20
-        - desc: Damage dealt +50% when hitcount is >200
+        - desc: Damage dealt +50% when hitcount is >100
           all: Enemies
           meta:
             priority: 1
@@ -7332,12 +7335,12 @@
             buffValue: 60
     - name: "Humanity's Strongest Soldier"
       effects: 
-        - desc: Additional hit that deals 00% more damage when using Soaring Gale Slash or Whirlwind Cut (2s)
+        - desc: Additional hit that deals 5% more damage when using Stormwind Slash or Whirlwind Slash (2s)
     - name: "Fussy Nature"
       effects: 
-        - desc: Imbues attackw with earth
+        - desc: Imbues attacks with earth
         - desc: Evasion possible during air attacks
-        - desc: No flinching when in air
+        - desc: No flinching during air attacks
     - name: "Wings of Liberty"
       effects: 
         - desc: Cancel bonus starts at 150% when using charge assault
@@ -7368,13 +7371,13 @@
     - name: "Whirlwind Slash"
       picture: Skill_Placeholder
       power: ATK x 350%
-      ap: 27
+      ap: 28
       maxHits: 6
     - name: "Spinning Slash"
       picture: Skill_Placeholder
       power: ATK x 750%
       ap: 40
-      maxHits: 6
+      maxHits: 8
       
   rush:
     name: "Spinning Top Slash"
