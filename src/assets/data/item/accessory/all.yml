@@ -531,7 +531,7 @@
   picture: Heat_Up_Bangle
   def: 728
   factors:
-    - desc: Damage taken -15% when hitcount >50
+    - desc: Damage taken -15% when hitcount is >50
       meta:
         priority: 3
         buff: Damage Taken Reduction
@@ -559,10 +559,10 @@
         priority: 1
         buff: Crit Damage
         buffValue: 10
-  obtained: Facula (Achievement)
+  obtained: Facula (Achievement), Lezard + Blood Valkyrie (Exchange)
 
   notes: >
-    A pretty exceptional offensive accessory. It's factors wouldn't be terrible as a character talent which means it's very good for
+    A pretty exceptional offensive accessory. Its factors wouldn't be terrible as a character talent which means it's very good for
     an accessory to have them.
 
 
@@ -739,7 +739,7 @@
         priority: 1
         buff: HP
         buffValue: 5
-  obtained: Lezard + Blood Valkyrie (Achievement, Exchange)  
+  obtained: Lezard + Blood Valkyrie (Achievement, Drop, Exchange)  
   
   
 - name: Goddess Ear Cuff
@@ -755,4 +755,4 @@
         buffCondition: Short Range
         buffValue: 10
     - desc: Recovers 3% of max HP every 5 seconds
-  obtained: Lezard + Blood Valkyrie (Achievement)    
+  obtained: Lezard + Blood Valkyrie (Achievement, Exchange)    
