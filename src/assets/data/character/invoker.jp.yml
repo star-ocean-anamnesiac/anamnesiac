@@ -199,7 +199,12 @@
         - desc: Cancel bonus goes up one level every 0.5 seconds during charge assault standby
     - name: "Life Decision"
       effects: 
-        - desc: Damage dealt +50% by offensive symbology when skill chain is >3                
+        - desc: Damage dealt +50% by offensive symbology when skill chain is >3
+          meta:
+            priority: 4
+            buff: Damage
+            buffCondition: Skill Chain 3+
+            buffValue: 50
         - desc: Damage taken -30% after using Fire Bolts (20s)
           duration: 20
           meta:
@@ -906,26 +911,20 @@
         - desc: INT +20%
           all: true
           meta:
-            priority: 4
+            priority: 1
             buff: INT
             buffValue: 20
         - desc: No flinching when casting symbology
           all: true
     - name: "Infinite Curiosity"
-      shortEffects: ATK/INT damage dealt +15% when skill chain is >3 (Party)
       effects:
-        - desc: ATK damage dealt +15% when skill chain is >3
+        - desc: ATK/INT damage dealt +15% when skill chain is >3
           all: true
           meta:
             priority: 1
-            buff: ATK Damage
-            buffCondition: Skill Chain 3+
-            buffValue: 15
-        - desc: INT damage +15% when skill chain is >3
-          all: true
-          meta:
-            priority: 1
-            buff: INT Damage
+            buffs:
+              - ATK Damage
+              - INT Damage
             buffCondition: Skill Chain 3+
             buffValue: 15
     - name: "Symbology of Viewing"
@@ -1048,12 +1047,8 @@
             buff: Multiple Target Damage
             buffValue: 20
     - name: "The Expel Turnabout"
-      shortEffects: Nullifies freeze/paralysis for 90 seconds (Party)
       effects: 
-        - desc: Nullifies freeze for 90 seconds
-          duration: 90
-          all: true
-        - desc: Nullifies paralysis for 90 seconds
+        - desc: Nullifies freeze/paralysis for 90 seconds
           duration: 90
           all: true
     - name: "Blue Rose Bouquet"
@@ -1535,7 +1530,6 @@
             buff: Stun Rate
             buffValue: 15
     - name: "Valiant Soul"
-      shortEffects: 80% chance of surviving a lethal attack and symbology cast time -80% when at 10% of max HP or more
       effects:
         - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
         - desc: Symbology cast time -80% when at 10% of max HP or more
@@ -2374,6 +2368,7 @@
           meta:
             priority: 4
             buff: Cast Time Reduction
+            buffCondition: HP is >10%
             buffValue: 90
     - name: "Irreproachable Conduct"
       effects: 
@@ -2704,11 +2699,13 @@
         - desc: Imbues attacks with light
     - name: "Frei's Prediction"
       effects: 
-        - desc: ATK +20%
+        - desc: ATK/INT +20%
           all: true
           meta:
             priority: 4
-            buff: ATK
+            buffs:
+              - ATK
+              - INT
             buffValue: 20
         - desc: ATK +35% at short range
           all: true
@@ -2717,12 +2714,6 @@
             buff: ATK
             buffCondition: Short Range
             buffValue: 35    
-        - desc: INT +20%
-          all: true
-          meta:
-            priority: 4
-            buff: ATK
-            buffValue: 20
         - desc: INT +40% at long range
           all: true
           meta:
@@ -2740,17 +2731,14 @@
             buffValue: 25
         - desc: Rush combo damage +30% when hitcount is >150       
     - name: "Goddess of Fertility"
-      shortEffects: ATK +10% and INT +10%
+      shortEffects: ATK/INT +10%
       effects:
         - desc: ATK +10%
           meta:
             priority: 1
-            buff: ATK
-            buffValue: 10
-        - desc: INT +10%
-          meta:
-            priority: 1
-            buff: INT
+            buffs:
+              - ATK
+              - INT
             buffValue: 10
 
   skills:
@@ -2817,17 +2805,13 @@
   talents:
     - name: "Wicked Tongue"
       effects: 
-        - desc: ATK damage dealt +40%
+        - desc: ATK/INT damage dealt +40%
           all: true
           meta:
             priority: 1
-            buff: ATK Damage
-            buffValue: 40
-        - desc: INT damage dealt +40%
-          all: true
-          meta:
-            priority: 1
-            buff: INT Damage
+            buffs:
+              - ATK Damage
+              - INT Damage
             buffValue: 40
         - desc: Critical hit chance +20% when HP is 100%
           all: true
@@ -2917,7 +2901,6 @@
     power: INT x 3500%
     maxHits: 6
 
-   
 - name: Reimi Saionji (Federation)
   cat: jp
   rating: 1
@@ -3137,17 +3120,13 @@
   talents:
     - name: "Shining Arrow"
       effects: 
-        - desc: ATK damage dealt +35%
+        - desc: ATK/INT damage dealt +35%
           all: true
           meta:
             priority: 4
-            buff: ATK
-            buffValue: 35
-        - desc: INT damage dealt +35%
-          all: true
-          meta:
-            priority: 4
-            buff: INT
+            buffs:
+              - ATK Damage
+              - INT Damage
             buffValue: 35
         - desc: AP cost -30% when skill chain is >3
           meta:
@@ -3164,20 +3143,14 @@
     - name: "Role Model"
       shortEffects: ATK/INT damage taken +15% after using Shadow Lamp (Enemies/10s)
       effects: 
-        - desc: ATK damage taken +15% after using Shadow Lamp
+        - desc: ATK/INT damage taken +15% after using Shadow Lamp
           all: Enemies
           duration: 10
           meta:
             priority: 4
-            buff: Enemy ATK Damage Taken
-            buffCondition: after using Shadow Lamp
-            buffValue: 15
-        - desc: INT damage taken +15% after using Shadow Lamp
-          all: Enemies
-          duration: 10
-          meta:
-            priority: 4
-            buff: Enemy INT Damage Taken
+            buffs: 
+              - Enemy ATK Damage Taken
+              - Enemy INT Damage Taken
             buffCondition: after using Shadow Lamp
             buffValue: 15
     - name: "Pitch Black Outfit"
@@ -3246,7 +3219,6 @@
           buffValue: 50
     power: INT x 4000%
     maxHits: 1
-
 
 - name: Lucifer
   cat: jp
@@ -3365,33 +3337,25 @@
     - name: "Scientific Soldier of Love and Justice"
       shortEffects: ATK/INT +30%, and ATK/INT +40% when hitcount is >150
       effects: 
-        - desc: ATK +30%
+        - desc: ATK/INT +30%
           all: true
           meta:
             priority: 4
-            buff: ATK
+            buffs:
+              - ATK
+              - INT
             buffValue: 30
-        - desc: ATK +40% when hitcount is >150
+        - desc: ATK/INT +40% when hitcount is >150
           all: true
           meta:
             priority: 4
-            buff: ATK
-            buffCondition: Hit Count > 150
-            buffValue: 40
-        - desc: INT +30%
-          all: true
-          meta:
-            priority: 4
-            buff: INT
-            buffValue: 30
-        - desc: INT +40% when hitcount is >150
-          all: true
-          meta:
-            priority: 4
-            buff: INT
+            buffs:
+              - ATK
+              - INT
             buffCondition: Hit Count > 150
             buffValue: 40
     - name: "Physical Ability Reinforcement Heraldry"
+      shortEffects: Rush combo damage +20%/+50% when stage timer is >60s/>180s
       effects: 
         - desc: Rush combo damage +20% when stage timer is >60s
           all: true
@@ -3419,12 +3383,9 @@
         - desc: INT +10%
           meta:
             priority: 4
-            buff: INT
-            buffValue: 10
-        - desc: HP +10%
-          meta:
-            priority: 4
-            buff: HP
+            buffs:
+            - INT
+            - HP
             buffValue: 10
 
   skills:
@@ -3497,18 +3458,13 @@
         - desc: Recovers 10% of max HP every 5 seconds
           all: true
     - name: "Tuning Arm"
-      shortEffects: ATK/INT damage dealt +30% when skill chain is >3
       effects: 
-        - desc: ATK damage dealt +30% when skill chain is >3
+        - desc: ATK/INT damage dealt +30% when skill chain is >3
           meta:
             priority: 1
-            buff: ATK Damage
-            buffCondition: Skill Chain 3+
-            buffValue: 30
-        - desc: INT damage dealt +30% when skill chain is >3
-          meta:
-            priority: 1
-            buff: INT Damage
+            buffs:
+              - ATK Damage
+              - INT Damage
             buffCondition: Skill Chain 3+
             buffValue: 30
     - name: "Successful Results from Research with Coro"
@@ -3521,17 +3477,13 @@
             buffValue: 20
         - desc: No flinching when casting symbology
           all: true
-        - desc: Damage dealt to machines +40%
+        - desc: Damage dealt to machines/undead +40%
           all: true
           meta:
             priority: 1
-            buff: Damage To Machines
-            buffValue: 40
-        - desc: Damage dealt to undead +40%
-          all: true
-          meta:
-            priority: 1
-            buff: Damage To Undead
+            buffs:
+              - Damage To Machines
+              - Damage To Undead
             buffValue: 40
 
   skills:
@@ -3819,31 +3771,22 @@
   talents:
     - name: "Fox Spirit's Pride"
       effects: 
-        - desc: ATK +40%
+        - desc: ATK/INT +40%
           all: true
           meta:
             priority: 1
-            buff: ATK
+            buffs:
+              - ATK
+              - INT
             buffValue: 40
-        - desc: ATK +50% at short range
+        - desc: ATK/INT +50% at short range
           all: true
           meta:
             priority: 1
-            buff: ATK
+            buffs:
+              - ATK
+              - INT
             buffCondition: Short Range
-            buffValue: 50
-        - desc: INT +40%
-          all: true
-          meta:
-            priority: 1
-            buff: INT
-            buffValue: 40
-        - desc: INT +50% at long range
-          all: true
-          meta:
-            priority: 1
-            buff: INT
-            buffCondition: Long Range
             buffValue: 50
     - name: "Talented Confectioner"
       effects: 
