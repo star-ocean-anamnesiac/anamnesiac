@@ -4165,7 +4165,7 @@
     grd: 847
 
   talents:
-    - name: The One who Knows Paradise
+    - name: One Who Knows Paradise
       effects: 
         - desc: Converts 50% of ATK to INT
           all: Casters/Healers
@@ -4179,10 +4179,10 @@
             priority: 1
             buff: INT -> ATK
             buffValue: 50
-    - name: Thrist for Wisdom 
-      shortEffects: ATK/INT damage taken +20%/+50%/+100% when hitcount >200/>400/>800 (Enemies)
+    - name: Thirst for Wisdom 
+      shortEffects: ATK/INT damage taken +20%/+50%/+100% when hitcount is >200/>400/>800 (Enemies)
       effects: 
-        - desc: ATK/INT damage taken +20% when hitcount >200
+        - desc: ATK/INT damage taken +20% when hitcount is >200
           all: Enemies
           meta:
             priority: 1
@@ -4191,7 +4191,7 @@
               -Enemy INT Damage Taken			  
             buffCondition: Hit Count > 200
             buffValue: 20
-        - desc: ATK/INT damage taken +50% when hitcount >400
+        - desc: ATK/INT damage taken +50% when hitcount is >400
           all: Enemies
           meta:
             priority: 1
@@ -4200,7 +4200,7 @@
               -Enemy INT Damage Taken	
             buffCondition: Hit Count > 400
             buffValue: 50
-        - desc: ATK/INT damage taken +100% when hitcount >800
+        - desc: ATK/INT damage taken +100% when hitcount is >800
           all: Enemies
           meta:
             priority: 1
@@ -4268,7 +4268,7 @@
     picture: Punishment_Oriole_Mastema
     element: fire
     effects: 
-      - desc: Critical hit chance/Critical damage dealt +50%        
+      - desc: Critical hit chance/critical damage dealt +50%        
         all: true
         duration: 20
         meta:
