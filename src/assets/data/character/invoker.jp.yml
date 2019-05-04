@@ -4187,8 +4187,8 @@
           meta:
             priority: 1
             buffs:
-              -Enemy ATK Damage Taken
-              -Enemy INT Damage Taken			  
+              - Enemy ATK Damage Taken
+              - Enemy INT Damage Taken			  
             buffCondition: Hit Count > 200
             buffValue: 20
         - desc: ATK/INT damage taken +50% when hitcount is >400
@@ -4196,8 +4196,8 @@
           meta:
             priority: 1
             buffs:
-              -Enemy ATK Damage Taken
-              -Enemy INT Damage Taken	
+              - Enemy ATK Damage Taken
+              - Enemy INT Damage Taken	
             buffCondition: Hit Count > 400
             buffValue: 50
         - desc: ATK/INT damage taken +100% when hitcount is >800
@@ -4205,8 +4205,8 @@
           meta:
             priority: 1
             buffs:
-              -Enemy ATK Damage Taken
-              -Enemy INT Damage Taken	
+              - Enemy ATK Damage Taken
+              - Enemy INT Damage Taken	
             buffCondition: Hit Count > 800
             buffValue: 100
     - name: Ring Weaved by Time 
@@ -4227,11 +4227,11 @@
           meta:
             priority: 3
             buffs:
-              -ATK
-              -INT
-              -DEF
-              -HIT
-              -GRD		
+              - ATK
+              - INT
+              - DEF
+              - HIT
+              - GRD		
             buffCondition: Hit Count > 100			 
             buffValue: 20
         - desc: Imbues attacks with wind after using wind symbology (Self/15s)
@@ -4274,8 +4274,8 @@
         meta:
           priority: 1
           buffs:
-            -Crit Rate
-            -Crit Damage			
+            - Crit Rate
+            - Crit Damage			
           buffValue: 50
     power: INT x 4500%
     maxHits: 6
