@@ -4266,7 +4266,7 @@
   rush:
     name: Punishment Oriole 
     picture: Punishment_Oriole_Mastema
-    element: fire
+    element: Fire
     effects: 
       - desc: Critical hit chance/critical damage dealt +50%        
         all: true
