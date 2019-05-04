@@ -4220,7 +4220,7 @@
             buff: AP Recovery
             buffValue: 50
         - desc: AP recovery when moving 
-            all: true
+          all: true
     - name: Tower which Reveals the Truth of the Universe
       effects: 
         - desc: ATK/INT/DEF/HIT/GRD +20% when hitcount >100 
