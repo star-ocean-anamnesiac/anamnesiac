@@ -7718,3 +7718,104 @@
           buffValue: 20
     power: ATK x 5500%
     maxHits: 17
+
+
+   
+- name: Maria Traydor (Bunny Ears)
+  cat: jp
+  picture: Bunny_Ears_Maria
+  weapon: ohs
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 3567
+    int: 1563
+    def: 1916
+    hit: 1148
+    grd: 819
+
+  talents:
+    - name: "Dealer Candidate"
+      effects:
+        - desc: ATK +20% when HP is 100%
+          meta:
+            priority: 3
+            buff: ATK
+            buffCondition: HP is 100%
+            buffValue: 20
+        - desc: ATK +10% when HP is >50%
+          meta:
+            priority: 3
+            buff: ATK
+            buffCondition: HP > 50%
+            buffValue: 10
+        - desc: Absorbs 15% of damage dealt by normal attacks as HP when behind target
+    - name: "Speedy Decision"
+      effects: 
+        - desc: Evasion AP cost -80%
+        - desc: Evasion AP cost -50%
+          all: true
+        - desc: AP cost -30% after perfect dodge (10s)
+          all: true
+    - name: "Fortune Calling Beast"
+      effects: 
+        - desc: Normal attack AP recovery +100% when HP is 100%
+          all: true
+          meta:
+            priority: 1
+            buff: AP Recovery From Normal Attacks
+            buffCondition: HP is 100%
+            buffValue: 100
+    - name: "Quark's Bond"
+      effects:
+        - desc: ATK +30%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 30
+
+  skills:
+    - name: "Mirage Penetrate"
+      picture: Glowing_Pierce
+      power: ATK x 280%
+      ap: 17
+      maxHits: 3
+    - name: "Blast Raider"
+      picture: Crescent_Mirage
+      power: ATK x 300%
+      ap: 19
+      maxHits: 4
+    - name: "Twin Zapper"
+      picture: Twin_Zapper
+      power: ATK x 350%
+      ap: 21
+      maxHits: 4
+    - name: "Storm Edge"
+      picture: Storm_Edge
+      power: ATK x 1240%
+      ap: 54
+      maxHits: 5
+
+  rush:
+    name: "Blackjack Vortex"
+    picture: Blackjack_Vortex_Bunny_Maria
+    shortEffects: AP cost -30% and ATK damage dealt +40% (Self/20s)
+    effects:
+      - desc: AP cost -30%
+        duration: 20
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 30
+      - desc: ATK damage dealt +40%
+        duration: 20
+        meta:
+          priority: 1
+          buff: ATK Damage
+          buffValue: 40
+    power: ATK x 5000%
+    maxHits: 3
