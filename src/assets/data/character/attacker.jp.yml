@@ -7659,6 +7659,11 @@
     - name: "Faithful to Duties"
       effects: 
         - desc: No flinching when attacking
+        - desc: Damage taken -30%
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffValue: 30        
         - desc: ATK damage taken -20%
           meta:
             priority: 1
@@ -7667,6 +7672,7 @@
         - desc: Damage taken +20% when stunned
           all: Enemies
     - name: "Boon of Special Education"
+      shortEffects: ATK +30% and HP +20%
       effects: 
         - desc: ATK +30%
           meta:
