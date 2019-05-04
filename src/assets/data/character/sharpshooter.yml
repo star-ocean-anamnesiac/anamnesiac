@@ -2918,7 +2918,7 @@
 
       *Normal > Lair > Sylvan > Lair^n*
       
-- name: Lenneth Valkyrie (Azure Sky)
+- name: Lenneth Valkyrie (Azure)
   cat: gl
   rating: 0
   picture: Blue_Sky_Lenneth
@@ -3042,7 +3042,7 @@
 
   talents:
     - name: "Divine Arrow Burst"
-      shortEffects: Damage dealt +30%, and damage dealt +35%/+40%/+45% when hitcount is >100/>150/>200 (All Party)
+      shortEffects: Damage dealt +30%, and damage dealt +35%/+40%/+45% when hitcount is >100/>150/>200 (Party)
       effects: 
         - desc: Damage dealt +30%
           all: true
