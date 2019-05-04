@@ -4433,25 +4433,26 @@
             buffValue: 10
 
   skills:
-    - name: "Black Hole Sphere"
-      picture: Skill_Placeholder
-      power: ATK x 340%
-      ap: 32
-      maxHits: 10
     - name: "Shocking Scratch"
       picture: Skill_Placeholder
       power: ATK x 170%
-      ap: 18
-      maxHits: 3
+      ap: 18  
+      maxHits: 5
     - name: "Quicksilver Bullet"
       picture: Skill_Placeholder
       power: ATK x 170%
       ap: 18
-      maxHits: 5
+      maxHits: 5      
+    - name: "Black Hole Sphere"
+      picture: Skill_Placeholder
+      element: Dark
+      power: ATK x 340%
+      ap: 32
+      maxHits: 10
     - name: "Nyastice Savior"
       picture: Skill_Placeholder
       power: ATK x 710%
-      ap: 30
+      ap: 39
       maxHits: 6
       
   rush:
