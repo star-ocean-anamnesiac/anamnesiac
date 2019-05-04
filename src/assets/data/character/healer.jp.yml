@@ -1508,6 +1508,7 @@
   rush:
     name: "Stellar Fairy Tale"
     picture: Stellar_Fairy_Tale_Holy_Night_Clair
+    element: Lightning
     shortEffects: Recovers 80% of max HP (Party) and ATK/INT damage dealt +50% (Party/20s)
     effects: 
       - desc: Recovers 80% of max HP
@@ -1521,7 +1522,7 @@
             - ATK Damage
             - INT Damage
           buffValue: 50
-    power: ATK x 4000%
+    power: INT x 4000%
     maxHits: 4
 
 - name: Erica Fontaine
@@ -1548,7 +1549,7 @@
         - desc: 90% chance of surviving a lethal attack when at 20% of max HP or more
         - desc: 80% chance of surviving a lethal attack when at 20% of max HP or more
           all: true
-        - desc: 90% chance of surviving a lethal attack when at 20% of max HP or more at close range
+        - desc: 90% chance of surviving a lethal attack when at 20% of max HP or more at short range
           all: true
     - name: "Nosy Sister"
       effects: 
@@ -1605,6 +1606,7 @@
   rush:
     name: "Évangile"
     picture: Évangile_Erika
+    element: Light
     shortEffects: Recover 50% of max HP (Party) and elemental damage dealt +50% (Party/20s)
     effects: 
       - desc: Recover 50% of max HP
@@ -1616,7 +1618,7 @@
           priority: 1
           buff: Elemental Damage
           buffValue: 50
-    power: ATK x 4500%
+    power: INT x 4000%
     maxHits: 5
 
 - name: Rena Lanford (Blue Sphere)
@@ -1708,7 +1710,7 @@
   rush:
     name: "Celestial Arrow"
     picture: Celestial_Arrow_Blue_Sphere_Rena
-    shortEffects: Revives all Attackers, Shooters and Casters
+    shortEffects: Revives incapacitated allies (Attackers/Shooters/Casters)
     effects: 
       - desc: Revives all Attackers, Shooters and Casters
     power: INT x 4000%
