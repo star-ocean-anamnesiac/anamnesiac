@@ -7759,7 +7759,6 @@
         - desc: Evasion AP cost -50%
           all: true
         - desc: AP cost -30% after perfect dodge (10s)
-          all: true
     - name: "Fortune Calling Beast"
       effects: 
         - desc: Normal attack AP recovery +100% when HP is 100%
@@ -7772,7 +7771,6 @@
     - name: "Quark's Bond"
       effects:
         - desc: ATK +30%
-          all: true
           meta:
             priority: 1
             buff: ATK
