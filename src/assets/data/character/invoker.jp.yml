@@ -4223,7 +4223,7 @@
           all: true
     - name: Tower which Reveals the Truth of the Universe
       effects: 
-        - desc: ATK/INT/DEF/HIT/GRD +20% when hitcount >100 
+        - desc: ATK/INT/DEF/HIT/GRD +20% when hitcount is >100 
           meta:
             priority: 3
             buffs:
@@ -4240,25 +4240,25 @@
   skills:
     - name: Flame Lancer • Guidance 
       picture: Fire_Lance 
-      element: fire
+      element: Fire
       power: INT x 400%
       ap: 14
       maxHits: 2
     - name: Radiant Lancer • Guidance
       picture: Radiant_Lancer 
-      element: light
+      element: Light
       power: INT x 300%
       ap: 14
       maxHits: 8
     - name: Sunflare • Guidance 
       picture: Sunflare
-      element: light
+      element: Light
       power: INT x 990%
       ap: 36
       maxHits: 6
     - name: Starry Halo
       picture: Skill_Placeholder
-      element: fire
+      element: Fire
       power: INT x 1170%
       ap: 42
       maxHits: 2
