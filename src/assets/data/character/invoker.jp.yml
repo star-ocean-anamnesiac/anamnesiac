@@ -4066,11 +4066,13 @@
       maxHits: 6
     - name: "Cool Servant"
       picture: Skill_Placeholder
+      element: Ice
       power: INT x 1390%
       ap: 34
       maxHits: 6
     - name: "Ice Cool Blast"
       picture: Skill_Placeholder
+      element: Ice
       power: INT x 1470%
       ap: 37
       maxHits: 6
