@@ -635,11 +635,7 @@
     name: "Divine Wave"
     picture: Divine_Wave_Miki
     element: Light
-    shortEffects: Revives incapacitated allies (Attackesr/Defenders) and recovers 30% of max HP every 4 seconds (Party/20s)
     effects: 
-      - desc: Recovers 30% of max HP every 4 seconds
-        all: true
-        duration: 20
       - desc: Revives incapacitated allies
         all: Attackers/Defenders
     power: INT x 4000%
@@ -1370,7 +1366,7 @@
             buff: Damage Taken Reduction
             buffCondition: When Dodging
             buffValue: 100
-    - name: "Quark's Onee-san"
+    - name: "Quark's Big Sister"
       effects: 
         - desc: HP +40%
           meta:
@@ -1396,7 +1392,7 @@
       maxHits: 7
     - name: "Cyclone Bit"
       picture: Cyclone_Bit
-      element: Lightning
+      element: Wind
       power: INT x 1270%
       ap: 39
       maxHits: 6
@@ -1439,8 +1435,8 @@
   talents:
     - name: "Doting Father's Spirit"
       effects: 
-        - desc: Able to recover Party's HP above the limit
-        - desc: Adds an additional 10000 'Overlimit' HP
+        - desc: Able to heal over max HP
+        - desc: Adds 10000 to max HP
           all: true
     - name: "Crafty Mother's Doting Spirit"
       effects: 
@@ -1471,7 +1467,7 @@
         - desc: No flinching when casting symbology
     - name: "A Story Dedicated to Tria"
       effects: 
-        - desc: HP/INT +15%
+        - desc: INT +15% and HP +15%
           meta:
             priority: 1
             buffs:
@@ -1640,6 +1636,7 @@
 
   talents:
     - name: "A Dream to Study Abroad"
+      shortEffects: Critical hit chance/critical damage dealt +20%, and critical hit chance/critical damage dealt +40% when not behind target
       effects: 
         - desc: Critical hit chance +20%
           all: true
@@ -1673,6 +1670,8 @@
     - name: "Days Surrounded by Advanced Technology"
       effects: 
         - desc: 90% chance of surviving a lethal attack when at 10% of max HP or more when targeted by enemy
+          all: true
+        - desc: 90% chance of surviving a lethal attack when at 10% of max HP or more
     - name: "Path to Medical Care"
       effects: 
         - desc: Evasion possible during air attacks
@@ -1710,8 +1709,10 @@
   rush:
     name: "Celestial Arrow"
     picture: Celestial_Arrow_Blue_Sphere_Rena
-    shortEffects: Revives incapacitated allies (Attackers/Shooters/Casters)
+    element: Light
+    shortEffects: Revives incapacitated allies (Attackers/Shooters/Invokers)
     effects: 
-      - desc: Revives all Attackers, Shooters and Casters
+      - desc: Revives incapacitated allies
+        all: Attackers/Shooters/Invokers
     power: INT x 4000%
     maxHits: 5
