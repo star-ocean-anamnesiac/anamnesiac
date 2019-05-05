@@ -2361,7 +2361,6 @@
             buff: Stun Rate
             buffValue: 25
     - name: "Eldarian Honor"
-      shortEffects: 90% chance of surviving a lethal attack and symbology cast time -90% when at 10% of max HP or more
       effects: 
         - desc: 90% chance of surviving a lethal attack when at 10% of max HP or more
         - desc: Symbology cast time -90% when at 10% of max HP or more
@@ -2447,7 +2446,7 @@
       picture: Extinction
       element: Dark
       power: INT x 650%
-      ap: 42
+      ap: 38
       maxHits: 2
       highlight: true
       
