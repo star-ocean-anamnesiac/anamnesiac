@@ -380,3 +380,45 @@
         buffCondition: Bloodstorm Revolution
         buffValue: 20
   obtained: Transmutation
+
+
+- name: Valkyrie-Favor
+  cat: 'gl'
+  star: 5
+  picture: Valkyrie's_Favour
+  atk: 965
+  int: 959
+  factors:
+    - desc: Imbues attacks with lightning
+      element: Lightning
+    - desc: Lightning damage dealt +15%
+      meta:
+        priority: 3
+        buff: Lightning Damage
+        buffValue: 15
+    - desc: ATK +5%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 5        
+    - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
+      lb: 5
+  obtained: Gacha
+  
+- name: Glance Reviver
+  cat: 'gl'
+  star: 5
+  picture: Divine_Blade_Glance_Reviver
+  atk: 835
+  int: 827
+  factors:
+    - desc: Damage dealt +20% by Entrapment
+    - desc: Absorbs 5% of damage dealt by normal attacks as HP    
+    - desc: Critical hit chance +15% when using charge assault
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffCondition: charge assault
+        buffValue: 15
+      lb: 5
+  obtained: Ballistic Rhino / Valkyrie Profile 2 (Event)  
