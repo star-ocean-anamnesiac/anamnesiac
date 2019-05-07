@@ -126,3 +126,48 @@
         buffValue: 5
   obtained: Transmutation, Gacha
  
+ 
+- name: Bahamut Tear
+  cat: 'gl'
+  star: 5
+  picture: Bahamut_Tear
+  atk: 964
+  int: 957
+  factors:
+    - desc: Imbues attacks with lightning
+      element: Lightning
+    - desc: Normal attack AP recovery +100%
+      meta:
+        priority: 4
+        buff: AP Recovery From Normal Attacks
+        buffValue: 100
+    - desc: Critical damage dealt +20%
+      lb: 5
+      meta:
+        priority: 1
+        buff: Crit Damage
+        buffValue: 20
+  obtained: Gacha
+  
+  
+- name: Striking Sword
+  cat: 'gl'
+  star: 5
+  picture: Striking Sword
+  atk: 834
+  int: 825
+  factors:
+    - desc: Damage dealt +30% by Dead End
+    - desc: AP recovery +30%
+      meta:
+        priority: 4
+        buff: AP Recovery
+        buffValue: 30
+    - desc: Single target damage +10%
+      lb: 5
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+  obtained: Ballistic Rhino / Valkyrie Profile 2 (Event)  
+  
