@@ -739,7 +739,7 @@
         priority: 1
         buff: HP
         buffValue: 5
-  obtained: Lezard + Blood Valkyrie (Achievement, Drop, Exchange)  
+  obtained: Lezard + Blood Valkyrie / Valkyrie Profile 2 (Achievement, Drop, Exchange)  
   
   
 - name: Goddess Ear Cuff
@@ -755,4 +755,36 @@
         buffCondition: Short Range
         buffValue: 10
     - desc: Recovers 3% of max HP every 5 seconds at long range
-  obtained: Lezard + Blood Valkyrie (Achievement, Exchange)    
+  obtained: Lezard + Blood Valkyrie / Valkyrie Profile 2 (Achievement, Exchange)    
+
+
+- name: Jet-Black Barrette
+  cat: 'gl'
+  star: 5
+  picture: Jet_Black_Hair_Ornament
+  def: 728
+  factors:
+    - desc: Recovers 3% of max HP every 5 seconds when targeted by enemy
+    - desc: Taunt +2
+  obtained: Ballistic Rhino / Valkyrie Profile 2 (Event)
+
+- name: Valkyrie Feather
+  cat: 'gl'
+  star: 5
+  picture: Valkyrie's_Feather
+  def: 753
+  factors:
+    - desc: Critical hit chance +15% when using charge assault
+      meta:
+        priority: 1
+        buff: HP
+        buffCondition: charge assault
+        buffValue: 15
+    - desc: ATK damage taken -10%
+      meta:
+        priority: 3
+        buff: ATK Damage Taken Reduction
+        buffValue: 10      
+  obtained: Ballistic Rhino / Valkyrie Profile 2 (Event)
+  
+  
