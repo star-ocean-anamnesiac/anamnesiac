@@ -153,7 +153,7 @@
 - name: Striking Sword
   cat: 'gl'
   star: 5
-  picture: Striking Sword
+  picture: Striking_Sword
   atk: 834
   int: 825
   factors:
