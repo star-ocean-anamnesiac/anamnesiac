@@ -1,0 +1,42 @@
+
+- name: "Ballistic Rhino"
+  eventName: "Valkyrie Profile - The Purged Wizard Chapter 2"
+  image: ballistic_rhino
+  cat: gl
+  race: Beast
+  
+  isActive: true
+
+  enrage:
+    m1: "7:00"
+    m2: "7:00"
+    	    
+  statusInflictions:
+    - None
+
+  weaknesses:
+    - element: Lightning
+      percentWeakness: 20
+      
+    - status: Curse
+      vuln: Low
+
+    - status: Freeze
+      vuln: Low
+
+    - status: Poison
+      vuln: Low
+
+  recommendations:
+    - plain: Lightning Damage
+
+  desc: >
+    Large boss with high HP. Attack pattern intensifies as its HP decreases. Slightly susceptive to poison, freeze, and curse. Movement is slow, but will do a big swing attack within it's vicinity. It can also do a long range attack so be alert and ready!
+  
+  moves:
+    - name: Stomp
+      targets: Close
+      m1: true
+      m2: true
+      desc: >
+        Leaps up and stomps down, causing a minor shockwave & damage.
