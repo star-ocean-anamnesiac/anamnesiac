@@ -1649,7 +1649,7 @@
     grd: 1043
 
   talents:
-    - name: "Memories from Previous Life"
+    - name: "Memories from a Past Life II"
       effects: 
         - desc: Nullifies charge assault critical damage penalty
           all: true
@@ -1660,7 +1660,7 @@
             buff: ATK Damage
             buffCondition: When Using Charge Assault
             buffValue: 30
-    - name: "Steel Will Strong Heart"
+    - name: "Steel Will, Strong Heart II"
       effects: 
         - desc: Damage taken -20%
           all: true
@@ -1670,7 +1670,7 @@
             buffValue: 20
         - desc: No flinching when taking damage of 25% of max HP or less
           all: true
-    - name: "Veil of Dusk"
+    - name: "Veil of Dusk II"
       effects: 
         - desc: Single target damage +20%
           all: true
@@ -1684,7 +1684,7 @@
             priority: 3
             buff: AP Recovery
             buffValue: 50
-    - name: "Eldest Sister Dignity"
+    - name: "Eldest Sister's Dignity"
       shortEffects: ATK +20% and HP +15% after using a long range skill (6s)
       effects: 
         - desc: ATK +20% after using a long range skill (6s)
@@ -1712,7 +1712,7 @@
       power: ATK x 160%
       ap: 15
       maxHits: 5
-    - name: "Inevitable Climb"
+    - name: "Impending Doom"
       picture: Air_Slash_of_Fury
       power: ATK x 180%
       ap: 17
@@ -1724,7 +1724,7 @@
       maxHits: 2
       
   rush:
-    name: "Dark Sky Nibelung Valesti"
+    name: "Nibelung Valesti"
     picture: Nibelung_Valesti_Hrist
     shortEffects: Critical hit chance +30% and critical damage dealt +30% (Party/20s)
     effects: 
@@ -1735,7 +1735,7 @@
           priority: 1
           buff: Crit Rate
           buffValue: 30
-      - desc: Critical damage +30%
+      - desc: Critical damage dealt +30%
         all: true
         duration: 20
         meta:
