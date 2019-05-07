@@ -34,3 +34,9 @@
     Large boss with high HP. Attack pattern intensifies as its HP decreases. Slightly susceptive to poison, freeze, and curse. Movement is slow, but will do a big swing attack within it's vicinity. It can also do a long range attack so be alert and ready!
   
   moves:
+    - name: Stomp
+      targets: Close
+      m1: true
+      m2: true
+      desc: >
+        Leaps up and stomps down, causing a minor shockwave & damage.
