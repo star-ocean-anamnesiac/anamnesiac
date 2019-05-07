@@ -500,3 +500,36 @@
         buffValue: 10
       lb: 5        
   obtained: Gacha
+
+
+- name: Beast Daggers
+  cat: 'gl'
+  star: 5
+  picture: Beast_Daggers
+  atk: 963
+  int: 956
+  factors:
+    - desc: Damage dealt to beasts +40%
+      slayer: Beast
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Beasts
+        buffValue: 40
+    - desc: Critical hit chance +15%
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffValue: 15
+    - desc: Critical damage dealt +20%
+      meta:
+        priority: 1
+        buff: Crit Damage
+        buffValue: 20
+    - desc: AP recovery +30%
+      meta:
+        priority: 3
+        buff: AP Recovery
+        buffValue: 30
+      lb: 3
+  obtained: Gacha
