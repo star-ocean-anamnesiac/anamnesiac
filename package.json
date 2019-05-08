@@ -10,7 +10,7 @@
     "build": "npm run consolidate && ng build --prod && npm run prepare:api",
     "lint": "ng lint",
     "validate": "cross-env TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\"}' ava-ts src/test/**/*.test.ts",
-    "test": "npm run validate && npm run lint && npm run build",
+    "test": "npm run validate && npm run lint && npm run build && npm run analysis:dump",
     "publish": "node scripts/sync",
     "consolidate": "npm run prepare:json && npm run prepare:pack:appicons && npm run prepare:pack:itemicons && npm run prepare:pack:charicons && npm run prepare:pack:skillicons && npm run prepare:pack:rushicons && npm run prepare:pack:bossicons && npm run prepare:create:cards && npm run prepare:pngcrush",
     "prepare:json": "node scripts/consolidate-data",
@@ -23,7 +23,8 @@
     "prepare:create:cards": "node scripts/card/compile && node scripts/card/pup",
     "prepare:pngcrush": "node scripts/pngcrush",
     "prepare:cleanup": "node scripts/build-cleanup",
-    "prepare:api": "node scripts/build-api"
+    "prepare:api": "node scripts/build-api",
+    "analysis:dump": "node scripts/analysis/chars && node scripts/analysis/items"
   },
   "private": true,
   "dependencies": {
