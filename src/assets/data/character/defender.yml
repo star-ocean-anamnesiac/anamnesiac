@@ -1685,7 +1685,7 @@
             buff: AP Recovery
             buffValue: 50
     - name: "Eldest Sister's Dignity"
-      shortEffects: ATK +20% and HP +15% after using a long range skill (6s)
+      shortEffects: ATK +20% and HIT +15% after using a long range skill (6s)
       effects: 
         - desc: ATK +20% after using a long range skill (6s)
           meta:
