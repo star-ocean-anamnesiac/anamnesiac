@@ -171,7 +171,7 @@
             buff: Crit Rate
             buffRole: invoker
             buffValue: 30        
-        - desc: Critical hit chance +50% when skill chain is 3>
+        - desc: Critical hit chance +50% when skill chain is >3
           meta:
             priority: 1
             buff: Crit Rate
