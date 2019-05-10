@@ -1922,19 +1922,19 @@
             buffValue: 20
     - name: "A Winter Prayer"
       effects: 
-        - desc: Normal attack AP recovery +100% when hitcount is >100
+        - desc: Normal attack AP recovery +100% when hitcount is >50
           all: true
           meta:
             priority: 3
             buff: AP Recovery
-            buffCondition: Hit Count > 100
+            buffCondition: Hit Count > 50
             buffValue: 100
-        - desc: ATK damage dealt +20% when hitcount is >200
+        - desc: ATK damage dealt +20% when hitcount is >100
           all: true
           meta:
             priority: 3
             buff: ATK Damage
-            buffCondition: Hit Count > 200
+            buffCondition: Hit Count > 100
             buffValue: 20
     - name: "Colorful Galleria"
       shortEffects: Damage dealt +100%/+200% by Bullet Barrage and Bombing Run when skill chain is >3/>5
@@ -1969,13 +1969,13 @@
       highlight: true
     - name: "Bullet Barrage"
       picture: Bullet_Barrage
-      power: ATK x 400%
+      power: ATK x 460%
       ap: 27
       maxHits: 6
       highlight: true
     - name: "Bombing Run"
       picture: Linear_Bomber
-      power: ATK x 230%
+      power: ATK x 260%
       ap: 21
       maxHits: 6
       highlight: true
@@ -1983,7 +1983,7 @@
   rush:
     name: "Holiday Surprise"
     picture: Holiday_Surprise_Xmas_Fidel
-    shortEffects: AP cost -30% and critical hit chance +20% (Self/20s)
+    shortEffects: AP cost -30% and critical hit chance +20% (Self/30s)
     effects: 
       - desc: AP cost -30%
         all: false
@@ -5610,7 +5610,7 @@
   talents:
     - name: "Gallantry"
       effects: 
-        - desc: ATK +43%
+        - desc: ATK +30%
           all: true
           meta:
             priority: 1
