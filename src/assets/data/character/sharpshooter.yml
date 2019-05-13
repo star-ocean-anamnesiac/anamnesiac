@@ -3189,3 +3189,157 @@
       *Normal > Wing > Restrict > Wing^n - DPS*
       *Normal > Restrict > Wing > Wave^n - Rush*
       *Normal > Restrict > Wing > Restrict^n - DPS/Rush vs large enemies (9+ hits per Restrict)*
+
+- name: Nel Zelpher (Awakened)
+  cat: gl
+  rating: 6
+  picture: Nel
+  weapon: dagger
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 15646
+    atk: 2799
+    int: 1549
+    def: 1589
+    hit: 1371
+    grd: 924
+
+  talents:
+    - name: "Crimson Blade"
+      effects: 
+        - desc: Normal attacks have +15% chance to inflict poison
+          meta:
+            priority: 4
+            buff: Poison Attack Chance
+            buffValue: 15
+    - name: "Prayer for Peace"
+      effects: 
+        - desc: Critical hit chance +15%
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffValue: 15            
+    - name: "Assassin's Stealth"
+      effects: 
+        - desc: AP cost -15%
+          all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 15
+    - name: "Covert Operation"
+      effects: 
+        - desc: Repel +1
+        - desc: ATK damage dealt +80% when skill chain is >3
+          all: true
+          meta:
+            priority: 1
+            buff: ATK Damage
+            buffCondition: Skill Chain 3+
+            buffValue: 80
+    - name: "Absolute Loyalty"
+      effects: 
+        - desc: Damage dealt +30%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 30
+        - desc: ATK damage taken -15% when poisoned
+          all: Enemies
+          meta:
+            priority: 1
+            buff: Enemy ATK Damage Taken
+            buffCondition: Poisoned
+            buffValue: 15
+    - name: "Commander of Demon Sealing Division [Darkness]"
+      shortEffects: ATK +30% and HIT +10%
+      effects: 
+        - desc: ATK +30%
+          meta:
+            priority: 4
+            buff: ATK
+            buffValue: 30
+        - desc: HIT +10%
+          meta:
+            priority: 4
+            buff: HIT
+            buffValue: 10
+
+  skills:
+    - name: "Sylvan Shot"
+      picture: Sylvan_Shot
+      power: ATK x 220%
+      ap: 20
+      maxHits: 8
+    - name: "Flying Guillotine"
+      picture: Guillotine
+      power: ATK x 410%
+      ap: 32
+      maxHits: 4
+    - name: "Victory Terror"
+      picture: Victory_Terror
+      power: ATK x 550%
+      ap: 35
+      maxHits: 10
+    - name: "Mirror Slice"
+      picture: Mirror_Blade
+      power: ATK x 750%
+      ap: 40
+      maxHits: 6
+    - name: "Aqua Spread"
+      picture: Hydroblades
+      element: Ice
+      power: ATK x 210%
+      ap: 20
+      maxHits: 2
+      
+  rush:
+    name: "Divine Wrath"
+    picture: Divine_Wrath_Nel
+    shortEffects: Attacks have 15% chance to inflict poison, and an additional hit that deals 20% more damage (Self/20s)
+    effects: 
+      - desc: Attacks have 15% chance to inflict poison
+        duration: 20
+      - desc: Additional hit that deals 20% more damage
+        duration: 20
+      - desc: High Chance to inflict Deadly Poison during Rush
+    power: ATK x 3000%
+    maxHits: 18
+
+  notes: >
+      _Poison is powerful...when it works.  After awakening, Nel herself is also now powerful though, in addition to finally providing damage buffs alongside
+      her crit and AP reduction.  In normal circumstances she's fairly average, but against larger enemies Aqua Spread combined with her new skill chain
+      damage boosts reaches disgusting levels of damage.  So long as she can either inflict poison reliably or get 3+ hits with Aqua Spread, she's worth 
+      your time now.  Otherwise, don't bother._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Poison damage is ridiculous.
+      - Good general-purpose buffing.
+      - Fastest rush gain in the game, enabling her to effectively erase boss mechanics on command.
+      - Daggers are a great weapon, with excellent kiting ability.
+      
+      
+      **Cons**
+      
+      - Without poison vulnerability, her dps is abysmal.
+      - A poorly played Nel can grief the party by resetting hitcount unnecessarily, cutting elem bursts short or constantly interrupting the fight.
+      - Repel+1 hampers her ability to assume Shooter's primary role: kiting.
+      - High animation lock on her best rush generation move (Poisonous Terror)
+      - Poisonous Blade is a horrible move with horrible tracking and a tiny hitbox, and her best dps relies on it.
+      
+      
+      **Rotation**
+      
+      *Normal>Sylvan>Aqua>(Sylvan or Terror)^n*
+      *Normal>Aqua>Sylvan>Aqua^n - large enemies*
+      *Normal>Dash>Normal>Dash^n - Poshrush deadly poison procs*

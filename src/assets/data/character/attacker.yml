@@ -4436,3 +4436,144 @@
       *Normal > Knuckle > CA Dead End^n - When dealing with high mobility.*
 
       *Normal > CA Dead End > Knuckle > CA Dead End*
+
+- name: Fayt Leingod (Awakened)
+  cat: gl
+  picture: Fayt
+  weapon: ohs
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 15750
+    atk: 2730
+    int: 1549
+    def: 1957
+    hit: 1134
+    grd: 819
+
+  talents:
+    - name: "Star Athlete"
+      effects: 
+        - desc: ATK +40%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 40
+    - name: "Speak Softly & Carry A Big Stick"
+      effects: 
+        - desc: Imbues attacks with fire and light
+    - name: "Feinting Tactics"
+      shortEffects: Elemental damage dealt +15%, and elemental damage dealt +30% when hitcount is >100 (Party)
+      effects: 
+        - desc: Elemental damage dealt +15%
+          all: true
+          meta:
+            priority: 1
+            buff: Elemental Damage
+            buffValue: 15
+        - desc: Elemental damage dealt +30% when hitcount is >100
+          all: true
+          meta:
+            priority: 1
+            buff: Elemental Damage
+            buffCondition: Hit Count > 100
+            buffValue: 30            
+    - name: "Stubborn to a Fault"
+      effects: 
+        - desc: No flinching when taking damage of 15% of max HP or less
+          all: Long Range Weapons/Self
+    - name: "World's Hope"
+      effects: 
+        - desc: Evasion possible during air attacks
+        - desc: Nullifies charge assault critical damage penalty
+          all: Self
+    - name: "God Against God"
+      effects: 
+        - desc: AP cost -5%
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 5
+        - desc: Damage dealt +100% by Avian Air Raid when using charge assault
+
+  skills:
+    - name: "Gliding Side Kick"
+      picture: Side_Kick
+      power: ATK x 200%
+      ap: 19
+      maxHits: 3
+      highlight: true  
+    - name: "Rising Blade"
+      picture: Rising_Blade
+      power: ATK x 460%
+      ap: 32
+      maxHits: 5
+    - name: "Shotgun Blast"
+      picture: Shotgun_Blast
+      element: Lightning
+      power: ATK x 210%
+      ap: 20
+      maxHits: 4
+      highlight: true
+    - name: "Avian Air Raid"
+      picture: Avian_Air_Raid
+      element: Light
+      power: ATK x 500%
+      ap: 30
+      maxHits: 5
+    - name: "Crescent Mirage"
+      picture: Crescent_Mirage
+      power: ATK x 220%
+      ap: 20
+      maxHits: 4
+      highlight: true
+
+  rush:
+    name: "Colossal Ethereal Blast"
+    picture: Colossal_Ethereal_Blast_Fayt
+    element: Light
+    effects: 
+      - desc: Elemental damage dealt +50%
+        all: true
+        duration: 20
+        meta:
+          priority: 1
+          buff: Elemental Damage
+          buffValue: 50
+    power: ATK x 4000%
+    maxHits: 12
+    
+  notes: >
+      _Innately does Light/Fire damage.  Buffs both ATK and attribute damage, but his ATK buff is low and his attribute buffing isn't unique.
+      Awakening similarly didn't boost his skills by as much as it needed to; he takes a lot of investment for a subpar ATK buffer._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Decent ATK buff
+      
+      - Double self imbue
+      
+      - Passive elemental damage buff
+      
+      - Awooo
+      
+      
+      **Cons**
+            
+      - Has no ranged attack
+      
+      - Needs certain weapons against bosses with elemental resist
+      
+      - His anti-flinch is pretty useless at this point
+            
+      
+      **Rotation**
+      
+      *Normal > Crescent Mirage > Shotgun Blast > Air Raid^2*
