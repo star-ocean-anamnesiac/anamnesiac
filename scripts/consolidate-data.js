@@ -58,13 +58,6 @@ const allGuides = _.flattenDeep(fs.readdirSync(BOSSGUIDE_FOLDER).map(file => {
   return bossguides;
 }));
 
-const allGuides = _.flattenDeep(fs.readdirSync(BOSSGUIDE_FOLDER).map(file => {
-  const data = fs.readFileSync(`${BOSSGUIDE_FOLDER}/${file}`, 'utf-8');
-  const bossguides = YAML.safeLoad(data);
-
-  return bossguides;
-}));
-
 const allShops = _.flattenDeep(fs.readdirSync(SHOP_FOLDER).map(file => {
   const data = fs.readFileSync(`${SHOP_FOLDER}/${file}`, 'utf-8');
   const shops = YAML.safeLoad(data);
