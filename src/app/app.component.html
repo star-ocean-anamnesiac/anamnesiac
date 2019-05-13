@@ -58,10 +58,8 @@
   </ion-split-pane>
 </ion-app>
 
-<!--
 <picture *ngFor="let img of ['app', 'boss', 'item', 'char', 'rush', 'skill']" class="preloader">
   <source class="preloader lazyload" [attr.data-srcset]="'assets/spritesheets/+' + img + '-icons.webp'" type="image/webp">
   <source class="preloader lazyload" [attr.data-srcset]="'assets/spritesheets/+' + img + '-icons.png'" type="image/png">
-  <img class="preloader lazyload" decoding="async" [attr.data-src]="'assets/spritesheets/+' + img + '-icons.png'" />  
+  <img class="preloader lazyload" role="none" decoding="async" [attr.data-src]="'assets/spritesheets/+' + img + '-icons.png'" />  
 </picture>
--->
