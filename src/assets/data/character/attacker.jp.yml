@@ -3636,7 +3636,7 @@
   skills:
     - name: "Gliding Side Kick"
       picture: Side_Kick
-      power: ATK x 20%
+      power: ATK x 200%
       ap: 19
       maxHits: 3
       highlight: true  
