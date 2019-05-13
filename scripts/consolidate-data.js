@@ -8,6 +8,7 @@ const ROOT_FILE = 'src/assets/data/root.yml';
 const CHANGELOG_FILE = 'src/assets/data/changelog.yml';
 const BOSSGUIDE_FOLDER = 'src/assets/data/bossguides';
 const SHOP_FOLDER = 'src/assets/data/shops';
+const STAMPS_FOLDER = 'src/assets/data/stamps';
 
 const data = fs.readFileSync(ROOT_FILE, 'utf-8');
 const changelogData = fs.readFileSync(CHANGELOG_FILE, 'utf-8');
@@ -57,11 +58,25 @@ const allGuides = _.flattenDeep(fs.readdirSync(BOSSGUIDE_FOLDER).map(file => {
   return bossguides;
 }));
 
+const allGuides = _.flattenDeep(fs.readdirSync(BOSSGUIDE_FOLDER).map(file => {
+  const data = fs.readFileSync(`${BOSSGUIDE_FOLDER}/${file}`, 'utf-8');
+  const bossguides = YAML.safeLoad(data);
+
+  return bossguides;
+}));
+
 const allShops = _.flattenDeep(fs.readdirSync(SHOP_FOLDER).map(file => {
   const data = fs.readFileSync(`${SHOP_FOLDER}/${file}`, 'utf-8');
   const shops = YAML.safeLoad(data);
 
   return shops;
+}));
+
+const allStamps = _.flattenDeep(fs.readdirSync(STAMPS_FOLDER).map(file => {
+  const data = fs.readFileSync(`${STAMPS_FOLDER}/${file}`, 'utf-8');
+  const stamps = YAML.safeLoad(data);
+
+  return stamps;
 }));
 
 const fullData = {
@@ -70,7 +85,8 @@ const fullData = {
   allCharacters,
   allItems,
   allGuides,
-  allShops
+  allShops,
+  allStamps
 };
 
 fs.writeFileSync('src/app/data.json', JSON.stringify(fullData));
