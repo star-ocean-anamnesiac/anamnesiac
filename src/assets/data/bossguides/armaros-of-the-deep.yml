@@ -4,6 +4,9 @@
   image: armaros_of_the_deep
   cat: gl
   race: Insect
+
+  aliases:
+    - armaros
   
   isActive: false
 
