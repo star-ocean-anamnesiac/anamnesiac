@@ -701,3 +701,31 @@
       lb: 3
   obtained: Gacha  
   
+
+- name: Tomb Blade
+  cat: 'gl'
+  star: 5
+  picture: Tome_Brand
+  atk: 960
+  int: 958
+  factors:
+    - desc: Damage dealt to humanoids +40%
+      slayer: Human
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Humans
+        buffValue: 40
+    - desc: AP cost -15%
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 15
+    - desc: Damage dealt +15%
+      meta:
+        priority: 3
+        buff: Damage
+        buffValue: 15
+      lb: 5
+  obtained: Gacha  
+  
