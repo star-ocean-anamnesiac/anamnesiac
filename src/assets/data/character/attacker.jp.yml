@@ -25,24 +25,24 @@
             priority: 1
             buff: ATK
             buffValue: 40
-        - desc: ATK +60% when HP is 100%
+        - desc: ATK +65% when HP is 100%
           all: true
           meta:
             priority: 3
             buff: ATK
             buffCondition: HP is 100%
-            buffValue: 60
+            buffValue: 65
     - name: "Clockwork Infantry"
       effects: 
         - desc: Evasion AP cost -100% on perfect dodge (10s)
     - name: "Holy Blessing"
       effects: 
-        - desc: Normal attack AP recovery +100%
+        - desc: Normal attack AP recovery +150%
           all: true
           meta:
             priority: 1
             buff: AP Recovery
-            buffValue: 100
+            buffValue: 150
     - name: "Wish"
       effects: 
         - desc: Evasion AP cost -50% 
@@ -52,13 +52,13 @@
   skills:
     - name: "YoRHa Arms: One"
       picture: YoHRa_Arms_One
-      power: ATK x 380%
+      power: ATK x 440%
       ap: 22
       maxHits: 2
       highlight: true
     - name: "YoRHa Arms: Two"
       picture: YoHRa_Arms_Two
-      power: ATK x 1100%
+      power: ATK x 1280%
       ap: 42
       maxHits: 2
     - name: "YoRHa Pod: One"
@@ -92,7 +92,7 @@
           priority: 1
           buff: Elemental Damage
           buffValue: 50
-    power: ATK x 4000%
+    power: ATK x 4500%
     maxHits: 27
     
   notes: >
@@ -196,6 +196,7 @@
   rush:
     name: "Ethereal Blast"
     picture: Ethereal_Blast_Fidel
+    element: Light
     effects: 
       - desc: AP cost -60%
         duration: 20
@@ -745,7 +746,7 @@
   rush:
     name: "Celestial Sword"
     picture: Heaven's_Sword_Summer_Reimi
-    shortEffects: Nullifies all status ailments and single target damage dealt +40% (All Party/20s)
+    shortEffects: Nullifies all status ailments and single target damage dealt +40% (Party/20s)
     effects: 
       - desc: Nullifies status ailments
         all: true
@@ -3619,12 +3620,11 @@
       effects: 
         - desc: No flinching when taking damage of 15% of max HP or less
           all: Long Range Weapons/Self
-    - name: "World's Hope"
+    - name: "Will of the World"
       effects: 
         - desc: Evasion possible during air attacks
         - desc: Nullifies charge assault critical damage penalty
-          all: Self
-    - name: "God Against God"
+    - name: "Godly Ambitions"
       effects: 
         - desc: AP cost -5%
           meta:
@@ -4072,11 +4072,11 @@
             priority: 4
             buff: Silence Attack Chance
             buffValue: 15
-    - name: "Armor Shining in the Azure Heavens"
+    - name: "Shining Skyrend Armor"
       effects: 
         - desc: Nullifies charge assault critical damage penalty.
         - desc: Evasion possible during air attacks
-    - name: "A Dignified and Resounding Voice"
+    - name: "Voice of Majesty"
       effects: 
         - desc: AP cost -50% when skill chain is >3
           meta:
@@ -4084,7 +4084,7 @@
             buff: AP Cost Reduction
             buffCondition: Skill Chain 3+
             buffValue: 50
-    - name: "Beckoning Hands of Slain War Heroes"
+    - name: "Temptation of the Dead"
       shortEffects: ATK +15% and DEF +10%
       effects: 
         - desc: ATK +15%
@@ -5162,11 +5162,10 @@
   rush:
     name: "Eternal Refrain"
     picture: Eternal_Refrain_Capell
-    shortEffects: Nullifies status ailments (Party/20s) and AP cost -50% (Self/20s)
+    shortEffects: Nullifies status ailments (Party) and AP cost -50% (Self/20s)
     effects: 
       - desc: Nullifies status ailments
         all: true
-        duration: 20
       - desc: AP cost -50%
         all: false
         duration: 20
@@ -5429,7 +5428,7 @@
             buffValue: 100
     - name: "Sharpened Frost Blade"
       effects: 
-        - desc: ATK +20% after using Gliding Edge
+        - desc: ATK +20% after using Gliding Edge (10s)
           duration: 10
           meta:
             priority: 2
@@ -5472,7 +5471,7 @@
   rush:
     name: "Wolfpack Fang"
     picture: Wolfpack_Fang_Maid_Nel
-    shortEffects: AP cost -30% (Self/20s) and recovers 10% of max HP every 3 seconds (Party/20s)
+    shortEffects: AP cost -30% and recovers 10% of max HP every 3 seconds (Self/20s)
     effects: 
       - desc: AP cost -30%
         duration: 20
@@ -7012,7 +7011,7 @@
             buffValue: 70
     - name: "North Star Sword Style"
       effects: 
-        - desc: AP recovers while moving
+        - desc: AP recovery increases while moving
           all: true
     - name: "In Hot Blood"
       effects: 
@@ -7435,21 +7434,21 @@
           all: false
     - name: Self Taught Martial Artist 
       effects: 
-        - desc: Critical hit chance +50% when skill chain >3
+        - desc: Critical hit chance +50% when skill chain is >3
           all: false
           meta:
             priority: 1
             buff: Crit Rate
             buffCondition: Skill Chain > 3
             buffValue: 50
-        - desc: Critical hit chance +100% when skill chain >5
+        - desc: Critical hit chance +100% when skill chain is >5
           all: false
           meta:
             priority: 1
             buff: Crit Rate
             buffCondition: Skill Chain > 5
             buffValue: 100
-        - desc: Critical damage dealt +100% when skill chain >6
+        - desc: Critical damage dealt +100% when skill chain is >6
           all: false
           meta:
             priority: 1
@@ -7466,7 +7465,7 @@
             buffValue: 200
         - desc: Evasion possible during air attacks
           all: false
-        - desc: ATK +20% when hitcount >200
+        - desc: ATK +20% when hitcount is >200
           all: false
           meta:
             priority: 3
@@ -7496,13 +7495,13 @@
     - name: Gun Flame 
       picture: Skill_Placeholder
       element: Fire
-      power: ATK x 490%
+      power: ATK x 200%
       ap: 17
       maxHits: 3
     - name: Volcanic Viper
       picture: Skill_Placeholder
       element: Fire
-      power: ATK x 200%
+      power: ATK x 490%
       ap: 23
       maxHits: 2
     - name: Bandit Bringer
