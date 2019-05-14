@@ -3200,7 +3200,7 @@
   star: 5
 
   stats:
-    hp: 15646
+    hp: 15645
     atk: 2799
     int: 1549
     def: 1589
@@ -3241,7 +3241,7 @@
             buff: ATK Damage
             buffCondition: Skill Chain 3+
             buffValue: 80
-    - name: "Absolute Loyalty"
+    - name: "Unwavering Devotion"
       effects: 
         - desc: Damage dealt +30%
           all: true
@@ -3256,7 +3256,7 @@
             buff: Enemy ATK Damage Taken
             buffCondition: Poisoned
             buffValue: 15
-    - name: "Commander of Demon Sealing Division [Darkness]"
+    - name: "Head of the Secret Legion"
       shortEffects: ATK +30% and HIT +10%
       effects: 
         - desc: ATK +30%
@@ -3271,27 +3271,27 @@
             buffValue: 10
 
   skills:
-    - name: "Sylvan Shot"
+    - name: "Poisonous Shot"
       picture: Sylvan_Shot
       power: ATK x 220%
       ap: 20
       maxHits: 8
-    - name: "Flying Guillotine"
+    - name: "Poisonous Guillotine"
       picture: Guillotine
       power: ATK x 410%
       ap: 32
       maxHits: 4
-    - name: "Victory Terror"
+    - name: "Poisonous Terror"
       picture: Victory_Terror
       power: ATK x 550%
       ap: 35
       maxHits: 10
-    - name: "Mirror Slice"
+    - name: "Poisonous Blade"
       picture: Mirror_Blade
       power: ATK x 750%
       ap: 40
       maxHits: 6
-    - name: "Aqua Spread"
+    - name: "Poisonous Hydroblades"
       picture: Hydroblades
       element: Ice
       power: ATK x 210%
