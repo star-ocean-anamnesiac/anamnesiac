@@ -4344,7 +4344,7 @@
 
 - name: Arngrim
   cat: gl
-  rating: 0
+  rating: 10
   picture: Arngrim
   weapon: greatsword
   ace: true
@@ -4454,7 +4454,7 @@
     grd: 819
 
   talents:
-    - name: "Star Athlete"
+    - name: "Star Athlete II"
       effects: 
         - desc: ATK +40%
           all: true
@@ -4485,12 +4485,12 @@
       effects: 
         - desc: No flinching when taking damage of 15% of max HP or less
           all: Long Range Weapons/Self
-    - name: "World's Hope"
+    - name: "Will of the World"
       effects: 
         - desc: Evasion possible during air attacks
         - desc: Nullifies charge assault critical damage penalty
           all: Self
-    - name: "God Against God"
+    - name: "Godly Ambitions"
       effects: 
         - desc: AP cost -5%
           meta:
