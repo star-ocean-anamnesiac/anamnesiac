@@ -3235,9 +3235,8 @@
       effects: 
         - desc: Repel +1
         - desc: ATK damage dealt +80% when skill chain is >3
-          all: true
           meta:
-            priority: 1
+            priority: 4
             buff: ATK Damage
             buffCondition: Skill Chain 3+
             buffValue: 80
