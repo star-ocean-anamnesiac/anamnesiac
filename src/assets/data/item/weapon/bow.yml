@@ -357,3 +357,31 @@
         buffValue: 10
       lb: 5
   obtained: Lezard + Blood Valkyrie (Achievement, Exchange)  
+  
+  
+- name: Silent Killer
+  cat: 'gl'
+  star: 5
+  picture: Silent_Shooter
+  atk: 532
+  int: 534
+  factors:
+    - desc: ATK +10%
+      meta:
+        priority: 1
+        buff: ATK
+        buffValue: 10  
+    - desc: Damage dealt to humanoids +25%
+      slayer: Human
+      slayerPct: 25
+      meta:
+        priority: 4
+        buff: Damage To Humans
+        buffValue: 40
+    - desc: Critical hit chance +15%
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffValue: 15
+      lb: 5
+  obtained: Gacha  
