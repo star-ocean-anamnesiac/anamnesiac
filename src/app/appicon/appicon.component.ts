@@ -2,28 +2,31 @@ import { Component, OnInit, Input, HostBinding, ChangeDetectionStrategy } from '
 import { get } from 'lodash';
 
 import * as appicons from '../../assets/icons/+app-icons.json';
+
+/*
 import * as itemicons from '../../assets/items/+item-icons.json';
 import * as charicons from '../../assets/characters/+char-icons.json';
 import * as skillicons from '../../assets/skills/+skill-icons.json';
 import * as rushicons from '../../assets/rush/+rush-icons.json';
 import * as bossicons from '../../assets/bosses/+boss-icons.json';
+*/
 
 const sheetTypes: any = {
-  app:   (<any>appicons).default || appicons,
+  app:   (<any>appicons).default || appicons, /*
   item:  (<any>itemicons).default || itemicons,
   char:  (<any>charicons).default || charicons,
   skill: (<any>skillicons).default || skillicons,
   rush:  (<any>rushicons).default || rushicons,
-  boss:  (<any>bossicons).default || bossicons
+  boss:  (<any>bossicons).default || bossicons */
 };
 
 const sheetPaths = {
-  app:   'assets/spritesheets/+app-icons.png',
+  app:   'assets/spritesheets/+app-icons.png', /*
   item:  'assets/spritesheets/+item-icons.png',
   char:  'assets/spritesheets/+char-icons.png',
   skill: 'assets/spritesheets/+skill-icons.png',
   rush:  'assets/spritesheets/+rush-icons.png',
-  boss:  'assets/spritesheets/+boss-icons.png'
+  boss:  'assets/spritesheets/+boss-icons.png' */
 };
 
 @Component({
@@ -58,7 +61,7 @@ export class AppIconComponent implements OnInit {
   public forceHeight: number;
 
   @Input()
-  public type: 'app'|'item'|'char'|'skill'|'rush'|'boss' = 'app';
+  public type: 'app' = 'app';
 
   @Input()
   @HostBinding('class.inline-display')

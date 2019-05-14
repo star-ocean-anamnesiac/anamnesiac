@@ -40,7 +40,10 @@
 </ion-content>
 
 <ng-template #bossguide let-guide="guide">
-  <app-appicon [name]="'boss_' + guide.image" [forceWidth]="64" [forceHeight]="64" [inline]="true" type="boss"></app-appicon> 
+  
+  <app-lazy-img class="list-icon" 
+                [src]="'assets/bosses/boss_' + guide.image + '.png'" 
+                [alt]="guide.name"></app-lazy-img>
 
   <ion-label class="label-area">
     <h2 class="vertical-center">

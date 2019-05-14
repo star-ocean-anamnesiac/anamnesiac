@@ -57,7 +57,7 @@ import { Character } from '../models/character';
       <ion-item *ngFor="let char of filteredCharacters" (click)="selectChar(char)">
 
         <span slot="start" class="picture-class-chunk">
-          <app-appicon [name]="char.picture" [forceWidth]="64" [forceHeight]="64" type="char"></app-appicon>
+          <app-lazy-img class="list-icon" [src]="'assets/characters/' + char.picture + '.png'" [alt]="char.name"></app-lazy-img>
           <app-appicon margin-horizontal class="hidden-xs" [name]="'class-' + char.type" [scaleX]="0.25" [scaleY]="0.25"></app-appicon>
         </span>
 

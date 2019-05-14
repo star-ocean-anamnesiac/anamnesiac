@@ -9,7 +9,7 @@ import { Item } from '../models/item';
   template: `
   <ion-header>
     <ion-toolbar color="primary">
-      <ion-title>Choose Party Character</ion-title>
+      <ion-title>Choose Character Item</ion-title>
       <ion-buttons slot="end">
         <ion-button (click)="dismiss()">
           Close
@@ -41,7 +41,9 @@ import { Item } from '../models/item';
       <ion-item *ngFor="let item of filteredItems" (click)="selectItem(item)">
 
         <span slot="start" class="picture-class-chunk">
-          <app-appicon class="item-icon" [name]="item.picture" [forceWidth]="64" [forceHeight]="64" type="item"></app-appicon>
+          <app-lazy-img class="list-icon item-icon"
+              [src]="'assets/items/' + (item.subtype === 'all' ? 'accessory' : item.subtype) + '/' + item.picture + '.png'"
+              [alt]="item.name"></app-lazy-img>
           <app-appicon margin-horizontal class="hidden-xs" [name]="'menu-' + item.subtype" [scaleX]="0.375" [scaleY]="0.375"></app-appicon>
         </span>
 
