@@ -43,11 +43,13 @@ export class CharacterListPage implements OnInit, OnDestroy {
   public gridView: boolean;
 
   public tierSortedCharacters: { [key: string]: Character[] } = {};
+  public tierOrderedCharacters: Character[] = [];
   public allTiers: string[] = [];
 
   public alphaSortedCharacters: Character[] = [];
 
   public weaponSortedCharacters: { [key: string]: Character[] } = {};
+  public weaponOrderedCharacters: Character[] = [];
   public allWeapons: string[] = [];
 
   public showSearch: boolean;
@@ -118,11 +120,20 @@ export class CharacterListPage implements OnInit, OnDestroy {
         this.tierSortedCharacters = res.tierSortedCharacters;
         this.weaponSortedCharacters = res.weaponSortedCharacters;
 
+        this.tierOrderedCharacters = _.flatten(Object.values(this.tierSortedCharacters));
+        this.weaponOrderedCharacters = _.flatten(Object.values(this.weaponSortedCharacters));
+
         if(this.getPreviouslyLoadedChar()) {
           this.loadCharacterModal(this.getPreviouslyLoadedChar());
         }
       });
     });
+  }
+
+  public characterHeader = (char: Character) => {
+    if(this.sorting === 'tier')   { return { text: this.getTierNameForNumber(char.rating) }; }
+    if(this.sorting === 'weapon') { return { weapon: char.weapon }; }
+    return null;
   }
 
   private updateRegionBasedOn(val: boolean) {
@@ -252,6 +263,17 @@ export class CharacterListPage implements OnInit, OnDestroy {
     this.searchValue = '';
   }
 
+  private getTierNameForNumber(tier: number): string {
+    if(tier > 10)              { return 'Meta-defining'; }
+    if(tier === 10)            { return 'Best of the best'; }
+    if(tier >= 8 && tier < 10) { return 'Preferred in most situations'; }
+    if(tier >= 6 && tier <  8) { return 'Preferred in specific situations'; }
+    if(tier >= 4 && tier <  6) { return 'Good in most situations'; }
+    if(tier >= 2 && tier <  4) { return 'Good in specific situations'; }
+    if(tier >= 0 && tier <  2) { return 'Outclassed'; }
+    return 'Unranked';
+  }
+
   // CHARACTER LIST SORTING
   private getCharacterUpdateList() {
     let arr = this.allCharacters;
@@ -312,14 +334,7 @@ export class CharacterListPage implements OnInit, OnDestroy {
       tierSortedCharacters = _(arr)
         .sortBy([(char) => -Math.floor(char.rating), 'name'])
         .groupBy(char => {
-          if(char.rating > 10)                     { return 'Meta-defining'; }
-          if(char.rating === 10)                   { return 'Best of the best'; }
-          if(char.rating >= 8 && char.rating < 10) { return 'Preferred in most situations'; }
-          if(char.rating >= 6 && char.rating <  8) { return 'Preferred in specific situations'; }
-          if(char.rating >= 4 && char.rating <  6) { return 'Good in most situations'; }
-          if(char.rating >= 2 && char.rating <  4) { return 'Good in specific situations'; }
-          if(char.rating >= 0 && char.rating <  2) { return 'Outclassed'; }
-          return 'Unranked';
+          return this.getTierNameForNumber(char.rating);
         })
         .value();
 

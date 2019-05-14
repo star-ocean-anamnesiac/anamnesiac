@@ -41,6 +41,81 @@
                  (ionInput)="updateSearchValue($event)"
   ></ion-searchbar>
 
+  <ion-virtual-scroll *ngIf="!isError" 
+                      [items]="characterList | filterBy:{ name: searchValue }" 
+                      [headerFn]="characterHeader" 
+                      class="center-container">
+    <ion-item-divider *virtualHeader="let header">
+      <app-weapon *ngIf="header.weapon" [weapon]="header.weapon"></app-weapon>
+      {{ header.text }}
+    </ion-item-divider>
+
+    <ion-item *virtualItem="let item" detail (click)="loadCharacter(item)" [class.short]="gridView">
+      <ng-container *ngIf="!gridView">
+        <ng-container *ngTemplateOutlet="character; context: { char: item }"></ng-container>
+      </ng-container>
+
+      <ng-container *ngIf="gridView">
+        <ng-container *ngTemplateOutlet="charGrid; context: { char: item }"></ng-container>
+      </ng-container>
+    </ion-item>
+  </ion-virtual-scroll>
+
+  <ion-virtual-scroll *ngIf="!isError && sorting === 'alpha'" 
+                      [items]="alphaSortedCharacters | filterBy:{ name: searchValue }"
+                      class="center-container">
+
+    <ion-item *virtualItem="let item" detail (click)="loadCharacter(item)" [class.short]="gridView">
+      <ng-container *ngIf="!gridView">
+        <ng-container *ngTemplateOutlet="character; context: { char: item }"></ng-container>
+      </ng-container>
+
+      <ng-container *ngIf="gridView">
+        <ng-container *ngTemplateOutlet="charGrid; context: { char: item }"></ng-container>
+      </ng-container>
+    </ion-item>
+
+  </ion-virtual-scroll>
+
+  <ion-virtual-scroll *ngIf="!isError && sorting === 'tier'" 
+                      [items]="tierOrderedCharacters | filterBy:{ name: searchValue }" 
+                      [headerFn]="characterHeader" 
+                      class="center-container">
+    <ion-item-divider *virtualHeader="let header">
+      {{ header.text }}
+    </ion-item-divider>
+
+    <ion-item *virtualItem="let item" detail (click)="loadCharacter(item)" [class.short]="gridView">
+      <ng-container *ngIf="!gridView">
+        <ng-container *ngTemplateOutlet="character; context: { char: item }"></ng-container>
+      </ng-container>
+
+      <ng-container *ngIf="gridView">
+        <ng-container *ngTemplateOutlet="charGrid; context: { char: item }"></ng-container>
+      </ng-container>
+    </ion-item>
+  </ion-virtual-scroll>
+
+  <ion-virtual-scroll *ngIf="!isError && sorting === 'weapon'" 
+                      [items]="weaponOrderedCharacters | filterBy:{ name: searchValue }" 
+                      [headerFn]="characterHeader" 
+                      class="center-container">
+    <ion-item-divider *virtualHeader="let header">
+      <app-weapon *ngIf="header.weapon" [weapon]="header.weapon"></app-weapon>
+    </ion-item-divider>
+
+    <ion-item *virtualItem="let item" detail (click)="loadCharacter(item)" [class.short]="gridView">
+      <ng-container *ngIf="!gridView">
+        <ng-container *ngTemplateOutlet="character; context: { char: item }"></ng-container>
+      </ng-container>
+
+      <ng-container *ngIf="gridView">
+        <ng-container *ngTemplateOutlet="charGrid; context: { char: item }"></ng-container>
+      </ng-container>
+    </ion-item>
+  </ion-virtual-scroll>
+
+  <!--
   <ion-list *ngIf="!isError && sorting === 'alpha'" class="center-container">
 
     <ion-item *ngFor="let char of alphaSortedCharacters | filterBy: { name: searchValue }" detail (click)="loadCharacter(char)" [class.short]="gridView">
@@ -85,6 +160,7 @@
       </ion-item>
     </ion-item-group>
   </ion-list>
+  -->
 
 </ion-content>
 
