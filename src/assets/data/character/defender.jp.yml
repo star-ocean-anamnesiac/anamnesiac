@@ -10,7 +10,7 @@
 
   stats:
     hp: 21945
-    atk: 3041
+    atk: 3294
     int: 1510
     def: 2789
     hit: 833
@@ -41,13 +41,13 @@
             priority: 1
             buff: Single Target Damage
             buffValue: 20
-        - desc: Single target damage +40% when HP is 100%
+        - desc: Single target damage +45% when HP is 100%
           all: true
           meta:
             priority: 3
             buff: Single Target Damage
             buffCondition: HP is 100%
-            buffValue: 40
+            buffValue: 45
     - name: "Beautiful World"
       shortEffects: ATK +30% and DEF +20%
       effects: 
@@ -338,7 +338,7 @@
       highlight: true
     - name: "Dragon Roar"
       picture: Dragon_Roar
-      power: ATK x 340%
+      power: ATK x 370%
       ap: 29
       maxHits: 2
       element: Dark
@@ -545,11 +545,11 @@
       effects: 
         - desc: No flinching when taking damage of 25% of max HP or less
           all: true
-    - name: "Indominitable Sense of Justice"
+    - name: "Dauntless Sense of Justice"
       effects: 
         - desc: Evasion possible during air attacks
         - desc: Nullifies charge assault critical damage penalty
-    - name: "Fortune's Right Hand"
+    - name: "Lucky Right Hand"
       shortEffects: AP cost -20% and critical hit chance +30% when skill chain is >3
       effects: 
         - desc: AP cost -20% when skill chain is >3
@@ -881,6 +881,121 @@
       *Spam Bloodstorm if either unawakened or trying to fill rush*
 
 
+- name: Myuria Tionysus (Summer)
+  cat: jp
+  picture: Everlasting_Summer_Myuria
+  weapon: bns
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 21945
+    atk: 2258
+    int: 1563
+    def: 2324
+    hit: 826
+    grd: 1050
+
+  talents:
+    - name: "Big Break"
+      effects: 
+        - desc: HP +20%
+          all: true
+          meta:
+            priority: 4
+            buff: HP
+            buffValue: 20
+        - desc: No flinching when taking damage of 20% of max HP or less
+          all: true
+    - name: "Aromatic Sunscreen"
+      effects: 
+        - desc: INT damage taken -20%
+          all: true
+          meta:
+            priority: 1
+            buff: INT Damage Taken Reduction
+            buffValue: 20    
+    - name: "Great Charisma"
+      effects: 
+        - desc: Rush gauge quota -30%
+          all: false
+        - desc: ATK +60% when targeted by enemy
+          all: false
+          meta:
+            priority: 3
+            buff: ATK
+            buffValue: 60
+            buffCondition: When holding aggro
+        - desc: AP cost -20% when targeted by enemy
+          all: false
+          meta:
+            priority: 3
+            buff: AP Cost Reduction
+            buffValue: 20
+            buffCondition: When holding aggro
+    - name: "Beach Skirt Wrap"
+      effects:
+        - desc: Single target damage +30% when not targeted by enemy
+          all: true
+          meta:
+            priority: 3
+            buff: Single Target Damage
+            buffValue: 30
+            buffCondition: Not holding aggro
+        - desc: Stun rate +15% when not targeted by enemy
+          all: true
+          meta:
+            priority: 1
+            buff: Stun Rate
+            buffValue: 15
+            buffCondition: Not holding aggro          
+
+  skills:
+    - name: "Air Slash"
+      picture: Air_Slash_II
+      power: ATK x 200%
+      ap: 20
+      maxHits: 1
+    - name: "Aura Wall"
+      picture: Aura_Wall
+      power: ATK x 200%
+      ap: 20
+      maxHits: 20
+      highlight: true
+    - name: "Bloodstorm Revolution"
+      picture: Bloodstorm_Revolution
+      power: ATK x 550%
+      ap: 38
+      maxHits: 10
+    - name: "Thunderfire Slice"
+      picture: Thunderfire_Slash
+      element: Lightning
+      power: ATK x 430%
+      ap: 32
+      maxHits: 1
+      highlight: true
+      
+  rush:
+    name: "Flashbolt"
+    picture: Flashbolt_Summer_Myuria
+    element: Lightning
+    shortEffects: AP cost -40% and recovers 15% of max HP every 3 seconds (Self/20s)
+    effects: 
+      - desc: AP cost -40%
+        duration: 20
+        all: false
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 40
+      - desc: Recover 15% of max HP every 3 seconds
+        duration: 20
+        all: false
+    power: ATK x 4500%
+    maxHits: 6
+    
+    
 - name: Evelysse (Winter)
   cat: jp
   rating: 8
@@ -1327,7 +1442,7 @@
     grd: 1043
 
   talents:
-    - name: "Memories from Previous Life"
+    - name: "Memories from a Past Life"
       effects: 
         - desc: Nullifies charge assault critical damage penalty
           all: true
@@ -1338,7 +1453,7 @@
             buff: ATK Damage
             buffCondition: When Using Charge Assault
             buffValue: 30
-    - name: "Steel Will Strong Heart"
+    - name: "Steel Will, Strong Heart"
       effects: 
         - desc: Damage taken -20%
           all: true
@@ -1362,8 +1477,8 @@
             priority: 3
             buff: AP Recovery
             buffValue: 50
-    - name: "Eldest Sister Dignity"
-      shortEffects: ATK +20% and HP +15% after using a long range skill (6s)
+    - name: "Eldest Sister's Dignity"
+      shortEffects: ATK +20% and HIT +10% after using a long range skill (6s)
       effects: 
         - desc: ATK +20% after using a long range skill (6s)
           meta:
@@ -1454,6 +1569,7 @@
             buff: HP
             buffValue: 30
         - desc: No flinching when taking damage of 20% of max HP or less
+          all: true
     - name: "Wounded Beast"
       effects: 
         - desc: ATK +25%
@@ -1680,7 +1796,7 @@
             buffValue: 20
     - name: "Danceable"
       effects: 
-        - desc: Damage taken -100% after using Hell Impact (Self/0.5s)
+        - desc: Damage taken -100% after using Hell Impact (0.5s)
           meta:
             priority: 1
             buff: Damage Taken Reduction
@@ -1807,7 +1923,7 @@
       picture: Purgatory_Palm
       element: Fire
       power: ATK x 270%
-      ap: 25
+      ap: 24
       maxHits: 5
       
   rush:
@@ -1853,7 +1969,7 @@
     - name: "Serene Straw Hat"
       effects: 
         - desc: Recovers 5% of max HP every 3 seconds
-        - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
+        - desc: 80% chance of surviving a lethal attack when at 20% of max HP or more
     - name: "Treasures of Summer"
       effects: 
         - desc: Single target damage +40% at short range
@@ -1995,7 +2111,6 @@
     - name: "Refined Judgment"
       effects: 
         - desc: Normal attack AP recovery +200%
-          all: true
           meta:
             priority: 1
             buff: AP Recovery From Normal Attacks
@@ -2072,9 +2187,9 @@
   talents:
     - name: "Ancient Demonic Flame Dragon"
       effects: 
-        - desc: ATK +20% after using fire skill
+        - desc: ATK +20% after using fire skill (10s)
           duration: 10
-        - desc: Fire damage dealt +20% after using ice skill
+        - desc: Fire damage dealt +20% after using ice skill (10s)
           duration: 10
     - name: "Brimming Confidence"
       effects: 
@@ -2098,7 +2213,7 @@
             priority: 1
             buff: Single Target Damage
             buffValue: 20
-        - desc: Single target damage +40% at close range
+        - desc: Single target damage +40% at short range
           all: true
           meta:
             priority: 1
@@ -2136,7 +2251,7 @@
     name: "Lava Flow Dragon"
     picture: Lavaflow_Dragon_Blazing_Ashton
     element: Fire
-    shortEffects: Elemental damage dealt +70%/+50% (Self/Party/20s)
+    shortEffects: Elemental damage dealt +70% (Self/20s) and elemental damage dealt +50% (Party/20s)
     effects: 
       - desc: Elemental damage dealt +70%
         duration: 20
@@ -2293,7 +2408,7 @@
         - desc: No flinching when taking damage of 20% of max HP or less
           all: true
     - name: "Twin Bladed Light Bearer"
-      shortEffects: Single target damage +20%, and single target damage +30%/+40% when hitcount is >100/>150
+      shortEffects: Single target damage +20%, and single target damage +30%/+40% when hitcount is >100/>150 (Party)
       effects: 
         - desc: Single target damage +20%
           all: true
@@ -2585,7 +2700,7 @@
       picture: Godslayer
       power: ATK x 1320%
       ap: 30
-      maxHits: 1
+      maxHits: 4
 
   rush:
     name: "Cosmic Combination"
@@ -2636,7 +2751,7 @@
             buffValue: 20
         - desc: No flinching when taking damage of 20% of max HP or less
           all: true
-        - desc: DEF +30% when not targeting enemy's backside
+        - desc: DEF +30% when not behind target
           all: true
           meta:
             priority: 1
@@ -2658,7 +2773,7 @@
             buffValue: 40
     - name: "Throbbing Green"
       effects: 
-        - desc: Recovers 10% of max HP every 3 seconds after guarding enemy attack (20s)
+        - desc: Recovers 10% of max HP every 3 seconds after guarding an enemy attack (20s)
         - desc: Guarding in all directions possible during charge assault standby
         - desc: Cancel bonus starts at 150% when using charge assault
     - name: "Wishing to be Among the Stars"
@@ -2721,12 +2836,12 @@
   star: 5
 
   stats:
-    hp: 22855
-    atk: 2608
-    int: 1619
-    def: 2446
-    hit: 866
-    grd: 1079
+    hp: 21945
+    atk: 2508
+    int: 1549
+    def: 2336
+    hit: 826
+    grd: 1029
 
   talents:
     - name: "Interest in Space Pioneering History"
@@ -2827,12 +2942,12 @@
   star: 5
 
   stats:
-    hp: 18291
-    atk: 1785
-    int: 2962
-    def: 1353
-    hit: 1036
-    grd: 1141
+    hp: 20265
+    atk: 2494
+    int: 1563
+    def: 2534
+    hit: 819
+    grd: 1043
 
   talents:
     - name: "New York Star Assault Troop"
@@ -2877,7 +2992,7 @@
             buff: Single Target Damage
             buffCondition: Short Range
             buffValue: 50
-        - desc: AP cost -20% when Gemini targeted by enemy
+        - desc: AP cost -20% when Gemini is targeted by enemy
           all: true
           meta:
             priority: 1
@@ -2968,15 +3083,15 @@
         - desc: No flinching when taking damage of 25% of max HP or less
           all: true
         - desc: ATK damage taken -30%
-          all: Self/Sharpshooters
+          all: Sharpshooters/Self
           meta:
             priority: 1
             buff: ATK Damage Taken Reduction 
             buffValue: 30
     - name: Decimating Greatsword
-      shortEffects: Damage taken +20%, and Damage taken +40% when hitcount is >300 (Enemies)
+      shortEffects: Damage taken +20%, and damage taken +40% when hitcount is >300 (Enemies)
       effects: 
-        - desc: Damage Taken +20%
+        - desc: Damage taken +20%
           all: Enemies
           meta:
             priority: 1
@@ -2991,9 +3106,9 @@
             buffValue: 40
     - name: Thoughts Behind the Mask
       effects: 
-        - desc:  Additional hit that deals 5% damage when using Battle Skills
+        - desc:  Additional hit that deals 5% of damage when using battle skills
           all: true
-        - desc: ATK/INT/DEF/HIT/GRD +20% when hitcount >200
+        - desc: ATK/INT/DEF/HIT/GRD +20% when hitcount is >200
           all: false
           meta:
             priority: 3
@@ -3051,7 +3166,7 @@
   rush:
     name: Thousand Wedges
     picture: Thousand_Wedges_Ricardo
-    shortEffects: ATK +80% and Critical hit chance +50% (Self/20s)
+    shortEffects: ATK +80% and critical hit chance +50% (Self/20s)
     effects: 
       - desc: ATK +80%
         all: false
