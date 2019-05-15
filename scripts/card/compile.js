@@ -5,7 +5,7 @@ const base64 = require('base64-img');
 const baseHTML = fs.readFileSync(__dirname + '/base.html', 'utf-8');
 const APP_BASE = '../../src/app';
 const ASSET_BASE = `../../src/assets`;
-const { allCharacters } = require(`${APP_BASE}/data.json`);
+const { allCharacters } = require(`${ASSET_BASE}/data.json`);
 
 const numberCircles = ['①', '②', '③', '④', '⑤', '⑥', '⑦', '⑧', '⑨', '⑩'];
 

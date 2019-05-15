@@ -1,5 +1,5 @@
 const puppeteer = require('puppeteer');
-const { allCharacters } = require('../../src/app/data.json');
+const { allCharacters } = require('../../src/assets/data.json');
 
 const fs = require('fs');
 

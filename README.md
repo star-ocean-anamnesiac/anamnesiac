@@ -9,6 +9,7 @@ A Star Ocean: Anamnesis companion app.
 * npm
 * git
 * imagemagick (for texture generation)
+* graphicsmagick (because things are just bad sometimes)
 
 # How to run?
 

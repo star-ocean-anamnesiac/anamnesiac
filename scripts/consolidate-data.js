@@ -82,5 +82,5 @@ const fullData = {
   allStamps
 };
 
-fs.writeFileSync('src/app/data.json', JSON.stringify(fullData));
+fs.writeFileSync('src/assets/data.json', JSON.stringify(fullData));
 
