@@ -1568,8 +1568,10 @@
             buffValue: 100
     - name: "Animal Instincts"
       effects: 
-        - desc: Nullifies movement rate/rush gauge reduction fields
+        - desc: Nullifies movement rate reduction fields
           all: true
+        - desc: Nullifies rush gauge reduction fields
+          all: true          
     - name: "Full Moon Howl"
       effects: 
         - desc: Damage dealt +60% by Pumpkin Smash when skill chain is >4
@@ -2620,7 +2622,112 @@
       
       *Normal > Magnetic Love Field > Clockwise Arms > Magnetic Love Field > Spam till out of AP (Damage rotation)*
  
- 
+
+- name: Rena Lanford (Bridal)
+  cat: jp
+  picture: Bridal_Rena
+  weapon: knuckle
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15435
+    atk: 2704
+    int: 1575
+    def: 1916
+    hit: 1162
+    grd: 833
+
+  talents:
+    - name: "Fresh Madonna Lilies"
+      effects: 
+        - desc: ATK +30%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 30
+        - desc: Normal attack AP recovery +100%
+          all: true
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffValue: 100         
+    - name: "Blue Star Shower"
+      effects: 
+        - desc: Single target damage +5%
+          all: Long Range Weapons/Self
+          meta:
+            priority: 3
+            buff: Single Target Damage
+            buffValue: 5
+        - desc: Single target damage +20% when hitcount is >150
+          all: Long Range Weapons/Self
+          meta:
+            priority: 3
+            buff: Single Target Damage
+            buffValue: 20
+            buffCondition: Hit Count > 150
+    - name: "Four-Leafed Clover Blessings"
+      effects: 
+        - desc: Recovers 5% of max HP every 3 seconds
+          all: true
+        - desc: Recovers 10% of max HP every 3 seconds when hitcount is >100
+          all: true
+    - name: "7-Million-Year-Old Present"
+      effects: 
+        - desc: No flinching when taking damage of 10% of max HP or less
+        - desc: Evasion possible during air attacks
+        - desc: AP cost -20% when hitcount is >50
+          meta:
+            priority: 3
+            buff: AP Cost Reduction
+            buffCondition: Hit Count > 50
+            buffValue: 20
+        - desc: ATK +20% when hitcount is >50
+          meta:
+            priority: 3
+            buff: ATK
+            buffCondition: Hit Count > 50
+            buffValue: 20
+
+  skills:
+    - name: "Floral Hammer of Might"
+      picture: Hammer_of_Might
+      power: ATK x 180%
+      ap: 18
+      maxHits: 1
+      highlight: true  
+    - name: "Triple Floral Kick"
+      picture: Triple_Kick
+      power: ATK x 160%
+      ap: 16
+      maxHits: 3
+    - name: "Floral Cartwheel"
+      picture: Roaring_Cartwheel
+      power: ATK x 420%
+      ap: 30
+      maxHits: 5
+      highlight: true
+    - name: "Floral Fists of Fury"
+      picture: Flash_Chariot
+      power: ATK x 650%
+      ap: 38
+      maxHits: 25
+      highlight: true
+
+  rush:
+    name: "Celestial Vow"
+    picture: Starry_Ace_Bridal_Rena
+    effects: 
+      - desc: No flinching when taking damage of 25% of max HP or less
+        all: true
+        duration: 20
+    power: ATK x 4500%
+    maxHits: 2
+    
+    
 - name: Rena Lanford (Valentine)
   cat: jp
   rating: 8
@@ -2657,7 +2764,7 @@
       effects: 
         - desc: Nullifies charge assault critical damage penalty
           all: Attackers
-        - desc: No flinching when taking damage of 30% of max HP or less during a charge assault
+        - desc: No flinching when taking damage of 30% of max HP or less when using charge assault
           all: Attackers
     - name: "Bad Luck"
       shortEffects: Normal attack AP recovery +200% and evasion AP cost -50% (Attackers)
@@ -3023,16 +3130,16 @@
             buffValue: 25    
     - name: "Great Action"
       effects: 
-        - desc: Critical hit chance +30% at close range
+        - desc: Critical hit chance +30% at short range
           all: true
           meta:
             priority: 1
             buff: Crit Rate
-            buffCondition: Close Range
+            buffCondition: Short Range
             buffValue: 30    
     - name: "Creative Spirit"
       effects: 
-        - desc: AP cost -40% when skill chain >3
+        - desc: AP cost -40% when skill chain is >3
           all: false
           meta:
             priority: 1
@@ -3514,6 +3621,13 @@
       effects: 
         - desc: Nullifies charge assault critical damage penalty
           all: true
+        - desc: ATK damage dealt +40% when using charge assault
+          all: true
+          meta:
+            priority: 1
+            buff: ATK Damage
+            buffCondition: when using charge assault
+            buffValue: 40      
     - name: "Ocarina Player"
       effects: 
         - desc: Normal attack AP recovery +100%
@@ -3539,21 +3653,21 @@
       power: ATK x 1020%
       ap: 29
       maxHits: 3
-    - name: "Heel Stomp"
-      picture: Axe_Kick
-      power: ATK x 300%
-      ap: 21
-      maxHits: 2
     - name: "Hammer of Might"
       picture: Hammer_of_Might
       power: ATK x 320%
       ap: 23
-      maxHits: 1
+      maxHits: 1      
     - name: "Palm of Destruction"
       picture: Palm_of_Destruction
       power: ATK x 270%
       ap: 20
       maxHits: 1
+    - name: "Heel Stomp"
+      picture: Axe_Kick
+      power: ATK x 300%
+      ap: 21
+      maxHits: 2      
 
   rush:
     name: "Dream Hammer"
@@ -4761,7 +4875,7 @@
       power: ATK x 800%
       ap: 48
       maxHits: 1
-    - name: "Spinning-Back Knuckle"
+    - name: "Spinning Back-Knuckle"
       picture: Void_Claw
       power: ATK x 160%
       ap: 14
@@ -4890,91 +5004,6 @@
     maxHits: 13
 
 
-- name: Leanne (Bridal)
-  cat: jp
-  rating: 1
-  picture: Bridal_Reanbell
-  weapon: gun
-  ace: true
-  limited: true
-  star: 5
-
-  stats:
-    hp: 15750
-    atk: 2718
-    int: 1575
-    def: 1930
-    hit: 1141
-    grd: 819
-
-  talents:
-    - name: "Courage and Love"
-      effects: 
-        - desc: ATK +30%
-          all: true
-          meta:
-            priority: 1
-            buff: ATK
-            buffValue: 30
-    - name: "Desire to Change"
-      effects: 
-        - desc: ATK +45% at short range
-          all: true
-          meta:
-            priority: 1
-            buff: ATK
-            buffCondition: Short Range
-            buffValue: 45
-    - name: "Dress Change"
-      effects: 
-        - desc: AP recovery +50% at long range
-          all: Attackers/Sharpshooters
-          meta:
-            priority: 1
-            buff: AP Recovery
-            buffCondition: Long Range
-            buffValue: 50
-    - name: "Specially Reinforced Suits"
-      effects:
-        - desc: No flinching when taking damage of 10% of max HP or less
-
-  skills:
-    - name: "Skyline Shooting"
-      picture: Skyline_Spray
-      power: ATK x 200%
-      ap: 19
-      maxHits: 3
-    - name: "Barrage Fire"
-      picture: Bullet_Barrage
-      power: ATK x 400%
-      ap: 27
-      maxHits: 6
-    - name: "Approach Blow"
-      picture: Approach_Blow
-      power: ATK x 220%
-      ap: 22
-      maxHits: 3
-    - name: "Deadline Burst"
-      picture: Deadline_Burst
-      power: ATK x 530%
-      ap: 34
-      maxHits: 5
-      
-  rush:
-    name: "Invincible Over"
-    picture: Invincible_Over_Bridal_Reanbell
-    shortEffects: ATK damage dealt +30% (Party/20s)
-    effects: 
-      - desc: ATK damage dealt +30%
-        duration: 20
-        all: true
-        meta:
-          priority: 1
-          buff: ATK Damage
-          buffValue: 30
-    power: ATK x 3500%
-    maxHits: 15
-
 - name: Leanne (Bridal) (Awakened)
   cat: jp
   rating: 4
@@ -5082,7 +5111,92 @@
           buffValue: 30
     power: ATK x 4000%
     maxHits: 15
-    
+
+
+- name: Leanne (Bridal)
+  cat: jp
+  rating: 1
+  picture: Bridal_Reanbell
+  weapon: gun
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15750
+    atk: 2718
+    int: 1575
+    def: 1930
+    hit: 1141
+    grd: 819
+
+  talents:
+    - name: "Courage and Love"
+      effects: 
+        - desc: ATK +30%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 30
+    - name: "Desire to Change"
+      effects: 
+        - desc: ATK +45% at short range
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffCondition: Short Range
+            buffValue: 45
+    - name: "Dress Change"
+      effects: 
+        - desc: AP recovery +50% at long range
+          all: Attackers/Sharpshooters
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffCondition: Long Range
+            buffValue: 50
+    - name: "Specially Reinforced Suits"
+      effects:
+        - desc: No flinching when taking damage of 10% of max HP or less
+
+  skills:
+    - name: "Skyline Shooting"
+      picture: Skyline_Spray
+      power: ATK x 200%
+      ap: 19
+      maxHits: 3
+    - name: "Barrage Fire"
+      picture: Bullet_Barrage
+      power: ATK x 400%
+      ap: 27
+      maxHits: 6
+    - name: "Approach Blow"
+      picture: Approach_Blow
+      power: ATK x 220%
+      ap: 22
+      maxHits: 3
+    - name: "Deadline Burst"
+      picture: Deadline_Burst
+      power: ATK x 530%
+      ap: 34
+      maxHits: 5
+      
+  rush:
+    name: "Invincible Over"
+    picture: Invincible_Over_Bridal_Reanbell
+    shortEffects: ATK damage dealt +30% (Party/20s)
+    effects: 
+      - desc: ATK damage dealt +30%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: ATK Damage
+          buffValue: 30
+    power: ATK x 3500%
+    maxHits: 15
 
 - name: Capell
   cat: jp
@@ -5255,7 +5369,7 @@
     name: "Preparation"
     picture: Preparation_Chisato
     effects: 
-      - desc: Damage dealt +40%
+      - desc: Damage dealt +60%
         all: true
         duration: 20
         meta:
@@ -5812,6 +5926,7 @@
 
   talents:
     - name: "Affection for Native Land"
+      shortEffects: ATK/INT damage dealt +20% (Party)
       effects: 
         - desc: ATK damage dealt +20%
           all: true
@@ -5905,7 +6020,7 @@
           buff: ATK
           buffValue: 80
     power: ATK x 4500%
-    maxHits: 1
+    maxHits: 7
     
 
 - name: Maria Traydor (Summer)
@@ -5947,7 +6062,7 @@
           all: true
     - name: "Alternation (Beach)"
       effects: 
-        - desc: No flinching during attacks
+        - desc: No flinching when attacking
         - desc: Damage taken -20%
           meta:
             priority: 1
@@ -6398,7 +6513,7 @@
             priority: 1
             buff: ATK
             buffValue: 20
-        - desc: DEF -20% when Wolf Albel's HP is 100%
+        - desc: DEF -20%
           all: Enemies
           meta:
             priority: 1
@@ -6439,6 +6554,7 @@
             buff: Damage Taken Reduction
             buffValue: 40
     - name: "Deep Twisted Regret"
+      shortEffects: ATK +20% and HP +10%
       effects: 
         - desc: ATK +20%
           meta:
@@ -6663,7 +6779,7 @@
             buff: Elemental Damage
             buffValue: 50
     power: ATK x 5500%
-    maxHits: 1
+    maxHits: 11
 
 - name: Reimi Saionji (Idol)
   cat: jp
@@ -6814,14 +6930,14 @@
             buffValue: 45
     - name: "Two Headed Dragon's Winter Preparation"
       effects: 
-        - desc: Critical hit chance +20% after using fire skills (10s)
+        - desc: Critical hit chance +20% after using a fire skill (10s)
           duration: 10
           meta:
             priority: 1
             buff: Crit Rate
             buffCondition: After Using Fire Skill
             buffValue: 20
-        - desc: Absorbs 10% of damage dealt by normal attacks as HP after using ice skills (10s)
+        - desc: Absorbs 10% of damage dealt by normal attacks as HP after using an ice skill (10s)
     - name: "Wild Deer of Abundance"
       effects: 
         - desc: Normal attack AP recovery +150%
@@ -6856,7 +6972,7 @@
     - name: "Ground Burst"
       picture: Ground_Burst
       element: Fire
-      power: ATK x 280%
+      power: ATK x 230%
       ap: 19
       maxHits: 5
     - name: "Spinning Scythe"
@@ -6892,12 +7008,12 @@
   star: 5
 
   stats:
-    hp: 17831
-    atk: 3420
-    int: 1633
-    def: 2020
-    hit: 1198
-    grd: 873
+    hp: 17094
+    atk: 3276
+    int: 1563
+    def: 1930
+    hit: 1148
+    grd: 833
 
   talents:
     - name: "Swift Reactions in Hagoita"
@@ -6912,8 +7028,11 @@
     - name: "Last Stroke's Judgement"
       effects: 
         - desc: Absorbs 5% of damage dealt by normal attacks as HP
+          all: true
         - desc: Absorbs 15% of damage dealt by normal attacks as HP when hitcount is >100
+          all: true
     - name: "New Encounters and Adventures"
+      shortEffects: ATK +20% and HP +10%
       effects: 
         - desc: HP +10%
           meta:
@@ -7104,6 +7223,12 @@
             buff: ATK
             buffCondition: Hit Count is > 100
             buffValue: 45
+        - desc: No flinching when attacking
+        - desc: Damage taken -40%
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffValue: 40
     - name: "Arc Chief of the Human Survival Research Institute"
       effects: 
         - desc: ATK/INT/DEF/HIT/GRD +20% at short range
@@ -7133,6 +7258,7 @@
             buffValue: 50
         - desc: Nullifies charge assault critical damage penalty
     - name: "A Tragic Wish for Humanity's Survival"
+      shortEffects: ATK +20% and HP +20%
       effects: 
         - desc: HP/ATK +20%
           meta:
@@ -7229,7 +7355,7 @@
       effects: 
         - desc: Cancel bonus starts at 150% when using charge assault
         - desc: Evasion possible during air attacks
-        - desc: No flinching when in air
+        - desc: No flinching during air attacks
     - name: "Cruel World"
       effects: 
         - desc: Rush combo damage +40% when hitcount is >200
@@ -7321,10 +7447,11 @@
             buff: Damage
             buffCondition: Hit Count > 200
             buffValue: 50
-        - desc: AP cost -30%
+        - desc: AP cost -30% when hitcount is >100
           meta:
             priority: 1
             buff: AP Cost Reduction
+            buffCondition: Hit Count > 100
             buffValue: 30
         - desc: AP cost -60% when hitcount is >300
           meta:
