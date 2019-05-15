@@ -194,6 +194,7 @@
   rush:
     name: "Ethereal Blast"
     picture: Ethereal_Blast_Fidel
+    element: Light
     effects: 
       - desc: AP cost -60%
         duration: 20
@@ -4489,7 +4490,6 @@
       effects: 
         - desc: Evasion possible during air attacks
         - desc: Nullifies charge assault critical damage penalty
-          all: Self
     - name: "Godly Ambitions"
       effects: 
         - desc: AP cost -5%
