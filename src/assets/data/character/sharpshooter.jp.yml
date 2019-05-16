@@ -3065,16 +3065,16 @@
           meta:
             priority: 1
             buffs:
-              - Critical Rate
-              - Critical Damage
+              - Crit Rate
+              - Crit Damage
             buffValue: 30
             buffCondition: Hit Count > 100
         - desc: Critical hit chance and critical damage dealt +45% when hitcount is >150
           meta:
             priority: 1
             buffs:
-              - Critical Rate
-              - Critical Damage
+              - Crit Rate
+              - Crit Damage
             buffValue: 45
             buffCondition: Hit Count > 150            
     - name: "Creator of Smiles"
