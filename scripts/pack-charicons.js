@@ -8,7 +8,7 @@ const rimraf = require('rimraf');
 // clean directory in case it needs it
 rimraf.sync('src/assets/characters/\+*');
 
-exec('gm mogrify -format "formatted.png" -trim -resize 128x128! "src/assets/characters/*.png"');
+exec('gm mogrify -format "formatted.png" -trim -resize 64x64! "src/assets/characters/*.png"');
 
 packer(
   'src/assets/characters/**/*.formatted.png', 
