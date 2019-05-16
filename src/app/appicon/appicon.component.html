@@ -17,6 +17,7 @@
     <source [srcset]="'assets/spritesheets/+' + type + '-icons.png'" type="image/png">
       
     <img class="appicon"
+      decoding="async"
       [alt]="type + ' icon'"
       [src]="sheetUrl"
       [style.object-position]="coordinates"
