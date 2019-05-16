@@ -102,7 +102,7 @@
           <div class="additional-buff-row" *ngIf="characterOptimalBuffBoosts[optbuff.key]">
             <div class="text-align-center margin-right"><strong>Individual Totals:</strong></div>
             <span *ngFor="let specialcharbuff of characterOptimalBuffBoosts[optbuff.key]" class="text-align-center buff-character">
-              <app-appicon [name]="characterSprites[specialcharbuff.character]" [forceWidth]="24" [forceHeight]="24" type="char" inline="true"></app-appicon> +{{ optbuff.value + specialcharbuff.boost }}%
+              <app-lazy-img class="inline-icon" [src]="'assets/characters/' + characterSprites[specialcharbuff.character] + '.png'" [alt]="characterSprites[specialcharbuff.character]"></app-lazy-img> +{{ optbuff.value + specialcharbuff.boost }}%
             </span>
           </div>
         </ion-label>
@@ -156,7 +156,7 @@
               </ion-col>
 
               <ion-col size-md="6" size-sm="12" class="text-align-center" text-right>
-                <app-appicon [name]="characterSprites[buffData.sourceCharacter]" [forceWidth]="24" [forceHeight]="24" type="char" inline="true"></app-appicon> {{ buffData.source }}
+                <app-lazy-img class="inline-icon" [src]="'assets/characters/' + characterSprites[buffData.sourceCharacter] + '.png'" [alt]="characterSprites[buffData.sourceCharacter]"></app-lazy-img> {{ buffData.source }}
               </ion-col>
                 
             </ion-row>
@@ -173,7 +173,7 @@
 <ng-template #character let-char="char">
 
   <span slot="start" class="picture-class-chunk">
-    <app-appicon [name]="char.picture" [forceWidth]="64" [forceHeight]="64" type="char"></app-appicon>
+    <app-lazy-img class="list-icon" [src]="'assets/characters/' + char.picture + '.png'" [alt]="char.name"></app-lazy-img>
     <span class="awakened-container" *ngIf="char.awakened">
       <app-appicon [name]="char.awakened === true ? 'misc-awakening' : 'misc-awakening-9'" [scaleX]="0.5" [scaleY]="0.5"></app-appicon>
     </span>
@@ -191,7 +191,10 @@
 <ng-template #item let-item="item">
 
   <span slot="start" class="picture-class-chunk">
-    <app-appicon class="item-icon" [name]="item.picture" [forceWidth]="64" [forceHeight]="64" type="item"></app-appicon>
+
+    <app-lazy-img class="list-icon item-icon" 
+      [src]="'assets/items/' + (item.subtype === 'all' ? 'accessory' : item.subtype) + '/' + item.picture + '.png'" 
+      [alt]="item.name"></app-lazy-img>    
     <app-appicon margin-horizontal [name]="'menu-' + item.subtype" class="hidden-xs" [scaleX]="0.375" [scaleY]="0.375"></app-appicon>
   </span>
 

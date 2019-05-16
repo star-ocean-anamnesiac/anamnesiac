@@ -79,7 +79,8 @@ export class CharacterSortPopover {
 
     <ion-row class="profile-row">
       <ion-col size-xs="5" size-md="3" size-lg="3" position-relative text-center>
-        <app-appicon [name]="char.picture" [forceWidth]="128" [forceHeight]="128" type="char"></app-appicon>
+
+        <app-lazy-img class="big-icon" [src]="'assets/characters/' + char.picture + '.png'" [alt]="char.name"></app-lazy-img>
 
         <span class="awakened-container" *ngIf="char.awakened">
           <app-appicon [name]="char.awakened === true ? 'misc-awakening' : 'misc-awakening-9'" [scaleX]="1" [scaleY]="1"></app-appicon>
@@ -145,7 +146,7 @@ export class CharacterSortPopover {
                   <ion-card>
                     <ion-card-header>
                       <ion-card-title>
-                      <app-appicon *ngIf="skill.highlight"
+                        <app-appicon *ngIf="skill.highlight"
                                    [name]="'misc-highlight'"
                                    [scaleX]="0.25"
                                    [scaleY]="0.25"
@@ -157,7 +158,11 @@ export class CharacterSortPopover {
                       <ion-row>
                         <ion-col size="3" no-padding class="true-center">
                           <div class="s64x64">
-                            <app-appicon [name]="skill.picture" type="skill"></app-appicon>
+
+                            <app-lazy-img class="list-icon"
+                                          [src]="'assets/skills/' + skill.picture + '.png'"
+                                          [alt]="skill.name"></app-lazy-img>
+
                             <app-appicon [name]="'el-' + skill.element.toLowerCase()"
                                          *ngIf="skill.element"
                                          [forceWidth]="24"
@@ -193,7 +198,10 @@ export class CharacterSortPopover {
                       <ion-row>
                         <ion-col size="3" no-padding class="true-center">
                           <div class="s64x64">
-                            <app-appicon [name]="char.rush.picture" type="rush"></app-appicon>
+
+                            <app-lazy-img class="list-icon"
+                                          [src]="'assets/rush/' + char.rush.picture + '.png'"
+                                          [alt]="char.rush.name"></app-lazy-img>
                             <app-appicon [name]="'el-' + char.rush.element.toLowerCase()"
                                          *ngIf="char.rush.element"
                                          [forceWidth]="24"

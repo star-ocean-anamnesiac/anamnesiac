@@ -10,7 +10,9 @@ import { BossGuide } from '../models/bossguide';
   <ion-header>
     <ion-toolbar color="primary">
       <span slot="start">
-        <app-appicon [name]="'boss_' + guide.image" [forceWidth]="48" [forceHeight]="48" [inline]="true" type="boss"></app-appicon>
+        <app-lazy-img class="titlebar-icon"
+          [src]="'assets/bosses/boss_' + guide.image + '.png'"
+          [alt]="guide.name"></app-lazy-img>
       </span>
       <ion-title>
         {{ guide.name }}

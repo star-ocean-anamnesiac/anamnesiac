@@ -59,7 +59,9 @@ export class ItemSortPopover {
 
     <ion-row class="profile-row">
       <ion-col size-xs="5" size-md="3" size-lg="3" text-center>
-        <app-appicon class="item-icon" [name]="item.picture" type="item" [forceWidth]="128" [forceHeight]="128"></app-appicon>
+        <app-lazy-img class="big-icon item-icon"
+          [src]="'assets/items/' + (item.subtype === 'all' ? 'accessory' : item.subtype) + '/' + item.picture + '.png'"
+          [alt]="item.name"></app-lazy-img>
       </ion-col>
 
       <ion-col class="shrink-top-margin">

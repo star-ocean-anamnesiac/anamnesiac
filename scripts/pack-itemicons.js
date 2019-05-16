@@ -11,7 +11,7 @@ rimraf.sync('src/assets/items/\+*');
 // transform these files to the correct dimensions
 fs.readdirSync('src/assets/items/').filter((file) => {
   if(!fs.statSync('src/assets/items/' + file).isDirectory()) return;
-  exec('gm mogrify -format "formatted.png" -trim -resize 128x128! "src/assets/items/' + file + '/*.png"');
+  exec('gm mogrify -format "formatted.png" -trim -resize 64x64! "src/assets/items/' + file + '/*.png"');
 });
 
 // pack textures

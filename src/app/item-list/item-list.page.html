@@ -128,7 +128,9 @@
 <ng-template #itemGrid let-item="item">
   <span slot="start" class="picture-class-chunk">
 
-    <app-appicon class="item-icon" [name]="item.picture" [forceWidth]="96" [forceHeight]="96" type="item"></app-appicon>
+    <app-lazy-img class="grid-icon item-icon" 
+      [src]="'assets/items/' + (item.subtype === 'all' ? 'accessory' : item.subtype) + '/' + item.picture + '.png'" 
+      [alt]="item.name"></app-lazy-img>
     <app-appicon class="icon-star" [name]="'char-' + item.star" [scaleX]="0.5" [scaleY]="0.5"></app-appicon> 
 
     <ng-container *ngFor="let factor of item.factors">
@@ -143,7 +145,9 @@
 
 <ng-template #items let-item="item">
   <span slot="start" class="picture-class-chunk" [class.margin-right]="isFiltered">
-    <app-appicon class="item-icon" [name]="item.picture" type="item" [forceWidth]="64" [forceHeight]="64"></app-appicon>
+    <app-lazy-img class="list-icon item-icon" 
+                  [src]="'assets/items/' + (item.subtype === 'all' ? 'accessory' : item.subtype) + '/' + item.picture + '.png'" 
+                  [alt]="item.name"></app-lazy-img>
     <app-appicon *ngIf="!isFiltered" class="hidden-xs" margin-horizontal [name]="'menu-' + item.subtype" [scaleX]="0.375" [scaleY]="0.375"></app-appicon>
   </span>
 
