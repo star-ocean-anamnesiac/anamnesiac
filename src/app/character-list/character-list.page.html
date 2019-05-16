@@ -41,7 +41,7 @@
                  (ionInput)="updateSearchValue($event)"
   ></ion-searchbar>
 
-  <ion-list *ngIf="!isError && sorting === 'alpha'" class="center-container">
+  <ion-list *ngIf="!isError && !isLoading && sorting === 'alpha'" class="center-container">
 
     <ion-item *ngFor="let char of alphaSortedCharacters | filterBy: { name: searchValue }" detail (click)="loadCharacter(char)" [class.short]="gridView">
       <ng-container *ngIf="!gridView">
@@ -54,7 +54,7 @@
     </ion-item>
   </ion-list>
 
-  <ion-list *ngIf="!isError && sorting === 'weapon'">
+  <ion-list *ngIf="!isError && !isLoading && sorting === 'weapon'">
     <ion-item-group *ngFor="let weapon of allWeapons" class="center-container">
       <ion-item-divider><strong><app-weapon [weapon]="weapon"></app-weapon></strong></ion-item-divider>
 
@@ -70,7 +70,7 @@
     </ion-item-group>
   </ion-list>
 
-  <ion-list *ngIf="!isError && sorting === 'tier'">
+  <ion-list *ngIf="!isError && !isLoading && sorting === 'tier'">
     <ion-item-group *ngFor="let tier of allTiers" class="center-container">
       <ion-item-divider><strong>{{ tier }}</strong></ion-item-divider>
 

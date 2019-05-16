@@ -41,7 +41,7 @@
                   (ionInput)="updateSearchValue($event)"
   ></ion-searchbar>
     
-  <ion-list *ngIf="!isError && itemSorting === 'alpha'" class="center-container">
+  <ion-list *ngIf="!isError && !isLoading && itemSorting === 'alpha'" class="center-container">
     <ion-item *ngFor="let item of alphaSortedItems | filterBy: { name: searchValue }" detail (click)="loadItem(item)" [class.short]="gridView">
       <ng-container *ngIf="!gridView">
         <ng-container *ngTemplateOutlet="items; context: { item: item }"></ng-container>
@@ -53,7 +53,7 @@
     </ion-item>
   </ion-list>
 
-  <ion-list *ngIf="!isError && itemSorting === 'type'">
+  <ion-list *ngIf="!isError && !isLoading && itemSorting === 'type'">
     <ion-item-group *ngFor="let itemType of allItemTypes" class="center-container">
       <ion-item-divider><strong>{{ convertWeaponType(itemType) }}</strong></ion-item-divider>
 
@@ -69,7 +69,7 @@
     </ion-item-group>
   </ion-list>
 
-  <ion-list *ngIf="!isError && itemSorting === 'element'">
+  <ion-list *ngIf="!isError && !isLoading && itemSorting === 'element'">
     <ion-item-group *ngFor="let element of allElements" class="center-container">
       <ion-item-divider>
         <strong><app-element [element]="element"></app-element></strong>
@@ -87,7 +87,7 @@
     </ion-item-group>
   </ion-list>
 
-  <ion-list *ngIf="!isError && itemSorting === 'slayer'">
+  <ion-list *ngIf="!isError && !isLoading && itemSorting === 'slayer'">
     <ion-item-group *ngFor="let slayer of allSlayers" class="center-container">
       <ion-item-divider class="vertical-center">
         <strong><app-slayer [slayer]="slayer"></app-slayer></strong>
@@ -105,7 +105,7 @@
     </ion-item-group>
   </ion-list>
 
-  <ion-list *ngIf="!isError && itemSorting === 'factor'">
+  <ion-list *ngIf="!isError && !isLoading && itemSorting === 'factor'">
     <ion-item-group *ngFor="let factor of allFactors" class="center-container">
       <ion-item-divider class="vertical-center">
         <strong>{{ factor }}</strong>
