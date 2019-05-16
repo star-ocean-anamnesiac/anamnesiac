@@ -22,6 +22,7 @@ export class ItemListPage implements OnInit, OnDestroy {
   public isFiltered: boolean;
 
   public isError: boolean;
+  public isLoading: boolean;
   public allItems: Item[] = [];
 
   @LocalStorage()
@@ -86,9 +87,11 @@ export class ItemListPage implements OnInit, OnDestroy {
       });
 
     this.item$ = this.dataService.items$.subscribe(items => {
-      this.allItems = items;
-      this.updateRegionBasedOn(this.localStorage.retrieve('isJP'));
-      this.updateItemListOutsideZone();
+      setTimeout(() => {
+        this.allItems = items;
+        this.updateRegionBasedOn(this.localStorage.retrieve('isJP'));
+        this.updateItemListOutsideZone();
+      }, 1000);
     });
   }
 
@@ -112,6 +115,8 @@ export class ItemListPage implements OnInit, OnDestroy {
   }
 
   private updateItemListOutsideZone() {
+    this.isLoading = true;
+
     this.ngZone.runOutsideAngular(() => {
       const res = this.getItemList();
 
@@ -137,6 +142,10 @@ export class ItemListPage implements OnInit, OnDestroy {
         if(this.getPreviouslyLoadedItem()) {
           this.loadItemModal(this.getPreviouslyLoadedItem());
         }
+
+        setTimeout(() => {
+          this.isLoading = false;
+        });
       });
     });
   }

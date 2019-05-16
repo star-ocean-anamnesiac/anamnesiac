@@ -31,7 +31,7 @@
     No items match this filter.
   </div>
 
-  <div class="blank-slate" *ngIf="allItems.length === 0">
+  <div class="blank-slate" *ngIf="isLoading || allItems.length === 0">
     <ion-spinner color="light"></ion-spinner> &nbsp;&nbsp;&nbsp; Loading...
   </div>
 

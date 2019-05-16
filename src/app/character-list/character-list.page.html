@@ -31,7 +31,7 @@
     No characters match this filter.
   </div>
 
-  <div class="blank-slate" *ngIf="allCharacters.length === 0">
+  <div class="blank-slate" *ngIf="isLoading || allCharacters.length === 0">
     <ion-spinner color="light"></ion-spinner> &nbsp;&nbsp;&nbsp; Loading...
   </div>
 

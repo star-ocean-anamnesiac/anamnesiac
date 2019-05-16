@@ -22,6 +22,7 @@ export class CharacterListPage implements OnInit, OnDestroy {
   public isFiltered: boolean;
 
   public isError: boolean;
+  public isLoading: boolean;
   public allCharacters: Character[] = [];
 
   @LocalStorage()
@@ -88,9 +89,11 @@ export class CharacterListPage implements OnInit, OnDestroy {
       });
 
     this.character$ = this.dataService.characters$.subscribe(chars => {
-      this.allCharacters = chars;
-      this.updateRegionBasedOn(this.localStorage.retrieve('isJP'));
-      this.updateCharacterListOutsideZone();
+      setTimeout(() => {
+        this.allCharacters = chars;
+        this.updateRegionBasedOn(this.localStorage.retrieve('isJP'));
+        this.updateCharacterListOutsideZone();
+      }, 1000);
     });
   }
 
@@ -101,6 +104,8 @@ export class CharacterListPage implements OnInit, OnDestroy {
   }
 
   private updateCharacterListOutsideZone() {
+    this.isLoading = true;
+
     this.ngZone.runOutsideAngular(() => {
       const res = this.getCharacterUpdateList();
 
@@ -121,6 +126,10 @@ export class CharacterListPage implements OnInit, OnDestroy {
         if(this.getPreviouslyLoadedChar()) {
           this.loadCharacterModal(this.getPreviouslyLoadedChar());
         }
+
+        setTimeout(() => {
+          this.isLoading = false;
+        });
       });
     });
   }
