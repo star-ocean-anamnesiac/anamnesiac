@@ -3,30 +3,12 @@ import { get } from 'lodash';
 
 import * as appicons from '../../assets/icons/+app-icons.json';
 
-/*
-import * as itemicons from '../../assets/items/+item-icons.json';
-import * as charicons from '../../assets/characters/+char-icons.json';
-import * as skillicons from '../../assets/skills/+skill-icons.json';
-import * as rushicons from '../../assets/rush/+rush-icons.json';
-import * as bossicons from '../../assets/bosses/+boss-icons.json';
-*/
-
 const sheetTypes: any = {
-  app:   (<any>appicons).default || appicons, /*
-  item:  (<any>itemicons).default || itemicons,
-  char:  (<any>charicons).default || charicons,
-  skill: (<any>skillicons).default || skillicons,
-  rush:  (<any>rushicons).default || rushicons,
-  boss:  (<any>bossicons).default || bossicons */
+  app:   (<any>appicons).default || appicons
 };
 
 const sheetPaths = {
-  app:   'assets/spritesheets/+app-icons.png', /*
-  item:  'assets/spritesheets/+item-icons.png',
-  char:  'assets/spritesheets/+char-icons.png',
-  skill: 'assets/spritesheets/+skill-icons.png',
-  rush:  'assets/spritesheets/+rush-icons.png',
-  boss:  'assets/spritesheets/+boss-icons.png' */
+  app:   'assets/spritesheets/+app-icons.png'
 };
 
 @Component({
