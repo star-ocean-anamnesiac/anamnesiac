@@ -1,0 +1,6 @@
+
+<ion-img [src]="src" 
+         [alt]="loaded ? alt : ''" 
+         [class.loaded]="loaded" 
+         (ionImgDidLoad)="loaded = true"></ion-img>
+<ion-spinner color="light"></ion-spinner>

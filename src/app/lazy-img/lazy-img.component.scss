@@ -1,0 +1,13 @@
+.loaded + ion-spinner {
+  display: none;
+}
+
+ion-img:not(.loaded) {
+  visibility: hidden;
+}
+
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
