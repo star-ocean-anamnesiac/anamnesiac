@@ -139,7 +139,7 @@ ion-item, ion-item-divider {
 }
 
 
-.grid ion-list {
+.grid ion-list, .grid ion-virtual-scroll {
 
   &.center-container, .center-container {
     display: flex;

@@ -136,6 +136,8 @@ export class CharacterListPage implements OnInit, OnDestroy {
     return null;
   }
 
+  public characterItemHeight = () => 80;
+
   private updateRegionBasedOn(val: boolean) {
     this.region = val ? 'jp' : 'gl';
 

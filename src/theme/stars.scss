@@ -152,7 +152,7 @@ ion-tab-bar {
   }
 }
 
-ion-list {
+ion-list, ion-virtual-scroll {
   background: transparent !important;
 
   ion-list-header {

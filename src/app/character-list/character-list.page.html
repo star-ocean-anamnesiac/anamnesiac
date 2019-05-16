@@ -41,6 +41,30 @@
                  (ionInput)="updateSearchValue($event)"
   ></ion-searchbar>
 
+  <ion-virtual-scroll *ngIf="!isError && sorting === 'alpha' && !gridView && alphaSortedCharacters.length > 0" 
+                      [items]="alphaSortedCharacters | filterBy:{ name: searchValue }"
+                      approxItemHeight="80px"
+                      [itemHeight]="characterItemHeight"
+                      class="center-container">
+
+    <ion-item *virtualItem="let item" detail (click)="loadCharacter(item)">
+      <ng-container *ngTemplateOutlet="character; context: { char: item }"></ng-container>
+    </ion-item>
+
+  </ion-virtual-scroll>
+
+  <ion-list *ngIf="!isError && sorting === 'alpha' && gridView" 
+            class="center-container">
+
+    <ion-item *ngFor="let char of alphaSortedCharacters | filterBy: { name: searchValue }"
+              detail 
+              (click)="loadCharacter(char)" 
+              class="short">
+      <ng-container *ngTemplateOutlet="charGrid; context: { char: char }"></ng-container>
+    </ion-item>
+  </ion-list>
+
+  <!--
   <ion-virtual-scroll *ngIf="!isError" 
                       [items]="characterList | filterBy:{ name: searchValue }" 
                       [headerFn]="characterHeader" 
@@ -114,6 +138,7 @@
       </ng-container>
     </ion-item>
   </ion-virtual-scroll>
+  -->
 
   <!--
   <ion-list *ngIf="!isError && sorting === 'alpha'" class="center-container">
