@@ -214,8 +214,6 @@ export class ItemModal implements OnInit {
 
     this.tabs.select('notes');
 
-    console.log(this.item.notes);
-
     this.notes = this.domSanitizer.bypassSecurityTrustHtml(markdown
       .toHTML((this.item.notes || '')
       .trim())

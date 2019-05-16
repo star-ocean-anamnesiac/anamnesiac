@@ -29,7 +29,7 @@
                       [routerLink]="[p.url]" 
                       [queryParams]="p.queryParams"
                       [color]="p.color"
-                      [class.hidden]="p.visibleIf && p.visibleIf !== activePage">
+                      *ngIf="p.visibleIf && p.visibleIf !== activePage">
 
               <ion-icon slot="start" *ngIf="!p.assetIcon" [name]="p.icon"></ion-icon>
 
