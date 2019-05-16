@@ -10,7 +10,7 @@
 
   stats:
     hp: 14280
-    atk: 2868
+    atk: 2993
     int: 1537
     def: 1773
     hit: 1371
@@ -35,7 +35,9 @@
     - name: "Scanner Type"
       effects: 
         - desc: Evasion AP cost -50%
+          all: true
         - desc: Movement rate +30%
+          all: true
     - name: "Treacherous Blade"
       effects: 
         - desc: Evasion possible during air attacks
@@ -90,7 +92,7 @@
           priority: 1
           buff: ATK Damage
           buffValue: 30
-    power: ATK x 4500%
+    power: ATK x 4000%
     maxHits: 16
     
   notes: >
@@ -266,7 +268,7 @@
   rush:
     name: "Energy Burst Barrage"
     picture: Energy_Burst_Barrage_Maria
-    shortEffects: Removes all buffs (Enemies) and critical hit chance +40% (Party/20s)
+    shortEffects: Removes buffs (Enemies) and critical hit chance +40% (Party/20s)
     effects: 
       - desc: Removes buffs
         all: Enemies
@@ -299,7 +301,7 @@
     grd: 924
 
   talents:
-    - name: "Natural Born Leader"
+    - name: "Natural-Born Leader"
       effects: 
         - desc: Damage dealt +50%
           all: true
@@ -314,16 +316,15 @@
             priority: 4
             buff: Damage Taken Reduction
             buffValue: 20
-    - name: "Charged Kick"
+    - name: "The Mirage Kick"
       effects: 
         - desc: Evasion AP cost -50%
           all: true
         - desc: Evasion speed and distance +100%
-    - name: "Bloodstained Fangs"
+    - name: "Battlefield Memories"
       effects: 
         - desc: Recovers 10% of damage dealt by normal attacks as HP when hitcout is >100
-          all: true
-    - name: "Quark Carrier"
+    - name: "Upholding Quark"
       effects: 
         - desc: AP recovery +50%
           all: true
@@ -336,7 +337,7 @@
             priority: 1
             buff: AP Cost Reduction
             buffValue: 5
-    - name: "Dreams of Peace"
+    - name: "Longing for Peace"
       shortEffects: ATK +30% and HP +10%
       effects: 
         - desc: ATK +30%
@@ -442,6 +443,113 @@
       *Normal > Raptor Bullet > Aiming Device > Raptor Bullet > Raptor Bullet (General Damage)*
       
       *Normal > Crimson Squall > Aiming Device  > Crimson Squall > Crimson Squall (Rush Gain)*
+
+
+- name: Maria Traydor (Bridal)
+  cat: jp
+  picture: Bridal_Maria
+  weapon: gun
+  ace: true
+  limited: True
+  star: 5
+
+  stats:
+    hp: 14070
+    atk: 2520
+    int: 1563
+    def: 1706
+    hit: 1260
+    grd: 924
+
+  talents:
+    - name: "A Most Dignified Profile"
+      effects: 
+        - desc: Damage dealt +40%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 40
+    - name: "Bramble Burst Barrage"
+      shortEffects: Damage dealt +50%/+55%/+60% when hitcount is >100/>150/>200 (Party)
+      effects: 
+        - desc: Damage dealt +50% when hitcount is >100
+          all: true
+          meta:
+            priority: 3
+            buff: Damage
+            buffCondition: Hit Count > 100
+            buffValue: 50
+        - desc: Damage dealt +55% when hitcount is >150
+          all: true
+          meta:
+            priority: 3
+            buff: Damage
+            buffCondition: Hit Count > 150
+            buffValue: 55
+        - desc: Damage dealt +60% when hitcount is >200
+          all: true
+          meta:
+            priority: 3
+            buff: Damage
+            buffCondition: Hit Count > 200
+            buffValue: 60
+    - name: "Hidden Passion"
+      effects: 
+        - desc: Additional hit that deals 10% of damage during normal attacks
+          all: true
+    - name: "Youthful Days"
+      shortEffects: AP cost -15% and ATK +15% when hitcount is >50
+      effects: 
+        - desc: AP cost -15% when hitcount is >50
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Hit Count > 50
+            buffValue: 15      
+        - desc: ATK +10% when hitcount is >50
+          meta:
+            priority: 3
+            buff: ATK
+            buffCondition: Hit Count > 50
+            buffValue: 10
+
+  skills:
+    - name: "Nettlesome Device"
+      picture: Aiming_Device
+      power: ATK x 180%
+      ap: 18
+      maxHits: 1
+    - name: "Nettlesome Laser"
+      picture: Laser_Blast
+      power: ATK x 220%
+      ap: 20
+      maxHits: 3
+    - name: "Nettlesome Bullet"
+      picture: Gravity_Bullet
+      element: Dark
+      power: ATK x 270%
+      ap: 24
+      maxHits: 10
+    - name: "Nettlesome Burst"
+      picture: Burst_Emission
+      power: ATK x 580%
+      ap: 38
+      maxHits: 6
+      
+  rush:
+    name: "Ethereal Energy Burst"
+    picture: Ethereal_Burst_Emission_Bridal_Maria
+    element: Light
+    effects: 
+      - desc: ATK +60%
+        duration: 20
+        meta:
+          priority: 1
+          buff: ATK
+          buffValue: 60
+    power: ATK x 4000%
+    maxHits: 9
 
 
 - name: Nel Zelpher
@@ -578,7 +686,7 @@
             buff: ATK Damage
             buffCondition: Skill Chain 3+
             buffValue: 80
-    - name: "Absolute Loyalty"
+    - name: "Unwavering Devotion"
       effects: 
         - desc: Damage dealt +30%
           all: true
@@ -593,7 +701,7 @@
             buff: Enemy ATK Damage Taken
             buffCondition: Poisoned
             buffValue: 15
-    - name: "Commander of Demon Sealing Division [Darkness]"
+    - name: "Head of the Secret Legion"
       shortEffects: ATK +30% and HIT +10%
       effects: 
         - desc: ATK +30%
@@ -689,6 +797,7 @@
       *Normal>Aqua>Sylvan>Aqua xn - large enemies*
       *Normal>Dash>Normal>Dash xn - Poshrush deadly poison procs*
       *Sylvan>Terror>Sylvan>Terror or Sylvan spam - Unawakened/EN*
+
 
 
 - name: Emmerson T. Kenny
@@ -1111,7 +1220,9 @@
             buff: Damage Taken Reduction
             buffCondition: When Holding Aggro
             buffValue: 30
+        - desc: No flinching when targeted by enemy            
     - name: "A Childhood Friend's Understanding"
+      shortEffects: Damage taken -100% when dodging (Party/0.5s), and taunt +2
       effects: 
         - desc: Damage taken -100% when dodging (0.5s)
           all: true
@@ -1123,7 +1234,7 @@
         - desc: Taunt +2            
     - name: "Charming Smile"
       effects: 
-        - desc: Evasion speed and distance +100%
+        - desc: Evasion speed & distance +100%
         - desc: Evasion possible during air attacks             
         - desc: ATK damage dealt +50% when skill chain is >3
           meta:
@@ -1467,6 +1578,83 @@
     maxHits: 2
 
 
+- name: Silmeria Valkyrie
+  cat: jp
+  picture: Silmeria
+  weapon: bow
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15540
+    atk: 2494
+    int: 1601
+    def: 1523
+    hit: 1253
+    grd: 931
+
+  talents:
+    - name: "Divine Arrow Burst"
+      effects: 
+        - desc: Damage dealt +30%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 30  
+    - name: "Battle Maiden's Might"
+      effects: 
+        - desc: Single target damage +10%
+          all: true
+          meta:
+            priority: 1
+            buff: Single Target Damage
+            buffValue: 10
+    - name: "Einherjar's Last Hope"
+      effects: 
+        - desc: Hitcount timer +2 seconds
+          all: true
+    - name: "Yggdrasil's Fortune"
+      effects: 
+        - desc: Recovers 3% of max HP every 3 seconds
+        
+  skills:
+    - name: "Binding Distortion"
+      picture: Binding_Distortion
+      element: Dark
+      power: ATK x 190%
+      ap: 20
+      maxHits: 5
+    - name: "Volcanic Volley"
+      picture: Heavenly_Flight
+      power: ATK x 400%
+      ap: 33
+      maxHits: 8
+    - name: "Wave Motion"
+      picture: Wave_Motion
+      power: ATK x 440%
+      ap: 33
+      maxHits: 2
+    - name: "Homing Pigeons"
+      picture: Savage_Sparrows
+      power: ATK x 290%
+      ap: 26
+      maxHits: 9
+      
+  rush:
+    name: "Nibelung Valesti"
+    picture: Nibelung_Valesti_Silmeria
+    effects: 
+      - desc: Critical hit chance +30%
+        duration: 60
+        meta:
+          priority: 4
+          buff: Crit Rate
+          buffValue: 30
+    power: ATK x 3500%
+    maxHits: 8
+
 - name: Silmeria Valkyrie (Awakened)
   cat: jp
   rating: 1
@@ -1487,7 +1675,7 @@
 
   talents:
     - name: "Divine Arrow Burst"
-      shortEffects: Damage dealt +30%, and +35%/+40%/+45% when hitcount is >100/>150/>200 (All Party)
+      shortEffects: Damage dealt +30%, and damage dealt +35%/+40%/+45% when hitcount is >100/>150/>200 (Party)
       effects: 
         - desc: Damage dealt +30%
           all: true
@@ -1532,7 +1720,7 @@
       effects: 
         - desc: Recovers 5% of max HP every 5 seconds
           all: true
-    - name: "A Goddess Close to Mortals"
+    - name: "Goddess of Philanthropy"
       shortEffects: AP cost -10%/-20%/-30% when hitcount is >50/>100/>150
       effects:
         - desc: AP cost -10% when hitcount is >50
@@ -1553,7 +1741,7 @@
             buff: AP Cost Reduction
             buffCondition: Hit Count > 150
             buffValue: 30
-    - name: "Object Leading"
+    - name: "Object Reading"
       shortEffects: ATK +15% and HP +15%
       effects: 
         - desc: ATK +15%
@@ -1693,7 +1881,7 @@
             buff: Damage
             buffValue: 40
         - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
-          all: Close Range Weapons
+          all: Short Range Weapons
     - name: "Grandfather's Will"
       effects: 
         - desc: Nullifies silence for 180 seconds
@@ -2013,7 +2201,7 @@
     grd: 931
 
   talents:
-    - name: "Awakening on Muah"
+    - name: "Moore's Awakening"
       effects: 
         - desc: Damage dealt +30%
           all: true
@@ -2021,7 +2209,6 @@
             priority: 1
             buff: Damage
             buffValue: 30
-        - desc: Taunt +1
     - name: "Dawn of the Terran Alliance"
       effects: 
         - desc: Damage dealt +45% when HP is 100%
@@ -2041,9 +2228,10 @@
             buffValue: 15
         - desc: No flinching when taking damage of 10% of max HP or less
           all: true
-    - name: "Determined Resolve"
+    - name: "Tenaciousness"
       effects:
         - desc: HP +30%
+        - desc: Taunt +1        
   
   skills:
     - name: "Heavenly Flight"
@@ -2302,12 +2490,12 @@
             priority: 1
             buff: Crit Rate
             buffValue: 20
-        - desc: Critical damage dealt +30%
+        - desc: Critical damage dealt +20%
           all: true
           meta:
             priority: 1
             buff: Crit Damage
-            buffValue: 30
+            buffValue: 20
     - name: "Never Ending Chivalry"
       shortEffects: Critical hit chance and critical damage dealt +30%/+40% when hitcount is >100/>200 (Party)
       effects: 
@@ -2416,7 +2604,7 @@
     grd: 924
 
   talents:
-    - name: "Yearning Feelings"
+    - name: "Yearning"
       effects:
         - desc: Damage dealt +40%
           all: true
@@ -2430,7 +2618,7 @@
             priority: 1
             buff: Single Target Damage
             buffValue: 15
-    - name: "Earnest Learning of Love"
+    - name: "Earnest Love of Learning"
       effects: 
         - desc: 90% chance of surviving a lethal attack when at 30% of max HP or more
           all: Long Range Weapons
@@ -2440,7 +2628,7 @@
             priority: 1
             buff: Stun Rate
             buffValue: 15
-    - name: "The Power to Connect"
+    - name: "Bridge Building"
       effects:
         - desc: Normal attack AP recovery +100% at short range
           all: true
@@ -2454,7 +2642,7 @@
             priority: 1
             buff: AP Cost Reduction
             buffValue: 15
-    - name: "Unconcealable Jealousy"
+    - name: "Obvious Jealousy"
       effects: 
         - desc: ATK +15%
           meta:
@@ -2575,10 +2763,11 @@
             buff: AP Cost Reduction
             buffCondition: Skill Chain 3+
             buffValue: 30
-        - desc: ATK damage dealt +40%
+        - desc: ATK damage dealt +40% when skill chain is >3
           meta:
             priority: 4
             buff: ATK Damage
+            buffCondition: Skill Chain 3+
             buffValue: 40
 
   skills:
@@ -2673,7 +2862,7 @@
             priority: 4
             buff: Damage Taken Reduction
             buffValue: 20
-        - desc: AP cost -30% when skill chain >3
+        - desc: AP cost -30% when skill chain is >3
           meta:
             priority: 4
             buff: AP Cost Reduction
@@ -2837,7 +3026,7 @@
     maxHits: 3
 
 
-- name: Precis Neumann (Bridal)
+- name: Precis F. Neumann (Bridal)
   cat: jp
   rating: 4
   picture: Bridal_Precis
@@ -2872,34 +3061,22 @@
         - desc: Nullifies charge assault critical damage penalty
     - name: "Perfect Makeup"
       effects: 
-        - desc: Critical hit chance +30% when hitcount is >100
-          all: true
+        - desc: Critical hit chance and critical damage dealt +30% when hitcount is >100
           meta:
             priority: 1
-            buff: Crit Rate
-            buffCondition: Hit Count > 100
+            buffs:
+              - Critical Rate
+              - Critical Damage
             buffValue: 30
-        - desc: Critical hit chance +45% when hitcount is >150
-          all: true
-          meta:
-            priority: 1
-            buff: Crit Rate
-            buffCondition: Hit Count > 150
-            buffValue: 45
-        - desc: Critical damage dealt +30% when hitcount is >100
-          all: true
-          meta:
-            priority: 1
-            buff: Crit Damage
             buffCondition: Hit Count > 100
-            buffValue: 30
-        - desc: Critical damage dealt +45% when hitcount is >150
-          all: true
+        - desc: Critical hit chance and critical damage dealt +45% when hitcount is >150
           meta:
             priority: 1
-            buff: Crit Damage
-            buffCondition: Hit Count > 150
+            buffs:
+              - Critical Rate
+              - Critical Damage
             buffValue: 45
+            buffCondition: Hit Count > 150            
     - name: "Creator of Smiles"
       effects: 
         - desc: Hitcount timer +2 seconds
@@ -3111,13 +3288,13 @@
             buffValue: 20
     - name: "Make-Up"
       effects: 
-        - desc: Damage taken -20% at short range
+        - desc: Damage taken -15% at short range
           all: true
           meta:
             priority: 1
             buff: Damage Taken Reduction
             buffCondition: Short Range
-            buffValue: 20
+            buffValue: 15
     - name: "Farewell to the Past"
       effects:
         - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
@@ -3140,7 +3317,7 @@
             priority: 1
             buff: Crit Damage
             buffCondition: Skill Chain 3+
-            buffValue: 20       
+            buffValue: 20               
         - desc: Evasion possible during air attacks
         
   skills:
@@ -3168,7 +3345,7 @@
       picture: Bullet_Barrage
       power: ATK x 680%
       ap: 27
-      maxHits: 3
+      maxHits: 6
       
   rush:
     name: "Invincible Over"
@@ -3213,44 +3390,29 @@
   talents:
     - name: "Chief Researcher"
       effects: 
-        - desc: ATK damage dealt +40%
-          all: true
+        - desc: ATK/INT damage dealt +40%
           meta:
             priority: 1
-            buff: ATK Damage
-            buffValue: 40
-        - desc: ATK damage taken +10% when hitcount is >100
+            buffs:
+              - ATK Damage
+              - INT Damage
+            buffValue: 40         
+        - desc: ATK/INT damage taken +10% when hitcount is >100
           all: Enemies
           meta:
             priority: 1
-            buff: Enemy ATK Damage Taken
+            buffs:
+              - Enemy ATK Damage Taken
+              - Enemy INT Damage Taken
             buffCondition: Hit Count > 100
             buffValue: 10
-        - desc: ATK damage taken +15% when hitcount is >200
+        - desc: ATK/INT damage taken +15% when hitcount is >200
           all: Enemies
           meta:
             priority: 1
-            buff: Enemy ATK Damage Taken
-            buffCondition: Hit Count > 200
-            buffValue: 15
-        - desc: INT damage dealt +40%
-          all: true
-          meta:
-            priority: 1
-            buff: INT Damage
-            buffValue: 40
-        - desc: INT damage taken +10% when hitcount is >100
-          all: Enemies
-          meta:
-            priority: 1
-            buff: Enemy INT Damage Taken
-            buffCondition: Hit Count > 100
-            buffValue: 10
-        - desc: INT damage taken +15% when hitcount is >200
-          all: Enemies
-          meta:
-            priority: 1
-            buff: Enemy INT Damage Taken
+            buffs:
+              - Enemy ATK Damage Taken
+              - Enemy INT Damage Taken
             buffCondition: Hit Count > 200
             buffValue: 15
     - name: "Lifesaving Moonlight"
@@ -3259,11 +3421,11 @@
           all: true
     - name: "Secret Physical Examination"
       effects: 
-        - desc: Recovers +4% of max HP every 3 seconds
+        - desc: Recovers 4% of max HP every 3 seconds
           all: true
     - name: "Barely Acceptable Nurse Outfit"
       effects: 
-        - desc: No flinching while attacking
+        - desc: No flinching when attacking
         - desc: Damage taken -30%
           meta:
             priority: 4
@@ -3632,7 +3794,7 @@
     power: INT x 4000%
     maxHits: 8
 
-- name: Precis F Neumann (Operator)
+- name: Precis F. Neumann (Operator)
   cat: jp
   rating: 8
   picture: Operator_Precis
@@ -3653,20 +3815,20 @@
   talents:
     - name: "Machine of Confidence"
       effects: 
-        - desc: Damage +35%
+        - desc: Damage dealt +35%
           all: true
           meta:
             priority: 1
             buff: Damage
             buffValue: 35
-        - desc: Damage +55% when hitcount is >100
+        - desc: Damage dealt +55% when hitcount is >100
           all: true
           meta:
             priority: 1
             buff: Damage
             buffCondition: Hit Count > 100
             buffValue: 55
-        - desc: Damage +75% when hitcount is >250
+        - desc: Damage dealt +75% when hitcount is >250
           all: true
           meta:
             priority: 1
@@ -3700,6 +3862,7 @@
             buff: Damage Taken Reduction
             buffValue: 30
     - name: "Friend to all Machinery"
+      shortEffects: ATK +20% and HP +20%
       effects: 
         - desc: HP/ATK +20%
           meta:
@@ -3895,10 +4058,9 @@
   skills:
     - name: "Stardust Aim"
       picture: Stardust_Aim
-      element: Light
       power: ATK x 390%
       ap: 18
-      maxHits: 5
+      maxHits: 4
     - name: "Hard Knocker"
       picture: Bullet_Barrage
       power: ATK x 450%
@@ -3946,12 +4108,12 @@
   star: 5
 
   stats:
-    hp: 14625
-    atk: 2618
-    int: 1633
-    def: 1790
-    hit: 1320
-    grd: 995
+    hp: 13965
+    atk: 2508
+    int: 1563
+    def: 1720
+    hit: 1260
+    grd: 945
 
   talents:
     - name: "Haneru Dance Furisode"
@@ -3989,7 +4151,7 @@
         - desc: 90% chance of surviving a lethal attack when at 10% of max HP or more
     - name: "Everyone, Let's be Friends!"
       effects: 
-        - desc: No flinching while attacking
+        - desc: No flinching when attacking
         - desc: Damage taken -40%
           meta:
             priority: 1
@@ -4015,6 +4177,7 @@
       maxHits: 4
     - name: "Gravity Shell"
       picture: Gravity_Shell
+      element: Dark
       power: ATK x 280%
       ap: 21
       maxHits: 8
@@ -4049,13 +4212,12 @@
   star: 5
 
   stats:
-    hp: 14520
-    atk: 3094
-    int: 1671
-    def: 1790
-    hit: 1320
-    grd: 988
-    ap: 120
+    hp: 13860
+    atk: 2962
+    int: 1601
+    def: 1720
+    hit: 1260
+    grd: 938
 
   talents:
     - name: "Motivation for Research"
@@ -4127,7 +4289,7 @@
       maxHits: 11
     - name: "Crimson Squall"
       picture: Crimson_Squall_II
-      power: ATK x 1250%
+      power: ATK x 1240%
       ap: 42
       maxHits: 9
       
@@ -4187,7 +4349,9 @@
     - name: "First Time Cooking"
       effects: 
         - desc: AP recovery +200% at short range
+          all: true
         - desc: AP recovery +100% at long range
+          all: true
     - name: "Foot Race Date"
       shortEffects: Rush combo damage +40% (Party/180s) and evasion AP cost -50% (Party)
       effects: 
@@ -4255,7 +4419,7 @@
   talents:
     - name: "Pride of Morse"
       effects: 
-        - desc: Damage dealt +30%
+        - desc: Damage dealt +35%
           all: true
           meta:
             priority: 1
@@ -4277,7 +4441,7 @@
             buffValue: 75
     - name: "Observer of the Daft Star System"
       effects: 
-        - desc: AP recovers while using skills
+        - desc: Recovers AP for all allies when using skills
     - name: "The Feeling of Obscurity"
       effects: 
         - desc: Additional hit that deals 5% more damage when using skills
@@ -4300,7 +4464,7 @@
               - GRD
             buffCondition: Hit Count > 100
             buffValue: 20
-        - desc: Damage taken -100% on perfect dodge(0.5s)
+        - desc: Damage taken -100% on perfect dodge (0.5s)
           duration: 0.5
           meta:
             priority: 1
@@ -4392,7 +4556,7 @@
             buff: AP Cost Reduction
             buffCondition: Not Behind Target
             buffValue: 15
-        - desc: AP cost -30% when HP is 100% and not behind target
+        - desc: AP cost -30% when not behind target and HP is 100%
           all: true
           meta:
             priority: 1
@@ -4407,7 +4571,7 @@
             buff: Crit Rate
             buffCondition: HP is 100%
             buffValue: 50
-        - desc: Critical damage dealt +50%
+        - desc: Critical damage dealt +50% when HP is 100%
           meta:
             priority: 1
             buff: Crit Damage
@@ -4419,6 +4583,7 @@
             buffCondition: Perfect Dodge
             buffValue: 100
     - name: "Feelings that Connect"
+      shortEffects: ATK +20% and HIT +10%
       effects: 
         - desc: ATK +20%
           meta:
@@ -4596,28 +4761,28 @@
 
   talents:
     - name: Believe that We'll be Reunited
-      shortEffects: ATK/INT Damage +40%, and ATK/INT Damage +60% when hitcount >200 (Party)
+      shortEffects: ATK/INT damage dealt +40%, and ATK/INT damage dealt +60% when hitcount is >200 (Party)
       effects: 
-        - desc: ATK Damage +40%
+        - desc: ATK damage dealt +40%
           all: true
           meta:
             priority: 1
             buff: ATK Damage
             buffValue: 40
-        - desc: INT Damage +40%
+        - desc: INT damage dealt +40%
           all: true
           meta:
             priority: 1
             buff: INT Damage
             buffValue: 40
-        - desc: ATK Damage +60% when hitcount is >200
+        - desc: ATK damage dealt +60% when hitcount is >200
           all: true
           meta:
             priority: 1
             buff: ATK Damage
             buffCondition: Hit Count > 200
             buffValue: 60
-        - desc: INT Damage +60% when hitcount is >200
+        - desc: INT damage dealt +60% when hitcount is >200
           all: true
           meta:
             priority: 1
@@ -4640,7 +4805,6 @@
         - desc: Rush gauge fills by 3% every 3 seconds
           all: true
     - name: I Want to Protect Everyone
-      shortEffects: Recovers AP for allies when using Line Gunning and Platoon Blast | ATK/INT/DEF/HIT/GRD +30% when hitcount >300
       effects: 
         - desc: Recovers AP for allies when using Line Gunning and Platoon Blast
         - desc: ATK/INT/DEF/HIT/GRD +30% when hitcount is >300
@@ -4713,7 +4877,7 @@
   talents:
     - name: Sound Judgement
       effects: 
-        - desc: INT Damage Taken -40%
+        - desc: INT damage taken -40%
           all: true
           meta:
             priority: 1 
@@ -4721,19 +4885,19 @@
             buffValue: 40
     - name: Greater Single-Shot
       effects: 
-        - desc: Damage dealt +40%
+        - desc: Damage dealt +30%
           all: true
           meta:
             priority: 1
             buff: Damage
             buffValue: 40 
-        - desc: Damage dealt +50% when hitcount >100
+        - desc: Damage dealt +50% when hitcount is >100
           all: true
           meta:
             priority: 1
             buff: Damage
             buffValue: 50
-        - desc: Damage dealt +70% when hitcount >200
+        - desc: Damage dealt +70% when hitcount is >200
           all: true
           meta:
             priority: 1
@@ -4746,18 +4910,18 @@
     - name: Descendant of Muah 
       effects: 
         - desc: 90% chance of surviving a lethal attack when at 10% of max HP or more
-          all: Self, All Attacker, All Defender
+          all: Attacker/Defender/Self
     - name: Daughter of the Saionji Family
       effects: 
-        - desc: Damage taken -100% when dodging (Self/0.5s)
+        - desc: Damage taken -100% when dodging (0.5s)
           all: false
         - desc: Movement speed +30%
           all: false
-        - desc: AP recovery when moving 
+        - desc: AP recovery increases when moving 
     - name: Promise Made Under the Stars
       effects: 
         - desc: Evasion possible during air attacks
-        - desc: AP cost -40% when skill chain >3
+        - desc: AP cost -40% when skill chain is >3
           all: false
           meta:
             priority: 1
@@ -4833,20 +4997,20 @@
       effects: 
         - desc: Hitcount timer +1 second
           all: true
-        - desc: Damage +35%
+        - desc: Damage dealt +35%
           all: true
           meta:
             priority: 1
             buff: Damage
             buffValue: 35
-        - desc: Damage +55% when hitcount >100
+        - desc: Damage dealt +55% when hitcount is >100
           all: true
           meta:
             priority: 1
             buff: Damage
             buffCondition: Hit Count > 100
             buffValue: 55
-        - desc: Damage +75% when hitcount >250
+        - desc: Damage dealt +75% when hitcount is >250
           all: true
           meta:
             priority: 1
@@ -4863,9 +5027,9 @@
             priority: 1
             buff: Damage Taken Reduction 
             buffValue: 20
-        - desc: No flinching when skill chain >3
+        - desc: No flinching when skill chain is >3
           all: true
-        - desc: Damage Taken -50% when skill chain >3
+        - desc: Damage taken -50% when skill chain is >3
           all: true
           meta:
             priority: 1
@@ -4873,22 +5037,21 @@
             buffCondition: Skill Chain > 3
             buffValue: 50
     - name: Love Dilemma
+      shortEffects: Recovers 15% of max HP every 3 seconds for all allies on perfect dodge (20s)
       effects: 
-        - desc: Recovers 15% HP every 3 seconds on perfect dodge (Party/20s)
-          all: true
+        - desc: Recovers 15% of max HP every 3 seconds for all allies on perfect dodge (20s)
     - name: VALENTINE
       effects: 
-        - desc: AP Recovery +100% on perfect dodge (Self/0.5s)
+        - desc: AP recovery +100%
           all: false
           meta:
             priority: 1
             buff: AP Recovery
             buffCondition: Perfect Dodge
             buffValue: 100
-        - desc: Evasion rate +100% on perfect dodge (Self/0.5s)
+        - desc: Evasion rate & distance +100%
           all: false
-        - desc: Evasion distance +100% on perfect dodge (Self/0.5s)
-        - desc: Damage taken -100% on perfect dodge (Self/0.5s)
+        - desc: Damage taken -100% on perfect dodge (0.5s)
           all: false
           meta:
             priority: 1
@@ -4932,3 +5095,426 @@
           buffValue: 50
     power: ATK x 4500%
     maxHits: 2  
+    
+    
+- name: Anne Patriceani (Official)
+  cat: jp
+  picture: Federation_Anne
+  weapon: gun
+  ace: true
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 2494
+    int: 1563
+    def: 1549
+    hit: 1239
+    grd: 938
+
+  talents:
+    - name: "Flawless Support"
+      effects: 
+      - desc: Elemental damage dealt +30%
+        all: true
+        meta:
+          priority: 1
+          buff: Elemental Damage
+          buffValue: 30
+    - name: "Headstrong"
+      effects: 
+      - desc: Single target damage +15% at short range
+        all: true
+        meta:
+          priority: 3
+          buff: Single Target Damage
+          buffCondition: Short Range
+          buffValue: 15
+    - name: "Undeveloped Planet Memories"
+      effects: 
+        - desc: AP recovery +50% at long range
+          all: true
+          meta:
+            priority: 3
+            buff: AP Recovery
+            buffCondition: Long Range
+            buffValue: 50
+    - name: "Cat Shangri-La"
+      effects: 
+        - desc: AP cost -30% when skill chain is >3
+          meta:
+            priority: 3
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain 3+
+            buffValue: 30
+        
+  skills:
+    - name: "Heavy Bullet Barrage"
+      picture: Bullet_Barrage
+      power: ATK x 400%
+      ap: 27
+      maxHits: 6
+    - name: "Divebomb"
+      picture: Reverse_Trigger
+      power: ATK x 180%
+      ap: 17
+      maxHits: 3
+      highlight: true
+    - name: "Skyline Spray"
+      picture: Skyline_Spray
+      power: ATK x 200%
+      ap: 19
+      maxHits: 3
+      highlight: true
+    - name: "Death From Above"
+      picture: Locus_Bullet
+      power: ATK x 520%
+      ap: 27
+      maxHits: 8
+      
+  rush:
+    name: "Smoking Gun"
+    picture: Gunsmoke_Arts_Federation_Anne
+    element: Fire
+    effects: 
+      - desc: Critical hit chance +50%
+        all: true
+        duration: 20
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 50
+    power: ATK x 3500%
+    maxHits: 19    
+
+
+- name: Victor Oakville (Halloween)
+  cat: jp
+  picture: Vampire_Victor
+  weapon: dagger
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 14280
+    atk: 2494
+    int: 1523
+    def: 1799
+    hit: 1232
+    grd: 924
+
+  talents:
+    - name: "Bloodstained Fangs"
+      effects: 
+        - desc: Absorbs 15% of damage dealt by normal attacks as HP
+          all: true
+    - name: "Crimson Cup II"
+      effects: 
+        - desc: Damage dealt +40%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 40
+        - desc: Elemental damage dealt +15% when HP is 100%
+          all: true
+          meta:
+            priority: 1
+            buff: Elemental Damage
+            buffCondition: HP is 100%
+            buffValue: 15
+    - name: "Demon Blade"
+      effects: 
+        - desc: Absorbs 3% of damage dealt by skills as HP
+    - name: "Deep Mourning"
+      effects: 
+        - desc: AP cost -40% when skill chain is >3
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain 3+
+            buffValue: 40
+        - desc: ATK +30% when skill chain is >3
+          meta:
+            priority: 4
+            buff: ATK
+            buffCondition: Skill Chain 3+
+            buffValue: 30
+        
+  skills:
+    - name: "Flying Cleave"
+      picture: Guillotine
+      power: ATK x 170%
+      ap: 15
+      maxHits: 2
+    - name: "Gyrfalcon Blade"
+      picture: Sylvan_Shot
+      power: ATK x 150%
+      ap: 14
+      maxHits: 8
+    - name: "Demonic Shockwave"
+      picture: Focused_Shockwave
+      power: ATK x 380%
+      ap: 27
+      maxHits: 5
+    - name: "Dragon's Might"
+      picture: Falling_Dragon
+      element: Dark
+      power: ATK x 420%
+      ap: 28
+      maxHits: 3
+      
+  rush:
+    name: "Thousand-Beast Demon"
+    picture: Millenium_Imprisoned_Devil_HW_Victor
+    shortEffects: Recovers 40% of max HP and single target damage +40% (Party/20s)
+    effects: 
+      - desc: Recovers 40% of max HP
+        all: true
+      - desc: Single target damage +40%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Single Target Damage
+          buffValue: 40
+    power: ATK x 3500%
+    maxHits: 19
+
+- name: Nel Zelpher (Bridal)
+  cat: jp
+  picture: Bridal_Nel
+  weapon: dagger
+  ace: true
+  limited: True
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 2482
+    int: 1549
+    def: 1589
+    hit: 1246
+    grd: 924
+
+  talents:
+     - name: "Crimson Blossom Flurry"
+       shortEffects: Critical hit chance +10%/+20%/+30% when hitcount is >100/>150/>200 (Party)
+       effects: 
+        - desc: Critical hit chance +10% when hitcount is >100
+          all: true
+          meta:
+            priority: 3
+            buff: Crit Rate
+            buffCondition: Hit Count > 100
+            buffValue: 10
+        - desc: Critical hit chance +20% when hitcount is >150
+          all: true
+          meta:
+            priority: 3
+            buff: Crit Rate
+            buffCondition: Hit Count > 150
+            buffValue: 20
+        - desc: Critical hit chance +30% when hitcount is >200
+          all: true
+          meta:
+            priority: 3
+            buff: Crit Rate
+            buffCondition: Hit Count > 200
+            buffValue: 30
+     - name: "Sincere Devotion"
+       shortEffects: Critical damage dealt +10%/+20%/+30% when hitcount is >100/>150/>200 (Party)
+       effects: 
+        - desc: Critical damage dealt +10% when hitcount is >100
+          all: true
+          meta:
+            priority: 3
+            buff: Crit Damage
+            buffCondition: Hit Count > 100
+            buffValue: 10
+        - desc: Critical damage dealt +20% when hitcount is >150
+          all: true
+          meta:
+            priority: 3
+            buff: Crit Damage
+            buffCondition: Hit Count > 150
+            buffValue: 20
+        - desc: Critical damage dealt +30% when hitcount is >200
+          all: true
+          meta:
+            priority: 3
+            buff: Crit Damage
+            buffCondition: Hit Count > 200
+            buffValue: 30
+     - name: "A Proper Lady"
+       effects: 
+        - desc: Hitcount timer +3 seconds
+          all: true
+        - desc: Single target damage +20%
+          all: true
+          meta:
+            priority: 1
+            buff: Single Target Damage
+            buffValue: 20          
+        - desc: ATK +30% when using charge assault
+          meta:
+            priority: 3
+            buff: ATK
+            buffCondition: Charge Assault
+            buffValue: 30
+     - name: "Well-Concealed Secrets"
+       effects: 
+        - desc: No flinching when taking damage of 10% of max HP or less
+        - desc: AP cost -10%
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 10
+        - desc: Nullifies charge assault critical damage penalty     
+
+  skills:
+    - name: "Blooming Shot"
+      picture: Sylvan_Shot
+      power: ATK x 200%
+      ap: 20
+      maxHits: 8
+    - name: "Bridal Guillotine"
+      picture: Guillotine
+      power: ATK x 290%
+      ap: 26
+      maxHits: 4
+    - name: "Blooming Sword"
+      picture: Dancing_Sword
+      power: ATK x 460%
+      ap: 35
+      maxHits: 7
+    - name: "Flower Wheel"
+      picture: Flower_Wheel
+      power: ATK x 340%
+      ap: 28
+      maxHits: 12
+      
+  rush:
+    name: "Bouquet of Flowers"
+    picture: Pirouette_of_the_First_Spring_Bridal_Nel
+    effects: 
+      - desc: ATK damage dealt +40%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: ATK Damage
+          buffValue: 40
+    power: ATK x 4000%
+    maxHits: 6
+    
+    
+- name: Lymle Lemuri Phi (Official)
+  cat: jp
+  picture: Federation_Lymle
+  weapon: gun
+  limited: true
+  star: 5
+
+  stats:
+    hp: 14175
+    atk: 1418
+    int: 2153
+    def: 1405
+    hit: 1148
+    grd: 840
+
+  talents:
+    - name: "Amused Feelings"
+      shortEffects: Damage dealt +35% (Healers/Invokers/Self)
+      effects: 
+        - desc: Damage dealt +35%
+          meta:
+            priority: 4
+            buff: Damage
+            buffValue: 35
+        - desc: Damage dealt +35%
+          all: Invokers
+          meta:
+            priority: 1
+            buff: Damage
+            buffRole: invoker
+            buffValue: 35
+        - desc: Damage +35%
+          all: Healers
+          meta:
+            priority: 1
+            buff: Damage
+            buffRole: healer
+            buffValue: 35
+    - name: "Unfinished Business"
+      effects: 
+        - desc: Damage dealt +25%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 25
+    - name: "Obscure Breath"
+      effects: 
+        - desc: Symbology cast time -100%
+          meta:
+            priority: 4
+            buff: Cast Time Reduction
+            buffValue: 100
+    - name: "Timebender"
+      effects: 
+        - desc: Symbology cast time -20%
+          all: true
+          meta:
+            priority: 1
+            buff: Cast Time Reduction
+            buffValue: 20
+        
+  skills:
+    - name: "Smart Aiming Device"
+      picture: Aiming_Device
+      power: INT x 200%
+      ap: 20
+      maxHits: 1
+    - name: "Smart Gravity Bullet"
+      picture: Gravity_Bullet
+      element: Dark
+      power: INT x 230%
+      ap: 24
+      maxHits: 12
+    - name: "Plunging Fire Bolts"
+      picture: Fire_Bolts
+      element: Fire
+      power: INT x 200%
+      ap: 20
+      maxHits: 6
+    - name: "Wind Blade"
+      picture: Wind_Blade
+      element: Wind
+      power: INT x 190%
+      ap: 20
+      maxHits: 2
+      
+  rush:
+    name: "Cerberushot"
+    picture: Cerberushot_Federation_Lymle
+    element: Fire
+    shortEffects: Damage dealt +60% (Invokers/Healers/Self/20s)
+    effects: 
+      - desc: Damage dealt +60%
+        duration: 20
+        meta:
+          priority: 4
+          buff: Damage
+          buffValue: 60
+      - desc: Damage dealt +60%
+        duration: 20
+        all: Invoker
+        meta:
+          priority: 1
+          buff: Damage
+          buffValue: 60
+    power: INT x 2500%
+    maxHits: 5    
