@@ -2,7 +2,7 @@
 - name: Blood Valkyrie
   icon: currency-coin-m1
   cat: gl
-  currency: Valkyrie Coins
+  currency: Blood Valkyrie Coin
   aliases:
     - blood
     - valkyrie
@@ -10,8 +10,12 @@
     - rerun
 
   items:
+    - name: Blood Valkyrie M2 Coin
+      stock: 10
+      cost: 5000
+      type: currency-coin-m2
     - name: Slayer of Divine Beings
-      stock: 2
+      stock: 3
       cost: 2000
       type: ohs
     - name: Slayer of Divine Beings
@@ -23,25 +27,58 @@
       cost: 2000
       type: bow
     - name: Shiny Rupture
-      stock: 2
+      stock: 3
       cost: 4000
       type: bow
     - name: 4-5* Char. Ticket
-      stock: 3
+      stock: 4
       cost: 4000
       type: draw-ticket-character
     - name: 5* Weapon Ticket
-      stock: 1
+      stock: 2
       cost: 3000
       type: draw-ticket-weapon
+    - name: 4* Weapon Ticket
+      stock: 3
+      cost: 2000
+      type: draw-ticket-weapon
+    - name: Ra. Platinum Prism
+      stock: 0
+      cost: 400
+      type: improvement-prism
+    - name: "Plat. Hammer: Enhance"
+      stock: 10
+      cost: 400
+      type: improvement-hammer
+    - name: "Gold Hammer: Enhance"
+      stock: 10
+      cost: 200
+      type: improvement-hammer    
+    - name: "Silver Hammer: Enhance"
+      stock: 10
+      cost: 150
+      type: improvement-hammer  
     - name: Rainbow Crystal
       stock: 3
       cost: 2500
       type: improvement-crystal
+    - name: Platinum Ingot
+      stock: 10
+      cost: 1000
+      type: currency-ingot     
+    - name: Mission Ticket
+      stock: 5
+      cost: 400
+      type: draw-ticket-mission
     - name: Barrier Blaster
       stock: 3
       cost: 2500
       type: misc-barrierblaster
+      
+    - name: Anti-silence Amulet IV
+      stock: 1
+      cost: 15000
+      type: accessory
       
 
 - name: Interview Data
@@ -98,7 +135,6 @@
       stock: 0
       cost: 200
       type: draw-gacha     
-      
     - name: 5* Weapon Ticket
       stock: 1
       cost: 3000
@@ -183,7 +219,7 @@
     - name: AP Starseed
       stock: 3
       cost: 45
-      type: seed-ap         
+      type: seed-ap        
       
     - name: Pure White Barrette
       stock: 5
