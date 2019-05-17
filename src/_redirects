@@ -2,6 +2,7 @@
 
 /assets/cards/  /assets/cards/index.html 200
 
+/shops/*        /index.html 200
 /stamps/*       /index.html 200
 /characters/*   /index.html 200
 /items/*        /index.html 200

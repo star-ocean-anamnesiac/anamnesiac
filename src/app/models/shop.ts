@@ -9,7 +9,7 @@ export interface ShopItem {
 export interface Shop {
   name: string;
   icon: string;
-  cat: 'gl'|'jp';
+  cat: string;
   currency: string;
   aliases: string[];
   items: ShopItem[];

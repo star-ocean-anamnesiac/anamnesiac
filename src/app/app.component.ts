@@ -186,6 +186,12 @@ export class AppComponent {
       url: '/stamps',
       icon: 'photos'
     });
+
+    this.appPages.push({
+      title: 'Shops',
+      url: '/shops',
+      icon: 'card'
+    });
   }
 
   private watchRouteChanges() {
