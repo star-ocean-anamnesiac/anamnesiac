@@ -1,5 +1,5 @@
 
-- name: Blood Valkyrie
+- name: Blood Valkyrie Coin
   icon: currency-coin-m1
   cat: gl
   currency: Blood Valkyrie Coin
@@ -52,7 +52,7 @@
       cost: 200
       type: improvement-hammer    
     - name: "Silver Hammer: Enhance"
-      stock: 10
+      stock: 20
       cost: 150
       type: improvement-hammer  
     - name: Rainbow Crystal
@@ -68,7 +68,7 @@
       cost: 400
       type: draw-ticket-mission
     - name: Barrier Blaster
-      stock: 3
+      stock: 1
       cost: 2500
       type: misc-barrierblaster
       
@@ -78,7 +78,7 @@
       type: accessory
       
       
-- name: Blood Valkyrie
+- name: Blood Valkyrie M2 Coin
   icon: currency-coin-m2
   cat: gl
   currency: Blood Valkyrie Coin [M2]
@@ -86,10 +86,6 @@
     - blood valk m2
 
   items:
-    - name: Blood Valkyrie M2 Coin
-      stock: 10
-      cost: 5000
-      type: currency-coin-m2
     - name: Slayer of Divine Beings
       stock: 1
       cost: 10
@@ -458,7 +454,7 @@
     - name: L. Limit Breaker
       stock: 1
       cost: 6000
-      type: improvement-limitbreaker
+      type: improvement-limitbreak
     - name: 4-5* Char. Ticket
       stock: 4
       cost: 4000
@@ -621,7 +617,7 @@
     - name: L. Limit Breaker
       stock: 1
       cost: 20
-      type: improvement-limitbreaker
+      type: improvement-limitbreak
     - name: 5* Weapon Ticket
       stock: 2
       cost: 5
