@@ -4,10 +4,7 @@
   cat: gl
   currency: Blood Valkyrie Coin
   aliases:
-    - blood
-    - valkyrie
-    - m1
-    - rerun
+    - blood valk m1
 
   items:
     - name: Blood Valkyrie M2 Coin
@@ -85,11 +82,7 @@
   icon: currency-coin-m2
   cat: gl
   currency: Blood Valkyrie Coin [M2]
-  aliases:
-    - blood
-    - valkyrie
-    - m2
-    - rerun
+    - blood valk m2
 
   items:
     - name: Blood Valkyrie M2 Coin
@@ -139,13 +132,10 @@
   cat: gl
   currency: Interview Data
   aliases:
-    - interview
-    - data
     - gleaming
     - simulacrum
-    - shine
+    - shine totem
     - totem
-    - m1
 
   items:
     - name: Jingu-Style Secret Fist "White Whale"
@@ -227,17 +217,10 @@
   cat: gl
   currency: Valkyrie Coin [Blue]
   aliases:
-    - valkyrie
-    - vp2
     - lezard
-    - lezard valkyrie
-    - valkyrie lezard
-    - valkyrie profile
-    - m2
-    - m3
 
   items:
-    - name: Magic Crystal x 100
+    - name: Magic Crystalx 100
       stock: 0
       cost: 1
       type: draw-gacha  
@@ -297,13 +280,9 @@
     - rhino
     - ballistic rhino
     - gandar
-    - valkyrie profile
-    - vp2
-    - m1
-    - m2
 
   items:
-    - name: Magic Crystal x 100
+    - name: Magic Crystalx 100
       stock: 0
       cost: 1
       type: draw-gacha  
@@ -352,8 +331,6 @@
   aliases:
     - jie
     - revorse
-    - m1
-    - rerun
 
   items:
     - name: Golden-bolt Destroyers
@@ -457,10 +434,8 @@
   currency: Simulator Coin
   aliases:
     - simulator
-    - hell
+    - hell siren
     - siren
-    - m1
-    - rerun
 
   items:
     - name: Sacred Tear
@@ -547,9 +522,8 @@
   cat: gl
   currency: Michael Coin
   aliases:
-    - michael
-    - m1
-    - rerun
+    - michael m1
+    - mike m1
 
   items:
     - name: Michael M2 Coin
@@ -631,9 +605,8 @@
   cat: gl
   currency: Michael M2 Coin
   aliases:
-    - michael
-    - m2
-    - rerun
+    - michael m2
+    - mike m2
 
   items:
     - name: Knuckles of Hope
@@ -671,4 +644,4 @@
     - name: "Gold Hammer: Enhance"
       stock: 0
       cost: 3
-      type: improvement-hammer    
+      type: improvement-hammer
