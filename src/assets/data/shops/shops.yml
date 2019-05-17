@@ -82,6 +82,7 @@
   icon: currency-coin-m2
   cat: gl
   currency: Blood Valkyrie Coin [M2]
+  aliases:
     - blood valk m2
 
   items:
