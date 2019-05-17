@@ -180,6 +180,12 @@ export class AppComponent {
       url: '/boss-guides',
       icon: 'paper'
     });
+
+    this.appPages.push({
+      title: 'Stamp Gallery',
+      url: '/stamps',
+      icon: 'photos'
+    });
   }
 
   private watchRouteChanges() {

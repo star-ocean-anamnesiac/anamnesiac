@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Stamp Gallery</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="grid">
+
+  <div class="stars small"></div>
+  <div class="stars medium"></div>
+  <div class="stars large"></div>
+
+  <div class="blank-slate" *ngIf="allStamps.length === 0">
+    <ion-spinner color="light"></ion-spinner> &nbsp;&nbsp;&nbsp; Loading...
+  </div>
+
+  <ion-list class="center-container">
+    <ion-item *ngFor="let stamp of filteredStamps" class="short">
+      
+      <span slot="start" class="picture-class-chunk">
+        <app-lazy-img class="grid-icon item-icon" 
+          [src]="'assets/stamps/' + region + '/' + stamp.image + '.png'" 
+          [alt]="stamp.image"></app-lazy-img>
+      </span>
+
+    </ion-item>
+  </ion-list>
+
+</ion-content>

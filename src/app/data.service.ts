@@ -27,10 +27,12 @@ export class DataService {
   public characters$: BehaviorSubject<Character[]> = new BehaviorSubject<Character[]>([]);
   public items$: BehaviorSubject<Item[]> = new BehaviorSubject<Item[]>([]);
   public bossGuides$: BehaviorSubject<BossGuide[]> = new BehaviorSubject<BossGuide[]>([]);
+  public stamps$: BehaviorSubject<any[]> = new BehaviorSubject<any[]>([]);
 
   private characters: Character[] = [];
   private items: Item[] = [];
   private bossGuides: BossGuide[] = [];
+  private stamps: any[] = [];
   public updates: Update[] = [];
 
   private itemNameHash: any = {};
@@ -67,5 +69,8 @@ export class DataService {
 
     this.bossGuides = allAppData.allGuides;
     this.bossGuides$.next(this.bossGuides);
+
+    this.stamps = allAppData.allStamps;
+    this.stamps$.next(this.stamps);
   }
 }
