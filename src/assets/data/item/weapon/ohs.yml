@@ -1,37 +1,4 @@
 
-- name: Type-4O Sword
-  cat: 'gl'
-  star: 5
-  picture: Type_4O
-  atk: 964
-  int: 958
-  factors:
-    - desc: Elemental damage dealt +20%
-      meta:
-        priority: 4
-        buff: Damage
-        buffValue: 50
-    - desc: Damage dealt to machines +30%
-      slayer: Machine
-      slayerPct: 50
-      meta:
-        priority: 4
-        buff: Damage To Machines
-        buffValue: 50
-    - desc: Absorbs 15% of damage dealt by normal attacks as HP
-    - desc: Critical hit chance +10%
-      lb: 5
-      meta:
-        priority: 1
-        buff: Crit Rate
-        buffValue: 10
-  obtained: Gacha (Limited)
-  
-  notes: >
-    A limited weapon and a fantastic weapon for 2b and also Fayt. Great mech hate, big lifesteal bonus and a good mlb factor. Buffing
-    your attribute damage is what makes it particularly good on fayt and 2b but it's a pretty solid neutral weapon at mlb especially
-    against mech bosses.
-
 
 - name: Cursed Balmung Blade
   cat: 'gl'
@@ -58,6 +25,38 @@
     A good weapon if you just started, it's 3rd lb factor is a strong one and it's ATK buff makes up for it's lack of stats. A decent
     neutral weapon if you need one.
 
+- name: Type-4O Sword
+  cat: 'gl'
+  star: 5
+  picture: Type_4O
+  atk: 964
+  int: 958
+  factors:
+    - desc: Elemental damage dealt +20%
+      meta:
+        priority: 4
+        buff: Damage
+        buffValue: 20
+    - desc: Damage dealt to machines +30%
+      slayer: Machine
+      slayerPct: 30
+      meta:
+        priority: 4
+        buff: Damage To Machines
+        buffValue: 30
+    - desc: Absorbs 15% of damage dealt by normal attacks as HP
+    - desc: Critical hit chance +10%
+      lb: 5
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffValue: 10
+  obtained: Gacha (Limited)
+  
+  notes: >
+    A limited weapon and a fantastic weapon for 2b and also Fayt. Great mech hate, big lifesteal bonus and a good mlb factor. Buffing
+    your attribute damage is what makes it particularly good on fayt and 2b but it's a pretty solid neutral weapon at mlb especially
+    against mech bosses.
 
 - name: Claidheamh Soluis
   cat: 'gl'
