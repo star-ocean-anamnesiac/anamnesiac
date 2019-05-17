@@ -237,7 +237,7 @@
     - m3
 
   items:
-    - name: Magic Crystalx 100
+    - name: Magic Crystal x 100
       stock: 0
       cost: 1
       type: draw-gacha  
@@ -303,7 +303,7 @@
     - m2
 
   items:
-    - name: Magic Crystalx 100
+    - name: Magic Crystal x 100
       stock: 0
       cost: 1
       type: draw-gacha  
@@ -349,7 +349,7 @@
   icon: currency-coin-m1
   cat: gl
   currency: Jie Revorse Coin
-  aliases: block
+  aliases:
     - jie
     - revorse
     - m1
@@ -455,7 +455,7 @@
   icon: currency-coin-m1
   cat: gl
   currency: Simulator Coin
-  aliases: block
+  aliases:
     - simulator
     - hell
     - siren
@@ -546,7 +546,7 @@
   icon: currency-coin-m1
   cat: gl
   currency: Michael Coin
-  aliases: block
+  aliases:
     - michael
     - m1
     - rerun
@@ -630,7 +630,7 @@
   icon: currency-coin-m2
   cat: gl
   currency: Michael M2 Coin
-  aliases: block
+  aliases:
     - michael
     - m2
     - rerun

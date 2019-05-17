@@ -1,9 +1,6 @@
 
-import { markdown } from 'markdown';
 import { Component, OnInit } from '@angular/core';
 import { NavParams, ModalController } from '@ionic/angular';
-import { DomSanitizer } from '@angular/platform-browser';
-import { BossGuide } from '../models/bossguide';
 import { Shop } from '../models/shop';
 
 @Component({
