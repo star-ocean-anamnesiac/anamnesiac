@@ -15,8 +15,8 @@ import { DataService } from '../data.service';
 })
 export class StampsPage implements OnInit, OnDestroy {
 
-  private allStamps: any[] = [];
-  private filteredStamps: any[] = [];
+  public allStamps: any[] = [];
+  public filteredStamps: any[] = [];
   private region: 'gl'|'jp';
 
   private router$: any;
