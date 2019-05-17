@@ -8,7 +8,8 @@ import { Injectable } from '@angular/core';
 import { Character } from './models/character';
 import { Item } from './models/item';
 import { Update } from './models/update';
-import { BossGuide } from './models/bossguide.js';
+import { BossGuide } from './models/bossguide';
+import { Shop } from './models/shop';
 
 interface ListItem {
   id: string;
@@ -27,11 +28,13 @@ export class DataService {
   public characters$: BehaviorSubject<Character[]> = new BehaviorSubject<Character[]>([]);
   public items$: BehaviorSubject<Item[]> = new BehaviorSubject<Item[]>([]);
   public bossGuides$: BehaviorSubject<BossGuide[]> = new BehaviorSubject<BossGuide[]>([]);
+  public shops$: BehaviorSubject<Shop[]> = new BehaviorSubject<Shop[]>([]);
   public stamps$: BehaviorSubject<any[]> = new BehaviorSubject<any[]>([]);
 
   private characters: Character[] = [];
   private items: Item[] = [];
   private bossGuides: BossGuide[] = [];
+  private shops: Shop[] = [];
   private stamps: any[] = [];
   public updates: Update[] = [];
 
@@ -72,5 +75,8 @@ export class DataService {
 
     this.stamps = allAppData.allStamps;
     this.stamps$.next(this.stamps);
+
+    this.shops = allAppData.allShops;
+    this.shops$.next(this.shops);
   }
 }

@@ -221,7 +221,7 @@
     - lezard
 
   items:
-    - name: Magic Crystalx 100
+    - name: Magic Crystal x 100
       stock: 0
       cost: 1
       type: draw-gacha  
@@ -283,7 +283,7 @@
     - gandar
 
   items:
-    - name: Magic Crystalx 100
+    - name: Magic Crystal x 100
       stock: 0
       cost: 1
       type: draw-gacha  
@@ -329,7 +329,7 @@
   icon: currency-coin-m1
   cat: gl
   currency: Jie Revorse Coin
-  aliases: block
+  aliases:
     - jie
     - revorse
 
@@ -433,7 +433,7 @@
   icon: currency-coin-m1
   cat: gl
   currency: Simulator Coin
-  aliases: block
+  aliases:
     - simulator
     - hell siren
     - siren
@@ -605,7 +605,7 @@
   icon: currency-coin-m2
   cat: gl
   currency: Michael M2 Coin
-  aliases: block
+  aliases:
     - michael m2
     - mike m2
 

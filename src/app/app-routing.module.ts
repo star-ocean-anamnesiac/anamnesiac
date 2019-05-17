@@ -24,7 +24,9 @@ const routes: Routes = [
     loadChildren: './party-creator/party-creator.module#PartyCreatorPageModule'
   },
   { path: 'boss-guides', loadChildren: './boss-guides/boss-guides.module#BossGuidesPageModule' },
+  { path: 'shops', loadChildren: './shops/shops.module#ShopsPageModule' },
   { path: 'stamps', loadChildren: './stamps/stamps.module#StampsPageModule' }
+
 ];
 
 @NgModule({
