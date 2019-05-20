@@ -620,7 +620,7 @@
     - name: "Silencing Cyclone"
       picture: Cyclone
       element: Lightning
-      power: INT x 700%
+      power: INT x 720%
       ap: 50
       maxHits: 6
       
@@ -719,10 +719,11 @@
             buff: AP Cost Reduction
             buffCondition: Skill Chain 3+
             buffValue: 60
-        - desc: Symbology cast time -30%
+        - desc: Symbology cast time -30% when skill chain is >3
           meta:
             priority: 4
             buff: Cast Time Reduction
+            buffCondition: Skill Chain 3+
             buffValue: 30
 
   skills:
@@ -2078,7 +2079,7 @@
       power: INT x 800%
       ap: 50
       maxHits: 6
-    - name: "Growth"
+    - name: "Enhance"
       picture: Enhance_Growth
       ap: 50
       maxHits: 1
@@ -2403,7 +2404,7 @@
             priority: 1
             buff: Cast Time Reduction
             buffValue: 80
-        - desc: Recovers 50% HP every 20 seconds
+        - desc: Recovers 50% of max HP every 20 seconds
     - name: "Voluptuous Magician"
       effects: 
         - desc: AP cost -40% when skill chain is >3
