@@ -160,7 +160,7 @@
 - name: Book of Dark Revelations
   cat: 'gl'
   star: 5
-  picture: Forbidden_Tome_Dark_Revelations
+  picture: Forbidden_Tome_Dark_Revalations
   atk: 959
   int: 965
   factors:
