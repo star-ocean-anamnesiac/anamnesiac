@@ -143,7 +143,7 @@
     grd: 924
 
   talents:
-    - name: "Natural Born Leader II"
+    - name: "Natural-Born Leader II"
       effects: 
         - desc: Damage dealt +40%
           all: true
@@ -1517,7 +1517,7 @@
     grd: 924
 
   talents:
-    - name: "Natural Born Leader II"
+    - name: "Natural-Born Leader II"
       effects: 
         - desc: Damage dealt +50%
           all: true
@@ -1532,15 +1532,15 @@
             priority: 4
             buff: Damage Taken Reduction
             buffValue: 20
-    - name: "Charged Kick"
+    - name: "The Mirage Kick"
       effects: 
         - desc: Evasion AP cost -50%
           all: true
         - desc: Evasion speed & distance +100%
-    - name: "Bloodstained Fangs II"
+    - name: "Battlefield Memories"
       effects: 
         - desc: Absorbs 10% of damage dealt by normal attacks as HP when hitcount is >100
-    - name: "Quark Carrier"
+    - name: "Upholding Quark"
       effects: 
         - desc: AP recovery +50%
           all: true
@@ -1553,7 +1553,7 @@
             priority: 1
             buff: AP Cost Reduction
             buffValue: 5
-    - name: "Dreams of Peace"
+    - name: "Longing for Peace"
       shortEffects: ATK +30% and HP +10%
       effects: 
         - desc: ATK +30%
@@ -1859,7 +1859,7 @@
             priority: 1
             buff: Single Target Damage
             buffValue: 20          
-        - desc: ATK +30% during charge assault
+        - desc: ATK +30% when using charge assault
           meta:
             priority: 3
             buff: ATK
