@@ -200,7 +200,7 @@
         priority: 3
         buff: AP Recovery
         buffValue: 30
-        buffCondition: Not Being Targetted By Enemy
+        buffCondition: Not Being Targeted By Enemy
   obtained: Gacha
   
   notes: >
@@ -660,4 +660,32 @@
         buffValue: 15
     - desc: 70% chance of surviving a lethal attack when at 20% HP or more
       lb: 5
+  obtained: Gacha
+
+- name: Wand "Mystic Sage"
+  cat: 'gl'
+  star: 5
+  picture: Mystic_Sage_Wand
+  atk: 957
+  int: 964
+  factors:
+    - desc: Light damage dealt +40%
+      meta:
+        priority: 4
+        buff: Light Damage
+        buffValue: 40
+    - desc: Damage dealt to humanoids +10%
+      slayer: Human
+      slayerPct: 10
+      meta:
+        priority: 4
+        buff: Damage To Humans
+        buffValue: 10
+    - desc: Stun rate +15%
+      meta:
+        priority: 1
+        buff: Stun Rate
+        buffValue: 15
+    - desc: 70% chance of surviving a lethal attack when at 20% of max HP or more
+      lb: 5   
   obtained: Gacha
