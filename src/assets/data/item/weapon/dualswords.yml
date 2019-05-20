@@ -1,4 +1,19 @@
 
+- name: Dual Flames
+  cat: 'gl'
+  star: 4
+  picture: Dual_Flames
+  atk: 471
+  int: 466
+  factors:
+    - desc: Imbues attacks with fire
+      element: Fire
+    - desc: Single target damage +10%
+      meta:
+        priority: 4
+        buff: Single Target Damage
+        buffValue: 10
+  obtained: Transmutation, Gacha
 
 - name: Baphomet's Blades
   cat: 'gl'
