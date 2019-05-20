@@ -1,4 +1,19 @@
 
+- name: Dual Flames
+  cat: 'gl'
+  star: 4
+  picture: Dual_Flames
+  atk: 471
+  int: 466
+  factors:
+    - desc: Imbues attacks with fire
+      element: Fire
+    - desc: Single target damage +10%
+      meta:
+        priority: 4
+        buff: Single Target Damage
+        buffValue: 10
+  obtained: Transmutation, Gacha
 
 - name: Baphomet's Blades
   cat: 'gl'
@@ -12,10 +27,10 @@
         priority: 4
         buff: ATK
         buffValue: 15
-    - desc: Receive 10% of damage dealt as HP during normal attacks
-    - desc: Additional hit that deals 5% damage of normal attack
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP
+    - desc: Additional hit that deals 5% damage during normal attcks
       lb: 3
-  obtained: Gacha / Dual Blade Coin Exchange
+  obtained: Gacha, Coin Exchange
   
   notes: >
     The best dual swords in the neutral slot currently. Attack scaling, helps make up for the lack of stats, the life steal is nice for
@@ -29,23 +44,23 @@
   atk: 652
   int: 649
   factors:
-    - desc: +15% DMG to Multiple Targets
+    - desc: Multiple target damage +15%
       meta:
         priority: 4
         buff: Multiple Target Damage
         buffValue: 15
-    - desc: +10% AP RCV
+    - desc: AP recovery +10%
       meta:
         priority: 4
         buff: AP Recovery
         buffValue: 10
-    - desc: -10% ATK DMG Taken
+    - desc: ATK damage taken -10%
       lb: 5
       meta:
         priority: 4
         buff: ATK Damage Taken Reduction
         buffValue: 10
-  obtained: gacha / Dual Blade Coin Exchange / Transmute
+  obtained: Gacha, Coin Exchange, Transmutation
   
   notes: >
     Pretty bad pair of swords. The only blades in the transmute pool so you'll be seeing these a lot when trying to make coins. The 
@@ -58,19 +73,19 @@
   atk: 963
   int: 956
   factors:
-    - desc: Imbues attacks with light element
+    - desc: Imbues attacks with light
       element: Light
-    - desc: +10% Crit Rate
+    - desc: Critical hit chance +10%
       meta:
         priority: 4
         buff: Crit Rate
         buffValue: 10
-    - desc: +15% Crit DMG
+    - desc: Critical damage dealt +15%
       meta:
         priority: 4
         buff: Crit Damage
         buffValue: 15
-    - desc: +30% AP RCV Speed
+    - desc: AP recovery +30%
       lb: 5
       meta:
         priority: 4
@@ -86,19 +101,19 @@
   cat: 'gl'
   star: 5
   picture: Twin_Feather_Daggers
-  atk: 652
-  int: 649
+  atk: 532
+  int: 527
   factors:
-    - desc: +20% DMG on Hazy Wheel
-    - desc: +10% DMG to Single Target (At 100% HP)
+    - desc: Damage dealt +20% by Hazy Wheel
+    - desc: Single target damage +10% when HP is 100%
       meta:
         priority: 3
         buff: Single Target Damage
         buffValue: 10
         buffCondition: At 100% HP
-    - desc: Hit Count Timer + 1 second
+    - desc: Hitcount timer +1 second
       lb: 5
-  obtained: Pumpkin Cryptvine Exchange
+  obtained: Pumpkin Cryptvine (Exchange)
   
   notes: >
     Decent dual swords for Halloween Clair, but beyond that they aren't fantastic. Passable if nothing better but Baphomet Blades or
@@ -111,20 +126,21 @@
   atk: 512
   int: 507
   factors:
-    - desc: +20% DMG on Helix Blade
-    - desc: Recover 5% HP every 3 seconds
-    - desc: -15% INT DMG Taken at 50+ Hit Count
+    - desc: Damage dealt +20% by Helix Blade
+    - desc: Recovers 5% of max HP every 3 seconds
+    - desc: INT damage taken -15% when hitcount is >50
       lb: 5
       meta:
         priority: 3
         buff: INT Damage Taken Reduction
         buffValue: 15
         buffCondition: Hit Count > 50
-  obtained: Christmas Horndevil Exchange
+  obtained: Christmas Horndevil (Exchange)
   
   notes: >
     Decent dual swords for Winter Evelysse, but beyond that they aren't fantastic. The damage isn't great but gives her some sustain
     and some extra bulkiness at mlb while buffing her main damage dealing skill. Transmute if you have better.
+    
     
 - name: Twin Coro Swords
   cat: 'gl'
@@ -133,14 +149,14 @@
   atk: 964
   int: 956
   factors:
-    - desc: Imbues attacks with ice element
+    - desc: Imbues attacks with ice
       element: Ice
-    - desc: +100% AP Recovery by Normal Attacks
+    - desc: Normal attack AP recovery +100%
       meta:
         priority: 4
         buff: AP Recovery From Normal Attacks
         buffValue: 20
-    - desc: Recover 5% HP on DMG Dealt by Normal Attacks
+    - desc: Absorbs 5% of damage dealt by normal attacks as HP
       lb: 5
   obtained: Gacha
   
@@ -155,20 +171,21 @@
   atk: 532
   int: 529
   factors:
-    - desc: +50% DMG on Piercing Blades
-    - desc: +15% DMG if HP is 100%
+    - desc: Damage dealt +50% by Piercing Blades
+    - desc: Damage dealt +15% when HP is 100%
       meta:
         priority: 3
         buff: Damage
         buffValue: 15
         buffCondition: HP = 100%
-    - desc: 50% Chance of Surviving a Lethal Attack at 15% HP or more
+    - desc: 50% chance of surviving a lethal attack when at 15% of max HP or more
       lb: 5
-  obtained: Monarch Zinae Exchange
+  obtained: Monarch Zinae (Exchange)
   
   notes: >
-    Dual Swords meant for Ahston, they're not great, conditional damage buff, meh grit chance, piercing blades is a good attack
+    Dual Swords meant for Ashton, they're not great, conditional damage buff, meh grit chance, piercing blades is a good attack
     but not your main source of damage. It's passable if you have nothing better for Ashton, otherwise it is bad.
+    
     
 - name: Mephistofar
   cat: 'gl'
@@ -177,12 +194,12 @@
   atk: 891
   int: 889
   factors:
-    - desc: Imbues attacks with ice element
+    - desc: Imbues attacks with ice
       element: Ice
-    - desc: Recover 10% HP on DMG Dealt by Normal Attacks, when hit count is 50+
-    - desc: +15% DMG on Swords Dance, when hit count is 100+
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP when hitcount is >50
+    - desc: Damage dealt +15% by Sword Dance when hitcount is >100
       lb: 3
-  obtained: Monarch Zinae Achievement & Dual Sword Exchange Shop
+  obtained: Coin Exchange, Monarch Zinae (Achievement)
   
   notes: >
     Ice imbue dual swords that cost 2 coins each from the shop. They're really meant for Ashton but it's an imbue weapon with a
@@ -194,8 +211,8 @@
   cat: 'gl'
   star: 5
   picture: Twin_Beam_Swords
-  atk: 508
-  int: 511
+  atk: 531
+  int: 529
   factors:
     - desc: Damage dealt +30% by Threefold Blast
       meta:
@@ -228,7 +245,7 @@
         priority: 3
         buff: Wind Damage
         buffValue: 15
-    - desc: Recovers 5% HP every 3 seconds
+    - desc: Recovers 5% of max HP every 3 seconds
     - desc: Critical hit chance +10%
       meta:
         priority: 1
@@ -240,4 +257,27 @@
         buff: Crit Damage
         buffValue: 20
       lb: 5
+  obtained: Gacha  
+  
+- name: Griffons
+  cat: 'gl'
+  star: 5
+  picture: Dual_Heavenly_Blades_Griffon
+  atk: 963
+  int: 956
+  factors:
+    - desc: Damage dealt to humanoids +40%
+      slayer: Human
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Humans
+        buffValue: 40
+    - desc: Normal attack AP recovery +100%
+      meta:
+        priority: 4
+        buff: AP Recovery From Normal Attacks
+        buffValue: 100
+    - desc: No flinching when attacking
+      lb: 3
   obtained: Gacha  
