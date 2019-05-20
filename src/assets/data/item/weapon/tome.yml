@@ -155,3 +155,30 @@
         buffValue: 10
       lb: 5
   obtained: Shine Totem / Gleaming Simulacrum (Exchange)
+  
+
+- name: Book of Dark Revelations
+  cat: 'gl'
+  star: 5
+  picture: Forbidden_Tome_Dark_Revelations
+  atk: 959
+  int: 965
+  factors:
+    - desc: Light damage dealt +35%
+      meta:
+        priority: 4
+        buff: Light Damage
+        buffValue: 35
+    - desc: Dark damage dealt +35%
+      meta:
+        priority: 4
+        buff: Dark Damage
+        buffValue: 35
+    - desc: Critical damage dealt +20%
+      meta:
+        priority: 4
+        buff: Crit Damage
+        buffValue: 20    
+    - desc: 60% chance of surviving a lethal attack when at 20% of max HP or more
+      lb: 5
+  obtained: Gacha
