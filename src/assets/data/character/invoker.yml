@@ -2369,7 +2369,7 @@
     grd: 826
 
   talents:
-    - name: "Wicked Tongue"
+    - name: "Wicked Tongue II"
       effects: 
         - desc: ATK damage dealt +40%
           all: true
@@ -2405,7 +2405,7 @@
             buff: Cast Time Reduction
             buffValue: 80
         - desc: Recovers 50% of max HP every 20 seconds
-    - name: "Voluptuous Magician"
+    - name: "Voluptuous Magician II"
       effects: 
         - desc: AP cost -40% when skill chain is >3
           meta:
@@ -2413,7 +2413,7 @@
             buff: AP Cost Reduction
             buffCondition: Skill Chain 3+
             buffValue: 40
-    - name: "Envy Towards God Realm"
+    - name: "Envy towards Asgard"
       shortEffects: INT +30% and HP +10%
       effects: 
         - desc: INT +30%
@@ -2500,7 +2500,7 @@
     grd: 819
 
   talents:
-    - name: "Sage's Wisdom"
+    - name: "Sage's Wisdom II"
       effects: 
         - desc: INT +20%
           all: true
@@ -2508,7 +2508,7 @@
             priority: 1
             buff: INT
             buffValue: 20
-    - name: "Affection for Goddess"
+    - name: "Affection for Goddess II"
       effects: 
         - desc: Converts 50% of INT to ATK
           all: Attackers/Sharpshooters/Defenders
