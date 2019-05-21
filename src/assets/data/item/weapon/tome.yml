@@ -182,3 +182,27 @@
     - desc: 60% chance of surviving a lethal attack when at 20% of max HP or more
       lb: 5
   obtained: Gacha
+
+
+- name: Monster Manifesto
+  cat: 'gl'
+  star: 5
+  picture: Grand_Grimoire
+  atk: 827
+  int: 835
+  factors:
+    - desc: Damage dealt +20% by Shadow Servant
+    - desc: AP recovery +30%
+      meta:
+        priority: 3
+        buff: AP Recovery
+        buffValue: 30 
+    - desc: Damage dealt to humanoids +10%
+      slayer: Human
+      slayerPct: 10
+      meta:
+        priority: 4
+        buff: Damage To Humans
+        buffValue: 10
+      lb: 5   
+  obtained: "Lezard / Valkyrie Profile: The Purged Wizard (Achievement)"
