@@ -739,7 +739,7 @@
         priority: 1
         buff: HP
         buffValue: 5
-  obtained: Lezard + Blood Valkyrie / Valkyrie Profile 2 (Achievement, Drop, Exchange)  
+  obtained: "Lezard + Blood Valkyrie / Valkyrie Profile: The Purged Wizard (Achievement, Drop, Exchange)"
   
   
 - name: Goddess Ear Cuff
@@ -755,7 +755,7 @@
         buffCondition: Short Range
         buffValue: 10
     - desc: Recovers 3% of max HP every 5 seconds at long range
-  obtained: Lezard + Blood Valkyrie / Valkyrie Profile 2 (Achievement, Exchange)    
+  obtained: "Lezard + Blood Valkyrie / Valkyrie Profile: The Purged Wizard (Achievement, Exchange)"    
 
 
 - name: Jet-Black Barrette
@@ -766,7 +766,7 @@
   factors:
     - desc: Recovers 3% of max HP every 5 seconds when targeted by enemy
     - desc: Taunt +2
-  obtained: Ballistic Rhino / Valkyrie Profile 2 (Event)
+  obtained: "Ballistic Rhino / Valkyrie Profile: The Purged Wizard (Achievement, Drop)"
 
 - name: Valkyrie Feather
   cat: 'gl'
@@ -785,6 +785,15 @@
         priority: 3
         buff: ATK Damage Taken Reduction
         buffValue: 10      
-  obtained: Ballistic Rhino / Valkyrie Profile 2 (Event)
-  
+  obtained: "Ballistic Rhino / Valkyrie Profile: The Purged Wizard (Achievement, Exchange)"
+ 
+- name: Alchemist's Glasses
+  cat: 'gl'
+  star: 5
+  picture: Alchemist's_Glasses
+  def: 728
+  factors:
+    - desc: No flinching while casting symbology when hitcount is >150
+    - desc: 30% chance of surviving a lethal attack when at 10% of max HP or more
+  obtained: "Lezard / Valkyrie Profile: The Purged Wizard (Achievement, Exchange)" 
   
