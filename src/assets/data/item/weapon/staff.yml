@@ -689,3 +689,17 @@
     - desc: 70% chance of surviving a lethal attack when at 20% of max HP or more
       lb: 5   
   obtained: Gacha
+  
+
+- name: Infinity Rod
+  cat: 'gl'
+  star: 5
+  picture: Infinity_Rod
+  atk: 826
+  int: 834
+  factors:
+    - desc: Damage dealt +15% by Sacred Javelin
+    - desc: Evasion AP cost -30%
+    - desc: Repel +1
+      lb: 5
+  obtained: "Lezard / Valkyrie Profile: The Purged Wizard (Achievement)"
