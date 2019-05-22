@@ -1861,8 +1861,7 @@
       
       *Normal > Victory Terror > Sylvan Shot > Victory Terror (Best Rush Gain)*
       *Normal > Sylvan Shot > Hydro Blade > Sylvan Shot > Spam till out of AP (General Damage)*
-      
-      
+
 - name: Clair Lasbard (Awakened)
   cat: jp
   rating: 10
@@ -2043,7 +2042,6 @@
       
       *Normal>Aqua>filler>Aqua - vs fat bosses that take 4+ hits*
 
-
 - name: Miki Sauvester (Summer)
   cat: jp
   rating: 1
@@ -2177,8 +2175,7 @@
       **Rotation**
       
       *Normal > Hunter's Moon > Sonic Thorn > Hunter's Moon (General Combo.)* 
-      
-      
+
 - name: Verda Kleiman
   cat: jp
   rating: 1
@@ -2270,7 +2267,6 @@
         all: true
     power: ATK x 3500%
     maxHits: 2
-
 
 - name: Silmeria Valkyrie
   cat: jp
@@ -2517,7 +2513,6 @@
       *Normal > Restrict > Wing > Wave^n - Rush*
       *Normal > Restrict > Wing > Restrict^n - DPS/Rush vs large enemies (9+ hits per Restrict)*
 
-
 - name: Verda Kleiman (Awakened)
   cat: jp
   rating: 4
@@ -2647,7 +2642,6 @@
     power: ATK x 4000%
     maxHits: 2
 
-   
 - name: Dias Flac (Cherry Blossom)
   cat: jp
   rating: 4
@@ -2876,7 +2870,6 @@
           buffValue: 30
     power: ATK x 3500%
     maxHits: 7
-    
 
 - name: Edge Maverick (Federation)
   cat: jp
@@ -2963,7 +2956,6 @@
           buffValue: 40
     power: ATK x 3500%
     maxHits: 11
-
 
 - name: Leanne
   cat: jp
@@ -3056,7 +3048,6 @@
           buffValue: 30
     power: ATK x 3500%
     maxHits: 17
-
 
 - name: Aya
   cat: jp
@@ -3157,7 +3148,6 @@
           buffValue: 40
     power: ATK x 3500%
     maxHits: 2
-
 
 - name: Phia Melle (Crimson Grace)
   cat: jp
@@ -3280,7 +3270,6 @@
     power: ATK x 4000%
     maxHits: 24
 
-   
 - name: Sophia Esteed (Youth)
   cat: jp
   rating: 6
@@ -3391,7 +3380,6 @@
           buffValue: 25
     power: ATK x 3500%
     maxHits: 5
-
 
 - name: Opera Vectra
   cat: jp
@@ -3510,7 +3498,6 @@
     power: ATK x 4000%
     maxHits: 10
 
-
 - name: Leanne (Summer)
   cat: jp
   rating: 4
@@ -3618,7 +3605,6 @@
           buffValue: 30
     power: ATK x 4500%
     maxHits: 35
-
 
 - name: Mafia Kajita
   cat: jp
@@ -6218,15 +6204,15 @@
   picture: Girl's_Day_Clair
   weapon: bow
   limited: true
-  star: 5
+  star: 4
 
   stats:
-    hp: 12705
-    atk: 2048
-    int: 1418
-    def: 1601
-    hit: 1141
-    grd: 854
+    hp: 11550
+    atk: 1864
+    int: 1286
+    def: 1458
+    hit: 1036
+    grd: 777
 
   talents:
     - name: "Demon Girl II"
@@ -6276,21 +6262,16 @@
   rush:
     name: "Revised Heavenly Flight"
     picture: Revised_Heavenly_Flight_Maiden_Clair
-    shortEffects: ATK -20% and DEF -20% (Enemies/30s)
+    shortEffects: ATK/DEF -20% (Enemies/30s)
     effects: 
-      - desc: ATK -20%
+      - desc: ATK/DEF -20%
         all: Enemy
         duration: 30
         meta:
           priority: 1
-          buff: Enemy ATK Reduction
-          buffValue: 20
-      - desc: DEF -20%
-        all: Enemy
-        duration: 30
-        meta:
-          priority: 1
-          buff: Enemy DEF Reduction
+          buffs:
+            - Enemy ATK Reduction
+            - Enemy DEF Reduction
           buffValue: 20
     power: ATK x 2500%
     maxHits: 4
@@ -6313,12 +6294,9 @@
 
       - Unique and strong debuffs.
       
-      - Free MLB non-ace 5 star.
-      
 
       **Cons**
 
-      - Non-ace so has less stats.
 
       - Deals underwhelming damage outside of humanoid fights.
 

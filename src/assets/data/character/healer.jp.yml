@@ -857,15 +857,15 @@
   picture: Priestess_Nel
   weapon: staff
   limited: true
-  star: 5
+  star: 4
 
   stats:
-    hp: 11130
-    atk: 1589
-    int: 2074
-    def: 1418
-    hit: 952
-    grd: 1043
+    hp: 10080
+    atk: 1444
+    int: 2478
+    def: 1336
+    hit: 868
+    grd: 945
 
   talents:
     - name: "Blade of Shar"
@@ -942,8 +942,6 @@
       
       
       **Cons**
-      
-      - 5 star non-ace so has less stats
       
       - Lack of self INT buff
       
