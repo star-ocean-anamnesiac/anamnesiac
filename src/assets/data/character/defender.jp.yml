@@ -1,6 +1,6 @@
 
 - name: Shimada
-  cat: gl
+  cat: jp
   rating: 0
   picture: Shimada
   weapon: bns
@@ -73,7 +73,7 @@
     maxHits: 7
 
 - name: Stephen D. Kenny
-  cat: gl
+  cat: jp
   rating: 0
   picture: Stephen
   weapon: bns
@@ -151,7 +151,7 @@
     maxHits: 7
 
 - name: Gideon
-  cat: gl
+  cat: jp
   rating: 0
   picture: Gideon
   weapon: bns
@@ -209,7 +209,7 @@
     maxHits: 5
     
 - name: Renier
-  cat: gl
+  cat: jp
   rating: 0
   picture: Renier
   weapon: bns
