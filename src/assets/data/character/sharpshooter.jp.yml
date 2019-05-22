@@ -6262,9 +6262,9 @@
   rush:
     name: "Revised Heavenly Flight"
     picture: Revised_Heavenly_Flight_Maiden_Clair
-    shortEffects: ATK -20% and DEF -20% (Enemies/30s)
+    shortEffects: ATK/DEF -20% (Enemies/30s)
     effects: 
-      - desc: ATK -20%
+      - desc: ATK/DEF -20%
         all: Enemy
         duration: 30
         meta:
