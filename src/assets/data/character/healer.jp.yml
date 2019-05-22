@@ -501,6 +501,1320 @@
     power: INT x 2000%
     maxHits: 10
 
+- name: Miki Sauvester
+  cat: jp
+  picture: Miki
+  weapon: staff
+  limited: false
+  star: 5
+
+  stats:
+    hp: 11235
+    atk: 1589
+    int: 2594
+    def: 1379
+    hit: 959
+    grd: 1043
+
+  talents:
+    - name: "Industrial Housecleaning"
+      effects: 
+        - desc: INT +30%
+          meta:
+            priority: 4
+            buff: INT
+            buffValue: 30
+    - name: "Glutton II"
+      effects: 
+        - desc: Symbology cast time -30%
+          meta:
+            priority: 4
+            buff: Cast Time Reduction
+            buffValue: 30
+    - name: "Beginner's Luck"
+      effects: 
+        - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
+
+  skills:
+    - name: "Radiant Lancer"
+      picture: Radiant_Lancer
+      element: Light
+      power: INT x 300%
+      ap: 27
+      maxHits: 8
+    - name: "Ex Healing"
+      picture: Ex_Healing
+      power: INT x 330%
+      ap: 50
+      notes: Recover a lot of HP for a single ally
+      maxHits: 1
+    - name: "Sunflare"
+      picture: Sunflare
+      element: Light
+      power: INT x 570%
+      ap: 42
+      maxHits: 6
+    - name: "Faerie Star"
+      picture: Faerie_Star
+      power: INT x 330%
+      ap: 70
+      notes: Recover a lot of HP for all allies
+      maxHits: 1
+      
+  rush:
+    name: "Divine Wave"
+    picture: Divine_Wave_Miki
+    effects: 
+      - desc: Recovers 30% of max HP every 4 seconds
+        all: true
+        duration: 20
+    power: INT x 2000%
+    maxHits: 4
+    
+  notes: >
+      _The only healer with zero passive benefits to the party, offensively or defensively; she's strictly a healslave. Being a one-trick-pony tends to mean she isn't an attractive long-term choice. She does, however, boast incredibly potent party regen via her rush and high rush gain, making her a decent option for survival and particularly solo content so long as you can afford the loss in firepower._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - 5 star non-ace so is cheaper to max limit break and augment
+      
+      - Powerful post rush health regen buff for the party
+      
+      - Grit talent makes her hard to kill, making her viable for solo content
+      
+      
+      **Cons**
+      
+      - 5 star non-ace so has less stats
+      
+      - No talents that contribute to the party
+      
+      - Poor damage
+      
+      - Expensive healing
+      
+      
+      **Rotation**
+      
+      *Normal > Radiant Lancer > Sunflare > Radiant Lancer (Elemental Burst Contribution Rotation)*
+      
+      *Normal > Sunflare > Radiant Lancer > Sunflare (5% AP, Damage, Low Rush Gain)*
+            
+      *Normal > Faerie Star (Healing)*
+
+- name: Millie Chliette
+  cat: jp
+  picture: Millie
+  weapon: staff
+  ace: true
+  limited: false
+  star: 5
+
+  stats:
+    hp: 13860
+    atk: 1759
+    int: 2494
+    def: 1353
+    hit: 1057
+    grd: 1134
+
+  talents:
+    - name: "Like Father, Like Daughter"
+      effects: 
+        - desc: Elemental damage dealt +30%
+          all: true
+          meta:
+            priority: 1
+            buff: Elemental Damage
+            buffValue: 30
+    - name: "Rabbit's Foot"
+      effects: 
+        - desc: Damage taken -30%
+          all: false
+          meta:
+            priority: 4
+            buff: Damage Taken Reduction
+            buffValue: 30
+    - name: "Fortune of Mana"
+      effects: 
+        - desc: AP cost -20%
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 20
+
+  skills:
+    - name: "Healing"
+      picture: Healing
+      power: INT x 170%
+      ap: 40
+      notes: Recover some HP for a single ally
+      maxHits: 1
+    - name: "Crush"
+      picture: Crush
+      element: Earth
+      power: INT x 190%
+      ap: 20
+      maxHits: 2
+    - name: "Stone Rain"
+      picture: Stone_Rain
+      element: Earth
+      power: INT x 460%
+      ap: 35
+      maxHits: 5
+    - name: "Faerie Star"
+      picture: Faerie_Star
+      power: INT x 330%
+      ap: 70
+      notes: Rcover a lot of HP for all allies
+      maxHits: 1
+      
+  rush:
+    name: "Tractor Beam"
+    picture: Tractor_Beam_Millie
+    element: Earth
+    shortEffects: Recovers 80% of max HP, and critical hit chance +50% (Party/20s)
+    effects: 
+      - desc: Critical hit chance +50%
+        all: true
+        duration: 20
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 50
+      - desc: Recovers 80% of max HP
+        all: true
+    power: INT x 2000%
+    maxHits: 11
+    
+  notes: >
+      _A decent healer for providing DPS without actually being a DPS character. Millie provides a 30% increase in Elemental DMG and a +50% Crit Buff upon Rush. However, it should be noted that Elemental DMG does not stack with specific Elemental DMG buffs, such as Lightning Wand's +15% Lightning DMG)."_
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Strong elemental damage buff for the party
+      
+      - Post rush buff that boosts critical rate and heals most of the party's HP
+      
+      - Talent that helps survivability
+      
+      
+      **Cons**
+      
+      - Damage spells take a long time to cast making them bad
+      
+      - Common access to elemental damage buffs post rush that override her talent
+      
+      - Boring to play optimally
+      
+      - Expensive healing
+      
+      
+      **Rotation**
+      
+      *Normal > Faerie Star (Healing & Rush Gain)*
+
+- name: Rena Lanford
+  cat: jp
+  picture: Rena
+  weapon: knuckle
+  ace: true
+  limited: false
+  star: 5
+
+  stats:
+    hp: 13860
+    atk: 1773
+    int: 2482
+    def: 1327
+    hit: 1064
+    grd: 1141
+
+  talents:
+    - name: "Healing Light II"
+      effects: 
+        - desc: Recovers 10% of max HP every 5 seconds
+          all: Short Range Weapons
+    - name: "Beyond Time & Space II"
+      effects: 
+        - desc: Symbology cast time -80%
+          meta:
+            priority: 4
+            buff: Cast Time Reduction
+            buffValue: 80
+    - name: "Two Mothers' Blessing"
+      effects: 
+        - desc: AP cost -15%
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 15
+    - name: "Descendant of Nede"
+      effects: 
+        - desc: 90% chance of surviving a lethal attack when at 10% of max HP or more
+
+  skills:
+    - name: "Radiant Lancer"
+      picture: Radiant_Lancer
+      element: Light
+      power: INT x 300%
+      ap: 27
+      maxHits: 8
+    - name: "Angel Feather AR"
+      picture: Angel_Feathers
+      power: 0%
+      ap: 95
+      notes: ATK/INT/DEF/HIT/GRD +20% (Party/20s)
+      maxHits: 1
+      meta:
+        priority: 2
+        buffs:
+          - ATK
+          - INT
+          - DEF
+          - HIT
+          - GRD
+        buffValue: 20
+    - name: "Faerie Light AR"
+      picture: Faerie_Light
+      power: INT x 250%
+      ap: 60
+      notes: Recover some HP for all allies
+      maxHits: 1        
+    - name: "Laser Beams"
+      picture: Laser_Beams
+      element: Light
+      power: INT x 570%
+      ap: 55
+      maxHits: 12
+
+  rush:
+    name: "Star Flare"
+    picture: Star_Flare_Rena
+    element: Light
+    effects: 
+      - desc: Critical hit chance +60%
+        all: Short Range Weapons
+        duration: 20
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 60
+    power: ATK x 2500%
+    maxHits: 10
+    
+  notes: >
+      _A buff-oriented healer suited for melee parties like her SO2 cohorts. Extremely fast casts, amazing Guts percentage and Angel Feather (20% buff to all stats). Notable for the fact that Angel Feather buffs stack with all other buffs (additively in battle with stuff like Fidel [Ex: 40 + 20% after AF = 60% in battle ATK]).  If you want a healer who provides good party buffing for melee and is hardy as all hell, Rena's your girl. She is a fist user, so be careful with your positioning. Her Rush Gain is notably a bit slow, and does require her to hit her DMG spell or suffer by spamming heal._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Fast cast times
+      
+      - Talents and post rush buff that is amazing for melee compositions
+      
+      - Hard to kill
+      
+      - Angel Feather stacks with all party passive buffs.
+      
+      
+      **Cons**
+      
+      - Low damage
+      
+      - Slow rush gain, unless you put yourself in danger by meleeing the boss
+      
+      - Melee range normals
+      
+      - Offers little to ranged characters
+      
+      - Radiant Lancer's damage and rush gain are backloaded onto the final hit, which sucks for especially mobile bosses
+       
+      
+      **Rotation**
+      
+      *Lancer VS Laser - Preference. You'll never reach more than 200% Faerie Light, so running Lasers lets you do faster rotations. However, Lancer does give a slight amount more damage.*
+
+      *Angel Feather - Buff, reapply as necessary.*
+
+      *Faerie Light^n - Healing and Rush Gain*
+
+      *(Normal >) Lancer > Faerie > Lancer - If you're comfortable doing a close range normal.*
+    
+- name: Nel Zelpher (Oracle)
+  cat: jp
+  picture: Priestess_Nel
+  weapon: staff
+  limited: true
+  star: 5
+
+  stats:
+    hp: 11130
+    atk: 1589
+    int: 2074
+    def: 1418
+    hit: 952
+    grd: 1043
+
+  talents:
+    - name: "Blade of Shar"
+      effects: 
+        - desc: Damage dealt +15%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 15
+    - name: "The Dancing Maiden"
+      effects: 
+        - desc: Movement rate boost
+    - name: "Secret Understanding"
+      effects: 
+        - desc: Repel +1
+
+  skills:
+    - name: "Ice Needles"
+      picture: Ice_Needles
+      element: Ice
+      power: INT x 250%
+      ap: 24
+      maxHits: 9
+    - name: "Healing"
+      picture: Healing
+      power: INT x 170%
+      ap: 40
+      notes: Recover some HP for a single ally
+      maxHits: 1
+    - name: "Deep Freeze"
+      picture: Deep_Freeze
+      element: Ice
+      power: INT x 460%
+      ap: 35
+      maxHits: 9
+    - name: "Faerie Light"
+      picture: Faerie_Light
+      power: INT x 250%
+      ap: 60
+      notes: Recover some HP for all allies
+      maxHits: 1
+      
+  rush:
+    name: "Arctic Impact 2R"
+    picture: Revised_Arctic_Impact_Priestess_Nel
+    element: Ice
+    shortEffects: Recovers 50% of max HP and damage dealt +30% (Self/20s)
+    effects: 
+      - desc: Recovers 50% of max HP
+      - desc: Damage dealt +30%
+        duration: 20
+        meta:
+          priority: 4
+          buff: Damage
+          buffValue: 30
+    power: INT x 2500%
+    maxHits: 3
+    
+  notes: >
+      _Free event unit, not very good, however she is free to MLB through achievements._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Free MLB unit
+      
+      - Weak party damage buff
+      
+      - Consistent damage
+      
+      
+      **Cons**
+      
+      - 5 star non-ace so has less stats
+      
+      - Lack of self INT buff
+      
+      - Lack of party wide rush buff
+      
+      - No cast time reduction gives long casts
+      
+      - Expensive healing
+      
+      - Lack of talent that helps survivability
+      
+      
+      **Rotation**
+      
+      *Normal > Needles > Freeze > Needles^n - DPS and HC*
+
+      *Normal > Freeze > Needles  > Freeze - DPS during EB or Slow Targets*
+
+      *Faerie^n - Healing*
+ 
+- name: Evelysse
+  cat: jp
+  picture: Evelysse
+  weapon: staff
+  ace: true
+  limited: false
+  star: 5
+
+  stats:
+    hp: 12180
+    atk: 1747
+    int: 2520
+    def: 1523
+    hit: 1071
+    grd: 1141
+
+  talents:
+    - name: "Spark of Inspiration II"
+      effects: 
+        - desc: INT +20%
+          all: true
+          meta:
+            priority: 1
+            buff: INT
+            buffValue: 20
+    - name: "A Girl of Many Talents II"
+      effects: 
+        - desc: Rush combo damage +20%
+          all: true
+          meta:
+            priority: 1
+            buff: Rush Damage
+            buffValue: 20
+    - name: "Blessings of the Stars II"
+      effects: 
+        - desc: Recovers 3% of max HP every 3 seconds
+        - desc: Rush gauge quota -20%
+    - name: "Cryptic Symbology Arts"
+      effects: 
+        - desc: AP cost -25%
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 25
+        - desc: Symbology cast time -20%
+          meta:
+            priority: 1
+            buff: Cast Time Reduction
+            buffValue: 20
+
+  skills:
+    - name: "Radiant Lancer"
+      picture: Radiant_Lancer
+      element: Light
+      power: INT x 300%
+      ap: 27
+      maxHits: 8
+    - name: "Conjure Comet"
+      picture: Conjure_Comet
+      element: Light
+      power: INT x 360%
+      ap: 30
+      maxHits: 5
+    - name: "Faerie Light"
+      picture: Faerie_Light
+      power: INT x 250%
+      ap: 60
+      notes: Recover some HP for all allies
+      maxHits: 1      
+    - name: "Sunflare"
+      picture: Sunflare
+      element: Light
+      power: INT x 570%
+      ap: 42
+      maxHits: 6
+      
+  rush:
+    name: "Celestial Calling"
+    picture: Celestial_Calling_Eve
+    element: Light
+    shortEffects: Revives incapacitated allies (Party) and INT +100% (Self/20s)
+    effects: 
+      - desc: Revives at 1 HP
+        all: true
+      - desc: INT +100%
+        duration: 20
+        meta:
+          priority: 4
+          buff: INT
+          buffValue: 100
+    power: INT x 3500%
+    maxHits: 10
+    
+  notes: >
+      _Actually our first significant GL exclusive buff, putting her more in line with other healers. Her rush gain and cast times are still abysmal, but it actually does feel usable. Be careful, as her cast times are not to be understated - you can definitely feel the length of her spells, and they will put you stationary for a lengthy time (it also means you have to pick the spell you cast wisely). Ideally your team shouldn't be in the position to die with a healer, but in the case it happens, you'll put them right back on their feet. Slight INT buffs if you happen to be with a caster, and a slight damage buff in the form of rush damage._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Can revive party members by rushing
+      
+      - Powerful post rush self buff that gives insane healing and damage
+      
+      - Consistent damage
+      
+      - Buffs INT and rush damage
+      
+      - Hard hitting rush compared to most healers
+      
+      
+      **Cons**
+      
+      - Abysmal rush gain
+      
+      - Lack of powerful buffs for the party
+      
+      - Lack of a good talent that helps survivability
+      
+      
+      **Rotation**
+      
+      *(Normal >) Lancer/Comet^n - Rush Gain, Lancer or Comet depending on target.*
+
+      *Normal > Comet > Faerie - More potent healing w/ Rush Gain*
+
+      *Faerie^n - Healing and Rush Gain*
+ 
+- name: Sarah Jerand
+  cat: jp
+  picture: Sarah
+  weapon: staff
+  ace: false
+  limited: false
+  star: 5
+
+  stats:
+    hp: 12495
+    atk: 1575
+    int: 2179
+    def: 1208
+    hit: 973
+    grd: 1050
+
+  talents:
+    - name: "Beat of My Drum II"
+      effects: 
+        - desc: AP recovery +30% at long range
+          all: true
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffCondition: Long Range
+            buffValue: 30
+    - name: "Healer's Touch II"
+      effects: 
+        - desc: Recovers 5% of max HP every 5 seconds
+          all: Long Range Weapons
+    - name: "Purge II"
+      shortEffects: Nullifies poison/paralysis for 90 seconds(Party)
+      effects: 
+        - desc: Nullifies poison for 90 seconds
+          all: true
+        - desc: Nullifies paralysis for 90 seconds
+          all: true
+    - name: "Premonitions"
+      effects: 
+        - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
+
+  skills:
+    - name: "Faerie Light"
+      picture: Faerie_Light
+      power: INT x 250%
+      ap: 60
+      notes: Party Heal
+      maxHits: 1  
+    - name: "Wind Blade"
+      picture: Wind_Blade
+      element: Wind
+      power: INT x 190%
+      ap: 20
+      maxHits: 2
+    - name: "Angel Feather"
+      picture: Angel_Feathers
+      power: 0%
+      ap: 95
+      notes: ATK/INT/DEF/HIT/GRD +20% (Party/20s)
+      maxHits: 1
+      meta:
+        priority: 2
+        buffs:
+          - ATK
+          - INT
+          - DEF
+          - HIT
+          - GRD
+        buffValue: 20
+    - name: "Tornado"
+      picture: Tornado
+      element: Wind
+      power: INT x 460%
+      ap: 35
+      maxHits: 2
+      
+  rush:
+    name: "Healing Blast Hurricane"
+    picture: Healing_Blast_Hurricane_Sarah
+    element: Wind
+    shortEffects: Recovers 70% of max HP and nullifies poison/paralysis (Party)
+    effects: 
+      - desc: Recovers 70% HP
+        all: true
+      - desc: Nullifies poison
+        all: true
+      - desc: Nullifies paralysis
+        all: true
+    power: INT x 2000%
+    maxHits: 11
+    
+  notes: >
+      _Discount Rena for ranged units. She's an non-ACE, which means lower stats but easier LBs, so it's a decent trade-off. Her main goal is to throw Angel Feather on the team and exist. However, being another staff unit with no cast-time redux means that her rush gain and heal timing will both be a bit slow. It's likely that a team will consistently need to 3-rush without her due to having to spend time with AF upkeep. Minor benefits to ranged units like Maria, who enjoy the AP recovery. Minor cleric, for specifc status effects._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - 5 star non-ace so is cheaper to max limit break and augment
+      
+      - Immunity to Poison and Paralysis.
+      
+      - Her rush is an excellent clutch heal and includes party cleanse.
+      
+      - Grit talent makes her hard to kill.
+      
+      - Angel Feather stacks with all party passive buffs.
+      
+      
+      **Cons**
+      
+      - 5 star non-ace so has less stats
+      
+      - Slow cast times, staff casting animation and ridiculous AP costs makes clutch healing very difficult.
+      
+      - Angel Feather actively interferes with her reliability due to its lengthy cast time & AP cost.
+      
+      - Slow rush gain
+      
+      - Poor damage
+      
+      
+      **Rotation**
+      
+      *Angel Feather - Buff, reapply as necessary.*
+
+      *Normal > Tornado > Faerie - Rush Gain*
+
+      *Faerie^n - Healing*
+
+- name: Precis F. Neumann (Winter)
+  cat: jp
+  picture: Holy_White_Precis
+  weapon: staff
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 13860
+    atk: 1733
+    int: 2494
+    def: 1365
+    hit: 1057
+    grd: 1141
+
+  talents:
+    - name: "Anniversary Celebration II"
+      effects: 
+        - desc: Symbology cast time -60%
+          all: true
+          meta:
+            priority: 1
+            buff: Cast Time Reduction
+            buffValue: 60
+        - desc: Hitcount timer +2 seconds
+          all: true
+    - name: "Twinkle Twinkle Little Star II"
+      effects: 
+        - desc: Evasion AP cost -50%
+          all: true
+        - desc: Movement rate +30%
+          all: true
+    - name: "A Christmas Miracle"
+      effects: 
+        - desc: Recovers some AP for all allies when using offensive symbology          
+    - name: "Trump Card"
+      shortEffects: Critical hit chance and critical damage dealt +20%/+30% when hitcount is >50/>100 (Party)
+      effects: 
+        - desc: Critical hit chance +20% when hitcount is >50
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: Hit Count > 50
+            buffValue: 20
+        - desc: Critical damage dealt +20% when hitcount is >50
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Damage
+            buffCondition: Hit Count > 50
+            buffValue: 20
+        - desc: Critical hit chance +30% when hitcount is >100
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: Hit Count > 100
+            buffValue: 30
+        - desc: Critical damage dealt +30% when hitcount is >100
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Damage
+            buffCondition: Hit Count > 100
+            buffValue: 30
+
+  skills:
+    - name: "Sacred Faerie Light"
+      picture: Faerie_Light
+      power: INT x 250%
+      ap: 60
+      notes: Recover some HP for all allies
+      maxHits: 1  
+    - name: "Sacred Lancer"
+      picture: Radiant_Lancer
+      element: Light
+      power: INT x 260%
+      ap: 19
+      notes: Allies recover 6 AP
+      maxHits: 8
+    - name: "Sacred Rings"
+      picture: Aurora_Rings
+      element: Light
+      power: INT x 280%
+      ap: 22
+      notes: Allies recover 7 AP
+      maxHits: 5
+    - name: "Prismatic Rays"
+      picture: Prismatic_Rays
+      element: Light
+      power: INT x 880%
+      ap: 33
+      notes: Allies recover 9 AP
+      maxHits: 12
+      
+  rush:
+    name: "Magical Present"
+    picture: Magical_Present_Xmas_Precis
+    element: Light
+    shortEffects: Recovers 15% of max HP every 3 seconds and critical hit chance +30% (Party/20s)
+    effects: 
+      - desc: Recovers 15% of max HP every 3 seconds
+        all: true
+        duration: 20
+      - desc: Critical hit chance +30%
+        all: true
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 30
+    power: INT x 3000%
+    maxHits: 5
+    
+  notes: >
+      _Comes with a number of uncommon buffs, though unfortunately thanks to 9S's existence, her mobility is not absolutely unique anymore. That said, she cuts cast time for everyone, including herself, at even a higher rate than most self-buffs. AP battery with crit rate/damage buffing, overall a very reasonable filler for anyone wanting to play a Healer or missed / doesn't like SSophia. Postrush she gives her crit rate buff without the hitcount, and regen for Nier comps helps with not needing to actively sustain them._
+      
+      
+      **TL DR**
+      
+      
+      **Pros**
+
+
+      - Strong buffing, inc. movement buffs, hit count buffs and an excellent post-rush buff.
+      
+      - Grants AP to the party when using offensive spells.
+      
+      - Great invoking time reduction for the party.
+           
+      - Hit count timer extension gives good synergy with hit count characters.
+
+
+      **Cons**
+
+      - Staff animations
+      
+      - High animation lock; struggles against fast moving targets.
+      
+      - Sacred Lancer's damage and rush gain are backloaded onto the final hit, adding insult to injury.
+      
+      - Lack of AP reduction talent
+      
+      - Lack of talent to help surviability
+      
+      
+      **Rotation**
+      
+      *Normal > Rays > Lancer/Rings > Rays^n - Must be cast before normal attack hits.*
+      
+      *Faerie^n - Healing*
+
+- name: Relia
+  cat: jp
+  picture: Relia
+  weapon: staff
+  ace: true
+  limited: false
+  star: 5
+
+  stats:
+    hp: 12285
+    atk: 1733
+    int: 2494
+    def: 1549
+    hit: 1057
+    grd: 1148
+
+  talents:
+    - name: "Golden Intentions II"
+      effects: 
+        - desc: AP recovery +50% when HP is 100%
+          all: true
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffCondition: HP is 100%
+            buffValue: 50
+    - name: "A Sister's Prayer II"
+      effects: 
+        - desc: Recovers 5% of max HP every 3 seconds
+          all: true
+    - name: "Forehead Symbology"
+      shortEffects: Nullifies movement rate/AP recovery rate reduction fields (Short Range Weapons/Self)
+      effects: 
+        - desc: Nullifies AP recovery rate reduction fields
+          all: Short Range Weapons/Self
+        - desc: Nullifies movement rate reduction fields
+          all: Short Range Weapons/Self          
+    - name: "Dreams of the Future"
+      effects: 
+        - desc: Symbology cast time -50%
+          meta:
+            priority: 4
+            buff: Cast Time Reduction
+            buffValue: 50
+
+  skills:
+    - name: "Enraging Faerie Light"
+      picture: Faerie_Light
+      power: INT x 230%
+      ap: 60
+      notes: ATK +20% (Party/15s) and recover some HP for all allies
+      maxHits: 1
+      meta:
+        priority: 2
+        buff: ATK
+        buffValue: 20  
+    - name: "Radiant Lancer"
+      picture: Radiant_Lancer
+      element: Light
+      power: INT x 300%
+      ap: 27
+      maxHits: 8
+    - name: "Brute Enlightenment"
+      picture: Enlightment
+      power: 0%
+      meta:
+        priority: 2
+        buff: INT
+        buffValue: 25
+      ap: 65
+      notes: INT +25% and ATK damage taken -15% (Party/20s)
+      maxHits: 1
+    - name: "Aurora Rings"
+      picture: Aurora_Rings
+      element: Light
+      power: INT x 460%
+      ap: 35
+      maxHits: 5
+      
+  rush:
+    name: "Freeze Time"
+    picture: Freezing_Clock_Relia
+    element: Ice
+    shortEffects: Single target damage +30% and recovers 15% of max HP every 3 seconds (Party/20s)
+    effects: 
+      - desc: Single target damage +30%
+        all: true
+        duration: 20
+        meta:
+          priority: 1
+          buff: Single Target Damage
+          buffValue: 30
+      - desc: Recovers 15% of max HP every 3 seconds
+        all: true
+        duration: 20
+    power: INT x 2500%
+    maxHits: 10
+    
+  notes: >
+      _The smol is here. As a main healer she's not bad, the regen to all allows her to focus on reapplying buff without worrying as much about her teammates, and helps maintain chip damage for 100HP conditionals. Additionally, she applies buffing on her heal, and then has a combo buff which can be applied manually. She benefits both caster and attacker parties, while also bulking a bit when lacking ATK damage down specifically._
+
+      _[Potential] - Relia is uniquely good at being an autohealer, consider that her buff is paired with her heal, both her rush gain and buffing are not gimped. Just make sure you don't equip any attack skills, or she may waste time._
+      
+      
+      **TL DR**
+      
+     
+      **Pros**
+      
+      - Both Faerie Light and Brute Englightenment (INT only) buffs stack with all passive party buffs, which is impressive utility.
+      
+      - Faerie Light having a Growth buff baked in makes it so much easier to maintain.
+      
+      - Talents that cover many of the AI's worst flaws in single player parties.
+      
+      - One of the most future proof characters in her niche.
+      
+      - Great invoking time reduction.
+      
+      - Rare single target DMG buff on her rush.
+      
+      
+      **Cons**      
+      
+      - Staff animations and high AP costs.
+      
+      - Abysmal damage, among the worst in the game.
+      
+      - Attempting to maintain both Brute Enlightenment and Faerie Light really screws her rush gain.
+      
+      - Brute Enlightenment is a dead spell in most comps, and horrible in AI hands. Unequip it immediately for single player.
+      
+      - Low natural surviability.
+
+
+      **Rotation**   
+     
+      - Enraging Faerie Light (Healing)
+      
+      - Normal > Enraging Faerie Light > Radiant Lancer/Aurora Rings ("Damage" rotation, best for rush gain)
+
+      - Brute Enlightenment (Re-apply when necessary)*  
+
+- name: Fina
+  cat: jp
+  picture: Fina
+  weapon: bow
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 12600
+    atk: 1773
+    int: 2482
+    def: 1537
+    hit: 1050
+    grd: 1134
+
+  talents:
+    - name: "Straight Shooter"
+      effects: 
+        - desc: Recovers AP for all allies when using Aim and Bright Shower  
+    - name: "White Mage"
+      effects: 
+        - desc: Nullifies HP reduction fields
+          all: Short Range Weapons/Self       
+    - name: "Cleansing Prayer II"
+      effects: 
+        - desc: Symbology cast time -70%
+          meta:
+            priority: 1
+            buff: Cast Time Reduction
+            buffValue: 70
+        - desc: No flinching when casting symbology
+    - name: "Distinguished Soul"
+      effects: 
+        - desc: Normal attack AP recovery +100%
+          meta:
+            priority: 1
+            buff: AP Recovery From Normal Attacks
+            buffValue: 100
+
+  skills:
+    - name: "Aim"
+      picture: Aim
+      power: INT x 270%
+      ap: 25
+      notes: Allies recover 4 AP
+      maxHits: 1
+    - name: "Bright Shower"
+      picture: Bright_Shower
+      element: Light
+      power: INT x 520%
+      ap: 40
+      notes: Allies recover 9 AP
+      maxHits: 12      
+    - name: "Curaga"
+      picture: Curaga
+      power: INT x 290%
+      ap: 60
+      notes: Recover a lot of HP for all allies
+      maxHits: 1
+    - name: "Cheer"
+      picture: Cheer
+      power: 0%
+      ap: 85
+      notes: ATK/INT/DEF +25% (Party/20s)
+      maxHits: 1
+      meta:
+        priority: 2
+        buffs:
+          - ATK
+          - INT
+          - DEF
+        buffValue: 25
+      
+  rush:
+    name: "Heaven's Judgment"
+    picture: Heaven's_Judge_Fina
+    element: Light
+    shortEffects: Recovers 70% of max HP and critical hit chance +30% (Party/20s)
+    effects: 
+      - desc: Recover 70% HP
+        all: true
+      - desc: Critical hit chance +30%
+        all: true
+        duration: 20
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 30
+    power: INT x 2500%
+    maxHits: 3
+    
+  notes: >
+      _Fina bundles up everything that we've gotten in a healer all in one. She has a half buff compared to Angel Feather, AP battery, heals of course, and crit on rush. Unconditional super armor means F1/2 mobs can't interrupt her, nor can minor boss attacks (or even big ones), which can be useful for tanking through boss attacks as long as you survive the initial hit. Minor cast time buff and increased AP given on Aim compared to JP are nice QOL changes._
+      
+      **TL DR**
+
+
+      **Pros**
+
+      - Cheer is a very powerful buffing skill
+      
+      - Grants AP to the party when using offensive skills
+      
+      - Great personal invoking time reduction.
+           
+      - Not elemental locked, can wield imbue weapons
+
+
+      **Cons**
+
+      - Has Bow AI
+      
+      - Not a great AP battery compared to other healers
+      
+      - Lack of AP reduction talent
+      
+      - Lack of talent to help surviability
+
+
+      **Rotation**
+      
+      *Cheer - Buff, reapply as necessary.*
+
+      *(Normal > Aim) > Curaga - Feed/Healing*
+
+      *Normal > Aim^n - Rush Gain/Party AP Feeding, the general spam you'll be doing when not healing or buffing.*
+
+      *Normal > Aim > Shower > Aim^n - If you're planning on dropping Curaga to be a AP battery bot with HC and some sort of DPS contribution.*
+
+      *10% AP reduction can allow chains using Cheer > Aim and ensures a 5th Aim.*
+      
+- name: Welch Vineyard (Valentine)
+  cat: jp
+  picture: Dreamful_Welch
+  weapon: tome
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15447
+    atk: 1747
+    int: 2898
+    def: 1327
+    hit: 1043
+    grd: 1141
+
+  talents:
+    - name: "Lady’s Charm II"
+      effects: 
+        - desc: Damage taken +30% when HP is under 50%
+          all: Enemies
+          meta:
+            priority: 3
+            buff: Enemy Damage Taken
+            buffCondition: HP > 50%
+            buffValue: 50
+    - name: "Beach Body II"
+      effects:
+        - desc: ATK damage dealt +10%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK Damage
+            buffValue: 10
+        - desc: INT damage dealt +10%
+          all: true
+          meta:
+            priority: 1
+            buff: INT Damage
+            buffValue: 10
+        - desc: ATK damage dealt +25% when skill chain is >3
+          all: true
+          meta:
+            priority: 3
+            buff: ATK Damage
+            buffCondition: Skill Chain 3+
+            buffValue: 25
+        - desc: INT damage dealt +25% when skill chain is >3
+          all: true
+          meta:
+            priority: 3
+            buff: INT Damage
+            buffCondition: Skill Chain 3+
+            buffValue: 25
+    - name: "Brains & Beauty"
+      effects: 
+        - desc: AP cost -20%
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 20
+        - desc: No flinching when casting symbology
+    - name: "Troublemaker"
+      shortEffects: INT +15% and HP +10%
+      effects: 
+        - desc: INT +15%
+          meta:
+            priority: 4
+            buff: INT
+            buffValue: 15
+        - desc: HP +10%
+          meta:
+            priority: 4
+            buff: INT
+            buffValue: 10
+
+  skills:
+    - name: "Faerie Light"
+      picture: Faerie_Light
+      power: INT x 250%
+      ap: 60
+      notes: Recover some HP for all allies
+      maxHits: 1  
+    - name: "Earth Glaive Infatuation"
+      picture: Earth_Glaive
+      element: Earth
+      power: INT x 460%
+      ap: 28
+      maxHits: 2
+    - name: "Infatuated Crush"
+      picture: Crush
+      element: Earth
+      power: INT x 160%
+      ap: 15
+      maxHits: 2
+    - name: "Gluttony Bog"
+      picture: Gluttony_Bog
+      element: Earth
+      power: INT x 840%
+      ap: 34
+      maxHits: 13
+      
+  rush:
+    name: "Sweet Pressure"
+    picture: Sweet_Pressure_Valentine_Welch
+    element: Earth
+    effects: 
+      - desc: Recovers 70% of max HP
+        all: true
+      - desc: DEF -40%
+        all: Enemies
+        duration: 20
+        meta:
+          priority: 1
+          buff: Enemy DEF Reduction
+          buffValue: 40
+    power: INT x 3500%
+    maxHits: 1
+    
+  notes: >
+      _A fairly unique healer, due to her buffing and rush buff. DEF down is subpar as always, but it's a bonus which can increase DPS when lacking crit, so it's not all bad. Paired with the still uncommon ATK/INT Damage pre-rush and a unique damage taken to help finish bosses faster, she's actually quite a respectable buffer for the team. Unconditional casting superarmor tops this off, which will help her maintain her buff and heals._
+      
+      
+      **TL DR**
+      
+     
+      **Pros**
+      
+      - Built in AP reduction and self INT and HP buffs.
+      
+      - Deals good damage compared to other healers.
+      
+      - Decent buffs that boost ATK & INT damage.
+      
+      - Super armor while casting.
+      
+      - Tome Caster
+      
+      - Strong de-buffs
+      
+      
+      **Cons**      
+      
+      - Earth locked.
+      
+      - Lacks traits to help surviability beyond a HP buff.
+      
+      - Her good buffs won't age well.
+      
+      - Doesn't bring any combat buffs or AP feeding unlike other top healers.
+
+
+      **Rotation**   
+     
+      - Faerie Light (Healing)
+      
+      - Normal > Gluttony Bog > Earth Glaive Infatuation > Gluttony Bog  (Damage rotation)
+
+      - Normal > Gluttony Bog > Earth Glaive Infatuation > Gluttony Bog > Gluttony Bog (Damage rotation 104+ AP)
+      - Normal > Gluttony Bog > Faerie Light > Gluttony Bog  (Rush Gain rotation)
+
 - name: Sophia Esteed (Summer)
   cat: jp
   rating: 4
