@@ -1,4 +1,506 @@
 
+- name: Heinrich (Robust)
+  cat: jp
+  picture: Huge_Sword_Heinrich
+  weapon: greatsword
+  ace: false
+  limited: false
+  star: 3
+
+  stats:
+    hp: 7795
+    atk: 988
+    int: 1120
+    def: 761
+    hit: 544
+    grd: 623
+
+  talents:
+    - name: "Weapons Upgrade II"
+      effects: 
+        - desc: DEF +30% at long range
+          all: true
+          meta:
+            priority: 1
+            buff: DEF
+            buffCondition: Long Range
+            buffValue: 30
+    - name: "Valiant Soul II"
+      effects:
+        - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
+          all: false
+        
+  skills:
+    - name: "Radiant Lancer"
+      picture: Radiant_Lancer
+      element: Light
+      power: INT x 300%
+      ap: 27
+      maxHits: 8
+    - name: "Healing"
+      picture: Healing
+      power: INT x 170%
+      ap: 40
+      maxHits: 1
+    - name: "Faerie Healing"
+      picture: Faerie_Healing
+      power: INT x 60%
+      ap: 50
+      maxHits: 1
+
+  rush:
+    name: "Revised Sunflare"
+    picture: Revised_Sunflare_Robust_Heinrich
+    effects:
+      - desc: Damage taken -50%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Damage Taken Reduction
+          buffValue: 50
+    power: INT x 2500%
+    maxHits: 6
+
+- name: Pamela (Seer)
+  cat: jp
+  picture: Jewel_Pamela
+  weapon: orb
+  ace: false
+  limited: false
+  star: 3
+
+  stats:
+    hp: 6808
+    atk: 929
+    int: 1379
+    def: 817
+    hit: 574
+    grd: 628
+
+  talents:
+    - name: "Amateur Orb-Wielder II"
+      effects: 
+        - desc: INT +15%
+          all: false
+          meta:
+            priority: 4
+            buff: INT
+            buffValue: 15
+    - name: "Hope for the Future III"
+      effects:
+        - desc: Symbology cast time -60% at long range
+          all: false
+          meta:
+            priority: 1
+            buff: Cast Time Reduction
+            buffCondition: Long Range
+            buffValue: 60
+    - name: "Prayer for Peace"
+      effects:
+        - desc: 80% chance of surviving a lethal attack when at 10% HP or more
+          all: false
+
+  skills:
+    - name: "Earth Glaive"
+      picture: Earth_Glaive
+      element: Earth
+      power: INT x 190%
+      ap: 20
+      maxHits: 2
+    - name: "Healing"
+      picture: Healing
+      power: INT x 170%
+      ap: 40
+      maxHits: 1
+    - name: "Faerie Healing"
+      picture: Faerie_Healing
+      power: INT x 60%
+      ap: 50
+      maxHits: 1
+
+  rush:
+    name: "Revised Crush"
+    picture: Revised_Crush_Seer_Pamela
+    element: Earth
+    effects:
+      - desc: Recovers 20% of max HP every 4 seconds
+        duration: 20
+        all: true
+    power: INT x 2000%
+    maxHits: 2
+   
+- name: Chloe
+  cat: jp
+  picture: Chloe
+  weapon: staff
+  ace: false
+  limited: false
+  star: 3
+
+  stats:
+    hp: 6540
+    atk: 929
+    int: 1199
+    def: 817
+    hit: 593
+    grd: 628
+
+  talents:
+    - name: "Greater Blessings of the Wind"
+      effects: 
+        - desc: DEF +20% 
+          all: true
+          meta:
+            priority: 4
+            buff: DEF
+            buffValue: 20
+    - name: "Rebound IV"
+      effects:
+        - desc: 80% chance of surviving a lethal attack when at 10% HP or more
+          all: false
+        
+  skills:
+    - name: "Healing"
+      picture: Healing
+      power: INT x 170%
+      ap: 40
+      maxHits: 1
+    - name: "Lightning Blast"
+      picture: Lightning
+      element: Lightning
+      power: INT x 220%
+      ap: 23
+      maxHits: 10
+    - name: "Faerie Healing"
+      picture: Faerie_Healing
+      power: INT x 60%
+      ap: 50
+      maxHits: 1
+
+  rush:
+    name: "Revised Plasma Cyclone"
+    picture: Revised_Plasma_Cyclone_Chloe
+    element: Lightning
+    effects:
+      - desc: Damage taken -50% 
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Damage Taken Reduction
+          buffValue: 50
+    power: INT x 2500%
+    maxHits: 6
+
+- name: Winny
+  cat: jp
+  picture: Winny
+  weapon: staff
+  ace: false
+  limited: false
+  star: 3
+
+  stats:
+    hp: 6629
+    atk: 942
+    int: 1222
+    def: 817
+    hit: 581
+    grd: 616
+
+  talents:
+    - name: "Book Smarts"
+      effects: 
+        - desc: ATK damage taken -10%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK Damage Taken Reduction
+            buffValue: 10
+    - name: "Kindness Is a Virtue III"
+      effects: 
+        - desc: Recovers 3% of max HP every 3 seconds
+          all: false
+
+  skills:
+    - name: "Healing"
+      picture: Healing
+      power: INT x 170%
+      ap: 40
+      maxHits: 1
+    - name: "Tornado"
+      picture: Tornado
+      element: Wind
+      power: INT x 460%
+      ap: 35
+      maxHits: 2
+    - name: "Ex Healing"
+      picture: Ex_Healing
+      power: INT x 330%
+      ap: 50
+      maxHits: 1
+      
+  rush:
+    name: "Revised Blast Hurricane"
+    picture: Revised_Blast_Hurricane_Winny
+    element: Wind
+    effects: 
+      - desc: Recovers 100% HP
+        all: true
+    power: INT x 2500%
+    maxHits: 6
+
+- name: Dominic (Scholar)
+  cat: jp
+  picture: Manuscript_Dominic
+  weapon: tome
+  ace: false
+  limited: false
+  star: 3
+
+  stats:
+    hp: 7525
+    atk: 963
+    int: 1166
+    def: 751
+    hit: 557
+    grd: 628
+
+  talents:
+    - name: "Sweet Whispers II"
+      effects: 
+        - desc: ATK damage taken -20% when in front of target
+          all: true
+          meta:
+            priority: 1
+            buff: ATK Damage Taken Reduction
+            buffCondition: In Front of Target
+            buffValue: 20
+    - name: "Moment of Bliss III"
+      effects: 
+        - desc: Recovers 3% of max HP every 3 seconds
+          all: false
+
+  skills:
+    - name: "Lightning Blast"
+      picture: Lightning
+      element: Lightning
+      power: INT x 220%
+      ap: 23
+      maxHits: 10
+    - name: "Healing"
+      picture: Healing
+      power: INT x 170%
+      ap: 40
+      maxHits: 1
+    - name: "Faerie Healing"
+      picture: Faerie_Healing
+      power: INT x 60%
+      ap: 50
+      maxHits: 1
+      
+  rush:
+    name: "Revised Lightning Strike"
+    picture: Revised_Lightning_Strike_Manuscript_Dominic
+    element: Lightning
+    effects: 
+      - desc: Recovers 100% HP
+        all: true
+    power: INT x 2500%
+    maxHits: 10
+
+- name: Sidonius
+  cat: jp
+  picture: Sidonius
+  weapon: staff
+  ace: false
+  limited: false
+  star: 3
+
+  stats:
+    hp: 7525
+    atk: 952
+    int: 1379
+    def: 728
+    hit: 574
+    grd: 611
+
+  talents:
+    - name: "Gentleman's Acumen II"
+      effects: 
+        - desc: INT +15%
+          all: false
+          meta:
+            priority: 4
+            buff: INT
+            buffValue: 15
+    - name: "Troubleshooter III"
+      effects: 
+        - desc: Symbology cast time -30%
+          all: false
+          meta:
+            priority: 1
+            buff: Cast Time Reduction
+            buffValue: 30
+    - name: "A Gentleman's Pride"
+      effects: 
+        - desc: 80% chance of surviving a lethal attack when at 10% HP or more
+          all: false
+
+  skills:
+    - name: "Healing"
+      picture: Healing
+      power: INT x 170%
+      ap: 40
+      maxHits: 1
+    - name: "Plunging Fire Bolts"
+      picture: Fire_Bolts
+      element: Fire
+      power: INT x 200%
+      ap: 20
+      maxHits: 6
+    - name: "Antidote"
+      picture: Antidote
+      power: 0%
+      notes: Cures poison
+      ap: 20
+      maxHits: 1
+      
+  rush:
+    name: "Revised Volcanic Burst"
+    picture: Revised_Volcanic_Burst_Sidonius
+    element: Fire
+    effects: 
+      - desc: Recovers 20% of max HP every 4 seconds
+        duration: 20
+        all: true
+    power: INT x 2000%
+    maxHits: 13
+
+- name: Hana
+  cat: jp
+  picture: Hana
+  weapon: staff
+  ace: false
+  limited: false
+  star: 4
+
+  stats:
+    hp: 10185
+    atk: 1444
+    int: 1799
+    def: 1274
+    hit: 861
+    grd: 952
+
+  talents:
+    - name: "Greater Revered Genius"
+      effects: 
+        - desc: ATK damage taken -20%
+          all: true
+          meta:
+            priority: 4
+            buff: ATK Damage Taken Reduction
+            buffValue: 20
+    - name: "A Woman of Culture III"
+      effects: 
+        - desc: Recovers 3% of max HP every 3 seconds
+          all: false
+
+  skills:
+    - name: "Healing"
+      picture: Healing
+      power: INT x 170%
+      ap: 40
+      maxHits: 1
+    - name: "Tornado"
+      picture: Tornado
+      element: Wind
+      power: INT x 460%
+      ap: 35
+      maxHits: 2
+    - name: "Faerie Light"
+      picture: Faerie_Light
+      power: INT x 250%
+      ap: 60
+      notes: Party Heal
+      maxHits: 1
+    - name: "Blast Hurricane"
+      picture: Blast_Hurricane
+      element: Wind
+      power: INT x 670%
+      ap: 42
+      maxHits: 6
+      
+  rush:
+    name: "Sylvan Waltz"
+    picture: Sylvan_Waltz_Hana
+    element: Wind
+    effects: 
+      - desc: Recovers 100% HP
+        all: true
+    power: INT x 2500%
+    maxHits: 6
+
+- name: Raffine
+  cat: jp
+  picture: Raffine
+  weapon: staff
+  ace: false
+  limited: false
+  star: 4
+
+  stats:
+    hp: 10080
+    atk: 1432
+    int: 1811
+    def: 1274
+    hit: 875
+    grd: 945
+
+  talents:
+    - name: "Placid Waters"
+      effects: 
+        - desc: Nullifies status ailments for 180 seconds
+          all: false
+
+  skills:
+    - name: "Healing"
+      picture: Healing
+      power: INT x 170%
+      ap: 40
+      maxHits: 1
+    - name: "Explosion"
+      picture: Explosion
+      element: Fire
+      power: INT x 460%
+      ap: 35
+      maxHits: 14
+    - name: "Cure Condition"
+      picture: Cure_Condition
+      power: 0%
+      notes: Cure all status ailments
+      ap: 40
+      maxHits: 1
+    - name: "Volcanic Burst"
+      picture: Volcanic_Burst
+      element: Fire
+      power: INT x 670%
+      ap: 42
+      maxHits: 13
+      
+  rush:
+    name: "Trident Strike"
+    picture: Trident_Strike_Raffine
+    element: Lightning
+    effects: 
+      - desc: Nullifies status ailments
+        all: true
+        duration: 20
+    power: INT x 2000%
+    maxHits: 10
+
 - name: Sophia Esteed (Summer)
   cat: jp
   rating: 4
