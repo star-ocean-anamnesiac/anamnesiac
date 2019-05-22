@@ -1,3 +1,629 @@
+["Angelica","Hal (Iron-Arm)","Andre (Armed)","Heinrich","Marcelle","Farleen","Tynave","Gunter","Ted","Shimada","Stephen D. Kenny","Gideon","Renier","Miki Sauvester","Millie Chliette","Rena Lanford","Nel Zelpher (Oracle)","Evelysse","Sarah Jerand","Precis F. Neumann (Winter)","Relia","Fina","Welch Vineyard (Valentine)","Heinrich (Robust)","Pamela (Seer)","Chloe","Winny","Dominic (Scholar)","Sidonius","Hana","Raffine","Winny (Seer)","Eleanor (Seer)","Seth","Rochelle","Welch Vineyard","Eleyna Farrence","Bernard","Clair Lasbard (Valentine)","Hal","Eleanor","Boris","Katarina","Dominic","Pamela","Amina","Pavine","Milla Bachtein","Delacroix"]
+
+
+
+- name: Andre
+  cat: jp
+  picture: Andre
+  weapon: ohs
+  star: 3
+
+  stats:
+    hp: 8780
+    atk: 1299
+    int: 830
+    def: 1075
+    hit: 616
+    grd: 438
+
+  talents:
+    - name: "Young General"
+      effects: 
+        - desc: Critical hit chance +10%
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffValue: 10
+    - name: "Mischievous Brat"
+      effects:
+        - desc: No flinching when taking damage of 20% of max HP or less
+        
+  skills:
+    - name: "Double Slash"
+      picture: Double_Slash_I
+      power: ATK x 200%
+      ap: 20
+      maxHits: 2
+    - name: "Rising Blade"
+      picture: Rising_Blade
+      power: ATK x 410%
+      ap: 32
+      maxHits: 5
+    - name: "Shotgun Blast"
+      picture: Shotgun_Blast
+      element: Lightning      
+      power: ATK x 190%
+      ap: 20
+      maxHits: 4
+
+  rush:
+    name: "Revised Stampede Slash"
+    picture: Revised_Stampede_Slash_Andre
+    effects:
+      - desc: Critical hit chance +40%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 40
+    power: ATK x 2500%
+    maxHits: 6
+
+- name: Angelica
+  cat: jp
+  picture: Angelica
+  weapon: knuckle
+  star: 3
+
+  stats:
+    hp: 8510
+    atk: 1689
+    int: 840
+    def: 1054
+    hit: 623
+    grd: 455
+
+  talents:
+    - name: "Battle Prodigy"
+      effects: 
+        - desc: AP cost -20%
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 20
+    - name: "Unconstrained Ambitions III"
+      effects:
+        - desc: ATK +30%
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 30
+    - name: "Fighter's Instinct"
+      effects:
+        - desc: Critical hit chance +20%
+          meta:
+            priority: 4
+            buff: Crit Rate
+            buffValue: 20
+            
+  skills:
+    - name: "Triple Kick"
+      picture: Triple_Kick
+      power: ATK x 250%
+      ap: 24
+      maxHits: 3
+    - name: "Drill Spike"
+      picture: Drill_Spike
+      power: ATK x 190%
+      ap: 20
+      maxHits: 4
+    - name: "X Claw"
+      picture: X_Claw
+      power: ATK x 310%
+      ap: 29
+      maxHits: 6
+
+  rush:
+    name: "Revised Crescent Locus"
+    picture: Revised_Crescent_Locus_Angelica
+    effects:
+      - desc: N/A
+    power: ATK x 4500%
+    maxHits: 4
+
+- name: Hal (Iron-Arm)
+  cat: jp
+  picture: Strong_Arm_Hal
+  weapon: arm
+  ace: false
+  limited: false
+  star: 3
+
+  stats:
+    hp: 9030
+    atk: 1830
+    int: 1310
+    def: 1898
+    hit: 716
+    grd: 490
+
+  talents:
+    - name: "Neophilia III"
+      effects: 
+        - desc: ATK +30% at short range
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 30
+    - name: "Spirit of Innovation"
+      effects:
+        - desc: AP cost -15%
+          all: false
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 15
+        
+  skills:
+    - name: "Rocket Punch"
+      picture: Rocket_Punch
+      power: ATK x 290%
+      ap: 18
+      maxHits: 1
+    - name: "Hammer Slammer"
+      picture: Hammer_Slammer
+      power: ATK x 340%
+      ap: 22
+      maxHits: 6
+    - name: "Jump 'n' Thump"
+      picture: Jump_n_Thump
+      power: ATK x 430%
+      ap: 32
+      maxHits: 1
+
+  rush:
+    name: "Revised Force Field"
+    picture: Revised_Force_Field_Iron_Arm_Hal
+    effects:
+      - desc: AP cost -50%
+        duration: 20
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 50
+    power: ATK x 3000%
+    maxHits: 10
+
+- name: Andre (Armed)
+  cat: jp
+  picture: Anti_Sword_Andre
+  weapon: dualswords
+  star: 3
+
+  stats:
+    hp: 8780
+    atk: 1299
+    int: 817
+    def: 1075
+    hit: 616
+    grd: 443
+
+  talents:
+    - name: "Knight's Ambition II"
+      effects: 
+        - desc: Critical hit chance +20% when behind target
+          all: true
+          meta:
+            priority: 3
+            buff: Crit Rate
+            buffCondition: Behind Target
+            buffValue: 20
+    - name: "Crystalized Effort II"
+      effects:
+        - desc: No flinching when taking damage of 20% of max HP or less
+        
+  skills:
+    - name: "Dextral Edge"
+      picture: Dextral_Edge
+      power: ATK x 150%
+      ap: 14
+      maxHits: 2
+    - name: "Sinistral Edge"
+      picture: Sinistral_Edge
+      power: ATK x 150%
+      ap: 14
+      maxHits: 2
+    - name: "Talon Thrust"
+      picture: Talon_Thrust
+      element: Fire
+      power: ATK x 200%
+      ap: 20
+      maxHits: 2
+
+  rush:
+    name: "Revised Sword Dance"
+    picture: Revised_Sword_Dance_Armed_Andre
+    element: Fire
+    effects:
+      - desc: Critical hit chance +40%
+        duration: 20
+        all: true
+        meta:
+          priority: 3
+          buff: Crit Rate
+          buffValue: 40
+    power: ATK x 2500%
+    maxHits: 30
+
+- name: Heinrich
+  cat: jp
+  picture: Heinrich
+  weapon: ohs
+  star: 3
+
+  stats:
+    hp: 8689
+    atk: 1299
+    int: 830
+    def: 1087
+    hit: 604
+    grd: 450
+
+  talents:
+    - name: "Great Chivalry"
+      effects: 
+        - desc: AP cost -8%
+          all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 8
+    - name: "Steel Wall II"
+      effects: 
+        - desc: No flinching when taking damage of 20% of max HP or less
+          all: false
+ 
+  skills:
+    - name: "Side Kick"
+      picture: Side_Kick
+      power: ATK x 250%
+      ap: 24
+      maxHits: 3
+    - name: "Stampede Slash"
+      picture: Stampede_Slash
+      power: ATK x 340%
+      ap: 29
+      maxHits: 6
+    - name: "Cyclone Blade"
+      picture: Cyclone_Blade
+      power: ATK x 310%
+      ap: 29
+      maxHits: 5
+
+  rush:
+    name: "Revised Cyclone Blade"
+    picture: Revised_Cyclone_Blade_Heinrich
+    effects:
+      - desc: AP cost -30%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 30
+    power: ATK x 2500%
+    maxHits: 5
+
+- name: Marcelle
+  cat: jp
+  picture: Marcelle
+  weapon: knuckle
+  star: 3
+
+  stats:
+    hp: 8421
+    atk: 1321
+    int: 817
+    def: 1054
+    hit: 635
+    grd: 450
+
+  talents:
+    - name: "Greater Survival Skills"
+      effects: 
+        - desc: ATK +20%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 20
+    - name: "Signed, Sealed, and Delivered"
+      effects: 
+        - desc: AP cost -15%
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 15
+ 
+  skills:
+    - name: "Crescent Locus"
+      picture: Crescent_Locus
+      power: ATK x 150%
+      ap: 17
+      maxHits: 4
+    - name: "X Claw"
+      picture: X_Claw
+      power: ATK x 310%
+      ap: 29
+      maxHits: 6
+    - name: "Roaring Cartwheel"
+      picture: Roaring_Cartwheel
+      power: ATK x 410%
+      ap: 32
+      maxHits: 5
+
+  rush:
+    name: "Revised Roaring Cartwheel"
+    picture: Revised_Roaring_Cartwheel_Marcelle
+    effects:
+      - desc: AP cost -50%
+        duration: 20
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 50
+    power: ATK x 3000%
+    maxHits: 7
+
+- name: Farleen
+  cat: jp
+  picture: Farleen
+  weapon: ohs
+  ace: false
+  star: 4
+
+  stats:
+    hp: 12915
+    atk: 1943
+    int: 1286
+    def: 1628
+    hit: 938
+    grd: 679
+
+  talents:
+    - name: "Greater Kingmaker"
+      effects: 
+        - desc: AP cost -20%
+          all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 20
+    - name: "Quickest Wit"
+      effects: 
+        - desc: Nullifies poison for 180 seconds
+          all: true
+
+  skills:
+    - name: "Stampede Slash"
+      picture: Stampede_Slash
+      power: ATK x 340%
+      ap: 29
+      maxHits: 6
+    - name: "Air Slash"
+      picture: Air_Slash_I
+      power: ATK x 200%
+      ap: 20
+      maxHits: 1
+    - name: "Air Raid"
+      picture: Air_Raid
+      element: Light
+      power: ATK x 550%
+      ap: 35
+      maxHits: 6
+    - name: "Cyclone Blade"
+      picture: Cyclone_Blade
+      power: ATK x 310%
+      ap: 29
+      maxHits: 5
+
+  rush:
+    name: "Wyrm's Grasp"
+    picture: Wyrm's_Grasp_Farleen
+    element: Earth
+    effects:
+      - desc: Nullifies poison
+        duration: 20
+        all: true
+    power: ATK x 2500%
+    maxHits: 4
+
+- name: Tynave
+  cat: jp
+  picture: Tynave
+  weapon: knuckle
+  ace: false
+  limited: false
+  star: 4
+
+  stats:
+    hp: 12810
+    atk: 1957
+    int: 1274
+    def: 1615
+    hit: 952
+    grd: 679
+
+  talents:
+    - name: "Dazing Diversionary Tactics"
+      effects: 
+        - desc: ATK +30%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 30
+    - name: "Unique Battle Arts"
+      effects: 
+        - desc: AP cost -15%
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 15
+
+  skills:
+    - name: "Hammer of Might"
+      picture: Hammer_of_Might
+      power: ATK x 230%
+      ap: 24
+      maxHits: 1
+    - name: "Drill Spike"
+      picture: Drill_Spike
+      power: ATK x 190%
+      ap: 20
+      maxHits: 4
+    - name: "X Claw"
+      picture: X_Claw
+      power: ATK x 310%
+      ap: 29
+      maxHits: 6
+    - name: "JC Somersault"
+      picture: Sumersault
+      power: ATK x 410%
+      ap: 32
+      maxHits: 3
+
+  rush:
+    name: "Sharp Talons"
+    picture: Sharp_Talons_Tyvane
+    shortEffects: Removes all buffs and DEF -30% (Enemies/20s)
+    effects:
+      - desc: Removes buffs
+        duration: 20
+        all: Enemies
+      - desc: DEF -30%
+        duration: 20
+        all: Enemies
+    power: ATK x 2000%
+    maxHits: 4
+
+- name: Gunter
+  cat: jp
+  picture: Gunter
+  weapon: knuckle
+  star: 4
+
+  stats:
+    hp: 13020
+    atk: 1969
+    int: 1248
+    def: 1628
+    hit: 938
+    grd: 679
+
+  talents:
+    - name: "Impregnable Defense III"
+      effects: 
+        - desc: Nullifies silence for 180 seconds
+          all: true
+    - name: "Bloodlust II"
+      effects: 
+        - desc: Damage dealt to dragons +20%
+          all: true
+          slayer: Dragon
+          slayerPct: 20
+          meta:
+            priority: 4
+            buff: Damage To Dragons
+            buffValue: 20
+
+  skills:
+    - name: "Crescent Locus"
+      picture: Crescent_Locus
+      power: ATK x 150%
+      ap: 17
+      maxHits: 4
+    - name: "Triple Kick"
+      picture: Triple_Kick
+      power: ATK x 250%
+      ap: 24
+      maxHits: 3
+    - name: "JC Somersault"
+      picture: Sumersault
+      power: ATK x 410%
+      ap: 32
+      maxHits: 3
+    - name: "Acrobat Locus"
+      picture: Acrobat_Locus
+      power: ATK x 710%
+      ap: 41
+      maxHits: 7
+
+  rush:
+    name: "Unity Arts"
+    picture: Unity_Arts_Gunter
+    effects:
+      - desc: Nullifies silence
+        duration: 20
+        all: true
+    power: ATK x 2500%
+    maxHits: 4
+
+- name: Ted
+  cat: jp
+  picture: Ted
+  weapon: ohs
+  star: 4
+
+  stats:
+    hp: 13230
+    atk: 1957
+    int: 1274
+    def: 1628
+    hit: 931
+    grd: 655
+
+  talents:
+    - name: "Setting the Tone III"
+      effects: 
+        - desc: Nullifies freeze for 180 seconds
+          all: true
+    - name: "Hidden Talent V"
+      effects: 
+        - desc: Damage dealt to humanoids +20%
+          all: true
+          slayer: Human
+          slayerPct: 20
+          meta:
+            priority: 4
+            buff: Damage To Humans
+            buffValue: 20
+
+  skills:
+    - name: "Double Slash"
+      picture: Double_Slash_I
+      power: ATK x 200%
+      ap: 20
+      maxHits: 2
+    - name: "Shotgun Blast"
+      picture: Shotgun_Blast
+      element: Lightning
+      power: ATK x 190%
+      ap: 20
+      maxHits: 4
+    - name: "Rising Blade"
+      picture: Rising_Blade
+      power: ATK x 410%
+      ap: 32
+      maxHits: 5
+    - name: "Helm Splitter"
+      picture: Helmsplitter
+      power: ATK x 500%
+      ap: 35
+      maxHits: 1
+
+  rush:
+    name: "The Ultimate Ted"
+    picture: The_Ultimate_Ted
+    effects:
+      - desc: Nullifies freeze
+        duration: 20
+        all: true
+    power: ATK x 2500%
+    maxHits: 7
 
 - name: 2B
   cat: jp
