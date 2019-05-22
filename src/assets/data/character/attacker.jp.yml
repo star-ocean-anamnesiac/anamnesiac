@@ -6982,8 +6982,11 @@
             buffCondition: Hit Count > 150
             buffValue: 60
     - name: "Explosive"
+      shortEffects: DEF -30% when hit by Welch Rock Bomber (Enemies/10s)
       effects: 
         - desc: DEF -30% when hit by Welch Rock Bomber
+          all: Enemies
+          duration: 10
           meta:
             priority: 1
             buff: Enemy DEF Reduction
