@@ -6212,3 +6212,119 @@
           buffValue: 60
     power: INT x 2500%
     maxHits: 5    
+
+- name: Clair Lasbard (Valentine)
+  cat: jp
+  picture: Girl's_Day_Clair
+  weapon: bow
+  limited: true
+  star: 5
+
+  stats:
+    hp: 12705
+    atk: 2048
+    int: 1418
+    def: 1601
+    hit: 1141
+    grd: 854
+
+  talents:
+    - name: "Demon Girl II"
+      effects: 
+        - desc: Damage dealt to humanoids +40%
+          meta:
+            priority: 4
+            buff: Damage To Humans
+            buffValue: 40
+    - name: "Chocolate Temptation II"
+      effects: 
+        - desc: Nullifies poison for 180 seconds
+          all: true
+    - name: "Fine Swordplay"
+      effects: 
+        - desc: AP cost -20%
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 20
+        
+  skills:
+    - name: "Sonic Thorn"
+      picture: Sonic_Thorn
+      power: ATK x 200%
+      ap: 20
+      maxHits: 2
+      highlight: true
+    - name: "Seraphic Thunder"
+      picture: Seraphic_Thunder_II
+      element: Lightning
+      power: ATK x 280%
+      ap: 27
+      maxHits: 8
+    - name: "Hunter’s Moon"
+      picture: Hunter's_Moon
+      power: ATK x 310%
+      ap: 29
+      maxHits: 7
+    - name: "Crimson Squall"
+      picture: Crimson_Squall
+      power: ATK x 250%
+      ap: 24
+      maxHits: 9
+      highlight: true
+      
+  rush:
+    name: "Revised Heavenly Flight"
+    picture: Revised_Heavenly_Flight_Maiden_Clair
+    shortEffects: ATK -20% and DEF -20% (Enemies/30s)
+    effects: 
+      - desc: ATK -20%
+        all: Enemy
+        duration: 30
+        meta:
+          priority: 1
+          buff: Enemy ATK Reduction
+          buffValue: 20
+      - desc: DEF -20%
+        all: Enemy
+        duration: 30
+        meta:
+          priority: 1
+          buff: Enemy DEF Reduction
+          buffValue: 20
+    power: ATK x 2500%
+    maxHits: 4
+    
+  notes: >
+      _Absolutely absymal event unit. That said, her skills are actually very good, and her rush does have a fairly unique ATK down, which is a solid defensive debuff, in theory._
+      
+      **TL DR**
+      
+      
+      **Pros**
+      
+      - Good at building and maintaing Hit Count.
+
+      - Decent rush gain.
+
+      - Effective against Humanoids.
+
+      - Poison Immunity.
+
+      - Unique and strong debuffs.
+      
+      - Free MLB non-ace 5 star.
+      
+
+      **Cons**
+
+      - Non-ace so has less stats.
+
+      - Deals underwhelming damage outside of humanoid fights.
+
+      - Underwhelming buffs.
+      
+      
+      **Rotation**
+      
+      *Normal > Squall > Thunder/Thorn > Squall^n (General Combo.)*    
