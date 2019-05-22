@@ -1,4 +1,264 @@
 
+- name: Shimada
+  cat: jp
+  rating: 0
+  picture: Shimada
+  weapon: bns
+  star: 4
+
+  stats:
+    hp: 18480
+    atk: 1799
+    int: 1248
+    def: 1930
+    hit: 658
+    grd: 868
+
+  talents:
+    - name: "Former Glory III"
+      effects: 
+        - desc: Absorbs 30% of damage dealt by normal attacks as HP
+          all: false
+    - name: "A Filet Mignon!"
+      effects: 
+        - desc:	Recovers 3% of max HP every 3 seconds
+          all: false
+    - name: "Moving up in the World IV"
+      effects: 
+        - desc: No flinching when taking damage of 20% of max HP or less
+          all: Short Range Weapons
+    - name: "Carnivore"
+      effects: 
+        - desc: Damage dealt to beasts +60%
+          all: false
+          slayer: Beast
+          slayerPct: 60
+          meta:
+            priority: 4
+            buff: Damage To Beasts
+            buffValue: 60
+
+  skills:
+    - name: "Double Slash"
+      picture: Double_Slash_II
+      power: ATK x 200%
+      ap: 20
+      maxHits: 2
+    - name: "Vampiric Flash"
+      picture: Vampiric_Flash
+      power: ATK x 220%
+      ap: 32
+      maxHits: 6
+    - name: "Nether Strike"
+      picture: Nether_Strike
+      element: Fire
+      power: ATK x 250%
+      ap: 24
+      maxHits: 5
+    - name: "Air Slash"
+      picture: Air_Slash_II
+      power: ATK x 200%
+      ap: 20
+      maxHits: 1
+      
+  rush:
+    name: "Scarlet Strike"
+    picture: Scarlet_Strike_Shimada
+    element: Fire
+    effects: 
+      - desc:	Recovers 20% of max HP every 4 seconds
+        duration: 20
+        all: false
+    power: ATK x 3000%
+    maxHits: 7
+
+- name: Stephen D. Kenny
+  cat: jp
+  rating: 0
+  picture: Stephen
+  weapon: bns
+  star: 4
+
+  stats:
+    hp: 17010
+    atk: 1811
+    int: 1234
+    def: 2126
+    hit: 658
+    grd: 868
+
+  talents:
+    - name: "Guardian of Light"
+      effects: 
+        - desc: DEF +40%
+          all: true
+          meta:
+            priority: 1
+            buff: DEF
+            buffValue: 40
+        - desc: Damage dealt +10%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 10
+    - name: "Imposing Presence IV"
+      effects: 
+        - desc: No flinching when taking damage of 20% of max HP or less
+          all: Short Range Weapons
+    - name: "Will of the Universe"
+      effects: 
+        - desc: Critical hit chance +20%
+          all: false
+          meta:
+            priority: 4
+            buff: Crit Rate
+            buffValue: 20
+
+  skills:
+    - name: "Mirror Blade"
+      picture: Mirror_Blade_II
+      power: ATK x 610%
+      ap: 38
+      maxHits: 5
+    - name: "Flying Guillotine"
+      picture: Guillotine
+      power: ATK x 370%
+      ap: 32
+      maxHits: 6
+    - name: "Diabolic Whirl"
+      picture: Diabolic_Whirl
+      power: ATK x 340%
+      ap: 29
+      maxHits: 5
+      highlight: true
+    - name: "Dragon Roar"
+      picture: Dragon_Roar
+      power: ATK x 340%
+      ap: 29
+      maxHits: 2
+      element: Dark
+      highlight: true
+      
+  rush:
+    name: "Blade Vortex"
+    picture: Blade_Vortex_Stephen
+    effects: 
+      - desc: No flinching when taking damage of 60% of max HP or less
+        duration: 20
+        all: true
+    power: ATK x 3000%
+    maxHits: 7
+
+- name: Gideon
+  cat: jp
+  rating: 0
+  picture: Gideon
+  weapon: bns
+  ace: false
+  limited: false
+  star: 3
+
+  stats:
+    hp: 11109
+    atk: 1199
+    int: 795
+    def: 1400
+    hit: 438
+    grd: 581
+
+  talents:
+    - name: "Stalwart Defense II"
+      effects: 
+        - desc: Absorbs 15% of damage dealt by normal attacks as HP
+          all: false
+    - name: "Reprieve from Death III"
+      effects:
+        - desc: Recovers 3% of max HP every 3 seconds
+          all: false
+    - name: "Unwavering Faith III"
+      effects: 
+        - desc: No flinching when taking damage of 15% of max HP or less
+          all: Short Range Weapons
+        
+  skills:
+    - name: "Double Slash"
+      picture: Double_Slash_II
+      power: ATK x 200%
+      ap: 20
+      maxHits: 2
+    - name: "Air Slash"
+      picture: Air_Slash_II
+      power: ATK x 200%
+      ap: 20
+      maxHits: 1
+    - name: "Flying Guillotine"
+      picture: Guillotine
+      power: ATK x 370%
+      ap: 32
+      maxHits: 6
+
+  rush:
+    name: "Revised Diabolic Whirl"
+    picture: Revised_Diabolical_Whirl_Gideon
+    effects:
+      - desc: Recovers 20% of max HP every 4 seconds
+        duration: 20
+        all: false
+    power: ATK x 1500%
+    maxHits: 5
+    
+- name: Renier
+  cat: jp
+  rating: 0
+  picture: Renier
+  weapon: bns
+  ace: false
+  limited: false
+  star: 3
+
+  stats:
+    hp: 12003
+    atk: 1166
+    int: 817
+    def: 1299
+    hit: 438
+    grd: 586
+
+  talents:
+    - name: "Enchanting Scents VI"
+      effects: 
+        - desc: Nullifies status ailments for 90 seconds
+        - desc: No flinching when taking damage of 15% of max HP or less
+          all: Short Range Weapons
+
+  skills:
+    - name: "Mirror Blade"
+      picture: Mirror_Blade_II
+      power: ATK x 610%
+      ap: 38
+      maxHits: 5
+    - name: "Vampiric Flash"
+      picture: Vampiric_Flash
+      power: ATK x 220%
+      ap: 32
+      maxHits: 6
+    - name: "Bloodstorm Revolution"
+      picture: Bloodstorm_Revolution
+      power: ATK x 550%
+      ap: 38
+      maxHits: 10
+
+  rush:
+    name: "Revised Mirror Blade"
+    picture: Revised_Mirror_Blade_Renier
+    effects:
+      - desc: Nullifies status ailments
+        duration: 20
+        all: true
+    power: ATK x 2000%
+    maxHits: 5
+
 - name: A2
   cat: jp
   rating: 8
@@ -3184,4 +3444,3 @@
           buffValue: 50
     power: ATK x 5000%
     maxHits: 3
-    

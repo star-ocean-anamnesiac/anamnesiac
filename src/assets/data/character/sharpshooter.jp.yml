@@ -1,4 +1,698 @@
 
+- name: Bernard
+  cat: jp
+  rating: 0
+  picture: Bernard
+  weapon: gun
+  star: 3
+
+  stats:
+    hp: 8510
+    atk: 1199
+    int: 851
+    def: 840
+    hit: 688
+    grd: 490
+
+  talents:
+    - name: "Third Eye"
+      effects: 
+        - desc: Hitcount timer +0.5 seconds
+          all: true
+    - name: "Hidden Talent III"
+      effects:
+        - desc: Critical hit chance +30%
+          meta:
+            priority: 4
+            buff: Crit Rate
+            buffValue: 30
+  skills:
+    - name: "Sonic Thorn"
+      picture: Sonic_Thorn_II
+      power: ATK x 200%
+      ap: 20
+      maxHits: 2
+    - name: "Crimson Squall"
+      picture: Crimson_Squall_I
+      power: ATK x 340%
+      ap: 29
+      maxHits: 9
+    - name: "Hunter's Moon"
+      picture: Hunter's_Moon
+      power: ATK x 370%
+      ap: 32
+      maxHits: 7
+
+  rush:
+    name: "Revised Seraphic Thunder"
+    picture: Revised_Seraphic_Thunder_Bernard
+    element: Lightning
+    effects:
+      - desc: Critical hit chance +50%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 50
+    power: ATK x 2500%
+    maxHits: 8
+
+- name: Hal
+  cat: jp
+  rating: 0
+  picture: Hal
+  weapon: gun
+  star: 3
+
+  stats:
+    hp: 8600
+    atk: 1176
+    int: 817
+    def: 886
+    hit: 670
+    grd: 509
+
+  talents:
+    - name: "Greater Eagle Eye"
+      effects: 
+        - desc: ATK -20%
+          all: Enemies
+          meta:
+            priority: 1
+            buff: Enemy ATK Reduction
+            buffValue: 20
+    - name: "A Rebel Soul II"
+      effects:
+        - desc: No flinching when taking damage of 20% of max HP or less
+          all: true
+        
+  skills:
+    - name: "Sonic Thorn"
+      picture: Sonic_Thorn_II
+      power: ATK x 200%
+      ap: 20
+      maxHits: 2
+    - name: "Seraphic Thunder"
+      picture: Seraphic_Thunder_I
+      element: Lightning
+      power: ATK x 330%
+      ap: 30
+      maxHits: 8
+    - name: "Hunter's Moon"
+      picture: Hunter's_Moon
+      power: ATK x 370%
+      ap: 32
+      maxHits: 7
+
+  rush:
+    name: "Revised Gravity Bullet"
+    picture: Revised_Gravity_Bullet_Hal
+    element: Dark
+    effects:
+      - desc: Damage dealt +80%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Damage
+          buffValue: 80
+    power: ATK x 3000%
+    maxHits: 15
+    
+- name: Eleanor
+  cat: jp
+  rating: 0
+  picture: Eleanor
+  weapon: dagger
+  star: 3
+
+  stats:
+    hp: 7525
+    atk: 1187
+    int: 840
+    def: 942
+    hit: 695
+    grd: 502
+
+  talents:
+    - name: "Deep Concentration II"
+      effects: 
+        - desc: Damage dealt +20%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 20
+    - name: "Greater Arena Expert"
+      effects:
+        - desc: Damage taken -20%
+          meta:
+            priority: 4
+            buff: Damage Taken Reduction
+            buffValue: 20
+        
+  skills:
+    - name: "Hydroblades"
+      picture: Hydroblades
+      element: Ice
+      power: ATK x 190%
+      ap: 20
+      maxHits: 2
+    - name: "Sylvan Shot"
+      picture: Sylvan_Shot
+      power: ATK x 200%
+      ap: 20
+      maxHits: 8
+    - name: "Victory Terror"
+      picture: Victory_Terror
+      power: ATK x 500%
+      ap: 35
+      maxHits: 10
+
+  rush:
+    name: "Revised Dancing Sword"
+    picture: Revised_Dancing_Sword_Eleanor
+    effects:
+      - desc: Removes all buffs
+        all: Enemies
+    power: ATK x 3000%
+    maxHits: 7
+        
+- name: Boris
+  cat: jp
+  rating: 0
+  picture: Boris
+  weapon: dagger
+  star: 3
+
+  stats:
+    hp: 8600
+    atk: 1176
+    int: 817
+    def: 886
+    hit: 688
+    grd: 490
+
+  talents:
+    - name: "Professional Assassin"
+      effects: 
+        - desc: Normal attacks have +10% chance to inflict poison
+          meta:
+            priority: 4
+            buff: Poison Attack Chance
+            buffValue: 10
+    - name: "All Business"
+      effects: 
+        - desc: Critical hit chance +10%
+          all: true
+          meta:
+            priority: 3
+            buff: Crit Rate
+            buffValue: 10
+    - name: "Bloodcurdling Smirk"
+      effects: 
+        - desc: AP cost -15%
+          all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 15
+    - name: "Insight"
+      effects: 
+        - desc: Repel +1
+
+  skills:
+    - name: "Focused Shockwave"
+      picture: Focused_Shockwave
+      power: ATK x 190%
+      ap: 20
+      maxHits: 5
+    - name: "Dancing Sword"
+      picture: Dancing_Sword
+      power: ATK x 460%
+      ap: 35
+      maxHits: 7
+    - name: "Mirror Blade"
+      picture: Mirror_Blade
+      power: ATK x 680%
+      ap: 40
+      maxHits: 6
+
+  rush:
+    name: "Revised Unholy Terror"
+    picture: Revised_Unholy_Terror_Boris
+    effects:
+      - desc: ATK +60%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: ATK
+          buffValue: 60
+    power: ATK x 1500%
+    maxHits: 5
+
+- name: Katarina
+  cat: jp
+  rating: 0
+  picture: Katarina
+  weapon: bow
+  star: 3
+
+  stats:
+    hp: 8421
+    atk: 1153
+    int: 840
+    def: 863
+    hit: 683
+    grd: 522
+
+  talents:
+    - name: "Shrewd Tactician's Wit"
+      effects: 
+        - desc: INT -15%
+          all: Enemies
+          meta:
+            priority: 1
+            buff: Enemy INT Reduction
+            buffValue: 15
+    - name: "Impeccable Skill"
+      effects:
+        - desc: Stun rate +15%
+          meta:
+            priority: 1
+            buff: Stun Rate
+            buffValue: 15
+        
+  skills:
+    - name: "Sonic Thorn"
+      picture: Sonic_Thorn
+      power: ATK x 200%
+      ap: 20
+      maxHits: 2
+    - name: "Crimson Squall"
+      picture: Crimson_Squall_I
+      power: ATK x 250%
+      ap: 24
+      maxHits: 9
+    - name: "Crescent Wings"
+      picture: Crescent_Wings
+      power: ATK x 230%
+      ap: 24
+      maxHits: 2
+
+  rush:
+    name: "Revised Savage Sparrows"
+    picture: Revised_Savage_Sparrows_Katarina
+    effects:
+      - desc: DEF -30%
+        duration: 20
+        all: Enemies
+        meta:
+          priority: 1
+          buff: Enemy DEF Reduction
+          buffValue: 30
+    power: ATK x 3000%
+    maxHits: 9
+
+- name: Dominic
+  cat: jp
+  rating: 0
+  picture: Dominic
+  weapon: dagger
+  star: 3
+
+  stats:
+    hp: 8510
+    atk: 1199
+    int: 807
+    def: 886
+    hit: 676
+    grd: 502
+
+  talents:
+    - name: "Fierce Onslaught"
+      effects: 
+        - desc: AP cost -10%
+          all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 10
+    - name: "Malevolent Guard"
+      effects: 
+        - desc: Nullifies poison for 180 seconds
+          all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 15
+ 
+  skills:
+    - name: "Flying Guillotine"
+      picture: Guillotine
+      power: ATK x 370%
+      ap: 32
+      maxHits: 4
+    - name: "Unholy Terror"
+      picture: Unholy_Terror
+      power: ATK x 310%
+      ap: 29
+      maxHits: 5
+    - name: "Dancing Sword"
+      picture: Dancing_Sword
+      power: ATK x 460%
+      ap: 35
+      maxHits: 7
+
+  rush:
+    name: "Revised Focused Shockwave"
+    picture: Revised_Focused_Shockwave_Dominic
+    effects:
+      - desc: Nullifies poison
+        duration: 20
+        all: true
+    power: ATK x 2500%
+    maxHits: 5
+
+- name: Pamela
+  cat: jp
+  rating: 0
+  picture: Pamela
+  weapon: bow
+  star: 3
+
+  stats:
+    hp: 7614
+    atk: 1166
+    int: 863
+    def: 919
+    hit: 695
+    grd: 509
+
+  talents:
+    - name: "Resistance II"
+      effects: 
+        - desc: Hitcount timer +1 second
+          all: true
+    - name: "Even Greater Resolve"
+      effects: 
+        - desc: Additional hit that deals 20% of damage during normal attacks
+ 
+  skills:
+    - name: "Chaotic Blossoms"
+      picture: Chaotic_Blossoms_I
+      power: ATK x 500%
+      ap: 35
+      maxHits: 11
+    - name: "Heavenly Flight"
+      picture: Heavenly_Flight
+      power: ATK x 310%
+      ap: 29
+      maxHits: 4
+    - name: "Savage Sparrows"
+      picture: Savage_Sparrows
+      power: ATK x 410%
+      ap: 32
+      maxHits: 9
+
+  rush:
+    name: "Revised Crimson Squall"
+    picture: Revised_Crimson_Squall_Pamela
+    effects:
+      - desc: ATK +80%
+        duration: 20
+        meta:
+          priority: 1
+          buff: ATK
+          buffValue: 80
+    power: ATK x 3000%
+    maxHits: 9
+
+- name: Amina
+  cat: jp
+  rating: 0
+  picture: Amina
+  weapon: bow
+  star: 4
+
+  stats:
+    hp: 11550
+    atk: 1759
+    int: 1300
+    def: 1418
+    hit: 1057
+    grd: 777
+
+  talents:
+    - name: "Black Tribe's Favor III"
+      effects: 
+        - desc: Nullifies curse for 180 seconds
+          all: true
+    - name: "Runemaster II"
+      effects: 
+        - desc: Damage dealt to undead +20%
+          all: true
+          slayer: Undead
+          slayerPct: 20
+          meta:
+            priority: 4
+            buff: Damage To Undead
+            buffValue: 20
+
+  skills:
+    - name: "Heavenly Flight"
+      picture: Heavenly_Flight
+      power: ATK x 310%
+      ap: 29
+      maxHits: 4
+    - name: "Hunter's Moon"
+      picture: Hunter's_Moon
+      power: ATK x 310%
+      ap: 29
+      maxHits: 7
+    - name: "Frigid Quills"
+      picture: Frigid_Quills
+      element: Ice
+      power: ATK x 310%
+      ap: 20
+      maxHits: 3
+    - name: "Seraphic Thunder"
+      picture: Seraphic_Thunder_II
+      element: Lightning
+      power: ATK x 280%
+      ap: 27
+      maxHits: 8
+
+  rush:
+    name: "Hawkeye Bolts"
+    picture: Hawkeye_Bolts_Amina
+    effects:
+      - desc: Nullifies curse
+        duration: 20
+        all: true
+    power: ATK x 2500%
+    maxHits: 5
+
+- name: Pavine
+  cat: jp
+  rating: 0
+  picture: Pavine
+  weapon: gun
+  star: 4
+
+  stats:
+    hp: 13020
+    atk: 1785
+    int: 1248
+    def: 1327
+    hit: 1015
+    grd: 777
+
+  talents:
+    - name: "Even More Diabolical Schemes"
+      effects: 
+        - desc: Hitcount timer +1 second
+          all: true
+    - name: "Kronos's Ultimate Weapon"
+      effects: 
+        - desc: Critical hit chance +30%
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffValue: 30
+    - name: "Tough like Weeds"
+      effects: 
+        - desc: Additional hit that deals 20% of damage during normal attacks
+
+  skills:
+    - name: "Scatter Beam"
+      picture: Break_Horn
+      power: ATK x 250%
+      ap: 24
+      maxHits: 8
+    - name: "Aiming Device"
+      picture: Aiming_Device
+      power: ATK x 200%
+      ap: 20
+      maxHits: 1
+    - name: "Laser Blast"
+      picture: Laser_Blast
+      power: ATK x 190%
+      ap: 20
+      maxHits: 3
+    - name: "Crimson Squall"
+      picture: Crimson_Squall_I
+      power: ATK x 340%
+      ap: 29
+      maxHits: 9
+
+  rush:
+    name: "Quantum Explosion"
+    picture: Quantum_Explosion_Pavine
+    effects:
+      - desc: Critical hit chance +50%
+        duration: 20
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 50
+    power: ATK x 2500%
+    maxHits: 3
+
+- name: Milla Bachtein
+  cat: jp
+  rating: 0
+  picture: Milla
+  weapon: dagger
+  star: 4
+
+  stats:
+    hp: 11865
+    atk: 1785
+    int: 1286
+    def: 1444
+    hit: 1022
+    grd: 770
+
+  talents:
+    - name: "Insatiable Thirst for Knowledge"
+      effects: 
+        - desc: Damage dealt +30%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 30
+    - name: "A Beautiful Future"
+      effects: 
+        - desc: Normal attacks have +10% chance to inflict paralysis
+          meta:
+            priority: 4
+            buff: Paralysis Attack Chance
+            buffValue: 10
+
+  skills:
+    - name: "Focused Shockwave"
+      picture: Focused_Shockwave
+      power: ATK x 190%
+      ap: 20
+      maxHits: 5
+    - name: "Flying Guillotine"
+      picture: Guillotine
+      power: ATK x 370%
+      ap: 32
+      maxHits: 4
+    - name: "Unholy Terror"
+      picture: Unholy_Terror
+      power: ATK x 310%
+      ap: 29
+      maxHits: 5
+    - name: "Lightning Chain"
+      picture: Lightning_Chain
+      element: Lightning
+      power: ATK x 250%
+      ap: 24
+      maxHits: 6
+
+  rush:
+    name: "Paralyzing Blow"
+    picture: Paralysing_Blow_Milla
+    effects:
+      - desc: DEF -30%
+        duration: 20
+        all: Enemies
+        meta:
+          priority: 1
+          buff: Enemy DEF Reduction
+          buffValue: 30
+    power: ATK x 2000%
+    maxHits: 5
+
+- name: Delacroix
+  cat: jp
+  rating: 0
+  picture: Delacroix
+  weapon: dagger
+  star: 4
+
+  stats:
+    hp: 13020
+    atk: 1811
+    int: 1248
+    def: 1327
+    hit: 1015
+    grd: 763
+
+  talents:
+    - name: "Nervous Tension III"
+      effects: 
+        - desc: Nullifies paralysis for 180 seconds
+          all: true
+    - name: "Assistance II"
+      effects: 
+        - desc: Damage dealt to machines +20%
+          all: true
+          slayer: Machine
+          slayerPct: 20
+          meta:
+            priority: 4
+            buff: Damage To Machines
+            buffValue: 20
+
+  skills:
+    - name: "Flying Guillotine"
+      picture: Guillotine
+      power: ATK x 370%
+      ap: 32
+      maxHits: 4
+    - name: "Victory Terror"
+      picture: Victory_Terror
+      power: ATK x 500%
+      ap: 35
+      maxHits: 10
+    - name: "Sylvan Shot"
+      picture: Sylvan_Shot
+      power: ATK x 200%
+      ap: 20
+      maxHits: 8
+    - name: "Mirror Blade"
+      picture: Mirror_Blade
+      power: ATK x 680%
+      ap: 40
+      maxHits: 6
+
+  rush:
+    name: "Jackknife Arts"
+    picture: Jackknife_Art_Tiffan
+    effects:
+      - desc: Nullifies paralysis
+        duration: 20
+        all: true
+    power: ATK x 2500%
+    maxHits: 7
+ 
 - name: 9S
   cat: jp
   rating: 4
