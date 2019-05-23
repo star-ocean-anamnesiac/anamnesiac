@@ -428,7 +428,7 @@
 - name: Illuminated Staff
   cat: 'gl'
   star: 5
-  picture: Santa_Bunny_Rod
+  picture: Flashing_Staff
   atk: 958
   int: 964
   factors:
@@ -513,7 +513,7 @@
     final factor inparticular is nice for healers who don't have AP reduction themselves.
     
     
-- name: Blue Sapphire Staff
+- name: Sapphire-domed Staff
   cat: 'gl'
   star: 5
   picture: Blue_Sapphire_Staff
