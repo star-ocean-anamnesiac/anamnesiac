@@ -757,7 +757,6 @@
     - desc: Recovers 3% of max HP every 5 seconds at long range
   obtained: "Lezard + Blood Valkyrie / Valkyrie Profile: The Purged Wizard (Achievement, Exchange)"    
 
-
 - name: Jet-Black Barrette
   cat: 'gl'
   star: 5
@@ -774,12 +773,12 @@
   picture: Valkyrie's_Feather
   def: 753
   factors:
-    - desc: Critical hit chance +15% when using charge assault
+    - desc: Critical hit chance +20% when using charge assault
       meta:
         priority: 1
         buff: HP
         buffCondition: charge assault
-        buffValue: 15
+        buffValue: 20
     - desc: ATK damage taken -10%
       meta:
         priority: 3
