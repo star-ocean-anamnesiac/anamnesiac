@@ -3570,7 +3570,7 @@
   skills:
     - name: "Heel Hammer"
       picture: Skill_Placeholder
-      power: INT x 360%
+      power: INT x 390%
       ap: 19
       maxHits: 2
     - name: "Grave"
