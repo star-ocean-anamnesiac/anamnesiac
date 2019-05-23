@@ -307,7 +307,7 @@
     - desc: Imbues attacks with light
       element: Light
     - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
-    - desc: ATK damage +20% when HP is 100%
+    - desc: ATK damage dealt +20% when HP is 100%
       meta:
         priority: 3
         buff: ATK Damage
@@ -321,7 +321,7 @@
     have some sustain to keep you topped up, these daggers will help you deal a lot of damage.
 
 
-- name: Shellbreaker Swords - Habakiri
+- name: Habakiri
   cat: 'gl'
   star: 5
   picture: Shellbreaker_Swords_Habakiri
