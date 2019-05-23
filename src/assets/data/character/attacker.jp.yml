@@ -8536,6 +8536,7 @@
       effects:
         - desc: Glitter Star - AF increased to All Stat +40% when HP is 100%
     - name: "Ready as a Performer"
+      shortEffect: Nullifies status effects and normal attack AP recovery +200% after using Frozen Dagger or Rhythmical Tap (Party/10s)
       effects: 
         - desc: Nullifies status effects after using Frozen Dagger or Rhythmical Tap (10s)
           all: true
