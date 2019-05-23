@@ -8417,7 +8417,6 @@
     power: ATK x 5500%
     maxHits: 17
 
-
    
 - name: Maria Traydor (Bunny Ears)
   cat: jp
@@ -8515,3 +8514,78 @@
           buffValue: 40
     power: ATK x 5000%
     maxHits: 3
+
+
+- name: Peppita Rosetti
+  cat: jp
+  picture: Peppita_Rosetti
+  weapon: orb
+  ace: true
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 2665
+    int: 1615
+    def: 1916
+    hit: 1148
+    grd: 833
+
+  talents:
+    - name: "Rosetti One Dancer"
+      effects:
+        - desc: Glitter Star - AF increased to All Stat +40% when HP is 100%
+    - name: "Ready as a Performer"
+      effects: 
+        - desc: Nullifies status effects after using Frozen Dagger or Rhythmical Tap (Party/10s)
+          all: true
+        - desc: Normal attack AP recovery +200% after using Frozen Dagger or Rhythmical Tap (Party/10s)
+          all: true
+    - name: "Memento of Earrings"
+      effects: 
+        - desc: Rush combo damage +50% after using Papapa Slash (Party/10s)
+          all: true
+          duration: 10
+    - name: "Dazzle of Fairy"
+      effects:
+        - desc: Absorbs 15% of damage dealt by normal attacks as HP (Party)
+          all: true
+        - desc: Evasion possible during air attacks
+
+  skills:
+    - name: "Papapa Splash"
+      picture: Skill_Placeholder
+      power: ATK x 960%
+      ap: 30
+      maxHits: 6
+    - name: "Glitter Star - AF"
+      picture: Skill_Placeholder
+      element: Lightning
+      power: ATK x 290%
+      ap: 15
+      maxHits: 4
+    - name: "Rhythmical Tap"
+      picture: Skill_Placeholder
+      power: ATK x 560%
+      ap: 21
+      maxHits: 5
+    - name: "Frozen Dagger"
+      picture: Skill_Placeholder
+      element: Ice
+      power: ATK x 690%
+      ap: 24
+      maxHits: 4
+
+  rush:
+    name: "Shining Dance"
+    picture: Shining_Dance_Peppita_Rosetti
+    shortEffects: Damage taken -40% and no flinching when taking damage of 10% of max HP or less (Party/20s)
+    effects:
+      - desc: Damage taken -40%
+        all: true
+        duration: 20
+      - desc: No flinching when taking damage of 10% of max HP or less
+        all: true
+        duration: 20
+    power: ATK x 4500%
+    maxHits: 9
