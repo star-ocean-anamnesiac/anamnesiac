@@ -110,15 +110,15 @@
 - name: War God's Brand 
   cat: 'gl'
   star: 5
-  picture: Dragon's_Blade_Mizuchi
+  picture: Mars_Brand
   atk: 835
   int: 836
   factors:
-    - desc: Multiple target damage +20%
+    - desc: Multiple target damage +15%
       meta:
         priority: 1
         buff: Multiple Target Damage
-        buffValue: 20
+        buffValue: 15
     - desc: Damage dealt +20% by Dragon Roar
     - desc: Damage dealt +10%
       meta:
