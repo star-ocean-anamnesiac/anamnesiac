@@ -3533,7 +3533,7 @@
 
 - name: Noel Chandler
   cat: jp
-  picture: 
+  picture: Noel_Chandler
   weapon: knuckle
   ace: true
   star: 5
@@ -3593,7 +3593,7 @@
       
   rush:
     name: "Rock Rain-Ken"
-    picture: 
+    picture: Rock_Rain_Noel_Chandler
     element: Light
     shortEffects: Critical hit rate +60% (Party/20s)
     effects: 
