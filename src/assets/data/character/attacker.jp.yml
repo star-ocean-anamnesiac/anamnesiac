@@ -8534,7 +8534,7 @@
   talents:
     - name: "Rosetti One Dancer"
       effects:
-        - desc: Glitter Star - AF increased to ATK/DEF/HIT/GRD +40% when HP is 100%
+        - desc: Glitter Star - AF's effect increased to ATK/DEF/HIT/GRD +40% when HP is 100%
     - name: "Ready as a Performer"
       shortEffects: Nullifies status effects and normal attack AP recovery +200% after using Frozen Dagger or Rhythmical Tap (Party/10s)
       effects: 
