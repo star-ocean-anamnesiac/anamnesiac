@@ -104,7 +104,7 @@ export class CharacterListPage implements OnInit, OnDestroy {
   }
 
   private updateCharacterListOutsideZone() {
-    this.isLoading = true;
+    this.isLoading = this.allCharacters.length === 0;
 
     this.ngZone.runOutsideAngular(() => {
       const res = this.getCharacterUpdateList();

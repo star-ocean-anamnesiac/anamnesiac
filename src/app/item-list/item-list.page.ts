@@ -115,7 +115,7 @@ export class ItemListPage implements OnInit, OnDestroy {
   }
 
   private updateItemListOutsideZone() {
-    this.isLoading = true;
+    this.isLoading = this.allItems.length === 0;
 
     this.ngZone.runOutsideAngular(() => {
       const res = this.getItemList();
