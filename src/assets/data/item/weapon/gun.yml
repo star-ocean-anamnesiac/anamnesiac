@@ -13,7 +13,7 @@
         priority: 4
         buff: Damage To Demons
         buffValue: 40
-    - desc: 80% chance of surviving a lethal attack at greater than 10% HP
+    - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
     - desc: Damage taken -15% when in front of target
       lb: 5
       meta:
@@ -28,7 +28,7 @@
     weapon. Worth keeping.
 
 
-- name: Umbral Blaster
+- name: Umbral Blast
   cat: 'gl'
   star: 5
   picture: Shadow_Bullet
@@ -112,10 +112,10 @@
         priority: 4
         buff: Single Target Damage
         buffValue: 10
-  obtained: Christmas Horndevil Exchange
+  obtained: Christmas Horndevil (Exchange)
   
   notes: >
-    Like any event weapon it's decent for it's intended character, Winter Fidel, but bad beyond that. Even though it has lifesteal it
+    Like any event weapon it's decent for its intended character, Winter Fidel, but bad beyond that. Even though it has lifesteal it
     isn't good enough to be keeping if you have better options. So just fodder it.
 
 
@@ -297,7 +297,7 @@
         priority: 1
         buff: Crit Damage
         buffValue: 15
-    - desc: Single target damage +10% at close range
+    - desc: Single target damage +10% at short range
       meta:
         priority: 3
         buff: Single Target Damage
@@ -397,7 +397,7 @@
         buff: Damage
         buffCondition: Raptorshot
         buffValue: 20
-    - desc: Recovers 3% HP every 5 seconds
+    - desc: Recovers 3% of max HP every 5 seconds
     - desc: Normal attack AP recovery +50% when HP is 100%
       meta:
         priority: 4
@@ -417,7 +417,7 @@
   factors:
     - desc: Imbues attacks with wind
       element: Wind
-    - desc: Recovers 10% HP every 3 seconds
+    - desc: Recovers 10% of max HP every 3 seconds
     - desc: Critical hit chance +15%
       meta:
         priority: 1
