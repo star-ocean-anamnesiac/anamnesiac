@@ -8518,7 +8518,7 @@
 
 - name: Peppita Rosetti
   cat: jp
-  picture: 
+  picture: Peppita_Rosetti
   weapon: orb
   ace: true
   star: 5
@@ -8578,7 +8578,7 @@
 
   rush:
     name: "Shining Dance"
-    picture: 
+    picture: Shining_Dance_Peppita_Rosetti
     shortEffects: Damage taken -40% and no flinching when taking damage of 10% of max HP or less (Party/20s)
     effects:
       - desc: Damage taken -40%
