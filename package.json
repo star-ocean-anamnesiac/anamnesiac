@@ -7,7 +7,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve -o --port 6789 --host 0.0.0.0",
-    "build": "npm run consolidate && ng build --prod && npm run prepare:api",
+    "build": "npm run consolidate && npm run prepare:prodimages && ng build --prod && npm run prepare:api",
     "lint": "ng lint",
     "validate": "cross-env TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\"}' ava-ts src/test/**/*.test.ts",
     "test": "npm run validate && npm run lint && npm run build && npm run analysis:dump",
@@ -23,6 +23,7 @@
     "prepare:create:cards": "node scripts/card/compile && node scripts/card/pup",
     "prepare:pngcrush": "node scripts/pngcrush",
     "prepare:cleanup": "node scripts/build-cleanup",
+    "prepare:prodimages": "node scripts/prodimages",
     "prepare:api": "node scripts/build-api",
     "analysis:dump": "node scripts/analysis/chars && node scripts/analysis/items"
   },

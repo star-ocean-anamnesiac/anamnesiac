@@ -80,7 +80,7 @@ export class CharacterSortPopover {
     <ion-row class="profile-row">
       <ion-col size-xs="5" size-md="3" size-lg="3" position-relative text-center>
 
-        <app-lazy-img class="big-icon" [src]="'assets/characters/' + char.picture + '.png'" [alt]="char.name"></app-lazy-img>
+        <app-lazy-img class="grid-icon" [src]="'assets/characters/' + char.picture + '.png'" [alt]="char.name"></app-lazy-img>
 
         <span class="awakened-container" *ngIf="char.awakened">
           <app-appicon [name]="char.awakened === true ? 'misc-awakening' : 'misc-awakening-9'" [scaleX]="1" [scaleY]="1"></app-appicon>
@@ -115,7 +115,7 @@ export class CharacterSortPopover {
           </ion-tab>
 
           <ion-tab tab="talents">
-            <ion-grid>
+            <ion-grid class="compact-list">
               <ion-row *ngFor="let talent of char.talents; let i = index">
                 <ion-col>
                   <ion-card>
@@ -139,7 +139,7 @@ export class CharacterSortPopover {
           </ion-tab>
 
           <ion-tab tab="skillsrush">
-            <ion-grid>
+            <ion-grid class="compact-list">
 
               <ion-row *ngFor="let skill of char.skills; let i = index">
                 <ion-col>
@@ -165,8 +165,8 @@ export class CharacterSortPopover {
 
                             <app-appicon [name]="'el-' + skill.element.toLowerCase()"
                                          *ngIf="skill.element"
-                                         [forceWidth]="24"
-                                         [forceHeight]="24"
+                                         [forceWidth]="16"
+                                         [forceHeight]="16"
                                          class="element-icon"></app-appicon>
                           </div>
                         </ion-col>
@@ -204,8 +204,8 @@ export class CharacterSortPopover {
                                           [alt]="char.rush.name"></app-lazy-img>
                             <app-appicon [name]="'el-' + char.rush.element.toLowerCase()"
                                          *ngIf="char.rush.element"
-                                         [forceWidth]="24"
-                                         [forceHeight]="24"
+                                         [forceWidth]="16"
+                                         [forceHeight]="16"
                                          class="element-icon"></app-appicon>
                           </div>
                         </ion-col>
@@ -288,7 +288,7 @@ export class CharacterSortPopover {
     }
 
     .tall-row {
-      height: calc(100% - 139px);
+      height: calc(100% - 105px);
     }
 
     .tall-col {
@@ -314,8 +314,8 @@ export class CharacterSortPopover {
 
     .element-icon {
       position: absolute;
-      right: 0;
-      bottom: 0;
+      right: 16px;
+      bottom: 8px;
     }
   `]
 })

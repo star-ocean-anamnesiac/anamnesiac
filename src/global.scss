@@ -133,6 +133,11 @@ ion-item, ion-item-divider {
   height: 64px !important;
 }
 
+.s32x32 {
+  width: 32px !important;
+  height: 32px !important;
+}
+
 .item-icon {
   background-color: #141D22;
   outline: 3px solid #183454;
@@ -189,9 +194,21 @@ ion-item, ion-item-divider {
   }
 }
 
+@media (min-width: 992px) {
+  .modal-wrapper {
+    width: 50%;
+    height: 90%;
+  }
+}
+
 .inline-icon {
   width: 24px;
   height: 24px;
+}
+
+.skill-icon {
+  width: 32px;
+  height: 32px;
 }
 
 .titlebar-icon {
@@ -212,4 +229,27 @@ ion-item, ion-item-divider {
 .big-icon {
   width: 128px;
   height: 128px;
+}
+
+ion-grid.compact-list {
+  width: 100%;
+  
+  ion-col {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  ion-card {
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+    ion-card-header, ion-card-content {
+      padding-top: 8px !important;
+      padding-bottom: 8px !important;
+    }
+  }
+
+  ol {
+    margin: 0;
+  }
 }

@@ -59,7 +59,7 @@ export class ItemSortPopover {
 
     <ion-row class="profile-row">
       <ion-col size-xs="5" size-md="3" size-lg="3" text-center>
-        <app-lazy-img class="big-icon item-icon"
+        <app-lazy-img class="grid-icon item-icon"
           [src]="'assets/items/' + (item.subtype === 'all' ? 'accessory' : item.subtype) + '/' + item.picture + '.png'"
           [alt]="item.name"></app-lazy-img>
       </ion-col>
@@ -84,7 +84,7 @@ export class ItemSortPopover {
         <ion-tabs #tabs>
 
           <ion-tab tab="factors">
-            <ion-grid>
+            <ion-grid class="compact-list">
               <ion-row *ngFor="let factor of item.factors">
                 <ion-col>
                   <ion-card>
@@ -163,7 +163,7 @@ export class ItemSortPopover {
     }
 
     .tall-row {
-      height: calc(100% - 144px);
+      height: calc(100% - 112px);
     }
 
     .tall-col {
