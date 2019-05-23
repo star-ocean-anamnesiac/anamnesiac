@@ -8534,21 +8534,22 @@
   talents:
     - name: "Rosetti One Dancer"
       effects:
-        - desc: Glitter Star - AF increased to All Stat +40% when HP is 100%
+        - desc: Glitter Star - AF's effect increased to ATK/DEF/HIT/GRD +40% when HP is 100%
     - name: "Ready as a Performer"
+      shortEffects: Nullifies status effects and normal attack AP recovery +200% after using Frozen Dagger or Rhythmical Tap (Party/10s)
       effects: 
-        - desc: Nullifies status effects after using Frozen Dagger or Rhythmical Tap (Party/10s)
+        - desc: Nullifies status effects after using Frozen Dagger or Rhythmical Tap (10s)
           all: true
-        - desc: Normal attack AP recovery +200% after using Frozen Dagger or Rhythmical Tap (Party/10s)
+        - desc: Normal attack AP recovery +200% after using Frozen Dagger or Rhythmical Tap (10s)
           all: true
     - name: "Memento of Earrings"
       effects: 
-        - desc: Rush combo damage +50% after using Papapa Slash (Party/10s)
+        - desc: Rush combo damage +50% after using Papapa Slash (10s)
           all: true
           duration: 10
     - name: "Dazzle of Fairy"
       effects:
-        - desc: Absorbs 15% of damage dealt by normal attacks as HP (Party)
+        - desc: Absorbs 15% of damage dealt by normal attacks as HP
           all: true
         - desc: Evasion possible during air attacks
 
