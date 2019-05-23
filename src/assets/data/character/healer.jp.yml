@@ -3530,3 +3530,75 @@
         all: Attackers/Shooters/Invokers
     power: INT x 4000%
     maxHits: 5
+
+- name: Noel Chandler
+  cat: jp
+  picture: 
+  weapon: knuckle
+  ace: true
+  star: 5
+
+  stats:
+    hp: 13965
+    atk: 1785
+    int: 2455
+    def: 1353
+    hit: 1057
+    grd: 1134
+
+  talents:
+    - name: "King of Zoologists"
+      effects: 
+        - desc: Recovers 10% of max HP every 3 seconds
+        - desc: No flinching when taking damage of 20% of max HP or less at close range
+          all: true
+    - name: "Caretaker of Rare Animal Protected Area"
+      effects: 
+        - desc: ATK/INT damage taken -40%
+        - desc: ATK/INT damage taken -30% when Noel is at close range
+          all: true
+    - name: "Student's Feeling"
+      effects: 
+        - desc: ATK/INT damage dealt +20%
+        - desc: ATK/INT damage dealt +50% when hitcount >200
+          all: true
+    - name: "Question for the Reason"
+      effects: 
+        - desc: Symbology cast time -100%
+        - desc: Normal attack AP recovery +100%
+
+  skills:
+    - name: "Heel Hammer"
+      picture: Skill_Placeholder
+      power: INT x 360%
+      ap: 19
+      maxHits: 2
+    - name: "Grave"
+      picture: Skill_Placeholder
+      element: Earth
+      power: INT x 580%
+      ap: 16
+      maxHits: 2
+    - name: "Fairy Light"
+      picture: Skill_Placeholder
+      power: INT x 250%
+      ap: 60
+      maxHits: 1
+    - name: "Earth Grave"
+      picture: Skill_Placeholder
+      element: Earth
+      power: INT x 990%
+      ap: 21
+      maxHits: 4
+      
+  rush:
+    name: "Rock Rain-Ken"
+    picture: 
+    element: Light
+    shortEffects: Critical hit rate +60% (Party/20s)
+    effects: 
+      - desc: Critical hit rate +60%
+        all: true
+        duration: 20
+    power: INT x 4000%
+    maxHits: 3
