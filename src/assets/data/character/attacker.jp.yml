@@ -8521,7 +8521,6 @@
   picture: 
   weapon: orb
   ace: true
-  limited: true
   star: 5
 
   stats:
@@ -8578,7 +8577,7 @@
       maxHits: 4
 
   rush:
-    name: "Rock Rain-Ken"
+    name: "Shining Dance"
     picture: 
     shortEffects: Damage taken -40% and no flinching when taking damage of 10% of max HP or less (Party/20s)
     effects:
