@@ -874,5 +874,5 @@
       
     - name: War God's Symbol
       stock: 1
-      cost: 150000
+      cost: 15000
       type: accessory
