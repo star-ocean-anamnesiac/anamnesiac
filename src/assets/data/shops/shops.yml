@@ -3,7 +3,8 @@
   icon: currency-coin-m2
   cat: gl
   currency: Return M2 Coin
-  aliases: block
+  aliases:
+    - Return M2
 
   items:
     - name: 5* Character Ticket
@@ -81,8 +82,8 @@
   icon: currency-coin-m1
   cat: gl
   currency: Return Coin
-  aliases: block
-
+  aliases:
+    - Return M1
   items:
     - name: 5* Character Ticket
       stock: 2
@@ -798,8 +799,8 @@
   icon: currency-coin-m1
   cat: gl
   currency: Exeuctioner Coin
-  aliases: block
-
+  aliases:
+    - Executioner
 
   items:
     - name: Daikiga Iwato
