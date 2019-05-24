@@ -1,3 +1,150 @@
+- name: Return M2 Coin
+  icon: currency-coin-m2
+  cat: gl
+  currency: Return M2 Coin
+  aliases: block
+
+  items:
+    - name: 5* Character Ticket
+      stock: 1
+      cost: 20
+      type: draw-ticket-character  
+    - name: 4-5* Char. Ticket
+      stock: 3
+      cost: 10    
+      type: draw-ticket-character
+    - name: 5* Weapon Ticket
+      stock: 1
+      cost: 10
+      type: draw-ticket-weapon            
+    - name: 4* Weapon Ticket
+      stock: 2
+      cost: 5
+      type: draw-ticket-weapon
+    - name: L. Limit Breaker
+      stock: 1
+      cost: 20
+      type: improvement-limitbreak
+    - name: L. Limit Breaker
+      stock: 1
+      cost: 30
+      type: improvement-limitbreak
+      
+    - name: Anti-Silence Amulet IV
+      stock: 6
+      cost: 5
+      type: accessory      
+    - name: Symbol of the Snow God
+      stock: 6
+      cost: 5
+      type: accessory      
+    - name: Symbol of the Sea God
+      stock: 6
+      cost: 5
+      type: accessory      
+    - name: Jinxed Necklace
+      stock: 6
+      cost: 5
+      type: accessory   
+      
+    - name: AP Starseed
+      stock: 1
+      cost: 20
+      type: seed-other   
+    - name: HP Starseed
+      stock: 0
+      cost: 1
+      type: seed-other   
+    - name: ATK Starseed
+      stock: 0
+      cost: 1
+      type: seed-other   
+    - name: INT Starseed
+      stock: 0
+      cost: 1
+      type: seed-other   
+    - name: DEF Starseed
+      stock: 0
+      cost: 1
+      type: seed-other   
+    - name: HIT Starseed
+      stock: 0
+      cost: 1
+      type: seed-other   
+    - name: GRD Starseed
+      stock: 0
+      cost: 1
+      type: seed-other
+
+- name: Return Coin
+  icon: currency-coin-m1
+  cat: gl
+  currency: Return Coin
+  aliases: block
+
+  items:
+    - name: 5* Character Ticket
+      stock: 2
+      cost: 30
+      type: draw-ticket-character  
+    - name: 4-5* Char. Ticket
+      stock: 6
+      cost: 15    
+      type: draw-ticket-character
+    - name: 5* Weapon Ticket
+      stock: 2
+      cost: 15
+      type: draw-ticket-weapon            
+    - name: 4* Weapon Ticket
+      stock: 4
+      cost: 5
+      type: draw-ticket-weapon
+    - name: L. Limit Breaker
+      stock: 1
+      cost: 30
+      type: improvement-limitbreak
+    - name: L. Limit Breaker
+      stock: 1
+      cost: 40
+      type: improvement-limitbreak
+    - name: Mission Ticket
+      stock: 30
+      cost: 3
+      type: draw-ticket-mission   
+    - name: Ra. Platinum Prism
+      stock: 0
+      cost: 3
+      type: improvement-prism     
+    - name: Platinum Ingot
+      stock: 0
+      cost: 5
+      type: currency-ingot   
+    - name: Rainbow Crystal
+      stock: 10
+      cost: 15
+      type: improvement-crystal
+      
+    - name: M. Red Crystal
+      stock: 0
+      cost: 1
+      type: improvement-crystal  
+    - name: M. Yellow Crystal
+      stock: 0
+      cost: 1
+      type: improvement-crystal   
+    - name: M. Blue Crystal
+      stock: 0
+      cost: 1
+      type: improvement-crystal  
+    - name: M. Purple Crystal
+      stock: 0
+      cost: 1
+      type: improvement-crystal  
+    - name: M. Green Crystal
+      stock: 0
+      cost: 1
+      type: improvement-crystal     
+
 
 - name: Blood Valkyrie Coin
   icon: currency-coin-m1
@@ -596,7 +743,8 @@
       stock: 1
       cost: 15000
       type: accessory 
-      
+     
+     
 - name: Michael M2 Coin
   icon: currency-coin-m2
   cat: gl
@@ -604,6 +752,7 @@
   aliases:
     - michael m2
     - mike m2
+
 
   items:
     - name: Knuckles of Hope
@@ -642,3 +791,86 @@
       stock: 0
       cost: 3
       type: improvement-hammer
+     
+     
+- name: Executioner Coin
+  icon: currency-coin-m1
+  cat: gl
+  currency: Exeuctioner Coin
+  aliases: block
+
+
+  items:
+    - name: Daikiga Iwato
+      stock: 3
+      cost: 2000
+      type: bns
+    - name: Daikiga Iwato
+      stock: 3
+      cost: 4000
+      type: bns
+    - name: Feral Caltrops
+      stock: 3
+      cost: 2000
+      type: knuckle
+    - name: Feral Caltrops
+      stock: 3
+      cost: 4000
+      type: knuckle
+    - name: L. Limit Breaker
+      stock: 1
+      cost: 6000
+      type: improvement-limitbreak
+    - name: 4-5* Character Ticket    
+      stock: 4
+      cost: 4000
+      type: draw-ticket-character    
+    - name: 5* Weapon Ticket
+      stock: 2
+      cost: 3000
+      type: draw-ticket-weapon    
+    - name: 4* Weapon Ticket
+      stock: 3
+      cost: 2000
+      type: draw-ticket-weapon
+    - name: Ra. Platinum Prism
+      stock: 0
+      cost: 400
+      type: improvement-prism
+    - name: "Plat. Hammer: Enhance"
+      stock: 10
+      cost: 400
+      type: improvement-hammer
+    - name: "Gold Hammer: Enhance"
+      stock: 10
+      cost: 200
+      type: improvement-hammer
+    - name: "Silver Hammer: Enhance"
+      stock: 20
+      cost: 150
+      type: improvement-hammer
+    - name: "Silver Hammer: Enhance"
+      stock: 0
+      cost: 600
+      type: improvement-hammer
+    - name: Rainbow Crystal
+      stock: 3
+      cost: 2500
+      type: improvement-crystal
+    - name: Platinum Ingot
+      stock: 10
+      cost: 1000
+      type: currency-ingot
+    - name: Mission Ticket
+      stock: 5
+      cost: 400
+      type: draw-ticket-mission
+    - name: Barrier-Blaster
+      stock: 1
+      cost: 4000
+      type: misc-barrierblaster
+      
+    - name: War God's Symbol
+      stock: 1
+      cost: 150000
+      type: accessory
