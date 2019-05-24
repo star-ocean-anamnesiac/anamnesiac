@@ -415,7 +415,7 @@
         priority: 4
         buff: Damage To Demons
         buffValue: 20
-    - desc: 80% chance of surviving a lethal attack when at 10% of max HP
+    - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
     - desc: No flinching when casting symbology
       lb: 5
   obtained: Gacha
@@ -460,7 +460,7 @@
     some big numbers. The final factor gives a nice defensive buff which isn't super common to find so can have relevance.
 
 
-- name: Angelic Rune Wand
+- name: Angel Rune Wand
   cat: 'gl'
   star: 5
   picture: Angelic_Runic_Wand
