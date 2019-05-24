@@ -95,7 +95,7 @@
   atk: 529
   int: 532
   factors:
-    - desc: Damage dealt +20% by Lightning Blast
+    - desc: Damage dealt +20% by Lightning Strike
     - desc: Single target damage +10%
       meta:
         priority: 4
