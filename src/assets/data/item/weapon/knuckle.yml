@@ -416,7 +416,7 @@
   atk: 523
   int: 529
   factors:
-    - desc: Damage dealt +20% by Heart Dischange
+    - desc: Damage dealt +20% by Heart Burst
     - desc: ATK damage dealt +15% when using charge assault
       meta:
         priority: 3
