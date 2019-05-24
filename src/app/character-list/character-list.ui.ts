@@ -241,11 +241,55 @@ export class CharacterSortPopover {
             </ion-row>
           </ion-tab>
 
+          <ion-tab tab="rotation">
+            <div class="blank-slate" *ngIf="!char.rotations">
+              No rotations have been entered for this character.
+            </div>
+
+            <ion-row>
+              <ion-col>
+                <ion-list>
+                  <ion-item *ngFor="let rot of char.rotations">
+                    <ion-label text-wrap>
+                      <h2>{{ rot.name }}</h2>
+                      <h6>{{ rot.notes }}</h6>
+                      <div>
+                        <span *ngFor="let skill of rot.skills" class="rotation-skill vertical-center">
+                          <app-appicon [name]="'menu-' + char.weapon"
+                                       [scaleX]="0.375"
+                                       [scaleY]="0.375"
+                                       *ngIf="skill.name === 'Normal'"></app-appicon>
+
+                          <app-lazy-img class="inline-icon"
+                            *ngIf="skill.name && skill.name !== 'Normal'"
+                            [src]="'assets/skills/' + rotationImages[skill.name] + '.png'"
+                            [alt]="skill.name"></app-lazy-img>
+
+                          <span *ngIf="skill.name" class="rotation-skill-name">
+                            {{ skill.name }}
+                            <span *ngIf="skill.repeat">
+                              (^{{ skill.repeat }})
+                            </span>
+                          </span>
+                        </span>
+                      </div>
+                    </ion-label>
+                  </ion-item>
+                </ion-list>
+              </ion-col>
+            </ion-row>
+          </ion-tab>
+
           <ion-tab-bar slot="bottom">
 
             <ion-tab-button tab="notes">
               <ion-label>Unit Evaluation</ion-label>
               <ion-icon name="paper"></ion-icon>
+            </ion-tab-button>
+
+            <ion-tab-button tab="rotation">
+              <ion-label>Rotation</ion-label>
+              <ion-icon name="redo"></ion-icon>
             </ion-tab-button>
 
             <ion-tab-button tab="stats">
@@ -276,6 +320,24 @@ export class CharacterSortPopover {
       margin-left: 10px;
     }
 
+    .rotation-skill-name {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
+    .inline-icon {
+      display: inline-block;
+    }
+
+    .rotation-skill.vertical-center {
+      display: inline-flex;
+    }
+
+    .rotation-skill:not(:last-child):after {
+      content: ' » ';
+      margin-right: 5px;
+    }
+
     .picture {
       text-align: center;
       height: 128px;
@@ -285,6 +347,10 @@ export class CharacterSortPopover {
     .profile-row {
       border-bottom: 1px solid #000;
       margin-bottom: -5px;
+    }
+
+    .profile-row ion-col:first-child {
+      max-width: 104px !important;
     }
 
     .tall-row {
@@ -324,6 +390,7 @@ export class CharacterModal implements OnInit {
   public char: Character;
   public weap: string;
   public notes: any;
+  public rotationImages: { [key: string]: string } = {};
 
   public showShare: boolean;
 
@@ -349,6 +416,10 @@ export class CharacterModal implements OnInit {
       .split('<p>')
       .join('<p style="margin: 0">')
       .replace(/\s\s+/g, ' '));
+
+    this.char.skills.forEach(({ name, picture }) => {
+      this.rotationImages[name] = picture;
+    });
   }
 
   dismiss() {

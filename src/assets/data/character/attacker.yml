@@ -772,6 +772,44 @@
           buffValue: 20
     power: ATK x 3000%
     maxHits: 7
+
+  rotations:
+    - name: Humanoid Group
+      notes: Shotgun keeps humanoid groups stunlocked.
+      skills:
+        - name: Air Slash
+        - name: Double Slash
+        - name: Shotgun Blast
+
+    - name: Single Humanoid
+      skills:
+        - name: Air Slash
+        - name: Double Slash
+        - name: Dragon Slash
+
+    - name: DPS/HC Against Large/Medium Bosses
+      skills:
+        - name: Normal
+        - name: Shotgun Blast
+        - name: Air Slash
+        - name: Shotgun Blast
+          repeat: "N"
+
+    - name: Rush Build
+      skills:
+        - name: Normal
+        - name: Shotgun Blast
+        - name: Air Slash
+        - name: Dragon Slash
+          repeat: "N"
+
+    - name: Ranged
+      skills:
+        - name: Air Slash
+        - name: Dragon Slash
+        - name: Air Slash
+        - name: Dragon Slash
+          repeat: "N"
     
   notes: >
       _Buffs stun rate for the party, and boasts an amazing-albeit-selfish Rush buff. Being able to chain stuns trivializes bosses, both preventing them_
@@ -800,17 +838,6 @@
       - Brings little utility beyond his stun buff
       
       - Needs some slight build around to take advantage of his buff
-      
-      
-      **Rotation**
-      
-      *Humanoid -> Air Slash + Double Slash; Shotgun & Dragon depend on size. Against groups of small targets, however, Shotgun keeps multiple stunlocked.*
-
-      *Normal > Shotgun > Air > Shotgun^n - HC & DPS Against Medium ~ Large Bosses (Not Human Size)*
-
-      *Normal > Shotgun > Air > Dragon^n - Rush Build*
-
-      *Air > Dragon > Air > Dragon^n - Ranged*
 
 - name: Reimi Saionji (Summer)
   cat: gl

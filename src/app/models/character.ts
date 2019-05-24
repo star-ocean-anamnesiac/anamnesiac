@@ -67,6 +67,33 @@ export interface Effect {
   meta?: Meta;
 }
 
+export interface RotationSkill {
+
+  // whether the skill should be CAd
+  ca?: boolean;
+
+  // how many times the skill should be repeated (typically, N)
+  repeat?: string;
+
+  // the skill name - used to get an icon for the skills
+  name?: string;
+
+  // multiple skill names - used to get an icon for multiple skills
+  or?: { name: string }[];
+}
+
+export interface Rotation {
+
+  // the rotation name
+  name: string;
+
+  // special notes, like, 104 AP or whatever
+  notes?: string;
+
+  // the list of skills in this rotation
+  skills: RotationSkill[];
+}
+
 export interface Character {
 
   // the character name (IT MUST BE UNIQUE)
@@ -116,4 +143,7 @@ export interface Character {
 
   // the personalized notes for the character. long form text can be entered here.
   notes?: string;
+
+  // the rotation for the character.
+  rotations?: Rotation[];
 }

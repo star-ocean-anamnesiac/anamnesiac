@@ -162,6 +162,10 @@ export class ItemSortPopover {
       border-bottom: 1px solid #000;
     }
 
+    .profile-row ion-col:first-child {
+      max-width: 104px !important;
+    }
+
     .tall-row {
       height: calc(100% - 112px);
     }
