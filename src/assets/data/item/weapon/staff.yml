@@ -653,12 +653,12 @@
         priority: 3
         buff: Lightning Damage
         buffValue: 20
+    - desc: 70% chance of surviving a lethal attack when at 20% HP or more        
     - desc: Stun rate +15%
       meta:
         priority: 1
         buff: Stun Rate
         buffValue: 15
-    - desc: 70% chance of surviving a lethal attack when at 20% HP or more
       lb: 5
   obtained: Gacha
 
