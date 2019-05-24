@@ -130,7 +130,6 @@
       element: Ice
     - desc: Damage dealt to demons +15%      
       slayer: Demon
-      element: Ice
       slayerPct: 15
       meta:
         priority: 4
@@ -262,8 +261,8 @@
   atk: 512
   int: 509
   factors:
-    - desc: Damage dealt +20% by Bullet Locust
-    - desc: +10% ATK DMG
+    - desc: Damage dealt +20% by Death From Above
+    - desc: ATK damage dealt +10%
       meta:
         priority: 1
         buff: ATK Damage
@@ -347,7 +346,7 @@
   obtained: Gacha
   
   
-- name: Magnetic Rouge
+- name: Magnetic Rouge Gun
   cat: 'gl'
   star: 5
   picture: Magnetic_Rouge
