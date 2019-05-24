@@ -186,7 +186,7 @@
   atk: 861
   int: 859
   factors:
-    - desc: Damage dealt +30% by Diabolic Whirl
+    - desc: Damage dealt +30% by Diabolic Edge
     - desc: AP cost -10%
       meta:
         priority: 4
