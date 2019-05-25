@@ -5,6 +5,7 @@
   currency: Return M2 Coin
   aliases:
     - Return M2
+    - Rerun M2
 
   items:
     - name: 5* Character Ticket
@@ -84,6 +85,7 @@
   currency: Return Coin
   aliases:
     - Return M1
+    - Rerun M1
   items:
     - name: 5* Character Ticket
       stock: 2
