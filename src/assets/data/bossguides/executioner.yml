@@ -1,5 +1,5 @@
 
-- name: "High Executioner"
+- name: "Executioner"
   eventName: "The Executioner Attacks"
   image: executioner
   cat: gl
@@ -30,7 +30,7 @@
       vuln: Low
       
   recommendations:
-    - plain: Anti-Flinch
+    - plain: Anti-flinch
     - plain: Damage
 
   desc: >
