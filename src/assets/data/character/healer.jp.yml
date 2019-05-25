@@ -3550,7 +3550,7 @@
     - name: "King of Zoologists"
       effects: 
         - desc: Recovers 10% of max HP every 3 seconds
-        - desc: No flinching when taking damage of 20% of max HP or less at short range
+        - desc: 95% chance of surviving a lethal attack when at 20% of max HP or more at short range
           all: true
     - name: "Caretaker of Rare Animal Protected Area"
       effects: 
