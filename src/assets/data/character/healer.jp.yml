@@ -1241,7 +1241,7 @@
     grd: 1141
 
   talents:
-    - name: "Anniversary Celebration II"
+    - name: "Anniversary Celebration"
       effects: 
         - desc: Symbology cast time -60%
           all: true
@@ -1251,7 +1251,7 @@
             buffValue: 60
         - desc: Hitcount timer +2 seconds
           all: true
-    - name: "Twinkle Twinkle Little Star II"
+    - name: "Twinkle Twinkle Little Star"
       effects: 
         - desc: Evasion AP cost -50%
           all: true
@@ -1259,44 +1259,45 @@
           all: true
     - name: "A Christmas Miracle"
       effects: 
-        - desc: Recovers some AP for all allies when using offensive symbology          
+        - desc: Recovers some AP for all allies when using offensive symbology 
+        - desc: No flinching while casting symbology
     - name: "Trump Card"
-      shortEffects: Critical hit chance and critical damage dealt +20%/+30% when hitcount is >50/>100 (Party)
+      shortEffects: Critical hit chance and critical damage dealt +30%/+40% when hitcount is >50/>100 (Party)
       effects: 
-        - desc: Critical hit chance +20% when hitcount is >50
+        - desc: Critical hit chance +30% when hitcount is >50
           all: true
           meta:
             priority: 1
             buff: Crit Rate
             buffCondition: Hit Count > 50
-            buffValue: 20
-        - desc: Critical damage dealt +20% when hitcount is >50
+            buffValue: 30
+        - desc: Critical damage dealt +30% when hitcount is >50
           all: true
           meta:
             priority: 1
             buff: Crit Damage
             buffCondition: Hit Count > 50
-            buffValue: 20
-        - desc: Critical hit chance +30% when hitcount is >100
+            buffValue: 30
+        - desc: Critical hit chance +40% when hitcount is >100
           all: true
           meta:
             priority: 1
             buff: Crit Rate
             buffCondition: Hit Count > 100
-            buffValue: 30
-        - desc: Critical damage dealt +30% when hitcount is >100
+            buffValue: 40
+        - desc: Critical damage dealt +40% when hitcount is >100
           all: true
           meta:
             priority: 1
             buff: Crit Damage
             buffCondition: Hit Count > 100
-            buffValue: 30
+            buffValue: 40
 
   skills:
     - name: "Sacred Faerie Light"
       picture: Faerie_Light
       power: INT x 250%
-      ap: 60
+      ap: 50
       notes: Recover some HP for all allies
       maxHits: 1  
     - name: "Sacred Lancer"
@@ -1316,7 +1317,7 @@
     - name: "Prismatic Rays"
       picture: Prismatic_Rays
       element: Light
-      power: INT x 880%
+      power: INT x 1320%
       ap: 33
       notes: Allies recover 9 AP
       maxHits: 12
@@ -1336,7 +1337,7 @@
           priority: 1
           buff: Crit Rate
           buffValue: 30
-    power: INT x 3000%
+    power: INT x 4000%
     maxHits: 5
     
   notes: >
@@ -1394,7 +1395,7 @@
     grd: 1148
 
   talents:
-    - name: "Golden Intentions II"
+    - name: "Golden Intentions"
       effects: 
         - desc: AP recovery +50% when HP is 100%
           all: true
@@ -1403,7 +1404,7 @@
             buff: AP Recovery
             buffCondition: HP is 100%
             buffValue: 50
-    - name: "A Sister's Prayer II"
+    - name: "A Sister's Prayer"
       effects: 
         - desc: Recovers 5% of max HP every 3 seconds
           all: true
