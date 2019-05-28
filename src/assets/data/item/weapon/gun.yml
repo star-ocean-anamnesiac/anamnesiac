@@ -522,4 +522,37 @@
         buffCondition: Skill Chain 3+
         buffValue: 10
   obtained: Gacha
-  
+
+
+- name: Bug Smasher
+  cat: 'gl'
+  star: 5
+  picture: Bug_Smasher
+  atk: 961
+  int: 959
+  factors:
+    - desc: Damage dealt to insects +40%
+      slayer: Insect
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Insects
+        buffValue: 40
+    - desc: Critical hit chance +5
+      meta:
+        priority: 3
+        buff: Crit Rate
+        buffValue: 5
+    - desc: Critical damage dealt +20%
+      meta:
+        priority: 3
+        buff: Crit Damage
+        buffValue: 20  
+    - desc: AP cost -5 when hitcount is >100
+      lb: 5
+      meta:
+        priority: 3
+        buff: AP Cost Reduction
+        buffCondition: Hit Count > 100
+        buffValue: 5
+  obtained: Gacha
