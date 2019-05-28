@@ -421,4 +421,33 @@
         buffCondition: charge assault
         buffValue: 15
       lb: 5
-  obtained: Ballistic Rhino / Valkyrie Profile 2 (Event)  
+  obtained: "Ballistic Rhino / Valkyrie Profile: The Purged Wizard (Event)"
+
+
+- name: Shell Piercer
+  cat: 'gl'
+  star: 5
+  picture: Shell_Piercer
+  atk: 960
+  int: 963
+  factors:
+    - desc: Damage dealt to insects +40%
+      slayer: Insect
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Insects
+        buffValue: 40
+    - desc: Critical hit chance +10%
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffValue: 10
+    - desc: Critical damage dealt +15%
+      meta:
+        priority: 1
+        buff: Crit Damage
+        buffValue: 15        
+    - desc: Recovers 3% of max HP every 5 seconds
+      lb: 5
+  obtained: Gacha
