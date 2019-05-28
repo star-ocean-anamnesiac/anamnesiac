@@ -365,7 +365,8 @@
   cat: gl
   currency: Valkyrie Coin [Blue]
   aliases:
-    - lezard
+    - lezard and valkyrie
+    - lez and bv
 
   items:
     - name: Magic Crystalx 100
@@ -878,3 +879,56 @@
       stock: 1
       cost: 15000
       type: accessory
+
+
+- name: Valkyrie Coin [Purple]
+  icon: currency-coin-m2
+  cat: gl
+  currency: Valkyrie Coin [Purple]
+  aliases:
+    - lezard
+    - lezard chapter 3
+    - vp chapter 3
+
+  items:
+    - name: Magic Crystalx 100
+      stock: 0
+      cost: 1
+      type: draw-gacha  
+    - name: "Purple Valkyrie Hammer: Cap Inc."
+      stock: 10
+      cost: 3
+      type: improvement-hammer-special
+    - name: 5* Weapon Ticket
+      stock: 1
+      cost: 7
+      type: draw-ticket-weapon            
+    - name: 5* Character Ticket
+      stock: 1
+      cost: 15
+      type: draw-ticket-character     
+    - name: L. Limit Breaker
+      stock: 1
+      cost: 15
+      type: improvement-limitbreak
+    - name: "Platinum Thread: Enhance"
+      stock: 5
+      cost: 3
+      type: improvement-thread
+    - name: AP Starseed
+      stock: 1
+      cost: 25
+      type: seed-ap         
+      
+    - name: Alchemist's Glasses
+      stock: 5
+      cost: 10
+      type: accessory      
+    - name: Head Sorceror's Handkerchief
+      stock: 5
+      cost: 13
+      type: accessory      
+    - name: Hawkeye Charm
+      stock: 5
+      cost: 13
+      type: accessory    
