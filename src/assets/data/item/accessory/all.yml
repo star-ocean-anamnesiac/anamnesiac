@@ -146,10 +146,10 @@
         priority: 4
         buff: Stun Rate
         buffValue: 10
-  obtained: Eternal Queen / Predate Queen (Achievement)
+  obtained: "Eternal Queen / Predate Queen (Achievement), Lezard / Valkyrie Profile: The Purged Wizard (Exchange)"
 
   notes: >
-    Excellent accesory, its own downside being that it's not MLB-able at the moment, meaning less DEF if choosing to run it. Crit rate pre-rush is an excellent invisible damage booster (the first acc to do so) and stun rate is great when lacking either in talents. 
+    Excellent accessory. Crit rate pre-rush is an excellent invisible damage booster (the first acc to do so) and stun rate is great when lacking either in talents. 
     
     
 - name: Symbol of the Sea God
@@ -795,4 +795,15 @@
     - desc: No flinching while casting symbology when hitcount is >150
     - desc: 30% chance of surviving a lethal attack when at 10% of max HP or more
   obtained: "Lezard / Valkyrie Profile: The Purged Wizard (Achievement, Exchange)" 
+  
+  
+- name: Head Sorceror's Handkerchief
+  cat: 'gl'
+  star: 5
+  picture: Top_Magician's_Handerchief
+  def: 753
+  factors:
+    - desc: Rush mode damage +15% when hitcount is >150
+    - desc: Hitcount timer +1 second 
+  obtained: "Lezard / Valkyrie Profile: The Purged Wizard (Achievement, Exchange)"  
   
