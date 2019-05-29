@@ -2174,18 +2174,18 @@
   rush:
     name: "Holiday Surprise"
     picture: Holiday_Surprise_Xmas_Fidel
-    shortEffects: AP cost -30% and critical hit chance +20% (Self/20s)
+    shortEffects: AP cost -30% and critical hit chance +20% (Self/30s)
     effects: 
       - desc: AP cost -30%
         all: false
-        duration: 20
+        duration: 30
         meta:
           priority: 1
           buff: AP Cost Reduction
           buffValue: 30      
       - desc: Critical hit chance +20%
         all: false
-        duration: 20
+        duration: 30
         meta:
           priority: 1
           buff: Crit Rate
