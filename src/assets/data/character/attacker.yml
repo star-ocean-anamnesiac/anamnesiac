@@ -2174,7 +2174,7 @@
   rush:
     name: "Holiday Surprise"
     picture: Holiday_Surprise_Xmas_Fidel
-    shortEffects: AP cost -30% and critical hit chance +20% (Self/20s)
+    shortEffects: AP cost -30% and critical hit chance +20% (Self/30s)
     effects: 
       - desc: AP cost -30%
         all: false
