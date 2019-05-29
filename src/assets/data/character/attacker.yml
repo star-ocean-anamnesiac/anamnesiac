@@ -2178,14 +2178,14 @@
     effects: 
       - desc: AP cost -30%
         all: false
-        duration: 20
+        duration: 30
         meta:
           priority: 1
           buff: AP Cost Reduction
           buffValue: 30      
       - desc: Critical hit chance +20%
         all: false
-        duration: 20
+        duration: 30
         meta:
           priority: 1
           buff: Crit Rate
