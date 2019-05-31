@@ -3214,7 +3214,7 @@
     - name: "Astral's Star"
       effects: 
         - desc: Evasion distance +100%
-        - desc: Evasion rate +100%
+        - desc: Evasion speed +100%
     - name: "Proof of Trial"
       shortEffects: ATK/HIT +20% after using Moon Mirror (10s)
       effects:
@@ -4226,7 +4226,7 @@
       effects: 
         - desc: Evasion AP cost -50%
           all: true
-        - desc: Evasion rate & distance +100%
+        - desc: Evasion speed & distance +100%
 
   skills:
     - name: "Skyline Shooting"
@@ -5729,7 +5729,7 @@
             buff: AP Recovery
             buffCondition: Perfect Dodge
             buffValue: 100
-        - desc: Evasion rate & distance +100%
+        - desc: Evasion speed & distance +100%
           all: false
         - desc: Damage taken -100% on perfect dodge (0.5s)
           all: false
