@@ -8555,23 +8555,23 @@
 
   skills:
     - name: "Papapa Splash"
-      picture: Skill_Placeholder
+      picture: Papapa_Splash
       power: ATK x 960%
       ap: 30
       maxHits: 6
     - name: "Glitter Star - AF"
-      picture: Skill_Placeholder
+      picture: Glitter_Star_AF
       element: Lightning
       power: ATK x 290%
       ap: 15
       maxHits: 4
     - name: "Rhythmical Tap"
-      picture: Skill_Placeholder
+      picture: Rhythmical_Tap
       power: ATK x 560%
       ap: 21
       maxHits: 5
     - name: "Frozen Dagger"
-      picture: Skill_Placeholder
+      picture: Frozen_Dagger
       element: Ice
       power: ATK x 690%
       ap: 24
