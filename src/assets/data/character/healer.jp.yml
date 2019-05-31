@@ -3570,30 +3570,30 @@
 
   skills:
     - name: "Heel Hammer"
-      picture: Skill_Placeholder
+      picture: Heel_Hammer
       power: INT x 390%
       ap: 19
       maxHits: 2
-    - name: "Grave"
-      picture: Skill_Placeholder
+    - name: "Glaive"
+      picture: Earth_Glaive
       element: Earth
       power: INT x 580%
       ap: 16
       maxHits: 2
-    - name: "Fairy Light"
-      picture: Skill_Placeholder
+    - name: "Fairy Light-Research"
+      picture: Faerie_Light
       power: INT x 250%
       ap: 60
       maxHits: 1
-    - name: "Earth Grave"
-      picture: Skill_Placeholder
+    - name: "Earth Glaive-Research"
+      picture: Earth_Glaive_Research
       element: Earth
       power: INT x 990%
       ap: 21
       maxHits: 4
       
   rush:
-    name: "Rock Rain-Ken"
+    name: "Rock Rain-Research"
     picture: Rock_Rain_Noel_Chandler
     element: Earth
     shortEffects: Critical hit chance +60% (Party/20s)
