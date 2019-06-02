@@ -8896,8 +8896,8 @@
       power: ATK x 250%
       ap: 18
       maxHits: 2
-    - name: "Layered Talon Heaven Slash"
-      picture: Layered_Talon_Heaven_Slash
+    - name: "Layered Talon Heaven Flash"
+      picture: Layered_Talon_Heaven_Flash
       power: ATK x 570%
       ap: 27
       maxHits: 7
