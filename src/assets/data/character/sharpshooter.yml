@@ -35,11 +35,11 @@
     - name: "Scanner Type"
       effects: 
         - desc: Evasion AP cost -50%
-        - desc: Movement rate +30%
+        - desc: Movement speed +30%
     - name: "Treacherous Blade"
       effects: 
         - desc: Evasion possible during air attacks
-        - desc: Evasion distance & rate +100%
+        - desc: Evasion distance & speed +100%
     - name: "Gathering Keepsakes"
       shortEffects: ATK +15% and HIT +10%
       effects: 
@@ -2652,7 +2652,7 @@
   rush:
     name: "Rocket Slipper"
     picture: Rocket_Slippers_Verda
-    shortEffects: ATK damage dealt +30% and movement rate +30% (Party/20s)
+    shortEffects: ATK damage dealt +30% and movement speed +30% (Party/20s)
     effects:
       - desc: ATK damage +30%
         duration: 20
@@ -2661,7 +2661,7 @@
           priority: 1
           buff: ATK Damage
           buffValue: 30
-      - desc: Movement rate +30%
+      - desc: Movement speed +30%
         duration: 20
         all: true
     power: ATK x 3500%
