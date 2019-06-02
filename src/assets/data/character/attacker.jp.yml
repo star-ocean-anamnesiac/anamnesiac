@@ -8804,9 +8804,9 @@
       maxHits: 1
     - name: "Clockwise Arm - Snail"
       picture: Skill_Placeholder
-      power: ATK x 000%
-      ap: 00
-      maxHits: 00      
+      power: ATK x 999%
+      ap: 99
+      maxHits: 99      
 
   rush:
     name: "Super Snail Beam"
