@@ -8911,7 +8911,7 @@
     name: "Ravaging Blade Dance"
     picture: Wild_Pitch_Ridley_Silverlake
     effects: AP -40% (Party/20s)
-      - desc:  AP -40% 
+      - desc: AP -40% 
         all: true
         duration: 20
         meta:
