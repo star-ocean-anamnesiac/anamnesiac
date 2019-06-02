@@ -3674,8 +3674,7 @@
       element: Earth
       power: INT x 00%
       ap: 28
-      maxHits: 0
-      
+      maxHits: 1
   rush:
     name: "Timestop"
     picture: Rock_Rain_Noel_Chandler
