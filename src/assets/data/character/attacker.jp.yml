@@ -1759,6 +1759,153 @@
       *Normal > Sylvan Shot > Liquid Bite > Sylvan Shot > Spam till out of AP (Damage rotation)*
 
 
+- name: Phia Melle (Awakened)
+  cat: jp
+  picture: Phia
+  weapon: dagger
+  limited: false
+  star: 5
+  awakened: true
+
+  stats:
+    hp: 15498
+    atk: 2691
+    int: 1391
+    def: 1777
+    hit: 1134
+    grd: 932
+
+  talents:
+    - name: "Raven Sword"
+      effects: 
+        - desc: Critical hit chance +50%
+          all: false
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffValue: 50
+        - desc: Critical hit chance +75% when hitcount is >100
+          all: false
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: Hit Count > 100
+            buffValue: 75        
+        - desc: Critical hit chance +100% when hitcount is >150
+          all: false
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: Hit Count > 150
+            buffValue: 100               
+    - name: "Knight's Integrity"
+      effects: 
+        - desc: Critical damage dealt +50%
+          all: false
+          meta:
+            priority: 4
+            buff: Crit Damage
+            buffValue: 20
+        - desc: Critical damage dealt +100% when hitcount is >200
+          all: false
+          meta:
+            priority: 1
+            buff: Crit Damage
+            buffCondition: Hit Count > 200
+            buffValue: 100             
+    - name: "A Highlander's Pride"
+      shortEffects: ATK +25%, DEF +10%, GRD +10%, and HP +20%
+      effects: 
+        - desc: ATK +25%
+          all: false
+          meta:
+            priority: 4
+            buff: ATK
+            buffValue: 25
+        - desc: DEF 10%
+          all: false
+          meta:
+            priority: 4
+            buff: DEF
+            buffValue: 10
+        - desc: GRD +10%
+          all: false
+          meta:
+            priority: 4
+            buff: GRD
+            buffValue: 10    
+        - desc: HP +20%
+          all: false
+          meta:
+            priority: 4
+            buff: HP
+            buffValue: 20          
+    - name: "Respect for Foster Father"
+      effects: 
+        - desc: AP recovery +100%
+          all: false
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffValue: 100
+        - desc: AP recovery increases while moving         
+    - name: "Bound to the Order of the Astral Knights"
+      effects: 
+        - desc: AP cost -30% when skill chain is >3
+          all: false
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain +3
+            buffValue: 30            
+    - name: "Innocence Hidden Between the Lines"
+      effects: 
+        - desc: Evasion AP cost -50%
+          all: false
+        - desc: Evasion possible during air attacks
+          all: false          
+           
+
+  skills:
+    - name: "Frore Dancing Sword"
+      picture: Dancing_Sword
+      power: ATK x 440%
+      ap: 32
+      maxHits: 7
+    - name: "Sylvan Shot"
+      picture: Sylvan_Shot
+      power: ATK x 220%
+      ap: 20
+      maxHits: 8
+      highlight: true     
+    - name: "Unholy Terror"
+      picture: Unholy_Terror
+      power: ATK x 350%
+      ap: 29
+      maxHits: 5      
+    - name: "Liquid Bite"
+      picture: Hydroblades
+      element: Ice
+      power: ATK x 190%
+      ap: 18
+      notes: Occasionally freezes foes
+      maxHits: 2
+      highlight: true
+    - name: "Raven Sword"
+      picture: Skill_Placeholder
+      power: ATK x 500%
+      ap: 39
+      maxHits: 2   
+
+  rush:
+    name: "Unholy Torrent"
+    picture: Unholy_Torrent_Phia
+    effects: 
+      - desc: Occasionally freezes foes
+    power: ATK x 5500%
+    maxHits: 13
+    
+
 - name: Albel Nox
   cat: jp
   rating: 1
