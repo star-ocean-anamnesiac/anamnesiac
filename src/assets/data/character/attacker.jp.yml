@@ -8860,7 +8860,7 @@
         - desc: +1 Assist Usage in battle
           all: true       
     - name: "Alvein Sword Arts"
-      effects: AP Recovery +100%
+      effects: 
         - desc: AP Recovery +100%
           meta:
             priority: 1
