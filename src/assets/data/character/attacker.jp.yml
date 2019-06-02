@@ -8832,11 +8832,11 @@
   star: 5
 
   stats:
-    hp: 15,855
-    atk: 2,718
-    int: 1,537
-    def: 1,983
-    hit: 1,120
+    hp: 15855
+    atk: 2718
+    int: 1537
+    def: 1983
+    hit: 1120
     grd: 833
 
   talents:
