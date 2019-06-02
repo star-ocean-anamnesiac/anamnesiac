@@ -8910,8 +8910,8 @@
   rush:
     name: "Ravaging Blade Dance"
     picture: Wild_Pitch_Ridley_Silverlake
-    effects: AP -40% (Party/20s)
-      - desc: AP -40% 
+    effects: 
+      - desc: AP -40% (Party/20s)
         all: true
         duration: 20
         meta:
