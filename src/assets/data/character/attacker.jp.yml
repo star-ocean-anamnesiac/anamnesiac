@@ -8869,7 +8869,7 @@
         - desc: Nullify Critical Hits during Charge Assault
         - desc: During CA Charge, skip to 200% Cancel bonus      
     - name: "The One to Defeat the Demon King"
-      effects: Can dodge in Mid Air
+      effects:
         - desc: Can dodge in Mid Air
         - desc: Crit Rate +50% when Skill Chain 3+
           meta:
