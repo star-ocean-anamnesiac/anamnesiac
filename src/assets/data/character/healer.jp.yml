@@ -3603,3 +3603,92 @@
         duration: 20
     power: INT x 4000%
     maxHits: 3
+
+- name: Mint Adenade
+  cat: jp
+  picture: Mint_Adenade
+  weapon: staff
+  ace: true
+  star: 5
+
+  stats:
+    hp: 12390
+    atk: 1747
+    int: 2508
+    def: 1523
+    hit: 1057
+    grd: 1148
+
+  talents:
+    - name: "Gentle Healer"
+      effects: 
+        - desc: Grant shield up to 100% of Max HP
+        - desc: Grant Shield worth 10k Max HP to the Party
+          all: true
+        - desc: At 100% HP, AP -15%
+          all: true
+          meta:
+            priority: 3
+            buff: AP Cost Reduction
+            buffCondition: HP is 100%
+            buffValue: 15  
+    - name: "Pope"
+      effects: 
+        - desc: At 100% HP, INT +30%
+          all: true
+          meta:
+            priority: 3
+            buff: INT
+            buffCondition: HP is 100%
+            buffValue: 30
+        - desc: Enemy Defense minus -30% upon using Acid Rain (15s/Enemy)           
+    - name: "Pure Maiden"
+      effects: 
+        - desc: Nullify Critical Hits during Charge Assault
+        - desc: Raise Cancel Bonus by 1 every 0.5 seconds during Charge Assault Standby
+    - name: "Inheritor of Mother's Wishes"
+      effects: 
+        - desc: Cast Time reduced by 100% during Charge Assault
+        - desc: Will not flinch while casting
+        - desc: Cast Time reduced by 50%
+
+  skills:
+    - name: "Nurse"
+      picture: Nurse
+      power: INT x 330%
+      ap: 50
+      maxHits: 1
+    - name: "Acid Rain"
+      picture: Acid_Rain
+      element: Earth
+      power: INT x 1480%
+      ap: 39
+      maxHits: 8
+    - name: "Press - Law"
+      picture: Press_Law
+      power: INT x 210%
+      ap: 20
+      maxHits: 2
+    - name: "Sharpness"
+      picture: Sharpness
+      element: Earth
+      power: INT x 00%
+      ap: 28
+      maxHits: 1
+  rush:
+    name: "Timestop"
+    picture: Rock_Rain_Noel_Chandler
+    element: Earth
+    shortEffects: Recover 80% of HP / Single Target Damage +50% (Party/20s))
+    effects: 
+      - desc: Recover 80% of HP
+        all: true
+      - desc: Single Target Damage +50%
+        all: true
+        duration: 20
+        meta:
+          priority: 1
+          buff: Single Target Damage
+          buffValue: 50        
+    power: INT x 4000%
+    maxHits: 12

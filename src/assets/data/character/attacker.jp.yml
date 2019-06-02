@@ -8737,3 +8737,186 @@
         duration: 20
     power: ATK x 4500%
     maxHits: 9
+
+- name: Tomokazu
+  cat: jp
+  picture: Tomokazu
+  weapon: arm
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 14385
+    atk: 2350
+    int: 1365
+    def: 1825
+    hit: 1036
+    grd: 742
+
+  talents:
+    - name: "Game Voice Actor's Pride"
+      effects: 
+        - desc: Attacks have a 5% chance to freeze 
+    - name: "Spirit of Freedom"
+      effects: 
+        - desc: ATK +30%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 30        
+    - name: "Game Creator's Resourcefuless"
+      shortEffects: AP Recovery on Normal Attacks +50%
+      effects: 
+        - desc: AP Recovery on Normal Attacks +50%
+          all: true
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffValue: 50
+    - name: "The Radio's Pinch Hitter"
+      shortEffects: Damage on frozen targets +70%
+      effects: 
+        - desc: Damage on frozen targets +70%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 70
+         
+
+  skills:
+    - name: "Repetitive Attack - Snail"
+      picture: Skill_Placeholder
+      power: ATK x 590%
+      ap: 26
+      maxHits: 6
+    - name: "Rocket Punch - Snail"
+      picture: Skill_Placeholder
+      power: ATK x 570%
+      ap: 25
+      maxHits: 1
+    - name: "Hop Step - Snail"
+      picture: Skill_Placeholder
+      power: ATK x 340%
+      ap: 17
+      maxHits: 1
+    - name: "Clockwise Arm - Snail"
+      picture: Skill_Placeholder
+      power: ATK x 999%
+      ap: 99
+      maxHits: 99      
+
+  rush:
+    name: "Super Snail Beam"
+    picture: Wild_Pitch_Ridley_Silverlake
+    shortEffects: ATK Damage +40% (Party/20s)
+    effects: 
+      - desc:  ATK Damage +40%
+        all: true
+        duration: 20
+        meta:
+          priority: 1
+          buff: ATK Damage
+          buffValue: 40
+    power: ATK x 4000%
+    maxHits: 10
+ 
+- name: Cless Alvein
+  cat: jp
+  picture: Cless_Alvein
+  weapon: ohs
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15855
+    atk: 2718
+    int: 1537
+    def: 1983
+    hit: 1120
+    grd: 833
+
+  talents:
+    - name: "Swordsman who Maintains Justice"
+      effects: 
+        - desc: ATK +40%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 40
+        - desc: ATK +70% when HP is 100%
+          all: true
+          meta:
+            priority: 3
+            buff: ATK
+            buffCondition: HP is 100%
+            buffValue: 70  
+    - name: "Space-Time Swordsman"
+      effects: 
+        - desc: +1 Assist Usage in battle
+          all: true       
+    - name: "Alvein Sword Arts"
+      effects: 
+        - desc: AP Recovery +100%
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffValue: 100
+        - desc: Nullify Critical Hits during Charge Assault
+        - desc: During CA Charge, skip to 200% Cancel bonus      
+    - name: "The One to Defeat the Demon King"
+      effects:
+        - desc: Can dodge in Mid Air
+        - desc: Crit Rate +50% when Skill Chain 3+
+          meta:
+            priority: 3
+            buff: Crit Rate
+            buffCondition: Skill Chain 3+        
+            buffValue: 50
+        - desc: Crit Rate +100% when Skill Chain 5+
+          meta:
+            priority: 3
+            buff: Crit Rate
+            buffCondition: Skill Chain 5+
+            buffValue: 100  
+         
+
+  skills:
+    - name: "Devil Sword"
+      picture: Devil_Sword
+      power: ATK x 280%
+      ap: 20
+      maxHits: 1
+    - name: "Tiger Fang Slash"
+      picture: Tiger_Fang_Slash
+      power: ATK x 250%
+      ap: 18
+      maxHits: 2
+    - name: "Layered Talon Heaven Flash"
+      picture: Layered_Talon_Heaven_Flash
+      power: ATK x 570%
+      ap: 27
+      maxHits: 7
+    - name: "Thousand Devil Flurry"
+      picture: Thousand_Devil_Flurry
+      power: ATK x 500%
+      ap: 25
+      maxHits: 5      
+
+  rush:
+    name: "Ravaging Blade Dance"
+    picture: Wild_Pitch_Ridley_Silverlake
+    effects: 
+      - desc: AP -40% (Party/20s)
+        all: true
+        duration: 20
+        meta:
+          priority: 1
+          buff: AP Cost Reduction 
+          buffValue: 40
+    power: ATK x 4500%
+    maxHits: 13
