@@ -3622,10 +3622,10 @@
   talents:
     - name: "Gentle Healer"
       effects: 
-        - desc: Grant shield up to 100% of Max HP
-        - desc: Grant Shield worth 10k Max HP to the Party
+        - desc: Able to heal over max HP
+        - desc: Gains up to 10,000 HP over max HP
           all: true
-        - desc: At 100% HP, AP -15%
+        - desc: AP cost -15% when HP is 100%
           all: true
           meta:
             priority: 3
@@ -3634,23 +3634,35 @@
             buffValue: 15  
     - name: "Pope"
       effects: 
-        - desc: At 100% HP, INT +30%
+        - desc: INT +30% when HP is 100%
           all: true
           meta:
             priority: 3
             buff: INT
             buffCondition: HP is 100%
             buffValue: 30
-        - desc: Enemy Defense minus -30% upon using Acid Rain (15s/Enemy)           
+        - desc: DEF -30% when hit by Acid Rain (Enemies/15s)           
     - name: "Pure Maiden"
       effects: 
-        - desc: Nullify Critical Hits during Charge Assault
-        - desc: Raise Cancel Bonus by 1 every 0.5 seconds during Charge Assault Standby
+        - desc: Nullifies charge assault critical damage penalty
+        - desc: Cancel bonus increases 1 level every 0.5 seconds during charge assault standby
     - name: "Inheritor of Mother's Wishes"
       effects: 
-        - desc: Cast Time reduced by 100% during Charge Assault
-        - desc: Will not flinch while casting
-        - desc: Cast Time reduced by 50%
+        - desc: Symbology cast time -100% during charge assault
+          all: false
+          meta:
+            priority: 3
+            buff: Cast Time Reduction
+            buffCondition: Charge Assault
+            buffValue: 100      
+        - desc: No flinching while casting symbology
+        - desc: Symbology cast time -100% when using charge assault
+          all: false
+          meta:
+            priority: 3
+            buff: Cast Time Reduction
+            buffCondition: Charge Assault
+            buffValue: 100      
 
   skills:
     - name: "Nurse"
@@ -3660,30 +3672,32 @@
       maxHits: 1
     - name: "Acid Rain"
       picture: Acid_Rain
-      element: Earth
+      element: Ice
       power: INT x 1480%
       ap: 39
       maxHits: 8
     - name: "Press - Law"
       picture: Press_Law
+      element: Earth
       power: INT x 210%
       ap: 20
       maxHits: 2
     - name: "Sharpness"
       picture: Sharpness
-      element: Earth
-      power: INT x 00%
+      power: 0%
       ap: 28
+      notes: ATK/DEF +35% (Party/30s)
       maxHits: 1
+      
   rush:
     name: "Timestop"
     picture: Rock_Rain_Noel_Chandler
-    element: Earth
-    shortEffects: Recover 80% of HP / Single Target Damage +50% (Party/20s))
+    element: Ice
+    shortEffects: Recovers 80% of max HP, and single target damage +50% (Party/20s)
     effects: 
-      - desc: Recover 80% of HP
+      - desc: Recovers 80% of HP
         all: true
-      - desc: Single Target Damage +50%
+      - desc: Single target damage +50%
         all: true
         duration: 20
         meta:
