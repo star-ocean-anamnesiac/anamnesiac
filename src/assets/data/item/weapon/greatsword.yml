@@ -169,5 +169,24 @@
         priority: 4
         buff: ATK Damage Taken Reduction
         buffValue: 10
-  obtained: Ballistic Rhino / Valkyrie Profile 2 (Event)  
+  obtained: Ballistic Rhino / Valkyrie Profile 2 (Achievement)  
+  
+
+- name: Magnifying Blade
+  cat: 'gl'
+  star: 5
+  picture: Grossarl_Sword
+  atk: 961
+  int: 956
+  factors:
+    - desc: Imbues attacks with ice
+      element: Ice
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP    
+    - desc: Damage dealt +10%
+      meta:
+        priority: 4
+        buff: Damage
+        buffValue: 1
+      lb: 5
+  obtained: Gacha (Limited)
   
