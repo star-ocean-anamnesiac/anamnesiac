@@ -1076,8 +1076,7 @@
   cat: gl
   currency: Luther M2 Coin
   aliases:
-    - a surprise christmas party m2
-    - retrieval mission m2
+    - Luther's Descent M2
 
   items:
     - name: Jade Bastard Sword
@@ -1123,8 +1122,7 @@
   cat: gl
   currency: Luther Coin
   aliases:
-    - a surprise christmas party m1
-    - retrieval mission m1
+    - Luther's Descent M1
 
   items:
     - name: Luther M2 Coin
@@ -1178,15 +1176,15 @@
     - name: "Silver Hammer: Enhance"
       stock: 0
       cost: 800
-      type: improvement-hammer   
-    - name: Platinum Ingot
-      stock: 0
-      cost: 1000
-      type: currency-ingot  
+      type: improvement-hammer    
     - name: Rainbow Crystal
       stock: 3
       cost: 2500
       type: improvement-crystal 
+    - name: Platinum Ingot
+      stock: 10
+      cost: 1000
+      type: currency-ingot 
     - name: Mission
       stock: 5
       cost: 400
