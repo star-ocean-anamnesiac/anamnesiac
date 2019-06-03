@@ -8738,11 +8738,12 @@
     power: ATK x 4500%
     maxHits: 9
 
+
 - name: Tomokazu
   cat: jp
   picture: Tomokazu
   weapon: arm
-  ace: true
+  ace: false
   limited: true
   star: 5
 
@@ -8757,7 +8758,7 @@
   talents:
     - name: "Game Voice Actor's Pride"
       effects: 
-        - desc: Attacks have a 5% chance to freeze 
+        - desc: Attacks have 5% chance to inflict freeze 
     - name: "Spirit of Freedom"
       effects: 
         - desc: ATK +30%
@@ -8767,25 +8768,22 @@
             buff: ATK
             buffValue: 30        
     - name: "Game Creator's Resourcefuless"
-      shortEffects: AP Recovery on Normal Attacks +50%
       effects: 
-        - desc: AP Recovery on Normal Attacks +50%
+        - desc: Normal attack AP recovery +50%
           all: true
           meta:
             priority: 1
             buff: AP Recovery
             buffValue: 50
     - name: "The Radio's Pinch Hitter"
-      shortEffects: Damage on frozen targets +70%
       effects: 
-        - desc: Damage on frozen targets +70%
-          all: true
+        - desc: Damage taken +70% when frozen
+          all: Enemies
           meta:
             priority: 1
             buff: Damage
             buffValue: 70
          
-
   skills:
     - name: "Repetitive Attack - Snail"
       picture: Skill_Placeholder
@@ -8811,9 +8809,13 @@
   rush:
     name: "Super Snail Beam"
     picture: Wild_Pitch_Ridley_Silverlake
-    shortEffects: ATK Damage +40% (Party/20s)
+    element: Ice
+    shortEffects: Imbues attacks with ice (Self/20s) and ATK damage dealt +40% (Party/20s)
     effects: 
-      - desc:  ATK Damage +40%
+      - desc: Imbues attacks with ice
+        all: false
+        duration: 20
+      - desc:  ATK damage dealt +40%
         all: true
         duration: 20
         meta:
@@ -8823,7 +8825,7 @@
     power: ATK x 4000%
     maxHits: 10
  
-- name: Cless Alvein
+- name: Cress Alvein
   cat: jp
   picture: Cless_Alvein
   weapon: ohs
@@ -8840,7 +8842,7 @@
     grd: 833
 
   talents:
-    - name: "Swordsman who Maintains Justice"
+    - name: "Swordsman Who Maintains Justice"
       effects: 
         - desc: ATK +40%
           all: true
@@ -8857,27 +8859,27 @@
             buffValue: 70  
     - name: "Space-Time Swordsman"
       effects: 
-        - desc: +1 Assist Usage in battle
+        - desc: Assist usage +1 at start of battle
           all: true       
     - name: "Alvein Sword Arts"
       effects: 
-        - desc: AP Recovery +100%
+        - desc: AP recovery +100%
           meta:
             priority: 1
             buff: AP Recovery
             buffValue: 100
-        - desc: Nullify Critical Hits during Charge Assault
-        - desc: During CA Charge, skip to 200% Cancel bonus      
+        - desc: Nullifies charge assault critical damage penalty
+        - desc: Cancel bonus starts at 200% when using charge assault   
     - name: "The One to Defeat the Demon King"
       effects:
-        - desc: Can dodge in Mid Air
-        - desc: Crit Rate +50% when Skill Chain 3+
+        - desc: Evasion possible during air attacks
+        - desc: Critical hit chance +50% when skill chain is >3
           meta:
             priority: 3
             buff: Crit Rate
             buffCondition: Skill Chain 3+        
             buffValue: 50
-        - desc: Crit Rate +100% when Skill Chain 5+
+        - desc: Critical hit chance +100% when skill chain is >5
           meta:
             priority: 3
             buff: Crit Rate
@@ -8898,7 +8900,8 @@
       maxHits: 2
     - name: "Layered Talon Heaven Flash"
       picture: Layered_Talon_Heaven_Flash
-      power: ATK x 570%
+      element: Lightning
+      power: ATK x 540%
       ap: 27
       maxHits: 7
     - name: "Thousand Devil Flurry"
@@ -8911,7 +8914,7 @@
     name: "Ravaging Blade Dance"
     picture: Wild_Pitch_Ridley_Silverlake
     effects: 
-      - desc: AP -40% (Party/20s)
+      - desc: AP cost -40%
         all: true
         duration: 20
         meta:
