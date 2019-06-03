@@ -3251,7 +3251,7 @@
     - name: "Doting Father's Spirit"
       effects: 
         - desc: Able to heal over max HP
-        - desc: Adds 10000 to max HP
+        - desc: Gains up to 10000 HP over max HP
           all: true
     - name: "Crafty Mother's Doting Spirit"
       effects: 
@@ -3498,17 +3498,17 @@
             buffValue: 70
 
   skills:
-    - name: "Faerie Light - Blue"
+    - name: "Faerie Light • Blue"
       picture: Skill_Placeholder
       power: INT x 150%
       ap: 30
       maxHits: 1
-    - name: "Sylvan Shot - Blue"
+    - name: "Sylvan Shot • Blue"
       picture: Skill_Placeholder
       power: INT x 150%
       ap: 15
       maxHits: 8
-    - name: "Light Cross - Blue"
+    - name: "Light Cross • Blue"
       picture: Skill_Placeholder
       element: Light
       power: INT x 550%
@@ -3580,12 +3580,12 @@
       power: INT x 580%
       ap: 16
       maxHits: 2
-    - name: "Fairy Light - Research"
+    - name: "Fairy Light • Research"
       picture: Faerie_Light
       power: INT x 250%
       ap: 60
       maxHits: 1
-    - name: "Earth Glaive - Research"
+    - name: "Earth Glaive • Research"
       picture: Earth_Glaive_Research
       element: Earth
       power: INT x 990%
@@ -3623,7 +3623,7 @@
     - name: "Gentle Healer"
       effects: 
         - desc: Able to heal over max HP
-        - desc: Gains up to 10,000 HP over max HP
+        - desc: Gains up to 10000 HP over max HP
           all: true
         - desc: AP cost -15% when HP is 100%
           all: true
@@ -3676,7 +3676,7 @@
       power: INT x 1480%
       ap: 39
       maxHits: 8
-    - name: "Press - Law"
+    - name: "Press • Law"
       picture: Press_Law
       element: Earth
       power: INT x 210%
