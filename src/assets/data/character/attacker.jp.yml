@@ -8537,12 +8537,12 @@
         priority: 2
         buff: ATK
         buffValue: 20
-    - name: "Spinning Axe - Great Revolution"
+    - name: "Spinning Axe • Great Revolution"
       picture: Hurricane
       power: ATK x 1020%
       ap: 40
       maxHits: 10
-    - name: "Spinning Axe - Consecutive Blows"
+    - name: "Spinning Axe • Consecutive Blows"
       picture: Skill_Placeholder
       power: ATK x 1150%
       ap: 52
@@ -8706,7 +8706,7 @@
       power: ATK x 960%
       ap: 30
       maxHits: 6
-    - name: "Glitter Star - AF"
+    - name: "Glitter Star • AF"
       picture: Glitter_Star_AF
       element: Lightning
       power: ATK x 290%
@@ -8759,6 +8759,11 @@
     - name: "Game Voice Actor's Pride"
       effects: 
         - desc: Attacks have 5% chance to inflict freeze 
+          all: true
+          meta:
+            priority: 1
+            buff: Freeze Attack Chance
+            buffValue: 5
     - name: "Spirit of Freedom"
       effects: 
         - desc: ATK +30%
@@ -8773,42 +8778,43 @@
           all: true
           meta:
             priority: 1
-            buff: AP Recovery
+            buff: AP Recovery From Normal Attacks
             buffValue: 50
     - name: "The Radio's Pinch Hitter"
       effects: 
-        - desc: Damage taken +70% when frozen
+        - desc: Damage dealt +70% on frozen targets
           all: Enemies
           meta:
             priority: 1
             buff: Damage
+            buffCondition: Target is Frozen
             buffValue: 70
          
   skills:
-    - name: "Repetitive Attack - Snail"
-      picture: Skill_Placeholder
+    - name: "Repetitive Attack • Snail"
+      picture: Hammer_Slammer
       power: ATK x 590%
       ap: 26
       maxHits: 6
-    - name: "Rocket Punch - Snail"
-      picture: Skill_Placeholder
+    - name: "Rocket Punch • Snail"
+      picture: Rocket_Punch
       power: ATK x 570%
       ap: 25
       maxHits: 1
-    - name: "Hop Step - Snail"
-      picture: Skill_Placeholder
+    - name: "Jump 'n' Thump • Snail"
+      picture: Jump_n_Thump
       power: ATK x 340%
       ap: 17
       maxHits: 1
-    - name: "Clockwise Arm - Snail"
-      picture: Skill_Placeholder
-      power: ATK x 999%
-      ap: 99
-      maxHits: 99      
+    - name: "Clockwise Arm • Snail"
+      picture: Clockwise_Arm
+      power: ATK x 310%
+      ap: 15
+      maxHits: 6    
 
   rush:
     name: "Super Snail Beam"
-    picture: Wild_Pitch_Ridley_Silverlake
+    picture: Super_Snail_Beam_Tomokazu
     element: Ice
     shortEffects: Imbues attacks with ice (Self/20s) and ATK damage dealt +40% (Party/20s)
     effects: 
@@ -8825,7 +8831,7 @@
     power: ATK x 4000%
     maxHits: 10
  
-- name: Cress Alvein
+- name: Cress Albane
   cat: jp
   picture: Cless_Alvein
   weapon: ohs
@@ -8843,6 +8849,7 @@
 
   talents:
     - name: "Swordsman Who Maintains Justice"
+      shortEffects: ATK +40%, +70% when HP is 100% (Party)
       effects: 
         - desc: ATK +40%
           all: true
@@ -8853,7 +8860,7 @@
         - desc: ATK +70% when HP is 100%
           all: true
           meta:
-            priority: 3
+            priority: 1
             buff: ATK
             buffCondition: HP is 100%
             buffValue: 70  
@@ -8864,6 +8871,7 @@
     - name: "Alvein Sword Arts"
       effects: 
         - desc: AP recovery +100%
+          all: false
           meta:
             priority: 1
             buff: AP Recovery
@@ -8875,17 +8883,16 @@
         - desc: Evasion possible during air attacks
         - desc: Critical hit chance +50% when skill chain is >3
           meta:
-            priority: 3
+            priority: 1
             buff: Crit Rate
-            buffCondition: Skill Chain 3+        
+            buffCondition: Skill Chain > 3        
             buffValue: 50
         - desc: Critical hit chance +100% when skill chain is >5
           meta:
-            priority: 3
+            priority: 1
             buff: Crit Rate
-            buffCondition: Skill Chain 5+
+            buffCondition: Skill Chain > 5
             buffValue: 100  
-         
 
   skills:
     - name: "Devil Sword"
@@ -8912,7 +8919,7 @@
 
   rush:
     name: "Ravaging Blade Dance"
-    picture: Wild_Pitch_Ridley_Silverlake
+    picture: Ravaging_Blade_Dance_Cress
     effects: 
       - desc: AP cost -40%
         all: true
