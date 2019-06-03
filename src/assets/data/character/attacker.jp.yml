@@ -8813,7 +8813,7 @@
 
   rush:
     name: "Super Snail Beam"
-    picture: Parabola_Beam
+    picture: Super_Snail_Beam_Tomokazu
     element: Ice 
     effects: 
       - desc: ATK damage dealt +40%   
