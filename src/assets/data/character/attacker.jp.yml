@@ -8915,7 +8915,7 @@
 
   rush:
     name: "Ravaging Blade Dance"
-    picture: Skill_Placeholder
+    picture: Ravaging_Blade_Dance_Cress
     effects: 
       - desc: AP cost -40% 
         all: true
