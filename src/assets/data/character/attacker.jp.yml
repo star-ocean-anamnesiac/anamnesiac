@@ -8757,7 +8757,12 @@
   talents:
     - name: "Game Voice Actor's Pride"
       effects: 
-        - desc: Attacks have a 5% chance to freeze 
+        - desc: Attacks have 5% chance to inflict freeze
+          all: true
+          meta:
+            priority: 1
+            buff: Freeze Attack Chance
+            buffValue: 5
     - name: "Spirit of Freedom"
       effects: 
         - desc: ATK +30%
@@ -8767,53 +8772,51 @@
             buff: ATK
             buffValue: 30        
     - name: "Game Creator's Resourcefuless"
-      shortEffects: AP Recovery on Normal Attacks +50%
       effects: 
-        - desc: AP Recovery on Normal Attacks +50%
+        - desc: Normal attack AP recovery +50%
           all: true
           meta:
             priority: 1
-            buff: AP Recovery
+            buff: AP Recovery From Normal Attacks
             buffValue: 50
     - name: "The Radio's Pinch Hitter"
-      shortEffects: Damage on frozen targets +70%
       effects: 
-        - desc: Damage on frozen targets +70%
+        - desc: Damage dealt +70% on frozen targets
           all: true
           meta:
             priority: 1
             buff: Damage
+            buffCondition: Target is Frozen 
             buffValue: 70
          
-
   skills:
-    - name: "Repetitive Attack - Snail"
-      picture: Skill_Placeholder
+    - name: "Repetitive Attack • Snail"
+      picture: Hammer_Slammer
       power: ATK x 590%
       ap: 26
       maxHits: 6
-    - name: "Rocket Punch - Snail"
-      picture: Skill_Placeholder
+    - name: "Rocket Punch • Snail"
+      picture: Rocket_Punch
       power: ATK x 570%
       ap: 25
       maxHits: 1
-    - name: "Hop Step - Snail"
-      picture: Skill_Placeholder
+    - name: "Jump 'n' Thump • Snail"
+      picture: Jump_n_Thump
       power: ATK x 340%
       ap: 17
       maxHits: 1
-    - name: "Clockwise Arm - Snail"
-      picture: Skill_Placeholder
-      power: ATK x 999%
-      ap: 99
-      maxHits: 99      
+    - name: "Clockwise Arm • Snail"
+      picture: Clockwise_Arm
+      power: ATK x 310%
+      ap: 15
+      maxHits: 6    
 
   rush:
     name: "Super Snail Beam"
-    picture: Wild_Pitch_Ridley_Silverlake
-    shortEffects: ATK Damage +40% (Party/20s)
+    picture: Parabola_Beam
+    element: Ice 
     effects: 
-      - desc:  ATK Damage +40%
+      - desc: ATK damage dealt +40%   
         all: true
         duration: 20
         meta:
@@ -8823,7 +8826,7 @@
     power: ATK x 4000%
     maxHits: 10
  
-- name: Cless Alvein
+- name: Cress Albane
   cat: jp
   picture: Cless_Alvein
   weapon: ohs
@@ -8851,40 +8854,42 @@
         - desc: ATK +70% when HP is 100%
           all: true
           meta:
-            priority: 3
+            priority: 1
             buff: ATK
             buffCondition: HP is 100%
             buffValue: 70  
     - name: "Space-Time Swordsman"
       effects: 
-        - desc: +1 Assist Usage in battle
+        - desc: Assist use +1 in battle 
           all: true       
-    - name: "Alvein Sword Arts"
+    - name: "Albane Sword Arts"
       effects: 
-        - desc: AP Recovery +100%
+        - desc: AP recovery +100%
+          all: false
           meta:
             priority: 1
             buff: AP Recovery
             buffValue: 100
-        - desc: Nullify Critical Hits during Charge Assault
-        - desc: During CA Charge, skip to 200% Cancel bonus      
+        - desc: Nullifies charge assault critical damage penalty
+          all: false 
+        - desc: Cancel bonus starts at 200% when using charge assault     
     - name: "The One to Defeat the Demon King"
       effects:
-        - desc: Can dodge in Mid Air
-        - desc: Crit Rate +50% when Skill Chain 3+
+        - desc: Evasion possible during air attacks
+          all: false
+        - desc: Critical hit chance +50% when skill chain is >3
           meta:
-            priority: 3
+            priority: 1
             buff: Crit Rate
-            buffCondition: Skill Chain 3+        
+            buffCondition: Skill Chain > 3     
             buffValue: 50
-        - desc: Crit Rate +100% when Skill Chain 5+
+        - desc: Critical hit chance +100% when skill chain is >5
           meta:
-            priority: 3
+            priority: 1
             buff: Crit Rate
-            buffCondition: Skill Chain 5+
+            buffCondition: Skill Chain > 5
             buffValue: 100  
          
-
   skills:
     - name: "Devil Sword"
       picture: Devil_Sword
@@ -8898,7 +8903,8 @@
       maxHits: 2
     - name: "Layered Talon Heaven Flash"
       picture: Layered_Talon_Heaven_Flash
-      power: ATK x 570%
+      element: Lightning
+      power: ATK x 540%
       ap: 27
       maxHits: 7
     - name: "Thousand Devil Flurry"
@@ -8909,9 +8915,9 @@
 
   rush:
     name: "Ravaging Blade Dance"
-    picture: Wild_Pitch_Ridley_Silverlake
+    picture: Skill_Placeholder
     effects: 
-      - desc: AP -40% (Party/20s)
+      - desc: AP cost -40% 
         all: true
         duration: 20
         meta:
