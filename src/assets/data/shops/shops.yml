@@ -932,3 +932,270 @@
       stock: 5
       cost: 13
       type: accessory    
+      
+      
+- name: Bell Ornament
+  icon: currency-coin-m2
+  cat: gl
+  currency: Bell Ornament
+  aliases:
+    - a surprise christmas party m2
+    - retrieval mission m2
+
+  items:
+    - name: 5* Weapon Ticket
+      stock: 3
+      cost: 10
+      type: draw-ticket-weapon            
+    - name: 5* Character Ticket
+      stock: 3
+      cost: 15
+      type: draw-ticket-character     
+    - name: L. Limit Breaker
+      stock: 2
+      cost: 20
+      type: improvement-limitbreak
+    - name: "Platinum Thread: Enhance"
+      stock: 5
+      cost: 15
+      type: improvement-thread
+    - name: "Gold Thread: Enhance"
+      stock: 10
+      cost: 10
+      type: improvement-thread
+    - name: AP Starseed
+      stock: 1
+      cost: 50
+      type: seed-ap 
+    - name: Ra. Platinum Prism
+      stock: 0
+      cost: 5
+      type: improvement-prism
+    - name: "Platinum Thread: Enhance"
+      stock: 0
+      cost: 20
+      type: improvement-thread
+      
+    - name: Gold Coro Necklace
+      stock: 3
+      cost: 30
+      type: accessory      
+    - name: Christmas Reindeer
+      stock: 6
+      cost: 50
+      type: accessory      
+    - name: Symbol of the Snow God
+      stock: 3
+      cost: 30
+      type: accessory           
+
+
+- name: Christmas Ornament
+  icon: currency-coin-m1
+  cat: gl
+  currency: Christmas Ornament
+  aliases:
+    - a surprise christmas party m1
+    - retrieval mission m1
+
+  items:
+    - name: Illumination Blaster
+      stock: 1
+      cost: 3000
+      type: gun
+    - name: Twin Snowswords
+      stock: 1
+      cost: 3000
+      type: dualswords
+    - name: Christmas Staff
+      stock: 1
+      cost: 3000
+      type: staff
+    - name: "Snow Hammer Hammer: Cap Inc."
+      stock: 5
+      cost: 2000
+      type: improvement-hammer-special
+    - name: "Snow Hammer Hammer: Cap Inc."
+      stock: 5
+      cost: 2500
+      type: improvement-hammer-special
+    - name: "Snow Hammer Hammer: Cap Inc."
+      stock: 5
+      cost: 3000
+      type: improvement-hammer-special    
+    - name: AP Starseed
+      stock: 1
+      cost: 8000
+      type: seed-ap  
+    - name: 5* Weapon Ticket
+      stock: 3
+      cost: 3000
+      type: draw-ticket-weapon            
+    - name: 4-5* Character Ticket
+      stock: 4
+      cost: 2500
+      type: draw-ticket-character     
+    - name: L. Limit Breaker
+      stock: 2
+      cost: 4000
+      type: improvement-limitbreak
+    - name: "Plat. Hammer: Enhance"
+      stock: 10
+      cost: 500
+      type: improvement-hammer  
+    - name: "Gold Hammer: Enhance"
+      stock: 10
+      cost: 300
+      type: improvement-hammer    
+    - name: "Plat. Hammer: Enhance"
+      stock: 0
+      cost: 1500
+      type: improvement-hammer     
+    - name: Platinum Ingot
+      stock: 0
+      cost: 1000
+      type: currency-ingot  
+    - name: Rainbow Crystal
+      stock: 3
+      cost: 2500
+      type: improvement-crystal 
+    - name: Mission
+      stock: 20
+      cost: 500
+      type: draw-ticket-mission
+      
+    - name: Gold Coro Necklace
+      stock: 3
+      cost: 15000
+      type: accessory  
+     
+      
+      
+- name: Luther M2 Coin
+  icon: currency-coin-m2
+  cat: gl
+  currency: Luther M2 Coin
+  aliases:
+    - Luther's Descent M2
+
+  items:
+    - name: Jade Bastard Sword
+      stock: 1
+      cost: 10
+      type: ohs
+    - name: Crowned Scepter
+      stock: 1
+      cost: 10
+      type: staff
+    - name: L. Limit Breaker
+      stock: 1
+      cost: 20
+      type: improvement-limitbreak
+    - name: 5* Weapon Ticket
+      stock: 2
+      cost: 5
+      type: draw-ticket-weapon            
+    - name: 5* Character Ticket
+      stock: 1
+      cost: 10
+      type: draw-ticket-character            
+    - name: 4-5* Character Ticket
+      stock: 1
+      cost: 7
+      type: draw-ticket-character     
+    - name: Rainbow Crystal
+      stock: 0
+      cost: 10
+      type: improvement-crystal
+    - name: Ra. Platinum Prism
+      stock: 0
+      cost: 3
+      type: improvement-prism
+    - name: "Gold Hammer: Enhance"
+      stock: 0
+      cost: 3
+      type: improvement-hammer        
+
+
+- name: Luther Coin Exchange
+  icon: currency-coin-m1
+  cat: gl
+  currency: Luther Coin
+  aliases:
+    - Luther's Descent M1
+
+  items:
+    - name: Luther M2 Coin
+      stock: 20
+      cost: 3000
+      type: currency-coin-m2 
+    - name: Jade Bastard Sword
+      stock: 3
+      cost: 2000
+      type: ohs
+    - name: Jade Bastard Sword
+      stock: 2
+      cost: 4000
+      type: ohs
+    - name: Crowned Scepter
+      stock: 2
+      cost: 2000
+      type: staff
+    - name: Crowned Scepter
+      stock: 3
+      cost: 4000
+      type: staff            
+    - name: 4-5* Character Ticket
+      stock: 4
+      cost: 4000
+      type: draw-ticket-character    
+    - name: 5* Weapon Ticket
+      stock: 2
+      cost: 3000
+      type: draw-ticket-weapon     
+    - name: 4* Weapon Ticket
+      stock: 3
+      cost: 2000
+      type: draw-ticket-weapon  
+    - name: Ra. Platinum Prism
+      stock: 0
+      cost: 400
+      type: improvement-prism  
+    - name: "Plat. Hammer: Enhance"
+      stock: 25
+      cost: 400
+      type: improvement-hammer  
+    - name: "Gold Hammer: Enhance"
+      stock: 10
+      cost: 200
+      type: improvement-hammer    
+    - name: "Silver Hammer: Enhance"
+      stock: 20
+      cost: 150
+      type: improvement-hammer      
+    - name: "Silver Hammer: Enhance"
+      stock: 0
+      cost: 800
+      type: improvement-hammer    
+    - name: Rainbow Crystal
+      stock: 3
+      cost: 2500
+      type: improvement-crystal 
+    - name: Platinum Ingot
+      stock: 10
+      cost: 1000
+      type: currency-ingot 
+    - name: Mission
+      stock: 5
+      cost: 400
+      type: draw-ticket-mission
+    - name: Barrier-Blaster
+      stock: 1
+      cost: 3000
+      type: misc-barrierblaster
+      
+    - name: Silver Armlet
+      stock: 1
+      cost: 7000
+      type: accessory  
+   
