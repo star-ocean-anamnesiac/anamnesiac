@@ -385,3 +385,22 @@
         buffValue: 15
       lb: 5
   obtained: Gacha  
+  
+  
+- name: Crimson Blossom Bow
+  cat: 'gl'
+  star: 5
+  picture: Frozen_Bow_Crimson_Purity_Flower
+  atk: 962
+  int: 957
+  factors:
+    - desc: Imbues attacks with ice
+      element: Ice
+    - desc: AP recovery +50%
+      meta:
+        priority: 3
+        buff: AP Recovery
+        buffValue: 50
+    - desc: Additional hit that deals 10% of damage dealt by normal attacks
+      lb: 5
+  obtained: Gacha 
