@@ -4115,7 +4115,7 @@
     - name: "Fashionista"
       effects: 
         - desc: Converts 50% of ATK to INT
-          all: Self/Healers
+          all: Healers/Self
           meta:
             priority: 1
             buff: ATK -> INT
