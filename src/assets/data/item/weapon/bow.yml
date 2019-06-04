@@ -404,3 +404,22 @@
     - desc: Additional hit that deals 10% of damage dealt by normal attacks
       lb: 5
   obtained: Gacha 
+
+
+- name: Astral Bow
+  cat: 'gl'
+  star: 5
+  picture: Astral_Bow
+  atk: 512
+  int: 507
+  factors:
+    - desc: Damage dealt +15% by Luna Mirror
+    - desc: Single target damage +15% when hitcount is >100
+      meta:
+        priority: 3
+        buff: Single Target Damage
+        buffValue: 15
+        buffCondition: Hit Count > 100
+    - desc: Evasion AP cost -50%
+      lb: 5
+  obtained: Mother Polyphaga (Exchange)
