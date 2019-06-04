@@ -939,8 +939,9 @@
   cat: gl
   currency: Bell Ornament
   aliases:
-    - a surprise christmas party m2
+    - surprise christmas party m2
     - retrieval mission m2
+    - christmas doggo m2
 
   items:
     - name: 5* Weapon Ticket
@@ -995,8 +996,9 @@
   cat: gl
   currency: Christmas Ornament
   aliases:
-    - a surprise christmas party m1
+    - surprise christmas party m1
     - retrieval mission m1
+    - christmas doggo m1
 
   items:
     - name: Illumination Blaster
@@ -1059,7 +1061,7 @@
       stock: 3
       cost: 2500
       type: improvement-crystal 
-    - name: Mission
+    - name: Mission Ticket
       stock: 20
       cost: 500
       type: draw-ticket-mission
@@ -1185,7 +1187,7 @@
       stock: 10
       cost: 1000
       type: currency-ingot 
-    - name: Mission
+    - name: Mission Ticket
       stock: 5
       cost: 400
       type: draw-ticket-mission
@@ -1199,3 +1201,82 @@
       cost: 7000
       type: accessory  
    
+
+- name: Astral Coin
+  icon: currency-coin-m1
+  cat: gl
+  currency: Astral Coin
+  aliases:
+    - mother polyphaga m1
+
+  items:
+    - name: Astral Bow
+      stock: 1
+      cost: 3000
+      type: bow
+    - name: Astral Sword
+      stock: 1
+      cost: 3000
+      type: greatsword
+    - name: "Astral Hammer: Cap Inc."
+      stock: 5
+      cost: 2000
+      type: improvement-hammer-special
+    - name: "Astral Hammer: Cap Inc."
+      stock: 5
+      cost: 2500
+      type: improvement-hammer-special    
+    - name: Gold-Patterned Bandana
+      stock: 3
+      cost: 10000
+      type: accessory      
+    - name: L. Limit Breaker
+      stock: 1
+      cost: 4000
+      type: improvement-limitbreak      
+    - name: AP Starseed
+      stock: 1
+      cost: 8000
+      type: seed-ap   
+    - name: 5* Weapon Ticket
+      stock: 1
+      cost: 3000
+      type: draw-ticket-weapon   
+    - name: 4-5* Char Ticket
+      stock: 3
+      cost: 2000
+      type: draw-ticket-character
+    - name: Barrier Blaster
+      stock: 1
+      cost: 3000
+      type: misc-barrierblaster
+      
+    - name: "Plat. Hammer: Enhance"
+      stock: 10
+      cost: 500
+      type: improvement-hammer
+    - name: "Gold Hammer: Enhance"
+      stock: 10
+      cost: 300
+      type: improvement-hammer      
+    - name: "Gold Hammer: Enhance"
+      stock: 0
+      cost: 900
+      type: improvement-hammer   
+    - name: Platinum Ingot
+      stock: 0
+      cost: 1000      
+      type: currency-ingot      
+    - name: Rainbow Crystal
+      stock: 3
+      cost: 2500
+      type: improvement-crystal
+    - name: HP Starseed
+      stock: 20
+      cost: 300
+      type: seed-other  
+
+   
+
+
+
