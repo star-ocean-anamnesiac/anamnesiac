@@ -190,3 +190,22 @@
       lb: 5
   obtained: Gacha
   
+  
+- name: Astral Sword
+  cat: 'gl'
+  star: 5
+  picture: Astral_Sword
+  atk: 511
+  int: 506
+  factors:
+    - desc: "Damage dealt +30% by Double Slash: Vortex"
+    - desc: Critical hit chance +10%
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffValue: 10
+    - desc: Recovers 3% of max HP every 5 seconds
+      lb: 5
+  obtained: Mother Polyphaga (Exchange)    
+  
+  
