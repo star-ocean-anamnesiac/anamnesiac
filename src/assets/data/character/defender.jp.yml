@@ -15,7 +15,7 @@
     grd: 868
 
   talents:
-    - name: "Former Glory III"
+    - name: "Former Glory"
       effects: 
         - desc: Absorbs 30% of damage dealt by normal attacks as HP
           all: false
@@ -102,7 +102,7 @@
             priority: 1
             buff: Damage
             buffValue: 10
-    - name: "Imposing Presence IV"
+    - name: "Imposing Presence"
       effects: 
         - desc: No flinching when taking damage of 20% of max HP or less
           all: Short Range Weapons
@@ -168,15 +168,15 @@
     grd: 581
 
   talents:
-    - name: "Stalwart Defense II"
+    - name: "Stalwart Defense"
       effects: 
         - desc: Absorbs 15% of damage dealt by normal attacks as HP
           all: false
-    - name: "Reprieve from Death III"
+    - name: "Reprieve from Death"
       effects:
         - desc: Recovers 3% of max HP every 3 seconds
           all: false
-    - name: "Unwavering Faith III"
+    - name: "Unwavering Faith"
       effects: 
         - desc: No flinching when taking damage of 15% of max HP or less
           all: Short Range Weapons
@@ -226,7 +226,7 @@
     grd: 586
 
   talents:
-    - name: "Enchanting Scents VI"
+    - name: "Enchanting Scents"
       effects: 
         - desc: Nullifies status ailments for 90 seconds
         - desc: No flinching when taking damage of 15% of max HP or less
@@ -1937,7 +1937,7 @@
           all: true
           meta:
             priority: 3
-            buff: ATK Damage Reduction
+            buff: ATK Damage Taken Reduction
             buffCondition: Short Range
             buffValue: 15             
     - name: "Filial Strength"
