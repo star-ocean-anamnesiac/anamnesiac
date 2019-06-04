@@ -807,3 +807,14 @@
     - desc: Hitcount timer +1 second 
   obtained: "Lezard / Valkyrie Profile: The Purged Wizard (Achievement, Exchange)"  
   
+  
+- name: Gold-Patterned Bandana
+  cat: 'gl'
+  star: 5
+  picture: Gold_Patterned_Bandana
+  def: 728
+  factors:
+    - desc: 30% chance of surviving a lethal attack when at 10% of max HP or more and at short range
+    - desc: Taunt +2
+  obtained: Mother Polyphaga (Achievement, Exchange, Drop)   
+  
