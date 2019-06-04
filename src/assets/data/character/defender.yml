@@ -1794,7 +1794,7 @@
           all: true
           meta:
             priority: 3
-            buff: ATK Damage Reduction
+            buff: ATK Damage Taken Reduction
             buffCondition: Short Range
             buffValue: 15   
     - name: "Filial Strength II"
