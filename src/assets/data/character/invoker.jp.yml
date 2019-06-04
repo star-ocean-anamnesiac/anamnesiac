@@ -14,7 +14,7 @@
     grd: 443
 
   talents:
-    - name: "Advanced Archaeology Knowledge III"
+    - name: "Advanced Archaeology Knowledge"
       effects: 
         - desc: INT +30% when HP is 100%
           all: true
@@ -23,7 +23,7 @@
             buff: INT
             buffValue: 30
             buffCondition: HP is 100%
-    - name: "New Talent II"
+    - name: "New Talent"
       effects:
         - desc: Damage dealt +20%
           meta:
@@ -95,7 +95,7 @@
             priority: 1
             buff: Stun Rate
             buffValue: 15
-    - name: "Valiant Soul II"
+    - name: "Valiant Soul"
       shortEffects: 80% chance of surviving a lethal attack and symbology cast time -80% when at 10% of max HP or more
       effects:
         - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
@@ -155,7 +155,7 @@
     grd: 455
 
   talents:
-    - name: "Peering into the Crystal Ball III"
+    - name: "Peering into the Crystal Ball"
       effects:
         - desc: Stun rate +30% when HP is 100%
           meta:
@@ -163,7 +163,7 @@
             buff: Stun Rate
             buffCondition: HP is 100%
             buffValue: 30
-    - name: "Secret Arts III"
+    - name: "Secret Arts"
       effects:
          - desc: INT +30%
            meta:
@@ -227,7 +227,7 @@
     grd: 467
 
   talents:
-    - name: "Hidden Secrets III"
+    - name: "Hidden Secrets"
       effects: 
         - desc: Stun rate +30% at long range
           meta:
@@ -235,7 +235,7 @@
             buff: Stun Rate
             buffCondition: Long Range
             buffValue: 30
-    - name: "Secret Agent Abilities II"
+    - name: "Secret Agent Abilities"
       effects: 
         - desc: INT +25%
           meta:
@@ -299,7 +299,7 @@
     grd: 455
 
   talents:
-    - name: "Mystery Orb II"
+    - name: "Mystery Orb"
       effects: 
         - desc: INT +20%
           all: true
@@ -307,7 +307,7 @@
             priority: 4
             buff: INT
             buffValue: 20
-    - name: "A Teacher's Path III"
+    - name: "A Teacher's Path"
       effects: 
         - desc: Damage dealt +30% at long range
           meta:
@@ -366,7 +366,7 @@
     grd: 467
 
   talents:
-    - name: "Hard Work Pays Off III"
+    - name: "Hard Work Pays Off"
       effects: 
         - desc: DEF +30%
           meta:
@@ -519,7 +519,7 @@
             priority: 4
             buff: INT
             buffValue: 20
-    - name: "Extreme Focus II"
+    - name: "Extreme Focus"
       effects: 
         - desc: Damage dealt +20%
           meta:
@@ -577,7 +577,7 @@
     grd: 686
 
   talents:
-    - name: "Creative Genius III"
+    - name: "Creative Genius"
       effects: 
         - desc: INT +30%
           all: true
@@ -585,7 +585,7 @@
             priority: 4
             buff: INT
             buffValue: 30
-    - name: "Luck Favors the Brave II"
+    - name: "Luck Favors the Brave"
       effects: 
         - desc: Symbology cast time -20%
           meta:
@@ -649,7 +649,7 @@
     grd: 686
 
   talents:
-    - name: "Divine Revelation III"
+    - name: "Divine Revelation"
       effects: 
         - desc: INT damage taken -30%
           all: true
@@ -4115,7 +4115,7 @@
     - name: "Fashionista"
       effects: 
         - desc: Converts 50% of ATK to INT
-          all: Healers
+          all: Self/Healers
           meta:
             priority: 1
             buff: ATK -> INT
