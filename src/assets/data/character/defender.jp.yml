@@ -1914,7 +1914,7 @@
     grd: 1029
 
   talents:
-    - name: "Self Taught Swordsmanship"
+    - name: "Self-Taught Fencing"
       shortEffects: ATK -15% and DEF -20% when hit by Spirit Strike (Enemies/10s)
       effects: 
         - desc: ATK -15% when hit by Spirit Strike
@@ -1931,11 +1931,16 @@
             duration: 10
             buff: Enemy DEF Reduction
             buffValue: 20
-    - name: "Broadminded"
+    - name: "Kindness and Openness"
       effects: 
         - desc: ATK damage taken -15% at short range
           all: true
-    - name: "Father Inherited Strong Arms"
+          meta:
+            priority: 3
+            buff: ATK Damage Reduction
+            buffCondition: Short Range
+            buffValue: 15             
+    - name: "Filial Strength"
       effects: 
         - desc: No flinching when taking damage of 25% of max HP or less
           all: true
@@ -1945,7 +1950,7 @@
             priority: 1
             buff: Single Target Damage
             buffValue: 20
-    - name: "Wandering Swordsman"
+    - name: "Wandering Swordfighter"
       shortEffects: ATK +20% and HP +30%
       effects: 
         - desc: ATK +20%
@@ -1971,12 +1976,12 @@
       power: ATK x 190%
       ap: 16
       maxHits: 1
-    - name: "Double Slash (Sturdy)"
+    - name: "Double Slash:Steel"
       picture: YoHRa_Arms_Eleven
       power: ATK x 580%
       ap: 29
       maxHits: 5
-    - name: "Double Slash (Vortex)"
+    - name: "Double Slash: Vortex"
       picture: Double_Slash_Vortex
       power: ATK x 680%
       ap: 32
