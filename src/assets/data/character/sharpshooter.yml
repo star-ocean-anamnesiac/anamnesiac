@@ -3337,3 +3337,125 @@
       *Normal>Sylvan>Aqua>(Sylvan or Terror)^n*
       *Normal>Aqua>Sylvan>Aqua^n - large enemies*
       *Normal>Dash>Normal>Dash^n - Poshrush deadly poison procs*
+      
+      
+      
+- name: Phia Melle (Crimson Grace)
+  cat: gl
+  picture: Crimson_Grace_Phia
+  weapon: bow
+  ace: true
+  star: 5
+
+  stats:
+    hp: 14070
+    atk: 2468
+    int: 1549
+    def: 1747
+    hit: 1253
+    grd: 945
+
+  talents:
+    - name: "Battle Armor Oath II"
+      effects: 
+        - desc: Critical hit chance +20%
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffValue: 20
+        - desc: Critical damage dealt +20%
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Damage
+            buffValue: 20
+    - name: "Endless Great Chivalry II"
+      shortEffects: Critical hit chance and critical damage dealt +30%/+40% when hitcount is >100/>200 (Party)
+      effects: 
+        - desc: Critical hit chance +30% when hitcount is >100
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: Hit Count > 100
+            buffValue: 30
+        - desc: Critical hit chance +40% when hitcount is >200
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: Hit Count > 200
+            buffValue: 40
+        - desc: Critical damage dealt +30% when hitcount is >100
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Damage
+            buffCondition: Hit Count > 100
+            buffValue: 30
+        - desc: Critical damage dealt +40% when hitcount is >200
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Damage
+            buffCondition: Hit Count > 200
+            buffValue: 40
+    - name: "The Astral Star II"
+      effects: 
+        - desc: Evasion distance +100%
+        - desc: Evasion speed +100%
+    - name: "Proof of Tribulation"
+      shortEffects: ATK/HIT +20% after using Luna Mirror (10s)
+      effects:
+        - desc: ATK +20% after using Luna Mirror
+          meta:
+            priority: 1
+            buff: ATK
+            buffCondition: after using Luna Mirror
+            buffValue: 20
+        - desc: HIT +20% after using Luna Mirror
+          meta:
+            priority: 1
+            buff: HIT
+            buffCondition: after using Luna Mirror
+            buffValue: 20
+            
+  skills:
+    - name: "Crimson Squall: Flash"
+      picture: Crimson_Squall
+      power: ATK x 220%
+      ap: 22
+      maxHits: 9
+    - name: "Shadow Flame"
+      picture: Binding_Distortion
+      element: Dark
+      power: ATK x 240%
+      ap: 22
+      maxHits: 5
+    - name: "Chaotic Blossom: Kick"
+      picture: Chaotic_Blossoms_I
+      power: ATK x 620%
+      ap: 33
+      maxHits: 11
+    - name: "Luna Mirror"
+      picture: Lunar_Mirror
+      element: Ice
+      power: ATK x 330%
+      ap: 26
+      maxHits: 5
+      
+  rush:
+    name: "Gathering Storm"
+    picture: Murakumo_Crimson_Grace_Phia
+    shortEffects: ATK damage dealt +30% (Party/20s)
+    effects: 
+      - desc: ATK damage dealt +30%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: ATK Damage
+          buffValue: 30
+    power: ATK x 4000%
+    maxHits: 24      
