@@ -3738,14 +3738,14 @@
       shortEffects: Rush combo damage +10%/+20% when hitcount is >100/>200
       effects: 
         - desc: Rush combo damage +10% when hitcount is >100
-          all: false
+          all: true
           meta:
             priority: 3
             buff: Rush Damage
             buffCondition: Hit Count > 100
             buffValue: 10
         - desc: Rush combo damage +20% when hitcount is >200
-          all: false
+          all: true
           meta:
             priority: 3
             buff: Rush Damage
@@ -3786,7 +3786,8 @@
 
   rush:
     name: "tri-Ace"
-    picture: Tri_Ace_Ashton
+    picture: Tri_Ace_
+    
     shortEffects: ATK +60% and AP cost -30% (Self/20s)
     effects: 
       - desc: ATK +60% 
@@ -5046,14 +5047,14 @@
       shortEffects: Rush combo damage +20%/+40% when hitcount is >100/>200
       effects: 
         - desc: Rush combo damage +20% when hitcount is >100
-          all: false
+          all: true
           meta:
             priority: 3
             buff: Rush Damage
             buffCondition: Hit Count > 100
             buffValue: 20
         - desc: Rush combo damage +40% when hitcount is >200
-          all: false
+          all: true
           meta:
             priority: 3
             buff: Rush Damage
