@@ -4114,7 +4114,7 @@
       effects: 
         - desc: Evasion possible during air attacks
           all: false
-        - desc: Recovers 100% HP on perfect dodge
+        - desc: Recovers 100% AP on perfect dodge
           all: false
     - name: "Red Summoning Technique"
       shortEffects: ATK/INT/DEF/HIT/GRD +20% when hitcount is >100
