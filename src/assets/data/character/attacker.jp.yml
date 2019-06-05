@@ -3734,18 +3734,18 @@
             priority: 1
             buff: AP Cost Reduction
             buffValue: 10
-    - name: "Heir of Symbological Arts"
-      shortEffects: Rush combo damage +10%/+20% when hitcount is >100/>200
+    - name: "Heir of Symbological Arts" 
+      shortEffects: Rush combo damage +10%/+20% when hitcount is >100/>200 (Party)
       effects: 
         - desc: Rush combo damage +10% when hitcount is >100
-          all: false
+          all: true
           meta:
             priority: 3
             buff: Rush Damage
             buffCondition: Hit Count > 100
             buffValue: 10
         - desc: Rush combo damage +20% when hitcount is >200
-          all: false
+          all: true
           meta:
             priority: 3
             buff: Rush Damage
@@ -5043,17 +5043,17 @@
             buff: AP Cost Reduction
             buffValue: 10
     - name: "Heir of Symbological Arts"
-      shortEffects: Rush combo damage +20%/+40% when hitcount is >100/>200
+      shortEffects: Rush combo damage +20%/+40% when hitcount is >100/>200 (Party)
       effects: 
         - desc: Rush combo damage +20% when hitcount is >100
-          all: false
+          all: true
           meta:
             priority: 3
             buff: Rush Damage
             buffCondition: Hit Count > 100
             buffValue: 20
         - desc: Rush combo damage +40% when hitcount is >200
-          all: false
+          all: true
           meta:
             priority: 3
             buff: Rush Damage
