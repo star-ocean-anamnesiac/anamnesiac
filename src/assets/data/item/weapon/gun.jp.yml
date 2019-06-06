@@ -248,7 +248,7 @@
         buffValue: 5
     - desc: Damage dealt +10% by Bombing Run
       lb: 5
-  obtained: Champ Pater (Draw Box), Resonance of Fate 1
+  obtained: Champ Pater / Resonance of Fate 1 (Draw Box)
 
 - name: PMF-84
   cat: 'jp'
@@ -267,7 +267,7 @@
     - desc: 70% chance of surviving a lethal attack when at 15% of max HP or more
     - desc: Damage dealt +10% by Approach Blow
       lb: 5
-  obtained: Champ Pater (Draw Box), Resonance of Fate 1
+  obtained: Champ Pater / Resonance of Fate 1 (Draw Box)
 
 - name: PMF-84W
   cat: 'jp'
@@ -594,7 +594,7 @@
         buff: AP Recovery
         buffValue: 50
       lb: 5
-  obtained: Cannon Daddy (Draw Box), Resonance of Fate 2
+  obtained: Cannon Daddy / Resonance of Fate 2 (Draw Box)
   
 - name: PMF-84-S
   cat: 'jp'
@@ -611,7 +611,7 @@
         buffValue: 10
     - desc: Recovers 3% of max HP every 5 seconds
       lb: 5
-  obtained: Cannon Daddy (Draw Box), Resonance of Fate 2
+  obtained: Cannon Daddy / Resonance of Fate 2 (Draw Box)
 
 - name: PMF-45
   cat: 'jp'
@@ -708,5 +708,45 @@
         buff: ATK Damage
         buffValue: 15
         buffCondition: Hit Count > 100
+      lb: 5
+  obtained: Gacha
+
+- name: Winter Blaster
+  cat: 'jp'
+  star: 5
+  picture: Winter_Blaster
+  atk: 533
+  int: 527
+  factors:
+    - desc: Damage dealt +20% by Bullet Rainfall
+    - desc: AP cost -10
+      meta:
+        priority: 3
+        buff: AP Cost Reduction
+        buffValue: 10
+    - desc: Damage taken -10% at long range
+      meta:
+        priority: 3
+        buff: Damage Taken Reduction
+        buffValue: 10
+        buffCondition: Long Range
+      lb: 5
+  obtained: Botanical Beast (Exchange)
+
+- name: Snow Plasma Gun
+  cat: 'jp'
+  star: 5
+  picture: Snow_Plasma_Gun
+  atk: 1263
+  int: 1257
+  factors:
+    - desc: Imbues attacks with lightning
+      element: Lightning
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP
+    - desc: ATK damage taken -15%
+      meta:
+        priority: 3
+        buff: ATK Damage Taken Reduction
+        buffValue: 15
       lb: 5
   obtained: Gacha
