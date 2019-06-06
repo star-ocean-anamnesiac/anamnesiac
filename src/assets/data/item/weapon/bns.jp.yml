@@ -1,21 +1,601 @@
 
+- name: Obsidian Saber
+  cat: 'jp'
+  star: 4
+  picture: Obsidian_Saber
+  atk: 470
+  int: 469
+  factors:
+    - desc: Imbues attacks with dark
+      element: Dark
+    - desc: Damage dealt +20% by Bloodstorm Revolution
+      meta:
+        priority: 3
+        buff: Damage
+        buffCondition: Bloodstorm Revolution
+        buffValue: 20
+  obtained: Transmutation, Gacha
+
+- name: Murasame 
+  cat: 'jp'
+  star: 5
+  picture: Blade_of_Dismemberment_Murasame
+  atk: 495
+  int: 0
+  factors:
+    - desc: ATK +15%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 15
+    - desc: Damage dealt +20% by Bloodstorm Revolution
+    - desc: Taunt +1
+      lb: 3
+  obtained: Coin Exchange, Gacha
+
+- name: Searing Sword
+  cat: 'jp'
+  star: 5
+  picture: Ignite_Sword
+  atk: 490
+  int: 0
+  factors:
+    - desc: Imbues attacks with fire
+      element: Fire
+    - desc: Damage dealt +20% by Vampiric Flash
+  obtained: Coin Exchange, Transmutation, Gacha
+
+- name: Demon Saber
+  cat: 'jp'
+  star: 5
+  picture: Satanic_Saber
+  atk: 835
+  int: 836
+  factors:
+    - desc: Dark damage dealt +15%
+      meta:
+        priority: 4
+        buff: Dark Damage
+        buffValue: 15
+    - desc: Damage dealt +20% by Mirror Blade
+  obtained: Coin Exchange, Transmutation, Gacha
+
+- name: Mizuchi
+  cat: 'jp'
+  star: 5
+  picture: Dragon's_Blade_Mizuchi
+  atk: 480
+  int: 0
+  factors:
+    - desc: ATK +15%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 15
+    - desc: DEF -15%
+      meta:
+        priority: 4
+        buff: DEF Reduction
+        buffValue: 15
+    - desc: Damage dealt +20% by Dragon Roar
+  obtained: Coin Exchange, Transmutation, Gacha
+
 - name: Eldar Lord Rapier
-  cat: jp
+  cat: 'jp'
   star: 5
   picture: Eldar_Lord_Rapier
-  atk: 474
+  atk: 475
   int: 476
   factors:
-    - desc: Dark damage +30%
+    - desc: Dark damage dealt +30%
       meta:
         priority: 4
         buff: Dark Damage
         buffValue: 30
-    - desc: Cursed Reaping Spark damage +20%
+    - desc: Damage dealt +20% by Cursed Reaping Spark
     - desc: INT +20%
       lb: 5
       meta:
         priority: 4
         buff: INT
         buffValue: 20
-  obtained: Coin Shop (Frost)
+  obtained: Frost Tree (Exchange)
+
+- name: War God's Brand 
+  cat: 'jp'
+  star: 5
+  picture: Mars_Brand
+  atk: 500
+  int: 498
+  factors:
+    - desc: Multiple target damage +20%
+      meta:
+        priority: 1
+        buff: Multiple Target Damage
+        buffValue: 20
+    - desc: Damage dealt +20% by Dragon Roar
+    - desc: Damage dealt +10%
+      meta:
+        priority: 1
+        buff: Damage
+        buffValue: 10
+      lb: 3
+  obtained: Gacha
+
+- name: Bluewave Sword
+  cat: 'jp'
+  star: 5
+  picture: Blue_Wave_Sword
+  atk: 531
+  int: 529
+  factors:
+    - desc: Damage dealt +20% by Thunderfire Slice
+    - desc: Taunt +1
+    - desc: DEF +10% when targeted by enemy
+      meta:
+        priority: 3
+        buff: DEF
+        buffValue: 10
+        buffCondition: Targeted by Enemy
+      lb: 5
+  obtained: Predate Queen (Exchange)
+
+- name: Augaus
+  cat: 'jp'
+  star: 5
+  picture: Oni's_Katana_Orguss'plein
+  atk: 861
+  int: 859
+  factors:
+    - desc: Damage dealt +30% by Diabolic Whirl
+    - desc: AP cost -10%
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 10
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP when targeted by enemy
+      lb: 5
+  obtained: Millioneye / Luin D'Mont (Exchange)
+
+- name: Hyouga
+  cat: 'jp'
+  star: 5
+  picture: Frostwolf_Blade_Ice_Fang
+  atk: 536
+  int: 532
+  factors:
+    - desc: ATK +15%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 15
+    - desc: Imbues attacks with ice
+      element: Ice
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP
+      lb: 5
+  obtained: Gacha
+
+- name: Devil's Saber
+  cat: 'jp'
+  star: 5
+  picture: Vampiric_Saber
+  atk: 478
+  int: 474
+  factors:
+    - desc: Absorbs 5% of damage dealt by normal attacks as HP
+    - desc: Critical hit chance +4%
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 4
+    - desc: INT damage taken -5%
+      meta:
+        priority: 1
+        buff: INT Damage Taken Reduction
+        buffValue: 5
+      lb: 5
+  obtained: Michael (Exchange)
+
+- name: Daikiga Iwato
+  cat: 'jp'
+  star: 5
+  picture: Fierce_Blade_Stone_Slasher
+  atk: 491
+  int: 489
+  factors:
+    - desc: Damage dealt +10% by Unbridled Double Slash
+    - desc: Damage dealt to demons +15%
+      slayer: Demon
+      slayerPct: 15
+      meta:
+        priority: 4
+        buff: Damage To Demons
+        buffValue: 15
+    - desc: Damage dealt to humanoids +15%
+      slayer: Human
+      slayerPct: 15
+      meta:
+        priority: 4
+        buff: Damage To Humans
+        buffValue: 15
+    - desc: ATK +5%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 5
+      lb: 5
+  obtained: Executioners (Exchange, Achievement)
+
+- name: Gladiateur
+  cat: 'jp'
+  star: 5
+  picture: Gladiateur
+  atk: 958
+  int: 962
+  factors:
+    - desc: Damage dealt to humanoids +40%
+      slayer: Human
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Humans
+        buffValue: 40
+    - desc: AP cost -10%
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 10
+    - desc: 80% chance to survive a lethal attack when at 20% of max HP or more
+      lb: 3
+  obtained: Coin Exchange, Transmutation
+
+- name: Kogarasumaru
+  cat: 'jp'
+  star: 5
+  picture: Spiritual_Sword_Kogarasumaru
+  atk: 963
+  int: 961
+  factors:
+    - desc: Imbues attacks with dark
+      element: Dark
+    - desc: Dark damage dealt +20%
+      meta:
+        priority: 3
+        buff: Dark Damage
+        buffValue: 20
+    - desc: AP cost -10% when skill chain is >3
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffCondition: Skill Chain 3+
+        buffValue: 10        
+      lb: 5
+  obtained: Gacha
+
+- name: Kagutsuchi
+  cat: 'jp'
+  star: 5
+  picture: Flaming_God's_Sword_Kagutsuchi
+  atk: 960
+  int: 958
+  factors:
+    - desc: Imbues attacks with fire
+      element: Fire
+    - desc: Normal attack AP recovery +50%
+      meta:
+        priority: 4
+        buff: AP Recovery From Normal Attacks
+        buffValue: 10
+    - desc: 60% chance to survive a lethal attack when at 20% of max HP or more
+      lb: 5
+  obtained: Coin Exchange
+
+- name: Shell Piercer
+  cat: 'jp'
+  star: 5
+  picture: Shell_Piercer
+  atk: 960
+  int: 963
+  factors:
+    - desc: Damage dealt to insects +40%
+      slayer: Insect
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Insects
+        buffValue: 40
+    - desc: Critical hit chance +10%
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffValue: 10
+    - desc: Critical damage dealt +15%
+      meta:
+        priority: 1
+        buff: Crit Damage
+        buffValue: 15        
+    - desc: Recovers 3% of max HP every 5 seconds
+      lb: 5
+  obtained: Gacha
+
+- name: Predator's Saber
+  cat: 'jp'
+  star: 5
+  picture: Predatory_Saber
+  atk: 962
+  int: 960
+  factors:
+    - desc: Damage dealt to beasts +40%
+      slayer: Beast
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Beasts
+        buffValue: 40
+    - desc: Absorbs 5% of damage dealt by normal attacks as HP
+    - desc: Normal attack AP recovery +50% when hitcount is >100
+      meta:
+        priority: 1
+        buff: AP Recovery from Normal Attacks
+        buffCondition: Hit Count > 100
+        buffValue: 50
+      lb: 3
+  obtained: Gacha
+
+- name: "Dragon Sword: Scalebite"
+  cat: 'jp'
+  star: 5
+  picture: Dragon_Sword_Scalebite
+  atk: 958
+  int: 959
+  factors:
+    - desc: Damage dealt to dragons +40%
+      slayer: Dragon
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Dragons
+        buffValue: 40
+    - desc: ATK damage dealt +10%
+      meta:
+        priority: 1
+        buff: ATK Damage
+        buffValue: 10     
+    - desc: Recovers 3% of max HP every 5 seconds
+      lb: 5
+  obtained: Gacha
+
+- name: Hisuikirin
+  cat: 'jp'
+  star: 5
+  picture: Divine_Blade_Jade_Kirin
+  atk: 962
+  int: 958
+  factors:
+    - desc: Imbues attacks with earth
+      element: Earth
+    - desc: Normal attack AP recovery +50%
+      meta:
+        priority: 1
+        buff: AP Recovery From Normal Attacks
+        buffValue: 50
+    - desc: ATK damage dealt +15% when skill chain is >3
+      meta:
+        priority: 3
+        buff: ATK Damage
+        buffValue: 15
+        buffCondition: Skill Chain 3+
+      lb: 5
+  obtained: Gacha
+
+- name: Onimaru Kunitsuna
+  cat: 'jp'
+  star: 5
+  picture: Onimaru_Kunitsuna
+  atk: 959
+  int: 960
+  factors:
+    - desc: Damage dealt to humanoids +40%
+      slayer: Human
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Humans
+        buffValue: 40
+    - desc: Critical hit chance +10%
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffValue: 10
+    - desc: Critical damage dealt +15%
+      meta:
+        priority: 1
+        buff: Crit Damage
+        buffValue: 15        
+    - desc: ATK damage taken -10%
+      meta:
+        priority: 3
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+      lb: 3
+  obtained: Gacha
+
+- name: Glance Reviver
+  cat: 'jp'
+  star: 5
+  picture: Divine_Blade_Glance_Reviver
+  atk: 835
+  int: 827
+  factors:
+    - desc: Damage dealt +20% by Entrapment
+    - desc: Absorbs 5% of damage dealt by normal attacks as HP    
+    - desc: Critical hit chance +15% when using charge assault
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffCondition: charge assault
+        buffValue: 15
+      lb: 5
+  obtained: "Ballistic Rhino / Valkyrie Profile: The Purged Wizard (Event)"
+
+- name: Valkyrie-Favor
+  cat: 'jp'
+  star: 5
+  picture: Valkyrie's_Favour
+  atk: 965
+  int: 959
+  factors:
+    - desc: Imbues attacks with lightning
+      element: Lightning
+    - desc: Lightning damage dealt +15%
+      meta:
+        priority: 3
+        buff: Lightning Damage
+        buffValue: 15
+    - desc: ATK +5%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 5        
+    - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
+      lb: 5
+  obtained: Gacha
+
+- name: "Hayabusamaru: Shionkoshirae"
+  cat: 'jp'
+  star: 5
+  picture: Hayabusamaru_Shionkoshirae
+  atk: 532
+  int: 526
+  factors:
+    - desc: Damage dealt +20% by Explosive Lightning Slash
+    - desc: Rush combo damage +10% 
+    - desc: 60% chance of suviving a lethal attack when at 20% of max HP or more
+      lb: 5
+  obtained: Josephine (Exchange)
+
+- name: "Dragonblade: Dark Blood"
+  cat: 'jp'
+  star: 5
+  picture: Dragonblade_Dark_Blood
+  atk: 961
+  int: 955
+  factors:
+    - desc: Imbues attacks with dark
+      element: Dark
+    - desc: Damage dealt to dragons +30%
+      slayer: Dragon
+      slayerPct: 30
+      meta:
+        priority: 4
+        buff: Damage To Dragons
+        buffValue: 30
+    - desc: Absorbs 15% of damage dealt by normal attacks as HP
+    - desc: Critical hit chance +15%
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffValue: 15
+      lb: 5
+  obtained: Gacha
+
+- name: Red Scrapper
+  cat: 'jp'
+  star: 5
+  picture: Machine_Slayer_Red_Scrapper
+  atk: 1260
+  int: 1255
+  factors:
+    - desc: Damage dealt to machines +40%
+      slayer: Machine
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Machines
+        buffValue: 40
+    - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
+    - desc: Damage dealt +15% when skill chain is >3
+      meta:
+        priority: 1
+        buff: Damage
+        buffCondition: Skill Chain 3+
+        buffValue: 15
+      lb: 3
+  obtained: Gacha
+
+- name: "Blue Ocean Blade: Coral Edge"
+  cat: 'jp'
+  star: 5
+  picture: Blue_Ocean_Blade_Coral_Edge
+  atk: 511
+  int: 507
+  factors:
+    - desc: Damage dealt +20% by Seven Stars Double Slash
+    - desc: ATK damage dealt +10%
+      meta:
+        priority: 1
+        buff: ATK Damage
+        buffValue: 10
+    - desc: Absorbs 5% of damage dealt by normal attacks as HP    
+      lb: 5
+  obtained: Disaster Crab (Exchange)
+
+- name: "Aquatic Slasher: Scarlet-Tailed Goldfish"
+  cat: 'jp'
+  star: 5
+  picture: Aquatic_Slasher_Scarlet_Tailed_Goldfish
+  atk: 1261
+  int: 1256
+  factors:
+    - desc: Imbues attacks with ice
+      element: Ice
+    - desc: Normal attack AP recovery +100%
+      meta:
+        priority: 4
+        buff: AP Recovery From Normal Attacks
+        buffValue: 100
+    - desc: Recovers 10% of max HP every 3 seconds
+      lb: 5
+  obtained: Gacha
+
+- name: Machine Slayer
+  cat: 'jp'
+  star: 5
+  picture: Machine_Slayer
+  atk: 1262
+  int: 1258
+  factors:
+    - desc: Damage dealt to machines +40%
+      slayer: Machine
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Machines
+        buffValue: 40
+    - desc: Absorbs 5% of damage dealt by normal attacks as HP
+    - desc: Rush combo damage +10%
+      lb: 3
+  obtained: Gacha
+
+- name: Purple Lightning
+  cat: 'jp'
+  star: 5
+  picture: Violet_Thunder
+  atk: 862
+  int: 858
+  factors:
+    - desc: Damage dealt +20% by Flash Blade
+    - desc: Multiple target damage +15%
+      meta:
+        priority: 1
+        buff: Multiple Target Damage
+        buffValue: 15
+    - desc: ATK damage taken -10%
+      meta:
+        priority: 1
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+      lb: 5
+  obtained: Knight Exile / FFBE (Achievement)
+
+
