@@ -249,3 +249,132 @@
     - desc: Damage dealt +10% by Bombing Run
       lb: 5
   obtained: Champ Pater (Draw Box), Resonance of Fate 1
+
+- name: PMF-84
+  cat: 'jp'
+  star: 5
+  picture: PMF_84
+  atk: 492
+  int: 489
+  factors:
+    - desc: Damage dealt to humanoids +15%      
+      slayer: Human
+      slayerPct: 15
+      meta:
+        priority: 4
+        buff: Damage To Humans
+        buffValue: 15
+    - desc: 70% chance of surviving a lethal attack when at 15% of max HP or more
+    - desc: Damage dealt +10% by Approach Blow
+      lb: 5
+  obtained: Champ Pater (Draw Box), Resonance of Fate 1
+
+- name: PMF-84W
+  cat: 'jp'
+  star: 5
+  picture: PMF_84W
+  atk: 963
+  int: 960
+  factors:
+    - desc: Imbues attacks with wind
+      element: Wind
+    - desc: Normal attack AP recovery +50%
+      meta:
+        priority: 3
+        buff: AP Recovery From Normal Attacks
+        buffValue: 50
+    - desc: Single target damage +10%
+      lb: 3
+      meta:
+        priority: 4
+        buff: Single Target Damage
+        buffValue: 10
+      lb: 5
+  obtained: Gacha
+
+- name: Scarlet Rose
+  cat: 'jp'
+  star: 5
+  picture: Scarlet_Rose
+  atk: 963
+  int: 964
+  factors:
+    - desc: Imbues attacks with earth
+      element: Earth
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP
+    - desc: AP recovery +30% when hitcount is >100
+      meta:
+        priority: 3
+        buff: AP Recovery
+        buffValue: 30
+        buffCondition: Hit Count > 100
+      lb: 5
+  obtained: Gacha
+
+- name: Dimension Slicer
+  cat: 'jp'
+  star: 5
+  picture: Spatial_Gun_Dimension_Slicer
+  atk: 812
+  int: 808
+  factors:
+    - desc: Damage dealt +30% by Energy Glaive
+    - desc: AP cost -10%
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 10
+    - desc: ATK damage dealt +40% when skill chain is >3
+      meta:
+        priority: 4
+        buff: ATK Damage
+        buffCondition: Skill Chain 3+
+        buffValue: 40
+      lb: 5
+  obtained: Alma (Exchange), Coin Exchange
+
+- name: White Fang
+  cat: 'jp'
+  star: 5
+  picture: Magical_Gun_White_Fang
+  atk: 962
+  int: 958
+  factors:
+    - desc: Damage dealt to divinities +40%
+      slayer: Divinity
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Divinities
+        buffValue: 40
+    - desc: Critical hit chance +20% when hitcount is >150
+      meta:
+        priority: 3
+        buff: Crit Rate
+        buffCondition: Hit Count > 150
+        buffValue: 20
+    - desc: AP cost -10 when skill chain is >3
+      lb: 3
+      meta:
+        priority: 3
+        buff: AP Cost Reduction
+        buffCondition: Skill Chain 3+
+        buffValue: 10
+  obtained: Gacha
+
+- name: Pulse Needle
+  cat: 'jp'
+  star: 5
+  picture: Pulsing_Needle
+  atk: 512
+  int: 509
+  factors:
+    - desc: Damage dealt +20% by Bullet Locust
+    - desc: ATK damage dealt +10%
+      meta:
+        priority: 1
+        buff: ATK Damage
+        buffValue: 10
+    - desc: Recovers 3% of max HP every 5 seconds
+      lb: 5
+  obtained: Facula (Draw Box)
