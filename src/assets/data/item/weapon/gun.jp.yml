@@ -478,3 +478,99 @@
       lb: 5
   obtained: Mother Virus Pod (Exchange)
 
+- name: Hunting Ground
+  cat: 'jp'
+  star: 5
+  picture: Hunting_Ground
+  atk: 961
+  int: 957
+  factors:
+    - desc: Imbues attacks with earth
+      element: Earth
+    - desc: Damage dealt to beasts +20%      
+      slayer: Beast
+      slayerPct: 20
+      meta:
+        priority: 4
+        buff: Damage To Beasts
+        buffValue: 20
+    - desc: AP cost -10%
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 10
+    - desc: Single target damage +15%
+      lb: 5
+      meta:
+        priority: 3
+        buff: Single Target Damage
+        buffValue: 15
+  obtained: Gacha
+
+- name: Typhoon Laser
+  cat: 'jp'
+  star: 5
+  picture: Typhoon_Laser
+  atk: 961
+  int: 958
+  factors:
+    - desc: Imbues attacks with wind
+      element: Wind
+    - desc: Recovers 10% of max HP every 3 seconds
+    - desc: Critical hit chance +15%
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffValue: 15
+      lb: 5
+  obtained: Gacha
+
+- name: Cosmo Blaster
+  cat: 'jp'
+  star: 5
+  picture: Meteor_Gun_Cosmic_Blaster
+  atk: 960
+  int: 956
+  factors:
+    - desc: Damage dealt to demons +30%
+      slayer: Demon
+      slayerPct: 40
+      meta:
+        priority: 3
+        buff: Damage To Demons
+        buffValue: 30
+    - desc: Single target damage +20%
+      meta:
+        priority: 3
+        buff: Single Target Damage
+        buffValue: 20
+    - desc: Critical hit chance +15%
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffValue: 15
+      lb: 3
+  obtained: Gacha
+  
+- name: Plant Slayer
+  cat: 'jp'
+  star: 5
+  picture: Plant_Felling
+  atk: 959
+  int: 958
+  factors:
+    - desc: Damage dealt to plants +40%
+      slayer: Plant
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Plants
+        buffValue: 40
+    - desc: 80% chance of surviving a lethal attack when at 20% of max HP or more
+    - desc: Single target damage +20%
+      lb: 3
+      meta:
+        priority: 1
+        buff: Single Target Damage
+        buffValue: 20
+  obtained: Gacha  
