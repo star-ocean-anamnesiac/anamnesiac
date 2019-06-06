@@ -33,7 +33,7 @@
     - desc: Imbues attacks with lightning
       element: Lightning
     - desc: Damage dealt +20% by Victory Terror
-  obtained: Coin Shop, Transmutation, Gacha
+  obtained: Coin Exchange, Transmutation, Gacha
   
   notes: >
     The best daggers you can get from the coin shop due to them being elemental imbued. Though early on they're beaten out by the
@@ -78,7 +78,7 @@
         buff: Crit Rate
         buffValue: 4
       lb: 3
-  obtained: Coin Shop, Transmutation, Gacha
+  obtained: Coin Exchange, Transmutation, Gacha
   
   notes: >
     They're basically a stat stick, the third factor is bad, it's passable as a neutral weapon because of the scaling. That's it.
@@ -97,7 +97,7 @@
         buff: Ice Damage
         buffValue: 15
     - desc: Damage dealt +20% by Sylvan Shot
-  obtained: Coin Shop, Transmutation, Gacha
+  obtained: Coin Exchange, Transmutation, Gacha
   
   notes: >
     They're not a terrible neutral weapon for Clair since Hydroblades is Ice and she uses Sylvan shot, for everyone else, there are
@@ -108,7 +108,7 @@
   cat: 'gl'
   star: 5
   picture: Aquatic_Spirit_Ruby_Dragon_Blades
-  atk: 535
+  atk: 530
   int: 0
   factors:
     - desc: ATK +15%
@@ -122,7 +122,7 @@
         buff: DEF Reduction
         buffValue: 15
     - desc: Damage dealt +20% by Hydroblades
-  obtained: Coin Shop, Transmutation, Gacha
+  obtained: Coin Exchange, Transmutation, Gacha
   
   notes: >
     Other weapons do what this does better. This is fodder. My sympathies if you pulled it. It is usable if it is your only dagger.
