@@ -329,7 +329,7 @@
   int: 492
   factors:
     - desc: Damage dealt +10% by Tornado
-    - desc: Damage dealt to avians +25%
+    - desc: Damage dealt to birds +25%
       slayer: Bird
       slayerPct: 25
       meta:
@@ -551,7 +551,7 @@
   atk: 959
   int: 960
   factors:
-    - desc: Damage dealt to avians +40%
+    - desc: Damage dealt to birds +40%
       slayer: Bird
       slayerPct: 40
       meta:
