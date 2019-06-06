@@ -1,15 +1,839 @@
 
+- name: Illuminated Staff
+  cat: 'jp'
+  star: 5
+  picture: Flashing_Staff
+  atk: 958
+  int: 964
+  factors:
+    - desc: Light damage dealt +40%
+      meta:
+        priority: 4
+        buff: Light Damage
+        buffValue: 40
+    - desc: Critical hit chance +10%
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 10
+    - desc: Critical damage dealt +15%
+      meta:
+        priority: 4
+        buff: Crit Damage
+        buffValue: 15
+    - desc: ATK damage taken -10%
+      meta:
+        priority: 1
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+      lb: 5
+  obtained: Gacha
+
+- name: Winged Scepter
+  cat: 'jp'
+  star: 5
+  picture: Green_Bunny_Sceptre
+  atk: 0
+  int: 495
+  factors:
+    - desc: INT +15%
+      meta:
+        priority: 4
+        buff: INT
+        buffValue: 15
+    - desc: Damage dealt +20% by Sunflare
+    - desc: Recovers 10% of max HP every 3 seconds
+      lb: 3
+  obtained: Coin Exchange, Gacha
+
+- name: Lightning Wand
+  cat: 'jp'
+  star: 5
+  picture: Thunder_Cane_Tall_Wand
+  atk: 0
+  int: 490
+  factors:
+    - desc: Lightning damage dealt +15%
+      meta:
+        priority: 4
+        buff: Lightning Damage
+        buffValue: 15
+    - desc: Damage dealt +20% by Thunder Flare
+  obtained: Coin Exchange, Transmutation, Gacha
+
 - name: Holy Rod
-  cat: jp
+  cat: 'jp'
   star: 5
   picture: Holy_Rod
   atk: 0
-  int: 835
+  int: 485
   factors:
-    - desc: Light damage +15%
+    - desc: Light damage dealt +15%
       meta:
         priority: 4
         buff: Light Damage
         buffValue: 15
-    - desc: Radiant Lancer damage +20%
-  obtained: Coin Shop (Staff), Transmute, Gacha
+    - desc: Damage dealt +20% by Radiant Lancer
+  obtained: Coin Exchange, Transmutation, Gacha
+
+- name: Nightmare Wand
+  cat: 'jp'
+  star: 5
+  picture: Nightmare_Wand
+  atk: 0
+  int: 480
+  factors:
+    - desc: INT +15%
+      meta:
+        priority: 4
+        buff: INT
+        buffValue: 15
+    - desc: DEF -15%
+      meta:
+        priority: 4
+        buff: DEF Reduction
+        buffValue: 15
+    - desc: Damage dealt +20% by Deep Freeze
+  obtained: Coin Exchange, Transmutation, Gacha
+
+- name: Rod of the Feather
+  cat: 'jp'
+  star: 5
+  picture: Feather_Tusk
+  atk: 0
+  int: 492
+  factors:
+    - desc: Damage dealt +20% by Crush
+    - desc: Damage dealt to machines +20%
+      slayer: Machine
+      slayerPct: 20
+      meta:
+        priority: 4
+        buff: Damage To Machines
+        buffValue: 20
+    - desc: Multiple target damage +15%
+      lb: 5
+      meta:
+        priority: 1
+        buff: Multiple Target Damage
+        buffValue: 15
+  obtained: Gerel (Exchange)
+
+- name: Lemurisian Wand
+  cat: 'jp'
+  star: 5
+  picture: Remurick_Wand
+  atk: 0
+  int: 477
+  factors:
+    - desc: INT +10%
+      meta:
+        priority: 4
+        buff: INT
+        buffValue: 10
+    - desc: Damage dealt +100% by Trinity Blaze
+    - desc: Critical hit chance +10%
+      lb: 5
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 10
+  obtained: Frost Tree (Exchange)
+
+- name: Aether-in-Stasis
+  cat: 'jp'
+  star: 5
+  picture: Ether_Frozen
+  atk: 0
+  int: 500
+  factors:
+    - desc: Multiple target damage +15% 
+      meta:
+        priority: 1
+        buff: Multiple Target Damage
+        buffValue: 15
+    - desc: Damage dealt +20% by Plasma Cyclone
+    - desc: Damage dealt +10%
+      lb: 5
+      meta:
+        priority: 1
+        buff: Damage
+        buffValue: 10
+  obtained: Gacha
+
+- name: Thunderbird Staff
+  cat: 'jp'
+  star: 5
+  picture: Thunderbird_Staff
+  atk: 958
+  int: 962
+  factors:
+    - desc: Lightning damage dealt +40%
+      meta:
+        priority: 4
+        buff: Lightning Damage
+        buffValue: 40
+    - desc: Damage dealt to demons +20%
+      slayer: Demon
+      slayerPct: 20
+      meta:
+        priority: 4
+        buff: Damage To Demons
+        buffValue: 20
+    - desc: Damage dealt to humanoids +10%
+      slayer: Human
+      slayerPct: 10
+      meta:
+        priority: 4
+        buff: Damage To Humans
+        buffValue: 10
+    - desc: AP recovery +30% when not targeted by enemy
+      lb: 3
+      meta:
+        priority: 3
+        buff: AP Recovery
+        buffValue: 30
+        buffCondition: Not Being Targeted By Enemy
+  obtained: Gacha
+
+- name: Infernal Scepter
+  cat: 'jp'
+  star: 5
+  picture: Infernal_Sceptre
+  atk: 956
+  int: 961
+  factors:
+    - desc: Fire damage dealt +40%
+      meta:
+        priority: 4
+        buff: Fire Damage
+        buffValue: 40
+    - desc: Damage dealt to humanoids +20%
+      slayer: Human
+      slayerPct: 20
+      meta:
+        priority: 4
+        buff: Damage To Humans
+        buffValue: 20
+    - desc: Stun rate +15%
+      meta:
+        priority: 4
+        buff: Stun Rate
+        buffValue: 15
+    - desc: 70% chance of surviving a lethal attack when at 15% of max HP or more
+      lb: 3
+  obtained: Gacha
+
+- name: Crowned Scepter
+  cat: 'jp'
+  star: 5
+  picture: Reinforced_Crescent_Wand
+  atk: 487
+  int: 492
+  factors:
+    - desc: Damage dealt +10% by Violent Explosion
+    - desc: Stun rate +10%
+      meta:
+        priority: 4
+        buff: Stun Rate
+        buffValue: 10
+    - desc: Recovers 2% of max HP every 5 seconds
+      lb: 5
+  obtained: Luther (Exchange)
+
+- name: Racket Staff
+  cat: 'jp'
+  star: 5
+  picture: Smash_Rod
+  atk: 957
+  int: 964
+  factors:
+    - desc: Light damage dealt +20%
+      meta:
+        priority: 4
+        buff: Light Damage
+        buffValue: 20
+    - desc: Damage dealt to machines +20%
+      slayer: Machine
+      slayerPct: 20
+      meta:
+        priority: 4
+        buff: Damage To Machines
+        buffValue: 20
+    - desc: HP +15%
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 15
+    - desc: Repel +1
+      lb: 5
+  obtained: Gacha
+
+- name: Ceremonial Spear
+  cat: 'jp'
+  star: 5
+  picture: Winged_Sceptre
+  atk: 489
+  int: 492
+  factors:
+    - desc: Damage dealt +10% by Tornado
+    - desc: Damage dealt to birds +25%
+      slayer: Bird
+      slayerPct: 25
+      meta:
+        priority: 4
+        buff: Damage To Bird
+        buffValue: 25
+    - desc: Repel +1
+      lb: 5
+  obtained: Colossal Beak (Exchange)
+
+- name: Rod of Snakes
+  cat: 'jp'
+  star: 5
+  picture: Rod_of_Snakes
+  atk: 487
+  int: 494
+  factors:
+    - desc: Damage dealt +10% by Silencing Starlight
+    - desc: Damage taken -5%
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffValue: 5
+    - desc: Light damage dealt +15%
+      lb: 5
+      meta:
+        priority: 4
+        buff: Light Damage
+        buffValue: 15
+  obtained: Colossal Beak (Exchange)
+
+- name: Christmas Staff
+  cat: 'jp'
+  star: 5
+  picture: Christmas_Wand
+  atk: 526
+  int: 533
+  factors:
+    - desc: Damage dealt +20% by Prismatic Rays
+    - desc: DEF +10%
+      meta:
+        priority: 4
+        buff: DEF
+        buffValue: 10
+    - desc: No flinching when casting symbology
+      lb: 5
+  obtained: Christmas Horndevil (Exchange)
+
+- name: Santa Bunny Rod
+  cat: 'jp'
+  star: 5
+  picture: Santa_Bunny_Rod
+  atk: 958
+  int: 964
+  factors:
+    - desc: Light damage dealt +40%
+      meta:
+        priority: 4
+        buff: Light Damage
+        buffValue: 40
+    - desc: Damage dealt to demons +20%
+      slayer: Demon
+      slayerPct: 20
+      meta:
+        priority: 4
+        buff: Damage To Demons
+        buffValue: 20
+    - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
+    - desc: No flinching when casting symbology
+      lb: 5
+  obtained: Gacha
+
+- name: Sapphire-domed Staff
+  cat: 'jp'
+  star: 5
+  picture: Blue_Sapphire_Staff
+  atk: 531
+  int: 536
+  factors:
+    - desc: Ice damage dealt +25%
+      meta:
+        priority: 4
+        buff: Ice Damage
+        buffValue: 25
+    - desc: INT +15%
+      meta:
+        priority: 4
+        buff: INT
+        buffValue: 15
+    - desc: Damage taken -10%
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffValue: 10
+      lb: 3
+  obtained: Gacha
+
+- name: Celebration Charm
+  cat: 'jp'
+  star: 5
+  picture: Celebrate_Chime
+  atk: 959
+  int: 965
+  factors:
+    - desc: Earth damage dealt +40%
+      meta:
+        priority: 4
+        buff: Earth Damage
+        buffValue: 40
+    - desc: Critical hit chance +10%
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 10
+    - desc: INT damage dealt +15% when hitcount is >100
+      meta:
+        priority: 3
+        buff: INT Damage
+        buffCondition: Hit Count > 100
+        buffValue: 15
+      lb: 5
+  obtained: Gacha
+
+- name: Hunter's Catpaws
+  cat: 'jp'
+  star: 5
+  picture: Hunting_Staff_Cat's_Paw
+  atk: 959
+  int: 960
+  factors:
+    - desc: Damage dealt to birds +40%
+      slayer: Bird
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage to Birds
+        buffValue: 40
+    - desc: No flinching when casting symbology
+    - desc: Stun rate +10%
+      meta:
+        priority: 4
+        buff: Stun Rate
+        buffValue: 10
+      lb: 5
+  obtained: Gacha
+
+- name: Angel Rune Wand
+  cat: 'jp'
+  star: 5
+  picture: Angelic_Runic_Wand
+  atk: 509
+  int: 512
+  factors:
+    - desc: Damage dealt +20% by Aurora Rings
+    - desc: Damage taken -10%
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffValue: 10
+    - desc: DEF +10%
+      meta:
+        priority: 4
+        buff: DEF
+        buffValue: 10
+      lb: 5
+  obtained: Alma (Exchange)
+
+- name: Blue Moon Rod
+  cat: 'jp'
+  star: 5
+  picture: Blue_Moon_Rod
+  atk: 508
+  int: 511
+  factors:
+    - desc: Damage dealt +20% by Magnum Tornado
+    - desc: Damage taken -10%
+      meta:
+        priority: 3
+        buff: Damage Taken Reduction
+        buffValue: 10
+    - desc: INT damage dealt +10% when HP is 100%
+      meta:
+        priority: 3
+        buff: INT Damage
+        buffCondition: HP is 100
+        buffValue: 10
+      lb: 5
+  obtained: Mother Virus Pod (Exchange)
+
+- name: Dreaming Bear
+  cat: 'jp'
+  star: 5
+  picture: Dreaming_Bear
+  atk: 959
+  int: 963
+  factors:
+    - desc: HP +20%
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 20
+    - desc: 80% chance of surviving a lethal attack when at 20% of max HP or more
+    - desc: AP cost -10%
+      meta:
+        priority: 1
+        buff: AP Cost Reduction
+        buffValue: 10
+      lb: 5
+  obtained: Gacha
+
+- name: Tiger Head
+  cat: 'jp'
+  star: 5
+  picture: Tiger_Head
+  atk: 957
+  int: 963
+  factors:
+    - desc: Damage dealt to humanoids +40%
+      slayer: Human
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage to Humans
+        buffValue: 40
+    - desc: HP +20%
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 20
+    - desc: AP cost -10%
+      meta:
+        priority: 1
+        buff: AP Cost Reduction
+        buffValue: 10
+    - desc: Recovers 3% of max HP every 5 seconds
+      lb: 3
+  obtained: Transmutation, Coin Exchange
+
+- name: Cloud Conductor
+  cat: 'jp'
+  star: 5
+  picture: Wind_&_Thunder_Cane_Cloud_Conductor
+  atk: 957
+  int: 962
+  factors:
+    - desc: Wind damage dealt +40%
+      meta:
+        priority: 3
+        buff: Wind Damage
+        buffValue: 40
+    - desc: Lightning damage dealt +20%
+      meta:
+        priority: 3
+        buff: Lightning Damage
+        buffValue: 20
+    - desc: 70% chance of surviving a lethal attack when at 20% HP or more        
+    - desc: Stun rate +15%
+      meta:
+        priority: 1
+        buff: Stun Rate
+        buffValue: 15
+      lb: 5
+  obtained: Gacha
+
+- name: Wand "Mystic Sage"
+  cat: 'jp'
+  star: 5
+  picture: Mystic_Sage_Wand
+  atk: 957
+  int: 964
+  factors:
+    - desc: Light damage dealt +40%
+      meta:
+        priority: 4
+        buff: Light Damage
+        buffValue: 40
+    - desc: Damage dealt to humanoids +10%
+      slayer: Human
+      slayerPct: 10
+      meta:
+        priority: 4
+        buff: Damage To Humans
+        buffValue: 10
+    - desc: Stun rate +15%
+      meta:
+        priority: 1
+        buff: Stun Rate
+        buffValue: 15
+    - desc: 70% chance of surviving a lethal attack when at 20% of max HP or more
+      lb: 5   
+  obtained: Gacha
+
+- name: "Golden Staff: Winged Baton"
+  cat: 'jp'
+  star: 5
+  picture: Golden_Staff_Winged_Baton
+  atk: 1106
+  int: 1110
+  factors:
+    - desc: Damage dealt to plants +40%
+      slayer: Plant
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage to Plants
+        buffValue: 40
+    - desc: No flinching when casting symbology
+    - desc: INT +5%
+      meta:
+        priority: 4
+        buff: INT
+        buffValue: 5
+      lb: 3
+  obtained: Gacha
+
+- name: Insect Break
+  cat: 'jp'
+  star: 5
+  picture: Insect_Break
+  atk: 1255
+  int: 1257
+  factors:
+    - desc: Damage dealt to insects +40%
+      slayer: Insect
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage to Insects
+        buffValue: 40
+    - desc: Repel +1
+    - desc: INT +5%
+      meta:
+        priority: 4
+        buff: INT
+        buffValue: 5
+      lb: 3
+  obtained: Gacha
+
+- name: Birdhunter Rod
+  cat: 'jp'
+  star: 5
+  picture: Birdhunter_Rod
+  atk: 959
+  int: 960
+  factors:
+    - desc: Elemental damage dealt +20%
+      meta:
+        priority: 4
+        buff: Elemental Damage
+        buffValue: 30
+    - desc: Damage dealt to birds +30%
+      slayer: Bird
+      slayerPct: 30
+      meta:
+        priority: 4
+        buff: Damage To Birds
+        buffValue: 30
+    - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
+    - desc: Damage dealt +10%
+      lb: 3
+      meta:
+        priority: 3
+        buff: Damage
+        buffValue: 10
+  obtained: Gacha
+
+- name: Pinky Moon
+  cat: 'jp'
+  star: 5
+  picture: Pinky_Moon
+  atk: 509
+  int: 511
+  factors:
+    - desc: Damage dealt +20% by Twinkle Bomb
+    - desc: INT damage dealt +10% 
+      meta:
+        priority: 3
+        buff: INT Damage
+        buffValue: 10
+    - desc: Damage taken -10% when casting symbology
+      lb: 5
+      meta:
+        priority: 1
+        buff: Damage Taken Reduction
+        buffCondition: Casting Symbology
+        buffValue: 10
+  obtained: G-Imitation Ghost (Exchange)
+
+- name: Happy Candy
+  cat: 'jp'
+  star: 5
+  picture: Happy_Candy
+  atk: 1259
+  int: 1259
+  factors:
+    - desc: Light damage dealt +50%
+      meta:
+        priority: 4
+        buff: Light Damage
+        buffValue: 50
+    - desc: Single target damage +20%
+      meta:
+        priority: 4
+        buff: Single Target Damage
+        buffValue: 20
+    - desc: AP cost -10%
+      lb: 5
+      meta:
+        priority: 3
+        buff: AP Cost Reduction
+        buffValue: 10
+  obtained: Gacha
+
+- name: Black Cat Hands
+  cat: 'jp'
+  star: 5
+  picture: Black_Cat_Hands
+  atk: 1251
+  int: 1262
+  factors:
+    - desc: Damage dealt to machines +60%
+      slayer: Machine
+      slayerPct: 60
+      meta:
+        priority: 4
+        buff: Damage to Machines
+        buffValue: 60
+    - desc: HP +20%
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 20
+    - desc: 80% chance of surviving a lethal attack when at 20% of max HP or more
+      lb: 3
+  obtained: Gacha
+
+- name: Esprit White Chocolate Wand
+  cat: 'jp'
+  star: 5
+  picture: Esprit_White_Chocolate_Wand
+  atk: 510
+  int: 512
+  factors:
+    - desc: Damage dealt +20% by Flare Torch
+    - desc: Repel +1
+    - desc: AP cost -10%
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 10
+      lb: 5
+  obtained: Squelette de Chocolat (Draw Box)
+
+- name: Rose Remurick Wand
+  cat: 'jp'
+  star: 5
+  picture: Rose_Remurick_Wand
+  atk: 1253
+  int: 1262
+  factors:
+    - desc: Fire damage dealt +40%
+      meta:
+        priority: 4
+        buff: Fire Damage
+        buffValue: 40
+    - desc: Wind damage dealt +20%
+      meta:
+        priority: 4
+        buff: Wind Damage
+        buffValue: 20
+    - desc: AP recovery +50%
+      meta:
+        priority: 4
+        buff: AP Recovery
+        buffValue: 50
+    - desc: INT damage taken +15% (Enemies)
+      meta:
+        priority: 3
+        buff: Enemy INT Damage Taken
+        buffValue: 15
+      lb: 5
+  obtained: Gacha
+
+- name: Gold Blossom Bunny Rod
+  cat: 'jp'
+  star: 5
+  picture: Flower_Spirit_Gold_Bunny_Rod
+  atk: 529
+  int: 532
+  factors:
+    - desc: Damage dealt +15% by Brilliantly Divine Flower
+    - desc: Repel +2
+    - desc: Critical hit chance +5%
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 5
+      lb: 5
+  obtained: Monarch Chimera (Exchange)
+
+- name: Infinity Rod
+  cat: 'jp'
+  star: 5
+  picture: Infinity_Rod
+  atk: 826
+  int: 834
+  factors:
+    - desc: Damage dealt +15% by Sacred Javelin
+    - desc: Evasion AP cost -30%
+    - desc: Repel +1
+      lb: 5
+  obtained: "Lezard / Valkyrie Profile: The Purged Wizard (Achievement, Exchange)"
+
+- name: Rune Staff
+  cat: 'jp'
+  star: 5
+  picture: Rune_Staff
+  atk: 857
+  int: 862
+  factors:
+    - desc: Damage dealt +20% by Acid Rain
+    - desc: ATK damage taken -20% when HP is 100%
+      meta:
+        priority: 3
+        buff: ATK Damage Taken Reduction
+        buffCondition: HP is 100
+        buffValue: 20
+    - desc: HP +10%
+      meta:
+        priority: 3
+        buff: HP
+        buffValue: 10
+      lb: 5
+  obtained: Boring Horn Blitz Reve / Tales of the Rays (Achievement)
+
+- name: BC Rod
+  cat: 'jp'
+  star: 5
+  picture: BC_Rod
+  atk: 1257
+  int: 1263
+  factors:
+    - desc: Ice damage dealt +50%
+      meta:
+        priority: 4
+        buff: Ice Damage
+        buffValue: 50
+    - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
+    - desc: ATK/INT damage taken -30% when casting symbology
+      meta:
+        priority: 3
+        buffs:
+        buffs:
+          - ATK Damage Taken Reduction
+          - INT Damage Taken Reduction
+        buffCondition: Casting Symbology
+        buffValue: 30
+      lb: 5
+  obtained: Gacha (Limited)
