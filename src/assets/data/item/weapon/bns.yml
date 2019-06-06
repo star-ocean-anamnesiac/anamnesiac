@@ -3,7 +3,7 @@
   cat: 'gl'
   star: 5
   picture: Eldar_Lord_Rapier
-  atk: 474
+  atk: 475
   int: 476
   factors:
     - desc: Dark damage dealt +30%
@@ -111,14 +111,14 @@
   cat: 'gl'
   star: 5
   picture: Mars_Brand
-  atk: 835
-  int: 836
+  atk: 850
+  int: 848
   factors:
-    - desc: Multiple target damage +15%
+    - desc: Multiple target damage +20%
       meta:
         priority: 1
         buff: Multiple Target Damage
-        buffValue: 15
+        buffValue: 20
     - desc: Damage dealt +20% by Dragon Roar
     - desc: Damage dealt +10%
       meta:
@@ -379,7 +379,7 @@
         buff: Damage
         buffCondition: Bloodstorm Revolution
         buffValue: 20
-  obtained: Transmutation
+  obtained: Transmutation, Gacha
 
 
 - name: Valkyrie-Favor
