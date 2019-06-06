@@ -1,33 +1,1089 @@
 
+- name: Thunder Sword
+  cat: 'jp'
+  star: 4
+  picture: Thunder_Sword
+  atk: 470
+  int: 0
+  factors:
+    - desc: Imbues attacks with lightning
+      element: Lightning
+    - desc: Damage dealt +20% by Double Slash
+  obtained: Transmutation, Gacha
+
+- name: Cursed Balmung Blade
+  cat: 'jp'
+  star: 5
+  picture: Demonic_Sword_Balmung
+  atk: 495
+  int: 0
+  factors:
+    - desc: ATK +15%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 15
+    - desc: Damage dealt +20% by Helm Splitter
+    - desc: AP cost -10%
+      lb: 3
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 10
+  obtained: Coin Exchange, Gacha
+
+- name: Claidheamh Soluis
+  cat: 'jp'
+  star: 5
+  picture: Crow_Solace
+  atk: 490
+  int: 0
+  factors:
+    - desc: Imbues attacks with light
+      element: Light
+    - desc: Damage dealt +20% by Cyclone Blade
+  obtained: Coin Exchange, Transmutation, Gacha
+
+- name: Lightning Sword
+  cat: 'jp'
+  star: 5
+  picture: Lightning_Sword
+  atk: 485
+  int: 0
+  factors:
+    - desc: Lightning damage dealt +15%
+      meta:
+        priority: 4
+        buff: Lightning Damage
+        buffValue: 15
+    - desc: Damage dealt +20% by Rising Blade
+  obtained: Gacha, Transmutation, Coin Exchange
+
+- name: Moonstone Sword
+  cat: 'jp'
+  star: 5
+  picture: Moonite_Sword
+  atk: 480
+  int: 0
+  factors:
+    - desc: ATK +15%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 15
+    - desc: DEF -15%
+      meta:
+        priority: 4
+        buff: DEF Reduction
+        buffValue: 15
+    - desc: Damage dealt +20% by Air Slash
+  obtained: Coin Exchange, Transmutation, Gacha
+
+- name: Aurora Blade
+  cat: 'jp'
+  star: 5
+  picture: Aurora_Blade
+  atk: 478
+  int: 0
+  factors:
+    - desc: Damage dealt +20% by Dragon Slash
+    - desc: Damage dealt to machines +20%
+      slayer: Machine
+      slayerPct: 20
+      meta:
+        priority: 4
+        buff: Damage To Machines
+        buffValue: 20
+    - desc: Critical hit chance +4%
+      lb: 5
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 4
+  obtained: Jie Revorse (Exchange)
+
+- name: Blade of Ruin
+  cat: 'jp'
+  star: 5
+  picture: Ruin's_Fate
+  atk: 500
+  int: 0
+  factors:
+    - desc: Single target damage +15%
+      meta:
+        priority: 4
+        buff: Single Target Damage
+        buffValue: 15
+    - desc: Damage dealt +20% by Air Raid
+    - desc: Damage dealt +10%
+      lb: 5
+      meta:
+        priority: 4
+        buff: Damage
+        buffValue: 10
+  obtained: Gacha, Coin Exchange
+
+- name: Thunderstroke Broadsword
+  cat: 'jp'
+  star: 5
+  picture: Raikou_Sword_Bolt_Edge
+  atk: 862
+  int: 858
+  factors:
+    - desc: Damage dealt +20% by Omega Thunderclap Blade
+    - desc: INT damage taken -10%
+      meta:
+        priority: 4
+        buff: INT Damage Taken Reduction
+        buffValue: 10
+    - desc: Lightning damage dealt +15% 
+      lb: 5
+      meta:
+        priority: 4
+        buff: Lightning Damage
+        buffValue: 15
+  obtained: Millioneye / Luin D'Mont (Exchange)
+
+- name: Centrifuge Blade
+  cat: 'jp'
+  star: 5
+  picture: Centrifuge_Blade
+  atk: 513
+  int: 508
+  factors:
+    - desc: Damage dealt +20% by Heaven's Sword
+    - desc: Recovers 3% of max HP every 3 seconds when behind target
+    - desc: AP cost -10%
+      lb: 5
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 10
+  obtained: Millioneye / Luin D'Mont (Exchange)
+
+- name: Blaublitz
+  cat: 'jp'
+  star: 5
+  picture: Sea_Treasure_Sword_Blaublitz
+  atk: 965
+  int: 960
+  factors:
+    - desc: Imbues attacks with lightning
+      element: Lightning
+    - desc: Stun rate +20%
+      meta:
+        priority: 4
+        buff: Stun Rate
+        buffValue: 20
+    - desc: Critical hit chance +30% when not targeted by enemy
+      lb: 5
+      meta:
+        priority: 3
+        buff: Crit Rate
+        buffValue: 30
+        buffCondition: Not Being Targeted
+  obtained: Gacha
+
+- name: Slayer of Divine Beings
+  cat: 'jp'
+  star: 5
+  picture: Criminal's_Sword_Angel_Slayer
+  atk: 475
+  int: 0
+  factors:
+    - desc: Imbues attacks with light
+      element: Light
+      lb: 3
+    - desc: Damage dealt +15% by Heavenly Launcher
+      lb: 4
+    - desc: AP cost -10%
+      lb: 5
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 10
+  obtained: Blood Valkyrie (Exchange)
+
+- name: Slayer of Divine Beings II
+  cat: 'jp'
+  star: 5
+  picture: Slayer_of_Divine_Beings_II
+  atk: 861
+  int: 0
+  factors:
+    - desc: Imbues attacks with light
+      element: Light
+    - desc: Damage dealt +20% by Valkyrie's Mercy
+      lb: 1
+    - desc: AP cost -10%
+      lb: 3
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 10
+    - desc: Damage taken -10%
+      lb: 3
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffValue: 10
+  obtained: Gacha
+
+- name: Sacred Tear
+  cat: 'jp'
+  star: 5
+  picture: Sacred_Tear
+  atk: 479
+  int: 0
+  factors:
+    - desc: Damage dealt +10% by Sword Bomber
+    - desc: Damage dealt to humanoids +15%
+      slayer: Human
+      slayerPct: 15
+      meta:
+        priority: 4
+        buff: Damage To Humans
+        buffValue: 15
+    - desc: ATK +5%
+      lb: 5
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 5
+  obtained: Hell Siren (Exchange)
+
+- name: Icicle Sword
+  cat: 'jp'
+  star: 5
+  picture: Icicle
+  atk: 535
+  int: 533
+  factors:
+    - desc: ATK +15%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 15
+    - desc: Imbues attacks with ice
+      element: Ice
+    - desc: AP cost -10%
+      lb: 3
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 15
+  obtained: Coin Exchange
+
 - name: Type-4O Sword
-  cat: jp
+  cat: 'jp'
   star: 5
   picture: Type_4O
   atk: 964
   int: 958
   factors:
-    - desc: All attribute damage +50%
+    - desc: Elemental damage dealt +20%
       meta:
         priority: 4
         buff: Damage
-        buffValue: 50
-    - desc: Damage to mechs +50%
+        buffValue: 20
+    - desc: Damage dealt to machines +30%
       slayer: Machine
-      slayerPct: 50
+      slayerPct: 30
       meta:
         priority: 4
         buff: Damage To Machines
+        buffValue: 30
+    - desc: Absorbs 15% of damage dealt by normal attacks as HP
+    - desc: Critical hit chance +10%
+      lb: 5
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffValue: 10
+  obtained: Gacha (Limited)
+
+- name: Veinslay
+  cat: 'jp'
+  star: 5
+  picture: Reknowned_Sword_Veinslay
+  atk: 961
+  int: 956
+  factors:
+    - desc: Damage dealt to divinities +40%
+      slayer: Divinity
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Divinities
         buffValue: 50
-    - desc: Recover 15% of damage dealt on normal attacks as HP
-    - desc: Crit Rate +10%
+    - desc: Damage dealt to humanoids +20%
+      slayer: Human
+      slayerPct: 20
+      meta:
+        priority: 4
+        buff: Damage To Humans
+        buffValue: 20
+    - desc: AP cost -10%
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 10
+    - desc: 80% chance of surviving a lethal attack when at 20% of max HP or more
+      lb: 3
+  obtained: Transmutation
+
+- name: Jade Bastard Sword
+  cat: 'jp'
+  star: 5
+  picture: Jade_Bastard_Sword
+  atk: 492
+  int: 486
+  factors:
+    - desc: ATK +5%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 5
+    - desc: Critical hit chance +5%
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 15
+    - desc: Damage dealt +10% by Colossal Ethereal Blast
+      lb: 5
+  obtained: Luther (Exchange, Achievement)
+
+- name: Virtuous Contract
+  cat: 'jp'
+  star: 5
+  picture: Virtuous_Contract
+  atk: 863
+  int: 859
+  factors:
+    - desc: "Damage dealt +20% by YoRHa Arms: Two"
+    - desc: Recovers 3% of max HP every 5 seconds
+    - desc: ATK damage dealt +10%
+      lb: 5
+      meta:
+        priority: 4
+        buff: ATK Damage
+        buffValue: 15
+  obtained: Administrative Gear / NieR (Achievement, Exchange)
+
+- name: Cruel Oath
+  cat: 'jp'
+  star: 5
+  picture: Cruel_Oath
+  atk: 861
+  int: 858
+  factors:
+    - desc: "Damage dealt +20% by YoRHa Arms: Four"
+    - desc: AP recovery +30%
+      meta:
+        priority: 4
+        buff: AP Recovery
+        buffValue: 30
+    - desc: AP cost -10%
+      lb: 5
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 10
+  obtained: Administrative Gear / NieR (Achievement, Exchange)
+
+- name: Type-3 Sword
+  cat: 'jp'
+  star: 5
+  picture: Type_3
+  atk: 962
+  int: 956
+  factors:
+    - desc: Imbues attacks with light
+      element: Light
+    - desc: ATK +5%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 5
+    - desc: HIT +5%
+      meta:
+        priority: 4
+        buff: HIT
+        buffValue: 5
+    - desc: Recovers 10% of max HP every 3 seconds
+      lb: 5
+  obtained: Gacha (Limited)
+
+- name: MK-2 SRF Blade
+  cat: 'jp'
+  star: 5
+  picture: SRF_Blade_MK_2
+  atk: 493
+  int: 489
+  factors:
+    - desc: Damage dealt +10% by Raging Strike
+    - desc: Damage taken -5%
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffValue: 5
+    - desc: Critical hit chance +4%
       lb: 5
       meta:
         priority: 4
         buff: Crit Rate
+        buffValue: 4
+    - desc: Critical damage dealt +10%
+      lb: 5
+      meta:
+        priority: 4
+        buff: Crit Damage
         buffValue: 10
+  obtained: Armaros (Exchange)
+
+- name: Stormblade
+  cat: 'jp'
+  star: 5
+  picture: Storm_Dealer
+  atk: 963
+  int: 958
+  factors:
+    - desc: Imbues attacks with wind
+      element: Wind
+    - desc: Absorbs 5% of damage dealt by normal attacks as HP
+    - desc: 50% chance of surviving a lethal attack when at 15% of max HP or more
+      lb: 3
+  obtained: Gacha
+
+- name: "Holy Blade: Farwel"
+  cat: 'jp'
+  star: 5
+  picture: Holy_Blade_Farwel
+  atk: 960
+  int: 959
+  factors:
+    - desc: Imbues attacks with light
+      element: Light
+    - desc: Critical hit chance +10%
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 10
+    - desc: AP cost -10%
+      lb: 3
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 10
+  obtained: Gacha
+
+- name: Sawtooth Blade
+  cat: 'jp'
+  star: 5
+  picture: Scratch_Blade
+  atk: 960
+  int: 959
+  factors:
+    - desc: Damage dealt to beasts +40%
+      slayer: Beast
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Beasts
+        buffValue: 40
+    - desc: AP cost -10%
+      meta:
+        priority: 1
+        buff: AP Cost Reduction
+        buffValue: 10
+    - desc: Recovers 5% HP every 3 seconds when hitcount is >100
+      lb: 3
+  obtained: Gacha
+
+- name: Timepiece Broadsword
+  cat: 'jp'
+  star: 5
+  picture: Clockhand's_Edge
+  atk: 833
+  int: 827
+  factors:
+    - desc: Damage dealt +30% by Ethereal Blast
+    - desc: Critical hit chance +5%
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 5
+    - desc: Critical damage dealt +10%
+      meta:
+        priority: 4
+        buff: Crit Damage
+        buffValue: 15
+    - desc: ATK damage dealt +40% when skill chain is >3
+      lb: 5
+      meta:
+        priority: 3
+        buff: ATK Damage
+        buffValue: 15
+        buffCondition: Skill Chain 3+
+  obtained: Alma (Exchange), Coin Exchange
+
+- name: Tomb Blade
+  cat: 'jp'
+  star: 5
+  picture: Tome_Brand
+  atk: 960
+  int: 958
+  factors:
+    - desc: Damage dealt to humanoids +40%
+      slayer: Human
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Humans
+        buffValue: 40
+    - desc: AP cost -15%
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 15
+    - desc: Damage dealt +15%
+      meta:
+        priority: 3
+        buff: Damage
+        buffValue: 15
+      lb: 5
+  obtained: Gacha  
+
+- name: Earthen Crystal Edge
+  cat: 'jp'
+  star: 5
+  picture: Soil_Crystal_Edge
+  atk: 963
+  int: 957
+  factors:
+    - desc: Imbues attacks with earth
+      element: Earth
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP
+    - desc: AP cost -10%
+      lb: 5
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 10
+  obtained: Gacha
+
+- name: Dainsleif
+  cat: 'jp'
+  star: 5
+  picture: Magical_Blade_Deinsleif
+  atk: 963
+  int: 958
+  factors:
+    - desc: Damage dealt to divinities +40%
+      slayer: Divinity
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Divinities
+        buffValue: 40
+    - desc: Damage dealt to humanoids +30%
+      slayer: Human
+      slayerPct: 30
+      meta:
+        priority: 4
+        buff: Damage To Humans
+        buffValue: 40        
+    - desc: Normal attack AP recovery +100%
+      meta:
+        priority: 1
+        buff: AP Recovery From Normal Attacks
+        buffValue: 100
+    - desc: ATK damage dealt +15% when skill chain is >3
+      meta:
+        priority: 3
+        buff: ATK Damage
+        buffValue: 15
+        buffCondition: Skill Chain 3+
+      lb: 3
+  obtained: Gacha
+
+- name: Instrumental Sword
+  cat: 'jp'
+  star: 5
+  picture: Instrumental_Sword
+  atk: 963
+  int: 956
+  factors:
+    - desc: Imbues attacks with fire
+      element: Fire
+    - desc: Recovers 5% of max HP every 4 seconds
+    - desc: 70% chance of surviving a lethal attack when at 15% of max HP or more
+      lb: 5
+  obtained: Gacha
+
+- name: Blo0dy Sword
+  cat: 'jp'
+  star: 5
+  picture: Bloody_Sword
+  atk: 1109
+  int: 1110
+  factors:
+    - desc: Damage dealt to humanoids +40%
+      slayer: Human
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Humans
+        buffValue: 40
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP
+    - desc: Rush combo damage +10%
+      lb: 3
+  obtained: Gacha
+
+- name: Blue Planet
+  cat: 'jp'
+  star: 5
+  picture: Blue_Planet
+  atk: 1112
+  int: 1106
+  factors:
+    - desc: Imbues attacks with light
+      element: Light
+    - desc: Damage dealt to birds +40%
+      slayer: Bird
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Birds
+        buffValue: 40
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP
+    - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
+      lb: 5
+  obtained: Gacha
+
+- name: Bridal Arts
+  cat: 'jp'
+  star: 5
+  picture: Bridal_Arts
+  atk: 512
+  int: 506
+  factors:
+    - desc: Damage dealt +20% by Blade of Fury
+    - desc: HP +10%
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 10
+    - desc: Taunt +2
+      lb: 5
+  obtained: Ocypete (Exchange)
+
+- name: "Carapace Eradication Blade: Crustacean's Bite"
+  cat: 'jp'
+  star: 5
+  picture: Carapace_Eradicator_Crustacean_Bite
+  atk: 1259
+  int: 1255
+  factors:
+    - desc: Damage dealt to insects +40%
+      slayer: Insect
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Insects
+        buffValue: 40
+    - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
+    - desc: AP cost -10%
+      lb: 3
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 10
+  obtained: Gacha
+
+- name: Eclipse Sword
+  cat: 'jp'
+  star: 5
+  picture: Eclipse_Sword
+  atk: 962
+  int: 957
+  factors:
+    - desc: Elemental damage dealt +20%
+      meta:
+        priority: 4
+        buff: Elemental Damage
+        buffValue: 20
+    - desc: Damage dealt to humanoids +30%
+      slayer: Human
+      slayerPct: 30
+      meta:
+        priority: 4
+        buff: Damage To Humans
+        buffValue: 40        
+    - desc: DEF +15%
+      meta:
+        priority: 3
+        buff: DEF
+        buffValue: 15
+    - desc: Normal attack AP recovery +50%
+      meta:
+        priority: 1
+        buff: AP Recovery From Normal Attacks
+        buffValue: 50
+      lb: 5
+  obtained: Gacha
+
+- name: Emblazoned Sword
+  cat: 'jp'
+  star: 5
+  picture: Emblazoned_Sword
+  atk: 860
+  int: 863
+  factors:
+    - desc: Damage dealt +20% by Grinn Valesti
+    - desc: Critical hit chance +10%
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 10
+    - desc: Critical damage dealt +10%
+      lb: 5
+      meta:
+        priority: 4
+        buff: Crit Damage
+        buffValue: 10
+  obtained: Beastmaster Venbat (Exchange), Infinite Undiscovery
+
+- name: Crescent Sword
+  cat: 'jp'
+  star: 5
+  picture: Crescent_Sword
+  atk: 862
+  int: 861
+  factors:
+    - desc: Damage dealt +20% by Slashing Ocean
+    - desc: AP cost -10%
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 10
+    - desc: ATK damage taken -5%
+      lb: 5
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffValue: 5
+  obtained: Beastmaster Venbat (Exchange), Infinite Undiscovery
+
+- name: Lucky Hands Sword
+  cat: 'jp'
+  star: 5
+  picture: Lucky_Hands_Sword
+  atk: 531
+  int: 529
+  factors:
+    - desc: Damage dealt +20% by Storm Edge Arts
+    - desc: Critical hit chance +10% when HP is 100%
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffCondition: HP is 100
+        buffValue: 10
+    - desc: Damage taken -10%
+      lb: 5
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffValue: 10
+  obtained: Crimson Chariot (Exchange)
+
+- name: Blade of Suits
+  cat: 'jp'
+  star: 5
+  picture: Blade_of_Suits
+  atk: 1262
+  int: 1257
+  factors:
+    - desc: Imbues attacks with wind
+      element: Wind
+    - desc: Wind damage dealt +20%
+      meta:
+        priority: 4
+        buff: Wind Damage
+        buffValue: 20
+    - desc: Stun rate +20%
+      meta:
+        priority: 4
+        buff: Stun Rate
+        buffValue: 20
+    - desc: Recovers 10% of max HP every 3 seconds
+      lb: 5
+  obtained: Gacha
+
+- name: Hologram Sword
+  cat: 'jp'
+  star: 5
+  picture: Hologram_Sword
+  atk: 1261
+  int: 1258
+  factors:
+    - desc: Imbues attacks with lightning
+      element: Lightning
+    - desc: Single target damage +10%
+      meta:
+        priority: 4
+        buff: Single Target Damage
+        buffValue: 10
+    - desc: Damage taken -20% at short range
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffCondition: Short Range
+        buffValue: 20
+      lb: 5
+  obtained: Gacha
+
+- name: Saint's Tree Sword
+  cat: 'jp'
+  star: 5
+  picture: Saint's_Tree_Sword
+  atk: 1258
+  int: 1254
+  factors:
+    - desc: Damage dealt to plants +40%
+      slayer: Plant
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Plants
+        buffValue: 40
+    - desc: ATK +5%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 5
+    - desc: Recovers 10% of max HP every 3 seconds
+      lb: 3
+  obtained: Gacha
+
+- name: Divine Cutter
+  cat: 'jp'
+  star: 5
+  picture: Divine_Cutter
+  atk: 1265
+  int: 1250
+  factors:
+    - desc: Imbues attacks with light
+      element: Light
+    - desc: Damage dealt to machines +40%
+      slayer: Machine
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Machines
+        buffValue: 40
+    - desc: Taunt +3
+    - desc: Recovers 10% of max HP every 3 seconds
+      lb: 5
+  obtained: Gacha
+
+- name: Mop
+  cat: 'jp'
+  star: 5
+  picture: Mop
+  atk: 863
+  int: 862
+  factors:
+    - desc: Damage dealt +20% by Cloud Blast
+    - desc: ATK damage dealt +10%
+      meta:
+        priority: 4
+        buff: ATK Damage 
+        buffValue: 10
+    - desc: HP +10%
+      lb: 5
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 10
+  obtained: Fallen Demon Plant (Exchange)
+
+- name: "Spirit Sword: Wild Falcon"
+  cat: 'jp'
+  star: 5
+  picture: Spirit_Sword_Wild_Falcon
+  atk: 864
+  int: 860
+  factors:
+    - desc: Damage dealt +20% by Ouka Kirisho
+    - desc: Single target damage +10%
+      meta:
+        priority: 4
+        buff: Single Target Damage
+        buffValue: 10
+    - desc: Damage taken -10%
+      lb: 5
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffValue: 10
+  obtained: Fallen Demon Plant (Exchange)
+
+- name: "Light Sword: Ethereal"
+  cat: 'jp'
+  star: 5
+  picture: Light_Sword_Ethereal
+  atk: 1261
+  int: 1257
+  factors:
+    - desc: Elemental damage dealt +20%
+      meta:
+        priority: 4
+        buff: Elemental Damage
+        buffValue: 20
+    - desc: Damage dealt to demons +40%
+      slayer: Demon
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Demons
+        buffValue: 40        
+    - desc: Critical hit chance +30% when skill chain is >3
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffCondition: Skill Chain +3
+        buffValue: 30
+    - desc: AP cost -30% when skill chain is >4
+      meta:
+        priority: 3
+        buff: AP Cost Reduction
+        buffCondition: Skill Chain 4+
+        buffValue: 30
+      lb: 5
   obtained: Gacha (Limited)
-  
-  notes: >
-    A limited weapon and a fantastic weapon for 2b and also Fayt. Great mech hate, big lifesteal bonus and a good mlb factor. Buffing
-    your attribute damage is what makes it particularly good on fayt and 2b but it's a pretty solid neutral weapon at mlb especially
-    against mech bosses.
+
+- name: Red Sun
+  cat: 'jp'
+  star: 5
+  picture: Red_Sun
+  atk: 1260
+  int: 1255
+  factors:
+    - desc: Imbues attacks with fire
+      element: Fire
+    - desc: Fire damage dealt +20%
+      meta:
+        priority: 4
+        buff: Fire Damage
+        buffValue: 20
+    - desc: HP +10%
+      meta:
+        priority: 3
+        buff: HP
+        buffValue: 10
+    - desc: Absorbs 15% of damage dealt by normal attacks as HP
+      lb: 5
+  obtained: Gacha (Limited)
+
+- name: Crimson Saber
+  cat: 'jp'
+  star: 5
+  picture: Crimson_Saber
+  atk: 861
+  int: 859
+  factors:
+    - desc: Damage dealt +20% by Lava Floor
+    - desc: ATK damage dealt +10% when targeted by enemy
+      meta:
+        priority: 3
+        buff: ATK Damage
+        buffValue: 10
+        buffCondition: Targeted By Enemy
+    - desc: 60% chance of surviving a lethal attack when at 20% of max HP or more
+      lb: 5
+  obtained: Knight Exile / FFBE (Draw Box)
+
+- name: "Iron Edge: Unilogrin Co."
+  cat: 'jp'
+  star: 5
+  picture: Iron_Edge_Unilogrin_Co
+  atk: 861
+  int: 858
+  factors:
+    - desc: Damage dealt +20% by Beast King Thrust
+    - desc: Damage dealt +15% when HP is 100%
+      meta:
+        priority: 4
+        buff: Damage
+        buffValue: 15
+    - desc: 70% chance of surviving a lethal attack when at 20% of max HP or more
+      lb: 5
+  obtained: Count Grade Aroken (Exchange)
+
+- name: Arbitrator
+  cat: 'jp'
+  star: 5
+  picture: Arbitrator
+  atk: 1262
+  int: 1257
+  factors:
+    - desc: Imbues attacks with lightning
+      element: Lightning
+    - desc: Lightning damage dealt +40%
+      meta:
+        priority: 4
+        buff: Lightning Damage
+        buffValue: 40
+    - desc: 80% chance of surviving a lethal attack when at 20% of max HP or more
+    - desc: ATK/INT damage dealt +30% during elemental burst
+      meta:
+        priority: 3
+        buffs:
+          - ATK Damage
+          - INT Damage
+        buffCondition: elemental burst
+        buffValue: 30
+      lb: 5
+  obtained: Gacha
+
+- name: "Junkyard Dog"
+  cat: 'jp'
+  star: 5
+  picture: Junkyard_Dog
+  atk: 862
+  int: 857
+  factors:
+    - desc: Damage dealt +20% by Bandit Bringer
+    - desc: ATK +5%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 5
+    - desc: ATK damage dealt +20% when hitcount is >100
+      meta:
+        priority: 3
+        buff: ATK Damage
+        buffValue: 20
+        buffCondition: Hit Count > 100
+      lb: 5
+  obtained: Nephir Diablo (Exchange), Guilty Gear
+
+- name: "Junkyard Dog [Flame]"
+  cat: 'jp'
+  star: 5
+  picture: Junkyard_Dog_Flame
+  atk: 1263
+  int: 1256
+  factors:
+    - desc: Imbues attacks with fire
+      element: Fire
+    - desc: Fire damage dealt +40%
+      meta:
+        priority: 4
+        buff: Fire Damage
+        buffValue: 40
+    - desc: Rush combo damage +40% when hitcount is >300
+    - desc: No flinching when attacking
+      lb: 5
+  obtained: Gacha (Limited)
