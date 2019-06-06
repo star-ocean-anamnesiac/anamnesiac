@@ -405,3 +405,76 @@
         buffValue: 10
       lb: 5
   obtained: Gacha
+
+- name: "Ice Gun: Kirisame Rokka"
+  cat: 'jp'
+  star: 5
+  picture: Ice_Gun_Kirisame_Rokka
+  atk: 961
+  int: 958
+  factors:
+    - desc: Imbues attacks with ice
+      element: Ice
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP
+    - desc: 70% chance of surviving a lethal attack when at 20% of max HP or more
+      lb: 3
+  obtained: Gacha
+
+- name: Magnetic Rouge Gun
+  cat: 'jp'
+  star: 5
+  picture: Magnetic_Rouge
+  atk: 513
+  int: 508 
+  factors:
+    - desc: Damage dealt +20% by Magnetic Field
+    - desc: ATK +5%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 5
+    - desc: Absorbs 5% of damage dealt by normal attacks as HP
+      lb: 5
+  obtained: Lucifer (Exchange)
+
+- name: Trigger-Happy Bunny Gun
+  cat: 'jp'
+  star: 5
+  picture: Happy_Bunny_Gun
+  atk: 962
+  int: 959
+  factors:
+    - desc: Imbues attacks with fire
+      element: Fire
+    - desc: 70% chance of surviving a lethal attack when at 20% of max HP or more
+    - desc: Single target damage +10%
+      meta: 
+        priority: 1
+        buff: Single Target Damage
+        buffValue: 10
+      lb: 3
+  obtained: Gacha
+
+- name: Golden Barrel
+  cat: 'jp'
+  star: 5
+  picture: Gold_Barrel
+  atk: 510
+  int: 509
+  factors:
+    - desc: Damage dealt +20% by Raptor's Bullet
+      meta:
+        priority: 3
+        buff: Damage
+        buffCondition: Raptor's Bullet
+        buffValue: 20
+    - desc: Recovers 3% of max HP every 5 seconds
+    - desc: Normal attack AP recovery +50% when HP is 100%
+      meta:
+        priority: 4
+        buff: AP Recovery
+        buffCondition: HP is 100
+        buffValue: 50
+      lb: 5
+  obtained: Mother Virus Pod (Exchange)
+
