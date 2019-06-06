@@ -596,3 +596,33 @@
       lb: 5
   obtained: Cannon Daddy (Draw Box), Resonance of Fate 2
   
+- name: PMF-84-S
+  cat: 'jp'
+  star: 5
+  picture: PMF_84_S
+  atk: 860
+  int: 856
+  factors:
+    - desc: Damage dealt +20% by Rage Scream
+    - desc: Damage dealt +10%
+      meta:
+        priority: 3
+        buff: Damage
+        buffValue: 10
+    - desc: Recovers 3% of max HP every 5 seconds
+      lb: 5
+  obtained: Cannon Daddy (Draw Box), Resonance of Fate 2
+
+- name: PMF-45
+  cat: 'jp'
+  star: 5
+  picture: PMF_45
+  atk: 1111
+  int: 1106
+  factors:
+    - desc: Imbues attacks with earth
+      element: Earth
+    - desc: 80% chance of surviving a lethal attack when at 20% of max HP or more
+    - desc: Recovers 5% of max HP every 3 seconds
+      lb: 5
+  obtained: Gacha
