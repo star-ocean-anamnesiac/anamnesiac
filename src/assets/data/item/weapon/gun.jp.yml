@@ -1,6 +1,38 @@
+- name: Bronze Blaster
+  cat: 'jp'
+  star: 4
+  picture: Bronze_Blaster
+  atk: 470
+  int: 471
+  factors:
+    - desc: Imbues attacks with ice
+      element: Ice
+    - desc: Damage dealt +20% by Heavenly Flight
+  obtained: Transmutation, Gacha
+
+- name: Umbral Blast
+  cat: 'jp'
+  star: 5
+  picture: Shadow_Bullet
+  atk: 850
+  int: 847
+  factors:
+    - desc: Multiple target damage +15%
+      meta:
+        priority: 4
+        buff: Multiple Target Damage
+        buffValue: 15
+    - desc: Damage dealt +20% by Crimson Squall
+    - desc: Single target damage +10%
+      lb: 3
+      meta:
+        priority: 4
+        buff: Single Target Damage
+        buffValue: 10
+  obtained: Coin Exchange, Gacha
 
 - name: Divine Wave Gun
-  cat: jp
+  cat: 'jp'
   star: 5
   picture: Sacred_Gun_Divine_Blue
   atk: 962
@@ -13,7 +45,7 @@
         priority: 4
         buff: Damage To Demons
         buffValue: 40
-    - desc: 80% chance of surviving a lethal attack at greater than 10% HP
+    - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
     - desc: Damage taken -15% when in front of target
       lb: 5
       meta:
@@ -22,7 +54,52 @@
         buffValue: 15
         buffCondition: In Front Of Target
   obtained: Gacha
-  
-  notes: >
-    It's a good demon hating weapon and a decent neutral option since it has grit chance. Otherwise it works as a strong enough neutral
-    weapon. Worth keeping.
+
+- name: Storm Bolt
+  cat: 'jp'
+  star: 5
+  picture: Storm_Bolt
+  atk: 840
+  int: 843
+  factors:
+    - desc: Imbues attacks with wind
+      element: Wind
+    - desc: Damage dealt +20% by Hunter's Moon
+  obtained: Coin Exchange, Gacha, Transmutation
+
+- name: Assault Laser
+  cat: 'jp'
+  star: 5
+  picture: Assault_Laser
+  atk: 530
+  int: 0
+  factors:
+    - desc: ATK +15%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 15
+    - desc: DEF -15%
+      meta:
+        priority: 4
+        buff: DEF Reduction
+        buffValue: 15
+    - desc: Damage dealt +20% by Scatter Beam
+  obtained: Coin Exchange, Gacha, Transmutation
+
+- name: Illumination Blaster
+  cat: 'jp'
+  star: 5
+  picture: Illumination_Blaster
+  atk: 511
+  int: 506
+  factors:
+    - desc: Damage dealt +30% by Bombing Run
+    - desc: Absorbs 5% of damage dealt by normal attacks as HP
+    - desc: Single target damage +10%
+      lb: 5
+      meta:
+        priority: 4
+        buff: Single Target Damage
+        buffValue: 10
+  obtained: Christmas Horndevil (Exchange)
