@@ -35,7 +35,7 @@
     - desc: Elemental damage dealt +20%
       meta:
         priority: 4
-        buff: Damage
+        buff: Elemental Damage
         buffValue: 20
     - desc: Damage dealt to machines +30%
       slayer: Machine
@@ -100,7 +100,7 @@
   cat: 'gl'
   star: 5
   picture: Moonite_Sword
-  atk: 830
+  atk: 530
   int: 0
   factors:
     - desc: ATK +15%
@@ -227,8 +227,8 @@
   cat: 'gl'
   star: 5
   picture: Sea_Treasure_Sword_Blaublitz
-  atk: 513
-  int: 508
+  atk: 965
+  int: 960
   factors:
     - desc: Imbues attacks with lightning
       element: Lightning
@@ -354,7 +354,7 @@
       meta:
         priority: 4
         buff: AP Cost Reduction
-        buffValue: 15
+        buffValue: 10
   obtained: Gacha
   
   notes: >
@@ -438,7 +438,7 @@
         priority: 4
         buff: ATK Damage
         buffValue: 15
-  obtained: Administrative Gear / Nier (Achievement, Event, Exchange)
+  obtained: Administrative Gear / NieR (Achievement, Exchange)
   
   notes: >
     A weapon meant for 2B, not really needed if you have her gacha weapon. But if for new players its high stats and reasonable second
@@ -464,7 +464,7 @@
         priority: 4
         buff: AP Cost Reduction
         buffValue: 10
-  obtained: Administrative Gear / Nier (Achievement, Event, Exchange)
+  obtained: Administrative Gear / NieR (Achievement, Exchange)
   
   notes: >
     A good neutral weapon for 9S since it has AP recovery and reduction, plus buffing a skill. For others it's still a highly statted
@@ -573,7 +573,7 @@
         priority: 3
         buff: ATK Damage
         buffValue: 15
-        buffCondition: Skill Chain 2+
+        buffCondition: Skill Chain 3+
   obtained: Alma (Exchange)
   
   notes: >
