@@ -1,12 +1,169 @@
+- name: Bloody Knuckles
+  cat: 'jp'
+  star: 5
+  picture: Bloody_Dusters
+  atk: 495
+  int: 0
+  factors:
+    - desc: ATK +15%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 15
+    - desc: Damage dealt +20% by Acrobatic Locus
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP
+      lb: 3
+  obtained: Coin Exchange, Gacha
+
+- name: Raven Talons
+  cat: 'jp'
+  star: 5
+  picture: Raven_Talons
+  atk: 500
+  int: 0
+  factors:
+    - desc: Single target damage +15%
+      meta:
+        priority: 1
+        buff: Single Target Damage
+        buffValue: 15
+    - desc: Damage dealt +20% by Fists of Fury
+    - desc: Damage dealt +10%
+      meta:
+        priority: 1
+        buff: Damage
+        buffValue: 15
+      lb: 5
+  obtained: Coin Exchange, Gacha
+
+- name: Gaia Godfists
+  cat: 'jp'
+  star: 5
+  picture: Godfist_Gaia_Knuckles
+  atk: 490
+  int: 0
+  factors:
+    - desc: Imbues attacks with earth
+      element: Earth
+    - desc: Damage dealt +20% by Triple Kick
+  obtained: Coin Exchange, Gacha, Transmutation
+
+- name: Burst of Fire
+  cat: 'jp'
+  star: 5
+  picture: Flare_Burst
+  atk: 485
+  int: 0
+  factors:
+    - desc: Fire damage dealt +15%
+      meta:
+        priority: 4
+        buff: Fire Damage
+        buffValue: 15
+    - desc: Damage dealt +20% by Drill Spike
+  obtained: Coin Exchange, Gacha, Transmutation
+
+- name: Damask Gauntlets
+  cat: 'jp'
+  star: 5
+  picture: Damask_Guarders
+  atk: 480
+  int: 0
+  factors:
+    - desc: ATK +15%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 15
+    - desc: DEF -15%
+      meta:
+        priority: 4
+        buff: DEF Reduction
+        buffValue: 15
+    - desc: Damage dealt +20% by Crescent Locus
+  obtained: Coin Exchange, Gacha, Transmutation
+
+- name: Gyro-Gear Knuckles
+  cat: 'jp'
+  star: 5
+  picture: Gyro_Gear_Knuckles
+  atk: 475
+  int: 0
+  factors:
+    - desc: Critical damage dealt +20%
+      meta:
+        priority: 1
+        buff: Crit Damage
+        buffValue: 20
+    - desc: Damage dealt +20% by Drill Spike
+    - desc: ATK +5%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 5
+      lb: 5
+  obtained: Crystal Guardian (Exchange)
+
+- name: Silver Claws
+  cat: 'jp'
+  star: 5
+  picture: Silver_Claws
+  atk: 961
+  int: 962
+  factors:
+    - desc: Damage dealt to demons +40%
+      slayer: Demon
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Demons
+        buffValue: 40
+    - desc: No flinching when taking damage of 10% of max HP or less
+    - desc: ATK +5% when behind target
+      lb: 5
+      meta:
+        priority: 3
+        buff: ATK
+        buffCondition: Behind Target
+        buffValue: 5
+  obtained: Gacha
+
+- name: Bloodring Knuckles
+  cat: 'jp'
+  star: 5
+  picture: Blood_Wheel
+  atk: 532
+  int: 5835
+  factors:
+    - desc: ATK +15%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 15
+    - desc: INT +15%
+      meta:
+        priority: 4
+        buff: INT
+        buffValue: 15
+    - desc: Damage dealt to humanoids +25%
+      slayer: Human
+      slayerPct: 25
+      meta:
+        priority: 4
+        buff: Damage To Humans
+        buffValue: 25
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP
+      lb: 5
+  obtained: Gacha
 
 - name: Knuckles of Hope
-  cat: jp
+  cat: 'jp'
   star: 5
   picture: Fallen_Knuckles
   atk: 474
   int: 478
   factors:
-    - desc: Light damage +15%
+    - desc: Light damage dealt +15%
       meta:
         priority: 4
         buff: Light Damage
@@ -16,10 +173,611 @@
         priority: 4
         buff: DEF
         buffValue: 10
-    - desc: Crit Rate +4%
+    - desc: Critical hit chance +4%
       lb: 5
       meta:
         priority: 4
         buff: Crit Rate
         buffValue: 4
-  obtained: Coin Shop (Michael)
+  obtained: Michael (Exchange)
+
+- name: Feral Caltrops
+  cat: 'jp'
+  star: 5
+  picture: Demon_Fists_of_Annihilation_Black_Diamonds
+  atk: 488
+  int: 490
+  factors:
+    - desc: Imbues attacks with fire
+      element: Fire
+    - desc: Damage dealt +15% by Fiery Hammer of Might
+    - desc: Normal attack AP recovery +20%
+      lb: 5
+      meta:
+        priority: 1
+        buff: AP Recovery From Normal Attacks
+        buffValue: 20
+  obtained: Executioner (Exchange)
+
+- name: Blackflame Gloves
+  cat: 'jp'
+  star: 5
+  picture: Fighting_Spirit_Gloves_Embers
+  atk: 952
+  int: 952
+  factors:
+    - desc: Imbues attacks with fire
+      element: Fire
+    - desc: Damage dealt to machines +30%
+      slayer: Machine
+      slayerPct: 30
+      meta:
+        priority: 4
+        buff: Damage To Machines
+        buffValue: 10
+    - desc: Critical hit chance +5%
+      lb: 3
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 5
+  obtained: Gacha
+
+- name: Hurricane Claws
+  cat: 'jp'
+  star: 5
+  picture: Hurrican_Claws
+  atk: 494
+  int: 488
+  factors:
+    - desc: Damage dealt +10% by Claws of Fury
+    - desc: Damage dealt to insects +15%
+      slayer: Insect
+      slayerPct: 15
+      meta:
+        priority: 4
+        buff: Damage To Insects
+        buffValue: 15
+    - desc: Normal attack AP recovery +30%
+      lb: 5
+      meta:
+        priority: 1
+        buff: AP Recovery From Normal Attacks
+        buffValue: 30
+  obtained: Armaros (Exchange)
+
+- name: Cat Claws
+  cat: 'jp'
+  star: 5
+  picture: Paw_Pad_Claws
+  atk: 964
+  int: 962
+  factors:
+    - desc: Imbues attacks with wind
+      element: Wind
+    - desc: 80% chance of surviving a lethal attack when at 20% of max HP or more
+    - desc: Additional hit that deals 5% of damage dealt by normal attacks
+      lb: 3
+  obtained: Gacha
+
+- name: Radiant Fist
+  cat: 'jp'
+  star: 5
+  picture: Radiant_Left
+  atk: 965
+  int: 962
+  factors:
+    - desc: Imbues attacks with earth
+      element: Earth
+    - desc: Normal attack AP recovery +30%
+      meta:
+        priority: 1
+        buff: AP Recovery from Normal Attacks
+        buffValue: 30
+    - desc: ATK damage dealt +15% when hitcount is >100
+      meta:
+        priority: 3
+        buff: ATK Damage
+        buffCondition: Hit Count > 100
+        buffValue: 15
+      lb: 5
+  obtained: Gacha
+
+- name: Saint Bunny Fists
+  cat: 'jp'
+  star: 5
+  picture: Saint_Bunny_Fists
+  atk: 965
+  int: 962
+  factors:
+    - desc: Imbues attacks with light
+      element: Light
+    - desc: Normal attack AP recovery +50%
+      meta:
+        priority: 1
+        buff: AP Recovery from Normal Attacks
+        buffValue: 50
+    - desc: Damage taken -10%
+      meta:
+        priority: 3
+        buff: Damage Taken Reduction
+        buffValue: 10
+      lb: 5
+  obtained: Coin Exchange
+
+- name: Blue Raven
+  cat: 'jp'
+  star: 5
+  picture: Blue_Raven
+  atk: 531
+  int: 528
+  factors:
+    - desc: Damage dealt +20% by Electric Fist
+    - desc: Single target damage +10%
+      meta:
+        priority: 1
+        buff: Single Target Damage
+        buffValue: 10
+    - desc: Normal attack AP recovery +30% at short range
+      lb: 5
+      meta:
+        priority: 3
+        buff: AP Recovery From Normal Attacks
+        buffValue: 30
+        buffCondition: Short Range
+  obtained: Facula (Draw Box)
+
+- name: Bloodfeast Knuckles
+  cat: 'jp'
+  star: 5
+  picture: Evil_Fists
+  atk: 959
+  int: 959
+  factors:
+    - desc: Damage dealt to divinities +40%
+      slayer: Divinity
+      slayerPct: 40
+      meta:
+        priority: 3
+        buff: Damage To Divinities
+        buffValue: 40
+    - desc: Critical damage dealt +30%
+      meta:
+        priority: 3
+        buff: Crit Damage
+        buffValue: 30
+    - desc: Damage taken -15%
+      meta:
+        priority: 3
+        buff: Damage Taken Reduction
+        buffValue: 15
+      lb: 5
+  obtained: Coin Exchange
+
+- name: Storm Wheels
+  cat: 'jp'
+  star: 5
+  picture: Storm_Wheels
+  atk: 958
+  int: 959
+  factors:
+    - desc: Imbues attacks with wind
+      element: Wind
+    - desc: Damage dealt to dragons +10%     
+      slayer: Dragon
+      slayerPct: 10
+      meta:
+        priority: 4
+        buff: Damage To Dragons
+        buffValue: 10        
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP
+    - desc: Single target damage +10% DMG when behind target
+      meta:
+        priority: 3
+        buff: Single Target Damage
+        buffValue: 10
+        buffCondition: Behind Enemy
+      lb: 5
+  obtained: Gacha
+
+- name: Scrap Maker
+  cat: 'jp'
+  star: 5
+  picture: Machine_Destroying_Fists_Scrap_Makers
+  atk: 960
+  int: 959
+  factors:
+    - desc: Damage dealt to machines +40%
+      slayer: Machine
+      slayerPct: 40
+      meta:
+        priority: 3
+        buff: Damage To Machines
+        buffValue: 40
+    - desc: Absorbs 15% of damage dealt by normal attacks as HP
+    - desc: ATK +5% when hitcount is >50
+      meta:
+        priority: 3
+        buff: ATK
+        buffCondition: Hit Count > 50
+        buffValue: 5
+      lb: 3
+  obtained: Gacha
+
+- name: Black Catclaws
+  cat: 'jp'
+  star: 5
+  picture: Black_Catclaws
+  atk: 961
+  int: 959
+  factors:
+    - desc: Imbues attacks with earth
+      element: Earth
+    - desc: Damage dealt to beasts +10%     
+      slayer: Beast
+      slayerPct: 10
+      meta:
+        priority: 4
+        buff: Damage To Beasts
+        buffValue: 10        
+    - desc: 80% chance of surviving a lethal attack when at 20% of max HP or more
+    - desc: Stun rate +10%
+      meta:
+        priority: 1
+        buff: Stun Rate
+        buffValue: 10
+      lb: 5
+  obtained: Gacha
+
+- name: Scarlet Fist Scorpion
+  cat: 'jp'
+  star: 5
+  picture: Scarlet_Fist_Scorpion
+  atk: 962
+  int: 957
+  factors:
+    - desc: Imbues attacks with dark
+      element: Dark
+    - desc: Recovers 5% of max HP every 3 seconds
+    - desc: Dark damage dealt +15%
+      meta:
+        priority: 3
+        buff: Dark Damage
+        buffValue: 15
+      lb: 5
+  obtained: Gacha  
+
+- name: Crimson Nail Claws
+  cat: 'jp'
+  star: 5
+  picture: Hidden_Claws_Crimson_Hawk
+  atk: 961
+  int: 957 
+  factors:
+    - desc: Imbues attacks with fire
+      element: Fire
+    - desc: Single target damage +10%
+      meta: 
+        priority: 1
+        buff: Single Target Damage
+        buffValue: 10
+    - desc: Stun rate +15%
+      meta:
+        priority: 1
+        buff: Stun Rate
+        buffValue: 15
+      lb: 5
+  obtained: Gacha
+
+- name: Jingu-Style Secret Fist "White Whale"
+  cat: 'jp'
+  star: 5
+  picture: Jingu_Style_Secret_Fists_White_Whale
+  atk: 530
+  int: 528
+  factors:
+    - desc: Damage dealt +20% by Rising Dragon
+    - desc: ATK damage taken -10% at short range
+      meta:
+        priority: 3
+        buff: ATK Damage Reduction
+        buffCondition: Short Range
+        buffValue: 10
+    - desc: Hitcount timer +1 second
+      lb: 5
+  obtained: Shine Totem (Exchange)
+
+- name: Bloom Gear Knuckles
+  cat: 'jp'
+  star: 5
+  picture: Bloom_Gear_Knuckles
+  atk: 531
+  int: 528
+  factors:
+    - desc: Damage dealt +20% by Storm Buzzsaw
+    - desc: Evasion AP cost -50% at short range
+    - desc: INT +5%
+      meta:
+        priority: 4
+        buff: INT
+        buffValue: 5
+      lb: 5
+  obtained: Dimension Beast (Exchange)
+
+- name: Cat Fangs ♪
+  cat: 'jp'
+  star: 5
+  picture: Cat_Fangs_♪
+  atk: 510
+  int: 508
+  factors:
+    - desc: Damage dealt +20% by Jumping Somersault
+    - desc: Critical damage dealt +30%
+      meta:
+        priority: 3
+        buff: Crit Damage
+        buffValue: 30
+    - desc: 60% chance of surviving a lethal attack when at 20% of max HP or more
+      lb: 5
+  obtained: Ancient Guardian (Exchange)
+
+- name: Lovely Kitty Paws
+  cat: 'jp'
+  star: 5
+  picture: Lovely_Kittens
+  atk: 963
+  int: 961
+  factors:
+    - desc: Imbues attacks with earth
+      element: Earth
+    - desc: Damage dealt to plants +10%
+      slayer: Plant
+      slayerPct: 10
+      meta:
+        priority: 4
+        buff: Damage To Plants
+        buffValue: 10
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP
+    - desc: Critical hit chance +15%
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 15
+      lb: 5
+  obtained: Gacha
+
+- name: Coro Coro Knuckles
+  cat: 'jp'
+  star: 5
+  picture: Koro_Koro_Knuckles
+  atk: 1112
+  int: 1107
+  factors:
+    - desc: Imbues attacks with wind
+      element: Wind
+    - desc: Wind damage dealt +20%
+      meta:
+        priority: 4
+        buff: Wind Damage
+        buffValue: 20
+    - desc: AP recovery +50%
+      meta:
+        priority: 1
+        buff: AP Recovery
+        buffValue: 50
+    - desc: Damage taken -15% at short range
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffCondition: Short Range
+        buffValue: 15
+      lb: 5
+  obtained: Gacha
+
+- name: Burning Catclaws
+  cat: 'jp'
+  star: 5
+  picture: Burning_Catclaws
+  atk: 1260
+  int: 1258
+  factors:
+    - desc: Imbues attacks with fire
+      element: Fire
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP
+    - desc: Damage dealt +10% 
+      meta:
+        priority: 4
+        buff: Damage
+        buffValue: 10
+      lb: 5
+  obtained: Gacha
+
+- name: Harvesting Knuckles
+  cat: 'jp'
+  star: 5
+  picture: Harvesting_Knuckles
+  atk: 1258
+  int: 1261
+  factors:
+    - desc: Damage dealt to plants +40%
+      slayer: Plant
+      slayerPct: 40
+      meta:
+        priority: 3
+        buff: Damage To Plants
+        buffValue: 40
+    - desc: No flinching while attacking
+    - desc: 80% chance of surviving a lethal attack when at 20% of max HP or more
+      lb: 3
+  obtained: Gacha
+
+- name: Pharoah's Claws
+  cat: 'jp'
+  star: 5
+  picture: Pharoh's_Claws
+  atk: 532
+  int: 528
+  factors:
+    - desc: Damage dealt +20% by Gigant Fist
+    - desc: Critical hit chance +15% when HP is 100%
+      meta:
+        priority: 3
+        buff: Crit Rate
+        buffCondition: HP is 100%
+        buffValue: 15
+    - desc: Evasion AP cost -30%
+      lb: 5
+  obtained: G-Imitation Ghost (Exchange)
+
+- name: "Ornate Treasure Claws: Noble Mummy"
+  cat: 'jp'
+  star: 5
+  picture: Ornate_Treasure_Claws_Noble_Mummy
+  atk: 1262
+  int: 1258
+  factors:
+    - desc: Imbues attacks with light
+      element: Light
+    - desc: Light damage dealt +15%
+      meta:
+        priority: 4
+        buff: Light Damage
+        buffValue: 15
+    - desc: Damage dealt +15%
+      meta:
+        priority: 4
+        buff: Damage
+        buffValue: 15
+    - desc: Critical hit chance +10%
+      lb: 5
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 10
+    - desc: Critical damage dealt +15%
+      lb: 5
+      meta:
+        priority: 4
+        buff: Crit Damage
+        buffValue: 15
+  obtained: Gacha
+
+- name: Fists of the Titan
+  cat: 'jp'
+  star: 4
+  picture: Fists_of_the_Titan
+  atk: 470
+  int: 467
+  factors:
+    - desc: Imbues attacks with fire
+      element: Fire
+    - desc: Damage dealt +20% by Hammer of Might
+  obtained: Transmuation, Gacha
+
+- name: Sexy Nails
+  cat: 'jp'
+  star: 5
+  picture: Sexy_Nails
+  atk: 523
+  int: 529
+  factors:
+    - desc: Damage dealt +20% by Heart Discharge
+    - desc: ATK damage dealt +15% when using charge assault
+      meta:
+        priority: 3
+        buff: ATK damage
+        buffValue: 15
+        buffCondition: Charge Assault
+    - desc: Recovers 3% of max HP every 5 seconds
+      lb: 5
+  obtained: Mountain Matango (Exchange)
+
+- name: "Dark Fists: Pale Blue"
+  cat: 'jp'
+  star: 5
+  picture: Dark_Fists_Pale_Blue
+  atk: 1263
+  int: 1256
+  factors:
+    - desc: Imbues attacks with dark
+      element: Dark
+    - desc: Critical hit chance +15%
+      lb: 5
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 15
+    - desc: Recovers 10% of max HP every 3 seconds
+      lb: 3
+  obtained: Gacha
+
+- name: Blossom Guards
+  cat: 'jp'
+  star: 5
+  picture: Bloom_Guarder
+  atk: 512
+  int: 509
+  factors:
+    - desc: Damage dealt +15% by Floral Flash Chariot
+    - desc: Normal attack AP recovery +50%
+      meta:
+        priority: 1
+        buff: AP Recovery from Normal Attacks
+        buffValue: 50
+    - desc: ATK +5%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 5
+      lb: 5
+  obtained: Monarch Chimera (Exchange)
+
+- name: Zoologist Claws
+  cat: 'jp'
+  star: 5
+  picture: Zoologist_Claws
+  atk: 507
+  int: 511
+  factors:
+    - desc: "Damage dealt +20% by Earth Glaive: Research"
+    - desc: AP cost -10%
+      meta:
+        priority: 1
+        buff: AP Cost Reduction
+        buffValue: 10
+    - desc: Damage taken -20% while casting symbology
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffCondition: Casting Symbology
+        buffValue: 20
+      lb: 5
+  obtained: Crimson Dalvaros (Achievement, Exchange)
+
+- name: Sharp Jamadhar
+  cat: 'jp'
+  star: 5
+  picture: Sharp_Jamadhar
+  atk: 1256
+  int: 1261
+  factors:
+    - desc: Imbues attacks with earth
+      element: Earth
+    - desc: Earth damage dealt +40%
+      meta:
+        priority: 4
+        buff: Earth Damage
+        buffValue: 40
+    - desc: HP +20%
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 20
+    - desc: Damage taken -20% at short range
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffCondition: Short Range
+        buffValue: 20
+      lb: 5
+  obtained: Gacha
