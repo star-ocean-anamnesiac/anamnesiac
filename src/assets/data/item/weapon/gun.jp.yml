@@ -268,3 +268,25 @@
     - desc: Damage dealt +10% by Approach Blow
       lb: 5
   obtained: Champ Pater (Draw Box), Resonance of Fate 1
+
+- name: PMF-84W
+  cat: 'jp'
+  star: 5
+  picture: PMF_84W
+  atk: 963
+  int: 960
+  factors:
+    - desc: Imbues attacks with wind
+      element: Wind   
+    - desc: Normal attack AP recovery +50%
+      meta:
+        priority: 4
+        buff: AP Recovery From Normal Attacks
+        buffValue: 50
+    - desc: Single target damage +10%
+      meta:
+        priority: 4
+        buff: Single Target Damage
+        buffValue: 5
+      lb: 3
+  obtained: Gacha
