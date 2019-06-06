@@ -677,4 +677,36 @@
         priority: 1
         buff: AP Cost Reduction
         buffValue: 10
-  obtained: Gacha  
+  obtained: Gacha
+
+- name: Safeguarder
+  cat: 'jp'
+  star: 5
+  picture: Safeguarder
+  atk: 532
+  int: 528
+  factors:
+    - desc: Damage dealt +20% by Sweeping Trigger
+    - desc: Hitcount timer +1 second
+    - desc: 60% chance of surviving a lethal attack when at 20% of max HP or more
+      lb: 5
+  obtained: Phantom Dream Fungus (Exchange)
+
+- name: Classic Revolver
+  cat: 'jp'
+  star: 5
+  picture: Classic_Revolver
+  atk: 1262
+  int: 1259
+  factors:
+    - desc: Imbues attacks with dark
+      element: Dark
+    - desc: Absorbs 5% of damage dealt by normal attacks as HP
+    - desc: ATK damage dealt +15% when hitcount is >100
+      meta:
+        priority: 3
+        buff: ATK Damage
+        buffValue: 15
+        buffCondition: Hit Count > 100
+      lb: 5
+  obtained: Gacha
