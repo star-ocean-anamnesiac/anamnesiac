@@ -153,6 +153,12 @@
         buff: Crit Damage
         buffValue: 20
     - desc: Damage dealt +20% by Drill Spike
+    - desc: ATK +5%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 5
+      lb: 5    
   obtained: Crystal Guardian (Exchange)
 
   notes: >
@@ -372,7 +378,7 @@
         buff: AP Recovery From Normal Attacks
         buffValue: 30
         buffCondition: Short Range
-  obtained: Facula (Exchange)
+  obtained: Facula (Draw Box)
 
   notes: >
     They're okay for Mirage, like any event weapon, passable for the intended character, fodder if not.
@@ -561,7 +567,7 @@
   star: 5
   picture: Scarlet_Fist_Scorpion
   atk: 962
-  int: 958
+  int: 957
   factors:
     - desc: Imbues attacks with dark
       element: Dark
