@@ -249,3 +249,22 @@
     - desc: Damage dealt +10% by Bombing Run
       lb: 5
   obtained: Champ Pater (Draw Box), Resonance of Fate 1
+
+- name: PMF-84
+  cat: 'jp'
+  star: 5
+  picture: PMF_84
+  atk: 492
+  int: 489
+  factors:
+    - desc: Damage dealt to humanoids +15%      
+      slayer: Human
+      slayerPct: 15
+      meta:
+        priority: 4
+        buff: Damage To Humans
+        buffValue: 15
+    - desc: 70% chance of surviving a lethal attack when at 15% of max HP or more
+    - desc: Damage dealt +10% by Approach Blow
+      lb: 5
+  obtained: Champ Pater (Draw Box), Resonance of Fate 1
