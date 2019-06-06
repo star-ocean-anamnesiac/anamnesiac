@@ -614,7 +614,7 @@
 - name: Pharoah's Claws
   cat: 'jp'
   star: 5
-  picture: Pharoah's_Claws
+  picture: Pharoh's_Claws
   atk: 532
   int: 528
   factors:
