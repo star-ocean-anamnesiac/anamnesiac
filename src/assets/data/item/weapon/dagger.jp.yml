@@ -1,17 +1,750 @@
+- name: Dragons of Defense
+  cat: 'jp'
+  star: 4
+  picture: Dragons_of_Defense
+  atk: 470
+  int: 0
+  factors:
+    - desc: Imbues attacks with ice
+      element: Ice
+    - desc: Damage dealt +20% by Mirror Blade
+  obtained: Transmutation, Gacha
+
+- name: Elemental Edge
+  cat: 'jp'
+  star: 5
+  picture: Elemental_Edge
+  atk: 495
+  int: 0
+  factors:
+    - desc: ATK +15%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 15
+    - desc: Damage dealt +20% by Flying Guillotine
+    - desc: Critical hit chance +4%
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 4
+      lb: 3
+  obtained: Coin Exchange, Transmutation, Gacha
+
+- name: Golden Thunderblades
+  cat: 'jp'
+  star: 5
+  picture: Thunderous_Blades_Koganemaru
+  atk: 490
+  int: 0
+  factors:
+    - desc: Imbues attacks with lightning
+      element: Lightning
+    - desc: Damage dealt +20% by Victory Terror
+  obtained: Coin Exchange, Transmutation, Gacha
+
+- name: Ice Blades
+  cat: 'jp'
+  star: 5
+  picture: Ice_Coffin
+  atk: 485
+  int: 0
+  factors:
+    - desc: Ice damage dealt +15%
+      meta:
+        priority: 4
+        buff: Ice Damage
+        buffValue: 15
+    - desc: Damage dealt +20% by Sylvan Shot
+  obtained: Coin Exchange, Transmutation, Gacha
+
+- name: Dragon Spirit Blades
+  cat: 'jp'
+  star: 5
+  picture: Aquatic_Spirit_Ruby_Dragon_Blades
+  atk: 530
+  int: 0
+  factors:
+    - desc: ATK +15%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 15
+    - desc: DEF -15%
+      meta:
+        priority: 4
+        buff: DEF Reduction
+        buffValue: 15
+    - desc: Damage dealt +20% by Hydroblades
+  obtained: Coin Exchange, Transmutation, Gacha
 
 - name: Golden-bolt Destroyers
-  cat: jp
+  cat: 'jp'
   star: 5
   picture: Mist_Blades_Takemikazuchi
   atk: 471
+  int: 0
   factors:
-    - desc: Imbues attacks with lightning element
+    - desc: Imbues attacks with lightning
       element: Lightning
-    - desc: Poisonous Guillotine damage +20%
+    - desc: Deamage dealt +20% by Poisonous Guillotine
     - desc: ATK +10%
-      lb: 5
       meta:
         priority: 4
         buff: ATK
         buffValue: 10
-  obtained: Coin Shop (Jie Revorse)
+      lb: 5          
+  obtained: Jie Revorse (Exchange)
+
+- name: Serpent Edges
+  cat: 'jp'
+  star: 5
+  picture: Serpent_Edges
+  atk: 475
+  int: 0
+  factors:
+    - desc: Imbues attacks with ice
+      element: Ice
+    - desc: Damage dealt +20% by Hydroblades
+    - desc: Hitcount timer +0.5 seconds
+      lb: 5      
+  obtained: Jie Revorse (Exchange)
+
+- name: Gan Jiang & Mo Ye
+  cat: 'jp'
+  star: 5
+  picture: Kanshou_Byakuya
+  atk: 500
+  int: 0
+  factors:
+    - desc: Single target damage +15%
+      meta:
+        priority: 1
+        buff: Single Target Damage
+        buffValue: 15
+    - desc: Damage dealt +20% by Mirror Blade
+    - desc: Damage dealt +10%
+      meta:
+        priority: 1
+        buff: Damage
+        buffValue: 10
+      lb: 5
+  obtained: Gacha
+
+- name: Slayer of Men
+  cat: 'jp'
+  star: 5
+  picture: Killer's_Edge
+  atk: 534
+  int: 531
+  factors:
+    - desc: ATK +15%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 15
+    - desc: DEF +15%
+      meta:
+        priority: 4
+        buff: DEF
+        buffValue: 15
+    - desc: Damage dealt to humanoids +25%
+      slayer: Human
+      slayerPct: 25
+      meta:
+        priority: 4
+        buff: Damage To Humans
+        buffValue: 25
+    - desc: AP cost -10%
+      lb: 3
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 10
+  obtained: Gacha
+
+- name: Suzaku
+  cat: 'jp'
+  star: 5
+  picture: Anti_Demon_Blades_Suzaku
+  atk: 962
+  int: 961
+  factors:
+    - desc: Damage dealt to demons +40%
+      slayer: Demon
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Demons
+        buffValue: 40
+    - desc: AP recovery +25%
+      meta:
+        priority: 4
+        buff: AP Recovery
+        buffValue: 25
+    - desc: Damage dealt +10% when not targeted by enemy
+      meta:
+        priority: 3
+        buff: Damage
+        buffValue: 10
+        buffCondition: Not Targeted By Enemy
+      lb: 5        
+  obtained: Gacha
+
+- name: Cobalt Blades
+  cat: 'jp'
+  star: 5
+  picture: Anti_Demon_Blades_Suzaku
+  atk: 862
+  int: 858
+  factors:
+    - desc: Damage dealt +30% by Divine Wrath (Falling Petals)
+    - desc: ATK damage dealt +20%
+      meta:
+        priority: 4
+        buff: ATK Damage
+        buffValue: 20
+    - desc: Absorbs 15% of damage dealt by normal attacks as HP
+      lb: 5
+  obtained: Millioneyes / Luin D'Mont (Draw Box)
+
+- name: Ruby Princess Blades 
+  cat: 'jp'
+  star: 5
+  picture: Dancing_Daggers_Ruby_Princess
+  atk: 473
+  int: 0
+  factors:
+    - desc: Damage dealt +15% by Dancing Sword
+    - desc: Single target damage +10%
+      meta:
+        priority: 1
+        buff: Single Target Damage
+        buffValue: 10
+    - desc: DEF +10%
+      meta:
+        priority: 4
+        buff: DEF
+        buffValue: 10
+      lb: 5
+  obtained: Predate Queen / Hell Siren (Exchange)
+
+- name: Vouivre Nail Knives
+  cat: 'jp'
+  star: 5
+  picture: Vouivre_Nail_Knives
+  atk: 511
+  int: 508
+  factors:
+    - desc: Damage dealt +20% by Dragon's Might
+    - desc: AP recovery +30%
+      meta:
+        priority: 4
+        buff: AP Recovery
+        buffValue: 30
+    - desc: Critical hit chance +15%
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 15
+      lb: 5
+  obtained: Pumpkin Cryptvine (Exchange)
+
+- name: Bloodstone Protectors
+  cat: 'jp'
+  star: 5
+  picture: Protective_Light_Swords
+  atk: 962
+  int: 957
+  factors:
+    - desc: Imbues attacks with light
+      element: Light
+    - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
+    - desc: ATK damage dealt +20% when HP is 100%
+      meta:
+        priority: 3
+        buff: ATK Damage
+        buffValue: 20
+        buffCondition: HP is 100%
+      lb: 5
+  obtained: Gacha
+
+- name: Habakiri
+  cat: 'jp'
+  star: 5
+  picture: Shellbreaker_Swords_Habakiri
+  atk: 959
+  int: 960
+  factors:
+    - desc: Damage dealt to insects +40%
+      slayer: Insect
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Insects
+        buffValue: 40
+    - desc: Recovers 3% of max HP every 5 seconds
+    - desc: AP recovery +30%
+      meta:
+        priority: 4
+        buff: AP Recovery
+        buffValue: 30
+      lb: 5
+  obtained: Gacha
+
+- name: Magatsu Divine Blades
+  cat: 'jp'
+  star: 5
+  picture: Sword_of_the_Sealed_God_Magatsu
+  atk: 957
+  int: 957
+  factors:
+    - desc: Damage dealt to divinities +40%
+      slayer: Divinity
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Divinities
+        buffValue: 40
+    - desc: Recovers 3% of max HP every 5 seconds
+    - desc: AP cost -10%
+      meta:
+        priority: 3
+        buff: AP Cost Reduction
+        buffValue: 10
+      lb: 5        
+  obtained: Transmutation, Coin Exchange
+
+- name: Sylphan Wings
+  cat: 'jp'
+  star: 5
+  picture: Sylphan_Wings
+  atk: 962
+  int: 957
+  factors:
+    - desc: Imbues attacks with wind
+      element: Wind
+    - desc: Stun rate +15%
+      meta:
+        priority: 1
+        buff: Stun Rate
+        buffValue: 15
+    - desc: Recovers 3% of max HP every 5 seconds
+      lb: 5
+  obtained: Coin Exchange
+
+- name: Ceremonial Anemones
+  cat: 'jp'
+  star: 5
+  picture: Flowered_Blades_of_Celebration_Anemone
+  atk: 964
+  int: 963
+  factors:
+    - desc: Imbues attacks with earth
+      element: Earth
+    - desc: ATK damage taken -15%
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffValue: 15
+    - desc: Normal attack AP recovery +50% when hitcount is >100
+      meta:
+        priority: 4
+        buff: AP Recovery From Normal Attacks
+        buffValue: 50
+        buffCondition: Hit Count > 100
+      lb: 5
+  obtained: Gacha
+
+- name: Minotaur Beastswords
+  cat: 'jp'
+  star: 5
+  picture: Beast_Destroyer_Blades_Minotauros
+  atk: 961
+  int: 959
+  factors:
+    - desc: Damage dealt to beasts +40%
+      slayer: Beast
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Beasts
+        buffValue: 40
+    - desc: Rush combo damage +20%
+      meta:
+        priority: 1
+        buff: Rush Damage
+        buffValue: 20
+    - desc: Recovers 3% of max HP every 3 seconds
+      lb: 3
+  obtained: Gacha
+
+- name: Cat Scale Knife
+  cat: 'jp'
+  star: 5
+  picture: Cat_Scale_Knives
+  atk: 531
+  int: 527
+  factors:
+    - desc: Damage dealt +20% by Gremlin's Lair
+    - desc: AP recovery +25%
+      meta:
+        priority: 3
+        buff: AP Recovery
+        buffValue: 25
+    - desc: ATK damage dealt +15% when hitcount is >100
+      meta:
+        priority: 3
+        buff: ATK Damage
+        buffCondition: Hit Count > 100
+        buffValue: 15
+      lb: 5
+  obtained: Shine Totem (Exchange)
+
+- name: Luminous Laser Blade
+  cat: 'jp'
+  star: 5
+  picture: Luminous_Laser_Blades
+  atk: 963
+  int: 958
+  factors:
+    - desc: Imbues attacks with dark
+      element: Dark
+    - desc: AP recovery +30%
+      meta:
+        priority: 3
+        buff: AP Recovery
+        buffValue: 30
+    - desc: ATK +5%
+      meta:
+        priority: 3
+        buff: ATK
+        buffValue: 5
+      lb: 5
+  obtained: Gacha
+
+- name: Beast Daggers
+  cat: 'jp'
+  star: 5
+  picture: Beast_Daggers
+  atk: 963
+  int: 956
+  factors:
+    - desc: Damage dealt to beasts +40%
+      slayer: Beast
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Beasts
+        buffValue: 40
+    - desc: Critical hit chance +15%
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffValue: 15
+    - desc: Critical damage dealt +20%
+      meta:
+        priority: 1
+        buff: Crit Damage
+        buffValue: 20
+    - desc: AP recovery +30%
+      meta:
+        priority: 3
+        buff: AP Recovery
+        buffValue: 30
+      lb: 3
+  obtained: Gacha
+
+- name: Blue Sky Daggers
+  cat: 'jp'
+  star: 5
+  picture: Blue_Sky_Daggers
+  atk: 532
+  int: 526
+  factors:
+    - desc: Damage dealt +20% by Graceful Victory Terror
+    - desc: Hitcount timer +1 second
+    - desc: Damage taken -10%
+      meta:
+        priority: 3
+        buff: Damage Taken Reduction
+        buffValue: 10
+      lb: 5
+  obtained: Land Kraken (Exchange)
+
+- name: Restrict Edge
+  cat: 'jp'
+  star: 5
+  picture: Restrict_Edge
+  atk: 511
+  int: 507
+  factors:
+    - desc: Damage dealt +20% by Gremlin's Lair
+    - desc: Damage taken -10%
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffValue: 10
+    - desc: Critical damage dealt +30% when using charge assault
+      meta:
+        priority: 4
+        buff: Crit Damage
+        buffCondition: Charge Assault
+        buffValue: 30
+      lb: 5
+  obtained: Phantom Dream Fungus (Exchange)
+
+- name: Howling Moon
+  cat: 'jp'
+  star: 5
+  picture: Azure_Flame_Blades_Howling_Moon
+  atk: 960
+  int: 959
+  factors:
+    - desc: Imbues attacks with fire
+      element: Fire
+    - desc: Damage taken -10%
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffValue: 10
+    - desc: Rush combo damage +15%
+      lb: 5
+  obtained: Gacha
+
+- name: Two Kill Alert
+  cat: 'jp'
+  star: 5
+  picture: Two_Kill_Alert
+  atk: 1111
+  int: 1106
+  factors:
+    - desc: Damage dealt to beasts +40%
+      slayer: Beast
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Beasts
+        buffValue: 40
+    - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
+    - desc: ATK damage dealt +10%
+      meta:
+        priority: 3
+        buff: ATK Damage
+        buffValue: 10
+      lb: 3
+  obtained: Gacha
+
+- name: Colored Lily
+  cat: 'jp'
+  star: 5
+  picture: Flowered_Blades_of_Celebration_Coloured_Lily
+  atk: 1112
+  int: 1107
+  factors:
+    - desc: Imbues attacks with light
+      element: Light
+    - desc: AP recovery +50%
+      meta:
+        priority: 3
+        buff: AP Recovery
+        buffValue: 50
+    - desc: Critical hit chance +10%
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffValue: 10
+      lb: 5
+    - desc: Critical damage dealt +15%
+      meta:
+        priority: 1
+        buff: Crit Damage
+        buffValue: 15
+      lb: 5
+  obtained: Gacha
+
+- name: Royal Silverware
+  cat: 'jp'
+  star: 5
+  picture: Royal_Silverware
+  atk: 1261
+  int: 1259
+  factors:
+    - desc: Imbues attacks with dark
+      element: Dark
+    - desc: Dark damage dealt +20%
+      meta:
+        priority: 4
+        buff: Dark Damage
+        buffValue: 20
+    - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
+    - desc: Stun rate +20%
+      meta:
+        priority: 1
+        buff: Stun Rate
+        buffValue: 20
+      lb: 5
+  obtained: Gacha
+
+- name: Life & Death
+  cat: 'jp'
+  star: 5
+  picture: Life_&_Death
+  atk: 1259
+  int: 1257
+  factors:
+    - desc: Damage dealt to undead +40%
+      slayer: Undead
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Undead
+        buffValue: 40
+    - desc: Critical hit chance +20%
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffValue: 20
+    - desc: Critical damage dealt +20%
+      meta:
+        priority: 1
+        buff: Crit Damage
+        buffValue: 20
+    - desc: Rush combo damage +10%
+      lb: 3
+  obtained: Gacha
+
+- name: Maiden's Daggers
+  cat: 'jp'
+  star: 5
+  picture: Maiden's_Daggers
+  atk: 512
+  int: 508
+  factors:
+    - desc: Damage dealt +20% by Aerial A La Mode
+    - desc: AP cost -10%
+      meta:
+        priority: 3
+        buff: AP Cost Reduction
+        buffValue: 10
+    - desc: Evasion AP cost -30%
+      lb: 5
+  obtained: Supipi-chan (Exchange)
+
+- name: Heart Over Cake
+  cat: 'jp'
+  star: 5
+  picture: Heart_Over_Cake
+  atk: 1262
+  int: 1256
+  factors:
+    - desc: Imbues attacks with wind
+      element: Wind
+    - desc: Wind damage dealt +10%
+      meta:
+        priority: 3
+        buff: Wind Damage
+        buffValue: 10
+    - desc: Critical hit chance +10%
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffValue: 10
+    - desc: Critical damage dealt +15%
+      meta:
+        priority: 1
+        buff: Crit Damage
+        buffValue: 15
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP
+      lb: 5
+  obtained: Gacha
+
+- name: "Holy Daggers: Judgment"
+  cat: 'jp'
+  star: 5
+  picture: Holy_Daggers_Judgement
+  atk: 1255
+  int: 1255
+  factors:
+    - desc: Damage dealt to undead +50%
+      slayer: Undead
+      slayerPct: 50
+      meta:
+        priority: 4
+        buff: Damage To Undead
+        buffValue: 50
+    - desc: Recovers 5% of max HP every 3 seconds
+    - desc: Critical hit chance +30% when HP is 100%
+      meta:
+        priority: 3
+        buff: Crit Rate
+        buffValue: 30
+        buffCondition: HP is 100%
+      lb: 3
+  obtained: Gacha
+
+- name: Blooming Mist Daggers
+  cat: 'jp'
+  star: 5
+  picture: Flowmist_Daggers
+  atk: 510
+  int: 511
+  factors:
+    - desc: Damage dealt +15% by Flower Wheel
+    - desc: 70% chance of surviving a lethal attack when at 15% of max HP or more
+    - desc: ATK +5%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 5
+      lb: 5
+  obtained: Giant Prismoid (Exchange)
+
+- name: "Crest Blades: Frozen Dust"
+  cat: 'jp'
+  star: 5
+  picture: Crest_Blades_Frozen_Dust
+  atk: 1254
+  int: 1257
+  factors:
+    - desc: Imbues attacks with ice
+      element: Ice
+    - desc: Ice damage dealt +10%
+      meta:
+        priority: 3
+        buff: Ice Damage
+        buffValue: 10
+    - desc: Damage taken -40% while casting symbology
+      meta:
+        priority: 3
+        buff: Damage Taken Reduction
+        buffCondition: Casting Symbology
+        buffValue: 40
+    - desc: AP cost -10%
+      meta:
+        priority: 3
+        buff: AP Cost Reduction
+        buffValue: 10
+      lb: 5
+  obtained: Gacha
+
+- name: Rokushou Tanken
+  cat: 'jp'
+  star: 5
+  picture: Rokushou_Tanken
+  atk: 510
+  int: 509
+  factors:
+    - desc: Damage dealt +20% by Phoenix Drive
+    - desc: DEF +15%
+      meta:
+        priority: 4
+        buff: DEF
+        buffValue: 15
+    - desc: ATK damage dealt +10%
+      meta:
+        priority: 4
+        buff: ATK Damage
+        buffValue: 10
+      lb: 5
+  obtained: Crown Dodo (Exchange)
