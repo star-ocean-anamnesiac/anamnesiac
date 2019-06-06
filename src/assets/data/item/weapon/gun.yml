@@ -190,6 +190,11 @@
         buff: AP Cost Reduction
         buffValue: 10
     - desc: ATK damage dealt +40% when skill chain is >3
+      meta:
+        priority: 4
+        buff: ATK Damage
+        buffCondition: Skill Chain 3+
+        buffValue: 40    
       lb: 5
   obtained: Alma (Exchange)
   
