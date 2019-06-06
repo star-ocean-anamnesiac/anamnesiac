@@ -626,3 +626,55 @@
     - desc: Recovers 5% of max HP every 3 seconds
       lb: 5
   obtained: Gacha
+  
+- name: PMF-226
+  cat: 'jp'
+  star: 5
+  picture: PMF_226
+  atk: 1110
+  int: 1108
+  factors:
+    - desc: Imbues attacks with earth
+      element: Earth
+    - desc: Damage dealt to humanoids +20%
+      slayer: Human
+      slayerPct: 20
+      meta:
+        priority: 4
+        buff: Damage To Humans
+        buffValue: 20
+    - desc: ATK damage dealt +15%
+      meta:
+        priority: 3
+        buff: ATK Damage
+        buffValue: 15
+    - desc: AP cost -10%
+      lb: 5
+      meta:
+        priority: 1
+        buff: AP Cost Reduction
+        buffValue: 10
+  obtained: Gacha
+
+- name: Demon Shooter
+  cat: 'jp'
+  star: 5
+  picture: Devil_Sealing_Gun_Demon_Shooter
+  atk: 1259
+  int: 1256
+  factors:
+    - desc: Damage dealt to demons +40%
+      slayer: Demon
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Demons
+        buffValue: 40
+    - desc: Recovers 10% of max HP every 3 seconds
+    - desc: AP cost -10%
+      lb: 3
+      meta:
+        priority: 1
+        buff: AP Cost Reduction
+        buffValue: 10
+  obtained: Gacha  
