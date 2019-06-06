@@ -574,3 +574,25 @@
         buff: Single Target Damage
         buffValue: 20
   obtained: Gacha  
+
+- name: PMF-84W-B
+  cat: 'jp'
+  star: 5
+  picture: PMF_84W_B
+  atk: 861
+  int: 855
+  factors:
+    - desc: Damage dealt +20% by Hell Invite
+    - desc: ATK damage taken -10%
+      meta:
+        priority: 3
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+    - desc: AP recovery +50%
+      meta:
+        priority: 3
+        buff: AP Recovery
+        buffValue: 50
+      lb: 5
+  obtained: Cannon Daddy (Draw Box), Resonance of Fate 2
+  
