@@ -253,7 +253,7 @@
 - name: Amphitrite
   cat: 'jp'
   star: 5
-  picture: Queen_Ocean's_Sword_Amphitrite
+  picture: Ocean_Queen's_Sword_Amphitrite
   atk: 1262
   int: 1258
   factors:
