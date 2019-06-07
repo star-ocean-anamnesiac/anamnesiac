@@ -141,7 +141,7 @@
   int: 507
   factors:
     - desc: Damage dealt +20% by Clockwise Arm
-    - desc: Single target damage +15% DMG when skill chain is >3
+    - desc: Single target damage +15% when skill chain is >3
       meta:
         priority: 3
         buff: Single Target Damage
@@ -161,12 +161,12 @@
   star: 5
   picture: Peachy_Arms_Pretty_Angel
   atk: 961
-  int: 958
+  int: 959
   factors:
     - desc: Imbues attacks with earth
       element: Earth
     - desc: No flinching when attacking      
-    - desc: Damge taken -10%
+    - desc: Damage taken -10%
       meta:
         priority: 1
         buff: Damage Reduction
@@ -214,7 +214,7 @@
   atk: 892
   int: 887 
   factors:
-    - desc: Imbues attacks with Fire
+    - desc: Imbues attacks with fire
       element: Fire
     - desc: Normal attack AP recovery +100%
       meta:
