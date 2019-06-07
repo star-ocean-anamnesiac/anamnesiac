@@ -339,7 +339,7 @@
 - name: Luster Orb
   cat: 'jp'
   star: 5
-  picture: Luster Orb
+  picture: Luster_Orb
   atk: 1257
   int: 1262
   factors:
