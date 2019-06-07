@@ -1,26 +1,429 @@
+- name: Popping Arms
+  cat: 'jp'
+  star: 5
+  picture: Popping_Arms
+  atk: 512
+  int: 506
+  factors:
+    - desc: Damage dealt +20% by Parabola Beam Damage
+    - desc: ATK damage dealt +15% when hitcount is >100
+      meta:
+        priority: 3
+        buff: ATK Damage
+        buffValue: 15
+        buffCondition: Hit Count > 100
+    - desc: AP recovery +30% at long range
+      lb: 5
+      meta:
+        priority: 3
+        buff: AP Recovery
+        buffValue: 30
+        buffCondition: Long Range
+  obtained: Land Kraken (Exchange)
+
+- name: Arms of Darkness
+  cat: 'jp'
+  star: 4
+  picture: Arms_of_Darkness
+  atk: 472
+  int: 465
+  factors:
+    - desc: Imbues attacks with dark
+      element: Dark
+    - desc: Single target damage +10%
+      meta:
+        priority: 3
+        buff: Single Target Damage
+        buffValue: 10
+  obtained: Transmutation, Gacha
+
+- name: "Piercing Arms: Diamond Drill"
+  cat: 'jp'
+  star: 5
+  picture: Piercing_Arms_Diamond_Drill
+  atk: 1262
+  int: 1257
+  factors:
+    - desc: Imbues attacks with earth
+      element: Earth
+    - desc: Earth damage dealt +20%
+      meta:
+        priority: 4
+        buff: Earth Damage
+        buffValue: 20
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP
+    - desc: Single target damage +10%
+      meta:
+        priority: 3
+        buff: Single Target Damage
+        buffValue: 10
+      lb: 5
+  obtained: Gacha
+
+- name: Atomic Arms
+  cat: 'jp'
+  star: 5
+  picture: Atomic_Arms
+  atk: 650
+  int: 649
+  factors:
+    - desc: Single target damage +15%
+      meta:
+        priority: 4
+        buff: Single Target Damage
+        buffValue: 15
+    - desc: ATK damage dealt +10% when hit count is >100
+      meta:
+        priority: 3
+        buff: ATK Damage Boost
+        buffValue: 10
+        buffCondition: Hit Count > 100
+    - desc: Recovers 5% of max HP every 3 seconds
+      lb: 5
+  obtained: Gacha, Coin Exchange
+
+- name: Super Puncher
+  cat: 'jp'
+  star: 5
+  picture: Great_Punch
+  atk: 517
+  int: 510
+  factors:
+    - desc: ATK +15%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 15
+    - desc: AP recovery +50%
+      meta:
+        priority: 4
+        buff: AP Recovery
+        buffValue: 50
+    - desc: 30% chance of surviving a lethal attack when at 20% of max HP or more
+      lb: 3
+  obtained: Gacha, Coin Exchange
+
+- name: Farmer's Arms
+  cat: 'jp'
+  star: 5
+  picture: Farmer's_Arms
+  atk: 510
+  int: 509
+  factors:
+    - desc: Damage dealt +50% by Lantern Burst
+    - desc: Rush combo damage +10% when hit count is >100
+      meta:
+        priority: 3
+        buff: Rush Damage
+        buffValue: 10
+        buffCondition: Hit Count > 100
+    - desc: ATK damage taken -10% at short range
+      lb: 5
+      meta:
+        priority: 3
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+        buffCondition: Short Range
+  obtained: Pumpkin Cryptvine (Exchange)
 
 - name: Striped Cat Mitts
-  cat: jp
+  cat: 'jp'
   star: 5
   picture: Striped_Cat_Mitts
   atk: 961
   int: 958
   factors:
-    - desc: Imbue light element / +20% light damage
+    - desc: Imbues attacks with light
       element: Light
+    - desc: Light damage dealt +20%
       meta:
         priority: 4
         buff: Light Damage
         buffValue: 20
-    - desc: -10% AP cost
+    - desc: AP cost -10%
       meta:
         priority: 4
         buff: AP Cost Reduction
         buffValue: 10
-    - desc: 80% chance to survive a lethal attack at 10% or more HP
+    - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
       lb: 5
   obtained: Gacha
 
-  notes: >
-    Light imbue arms and as I type this the only elemental arms you can get. A must keep, even if you don't have HMillie these will come
-    in useful later.
+- name: Polar Bear Paws
+  cat: 'jp'
+  star: 5
+  picture: Polar_Bear's_Punch
+  atk: 960
+  int: 955
+  factors:
+    - desc: Damage dealt to demons +40%
+      slayer: Demon
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Demons
+        buffValue: 40
+    - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
+    - desc: Recovers 5% of max HP every 3 seconds
+      lb: 3
+  obtained: Gacha
+
+- name: "Crushing Mechanism: Pulverizer"
+  cat: 'jp'
+  star: 5
+  picture: Crushing_Mechanism_Pulverizer
+  atk: 652
+  int: 648
+  factors:
+    - desc: Imbues attacks with earth
+      element: Earth     
+    - desc: Normal attack AP recovery +50% at short range
+      meta:
+        priority: 1
+        buff: AP Recovery From Normal Attacks
+        buffCondition: Short Range
+        buffValue: 50
+    - desc: Stun rate +10% at long range
+      meta:
+        priority: 1
+        buff: Stun Rate
+        buffCondition: Long Range
+        buffValue: 10
+      lb: 5
+  obtained: Coin Exchange
+
+- name: Ignited Puncher
+  cat: 'jp'
+  star: 5
+  picture: Ignition_Punch
+  atk: 892
+  int: 887 
+  factors:
+    - desc: Imbues attacks with fire
+      element: Fire
+    - desc: Normal attack AP recovery +100%
+      meta:
+        priority: 1
+        buff: AP Recovery From Normal Attacks
+        buffValue: 100
+    - desc: Damage dealt +20% by Jump n' Thump
+      lb: 5
+  obtained: Lucifer (Exchange), Coin Exchange 
+
+- name: Angel Arms
+  cat: 'jp'
+  star: 5
+  picture: Peachy_Arms_Pretty_Angel
+  atk: 961
+  int: 959
+  factors:
+    - desc: Imbues attacks with earth
+      element: Earth
+    - desc: No flinching when attacking      
+    - desc: Damage taken -10%
+      meta:
+        priority: 1
+        buff: Damage Reduction
+        buffValue: 10
+    - desc: Critical hit chance +10%
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffValue: 10
+    - desc: Critical damage dealt +15%
+      meta:
+        priority: 1
+        buff: Crit Damage
+        buffValue: 15
+      lb: 5
+  obtained: Gacha
+
+- name: Dragoon's Arms
+  cat: 'jp'
+  star: 5
+  picture: Dragoon's_Arms
+  atk: 959
+  int: 957
+  factors:
+    - desc: Damage dealt to dragons +40%
+      slayer: Dragon
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Dragons
+        buffValue: 40
+    - desc: ATK +5%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 5    
+    - desc: Critical hit chance +30% when not targeted by enemy
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffCondition: Not Holding Aggro
+        buffValue: 30
+      lb: 3
+  obtained: Gacha
+
+- name: "Joy Mechanism: Sometihng Four"
+  cat: 'jp'
+  star: 5
+  picture: Joy_Mechanism_Somthing_Four
+  atk: 1111
+  int: 1108
+  factors:
+    - desc: Imbues attacks with light
+      element: Light
+    - desc: Light damage dealt +25%
+      meta:
+        priority: 4
+        buff: Light Damage
+        buffValue: 25
+    - desc: ATK damage taken -10% when targeted by enemy at short range
+      lb: 5
+      meta:
+        priority: 3
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+        buffCondition: Short Range, Holding Aggro
+    - desc: Rush combo damage +10% when hitcount is >100
+      lb: 5
+  obtained: Gacha
+
+- name: Straight Puncher
+  cat: 'jp'
+  star: 5
+  picture: Straight_Punch
+  atk: 533
+  int: 527
+  factors:
+    - desc: Damage dealt +20% by Jump n' Thump
+    - desc: Additional hit that deals 5% of damage dealt by normal attacks
+    - desc: Critical damage dealt +30%
+      meta: 
+        priority: 1 
+        buff: Crit Damage
+        buffValue: 30
+      lb: 5
+  obtained: Lucifer (Exchange)
+
+- name: Mechanical Servant
+  cat: 'jp'
+  star: 5
+  picture: Mechanical_Servant
+  atk: 513
+  int: 508
+  factors:
+    - desc: Damage dealt +20% by Beam Cage Device
+    - desc: Damage dealt +20% by Streamsphere
+    - desc: AP recovery +30%
+      meta:
+        priority: 4
+        buff: AP Recovery
+        buffValue: 30
+      lb: 5
+    - desc: Evasion AP cost -50%
+      meta:
+        priority: 4
+        buff: AP Recovery
+        buffValue: 50
+      lb: 5
+  obtained: Twin Eclipse Story (Chapter 2)
+
+- name: Hologram Arms
+  cat: 'jp'
+  star: 5
+  picture: Hologram_Arms
+  atk: 1261
+  int: 1258
+  factors:
+    - desc: Imbues attacks with lightning
+      element: Lightning
+    - desc: Additional hit that deals 10% of damage dealt by normal attacks
+    - desc: HP +10%
+      meta: 
+        priority: 3
+        buff: HP
+        buffValue: 10
+      lb: 5
+  obtained: Gacha
+
+- name: "Mechanical Servant: Welcoming Committee"
+  cat: 'jp'
+  star: 5
+  picture: Mechanical_Servant_Welcoming_Committee
+  atk: 1260
+  int: 1261
+  factors:
+    - desc: Damage dealt to machines +40%
+      slayer: Machine
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Machines
+        buffValue: 40
+    - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
+    - desc: Recovers 5% of max HP every 3 seconds
+      lb: 3
+  obtained: Gacha
+
+- name: Bitter Bitter Cat
+  cat: 'jp'
+  star: 5
+  picture: Bitter_Bitter_Cat
+  atk: 507
+  int: 513
+  factors:
+    - desc: Damage dealt +20% by Spread Missiles
+    - desc: Recovers 3% of max HP every 5 seconds
+    - desc: Single target damage +10%
+      meta:
+        priority: 3
+        buff: Single Target Damage
+        buffValue: 10
+      lb: 5
+  obtained: Squelette de Chocolat (Exchange)
+
+- name: "Bunny: Baumkuchen"
+  cat: 'jp'
+  star: 5
+  picture: Bunny_Baumkuchen
+  atk: 1255
+  int: 1260
+  factors:
+    - desc: Imbues attacks with fire
+      element: Fire
+    - desc: Fire damage dealt +20%
+      meta:
+        priority: 4
+        buff: Fire Damage
+        buffValue: 20
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP
+    - desc: No flinching when attacking
+      lb: 5
+  obtained: Gacha
+
+- name: Blizzard Arms
+  cat: 'jp'
+  star: 5
+  picture: Blizzard_Arms
+  atk: 1236
+  int: 1259
+  factors:
+    - desc: Imbues attacks with ice
+      element: Ice
+    - desc: Ice damage dealt +15%
+      meta:
+        priority: 4
+        buff: Ice Damage
+        buffValue: 20
+    - desc: Damage dealt +45% when hitcount is >150
+      meta:
+        priority: 4
+        buff: Damage
+        buffCondition: Hit Count > 150
+        buffValue: 45
+    - desc: 80% chance of surviving a lethal attack when at 20% of max HP or more
+      lb: 3
+  obtained: Gacha
