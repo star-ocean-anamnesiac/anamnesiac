@@ -614,3 +614,53 @@
         buffValue: 5
       lb: 3
   obtained: Gacha
+
+- name: Birdhunter Rod
+  cat: 'jp'
+  star: 5
+  picture: Birdhunter_Rod
+  atk: 959
+  int: 960
+  factors:
+    - desc: Elemental damage dealt +20%
+      meta:
+        priority: 4
+        buff: Elemental Damage
+        buffValue: 30
+    - desc: Damage dealt to birds +30%
+      slayer: Bird
+      slayerPct: 30
+      meta:
+        priority: 4
+        buff: Damage To Birds
+        buffValue: 30
+    - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
+    - desc: Damage dealt +10%
+      lb: 3
+      meta:
+        priority: 3
+        buff: Damage
+        buffValue: 10
+  obtained: Gacha
+
+- name: Pinky Moon
+  cat: 'jp'
+  star: 5
+  picture: Pinky_Moon
+  atk: 509
+  int: 511
+  factors:
+    - desc: Damage dealt +20% by Twinkle Bomb
+    - desc: INT damage dealt +10% 
+      meta:
+        priority: 3
+        buff: INT Damage
+        buffValue: 10
+    - desc: Damage taken -10% when casting symbology
+      lb: 5
+      meta:
+        priority: 1
+        buff: Damage Taken Reduction
+        buffCondition: Casting Symbology
+        buffValue: 10
+  obtained: G-Imitation Ghost (Exchange)
