@@ -1,27 +1,450 @@
+- name: Striking Sword
+  cat: 'jp'
+  star: 5
+  picture: Striking_Sword
+  atk: 834
+  int: 825
+  factors:
+    - desc: Damage dealt +30% by Dead End
+    - desc: AP recovery +30%
+      meta:
+        priority: 4
+        buff: AP Recovery
+        buffValue: 30
+    - desc: Single target damage +10%
+      lb: 5
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+  obtained: "Ballistic Rhino / Valkyrie Profile: The Purged Wizard (Achievement)"
+
+- name: Abyss Sword
+  cat: 'jp'
+  star: 5
+  picture: Abyssal_Sword
+  atk: 532
+  int: 529
+  factors:
+    - desc: Damage dealt +30% by Gran Aqua Zapper
+    - desc: Critical damage dealt +50% when skill chain is >3
+      meta:
+        priority: 3
+        buff: Crit Rate
+        buffCondition: Skill Chain 3+
+        buffValue: 50
+    - desc: Recovers 5% of max HP every 4 seconds at short range
+      lb: 5
+  obtained: Sea Dragon Chieftain (Exchange)
+
+- name: Durandal
+  cat: 'jp'
+  star: 5
+  picture: Durandal
+  atk: 516
+  int: 511
+  factors:
+    - desc: ATK +15%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 15
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP
+    - desc: DAmage dealt +10%
+      lb: 3
+      meta:
+        priority: 4
+        buff: Damage
+        buffValue: 10
+  obtained: Coin Exchange, Gacha
+
+- name: Caliburn
+  cat: 'jp'
+  star: 4
+  picture: Caliburn
+  atk: 471
+  int: 466
+  factors:
+    - desc: Imbues attacks with earth
+      element: Earth
+    - desc: ATK +5%
+      meta:
+        priority: 3
+        buff: ATK
+        buffValue: 5
+  obtained: Transmutation, Gacha
+
+- name: Tyrfing
+  cat: 'jp'
+  star: 5
+  picture: Tyrfing
+  atk: 651
+  int: 648
+  factors:
+    - desc: Single target damage +15%
+      meta:
+        priority: 4
+        buff: Single Target Damage
+        buffValue: 15
+    - desc: AP cost -10%
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 10
+    - desc: Damage taken -10%
+      lb: 5
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffValue: 10
+  obtained: Coin Exchange, Gacha
+
+- name: Type-4O Blade
+  cat: 'jp'
+  star: 5
+  picture: Type_4O_Blade
+  atk: 862
+  int: 857
+  factors:
+    - desc: "Damage dealt +20% by YoRHa Arms: 12"
+    - desc: Normal attack AP recovery +50%
+      meta:
+        priority: 4
+        buff: AP Recovery From Normal Attacks
+        buffValue: 50
+    - desc: ATK damage taken -10%
+      lb: 5
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+  obtained: Geared Wisp / NieR (Achievement, Exchange)
 
 - name: Beastlord
-  cat: jp
+  cat: 'jp'
   star: 5
   picture: Beastlord
   atk: 963
   int: 958
   factors:
-    - desc: Imbues attacks with light element
+    - desc: Imbues attacks with light
       element: Light
-    - desc: Damage Taken -10%
+    - desc: Damage taken -10%
       meta:
         priority: 4
         buff: Damage Taken Reduction
         buffValue: 10
-    - desc: AP consumption -10%
+    - desc: AP cost -10%
       lb: 5
       meta:
         priority: 4
         buff: AP Cost Reduction
         buffValue: 10
   obtained: Gacha (Limited)
-  
-  notes: >
-    The factors aren't going to blow you away. They're strong enough though. But the biggest thing is that even on JP this is the only
-    light imbue greatsword. On top of that it's one of the only limited time weapons in the game. So if you missed it, well check out the
-    other greatswords for options.
+
+- name: Bahamut Tear
+  cat: 'jp'
+  star: 5
+  picture: Bahamut_Tear
+  atk: 964
+  int: 957
+  factors:
+    - desc: Imbues attacks with lightning
+      element: Lightning
+    - desc: Normal attack AP recovery +100%
+      meta:
+        priority: 4
+        buff: AP Recovery From Normal Attacks
+        buffValue: 100
+    - desc: Critical damage dealt +20%
+      lb: 5
+      meta:
+        priority: 1
+        buff: Crit Damage
+        buffValue: 20
+  obtained: Gacha
+
+- name: Magnifying Blade
+  cat: 'jp'
+  star: 5
+  picture: Grossarl_Sword
+  atk: 961
+  int: 956
+  factors:
+    - desc: Imbues attacks with ice
+      element: Ice
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP    
+    - desc: Damage dealt +10%
+      meta:
+        priority: 4
+        buff: Damage
+        buffValue: 1
+      lb: 5
+  obtained: Gacha
+
+- name: Dragorainoss
+  cat: 'jp'
+  star: 5
+  picture: Surging_Sea_Machine_Dragorainoss
+  atk: 863
+  int: 856
+  factors:
+    - desc: Damage dealt +30% by Dragon Surge
+    - desc: INT damage taken -15%
+      meta:
+        priority: 4
+        buff: INT Damage Taken Reduction
+        buffValue: 15
+    - desc: ATK damage dealt +40% when skill chain is >3
+      lb: 5
+      meta:
+        priority: 3
+        buff: ATK Damage
+        buffCondition: Skill Chain 3+
+        buffValue: 40
+  obtained: Transmutation, Coin Exchange
+
+- name: "Lightning Blade: Crimson Moon"
+  cat: 'jp'
+  star: 5
+  picture: Lightning_Blade_Crimson_Moon
+  atk: 1110
+  int: 1109
+  factors:
+    - desc: Imbues attacks with lightning
+      element: Lightning
+    - desc: Damage dealt to demons +15%
+      slayer: Demon
+      slayerPct: 15
+      meta:
+        priority: 4
+        buff: Damage To Demons
+        buffValue: 15
+    - desc: No flinching when attacking
+    - desc: Rush combo damage +15% when hitcount is >100
+      lb: 5
+  obtained: Gacha
+
+- name: Hellfire
+  cat: 'jp'
+  star: 5
+  picture: Satanic_Blade_Hellfire
+  atk: 1261
+  int: 1259
+  factors:
+    - desc: Imbues attacks with fire
+      element: Fire
+    - desc: Damage dealt to demons +20%
+      slayer: Demon
+      slayerPct: 20
+      meta:
+        priority: 4
+        buff: Damage To Demons
+        buffValue: 20
+    - desc: Normal attack AP recovery +100%
+      meta:
+        priority: 1
+        buff: AP Recovery From Normal Attacks
+        buffValue: 100
+    - desc: Recovers 5% of max HP every 4 seconds
+      lb: 5
+  obtained: Gacha
+
+- name: Amphitrite
+  cat: 'jp'
+  star: 5
+  picture: Ocean_Queen's_Sword_Amphitrite
+  atk: 1262
+  int: 1258
+  factors:
+    - desc: Imbues attacks with ice
+      element: Ice
+    - desc: Ice damage dealt +15%
+      meta:
+        priority: 4
+        buff: Ice Damage
+        buffValue: 40
+    - desc: Normal attack AP recovery +100%
+      meta:
+        priority: 1
+        buff: AP Recovery From Normal Attacks
+        buffValue: 100
+    - desc: 80% chance of surviving a lethal attack when at 20% of max HP or more
+      lb: 5
+  obtained: Gacha
+
+- name: Red Punisher
+  cat: 'jp'
+  star: 5
+  picture: Thaumaturgy_Judgement_Blade_Red_Punisher
+  atk: 511
+  int: 508
+  factors:
+    - desc: Damage dealt +20% by Air Slash of Fury
+    - desc: Damage dealt to demons +10%
+      slayer: Demon
+      slayerPct: 10
+      meta:
+        priority: 4
+        buff: Damage To Demons
+        buffValue: 10
+    - desc: Recovers 5% of max HP every 3 seconds when hitcount is >100
+      lb: 5
+  obtained: Shrouded Gaze (Exchange)
+
+- name: Elimination Sword
+  cat: 'jp'
+  star: 5
+  picture: Elimination_Sword
+  atk: 531
+  int: 528
+  factors:
+    - desc: Damage dealt +20% by Heat Zapper
+    - desc: Critical hit chance +10%
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 10
+    - desc: Damage taken -10% when targeted by enemy at short range
+      lb: 5
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffValue: 10
+  obtained: Ancient Guardian (Exchange)
+
+- name: Astral Sword
+  cat: 'jp'
+  star: 5
+  picture: Astral_Sword
+  atk: 511
+  int: 506
+  factors:
+    - desc: "Damage dealt +30% by Double Slash: Vortex"
+    - desc: Critical hit chance +10%
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffValue: 10
+    - desc: Recovers 3% of max HP every 5 seconds
+      lb: 5
+  obtained: Mother Polyphaga (Exchange)
+
+- name: Vermilion Moon
+  cat: 'jp'
+  star: 5
+  picture: Pumpkin_Greatsword_Vermilion_Moon
+  atk: 1259
+  int: 1256
+  factors:
+    - desc: Damage dealt to undead +40%
+      slayer: Undead
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Undead
+        buffValue: 40       
+    - desc: ATK damage dealt +15%
+      meta:
+        priority: 3
+        buff: ATK Damage
+        buffValue: 15
+    - desc: ATK damage taken -10%
+      meta:
+        priority: 3
+        buff: ATK Damage
+        buffValue: 10
+      lb: 3
+  obtained: Gacha
+
+- name: Skyslayer
+  cat: 'jp'
+  star: 5
+  picture: Skyslayer
+  atk: 533
+  int: 513
+  factors:
+    - desc: Damage dealt +20% by Helix Splendor
+    - desc: Critical hit chance +10% when HP is 100%
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffCondition: HP is 100%
+        buffValue: 10
+    - desc: Critical damage dealt +10% when HP is 100%
+      meta:
+        priority: 1
+        buff: Crit Damage
+        buffCondition: HP is 100%
+        buffValue: 10
+    - desc: 70% chance of surviving a lethal attack when at 20% of max HP or more
+      lb: 5
+  obtained: Rekorokoro (Exchange)
+
+- name: Hagoita
+  cat: 'jp'
+  star: 5
+  picture: Hagoita_Maiden_of_the_Golden_Orchid
+  atk: 1263
+  int: 1257
+  factors:
+    - desc: Imbues attacks with light
+      element: Light
+    - desc: Light damage dealt +20%
+      meta:
+        priority: 4
+        buff: Light Damage
+        buffValue: 20
+    - desc: Normal attack AP recovery +100%
+      meta:
+        priority: 1
+        buff: AP Recovery From Normal Attacks
+        buffValue: 100
+    - desc: Rush combo damage +20%
+      lb: 5
+  obtained: Gacha
+
+- name: "Radiant Sword: Violet"
+  cat: 'jp'
+  star: 5
+  picture: Radiant_Sword_Violet
+  atk: 510
+  int: 509
+  factors:
+    - desc: "Damage dealt +30% by Sword: Mine Layer"
+    - desc: Recovers 10% of max HP every 5 seconds
+    - desc: INT damage taken -10%
+      lb: 5
+      meta:
+        priority: 4
+        buff: INT Damage Taken Reduction
+        buffValue: 10
+  obtained: Fortress Scissors (Exchange)
+
+- name: Crimson Gale
+  cat: 'jp'
+  star: 5
+  picture: Crimson_Gale
+  atk: 1260
+  int: 1259
+  factors:
+    - desc: Imbues attacks with wind
+      element: Wind
+    - desc: Wind damage dealt +20%
+      meta:
+        priority: 4
+        buff: Wind Damage
+        buffValue: 20
+    - desc: HP +20%
+      meta:
+        priority: 3
+        buff: HP
+        buffValue: 20
+    - desc: ATK damage dealt +40% when hitcount is >100
+      lb: 5
+      meta:
+        priority: 4
+        buff: ATK Damage
+        buffCondition: Hit Count > 100
+        buffValue: 40
+  obtained: Gacha
