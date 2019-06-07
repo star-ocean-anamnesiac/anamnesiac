@@ -712,3 +712,20 @@
     - desc: 80% chance of surviving a lethal attack when at 20% of max HP or more
       lb: 3
   obtained: Gacha
+
+- name: Esprit White Chocolate Wand
+  cat: 'jp'
+  star: 5
+  picture: Esprit_White_Chocolate_Wand
+  atk: 510
+  int: 512
+  factors:
+    - desc: Damage dealt +20% by Flare Torch
+    - desc: Repel +1
+    - desc: AP cost -10%
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 10
+      lb: 5
+  obtained: Squelette de Chocolat (Draw Box)
