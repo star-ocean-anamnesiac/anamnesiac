@@ -729,3 +729,63 @@
         buffValue: 10
       lb: 5
   obtained: Squelette de Chocolat (Draw Box)
+
+- name: Rose Remurick Wand
+  cat: 'jp'
+  star: 5
+  picture: Rose_Remurick_Wand
+  atk: 1253
+  int: 1262
+  factors:
+    - desc: Fire damage dealt +40%
+      meta:
+        priority: 4
+        buff: Fire Damage
+        buffValue: 40
+    - desc: Wind damage dealt +20%
+      meta:
+        priority: 4
+        buff: Wind Damage
+        buffValue: 20
+    - desc: AP recovery +50%
+      meta:
+        priority: 4
+        buff: AP Recovery
+        buffValue: 50
+    - desc: INT damage taken +15% (Enemies)
+      meta:
+        priority: 3
+        buff: Enemy INT Damage Taken
+        buffValue: 15
+      lb: 5
+  obtained: Gacha
+
+- name: Gold Blossom Bunny Rod
+  cat: 'jp'
+  star: 5
+  picture: Flower_Spirit_Gold_Bunny_Rod
+  atk: 529
+  int: 532
+  factors:
+    - desc: Damage dealt +15% by Brilliantly Divine Flower
+    - desc: Repel +2
+    - desc: Critical hit chance +5%
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 5
+      lb: 5
+  obtained: Monarch Chimera (Exchange)
+
+- name: Infinity Rod
+  cat: 'jp'
+  star: 5
+  picture: Infinity_Rod
+  atk: 826
+  int: 834
+  factors:
+    - desc: Damage dealt +15% by Sacred Javelin
+    - desc: Evasion AP cost -30%
+    - desc: Repel +1
+      lb: 5
+  obtained: "Lezard / Valkyrie Profile: The Purged Wizard (Achievement, Exchange)"
