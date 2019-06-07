@@ -74,7 +74,7 @@
       meta:
         priority: 4
         buff: AP Recovery From Normal Attacks
-        buffValue: 15
+        buffValue: 30
     - desc: Damage dealt +10%
       lb: 5
       meta:
