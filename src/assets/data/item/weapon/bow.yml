@@ -179,7 +179,7 @@
       lb: 1
     - desc: Additional hit that deals 5% of damage dealt by normal attacks
       lb: 5
-  obtained: Blood Valkyrie (Exchange)
+  obtained: Gacha
   
   notes: >
     This bow is worse than the other one because you might actually pull it from Gacha. It's fodder so try to enjoy the coin it helps
@@ -356,7 +356,7 @@
         buffCondition: Long Range
         buffValue: 10
       lb: 5
-  obtained: Lezard + Blood Valkyrie (Achievement, Exchange)  
+  obtained: "Lezard + Blood Valkyrie / Valkyrie Profile: The Purged Wizard (Achievement)"
   
   
 - name: Silent Killer
