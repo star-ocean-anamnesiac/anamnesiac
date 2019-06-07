@@ -664,3 +664,51 @@
         buffCondition: Casting Symbology
         buffValue: 10
   obtained: G-Imitation Ghost (Exchange)
+
+- name: Happy Candy
+  cat: 'jp'
+  star: 5
+  picture: Happy_Candy
+  atk: 1259
+  int: 1259
+  factors:
+    - desc: Light damage dealt +50%
+      meta:
+        priority: 4
+        buff: Light Damage
+        buffValue: 50
+    - desc: Single target damage +20%
+      meta:
+        priority: 4
+        buff: Single Target Damage
+        buffValue: 20
+    - desc: AP cost -10%
+      lb: 5
+      meta:
+        priority: 3
+        buff: AP Cost Reduction
+        buffValue: 10
+  obtained: Gacha
+
+- name: Black Cat Hands
+  cat: 'jp'
+  star: 5
+  picture: Black_Cat_Hands
+  atk: 1251
+  int: 1262
+  factors:
+    - desc: Damage dealt to machines +60%
+      slayer: Machine
+      slayerPct: 60
+      meta:
+        priority: 4
+        buff: Damage to Machines
+        buffValue: 60
+    - desc: HP +20%
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 20
+    - desc: 80% chance of surviving a lethal attack when at 20% of max HP or more
+      lb: 3
+  obtained: Gacha
