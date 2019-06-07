@@ -750,3 +750,52 @@
         buffValue: 15
       lb: 5
   obtained: Gacha
+
+- name: Raphael
+  cat: 'jp'
+  star: 5
+  picture: Raphael
+  atk: 859
+  int: 861
+  factors:
+    - desc: Damage dealt +20% by Ca Cree des Lumieres
+    - desc: ATK damage taken -10%
+      meta:
+        priority: 3
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+    - desc: AP cost -10
+      meta:
+        priority: 3
+        buff: AP Cost Reduction
+        buffValue: 10
+      lb: 5
+  obtained: Fallen Demon Plant (Exchange)
+
+- name: Gabriel
+  cat: 'jp'
+  star: 5
+  picture: Gabriel
+  atk: 1258
+  int: 1260
+  factors:
+    - desc: Imbues attacks with light
+      element: Light
+    - desc: Light damage dealt +20%
+      meta:
+        priority: 4
+        buff: Light Damage
+        buffValue: 20
+    - desc: ATK damage taken -15%
+      meta:
+        priority: 3
+        buff: ATK Damage Taken Reduction
+        buffValue: 15
+    - desc: INT damage taken -15%
+      meta:
+        priority: 3
+        buff: INT Damage Taken Reduction
+        buffValue: 15
+    - desc: No flinching while attacking 
+      lb: 5
+  obtained: Gacha (Limited)
