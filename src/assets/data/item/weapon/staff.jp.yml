@@ -486,3 +486,86 @@
         buffValue: 10
       lb: 5
   obtained: Gacha
+
+- name: Tiger Head
+  cat: 'jp'
+  star: 5
+  picture: Tiger_Head
+  atk: 957
+  int: 963
+  factors:
+    - desc: Damage dealt to humanoids +40%
+      slayer: Human
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage to Humans
+        buffValue: 40
+    - desc: HP +20%
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 20
+    - desc: AP cost -10%
+      meta:
+        priority: 1
+        buff: AP Cost Reduction
+        buffValue: 10
+    - desc: Recovers 3% of max HP every 5 seconds
+      lb: 3
+  obtained: Transmutation, Coin Exchange
+
+- name: Cloud Conductor
+  cat: 'jp'
+  star: 5
+  picture: Wind_&_Thunder_Cane_Cloud_Conductor
+  atk: 957
+  int: 962
+  factors:
+    - desc: Wind damage dealt +40%
+      meta:
+        priority: 3
+        buff: Wind Damage
+        buffValue: 40
+    - desc: Lightning damage dealt +20%
+      meta:
+        priority: 3
+        buff: Lightning Damage
+        buffValue: 20
+    - desc: 70% chance of surviving a lethal attack when at 20% HP or more        
+    - desc: Stun rate +15%
+      meta:
+        priority: 1
+        buff: Stun Rate
+        buffValue: 15
+      lb: 5
+  obtained: Gacha
+
+- name: Wand "Mystic Sage"
+  cat: 'jp'
+  star: 5
+  picture: Mystic_Sage_Wand
+  atk: 957
+  int: 964
+  factors:
+    - desc: Light damage dealt +40%
+      meta:
+        priority: 4
+        buff: Light Damage
+        buffValue: 40
+    - desc: Damage dealt to humanoids +10%
+      slayer: Human
+      slayerPct: 10
+      meta:
+        priority: 4
+        buff: Damage To Humans
+        buffValue: 10
+    - desc: Stun rate +15%
+      meta:
+        priority: 1
+        buff: Stun Rate
+        buffValue: 15
+    - desc: 70% chance of surviving a lethal attack when at 20% of max HP or more
+      lb: 5   
+  obtained: Gacha
+
