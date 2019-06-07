@@ -1,17 +1,695 @@
+- name: Artifact Bow
+  cat: 'jp'
+  star: 5
+  picture: Artifact_Bow
+  atk: 495
+  int: 0
+  factors:
+    - desc: ATK +15%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 15
+    - desc: Fire damage dealt +10%
+      meta:
+        priority: 4
+        buff: Fire Damage
+        buffValue: 10
+    - desc: Hitcount timer +2 seconds
+      lb: 3
+  obtained: Gacha
+
+- name: God's Bow
+  cat: 'jp'
+  star: 5
+  picture: Godbow_Nuaza
+  atk: 485
+  int: 0
+  factors:
+    - desc: Ice damage dealt +15%
+      meta:
+        priority: 4
+        buff: Ice Damage
+        buffValue: 15
+    - desc: Damage dealt +20% by Heavenly Flight
+  obtained: Transmutation, Coin Exchange, Gacha
 
 - name: Reformed SRF Arrow
-  cat: jp
+  cat: 'jp'
   star: 5
   picture: SRF_Bow_Remodelled
   atk: 477
+  int: 0
   factors:
-    - desc: Imbues attacks with wind element
+    - desc: Imbues attacks with wind
       element: Wind
-    - desc: Rapacious Sparrows damage +20%
-    - desc: Additional hit that deals 5% of damage dealt on normal attacks
+    - desc: Damage dealt +20% by Rapacious Sparrows
+    - desc: Additional hit that deals 5% of damage dealt by normal attacks
       lb: 5
-  obtained: Jie Revorse Exchange
-  
-  notes: >
-    A wind bow intended for Reimi. If you don't have the windburst bow this is very much worth having as an elemental bow. Extra plus
-    plus points on a good Reimi player.
+  obtained: Jie Revorse (Exchange)
+
+- name: Crowned Bow
+  cat: 'jp'
+  star: 5
+  picture: Billowing_Bow
+  atk: 532
+  int: 528
+  factors:
+    - desc: Damage dealt +20% by Howling Wind
+    - desc: Recovers 3% of max HP every 5 seconds
+    - desc: Critical damage dealt +20% when behind target
+      lb: 5
+      meta:
+        priority: 3
+        buff: Crit Damage
+        buffValue: 20
+        buffCondition: Behind Target
+  obtained: Everlasting Summer Siren / Predate Queen (Exchange)
+
+- name: Arc-En-Ciel
+  cat: 'jp'
+  star: 5
+  picture: Arc_En_Ciel
+  atk: 964
+  int: 963
+  factors:
+    - desc: Imbues attacks with lightning
+      element: Lightning
+    - desc: Hitcount Timer +1 second
+    - desc: ATK +20% when behind target
+      lb: 5
+      meta:
+        priority: 3
+        buff: ATK
+        buffValue: 20
+        buffCondition: Behind Target
+  obtained: Gacha
+
+- name: Grand Flared Bow
+  cat: 'jp'
+  star: 5
+  picture: Victory_Bow_Flare_Spread
+  atk: 859
+  int: 862
+  factors:
+    - desc: Damage dealt +30% by Explode
+    - desc: Fire damage dealt +25%
+      meta:
+        priority: 4
+        buff: Fire Damage
+        buffValue: 25
+    - desc: AP recovery +30%
+      lb: 5
+      meta:
+        priority: 4
+        buff: AP Recovery
+        buffValue: 30
+  obtained: Millioneyes / Luin D'Mont (Draw Box)
+
+- name: Shiny Rupture 
+  cat: 'jp'
+  star: 5
+  picture: Shiny_Rupture
+  atk: 476
+  int: 475
+  factors:
+    - desc: Damage dealt +20% by Wave Motion
+      lb: 3
+    - desc: Damage dealt to divinities +10%
+      slayer: Divinity
+      slayerPct: 10
+      lb: 4
+      meta:
+        priority: 4
+        buff: Damage To Divinities
+        buffValue: 10
+    - desc: Additional hit that deals 5% of damage dealt by normal attacks
+      lb: 5
+  obtained: Blood Valkyrie (Exchange)
+
+- name: Shiny Rupture II
+  cat: 'jp'
+  star: 5
+  picture: Shiny_Rupture_II
+  atk: 857
+  int: 856
+  factors:
+    - desc: Damage dealt to divinities +20%
+      slayer: Divinity
+      slayerPct: 20
+      meta:
+        priority: 4
+        buff: Damage To Divinities
+        buffValue: 20
+    - desc: Damage dealt +25% by Wave Motion
+      lb: 1
+    - desc: Additional hit that deals 5% of damage dealt by normal attacks
+      lb: 5
+  obtained: Gacha
+
+- name: Windburst Bow
+  cat: 'jp'
+  star: 5
+  picture: Airblast_Bow
+  atk: 962
+  int: 961
+  factors:
+    - desc: Imbues attacks with wind
+      element: Wind
+    - desc: Recovers 3% of max HP every 5 seconds
+    - desc: Stun rate +15%
+      lb: 5
+      meta:
+        priority: 4
+        buff: Stun Rate
+        buffValue: 15
+  obtained: Gacha
+
+- name: Silent Killer
+  cat: 'jp'
+  star: 5
+  picture: Silent_Shooter
+  atk: 532
+  int: 534
+  factors:
+    - desc: ATK +10%
+      meta:
+        priority: 1
+        buff: ATK
+        buffValue: 10  
+    - desc: Damage dealt to humanoids +25%
+      slayer: Human
+      slayerPct: 25
+      meta:
+        priority: 4
+        buff: Damage To Humans
+        buffValue: 40
+    - desc: Critical hit chance +15%
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffValue: 15
+      lb: 5
+  obtained: Gacha
+
+- name: Dual Stringer
+  cat: 'jp'
+  star: 5
+  picture: Dual_Stringer
+  atk: 959
+  int: 958
+  factors:
+    - desc: ATK damage dealt +15%
+      meta:
+        priority: 1
+        buff: ATK Damage
+        buffValue: 15
+    - desc: Additional hit that deals 10% of damage dealt by normal attacks
+    - desc: 60% chance of surviving a lethal attack when at 20% of max HP or more
+      lb: 5
+  obtained: Gacha
+
+- name: Pink Rose
+  cat: 'jp'
+  star: 5
+  picture: Pink_Rose
+  atk: 532
+  int: 527
+  factors:
+    - desc: Damage dealt +40% by Expelling Rain
+    - desc: Critical hit chance +10%
+      meta:
+        priority: 3
+        buff: Crit Rate
+        buffValue: 10
+    - desc: Hitcount timer +1 second
+      lb: 5
+  obtained: Ocypete Necromancy (Exchange)
+
+- name: Dragoon's Arrow
+  cat: 'jp'
+  star: 5
+  picture: Dragoon's_Arrow
+  atk: 961
+  int: 961
+  factors:
+    - desc: Damage dealt to dragons +40%
+      slayer: Dragon
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Dragons
+        buffValue: 40
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP
+    - desc: Normal attack AP recovery +50% at long range
+      meta:
+        priority: 3
+        buff: AP Recovery From Normal Attacks
+        buffCondition: Long Range
+        buffValue: 50
+      lb: 3
+  obtained: Gacha
+
+- name: Backed Bow 
+  cat: 'jp'
+  star: 5
+  picture: Backed_Bow
+  atk: 861
+  int: 862
+  factors:
+    - desc: Damage dealt +20% by Phoenix Feather
+    - desc: Critical hit chance +10% when hitcount is >100
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffCondition: Hit Count > 100
+        buffValue: 10
+    - desc: Damage dealt to humanoids +10%
+      slayer: Human
+      slayerPct: 10
+      meta:
+        priority: 4
+        buff: Damage To Humans
+        buffValue: 10
+      lb: 5
+  obtained: Beastmaster Venbat / Infinite Undiscovery (Exchange)
+
+- name: Sagittarius
+  cat: 'jp'
+  star: 5
+  picture: Sagittarius
+  atk: 961
+  int: 959
+  factors:
+    - desc: Imbues attacks with fire
+      element: Fire
+    - desc: 70% chance of surviving a lethal attack when at 20% of max HP or more
+    - desc: ATK +10% when hitcount is >100
+      lb: 5
+      meta:
+        priority: 4
+        buff: ATK
+        buffCondition: Hit Count > 100
+        buffValue: 10
+  obtained: Gacha
+
+- name: Earthsoul Bow
+  cat: 'jp'
+  star: 5
+  picture: Earthsoul_Bow
+  atk: 959
+  int: 962
+  factors:
+    - desc: Imbues attacks with earth
+      element: Earth
+    - desc: AP recovery +30%
+      meta:
+        priority: 3
+        buff: AP Recovery
+        buffValue: 30
+    - desc: Single target damage +10%
+      meta:
+        priority: 3
+        buff: Single Target Damage
+        buffValue: 15
+      lb: 5
+  obtained: Gacha
+
+- name: Astral Bow
+  cat: 'jp'
+  star: 5
+  picture: Astral_Bow
+  atk: 512
+  int: 507
+  factors:
+    - desc: Damage dealt +15% by Luna Mirror
+    - desc: Single target damage +15% when hitcount is >100
+      meta:
+        priority: 3
+        buff: Single Target Damage
+        buffValue: 15
+        buffCondition: Hit Count > 100
+    - desc: Evasion AP cost -50%
+      lb: 5
+  obtained: Mother Polyphaga (Exchange) 
+
+- name: Ivory Shooter
+  cat: 'jp'
+  star: 5
+  picture: Ivory_Shooter
+  atk: 506
+  int: 511
+  factors:
+    - desc: Damage dealt +20% by Black Spirit
+    - desc: INT +5%
+      meta:
+        priority: 3
+        buff: INT
+        buffValue: 5
+    - desc: No flinching when casting symbology
+      lb: 5
+  obtained: Josephine (Exchange)
+
+- name: "Dragon Crusher: Zaifreet"
+  cat: 'jp'
+  star: 5
+  picture: Dragon_Crusher_Zaifreet
+  atk: 1260
+  int: 1255
+  factors:
+    - desc: Damage dealt to dragons +40%
+      slayer: Dragon
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Dragons
+        buffValue: 40
+    - desc: AP cost -10%
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 10
+    - desc: Damage taken -10%
+      meta:
+        priority: 3
+        buff: Damage Taken Reduction
+        buffValue: 10
+      lb: 3
+  obtained: Gacha
+
+- name: Lucky Release Bow
+  cat: 'jp'
+  star: 5
+  picture: Lucky_Release_Bow
+  atk: 504
+  int: 511
+  factors:
+    - desc: Damage dealt +20% by Cyclone Bit
+    - desc: Repel +1
+    - desc: Recovers 5% of max HP every 5 seconds
+      lb: 5
+  obtained: Crimson Chariot (Exchange)
+
+- name: Bunny Ravi
+  cat: 'jp'
+  star: 5
+  picture: Bunny_Ravi
+  atk: 1259
+  int: 1263
+  factors:
+    - desc: Imbues attacks with wind
+      element: Wind
+    - desc: Wind damage dealt +20%   
+      meta:
+        priority: 4
+        buff: Wind Damage
+        buffValue: 20
+    - desc: 70% chance of surviving a lethal attack when at 20% of max HP or more
+    - desc: ATK damage taken -15%
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffValue: 15
+      lb: 5
+  obtained: Gacha
+
+- name: Gold-horned Bow
+  cat: 'jp'
+  star: 5
+  picture: Horn_of_Gold
+  atk: 961
+  int: 961
+  factors:
+    - desc: Damage dealt to beasts +40%
+      slayer: Beast
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Beasts
+        buffValue: 40
+    - desc: No flinching when taking damage of 10% of max HP or less
+    - desc: ATK damage dealt +20% when hitcount is >100
+      meta:
+        priority: 3
+        buff: ATK Damage
+        buffCondition: Hit Count > 100
+        buffValue: 20
+      lb: 3
+  obtained: Gacha
+
+- name: Heaven's Bow
+  cat: 'jp'
+  star: 5
+  picture: Halo_Stringer
+  atk: 958
+  int: 963
+  factors:
+    - desc: Imbues attacks with light
+      element: Light
+    - desc: Light damage dealt +20%   
+      meta:
+        priority: 4
+        buff: Light Damage
+        buffValue: 20
+    - desc: AP cost -10%
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 10
+    - desc: 80% chance of surviving a lethal attack when at 20% of max HP or more
+      lb: 5
+  obtained: Gacha
+
+- name: Divine Elven Bow
+  cat: 'jp'
+  star: 5
+  picture: Divinity_Bow_Elven_Bow
+  atk: 965
+  int: 961
+  factors:
+    - desc: Imbues attacks with light
+      element: Light
+    - desc: Light damage dealt +20%
+      meta:
+        priority: 3
+        buff: Light Damage
+        buffValue: 20
+    - desc: ATK damage taken -15%
+      meta:
+        priority: 3
+        buff: ATK Damage Taken Reduction
+        buffValue: 15
+      lb: 5
+  obtained: Gacha 
+
+- name: Crimson Blossom Bow
+  cat: 'jp'
+  star: 5
+  picture: Frozen_Bow_Crimson_Purity_Flower
+  atk: 962
+  int: 957
+  factors:
+    - desc: Imbues attacks with ice
+      element: Ice
+    - desc: AP recovery +50%
+      meta:
+        priority: 3
+        buff: AP Recovery
+        buffValue: 50
+    - desc: Additional hit that deals 10% of damage dealt by normal attacks
+      lb: 5
+  obtained: Gacha 
+
+- name: Ebony Stringer
+  cat: 'jp'
+  star: 5
+  picture: Ebony_Stringer
+  atk: 956
+  int: 960
+  factors:
+    - desc: Imbues attacks with dark
+      element: Dark
+    - desc: Dark damage dealt +20%
+      meta:
+        priority: 3
+        buff: Dark Damage
+        buffValue: 20
+    - desc: 70% chance of surviving a lethal attack when at 20% of max HP or more
+    - desc: Recovers 5% of max HP every 3 seconds
+      lb: 5
+  obtained: Gacha
+
+- name: Floral Ceremonial Bow
+  cat: 'jp'
+  star: 5
+  picture: Floral_Ceremonial_Bow
+  atk: 1113
+  int: 1107
+  factors:
+    - desc: Imbues attacks with light
+      element: Light
+    - desc: Light damage dealt +20%
+      meta:
+        priority: 3
+        buff: Light Damage
+        buffValue: 20
+    - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
+    - desc: Critical hit chance +15%
+      meta:
+        priority: 3
+        buff: Crit Rate
+        buffValue: 15
+      lb: 5
+  obtained: Gacha  
+
+- name: Hologram_Bow
+  cat: 'jp'
+  star: 5
+  picture: Hologram_Bow
+  atk: 1261
+  int: 1261
+  factors:
+    - desc: Imbues attacks with lightning
+      element: Lightning
+    - desc: AP cost -10%
+      meta:
+        priority: 3
+        buff: AP Cost Reduction
+        buffValue: 10
+    - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
+      lb: 5
+  obtained: Gacha  
+
+- name: Shiny Stinger
+  cat: 'jp'
+  star: 5
+  picture: Shiny_Stinger
+  atk: 1263
+  int: 1263
+  factors:
+    - desc: Imbues attacks with light
+      element: Light
+    - desc: Light damage dealt +30%
+      meta:
+        priority: 3
+        buff: Light Damage
+        buffValue: 30
+    - desc: Normal attack AP recovery +50%
+      meta:
+        priority: 3
+        buff: AP Recovery From Normal Attacks
+        buffValue: 50
+    - desc: ATK +5%
+      meta:
+        priority: 3
+        buff: ATK
+        buffValue: 5
+      lb: 5
+  obtained: Gacha  
+
+- name: Reincarnation
+  cat: 'jp'
+  star: 5
+  picture: Reincarnation
+  atk: 857
+  int: 863
+  factors:
+    - desc: Damage dealt +15% by Heaven's Judgement
+    - desc: Recovers 3% of max HP every 5 seconds at long range
+    - desc: AP recovery +30% at long range
+      meta:
+        priority: 3
+        buff: AP Recovery
+        buffValue: 30
+        buffCondition: Long Range
+      lb: 5
+  obtained: Knight Exile / FFBE (Draw Box)
+
+- name: Flarecast Bow 
+  cat: 'jp'
+  star: 5
+  picture: Flarecast_Bow
+  atk: 527
+  int: 533
+  factors:
+    - desc: Damage dealt +20% by Volcanic Burst
+    - desc: INT +5%
+      meta:
+        priority: 4
+        buff: INT
+        buffValue: 5
+    - desc: Fire damage dealt +20%
+      lb: 5
+      meta:
+        priority: 4
+        buff: Fire Damage
+        buffValue: 20
+    - desc: Ice damage dealt +15%
+      lb: 5
+      meta:
+        priority: 4
+        buff: Ice Damage
+        buffValue: 15
+  obtained: Prince Claude / Uniform Claude (Exchange)
+
+- name: Flame Soul Shooter
+  cat: 'jp'
+  star: 5
+  picture: Flame_Soul_Shooter
+  atk: 958
+  int: 960
+  factors:
+    - desc: Imbues attacks with fire
+      element: Fire
+    - desc: Normal attack AP recovery +50%
+      meta:
+        priority: 3
+        buff: AP Recovery From Normal Attacks
+        buffValue: 50
+    - desc: Recovers 3% of max HP every 5 seconds
+      lb: 5
+  obtained: Coin Exchange
+
+- name: Vermin Shooter
+  cat: 'jp'
+  star: 5
+  picture: Vermin_Shooter
+  atk: 1260
+  int: 1260
+  factors:
+    - desc: Damage dealt to insects +60%
+      slayer: Insect
+      slayerPct: 60
+      meta:
+        priority: 4
+        buff: Damage To Insects
+        buffValue: 60
+    - desc: 
+    - desc: ATK/INT damage dealt +15%
+      meta:
+        priority: 3
+        buffs:
+          - ATK Damage
+          - INT Damage
+        buffValue: 15
+    - desc: Recovers 10% of max HP every 3 seconds
+      lb: 3
+  obtained: Gacha
+
+- name: Bow of Fate, Mistilteinn
+  cat: 'jp'
+  star: 5
+  picture: Life_Bow_Misteltein
+  atk: 835
+  int: 826
+  factors:
+    - desc: Damage dealt +20% by Killing Thorn
+    - desc: Repel +1   
+    - desc: Critical hit chance +10% at long range
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffCondition: Long Range
+        buffValue: 10
+      lb: 5
+  obtained: "Lezard + Blood Valkyrie / Valkyrie Profile: The Purged Wizard (Achievement)"
