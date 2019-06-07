@@ -1,23 +1,85 @@
+- name: Blue Star Gadget
+  cat: 'jp'
+  star: 5
+  picture: Bluestar_Gadget
+  atk: 507
+  int: 510
+  factors:
+    - desc: INT +15%
+      meta:
+        priority: 4
+        buff: INT
+        buffValue: 15
+    - desc: Damage taken -10%
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffValue: 15
+    - desc: Recovers 10% of max HP every 3 seconds
+      lb: 5
+  obtained: Coin Exchange, Gacha
+
+- name: Craggy Gem
+  cat: 'jp'
+  star: 5
+  picture: Rumbling_Gem
+  atk: 648
+  int: 651
+  factors:
+    - desc: Multiple target damage +15%
+      meta:
+        priority: 4
+        buff: Multiple Target Damage
+        buffValue: 15
+    - desc: Normal attack AP recovery +30%
+      meta:
+        priority: 4
+        buff: AP Recovery From Normal Attacks
+        buffValue: 30
+    - desc: Damage dealt +10%
+      lb: 5
+      meta:
+        priority: 4
+        buff: Damage
+        buffValue: 10
+  obtained: Coin Exchange, Gacha
+
+- name: Ocean's Eye
+  cat: 'jp'
+  star: 5
+  picture: Beach_Sphere
+  atk: 529
+  int: 532
+  factors:
+    - desc: Damage dealt +20% by Lightning Blast
+    - desc: Single target damage +10%
+      meta:
+        priority: 4
+        buff: Single Target Damage
+        buffValue: 10
+    - desc: 60% chance of surviving a lethal attack when at 20% of max HP or more
+      lb: 5
+  obtained: Millioneyes / Luin D'Mont (Exchange)
 
 - name: Blackseed Watermelon Orb
-  cat: jp
+  cat: 'jp'
   star: 5
   picture: Black_Thunder_Watermelon_Ball
   atk: 959
   int: 965
   factors:
-    - desc: Lightning damage +30%
+    - desc: Lightning damage dealt +30%
       meta:
         priority: 4
         buff: Lightning Damage
         buffValue: 30
-    - desc: Dark damage +30%
+    - desc: Dark damage dealt +30%
       meta:
         priority: 4
         buff: Dark Damage
         buffValue: 30
-    - desc: 80% chance to survive a lethal attack when HP is greater than 10%
-    - desc: Damage taken -30% at less than 50% HP
+    - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
+    - desc: Damage taken -30% when under 50% of max HP
       lb: 5
       meta:
         priority: 3
@@ -25,7 +87,514 @@
         buffValue: 30
         buffCondition: HP < 50%
   obtained: Gacha
-  
-  notes: >
-    An incredible weapon. Good for both Summer Sophia and Fiore due to it's dual element boost. It has very good defensive factors on it
-    with grit being strong on a healer like Summer Sophia in particular. Keep it if you pull it.
+
+- name: Evil Pumpkin
+  cat: 'jp'
+  star: 5
+  picture: Magic_Lantern_Southern_Melon_Sphere
+  atk: 956
+  int: 963
+  factors:
+    - desc: Elemental damage dealt +20%
+      meta:
+        priority: 4
+        buff: Elemental Damage
+        buffValue: 20
+    - desc: Damage dealt to plants +30%
+      slayer: Plant
+      slayerPct: 30
+      meta:
+        priority: 4
+        buff: Damage To Plants
+        buffValue: 30
+    - desc: Critical hit chance +10%
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 10
+    - desc: Critical damage dealt +10%
+      meta:
+        priority: 4
+        buff: Crit Damage
+        buffValue: 10
+    - desc: Recovers 5% of max HP every 3 seconds
+      lb: 3
+  obtained: Gacha
+
+- name: Black Geared Globe
+  cat: 'jp'
+  star: 5
+  picture: Black_Globe_Sphere
+  atk: 960
+  int: 962
+  factors:
+    - desc: Dark damage dealt +40%
+      meta:
+        priority: 4
+        buff: Dark Damage
+        buffValue: 40
+    - desc: Damage dealt to divinities +10% 
+      slayer: Divinity
+      slayerPct: 10
+      meta:
+        priority: 4
+        buff: Damage To Divinities
+        buffValue: 10
+    - desc: Critical hit chance +10%
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 10
+    - desc: Critical damage dealt +10%
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 10
+    - desc: 80% chance of surviving a lethal attack when at 20% of max HP or more
+      lb: 5
+  obtained: Gacha
+
+- name: Langdauq Orb
+  cat: 'jp'
+  star: 5
+  picture: Langdauq_Orb
+  atk: 528
+  int: 533
+  factors:
+    - desc: Damage dealt +20% by Extinction
+    - desc: Critical hit chance +10%
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 10
+    - desc: Normal attack AP recovery +50%
+      lb: 5
+      meta:
+        priority: 4
+        buff: AP Recovery From Normal Attacks
+        buffValue: 50
+  obtained: Transmogrified Alma (Exchange)
+
+- name: Cosmic Glass
+  cat: 'jp'
+  star: 5
+  picture: Cosmic_Glass
+  atk: 508
+  int: 513
+  factors:
+    - desc: Damage dealt +15% by Seventh Star
+    - desc: Repel +1
+    - desc: Normal attack AP recovery +30%
+      lb: 5
+      meta:
+        priority: 4
+        buff: AP Recovery From Normal Attacks
+        buffValue: 30
+  obtained: Monarch Zinae (Exchange)
+
+- name: Beast Sphere
+  cat: 'jp'
+  star: 5
+  picture: Beast_Sphere
+  atk: 957
+  int: 962
+  factors:
+    - desc: Damage dealt to beasts +40% 
+      slayer: Beast
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Beasts
+        buffValue: 40
+    - desc: Stun rate +20%
+      meta:
+        priority: 1
+        buff: Stun Rate
+        buffValue: 20
+    - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
+      lb: 3
+  obtained: Gacha
+
+- name: Ether Laser
+  cat: 'jp'
+  star: 5
+  picture: Vessel_of_Light_Ether_Laser
+  atk: 962
+  int: 964
+  factors:
+    - desc: Light damage dealt +40%
+      meta:
+        priority: 4
+        buff: Light Damage
+        buffValue: 40
+    - desc: Non-light elemental damage dealt +20% 
+      meta:
+        priority: 4    
+        buffs:
+          - Dark Damage
+          - Fire Damage
+          - Ice Damage
+          - Lightning Damage
+          - Earth Damage
+          - Wind Damage
+        buffValue: 20          
+    - desc: INT +5%
+      meta:
+        priority: 4
+        buff: INT
+        buffValue: 5
+    - desc: INT damage dealt +10% at long range
+      meta:
+        priority: 4
+        buff: INT Damage
+        buffCondition: Long Range
+        buffValue: 10
+      lb: 5
+  obtained: Gacha
+
+- name: Hades Pumpkin
+  cat: 'jp'
+  star: 5
+  picture: Hades_Pumpkin
+  atk: 857
+  int: 862
+  factors:
+    - desc: Damage dealt +30% by F. Dystopia
+    - desc: Dark damage dealt +25%
+      meta:
+        priority: 4
+        buff: Dark Damage
+        buffValue: 25
+    - desc: AP recovery +30%
+      lb: 5
+      meta:
+        priority: 4
+        buff: AP Recovery
+        buffValue: 30
+  obtained: Coin Exchange
+
+- name: Funeral Ghast
+  cat: 'jp'
+  star: 5
+  picture: Funeral_Ghast
+  atk: 1106
+  int: 1112
+  factors:
+    - desc: Imbues attacks with wind
+      element: Wind
+    - desc: Wind damage dealt +40%
+      meta:
+        priority: 4
+        buff: Wind Damage
+        buffValue: 40          
+    - desc: AP Recovery +50%
+      meta:
+        priority: 4
+        buff: AP Recovery
+        buffValue: 50
+    - desc: 80% chance of surviving a lethal attack when at 20% of max HP or more
+      lb: 5
+  obtained: Gacha
+
+- name: Deformation_Gear
+  cat: 'jp'
+  star: 5
+  picture: Deformation_Gear
+  atk: 506
+  int: 512
+  factors:
+    - desc: Damage dealt +2o% by Heroic Spark
+    - desc: Critical hit chance +10%
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 10
+    - desc: Damage taken -10%
+      lb: 5
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffValue: 10
+  obtained: Beast Kid (Exchange)
+
+- name: "Electromagnetic Mecha: DenDen"
+  cat: 'jp'
+  star: 5
+  picture: Electromagnetic_Mecha_DenDen
+  atk: 1256
+  int: 1261
+  factors:
+    - desc: Imbues attacks with lightning
+      element: Lightning
+    - desc: Lightning damage dealt +40%
+      meta:
+        priority: 4
+        buff: Lightning Damage
+        buffValue: 40          
+    - desc: Hitcount timer +1 second
+    - desc: Recovers 5% of max HP every 3 seconds
+      lb: 5
+  obtained: Gacha
+
+- name: Luster Orb
+  cat: 'jp'
+  star: 5
+  picture: Luster Orb
+  atk: 1257
+  int: 1262
+  factors:
+    - desc: Imbues attacks with light
+      element: Light
+    - desc: Light damage dealt +40%
+      meta:
+        priority: 4
+        buff: Light Damage
+        buffValue: 40          
+    - desc: Rush combo damage +10%
+    - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
+      lb: 5
+  obtained: Gacha
+
+- name: SOA Hologram
+  cat: 'jp'
+  star: 5
+  picture: SOA_Hologram
+  atk: 1258
+  int: 1259
+  factors:
+    - desc: Damage dealt to demons +40% 
+      slayer: Demon
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Demons
+        buffValue: 40
+    - desc: INT +5%
+      meta:
+        priority: 4
+        buff: INT
+        buffValue: 5
+    - desc: Recovers 10% of max HP every 3 seconds
+      lb: 3
+  obtained: Gacha
+
+- name: Raven Orb
+  cat: 'jp'
+  star: 5
+  picture: Raven's_Orb
+  atk: 958
+  int: 961
+  factors:
+    - desc: Ice damage dealt +40%
+      meta:
+        priority: 4
+        buff: Ice Damage
+        buffValue: 40
+    - desc: Dark damage dealt +20%
+      meta:
+        priority: 4
+        buff: Dark Damage
+        buffValue: 20
+    - desc: Critical hit chance +10%
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 10
+    - desc: Critical damage dealt +15%
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 15
+    - desc: Stun rate +10%
+      lb: 3
+      meta:
+        priority: 1
+        buff: Stun Rate
+        buffValue: 10
+  obtained: Gacha
+
+- name: Satan's Star
+  cat: 'jp'
+  star: 5
+  picture: Satan's_Star
+  atk: 507
+  int: 511
+  factors:
+    - desc: Damage dealt +20% by Magnum Tornado
+    - desc: Critical damage dealt +10%
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 10
+    - desc: Recovers 3% of max HP every 5 seconds
+      lb: 5
+  obtained: Dimension Beast (Exchange)
+
+- name: Very Sweet Sphere
+  cat: 'jp'
+  star: 5
+  picture: Very_Sweet_Sphere
+  atk: 527
+  int: 532
+  factors:
+    - desc: Damage dealt +20% by Phantom Blade
+    - desc: Additional hit that deals 10% of damage dealt by normal attacks
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP
+      lb: 5
+  obtained: Squelette de Chocolat (Exchange)
+
+- name: Queen's Heart
+  cat: 'jp'
+  star: 5
+  picture: Queen's_Heart
+  atk: 1250
+  int: 1265
+  factors:
+    - desc: Imbues attacks with earth
+      element: Earth
+    - desc: Earth damage dealt +40% 
+      meta:
+        priority: 4
+        buff: Earth Damage
+        buffValue: 40
+    - desc: 80% chance of surviving a lethal attack when at 20% of max HP or more
+    - desc: Stun rate +20%
+      meta:
+        priority: 1
+        buff: Stun Rate
+        buffValue: 20
+      lb: 5
+  obtained: Gacha
+
+- name: Maneater Gadget
+  cat: 'jp'
+  star: 5
+  picture: Maneater_Gadget
+  atk: 1256
+  int: 1262
+  factors:
+    - desc: Damage dealt to humanoids +60% 
+      slayer: Human
+      slayerPct: 60
+      meta:
+        priority: 4
+        buff: Damage To Humans
+        buffValue: 60
+    - desc: Recovers 10% of max HP every 3 seconds
+    - desc: Rush combo damage +20%
+      lb: 5
+  obtained: Gacha
+
+- name: Amber Sphere
+  cat: 'jp'
+  star: 5
+  picture: Amber_Sphere
+  atk: 508
+  int: 510
+  factors:
+    - desc: Damage dealt +20% by Thunder Bolt
+    - desc: Damage dealt +10%
+      meta:
+        priority: 4
+        buff: Damage
+        buffValue: 10
+    - desc: Recovers 3% of max HP every 5 seconds
+      lb: 5
+  obtained: Hell Schutzer (Exchange)
+
+- name: Vessel of Truth, Etherlight
+  cat: 'jp'
+  star: 5
+  picture: True_Vessel_Etherlight
+  atk: 832
+  int: 834
+  factors:
+    - desc: Damage dealt +15% by Heavenly Punishment
+    - desc: Normal attack AP recovery +30% at short range
+      meta:
+        priority: 4
+        buff: AP Recovery From Normal Attacks
+        buffCondition: Short Range
+        buffValue: 30
+    - desc: Damage dealt to humanoids +10% 
+      slayer: Human
+      slayerPct: 10
+      meta:
+        priority: 4
+        buff: Damage To Humans
+        buffValue: 10        
+      lb: 5
+  obtained: "Lezard + Blood Valkyrie / Valkyrie Profile: The Purged Wizard (Achievement)"
+
+- name: Insect Planet
+  cat: 'jp'
+  star: 5
+  picture: Insect_Planet
+  atk: 955
+  int: 960
+  factors:
+    - desc: Damage dealt to insects +40% 
+      slayer: Insect
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Insects
+        buffValue: 40
+    - desc: Recovers 10% of max HP every 5 seconds
+    - desc: Stun rate +20%
+      meta:
+        priority: 1
+        buff: Stun Rate
+        buffValue: 20
+      lb: 3
+  obtained: Gacha
+
+- name: Circus Ball
+  cat: 'jp'
+  star: 5
+  picture: Circus_Ball
+  atk: 532
+  int: 528
+  factors:
+    - desc: Damage dealt +20% by Papapa Splash
+    - desc: ATK damage dealt +30% when hitcount is >100
+      meta:
+        priority: 4
+        buff: ATK Damage
+        buffCondition: Hit Count > 100
+        buffValue: 30
+    - desc: ATK damage taken -10%
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffValue: 10        
+      lb: 5
+  obtained: Crimson Dalvaros (Achievement, Exchange)
+
+- name: Acrobatic Bunny
+  cat: 'jp'
+  star: 5
+  picture: Acrobatic_Bunny
+  atk: 1263
+  int: 1256
+  factors:
+    - desc: Imbues attacks with ice
+      element: Ice
+    - desc: Ice damage dealt +50% 
+      meta:
+        priority: 4
+        buff: Ice Damage
+        buffValue: 50
+    - desc: Critical hit chance +30% when hitcount is >100
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffCondition: Hit Count > 100
+        buffValue: 30
+    - desc: AP cost -15%
+      meta:
+        priority: 1
+        buff: AP Cost Reduction
+        buffValue: 15
+      lb: 3
+  obtained: Gacha
