@@ -799,3 +799,84 @@
     - desc: No flinching while attacking 
       lb: 5
   obtained: Gacha (Limited)
+
+- name: Blossom Blaster
+  cat: 'jp'
+  star: 5
+  picture: Floral_Shooter
+  atk: 531
+  int: 530
+  factors:
+    - desc: Damage dealt +20% by Thorned Burst
+    - desc: Recover 3% of max HP every 5 seconds
+    - desc: Hitcount timer +1 second
+      lb: 5
+  obtained: Giant Prismoid (Exchange)
+
+- name: Icicle Blow
+  cat: 'jp'
+  star: 5
+  picture: Icicle_Blow
+  atk: 1260
+  int: 1258
+  factors:
+    - desc: Imbues attacks with ice
+      element: Ice
+    - desc: Ice damage dealt +40%
+      meta:
+        priority: 4
+        buff: Ice Damage
+        buffValue: 40
+    - desc: ATK damage taken -10%
+      meta:
+        priority: 3
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+    - desc: Stun rate +20% when not behind target
+      meta:
+        priority: 1
+        buff: Stun Rate
+        buffCondition: Not Behind Target
+        buffValue: 20
+      lb: 5
+  obtained: Gacha
+
+- name: Custom Built P. Gun
+  cat: 'jp'
+  star: 5
+  picture: Custom_Built_P_Gun
+  atk: 531
+  int: 530
+  factors:
+    - desc: "Damage dealt +20% by Platoon: Blast"
+    - desc: AP recovery +30%
+      meta:
+        priority: 3
+        buff: AP Recovery
+        buffValue: 30
+    - desc: 60% chance of surviving a lethal attack when at 20% of max HP or more
+      lb: 5
+  obtained: Fortress Scissors (Exchange)
+
+- name: Chrono Laser Gun
+  cat: 'jp'
+  star: 5
+  picture: Chrono_Laser_Gun
+  atk: 1261
+  int: 1260
+  factors:
+    - desc: Imbues attacks with wind
+      element: Wind
+    - desc: Wind damage dealt +40%
+      meta:
+        priority: 4
+        buff: Wind Damage
+        buffValue: 40
+    - desc: AP recovery +50%
+      meta:
+        priority: 3
+        buff: AP Recovery
+        buffValue: 50
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP
+      lb: 5
+  obtained: Gacha
