@@ -103,7 +103,7 @@
         priority: 4
         buff: ATK Damage Taken Reduction
         buffValue: 10
-  obtained: Geared Wisp / NieR (Exchange, Event)
+  obtained: Geared Wisp / NieR (Achievement, Exchange)
 
   notes: >
     If you didn't get beastlord, this is probably the best pick for your A2 unless you prefer the extra sustain of Durandal. Boosting
@@ -167,9 +167,9 @@
       lb: 5
       meta:
         priority: 4
-        buff: ATK Damage Taken Reduction
+        buff: Single Target Damage
         buffValue: 10
-  obtained: Ballistic Rhino / Valkyrie Profile 2 (Achievement)  
+  obtained: "Ballistic Rhino / Valkyrie Profile: The Purged Wizard (Achievement)"  
   
 
 - name: Magnifying Blade
