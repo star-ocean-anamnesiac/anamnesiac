@@ -569,3 +569,48 @@
       lb: 5   
   obtained: Gacha
 
+- name: "Golden Staff: Winged Baton"
+  cat: 'jp'
+  star: 5
+  picture: Golden_Staff_Winged_Baton
+  atk: 1106
+  int: 1110
+  factors:
+    - desc: Damage dealt to plants +40%
+      slayer: Plant
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage to Plants
+        buffValue: 40
+    - desc: No flinching when casting symbology
+    - desc: INT +5%
+      meta:
+        priority: 4
+        buff: INT
+        buffValue: 5
+      lb: 3
+  obtained: Gacha
+
+- name: Insect Break
+  cat: 'jp'
+  star: 5
+  picture: Insect_Break
+  atk: 1255
+  int: 1257
+  factors:
+    - desc: Damage dealt to insects +40%
+      slayer: Insect
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage to Insects
+        buffValue: 40
+    - desc: Repel +1
+    - desc: INT +5%
+      meta:
+        priority: 4
+        buff: INT
+        buffValue: 5
+      lb: 3
+  obtained: Gacha
