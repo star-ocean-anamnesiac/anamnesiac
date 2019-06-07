@@ -28,7 +28,7 @@
         buff: ATK
         buffValue: 15
     - desc: Absorbs 10% of damage dealt by normal attacks as HP
-    - desc: Additional hit that deals 5% damage during normal attcks
+    - desc: Additional hit that deals 5% of damage dealt by normal attcks
       lb: 3
   obtained: Gacha, Coin Exchange
   
@@ -155,7 +155,7 @@
       meta:
         priority: 4
         buff: AP Recovery From Normal Attacks
-        buffValue: 20
+        buffValue: 100
     - desc: Absorbs 5% of damage dealt by normal attacks as HP
       lb: 5
   obtained: Gacha
