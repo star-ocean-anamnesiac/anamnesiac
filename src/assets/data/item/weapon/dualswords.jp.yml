@@ -1,7 +1,46 @@
+- name: Dual Flames
+  cat: 'jp'
+  star: 4
+  picture: Dual_Flames
+  atk: 471
+  int: 466
+  factors:
+    - desc: Imbues attacks with fire
+      element: Fire
+    - desc: Single target damage +10%
+      meta:
+        priority: 4
+        buff: Single Target Damage
+        buffValue: 10
+  obtained: Transmutation, Gacha
 
+- name: Luminous Slicers
+  cat: 'jp'
+  star: 5
+  picture: Luminous_Slicers
+  atk: 652
+  int: 649
+  factors:
+    - desc: Multiple target damage +15%
+      meta:
+        priority: 4
+        buff: Multiple Target Damage
+        buffValue: 15
+    - desc: AP recovery +10%
+      meta:
+        priority: 4
+        buff: AP Recovery
+        buffValue: 10
+    - desc: ATK damage taken -10%
+      lb: 5
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+  obtained: Gacha, Coin Exchange, Transmutation
 
 - name: Baphomet's Blades
-  cat: jp
+  cat: 'jp'
   star: 5
   picture: Baphomet's_Blades
   atk: 515
@@ -12,12 +51,533 @@
         priority: 4
         buff: ATK
         buffValue: 15
-    - desc: Receive 10% of damage dealt as HP during normal attacks
-    - desc: Additional hit that deals 5% damage of normal attack
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP
+    - desc: Additional hit that deals 5% damage during normal attcks
       lb: 3
-  obtained: Gacha / Dual Blade Coin Exchange
-  
-  notes: >
-    The best dual swords in the neutral slot currently. Attack scaling, helps make up for the lack of stats, the life steal is nice for
-    sustain and the third factor is a nice damage bonus that has synergy with the second factor. Very good to pick up from the coin
-    shop.
+  obtained: Gacha, Coin Exchange
+
+- name: Twin Flying Daggers
+  cat: 'jp'
+  star: 5
+  picture: Twin_Feather_Daggers
+  atk: 532
+  int: 527
+  factors:
+    - desc: Damage dealt +20% by Hazy Wheel
+    - desc: Single target damage +10% when HP is 100%
+      meta:
+        priority: 3
+        buff: Single Target Damage
+        buffValue: 10
+        buffCondition: At 100% HP
+    - desc: Hitcount timer +1 second
+      lb: 5
+  obtained: Pumpkin Cryptvine (Exchange)
+
+- name: Crimson Forked Tridents
+  cat: 'jp'
+  star: 5
+  picture: Crimson_Forked_Swords
+  atk: 963
+  int: 956
+  factors:
+    - desc: Imbues attacks with light
+      element: Light
+    - desc: Critical hit chance +10%
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 10
+    - desc: Critical damage dealt +15%
+      meta:
+        priority: 4
+        buff: Crit Damage
+        buffValue: 15
+    - desc: AP recovery +30%
+      lb: 5
+      meta:
+        priority: 4
+        buff: AP Recovery
+        buffValue: 30
+  obtained: Gacha
+
+- name: Twin Snowswords
+  cat: 'jp'
+  star: 5
+  picture: Twin_Snowswords
+  atk: 512
+  int: 507
+  factors:
+    - desc: Damage dealt +20% by Helix Blade
+    - desc: Recovers 5% of max HP every 3 seconds
+    - desc: INT damage taken -15% when hitcount is >50
+      lb: 5
+      meta:
+        priority: 3
+        buff: INT Damage Taken Reduction
+        buffValue: 15
+        buffCondition: Hit Count > 50
+  obtained: Christmas Horndevil (Exchange)
+
+- name: Twin Coro Swords
+  cat: 'jp'
+  star: 5
+  picture: Twin_Koro_Edge
+  atk: 964
+  int: 956
+  factors:
+    - desc: Imbues attacks with ice
+      element: Ice
+    - desc: Normal attack AP recovery +100%
+      meta:
+        priority: 4
+        buff: AP Recovery From Normal Attacks
+        buffValue: 100
+    - desc: Absorbs 5% of damage dealt by normal attacks as HP
+      lb: 5
+  obtained: Gacha
+
+- name: Storm Cancer
+  cat: 'jp'
+  star: 5
+  picture: Storm_Cancer
+  atk: 962
+  int: 957
+  factors:
+    - desc: Imbues attacks with wind
+      element: Wind
+    - desc: Wind damage dealt +15%
+      meta:
+        priority: 3
+        buff: Wind Damage
+        buffValue: 15
+    - desc: Recovers 5% of max HP every 3 seconds
+    - desc: Critical hit chance +10%
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffValue: 10
+    - desc: Critical damage dealt +20%
+      meta:
+        priority: 4
+        buff: Crit Damage
+        buffValue: 20
+      lb: 5
+  obtained: Gacha
+
+- name: Griffons
+  cat: 'jp'
+  star: 5
+  picture: Dual_Heavenly_Blades_Griffon
+  atk: 963
+  int: 956
+  factors:
+    - desc: Damage dealt to humanoids +40%
+      slayer: Human
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Humans
+        buffValue: 40
+    - desc: Normal attack AP recovery +100%
+      meta:
+        priority: 4
+        buff: AP Recovery From Normal Attacks
+        buffValue: 100
+    - desc: No flinching when attacking
+      lb: 3
+  obtained: Gacha
+
+- name: "Godflame Swords: Mikahayahinokami"
+  cat: 'jp'
+  star: 5
+  picture: Godflame_Swords_Mikahayahinokami
+  atk: 962
+  int: 957
+  factors:
+    - desc: Imbues attacks with fire
+      element: Fire
+    - desc: Critical hit chance +10%
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffValue: 10
+    - desc: Critical damage dealt +15%
+      meta:
+        priority: 4
+        buff: Crit Damage
+        buffValue: 15
+    - desc: AP recovery +50%
+      meta:
+        priority: 4
+        buff: AP Recovery
+        buffValue: 50
+      lb: 5
+  obtained: Gacha  
+
+- name: Chicken Slicers
+  cat: 'jp'
+  star: 5
+  picture: Chicken_Slicers
+  atk: 1111
+  int: 1105
+  factors:
+    - desc: Damage dealt to birds +40%
+      slayer: Bird
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Birds
+        buffValue: 40
+    - desc: Normal attack AP recovery +100%
+      meta:
+        priority: 4
+        buff: AP Recovery From Normal Attacks
+        buffValue: 100
+    - desc: Damage dealt +15%
+      meta:
+        priority: 3
+        buff: Damage
+        buffValue: 15
+      lb: 3
+  obtained: Gacha
+
+- name: "Crimson Water Swords: Sweet Angle"
+  cat: 'jp'
+  star: 5
+  picture: Crimson_Water_Swords_Sweet_Angle
+  atk: 1262
+  int: 1259
+  factors:
+    - desc: Imbues attacks with ice
+      element: Ice
+    - desc: Ice damage dealt +15%
+      meta:
+        priority: 3
+        buff: Ice Damage
+        buffValue: 15
+    - desc: ATK damage taken -15% at short range
+      meta:
+        priority: 3
+        buff: ATK Damage Taken Reduction
+        buffCondition: Short Range
+        buffValue: 15
+    - desc: ATK damage dealt +10%
+      meta:
+        priority: 4
+        buff: ATK Damage
+        buffValue: 10
+      lb: 5
+  obtained: Gacha  
+
+- name: Thunderstrike Twinblades
+  cat: 'jp'
+  star: 5
+  picture: Raigeki_Twin_Blades
+  atk: 1261
+  int: 1258
+  factors:
+    - desc: Imbues attacks with lightning
+      element: Lightning
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP
+    - desc: ATK damage taken -15%
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffValue: 15
+      lb: 5
+  obtained: Gacha
+
+- name: Double Bludgeoners
+  cat: 'jp'
+  star: 5
+  picture: Double_Masher
+  atk: 532
+  int: 529
+  factors:
+    - desc: Damage dealt +50% by Piercing Swords
+    - desc: Damage dealt +15% when HP is 100%
+      meta:
+        priority: 3
+        buff: Damage
+        buffValue: 15
+        buffCondition: HP = 100%
+    - desc: 50% chance of surviving a lethal attack when at 15% of max HP or more
+      lb: 5
+  obtained: Monarch Zinae (Exchange)
+
+- name: Twin Blades of Light
+  cat: 'jp'
+  star: 5
+  picture: Twin_Blades_of_Light
+  atk: 533
+  int: 526
+  factors:
+    - desc: Damage dealt +20% by Helm Break
+    - desc: 60% chance of surviving a lethal attack when at 10% of max HP or more
+    - desc: HP +10%
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 10
+      lb: 5
+  obtained: Hell Schutzer (Exchange)
+
+- name: Crag Braver
+  cat: 'jp'
+  star: 5
+  picture: Crag_Braver
+  atk: 650
+  int: 649
+  factors:
+    - desc: Imbues attacks with earth
+      element: Earth
+    - desc: Critical hit chance +15% when behind target
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffCondition: Behind Target
+        buffValue: 15
+    - desc: Recovers 3% of max HP every 3 seconds when hitcount is >50
+      lb: 5
+  obtained: Gacha
+
+- name: Mephistofar
+  cat: 'jp'
+  star: 5
+  picture: Melpha
+  atk: 891
+  int: 889
+  factors:
+    - desc: Imbues attacks with ice
+      element: Ice
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP when hitcount is >50
+    - desc: Damage dealt +15% by Sword Dance when hitcount is >100
+      lb: 3
+  obtained: Coin Exchange, Monarch Zinae (Achievement)
+
+- name: Twin Beam Swords
+  cat: 'jp'
+  star: 5
+  picture: Twin_Beam_Swords
+  atk: 531
+  int: 529
+  factors:
+    - desc: Damage dealt +30% by Tri Zapper
+    - desc: Absorbs 5% of damage dealt by normal attacks as HP
+    - desc: Damage dealt +15% when HP is 100%
+      meta:
+        priority: 4
+        buff: Damage
+        buffCondition: HP is 100
+        buffValue: 15
+      lb: 5
+  obtained: Mother Virus Pod (Exchange)
+
+- name: Twin Swords of Corruption
+  cat: 'jp'
+  star: 5
+  picture: Twin_Swords_of_Corruption
+  atk: 511
+  int: 508
+  factors:
+    - desc: Damage dealt +30% by Swirling Sword Slash
+    - desc: Absorbs 5% of damage dealt by normal attacks as HP
+    - desc: Damage taken -10%
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffValue: 10
+      lb: 5
+  obtained: G-Imitation Ghost (Exchange)
+
+- name: Devil's Candelabra
+  cat: 'jp'
+  star: 5
+  picture: Devil's_Candelabra
+  atk: 1260
+  int: 1259
+  factors:
+    - desc: Imbues attacks with light
+      element: Light
+    - desc: Light damage dealt +10%
+      meta:
+        priority: 3
+        buff: Light Damage
+        buffValue: 10
+    - desc: Recovers 10% of max HP every 3 seconds
+    - desc: HP +20%
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 20
+      lb: 5
+  obtained: Gacha  
+
+- name: Twin Pink Feathers
+  cat: 'jp'
+  star: 5
+  picture: Twin_Pink_Feathers
+  atk: 532
+  int: 527
+  factors:
+    - desc: Damage dealt +20% by Starry Rain
+    - desc: ATK damage +10%
+      lb: 5
+      meta:
+        priority: 4
+        buff: ATK Damage
+        buffValue: 10
+    - desc: ATK damage taken -10% when attacking
+      lb: 5
+      meta:
+        priority: 3
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+        buffCondition: When Attacking
+  obtained: Supipi-chan (Exchange)
+
+- name: Cylume Edge
+  cat: 'jp'
+  star: 5
+  picture: Cyalum_Edge
+  atk: 1263
+  int: 1257
+  factors:
+    - desc: Imbues attacks with wind
+      element: Wind
+    - desc: Wind damage dealt +20%
+      meta:
+        priority: 3
+        buff: Wind Damage
+        buffValue: 20
+    - desc: Single target damage +15%
+      meta:
+        priority: 3
+        buff: Single Target Damage
+        buffValue: 15
+    - desc: No flinching when attacking
+      lb: 5
+  obtained: Gacha
+
+- name: Snapblade [Soar]
+  cat: 'jp'
+  star: 5
+  picture: Snapblade_Soar
+  atk: 862
+  int: 858
+  factors:
+    - desc: Damage dealt +20% by Soaring Gale Slash
+      element: Ice
+    - desc: Normal attack AP recovery +30%
+      meta:
+        priority: 4
+        buff: AP Recovery From Normal Attacks
+        buffValue: 30
+    - desc: Damage dealt +15% when HP is 100%
+      meta:
+        priority: 3
+        buff: Damage
+        buffCondition: HP is 100%
+        buffValue: 15
+      lb: 5
+  obtained: Titan Eren (Exchange)
+
+- name: Snapblade [Rotation]
+  cat: 'jp'
+  star: 5
+  picture: Snapblade_Rotation
+  atk: 863
+  int: 857
+  factors:
+    - desc: Damage dealt +20% by Drop-Turn Slash
+    - desc: Elemental damage dealt +10%
+      meta:
+        priority: 3
+        buff: Elemental Damage
+        buffValue: 10
+    - desc: ATK damage taken -10%
+      lb: 5
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+  obtained: Titan Eren (Exchange)
+
+- name: Reinforced Snapblade [Earth]
+  cat: 'jp'
+  star: 5
+  picture: Reinforced_Snapblade_Earth
+  atk: 1263
+  int: 1252
+  factors:
+    - desc: Imbues attacks with earth
+      element: Earth
+    - desc: Critical hit chance +30% when skill chain is >3
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffCondition: Skill Chain 3+
+        buffValue: 30
+    - desc: Stun rate +20%
+      lb: 5
+      meta:
+        priority: 1
+        buff: Stun Rate
+        buffValue: 20
+  obtained: Gacha (Limited)
+
+- name: Reinforced Snapblade [Man]
+  cat: 'jp'
+  star: 5
+  picture: Reinforced_Snapblade_Man
+  atk: 1262
+  int: 1253
+  factors:
+    - desc: Elemental damage dealt +20%
+      meta:
+        priority: 4
+        buff: Elemental Damage
+        buffValue: 20
+    - desc: Damage dealt to humanoids +40%
+      slayer: Human
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Humans
+        buffValue: 40
+    - desc: Critical hit chance +10%
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 10
+    - desc: Critical damage dealt +20%
+      meta:
+        priority: 4
+        buff: Crit Damage
+        buffValue: 20
+    - desc: AP recovery +50%
+      meta:
+        priority: 4
+        buff: AP Recovery
+        buffValue: 50
+      lb: 5
+  obtained: Gacha (Limited)
+
+- name: Cherry Blossom Beamswords
+  cat: 'jp'
+  star: 5
+  picture: Cherry_Blossom_Beamswords
+  atk: 531
+  int: 528
+  factors:
+    - desc: Damage dealt +20% by Dualsword Arts
+    - desc: Critical damage dealt +10% when using charge assault
+      meta:
+        priority: 3
+        buff: Crit Damage
+        buffValue: 10
+        buffCondition: Charge Assault
+    - desc: Hitcount timer +1 second
+      lb: 5
+  obtained: Crown Dodo (Exchange)
