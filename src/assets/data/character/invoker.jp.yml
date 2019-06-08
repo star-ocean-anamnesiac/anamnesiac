@@ -3929,7 +3929,7 @@
             buff: Rush Damage
             buffCondition: Stage Timer > 180
             buffValue: 50
-        - desc: Movement rate +50%
+        - desc: Movement speed +50%
           all: true
     - name: "Verda Formula High Speed Maneuver"
       effects: 
@@ -4715,7 +4715,7 @@
             buffValue: 100
     - name: Circle of the Time's Fabric
       effects: 
-        - desc: Movement rate +30%
+        - desc: Movement speed +30%
           all: true
         - desc: AP recovery +50%
           all: true
