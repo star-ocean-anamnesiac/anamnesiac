@@ -1,3 +1,56 @@
+- name: Flamme Hammer
+  cat: 'jp'
+  star: 4
+  picture: Flamme_Hamer
+  atk: 470
+  int: 469
+  factors:
+    - desc: Imbues attacks with fire
+      element: Fire
+    - desc: Damage dealt +10%
+      meta:
+        priority: 4
+        buff: Damage
+        buffValue: 10
+  obtained: Transmutation, Gacha
+
+- name: St. Halberd
+  cat: 'jp'
+  star: 5
+  picture: St_Halberd
+  atk: 882
+  int: 877
+  factors:
+    - desc: Single target damage +15%
+      meta:
+        priority: 4
+        buff: Single Target Damage
+        buffValue: 15
+    - desc: Normal attack AP recovery +50%
+      meta:
+        priority: 4
+        buff: AP Recovery From Normal Attacks
+        buffValue: 50
+    - desc: Additional hit that deals 10% of damage dealt by normal attacks
+      lb: 5
+  obtained: Gacha, Coin Exchange
+
+- name: "God's Axe: Parashu"
+  cat: 'jp'
+  star: 5
+  picture: God's_Axe_Parashu
+  atk: 655
+  int: 652
+  factors:
+    - desc: ATK +15%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 15
+    - desc: Recovers 5% of max HP every 3 seconds
+    - desc: Hitcount timer +1 second
+      lb: 3
+  obtained: Coin Exchange, Gacha
 
 - name: Jet Hammer
   cat: 'jp'
@@ -6,17 +59,184 @@
   atk: 531
   int: 529
   factors:
-    - desc: +20% DMG on Welch Spinning Chop
-    - desc: +10% DMG
+    - desc: Damage dealt +20% by Welch Spinning Chop
+    - desc: Damage dealt +10%
       meta:
         priority: 4
-        buff: Damage Boost
+        buff: Damage
         buffValue: 10
-    - desc: -10% ATK DMG taken when attacking
+    - desc: ATK damage taken -10% when attacking
+      lb: 5
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffCondition: Attacking
+        buffValue: 10
+  obtained: Canon Dragoon (Exchange)
+
+- name: Rocket Hammer
+  cat: 'jp'
+  star: 5
+  picture: Rocket_Hammer
+  atk: 1261
+  int: 1259
+  factors:
+    - desc: Imbues attacks with earth
+      element: Earth
+    - desc: Recovers 10% of max HP every 3 seconds
+    - desc: Critical hit chance +20% when hitcount is >100
+      lb: 5
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffCondition: Hit Count > 100
+        buffValue: 4
+      lb: 5
+  obtained: Gacha
+
+- name: Spider Axe
+  cat: 'jp'
+  star: 5
+  picture: Spider_Axe
+  atk: 532
+  int: 527
+  factors:
+    - desc: Damage dealt +20% by Demon Claw Wave
+    - Additional hit that deals 5% of damage dealt by normal attacks
+    - desc: Recovers 3% of max HP every 5 seconds
+      lb: 5
+  obtained: G-Imitation Ghost (Exchange)
+
+- name: Executioner's Great Axe
+  cat: 'jp'
+  star: 5
+  picture: Executioner's_Great_Axe
+  atk: 1262
+  int: 1257
+  factors:
+    - desc: Imbues attacks with light
+      element: Light
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP
+    - desc: Damage dealt +15% when hitcount is >100
+      lb: 5
+      meta:
+        priority: 4
+        buff: Damage
+        buffCondition: Hit Count > 100
+        buffValue: 15
+  obtained: Gacha
+
+- name: Peach Blossom Axe
+  cat: 'jp'
+  star: 5
+  picture: Peach_Blossom_Axe
+  atk: 511
+  int: 509
+  factors:
+    - desc: Damage dealt +20% by Scrapper Gyro
+    - desc: ATK damage taken -10%
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+    - desc: HP +10% 
+      lb: 5
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 10
+  obtained: Supipi-chan (Exchange)
+
+- name: It's A Fan
+  cat: 'jp'
+  star: 5
+  picture: It's_A_Fan_(うちわなのじゃ)
+  atk: 1261
+  int: 1260
+  factors:
+    - desc: Imbues attacks with wind
+      element: Wind
+    - desc: ATK damage taken -15% when attacking
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffCondition: Attacking
+        buffValue: 15
+    - desc: Critical hit chance +15%
       lb: 5
       meta:
         priority: 3
-        buff: ATK Damage Taken Reduction
-        buffValue: 10
-        buffCondition: When Attacking
-  obtained: Cannon Dragoon Exchange
+        buff: Crit Rate
+        buffValue: 15
+  obtained: Gacha
+
+- name: "Knight Axe: JFT Co."
+  cat: 'jp'
+  star: 5
+  picture: Knight_Axe_JFT_Co
+  atk: 862
+  int: 857
+  factors:
+    - desc: "Damage dealt +20% by Rotating Axe: Consecutive Blows"
+    - desc: Critical hit chance +30%
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 30
+    - desc: INT damage taken -15% when attacking
+      meta:
+        priority: 4
+        buff: INT Damage Taken Reduction
+        buffCondition: Attacking
+        buffValue: 15
+  obtained: Count Grade Aroken / Radiata Stories (Exchange)
+
+- name: Ancient Axe
+  cat: 'jp'
+  star: 5
+  picture: Ancient_Axe
+  atk: 1263
+  int: 1256
+  factors:
+    - desc: Imbues attacks with lightning
+      element: Lightning
+    - desc: ATK damage dealt +40% when hitcount is >100
+      meta:
+        priority: 4
+        buff: ATK Damage
+        buffCondition: Hit Count > 100
+        buffValue: 40
+    - desc: ATK damage taken +15% (Enemies)
+      lb: 5
+      meta:
+        priority: 3
+        buff: Enemy ATK Damage Taken
+        buffValue: 15
+  obtained: Gacha
+
+- name: Flame Catastrophe
+  cat: 'jp'
+  star: 5
+  picture: Flame_Catastrophe
+  atk: 1260
+  int: 1255
+  factors:
+    - desc: Imbues attacks with fire
+      element: Fire
+    - desc: Fire damage dealt +20%
+      meta:
+        priority: 4
+        buff: Fire Damage
+        buffValue: 20
+    - desc: Stun rate +20%
+      meta:
+        priority: 4
+        buff: Stun Rate
+        buffValue: 20
+    - desc: INT damage taken -20%
+      lb: 3
+      meta:
+        priority: 3
+        buff: INT Damage Taken
+        buffValue: 20
+  obtained: Gacha
