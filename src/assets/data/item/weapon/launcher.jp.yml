@@ -1,3 +1,39 @@
+- name: Plasma Cannon
+  cat: 'jp'
+  star: 4
+  picture: Plasma_Cannon
+  atk: 470
+  int: 472
+  factors:
+    - desc: Imbues attacks with lightning
+      element: Lightning
+    - desc: Stun rate +5%
+      meta:
+        priority: 4
+        buff: Stun Rate
+        buffValue: 5
+  obtained: Transmutation, Gacha
+
+- name: Photon Blaster
+  cat: 'jp'
+  star: 5
+  picture: Photon_Blaster
+  atk: 880
+  int: 861
+  factors:
+    - desc: Single target damage +15%
+      meta:
+        priority: 4
+        buff: Single Target Damage
+        buffValue: 15
+    - desc: Normal attack AP recovery +50%
+      meta:
+        priority: 1
+        buff: AP Recovery From Normal Attacks
+        buffValue: 50
+    - desc: Absorbs 5% of damage dealt by normal attacks as HP
+      lb: 5
+  obtained: Gacha, Coin Exchange, Transmutation
 
 - name: Deadly Cannon
   cat: 'jp'
@@ -6,41 +42,20 @@
   atk: 662
   int: 656
   factors:
-    - desc: Recover 3% HP every 5 seconds
-    - desc: +15% ATK
+    - desc: Recovers 3% of max HP every 5 seconds
+    - desc: ATK +15%
       meta:
         priority: 4
         buff: ATK
         buffValue: 15
-    - desc: -10% ATK DMG Taken
+    - desc: ATK damage taken -10%
       lb: 5
       meta:
-        priority: 1
-        buff: ATK Damage Reduction
+        priority: 4
+        buff: ATK Damage Taken Reduction
         buffValue: 10
-  obtained: Launcher Coin Exchange / Gacha
-  
-- name: Photon Blaster
-  cat: 'jp'
-  star: 5
-  picture: Photon_Blaster
-  atk: 880
-  int: 861
-  factors:
-    - desc: +15% DMG to Single Target
-      meta:
-        priority: 1
-        buff: Single Target Damage
-        buffValue: 15
-    - desc: +50% AP RCV by Normal Attacks
-      meta:
-        priority: 1
-        buff: AP Recovery From Normal Attacks
-        buffValue: 50
-    - desc: Recover 5% HP of DMG Dealt by Normal Attacks
-      lb: 5
-  obtained: Launcher Coin Exchange / Gacha
-  
+  obtained: Coin Exchange, Gacha
+
 - name: Morphus Launcher
   cat: 'jp'
   star: 5
@@ -48,20 +63,20 @@
   atk: 530
   int: 527
   factors:
-    - desc: +20% DMG on Saint Buster
-    - desc: +15% Crit
+    - desc: Damage dealt +20% by Saint Buster
+    - desc: Critical hit chance +15%
       meta:
         priority: 1
         buff: Crit Rate
         buffValue: 15
-    - desc: -10% ATK DMG Taken
+    - desc: ATK damage taken -10%
       lb: 5
       meta:
-        priority: 1
-        buff: ATK Damage Reduction
+        priority: 4
+        buff: ATK Damage Taken Reduction
         buffValue: 10
-  obtained: Vulcan's Darkness Exchange
-  
+  obtained: Vulcan's Darkness (Exchange)
+
 - name: Master Cannon
   cat: 'jp'
   star: 5
@@ -69,33 +84,16 @@
   atk: 531
   int: 526
   factors:
-    - desc: +20% DMG on Godslayer
-    - desc: +10% DEF
+    - desc: Damage dealt +20% by Godslayer
+    - desc: DEF +10%
       meta:
         priority: 4
         buff: DEF
         buffValue: 10
-    - desc: Anti-Flinch (While attacking)
+    - desc: No flinching when attacking
       lb: 5
-  obtained: Vulcan's Darkness Exchange
-  
-- name: Heraldic Cannon・Tempest
-  cat: 'jp'
-  star: 5
-  picture: Heraldic_Cannon・Tempest
-  atk: 1261
-  int: 1253
-  factors:
-    - desc: Imbue Wind Element
-    - desc: +10% HP
-      meta:
-        priority: 4
-        buff: HP
-        buffValue: 10
-    - desc: 80% Chance to Survive a Lethal Attack at 10% HP or more
-      lb: 5
-  obtained: Gacha
-  
+  obtained: Vulcan's Darkness (Exchange)
+
 - name: Ultimate Cannon
   cat: 'jp'
   star: 5
@@ -103,34 +101,94 @@
   atk: 1260
   int: 1260
   factors:
-    - desc: Imbue Dark Element
-    - desc: -10% AP cost
+    - desc: Imbues attacks with dark
+      element: Dark
+    - desc: AP cost -10%
       meta:
-        priority: 1
+        priority: 4
         buff: AP Cost Reduction
         buffValue: 10
-    - desc: +30% Crit when HC 150+
+    - desc: Critical hit chance +30% when hitcount is >150
       lb: 5
       meta:
-        priority: 3
+        priority: 4
         buff: Crit Rate
         buffCondition: Hit Count > 150
-        buffValue: 30
+        buffValue: 5
   obtained: Gacha
-  
+
+- name: "Heraldic Cannon: Tempest"
+  cat: 'jp'
+  star: 5
+  picture: Heraldic_Cannon・Tempest
+  atk: 1261
+  int: 1253
+  factors:
+    - desc: Imbues attacks with wind
+      element: Wind
+    - desc: HP +10%
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 10
+    - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
+      lb: 5
+  obtained: Gacha
+
 - name: Mix Star
   cat: 'jp'
   star: 5
-  picture: Master_Cannon
-  atk: 531
-  int: 526
+  picture: Mix_Star
+  atk: 532
+  int: 528
   factors:
-    - desc: +20% DMG on Nya-stice Savior
-    - desc: +10% DMG to Single Target
+    - desc: Damage dealt +20% by Nya-stice Savior
+    - desc: Single target damage +10%
       meta:
-        priority: 1
+        priority: 4
         buff: Single Target Damage
         buffValue: 10
-    - desc: Recover 5% HP every 3 seconds
+    - desc: Recovers 5% of max HP every 3 seconds
       lb: 5
-  obtained: Head Bull Exchange
+  obtained: Head Bull (Exchange)
+
+- name: Cat The Shot
+  cat: 'jp'
+  star: 5
+  picture: Cat_The_Shot
+  atk: 1259
+  int: 1254
+  factors:
+    - desc: Imbues attacks with ice
+      element: Ice
+    - desc: Normal attack AP recovery +50%
+      meta:
+        priority: 1
+        buff: AP Recovery From Normal Attacks
+        buffValue: 50
+    - desc: Single target damage +40% when skill chain is >3
+      meta:
+        priority: 4
+        buff: Single Target Damage
+        bufCondition: Skill Chain 3+
+        buffValue: 40       
+      lb: 5
+  obtained: Gacha
+
+- name: Discharge Vulcan
+  cat: 'jp'
+  star: 5
+  picture: Discharge_Vulcan
+  atk: 1258
+  int: 1256
+  factors:
+    - desc: Imbues attacks with lightning
+      element: Lightning
+    - desc: Rush combo damage +30%
+      meta:
+        priority: 4
+        buff: Rush Damage
+        buffValue: 30
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP
+      lb: 3
+  obtained: Gacha
