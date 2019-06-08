@@ -270,3 +270,67 @@
         buffValue: 15
       lb: 5
   obtained: Gacha
+
+- name: "Crest Gun: Everblooming Plum"
+  cat: 'jp'
+  star: 5
+  picture: Crest_Gun_Everblooming_Plum
+  atk: 507
+  int: 510
+  factors:
+    - desc: Damage dealt +20% by Satellite Ray
+    - desc: Hitcount timer +1 second
+    - desc: ATK damage dealt +10% at long range
+      lb: 5
+      meta:
+        priority: 4
+        buff: ATK Damage
+        buffCondition: Long Range
+        buffValue: 10
+  obtained: Rekorokoro (Exchange)
+
+- name: "Happy New Years Rifle: Salutations"
+  cat: 'jp'
+  star: 5
+  picture: Happy_New_Years_Rifle_Salutations
+  atk: 1264
+  int: 1255
+  factors:
+    - desc: Imbues attacks with light
+      element: Light
+    - desc: Critical hit chance +30% when hitcount is >100
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffCondition: Hit Count > 100
+        buffValue: 30
+    - desc: Critical damage dealt +30%
+      meta:
+        priority: 4
+        buff: Crit Damage
+        buffValue: 30
+      lb: 5
+  obtained: Gacha
+
+- name: Wolf's Rifle
+  cat: 'jp'
+  star: 5
+  picture: Wolf's_Rifle
+  atk: 532
+  int: 521
+  factors:
+    - desc: Damage dealt +40% by Storm Hound
+    - desc: ATK damage dealt +15% when hitcount is >100
+      meta:
+        priority: 4
+        buff: ATK Damage
+        buffCondition: Hit Count > 100
+        buffValue: 15
+    - desc: Critical hit chance +15% at short range
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffCondition: Short Range
+        buffValue: 15
+      lb: 5
+  obtained: Vulcan's Darkness (Exchange)
