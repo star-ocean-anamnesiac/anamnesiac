@@ -414,7 +414,7 @@
       meta:
         priority: 4
         buff: Crit Rate
-        buffValue: 15
+        buffValue: 5
     - desc: Damage dealt +10% by Colossal Ethereal Blast
       lb: 5
   obtained: Luther (Exchange, Achievement)
