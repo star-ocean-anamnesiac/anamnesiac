@@ -142,3 +142,65 @@
       lb: 5
   obtained: Gacha
 
+- name: Beach Empress
+  cat: 'jp'
+  star: 5
+  picture: Waterfall_Canon_Beach_Empress
+  atk: 1261
+  int: 1258
+  factors:
+    - desc: Imbues attacks with ice
+      element: Ice
+    - desc: Damage dealt to insects +20%
+      slayer: Insect
+      slayerPct: 20
+      meta:
+        priority: 4
+        buff: Damage To Insects
+        buffValue: 20
+    - desc: ATK damage taken -15% when targeted by enemy
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffValue: 15
+        buffCondition: Holding Aggro
+    - desc: ATK damage +15% at long range
+      meta:
+        priority: 4
+        buff: ATK Damage
+        buffValue: 15
+        buffCondition: Long Range
+      lb: 5
+  obtained: Gacha
+
+- name: Beasthunter
+  cat: 'jp'
+  star: 5
+  picture: Beasthunter
+  atk: 1260
+  int: 1256
+  factors:
+    - desc: Damage dealt to beasts +40%
+      slayer: Beast
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Beasts
+        buffValue: 40
+    - desc: Critical hit chance +15%
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 15
+    - desc: Critical damage dealt +15%
+      meta:
+        priority: 4
+        buff: Crit Damage
+        buffValue: 15
+    - desc: Single target damage 10%
+      lb: 3
+      meta:
+        priority: 4
+        buff: Single Target Damage
+        buffValue: 10
+  obtained: Gacha
