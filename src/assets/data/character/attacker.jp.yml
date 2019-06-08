@@ -6576,7 +6576,7 @@
       effects: 
         - desc: Nullifies status ailments for 180 seconds
         - desc: Movement rate +30%
-        - desc: Evasion distance & rate +100%
+        - desc: Evasion distance & speed +100%
 
   skills:
     - name: "Rainstorm"
@@ -7959,7 +7959,7 @@
             buffValue: 100
     - name: "The Wolf in Despair"
       effects: 
-        - desc: Evasion distance & rate +100%
+        - desc: Evasion distance & speed +100%
         - desc: AP recovery +50% at long range
           meta:
             priority: 1
