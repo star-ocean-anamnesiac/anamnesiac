@@ -2845,7 +2845,7 @@
             buffValue: 30
     - name: "MAX Tension"
       effects: 
-        - desc: Movement rate boost
+        - desc: Movement speed boost
 
   skills:
     - name: "Crescent Locus"
@@ -3108,7 +3108,7 @@
             buffValue: 40
     - name: "Undying Effort"
       effects: 
-        - desc: Movement rate +20%
+        - desc: Movement speed +20%
 
   skills:
     - name: "Exorcising Storm"
@@ -6575,8 +6575,8 @@
     - name: "Blooming Peony"
       effects: 
         - desc: Nullifies status ailments for 180 seconds
-        - desc: Movement rate +30%
-        - desc: Evasion distance & rate +100%
+        - desc: Movement speed +30%
+        - desc: Evasion distance & speed +100%
 
   skills:
     - name: "Rainstorm"
@@ -7959,7 +7959,7 @@
             buffValue: 100
     - name: "The Wolf in Despair"
       effects: 
-        - desc: Evasion distance & rate +100%
+        - desc: Evasion distance & speed +100%
         - desc: AP recovery +50% at long range
           meta:
             priority: 1
@@ -8319,7 +8319,7 @@
             buffValue: 20
         - desc: AP +40
           all: false
-        - desc: Movement rate +30%
+        - desc: Movement speed +30%
           all: false
         - desc: Damage taken -100% when using Volcanic Viper (Self/0.5s)
           all: false
