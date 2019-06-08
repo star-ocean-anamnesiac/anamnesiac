@@ -34,3 +34,63 @@
     - desc: Additional hit that deals 10% of damage dealt by normal attacks
       lb: 5
   obtained: Gacha, Coin Exchange
+
+- name: "God's Axe: Parashu"
+  cat: 'jp'
+  star: 5
+  picture: God's_Axe_Parashu
+  atk: 655
+  int: 652
+  factors:
+    - desc: ATK +15%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 15
+    - desc: Recovers 5% of max HP every 3 seconds
+    - desc: Hitcount timer +1 second
+      lb: 3
+  obtained: Coin Exchange, Gacha
+
+- name: Jet Hammer
+  cat: 'jp'
+  star: 5
+  picture: Jet_Hammer
+  atk: 531
+  int: 529
+  factors:
+    - desc: Damage dealt +20% by Welch Spinning Chop
+    - desc: Damage dealt +10%
+      meta:
+        priority: 4
+        buff: Damage
+        buffValue: 10
+    - desc: ATK damage taken -10% when attacking
+      lb: 5
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffCondition: Attacking
+        buffValue: 10
+  obtained: Canon Dragoon (Exchange)
+
+- name: Rocket Hammer
+  cat: 'jp'
+  star: 5
+  picture: Rocket_Hammer
+  atk: 1261
+  int: 1259
+  factors:
+    - desc: Imbues attacks with earth
+      element: Earth
+    - desc: Recovers 10% of max HP every 3 seconds
+    - desc: Critical hit chance +20% when hitcount is >100
+      lb: 5
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffCondition: Hit Count > 100
+        buffValue: 4
+      lb: 5
+  obtained: Gacha
+  
