@@ -74,3 +74,75 @@
         buffValue: 10
   obtained: Canon Dragoon (Exchange)
   
+- name: Rocket Hammer
+  cat: 'jp'
+  star: 5
+  picture: Rocket_Hammer
+  atk: 1261
+  int: 1259
+  factors:
+    - desc: Imbues attacks with earth
+      element: Earth
+    - desc: Recovers 10% of max HP every 3 seconds
+    - desc: Critical hit chance +20% when hitcount is >100
+      lb: 5
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffCondition: Hit Count > 100
+        buffValue: 4
+      lb: 5
+  obtained: Gacha
+
+- name: Spider Axe
+  cat: 'jp'
+  star: 5
+  picture: Spider_Axe
+  atk: 532
+  int: 527
+  factors:
+    - desc: Damage dealt +20% by Demon Claw Wave
+    - desc: Additional hit that deals 5% of damage dealt by normal attacks
+    - desc: Recovers 3% of max HP every 5 seconds
+      lb: 5
+  obtained: G-Imitation Ghost (Exchange)
+
+- name: Executioner's Great Axe
+  cat: 'jp'
+  star: 5
+  picture: Executioner's_Great_Axe
+  atk: 1262
+  int: 1257
+  factors:
+    - desc: Imbues attacks with light
+      element: Light
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP
+    - desc: Damage dealt +15% when hitcount is >100
+      lb: 5
+      meta:
+        priority: 4
+        buff: Damage
+        buffCondition: Hit Count > 100
+        buffValue: 15
+  obtained: Gacha
+
+- name: Peach Blossom Axe
+  cat: 'jp'
+  star: 5
+  picture: Peach_Blossom_Axe
+  atk: 511
+  int: 509
+  factors:
+    - desc: Damage dealt +20% by Scrapper Gyro
+    - desc: ATK damage taken -10%
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+    - desc: HP +10% 
+      lb: 5
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 10
+  obtained: Supipi-chan (Exchange)
