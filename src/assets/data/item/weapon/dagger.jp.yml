@@ -494,7 +494,7 @@
       lb: 5
   obtained: Phantom Dream Fungus (Exchange)
 
-- name: Howling Moon
+- name: Blue Flame Blade Howling Moon
   cat: 'jp'
   star: 5
   picture: Azure_Flame_Blades_Howling_Moon
@@ -509,6 +509,10 @@
         buff: Damage Taken Reduction
         buffValue: 10
     - desc: Rush combo damage +15%
+      meta:
+        priority: 4
+        buff: Rush Damage
+        buffValue: 15
       lb: 5
   obtained: Gacha
 
