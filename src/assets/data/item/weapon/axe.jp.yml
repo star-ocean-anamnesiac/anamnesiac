@@ -73,7 +73,7 @@
         buffCondition: Attacking
         buffValue: 10
   obtained: Canon Dragoon (Exchange)
-  
+
 - name: Rocket Hammer
   cat: 'jp'
   star: 5
@@ -90,6 +90,5 @@
         priority: 4
         buff: Crit Rate
         buffCondition: Hit Count > 100
-        buffValue: 4
-      lb: 5
+        buffValue: 20
   obtained: Gacha
