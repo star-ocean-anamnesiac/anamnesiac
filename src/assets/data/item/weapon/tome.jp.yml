@@ -358,7 +358,7 @@
 - name: Immortal Archive
   cat: 'jp'
   star: 5
-  picture: Immortal_Archive
+  picture: Immortal_Archives
   atk: 1256
   int: 1263
   factors:
