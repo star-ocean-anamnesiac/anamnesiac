@@ -99,7 +99,7 @@
 - name: PMF-M4
   cat: 'jp'
   star: 5
-  picture: PMF-M4
+  picture: PMF_M4
   atk: 1111
   int: 1107
   factors:
