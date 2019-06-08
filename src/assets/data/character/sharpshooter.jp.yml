@@ -730,12 +730,12 @@
       effects: 
         - desc: Evasion AP cost -50%
           all: true
-        - desc: Movement rate +30%
+        - desc: Movement speed +30%
           all: true
     - name: "Treacherous Blade"
       effects: 
         - desc: Evasion possible during air attacks
-        - desc: Evasion distance & rate +100%
+        - desc: Evasion distance & speed +100%
     - name: "Gathering Keepsakes"
       shortEffects: ATK +20% and HIT +10%
       effects: 
@@ -3149,7 +3149,7 @@
     power: ATK x 3500%
     maxHits: 2
 
-- name: Phia Melle (Crimson Grace)
+- name: Phia Melle (Crimson)
   cat: jp
   rating: 4
   picture: Crimson_Grace_Phia
@@ -3166,7 +3166,7 @@
     grd: 945
 
   talents:
-    - name: "Oath Hidden in War Armor"
+    - name: "Battle Armor Oath"
       effects: 
         - desc: Critical hit chance +20%
           all: true
@@ -3180,7 +3180,7 @@
             priority: 1
             buff: Crit Damage
             buffValue: 20
-    - name: "Never Ending Chivalry"
+    - name: "Endless Great Chivalry"
       shortEffects: Critical hit chance and critical damage dealt +30%/+40% when hitcount is >100/>200 (Party)
       effects: 
         - desc: Critical hit chance +30% when hitcount is >100
@@ -3211,11 +3211,11 @@
             buff: Crit Damage
             buffCondition: Hit Count > 200
             buffValue: 40
-    - name: "Astral's Star"
+    - name: "The Astral Star"
       effects: 
         - desc: Evasion distance +100%
         - desc: Evasion speed +100%
-    - name: "Proof of Trial"
+    - name: "Proof of Tribulation"
       shortEffects: ATK/HIT +20% after using Moon Mirror (10s)
       effects:
         - desc: ATK +20% after using Moon Mirror
@@ -3253,7 +3253,7 @@
       element: Ice
       power: ATK x 330%
       ap: 26
-      maxHits: 5
+      maxHits: 6
       
   rush:
     name: "Murakumo"
@@ -4635,7 +4635,7 @@
             priority: 1
             buff: AP Recovery
             buffValue: 50
-        - desc: Movement rate +50%
+        - desc: Movement speed +50%
           all: true
     - name: "Passionate Red"
       effects: 
@@ -5358,7 +5358,7 @@
             buffValue: 200
         - desc: Evasion AP cost -50%
           all: true
-        - desc: Movement rate +30%
+        - desc: Movement speed +30%
           all: true
     - name: "Trials and Growth"
       effects: 
