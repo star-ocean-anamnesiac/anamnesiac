@@ -204,3 +204,69 @@
         buff: Single Target Damage
         buffValue: 10
   obtained: Gacha
+
+- name: Kaleidoscope
+  cat: 'jp'
+  star: 5
+  picture: Kaleidoscope
+  atk: 531
+  int: 529
+  factors:
+    - desc: Damage dealt +20% by Electric Shockwave
+    - desc: HP +10%
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 10
+    - desc: Lightning damage dealt +10%
+      lb: 5
+      meta:
+        priority: 4
+        buff: Lightning Damage
+        buffValue: 10
+  obtained: Shrouded Gaze (Exchange)
+
+- name: PMF-BEACH
+  cat: 'jp'
+  star: 5
+  picture: PMF_BEACH
+  atk: 862
+  int: 857
+  factors:
+    - desc: Damage dealt +20% by Warhead Delivery
+    - desc: ATK damage dealt +10%
+      meta:
+        priority: 4
+        buff: ATK Damage
+        buffValue: 10
+    - desc: ATK damage taken -15% when attacking
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffCondition: Attacking
+        buffValue: 15
+      lb: 5
+  obtained: Cannon Daddy (Draw Box)
+
+- name: Hologram Rifle
+  cat: 'jp'
+  star: 5
+  picture: Hologram_Rifle
+  atk: 1262
+  int: 1257
+  factors:
+    - desc: Imbues attacks with lightning
+      element: Lightning
+    - desc: Critical hit chance +30% when hitcount is >150
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffCondition: Hit Count > 150
+        buffValue: 30
+    - desc: ATK damage taken -15%
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffValue: 15
+      lb: 5
+  obtained: Gacha
