@@ -124,3 +124,47 @@
         buffCondition: Hit Count > 100
         buffValue: 15
   obtained: Gacha
+
+- name: Peach Blossom Axe
+  cat: 'jp'
+  star: 5
+  picture: Peach_Blossom_Axe
+  atk: 511
+  int: 509
+  factors:
+    - desc: Damage dealt +20% by Scrapper Gyro
+    - desc: ATK damage taken -10%
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+    - desc: HP +10% 
+      lb: 5
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 10
+  obtained: Supipi-chan (Exchange)
+
+- name: It's A Fan
+  cat: 'jp'
+  star: 5
+  picture: It's_A_Fan_(うちわなのじゃ)
+  atk: 1261
+  int: 1260
+  factors:
+    - desc: Imbues attacks with wind
+      element: Wind
+    - desc: ATK damage taken -15% when attacking
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffCondition: Attacking
+        buffValue: 15
+    - desc: Critical hit chance +15%
+      lb: 5
+      meta:
+        priority: 3
+        buff: Crit Rate
+        buffValue: 15
+  obtained: Gacha
