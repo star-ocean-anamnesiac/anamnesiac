@@ -878,7 +878,7 @@
             buffValue: 15
     - name: "The Dancing Maiden"
       effects: 
-        - desc: Movement rate boost
+        - desc: Movement speed boost
     - name: "Secret Understanding"
       effects: 
         - desc: Repel +1
@@ -1255,7 +1255,7 @@
       effects: 
         - desc: Evasion AP cost -50%
           all: true
-        - desc: Movement rate +30%
+        - desc: Movement speed +30%
           all: true
     - name: "A Christmas Miracle"
       effects: 
@@ -3172,8 +3172,8 @@
             priority: 1
             buff: Cast Time Reduction
             buffValue: 60
-        - desc: Evasion distance & rate +100%
-        - desc: Movement rate +30
+        - desc: Evasion distance & speed +100%
+        - desc: Movement speed +30
         - desc: Damage taken -100% when dodging (Party/0.5s)
           duration: 0.5
           meta:
