@@ -109,7 +109,7 @@
 - name: Executioner's Great Axe
   cat: 'jp'
   star: 5
-  picture: Executioner's_Great_Axe
+  picture: Executioner's_Axe
   atk: 1262
   int: 1257
   factors:
