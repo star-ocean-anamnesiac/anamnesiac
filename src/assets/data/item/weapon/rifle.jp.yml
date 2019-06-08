@@ -72,10 +72,6 @@
     - desc: Hitcount timer +1 second
     - desc: Additional hit that deals 5% of damage dealt by normal attacks
       lb: 5
-      meta:
-        priority: 4
-        buff: Damage Taken Reduction
-        buffValue: 10
   obtained: Coin Exchange
 
 - name: Pulse Rifle
