@@ -168,7 +168,7 @@
       lb: 3
   obtained: Gacha
 
-- name: "Crushing Mechanism: Pulverizer"
+- name: Pulverizer
   cat: 'jp'
   star: 5
   picture: Crushing_Mechanism_Pulverizer
@@ -266,7 +266,7 @@
       lb: 3
   obtained: Gacha
 
-- name: "Joy Mechanism: Sometihng Four"
+- name: "Joy Mechanism: Something Four"
   cat: 'jp'
   star: 5
   picture: Joy_Mechanism_Somthing_Four
