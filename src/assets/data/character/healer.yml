@@ -538,7 +538,7 @@
             buffValue: 15
     - name: "The Dancing Maiden"
       effects: 
-        - desc: Movement rate boost
+        - desc: Movement speed boost
     - name: "Secret Understanding"
       effects: 
         - desc: Repel +1
@@ -920,7 +920,7 @@
       effects: 
         - desc: Evasion AP cost -50%
           all: true
-        - desc: Movement rate +30%
+        - desc: Movement speed +30%
           all: true
     - name: "A Christmas Miracle"
       effects: 
