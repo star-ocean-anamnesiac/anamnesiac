@@ -1,17 +1,16 @@
-
-- name: Blue Comet Trigger
+- name: Nurse Rifle
   cat: 'jp'
   star: 5
-  picture: Blue_Comet_Trigger
-  atk: 651
-  int: 649
+  picture: Nurse_Rifle
+  atk: 531
+  int: 528
   factors:
-    - desc: +15% DMG to single targets
+    - desc: Damage dealt +20% by Scatter Capsule
+    - desc: Absorbs 5% of damage dealt by normal attacks as HP
+    - desc: Damage dealt +10%
       meta:
         priority: 4
-        buff: Single Target Damage
-        buffValue: 15
-    - desc: Hit Count timer +1s
-    - desc: Additional hit that deals 5% of damage dealt by normal attacks
+        buff: Damage
+        buffValue: 10
       lb: 5
-  obtained: Rifle Coin Exchange
+  obtained: Beast Kid (Exchange)
