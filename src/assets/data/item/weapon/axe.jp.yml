@@ -1,7 +1,7 @@
 - name: Flamme Hammer
   cat: 'jp'
   star: 4
-  picture: Flamme_Hamer
+  picture: Flamme_Hammer
   atk: 470
   int: 469
   factors:
