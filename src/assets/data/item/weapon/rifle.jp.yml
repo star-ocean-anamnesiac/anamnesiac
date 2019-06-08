@@ -73,3 +73,21 @@
     - desc: Additional hit that deals 5% of damage dealt by normal attacks
       lb: 5
   obtained: Coin Exchange
+
+- name: Pulse Rifle
+  cat: 'jp'
+  star: 5
+  picture: Pulse_Rifle
+  atk: 1111
+  int: 1109
+  factors:
+    - desc: Imbues attacks with lightning
+      element: Lightning
+    - desc: AP recovery +50%
+      meta:
+        priority: 4
+        buff: AP Recovery
+        buffValue: 50%
+    - desc: 70% chance of surviving a lethal attack when at 20% of max HP or more
+      lb: 5
+  obtained: Gacha
