@@ -348,7 +348,7 @@
       meta:
         priority: 4
         buff: Crit Rate
-        buffValue: 15
+        buffValue: 5
     - desc: Damage dealt +10% by Colossal Ethereal Blast
       lb: 5
   obtained: Luther (Exchange, Achievement)
@@ -621,7 +621,7 @@
       lb: 5
   obtained: Gacha
 
-- name: Blo0dy Sword
+- name: Bloody Sword
   cat: 'jp'
   star: 5
   picture: Bloody_Sword
@@ -678,7 +678,7 @@
       lb: 5
   obtained: Ocypete (Exchange)
 
-- name: "Carapace Eradication Blade: Crustacean's Bite"
+- name: Crustacean's Bite
   cat: 'jp'
   star: 5
   picture: Carapace_Eradicator_Crustacean_Bite
@@ -908,7 +908,7 @@
         buffValue: 10
   obtained: Fallen Demon Plant (Exchange)
 
-- name: "Spirit Sword: Wild Falcon"
+- name: Wild Falcon
   cat: 'jp'
   star: 5
   picture: Spirit_Sword_Wild_Falcon
@@ -929,7 +929,7 @@
         buffValue: 10
   obtained: Fallen Demon Plant (Exchange)
 
-- name: "Light Sword: Ethereal"
+- name: Ethereal
   cat: 'jp'
   star: 5
   picture: Light_Sword_Ethereal
