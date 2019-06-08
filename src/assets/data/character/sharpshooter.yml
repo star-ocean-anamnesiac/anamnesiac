@@ -3340,7 +3340,7 @@
       
       
       
-- name: Phia Melle (Crimson Grace)
+- name: Phia Melle (Crimson)
   cat: gl
   picture: Crimson_Grace_Phia
   weapon: bow
@@ -3443,7 +3443,7 @@
       element: Ice
       power: ATK x 330%
       ap: 26
-      maxHits: 5
+      maxHits: 6
       
   rush:
     name: "Gathering Storm"
