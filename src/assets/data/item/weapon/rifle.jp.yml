@@ -14,3 +14,45 @@
         buffValue: 10
       lb: 5
   obtained: Beast Kid (Exchange)
+  
+- name: Summer Tropical Shot
+  cat: 'jp'
+  star: 5
+  picture: Summer_Tropical_Shot
+  atk: 532
+  int: 527
+  factors:
+    - desc: Damage dealt +20% by Aqua Ignition
+    - desc: ATK damage taken -10%
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+    - desc: AP cost -10%
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 10
+      lb: 5
+  obtained: Disaster Crab (Exchange)
+
+- name: Vampir
+  cat: 'jp'
+  star: 5
+  picture: Vampiric_Canon_Vampir
+  atk: 514
+  int: 513
+  factors:
+    - desc: ATK +15%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 15
+    - desc: INT damage taken -10%
+      meta:
+        priority: 4
+        buff: INT Damage Taken Reduction
+        buffValue: 10
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP
+      lb: 3
+  obtained: Coin Exchange, Gacha
