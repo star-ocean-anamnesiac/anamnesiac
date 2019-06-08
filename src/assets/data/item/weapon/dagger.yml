@@ -533,3 +533,26 @@
         buffValue: 30
       lb: 3
   obtained: Gacha
+
+
+- name: Blue Flame Blade Howling Moon
+  cat: 'gl'
+  star: 5
+  picture: Azure_Flame_Blades_Howling_Moon
+  atk: 960
+  int: 959
+  factors:
+    - desc: Imbues attacks with fire
+      element: Fire
+    - desc: Damage taken -10%
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffValue: 10
+    - desc: Rush combo damage +15%
+      meta:
+        priority: 4
+        buff: Rush Damage
+        buffValue: 15
+      lb: 5
+  obtained: Gacha
