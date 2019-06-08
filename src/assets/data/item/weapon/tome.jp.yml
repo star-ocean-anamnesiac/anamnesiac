@@ -1,5 +1,25 @@
+- name: Sweet Summer Memories
+  cat: 'jp'
+  star: 5
+  picture: Sweet_Memories_of_Summer
+  atk: 511
+  int: 508
+  factors:
+    - desc: Damage dealt +20% by Hydro Billows
+    - desc: AP recovery +30%
+      meta:
+        priority: 1
+        buff: AP Recovery
+        buffValue: 30
+    - desc: Damage taken -10%
+      meta:
+        priority: 1
+        buff: Damage Taken Reduction
+        buffValue: 10
+      lb: 5
+  obtained: Sea Dragon Chieftain (Exchange)
 
-- name: Advanced Combat Symbology Textbook
+- name: Tome of Advanced Magical Combat
   cat: 'jp'
   star: 5
   picture: Advanced_Combat_Heraldry_Manual
@@ -11,11 +31,376 @@
         priority: 4
         buff: INT
         buffValue: 15
-    - desc: Recover 5% HP every 3s
-    - desc: +10% Crit Rate
+    - desc: Recovers 5% of max HP every 3 seconds
+    - desc: Critical hit chance +10%
       lb: 5
       meta:
         priority: 4
         buff: Crit Rate
         buffValue: 10
-  obtained: Tome Coin Exchange / Gacha
+  obtained: Coin Exchange, Gacha
+
+- name: Akashic Record
+  cat: 'jp'
+  star: 5
+  picture: Akashic_Records
+  atk: 647
+  int: 657
+  factors:
+    - desc: Multiple target damage +15%
+      meta:
+        priority: 1
+        buff: Multiple Target Damage
+        buffValue: 15
+    - desc: Stun rate +15%
+      meta:
+        priority: 4
+        buff: Stun Rate
+        buffValue: 15
+    - desc: 80% chance of surviving a lethal attack when at 20% of max HP or more
+      lb: 5
+  obtained: Coin Exchange, Transmutation, Gacha
+
+- name: Book of Dark Revelations
+  cat: 'jp'
+  star: 5
+  picture: Forbidden_Tome_Dark_Revalations
+  atk: 959
+  int: 965
+  factors:
+    - desc: Light damage dealt +35%
+      meta:
+        priority: 4
+        buff: Light Damage
+        buffValue: 35
+    - desc: Dark damage dealt +35%
+      meta:
+        priority: 4
+        buff: Dark Damage
+        buffValue: 35
+    - desc: Critical damage dealt +20%
+      meta:
+        priority: 4
+        buff: Crit Damage
+        buffValue: 20    
+    - desc: 60% chance of surviving a lethal attack when at 20% of max HP or more
+      lb: 5
+  obtained: Gacha
+
+- name: Theory of Symbology
+  cat: 'jp'
+  star: 5
+  picture: Heraldry_Theories
+  atk: 528
+  int: 532
+  factors:
+    - desc: AP cost -5%
+      meta:
+        priority: 3
+        buff: AP Cost Reduction
+        buffValue: 5
+    - desc: INT damage dealt +15% when HP is 100%
+      meta:
+        priority: 3
+        buff: INT Damage
+        buffCondition: HP is 100
+        buffValue: 15
+    - desc: DEF +10%
+      meta:
+        priority: 3
+        buff: DEF
+        buffValue: 10
+      lb: 5
+  obtained: Shine Totem / Gleaming Simulacrum (Exchange)
+
+- name: Apocalypse of Creation
+  cat: 'jp'
+  star: 5
+  picture: Genesis_of_Apocalypse
+  atk: 935
+  int: 963
+  factors:
+    - desc: Dark damage dealt +40%
+      meta:
+        priority: 3
+        buff: Dark Damage
+        buffValue: 40
+    - desc: INT damage dealt +10%
+      meta:
+        priority: 3
+        buff: INT Damage
+        buffValue: 10
+    - desc: No flinching when casting symbology
+      lb: 5
+  obtained: Gacha
+
+- name: Book of Love Poems
+  cat: 'jp'
+  star: 5
+  picture: Poems_A_Maiden's_Love
+  atk: 957
+  int: 962
+  factors:
+    - desc: Earth damage dealt +40%
+      meta:
+        priority: 4
+        buff: Earth Damage
+        buffValue: 40
+    - desc: Dark damage dealt +30%
+      meta:
+        priority: 4
+        buff: Dark Damage
+        buffValue: 30
+    - desc: 80% chance of surviving a lethal attack when at 20% of max HP or more
+    - desc: Stun rate +15%
+      meta:
+        priority: 4
+        buff: Stun Rate
+        buffValue: 15
+      lb: 5
+  obtained: Gacha
+
+- name: Summoner's Archive
+  cat: 'jp'
+  star: 5
+  picture: Summoner's_Archive
+  atk: 855
+  int: 863
+  factors:
+    - desc: Damage dealt +20% by Demon's Gate
+    - desc: Dark damage dealt +25%
+      meta:
+        priority: 4
+        buff: Dark Damage
+        buffValue: 25
+    - desc: Critical hit chance +10%
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 10
+      lb: 5
+  obtained: Coin Exchange
+
+- name: Demonology Index
+  cat: 'jp'
+  star: 5
+  picture: Demonology_Index
+  atk: 1108
+  int: 1110
+  factors:
+    - desc: Damage dealt to demons +40%
+      slayer: Demon
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Demons
+        buffValue: 40        
+    - desc: AP cost -10%
+      meta:
+        priority: 3
+        buff: AP Cost Reduction
+        buffValue: 10
+    - desc: Single target damage +15%
+      meta:
+        priority: 4
+        buff: Single Target Damage
+        buffValue: 15
+      lb: 3
+  obtained: Gacha
+
+- name: Bunny's Shaved Ice
+  cat: 'jp'
+  star: 5
+  picture: Bunny's_Shaved_Ice
+  atk: 935
+  int: 963
+  factors:
+    - desc: Ice damage dealt +40%
+      meta:
+        priority: 3
+        buff: Ice Damage
+        buffValue: 40
+    - desc: Damage dealt to dragons +30%
+      slayer: Dragon
+      slayerPct: 30
+      meta:
+        priority: 4
+        buff: Damage To Dragons
+        buffValue: 30
+    - desc: No flinching while casting symbology
+    - desc: AP recovery +30%
+      meta:
+        priority: 3
+        buff: AP Recovery
+        buffValue: 30
+      lb: 5
+  obtained: Gacha
+
+- name: Dragon's Prophecy Book
+  cat: 'jp'
+  star: 5
+  picture: Dragon's_Prophecy
+  atk: 1255
+  int: 1259
+  factors:
+    - desc: Damage dealt to dragons +40%
+      slayer: Dragon
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Dragons
+        buffValue: 40
+    - desc: Damage taken -40% when casting symbology
+      meta:
+        priority: 3
+        buff: Damage Taken Reduction
+        buffCondition: Casting Symbology
+        buffValue: 40
+    - desc: INT +5%
+      meta:
+        priority: 3
+        buff: INT
+        buffValue: 5
+      lb: 3
+  obtained: Gacha
+
+- name: Midwinter Tome
+  cat: 'jp'
+  star: 5
+  picture: Midwinter_Tome
+  atk: 507
+  int: 512
+  factors:
+    - desc: Damage dealt +20% by Thunder Javelin
+    - desc: HP +10%
+      meta:
+        priority: 1
+        buff: HP
+        buffValue: 10
+    - desc: Elemental damage dealt +10%
+      meta:
+        priority: 3
+        buff: Elemental Damage
+        buffValue: 10
+      lb: 5
+  obtained: Botanical Beast (Exchange)
+
+- name: Tales of a Stormy Holy Night
+  cat: 'jp'
+  star: 5
+  picture: Tales_of_a_Stormy_Holy_Night
+  atk: 1257
+  int: 1262
+  factors:
+    - desc: Lightning damage dealt +40%
+      meta:
+        priority: 4
+        buff: Lightning Damage
+        buffValue: 40
+    - desc: Damage taken -40% when casting symbology
+      meta:
+        priority: 3
+        buff: Damage Taken Reduction
+        buffCondition: Casting Symbology
+        buffValue: 40
+    - desc: AP cost -10%
+      meta:
+        priority: 3
+        buff: AP Cost Reduction
+        buffValue: 10
+      lb: 5
+  obtained: Gacha
+
+- name: Bunny's Adventure
+  cat: 'jp'
+  star: 5
+  picture: Bunny's_Adventure
+  atk: 1256
+  int: 1261
+  factors:
+    - desc: Damage dealt to demons +60%
+      slayer: Demon
+      slayerPct: 60
+      meta:
+        priority: 4
+        buff: Damage To Demons
+        buffValue: 60        
+    - desc: Recovers 10% of max HP every 3 seconds
+    - desc: Damage dealt +10%
+      meta:
+        priority: 3
+        buff: Damage
+        buffValue: 10
+      lb: 3
+  obtained: Gacha
+
+- name: Secret Diary
+  cat: 'jp'
+  star: 5
+  picture: Diary_of_Secrets
+  atk: 509
+  int: 512
+  factors:
+    - desc: Damage dealt +20% by Gluttony Bog
+    - desc: Damage taken -10%
+      meta:
+        priority: 1
+        buff: Damage Taken Reduction
+        buffValue: 10
+    - desc: Rush combo damage +10%
+      meta:
+        priority: 1
+        buff: Rush Damage
+        buffValue: 10
+      lb: 5
+  obtained: Mountain Matango (Exchange)
+
+- name: Immortal Archive
+  cat: 'jp'
+  star: 5
+  picture: Immortal_Archive
+  atk: 1256
+  int: 1263
+  factors:
+    - desc: Fire damage dealt +50%
+      meta:
+        priority: 4
+        buff: Fire Damage
+        buffValue: 50
+    - desc: AP cost -15%
+      meta:
+        priority: 1
+        buff: AP Cost Reduction
+        buffValue: 15
+    - desc: No flinching when casting symbology
+      lb: 5
+    - desc: Damage taken -30%
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffValue: 30
+      lb: 5
+  obtained: EP2 Coin (Exchange), Gacha
+
+- name: Monster Manifesto
+  cat: 'jp'
+  star: 5
+  picture: Grand_Grimoire
+  atk: 827
+  int: 835
+  factors:
+    - desc: Damage dealt +20% by Shadow Servant
+    - desc: AP recovery +30%
+      meta:
+        priority: 3
+        buff: AP Recovery
+        buffValue: 30 
+    - desc: Damage dealt to humanoids +10%
+      slayer: Human
+      slayerPct: 10
+      meta:
+        priority: 4
+        buff: Damage To Humans
+        buffValue: 10
+      lb: 5   
+  obtained: "Lezard / Valkyrie Profile: The Purged Wizard (Achievement)"
