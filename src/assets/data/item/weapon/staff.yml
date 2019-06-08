@@ -703,3 +703,31 @@
     - desc: Repel +1
       lb: 5
   obtained: "Lezard / Valkyrie Profile: The Purged Wizard (Achievement, Exchange)"
+
+- name: Bird Hunting Rod
+  cat: 'jp'
+  star: 5
+  picture: Birdhunter_Rod
+  atk: 959
+  int: 960
+  factors:
+    - desc: Elemental damage dealt +20%
+      meta:
+        priority: 4
+        buff: Elemental Damage
+        buffValue: 30
+    - desc: Damage dealt to birds +30%
+      slayer: Bird
+      slayerPct: 30
+      meta:
+        priority: 4
+        buff: Damage To Birds
+        buffValue: 30
+    - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
+    - desc: Damage dealt +10%
+      lb: 3
+      meta:
+        priority: 3
+        buff: Damage
+        buffValue: 10
+  obtained: Gacha
