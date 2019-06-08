@@ -1,22 +1,234 @@
+- name: Grim Reaper
+  cat: 'jp'
+  star: 4
+  picture: Grim_Reaper
+  atk: 471
+  int: 470
+  factors:
+    - desc: Imbues attacks with lightning
+      element: Lightning
+    - desc: Stun rate +5%
+      meta:
+        priority: 4
+        buff: Stun Rate
+        buffValue: 5
+  obtained: Transmutation, Gacha
+
+- name: Laser Scythe
+  cat: 'jp'
+  star: 5
+  picture: Laser_Scythe
+  atk: 49
+  int: 0
+  factors:
+    - desc: ATK +15%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 15
+    - desc: Damage dealt +10%
+      meta:
+        priority: 4
+        buff: Damage
+        buffValue: 10
+    - desc: Recovers 5% of max HP every 3 seconds
+      lb: 3
+  obtained: Coin Exchange
+
+- name: Grim Reaper's Sickle
+  cat: 'jp'
+  star: 5
+  picture: Grim_Reaper's_Sickle
+  atk: 881
+  int: 878
+  factors:
+    - desc: Single target damage +15%
+      meta:
+        priority: 4
+        buff: Single Target Damage
+        buffValue: 15
+    - desc: AP cost -5%
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 5
+    - desc: 50% chance of surviving a lethal attack when at 15% of max HP or more
+      lb: 5
+  obtained: Coin Exchange, Transmutation
 
 - name: Eldar's Scythe
   cat: 'jp'
   star: 5
   picture: Eldar_Scythe
-  atk: 533
-  int: 526
+  atk: 526
+  int: 533
   factors:
-    - desc: +20% DMG on Bloodstorm Revolution
-    - desc: +10% element damage
+    - desc: Damage dealt +20% by Bloodstorm Revolution
+    - desc: Elemental damage dealt +10%
       meta:
         priority: 4
         buff: Elemental Damage
         buffValue: 10
-    - desc: -10% DMG taken during CA
+    - desc: Damage taken -10% when using charge assault
       lb: 5
       meta:
         priority: 3
         buff: Damage Taken Reduction
+        buffValue: 15
+        buffCondition: Charge Assault
+  obtained: Sahariel Plunderer (Exchange)
+
+- name: Summoner's Sickle
+  cat: 'jp'
+  star: 5
+  picture: Summoner's_Sickle
+  atk: 535
+  int: 528
+  factors:
+    - desc: Damage dealt +20% by Backspin Blade
+    - desc: Damage dealt +10%
+      meta:
+        priority: 4
+        buff: Damage
+        buffValue: 15
+    - desc: Absorbs 5% of damage dealt by normal attacks as HP
+      lb: 5
+  obtained: Sahariel Plunderer (Exchange)
+
+- name: Quadruplex Scythe
+  cat: 'jp'
+  star: 5
+  picture: Quadruplex_Scythe
+  atk: 1263
+  int: 1256
+  factors:
+    - desc: Elemental damage dealt +20%
+      meta:
+        priority: 4
+        buff: Elemental Damage
+        buffValue: 20
+    - desc: Damage dealt to machines +30%
+      slayer: Machine
+      slayerPct: 30
+      meta:
+        priority: 4
+        buff: Damage To Machines
+        buffValue: 40        
+    - desc: Critical hit chance +30% when skill chain is >3
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffCondition: Skill Chain 3+
+        buffValue: 30
+    - desc: AP cost -30% when skill chain is >4
+      meta:
+        priority: 1
+        buff: AP Cost Reduction
+        buffCondition: Skill Chain 4+
+        buffValue: 30
+      lb: 5
+  obtained: Gacha
+
+- name: "Blazing Scythe: Kerberos Bite"
+  cat: 'jp'
+  star: 5
+  picture: Blazing_Scythe_Kerberos_Bite
+  atk: 1261
+  int: 1258
+  factors:
+    - desc: Imbues attacks with fire
+      element: Fire
+    - desc: Hitcount timer +1 second
+    - desc: ATK damage dealt +20% when hitcount is >200
+      meta:
+        priority: 4
+        buff: ATK Damage
+        buffCondition: Hit Count > 200
+        buffValue: 20
+      lb: 5
+  obtained: Gacha
+
+- name: Overwinter's Great Scythe
+  cat: 'jp'
+  star: 5
+  picture: Overwinter's_Great_Scythe
+  atk: 511
+  int: 508
+  factors:
+    - desc: Damage dealt +20% by Spinning Scythe
+    - desc: Single target damage +10%
+      meta:
+        priority: 4
+        buff: Single Target Damage
         buffValue: 10
-        buffCondition: During CA
-  obtained: Sahariel Plunderer Exchange
+    - desc: ATK damage taken -10%
+      lb: 5
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+  obtained: Botanical Beast (Exchange)
+
+- name: Jingle Bell Scythe
+  cat: 'jp'
+  star: 5
+  picture: Jingle_Bell_Scythe
+  atk: 1262
+  int: 1257
+  factors:
+    - desc: Imbues attacks with lightning
+      element: Lightning
+    - desc: Single target damage +20% when HP is 100%
+      meta:
+        priority: 4
+        buff: Single Target Damage
+        buffCondition: HP is 100%
+        buffValue: 20
+    - desc: Recovers 10% of max HP every 3 seconds
+      lb: 5
+  obtained: Gacha
+
+- name: Rogue Noir
+  cat: 'jp'
+  star: 5
+  picture: Rogue_Noir
+  atk: 509
+  int: 510
+  factors:
+    - desc: Damage dealt +20% by Ice Cool Blast
+    - desc: Damage dealt +10%
+      meta:
+        priority: 4
+        buff: Damage
+        buffValue: 10
+    - desc: Evasion AP cost -50%
+      lb: 5
+  obtained: Head Bull (Exchange)
+
+- name: Passion Rose
+  cat: 'jp'
+  star: 5
+  picture: Passion_Rose
+  atk: 1259
+  int: 1262
+  factors:
+    - desc: Imbues attacks with ice
+      element: Ice
+    - desc: Ice damage dealt +40%
+      meta:
+        priority: 4
+        buff: Ice Damage
+        buffValue: 40
+    - desc: No flinching when casting symbology
+    - desc: Damage taken -30%
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffValue: 30
+    - desc: Stun rate +15%
+      meta:
+        priority: 4
+        buff: Stun Rate
+        buffValue: 15
+      lb: 5
+  obtained: Gacha
