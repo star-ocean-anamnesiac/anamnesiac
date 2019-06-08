@@ -56,3 +56,20 @@
     - desc: Absorbs 10% of damage dealt by normal attacks as HP
       lb: 3
   obtained: Coin Exchange, Gacha
+
+- name: Blue Comet Trigger
+  cat: 'jp'
+  star: 5
+  picture: Blue_Comet_Trigger
+  atk: 651
+  int: 649
+  factors:
+    - desc: Single target damage +15%
+      meta:
+        priority: 4
+        buff: Single Target Damage
+        buffValue: 15
+    - desc: Hitcount timer +1 second
+    - desc: Additional hit that deals 5% of damage dealt by normal attacks
+      lb: 5
+  obtained: Coin Exchange
