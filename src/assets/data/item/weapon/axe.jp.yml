@@ -51,3 +51,26 @@
     - desc: Hitcount timer +1 second
       lb: 3
   obtained: Coin Exchange, Gacha
+
+- name: Jet Hammer
+  cat: 'jp'
+  star: 5
+  picture: Jet_Hammer
+  atk: 531
+  int: 529
+  factors:
+    - desc: Damage dealt +20% by Welch Spinning Chop
+    - desc: Damage dealt +10%
+      meta:
+        priority: 4
+        buff: Damage
+        buffValue: 10
+    - desc: ATK damage taken -10% when attacking
+      lb: 5
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffCondition: Attacking
+        buffValue: 10
+  obtained: Canon Dragoon (Exchange)
+  
