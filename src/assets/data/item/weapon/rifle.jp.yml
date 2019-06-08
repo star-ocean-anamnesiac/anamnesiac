@@ -334,3 +334,67 @@
         buffValue: 15
       lb: 5
   obtained: Vulcan's Darkness (Exchange)
+
+- name: Criminal Trigger
+  cat: 'jp'
+  star: 5
+  picture: Darkness_Shooter_Criminal_Trigger
+  atk: 1263
+  int: 1254
+  factors:
+    - desc: Imbues attacks with dark
+      element: Dark
+    - desc: AP cost -10%
+      meta:
+        priority: 1
+        buff: AP Cost Reduction
+        buffValue: 10
+    - desc: ATK damage taken -15% when attacking
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffCondition: Attacking
+        buffValue: 15
+      lb: 5
+  obtained: Gacha
+
+- name: Miss Confire
+  cat: 'jp'
+  star: 5
+  picture: Miss_Confire
+  atk: 861
+  int: 857
+  factors:
+    - desc: "Damage dealt +20% by Reload: Snipe"
+    - desc: ATK damage taken -15% when attacking
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffCondition: Attacking
+        buffValue: 15
+    - desc: Critical hit chance +10%
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffValue: 10
+      lb: 5
+  obtained: Nephir Diablo / Guilty Gear (Exchange)
+
+- name: Miss Confire [Burst]
+  cat: 'jp'
+  star: 5
+  picture: Miss_Confire_Burst
+  atk: 1262
+  int: 1259
+  factors:
+    - desc: Imbues attacks with fire
+      element: Fire
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP
+    - desc: ATK damage dealt +50% when skill chain is >3
+      meta:
+        priority: 4
+        buff: ATK Damage
+        buffCondition: Skill Chain 3+
+        buffValue: 50
+      lb: 5
+  obtained: Gacha (Limited)
