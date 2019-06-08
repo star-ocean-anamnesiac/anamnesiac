@@ -1,3 +1,61 @@
+- name: Nurse Rifle
+  cat: 'jp'
+  star: 5
+  picture: Nurse_Rifle
+  atk: 531
+  int: 528
+  factors:
+    - desc: Damage dealt +20% by Scatter Capsule
+    - desc: Absorbs 5% of damage dealt by normal attacks as HP
+    - desc: Damage dealt +10%
+      meta:
+        priority: 4
+        buff: Damage
+        buffValue: 10
+      lb: 5
+  obtained: Beast Kid (Exchange)
+
+- name: Summer Tropical Shot
+  cat: 'jp'
+  star: 5
+  picture: Summer_Tropical_Shot
+  atk: 532
+  int: 527
+  factors:
+    - desc: Damage dealt +20% by Aqua Ignition
+    - desc: ATK damage taken -10%
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+    - desc: AP cost -10%
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 10
+      lb: 5
+  obtained: Disaster Crab (Exchange)
+
+- name: Vampir
+  cat: 'jp'
+  star: 5
+  picture: Vampiric_Canon_Vampir
+  atk: 514
+  int: 513
+  factors:
+    - desc: ATK +15%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 15
+    - desc: INT damage taken -10%
+      meta:
+        priority: 4
+        buff: INT Damage Taken Reduction
+        buffValue: 10
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP
+      lb: 3
+  obtained: Coin Exchange, Gacha
 
 - name: Blue Comet Trigger
   cat: 'jp'
@@ -6,12 +64,342 @@
   atk: 651
   int: 649
   factors:
-    - desc: +15% DMG to single targets
+    - desc: Single target damage +15%
       meta:
         priority: 4
         buff: Single Target Damage
         buffValue: 15
-    - desc: Hit Count timer +1s
+    - desc: Hitcount timer +1 second
     - desc: Additional hit that deals 5% of damage dealt by normal attacks
       lb: 5
-  obtained: Rifle Coin Exchange
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffValue: 10
+  obtained: Coin Exchange
+
+- name: Pulse Rifle
+  cat: 'jp'
+  star: 5
+  picture: Pulse_Rifle
+  atk: 1111
+  int: 1109
+  factors:
+    - desc: Imbues attacks with lightning
+      element: Lightning
+    - desc: AP recovery +50%
+      meta:
+        priority: 4
+        buff: AP Recovery
+        buffValue: 50%
+    - desc: 70% chance of surviving a lethal attack when at 20% of max HP or more
+      lb: 5
+  obtained: Gacha
+
+- name: PMF-M4
+  cat: 'jp'
+  star: 5
+  picture: PMF-M4
+  atk: 1111
+  int: 1107
+  factors:
+    - desc: Imbues attacks with earth
+      element: Earth
+    - desc: Critical hit chance +15%
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 15
+    - desc: Evasion AP cost -50%
+      lb: 5
+  obtained: Gacha
+
+- name: Flame Cylinder
+  cat: 'jp'
+  star: 5
+  picture: Flame_Cylinder
+  atk: 1262
+  int: 1257
+  factors:
+    - desc: Imbues attacks with fire
+      element: Fire
+    - desc: Fire damage dealt +10%
+      meta:
+        priority: 4
+        buff: Fire Damage
+        buffValue: 10
+    - desc: Critical hit chance +10%
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 10
+    - desc: Critical damage dealt +15%
+      meta:
+        priority: 4
+        buff: Crit Damage
+        buffValue: 15
+    - desc: ATK damage taken -10%
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+      lb: 5
+  obtained: Gacha
+
+- name: Beach Empress
+  cat: 'jp'
+  star: 5
+  picture: Waterfall_Canon_Beach_Empress
+  atk: 1261
+  int: 1258
+  factors:
+    - desc: Imbues attacks with ice
+      element: Ice
+    - desc: Damage dealt to insects +20%
+      slayer: Insect
+      slayerPct: 20
+      meta:
+        priority: 4
+        buff: Damage To Insects
+        buffValue: 20
+    - desc: ATK damage taken -15% when targeted by enemy
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffValue: 15
+        buffCondition: Holding Aggro
+    - desc: ATK damage +15% at long range
+      meta:
+        priority: 4
+        buff: ATK Damage
+        buffValue: 15
+        buffCondition: Long Range
+      lb: 5
+  obtained: Gacha
+
+- name: Beasthunter
+  cat: 'jp'
+  star: 5
+  picture: Beasthunter
+  atk: 1260
+  int: 1256
+  factors:
+    - desc: Damage dealt to beasts +40%
+      slayer: Beast
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Beasts
+        buffValue: 40
+    - desc: Critical hit chance +15%
+      lb: 5
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 15
+    - desc: Critical damage dealt +15%
+      meta:
+        priority: 4
+        buff: Crit Damage
+        buffValue: 15
+    - desc: Single target damage 10%
+      lb: 3
+      meta:
+        priority: 4
+        buff: Single Target Damage
+        buffValue: 10
+  obtained: Gacha
+
+- name: Kaleidoscope
+  cat: 'jp'
+  star: 5
+  picture: Kaleidoscope
+  atk: 531
+  int: 529
+  factors:
+    - desc: Damage dealt +20% by Electric Shockwave
+    - desc: HP +10%
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 10
+    - desc: Lightning damage dealt +10%
+      lb: 5
+      meta:
+        priority: 4
+        buff: Lightning Damage
+        buffValue: 10
+  obtained: Shrouded Gaze (Exchange)
+
+- name: PMF-BEACH
+  cat: 'jp'
+  star: 5
+  picture: PMF_BEACH
+  atk: 862
+  int: 857
+  factors:
+    - desc: Damage dealt +20% by Warhead Delivery
+    - desc: ATK damage dealt +10%
+      meta:
+        priority: 4
+        buff: ATK Damage
+        buffValue: 10
+    - desc: ATK damage taken -15% when attacking
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffCondition: Attacking
+        buffValue: 15
+      lb: 5
+  obtained: Cannon Daddy (Draw Box)
+
+- name: Hologram Rifle
+  cat: 'jp'
+  star: 5
+  picture: Hologram_Rifle
+  atk: 1262
+  int: 1257
+  factors:
+    - desc: Imbues attacks with lightning
+      element: Lightning
+    - desc: Critical hit chance +30% when hitcount is >150
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffCondition: Hit Count > 150
+        buffValue: 30
+    - desc: ATK damage taken -15%
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffValue: 15
+      lb: 5
+  obtained: Gacha
+
+- name: "Crest Gun: Everblooming Plum"
+  cat: 'jp'
+  star: 5
+  picture: Crest_Gun_Everblooming_Plum
+  atk: 507
+  int: 510
+  factors:
+    - desc: Damage dealt +20% by Satellite Ray
+    - desc: Hitcount timer +1 second
+    - desc: ATK damage dealt +10% at long range
+      lb: 5
+      meta:
+        priority: 4
+        buff: ATK Damage
+        buffCondition: Long Range
+        buffValue: 10
+  obtained: Rekorokoro (Exchange)
+
+- name: "Happy New Years Rifle: Salutations"
+  cat: 'jp'
+  star: 5
+  picture: Happy_New_Years_Rifle_Salutations
+  atk: 1264
+  int: 1255
+  factors:
+    - desc: Imbues attacks with light
+      element: Light
+    - desc: Critical hit chance +30% when hitcount is >100
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffCondition: Hit Count > 100
+        buffValue: 30
+    - desc: Critical damage dealt +30%
+      meta:
+        priority: 4
+        buff: Crit Damage
+        buffValue: 30
+      lb: 5
+  obtained: Gacha
+
+- name: Wolf's Rifle
+  cat: 'jp'
+  star: 5
+  picture: Wolf's_Rifle
+  atk: 532
+  int: 521
+  factors:
+    - desc: Damage dealt +40% by Storm Hound
+    - desc: ATK damage dealt +15% when hitcount is >100
+      meta:
+        priority: 4
+        buff: ATK Damage
+        buffCondition: Hit Count > 100
+        buffValue: 15
+    - desc: Critical hit chance +15% at short range
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffCondition: Short Range
+        buffValue: 15
+      lb: 5
+  obtained: Vulcan's Darkness (Exchange)
+
+- name: Criminal Trigger
+  cat: 'jp'
+  star: 5
+  picture: Darkness_Shooter_Criminal_Trigger
+  atk: 1263
+  int: 1254
+  factors:
+    - desc: Imbues attacks with dark
+      element: Dark
+    - desc: AP cost -10%
+      meta:
+        priority: 1
+        buff: AP Cost Reduction
+        buffValue: 10
+    - desc: ATK damage taken -15% when attacking
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffCondition: Attacking
+        buffValue: 15
+      lb: 5
+  obtained: Gacha
+
+- name: Miss Confire
+  cat: 'jp'
+  star: 5
+  picture: Miss_Confire
+  atk: 861
+  int: 857
+  factors:
+    - desc: "Damage dealt +20% by Reload: Snipe"
+    - desc: ATK damage taken -15% when attacking
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffCondition: Attacking
+        buffValue: 15
+    - desc: Critical hit chance +10%
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffValue: 10
+      lb: 5
+  obtained: Nephir Diablo / Guilty Gear (Exchange)
+
+- name: Miss Confire [Burst]
+  cat: 'jp'
+  star: 5
+  picture: Miss_Confire_Burst
+  atk: 1262
+  int: 1259
+  factors:
+    - desc: Imbues attacks with fire
+      element: Fire
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP
+    - desc: ATK damage dealt +50% when skill chain is >3
+      meta:
+        priority: 4
+        buff: ATK Damage
+        buffCondition: Skill Chain 3+
+        buffValue: 50
+      lb: 5
+  obtained: Gacha (Limited)
