@@ -17,7 +17,7 @@
 - name: St. Halberd
   cat: 'jp'
   star: 5
-  picture: St_Halberd
+  picture: St_Halbred
   atk: 882
   int: 877
   factors:
