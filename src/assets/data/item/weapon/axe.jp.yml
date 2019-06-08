@@ -1,22 +1,36 @@
-
-- name: Jet Hammer
+- name: Flamme Hammer
   cat: 'jp'
-  star: 5
-  picture: Jet_Hammer
-  atk: 531
-  int: 529
+  star: 4
+  picture: Flamme_Hamer
+  atk: 470
+  int: 469
   factors:
-    - desc: +20% DMG on Welch Spinning Chop
-    - desc: +10% DMG
+    - desc: Imbues attacks with fire
+      element: Fire
+    - desc: Damage dealt +10%
       meta:
         priority: 4
-        buff: Damage Boost
+        buff: Damage
         buffValue: 10
-    - desc: -10% ATK DMG taken when attacking
-      lb: 5
+  obtained: Transmutation, Gacha
+
+- name: St. Halberd
+  cat: 'jp'
+  star: 5
+  picture: St_Halberd
+  atk: 882
+  int: 877
+  factors:
+    - desc: Single target damage +15%
       meta:
-        priority: 3
-        buff: ATK Damage Taken Reduction
-        buffValue: 10
-        buffCondition: When Attacking
-  obtained: Cannon Dragoon Exchange
+        priority: 4
+        buff: Single Target Damage
+        buffValue: 15
+    - desc: Normal attack AP recovery +50%
+      meta:
+        priority: 4
+        buff: AP Recovery From Normal Attacks
+        buffValue: 50
+    - desc: Additional hit that deals 10% of damage dealt by normal attacks
+      lb: 5
+  obtained: Gacha, Coin Exchange
