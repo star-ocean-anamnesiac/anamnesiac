@@ -34,3 +34,20 @@
     - desc: Additional hit that deals 10% of damage dealt by normal attacks
       lb: 5
   obtained: Gacha, Coin Exchange
+
+- name: "God's Axe: Parashu"
+  cat: 'jp'
+  star: 5
+  picture: God's_Axe_Parashu
+  atk: 655
+  int: 652
+  factors:
+    - desc: ATK +15%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 15
+    - desc: Recovers 5% of max HP every 3 seconds
+    - desc: Hitcount timer +1 second
+      lb: 3
+  obtained: Coin Exchange, Gacha
