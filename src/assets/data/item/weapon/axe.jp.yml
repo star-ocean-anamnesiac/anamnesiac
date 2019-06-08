@@ -168,3 +168,74 @@
         buff: Crit Rate
         buffValue: 15
   obtained: Gacha
+
+- name: "Knight Axe: JFT Co."
+  cat: 'jp'
+  star: 5
+  picture: Knight_Axe_JFT_Co
+  atk: 862
+  int: 857
+  factors:
+    - desc: "Damage dealt +20% by Rotating Axe: Consecutive Blows"
+    - desc: Critical hit chance +30%
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 30
+    - desc: INT damage taken -15% when attacking
+      meta:
+        priority: 4
+        buff: INT Damage Taken Reduction
+        buffCondition: Attacking
+        buffValue: 15
+  obtained: Count Grade Aroken / Radiata Stories (Exchange)
+
+- name: Ancient Axe
+  cat: 'jp'
+  star: 5
+  picture: Ancient_Axe
+  atk: 1263
+  int: 1256
+  factors:
+    - desc: Imbues attacks with lightning
+      element: Lightning
+    - desc: ATK damage dealt +40% when hitcount is >100
+      meta:
+        priority: 4
+        buff: ATK Damage
+        buffCondition: Hit Count > 100
+        buffValue: 40
+    - desc: ATK damage taken +15% (Enemies)
+      lb: 5
+      meta:
+        priority: 3
+        buff: Enemy ATK Damage Taken
+        buffValue: 15
+  obtained: Gacha
+
+- name: Flame Catastrophe
+  cat: 'jp'
+  star: 5
+  picture: Flame_Catastrophe
+  atk: 1260
+  int: 1255
+  factors:
+    - desc: Imbues attacks with fire
+      element: Fire
+    - desc: Fire damage dealt +20%
+      meta:
+        priority: 4
+        buff: Fire Damage
+        buffValue: 20
+    - desc: Stun rate +20%
+      meta:
+        priority: 4
+        buff: Stun Rate
+        buffValue: 20
+    - desc: INT damage taken -20%
+      lb: 3
+      meta:
+        priority: 3
+        buff: INT Damage Taken
+        buffValue: 20
+  obtained: Gacha
