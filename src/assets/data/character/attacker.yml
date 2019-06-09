@@ -97,12 +97,12 @@
 
   rotations:
     - name: Regular (no AP seeds and no AP redux)
-      notes: Dash out immediately after the last Pod 2.
+      notes: As fillers, Arms 1 and Pod 2 are more or less interchangeable; Arms 1 is faster, Pod 2 is cheaper.
       skills:
         - name: Normal
-        - name: Arms 1
-        - name: Pod 2
-        - name: Arms 2
+        - name: "YoRHa Arms: One"
+        - name: "YoRHa Pod: Two"
+        - name: "YoRHa Arms: Two"
 
     - name: Regular (105 AP or with AP redux)
       notes: Dash out immediately after the last Pod 2.
