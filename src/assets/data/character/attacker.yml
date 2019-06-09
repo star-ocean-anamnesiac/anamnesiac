@@ -240,7 +240,7 @@
     maxHits: 12
 
   rotations:
-    - name: Regular (Pre-Awakened)
+    - name: Regular
       skills:
         - name: Normal
         - name: Double Slash
@@ -248,7 +248,7 @@
         - name: Double Slash
           repeat: "N"
           
-    - name: Less Mobile Enemies (Pre-Awakened)
+    - name: Slow Target
       notes: Slightly more damage than the Double Slash rotation.
       skills:
         - name: Normal
@@ -256,14 +256,6 @@
         - name: Double Slash
         - name: Air Slash
           repeat: "N"          
-
-    - name: Regular (Awakened)
-      skills:
-        - name: Normal
-        - name: Air Slash
-        - name: Empyrean Slash
-        - name: Air Raid
-          repeat: "N"
     
   notes: >
       _Fidel, the starter character and sometimes face of the app icon. Fidel has suffered as time has gone on. He has the highest
@@ -398,7 +390,17 @@
           buffValue: 60
     power: ATK x 4000%
     maxHits: 12
-    
+
+  rotations:
+    - name: Regular
+      skills:
+        - name: Normal
+        - name: Air Slash
+        - name: Empyrean Slash
+        - name: Air Raid
+          repeat: "N"
+          
+
   notes: >
       _[v2] Fidel got a JP-side stealth buff, making his Air Raid a lot more consistent, as well as eliminating some other clunk attached to the move. With this, he now deals a significant amount of damage in addition to his buff, able to function reasonably as a DPS and carry at the same time. A solid comp would still need to build around him (adding AP somewhere, ideally), but he allows some flexibility and different compositions which don't rely as heavily on conditional buffs to maximize damage.
 
