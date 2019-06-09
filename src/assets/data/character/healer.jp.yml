@@ -16,7 +16,7 @@
     grd: 623
 
   talents:
-    - name: "Weapons Upgrade II"
+    - name: "Weapons Upgrade"
       effects: 
         - desc: DEF +30% at long range
           all: true
@@ -25,7 +25,7 @@
             buff: DEF
             buffCondition: Long Range
             buffValue: 30
-    - name: "Valiant Soul II"
+    - name: "Valiant Soul"
       effects:
         - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
           all: false
@@ -79,7 +79,7 @@
     grd: 628
 
   talents:
-    - name: "Amateur Orb-Wielder II"
+    - name: "Amateur Orb-Wielder"
       effects: 
         - desc: INT +15%
           all: false
@@ -87,7 +87,7 @@
             priority: 4
             buff: INT
             buffValue: 15
-    - name: "Hope for the Future III"
+    - name: "Hope for the Future"
       effects:
         - desc: Symbology cast time -60% at long range
           all: false
@@ -218,7 +218,7 @@
             priority: 1
             buff: ATK Damage Taken Reduction
             buffValue: 10
-    - name: "Kindness Is a Virtue III"
+    - name: "Kindness Is a Virtue"
       effects: 
         - desc: Recovers 3% of max HP every 3 seconds
           all: false
@@ -268,7 +268,7 @@
     grd: 628
 
   talents:
-    - name: "Sweet Whispers II"
+    - name: "Sweet Whispers"
       effects: 
         - desc: ATK damage taken -20% when in front of target
           all: true
@@ -277,7 +277,7 @@
             buff: ATK Damage Taken Reduction
             buffCondition: In Front of Target
             buffValue: 20
-    - name: "Moment of Bliss III"
+    - name: "Moment of Bliss"
       effects: 
         - desc: Recovers 3% of max HP every 3 seconds
           all: false
@@ -327,7 +327,7 @@
     grd: 611
 
   talents:
-    - name: "Gentleman's Acumen II"
+    - name: "Gentleman's Acumen"
       effects: 
         - desc: INT +15%
           all: false
@@ -335,7 +335,7 @@
             priority: 4
             buff: INT
             buffValue: 15
-    - name: "Troubleshooter III"
+    - name: "Troubleshooter"
       effects: 
         - desc: Symbology cast time -30%
           all: false
@@ -403,7 +403,7 @@
             priority: 4
             buff: ATK Damage Taken Reduction
             buffValue: 20
-    - name: "A Woman of Culture III"
+    - name: "A Woman of Culture"
       effects: 
         - desc: Recovers 3% of max HP every 3 seconds
           all: false
@@ -524,7 +524,7 @@
             priority: 4
             buff: INT
             buffValue: 30
-    - name: "Glutton II"
+    - name: "Glutton"
       effects: 
         - desc: Symbology cast time -30%
           meta:
@@ -739,11 +739,11 @@
     grd: 1141
 
   talents:
-    - name: "Healing Light II"
+    - name: "Healing Light"
       effects: 
         - desc: Recovers 10% of max HP every 5 seconds
           all: Short Range Weapons
-    - name: "Beyond Time & Space II"
+    - name: "Beyond Time & Space"
       effects: 
         - desc: Symbology cast time -80%
           meta:
@@ -979,7 +979,7 @@
     grd: 1141
 
   talents:
-    - name: "Spark of Inspiration II"
+    - name: "Spark of Inspiration"
       effects: 
         - desc: INT +20%
           all: true
@@ -987,7 +987,7 @@
             priority: 1
             buff: INT
             buffValue: 20
-    - name: "A Girl of Many Talents II"
+    - name: "A Girl of Many Talents"
       effects: 
         - desc: Rush combo damage +20%
           all: true
@@ -995,7 +995,7 @@
             priority: 1
             buff: Rush Damage
             buffValue: 20
-    - name: "Blessings of the Stars II"
+    - name: "Blessings of the Stars"
       effects: 
         - desc: Recovers 3% of max HP every 3 seconds
         - desc: Rush gauge quota -20%
@@ -1109,7 +1109,7 @@
     grd: 1050
 
   talents:
-    - name: "Beat of My Drum II"
+    - name: "Beat of My Drum"
       effects: 
         - desc: AP recovery +30% at long range
           all: true
@@ -1118,7 +1118,7 @@
             buff: AP Recovery
             buffCondition: Long Range
             buffValue: 30
-    - name: "Healer's Touch II"
+    - name: "Healer's Touch"
       effects: 
         - desc: Recovers 5% of max HP every 5 seconds
           all: Long Range Weapons
@@ -3364,14 +3364,14 @@
           all: true
     - name: "Nosy Sister"
       effects: 
-        - desc: Recover allies' AP when casting symbology
+        - desc: Recovers AP for allies when casting symbology
     - name: "Is Paris Burning?"
       effects: 
-        - desc: Symbology cast time -60%
+        - desc: Symbology cast time -40%
           meta:
             priority: 1
             buff: Cast Time Reduction
-            buffValue: 60
+            buffValue: 40
         - desc: INT damage dealt +40% when skill chain is >3
           meta:
             priority: 1
@@ -3379,6 +3379,7 @@
             buffCondition: Skill Chain 3+
             buffValue: 40
     - name: "Healing Light"
+      shortEffects: INT +20%, HP +30%, and AP +20
       effects: 
         - desc: HP +30%
           meta:
@@ -3410,6 +3411,7 @@
       maxHits: 9
     - name: "Sacre de Lumiere"
       picture: Sacre_de_Lumière
+      element: Light
       power: ATK x 810%
       ap: 29
       maxHits: 6
@@ -3418,9 +3420,9 @@
     name: "Évangile"
     picture: Évangile_Erika
     element: Light
-    shortEffects: Recover 50% of max HP (Party) and elemental damage dealt +50% (Party/20s)
+    shortEffects: Recovers 50% of max HP, and elemental damage dealt +50% (Party/20s)
     effects: 
-      - desc: Recover 50% of max HP
+      - desc: Recovers 50% of max HP
         all: true
       - desc: Elemental damage dealt +50%
         all: true
@@ -3551,6 +3553,7 @@
     - name: "King of Zoologists"
       effects: 
         - desc: Recovers 10% of max HP every 3 seconds
+          all: true
         - desc: 95% chance of surviving a lethal attack when at 20% of max HP or more at short range
           all: true
     - name: "Caretaker of Rare Animal Protected Area"
@@ -3561,12 +3564,21 @@
     - name: "Student's Feeling"
       effects: 
         - desc: ATK/INT damage dealt +20%
-        - desc: ATK/INT damage dealt +50% when hitcount >200
+          all: true
+        - desc: ATK/INT damage dealt +50% when hitcount is >200
           all: true
     - name: "Question for the Reason"
       effects: 
         - desc: Symbology cast time -100%
+          meta:
+            priority: 3
+            buff: Cast Time Reduction
+            buffValue: 100
         - desc: Normal attack AP recovery +100%
+          meta:
+            priority: 3
+            buff: AP Recovery From Normal Attacks
+            buffValue: 100
 
   skills:
     - name: "Heel Hammer"
@@ -3648,21 +3660,20 @@
         - desc: Cancel bonus increases 1 level every 0.5 seconds during charge assault standby
     - name: "Inheritor of Mother's Wishes"
       effects: 
-        - desc: Symbology cast time -100% during charge assault
+        - desc: Symbology cast time -100% during charge assault standby or when using charge assault after a normal attack
           all: false
           meta:
             priority: 3
             buff: Cast Time Reduction
-            buffCondition: Charge Assault
+            buffCondition: Charge Assault After Normal Attack, or Charge Assault Standby
             buffValue: 100      
         - desc: No flinching while casting symbology
-        - desc: Symbology cast time -100% when using charge assault
+        - desc: Symbology cast time -50%
           all: false
           meta:
             priority: 3
             buff: Cast Time Reduction
-            buffCondition: Charge Assault
-            buffValue: 100      
+            buffValue: 50      
 
   skills:
     - name: "Nurse"
