@@ -94,7 +94,50 @@
           buffValue: 50
     power: ATK x 4000%
     maxHits: 27
-    
+
+  rotations:
+    - name: Regular (no AP seeds and no AP redux)
+      notes: Dash out immediately after the last Pod 2.
+      skills:
+        - name: Normal
+        - name: Arms 1
+        - name: Pod 2
+        - name: Arms 2
+
+    - name: Regular (105 AP or with AP redux)
+      notes: Dash out immediately after the last Pod 2.
+      skills:
+        - name: Normal
+        - name: Arms 1
+        - name: Pod 2
+        - name: Arms 2
+        - name: Pod 2
+
+    - name: Rush Gain
+      skills:
+        - name: Normal
+        - name: Arms 2
+        - name: Pod 2
+        - name: Arms 2
+        
+    - name: Ranged
+      notes: 2B's DPS and rush gain are most optimal at melee.
+      skills:
+        - name: Pod 1
+        - name: Pod 2
+        - name: Pod 1
+        - name: Pod 2
+          repeat: "N"        
+
+    - name: Ranged (200%, without Pod 1 equipped)
+      notes: Deliberately whiff Arms 1, do not CA.
+      skills:
+        - name: Pod 2
+        - name: Arms 1
+        - name: Pod 2
+          repeat: "N"
+
+          
   notes: >
       _An incredible unit. Boasts amazing overall party utility, buffing ATK, AP RCV on Normal hits for everyone unlike sReimi, has an incredible post-Rush buff for the party and has kept her fluidity with her Air Dodge and dodge talents not being touched. Despite the nerfs to her ATK buffs and skill (Arms 2), she is still an absolute monster. Alongside all her utility, her actual DMG is incredible, putting all other ATK buffers to shame. Best in slot ATK buffer now and for a long time. Here's global's gFayt, enjoy your new Queen because her reign will last for a long time._
 
@@ -121,15 +164,6 @@
       - ATK buff condition is inconsistent.
       
       - Self-imbue can be a downside against certain bosses if you don't own certain weapons.
-      
-      
-      **Rotation**
-      
-      *Pod 1 VS Arms 2 - Arms 2 is now unconditionally stronger, unless you really feel like you need to rely on a ranged combo. *
-
-      *Normal > Arms 1 > Pod 2 > Arms 2 (optional > Pod 2 > dodge) - Regular combo*
-
-      *Pod 2 > whiff Arms 1 > Pod 2*n - Ranged combo at 200%*
 
 
 - name: Fidel Camuze
@@ -204,6 +238,24 @@
           buffValue: 60
     power: ATK x 3000%
     maxHits: 12
+
+  rotations:
+    - name: Regular
+      skills:
+        - name: Normal
+        - name: Double Slash
+        - name: Air Slash
+        - name: Double Slash
+          repeat: "N"
+          
+    - name: Slow Target
+      notes: Slightly more damage than the Double Slash rotation.
+      skills:
+        - name: Normal
+        - name: Air Slash
+        - name: Double Slash
+        - name: Air Slash
+          repeat: "N"          
     
   notes: >
       _Fidel, the starter character and sometimes face of the app icon. Fidel has suffered as time has gone on. He has the highest
@@ -231,12 +283,6 @@
       
       - Low ATK stat gives him lower damage compared to competing units.
       
-      
-      **Rotation**
-      
-      *Normal > Double > Air > Double^n - Rush Gain/DPS*
-      
-      *Normal > Air > Double > Air^n - DPS, if enemy doesn't move much. (Slightly more than Double spam.)*
 
 
 - name: Fidel Camuze (Awakened)
@@ -344,7 +390,17 @@
           buffValue: 60
     power: ATK x 4000%
     maxHits: 12
-    
+
+  rotations:
+    - name: Regular
+      skills:
+        - name: Normal
+        - name: Air Slash
+        - name: Empyrean Slash
+        - name: Air Raid
+          repeat: "N"
+          
+
   notes: >
       _[v2] Fidel got a JP-side stealth buff, making his Air Raid a lot more consistent, as well as eliminating some other clunk attached to the move. With this, he now deals a significant amount of damage in addition to his buff, able to function reasonably as a DPS and carry at the same time. A solid comp would still need to build around him (adding AP somewhere, ideally), but he allows some flexibility and different compositions which don't rely as heavily on conditional buffs to maximize damage.
 
