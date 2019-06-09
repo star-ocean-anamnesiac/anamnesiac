@@ -324,6 +324,39 @@
     power: ATK x 2000%
     maxHits: 18
 
+  rotations:
+    - name: Large Targets (Awakened)
+      skills:
+        - name: Normal
+        - name: Poisonous Hydroblades
+        - name: Poisonous Shot
+        - name: Poisonous Hydroblades
+          repeat: "N"
+
+    - name: Rush Gain
+      notes: Use with caution; Terror is a slow skill and Nel cannot air dodge out of risky situations.
+      skills:
+        - name: Normal
+        - name: Poisonous Terror
+        - name: Poisonous Shot
+        - name: Poisonous Terror
+          repeat: "N"
+
+    - name: Hitcount
+      skills:
+        - name: Poisonous Shot
+          ca: true
+        - name: Poisonous Shot
+          repeat: "N"
+          
+    - name: Hitcount
+      skills:
+        - name: Normal
+        - name: Poisonous Shot
+        - name: Poisonous Terror
+        - name: Poisonous Shot
+          repeat: "N"
+          
   notes: >
       _Poison is powerful, however it won't/can't always procure. Nel has decent damage and she provides a party wide -AP Cost which helps out some units. The minor crit buff can also helps boost party DPS ever so slightly. Great against units that don't resist poison. It should be noted that Nel also works decently against bosses with only 1 floor, as her AP cost reduction can amount to more rush gain in a single rotation._
 
@@ -358,13 +391,6 @@
       - Poisonous Blade is a horrible move with horrible tracking and a tiny hitbox, and her best dps relies on it.
       
       
-      **Rotation**
-      
-      *CA Terror > Shot > Terror^n - Rush Build (Better when dodging or moving a lot.)*
-
-      *CA Shot^n - Hit Count*
-
-      *Normal > Shot > Terror > Shot^n - DPS*
 
 - name: Emmerson T. Kenny
   cat: gl
@@ -522,7 +548,40 @@
             buffValue: 80
     power: ATK x 3000%
     maxHits: 6
-    
+
+  rotations:
+    - name: Regular
+      skills:
+        - name: Normal
+        - name: Sylvan Shot
+        - name: Hydroblades
+        - name: Sylvan Shot
+          repeat: "N"
+          
+    - name: Slow Target
+      skills:
+        - name: Normal
+        - name: Hydroblades
+        - name: Sylvan Shot
+        - name: Hydroblades
+          repeat: "N"  
+
+    - name: Rush Gain
+      skills:
+        - name: Victory Terror
+          ca: true
+        - name: Sylvan Shot
+        - name: Victory Terror
+          repeat: "N"
+
+    - name: Hitcount
+      skills:
+        - name: Sylvan Shot
+          ca: true
+        - name: Sylvan
+          repeat: "N"
+
+
   notes: >
       _Clair is a shooter with defender talents, and can subsitute for one in most cases, with -30% atk damage taken and anti-flinch for the party._
 
@@ -553,16 +612,6 @@
 
       - Non-ace so has less stats.
       
-      
-      **Rotation**
-      
-      *"CA Terror > Sylvan > Terror^n - Rush Build*
-      
-      *CA Sylvan^n - Hit Build*
-
-      *Normal >  Hydro > Sylvan > Hydro^n - Grounded/Slow Targets*
-
-      *Normal > Sylvan > Hydro > Sylvan^n - General Combo*
  
 - name: Reimi Saionji
   cat: gl
