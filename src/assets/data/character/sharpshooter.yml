@@ -325,16 +325,8 @@
     maxHits: 18
 
   rotations:
-    - name: Large Targets (Awakened)
-      skills:
-        - name: Normal
-        - name: Poisonous Hydroblades
-        - name: Poisonous Shot
-        - name: Poisonous Hydroblades
-          repeat: "N"
-
     - name: Rush Gain
-      notes: Use with caution; Terror is a slow skill and Nel cannot air dodge out of risky situations.
+      notes: Use with caution; Terror is slow and Nel does not have air dodge.
       skills:
         - name: Normal
         - name: Poisonous Terror
@@ -3354,6 +3346,39 @@
     power: ATK x 3000%
     maxHits: 18
 
+  rotations:
+    - name: Large Targets (Awakened)
+      skills:
+        - name: Normal
+        - name: Poisonous Hydroblades
+        - name: Poisonous Shot
+        - name: Poisonous Hydroblades
+          repeat: "N"
+
+    - name: Rush Gain
+      notes: Use with caution; Terror is a slow skill and Nel does not have air dodge.
+      skills:
+        - name: Normal
+        - name: Poisonous Terror
+        - name: Poisonous Shot
+        - name: Poisonous Terror
+          repeat: "N"
+
+    - name: Hitcount
+      skills:
+        - name: Poisonous Shot
+          ca: true
+        - name: Poisonous Shot
+          repeat: "N"
+          
+    - name: Hitcount
+      skills:
+        - name: Normal
+        - name: Poisonous Shot
+        - name: Poisonous Terror
+        - name: Poisonous Shot
+          repeat: "N"
+          
   notes: >
       _Poison is powerful...when it works.  After awakening, Nel herself is also now powerful though, in addition to finally providing damage buffs alongside
       her crit and AP reduction.  In normal circumstances she's fairly average, but against larger enemies Aqua Spread combined with her new skill chain
