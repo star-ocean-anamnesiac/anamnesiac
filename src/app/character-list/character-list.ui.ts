@@ -266,6 +266,7 @@ export class CharacterSortPopover {
                             [alt]="skill.name"></app-lazy-img>
 
                           <span *ngIf="skill.name" class="rotation-skill-name">
+                            <strong *ngIf="skill.ca">CA</strong>
                             {{ skill.name }}
                             <span *ngIf="skill.repeat">
                               (^{{ skill.repeat }})
