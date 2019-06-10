@@ -96,7 +96,7 @@
     maxHits: 27
 
   rotations:
-    - name: Regular (no AP seeds and no AP redux)
+    - name: Regular (no AP seeds and no AP reduction)
       notes: As fillers, Arms 1 and Pod 2 are more or less interchangeable; Arms 1 is faster, Pod 2 is cheaper.
       skills:
         - name: Normal
@@ -104,7 +104,7 @@
         - name: "YoRHa Pod: Two"
         - name: "YoRHa Arms: Two"
 
-    - name: Regular (105 AP or with AP redux)
+    - name: Regular (105 AP or with AP reduction)
       notes: Dash out immediately after the last Pod 2.
       skills:
         - name: Normal
@@ -123,7 +123,7 @@
           repeat: "N"   
           
     - name: Rush Gain
-      notes: Situational; remember that Arms 2 is slow and likely to miss with mobile targets.
+      notes: Situational; remember that Arms 2 is slow and may miss with mobile targets.
       skills:
         - name: Normal
         - name: "YoRHa Arms: Two"
@@ -139,43 +139,37 @@
           repeat: "N"
           
     - name: Full Ranged
-      notes: 2B's DPS and rush gain are most optimal at melee.
+      notes: Not recommended for most situations; 2B's DPS and rush gain are most optimal at melee.
       skills:
         - name: "YoRHa Pod: One"
         - name: "YoRHa Pod: Two"
         - name: "YoRHa Pod: One"
         - name: "YoRHa Pod: Two"
-          repeat: "N"        
+          repeat: "N" 
 
-
-
-          
   notes: >
-      _An incredible unit. Boasts amazing overall party utility, buffing ATK, AP RCV on Normal hits for everyone unlike sReimi, has an incredible post-Rush buff for the party and has kept her fluidity with her Air Dodge and dodge talents not being touched. Despite the nerfs to her ATK buffs and skill (Arms 2), she is still an absolute monster. Alongside all her utility, her actual DMG is incredible, putting all other ATK buffers to shame. Best in slot ATK buffer now and for a long time. Here's global's gFayt, enjoy your new Queen because her reign will last for a long time._
-
-      _[v2] She got buffed back to pre-rerelease JP levels early. Unconditionally better than Fidel, conditionally as good as VRena. No ATK buff will exceed her for a long time, with no weapon/class restriction. Arms 2 returns to the rotation._
+      _An incredible unit. Boasts amazing overall party utility, bringing a strong ATK buff, unconditional AP recovery on normal attacks (unlike Summer Reimi), and an incredible post-rush buff to the party. Her air dodge and evasion talents give her fluidity in a fight. Alongside all her utility, her actual damage is very solid.    
       
       
-      **TL DR**
       
       **Pros**
       
-      - Strong ATK based buff and elemental post-rush buff.
+      - Strong party-wide ATK buff and post-rush elemental damage buff.
       
-      - Huge AP recovery on normal buff.
+      - Unconditional AP recovery on normal attacks for the party.
       
-      - Cheaper dodging and can air dodge.
+      - Can air dodge and has cheaper evasion costs.
       
-      - Innate Light & Dark imbue.
+      - Innate light and dark imbue.
       
-      - Has a melee and ranged skill set.
+      - While her most optimal DPS is at melee, her ranged skills give her flexibility.
       
       
       **Cons**
 
-      - ATK buff condition is inconsistent.
+      - ATK buff is conditional on maintaining full HP.
       
-      - Self-imbue can be a downside against certain bosses if you don't own certain weapons.
+      - Self-imbue can be a downside against enemies with elemental resistances.
 
 
 - name: Fidel Camuze
@@ -270,23 +264,13 @@
           repeat: "N"          
     
   notes: >
-      _Fidel, the starter character and sometimes face of the app icon. Fidel has suffered as time has gone on. He has the highest
-      unconditional party-wide buff in the game at 40%, though both Lasswell and 2B can surpass it with the right conditions and
-      party composition. His AP reduction talent and really potent AP reduection post rush, lets him really output a lot of damage
-      by chaining attacks._
-      
-      _For downsides, well, all he is bringing to the party is an ATK buff, characters like 2B and Halloween Millie bring similar or
-      suprior levels of buffing with AP recovery on top. Even the freebie Ace of the FFBE collab Lasswell brings a slight bonus
-      to melee characters in movement field nullification. His damage is also not stellar, he has quite a low attack stat compared
-      to other attacks and his party wide buff and ability to spam attacks more don't make up for it compared to other attackers._
-      
-      **TL DR**
+      _Fidel, the starter character and sometimes face of the app. Fidel's 40% unconditional party-wide ATK buff is still reasonable, but he gives no AP recovery from normals, which limits his utility as an attack buffer compared to units like 2B and Halloween Millie. His personal damage is not stellar, though this is mitigated to some degree by his AP reduction talent and potent post-rush buff.   
       
       **Pros**
       
-      - Strong ATK based buff for the party.
+      - Strong party-wide ATK buff.
       
-      - AP reduction and even more post-rush allows skill spamming.
+      - Passive AP reduction talent and even more reduction post-rush allows skill spamming.
       
       
       **Cons**
@@ -410,39 +394,29 @@
         - name: Air Slash
         - name: Empyrean Slash
         - name: Air Raid
-          repeat: "N"
-          
+          repeat: "N"          
 
   notes: >
-      _[v2] Fidel got a JP-side stealth buff, making his Air Raid a lot more consistent, as well as eliminating some other clunk attached to the move. With this, he now deals a significant amount of damage in addition to his buff, able to function reasonably as a DPS and carry at the same time. A solid comp would still need to build around him (adding AP somewhere, ideally), but he allows some flexibility and different compositions which don't rely as heavily on conditional buffs to maximize damage.
+      _[v2] Fidel got a JP-side stealth buff, making his Air Raid a lot more consistent, as well as eliminating some other clunk attached to the move. With this, he now deals a significant amount of damage, allowing him to function reasonably as an attack buffer and carry at the same time. A solid comp would still need to build around him (Ideally adding AP recovery somewhere), but he allows some flexibility and different compositions which don't rely as heavily on conditional buffs to maximize damage.
 
       [Potential] With his changes, Fidel becomes a pub hero, bringing his own buffing and extremely good DPS. That said, he still suffers in premades, but will do particularly well on auto, where his particular strengths shine (Air Raid hits easily, don't need AP normals as heavily, non-conditional buff)._
       
       
-      **TL DR**
-      
-      
       **Pros**
       
-      - Strong ATK based buff for the party
+      - Strong unconditional party-wide ATK buff.
       
-      - AP reduction and even more post rush allows skill spamming
+      - Passive AP reduction talent and even more reduction post-rush allows skill spamming.
       
-      - Can be used also be played at range with Air Slash > Empyrean Slash spam
+      - Has ranged skills which give him more flexibility.
       
-      - Air Raid has high rush gain. This makes <20 second rushes very possible after an initial rush
+      - Air Raid has high rush gain, for easy 20s rush chaining.
       
       **Cons**
       
-      - Doesn't bring any utility beyond his ATK buff
+      - Doesn't bring any party utility beyond his ATK buff.
       
-      - All his awakening talents only affect himself
       
-      **Rotation**
-      
-      *Normal > Double > CA Air > Raid^n - If needing to step back mid rotation; Air Raid still hits from a distance.*
-
-      *Normal > Air > Double/Empyrean > Raid^n - DPS, especially if the target is large and/or slow.*
 
 - name: Cliff Fittir
   cat: gl
@@ -515,37 +489,54 @@
       - desc: N/A
     power: ATK x 4500%
     maxHits: 25
-    
+
+  rotations:
+    - name: Regular (101 AP)
+      notes: DPS and decent rush gain. Dash out of Fists after the third hit.
+      skills:
+        - name: Normal
+        - name: Crescent Locus
+        - name: Triple Kick
+        - name: Crescent Locus
+          repeat: "5"
+        - name: Fists of Fury
+
+    - name: Elemental Burst
+      notes: Will not "push" targets.
+      skills:
+        - name: Normal
+        - name: Crescent Locus
+        - name: Triple Kick
+        - name: Fists of Fury
+          repeat: "N"
+
+    - name: Rush Gain
+      notes: Low DPS. Dash-cancel Fists and the final Crescent after their third hit.
+      skills:
+        - name: Normal
+        - name: Fists of Fury
+        - name: Normal
+        - name: Crescent Locus
+        - name: Crescent Locus
+        
   notes: >
-      _Great for solo content, with dirt cheap AP costs and a powerful rush. Notably Fists of Fury's multihits linger when canceling the move, allowing Cliff to avoid committing to it and rapidly build hit count. Main weakness is that his buffs are all selfish, meaning he enjoys ally buffs to get where he wants to be. Cliff is outscaled by other carries, and will be moving into the future until his awakening._
-      
-      **TL DR**
+      _Great for solo content, with dirt cheap AP costs and a powerful rush. Notably Fists of Fury's multihits linger when canceling the move, allowing Cliff to avoid committing to it and rapidly build hit count. Main weakness is that his buffs are all selfish, meaning that he brings little party utility and depends heavily on party buffs to optimize his damage output. Cliff is outscaled by other carries, and will continue to fall behind until his awakening._
       
       **Pros**
       
-      - Powerful when built around.
+      - Powerful when party comp is built for him.
       
       - Good for solo play.
       
       
       **Cons**
       
-      - Zero utility for the party.
+      - Completely selfish buffs; zero utility for the party.
       
       - No ranged attack.
       
       - No post-rush buff.
       
-      
-      **Rotation**
-      
-      *Normal > Crescent > Triple > Fists^3 -> Non Disruptive when EB*
-
-      *Normal > Crescent > Fists (> Dash Cancel After 3rd Hit) - Low Commitment Combo*
-
-      *Normal > Crescent > Triple > Crescent^5 > Fists > Dash After Hit 3 - DPS & Decent Rush Gain (1 AP Seed Required)*
-      
-      *Normal > Fist > Dash Cancel After 3rd Hit > Normal > Crescent > Crescent > Dash Cancel After 3rd Hit - Rush Only, Low DPS*
       
 - name: Anne Patriceani
   cat: gl
@@ -614,31 +605,33 @@
           buffValue: 60
     power: ATK x 2500%
     maxHits: 8
-    
+
+  rotations:
+    - name: Regular
+      skills:
+        - name: Normal
+        - name: Triple Kick
+        - name: Drill Spike
+        - name: Triple Kick
+          repeat: "N"
+
   notes: >
-      _She buffs Critical Rate, which is only really useful in Crystal Guardian and high DEF targets (and she does very well with that). Outside of that niche need, there are much better choices to use in your party._
-      
-      
-      **TL DR**
+      _Buffs critical hit chance, but brings little other party utility and has low damage output. Niche use in Crystal Guardian and against high DEF targets.
       
       
       **Pros**
       
-      - Gives a strong passive crit rate and an unmatched post-rush buff to crit rate
+      - Strong passive party-wide crit buff, as well as an unmatched post-rush crit buff.
       
-      - 5 star non-ace so costs less to limit break and augment
+      - 5-star non-ace, meaning she costs less to limit break and augment.
       
       
       **Cons**
       
-      - 5 star non-ace so has less stats
+      - 5-star non-ace, meaning she has lower stats.
       
-      - Poor damage and little utility beyond crit buffing
+      - Poor damage and little utility beyond crit buffing.
       
-      
-      **Rotation**
-      
-      *Normal > Triple > Drill > Triple > Triple - DPS & Rush*
 
 
 - name: Daril Camuze
