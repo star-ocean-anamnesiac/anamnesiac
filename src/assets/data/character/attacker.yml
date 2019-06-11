@@ -4676,39 +4676,39 @@
 
   stats:
     hp: 17210
-    atk: 3433
+    atk: 3719
     int: 1549
     def: 1811
     hit: 1148
     grd: 826
 
   talents:
-    - name: "Cherry Blossom Riot"
+    - name: "Glorious Cherry Blossoms II"
       effects: 
         - desc: Nullifies charge assault critical damage penalty
           all: Attackers
-        - desc: ATK damage dealt +40% during charge assault
+        - desc: ATK damage dealt +50% during charge assault
           all: Attackers
           meta:
             priority: 3
             buff: ATK Damage
-            buffValue: 40
+            buffValue: 50
     - name: "Adaptable"
-      shortEffects: ATK +15%/+30% when hitcount is >100/>200
+      shortEffects: ATK +15%/+30% when hitcount is >50/>100
       effects: 
-        - desc: ATK +15% when hitcount is >100
+        - desc: ATK +15% when hitcount is >50
+          all: false
+          meta:
+            priority: 1
+            buff: ATK
+            buffCondition: Hit Count > 50
+            buffValue: 15
+        - desc: ATK +30% when hitcount is >100
           all: false
           meta:
             priority: 1
             buff: ATK
             buffCondition: Hit Count > 100
-            buffValue: 15
-        - desc: ATK +30% when hitcount is >200
-          all: false
-          meta:
-            priority: 1
-            buff: ATK
-            buffCondition: Hit Count > 200
             buffValue: 30
     - name: "Moral Beauty"
       effects: 
@@ -4719,14 +4719,14 @@
             buff: AP Cost Reduction
             buffValue: 40
     - name: "Hunt Leader"
-      shortEffects: ATK +20% and HP +10%
+      shortEffects: ATK +30% and HP +10%
       effects: 
-        - desc: ATK +20%
+        - desc: ATK +30%
           all: false
           meta:
             priority: 1
             buff: ATK
-            buffValue: 20
+            buffValue: 30
         - desc: HP +10%
           all: false
   
@@ -4749,12 +4749,12 @@
       maxHits: 2
     - name: "Dual Sword Arts"
       picture: Dualsword_Arts
-      power: ATK x 710%
+      power: ATK x 790%
       ap: 37
       maxHits: 6
       
   rush:
-    name: "Radiation Device"
+    name: "Radiation Bots"
     picture: Radiation_Device_Sakura_Maria
     shortEffects: AP cost -50% and recovers 10% of max HP every 3 seconds (Self/20s)
     effects: 
@@ -4768,5 +4768,5 @@
       - desc: Recovers 10% of max HP every 3 seconds
         all: false
         duration: 20
-    power: ATK x 5000%
+    power: ATK x 5500%
     maxHits: 20
