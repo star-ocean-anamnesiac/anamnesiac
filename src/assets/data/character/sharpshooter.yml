@@ -3546,54 +3546,47 @@
   star: 5
 
   stats:
-    hp: 18564
+    hp: 19278
     atk: 2854
     int: 1523
-    def: 2099
+    def: 2190
     hit: 1239
     grd: 910
 
   talents:
-    - name: "Armory Contest Winner"
+    - name: "Tournament Winner II"
       effects: 
         - desc: No flinching when taking damage of 15% of max HP or less 
           all: true
-        - desc: Taunt +2
+        - desc: Taunt +3
           all: false
-    - name: "Cultivated Victories"
-      shortEffects: Damage dealt +40% and ATK/INT damage taken -20% when targeted by enemy (Party)
+    - name: "Competitive Intuition II"
       effects: 
-        - desc: Damage dealt +40% when targeted by enemy
+        - desc: Damage dealt +45% when targeted by enemy
           all: true
           meta:
             priority: 1
             buff: Damage
             buffCondition: When holding aggro
             buffValue: 40
-        - desc: ATK damage taken -20% when targeted by enemy
+        - desc: ATK/INT damage taken -25% when targeted by enemy
           all: true
           meta:
             priority: 3
-            buff: ATK Damage Taken Reduction
+            buffs:
+              - ATK Damage Taken Reduction
+              - INT Damage Taken Reduction
             buffCondition: When holding aggro
-            buffValue: 20
-        - desc: INT damage taken -20% when targeted by enemy
-          all: true
-          meta:
-            priority: 3
-            buff: INT Damage Taken Reduction
-            buffCondition: When holding aggro
-            buffValue: 20
-    - name: "Memento Ring"
-      shortEffects: Damage dealt +50% and critical hit chance +20% when not targeted by enemy (Party)
+            buffValue: 25
+    - name: "A Cherished Ring II"
       effects: 
-        - desc: Damage dealt +50% when not targeted by enemy
+        - desc: Damage dealt +60% when not targeted by enemy
           all: true
           meta:
             priority: 1
             buff: Damage
             buffCondition: Not holding aggro
-            buffValue: 50
+            buffValue: 60
         - desc: Critical hit chance +20% when not targeted by enemy
           all: true
           meta:
@@ -3602,7 +3595,7 @@
             buffCondition: Not holding agro
             buffValue: 20
     - name: "Changing Heart"
-      shortEffects: ATK +15%, DEF +15%, and HP +30%
+      shortEffects: ATK +15%, DEF +20%, and HP +35%
       effects: 
         - desc: ATK +15%
           all: false
@@ -3610,13 +3603,13 @@
             priority: 1
             buff: ATK
             buffValue: 15
-        - desc: DEF +15%
+        - desc: DEF +20%
           all: false
           meta:
             priority: 4
             buff: DEF
-            buffValue: 15
-        - desc: HP +30%
+            buffValue: 20
+        - desc: HP +35%
           all: false
           meta:
             priority: 4
@@ -3624,18 +3617,18 @@
             buffValue: 30
           
   skills:
-    - name: "Lightning Chain: Cherry Blossom"
+    - name: "Lightning Chain: Blossom"
       picture: Lightning_Chain
       element: Lightning
       power: ATK x 160%
       ap: 16
       maxHits: 9
-    - name: "Flying Guillotine: Cherry Blossom"
+    - name: "Flying Guillotine: Blossom"
       picture: Guillotine
       power: ATK x 310%
       ap: 19
       maxHits: 4
-    - name: "Dancing Sword: Cherry Blossom"
+    - name: "Dancing Sword: Blossom"
       picture: Dancing_Sword
       power: ATK x 1300%
       ap: 40
@@ -3643,12 +3636,12 @@
     - name: "Phoenix Drive"
       picture: Phoenix_Drive
       element: Fire
-      power: ATK x 490%
+      power: ATK x 520%
       ap: 20
       maxHits: 2
 
   rush:
-    name: "Phoenix Blast"
+    name: "Phoenix Blast Wave"
     picture: Phoenix_Blast_Sakura_Dias 
     shortEffects: Single target damage +30% and AP recovery +50% (Party/20s)
     element: Fire
@@ -3667,6 +3660,6 @@
           priority: 1
           buff: AP Recovery
           buffValue: 50
-    power: ATK x 4000%
+    power: ATK x 4500%
     maxHits: 10
     
