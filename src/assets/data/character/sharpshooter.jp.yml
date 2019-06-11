@@ -19,7 +19,7 @@
       effects: 
         - desc: Hitcount timer +0.5 seconds
           all: true
-    - name: "Hidden Talent III"
+    - name: "Hidden Talent"
       effects:
         - desc: Critical hit chance +30%
           meta:
@@ -82,7 +82,7 @@
             priority: 1
             buff: Enemy ATK Reduction
             buffValue: 20
-    - name: "A Rebel Soul II"
+    - name: "A Rebel Soul"
       effects:
         - desc: No flinching when taking damage of 20% of max HP or less
           all: true
@@ -392,7 +392,7 @@
     grd: 509
 
   talents:
-    - name: "Resistance II"
+    - name: "Resistance"
       effects: 
         - desc: Hitcount timer +1 second
           all: true
@@ -450,7 +450,7 @@
       effects: 
         - desc: Nullifies curse for 180 seconds
           all: true
-    - name: "Runemaster II"
+    - name: "Runemaster"
       effects: 
         - desc: Damage dealt to undead +20%
           all: true
@@ -646,11 +646,11 @@
     grd: 763
 
   talents:
-    - name: "Nervous Tension III"
+    - name: "Nervous Tension"
       effects: 
         - desc: Nullifies paralysis for 180 seconds
           all: true
-    - name: "Assistance II"
+    - name: "Assistance"
       effects: 
         - desc: Damage dealt to machines +20%
           all: true
@@ -2079,7 +2079,7 @@
             buffValue: 20
         - desc: 70% chance of surviving a lethal attack when at 20% of max HP or more when in front of target
           all: true
-    - name: "Side Order II"
+    - name: "Side Order"
       effects: 
         - desc: Critical hit chance +30% when behind target
           all: true
@@ -5889,7 +5889,7 @@
       effects: 
         - desc: Absorbs 15% of damage dealt by normal attacks as HP
           all: true
-    - name: "Crimson Cup II"
+    - name: "Crimson Cup"
       effects: 
         - desc: Damage dealt +40%
           all: true
@@ -6215,14 +6215,14 @@
     grd: 777
 
   talents:
-    - name: "Demon Girl II"
+    - name: "Demon Girl"
       effects: 
         - desc: Damage dealt to humanoids +40%
           meta:
             priority: 4
             buff: Damage To Humans
             buffValue: 40
-    - name: "Chocolate Temptation II"
+    - name: "Chocolate Temptation"
       effects: 
         - desc: Nullifies poison for 180 seconds
           all: true
