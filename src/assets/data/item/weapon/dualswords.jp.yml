@@ -564,7 +564,7 @@
       lb: 5
   obtained: Gacha (Limited)
 
-- name: Cherry Blossom Beamswords
+- name: Cherry Blossom Beam Sword
   cat: 'jp'
   star: 5
   picture: Cherry_Blossom_Beamswords
@@ -572,7 +572,7 @@
   int: 528
   factors:
     - desc: Damage dealt +20% by Dualsword Arts
-    - desc: Critical damage dealt +10% when using charge assault
+    - desc: Critical damage dealt +10% during charge assault
       meta:
         priority: 3
         buff: Crit Damage
