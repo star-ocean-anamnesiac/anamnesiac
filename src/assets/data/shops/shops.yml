@@ -891,7 +891,7 @@
     - vp chapter 3
 
   items:
-    - name: Magic Crystalx 100
+    - name: Magic Crystal x 100
       stock: 0
       cost: 1
       type: draw-gacha  
@@ -1119,7 +1119,7 @@
       type: improvement-hammer        
 
 
-- name: Luther Coin Exchange
+- name: Luther Coin
   icon: currency-coin-m1
   cat: gl
   currency: Luther Coin
@@ -1277,6 +1277,123 @@
       type: seed-other  
 
    
+- name: Astral M2 Coin
+  icon: currency-coin-m2
+  cat: gl
+  currency: Astral M2 Coin
+  aliases:
+    - Mother Polyphaga M2
+    - Polyphaga M2
 
+  items:
+    - name: Astral Coin x 70
+      stock: 0
+      cost: 1
+      type: draw-gacha  
+    - name: 5* Weapon Ticket
+      stock: 2
+      cost: 10
+      type: draw-ticket-weapon            
+    - name: 5* Character Ticket
+      stock: 1
+      cost: 15
+      type: draw-ticket-character     
+    - name: L. Limit Breaker
+      stock: 1
+      cost: 20
+      type: improvement-limitbreak
+    - name: "Platinum Thread: Enhance"
+      stock: 5
+      cost: 15
+      type: improvement-thread
+    - name: "Gold Thread: Enhance"
+      stock: 10
+      cost: 10
+      type: improvement-thread           
+    - name: Ra. Platinum Prism
+      stock: 0
+      cost: 5
+      type: improvement-prism
+    - name: "Platinum Thread: Enhance"
+      stock: 0
+      cost: 20
+      type: improvement-thread      
+    - name: Gold-Patterned Bandana
+      stock: 3
+      cost: 30
+      type: accessory
+    - name: Sturdy Bracelet
+      stock: 3
+      cost: 30
+      type: accessory      
 
+    - name: AP Starseed
+      stock: 1
+      cost: 50
+      type: seed-ap
+      
 
+- name: Blossom Coin
+  icon: currency-coin-m1
+  cat: gl
+  currency: Blossom Coin
+  aliases:
+    - Sakura M1
+    - Cherry Blossom M1
+    - Crown Do Do M1
+    - Crown Dodo M1
+
+  items:
+    - name: Cherry Blossom Beam Sword
+      stock: 1
+      cost: 3000
+      type: dualswords
+    - name: Blue-Green Shortsword
+      stock: 1
+      cost: 3000
+      type: dagger
+    - name: "Blossom Hammer: Cap Inc."
+      stock: 5
+      cost: 2000
+      type: improvement-hammer-special
+    - name: "Blossom Hammer: Cap Inc."
+      stock: 5
+      cost: 2500
+      type: improvement-hammer-special    
+    - name: AP Starseed
+      stock: 1
+      cost: 8000
+      type: seed-ap   
+    - name: 5* Weapon Ticket
+      stock: 1
+      cost: 3000
+      type: draw-ticket-weapon   
+    - name: 4-5* Char Ticket
+      stock: 3
+      cost: 2500
+      type: draw-ticket-character
+    - name: L. Limit Breaker
+      stock: 1
+      cost: 4000
+      type: improvement-limitbreak       
+    - name: "Gold Hammer: Enhance"
+      stock: 10
+      cost: 500
+      type: improvement-hammer  
+    - name: Rainbow Crystal
+      stock: 3
+      cost: 2500
+      type: improvement-crystal
+      
+    - name: "Plat. Hammer: Enhance"
+      stock: 0
+      cost: 1500
+      type: improvement-hammer    
+    - name: Platinum Ingot
+      stock: 0
+      cost: 1000      
+      type: currency-ingot      
+    - name: Furry Tail
+      stock: 3
+      cost: 15000
+      type: accessory
