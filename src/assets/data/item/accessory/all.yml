@@ -821,7 +821,7 @@
   factors:
     - desc: 30% chance of surviving a lethal attack when at 10% of max HP or more and at short range
     - desc: Taunt +2
-  obtained: Mother Polyphaga (Achievement, Exchange, Drop)   
+  obtained: Mother Polyphaga (Achievement, Exchange, Drop)
   
 - name: Fate Talisman III
   cat: 'gl'
@@ -835,7 +835,7 @@
         buff: Crit Rate
         buffValue: 10
   obtained: Story
-
+  
 - name: Bracelet of Earth I
   cat: 'gl'
   star: 3
