@@ -35,7 +35,9 @@
     - name: "Scanner Type"
       effects: 
         - desc: Evasion AP cost -50%
+          all: true
         - desc: Movement speed +30%
+          all: true
     - name: "Treacherous Blade"
       effects: 
         - desc: Evasion possible during air attacks
