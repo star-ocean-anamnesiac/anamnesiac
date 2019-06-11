@@ -862,7 +862,7 @@
         buff: Rush Damage
         buffCondition: Hit Count > 100
         buffValue: 10
-  obtained: Crown Dodo (Achievement)
+  obtained: Crown Do Do (Achievement)
 
 - name: Furry Tail
   cat: 'gl'
@@ -877,5 +877,5 @@
         buff: AP Cost Reduction
         buffCondition: Holding Aggro
         buffValue: 5
-  obtained: Crowned Dodo (Achievement, Exchange, Drop)
+  obtained: Crown Do Do (Achievement, Exchange, Drop)
 
