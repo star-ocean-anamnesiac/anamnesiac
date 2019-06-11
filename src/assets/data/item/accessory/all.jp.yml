@@ -1,13 +1,2079 @@
+- name: White Rose Badge
+  cat: 'jp'
+  star: 5
+  picture: White_Rose_Badge
+  def: 753
+  factors:
+    - desc: 40% chance to nullify poison
+    - desc: Damage taken -5%
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffValue: 5
+  obtained: Pumpkin Cryptvine (Exchange, Drop, Draw Box), Sahariel Plunder (Achievement)
+
+- name: Eagle Eye Charm
+  cat: 'jp'
+  star: 5
+  picture: Eagle_Eye_Charm
+  def: 728
+  factors:
+    - desc: Stun rate +10%
+      meta:
+        priority: 4
+        buff: Stun Rate
+        buffValue: 10
+  obtained: Pumpkin Cryptvine (Achievement, Gacha Box), Armaros (Exchange, Drop), Land Kraken (Draw Box)
 
 - name: Emil Mask
-  cat: jp
+  cat: 'jp'
   star: 5
   picture: Emil's_Face
   def: 728
   factors:
-    - desc: 40% chance of freezing nullification
-    - desc: 2% HP recovery every 5 seconds
-  obtained: NieR Geared Wisp (Gacha/Drop)
+    - desc: 40% chance to nullify freeze
+    - desc: Recovers 2% of max HP every 5 seconds
+  obtained: Geared Wisp / NieR (Achievement, Draw Box, Drop)
 
-  notes: >
-    It's okay, it does its job on the Nier units which it comes with to help keep their HP topped off from minor incidental damage from trash mobs before the boss floor. MLBable.	
+- name: Lunar Tear Bauble
+  cat: 'jp'
+  star: 5
+  picture: Lunar_Tear
+  def: 753
+  factors:
+    - desc: Recovers 5% of max HP on perfect dodge
+    - desc: Cures status ailments on perfect dodge
+  obtained: Geared Wisp / NieR (Achievement, Drop)
+
+- name: Ring of the General
+  cat: 'jp'
+  star: 5
+  picture: General_Ring
+  def: 728
+  factors:
+    - desc: ATK damage taken -10%
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+    - desc: GRD +10%
+      meta:
+        priority: 4
+        buff: GRD
+        buffValue: 10
+  obtained: Michael (Exchange, Drop), Mountain Matango (Achievement)
+
+- name: Sturdy Bracelet
+  cat: 'jp'
+  star: 5
+  picture: Sturdy_Bracelet
+  def: 803
+  factors:
+    - desc: Damage taken -5%
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffValue: 5
+  obtained: Colossal Beak (Exchange), Mother Polyphaga (Achievement), Ocypete Necromancer (Draw Box, Exchange)
+
+- name: Gold Coro Necklace
+  cat: 'jp'
+  star: 5
+  picture: Gold_Koro_Necklace
+  def: 728
+  factors:
+    - desc: ATK damage taken -10%
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+    - desc: 30% chance of surviving a lethal attack when at 10% of max HP or more
+  obtained: Christmas Horndevil (Achievement, Exchange, Drop)
+
+- name: Christmas Reindeer
+  cat: 'jp'
+  star: 5
+  picture: Mujin_Kun
+  def: 753
+  factors:
+    - desc: Recovers 2% of max HP every 5 seconds
+    - desc: AP cost -5%
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 5
+  obtained: Christmas Horndevil (Achievement, Exchange)
+
+- name: Jinxed Necklace
+  cat: 'jp'
+  star: 5
+  picture: Bat_Necklace
+  def: 753
+  factors:
+    - desc: Rush combo damage +5%
+      meta:
+        priority: 4
+        buff: Rush Damage
+        buffValue: 10
+    - desc: 30% chance of surviving a lethal attack when at 10% of max HP or more
+  obtained: Pumpkin Cryptvine (Achievement)
+
+- name: Hawkeye Charm
+  cat: 'jp'
+  star: 5
+  picture: Hawkeye_Charm
+  def: 728
+  factors:
+    - desc: Critical hit chance +10%
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 10
+    - desc: Stun rate +5%
+      meta:
+        priority: 4
+        buff: Stun Rate
+        buffValue: 10
+  obtained: Eternal Queen / Predate Queen (Achievement), Shine Totem (Achievement), Disaster Crab (Achievement)
+
+- name: Journeyman's Charm
+  cat: 'jp'
+  star: 5
+  picture: Wayfarer's_Charm
+  def: 728
+  factors:
+    - desc: +25% chance to nullify paralysis
+    - desc: +25% chance to nullify poison
+  obtained: Colossal Beak (Exchange, Drop), Knight Exile / FFBE (Achievement) Dimension Beast (Achievement)
+
+- name: Healing Band
+  cat: 'jp'
+  star: 5
+  picture: Healing_Bangle
+  def: 728
+  factors:
+    - desc: Recovers 2% of max HP every 5 seconds
+    - desc: 30% chance of surviving a lethal attack when at 10% of max HP or more
+  obtained: Colossal Beak (Exchange), Monarch Zinae (Achievement)
+
+- name: Silver Armlet
+  cat: jp'
+  star: 5
+  picture: Silver_Armlet
+  def: 728
+  factors:
+    - desc: Critical hit chance -10% (Enemies)
+    - desc: Damage taken -5%
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffValue: 5
+  obtained: Luther (Exchange, Drop)
+
+- name: Anti-poison Amulet IV
+  cat: 'jp'
+  star: 5
+  picture: Anti_Poison_Amulet_IV
+  def: 753
+  factors:
+    - desc: 50% chance to nullify poison
+  obtained: Gerel (Exchange)
+
+- name: Anti-paralysis Amulet IV
+  cat: 'jp'
+  star: 5
+  picture: Anti_Paralysis_Amulet_IV
+  def: 753
+  factors:
+    - desc: 50% Chance of Paralysis Nullification
+  obtained: Gerel (Exchange), Coro Revorse (Exchange, Drop)
+
+- name: Fire Amulet IV
+  cat: 'jp'
+  star: 5
+  picture: Armlet_of_Fire_IV
+  def: 753
+  factors:
+    - desc: Fire resistance +100%
+  obtained: Gerel (Exchange)
+
+- name: Anti-freezing Amulet IV
+  cat: 'jp'
+  star: 5
+  picture: Anti_Freezing_Amulet_IV
+  def: 753
+  factors:
+    - desc: 50% chance to nullify freeze
+  obtained: Jie Revorse (Exchange, Drop), Geared Wisp / NieR (Achievement)
+
+- name: Protection Armlet IV
+  cat: 'jp'
+  star: 5
+  picture: Armlet_of_Protection
+  def: 753
+  factors:
+    - desc: Damage taken -10%
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffValue: 10
+  obtained: Jie Revorse (Exchange, Drop)
+
+- name: Resolve Talisman IV
+  cat: 'jp'
+  star: 5
+  picture: Talisman_of_Indomitability_IV
+  def: 753
+  factors:
+    - desc: 20% chance of surviving a lethal attack when at 10% of max HP or more
+  obtained: Jie Revorse (Exchange, Drop), Geared Wisp / NieR (Achievement)
+
+- name: Symbol of the Snow God
+  cat: 'jp'
+  star: 5
+  picture: Crest_of_the_Ice_God
+  def: 728
+  factors:
+    - desc: 25% chance to nullify freeze
+    - desc: HIT +10%
+      meta:
+        priority: 4
+        buff: HIT
+        buffValue: 10
+  obtained: Eternal Queen / Predate Queen (Exchange, Drop), Christmas Horndevil (Achievement, Exchange)
+
+- name: Symbol of the Sea God
+  cat: 'jp'
+  star: 5
+  picture: Crest_of_the_Sea_God
+  def: 728
+  factors:
+    - desc: Silence resistance +25%
+    - desc: INT damage taken -10%
+      meta:
+        priority: 4
+        buff: INT Damage Taken Reduction
+        buffValue: 10
+  obtained: Millioneyes / Luin D'Mont (Exchange, Drop)
+
+- name: Anti-silence Amulet IV
+  cat: 'jp'
+  star: 5
+  picture: Anti_Silence_Amulet_IV
+  def: 753
+  factors:
+    - desc: 50% chance to nullify silence
+  obtained: Blood Valkyrie (Exchange, Drop)
+
+- name: Quarry's Charm
+  cat: 'jp'
+  star: 5
+  picture: Target_Charm
+  def: 803
+  factors:
+    - desc: Damage taken -10%
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffValue: 10
+    - desc: Taunt +3
+  obtained: Transmogrified Alma (Achievement)
+
+- name: Coro Plush
+  cat: 'jp'
+  star: 5
+  picture: Koro_Plushie
+  def: 728
+  factors:
+    - desc: Critical hit chance +15% when in front of enemy
+      meta:
+        priority: 3
+        buff: Crit Rate
+        buffValue: 15
+        buffCondition: Facing Enemy
+    - desc: ATK damage taken -5% at short range
+      meta:
+        priority: 3
+        buff: ATK Damage Taken Reduction
+        buffValue: 5
+        buffCondition: short Range
+  obtained: Knight Exile / FFBE (Draw Box)
+
+- name: Moogle Plush
+  cat: 'jp'
+  star: 5
+  picture: Moglin_Plushie
+  def: 753
+  factors:
+    - desc: 40% chance of surviving a lethal attack when at 20% of max HP or more
+    - desc: Damage taken -10% at long range
+      meta:
+        priority: 3
+        buff: Damage Taken Reduction
+        buffValue: 10
+        buffCondition: Far Range
+  obtained: Knight Exile / FFBE (Achievement, Drop, Draw Box)
+
+- name: Valentine's Pouch
+  cat: 'jp'
+  star: 5
+  picture: Valentine's_Pouch
+  def: 728
+  factors:
+    - desc: HP +5%
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 5
+    - desc: Recovers 2% of max HP every 5 seconds
+  obtained: Mountain Matango / Valentine (Achievement, Drop, Exchange)
+
+- name: Bunny Hair Clip
+  cat: 'jp'
+  star: 5
+  picture: Rabbit_Hair_Accessory
+  def: 753
+  factors:
+    - desc: ATK damage dealt +20% when using charge assault
+      meta:
+        priority: 3
+        buff: ATK Damage
+        buffCondition: Charge Assault
+        buffValue: 20
+    - desc: Stun rate +5%
+      meta:
+        priority: 1
+        buff: Stun Rate
+        buffValue: 5
+  obtained: Mountain Matango / Valentine (Achievement)
+
+- name: Ring of Healing
+  cat: 'jp'
+  star: 5
+  picture: Heal_Ring
+  def: 728
+  factors:
+    - desc: ATK damage taken -10%
+      meta:
+        priority: 1
+        buff: ATK Damage Taken
+        buffValue: 10
+    - desc: Recovers 2% of max HP every 5 seconds
+  obtained: Facula (Draw Box, Drop)
+
+- name: Heat-up Bangle
+  cat: 'jp'
+  star: 5
+  picture: Heat_Up_Bangle
+  def: 728
+  factors:
+    - desc: Damage taken -15% when hitcount is >50
+      meta:
+        priority: 3
+        buff: Damage Taken Reduction
+        buffCondition: Hit Count 50+
+        buffValue: 15
+  obtained: Facula (Achievement)
+
+- name: Charm of Insight
+  cat: 'jp'
+  star: 5
+  picture: Flashing_Necklace
+  def: 728
+  factors:
+    - desc: Critical hit chance +15%
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffValue: 15
+    - desc: Critical damage dealt +10%
+      meta:
+        priority: 1
+        buff: Crit Damage
+        buffValue: 10
+  obtained: "Facula (Achievement), Lezard + Blood Valkyrie / Valkyrie Profile: The Purged Wizard (Exchange)"
+
+- name: Enchanted Bird's Charm
+  cat: 'jp'
+  star: 5
+  picture: Demonic_Bird's_Charm
+  def: 728
+  factors:
+    - desc: Symbology cast time -10%
+      meta:
+        priority: 1
+        buff: Cast Time Reduction
+        buffValue: 10
+    - desc: ATK damage taken -5%
+      meta:
+        priority: 1
+        buff: ATK Damage Taken Reduction
+        buffValue: 5
+  obtained: Monarch Zinae (Exchange, Drop)
+
+- name: Blitz Armlet
+  cat: 'jp'
+  star: 5
+  picture: Chain_Attack_Bracelet
+  def: 728
+  factors:
+    - desc: Hitcount timer +0.5 seconds
+    - desc: ATK damage taken +10% when hitcount is >200
+      meta:
+        priority: 3
+        buff: ATK Damage
+        buffValue: 10
+        buffCondition: Hit Count > 200
+  obtained: Monarch Zinae (Achievement)
+
+- name: Anti-curse Amulet IV
+  cat: 'jp'
+  star: 5
+  picture: Anti_Poison_Amulet_IV
+  def: 753
+  factors:
+    - desc: 50% chance to nullify curse
+  obtained: Uniform Claude / Prince Claude (Exchange, Drop)
+
+- name: Energy Bracelet
+  cat: 'jp'
+  star: 5
+  picture: Energy_Bracelet
+  def: 803
+  factors:
+    - desc: HP +10%
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 10
+    - desc: 30% chance of surviving a lethal attack when at 10% of max HP or more
+  obtained: Millioneyes / Luin D'Mont (Achievement), Phantom Dream Fungus (Achievement)
+
+- name: War God's Symbol
+  cat: 'jp'
+  star: 5
+  picture: Crest_of_the_Warrior
+  def: 728
+  factors:
+    - desc: INT damage taken -10%
+      meta:
+        priority: 4
+        buff: INT Damage Taken Reduction
+        buffValue: 10
+    - desc: HIT +10%
+      meta:
+        priority: 4
+        buff: HIT
+        buffValue: 10
+  obtained: Executioner (Exchange, Drop), Mother Virus Pod (Achievement), Shrouded Gaze (Achievement)
+
+- name: Emerald Ring
+  cat: 'jp'
+  star: 5
+  picture: Emerald_Ring
+  def: 728
+  factors:
+    - desc: AP cost -5%
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 10
+  obtained: Transmogrified Alma (Exchange), Shine Totem (Achievement), Ancient Guardian (Achievement)
+
+- name: Extrication Ring
+  cat: 'jp'
+  star: 5
+  picture: Rush_Ring
+  def: 728
+  factors:
+    - desc: Rush combo damage +10%
+      meta:
+        priority: 1
+        buff: Rush Damage
+        buffValue: 10
+  obtained: Beast Monarch / Monarch Chimera (Achievement), Beastmaster Venbat / Infinite Indiscovery (Achievement), Beast Kid (Achievement)
+
+- name: Vanguard Bangle
+  cat: 'jp'
+  star: 5
+  picture: Forward_Bangle
+  def: 728
+  factors:
+    - desc: No flinching when taking damage of 5% of max HP or less
+    - desc: 30% chance of surviving a lethal attack when at 10% of max HP or more
+  obtained: Lucifer (Achievement, Exchange), Champ Pater / End of Eternity 1 (Draw Box)
+
+- name: Bracelet of Earth I
+  cat: 'jp'
+  star: 3
+  picture: Bracelet_of_Earth_I
+  def: 633
+  factors: 
+    - desc: Earth damage taken -50%
+  obtained: Story
+
+- name: Fate Talisman III
+  cat: 'jp'
+  star: 4
+  picture: Talisman_of_Lethality_III
+  def: 658
+  factors:
+    - desc: Critical hit chance -5% (Enemies)
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 10
+  obtained: Story
+
+- name: Robust_Talisman_IV
+  cat: 'jp'
+  star: 5
+  picture: Robus_Talisman_IV
+  def: 753
+  factors:
+    - desc: No flinching when taking damage of 10% of max HP or less
+  obtained: Rerun M2 Coin Exchange
+
+- name: Silent Guard
+  cat: 'jp'
+  star: 5
+  picture: Anti_Silence_Amulet_IV
+  def: 728
+  factors: 
+    - desc: +40% chance to nullify silence
+    - desc: INT damage taken -5%
+      meta:
+        priority: 4
+        buff: INT Damage Taken Reduction
+        buffValue: 5
+  obtained: Lucifer (Drop, Exchange), Cannon Dragoon (Achievement)
+
+- name: Combat Armlet
+  cat: 'jp'
+  star: 5
+  picture: Gap_Bangle
+  def: 753
+  factors:
+    - desc: No flinching when taking damage of 15% of max HP or less at short range
+    - desc: AP recovery +30% at long range
+      meta:
+        priority: 3
+        buff: AP Recovery
+        buffValue: 30
+        buffCondition: long Range
+  obtained: Lucifer (Achievement, Exchange)
+
+- name: Common Ring
+  cat: 'jp'
+  star: 5
+  picture: Common_Ring
+  def: 728
+  factors:
+    - desc: ATK damage taken -10%
+      meta:
+        priority: 3
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+    - desc: Stun rate +5%
+      meta:
+        priority: 1
+        buff: Stun Rate
+        buffValue: 5
+  obtained: Mother Virus Pod (Drop), G-Imitation Ghost (Achievement)
+
+- name: Intact Talisman
+  cat: 'jp'
+  star: 5
+  picture: Robus_Talisman_IV
+  def: 753
+  factors:
+    - desc: ATK damage dealt +10% when HP is 100%
+      meta:
+        priority: 3
+        buff: ATK Damage
+        buffValue: 10
+        buffCondition: HP is 100
+    - desc: No flinching when HP is 100%
+  obtained: Mother Virus Pod (Achievement)
+
+- name: Capell's Flute
+  cat: 'jp'
+  star: 5
+  picture: Capell's_Flute
+  def: 728
+  factors:
+    - desc: Rush combo damage +10%
+      meta:
+        priority: 3
+        buff: Rush Damage
+        buffValue: 10
+    - desc: Taunt +3
+  obtained: Beastmaster Venbat / Infinite Undiscovery (Achievement, Drop)
+
+- name: Sigmund's Necklace
+  cat: 'jp'
+  star: 5
+  picture: Sigmund's_Necklace
+  def: 803
+  factors:
+    - desc: 30% chance to nullify paralysis
+    - desc: 30% chance of surviving a lethal attack when at 20% of max HP or more
+  obtained: Beastmaster Venbat / Infinite Undiscovery (Achievement, Drop)
+
+- name: Silver Bunny Statue
+  cat: 'jp'
+  star: 5
+  picture: Silver_Bunny_Statue
+  def: 728
+  factors:
+    - desc: HP +5%
+      meta:
+        priority: 1
+        buff: HP
+        buffValue: 5
+    - desc: ATK damage taken -10%
+      meta:
+        priority: 3
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+  obtained: Triumvirate Pt. 1 (Achievement, Drop)
+
+- name: Gold Bunny Statue
+  cat: 'jp'
+  star: 5
+  picture: Gold_Bunny_Statue
+  def: 753
+  factors:
+    - desc: Critical hit chance +10%
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 10
+    - desc: Rush combo damage +5%
+      meta:
+        priority: 4
+        buff: Rush Damage
+        buffValue: 10
+  obtained: Triumvirate Pt. 1 (Achievement, Drop)
+
+- name: Reporter's Armband
+  cat: 'jp'
+  star: 5
+  picture: Newspaper_Reporter_Armband
+  def: 728
+  factors:
+    - desc: HP +10%
+      meta:
+        priority: 3
+        buff: HP
+        buffValue: 10
+    - desc: 40% chance to nullify paralysis
+  obtained: Shine Totem (Achievement, Exchange, Drop, Draw Box), Supipi-chan (Achievement)
+
+- name: Cat Scrunchie
+  cat: 'jp'
+  star: 5
+  picture: Cat_Scrunchie
+  def: 753
+  factors:
+    - desc: No flinching when taking damage of 20% of max HP or less when targeted by enemy
+    - desc: Critical hit chance +15% when not targeted by enemy
+      meta:
+        priority: 3
+        buff: Crit Rate
+        buffValue: 15
+        buffCondition: Not holding aggro
+  obtained: Shine Totem (Achievement), Josephine (Achievement), Botanical Beast (Achievement)
+
+- name: Pure White Barrette
+  cat: 'jp'
+  star: 5
+  picture: Pure_White_Hair_Ornament
+  def: 728
+  factors:
+    - desc: INT damage taken -15%
+      meta:
+        priority: 3
+        buff: INT Damage Taken Reduction
+        buffValue: 15
+    - desc: HP +5%
+      meta:
+        priority: 1
+        buff: HP
+        buffValue: 5
+  obtained: "Lezard + Blood Valkyrie / Valkyrie Profile: The Purged Wizard (Achievement, Drop, Exchange)"
+
+- name: Goddess Ear Cuff
+  cat: 'jp'
+  star: 5
+  picture: Godess's_Earcuffs
+  def: 753
+  factors:
+    - desc: Damage taken -10% at short range
+      meta:
+        priority: 3
+        buff: Damage Taken Reduction
+        buffCondition: Short Range
+        buffValue: 10
+    - desc: Recovers 3% of max HP every 5 seconds at long range
+  obtained: "Lezard + Blood Valkyrie / Valkyrie Profile: The Purged Wizard (Achievement, Exchange)" 
+
+- name: Jet-Black Barrette
+  cat: 'jp'
+  star: 5
+  picture: Jet_Black_Hair_Ornament
+  def: 728
+  factors:
+    - desc: Recovers 3% of max HP every 5 seconds when targeted by enemy
+    - desc: Taunt +2
+  obtained: "Ballistic Rhino / Valkyrie Profile: The Purged Wizard (Achievement, Drop)"
+
+- name: Valkyrie Feather
+  cat: 'jp'
+  star: 5
+  picture: Valkyrie's_Feather
+  def: 753
+  factors:
+    - desc: Critical hit chance +20% when using charge assault
+      meta:
+        priority: 1
+        buff: HP
+        buffCondition: charge assault
+        buffValue: 20
+    - desc: ATK damage taken -10%
+      meta:
+        priority: 3
+        buff: ATK Damage Taken Reduction
+        buffValue: 10      
+  obtained: "Ballistic Rhino / Valkyrie Profile: The Purged Wizard (Achievement, Exchange)"
+
+- name: Alchemist's Glasses
+  cat: 'jp'
+  star: 5
+  picture: Alchemist's_Glasses
+  def: 728
+  factors:
+    - desc: No flinching while casting symbology when hitcount is >150
+    - desc: 30% chance of surviving a lethal attack when at 10% of max HP or more
+  obtained: "Lezard / Valkyrie Profile: The Purged Wizard (Achievement, Exchange)" 
+
+- name: Head Sorceror's Handkerchief
+  cat: 'jp'
+  star: 5
+  picture: Top_Magician's_Handerchief
+  def: 753
+  factors:
+    - desc: Rush combo damage +15% when hitcount is >150
+      meta:
+        priority: 3
+        buff: Rush Damage
+        buffCondition: Hit Count > 150
+        buffValue: 15
+    - desc: Hitcount timer +1 second 
+  obtained: "Lezard / Valkyrie Profile: The Purged Wizard (Achievement, Exchange), Rekorokoro (Achievement)"  
+
+- name: Doujin d(＾o＾)b
+  cat: 'jp'
+  star: 5
+  picture: Doujin_d(＾o＾)b・どーじんd(＾O＾)b
+  def: 728
+  factors:
+    - desc: Damage taken -15%
+      meta:
+        priority: 3
+        buff: Damage Taken Reduction
+        buffValue: 15    
+    - desc: ATK damage taken -10% when facing target
+      meta:
+        priority: 3
+        buff: Damage Taken Reduction
+        buffCondition: Facing Target
+        buffValue: 10      
+  obtained: GPS Winter Comiket, 2018 April Fools
+
+- name: Gold-Patterned Bandana
+  cat: 'jp'
+  star: 5
+  picture: Gold_Patterned_Bandana
+  def: 728
+  factors:
+    - desc: 30% chance of surviving a lethal attack when at 10% of max HP or more and at short range
+    - desc: Taunt +2
+  obtained: Mother Polyphaga (Achievement, Exchange, Drop)
+
+- name: Goldcraft Earrings
+  cat: 'jp'
+  star: 5
+  picture: Goldcraft_Earrings
+  def: 753
+  factors:
+    - desc: AP cost -10% when hitcount is >100
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffCondition: Hit Count > 100
+        buffValue: 10
+    - desc: Taunt +2
+  obtained: Mother Polyphaga (Achievement), Titan Eren (Achievement)
+  
+- name: Fur Tail
+  cat: 'jp'
+  star: 5
+  picture: Fur_Tail
+  def: 728
+  factors:
+    - desc: Evasion AP cost -50%
+    - desc: AP cost -5% when targeted by enemy
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffCondition: Holding Aggro
+        buffValue: 5
+  obtained: Crowned Dodo (Achievement, Exchange, Drop), Head Bull (Achievement, Draw Box)
+
+- name: Sakura Crested Plate
+  cat: 'jp'
+  star: 5
+  picture: Cherry_Blossom_Crested_Plate
+  def: 753
+  factors:
+    - desc: No flinching during charge assault
+    - desc: Damage taken -10% when attacking
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffCondition: Attacking
+        buffValue: 10
+  obtained: Crown Dodo (Achievement)
+
+- name: Talisman of Lethality IV
+  cat: 'jp'
+  star: 5
+  picture: Talisman_of_Lethality_III
+  def: 753
+  factors:
+    - desc: Critical hit chance -10% (Enemies)
+  obtained: Rerun M2 Coin Exchange
+
+- name: Spring 2018 Live T-Shirt
+  cat: 'jp'
+  star: 5
+  picture: Spring_2018_Live_T-Shirt
+  def: 728
+  factors:
+    - desc: Rush combo damage +5%
+      meta:
+        priority: 4
+        buff: Rush Damage
+        buffValue: 10
+    - desc: Stun rate +5%
+      meta:
+        priority: 4
+        buff: Stun Rate
+        buffValue: 5
+  obtained: 2018 Star Ocean Live Collection Music Concert Promotional Event
+
+- name: White Brim
+  cat: 'jp'
+  star: 5
+  picture: White_Brim
+  def: 728
+  factors:
+    - desc: ATK damage taken -10%
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+    - desc: HIT +10%
+      meta:
+        priority: 4
+        buff: HIT
+        buffValue: 10
+  obtained: Josephine (Achievement, Exchange, Drop), Fortress Scissors (Achievement)
+
+- name: Ribbon Cross Tie
+  cat: 'jp'
+  star: 5
+  picture: Ribbon_Cross_Tie
+  def: 753
+  factors:
+    - desc: HP +10%
+      meta:
+        priority: 3
+        buff: HP
+        buffValue: 10
+    - desc: Damage dealt +5%
+      meta:
+        priority: 1
+        buff: Damage
+        buffValue: 5
+  obtained: Josephine (Achievement), Nephir Diablo (Achievement, Draw Box)
+
+- name: Red Combat Sash
+  cat: 'jp'
+  star: 5
+  picture: Red_Combat_Sash
+  def: 728
+  factors:
+    - desc: No flinching when taking of damage of 20% of max HP or less and hitcount is >100
+    - desc: Critical hit chance +15% when hitcount is >150
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffCondition: Hit Count > 150
+        buffValue: 15
+  obtained: Shrouded Gaze (Achievement, Exchange, Drop), Crimson Dalvaros (Achievement, Exchange)
+
+- name: FC Goggles
+  cat: 'jp'
+  star: 5
+  picture: FC_Goggles
+  def: 753
+  factors:
+    - desc: AP cost -5% at long range
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffCondition: Long Range
+        buffValue: 5
+    - desc: Repel +1
+  obtained: Shrouded Gaze (Achievement), Boring Horn Blitz Reve (Achievement, Draw Box)
+
+- name: Longsleeve Pig Shirt
+  cat: 'jp'
+  star: 5
+  picture: Pig_Longsleeve_Shirt
+  def: 728
+  factors:
+    - desc: 40% chance of surviving a lethal attack when at 10% of max HP more and at long range
+    - desc: Recovers 2% of max HP every 5 seconds
+  obtained:  Cannon Daddy / End of Eternity 2 (Achievement)
+
+- name: Miniature Goddesss of Companion Statue
+  cat: 'jp'
+  star: 5
+  picture: Miniature_Goddess_of_Compassion_Statue
+  def: 753
+  factors:
+    - desc: No flinching when taking damage of 20% of max HP or less at long range
+    - desc: Rush combo damage +10% at long range
+      meta:
+        priority: 4
+        buff: Rush Damage
+        buffCondition: Long Range
+        buffValue: 10
+  obtained: Cannon Daddy / End of Eternity 2 (Achievement, Drop)
+
+- name: Dressgloves of Ruin
+  cat: 'jp'
+  star: 5
+  picture: Dressgloves_of_Ruin
+  def: 728
+  factors:
+    - desc: Hitcount timer +0.5 seconds
+    - desc: Damage taken -10% at long range
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffCondition: Long Range
+        buffValue: 10
+  obtained: Dimension Beast (Exchange, Drop)
+
+- name: Spring Colored Hairclip
+  cat: 'jp'
+  star: 5
+  picture: Spring_Coloured_Hairclip
+  def: 753
+  factors:
+    - desc: No flinching when taking damage of 15% of max HP or less at short range
+    - desc: ATK damage taken -10% at short range
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffCondition: Short Range
+        buffValue: 10
+  obtained: Dimension Beast (Achievement)
+
+- name: Raiden Tyranny Z
+  cat: 'jp'
+  star: 5
+  picture: Raiden_Tyranny_Z
+  def: 728
+  factors:
+    - desc: Movement speed +30%
+    - desc: Taunt +3
+  obtained: King Jumbo Pond Snail (Exchange, Drop)
+
+- name: Raiden Tyranny ω
+  cat: 'jp'
+  star: 5
+  picture: Raiden_Tyranny_ω
+  def: 728
+  factors:
+    - desc: 70% chance to nullify freeze
+    - desc: Movement speed -5%
+  obtained: King Jumbo Pond Snail (Exchange, Drop)
+
+- name: Groom's Corsage
+  cat: 'jp'
+  star: 5
+  picture: Groom's_Corsage
+  def: 728
+  factors:
+    - desc: Damage taken -10%
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffValue: 10
+    - desc: AP cost -5% when hitcount is >50
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffCondition: Hit Count > 50
+        buffValue: 5
+  obtained: Ocypete Necromancer (Drop, Exchange, Draw Box)
+
+- name: Bride's Necklace
+  cat: 'jp'
+  star: 5
+  picture: Bride's_Necklace
+  def: 753
+  factors:
+    - desc: ATK damage taken -10%
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+    - desc: Rush combo damage +15% when hitcount is >150
+      meta:
+        priority: 1
+        buff: Rush Damage
+        buffCondition: Hit Count > 150
+        buffValue: 15
+  obtained: Ocypete Necromancer (Drop, Exchange, Draw Box)
+
+- name: Basket Bouquet
+  cat: 'jp'
+  star: 5
+  picture: Basket_Bouquet
+  def: 728
+  factors:
+    - desc: Rush combo damage +10% when hitcount is >100
+      meta:
+        priority: 1
+        buff: Rush Damage
+        buffCondition: Hit Count > 100
+        buffValue: 10
+    - desc: Evasion AP cost -50%
+  obtained: Land Kraken (Drop, Exchange, Draw Box)
+
+- name: Wedding Bangle
+  cat: 'jp'
+  star: 5
+  picture: Wedding_Bangle
+  def: 753
+  factors:
+    - desc: HP +10%
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 10
+    - desc: Recovers 2% of max HP every 5 seconds
+  obtained: Land Kraken (Achievement)
+
+- name: Booster Shoes
+  cat: 'jp'
+  star: 5
+  picture: Booster_Shoes
+  def: 728
+  factors:
+    - desc: Evasion AP cost -50%
+    - desc: Movement speed +30%
+  obtained: Beast Kid (Drop, Exchange, Draw Box)
+
+- name: Nurse's Cap
+  cat: 'jp'
+  star: 5
+  picture: Nurse_Cap
+  def: 753
+  factors:
+    - desc: Absorbs 5% of damage dealt by normal attacks as HP
+    - desc: Damage dealt +5%
+      meta:
+        priority: 1
+        buff: Damage
+        buffValue: 5
+  obtained: Beast Kid (Achievement)
+
+- name: Enamel Belt
+  cat: 'jp'
+  star: 5
+  picture: Enamel_Belt
+  def: 728
+  factors:
+    - desc: No flinching during charge assault
+    - desc: Rush combo damage +5%
+      meta:
+        priority: 1
+        buff: Rush Damage
+        buffValue: 5
+  obtained: Ancient Guardian (Achievement, Exchange, Drop)
+
+- name: Crest of Blazing Flames
+  cat: 'jp'
+  star: 5
+  picture: Crest_of_Blazing_Flames
+  def: 753
+  factors:
+    - desc: Damage taken -15% when targeted by enemy at short range
+      meta:
+        priority: 3
+        buff: Damage Taken Reduction
+        buffCondition: Holding Aggro and Short Range
+        buffValue: 15
+    - desc: Taunt +3
+  obtained: Ancient Guardian (Achievement)
+
+- name: Dorne's Affection
+  cat: 'jp'
+  star: 5
+  picture: Dorne's Affection
+  def: 728
+  factors:
+    - desc: HP +10%
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 10
+    - desc: Evasion AP cost -50%
+  obtained: Sea Dragon Chieftain (Achievement, Exchange, Drop)
+
+- name: Dolphin Necklace
+  cat: 'jp'
+  star: 5
+  picture: Dophin_Necklace
+  def: 753
+  factors:
+    - desc: ATK damage dealt +20% when skill chain is >3
+      meta:
+        priority: 3
+        buff: ATK Damage
+        buffValue: 20
+        buffCondition: Skill Chain 3+
+    - desc: Rush combo damage +5%
+      meta:
+        priority: 1
+        buff: Rush Damage
+        buffValue: 5
+  obtained: Sea Dragon Chieftain (Achievement)
+
+- name: Dorne's Friendship
+  cat: 'jp'
+  star: 5
+  picture: Dorne's_Friendship
+  def: 728
+  factors:
+    - desc: Elemental damage dealt +5% at short range
+      meta:
+        priority: 3
+        buff: Elemental Damage
+        buffValue: 5
+        buffCondition: Short Range
+    - desc: No flinching when taking damage of 15% of max HP or less at short range
+  obtained: Disaster Crab (Achievement, Exchange, Drop)
+  
+- name: Coro's Squeeze Bottle
+  cat: 'jp'
+  star: 5
+  picture: Koro's_Squeeze_Bottle
+  def: 753
+  factors:
+    - desc: Absorbs 5% of damage dealt by normal attacks as HP
+    - desc: AP cost -5%
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 5
+  obtained: Disaster Crab (Achievement)
+
+- name: Cheeky Butler's Pocket Watch
+  cat: 'jp'
+  star: 5
+  picture: Cheeky_Butler's_Pocket_Watch
+  def: 728
+  factors:
+    - desc: No flinching during charge assault
+    - desc: AP cost -5% at long range
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffCondition: Long Range
+        buffValue: 5
+  obtained: Phantom Dream Fungus (Achievement, Exchange, Drop)
+
+- name: Lost Cat Headdress
+  cat: 'jp'
+  star: 5
+  picture: Lost_Cat_Headdress
+  def: 753
+  factors:
+    - desc: AP recovery +30%
+      meta:
+        priority: 3
+        buff: AP Recovery
+        buffValue: 30
+    - desc: Damage taken -15% when hitcount is >50
+      meta:
+        priority: 3
+        buff: Damage Taken Reduction
+        buffCondition: Hit Count > 50
+        buffValue: 15
+  obtained: Phantom Dream Fungus (Achievement)
+
+- name: Tika's Ribbon Brooch
+  cat: 'jp'
+  star: 5
+  picture: Tika's_Ribbon_Brooch
+  def: 728
+  factors:
+    - desc: HP +10%
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 10
+    - desc: Rush combo damage +5%
+      meta:
+        priority: 4
+        buff: Rush Damage
+        buffValue: 5
+  obtained: Twin Eclipse Story (Chapter 2)
+
+- name: Teardrop Sunglasses
+  cat: 'jp'
+  star: 5
+  picture: Teardrop_Sunglasses
+  def: 728
+  factors:
+    - desc: INT damage dealt +10% at long range
+      meta:
+        priority: 3
+        buff: INT Damage
+        buffCondition: Long Range
+        buffValue: 10
+    - desc: AP recovery +20% at long range
+      meta:
+        priority: 1
+        buff: AP Recovery
+        buffCondition: Long Range
+        buffValue: 20
+  obtained: Hell Schutzer (Exchange, Drop)
+
+- name: Platinum Bracelet
+  cat: 'jp'
+  star: 5
+  picture: Platinum_Bracelet
+  def: 803
+  factors:
+    - desc: ATK damage dealt +10% when hitcount is >150
+      meta:
+        priority: 3
+        buff: ATK Damage
+        buffCondition: Hit Count > 150
+        buffValue: 10
+    - desc: Taunt +3
+  obtained: Hell Schutzer (Achievement)
+
+- name: Bunny Bangle
+  cat: 'jp'
+  star: 5
+  picture: Bunny_Bangle
+  def: 728
+  factors:
+    - desc: HP +5%
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 5
+    - desc: Damage taken -10% at long range
+      meta:
+        priority: 1
+        buff: Damage Taken
+        buffCondition: Long Range
+        buffValue: 10
+  obtained: Crimson Chariot (Achievement, Drop, Exchange)
+
+- name: Bunny Headband
+  cat: 'gl'
+  star: 5
+  picture: Bunny_Headband
+  def: 753
+  factors:
+    - desc: AP cost -5% when HP is 100%
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffCondition: HP is 100%
+        buffValue: 5
+    - desc: Critical hit chance +20% when behind target
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffCondition: Behind Target
+        buffValue: 20
+  obtained: Crimson Chariot (Achievement, Drop, Exchange)
+
+- name: Sapphire Bracelet
+  cat: 'jp'
+  star: 5
+  picture: Sapphire_Bracelet
+  def: 728
+  factors:
+    - desc: ATK damage taken -10%
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+    - desc: INT damage taken -10%
+      meta:
+        priority: 4
+        buff: INT Damage Taken Reduction
+        buffValue: 10
+    - desc: HP +5%
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 5
+  obtained: Cannon Dragoon (Achievement, Exchange, Drop)
+
+- name: Necklace of Flash
+  cat: 'jp'
+  star: 5
+  picture: Necklace_of_Flash
+  def: 753
+  factors:
+    - desc: Critical hit chance +15% when hitcount is >100
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffCondition: Hit Count > 100
+        buffValue: 15
+    - desc: Critical damage dealt +20%
+      meta:
+        priority: 1
+        buff: Crit Damage
+        buffValue: 20
+  obtained: Cannon Dragoon (Achievement)
+
+- name: Water Crystal Charm
+  cat: 'jp'
+  star: 5
+  picture: Water_Crystal_Charm
+  def: 728
+  factors:
+    - desc: ATK damage taken -10%
+      meta:
+        priority: 1
+        buff: ATK Damage Taken
+        buffValue: 10
+    - desc: INT damage taken -10%
+      meta:
+        priority: 1
+        buff: INT Damage Taken
+        buffValue: 10
+  obtained: Twin Eclipse Story (Chapter 3)
+
+- name: Wolf Eared Hairband
+  cat: 'jp'
+  star: 5
+  picture: Wolf_Ears_Headband
+  def: 728
+  factors:
+    - desc: ATK damage dealt +10% when HP is 100%
+      meta:
+        priority: 3
+        buff: ATK Damage
+        buffCondition: HP is 100%
+        buffValue: 10
+    - desc: Recovers 2% of max HP every 5 seconds
+  obtained: G-Imitation Ghost (Achievement, Exchange, Drop)
+
+- name: Fallen Angel's Necklace
+  cat: 'jp'
+  star: 5
+  picture: Fell_Angel's_Necklace
+  def: 803
+  factors:
+    - desc: Damage taken -10%
+      meta:
+        priority: 1
+        buff: Damage Taken
+        buffValue: 10
+    - desc: Evasion AP cost -50%
+  obtained: G-Imitation Ghost (Achievement, Exchange)
+
+- name: Pumpkin Crown
+  cat: 'jp'
+  star: 5
+  picture: Pumpkin_Crown
+  def: 728
+  factors:
+    - desc: AP cost -5% when HP is 100%
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffCondition: HP is 100%
+        buffValue: 5
+    - desc: Stun rate +10% when HP is 100%
+      meta:
+        priority: 1
+        buff: Stun Rate
+        buffCondition: HP is 100%
+        buffValue: 10
+  obtained: Trick Witcheye (Achievement, Drop)
+
+- name: Black Onigumo Strap
+  cat: 'jp'
+  star: 5
+  picture: Black_Onigumo_Strap
+  def: 753
+  factors:
+    - desc: INT damage taken -15% when HP is 100%
+      meta:
+        priority: 1
+        buff: INT Damage Taken
+        buffCondition: HP is 100%
+        buffValue: 15
+    - desc: No flinching when HP is 100%
+  obtained: Trick Witcheye (Achievement)
+
+- name: Welch's Hat
+  cat: 'jp'
+  star: 5
+  picture: Welch's_Hat
+  def: 728
+  factors:
+    - desc: Damage dealt +5%
+      meta:
+        priority: 3
+        buff: Damage
+        buffValue: 5
+    - desc: Hitcount timer +0.5 seconds
+  obtained: Twin Eclipse Story (Chapter 4)
+
+- name: Red Emblem
+  cat: 'jp'
+  star: 5
+  picture: Red_Emblem
+  def: 728
+  factors:
+    - desc: Movement speed +30%
+    - desc: Recovers 3% of max HP on perfect dodge
+  obtained: Sahariel Plunderer (Achievement, Exchange, Drop)
+
+- name: Warrior's Hair Ornament
+  cat: 'jp'
+  star: 5
+  picture: Warrior's_Hair_Ornament
+  def: 753
+  factors:
+    - desc: Rush combo damage +15% at short range
+      meta:
+        priority: 1
+        buff: Rush Damage
+        buffCondition: Short Range
+        buffValue: 15
+    - desc: Stun rate +5%
+      meta:
+        priority: 1
+        buff: Stun Rate
+        buffValue: 5
+  obtained: Sahariel Plunderer (Achievement)
+
+- name: Witch's Choker
+  cat: 'jp'
+  star: 5
+  picture: Witch's_Chocker
+  def: 728
+  factors:
+    - desc: Additional hit that deals 10% of damage dealt by normal attacks
+    - desc: Rush combo damage +20% when hitcount is >250
+      meta:
+        priority: 1
+        buff: Rush Damage
+        buffCondition: Hit Count > 250
+        buffValue: 20
+  obtained: Twin Eclipse Story (Chapter 5)
+
+- name: Rekoro Strap
+  cat: 'jp'
+  star: 5
+  picture: Rekoro_Strap
+  def: 728
+  factors:
+    - desc: ATK damage dealt +10%
+      meta:
+        priority: 3
+        buff: ATK Damage
+        buffValue: 10
+    - desc: INT damage dealt +10%
+      meta:
+        priority: 3
+        buff: INT Damage
+        buffValue: 10
+    - desc: Damage taken -5%
+      meta:
+        priority: 3
+        buff: Damage Taken Reduction
+        buffValue: 5
+  obtained: Supipi-chan (Exchange, Drop)
+
+- name: Glutton's Hat
+  cat: 'jp'
+  star: 5
+  picture: Glutton's_Hat
+  def: 728
+  factors:
+    - desc: Absorbs 3% of damage dealt by normal attacks as HP
+    - desc: HP +5%
+      meta:
+        priority: 1
+        buff: HP
+        buffValue: 5
+  obtained: Supipi-chan (Achievement, Exchange, Drop)
+
+- name: Idol's Patch
+  cat: 'jp'
+  star: 5
+  picture: Idol's_Patch
+  def: 753
+  factors:
+    - desc: ATK damage dealt +10% when facing target
+      meta:
+        priority: 3
+        buff: ATK Damage
+        buffCondition: Facing Target
+        buffValue: 10
+    - desc: No flinching when taking damage of 10% of max HP or less
+  obtained: Supipi-chan (Achievement)
+
+- name: Jolly 'Santa' Doll
+  cat: 'jp'
+  star: 5
+  picture: Jolly_'Santa'_Doll
+  def: 728
+  factors:
+    - desc: Damage taken -10%
+      meta:
+        priority: 1
+        buff: Damage Taken
+        buffValue: 10
+    - desc: 30% chance of surviving a lethal attack when at 10% of max HP or less
+  obtained: Winter Botanical Beast (Achievement, Exchange, Drop)
+
+- name: Smiling 'Santa' Doll
+  cat: 'jp'
+  star: 5
+  picture: Smiling_'Santa'_Doll
+  def: 753
+  factors:
+    - desc: DEF -15% when HP is 100% (Enemies)
+      meta:
+        priority: 1
+        buff: Enemy DEF Reduction
+        buffCondition: HP is 100%
+        buffValue: 15
+    - desc: Recovers 2% of max HP every 5 seconds
+  obtained: Winter Botanical Beast (Achievement)
+
+- name: Silver Bunny Trophy
+  cat: 'jp'
+  star: 5
+  picture: Silver_Bunny_Trophy
+  def: 728
+  factors:
+    - desc: HP +10%
+      meta:
+        priority: 3
+        buff: HP
+        buffValue: 10
+    - desc: INT damage taken -15%
+      meta:
+        priority: 3
+        buff: INT Damage Taken Reduction
+        buffValue: 15
+  obtained: Triumvirate Pt. 2 (Achievement, Drop)
+
+- name: Gold Bunny Trophy
+  cat: 'jp'
+  star: 5
+  picture: Gold_Bunny_Trophy
+  def: 753
+  factors:
+    - desc: ATK damage dealt +5%
+      meta:
+        priority: 3
+        buff: ATK Damage
+        buffValue: 5
+    - desc: INT damage dealt +5%
+      meta:
+        priority: 3
+        buff: INT Damage
+        buffValue: 5
+    - desc: Critical hit chance +15%
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffValue: 15
+  obtained: Triumvirate Pt. 2 (Achievement, Drop)
+
+- name: Plum Hair Ornament
+  cat: 'jp'
+  star: 5
+  picture: Plum_Hair_Ornament
+  def: 728
+  factors:
+    - desc: Stun rate +10%
+      meta:
+        priority: 4
+        buff: Stun Rate
+        buffValue: 10
+    - desc: HP +5%
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 5
+  obtained: Rekorokoro (Achievement, Exchange, Drop)
+
+- name: Gemini's Western Hat
+  cat: 'jp'
+  star: 5
+  picture: Gemini's_Western_Hat
+  def: 728
+  factors:
+    - desc: AP recovery +30%
+      meta:
+        priority: 3
+        buff: AP Recovery
+        buffValue: 30
+    - desc: ATK damage taken -10% at short range
+      meta:
+        priority: 3
+        buff: ATK Damage Taken Reduction
+        buffCondition: Short Range
+        buffValue: 10
+  obtained: Fallen Demon Plant / Sakura Taisen (Achievement, Drop)
+
+- name: Erika's Rosary
+  cat: 'jp'
+  star: 5
+  picture: Erika's_Rosary
+  def: 753
+  factors:
+    - desc: Damage taken -10%
+      meta:
+        priority: 3
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+    - desc: Recovers 2% of max HP every 3 seconds
+  obtained: Fallen Demon Plant / Sakura Taisen (Achievement, Drop)
+
+- name: Sakura's Ribbon
+  cat: 'jp'
+  star: 5
+  picture: Sakura's_Ribbon
+  def: 753
+  factors:
+    - desc: No flinching during charge assault
+    - desc: Critical hit chance +15% at short range
+      meta:
+        priority: 3
+        buff: Crit Rate
+        buffValue: 15
+        buffCondition: Short Range
+  obtained: Fallen Demon Plant / Sakura Taisen (Achievement, Drop)  
+
+- name: Camellia Hair Ornament
+  cat: 'jp'
+  star: 5
+  picture: Camellia_Hair_Ornament
+  def: 753
+  factors:
+    - desc: Movement speed +30%
+    - desc: Critical hit chance +15%
+      meta:
+        priority: 3
+        buff: Crit Rate
+        buffValue: 15
+  obtained: Rekorokoro (Achievement) 
+
+- name: Fluffy Set
+  cat: 'jp'
+  star: 5
+  picture: Fluffy_Set
+  def: 728
+  factors:
+    - desc: Movement speed +30%
+    - desc: HP +10%
+      meta:
+        priority: 3
+        buff: HP
+        buffValue: 10
+  obtained: Squelette de Chocolat (Exchange, Drop)
+
+- name: Bitter Chocolate Cookie Pouch
+  cat: 'jp'
+  star: 5
+  picture: Bitter_Chocolate_Cookie_Pouch
+  def: 753
+  factors:
+    - desc: Rush combo damage +15% when hitcount is >150
+      meta:
+        priority: 4
+        buff: Rush Damage
+        buffCondition: Hit Count > 150
+        buffValue: 15
+    - desc: ATK damage taken -10%
+      meta:
+        priority: 3
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+    - desc: INT damage taken -10%
+      meta:
+        priority: 3
+        buff: INT Damage Taken Reduction
+        buffValue: 10
+  obtained: Squelette de Chocolat (Achievement)
+
+- name: Dark Scarf
+  cat: 'jp'
+  star: 5
+  picture: Dark_Scarf
+  def: 728
+  factors:
+    - desc: Recovers 2% of max HP every 5 seconds
+    - desc: Single target damage +10% at short range
+      meta:
+        priority: 4
+        buff: Single Target Damage
+        buffCondition: Short Range
+        buffValue: 10
+  obtained: Dark Valka (Exchange, Drop)
+
+- name: Miniature Spaceship Model
+  cat: 'jp'
+  star: 5
+  picture: Miniature_Spaceship_Model
+  def: 753
+  factors:
+    - desc: Elemental damage dealt +10% when hitcount is >150
+      meta:
+        priority: 3
+        buff: Elemental Damage
+        buffCondition: Hit Count > 150
+        buffValue: 10
+    - desc: Evasion speed & distance +50%
+  obtained: Dark Valka (Achievement)
+
+- name: Survey Corps Cape
+  cat: 'jp'
+  star: 5
+  picture: Survey_Corps_Cape
+  def: 728
+  factors:
+    - desc: Damage taken -10% when attacking
+      meta:
+        priority: 1
+        buff: Damage Taken
+        buffCondition: Attacking
+        buffValue: 10
+    - desc: 40% chance of surviving a lethal attack when at 10% of max HP or more and at long range
+  obtained: Titan Eren (Achievement, Drop)
+
+- name: Three Dimensional Maneuver Gear
+  cat: 'jp'
+  star: 5
+  picture: Three_Dimensional_Maneuver_Gear
+  def: 753
+  factors:
+    - desc: ATK damage dealt +20% when behind target
+      meta:
+        priority: 3
+        buff: ATK Damage
+        buffCondition: Behind Target
+        buffValue: 20
+    - desc: Evasion AP cost -50%
+  obtained: Titan Eren (Achievement, Drop)
+
+- name: Idol Headphones
+  cat: 'jp'
+  star: 5
+  picture: Idol_Headphones
+  def: 765
+  factors:
+    - desc: Recovers 5% of max HP on perfect dodge
+    - desc: HP +10%
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 10
+  obtained: Head Bull (Achievement, Drop)
+
+- name: Mechanical Bangle
+  cat: 'jp'
+  star: 5
+  picture: Mechanical_Bangle
+  def: 728
+  factors:
+    - desc: Critical hit chance +20% when hitcount is >200
+      meta:
+        priority: 3
+        buff: Crit Rate
+        buffValue: 20
+        buffCondition: Hit Count > 200
+    - desc: Hitcount timer +1 second
+  obtained: Twin Eclipse Story (Chapter 8)
+
+- name: Cat Garter Ring
+  cat: 'jp'
+  star: 5
+  picture: Cat_Garter_Ring
+  def: 753
+  factors:
+    - desc: Damage dealt +10% when not behind target
+      meta:
+        priority: 3
+        buff: Damage
+        buffCondition: Not Behind Target
+        buffValue: 10
+    - desc: 30% chance of surviving a lethal attack when at 10% of max HP or more
+  obtained: Head Bull (Achievement)
+
+- name: Hawk's Coat of Arms
+  cat: 'jp'
+  star: 5
+  picture: Hawk's_Coat_of_Arms
+  def: 728
+  factors:
+    - desc: No flinching when HP is 100%
+    - desc: Critical hit chance +15% when HP is 100%
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffCondition: HP is 100%
+        buffValue: 15
+  obtained: Count Grade Aroken / Radiata Stories (Achievement, Exchange, Drop)
+
+- name: Shimada's Bromide
+  cat: 'jp'
+  star: 5
+  picture: Shimada's_Bromide
+  def: 753
+  factors:
+    - desc: Taunt +3
+    - desc: Recovers 5% of max HP on perfect dodge
+  obtained: "April Fools Year Three: SHIMA OCEAN - FAKE JAGA -"
+
+- name: Elephant's Coat of Arms
+  cat: 'jp'
+  star: 5
+  picture: Elephant's_Coat_of_Arms
+  def: 753
+  factors:
+    - desc: Recovers 2% of max HP every 5 seconds
+    - desc: Normal attack AP recovery +50%
+      meta:
+        priority: 3
+        buff: AP Recovery From Normal Attacks
+        buffValue: 50
+  obtained: Count Grade Aroken / Radiata Stories (Achievement, Drop, Draw Box)
+
+- name: Cameo Bolo Tie
+  cat: 'jp'
+  star: 5
+  picture: Cameo_Bolo_Tie
+  def: 728
+  factors:
+    - desc: Single target damage +15% when using charge assault
+      meta:
+        priority: 3
+        buff: Single Target Damage
+        buffCondition: Charge Assault
+        buffValue: 15
+    - desc: AP cost -10% at long range
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffCondition: Long Range
+        buffValue: 10
+  obtained: Twin Eclipse Story (Chapter 9)
+
+- name: Carmine Ring
+  cat: 'jp'
+  star: 5
+  picture: Carmine_Ring
+  def: 728
+  factors:
+    - desc: Taunt +3
+    - desc: HP +10%
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 10
+  obtained: Fortress Scissors (Achievement, Drop, Exchange)
+
+- name: Handheld Terminal of Memories
+  cat: 'jp'
+  star: 5
+  picture: Handheld_Terminal_of_Memories
+  def: 753
+  factors:
+    - desc: 40% chance of surviving a lethal attack when at 10% of max HP or more
+    - desc: Evasion AP cost -50%
+  obtained: Fortress Scissors (Achievement)
+
+- name: Elphelt's Bouquet
+  cat: 'jp'
+  star: 5
+  picture: Elphelt's_Bouquet
+  def: 728
+  factors:
+    - desc: Evasion AP cost -50%
+    - desc: Critical hit chance +20% when hitcount is >150
+      meta:
+        priority: 3
+        buff: Crit Rate
+        buffValue: 20
+        buffCondition: Hit Count > 150
+  obtained: Nephir Diablo (Achievement, Drop)
+
+- name: Sol's Headgear
+  cat: 'jp'
+  star: 5
+  picture: Sol's_Headband
+  def: 753
+  factors:
+    - desc: Damage taken +10% (Enemies)
+      meta:
+        priority: 1
+        buff: Enemy ATK Damage Taken
+        buffValue: 10
+    - desc: Additional hit that deals 10% of damage dealt by normal attacks
+  obtained: Nephir Diablo (Achievement, Drop)
+
+- name: Geometric Bangle
+  cat: 'jp'
+  star: 5
+  picture: Geometric_Bangle
+  def: 728
+  factors:
+    - desc: Critical hit chance +15% at long range
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffCondition: Long Range
+        buffValue: 15
+    - desc: Evasion speed & distance +50%
+  obtained: Twin Eclipse Story (Chapter 10)
+
+- name: Ricardo's Goggles
+  cat: 'jp'
+  star: 5
+  picture: Ricardo's_Goggles
+  def: 728
+  factors: 
+    - desc: INT damage taken -20% at short range
+      meta:
+        priority: 4
+        buff: INT Damage Taken Reduction
+        buffCondition: Short Range
+        buffValue: 20
+    - desc: Additional hit that deals 10% of damage dealt by normal attacks
+  obtained: Twin Eclipse Story (Chapter 10)
+
+- name: Animal Necklace
+  cat: 'jp'
+  star: 5
+  picture: Animal_Necklace
+  def: 728
+  factors:
+    - desc: HP +10%
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 10
+    - desc: No flinching when casting symbology or when targeted by enemy
+  obtained: Crimson Dalvaros (Achievement, Drop, Exchange)
+
+- name: Crimson Necklace
+  cat: 'jp'
+  star: 5
+  picture: Crimson_Necklace
+  def: 753
+  factors:
+    - desc: Critical hit chance +10%
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffValue: 10
+    - desc: Critical damage dealt +30% when hitcount is >100
+      meta:
+        priority: 1
+        buff: Crit Damage
+        buffCondition: Hit Count > 100
+        buffValue: 30
+  obtained: Crimson Dalvaros (Achievement) 
+
+- name: Rena's Decorative T-Shirt
+  cat: 'jp'
+  star: 5
+  picture: Rena's_Decorative_T-Shirt
+  def: 728
+  factors:
+    - desc: 90% chance to nullify freeze
+    - desc: Damage taken -100% when frozen
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffCondition: Frozen
+        buffValue: 100
+  obtained: Iron Spiral Mechanical Snail (Exchange)
+
+- name: Unicorn Earrings
+  cat: 'jp'
+  star: 5
+  picture: Unicorn_Earrings
+  def: 728
+  factors:
+    - desc: Damage taken -20% when casting symbology
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffCondition: Casting Symbology
+        buffValue: 20
+    - desc: HP +5%
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 5
+  obtained: Boring Horn Blitz Reve / Tales of the Rays (Achievement, Exchange, Drop, Draw Box)
+
+- name: Chester Mascot
+  cat: 'jp'
+  star: 5
+  picture: Chester_Mascot
+  def: 728
+  factors:
+    - Absorbs 5% of damage dealt by normal attacks as HP when at long range
+    - desc: ATK damage taken -10% at long range
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffCondition: Long Range
+        buffValue: 10
+    - desc: INT damage taken -10%
+      meta:
+        priority: 4
+        buff: INT Damage Taken Reduction
+        buffCondition: Long Range
+        buffValue: 10
+  obtained: Shadow Dhaos / Tales of the Rays (Achievement, Drop)
