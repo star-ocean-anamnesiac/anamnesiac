@@ -19,6 +19,10 @@
 
     <ion-list>
 
+      <ion-item *ngFor="let guide of allBosses" detail (click)="loadGuide(guide)" class="faded">
+        <ng-container *ngTemplateOutlet="bossguide; context: { guide: guide }"></ng-container>
+      </ion-item>
+      <!--
       <ion-item-group>
         <ion-item-divider><strong>Active Events</strong></ion-item-divider>
   
@@ -34,6 +38,7 @@
           <ng-container *ngTemplateOutlet="bossguide; context: { guide: guide }"></ng-container>
         </ion-item>
       </ion-item-group>
+      -->
       
     </ion-list>
 
