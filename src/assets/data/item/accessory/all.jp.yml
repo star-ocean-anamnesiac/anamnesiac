@@ -591,3 +591,179 @@
         buffCondition: HP is 100
     - desc: No flinching when HP is 100%
   obtained: Mother Virus Pod (Achievement)
+
+- name: Capell's Flute
+  cat: 'jp'
+  star: 5
+  picture: Capell's_Flute
+  def: 728
+  factors:
+    - desc: Rush combo damage +10%
+      meta:
+        priority: 3
+        buff: Rush Damage
+        buffValue: 10
+    - desc: Taunt +3
+  obtained: Beastmaster Venbat / Infinite Undiscovery (Achievement, Drop)
+
+- name: Sigmund's Necklace
+  cat: 'jp'
+  star: 5
+  picture: Sigmund's_Necklace
+  def: 803
+  factors:
+    - desc: 30% chance to nullify paralysis
+    - desc: 30% chance of surviving a lethal attack when at 20% of max HP or more
+  obtained: Beastmaster Venbat / Infinite Undiscovery (Achievement, Drop)
+
+- name: Silver Bunny Statue
+  cat: 'jp'
+  star: 5
+  picture: Silver_Bunny_Statue
+  def: 728
+  factors:
+    - desc: HP +5%
+      meta:
+        priority: 1
+        buff: HP
+        buffValue: 5
+    - desc: ATK damage taken -10%
+      meta:
+        priority: 3
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+  obtained: Triumvirate Pt. 1 (Achievement, Drop)
+
+- name: Gold Bunny Statue
+  cat: 'jp'
+  star: 5
+  picture: Gold_Bunny_Statue
+  def: 753
+  factors:
+    - desc: Critical hit chance +10%
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 10
+    - desc: Rush combo damage +5%
+      meta:
+        priority: 4
+        buff: Rush Damage
+        buffValue: 10
+  obtained: Triumvirate Pt. 1 (Achievement, Drop)
+
+- name: Reporter's Armband
+  cat: 'jp'
+  star: 5
+  picture: Newspaper_Reporter_Armband
+  def: 728
+  factors:
+    - desc: HP +10%
+      meta:
+        priority: 3
+        buff: HP
+        buffValue: 10
+    - desc: 40% chance to nullify paralysis
+  obtained: Shine Totem (Achievement, Exchange, Drop, Draw Box), Supipi-chan (Achievement)
+
+- name: Cat Scrunchie
+  cat: 'jp'
+  star: 5
+  picture: Cat_Scrunchie
+  def: 753
+  factors:
+    - desc: No flinching when taking damage of 20% of max HP or less when targeted by enemy
+    - desc: Critical hit chance +15% when not targeted by enemy
+      meta:
+        priority: 3
+        buff: Crit Rate
+        buffValue: 15
+        buffCondition: Not holding aggro
+  obtained: Shine Totem (Achievement), Josephine (Achievement), Botanical Beast (Achievement)
+
+- name: Pure White Barrette
+  cat: 'jp'
+  star: 5
+  picture: Pure_White_Hair_Ornament
+  def: 728
+  factors:
+    - desc: INT damage taken -15%
+      meta:
+        priority: 3
+        buff: INT Damage Taken Reduction
+        buffValue: 15
+    - desc: HP +5%
+      meta:
+        priority: 1
+        buff: HP
+        buffValue: 5
+  obtained: "Lezard + Blood Valkyrie / Valkyrie Profile: The Purged Wizard (Achievement, Drop, Exchange)"
+
+- name: Goddess Ear Cuff
+  cat: 'jp'
+  star: 5
+  picture: Godess's_Earcuffs
+  def: 753
+  factors:
+    - desc: Damage taken -10% at short range
+      meta:
+        priority: 3
+        buff: Damage Taken Reduction
+        buffCondition: Short Range
+        buffValue: 10
+    - desc: Recovers 3% of max HP every 5 seconds at long range
+  obtained: "Lezard + Blood Valkyrie / Valkyrie Profile: The Purged Wizard (Achievement, Exchange)" 
+
+- name: Jet-Black Barrette
+  cat: 'jp'
+  star: 5
+  picture: Jet_Black_Hair_Ornament
+  def: 728
+  factors:
+    - desc: Recovers 3% of max HP every 5 seconds when targeted by enemy
+    - desc: Taunt +2
+  obtained: "Ballistic Rhino / Valkyrie Profile: The Purged Wizard (Achievement, Drop)"
+
+- name: Valkyrie Feather
+  cat: 'jp'
+  star: 5
+  picture: Valkyrie's_Feather
+  def: 753
+  factors:
+    - desc: Critical hit chance +20% when using charge assault
+      meta:
+        priority: 1
+        buff: HP
+        buffCondition: charge assault
+        buffValue: 20
+    - desc: ATK damage taken -10%
+      meta:
+        priority: 3
+        buff: ATK Damage Taken Reduction
+        buffValue: 10      
+  obtained: "Ballistic Rhino / Valkyrie Profile: The Purged Wizard (Achievement, Exchange)"
+
+- name: Alchemist's Glasses
+  cat: 'jp'
+  star: 5
+  picture: Alchemist's_Glasses
+  def: 728
+  factors:
+    - desc: No flinching while casting symbology when hitcount is >150
+    - desc: 30% chance of surviving a lethal attack when at 10% of max HP or more
+  obtained: "Lezard / Valkyrie Profile: The Purged Wizard (Achievement, Exchange)" 
+
+- name: Head Sorceror's Handkerchief
+  cat: 'jp'
+  star: 5
+  picture: Top_Magician's_Handerchief
+  def: 753
+  factors:
+    - desc: Rush combo damage +15% when hitcount is >150
+      meta:
+        priority: 3
+        buff: Rush Damage
+        buffCondition: Hit Count > 150
+        buffValue: 15
+    - desc: Hitcount timer +1 second 
+  obtained: "Lezard / Valkyrie Profile: The Purged Wizard (Achievement, Exchange), Rekorokoro (Achievement)"
