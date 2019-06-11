@@ -979,3 +979,115 @@
         buffCondition: Long Range
         buffValue: 10
   obtained: Dimension Beast (Exchange, Drop)
+
+- name: Spring Colored Hairclip
+  cat: 'jp'
+  star: 5
+  picture: Spring_Coloured_Hairclip
+  def: 753
+  factors:
+    - desc: No flinching when taking damage of 15% of max HP or less at short range
+    - desc: ATK damage taken -10% at short range
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffCondition: Short Range
+        buffValue: 10
+  obtained: Dimension Beast (Achievement)
+
+- name: Raiden Tyranny Z
+  cat: 'jp'
+  star: 5
+  picture: Raiden_Tyranny_Z
+  def: 728
+  factors:
+    - desc: Movement speed +30%
+    - desc: Taunt +3
+  obtained: King Jumbo Pond Snail (Exchange, Drop)
+
+- name: Raiden Tyranny ω
+  cat: 'jp'
+  star: 5
+  picture: Raiden_Tyranny_ω
+  def: 728
+  factors:
+    - desc: 70% chance to nullify freeze
+    - desc: Movement speed -5%
+  obtained: King Jumbo Pond Snail (Exchange, Drop)
+
+- name: Groom's Corsage
+  cat: 'jp'
+  star: 5
+  picture: Groom's_Corsage
+  def: 728
+  factors:
+    - desc: Damage taken -10%
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffValue: 10
+    - desc: AP cost -5% when hitcount is >50
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffCondition: Hit Count > 50
+        buffValue: 5
+  obtained: Ocypete Necromancer (Drop, Exchange, Draw Box)
+
+- name: Bride's Necklace
+  cat: 'jp'
+  star: 5
+  picture: Bride's_Necklace
+  def: 753
+  factors:
+    - desc: ATK damage taken -10%
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+    - desc: Rush combo damage +15% when hitcount is >150
+      meta:
+        priority: 1
+        buff: Rush Damage
+        buffCondition: Hit Count > 150
+        buffValue: 15
+  obtained: Ocypete Necromancer (Drop, Exchange, Draw Box)
+
+- name: Basket Bouquet
+  cat: 'jp'
+  star: 5
+  picture: Basket_Bouquet
+  def: 728
+  factors:
+    - desc: Rush combo damage +10% when hitcount is >100
+      meta:
+        priority: 1
+        buff: Rush Damage
+        buffCondition: Hit Count > 100
+        buffValue: 10
+    - desc: Evasion AP cost -50%
+  obtained: Land Kraken (Drop, Exchange, Draw Box)
+
+- name: Wedding Bangle
+  cat: 'jp'
+  star: 5
+  picture: Wedding_Bangle
+  def: 753
+  factors:
+    - desc: HP +10%
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 10
+    - desc: Recovers 2% of max HP every 5 seconds
+  obtained: Land Kraken (Achievement)
+
+- name: Booster Shoes
+  cat: 'jp'
+  star: 5
+  picture: Booster_Shoes
+  def: 728
+  factors:
+    - desc: Evasion AP cost -50%
+    - desc: Movement speed +30%
+  obtained: Beast Kid (Drop, Exchange, Draw Box)
