@@ -797,7 +797,7 @@
     - desc: Taunt +2
   obtained: Mother Polyphaga (Achievement, Exchange, Drop)
   
-- name: Goldcraft Earrings
+- name: Gold Ear Bangles
   cat: 'jp'
   star: 5
   picture: Goldcraft_Earrings
@@ -809,10 +809,15 @@
         buff: AP Cost Reduction
         buffCondition: Hit Count > 100
         buffValue: 10
-    - desc: Taunt +2
-  obtained: Mother Polyphaga (Achievement), Titan Eren (Achievement)
+    - desc: Rush combo damage +10% when hitcount is >100
+      meta:
+        priority: 4
+        buff: Rush Damage
+        buffCondition: Hit Count > 100
+        buffValue: 10
+  obtained: Crown Dodo (Achievement)
   
-- name: Fur Tail
+- name: Furry Tail
   cat: 'jp'
   star: 5
   picture: Fur_Tail
