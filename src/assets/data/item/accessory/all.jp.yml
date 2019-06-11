@@ -157,7 +157,7 @@
   obtained: Colossal Beak (Exchange), Monarch Zinae (Achievement)
 
 - name: Silver Armlet
-  cat: jp'
+  cat: 'jp'
   star: 5
   picture: Silver_Armlet
   def: 728
