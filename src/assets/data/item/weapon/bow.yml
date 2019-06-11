@@ -426,7 +426,7 @@
   
 
 - name: Flame-winged Bow
-  cat: 'jp'
+  cat: 'gl'
   star: 5
   picture: Flame_Soul_Shooter
   atk: 958
