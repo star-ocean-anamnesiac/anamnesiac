@@ -632,7 +632,7 @@
         buffValue: 15
   obtained: Prince Claude / Uniform Claude (Exchange)
 
-- name: Flame Soul Shooter
+- name: Flame-winged Bow
   cat: 'jp'
   star: 5
   picture: Flame_Soul_Shooter
@@ -647,7 +647,7 @@
         buff: AP Recovery From Normal Attacks
         buffValue: 50
     - desc: Recovers 3% of max HP every 5 seconds
-      lb: 5
+      lb: 3
   obtained: Coin Exchange
 
 - name: Vermin Shooter
