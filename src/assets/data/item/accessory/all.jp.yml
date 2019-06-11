@@ -767,3 +767,86 @@
         buffValue: 15
     - desc: Hitcount timer +1 second 
   obtained: "Lezard / Valkyrie Profile: The Purged Wizard (Achievement, Exchange), Rekorokoro (Achievement)"
+
+- name: Doujin d(＾o＾)b
+  cat: 'jp'
+  star: 5
+  picture: Doujin_d(＾o＾)b・どーじんd(＾O＾)b
+  def: 728
+  factors:
+    - desc: Damage taken -15%
+      meta:
+        priority: 3
+        buff: Damage Taken Reduction
+        buffValue: 15    
+    - desc: ATK damage taken -10% when facing target
+      meta:
+        priority: 3
+        buff: Damage Taken Reduction
+        buffCondition: Facing Target
+        buffValue: 10      
+  obtained: GPS Winter Comiket, 2018 April Fools
+
+- name: Gold-Patterned Bandana
+  cat: 'jp'
+  star: 5
+  picture: Gold_Patterned_Bandana
+  def: 728
+  factors:
+    - desc: 30% chance of surviving a lethal attack when at 10% of max HP or more and at short range
+    - desc: Taunt +2
+  obtained: Mother Polyphaga (Achievement, Exchange, Drop)
+  
+- name: Goldcraft Earrings
+  cat: 'jp'
+  star: 5
+  picture: Goldcraft_Earrings
+  def: 753
+  factors:
+    - desc: AP cost -10% when hitcount is >100
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffCondition: Hit Count > 100
+        buffValue: 10
+    - desc: Taunt +2
+  obtained: Mother Polyphaga (Achievement), Titan Eren (Achievement)
+  
+- name: Fur Tail
+  cat: 'jp'
+  star: 5
+  picture: Fur_Tail
+  def: 728
+  factors:
+    - desc: Evasion AP cost -50%
+    - desc: AP cost -5% when targeted by enemy
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffCondition: Holding Aggro
+        buffValue: 5
+  obtained: Crowned Dodo (Achievement, Exchange, Drop), Head Bull (Achievement, Draw Box)
+
+- name: Sakura Crested Plate
+  cat: 'jp'
+  star: 5
+  picture: Cherry_Blossom_Crested_Plate
+  def: 753
+  factors:
+    - desc: No flinching during charge assault
+    - desc: Damage taken -10% when attacking
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffCondition: Attacking
+        buffValue: 10
+  obtained: Crown Dodo (Achievement)
+
+- name: Talisman of Lethality IV
+  cat: 'jp'
+  star: 5
+  picture: Talisman_of_Lethality_III
+  def: 753
+  factors:
+    - desc: Critical hit chance -10% (Enemies)
+  obtained: Rerun M2 Coin Exchange
