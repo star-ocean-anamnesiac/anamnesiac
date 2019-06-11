@@ -556,3 +556,24 @@
         buffValue: 15
       lb: 5
   obtained: Gacha
+
+- name: Blue-Green Shortsword
+  cat: 'gl'
+  star: 5
+  picture: Rokushou_Tanken
+  atk: 510
+  int: 509
+  factors:
+    - desc: Damage dealt +20% by Phoenix Drive
+    - desc: DEF +15%
+      meta:
+        priority: 4
+        buff: DEF
+        buffValue: 15
+    - desc: ATK damage dealt +10%
+      meta:
+        priority: 4
+        buff: ATK Damage
+        buffValue: 10
+      lb: 5
+  obtained: Crown Dodo (Exchange)
