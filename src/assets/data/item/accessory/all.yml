@@ -804,11 +804,6 @@
   def: 753
   factors:
     - desc: Rush combo damage +15% when hitcount is >150
-      meta:
-        priority: 3
-        buff: Rush Damage
-        buffCondition: Hit Count > 150
-        buffValue: 15
     - desc: Hitcount timer +1 second 
   obtained: "Lezard / Valkyrie Profile: The Purged Wizard (Achievement, Exchange)"  
   
