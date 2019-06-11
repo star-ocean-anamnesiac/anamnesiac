@@ -855,3 +855,127 @@
   factors:
     - desc: Critical hit chance -10% (Enemies)
   obtained: Rerun M2 Coin Exchange
+
+- name: Spring 2018 Live T-Shirt
+  cat: 'jp'
+  star: 5
+  picture: Spring_2018_Live_T-Shirt
+  def: 728
+  factors:
+    - desc: Rush combo damage +5%
+      meta:
+        priority: 4
+        buff: Rush Damage
+        buffValue: 10
+    - desc: Stun rate +5%
+      meta:
+        priority: 4
+        buff: Stun Rate
+        buffValue: 5
+  obtained: 2018 Star Ocean Live Collection Music Concert Promotional Event
+
+- name: White Brim
+  cat: 'jp'
+  star: 5
+  picture: White_Brim
+  def: 728
+  factors:
+    - desc: ATK damage taken -10%
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+    - desc: HIT +10%
+      meta:
+        priority: 4
+        buff: HIT
+        buffValue: 10
+  obtained: Josephine (Achievement, Exchange, Drop), Fortress Scissors (Achievement)
+
+- name: Ribbon Cross Tie
+  cat: 'jp'
+  star: 5
+  picture: Ribbon_Cross_Tie
+  def: 753
+  factors:
+    - desc: HP +10%
+      meta:
+        priority: 3
+        buff: HP
+        buffValue: 10
+    - desc: Damage dealt +5%
+      meta:
+        priority: 1
+        buff: Damage
+        buffValue: 5
+  obtained: Josephine (Achievement), Nephir Diablo (Achievement, Draw Box)
+
+- name: Red Combat Sash
+  cat: 'jp'
+  star: 5
+  picture: Red_Combat_Sash
+  def: 728
+  factors:
+    - desc: No flinching when taking of damage of 20% of max HP or less and hitcount is >100
+    - desc: Critical hit chance +15% when hitcount is >150
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffCondition: Hit Count > 150
+        buffValue: 15
+  obtained: Shrouded Gaze (Achievement, Exchange, Drop), Crimson Dalvaros (Achievement, Exchange)
+
+- name: FC Goggles
+  cat: 'jp'
+  star: 5
+  picture: FC_Goggles
+  def: 753
+  factors:
+    - desc: AP cost -5% at long range
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffCondition: Long Range
+        buffValue: 5
+    - desc: Repel +1
+  obtained: Shrouded Gaze (Achievement), Boring Horn Blitz Reve (Achievement, Draw Box)
+
+- name: Longsleeve Pig Shirt
+  cat: 'jp'
+  star: 5
+  picture: Pig_Longsleeve_Shirt
+  def: 728
+  factors:
+    - desc: 40% chance of surviving a lethal attack when at 10% of max HP more and at long range
+    - desc: Recovers 2% of max HP every 5 seconds
+  obtained:  Cannon Daddy / End of Eternity (Achievement)
+
+- name: Miniature Goddesss of Companion Statue
+  cat: 'jp'
+  star: 5
+  picture: Miniature_Goddess_of_Compassion_Statue
+  def: 753
+  factors:
+    - desc: No flinching when taking damage of 20% of max HP or less at long range
+    - desc: Rush combo damage +10% at long range
+      meta:
+        priority: 4
+        buff: Rush Damage
+        buffCondition: Long Range
+        buffValue: 10
+  obtained: Cannon Daddy / End of Eternity (Achievement, Drop)
+
+- name: Dressgloves of Ruin
+  cat: 'jp'
+  star: 5
+  picture: Dressgloves_of_Ruin
+  def: 728
+  factors:
+    - desc: Hitcount timer +0.5 seconds
+    - desc: Damage taken -10% at long range
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffCondition: Long Range
+        buffValue: 10
+  obtained: Dimension Beast (Exchange, Drop)
