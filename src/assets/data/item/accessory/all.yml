@@ -841,4 +841,41 @@
   def: 633
   factors: 
     - desc: Earth damage taken -50%
-  obtained: Story  
+  obtained: Story
+
+
+- name: Gold Ear Bangles
+  cat: 'gl'
+  star: 5
+  picture: Goldcraft_Earrings
+  def: 753
+  factors:
+    - desc: AP cost -10% when hitcount is >100
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffCondition: Hit Count > 100
+        buffValue: 10
+    - desc: Rush combo damage +10% when hitcount is >100
+      meta:
+        priority: 4
+        buff: Rush Damage
+        buffCondition: Hit Count > 100
+        buffValue: 10
+  obtained: Crown Dodo (Achievement)
+
+- name: Furry Tail
+  cat: 'gl'
+  star: 5
+  picture: Fur_Tail
+  def: 728
+  factors:
+    - desc: Evasion AP cost -50%
+    - desc: AP cost -5% when targeted by enemy
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffCondition: Holding Aggro
+        buffValue: 5
+  obtained: Crowned Dodo (Achievement, Exchange, Drop)
+
