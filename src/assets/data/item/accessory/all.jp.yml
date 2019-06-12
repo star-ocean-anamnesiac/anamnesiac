@@ -1268,3 +1268,132 @@
         buffCondition: Long Range
         buffValue: 20
   obtained: Hell Schutzer (Exchange, Drop)
+
+- name: Platinum Bracelet
+  cat: 'jp'
+  star: 5
+  picture: Platinum_Bracelet
+  def: 803
+  factors:
+    - desc: ATK damage dealt +10% when hitcount is >150
+      meta:
+        priority: 3
+        buff: ATK Damage
+        buffCondition: Hit Count > 150
+        buffValue: 10
+    - desc: Taunt +3
+  obtained: Hell Schutzer (Achievement)
+
+- name: Bunny Bangle
+  cat: 'jp'
+  star: 5
+  picture: Bunny_Bangle
+  def: 728
+  factors:
+    - desc: HP +5%
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 5
+    - desc: Damage taken -10% at long range
+      meta:
+        priority: 1
+        buff: Damage Taken
+        buffCondition: Long Range
+        buffValue: 10
+  obtained: Crimson Chariot (Achievement, Drop, Exchange)
+
+- name: Bunny Headband
+  cat: 'jp'
+  star: 5
+  picture: Bunny_Headband
+  def: 753
+  factors:
+    - desc: AP cost -5% when HP is 100%
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffCondition: HP is 100%
+        buffValue: 5
+    - desc: Critical hit chance +20% when behind target
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffCondition: Behind Target
+        buffValue: 20
+  obtained: Crimson Chariot (Achievement, Drop, Exchange)
+
+- name: Sapphire Bracelet
+  cat: 'jp'
+  star: 5
+  picture: Sapphire_Bracelet
+  def: 728
+  factors:
+    - desc: ATK damage taken -10%
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+    - desc: INT damage taken -10%
+      meta:
+        priority: 4
+        buff: INT Damage Taken Reduction
+        buffValue: 10
+    - desc: HP +5%
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 5
+  obtained: Cannon Dragoon (Achievement, Exchange, Drop)
+
+- name: Necklace of Flash
+  cat: 'jp'
+  star: 5
+  picture: Necklace_of_Flash
+  def: 753
+  factors:
+    - desc: Critical hit chance +15% when hitcount is >100
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffCondition: Hit Count > 100
+        buffValue: 15
+    - desc: Critical damage dealt +20%
+      meta:
+        priority: 1
+        buff: Crit Damage
+        buffValue: 20
+  obtained: Cannon Dragoon (Achievement)
+
+- name: Water Crystal Charm
+  cat: 'jp'
+  star: 5
+  picture: Water_Crystal_Charm
+  def: 728
+  factors:
+    - desc: ATK damage taken -10%
+      meta:
+        priority: 1
+        buff: ATK Damage Taken
+        buffValue: 10
+    - desc: INT damage taken -10%
+      meta:
+        priority: 1
+        buff: INT Damage Taken
+        buffValue: 10
+  obtained: Twin Eclipse Story (Chapter 3)
+
+- name: Wolf Eared Hairband
+  cat: 'jp'
+  star: 5
+  picture: Wolf_Ears_Headband
+  def: 728
+  factors:
+    - desc: ATK damage dealt +10% when HP is 100%
+      meta:
+        priority: 3
+        buff: ATK Damage
+        buffCondition: HP is 100%
+        buffValue: 10
+    - desc: Recovers 2% of max HP every 5 seconds
+  obtained: G-Imitation Ghost (Achievement, Exchange, Drop)
