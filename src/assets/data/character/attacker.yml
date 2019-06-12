@@ -398,7 +398,8 @@
           repeat: "N"          
 
   notes: >
-      Awakened Fidel got a JP-side stealth buff, making his Air Raid much more consistent, as well as eliminating some other clunk attached to the move. With this, he now deals a significant amount of damage, allowing him to function reasonably as both an attack buffer and a carry. A solid team comp would still need to build around him (ideally adding AP recovery somewhere), but he allows flexibility and eliminates the need to rely on meeting at times fussy conditionals in order to maximize damage.
+      Awakened Fidel got a JP-side stealth buff, making his Air Raid much more consistent, as well as eliminating some other clunk attached to the move. With this, he now deals a significant amount of damage, allowing him to function reasonably as both an attack buffer and a carry. A solid team comp would still need to build around him (ideally adding AP recovery somewhere), but he allows flexibility and eliminates the need to rely on meeting at times fussy conditionals in order to maximize damage.    
+      
 
       [Potential] With his changes, Fidel becomes a pub hero, bringing his own buffing and extremely good DPS. That said, he still suffers in premades, but will do particularly well on auto, where his particular strengths shine (Air Raid hits easily, doesn't rely as heavily on AP normals, non-conditional buff).   
       
@@ -411,7 +412,7 @@
       
       - Has ranged skills which give him more flexibility.
       
-      - Air Raid has high rush gain, for easy 20s rush-chaining.    
+      - Air Raid has high rush gain, for easy 20-second rush-chaining.    
       
       **Cons**
       
@@ -523,6 +524,7 @@
   notes: >
       Great for solo content, with dirt-cheap AP costs and a powerful rush. Notably, Fists of Fury's multi-hits linger when canceling the move, allowing Cliff to avoid committing to it and rapidly build hit count. Main weakness is that his buffs are all selfish, meaning that he brings little party utility and depends heavily on party buffs to optimize his damage output. Cliff is outscaled by other carries, and will continue to fall behind until his awakening.   
       
+      
       **Pros**
       
       - Powerful when party comp is built for him.
@@ -624,12 +626,12 @@
       
       - Strong passive party-wide crit buff, as well as an unmatched post-rush crit buff.
       
-      - 5-star non-ace, meaning she costs less to limit break and augment.
+      - 5-star non-ace, therefore costs less to limit break and augment.     
       
       
       **Cons**
       
-      - 5-star non-ace, meaning she has lower stats.
+      - 5-star non-ace, therefore has lower stats.
       
       - Poor damage and little utility beyond crit buffing.
       
@@ -712,39 +714,45 @@
           buffValue: 40
     power: ATK x 2500%
     maxHits: 12
-    
+
+  rotations:
+    - name: General Use
+      skills:
+        - name: Normal
+        - name: Helm Splitter
+        - name: Shotgun Blast
+        - name: Helm Splitter
+          repeat: "N"
+          
   notes: >
-      _His main niche is potent AP reduction; he passively provides the party -20% AP costs, which ramps up to -40% post rush. However, in caster /healer parties, a number have AP cost down passively, which lowers his efficiency there._
+      His main niche is potent AP reduction; he passively provides the party -20% AP costs, ramping up to -40% post-rush. This can facilitate building rush more quickly for the party, making sub 20-second rush rotations effortless in some cases. However, he brings less utility to invoker/healer parties, as many invokers and healers already have AP reduction talents/buffs.    
+      
 
-      _-40% AP post rush also facilitates building rush more quickly for the party, making < 20 s rush rotations effortless in some cases._
-
-      _His DPS is brought up to above-average levels if able to utilize his human slayer talent. Later on there will be units with high DMG/AP cost that will benefit from his passive more._
+      His DPS is brought up to above-average levels if able to utilize his humanoid slayer talent. Later on, there will be units with high DMG/AP cost skills that will benefit more from his passive.     
       
       
-      **TL DR**
+     
       
       
       **Pros**
       
-      - Powerful AP reduction party-wide buff
+      - Powerful party-wide AP reduction buff.
       
-      - Good damage against humanoids
+      - Good damage against humanoids.
       
-      - 5 star non-ace so costs less to limit break and augment
+      - 5-star non-ace, therefore costs less to limit break and augment.   
       
       
       **Cons**
       
-      - 5 star non-ace so has less stats
+      - 5-star non-ace, which means he has less stats.
       
-      - Doesn't bring any utility beyond his AP reduction
+      - Doesn't bring any utility beyond his AP reduction.
       
-      - Bad damage against non-humanoids
+      - Unimpressive damage against non-humanoids.
       
-      
-      **Rotation**
-      
-      *Normal > Helmsplitter > Shotgun > Helmsplitter^n*
+
+
 
 - name: Roddick Farrence
   cat: gl
@@ -836,25 +844,22 @@
     maxHits: 7
 
   rotations:
-    - name: Humanoid Group
-      notes: Shotgun keeps humanoid groups stunlocked.
-      skills:
-        - name: Air Slash
-        - name: Double Slash
-        - name: Shotgun Blast
-
-    - name: Single Humanoid
-      skills:
-        - name: Air Slash
-        - name: Double Slash
-        - name: Dragon Slash
-
-    - name: DPS/HC Against Large/Medium Bosses
+    - name: Large Targets / Hitcount / Post-Rush / Elemental Stun
+      notes: Dragon Slash will "push" stunned enemies; use with caution during elemental burst!
       skills:
         - name: Normal
         - name: Shotgun Blast
         - name: Air Slash
         - name: Shotgun Blast
+          repeat: "N"
+
+    - name: Small Target
+      notes: Dragon Slash and Shotgun Blast have large hitboxes and will miss hits on smaller targets.
+      skills:
+        - name: Normal
+        - name: Double Slash
+        - name: Air Slash
+        - name: Double Slash
           repeat: "N"
 
     - name: Rush Build
@@ -874,32 +879,23 @@
           repeat: "N"
     
   notes: >
-      _Buffs stun rate for the party, and boasts an amazing-albeit-selfish Rush buff. Being able to chain stuns trivializes bosses, both preventing them_
-
-      _from moving and allowing the party to unload on them without worrying about dodging, bolstering both DPS and survival. His efficiency falls_
-
-      _off in fights that can be ended in a single rush; save him for content durable enough for Rush buffs and multiple stuns to matter. Best kept away _
-
-      _from humanoid bosses; his performance falls off sharply if Shotgun Blast and Dragon Slash can't get bonus hits, but is significant if they do. Is still relevant today even in JP due to his ability to stun; a fantastic unit._
+      Buffs stun rate for the party, and boasts an amazing, albeit selfish, post-rush buff. Being able to chain-stun trivializes bosses, preventing them from moving and allowing the party to unload on them without worrying about dodging, bolstering both DPS and survival. His effectiveness falls off in fights that can be ended in a single rush, so save him for content durable enough for post-rush buffs and multiple stuns to matter. Best kept away from humanoid bosses; his performance falls off sharply if Shotgun Blast and Dragon Slash can't get bonus hits. Is still relevant today even in JP due to his ability to stun; a fantastic unit.   
       
       
-      **TL DR**
       
+      **Pros*
       
-      **Pros**
+      - Powerful party-wide stun buff.
       
-      - Slight invoking time buff
-      
-      - Ridiculous buff to partywide stun rate
-      
-      - Strong greedy post-rush buff
+      - Strong post-rush buff.
       
       
       **Cons**
             
-      - Brings little utility beyond his stun buff
+      - Brings little party utility beyond his stun buff.
       
-      - Needs some slight build around to take advantage of his buff
+      - Team comp needs to be built around him to some degree.
+
 
 - name: Reimi Saionji (Summer)
   cat: gl
@@ -1003,18 +999,52 @@
           buffValue: 40
     power: ATK x 4000%
     maxHits: 7
-    
+
+  rotations:
+    - name: DPS with Smackdown
+      skills:
+        - name: Normal
+        - name: Crescent Mirage
+        - name: Smackdown
+        - name: Summer Smoothie
+        - name: Summer Smoothie
+        - name: Crescent Mirage
+
+    - name: DPS with Combo Breaker
+      notes: Combo Breaker costs less AP and has better rush gain than Smackdown, but is slower. Dodge out of the final Smoothie.
+      skills:
+        - name: Normal
+        - name: Crescent Mirage
+        - name: Combo Breaker
+        - name: Summer Smoothie
+          repeat: "N"
+
+    - name: DPS with Smackdown (AP seeds or AP reduction)
+      skills:
+        - name: Normal
+        - name: Smackdown
+        - name: Crescent Mirage
+        - name: Summer Smoothie
+          repeat: "N"
+
+    - name: DPS with Combo Breaker (AP seeds or AP reduction)
+      skills:
+        - name: Normal
+        - name: Crescent Mirage
+        - name: Combo Breaker
+        - name: Summer Smoothie
+          repeat: "N"
+          
   notes: >
-      _Buffed back to her JP glory, way before summer officially swings back again. Her buff becomes competitive and she is once again almost unconditionally better than even Awakened Fidel (poor guy), with a 45% ATK buff unconditionally. Her AP on normals goes back to 100%, though only for melee (admittedly a bit unfortunate) and she gets air dodge, making her Helmsplit much more usable [SUMMER SMOOTHIE]. SReimi returns. Although her moveset is still a bit subpar, there's nothing particularly terrible about it._
+      Unnerfed to her JP glory, albeit way before summer officially swings back again. Her buffing becomes competitive, with an unconditional 45% ATK buff, and her AP on normals goes back to 100%, though only for melee (admittedly a bit unfortunate). She also gets air dodge, making her Helmsplitter much more usable [SUMMER SMOOTHIE]. SReimi returns. Although her moveset is still a bit subpar, there's nothing particularly terrible about it.     
       
-      **TL DR**
       
       
       **Pros**
       
-      - Strong ATK buffs.
+      - Strong party-wide ATK buffs.
       
-      - Ap recovery on normals for close-ranged fighters.
+      - Ap recovery on normals for short-range fighters.
       
       - Really powerful post-rush buff.
       
@@ -1025,22 +1055,10 @@
             
       - Slow rush gain.
       
-      - Awkward attack buff.
+      - Awkward positional conditionals.
       
-      - Subpar moveset.
+      - Somewhat subpar moveset.
       
-      
-      **Rotation**
-      
-      *Can run Combo Breaker in the place of Smackdown for less AP, slightly less smooth comboing (bit slower), but more Rush Gain.*
-
-      *Normal > Crescent > Combo > Smoothie^n - DPS w/Combo*
-
-      *Normal > Crescent > Smack > Smoothie > Smoothie > Crescent - DPS w/Smack*
-
-      *Normal > Crescent > Smack > Crescent > Smoothie^n > Dash Cancel -> Smack, can end on Smoothie if planning to dash anyway.*
-
-      *Normal > Smack/Crescent > Crescent/Combo > Smoothie^n - AP Cost Reduction*
 
 - name: Lenneth Valkyrie
   cat: gl
@@ -4771,3 +4789,7 @@
         duration: 20
     power: ATK x 5500%
     maxHits: 20
+    
+  notes: >
+      Truly a monster of a carry, with some of the highest DPS in the game and bonuses for hitting largests with a perfectly placed Northern Cross. Range-versatile with moves that allow her to reposition easily.       
+   
