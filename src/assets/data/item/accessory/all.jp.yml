@@ -1182,3 +1182,89 @@
         buffCondition: Short Range
     - desc: No flinching when taking damage of 15% of max HP or less at short range
   obtained: Disaster Crab (Achievement, Exchange, Drop)
+
+- name: Coro's Squeeze Bottle
+  cat: 'jp'
+  star: 5
+  picture: Koro's_Squeeze_Bottle
+  def: 753
+  factors:
+    - desc: Absorbs 5% of damage dealt by normal attacks as HP
+    - desc: AP cost -5%
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 5
+  obtained: Disaster Crab (Achievement)
+
+- name: Cheeky Butler's Pocket Watch
+  cat: 'jp'
+  star: 5
+  picture: Cheeky_Butler's_Pocket_Watch
+  def: 728
+  factors:
+    - desc: No flinching during charge assault
+    - desc: AP cost -5% at long range
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffCondition: Long Range
+        buffValue: 5
+  obtained: Phantom Dream Fungus (Achievement, Exchange, Drop)
+
+- name: Lost Cat Headdress
+  cat: 'jp'
+  star: 5
+  picture: Lost_Cat_Headdress
+  def: 753
+  factors:
+    - desc: AP recovery +30%
+      meta:
+        priority: 3
+        buff: AP Recovery
+        buffValue: 30
+    - desc: Damage taken -15% when hitcount is >50
+      meta:
+        priority: 3
+        buff: Damage Taken Reduction
+        buffCondition: Hit Count > 50
+        buffValue: 15
+  obtained: Phantom Dream Fungus (Achievement)
+
+- name: Tika's Ribbon Brooch
+  cat: 'jp'
+  star: 5
+  picture: Tika's_Ribbon_Brooch
+  def: 728
+  factors:
+    - desc: HP +10%
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 10
+    - desc: Rush combo damage +5%
+      meta:
+        priority: 4
+        buff: Rush Damage
+        buffValue: 5
+  obtained: Twin Eclipse Story (Chapter 2)
+
+- name: Teardrop Sunglasses
+  cat: 'jp'
+  star: 5
+  picture: Teardrop_Sunglasses
+  def: 728
+  factors:
+    - desc: INT damage dealt +10% at long range
+      meta:
+        priority: 3
+        buff: INT Damage
+        buffCondition: Long Range
+        buffValue: 10
+    - desc: AP recovery +20% at long range
+      meta:
+        priority: 1
+        buff: AP Recovery
+        buffCondition: Long Range
+        buffValue: 20
+  obtained: Hell Schutzer (Exchange, Drop)
