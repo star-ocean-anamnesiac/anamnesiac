@@ -96,16 +96,16 @@
     maxHits: 27
 
   rotations:
-    - name: Regular (no AP seeds and no AP reduction)
-      notes: As fillers, Arms 1 and Pod 2 are more or less interchangeable; Arms 1 is faster, Pod 2 is cheaper.
+    - name: **General Use (no AP seeds and no AP reduction)**
+      notes: As fillers, Arms 1 is faster but Pod 2 costs less AP; use per preference and situation.
       skills:
         - name: Normal
         - name: "YoRHa Arms: One"
         - name: "YoRHa Pod: Two"
         - name: "YoRHa Arms: Two"
 
-    - name: Regular (105 AP or with AP reduction)
-      notes: Dash out immediately after the last Pod 2.
+    - name: **General Use (105 AP or with -5% AP reduction)**
+      notes: Dash cancel out of the last Pod 2.
       skills:
         - name: Normal
         - name: "YoRHa Arms: One"
@@ -113,7 +113,7 @@
         - name: "YoRHa Arms: Two"
         - name: "YoRHa Pod: Two"
 
-    - name: Mobile Target
+    - name: **Mobile Targets**
       notes: CA Arms 2 as necessary to reposition.
       skills:
         - name: Normal
@@ -122,7 +122,7 @@
         - name: "YoRHa Arms: Two"        
           repeat: "N"   
           
-    - name: Rush Gain
+    - name: **Rush Gain**
       notes: Situational; remember that Arms 2 is slow and may miss with mobile targets.
       skills:
         - name: Normal
@@ -130,7 +130,7 @@
         - name: "YoRHa Pod: Two"
         - name: "YoRHa Arms: Two"
 
-    - name: Ranged (Pod 1 not equipped)
+    - name: **Ranged (Pod 1 not equipped)**
       notes: Deliberately whiff Arms 1, do not CA.
       skills:
         - name: "YoRHa Pod: Two"
@@ -138,8 +138,8 @@
         - name: "YoRHa Pod: Two"
           repeat: "N"
           
-    - name: Full Ranged
-      notes: Not recommended for most situations; 2B's DPS and rush gain are most optimal at melee.
+    - name: **Full Ranged**
+      notes: Not generally recommended; 2B's DPS and rush gain are most optimal at melee.
       skills:
         - name: "YoRHa Pod: One"
         - name: "YoRHa Pod: Two"
@@ -148,7 +148,7 @@
           repeat: "N" 
 
   notes: >
-      _An incredible unit. Boasts amazing overall party utility, bringing a strong ATK buff, unconditional AP recovery on normal attacks (unlike Summer Reimi), and an incredible post-rush buff to the party. Her air dodge and evasion talents give her fluidity in a fight. Alongside all her utility, her actual damage is very solid.    
+      An incredible unit. Boasts amazing overall party utility, bringing a strong ATK buff, unconditional AP recovery on normal attacks (unlike Summer Reimi), and an incredible post-rush buff to the party. Her air dodge and evasion talents give her fluidity in a fight. Alongside all her utility, her actual damage is very solid.    
       
       
       
@@ -246,7 +246,7 @@
     maxHits: 12
 
   rotations:
-    - name: Regular
+    - name: **General**
       skills:
         - name: Normal
         - name: Double Slash
@@ -254,8 +254,8 @@
         - name: Double Slash
           repeat: "N"
           
-    - name: Slow Target
-      notes: Slightly more damage than the Double Slash rotation.
+    - name: **Slow Target**
+      notes: Deals slightly more damage than the Double Slash rotation.
       skills:
         - name: Normal
         - name: Air Slash
@@ -264,7 +264,8 @@
           repeat: "N"          
     
   notes: >
-      _Fidel, the starter character and sometimes face of the app. Fidel's 40% unconditional party-wide ATK buff is still reasonable, but he gives no AP recovery from normals, which limits his utility as an attack buffer compared to units like 2B and Halloween Millie. His personal damage is not stellar, though this is mitigated to some degree by his AP reduction talent and potent post-rush buff.   
+      Fidel, the starter character and sometime face of the app. Fidel's 40% unconditional party-wide ATK buff is still reasonable, but he gives no AP recovery from normals, which limits his utility as an attack buffer compared to units like 2B and Halloween Millie. His personal damage is not stellar, though this is mitigated to some degree by his AP reduction talent and potent post-rush buff.     
+      
       
       **Pros**
       
@@ -275,7 +276,7 @@
       
       **Cons**
       
-      - Doesn't bring any utility beyond his ATK buff.
+      - Brings no party utility beyond his ATK buff.
       
       - Low ATK stat gives him lower damage compared to competing units.
       
@@ -397,9 +398,9 @@
           repeat: "N"          
 
   notes: >
-      _[v2] Fidel got a JP-side stealth buff, making his Air Raid a lot more consistent, as well as eliminating some other clunk attached to the move. With this, he now deals a significant amount of damage, allowing him to function reasonably as an attack buffer and carry at the same time. A solid comp would still need to build around him (Ideally adding AP recovery somewhere), but he allows some flexibility and different compositions which don't rely as heavily on conditional buffs to maximize damage.
+      Awakened Fidel got a JP-side stealth buff, making his Air Raid much more consistent, as well as eliminating some other clunk attached to the move. With this, he now deals a significant amount of damage, allowing him to function reasonably as both an attack buffer and a carry. A solid team comp would still need to build around him (ideally adding AP recovery somewhere), but he allows flexibility and eliminates the need to rely on meeting at times fussy conditionals in order to maximize damage.
 
-      [Potential] With his changes, Fidel becomes a pub hero, bringing his own buffing and extremely good DPS. That said, he still suffers in premades, but will do particularly well on auto, where his particular strengths shine (Air Raid hits easily, don't need AP normals as heavily, non-conditional buff)._
+      [Potential] With his changes, Fidel becomes a pub hero, bringing his own buffing and extremely good DPS. That said, he still suffers in premades, but will do particularly well on auto, where his particular strengths shine (Air Raid hits easily, doesn't rely as heavily on AP normals, non-conditional buff).   
       
       
       **Pros**
@@ -410,7 +411,7 @@
       
       - Has ranged skills which give him more flexibility.
       
-      - Air Raid has high rush gain, for easy 20s rush chaining.
+      - Air Raid has high rush gain, for easy 20s rush-chaining.    
       
       **Cons**
       
@@ -491,7 +492,7 @@
     maxHits: 25
 
   rotations:
-    - name: Regular (101 AP)
+    - name: **General (101 AP)**
       notes: DPS and decent rush gain. Dash out of Fists after the third hit.
       skills:
         - name: Normal
@@ -501,7 +502,7 @@
           repeat: "5"
         - name: Fists of Fury
 
-    - name: Elemental Burst
+    - name: **Element Burst**
       notes: Will not "push" targets.
       skills:
         - name: Normal
@@ -510,7 +511,7 @@
         - name: Fists of Fury
           repeat: "N"
 
-    - name: Rush Gain
+    - name: **Rush Gain**
       notes: Low DPS. Dash-cancel Fists and the final Crescent after their third hit.
       skills:
         - name: Normal
@@ -520,13 +521,13 @@
         - name: Crescent Locus
         
   notes: >
-      _Great for solo content, with dirt cheap AP costs and a powerful rush. Notably Fists of Fury's multihits linger when canceling the move, allowing Cliff to avoid committing to it and rapidly build hit count. Main weakness is that his buffs are all selfish, meaning that he brings little party utility and depends heavily on party buffs to optimize his damage output. Cliff is outscaled by other carries, and will continue to fall behind until his awakening._
+      Great for solo content, with dirt-cheap AP costs and a powerful rush. Notably, Fists of Fury's multi-hits linger when canceling the move, allowing Cliff to avoid committing to it and rapidly build hit count. Main weakness is that his buffs are all selfish, meaning that he brings little party utility and depends heavily on party buffs to optimize his damage output. Cliff is outscaled by other carries, and will continue to fall behind until his awakening.   
       
       **Pros**
       
       - Powerful when party comp is built for him.
       
-      - Good for solo play.
+      - Good for solo play.   
       
       
       **Cons**
@@ -607,7 +608,7 @@
     maxHits: 8
 
   rotations:
-    - name: Regular
+    - name: **General**
       skills:
         - name: Normal
         - name: Triple Kick
@@ -616,7 +617,7 @@
           repeat: "N"
 
   notes: >
-      _Buffs critical hit chance, but brings little other party utility and has low damage output. Niche use in Crystal Guardian and against high DEF targets.
+      Buffs critical hit chance, but brings little other party utility and has low damage output. Niche use in Crystal Guardian and against high DEF targets.   
       
       
       **Pros**
