@@ -96,7 +96,7 @@
     maxHits: 27
 
   rotations:
-    - name: "**General Use (no AP seeds and no AP reduction)**"
+    - name: General Use (no AP reduction)
       notes: As fillers, Arms 1 is faster but Pod 2 costs less AP; use per preference and situation.
       skills:
         - name: Normal
@@ -104,7 +104,7 @@
         - name: "YoRHa Pod: Two"
         - name: "YoRHa Arms: Two"
 
-    - name: "**General Use (105 AP or with -5% AP reduction)**"
+    - name: General Use (105 AP or AP reduction)
       notes: Dash cancel out of the last Pod 2.
       skills:
         - name: Normal
@@ -113,7 +113,7 @@
         - name: "YoRHa Arms: Two"
         - name: "YoRHa Pod: Two"
 
-    - name: "**Mobile Targets**"
+    - name: Mobile Targets
       notes: CA Arms 2 as necessary to reposition.
       skills:
         - name: Normal
@@ -122,7 +122,7 @@
         - name: "YoRHa Arms: Two"        
           repeat: "N"   
           
-    - name: "**Rush Gain**"
+    - name: Rush Gain
       notes: Situational; remember that Arms 2 is slow and may miss with mobile targets.
       skills:
         - name: Normal
@@ -130,7 +130,7 @@
         - name: "YoRHa Pod: Two"
         - name: "YoRHa Arms: Two"
 
-    - name: "**Ranged (Pod 1 not equipped)**"
+    - name: Ranged (Pod 1 not equipped)
       notes: Deliberately whiff Arms 1, do not CA.
       skills:
         - name: "YoRHa Pod: Two"
@@ -138,7 +138,7 @@
         - name: "YoRHa Pod: Two"
           repeat: "N"
           
-    - name: "**Full Ranged**"
+    - name: Full Ranged
       notes: Not generally recommended; 2B's DPS and rush gain are most optimal at melee.
       skills:
         - name: "YoRHa Pod: One"
@@ -246,7 +246,7 @@
     maxHits: 12
 
   rotations:
-    - name: "**General**"
+    - name: General Use
       skills:
         - name: Normal
         - name: Double Slash
@@ -254,7 +254,7 @@
         - name: Double Slash
           repeat: "N"
           
-    - name: "**Slow Target**"
+    - name: Slow Target
       notes: Deals slightly more damage than the Double Slash rotation.
       skills:
         - name: Normal
@@ -389,7 +389,7 @@
     maxHits: 12
 
   rotations:
-    - name: "**General**"
+    - name: General Use
       skills:
         - name: Normal
         - name: Air Slash
@@ -492,8 +492,8 @@
     maxHits: 25
 
   rotations:
-    - name: "**General (101 AP)**"
-      notes: DPS and decent rush gain. Dash out of Fists after the third hit.
+    - name: General (101 AP)
+      notes: DPS and decent rush gain. Dash out of Fists of Fury after the third hit.
       skills:
         - name: Normal
         - name: Crescent Locus
@@ -502,7 +502,7 @@
           repeat: "5"
         - name: Fists of Fury
 
-    - name: "**Element Burst**"
+    - name: Element Burst
       notes: Will not "push" targets.
       skills:
         - name: Normal
@@ -511,7 +511,7 @@
         - name: Fists of Fury
           repeat: "N"
 
-    - name: "**Rush Gain**"
+    - name: Rush Gain
       notes: Low DPS. Dash-cancel Fists and the final Crescent after their third hit.
       skills:
         - name: Normal
@@ -608,7 +608,7 @@
     maxHits: 8
 
   rotations:
-    - name: "**General**"
+    - name: General Use
       skills:
         - name: Normal
         - name: Triple Kick
