@@ -1397,3 +1397,95 @@
         buffValue: 10
     - desc: Recovers 2% of max HP every 5 seconds
   obtained: G-Imitation Ghost (Achievement, Exchange, Drop)
+
+- name: Fallen Angel's Necklace
+  cat: 'jp'
+  star: 5
+  picture: Fell_Angel's_Necklace
+  def: 803
+  factors:
+    - desc: Damage taken -10%
+      meta:
+        priority: 1
+        buff: Damage Taken
+        buffValue: 10
+    - desc: Evasion AP cost -50%
+  obtained: G-Imitation Ghost (Achievement, Exchange)
+
+- name: Pumpkin Crown
+  cat: 'jp'
+  star: 5
+  picture: Pumpkin_Crown
+  def: 728
+  factors:
+    - desc: AP cost -5% when HP is 100%
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffCondition: HP is 100%
+        buffValue: 5
+    - desc: Stun rate +10% when HP is 100%
+      meta:
+        priority: 1
+        buff: Stun Rate
+        buffCondition: HP is 100%
+        buffValue: 10
+  obtained: Trick Witcheye (Achievement, Drop)
+
+- name: Black Onigumo Strap
+  cat: 'jp'
+  star: 5
+  picture: Black_Onigumo_Strap
+  def: 753
+  factors:
+    - desc: INT damage taken -15% when HP is 100%
+      meta:
+        priority: 1
+        buff: INT Damage Taken
+        buffCondition: HP is 100%
+        buffValue: 15
+    - desc: No flinching when HP is 100%
+  obtained: Trick Witcheye (Achievement)
+
+- name: Welch's Hat
+  cat: 'jp'
+  star: 5
+  picture: Welch's_Hat
+  def: 728
+  factors:
+    - desc: Damage dealt +5%
+      meta:
+        priority: 3
+        buff: Damage
+        buffValue: 5
+    - desc: Hitcount timer +0.5 seconds
+  obtained: Twin Eclipse Story (Chapter 4)
+
+- name: Red Emblem
+  cat: 'jp'
+  star: 5
+  picture: Red_Emblem
+  def: 728
+  factors:
+    - desc: Movement speed +30%
+    - desc: Recovers 3% of max HP on perfect dodge
+  obtained: Sahariel Plunderer (Achievement, Exchange, Drop)
+
+- name: Warrior's Hair Ornament
+  cat: 'jp'
+  star: 5
+  picture: Warrior's_Hair_Ornament
+  def: 753
+  factors:
+    - desc: Rush combo damage +15% at short range
+      meta:
+        priority: 1
+        buff: Rush Damage
+        buffCondition: Short Range
+        buffValue: 15
+    - desc: Stun rate +5%
+      meta:
+        priority: 1
+        buff: Stun Rate
+        buffValue: 5
+  obtained: Sahariel Plunderer (Achievement)
