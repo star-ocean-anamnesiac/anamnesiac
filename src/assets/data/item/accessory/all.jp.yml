@@ -1091,3 +1091,94 @@
     - desc: Evasion AP cost -50%
     - desc: Movement speed +30%
   obtained: Beast Kid (Drop, Exchange, Draw Box)
+
+- name: Nurse's Cap
+  cat: 'jp'
+  star: 5
+  picture: Nurse_Cap
+  def: 753
+  factors:
+    - desc: Absorbs 5% of damage dealt by normal attacks as HP
+    - desc: Damage dealt +5%
+      meta:
+        priority: 1
+        buff: Damage
+        buffValue: 5
+  obtained: Beast Kid (Achievement)
+
+- name: Enamel Belt
+  cat: 'jp'
+  star: 5
+  picture: Enamel_Belt
+  def: 728
+  factors:
+    - desc: No flinching during charge assault
+    - desc: Rush combo damage +5%
+      meta:
+        priority: 1
+        buff: Rush Damage
+        buffValue: 5
+  obtained: Ancient Guardian (Achievement, Exchange, Drop)
+
+- name: Crest of Blazing Flames
+  cat: 'jp'
+  star: 5
+  picture: Crest_of_Blazing_Flames
+  def: 753
+  factors:
+    - desc: Damage taken -15% when targeted by enemy at short range
+      meta:
+        priority: 3
+        buff: Damage Taken Reduction
+        buffCondition: Holding Aggro and Short Range
+        buffValue: 15
+    - desc: Taunt +3
+  obtained: Ancient Guardian (Achievement)
+
+- name: Dorne's Affection
+  cat: 'jp'
+  star: 5
+  picture: Dorne's_Affection
+  def: 728
+  factors:
+    - desc: HP +10%
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 10
+    - desc: Evasion AP cost -50%
+  obtained: Sea Dragon Chieftain (Achievement, Exchange, Drop)
+
+- name: Dolphin Necklace
+  cat: 'jp'
+  star: 5
+  picture: Dophin_Necklace
+  def: 753
+  factors:
+    - desc: ATK damage dealt +20% when skill chain is >3
+      meta:
+        priority: 3
+        buff: ATK Damage
+        buffValue: 20
+        buffCondition: Skill Chain 3+
+    - desc: Rush combo damage +5%
+      meta:
+        priority: 1
+        buff: Rush Damage
+        buffValue: 5
+  obtained: Sea Dragon Chieftain (Achievement)
+
+- name: Dorne's Friendship
+  cat: 'jp'
+  star: 5
+  picture: Dorne's_Friendship
+  def: 728
+  factors:
+    - desc: Elemental damage dealt +5% at short range
+      meta:
+        priority: 3
+        buff: Elemental Damage
+        buffValue: 5
+        buffCondition: Short Range
+    - desc: No flinching when taking damage of 15% of max HP or less at short range
+  obtained: Disaster Crab (Achievement, Exchange, Drop)
