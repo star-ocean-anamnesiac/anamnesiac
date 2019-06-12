@@ -1489,3 +1489,70 @@
         buff: Stun Rate
         buffValue: 5
   obtained: Sahariel Plunderer (Achievement)
+
+- name: Witch's Choker
+  cat: 'jp'
+  star: 5
+  picture: Witch's_Chocker
+  def: 728
+  factors:
+    - desc: Additional hit that deals 10% of damage dealt by normal attacks
+    - desc: Rush combo damage +20% when hitcount is >250
+      meta:
+        priority: 1
+        buff: Rush Damage
+        buffCondition: Hit Count > 250
+        buffValue: 20
+  obtained: Twin Eclipse Story (Chapter 5)
+
+- name: Rekoro Strap
+  cat: 'jp'
+  star: 5
+  picture: Rekoro_Strap
+  def: 728
+  factors:
+    - desc: ATK damage dealt +10%
+      meta:
+        priority: 3
+        buff: ATK Damage
+        buffValue: 10
+    - desc: INT damage dealt +10%
+      meta:
+        priority: 3
+        buff: INT Damage
+        buffValue: 10
+    - desc: Damage taken -5%
+      meta:
+        priority: 3
+        buff: Damage Taken Reduction
+        buffValue: 5
+  obtained: Supipi-chan (Exchange, Drop)
+
+- name: Glutton's Hat
+  cat: 'jp'
+  star: 5
+  picture: Glutton's_Hat
+  def: 728
+  factors:
+    - desc: Absorbs 3% of damage dealt by normal attacks as HP
+    - desc: HP +5%
+      meta:
+        priority: 1
+        buff: HP
+        buffValue: 5
+  obtained: Supipi-chan (Achievement, Exchange, Drop)
+
+- name: Idol's Patch
+  cat: 'jp'
+  star: 5
+  picture: Idol's_Patch
+  def: 753
+  factors:
+    - desc: ATK damage dealt +10% when facing target
+      meta:
+        priority: 3
+        buff: ATK Damage
+        buffCondition: Facing Target
+        buffValue: 10
+    - desc: No flinching when taking damage of 10% of max HP or less
+  obtained: Supipi-chan (Achievement)
