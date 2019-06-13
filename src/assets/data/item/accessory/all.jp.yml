@@ -2061,7 +2061,7 @@
 - name: Chester Mascot
   cat: 'jp'
   star: 5
-  picture: Chester Mascot
+  picture: Chester_Mascot
   def: 728
   factors:
     - Absorbs 5% of damage dealt by normal attacks as HP when at long range
