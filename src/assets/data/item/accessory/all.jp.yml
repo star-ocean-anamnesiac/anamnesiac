@@ -1585,3 +1585,124 @@
         buffValue: 15
     - desc: Recovers 2% of max HP every 5 seconds
   obtained: Winter Botanical Beast (Achievement)
+
+- name: Silver Bunny Trophy
+  cat: 'jp'
+  star: 5
+  picture: Silver_Bunny_Trophy
+  def: 728
+  factors:
+    - desc: HP +10%
+      meta:
+        priority: 3
+        buff: HP
+        buffValue: 10
+    - desc: INT damage taken -15%
+      meta:
+        priority: 3
+        buff: INT Damage Taken Reduction
+        buffValue: 15
+  obtained: Triumvirate Pt. 2 (Achievement, Drop)
+
+- name: Gold Bunny Trophy
+  cat: 'jp'
+  star: 5
+  picture: Gold_Bunny_Trophy
+  def: 753
+  factors:
+    - desc: ATK damage dealt +5%
+      meta:
+        priority: 3
+        buff: ATK Damage
+        buffValue: 5
+    - desc: INT damage dealt +5%
+      meta:
+        priority: 3
+        buff: INT Damage
+        buffValue: 5
+    - desc: Critical hit chance +15%
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffValue: 15
+  obtained: Triumvirate Pt. 2 (Achievement, Drop)
+
+- name: Plum Hair Ornament
+  cat: 'jp'
+  star: 5
+  picture: Plum_Hair_Ornament
+  def: 728
+  factors:
+    - desc: Stun rate +10%
+      meta:
+        priority: 4
+        buff: Stun Rate
+        buffValue: 10
+    - desc: HP +5%
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 5
+  obtained: Rekorokoro (Achievement, Exchange, Drop)
+
+- name: Gemini's Western Hat
+  cat: 'jp'
+  star: 5
+  picture: Gemini's_Western_Hat
+  def: 728
+  factors:
+    - desc: AP recovery +30%
+      meta:
+        priority: 3
+        buff: AP Recovery
+        buffValue: 30
+    - desc: ATK damage taken -10% at short range
+      meta:
+        priority: 3
+        buff: ATK Damage Taken Reduction
+        buffCondition: Short Range
+        buffValue: 10
+  obtained: Fallen Demon Plant / Sakura Taisen (Achievement, Drop)
+
+- name: Erika's Rosary
+  cat: 'jp'
+  star: 5
+  picture: Erika's_Rosary
+  def: 753
+  factors:
+    - desc: Damage taken -10%
+      meta:
+        priority: 3
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+    - desc: Recovers 2% of max HP every 3 seconds
+  obtained: Fallen Demon Plant / Sakura Taisen (Achievement, Drop)
+
+- name: Sakura's Ribbon
+  cat: 'jp'
+  star: 5
+  picture: Sakura's_Ribbon
+  def: 753
+  factors:
+    - desc: No flinching during charge assault
+    - desc: Critical hit chance +15% at short range
+      meta:
+        priority: 3
+        buff: Crit Rate
+        buffValue: 15
+        buffCondition: Short Range
+  obtained: Fallen Demon Plant / Sakura Taisen (Achievement, Drop)  
+
+- name: Camellia Hair Ornament
+  cat: 'jp'
+  star: 5
+  picture: Camellia_Hair_Ornament
+  def: 753
+  factors:
+    - desc: Movement speed +30%
+    - desc: Critical hit chance +15%
+      meta:
+        priority: 3
+        buff: Crit Rate
+        buffValue: 15
+  obtained: Rekorokoro (Achievement)
