@@ -2064,14 +2064,14 @@
   picture: Chester_Mascot
   def: 728
   factors:
-    - Absorbs 5% of damage dealt by normal attacks as HP when at long range
+    - desc: Absorbs 5% of damage dealt by normal attacks as HP when at long range
     - desc: ATK damage taken -10% at long range
       meta:
         priority: 4
         buff: ATK Damage Taken Reduction
         buffCondition: Long Range
         buffValue: 10
-    - desc: INT damage taken -10%
+    - desc: INT damage taken -10% at long range
       meta:
         priority: 4
         buff: INT Damage Taken Reduction
