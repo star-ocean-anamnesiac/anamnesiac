@@ -1706,3 +1706,130 @@
         buff: Crit Rate
         buffValue: 15
   obtained: Rekorokoro (Achievement)
+
+- name: Fluffy Set
+  cat: 'jp'
+  star: 5
+  picture: Fluffy_Set
+  def: 728
+  factors:
+    - desc: Movement speed +30%
+    - desc: HP +10%
+      meta:
+        priority: 3
+        buff: HP
+        buffValue: 10
+  obtained: Squelette de Chocolat (Exchange, Drop)
+
+- name: Bitter Chocolate Cookie Pouch
+  cat: 'jp'
+  star: 5
+  picture: Bitter_Chocolate_Cookie_Pouch
+  def: 753
+  factors:
+    - desc: Rush combo damage +15% when hitcount is >150
+      meta:
+        priority: 4
+        buff: Rush Damage
+        buffCondition: Hit Count > 150
+        buffValue: 15
+    - desc: ATK damage taken -10%
+      meta:
+        priority: 3
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+    - desc: INT damage taken -10%
+      meta:
+        priority: 3
+        buff: INT Damage Taken Reduction
+        buffValue: 10
+  obtained: Squelette de Chocolat (Achievement)
+
+- name: Dark Scarf
+  cat: 'jp'
+  star: 5
+  picture: Dark_Scarf
+  def: 728
+  factors:
+    - desc: Recovers 2% of max HP every 5 seconds
+    - desc: Single target damage +10% at short range
+      meta:
+        priority: 4
+        buff: Single Target Damage
+        buffCondition: Short Range
+        buffValue: 10
+  obtained: Dark Valka (Exchange, Drop)
+
+- name: Miniature Spaceship Model
+  cat: 'jp'
+  star: 5
+  picture: Miniature_Spaceship_Model
+  def: 753
+  factors:
+    - desc: Elemental damage dealt +10% when hitcount is >150
+      meta:
+        priority: 3
+        buff: Elemental Damage
+        buffCondition: Hit Count > 150
+        buffValue: 10
+    - desc: Evasion speed & distance +50%
+  obtained: Dark Valka (Achievement)
+
+- name: Survey Corps Cape
+  cat: 'jp'
+  star: 5
+  picture: Survey_Corps_Cape
+  def: 728
+  factors:
+    - desc: Damage taken -10% when attacking
+      meta:
+        priority: 1
+        buff: Damage Taken
+        buffCondition: Attacking
+        buffValue: 10
+    - desc: 40% chance of surviving a lethal attack when at 10% of max HP or more and at long range
+  obtained: Titan Eren (Achievement, Drop)
+
+- name: Three Dimensional Maneuver Gear
+  cat: 'jp'
+  star: 5
+  picture: Three_Dimensional_Maneuver_Gear
+  def: 753
+  factors:
+    - desc: ATK damage dealt +20% when behind target
+      meta:
+        priority: 3
+        buff: ATK Damage
+        buffCondition: Behind Target
+        buffValue: 20
+    - desc: Evasion AP cost -50%
+  obtained: Titan Eren (Achievement, Drop)
+
+- name: Idol Headphones
+  cat: 'jp'
+  star: 5
+  picture: Idol_Headphones
+  def: 765
+  factors:
+    - desc: Recovers 5% of max HP on perfect dodge
+    - desc: HP +10%
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 10
+  obtained: Head Bull (Achievement, Drop)
+
+- name: Mechanical Bangle
+  cat: 'jp'
+  star: 5
+  picture: Mechanical_Bangle
+  def: 728
+  factors:
+    - desc: Critical hit chance +20% when hitcount is >200
+      meta:
+        priority: 3
+        buff: Crit Rate
+        buffValue: 20
+        buffCondition: Hit Count > 200
+    - desc: Hitcount timer +1 second
+  obtained: Twin Eclipse Story (Chapter 8)
