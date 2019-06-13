@@ -264,7 +264,7 @@
           repeat: "N"          
     
   notes: >
-      Fidel, the starter character and sometime face of the app. Fidel's 40% unconditional party-wide ATK buff is still reasonable, but he gives no AP recovery from normals, which limits his utility as an attack buffer compared to units like 2B and Halloween Millie. His personal damage is not stellar, though this is mitigated to some degree by his AP reduction talent and potent post-rush buff.     
+      Fidel, the starter character and sometime face of the app. Fidel's 40% unconditional party-wide ATK buff is still reasonable, but he gives no AP recovery from normals, which limits his utility as an ATK buffer compared to units like 2B and Halloween Millie. His personal damage is not stellar, though this is mitigated to some degree by his AP reduction talent and potent post-rush buff.     
       
       
       **Pros**
@@ -398,7 +398,7 @@
           repeat: "N"          
 
   notes: >
-      Awakened Fidel got a JP-side stealth buff, making his Air Raid much more consistent, as well as eliminating some other clunk attached to the move. With this, he now deals a significant amount of damage, allowing him to function reasonably as both an attack buffer and a carry. A solid team comp would still need to build around him (ideally adding AP recovery somewhere), but he allows flexibility and eliminates the need to rely on meeting at times fussy conditionals in order to maximize damage.    
+      Awakened Fidel got a JP-side stealth buff, making his Air Raid much more consistent, as well as eliminating some other clunk attached to the move. With this, he now deals a significant amount of damage, allowing him to function reasonably as both an ATK buffer and a carry. A solid team comp would still need to build around him (ideally adding AP recovery somewhere), but he allows flexibility and eliminates the need to rely on meeting at times fussy conditionals in order to maximize damage.    
       
 
       [Potential] With his changes, Fidel becomes a pub hero, bringing his own buffing and extremely good DPS. That said, he still suffers in premades, but will do particularly well on auto, where his particular strengths shine (Air Raid hits easily, doesn't rely as heavily on AP normals, non-conditional buff).   
@@ -884,7 +884,7 @@
       
       
       
-      **Pros*
+      **Pros**
       
       - Powerful party-wide stun buff.
       
@@ -1173,7 +1173,7 @@
         - name: Valkyrie's Mercy
         
   notes: >
-      Lenneth is a direct side-downgrade from attack buffers like S.Reimi and Fidel. Her damage and rush gain are nothing to write home about, and you lose the convenience of normal attack AP recovery for melee units in exchange for a chance to silence. Silence may occasionally stop a boss pattern from doing something annoying (or it can promote a more dangerous pattern). 
+      Lenneth is a direct side-downgrade from ATK buffers like S.Reimi and Fidel. Her damage and rush gain are nothing to write home about, and you lose the convenience of normal attack AP recovery for melee units in exchange for a chance to silence. Silence may occasionally stop a boss pattern from doing something annoying (or it can promote a more dangerous pattern). 
       
       
       **Pros**
@@ -1187,7 +1187,7 @@
       
       **Cons**
       
-      - Many other attack buffers bring stronger buffing.
+      - Many other ATK buffers bring stronger buffing.
       
       - Silence is unreliable and only situationally useful.
       
@@ -1297,7 +1297,7 @@
         - name: Helm Render
         
   notes: >
-      Claude is an interesting ATK buffer who only benefits Attackers and Defenders. His ATK buff is now outscaled by awakened Fidel (who buffs all classes), but notably he does give unconditional AP on normals to his party, which is his biggest draw. Unfortunately, there are now so many other options that Claude is not the optimal choice even when teamp comp is built around him.
+      Claude is an interesting unit; he buffs ATK for Attackers and Defenders while mitigating damage for Healers. His ATK buff is now outscaled by awakened Fidel (who buffs all classes), but notably he does give unconditional AP on normals to his party, which is his biggest draw. Unfortunately, there are now so many other options that Claude is not the optimal choice even when teamp comp can be built around him.
       
       
       **Pros**
@@ -1545,28 +1545,26 @@
     maxHits: 6
     
   notes: >
-      _A bit interesting, though on GL release will not be as stellar as he was on JP. In general stronger weapons and better access to certain buffs mean that Albel, while being a decent mix of a DPS and buffer, doesn't do either extremely well. His damage is gated by being someone who focuses on Air Slash, and his main ATK buff only applies to Attackers and Defenders, like Claude. Unlike Claude, DEF down matters little when the enemies are weaker, only adding a minor DMG increase, while Claude's unconditional AP on normals increases uptime for the whole team._
+      A bit interesting, though on GL release will not be as stellar as he was on JP. In general, stronger weapons and better access to certain buffs mean that Albel, while being a decent mix of a DPS and buffer, doesn't do either extremely well. His damage is gated by his focus on Air Slash, and like Claude his main ATK buff only applies to Attackers and Defenders. Unlike Claude, however, he does not give AP recovery on normals, and his DEF down matters little when the enemies are weaker, only adding a minor DMG increase. That said, he does do decent damage post-rush and racks hitcount well with Aura Wall.
       
-      
-      **TL DR**
       
       
       **Pros**
       
-      - Decent variety of buffs
+      - Decent variety of buffs.
       
-      - High post rush damage
+      - Good post-rush damage.
       
-      - Rare debuffing of enemy talent
+      - Rare enemy debuff.
       
       
       **Cons**
-            
-      - Super squishy post rush
       
-      - Buffs are easily made redundant
+      - Squishy post-rush.
       
-      - Not the best skill options
+      - Buffs are easily made redundant.
+      
+      - Not the best skillset.
             
       
       **Rotation**
@@ -1574,6 +1572,7 @@
       *Normal > Air > Aura > Air^n*
 
       *Normal > Aura > CA Air > CA Aura > Aura^n - HC (CA during EB to prevent moving bosses around, otherwise not needed.)*
+      
 
 - name: Ilia Silvestri
   cat: gl
@@ -1673,34 +1672,36 @@
     power: ATK x 3000%
     maxHits: 14
     
+  rotations:
+    - name: General Use
+      skills:
+        - name: Normal
+        - name: Palm of Destruction
+        - name: Crescent Locus
+        - name: Palm of Destruction
+          repeat: "N"
+          
   notes: >
-      _Not terrible, provides an average ATK buff considering her other utility. She's meant to synergize with Invokers on maps with trash, but realistically most maps which have mobs don't really need the multi-target DMG, and most bosses come alone otherwise. For the exact composition she would support (Fire Invokers) her ATK buff is useless. Overall extremely poor synergy. If you have no other ATK buffer, she fills the role, but if you have literally any other ATK buffer, they're probably better._
-      
-      
-      **TL DR**
+      Ilia is meant to synergize with Invokers on maps with fodder, but realistically most maps which have mobs don't really need the multi-target damage, and most bosses come alone otherwise. For the exact composition she would support (fire Invokers) her ATK buff is useless. Overall extremely poor synergy. If you have no other ATK buffer, she fills the role, but literally any other ATK buffer will probably do the job better. Her moveset is subpar and neither of her large skills are worth the cost for what they do.   
       
       
       **Pros**
       
-      - 5 star non-ace so costs less to limit break and augment.
+      - 5-star non-ace, therefore costs less to limit break and augment.
       
-      - Unique party wide buffs
+      - Unique party-wide buffs.
       
-      - Built in AP reduction
+      - Passive AP reduction.
       
       
       **Cons**
+      
+      - 5-star non-ace, therefore has lower stats.
+      
+      - Buffs aren't really that relevant outside of niche comps and content.
+      
+      - ATK buff is overshadowed by many other ATK buffers.
             
-      - 5 star non-ace so has less stats.
-      
-      - Buffs aren't really that relevant outside of niche comps and content
-      
-      - ATK buff is overshadowed by many other attackers
-            
-      
-      **Rotation**
-      
-      *Normal > Palm of Destruction > Crescent Locus > Palm of Destruction^n (Damage rotation)*
 
 - name: Clair Lasbard (Halloween)
   cat: gl
@@ -1802,33 +1803,36 @@
           buffValue: 30
     power: ATK x 4500%
     maxHits: 7
-    
+
+  rotations:
+    - name: General Use
+      skills:
+        - name: Normal
+        - name: Sinistral Edge
+        - name: Dextral Slaughter
+        - name: Hazy Wheel
+          repeat: "N"
+          
   notes: >
-      _HClair makes off with the weakest of the unnerfs, only getting a slight increase in ATK and her ATK DMG buffs. That said, this aligns her again with new modern levels of power, making her damage extremely solid. She is still a reasonable source of ATK DMG, especially pre-rush, and her post-rush buff isn't the worst thing, bulking while also adding a smidge of extra damage._
-      
-      
-      **TL DR**
+      H.Clair makes off with the weakest of the unnerfs, only getting a slight increase in ATK and her ATK damage buffs. That said, this brings her back in line with current levels of power, making her damage extremely solid. She is still a reasonable source of ATK DMG, especially pre-rush, and her post-rush buff isn't terrible, bulking while also adding a smidge of extra damage.
       
       
       **Pros**
       
-      - Extremely high damage output
+      - High damage output.
       
-      - Reasonably rare post rush buff and debuff
+      - Reasonably rare post-rush buff and debuff.
       
-      - Built in AP reduction
+      - Built in AP reduction.
       
       
       **Cons**
-            
-      - Quite squishy, especially pre-rush
       
-      - Rush gain could be better
-            
+      - Quite squishy, especially pre-rush.
       
-      **Rotation**
+      - Rush gain could be better.
       
-      *Normal > Sinistral Edge > Dextral Slaughter > Hazy Wheel^n (Damage rotation)*
+
     
 - name: Millie Chliette (Halloween)
   cat: gl
@@ -1918,35 +1922,35 @@
           buffValue: 50
     power: ATK x 4000%
     maxHits: 8
-    
+
+  rotations:
+    - name: General Use
+      skills:
+        - name: Normal
+        - name: Lantern Burst
+        - name: Howling Rocket Punch
+        - name: Pumpkin Smash
+          repeat: "N"
+          
   notes: >
-      _Awoo makes her great return, with excellent unconditional buffing and a very reasonable 100 HC for her max buffing. Again, notably is less strict than 2B once her HC is reached, due to the team not being required to play around being full HP. The DMG unnerf puts her back to reasonable levels with the other unnerfed units. The only thing which holds her back at all is that GL is still a bit slow to reach even regular levels of HC._
-      
-      
-      **TL DR**
+      Awoo makes her great return, with excellent unconditional buffing and a very reasonable 100-hitcount requirement for max buffing. Notably, her conditionals are less strict than 2B's, since the team is not required to maintain full HP. Her damage buff unnerf puts her back to reasonable levels.
+
       
       
       **Pros**
       
-      - Good party wide buffs
+      - Strong party-wide buffs.
       
-      - Niche buff to deal with movement and rush reduction fields
+      - Hitcount conditionals are more forgiving than HP conditionals.
       
-      - Very flexible with range. Can do melee or ranged combat.
+      - Niche but useful talent that nullifies movement and rush reduction fields for her party.
       
-      - Awooo
+      - Flexible skillset, can accomodate melee or ranged combos.
       
       
       **Cons**
-            
-      - Ranged normals can be awkward to use at first
       
-      - Rush gain could be better
-            
-      
-      **Rotation**
-      
-      *Normal > Lantern Burst > Howling Rocket Punch > Pumpkin Smash^n (Damage rotation)*
+      - Rush gain could be better.
 
 
 - name: Fayt Leingod
@@ -2030,39 +2034,44 @@
           buffValue: 50
     power: ATK x 3500%
     maxHits: 12
-    
+
+  rotations:
+    - name: Smaller, Less Mobile Targets
+      skills:
+        - name: Normal
+        - name: Gliding Side Kick
+        - name: Shotgun Blast
+        - name: Avian Air Raid
+          repeat: "N"
+
+    - name: Medium to Large Targets
+      skills:
+        - name: Normal
+        - name: Shotgun Blast
+        - name: Gliding Side Kick
+        - name: Shotgun Blast
+          repeat: "N"
+          
   notes: >
-      _The boy himself, who should've been a decent ATK buffer, was unfortunately powercrept before his release. Although he comes bundled with a few choice things, such as pre-Rush Elemental DMG, overall his lower ATK buff and lack of AP RCV like the limited units makes him less appealing comparatively. That said, once the limited units are not available anymore, he is fairly reasonable, with his free elemental buff making up for a bit of the damage his ATK buff loses. He does also give a slight Anti-Flinch to ranged units and comes with free imbue._
-      
-      
-      **TL DR**
+      The boy himself, who should've been a decent ATK buffer, was unfortunately powercrept before his release. Although he comes bundled with a few choice buffs, such as pre-rush elemental damage, overall his lower ATK buff and lack of AP recovery on normals makes him comparatively less appealing. That said, he is fairly reasonable unit, with his elemental damage buff making up a bit for his weaker ATK buffing. He also comes with a free double imbue and gives a slight anti-flinch to ranged units.
       
       
       **Pros**
       
-      - Decent ATK buff
+      - Decent ATK buff.
       
-      - Double self imbue
+      - Double self imbue.
       
-      - Passive elemental damage buff
-      
-      - Awooo
+      - Passive party-wide elemental damage buff.
       
       
       **Cons**
+      
+      - His self imbues may be a disadvantage against enemies with elemental resistances.
+      
+      - His anti-flinch talent is often made redundant by overriding buffs from other party members.
             
-      - Has no ranged attack
-      
-      - Needs certain weapons against bosses with elemental resist
-      
-      - His anti-flinch is pretty useless at this point
-            
-      
-      **Rotation**
-      
-      *Normal > Side Kick > Shotgun > Air Raid^n - Non-moving Smaller Targets*
-      
-      *Normal > Shotgun > Kick > Shotgun - Medium/Large Targets*
+ 
  
 - name: Michael
   cat: gl
