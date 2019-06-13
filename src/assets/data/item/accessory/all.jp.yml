@@ -1556,3 +1556,32 @@
         buffValue: 10
     - desc: No flinching when taking damage of 10% of max HP or less
   obtained: Supipi-chan (Achievement)
+
+- name: "Jolly 'Santa' Doll"
+  cat: 'jp'
+  star: 5
+  picture: Jolly_'Santa'_Doll
+  def: 728
+  factors:
+    - desc: Damage taken -10%
+      meta:
+        priority: 1
+        buff: Damage Taken
+        buffValue: 10
+    - desc: 30% chance of surviving a lethal attack when at 10% of max HP or less
+  obtained: Winter Botanical Beast (Achievement, Exchange, Drop)
+
+- name: "Smiling 'Santa' Doll"
+  cat: 'jp'
+  star: 5
+  picture: Smiling_'Santa'_Doll
+  def: 753
+  factors:
+    - desc: DEF -15% when HP is 100% (Enemies)
+      meta:
+        priority: 1
+        buff: Enemy DEF Reduction
+        buffCondition: HP is 100%
+        buffValue: 15
+    - desc: Recovers 2% of max HP every 5 seconds
+  obtained: Winter Botanical Beast (Achievement)
