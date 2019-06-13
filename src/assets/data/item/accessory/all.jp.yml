@@ -1833,3 +1833,248 @@
         buffCondition: Hit Count > 200
     - desc: Hitcount timer +1 second
   obtained: Twin Eclipse Story (Chapter 8)
+
+- name: Cat Garter Ring
+  cat: 'jp'
+  star: 5
+  picture: Cat_Garter_Ring
+  def: 753
+  factors:
+    - desc: Damage dealt +10% when not behind target
+      meta:
+        priority: 3
+        buff: Damage
+        buffCondition: Not Behind Target
+        buffValue: 10
+    - desc: 30% chance of surviving a lethal attack when at 10% of max HP or more
+  obtained: Head Bull (Achievement)
+
+- name: Hawk's Coat of Arms
+  cat: 'jp'
+  star: 5
+  picture: Hawk's_Coat_of_Arms
+  def: 728
+  factors:
+    - desc: No flinching when HP is 100%
+    - desc: Critical hit chance +15% when HP is 100%
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffCondition: HP is 100%
+        buffValue: 15
+  obtained: Count Grade Aroken / Radiata Stories (Achievement, Exchange, Drop)
+
+- name: Shimada's Bromide
+  cat: 'jp'
+  star: 5
+  picture: Shimada's_Bromide
+  def: 753
+  factors:
+    - desc: Taunt +3
+    - desc: Recovers 5% of max HP on perfect dodge
+  obtained: "April Fools Year Three: SHIMA OCEAN - FAKE JAGA -"
+
+- name: Elephant's Coat of Arms
+  cat: 'jp'
+  star: 5
+  picture: Elephant's_Coat_of_Arms
+  def: 753
+  factors:
+    - desc: Recovers 2% of max HP every 5 seconds
+    - desc: Normal attack AP recovery +50%
+      meta:
+        priority: 3
+        buff: AP Recovery From Normal Attacks
+        buffValue: 50
+  obtained: Count Grade Aroken / Radiata Stories (Achievement, Drop, Draw Box)
+
+- name: Cameo Bolo Tie
+  cat: 'jp'
+  star: 5
+  picture: Cameo_Bolo_Tie
+  def: 728
+  factors:
+    - desc: Single target damage +15% when using charge assault
+      meta:
+        priority: 3
+        buff: Single Target Damage
+        buffCondition: Charge Assault
+        buffValue: 15
+    - desc: AP cost -10% at long range
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffCondition: Long Range
+        buffValue: 10
+  obtained: Twin Eclipse Story (Chapter 9)
+
+- name: Carmine Ring
+  cat: 'jp'
+  star: 5
+  picture: Carmine_Ring
+  def: 728
+  factors:
+    - desc: Taunt +3
+    - desc: HP +10%
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 10
+  obtained: Fortress Scissors (Achievement, Drop, Exchange)
+
+- name: Handheld Terminal of Memories
+  cat: 'jp'
+  star: 5
+  picture: Handheld_Terminal_of_Memories
+  def: 753
+  factors:
+    - desc: 40% chance of surviving a lethal attack when at 10% of max HP or more
+    - desc: Evasion AP cost -50%
+  obtained: Fortress Scissors (Achievement)
+
+- name: Elphelt's Bouquet
+  cat: 'jp'
+  star: 5
+  picture: Elphelt's_Bouquet
+  def: 728
+  factors:
+    - desc: Evasion AP cost -50%
+    - desc: Critical hit chance +20% when hitcount is >150
+      meta:
+        priority: 3
+        buff: Crit Rate
+        buffValue: 20
+        buffCondition: Hit Count > 150
+  obtained: Nephir Diablo (Achievement, Drop)
+
+- name: Sol's Headgear
+  cat: 'jp'
+  star: 5
+  picture: Sol's_Headband
+  def: 753
+  factors:
+    - desc: Damage taken +10% (Enemies)
+      meta:
+        priority: 1
+        buff: Enemy ATK Damage Taken
+        buffValue: 10
+    - desc: Additional hit that deals 10% of damage dealt by normal attacks
+  obtained: Nephir Diablo (Achievement, Drop)
+
+- name: Geometric Bangle
+  cat: 'jp'
+  star: 5
+  picture: Geometric_Bangle
+  def: 728
+  factors:
+    - desc: Critical hit chance +15% at long range
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffCondition: Long Range
+        buffValue: 15
+    - desc: Evasion speed & distance +50%
+  obtained: Twin Eclipse Story (Chapter 10)
+
+- name: Ricardo's Goggles
+  cat: 'jp'
+  star: 5
+  picture: Ricardo's_Goggles
+  def: 728
+  factors: 
+    - desc: INT damage taken -20% at short range
+      meta:
+        priority: 4
+        buff: INT Damage Taken Reduction
+        buffCondition: Short Range
+        buffValue: 20
+    - desc: Additional hit that deals 10% of damage dealt by normal attacks
+  obtained: Twin Eclipse Story (Chapter 10)
+
+- name: Animal Necklace
+  cat: 'jp'
+  star: 5
+  picture: Animal_Necklace
+  def: 728
+  factors:
+    - desc: HP +10%
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 10
+    - desc: No flinching when casting symbology or when targeted by enemy
+  obtained: Crimson Dalvaros (Achievement, Drop, Exchange)
+
+- name: Crimson Necklace
+  cat: 'jp'
+  star: 5
+  picture: Crimson_Necklace
+  def: 753
+  factors:
+    - desc: Critical hit chance +10%
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffValue: 10
+    - desc: Critical damage dealt +30% when hitcount is >100
+      meta:
+        priority: 1
+        buff: Crit Damage
+        buffCondition: Hit Count > 100
+        buffValue: 30
+  obtained: Crimson Dalvaros (Achievement)
+
+- name: Rena's Decorative T-Shirt
+  cat: 'jp'
+  star: 5
+  picture: Rena's_Decorative_T-Shirt
+  def: 728
+  factors:
+    - desc: 90% chance to nullify freeze
+    - desc: Damage taken -100% when frozen
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffCondition: Frozen
+        buffValue: 100
+  obtained: Iron Spiral Mechanical Snail (Exchange)
+
+- name: Unicorn Earrings
+  cat: 'jp'
+  star: 5
+  picture: Unicorn_Earrings
+  def: 728
+  factors:
+    - desc: Damage taken -20% when casting symbology
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffCondition: Casting Symbology
+        buffValue: 20
+    - desc: HP +5%
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 5
+  obtained: Boring Horn Blitz Reve / Tales of the Rays (Achievement, Exchange, Drop, Draw Box)
+
+- name: Chester Mascot
+  cat: 'jp'
+  star: 5
+  picture: Chester Mascot
+  def: 728
+  factors:
+    - Absorbs 5% of damage dealt by normal attacks as HP when at long range
+    - desc: ATK damage taken -10% at long range
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffCondition: Long Range
+        buffValue: 10
+    - desc: INT damage taken -10%
+      meta:
+        priority: 4
+        buff: INT Damage Taken Reduction
+        buffCondition: Long Range
+        buffValue: 10
+  obtained: Shadow Dhaos / Tales of the Rays (Achievement, Drop)
