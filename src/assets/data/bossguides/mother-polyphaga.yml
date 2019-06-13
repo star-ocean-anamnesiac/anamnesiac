@@ -31,3 +31,12 @@
 
   desc: >
     Large boss with high DEF. Attack pattern intensifies as its HP decreases. Freeze is effective; slightly susceptive to poison. 
+
+  moves:
+    - name: King of the Insects
+      targets: Any
+      isEnrage: true
+      m1: true
+      m2: true
+      desc: >
+        Enrage mode. Stronger version of Insect Warrior Spirit; no new attacks.
