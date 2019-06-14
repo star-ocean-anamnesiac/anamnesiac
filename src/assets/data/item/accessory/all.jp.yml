@@ -2078,3 +2078,18 @@
         buffCondition: Long Range
         buffValue: 10
   obtained: Shadow Dhaos / Tales of the Rays (Achievement, Drop)
+
+- name: Ruche Gloves
+  cat: 'jp'
+  star: 5
+  picture: Ruche_Gloves
+  def: 753
+  factors:
+    - desc: INT damage taken +10% when HP is 100% (Enemies)
+      meta:
+        priority: 4
+        buff: Enemy INT Damage Taken
+        buffCondition: HP is 100%
+        buffValue: 10
+    - desc: 60% chance of surviving a lethal attack when at 10% of max HP or more while casting
+  obtained: Shadow Dhaos / Tales of the Rays (Achievement, Drop)
