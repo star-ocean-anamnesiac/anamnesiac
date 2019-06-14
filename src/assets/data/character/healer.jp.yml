@@ -1123,7 +1123,7 @@
         - desc: Recovers 5% of max HP every 5 seconds
           all: Long Range Weapons
     - name: "Purge II"
-      shortEffects: Nullifies poison/paralysis for 90 seconds(Party)
+      shortEffects: Nullifies poison/paralysis for 90 seconds (Party)
       effects: 
         - desc: Nullifies poison for 90 seconds
           all: true
@@ -1183,46 +1183,7 @@
     power: INT x 2000%
     maxHits: 11
     
-  notes: >
-      _Discount Rena for ranged units. She's an non-ACE, which means lower stats but easier LBs, so it's a decent trade-off. Her main goal is to throw Angel Feather on the team and exist. However, being another staff unit with no cast-time redux means that her rush gain and heal timing will both be a bit slow. It's likely that a team will consistently need to 3-rush without her due to having to spend time with AF upkeep. Minor benefits to ranged units like Maria, who enjoy the AP recovery. Minor cleric, for specifc status effects._
-      
-      
-      **TL DR**
-      
-      
-      **Pros**
-      
-      - 5 star non-ace so is cheaper to max limit break and augment
-      
-      - Immunity to Poison and Paralysis.
-      
-      - Her rush is an excellent clutch heal and includes party cleanse.
-      
-      - Grit talent makes her hard to kill.
-      
-      - Angel Feather stacks with all party passive buffs.
-      
-      
-      **Cons**
-      
-      - 5 star non-ace so has less stats
-      
-      - Slow cast times, staff casting animation and ridiculous AP costs makes clutch healing very difficult.
-      
-      - Angel Feather actively interferes with her reliability due to its lengthy cast time & AP cost.
-      
-      - Slow rush gain
-      
-      - Poor damage
-      
-      
-      **Rotation**
-      
-      *Angel Feather - Buff, reapply as necessary.*
 
-      *Normal > Tornado > Faerie - Rush Gain*
-
-      *Faerie^n - Healing*
 
 - name: Precis F. Neumann (Winter)
   cat: jp
@@ -3706,7 +3667,7 @@
     element: Ice
     shortEffects: Recovers 80% of max HP, and single target damage +50% (Party/20s)
     effects: 
-      - desc: Recovers 80% of HP
+      - desc: Recovers 80% of max HP
         all: true
       - desc: Single target damage +50%
         all: true
@@ -3717,3 +3678,165 @@
           buffValue: 50        
     power: INT x 4000%
     maxHits: 12
+ 
+ 
+- name: Sarah Jerand (Awakened)
+  cat: jp
+  picture: Sarah
+  weapon: staff
+  ace: false
+  limited: false
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 17493
+    atk: 1575
+    int: 2615
+    def: 1450
+    hit: 973
+    grd: 1155
+
+  talents:
+    - name: "Beat of My Drum"
+      effects: 
+        - desc: AP recovery +30%
+          all: true
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffValue: 30
+        - desc: AP recovery +150% at long range
+          all: true
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffCondition: Long Range
+            buffValue: 150
+    - name: "Healer's Touch"
+      effects: 
+        - desc: Recovers 5% of max HP every 5 seconds
+          all: true
+        - desc: Recovers 10% of max HP every 5 seconds
+          all: Long Range Weapons
+    - name: "Purge II"
+      effects: 
+        - desc: Nullifies poison/paralysis/silence for 120 seconds
+          all: true
+        - desc: Symbology cast time -100%
+          meta:
+            priority: 1
+            buff: Cast Time Reduction
+            buffValue: 100
+    - name: "Premonitions"
+      effects: 
+        - desc: 95% chance of surviving a lethal attack when at 10% of max HP or more
+        - desc: 95% chance of surviving a lethal attack when at 10% of max HP or more and at long range
+          all: true
+    - name: "Crooked Glasses"
+      effects: 
+        - desc: Damage dealt +15%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 15
+        - desc: Damage dealt +30% when HP is over 50%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: HP is over 50%
+            buffValue: 30
+        - desc: Damage taken -100% after dodging (Party/0.5s)
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffCondition: Dodging
+            buffValue: 100
+    - name: "Fated to be Chased by Cats"
+      shortEffects: INT +20%, DEF +20%, GRD +10%, and HP +40%
+      effects: 
+        - desc: INT +20%
+          meta:
+            priority: 1
+            buff: INT
+            buffValue: 20
+        - desc: DEF +20%
+          meta:
+            priority: 1
+            buff: DEF
+            buffValue: 20
+        - desc: GRD +10%
+          meta:
+            priority: 1
+            buff: GRD
+            buffValue: 10
+        - desc: HP +40%
+          meta:
+            priority: 1
+            buff: HP
+            buffValue: 30
+
+  skills:
+    - name: "Faerie Light"
+      picture: Faerie_Light
+      power: INT x 250%
+      ap: 50
+      notes: Party Heal
+      maxHits: 1  
+    - name: "Wind Blade"
+      picture: Wind_Blade
+      element: Wind
+      power: INT x 210%
+      ap: 20
+      maxHits: 2
+    - name: "Angel Feather"
+      picture: Angel_Feathers
+      power: 0%
+      ap: 30
+      notes: ATK/INT/DEF/HIT/GRD +20% (Party/20s)
+      maxHits: 1
+      meta:
+        priority: 2
+        buffs:
+          - ATK
+          - INT
+          - DEF
+          - HIT
+          - GRD
+        buffValue: 20
+    - name: "Tornado"
+      picture: Tornado
+      element: Wind
+      power: INT x 510%
+      ap: 35
+      maxHits: 2
+    - name: "Magnum Tornado: AF"
+      picture: Magnum_Tornado
+      power: INT x 1490%
+      ap: 39
+      notes: ATK/INT/DEF/HIT/GRD +30% (Party/10s)
+      maxHits: 9
+      meta:
+        priority: 2
+        buffs:
+          - ATK
+          - INT
+          - DEF
+          - HIT
+          - GRD
+        buffValue: 30
+      
+  rush:
+    name: "Healing Blast Hurricane"
+    picture: Healing_Blast_Hurricane_Sarah
+    element: Wind
+    shortEffects: Recovers 70% of max HP and nullifies status afflictions (Party)
+    effects: 
+      - desc: Recovers 70% HP
+        all: true
+      - desc: Nullifies status afflictions
+        all: true
+    power: INT x 4000%
+    maxHits: 11    
