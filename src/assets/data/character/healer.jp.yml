@@ -3814,6 +3814,7 @@
       maxHits: 2
     - name: "Magnum Tornado: AF"
       picture: Magnum_Tornado
+      element: Wind
       power: INT x 1490%
       ap: 39
       notes: ATK/INT/DEF/HIT/GRD +30% (Party/10s)
