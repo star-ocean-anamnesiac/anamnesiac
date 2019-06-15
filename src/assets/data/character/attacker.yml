@@ -880,7 +880,7 @@
           repeat: "N"
     
   notes: >
-      Buffs stun rate for the party, and boasts an amazing, albeit selfish, post-rush buff. Being able to chain-stun trivializes bosses, preventing them from moving and allowing the party to unload on them without worrying about dodging, bolstering both DPS and survival. His effectiveness falls off in fights that can be ended in a single rush, so save him for content durable enough for post-rush buffs and multiple stuns to matter. Best kept away from humanoid bosses; his performance falls off sharply if Shotgun Blast and Dragon Slash can't get bonus hits. Is still relevant today even in JP due to his ability to stun; a fantastic unit.   
+      Buffs stun rate for the party, and boasts an amazing, albeit selfish, post-rush buff. Being able to chain-stun trivializes bosses, allowing the party to unload on them without worrying about dodging. His effectiveness falls off in fights that can be ended in a single rush, so save him for content durable enough for post-rush buffs and multiple stuns to matter. Best kept away from humanoid bosses, as his performance drops sharply if Shotgun Blast and Dragon Slash can't get bonus hits. Is still relevant today even in JP due to his ability to stun; a fantastic unit.   
       
       
       
@@ -893,7 +893,7 @@
       
       **Cons**
 
-      - Brings little Party utility behind his stun buff.
+      - Brings little party utility beyond his stun buff.
       
       - Team comp needs to be built around him to some degree.    
       
@@ -1545,7 +1545,7 @@
     maxHits: 6
     
   notes: >
-      A bit interesting, though on GL release will not be as stellar as he was on JP. In general, stronger weapons and better access to certain buffs mean that Albel, while being a decent mix of a DPS and buffer, doesn't do either extremely well. His damage is gated by his focus on Air Slash, and like Claude his main ATK buff only applies to Attackers and Defenders. Unlike Claude, however, he does not give AP recovery on normals, and his DEF down matters little when the enemies are weaker, only adding a minor DMG increase. That said, he does do decent damage post-rush and racks hitcount well with Aura Wall.
+      A bit interesting, though on GL release will not be as stellar as he was on JP. In general, stronger weapons and better access to certain buffs mean that Albel, while being a decent carry/buffer hybrid, doesn't do either extremely well. His damage is gated by his focus on Air Slash, and like Claude his main ATK buff only applies to Attackers and Defenders. Unlike Claude, however, he does not give AP recovery on normals, and his DEF reduction matters little with weaker enemies, only adding a minor damage increase. That said, he does deal decent damage post-rush and racks hitcount well with Aura Wall.
       
       
       
@@ -1682,7 +1682,7 @@
           repeat: "N"
           
   notes: >
-      Ilia is meant to synergize with Invokers on maps with fodder, but realistically most maps which have mobs don't really need the multi-target damage, and most bosses come alone otherwise. For the exact composition she would support (fire Invokers) her ATK buff is useless. Overall extremely poor synergy. If you have no other ATK buffer, she fills the role, but literally any other ATK buffer will probably do the job better. Her moveset is subpar and neither of her large skills are worth the cost for what they do.   
+      Ilia is meant to synergize with Invokers on maps with fodder, but realistically most maps which have mobs don't really need the multi-target damage, and most bosses come alone otherwise. For the exact composition she would support (Invokers who deal fire damage) her ATK buff is useless. Overall extremely poor synergy. If you have no other ATK buffer, she fills the role, but literally any other ATK buffer will probably do the job better. Her moveset is subpar and neither of her large skills are worth the cost for what they do.   
       
       
       **Pros**
@@ -1814,7 +1814,7 @@
           repeat: "N"
           
   notes: >
-      H.Clair makes off with the weakest of the unnerfs, only getting a slight increase in ATK and her ATK damage buffs. That said, this brings her back in line with current levels of power, making her damage extremely solid. She is still a reasonable source of ATK DMG, especially pre-rush, and her post-rush buff isn't terrible, bulking while also adding a smidge of extra damage.
+      H.Clair makes off with the weakest of the unnerfs, only getting a slight increase to ATK and her ATK damage buffs. That said, this brings her back in line with current levels of power, making her damage extremely solid. She is still a reasonable source of ATK damage, especially pre-rush, and her post-rush buff isn't terrible, bulking while also adding a smidge of extra damage.
       
       
       **Pros**
@@ -2053,7 +2053,7 @@
           repeat: "N"
           
   notes: >
-      The boy himself, who should've been a decent ATK buffer, was unfortunately powercrept before his release. Although he comes bundled with a few choice buffs, such as pre-rush elemental damage, overall his lower ATK buff and lack of AP recovery on normals makes him comparatively less appealing. That said, he is fairly reasonable unit, with his elemental damage buff making up a bit for his weaker ATK buffing. He also comes with a free double imbue and gives a slight anti-flinch to ranged units.
+      The boy himself, who should have been a decent ATK buffer, was unfortunately powercrept before his release. Although he comes bundled with a few choice buffs, overall his lower ATK buff and lack of AP recovery on normals makes him comparatively less appealing. That said, he is a fairly reasonable unit, with his elemental damage buff making up a bit for his weaker ATK buffing. He also comes with a free double imbue and gives a slight anti-flinch to ranged units.
       
       
       **Pros**
@@ -2174,39 +2174,46 @@
           buffValue: 50
     power: ATK x 3500%
     maxHits: 8
-    
+
+  rotations:
+    - name: General Use
+      notes: Pyroclast is the cheapest move, Bosom Clow is the fastest. Fire Fest is the highest DPS/rush gain unless Lava Flow is viable.   
+      skills:
+        - name: Normal
+        - name: Pyroclast Punch
+        - name: Bosom Blow
+        - name: Firefest
+
+    - name: General Use
+      notes: Dash cancel out of Lava Flow.
+      skills:
+        - name: Normal
+        - name: Pyroclast Punch
+        - name: Bosom Blow
+        - name: Lava Flow
+        
   notes: >
-      _Convince your teammates to die for you. Michael is an interesting character, with the specific unique ability that lets him get stronger as your teammates die. Unfortunately, he suffers from long skills and subpar buffs. His 40 would be nice, but it's only for Attackers, and he's at his strongest when he has no other teammates, which is unintuitive. He would be decent for pubs and soloing, but his skill lengths do hinder this quite a bit and making kiting hard. Worth noting that he does count towards his own buff, and it persists through revives, gems or otherwise._
-      
-      
-      **TL DR**
+      Convince your teammates to die for you. Michael is an interesting character, with the unique ability to become stronger as your teammates die. Unfortunately, he suffers from long animation skills and subpar buffs. His +40% to ATK would be nice but it's only for Attackers, and he's at his strongest when he has no other teammates, which is unintuitive; in addition, his long skills hinder kiting and make soloing difficult. Worth noting that he does count towards his own buff, and it persists through revives, whether by gems or Healers like Eve.
       
       
       **Pros**
       
-      - Unique design
+      - Unique design.
       
-      - Decent ATK buff for attackers
+      - Solid ATK buff for attackers.
       
-      - Deals decent damage
+      - Deals decent damage.
       
-      - Really good against fire weak bosses
+      - Strong against fire-weak bosses.
       
       
       **Cons**
-            
-      - Has no ranged attack
       
-      - Needs people to die to be effective
+      - Skills with long animations.
       
-      - Needs elemental imbue knuckles if enemy resists fire
-            
+      - Needs party members to die to be at his most effective.
       
-      **Rotation**
-      
-      *Pyroclast is the cheapest move, Bosom is the fastest, Fire Fest is the highest DPS/rush gain unless Lava Flow is viable.*
-
-      *Normal > Pyroclast > Bosom > Fest / Lava > (Dodge if using Lava)*
+      - Needs elemental imbue weapons if enemy resists fire.
 
 
 - name: Fidel Camuze (Winter)
@@ -2316,35 +2323,47 @@
           buffValue: 20
     power: ATK x 4000%
     maxHits: 30
-    
+
+  rotations:
+    - name: Regular
+      skills:
+        - name: Normal
+        - name: Flying Divebomb
+        - name: Bombing Run
+        - name: Flying Divebomb
+        - name: Bombing Run
+        - name: Bullet Barrage
+
+    - name: Regular (103-104 AP)
+      notes: Dash cancel out of Lava Flow.
+      skills:
+        - name: Normal
+        - name: Bombing Run
+        - name: Divebomb
+        - name: Bombing Run
+          repeat: "2"
+        - name: Bullet Barrage
+
   notes: >
-      _Hitcount based carry who can self-sustain himself even with no other ATK buffer present. Respectable hitcount racking on his main skill, long range and quick-deploying skills make him easy and safe to play at range. Mobility of Dual Guns will take getting used to, but can be used to avoid many attacks mid-combo, with the caveat of sometimes losing DPS as well due to not wanting to move in a direction. Gets a boost at SC3/5, and his personal rush buff lasts basically indefinitely once he gets it the first time, due to the 30s timer._
-      
-      
-      **TL DR**
-      
+      Hitcount-based carry who can support himself even with no other ATK buffer present. Respectable hitcount racking on his main skill. Quick-deploying long range skills make him easy and safe to play at range. The mobility of his skills will take getting used to, but can be used to avoid many attacks mid-combo, with the caveat that you may sometimes need to drop a combo chain to avoid moving in a dangerous direction. His personal rush buff lasts basically indefinitely once he gets it the first time, due to the 30 second timer.
+
       
       **Pros**
       
-      - Brings a lot of damage
+      - Brings a lot of damage.
       
-      - Some weak utility to the party
+      - A carry who brings some utility to the party.
       
-      - It's all about the damage really
+      - Fast, mobile skills which can be used to dodge mid-combo.
       
             
       **Cons**
+      
+      - Skills change his positioning, which can move you into an attack.
+      
+      - His hitcount requirements may be difficult to readily fulfill in some comps.
             
-      - Bombing Run jumping back
       
-      - High hit count buffs
-            
-      
-      **Rotation**
-      
-      *Normal > Divebomb > Bombing > Divebomb > Bombing > Barrage*
-      
-      *Normal > Bombing > Divebomb > Bombing^2 > Barrage - (103 ~ 104 AP Required)*
 
 - name: Welch Vineyard (Tearful)
   cat: gl
@@ -2433,31 +2452,43 @@
           buffValue: 100
     power: ATK x 2000%
     maxHits: 25
-    
+
+  rotations:
+    - name: General Use
+      notes: Use X Claw with caution; it has terrible frames and no air dodge.
+      skills:
+        - name: Normal
+        - name: Crescent Locus
+        - name: Drill Spike
+        - name: X Claw
+          ca: true
+
+    - name: General Use
+      skills:
+        - name: Normal
+        - name: Crescent Locus
+        - name: Drill Spike
+        - name: Crescent Locus
+          ca: true
+          repeat: "N"
+          
   notes: >
-      _Troll 4* unit which became a 5* unit. Notable for being one of the few units with DEF down, which is useless due to crit's existence. She can grief allies, so if you see her, prepare to take more damage. She does have a decent party atk post-rush, at the cost of the huge DEF down._
-      
-      
-      **TL DR**
+      Troll 4* unit which became a 5* unit in GL. Notable for being one of the few units with DEF down, which is, however, largely useless due to the existence of crit. She can grief allies, so if you see her, prepare to take more damage. She does give a decent ATK boost to the party post-rush, at the cost of the huge DEF down.
       
       
       **Pros**
       
-      - Good for griefing
+      - Adds a challenge to runs.
       
-      - Adds a challenge to runs
+      - Uncommon DEF debuff to enemies.
       
             
       **Cons**
-            
-      - Her existence
-            
       
-      **Rotation**
+      - DEF debuff to party members.
       
-      *Normal > Locus > Drill > CA X-Claw - X-Claw has terrible frames and no air dodge, use with caution.*
-
-      *Normal > Locus > Drill > CA Locus^n*
+      - Low damage.
+      
   
 - name: Meracle Chamlotte
   cat: gl
@@ -2575,37 +2606,47 @@
           buffValue: 40
     power: ATK x 4000%
     maxHits: 7
-    
+
+
+  rotations:
+    - name: DPS / Hitcount
+      skills:
+        - name: Normal
+        - name: Crescent Locus
+        - name: Gouging Spike
+        - name: Crescent Locus
+          ca: true
+          repeat: "N"
+
+    - name: Element Burst
+      notes: Notwithstanding its hitcount and damage, Claws of Fury is VERY slow and should only be used during EB as a combo ender.
+      skills:
+        - name: Normal
+        - name: Crescent Locus
+        - name: Gouging Spike
+        - name: Claws of Fury
+          ca: true
+
+
   notes: >
-      _A selfish carry, like Cliff, but actually does have some minor party buffing, unlike Cliff. Should be slightly better, and also scales a bit better with hitcount. Not amazing compared to the limited carries, but should be reasonable for a while, especially as a permanent unit._
+      A selfish carry similar to Cliff, but unlike Cliff actually does give some minor party buffing. Should be slightly stronger, and also scales a bit better with hitcount. Not amazing compared to the limited carries, but should be reasonable for a while, especially as a permanent unit.
       
       
-      **TL DR**
-      
-      
+
       **Pros**
       
-      - Does a good amount of damage
+      - Does a good amount of damage, especially when her hitcount conditionals are met.
       
-      - Some weak utility to the party
-      
-      - Works well with hit counter characters if no ATK buffer
+      - Gives some party buffing.
       
             
       **Cons**
+      
+      - Like all carries, needs heavy support from team buffs to be at her optimal.
+      
+      - Hitcount conditionals may be difficult to meet in some comps.
             
-      - Party Utility is weak without the right characters
-      
-      - If no ATK buffer it requires a high hit count to get the most out of her
-            
-      
-      **Rotation**
-      
-      *Don't be fooled by Claws' hit count and damage, it's very very slow and should only be used during burst as a combo ender.*
 
-      *Normal > Crescent > Spike > CA Crescent - DPS & Hit Count*
-
-      *Normal > Crescent > Spike > CA Claws - Combo during EB to avoid disruption.*
 
 - name: Lasswell
   cat: gl
@@ -2696,39 +2737,50 @@
           buffValue: 30
     power: ATK x 3500%
     maxHits: 9
-    
+
+  rotations:
+    - name: General Use
+      notes: Mirror of Haze can be substituted for Exorcising Storm. Haze does slightly more DPS, but Storm is much faster.
+      skills:
+        - name: Normal
+        - name: Exorcising Storm
+        - name: Tranquility
+        - name: "Blade Flash - Awakened"
+          repeat: "N"
+
+    - name: General Use (105 AP or AP reduction)
+      notes: Mitigates Blade Flash's backstep, resulting in less DPS downtime.
+      skills:
+        - name: Normal
+        - name: Exorcising Storm
+        - name: Tranquility
+        - name: "Blade Flash - Awakened"
+          repeat: "N"
+        - Exorcising Storm
+          ca: true
+          
   notes: >
-      _Free Fidel. He actually has solid ATK buffing, with some minor other benefits. In a sense, he's probably actually close to discount Claude, but overall he's a great attack buffer for anyone who doesn't have one already. Solid even compared to some units we have already. Minor talent buffs, significant multiplier buffs from JP, making him more viable damage-wise too._
-      
-      
-      **TL DR**
+      Free Fidel. He actually has solid ATK buffing, with some minor other benefits; in a sense, he's probably actually close to discount Claude. Overall he's a great attack buffer for anyone who doesn't have one already. Solid even compared to some units we have already. Minor talent buffs, significant multiplier buffs compared to his JP version, making him more viable damage-wise too.
       
       
       **Pros**
       
-      - Strong unconditional ATK buff, that gets even better for melee characters.
+      - Reasonable party-wide unconditional ATK buff.
       
-      - Nullifies annoying movement fields for melee.
+      - Solid unconditional ATK buff for melee weapon users.
       
-      - Free MLB Ace
+      - Free MLB ace unit.
       
-      - Innate Ice Imbue attacks
+      - Deals good damage.
       
       
       **Cons**
       
-      - Does little for ranged characters
+      - Does little for ranged characters.
       
-      - Gives no AP recovery unlike other buffers
+      - Gives no AP recovery on normals.
       
       
-      **Rotation**
-      
-      *Storm vs Haze (Double Slash) - Personal preference. Haze does a minimal amount more DPS, but Storm is significantly faster, which means more time to dodge, etc. 
-
-      *Normal > Storm > Tranq > Flash^n*
-
-      *Normal > Storm > Tranq > Flash^n > CA Storm - 105 AP Required; Less downtime due to mitigating Flash's backstep.*
 
 - name: Andre
   cat: gl
@@ -2912,26 +2964,23 @@
     maxHits: 5
     
   notes: >
-      _A carry with a unique debuff. Should avoid significant nerfs if nerfs, may possibly get some buffs, quite useful due to her nature. Interesting party utility as well with AP cost redux at SC3. It will be hard to work around this as an ally, but she can maintain it for a few seconds due to her low AP costs. Her skills are notoriously slow and her rush gain can be unreliable, so consider this the tradeoff for her buffs. Monster rush._
-      
-      
-      **TL DR**
+      A carry with a rare debuff. Interesting party utility as well, giving significant AP cost redux at skill chain >3; it may be hard to work around this as an ally, but she can maintain it for a few seconds due to her low AP costs. Her skills are notoriously slow and her rush gain can be unreliable, so consider this the tradeoff for her buffs. Monster rush.
       
       
       **Pros**
       
-      - Brings a lot of damage
+      - Brings a lot of damage.
       
-      - Some weak utility to the party
+      - Unlike many carries, brings some party utility.
       
-      - Unique debuffs to enemies
+      - Rare enemy debuffs.
       
             
       **Cons**
-            
-      - Slow attacking animations
       
-      - Slow Rush gain
+      - Slow skills.
+      
+      - Rush gain can be an issue, since her slow skills can easily miss mobile targets without careful timing.
             
       
       **Rotation**
@@ -3031,37 +3080,41 @@
           buffValue: 40
     power: ATK x 4000%
     maxHits: 6
-    
-  notes: >
-      _VRena is hard to value. On one hand, she doesn't have AP recovery for anyone but attackers. On the other hand, she has the highest attack buff in the game for melee units. Paired with a carry or another AP recovery attacker, she is amazing. Even then, the sheer damage output of the team should just be too high to ignore. Higher ST rush buff helps a bit._
 
-      _[Potential] - VRena is hard to build around - with melee units, she only provides AP on normals to Attackers, which means either you play without it or skip out on other roles, which lowers your overall damage output. The best AP-normal unit at time of writing, 2B, now has equal buffing to her, which means most of the important things VRena does are unneeded._
-      
-      
-      **TL DR**
+  rotations:
+    - name: Regular
+      skills:
+        - name: Normal
+        - name: Crescent Locus
+        - name: Death Palm Kiss
+        - name: Heart Burst
+        
+  notes: >
+      V.Rena is hard to value. On one hand, she doesn't have AP recovery for anyone but Attackers. On the other hand, she has the highest unconditional ATK buff in the game for melee units. Paired with a carry or an Attacker with AP recovery, she is amazing. However, 2B (the best ATK buffer at time of writing) gives equal albeit conditional ATK buffing along with unconditional AP normals, and is easier to build around.
+
       
       
       **Pros**
       
-      - Strong unconditional ATK buff, that gets even better for melee characters.
+      - Solid unconditional party-wide ATK buff.
       
-      - Strong and unique buffs for attackers.
+      - Very strong ATK buff for melee units.
       
-      - Powerful post rush buff
+      - Strong and unique buffs for Attackers.
       
-      - Has built in grit chance
+      - Powerful post-rush buff.
+      
+      - Passive guts.
       
       
       **Cons**
       
-      - Does little for ranged characters
+      - Gives little support to non-Attackers.
       
-      - Gives no AP recovery to anything but attackers unlike other buffers
+      - AP recovery on normals only for Attackers.
       
+      - Her post-rush buff, though strong, is often redundant with a Defender in the group.
       
-      **Rotation**
-      
-      *Normal > Crescent Lotus > Death Palm Kiss > Heart Burst (General combo.)*
 
 - name: Mirage Koas
   cat: gl
