@@ -2325,7 +2325,7 @@
     maxHits: 30
 
   rotations:
-    - name: Regular
+    - name: General Use
       skills:
         - name: Normal
         - name: Flying Divebomb
@@ -2334,7 +2334,7 @@
         - name: Bombing Run
         - name: Bullet Barrage
 
-    - name: Regular (103-104 AP)
+    - name: General Use (103-104 AP)
       notes: Dash cancel out of Lava Flow.
       skills:
         - name: Normal
@@ -2361,7 +2361,7 @@
       
       - Skills change his positioning, which can move you into an attack.
       
-      - His hitcount requirements may be difficult to readily fulfill in some comps.
+      - His hitcount requirements may be difficult to readily meet in some comps.
             
       
 
@@ -2405,7 +2405,7 @@
             buffValue: 30
     - name: "MAX Tension"
       effects: 
-        - desc: Movement rate boost
+        - desc: Movement speed boost
 
   skills:
     - name: "Crescent Locus"
@@ -2756,7 +2756,7 @@
         - name: Tranquility
         - name: "Blade Flash - Awakened"
           repeat: "N"
-        - Exorcising Storm
+        - name: Exorcising Storm
           ca: true
           
   notes: >
@@ -2981,7 +2981,7 @@
       - Slow skills.
       
       - Rush gain can be an issue, since her slow skills can easily miss mobile targets without careful timing.
-            
+      
       
       **Rotation**
       
@@ -3082,7 +3082,7 @@
     maxHits: 6
 
   rotations:
-    - name: Regular
+    - name: General Use
       skills:
         - name: Normal
         - name: Crescent Locus
@@ -3090,7 +3090,7 @@
         - name: Heart Burst
         
   notes: >
-      V.Rena is hard to value. On one hand, she doesn't have AP recovery for anyone but Attackers. On the other hand, she has the highest unconditional ATK buff in the game for melee units. Paired with a carry or an Attacker with AP recovery, she is amazing. However, 2B (the best ATK buffer at time of writing) gives equal albeit conditional ATK buffing along with unconditional AP normals, and is easier to build around.
+      V.Rena is hard to value. On one hand, she doesn't have AP recovery for anyone but Attackers. On the other hand, she has the highest unconditional ATK buff in the game for melee units. Paired with a carry or an Attacker with AP recovery, she is amazing. However, 2B (the best ATK buffer at time of writing) gives equal albeit conditional ATK buffing along with unconditional AP on normals, and is easier to build around.
 
       
       
