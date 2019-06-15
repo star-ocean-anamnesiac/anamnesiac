@@ -2225,7 +2225,7 @@
         - desc: Nullifies silence for 180 seconds
           all: true
         - desc: Nullifies rush gauge reduction fields
-          all: Short Range WEapons/Self
+          all: Short Range Weapons/Self
           
   skills:
     - name: "Magnetic Field"
@@ -2554,8 +2554,9 @@
             buff: Enemy DEF Reduction
             buffValue: 15
     - name: "Upgraded Gun"
+      shortEffects: Damage taken +20% when hit by Break Horn and Break Bullet (Enemies/8s)
       effects: 
-        - desc: Damage taken +20% when hit Break Horn and Break Bullet (8s)
+        - desc: Damage taken +20% when hit by Break Horn and Break Bullet (8s)
           all: Enemies
           meta:
             priority: 4
@@ -2580,7 +2581,7 @@
     - name: "Savior of Tears"
       effects: 
         - desc: Nullifies charge assault critical damage penalty
-        - desc: AP cost -20
+        - desc: AP cost -20%
           meta:
             priority: 4
             buff: AP Cost Reduction
@@ -2660,13 +2661,13 @@
     grd: 910
 
   talents:
-    - name: "Armory Contest Winner"
+    - name: "Tournament Winner"
       effects: 
         - desc: No flinching when taking damage of 15% of max HP or less 
           all: true
         - desc: Taunt +3 
           all: false
-    - name: "Cultivated Victories"
+    - name: "Competitive Intuition"
       shortEffects: Damage dealt +45% and ATK/INT damage taken -25% when targeted by enemy (Party)
       effects: 
         - desc: Damage dealt +45% when targeted by enemy
@@ -2690,7 +2691,7 @@
             buff: INT Damage Taken Reduction
             buffCondition: When holding aggro
             buffValue: 25
-    - name: "Memento Ring"
+    - name: "A Cherished Ring"
       shortEffects: Damage dealt +60% and critical hit chance +20% when not targeted by enemy (Party)
       effects: 
         - desc: Damage dealt +60% when not targeted by enemy
@@ -2707,7 +2708,7 @@
             buff: Crit Rate
             buffCondition: Not holding agro
             buffValue: 20
-    - name: "Changing Heart"
+    - name: "A Heart Transforming"
       shortEffects: ATK +15%, DEF +20%, and HP +35%
       effects: 
         - desc: ATK +15%
@@ -2730,18 +2731,18 @@
             buffValue: 35
           
   skills:
-    - name: "Lightning Chain (Cherry Blossom)"
+    - name: "Lightning Chain: Blossom"
       picture: Lightning_Chain
       element: Lightning
       power: ATK x 160%
       ap: 16
       maxHits: 9
-    - name: "Flying Guillotine (Cherry Blossom)"
+    - name: "Flying Guillotine: Blossom"
       picture: Guillotine
       power: ATK x 310%
       ap: 19
       maxHits: 4
-    - name: "Dancing Sword (Cherry Blossom)"
+    - name: "Dancing Sword: Blossom"
       picture: Dancing_Sword
       power: ATK x 1300%
       ap: 40
@@ -2754,7 +2755,7 @@
       maxHits: 2
 
   rush:
-    name: "Phoenix Blast"
+    name: "Phoenix Blast Wave"
     picture: Phoenix_Blast_Sakura_Dias 
     shortEffects: Single target damage +30% and AP recovery +50% (Party/20s)
     element: Fire
@@ -6276,33 +6277,3 @@
     power: ATK x 2500%
     maxHits: 4
     
-  notes: >
-      _Absolutely absymal event unit. That said, her skills are actually very good, and her rush does have a fairly unique ATK down, which is a solid defensive debuff, in theory._
-      
-      **TL DR**
-      
-      
-      **Pros**
-      
-      - Good at building and maintaing Hit Count.
-
-      - Decent rush gain.
-
-      - Effective against Humanoids.
-
-      - Poison Immunity.
-
-      - Unique and strong debuffs.
-      
-
-      **Cons**
-
-
-      - Deals underwhelming damage outside of humanoid fights.
-
-      - Underwhelming buffs.
-      
-      
-      **Rotation**
-      
-      *Normal > Squall > Thunder/Thorn > Squall^n (General Combo.)*    
