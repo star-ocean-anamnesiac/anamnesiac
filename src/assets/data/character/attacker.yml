@@ -2639,7 +2639,7 @@
       
       - Gives some party buffing.
       
-            
+   
       **Cons**
       
       - Like all carries, needs heavy support from team buffs to be at her optimal.
@@ -2969,7 +2969,7 @@
       
       **Pros**
       
-      - Brings a lot of damage.
+      - High DPS.
       
       - Unlike many carries, brings some party utility.
       
@@ -3216,11 +3216,27 @@
     power: ATK x 4000%
     maxHits: 15
     
+  rotations:
+    - name: General Use
+      skills:
+        - name: Normal
+        - name: Electric Fists
+        - name: Crescent Locus
+        - name: Electric Fists
+          repeat: "N"
+
+    - name: Post-Rush / Element Burst
+      notes: Acrobat Locus lifts stunned enemies; use with caution and consideration for your teammates.
+      skills:
+        - name: Normal
+        - name: Crescent Locus
+        - name: Electric Fists
+        - name: Acrobat Locus
+        - name: Electric Fists
+          repeat: "N"
+
   notes: >
-      _Melee XFidel. Has her own ATK buff, a very high base ATK, and some respectable buffing for melee units. She also comes innately with some crit at 100% HP. Otherwise a pretty standard carry with some good self-sustain. Nothing particularly special about her. Does have disruption during EB, so be careful._
-      
-      
-      **TL DR**
+      Melee X.Fidel. Has her own ATK buff, a very high base ATK, and some respectable buffing for melee units. She also comes with innate crit at 100% HP. Otherwise a pretty standard carry with some good self-sustain. Nothing particularly special about her. Does have disruption during EB, so be careful. 
       
       
       **Pros**
@@ -3229,23 +3245,15 @@
       
       - Deals high damage.
       
-      - Has post rush regen for sustain.
+      - Post-rush regen gives her self-sustain.
       
       
       **Cons**
       
-      - Buff conditions require being built around or are inconsistent.
+      - Conditional buffs that either need to be built around or are fussy to maintain.
       
-      - Lack of a ranged attack can cause issues with cetain bosses.
+      - No ranged attacks.
       
-      
-      **Rotation**
-      
-      *Normal > Electric > Crescent > Electric^n*
-      
-      *Normal > Crescent > Electric > Acrobat > Electric^n - Post Rush/EB*
-
-      *Acrobat lifts stunned enemies - use with caution/awareness to your teammates.*
 
 - name: Ashton Anchors
   cat: gl
@@ -3363,39 +3371,58 @@
           buffValue: 30
     power: ATK x 3500%
     maxHits: 12
-    
+
+  rotations:
+    - name: General Use
+      skills:
+        - name: Normal
+        - name: Piercing Blades
+        - name: Twin Thrust
+        - name: Northern Cross
+          repeat: "N"
+
+    - name: General Use
+      notes: Dodge cancel out of the final Sword Dance after its first hit.
+      skills:
+        - name: Normal
+        - name: Piercing Blades
+        - name: Twin Thrust
+        - name: Sword Dance
+          repeat: "N"
+          
+    - name: General Use
+      notes: Dodge cancel out of the final Sword Dance after its first hit.
+      skills:
+        - name: Normal
+        - name: Northern Cross
+        - name: Piercing Blades
+        - name: Northern Cross
+          repeat: "N"          
+        - name: Sword Dance
+        
   notes: >
-      _Ashton's party buffing looks pretty bad, and that's because it is - he's a carry, so don't be fooled. Pre-rush elemental damage helps him make the most of his imbued elements, and as a bonus he basicially has two free imbues. Hitcount racking, a bunch of cool self-buffs for using his rotation, and a solid post-rush. Other carries may bring more, but he's a solid force to be reckoned with._
-      
-      
-      **TL DR**
+      Ashton's party buffing looks pretty bad, and that's because it is -- he's a carry, so don't be fooled. Pre-rush elemental damage helps him make the most of his imbued skills, and as a bonus he basically has two free imbues. Hitcount racking, a bunch of cool self-buffs for using his rotation, and a solid post-rush. Other carries may bring more, but he's a solid force to be reckoned with.
       
       
       **Pros**
       
-      - Strong Elemental and Rush damage buff.
+      - Passive party-wide elemental damage buff, which is still uncommon.
+      
+      - Strong post-rush buff.
       
       - Deals good damage.
       
-      - Has both a ranged and melee combo.
+      - Good ranged and melee skillsets.
       
       - Fun playstyle.
       
       
       **Cons**
       
-      - Elemental damage buff gets overwritten by a lot of characters post rush. Some of which are extremely popular.
+      - His elemental damage buff overlaps with the post-rush buffs of a number of commonly used units.
       
-      - Rush damage buff requires high hit count to get the best from it.
+      - Hitcount conditional may be difficult to meet in some comps.
       
-      
-      **Rotation**
-      
-      *Normal > Piercing > Twin > Northern^n*
-
-      *Normal > Piercing > Twin > Dance^n*
-
-      *Normal > Northern > Piercing > Northern^n > Sword Dance (Dash cancel Sword Dance after the first hits contact.)*
      
 - name: Angelica
   cat: gl
@@ -3458,6 +3485,7 @@
       - desc: N/A
     power: ATK x 4500%
     maxHits: 4
+
 
 - name: Rena Lanford (Bridal)
   cat: gl
@@ -3563,37 +3591,56 @@
         duration: 20
     power: ATK x 4500%
     maxHits: 2
-    
+
+  rotations:
+    - name: DPS
+      skills:
+        - name: Normal
+        - name: Floral Hammer of Might
+        - name: Triple Floral Kick
+        - name: Floral Cartwheel
+          repeat: "N"
+
+    - name: Rush Gain
+      skills:
+        - name: Normal
+        - name: Floral Cartwheel
+        - name: Floral Hammer of Might
+        - name: Floral Cartwheel
+          repeat: "N"
+
+    - name: Hitcount
+      skills:
+        - name: Normal
+        - name: Floral Fists of Fury
+        - name: Floral Hammer of Might
+        - name: Floral Fists of Fury
+          repeat: "N"
+          
   notes: >
-      _WRena is a spread buffer who suffers from subpar buffing. That said, her GL exclusive buff gave her AP on normals, which is one of the most important buffs for most parties. This sets her as a sidegrade to HMillie, with a notable bonus being her regen, which is enough to recover a significant amount of health before rush. Her moveset is quite bad, with her version of Chariot being uncancelable unlike Cliff's, and nothing else doing notable damage.Her personal buffs make up for this a bit._
-      
-      
-      **TL DR**
+      B.Rena is a spread buffer who suffers from subpar buffing. That said, her GL exclusive buff gave her AP on normals, which is one of the most important buffs for most parties. This sets her as a sidegrade to H.Millie, with a notable bonus being her regen, which is enough to recover a significant amount of health before rush. Her moveset is quite bad; her version of Fists of Fury (Chariot) cannot be canceled, unlike Cliff's, and none of her other skills do notable damage, though her personal buffs make up for this somewhat.
+
+
+      That said, she does a decent job in pubs. She gives AP on normals and an average ATK buff, brings single target damage and limited anti-flinch, and sustains the party. In essence, she substitutes for three roles in one slot, which is pretty good.
       
       
       **Pros**
       
-      - Strong Party wide HP regen
+      - Party-wide HP regen.
       
-      - Deals good damage.
+      - Gives party-wide AP recovery on normals.
       
       - Big rush multiplier.
       
       
       **Cons**
       
-      - Awful ATK and Single Target damage buff.
+      - ATK buff is low compared to buffers like 2B, H.Millie, and V.Rena.
       
-      - What kind of post rush buff is that?
+      - Several of her buffs, including her post-rush buff, are made redundant if a Defender is in the group.
       
+      - Awkward moveset.
       
-      **Rotation**
-      
-      *Normal > Fury > Hammer > Fury^n - Hit Count*
-
-      *Normal > Hammer > Triple > Cartwheel^n - DPS*
-
-      *Normal > Cartwheel > Hammer > Cartwheel^n - Rush*
 
 - name: Hal (Iron-Arm)
   cat: gl
@@ -3779,6 +3826,7 @@
     power: ATK x 2500%
     maxHits: 5
 
+
 - name: Marcelle
   cat: gl
   picture: Marcelle
@@ -3839,6 +3887,7 @@
           buffValue: 50
     power: ATK x 3000%
     maxHits: 7
+
 
 - name: Farleen
   cat: gl
@@ -4179,40 +4228,64 @@
         duration: 20
     power: ATK x 4500%
     maxHits: 16
-  
-  notes: >            
-      **TL DR**
-      
-      _In real talk, she's pretty below-average. Mostly unimpressive damage, especially compared to limited carries, with almost non-existent buffing otherwise. She has a regen rush, but doesn't merit the slot or level of healing to use her for that purpose either. Outscaled even not considering the GL level of powercreep without some GL exclusive buffs. Her only saving grace is some decent mults in addition to her selfish buff._
-      
-      
-      **TL DR**
+
+  rotations:
+    - name: Hitcount
+      skills:
+        - name: Normal
+        - name: Rocket Punch
+        - name: Force Field
+        - name: Rocket Punch
+        - name: Forcefield
+          repeat: "N"
+
+    - name: General Use
+      skills:
+        - name: Normal
+        - name: Rocket Punch
+        - name: Hammer Slammer
+        - name: Jump 'n' Thump
+          repeat: "3"
+
+    - name: General Use (104 AP)
+      notes: Can be done with 100 AP by starting at range and CAing into Jump 'n' Thumps.
+      skills:
+        - name: Normal
+        - name: Rocket Punch
+        - name: Force Field
+        - name: Jump 'n' Thump
+          repeat: "3"
+
+    - name: Ranged
+      notes: Can squeeze in another Rocket Punch if AP seeded.
+      skills:
+        - name: Normal
+        - name: Force Field
+        - name: Rocket Punch
+        - name: Force Field
+        - name: Rocket Punch
+          repeat: "N"
+          
+  notes: >    
+      In real talk, she's pretty below average. Mostly unimpressive damage, especially compared to limited carries, with almost non-existent buffing otherwise. Her party-wide HP regen is not useful enough to merit alloting her a team slot for that purpose. Outscaled even without considering the GL level of powercreep. Her only saving grace is some decent multipliers in addition to her selfish buffs.
       
       
       **Pros**
       
-      - Post Rush Regen.
+      - Solid skill multipliers.
       
-      - Long Hit Count Extension
+      - Strong rush.
       
-      - Big rush multiplier.
+      - Party-wide regen on post-rush.
       
       
       **Cons**
       
-      - Awful ATK stat coupled with a conditional self buff.
+      - Unimpressive ATK stat paired with a conditional self buff.
       
       - Utility is quite weak.
-   
-      **Rotation**
       
-      *Normal > Rocket > Field > Rocket > Field^n - HC*
 
-      *Normal > Rocket > Slammer > Jump 'n' Thump^3*
-
-      *Normal > Rocket > Field > Jump 'n' Thump^3 - 104 AP Required, but can be done with 100 AP by starting w/ ranged and CAing into Thumps.*
-
-      *Normal > Field > Rocket > Field > Rocket^n - Long Ranged (AP seeded yields an extra Rocket.)*
 
 - name: Crowe F. Almedio
   cat: gl
@@ -4315,16 +4388,35 @@
           buffValue: 80
     power: ATK x 3500%
     maxHits: 13
-  
+
+  rotations:
+    - name: Regular
+      notes: Dextral and Sinistral are essentially interchangeable (they move in opposite directions). Use as needed to reposition.
+      skills:
+        - name: Normal
+        - name: Dextral Edge
+        - name: Sinistral Edge
+        - name: Threefold Blast
+          repeat: "N"
+          
   notes: >
-      _As a pure carry, Crowe's damage isn't bad. He's fast, fun and incentivizes back attacks for extra power. His rush looks a bit strange, but it gives him a short amount of high DPS burst (and its low time means you only need to get off the one combo). To add on to this, he does bring his own ATK buff, making him pubproof. That said, given his restriction, he's never going to be efficient as a buffer alone._
+      As a pure carry, Crowe's damage isn't bad. He's fast, fun, and incentivizes rear attacks for extra power. His rush looks a bit strange, but it gives him a high DPS burst (and its low duration means you only need to get off the one combo). To add onto this, he brings his own ATK buffing and conditional AP recovery on normals, making him a good choice for pubs.
    
-      **Rotation**
       
-      *Normal > Dextral/Sinistral > Dextral/Sinistral > Blast^n*
-
-      *Use the Dextral or Sinistral Edge to maneuver the field as you need and to preference.*
-
+      **Pros**
+      
+      - Deals good damage.
+      
+      - Fast, accessible playstyle.
+      
+      - Self-sufficient to a degree, bringing his own ATK buffing and AP recovery on normals.
+      
+      
+      **Cons**
+      
+      - Low rush multiplier, especially for a carry.
+      
+      
 - name: Chisato Madison
   cat: gl
   rating: 5
@@ -4412,16 +4504,39 @@
     power: ATK x 3500%
     maxHits: 10
   
+  rotations:
+    - name: DPS and AP Feed
+      notes: Chisato's skills have awkward AP costs, so either AP seeds or AP redux is recommended.
+      skills:
+        - name: Normal
+        - name: Rising Dragon
+        - name: Crescent Locus
+        - name: Rising Dragon
+
+    - name: Rush Gain
+      skills:
+        - name: Normal
+        - name: Rising Dragon
+          repeat: "N"
+          
   notes: >
-      _Our final non-ace release, and she has a single niche as a utility unit - rush feeding. This is unique to her until some future units come, so she functionally does what Daril does, trading extra 300% combo damage slightly more rush uptime and sub 20 rush rotations (which can benefit from rush buffs). She has terrible damage by herself, but her rush buff is notably higher than any shooter damage buff. Dragon feeds 5% rush bar regardless of character, regardless of whether it hits or not. She also does have AP on norms, though locked behind 100% HP._
+      Our final non-ace release, and she has a single niche as a utility unit -- rush feeding, which will be unique to her until the arrival of some future units. Functionally, she does what Daril does, trading extra 300% combo damage for slightly more rush uptime and sub-20 rush rotations (which can benefit from rush buffs). She deals terrible damage by herself, but her post-rush damage buff is notably higher than that of any Sharpshooter except for Cherry Blossom Dias's conditional passive. Rising Dragon feeds 5% rush bar regardless of character and whether it hits or not. She also gives party-wide AP on normals, though locked behind an HP conditional.
    
-      **Rotation**
       
-      *Chisato bears awkward AP costs, so it is recommended to give AP seeds or reductions.*
+      
+      **Pros**
+      
+      - Unique rush-feeding ability.
+      
+      - Strong post-rush damage buff.
+      
+      
+      **Cons**
+      
+      - Underwhelming as an ATK buffer, with very weak ATK buffing and AP recovery locked behind an HP conditional.
+      
+      - Deals unimpressive damage.
 
-      *Normal > Dragon^n - Rush Gain Focus*
-
-      *Normal > Dragon > Locus > Dragon - Attempt to DPS while feeding.*
 
 - name: Lenneth Valkyrie (Awakened)
   cat: gl
