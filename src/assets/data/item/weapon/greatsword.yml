@@ -208,4 +208,24 @@
       lb: 5
   obtained: Mother Polyphaga (Exchange)    
   
-  
+
+- name: Red Moon Thunder Blade
+  cat: 'gl'
+  star: 5
+  picture: Lightning_Blade_Crimson_Moon
+  atk: 1110
+  int: 1109
+  factors:
+    - desc: Imbues attacks with lightning
+      element: Lightning
+    - desc: Damage dealt to demons +15%
+      slayer: Demon
+      slayerPct: 15
+      meta:
+        priority: 4
+        buff: Damage To Demons
+        buffValue: 15
+    - desc: No flinching when attacking
+    - desc: Rush combo damage +15% when hitcount is >100
+      lb: 5
+  obtained: Gacha
