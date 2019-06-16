@@ -1,17 +1,17 @@
-
-- name: Blue Comet Trigger 2
-  cat: 'jp'
+- name: Pulse Rifle
+  cat: 'gl'
   star: 5
-  picture: Blue_Comet_Trigger
-  atk: 651
-  int: 649
+  picture: Pulse_Rifle
+  atk: 1111
+  int: 1109
   factors:
-    - desc: +15% DMG to single targets
+    - desc: Imbues attacks with lightning
+      element: Lightning
+    - desc: AP recovery +50%
       meta:
         priority: 4
-        buff: Single Target Damage
-        buffValue: 15
-    - desc: Hit Count timer +1s
-    - desc: Additional hit that deals 5% of damage dealt by normal attacks
+        buff: AP Recovery
+        buffValue: 50
+    - desc: 70% chance of surviving a lethal attack when at 20% of max HP or more
       lb: 5
-  obtained: Rifle Coin Exchange
+  obtained: Gacha
