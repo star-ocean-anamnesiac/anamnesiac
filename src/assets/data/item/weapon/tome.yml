@@ -206,3 +206,30 @@
         buffValue: 10
       lb: 5   
   obtained: "Lezard / Valkyrie Profile: The Purged Wizard (Achievement)"
+
+- name: Grand Encyclopedia of Demonology
+  cat: 'gl'
+  star: 5
+  picture: Demonology_Index
+  atk: 1108
+  int: 1110
+  factors:
+    - desc: Damage dealt to demons +40%
+      slayer: Demon
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Demons
+        buffValue: 40        
+    - desc: AP cost -10%
+      meta:
+        priority: 3
+        buff: AP Cost Reduction
+        buffValue: 10
+    - desc: Single target damage +15%
+      meta:
+        priority: 4
+        buff: Single Target Damage
+        buffValue: 15
+      lb: 3
+  obtained: Gacha
