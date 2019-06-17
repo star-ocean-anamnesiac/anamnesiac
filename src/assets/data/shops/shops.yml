@@ -1397,3 +1397,192 @@
       stock: 3
       cost: 15000
       type: accessory
+   
+
+- name: Armaros Coin
+  icon: currency-coin-m1
+  cat: gl
+  currency: Armaros Coin
+  aliases:
+    - Armaros M1
+
+  items:
+    - name: MK-2 SRF Blade
+      stock: 6
+      cost: 1500
+      type: ohs
+    - name: Hurricane Claws
+      stock: 6
+      cost: 1500
+      type: ohs
+    - name: 4-5* Char. Ticket
+      stock: 4
+      cost: 2500
+      type: draw-ticket-character
+    - name: 5* Weapon Ticket
+      stock: 2
+      cost: 2000
+      type: draw-ticket-weapon
+    - name: 4* Weapon Ticket
+      stock: 3
+      cost: 1500
+      type: draw-ticket-weapon
+    - name: "Plat. Hammer: Enhance"
+      stock: 10
+      cost: 400
+      type: improvement-hammer
+    - name: "Gold Hammer: Enhance"
+      stock: 10
+      cost: 300
+      type: improvement-hammer    
+    - name: "Silver Hammer: Enhance"
+      stock: 20
+      cost: 200
+      type: improvement-hammer            
+    - name: Ra. Platinum Prism
+      stock: 0
+      cost: 600
+      type: improvement-prism
+    - name: Rainbow Crystal
+      stock: 3
+      cost: 1500
+      type: improvement-crystal
+    - name: Platinum Ingot
+      stock: 10
+      cost: 650
+      type: currency-ingot     
+    - name: Mission Ticket
+      stock: 5
+      cost: 250
+      type: draw-ticket-mission
+    - name: Barrier Blaster
+      stock: 1
+      cost: 2000
+      type: misc-barrierblaster
+      
+    - name: Eagle Eye Charm
+      stock: 1
+      cost: 15000
+      type: accessory
+      
+      
+- name: Egg M2 Coin
+  icon: currency-coin-m2
+  cat: gl
+  currency: Egg M2 Coin
+  aliases:
+    - Egg M2
+
+  items:  
+    - name: Healing Band
+      stock: 1
+      cost: 10
+      type: accessory      
+    - name: Sturdy Bracelet
+      stock: 1
+      cost: 10
+      type: accessory      
+    - name: Anti-curse Amulet III
+      stock: 1
+      cost: 5
+      type: accessory      
+    - name: Anti-silence Amulet III
+      stock: 1
+      cost: 5
+      type: accessory  
+      
+    - name: L. Limit Breaker
+      stock: 1
+      cost: 20
+      type: improvement-limitbreak
+    - name: 5* Weapon Ticket
+      stock: 2
+      cost: 5
+      type: draw-ticket-weapon  
+    - name: 5* Character Ticket
+      stock: 1
+      cost: 10
+      type: draw-ticket-character  
+    - name: 4-5* Char. Ticket
+      stock: 1
+      cost: 7
+      type: draw-ticket-character          
+    - name: Rainbow Crystal
+      stock: 0
+      cost: 10
+      type: improvement-crystal    
+   
+
+- name: Egg Coin
+  icon: currency-coin-m1
+  cat: gl
+  currency: Egg Coin
+  aliases:
+    - Egg M1
+
+  items: 
+    - name: Ceremonial Spear
+      stock: 4
+      cost: 2000
+      type: staff 
+    - name: Ceremonial Spear
+      stock: 2
+      cost: 4000
+      type: staff
+    - name: Rod of Snakes
+      stock: 4
+      cost: 2000
+      type: staff
+    - name: Rod of Snakes
+      stock: 2
+      cost: 4000
+      type: staff
+    - name: 4-5* Char. Ticket
+      stock: 4
+      cost: 4000
+      type: draw-ticket-character
+    - name: 5* Weapon Ticket
+      stock: 2
+      cost: 3000
+      type: draw-ticket-weapon
+    - name: 4* Weapon Ticket
+      stock: 3
+      cost: 2000
+      type: draw-ticket-weapon
+    - name: "Plat. Hammer: Enhance"
+      stock: 10
+      cost: 400
+      type: improvement-hammer
+    - name: "Gold Hammer: Enhance"
+      stock: 10
+      cost: 200
+      type: improvement-hammer    
+    - name: "Silver Hammer: Enhance"
+      stock: 20
+      cost: 150
+      type: improvement-hammer       
+    - name: "Silver Hammer: Enhance"
+      stock: 0
+      cost: 800
+      type: improvement-hammer 
+    - name: Rainbow Crystal
+      stock: 3
+      cost: 2500
+      type: improvement-crystal
+    - name: Platinum Ingot
+      stock: 10
+      cost: 1000
+      type: currency-ingot     
+    - name: Mission Ticket
+      stock: 5
+      cost: 400
+      type: draw-ticket-mission
+    - name: Barrier Blaster
+      stock: 1
+      cost: 3000
+      type: misc-barrierblaster
+      
+    - name: Journeyman's Charm
+      stock: 1
+      cost: 15000
+      type: accessory
