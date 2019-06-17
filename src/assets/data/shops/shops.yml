@@ -1414,7 +1414,7 @@
     - name: Hurricane Claws
       stock: 6
       cost: 1500
-      type: ohs
+      type: knuckle
     - name: 4-5* Char. Ticket
       stock: 4
       cost: 2500
