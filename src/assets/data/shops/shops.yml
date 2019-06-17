@@ -1471,7 +1471,8 @@
   cat: gl
   currency: Egg M2 Coin
   aliases:
-    - Egg M2
+    - Axebeak M2
+    - Colossal Beaks M2
 
   items:  
     - name: Healing Band
@@ -1518,7 +1519,8 @@
   cat: gl
   currency: Egg Coin
   aliases:
-    - Egg M1
+    - Axebeak M1
+    - Colossal Beaks M1
 
   items: 
     - name: Ceremonial Spear
