@@ -229,3 +229,22 @@
     - desc: Rush combo damage +15% when hitcount is >100
       lb: 5
   obtained: Gacha
+
+- name: Red Punisher Blade
+  cat: 'gl'
+  star: 5
+  picture: Thaumaturgy_Judgement_Blade_Red_Punisher
+  atk: 511
+  int: 508
+  factors:
+    - desc: Damage dealt +20% by Air Slash of Fury
+    - desc: Damage dealt to demons +10%
+      slayer: Demon
+      slayerPct: 10
+      meta:
+        priority: 4
+        buff: Damage To Demons
+        buffValue: 10
+    - desc: Recovers 5% of max HP every 3 seconds when hitcount is >100
+      lb: 5
+  obtained: Shrouded Gaze (Exchange)
