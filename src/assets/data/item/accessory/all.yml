@@ -879,3 +879,32 @@
         buffValue: 5
   obtained: Crowned Do Do (Achievement, Exchange, Drop)
 
+- name: Blossom-Embossed Armor Plate
+  cat: 'gl'
+  star: 5
+  picture: Cherry_Blossom_Crested_Plate
+  def: 753
+  factors:
+    - desc: No flinching during charge assault
+    - desc: Damage taken -10% when attacking
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffCondition: Attacking
+        buffValue: 10
+  obtained: Crown Do Do (Achievement)
+  
+- name: Red War Belt
+  cat: 'gl'
+  star: 5
+  picture: Red_Combat_Sash
+  def: 728
+  factors:
+    - desc: No flinching when taking of damage of 20% of max HP or less and hitcount is >100
+    - desc: Critical hit chance +15% when hitcount is >150
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffCondition: Hit Count > 150
+        buffValue: 15
+  obtained: Shrouded Gaze (Achievement, Exchange, Drop)  
