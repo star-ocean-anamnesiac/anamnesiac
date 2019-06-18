@@ -1614,3 +1614,128 @@
       stock: 3
       cost: 15000
       type: accessory
+
+- name: Blossom M2 Coin
+  eventName: "Budding Ties on the Planet of Blossoms [Crown Do Do / Cherry Blossom Event]"
+  icon: currency-coin-m2
+  cat: gl
+  currency: Blossom M2 Coin
+  aliases:
+    - Crown Do Do M2
+    - Crown Dodo M2
+    - Sakura M2
+
+  items:
+    - name: 5* Weapon Ticket
+      stock: 1
+      cost: 10
+      type: draw-ticket-weapon            
+    - name: 5* Character Ticket
+      stock: 1
+      cost: 15
+      type: draw-ticket-character     
+    - name: L. Limit Breaker
+      stock: 1
+      cost: 20
+      type: improvement-limitbreak
+    - name: "Platinum Thread: Enhance"
+      stock: 5
+      cost: 15
+      type: improvement-thread
+    - name: "Gold Thread: Enhance"
+      stock: 10
+      cost: 10
+      type: improvement-thread        
+    - name: AP Starseed
+      stock: 1
+      cost: 50
+      type: seed-ap      
+    - name: Ra. Platinum Prism
+      stock: 0
+      cost: 5
+      type: improvement-prism
+    - name: "Platinum Thread: Enhance"
+      stock: 0
+      cost: 20
+      type: improvement-thread      
+    - name: Furry Tail
+      stock: 3
+      cost: 30
+      type: accessory
+    - name: Fate Talisman IV
+      stock: 3
+      cost: 30
+      type: accessory      
+
+
+- name: Silver Treasure
+  eventName: "Love Across the Stars [Shrouded Gaze]"
+  icon: currency-coin-m1
+  cat: gl
+  currency: Silver Treasure
+  aliases:
+    - Shrouded Gaze M1
+
+  items:
+    - name: Kaleidoscope
+      stock: 1
+      cost: 3000
+      type: rifle
+    - name: Red Punisher Blade
+      stock: 1
+      cost: 3000
+      type: greatsword
+    - name: "Gem Ruins Hammer: Cap Inc."
+      stock: 5
+      cost: 2000
+      type: improvement-hammer-special
+    - name: "Gem Ruins Hammer: Cap Inc."
+      stock: 5
+      cost: 2500
+      type: improvement-hammer-special    
+    - name: Red War Belt
+      stock: 3
+      cost: 10000
+      type: accessory  
+    - name: L. Limit Breaker
+      stock: 1
+      cost: 4000
+      type: improvement-limitbreak      
+    - name: AP Starseed
+      stock: 1
+      cost: 8000
+      type: seed-ap   
+    - name: 5* Weapon Ticket
+      stock: 1
+      cost: 3000
+      type: draw-ticket-weapon   
+    - name: 4-5* Char Ticket
+      stock: 3
+      cost: 2000
+      type: draw-ticket-character
+    - name: Platinum Ingot
+      stock: 0
+      cost: 1000      
+      type: currency-ingot   
+      
+    - name: "Plat. Hammer: Enhance"
+      stock: 10
+      cost: 500
+      type: improvement-hammer          
+    - name: "Gold Hammer: Enhance"
+      stock: 10
+      cost: 300
+      type: improvement-hammer  
+    - name: "Gold Hammer: Enhance"
+      stock: 0
+      cost: 900
+      type: improvement-hammer  
+    - name: Rainbow Crystal
+      stock: 3
+      cost: 2500
+      type: improvement-crystal
+    - name: HP Starseed
+      stock: 20
+      cost: 300
+      type: seed-other       
+    
