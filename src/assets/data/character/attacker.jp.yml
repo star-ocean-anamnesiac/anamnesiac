@@ -6366,6 +6366,7 @@
   skills:
     - name: "Caving Slash"
       picture: Firestorm_Blade
+      element: Fire
       power: ATK x 410%
       ap: 23
       maxHits: 4
