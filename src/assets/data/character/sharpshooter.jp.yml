@@ -3454,23 +3454,23 @@
             buffValue: 40
 
   skills:
-    - name: "Tracking Plasma"
+    - name: "Alpha on One"
       picture: Alpha_On_One
       power: ATK x 220%
       ap: 17
       maxHits: 5
-    - name: "Gravitational Sphere"
+    - name: "Gravity Shell"
       picture: Gravity_Shell
       element: Dark
       power: ATK x 360%
       ap: 24
       maxHits: 8
-    - name: "Dispersion Ray"
+    - name: "Spread Ray"
       picture: Heaven_Air_Raid
       power: ATK x 710%
       ap: 32
       maxHits: 5
-    - name: "Electric Shockwave"
+    - name: "Lightning Blade"
       picture: Lightning_Blade
       element: Lightning
       power: ATK x 880%
