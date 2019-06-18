@@ -224,6 +224,12 @@
         priority: 4
         buff: Lightning Damage
         buffValue: 10
+    - desc: Dark damage dealt +10%
+      lb: 5
+      meta:
+        priority: 4
+        buff: Dark Damage
+        buffValue: 10        
   obtained: Shrouded Gaze (Exchange)
 
 - name: PMF-BEACH
