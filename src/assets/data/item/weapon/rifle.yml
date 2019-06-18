@@ -42,3 +42,41 @@
         buff: Dark Damage
         buffValue: 10        
   obtained: Shrouded Gaze (Exchange)
+  
+- name: Blue Comet Trigger
+  cat: 'gl'
+  star: 5
+  picture: Blue_Comet_Trigger
+  atk: 651
+  int: 649
+  factors:
+    - desc: Single target damage +15%
+      meta:
+        priority: 4
+        buff: Single Target Damage
+        buffValue: 15
+    - desc: Hitcount timer +1 second
+    - desc: Additional hit that deals 5% of damage dealt by normal attacks
+      lb: 5
+  obtained: Coin Exchange
+
+- name: The Vampire Blaster
+  cat: 'gl'
+  star: 5
+  picture: Vampiric_Canon_Vampir
+  atk: 514
+  int: 513
+  factors:
+    - desc: ATK +15%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 15
+    - desc: INT damage taken -10%
+      meta:
+        priority: 4
+        buff: INT Damage Taken Reduction
+        buffValue: 10
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP
+      lb: 3
+  obtained: Coin Exchange, Gacha
