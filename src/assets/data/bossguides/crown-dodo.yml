@@ -9,6 +9,7 @@
   enrage:
     m1: "7:00"
     m2: "7:00"
+    m3: "4:00"
     	    
   statusInflictions:
     - Paralysis
@@ -28,7 +29,7 @@
     - plain: Ranged
 
   desc: >
-    Mobile boss that does both physical and symbological attacks. Attack pattern intensifies as its HP decreases. Slightly susceptive to poison and freeze. Watch out for the spell that inflicts paralysis!
+    Mobile boss that does both physical and symbological attacks. Attack pattern intensifies as its HP decreases. Slightly susceptive to poison and freeze; however, poison is not as effective in M2 and M3. Watch out for the spell that inflicts paralysis!
   
   moves:
     - name: Grand Shockwave
