@@ -3665,7 +3665,6 @@
 
 - name: Opera Vectra
   cat: gl
-  rating: 4
   picture: Opera
   weapon: rifle
   ace: true
