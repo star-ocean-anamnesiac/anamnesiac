@@ -2253,3 +2253,63 @@
       **Rotation**
       
       *Normal > Fairy Star - The correct choice for Healing and Rush Gain.*
+      
+
+- name: Katarina (Violet)
+  cat: gl
+  picture: Healing_Gun_Katarina
+  weapon: rifle
+  ace: false
+  limited: false
+  star: 3
+
+  stats:
+    hp: 7436
+    atk: 963
+    int: 1153
+    def: 751
+    hit: 569
+    grd: 628
+
+  talents:
+    - name: "Well-Used Gun II"
+      effects: 
+        - desc: ATK damage taken -20% 
+          all: true
+          meta:
+            priority: 1
+            buff: ATK Damage Taken Reduction
+            buffValue: 20
+    - name: "Peace Negotiator II"
+      effects:
+        - desc: Recovers 5% of max HP every 3 seconds when at under 50% HP
+          all: false
+        
+  skills:
+    - name: "Healing"
+      picture: Healing
+      power: INT x 170%
+      ap: 40
+      maxHits: 1
+    - name: "Shadow Needles"
+      picture: Shadow_Needles
+      element: Dark
+      power: INT x 240%
+      ap: 23
+      maxHits: 5
+    - name: "Faerie Light"
+      picture: Faerie_Light
+      power: INT x 250%
+      ap: 60
+      maxHits: 1
+
+  rush:
+    name: "Revised Dark Devourer"
+    picture: Revised_Devourer_Healing_Rifle_Katarina
+    element: Dark
+    effects:
+      - desc: Recovers 100% HP
+        all: true
+    power: INT x 2500%
+    maxHits: 5
+      
