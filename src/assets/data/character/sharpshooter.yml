@@ -3664,7 +3664,7 @@
     maxHits: 10
 
 - name: Opera Vectra
-  cat: jp
+  cat: gl
   rating: 4
   picture: Opera
   weapon: rifle
