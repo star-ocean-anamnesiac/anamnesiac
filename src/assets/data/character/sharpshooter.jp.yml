@@ -3470,7 +3470,7 @@
       power: ATK x 710%
       ap: 32
       maxHits: 5
-    - name: "Lightning Blade"
+    - name: "Electric Shockwave"
       picture: Lightning_Blade
       element: Lightning
       power: ATK x 880%
