@@ -3399,7 +3399,7 @@
     grd: 924
 
   talents:
-    - name: "The Vectra's Noblemen"
+    - name: "Heir to House Vectra"
       effects: 
         - desc: Damage dealt +40%
           all: true
@@ -3430,7 +3430,7 @@
             buff: Stun Rate
             buffCondition: Long Range
             buffValue: 15
-    - name: "Heavy Drinker"
+    - name: "Drinker"
       effects: 
         - desc: No flinching when attacking
         - desc: Damage taken -40%
@@ -3438,7 +3438,7 @@
             priority: 1
             buff: Damage Taken Reduction
             buffValue: 40
-    - name: "Burning Affection"
+    - name: "Blazing Passion"
       effects: 
         - desc: AP cost -30% when skill chain is >3
           meta:
@@ -3470,7 +3470,7 @@
       power: ATK x 710%
       ap: 32
       maxHits: 5
-    - name: "Lightning Blade"
+    - name: "Electric Shockwave"
       picture: Lightning_Blade
       element: Lightning
       power: ATK x 880%
@@ -3480,9 +3480,9 @@
   rush:
     name: "Hyper Launcher"
     picture: Hyper_Launcher_Opera
-    shortEffects: Critical hit rate +30% and critical damage dealt +30% (Party/20s)
+    shortEffects: Critical hit chance +30% and critical damage dealt +30% (Party/20s)
     effects: 
-      - desc: Critical hit rate +30%
+      - desc: Critical hit chance +30%
         duration: 20
         all: true
         meta:
