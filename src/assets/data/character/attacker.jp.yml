@@ -6307,7 +6307,7 @@
     maxHits: 14
 
 
-- name: Albel Nox (Black Commander)
+- name: Albel Nox (Dark)
   cat: jp
   rating: 4
   picture: Black_Commander_Albel
@@ -6324,7 +6324,7 @@
     grd: 840
 
   talents:
-    - name: "Tenacity for Power"
+    - name: "Faith in Strength"
       effects: 
         - desc: ATK +45%
           all: true
@@ -6346,16 +6346,16 @@
             buff: ATK
             buffCondition: Hit Count > 100
             buffValue: 55
-    - name: "Heavy Cavalry Leader"
+    - name: "Armored Knight Captain"
       effects: 
         - desc: Additional hit that deals 20% more damage during normal attacks
           all: true
         - desc: Hitcount timer +1 second
           all: true
-    - name: "Orthodox School Swordsmanship"
+    - name: "Traditional Swordplay"
       effects: 
         - desc: Absorbs 15% of damage dealt by normal attacks as HP when hitcount is >50
-    - name: "Cold-blooded Tactic Theory"
+    - name: "Calm Strategies"
       effects: 
         - desc: Damage dealt +100% by Crescent Moon Slash when using charge assault
           meta:
