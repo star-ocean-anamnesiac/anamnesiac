@@ -815,7 +815,7 @@
         buff: Rush Damage
         buffCondition: Hit Count > 100
         buffValue: 10
-  obtained: Crown Dodo (Achievement)
+  obtained: Crown Do Do (Achievement)
   
 - name: Furry Tail
   cat: 'jp'
@@ -830,9 +830,9 @@
         buff: AP Cost Reduction
         buffCondition: Holding Aggro
         buffValue: 5
-  obtained: Crowned Dodo (Achievement, Exchange, Drop), Head Bull (Achievement, Draw Box)
+  obtained: Crowned Do Do (Achievement, Exchange, Drop), Head Bull (Achievement, Draw Box)
 
-- name: Sakura Crested Plate
+- name: Blossom-Embossed Armor Plate
   cat: 'jp'
   star: 5
   picture: Cherry_Blossom_Crested_Plate
@@ -845,7 +845,7 @@
         buff: Damage Taken Reduction
         buffCondition: Attacking
         buffValue: 10
-  obtained: Crown Dodo (Achievement)
+  obtained: Crown Do Do (Achievement)
 
 - name: Talisman of Lethality IV
   cat: 'jp'
@@ -910,7 +910,7 @@
         buffValue: 5
   obtained: Josephine (Achievement), Nephir Diablo (Achievement, Draw Box)
 
-- name: Red Combat Sash
+- name: Red War Belt
   cat: 'jp'
   star: 5
   picture: Red_Combat_Sash
