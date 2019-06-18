@@ -37,5 +37,6 @@
       isEnrage: true
       m1: true
       m2: true
+      m3: true
       desc: >
         Leaps high into the air and stomps down, inflicting massive damage on all party members. Repeats immediately.
