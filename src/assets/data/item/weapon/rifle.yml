@@ -15,3 +15,30 @@
     - desc: 70% chance of surviving a lethal attack when at 20% of max HP or more
       lb: 5
   obtained: Gacha
+
+- name: Kaleidoscope
+  cat: 'gl'
+  star: 5
+  picture: Kaleidoscope
+  atk: 531
+  int: 529
+  factors:
+    - desc: Damage dealt +20% by Electric Shockwave
+    - desc: HP +10%
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 10
+    - desc: Lightning damage dealt +10%
+      lb: 5
+      meta:
+        priority: 4
+        buff: Lightning Damage
+        buffValue: 10
+    - desc: Dark damage dealt +10%
+      lb: 5
+      meta:
+        priority: 4
+        buff: Dark Damage
+        buffValue: 10        
+  obtained: Shrouded Gaze (Exchange)
