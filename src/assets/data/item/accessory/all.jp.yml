@@ -809,11 +809,11 @@
         buff: AP Cost Reduction
         buffCondition: Hit Count > 100
         buffValue: 10
-    - desc: Rush combo damage +10% when hitcount is >100
+    - desc: Rush combo damage +10% when HP is 100%
       meta:
         priority: 4
         buff: Rush Damage
-        buffCondition: Hit Count > 100
+        buffCondition: HP is 100%
         buffValue: 10
   obtained: Crown Do Do (Achievement)
   
