@@ -877,7 +877,7 @@
         buff: AP Cost Reduction
         buffCondition: Holding Aggro
         buffValue: 5
-  obtained: Crowned Do Do (Achievement, Exchange, Drop)
+  obtained: Crown Do Do (Achievement, Exchange, Drop)
 
 - name: Blossom-Embossed Armor Plate
   cat: 'gl'
