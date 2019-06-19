@@ -25,8 +25,9 @@
       vuln: Low
 
   recommendations:
-    - plain: Fire Damage
-    - plain: Ranged
+    - plain: Fire damage
+    - plain: Anti-flinch
+    - plain: High mobility
 
   desc: >
     Mobile boss that does both physical and symbological attacks. Attack pattern intensifies as its HP decreases. Slightly susceptive to poison and freeze; however, poison is not as effective in M2 and M3. Watch out for the spell that inflicts paralysis!
