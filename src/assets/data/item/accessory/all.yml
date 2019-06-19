@@ -907,4 +907,13 @@
         buff: Crit Rate
         buffCondition: Hit Count > 150
         buffValue: 15
-  obtained: Shrouded Gaze (Achievement, Exchange, Drop)  
+  obtained: Shrouded Gaze (Achievement, Exchange, Drop)
+
+- name: Fate Talisman IV
+  cat: 'gl'
+  star: 5
+  picture: Talisman_of_Lethality_III
+  def: 753
+  factors:
+    - desc: Critical hit chance -10% (Enemies)
+  obtained: Crown Do Do (Achievement)
