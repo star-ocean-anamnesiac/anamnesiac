@@ -862,7 +862,7 @@
         buff: Rush Damage
         buffCondition: HP is 100%
         buffValue: 10
-  obtained: Crown Do Do (Achievement)
+  obtained: Crown Dohdoh (Achievement)
 
 - name: Furry Tail
   cat: 'gl'
@@ -877,7 +877,7 @@
         buff: AP Cost Reduction
         buffCondition: Holding Aggro
         buffValue: 5
-  obtained: Crown Do Do (Achievement, Exchange, Drop)
+  obtained: Crown Dohdoh (Achievement, Exchange, Drop)
 
 - name: Blossom-Embossed Armor Plate
   cat: 'gl'
@@ -892,7 +892,7 @@
         buff: Damage Taken Reduction
         buffCondition: Attacking
         buffValue: 10
-  obtained: Crown Do Do (Achievement)
+  obtained: Crown Dohdoh (Achievement)
   
 - name: Red War Belt
   cat: 'gl'
@@ -916,4 +916,21 @@
   def: 753
   factors:
     - desc: Critical hit chance -10% (Enemies)
-  obtained: Crown Do Do (Achievement)
+  obtained: Crown Dohdoh (Achievement)
+
+- name: FC Goggles
+  cat: 'gl'
+  star: 5
+  picture: FC_Goggles
+  def: 753
+  factors:
+    - desc: AP cost -5% at long range
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffCondition: Long Range
+        buffValue: 5
+    - desc: Repel +1
+  obtained: Shrouded Gaze (Achievement)
+
+  
