@@ -2435,7 +2435,7 @@
             priority: 4
             buff: AP Cost Reduction
             buffValue: 20
-    - name: "Flower Dedicated to the Grave"
+    - name: "Graveside Flowers"
       effects:
         - desc: AP cost -50% when skill chain is >3
           meta:
@@ -2443,9 +2443,9 @@
             buff: AP Cost Reduction
             buffCondition: Skill Chain 3+
             buffValue: 50
-    - name: "New Step"
+    - name: "A New Step Forward"
       effects:
-        - desc: INT damage +50% when hitcount is >100
+        - desc: INT damage dealt +50% when hitcount is >100
           meta:
             priority: 4
             buff: INT Damage
