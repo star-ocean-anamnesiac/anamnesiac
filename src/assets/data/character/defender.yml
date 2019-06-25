@@ -1873,12 +1873,12 @@
   star: 5
 
   stats:
-    hp: 18795
-    atk: 2074
+    hp: 20675
+    atk: 2489
     int: 1365
-    def: 2336
-    hit: 738
-    grd: 952
+    def: 2570
+    hit: 728
+    grd: 1095
 
   talents:
     - name: "The King's Chosen's Honor II"
