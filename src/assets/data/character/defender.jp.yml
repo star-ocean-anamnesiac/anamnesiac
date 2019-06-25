@@ -1016,17 +1016,17 @@
       effects: 
         - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
           all: true
-    - name: "Exemplar of the Swordmaster's Dignity"
+    - name: "Swordmaster's Splendor"
       effects:
         - desc: Nullifies charge assault critical damage penalty
           all: true      
         - desc: Nullifies critical damage taken
         - desc: Nullifies freeze
-    - name: "Inherited Vow"
+    - name: "An Oath Inherited"
       effects:
         - desc: Absorbs 15% of damage dealt by normal attacks as HP
         - desc: Taunt +3
-    - name: "Severing Regrets"
+    - name: "Trials Overcome"
       shortEffects: ATK +20%, DEF +10%, GRD +15%, and HP +10%
       effects: 
         - desc: ATK +20%
