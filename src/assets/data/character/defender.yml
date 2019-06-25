@@ -1867,7 +1867,6 @@
 
 - name: Victor Oakville (Awakened)
   cat: gl
-  rating: 6
   picture: Victor
   weapon: bns
   awakened: true
