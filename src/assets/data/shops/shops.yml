@@ -1550,7 +1550,7 @@
       
 
 - name: Blossom Coin
-  eventName: "Budding Ties on the Planet of Blossoms [Crown Do Do / Cherry Blossom Event]"
+  eventName: "Budding Ties on the Planet of Blossoms [Crown Dohdoh / Cherry Blossom Event]"
   icon: currency-coin-m1
   cat: gl
   currency: Blossom Coin
@@ -1559,6 +1559,7 @@
     - Cherry Blossom M1
     - Crown Do Do M1
     - Crown Dodo M1
+    - Crown Dohdoh M1
 
   items:
     - name: Cherry Blossom Beam Sword
@@ -1616,13 +1617,14 @@
       type: accessory
 
 - name: Blossom M2 Coin
-  eventName: "Budding Ties on the Planet of Blossoms [Crown Do Do / Cherry Blossom Event]"
+  eventName: "Budding Ties on the Planet of Blossoms [Crown Dohdoh / Cherry Blossom Event]"
   icon: currency-coin-m2
   cat: gl
   currency: Blossom M2 Coin
   aliases:
     - Crown Do Do M2
     - Crown Dodo M2
+    - Crown Dohdoh M2
     - Sakura M2
 
   items:
@@ -1675,6 +1677,7 @@
   currency: Silver Treasure
   aliases:
     - Shrouded Gaze M1
+    - Gem Guardian M1
 
   items:
     - name: Kaleidoscope
@@ -1738,4 +1741,63 @@
       stock: 20
       cost: 300
       type: seed-other       
+
+
+- name: Gold Treasure
+  eventName: "Love Across the Stars [Shrouded Gaze]"
+  icon: currency-coin-m2
+  cat: gl
+  currency: Gold Treasure
+  aliases:
+    - Shrouded Gaze M2
+    - Gem Guardian M2
+    - Shrouded Gaze M3
+    - Gem Guardian M3
+
+  items:
+    - name: Silver Treasure x 70
+      stock: 0
+      cost: 1
+      type: draw-gacha    
+    - name: 5* Weapon Ticket
+      stock: 2
+      cost: 10
+      type: draw-ticket-weapon            
+    - name: 5* Character Ticket
+      stock: 1
+      cost: 15
+      type: draw-ticket-character     
+    - name: L. Limit Breaker
+      stock: 1
+      cost: 20
+      type: improvement-limitbreak
+    - name: "Platinum Thread: Enhance"
+      stock: 5
+      cost: 15
+      type: improvement-thread
+    - name: "Gold Thread: Enhance"
+      stock: 10
+      cost: 10
+      type: improvement-thread             
+    - name: Ra. Platinum Prism
+      stock: 0
+      cost: 5
+      type: improvement-prism
+    - name: "Platinum Thread: Enhance"
+      stock: 0
+      cost: 20
+      type: improvement-thread      
+    - name: Red War Belt
+      stock: 3
+      cost: 30
+      type: accessory
+    - name: War God's Symbol
+      stock: 3
+      cost: 30
+      type: accessory   
+
+    - name: AP Starseed
+      stock: 1
+      cost: 50
+      type: seed-ap 
     
