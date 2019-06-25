@@ -1533,10 +1533,10 @@
             priority: 1
             buff: Cast Time Reduction
             buffValue: 40
-    - name: "Noble Souls"
+    - name: "A Noble Soul"
       effects: 
         - desc: No flinching when casting symbology
-    - name: "Fearless Feeling"
+    - name: "Steadfast Resolve"
       shortEffects: HP +15% and DEF +10%
       effects: 
         - desc: HP +15%
