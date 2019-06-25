@@ -2605,3 +2605,114 @@
       *Normal > CA Cross > Saviour > Prismatic^n - Buff*
       
       *Normal > CA Prismatic > Saviour > Prismatic^n - Buffed/PRB DPS*
+      
+
+- name: Myuria Tionysus (Awakened)
+  cat: gl
+  picture: Myuria
+  weapon: staff
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 12285
+    atk: 1537
+    int: 4116
+    def: 1339
+    hit: 1057
+    grd: 833
+
+  talents:
+    - name: "Enchanted Perfume II"
+      effects: 
+        - desc: Stun rate +30%
+          meta:
+            priority: 4
+            buff: Stun Rate
+            buffValue: 30
+    - name: "Hardier Warrior of Morphus"
+      effects: 
+        - desc: INT +40%
+          meta:
+            priority: 4
+            buff: INT
+            buffValue: 40
+    - name: "In Loving Memory of Lucien II"
+      effects: 
+        - desc: Symbology cast time -60%
+          meta:
+            priority: 4
+            buff: Cast Time Reduction
+            buffValue: 60
+    - name: "Adult's Composure"
+      effects: 
+        - desc: AP cost -20%
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 20
+    - name: "Graveside Flowers"
+      effects:
+        - desc: AP cost -50% when skill chain is >3
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain 3+
+            buffValue: 50
+    - name: "A New Step Forward"
+      effects:
+        - desc: INT damage dealt +50% when hitcount is >100
+          meta:
+            priority: 4
+            buff: INT Damage
+            buffCondition: Hit Count > 100
+            buffValue: 50
+
+  skills:
+    - name: "Deep Freeze"
+      picture: Deep_Freeze
+      element: Ice
+      power: INT x 510%
+      ap: 35
+      maxHits: 9
+    - name: "Thunder Flare"
+      picture: Thunder_Flare
+      element: Lightning
+      power: INT x 1020%
+      ap: 35
+      maxHits: 4
+      highlight: true
+    - name: "Arctic Impact"
+      picture: Arctic_Blast
+      element: Ice
+      power: INT x 740%
+      ap: 42
+      maxHits: 3
+      highlight: true
+    - name: "Plasma Cyclone"
+      picture: Cyclone
+      element: Lightning
+      power: INT x 1400%
+      ap: 50
+      maxHits: 6
+    - name: "Lightning Blast"
+      picture: Lightning
+      element: Lightning
+      power: INT x 250%
+      ap: 23
+      maxHits: 10
+      
+  rush:
+    name: "Ultraviolet Extinction"
+    picture: Ultraviolet_Extinction_Myuria
+    element: Lightning
+    effects: 
+      - desc: INT +80%
+        duration: 20
+        meta:
+          priority: 4
+          buff: INT
+          buffValue: 80
+    power: INT x 4500%
+    maxHits: 2
