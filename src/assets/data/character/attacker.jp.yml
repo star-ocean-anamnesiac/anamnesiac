@@ -7229,7 +7229,6 @@
           meta:
             priority: 1
             buff: Enemy DEF Reduction
-            buffCondition: Wolf Albel's HP is 100%
             buffValue: 20
         - desc: DEF -30% when Wolf Albel's HP is 100%
           all: Enemies
@@ -7301,7 +7300,7 @@
       maxHits: 8
 
   rush:
-    name: "Haō Kokutensō"
+    name: "Dynast's Heaven Piercer"
     picture: Dynast's_Heaven_Piercer_Wolf_Albel
     shortEffects: AP cost -40% and recovers 10% of max HP every 3 seconds (Self/20s)
     effects: 
