@@ -3727,37 +3727,37 @@
   talents:
     - name: "Flower Fairy"
       effects: 
-        - desc: Critical hit chance +15%
+        - desc: Critical hit chance +20%
           all: true
           meta:
             priority: 1
             buff: Crit Rate
-            buffValue: 15
-        - desc: Critical damage dealt +15%
+            buffValue: 20
+        - desc: Critical damage dealt +20%
           all: true
           meta:
             priority: 1
             buff: Crit Damage
-            buffValue: 15
+            buffValue: 20
         - desc: Nullifies charge assault critical damage penalty
     - name: "Perfect Makeup"
       effects: 
-        - desc: Critical hit chance and critical damage dealt +30% when hitcount is >100
+        - desc: Critical hit chance and critical damage dealt +30% when hitcount is >50
           meta:
             priority: 1
             buffs:
               - Crit Rate
               - Crit Damage
             buffValue: 30
-            buffCondition: Hit Count > 100
-        - desc: Critical hit chance and critical damage dealt +45% when hitcount is >150
+            buffCondition: Hit Count > 50
+        - desc: Critical hit chance and critical damage dealt +45% when hitcount is >100
           meta:
             priority: 1
             buffs:
               - Crit Rate
               - Crit Damage
             buffValue: 45
-            buffCondition: Hit Count > 150            
+            buffCondition: Hit Count > 100           
     - name: "Creator of Smiles"
       effects: 
         - desc: Hitcount timer +2 seconds
@@ -3784,12 +3784,12 @@
             buff: AP Cost Reduction
             buffCondition: Hit Count > 100
             buffValue: 40
-        - desc: ATK +20% when hitcount is >100
+        - desc: ATK +25% when hitcount is >100
           meta:
             priority: 4
             buff: ATK
             buffCondition: Hit Count > 100
-            buffValue: 20
+            buffValue: 25
 
   skills:
     - name: "Hammer Slammer"
@@ -3804,12 +3804,12 @@
       maxHits: 10
     - name: "Jump 'n' Thump"
       picture: Jump_n_Thump
-      power: ATK x 370%
+      power: ATK x 410%
       ap: 29
       maxHits: 1
     - name: "Parabola Beam"
       picture: Parabola_Beam
-      power: ATK x 730%
+      power: ATK x 810%
       ap: 36
       maxHits: 10
       
@@ -3824,7 +3824,7 @@
           priority: 1
           buff: Damage
           buffValue: 70
-    power: ATK x 4000%
+    power: ATK x 4500%
     maxHits: 9
 
 
