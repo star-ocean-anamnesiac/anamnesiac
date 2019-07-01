@@ -9016,7 +9016,7 @@
             buff: AP Cost Reduction
             buffCondition: Hitcount > 300
             buffValue: 40
-    - name: ""
+    - name: "Bearer of the Cursed Sword"
       effects: 
         - desc: Additional hit that deals 5% of damage dealt by skills
         - desc: Repel +1
@@ -9026,7 +9026,7 @@
             buff: ATK
             buffCondition: Hitcount > 600
             buffValue: 40
-    - name: ""
+    - name: "Taboo Left Arm"
       effects: 
         - desc: Recovers 100% AP on perfect dodge
         - desc: Damage dealt +100% by Unbridled Double Slash when hitcount is >200
