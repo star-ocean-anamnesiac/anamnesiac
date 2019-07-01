@@ -598,3 +598,103 @@
         buffValue: 15
       lb: 3
   obtained: Gacha
+
+- name: Misty Bloom Orb
+  cat: 'jp'
+  star: 5
+  picture: Misty_Bloom_Orb
+  atk: 856
+  int: 863
+  factors:
+    - desc: Damage dealt +20% by Thunder Blade
+    - desc: No flinching when casting symbology
+    - desc: Rush combo damage +20% when HP is 100%
+      meta:
+        priority: 4
+        buff: Rush Damage
+        buffCondition: HP is 100%
+        buffValue: 20
+      lb: 5
+  obtained: Shadow Dhaos / Tales of the Rays (Achievement)
+
+- name: Chaotic Star
+  cat: 'jp'
+  star: 5
+  picture: Chaotic_Star
+  atk: 863
+  int: 856
+  factors:
+    - desc: Damage dealt +20% by Chaos Collider
+    - desc: AP cost -10%
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 10   
+    - desc: Critical damage dealt +30% when HP is 100%
+      meta:
+        priority: 4
+        buff: Crit Damage
+        buffCondition: HP is 100%
+        buffValue: 30
+      lb: 5
+  obtained: Shadow Dhaos / Tales of the Rays (Achievement)
+
+- name: Volt Bloom Orb
+  cat: 'jp'
+  star: 5
+  picture: Volt_Bloom_Orb
+  atk: 1256
+  int: 1263
+  factors:
+    - desc: Imbues attacks with lightning
+      element: Lightning
+    - desc: Lightning damage dealt +50% 
+      meta:
+        priority: 4
+        buff: Lightning Damage
+        buffValue: 50
+    - desc: No flinching when casting symbology
+    - desc: Damage taken -30% when casting symbology
+      meta:
+        priority: 1
+        buff: Damage Taken Reduction
+        buffCondition: Casting Symbology
+        buffValue: 30
+    - desc: Critical hit chance +30% when HP is 100%
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffCondition: HP is 100%
+        buffValue: 40
+      lb: 5
+  obtained: Gacha (Limited)
+
+- name: Derris Star
+  cat: 'jp'
+  star: 5
+  picture: Dherris_Star
+  atk: 1264
+  int: 1255
+  factors:
+    - desc: Imbues attacks with lightning
+      element: Lightning
+    - desc: Lightning damage dealt +50% 
+      meta:
+        priority: 4
+        buff: Lightning Damage
+        buffValue: 50
+    - desc: Rush combo damage +40% at short range
+      meta:
+        priority: 4
+        buff: Rush Damage
+        buffCondition: Short Range
+        buffValue: 40
+    - desc: No flinching when casting symbology at short range
+      lb: 5
+    - desc: Damage taken -20% at short range
+      meta:
+        priority: 1
+        buff: Damage Taken Reduction
+        buffValue: 20
+      lb: 5
+  obtained: Gacha (Limited)
