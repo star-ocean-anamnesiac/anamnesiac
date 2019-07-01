@@ -442,3 +442,22 @@
     - desc: Recovers 3% of max HP every 5 seconds
       lb: 3
   obtained: Gacha
+
+- name: Ebony Stringer
+  cat: 'gl'
+  star: 5
+  picture: Ebony_Stringer
+  atk: 956
+  int: 960
+  factors:
+    - desc: Imbues attacks with dark
+      element: Dark
+    - desc: Dark damage dealt +20%
+      meta:
+        priority: 3
+        buff: Dark Damage
+        buffValue: 20
+    - desc: 70% chance of surviving a lethal attack when at 20% of max HP or more
+    - desc: Recovers 5% of max HP every 3 seconds
+      lb: 5
+  obtained: Gacha
