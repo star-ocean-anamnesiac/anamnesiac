@@ -2175,13 +2175,13 @@
             priority: 4
             buff: AP Cost Reduction
             buffValue: 25
-    - name: "Ready to Transcend Space-Time"
+    - name: "Trans-Dimensional Resolve"
       effects: 
         - desc: Recovers 5% of max HP every 3 seconds
           all: true
         - desc: Nullifies silence for 180 seconds
           all: false
-    - name: "Wanting to Grow Up"
+    - name: "Desire to Grow"
       effects: 
         - desc: Critical damage dealt +20% when HP is 100%
           all: true
@@ -2190,7 +2190,7 @@
             buff: Crit Damage
             buffCondition: HP is 100
             buffValue: 20
-    - name: "Investigating the Music Box"
+    - name: "Music Box Investigation"
       effects: 
         - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
           all: true
