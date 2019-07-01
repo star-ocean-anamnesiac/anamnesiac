@@ -469,3 +469,28 @@
     - desc: 60% chance to survive a lethal attack when at 20% of max HP or more
       lb: 5
   obtained: Gacha
+
+- name: "Dragon's Blade—Dark Blood"
+  cat: 'gl'
+  star: 5
+  picture: Dragonblade_Dark_Blood
+  atk: 961
+  int: 955
+  factors:
+    - desc: Imbues attacks with dark
+      element: Dark
+    - desc: Damage dealt to dragons +30%
+      slayer: Dragon
+      slayerPct: 30
+      meta:
+        priority: 4
+        buff: Damage To Dragons
+        buffValue: 30
+    - desc: Absorbs 15% of damage dealt by normal attacks as HP
+    - desc: Critical hit chance +15%
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffValue: 15
+      lb: 5
+  obtained: Gacha
