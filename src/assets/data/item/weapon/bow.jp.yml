@@ -693,3 +693,25 @@
         buffValue: 10
       lb: 5
   obtained: "Lezard + Blood Valkyrie / Valkyrie Profile: The Purged Wizard (Achievement)"
+
+- name: Composite Bow
+  cat: 'jp'
+  star: 5
+  picture: Composite_Bow
+  atk: 862
+  int: 859
+  factors:
+    - desc: Damage dealt +20% by Toryuu
+    - desc: HIT +10%
+      meta:
+        priority: 3
+        buff: HIT
+        buffValue: 10
+    - desc: Critical damage dealt +30% when skill chain is >3
+      meta:
+        priority: 1
+        buff: Crit Damage
+        buffCondition: Skill Chain 3+
+        buffValue: 30
+      lb: 5
+  obtained: Shadow Dhaos / Tales of the Rays (Achievement)
