@@ -598,4 +598,21 @@
       lb: 5
   obtained: Knight Exile / FFBE (Achievement)
 
-
+- name: Juzumaru Tsunetsuga
+  cat: 'jp'
+  star: 5
+  picture: Juzumaru_Tsunetsuga
+  atk: 1259
+  int: 1258
+  factors:
+    - desc: Damage dealt to demons +60%
+      slayer: Demon
+      slayerPct: 60
+      meta:
+        priority: 4
+        buff: Damage To Demons
+        buffValue: 60
+    - desc: Rush combo damage +40% when hitcount is >300
+    - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
+      lb: 3
+  obtained: Gacha
