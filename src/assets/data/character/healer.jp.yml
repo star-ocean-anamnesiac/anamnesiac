@@ -691,36 +691,6 @@
     power: INT x 2000%
     maxHits: 11
     
-  notes: >
-      _A decent healer for providing DPS without actually being a DPS character. Millie provides a 30% increase in Elemental DMG and a +50% Crit Buff upon Rush. However, it should be noted that Elemental DMG does not stack with specific Elemental DMG buffs, such as Lightning Wand's +15% Lightning DMG)."_
-      
-      
-      **TL DR**
-      
-      
-      **Pros**
-      
-      - Strong elemental damage buff for the party
-      
-      - Post rush buff that boosts critical rate and heals most of the party's HP
-      
-      - Talent that helps survivability
-      
-      
-      **Cons**
-      
-      - Damage spells take a long time to cast making them bad
-      
-      - Common access to elemental damage buffs post rush that override her talent
-      
-      - Boring to play optimally
-      
-      - Expensive healing
-      
-      
-      **Rotation**
-      
-      *Normal > Faerie Star (Healing & Rush Gain)*
 
 - name: Rena Lanford
   cat: jp
@@ -1006,11 +976,6 @@
             priority: 4
             buff: AP Cost Reduction
             buffValue: 25
-        - desc: Symbology cast time -20%
-          meta:
-            priority: 1
-            buff: Cast Time Reduction
-            buffValue: 20
 
   skills:
     - name: "Radiant Lancer"
@@ -1055,42 +1020,7 @@
     power: INT x 3500%
     maxHits: 10
     
-  notes: >
-      _Actually our first significant GL exclusive buff, putting her more in line with other healers. Her rush gain and cast times are still abysmal, but it actually does feel usable. Be careful, as her cast times are not to be understated - you can definitely feel the length of her spells, and they will put you stationary for a lengthy time (it also means you have to pick the spell you cast wisely). Ideally your team shouldn't be in the position to die with a healer, but in the case it happens, you'll put them right back on their feet. Slight INT buffs if you happen to be with a caster, and a slight damage buff in the form of rush damage._
-      
-      
-      **TL DR**
-      
-      
-      **Pros**
-      
-      - Can revive party members by rushing
-      
-      - Powerful post rush self buff that gives insane healing and damage
-      
-      - Consistent damage
-      
-      - Buffs INT and rush damage
-      
-      - Hard hitting rush compared to most healers
-      
-      
-      **Cons**
-      
-      - Abysmal rush gain
-      
-      - Lack of powerful buffs for the party
-      
-      - Lack of a good talent that helps survivability
-      
-      
-      **Rotation**
-      
-      *(Normal >) Lancer/Comet^n - Rush Gain, Lancer or Comet depending on target.*
 
-      *Normal > Comet > Faerie - More potent healing w/ Rush Gain*
-
-      *Faerie^n - Healing and Rush Gain*
  
 - name: Sarah Jerand
   cat: jp
@@ -2475,13 +2405,13 @@
             priority: 4
             buff: AP Cost Reduction
             buffValue: 25
-    - name: "Ready to Transcend Space-Time"
+    - name: "Trans-Dimensional Resolve"
       effects: 
         - desc: Recovers 5% of max HP every 3 seconds
           all: true
         - desc: Nullifies silence for 180 seconds
           all: false
-    - name: "Wanting to Grow Up"
+    - name: "Desire to Grow"
       effects: 
         - desc: Critical damage dealt +20% when HP is 100%
           all: true
@@ -2490,7 +2420,7 @@
             buff: Crit Damage
             buffCondition: HP is 100
             buffValue: 20
-    - name: "Investigating the Music Box"
+    - name: "Music Box Investigation"
       effects: 
         - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
           all: true
@@ -3072,7 +3002,7 @@
     power: INT x 4000%
     maxHits: 8
 
-- name: Mirage Koas (Bunny)
+- name: Mirage Koas (Bunny Ears)
   cat: jp
   rating: 6
   picture: Bunny_Ears_Mirage
@@ -3103,7 +3033,7 @@
             priority: 1
             buff: Damage Taken Reduction
             buffValue: 30
-        - desc: Damage taken -50% when HP is <50%
+        - desc: Damage taken -50% when HP is under 50%
           meta:
             priority: 1
             buff: Damage Taken Reduction
@@ -3414,32 +3344,22 @@
 
   talents:
     - name: "A Dream to Study Abroad"
-      shortEffects: Critical hit chance/critical damage dealt +20%, and critical hit chance/critical damage dealt +40% when not behind target
       effects: 
-        - desc: Critical hit chance +20%
+        - desc: Critical hit chance and critical damage dealt +20%
           all: true
           meta:
             priority: 1
-            buff: Crit Rate
+            buffs:
+              - Crit Rate
+              - Crit Damage
             buffValue: 20
-        - desc: Critical hit chance +40% when not behind target
+        - desc: Critical hit chance and critical damage dealt +40% when not behind target
           all: true
           meta:
             priority: 1
-            buff: Crit Rate
-            buffCondition: Not Behind Target
-            buffValue: 40
-        - desc: Critical damage dealt +20%
-          all: true
-          meta:
-            priority: 1
-            buff: Crit Damage
-            buffValue: 20
-        - desc: Critical damage dealt +40% when not behind target
-          all: true
-          meta:
-            priority: 1
-            buff: Crit Damage
+            buffs:
+              - Crit Rate
+              - Crit Damage
             buffCondition: Not Behind Target
             buffValue: 40
     - name: "Mother's Support"
@@ -3841,3 +3761,61 @@
         all: true
     power: INT x 4000%
     maxHits: 11    
+
+- name: Katarina (Violet)
+  cat: jp
+  picture: Healing_Gun_Katarina
+  weapon: rifle
+  ace: false
+  limited: false
+  star: 3
+
+  stats:
+    hp: 7436
+    atk: 963
+    int: 1153
+    def: 751
+    hit: 569
+    grd: 628
+
+  talents:
+    - name: "Well-Used Gun"
+      effects: 
+        - desc: ATK damage taken -20% 
+          all: true
+          meta:
+            priority: 1
+            buff: ATK Damage Taken Reduction
+            buffValue: 20
+    - name: "Peace Negotiator"
+      effects:
+        - desc: Recovers 5% of max HP every 3 seconds when at under 50% HP
+          all: false
+        
+  skills:
+    - name: "Healing"
+      picture: Healing
+      power: INT x 170%
+      ap: 40
+      maxHits: 1
+    - name: "Shadow Needles"
+      picture: Shadow_Needles
+      element: Dark
+      power: INT x 240%
+      ap: 23
+      maxHits: 5
+    - name: "Faerie Light"
+      picture: Faerie_Light
+      power: INT x 250%
+      ap: 60
+      maxHits: 1
+
+  rush:
+    name: "Revised Dark Devourer"
+    picture: Revised_Devourer_Healing_Rifle_Katarina
+    element: Dark
+    effects:
+      - desc: Recovers 100% HP
+        all: true
+    power: INT x 2500%
+    maxHits: 5
