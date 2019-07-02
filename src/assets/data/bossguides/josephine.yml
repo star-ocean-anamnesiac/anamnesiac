@@ -1,0 +1,46 @@
+    
+- name: "Josephine (4, Female)"
+  eventName: "Master Must Be Punished"
+  image: josephine
+  cat: gl
+  race: Dragon
+  
+  isActive: true
+
+  enrage:
+    m1: "7:00"
+    	    
+  statusInflictions:
+    - Nothing
+
+  weaknesses:
+    - element: Dark
+      percentWeakness: 1
+
+    - status: Poison
+      vuln: Low
+    - status: Freeze
+      vuln: Low      
+    - status: Paralysis
+      vuln: Low      
+    - status: Curse
+      vuln: Low      
+    - status: Silence
+      vuln: Low
+
+  recommendations:
+    - plain: Lightning damage
+    - plain: Anti-flinch
+
+  desc: >
+    Attack pattern intensifies as its HP decreases. Slightly susceptive to all status ailments. Typhoon lingers on the field for a long time; don't be caught off guard!
+  
+  moves:
+    - name: Enraged
+      targets: Any
+      isEnrage: true
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Deals lethal damage.
