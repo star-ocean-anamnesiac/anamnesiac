@@ -333,14 +333,14 @@
       lb: 5
   obtained: Mother Polyphaga (Exchange) 
 
-- name: Ivory Shooter
+- name: Ivory Bow
   cat: 'jp'
   star: 5
   picture: Ivory_Shooter
   atk: 506
   int: 511
   factors:
-    - desc: Damage dealt +20% by Black Spirit
+    - desc: Damage dealt +20% by Dark Spirit
     - desc: INT +5%
       meta:
         priority: 3
