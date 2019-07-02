@@ -1800,4 +1800,100 @@
       stock: 1
       cost: 50
       type: seed-ap 
-    
+
+
+- name: Teatime Coin
+  eventName: "Master Must Be Punished! [Josephine / Maids]"
+  icon: currency-coin-m1
+  cat: gl
+  currency: Teatime Coin
+  aliases:
+    - Josephine M1
+
+  items:
+    - name: Shion-Koshirae
+      stock: 1
+      cost: 3000
+      type: bns
+    - name: Ivory Bow
+      stock: 1
+      cost: 3000
+      type: bow
+    - name: "Military Hammer: Cap Inc."
+      stock: 5
+      cost: 1500
+      type: improvement-hammer-special
+    - name: "Military Hammer: Cap Inc."
+      stock: 5
+      cost: 2000
+      type: improvement-hammer-special    
+    - name: White Headpiece
+      stock: 3
+      cost: 7500
+      type: accessory  
+    - name: L. Limit Breaker
+      stock: 1
+      cost: 3000
+      type: improvement-limitbreak      
+    - name: AP Starseed
+      stock: 1
+      cost: 5000
+      type: seed-ap   
+    - name: 5* Weapon Ticket
+      stock: 1
+      cost: 3000
+      type: draw-ticket-weapon   
+    - name: 4-5* Char Ticket
+      stock: 3
+      cost: 2000
+      type: draw-ticket-character
+    - name: "Platinum Thread: Enhance"
+      stock: 10
+      cost: 500
+      type: improvement-thread        
+      
+    - name: "Plat. Hammer: Enhance"
+      stock: 10
+      cost: 500
+      type: improvement-hammer          
+    - name: "Gold Hammer: Enhance"
+      stock: 10
+      cost: 300
+      type: improvement-hammer  
+    - name: "Gold Hammer: Enhance"
+      stock: 0
+      cost: 900
+      type: improvement-hammer  
+    - name: Rainbow Crystal
+      stock: 3
+      cost: 1500
+      type: improvement-crystal    
+    - name: HP Starseed
+      stock: 20
+      cost: 300
+      type: seed-other
+    - name: ATK Starseed
+      stock: 20
+      cost: 300
+      type: seed-other
+    - name: INT Starseed
+      stock: 20
+      cost: 300
+      type: seed-other
+    - name: DEF Starseed
+      stock: 20
+      cost: 300
+      type: seed-other
+    - name: HIT Starseed
+      stock: 20
+      cost: 300
+      type: seed-other
+    - name: GRD Starseed
+      stock: 20
+      cost: 300
+      type: seed-other
+
+    - name: Mission Ticket
+      stock: 10
+      cost: 500
+      type: draw-ticket-mission  
