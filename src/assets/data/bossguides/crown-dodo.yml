@@ -1,8 +1,10 @@
-- name: "Crown Do Do"
+- name: "Crown Dohdoh"
   eventName: "Budding Ties on The Planet of Blossoms"
   image: crown_dodo
   cat: gl
   race: Bird
+  aliases:
+    - Avian Extermination
   
   isActive: true
 
