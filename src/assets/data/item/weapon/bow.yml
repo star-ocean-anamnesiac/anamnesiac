@@ -443,6 +443,7 @@
       lb: 3
   obtained: Gacha
 
+
 - name: Ebony Stringer
   cat: 'gl'
   star: 5
@@ -461,3 +462,21 @@
     - desc: Recovers 5% of max HP every 3 seconds
       lb: 5
   obtained: Gacha
+
+
+- name: Ivory Bow
+  cat: 'gl'
+  star: 5
+  picture: Ivory_Shooter
+  atk: 506
+  int: 511
+  factors:
+    - desc: Damage dealt +20% by Dark Spirit
+    - desc: INT +5%
+      meta:
+        priority: 3
+        buff: INT
+        buffValue: 5
+    - desc: No flinching when casting symbology
+      lb: 5
+  obtained: Josephine (Exchange)
