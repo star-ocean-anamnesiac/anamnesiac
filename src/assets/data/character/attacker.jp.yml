@@ -6265,7 +6265,7 @@
             buffValue: 100
 
   skills:
-    - name: "Pure Gyrfalcon Blade"
+    - name: "Gliding Edge"
       picture: Sylvan_Shot
       power: ATK x 180%
       ap: 13
@@ -6277,12 +6277,12 @@
       ap: 34
       maxHits: 6
       highlight: true
-    - name: "Swift Thrust"
+    - name: "Quick Thrust"
       picture: Quick_Thrust
       power: ATK x 250%
       ap: 18
       maxHits: 2
-    - name: "Thunderfire Slice"
+    - name: "Lightning Slash"
       picture: Thunderfire_Slash
       element: Lightning
       power: ATK x 360%
