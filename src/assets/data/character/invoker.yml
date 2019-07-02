@@ -2757,7 +2757,7 @@
             buffCondition: Skill Chain 3+
             buffValue: 60
     - name: "Impeccable Talent"
-      shortEffects: ATK/INT damage taken +15% after using Shadow Lamp (Enemies/10s)
+      shortEffects: ATK/INT damage taken +15% after using Shadow Flame INT(Enemies/10s)
       effects: 
         - desc: ATK/INT damage taken +15% after using Shadow Lamp
           all: Enemies
