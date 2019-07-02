@@ -470,6 +470,7 @@
       lb: 5
   obtained: Gacha
 
+
 - name: "Dragon's Blade—Dark Blood"
   cat: 'gl'
   star: 5
@@ -492,5 +493,47 @@
         priority: 1
         buff: Crit Rate
         buffValue: 15
+      lb: 5
+  obtained: Gacha
+
+
+- name: Shion-Koshirae
+  cat: 'gl'
+  star: 5
+  picture: Hayabusamaru_Shionkoshirae
+  atk: 532
+  int: 526
+  factors:
+    - desc: Damage dealt +20% by Pure Thunderfire Slice
+    - desc: Rush combo damage +10%
+      meta:
+        priority: 4
+        buff: Rush Damage
+        buffValue: 10    
+    - desc: 60% chance of suviving a lethal attack when at 20% of max HP or more
+      lb: 5
+  obtained: Josephine (Exchange)
+
+
+- name: Scale Bite
+  cat: 'gl'
+  star: 5
+  picture: Dragon_Sword_Scalebite
+  atk: 958
+  int: 959
+  factors:
+    - desc: Damage dealt to dragons +40%
+      slayer: Dragon
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Dragons
+        buffValue: 40
+    - desc: ATK damage dealt +10%
+      meta:
+        priority: 1
+        buff: ATK Damage
+        buffValue: 10     
+    - desc: Recovers 3% of max HP every 5 seconds
       lb: 5
   obtained: Gacha
