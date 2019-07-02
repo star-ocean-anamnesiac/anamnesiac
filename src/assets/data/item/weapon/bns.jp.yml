@@ -461,7 +461,7 @@
       lb: 5
   obtained: Gacha
 
-- name: "Hayabusamaru: Shionkoshirae"
+- name: Shion-Koshirae
   cat: 'jp'
   star: 5
   picture: Hayabusamaru_Shionkoshirae
@@ -470,6 +470,10 @@
   factors:
     - desc: Damage dealt +20% by Explosive Lightning Slash
     - desc: Rush combo damage +10% 
+      meta:
+        priority: 4
+        buff: Rush Damage
+        buffValue: 10
     - desc: 60% chance of suviving a lethal attack when at 20% of max HP or more
       lb: 5
   obtained: Josephine (Exchange)
