@@ -933,4 +933,21 @@
     - desc: Repel +1
   obtained: Shrouded Gaze (Achievement)
 
+- name: White Headpiece
+  cat: 'gl'
+  star: 5
+  picture: White_Brim
+  def: 728
+  factors:
+    - desc: ATK damage taken -10%
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+    - desc: HIT +10%
+      meta:
+        priority: 4
+        buff: HIT
+        buffValue: 10
+  obtained: Josephine (Achievement, Exchange, Drop)
   
