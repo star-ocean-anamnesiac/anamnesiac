@@ -6214,7 +6214,7 @@
     grd: 840
 
   talents:
-    - name: "Sharpened Frost Blade"
+    - name: "Keen Blade of Frost"
       effects: 
         - desc: ATK +20%
           all: true
@@ -6222,7 +6222,7 @@
             priority: 2
             buff: ATK
             buffValue: 20
-    - name: "Sincere Heart"
+    - name: "Pure of Heart"
       effects: 
         - desc: Single target damage +30% at short range
           all: true
@@ -6238,7 +6238,7 @@
             buff: AP Cost Reduction
             buffCondition: Long Range
             buffValue: 15
-    - name: "Crimson Plaited Cord"
+    - name: "Crimson Braid"
       effects: 
         - desc: Normal attack AP recovery +100% when HP is 100%
           all: true
@@ -6247,7 +6247,7 @@
             buff: AP Recovery
             buffCondition: HP is 100%
             buffValue: 100
-    - name: "Sharpened Frost Blade"
+    - name: "Love for Her Master"
       effects: 
         - desc: ATK +20% after using Gliding Edge (10s)
           duration: 10
@@ -6257,7 +6257,7 @@
             buffCondition: after using Gliding Edge
             buffValue: 20
         - desc: Evasion possible during air attacks
-        - desc: Damage dealt +100% by Mirror Slice when using charge assault
+        - desc: Damage dealt +100% by Mirror Slice during charge assault
           meta:
             priority: 2
             buff: Damage
@@ -6265,7 +6265,7 @@
             buffValue: 100
 
   skills:
-    - name: "Gliding Edge"
+    - name: "Pure Gyrfalcon Blade"
       picture: Sylvan_Shot
       power: ATK x 180%
       ap: 13
@@ -6277,12 +6277,12 @@
       ap: 34
       maxHits: 6
       highlight: true
-    - name: "Quick Thrust"
+    - name: "Swift Thrust"
       picture: Quick_Thrust
       power: ATK x 250%
       ap: 18
       maxHits: 2
-    - name: "Lightning Slash"
+    - name: "Thunderfire Slice"
       picture: Thunderfire_Slash
       element: Lightning
       power: ATK x 360%
