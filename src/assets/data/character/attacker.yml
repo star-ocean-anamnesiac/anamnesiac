@@ -5133,3 +5133,112 @@
           buffValue: 50
     power: ATK x 4000%
     maxHits: 8
+
+- name: Nel Zelpher (Maid)
+  cat: gl
+  picture: Main_Nel
+  weapon: bns
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15750
+    atk: 2704
+    int: 1537
+    def: 1969
+    hit: 1127
+    grd: 840
+
+  talents:
+    - name: "Keen Blade of Frost II"
+      effects: 
+        - desc: ATK +20%
+          all: true
+          meta:
+            priority: 2
+            buff: ATK
+            buffValue: 20
+    - name: "Pure of Heart II"
+      effects: 
+        - desc: Single target damage +30% at short range
+          all: true
+          meta:
+            priority: 4
+            buff: Single Target Damage
+            buffCondition: Short Range
+            buffValue: 30
+        - desc: AP cost -15% at long range
+          all: true
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffCondition: Long Range
+            buffValue: 15
+    - name: "Crimson Braid II"
+      effects: 
+        - desc: Normal attack AP recovery +100% when HP is 100%
+          all: true
+          meta:
+            priority: 2
+            buff: AP Recovery
+            buffCondition: HP is 100%
+            buffValue: 100
+    - name: "Love for Her Master"
+      effects: 
+        - desc: ATK +20% after using Pure Gyrfalcon Blade (10s)
+          duration: 10
+          meta:
+            priority: 2
+            buff: ATK
+            buffCondition: after using Pure Gyrfalcon Blade
+            buffValue: 20
+        - desc: Evasion possible during air attacks
+        - desc: Damage dealt +100% by Pure Mirror Blade during charge assault
+          meta:
+            priority: 2
+            buff: Damage
+            buffCondition: during charge assault
+            buffValue: 100
+
+  skills:
+    - name: "Pure Gyrfalcon Blade"
+      picture: Sylvan_Shot
+      power: ATK x 180%
+      ap: 13
+      maxHits: 8
+      highlight: true
+    - name: "Pure Mirror Blade"
+      picture: Mirror_Slice
+      power: ATK x 490%
+      ap: 34
+      maxHits: 6
+      highlight: true
+    - name: "Swift Thrust"
+      picture: Quick_Thrust
+      power: ATK x 250%
+      ap: 18
+      maxHits: 2
+    - name: "Pure Thunderfire Slice"
+      picture: Thunderfire_Slash
+      element: Lightning
+      power: ATK x 360%
+      ap: 29
+      maxHits: 1
+
+  rush:
+    name: "Wolf Fang Blade"
+    picture: Wolfpack_Fang_Maid_Nel
+    shortEffects: AP cost -30% and recovers 10% of max HP every 3 seconds (Self/20s)
+    effects: 
+      - desc: AP cost -30%
+        duration: 20
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 30
+      - desc: Recovers 10% of max HP every 3 seconds
+        duration: 20
+        all: true
+    power: ATK x 4500%
+    maxHits: 14
