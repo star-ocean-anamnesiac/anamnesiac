@@ -3676,7 +3676,7 @@
     grd: 833
 
   talents:
-    - name: "Shining Arrow"
+    - name: "Brilliant Start"
       effects: 
         - desc: ATK/INT damage dealt +35%
           all: true
@@ -3698,7 +3698,7 @@
             buff: Cast Time Reduction
             buffCondition: Skill Chain 3+
             buffValue: 60
-    - name: "Role Model"
+    - name: "Impeccable Talent"
       shortEffects: ATK/INT damage taken +15% after using Shadow Lamp (Enemies/10s)
       effects: 
         - desc: ATK/INT damage taken +15% after using Shadow Lamp
@@ -3711,7 +3711,7 @@
               - Enemy INT Damage Taken
             buffCondition: after using Shadow Lamp
             buffValue: 15
-    - name: "Pitch Black Outfit"
+    - name: "Black Attire"
       effects: 
         - desc: Stun rate +20% after using symbology (10s)
           duration: 10
@@ -3720,9 +3720,9 @@
             buff: Stun Rate
             buffCondition: after using symbology
             buffValue: 20
-        - desc: Additional hit that deals 10% more damage during normal attacks after using battle skills (10s)
+        - desc: Additional hit that deals 10% more damage during normal attacks after using skills (10s)
           duration: 10
-    - name: "Loyalty to Master"
+    - name: "Loyalty to Her Master"
       shortEffects: INT +20% and HP +15%
       effects: 
         - desc: INT +20%
