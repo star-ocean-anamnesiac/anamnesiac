@@ -4804,7 +4804,7 @@
   talents:
     - name: "Sacred White Dress"
       effects: 
-        - desc: "Buff effect of Impulse Force • AF increased to ATK/INT/DEF/HIT/GRD +40% when hitcount is >150"
+        - desc: "Buff effect of Impulse Force • AF increases to ATK/INT/DEF/HIT/GRD +40% when hitcount is >150"
           all: false
     - name: "A Noble's Spirit"
       effects: 
