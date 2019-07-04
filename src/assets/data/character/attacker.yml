@@ -5115,7 +5115,7 @@
   rush:
     name: "Demon Cleave"
     picture: Black_Commander_Albel
-    shortEffects: AP cost -40% (Self/20s) and DEF -50% (Enemies/20s)
+    shortEffects: AP cost -40% (Self/20s) and DEF -30% (Enemies/20s)
     effects: 
       - desc: AP cost -40%
         all: false
@@ -5124,13 +5124,13 @@
           priority: 1
           buff: AP Cost Reduction
           buffValue: 40
-      - desc: DEF -50%
+      - desc: DEF -30%
         all: Enemies
         duration: 20
         meta:
           priority: 1
           buff: Enemy DEF Reduction
-          buffValue: 50
+          buffValue: 30
     power: ATK x 4000%
     maxHits: 8
 
