@@ -3492,7 +3492,7 @@
         - desc: Hitcount timer +1
           all: true
         - desc: Single target damage +50% when not behind target and hitcount is >200
-          all: Enemies
+          all: true
           meta:
             priority: 1
             buff: Single Target Damage
