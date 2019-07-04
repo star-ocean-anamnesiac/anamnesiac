@@ -3514,7 +3514,7 @@
             buffCondition: Guarding
             buffValue: 50
         - desc: Guarding in all directions possible during charge assault standby
-        - desc: Cancel bonus starts at 150% when using charge assault standby
+        - desc: Cancel bonus starts at 150% during charge assault standby
     - name: "Friends Like Family"
       effects: 
         - desc: HP +50%
