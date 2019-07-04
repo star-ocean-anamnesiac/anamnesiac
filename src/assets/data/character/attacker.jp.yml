@@ -9079,3 +9079,112 @@
           buffValue: 50
     power: ATK x 5000%
     maxHits: 6
+
+- name: Dhaos
+  cat: jp
+  picture: Char_Placeholder_Dhaos
+  weapon: orb
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15960
+    atk: 3465
+    int: 1575
+    def: 1943
+    hit: 1127
+    grd: 847
+
+  talents:
+    - name: "Ruthless Demon King"
+      effects: 
+        - desc: ATK +1000
+          all: Attackers/Sharpshooters
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 1000
+    - name: "The Man Who Runs Time"
+      effects: 
+        - desc: Recovers 100% AP and 10% of max HP on perfect dodge
+          all: false
+        - desc: Cancel bonus of next activated skill starts at 200% following a perfect dodge
+    - name: "King of Illusions"
+      effects: 
+        - desc: ATK damage dealt +50% at short range
+          all: false
+          meta:
+            priority: 1
+            buff: ATK Damage
+            buffCondition: Short Range
+            buffValue: 50
+        - desc: AP recovery +100% at long range
+          all: false
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffCondition: Long Range
+            buffValue: 100  
+    - name: "Carrying the Prayers of the People"
+      effects:
+        - desc: ATK +30%
+          all: false
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 30
+        - desc: AP cost -15% when HP is 100%
+          all: false
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: HP is 100%
+            buffValue: 15
+        - desc: Evasion AP cost -50%
+        - desc: Evasion possible during air attacks  
+
+  skills:
+    - name: "Dhaos Collider"
+      picture: Dhaos_Collider
+      power: ATK x 820%
+      ap: 29
+      maxHits: 7
+    - name: "Thunder Blade"
+      picture: Thunder_Blade
+      element: Lightning
+      power: ATK x 450%
+      ap: 22
+      maxHits: 2
+    - name: "Tetra Assault"
+      picture: Tetra_Assault
+      power: ATK x 390%
+      ap: 17
+      maxHits: 4
+    - name: "Dhaos Laser"
+      picture: Dhaos_Laser
+      power: ATK x 930%
+      ap: 40
+      maxHits: 10    
+
+  rush:
+    name: "Super Dhaos Laser"
+    picture: Rush_Placeholder
+    shortEffects: Recovers 30% of max HP and critical hit chance +100% (Self/10s)
+    effects: 
+      - desc: Recovers 30% of max HP
+        all: false
+        duration: 10
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 30
+      - desc: Critical hit chance +100%
+        all: false
+        duration: 10
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 100
+    power: ATK x 5500%
+    maxHits: 21
