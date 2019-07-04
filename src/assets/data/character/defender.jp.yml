@@ -3465,7 +3465,7 @@
     grd: 1022
 
   talents:
-    - name: "Dignified Black Tuxedo"
+    - name: "Resplendent Black Tuxedo"
       effects: 
         - desc: HP +20%
           all: true
@@ -3481,7 +3481,7 @@
             priority: 1
             buff: HP
             buffValue: 30
-    - name: "A Grand Love"
+    - name: "Majestic Love"
       effects: 
         - desc: Single target damage +20%
           all: true
@@ -3498,7 +3498,7 @@
             buff: Single Target Damage
             buffCondition: Not behind target, Hitcount > 200
             buffValue: 50
-    - name: "Established Self-Confidence"
+    - name: "Reinforced Confidence"
       effects: 
         - desc: Recovers 20% of max HP every 3 seconds after guarding an enemy attack (30s)
         - desc: AP cost -40% after guarding an enemy attack (30s)
@@ -3514,8 +3514,8 @@
             buffCondition: Guarding
             buffValue: 50
         - desc: Guarding in all directions possible during charge assault standby
-        - desc: Cancel bonus starts at 150% during charge assault standby
-    - name: "Friends Like Family"
+        - desc: Cancel bonus starts at 150% when using charge assault
+    - name: "Friends Are Like Family"
       effects: 
         - desc: HP +50%
           meta:
