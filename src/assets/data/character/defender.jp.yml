@@ -3447,3 +3447,115 @@
           buffValue: 50
     power: ATK x 5000%
     maxHits: 3
+
+- name: Cliff Fitter (Groom)
+  cat: jp
+  picture: Char_Placeholder_Groom_Cliff
+  weapon: knuckle
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 30555
+    atk: 2520
+    int: 1523
+    def: 2508
+    hit: 854
+    grd: 1022
+
+  talents:
+    - name: "Dignified Black Tuxedo"
+      effects: 
+        - desc: HP +20%
+          all: true
+          meta:
+            priority: 4
+            buff: HP
+            buffValue: 20
+        - desc: No flinching when taking damage of 20% of max HP or less
+          all: true
+        - desc: HP +30%
+          all: Short Range Weapons
+          meta:
+            priority: 1
+            buff: HP
+            buffValue: 30
+    - name: "A Grand Love"
+      effects: 
+        - desc: Single target damage +20%
+          all: true
+          meta:
+            priority: 1
+            buff: Single Target Damage
+            buffValue: 20
+        - desc: Hitcount timer +1
+          all: true
+        - desc: Single target damage +50% when not behind target and hitcount is >200
+          all: Enemies
+          meta:
+            priority: 1
+            buff: Single Target Damage
+            buffCondition: Not behind target, Hitcount > 200
+            buffValue: 50
+    - name: "Established Self-Confidence"
+      effects: 
+        - desc: Recovers 20% of max HP every 3 seconds after guarding an enemy attack (30s)
+        - desc: AP cost -40% after guarding an enemy attack (30s)
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Guarding
+            buffValue: 40
+        - desc: ATK +50% after guarding an enemy attack (30s)
+          meta:
+            priority: 1
+            buff: ATK
+            buffCondition: Guarding
+            buffValue: 50
+        - desc: Guarding in all directions possible during charge assault standby
+        - desc: Cancel bonus starts at 150% when using charge assault standby
+    - name: "Friends Like Family"
+      effects: 
+        - desc: HP +50%
+          meta:
+            priority: 1
+            buff: HP
+            buffValue: 50
+        - desc: Nullifies charge assault critical damage penalty
+
+  skills:
+    - name: "Advance Arts"
+      picture: Skill_Placeholder
+      power: ATK x 200%
+      ap: 15
+      maxHits: 2
+    - name: "Crescent Locus"
+      picture: Crescent_Locus
+      power: ATK x 130%
+      ap: 14
+      maxHits: 4
+    - name: "Hammer of Might"
+      picture: Hammer_of_Might
+      power: ATK x 680%
+      ap: 29
+      maxHits: 1
+    - name: "Infinity Arts"
+      picture: Skill_Placeholder
+      power: ATK x 730%
+      ap: 34
+      maxHits: 3
+      
+  rush:
+    name: "Brilliant Mighty Smash"
+    picture: Rush_Placeholder
+    effects: 
+      - desc: Critical hit chance +60%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 60
+    power: ATK x 5000%
+    maxHits: 29
