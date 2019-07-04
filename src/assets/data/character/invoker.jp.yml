@@ -4669,7 +4669,7 @@
     grd: 847
 
   talents:
-    - name: One Who Knows Paradise
+    - name: "One Who Knows Paradise"
       effects: 
         - desc: Converts 50% of ATK to INT
           all: Invokers/Healers
@@ -4683,7 +4683,7 @@
             priority: 1
             buff: INT -> ATK
             buffValue: 50
-    - name: Thirst for Wisdom 
+    - name: "Thirst for Wisdom"
       shortEffects: ATK/INT damage taken +20%/+50%/+100% when hitcount is >200/>400/>800 (Enemies)
       effects: 
         - desc: ATK/INT damage taken +20% when hitcount is >200
@@ -4713,7 +4713,7 @@
               - Enemy INT Damage Taken	
             buffCondition: Hit Count > 800
             buffValue: 100
-    - name: Circle of the Time's Fabric
+    - name: "Circle of Time's Fabric"
       effects: 
         - desc: Movement speed +30%
           all: true
@@ -4725,7 +4725,7 @@
             buffValue: 50
         - desc: AP recovery increases when moving 
           all: true
-    - name: Tower That Reveals the Truth of the Universe
+    - name: "Tower That Reveals the Truth of the Universe"
       effects: 
         - desc: ATK/INT/DEF/HIT/GRD +20% when hitcount is >100 
           meta:
@@ -4784,3 +4784,126 @@
     power: INT x 4500%
     maxHits: 6
     
+- name: Mirage Koas (Bridal)
+  cat: jp
+  picture: Char_Placeholder_Bridal_Mirage
+  weapon: knuckle
+  ace: true
+  semi: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 20475
+    atk: 2704
+    int: 3230
+    def: 1930
+    hit: 1155
+    grd: 819
+
+  talents:
+    - name: "Sacred White Dress"
+      effects: 
+        - desc: "Buff effect of Impulse Force • AF increases to ATK/INT/DEF/HIT/GRD +40% when hitcount is >150"
+          all: false
+    - name: "A Noble's Spirit"
+      effects: 
+        - desc: AP recovery +50%
+          all: true
+          meta:
+            priority: 1
+            buff: AP Recovery		  
+            buffValue: 50
+        - desc: AP recovery increases while moving
+          all: true
+        - desc: Damage taken -40% when skill chain is >3
+          all: false
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction	
+            buffCondition: Skill Chain 3+
+            buffValue: 40
+        - desc: AP cost -40% when skill chain is >4
+          all: false
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain 4+
+            buffValue: 40
+    - name: "Eternally Bound"
+      effects: 
+        - desc: Nullifies charge assault critical damage penalty
+          all: false
+        - desc: Imbues attacks with lightning
+          all: false
+        - desc: Cancel bonus starts at 200% when using charge assault
+          all: false
+    - name: "Journey for a Dream"
+      effects: 
+        - desc: INT +20%
+          all: false
+          meta:
+            priority: 1
+            buff: INT
+            buffValue: 20
+        - desc: HP +30%
+          all: false
+          meta:
+            priority: 1
+            buff: HP
+            buffValue: 30
+        - desc: Evasion possible during air attacks
+          all: false
+        - desc: Damage dealt +50% by Aerial Raid when skill chain is >5
+          all: false
+
+  skills:
+    - name: "Canon Blaze • Petal"
+      picture: Skill_Placeholder
+      power: INT x 620%
+      ap: 38
+      maxHits: 3
+    - name: "Impulse Force • AF"
+      picture: Palm_of_Destruction
+      power: INT x 200%
+      ap: 20
+      notes: ATK/INT/DEF/HIT/GRD +20% (Party/10s)
+      maxHits: 1
+      meta:
+        priority: 2
+        buffs:
+          - ATK
+          - INT
+          - DEF
+          - HIT
+          - GRD
+        buffValue: 20
+    - name: "Current Knuckle • Petal"
+      picture: Current_Knuckle
+      power: INT x 460%
+      ap: 30
+      maxHits: 3
+    - name: "Aerial Raid"
+      picture: Skill_Placeholder
+      power: INT x 500%
+      ap: 33
+      maxHits: 1
+      
+  rush:
+    name: Max Destroyer
+    picture: Rush_Placeholder
+    shortEffects: Recovers 30% of max HP, and ATK/INT damage dealt +50% (Party/20s)
+    effects: 
+      - desc: Recovers 30% of max HP
+        all: true
+      - desc: ATK/INT damage dealt +50%
+        all: true
+        duration: 20
+        meta:
+          priority: 1
+          buffs:
+            - ATK Damage
+            - INT Damage			
+          buffValue: 50
+    power: INT x 5000%
+    maxHits: 18
