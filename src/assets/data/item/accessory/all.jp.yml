@@ -2097,7 +2097,7 @@
 - name: Cress's Pendant
   cat: 'jp'
   star: 5
-  picture: Cress's Pendant
+  picture: Cress's_Pendant
   def: 753
   factors:
     - desc: No flinching when skill chain is >3
