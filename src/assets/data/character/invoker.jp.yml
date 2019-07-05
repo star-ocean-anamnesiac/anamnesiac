@@ -4890,7 +4890,7 @@
       maxHits: 1
       
   rush:
-    name: Max Destroyer
+    name: E Max Destroyer
     picture: Rush_Placeholder
     shortEffects: Recovers 30% of max HP, and ATK/INT damage dealt +50% (Party/20s)
     effects: 
