@@ -2093,3 +2093,24 @@
         buffValue: 10
     - desc: 60% chance of surviving a lethal attack when at 10% of max HP or more while casting
   obtained: Shadow Dhaos / Tales of the Rays (Achievement, Drop)
+
+- name: Cress's Pendant
+  cat: 'jp'
+  star: 5
+  picture: Cress's Pendant
+  def: 753
+  factors:
+    - desc: No flinching when skill chain is >3
+    - desc: Damage taken -20% when skill chain is >3
+      meta:
+        priority: 4
+        buff: Damage Taken
+        buffCondition: Skill Chain 3+
+        buffValue: 20
+    - desc: ATK damage dealt +10% when HP is 100%
+      meta:
+        priority: 4
+        buff: ATK Damage
+        buffCondition: HP is 100
+        buffValue: 10
+  obtained: Boring Horn Blitz Reve / Tales of the Rays (Achievement, Drop)
