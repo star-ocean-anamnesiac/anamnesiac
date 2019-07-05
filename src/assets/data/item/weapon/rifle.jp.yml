@@ -404,3 +404,19 @@
         buffValue: 50
       lb: 5
   obtained: Gacha (Limited)
+
+- name: Dust Shot
+  cat: 'jp'
+  star: 4
+  picture: Placeholder_Icon
+  atk: 470
+  int: 467
+  factors:
+    - desc: Imbues attacks with earth
+      element: Earth
+    - desc: ATK +5%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 5
+  obtained: Transmutation, Gacha
