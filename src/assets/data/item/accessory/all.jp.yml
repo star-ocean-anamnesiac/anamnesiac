@@ -2002,7 +2002,7 @@
         priority: 4
         buff: HP
         buffValue: 10
-    - desc: No flinching when casting symbology or when targeted by enemy
+    - desc: No flinching when casting symbology at short range
   obtained: Crimson Dalvaros (Achievement, Drop, Exchange)
 
 - name: Crimson Necklace
@@ -2031,12 +2031,7 @@
   def: 728
   factors:
     - desc: 90% chance to nullify freeze
-    - desc: Damage taken -100% when frozen
-      meta:
-        priority: 4
-        buff: Damage Taken Reduction
-        buffCondition: Frozen
-        buffValue: 100
+    - desc: Damage taken +100% when frozen
   obtained: Iron Spiral Mechanical Snail (Exchange)
 
 - name: Unicorn Earrings
@@ -2114,3 +2109,44 @@
         buffCondition: HP is 100
         buffValue: 10
   obtained: Boring Horn Blitz Reve / Tales of the Rays (Achievement, Drop)
+
+- name: Bride's Flower Crown
+  cat: 'jp'
+  star: 5
+  picture: Placeholder_Icon
+  def: 728
+  factors:
+    - desc: INT damage dealt +10% during charge assault
+      meta:
+        priority: 4
+        buff: INT Damage
+        buffCondition: Charge Assault
+        buffValue: 10
+    - desc: No flinching during charge assault
+    - desc: ATK damage taken -15% during charge assault
+      meta:
+        priority: 4
+        buff: ATK Damage Taken
+        buffCondition: Charge Assault
+        buffValue: 15
+  obtained: Extinction Bird Honeymoon Breaker (Achievement, Drop, Draw Box, Exchange)
+
+- name: Groom's Handkerchief
+  cat: 'jp'
+  star: 5
+  picture: Placeholder_Icon
+  def: 753
+  factors:
+    - desc: ATK damage taken -15% at short range
+      meta:
+        priority: 4
+        buff: ATK Damage Taken
+        buffCondition: Short Range
+        buffValue: 15
+    - desc: Rush combo damage +15% at short range
+      meta:
+        priority: 4
+        buff: Rush Damage
+        buffCondition: Short Range
+        buffValue: 15
+  obtained: Extinction Bird Honeymoon Breaker (Achievement)
