@@ -273,7 +273,7 @@
         buffValue: 30
   obtained: Coin Exchange
 
-- name: Funeral Ghast
+- name: Funeral Ornament
   cat: 'jp'
   star: 5
   picture: Funeral_Ghast
@@ -287,7 +287,7 @@
         priority: 4
         buff: Wind Damage
         buffValue: 40          
-    - desc: AP Recovery +50%
+    - desc: AP recovery +50%
       meta:
         priority: 4
         buff: AP Recovery
@@ -303,7 +303,7 @@
   atk: 506
   int: 512
   factors:
-    - desc: Damage dealt +2o% by Heroic Spark
+    - desc: Damage dealt +20% by Heroic Spark
     - desc: Critical hit chance +10%
       meta:
         priority: 4
