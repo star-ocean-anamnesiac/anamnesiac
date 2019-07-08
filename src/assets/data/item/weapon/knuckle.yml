@@ -638,3 +638,31 @@
         buffValue: 15
       lb: 5
   obtained: Gacha
+
+- name: Coro Knuckles
+  cat: 'gl'
+  star: 5
+  picture: Koro_Koro_Knuckles
+  atk: 1112
+  int: 1107
+  factors:
+    - desc: Imbues attacks with wind
+      element: Wind
+    - desc: Wind damage dealt +20%
+      meta:
+        priority: 4
+        buff: Wind Damage
+        buffValue: 20
+    - desc: AP recovery +50%
+      meta:
+        priority: 1
+        buff: AP Recovery
+        buffValue: 50
+    - desc: Damage taken -15% at short range
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffCondition: Short Range
+        buffValue: 15
+      lb: 5
+  obtained: Gacha
