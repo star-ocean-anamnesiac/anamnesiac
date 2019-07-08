@@ -362,3 +362,26 @@
         buffValue: 20
       lb: 3
   obtained: Gacha
+
+- name: Funeral Ornament
+  cat: 'gl'
+  star: 5
+  picture: Funeral_Ghast
+  atk: 1106
+  int: 1112
+  factors:
+    - desc: Imbues attacks with wind
+      element: Wind
+    - desc: Wind damage dealt +40%
+      meta:
+        priority: 4
+        buff: Wind Damage
+        buffValue: 40          
+    - desc: AP recovery +50%
+      meta:
+        priority: 4
+        buff: AP Recovery
+        buffValue: 50
+    - desc: 80% chance of surviving a lethal attack when at 20% of max HP or more
+      lb: 5
+  obtained: Gacha
