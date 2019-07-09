@@ -9,9 +9,11 @@
 
   enrage:
     m1: "7:00"
+    m2: "4:00"
+    m3: "4:00"
     	    
   statusInflictions:
-    - Nothing
+    - None
 
   weaknesses:
     - element: Dark
@@ -30,7 +32,6 @@
 
   recommendations:
     - plain: Lightning damage
-    - plain: Anti-flinch
 
   desc: >
     Attack pattern intensifies as its HP decreases. Slightly susceptive to all status ailments. Typhoon lingers on the field for a long time; don't be caught off guard!
