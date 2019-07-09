@@ -3795,7 +3795,7 @@
     grd: 847
 
   talents:
-    - name: "Ten Wise Men's Staff Officer"
+    - name: "Wise Man's Strategy"
       effects: 
         - desc: INT +15%
           all: true
@@ -3803,7 +3803,7 @@
             priority: 4
             buff: INT
             buffValue: 15
-    - name: "Sharp Eyes and Ears"
+    - name: "Sharp and Shrewd"
       effects: 
         - desc: Converts 55% of INT to ATK
           all: Attackers/Sharpshooters/Defenders
@@ -3811,7 +3811,7 @@
             priority: 1
             buff: INT -> ATK
             buffValue: 55
-    - name: "Observational Use Prime Field"
+    - name: "Observer"
       shortEffects: Critical hit chance +20%/+40% when hitcount is >100/>200
       effects: 
         - desc: Critical hit chance +20% when hitcount is >100
@@ -3826,7 +3826,7 @@
             buff: Crit Rate
             buffCondition: Hit Count > 200
             buffValue: 40
-    - name: "Ruin of Treachery"
+    - name: "Decimating Treachery"
       effects: 
         - desc: AP cost -50% after using Magnum Tornado (10s)
           meta:
