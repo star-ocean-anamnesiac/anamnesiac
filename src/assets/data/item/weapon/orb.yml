@@ -385,3 +385,20 @@
     - desc: 80% chance of surviving a lethal attack when at 20% of max HP or more
       lb: 5
   obtained: Gacha
+
+- name: Eye of Satan
+  cat: 'gl'
+  star: 5
+  picture: Satan's_Star
+  atk: 507
+  int: 511
+  factors:
+    - desc: Damage dealt +20% by Elimination Magnum Tornado
+    - desc: Critical damage dealt +10%
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 10
+    - desc: Recovers 3% of max HP every 5 seconds
+      lb: 5
+  obtained: Dimension Chimera (Exchange)
