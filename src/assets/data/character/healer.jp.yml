@@ -2726,7 +2726,7 @@
             buff: AP Cost Reduction
             buffCondition: Short Range
             buffValue: 20
-    - name: "Glutton Stray Cat"
+    - name: "Hungry Stray"
       effects: 
         - desc: Normal attack AP recovery +100%
           meta:
@@ -2734,7 +2734,7 @@
             buff: AP Recovery From Normal Attacks
             buffValue: 100
         - desc: Recovers 100% AP on perfect dodge
-    - name: "Saint Picture Book"
+    - name: "Saint's Picture Book"
       effects: 
         - desc: Symbology cast time -80%
           meta:
