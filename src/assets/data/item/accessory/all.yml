@@ -983,3 +983,39 @@
         buffCondition: Long Range
         buffValue: 10
   obtained: Dimension Chimera (Exchange, Drop)
+
+- name: Silver Bunny Statue
+  cat: 'gl'
+  star: 5
+  picture: Silver_Bunny_Statue
+  def: 728
+  factors:
+    - desc: HP +5%
+      meta:
+        priority: 1
+        buff: HP
+        buffValue: 5
+    - desc: ATK damage taken -10%
+      meta:
+        priority: 3
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+  obtained: Big Three (Achievement, Drop)
+
+- name: Gold Bunny Statue
+  cat: 'gl'
+  star: 5
+  picture: Gold_Bunny_Statue
+  def: 753
+  factors:
+    - desc: Critical hit chance +10%
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 10
+    - desc: Rush combo damage +5%
+      meta:
+        priority: 4
+        buff: Rush Damage
+        buffValue: 10
+  obtained: Big Three (Achievement, Drop)
