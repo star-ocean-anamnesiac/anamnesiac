@@ -10,6 +10,8 @@
 
   enrage:
     m1: "7:00"
+    m2: "4:00"
+    m3: "4:00"
     	    
   statusInflictions:
     - None
