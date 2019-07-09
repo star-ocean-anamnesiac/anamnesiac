@@ -1,0 +1,46 @@
+- name: "Dimension Chimera"
+  eventName: "An Eternal Prison Unlocked"
+  image: dimension_chimera
+  cat: gl
+  race: Beast
+  aliases:
+    - dimension beast
+  
+  isActive: true
+
+  enrage:
+    m1: "7:00"
+    m2: "4:00"
+    m3: "4:00"
+    	    
+  statusInflictions:
+    - None
+
+  weaknesses:
+    - element: Wind
+      percentWeakness: 25
+
+    - status: Freeze
+      vuln: Low
+    - status: Paralysis
+      vuln: Low
+    - status: Poison
+      vuln: Low     
+      
+
+  recommendations:
+    - plain: Wind damage
+    - plain: Melee
+
+  desc: >
+    Attack pattern intensifies as its HP decreases. Susceptive to freeze and slightly susceptive to paralysis; susceptive to poison only in lower difficulties. Watch out for Hopitosis, where the Dimension Chimera will jump high and use a powerful breath attack. 
+  
+  moves:
+    - name: "Heat Up"
+      targets: Any
+      isEnrage: true
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Enrage. Deals lethal damage.
