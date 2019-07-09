@@ -720,7 +720,7 @@
         buff: Crit Rate
         buffValue: 15
         buffCondition: Not holding aggro
-  obtained: Shine Totem / Gleaming Simulacrum (Achievement)  
+  obtained: Shine Totem / Gleaming Simulacrum (Achievement), Josephine (Achievement) 
   
   
 - name: Pure White Barrette
@@ -950,4 +950,72 @@
         buff: HIT
         buffValue: 10
   obtained: Josephine (Achievement, Exchange, Drop)
-  
+
+- name: Ribbon Bow Tie
+  cat: 'gl'
+  star: 5
+  picture: Ribbon_Cross_Tie
+  def: 753
+  factors:
+    - desc: HP +10%
+      meta:
+        priority: 3
+        buff: HP
+        buffValue: 10
+    - desc: Damage dealt +5%
+      meta:
+        priority: 1
+        buff: Damage
+        buffValue: 5
+  obtained: Josephine (Achievement)
+
+- name: Dress Gloves of Decimation
+  cat: 'gl'
+  star: 5
+  picture: Dressgloves_of_Ruin
+  def: 728
+  factors:
+    - desc: Hitcount timer +0.5 seconds
+    - desc: Damage taken -10% at long range
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffCondition: Long Range
+        buffValue: 10
+  obtained: Dimension Chimera (Exchange, Drop)
+
+- name: Silver Bunny Statue
+  cat: 'gl'
+  star: 5
+  picture: Silver_Bunny_Statue
+  def: 728
+  factors:
+    - desc: HP +5%
+      meta:
+        priority: 1
+        buff: HP
+        buffValue: 5
+    - desc: ATK damage taken -10%
+      meta:
+        priority: 3
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+  obtained: Big Three (Achievement, Drop)
+
+- name: Gold Bunny Statue
+  cat: 'gl'
+  star: 5
+  picture: Gold_Bunny_Statue
+  def: 753
+  factors:
+    - desc: Critical hit chance +10%
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 10
+    - desc: Rush combo damage +5%
+      meta:
+        priority: 4
+        buff: Rush Damage
+        buffValue: 10
+  obtained: Big Three (Achievement, Drop)
