@@ -5541,7 +5541,7 @@
 - name: Reimi Saionji (Awakened)
   cat: jp
   picture: Reimi
-  weapon: gun 
+  weapon: bow 
   ace: true
   limited: false
   awakened: true 
