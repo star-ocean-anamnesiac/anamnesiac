@@ -1809,8 +1809,13 @@
   currency: Teatime Coin
   aliases:
     - Josephine M1
+    - Pet Dragon M1
 
   items:
+    - name: Teatime M2 Coin
+      stock: 0
+      cost: 200
+      type: draw-gacha     
     - name: Shion-Koshirae
       stock: 1
       cost: 3000
@@ -1847,11 +1852,11 @@
       stock: 3
       cost: 2000
       type: draw-ticket-character
+      
     - name: "Platinum Thread: Enhance"
       stock: 10
       cost: 500
       type: improvement-thread        
-      
     - name: "Plat. Hammer: Enhance"
       stock: 10
       cost: 500
@@ -1897,3 +1902,128 @@
       stock: 10
       cost: 500
       type: draw-ticket-mission  
+
+
+- name: Eternity Coin
+  eventName: "An Eternal Prison Unlocked [Dimension Chimera]"
+  icon: currency-coin-m1
+  cat: gl
+  currency: Eternity Coin
+  aliases:
+    - Dimension Chimera M1
+    - Beast Bends Space-Time M1
+    - Beast Space-Time M1
+
+  items:
+    - name: Blossom-gear Knuckles
+      stock: 1
+      cost: 3000
+      type: knuckle
+    - name: Eye of Satan
+      stock: 1
+      cost: 3000
+      type: orb
+    - name: "Eternity Hammer: Cap Inc."
+      stock: 5
+      cost: 2000
+      type: improvement-hammer-special
+    - name: "Eternity Hammer: Cap Inc."
+      stock: 5
+      cost: 2500
+      type: improvement-hammer-special    
+    - name: Dress Gloves of Decimation
+      stock: 3
+      cost: 10000
+      type: accessory  
+    - name: L. Limit Breaker
+      stock: 1
+      cost: 4000
+      type: improvement-limitbreak      
+    - name: AP Starseed
+      stock: 1
+      cost: 8000
+      type: seed-ap   
+    - name: 5* Weapon Ticket
+      stock: 1
+      cost: 3000
+      type: draw-ticket-weapon   
+    - name: 4-5* Char Ticket
+      stock: 3
+      cost: 2000
+      type: draw-ticket-character
+    - name: Platinum Ingot
+      stock: 0
+      cost: 1000
+      type: currency-ingot   
+      
+    - name: "Plat. Hammer: Enhance"
+      stock: 10
+      cost: 500
+      type: improvement-hammer          
+    - name: "Gold Hammer: Enhance"
+      stock: 10
+      cost: 300
+      type: improvement-hammer  
+    - name: "Gold Hammer: Enhance"
+      stock: 0
+      cost: 900
+      type: improvement-hammer  
+    - name: Rainbow Crystal
+      stock: 3
+      cost: 2500
+      type: improvement-crystal    
+    - name: HP Starseed
+      stock: 20
+      cost: 300
+      type: seed-other
+    - name: Component Blade & Sheath
+      stock: 1
+      cost: 13000
+      type: bns
+    - name: Component Crossbow
+      stock: 1
+      cost: 13000
+      type: gun
+    - name: Component Tome
+      stock: 1
+      cost: 13000
+      type: tome
+    - name: Component Dual Blades
+      stock: 1
+      cost: 13000
+      type: dualswords
+    - name: Component Sword
+      stock: 1
+      cost: 13000
+      type: ohs
+    - name: Component Bow
+      stock: 1
+      cost: 13000
+      type: bow
+
+- name: Misery 4 Coin
+  eventName: "Misery 4 Event"
+  icon: currency-coin-m2
+  cat: gl
+  currency: Misery 4 Coin
+  aliases:
+    - M4
+    - Supremacy
+
+  items:
+    - name: "Magic Hammer: Cap Inc."
+      stock: 1
+      cost: 1
+      type: improvement-hammer-special
+    - name: "Magic Hammer: Cap Inc."
+      stock: 1
+      cost: 1
+      type: improvement-hammer-special    
+    - name: 5* Character Ticket
+      stock: 1
+      cost: 1
+      type: draw-ticket-character  
+    - name: 5* Weapon Ticket
+      stock: 1
+      cost: 1
+      type: draw-ticket-weapon   
