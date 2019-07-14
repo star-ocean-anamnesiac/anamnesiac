@@ -1014,7 +1014,7 @@
           all: true
     - name: "Indomitable Spirit"
       effects: 
-        - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
+        - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more and targeted by enemy
           all: true
     - name: "Swordmaster's Splendor"
       effects:
@@ -2450,9 +2450,9 @@
   talents:
     - name: "Ancient Demonic Flame Dragon"
       effects: 
-        - desc: ATK +20% after using fire skill (10s)
+        - desc: ATK +20% after using a fire skill (10s)
           duration: 10
-        - desc: Fire damage dealt +20% after using ice skill (10s)
+        - desc: Fire damage dealt +20% after using an ice skill (10s)
           duration: 10
     - name: "Brimming Confidence"
       effects: 
