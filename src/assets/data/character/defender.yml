@@ -1901,7 +1901,7 @@
           all: true
     - name: "Indomitable Spirit"
       effects: 
-        - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
+        - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more and targeted by enemy
           all: true
     - name: "Swordmaster's Splendor"
       effects:
