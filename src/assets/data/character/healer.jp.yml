@@ -3655,13 +3655,13 @@
           all: true
     - name: "Crooked Glasses"
       effects: 
-        - desc: Damage dealt +15%
+        - desc: Damage taken -15%
           all: true
           meta:
             priority: 1
             buff: Damage
             buffValue: 15
-        - desc: Damage dealt +30% when HP is over 50%
+        - desc: Damage taken -30% when HP is over 50%
           all: true
           meta:
             priority: 1
