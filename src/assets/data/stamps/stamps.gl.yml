@@ -2,18 +2,21 @@
 - image: stamp_2B_enemy_dispatched
   cat: gl
   keywords:
+    - 2B
     - 2B enemy dispatched
     - enemy dispatched
 
 - image: stamp_9s_enemy_detected
   cat: gl
   keywords:
+    - 9s
     - 9s enemy detected
     - enemy detected
 
 - image: stamp_a2_come_on_let's_have_some_fun
   cat: gl
   keywords:
+    - a2
     - a2 come on let's have some fun
     - a2 come on
     - let's have some fun
@@ -109,6 +112,8 @@
 - image: stamp_blazing_ashton_time_to_get_a_little_crazy
   cat: gl
   keywords:
+    - blazing ashton
+    - bashton
     - blazing ashton time to get a little crazy
     - get a little crazy
 
@@ -123,6 +128,7 @@
 - image: stamp_bridal_clair_you're_a_lifesaver
   cat: gl
   keywords:
+    - wedding clair
     - bridal clair you're a lifesaver
     - you're a lifesaver
     - lifesaver
@@ -130,6 +136,7 @@
 - image: stamp_bridal_evelysse_i'm_a_little_clumsy_but_i_hope_you_don't_mind
   cat: gl
   keywords:
+    - wedding eve
     - bridal eve i'm a little clumsy but i hope you don't mind
     - little clumsy
     - im a little clumsy
@@ -138,30 +145,35 @@
 - image: stamp_bridal_nel_right_behind_you
   cat: gl
   keywords:
+    - wedding nel
     - bridal nel right behind you
     - behind you
 
 - image: stamp_bridal_precis_what
   cat: gl
   keywords:
+    - wedding precis
     - bridal precis what
     - what
 
 - image: stamp_bridal_reimi_please
   cat: gl
   keywords:
+    - wedding precis
     - bridal reimi please
     - please
 
 - image: stamp_bunny_ears_maria_don't_look_at_me
   cat: gl
   keywords:
+    - bunny maria
     - bunny ears maria don't look at me
     - don't look at me
 
 - image: stamp_bunny_ears_mirage_this_is_the_end
   cat: gl
   keywords:
+    - bunny mirage
     - bunny ears mirage this is the end
     - this is the end
 
@@ -174,14 +186,14 @@
 - image: stamp_butler_leon_let's_finish_this_quickly
   cat: gl
   keywords:
+    - butler leon
     - butler leon let's finish this quickly
     - let's finish this
 
 - image: stamp_celine_welcome_welcome
   cat: gl
   keywords:
-    - celine welcome welcome
-    - welcome
+    - celine welcome
 
 - image: stamp_chisato_back_me_up
   cat: gl
@@ -277,13 +289,13 @@
 - image: stamp_evelysse_i'm_here_to_save_the_day
   cat: gl
   keywords:
-    - evelysse i'm here to save the day
+    - eve i'm here to save the day
     - save the day
 
 - image: stamp_evelysse_please_follow_me
   cat: gl
   keywords:
-    - evelysse please follow me
+    - eve please follow me
     - follow me
 
 - image: stamp_everlasting_summer_miki_so_excited
@@ -296,13 +308,13 @@
 - image: stamp_everlasting_summer_myuria_pretty_please
   cat: gl
   keywords:
-    - everlasting summer myuria pretty please
+    - summer myuria pretty please
     - pretty please
 
 - image: stamp_everlasting_summer_reimi_thanks_a_lot
   cat: gl
   keywords:
-    - everlasting summer reimi thanks a lot
+    - summer reimi thanks a lot
     - thanks a lot
 
 - image: stamp_everlasting_summer_sophia_it's_all_right
@@ -347,6 +359,7 @@
   cat: gl
   keywords:
     - federation anne meow
+    - fanne meow
     - meow
 
 - image: stamp_fidel_let's_do_this
@@ -456,6 +469,7 @@
 - image: stamp_lenneth_shall_we_go
   cat: gl
   keywords:
+    - lenneth
     - lenneth shall we go
     - shall we go
 
@@ -493,6 +507,7 @@
 - image: stamp_maid_nel_welcome_to_the_club
   cat: gl
   keywords:
+    - maid nel welcome
     - maid nel welcome to the club
     - welcome to the club
 
@@ -640,6 +655,7 @@
 - image: stamp_rain_on_my_honour_as_a_grandshelt_knight
   cat: gl
   keywords:
+    - rain
     - rain on my honor as a grandshelt knight
     - rain on my honor
     - on my honor
@@ -648,6 +664,7 @@
   cat: gl
   keywords:
     - roddick rush 1
+    - ratix rush 1
     - rush 1
 
 - image: stamp_reimi_see_you_later
@@ -665,6 +682,7 @@
 - image: stamp_relia_rain_rain_go_away
   cat: gl
   keywords:
+    - relia rain
     - relia rain rain go away
     - rain go away
 
@@ -848,7 +866,8 @@
   cat: gl
   keywords:
     - youth sophia you've got yourself a follower
-    - jkjk you've got yourself
+    - youth sophia you've got
+    - jkjk you've got
     - you've got yourself
     - follower
 
