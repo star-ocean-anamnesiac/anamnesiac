@@ -36,11 +36,11 @@
     Attack pattern intensifies as its HP decreases. Slightly susceptive to all status ailments. Typhoon lingers on the field for a long time; don't be caught off guard!
   
   moves:
-    - name: Enraged
+    - name: Provoked
       targets: Any
       isEnrage: true
       m1: true
       m2: true
       m3: true
       desc: >
-        Deals lethal damage.
+        Buff. All damage taken is lethal.
