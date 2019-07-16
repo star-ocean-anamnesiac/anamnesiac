@@ -146,7 +146,7 @@
         priority: 4
         buff: Stun Rate
         buffValue: 10
-  obtained: "Shine Totem / Gleaming Simulacrum (Achievement), Eternal Queen / Predate Queen (Achievement), Lezard / Valkyrie Profile: The Purged Wizard (Exchange)"
+  obtained: "Shine Totem / Gleaming Simulacrum (Achievement), Shine Totem Anniversary Rerun (Achievement), Eternal Queen / Predate Queen (Achievement), Lezard / Valkyrie Profile: The Purged Wizard (Exchange)"
 
   notes: >
     Excellent accessory. Crit rate pre-rush is an excellent invisible damage booster (the first acc to do so) and stun rate is great when lacking either in talents. 
@@ -238,7 +238,7 @@
         priority: 4
         buff: HIT
         buffValue: 10
-  obtained: Executioner (Exchange, Drop)
+  obtained: Executioner (Exchange, Drop), Mother Virus Pod Anniversary Rerun (Achievement)
 
   notes: >
     HIT +10% for shooters, mainly Maria, a decent substitute for Snow God, and also comes with INT damage down as a bonus. Pretty decent accessory for units who can't run something else (Hawkeye, Protection).
@@ -332,7 +332,7 @@
   factors:
     - desc: Recovers 2% of max HP every 5 seconds
     - desc: 30% chance of surviving a lethal attack when at 10% of max HP or more
-  obtained: Colossal Beak (Exchange), Knight Exile / FFBE (Achievement)
+  obtained: Colossal Beak (Exchange), Knight Exile / FFBE (Achievement), Monarch Zinae Anniversary Rerun (Achievement)
 
   notes: >
     Minor regen is decent for topping up minor DMG for specific comps, like Nier-based teams. Paired with a low guts, may occasionally save you.
@@ -537,7 +537,7 @@
         buff: Damage Taken Reduction
         buffCondition: Hit Count 50+
         buffValue: 15
-  obtained: Facula (Achievement)
+  obtained: Facula (Achievement), Facula Anniversary Rerun (Achievement)
 
   notes: >
     It's quite bad, you want your defensive accessories to be consistent, this is not.
@@ -559,7 +559,7 @@
         priority: 1
         buff: Crit Damage
         buffValue: 10
-  obtained: "Facula (Achievement), Lezard + Blood Valkyrie: The Purged Wizard (Exchange)"
+  obtained: "Facula (Achievement), Facula Anniversary Rerun (Achievement), Lezard + Blood Valkyrie: The Purged Wizard (Exchange)"
 
   notes: >
     A pretty exceptional offensive accessory. Its factors wouldn't be terrible as a character talent which means it's very good for
@@ -598,7 +598,7 @@
         buff: ATK Damage
         buffValue: 10
         buffCondition: Hit Count > 200
-  obtained: Monarch Zinae (Achievement)
+  obtained: Monarch Zinae (Achievement), Monarch Zinae Anniversary Rerun (Achievement)
   
   
 - name: Extrication Ring
@@ -638,7 +638,7 @@
   factors:
     - desc: No flinching when taking damage of 5% of max HP or less
     - desc: 30% chance of surviving a lethal attack when at 10% of max HP or more
-  obtained: Lucifer (Achievement, Exchange)
+  obtained: Lucifer (Achievement, Exchange), Lucifer Anniversary Rerun (Achievement)
 
 
 - name: Combat Armlet
@@ -654,7 +654,7 @@
         buff: AP Recovery
         buffValue: 30
         buffCondition: long Range
-  obtained: Lucifer (Achievement, Exchange)
+  obtained: Lucifer (Achievement, Exchange), Lucifer Anniversary Rerun (Achievement)
 
 
 - name: Common Ring
@@ -1019,3 +1019,18 @@
         buff: Rush Damage
         buffValue: 10
   obtained: Big Three (Achievement, Drop)
+
+- name: Spring Hair Clip
+  cat: 'gl'
+  star: 5
+  picture: Spring_Coloured_Hairclip
+  def: 753
+  factors:
+    - desc: No flinching when taking damage of 15% of max HP or less at short range
+    - desc: ATK damage taken -10% at short range
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffCondition: Short Range
+        buffValue: 10
+  obtained: Dimension Beast (Achievement)
