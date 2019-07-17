@@ -5925,27 +5925,34 @@
   talents:
     - name: "Unusual Melody"
       effects: 
-        - desc: Stun rate +30%
+        - desc: Stun rate +40%
           all: true
           meta:
             priority: 1
             buff: Stun Rate
-            buffValue: 30
-        - desc: Single target damage +20%
+            buffValue: 40
+        - desc: Single target damage +30%
           all: true
           meta:
             priority: 1
             buff: Single Target Damage
-            buffValue: 20
+            buffValue: 30
+        - desc: Damage taken +20% when stunned 
+          all: Enemies
+          meta:
+            priority: 1
+            buff: Enemy Damage Taken
+            buffCondition: Stunned
+            buffValue: 20            
     - name: "Forzato Strike"
       effects:
-        - desc: AP cost -20% when skill chain is >3
+        - desc: AP cost -40% when skill chain is >3
           all: true
           meta:
             priority: 1
             buff: AP Cost Reduction
             buffCondition: Skill Chain 3+
-            buffValue: 20
+            buffValue: 40
     - name: "Soothing Flute"
       effects:
         - desc: AP recovery +50%
@@ -5954,6 +5961,12 @@
             priority: 1
             buff: AP Recovery
             buffValue: 50
+        - desc: ATK +40%
+          all: true
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffValue: 50            
     - name: "Hymn of the Late Gods"
       effects:
         - desc: Nullifies status ailments for 180 seconds
@@ -5966,7 +5979,7 @@
       maxHits: 5
     - name: "Levantine Impact"
       picture: Helmsplitter
-      power: ATK x 700%
+      power: ATK x 1050%
       ap: 50
       maxHits: 1
     - name: "Whirlwind Waltz"
@@ -5976,7 +5989,7 @@
       maxHits: 5
     - name: "Slashing Canon"
       picture: Slashing_Canon
-      power: ATK x 260%
+      power: ATK x 390%
       ap: 21
       maxHits: 2
       
@@ -5995,7 +6008,7 @@
           duration: 20
           buff: AP Cost Reduction
           buffValue: 50
-    power: ATK x 3500%
+    power: ATK x 4500%
     maxHits: 10
     
   
@@ -8905,23 +8918,23 @@
             buffValue: 100  
 
   skills:
-    - name: "Devil Sword"
+    - name: "Demon Fang"
       picture: Devil_Sword
       power: ATK x 280%
       ap: 20
       maxHits: 1
-    - name: "Tiger Fang Slash"
+    - name: "Tiger Blade"
       picture: Tiger_Fang_Slash
       power: ATK x 250%
       ap: 18
       maxHits: 2
-    - name: "Layered Talon Heaven Flash"
+    - name: "Demon Spear"
       picture: Layered_Talon_Heaven_Flash
       element: Lightning
       power: ATK x 540%
       ap: 27
       maxHits: 7
-    - name: "Thousand Devil Flurry"
+    - name: "Demonic Sword Rain"
       picture: Thousand_Devil_Flurry
       power: ATK x 500%
       ap: 25
