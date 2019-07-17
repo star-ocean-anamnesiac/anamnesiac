@@ -1,0 +1,46 @@
+- name: "Monarch Zinae"
+  eventName: "The Two-Headed Dragon and the Den [Den of Devils]"
+  image: monarch_zinae
+  cat: gl
+  race: Bird
+  aliases:
+    - Zinae
+    - Psynard
+    - Den of Devils
+  
+  isActive: true
+
+  enrage:
+    m1: "7:00"
+    m2: "7:00"
+    m3: "4:00"
+    	    
+  statusInflictions:
+    - None.
+
+  weaknesses:
+    - element: Ice
+      percentWeakness: 30
+
+    - status: Freeze
+      vuln: Low
+    - status: Silence
+      vuln: Low      
+
+  recommendations:
+    - plain: Ice damage
+    - plain: High mobility
+    - plain: Ease of stun
+
+  desc: >
+    Attack pattern intensifies as its HP decreases. Susceptive to freeze and silence. In M2 and M3 Zinae gains a strong ranged attack that sends a wall of flame across the stage; stay in front of Zinae when it is activated. Zinae's companion Nightingales will use Faerie Healing to restore its HP, so it is recommended to defeat them first!
+  
+  moves:
+    - name: Reverse Flame
+      targets: Any
+      isEnrage: true
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Any damage taken is lethal.
