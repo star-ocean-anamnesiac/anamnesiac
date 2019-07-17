@@ -1,4 +1,30 @@
+- name: Misery 4 Coin
+  eventName: "Misery 4 Event"
+  icon: currency-coin-m2
+  cat: gl
+  currency: Misery 4 Coin
+  aliases:
+    - M4
+    - Supremacy
 
+  items:
+    - name: "Magic Hammer: Cap Inc."
+      stock: 1
+      cost: 1
+      type: improvement-hammer-special
+    - name: "Magic Hammer: Cap Inc."
+      stock: 1
+      cost: 1
+      type: improvement-hammer-special    
+    - name: 5* Character Ticket
+      stock: 1
+      cost: 1
+      type: draw-ticket-character  
+    - name: 5* Weapon Ticket
+      stock: 1
+      cost: 1
+      type: draw-ticket-weapon   
+      
 - name: Return M2 Coin
   eventName: "[EVENT] Returns"
   icon: currency-coin-m2
@@ -2001,29 +2027,61 @@
       cost: 13000
       type: bow
 
-- name: Misery 4 Coin
-  eventName: "Misery 4 Event"
+
+
+- name: Eternity M2 Coin
+  eventName: "An Eternal Prison Unlocked [Dimension Chimera]"
   icon: currency-coin-m2
   cat: gl
-  currency: Misery 4 Coin
+  currency: Eternity M2 Coin
   aliases:
-    - M4
-    - Supremacy
+    - Dimension Chimera M2
+    - Beast Bends M2
+    - Beast Space-Time M2
 
   items:
-    - name: "Magic Hammer: Cap Inc."
-      stock: 1
+    - name: Eternity Coin x 70
+      stock: 0
       cost: 1
-      type: improvement-hammer-special
-    - name: "Magic Hammer: Cap Inc."
-      stock: 1
-      cost: 1
-      type: improvement-hammer-special    
+      type: draw-gacha  
+    - name: 5* Weapon Ticket
+      stock: 2
+      cost: 10
+      type: draw-ticket-weapon            
     - name: 5* Character Ticket
       stock: 1
-      cost: 1
-      type: draw-ticket-character  
-    - name: 5* Weapon Ticket
+      cost: 15
+      type: draw-ticket-character     
+    - name: L. Limit Breaker
       stock: 1
-      cost: 1
-      type: draw-ticket-weapon   
+      cost: 20
+      type: improvement-limitbreak
+    - name: "Platinum Thread: Enhance"
+      stock: 5
+      cost: 15
+      type: improvement-thread
+    - name: "Gold Thread: Enhance"
+      stock: 10
+      cost: 10
+      type: improvement-thread      
+    - name: Ra. Platinum Prism
+      stock: 0
+      cost: 5
+      type: improvement-prism
+    - name: "Platinum Thread: Enhance"
+      stock: 0
+      cost: 20
+      type: improvement-thread      
+    - name: Dress Gloves of Decimation
+      stock: 3
+      cost: 30
+      type: accessory
+    - name: Journeyman's Charm
+      stock: 3
+      cost: 30
+      type: accessory      
+
+    - name: AP Starseed
+      stock: 1
+      cost: 50
+      type: seed-ap  
