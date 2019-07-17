@@ -3052,7 +3052,6 @@
 
 - name: Aya
   cat: jp
-  rating: 1
   picture: Aya
   weapon: bow
   ace: true
@@ -3070,42 +3069,46 @@
   talents:
     - name: "Sureshot Bow"
       effects: 
-        - desc: Damage dealt +30%
+        - desc: Damage dealt +45%
           all: true
           meta:
             priority: 1
             buff: Damage
-            buffValue: 30
+            buffValue: 45
+        - desc: Additional hit that deals 5% of damage dealt by skills
+          all: false
     - name: "Stubborn Disposition"
-      shortEffects: Damage dealt +40%/+55% when hitcount is >100/>200 (Party)
       effects: 
-        - desc: Damage dealt +40% when hitcount is >100
+        - desc: Damage dealt +60% when hitcount is >100
           all: true
           meta:
             priority: 1
             buff: Damage
             buffCondition: Hit Count > 100
-            buffValue: 40
-        - desc: Damage dealt +55% when hitcount is >200
+            buffValue: 60
+        - desc: Damage dealt +75% when hitcount is >200
           all: true
           meta:
             priority: 1
             buff: Damage
             buffCondition: Hit Count > 200
-            buffValue: 55
+            buffValue: 75
+        - desc: Repel +2
+          all: false
     - name: "Moon Symbol's (Lunaglyph) Blessing"
       effects: 
         - desc: Hitcount timer +2 seconds
           all: true
     - name: "Abilities Unbefitting of a Princess"
       effects:
+        - desc: Evasion possible during air attacks
         - desc: AP cost -20% when skill chain is >3
           meta:
             priority: 1
             buff: AP Cost Reduction
             buffCondition: Skill Chain 3+
             buffValue: 20
-        - desc: ATK damage dealt +30%
+        - desc: ATK damage dealt +50%
           meta:
             priority: 1
             buff: ATK Damage
@@ -3130,7 +3133,7 @@
     - name: "Phoenix Feather"
       picture: Phoenix_Feather
       element: Fire
-      power: ATK x 460%
+      power: ATK x 880%
       ap: 33
       maxHits: 6
       
@@ -3147,7 +3150,7 @@
           priority: 1
           buff: Single Target Damage
           buffValue: 40
-    power: ATK x 3500%
+    power: ATK x 4500%
     maxHits: 2
 
 - name: Phia Melle (Crimson)
@@ -6343,24 +6346,24 @@
         - desc: Evasion possible during air attacks
 
   skills:
-    - name: "Roaring Heaven"
+    - name: "Thunder Blitz"
       picture: Skill_Placeholder
       element: Lightning
       power: ATK x 280%
       ap: 19
       maxHits: 3
-    - name: "Breakthrough"
+    - name: "Sonic Bash"
       picture: Heavenly_Flight
       element: Earth
       power: ATK x 390%
       ap: 24
       maxHits: 4
-    - name: "Squall"
+    - name: "Gale Shot"
       picture: Crimson_Squall
       power: ATK x 230%
       ap: 17
       maxHits: 9
-    - name: "Toryuu"
+    - name: "Dragon Slayer"
       picture: Skill_Placeholder
       power: ATK x 580%
       ap: 30
