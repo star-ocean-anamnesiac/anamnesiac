@@ -6370,7 +6370,7 @@
       maxHits: 5
 
   rush:
-    name: "Shinten"
+    name: "Wild Rain"
     picture: Rush_Placeholder
     effects:
       - desc: Recovers 15% of max HP every 3 seconds
