@@ -8941,7 +8941,7 @@
       maxHits: 5      
 
   rush:
-    name: "Ravaging Blade Dance"
+    name: "Final Fury"
     picture: Ravaging_Blade_Dance_Cress
     effects: 
       - desc: AP cost -40%
