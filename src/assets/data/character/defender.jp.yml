@@ -1799,7 +1799,6 @@
 
 - name: Sigmund
   cat: jp
-  rating: 4
   picture: Sigmund
   weapon: ohs
   ace: true
@@ -1818,6 +1817,7 @@
     - name: "The One Called Hero"
       effects: 
         - desc: Imbues attacks with fire and dark
+        - desc: Nullifies charge assault critical damage penalty
     - name: "Calm and Self-Possessed"
       effects: 
         - desc: HP +30%
@@ -1830,37 +1830,43 @@
           all: true
     - name: "Wounded Beast"
       effects: 
-        - desc: ATK +25%
+        - desc: ATK +40%
           all: true
           meta:
             priority: 1
             buff: ATK
-            buffValue: 25
-        - desc: ATK damage dealt +20%
+            buffValue: 40
+        - desc: ATK damage dealt +30%
           all: true
           meta:
             priority: 1
             buff: ATK Damage
-            buffValue: 20
+            buffValue: 30
     - name: "Resolution Filled Sword Strike"
-      shortEffects: Damage taken -50% and no flinching after using Grinn Valesti (1.5s)
       effects: 
-        - desc: Damage taken -50% after using Grinn Valesti (1.5s)
+        - desc: Damage taken -70% after using Grinn Valesti (1.5s)
           meta:
             priority: 4
             buff: Damage Taken Reduction
-            buffValue: 50
+            buffValue: 70
         - desc: No flinching after using Grinn Valesti (1.5s)
+        - desc: AP recovery +100%
+          all: false
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffValue: 100
+        - desc: Cancel bonus starts at 200% when using charge assault
 
   skills:
     - name: "Hrotti Range"
       picture: Glowing_Pierce
       power: ATK x 180%
-      ap: 20
+      ap: 18
       maxHits: 3
     - name: "Gram Trail"
       picture: Combo_Breaker
-      power: ATK x 420%
+      power: ATK x 520%
       ap: 28
       maxHits: 4
     - name: "Ridill Blast"
@@ -1870,14 +1876,14 @@
       maxHits: 2
     - name: "Grinn Valesti"
       picture: Grinn_Valesti
-      power: ATK x 480%
+      power: ATK x 600%
       ap: 29
       maxHits: 2
       
   rush:
     name: "Alfheim"
     picture: Alfheim_Sigmund
-    shortEffects: AP cost -40% and ATK +30% (Self/20s)
+    shortEffects: AP cost -40% and ATK +50% (Self/20s)
     effects: 
       - desc: AP cost -40%
         duration: 20
@@ -1885,13 +1891,13 @@
           priority: 4
           buff: AP Cost Reduction
           buffValue: 40
-      - desc: ATK +30%
+      - desc: ATK +50%
         duration: 20
         meta:
           priority: 4
           buff: ATK
-          buffValue: 30
-    power: ATK x 3500%
+          buffValue: 50
+    power: ATK x 4500%
     maxHits: 4
 
 
