@@ -9202,3 +9202,260 @@
           buffValue: 100
     power: ATK x 5500%
     maxHits: 21
+
+- name: Bowman
+  cat: jp
+  picture: Char_Placeholder_Bowman
+  weapon: knuckle
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15750
+    atk: 2718
+    int: 1523
+    def: 1995
+    hit: 1141
+    grd: 812
+
+  talents:
+    - name: "City Councillor"
+      effects: 
+        - desc: ATK +40%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 40
+        - desc: ATK +60% when HP is 100%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffCondition: HP is 100%
+            buffValue: 60
+    - name: "Authority of Medicine"
+      effects: 
+        - desc: Recovers 10% of max HP for all allies when using Explosion Pills
+          all: false
+        - desc: ATK/INT -20% when hit by Whirlwind Fist (Enemies/10s)
+          meta:
+            priority: 1
+            buffs: 
+              - Enemy ATK Reduction
+              - Enemy INT Reduction
+            buffCondition: after using Whirlwind Fist
+            buffValue: 20
+
+    - name: "Guardian Parent"
+      effects: 
+        - desc: 85% chance of surviving a lethal attack when taking damage of 20% of max HP or less
+          all: Attackers/Sharpshooters/Healers
+    - name: "History of the Royal Research Institute"
+      effects:
+        - desc: Damage taken -20%
+          all: false
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffValue: 20
+        - desc: AP recovery +50%
+          all: false
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffValue: 50
+        - desc: AP cost -30% when HP is 100%
+          all: false
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: HP is 100%
+            buffValue: 30
+        - desc: Damage taken +15% when poisoned
+          all: Enemies
+          meta:
+            priority: 1
+            buff: Enemy Damage Taken
+            buffCondition: Poisoned
+            buffValue: 15
+
+  skills:
+    - name: "Crescent Locus"
+      picture: Crescent_Locus
+      power: ATK x 270%
+      ap: 19
+      maxHits: 4
+    - name: "Explosion Pills"
+      picture: Skill_Placeholder
+      power: ATK x 360%
+      ap: 22
+      maxHits: 4
+    - name: "Poison Pills"
+      picture: Skill_Placeholder
+      power: ATK x 420%
+      ap: 23
+      maxHits: 4
+    - name: "Whirlwind Fist"
+      picture: Skill_Placeholder
+      power: ATK x 720%
+      ap: 34
+      maxHits: 2   
+
+  rush:
+    name: "Death Siege"
+    picture: Rush_Placeholder
+    shortEffects: Recovers 30% of max HP and ATK/INT damage taken -30% (Party/20s)
+    effects: 
+        - desc: Recovers 30% of max HP
+          all: true
+        - desc: ATK/INT damage taken -30%
+          duration: 20
+          all: true
+          meta:
+            priority: 1
+            buffs: 
+              - ATK Damage Taken Reduction
+              - INT Damage Taken Reduction
+            buffCondition: after using Whirlwind Fist
+            buffValue: 30
+    power: ATK x 4500%
+    maxHits: 15
+
+
+- name: Edge Maverick (Summer)
+  cat: jp
+  picture: Char_Placeholder_Beach_Edge
+  weapon: axe
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 18648
+    atk: 3307
+    int: 1523
+    def: 1969
+    hit: 1120
+    grd: 840
+
+  talents:
+    - name: "Star Ocean Surfer"
+      effects: 
+        - desc: Buff Effect of Fin Edge Growth increases to ATK +40% when hitcount is >200
+    - name: "Perfect Take-Off"
+      effects: 
+        - desc: Hitcount timer +1.5s
+          all: true
+        - desc: ATK damage dealt +20% when not in front of target
+          all: true
+          meta:
+            priority: 1
+            buff: ATK Damage
+            buffCondition: Not in front of target
+            buffValue: 20
+        - desc: AP cost -20% when hitcount is >50
+          all: false
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffCondition: Hitcount > 50
+            buffValue: 20
+    - name: "Tube Session"
+      effects: 
+        - desc: No flinching when attacking
+        - desc: Damage taken -30%
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffValue: 30        
+        - desc: ATK damage taken -30%
+          meta:
+            priority: 1
+            buff: ATK Damage Taken Reduction
+            buffValue: 30
+        - desc: AP recovery +150% at short range
+          all: false
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffCondition: Short Range
+            buffValue: 150
+    - name: "Yearning for the Azure Sea"
+      effects: 
+        - desc: ATK +20%
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 20
+        - desc: HP +20%
+          meta:
+            priority: 1
+            buff: HP
+            buffValue: 20
+        - desc: ATK +30% when hitcount is >300
+          meta:
+            priority: 1
+            buff: ATK
+            buffCondition: Hitcount > 300
+            buffValue: 30
+    - name: "Sight Out A / Summer Edge [MASTERY]"
+      effects: 
+        - desc: Nullifies charge assault critical damage penalty
+        - desc: Cancel bonus starts at 150% when using charge assault
+        - desc: Critical hit chance +30% when not in front of target
+          all: false
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: Not in front of target
+            buffValue: 30
+
+  skills:
+    - name: "Cutback Raise"
+      picture: Skill_Placeholder
+      element: Ice
+      power: ATK x 220%
+      ap: 14
+      maxHits: 6
+    - name: "Fin Edge Growth"
+      picture: Skill_Placeholder
+      power: ATK x 270%
+      ap: 28
+      maxHits: 10
+      notes: ATK +20% (Party/10s)
+      meta:
+        priority: 2
+        buff: ATK
+        buffValue: 20
+    - name: "Vortex Airborne"
+      picture: Skill_Placeholder
+      power: ATK x 1020%
+      ap: 46
+      maxHits: 8
+    - name: "Top-turn Slide"
+      picture: Skill_Placeholder
+      element: Ice
+      power: ATK x 990%
+      ap: 38
+      maxHits: 9
+
+  rush:
+    name: "Aerial Billows"
+    picture: Rush_Placeholder
+    element: Ice
+    shortEffects: Recovers 15% of max HP every 3 seconds  and ATK +80% (Self/20s)
+    effects: 
+      - desc: Recovers 15% of max HP every 3 seconds
+        duration: 20
+      - desc: ATK +80%
+        all: false
+        duration: 20
+        meta:
+          priority: 1
+          buff: ATK
+          buffValue: 80
+    power: ATK x 5000%
+    maxHits: 4
+
