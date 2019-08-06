@@ -9422,8 +9422,8 @@
     - name: "Fin Edge Growth"
       picture: Skill_Placeholder
       power: ATK x 270%
-      ap: 28
-      maxHits: 10
+      ap: 20
+      maxHits: 2
       notes: ATK +20% (Party/10s)
       meta:
         priority: 2
