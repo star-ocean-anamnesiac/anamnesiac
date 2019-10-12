@@ -3583,11 +3583,11 @@
     grd: 1043
 
   talents:
-    - name: Overworked and Acceptable
+    - name: "Overworked and Acceptable"
       effects:
         - desc: Single target damage +30%, +45% / 55% at 300, 500 Hit Count
           all: false
-    - name: Actreeslike Hat
+    - name: "Actreeslike Hat"
       effects:
         - desc: AP Consumption -20% / -40% at 200, 400 Hit Count
           all: true
@@ -3597,7 +3597,7 @@
             priority: 1
             buff: ATK Damage
             buffValue: 5
-    - name: Vacation Fingers South
+    - name: "Vacation Fingers South"
       effects:
         - desc: Damage taken -20% / -40% at 300, 500 Hit Count
           meta:
@@ -3606,35 +3606,35 @@
             buffValue: 40
         - desc: Anti Flinch 25%Hp
           all: true
-    - name: New Possibilities of Surgery
+    - name: "New Possibilities of Surgery"
       effects:
         - desc: Dodge Midair
-        - desc: Fully recover ap upon a perfect evasion
+        - desc: Fully recover AP upon a perfect evasion
 
   skills:
-    - name: Shark Edge
+    - name: "Shark Edge"
       picture: Skill_Placeholder
       power: ATK x 200%
       ap: 16
       maxHits: 2
-    - name: Death Flash
+    - name: "Death Flash"
       picture: Skill_Placeholder
       power: ATK x 220%
       ap: 19
       maxHits: 2
-    - name: Unholly Maelstrom
+    - name: "Unholly Maelstrom"
       picture: Skill_Placeholder
       power: ATK x 840%
       ap: 32
       maxHits: 3
-    - name: Scrapper Gyro in Disguise
+    - name: "Scrapper Gyro in Disguise"
       picture: Skill_Placeholder
       power: ATK x 1080%
       ap: 38
       maxHits: 12
 
   rush:
-    name: Cerulean Whirlwind
+    name: "Cerulean Whirlwind"
     picture: Rush_Placeholder
     element: Ice
     shortEffects: ATK Damage 60% (Party/20s)
