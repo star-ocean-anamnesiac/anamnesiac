@@ -3595,7 +3595,7 @@
           all: true
           meta:
             priority: 1
-            buff: ATK Damage
+            buff: ATK DMG
             buffValue: 5
     - name: Vacation Fingers South
       effects:
