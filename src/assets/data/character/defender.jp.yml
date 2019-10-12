@@ -3566,7 +3566,6 @@
     power: ATK x 5000%
     maxHits: 29
 
-
 - name: Nel Zelpher (Summer)
   cat: jp
   picture: Char_Placeholder_Summer_Nel
@@ -3584,11 +3583,11 @@
   talents:
   - name: Overworked and Acceptable
     effects:
-    - desc: Single target damage +30%, +45% / 55% at 300, 500 Hit count
+    - desc: Single target damage +30%, +45% / 55% at 300, 500 Hit Count
       all: false
-  - name: Actreeslike hat
+  - name: Actreeslike Hat
     effects:
-    - desc: AP Consumption -20% / -40% at 200, 400 Hit count
+    - desc: AP Consumption -20% / -40% at 200, 400 Hit Count
       all: true
     - desc: Skill Doublehit 5%
       all: true
@@ -3598,7 +3597,7 @@
         buffValue: 5
   - name: Vacation Fingers South
     effects:
-    - desc: Damage taken -20% / -40% at 300, 500 Hit count
+    - desc: Damage taken -20% / -40% at 300, 500 Hit Count
       meta:
         priority: 1
         buff: Damage Taken Reduction
@@ -3607,29 +3606,29 @@
       all: true
   - name: New Possibilities of Surgery
     effects:
-    - desc: Dodge midair
+    - desc: Dodge Midair
     - desc: Fully recover ap upon a perfect evasion
   skills:
   - name: Shark Edge
     picture: Skill_Placeholder
     power: ATK x 200%
-    ap: 0
-    maxHits: 0
+    ap: 16
+    maxHits: 2
   - name: Death Flash
     picture: Skill_Placeholder
     power: ATK x 220%
-    ap: 0
-    maxHits: 0
+    ap: 19
+    maxHits: 2
   - name: Unholly Maelstrom
     picture: Skill_Placeholder
     power: ATK x 840%
-    ap: 0
-    maxHits: 0
+    ap: 32
+    maxHits: 3
   - name: Scrapper Gyro in Disguise
     picture: Skill_Placeholder
     power: ATK x 1080%
-    ap: 0
-    maxHits: 0
+    ap: 38
+    maxHits: 12
   rush:
     name: Cerulean Whirlwind
     picture: Rush_Placeholder
