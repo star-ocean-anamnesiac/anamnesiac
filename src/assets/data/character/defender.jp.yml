@@ -3570,7 +3570,7 @@
 - name: Nel Zelpher (Summer)
   cat: jp
   picture: Char_Placeholder_Summer_Nel
-  weapon: Scythe
+  weapon: scythe
   ace: true
   limited: true
   star: 5
@@ -3582,7 +3582,7 @@
     hit: 833
     grd: 1043
   talents:
-  - name: Overworked and acceptable
+  - name: Overworked and Acceptable
     effects:
     - desc: Single target damage +30%, +45% / 55% at 300, 500 Hit count
       all: false
@@ -3596,7 +3596,7 @@
         priority: 1
         buff: ATK Damage
         buffValue: 5
-  - name: Vacation fingers South
+  - name: Vacation Fingers South
     effects:
     - desc: Damage taken -20% / -40% at 300, 500 Hit count
       meta:
@@ -3605,29 +3605,29 @@
         buffValue: 40
     - desc: Anti Flinch 25%Hp
       all: true
-  - name: New possibilities of surgery
+  - name: New Possibilities of Surgery
     effects:
     - desc: Dodge midair
     - desc: Fully recover ap upon a perfect evasion
   skills:
   - name: Shark Edge
     picture: Skill_Placeholder
-    power: ''
+    power: ATK x 200%
     ap: 0
     maxHits: 0
   - name: Death Flash
     picture: Skill_Placeholder
-    power: ''
+    power: ATK x 220%
     ap: 0
     maxHits: 0
   - name: Unholly Maelstrom
     picture: Skill_Placeholder
-    power: ''
+    power: ATK x 840%
     ap: 0
     maxHits: 0
-  - name: Scrapper Gyro in disguise
+  - name: Scrapper Gyro in Disguise
     picture: Skill_Placeholder
-    power: ''
+    power: ATK x 1080%
     ap: 0
     maxHits: 0
   rush:
