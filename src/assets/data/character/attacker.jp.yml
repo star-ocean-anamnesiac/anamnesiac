@@ -9326,7 +9326,7 @@
 
 - name: Edge Maverick (Summer)
   cat: jp
-  picture: Summer_Edge
+  picture: Char_Placeholder_Beach_Edge
   weapon: axe
   ace: true
   limited: true
