@@ -3573,7 +3573,7 @@
   ace: true
   limited: true
   star: 5
-  
+
   stats:
     hp: 21840
     atk: 2482
@@ -3581,7 +3581,7 @@
     def: 2336
     hit: 833
     grd: 1043
-    
+
   talents:
     - name: Overworked and Acceptable
       effects:
@@ -3595,7 +3595,7 @@
           all: true
           meta:
             priority: 1
-            buff: ATK DMG
+            buff: ATK Damage
             buffValue: 5
     - name: Vacation Fingers South
       effects:
@@ -3610,7 +3610,7 @@
       effects:
         - desc: Dodge Midair
         - desc: Fully recover ap upon a perfect evasion
-    
+
   skills:
     - name: Shark Edge
       picture: Skill_Placeholder
@@ -3632,21 +3632,21 @@
       power: ATK x 1080%
       ap: 38
       maxHits: 12
-    
+
   rush:
     name: Cerulean Whirlwind
     picture: Rush_Placeholder
     element: Ice
-    shortEffects: ATK DMG 60% (Party/20s)
+    shortEffects: ATK Damage 60% (Party/20s)
     effects:
       - desc: Recovers 15% of max HP every 3 seconds
         duration: 20
-      - desc: ATK DMG +60%
+      - desc: ATK Damage +60%
         all: true
         duration: 20
         meta:
           priority: 1
-          buff: ATK DMG
+          buff: ATK Damage
           buffValue: 60
     power: ATK x 4500%
     maxHits: 11
