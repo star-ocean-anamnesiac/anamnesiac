@@ -3565,3 +3565,88 @@
           buffValue: 60
     power: ATK x 5000%
     maxHits: 29
+
+- name: Nel Zelpher (Summer)
+  cat: jp
+  picture: Char_Placeholder_Beach_Nel
+  weapon: scythe
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 21840
+    atk: 2482
+    int: 1549
+    def: 2336
+    hit: 833
+    grd: 1043
+
+  talents:
+    - name: Overworked and Acceptable
+      effects:
+        - desc: Single target damage +30%, +45% / 55% at 300, 500 Hit Count
+          all: false
+    - name: Actreeslike Hat
+      effects:
+        - desc: AP Consumption -20% / -40% at 200, 400 Hit Count
+          all: true
+        - desc: Skill Doublehit 5%
+          all: true
+          meta:
+            priority: 1
+            buff: ATK Damage
+            buffValue: 5
+    - name: Vacation Fingers South
+      effects:
+        - desc: Damage taken -20% / -40% at 300, 500 Hit Count
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffValue: 40
+        - desc: Anti Flinch 25%Hp
+          all: true
+    - name: New Possibilities of Surgery
+      effects:
+        - desc: Dodge Midair
+        - desc: Fully recover ap upon a perfect evasion
+
+  skills:
+    - name: Shark Edge
+      picture: Skill_Placeholder
+      power: ATK x 200%
+      ap: 16
+      maxHits: 2
+    - name: Death Flash
+      picture: Skill_Placeholder
+      power: ATK x 220%
+      ap: 19
+      maxHits: 2
+    - name: Unholly Maelstrom
+      picture: Skill_Placeholder
+      power: ATK x 840%
+      ap: 32
+      maxHits: 3
+    - name: Scrapper Gyro in Disguise
+      picture: Skill_Placeholder
+      power: ATK x 1080%
+      ap: 38
+      maxHits: 12
+
+  rush:
+    name: Cerulean Whirlwind
+    picture: Rush_Placeholder
+    element: Ice
+    shortEffects: ATK Damage 60% (Party/20s)
+    effects:
+      - desc: Recovers 15% of max HP every 3 seconds
+        duration: 20
+      - desc: ATK Damage +60%
+        all: true
+        duration: 20
+        meta:
+          priority: 1
+          buff: ATK Damage
+          buffValue: 60
+    power: ATK x 4500%
+    maxHits: 11
