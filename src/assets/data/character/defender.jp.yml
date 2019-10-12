@@ -3607,9 +3607,9 @@
         - desc: Anti Flinch 25%Hp
           all: true
     - name: New Possibilities of Surgery
-    effects:
-    - desc: Dodge Midair
-    - desc: Fully recover ap upon a perfect evasion
+      effects:
+        - desc: Dodge Midair
+        - desc: Fully recover ap upon a perfect evasion
     
   skills:
     - name: Shark Edge
