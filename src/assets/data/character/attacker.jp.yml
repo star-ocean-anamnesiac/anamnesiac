@@ -9502,16 +9502,16 @@
             buffValue: 20
     - name: "The Secret of Watermelon Splitting"
       effects:
-        - desc: ATK +30% (10 sec) When CAing from long range to close range
+        - desc: ATK +30% (10 sec) When charge assault from long range to close range
     - name: "Lost Child's Meditation"
       effects:
         - desc: Immediate Chaser's Skill damage +50% at SC 4+
-        - desc: CA combos starts at 150%
+        - desc: Charge assault combos starts at 150%
     - name: "Vanguard / Summer Tika [MASTERY]"
       effects:
-        - desc: Nullifies CA critical damage penalty
-        - desc: Damage Taken -100% when CAing from long range to short range
-        - desc: ATK Damage +20% (3 sec) when CAing from long range to short range
+        - desc: Nullifies charge assault critical damage penalty
+        - desc: Damage Taken -100% when charge assault from long range to short range
+        - desc: ATK Damage +20% (3 sec) when charge assault from long range to short range
           all: false
 
   skills:
@@ -9543,13 +9543,14 @@
     element: Ice
     shortEffects: Critical hit chance +50% (Party/20s) and Hit count starts at 100
     effects:
-      - desc: HIT Count starts at 100
+      - desc: Hit count starts at 100
       - desc: Critical hit chance +50% (Party/20s)
         all: true
         duration: 20
         meta:
           priority: 1
-          buff: Crit rate
+          buff: Crit Rate
           buffValue: 50
     power: ATK x 4500%
     maxHits: 2
+
