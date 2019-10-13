@@ -9459,3 +9459,98 @@
     power: ATK x 5000%
     maxHits: 4
 
+- name: Tika (Summer)
+  cat: jp
+  picture: Char_Placeholder_Beach_Tika
+  weapon: dualswords
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15750
+    atk: 2835
+    int: 1549
+    def: 1825
+    hit: 1141
+    grd: 847
+
+  talents:
+    - name: "Dreaming Family Trip"
+      effects:
+        - desc: ATK +45%, 60%, 70% at 0, 150, 250 HIT (party)
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffCondition: Hit Count > 250
+            buffValue: 70
+    - name: "Camellia Flower to Attach to Hair"
+      effects:
+        - desc: AP Recovery +50%
+          all: true
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffValue: 50
+        - desc: AP Cost -20%
+          all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Long Range
+            buffValue: 20
+    - name: "The Secret of Watermelon Splitting"
+      effects:
+        - desc: ATK +30% (10 sec) When charge assault from long range to close range
+    - name: "Lost Child's Meditation"
+      effects:
+        - desc: Immediate Chaser's Skill damage +50% at SC 4+
+        - desc: Charge assault combos starts at 150%
+    - name: "Vanguard / Summer Tika [MASTERY]"
+      effects:
+        - desc: Nullifies charge assault critical damage penalty
+        - desc: Damage Taken -100% when charge assault from long range to short range
+        - desc: ATK Damage +20% (3 sec) when charge assault from long range to short range
+          all: false
+
+  skills:
+    - name: "Wave Shaver"
+      picture: Skill_Placeholder
+      power: ATK x 320%
+      ap: 21
+      maxHits: 3
+    - name: "Splash Blade"
+      picture: Skill_Placeholder
+      element: Fire
+      power: ATK x 350%
+      ap: 23
+      maxHits: 2
+    - name: "Immediate Chaser"
+      picture: Skill_Placeholder
+      power: ATK x 730%
+      ap: 31
+      maxHits: 8
+    - name: "Floater Ring"
+      picture: Skill_Placeholder
+      power: ATK x 170%
+      ap: 15
+      maxHits: 4
+
+  rush:
+    name: "Watermelon Smash"
+    picture: Rush_Placeholder
+    element: Ice
+    shortEffects: Critical hit chance +50% (Party/20s) and Hit count starts at 100
+    effects:
+      - desc: Hit count starts at 100
+      - desc: Critical hit chance +50% (Party/20s)
+        all: true
+        duration: 20
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 50
+    power: ATK x 4500%
+    maxHits: 2
+
