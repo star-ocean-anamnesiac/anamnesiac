@@ -232,3 +232,26 @@
         buffValue: 15
       lb: 5
   obtained: Gacha
+
+- name: Shadow Blade Twilight
+  cat: 'jp'
+  star: 5
+  picture: Shadow_Blade_Twilight
+  atk: 1259
+  int: 1262
+  factors:
+    - desc: Imbues attacks with earth
+      element: Earth
+    - desc: Earth damage dealt +40%
+      meta:
+        priority: 4
+        buff: Ice Damage
+        buffValue: 40
+    - desc: Critical chance +30% at Hit count > 100
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 30
+    - desc: Hit count timer +3
+      lb: 5
+  obtained: Gacha
