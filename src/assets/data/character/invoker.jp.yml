@@ -5019,3 +5019,81 @@
           buffValue: 80
     power: INT x 5000%
     maxHits: 9
+
+- name: Adray Lasbard
+  cat: jp
+  picture: Adray_Lasbard
+  weapon: bns
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 31710
+    atk: 2718
+    int: 2639
+    def: 1995
+    hit: 1120
+    grd: 833
+
+  talents:
+    - name: "Dad's Majesty"
+      effects:
+        - desc: INT +40%, INT +60% when Adray has aggro
+          all: true
+          meta:
+            priority: 1
+            buff: INT
+            buffValue: 60
+    - name: "Gift of Training"
+      effects:
+        - desc: Anti flinch when damage taken < 40% max HP when Adray has aggro (party)
+        - desc: Imune to burn (party/ 180 sec)
+    - name: "Lifetime Active"
+      effects:
+        - desc: Cast time -90% at close range
+        - desc: HP recovery 5% during skill animation
+    - name: "Holy Kingdom Guardian"
+      effects:
+        - desc: Aggro +5
+        - desc: HP +100%
+
+  skills:
+    - name: "Titan Fist"
+      picture: Skill_Placeholder
+      element: Earth
+      power: INT x 760%
+      ap: 24
+      maxHits: 1
+    - name: "Countless Ice Needle"
+      picture: Skill_Placeholder
+      element: Ice
+      power: INT x 240%
+      ap: 17
+      maxHits: 9
+    - name: "Earth Grave"
+      picture: Skill_Placeholder
+      element: Earth
+      power: INT x 200%
+      ap: 15
+      maxHits: 5
+    - name: "Emotion Torrent"
+      picture: Skill_Placeholder
+      element: Ice
+      power: INT x 1450%
+      ap: 52
+      maxHits: 4
+
+  rush:
+    name: "Spicule"
+    picture: Rush_Placeholder
+    effects:
+      - desc: DMG dealt + 100% (self), +80% (party)
+        all: true
+        duration: 20
+        meta:
+          priority: 1
+          buff: Damage
+          buffValue: 80
+    power: INT x 4500%
+    maxHits: 10
