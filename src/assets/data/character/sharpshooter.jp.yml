@@ -6378,3 +6378,78 @@
         duration: 20
     power: ATK x 4500%
     maxHits: 12
+
+- name: Caleen Keemosn (Summer)
+  cat: jp
+  picture: Summer_Caleen
+  weapon: rifle
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15540
+    atk: 2508
+    int: 1549
+    def: 1549
+    hit: 1246
+    grd: 952
+
+  talents:
+    - name: "First Swimsuit"
+      effects:
+        - desc: Damage dealt +45%, +65%, 75% at 0, 150, 300 Hit
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Hit Count > 300
+            buffValue: 75
+    - name: "Ears of Shame"
+      effects:
+        - desc: Able to air dodge
+        - desc: Hit count timer +3s and Assist use +1
+          all: true
+    - name: "Ribbon Wrapped Around Wrist"
+      effects:
+        - desc: No Flinching, damage taken-20% at skill chain > 2
+        - desc: ATK damage taken -30% while attacking
+        - desc: AP cost -40% at skill chain > 3
+    - name: "Wadasumi's Coat of Arms"
+      effects:
+        - desc: Critical chance +50% at skill chain > 4
+        - desc: HP Recovery 2% from Gunshot Dance skill damage at skill chain > 5
+
+  skills:
+    - name: "Soul Mortar"
+      picture: Skill_Placeholder
+      power: ATK x 190%
+      ap: 14
+      maxHits: 5
+    - name: "Group Gun"
+      picture: Skill_Placeholder
+      power: ATK x 310%
+      ap: 21
+      maxHits: 7
+    - name: "Spear Gun"
+      picture: Skill_Placeholder
+      element: Ice
+      power: ATK x 330%
+      ap: 27
+      maxHits: 1
+    - name: "Evening Canon"
+      picture: Skill_Placeholder
+      power: ATK x 850%
+      ap: 37
+      maxHits: 5
+
+  rush:
+    name: "Ice Cave"
+    picture: Rush_Placeholder
+    element: Ice
+    effects:
+      - desc: AP cost -50%
+        all: true
+        duration: 20
+    power: ATK x 4500%
+    maxHits: 12
