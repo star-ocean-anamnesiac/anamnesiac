@@ -9478,7 +9478,7 @@
   talents:
     - name: "Dreaming Family Trip"
       effects:
-        - desc: ATK +45%, 60%, 70% at 0, 150, 250 HIT (party)
+        - desc: ATK +45%, 60%, 70% at 0, 150, 250 HIT
           all: true
           meta:
             priority: 1

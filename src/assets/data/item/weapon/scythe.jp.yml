@@ -237,8 +237,8 @@
   cat: 'jp'
   star: 5
   picture: Shadow_Blade_Twilight
-  atk: 1259
-  int: 1262
+  atk: 1260
+  int: 1259
   factors:
     - desc: Imbues attacks with earth
       element: Earth
