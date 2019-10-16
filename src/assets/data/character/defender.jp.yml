@@ -3456,7 +3456,7 @@
 
 - name: Cliff Fitter (Groom)
   cat: jp
-  picture: Char_Placeholder_Groom_Cliff
+  picture: Groom_Cliff
   weapon: knuckle
   ace: true
   limited: true
