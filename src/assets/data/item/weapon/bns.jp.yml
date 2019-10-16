@@ -634,7 +634,7 @@
         priority: 4
         buff: Earth Damage
         buffValue: 40
-    - desc: ATK and INT damage +30 at close range
+    - desc: ATK and INT damage +30% at close range
       meta:
         priority: 4
         buff: INT Damage
