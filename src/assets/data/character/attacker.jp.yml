@@ -9461,7 +9461,7 @@
 
 - name: Tika (Summer)
   cat: jp
-  picture: Summer_Adult_Tika
+  picture: Summer_Tika
   weapon: dualswords
   ace: true
   limited: true
