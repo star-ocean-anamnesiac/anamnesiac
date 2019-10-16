@@ -9096,7 +9096,7 @@
 
 - name: Dhaos
   cat: jp
-  picture: Char_Placeholder_Dhaos
+  picture: Dhaos
   weapon: orb
   ace: true
   limited: true
@@ -9205,7 +9205,7 @@
 
 - name: Bowman
   cat: jp
-  picture: Char_Placeholder_Bowman
+  picture: Bowman
   weapon: knuckle
   ace: true
   limited: true
@@ -9326,7 +9326,7 @@
 
 - name: Edge Maverick (Summer)
   cat: jp
-  picture: Char_Placeholder_Beach_Edge
+  picture: Summer_Edge
   weapon: axe
   ace: true
   limited: true
