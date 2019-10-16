@@ -4786,7 +4786,7 @@
     
 - name: Mirage Koas (Bridal)
   cat: jp
-  picture: Char_Placeholder_Bridal_Mirage
+  picture: Bridal_Mirage
   weapon: knuckle
   ace: true
   semi: true
