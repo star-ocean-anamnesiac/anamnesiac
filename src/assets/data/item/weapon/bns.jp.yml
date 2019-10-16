@@ -620,3 +620,25 @@
     - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
       lb: 3
   obtained: Gacha
+
+- name: Red Jade Dragon
+  cat: 'jp'
+  star: 5
+  picture: Red_Jade_Dragon
+  atk: 1257
+  int: 1263
+  factors:
+    - desc: Imbues attacks with earth, earth damage dealt +40%
+      element: Earth
+      meta:
+        priority: 4
+        buff: Earth Damage
+        buffValue: 40
+    - desc: ATK and INT damage +30% at close range
+      meta:
+        priority: 4
+        buff: INT Damage
+        buffValue: 30
+    - desc: Critical chance +15%
+      lb: 5
+  obtained: Gacha

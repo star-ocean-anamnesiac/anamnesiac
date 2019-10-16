@@ -192,3 +192,21 @@
     - desc: Absorbs 10% of damage dealt by normal attacks as HP
       lb: 3
   obtained: Gacha
+
+- name: Piercing Launcher Drill Cannon
+  cat: 'jp'
+  star: 5
+  picture: Piercing_Launcher_Drill_Cannon
+  atk: 1257
+  int: 1256
+  factors:
+    - desc: Imbues attacks with earth, earth damage dealt +40%
+      element: Earth
+      meta:
+        priority: 4
+        buff: Earth Damage
+        buffValue: 20
+    - desc: Rush Combo +40% at 100% HP
+    - desc: HP recovery +10% / 3sec
+      lb: 5
+  obtained: Gacha
