@@ -420,3 +420,25 @@
         buff: ATK
         buffValue: 5
   obtained: Transmutation, Gacha
+
+- name: Flower Cannon - Hibiscus
+  cat: 'jp'
+  star: 5
+  picture: Flower_Cannon_Hibiscus
+  atk: 1266
+  int: 1255
+  factors:
+    - desc: Imbues attacks with earth, earth damage dealt +40%
+      element: Earth
+      meta:
+        priority: 4
+        buff: Earth Damage
+        buffValue: 40
+    - desc: ATK damage +50% at skill chain > 3
+      meta:
+        priority: 4
+        buff: ATK Damage
+        buffValue: 50
+    - desc: AP recovery +100% when HP 100%
+      lb: 5
+  obtained: Gacha
