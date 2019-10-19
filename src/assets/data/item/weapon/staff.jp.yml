@@ -852,25 +852,3 @@
     - desc: AP cost -20% (long range)
       lb: 5
   obtained: Gacha
-
-- name: Holy Rose Tusk
-  cat: 'jp'
-  star: 5
-  picture: Holy_Rose_Tusk
-  atk: 1257
-  int: 1264
-  factors:
-    - desc: Light damage dealt +50%
-      meta:
-        priority: 4
-        buff: Light Damage
-        buffValue: 50
-    - desc: Light damage dealt +80% at 100% HP
-      meta:
-        priority: 4
-        buff: Light Damage
-        buffCondition: Long Range
-        buffValue: 80
-    - desc: ATK / INT damage taken -30% (while attacking/ casting)
-      lb: 5
-  obtained: Gacha
