@@ -835,20 +835,3 @@
         buffValue: 30
       lb: 5
   obtained: Gacha (Limited)
-
-- name: Thunder Cane - Cyclops Sight
-  cat: 'jp'
-  star: 5
-  picture: Thunder_Cane_Cyclops_Sight
-  atk: 1258
-  int: 1260
-  factors:
-    - desc: Thunder damage dealt +60%
-      meta:
-        priority: 4
-        buff: Thunder Damage
-        buffValue: 60
-    - desc: Guts 90/10
-    - desc: AP cost -20% (long range)
-      lb: 5
-  obtained: Gacha
