@@ -848,7 +848,7 @@
         priority: 4
         buff: Thunder Damage
         buffValue: 60
-    - desc: 90/10 Guts
+    - desc: Guts 90/10
     - desc: AP cost -20% (long range)
       lb: 5
   obtained: Gacha
