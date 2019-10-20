@@ -5097,3 +5097,99 @@
           buffValue: 80
     power: INT x 4500%
     maxHits: 10
+
+- name: Erys Jerand
+  cat: jp
+  picture: Erys_Jerand
+  weapon: staff
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15225
+    atk: 1537
+    int: 3276
+    def: 1327
+    hit: 1071
+    grd: 840
+
+  talents:
+    - name: "Real Figure"
+      effects:
+        - desc: Convert 40% of ATK to INT (Casters, Healers)
+          all: Healers/Invokers
+          meta:
+            priority: 1
+            buff: ATK -> INT
+            buffValue: 40
+        - desc: Convert 40% of INT to ATK (Attackers, Shooters, Defenders)
+          all: Attackers/Shooters/Defenders
+          meta:
+            priority: 1
+            buff: INT -> ATK
+            buffValue: 40
+    - name: "Blood Painted Past"
+      effects:
+        - desc: Enemies DEF -30 when hit by Acid Rain - Light(15 sec)
+        - desc: At skill chain > 3, HP recovery 5% on Energy Arrow durrung attacking
+    - name: "Death Wings"
+      effects:
+        - desc: Rush damage +40% when HP is 100%
+          all: false
+          meta:
+            priority: 1
+            buff: Rush Damage
+            buffCondition: HP is 100%
+            buffValue: 40
+        - desc: At skill chain > 3, Star Light and Luna Light skill damage+50%
+    - name: "New Way of Life"
+      effects:
+        - desc: INT +20% HP +25%
+        - desc: At skill chain > 4, cast time -90%
+    - name: "Multiple Chant/ Erys [Mastery]"
+      effects:
+        - desc: Charge assault starts combos at 150%
+        - desc: At skill chain > 3, INT damage +30%
+        - desc: Nullify charge assault crit penalty
+
+  skills:
+    - name: "Energy Arrow"
+      picture: Skill_Placeholder
+      element: Light
+      power: INT x 250
+      ap: 14
+      maxHits: 4
+    - name: "Acid Drain"
+      picture: Skill_Placeholder
+      element: Light
+      power: INT x 210
+      ap: 143
+      maxHits: 6
+    - name: "Star Light"
+      picture: Skill_Placeholder
+      element: Light
+      power: INT x 990
+      ap: 34
+      maxHits: 1
+    - name: "Luna Light"
+      picture: Skill_Placeholder
+      element: Light
+      power: INT x 1250
+      ap: 35
+      maxHits: 10
+
+  rush:
+    name: "Indignation"
+    picture: Rush_Placeholder
+    element: Lightning
+    effects:
+      - desc: Elemental damage dealt +80%
+        all: true
+        duration: 20
+        meta:
+          priority: 1
+          buff: Elemental Damage
+          buffValue: 80
+    power: INT x 5000%
+    maxHits: 9

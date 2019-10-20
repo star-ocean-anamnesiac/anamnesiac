@@ -3819,3 +3819,82 @@
         all: true
     power: INT x 2500%
     maxHits: 5
+
+- name: Ioshua Jerand
+  cat: jp
+  picture: Ioshua_Jerand
+  weapon: staff
+  ace: true
+  star: 5
+
+  stats:
+    hp: 13965
+    atk: 1747
+    int: 2482
+    def: 1365
+    hit: 1057
+    grd: 1134
+
+  talents:
+    - name: "Looking for Sister"
+      effects:
+        - desc: Increase Fairy Light's buff to 35% at 100% HP
+        - desc: AP Recovery +100%, symbology cast time -90% and
+        - desc: Anti flinch while casting symbology
+    - name: "Shy"
+      effects:
+        - desc: Recover 10% HP/ 3 sec, Recover 20% HP/ 3 sec at HIT > 200 (party)
+    - name: "Neat Feature"
+      effects:
+        - desc: DMG taken -40% at long range (self), -20% (party)
+        - desc: Critical chance +20%
+          all: true
+          meta:
+            priority: 3
+            buff: Crit Rate
+            buffCondition: HP at 100%
+            buffValue: 20
+    - name: "The Truth Hidden in Ruins"
+      effects:
+        - desc: Rush gauge increases by 50% when allies die (effect doesn't stack if multiple allies die at once)
+
+  skills:
+    - name: "Thunderbolt"
+      picture: Skill_Placeholder
+      element: Lightning
+      power: INT x 820%
+      ap: 24
+      maxHits: 3
+    - name: "Lightning Blast"
+      picture: Skill_Placeholder
+      element: Lightning
+      power: INT x 280%
+      ap: 14
+      maxHits: 10
+    - name: "Fairy Light"
+      picture: Skill_Placeholder
+      power: INT x 180%
+      ap: 30
+      notes: Recover some HP for all allies, ATK, INT +20%/ +35% at 100% HP, (party)
+      maxHits: 1
+      meta:
+        priority: 2
+        buffs:
+          - ATK
+          - INT
+        buffValue: 35
+    - name: "Thunderstrom"
+      picture: Skill_Placeholder
+      element: Lightning
+      power: INT x 1280%
+      ap: 27
+      maxHits: 5
+
+  rush:
+    name: "Thundercloud"
+    picture: Rush_Placeholder
+    element: Lightning
+    effects:
+      - desc: Revives Attackers, Defenders, and Casters
+    power: INT x 4000%
+    maxHits: 9
