@@ -6489,7 +6489,7 @@
             buff: Crit Rate
             buffCondition: When using Mystic Knives or Edge Explorer
             buffValue: 20
-        - desc: - Critical Rate -20% after Mystic Knives or Edge Explorer (Enemy/ 10 seconds)
+        - desc: Critical Rate -20% after Mystic Knives or Edge Explorer (Enemy/ 10 seconds)
     - name: "Trap Application Guard"
       effects:
         - desc: Arc Action Growth inflicts ATK -20% (All Enemies/ 10 seconds)
