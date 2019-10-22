@@ -5182,7 +5182,7 @@
   rush:
     name: "Indignation"
     picture: Rush_Placeholder
-    element: Lightning
+    element: Light
     effects:
       - desc: Elemental damage dealt +80%
         all: true
