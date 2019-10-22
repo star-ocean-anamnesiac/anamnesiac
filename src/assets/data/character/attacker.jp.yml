@@ -9556,7 +9556,7 @@
 
 - name: Oiran Myuria
   cat: jp
-  picture: Oiran_Myuria
+  picture: Oiran_Myuria_Copy
   weapon: greatsword
   ace: true
   limited: true
