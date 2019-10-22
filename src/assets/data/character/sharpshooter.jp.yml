@@ -6453,3 +6453,87 @@
         duration: 20
     power: ATK x 4500%
     maxHits: 12
+
+- name: Hunter Celine
+  cat: jp
+  picture: Hunter_Celine
+  weapon: dagger
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 14280
+    atk: 2482
+    int: 1549
+    def: 1759
+    hit: 1246
+    grd: 931
+
+  talents:
+    - name: "Full Speed to the Treasure"
+      effects:
+        - desc: ATK and INT damage +35%, +65% when Celine is at 100% HP (party)
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: HP is 100
+            buffValue: 65
+    - name: "Lucky Steal"
+      effects:
+        - desc: Critical chance +20% after using Mystic Knives or Edge Explorer (All/ 10 seconds)
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: When using Mystic Knives or Edge Explorer
+            buffValue: 20
+        - desc: - Critical Rate -20% after Mystic Knives or Edge Explorer (Enemy/ 10 seconds)
+    - name: "Trap Application Guard"
+      effects:
+        - desc: Arc Action Growth inflicts ATK -20% (All Enemies/ 10 seconds)
+        - desc: Arc Action Growth gains ATK +20% when Celine is at 100% HP (Self)
+    - name: "Treasure Ocean Seeker"
+      effects:
+        - desc: Recover 2% HP from Doom Parade damage
+        - desc: Able to air dodge
+
+  skills:
+    - name: "Edge Explorer"
+      picture: Skill_Placeholder
+      power: ATK x 390%
+      ap: 26
+      maxHits: 4
+    - name: "Mystic Knives"
+      picture: Skill_Placeholder
+      element: Lightning
+      power: ATK x 340%
+      ap: 23
+      maxHits: 9
+    - name: "Arc Action Growth"
+      picture: Skill_Placeholder
+      power: ATK x 260%
+      ap: 17
+      maxHits: 9
+    - name: "Doom Parade"
+      picture: Skill_Placeholder
+      element: Dark
+      power: ATK x 710%
+      ap: 30
+      maxHits: 4
+
+  rush:
+    name: "Adventure Road"
+    picture: Rush_Placeholder
+    effects:
+      - desc: AP Cost -30%, critical chance and damage + 40% 
+        all: true
+        meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: When using Mystic Knives or Edge Explorer
+            buffValue: 30
+        duration: 20
+    power: ATK x 4500%
+    maxHits: 1
