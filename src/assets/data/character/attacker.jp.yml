@@ -9554,3 +9554,72 @@
     power: ATK x 4500%
     maxHits: 2
 
+- name: Oiran Myuria
+  cat: jp
+  picture: Oiran_Myuria
+  weapon: greatsword
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 18774
+    atk: 3533
+    int: 1563
+    def: 1943
+    hit: 1134
+    grd: 833
+
+  talents:
+    - name: "Star Ocean's Harlot"
+      effects:
+        - desc: Damage to enemies +20%, 40% when Myuria is at 100% HP (party)
+    - name: "Eight Shaped Progression"
+      effects:
+        - desc: AP cost -30$ when skill chain > 2 (self)
+        - desc: HP recovery 2% from skill damage when skill chain > 4 (self)
+    - name: "Blue Waters Kimono Lining"
+      effects:
+        - desc: ATK +15% when HP 100% (self)
+        - desc: Rush combo damage +50% when hit count > 300 (self)
+        - desc: Rush combo damage +100% when hit count > 600 (self)
+    - name: "Ongoing Volune of Gorgeous Courtesan Kimonos"
+      effects:
+        - desc: ATK +30%, HP +20%
+        - desc: Able to air dodge
+        - desc: Deal 5% additional damage from skills as a hit, Double Hit (Self)
+
+  skills:
+    - name: "Blooming"
+      picture: Skill_Placeholder
+      power: ATK x 200%
+      ap: 15
+      maxHits: 1
+    - name: "Release"
+      picture: Skill_Placeholder
+      power: ATK x 290%
+      ap: 22
+      maxHits: 4
+    - name: "Large Circle"
+      picture: Skill_Placeholder
+      power: ATK x 680%
+      ap: 28
+      maxHits: 15
+    - name: "Petal"
+      picture: Skill_Placeholder
+      element: Dark
+      power: ATK x 990%
+      ap: 38
+      maxHits: 9
+
+  rush:
+    name: "Myriad Flowers Woven Profusely"
+    picture: Rush_Placeholder
+    element: Dark
+    shortEffects: Recovers 15% of max HP every 3 seconds  and ATK +80% (Self/20s)
+    effects:
+      - desc: HIT count starts at 75
+        duration: 20
+      - desc: AP cost -60% (self)
+    power: ATK x 5500%
+    maxHits: 8
