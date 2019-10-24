@@ -5238,11 +5238,11 @@
             buffValue: 50
     - name: "The Growing Flower"
       effects:
-        - desc: AP cost -15% at HIT count > 50 , 30% at HIT count > 150
+        - desc: AP cost -15% at HIT count > 50 , +30% at HIT count > 150
           all: true
           meta:
             priority: 1
-            buff: AP cost
+            buff: AP Cost Reduction
             buffCondition: Hit count > 150
             buffValue: 30
         - desc: AP regen +50%, full AP regen while walking (party)
