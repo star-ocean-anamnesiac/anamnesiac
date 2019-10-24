@@ -9623,3 +9623,75 @@
       - desc: AP cost -60% (self)
     power: ATK x 5500%
     maxHits: 8
+
+- name: Chisato Madison (Blue Sphere) 
+  cat: jp
+  picture: Blue_Sphere_Chisato
+  weapon: knuckle
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15435
+    atk: 2704
+    int: 1575
+    def: 1916
+    hit: 1162
+    grd: 833
+
+  talents:
+    - name: "News Agency Founder"
+      effects:
+        - desc: Burning Curse AF buff increased +50% at hit > 300 (party)
+    - name: "Second Home"
+      effects:
+        - desc: When charge assault from short range to long range rush gauge increases slightly (party)
+        - desc: When charge assaul from long to short range ATK +30% (self/ 10sec)
+    - name: "Sophisticated Shooting Technique"
+      effects:
+        - desc: HIT count timer +2sec
+        - desc: AP recovery +100% on normal attacks (party)
+    - name: "Positive Way of Life"
+      effects:
+        - desc: ATK and INT damage +20% (party)
+    - name: "Vanguard / Blue Sphere Chisato [MASTERY]"
+      effects:
+        - desc: Nullifies charge assault critical damage penalty
+        - desc: Damage Taken -100% when charge assault from long range to short range
+        - desc: Critical chance +20% (3 sec) when charge assault from long range to short range
+          all: false
+
+  skills:
+    - name: "The Leg"
+      picture: Skill_Placeholder
+      power: ATK x 220%
+      ap: 14
+      maxHits: 4
+    - name: "Rock Fall"
+      picture: Skill_Placeholder
+      power: ATK x 320%
+      ap: 20
+      maxHits: 3
+    - name: "Burning Cars"
+      picture: Skill_Placeholder
+      element: Fire
+      power: ATK x 300%
+      ap: 18
+      maxHits: 2
+    - name: "Countless Shrines"
+      picture: Skill_Placeholder
+      power: ATK x 840%
+      ap: 33
+      maxHits: 9
+
+  rush:
+    name: "Fire Shoot"
+    picture: Rush_Placeholder
+    element: Fire
+    shortEffects: ATK Damage +80% (party/ 20sec)
+    effects:
+      - desc: ATK Damage +80%
+        duration: 20
+    power: ATK x 4500%
+    maxHits: 8
