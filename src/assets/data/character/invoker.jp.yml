@@ -5287,7 +5287,7 @@
         duration: 7
         meta:
           priority: 1
-          buff: AP Cost reduction
+          buff: AP Cost Reduction
           buffValue: 70
     power: INT x 4500%
     maxHits: 11
