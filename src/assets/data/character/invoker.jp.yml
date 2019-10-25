@@ -5193,3 +5193,101 @@
           buffValue: 80
     power: INT x 5000%
     maxHits: 9
+
+- name: Leon D.S. Gehste (Blue Sphere)
+  cat: jp
+  picture: Blue_Sphere_Leon_Copy
+  weapon: tome
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 12390
+    atk: 1575
+    int: 2718
+    def: 1365
+    hit: 1043
+    grd: 819
+
+  talents:
+    - name: "Genius Scientist"
+      effects:
+        - desc: INT +30%, +60% at hit count > 200
+          all: true
+          meta:
+            priority: 1
+            buff: INT
+            buffCondition: Hit count > 200 
+            buffValue: 60
+        - desc: ATK +30%, +60% at hit count > 200
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffCondition: Hit count > 200
+            buffValue: 60
+    - name: "Life in a New World"
+      effects:
+        - desc: Critical chance +50% at HIT count > 300
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: Hit count > 300
+            buffValue: 50
+    - name: "The Growing Flower"
+      effects:
+        - desc: AP cost -15% at HIT count > 50 , +30% at HIT count > 150
+          all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Hit count > 150
+            buffValue: 30
+        - desc: AP regen +50%, full AP regen while walking (party)
+    - name: "My Feeling For My Home"
+      effects:
+        - desc: Cast time -90% at long range
+        - desc: 90% chance of surviving a lethal attack when at 10% of max HP or more
+
+  skills:
+    - name: "Shadow Bolt"
+      picture: Skill_Placeholder
+      element: Dark
+      power: INT x 190%
+      ap: 18
+      maxHits: 3
+    - name: "Woons Reaper"
+      picture: Skill_Placeholder
+      element: Dark
+      power: INT x 560%
+      ap: 28
+      maxHits: 2
+    - name: "Shadow Flare"
+      picture: Skill_Placeholder
+      element: Dark
+      power: INT x 710%
+      ap: 39
+      maxHits: 5
+    - name: "Dark Passage"
+      picture: Skill_Placeholder
+      element: Dark
+      power: INT x 920%
+      ap: 48
+      maxHits: 10
+
+  rush:
+    name: "Word of Death"
+    picture: Rush_Placeholder
+    element: Dark
+    effects:
+      - desc: AP cost -70%
+        all: true
+        duration: 7
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 70
+    power: INT x 4500%
+    maxHits: 11
