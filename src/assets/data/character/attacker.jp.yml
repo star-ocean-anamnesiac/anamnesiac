@@ -9576,7 +9576,7 @@
         - desc: Damage to enemies +20%, 40% when Myuria is at 100% HP (party)
     - name: "Eight Shaped Progression"
       effects:
-        - desc: AP cost -30$ when skill chain > 2 (self)
+        - desc: AP cost -30% when skill chain > 2 (self)
         - desc: HP recovery 2% from skill damage when skill chain > 4 (self)
     - name: "Blue Waters Kimono Lining"
       effects:
