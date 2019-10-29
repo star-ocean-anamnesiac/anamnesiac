@@ -6473,7 +6473,7 @@
   talents:
     - name: "Full Speed to the Treasure"
       effects:
-        - desc: ATK and INT damage +35%, +65% when Celine is at 100% HP (party)
+        - desc: ATK and INT damage +35%, +65% when Celine is at 100% HP
           all: true
           meta:
             priority: 1
