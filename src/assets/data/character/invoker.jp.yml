@@ -5117,13 +5117,13 @@
   talents:
     - name: "Real Figure"
       effects:
-        - desc: Convert 40% of ATK to INT (Casters, Healers)
+        - desc: Convert 40% of ATK to INT
           all: Healers/Invokers
           meta:
             priority: 1
             buff: ATK -> INT
             buffValue: 40
-        - desc: Convert 40% of INT to ATK (Attackers, Shooters, Defenders)
+        - desc: Convert 40% of INT to ATK
           all: Attackers/Shooters/Defenders
           meta:
             priority: 1
