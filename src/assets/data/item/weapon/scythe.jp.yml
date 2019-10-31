@@ -255,3 +255,21 @@
     - desc: Hit count timer +3
       lb: 5
   obtained: Gacha
+
+- name: Mad Cheff
+  cat: 'jp'
+  star: 5
+  picture: Mad_Chef
+  atk: 1261
+  int: 1258
+  factors:
+    - desc: Imbue Light Element | Light Damage +50%
+      element: Light
+      meta:
+        priority: 4
+        buff: Light Damage
+        buffValue: 50
+    - desc: Hit Count +3 seconds (Extended)
+    - desc: Rush Combo Damage +40% when at Hit count > 200
+      lb: 5
+  obtained: Gacha
