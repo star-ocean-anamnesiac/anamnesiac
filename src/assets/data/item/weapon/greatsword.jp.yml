@@ -448,3 +448,21 @@
         buffCondition: Hit Count > 100
         buffValue: 40
   obtained: Gacha
+
+- name: Umbrella Blade Dusk Satyrid
+  cat: 'jp'
+  star: 5
+  picture: Umbrella_Blade_Dusk_Satyrid
+  atk: 1263
+  int: 1256
+  factors:
+    - desc: Imbues attacks with dark | dark damage dealt +40%
+      element: Dark
+      meta:
+        priority: 4
+        buff: Dark Damage
+        buffValue: 40
+    - desc: Critical chance +50% at hit count > 200
+    - desc: AP recovery +150% by normal attacks at HP 100%
+      lb: 5
+  obtained: Gacha

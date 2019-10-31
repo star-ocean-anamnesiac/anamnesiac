@@ -781,3 +781,21 @@
         buffValue: 20
       lb: 5
   obtained: Gacha
+
+- name: Inferno Mirage
+  cat: 'jp'
+  star: 5
+  picture: Inferno_Mirage
+  atk: 1262
+  int: 1258
+  factors:
+    - desc: Imbue attacks with fire, fire damage dealt +40%
+      element: Fire
+      meta:
+        priority: 4
+        buff: Fire Damage
+        buffValue: 40
+    - desc: HP recovery 10% from normal attacks
+    - desc: AP cost -30% at hit count > 150
+      lb: 5
+  obtained: Gacha
