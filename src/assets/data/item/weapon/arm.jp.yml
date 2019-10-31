@@ -427,3 +427,20 @@
     - desc: 80% chance of surviving a lethal attack when at 20% of max HP or more
       lb: 3
   obtained: Gacha
+
+- name: Land Warfare Robotic Arms
+  cat: 'jp'
+  star: 5
+  picture: Land_Warfare_Robotic_Arms
+  atk: 1260
+  int: 1259
+  factors:
+    - desc: Damage to Machines +60%
+      meta:
+        priority: 4
+        buff: Damage To Machines
+        buffValue: 60
+    - desc: ATK damage dealt +40% at hitcount > 100
+    - desc: Anti flinch at long range, -30% damage taken
+      lb: 5
+  obtained: Gacha
