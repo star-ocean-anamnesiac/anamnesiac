@@ -444,3 +444,21 @@
     - desc: Anti flinch at long range, -30% damage taken
       lb: 5
   obtained: Gacha
+
+- name: Galaxy Cleaner
+  cat: 'jp'
+  star: 5
+  picture: Galaxy_Cleaner
+  atk: 1264
+  int: 1256
+  factors:
+    - desc: Imbue Light Element | Light Damage +40%
+      element: Light
+      meta:
+        priority: 4
+        buff: Light Damage
+        buffValue: 40
+    - desc: 80% chance to survive a fatal blow when above 10% HP
+    - desc: Critical Damage +60% when at skill chain > 3
+      lb: 5
+  obtained: Gacha

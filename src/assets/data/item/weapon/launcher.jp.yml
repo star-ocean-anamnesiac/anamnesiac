@@ -210,3 +210,21 @@
     - desc: HP recovery +10% / 3sec
       lb: 5
   obtained: Gacha
+
+- name: Vacuum Blaster
+  cat: 'jp'
+  star: 5
+  picture: Vacuum_Blaster
+  atk: 1261
+  int: 1258
+  factors:
+    - desc: Imbue Light Element | Light Damage +20%
+      element: Light
+      meta:
+        priority: 4
+        buff: Light Damage
+        buffValue: 20
+    - desc: Rush Combo Damage +50% when at Hit count > 200
+    - desc: AP Recovery Speed +100% when at 100% HP
+      lb: 5
+  obtained: Gacha
