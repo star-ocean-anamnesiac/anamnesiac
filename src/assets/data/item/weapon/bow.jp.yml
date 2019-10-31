@@ -715,3 +715,21 @@
         buffValue: 30
       lb: 5
   obtained: Shadow Dhaos / Tales of the Rays (Achievement)
+
+- name: Ignite Stringer
+  cat: 'jp'
+  star: 5
+  picture: Ignite_Stringer
+  atk: 1261
+  int: 1255
+  factors:
+    - desc: Imbues attacks with fire | fire damage dealt +20%
+      element: Fire
+      meta:
+        priority: 4
+        buff: Fire Damage
+        buffValue: 20
+    - desc: ATK damage dealt +50% at hitcount > 200
+    - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
+      lb: 5
+  obtained: Gacha
