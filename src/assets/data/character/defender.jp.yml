@@ -3653,7 +3653,7 @@
 
 - name: Fiore Brunelli (Maid)
   cat: jp
-  picture: Char_Placeholder_Maid_Fiore
+  picture: Char_Placeholder_M_Fiore
   weapon: scythe
   ace: true
   limited: true
