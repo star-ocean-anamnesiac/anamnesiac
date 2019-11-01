@@ -9695,3 +9695,77 @@
         duration: 20
     power: ATK x 4500%
     maxHits: 8
+
+- name: Vulcan S90 (Maid)
+  cat: jp
+  picture: Char_Placeholder_M_Valka
+  weapon: arm
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15540
+    atk: 2692
+    int: 1589
+    def: 1943
+    hit: 1156
+    grd: 819
+
+  talents:
+    - name: "Leave The Cleaning To Me"
+      effects:
+        - desc: ATK +40%, +60% at 100% HP
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffCondition: HP is 100%
+            buffValue: 60
+        - desc: 30% Chance for +70% ATK when using Planet Polisher (party/ 5s)
+    - name: "The One & Only Vacuum"
+      effects:
+        - desc: 30% Chance for -50% AP Cost when using Planet Polisher (party/ 5s)
+        - desc: 30% Chance to RCV 20% HP to All when using Planet Polisher
+    - name: "Swinging Hair Parts"
+      effects:
+        - desc: Critical hit chance +20% at skill chain > 3, +30% at skill chain > 5 (party)
+    - name: "Minister of Justice"
+      effects:
+        - desc: AP recovery +100% by normal attacks
+
+  skills:
+    - name: "Crack Hand Claps"
+      picture: Skill_Placeholder
+      power: ATK x 390%
+      ap: 17
+      maxHits: 3
+    - name: "Planet Polisher"
+      picture: Skill_Placeholder
+      power: ATK x 620%
+      ap: 24
+      maxHits: 12
+    - name: "High-end Press"
+      picture: Skill_Placeholder
+      power: ATK x 280%
+      ap: 15
+      maxHits: 6
+    - name: "Clean Liners"
+      picture: Skill_Placeholder
+      power: ATK x 510%
+      ap: 25
+      maxHits: 1
+
+  rush:
+    name: "Galactica Eraser"
+    picture: Rush_Placeholder
+    shortEffects: ATK damage +60% (party/ 20sec)
+    effects:
+      - desc: ATK damage +60% (party/ 20sec)
+        duration: 20
+        meta:
+          priority: 1
+          buff: ATK Damage
+          buffValue: 60
+    power: ATK x 4500%
+    maxHits: 2

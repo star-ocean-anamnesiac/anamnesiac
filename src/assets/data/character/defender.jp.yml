@@ -3650,3 +3650,81 @@
           buffValue: 60
     power: ATK x 4500%
     maxHits: 11
+
+- name: Fiore Brunelli (Maid)
+  cat: jp
+  picture: Char_Placeholder_M_Fiore
+  weapon: scythe
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 24318
+    atk: 2482
+    int: 1589
+    def: 2494
+    hit: 840
+    grd: 1036
+
+  talents:
+    - name: "Homely Maiden"
+      effects:
+        - desc: ATK and INT damage dealt +30%, +50% at Hit Count > 250
+          all: true
+          meta:
+            priority: 1
+            buffs: 
+              - ATK
+              - INT
+            buffValue: 50
+    - name: "Jet Black Scythe"
+      effects:
+        - desc: ATK and INT damage taken -25% (party)
+        - desc: Anti flinch when taking damage < 20% HP (party)
+        - desc: Damage talen -40% while charge assault
+    - name: "With Sincerity"
+      effects:
+        - desc: ATK +30% at Hit count > 200, +50% at Hit count > 400
+    - name: "Concealed Secret Ingredient"
+      effects:
+        - desc: HP +20%
+        - desc: HP recovery 10% on perfect dodge
+        - desc: Double hit 5% on skills when behind target
+    - name: "Blindside Defender / Maid Fiore [MASTERY]"
+      effects:
+        - desc: Nullifies charge assault critical damage penalty
+        - desc: Cancel bonus start at 150% when charge assaulting
+        - desc: Critical chance +30% when not facing target
+
+  skills:
+    - name: "Spirit Tasting"
+      picture: Skill_Placeholder
+      power: ATK x 280%
+      ap: 19
+      maxHits: 5
+    - name: "Dead-end Mixer"
+      picture: Skill_Placeholder
+      power: ATK x 510%
+      ap: 25
+      maxHits: 3
+    - name: "Death Cooking"
+      picture: Skill_Placeholder
+      power: ATK x 200%
+      ap: 15
+      maxHits: 2
+    - name: "Blood Flavored"
+      picture: Skill_Placeholder
+      power: ATK x 920%
+      ap: 33
+      maxHits: 7
+
+  rush:
+    name: "Heaven's Dinner Party"
+    picture: Rush_Placeholder
+    shortEffects: ATK +80%, AP cost -30% (20sec)
+    effects:
+      - desc: ATK +80%, AP cost -30% (20sec)
+        duration: 20
+    power: ATK x 5000%
+    maxHits: 17
