@@ -9699,7 +9699,7 @@
 - name: Vulcan S90 (Maid)
   cat: jp
   picture: Char_Placeholder_Maid_Valka
-  weapon: arms
+  weapon: arm
   ace: true
   limited: true
   star: 5
