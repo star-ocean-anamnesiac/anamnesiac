@@ -9769,3 +9769,74 @@
           buffValue: 60
     power: ATK x 4500%
     maxHits: 2
+
+- name: Joker
+  cat: jp
+  picture: Char_Placeholder_Persona_Joker
+  weapon: dagger
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 2718
+    int: 1549
+    def: 1969
+    hit: 1141
+    grd: 826
+
+  talents:
+    - name: "Phantom Thief"
+      effects:
+        - desc: ATK +700, at HC 100+ ATK +1000
+          all: Attackers/Sharpshooters/Defenders
+    - name: "Arsene"
+      effects:
+        - desc: -100% DMG Taken when using Edge & Gun Smoke (0.5 s)
+        - desc: -100% DMG Taken when using Forward Slash or Downside Butterfly (1 s)
+    - name: "Rebelious Will"
+      effects:
+        - desc: -20% AP Cost when Not Facing Target
+        - desc: +5% Echo on Skills
+        - desc: +50% Crit at HC 200+
+    - name: "Thief of World Reformation"
+      effects:
+        - desc: +100% AP RCV by Normals
+        - desc: +30% ATK at HC 100+
+        - desc: Air Dodge
+        - desc: -80% AP Cost on Dodge
+        - desc: +100% Speed on Dodge
+
+  skills:
+    - name: "Forward Slash"
+      picture: Skill_Placeholder
+      power: ATK x 1150
+      ap: 40
+      maxHits: 5
+    - name: "Eiha"
+      picture: Skill_Placeholder
+      element: Dark
+      power: ATK x 420
+      ap: 24
+      maxHits: 2
+    - name: "Edge and Gun Smoke"
+      picture: Skill_Placeholder
+      power: ATK x 350
+      ap: 19
+      maxHits: 2
+    - name: "Downshot Butterfly"
+      picture: Skill_Placeholder
+      power: ATK x 830
+      ap: 33
+      maxHits: 6
+
+  rush:
+    name: "Arsene Cosmic Flare"
+    picture: Rush_Placeholder
+    shortEffects: AP Cost - 65% (20 sec)
+    effects:
+      - desc: AP Cost -65% (20 sec)
+        duration: 20
+    power: ATK x 5500%
+    maxHits: 1
