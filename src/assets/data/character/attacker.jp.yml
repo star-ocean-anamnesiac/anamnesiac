@@ -9772,7 +9772,7 @@
 
 - name: Joker
   cat: jp
-  picture: Char_Placeholder_Joker
+  picture: Char_Placeholder_Persona_Joker
   weapon: dagger
   ace: true
   limited: true
