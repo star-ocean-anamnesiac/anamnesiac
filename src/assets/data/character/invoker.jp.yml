@@ -5045,6 +5045,12 @@
             priority: 1
             buff: INT
             buffValue: 60
+        - desc: Convert 45% of INT to ATK
+          all: Attackers/Sharpshooters/Defenders
+          meta:
+            priority: 1
+            buff: INT -> ATK
+            buffValue: 45
     - name: "Gift of Training"
       effects:
         - desc: Anti flinch when damage taken < 40% max HP when Adray has aggro (party)
