@@ -9840,3 +9840,91 @@
         duration: 20
     power: ATK x 5500%
     maxHits: 1
+
+- name: Makoto
+  cat: jp
+  picture: Char_Placeholder_Persona_Makoto
+  weapon: ohs
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 2718
+    int: 1563
+    def: 1957
+    hit: 1563
+    grd: 833
+
+  talents:
+    - name: "Special Extracurricular Activites Departement"
+      effects:
+        - desc: ATK +40% Unconditional, ATK +60% at HC 150+
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 60
+        - desc: ATK +80% after Element Burst on target
+          all: true
+          duration: 30
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 80
+    - name: "Orpheus"
+      effects:
+        - desc: Stun rate +50%
+          all: true
+          meta:
+            priority: 1
+            buff: Stun Rate
+            buffValue: 50
+       - desc: Stun rate +80% at HC 250+
+          all: true
+          meta:
+            priority: 1
+            buff: Stun Rate
+            buffValue: 80
+    - name: "Aptitude For Dark Hour"
+      effects:
+        - desc: HC timer +2 (party)
+        - desc: Air dodge
+    - name: "Salvation Element"
+      effects:
+        - desc: AP cost -30% at SC 2+
+        - desc: AP cost - 70% after Element Burst on target (party/10s)
+
+  skills:
+    - name: "Agi"
+      picture: Skill_Placeholder
+      element: Fire
+      power: ATK x 390%
+      ap: 23
+      maxHits: 2
+    - name: "triple Thrust"
+      picture: Skill_Placeholder
+      power: ATK x 480
+      ap: 26
+      maxHits: 3
+    - name: "Slash Combo"
+      picture: Skill_Placeholder
+      power: ATK x 920%
+      ap: 35
+      maxHits: 3
+    - name: "Brave Zapper"
+      picture: Skill_Placeholder
+      power: ATK x 1210
+      ap: 40
+      maxHits: 5
+
+  rush:
+    name: "Orpheus Vorpal Blade"
+    picture: Rush_Placeholder
+    shortEffects: Crit Rate +60% | Crit DMG +30% (party/20s)
+    effects:
+      - desc: Crit Rate +60% | Crit DMG +30% (party)
+        duration: 20
+    power: ATK x 4500%
+    maxHits: 8
