@@ -3728,3 +3728,82 @@
         duration: 20
     power: ATK x 5000%
     maxHits: 17
+
+- name: Yu Narukami
+  cat: jp
+  picture: Char_Placeholder_Persona_Yu_Narukami
+  weapon: greatsword
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 21840
+    atk: 2520
+    int: 1537
+    def: 2336
+    hit: 819
+    grd: 1050
+
+  talents:
+    - name: "Self-Procalaimed Special Investigation Team"
+      effects:
+        - desc: HP +55%
+          all: true
+          meta:
+            priority: 1
+            buff: HP
+            buffValue: 55
+        - desc: Anti Flinch HP at ≤20% (party)
+    - name: "Izanagi"
+      effects:
+        - desc: Single Target Damage +35%, +50% at HC 150+ 
+          all: true
+          meta:
+            priority: 1
+            buff: Single Target Damage
+            buffValue: 50
+        - desc: Single Target Damage +65% after Element Burst on target(party)
+    - name: "One Who Provides"
+      effects:
+        - desc: Order Gauge +1
+        - desc: AP cost -70% during Order Countdown (party)
+    - name: "True Gentleman"
+      effects:
+        - desc: AP by normals +150%
+        - desc: Recover 10% HP after Succesful Guard (3s)
+        - desc: Omni-Directional Guard
+
+  skills:
+    - name: "Sever"
+      picture: Skill_Placeholder
+      power: ATK x 430%
+      ap: 20
+      maxHits: 4
+    - name: "Zio"
+      picture: Skill_Placeholder
+      element: Lightning
+      power: ATK x 380%
+      ap: 19
+      maxHits: 3
+    - name: "Cross Slash"
+      picture: Skill_Placeholder
+      power: ATK x 1240%
+      ap: 33
+      maxHits: 5
+    - name: "Slash"
+      picture: Skill_Placeholder
+      power: ATK x 1500%
+      ap: 30
+      maxHits: 4
+
+  rush:
+    name: "Izanagi Ziodyne"
+    picture: Rush_Placeholder
+    element: Lightning
+    shortEffects: ATK +80%, AP cost -30% (20sec)
+    effects:
+      - desc: ATK damage +50% | DMG taken -20% (party)
+        duration: 20
+    power: ATK x 4500%
+    maxHits: 9
