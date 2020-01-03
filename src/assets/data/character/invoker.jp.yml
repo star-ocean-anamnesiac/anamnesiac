@@ -5094,7 +5094,7 @@
     name: "Spicule"
     picture: Rush_Placeholder
     effects:
-      - desc: DMG dealt + 100% (self), +80% (party)
+      - desc: DMG dealt + 100% (self), +80% 
         all: true
         duration: 20
         meta:
