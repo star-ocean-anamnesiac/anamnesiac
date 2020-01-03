@@ -9881,7 +9881,7 @@
             priority: 1
             buff: Stun Rate
             buffValue: 50
-       - desc: Stun rate +80% at HC 250+
+        - desc: Stun rate +80% at HC 250+
           all: true
           meta:
             priority: 1
