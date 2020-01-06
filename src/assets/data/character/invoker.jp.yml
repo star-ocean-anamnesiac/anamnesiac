@@ -5297,3 +5297,78 @@
           buffValue: 70
     power: INT x 4500%
     maxHits: 11
+
+- name: Futaba
+  cat: jp
+  picture: Char_Placeholder_Persona_Futaba
+  weapon: orb
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15435
+    atk: 2665
+    int: 2744
+    def: 1916
+    hit: 1148
+    grd: 854
+
+  talents:
+    - name: "Losing While Working"
+      effects:
+        - desc: Damage taken +45%, +60% Futaba at 100% (enemies) 
+        - desc: Damage taken +75% when EB (enemies/30s)
+    - name: "Necronomicon"
+      effects:
+        - desc: Cancle Bonus 200% when Charge Assault
+        - desc: Stun Rate +60% at 100% HP
+        - desc: Rush Combo DMG +50% when Element Burst (party/30s)
+    - name: "Unassailable on the Net"
+      effects:
+        - desc: Special ATK DMG +200%, AP Cost +50% when using all Members! Anti-Shock, Anti-Flash Defence! & Go! All-Out Range (10 s)
+    - name: "Hajikero KY"
+      effects:
+        - desc: INT +20% when using It’s Not Agydyne Right Now… (10 s)
+        - desc: AP Recovery +50%
+        - desc: HP RCV +100% to All when using My Hands Shine & Shout at SC 3+
+
+  skills:
+    - name: "It’s Not Agydyne Right Now…"
+      picture: Skill_Placeholder
+      element: Fire
+      power: INT x 480%
+      ap: 32
+      maxHits: 1
+    - name: "My Hands Shine and Shout"
+      picture: Skill_Placeholder
+      element: Light
+      power: INT x 670%
+      ap: 37
+      maxHits: 2
+    - name: "All Members! Anti-Shock, Anti-Flash Defence!"
+      picture: Skill_Placeholder
+      element: Fire
+      power: INT x 450%
+      ap: 24
+      maxHits: 5
+    - name: "Go! All-Out Range Attack"
+      picture: Skill_Placeholder
+      element: Light
+      power: INT x 410%
+      ap: 23
+      maxHits: 6
+
+  rush:
+    name: "OK, I’ll Push You To The Limit"
+    picture: Rush_Placeholder
+    effects:
+      - desc: Elemental damage +80%
+        all: true
+        duration: 20
+        meta:
+          priority: 1
+          buff: Elemental Damage
+          buffValue: 80
+    power: INT x 4500%
+    maxHits: 1
