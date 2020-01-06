@@ -9928,3 +9928,84 @@
         duration: 20
     power: ATK x 4500%
     maxHits: 8
+
+- name: Kasumi
+  cat: jp
+  picture: Char_Placeholder_Persona_Kasumi
+  weapon: ohs
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15540
+    atk: 2704
+    int: 1589
+    def: 1930
+    hit: 1141
+    grd: 840
+
+  talents:
+    - name: "Simple Rhythmic Gymnast"
+      effects:
+        - desc: INT +20% at HC 200+ , INT +40% at HC 400+
+          all: true
+          meta:
+            priority: 1
+            buff: INT
+            buffValue: 40
+        - desc: Convert 70% INT to ATK
+          all: Attackers/Sharpshooters/Defenders
+          duration: 30
+          meta:
+            priority: 1
+            buff: INT -> ATK
+            buffValue: 70
+    - name: "Cendrillon"
+      effects:
+        - desc: Additional hit that deals 5% of damage dealt by skills
+          all: true
+        - desc: Gain 3% Rush Gauge every 3s (party)
+    - name: "Shrewd Body As Expected"
+      effects:
+        - desc: ATK +30% at close range
+        - desc: AP recovery +100% by normals at long range
+        - desc: Recover 15% AP when Charge Assault from long range to close range
+    - name: "Tumbing Girl"
+      effects:
+        - desc: Nullify Critical damage taken when Charge Assault
+        - desc: AP Cost -80% on dodge
+        - desc: Speed on dodge +100%
+
+  skills:
+    - name: "Slice and Stab"
+      picture: Skill_Placeholder
+      power: ATK x 820%
+      ap: 28
+      maxHits: 7
+    - name: "Kouga"
+      picture: Skill_Placeholder
+      element: Light
+      power: ATK x 340%
+      ap: 19
+      maxHits: 2
+    - name: "Matchlock R Fire"
+      picture: Skill_Placeholder
+      power: ATK x 490%
+      ap: 23
+      maxHits: 3
+    - name: "Sword Dance"
+      picture: Skill_Placeholder
+      power: ATK x 1010%
+      ap: 32
+      maxHits: 8
+
+  rush:
+    name: "Cendrillon Makougaon"
+    picture: Rush_Placeholder
+    shortEffects: ATK +50%, INT DMG Taken +30% (enemies/20s)
+    effects:
+      - desc: ATK +50%, INT DMG Taken +30% (enemies/20s)
+        duration: 20
+    power: ATK x 4500%
+    maxHits: 10
