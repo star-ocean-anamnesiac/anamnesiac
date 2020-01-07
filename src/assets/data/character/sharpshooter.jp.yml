@@ -6537,3 +6537,149 @@
         duration: 20
     power: ATK x 4500%
     maxHits: 1
+
+- name: Glass Palace Rena (Persona)
+  cat: jp
+  picture: Char_Placeholder_Persona_Rena
+  weapon: bow
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 13860
+    atk: 2455
+    int: 1589
+    def: 1720
+    hit: 1267
+    grd: 945
+
+  talents:
+    - name: "School Girl Studying Abroad"
+      effects:
+        - desc: DMG dealt +40%, +60% at 200+ HC, +80% at 400+ HC
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 80
+    - name: "Befall With the Unknown"
+      effects:
+        - desc: AP cost -20% at 200+ HC, -40% at 400+ HC
+          all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 40
+        - desc: HC timer +3s (party)
+    - name: "Heartache"
+      effects:
+        - desc: Stun Rate +60% during rush combo at 400+ HC (party)
+        - desc: AP Recovery +200% by normals when Element Burst (30s)
+    - name: "I am Thou, Thou Art I"
+      effects:
+        - desc: Critical Chance +30% when element burst (party/30s)
+        - desc: Nullify critical taken when CA
+        - desc: Air Dodge
+    - name: "Multi Lock [Mastery]"
+      effects:
+        - desc: Charge Assault Fire Light Bullets (ATKx250%/ Max Charge 6)
+    
+  skills:
+    - name: "Ghost Wing"
+      picture: Skill_Placeholder
+      power: ATK x 250%
+      ap: 15
+      maxHits: 9
+    - name: "Vanishing Snipe"
+      picture: Skill_Placeholder
+      element: Dark
+      power: ATK x 300%
+      ap: 17
+      maxHits: 5
+    - name: "Fall Down Shoot"
+      picture: Skill_Placeholder
+      power: ATK x 440%
+      ap: 24
+      maxHits: 3
+    - name: "Phantom Raid Arrow"
+      picture: Skill_Placeholder
+      power: ATK x 900%
+      ap: 34
+      maxHits: 8
+
+  rush:
+    name: "All Out Attack Chance!"
+    picture: Rush_Placeholder
+    effects:
+      - desc: AP Cost -60% (party/8s)
+    power: ATK x 4500%
+    maxHits: 10
+
+- name: Exorcist Faize
+  cat: jp
+  picture: Char_Placeholder_Exorcist_Faize
+  weapon: rifle
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15750
+    atk: 2508
+    int: 1563
+    def: 1563
+    hit: 1239
+    grd: 917
+
+  talents:
+    - name: "Exorcist who Eradicates Evil"
+      effects:
+        - desc: DMG dealt +40% at 100% HP
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 40
+    - name: "Silver Barrett"
+      effects:
+        - desc: HP Recovery 20% to party when using Purrification Blow
+    - name: "Coat Fluttering in the Moonlight Night"
+      effects:
+        - desc: Rush Gauge +3%/3s at 100% HP (party)
+        - desc: AP Cost -40% at skill chain +3 (party)
+    - name: "Oath to Resist Corruption"
+      effects:
+        - desc: Anti flinch while attacking
+        - desc: DMG taken -50% when attacking
+        - desc: ATK damage +50% at skill chain 3+
+    
+  skills:
+    - name: "Passing Spirit"
+      picture: Skill_Placeholder
+      power: ATK x 200%
+      ap: 18
+      maxHits: 3
+    - name: "Purification Blow"
+      picture: Skill_Placeholder
+      power: ATK x 930%
+      ap: 40
+      maxHits: 6
+    - name: "Spread Ray"
+      picture: Skill_Placeholder
+      power: ATK x 650%
+      ap: 28
+      maxHits: 5
+    - name: "Rotate Cage"
+      picture: Skill_Placeholder
+      power: ATK x 350%
+      ap: 21
+      maxHits: 3
+
+  rush:
+    name: "Judgement Barrett"
+    picture: Rush_Placeholder
+    effects:
+      - desc: AP Cost -50% (party/20s)
+    power: ATK x 4500%
+    maxHits: 10
