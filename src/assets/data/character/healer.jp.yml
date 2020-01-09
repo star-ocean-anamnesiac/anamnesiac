@@ -3898,3 +3898,71 @@
       - desc: Revives Attackers, Defenders, and Casters
     power: INT x 4000%
     maxHits: 9
+
+- name: Witch Evelyse (Halloween)
+  cat: jp
+  picture: Char_Placeholder_Witch_Evelyse
+  weapon: orb
+  ace: true
+  star: 5
+
+  stats:
+    hp: 12285
+    atk: 1733
+    int: 2520
+    def: 1523
+    hit: 1054
+    grd: 1148
+
+  talents:
+    - name: "Flying Broom Witch"
+      effects:
+        - desc: Able to heal over max HP
+        - desc: Gains up to 10000 HP over max HP (party), +15000 (long range)
+    - name: "Candy Rain"
+      effects:
+        - desc: ATK/INT DMG +40% when HP is 100% (party)
+        - desc: Rush DMG +40% at 100% HP and 200+ HC (party)
+    - name: "Coro Lantern Shimmering in the Dark"
+      effects:
+        - desc: Cast time -80%
+        - desc: INT +30% at SC 3+
+        - desc: Recover AP while walking, anti flinch while casting
+    - name: "Mischief Iraption and Flame at the Back of the Eyes"
+      effects:
+        - desc: All allies recover some AP after Eruption and Flame Spear skill
+        - desc: All allies recover 20 AP after using Hot Servant
+
+  skills:
+    - name: "Eruption"
+      picture: Skill_Placeholder
+      element: Fire
+      power: INT x 220%
+      ap: 15
+      maxHits: 2
+    - name: "Fairy Light"
+      picture: Skill_Placeholder
+      power: INT x 180%
+      ap: 30
+      maxHits: 1
+    - name: "Flame Spear"
+      picture: Skill_Placeholder
+      element: Fire
+      power: INT x 250%
+      ap: 21
+      maxHits: 2
+    - name: "Hot Servant"
+      picture: Skill_Placeholder
+      power: INT x 1070%
+      ap: 43
+      maxHits: 3
+
+  rush:
+    name: "Sweet Witch Craft"
+    picture: Rush_Placeholder
+    element: Fire
+    shortEffects: Heal Reduced to 30%
+    effects:
+      - desc: Recovers 100% HP, ATK/INT DMG +50% (party/20s)
+    power: INT x 4000%
+    maxHits: 4
