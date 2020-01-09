@@ -5447,7 +5447,7 @@
         duration: 10
         meta:
           priority: 1
-          buff: Crir Rate
+          buff: Crit Rate
           buffValue: 100
     power: INT x 5500%
     maxHits: 11
