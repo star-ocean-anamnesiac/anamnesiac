@@ -5372,3 +5372,82 @@
           buffValue: 80
     power: INT x 4500%
     maxHits: 1
+
+- name: Mad Scientist Precis (Halloween)
+  cat: jp
+  picture: Char_Placeholder_Mad_Scientist_Precis
+  weapon: gun
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 18291
+    atk: 1563
+    int: 3230
+    def: 1169
+    hit: 1050
+    grd: 826
+
+  talents:
+    - name: "Gloomy Scientist"
+      effects:
+        - desc: Critical chance +30%, + 50% at HP 100%
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffValue: 50
+    - name: "Strange Medicine"
+      effects:
+        - desc: HP recovery 5% of DMG when using Popping Necrodance at SC 3+
+        - desc: INT +20%,  +100% Crit DMG during Rush Combo at 100% HP
+    - name: "Muujin-kun in the Shadows"
+      effects:
+        - desc: DMG taken -100% on dodge (0.5s)
+        - desc: Dodge cost -80 at 100% HP
+        - desc: CB 200% while Dodging
+    - name: "Studious for Another"
+      effects:
+        - desc: INT +20%
+        - desc: HP +30%
+        - desc: AP cost -20% at 100% HP
+        - desc: AP recovery +100 after using heraldy (party/20s)
+
+  skills:
+    - name: "Popping Necromance"
+      picture: Skill_Placeholder
+      power: INT x 1210%
+      ap: 35
+      maxHits: 4
+    - name: "Fireport"
+      picture: Skill_Placeholder
+      element: Fire
+      power: INT x 350%
+      ap: 20
+      maxHits: 6
+    - name: "Fire Torcher"
+      picture: Skill_Placeholder
+      element: Fire
+      power: INT x 1480%
+      ap: 44
+      maxHits: 5
+    - name: "Perios Injection"
+      picture: Skill_Placeholder
+      power: INT x 280%
+      ap: 14
+      maxHits: 1
+
+  rush:
+    name: "Funny Operation"
+    picture: Rush_Placeholder
+    effects: 
+      - desc: Crit Rate
+        all: true
+        duration: 10
+        meta:
+          priority: 1
+          buff: Crir Rate
+          buffValue: 100
+    power: INT x 5500%
+    maxHits: 11
