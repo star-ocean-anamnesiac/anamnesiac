@@ -5373,7 +5373,7 @@
     power: INT x 4500%
     maxHits: 1
 
-- name: Mad Scientist Precis (Halloween)
+- name: Precis F. Neumann (Halloween)
   cat: jp
   picture: Char_Placeholder_Mad_Scientist_Precis
   weapon: gun
