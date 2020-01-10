@@ -6538,7 +6538,7 @@
     power: ATK x 4500%
     maxHits: 1
 
-- name: Glass Palace Rena (Persona)
+- name: Rena Lanford (Persona)
   cat: jp
   picture: Char_Placeholder_Persona_Rena
   weapon: bow
@@ -6616,7 +6616,7 @@
     power: ATK x 4500%
     maxHits: 10
 
-- name: Exorcist Faize (Halloween)
+- name: Faize Sheifa Beleth (Halloween)
   cat: jp
   picture: Char_Placeholder_Exorcist_Faize
   weapon: rifle
