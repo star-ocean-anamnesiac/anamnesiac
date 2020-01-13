@@ -6683,3 +6683,78 @@
       - desc: AP Cost -50% (party/20s)
     power: ATK x 4500%
     maxHits: 10
+
+- name: Ballroom Verda
+  cat: jp
+  picture: Char_Placeholder_Ballroom_Verda
+  weapon: launcher
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15750
+    atk: 2482
+    int: 1575
+    def: 1537
+    hit: 1260
+    grd: 931
+
+  talents:
+    - name: "Radiant Flower Dress"
+      effects:
+        - desc: DMG dealt +30%, +55% at 150+ HC, +80% at 300+ HC
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 80
+    - name: "Red Dance Shoes"
+      effects:
+        - desc: Order Gauge +1
+        - desc: AP cost -70% during order countdown (party)
+        - desc: Assist +1 (party)
+    - name: "Inviting Dance"
+      effects:
+        - desc: AP recovery +100%
+        - desc: Air dodge
+        - desc: DMG taken -100% on dodge (0.5s)
+    - name: "Society's New Face"
+      effects:
+        - desc: Nullify critical dmg penalty when Charge Assault
+        - desc: Recover 5 AP to party when using Multi-Lock Mastery
+    - name: "Mulit-Lock [Mastery]"
+      effects:
+        - desc: Charge Assault Fire Light Bullets (ATKx280%/ Max Charge 5)
+    
+  skills:
+    - name: "Cutie Drive"
+      picture: Skill_Placeholder
+      power: ATK x 350%
+      ap: 21
+      maxHits: 5
+    - name: "Pretty Cluster"
+      picture: Skill_Placeholder
+      element: Lightning
+      power: ATK x 450%
+      ap: 25
+      maxHits: 7
+    - name: "Lovely Bomber"
+      picture: Skill_Placeholder
+      element: Dark
+      power: ATK x 220%
+      ap: 18
+      maxHits: 10
+    - name: "Princess Cannon"
+      picture: Skill_Placeholder
+      power: ATK x 1000%
+      ap: 29
+      maxHits: 4
+
+  rush:
+    name: "Sweet Spiral Rondo"
+    picture: Rush_Placeholder
+    effects:
+      - desc: ATK +50%, INT DMG taken +30% (enemies/20s)
+    power: ATK x 4500%
+    maxHits: 1
