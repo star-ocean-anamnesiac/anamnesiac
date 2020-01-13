@@ -5442,7 +5442,7 @@
     name: "Funny Operation"
     picture: Rush_Placeholder
     effects: 
-      - desc: Crit Rate
+      - desc: Crit Rate 100%
         all: true
         duration: 10
         meta:
@@ -5451,3 +5451,96 @@
           buffValue: 100
     power: INT x 5500%
     maxHits: 11
+
+- name: Pericci (Winter)
+  cat: jp
+  picture: Char_Placeholder_Winter_Pericci
+  weapon: orb
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15540
+    atk: 2670
+    int: 2718
+    def: 1930
+    hit: 1148
+    grd: 840
+
+  talents:
+    - name: "Exciting Christmas"
+      effects:
+        - desc: Convert 50% ATK to INT 
+          all: Invokers/Healers
+          meta:
+            priority: 1
+            buff: ATK -> INT
+            buffValue: 50
+        - desc: Convert 50% INT to ATK 
+          all: Attackers/Defenders/Sharpshooters
+          meta:
+            priority: 1
+            buff: INT -> ATK
+            buffValue: 50
+    - name: "Sake-See Costume"
+      effects:
+        - desc: INt +30% at close range
+          all: true
+          meta:
+            priority: 1
+            buff: INT
+            buffValue: 30
+        - desc: AP cost -25% at long range (party)
+    - name: "Presents for Nice Children"
+      effects:
+        - desc: HP recovery 10% when charge assault short to long range (party)
+        - desc: Slightly RAise rush gauge to all when charge assault long to short range
+    - name: "Yearning for Santa"
+      effects:
+        - desc: Movement speed +30% (party)
+        - desc: AP recovery +50% (party)
+        - desc: AP recovery by walking(party)
+        - desc: Air dodge
+    - name: "Vanguard C [MASTERY]"
+      effects:
+        - desc: Anti flinch while Charge Assault
+        - desc: Nullify Critical DMG penalty while Charge Assault
+        - desc: Critical chance +20% when charge assault long to short range
+
+  skills:
+    - name: "Back-Kick Missiles"
+      picture: Skill_Placeholder
+      power: INT x 340%
+      ap: 19
+      maxHits: 3
+    - name: "Round n' Round Slap"
+      picture: Skill_Placeholder
+      power: INT x 250%
+      ap: 19
+      maxHits: 5
+    - name: "Frozen Dagger"
+      picture: Skill_Placeholder
+      element: Ice
+      power: INT x 580%
+      ap: 25
+      maxHits: 4
+    - name: "Rotary Kneading"
+      picture: Skill_Placeholder
+      power: INT x 1050%
+      ap: 39
+      maxHits: 4
+
+  rush:
+    name: "Happy Present Bomber"
+    picture: Rush_Placeholder
+    effects:
+      - desc: Critical chance +60% | Critical DMG +30%
+        all: true
+        duration: 20
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 60
+    power: INT x 4500%
+    maxHits: 10
