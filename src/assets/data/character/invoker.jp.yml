@@ -5442,7 +5442,7 @@
     name: "Funny Operation"
     picture: Rush_Placeholder
     effects: 
-      - desc: Crit Rate
+      - desc: Crit Rate 100%
         all: true
         duration: 10
         meta:
