@@ -5452,7 +5452,7 @@
     power: INT x 5500%
     maxHits: 11
 
-- name: Pericci
+- name: Pericci (Winter)
   cat: jp
   picture: Char_Placeholder_Winter_Pericci
   weapon: orb
