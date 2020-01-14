@@ -3966,3 +3966,68 @@
       - desc: Recovers 100% HP, ATK/INT DMG +50% (party/20s)
     power: INT x 4000%
     maxHits: 4
+
+- name: Reimi Saionji (New Year's)
+  cat: jp
+  picture: Char_Placeholder_Phoenix_Bow_Reimi
+  weapon: bow
+  ace: true
+  star: 5
+
+  stats:
+    hp: 18155
+    atk: 1773
+    int: 2488
+    def: 1363
+    hit: 1043
+    grd: 1148
+
+  talents:
+    - name: "Brilliant New Departure"
+      effects:
+        - desc: Bowstring Rain・AF Effect Increased to 40% at 100% HP (All)
+        - desc: Bowstring Rain・AF Effect Increased to 50% during Order Countdown (All)
+    - name: "Blessing of the Sacred Bird"
+      effects:
+        - desc: HP Recovery +100% when using Faerie Light・Blessings and Dawn Tri-Star at SC 3+
+    - name: "Alike Spouses?"
+      effects:
+        - desc: AP cost -20% at SC 2, -40% at SC 3+ (party)
+        - desc: AP Cost -70% at SC 4+
+        - desc: Rush gauge +2% every 1s
+    - name: "Reformed Ceremonial Purification Bow"
+      effects:
+        - desc: Order Gauge +1
+        - desc: HP +30%
+        - desc: Anti flinch while attacking
+        - desc: DMG taken -50%
+
+  skills:
+    - name: "Bowstring Rain・AF"
+      picture: Skill_Placeholder
+      power: INT x 250%
+      ap: 20
+      maxHits: 3
+    - name: "Crimson Squall・Blessings"
+      picture: Skill_Placeholder
+      power: INT x 450%
+      ap: 24
+      maxHits: 9
+    - name: "Faerie Light・Blessings"
+      picture: Skill_Placeholder
+      power: INT x 250%
+      ap: 60
+      maxHits: 1
+    - name: "Dawn Tri-Star"
+      picture: Skill_Placeholder
+      power: INT x 710%
+      ap: 31
+      maxHits: 3
+
+  rush:
+    name: "First Fair Weather Wind"
+    picture: Rush_Placeholder
+    effects:
+      - desc: Revives at 50% HP (Attackers/Defenders/Sharpshooters)
+    power: INT x 4000%
+    maxHits: 1
