@@ -10082,3 +10082,81 @@
         duration: 20
     power: ATK x 6500%
     maxHits: 14
+
+- name: Caleen Keemosn (New Year's)
+  cat: jp
+  picture: Char_Placeholder_Red_Fox_Caleen
+  weapon: axe
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15540
+    atk: 2744
+    int: 1537
+    def: 1943
+    hit: 1137
+    grd: 801
+
+  talents:
+    - name: "Graceful Penmanship"
+      effects:
+        - desc: ATK +30% (party)
+        - desc: ATK +80% (4s) after Caleen activates Vanguard
+          all: true
+          meta:
+            priority: 1
+            buff: ATK Damage
+            buffCondition: Vanguard
+            buffValue: 80
+    - name: "Spirit of the Crimson Fox"
+      effects:
+        - desc: AP recovery +100% (party)
+        - desc: AP cost -30% at SC 3, -40% at SC 4+
+    - name: "Pleasure of New Year's Sake"
+      effects:
+        - desc: Anti flinch while attacking
+        - desc: DMG taken -50% while Charge Assault
+        - desc: Recover 15 AP when Charge Assault short to long range
+    - name: "Light of Dawning Reformation"
+      effects:
+        - desc: Cancle Bonus starts at 200% when Charge assault
+        - desc: Critical chance +30% at SC 5+
+    - name: "Vanguard A [MASTERY]"
+      effects:
+        - desc: DMG taken +20% after activating Vanguard (enemies/3s)
+        - desc: Nullify critical taken when Charge Assault
+
+  skills:
+    - name: "Noble Star Layer"
+      picture: Skill_Placeholder
+      power: ATK x 260%
+      ap: 28
+      maxHits: 6
+    - name: "Grace Smasher"
+      picture: Skill_Placeholder
+      power: ATK x 620%
+      ap: 30
+      maxHits: 6
+    - name: "Elegant Blow"
+      picture: Skill_Placeholder
+      power: ATK x 200%
+      ap: 20
+      maxHits: 10
+    - name: "Splend Rambling"
+      picture: Skill_Placeholder
+      element: Ice
+      power: ATK x 1000
+      ap: 45
+      maxHits: 5
+
+  rush:
+    name: "Heavenly Dragon Fang"
+    picture: Rush_Placeholder
+    shortEffects: 
+    effects:
+      - desc: Recover 30% HP | ATK/INT DMG taken (enemies/20s)
+        duration: 20
+    power: ATK x 4500%
+    maxHits: 6
