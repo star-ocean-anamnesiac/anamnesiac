@@ -45,7 +45,7 @@
     "core-js": "^2.5.4",
     "imagemin-webp": "^5.0.0",
     "lazysizes": "^4.1.6",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.13",
     "markdown": "^0.5.0",
     "ngx-filter-pipe": "^2.1.2",
     "ngx-webstorage": "^3.0.0-beta.14",
