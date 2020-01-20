@@ -1,7 +1,7 @@
 - name: "Colossal Axe Beak"
   eventName: "Defeat Colossal Beaks"
   image: axebeak
-  cat: gl
+  cat: jp
   race: Bird
 
   isActive: false

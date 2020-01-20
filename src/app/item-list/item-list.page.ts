@@ -51,7 +51,6 @@ export class ItemListPage implements OnInit, OnDestroy {
   public showSearch: boolean;
   public searchValue = '';
 
-  private storage$: Subscription;
   private router$: Subscription;
   private item$: Subscription;
   private hasModal: boolean;
@@ -72,37 +71,32 @@ export class ItemListPage implements OnInit, OnDestroy {
   ngOnInit() {
     if(!this.itemSorting) { this.itemSorting = 'alpha'; }
 
-    this.storage$ = this.localStorage.observe('isJP').subscribe(val => {
-      this.updateRegionBasedOn(val);
-    });
-
     this.router$ = this.router.events
       .pipe(
         filter(x => x instanceof NavigationEnd)
       )
       .subscribe((x: NavigationEnd) => {
         if(!_.includes(x.url, 'items')) { return; }
-        this.updateRegionBasedOn(this.localStorage.retrieve('isJP'));
+        this.updateRegionBasedOn();
         this.updateItemListOutsideZone();
       });
 
     this.item$ = this.dataService.items$.subscribe(items => {
       setTimeout(() => {
         this.allItems = items;
-        this.updateRegionBasedOn(this.localStorage.retrieve('isJP'));
+        this.updateRegionBasedOn();
         this.updateItemListOutsideZone();
       }, 1000);
     });
   }
 
   ngOnDestroy() {
-    this.storage$.unsubscribe();
     this.router$.unsubscribe();
     this.item$.unsubscribe();
   }
 
-  private updateRegionBasedOn(val: boolean) {
-    this.region = val ? 'jp' : 'gl';
+  private updateRegionBasedOn() {
+    this.region = 'jp';
 
     this.router.navigate([], {
       relativeTo: this.activatedRoute,

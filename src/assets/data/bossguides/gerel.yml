@@ -1,7 +1,7 @@
 - name: "King Gerel"
   eventName: "Eliminate The Gerel Horde!"
   image: gerel
-  cat: gl
+  cat: jp
   race: Plant
 
   isActive: false

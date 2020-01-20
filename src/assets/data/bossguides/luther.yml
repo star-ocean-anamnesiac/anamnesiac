@@ -1,7 +1,7 @@
 - name: "Luther Lansfeld"
   eventName: "Luther's Descent"
   image: luther
-  cat: gl
+  cat: jp
   race: Divinity
 
   isActive: false

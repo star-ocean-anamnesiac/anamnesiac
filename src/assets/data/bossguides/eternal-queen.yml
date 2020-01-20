@@ -2,7 +2,7 @@
 - name: "Eternal Queen"
   eventName: "Summer 1"
   image: eternal_queen
-  cat: gl
+  cat: jp
   race: Demon
   
   isActive: true

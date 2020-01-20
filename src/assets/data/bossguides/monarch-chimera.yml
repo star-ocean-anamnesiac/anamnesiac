@@ -2,7 +2,7 @@
 - name: "Monarch Chimera"
   eventName: "Bride 2"
   image: monarch_chimera
-  cat: gl
+  cat: jp
   race: Beast
   
   isActive: true

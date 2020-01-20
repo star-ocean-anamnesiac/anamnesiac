@@ -2,7 +2,7 @@
 - name: "Executioner"
   eventName: "The Executioner Attacks"
   image: executioner
-  cat: gl
+  cat: jp
   race: Demon
   
   isActive: false

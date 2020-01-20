@@ -2,7 +2,7 @@
 - name: "Blood Valkyrie"
   eventName: "Valkyrie Profile 1"
   image: blood_valkyrie
-  cat: gl
+  cat: jp
   race: Divinity
   
   isActive: false

@@ -1,7 +1,7 @@
 - name: "Pumpkin Cryptvine"
   eventName: "Halloween 1"
   image: pumpkin_cryptvine
-  cat: gl
+  cat: jp
   race: Plant
   
   isActive: false

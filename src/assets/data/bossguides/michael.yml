@@ -2,7 +2,7 @@
 - name: "Michael"
   eventName: "Michael Descends"
   image: michael
-  cat: gl
+  cat: jp
   race: Human
   
   isActive: true

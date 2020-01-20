@@ -1,7 +1,7 @@
 - name: "Mother Polyphaga Gamboge"
   eventName: "Your Own Great Chivalry"
   image: mother_polyphaga_gamboge
-  cat: gl
+  cat: jp
   race: Insect
   
   isActive: true

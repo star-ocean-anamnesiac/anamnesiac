@@ -72,10 +72,8 @@ const writeAllCards = async () => {
 };
 
 const init = async () => {
-  const htmlGL = fs.readFileSync(__dirname + '/compiled-gl.html', 'utf-8');
   const htmlJP = fs.readFileSync(__dirname + '/compiled-jp.html', 'utf-8');
 
-  await load(htmlGL, allCharacters.filter(char => char.cat === 'gl'));
   await load(htmlJP, allCharacters.filter(char => char.cat === 'jp'));
 
   await writeAllCards();

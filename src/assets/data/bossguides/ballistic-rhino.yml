@@ -2,7 +2,7 @@
 - name: "Ballistic Rhino"
   eventName: "Valkyrie Profile - The Purged Wizard Chapter 2"
   image: ballistic_rhino
-  cat: gl
+  cat: jp
   race: Beast
   
   isActive: true

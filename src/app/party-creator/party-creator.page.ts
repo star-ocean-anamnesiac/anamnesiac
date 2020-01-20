@@ -7,7 +7,6 @@ import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 import { ModalController } from '@ionic/angular';
 import { Subscription, zip } from 'rxjs';
 import { filter } from 'rxjs/operators';
-import { LocalStorageService } from 'ngx-webstorage';
 
 import { CharacterListModal } from './character-list.modal';
 import { Character } from '../models/character';
@@ -70,7 +69,6 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
   constructor(
     private router: Router,
     private activatedRoute: ActivatedRoute,
-    private localStorage: LocalStorageService,
     private modalCtrl: ModalController,
     private dataService: DataService
   ) { }
@@ -85,11 +83,9 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
     this.rushToggle = this.rushToggleParam();
     this.weaponLBToggle = this.weaponLBToggleParam();
 
-    this.localStorage.observe('isJP').subscribe(val => {
-      this.updateRegionBasedOn(val);
-      this.updateCharacters();
-      this.updateParty();
-    });
+    this.updateRegionBasedOn();
+    this.updateCharacters();
+    this.updateParty();
 
     this.router$ = this.router.events
       .pipe(
@@ -97,14 +93,14 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
       )
       .subscribe((x: NavigationEnd) => {
         if(!includes(x.url, 'party-creator')) { return; }
-        this.updateRegionBasedOn(this.localStorage.retrieve('isJP'));
+        this.updateRegionBasedOn();
         this.updateBuffs();
       });
 
     this.allData$ = zip(this.dataService.characters$, this.dataService.items$)
       .subscribe(([chars, items]) => {
         this.isReady = true;
-        this.updateRegionBasedOn(this.localStorage.retrieve('isJP'));
+        this.updateRegionBasedOn();
         this.allCharacters = chars;
         this.allItems = items;
 
@@ -263,8 +259,8 @@ export class PartyCreatorPage implements OnInit, OnDestroy {
     });
   }
 
-  private updateRegionBasedOn(val: boolean) {
-    this.region = val ? 'jp' : 'gl';
+  private updateRegionBasedOn() {
+    this.region = 'jp';
 
     this.navigateHere();
   }

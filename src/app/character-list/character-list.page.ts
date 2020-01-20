@@ -2,7 +2,7 @@
 import * as _ from 'lodash';
 import { Subscription } from 'rxjs';
 import { filter } from 'rxjs/operators';
-import { LocalStorage, LocalStorageService } from 'ngx-webstorage';
+import { LocalStorage } from 'ngx-webstorage';
 
 import { ModalController, PopoverController } from '@ionic/angular';
 import { Component, OnInit, OnDestroy, NgZone, ElementRef } from '@angular/core';
@@ -54,7 +54,6 @@ export class CharacterListPage implements OnInit, OnDestroy {
   public showSearch: boolean;
   public searchValue = '';
 
-  private storage$: Subscription;
   private router$: Subscription;
   private character$: Subscription;
 
@@ -62,7 +61,6 @@ export class CharacterListPage implements OnInit, OnDestroy {
 
   constructor(
     private dataService: DataService,
-    private localStorage: LocalStorageService,
     private router: Router,
     private activatedRoute: ActivatedRoute,
     private popoverCtrl: PopoverController,
@@ -74,9 +72,7 @@ export class CharacterListPage implements OnInit, OnDestroy {
   ngOnInit() {
     if(!this.sorting) { this.sorting = 'alpha'; }
 
-    this.storage$ = this.localStorage.observe('isJP').subscribe(val => {
-      this.updateRegionBasedOn(val);
-    });
+    this.updateRegionBasedOn();
 
     this.router$ = this.router.events
       .pipe(
@@ -84,21 +80,20 @@ export class CharacterListPage implements OnInit, OnDestroy {
       )
       .subscribe((x: NavigationEnd) => {
         if(!_.includes(x.url, 'characters')) { return; }
-        this.updateRegionBasedOn(this.localStorage.retrieve('isJP'));
+        this.updateRegionBasedOn();
         this.updateCharacterListOutsideZone();
       });
 
     this.character$ = this.dataService.characters$.subscribe(chars => {
       setTimeout(() => {
         this.allCharacters = chars;
-        this.updateRegionBasedOn(this.localStorage.retrieve('isJP'));
+        this.updateRegionBasedOn();
         this.updateCharacterListOutsideZone();
       }, 1000);
     });
   }
 
   ngOnDestroy() {
-    this.storage$.unsubscribe();
     this.router$.unsubscribe();
     this.character$.unsubscribe();
   }
@@ -134,8 +129,8 @@ export class CharacterListPage implements OnInit, OnDestroy {
     });
   }
 
-  private updateRegionBasedOn(val: boolean) {
-    this.region = val ? 'jp' : 'gl';
+  private updateRegionBasedOn() {
+    this.region = 'jp';
 
     this.router.navigate([], {
       relativeTo: this.activatedRoute,

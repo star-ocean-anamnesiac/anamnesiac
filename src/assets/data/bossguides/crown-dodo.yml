@@ -1,7 +1,7 @@
 - name: "Crown Dohdoh"
   eventName: "Budding Ties on The Planet of Blossoms"
   image: crown_dodo
-  cat: gl
+  cat: jp
   race: Bird
   aliases:
     - Avian Extermination

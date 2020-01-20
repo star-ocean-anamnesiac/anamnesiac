@@ -4,8 +4,6 @@ import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 import * as _ from 'lodash';
 import { filter } from 'rxjs/operators';
 
-import { LocalStorageService } from 'ngx-webstorage';
-
 import { DataService } from '../data.service';
 
 @Component({
@@ -20,21 +18,17 @@ export class StampsPage implements OnInit, OnDestroy {
   private region: 'gl'|'jp';
 
   private router$: any;
-  private storage$: any;
   private stamp$: any;
 
   constructor(
     private router: Router,
     private activatedRoute: ActivatedRoute,
-    private localStorage: LocalStorageService,
     private dataService: DataService
   ) { }
 
   async ngOnInit() {
-    this.storage$ = this.localStorage.observe('isJP').subscribe(val => {
-      this.updateRegionBasedOn(val);
-      this.updateStampList();
-    });
+    this.updateRegionBasedOn();
+    this.updateStampList();
 
     this.router$ = this.router.events
       .pipe(
@@ -42,25 +36,24 @@ export class StampsPage implements OnInit, OnDestroy {
       )
       .subscribe((x: NavigationEnd) => {
         if(!_.includes(x.url, 'items')) { return; }
-        this.updateRegionBasedOn(this.localStorage.retrieve('isJP'));
+        this.updateRegionBasedOn();
         this.updateStampList();
       });
 
       this.stamp$ = this.dataService.stamps$.subscribe(stamps => {
         this.allStamps = stamps;
-        this.updateRegionBasedOn(this.localStorage.retrieve('isJP'));
+        this.updateRegionBasedOn();
         this.updateStampList();
       });
   }
 
   ngOnDestroy() {
-    this.storage$.unsubscribe();
     this.router$.unsubscribe();
     this.stamp$.unsubscribe();
   }
 
-  private updateRegionBasedOn(val: boolean) {
-    this.region = val ? 'jp' : 'gl';
+  private updateRegionBasedOn() {
+    this.region = 'jp';
 
     this.router.navigate([], {
       relativeTo: this.activatedRoute,

@@ -20,14 +20,11 @@ const { classes, weapons, accessories } = root;
 
 const allItems = _.flattenDeep(weapons.concat(accessories).map(({ id }) => {
   const path = id === 'all' ? `accessory/all` : `weapon/${id}`;
-
-  const datagl = fs.readFileSync(`src/assets/data/item/${path}.yml`, 'utf-8');
-  const itemsgl = YAML.safeLoad(datagl);
   
   const datajp = fs.readFileSync(`src/assets/data/item/${path}.jp.yml`, 'utf-8');
   const itemsjp = YAML.safeLoad(datajp);
 
-  const items = itemsgl.concat(itemsjp);
+  const items = itemsjp;
 
   items.forEach(item => {
     item.type = id === 'all' ? 'accessory' : 'weapon';
@@ -38,13 +35,11 @@ const allItems = _.flattenDeep(weapons.concat(accessories).map(({ id }) => {
 }));
 
 const allCharacters = _.flattenDeep(classes.map(charClass => {
-  const datagl = fs.readFileSync(`src/assets/data/character/${charClass.toLowerCase()}.yml`, 'utf-8');
-  const charactersgl = YAML.safeLoad(datagl);
 
   const datajp = fs.readFileSync(`src/assets/data/character/${charClass.toLowerCase()}.jp.yml`, 'utf-8');
   const charactersjp = YAML.safeLoad(datajp);
 
-  const characters = charactersgl.concat(charactersjp);
+  const characters = charactersjp;
 
   characters.forEach(char => char.type = charClass.toLowerCase());
 

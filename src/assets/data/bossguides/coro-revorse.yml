@@ -2,7 +2,7 @@
 - name: "Coro Revorse"
   eventName: "A Powerful Foe Attacks!"
   image: coro_revorse
-  cat: gl
+  cat: jp
   race: Machine
   
   isActive: false

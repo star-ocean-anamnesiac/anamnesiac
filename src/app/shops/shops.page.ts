@@ -4,7 +4,6 @@ import * as _ from 'lodash';
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 
-import { LocalStorageService } from 'ngx-webstorage';
 import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { filter } from 'rxjs/operators';
@@ -23,23 +22,20 @@ export class ShopsPage implements OnInit, OnDestroy {
   public allShops: Shop[] = [];
   public region: string;
 
-  private storage$: Subscription;
   private router$: Subscription;
   private shops$: Subscription;
 
   constructor(
     private router: Router,
     private activatedRoute: ActivatedRoute,
-    private localStorage: LocalStorageService,
+
     private modalCtrl: ModalController,
     private dataService: DataService
   ) { }
 
   ngOnInit() {
-    this.storage$ = this.localStorage.observe('isJP').subscribe(val => {
-      this.updateRegionBasedOn(val);
-      this.updateShopList();
-    });
+    this.updateRegionBasedOn();
+    this.updateShopList();
 
     this.router$ = this.router.events
       .pipe(
@@ -47,25 +43,24 @@ export class ShopsPage implements OnInit, OnDestroy {
       )
       .subscribe((x: NavigationEnd) => {
         if(!_.includes(x.url, 'shops')) { return; }
-        this.updateRegionBasedOn(this.localStorage.retrieve('isJP'));
+        this.updateRegionBasedOn();
         this.updateShopList();
       });
 
     this.shops$ = this.dataService.shops$.subscribe(shops => {
       this.allShops = shops;
-      this.updateRegionBasedOn(this.localStorage.retrieve('isJP'));
+      this.updateRegionBasedOn();
       this.updateShopList();
     });
   }
 
   ngOnDestroy() {
-    this.storage$.unsubscribe();
     this.router$.unsubscribe();
     this.shops$.unsubscribe();
   }
 
-  private updateRegionBasedOn(val: boolean) {
-    this.region = val ? 'jp' : 'gl';
+  private updateRegionBasedOn() {
+    this.region = 'jp';
 
     this.router.navigate([], {
       relativeTo: this.activatedRoute,

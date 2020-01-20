@@ -29,10 +29,10 @@ interface Page {
 })
 export class AppComponent {
 
-  public _jpToggle: boolean;
+  public _jpToggle = true;
 
   @LocalStorage()
-  public isJP: boolean;
+  public isJP = true;
 
   public activePage: string;
 
@@ -68,7 +68,7 @@ export class AppComponent {
   }
 
   public setRegion() {
-    this.isJP = this._jpToggle;
+    this.isJP = true;
   }
 
   private initializeApp() {
@@ -90,7 +90,7 @@ export class AppComponent {
     });
 
     const region = new URLSearchParams(window.location.search).get('region');
-    this.isJP = region === 'jp';
+    this.isJP = true;
   }
 
   private async loadRootData() {

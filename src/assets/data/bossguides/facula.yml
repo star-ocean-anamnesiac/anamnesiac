@@ -2,7 +2,7 @@
 - name: "Facula Dragon"
   eventName: "Quark Seeks Justice"
   image: facula
-  cat: gl
+  cat: jp
   race: Dragon
   
   isActive: false

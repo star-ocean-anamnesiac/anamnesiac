@@ -2,7 +2,6 @@
 import * as _ from 'lodash';
 
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { LocalStorageService } from 'ngx-webstorage';
 import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { filter } from 'rxjs/operators';
@@ -22,22 +21,20 @@ export class BossGuidesPage implements OnInit, OnDestroy {
 
   public region: string;
 
-  private storage$: Subscription;
   private router$: Subscription;
   private bosses$: Subscription;
 
   constructor(
     private router: Router,
     private activatedRoute: ActivatedRoute,
-    private localStorage: LocalStorageService,
     private modalCtrl: ModalController,
     private dataService: DataService
   ) { }
 
   ngOnInit() {
-    this.storage$ = this.localStorage.observe('isJP').subscribe(val => {
-      this.updateRegionBasedOn(val);
-    });
+
+    this.updateRegionBasedOn();
+    this.updateBossGuideList();
 
     this.router$ = this.router.events
       .pipe(
@@ -45,25 +42,25 @@ export class BossGuidesPage implements OnInit, OnDestroy {
       )
       .subscribe((x: NavigationEnd) => {
         if(!_.includes(x.url, 'boss-guides')) { return; }
-        this.updateRegionBasedOn(this.localStorage.retrieve('isJP'));
+        this.updateRegionBasedOn();
         this.updateBossGuideList();
       });
 
     this.bosses$ = this.dataService.bossGuides$.subscribe(bosses => {
       this.allBosses = bosses;
-      this.updateRegionBasedOn(this.localStorage.retrieve('isJP'));
+      console.log(bosses);
+      this.updateRegionBasedOn();
       this.updateBossGuideList();
     });
   }
 
   ngOnDestroy() {
-    this.storage$.unsubscribe();
     this.router$.unsubscribe();
     this.bosses$.unsubscribe();
   }
 
-  private updateRegionBasedOn(val: boolean) {
-    this.region = val ? 'jp' : 'gl';
+  private updateRegionBasedOn() {
+    this.region = 'jp';
 
     this.router.navigate([], {
       relativeTo: this.activatedRoute,
@@ -83,6 +80,7 @@ export class BossGuidesPage implements OnInit, OnDestroy {
   }
 
   public loadGuide(guide: BossGuide) {
+    console.log(guide.name, this.getPreviouslyLoadedGuide())
     if(guide.name === this.getPreviouslyLoadedGuide()) {
       this.loadGuideModal(guide.name);
       return;
@@ -100,6 +98,7 @@ export class BossGuidesPage implements OnInit, OnDestroy {
   public async loadGuideModal(name: string) {
 
     const guide = _.find(this.allBosses, { name, cat: this.region });
+    console.log(guide);
 
     if(!guide) { return; }
 

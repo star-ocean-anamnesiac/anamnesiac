@@ -2,7 +2,7 @@
 - name: "Frost Tree"
   eventName: "Frost Tree Extermination"
   image: frosttree
-  cat: gl
+  cat: jp
   race: Plant
   
   isActive: true

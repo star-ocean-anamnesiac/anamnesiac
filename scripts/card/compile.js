@@ -168,8 +168,6 @@ const allCharHTML = (chars) => chars.map(char => {
 `
 });
 
-const allStringGL = allCharHTML(allCharacters.filter(char => char.cat === 'gl')).join('');
 const allStringJP = allCharHTML(allCharacters.filter(char => char.cat === 'jp')).join('');
 
-fs.writeFileSync(__dirname + '/compiled-gl.html', baseHTML.split('%BASE%').join(allStringGL), 'utf-8');
 fs.writeFileSync(__dirname + '/compiled-jp.html', baseHTML.split('%BASE%').join(allStringJP), 'utf-8');

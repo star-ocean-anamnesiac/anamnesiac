@@ -1,7 +1,7 @@
 - name: "Shrouded Gaze"
   eventName: "Love Across the Stars"
   image: shrouded_gaze
-  cat: gl
+  cat: jp
   race: Demon
   aliases:
     - Gem Guardian

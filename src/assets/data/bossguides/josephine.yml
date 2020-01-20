@@ -2,7 +2,7 @@
 - name: "Josephine (4, Female)"
   eventName: "Master Must Be Punished [Maids 1]"
   image: josephine
-  cat: gl
+  cat: jp
   race: Dragon
   
   isActive: true

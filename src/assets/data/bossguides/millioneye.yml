@@ -1,7 +1,7 @@
 - name: "Millioneye"
   eventName: "Summer 2"
   image: millioneye
-  cat: gl
+  cat: jp
   race: Demon
   
   isActive: true

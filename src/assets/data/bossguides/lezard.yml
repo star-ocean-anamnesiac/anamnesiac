@@ -2,7 +2,7 @@
 - name: "Lezard Valeth"
   eventName: "Valkyrie Profile - The Purged Wizard Chapter 1"
   image: lezard_valeth
-  cat: gl
+  cat: jp
   race: Human
   
   isActive: true

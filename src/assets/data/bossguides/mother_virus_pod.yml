@@ -1,7 +1,7 @@
 - name: "Mother Virus Pod"
   eventName: "Star Ocean Dreamers"
   image: mother_virus_pod
-  cat: gl
+  cat: jp
   race: Machine
 
   isActive: true

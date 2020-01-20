@@ -2,7 +2,7 @@
 - name: "Alma"
   eventName: "Transmogrified Alma's Descent"
   image: alma
-  cat: gl
+  cat: jp
   race: Divinity
   
   isActive: false
