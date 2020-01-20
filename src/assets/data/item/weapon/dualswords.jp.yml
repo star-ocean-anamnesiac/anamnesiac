@@ -564,7 +564,7 @@
       lb: 5
   obtained: Gacha (Limited)
 
-- name: Cherry Blossom Beamswords
+- name: Cherry Blossom Beam Sword
   cat: 'jp'
   star: 5
   picture: Cherry_Blossom_Beamswords
@@ -572,7 +572,7 @@
   int: 528
   factors:
     - desc: Damage dealt +20% by Dualsword Arts
-    - desc: Critical damage dealt +10% when using charge assault
+    - desc: Critical damage dealt +10% during charge assault
       meta:
         priority: 3
         buff: Crit Damage
@@ -581,3 +581,25 @@
     - desc: Hitcount timer +1 second
       lb: 5
   obtained: Crown Dodo (Exchange)
+
+- name: Seaside Sweet Specialty
+  cat: 'jp'
+  star: 5
+  picture: Seaside_Sweet_Specialty
+  atk: 1259
+  int: 1262
+  factors:
+    - desc: Imbues attacks with ice, ice damage +50%
+      element: Ice
+      meta:
+        priority: 4
+        buff: Ice Damage
+        buffValue: 50
+    - desc: Critical chance +60% at Hit count > 100
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 60
+    - desc: HP recovery 10% / 3 sec
+      lb: 5
+  obtained: Gacha

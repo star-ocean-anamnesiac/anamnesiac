@@ -308,3 +308,21 @@
         buffValue: 50
       lb: 5
   obtained: Gacha
+
+- name: Cherry Blossom Beam Sword
+  cat: 'gl'
+  star: 5
+  picture: Cherry_Blossom_Beamswords
+  atk: 531
+  int: 528
+  factors:
+    - desc: "Damage dealt +20% by Doublecross: Art"
+    - desc: Critical damage dealt +10% during charge assault
+      meta:
+        priority: 3
+        buff: Crit Damage
+        buffValue: 10
+        buffCondition: Charge Assault
+    - desc: Hitcount timer +1 second
+      lb: 5
+  obtained: Crown Do Do (Exchange)

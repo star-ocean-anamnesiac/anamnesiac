@@ -691,36 +691,6 @@
     power: INT x 2000%
     maxHits: 11
     
-  notes: >
-      _A decent healer for providing DPS without actually being a DPS character. Millie provides a 30% increase in Elemental DMG and a +50% Crit Buff upon Rush. However, it should be noted that Elemental DMG does not stack with specific Elemental DMG buffs, such as Lightning Wand's +15% Lightning DMG)."_
-      
-      
-      **TL DR**
-      
-      
-      **Pros**
-      
-      - Strong elemental damage buff for the party
-      
-      - Post rush buff that boosts critical rate and heals most of the party's HP
-      
-      - Talent that helps survivability
-      
-      
-      **Cons**
-      
-      - Damage spells take a long time to cast making them bad
-      
-      - Common access to elemental damage buffs post rush that override her talent
-      
-      - Boring to play optimally
-      
-      - Expensive healing
-      
-      
-      **Rotation**
-      
-      *Normal > Faerie Star (Healing & Rush Gain)*
 
 - name: Rena Lanford
   cat: jp
@@ -1006,11 +976,6 @@
             priority: 4
             buff: AP Cost Reduction
             buffValue: 25
-        - desc: Symbology cast time -20%
-          meta:
-            priority: 1
-            buff: Cast Time Reduction
-            buffValue: 20
 
   skills:
     - name: "Radiant Lancer"
@@ -1055,42 +1020,7 @@
     power: INT x 3500%
     maxHits: 10
     
-  notes: >
-      _Actually our first significant GL exclusive buff, putting her more in line with other healers. Her rush gain and cast times are still abysmal, but it actually does feel usable. Be careful, as her cast times are not to be understated - you can definitely feel the length of her spells, and they will put you stationary for a lengthy time (it also means you have to pick the spell you cast wisely). Ideally your team shouldn't be in the position to die with a healer, but in the case it happens, you'll put them right back on their feet. Slight INT buffs if you happen to be with a caster, and a slight damage buff in the form of rush damage._
-      
-      
-      **TL DR**
-      
-      
-      **Pros**
-      
-      - Can revive party members by rushing
-      
-      - Powerful post rush self buff that gives insane healing and damage
-      
-      - Consistent damage
-      
-      - Buffs INT and rush damage
-      
-      - Hard hitting rush compared to most healers
-      
-      
-      **Cons**
-      
-      - Abysmal rush gain
-      
-      - Lack of powerful buffs for the party
-      
-      - Lack of a good talent that helps survivability
-      
-      
-      **Rotation**
-      
-      *(Normal >) Lancer/Comet^n - Rush Gain, Lancer or Comet depending on target.*
 
-      *Normal > Comet > Faerie - More potent healing w/ Rush Gain*
-
-      *Faerie^n - Healing and Rush Gain*
  
 - name: Sarah Jerand
   cat: jp
@@ -1123,7 +1053,7 @@
         - desc: Recovers 5% of max HP every 5 seconds
           all: Long Range Weapons
     - name: "Purge II"
-      shortEffects: Nullifies poison/paralysis for 90 seconds(Party)
+      shortEffects: Nullifies poison/paralysis for 90 seconds (Party)
       effects: 
         - desc: Nullifies poison for 90 seconds
           all: true
@@ -1183,46 +1113,7 @@
     power: INT x 2000%
     maxHits: 11
     
-  notes: >
-      _Discount Rena for ranged units. She's an non-ACE, which means lower stats but easier LBs, so it's a decent trade-off. Her main goal is to throw Angel Feather on the team and exist. However, being another staff unit with no cast-time redux means that her rush gain and heal timing will both be a bit slow. It's likely that a team will consistently need to 3-rush without her due to having to spend time with AF upkeep. Minor benefits to ranged units like Maria, who enjoy the AP recovery. Minor cleric, for specifc status effects._
-      
-      
-      **TL DR**
-      
-      
-      **Pros**
-      
-      - 5 star non-ace so is cheaper to max limit break and augment
-      
-      - Immunity to Poison and Paralysis.
-      
-      - Her rush is an excellent clutch heal and includes party cleanse.
-      
-      - Grit talent makes her hard to kill.
-      
-      - Angel Feather stacks with all party passive buffs.
-      
-      
-      **Cons**
-      
-      - 5 star non-ace so has less stats
-      
-      - Slow cast times, staff casting animation and ridiculous AP costs makes clutch healing very difficult.
-      
-      - Angel Feather actively interferes with her reliability due to its lengthy cast time & AP cost.
-      
-      - Slow rush gain
-      
-      - Poor damage
-      
-      
-      **Rotation**
-      
-      *Angel Feather - Buff, reapply as necessary.*
 
-      *Normal > Tornado > Faerie - Rush Gain*
-
-      *Faerie^n - Healing*
 
 - name: Precis F. Neumann (Winter)
   cat: jp
@@ -2514,13 +2405,13 @@
             priority: 4
             buff: AP Cost Reduction
             buffValue: 25
-    - name: "Ready to Transcend Space-Time"
+    - name: "Trans-Dimensional Resolve"
       effects: 
         - desc: Recovers 5% of max HP every 3 seconds
           all: true
         - desc: Nullifies silence for 180 seconds
           all: false
-    - name: "Wanting to Grow Up"
+    - name: "Desire to Grow"
       effects: 
         - desc: Critical damage dealt +20% when HP is 100%
           all: true
@@ -2529,7 +2420,7 @@
             buff: Crit Damage
             buffCondition: HP is 100
             buffValue: 20
-    - name: "Investigating the Music Box"
+    - name: "Music Box Investigation"
       effects: 
         - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
           all: true
@@ -2690,10 +2581,10 @@
             buffValue: 30
     - name: "Not Alone"
       effects: 
-        - desc: Fairy Light Cross increases to ATK +30% when Relia's HP is 100%
+        - desc: Buff effect of Fairy Light Cross increases to ATK +30% when Relia's HP is 100%
     - name: "Believing Heart"
       effects: 
-        - desc: Brute Enlightenment increases to INT +35% and ATK damage taken -25% when Relia's HP is 100%
+        - desc: Buff effect of Brute Enlightenment increases to INT +35% and ATK damage taken -25% when Relia's HP is 100%
             
   skills:
     - name: "Enraging Faerie Light"
@@ -2835,7 +2726,7 @@
             buff: AP Cost Reduction
             buffCondition: Short Range
             buffValue: 20
-    - name: "Glutton Stray Cat"
+    - name: "Hungry Stray"
       effects: 
         - desc: Normal attack AP recovery +100%
           meta:
@@ -2843,7 +2734,7 @@
             buff: AP Recovery From Normal Attacks
             buffValue: 100
         - desc: Recovers 100% AP on perfect dodge
-    - name: "Saint Picture Book"
+    - name: "Saint's Picture Book"
       effects: 
         - desc: Symbology cast time -80%
           meta:
@@ -3111,7 +3002,7 @@
     power: INT x 4000%
     maxHits: 8
 
-- name: Mirage Koas (Bunny)
+- name: Mirage Koas (Bunny Ears)
   cat: jp
   rating: 6
   picture: Bunny_Ears_Mirage
@@ -3142,7 +3033,7 @@
             priority: 1
             buff: Damage Taken Reduction
             buffValue: 30
-        - desc: Damage taken -50% when HP is <50%
+        - desc: Damage taken -50% when HP is under 50%
           meta:
             priority: 1
             buff: Damage Taken Reduction
@@ -3453,32 +3344,22 @@
 
   talents:
     - name: "A Dream to Study Abroad"
-      shortEffects: Critical hit chance/critical damage dealt +20%, and critical hit chance/critical damage dealt +40% when not behind target
       effects: 
-        - desc: Critical hit chance +20%
+        - desc: Critical hit chance and critical damage dealt +20%
           all: true
           meta:
             priority: 1
-            buff: Crit Rate
+            buffs:
+              - Crit Rate
+              - Crit Damage
             buffValue: 20
-        - desc: Critical hit chance +40% when not behind target
+        - desc: Critical hit chance and critical damage dealt +40% when not behind target
           all: true
           meta:
             priority: 1
-            buff: Crit Rate
-            buffCondition: Not Behind Target
-            buffValue: 40
-        - desc: Critical damage dealt +20%
-          all: true
-          meta:
-            priority: 1
-            buff: Crit Damage
-            buffValue: 20
-        - desc: Critical damage dealt +40% when not behind target
-          all: true
-          meta:
-            priority: 1
-            buff: Crit Damage
+            buffs:
+              - Crit Rate
+              - Crit Damage
             buffCondition: Not Behind Target
             buffValue: 40
     - name: "Mother's Support"
@@ -3706,7 +3587,7 @@
     element: Ice
     shortEffects: Recovers 80% of max HP, and single target damage +50% (Party/20s)
     effects: 
-      - desc: Recovers 80% of HP
+      - desc: Recovers 80% of max HP
         all: true
       - desc: Single target damage +50%
         all: true
@@ -3717,3 +3598,371 @@
           buffValue: 50        
     power: INT x 4000%
     maxHits: 12
+ 
+ 
+- name: Sarah Jerand (Awakened)
+  cat: jp
+  picture: Sarah
+  weapon: staff
+  ace: false
+  limited: false
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 17493
+    atk: 1575
+    int: 2615
+    def: 1450
+    hit: 973
+    grd: 1155
+
+  talents:
+    - name: "Beat of My Drum"
+      effects: 
+        - desc: AP recovery +30%
+          all: true
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffValue: 30
+        - desc: AP recovery +150% at long range
+          all: true
+          meta:
+            priority: 1
+            buff: AP Recovery
+            buffCondition: Long Range
+            buffValue: 150
+    - name: "Healer's Touch"
+      effects: 
+        - desc: Recovers 5% of max HP every 5 seconds
+          all: true
+        - desc: Recovers 10% of max HP every 5 seconds
+          all: Long Range Weapons
+    - name: "Purge II"
+      effects: 
+        - desc: Nullifies poison/paralysis/silence for 120 seconds
+          all: true
+        - desc: Symbology cast time -100%
+          meta:
+            priority: 1
+            buff: Cast Time Reduction
+            buffValue: 100
+    - name: "Premonitions"
+      effects: 
+        - desc: 95% chance of surviving a lethal attack when at 10% of max HP or more
+        - desc: 95% chance of surviving a lethal attack when at 10% of max HP or more and at long range
+          all: true
+    - name: "Crooked Glasses"
+      effects: 
+        - desc: Damage taken -15%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 15
+        - desc: Damage taken -30% when HP is over 50%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: HP is over 50%
+            buffValue: 30
+        - desc: Damage taken -100% after dodging (Party/0.5s)
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction
+            buffCondition: Dodging
+            buffValue: 100
+    - name: "Fated to be Chased by Cats"
+      shortEffects: INT +20%, DEF +20%, GRD +10%, and HP +40%
+      effects: 
+        - desc: INT +20%
+          meta:
+            priority: 1
+            buff: INT
+            buffValue: 20
+        - desc: DEF +20%
+          meta:
+            priority: 1
+            buff: DEF
+            buffValue: 20
+        - desc: GRD +10%
+          meta:
+            priority: 1
+            buff: GRD
+            buffValue: 10
+        - desc: HP +40%
+          meta:
+            priority: 1
+            buff: HP
+            buffValue: 30
+
+  skills:
+    - name: "Faerie Light"
+      picture: Faerie_Light
+      power: INT x 250%
+      ap: 50
+      notes: Party Heal
+      maxHits: 1  
+    - name: "Wind Blade"
+      picture: Wind_Blade
+      element: Wind
+      power: INT x 210%
+      ap: 20
+      maxHits: 2
+    - name: "Angel Feather"
+      picture: Angel_Feathers
+      power: 0%
+      ap: 30
+      notes: ATK/INT/DEF/HIT/GRD +20% (Party/20s)
+      maxHits: 1
+      meta:
+        priority: 2
+        buffs:
+          - ATK
+          - INT
+          - DEF
+          - HIT
+          - GRD
+        buffValue: 20
+    - name: "Tornado"
+      picture: Tornado
+      element: Wind
+      power: INT x 510%
+      ap: 35
+      maxHits: 2
+    - name: "Magnum Tornado: AF"
+      picture: Magnum_Tornado
+      element: Wind
+      power: INT x 1490%
+      ap: 39
+      notes: ATK/INT/DEF/HIT/GRD +30% (Party/10s)
+      maxHits: 9
+      meta:
+        priority: 2
+        buffs:
+          - ATK
+          - INT
+          - DEF
+          - HIT
+          - GRD
+        buffValue: 30
+      
+  rush:
+    name: "Healing Blast Hurricane"
+    picture: Healing_Blast_Hurricane_Sarah
+    element: Wind
+    shortEffects: Recovers 70% of max HP and nullifies status afflictions (Party)
+    effects: 
+      - desc: Recovers 70% HP
+        all: true
+      - desc: Nullifies status afflictions
+        all: true
+    power: INT x 4000%
+    maxHits: 11    
+
+- name: Katarina (Violet)
+  cat: jp
+  picture: Healing_Gun_Katarina
+  weapon: rifle
+  ace: false
+  limited: false
+  star: 3
+
+  stats:
+    hp: 7436
+    atk: 963
+    int: 1153
+    def: 751
+    hit: 569
+    grd: 628
+
+  talents:
+    - name: "Well-Used Gun"
+      effects: 
+        - desc: ATK damage taken -20% 
+          all: true
+          meta:
+            priority: 1
+            buff: ATK Damage Taken Reduction
+            buffValue: 20
+    - name: "Peace Negotiator"
+      effects:
+        - desc: Recovers 5% of max HP every 3 seconds when at under 50% HP
+          all: false
+        
+  skills:
+    - name: "Healing"
+      picture: Healing
+      power: INT x 170%
+      ap: 40
+      maxHits: 1
+    - name: "Shadow Needles"
+      picture: Shadow_Needles
+      element: Dark
+      power: INT x 240%
+      ap: 23
+      maxHits: 5
+    - name: "Faerie Light"
+      picture: Faerie_Light
+      power: INT x 250%
+      ap: 60
+      maxHits: 1
+
+  rush:
+    name: "Revised Dark Devourer"
+    picture: Revised_Devourer_Healing_Rifle_Katarina
+    element: Dark
+    effects:
+      - desc: Recovers 100% HP
+        all: true
+    power: INT x 2500%
+    maxHits: 5
+
+- name: Ioshua Jerand
+  cat: jp
+  picture: Ioshua_Jerand
+  weapon: staff
+  ace: true
+  star: 5
+
+  stats:
+    hp: 13965
+    atk: 1747
+    int: 2482
+    def: 1365
+    hit: 1057
+    grd: 1134
+
+  talents:
+    - name: "Looking for Sister"
+      effects:
+        - desc: Increase Fairy Light's buff to 35% at 100% HP
+        - desc: AP Recovery +100%, symbology cast time -90% and
+        - desc: Anti flinch while casting symbology
+    - name: "Shy"
+      effects:
+        - desc: Recover 10% HP/ 3 sec, Recover 20% HP/ 3 sec at HIT > 200 (party)
+    - name: "Neat Feature"
+      effects:
+        - desc: DMG taken -40% at long range (self), -20% (party)
+        - desc: Critical chance +20%
+          all: true
+          meta:
+            priority: 3
+            buff: Crit Rate
+            buffCondition: HP at 100%
+            buffValue: 20
+    - name: "The Truth Hidden in Ruins"
+      effects:
+        - desc: Rush gauge increases by 50% when allies die (effect doesn't stack if multiple allies die at once)
+
+  skills:
+    - name: "Thunderbolt"
+      picture: Skill_Placeholder
+      element: Lightning
+      power: INT x 820%
+      ap: 24
+      maxHits: 3
+    - name: "Lightning Blast"
+      picture: Skill_Placeholder
+      element: Lightning
+      power: INT x 280%
+      ap: 14
+      maxHits: 10
+    - name: "Fairy Light"
+      picture: Skill_Placeholder
+      power: INT x 180%
+      ap: 30
+      notes: Recover some HP for all allies, ATK, INT +20%/ +35% at 100% HP, (party)
+      maxHits: 1
+      meta:
+        priority: 2
+        buffs:
+          - ATK
+          - INT
+        buffValue: 35
+    - name: "Thunderstrom"
+      picture: Skill_Placeholder
+      element: Lightning
+      power: INT x 1280%
+      ap: 27
+      maxHits: 5
+
+  rush:
+    name: "Thundercloud"
+    picture: Rush_Placeholder
+    element: Lightning
+    effects:
+      - desc: Revives Attackers, Defenders, and Casters
+    power: INT x 4000%
+    maxHits: 9
+
+- name: Evelysse  (Halloween)
+  cat: jp
+  picture: Char_Placeholder_Witch_Evelyse
+  weapon: orb
+  ace: true
+  star: 5
+
+  stats:
+    hp: 12285
+    atk: 1733
+    int: 2520
+    def: 1523
+    hit: 1054
+    grd: 1148
+
+  talents:
+    - name: "Flying Broom Witch"
+      effects:
+        - desc: Able to heal over max HP
+        - desc: Gains up to 10000 HP over max HP (party), +15000 (long range)
+    - name: "Candy Rain"
+      effects:
+        - desc: ATK/INT DMG +40% when HP is 100% (party)
+        - desc: Rush DMG +40% at 100% HP and 200+ HC (party)
+    - name: "Coro Lantern Shimmering in the Dark"
+      effects:
+        - desc: Cast time -80%
+        - desc: INT +30% at SC 3+
+        - desc: Recover AP while walking, anti flinch while casting
+    - name: "Mischief Iraption and Flame at the Back of the Eyes"
+      effects:
+        - desc: All allies recover some AP after Eruption and Flame Spear skill
+        - desc: All allies recover 20 AP after using Hot Servant
+
+  skills:
+    - name: "Eruption"
+      picture: Skill_Placeholder
+      element: Fire
+      power: INT x 220%
+      ap: 15
+      maxHits: 2
+    - name: "Fairy Light"
+      picture: Skill_Placeholder
+      power: INT x 180%
+      ap: 30
+      maxHits: 1
+    - name: "Flame Spear"
+      picture: Skill_Placeholder
+      element: Fire
+      power: INT x 250%
+      ap: 21
+      maxHits: 2
+    - name: "Hot Servant"
+      picture: Skill_Placeholder
+      power: INT x 1070%
+      ap: 43
+      maxHits: 3
+
+  rush:
+    name: "Sweet Witch Craft"
+    picture: Rush_Placeholder
+    element: Fire
+    shortEffects: Heal Reduced to 30%
+    effects:
+      - desc: Recovers 100% HP, ATK/INT DMG +50% (party/20s)
+    power: INT x 4000%
+    maxHits: 4

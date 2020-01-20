@@ -1,0 +1,45 @@
+- name: "Crown Dohdoh"
+  eventName: "Budding Ties on The Planet of Blossoms"
+  image: crown_dodo
+  cat: gl
+  race: Bird
+  aliases:
+    - Avian Extermination
+  
+  isActive: true
+
+  enrage:
+    m1: "7:00"
+    m2: "7:00"
+    m3: "4:00"
+    	    
+  statusInflictions:
+    - Paralysis
+
+  weaknesses:
+    - element: Fire
+      percentWeakness: 01
+
+    - status: Freeze
+      vuln: Low
+
+    - status: Poison
+      vuln: Low
+
+  recommendations:
+    - plain: Fire damage
+    - plain: Anti-flinch
+    - plain: High mobility
+
+  desc: >
+    Mobile boss that does both physical and symbological attacks. Attack pattern intensifies as its HP decreases. Slightly susceptive to poison and freeze; however, poison is not as effective in M2 and M3. Watch out for the spell that inflicts paralysis!
+  
+  moves:
+    - name: Grand Shockwave
+      targets: Any
+      isEnrage: true
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Leaps high into the air and stomps down, inflicting massive damage on all party members. Repeats immediately.

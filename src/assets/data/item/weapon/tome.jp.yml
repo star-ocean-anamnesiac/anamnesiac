@@ -181,7 +181,7 @@
       lb: 5
   obtained: Coin Exchange
 
-- name: Demonology Index
+- name: Grand Encyclopedia of Demonology
   cat: 'jp'
   star: 5
   picture: Demonology_Index
@@ -404,3 +404,45 @@
         buffValue: 10
       lb: 5   
   obtained: "Lezard / Valkyrie Profile: The Purged Wizard (Achievement)"
+
+- name: Midsummer Swimsuit Photo Album
+  cat: 'jp'
+  star: 5
+  picture: Midsummer_Swimsuit_Photo_Album
+  atk: 1255
+  int: 1260
+  factors:
+    - desc: Damage dealt to Beasts +60%
+      meta:
+        priority: 4
+        buff: Damage To Beasts
+        buffValue: 60
+    - desc: AP cost -20% at Hit count > 100
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffValue: 20
+    - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
+      lb: 5
+  obtained: Gacha
+
+- name: Kitab Al Azif Necronomicon
+  cat: 'jp'
+  star: 5
+  picture: Kitab_Al_Azif_Necronomicon
+  atk: 1260
+  int: 1261
+  factors:
+    - desc: Dark damage dealt +50%
+      meta:
+        priority: 4
+        buff: Dark Damage
+        buffValue: 50
+    - desc: Dark damage dealt +80% at hit count > 150
+      meta:
+        priority: 4
+        buff: Dark Damage
+        buffValue: 80
+    - desc: HP recovery 10% every 3 sec
+      lb: 5
+  obtained: Gacha

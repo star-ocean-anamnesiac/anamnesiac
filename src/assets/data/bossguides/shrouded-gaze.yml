@@ -1,0 +1,42 @@
+- name: "Shrouded Gaze"
+  eventName: "Love Across the Stars"
+  image: shrouded_gaze
+  cat: gl
+  race: Demon
+  aliases:
+    - Gem Guardian
+  
+  isActive: true
+
+  enrage:
+    m1: "7:00"
+    m2: "7:00"
+    m3: "4:00"
+    	    
+  statusInflictions:
+    - Freeze
+    - Silence
+
+  weaknesses:
+    - element: Lightning
+      percentWeakness: 25
+
+    - status: Poison
+      vuln: Low
+
+  recommendations:
+    - plain: Lightning damage
+    - plain: Anti-flinch
+
+  desc: >
+    Attack pattern intensifies as its HP decreases. Slightly susceptive to poison. Watch out for the attacks that inflict silence and freeze! Its long range attacks can be deceptively slow, so don't be caught off guard.
+  
+  moves:
+    - name: Finale
+      targets: Any
+      isEnrage: true
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Similar to Millioneye's enrage. Deep freeze attack that deals lethal damage.

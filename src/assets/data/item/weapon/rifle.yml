@@ -1,17 +1,98 @@
+- name: Pulse Rifle
+  cat: 'gl'
+  star: 5
+  picture: Pulse_Rifle
+  atk: 1111
+  int: 1109
+  factors:
+    - desc: Imbues attacks with lightning
+      element: Lightning
+    - desc: AP recovery +50%
+      meta:
+        priority: 4
+        buff: AP Recovery
+        buffValue: 50
+    - desc: 70% chance of surviving a lethal attack when at 20% of max HP or more
+      lb: 5
+  obtained: Gacha
 
-- name: Blue Comet Trigger 2
-  cat: 'jp'
+- name: Kaleidoscope
+  cat: 'gl'
+  star: 5
+  picture: Kaleidoscope
+  atk: 531
+  int: 529
+  factors:
+    - desc: Damage dealt +20% by Electric Shockwave
+    - desc: HP +10%
+      meta:
+        priority: 4
+        buff: HP
+        buffValue: 10
+    - desc: Lightning damage dealt +10%
+      lb: 5
+      meta:
+        priority: 4
+        buff: Lightning Damage
+        buffValue: 10
+    - desc: Dark damage dealt +10%
+      lb: 5
+      meta:
+        priority: 4
+        buff: Dark Damage
+        buffValue: 10        
+  obtained: Shrouded Gaze (Exchange)
+  
+- name: Blue Comet Trigger
+  cat: 'gl'
   star: 5
   picture: Blue_Comet_Trigger
   atk: 651
   int: 649
   factors:
-    - desc: +15% DMG to single targets
+    - desc: Single target damage +15%
       meta:
         priority: 4
         buff: Single Target Damage
         buffValue: 15
-    - desc: Hit Count timer +1s
+    - desc: Hitcount timer +1 second
     - desc: Additional hit that deals 5% of damage dealt by normal attacks
       lb: 5
-  obtained: Rifle Coin Exchange
+  obtained: Coin Exchange
+
+- name: The Vampire Blaster
+  cat: 'gl'
+  star: 5
+  picture: Vampiric_Canon_Vampir
+  atk: 514
+  int: 513
+  factors:
+    - desc: ATK +15%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 15
+    - desc: INT damage taken -10%
+      meta:
+        priority: 4
+        buff: INT Damage Taken Reduction
+        buffValue: 10
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP
+      lb: 3
+  obtained: Coin Exchange, Gacha
+
+- name: Dust Shot
+  cat: 'gl'
+  star: 4
+  picture: Placeholder_Icon
+  atk: 470
+  int: 467
+  factors:
+    - desc: Imbues attacks with earth
+      element: Earth
+    - desc: ATK +5%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 5
+  obtained: Transmutation, Gacha

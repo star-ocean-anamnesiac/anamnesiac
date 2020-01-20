@@ -2435,7 +2435,7 @@
             priority: 4
             buff: AP Cost Reduction
             buffValue: 20
-    - name: "Flower Dedicated to the Grave"
+    - name: "Graveside Flowers"
       effects:
         - desc: AP cost -50% when skill chain is >3
           meta:
@@ -2443,9 +2443,9 @@
             buff: AP Cost Reduction
             buffCondition: Skill Chain 3+
             buffValue: 50
-    - name: "New Step"
+    - name: "A New Step Forward"
       effects:
-        - desc: INT damage +50% when hitcount is >100
+        - desc: INT damage dealt +50% when hitcount is >100
           meta:
             priority: 4
             buff: INT Damage
@@ -3459,7 +3459,7 @@
     power: INT x 3500%
     maxHits: 6
 
-- name: Reimi Saionji (Federation)
+- name: Reimi Saionji (Official)
   cat: jp
   rating: 1
   picture: Federation_Reimi
@@ -3676,7 +3676,7 @@
     grd: 833
 
   talents:
-    - name: "Shining Arrow"
+    - name: "Brilliant Start"
       effects: 
         - desc: ATK/INT damage dealt +35%
           all: true
@@ -3698,7 +3698,7 @@
             buff: Cast Time Reduction
             buffCondition: Skill Chain 3+
             buffValue: 60
-    - name: "Role Model"
+    - name: "Impeccable Talent"
       shortEffects: ATK/INT damage taken +15% after using Shadow Lamp (Enemies/10s)
       effects: 
         - desc: ATK/INT damage taken +15% after using Shadow Lamp
@@ -3711,7 +3711,7 @@
               - Enemy INT Damage Taken
             buffCondition: after using Shadow Lamp
             buffValue: 15
-    - name: "Pitch Black Outfit"
+    - name: "Black Attire"
       effects: 
         - desc: Stun rate +20% after using symbology (10s)
           duration: 10
@@ -3720,9 +3720,9 @@
             buff: Stun Rate
             buffCondition: after using symbology
             buffValue: 20
-        - desc: Additional hit that deals 10% more damage during normal attacks after using battle skills (10s)
+        - desc: Additional hit that deals 10% more damage during normal attacks after using skills (10s)
           duration: 10
-    - name: "Loyalty to Master"
+    - name: "Loyalty to Her Master"
       shortEffects: INT +20% and HP +15%
       effects: 
         - desc: INT +20%
@@ -3795,7 +3795,7 @@
     grd: 847
 
   talents:
-    - name: "Ten Wise Men's Staff Officer"
+    - name: "Wise Man's Strategy"
       effects: 
         - desc: INT +15%
           all: true
@@ -3803,7 +3803,7 @@
             priority: 4
             buff: INT
             buffValue: 15
-    - name: "Sharp Eyes and Ears"
+    - name: "Sharp and Shrewd"
       effects: 
         - desc: Converts 55% of INT to ATK
           all: Attackers/Sharpshooters/Defenders
@@ -3811,7 +3811,7 @@
             priority: 1
             buff: INT -> ATK
             buffValue: 55
-    - name: "Observational Use Prime Field"
+    - name: "Observer"
       shortEffects: Critical hit chance +20%/+40% when hitcount is >100/>200
       effects: 
         - desc: Critical hit chance +20% when hitcount is >100
@@ -3826,7 +3826,7 @@
             buff: Crit Rate
             buffCondition: Hit Count > 200
             buffValue: 40
-    - name: "Ruin of Treachery"
+    - name: "Decimating Treachery"
       effects: 
         - desc: AP cost -50% after using Magnum Tornado (10s)
           meta:
@@ -4669,7 +4669,7 @@
     grd: 847
 
   talents:
-    - name: One Who Knows Paradise
+    - name: "One Who Knows Paradise"
       effects: 
         - desc: Converts 50% of ATK to INT
           all: Invokers/Healers
@@ -4683,7 +4683,7 @@
             priority: 1
             buff: INT -> ATK
             buffValue: 50
-    - name: Thirst for Wisdom 
+    - name: "Thirst for Wisdom"
       shortEffects: ATK/INT damage taken +20%/+50%/+100% when hitcount is >200/>400/>800 (Enemies)
       effects: 
         - desc: ATK/INT damage taken +20% when hitcount is >200
@@ -4713,7 +4713,7 @@
               - Enemy INT Damage Taken	
             buffCondition: Hit Count > 800
             buffValue: 100
-    - name: Circle of the Time's Fabric
+    - name: "Circle of Time's Fabric"
       effects: 
         - desc: Movement speed +30%
           all: true
@@ -4725,7 +4725,7 @@
             buffValue: 50
         - desc: AP recovery increases when moving 
           all: true
-    - name: Tower That Reveals the Truth of the Universe
+    - name: "Tower That Reveals the Truth of the Universe"
       effects: 
         - desc: ATK/INT/DEF/HIT/GRD +20% when hitcount is >100 
           meta:
@@ -4784,3 +4784,763 @@
     power: INT x 4500%
     maxHits: 6
     
+- name: Mirage Koas (Bridal)
+  cat: jp
+  picture: Bridal_Mirage
+  weapon: knuckle
+  ace: true
+  semi: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 20475
+    atk: 2704
+    int: 3230
+    def: 1930
+    hit: 1155
+    grd: 819
+
+  talents:
+    - name: "Sacred White Dress"
+      effects: 
+        - desc: "Buff effect of Impulse Force • AF increases to ATK/INT/DEF/HIT/GRD +40% when hitcount is >150"
+          all: false
+    - name: "A Noble's Spirit"
+      effects: 
+        - desc: AP recovery +50%
+          all: true
+          meta:
+            priority: 1
+            buff: AP Recovery		  
+            buffValue: 50
+        - desc: AP recovery increases while moving
+          all: true
+        - desc: Damage taken -40% when skill chain is >3
+          all: false
+          meta:
+            priority: 1
+            buff: Damage Taken Reduction	
+            buffCondition: Skill Chain 3+
+            buffValue: 40
+        - desc: AP cost -40% when skill chain is >4
+          all: false
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain 4+
+            buffValue: 40
+    - name: "Eternally Bound"
+      effects: 
+        - desc: Nullifies charge assault critical damage penalty
+          all: false
+        - desc: Imbues attacks with lightning
+          all: false
+        - desc: Cancel bonus starts at 200% when using charge assault
+          all: false
+    - name: "Journey for a Dream"
+      effects: 
+        - desc: INT +20%
+          all: false
+          meta:
+            priority: 1
+            buff: INT
+            buffValue: 20
+        - desc: HP +30%
+          all: false
+          meta:
+            priority: 1
+            buff: HP
+            buffValue: 30
+        - desc: Evasion possible during air attacks
+          all: false
+        - desc: Damage dealt +50% by Aerial Raid when skill chain is >5
+          all: false
+
+  skills:
+    - name: "Canon Blaze • Petal"
+      picture: Skill_Placeholder
+      power: INT x 620%
+      ap: 38
+      maxHits: 3
+    - name: "Impulse Force • AF"
+      picture: Palm_of_Destruction
+      power: INT x 200%
+      ap: 20
+      notes: ATK/INT/DEF/HIT/GRD +20% (Party/10s)
+      maxHits: 1
+      meta:
+        priority: 2
+        buffs:
+          - ATK
+          - INT
+          - DEF
+          - HIT
+          - GRD
+        buffValue: 20
+    - name: "Current Knuckle • Petal"
+      picture: Current_Knuckle
+      power: INT x 460%
+      ap: 30
+      maxHits: 3
+    - name: "Aerial Raid"
+      picture: Skill_Placeholder
+      power: INT x 500%
+      ap: 33
+      maxHits: 1
+      
+  rush:
+    name: E Max Destroyer
+    picture: Rush_Placeholder
+    shortEffects: Recovers 30% of max HP, and ATK/INT damage dealt +50% (Party/20s)
+    effects: 
+      - desc: Recovers 30% of max HP
+        all: true
+      - desc: ATK/INT damage dealt +50%
+        all: true
+        duration: 20
+        meta:
+          priority: 1
+          buffs:
+            - ATK Damage
+            - INT Damage			
+          buffValue: 50
+    power: INT x 5000%
+    maxHits: 18
+
+
+- name: Arche Klein
+  cat: jp
+  picture: Arche
+  weapon: scythe
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15477
+    atk: 1537
+    int: 3293
+    def: 1129
+    hit: 1050
+    grd: 840
+
+  talents:
+    - name: "Cheerful Magician"
+      effects: 
+        - desc: INT +20%
+          all: true
+          meta:
+            priority: 1
+            buff: INT
+            buffValue: 30
+        - desc: INT +40% when HP is 100%
+          all: true
+          meta:
+            priority: 1
+            buff: INT
+            buffCondition: HP is 100%
+            buffValue: 40
+        - desc: Converts 50% of INT to ATK
+          all: Attackers/Sharpshooters/Defenders
+          meta:
+            priority: 1
+            buff: INT -> ATK
+            buffValue: 50
+    - name: "Spellmaster"
+      effects: 
+        - desc: Able to move at 90% speed while casting symbology
+          all: false
+        - desc: Absorbs 2% of damage dealt by symbology when not moving and not in front of target
+    - name: "Half-Elf's Wisdom"
+      effects: 
+        - desc: INT damage dealt +50% when HP is 100%
+          all: false
+          meta:
+            priority: 1
+            buff: INT Damage
+            buffCondition: HP is 100%
+            buffValue: 50
+        - desc: Imbues attacks with earth when using earth symbology (15s)
+          all: true
+    - name: "Strong Thoughts Sent to a Dear Friend"
+      effects: 
+        - desc: INT +20%
+          all: false
+          meta:
+            priority: 1
+            buff: INT
+            buffValue: 20
+        - desc: HP +10%
+          all: false
+          meta:
+            priority: 1
+            buff: HP
+            buffValue: 10
+        - desc: Movement speed +30%
+
+  skills:
+    - name: "Lightning"
+      picture: Skill_Placeholder
+      element: Lightning
+      power: INT x 440%
+      ap: 21
+      maxHits: 10
+    - name: "Grave"
+      picture: Earth_Glaive
+      element: Earth
+      power: INT x 280%
+      ap: 13
+      maxHits: 2
+    - name: "Rock Mountain"
+      picture: Stone_Rain
+      element: Earth
+      power: INT x 550%
+      ap: 25
+      maxHits: 5
+    - name: "Thunder Blade"
+      picture: Skill_Placeholder
+      element: Lightning
+      power: INT x 750%
+      ap: 27
+      maxHits: 3
+      
+  rush:
+    name: "Indignation"
+    picture: Rush_Placeholder
+    element: Lightning
+    effects: 
+      - desc: Elemental damage dealt +80%
+        all: true
+        duration: 20
+        meta:
+          priority: 1
+          buff: Elemental Damage
+          buffValue: 80
+    power: INT x 5000%
+    maxHits: 9
+
+- name: Adray Lasbard
+  cat: jp
+  picture: Adray_Lasbard
+  weapon: bns
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 31710
+    atk: 2718
+    int: 2639
+    def: 1995
+    hit: 1120
+    grd: 833
+
+  talents:
+    - name: "Dad's Majesty"
+      effects:
+        - desc: INT +40%, INT +60% when Adray has aggro
+          all: true
+          meta:
+            priority: 1
+            buff: INT
+            buffValue: 60
+        - desc: Convert 45% of INT to ATK
+          all: Attackers/Sharpshooters/Defenders
+          meta:
+            priority: 1
+            buff: INT -> ATK
+            buffValue: 45
+    - name: "Gift of Training"
+      effects:
+        - desc: Anti flinch when damage taken < 40% max HP when Adray has aggro (party)
+        - desc: Imune to burn (party/ 180 sec)
+    - name: "Lifetime Active"
+      effects:
+        - desc: Cast time -90% at close range
+        - desc: HP recovery 5% during skill animation
+    - name: "Holy Kingdom Guardian"
+      effects:
+        - desc: Aggro +5
+        - desc: HP +100%
+
+  skills:
+    - name: "Titan Fist"
+      picture: Skill_Placeholder
+      element: Earth
+      power: INT x 760%
+      ap: 24
+      maxHits: 1
+    - name: "Countless Ice Needle"
+      picture: Skill_Placeholder
+      element: Ice
+      power: INT x 240%
+      ap: 17
+      maxHits: 9
+    - name: "Earth Grave"
+      picture: Skill_Placeholder
+      element: Earth
+      power: INT x 200%
+      ap: 15
+      maxHits: 5
+    - name: "Emotion Torrent"
+      picture: Skill_Placeholder
+      element: Ice
+      power: INT x 1450%
+      ap: 52
+      maxHits: 4
+
+  rush:
+    name: "Spicule"
+    picture: Rush_Placeholder
+    effects:
+      - desc: DMG dealt + 100% (self), +80% 
+        all: true
+        duration: 20
+        meta:
+          priority: 1
+          buff: Damage
+          buffValue: 80
+    power: INT x 4500%
+    maxHits: 10
+
+- name: Erys Jerand
+  cat: jp
+  picture: Erys_Jerand
+  weapon: staff
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15225
+    atk: 1537
+    int: 3276
+    def: 1327
+    hit: 1071
+    grd: 840
+
+  talents:
+    - name: "Real Figure"
+      effects:
+        - desc: Convert 40% of ATK to INT
+          all: Healers/Invokers
+          meta:
+            priority: 1
+            buff: ATK -> INT
+            buffValue: 40
+        - desc: Convert 40% of INT to ATK
+          all: Attackers/Shooters/Defenders
+          meta:
+            priority: 1
+            buff: INT -> ATK
+            buffValue: 40
+    - name: "Blood Painted Past"
+      effects:
+        - desc: Enemies DEF -30 when hit by Acid Rain - Light(15 sec)
+        - desc: At skill chain > 3, HP recovery 5% on Energy Arrow durrung attacking
+    - name: "Death Wings"
+      effects:
+        - desc: Rush damage +40% when HP is 100%
+          all: false
+          meta:
+            priority: 1
+            buff: Rush Damage
+            buffCondition: HP is 100%
+            buffValue: 40
+        - desc: At skill chain > 3, Star Light and Luna Light skill damage+50%
+    - name: "New Way of Life"
+      effects:
+        - desc: INT +20% HP +25%
+        - desc: At skill chain > 4, cast time -90%
+    - name: "Multiple Chant/ Erys [Mastery]"
+      effects:
+        - desc: Charge assault starts combos at 150%
+        - desc: At skill chain > 3, INT damage +30%
+        - desc: Nullify charge assault crit penalty
+
+  skills:
+    - name: "Energy Arrow"
+      picture: Skill_Placeholder
+      element: Light
+      power: INT x 250
+      ap: 14
+      maxHits: 4
+    - name: "Acid Drain"
+      picture: Skill_Placeholder
+      element: Light
+      power: INT x 210
+      ap: 143
+      maxHits: 6
+    - name: "Star Light"
+      picture: Skill_Placeholder
+      element: Light
+      power: INT x 990
+      ap: 34
+      maxHits: 1
+    - name: "Luna Light"
+      picture: Skill_Placeholder
+      element: Light
+      power: INT x 1250
+      ap: 35
+      maxHits: 10
+
+  rush:
+    name: "Indignation"
+    picture: Rush_Placeholder
+    element: Light
+    effects:
+      - desc: Elemental damage dealt +80%
+        all: true
+        duration: 20
+        meta:
+          priority: 1
+          buff: Elemental Damage
+          buffValue: 80
+    power: INT x 5000%
+    maxHits: 9
+
+- name: Leon D.S. Gehste (Blue Sphere)
+  cat: jp
+  picture: Blue_Sphere_Leon_Copy
+  weapon: tome
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 12390
+    atk: 1575
+    int: 2718
+    def: 1365
+    hit: 1043
+    grd: 819
+
+  talents:
+    - name: "Genius Scientist"
+      effects:
+        - desc: INT +30%, +60% at hit count > 200
+          all: true
+          meta:
+            priority: 1
+            buff: INT
+            buffCondition: Hit count > 200 
+            buffValue: 60
+        - desc: ATK +30%, +60% at hit count > 200
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffCondition: Hit count > 200
+            buffValue: 60
+    - name: "Life in a New World"
+      effects:
+        - desc: Critical chance +50% at HIT count > 300
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: Hit count > 300
+            buffValue: 50
+    - name: "The Growing Flower"
+      effects:
+        - desc: AP cost -15% at HIT count > 50 , +30% at HIT count > 150
+          all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Hit count > 150
+            buffValue: 30
+        - desc: AP regen +50%, full AP regen while walking (party)
+    - name: "My Feeling For My Home"
+      effects:
+        - desc: Cast time -90% at long range
+        - desc: 90% chance of surviving a lethal attack when at 10% of max HP or more
+
+  skills:
+    - name: "Shadow Bolt"
+      picture: Skill_Placeholder
+      element: Dark
+      power: INT x 190%
+      ap: 18
+      maxHits: 3
+    - name: "Woons Reaper"
+      picture: Skill_Placeholder
+      element: Dark
+      power: INT x 560%
+      ap: 28
+      maxHits: 2
+    - name: "Shadow Flare"
+      picture: Skill_Placeholder
+      element: Dark
+      power: INT x 710%
+      ap: 39
+      maxHits: 5
+    - name: "Dark Passage"
+      picture: Skill_Placeholder
+      element: Dark
+      power: INT x 920%
+      ap: 48
+      maxHits: 10
+
+  rush:
+    name: "Word of Death"
+    picture: Rush_Placeholder
+    element: Dark
+    effects:
+      - desc: AP cost -70%
+        all: true
+        duration: 7
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 70
+    power: INT x 4500%
+    maxHits: 11
+
+- name: Futaba
+  cat: jp
+  picture: Char_Placeholder_Persona_Futaba
+  weapon: orb
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15435
+    atk: 2665
+    int: 2744
+    def: 1916
+    hit: 1148
+    grd: 854
+
+  talents:
+    - name: "Losing While Working"
+      effects:
+        - desc: Damage taken +45%, +60% Futaba at 100% (enemies) 
+        - desc: Damage taken +75% when EB (enemies/30s)
+    - name: "Necronomicon"
+      effects:
+        - desc: Cancle Bonus 200% when Charge Assault
+        - desc: Stun Rate +60% at 100% HP
+        - desc: Rush Combo DMG +50% when Element Burst (party/30s)
+    - name: "Unassailable on the Net"
+      effects:
+        - desc: Special ATK DMG +200%, AP Cost +50% when using all Members! Anti-Shock, Anti-Flash Defence! & Go! All-Out Range (10 s)
+    - name: "Hajikero KY"
+      effects:
+        - desc: INT +20% when using It’s Not Agydyne Right Now… (10 s)
+        - desc: AP Recovery +50%
+        - desc: HP RCV +100% to All when using My Hands Shine & Shout at SC 3+
+
+  skills:
+    - name: "It’s Not Agydyne Right Now…"
+      picture: Skill_Placeholder
+      element: Fire
+      power: INT x 480%
+      ap: 32
+      maxHits: 1
+    - name: "My Hands Shine and Shout"
+      picture: Skill_Placeholder
+      element: Light
+      power: INT x 670%
+      ap: 37
+      maxHits: 2
+    - name: "All Members! Anti-Shock, Anti-Flash Defence!"
+      picture: Skill_Placeholder
+      element: Fire
+      power: INT x 450%
+      ap: 24
+      maxHits: 5
+    - name: "Go! All-Out Range Attack"
+      picture: Skill_Placeholder
+      element: Light
+      power: INT x 410%
+      ap: 23
+      maxHits: 6
+
+  rush:
+    name: "OK, I’ll Push You To The Limit"
+    picture: Rush_Placeholder
+    effects:
+      - desc: Elemental damage +80%
+        all: true
+        duration: 20
+        meta:
+          priority: 1
+          buff: Elemental Damage
+          buffValue: 80
+    power: INT x 4500%
+    maxHits: 1
+
+- name: Precis F. Neumann (Halloween)
+  cat: jp
+  picture: Char_Placeholder_Mad_Scientist_Precis
+  weapon: gun
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 18291
+    atk: 1563
+    int: 3230
+    def: 1169
+    hit: 1050
+    grd: 826
+
+  talents:
+    - name: "Gloomy Scientist"
+      effects:
+        - desc: Critical chance +30%, + 50% at HP 100%
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffValue: 50
+    - name: "Strange Medicine"
+      effects:
+        - desc: HP recovery 5% of DMG when using Popping Necrodance at SC 3+
+        - desc: INT +20%,  +100% Crit DMG during Rush Combo at 100% HP
+    - name: "Muujin-kun in the Shadows"
+      effects:
+        - desc: DMG taken -100% on dodge (0.5s)
+        - desc: Dodge cost -80 at 100% HP
+        - desc: CB 200% while Dodging
+    - name: "Studious for Another"
+      effects:
+        - desc: INT +20%
+        - desc: HP +30%
+        - desc: AP cost -20% at 100% HP
+        - desc: AP recovery +100 after using heraldy (party/20s)
+
+  skills:
+    - name: "Popping Necromance"
+      picture: Skill_Placeholder
+      power: INT x 1210%
+      ap: 35
+      maxHits: 4
+    - name: "Fireport"
+      picture: Skill_Placeholder
+      element: Fire
+      power: INT x 350%
+      ap: 20
+      maxHits: 6
+    - name: "Fire Torcher"
+      picture: Skill_Placeholder
+      element: Fire
+      power: INT x 1480%
+      ap: 44
+      maxHits: 5
+    - name: "Perios Injection"
+      picture: Skill_Placeholder
+      power: INT x 280%
+      ap: 14
+      maxHits: 1
+
+  rush:
+    name: "Funny Operation"
+    picture: Rush_Placeholder
+    effects: 
+      - desc: Crit Rate 100%
+        all: true
+        duration: 10
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 100
+    power: INT x 5500%
+    maxHits: 11
+
+- name: Pericci (Winter)
+  cat: jp
+  picture: Char_Placeholder_Winter_Pericci
+  weapon: orb
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15540
+    atk: 2670
+    int: 2718
+    def: 1930
+    hit: 1148
+    grd: 840
+
+  talents:
+    - name: "Exciting Christmas"
+      effects:
+        - desc: Convert 50% ATK to INT 
+          all: Invokers/Healers
+          meta:
+            priority: 1
+            buff: ATK -> INT
+            buffValue: 50
+        - desc: Convert 50% INT to ATK 
+          all: Attackers/Defenders/Sharpshooters
+          meta:
+            priority: 1
+            buff: INT -> ATK
+            buffValue: 50
+    - name: "Sake-See Costume"
+      effects:
+        - desc: INt +30% at close range
+          all: true
+          meta:
+            priority: 1
+            buff: INT
+            buffValue: 30
+        - desc: AP cost -25% at long range (party)
+    - name: "Presents for Nice Children"
+      effects:
+        - desc: HP recovery 10% when charge assault short to long range (party)
+        - desc: Slightly RAise rush gauge to all when charge assault long to short range
+    - name: "Yearning for Santa"
+      effects:
+        - desc: Movement speed +30% (party)
+        - desc: AP recovery +50% (party)
+        - desc: AP recovery by walking(party)
+        - desc: Air dodge
+    - name: "Vanguard C [MASTERY]"
+      effects:
+        - desc: Anti flinch while Charge Assault
+        - desc: Nullify Critical DMG penalty while Charge Assault
+        - desc: Critical chance +20% when charge assault long to short range
+
+  skills:
+    - name: "Back-Kick Missiles"
+      picture: Skill_Placeholder
+      power: INT x 340%
+      ap: 19
+      maxHits: 3
+    - name: "Round n' Round Slap"
+      picture: Skill_Placeholder
+      power: INT x 250%
+      ap: 19
+      maxHits: 5
+    - name: "Frozen Dagger"
+      picture: Skill_Placeholder
+      element: Ice
+      power: INT x 580%
+      ap: 25
+      maxHits: 4
+    - name: "Rotary Kneading"
+      picture: Skill_Placeholder
+      power: INT x 1050%
+      ap: 39
+      maxHits: 4
+
+  rush:
+    name: "Happy Present Bomber"
+    picture: Rush_Placeholder
+    effects:
+      - desc: Critical chance +60% | Critical DMG +30%
+        all: true
+        duration: 20
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 60
+    power: INT x 4500%
+    maxHits: 10

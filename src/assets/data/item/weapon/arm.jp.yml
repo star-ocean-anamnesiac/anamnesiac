@@ -238,7 +238,7 @@
       lb: 5
   obtained: Gacha
 
-- name: Dragoon's Arms
+- name: Dragoon's Robo-Arm
   cat: 'jp'
   star: 5
   picture: Dragoon's_Arms
@@ -426,4 +426,39 @@
         buffValue: 45
     - desc: 80% chance of surviving a lethal attack when at 20% of max HP or more
       lb: 3
+  obtained: Gacha
+
+- name: Land Warfare Robotic Arms
+  cat: 'jp'
+  star: 5
+  picture: Land_Warfare_Robotic_Arms
+  atk: 1260
+  int: 1259
+  factors:
+    - desc: Damage to Machines +60%
+      meta:
+        priority: 4
+        buff: Damage To Machines
+        buffValue: 60
+    - desc: ATK damage dealt +40% at hitcount > 100
+    - desc: Anti flinch at long range, -30% damage taken
+      lb: 5
+  obtained: Gacha
+
+- name: Galaxy Cleaner
+  cat: 'jp'
+  star: 5
+  picture: Galaxy_Cleaner
+  atk: 1264
+  int: 1256
+  factors:
+    - desc: Imbue Light Element | Light Damage +40%
+      element: Light
+      meta:
+        priority: 4
+        buff: Light Damage
+        buffValue: 40
+    - desc: 80% chance to survive a fatal blow when above 10% HP
+    - desc: Critical Damage +60% when at skill chain > 3
+      lb: 5
   obtained: Gacha

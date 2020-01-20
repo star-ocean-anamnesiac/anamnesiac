@@ -1533,10 +1533,10 @@
             priority: 1
             buff: Cast Time Reduction
             buffValue: 40
-    - name: "Noble Souls"
+    - name: "A Noble Soul"
       effects: 
         - desc: No flinching when casting symbology
-    - name: "Fearless Feeling"
+    - name: "Steadfast Resolve"
       shortEffects: HP +15% and DEF +10%
       effects: 
         - desc: HP +15%
@@ -2175,13 +2175,13 @@
             priority: 4
             buff: AP Cost Reduction
             buffValue: 25
-    - name: "Ready to Transcend Space-Time"
+    - name: "Trans-Dimensional Resolve"
       effects: 
         - desc: Recovers 5% of max HP every 3 seconds
           all: true
         - desc: Nullifies silence for 180 seconds
           all: false
-    - name: "Wanting to Grow Up"
+    - name: "Desire to Grow"
       effects: 
         - desc: Critical damage dealt +20% when HP is 100%
           all: true
@@ -2190,7 +2190,7 @@
             buff: Crit Damage
             buffCondition: HP is 100
             buffValue: 20
-    - name: "Investigating the Music Box"
+    - name: "Music Box Investigation"
       effects: 
         - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
           all: true
@@ -2253,3 +2253,159 @@
       **Rotation**
       
       *Normal > Fairy Star - The correct choice for Healing and Rush Gain.*
+      
+
+- name: Katarina (Violet)
+  cat: gl
+  picture: Healing_Gun_Katarina
+  weapon: rifle
+  ace: false
+  limited: false
+  star: 3
+
+  stats:
+    hp: 7436
+    atk: 963
+    int: 1153
+    def: 751
+    hit: 569
+    grd: 628
+
+  talents:
+    - name: "Well-Used Gun II"
+      effects: 
+        - desc: ATK damage taken -20% 
+          all: true
+          meta:
+            priority: 1
+            buff: ATK Damage Taken Reduction
+            buffValue: 20
+    - name: "Peace Negotiator II"
+      effects:
+        - desc: Recovers 5% of max HP every 3 seconds when at under 50% HP
+          all: false
+        
+  skills:
+    - name: "Healing"
+      picture: Healing
+      power: INT x 170%
+      ap: 40
+      maxHits: 1
+    - name: "Shadow Needles"
+      picture: Shadow_Needles
+      element: Dark
+      power: INT x 240%
+      ap: 23
+      maxHits: 5
+    - name: "Faerie Light"
+      picture: Faerie_Light
+      power: INT x 250%
+      ap: 60
+      maxHits: 1
+
+  rush:
+    name: "Revised Dark Devourer"
+    picture: Revised_Devourer_Healing_Rifle_Katarina
+    element: Dark
+    effects:
+      - desc: Recovers 100% HP
+        all: true
+    power: INT x 2500%
+    maxHits: 5
+      
+- name: Meracle Chamlotte (Youth)
+  cat: gl
+  picture: Youth_Meracle
+  weapon: knuckle
+  ace: true
+  star: 5
+
+  stats:
+    hp: 12390
+    atk: 1799
+    int: 2455
+    def: 1537
+    hit: 1057
+    grd: 1134
+
+  talents:
+    - name: "Sarah's Glasses II"
+      effects: 
+        - desc: ATK damage dealt +30%
+          all: true
+          meta:
+            priority: 4
+            buff: ATK Damage
+            buffValue: 30
+        - desc: INT damage dealt +30%
+          all: true
+          meta:
+            priority: 4
+            buff: INT Damage
+            buffValue: 30
+        - desc: No flinching when casting symbology
+          all: true
+    - name: "My First Sneakers II"
+      effects: 
+        - desc: AP cost -20% when Youth Meracle is at short range
+          all: true
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffCondition: Short Range
+            buffValue: 20
+    - name: "Hungry Stray II"
+      effects: 
+        - desc: Normal attack AP recovery +100%
+          meta:
+            priority: 1
+            buff: AP Recovery From Normal Attacks
+            buffValue: 100
+        - desc: Recovers 100% AP on perfect dodge
+    - name: "Saint's Picture Book"
+      effects: 
+        - desc: Symbology cast time -80%
+          meta:
+            priority: 4
+            buff: Cast Time Reduction
+            buffValue: 80
+        - desc: 90% chance of surviving a lethal attack when at 10% of max HP or more
+
+  skills:
+    - name: "Crescent Locus"
+      picture: Crescent_Locus
+      power: INT x 410%
+      ap: 18
+      maxHits: 4
+    - name: "Feline Wind Blade"
+      picture: Wind_Blade
+      element: Wind
+      power: INT x 550%
+      ap: 23
+      maxHits: 2
+    - name: "Feline Faerie Light AR"
+      picture: Faerie_Light
+      power: INT x 250%
+      ap: 60
+      maxHits: 1
+    - name: "Buzzsaw Gale"
+      picture: Storm_Buzz
+      element: Wind
+      power: INT x 850%
+      ap: 29
+      maxHits: 2
+      
+  rush:
+    name: "Claws of Fury Tempest"
+    picture: Flash_Myariot_Youth_Meracle
+    element: Wind
+    effects: 
+      - desc: Elemental damage dealt +50%
+        all: true
+        duration: 20
+        meta:
+          priority: 1
+          buff: Elemental Damage
+          buffValue: 50
+    power: INT x 3500%
+    maxHits: 20

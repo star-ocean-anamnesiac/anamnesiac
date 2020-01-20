@@ -362,3 +362,43 @@
         buffValue: 20
       lb: 3
   obtained: Gacha
+
+- name: Funeral Ornament
+  cat: 'gl'
+  star: 5
+  picture: Funeral_Ghast
+  atk: 1106
+  int: 1112
+  factors:
+    - desc: Imbues attacks with wind
+      element: Wind
+    - desc: Wind damage dealt +40%
+      meta:
+        priority: 4
+        buff: Wind Damage
+        buffValue: 40          
+    - desc: AP recovery +50%
+      meta:
+        priority: 4
+        buff: AP Recovery
+        buffValue: 50
+    - desc: 80% chance of surviving a lethal attack when at 20% of max HP or more
+      lb: 5
+  obtained: Gacha
+
+- name: Eye of Satan
+  cat: 'gl'
+  star: 5
+  picture: Satan's_Star
+  atk: 507
+  int: 511
+  factors:
+    - desc: Damage dealt +20% by Elimination Magnum Tornado
+    - desc: Critical damage dealt +10%
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 10
+    - desc: Recovers 3% of max HP every 5 seconds
+      lb: 5
+  obtained: Dimension Chimera (Exchange)

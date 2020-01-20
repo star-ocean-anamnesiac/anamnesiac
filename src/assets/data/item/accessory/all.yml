@@ -51,7 +51,7 @@
   def: 753
   factors:
     - desc: 50% Chance of Paralysis Nullification
-  obtained: Gerel (Exchange) or Coro Revorse (Exchange, Drop)
+  obtained: Gerel (Exchange), Coro Revorse (Exchange, Drop)
 
   notes: >
     Not recommended due to it's inconsistencies, much safer to use a unit in order to resist paralysis due to 50% not being reliable. Use as DEF stat stick if you're lazy (and don't want to unequip units when switching characters).
@@ -76,7 +76,7 @@
   def: 753
   factors:
     - desc: 20% chance of surviving a lethal attack when at 10% of max HP or more
-  obtained: Jie Revorse (Exchange, Drop) and Geared Wisp / NieR (Achievement)
+  obtained: Jie Revorse (Exchange, Drop), Geared Wisp / NieR (Achievement)
 
   notes: >
     Guts is great, but there are better alternatives. However this isn't a bad choice to use on Maria, as she does not gain from the protection armlet (true for anyone else with damage reduction). 
@@ -89,7 +89,7 @@
   def: 753
   factors:
     - desc: 50% chance to nullify freeze
-  obtained: Jie Revorse (Exchange, Drop)
+  obtained: Jie Revorse (Exchange, Drop), Geared Wisp / NieR (Achievement)
 
   notes: >
     Not recommended due to it's inconsistencies, much safer to use a unit in order to resist freezing due to 50% not being reliable. Use as DEF stat stick if you're lazy (and don't want to unequip units when switching characters).
@@ -124,7 +124,7 @@
         priority: 4
         buff: HIT
         buffValue: 10
-  obtained: Eternal Queen / Predate Queen (Exchange, Drop) and Christmas Horndevil (Achievement, Exchange)
+  obtained: Eternal Queen / Predate Queen (Exchange, Drop), Christmas Horndevil (Achievement, Exchange), Rerun M2 Coin Exchange
 
   notes: >
     It's okay. You can throw this on a DPS if you want, but HIT has very little impact on crit chance unless your HIT reaches 1100+. Use as DEF stat stick if you're lazy (and don't want to unequip units when switching characters). If you want to try to increase your offense just a little bit, worth running on someone who can't use another accessory well. Shooters mainly. 
@@ -146,7 +146,7 @@
         priority: 4
         buff: Stun Rate
         buffValue: 10
-  obtained: "Eternal Queen / Predate Queen (Achievement), Lezard / Valkyrie Profile: The Purged Wizard (Exchange)"
+  obtained: "Shine Totem / Gleaming Simulacrum (Achievement), Shine Totem Anniversary Rerun (Achievement), Eternal Queen / Predate Queen (Achievement), Lezard / Valkyrie Profile: The Purged Wizard (Exchange)"
 
   notes: >
     Excellent accessory. Crit rate pre-rush is an excellent invisible damage booster (the first acc to do so) and stun rate is great when lacking either in talents. 
@@ -164,7 +164,7 @@
         priority: 4
         buff: INT Damage Taken Reduction
         buffValue: 10
-  obtained: Millioneyes (Exchange, Drop)
+  obtained: Millioneyes (Exchange, Drop), Rerun M2 Coin Exchange
 
   notes: >
     Beats Snow God. INT damage is at least a quantifiable stat with visible benefits, and has the bonus of not being common on too many units. However, when paired with SMyu/Reimi, this has no use aside from stat stick. MLB'able as well. Thankfully, it stacks with regular damage taken. 
@@ -216,7 +216,7 @@
         priority: 4
         buff: GRD
         buffValue: 10
-  obtained: Michael (Exchange, Drop) and Mountain Matango (Achievement)
+  obtained: Michael (Exchange, Drop), Mountain Matango (Achievement)
 
   notes: >
     Average accessory, does stack with regular DMG reduction (like Maria), and adds a little bit with GRD. Otherwise, a stat stick, though notably does likely perform as well as an MLB accessory for DEF alone. 
@@ -238,7 +238,7 @@
         priority: 4
         buff: HIT
         buffValue: 10
-  obtained: Executioner (Exchange, Drop)
+  obtained: Executioner (Exchange, Drop), Mother Virus Pod Anniversary Rerun (Achievement)
 
   notes: >
     HIT +10% for shooters, mainly Maria, a decent substitute for Snow God, and also comes with INT damage down as a bonus. Pretty decent accessory for units who can't run something else (Hawkeye, Protection).
@@ -254,9 +254,9 @@
       meta:
         priority: 4
         buff: Rush Damage
-        buffValue: 10
+        buffValue: 5
     - desc: 30% chance of surviving a lethal attack when at 10% of max HP or more
-  obtained: Pumpkin Cryptvine (Achievement)
+  obtained: Pumpkin Cryptvine (Achievement), Rerun M2 Coin Exchange
 
   notes: >
     Excellent. 30/10 guts in addition to a free increase in damage makes this another damage boosting accessory, which aren't common yet. High base stats help mitigate not being able to MLB this.
@@ -273,7 +273,7 @@
         priority: 4
         buff: Stun Rate
         buffValue: 10
-  obtained: Pumpkin Cryptvine (Achievement, Gacha Box) and Armaros (Exchange, Drop)
+  obtained: Pumpkin Cryptvine (Achievement, Gacha Box), Armaros (Exchange, Drop)
 
   notes: >
     Reasonable, slight offensive boost thanks to stun %, though unfortunate that it doesn't come with another stat.
@@ -318,7 +318,7 @@
   factors:
     - desc: +25% chance to nullify paralysis
     - desc: +25% chance to nullify poison
-  obtained: Colossal Beak (Exchange, Drop)
+  obtained: Colossal Beak (Exchange, Drop), Knight Exile / FFBE (Achievement)
 
   notes: >
     Weak 25% chance on both status, will rarely be useful aside from a trophy or DEF statstick.
@@ -332,7 +332,7 @@
   factors:
     - desc: Recovers 2% of max HP every 5 seconds
     - desc: 30% chance of surviving a lethal attack when at 10% of max HP or more
-  obtained: Colossal Beak (Exchange) and Knight Exile (Achievement)
+  obtained: Colossal Beak (Exchange), Knight Exile / FFBE (Achievement), Monarch Zinae Anniversary Rerun (Achievement)
 
   notes: >
     Minor regen is decent for topping up minor DMG for specific comps, like Nier-based teams. Paired with a low guts, may occasionally save you.
@@ -349,7 +349,7 @@
         priority: 4
         buff: Damage Taken Reduction
         buffValue: 5
-  obtained: Colossal Beak (Exchange)
+  obtained: Colossal Beak (Exchange), Mother Polyphaga (Achievement)
 
   notes: >
     High base DEF makes this a solid statstick even at low LBs.
@@ -402,7 +402,7 @@
         priority: 4
         buff: AP Cost Reduction
         buffValue: 10
-  obtained: Transmogrified Alma (Exchange)
+  obtained: Transmogrified Alma (Exchange), Shine Totem / Gleaming Simulacrum (Achievement)
 
   notes: >
     As with the Reindeer, it boasts AP redux. Unlike the Reindeer it doesn't offer a second passive, but it can reduce the need of changing equiptment more often if you're not concerned about your HP.
@@ -420,7 +420,7 @@
         buff: Damage Taken Reduction
         buffValue: 10
     - desc: Taunt +3
-  obtained: Transmogrified Alma (Achievement)
+  obtained: Transmogrified Alma (Achievement), Mother Virus Pod (Exchange)
 
   notes: >
     Our first accessory that has aggro along with some reduction to DMG taken. Best suited for defenders and sharpshooters who kite and hold the enemies attention.
@@ -537,7 +537,7 @@
         buff: Damage Taken Reduction
         buffCondition: Hit Count 50+
         buffValue: 15
-  obtained: Facula (Achievement)
+  obtained: Facula (Achievement), Facula Anniversary Rerun (Achievement)
 
   notes: >
     It's quite bad, you want your defensive accessories to be consistent, this is not.
@@ -559,7 +559,7 @@
         priority: 1
         buff: Crit Damage
         buffValue: 10
-  obtained: Facula (Achievement), Lezard + Blood Valkyrie (Exchange)
+  obtained: "Facula (Achievement), Facula Anniversary Rerun (Achievement), Lezard + Blood Valkyrie: The Purged Wizard (Exchange)"
 
   notes: >
     A pretty exceptional offensive accessory. Its factors wouldn't be terrible as a character talent which means it's very good for
@@ -598,7 +598,7 @@
         buff: ATK Damage
         buffValue: 10
         buffCondition: Hit Count > 200
-  obtained: Monarch Zinae (Achievement)
+  obtained: Monarch Zinae (Achievement), Monarch Zinae Anniversary Rerun (Achievement)
   
   
 - name: Extrication Ring
@@ -638,7 +638,7 @@
   factors:
     - desc: No flinching when taking damage of 5% of max HP or less
     - desc: 30% chance of surviving a lethal attack when at 10% of max HP or more
-  obtained: Lucifer (Achievement, Exchange)
+  obtained: Lucifer (Achievement, Exchange), Lucifer Anniversary Rerun (Achievement)
 
 
 - name: Combat Armlet
@@ -654,7 +654,7 @@
         buff: AP Recovery
         buffValue: 30
         buffCondition: long Range
-  obtained: Lucifer (Achievement, Exchange)
+  obtained: Lucifer (Achievement, Exchange), Lucifer Anniversary Rerun (Achievement)
 
 
 - name: Common Ring
@@ -720,7 +720,7 @@
         buff: Crit Rate
         buffValue: 15
         buffCondition: Not holding aggro
-  obtained: Shine Totem / Gleaming Simulacrum (Achievement)  
+  obtained: Shine Totem / Gleaming Simulacrum (Achievement), Josephine (Achievement) 
   
   
 - name: Pure White Barrette
@@ -803,7 +803,12 @@
   picture: Top_Magician's_Handerchief
   def: 753
   factors:
-    - desc: Rush mode damage +15% when hitcount is >150
+    - desc: Rush combo damage +15% when hitcount is >150
+      meta:
+        priority: 4
+        buff: Rush Damage
+        buffCondition: Hit Count > 150
+        buffValue: 5    
     - desc: Hitcount timer +1 second 
   obtained: "Lezard / Valkyrie Profile: The Purged Wizard (Achievement, Exchange)"  
   
@@ -816,5 +821,216 @@
   factors:
     - desc: 30% chance of surviving a lethal attack when at 10% of max HP or more and at short range
     - desc: Taunt +2
-  obtained: Mother Polyphaga (Achievement, Exchange, Drop)   
+  obtained: Mother Polyphaga (Achievement, Exchange, Drop)
+
+
+- name: Fate Talisman III
+  cat: 'gl'
+  star: 4
+  picture: Talisman_of_Lethality_III
+  def: 658
+  factors:
+    - desc: Critical hit chance -5% (Enemies)
+  obtained: Story
   
+  
+- name: Bracelet of Earth I
+  cat: 'gl'
+  star: 3
+  picture: Bracelet_of_Earth_I
+  def: 633
+  factors: 
+    - desc: Earth damage taken -50%
+  obtained: Story
+
+
+- name: Gold Ear Bangles
+  cat: 'gl'
+  star: 5
+  picture: Goldcraft_Earrings
+  def: 753
+  factors:
+    - desc: AP cost -10% when hitcount is >100
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffCondition: Hit Count > 100
+        buffValue: 10
+    - desc: Rush combo damage +10% when HP is 100%
+      meta:
+        priority: 4
+        buff: Rush Damage
+        buffCondition: HP is 100%
+        buffValue: 10
+  obtained: Crown Dohdoh (Achievement)
+
+- name: Furry Tail
+  cat: 'gl'
+  star: 5
+  picture: Fur_Tail
+  def: 728
+  factors:
+    - desc: Evasion AP cost -50%
+    - desc: AP cost -5% when targeted by enemy
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffCondition: Holding Aggro
+        buffValue: 5
+  obtained: Crown Dohdoh (Achievement, Exchange, Drop)
+
+- name: Blossom-Embossed Armor Plate
+  cat: 'gl'
+  star: 5
+  picture: Cherry_Blossom_Crested_Plate
+  def: 753
+  factors:
+    - desc: No flinching during charge assault
+    - desc: Damage taken -10% when attacking
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffCondition: Attacking
+        buffValue: 10
+  obtained: Crown Dohdoh (Achievement)
+  
+- name: Red War Belt
+  cat: 'gl'
+  star: 5
+  picture: Red_Combat_Sash
+  def: 728
+  factors:
+    - desc: No flinching when taking of damage of 20% of max HP or less and hitcount is >100
+    - desc: Critical hit chance +15% when hitcount is >150
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffCondition: Hit Count > 150
+        buffValue: 15
+  obtained: Shrouded Gaze (Achievement, Exchange, Drop)
+
+- name: Fate Talisman IV
+  cat: 'gl'
+  star: 5
+  picture: Talisman_of_Lethality_III
+  def: 753
+  factors:
+    - desc: Critical hit chance -10% (Enemies)
+  obtained: Crown Dohdoh (Achievement)
+
+- name: FC Goggles
+  cat: 'gl'
+  star: 5
+  picture: FC_Goggles
+  def: 753
+  factors:
+    - desc: AP cost -5% at long range
+      meta:
+        priority: 4
+        buff: AP Cost Reduction
+        buffCondition: Long Range
+        buffValue: 5
+    - desc: Repel +1
+  obtained: Shrouded Gaze (Achievement)
+
+- name: White Headpiece
+  cat: 'gl'
+  star: 5
+  picture: White_Brim
+  def: 728
+  factors:
+    - desc: ATK damage taken -10%
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+    - desc: HIT +10%
+      meta:
+        priority: 4
+        buff: HIT
+        buffValue: 10
+  obtained: Josephine (Achievement, Exchange, Drop)
+
+- name: Ribbon Bow Tie
+  cat: 'gl'
+  star: 5
+  picture: Ribbon_Cross_Tie
+  def: 753
+  factors:
+    - desc: HP +10%
+      meta:
+        priority: 3
+        buff: HP
+        buffValue: 10
+    - desc: Damage dealt +5%
+      meta:
+        priority: 1
+        buff: Damage
+        buffValue: 5
+  obtained: Josephine (Achievement)
+
+- name: Dress Gloves of Decimation
+  cat: 'gl'
+  star: 5
+  picture: Dressgloves_of_Ruin
+  def: 728
+  factors:
+    - desc: Hitcount timer +0.5 seconds
+    - desc: Damage taken -10% at long range
+      meta:
+        priority: 4
+        buff: Damage Taken Reduction
+        buffCondition: Long Range
+        buffValue: 10
+  obtained: Dimension Chimera (Exchange, Drop)
+
+- name: Silver Bunny Statue
+  cat: 'gl'
+  star: 5
+  picture: Silver_Bunny_Statue
+  def: 728
+  factors:
+    - desc: HP +5%
+      meta:
+        priority: 1
+        buff: HP
+        buffValue: 5
+    - desc: ATK damage taken -10%
+      meta:
+        priority: 3
+        buff: ATK Damage Taken Reduction
+        buffValue: 10
+  obtained: Big Three (Achievement, Drop)
+
+- name: Gold Bunny Statue
+  cat: 'gl'
+  star: 5
+  picture: Gold_Bunny_Statue
+  def: 753
+  factors:
+    - desc: Critical hit chance +10%
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 10
+    - desc: Rush combo damage +5%
+      meta:
+        priority: 4
+        buff: Rush Damage
+        buffValue: 10
+  obtained: Big Three (Achievement, Drop)
+
+- name: Spring Hair Clip
+  cat: 'gl'
+  star: 5
+  picture: Spring_Coloured_Hairclip
+  def: 753
+  factors:
+    - desc: No flinching when taking damage of 15% of max HP or less at short range
+    - desc: ATK damage taken -10% at short range
+      meta:
+        priority: 4
+        buff: ATK Damage Taken Reduction
+        buffCondition: Short Range
+        buffValue: 10
+  obtained: Dimension Beast (Achievement)

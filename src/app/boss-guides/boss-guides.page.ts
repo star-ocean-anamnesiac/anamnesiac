@@ -75,7 +75,7 @@ export class BossGuidesPage implements OnInit, OnDestroy {
   }
 
   private updateBossGuideList() {
-    this.allBosses = _(this.allBosses).filter(x => x.cat === this.region).sortBy('name').value();
+    this.allBosses = _(this.allBosses).sortBy('name').value();
 
     if(this.getPreviouslyLoadedGuide()) {
       this.loadGuideModal(this.getPreviouslyLoadedGuide());

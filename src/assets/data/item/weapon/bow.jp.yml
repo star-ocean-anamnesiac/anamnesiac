@@ -226,11 +226,11 @@
       lb: 5
   obtained: Ocypete Necromancy (Exchange)
 
-- name: Dragoon's Arrow
+- name: Dragoon's Bow
   cat: 'jp'
   star: 5
   picture: Dragoon's_Arrow
-  atk: 961
+  atk: 960
   int: 961
   factors:
     - desc: Damage dealt to dragons +40%
@@ -333,14 +333,14 @@
       lb: 5
   obtained: Mother Polyphaga (Exchange) 
 
-- name: Ivory Shooter
+- name: Ivory Bow
   cat: 'jp'
   star: 5
   picture: Ivory_Shooter
   atk: 506
   int: 511
   factors:
-    - desc: Damage dealt +20% by Black Spirit
+    - desc: Damage dealt +20% by Dark Spirit
     - desc: INT +5%
       meta:
         priority: 3
@@ -632,7 +632,7 @@
         buffValue: 15
   obtained: Prince Claude / Uniform Claude (Exchange)
 
-- name: Flame Soul Shooter
+- name: Flame-winged Bow
   cat: 'jp'
   star: 5
   picture: Flame_Soul_Shooter
@@ -647,7 +647,7 @@
         buff: AP Recovery From Normal Attacks
         buffValue: 50
     - desc: Recovers 3% of max HP every 5 seconds
-      lb: 5
+      lb: 3
   obtained: Coin Exchange
 
 - name: Vermin Shooter
@@ -693,3 +693,43 @@
         buffValue: 10
       lb: 5
   obtained: "Lezard + Blood Valkyrie / Valkyrie Profile: The Purged Wizard (Achievement)"
+
+- name: Composite Bow
+  cat: 'jp'
+  star: 5
+  picture: Composite_Bow
+  atk: 862
+  int: 859
+  factors:
+    - desc: Damage dealt +20% by Toryuu
+    - desc: HIT +10%
+      meta:
+        priority: 3
+        buff: HIT
+        buffValue: 10
+    - desc: Critical damage dealt +30% when skill chain is >3
+      meta:
+        priority: 1
+        buff: Crit Damage
+        buffCondition: Skill Chain 3+
+        buffValue: 30
+      lb: 5
+  obtained: Shadow Dhaos / Tales of the Rays (Achievement)
+
+- name: Ignite Stringer
+  cat: 'jp'
+  star: 5
+  picture: Ignite_Stringer
+  atk: 1261
+  int: 1255
+  factors:
+    - desc: Imbues attacks with fire | fire damage dealt +20%
+      element: Fire
+      meta:
+        priority: 4
+        buff: Fire Damage
+        buffValue: 20
+    - desc: ATK damage dealt +50% at hitcount > 200
+    - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
+      lb: 5
+  obtained: Gacha

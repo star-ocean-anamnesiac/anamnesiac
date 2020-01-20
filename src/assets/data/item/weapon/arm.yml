@@ -241,4 +241,32 @@
         buff: Single Target Damage
         buffValue: 10
   obtained: Transmutation, Gacha
-  
+
+
+- name: Dragoon's Robo-Arm
+  cat: 'gl'
+  star: 5
+  picture: Dragoon's_Arms
+  atk: 959
+  int: 957
+  factors:
+    - desc: Damage dealt to dragons +40%
+      slayer: Dragon
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Dragons
+        buffValue: 40
+    - desc: ATK +5%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 5    
+    - desc: Critical hit chance +30% when not targeted by enemy
+      meta:
+        priority: 1
+        buff: Crit Rate
+        buffCondition: Not Holding Aggro
+        buffValue: 30
+      lb: 3
+  obtained: Gacha

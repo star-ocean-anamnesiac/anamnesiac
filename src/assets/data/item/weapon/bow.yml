@@ -423,3 +423,84 @@
     - desc: Evasion AP cost -50%
       lb: 5
   obtained: Mother Polyphaga (Exchange)
+  
+
+- name: Flame-winged Bow
+  cat: 'gl'
+  star: 5
+  picture: Flame_Soul_Shooter
+  atk: 958
+  int: 960
+  factors:
+    - desc: Imbues attacks with fire
+      element: Fire
+    - desc: Normal attack AP recovery +50%
+      meta:
+        priority: 3
+        buff: AP Recovery From Normal Attacks
+        buffValue: 50
+    - desc: Recovers 3% of max HP every 5 seconds
+      lb: 3
+  obtained: Gacha
+
+
+- name: Ebony Stringer
+  cat: 'gl'
+  star: 5
+  picture: Ebony_Stringer
+  atk: 956
+  int: 960
+  factors:
+    - desc: Imbues attacks with dark
+      element: Dark
+    - desc: Dark damage dealt +20%
+      meta:
+        priority: 3
+        buff: Dark Damage
+        buffValue: 20
+    - desc: 70% chance of surviving a lethal attack when at 20% of max HP or more
+    - desc: Recovers 5% of max HP every 3 seconds
+      lb: 5
+  obtained: Gacha
+
+
+- name: Ivory Bow
+  cat: 'gl'
+  star: 5
+  picture: Ivory_Shooter
+  atk: 506
+  int: 511
+  factors:
+    - desc: Damage dealt +20% by Dark Spirit
+    - desc: INT +5%
+      meta:
+        priority: 3
+        buff: INT
+        buffValue: 5
+    - desc: No flinching when casting symbology
+      lb: 5
+  obtained: Josephine (Exchange)
+
+- name: Dragoon's Bow
+  cat: 'gl'
+  star: 5
+  picture: Dragoon's_Arrow
+  atk: 960
+  int: 961
+  factors:
+    - desc: Damage dealt to dragons +40%
+      slayer: Dragon
+      slayerPct: 40
+      meta:
+        priority: 4
+        buff: Damage To Dragons
+        buffValue: 40
+    - desc: Absorbs 10% of damage dealt by normal attacks as HP
+    - desc: Normal attack AP recovery +50% at long range
+      meta:
+        priority: 3
+        buff: AP Recovery From Normal Attacks
+        buffCondition: Long Range
+        buffValue: 50
+      lb: 3
+  obtained: Gacha

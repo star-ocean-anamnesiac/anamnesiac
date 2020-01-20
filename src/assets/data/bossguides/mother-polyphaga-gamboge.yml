@@ -1,0 +1,43 @@
+- name: "Mother Polyphaga Gamboge"
+  eventName: "Your Own Great Chivalry"
+  image: mother_polyphaga_gamboge
+  cat: gl
+  race: Insect
+  
+  isActive: true
+
+  enrage:
+    m1: "7:00"
+    m2: "7:00"
+    m3: "4:00"
+    	    
+  statusInflictions:
+    - None
+
+  weaknesses:
+    - element: Ice
+      percentWeakness: 25
+
+    - status: Freeze
+      vuln: Low
+
+    - status: Poison
+      vuln: Low
+
+  recommendations:
+    - plain: Ice Damage
+    - plain: Crit
+    - plain: Ranged
+
+  desc: >
+    Large boss with high DEF. Attack pattern intensifies as its HP decreases. Freeze is effective; slightly susceptive to poison. 
+
+  moves:
+    - name: King of the Insects
+      targets: Any
+      isEnrage: true
+      m1: true
+      m2: true
+      m3: true
+      desc: >
+        Enrage mode. Stronger version of Insect Warrior Spirit; no new attacks.

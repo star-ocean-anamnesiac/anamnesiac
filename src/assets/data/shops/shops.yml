@@ -1,11 +1,39 @@
+- name: Misery 4 Coin
+  eventName: "Misery 4 Event"
+  icon: currency-coin-m2
+  cat: gl
+  currency: Misery 4 Coin
+  aliases:
+    - M4
+    - Supremacy
 
+  items:
+    - name: "Magic Hammer: Cap Inc."
+      stock: 1
+      cost: 1
+      type: improvement-hammer-special
+    - name: "Magic Hammer: Cap Inc."
+      stock: 1
+      cost: 1
+      type: improvement-hammer-special    
+    - name: 5* Character Ticket
+      stock: 1
+      cost: 1
+      type: draw-ticket-character  
+    - name: 5* Weapon Ticket
+      stock: 1
+      cost: 1
+      type: draw-ticket-weapon   
+      
 - name: Return M2 Coin
+  eventName: "[EVENT] Returns"
   icon: currency-coin-m2
   cat: gl
   currency: Return M2 Coin
   aliases:
     - Return M2
     - Rerun M2
+    - Red Coin
 
   items:
     - name: 5* Character Ticket
@@ -80,12 +108,15 @@
       type: seed-other
 
 - name: Return Coin
+  eventName: "[EVENT] Returns"
   icon: currency-coin-m1
   cat: gl
   currency: Return Coin
   aliases:
     - Return M1
     - Rerun M1
+    - Blue Coin
+    
   items:
     - name: 5* Character Ticket
       stock: 2
@@ -150,330 +181,8 @@
       type: improvement-crystal     
 
 
-- name: Blood Valkyrie Coin
-  icon: currency-coin-m1
-  cat: gl
-  currency: Blood Valkyrie Coin
-  aliases:
-    - blood valk m1
-
-  items:
-    - name: Blood Valkyrie M2 Coin
-      stock: 10
-      cost: 5000
-      type: currency-coin-m2
-    - name: Slayer of Divine Beings
-      stock: 3
-      cost: 2000
-      type: ohs
-    - name: Slayer of Divine Beings
-      stock: 2
-      cost: 4000
-      type: ohs
-    - name: Shiny Rupture
-      stock: 2
-      cost: 2000
-      type: bow
-    - name: Shiny Rupture
-      stock: 3
-      cost: 4000
-      type: bow
-    - name: 4-5* Char. Ticket
-      stock: 4
-      cost: 4000
-      type: draw-ticket-character
-    - name: 5* Weapon Ticket
-      stock: 2
-      cost: 3000
-      type: draw-ticket-weapon
-    - name: 4* Weapon Ticket
-      stock: 3
-      cost: 2000
-      type: draw-ticket-weapon
-    - name: Ra. Platinum Prism
-      stock: 0
-      cost: 400
-      type: improvement-prism
-    - name: "Plat. Hammer: Enhance"
-      stock: 10
-      cost: 400
-      type: improvement-hammer
-    - name: "Gold Hammer: Enhance"
-      stock: 10
-      cost: 200
-      type: improvement-hammer    
-    - name: "Silver Hammer: Enhance"
-      stock: 20
-      cost: 150
-      type: improvement-hammer  
-    - name: Rainbow Crystal
-      stock: 3
-      cost: 2500
-      type: improvement-crystal
-    - name: Platinum Ingot
-      stock: 10
-      cost: 1000
-      type: currency-ingot     
-    - name: Mission Ticket
-      stock: 5
-      cost: 400
-      type: draw-ticket-mission
-    - name: Barrier Blaster
-      stock: 1
-      cost: 2500
-      type: misc-barrierblaster
-      
-    - name: Anti-silence Amulet IV
-      stock: 1
-      cost: 15000
-      type: accessory
-      
-      
-- name: Blood Valkyrie M2 Coin
-  icon: currency-coin-m2
-  cat: gl
-  currency: Blood Valkyrie Coin [M2]
-  aliases:
-    - blood valk m2
-
-  items:
-    - name: Slayer of Divine Beings
-      stock: 1
-      cost: 10
-      type: ohs
-    - name: Shiny Rupture
-      stock: 1
-      cost: 10
-      type: bow
-    - name: L. Limit Breaker
-      stock: 1
-      cost: 20
-      type: improvement-limitbreak
-    - name: 5* Weapon Ticket
-      stock: 2
-      cost: 5
-      type: draw-ticket-weapon
-    - name: 5* Character Ticket
-      stock: 1
-      cost: 10
-      type: draw-ticket-character 
-    - name: 4-5* Char. Ticket
-      stock: 1
-      cost: 7
-      type: draw-ticket-character
-    - name: Rainbow Crystal
-      stock: 0
-      cost: 10
-      type: improvement-crystal
-    - name: Ra. Platinum Prism
-      stock: 0
-      cost: 3
-      type: improvement-prism
-    - name: "Gold Hammer: Enhance"
-      stock: 0
-      cost: 3
-      type: improvement-hammer    
-      
-      
-- name: Interview Data
-  icon: currency-coin-m1
-  cat: gl
-  currency: Interview Data
-  aliases:
-    - gleaming
-    - simulacrum
-    - shine totem
-    - totem
-
-  items:
-    - name: Jingu-Style Secret Fist "White Whale"
-      stock: 1
-      cost: 3000
-      type: knuckle
-    - name: Theory of Symbology
-      stock: 1
-      cost: 3000
-      type: tome
-    - name: Cat Scale Knife
-      stock: 1
-      cost: 3000
-      type: dagger
-    - name: "Armlock H: Cap Inc."
-      stock: 5
-      cost: 2000
-      type: improvement-hammer-special
-    - name: "Armlock H: Cap Inc."
-      stock: 5
-      cost: 2500
-      type: improvement-hammer-special
-    - name: "Armlock H: Cap Inc."
-      stock: 5
-      cost: 3000
-      type: improvement-hammer-special       
-    - name: Reporter's Armband
-      stock: 3
-      cost: 15000
-      type: accessory      
-    - name: AP Starseed
-      stock: 1
-      cost: 8000
-      type: seed-ap   
-    - name: HP Starseed
-      stock: 0
-      cost: 1500
-      type: seed-other  
-    - name: Scoop Data
-      stock: 0
-      cost: 200
-      type: draw-gacha     
-    - name: 5* Weapon Ticket
-      stock: 1
-      cost: 3000
-      type: draw-ticket-weapon      
-    - name: 4-5* Char Ticket
-      stock: 3
-      cost: 2000
-      type: draw-ticket-character
-    - name: L. Limit Breaker
-      stock: 1
-      cost: 4000
-      type: improvement-limitbreak
-    - name: "Plat. Hammer: Enhance"
-      stock: 10
-      cost: 500
-      type: improvement-hammer
-    - name: "Gold Hammer: Enhance"
-      stock: 10
-      cost: 300
-      type: improvement-hammer      
-    - name: Rainbow Crystal
-      stock: 3
-      cost: 2500
-      type: improvement-crystal
-    - name: Barrier Blaster
-      stock: 1
-      cost: 3000
-      type: misc-barrierblaster
-    - name: Mission Ticket
-      stock: 20
-      cost: 500
-      type: draw-ticket-mission    
- 
-
-- name: Valkyrie Coin [Blue]
-  icon: currency-coin-m2
-  cat: gl
-  currency: Valkyrie Coin [Blue]
-  aliases:
-    - lezard and valkyrie
-    - lez and bv
-
-  items:
-    - name: Magic Crystalx 100
-      stock: 0
-      cost: 1
-      type: draw-gacha  
-    - name: "Blue Valkyrie Hammer: Cap Inc."
-      stock: 10
-      cost: 7    
-      type: improvement-hammer-special
-    - name: 5* Weapon Ticket
-      stock: 2
-      cost: 15
-      type: draw-ticket-weapon            
-    - name: 5* Character Ticket
-      stock: 2
-      cost: 30
-      type: draw-ticket-character     
-    - name: 5* Ace Char. Ticket
-      stock: 1
-      cost: 100
-      type: draw-ticket-character 
-    - name: L. Limit Breaker
-      stock: 2
-      cost: 30
-      type: improvement-limitbreak
-    - name: L. Limit Breaker
-      stock: 2
-      cost: 40
-      type: improvement-limitbreak
-    - name: "Platinum Thread: Enhance"
-      stock: 10
-      cost: 7
-      type: improvement-thread
-    - name: AP Starseed
-      stock: 3
-      cost: 45
-      type: seed-ap        
-      
-    - name: Pure White Barrette
-      stock: 5
-      cost: 20
-      type: accessory      
-    - name: Goddess Ear Cuff
-      stock: 5
-      cost: 25
-      type: accessory      
-    - name: Charm of Insight
-      stock: 5
-      cost: 25
-      type: accessory      
-
-
-- name: Valkyrie Coin [Black]
-  icon: currency-coin-m2
-  cat: gl
-  currency: Valkyrie Coin [Black]
-  aliases:
-    - ballistic
-    - rhino
-    - ballistic rhino
-    - gandar
-
-  items:
-    - name: Magic Crystalx 100
-      stock: 0
-      cost: 1
-      type: draw-gacha  
-    - name: "Black Valkyrie Hammer: Cap Inc."
-      stock: 10
-      cost: 5
-      type: improvement-hammer-special
-    - name: 5* Weapon Ticket
-      stock: 1
-      cost: 10
-      type: draw-ticket-weapon            
-    - name: 5* Character Ticket
-      stock: 1
-      cost: 20
-      type: draw-ticket-character     
-    - name: L. Limit Breaker
-      stock: 1
-      cost: 20
-      type: improvement-limitbreak
-    - name: "Platinum Thread: Enhance"
-      stock: 5
-      cost: 5
-      type: improvement-thread
-    - name: AP Starseed
-      stock: 1
-      cost: 30
-      type: seed-ap         
-      
-    - name: Jet-Black Barrette
-      stock: 5
-      cost: 15
-      type: accessory      
-    - name: Valkyrie Feather
-      stock: 5
-      cost: 20
-      type: accessory      
-    - name: Energy Bracelet
-      stock: 5
-      cost: 20
-      type: accessory    
-   
 - name: Jie Revorse Coin
+  eventName: "Eliminate Jie Revorse!"
   icon: currency-coin-m1
   cat: gl
   currency: Jie Revorse Coin
@@ -578,6 +287,7 @@
       
       
 - name: Simulator Coin
+  eventName: "VR Arena Battle Hell's Siren"
   icon: currency-coin-m1
   cat: gl
   currency: Simulator Coin
@@ -623,7 +333,7 @@
       stock: 0
       cost: 400
       type: improvement-prism   
-    - name: "Plat. Hammer: Enchance"
+    - name: "Plat. Hammer: Enhance"
       stock: 10
       cost: 400
       type: improvement-hammer
@@ -667,6 +377,7 @@
       
       
 - name: Michael Coin
+  eventName: "Defeat Michael!"
   icon: currency-coin-m1
   cat: gl
   currency: Michael Coin
@@ -711,7 +422,7 @@
       stock: 0
       cost: 400
       type: improvement-prism   
-    - name: "Plat. Hammer: Enchance"
+    - name: "Plat. Hammer: Enhance"
       stock: 25
       cost: 400
       type: improvement-hammer
@@ -751,13 +462,13 @@
      
      
 - name: Michael M2 Coin
+  eventName: "Defeat Michael!"
   icon: currency-coin-m2
   cat: gl
   currency: Michael M2 Coin
   aliases:
     - michael m2
     - mike m2
-
 
   items:
     - name: Knuckles of Hope
@@ -799,6 +510,7 @@
      
      
 - name: Executioner Coin
+  eventName: "The Executioner Attacks"
   icon: currency-coin-m1
   cat: gl
   currency: Exeuctioner Coin
@@ -881,199 +593,136 @@
       type: accessory
 
 
-- name: Valkyrie Coin [Purple]
-  icon: currency-coin-m2
-  cat: gl
-  currency: Valkyrie Coin [Purple]
-  aliases:
-    - lezard
-    - lezard chapter 3
-    - vp chapter 3
-
-  items:
-    - name: Magic Crystalx 100
-      stock: 0
-      cost: 1
-      type: draw-gacha  
-    - name: "Purple Valkyrie Hammer: Cap Inc."
-      stock: 10
-      cost: 3
-      type: improvement-hammer-special
-    - name: 5* Weapon Ticket
-      stock: 1
-      cost: 7
-      type: draw-ticket-weapon            
-    - name: 5* Character Ticket
-      stock: 1
-      cost: 15
-      type: draw-ticket-character     
-    - name: L. Limit Breaker
-      stock: 1
-      cost: 15
-      type: improvement-limitbreak
-    - name: "Platinum Thread: Enhance"
-      stock: 5
-      cost: 3
-      type: improvement-thread
-    - name: AP Starseed
-      stock: 1
-      cost: 25
-      type: seed-ap         
-      
-    - name: Alchemist's Glasses
-      stock: 5
-      cost: 10
-      type: accessory      
-    - name: Head Sorceror's Handkerchief
-      stock: 5
-      cost: 13
-      type: accessory      
-    - name: Hawkeye Charm
-      stock: 5
-      cost: 13
-      type: accessory    
-      
-      
-- name: Bell Ornament
-  icon: currency-coin-m2
-  cat: gl
-  currency: Bell Ornament
-  aliases:
-    - surprise christmas party m2
-    - retrieval mission m2
-    - christmas doggo m2
-
-  items:
-    - name: 5* Weapon Ticket
-      stock: 3
-      cost: 10
-      type: draw-ticket-weapon            
-    - name: 5* Character Ticket
-      stock: 3
-      cost: 15
-      type: draw-ticket-character     
-    - name: L. Limit Breaker
-      stock: 2
-      cost: 20
-      type: improvement-limitbreak
-    - name: "Platinum Thread: Enhance"
-      stock: 5
-      cost: 15
-      type: improvement-thread
-    - name: "Gold Thread: Enhance"
-      stock: 10
-      cost: 10
-      type: improvement-thread
-    - name: AP Starseed
-      stock: 1
-      cost: 50
-      type: seed-ap 
-    - name: Ra. Platinum Prism
-      stock: 0
-      cost: 5
-      type: improvement-prism
-    - name: "Platinum Thread: Enhance"
-      stock: 0
-      cost: 20
-      type: improvement-thread
-      
-    - name: Gold Coro Necklace
-      stock: 3
-      cost: 30
-      type: accessory      
-    - name: Christmas Reindeer
-      stock: 6
-      cost: 50
-      type: accessory      
-    - name: Symbol of the Snow God
-      stock: 3
-      cost: 30
-      type: accessory           
-
-
-- name: Christmas Ornament
+- name: Blood Valkyrie Coin
+  eventName: "Blood Valkyrie"
   icon: currency-coin-m1
   cat: gl
-  currency: Christmas Ornament
+  currency: Blood Valkyrie Coin
   aliases:
-    - surprise christmas party m1
-    - retrieval mission m1
-    - christmas doggo m1
+    - blood valk m1
+    - blood valkyrie m1
 
   items:
-    - name: Illumination Blaster
-      stock: 1
-      cost: 3000
-      type: gun
-    - name: Twin Snowswords
-      stock: 1
-      cost: 3000
-      type: dualswords
-    - name: Christmas Staff
-      stock: 1
-      cost: 3000
-      type: staff
-    - name: "Snow Hammer Hammer: Cap Inc."
-      stock: 5
-      cost: 2000
-      type: improvement-hammer-special
-    - name: "Snow Hammer Hammer: Cap Inc."
-      stock: 5
-      cost: 2500
-      type: improvement-hammer-special
-    - name: "Snow Hammer Hammer: Cap Inc."
-      stock: 5
-      cost: 3000
-      type: improvement-hammer-special    
-    - name: AP Starseed
-      stock: 1
-      cost: 8000
-      type: seed-ap  
-    - name: 5* Weapon Ticket
+    - name: Blood Valkyrie M2 Coin
+      stock: 10
+      cost: 5000
+      type: currency-coin-m2
+    - name: Slayer of Divine Beings
       stock: 3
-      cost: 3000
-      type: draw-ticket-weapon            
-    - name: 4-5* Character Ticket
-      stock: 4
-      cost: 2500
-      type: draw-ticket-character     
-    - name: L. Limit Breaker
+      cost: 2000
+      type: ohs
+    - name: Slayer of Divine Beings
       stock: 2
       cost: 4000
-      type: improvement-limitbreak
+      type: ohs
+    - name: Shiny Rupture
+      stock: 2
+      cost: 2000
+      type: bow
+    - name: Shiny Rupture
+      stock: 3
+      cost: 4000
+      type: bow
+    - name: 4-5* Char. Ticket
+      stock: 4
+      cost: 4000
+      type: draw-ticket-character
+    - name: 5* Weapon Ticket
+      stock: 2
+      cost: 3000
+      type: draw-ticket-weapon
+    - name: 4* Weapon Ticket
+      stock: 3
+      cost: 2000
+      type: draw-ticket-weapon
+    - name: Ra. Platinum Prism
+      stock: 0
+      cost: 400
+      type: improvement-prism
     - name: "Plat. Hammer: Enhance"
       stock: 10
-      cost: 500
-      type: improvement-hammer  
+      cost: 400
+      type: improvement-hammer
     - name: "Gold Hammer: Enhance"
       stock: 10
-      cost: 300
+      cost: 200
       type: improvement-hammer    
-    - name: "Plat. Hammer: Enhance"
-      stock: 0
-      cost: 1500
-      type: improvement-hammer     
-    - name: Platinum Ingot
-      stock: 0
-      cost: 1000
-      type: currency-ingot  
+    - name: "Silver Hammer: Enhance"
+      stock: 20
+      cost: 150
+      type: improvement-hammer  
     - name: Rainbow Crystal
       stock: 3
       cost: 2500
-      type: improvement-crystal 
+      type: improvement-crystal
+    - name: Platinum Ingot
+      stock: 10
+      cost: 1000
+      type: currency-ingot     
     - name: Mission Ticket
-      stock: 20
-      cost: 500
+      stock: 5
+      cost: 400
       type: draw-ticket-mission
+    - name: Barrier Blaster
+      stock: 1
+      cost: 2500
+      type: misc-barrierblaster
       
-    - name: Gold Coro Necklace
-      stock: 3
+    - name: Anti-silence Amulet IV
+      stock: 1
       cost: 15000
-      type: accessory  
-     
+      type: accessory
       
+      
+- name: Blood Valkyrie M2 Coin
+  eventName: "Blood Valkyrie"
+  icon: currency-coin-m2
+  cat: gl
+  currency: Blood Valkyrie Coin [M2]
+  aliases:
+    - blood valk m2
+
+  items:
+    - name: Slayer of Divine Beings
+      stock: 1
+      cost: 10
+      type: ohs
+    - name: Shiny Rupture
+      stock: 1
+      cost: 10
+      type: bow
+    - name: L. Limit Breaker
+      stock: 1
+      cost: 20
+      type: improvement-limitbreak
+    - name: 5* Weapon Ticket
+      stock: 2
+      cost: 5
+      type: draw-ticket-weapon
+    - name: 5* Character Ticket
+      stock: 1
+      cost: 10
+      type: draw-ticket-character 
+    - name: 4-5* Char. Ticket
+      stock: 1
+      cost: 7
+      type: draw-ticket-character
+    - name: Rainbow Crystal
+      stock: 0
+      cost: 10
+      type: improvement-crystal
+    - name: Ra. Platinum Prism
+      stock: 0
+      cost: 3
+      type: improvement-prism
+    - name: "Gold Hammer: Enhance"
+      stock: 0
+      cost: 3
+      type: improvement-hammer    
+
       
 - name: Luther M2 Coin
+  eventName: "Luther's Descent"
   icon: currency-coin-m2
   cat: gl
   currency: Luther M2 Coin
@@ -1119,7 +768,8 @@
       type: improvement-hammer        
 
 
-- name: Luther Coin Exchange
+- name: Luther Coin
+  eventName: "Luther's Descent"
   icon: currency-coin-m1
   cat: gl
   currency: Luther Coin
@@ -1200,9 +850,600 @@
       stock: 1
       cost: 7000
       type: accessory  
+
+
+- name: Armaros Coin
+  eventName: "Armaros of the Deep Descends"
+  icon: currency-coin-m1
+  cat: gl
+  currency: Armaros Coin
+  aliases:
+    - Armaros M1
+
+  items:
+    - name: MK-2 SRF Blade
+      stock: 6
+      cost: 1500
+      type: ohs
+    - name: Hurricane Claws
+      stock: 6
+      cost: 1500
+      type: knuckle
+    - name: 4-5* Char. Ticket
+      stock: 4
+      cost: 2500
+      type: draw-ticket-character
+    - name: 5* Weapon Ticket
+      stock: 2
+      cost: 2000
+      type: draw-ticket-weapon
+    - name: 4* Weapon Ticket
+      stock: 3
+      cost: 1500
+      type: draw-ticket-weapon
+    - name: "Plat. Hammer: Enhance"
+      stock: 10
+      cost: 400
+      type: improvement-hammer
+    - name: "Gold Hammer: Enhance"
+      stock: 10
+      cost: 300
+      type: improvement-hammer    
+    - name: "Silver Hammer: Enhance"
+      stock: 20
+      cost: 200
+      type: improvement-hammer            
+    - name: Ra. Platinum Prism
+      stock: 0
+      cost: 600
+      type: improvement-prism
+    - name: Rainbow Crystal
+      stock: 3
+      cost: 1500
+      type: improvement-crystal
+    - name: Platinum Ingot
+      stock: 10
+      cost: 650
+      type: currency-ingot     
+    - name: Mission Ticket
+      stock: 5
+      cost: 250
+      type: draw-ticket-mission
+    - name: Barrier Blaster
+      stock: 1
+      cost: 2000
+      type: misc-barrierblaster
+      
+    - name: Eagle Eye Charm
+      stock: 1
+      cost: 15000
+      type: accessory
+      
+      
+- name: Egg M2 Coin
+  eventName: "Defeat Colossal Beaks"
+  icon: currency-coin-m2
+  cat: gl
+  currency: Egg M2 Coin
+  aliases:
+    - Axebeak M2
+    - Colossal Beaks M2
+
+  items:  
+    - name: Healing Band
+      stock: 1
+      cost: 10
+      type: accessory      
+    - name: Sturdy Bracelet
+      stock: 1
+      cost: 10
+      type: accessory      
+    - name: Anti-curse Amulet III
+      stock: 1
+      cost: 5
+      type: accessory      
+    - name: Anti-silence Amulet III
+      stock: 1
+      cost: 5
+      type: accessory  
+      
+    - name: L. Limit Breaker
+      stock: 1
+      cost: 20
+      type: improvement-limitbreak
+    - name: 5* Weapon Ticket
+      stock: 2
+      cost: 5
+      type: draw-ticket-weapon  
+    - name: 5* Character Ticket
+      stock: 1
+      cost: 10
+      type: draw-ticket-character  
+    - name: 4-5* Char. Ticket
+      stock: 1
+      cost: 7
+      type: draw-ticket-character          
+    - name: Rainbow Crystal
+      stock: 0
+      cost: 10
+      type: improvement-crystal    
+   
+
+- name: Egg Coin
+  eventName: "Defeat Colossal Beaks"
+  icon: currency-coin-m1
+  cat: gl
+  currency: Egg Coin
+  aliases:
+    - Axebeak M1
+    - Colossal Beaks M1
+
+  items: 
+    - name: Ceremonial Spear
+      stock: 4
+      cost: 2000
+      type: staff 
+    - name: Ceremonial Spear
+      stock: 2
+      cost: 4000
+      type: staff
+    - name: Rod of Snakes
+      stock: 4
+      cost: 2000
+      type: staff
+    - name: Rod of Snakes
+      stock: 2
+      cost: 4000
+      type: staff
+    - name: 4-5* Char. Ticket
+      stock: 4
+      cost: 4000
+      type: draw-ticket-character
+    - name: 5* Weapon Ticket
+      stock: 2
+      cost: 3000
+      type: draw-ticket-weapon
+    - name: 4* Weapon Ticket
+      stock: 3
+      cost: 2000
+      type: draw-ticket-weapon
+    - name: "Plat. Hammer: Enhance"
+      stock: 10
+      cost: 400
+      type: improvement-hammer
+    - name: "Gold Hammer: Enhance"
+      stock: 10
+      cost: 200
+      type: improvement-hammer    
+    - name: "Silver Hammer: Enhance"
+      stock: 20
+      cost: 150
+      type: improvement-hammer       
+    - name: "Silver Hammer: Enhance"
+      stock: 0
+      cost: 800
+      type: improvement-hammer 
+    - name: Rainbow Crystal
+      stock: 3
+      cost: 2500
+      type: improvement-crystal
+    - name: Platinum Ingot
+      stock: 10
+      cost: 1000
+      type: currency-ingot     
+    - name: Mission Ticket
+      stock: 5
+      cost: 400
+      type: draw-ticket-mission
+    - name: Barrier Blaster
+      stock: 1
+      cost: 3000
+      type: misc-barrierblaster
+      
+    - name: Journeyman's Charm
+      stock: 1
+      cost: 15000
+      type: accessory
+
+
+- name: Bell Ornament
+  eventName: "A Surprise Christmas Party"
+  icon: currency-coin-m2
+  cat: gl
+  currency: Bell Ornament
+  aliases:
+    - surprise christmas party m2
+    - retrieval mission m2
+    - christmas doggo m2
+
+  items:
+    - name: 5* Weapon Ticket
+      stock: 3
+      cost: 10
+      type: draw-ticket-weapon            
+    - name: 5* Character Ticket
+      stock: 3
+      cost: 15
+      type: draw-ticket-character     
+    - name: L. Limit Breaker
+      stock: 2
+      cost: 20
+      type: improvement-limitbreak
+    - name: "Platinum Thread: Enhance"
+      stock: 5
+      cost: 15
+      type: improvement-thread
+    - name: "Gold Thread: Enhance"
+      stock: 10
+      cost: 10
+      type: improvement-thread
+    - name: AP Starseed
+      stock: 1
+      cost: 50
+      type: seed-ap 
+    - name: Ra. Platinum Prism
+      stock: 0
+      cost: 5
+      type: improvement-prism
+    - name: "Platinum Thread: Enhance"
+      stock: 0
+      cost: 20
+      type: improvement-thread
+      
+    - name: Gold Coro Necklace
+      stock: 3
+      cost: 30
+      type: accessory      
+    - name: Christmas Reindeer
+      stock: 6
+      cost: 50
+      type: accessory      
+    - name: Symbol of the Snow God
+      stock: 3
+      cost: 30
+      type: accessory           
+
+
+- name: Christmas Ornament
+  eventName: "A Surprise Christmas Party"
+  icon: currency-coin-m1
+  cat: gl
+  currency: Christmas Ornament
+  aliases:
+    - surprise christmas party m1
+    - retrieval mission m1
+    - christmas doggo m1
+
+  items:
+    - name: Illumination Blaster
+      stock: 1
+      cost: 3000
+      type: gun
+    - name: Twin Snowswords
+      stock: 1
+      cost: 3000
+      type: dualswords
+    - name: Christmas Staff
+      stock: 1
+      cost: 3000
+      type: staff
+    - name: "Snow Hammer Hammer: Cap Inc."
+      stock: 5
+      cost: 2000
+      type: improvement-hammer-special
+    - name: "Snow Hammer Hammer: Cap Inc."
+      stock: 5
+      cost: 2500
+      type: improvement-hammer-special
+    - name: "Snow Hammer Hammer: Cap Inc."
+      stock: 5
+      cost: 3000
+      type: improvement-hammer-special    
+    - name: AP Starseed
+      stock: 1
+      cost: 8000
+      type: seed-ap  
+    - name: 5* Weapon Ticket
+      stock: 3
+      cost: 3000
+      type: draw-ticket-weapon            
+    - name: 4-5* Character Ticket
+      stock: 4
+      cost: 2500
+      type: draw-ticket-character     
+    - name: L. Limit Breaker
+      stock: 2
+      cost: 4000
+      type: improvement-limitbreak
+    - name: "Plat. Hammer: Enhance"
+      stock: 10
+      cost: 500
+      type: improvement-hammer  
+    - name: "Gold Hammer: Enhance"
+      stock: 10
+      cost: 300
+      type: improvement-hammer    
+    - name: "Plat. Hammer: Enhance"
+      stock: 0
+      cost: 1500
+      type: improvement-hammer     
+    - name: Platinum Ingot
+      stock: 0
+      cost: 1000
+      type: currency-ingot  
+    - name: Rainbow Crystal
+      stock: 3
+      cost: 2500
+      type: improvement-crystal 
+    - name: Mission Ticket
+      stock: 20
+      cost: 500
+      type: draw-ticket-mission
+      
+    - name: Gold Coro Necklace
+      stock: 3
+      cost: 15000
+      type: accessory        
+ 
+ 
+- name: Interview Data
+  eventName: "A Moment in History [Gleaming Simulacrum]"
+  icon: currency-coin-m1
+  cat: gl
+  currency: Interview Data
+  aliases:
+    - gleaming
+    - simulacrum
+    - shine totem
+    - totem
+
+  items:
+    - name: Jingu-Style Secret Fist "White Whale"
+      stock: 1
+      cost: 3000
+      type: knuckle
+    - name: Theory of Symbology
+      stock: 1
+      cost: 3000
+      type: tome
+    - name: Cat Scale Knife
+      stock: 1
+      cost: 3000
+      type: dagger
+    - name: "Armlock H: Cap Inc."
+      stock: 5
+      cost: 2000
+      type: improvement-hammer-special
+    - name: "Armlock H: Cap Inc."
+      stock: 5
+      cost: 2500
+      type: improvement-hammer-special
+    - name: "Armlock H: Cap Inc."
+      stock: 5
+      cost: 3000
+      type: improvement-hammer-special       
+    - name: Reporter's Armband
+      stock: 3
+      cost: 15000
+      type: accessory      
+    - name: AP Starseed
+      stock: 1
+      cost: 8000
+      type: seed-ap   
+    - name: HP Starseed
+      stock: 0
+      cost: 1500
+      type: seed-other  
+    - name: Scoop Data
+      stock: 0
+      cost: 200
+      type: draw-gacha     
+    - name: 5* Weapon Ticket
+      stock: 1
+      cost: 3000
+      type: draw-ticket-weapon      
+    - name: 4-5* Char Ticket
+      stock: 3
+      cost: 2000
+      type: draw-ticket-character
+    - name: L. Limit Breaker
+      stock: 1
+      cost: 4000
+      type: improvement-limitbreak
+    - name: "Plat. Hammer: Enhance"
+      stock: 10
+      cost: 500
+      type: improvement-hammer
+    - name: "Gold Hammer: Enhance"
+      stock: 10
+      cost: 300
+      type: improvement-hammer      
+    - name: Rainbow Crystal
+      stock: 3
+      cost: 2500
+      type: improvement-crystal
+    - name: Barrier Blaster
+      stock: 1
+      cost: 3000
+      type: misc-barrierblaster
+    - name: Mission Ticket
+      stock: 20
+      cost: 500
+      type: draw-ticket-mission    
+ 
+
+- name: Valkyrie Coin [Blue]
+  eventName: "VALKYRIE PROFILE -The Purged Wizard- Chapter 1"
+  icon: currency-coin-m2
+  cat: gl
+  currency: Valkyrie Coin [Blue]
+  aliases:
+    - lezard and valkyrie
+    - lez and bv
+
+  items:
+    - name: Magic Crystalx 100
+      stock: 0
+      cost: 1
+      type: draw-gacha  
+    - name: "Blue Valkyrie Hammer: Cap Inc."
+      stock: 10
+      cost: 7    
+      type: improvement-hammer-special
+    - name: 5* Weapon Ticket
+      stock: 2
+      cost: 15
+      type: draw-ticket-weapon            
+    - name: 5* Character Ticket
+      stock: 2
+      cost: 30
+      type: draw-ticket-character     
+    - name: 5* Ace Char. Ticket
+      stock: 1
+      cost: 100
+      type: draw-ticket-character 
+    - name: L. Limit Breaker
+      stock: 2
+      cost: 30
+      type: improvement-limitbreak
+    - name: L. Limit Breaker
+      stock: 2
+      cost: 40
+      type: improvement-limitbreak
+    - name: "Platinum Thread: Enhance"
+      stock: 10
+      cost: 7
+      type: improvement-thread
+    - name: AP Starseed
+      stock: 3
+      cost: 45
+      type: seed-ap        
+      
+    - name: Pure White Barrette
+      stock: 5
+      cost: 20
+      type: accessory      
+    - name: Goddess Ear Cuff
+      stock: 5
+      cost: 25
+      type: accessory      
+    - name: Charm of Insight
+      stock: 5
+      cost: 25
+      type: accessory      
+
+
+- name: Valkyrie Coin [Black]
+  eventName: "VALKYRIE PROFILE -The Purged Wizard- Chapter 2"
+  icon: currency-coin-m2
+  cat: gl
+  currency: Valkyrie Coin [Black]
+  aliases:
+    - ballistic
+    - rhino
+    - ballistic rhino
+    - gandar
+
+  items:
+    - name: Magic Crystalx 100
+      stock: 0
+      cost: 1
+      type: draw-gacha  
+    - name: "Black Valkyrie Hammer: Cap Inc."
+      stock: 10
+      cost: 5
+      type: improvement-hammer-special
+    - name: 5* Weapon Ticket
+      stock: 1
+      cost: 10
+      type: draw-ticket-weapon            
+    - name: 5* Character Ticket
+      stock: 1
+      cost: 20
+      type: draw-ticket-character     
+    - name: L. Limit Breaker
+      stock: 1
+      cost: 20
+      type: improvement-limitbreak
+    - name: "Platinum Thread: Enhance"
+      stock: 5
+      cost: 5
+      type: improvement-thread
+    - name: AP Starseed
+      stock: 1
+      cost: 30
+      type: seed-ap         
+      
+    - name: Jet-Black Barrette
+      stock: 5
+      cost: 15
+      type: accessory      
+    - name: Valkyrie Feather
+      stock: 5
+      cost: 20
+      type: accessory      
+    - name: Energy Bracelet
+      stock: 5
+      cost: 20
+      type: accessory   
+
+
+- name: Valkyrie Coin [Purple]
+  eventName: "VALKYRIE PROFILE -The Purged Wizard- Chapter 3"
+  icon: currency-coin-m2
+  cat: gl
+  currency: Valkyrie Coin [Purple]
+  aliases:
+    - lezard
+    - lezard chapter 3
+    - vp chapter 3
+
+  items:
+    - name: Magic Crystal x 100
+      stock: 0
+      cost: 1
+      type: draw-gacha  
+    - name: "Purple Valkyrie Hammer: Cap Inc."
+      stock: 10
+      cost: 3
+      type: improvement-hammer-special
+    - name: 5* Weapon Ticket
+      stock: 1
+      cost: 7
+      type: draw-ticket-weapon            
+    - name: 5* Character Ticket
+      stock: 1
+      cost: 15
+      type: draw-ticket-character     
+    - name: L. Limit Breaker
+      stock: 1
+      cost: 15
+      type: improvement-limitbreak
+    - name: "Platinum Thread: Enhance"
+      stock: 5
+      cost: 3
+      type: improvement-thread
+    - name: AP Starseed
+      stock: 1
+      cost: 25
+      type: seed-ap         
+      
+    - name: Alchemist's Glasses
+      stock: 5
+      cost: 10
+      type: accessory      
+    - name: Head Sorceror's Handkerchief
+      stock: 5
+      cost: 13
+      type: accessory      
+    - name: Hawkeye Charm
+      stock: 5
+      cost: 13
+      type: accessory 
    
 
 - name: Astral Coin
+  eventName: "Your Own Great Chivalry [Mother Polyphaga Gamboge]"
   icon: currency-coin-m1
   cat: gl
   currency: Astral Coin
@@ -1277,6 +1518,570 @@
       type: seed-other  
 
    
+- name: Astral M2 Coin
+  eventName: "Your Own Great Chivalry [Mother Polyphaga Gamboge]"
+  icon: currency-coin-m2
+  cat: gl
+  currency: Astral M2 Coin
+  aliases:
+    - Mother Polyphaga M2
+    - Polyphaga M2
+
+  items:
+    - name: Astral Coin x 70
+      stock: 0
+      cost: 1
+      type: draw-gacha  
+    - name: 5* Weapon Ticket
+      stock: 2
+      cost: 10
+      type: draw-ticket-weapon            
+    - name: 5* Character Ticket
+      stock: 1
+      cost: 15
+      type: draw-ticket-character     
+    - name: L. Limit Breaker
+      stock: 1
+      cost: 20
+      type: improvement-limitbreak
+    - name: "Platinum Thread: Enhance"
+      stock: 5
+      cost: 15
+      type: improvement-thread
+    - name: "Gold Thread: Enhance"
+      stock: 10
+      cost: 10
+      type: improvement-thread           
+    - name: Ra. Platinum Prism
+      stock: 0
+      cost: 5
+      type: improvement-prism
+    - name: "Platinum Thread: Enhance"
+      stock: 0
+      cost: 20
+      type: improvement-thread      
+    - name: Gold-Patterned Bandana
+      stock: 3
+      cost: 30
+      type: accessory
+    - name: Sturdy Bracelet
+      stock: 3
+      cost: 30
+      type: accessory      
+
+    - name: AP Starseed
+      stock: 1
+      cost: 50
+      type: seed-ap
+      
+
+- name: Blossom Coin
+  eventName: "Budding Ties on the Planet of Blossoms [Crown Dohdoh / Cherry Blossom Event]"
+  icon: currency-coin-m1
+  cat: gl
+  currency: Blossom Coin
+  aliases:
+    - Sakura M1
+    - Cherry Blossom M1
+    - Crown Do Do M1
+    - Crown Dodo M1
+    - Crown Dohdoh M1
+
+  items:
+    - name: Cherry Blossom Beam Sword
+      stock: 1
+      cost: 3000
+      type: dualswords
+    - name: Blue-Green Shortsword
+      stock: 1
+      cost: 3000
+      type: dagger
+    - name: "Blossom Hammer: Cap Inc."
+      stock: 5
+      cost: 2000
+      type: improvement-hammer-special
+    - name: "Blossom Hammer: Cap Inc."
+      stock: 5
+      cost: 2500
+      type: improvement-hammer-special    
+    - name: AP Starseed
+      stock: 1
+      cost: 8000
+      type: seed-ap   
+    - name: 5* Weapon Ticket
+      stock: 1
+      cost: 3000
+      type: draw-ticket-weapon   
+    - name: 4-5* Char Ticket
+      stock: 3
+      cost: 2500
+      type: draw-ticket-character
+    - name: L. Limit Breaker
+      stock: 1
+      cost: 4000
+      type: improvement-limitbreak       
+    - name: "Gold Hammer: Enhance"
+      stock: 10
+      cost: 500
+      type: improvement-hammer  
+    - name: Rainbow Crystal
+      stock: 3
+      cost: 2500
+      type: improvement-crystal
+      
+    - name: "Plat. Hammer: Enhance"
+      stock: 0
+      cost: 1500
+      type: improvement-hammer    
+    - name: Platinum Ingot
+      stock: 0
+      cost: 1000      
+      type: currency-ingot      
+    - name: Furry Tail
+      stock: 3
+      cost: 15000
+      type: accessory
+
+- name: Blossom M2 Coin
+  eventName: "Budding Ties on the Planet of Blossoms [Crown Dohdoh / Cherry Blossom Event]"
+  icon: currency-coin-m2
+  cat: gl
+  currency: Blossom M2 Coin
+  aliases:
+    - Crown Do Do M2
+    - Crown Dodo M2
+    - Crown Dohdoh M2
+    - Sakura M2
+
+  items:
+    - name: 5* Weapon Ticket
+      stock: 1
+      cost: 10
+      type: draw-ticket-weapon            
+    - name: 5* Character Ticket
+      stock: 1
+      cost: 15
+      type: draw-ticket-character     
+    - name: L. Limit Breaker
+      stock: 1
+      cost: 20
+      type: improvement-limitbreak
+    - name: "Platinum Thread: Enhance"
+      stock: 5
+      cost: 15
+      type: improvement-thread
+    - name: "Gold Thread: Enhance"
+      stock: 10
+      cost: 10
+      type: improvement-thread        
+    - name: AP Starseed
+      stock: 1
+      cost: 50
+      type: seed-ap      
+    - name: Ra. Platinum Prism
+      stock: 0
+      cost: 5
+      type: improvement-prism
+    - name: "Platinum Thread: Enhance"
+      stock: 0
+      cost: 20
+      type: improvement-thread      
+    - name: Furry Tail
+      stock: 3
+      cost: 30
+      type: accessory
+    - name: Fate Talisman IV
+      stock: 3
+      cost: 30
+      type: accessory      
+
+
+- name: Silver Treasure
+  eventName: "Love Across the Stars [Shrouded Gaze]"
+  icon: currency-coin-m1
+  cat: gl
+  currency: Silver Treasure
+  aliases:
+    - Shrouded Gaze M1
+    - Gem Guardian M1
+
+  items:
+    - name: Kaleidoscope
+      stock: 1
+      cost: 3000
+      type: rifle
+    - name: Red Punisher Blade
+      stock: 1
+      cost: 3000
+      type: greatsword
+    - name: "Gem Ruins Hammer: Cap Inc."
+      stock: 5
+      cost: 2000
+      type: improvement-hammer-special
+    - name: "Gem Ruins Hammer: Cap Inc."
+      stock: 5
+      cost: 2500
+      type: improvement-hammer-special    
+    - name: Red War Belt
+      stock: 3
+      cost: 10000
+      type: accessory  
+    - name: L. Limit Breaker
+      stock: 1
+      cost: 4000
+      type: improvement-limitbreak      
+    - name: AP Starseed
+      stock: 1
+      cost: 8000
+      type: seed-ap   
+    - name: 5* Weapon Ticket
+      stock: 1
+      cost: 3000
+      type: draw-ticket-weapon   
+    - name: 4-5* Char Ticket
+      stock: 3
+      cost: 2000
+      type: draw-ticket-character
+    - name: Platinum Ingot
+      stock: 0
+      cost: 1000      
+      type: currency-ingot   
+      
+    - name: "Plat. Hammer: Enhance"
+      stock: 10
+      cost: 500
+      type: improvement-hammer          
+    - name: "Gold Hammer: Enhance"
+      stock: 10
+      cost: 300
+      type: improvement-hammer  
+    - name: "Gold Hammer: Enhance"
+      stock: 0
+      cost: 900
+      type: improvement-hammer  
+    - name: Rainbow Crystal
+      stock: 3
+      cost: 2500
+      type: improvement-crystal
+    - name: HP Starseed
+      stock: 20
+      cost: 300
+      type: seed-other       
+
+
+- name: Gold Treasure
+  eventName: "Love Across the Stars [Shrouded Gaze]"
+  icon: currency-coin-m2
+  cat: gl
+  currency: Gold Treasure
+  aliases:
+    - Shrouded Gaze M2
+    - Gem Guardian M2
+    - Shrouded Gaze M3
+    - Gem Guardian M3
+
+  items:
+    - name: Silver Treasure x 70
+      stock: 0
+      cost: 1
+      type: draw-gacha    
+    - name: 5* Weapon Ticket
+      stock: 2
+      cost: 10
+      type: draw-ticket-weapon            
+    - name: 5* Character Ticket
+      stock: 1
+      cost: 15
+      type: draw-ticket-character     
+    - name: L. Limit Breaker
+      stock: 1
+      cost: 20
+      type: improvement-limitbreak
+    - name: "Platinum Thread: Enhance"
+      stock: 5
+      cost: 15
+      type: improvement-thread
+    - name: "Gold Thread: Enhance"
+      stock: 10
+      cost: 10
+      type: improvement-thread             
+    - name: Ra. Platinum Prism
+      stock: 0
+      cost: 5
+      type: improvement-prism
+    - name: "Platinum Thread: Enhance"
+      stock: 0
+      cost: 20
+      type: improvement-thread      
+    - name: Red War Belt
+      stock: 3
+      cost: 30
+      type: accessory
+    - name: War God's Symbol
+      stock: 3
+      cost: 30
+      type: accessory   
+
+    - name: AP Starseed
+      stock: 1
+      cost: 50
+      type: seed-ap 
+
+
+- name: Teatime Coin
+  eventName: "Master Must Be Punished! [Josephine / Maids]"
+  icon: currency-coin-m1
+  cat: gl
+  currency: Teatime Coin
+  aliases:
+    - Josephine M1
+    - Pet Dragon M1
+
+  items:
+    - name: Teatime M2 Coin
+      stock: 0
+      cost: 200
+      type: draw-gacha     
+    - name: Shion-Koshirae
+      stock: 1
+      cost: 3000
+      type: bns
+    - name: Ivory Bow
+      stock: 1
+      cost: 3000
+      type: bow
+    - name: "Military Hammer: Cap Inc."
+      stock: 5
+      cost: 1500
+      type: improvement-hammer-special
+    - name: "Military Hammer: Cap Inc."
+      stock: 5
+      cost: 2000
+      type: improvement-hammer-special    
+    - name: White Headpiece
+      stock: 3
+      cost: 7500
+      type: accessory  
+    - name: L. Limit Breaker
+      stock: 1
+      cost: 3000
+      type: improvement-limitbreak      
+    - name: AP Starseed
+      stock: 1
+      cost: 5000
+      type: seed-ap   
+    - name: 5* Weapon Ticket
+      stock: 1
+      cost: 3000
+      type: draw-ticket-weapon   
+    - name: 4-5* Char Ticket
+      stock: 3
+      cost: 2000
+      type: draw-ticket-character
+      
+    - name: "Platinum Thread: Enhance"
+      stock: 10
+      cost: 500
+      type: improvement-thread        
+    - name: "Plat. Hammer: Enhance"
+      stock: 10
+      cost: 500
+      type: improvement-hammer          
+    - name: "Gold Hammer: Enhance"
+      stock: 10
+      cost: 300
+      type: improvement-hammer  
+    - name: "Gold Hammer: Enhance"
+      stock: 0
+      cost: 900
+      type: improvement-hammer  
+    - name: Rainbow Crystal
+      stock: 3
+      cost: 1500
+      type: improvement-crystal    
+    - name: HP Starseed
+      stock: 20
+      cost: 300
+      type: seed-other
+    - name: ATK Starseed
+      stock: 20
+      cost: 300
+      type: seed-other
+    - name: INT Starseed
+      stock: 20
+      cost: 300
+      type: seed-other
+    - name: DEF Starseed
+      stock: 20
+      cost: 300
+      type: seed-other
+    - name: HIT Starseed
+      stock: 20
+      cost: 300
+      type: seed-other
+    - name: GRD Starseed
+      stock: 20
+      cost: 300
+      type: seed-other
+
+    - name: Mission Ticket
+      stock: 10
+      cost: 500
+      type: draw-ticket-mission  
+
+
+- name: Eternity Coin
+  eventName: "An Eternal Prison Unlocked [Dimension Chimera]"
+  icon: currency-coin-m1
+  cat: gl
+  currency: Eternity Coin
+  aliases:
+    - Dimension Chimera M1
+    - Beast Bends Space-Time M1
+    - Beast Space-Time M1
+
+  items:
+    - name: Blossom-gear Knuckles
+      stock: 1
+      cost: 3000
+      type: knuckle
+    - name: Eye of Satan
+      stock: 1
+      cost: 3000
+      type: orb
+    - name: "Eternity Hammer: Cap Inc."
+      stock: 5
+      cost: 2000
+      type: improvement-hammer-special
+    - name: "Eternity Hammer: Cap Inc."
+      stock: 5
+      cost: 2500
+      type: improvement-hammer-special    
+    - name: Dress Gloves of Decimation
+      stock: 3
+      cost: 10000
+      type: accessory  
+    - name: L. Limit Breaker
+      stock: 1
+      cost: 4000
+      type: improvement-limitbreak      
+    - name: AP Starseed
+      stock: 1
+      cost: 8000
+      type: seed-ap   
+    - name: 5* Weapon Ticket
+      stock: 1
+      cost: 3000
+      type: draw-ticket-weapon   
+    - name: 4-5* Char Ticket
+      stock: 3
+      cost: 2000
+      type: draw-ticket-character
+    - name: Platinum Ingot
+      stock: 0
+      cost: 1000
+      type: currency-ingot   
+      
+    - name: "Plat. Hammer: Enhance"
+      stock: 10
+      cost: 500
+      type: improvement-hammer          
+    - name: "Gold Hammer: Enhance"
+      stock: 10
+      cost: 300
+      type: improvement-hammer  
+    - name: "Gold Hammer: Enhance"
+      stock: 0
+      cost: 900
+      type: improvement-hammer  
+    - name: Rainbow Crystal
+      stock: 3
+      cost: 2500
+      type: improvement-crystal    
+    - name: HP Starseed
+      stock: 20
+      cost: 300
+      type: seed-other
+    - name: Component Blade & Sheath
+      stock: 1
+      cost: 13000
+      type: bns
+    - name: Component Crossbow
+      stock: 1
+      cost: 13000
+      type: gun
+    - name: Component Tome
+      stock: 1
+      cost: 13000
+      type: tome
+    - name: Component Dual Blades
+      stock: 1
+      cost: 13000
+      type: dualswords
+    - name: Component Sword
+      stock: 1
+      cost: 13000
+      type: ohs
+    - name: Component Bow
+      stock: 1
+      cost: 13000
+      type: bow
 
 
 
+- name: Eternity M2 Coin
+  eventName: "An Eternal Prison Unlocked [Dimension Chimera]"
+  icon: currency-coin-m2
+  cat: gl
+  currency: Eternity M2 Coin
+  aliases:
+    - Dimension Chimera M2
+    - Beast Bends M2
+    - Beast Space-Time M2
+
+  items:
+    - name: Eternity Coin x 70
+      stock: 0
+      cost: 1
+      type: draw-gacha  
+    - name: 5* Weapon Ticket
+      stock: 2
+      cost: 10
+      type: draw-ticket-weapon            
+    - name: 5* Character Ticket
+      stock: 1
+      cost: 15
+      type: draw-ticket-character     
+    - name: L. Limit Breaker
+      stock: 1
+      cost: 20
+      type: improvement-limitbreak
+    - name: "Platinum Thread: Enhance"
+      stock: 5
+      cost: 15
+      type: improvement-thread
+    - name: "Gold Thread: Enhance"
+      stock: 10
+      cost: 10
+      type: improvement-thread      
+    - name: Ra. Platinum Prism
+      stock: 0
+      cost: 5
+      type: improvement-prism
+    - name: "Platinum Thread: Enhance"
+      stock: 0
+      cost: 20
+      type: improvement-thread      
+    - name: Dress Gloves of Decimation
+      stock: 3
+      cost: 30
+      type: accessory
+    - name: Journeyman's Charm
+      stock: 3
+      cost: 30
+      type: accessory      
+
+    - name: AP Starseed
+      stock: 1
+      cost: 50
+      type: seed-ap  

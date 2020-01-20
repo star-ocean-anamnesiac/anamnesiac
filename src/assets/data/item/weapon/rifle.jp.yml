@@ -36,7 +36,7 @@
       lb: 5
   obtained: Disaster Crab (Exchange)
 
-- name: Vampir
+- name: The Vampire Blaster
   cat: 'jp'
   star: 5
   picture: Vampiric_Canon_Vampir
@@ -224,6 +224,12 @@
         priority: 4
         buff: Lightning Damage
         buffValue: 10
+    - desc: Dark damage dealt +10%
+      lb: 5
+      meta:
+        priority: 4
+        buff: Dark Damage
+        buffValue: 10        
   obtained: Shrouded Gaze (Exchange)
 
 - name: PMF-BEACH
@@ -398,3 +404,41 @@
         buffValue: 50
       lb: 5
   obtained: Gacha (Limited)
+
+- name: Dust Shot
+  cat: 'jp'
+  star: 4
+  picture: Placeholder_Icon
+  atk: 470
+  int: 467
+  factors:
+    - desc: Imbues attacks with earth
+      element: Earth
+    - desc: ATK +5%
+      meta:
+        priority: 4
+        buff: ATK
+        buffValue: 5
+  obtained: Transmutation, Gacha
+
+- name: Flower Cannon - Hibiscus
+  cat: 'jp'
+  star: 5
+  picture: Flower_Cannon_Hibiscus
+  atk: 1266
+  int: 1255
+  factors:
+    - desc: Imbues attacks with earth, earth damage dealt +40%
+      element: Earth
+      meta:
+        priority: 4
+        buff: Earth Damage
+        buffValue: 40
+    - desc: ATK damage +50% at skill chain > 3
+      meta:
+        priority: 4
+        buff: ATK Damage
+        buffValue: 50
+    - desc: AP recovery +100% when HP 100%
+      lb: 5
+  obtained: Gacha

@@ -732,7 +732,7 @@
       lb: 5
   obtained: Gacha
 
-- name: Rokushou Tanken
+- name: Blue-Green Shortsword
   cat: 'jp'
   star: 5
   picture: Rokushou_Tanken
@@ -752,3 +752,21 @@
         buffValue: 10
       lb: 5
   obtained: Crown Dodo (Exchange)
+
+- name: Nefarious Treasures Blades Gold Twins
+  cat: 'jp'
+  star: 5
+  picture: Nefarious_Treasured_Blades_Gold_Twins
+  atk: 1263
+  int: 1256
+  factors:
+    - desc: Imbues attacks with dark, dark damage dealt +40%
+      element: Dark
+      meta:
+        priority: 4
+        buff: Dark Damage
+        buffValue: 40
+    - desc: 90% chance of surviving a lethal attack when at 10% of max HP or more at long range
+    - desc: Critical chance +20% at 100% HP
+      lb: 5
+  obtained: Gacha

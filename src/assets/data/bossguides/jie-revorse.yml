@@ -3,6 +3,8 @@
   image: jie_revorse
   cat: gl
   race: Machine
+  aliases:
+    - Jie
 
   isActive: false
 

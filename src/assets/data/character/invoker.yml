@@ -1877,7 +1877,7 @@
     power: INT x 3000%
     maxHits: 12
 
-- name: Reimi Saionji (Federation)
+- name: Reimi Saionji (Official)
   cat: gl
   rating: 4
   picture: Federation_Reimi
@@ -2605,3 +2605,329 @@
       *Normal > CA Cross > Saviour > Prismatic^n - Buff*
       
       *Normal > CA Prismatic > Saviour > Prismatic^n - Buffed/PRB DPS*
+      
+
+- name: Myuria Tionysus (Awakened)
+  cat: gl
+  picture: Myuria
+  weapon: staff
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 12285
+    atk: 1537
+    int: 4116
+    def: 1339
+    hit: 1057
+    grd: 833
+
+  talents:
+    - name: "Enchanted Perfume II"
+      effects: 
+        - desc: Stun rate +30%
+          meta:
+            priority: 4
+            buff: Stun Rate
+            buffValue: 30
+    - name: "Hardier Warrior of Morphus"
+      effects: 
+        - desc: INT +40%
+          meta:
+            priority: 4
+            buff: INT
+            buffValue: 40
+    - name: "In Loving Memory of Lucien II"
+      effects: 
+        - desc: Symbology cast time -60%
+          meta:
+            priority: 4
+            buff: Cast Time Reduction
+            buffValue: 60
+    - name: "Adult's Composure"
+      effects: 
+        - desc: AP cost -20%
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 20
+    - name: "Graveside Flowers"
+      effects:
+        - desc: AP cost -50% when skill chain is >3
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain 3+
+            buffValue: 50
+    - name: "A New Step Forward"
+      effects:
+        - desc: INT damage dealt +50% when hitcount is >100
+          meta:
+            priority: 4
+            buff: INT Damage
+            buffCondition: Hit Count > 100
+            buffValue: 50
+
+  skills:
+    - name: "Deep Freeze"
+      picture: Deep_Freeze
+      element: Ice
+      power: INT x 510%
+      ap: 35
+      maxHits: 9
+    - name: "Thunder Flare"
+      picture: Thunder_Flare
+      element: Lightning
+      power: INT x 1020%
+      ap: 35
+      maxHits: 4
+      highlight: true
+    - name: "Arctic Impact"
+      picture: Arctic_Blast
+      element: Ice
+      power: INT x 740%
+      ap: 42
+      maxHits: 3
+      highlight: true
+    - name: "Plasma Cyclone"
+      picture: Cyclone
+      element: Lightning
+      power: INT x 1400%
+      ap: 50
+      maxHits: 6
+    - name: "Lightning Blast"
+      picture: Lightning
+      element: Lightning
+      power: INT x 250%
+      ap: 23
+      maxHits: 10
+      
+  rush:
+    name: "Ultraviolet Extinction"
+    picture: Ultraviolet_Extinction_Myuria
+    element: Lightning
+    effects: 
+      - desc: INT +80%
+        duration: 20
+        meta:
+          priority: 4
+          buff: INT
+          buffValue: 80
+    power: INT x 4500%
+    maxHits: 2
+
+- name: Clair Lasbard (Maid)
+  cat: gl
+  picture: Maid_Clair
+  weapon: bow
+  limited: true
+  ace: true
+  star: 5
+
+  stats:
+    hp: 14249
+    atk: 1563
+    int: 3230
+    def: 1365
+    hit: 1050
+    grd: 833
+
+  talents:
+    - name: "Brilliant Start II"
+      effects: 
+        - desc: ATK/INT damage dealt +35%
+          all: true
+          meta:
+            priority: 4
+            buffs:
+              - ATK Damage
+              - INT Damage
+            buffValue: 35
+        - desc: AP cost -30% when skill chain is >3
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain 3+
+            buffValue: 30
+        - desc: Symbology cast time -60% when skill chain is >3
+          meta:
+            priority: 4
+            buff: Cast Time Reduction
+            buffCondition: Skill Chain 3+
+            buffValue: 60
+    - name: "Impeccable Talent"
+      shortEffects: ATK/INT damage taken +15% after using Shadow Flame INT(Enemies/10s)
+      effects: 
+        - desc: ATK/INT damage taken +15% after using Shadow Lamp
+          all: Enemies
+          duration: 10
+          meta:
+            priority: 4
+            buffs: 
+              - Enemy ATK Damage Taken
+              - Enemy INT Damage Taken
+            buffCondition: after using Shadow Lamp
+            buffValue: 15
+    - name: "Black Attire"
+      effects: 
+        - desc: Stun rate +20% after using symbology (10s)
+          duration: 10
+          meta:
+            priority: 4
+            buff: Stun Rate
+            buffCondition: after using symbology
+            buffValue: 20
+        - desc: Additional hit that deals 10% more damage during normal attacks after using skills (10s)
+          duration: 10
+    - name: "Loyalty to Her Master"
+      shortEffects: INT +20% and HP +15%
+      effects: 
+        - desc: INT +20%
+          meta:
+            priority: 4
+            buff: INT
+            buffValue: 20
+        - desc: HP +15%
+          meta:
+            priority: 4
+            buff: HP
+            buffValue: 15
+
+  skills:
+    - name: "Cleansing Needles"
+      picture: Shadow_Needles
+      element: Dark
+      power: INT x 350%
+      ap: 17
+      maxHits: 5
+    - name: "Shadow Flame INT"
+      picture: Binding_Distortion
+      element: Dark
+      power: INT x 170%
+      ap: 14
+      maxHits: 5
+      highlight: true
+    - name: "Crimson Squall INT"
+      picture: Crimson_Squall
+      power: INT x 640%
+      ap: 38
+      maxHits: 9
+    - name: "Dark Spirit"
+      picture: Black_Spirit
+      element: Dark
+      power: INT x 1140%
+      ap: 52
+      maxHits: 2
+      highlight: true
+      
+  rush:
+    name: "Blast Peony"
+    picture: Burst_Peony_Maid_Clair
+    element: Dark
+    effects: 
+      - desc: Critical hit chance +50%
+        duration: 20
+        all: true
+        meta:
+          priority: 1
+          buff: Crit Rate
+          buffValue: 50
+    power: INT x 4000%
+    maxHits: 10
+
+- name: Lucifer
+  cat: gl
+  picture: Lucifere
+  weapon: orb
+  ace: true
+  star: 5
+
+  stats:
+    hp: 14175
+    atk: 1523
+    int: 2718
+    def: 1155
+    hit: 1036
+    grd: 847
+
+  talents:
+    - name: "Wise Man's Strategy"
+      effects: 
+        - desc: INT +15%
+          all: true
+          meta:
+            priority: 4
+            buff: INT
+            buffValue: 15
+    - name: "Sharp and Shrewd II"
+      effects: 
+        - desc: Converts 55% of INT to ATK
+          all: Attackers/Sharpshooters/Defenders
+          meta:
+            priority: 1
+            buff: INT -> ATK
+            buffValue: 55
+    - name: "Observer II"
+      shortEffects: Critical hit chance +20%/+40% when hitcount is >100/>200
+      effects: 
+        - desc: Critical hit chance +20% when hitcount is >100
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: Hit Count > 100
+            buffValue: 20
+        - desc: Critical hit chance +40% when hitcount is >200
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: Hit Count > 200
+            buffValue: 40
+    - name: "Decimating Treachery"
+      effects: 
+        - desc: AP cost -50% after using Magnum Tornado (10s)
+          meta:
+            priority: 4
+            buff: AP Cost Reduction
+            buffValue: 50
+
+  skills:
+    - name: "Right Wing"
+      picture: Right_Wing
+      element: Wind
+      power: INT x 540%
+      ap: 23
+      maxHits: 8
+    - name: "Left Wing"
+      picture: Left_Wing
+      element: Wind
+      power: INT x 540%
+      ap: 23
+      maxHits: 8
+    - name: "Elimination Tornado"
+      picture: Tornado
+      element: Wind
+      power: INT x 610%
+      ap: 29
+      maxHits: 2
+    - name: "Elimination Magnum Tornado"
+      picture: Magnum_Tornado
+      element: Wind
+      power: INT x 970%
+      ap: 35
+      maxHits: 9
+      
+  rush:
+    name: "Winds of Decimation"
+    picture: Winds_of_Destruction_Lucifer
+    element: Wind
+    shortEffects: INT damage dealt +60% (Self/20s)
+    effects: 
+      - desc: INT damage dealt +60%
+        duration: 20
+        meta:
+          priority: 4
+          buff: INT Damage
+          buffValue: 60
+    power: INT x 4000%
+    maxHits: 10

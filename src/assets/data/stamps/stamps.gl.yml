@@ -2,20 +2,24 @@
 - image: stamp_2B_enemy_dispatched
   cat: gl
   keywords:
+    - 2B
     - 2B enemy dispatched
     - enemy dispatched
 
 - image: stamp_9s_enemy_detected
   cat: gl
   keywords:
+    - 9s
     - 9s enemy detected
     - enemy detected
 
 - image: stamp_a2_come_on_let's_have_some_fun
   cat: gl
   keywords:
+    - a2
     - a2 come on let's have some fun
-    - lets have some fun
+    - a2 come on
+    - let's have some fun
 
 - image: stamp_albel_i'm_going_alone
   cat: gl
@@ -39,6 +43,7 @@
   cat: gl
   keywords:
     - arngrim i'm tired of seeing you
+    - arngrim i'm tired
     - tired of seeing you
 
 - image: stamp_arumat_you_need_to_understand_that_every_life_is_valuable
@@ -64,43 +69,51 @@
 - image: stamp_beach_evelysse_you're_amazing
   cat: gl
   keywords:
-    - beach evelysse you're amazing
+    - summer eve you're amazing
+    - seve you're amazing
     - you're amazing
 
 - image: stamp_beach_maria_that_was_fun
   cat: gl
   keywords:
-    - beach maria that was fun
+    - summer maria that was fun
+    - smaria that was fun
     - that was fun
 
 - image: stamp_beach_millie_we're_going_all_out
   cat: gl
   keywords:
-    - beach millie we're going all out
+    - summer millie we're going all out
+    - smillie we're going all out
     - going all out
 
 - image: stamp_beach_ratix_is_that_the_best_you've_got
   cat: gl
   keywords:
-    - beach ratix is that the best you've got
+    - summer roddick is that the best you've got
+    - sroddick is that the best
     - is that the best you've got
     - best you've got
 
 - image: stamp_beach_rena_i'm_so_happy
   cat: gl
   keywords:
-    - beach rena i'm so happy
+    - summer rena i'm so happy
+    - srena i'm so happy
     - so happy
 
 - image: stamp_black_commander_albel_a_cat
   cat: gl
   keywords:
-    - black commander albel a cat
+    - black albel a cat
+    - dark albel a cat
     - a cat
 
 - image: stamp_blazing_ashton_time_to_get_a_little_crazy
   cat: gl
   keywords:
+    - blazing ashton
+    - bashton
     - blazing ashton time to get a little crazy
     - get a little crazy
 
@@ -108,12 +121,14 @@
   cat: gl
   keywords:
     - blue sphere opera you're an eyesore
+    - bs opera eyesore
     - you're an eyesore
     - eyesore
 
 - image: stamp_bridal_clair_you're_a_lifesaver
   cat: gl
   keywords:
+    - wedding clair
     - bridal clair you're a lifesaver
     - you're a lifesaver
     - lifesaver
@@ -121,7 +136,8 @@
 - image: stamp_bridal_evelysse_i'm_a_little_clumsy_but_i_hope_you_don't_mind
   cat: gl
   keywords:
-    - bridal evelysse i'm a little clumsy but i hope you don't mind
+    - wedding eve
+    - bridal eve i'm a little clumsy but i hope you don't mind
     - little clumsy
     - im a little clumsy
     - im a little clumsy but i hope you dont mind
@@ -129,30 +145,35 @@
 - image: stamp_bridal_nel_right_behind_you
   cat: gl
   keywords:
+    - wedding nel
     - bridal nel right behind you
     - behind you
 
 - image: stamp_bridal_precis_what
   cat: gl
   keywords:
+    - wedding precis
     - bridal precis what
     - what
 
 - image: stamp_bridal_reimi_please
   cat: gl
   keywords:
+    - wedding precis
     - bridal reimi please
     - please
 
 - image: stamp_bunny_ears_maria_don't_look_at_me
   cat: gl
   keywords:
+    - bunny maria
     - bunny ears maria don't look at me
     - don't look at me
 
 - image: stamp_bunny_ears_mirage_this_is_the_end
   cat: gl
   keywords:
+    - bunny mirage
     - bunny ears mirage this is the end
     - this is the end
 
@@ -165,14 +186,14 @@
 - image: stamp_butler_leon_let's_finish_this_quickly
   cat: gl
   keywords:
+    - butler leon
     - butler leon let's finish this quickly
     - let's finish this
 
 - image: stamp_celine_welcome_welcome
   cat: gl
   keywords:
-    - celine welcome welcome
-    - welcome
+    - celine welcome
 
 - image: stamp_chisato_back_me_up
   cat: gl
@@ -183,7 +204,7 @@
 - image: stamp_ciuss_i'm_on_fire
   cat: gl
   keywords:
-    - ciuss i'm on fire
+    - cyuss i'm on fire
     - i'm on fire
 
 - image: stamp_clair_excellent_work
@@ -213,7 +234,7 @@
 - image: stamp_crimson_grace_phia_don't_worry_about_it
   cat: gl
   keywords:
-    - crimson grace phia don't worry about it
+    - crimson phia don't worry about it
     - don't worry about it
 
 - image: stamp_crowe_let's_get_in_some_hits
@@ -232,6 +253,7 @@
   cat: gl
   keywords:
     - devil clair happy halloween
+    - hclair happy halloween
     - happy halloween
 
 - image: stamp_dias_10_seconds
@@ -243,7 +265,7 @@
 - image: stamp_dreamful_welch_oho
   cat: gl
   keywords:
-    - dreamful welch oho
+    - welch oho
     - oho
 
 - image: stamp_edge_rush_4
@@ -267,37 +289,39 @@
 - image: stamp_evelysse_i'm_here_to_save_the_day
   cat: gl
   keywords:
-    - evelysse i'm here to save the day
+    - eve i'm here to save the day
     - save the day
 
 - image: stamp_evelysse_please_follow_me
   cat: gl
   keywords:
-    - evelysse please follow me
+    - eve please follow me
     - follow me
 
 - image: stamp_everlasting_summer_miki_so_excited
   cat: gl
   keywords:
-    - everlasting summer miki so excited
+    - summer miki so excited
+    - miki so excited
     - so excited
 
 - image: stamp_everlasting_summer_myuria_pretty_please
   cat: gl
   keywords:
-    - everlasting summer myuria pretty please
+    - summer myuria pretty please
     - pretty please
 
 - image: stamp_everlasting_summer_reimi_thanks_a_lot
   cat: gl
   keywords:
-    - everlasting summer reimi thanks a lot
+    - summer reimi thanks a lot
     - thanks a lot
 
 - image: stamp_everlasting_summer_sophia_it's_all_right
   cat: gl
   keywords:
-    - everlasting summer sophia it's all right
+    - summer sophia it's all right
+    - sophia it's all right
     - it's all right
 
 - image: stamp_faize_i_knew_you_could_do_it
@@ -310,6 +334,7 @@
   cat: gl
   keywords:
     - fallen angel nel good night
+    - hnel good night
     - good night
 
 - image: stamp_fayt_need_healing
@@ -334,6 +359,7 @@
   cat: gl
   keywords:
     - federation anne meow
+    - fanne meow
     - meow
 
 - image: stamp_fidel_let's_do_this
@@ -363,7 +389,8 @@
 - image: stamp_herald_of_spring_evelysse_happy_new_year
   cat: gl
   keywords:
-    - herald of spring evelysse happy new year
+    - evelysse happy new year
+    - nyeve
     - happy new year
 
 - image: stamp_herald_of_spring_tika_thanks
@@ -382,13 +409,14 @@
 - image: stamp_holy_night_ashton_it's_so_cold
   cat: gl
   keywords:
-    - holy night ashton it's so cold
+    - winter ashton it's so cold
     - it's so cold
 
 - image: stamp_holy_white_precis_happy_holidays
   cat: gl
   keywords:
-    - holy white precis happy holidays
+    - winter precis happy holidays
+    - xprecis happy holidays
     - happy holidays
 
 - image: stamp_hrist_divine_retribution
@@ -412,24 +440,25 @@
   cat: gl
   keywords:
     - karin you ready
+    - caleen you ready
     - you ready
 
 - image: stamp_koro_celebration_time
   cat: gl
   keywords:
-    - koro celebration time
+    - coro celebration time
     - celebration time
 
 - image: stamp_koro_good_luck_captain
   cat: gl
   keywords:
-    - koro good luck captain
+    - coro good luck captain
     - good luck
 
 - image: stamp_koro_thanks
   cat: gl
   keywords:
-    - koro thanks
+    - coro thanks
 
 - image: stamp_lasswell_good_match
   cat: gl
@@ -440,6 +469,7 @@
 - image: stamp_lenneth_shall_we_go
   cat: gl
   keywords:
+    - lenneth
     - lenneth shall we go
     - shall we go
 
@@ -452,8 +482,8 @@
 - image: stamp_lezard_valeth_bahahahaha
   cat: gl
   keywords:
-    - lezard valeth bahahahaha
-    - bahahahaha
+    - lezard baha
+    - bahaha
 
 - image: stamp_lucifer_let's_see_if_you_can_withstand_the_winds_of_destruction
   cat: gl
@@ -477,6 +507,7 @@
 - image: stamp_maid_nel_welcome_to_the_club
   cat: gl
   keywords:
+    - maid nel welcome
     - maid nel welcome to the club
     - welcome to the club
 
@@ -503,12 +534,14 @@
   keywords:
     - meracle it's time to rush
     - time to rush
+    - mya time to rush
 
 - image: stamp_michael_haha_this_is_hot
   cat: gl
   keywords:
     - michael haha this is hot
     - this is hot
+    - michael hot
 
 - image: stamp_miki_sweet
   cat: gl
@@ -525,7 +558,7 @@
 - image: stamp_millie_ratix_you_can_do_it
   cat: gl
   keywords:
-    - millie ratix you can do it
+    - millie roddick you can do it
     - you can do it
 
 - image: stamp_mirage_understood
@@ -537,7 +570,7 @@
 - image: stamp_moglin_kupo
   cat: gl
   keywords:
-    - moglin kupo
+    - mooogle kupo
     - kupo
 
 - image: stamp_mystina_you're_not_half_bad
@@ -561,13 +594,13 @@
 - image: stamp_new_years_clair_happy_new_years
   cat: gl
   keywords:
-    - new years clair happy new years
+    - nyclair happy new years
     - happy new year
 
 - image: stamp_new_years_nel_congrats
   cat: gl
   keywords:
-    - new years nel congrats
+    - nynel congrats
     - congrats
 
 - image: stamp_nurse_fiore_you're_gonna_feel_a_prick
@@ -575,6 +608,7 @@
   keywords:
     - nurse fiore you're gonna feel a prick
     - you're gonna feel a prick
+    - nurse fiore prick
 
 - image: stamp_operator_precis_leon_we're_not_gonna_lose
   cat: gl
@@ -603,30 +637,33 @@
 - image: stamp_prince_claude_that_was_a_good_workout
   cat: gl
   keywords:
-    - prince claude that was a good workout
+    - claude that was a good workout
     - good workout
 
 - image: stamp_pumpkin_relia_pumpkin_power
   cat: gl
   keywords:
-    - pumpkin relia pumpkin power
+    - relia pumpkin power
     - pumpkin power
 
 - image: stamp_pure_love_verda_calm_down
   cat: gl
   keywords:
-    - pure love verda calm down
+    - vverda calm down
     - calm down
 
 - image: stamp_rain_on_my_honour_as_a_grandshelt_knight
   cat: gl
   keywords:
-    - rain on my honour as a grandshelt knight
-    - on my honour
+    - rain
+    - rain on my honor as a grandshelt knight
+    - rain on my honor
+    - on my honor
 
 - image: stamp_ratix_rush_1
   cat: gl
   keywords:
+    - roddick rush 1
     - ratix rush 1
     - rush 1
 
@@ -645,6 +682,7 @@
 - image: stamp_relia_rain_rain_go_away
   cat: gl
   keywords:
+    - relia rain
     - relia rain rain go away
     - rain go away
 
@@ -670,6 +708,8 @@
   cat: gl
   keywords:
     - sakura dias heart
+    - cherry dias heart
+    - dias nom
     - heart
     - ":heart:"
 
@@ -703,37 +743,43 @@
   cat: gl
   keywords:
     - singing star miki it looks so good
+    - idol miki it looks so good
     - it looks so good
 
 - image: stamp_singing_star_reimi_please_hit
   cat: gl
   keywords:
     - singing star reimi please hit
+    - idol reimi please hit
     - please hit
 
 - image: stamp_singing_star_verda_yoowch
   cat: gl
   keywords:
     - singing star verda yoowch
+    - idol verda yowch
     - yoowch
 
 - image: stamp_snowy_sky_clair_tis_the_season_to_be_jolly
   cat: gl
   keywords:
-    - snowy sky clair tis the season to be jolly
+    - winter clair tis the season to be jolly
+    - xclair tis the season
     - tis the season
 
 - image: stamp_snow_flower_rena_oops_i_messed_up
   cat: gl
   keywords:
-    - snow flower rena oops i messed up
+    - winter rena oops i messed up
+    - xrena oops
     - oops i messed up
     - oops
 
 - image: stamp_snow_white_eve_merry_xmas
   cat: gl
   keywords:
-    - snow white eve merry xmas
+    - xeve merry xmas
+    - winter eve merry xmas
     - merry xmas
     - merry christmas
 
@@ -746,7 +792,7 @@
 - image: stamp_sweet_cat_rena_meow_meow
   cat: gl
   keywords:
-    - sweet cat rena meow meow
+    - vrena meow meow
     - meow meow
 
 - image: stamp_tika_we_can_do_it_coro_revorse
@@ -759,12 +805,13 @@
   cat: gl
   keywords:
     - vampire victor trick or treat
+    - hvictor trick or treat
     - trick or treat
 
 - image: stamp_verda_evelysse_celebration_time
   cat: gl
   keywords:
-    - verda evelysse celebration time
+    - verda eve celebration time
     - celebration time
 
 - image: stamp_verda_right
@@ -779,6 +826,7 @@
     - victor badump badump
     - badump badump
     - badump
+    - dokidoki
 
 - image: stamp_welch_here
   cat: gl
@@ -795,19 +843,22 @@
 - image: stamp_winter_sky_fidel_cheers
   cat: gl
   keywords:
-    - winter sky fidel cheers
+    - winter fidel cheers
+    - xfidel cheers
     - cheers
 
 - image: stamp_wolf_albel_gimme_your_candy
   cat: gl
   keywords:
     - wolf albel gimme your candy
+    - halbel gimme your candy
     - gimme your candy
 
 - image: stamp_youth_meracle_you've_been_bad_meow
   cat: gl
   keywords:
     - youth meracle you've been bad meow
+    - mya you've been bad
     - you've been bad
     - you've been bad meow
 
@@ -815,11 +866,13 @@
   cat: gl
   keywords:
     - youth sophia you've got yourself a follower
+    - youth sophia you've got
+    - jkjk you've got
     - you've got yourself
     - follower
 
 - image: stamp_yuuin_we_did_it
   cat: gl
   keywords:
-    - yuuin we did it
+    - yrian we did it
     - we did it

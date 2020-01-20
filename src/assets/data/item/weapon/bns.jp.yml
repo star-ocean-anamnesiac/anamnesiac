@@ -342,7 +342,7 @@
       lb: 3
   obtained: Gacha
 
-- name: "Dragon Sword: Scalebite"
+- name: Scale Bite
   cat: 'jp'
   star: 5
   picture: Dragon_Sword_Scalebite
@@ -461,7 +461,7 @@
       lb: 5
   obtained: Gacha
 
-- name: "Hayabusamaru: Shionkoshirae"
+- name: Shion-Koshirae
   cat: 'jp'
   star: 5
   picture: Hayabusamaru_Shionkoshirae
@@ -470,11 +470,15 @@
   factors:
     - desc: Damage dealt +20% by Explosive Lightning Slash
     - desc: Rush combo damage +10% 
+      meta:
+        priority: 4
+        buff: Rush Damage
+        buffValue: 10
     - desc: 60% chance of suviving a lethal attack when at 20% of max HP or more
       lb: 5
   obtained: Josephine (Exchange)
 
-- name: "Dragonblade: Dark Blood"
+- name: "Dragon's Blade—Dark Blood"
   cat: 'jp'
   star: 5
   picture: Dragonblade_Dark_Blood
@@ -598,4 +602,43 @@
       lb: 5
   obtained: Knight Exile / FFBE (Achievement)
 
+- name: Juzumaru Tsunetsuga
+  cat: 'jp'
+  star: 5
+  picture: Juzumaru_Tsunetsuga
+  atk: 1259
+  int: 1258
+  factors:
+    - desc: Damage dealt to demons +60%
+      slayer: Demon
+      slayerPct: 60
+      meta:
+        priority: 4
+        buff: Damage To Demons
+        buffValue: 60
+    - desc: Rush combo damage +40% when hitcount is >300
+    - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
+      lb: 3
+  obtained: Gacha
 
+- name: Red Jade Dragon
+  cat: 'jp'
+  star: 5
+  picture: Red_Jade_Dragon
+  atk: 1257
+  int: 1263
+  factors:
+    - desc: Imbues attacks with earth, earth damage dealt +40%
+      element: Earth
+      meta:
+        priority: 4
+        buff: Earth Damage
+        buffValue: 40
+    - desc: ATK and INT damage +30% at close range
+      meta:
+        priority: 4
+        buff: INT Damage
+        buffValue: 30
+    - desc: Critical chance +15%
+      lb: 5
+  obtained: Gacha

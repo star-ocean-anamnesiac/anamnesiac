@@ -19,7 +19,7 @@
       effects: 
         - desc: Hitcount timer +0.5 seconds
           all: true
-    - name: "Hidden Talent III"
+    - name: "Hidden Talent"
       effects:
         - desc: Critical hit chance +30%
           meta:
@@ -82,7 +82,7 @@
             priority: 1
             buff: Enemy ATK Reduction
             buffValue: 20
-    - name: "A Rebel Soul II"
+    - name: "A Rebel Soul"
       effects:
         - desc: No flinching when taking damage of 20% of max HP or less
           all: true
@@ -392,7 +392,7 @@
     grd: 509
 
   talents:
-    - name: "Resistance II"
+    - name: "Resistance"
       effects: 
         - desc: Hitcount timer +1 second
           all: true
@@ -450,7 +450,7 @@
       effects: 
         - desc: Nullifies curse for 180 seconds
           all: true
-    - name: "Runemaster II"
+    - name: "Runemaster"
       effects: 
         - desc: Damage dealt to undead +20%
           all: true
@@ -646,11 +646,11 @@
     grd: 763
 
   talents:
-    - name: "Nervous Tension III"
+    - name: "Nervous Tension"
       effects: 
         - desc: Nullifies paralysis for 180 seconds
           all: true
-    - name: "Assistance II"
+    - name: "Assistance"
       effects: 
         - desc: Damage dealt to machines +20%
           all: true
@@ -2079,7 +2079,7 @@
             buffValue: 20
         - desc: 70% chance of surviving a lethal attack when at 20% of max HP or more when in front of target
           all: true
-    - name: "Side Order II"
+    - name: "Side Order"
       effects: 
         - desc: Critical hit chance +30% when behind target
           all: true
@@ -2225,7 +2225,7 @@
         - desc: Nullifies silence for 180 seconds
           all: true
         - desc: Nullifies rush gauge reduction fields
-          all: Short Range WEapons/Self
+          all: Short Range Weapons/Self
           
   skills:
     - name: "Magnetic Field"
@@ -2554,8 +2554,9 @@
             buff: Enemy DEF Reduction
             buffValue: 15
     - name: "Upgraded Gun"
+      shortEffects: Damage taken +20% when hit by Break Horn and Break Bullet (Enemies/8s)
       effects: 
-        - desc: Damage taken +20% when hit Break Horn and Break Bullet (8s)
+        - desc: Damage taken +20% when hit by Break Horn and Break Bullet (8s)
           all: Enemies
           meta:
             priority: 4
@@ -2580,7 +2581,7 @@
     - name: "Savior of Tears"
       effects: 
         - desc: Nullifies charge assault critical damage penalty
-        - desc: AP cost -20
+        - desc: AP cost -20%
           meta:
             priority: 4
             buff: AP Cost Reduction
@@ -2660,13 +2661,13 @@
     grd: 910
 
   talents:
-    - name: "Armory Contest Winner"
+    - name: "Tournament Winner"
       effects: 
         - desc: No flinching when taking damage of 15% of max HP or less 
           all: true
         - desc: Taunt +3 
           all: false
-    - name: "Cultivated Victories"
+    - name: "Competitive Intuition"
       shortEffects: Damage dealt +45% and ATK/INT damage taken -25% when targeted by enemy (Party)
       effects: 
         - desc: Damage dealt +45% when targeted by enemy
@@ -2690,7 +2691,7 @@
             buff: INT Damage Taken Reduction
             buffCondition: When holding aggro
             buffValue: 25
-    - name: "Memento Ring"
+    - name: "A Cherished Ring"
       shortEffects: Damage dealt +60% and critical hit chance +20% when not targeted by enemy (Party)
       effects: 
         - desc: Damage dealt +60% when not targeted by enemy
@@ -2707,7 +2708,7 @@
             buff: Crit Rate
             buffCondition: Not holding agro
             buffValue: 20
-    - name: "Changing Heart"
+    - name: "A Heart Transforming"
       shortEffects: ATK +15%, DEF +20%, and HP +35%
       effects: 
         - desc: ATK +15%
@@ -2730,18 +2731,18 @@
             buffValue: 35
           
   skills:
-    - name: "Lightning Chain (Cherry Blossom)"
+    - name: "Lightning Chain: Blossom"
       picture: Lightning_Chain
       element: Lightning
       power: ATK x 160%
       ap: 16
       maxHits: 9
-    - name: "Flying Guillotine (Cherry Blossom)"
+    - name: "Flying Guillotine: Blossom"
       picture: Guillotine
       power: ATK x 310%
       ap: 19
       maxHits: 4
-    - name: "Dancing Sword (Cherry Blossom)"
+    - name: "Dancing Sword: Blossom"
       picture: Dancing_Sword
       power: ATK x 1300%
       ap: 40
@@ -2754,7 +2755,7 @@
       maxHits: 2
 
   rush:
-    name: "Phoenix Blast"
+    name: "Phoenix Blast Wave"
     picture: Phoenix_Blast_Sakura_Dias 
     shortEffects: Single target damage +30% and AP recovery +50% (Party/20s)
     element: Fire
@@ -2871,7 +2872,7 @@
     power: ATK x 3500%
     maxHits: 7
 
-- name: Edge Maverick (Federation)
+- name: Edge Maverick (Official)
   cat: jp
   rating: 1
   picture: Federation_Edge
@@ -3051,7 +3052,6 @@
 
 - name: Aya
   cat: jp
-  rating: 1
   picture: Aya
   weapon: bow
   ace: true
@@ -3069,42 +3069,46 @@
   talents:
     - name: "Sureshot Bow"
       effects: 
-        - desc: Damage dealt +30%
+        - desc: Damage dealt +45%
           all: true
           meta:
             priority: 1
             buff: Damage
-            buffValue: 30
+            buffValue: 45
+        - desc: Additional hit that deals 5% of damage dealt by skills
+          all: false
     - name: "Stubborn Disposition"
-      shortEffects: Damage dealt +40%/+55% when hitcount is >100/>200 (Party)
       effects: 
-        - desc: Damage dealt +40% when hitcount is >100
+        - desc: Damage dealt +60% when hitcount is >100
           all: true
           meta:
             priority: 1
             buff: Damage
             buffCondition: Hit Count > 100
-            buffValue: 40
-        - desc: Damage dealt +55% when hitcount is >200
+            buffValue: 60
+        - desc: Damage dealt +75% when hitcount is >200
           all: true
           meta:
             priority: 1
             buff: Damage
             buffCondition: Hit Count > 200
-            buffValue: 55
+            buffValue: 75
+        - desc: Repel +2
+          all: false
     - name: "Moon Symbol's (Lunaglyph) Blessing"
       effects: 
         - desc: Hitcount timer +2 seconds
           all: true
     - name: "Abilities Unbefitting of a Princess"
       effects:
+        - desc: Evasion possible during air attacks
         - desc: AP cost -20% when skill chain is >3
           meta:
             priority: 1
             buff: AP Cost Reduction
             buffCondition: Skill Chain 3+
             buffValue: 20
-        - desc: ATK damage dealt +30%
+        - desc: ATK damage dealt +50%
           meta:
             priority: 1
             buff: ATK Damage
@@ -3129,7 +3133,7 @@
     - name: "Phoenix Feather"
       picture: Phoenix_Feather
       element: Fire
-      power: ATK x 460%
+      power: ATK x 880%
       ap: 33
       maxHits: 6
       
@@ -3146,7 +3150,7 @@
           priority: 1
           buff: Single Target Damage
           buffValue: 40
-    power: ATK x 3500%
+    power: ATK x 4500%
     maxHits: 2
 
 - name: Phia Melle (Crimson)
@@ -3398,7 +3402,7 @@
     grd: 924
 
   talents:
-    - name: "The Vectra's Noblemen"
+    - name: "Heir to House Vectra"
       effects: 
         - desc: Damage dealt +40%
           all: true
@@ -3429,7 +3433,7 @@
             buff: Stun Rate
             buffCondition: Long Range
             buffValue: 15
-    - name: "Heavy Drinker"
+    - name: "Drinker"
       effects: 
         - desc: No flinching when attacking
         - desc: Damage taken -40%
@@ -3437,7 +3441,7 @@
             priority: 1
             buff: Damage Taken Reduction
             buffValue: 40
-    - name: "Burning Affection"
+    - name: "Blazing Passion"
       effects: 
         - desc: AP cost -30% when skill chain is >3
           meta:
@@ -3469,7 +3473,7 @@
       power: ATK x 710%
       ap: 32
       maxHits: 5
-    - name: "Lightning Blade"
+    - name: "Electric Shockwave"
       picture: Lightning_Blade
       element: Lightning
       power: ATK x 880%
@@ -3479,9 +3483,9 @@
   rush:
     name: "Hyper Launcher"
     picture: Hyper_Launcher_Opera
-    shortEffects: Critical hit rate +30% and critical damage dealt +30% (Party/20s)
+    shortEffects: Critical hit chance +30% and critical damage dealt +30% (Party/20s)
     effects: 
-      - desc: Critical hit rate +30%
+      - desc: Critical hit chance +30%
         duration: 20
         all: true
         meta:
@@ -3726,37 +3730,37 @@
   talents:
     - name: "Flower Fairy"
       effects: 
-        - desc: Critical hit chance +15%
+        - desc: Critical hit chance +20%
           all: true
           meta:
             priority: 1
             buff: Crit Rate
-            buffValue: 15
-        - desc: Critical damage dealt +15%
+            buffValue: 20
+        - desc: Critical damage dealt +20%
           all: true
           meta:
             priority: 1
             buff: Crit Damage
-            buffValue: 15
+            buffValue: 20
         - desc: Nullifies charge assault critical damage penalty
     - name: "Perfect Makeup"
       effects: 
-        - desc: Critical hit chance and critical damage dealt +30% when hitcount is >100
+        - desc: Critical hit chance and critical damage dealt +30% when hitcount is >50
           meta:
             priority: 1
             buffs:
               - Crit Rate
               - Crit Damage
             buffValue: 30
-            buffCondition: Hit Count > 100
-        - desc: Critical hit chance and critical damage dealt +45% when hitcount is >150
+            buffCondition: Hit Count > 50
+        - desc: Critical hit chance and critical damage dealt +45% when hitcount is >100
           meta:
             priority: 1
             buffs:
               - Crit Rate
               - Crit Damage
             buffValue: 45
-            buffCondition: Hit Count > 150            
+            buffCondition: Hit Count > 100           
     - name: "Creator of Smiles"
       effects: 
         - desc: Hitcount timer +2 seconds
@@ -3783,12 +3787,12 @@
             buff: AP Cost Reduction
             buffCondition: Hit Count > 100
             buffValue: 40
-        - desc: ATK +20% when hitcount is >100
+        - desc: ATK +25% when hitcount is >100
           meta:
             priority: 4
             buff: ATK
             buffCondition: Hit Count > 100
-            buffValue: 20
+            buffValue: 25
 
   skills:
     - name: "Hammer Slammer"
@@ -3803,12 +3807,12 @@
       maxHits: 10
     - name: "Jump 'n' Thump"
       picture: Jump_n_Thump
-      power: ATK x 370%
+      power: ATK x 410%
       ap: 29
       maxHits: 1
     - name: "Parabola Beam"
       picture: Parabola_Beam
-      power: ATK x 730%
+      power: ATK x 810%
       ap: 36
       maxHits: 10
       
@@ -3823,7 +3827,7 @@
           priority: 1
           buff: Damage
           buffValue: 70
-    power: ATK x 4000%
+    power: ATK x 4500%
     maxHits: 9
 
 
@@ -5540,7 +5544,7 @@
 - name: Reimi Saionji (Awakened)
   cat: jp
   picture: Reimi
-  weapon: gun 
+  weapon: bow 
   ace: true
   limited: false
   awakened: true 
@@ -5597,7 +5601,7 @@
           all: false
         - desc: Movement speed +30%
           all: false
-        - desc: AP recovery increases when moving 
+        - desc: AP recovery increases while moving 
     - name: Promise Made Under the Stars
       effects: 
         - desc: Evasion possible during air attacks
@@ -5889,7 +5893,7 @@
       effects: 
         - desc: Absorbs 15% of damage dealt by normal attacks as HP
           all: true
-    - name: "Crimson Cup II"
+    - name: "Crimson Cup"
       effects: 
         - desc: Damage dealt +40%
           all: true
@@ -6215,14 +6219,14 @@
     grd: 777
 
   talents:
-    - name: "Demon Girl II"
+    - name: "Demon Girl"
       effects: 
         - desc: Damage dealt to humanoids +40%
           meta:
             priority: 4
             buff: Damage To Humans
             buffValue: 40
-    - name: "Chocolate Temptation II"
+    - name: "Chocolate Temptation"
       effects: 
         - desc: Nullifies poison for 180 seconds
           all: true
@@ -6276,33 +6280,552 @@
     power: ATK x 2500%
     maxHits: 4
     
-  notes: >
-      _Absolutely absymal event unit. That said, her skills are actually very good, and her rush does have a fairly unique ATK down, which is a solid defensive debuff, in theory._
-      
-      **TL DR**
-      
-      
-      **Pros**
-      
-      - Good at building and maintaing Hit Count.
+- name: Chester Burklight
+  cat: jp
+  picture: Chester
+  weapon: bow
+  ace: true
+  limited: true
+  star: 5
 
-      - Decent rush gain.
+  stats:
+    hp: 14280
+    atk: 2482
+    int: 1549
+    def: 1759
+    hit: 1246
+    grd: 931
 
-      - Effective against Humanoids.
+  talents:
+    - name: "Pure-Hearted Archer"
+      effects: 
+        - desc: Damage dealt +35%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 35
+        - desc: Damage dealt +75% when HP is 100%
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: HP is 100%
+            buffValue: 75
+    - name: "Striker"
+      effects: 
+        - desc: AP cost -40% when skill chain is >3
+          all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain 3+
+            buffValue: 40
+        - desc: AP cost -50% when skill chain is >4
+          all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffCondition: Skill Chain 4+
+            buffValue: 50
+    - name: "Pervert Great Demon King"
+      effects: 
+        - desc: AP recovery increases while moving when HP is 100%
+          all: true
+        - desc: Critical hit chance +30% when skill chain is >3
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: Skill Chain 3+
+            buffValue: 30
+    - name: "Arrow that Pierces in a Flash"
+      effects: 
+        - desc: Evasion AP cost -50%
+        - desc: Evasion distance & speed +100%
+        - desc: Evasion possible during air attacks
 
-      - Poison Immunity.
+  skills:
+    - name: "Thunder Blitz"
+      picture: Skill_Placeholder
+      element: Lightning
+      power: ATK x 280%
+      ap: 19
+      maxHits: 3
+    - name: "Sonic Bash"
+      picture: Heavenly_Flight
+      element: Earth
+      power: ATK x 390%
+      ap: 24
+      maxHits: 4
+    - name: "Gale Shot"
+      picture: Crimson_Squall
+      power: ATK x 230%
+      ap: 17
+      maxHits: 9
+    - name: "Dragon Slayer"
+      picture: Skill_Placeholder
+      power: ATK x 580%
+      ap: 30
+      maxHits: 5
 
-      - Unique and strong debuffs.
-      
+  rush:
+    name: "Wild Rain"
+    picture: Rush_Placeholder
+    effects:
+      - desc: Recovers 15% of max HP every 3 seconds
+        all: true
+        duration: 20
+    power: ATK x 4500%
+    maxHits: 12
 
-      **Cons**
+- name: Caleen Keemosn (Summer)
+  cat: jp
+  picture: Summer_Caleen
+  weapon: rifle
+  ace: true
+  limited: true
+  star: 5
 
+  stats:
+    hp: 15540
+    atk: 2508
+    int: 1549
+    def: 1549
+    hit: 1246
+    grd: 952
 
-      - Deals underwhelming damage outside of humanoid fights.
+  talents:
+    - name: "First Swimsuit"
+      effects:
+        - desc: Damage dealt +45%, +65%, 75% at 0, 150, 300 Hit
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Hit Count > 300
+            buffValue: 75
+    - name: "Ears of Shame"
+      effects:
+        - desc: Able to air dodge
+        - desc: Hit count timer +3s and Assist use +1
+          all: true
+    - name: "Ribbon Wrapped Around Wrist"
+      effects:
+        - desc: No Flinching, damage taken-20% at skill chain > 2
+        - desc: ATK damage taken -30% while attacking
+        - desc: AP cost -40% at skill chain > 3
+    - name: "Wadasumi's Coat of Arms"
+      effects:
+        - desc: Critical chance +50% at skill chain > 4
+        - desc: HP Recovery 2% from Gunshot Dance skill damage at skill chain > 5
 
-      - Underwhelming buffs.
-      
-      
-      **Rotation**
-      
-      *Normal > Squall > Thunder/Thorn > Squall^n (General Combo.)*    
+  skills:
+    - name: "Soul Mortar"
+      picture: Skill_Placeholder
+      power: ATK x 190%
+      ap: 14
+      maxHits: 5
+    - name: "Group Gun"
+      picture: Skill_Placeholder
+      power: ATK x 310%
+      ap: 21
+      maxHits: 7
+    - name: "Spear Gun"
+      picture: Skill_Placeholder
+      element: Ice
+      power: ATK x 330%
+      ap: 27
+      maxHits: 1
+    - name: "Evening Canon"
+      picture: Skill_Placeholder
+      power: ATK x 850%
+      ap: 37
+      maxHits: 5
+
+  rush:
+    name: "Ice Cave"
+    picture: Rush_Placeholder
+    element: Ice
+    effects:
+      - desc: AP cost -50%
+        all: true
+        duration: 20
+    power: ATK x 4500%
+    maxHits: 12
+
+- name: Hunter Celine
+  cat: jp
+  picture: Hunter_Celine_Copy
+  weapon: dagger
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 14280
+    atk: 2482
+    int: 1549
+    def: 1759
+    hit: 1246
+    grd: 931
+
+  talents:
+    - name: "Full Speed to the Treasure"
+      effects:
+        - desc: ATK and INT damage +35%, +65% when Celine is at 100% HP
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: HP is 100
+            buffValue: 65
+    - name: "Lucky Steal"
+      effects:
+        - desc: Critical chance +20% after using Mystic Knives or Edge Explorer (All/ 10 seconds)
+          all: true
+          meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: When using Mystic Knives or Edge Explorer
+            buffValue: 20
+        - desc: Critical Rate -20% after Mystic Knives or Edge Explorer (Enemy/ 10 seconds)
+    - name: "Trap Application Guard"
+      effects:
+        - desc: Arc Action Growth inflicts ATK -20% (All Enemies/ 10 seconds)
+        - desc: Arc Action Growth gains ATK +20% when Celine is at 100% HP (Self)
+    - name: "Treasure Ocean Seeker"
+      effects:
+        - desc: Recover 2% HP from Doom Parade damage
+        - desc: Able to air dodge
+
+  skills:
+    - name: "Edge Explorer"
+      picture: Skill_Placeholder
+      power: ATK x 390%
+      ap: 26
+      maxHits: 4
+    - name: "Mystic Knives"
+      picture: Skill_Placeholder
+      element: Lightning
+      power: ATK x 340%
+      ap: 23
+      maxHits: 9
+    - name: "Arc Action Growth"
+      picture: Skill_Placeholder
+      power: ATK x 260%
+      ap: 17
+      maxHits: 9
+    - name: "Doom Parade"
+      picture: Skill_Placeholder
+      element: Dark
+      power: ATK x 710%
+      ap: 30
+      maxHits: 4
+
+  rush:
+    name: "Adventure Road"
+    picture: Rush_Placeholder
+    effects:
+      - desc: AP Cost -30%, critical chance and damage + 40% 
+        all: true
+        meta:
+            priority: 1
+            buff: Crit Rate
+            buffCondition: When using Mystic Knives or Edge Explorer
+            buffValue: 30
+        duration: 20
+    power: ATK x 4500%
+    maxHits: 1
+
+- name: Rena Lanford (Persona)
+  cat: jp
+  picture: Char_Placeholder_Persona_Rena
+  weapon: bow
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 13860
+    atk: 2455
+    int: 1589
+    def: 1720
+    hit: 1267
+    grd: 945
+
+  talents:
+    - name: "School Girl Studying Abroad"
+      effects:
+        - desc: DMG dealt +40%, +60% at 200+ HC, +80% at 400+ HC
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 80
+    - name: "Befall With the Unknown"
+      effects:
+        - desc: AP cost -20% at 200+ HC, -40% at 400+ HC
+          all: true
+          meta:
+            priority: 1
+            buff: AP Cost Reduction
+            buffValue: 40
+        - desc: HC timer +3s (party)
+    - name: "Heartache"
+      effects:
+        - desc: Stun Rate +60% during rush combo at 400+ HC (party)
+        - desc: AP Recovery +200% by normals when Element Burst (30s)
+    - name: "I am Thou, Thou Art I"
+      effects:
+        - desc: Critical Chance +30% when element burst (party/30s)
+        - desc: Nullify critical taken when CA
+        - desc: Air Dodge
+    - name: "Multi Lock [Mastery]"
+      effects:
+        - desc: Charge Assault Fire Light Bullets (ATKx250%/ Max Charge 6)
+    
+  skills:
+    - name: "Ghost Wing"
+      picture: Skill_Placeholder
+      power: ATK x 250%
+      ap: 15
+      maxHits: 9
+    - name: "Vanishing Snipe"
+      picture: Skill_Placeholder
+      element: Dark
+      power: ATK x 300%
+      ap: 17
+      maxHits: 5
+    - name: "Fall Down Shoot"
+      picture: Skill_Placeholder
+      power: ATK x 440%
+      ap: 24
+      maxHits: 3
+    - name: "Phantom Raid Arrow"
+      picture: Skill_Placeholder
+      power: ATK x 900%
+      ap: 34
+      maxHits: 8
+
+  rush:
+    name: "All Out Attack Chance!"
+    picture: Rush_Placeholder
+    effects:
+      - desc: AP Cost -60% (party/8s)
+    power: ATK x 4500%
+    maxHits: 10
+
+- name: Faize Sheifa Beleth (Halloween)
+  cat: jp
+  picture: Char_Placeholder_Exorcist_Faize
+  weapon: rifle
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15750
+    atk: 2508
+    int: 1563
+    def: 1563
+    hit: 1239
+    grd: 917
+
+  talents:
+    - name: "Exorcist who Eradicates Evil"
+      effects:
+        - desc: DMG dealt +40% at 100% HP
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 40
+    - name: "Silver Barrett"
+      effects:
+        - desc: HP Recovery 20% to party when using Purrification Blow
+    - name: "Coat Fluttering in the Moonlight Night"
+      effects:
+        - desc: Rush Gauge +3%/3s at 100% HP (party)
+        - desc: AP Cost -40% at skill chain +3 (party)
+    - name: "Oath to Resist Corruption"
+      effects:
+        - desc: Anti flinch while attacking
+        - desc: DMG taken -50% when attacking
+        - desc: ATK damage +50% at skill chain 3+
+    
+  skills:
+    - name: "Passing Spirit"
+      picture: Skill_Placeholder
+      power: ATK x 200%
+      ap: 18
+      maxHits: 3
+    - name: "Purification Blow"
+      picture: Skill_Placeholder
+      power: ATK x 930%
+      ap: 40
+      maxHits: 6
+    - name: "Spread Ray"
+      picture: Skill_Placeholder
+      power: ATK x 650%
+      ap: 28
+      maxHits: 5
+    - name: "Rotate Cage"
+      picture: Skill_Placeholder
+      power: ATK x 350%
+      ap: 21
+      maxHits: 3
+
+  rush:
+    name: "Judgement Barrett"
+    picture: Rush_Placeholder
+    effects:
+      - desc: AP Cost -50% (party/20s)
+    power: ATK x 4500%
+    maxHits: 10
+
+- name: Ballroom Verda
+  cat: jp
+  picture: Char_Placeholder_Ballroom_Verda
+  weapon: launcher
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15750
+    atk: 2482
+    int: 1575
+    def: 1537
+    hit: 1260
+    grd: 931
+
+  talents:
+    - name: "Radiant Flower Dress"
+      effects:
+        - desc: DMG dealt +30%, +55% at 150+ HC, +80% at 300+ HC
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 80
+    - name: "Red Dance Shoes"
+      effects:
+        - desc: Order Gauge +1
+        - desc: AP cost -70% during order countdown (party)
+        - desc: Assist +1 (party)
+    - name: "Inviting Dance"
+      effects:
+        - desc: AP recovery +100%
+        - desc: Air dodge
+        - desc: DMG taken -100% on dodge (0.5s)
+    - name: "Society's New Face"
+      effects:
+        - desc: Nullify critical dmg penalty when Charge Assault
+        - desc: Recover 5 AP to party when using Multi-Lock Mastery
+    - name: "Mulit-Lock [Mastery]"
+      effects:
+        - desc: Charge Assault Fire Light Bullets (ATKx280%/ Max Charge 5)
+    
+  skills:
+    - name: "Cutie Drive"
+      picture: Skill_Placeholder
+      power: ATK x 350%
+      ap: 21
+      maxHits: 5
+    - name: "Pretty Cluster"
+      picture: Skill_Placeholder
+      element: Lightning
+      power: ATK x 450%
+      ap: 25
+      maxHits: 7
+    - name: "Lovely Bomber"
+      picture: Skill_Placeholder
+      element: Dark
+      power: ATK x 220%
+      ap: 18
+      maxHits: 10
+    - name: "Princess Cannon"
+      picture: Skill_Placeholder
+      power: ATK x 1000%
+      ap: 29
+      maxHits: 4
+
+  rush:
+    name: "Sweet Spiral Rondo"
+    picture: Rush_Placeholder
+    effects:
+      - desc: ATK +50%, INT DMG taken +30% (enemies/20s)
+    power: ATK x 4500%
+    maxHits: 1
+
+- name: Maria Traydor (Winter)
+  cat: jp
+  picture: Char_Placeholder_Winter_Maria
+  weapon: gun
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 14070
+    atk: 3276
+    int: 1563
+    def: 1706
+    hit: 1250
+    grd: 924
+
+  talents:
+    - name: "Ice Crushing Bullet"
+      effects:
+        - desc: DMG dealt +40%, +60% at 150+ HC, +75% at 300+ HC
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 75
+        - desc: Echo by skills +5% (party)
+    - name: "Genial Gift"
+      effects:
+        - desc: AP cost -40% while airborne
+        - desc: Air dodge
+        - desc: AP cost -80% on dodge while airborne
+    - name: "Dancing Santa of the Holy Night"
+      effects:
+        - desc: Critical chance +50% at SC 3+, + 100% at SC 6+
+        - desc: Critical DMG +100% at SC 6+
+    - name: "Dreams of Embrace"
+      effects:
+        - desc: Nullify Critical DMG Penalty when Charge Assault
+        - desc: ATK +30%
+        - desc: ATK +20% at 200+ HC
+    
+  skills:
+    - name: "Flying Blaze"
+      picture: Skill_Placeholder
+      power: ATK x 310%
+      ap: 25
+      maxHits: 6
+    - name: "Skyline Shooting"
+      picture: Skill_Placeholder
+      power: ATK x 190% 
+      ap: 19
+      maxHits: 3
+    - name: "Destiny Rays"
+      picture: Skill_Placeholder
+      power: ATK x 280%
+      ap: 22
+      maxHits: 3
+    - name: "Prime Emissioin"
+      picture: Skill_Placeholder
+      power: ATK x 490%
+      ap: 39
+      maxHits: 8
+
+  rush:
+    name: "Holy Night Device"
+    picture: Rush_Placeholder
+    effects:
+      - desc: Hit Count +100, ATK DMG +50% (party/ 20s)
+    power: ATK x 5500%
+    maxHits: 10

@@ -1,5 +1,5 @@
 
-# Amnesiac [![Build Status](https://travis-ci.org/star-ocean-anamnesiac/anamnesiac.svg?branch=master)](https://travis-ci.org/star-ocean-anamnesiac/anamnesiac)
+# Anamnesiac [![Build Status](https://travis-ci.org/star-ocean-anamnesiac/anamnesiac.svg?branch=master)](https://travis-ci.org/star-ocean-anamnesiac/anamnesiac)
 
 A Star Ocean: Anamnesis companion app.
 

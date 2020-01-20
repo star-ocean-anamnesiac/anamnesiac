@@ -232,3 +232,44 @@
         buffValue: 15
       lb: 5
   obtained: Gacha
+
+- name: Shadow Blade Twilight
+  cat: 'jp'
+  star: 5
+  picture: Shadow_Blade_Twilight
+  atk: 1260
+  int: 1259
+  factors:
+    - desc: Imbues attacks with earth
+      element: Earth
+    - desc: Earth damage dealt +40%
+      meta:
+        priority: 4
+        buff: Ice Damage
+        buffValue: 40
+    - desc: Critical chance +30% at Hit count > 100
+      meta:
+        priority: 4
+        buff: Crit Rate
+        buffValue: 30
+    - desc: Hit count timer +3
+      lb: 5
+  obtained: Gacha
+
+- name: Mad Cheff
+  cat: 'jp'
+  star: 5
+  picture: Mad_Chef
+  atk: 1261
+  int: 1258
+  factors:
+    - desc: Imbue Light Element | Light Damage +50%
+      element: Light
+      meta:
+        priority: 4
+        buff: Light Damage
+        buffValue: 50
+    - desc: Hit Count +3 seconds (Extended)
+    - desc: Rush Combo Damage +40% when at Hit count > 200
+      lb: 5
+  obtained: Gacha

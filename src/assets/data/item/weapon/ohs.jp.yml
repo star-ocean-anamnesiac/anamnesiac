@@ -1,4 +1,3 @@
-
 - name: Thunder Sword
   cat: 'jp'
   star: 4
@@ -367,7 +366,7 @@
       meta:
         priority: 4
         buff: ATK Damage
-        buffValue: 15
+        buffValue: 10
   obtained: Administrative Gear / NieR (Achievement, Exchange)
 
 - name: Cruel Oath
@@ -517,13 +516,13 @@
       meta:
         priority: 4
         buff: Crit Damage
-        buffValue: 15
+        buffValue: 10
     - desc: ATK damage dealt +40% when skill chain is >3
       lb: 5
       meta:
         priority: 3
         buff: ATK Damage
-        buffValue: 15
+        buffValue: 40
         buffCondition: Skill Chain 3+
   obtained: Alma (Exchange), Coin Exchange
 

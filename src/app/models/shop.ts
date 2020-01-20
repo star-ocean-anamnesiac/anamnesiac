@@ -13,4 +13,5 @@ export interface Shop {
   currency: string;
   aliases: string[];
   items: ShopItem[];
+  eventName?: string;
 }
