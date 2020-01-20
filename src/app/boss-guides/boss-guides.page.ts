@@ -80,7 +80,6 @@ export class BossGuidesPage implements OnInit, OnDestroy {
   }
 
   public loadGuide(guide: BossGuide) {
-    console.log(guide.name, this.getPreviouslyLoadedGuide())
     if(guide.name === this.getPreviouslyLoadedGuide()) {
       this.loadGuideModal(guide.name);
       return;
