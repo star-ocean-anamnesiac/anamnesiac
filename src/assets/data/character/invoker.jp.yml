@@ -3177,6 +3177,7 @@
       maxHits: 6
     - name: "Enhance"
       picture: Enhance_Growth
+      power: INT x 0%
       ap: 50
       notes: ATK +25% to all allies (20s)
       meta:
