@@ -6829,3 +6829,73 @@
       - desc: Hit Count +100, ATK DMG +50% (party/ 20s)
     power: ATK x 5500%
     maxHits: 10
+
+- name: Nel_Zelpher (Chinese New Year)
+  cat: jp
+  picture: Char_Placeholder_Chinese_Nel
+  weapon: rifle
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15435
+    atk: 2494
+    int: 1563
+    def: 1563
+    hit: 1253
+    grd: 931
+
+  talents:
+    - name: "Inevitable Sniper"
+      effects:
+        - desc: DMG dealt +30%, +80% at 100% HP
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 80
+    - name: "Zhu Xuan's Hakka Tiger"
+      effects:
+        - desc: Recover 20% AP by The Secret Civilization
+        - desc: AP cost -30% at SC 3+ (party)
+        - desc: Recover 10% HP when Chinese new year Nel is at SC 3+ (party)
+    - name: "The Secret Civilization"
+      effects:
+        - desc: Critical chance +30% at SC 4+, +60% at SC 6+
+        - desc: AP cost -50% at SC 5+, -70% at SC 7+
+    - name: "Dear Friend"
+      effects:
+        - desc: Skill Chain is kept for 1 dodge
+        - desc: Anti flinch and DMG taken -40% while attacking
+    
+  skills:
+    - name: "Behind the Dragon"
+      picture: Skill_Placeholder
+      power: ATK x 170%
+      ap: 20
+      maxHits: 3
+    - name: "Hien"
+      picture: Skill_Placeholder
+      power: ATK x 480%
+      ap: 25
+      maxHits: 5
+    - name: "Tiger Wind Bullet"
+      picture: Skill_Placeholder
+      power: ATK x 180%
+      ap: 21
+      maxHits: 1
+    - name: "Seismic Cannon"
+      picture: Skill_Placeholder
+      element: Ice
+      power: ATK x 900%
+      ap: 40
+      maxHits: 6
+
+  rush:
+    name: "Lunar Drop"
+    picture: Rush_Placeholder
+    effects:
+      - desc: Recover 30% HP | ATK/INT DMG +50% (party/20s)
+    power: ATK x 4500%
+    maxHits: 1
