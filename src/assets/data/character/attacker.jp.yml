@@ -10160,3 +10160,74 @@
         duration: 20
     power: ATK x 4500%
     maxHits: 6
+
+- name: Clair Lasbard (Chinese New Year)
+  cat: jp
+  picture: Char_Placeholder_Chinese_Clair
+  weapon: greatsword
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 2730
+    int: 1537
+    def: 1969
+    hit: 1127
+    grd: 833
+
+  talents:
+    - name: "Smiling Greatsword Master"
+      effects:
+        - desc: ATK +500, +1000 at HC 200+
+          all: true
+    - name: "Blue White Tensuke"
+      effects:
+        - desc: AP recovery on normals +200% while not in front enemies (party)
+        - desc: AP recovery when triggering Interupt mastery
+    - name: "Captivating Honey"
+      effects:
+        - desc: Deal 5% additional damage from skills (Self)
+        - desc: ATK +30% at HC 200+, +60% at HC 400+
+    - name: "Best Friend"
+      effects:
+        - desc: AP +40
+        - desc: Anti flinch and DMG taken -30% while Charge assault
+    - name: "Interrupt [MASTERY]"
+      effects:
+        - desc: AP cost -20%
+        - desc: Nullify critical taken when Charge Assault
+
+  skills:
+    - name: "Pilgrimage"
+      picture: Skill_Placeholder
+      power: ATK x 180%
+      ap: 15
+      maxHits: 1
+    - name: "Line Moon"
+      picture: Skill_Placeholder
+      power: ATK x 310%
+      ap: 20
+      maxHits: 2
+    - name: "Red Storm"
+      picture: Skill_Placeholder
+      power: ATK x 410%
+      ap: 25
+      maxHits: 4
+    - name: "Freezing Poison"
+      picture: Skill_Placeholder
+      element: Ice
+      power: ATK x 750%
+      ap: 32
+      maxHits: 11
+
+  rush:
+    name: "Back Cherry Blossom"
+    picture: Rush_Placeholder
+    shortEffects: 
+    effects:
+      - desc: Recover 30% HP | ATK/INT DMG taken (enemies/20s)
+        duration: 20
+    power: ATK x 4500%
+    maxHits: 6
