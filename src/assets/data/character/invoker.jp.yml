@@ -5545,3 +5545,83 @@
           buffValue: 60
     power: INT x 4500%
     maxHits: 10
+
+- name: Dizzy
+  cat: jp
+  picture: Dizzy
+  weapon: orb
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15540
+    atk: 2678
+    int: 2718
+    def: 1943
+    hit: 1134
+    grd: 847
+
+  talents:
+    - name: "Friends of the Forest"
+      effects:
+        - desc: INT +45%, + 70% at 150+ HC
+          all: true
+          meta:
+            priority: 1
+            buff: INT
+            buffValue: 70
+        - desc: Convert 35% INT to ATK
+          all: Attaclers/Sharpshooters/Defenders
+          meta:
+            priority: 1
+            buff: INT -> ATK
+            buffValue: 35
+    - name: "Necro's Rampage"
+      effects:
+        - desc: AP cost -10 100+ HC, , -25% at 250+ HC, respectively (party)
+        - desc: Assist +1 (party)
+    - name: "Undine's Protection"
+      effects:
+        - desc: AP cost -80% durring perfect evassion (10s/party)
+        - desc: 15% HP Recovery after using Second skill
+    - name: "Half Gear"
+      effects:
+        - desc: AP Recovery durring movement
+        - desc: Evasion AP cost -80%
+        - desc: Air dodge
+        - desc: Maintain Cancel Bonus during evasion once per combo
+
+  skills:
+    - name: "Fire LAnce Wings"
+      picture: Skill_Placeholder
+      element: Fire
+      power: INT x 360%
+      ap: 17
+      maxHits: 4
+    - name: "Second Skill"
+      picture: Skill_Placeholder
+      element: Ice
+      power: INT x 400%
+      ap: 19
+      maxHits: 3
+    - name: "Hail Orb Wings"
+      picture: Skill_Placeholder
+      element: Ice
+      power: INT x 340%
+      ap: 17
+      maxHits: 1
+    - name: "Imperial Ray"
+      picture: Skill_Placeholder
+      element: Fire
+      power: INT x 900%
+      ap: 35
+      maxHits: 5
+
+  rush:
+    name: "Emotion Gamma Ray"
+    picture: Rush_Placeholder
+    effects: 
+      - desc: ATK | INT DMG taken +40% (20s/enemies)
+    power: INT x 4500%
+    maxHits: 1
