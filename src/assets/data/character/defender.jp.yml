@@ -3807,3 +3807,72 @@
         duration: 20
     power: ATK x 4500%
     maxHits: 9
+
+- name: Ky Kiske
+  cat: jp
+  picture: Ky_Kiske
+  weapon: ohs
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 20370
+    atk: 2508
+    int: 1537
+    def: 2560
+    hit: 812
+    grd: 1036
+
+  talents:
+    - name: "High King of Illyra"
+      effects:
+        - desc: DMG taken +35%, +60% at 200+ HC (enemies)
+        - desc: Anti Flinch HP at ≤25% (party)
+    - name: "Thunderseal Wielder"
+      effects:
+        - desc: DMG taken -25%, -35% at HC 100+
+        - desc: ATK/INT DMG taken -15% at 150+ HC (party)
+    - name: "New Justice"
+      effects:
+        - desc: AP cost -50% durring guard (party)
+        - desc: HP recovery 10%/3s durring guard (20s/party)
+    - name: "Thunderclap"
+      effects:
+        - desc: Guard possible in all direction (party)
+        - desc: Air dodge
+        - desc: ATK DMG +30% at SC 4+, +60% at at SC 7+
+
+  skills:
+    - name: "Duranadal Call"
+      picture: Skill_Placeholder
+      element: Lightning
+      power: ATK x 850%
+      ap: 27
+      maxHits: 6
+    - name: "Greed Sever"
+      picture: Skill_Placeholder
+      element: Lightning
+      power: ATK x 380%
+      ap: 20
+      maxHits: 8
+    - name: "King's Blade of Fury"
+      picture: Skill_Placeholder
+      power: ATK x 420%
+      ap: 21
+      maxHits: 3
+    - name: "King's Heaven and Hell"
+      picture: Skill_Placeholder
+      power: ATK x 380%
+      ap: 19
+      maxHits: 5
+
+  rush:
+    name: "Rising Force"
+    picture: Rush_Placeholder
+    element: Lightning
+    effects:
+      - desc: HP recovery 30% (self)
+      - desc: Critical and Critical DMG +50% (20s/party)
+    power: ATK x 4500%
+    maxHits: 4
