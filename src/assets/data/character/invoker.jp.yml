@@ -5322,7 +5322,7 @@
         - desc: Damage taken +75% when EB (enemies/30s)
     - name: "Necronomicon"
       effects:
-        - desc: Cancle Bonus 200% when Charge Assault
+        - desc: Cancel Bonus 200% when Charge Assault
         - desc: Stun Rate +60% at 100% HP
         - desc: Rush Combo DMG +50% when Element Burst (party/30s)
     - name: "Unassailable on the Net"
