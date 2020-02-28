@@ -6899,3 +6899,72 @@
       - desc: Recover 30% HP | ATK/INT DMG +50% (party/20s)
     power: ATK x 4500%
     maxHits: 1
+
+- name: Miki Sauvester (Valntine)
+  cat: jp
+  picture: Miki_Valentine
+  weapon: arms
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 14175
+    atk: 2482
+    int: 1549
+    def: 1733
+    hit: 1253
+    grd: 938
+
+  talents:
+    - name: "Xinghai Chocolatier"
+      effects:
+        - desc: DMG dealt +35%, +60% at HC > 150
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffValue: 60
+        - desc: DMG dealt +85% when enemy gets stunned (party/ 30s)
+    - name: "Faint Sweetness"
+      effects:
+        - desc: Durring Rush Combo, stun rate +50%, +70% at HC > 200 (party)
+    - name: "Make 3 and Eat 2"
+      effects:
+        - desc: AP recovery 20% on Lovely Tuner (party)
+        - desc: Apply AP cost -70% when an enemy gets stunned (party/ 10s)
+    - name: "Happiness Sweet"
+      effects:
+        - desc: AP recovery +150% at long range
+        - desc: Movement speed + 50%
+        - desc: 90% chance of surviving a lethal attack when at 10% of max HP or more (self)
+    
+  skills:
+    - name: "Lovely Tunner"
+      picture: Skill_Placeholder
+      power: ATK x 1550%
+      ap: 34
+      maxHits: 7
+    - name: "Charming Pose"
+      picture: Skill_Placeholder
+      power: ATK x 650%
+      ap: 24
+      maxHits: 5
+    - name: "Baria Sweet"
+      picture: Skill_Placeholder
+      power: ATK x 350%
+      ap: 15
+      maxHits: 10
+    - name: "Blurred Attack"
+      picture: Skill_Placeholder
+      power: ATK x 220%
+      ap: 18
+      maxHits: 6
+
+  rush:
+    name: "Moe Moe Blast"
+    picture: Rush_Placeholder
+    effects:
+      - desc: ATK DMG +60% (party/ 20s)
+    power: ATK x 4500%
+    maxHits: 6
