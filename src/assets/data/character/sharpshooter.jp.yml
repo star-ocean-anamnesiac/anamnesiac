@@ -6903,7 +6903,7 @@
 - name: Miki Sauvester (Valntine)
   cat: jp
   picture: Miki_Valentine
-  weapon: arms
+  weapon: arm
   ace: true
   limited: true
   star: 5
@@ -6972,7 +6972,7 @@
 - name: Rena Lanford (Onsen)
   cat: jp
   picture: Rena_Onsen
-  weapon: arms
+  weapon: rifle
   ace: true
   limited: true
   star: 5
