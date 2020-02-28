@@ -10302,3 +10302,68 @@
       - desc: HP recovery 100% (self) | Critical chance +60% (party/ 20s)
     power: ATK x 4500%
     maxHits: 6
+
+- name: Evelysse (Onsen)
+  cat: jp
+  picture: Evelysse_Onsen
+  weapon: dagger
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 18648
+    atk: 3245
+    int: 1575
+    def: 1943
+    hit: 1162
+    grd: 819
+
+  talents:
+    - name: "Hot Spring Beauty"
+      effects:
+        - desc: ATK +15%, +80% durring Rush Combo (party)
+        - desc: AP cost -25% at long range (party)
+    - name: "Flank Hem"
+      effects:
+        - desc: DMG taken -100% on Flying Eagle Claw (self/ 1s)
+        - desc: Rush DMG +80% at 100% HP and HC > 300 (self)
+    - name: "Beautiful Skin"
+      effects:
+        - desc: Additional hit 5% on skills at Sc > 4 (self)
+        - desc: HP recovery 2% on Jumping Spirits - Light Bullets at SC > 5 (self)
+    - name: "Double Memories"
+      effects:
+        - desc: ATK +20%, HP +20%, AP +40
+        - desc: Anti flinch while attacking 
+        - desc: Able to air dodge (self)
+
+  skills:
+    - name: "Limb Sword"
+      picture: Skill_Placeholder
+      power: ATK x 350%
+      ap: 12
+      maxHits: 5
+    - name: "Flying Eagle Claws"
+      picture: Skill_Placeholder
+      power: ATK x 600%
+      ap: 25
+      maxHits: 10
+    - name: "Kurotaka Rotation"
+      picture: Skill_Placeholder
+      power: ATK x 420%
+      ap: 15
+      maxHits: 4
+    - name: "Light Bullets"
+      picture: Skill_Placeholder
+      power: ATK x 750%
+      ap: 31
+      maxHits: 4
+
+  rush:
+    name: "Shakukei / Yuyu"
+    picture: Rush_Placeholder
+    effects:
+      - desc: 
+    power: ATK x 5500%
+    maxHits: 12
