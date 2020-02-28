@@ -10231,3 +10231,139 @@
         duration: 20
     power: ATK x 4500%
     maxHits: 6
+
+- name: Erys Jerand (Valentine)
+  cat: jp
+  picture: Erys_Valentine
+  weapon: scythe
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15540
+    atk: 2692
+    int: 1563
+    def: 1916
+    hit: 1162
+    grd: 840
+
+  talents:
+    - name: "Sweet Angel"
+      effects:
+        - desc: ATK +40%, +60% at HC > 150
+          all: true
+          meta:
+            priority: 1
+            buff: ATK
+            buffValue: 60
+        - desc: Apply 80% ATK when an enemy gets stunned (party/ 30s)
+    - name: "Making Unfamliar Sweets"
+      effects:
+        - desc: Stun rate +405, +60%  at HC > 200 (party)
+        - desc: AP cost -30% at SC 2, -40% at SC > 3 (party)
+    - name: "Chocolate Wings"
+      effects:
+        - desc: HP recovery 20% after using Grim Reaper
+        - desc: Able to Overheal up to 10000 Hp
+        - desc: Anti flinch while attacking (self)
+    - name: "Gift With Gratitude"
+      effects:
+        - desc: AP recovery 100% on perfect dodge
+        - desc: Able to air dodge
+        - desc: Grim Reaper DMG dealt +30% at SC 3, +40% at SC > 4 (self)
+
+  skills:
+    - name: "Grim Reaper"
+      picture: Skill_Placeholder
+      power: ATK x 700%
+      ap: 27
+      maxHits: 11
+    - name: "Wing Zapper"
+      picture: Skill_Placeholder
+      power: ATK x 180%
+      ap: 12
+      maxHits: 2
+    - name: "Flap Edge"
+      picture: Skill_Placeholder
+      power: ATK x 240%
+      ap: 17
+      maxHits: 2
+    - name: "Rotation Slash Heaven"
+      picture: Skill_Placeholder
+      power: ATK x 550%
+      ap: 24
+      maxHits: 6
+
+  rush:
+    name: "Heartless Wing Edge"
+    picture: Rush_Placeholder
+    effects:
+      - desc: HP recovery 100% (self) | Critical chance +60% (party/ 20s)
+    power: ATK x 4500%
+    maxHits: 6
+
+- name: Evelysse (Onsen)
+  cat: jp
+  picture: Evelysse_Onsen
+  weapon: dagger
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 18648
+    atk: 3245
+    int: 1575
+    def: 1943
+    hit: 1162
+    grd: 819
+
+  talents:
+    - name: "Hot Spring Beauty"
+      effects:
+        - desc: ATK +15%, +80% durring Rush Combo (party)
+        - desc: AP cost -25% at long range (party)
+    - name: "Flank Hem"
+      effects:
+        - desc: DMG taken -100% on Flying Eagle Claw (self/ 1s)
+        - desc: Rush DMG +80% at 100% HP and HC > 300 (self)
+    - name: "Beautiful Skin"
+      effects:
+        - desc: Additional hit 5% on skills at Sc > 4 (self)
+        - desc: HP recovery 2% on Jumping Spirits - Light Bullets at SC > 5 (self)
+    - name: "Double Memories"
+      effects:
+        - desc: ATK +20%, HP +20%, AP +40
+        - desc: Anti flinch while attacking 
+        - desc: Able to air dodge (self)
+
+  skills:
+    - name: "Limb Sword"
+      picture: Skill_Placeholder
+      power: ATK x 350%
+      ap: 12
+      maxHits: 5
+    - name: "Flying Eagle Claws"
+      picture: Skill_Placeholder
+      power: ATK x 600%
+      ap: 25
+      maxHits: 10
+    - name: "Kurotaka Rotation"
+      picture: Skill_Placeholder
+      power: ATK x 420%
+      ap: 15
+      maxHits: 4
+    - name: "Light Bullets"
+      picture: Skill_Placeholder
+      power: ATK x 750%
+      ap: 31
+      maxHits: 4
+
+  rush:
+    name: "Shakukei / Yuyu"
+    picture: Rush_Placeholder
+    effects:
+      - desc: 
+    power: ATK x 5500%
+    maxHits: 12
