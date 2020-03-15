@@ -10227,7 +10227,7 @@
     picture: Rush_Placeholder
     shortEffects: 
     effects:
-      - desc: Recover 30% HP | ATK/INT DMG taken (enemies/20s)
+      - desc: AP cost -65% (self/20s)
         duration: 20
     power: ATK x 4500%
     maxHits: 6
@@ -10367,3 +10367,68 @@
       - desc: 
     power: ATK x 5500%
     maxHits: 12
+
+- name: Fayt Leingod (Winged)
+  cat: jp
+  picture: Winged_fayt
+  weapon: greatsword
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15750
+    atk: 2730
+    int: 1549
+    def: 1957
+    hit: 1134
+    grd: 819
+
+  talents:
+    - name: "Heavenly Smoke wing"
+      effects:
+        - desc: ATK +1000, +1500 at HC > 350 (party)
+        - desc: ATK +1750 during Order Countdown (party)
+    - name: "Shinha's Heart"
+      effects:
+        - desc: At Start of Mission Gain 2 Orders
+        - desc: During Order Countdown AP -70% (party)
+    - name: "Frontier of Swordmanship"
+      effects:
+        - desc: CA From Long to Short Range Recovers 15AP
+        - desc: CA from Short to Long Range Recovers 10% HP (self)
+    - name: "Fu Hu for Wing"
+      effects:
+        - desc: DMG to Divine +60% at 300+ Hits
+        - desc: CA Skip 200%
+        - desc: CA Crit Null (Self)
+
+  skills:
+    - name: "Storm Edge"
+      picture: Skill_Placeholder
+      power: ATK x 290%
+      ap: 21
+      maxHits: 4
+    - name: "Broken Wings"
+      picture: Skill_Placeholder
+      power: ATK x 240%
+      ap: 18
+      maxHits: 1
+    - name: "Sword Dance Wings"
+      picture: Skill_Placeholder
+      power: ATK x 1180%
+      ap: 36
+      maxHits: 10
+    - name: "Celestial"
+      picture: Skill_Placeholder
+      power: ATK x 1480%
+      ap: 37
+      maxHits: 9
+
+  rush:
+    name: "Etheral Blast"
+    picture: Rush_Placeholder
+    effects:
+      - desc: HC start at 100 | DMG dealt +80 (party)
+    power: ATK x 4500%
+    maxHits: 5
