@@ -3879,7 +3879,7 @@
 
 - name: Hatsuho Shinonome
   cat: jp
-  picture: Hatsuho _Shinonome
+  picture: Hatsuho_Shinonome
   weapon: axe
   ace: true
   limited: true
