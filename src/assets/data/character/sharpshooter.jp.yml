@@ -7033,3 +7033,72 @@
       - desc: Critical chance +100% (party/ 10s)
     power: ATK x 4500%
     maxHits: 6
+
+- name: Palma Anastasia
+  cat: jp
+  picture: Palma_Anastasia
+  weapon: gun
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 13860
+    atk: 3010
+    int: 1563
+    def: 1747
+    hit: 1246
+    grd: 938
+
+  talents:
+    - name: "Top Star Walking across Countries"
+      effects:
+        - desc: DMG dealt +30%, +50% at 100% HP (party)
+        - desc: DMG dealt +70% at 100% HP and HC ≥ 300 (party)
+    - name: "Flower Toward Hope"
+      effects:
+        - desc: Assist +1
+        - desc: Order Gauge +1 (at start of battle)
+        - desc: Rush Gauge 100% (party/ at start of battle)
+    - name: "Unrivaled Kabuki Lover"
+      effects:
+        - desc: Anti flinch while attacking
+        - desc: -40% DMG taken
+        - desc: Rush Combo DMG +50% at HC ≥ 300
+    - name: "Legendary Constellations"
+      effects:
+        - desc: ATK +20% | +20% at HC ≥ 200
+        - desc: HP recovery 5% of DMG dealt by Blizzard Barage at SC ≥ 5
+    
+  skills:
+    - name: "Countersnipe"
+      picture: Skill_Placeholder
+      power: ATK x 190%
+      ap: 15
+      maxHits: 6
+    - name: "God of Death Snipe"
+      picture: Skill_Placeholder
+      power: ATK x 230%
+      ap: 18
+      maxHits: 1
+    - name: "Icy Shot"
+      picture: Skill_Placeholder
+      Element: Ice
+      power: ATK x 390%
+      ap: 26
+      maxHits: 3
+    - name: "Blizzard Barrage"
+      picture: Skill_Placeholder
+      Element: Ice
+      power: ATK x 470%
+      ap: 29
+      maxHits: 3
+
+  rush:
+    name: "Absolute Zero"
+    picture: Rush_Placeholder
+      Element: Ice
+    effects:
+      - desc: AP cost -50% | 75 HC (party)
+    power: ATK x 5500%
+    maxHits: 12
