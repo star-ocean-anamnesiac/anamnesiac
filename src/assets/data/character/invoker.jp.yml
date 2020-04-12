@@ -5625,3 +5625,73 @@
       - desc: ATK | INT DMG taken +40% (20s/enemies)
     power: INT x 4500%
     maxHits: 1
+
+- name: Clarissa Snowflake
+  cat: jp
+  picture: Clarissa_Snowflake
+  weapon: tome
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 12390
+    atk: 1563
+    int: 2730
+    def: 1353
+    hit: 1029
+    grd: 840
+
+  talents:
+    - name: "Heavy Mage Successor"
+      effects:
+        - desc: Damage taken +45%, +70% at HC ≥ 150 (enemies)
+        - desc: No flinching durring symbology
+        - desc: Convert 50% ATK to INT
+    - name: "Flower Who Believes in People"
+      effects:
+        - desc: Rush Gauge 3% increase every 3 seconds at 100% HP (party)
+        - desc: Rush Mode damage +60% on lightning- or dark-weak enemies (party)
+    - name: "Secret Creative notes"
+      effects:
+        - desc: Imbues Rush Mode with lightning when using lightning symbology (15s)
+        - desc: HP recovery 20% every 3 seconds at SC ≥ 2 (party)
+    - name: "A Beautiful Moon"
+      effects:
+        - desc: AP cost -60% at SC ≥ 3, -70% at SC ≥ 4
+        - desc: 90% chance of surviving a lethal attack at 10% HP or more
+
+  skills:
+    - name: "Heavy Magic Purgatory"
+      picture: Skill_Placeholder
+      element: Dark
+      power: INT x 350
+      ap: 19
+      maxHits: 9
+    - name: "Heavy Magic Flash"
+      picture: Skill_Placeholder
+      element: Lightning
+      power: INT x 280
+      ap: 19
+      maxHits: 10
+    - name: "Heavy Magic Todoroki"
+      picture: Skill_Placeholder
+      element: Lightning
+      power: INT x 1050
+      ap: 32
+      maxHits: 10
+    - name: "Heavy Magic Tornado"
+      picture: Skill_Placeholder
+      element: Dark
+      power: INT x 1440
+      ap: 33
+      maxHits: 3
+
+  rush:
+    name: "Heavy Magic, Albitor, Danver"
+    picture: Rush_Placeholder
+    element: Dark
+    effects:
+      - desc: 30% HP recovery | ATK/INT damage dealt +50% (party)
+    power: INT x 4500%
+    maxHits: 7
