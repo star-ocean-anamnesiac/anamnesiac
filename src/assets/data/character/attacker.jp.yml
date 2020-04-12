@@ -10503,3 +10503,72 @@
       - desc: Critical hit chance +60%, and critical hit damage +30% (party/20 seconds)
     power: ATK x 4500%
     maxHits: 5
+
+- name: Azami Mochizuki
+  cat: jp
+  picture: Azami_Mochizuki
+  weapon: kncuckle
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 18648
+    atk: 3549
+    int: 1549
+    def: 1943
+    hit: 1141
+    grd: 833
+
+  talents:
+    - name: "Mochizuki Ninja"
+      effects:
+        - desc: Shinobi Tiger Claw AF Effect Increased to 45% at HC ≥ 150
+        - desc: AP cost -30% at short range
+    - name: "Delicious Flower"
+      effects:
+        - desc: -90% DMG taken on dodge(party/1s)
+        - desc: Skills maintain CB after dodge once per rotation
+    - name: "Omanju Temptation"
+      effects:
+        - desc: AP Recovery 50 AP to party on perfect dodge
+        - desc: -80% AP cost and ATK +35% on perfect dodge (10s) 
+    - name: "Two Mochizuki-style Mysteries"
+      effects:
+        - desc: ATK +30% | HP +20%
+        - desc: AP recovery 200% by normals
+
+  skills:
+    - name: "Falcon Kick"
+      picture: Skill_Placeholder
+      element: Lightning
+      power: ATK x 410% 
+      ap: 28
+      maxHits: 1
+    - name: "Splitting Earth"
+      picture: Skill_Placeholder
+      element: Lightning
+      power: ATK x 170%
+      ap: 18
+      maxHits: 2
+    - name: "Shinobi Tiger Claw"
+      picture: Skill_Placeholder
+      element: Dark
+      power: ATK x 230%
+      ap: 22
+      maxHits: 2
+    - name: "Hook Claw Fury"
+      picture: Skill_Placeholder
+      element: Dark
+      power: ATK x 510%
+      ap: 32
+      maxHits: 10
+
+  rush:
+    name: "Full Moon Style Ninjutsu"
+    picture: Rush_Placeholder
+    effects:
+      - desc: AP cost -80% (party/5s)
+    power: ATK x 6500%
+    maxHits: 11
+
