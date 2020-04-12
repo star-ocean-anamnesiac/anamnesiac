@@ -3876,3 +3876,72 @@
       - desc: Critical and Critical DMG +50% (20s/party)
     power: ATK x 4500%
     maxHits: 4
+
+- name: Hatsuho Shinonome
+  cat: jp
+  picture: Hatsuho_Shinonome
+  weapon: axe
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 25956
+    atk: 2520
+    int: 1549
+    def: 2324
+    hit: 819
+    grd: 1057
+
+  talents:
+    - name: "Shrine War Maiden"
+      effects:
+        - desc: Single target damage dealt +40%, +60% HC ≥ 150 (party)
+        - desc: AP cost -50% when not behind enemy
+    - name: "Flower that Brightens the Mood"
+      effects:
+        - desc: HP +45%, no flinching when taking damage of 20% HP or less (party)
+        - desc: Damage taken -40% during attacks (self)
+    - name: "Firefist Sanctions"
+      effects:
+        - desc: Absorbs 3% of damage dealt when using Mouse Fireworks during combos of 5 or more skills
+        - desc: AP recovery 30 AP when taking damage of 1% HP or more (party)
+    - name: "A Festival!"
+      effects:
+        - desc: Critical hit chance +50% during combos of 6 or more skills (party)
+        - desc: HP +20%
+        - desc: Taunt +3
+
+  skills:
+    - name: "Sacrifice"
+      picture: Skill_Placeholder
+      element: Fire
+      power: ATK x 350%
+      ap: 25
+      maxHits: 5
+    - name: "Hatsuho-chan Eruption"
+      picture: Skill_Placeholder
+      power: ATK x 290%
+      ap: 21
+      maxHits: 6
+    - name: "Flame"
+      picture: Skill_Placeholder
+      power: ATK x 800%
+      ap: 35
+      maxHits: 8
+    - name: "Mouse Fireworks"
+      picture: Skill_Placeholder
+      element: Fire
+      power: ATK x 1130%
+      ap: 42
+      maxHits: 10
+
+  rush:
+    name: "Shinonome Shrine Gokagura Hammer"
+    picture: Rush_Placeholder
+    element: Fire
+    effects:
+      - desc: HP recovery 30% (self)
+      - desc: Critical and Critical DMG +50% (20s/party)
+    power: ATK x 4500%
+    maxHits: 7

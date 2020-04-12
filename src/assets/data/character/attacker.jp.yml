@@ -10432,3 +10432,74 @@
       - desc: HC start at 100 | DMG dealt +80 (party)
     power: ATK x 4500%
     maxHits: 5
+
+- name: Sakura Amamiya
+  cat: jp
+  picture: Sakura_Amamiya
+  weapon: ohs
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 2718
+    int: 1563
+    def: 1957
+    hit: 1127
+    grd: 833
+
+  talents:
+    - name: "Heavenly Sword User"
+      effects:
+        - desc: ATK +40%, and ATK +60% HC > 200, +80% HC > 400 (party)
+        - desc: Rush Mode damage +30% HC > 500 or more (party)
+    - name: "Flower Nurtured by Love"
+      effects:
+        - desc: Additional hit that deals 5% of damage during skills (party)
+        - desc: AP cost -30% (party)
+        - desc: AP cost -70% HC > 200 
+    - name: "Indomitable Fighting Spirit"
+      effects:
+        - desc: Recovers 100% AP during perfect evasion
+        - desc: Skills maintain Cancel Bonus during evasion once per combo
+    - name: "Fated Encounter"
+      effects:
+        - desc: ATK +15% when using Armor Cut Off (10s)
+        - desc: CA Skip 200%
+        - desc: AP recovery 20% when using Emptiness
+    - name: "Vanguard/ Amamiya Sakura [Mastery]"
+      effects:
+        - desc: No Flinching during charge assault 
+        - desc: Critical hit damage taken +20% during Charge Assault from long to short range (all enemies/3 seconds)
+        - desc: Nullify charge assault crit penalty
+
+  skills:
+    - name: "Armor Cut Off"
+      picture: Skill_Placeholder
+      power: ATK x 210% 
+      ap: 23
+      maxHits: 2
+    - name: "Dead Space"
+      picture: Skill_Placeholder
+      power: ATK x 190%
+      ap: 21
+      maxHits: 1
+    - name: "Emptiness"
+      picture: Skill_Placeholder
+      power: ATK x 520%
+      ap: 32
+      maxHits: 3
+    - name: "Steel Cut"
+      picture: Skill_Placeholder
+      power: ATK x 630%
+      ap: 36
+      maxHits: 5
+
+  rush:
+    name: "God | Sabuki Snow"
+    picture: Rush_Placeholder
+    effects:
+      - desc: Critical hit chance +60%, and critical hit damage +30% (party/20 seconds)
+    power: ATK x 4500%
+    maxHits: 5
