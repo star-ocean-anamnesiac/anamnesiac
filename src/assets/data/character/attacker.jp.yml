@@ -10507,7 +10507,7 @@
 - name: Mochizuki Azami
   cat: jp
   picture: Mochizuki_Azami
-  weapon: kncuckle
+  weapon: knuckle
   ace: true
   limited: true
   star: 5
