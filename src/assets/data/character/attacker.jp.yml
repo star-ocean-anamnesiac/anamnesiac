@@ -10644,29 +10644,29 @@
   skills:
     - name: "JP Somersault"
       picture: Sumersault
-      power: ATK x 1020%
+      power: ATK x 1130%
       ap: 29
       maxHits: 3
     - name: "Hammer of Might"
       picture: Hammer_of_Might
-      power: ATK x 320%
+      power: ATK x 360%
       ap: 23
       maxHits: 1      
     - name: "Palm of Destruction"
       picture: Palm_of_Destruction
-      power: ATK x 270%
+      power: ATK x 300%
       ap: 20
       maxHits: 1
     - name: "Heel Stomp"
       picture: Axe_Kick
-      power: ATK x 300%
+      power: ATK x 350%
       ap: 21
       maxHits: 2   
     - name: "Invinity Arts Hop"
-      picture: Axe_Kick
-      power: ATK x 300%
-      ap: 21
-      maxHits: 2    
+      picture: Skill_Placeholder
+      power: ATK x 730%
+      ap: 29
+      maxHits: 2  3 
 
   rush:
     name: "Dream Hammer"
