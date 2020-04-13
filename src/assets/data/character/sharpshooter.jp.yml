@@ -7083,13 +7083,13 @@
       maxHits: 1
     - name: "Icy Shot"
       picture: Skill_Placeholder
-      Element: Ice
+      element: Ice
       power: ATK x 390%
       ap: 26
       maxHits: 3
     - name: "Blizzard Barrage"
       picture: Skill_Placeholder
-      Element: Ice
+      element: Ice
       power: ATK x 470%
       ap: 29
       maxHits: 3
@@ -7097,7 +7097,7 @@
   rush:
     name: "Absolute Zero"
     picture: Rush_Placeholder
-      Element: Ice
+    element: Ice
     effects:
       - desc: AP cost -50% | 75 HC (party)
     power: ATK x 5500%
