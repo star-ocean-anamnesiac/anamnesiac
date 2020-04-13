@@ -10666,7 +10666,7 @@
       picture: Skill_Placeholder
       power: ATK x 730%
       ap: 29
-      maxHits: 2  3 
+      maxHits: 3 
 
   rush:
     name: "Dream Hammer"
