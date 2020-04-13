@@ -10621,7 +10621,7 @@
             buffValue: 100
         - desc: Movement speed +30%
           all: true
-        -desc: AP recovery 200% on normal attacks (party)
+        - desc: AP recovery 200% on normal attacks (party)
     - name: "Lonely Person"
       effects: 
         - desc: Evasion AP cost -80
