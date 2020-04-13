@@ -10504,9 +10504,9 @@
     power: ATK x 4500%
     maxHits: 5
 
-- name: Azami Mochizuki
+- name: Mochizuki Azami
   cat: jp
-  picture: Azami_Mochizuki
+  picture: Mochizuki_Azami
   weapon: kncuckle
   ace: true
   limited: true
