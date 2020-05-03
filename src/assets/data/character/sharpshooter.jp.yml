@@ -7102,3 +7102,71 @@
       - desc: AP cost -50% | 75 HC (party)
     power: ATK x 5500%
     maxHits: 12
+
+- name: Ricardo (Artillery)
+  cat: jp
+  picture: Artillery_Ricardo
+  weapon: launcher
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 19152
+    atk: 3010
+    int: 1510
+    def: 1575
+    hit: 1232
+    grd: 945
+
+  talents:
+    - name: "Heavy Armor That Collects the Best of Technologies"
+      effects:
+        - desc: DMG taken +40% while Ricardo at 100% HP (Enemies)
+        - desc: DMG taken +65% while Ricardo at 100% HP and HC ≥ 200 (Enemies)
+    - name: "Toward a New Journey"
+      effects:
+        - desc: After Star Elimination (skill 1) Recover 30 AP to party
+        - desc: HP recovery 2% from skill damage when SC ≥ 5 (self)
+    - name: "Reliable Shooting Controller"
+      effects:
+        - desc: Skill DMG +150%
+        - desc: Move speed + 50%
+        - desc: After Star Elimination Skill AP cost +150% (5s)
+    - name: "Former General's eye"
+      effects:
+        - desc: ATK +20% | HP +20% (stat page)
+        - desc: ATK +20% at HC ≥ 200 (self)
+        - desc: Able to air dodge
+        - desc: After Starboard Scratch (skill 2) | Portside Scratch Gun (skill 3) recover 20 AP (self)
+    
+  skills:
+    - name: "Star Elimination"
+      picture: Skill_Placeholder
+      power: ATK x 800%
+      ap: 45
+      maxHits: 8
+    - name: "Starboard Scratch"
+      picture: Skill_Placeholder
+      power: ATK x 120%
+      ap: 12
+      maxHits: 5
+    - name: "Portside Scratch Gun"
+      picture: Skill_Placeholder
+      power: ATK x 120%
+      ap: 12
+      maxHits: 5
+    - name: "Maximum Hit Blackhole"
+      picture: Skill_Placeholder
+      Element: Dark
+      power: ATK x 340%
+      ap: 32
+      maxHits: 10
+
+  rush:
+    name: "Galactica Penetration"
+    picture: Rush_Placeholder
+    effects:
+      - desc: Critical Chance and Critical DMG + 50% (party/20s)
+    power: ATK x 5500%
+    maxHits: 5
