@@ -10681,3 +10681,69 @@
           buffValue: 50
     power: ATK x 4500%
     maxHits: 1
+
+- name: Caleen Keemosn (Fox General)
+  cat: jp
+  picture: Fox_General_Caleen
+  weapon: dualswords
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15750
+    atk: 2835
+    int: 1537
+    def: 1852
+    hit: 1127
+    grd: 854
+
+  talents:
+    - name: "The First Step Towards an Advance Civilization"
+      effects:
+        - desc: INT +1000 at 100% HP, +1500 at 100% HP and HC ≥ 250
+        - desc: Converts 70% of INT to ATK (Attackers/ Sharpshooters/ Defenders)
+    - name: "Federal Uniform"
+      effects:
+        - desc: Fill 100% Rush Guage at mission start
+        - desc: Rush guage regen 3%/ 3s (party)
+        - desc: HP regen 20%/ 3s while Caleen is at SC ≥ 4 (party)
+    - name: "Welch Handmade Bit Mech"
+      effects:
+        - desc: After Slashing Fox (skill 1) and Dancing (skill 2) Recover AP 
+        - desc: Critical chance +50% while behind enemy (self)
+    - name: "The Mystery of the Deepening Coat of Arms"
+      effects:
+        - desc: Maintain SC after 1 dodge
+        - desc: Dodge AP cosr -80%
+        - desc: Able to air dodge
+
+  skills:
+    - name: "Slashing Fox"
+      picture: Skill_Placeholder
+      power: ATK x 220% 
+      ap: 16
+      maxHits: 2
+    - name: "Dancing"
+      picture: Skill_Placeholder
+      power: ATK x 210%
+      ap: 15
+      maxHits: 2
+    - name: "Cardinal"
+      picture: Skill_Placeholder
+      power: ATK x 170%
+      ap: 14
+      maxHits: 2
+    - name: "Silver Wave"
+      picture: Skill_Placeholder
+      power: ATK x 950%
+      ap: 27
+      maxHits: 8
+
+  rush:
+    name: "Wing Star Overlord"
+    picture: Rush_Placeholder
+    effects:
+      - desc: ATK DMG +60%, AP cost -50% (party/20s)
+    power: ATK x 4500%
+    maxHits: 5
