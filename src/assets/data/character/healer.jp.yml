@@ -4031,3 +4031,70 @@
       - desc: Revives at 50% HP (Attackers/Defenders/Sharpshooters)
     power: INT x 4000%
     maxHits: 1
+
+- name: Mastema (Wise God)
+  cat: jp
+  picture: Wise_God_Mastema
+  weapon: orb
+  ace: true
+  star: 5
+
+  stats:
+    hp: 12495
+    atk: 1706
+    int: 2520
+    def: 1523
+    hit: 1043
+    grd: 1162
+
+  talents:
+    - name: "Fallen Hagoromo"
+      effects:
+        - desc: Able to overheal 15k/10k (long range weapons/party)
+    - name: "Rai Funerary"
+      effects:
+        - desc: While Mastema is at 100% HP, Apply DMG Taken +50% (Enemies)
+        - desc: After 75s in Battle, Apply DMG Taken +80% (Enemies)
+    - name: "Irreverent Healer"
+      effects:
+        - desc: After casting heraldry, Recover 20% of the Party's HP
+        - desc: After Orbital Plasma (skill4), Recover 30AP to Party
+        - desc: Anti flinch while casting
+    - name: "A Hand to Reach the Inviolable Area"
+      effects:
+        - desc: Order Gain rate +30% at 100% HP
+        - desc: ATK/INT DMG +40% during drder countdown (party)
+        - desc: After 75s in Battle, 80% chance of surviving a lethal attack when at 10% of max HP or more (party)
+
+  skills:
+    - name: "Fairy Lights・God"
+      picture: Skill_Placeholder
+      power: INT x 250%
+      ap: 60
+      maxHits: 1
+    - name: "Thunderbolt・God"
+      picture: Skill_Placeholder
+      element: Lightning
+      power: INT x 1020%
+      ap: 27
+      maxHits: 3
+    - name: "Thunder Flare・God"
+      picture: Skill_Placeholder
+      element: Lightning
+      power: INT x 820%
+      ap: 18
+      maxHits: 4
+    - name: "Orbital Plasma"
+      picture: Skill_Placeholder
+      element: Lightning
+      power: INT x 1310%
+      ap: 44
+      maxHits: 4
+
+  rush:
+    name: "Lovisionation"
+    picture: Rush_Placeholder
+    effects:
+      - desc: ATK/INT DMG Taken +40% (Enemies/20s)
+    power: INT x 4000%
+    maxHits: 5
