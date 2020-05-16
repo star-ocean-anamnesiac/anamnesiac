@@ -5695,3 +5695,70 @@
       - desc: 30% HP recovery | ATK/INT damage dealt +50% (party)
     power: INT x 4500%
     maxHits: 7
+
+- name: Maria Traydor (Winged)
+  cat: jp
+  picture: Winged_Maria
+  weapon: rifle
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15435
+    atk: 2665
+    int: 2592
+    def: 1904
+    hit: 1162
+    grd: 819
+
+  talents:
+    - name: "Blue Wings of Change"
+      effects:
+        - desc: Effect of Gravity Shell (Skill1) - AF increased to 50% while Maria is at 100% HP
+        - desc: After 75s in Battle, Effect of Gravity Shell (Skill1) - AF increased to 65%
+    - name: "Divine General"
+      effects:
+        - desc: AP -30% at 100% HP, -50% after 60s in Battle (party)
+        - desc: After 75s in Battle, AP -70% and ATK DMG Taken -30% (self)
+    - name: "Inevitable Shooter"
+      effects:
+        - desc: Assist +1 (party)
+        - desc: At 100% HP Rush DMG +35% (Party)
+        - desc: After receiving DMG of atleast 1% Max HP, Recover 50AP (self)
+    - name: "Mitsunari Wing"
+      effects:
+        - desc: HP recovery 3% from skill4 damage when skill chain ≥ 3 (self)
+        - desc: Anti flinch and DMG taken -50% while attacking (self)
+        - desc: Air dodge
+
+  skills:
+    - name: "Gravity Shell・AF"
+      picture: Skill_Placeholder
+      element: Dark
+      power: INT x 290%
+      ap: 20
+      maxHits: 8
+    - name: "Spread Ray Wings"
+      picture: Skill_Placeholder
+      power: INT x 390%
+      ap: 22
+      maxHits: 5
+    - name: "Purging Spirit"
+      picture: Skill_Placeholder
+      power: INT x 620%
+      ap: 36
+      maxHits: 3
+    - name: "Surround Device"
+      picture: Skill_Placeholder
+      power: INT x 850%
+      ap: 41
+      maxHits: 7
+
+  rush:
+    name: "Ultimate Burst Emission"
+    picture: Rush_Placeholder
+    effects: 
+      - desc: ATK | INT DMG +50% (party/20s)
+    power: INT x 4500%
+    maxHits: 5
