@@ -10817,4 +10817,4 @@
     effects:
       - desc: HC +100 | Critical chance +60% (party/20s)
     power: ATK x 5500%
-    maxHits: 
+    maxHits: 10
