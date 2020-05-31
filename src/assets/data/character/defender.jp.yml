@@ -3653,7 +3653,7 @@
 
 - name: Fiore Brunelli (Maid)
   cat: jp
-  picture: Char_Placeholder_M_Fiore
+  picture: Maid_Fiore
   weapon: scythe
   ace: true
   limited: true
@@ -3945,3 +3945,71 @@
       - desc: Critical and Critical DMG +50% (20s/party)
     power: ATK x 4500%
     maxHits: 7
+
+- name: Nel Zepher (Oni Kimono)
+  cat: jp
+  picture: Ok_Nel
+  weapon: bns
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 20370
+    atk: 2482
+    int: 1537
+    def: 2546
+    hit: 819
+    grd: 1050
+
+  talents:
+    - name: "Dance of Demon Comfort"
+      effects:
+        - desc: DMG taken +35%, +50% at HC ≥ 200, +65% at HC ≥ 400 (enemies)
+        - desc: No flinching when taking damage of 25% HP or less (party)
+    - name: "Zanoni Dance"
+      effects:
+        - desc: DMG taken -25%, -40% at HC ≥ 150% (party)
+        - desc: 5% double Hit on skills (party)
+    - name: "Incense"
+      effects:
+        - desc: While Oni Kimono Nel is in the air, AP cost -40% and regen 10% HP/3s (party)
+        - desc: Rush DMG +40% at HC ≥ 300 (party)
+    - name: "Devil's Robe"
+      effects:
+        - desc: Critical hit chance +50% at SC ≥ 3
+        - desc: AP +200% on normals
+        - desc: Able to air dodge
+        - desc: Nullifies charge assault critical damage penalty
+
+  skills:
+    - name: "Eagle Nail Flash"
+      picture: Skill_Placeholder
+      power: ATK x 1250%
+      ap: 42
+      maxHits: 9
+    - name: "Wind Blade"
+      picture: Skill_Placeholder
+      element: Wind
+      power: ATK x 280%
+      ap: 21
+      maxHits: 1
+    - name: "Hibashi Claw Fairy"
+      picture: Skill_Placeholder
+      power: ATK x 850%
+      ap: 31
+      maxHits: 10
+    - name: "White Falcon Blade"
+      picture: Skill_Placeholder
+      power: ATK x 320%
+      ap: 26
+      maxHits: 8
+
+  rush:
+    name: "Youki Blade Issen"
+    picture: Rush_Placeholder
+    effects:
+      - desc: HP recovery 30% (self)
+      - desc: ATK DMG +60%, INT DMG +40% (party/20s)
+    power: ATK x 4500%
+    maxHits: 6
