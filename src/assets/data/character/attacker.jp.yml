@@ -10747,3 +10747,74 @@
       - desc: ATK DMG +60%, AP cost -50% (party/20s)
     power: ATK x 4500%
     maxHits: 5
+
+- name: Albel Nox (Oni Kimono)
+  cat: jp
+  picture: Ok_Albel
+  weapon: greatsword
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 18774
+    atk: 3293
+    int: 1496
+    def: 2009
+    hit: 1113
+    grd: 840
+
+  talents:
+    - name: "Onigami Sleeping"
+      effects:
+        - desc: ATK +750, +1250 at HC ≥ 150 (party)
+        - desc: Hitcount timer +3s
+    - name: "Ghost Sake Gourd"
+      effects:
+        - desc: AP cost -30% while not in front enemies (party)
+        - desc: AP cost -50% while not in front enemies (self)
+        - desc: When using Skill1, DMG taken -50% (self/1.5s)
+    - name: "Demon"
+      effects:
+        - desc: Using Interrupt recovers some AP and 5% HP
+        - desc: Anti flinch while attacking, ATK DMG taken -30%
+        - desc: Able to air dodge
+    - name: "Demon Flame Cloth"
+      effects:
+        - desc: ATK +20%, HP +20%, AP +40 (Stat Page)
+        - desc: When taking DMG of atleast 1% Max HP, Gain ATK +35% (10s)
+    - name: "Interrupt [MASTERY]"
+      effects:
+        - desc: AP cost -20%
+        - desc: Nullify critical taken when Charge Assault
+
+  skills:
+    - name: "Purgatory"
+      picture: Skill_Placeholder
+      power: ATK x 910%
+      ap: 51
+      maxHits: 10
+    - name: "Mugen Air Slash Demon"
+      picture: Skill_Placeholder
+      power: ATK x 250%
+      ap: 29
+      maxHits: 2
+    - name: "Futari Slash Ogre"
+      picture: Skill_Placeholder
+      power: ATK x 620%
+      ap: 45
+      maxHits: 5
+    - name: "Hollow Claw Demon"
+      picture: Skill_Placeholder
+      power: ATK x 200%
+      ap: 25
+      maxHits: 1
+
+  rush:
+    name: "Demon Performance"
+    picture: Rush_Placeholder
+    element: Earth
+    effects:
+      - desc: HC +100 | Critical chance +60% (party/20s)
+    power: ATK x 5500%
+    maxHits: 
