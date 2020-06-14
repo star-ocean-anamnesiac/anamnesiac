@@ -5762,3 +5762,72 @@
       - desc: ATK | INT DMG +50% (party/20s)
     power: INT x 4500%
     maxHits: 5
+
+- name: Tika (Bridal)
+  cat: jp
+  picture: Bridal_Tika
+  weapon: gun
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15750
+    atk: 2651
+    int: 2692
+    def: 1916
+    hit: 1148
+    grd: 840
+
+  talents:
+    - name: "Bouquet That Delivers Happiness"
+      effects:
+        - desc: Convert 70% ATK to INT (Invokers/Healers)
+        - desc: Convert &0% INT to ATK (Attackers/Sharpshooters/Defenders)
+    - name: "Something Blue Miracle"
+      effects:
+        - desc: Echo by skills 5% (party)
+        - desc: AP cost -30%/40% at HC ≥ 100/200 (party)
+    - name: "Brother is Worried"
+      effects:
+        - desc: After casting skill1 or skill3, recover 20 AP (self)
+        - desc: Rush DMG +40/80% at HC ≥ 300/600 (party)
+    - name: "Secret Wedding"
+      effects:
+        - desc: Anti flinch and DMG taken -40% while attacking
+        - desc: Drain 3% on skill4 at SC ≥ 3
+        - desc: AP cost -70% at HC ≥ 200
+    - name: "Multi Lock [Mastery]"
+      effects:
+        - desc: Nullify CA crit penalty, recover 3 AP
+        - desc: Charge Assault Fire Light Bullets (INTx250%/ Max Charge 6)
+
+  skills:
+    - name: "Gunners Line Nozomi"
+      picture: Skill_Placeholder
+      power: INT x 180%
+      ap: 21
+      maxHits: 6
+    - name: "Platoon Blast"
+      picture: Skill_Placeholder
+      power: INT x 290%
+      ap: 28
+      maxHits: 8
+    - name: "Escape Blow Hope"
+      picture: Skill_Placeholder
+      power: INT x 180%
+      ap: 21
+      maxHits: 3
+    - name: "Gerbera Grenade"
+      picture: Skill_Placeholder
+      power: INT x 530%
+      ap: 35
+      maxHits: 6
+
+  rush:
+    name: "Bride Kiss?"
+    picture: Rush_Placeholder
+    effects: 
+      - desc: Critical chance +60%, Critical DMG +30% (party/20s)
+    power: INT x 4500%
+    maxHits: 1
