@@ -7170,3 +7170,70 @@
       - desc: Critical Chance and Critical DMG + 50% (party/20s)
     power: ATK x 5500%
     maxHits: 5
+
+- name: Caleen Keemosn (Bridal)
+  cat: jp
+  picture: Bridal_Caleen
+  weapon: scythe
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 14175
+    atk: 2494
+    int: 1537
+    def: 1747
+    hit: 1239
+    grd: 959
+
+  talents:
+    - name: "The Image Reflected in the Fire Fox"
+      effects:
+        - desc: DMG dealt at 100% HP, +75% at 100% HP and HC ≥ 150 (party)
+        - desc: Drain 2% on skills at SC ≥ 3 (self)
+    - name: "Minatsuki's Tears"
+      effects:
+        - desc: Skill1 DMG +150%/250% at SC ≥ 3/5. After using skill1, skill1 AP cost +300% (10s)
+        - desc: After using skill1 Recover 100 AP to the party
+    - name: "Hometown Reminiscenes"
+      effects:
+        - desc: After using skill2, skill3 or skill4 Recover AP to the party
+        - desc: After using skill1 AP cost -60% (party/5s)
+    - name: "Untill Vow Degree to Wadatsumi"
+      effects:
+        - desc: Maintain CB for 1 dodge
+        - desc: AP cost -80% on dodge
+        - desc: Recover 100% AP after perfct dodge
+        - desc: ATK +45% at HC ≥ 200
+    
+  skills:
+    - name: "Red Perfume"
+      picture: Skill_Placeholder
+      power: ATK x 1100%
+      ap: 45
+      maxHits: 1
+    - name: "Decapitation"
+      picture: Skill_Placeholder
+      power: ATK x 210%
+      ap: 20
+      maxHits: 2
+    - name: "Extinguished Wings / Thoughts"
+      picture: Skill_Placeholder
+      power: ATK x 180%
+      ap: 14
+      maxHits: 12
+    - name: "Purgatory"
+      picture: Skill_Placeholder
+      Element: Fire
+      power: ATK x 180%
+      ap: 14
+      maxHits: 5
+
+  rush:
+    name: "Twin Fox Dream Flower"
+    picture: Rush_Placeholder
+    effects:
+      - desc: ATK DMG taken +50%, INT DMG taken +30% (enemies/20s)
+    power: ATK x 5500%
+    maxHits: 7
