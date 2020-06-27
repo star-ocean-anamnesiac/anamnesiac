@@ -39,6 +39,8 @@ weapons:
     name: Staff
   - id: tome
     name: Tome
+  - id: whip
+    name: Whip
 
 accessories:
   - id: all
