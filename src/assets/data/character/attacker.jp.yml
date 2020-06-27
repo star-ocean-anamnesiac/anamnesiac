@@ -10818,3 +10818,141 @@
       - desc: HC +100 | Critical chance +60% (party/20s)
     power: ATK x 5500%
     maxHits: 10
+
+- name: Heath Bureau
+  cat: jp
+  picture: Heath_Bureau
+  weapon: dualswords
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 18900
+    atk: 3704
+    int: 1537
+    def: 1878
+    hit: 1120
+    grd: 833
+
+  talents:
+    - name: "Lassa Lt. Gen. Ensign"
+      effects:
+        - desc: Effect of AF increased to +45% at HC ≥ 150
+        - desc: After triggering Blindeside, AP -80% and ATK +35% (self/20s)
+    - name: "Armed With Pirates"
+      effects:
+        - desc: Rush Gauge +100% at mission start (party)
+        - desc: AP -30% at HC ≥ 100, -40% at HC ≥ 200 (party)
+    - name: "Hidden Truth of Genes"
+      effects:
+        - desc: Uppon triggering Blindside, recover 100% HP
+        - desc: Able to overheal self for +15000 HP
+        - desc: Able to airdodge
+    - name: "Father's Letter"
+      effects:
+        - desc: ATK +30%, HP +20% (stat page)
+        - desc: CB will be maintained after 1 non-consecutive dodge
+    - name: "Blindside [Mastery]"
+      effects:
+        - desc: DMG taken -100% durring Blindside trigger
+        - desc: CA crit null, CA skip to 200%
+
+  skills:
+    - name: "Piercing Todoroki"
+      picture: Skill_Placeholder
+      power: ATK x 390% 
+      ap: 22
+      maxHits: 2
+    - name: "Stinger Edge・AF"
+      picture: Skill_Placeholder
+      power: ATK x 300%
+      ap: 18
+      maxHits: 6
+    - name: "Raging Strike Todoroki"
+      picture: Skill_Placeholder
+      power: ATK x 520%
+      ap: 29
+      maxHits: 1
+    - name: "Composite Arts"
+      picture: Skill_Placeholder
+      power: ATK x 870%
+      ap: 34
+      maxHits: 7
+
+  rush:
+    name: "Close Range Breaker"
+    picture: Rush_Placeholder
+    effects:
+      - desc: ATK DMG +60%, INt DMG +40% (party/20s)
+    power: ATK x 7000%
+    maxHits: 16
+
+- name: Laevonia
+  cat: jp
+  picture: Laevonia
+  weapon: whip
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15540
+    atk: 2704
+    int: 1589
+    def: 1916
+    hit: 1155
+    grd: 833
+
+  talents:
+    - name: "Pirate Family"
+      effects:
+        - desc: ATK +40%, +80% at 100% HP (party)
+        - desc: 90% chance of surviving a lethal attack when at 10% of max HP or more
+    - name: "Secret of the Wings"
+      effects:
+        - desc: Assists use +2
+        - desc: Rush regen  3%/3s (party)
+        - desc: AP regen +100% (party)
+    - name: "Mental Wounds"
+      effects:
+        - desc: Skill3 (Spiral Whip) Applies AP -60% (self/5s)
+        - desc: Skill3 (Spiral Whip) Applies AP -30% to the party 30s
+    - name: "Original Spacecraft and dreams"
+      effects:
+        - desc: Upon trigering Vanguard, ATK DMG +20% (self/10s)
+        - desc: Drain on skills at SC ≥ 3 (self)
+    - name: "Vanguard [Mastery]"
+      effects:
+        - desc: Upon triggering Vanguard, ATK DMG + 30% (self/3s)
+        - desc: Antiflinch while CA, nullify CA crit penalty
+
+  skills:
+    - name: "Dual Whip"
+      picture: Skill_Placeholder
+      power: ATK x 340% 
+      ap: 23
+      maxHits: 2
+    - name: "Thousand Whip"
+      picture: Skill_Placeholder
+      power: ATK x 490%
+      ap: 26
+      maxHits: 8
+    - name: "Spiral Whip"
+      picture: Skill_Placeholder
+      power: ATK x 520%
+      ap: 28
+      maxHits: 1
+    - name: "Wing Splitter"
+      picture: Skill_Placeholder
+      power: ATK x 970%
+      ap: 48
+      maxHits: 2
+
+  rush:
+    name: "Heaven and Hell"
+    picture: Rush_Placeholder
+    effects:
+      - desc: Critical chance +100% (party/10s)
+    power: ATK x 5000%
+    maxHits: 36
