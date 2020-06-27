@@ -40,7 +40,7 @@ weapons:
   - id: tome
     name: Tome
   - id: whip
-    name: Wome
+    name: Whip
 
 accessories:
   - id: all
