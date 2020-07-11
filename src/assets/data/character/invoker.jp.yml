@@ -2295,15 +2295,16 @@
   talents:
     - name: "Sage's Wisdom"
       effects: 
-        - desc: INT +20%
+        - desc: INT +30%, +50% at 100% HP (party)
           all: true
           meta:
             priority: 1
             buff: INT
             buffValue: 20
+        - desc: Fill 100% rush gauge at mission start (party)
     - name: "Affection for Goddess"
       effects: 
-        - desc: Converts 50% of INT to ATK
+        - desc: Converts 55% of INT to ATK
           all: Attackers/Sharpshooters/Defenders
           meta:
             priority: 1
@@ -2323,6 +2324,8 @@
             priority: 1
             buff: Crit Rate
             buffValue: 30
+        - desc: skill3 applies INT +30% (10s)
+        - desc: skill2 applies Crit chance +30% (12s)
     - name: "Cruel Egoist"
       shortEffects: AP cost -40% and symbology cast time -40% when skill chain is >3
       effects: 
@@ -2338,12 +2341,13 @@
             buff: Cast Time Reduction
             buffCondition: Skill Chain 3+
             buffValue: 40
+        - desc: AP Cost -40% and Cast time -40% at SC ≥ 3
 
   skills:
     - name: "Prismatic Missile"
       picture: Prismatic_Missile
       element: Light
-      power: INT x 670%
+      power: INT x 1330%
       ap: 35
       maxHits: 11
     - name: "Mystic Cross"
@@ -2361,7 +2365,7 @@
     - name: "Shadow Servant"
       picture: Shadow_Servant
       element: Dark
-      power: INT x 720%
+      power: INT x 1440%
       ap: 36
       maxHits: 4
 
@@ -2385,7 +2389,7 @@
           priority: 1
           buff: Cast Time Reduction
           buffValue: 80
-    power: INT x 4000%
+    power: INT x 6000%
     maxHits: 9
 
 
@@ -3246,8 +3250,8 @@
 
   stats:
     hp: 15540
-    atk: 2961
-    int: 2990
+    atk: 3230
+    int: 3262
     def: 1916
     hit: 1141
     grd: 833
@@ -3256,9 +3260,10 @@
     - name: "Light of Purity"
       effects: 
         - desc: Imbues attacks with light
+        - desc: Rush regen +3%/3s (party)
     - name: "Frei's Prophecy"
       effects: 
-        - desc: ATK/INT +20%
+        - desc: ATK/INT +30%, +60% at short range
           all: true
           meta:
             priority: 4
@@ -3290,7 +3295,7 @@
             buffValue: 25
         - desc: Rush combo damage +30% when hitcount is >150       
     - name: "Goddess of Good Crops"
-      shortEffects: ATK/INT +10%
+      shortEffects: ATK/INT +20%
       effects:
         - desc: ATK +10%
           meta:
@@ -3309,7 +3314,7 @@
     - name: "Crimson Strike"
       picture: Crimson_Strike
       element: Fire
-      power: INT x 280%
+      power: INT x 740%
       ap: 21
       maxHits: 5
     - name: "Smackdown"
@@ -3319,7 +3324,7 @@
       maxHits: 5
     - name: "Heavenly Punishment"
       picture: Heavenly_Punishment
-      power: ATK x 910%
+      power: ATK x 1590%
       ap: 32
       maxHits: 10
       
@@ -3340,9 +3345,8 @@
           priority: 1
           buff: Crit Rate
           buffValue: 30
-    power: INT x 4000%
-    maxHits: 6     
-    
+    power: INT x 6000%
+    maxHits: 6      
 
 - name: Mystina
   cat: jp
