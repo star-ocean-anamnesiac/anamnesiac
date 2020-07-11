@@ -7302,7 +7302,7 @@
 
   rush:
     name: "Asternish Grits"
-    picture: Skill_Placeholder
+    picture: Rush_Placeholder
     effects:
       - desc: ATK DMG taken +50%, INT DMG taken +30% (enemies)
     power: ATK x 5000%
