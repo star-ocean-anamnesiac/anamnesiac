@@ -7238,3 +7238,72 @@
       - desc: ATK DMG taken +50%, INT DMG taken +30% (enemies/20s)
     power: ATK x 5500%
     maxHits: 7
+
+- name: Rufus
+  cat: jp
+  picture: Rufus
+  weapon: bow
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15750
+    atk: 2468
+    int: 1563
+    def: 1575
+    hit: 1253
+    grd: 924
+
+  talents:
+    - name: "Wandering Bow"
+      effects:
+        - desc: DMG dealt +40%, +75% at 100% HP (party)
+        - desc: DMG dealt +90% durring order countdown (party)
+        - desc: Fill 100% rush gauge at mission start
+    - name: "Heart for Release"
+      effects:
+        - desc: Order +1 at start of the battle (party)
+        - desc: HP regen 30%/4s and AP -70% durring order countdown (party)
+        - desc: Order gain +30% at 100% HP
+    - name: "Body That Has Stopped Growing"
+      effects:
+        - desc: Recover 15% HP to the party after using Thunder Fall (skill3)
+        - desc: Recover AP to the party after using Thunder Break (skill4)
+    - name: "God's Vessel"
+      effects:
+        - desc: Maintain CB after non-consecutive dodge 
+        - desc: AP -80% on dodge
+        - desc: Crit chance + 30% at SC ≥ 3
+    
+  skills:
+    - name: "Aiming Wing Sharp"
+      picture: Skill_Placeholder
+      power: ATK x 320%
+      ap: 21
+      maxHits: 9
+    - name: "Rating Thorn Sharp"
+      picture: Skill_Placeholder
+      power: ATK x 500%
+      ap: 25
+      maxHits: 10
+    - name: "Thunder Fall"
+      picture: Skill_Placeholder
+      element: Lightning
+      power: ATK x 600%
+      ap: 22
+      maxHits: 
+    - name: "Thunder Break"
+      picture: Skill_Placeholder
+      element: Lightning
+      power: ATK x 1350%
+      ap: 29
+      maxHits: 3
+
+  rush:
+    name: "Asternish Grits"
+    picture: Rush_Placeholder
+    effects:
+      - desc: ATK DMG taken +50%, INT DMG taken +30% (enemies)
+    power: ATK x 5000%
+    maxHits: 9

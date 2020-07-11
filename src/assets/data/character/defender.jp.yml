@@ -4013,3 +4013,74 @@
       - desc: ATK DMG +60%, INT DMG +40% (party/20s)
     power: ATK x 4500%
     maxHits: 6
+
+- name: Alicia
+  cat: jp
+  picture: Alicia
+  weapon: ohs
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 20265
+    atk: 2468
+    int: 1589
+    def: 2520
+    hit: 840
+    grd: 2036
+
+  talents:
+    - name: "Princess od the Lost City"
+      effects:
+        - desc: HP +60% (party)
+        - desc: No flinching when taking 20% DMG (party)
+    - name: "The Battle Maiden in Her Body"
+      effects:
+        - desc: Single target DMG +40% (party)
+        - desc: Rush Gauge increases by 3%/3s (party)
+        - desc: AP recovery +100% (party)
+        - desc: When Alicia triggers Blindside D, apply single target DMG (party/10s)
+    - name: "Overcoming Loss"
+      effects:
+        - desc: Taunt +3
+        - desc: When Alicia triggers Blindside D, recover 50% HP and AP to the party
+    - name: "Prepare to Sacrifice Yourself"
+      effects:
+        - desc: After Triggering Blindside D, apply ATK DMG +30% and AP -70% (self/ 10s)
+        - desc: DMG taken -40% whle attacking (self)
+        - desc: Able to air dodge
+    - name: "Blindside D [Mastery]"
+      effects:
+        - desc: DMG taken -100% durring Blindside trigger
+        - desc: CA crit null, CA skip to 200%
+
+  skills:
+    - name: "Turn Around"
+      picture: Skill_Placeholder
+      power: ATK x 320%
+      ap: 17
+      maxHits: 1
+    - name: "Glowing Earrings"
+      picture: Skill_Placeholder
+      power: ATK x 200%
+      ap: 15
+      maxHits: 3
+    - name: "Cutting Slash"
+      picture: Skill_Placeholder
+      power: ATK x 420%
+      ap: 23
+      maxHits: 4
+    - name: "Sky High Edge"
+      picture: Skill_Placeholder
+      power: ATK x 1180%
+      ap: 41
+      maxHits: 1
+
+  rush:
+    name: "Tensho Nibelen Valesti"
+    picture: Rush_Placeholder
+    effects:
+      - desc: Critical chance +50% and Critical DMG +50% (party/20s)
+    power: ATK x 5000%
+    maxHits: 7
