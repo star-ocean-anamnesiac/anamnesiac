@@ -2797,13 +2797,13 @@
   talents:
     - name: "Valkyrie Pride"
       effects:
-        - desc: Damage dealt +20%
+        - desc: Damage dealt +40%, +80% at HC ≥ 150
           all: true
           meta:
             priority: 1
             buff: Damage
             buffValue: 20
-        - desc: AP recovery +30%
+        - desc: AP recovery +100%
           all: true
           meta:
             priority: 1
@@ -2819,12 +2819,13 @@
             buffValue: 10
     - name: "Loki's Soul"
       effects:
-        - desc: AP cost -30% when skill chain is >3
+        - desc: AP cost -40% when skill chain is >3, -50 when skill chain is >4
           meta:
             priority: 1
             buff: AP Cost Reduction
             buffCondition: Skill Chain 3+
             buffValue: 30
+        - desc: 5% Double hit on skills (party)
     - name: "Pure White Feather Decoration"
       shortEffects: Damage taken +30% when hit by Killing Thorn (Enemies/8s)
       effects: 
@@ -2839,7 +2840,7 @@
   skills:
     - name: "Volcano Shoot"
       picture: Heavenly_Flight
-      power: ATK x 510%
+      power: ATK x 680%
       ap: 33
       maxHits: 8
     - name: "Aiming Wing"
@@ -2854,7 +2855,7 @@
       maxHits: 5
     - name: "Killing Thorn"
       picture: Killing_Thorn
-      power: ATK x 430%
+      power: ATK x 570%
       ap: 36
       maxHits: 10
 
@@ -2869,7 +2870,7 @@
           priority: 1
           buff: Elemental Damage
           buffValue: 30
-    power: ATK x 3500%
+    power: ATK x 5000%
     maxHits: 7
 
 - name: Edge Maverick (Official)
