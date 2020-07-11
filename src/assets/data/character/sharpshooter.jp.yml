@@ -7291,7 +7291,7 @@
       picture: Skill_Placeholder
       element: Lightning
       power: ATK x 600%
-      ap: 
+      ap: 22
       maxHits: 
     - name: "Thunder Break"
       picture: Skill_Placeholder
