@@ -1713,7 +1713,7 @@
             buffValue: 30
     - name: "Steel Will, Strong Heart"
       effects: 
-        - desc: Damage taken -20%
+        - desc: Damage taken -20%, -40% at HC ≥ 100
           all: true
           meta:
             priority: 3
@@ -1721,9 +1721,11 @@
             buffValue: 20
         - desc: No flinching when taking damage of 25% of max HP or less
           all: true
+        - desc: Ap -70% durring order countdown
+          all: true
     - name: "Veil of Dusk"
       effects: 
-        - desc: Single target damage +20%
+        - desc: Single target damage +25%, +50% at HC 150
           all: true
           meta:
             priority: 3
@@ -1770,7 +1772,7 @@
       maxHits: 2
     - name: "Entrapment"
       picture: Crime_Attractor
-      power: ATK x 600%
+      power: ATK x 1290%
       ap: 32
       maxHits: 2
       
@@ -1793,7 +1795,7 @@
           priority: 1
           buff: Crit Damage
           buffValue: 30
-    power: ATK x 4000%
+    power: ATK x 6000%
     maxHits: 7
 
 

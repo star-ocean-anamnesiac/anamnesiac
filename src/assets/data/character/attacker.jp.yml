@@ -5544,9 +5544,12 @@
     - name: "Dauntless Courage"
       effects: 
         - desc: Damage dealt +100% by Dead End when using charge assault
+        - desc: DMG taken +40/55% at 0/150+ HC (enemies)
     - name: "Reckless"
       effects: 
-        - desc: Recovers 15% of max HP every 3 seconds during charge assault standby
+        - desc: Recovers 20% of max HP every 3 seconds during charge assault standby
+        - desc: Anti flinch and DMG taken -40% while attacking (self)
+        - desc: ATK +20% at HC ≥ 150
     - name: "Will of Loyalty"
       effects: 
         - desc: 95% chance of surviving a lethal attack when at 30% of max HP or more
@@ -5579,7 +5582,7 @@
       maxHits: 4
     - name: "Dead End"
       picture: Dead_End
-      power: ATK x 800%
+      power: ATK x 860%
       ap: 48
       maxHits: 1
     - name: "Spinning Back-Knuckle"
@@ -5604,7 +5607,7 @@
           priority: 1
           buff: Crit Rate
           buffValue: 100
-    power: ATK x 5000%
+    power: ATK x 7000%
     maxHits: 11
 
 

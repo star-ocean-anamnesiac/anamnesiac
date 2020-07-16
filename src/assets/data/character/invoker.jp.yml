@@ -3368,7 +3368,7 @@
   talents:
     - name: "Wicked Tongue"
       effects: 
-        - desc: ATK/INT damage dealt +40%
+        - desc: ATK/INT damage dealt +55%
           all: true
           meta:
             priority: 1
@@ -3376,14 +3376,14 @@
               - ATK Damage
               - INT Damage
             buffValue: 40
-        - desc: Critical hit chance +20% when HP is 100%
+        - desc: Critical hit chance +25%
           all: true
           meta:
             priority: 1
             buff: Crit Rate
             buffCondition: HP is 100%
             buffValue: 20
-        - desc: Critical damage dealt +20% when HP is 100%
+        - desc: Critical damage dealt +25%
           all: true
           meta:
             priority: 3
@@ -3400,12 +3400,13 @@
         - desc: Recovers 50% of max HP every 20 seconds
     - name: "Voluptuous Magician"
       effects: 
-        - desc: AP cost -40% when skill chain is >3
+        - desc: AP cost -40% when skill chain is >3, -50% when skill chain is >4
           meta:
             priority: 1
             buff: AP Cost Reduction
             buffCondition: Skill Chain 3+
             buffValue: 40
+        - desc: Assist +1 (party)
     - name: "Envy Towards God Realm"
       shortEffects: INT +30% and HP +10%
       effects: 
@@ -3436,13 +3437,13 @@
     - name: "Fire Storm"
       picture: Volcanic_Burst
       element: Fire
-      power: INT x 1080%
+      power: INT x 1680%
       ap: 52
       maxHits: 13
     - name: "Sacred Javelin"
       picture: Sacred_Javelin
       element: Light
-      power: INT x 1080%
+      power: INT x 1680%
       ap: 52
       maxHits: 14
 
@@ -3461,7 +3462,7 @@
           priority: 1
           buff: AP Recovery
           buffValue: 50
-    power: INT x 3500%
+    power: INT x 5000%
     maxHits: 6
 
 - name: Reimi Saionji (Official)
