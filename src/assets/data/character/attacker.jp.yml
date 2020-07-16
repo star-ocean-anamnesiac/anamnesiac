@@ -6229,7 +6229,7 @@
   talents:
     - name: "Keen Blade of Frost"
       effects: 
-        - desc: ATK +20%
+        - desc: ATK +30%
           all: true
           meta:
             priority: 2
@@ -6260,9 +6260,10 @@
             buff: AP Recovery
             buffCondition: HP is 100%
             buffValue: 100
+        - desc: Long range to short range Critical rate +30% at charge assault (self / 10 seconds)
     - name: "Love for Her Master"
       effects: 
-        - desc: ATK +20% after using Gliding Edge (10s)
+        - desc: ATK +30% after using Gliding Edge (10s)
           duration: 10
           meta:
             priority: 2
@@ -6286,19 +6287,19 @@
       highlight: true
     - name: "Mirror Slice"
       picture: Mirror_Slice
-      power: ATK x 490%
+      power: ATK x 760%
       ap: 34
       maxHits: 6
       highlight: true
     - name: "Quick Thrust"
       picture: Quick_Thrust
-      power: ATK x 250%
+      power: ATK x 490%
       ap: 18
       maxHits: 2
     - name: "Lightning Slash"
       picture: Thunderfire_Slash
       element: Lightning
-      power: ATK x 360%
+      power: ATK x 560%
       ap: 29
       maxHits: 1
 
@@ -6313,10 +6314,10 @@
           priority: 1
           buff: AP Cost Reduction
           buffValue: 30
-      - desc: Recovers 10% of max HP every 3 seconds
+      - desc: Recovers 30% of max HP every 3 seconds
         duration: 20
         all: true
-    power: ATK x 4500%
+    power: ATK x 5000%
     maxHits: 14
 
 
