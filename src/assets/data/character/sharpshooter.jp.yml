@@ -7307,3 +7307,74 @@
       - desc: ATK DMG taken +50%, INT DMG taken +30% (enemies)
     power: ATK x 5000%
     maxHits: 9
+
+- name: Verda Kleiman (Summer)
+  cat: jp
+  picture: Summer_Verda
+  weapon: dagger
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 16884
+    atk: 2978
+    int: 1575
+    def: 1759
+    hit: 1260
+    grd: 924
+
+  talents:
+    - name: "To The Sea That I Have Not Yet Seen"
+      effects:
+        - desc: ATK/INT DMG +45% at 100% HP (party)
+        - desc: ATK/INT DMG +75% at 100% HP and 200+ Hits (party)
+    - name: "Everlasting Projection"
+      effects:
+        - desc: 3%/3s Rush Regen
+        - desc: Hitcount Timer +3s (Party)
+        - desc: Skill4 Applies ATK -15% and INT -15% (enemies/10s)
+    - name: "Safety Float"
+      effects:
+        - desc: After firing Multi-Lock, Restore 10% HP, Rush DMG +50% at 250+ Hits (self)
+        - desc: Skill4 Applies DMG Taken -100% (1s/self)
+    - name: "Dreamer"
+      effects:
+        - desc: ATK +20%, HP +20% (stat page)
+        - desc: ATK +20% at HC ≥ 200 Hits
+        - desc: Able to Airdodge (self)
+        - desc: Skill4 has a 30% chance to recover 25AP to the party
+    - name: "Multi Lock [Mastery]"
+      effects:
+        - desc: Charge Assault Fire Light Bullets (ATKx250%/ Max Charge 5)
+        - desc: Recover AP when firing multi-lock, Nullify CA Crit penalty
+
+  skills:
+    - name: "Knives Shoot"
+      picture: Skill_Placeholder
+      power: ATK x 310% 
+      ap: 12
+      maxHits: 2
+    - name: "Stream Edge"
+      picture: Skill_Placeholder
+      power: ATK x 660%
+      ap: 23
+      maxHits: 10
+    - name: "Hunting Edge"
+      picture: Skill_Placeholder
+      power: ATK x 510%
+      ap: 17
+      maxHits: 4
+    - name: "Cyclone Edge Arts"
+      picture: Skill_Placeholder
+      power: ATK x 730%
+      ap: 25
+      maxHits: 4
+
+  rush:
+    name: "Rocket Float Slider"
+    picture: Rush_Placeholder
+    effects:
+      - desc: AP cost -80% (self/10s), AP cost -80% (party/5s)
+    power: ATK x 6000%
+    maxHits: 11
