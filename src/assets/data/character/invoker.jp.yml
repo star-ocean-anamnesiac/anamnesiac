@@ -5788,7 +5788,7 @@
     - name: "Bouquet That Delivers Happiness"
       effects:
         - desc: Convert 70% ATK to INT (Invokers/Healers)
-        - desc: Convert &0% INT to ATK (Attackers/Sharpshooters/Defenders)
+        - desc: Convert 70% INT to ATK (Attackers/Sharpshooters/Defenders)
     - name: "Something Blue Miracle"
       effects:
         - desc: Echo by skills 5% (party)
