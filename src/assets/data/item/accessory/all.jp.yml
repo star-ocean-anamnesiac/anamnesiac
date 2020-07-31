@@ -2113,7 +2113,7 @@
 - name: Bride's Flower Crown
   cat: 'jp'
   star: 5
-  picture: Placeholder_Icon
+  picture: Bride_Flower_Crown
   def: 728
   factors:
     - desc: INT damage dealt +10% during charge assault
