@@ -5169,19 +5169,19 @@
     - name: "Energy Arrow"
       picture: Skill_Placeholder
       element: Light
-      power: INT x 250
+      power: INT x 250%
       ap: 14
       maxHits: 4
     - name: "Acid Drain"
       picture: Skill_Placeholder
       element: Light
-      power: INT x 210
-      ap: 143
+      power: INT x 210%
+      ap: 14
       maxHits: 6
     - name: "Star Light"
       picture: Skill_Placeholder
       element: Light
-      power: INT x 990
+      power: INT x 990%%
       ap: 34
       maxHits: 1
     - name: "Luna Light"
@@ -5836,3 +5836,72 @@
       - desc: Critical chance +60%, Critical DMG +30% (party/20s)
     power: INT x 4500%
     maxHits: 1
+
+- name: Welch Vineyard (Summer)
+  cat: jp
+  picture: Summer_Welch
+  weapon: arm
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15750
+    atk: 2651
+    int: 3214
+    def: 1930
+    hit: 1148
+    grd: 840
+
+  talents:
+    - name: "Midsummer Rocket Stream"
+      effects:
+        - desc: INT +30, +60% at HC ≥ 150 (Party)
+        - desc: Convert 60% INT to ATK (Attackers/Defenders/Sharpshooters)
+    - name: "Masterpiece Blueprint"
+      effects:
+        - desc: Start Mission with 100% Rush Gauge (Party)
+        - desc: CA Skip 200%, AP -50% at SC ≥ 4 (Self)
+    - name: "Midsummer Sea Champion"
+      effects:
+        - desc: Recover 10% HP when CAing from short to long range
+        - desc: 90% chance of surviving a lethal attack when at 10% of max HP or more
+    - name: "Weapon Personalization"
+      effects:
+        - desc: INT +20% (Stat Page), INT +20% After triggering Vanguard (Self/10s)
+        - desc: When an enemy attack hits you, Recover 50AP and gain 60% ATK > INT Conversion (Self/10s)
+    - name: "Vanguard [Mastery]"
+      effects:
+        - desc: When CAing from L to S, apply DMG Taken +20% to all Enemies (3s)
+        - desc: Nullify CA crit penalty
+        - desc: Anti flinch while CA
+
+  skills:
+    - name: "Arm Punch!"
+      picture: Skill_Placeholder
+      power: INT x 300%
+      ap: 18
+      maxHits: 1
+    - name: "Arm Bomber!"
+      picture: Skill_Placeholder
+      power: INT x 380%
+      ap: 29
+      maxHits: 10
+    - name: "Cat Surprise!"
+      picture: Skill_Placeholder
+      power: INT x 280%
+      ap: 17
+      maxHits: 3
+    - name: "Scrap Smasher!!"
+      picture: Skill_Placeholder
+      power: INT x 840%
+      ap: 32
+      maxHits: 7
+
+  rush:
+    name: "Hydralic Blaster!!"
+    picture: Rush_Placeholder
+    effects:
+      - desc: ATK/INT DMG dealt +50% (party/20s)
+    power: INT x 6000%
+    maxHits: 7
