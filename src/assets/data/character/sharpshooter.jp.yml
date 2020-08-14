@@ -7378,3 +7378,73 @@
       - desc: AP cost -80% (self/10s), AP cost -80% (party/5s)
     power: ATK x 6000%
     maxHits: 11
+
+- name: Yrian Luxter (Summer)
+  cat: jp
+  picture: Summer_Yrian
+  weapon: gun
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15960
+    atk: 2508
+    int: 1537
+    def: 1563
+    hit: 1239
+    grd: 931
+
+  talents:
+    - name: "Adaptation to Midsummer"
+      effects:
+        - desc: DMG dealt +40%, 65%/90% at HC ≥ 100/250 (party)
+        - desc: Anti flinch when taking damage < 20% HP
+    - name: "Enjoying, But Not Floating"
+      effects:
+        - desc: Regen 2% rush/1s durring CA standby
+        - desc: Able to air dodge
+        - desc: Recover 50AP to the party when triggering BlindsideA
+    - name: "How To Deal With Thermal"
+      effects:
+        - desc: AP -50% to the Party when triggering BlindsideA (10s)
+        - desc: While holding Aggro, Crit +30%. Skill1 Recovers 10% HP
+    - name: "Personalized Weapon"
+      effects:
+        - desc: When triggering BlindsideA, recover 100% HP and gain ATK +20% (Self/15s)
+        - desc: Able to Overheal, Max Overheal of +17000HP (Self)
+    - name: "BlindsideA [Mastery]"
+      effects:
+        - desc: DMG taken -100% on BlindsideA trigger
+        - desc: Anti flinch while CA
+        - desc: CA skip 200%
+
+  skills:
+    - name: "Beachside Gunslinger"
+      picture: Skill_Placeholder
+      power: ATK x 1170% 
+      ap: 35
+      maxHits: 12
+    - name: "Surf Liner"
+      picture: Skill_Placeholder
+      power: ATK x 160%
+      ap: 13
+      maxHits: 3
+    - name: "Step Shooting"
+      picture: Skill_Placeholder
+      power: ATK x 290%
+      ap: 13
+      maxHits: 3
+    - name: "Bullet Wave"
+      picture: Skill_Placeholder
+      power: ATK x 320%
+      ap: 11
+      maxHits: 3
+
+  rush:
+    name: "Hydralic Overdrive Welch Development"
+    picture: Rush_Placeholder
+    effects:
+      - desc: Single Target DMG +70% (party/20s)
+    power: ATK x 5000%
+    maxHits: 8
