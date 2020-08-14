@@ -5169,19 +5169,19 @@
     - name: "Energy Arrow"
       picture: Skill_Placeholder
       element: Light
-      power: INT x 250
+      power: INT x 250%
       ap: 14
       maxHits: 4
     - name: "Acid Drain"
       picture: Skill_Placeholder
       element: Light
-      power: INT x 210
-      ap: 143
+      power: INT x 210%
+      ap: 14
       maxHits: 6
     - name: "Star Light"
       picture: Skill_Placeholder
       element: Light
-      power: INT x 990
+      power: INT x 990%%
       ap: 34
       maxHits: 1
     - name: "Luna Light"
