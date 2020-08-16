@@ -6113,8 +6113,8 @@
   star: 5
 
   stats:
-    hp: 17441
-    atk: 3276
+    hp: 18233
+    atk: 3413
     int: 1510
     def: 1983
     hit: 1127
@@ -6123,36 +6123,36 @@
   talents:
     - name: "Mischievous Smile"
       effects: 
-        - desc: ATK +20%
+        - desc: ATK +35%
           all: true
           meta:
             priority: 1
             buff: ATK Damage
-            buffValue: 20
+            buffValue: 35
     - name: "Tailed Swimmer"
-      shortEffects: Stun rate +80% (Attackers/Defenders) and stun rate +40% (Sharpshooters)
+      shortEffects: Stun rate +90% (Attackers/Defenders) and stun rate +50% (Sharpshooters)
       effects: 
-        - desc: Stun rate +80%
+        - desc: Stun rate +90%
           all: Attackers
           meta:
             priority: 1
             buff: Stun Rate
             buffRole: attacker
-            buffValue: 80
-        - desc: Stun rate +80%
+            buffValue: 90
+        - desc: Stun rate +90%
           all: Defenders
           meta:
             priority: 1
             buff: Stun Rate
             buffRole: defender
-            buffValue: 80
-        - desc: Stun rate +40%
+            buffValue: 90
+        - desc: Stun rate +50%
           all: Sharpshooters
           meta:
             priority: 1
             buff: Stun Rate
             buffRole: sharpshooter
-            buffValue: 40
+            buffValue: 50
     - name: "Heraldry Parka"
       effects: 
         - desc: AP cost -15% when Summer Roddick is at short range
@@ -6163,15 +6163,15 @@
             buffCondition: Summer Roddick is at short range
             buffValue: 15
     - name: "Hibiscus Boy"
-      shortEffects: ATK 20% and HP +10%
+      shortEffects: ATK 25% and HP +15%
       effects: 
-        - desc: ATK +20%
+        - desc: ATK +25%
           all: false
           meta:
             priority: 1
             buff: ATK
-            buffValue: 20
-        - desc: HP +10%
+            buffValue: 25
+        - desc: HP +15%
           all: false
   
   skills:
@@ -6192,7 +6192,7 @@
       maxHits: 2
     - name: "Seven Stars Double Slash"
       picture: Seven_Star_Double_Slash
-      power: ATK x 760%
+      power: ATK x 950%
       ap: 28
       maxHits: 8
       
@@ -6208,7 +6208,7 @@
           priority: 1
           buff: ATK
           buffValue: 80
-    power: ATK x 4500%
+    power: ATK x 5000%
     maxHits: 10
 
 
@@ -6785,16 +6785,16 @@
             priority: 1
             buff: ATK
             buffValue: 45
-        - desc: ATK +60% at short range
+        - desc: ATK +70% at short range
           all: true
           meta:
             priority: 1
             buff: ATK
             buffCondition: Short Range
-            buffValue: 60
+            buffValue: 70
     - name: "A Leader's Relaxation"
       effects: 
-        - desc: Absorbs 10% of damage dealt by normal attacks as HP
+        - desc: Absorbs 15% of damage dealt by normal attacks as HP
           all: true
     - name: "Alternation (Beach)"
       effects: 
@@ -6838,7 +6838,7 @@
     - name: "Gran Aqua Zapper"
       picture: Gran_Aqua_Zapper
       element: Ice
-      power: ATK x 550%
+      power: ATK x 610%
       ap: 38
       maxHits: 1
       
@@ -6852,7 +6852,7 @@
           priority: 3
           buff: AP Cost Reduction
           buffValue: 60
-    power: ATK x 4000%
+    power: ATK x 4500%
     maxHits: 8
     
 - name: Anne Patriceani (Awakened)
@@ -9337,8 +9337,8 @@
   star: 5
 
   stats:
-    hp: 18648
-    atk: 3307
+    hp: 19425
+    atk: 3445
     int: 1523
     def: 1969
     hit: 1120
@@ -9347,7 +9347,9 @@
   talents:
     - name: "Star Ocean Surfer"
       effects: 
-        - desc: Buff Effect of Fin Edge Growth increases to ATK +40% when hitcount is >200
+        - desc: Buff Effect of Fin Edge Growth increases to ATK +50% when hitcount is >200
+        - desc: No Flinching during charge assault
+        - desc: DMG taken -100% when triggering Sight Out A
     - name: "Perfect Take-Off"
       effects: 
         - desc: Hitcount timer +1.5s
@@ -9388,16 +9390,16 @@
             buffValue: 150
     - name: "Yearning for the Azure Sea"
       effects: 
-        - desc: ATK +20%
+        - desc: ATK +25%
           meta:
             priority: 1
             buff: ATK
-            buffValue: 20
-        - desc: HP +20%
+            buffValue: 25
+        - desc: HP +25%
           meta:
             priority: 1
             buff: HP
-            buffValue: 20
+            buffValue: 25
         - desc: ATK +30% when hitcount is >300
           meta:
             priority: 1
@@ -9425,7 +9427,7 @@
       maxHits: 6
     - name: "Fin Edge Growth"
       picture: Skill_Placeholder
-      power: ATK x 270%
+      power: ATK x 280%
       ap: 20
       maxHits: 2
       notes: ATK +20% (Party/10s)
@@ -9435,13 +9437,13 @@
         buffValue: 20
     - name: "Vortex Airborne"
       picture: Skill_Placeholder
-      power: ATK x 1020%
+      power: ATK x 1050%
       ap: 46
       maxHits: 8
     - name: "Top-turn Slide"
       picture: Skill_Placeholder
       element: Ice
-      power: ATK x 990%
+      power: ATK x 1020%
       ap: 38
       maxHits: 9
 
@@ -9460,7 +9462,7 @@
           priority: 1
           buff: ATK
           buffValue: 80
-    power: ATK x 5000%
+    power: ATK x 6000%
     maxHits: 4
 
 - name: Tika (Summer)
@@ -9482,21 +9484,21 @@
   talents:
     - name: "Dreaming Family Trip"
       effects:
-        - desc: ATK +45%, 60%, 70% at 0, 150, 250 HIT
+        - desc: ATK +50%, 70%, 80% at 0, 150, 250 HIT
           all: true
           meta:
             priority: 1
             buff: ATK
             buffCondition: Hit Count > 250
-            buffValue: 70
+            buffValue: 80
     - name: "Camellia Flower to Attach to Hair"
       effects:
-        - desc: AP Recovery +50%
+        - desc: AP Recovery +100%
           all: true
           meta:
             priority: 1
             buff: AP Recovery
-            buffValue: 50
+            buffValue: 100
         - desc: AP Cost -20%
           all: true
           meta:
@@ -9506,7 +9508,8 @@
             buffValue: 20
     - name: "The Secret of Watermelon Splitting"
       effects:
-        - desc: ATK +30% (10 sec) When charge assault from long range to close range
+        - desc: ATK +35% (10 sec) When charge assault from long range to close range
+        - desc: Recovers 10% HP when charge assault from close range to long range
     - name: "Lost Child's Meditation"
       effects:
         - desc: Immediate Chaser's Skill damage +50% at SC 4+
@@ -9532,7 +9535,7 @@
       maxHits: 2
     - name: "Immediate Chaser"
       picture: Skill_Placeholder
-      power: ATK x 730%
+      power: ATK x 760%
       ap: 31
       maxHits: 8
     - name: "Floater Ring"
@@ -9555,7 +9558,7 @@
           priority: 1
           buff: Crit Rate
           buffValue: 50
-    power: ATK x 4500%
+    power: ATK x 5000%
     maxHits: 2
 
 - name: Oiran Myuria
