@@ -2218,8 +2218,8 @@
   star: 5
 
   stats:
-    hp: 22176
-    atk: 3345
+    hp: 23184
+    atk: 3474
     int: 1575
     def: 2377
     hit: 840
@@ -2243,26 +2243,27 @@
         - desc: 80% chance of surviving a lethal attack when at 20% of max HP or more
     - name: "Treasures of Summer"
       effects: 
-        - desc: Single target damage +40% at short range
-          all: Attackers/Self
+        - desc: Single target damage +50% at short range
+          all: Attackers/Shooters/Defenders
           meta:
             priority: 1
             buff: Single Target Damage
             buffCondition: Short Range
-            buffValue: 40
+            buffValue: 50
+        - desc: Rush Gauge increases by 3%/3s (self)
     - name: "Plumerias in Sunlit Fields"
       shortEffects: ATK +30% and HP +10%
       effects: 
-        - desc: ATK +30%
+        - desc: ATK +35%
           meta:
             priority: 1
             buff: ATK
-            buffValue: 30
-        - desc: HP +10%
+            buffValue: 35
+        - desc: HP +15%
           meta:
             priority: 1
             buff: HP
-            buffValue: 10
+            buffValue: 15
 
   skills:
     - name: "Piercing Swords"
@@ -2285,7 +2286,7 @@
     - name: "Spread Shaver"
       picture: Spread_Shaver
       element: Ice
-      power: ATK x 810%
+      power: ATK x 900%
       ap: 36
       maxHits: 13
       
@@ -2307,7 +2308,7 @@
           priority: 1
           buff: Crit Damage
           buffValue: 20
-    power: ATK x 5000%
+    power: ATK x 5500%
     maxHits: 11
 
 - name: Cyuss Warren (Awakened)
@@ -2755,7 +2756,7 @@
     maxHits: 5
 
 
-- name: Nel Zepher (Halloween)
+- name: Nel Zelpher (Halloween)
   cat: jp
   rating: 6
   picture: Fallen_Angel_Nel
@@ -3587,8 +3588,9 @@
   talents:
     - name: "Overworked and Acceptable"
       effects:
-        - desc: Single target damage +30%, +45% / 55% at 300, 500 Hit Count
+        - desc: Single target damage +40%, +55% / 65% at 300, 500 Hit Count
           all: false
+        - desc: CB is Maintained after 1 non-consecutive dodge (self)
     - name: "Actreeslike Hat"
       effects:
         - desc: AP Consumption -20% / -40% at 200, 400 Hit Count
@@ -3601,12 +3603,14 @@
             buffValue: 5
     - name: "Vacation Fingers South"
       effects:
-        - desc: Damage taken -20% / -40% at 300, 500 Hit Count
+        - desc: Damage taken -25% / -40% at 100 Hit Count
           meta:
             priority: 1
             buff: Damage Taken Reduction
             buffValue: 40
         - desc: Anti Flinch 25%Hp
+          all: true
+        - desc: ATK DMG taken -10% at 100 Hit Count
           all: true
     - name: "New Possibilities of Surgery"
       effects:
@@ -3626,12 +3630,12 @@
       maxHits: 2
     - name: "Unholly Maelstrom"
       picture: Skill_Placeholder
-      power: ATK x 840%
+      power: ATK x 960%
       ap: 32
       maxHits: 3
     - name: "Scrapper Gyro in Disguise"
       picture: Skill_Placeholder
-      power: ATK x 1080%
+      power: ATK x 1240%
       ap: 38
       maxHits: 12
 
@@ -3650,7 +3654,7 @@
           priority: 1
           buff: ATK Damage
           buffValue: 60
-    power: ATK x 4500%
+    power: ATK x 5000%
     maxHits: 11
 
 - name: Fiore Brunelli (Maid)
@@ -3948,7 +3952,7 @@
     power: ATK x 4500%
     maxHits: 7
 
-- name: Nel Zepher (Oni Kimono)
+- name: Nel Zelpher (Oni Kimono)
   cat: jp
   picture: Ok_Nel
   weapon: bns
