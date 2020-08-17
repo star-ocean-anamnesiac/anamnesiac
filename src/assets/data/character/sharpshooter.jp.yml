@@ -3275,6 +3275,96 @@
     power: ATK x 4000%
     maxHits: 24
 
+- name: Phia Melle (Crimson) (Awakened)
+  cat: jp
+  picture: Crimson_Grace_Phia
+  weapon: bow
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 14070
+    atk: 2468
+    int: 1549
+    def: 1747
+    hit: 1253
+    grd: 945
+
+  talents:
+    - name: "Battle Armor Oath"
+      effects: 
+        - desc: Critical hit chance and Critical damage +25%
+          all: true
+        - desc: AP recovery +50%
+          all: false
+        - desc: AP recovery while walking
+          all: false
+    - name: "Endless Great Chivalry"
+      effects: 
+        - desc: Critical hit chance +35%/+45% when hitcount is >50/100
+          all: true
+        - desc: Critical damage dealt +35%/+45% when hitcount is >50/100
+          all: true
+    - name: "The Astral Star"
+      effects: 
+        - desc: Evasion speed and distance +100%
+        - desc: Evasion AP cost -80%
+        - desc: Maintain Cancel Bonus after 1 non-consecutive dodge
+    - name: "Proof of Tribulation"
+      shortEffects: ATK/HIT +25% after using Moon Mirror (10s)
+      effects:
+        - desc: ATK +25% after using Moon Mirror
+        - desc: HIT +25% after using Moon Mirror
+        - desc: Anti-flinch when using Charge Assault
+        - desc: Damage taken -40% when using Charge Assault
+    - name: "Innocence"
+      effects:
+        - desc: AP cost -30/40% at Skill Chain 2/3
+          all: true
+        - desc: Damage taken -90% after dodge (1s)
+          all: true
+    - name: "Teacher's Teaching"
+      effects:
+        - desc: Party recovers 50 AP after Perfect Dodge
+        - desc: Critical hit chance +100% after Perfect Dodge (7s)
+          all: false
+
+  skills:
+    - name: "Crimson Squall"
+      picture: Crimson_Squall
+      power: ATK x 240%
+      ap: 22
+      maxHits: 9
+    - name: "Shadow Lamp"
+      picture: Binding_Distortion
+      element: Dark
+      power: ATK x 260%
+      ap: 22
+      maxHits: 5
+    - name: "Chaotic Blossom"
+      picture: Chaotic_Blossoms_I
+      power: ATK x 1640%
+      ap: 33
+      maxHits: 11
+    - name: "Lunar Mirror"
+      picture: Lunar_Mirror
+      element: Ice
+      power: ATK x 590%
+      ap: 26
+      maxHits: 6
+      
+  rush:
+    name: "Murakumo"
+    picture: Murakumo_Crimson_Grace_Phia
+    shortEffects: ATK damage dealt +60% (Party/20s)
+    effects: 
+      - desc: ATK damage dealt +60%
+        duration: 20
+        all: true
+    power: ATK x 4500%
+    maxHits: 24
+
 - name: Sophia Esteed (Youth)
   cat: jp
   rating: 6
@@ -3858,21 +3948,21 @@
             priority: 1
             buff: Damage
             buffValue: 30
-        - desc: Damage dealt +60%
+        - desc: Damage dealt +70%
           all: Short Range Weapons/Self
           meta:
             priority: 1
             buff: Damage
-            buffValue: 60
+            buffValue: 70
     - name: "Sporty Beauty"
       effects: 
-        - desc: AP recovery +50% at long range
+        - desc: AP recovery +100% at long range
           all: true
           meta:
             priority: 1
             buff: AP Recovery
             buffCondition: Long Range
-            buffValue: 50
+            buffValue: 100
     - name: "Life Saver"
       effects: 
         - desc: Rush combo damage +20% when HP is 100%
@@ -3900,7 +3990,7 @@
       maxHits: 1
     - name: "Spread Ray"
       picture: Heaven_Air_Raid
-      power: ATK x 780%
+      power: ATK x 860%
       ap: 32
       maxHits: 5
     - name: "Gravity Shell"
@@ -3912,7 +4002,7 @@
     - name: "Aqua Ignition"
       picture: Aqua_Ignition
       element: Ice
-      power: ATK x 920%
+      power: ATK x 1020%
       ap: 34
       maxHits: 5
       
@@ -3931,7 +4021,7 @@
           priority: 3
           buff: ATK Damage
           buffValue: 30
-    power: ATK x 4000%
+    power: ATK x 4500%
     maxHits: 9
 
 
@@ -5427,6 +5517,95 @@
     power: ATK x 4500%
     maxHits: 9
 
+- name: Claude C. Kenny (Blue Sphere) (Awakened)
+  cat: jp
+  rating: 10
+  picture: Blue_Sphere_Claude
+  weapon: gun
+  ace: true
+  limited: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 15750
+    atk: 2508
+    int: 1537
+    def: 1575
+    hit: 1232
+    grd: 931
+
+  talents:
+    - name: "Second Lieutenant's Gun Judgement"
+      effects: 
+        - desc: Damage dealt +40%
+          all: true
+        - desc: Damage dealt +80% when not behind target
+          all: true
+    - name: "Advocate of Studying Abroad"
+      effects: 
+        - desc: Normal attack AP recovery +250%
+          all: true
+        - desc: Evasion AP cost -80%
+          all: true
+        - desc: Movement speed +30%
+          all: true
+    - name: "Trials and Growth"
+      effects: 
+        - desc: Damage dealt +60% by skills when not behind target
+    - name: "Confident Poise"
+      effects: 
+        - desc: Damage taken -35%
+          all: Self/Invokers/Healers
+        - desc: No flinching when taking damage of 25% of max HP or less
+          all: Shooters/Invokers/Healers
+    - name: "True Fairytale"
+      effects: 
+        - desc: 90% chance of surviving a lethal attack when at 20% of max HP or more
+          all: Shooters/Invokers/Healers
+        - desc: Recovers 100% AP on perfect dodge
+          all: false
+    - name: "A Hero beyond his father"
+      effects:
+        - desc: Recovers 10% HP after using "Phase Gun - Tracing"
+        - desc: Able to Overheal up to 10000 HP
+
+  skills:
+    - name: "Phase Gun - Penetrate"
+      picture: Skill_Placeholder
+      power: ATK x 240%
+      ap: 14
+      maxHits: 2
+    - name: "Phase Gun - Detonate"
+      picture: Skill_Placeholder
+      power: ATK x 770%
+      ap: 25
+      maxHits: 4
+    - name: "Phase Gun - Diffusion"
+      picture: Skill_Placeholder
+      power: ATK x 270%
+      ap: 17
+      maxHits: 6
+    - name: "Phase Gun - Tracing"
+      picture: Skill_Placeholder
+      power: ATK x 750%
+      ap: 24
+      maxHits: 8
+      
+  rush:
+    name: "7 Stars Dragon Wave"
+    picture: 7_Stars_Dragon_Wave_Blue_Sphere_Claude
+    shortEffects: AP cost -50% and single target damage +50% (Party/10s)
+    effects: 
+      - desc: AP cost -50%
+        all: true
+        duration: 10
+      - desc: Single target damage +50%
+        all: true
+        duration: 10
+    power: ATK x 4500%
+    maxHits: 9
+
 - name: Tika (Teen Star)
   cat: jp
   picture: Inscribed_Star_Tika
@@ -5872,6 +6051,98 @@
     power: ATK x 3500%
     maxHits: 19    
 
+- name: Anne Patriceani (Official) (Awakened)
+  cat: jp
+  picture: Federation_Anne
+  weapon: gun
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 2494
+    int: 1563
+    def: 1549
+    hit: 1239
+    grd: 938
+
+  talents:
+    - name: "Flawless Support"
+      effects:
+      - desc: Elemental damage dealt +30%
+        all: true
+      - desc: ATK Damage +30% at Skill Chain 3+
+        all: true
+      - desc: Imbues attacks with fire and light
+        all: false
+    - name: "Headstrong"
+      effects:
+      - desc: Single target damage +40%
+        all: true
+      - desc: Single target damage +70% at short range
+        all: true
+    - name: "Undeveloped Planet Memories"
+      effects:
+        - desc: AP recovery +100% at long range
+          all: true
+        - desc: Assist uses +1
+          all: true
+    - name: "Cat Shangri-La"
+      effects:
+        - desc: Anti flinch, Damage taken -30% and AP cost -40% at Skill Chain 3+
+          all: true
+        - desc: Damage taken -50% when using Charge Assault
+          all: false
+    - name: "Clumsy Tutoring"
+      effects:
+        - desc: ATK +20% (10 sec) when using Charge Assault from Long to Short range
+        - desc: Recovers 15% HP when using Charge Assault from Short to Long range
+    - name: "Fleeting Smile"
+      effects:
+        - desc: Damage taken -100% (1s) when using "Destiny Raise Interval"
+        - desc: Able to Airdodge
+        - desc: Nullifies Charge Assault critical damage penalty
+        
+  skills:
+    - name: "Heavy Bullet Barrage"
+      picture: Bullet_Barrage
+      power: ATK x 440%
+      ap: 27
+      maxHits: 6
+    - name: "Divebomb"
+      picture: Reverse_Trigger
+      power: ATK x 310%
+      ap: 17
+      maxHits: 3
+      highlight: true
+    - name: "Skyline Spray"
+      picture: Skyline_Spray
+      power: ATK x 340%
+      ap: 19
+      maxHits: 3
+      highlight: true
+    - name: "Death From Above"
+      picture: Locus_Bullet
+      power: ATK x 1050%
+      ap: 27
+      maxHits: 8
+    - name: "Destiny Raise Interval"
+      picture: Skill_Placeholder
+      power: ATK x 970%
+      ap: 26
+      maxHits: 3
+      
+  rush:
+    name: "Smoking Gun"
+    picture: Gunsmoke_Arts_Federation_Anne
+    element: Fire
+    effects: 
+      - desc: Critical hit chance +65%
+        all: true
+        duration: 20
+    power: ATK x 4500%
+    maxHits: 19    
 
 - name: Victor Oakville (Halloween)
   cat: jp
@@ -6399,13 +6670,15 @@
   talents:
     - name: "First Swimsuit"
       effects:
-        - desc: Damage dealt +45%, +65%, 75% at 0, 150, 300 Hit
+        - desc: Damage dealt +50%, +70%, 85% at 0, 150, 300 Hit
           all: true
           meta:
             priority: 1
             buff: Damage
             buffCondition: Hit Count > 300
-            buffValue: 75
+            buffValue: 85
+        - desc: AP recovery by normals +200%
+          all: true
     - name: "Ears of Shame"
       effects:
         - desc: Able to air dodge
@@ -6418,8 +6691,8 @@
         - desc: AP cost -40% at skill chain > 3
     - name: "Wadasumi's Coat of Arms"
       effects:
-        - desc: Critical chance +50% at skill chain > 4
-        - desc: HP Recovery 2% from Gunshot Dance skill damage at skill chain > 5
+        - desc: Critical chance +60% at skill chain > 4
+        - desc: HP Recovery 3% from Gunshot Dance skill damage at skill chain > 5
 
   skills:
     - name: "Soul Mortar"
@@ -6440,7 +6713,7 @@
       maxHits: 1
     - name: "Evening Canon"
       picture: Skill_Placeholder
-      power: ATK x 850%
+      power: ATK x 1020%
       ap: 37
       maxHits: 5
 
@@ -6452,7 +6725,7 @@
       - desc: AP cost -50%
         all: true
         duration: 20
-    power: ATK x 4500%
+    power: ATK x 5000%
     maxHits: 12
 
 - name: Hunter Celine
