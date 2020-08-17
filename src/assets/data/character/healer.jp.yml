@@ -3465,10 +3465,12 @@
         - desc: No flinching when casting symbology
         - desc: Symbology cast time -80% when not behind target
     - name: "Shining Light in the Venerable Forest"
+      effects:
         - desc: Rush damage +30% during Heat Up Order
           all: true
         - desc: Order +1 at start of the battle
     - name: "Healer's Talent"
+      effects:
         - desc: Rush gauge increases by 50% when allies die (effect doesn't stack if multiple allies die at once)
 
   skills:
