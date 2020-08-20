@@ -2132,6 +2132,99 @@
       *Normal > CA Crystalized Acrtic Impact > Dash Cancel after first hit (Nuke rotation)*
 
 
+- name: Mavelle Froesson (Awakened)
+  cat: jp
+  rating: 6
+  picture: Mavelle
+  weapon: orb
+  limited: false
+  star: 5
+  ace: true
+  awakened: true
+
+  stats:
+    hp: 12390
+    atk: 1563
+    int: 4077
+    def: 1339
+    hit: 1043
+    grd: 840
+
+  talents:
+    - name: "Grim Destiny"
+      effects: 
+        - desc: INT +50%
+    - name: "Unbreakable"
+      shortEffects: Ice skill damage +300% and AP cost +60% after using Hail Orb or Ice Needles (20s)
+      effects: 
+        - desc: AP cost +60% after using Hail Orb or Ice Needles (20s)
+          duration: 20
+        - desc: Ice skill damage +300% after using Hail Orb or Ice Needles (20s)
+          duration: 20
+    - name: "Light of Redemption"
+      effects:
+        - desc: AP recovery +150% after using Aerial Lancer (20s)
+          duration: 20
+    - name: "Arcane Arts"
+      effects:
+        - desc: AP recovery +50%
+          all: true
+        - desc: No flinching when casting symbology
+          all: false
+    - name: "The Truth of Revenge"
+      effects:
+        - desc: Cast time -90% at Skill Chain 2+
+          all: false
+        - desc: AP recovery while walking
+          all: false
+    - name: "Journey for Two"
+      effects:
+        - desc: Nullify Charge Assault crit penalty
+          all: false
+        - desc: Cancel Bonus starts at 200% when using Charge Assault
+
+  skills:
+    - name: "Hail Orb"
+      picture: Frigid_Saucer
+      element: Ice
+      power: INT x 260%
+      ap: 30
+      maxHits: 2
+    - name: "Aerial Lancer"
+      picture: Radiant_Lancer
+      element: Light
+      power: INT x 220%
+      ap: 20
+      maxHits: 8
+    - name: "Aurora Rings"
+      picture: Aurora_Rings
+      element: Light
+      power: INT x 510%
+      ap: 35
+      maxHits: 5
+    - name: "Crystalized Arctic Impact"
+      picture: Arctic_Impact
+      element: Ice
+      power: INT x 820%
+      ap: 45
+      maxHits: 2
+    - name: "Ice Needles"
+      picture: Ice_Needles
+      element: Ice
+      power: INT x 280%
+      ap: 20
+      maxHits: 9
+      
+  rush:
+    name: "Seventh Star"
+    picture: Seventh_Star_Mavelle
+    element: Ice
+    effects: 
+      - desc: INT damage dealt +50%
+        duration: 20
+    power: INT x 5500%
+    maxHits: 8
+
 - name: Evelysse (Bridal)
   cat: jp
   rating: 1
@@ -3664,6 +3757,99 @@
     maxHits: 15
 
 
+- name: Leon D.S. Gehste (Awakened)
+  cat: jp
+  rating: 4
+  picture: Leon
+  weapon: tome
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 12390
+    atk: 1575
+    int: 2718
+    def: 1365
+    hit: 1043
+    grd: 819
+
+  talents:
+    - name: "Pert Remark"
+      effects: 
+        - desc: ATK +40%
+          all: true
+    - name: "Little Genius of Lacuer"
+      effects: 
+        - desc: INT +50%
+          all: true
+        - desc: AP recovery +50%
+          all: true
+    - name: "Transient Quick-Wittedness"
+      effects: 
+        - desc: Damage dealt +150% by Shadow Flare after using Frigid Saucer & Wounds (10s)
+          duration: 10
+    - name: "Warts and All"
+      effects: 
+        - desc: INT +25% after using Shadow Needles (10s)
+          duration: 10
+    - name: "Rare Heraldry"
+      effects: 
+        - desc: If Target is weak to Darkness, ATK/INT damage taken +60% (enemies)
+    - name: "One step towards adulthood"
+      effects: 
+        - desc: Recovers 10% of max HP every 5 seconds
+          all: false
+        - desc: 95% chance of surviving a lethal attack when at 10% of max HP or more
+          all: false
+
+  skills:
+    - name: "Frigid Saucer"
+      picture: Frigid_Saucer
+      element: Ice
+      power: INT x 210%
+      ap: 16
+      maxHits: 1
+    - name: "Deep Freeze"
+      picture: Deep_Freeze
+      element: Ice
+      power: INT x 610%
+      ap: 32
+      maxHits: 9
+      notes: Low chance to freeze
+    - name: "Shadow Flare"
+      picture: Shadow_Flare
+      element: Dark
+      power: INT x 790%
+      ap: 39
+      maxHits: 5
+    - name: "Shadow Needles"
+      picture: Shadow_Needles
+      element: Dark
+      power: INT x 180%
+      ap: 16
+      maxHits: 5
+    - name: "Wounds"
+      picture: Skill_Placeholder
+      element: Dark
+      power: INT x 300%
+      ap: 16
+      maxHits: 2
+
+  rush:
+    name: "Daemon's Gate"
+    picture: Demon's_Gate_Leon
+    element: Dark
+    shortEffects: AP cost -40% and symbology cast time -25% (Self/20s)
+    effects: 
+      - desc: AP cost -40%
+        duration: 20
+      - desc: Symbology cast time -25%
+        duration: 20
+    power: INT x 4500%
+    maxHits: 15
+
+
 - name: Clair Lasbard (Maid)
   cat: jp
   rating: 4
@@ -3684,30 +3870,30 @@
   talents:
     - name: "Brilliant Start"
       effects: 
-        - desc: ATK/INT damage dealt +35%
+        - desc: ATK/INT damage dealt +45%
           all: true
           meta:
             priority: 4
             buffs:
               - ATK Damage
               - INT Damage
-            buffValue: 35
-        - desc: AP cost -30% when skill chain is >3
+            buffValue: 45
+        - desc: AP cost -50% when skill chain is >3
           meta:
             priority: 4
             buff: AP Cost Reduction
             buffCondition: Skill Chain 3+
-            buffValue: 30
-        - desc: Symbology cast time -60% when skill chain is >3
+            buffValue: 50
+        - desc: Symbology cast time -80% when skill chain is >3
           meta:
             priority: 4
             buff: Cast Time Reduction
             buffCondition: Skill Chain 3+
-            buffValue: 60
+            buffValue: 80
     - name: "Impeccable Talent"
-      shortEffects: ATK/INT damage taken +15% after using Shadow Lamp (Enemies/10s)
+      shortEffects: ATK/INT damage taken +20% after using Shadow Lamp (Enemies/10s)
       effects: 
-        - desc: ATK/INT damage taken +15% after using Shadow Lamp
+        - desc: ATK/INT damage taken +20% after using Shadow Lamp (10s)
           all: Enemies
           duration: 10
           meta:
@@ -3716,16 +3902,18 @@
               - Enemy ATK Damage Taken
               - Enemy INT Damage Taken
             buffCondition: after using Shadow Lamp
-            buffValue: 15
+            buffValue: 20
+        - desc: AP recovery while walking
+          all: true
     - name: "Black Attire"
       effects: 
-        - desc: Stun rate +20% after using symbology (10s)
+        - desc: Stun rate +40% after using symbology (10s)
           duration: 10
           meta:
             priority: 4
             buff: Stun Rate
             buffCondition: after using symbology
-            buffValue: 20
+            buffValue: 40
         - desc: Additional hit that deals 10% more damage during normal attacks after using skills (10s)
           duration: 10
     - name: "Loyalty to Her Master"
@@ -3758,13 +3946,13 @@
       highlight: true
     - name: "Crimson Squall"
       picture: Crimson_Squall
-      power: INT x 640%
+      power: INT x 710%
       ap: 38
       maxHits: 9
     - name: "Black Spirit"
       picture: Black_Spirit
       element: Dark
-      power: INT x 1140%
+      power: INT x 1200%
       ap: 52
       maxHits: 2
       highlight: true
@@ -3781,7 +3969,7 @@
           priority: 1
           buff: Crit Rate
           buffValue: 50
-    power: INT x 4000%
+    power: INT x 4500%
     maxHits: 10
 
 - name: Lucifer
@@ -3881,6 +4069,89 @@
     power: INT x 4000%
     maxHits: 10
 
+- name: Lucifer (Awakened)
+  cat: jp
+  rating: 8
+  picture: Lucifere
+  weapon: orb
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 14175
+    atk: 1523
+    int: 2718
+    def: 1155
+    hit: 1036
+    grd: 847
+
+  talents:
+    - name: "Wise Man's Strategy"
+      effects: 
+        - desc: INT +20%/40% at 0/150+ hits
+          all: true
+    - name: "Sharp and Shrewd"
+      effects: 
+        - desc: Converts 55% of INT to ATK
+          all: Attackers/Sharpshooters/Defenders
+    - name: "Observer"
+      shortEffects: Critical hit chance +30%/+50% when hitcount is >100/>200
+      effects: 
+        - desc: Critical hit chance +30% when hitcount is >100
+        - desc: Critical hit chance +50% when hitcount is >200
+    - name: "Decimating Treachery"
+      effects: 
+        - desc: AP cost -50% after using Magnum Tornado (20s)
+        - desc: No flinching when casting symbology
+    - name: "Black Garment"
+      effects: 
+        - desc: If Target is weak to Wind, ATK/INT damage taken +60% (enemies)
+        - desc: Damage taken -100% after using Right Wing or Left Wing (0.5s)
+    - name: "Doctor's Memory"
+      effects: 
+        - desc: If Target is weak to Wind, Recovers 10% of max HP every 3 seconds
+          all: true
+        - desc: If Target is weak to Wind, AP cost -30%
+          all: true
+
+  skills:
+    - name: "Right Wing"
+      picture: Right_Wing
+      element: Wind
+      power: INT x 580%
+      ap: 23
+      maxHits: 8
+    - name: "Left Wing"
+      picture: Left_Wing
+      element: Wind
+      power: INT x 580%
+      ap: 23
+      maxHits: 8
+    - name: "Tornado"
+      picture: Tornado
+      element: Wind
+      power: INT x 650%
+      ap: 29
+      maxHits: 2
+    - name: "Magnum Tornado"
+      picture: Magnum_Tornado
+      element: Wind
+      power: INT x 1010%
+      ap: 35
+      maxHits: 9
+      
+  rush:
+    name: "Winds of Destruction"
+    picture: Winds_of_Destruction_Lucifer
+    element: Wind
+    shortEffects: INT damage dealt +60% (Self/20s)
+    effects: 
+      - desc: INT damage dealt +60%
+        duration: 20
+    power: INT x 4500%
+    maxHits: 10
+
 - name: Verda Kleiman (Hero)
   cat: jp
   rating: 4
@@ -3893,14 +4164,14 @@
   stats:
     hp: 17094
     atk: 2665
-    int: 3018
+    int: 3293
     def: 1930
     hit: 1155
     grd: 840
 
   talents:
     - name: "Scientific Soldier of Love and Justice"
-      shortEffects: ATK/INT +30%, and ATK/INT +40% when hitcount is >150 (Party)
+      shortEffects: ATK/INT +30%, and ATK/INT +50% when hitcount is >150 (Party)
       effects: 
         - desc: ATK/INT +30%
           all: true
@@ -3910,7 +4181,7 @@
               - ATK
               - INT
             buffValue: 30
-        - desc: ATK/INT +40% when hitcount is >150
+        - desc: ATK/INT +50% when hitcount is >150
           all: true
           meta:
             priority: 4
@@ -3918,7 +4189,7 @@
               - ATK
               - INT
             buffCondition: Hit Count > 150
-            buffValue: 40
+            buffValue: 50
     - name: "Physical Ability Reinforcement Heraldry"
       effects: 
         - desc: Rush combo damage +20% when battle stage timer is >60s
@@ -3942,15 +4213,15 @@
         - desc: No flinching when attacking
         - desc: Evasion possible during air attacks
     - name: "Bunny Suit"
-      shortEffects: INT +10% and HP +10%
+      shortEffects: INT +20% and HP +10%
       effects: 
-        - desc: INT +10%
+        - desc: INT +20%
           meta:
             priority: 4
             buffs:
             - INT
-            - HP
-            buffValue: 10
+            buffValue: 20
+        - desc: HP +10%
 
   skills:
     - name: "Shooting Star"
@@ -3966,12 +4237,12 @@
       maxHits: 10
     - name: "Atomic Smash"
       picture: Atomic_Smash
-      power: INT x 860%
+      power: INT x 1230%
       ap: 30
       maxHits: 10
     - name: "Heroic Spark"
       picture: Heroic_Spark
-      power: INT x 620%
+      power: INT x 890%
       ap: 29
       maxHits: 1
       
@@ -3994,7 +4265,7 @@
           priority: 4
           buff: AP Recovery
           buffValue: 50
-    power: INT x 4500%
+    power: INT x 5000%
     maxHits: 7
 
 - name: Tika (Invoker)
@@ -4211,6 +4482,104 @@
     power: INT x 4500%
     maxHits: 19
 
+- name: Opera Vectra (Crimson) (Awakened)
+  cat: jp
+  rating: 8
+  picture: Crimson_Opera
+  weapon: orb
+  ace: true
+  awakened: true
+  semi: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 13860
+    atk: 1549
+    int: 3704
+    def: 1129
+    hit: 1057
+    grd: 853
+
+  talents:
+    - name: "Fashionista"
+      effects: 
+        - desc: Converts 50% of ATK to INT
+          all: Invokers/Healers
+        - desc: Converts 50% of INT to ATK
+          all: Attackers/Shooters/Defenders
+    - name: "Supporter of Love"
+      shortEffects: AP cost -30% after using Lightning Blast (Self/10s) and INT damage taken +30% when hit by Shiny Lancer (Enemies/10s)
+      effects: 
+        - desc: AP cost -30% after using Lightning Blast
+          duration: 10
+        - desc: INT damage taken +30% when hit by Shiny Lancer
+          duration: 10
+          all: Enemies
+    - name: "Deep Crimson Dress"
+      effects: 
+        - desc: No flinching when casting symbology
+        - desc: Damage taken -50%
+        - desc: Symbology cast time -60% when skill chain is >3
+    - name: "My Favorite Sunglasses"
+      effects: 
+        - desc: INT +35%
+    - name: "Self-improvement Master"
+      effects:
+        - desc: Stun rate +100% during Rush
+          all: false
+        - desc: Rush damage +50% at 200+ hits
+          all: false
+    - name: "Shining Crimson Gemstone"
+      effects:
+        - desc: AP Regen +50%
+          all: false
+        - desc: INT +25% at 200+ hits
+          all: false
+        - desc: AP recovery while walking
+          all: false
+        - desc: 90% chance of surviving a lethal attack when at 10% of max HP or more
+          all: false
+
+  skills:
+    - name: "Lightning Blast"
+      picture: Lightning
+      element: Lightning
+      power: INT x 240%
+      ap: 19
+      maxHits: 10
+    - name: "Shiny Lancer"
+      picture: Radiant_Lancer
+      element: Light
+      power: INT x 290%
+      ap: 19
+      maxHits: 8
+    - name: "Sunshine"
+      picture: Sunflare
+      element: Light
+      power: INT x 1380%
+      ap: 39
+      maxHits: 6
+    - name: "Thunderbolt"
+      picture: Thunderbolt
+      element: Lightning
+      power: INT x 1320%
+      ap: 38
+      maxHits: 3
+      
+  rush:
+    name: "Blitz Tactics"
+    picture: Blitz_Tactics_Crimson_Opera
+    element: Light
+    shortEffects: INT damage dealt +40% and critical hit chance +30% (Self/20s)
+    effects: 
+      - desc: INT damage dealt +40%
+        duration: 20
+      - desc: Critical hit chance +20%
+        duration: 20
+    power: INT x 5500%
+    maxHits: 19
+
 - name: Relia (Halloween)
   cat: jp
   rating: 6
@@ -4231,18 +4600,18 @@
   talents:
     - name: "Pumpkin Costume"
       effects: 
-        - desc: Recovers 5% of max HP every 3 seconds
+        - desc: Recovers 7% of max HP every 3 seconds
           all: true
         - desc: Recovers 10% of max HP every 3 seconds
           all: Short Ranged Weapons
     - name: "I'll Trick You"
       effects: 
-        - desc: INT +30%
+        - desc: INT +50%
           all: true
           meta:
             priority: 1
             buff: INT
-            buffValue: 30
+            buffValue: 50
     - name: "Friend of Ghosts"
       effects: 
         - desc: Nullifies rush gauge fields
@@ -4281,7 +4650,7 @@
     - name: "Burst Flame"
       picture: Volcanic_Burst
       element: Fire
-      power: INT x 1000%
+      power: INT x 1210%
       ap: 32
       maxHits: 13
     - name: "Growth"
@@ -4289,15 +4658,15 @@
       power: 0%
       ap: 60
       maxHits: 1
-      notes: ATK +30% (Party/20s)
+      notes: ATK +35% (Party/30s)
       meta:
         priority: 2
         buff: ATK
-        buffValue: 30
+        buffValue: 35
     - name: "Twinkle Bomb"
       picture: Twinkle_Bomb
       element: Light
-      power: INT x 1450%
+      power: INT x 1760%
       ap: 28
       maxHits: 7
       
@@ -4344,18 +4713,25 @@
               - ATK
               - INT
             buffValue: 40
-        - desc: ATK/INT +50% at short range
+        - desc: ATK +60% at Short range
           all: true
           meta:
             priority: 1
             buffs:
               - ATK
-              - INT
             buffCondition: Short Range
-            buffValue: 50
+            buffValue: 60
+        - desc: INT +60% at Long range
+          all: true
+          meta:
+            priority: 1
+            buffs:
+              - INT
+            buffCondition: Long Range
+            buffValue: 60
     - name: "Talented Confectioner"
       effects: 
-        - desc: ATK/INT damage dealt +30% when hitcount is >100
+        - desc: ATK/INT damage dealt +40% when hitcount is >100
           all: true
           meta:
             priority: 1
@@ -4363,7 +4739,7 @@
               - ATK Damage
               - INT Damage
             buffCondition: Hit Count > 100
-            buffValue: 30
+            buffValue: 40
     - name: "Downtown Date"
       shortEffects: AP cost -40%/-50% when skill chain is >3/>4
       effects: 
@@ -4411,7 +4787,7 @@
       maxHits: 10
     - name: "Sharp Tail Kicks"
       picture: Heavenly_Punishment
-      power: ATK x 840%
+      power: ATK x 930%
       ap: 50
       maxHits: 10
     - name: "Spirit Arrow"
@@ -4421,7 +4797,7 @@
       maxHits: 2
     - name: "Phantom Blade"
       picture: Phantom_Blade
-      power: INT x 540%
+      power: INT x 600%
       ap: 34
       maxHits: 8
       
@@ -4571,15 +4947,15 @@
   talents:
     - name: "My Own Starlight"
       effects: 
-        - desc: ATK/INT +35%
+        - desc: ATK/INT +40%
           all: true
           meta:
             priority: 1
             buffs:
               - ATK
               - INT
-            buffValue: 35
-        - desc: ATK/INT +55% when not behind target
+            buffValue: 40
+        - desc: ATK/INT +60% when not behind target
           all: true
           meta:
             priority: 1
@@ -4587,7 +4963,7 @@
               - ATK
               - INT
             buffCondition: Not Behind Target
-            buffValue: 55
+            buffValue: 60
     - name: "Always the Straight Man"
       effects: 
         - desc: Rush combo damage +60% when HP is 100% and hitcount is >150
@@ -4599,14 +4975,14 @@
             buffValue: 60
     - name: "Crimson Rose of Determination"
       effects: 
-        - desc: Normal attack AP recovery +200% when not behind target
+        - desc: Normal attack AP recovery +250% when not behind target
           all: true
           meta:
             priority: 1
             buff: AP Recovery From Normal Attacks
             buffCondition: Not Behind Target
-            buffValue: 200
-        - desc: Absorbs 15% of damage dealt by normal attacks as HP when not behind target
+            buffValue: 250
+        - desc: Absorbs 20% of damage dealt by normal attacks as HP when not behind target
           all: true
     - name: "A Star that Illuminates Darkness"
       effects: 
@@ -4632,13 +5008,13 @@
     - name: "Cool Servant"
       picture: Skill_Placeholder
       element: Ice
-      power: INT x 1390%
+      power: INT x 1420%
       ap: 34
       maxHits: 6
     - name: "Ice Cool Blast"
       picture: Skill_Placeholder
       element: Ice
-      power: INT x 1470%
+      power: INT x 1500%
       ap: 37
       maxHits: 6
       
@@ -4790,6 +5166,107 @@
     power: INT x 4500%
     maxHits: 6
     
+- name: Mastema (Awakened)
+  cat: jp
+  picture: Mastema
+  weapon: tome
+  ace: true
+  awakened: true
+  semi: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 14070
+    atk: 1523
+    int: 2756
+    def: 1129
+    hit: 1036
+    grd: 847
+
+  talents:
+    - name: "One Who Knows Paradise"
+      effects: 
+        - desc: Converts 60% of ATK to INT
+          all: Invokers/Healers
+        - desc: Converts 60% of INT to ATK
+          all: Attackers/Sharpshooters/Defenders
+    - name: "Thirst for Wisdom"
+      shortEffects: ATK/INT damage taken +25%/+55%/+105% when hitcount is >200/>400/>800 (Enemies)
+      effects: 
+        - desc: ATK/INT damage taken +25% when hitcount is >200
+          all: Enemies
+        - desc: ATK/INT damage taken +55% when hitcount is >400
+          all: Enemies
+        - desc: ATK/INT damage taken +105% when hitcount is >800
+          all: Enemies
+    - name: "Circle of Time's Fabric"
+      effects: 
+        - desc: Movement speed +50%
+          all: true
+        - desc: AP recovery +100%
+          all: true
+        - desc: AP recovery increases when moving 
+          all: true
+    - name: "Tower That Reveals the Truth of the Universe"
+      effects: 
+        - desc: ATK/INT/DEF/HIT/GRD +20% when hitcount is >100 
+        - desc: Imbues attacks with light after using light symbology (20s)
+          all: false
+          duration: 20
+    - name: "Devilish Side Profile"
+      effects:
+        - desc: Hitcount timer +3 seconds
+          all: true
+        - desc: AP cost -70% during Order countdown
+          all: true
+        - desc: Order +1 at start of the battle
+    - name: "Binary Epic"
+      effects:
+        - desc: HP regen 30%/4s during Order countdown
+          all: true
+        - desc: 90% chance of surviving a lethal attack when at 10% of max HP or more
+          all: false
+        - desc: INT damage +20% at 200+ hits
+          all: false
+
+  skills:
+    - name: Flame Lancer • Guidance 
+      picture: Fire_Lance 
+      element: Fire
+      power: INT x 440%
+      ap: 14
+      maxHits: 2
+    - name: Radiant Lancer • Guidance
+      picture: Radiant_Lancer 
+      element: Light
+      power: INT x 330%
+      ap: 12
+      maxHits: 8
+    - name: Sunflare • Guidance 
+      picture: Sunflare
+      element: Light
+      power: INT x 1200%
+      ap: 36
+      maxHits: 6
+    - name: Starry Halo
+      picture: Skill_Placeholder
+      element: Fire
+      power: INT x 1340%
+      ap: 42
+      maxHits: 2
+      
+  rush:
+    name: Punishment Oriole 
+    picture: Punishment_Oriole_Mastema
+    element: Fire
+    effects: 
+      - desc: Critical hit chance/critical damage dealt +50%        
+        all: true
+        duration: 20
+    power: INT x 5000%
+    maxHits: 6
+    
 - name: Mirage Koas (Bridal)
   cat: jp
   picture: Bridal_Mirage
@@ -4800,9 +5277,9 @@
   star: 5
 
   stats:
-    hp: 20475
+    hp: 21263
     atk: 2704
-    int: 3230
+    int: 3365
     def: 1930
     hit: 1155
     grd: 819
@@ -4810,7 +5287,7 @@
   talents:
     - name: "Sacred White Dress"
       effects: 
-        - desc: "Buff effect of Impulse Force • AF increases to ATK/INT/DEF/HIT/GRD +40% when hitcount is >150"
+        - desc: "Buff effect of Impulse Force • AF increases to ATK/INT/DEF/HIT/GRD +50% when hitcount is >150"
           all: false
     - name: "A Noble's Spirit"
       effects: 
@@ -4846,32 +5323,32 @@
           all: false
     - name: "Journey for a Dream"
       effects: 
-        - desc: INT +20%
+        - desc: INT +25%
           all: false
           meta:
             priority: 1
             buff: INT
-            buffValue: 20
-        - desc: HP +30%
+            buffValue: 25
+        - desc: HP +35%
           all: false
           meta:
             priority: 1
             buff: HP
-            buffValue: 30
+            buffValue: 35
         - desc: Evasion possible during air attacks
           all: false
-        - desc: Damage dealt +50% by Aerial Raid when skill chain is >5
+        - desc: Damage dealt +60% by Aerial Raid when skill chain is >5
           all: false
 
   skills:
     - name: "Canon Blaze • Petal"
       picture: Skill_Placeholder
-      power: INT x 620%
+      power: INT x 850%
       ap: 38
       maxHits: 3
     - name: "Impulse Force • AF"
       picture: Palm_of_Destruction
-      power: INT x 200%
+      power: INT x 220%
       ap: 20
       notes: ATK/INT/DEF/HIT/GRD +20% (Party/10s)
       maxHits: 1
@@ -4891,7 +5368,7 @@
       maxHits: 3
     - name: "Aerial Raid"
       picture: Skill_Placeholder
-      power: INT x 500%
+      power: INT x 680%
       ap: 33
       maxHits: 1
       
@@ -4911,7 +5388,7 @@
             - ATK Damage
             - INT Damage			
           buffValue: 50
-    power: INT x 5000%
+    power: INT x 5500%
     maxHits: 18
 
 
@@ -5196,13 +5673,20 @@
     picture: Rush_Placeholder
     element: Light
     effects:
-      - desc: Elemental damage dealt +80%
-        all: true
+      - desc: INT +80%
+        all: false
         duration: 20
         meta:
           priority: 1
-          buff: Elemental Damage
+          buff: INT
           buffValue: 80
+      - desc: AP cost -30%
+        all: false
+        duration: 20
+        meta:
+          priority: 1
+          buff: AP Cost Reduction
+          buffValue: 30
     power: INT x 5000%
     maxHits: 9
 
