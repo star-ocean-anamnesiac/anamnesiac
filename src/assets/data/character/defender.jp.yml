@@ -1472,7 +1472,7 @@
 
   stats:
     hp: 20580
-    atk: 2884
+    atk: 3004
     int: 1549
     def: 2546
     hit: 819
@@ -1480,23 +1480,23 @@
 
   talents:
     - name: "Heart on Fire"
-      shortEffects: ATK/INT/DEF -10% when hit by Undermine (Enemies/10s)
+      shortEffects: ATK/INT/DEF -15% when hit by Undermine (Enemies/10s)
       effects: 
-        - desc: Undermine inflicts ATK -10% debuff on target (10s)
+        - desc: Undermine inflicts ATK -15% debuff on target (10s)
           meta:
             priority: 4
             buff: Enemy ATK Reduction
-            buffValue: 10
-        - desc: Undermine inflicts INT -10% debuff on target (10s)
+            buffValue: 15
+        - desc: Undermine inflicts INT -15% debuff on target (10s)
           meta:
             priority: 4
             buff: Enemy INT Reduction
-            buffValue: 10
-        - desc: Undermine inflicts DEF -10% debuff on target (10s)
+            buffValue: 15
+        - desc: Undermine inflicts DEF -15% debuff on target (10s)
           meta:
             priority: 4
             buff: Enemy DEF Reduction
-            buffValue: 10
+            buffValue: 15
     - name: "Knight's Honor"
       effects: 
         - desc: HP +20%
@@ -1509,22 +1509,22 @@
           all: true            
     - name: "Young & Skilled"
       effects: 
-        - desc: Single target damage +20%
+        - desc: Single target damage +30%
           all: true
           meta:
             priority: 1
             buff: Single Target Damage
-            buffValue: 20
+            buffValue: 30
         - desc: Taunt +3
           all: false
     - name: "Knight of Grandshelt"
       effects:
-        - desc: ATK +20%
+        - desc: ATK +25%
           all: false
           meta:
             priority: 4
             buff: ATK
-            buffValue: 20
+            buffValue: 25
 
   skills:
     - name: "Undermine"
@@ -1535,7 +1535,7 @@
     - name: "Hellfire Slash"
       picture: Sword_Bomber
       element: Fire
-      power: ATK x 550%
+      power: ATK x 970%
       ap: 38
       maxHits: 2
       highlight: true
@@ -1547,7 +1547,7 @@
     - name: "Lava Floor"
       picture: Lava_Floor
       element: Earth
-      power: ATK x 440%
+      power: ATK x 780%
       ap: 32
       maxHits: 2
       highlight: true
@@ -1570,7 +1570,7 @@
           priority: 1
           buff: ATK
           buffValue: 30
-    power: ATK x 4000%
+    power: ATK x 5000%
     maxHits: 12
     
 - name: Fayt Leingod (Groom)
@@ -1721,7 +1721,7 @@
             buffValue: 20
         - desc: No flinching when taking damage of 25% of max HP or less
           all: true
-        - desc: Ap -70% durring order countdown
+        - desc: Ap -70% during order countdown
           all: true
     - name: "Veil of Dusk"
       effects: 
@@ -2542,6 +2542,105 @@
     maxHits: 16
 
 
+- name: Ashton Anchors (Blazing) (Awakened)
+  cat: jp
+  rating: 8
+  picture: Blazing_Ashton
+  weapon: greatsword
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 22050
+    atk: 2508
+    int: 1510
+    def: 2389
+    hit: 812
+    grd: 1029
+
+  talents:
+    - name: "Ancient Demonic Flame Dragon"
+      effects: 
+        - desc: ATK +30% after using a fire skill (10s)
+          duration: 10
+        - desc: Fire damage dealt +20% after using an ice skill (10s)
+          duration: 10
+    - name: "Brimming Confidence"
+      effects: 
+        - desc: Nullifies charge assault critical damage penalty
+        - desc: Damage dealt +100% by Sword Dance when using charge assault
+    - name: "Well-Done Preference"
+      effects: 
+        - desc: HP +30%
+          all: true
+        - desc: No flinching when taking damage of 20% of max HP or less
+          all: true
+    - name: "Species Transcending Bonds"
+      effects: 
+        - desc: Single target damage +20%
+          all: true
+        - desc: Single target damage +50% at short range
+          all: true
+    - name: "Blessed Flames"
+      effects: 
+        - desc: AP recovery +100%
+          all: false
+        - desc: No Flinching during Charge Assault
+          all: false
+        - desc: Cancel bonus starts at 200% when using charge assault
+    - name: "Heraldic Blade - Flame"
+      effects: 
+        - desc: Taunt +3
+          all: false
+        - desc: Absorbs 1% of damage dealt by Sword Dance when targeted by enemy
+
+  skills:
+    - name: "Cold Cannon"
+      picture: Cold_Cannon
+      element: Ice
+      power: ATK x 260%
+      ap: 19
+      maxHits: 1
+    - name: "Cross Slash"
+      picture: Cross_Slash
+      element: Ice
+      power: ATK x 540%
+      ap: 29
+      maxHits: 5
+    - name: "Sword Dance"
+      picture: Sword_Dance
+      element: Fire
+      power: ATK x 900%
+      ap: 42
+      maxHits: 10
+    - name: "Heat Zapper"
+      picture: Heat_Zapper
+      element: Fire
+      power: ATK x 430%
+      ap: 23
+      maxHits: 2
+    - name: "Spinning Back-Knuckle"
+      picture: Heat_Zapper
+      element: Ice
+      power: ATK x 180%
+      ap: 14
+      maxHits: 1
+      
+  rush:
+    name: "Lava Flow Dragon"
+    picture: Lavaflow_Dragon_Blazing_Ashton
+    element: Fire
+    shortEffects: Elemental damage dealt +70% (Self/20s) and elemental damage dealt +50% (Party/20s)
+    effects: 
+      - desc: Elemental damage dealt +70%
+        duration: 20
+      - desc: Elemental damage dealt +50%
+        all: true
+        duration: 20
+    power: ATK x 5000%
+    maxHits: 16
+
 - name: Tika (Defender)
   cat: jp
   rating: 2
@@ -2756,6 +2855,102 @@
     maxHits: 5
 
 
+- name: Yrian Luxter (Awakened)
+  cat: jp
+  rating: 8
+  picture: Yuuin
+  weapon: dualswords
+  ace: true
+  semi: true
+  limited: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 22155
+    atk: 2613
+    int: 1523
+    def: 2231
+    hit: 819
+    grd: 1043
+
+  talents:
+    - name: "Noble Ideals"
+      effects: 
+        - desc: HP +50%
+          all: true
+        - desc: No flinching when taking damage of 25% of max HP or less
+          all: true
+    - name: "Twin Bladed Light Bearer"
+      shortEffects: Single target damage +35%, and single target damage +45%/+55% when hitcount is >100/>150 (Party)
+      effects: 
+        - desc: Single target damage +35%
+          all: true
+        - desc: Single target damage +45% when hitcount is >100
+          all: true
+        - desc: Single target damage +55% when hitcount is >150
+          all: true
+    - name: "Brilliant Eyes of Hidden Potential"
+      effects: 
+        - desc: No flinching when attacking
+        - desc: Damage taken -30% when attacking
+    - name: "Elder Brother's Swordmanship"
+      effects: 
+        - desc: Evasion possible during air attacks
+        - desc: ATK/INT/DEF/HIT/GRD +20% after using Helmetbreak (10s)
+          duration: 10
+    - name: "Outstanding Adaptability"
+      effects: 
+        - desc: Damage taken -100% when dodging (0.5s)
+          all: false
+        - desc: Taunt +3
+    - name: "Childhood Promise"
+      effects: 
+        - desc: ATK/INT Damage taken -20% when attacking
+          all: true
+        - desc: 80% chance of surviving a lethal attack when at 20% of max HP or more and Hitcount >100
+          all: true
+
+  skills:
+    - name: "Air Slash"
+      picture: Tri_Zapper
+      power: ATK x 240%
+      ap: 14
+      maxHits: 6
+    - name: "Double Slash"
+      picture: Sinistral_Edge
+      power: ATK x 280%
+      ap: 16
+      maxHits: 2
+    - name: "Mirror Blade"
+      picture: Sword_Dance
+      element: Fire
+      power: ATK x 1190%
+      ap: 28
+      maxHits: 30
+    - name: "Helmetbreak"
+      picture: Helmetbreak
+      power: ATK x 800%
+      ap: 23
+      maxHits: 1
+    - name: "Split Double Slash"
+      picture: Dextral_Edge
+      power: ATK x 270%
+      ap: 15
+      maxHits: 2
+      
+  rush:
+    name: "Double Dragon Slash"
+    picture: Double_Dragon_Slash_Yuuin
+    shortEffects: Recovers 15% of max HP every 3 seconds (Party/20s)
+    effects: 
+      - desc: Recovers 15% of max HP every 3 seconds
+        all: true
+        duration: 20
+    power: ATK x 4500%
+    maxHits: 5
+
+
 - name: Nel Zelpher (Halloween)
   cat: jp
   rating: 6
@@ -2775,14 +2970,14 @@
 
   talents:
     - name: "Wings Dyed in Darkness"
-      shortEffects: ATK/INT damage taken -20% (Party)
+      shortEffects: ATK/INT damage taken -30% (Party)
       effects: 
-        - desc: ATK damage taken -20%
+        - desc: ATK damage taken -30%
           all: true
           meta:
             priority: 2
             buff: ATK Damage Taken Reduction
-            buffValue: 20
+            buffValue: 30
         - desc: INT damage taken -20%
           all: true
           meta:
@@ -2796,34 +2991,34 @@
         - desc: No flinching when HP is 100%
           all: true
     - name: "Different Colored Accessory"
-      shortEffects: ATK/INT damage dealt +20%, and ATK/INT damage dealt +40% when HP is 100% (Party)
+      shortEffects: ATK/INT damage dealt +30%, and ATK/INT damage dealt +50% when HP is 100% (Party)
       effects: 
-        - desc: ATK damage dealt +20%
+        - desc: ATK damage dealt +30%
           all: true
           meta:
             priority: 2
             buff: ATK Damage
-            buffValue: 20
-        - desc: INT damage dealt +20%
+            buffValue: 30
+        - desc: INT damage dealt +30%
           all: true
           meta:
             priority: 2
             buff: INT Damage
-            buffValue: 20              
-        - desc: ATK damage dealt +40% when HP is 100%
+            buffValue: 30
+        - desc: ATK damage dealt +50% when HP is 100%
           all: true
           meta:
             priority: 2
             buff: ATK Damage
             buffCondition: HP is 100
-            buffValue: 20
-        - desc: INT damage dealt +20% when HP is 100%
+            buffValue: 50
+        - desc: INT damage dealt +50% when HP is 100%
           all: true
           meta:
             priority: 2
             buff: INT Damage
             buffCondition: HP is 100
-            buffValue: 20              
+            buffValue: 50
     - name: "Fallen Angel's Smile"
       shortEffects: Recovers 100% AP for self and 10 AP for all allies on perfect dodge
       effects: 
@@ -2849,7 +3044,7 @@
       maxHits: 2
     - name: "Swirling Sword Slash"
       picture: Swirling_Sword_Slash
-      power: ATK x 890%
+      power: ATK x 1280%
       ap: 32
       maxHits: 5
       
@@ -2869,7 +3064,6 @@
           buffValue: 40
     power: ATK x 4500%
     maxHits: 6
-
    
 - name: Bacchus D-79
   cat: jp
@@ -2990,6 +3184,110 @@
     power: ATK x 4500%
     maxHits: 18
 
+- name: Bacchus D-79 (Awakened)
+  cat: jp
+  rating: 11
+  picture: Bacchus
+  weapon: launcher
+  ace: true
+  semi: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 22260
+    atk: 2494
+    int: 1510
+    def: 2377
+    hit: 819
+    grd: 1022
+
+  talents:
+    - name: "Morpus Mission"
+      effects:
+        - desc: HP +30%
+          all: true
+        - desc: No flinching when taking damage of 25% of max HP or less
+          all: true
+        - desc: ATK damage taken -20% when hitcount is >150
+          all: true
+    - name: "Composed Cyborg"
+      shortEffects: ATK/INT damage dealt +30%, and ATK/INT damage dealt +60% when hitcount is >250 (Party)
+      effects: 
+        - desc: ATK damage dealt +30%
+          all: true
+        - desc: ATK damage dealt +60% when hitcount is >250
+          all: true
+        - desc: INT damage dealt +30%
+          all: true
+        - desc: INT damage dealt +60% when hitcount is >250
+          all: true
+    - name: "Impartial Justice"
+      effects: 
+        - desc: Hitcount timer +3 seconds
+          all: true
+        - desc: Damage taken -100% when dodging (0.5s)
+          all: true
+    - name: "The Heat Hidden in the Steel"
+      effects: 
+        - desc: Nullifies freeze
+        - desc: No critical damage taken when hitcount is >150
+        - desc: Nullifies charge assault critical damage penalty
+    - name: "Freesia's Love"
+      effects: 
+        - desc: Taunt +3
+          all: false
+        - desc: Guard possible in all directions
+          all: true
+    - name: "Guardian of the Galaxy"
+      effects: 
+        - desc: Recovers 10% of max HP every 3 seconds to all after Guard (20s)
+        - desc: Single target damage +30% to all after Guard (20s)
+
+  skills:
+    - name: "Thunder Arm"
+      picture: Thunder_Arm
+      element: Lightning
+      power: ATK x 550%
+      ap: 24
+      maxHits: 7
+    - name: "Starboard Scratch"
+      picture: Starboard_Scratch
+      power: ATK x 360%
+      ap: 13
+      maxHits: 5
+    - name: "Justice Savior"
+      picture: Justice_Savior
+      power: ATK x 1600%
+      ap: 40
+      maxHits: 10
+    - name: "Godslayer"
+      picture: Godslayer
+      power: ATK x 1340%
+      ap: 30
+      maxHits: 4
+    - name: "Portside Scratch"
+      picture: Portside_Scratch
+      power: ATK x 360%
+      ap: 13
+      maxHits: 5
+
+  rush:
+    name: "Cosmic Combination"
+    picture: Cosmic_Combination_Bacchus
+    shortEffects: Hitcount starts at 100, and damage taken -40% (Party/20s)
+    effects:
+      - desc: Hitcount +100
+      - desc: Damage taken -40%
+        all: true
+        duration: 20
+        meta:
+          priority: 1
+          buff: Damage Taken Reduction
+          buffValue: 40
+    power: ATK x 4500%
+    maxHits: 18
+
 - name: Verda Kleiman (Idol)
   cat: jp
   rating: 10
@@ -3001,7 +3299,7 @@
 
   stats:
     hp: 30083
-    atk: 3010
+    atk: 3260
     int: 1575
     def: 2508
     hit: 840
@@ -3015,12 +3313,12 @@
             priority: 4
             buff: HP
             buffValue: 50
-        - desc: HP +20%
+        - desc: HP +30%
           all: true
           meta:
             priority: 1
             buff: HP
-            buffValue: 20
+            buffValue: 30
         - desc: No flinching when taking damage of 20% of max HP or less
           all: true
         - desc: DEF +30% when not behind target
@@ -3031,18 +3329,18 @@
             buffValue: 30
     - name: "Shorty Idol"
       effects: 
-        - desc: ATK +20%
+        - desc: ATK +30%
           meta:
             priority: 1
             buff: ATK
-            buffValue: 20
-        - desc: Damage taken +40% when Idol Verda's HP is >50%
+            buffValue: 30
+        - desc: Damage taken +55% when Idol Verda's HP is >50%
           all: Enemies
           meta:
             priority: 1
             buff: Enemy Damage Taken
             buffCondition: Idol Verda's HP is >50%
-            buffValue: 40
+            buffValue: 55
     - name: "Throbbing Green"
       effects: 
         - desc: Recovers 10% of max HP every 3 seconds after guarding an enemy attack (20s)
@@ -3072,7 +3370,7 @@
       maxHits: 6
     - name: "Scrapper Gyro"
       picture: Scrapper_Gyro
-      power: ATK x 800%
+      power: ATK x 880%
       ap: 32
       maxHits: 10
     - name: "Envelop Cannon"
@@ -3118,12 +3416,12 @@
   talents:
     - name: "Interest in Space Pioneering History"
       effects: 
-        - desc: Elemental damage dealt +20%
+        - desc: Elemental damage dealt +35%
           all: true
           meta:
             priority: 1
             buff: Elemental Damage
-            buffValue: 20
+            buffValue: 35
         - desc: Elemental damage dealt +35% when hitcount is >100
           all: true
           meta:
@@ -3140,13 +3438,13 @@
             buffValue: 50
     - name: "The True Meaning of the UP3"
       effects: 
-        - desc: HP +50%
+        - desc: HP +55%
           all: true
           meta:
             priority: 1
             buff: HP
-            buffValue: 50
-        - desc: No flinching when taking damage of 20% of max HP or less
+            buffValue: 55
+        - desc: No flinching when taking damage of 25% of max HP or less
           all: true
     - name: "New Year's Resolution"
       effects: 
@@ -3184,7 +3482,7 @@
       maxHits: 5
     - name: "Heaven's Sword"
       picture: Heaven's_Sword
-      power: ATK x 1200%
+      power: ATK x 1450%
       ap: 43
       maxHits: 3
       
@@ -3224,19 +3522,19 @@
   talents:
     - name: "New York Star Assault Troop"
       effects: 
-        - desc: Damage taken -20%
+        - desc: Damage taken -25%
           all: true
           meta:
             priority: 1
             buff: Damage Taken Reduction
-            buffValue: 20
-        - desc: Damage taken -30% when not targeted by enemy
+            buffValue: 25
+        - desc: Damage taken -35% when not targeted by enemy
           all: true
           meta:
             priority: 1
             buff: Damage Taken Reduction
             buffCondition: Not Holding Aggro
-            buffValue: 30
+            buffValue: 35
         - desc: Damage taken -50% when targeted by enemy
           meta:
             priority: 1
@@ -3249,21 +3547,23 @@
           all: true
         - desc: No flinching when attacking
           all: true
+        - desc: ATK damage taken -15%
+          all: false
     - name: "So Long, My Love"
       effects: 
-        - desc: Single target damage +25%
+        - desc: Single target damage +35%
           all: true
           meta:
             priority: 1
             buff: Single Target Damage
-            buffValue: 25
-        - desc: Single target damage +50% at short range
+            buffValue: 35
+        - desc: Single target damage +60% at short range
           all: true
           meta:
             priority: 1
             buff: Single Target Damage
             buffCondition: Short Range
-            buffValue: 50
+            buffValue: 60
         - desc: AP cost -20% when Gemini is targeted by enemy
           all: true
           meta:
@@ -3304,7 +3604,7 @@
     - name: "Drifting Cloud"
       picture: Drifting_Cloud
       element: Fire
-      power: ATK x 1180%
+      power: ATK x 1300%
       ap: 40
       maxHits: 3
       
@@ -3476,37 +3776,37 @@
   talents:
     - name: "Resplendent Black Tuxedo"
       effects: 
-        - desc: HP +20%
+        - desc: HP +30%
           all: true
           meta:
             priority: 4
             buff: HP
-            buffValue: 20
-        - desc: No flinching when taking damage of 20% of max HP or less
+            buffValue: 30
+        - desc: No flinching when taking damage of 25% of max HP or less
           all: true
-        - desc: HP +30%
+        - desc: HP +40%
           all: Short Range Weapons
           meta:
             priority: 1
             buff: HP
-            buffValue: 30
+            buffValue: 40
     - name: "Majestic Love"
       effects: 
-        - desc: Single target damage +20%
+        - desc: Single target damage +30%
           all: true
           meta:
             priority: 1
             buff: Single Target Damage
-            buffValue: 20
-        - desc: Hitcount timer +1
+            buffValue: 30
+        - desc: Hitcount timer +3
           all: true
-        - desc: Single target damage +50% when not behind target and hitcount is >200
+        - desc: Single target damage +60% when not behind target and hitcount is >200
           all: true
           meta:
             priority: 1
             buff: Single Target Damage
             buffCondition: Not behind target, Hitcount > 200
-            buffValue: 50
+            buffValue: 60
     - name: "Reinforced Confidence"
       effects: 
         - desc: Recovers 20% of max HP every 3 seconds after guarding an enemy attack (30s)
@@ -3546,12 +3846,12 @@
       maxHits: 4
     - name: "Hammer of Might"
       picture: Hammer_of_Might
-      power: ATK x 680%
+      power: ATK x 780%
       ap: 29
       maxHits: 1
     - name: "Infinity Arts"
       picture: Skill_Placeholder
-      power: ATK x 730%
+      power: ATK x 830%
       ap: 34
       maxHits: 3
       
@@ -3566,7 +3866,7 @@
           priority: 1
           buff: Crit Rate
           buffValue: 60
-    power: ATK x 5000%
+    power: ATK x 5500%
     maxHits: 29
 
 - name: Nel Zelpher (Summer)
@@ -3841,8 +4141,8 @@
         - desc: ATK/INT DMG taken -15% at 150+ HC (party)
     - name: "New Justice"
       effects:
-        - desc: AP cost -50% durring guard (party)
-        - desc: HP recovery 10%/3s durring guard (20s/party)
+        - desc: AP cost -50% during guard (party)
+        - desc: HP recovery 10%/3s during guard (20s/party)
     - name: "Thunderclap"
       effects:
         - desc: Guard possible in all direction (party)
@@ -4058,7 +4358,7 @@
         - desc: Able to air dodge
     - name: "Blindside D [Mastery]"
       effects:
-        - desc: DMG taken -100% durring Blindside trigger
+        - desc: DMG taken -100% during Blindside trigger
         - desc: CA crit null, CA skip to 200%
 
   skills:
