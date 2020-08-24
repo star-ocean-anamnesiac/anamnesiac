@@ -1435,34 +1435,36 @@
     - name: "White Mage"
       effects: 
         - desc: Nullifies HP reduction fields
-          all: Short Range Weapons/Self       
+          all: true
+        - desc: 80% chance of surviving a lethal attack when at 10% of max HP or more
+          all: true
     - name: "Cleansing Prayer II"
       effects: 
-        - desc: Symbology cast time -70%
+        - desc: Symbology cast time -90%
           meta:
             priority: 1
             buff: Cast Time Reduction
-            buffValue: 70
+            buffValue: 90
         - desc: No flinching when casting symbology
     - name: "Distinguished Soul"
       effects: 
-        - desc: Normal attack AP recovery +100%
+        - desc: Normal attack AP recovery +200%
           meta:
             priority: 1
             buff: AP Recovery From Normal Attacks
-            buffValue: 100
+            buffValue: 200
 
   skills:
     - name: "Aim"
       picture: Aim
-      power: INT x 270%
+      power: INT x 680%
       ap: 25
       notes: Allies recover 4 AP
       maxHits: 1
     - name: "Bright Shower"
       picture: Bright_Shower
       element: Light
-      power: INT x 520%
+      power: INT x 1430%
       ap: 40
       notes: Allies recover 9 AP
       maxHits: 12      
@@ -1475,8 +1477,8 @@
     - name: "Cheer"
       picture: Cheer
       power: 0%
-      ap: 85
-      notes: ATK/INT/DEF +25% (Party/20s)
+      ap: 30
+      notes: ATK/INT/DEF +30% (Party/20s)
       maxHits: 1
       meta:
         priority: 2
@@ -1484,7 +1486,7 @@
           - ATK
           - INT
           - DEF
-        buffValue: 25
+        buffValue: 30
       
   rush:
     name: "Heaven's Judgment"
@@ -1501,7 +1503,7 @@
           priority: 1
           buff: Crit Rate
           buffValue: 30
-    power: INT x 2500%
+    power: INT x 4000%
     maxHits: 3
     
   notes: >
@@ -2760,6 +2762,7 @@
       power: INT x 250%
       ap: 60
       maxHits: 1
+      notes: Party heal
     - name: "Storm Buzz"
       picture: Storm_Buzz
       element: Wind
@@ -2780,6 +2783,95 @@
           buff: Elemental Damage
           buffValue: 50
     power: INT x 3500%
+    maxHits: 20
+
+   
+- name: Meracle Chamlotte (Youth) (Awakened)
+  cat: jp
+  rating: 4
+  picture: Youth_Meracle
+  weapon: knuckle
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 12390
+    atk: 1799
+    int: 2455
+    def: 1537
+    hit: 1057
+    grd: 1134
+
+  talents:
+    - name: "Sarah's Glasses"
+      effects: 
+        - desc: ATK/INT damage dealt +30%
+          all: true
+        - desc: ATK/INT damage dealt +50% at 100% HP
+          all: true
+        - desc: No flinching when casting symbology
+          all: true
+    - name: "My First Sneakers"
+      effects: 
+        - desc: AP cost -30% when Youth Meracle is at short range
+          all: true
+    - name: "Hungry Stray"
+      effects: 
+        - desc: Normal attack AP recovery +150%
+          all: true
+        - desc: Recovers 100% AP on perfect dodge
+    - name: "Saint's Picture Book"
+      effects: 
+        - desc: Symbology cast time -90%
+        - desc: 90% chance of surviving a lethal attack when at 10% of max HP or more
+    - name: "Memories with the doctor"
+      effects: 
+        - desc: Recovers 15% of max HP every 3 seconds to all after Perfect Dodge (20s)
+        - desc: Dodge AP cost -50%
+          all: false
+        - desc: Damage taken -100% after Dodge (0.5s)
+          all: false
+    - name: "New Family"
+      effects: 
+        - desc: Recovers 10% HP to all when using Crescent Locus
+        - desc: Rush combo damage +100% at 100% HP and HC >150
+          all: false
+
+  skills:
+    - name: "Crescent Locus"
+      picture: Crescent_Locus
+      power: INT x 460%
+      ap: 18
+      maxHits: 4
+    - name: "Wind Blade"
+      picture: Wind_Blade
+      element: Wind
+      power: INT x 610%
+      ap: 23
+      maxHits: 2
+    - name: "Faerie Light"
+      picture: Faerie_Light
+      power: INT x 250%
+      ap: 50
+      maxHits: 1
+      notes: Party heal
+    - name: "Storm Buzz"
+      picture: Storm_Buzz
+      element: Wind
+      power: INT x 1030%
+      ap: 29
+      maxHits: 2
+      
+  rush:
+    name: "Flash Myariot"
+    picture: Flash_Myariot_Youth_Meracle
+    element: Wind
+    effects: 
+      - desc: Elemental damage dealt +50%
+        all: true
+        duration: 20
+    power: INT x 4000%
     maxHits: 20
 
    
@@ -3249,7 +3341,7 @@
   star: 5
 
   stats:
-    hp: 18291
+    hp: 19698
     atk: 1785
     int: 2962
     def: 1353
@@ -3268,6 +3360,7 @@
     - name: "Nosy Sister"
       effects: 
         - desc: Recovers AP for allies when casting symbology
+        - desc: Increase Grâce au Ciel's buff to 45% at 100% HP
     - name: "Is Paris Burning?"
       effects: 
         - desc: Symbology cast time -40%
@@ -3282,13 +3375,13 @@
             buffCondition: Skill Chain 3+
             buffValue: 40
     - name: "Healing Light"
-      shortEffects: INT +20%, HP +30%, and AP +20
+      shortEffects: INT +20%, HP +40%, and AP +20
       effects: 
-        - desc: HP +30%
+        - desc: HP +40%
           meta:
             priority: 1
             buff: HP
-            buffValue: 30
+            buffValue: 40
         - desc: INT +20%
           meta:
             priority: 1
@@ -3299,23 +3392,24 @@
   skills:
     - name: "Grâce au Ciel"
       picture: Grâce_au_Ciel
-      power: ATK x 230%
+      power: INT x 250%
       ap: 60
       maxHits: 1
+      notes: Party Heal and ATK/INT/DEF/HIT/GRD +30% (Party/20s)
     - name: "Mitraille de Balles"
       picture: Break_Horn
-      power: ATK x 210%
+      power: INT x 210%
       ap: 20
       maxHits: 8
     - name: "Pluie de Balles"
       picture: Crimson_Squall_I
-      power: ATK x 570%
+      power: INT x 570%
       ap: 25
       maxHits: 9
     - name: "Sacre de Lumiere"
       picture: Sacre_de_Lumière
       element: Light
-      power: ATK x 810%
+      power: INT x 890%
       ap: 29
       maxHits: 6
       
@@ -3571,6 +3665,7 @@
       power: INT x 250%
       ap: 60
       maxHits: 1
+      notes: Party heal
     - name: "Earth Glaive • Research"
       picture: Earth_Glaive_Research
       element: Earth
@@ -3588,6 +3683,97 @@
         all: true
         duration: 20
     power: INT x 4000%
+    maxHits: 3
+
+- name: Noel Chandler (Awakened)
+  cat: jp
+  picture: Noel_Chandler
+  weapon: knuckle
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 13965
+    atk: 1785
+    int: 2455
+    def: 1353
+    hit: 1057
+    grd: 1134
+
+  talents:
+    - name: "King of Zoologists"
+      effects: 
+        - desc: Recovers 15% of max HP every 3 seconds
+          all: true
+        - desc: 80% chance of surviving a lethal attack when at 20% of max HP
+          all: true
+        - desc: 95% chance of surviving a lethal attack when at 20% of max HP
+          all: Short Range Weapons
+    - name: "Caretaker of Rare Animal Protected Area"
+      effects: 
+        - desc: ATK/INT damage taken -45%
+        - desc: ATK/INT damage taken -35% when Noel is at short range
+          all: true
+    - name: "Student's Feeling"
+      effects: 
+        - desc: ATK/INT damage dealt +40%
+          all: true
+        - desc: ATK/INT damage dealt +70% when hitcount is >200
+          all: true
+    - name: "Question for the Reason"
+      effects: 
+        - desc: Symbology cast time -100%
+          all: false
+        - desc: Normal attack AP recovery +200%
+          all: true
+    - name: "Former University Leader"
+      effects: 
+        - desc: Recover 15% HP to all after using Heel Hammer
+        - desc: Recover 20% HP to all after casting Symbology
+    - name: "Coexistence with nature"
+      effects: 
+        - desc: No flinching while casting symbology
+          all: false
+        - desc: Damage taken -40% at 100% HP
+          all: false
+        - desc: Recovers 13 AP to all after using Earth Glaive • Research
+
+  skills:
+    - name: "Heel Hammer"
+      picture: Heel_Hammer
+      power: INT x 420%
+      ap: 19
+      maxHits: 2
+    - name: "Glaive"
+      picture: Earth_Glaive
+      element: Earth
+      power: INT x 610%
+      ap: 16
+      maxHits: 2
+    - name: "Fairy Light • Research"
+      picture: Faerie_Light
+      power: INT x 250%
+      ap: 50
+      maxHits: 1
+      notes: Party heal
+    - name: "Earth Glaive • Research"
+      picture: Earth_Glaive_Research
+      element: Earth
+      power: INT x 1020%
+      ap: 21
+      maxHits: 4
+      
+  rush:
+    name: "Rock Rain - Research"
+    picture: Rock_Rain_Noel_Chandler
+    element: Earth
+    shortEffects: Critical hit chance +65% (Party/20s)
+    effects: 
+      - desc: Critical hit chance +65%
+        all: true
+        duration: 20
+    power: INT x 4500%
     maxHits: 3
 
 - name: Mint Adenade
@@ -4038,6 +4224,7 @@
       power: INT x 180%
       ap: 30
       maxHits: 1
+      notes: Party Heal
     - name: "Flame Spear"
       picture: Skill_Placeholder
       element: Fire
@@ -4054,7 +4241,6 @@
     name: "Sweet Witch Craft"
     picture: Rush_Placeholder
     element: Fire
-    shortEffects: Heal Reduced to 30%
     effects:
       - desc: Recovers 100% HP, ATK/INT DMG +50% (party/20s)
     power: INT x 4000%
