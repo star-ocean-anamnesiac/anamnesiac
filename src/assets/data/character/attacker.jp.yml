@@ -9580,16 +9580,16 @@
   talents:
     - name: "Star Ocean's Harlot"
       effects:
-        - desc: Damage to enemies +20%, 40% when Myuria is at 100% HP (party)
+        - desc: Damage to enemies +40%, 60% when Myuria is at 100% HP (party)
     - name: "Eight Shaped Progression"
       effects:
         - desc: AP cost -30% when skill chain > 2 (self)
         - desc: HP recovery 2% from skill damage when skill chain > 4 (self)
     - name: "Blue Waters Kimono Lining"
       effects:
-        - desc: ATK +15% when HP 100% (self)
-        - desc: Rush combo damage +50% when hit count > 300 (self)
-        - desc: Rush combo damage +100% when hit count > 600 (self)
+        - desc: ATK +20% when HP 100% (self)
+        - desc: Rush combo damage +50% when hit count > 200 (self)
+        - desc: Rush combo damage +100% when hit count > 500 (self)
     - name: "Ongoing Volune of Gorgeous Courtesan Kimonos"
       effects:
         - desc: ATK +30%, HP +20%
@@ -9609,7 +9609,7 @@
       maxHits: 4
     - name: "Large Circle"
       picture: Skill_Placeholder
-      power: ATK x 680%
+      power: ATK x 730%
       ap: 28
       maxHits: 15
     - name: "Petal"
@@ -9628,7 +9628,7 @@
       - desc: HIT count starts at 75
         duration: 20
       - desc: AP cost -60% (self)
-    power: ATK x 5500%
+    power: ATK x 7000%
     maxHits: 8
 
 - name: Chisato Madison (Blue Sphere) 
@@ -10329,7 +10329,7 @@
   talents:
     - name: "Hot Spring Beauty"
       effects:
-        - desc: ATK +15%, +80% durring Rush Combo (party)
+        - desc: ATK +15%, +80% during Rush Combo (party)
         - desc: AP cost -25% at long range (party)
     - name: "Flank Hem"
       effects:
@@ -10371,7 +10371,7 @@
     name: "Shakukei / Yuyu"
     picture: Rush_Placeholder
     effects:
-      - desc: 
+      - desc: HC start at 75 | ATK +80% (Self/20s)
     power: ATK x 5500%
     maxHits: 12
 
@@ -10436,7 +10436,7 @@
     name: "Etheral Blast"
     picture: Rush_Placeholder
     effects:
-      - desc: HC start at 100 | DMG dealt +80 (party)
+      - desc: HC start at 100 | DMG dealt +80% (Party/20s)
     power: ATK x 4500%
     maxHits: 5
 
@@ -10862,7 +10862,7 @@
         - desc: CB will be maintained after 1 non-consecutive dodge
     - name: "Blindside [Mastery]"
       effects:
-        - desc: DMG taken -100% durring Blindside trigger
+        - desc: DMG taken -100% during Blindside trigger
         - desc: CA crit null, CA skip to 200%
 
   skills:
