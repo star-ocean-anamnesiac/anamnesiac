@@ -4377,3 +4377,71 @@
       - desc: ATK/INT DMG Taken +40% (Enemies/20s)
     power: INT x 4000%
     maxHits: 5
+
+- name: Erys Jerand (Summer)
+  cat: jp
+  picture: Summer_Erys
+  weapon: whip
+  ace: true
+  star: 5
+
+  stats:
+    hp: 12285
+    atk: 1759
+    int: 2482
+    def: 1523
+    hit: 1064
+    grd: 1148
+
+  talents:
+    - name: "Small Devil in Late Summer"
+      effects:
+        - desc: Effect of Skill3 AF increased to +45% at 100% HP
+        - desc: Effect of Skill3 AF increasd to +55% during order countdown.
+    - name: "Longing for Blue"
+      effects:
+        - desc: Skill4 recovers 45% HP to the party
+        - desc: Rushing during a Heat-Up order applies Rush DMG +30% (Party)
+    - name: "Brother, Don't Look Away"
+      effects:
+        - desc: Order +1 at Mission Start
+        - desc: Order Gain +30% at 100% HP (Party)
+        - desc: Battle Skills Recover 5% HP (Party)
+        - desc: 90/10 Guts (Self)
+    - name: "Don't be Afraid"
+      effects:
+        - desc: While Attacking, gain superarmor and DMG Taken -40%
+        - desc: Able to Airdodge
+        - desc: When a Party member dies, Recover 50% Rush Gauge (Self)
+
+  skills:
+    - name: "Slice Cast"
+      picture: Skill_Placeholder
+      power: INT x 230%
+      ap: 21
+      maxHits: 2
+    - name: "Storm Cast"
+      picture: Skill_Placeholder
+      power: INT x 550%
+      ap: 25
+      maxHits: 8
+    - name: "Feather Cast"
+      picture: Skill_Placeholder
+      element: Wind
+      power: INT x 180%
+      ap: 15
+      maxHits: 5
+    - name: "Giant Catch"
+      picture: Skill_Placeholder
+      element: Wind
+      power: INT x 1500%
+      ap: 29
+      maxHits: 3
+
+  rush:
+    name: "Erys Splash"
+    picture: Rush_Placeholder
+    effects:
+      - desc: Revives incapacitated allies with 50% HP (Attackers/Sharpshooters/Invokers)
+    power: INT x 4500%
+    maxHits: 8

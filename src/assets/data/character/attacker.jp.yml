@@ -11030,3 +11030,75 @@
       - desc: Start at 100 Hits, Crit Chance +100% (party/10s)
     power: ATK x 5000%
     maxHits: 13
+
+- name: Laevonia (Summer)
+  cat: jp
+  picture: Summer_Laevonia
+  weapon: scythe
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 19578
+    atk: 5065
+    int: 2712
+    def: 2513
+    hit: 1205
+    grd: 873
+
+  talents:
+    - name: "Summer Pirates"
+      effects:
+        - desc: ATK +1000 (Party)
+        - desc: ATK +1500 when a stun occurs (Party/15s)
+    - name: "Cute is Justice"
+      effects:
+        - desc: Assist Uses +2, Stun Rate +50% (Party)
+        - desc: AP Regen +200% Stun Rate +100% During Rush (Self)
+    - name: "Someday it'll on my Head"
+      effects:
+        - desc: DMG Taken during Skill4 -100% (1.5s)
+        - desc: Recover 50AP when hit by an enemy
+        - desc: While Attacking, Superarmor and DMG Taken -40% (Self)
+    - name: "Memories of a distant Summer"
+      effects:
+        - desc: ATK +30%, HP +20%, AP +40 (Stat Page)
+        - desc: ATK +20% at 150+ Hits (Self)
+        - desc: 3% Drain on Skill4 at SC 3+ (Self)
+    - name: "Interrupt [Mastery]"
+      effects:
+        - desc: CA Crit Null
+        - desc: AP Cost -20%
+
+  skills:
+    - name: "Fair Wind"
+      picture: Skill_Placeholder
+      element: Fire
+      power: ATK x 350% 
+      ap: 22
+      maxHits: 4
+    - name: "Wave Flag Edge"
+      picture: Skill_Placeholder
+      element: Ice
+      power: ATK x 350%
+      ap: 22
+      maxHits: 4
+    - name: "Sailing Size"
+      picture: Skill_Placeholder
+      power: ATK x 210%
+      ap: 18
+      maxHits: 2
+    - name: "Giant Catch"
+      picture: Skill_Placeholder
+      power: ATK x 1150%
+      ap: 38
+      maxHits: 6
+
+  rush:
+    name: "Battle of the Dorms"
+    picture: Rush_Placeholder
+    effects:
+      - desc: ATK DMG Taken +50%, INT DMG Taken +30% (Enemies/20s)
+    power: ATK x 7000%
+    maxHits: 9
