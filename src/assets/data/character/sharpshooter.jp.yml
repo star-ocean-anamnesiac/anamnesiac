@@ -6747,23 +6747,23 @@
   talents:
     - name: "Full Speed to the Treasure"
       effects:
-        - desc: ATK and INT damage +35%, +65% when Celine is at 100% HP
+        - desc: ATK and INT damage +40%, +70% when Celine is at 100% HP
           all: true
           meta:
             priority: 1
             buff: Damage
             buffCondition: HP is 100
-            buffValue: 65
+            buffValue: 70
     - name: "Lucky Steal"
       effects:
-        - desc: Critical chance +20% after using Mystic Knives or Edge Explorer (All/ 10 seconds)
+        - desc: Critical chance +25% after using Mystic Knives or Edge Explorer (All/ 10 seconds)
           all: true
           meta:
             priority: 1
             buff: Crit Rate
             buffCondition: When using Mystic Knives or Edge Explorer
-            buffValue: 20
-        - desc: Critical Rate -20% after Mystic Knives or Edge Explorer (Enemy/ 10 seconds)
+            buffValue: 25
+        - desc: Critical Rate -25% after Mystic Knives or Edge Explorer (Enemy/ 10 seconds)
     - name: "Trap Application Guard"
       effects:
         - desc: Arc Action Growth inflicts ATK -20% (All Enemies/ 10 seconds)
@@ -6776,13 +6776,13 @@
   skills:
     - name: "Edge Explorer"
       picture: Skill_Placeholder
-      power: ATK x 390%
+      power: ATK x 420%
       ap: 26
       maxHits: 4
     - name: "Mystic Knives"
       picture: Skill_Placeholder
       element: Lightning
-      power: ATK x 340%
+      power: ATK x 370%
       ap: 23
       maxHits: 9
     - name: "Arc Action Growth"
@@ -6793,7 +6793,7 @@
     - name: "Doom Parade"
       picture: Skill_Placeholder
       element: Dark
-      power: ATK x 710%
+      power: ATK x 1000%
       ap: 30
       maxHits: 4
 
@@ -6809,7 +6809,7 @@
             buffCondition: When using Mystic Knives or Edge Explorer
             buffValue: 30
         duration: 20
-    power: ATK x 4500%
+    power: ATK x 5000%
     maxHits: 1
 
 - name: Rena Lanford (Persona)
@@ -7202,7 +7202,7 @@
         - desc: DMG dealt +85% when enemy gets stunned (party/ 30s)
     - name: "Faint Sweetness"
       effects:
-        - desc: Durring Rush Combo, stun rate +50%, +70% at HC > 200 (party)
+        - desc: During Rush Combo, stun rate +50%, +70% at HC > 200 (party)
     - name: "Make 3 and Eat 2"
       effects:
         - desc: AP recovery 20% on Lovely Tuner (party)
@@ -7263,7 +7263,7 @@
     - name: "Guardian Deity of Bathtub"
       effects:
         - desc: Effect of Hide Burst Growth increased to ATK +40% at 100% HP (party)
-        - desc: Effect of Hide Burst Growth increased to ATK +70% at 100% HP durring rush (party)
+        - desc: Effect of Hide Burst Growth increased to ATK +70% at 100% HP during rush (party)
     - name: "Nape Peeping"
       effects:
         - desc: AP recovery on skills (party)
@@ -7532,12 +7532,12 @@
     - name: "Wandering Bow"
       effects:
         - desc: DMG dealt +40%, +75% at 100% HP (party)
-        - desc: DMG dealt +90% durring order countdown (party)
+        - desc: DMG dealt +90% during order countdown (party)
         - desc: Fill 100% rush gauge at mission start
     - name: "Heart for Release"
       effects:
         - desc: Order +1 at start of the battle (party)
-        - desc: HP regen 30%/4s and AP -70% durring order countdown (party)
+        - desc: HP regen 30%/4s and AP -70% during order countdown (party)
         - desc: Order gain +30% at 100% HP
     - name: "Body That Has Stopped Growing"
       effects:
@@ -7675,7 +7675,7 @@
         - desc: Anti flinch when taking damage < 20% HP
     - name: "Enjoying, But Not Floating"
       effects:
-        - desc: Regen 2% rush/1s durring CA standby
+        - desc: Regen 2% rush/1s during CA standby
         - desc: Able to air dodge
         - desc: Recover 50AP to the party when triggering BlindsideA
     - name: "How To Deal With Thermal"
