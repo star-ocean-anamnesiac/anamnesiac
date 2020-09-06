@@ -2898,6 +2898,7 @@
             priority: 1
             buff: Damage
             buffValue: 30
+        - desc: Taunt +1
     - name: "Dawn of the Terran Alliance"
       effects: 
         - desc: Damage dealt +45% when HP is 100%
@@ -2920,7 +2921,6 @@
     - name: "Tenaciousness"
       effects:
         - desc: HP +30%
-        - desc: Taunt +1        
   
   skills:
     - name: "Heavenly Flight"
@@ -2957,6 +2957,94 @@
           buff: ATK Damage
           buffValue: 40
     power: ATK x 3500%
+    maxHits: 11
+
+- name: Edge Maverick (Official) (Awakened)
+  cat: jp
+  rating: 1
+  picture: Federation_Edge
+  weapon: gun
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 18428
+    atk: 2508
+    int: 1537
+    def: 1773
+    hit: 1232
+    grd: 931
+
+  talents:
+    - name: "Moore's Awakening"
+      effects: 
+        - desc: Damage dealt +40%
+          all: true
+        - desc: Rush Regen 3%/3s
+          all: true
+        - desc: Taunt +2
+    - name: "Dawn of the Terran Alliance"
+      effects: 
+        - desc: Damage dealt +65% when HP is 100%
+          all: true
+        - desc: Damage dealt +90% when HP is 100% and HC > 200
+          all: true
+    - name: "Reckless Captain"
+      effects: 
+        - desc: Damage taken -20%
+          all: true
+        - desc: No flinching when taking damage of 20% of max HP or less
+          all: true
+        - desc: Absorbs 15% of damage dealt by normal attacks as HP
+          all: true
+    - name: "Tenaciousness"
+      effects:
+        - desc: HP +30%
+    - name: "Captain of the Space Recoignance Force Spaceship"
+      effects:
+        - desc: Recover 50AP when hit by an enemy
+          all: false
+        - desc: ATK damage taken -30% when attacking
+          all: false
+        - desc: Damage taken -100% when using Raptor Bullet (0.5s)
+          all: false
+    - name: "New Departure"
+      effects:
+        - desc: Recover 10% HP after using Raptor Bullet
+          all: false
+        - desc: ATK +20% at HC >= 200
+          all: false
+  
+  skills:
+    - name: "Heavenly Flight"
+      picture: Heavenly_Flight
+      power: ATK x 510%
+      ap: 35
+      maxHits: 4
+    - name: "Aiming Device"
+      picture: Aiming_Device
+      power: ATK x 220%
+      ap: 20
+      maxHits: 1
+    - name: "Sanguine Moon"
+      picture: Hunter's_Moon
+      power: ATK x 230%
+      ap: 21
+      maxHits: 7
+    - name: "Raptor Bullet"
+      picture: Tri_Zapper
+      element: Lightning
+      power: ATK x 1300%
+      ap: 29
+      maxHits: 9
+      
+  rush:
+    name: "Judgment Shot"
+    picture: Judgement_Shot_Federation_Edge
+    effects: 
+      - desc: ATK damage dealt +60%, INT damage dealt +40% (Party/20s)
+    power: ATK x 5000%
     maxHits: 11
 
 - name: Leanne
@@ -3312,10 +3400,9 @@
         - desc: Evasion AP cost -80%
         - desc: Maintain Cancel Bonus after 1 non-consecutive dodge
     - name: "Proof of Tribulation"
-      shortEffects: ATK/HIT +25% after using Moon Mirror (10s)
       effects:
-        - desc: ATK +25% after using Moon Mirror
-        - desc: HIT +25% after using Moon Mirror
+        - desc: ATK +25% after using Moon Mirror (10s)
+        - desc: HIT +25% after using Moon Mirror (10s)
         - desc: Anti-flinch when using Charge Assault
         - desc: Damage taken -40% when using Charge Assault
     - name: "Innocence"
@@ -3591,6 +3678,96 @@
           buff: Crit Damage
           buffValue: 30
     power: ATK x 4000%
+    maxHits: 10
+
+- name: Opera Vectra (Awakened)
+  cat: jp
+  rating: 4
+  picture: Opera
+  weapon: rifle
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 15330
+    atk: 2508
+    int: 1589
+    def: 1523
+    hit: 1267
+    grd: 924
+
+  talents:
+    - name: "Heir to House Vectra"
+      effects: 
+        - desc: Damage dealt +45%
+          all: true
+        - desc: Damage dealt +75% at long range
+          all: true
+    - name: "Gambler"
+      effects: 
+        - desc: DEF +30% at short range
+          all: true
+        - desc: Stun rate +30% at short range
+          all: true
+        - desc: Stun rate +50% at long range
+          all: true
+    - name: "Drinker"
+      effects: 
+        - desc: No flinching when attacking
+        - desc: Damage taken -40%
+    - name: "Blazing Passion"
+      effects: 
+        - desc: AP cost -50% when skill chain is >3
+        - desc: ATK damage dealt +40% when skill chain is >3
+    - name: "Archeology Major"
+      effects:
+        - desc: Critical taken rate +50% when stunned (all enemies)
+    - name: "Thoughts Surpassing the Stars"
+      effects:
+        - desc: Critical rate +100% when Skill Chain >= 5
+
+  skills:
+    - name: "Alpha on One"
+      picture: Alpha_On_One
+      power: ATK x 250%
+      ap: 17
+      maxHits: 5
+    - name: "Gravity Shell"
+      picture: Gravity_Shell
+      element: Dark
+      power: ATK x 400%
+      ap: 24
+      maxHits: 8
+    - name: "Spread Ray"
+      picture: Heaven_Air_Raid
+      power: ATK x 790%
+      ap: 32
+      maxHits: 5
+    - name: "Electric Shockwave"
+      picture: Lightning_Blade
+      element: Lightning
+      power: ATK x 970%
+      ap: 36
+      maxHits: 5
+    - name: "Rotage Cage"
+      picture: Skill_Placeholder
+      power: ATK x 470%
+      ap: 23
+      maxHits: 3
+      
+  rush:
+    name: "Hyper Launcher"
+    picture: Hyper_Launcher_Opera
+    shortEffects: Critical hit chance +30% and critical damage dealt +30% (Party/20s)
+    effects: 
+      - desc: Critical hit chance +30%
+        duration: 20
+        all: true
+      - desc: Critical damage dealt +30%
+        duration: 20
+        all: true
+    power: ATK x 4500%
     maxHits: 10
 
 - name: Leanne (Summer)
@@ -4165,13 +4342,13 @@
   talents:
     - name: "Chief Researcher"
       effects: 
-        - desc: ATK/INT damage dealt +40%
+        - desc: ATK/INT damage dealt +50%
           meta:
             priority: 1
             buffs:
               - ATK Damage
               - INT Damage
-            buffValue: 40         
+            buffValue: 50
         - desc: ATK/INT damage taken +10% when hitcount is >100
           all: Enemies
           meta:
@@ -4181,7 +4358,7 @@
               - Enemy INT Damage Taken
             buffCondition: Hit Count > 100
             buffValue: 10
-        - desc: ATK/INT damage taken +15% when hitcount is >200
+        - desc: ATK/INT damage taken +20% when hitcount is >200
           all: Enemies
           meta:
             priority: 1
@@ -4189,7 +4366,7 @@
               - Enemy ATK Damage Taken
               - Enemy INT Damage Taken
             buffCondition: Hit Count > 200
-            buffValue: 15
+            buffValue: 20
     - name: "Lifesaving Moonlight"
       effects: 
         - desc: 80% chance of surviving a lethal attack when at 20% of max HP or more
@@ -4206,12 +4383,12 @@
             priority: 4
             buff: Damage Taken Reduction
             buffValue: 30
-        - desc: AP cost -30% when skill chain is >3
+        - desc: AP cost -50% when skill chain is >3
           meta:
             priority: 4
             buff: AP Cost Reduction
             buffCondition: Skill Chain 3+
-            buffValue: 30
+            buffValue: 50
 
   skills:
     - name: "Highwind Blast"
@@ -4226,12 +4403,12 @@
       maxHits: 3
     - name: "Spread Ray"
       picture: Heaven_Air_Raid
-      power: ATK x 1020%
+      power: ATK x 1130%
       ap: 41
       maxHits: 5
     - name: "Capsule Scatter"
       picture: Capsule_Scatter
-      power: ATK x 900%
+      power: ATK x 1090%
       ap: 35
       maxHits: 5
       
@@ -4249,7 +4426,7 @@
           priority: 1
           buff: Single Target Damage
           buffValue: 40
-    power: ATK x 4000%
+    power: ATK x 4500%
     maxHits: 12
 
 - name: Sophia Esteed (Maid)
@@ -4278,47 +4455,49 @@
             priority: 1
             buff: Damage
             buffValue: 40
-        - desc: Damage dealt +50% when hitcount is >100
+        - desc: Damage dealt +55% when hitcount is >100
           all: true
           meta:
             priority: 1
             buff: Damage
             buffCondition: Hit Count > 100
-            buffValue: 50
-        - desc: Damage dealt +60% when hitcount is >200
+            buffValue: 55
+        - desc: Damage dealt +70% when hitcount is >200
           all: true
           meta:
             priority: 1
             buff: Damage
             buffCondition: Hit Count > 200
-            buffValue: 60
+            buffValue: 70
     - name: "Cat Counting Song"
-      shortEffects: AP cost -10%/-20% when hitcount is >50/>100 (Long Range Weapons)
       effects: 
-        - desc: AP cost -10% when hitcount is >50
-          all: Long Range Weapons
+        - desc: AP cost -15% when hitcount is >50
+          all: true
           meta:
             priority: 1
             buff: AP Cost Reduction
             buffCondition: Hit Count > 50
-            buffValue: 10
-        - desc: AP cost -20% when hitcount is >100
-          all: Long Range Weapons
+            buffValue: 15
+        - desc: AP cost -25% when hitcount is >100
+          all: true
           meta:
             priority: 1
             buff: AP Cost Reduction
             buffCondition: Hit Count > 100
-            buffValue: 20
+            buffValue: 25
+        - desc: Hitcount Timer +2s
+          all: true
     - name: "Cat's Loud Chorus"
       effects: 
-        - desc: Rush combo damage +40% when hitcount is >250
+        - desc: Rush combo damage +50% when hitcount is >250
+          all: false
           meta:
             priority: 1
             buff: Rush Damage
             buffCondition: Hit Count > 250
-            buffValue: 40
+            buffValue: 50
     - name: "Connection - Cat"
-      effects: 
+      effects:
         - desc: Evasion AP cost -50%
           all: true
         - desc: Evasion speed & distance +100%
@@ -4341,7 +4520,7 @@
       maxHits: 4
     - name: "Sweep Trigger"
       picture: Sweep_Trigger
-      power: ATK x 890%
+      power: ATK x 980%
       ap: 32
       maxHits: 11
       
@@ -4362,7 +4541,7 @@
           priority: 1
           buff: AP Cost Reduction
           buffValue: 40
-    power: ATK x 4000%
+    power: ATK x 4500%
     maxHits: 6
 
 - name: Leon D.S. Gehste (Butler)
@@ -4385,12 +4564,12 @@
   talents:
     - name: "Selfish Butler"
       effects: 
-        - desc: Converts 50% of INT to ATK
+        - desc: Converts 60% of INT to ATK
           all: Attackers/Sharpshooters/Defenders
           meta:
             priority: 1
             buff: INT -> ATK
-            buffValue: 50
+            buffValue: 60
     - name: "Sensitive Listener"
       shortEffects: ATK/INT damage dealt +20% at long range (Party)
       effects: 
@@ -4411,6 +4590,7 @@
     - name: "Schedule Management"
       effects: 
         - desc: AP recovery +100%
+          all: false
           meta:
             priority: 1
             buff: AP Recovery
@@ -4421,14 +4601,16 @@
             priority: 1
             buff: AP Recovery
             buffValue: 50
+        - desc: Evasion AP cost -50%
+          all: false
     - name: "Professionalism"
       effects: 
         - desc: Nullifies charge assault critical damage penalty
-        - desc: Critical hit chance +40% when using charge assault
+        - desc: Critical hit chance +50% when using charge assault
           meta:
             priority: 1
             buff: Crit Rate
-            buffValue: 40
+            buffValue: 50
 
   skills:
     - name: "Flying Guillotine"
@@ -4443,13 +4625,13 @@
       maxHits: 5
     - name: "Dancing Sword"
       picture: Dancing_Sword
-      power: ATK x 1400%
+      power: ATK x 1540%
       ap: 53
       maxHits: 7
     - name: "Gremlin's lair"
       picture: Gremlin's_Lair_II
       element: Dark
-      power: ATK x 580%
+      power: ATK x 960%
       ap: 27
       maxHits: 6
       
@@ -4466,7 +4648,7 @@
           priority: 1
           buff: ATK Damage
           buffValue: 50
-    power: ATK x 4000%
+    power: ATK x 4500%
     maxHits: 10
 
 - name: Tika (Sharpshooter)
@@ -4580,7 +4762,7 @@
   star: 5
 
   stats:
-    hp: 18774
+    hp: 20339
     atk: 2962
     int: 1537
     def: 1575
@@ -4610,6 +4792,13 @@
             buff: Damage
             buffCondition: Hit Count > 250
             buffValue: 75
+        - desc: Damage dealt +85% when hitcount is >400
+          all: true
+          meta:
+            priority: 1
+            buff: Damage
+            buffCondition: Hit Count > 400
+            buffValue: 85
     - name: "Blue Metallic Shine"
       effects: 
         - desc: Normal attack AP recovery +100%
@@ -4637,15 +4826,21 @@
             buff: Damage Taken Reduction
             buffValue: 30
     - name: "Friend to all Machinery"
-      shortEffects: ATK +20% and HP +20%
       effects: 
-        - desc: HP/ATK +20%
+        - desc: ATK +20%
+          meta:
+            priority: 1
+            buffs:
+              - ATK
+            buffValue: 20
+        - desc: HP +30%
           meta:
             priority: 1
             buffs:
               - HP
-              - ATK
-            buffValue: 20
+            buffValue: 30
+        - desc: Additional hit that deals 5% of damage when using skills
+          all: true
 
   skills:
     - name: "Hammer Slammer"
@@ -4665,7 +4860,7 @@
       maxHits: 10
     - name: "Mujin-kun Rocket"
       picture: Mujin_kun_Rocket
-      power: ATK x 770%
+      power: ATK x 800%
       ap: 30
       maxHits: 5
       
@@ -4705,18 +4900,18 @@
   talents:
     - name: "Sweet Tips"
       effects: 
-        - desc: Damage dealt +30%
+        - desc: Damage dealt +35%
           all: true
           meta:
             priority: 1
             buff: Damage
-            buffValue: 30
-        - desc: Damage dealt +70% when not behind target
+            buffValue: 35
+        - desc: Damage dealt +75% when not behind target
           all: true
           meta:
             priority: 1
             buff: Damage
-            buffValue: 70
+            buffValue: 75
     - name: "Spunky Idol"
       effects: 
         - desc: AP recovery +100%
@@ -4734,7 +4929,7 @@
           all: true
     - name: "Passionate Red"
       effects: 
-        - desc: 85% chance of surviving a lethal attack when at 20% of max HP or more
+        - desc: 90% chance of surviving a lethal attack when at 20% of max HP or more
           all: true
     - name: "Melody Filled Thoughts"
       effects: 
@@ -4744,7 +4939,7 @@
   skills:
     - name: "Blade à la carte"
       picture: Dancing_Sword
-      power: ATK x 980%
+      power: ATK x 1240%
       ap: 30
       maxHits: 7
     - name: "Honey Spread"
@@ -4759,7 +4954,7 @@
       maxHits: 9
     - name: "Aerial à la mode"
       picture: Aerial_à_la_Mode
-      power: ATK x 770%
+      power: ATK x 980%
       ap: 24
       maxHits: 2
       
@@ -4800,30 +4995,30 @@
             priority: 1
             buff: Damage
             buffValue: 40
-        - desc: Damage dealt +70% when HP is 100%
+        - desc: Damage dealt +80% when HP is 100%
           all: true
           meta:
             priority: 1
             buff: Damage
             buffCondition: HP is 100%
-            buffValue: 70
+            buffValue: 80
     - name: "Westa's Kindness"
       effects: 
         - desc: Rush gauge fills 3% every 3 seconds
           all: true
     - name: "Silver Healing Hands"
       effects: 
-        - desc: AP recovery +100%
+        - desc: AP recovery +200%
           meta:
             priority: 1
             buff: AP Recovery
-            buffValue: 100
-        - desc: AP recovery +50%
+            buffValue: 200
+        - desc: AP recovery +100%
           all: true
           meta:
             priority: 1
             buff: AP Recovery
-            buffValue: 50
+            buffValue: 100
     - name: "Breath of the Calling Spring"
       effects: 
         - desc: 80% chance of surviving a lethal attack when at 20% of max HP or more
@@ -4848,7 +5043,7 @@
       maxHits: 3
     - name: "Bullet Rainfall"
       picture: Bullet_Rainfall
-      power: ATK x 970%
+      power: ATK x 1070%
       ap: 32
       maxHits: 14
       
@@ -4893,19 +5088,19 @@
   talents:
     - name: "Haneru Dance Furisode"
       effects: 
-        - desc: Damage dealt +40%
+        - desc: Damage dealt +45%
           all: true
           meta:
             priority: 1
             buff: Damage
-            buffValue: 40
-        - desc: Damage dealt +55% when hitcount is >100
+            buffValue: 45
+        - desc: Damage dealt +60% when hitcount is >100
           all: true
           meta:
             priority: 1
             buff: Damage
             buffCondition: Hit Count > 100
-            buffValue: 55
+            buffValue: 60
         - desc: Damage dealt +75% when hitcount is >250
           all: true
           meta:
@@ -4921,7 +5116,7 @@
           all: true
     - name: "Early Growing Bud"
       effects: 
-        - desc: Recovers 10% of max HP every 5 seconds
+        - desc: Recovers 10% of max HP every 4 seconds
           all: true
         - desc: 90% chance of surviving a lethal attack when at 10% of max HP or more
     - name: "Everyone, Let's be Friends!"
@@ -4958,7 +5153,7 @@
       maxHits: 8
     - name: "Satellite Ray"
       picture: Satellite_Ray
-      power: ATK x 980%
+      power: ATK x 1200%
       ap: 39
       maxHits: 8
       
@@ -4988,7 +5183,7 @@
 
   stats:
     hp: 13860
-    atk: 2962
+    atk: 3208
     int: 1601
     def: 1720
     hit: 1260
@@ -4997,26 +5192,26 @@
   talents:
     - name: "Motivation for Research"
       effects: 
-        - desc: Damage dealt +35%
+        - desc: Damage dealt +45%
           all: true
           meta:
             priority: 1
             buff: Damage
-            buffValue: 35
-        - desc: Damage dealt +50% when hitcount is >100
+            buffValue: 45
+        - desc: Damage dealt +60% when hitcount is >100
           all: true
           meta:
             priority: 1
             buff: Damage
             buffCondition: Hit Count > 100
-            buffValue: 50
-        - desc: Damage dealt +65% when hitcount is >250
+            buffValue: 60
+        - desc: Damage dealt +75% when hitcount is >250
           all: true
           meta:
             priority: 1
             buff: Damage
             buffCondition: Hit Count > 250
-            buffValue: 65
+            buffValue: 75
     - name: "Longing to Catch-up"
       effects: 
         - desc: Hitcount timer +2 seconds
@@ -5039,12 +5234,12 @@
             buffValue: 60
     - name: "Change and Stability"
       effects: 
-        - desc: ATK +20%
+        - desc: ATK +30%
           meta:
             priority: 1
             buff: ATK
-            buffValue: 20
-        - desc: AP +20
+            buffValue: 30
+        - desc: AP +40
 
   skills:
     - name: "Savage Sparrow"
@@ -5059,12 +5254,12 @@
       maxHits: 2
     - name: "Chaotic Blossoms"
       picture: Chaotic_Blossoms_I
-      power: ATK x 1480%
+      power: ATK x 1630%
       ap: 50
       maxHits: 11
     - name: "Crimson Squall"
       picture: Crimson_Squall_II
-      power: ATK x 1240%
+      power: ATK x 1290%
       ap: 42
       maxHits: 9
       
@@ -5085,7 +5280,7 @@
           priority: 1
           buff: AP Cost Reduction
           buffValue: 30
-    power: ATK x 5000%
+    power: ATK x 5500%
     maxHits: 12
 
 - name: Pericci (Valentine)
@@ -5114,13 +5309,13 @@
             priority: 1
             buff: Damage
             buffValue: 40
-        - desc: Damage dealt +50% at long range
+        - desc: Damage dealt +60% at long range
           all: true
           meta:
             priority: 1
             buff: Damage
             buffCondition: Long Range
-            buffValue: 50
+            buffValue: 60
     - name: "First Time Cooking"
       effects: 
         - desc: AP recovery +200% at short range
@@ -5128,12 +5323,12 @@
         - desc: AP recovery +100% at long range
           all: true
     - name: "Foot Race Date"
-      shortEffects: Rush combo damage +40% (Party/180s) and evasion AP cost -50% (Party)
+      shortEffects: Rush combo damage +50% (Party/180s) and evasion AP cost -80% (Party)
       effects: 
-        - desc: Rush combo damage +40% (180s)
+        - desc: Rush combo damage +50% (180s)
           all: true
           duration: 180
-        - desc: Evasion AP cost -50%
+        - desc: Evasion AP cost -80%
           all: true
     - name: "Heartful Tail"
       effects: 
@@ -5285,6 +5480,90 @@
     power: ATK x 4500%
     maxHits: 5
 
+- name: Vulcan S90 (Awakened)
+  cat: jp
+  rating: 8
+  picture: Valka
+  weapon: launcher
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 14070
+    atk: 2468
+    int: 1601
+    def: 1733
+    hit: 1260
+    grd: 917
+
+  talents:
+    - name: "Pride of Morse"
+      effects: 
+        - desc: Damage dealt +40%
+          all: true
+        - desc: Damage dealt +60% when hitcount is >150
+          all: true
+        - desc: Damage dealt +80% when hitcount is >300
+          all: true
+    - name: "Observer of the Daft Star System"
+      effects: 
+        - desc: Recovers AP for all allies when using skills
+    - name: "The Feeling of Obscurity"
+      effects: 
+        - desc: Additional hit that deals 5% more damage when using skills
+        - desc: AP recovery +150% when hitcount is >150
+    - name: "If its with Everyone"
+      effects: 
+        - desc: ATK/INT/DEF/HIT/GRD +20% when hitcount is >50
+        - desc: Damage taken -100% on perfect dodge (0.5s)
+          duration: 0.5
+    - name: "Precise Analysis"
+      effects: 
+        - desc: Rush combo DMG +30% when HC >= 400
+          all: true
+        - desc: No flinching when taking damage of 15% of max HP or less
+          all: true
+    - name: "Following In My Father’s Footsteps"
+      effects: 
+        - desc: Saint Buster damage +30%/+60% at Skill Chain 6/7+
+        - desc: DMG taken -50% at Skill Chain 6+
+          all: false
+
+  skills:
+    - name: "Starboard Scratch"
+      picture: Starboard_Scratch
+      power: ATK x 170%
+      ap: 13
+      maxHits: 5
+    - name: "Portside Scratch"
+      picture: Portside_Scratch
+      power: ATK x 170%
+      ap: 13
+      maxHits: 5
+    - name: "Thunder Arm"
+      picture: Thunder_Arm
+      element: Lightning
+      power: ATK x 520%
+      ap: 23
+      maxHits: 7
+    - name: "Saint Buster"
+      picture: Saint_Buster
+      power: ATK x 1250%
+      ap: 40
+      maxHits: 10
+      
+  rush:
+    name: "Dimension Striker"
+    picture: Dimension_Striker_Valka
+    shortEffects: Damage dealt +70% (Party/20s)
+    effects: 
+      - desc: Damage dealt +70%
+        all: true
+        duration: 20
+    power: ATK x 4500%
+    maxHits: 5
+
 - name: Sophia Esteed (Idol)
   cat: jp
   rating: 10
@@ -5296,24 +5575,24 @@
 
   stats:
     hp: 14175
-    atk: 2993
+    atk: 3118
     int: 1563
     def: 1720
-    hit: 1378
+    hit: 1504
     grd: 931
 
   talents:
     - name: "LOVE CONNECTION"
       effects: 
-        - desc: ATK/INT damage dealt +20%
+        - desc: ATK/INT damage dealt +30%
           all: true
           meta:
             priority: 1
             buffs:
               - ATK Damage
               - INT Damage
-            buffValue: 20
-        - desc: ATK/INT damage dealt +45% when not behind target
+            buffValue: 30
+        - desc: ATK/INT damage dealt +55% when not behind target
           all: true
           meta:
             priority: 1
@@ -5321,7 +5600,7 @@
               - ATK Damage
               - INT Damage
             buffCondition: Not Behind Target
-            buffValue: 45
+            buffValue: 55
     - name: "Caretaker of the Cats"
       effects: 
         - desc: AP cost -15% when not behind target
@@ -5358,18 +5637,18 @@
             buffCondition: Perfect Dodge
             buffValue: 100
     - name: "Feelings that Connect"
-      shortEffects: ATK +20% and HIT +10%
+      shortEffects: ATK +25% and HIT +20%
       effects: 
-        - desc: ATK +20%
+        - desc: ATK +25%
           meta:
             priority: 1
             buff: ATK
-            buffValue: 20
-        - desc: HIT +10%
+            buffValue: 25
+        - desc: HIT +20%
           meta:
             priority: 1
             buff: HIT
-            buffValue: 10
+            buffValue: 20
 
   skills:
     - name: "Shocking Scratch"
@@ -5390,7 +5669,7 @@
       maxHits: 10
     - name: "Nyastice Savior"
       picture: Skill_Placeholder
-      power: ATK x 710%
+      power: ATK x 740%
       ap: 39
       maxHits: 6
       
@@ -7174,7 +7453,7 @@
     power: ATK x 4500%
     maxHits: 1
 
-- name: Miki Sauvester (Valntine)
+- name: Miki Sauvester (Valentine)
   cat: jp
   picture: Miki_Valentine
   weapon: arm
