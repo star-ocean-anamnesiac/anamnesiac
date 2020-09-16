@@ -5905,3 +5905,69 @@
       - desc: ATK/INT DMG dealt +50% (party/20s)
     power: INT x 6000%
     maxHits: 7
+
+- name: Rena Lanford (Star God)
+  cat: jp
+  picture: Stargod_Rena
+  weapon: knuckle
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15436
+    atk: 2704
+    int: 2704
+    def: 1916
+    hit: 1162
+    grd: 833
+
+  talents:
+    - name: "Secret Pendant"
+      effects:
+        - desc: INT +45/75% at 0/200+ Hits (Party)
+        - desc: ATK +1250 (Party)
+        - desc: Critical chance +50% at HC ≥ 500 (Party)
+    - name: "Blue Veil"
+      effects:
+        - desc: Recover 20AP after using Skill3 (Self)
+        - desc: Start with 2 Orders (Party)
+        - desc: 10% Additional Hit on Skills (Party)
+    - name: "Efforts of Researcher"
+      effects:
+        - desc: 2% Drain on Skills at 100+ Hits INT +40% at 300+ Hits (Self)
+        - desc: After 60s in Battle, AP -50% (Self)
+    - name: "Thoughts to Entrust the Future"
+      effects:
+        - desc: Move speed +50
+        - desc: Able to move at 90% speed while casting (Self)
+   
+  skills:
+    - name: "Heavenly Punisment"
+      picture: Skill_Placeholder
+      power: INT x 940%
+      ap: 32
+      maxHits: 10
+    - name: "Starlight Cross"
+      picture: Skill_Placeholder
+      power: INT x 790%
+      ap: 36
+      maxHits: 10
+    - name: "Stardust Shoot"
+      picture: Skill_Placeholder
+      power: INT x 970%
+      ap: 40
+      maxHits: 16
+    - name: "Energy Arrow"
+      picture: Skill_Placeholder
+      power: INT x 320%
+      ap: 17
+      maxHits: 4
+
+  rush:
+    name: "Light Cross"
+    picture: Rush_Placeholder
+    effects:
+      - desc: Revive (Invokers), Crit +100% (Party/10s)
+    power: INT x 5000%
+    maxHits: 14
