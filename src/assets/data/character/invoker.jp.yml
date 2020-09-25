@@ -5971,3 +5971,70 @@
       - desc: Revive (Invokers), Crit +100% (Party/10s)
     power: INT x 5000%
     maxHits: 14
+
+- name: Lezard (Transcedental)
+  cat: jp
+  picture: T_Lezard
+  weapon: tome
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 12495
+    atk: 1549
+    int: 3567
+    def: 1365
+    hit: 1043
+    grd: 819
+
+  talents:
+    - name: "The Power of the God"
+      effects:
+        - desc: 50% ATK>INT (Invokers/Healers)
+        - desc: 50% INT>ATK (Attackers/Shooters/Defenders)
+    - name: "Odin's Soul"
+      effects:
+        - desc: 3%/3s Rush Regen
+        - desc: Rush DMG +40% at 300+ Hits
+        - desc: AP Regen +150% (Party)
+        - desc: Able to move at 90% Movespeed while casting (Self)
+    - name: "Existence That Transcends Everything"
+      effects:
+        - desc: After Skill2, Order Gain +50% (Self/20s)
+        - desc: 5% Drain on Skill1
+    - name: "Those Who Seek Ruins"
+      effects:
+        - desc: INT +30%, AP +40 (Stat Page), 90/10 Guts (Self)
+        - desc: CA Skip 300%
+        - desc: INT +35% at 250+ Hits (Self)
+   
+  skills:
+    - name: "Cool Dancel"
+      picture: Skill_Placeholder
+      power: INT x 600%
+      ap: 23
+      maxHits: 3
+    - name: "Super Fire Lance"
+      picture: Skill_Placeholder
+      power: INT x 550%
+      ap: 19
+      maxHits: 2
+    - name: "Absolute Zero"
+      picture: Skill_Placeholder
+      power: INT x 1200%
+      ap: 58
+      maxHits: 9
+    - name: "Super Explosion"
+      picture: Skill_Placeholder
+      power: INT x 1500%
+      ap: 70
+      maxHits: 1
+
+  rush:
+    name: "Logland Trigger"
+    picture: Rush_Placeholder
+    effects:
+      - desc: Start at 100 Hits, ATK/INT DMG +50% (Party/20s)
+    power: INT x 7000%
+    maxHits: 5
