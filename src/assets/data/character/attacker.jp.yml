@@ -11102,3 +11102,71 @@
       - desc: ATK DMG Taken +50%, INT DMG Taken +30% (Enemies/20s)
     power: ATK x 7000%
     maxHits: 9
+
+- name: Valkyrie
+  cat: jp
+  picture: Valkyrie
+  weapon: ohs
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 18774
+    atk: 3276
+    int: 1601
+    def: 1930
+    hit: 1134
+    grd: 819
+
+  talents:
+    - name: "Four Souls"
+      effects:
+        - desc: Effect of Skill1 AF Increased to ALL +50% at 100+ Hits.
+        - desc: AP -60% After any dodge (Self/10s)
+        - desc: Recover 50AP to Party after perfect dodge
+    - name: "Causality of the World"
+      effects:
+        - desc: Assist Uses +1
+        - desc: Start with 1 Order
+        - desc: Start with 100% Rush Gauge (Party)
+    - name: "Condemnation of the Soul"
+      effects:
+        - desc: Maintain CB after non-consecutive dodges, Able to Airdodge
+        - desc: Recover 15% HP after any dodge 
+        - desc: 90/10 Guts
+    - name: "The Future You Want"
+      effects:
+        - desc: ATK +20%
+        - desc: HP +20% (Stat Page)
+        - desc: ATK +35% after perfect dodge (Self/10s)
+
+  skills:
+    - name: "Gusto Window"
+      picture: Skill_Placeholder
+      power: ATK x 350% 
+      ap: 19
+      maxHits: 1
+    - name: "Growing Piercing"
+      picture: Skill_Placeholder
+      power: ATK x 200%
+      ap: 15
+      maxHits: 3
+    - name: "Turnaround"
+      picture: Skill_Placeholder
+      power: ATK x 320%
+      ap: 17
+      maxHits: 1
+    - name: "Trinity Edge Crusade"
+      picture: Skill_Placeholder
+      power: ATK x 1000%
+      ap: 32
+      maxHits: 3
+
+  rush:
+    name: "Nibeln Valesti Giant Spear"
+    picture: Rush_Placeholder
+    effects:
+      - desc: Crit and Crit DMG +50% (Party/20s)
+    power: ATK x 6000%
+    maxHits: 2
