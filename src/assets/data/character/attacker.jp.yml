@@ -11167,3 +11167,73 @@
       - desc: Crit and Crit DMG +50% (Party/20s)
     power: ATK x 6000%
     maxHits: 2
+
+- name: Reimi Saionji (Maid)
+  cat: jp
+  picture: Maid_Reimi
+  weapon: axe
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15435
+    atk: 2744
+    int: 1549
+    def: 1943
+    hit: 1127
+    grd: 847
+
+  talents:
+    - name: "Strict Educator"
+      effects:
+        - desc: INT +25/45% at 200/400+ Hits (Party)
+        - desc: 75% INT > ATK Conversion (Attackers/Defenders/Sharpshooters)
+    - name: "Specialties That Cannot be Hidden"
+      effects:
+        - desc: 10% Double Hit on Skills, 3%/3s Rush Regen (Party)
+        - desc: AP -30% at 100+ Hits (Party), AP -60% at 100+ Hits (Self)
+    - name: "Oversleeping is Not Allowed"
+      effects:
+        - desc: Hitcount Timer +3s (Party)
+        - desc: 90% chance of surviving a lethal attack when at 10% of max HP or more (Self) 
+        - desc: CAing from S to L range recovers 10% HP (Self)
+    - name: "Love Whip"
+      effects:
+        - desc: After triggering Vanguard, ATK +20% (Self/10s)
+        - desc: CA Skip 200% (Self)
+        - desc: When mReimi is hit Recover 20AP to the Party
+    - name: "Vanguard [Mastery]"
+      effects:
+        - desc: CAing from L to S Range applies Crit +30% (Self/3s)
+        - desc: CA Crit Null, CA Superarmor
+
+  skills:
+    - name: "Buy Fin Edge"
+      picture: Skill_Placeholder
+      power: ATK x 220% 
+      ap: 18
+      maxHits: 2
+    - name: "Tyrant Combo"
+      picture: Skill_Placeholder
+      power: ATK x 310%
+      ap: 22
+      maxHits: 6
+    - name: "Vortex Airborn"
+      picture: Skill_Placeholder
+      power: ATK x 900%
+      ap: 43
+      maxHits: 8
+    - name: "Punishment Meetia"
+      picture: Skill_Placeholder
+      power: ATK x 1080%
+      ap: 46
+      maxHits: 11
+
+  rush:
+    name: "Charge! Cleaning Maid Corpse"
+    picture: Rush_Placeholder
+    effects:
+      - desc: ATK DMG Taken +50%, INT DMG Taken +30% (Enemies/20s)
+    power: ATK x 5000%
+    maxHits: 14
