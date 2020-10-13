@@ -4390,3 +4390,71 @@
       - desc: Critical chance +50% and Critical DMG +50% (party/20s)
     power: ATK x 5000%
     maxHits: 7
+
+- name: Arumat Thanatos (Butler)
+  cat: jp
+  picture: Butler_Arumat
+  weapon: greatsword
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 30398
+    atk: 3041
+    int: 1523
+    def: 2560
+    hit: 805
+    grd: 1043
+
+  talents:
+    - name: "Butler Fighting"
+      effects: 
+        - desc: Crit +40/60% at 0/250+ Hits (Party)
+        - desc: Crit DMG +40% (Party)
+    - name: "Elder Style Manners"
+      effects: 
+        - desc: DMG Taken -30%, 25% HP Superarmor (Party)
+        - desc: Start with 100% Rush Gauge (Party)
+    - name: "Unexpected Loyal Retainer"
+      effects: 
+        - desc: Recover 50AP to Self when hit
+        - desc: Crit +100% at SC 6+ (Self)
+        - desc: 3% Drain on Skills at SC ≥ 3
+    - name: "The Bridge That Protects the Master"
+      shortEffects: 
+      effects: 
+        - desc: ATK +20%, HP +50% (Stat Page)
+        - desc: ATK +20% at 200+ Hits (Self)
+        - desc: When bArumat is hit, Apply DMG Taken -50% to the Party (5s), Superarmor while attacking (Self)
+  
+  skills:
+    - name: "Hollow Claws"
+      picture: Skill_Placeholder
+      power: ATK x 160%
+      ap: 16
+      maxHits: 1
+    - name: "Destruction of Spirits"
+      picture: Skill_Placeholder
+      power: ATK x 240%
+      ap: 20
+      maxHits: 1
+    - name: "Double Slashing"
+      picture: Skill_Placeholder
+      power: ATK x 300%
+      ap: 22
+      maxHits: 5
+    - name: "Red Flash"
+      picture: Skill_Placeholder
+      power: ATK x 850%
+      ap: 30
+      maxHits: 4
+      
+  rush:
+    name: "Guard Fang Zhu"
+    picture: Rush_Placeholder
+    effects: 
+      - desc: Start at 100 Hit
+      - desc: AP -50% (Party/20s)
+    power: ATK x 6000%
+    maxHits: 3

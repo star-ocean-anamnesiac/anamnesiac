@@ -6494,12 +6494,12 @@
         - desc: INT +35% at 250+ Hits (Self)
    
   skills:
-    - name: "Cool Dancel"
+    - name: "Cool Damsel"
       picture: Skill_Placeholder
       power: INT x 600%
       ap: 23
       maxHits: 3
-    - name: "Super Fire Lance"
+    - name: "Transcended Fire Lance"
       picture: Skill_Placeholder
       power: INT x 550%
       ap: 19
@@ -6509,14 +6509,14 @@
       power: INT x 1200%
       ap: 58
       maxHits: 9
-    - name: "Super Explosion"
+    - name: "Transcended Explosion"
       picture: Skill_Placeholder
       power: INT x 1500%
       ap: 70
       maxHits: 1
 
   rush:
-    name: "Logland Trigger"
+    name: "Grand Trigger"
     picture: Rush_Placeholder
     effects:
       - desc: Start at 100 Hits, ATK/INT DMG +50% (Party/20s)
