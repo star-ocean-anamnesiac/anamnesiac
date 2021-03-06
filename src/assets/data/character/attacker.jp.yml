@@ -6214,13 +6214,13 @@
 
 - name: Nel Zelpher (Maid)
   cat: jp
-  rating: 1
+  rating: 1       
   picture: Main_Nel
   weapon: bns
-  ace: true
+  ace: true     
   limited: true
-  star: 5
-
+  star: 5 
+  
   stats:
     hp: 15750
     atk: 2704
@@ -10187,7 +10187,8 @@
   talents:
     - name: "Smiling Greatsword Master"
       effects:
-        - desc: ATK +500, +1000 at HC 200+
+        - desc: ATK +1000, +1250 at HC 150+
+        - desc: Rush gauge full at the start of mission
           all: true
     - name: "Blue White Tensuke"
       effects:
@@ -10195,8 +10196,8 @@
         - desc: AP recovery when triggering Interupt mastery
     - name: "Captivating Honey"
       effects:
-        - desc: Deal 5% additional damage from skills (Self)
-        - desc: ATK +30% at HC 200+, +60% at HC 400+
+        - desc: Deal 10% additional damage from skills (Self)
+        - desc: ATK +35% at HC 200+, +65% at HC 400+
     - name: "Best Friend"
       effects:
         - desc: AP +40
@@ -10225,7 +10226,7 @@
     - name: "Freezing Poison"
       picture: Skill_Placeholder
       element: Ice
-      power: ATK x 750%
+      power: ATK x 780%
       ap: 32
       maxHits: 11
 
@@ -10236,7 +10237,7 @@
     effects:
       - desc: AP cost -65% (self/20s)
         duration: 20
-    power: ATK x 4500%
+    power: ATK x 7500%
     maxHits: 6
 
 - name: Erys Jerand (Valentine)
