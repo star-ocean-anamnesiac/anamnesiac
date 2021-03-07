@@ -11241,3 +11241,61 @@
       - desc: ATK DMG Taken +50%, INT DMG Taken +30% (Enemies/20s)
     power: ATK x 5000%
     maxHits: 14
+
+- name: Freya (Frei EN)
+  cat: jp
+  picture: -
+  weapon: greatsword
+  star: 5
+
+  stats:
+    hp: -
+    atk: -
+    int: -
+    def: -
+    hit: -
+    grd: -
+
+  talents:
+    - name: "Eyes That Perceive Truth"
+      effects: 
+        - desc: +1000 ATK/INT (Party)
+        - desc: +1850 ATK at HC 150+ (Party)
+        - desc: -850 ATK when Freya takes damage of 1%++ of health (Party)
+         
+    - name: "Manuscript Delivering Blade"
+      effects:
+        - desc: Assist +2
+        - desc: 3%/3s rush recovery (Party)
+        - desc: -30% AP when Freya activates VG (Party/4s)
+        
+     - name: "Childhood & Charity"
+      effects:
+        - desc: -100% DMG Taken after dodging (1s)
+        - desc: CA CB 200%
+        - desc: -80% AP on dodge
+        - desc: Slightly recover AP when activating VG
+        
+      - name: "Curse of Unleashed Wisdom"
+        effects:
+         - desc: +30% ATK and +20% HP
+         - desc: Mantain CB after 2 dodges
+         
+       - name: "Vanguard / Freya"
+        effects:
+          - desc: +15% ATK when activating VG (4s)
+          - desc: Anti flinch while CAing
+          - desc: CA Crit Null
+          
+  skills:
+    - name: -
+
+  rush:
+    name: "Liquidation"
+    picture: -
+    effects:
+      - desc: Cure conditions & Status immunity (Party) | +65% Crit (Party)
+        duration: 20
+        all: true
+    power: ATK x 6500%
+    maxHits: -
