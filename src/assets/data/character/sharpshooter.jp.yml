@@ -7402,7 +7402,8 @@
   talents:
     - name: "Inevitable Sniper"
       effects:
-        - desc: DMG dealt +30%, +80% at 100% HP
+        - desc: DMG dealt +40%, +90% at 100% HP
+        - desc: Order charge +30% when Nel is at SC3+ (Party)
           all: true
           meta:
             priority: 1
@@ -7410,17 +7411,17 @@
             buffValue: 80
     - name: "Zhu Xuan's Hakka Tiger"
       effects:
-        - desc: Recover 20% AP by The Secret Civilization
+        - desc: Recover 20% AP by Skill #3
         - desc: AP cost -30% at SC 3+ (party)
-        - desc: Recover 10% HP when Chinese new year Nel is at SC 3+ (party)
+        - desc: Recover 15%/3s HP regen when Chinese new year Nel is at SC 3+ (party)
     - name: "The Secret Civilization"
       effects:
         - desc: Critical chance +30% at SC 4+, +60% at SC 6+
         - desc: AP cost -50% at SC 5+, -70% at SC 7+
     - name: "Dear Friend"
       effects:
-        - desc: Skill Chain is kept for 1 dodge
-        - desc: Anti flinch and DMG taken -40% while attacking
+        - desc: Skill Chain is kept for 2 dodge
+        - desc: Anti flinch and DMG taken -50% while attacking
     
   skills:
     - name: "Behind the Dragon"
@@ -7450,7 +7451,7 @@
     picture: Rush_Placeholder
     effects:
       - desc: Recover 30% HP | ATK/INT DMG +50% (party/20s)
-    power: ATK x 4500%
+    power: ATK x 5500%
     maxHits: 1
 
 - name: Miki Sauvester (Valentine)
