@@ -11241,3 +11241,76 @@
       - desc: ATK DMG Taken +50%, INT DMG Taken +30% (Enemies/20s)
     power: ATK x 5000%
     maxHits: 14
+
+- name: Frei
+  cat: jp
+  picture: Char_Placeholder_M_Valka
+  weapon: greatsword
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 22458
+    atk: 6805
+    int: 3966
+    def: 2693
+    hit: 1317
+    grd: 1006
+
+  talents:
+    - name: "Eyes that perceive truth"
+      effects:
+        - desc: +1000 ATK/INT (Party)
+        - desc: +1850 ATK at HC 150+ (Party)
+        - desc: -850 ATK when Frei taking DMG 1%+ of HP (Party)
+    - name: "Manuscript Delivering Blade"
+      effects:
+        - desc: Assist +2
+        - desc: RCV 3% RUSH /3s
+        - desc: -30% AP when Frei activated VG (Party/4s)
+    - name: "Childhood & Charity"
+      effects:
+        - desc: -100% DMG taken after dodge (1s)
+        - desc: CA CB 200%
+        - desc: -80% AP on dodge
+        - desc: Slightly RCV AP when VG
+    - name: "Curse of Unleashed Wisdom"
+      effects:
+        - desc: +30% ATK | +20% HP
+        - desc: Maintain CB after 2 dodges
+    - name: "Vanguard [Mastery]"
+      effects:
+        - desc: +15% ATK when activate VG (4s)
+        - desc: Antiflinch while CA
+        - decs: CA Crit null
+
+  skills:
+    - name: "1"
+      picture: Skill_Placeholder
+      power: ATK x 410% 
+      ap: 18
+      maxHits: 10
+    - name: "2"
+      picture: Skill_Placeholder
+      power: ATK x 500%
+      ap: 22
+      maxHits: 6
+    - name: "3"
+      picture: Skill_Placeholder
+      power: ATK x 530%
+      ap: 43
+      maxHits: 8
+    - name: "4"
+      picture: Skill_Placeholder
+      power: ATK x 1120%
+      ap: 28
+      maxHits: 6
+
+  rush:
+    name: "Liquidation"
+    picture: Rush_Placeholder
+    effects:
+      - desc: Cure condition & Status immunity (Party/20s) | +65% Crit (Party/20s)
+    power: ATK x 6500%
+    maxHits: 6
