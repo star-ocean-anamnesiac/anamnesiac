@@ -10320,8 +10320,8 @@
   star: 5
 
   stats:
-    hp: 18648
-    atk: 3245
+    hp: 19425
+    atk: 3380
     int: 1575
     def: 1943
     hit: 1162
@@ -10330,20 +10330,22 @@
   talents:
     - name: "Hot Spring Beauty"
       effects:
-        - desc: ATK +15%, +80% during Rush Combo (party)
-        - desc: AP cost -25% at long range (party)
+        - desc: ATK +25%, +85% during Rush Combo (party)
+        - desc: AP cost -40% at long range (party)
     - name: "Flank Hem"
       effects:
         - desc: DMG taken -100% on Flying Eagle Claw (self/ 1s)
         - desc: Rush DMG +80% at 100% HP and HC > 300 (self)
     - name: "Beautiful Skin"
       effects:
-        - desc: Additional hit 5% on skills at Sc > 4 (self)
+        - desc: Additional hit 5% on skills at SC > 4 (self)
         - desc: HP recovery 2% on Jumping Spirits - Light Bullets at SC > 5 (self)
     - name: "Double Memories"
       effects:
-        - desc: ATK +20%, HP +20%, AP +40
-        - desc: Anti flinch while attacking 
+        - desc: ATK +25%, HP +25%, AP +40
+        - desc: ATK +35% during Rush at 100% HP
+        - desc: AP recovery speed +150%
+        - desc: Anti flinch while attacking
         - desc: Able to air dodge (self)
 
   skills:
@@ -10355,7 +10357,7 @@
     - name: "Flying Eagle Claws"
       picture: Skill_Placeholder
       power: ATK x 600%
-      ap: 25
+      ap: 26
       maxHits: 10
     - name: "Kurotaka Rotation"
       picture: Skill_Placeholder
@@ -10364,7 +10366,7 @@
       maxHits: 4
     - name: "Light Bullets"
       picture: Skill_Placeholder
-      power: ATK x 750%
+      power: ATK x 780%
       ap: 31
       maxHits: 4
 
@@ -10372,8 +10374,8 @@
     name: "Shakukei / Yuyu"
     picture: Rush_Placeholder
     effects:
-      - desc: HC start at 75 | ATK +80% (Self/20s)
-    power: ATK x 5500%
+      - desc: HC starts at 75 | ATK +80% (Self/20s)
+    power: ATK x 6500%
     maxHits: 12
 
 - name: Fayt Leingod (Winged)
@@ -10395,12 +10397,14 @@
   talents:
     - name: "Heavenly Smoke wing"
       effects:
-        - desc: ATK +1000, +1500 at HC > 350 (party)
-        - desc: ATK +1750 during Order Countdown (party)
+        - desc: ATK +1200, +1700 at HC > 350 (party)
+        - desc: ATK +1850 during Order Countdown (party)
     - name: "Shinha's Heart"
       effects:
         - desc: At Start of Mission Gain 2 Orders
         - desc: During Order Countdown AP -70% (party)
+        - desc: Order gain +30% at HC > 100 (party)
+        - desc: Able to air dodge (self)
     - name: "Frontier of Swordmanship"
       effects:
         - desc: CA From Long to Short Range Recovers 15AP
@@ -10424,12 +10428,12 @@
       maxHits: 1
     - name: "Sword Dance Wings"
       picture: Skill_Placeholder
-      power: ATK x 1180%
+      power: ATK x 1290%
       ap: 36
       maxHits: 10
     - name: "Celestial"
       picture: Skill_Placeholder
-      power: ATK x 1480%
+      power: ATK x 1620%
       ap: 37
       maxHits: 9
 
@@ -10438,7 +10442,7 @@
     picture: Rush_Placeholder
     effects:
       - desc: HC start at 100 | DMG dealt +80% (Party/20s)
-    power: ATK x 4500%
+    power: ATK x 5000%
     maxHits: 5
 
 - name: Sakura Amamiya
