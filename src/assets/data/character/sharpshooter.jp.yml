@@ -7256,7 +7256,7 @@
   talents:
     - name: "Radiant Flower Dress"
       effects:
-        - desc: DMG dealt +30%, +55% at 150+ HC, +80% at 300+ HC
+        - desc: DMG dealt +40%, +65%/90% at HC >150/300 (party)
           all: true
           meta:
             priority: 1
@@ -7264,14 +7264,15 @@
             buffValue: 80
     - name: "Red Dance Shoes"
       effects:
-        - desc: Order Gauge +1
+        - desc: Start with 2 Orders
         - desc: AP cost -70% during order countdown (party)
         - desc: Assist +1 (party)
     - name: "Inviting Dance"
       effects:
         - desc: AP recovery +100%
-        - desc: Air dodge
-        - desc: DMG taken -100% on dodge (0.5s)
+        - desc: AP recovery while walking (party)
+        - desc: Air dodge (self)
+        - desc: DMG taken -100% on dodge (self, 0.5s)
     - name: "Society's New Face"
       effects:
         - desc: Nullify critical dmg penalty when Charge Assault
@@ -7283,7 +7284,7 @@
   skills:
     - name: "Cutie Drive"
       picture: Skill_Placeholder
-      power: ATK x 350%
+      power: ATK x 330%
       ap: 21
       maxHits: 5
     - name: "Pretty Cluster"
@@ -7300,7 +7301,7 @@
       maxHits: 10
     - name: "Princess Cannon"
       picture: Skill_Placeholder
-      power: ATK x 1000%
+      power: ATK x 1030%
       ap: 29
       maxHits: 4
 
@@ -7309,7 +7310,7 @@
     picture: Rush_Placeholder
     effects:
       - desc: ATK +50%, INT DMG taken +30% (enemies/20s)
-    power: ATK x 4500%
+    power: ATK x 5000%
     maxHits: 1
 
 - name: Maria Traydor (Winter)
@@ -7321,7 +7322,7 @@
   star: 5
 
   stats:
-    hp: 14070
+    hp: 16884
     atk: 3276
     int: 1563
     def: 1706
@@ -7331,18 +7332,13 @@
   talents:
     - name: "Ice Crushing Bullet"
       effects:
-        - desc: DMG dealt +40%, +60% at 150+ HC, +75% at 300+ HC
-          all: true
-          meta:
-            priority: 1
-            buff: Damage
-            buffValue: 75
-        - desc: Echo by skills +5% (party)
+        - desc: DMG dealt +50%/65%/80% at HC > 100/200/300 HC (party)
+        - desc: Echo by skills +10% (party)
     - name: "Genial Gift"
       effects:
-        - desc: AP cost -40% while airborne
-        - desc: Air dodge
-        - desc: AP cost -80% on dodge while airborne
+        - desc: AP cost -40% while Maria is airborne (party)
+        - desc: Air dodge (self)
+        - desc: AP cost -80% on dodge while airborne (self)
     - name: "Dancing Santa of the Holy Night"
       effects:
         - desc: Critical chance +50% at SC 3+, + 100% at SC 6+
@@ -7350,8 +7346,8 @@
     - name: "Dreams of Embrace"
       effects:
         - desc: Nullify Critical DMG Penalty when Charge Assault
-        - desc: ATK +30%
-        - desc: ATK +20% at 200+ HC
+        - desc: ATK +30%, HP +20%
+        - desc: ATK +25% at HC > 200
     
   skills:
     - name: "Flying Blaze"
@@ -7369,10 +7365,10 @@
       power: ATK x 280%
       ap: 22
       maxHits: 3
-    - name: "Prime Emissioin"
+    - name: "Prime Emission"
       picture: Skill_Placeholder
-      power: ATK x 490%
-      ap: 39
+      power: ATK x 520%
+      ap: 30
       maxHits: 8
 
   rush:
@@ -7380,7 +7376,7 @@
     picture: Rush_Placeholder
     effects:
       - desc: Hit Count +100, ATK DMG +50% (party/ 20s)
-    power: ATK x 5500%
+    power: ATK x 6000%
     maxHits: 10
 
 - name: Nel Zelpher (Chinese New Year)
@@ -7471,32 +7467,28 @@
     grd: 938
 
   talents:
-    - name: "Xinghai Chocolatier"
+    - name: "Star Ocean Chocolatier"
       effects:
-        - desc: DMG dealt +35%, +60% at HC > 150
-          all: true
-          meta:
-            priority: 1
-            buff: Damage
-            buffValue: 60
-        - desc: DMG dealt +85% when enemy gets stunned (party/ 30s)
+        - desc: DMG dealt +40%, +65% at HC > 150 (party)
+        - desc: DMG dealt +90% when enemy gets stunned (party/ 30s)
     - name: "Faint Sweetness"
       effects:
-        - desc: During Rush Combo, stun rate +50%, +70% at HC > 200 (party)
+        - desc: During Rush Combo, stun rate +50%, +70% at HC > 150 (party)
+        - desc: Start with 100% Rush (party)
     - name: "Make 3 and Eat 2"
       effects:
         - desc: AP recovery 20% on Lovely Tuner (party)
         - desc: Apply AP cost -70% when an enemy gets stunned (party/ 10s)
     - name: "Happiness Sweet"
       effects:
-        - desc: AP recovery +150% at long range
+        - desc: AP recovery +150% at long range (party)
         - desc: Movement speed + 50%
         - desc: 90% chance of surviving a lethal attack when at 10% of max HP or more (self)
     
   skills:
     - name: "Lovely Tunner"
       picture: Skill_Placeholder
-      power: ATK x 1550%
+      power: ATK x 1580%
       ap: 34
       maxHits: 7
     - name: "Charming Pose"
@@ -7507,7 +7499,7 @@
     - name: "Baria Sweet"
       picture: Skill_Placeholder
       power: ATK x 350%
-      ap: 15
+      ap: 16
       maxHits: 10
     - name: "Blurred Attack"
       picture: Skill_Placeholder
@@ -7520,7 +7512,7 @@
     picture: Rush_Placeholder
     effects:
       - desc: ATK DMG +60% (party/ 20s)
-    power: ATK x 4500%
+    power: ATK x 5500%
     maxHits: 6
 
 - name: Rena Lanford (Onsen)
@@ -7542,8 +7534,8 @@
   talents:
     - name: "Guardian Deity of Bathtub"
       effects:
-        - desc: Effect of Hide Burst Growth increased to ATK +40% at 100% HP (party)
-        - desc: Effect of Hide Burst Growth increased to ATK +70% at 100% HP during rush (party)
+        - desc: Effect of Hide Burst Growth increased to ATK +45% at 100% HP (party)
+        - desc: Effect of Hide Burst Growth increased to ATK +75% at 100% HP during rush (party)
     - name: "Nape Peeping"
       effects:
         - desc: AP recovery on skills (party)
@@ -7554,38 +7546,40 @@
         - desc: HP recovery 15% on Capsule scatter (party)
     - name: "Gift From Claude"
       effects:
-        - desc: ATK DMG taken -25%, DMG taken -25% (self)
-        - desc: Dodge AP cost -80% (self)
         - desc: Anti flinch while attacking (self)
+        - desc: DMG taken -40% (self)
+        - desc: ATK DMG taken -25% (self)
+        - desc: Dodge AP cost -80% (self)
+        - desc: Gain 3% Rush every 3 seconds (party)
     
   skills:
     - name: "Alpha on One"
       picture: Skill_Placeholder
-      power: ATK x 1550%
-      ap: 34
-      maxHits: 7
+      power: ATK x 370%
+      ap: 12
+      maxHits: 5
     - name: "Hide Burst Growth"
       picture: Skill_Placeholder
-      power: ATK x 650%
-      ap: 24
-      maxHits: 5
+      power: ATK x 540%
+      ap: 16
+      maxHits: 7
     - name: "Capsule Scatter"
       picture: Skill_Placeholder
-      power: ATK x 350%
-      ap: 15
-      maxHits: 10
+      power: ATK x 870%
+      ap: 29
+      maxHits: 5
     - name: "Boiling Geyser"
       picture: Skill_Placeholder
-      power: ATK x 220%
-      ap: 18
-      maxHits: 6
+      power: ATK x 1330%
+      ap: 33
+      maxHits: 4
 
   rush:
     name: "Steam Sniper"
     picture: Rush_Placeholder
     effects:
       - desc: Critical chance +100% (party/ 10s)
-    power: ATK x 4500%
+    power: ATK x 5500%
     maxHits: 6
 
 - name: Palma Anastasia
