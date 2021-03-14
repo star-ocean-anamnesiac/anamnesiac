@@ -5695,7 +5695,7 @@
   picture: Blue_Sphere_Leon_Copy
   weapon: tome
   ace: true
-  limited: true
+  limited: false
   star: 5
 
   stats:
@@ -5786,6 +5786,87 @@
           buff: AP Cost Reduction
           buffValue: 70
     power: INT x 4500%
+    maxHits: 11
+
+- name: Leon D.S. Gehste (Blue Sphere) (Awakened)
+  cat: jp
+  picture: Blue_Sphere_Leon_Copy
+  weapon: tome
+  ace: true
+  limited: false
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 12390
+    atk: 1575
+    int: 2718
+    def: 1365
+    hit: 1043
+    grd: 819
+
+  talents:
+    - name: "Genius Scientist"
+      effects:
+        - desc: INT +40%, +65% at hit count > 150 (party)
+        - desc: ATK +40%, +65% at hit count > 150 (party)
+    - name: "Life in a New World"
+      effects:
+        - desc: Critical chance +50% at HC > 250 (party)
+        - desc: Echo by skills 10% (party)
+    - name: "The Growing Flower"
+      effects:
+        - desc: AP cost -25%/40% at HC > 50/150 (party)
+        - desc: AP regen +100% (party)
+        - desc: AP recovery while walking (party)
+    - name: "My Feeling For My Home"
+      effects:
+        - desc: Cast time -90% at long range
+        - desc: 90% chance of surviving a lethal attack when at 10% of max HP or more
+    - name: "Open Heart"
+      effects:
+        - desc: Maintain CB after up to 2 consecutive dodges
+        - desc: Dodge AP cost -80%
+        - desc: Rush combo damage +40%/80% at HC > 250/350
+    - name: "Knowledge gained on advanced planets"
+      effects:
+        - desc: 80% chance of surviving a lethal attack when at 10% HP or more (party)
+        - desc: Hit counter +3 seconds (party)
+        - desc: Recovers 25% HP to all allies after using Dark Passage
+
+  skills:
+    - name: "Shadow Bolt"
+      picture: Skill_Placeholder
+      element: Dark
+      power: INT x 210%
+      ap: 18
+      maxHits: 3
+    - name: "Woons Reaper"
+      picture: Skill_Placeholder
+      element: Dark
+      power: INT x 590%
+      ap: 28
+      maxHits: 2
+    - name: "Shadow Flare"
+      picture: Skill_Placeholder
+      element: Dark
+      power: INT x 740%
+      ap: 39
+      maxHits: 5
+    - name: "Dark Passage"
+      picture: Skill_Placeholder
+      element: Dark
+      power: INT x 950%
+      ap: 48
+      maxHits: 10
+
+  rush:
+    name: "Word of Death"
+    picture: Rush_Placeholder
+    element: Dark
+    effects:
+      - desc: AP cost -70% (party, 7s)
+    power: INT x 5500%
     maxHits: 11
 
 - name: Futaba
@@ -6496,21 +6577,25 @@
   skills:
     - name: "Cool Damsel"
       picture: Skill_Placeholder
+      element: Ice
       power: INT x 600%
       ap: 23
       maxHits: 3
     - name: "Transcended Fire Lance"
       picture: Skill_Placeholder
+      element: Fire
       power: INT x 550%
       ap: 19
       maxHits: 2
     - name: "Absolute Zero"
       picture: Skill_Placeholder
+      element: Ice
       power: INT x 1200%
       ap: 58
       maxHits: 9
     - name: "Transcended Explosion"
       picture: Skill_Placeholder
+      element: Fire
       power: INT x 1500%
       ap: 70
       maxHits: 1
@@ -6518,7 +6603,161 @@
   rush:
     name: "Grand Trigger"
     picture: Rush_Placeholder
+    element: Fire
     effects:
       - desc: Start at 100 Hits, ATK/INT DMG +50% (Party/20s)
     power: INT x 7000%
     maxHits: 5
+
+- name: Jivre
+  cat: jp
+  picture: Jivre
+  weapon: staff
+  ace: true
+  semi: true
+  star: 5
+
+  stats:
+    hp: 12285
+    atk: 1563
+    int: 2704
+    def: 1379
+    hit: 1050
+    grd: 833
+
+  talents:
+    - name: "Fragment of God"
+      effects:
+        - desc: INT +45%, +75% at 100% HP (party)
+        - desc: ATK +45%, +60% at 100% HP (party)
+    - name: "Beyond Tens of Thousands of Years"
+      effects:
+        - desc: Start with 1 Order
+        - desc: Imbue attacks with Fire (party)
+        - desc: AP recovery speed +150% (party)
+        - desc: No flinching when casting spells (self)
+    - name: "Caring Younger Brother"
+      effects:
+        - desc: Order gain rate +50% after using Multi-chant (10s)
+        - desc: Reduces enemies' fire resistance, more during Order countdown
+    - name: "The Time of His Return"
+      effects:
+        - desc: Recovers 100% HP when using Multi-chant (self)
+        - desc: INT +20% when using Multi-chant (self, 10s)
+        - desc: Overheal up to 20000 HP (self)
+    - name: "Multi-chant [Mastery] / Jivre"
+      effects:
+        - desc: CB skip to 200% when casting multiple spells
+        - desc: INT damage +30% when casting 3 or more spells
+        - desc: Nullify Charge Assault crit penalty
+   
+  skills:
+    - name: "Dark Explosion"
+      picture: Skill_Placeholder
+      element: Fire
+      power: INT x 720%
+      ap: 40
+      maxHits: 14
+    - name: "Dark Blaze Ray"
+      picture: Skill_Placeholder
+      element: Fire
+      power: INT x 620%
+      ap: 28
+      maxHits: 1
+    - name: "Dark Fire Lance"
+      picture: Skill_Placeholder
+      element: Fire
+      power: INT x 580%
+      ap: 20
+      maxHits: 2
+    - name: "Inferno Grave"
+      picture: Skill_Placeholder
+      element: Fire
+      power: INT x 990%
+      ap: 45
+      maxHits: 4
+
+  rush:
+    name: "Final Apocalypse"
+    picture: Rush_Placeholder
+    effects:
+      - desc: DMG +80% (party, 20s)
+    power: INT x 5500%
+    maxHits: 13
+
+- name: Sophia Esteed (Divine)
+  cat: jp
+  picture: Sophia_Divine
+  weapon: orb
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 18155
+    atk: 1549
+    int: 3549
+    def: 1129
+    hit: 1050
+    grd: 840
+
+  talents:
+    - name: "The Key to Awakening"
+      effects:
+        - desc: ATK +1000 (party)
+        - desc: INT +1000, +1500 when HC > 150 (party)
+        - desc: Casting spells increases the party's Rush gauge (self)
+    - name: "Forbidden Door"
+      effects:
+        - desc: Echo by skills +10% (party)
+        - desc: Echo by Rush +50% when HC > 350 (self)
+    - name: "Bridge to Sanctuary"
+      effects:
+        - desc: Spells drain 5% HP when not casting
+        - desc: Damage taken -50% (self)
+        - desc: No flinching when casting spells (self)
+        - desc: Reduces enemies' light resistance
+    - name: "Third Hope"
+      effects:
+        - desc: INT +30%, HP +30%
+        - desc: CB skip to 300%
+    - name: "Multi-chant [Mastery] / Divine Sophia"
+      effects:
+        - desc: INT +20% when casting multiple spells (self, 10s)
+        - desc: INT damage +30% when casting 3 or more spells
+        - desc: Nullify Charge Assault crit penalty
+   
+  skills:
+    - name: "Energy Arrow Crest"
+      picture: Skill_Placeholder
+      element: Light
+      power: INT x 380%
+      ap: 18
+      maxHits: 4
+    - name: "Twinkle Bomb Crest"
+      picture: Skill_Placeholder
+      element: Light
+      power: INT x 710%
+      ap: 27
+      maxHits: 7
+    - name: "Explosion Crest"
+      picture: Skill_Placeholder
+      element: Fire
+      power: INT x 1180%
+      ap: 48
+      maxHits: 14
+    - name: "Ray Crest"
+      picture: Skill_Placeholder
+      element: Light
+      power: INT x 1510%
+      ap: 53
+      maxHits: 7
+
+  rush:
+    name: "Divine Meteor Swarm"
+    picture: Rush_Placeholder
+    element: Light
+    effects:
+      - desc: ATK/INT damage taken +40% (all enemies, 20s)
+    power: INT x 7500%
+    maxHits: 10
