@@ -6113,8 +6113,8 @@
   star: 5
 
   stats:
-    hp: 17441
-    atk: 3276
+    hp: 18233
+    atk: 3413
     int: 1510
     def: 1983
     hit: 1127
@@ -6123,36 +6123,36 @@
   talents:
     - name: "Mischievous Smile"
       effects: 
-        - desc: ATK +20%
+        - desc: ATK +35%
           all: true
           meta:
             priority: 1
             buff: ATK Damage
-            buffValue: 20
+            buffValue: 35
     - name: "Tailed Swimmer"
-      shortEffects: Stun rate +80% (Attackers/Defenders) and stun rate +40% (Sharpshooters)
+      shortEffects: Stun rate +90% (Attackers/Defenders) and stun rate +50% (Sharpshooters)
       effects: 
-        - desc: Stun rate +80%
+        - desc: Stun rate +90%
           all: Attackers
           meta:
             priority: 1
             buff: Stun Rate
             buffRole: attacker
-            buffValue: 80
-        - desc: Stun rate +80%
+            buffValue: 90
+        - desc: Stun rate +90%
           all: Defenders
           meta:
             priority: 1
             buff: Stun Rate
             buffRole: defender
-            buffValue: 80
-        - desc: Stun rate +40%
+            buffValue: 90
+        - desc: Stun rate +50%
           all: Sharpshooters
           meta:
             priority: 1
             buff: Stun Rate
             buffRole: sharpshooter
-            buffValue: 40
+            buffValue: 50
     - name: "Heraldry Parka"
       effects: 
         - desc: AP cost -15% when Summer Roddick is at short range
@@ -6163,15 +6163,15 @@
             buffCondition: Summer Roddick is at short range
             buffValue: 15
     - name: "Hibiscus Boy"
-      shortEffects: ATK 20% and HP +10%
+      shortEffects: ATK 25% and HP +15%
       effects: 
-        - desc: ATK +20%
+        - desc: ATK +25%
           all: false
           meta:
             priority: 1
             buff: ATK
-            buffValue: 20
-        - desc: HP +10%
+            buffValue: 25
+        - desc: HP +15%
           all: false
   
   skills:
@@ -6192,7 +6192,7 @@
       maxHits: 2
     - name: "Seven Stars Double Slash"
       picture: Seven_Star_Double_Slash
-      power: ATK x 760%
+      power: ATK x 950%
       ap: 28
       maxHits: 8
       
@@ -6208,19 +6208,19 @@
           priority: 1
           buff: ATK
           buffValue: 80
-    power: ATK x 4500%
+    power: ATK x 5000%
     maxHits: 10
 
 
 - name: Nel Zelpher (Maid)
   cat: jp
-  rating: 1
+  rating: 1       
   picture: Main_Nel
   weapon: bns
-  ace: true
+  ace: true     
   limited: true
-  star: 5
-
+  star: 5 
+  
   stats:
     hp: 15750
     atk: 2704
@@ -6785,16 +6785,16 @@
             priority: 1
             buff: ATK
             buffValue: 45
-        - desc: ATK +60% at short range
+        - desc: ATK +70% at short range
           all: true
           meta:
             priority: 1
             buff: ATK
             buffCondition: Short Range
-            buffValue: 60
+            buffValue: 70
     - name: "A Leader's Relaxation"
       effects: 
-        - desc: Absorbs 10% of damage dealt by normal attacks as HP
+        - desc: Absorbs 15% of damage dealt by normal attacks as HP
           all: true
     - name: "Alternation (Beach)"
       effects: 
@@ -6838,7 +6838,7 @@
     - name: "Gran Aqua Zapper"
       picture: Gran_Aqua_Zapper
       element: Ice
-      power: ATK x 550%
+      power: ATK x 610%
       ap: 38
       maxHits: 1
       
@@ -6852,7 +6852,7 @@
           priority: 3
           buff: AP Cost Reduction
           buffValue: 60
-    power: ATK x 4000%
+    power: ATK x 4500%
     maxHits: 8
     
 - name: Anne Patriceani (Awakened)
@@ -9337,8 +9337,8 @@
   star: 5
 
   stats:
-    hp: 18648
-    atk: 3307
+    hp: 19425
+    atk: 3445
     int: 1523
     def: 1969
     hit: 1120
@@ -9347,7 +9347,9 @@
   talents:
     - name: "Star Ocean Surfer"
       effects: 
-        - desc: Buff Effect of Fin Edge Growth increases to ATK +40% when hitcount is >200
+        - desc: Buff Effect of Fin Edge Growth increases to ATK +50% when hitcount is >200
+        - desc: No Flinching during charge assault
+        - desc: DMG taken -100% when triggering Sight Out A
     - name: "Perfect Take-Off"
       effects: 
         - desc: Hitcount timer +1.5s
@@ -9388,16 +9390,16 @@
             buffValue: 150
     - name: "Yearning for the Azure Sea"
       effects: 
-        - desc: ATK +20%
+        - desc: ATK +25%
           meta:
             priority: 1
             buff: ATK
-            buffValue: 20
-        - desc: HP +20%
+            buffValue: 25
+        - desc: HP +25%
           meta:
             priority: 1
             buff: HP
-            buffValue: 20
+            buffValue: 25
         - desc: ATK +30% when hitcount is >300
           meta:
             priority: 1
@@ -9425,7 +9427,7 @@
       maxHits: 6
     - name: "Fin Edge Growth"
       picture: Skill_Placeholder
-      power: ATK x 270%
+      power: ATK x 280%
       ap: 20
       maxHits: 2
       notes: ATK +20% (Party/10s)
@@ -9435,13 +9437,13 @@
         buffValue: 20
     - name: "Vortex Airborne"
       picture: Skill_Placeholder
-      power: ATK x 1020%
+      power: ATK x 1050%
       ap: 46
       maxHits: 8
     - name: "Top-turn Slide"
       picture: Skill_Placeholder
       element: Ice
-      power: ATK x 990%
+      power: ATK x 1020%
       ap: 38
       maxHits: 9
 
@@ -9460,7 +9462,7 @@
           priority: 1
           buff: ATK
           buffValue: 80
-    power: ATK x 5000%
+    power: ATK x 6000%
     maxHits: 4
 
 - name: Tika (Summer)
@@ -9482,21 +9484,21 @@
   talents:
     - name: "Dreaming Family Trip"
       effects:
-        - desc: ATK +45%, 60%, 70% at 0, 150, 250 HIT
+        - desc: ATK +50%, 70%, 80% at 0, 150, 250 HIT
           all: true
           meta:
             priority: 1
             buff: ATK
             buffCondition: Hit Count > 250
-            buffValue: 70
+            buffValue: 80
     - name: "Camellia Flower to Attach to Hair"
       effects:
-        - desc: AP Recovery +50%
+        - desc: AP Recovery +100%
           all: true
           meta:
             priority: 1
             buff: AP Recovery
-            buffValue: 50
+            buffValue: 100
         - desc: AP Cost -20%
           all: true
           meta:
@@ -9506,7 +9508,8 @@
             buffValue: 20
     - name: "The Secret of Watermelon Splitting"
       effects:
-        - desc: ATK +30% (10 sec) When charge assault from long range to close range
+        - desc: ATK +35% (10 sec) When charge assault from long range to close range
+        - desc: Recovers 10% HP when charge assault from close range to long range
     - name: "Lost Child's Meditation"
       effects:
         - desc: Immediate Chaser's Skill damage +50% at SC 4+
@@ -9532,7 +9535,7 @@
       maxHits: 2
     - name: "Immediate Chaser"
       picture: Skill_Placeholder
-      power: ATK x 730%
+      power: ATK x 760%
       ap: 31
       maxHits: 8
     - name: "Floater Ring"
@@ -9555,7 +9558,7 @@
           priority: 1
           buff: Crit Rate
           buffValue: 50
-    power: ATK x 4500%
+    power: ATK x 5000%
     maxHits: 2
 
 - name: Oiran Myuria
@@ -9577,16 +9580,16 @@
   talents:
     - name: "Star Ocean's Harlot"
       effects:
-        - desc: Damage to enemies +20%, 40% when Myuria is at 100% HP (party)
+        - desc: Damage to enemies +40%, 60% when Myuria is at 100% HP (party)
     - name: "Eight Shaped Progression"
       effects:
         - desc: AP cost -30% when skill chain > 2 (self)
         - desc: HP recovery 2% from skill damage when skill chain > 4 (self)
     - name: "Blue Waters Kimono Lining"
       effects:
-        - desc: ATK +15% when HP 100% (self)
-        - desc: Rush combo damage +50% when hit count > 300 (self)
-        - desc: Rush combo damage +100% when hit count > 600 (self)
+        - desc: ATK +20% when HP 100% (self)
+        - desc: Rush combo damage +50% when hit count > 200 (self)
+        - desc: Rush combo damage +100% when hit count > 500 (self)
     - name: "Ongoing Volune of Gorgeous Courtesan Kimonos"
       effects:
         - desc: ATK +30%, HP +20%
@@ -9606,7 +9609,7 @@
       maxHits: 4
     - name: "Large Circle"
       picture: Skill_Placeholder
-      power: ATK x 680%
+      power: ATK x 730%
       ap: 28
       maxHits: 15
     - name: "Petal"
@@ -9625,7 +9628,7 @@
       - desc: HIT count starts at 75
         duration: 20
       - desc: AP cost -60% (self)
-    power: ATK x 5500%
+    power: ATK x 7000%
     maxHits: 8
 
 - name: Chisato Madison (Blue Sphere) 
@@ -10184,7 +10187,8 @@
   talents:
     - name: "Smiling Greatsword Master"
       effects:
-        - desc: ATK +500, +1000 at HC 200+
+        - desc: ATK +1000, +1250 at HC 150+
+        - desc: Rush gauge full at the start of mission
           all: true
     - name: "Blue White Tensuke"
       effects:
@@ -10192,8 +10196,8 @@
         - desc: AP recovery when triggering Interupt mastery
     - name: "Captivating Honey"
       effects:
-        - desc: Deal 5% additional damage from skills (Self)
-        - desc: ATK +30% at HC 200+, +60% at HC 400+
+        - desc: Deal 10% additional damage from skills (Self)
+        - desc: ATK +35% at HC 200+, +65% at HC 400+
     - name: "Best Friend"
       effects:
         - desc: AP +40
@@ -10222,7 +10226,7 @@
     - name: "Freezing Poison"
       picture: Skill_Placeholder
       element: Ice
-      power: ATK x 750%
+      power: ATK x 780%
       ap: 32
       maxHits: 11
 
@@ -10233,7 +10237,7 @@
     effects:
       - desc: AP cost -65% (self/20s)
         duration: 20
-    power: ATK x 4500%
+    power: ATK x 7500%
     maxHits: 6
 
 - name: Erys Jerand (Valentine)
@@ -10316,8 +10320,8 @@
   star: 5
 
   stats:
-    hp: 18648
-    atk: 3245
+    hp: 19425
+    atk: 3380
     int: 1575
     def: 1943
     hit: 1162
@@ -10326,20 +10330,22 @@
   talents:
     - name: "Hot Spring Beauty"
       effects:
-        - desc: ATK +15%, +80% durring Rush Combo (party)
-        - desc: AP cost -25% at long range (party)
+        - desc: ATK +25%, +85% during Rush Combo (party)
+        - desc: AP cost -40% at long range (party)
     - name: "Flank Hem"
       effects:
         - desc: DMG taken -100% on Flying Eagle Claw (self/ 1s)
         - desc: Rush DMG +80% at 100% HP and HC > 300 (self)
     - name: "Beautiful Skin"
       effects:
-        - desc: Additional hit 5% on skills at Sc > 4 (self)
+        - desc: Additional hit 5% on skills at SC > 4 (self)
         - desc: HP recovery 2% on Jumping Spirits - Light Bullets at SC > 5 (self)
     - name: "Double Memories"
       effects:
-        - desc: ATK +20%, HP +20%, AP +40
-        - desc: Anti flinch while attacking 
+        - desc: ATK +25%, HP +25%, AP +40
+        - desc: ATK +35% during Rush at 100% HP
+        - desc: AP recovery speed +150%
+        - desc: Anti flinch while attacking
         - desc: Able to air dodge (self)
 
   skills:
@@ -10351,7 +10357,7 @@
     - name: "Flying Eagle Claws"
       picture: Skill_Placeholder
       power: ATK x 600%
-      ap: 25
+      ap: 26
       maxHits: 10
     - name: "Kurotaka Rotation"
       picture: Skill_Placeholder
@@ -10360,7 +10366,7 @@
       maxHits: 4
     - name: "Light Bullets"
       picture: Skill_Placeholder
-      power: ATK x 750%
+      power: ATK x 780%
       ap: 31
       maxHits: 4
 
@@ -10368,8 +10374,8 @@
     name: "Shakukei / Yuyu"
     picture: Rush_Placeholder
     effects:
-      - desc: 
-    power: ATK x 5500%
+      - desc: HC starts at 75 | ATK +80% (Self/20s)
+    power: ATK x 6500%
     maxHits: 12
 
 - name: Fayt Leingod (Winged)
@@ -10391,12 +10397,14 @@
   talents:
     - name: "Heavenly Smoke wing"
       effects:
-        - desc: ATK +1000, +1500 at HC > 350 (party)
-        - desc: ATK +1750 during Order Countdown (party)
+        - desc: ATK +1200, +1700 at HC > 350 (party)
+        - desc: ATK +1850 during Order Countdown (party)
     - name: "Shinha's Heart"
       effects:
         - desc: At Start of Mission Gain 2 Orders
         - desc: During Order Countdown AP -70% (party)
+        - desc: Order gain +30% at HC > 100 (party)
+        - desc: Able to air dodge (self)
     - name: "Frontier of Swordmanship"
       effects:
         - desc: CA From Long to Short Range Recovers 15AP
@@ -10420,12 +10428,12 @@
       maxHits: 1
     - name: "Sword Dance Wings"
       picture: Skill_Placeholder
-      power: ATK x 1180%
+      power: ATK x 1290%
       ap: 36
       maxHits: 10
     - name: "Celestial"
       picture: Skill_Placeholder
-      power: ATK x 1480%
+      power: ATK x 1620%
       ap: 37
       maxHits: 9
 
@@ -10433,8 +10441,8 @@
     name: "Etheral Blast"
     picture: Rush_Placeholder
     effects:
-      - desc: HC start at 100 | DMG dealt +80 (party)
-    power: ATK x 4500%
+      - desc: HC start at 100 | DMG dealt +80% (Party/20s)
+    power: ATK x 5000%
     maxHits: 5
 
 - name: Sakura Amamiya
@@ -10859,7 +10867,7 @@
         - desc: CB will be maintained after 1 non-consecutive dodge
     - name: "Blindside [Mastery]"
       effects:
-        - desc: DMG taken -100% durring Blindside trigger
+        - desc: DMG taken -100% during Blindside trigger
         - desc: CA crit null, CA skip to 200%
 
   skills:
@@ -11027,3 +11035,286 @@
       - desc: Start at 100 Hits, Crit Chance +100% (party/10s)
     power: ATK x 5000%
     maxHits: 13
+
+- name: Laevonia (Summer)
+  cat: jp
+  picture: Summer_Laevonia
+  weapon: scythe
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 19578
+    atk: 5065
+    int: 2712
+    def: 2513
+    hit: 1205
+    grd: 873
+
+  talents:
+    - name: "Summer Pirates"
+      effects:
+        - desc: ATK +1000 (Party)
+        - desc: ATK +1500 when a stun occurs (Party/15s)
+    - name: "Cute is Justice"
+      effects:
+        - desc: Assist Uses +2, Stun Rate +50% (Party)
+        - desc: AP Regen +200% Stun Rate +100% During Rush (Self)
+    - name: "Someday it'll on my Head"
+      effects:
+        - desc: DMG Taken during Skill4 -100% (1.5s)
+        - desc: Recover 50AP when hit by an enemy
+        - desc: While Attacking, Superarmor and DMG Taken -40% (Self)
+    - name: "Memories of a distant Summer"
+      effects:
+        - desc: ATK +30%, HP +20%, AP +40 (Stat Page)
+        - desc: ATK +20% at 150+ Hits (Self)
+        - desc: 3% Drain on Skill4 at SC 3+ (Self)
+    - name: "Interrupt [Mastery]"
+      effects:
+        - desc: CA Crit Null
+        - desc: AP Cost -20%
+
+  skills:
+    - name: "Fair Wind"
+      picture: Skill_Placeholder
+      element: Fire
+      power: ATK x 350% 
+      ap: 22
+      maxHits: 4
+    - name: "Wave Flag Edge"
+      picture: Skill_Placeholder
+      element: Ice
+      power: ATK x 350%
+      ap: 22
+      maxHits: 4
+    - name: "Sailing Size"
+      picture: Skill_Placeholder
+      power: ATK x 210%
+      ap: 18
+      maxHits: 2
+    - name: "Giant Catch"
+      picture: Skill_Placeholder
+      power: ATK x 1150%
+      ap: 38
+      maxHits: 6
+
+  rush:
+    name: "Battle of the Dorms"
+    picture: Rush_Placeholder
+    effects:
+      - desc: ATK DMG Taken +50%, INT DMG Taken +30% (Enemies/20s)
+    power: ATK x 7000%
+    maxHits: 9
+
+- name: Valkyrie
+  cat: jp
+  picture: Valkyrie
+  weapon: ohs
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 18774
+    atk: 3276
+    int: 1601
+    def: 1930
+    hit: 1134
+    grd: 819
+
+  talents:
+    - name: "Four Souls"
+      effects:
+        - desc: Effect of Skill1 AF Increased to ALL +50% at 100+ Hits.
+        - desc: AP -60% After any dodge (Self/10s)
+        - desc: Recover 50AP to Party after perfect dodge
+    - name: "Causality of the World"
+      effects:
+        - desc: Assist Uses +1
+        - desc: Start with 1 Order
+        - desc: Start with 100% Rush Gauge (Party)
+    - name: "Condemnation of the Soul"
+      effects:
+        - desc: Maintain CB after non-consecutive dodges, Able to Airdodge
+        - desc: Recover 15% HP after any dodge 
+        - desc: 90/10 Guts
+    - name: "The Future You Want"
+      effects:
+        - desc: ATK +20%
+        - desc: HP +20% (Stat Page)
+        - desc: ATK +35% after perfect dodge (Self/10s)
+
+  skills:
+    - name: "Gusto Window"
+      picture: Skill_Placeholder
+      power: ATK x 350% 
+      ap: 19
+      maxHits: 1
+    - name: "Growing Piercing"
+      picture: Skill_Placeholder
+      power: ATK x 200%
+      ap: 15
+      maxHits: 3
+    - name: "Turnaround"
+      picture: Skill_Placeholder
+      power: ATK x 320%
+      ap: 17
+      maxHits: 1
+    - name: "Trinity Edge Crusade"
+      picture: Skill_Placeholder
+      power: ATK x 1000%
+      ap: 32
+      maxHits: 3
+
+  rush:
+    name: "Nibeln Valesti Giant Spear"
+    picture: Rush_Placeholder
+    effects:
+      - desc: Crit and Crit DMG +50% (Party/20s)
+    power: ATK x 6000%
+    maxHits: 2
+
+- name: Reimi Saionji (Maid)
+  cat: jp
+  picture: Maid_Reimi
+  weapon: axe
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15435
+    atk: 2744
+    int: 1549
+    def: 1943
+    hit: 1127
+    grd: 847
+
+  talents:
+    - name: "Strict Educator"
+      effects:
+        - desc: INT +25/45% at 200/400+ Hits (Party)
+        - desc: 75% INT > ATK Conversion (Attackers/Defenders/Sharpshooters)
+    - name: "Specialties That Cannot be Hidden"
+      effects:
+        - desc: 10% Double Hit on Skills, 3%/3s Rush Regen (Party)
+        - desc: AP -30% at 100+ Hits (Party), AP -60% at 100+ Hits (Self)
+    - name: "Oversleeping is Not Allowed"
+      effects:
+        - desc: Hitcount Timer +3s (Party)
+        - desc: 90% chance of surviving a lethal attack when at 10% of max HP or more (Self) 
+        - desc: CAing from S to L range recovers 10% HP (Self)
+    - name: "Love Whip"
+      effects:
+        - desc: After triggering Vanguard, ATK +20% (Self/10s)
+        - desc: CA Skip 200% (Self)
+        - desc: When mReimi is hit Recover 20AP to the Party
+    - name: "Vanguard [Mastery]"
+      effects:
+        - desc: CAing from L to S Range applies Crit +30% (Self/3s)
+        - desc: CA Crit Null, CA Superarmor
+
+  skills:
+    - name: "Buy Fin Edge"
+      picture: Skill_Placeholder
+      power: ATK x 220% 
+      ap: 18
+      maxHits: 2
+    - name: "Tyrant Combo"
+      picture: Skill_Placeholder
+      power: ATK x 310%
+      ap: 22
+      maxHits: 6
+    - name: "Vortex Airborn"
+      picture: Skill_Placeholder
+      power: ATK x 900%
+      ap: 43
+      maxHits: 8
+    - name: "Punishment Meetia"
+      picture: Skill_Placeholder
+      power: ATK x 1080%
+      ap: 46
+      maxHits: 11
+
+  rush:
+    name: "Charge! Cleaning Maid Corpse"
+    picture: Rush_Placeholder
+    effects:
+      - desc: ATK DMG Taken +50%, INT DMG Taken +30% (Enemies/20s)
+    power: ATK x 5000%
+    maxHits: 14
+
+- name: Frei
+  cat: jp
+  picture: Char_Placeholder_M_Valka
+  weapon: greatsword
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 22458
+    atk: 6805
+    int: 3966
+    def: 2693
+    hit: 1317
+    grd: 1006
+
+  talents:
+    - name: "Eyes that perceive truth"
+      effects:
+        - desc: +1000 ATK/INT (Party)
+        - desc: +1850 ATK at HC 150+ (Party)
+        - desc: -850 ATK when Frei taking DMG 1%+ of HP (Party)
+    - name: "Manuscript Delivering Blade"
+      effects:
+        - desc: Assist +2
+        - desc: RCV 3% RUSH /3s
+        - desc: -30% AP when Frei activated VG (Party/4s)
+    - name: "Childhood & Charity"
+      effects:
+        - desc: -100% DMG taken after dodge (1s)
+        - desc: CA CB 200%
+        - desc: -80% AP on dodge
+        - desc: Slightly RCV AP when VG
+    - name: "Curse of Unleashed Wisdom"
+      effects:
+        - desc: +30% ATK | +20% HP
+        - desc: Maintain CB after 2 dodges
+    - name: "Vanguard [Mastery]"
+      effects:
+        - desc: +15% ATK when activate VG (4s)
+        - desc: Antiflinch while CA
+        - desc: CA Crit null
+
+  skills:
+    - name: "1"
+      picture: Skill_Placeholder
+      power: ATK x 410% 
+      ap: 18
+      maxHits: 10
+    - name: "2"
+      picture: Skill_Placeholder
+      power: ATK x 500%
+      ap: 22
+      maxHits: 6
+    - name: "3"
+      picture: Skill_Placeholder
+      power: ATK x 530%
+      ap: 43
+      maxHits: 8
+    - name: "4"
+      picture: Skill_Placeholder
+      power: ATK x 1120%
+      ap: 28
+      maxHits: 6
+
+  rush:
+    name: "Liquidation"
+    picture: Rush_Placeholder
+    effects:
+      - desc: Cure condition & Status immunity (Party/20s) | +65% Crit (Party/20s)
+    power: ATK x 6500%
+    maxHits: 6
