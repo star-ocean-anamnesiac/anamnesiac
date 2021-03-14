@@ -11283,7 +11283,7 @@
       effects:
         - desc: +15% ATK when activate VG (4s)
         - desc: Antiflinch while CA
-        - decs: CA Crit null
+        - desc: CA Crit null
 
   skills:
     - name: "1"
