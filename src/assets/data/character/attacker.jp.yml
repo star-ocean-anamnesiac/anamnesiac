@@ -24,7 +24,7 @@
             buffValue: 10
     - name: "Mischievous Brat"
       effects:
-        - desc: No flinching when taking damage of 20% of max HP or less
+        - desc: No flinching when taking damage of 20% of max HP or less.
         
   skills:
     - name: "Double Slash"
