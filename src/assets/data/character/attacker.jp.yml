@@ -11248,7 +11248,7 @@
 
 - name: Frei
   cat: jp
-  picture: Char_Placeholder_M_Valka
+  picture: Frei
   weapon: greatsword
   ace: true
   limited: true
