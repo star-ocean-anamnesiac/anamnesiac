@@ -4458,3 +4458,72 @@
       - desc: AP -50% (Party/20s)
     power: ATK x 6000%
     maxHits: 3
+
+- name: Jeanne Mathwest
+  cat: jp
+  picture: Jeanne
+  weapon: bns
+  ace: true
+  semi: true
+  star: 5
+
+  stats:
+    hp: 20370
+    atk: 2494
+    int: 1549
+    def: 2534
+    hit: 812
+    grd: 1057
+
+  talents:
+    - name: "Larza's Demon"
+      effects: 
+        - desc: HP +65%, Assist +2 (party)
+        - desc: Start with 100% Rush (party)
+        - desc: No flinching when taking damage of 25% of max HP or less (party)
+    - name: "Behind the Smile"
+      effects: 
+        - desc: Sigle-target damage +45%, +75% at HC >250% (party)
+        - desc: Gain 15% Rush when guarding (self)
+        - desc: ATK+20% when guarding (20s, self)
+    - name: "Deceptively Strong Arms"
+      effects: 
+        - desc: Omni-Directional Guard, nullifies damage when guarding (party)
+        - desc: Party damage taken -20% after guarding (self, 20s)
+        - desc: Recovers 15% of max HP every 3 seconds after guarding (self, 20s)
+    - name: "Enforcer of Justice"
+      effects:
+        - desc: Damage taken -100% after using Aegis Wing Edge (self, 0.5s)
+        - desc: CB skip to 200%
+        - desc: Party Rush damage +40% and AP cost -50% after guarding (self, 20s)
+  
+  skills:
+    - name: "Raptor Saucer"
+      picture: Skill_Placeholder
+      power: ATK x 630%
+      ap: 28
+      maxHits: 6
+    - name: "Piercing Twin Thrust"
+      picture: Skill_Placeholder
+      element: Fire
+      power: ATK x 540%
+      ap: 19
+      maxHits: 2
+    - name: "Bloody Wheel"
+      picture: Skill_Placeholder
+      power: ATK x 800%
+      ap: 30
+      maxHits: 10
+    - name: "Aegis Wing Edge"
+      picture: Skill_Placeholder
+      power: ATK x 990%
+      ap: 36
+      maxHits: 9
+      
+  rush:
+    name: "Starship Air Raid"
+    picture: Rush_Placeholder
+    effects: 
+      - desc: ATK/INT damage taken +40% (All enemies, 20s)
+    power: ATK x 5500%
+    maxHits: 20
