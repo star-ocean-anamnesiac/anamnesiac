@@ -6000,6 +6000,81 @@
     power: ATK x 4500%
     maxHits: 25
    
+- name: Tika (Teen Star) (Awakened)
+  cat: jp
+  picture: Inscribed_Star_Tika
+  weapon: gun
+  ace: true
+  semi: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 15750
+    atk: 2494
+    int: 1563
+    def: 1523
+    hit: 1253
+    grd: 945
+
+  talents:
+    - name: "Believe that We'll be Reunited"
+      effects:
+        - desc: ATK/INT damage +45%, +70% at HC > 200
+    - name: "Daphtes' Envoy"
+      effects:
+        - desc: Hitcount timer +3 seconds (party)
+        - desc: Rush combo damage +40% at HC > 300 (party)
+        - desc: Rush combo damage +80% when at 100% HP and HC > 400 (party)
+    - name: "Never-Changing Smile"
+      effects:
+        - desc: Rush gauge fills by 3% every 3 seconds (party)
+        - desc: Start with 100% Rush (party)
+    - name: "I Want to Protect Everyone"
+      effects:
+        - desc: Recovers AP for allies when using Line Gunning and Platoon Blast (self)
+        - desc: ATK/INT/DEF/HIT/GRD +30% at HC > 300 (self)
+    - name: "Those who teach"
+      effects:
+        - desc: Recovers 20% HP when using Platoon Blast (self)
+        - desc: Overheal up to 20000 HP (self)
+        - desc: No flinching while attacking (self)
+    - name: "Trust in your brother"
+      effects:
+        - desc: AP recovery +150% (party)
+        - desc: AP cost -35% at HC > 100 (party)
+        - desc: Assist use +1  (party)
+
+  skills:
+    - name: Gunner's Line 
+      picture: Skill_Placeholder
+      power: ATK x 420%
+      ap: 17
+      maxHits: 6
+    - name: Killer Distance • Ancient 
+      picture: Approach_Blow
+      power: ATK x 500%
+      ap: 22
+      maxHits: 3
+    - name: Barrage Fire • Ancient 
+      picture: Bullet_Barrage
+      power: ATK x 540%
+      ap: 24
+      maxHits: 6
+    - name: Platoon Blast
+      picture: Skill_Placeholder
+      power: ATK x 870%
+      ap: 30
+      maxHits: 8
+      
+  rush:
+    name: Rotate Javelin
+    picture: Rotate_Javelin_Inscribed_Star_Tika
+    effects: 
+      - desc: Hitcount starts at 100, and AP cost -50% (Party/20s)
+    power: ATK x 5500%
+    maxHits: 25
+   
 - name: Reimi Saionji (Awakened)
   cat: jp
   picture: Reimi
@@ -7995,3 +8070,4 @@
       - desc: Single Target DMG +70% (party/20s)
     power: ATK x 5000%
     maxHits: 8
+    
