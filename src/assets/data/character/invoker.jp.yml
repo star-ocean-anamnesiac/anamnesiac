@@ -6135,22 +6135,12 @@
   talents:
     - name: "Friends of the Forest"
       effects:
-        - desc: INT +45%, + 70% at 150+ HC
-          all: true
-          meta:
-            priority: 1
-            buff: INT
-            buffValue: 70
-        - desc: Convert 35% INT to ATK
-          all: Attaclers/Sharpshooters/Defenders
-          meta:
-            priority: 1
-            buff: INT -> ATK
-            buffValue: 35
+        - desc: INT +45%, +75% at HC > 150 (party)
+        - desc: Convert 45% INT to ATK (Attackes, Defenders, Shooters)
     - name: "Necro's Rampage"
       effects:
-        - desc: AP cost -10 100+ HC, , -25% at 250+ HC, respectively (party)
-        - desc: Assist +1 (party)
+        - desc: AP cost -30%/50% at HC > 100/250 (party)
+        - desc: Assist +2 (party)
     - name: "Undine's Protection"
       effects:
         - desc: AP cost -80% durring perfect evassion (10s/party)
@@ -6184,7 +6174,7 @@
     - name: "Imperial Ray"
       picture: Skill_Placeholder
       element: Fire
-      power: INT x 900%
+      power: INT x 930%
       ap: 35
       maxHits: 5
 
@@ -6193,7 +6183,7 @@
     picture: Rush_Placeholder
     effects: 
       - desc: ATK | INT DMG taken +40% (20s/enemies)
-    power: INT x 4500%
+    power: INT x 5500%
     maxHits: 1
 
 - name: Clarissa Snowflake
@@ -6609,6 +6599,75 @@
     power: INT x 7000%
     maxHits: 5
 
+- name: Freya (God's Messenger)
+  cat: jp
+  picture: Freya_GodMessenger
+  weapon: orb
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 18648
+    atk: 2692
+    int: 3583
+    def: 1916
+    hit: 1141
+    grd: 833
+
+  talents:
+    - name: "Purging Blade"
+      effects:
+        - desc: Victory Sword ・ AF effect increased to +50% at HC > 150 (party)
+        - desc: AP cost -60% at HC > 100 (self)
+        - desc: Able to air dodge (self)
+    - name: "Indignant Blue Thunder"
+      effects:
+        - desc: Start with 100% Rush and 1 Order (party)
+        - desc: HC Timer +3s
+        - desc: AP cost -35% at HC > 100 (party)
+    - name: "Heaven & Hell"
+      effects:
+        - desc: INT +60% at HC > 100
+        - desc: Damage taken -100% after dodging (self, 1s)
+        - desc: INT -60% when taking damage over 1% of HP (self, 3s)
+    - name: "Preserver of Order"
+      effects:
+        - desc: INT +30%, HP +20%, AP +20
+        - desc: Movement speed +30%
+        - desc: Maintain CB after up to 2 consecutive dodges
+   
+  skills:
+    - name: "Victory Sword ・ AF"
+      picture: Skill_Placeholder
+      power: INT x 310%
+      ap: 19
+      maxHits: 10
+    - name: "Crimson Strike ・ Purge"
+      picture: Skill_Placeholder
+      element: Fire
+      power: INT x 590%
+      ap: 21
+      maxHits: 5
+    - name: "Heavenly Punishment ・ Purge"
+      picture: Skill_Placeholder
+      power: INT x 900%
+      ap: 28
+      maxHits: 10
+    - name: "Judgment Air Raid"
+      picture: Skill_Placeholder
+      power: INT x 1130%
+      ap: 31
+      maxHits: 7
+
+  rush:
+    name: "Final Purification"
+    picture: Rush_Placeholder
+    effects:
+      - desc: HC starts at 100, ATK/INT damage +50% (party, 20s)
+    power: INT x 7500%
+    maxHits: 10
+
 - name: Jivre
   cat: jp
   picture: Jivre
@@ -6761,3 +6820,4 @@
       - desc: ATK/INT damage taken +40% (all enemies, 20s)
     power: INT x 7500%
     maxHits: 10
+    
