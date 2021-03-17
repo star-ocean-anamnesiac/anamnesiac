@@ -10339,22 +10339,18 @@
   talents:
     - name: "Sweet Angel"
       effects:
-        - desc: ATK +40%, +60% at HC > 150
-          all: true
-          meta:
-            priority: 1
-            buff: ATK
-            buffValue: 60
-        - desc: Apply 80% ATK when an enemy gets stunned (party/ 30s)
+        - desc: ATK +45%, +65% at HC > 150 (party)
+        - desc: ATK +85% when an enemy gets stunned (party, 30s)
+        - desc: Gain 3% Rush every 3 seconds (party)
     - name: "Making Unfamliar Sweets"
       effects:
         - desc: Stun rate +405, +60%  at HC > 200 (party)
         - desc: AP cost -30% at SC 2, -40% at SC > 3 (party)
     - name: "Chocolate Wings"
       effects:
-        - desc: HP recovery 20% after using Grim Reaper
-        - desc: Able to Overheal up to 10000 Hp
-        - desc: Anti flinch while attacking (self)
+        - desc: Recovers 30% HP when using Grim Reaper
+        - desc: Overheal up to 17000 HP (self)
+        - desc: Anti-flinch while attacking
     - name: "Gift With Gratitude"
       effects:
         - desc: AP recovery 100% on perfect dodge
@@ -10364,7 +10360,7 @@
   skills:
     - name: "Grim Reaper"
       picture: Skill_Placeholder
-      power: ATK x 700%
+      power: ATK x 930%
       ap: 27
       maxHits: 11
     - name: "Wing Zapper"
@@ -10388,7 +10384,7 @@
     picture: Rush_Placeholder
     effects:
       - desc: HP recovery 100% (self) | Critical chance +60% (party/ 20s)
-    power: ATK x 4500%
+    power: ATK x 5500%
     maxHits: 6
 
 - name: Evelysse (Onsen)
@@ -11398,4 +11394,3 @@
       - desc: Cure condition & Status immunity (Party/20s) | +65% Crit (Party/20s)
     power: ATK x 6500%
     maxHits: 6
-    
