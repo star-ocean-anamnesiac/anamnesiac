@@ -10189,8 +10189,8 @@
   talents:
     - name: "Graceful Penmanship"
       effects:
-        - desc: ATK +30% (party)
-        - desc: ATK +80% (4s) after Caleen activates Vanguard
+        - desc: ATK +40% (party)
+        - desc: Party gains ATK +85% after Caleen activates Vanguard (4s)
           all: true
           meta:
             priority: 1
@@ -10199,8 +10199,9 @@
             buffValue: 80
     - name: "Spirit of the Crimson Fox"
       effects:
-        - desc: AP recovery +100% (party)
-        - desc: AP cost -30% at SC 3, -40% at SC 4+
+        - desc: AP recovery +150% (party)
+        - desc: Gain 3% Rush every 3 seconds (party)
+        - desc: AP cost -30%/-40% at SC 3+/4+ (party)
     - name: "Pleasure of New Year's Sake"
       effects:
         - desc: Anti flinch while attacking
@@ -10212,8 +10213,9 @@
         - desc: Critical chance +30% at SC 5+
     - name: "Vanguard A [MASTERY]"
       effects:
-        - desc: DMG taken +20% after activating Vanguard (enemies/3s)
-        - desc: Nullify critical taken when Charge Assault
+        - desc: DMG taken +20% after activating Vanguard (enemies, 3s)
+        - desc: Anti flinch when using Charge Assault
+        - desc: Nullify Charge Assault Crit. penalty
 
   skills:
     - name: "Noble Star Layer"
@@ -10234,7 +10236,7 @@
     - name: "Splend Rambling"
       picture: Skill_Placeholder
       element: Ice
-      power: ATK x 1000
+      power: ATK x 1200%
       ap: 45
       maxHits: 5
 
@@ -10243,9 +10245,9 @@
     picture: Rush_Placeholder
     shortEffects: 
     effects:
-      - desc: Recover 30% HP | ATK/INT DMG taken (enemies/20s)
-        duration: 20
-    power: ATK x 4500%
+      - desc: Recover 30% HP (party)
+      - desc: ATK/INT damage taken +40% (enemies, 20s)
+    power: ATK x 5000%
     maxHits: 6
 
 - name: Clair Lasbard (Chinese New Year)
