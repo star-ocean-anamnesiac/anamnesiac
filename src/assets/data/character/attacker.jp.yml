@@ -9636,6 +9636,7 @@
   picture: Blue_Sphere_Chisato_Copy
   weapon: knuckle
   ace: true
+  semi: true
   limited: true
   star: 5
 
@@ -9703,9 +9704,88 @@
     power: ATK x 4500%
     maxHits: 8
 
+- name: Chisato Madison (Blue Sphere) (Awakened)
+  cat: jp
+  picture: Blue_Sphere_Chisato_Copy
+  weapon: knuckle
+  ace: true
+  semi: true
+  limited: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 15435
+    atk: 2704
+    int: 1575
+    def: 1916
+    hit: 1162
+    grd: 833
+
+  talents:
+    - name: "News Agency Founder"
+      effects:
+        - desc: Burning Curse ・ AF effect increased +55% at HC > 150 (party)
+    - name: "Second Home"
+      effects:
+        - desc: When charge assault from short range to long range rush gauge increases slightly (party)
+        - desc: When charge assault from long to short range ATK +30% (self, 10s)
+    - name: "Sophisticated Shooting Technique"
+      effects:
+        - desc: Start with 2 Orders
+        - desc: HC timer +3s
+        - desc: AP cost -70% during Order countdown (party)
+        - desc: AP recovery on normal attacks +250% (party)
+    - name: "Positive Way of Life"
+      effects:
+        - desc: Damage taken -50% when using Charge Assault (self)
+        - desc: Recover 30% HP every 4 seconds during Order countdown (party)
+        - desc: ATK/INT damage +25% (party)
+    - name: "Vanguard / Blue Sphere Chisato [MASTERY]"
+      effects:
+        - desc: Nullifies Charge Assault critical damage penalty
+        - desc: Damage Taken -100% when using Charge Assault from long to short range
+        - desc: Critical chance +30% when using Charge Assault from long to short range (3s)
+    - name: "Brave Way Forward"
+      effects:
+        - desc: Recover 10% HP when using Charge Assault from short to long range
+        - desc: Slight AP recovery when activating Vanguard
+
+  skills:
+    - name: "The Leg"
+      picture: Skill_Placeholder
+      power: ATK x 240%
+      ap: 14
+      maxHits: 4
+    - name: "Rock Fall"
+      picture: Skill_Placeholder
+      power: ATK x 350%
+      ap: 20
+      maxHits: 3
+    - name: "Burning Curse ・ AF"
+      picture: Skill_Placeholder
+      element: Fire
+      power: ATK x 330%
+      ap: 18
+      maxHits: 2
+    - name: "Countless Shrines"
+      picture: Skill_Placeholder
+      power: ATK x 1340%
+      ap: 33
+      maxHits: 9
+
+  rush:
+    name: "Fire Shoot"
+    picture: Rush_Placeholder
+    element: Fire
+    effects:
+      - desc: ATK Damage +80% (part, 20s)
+    power: ATK x 5500%
+    maxHits: 8
+
 - name: Vulcan S90 (Maid)
   cat: jp
-  picture: Char_Placeholder_M_Valka
+  picture: Valka_Maid
   weapon: arm
   ace: true
   limited: true
@@ -11318,3 +11398,4 @@
       - desc: Cure condition & Status immunity (Party/20s) | +65% Crit (Party/20s)
     power: ATK x 6500%
     maxHits: 6
+    
