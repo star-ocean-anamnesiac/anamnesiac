@@ -6275,28 +6275,28 @@
   talents:
     - name: "Blue Wings of Change"
       effects:
-        - desc: Effect of Gravity Shell (Skill1) - AF increased to 50% while Maria is at 100% HP
-        - desc: After 75s in Battle, Effect of Gravity Shell (Skill1) - AF increased to 65%
+        - desc: Effect of Gravity Shell (Skill 1) - AF increased to 55% while Maria is at 100% HP
+        - desc: After 75s in Battle, Effect of Gravity Shell (Skill 1) - AF increased to 70%
     - name: "Divine General"
       effects:
-        - desc: AP -30% at 100% HP, -50% after 60s in Battle (party)
-        - desc: After 75s in Battle, AP -70% and ATK DMG Taken -30% (self)
+        - desc: AP -30% at 100% HP, -50% after 45s in Battle (party)
+        - desc: After 60s in Battle, AP -70% and ATK DMG Taken -30% (self)
     - name: "Inevitable Shooter"
       effects:
-        - desc: Assist +1 (party)
-        - desc: At 100% HP Rush DMG +35% (Party)
+        - desc: Assist +2 (party)
+        - desc: At 100% HP Rush DMG +45% (Party)
         - desc: After receiving DMG of atleast 1% Max HP, Recover 50AP (self)
     - name: "Mitsunari Wing"
       effects:
-        - desc: HP recovery 3% from skill4 damage when skill chain ≥ 3 (self)
+        - desc: HP recovery 3% from Surround Device (Skill 4) damage at SC ≥ 3 (self)
         - desc: Anti flinch and DMG taken -50% while attacking (self)
         - desc: Air dodge
 
   skills:
-    - name: "Gravity Shell・AF"
+    - name: "Gravity Shell ・ AF"
       picture: Skill_Placeholder
       element: Dark
-      power: INT x 290%
+      power: INT x 320%
       ap: 20
       maxHits: 8
     - name: "Spread Ray Wings"
@@ -6311,7 +6311,7 @@
       maxHits: 3
     - name: "Surround Device"
       picture: Skill_Placeholder
-      power: INT x 850%
+      power: INT x 880%
       ap: 41
       maxHits: 7
 
@@ -6320,7 +6320,7 @@
     picture: Rush_Placeholder
     effects: 
       - desc: ATK | INT DMG +50% (party/20s)
-    power: INT x 4500%
+    power: INT x 5500%
     maxHits: 5
 
 - name: Tika (Bridal)
@@ -6787,25 +6787,25 @@
         - desc: Nullify Charge Assault crit penalty
    
   skills:
-    - name: "Energy Arrow Crest"
+    - name: "Energy Arrow ・ Crest"
       picture: Skill_Placeholder
       element: Light
       power: INT x 380%
       ap: 18
       maxHits: 4
-    - name: "Twinkle Bomb Crest"
+    - name: "Twinkle Bomb ・ Crest"
       picture: Skill_Placeholder
       element: Light
       power: INT x 710%
       ap: 27
       maxHits: 7
-    - name: "Explosion Crest"
+    - name: "Explosion ・ Crest"
       picture: Skill_Placeholder
       element: Fire
       power: INT x 1180%
       ap: 48
       maxHits: 14
-    - name: "Ray Crest"
+    - name: "Ray ・ Crest"
       picture: Skill_Placeholder
       element: Light
       power: INT x 1510%
@@ -6820,4 +6820,3 @@
       - desc: ATK/INT damage taken +40% (all enemies, 20s)
     power: INT x 7500%
     maxHits: 10
-    
