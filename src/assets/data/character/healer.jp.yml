@@ -4466,22 +4466,22 @@
     grd: 1199
 
   talents:
-    - name: "Talent 1"
+    - name: "Ruler of the Wise Men"
       effects:
         - desc: Overheal up to 17000 HP (party)
         - desc: Start with 3 Orders
         - desc: Stun rate +50% (party)
-    - name: "Talent 2"
+    - name: "Beyond the End"
       effects:
         - desc: Damage taken +40%, +70% when at full HP (enemies)
         - desc: Imbue attacks with Earth element (party)
         - desc: Rush damage +40% against enemies of the Divine race (party)
-    - name: "Talent 3"
+    - name: "Pure White Wings"
       effects:
         - desc: Reduce resistance to Earth during Order countdown (enemies)
         - desc: INT +20% at 100% HP
         - desc: Party gains 30% Rush when an enemy gets stunned
-    - name: "Talent 4"
+    - name: "The World She Wanted"
       effects:
         - desc: Recovers 60% HP and 35 AP to the party when casting spells (self)
         - desc: ATK damage -30%, No flinching while casting (party)
@@ -4493,19 +4493,19 @@
         - desc: At 4 links, INT+975 and AP+45 to linked characters in God mode
 
   skills:
-    - name: "Explosion"
+    - name: "Explosion ・ Wise"
       picture: Skill_Placeholder
       element: Fire
       power: INT x 710%
       ap: 38
       maxHits: 14
-    - name: "Stone Rain"
+    - name: "Stone Rain ・ Wise"
       picture: Skill_Placeholder
       element: Earth
       power: INT x 460%
       ap: 35
       maxHits: 5
-    - name: "Fire Bolt"
+    - name: "Fire Bolt ・ Wise"
       picture: Skill_Placeholder
       element: Fire
       power: INT x 200%
