@@ -4316,6 +4316,7 @@
   picture: Wise_God_Mastema
   weapon: orb
   ace: true
+  limited: true
   star: 5
 
   stats:
@@ -4329,15 +4330,16 @@
   talents:
     - name: "Fallen Hagoromo"
       effects:
-        - desc: Able to overheal 15k/10k (long range weapons/party)
+        - desc: Able to overheal up to 17000 HP (party)
+        - desc: Start with 2 Orders
     - name: "Rai Funerary"
       effects:
-        - desc: While Mastema is at 100% HP, Apply DMG Taken +50% (Enemies)
-        - desc: After 75s in Battle, Apply DMG Taken +80% (Enemies)
+        - desc: While Mastema is at 100% HP, Apply DMG Taken +60% (enemies)
+        - desc: After 75s in Battle, Apply DMG Taken +80% (enemies)
     - name: "Irreverent Healer"
       effects:
-        - desc: After casting heraldry, Recover 20% of the Party's HP
-        - desc: After Orbital Plasma (skill4), Recover 30AP to Party
+        - desc: After casting heraldry, Recover 30% of the Party's HP
+        - desc: After Orbital Plasma (Skill 4), Recover 30AP to Party
         - desc: Anti flinch while casting
     - name: "A Hand to Reach the Inviolable Area"
       effects:
@@ -4346,18 +4348,18 @@
         - desc: After 75s in Battle, 80% chance of surviving a lethal attack when at 10% of max HP or more (party)
 
   skills:
-    - name: "Fairy Lights・God"
+    - name: "Fairy Lights ・ God"
       picture: Skill_Placeholder
-      power: INT x 250%
+      power: INT x 280%
       ap: 60
       maxHits: 1
-    - name: "Thunderbolt・God"
+    - name: "Thunderbolt ・ God"
       picture: Skill_Placeholder
       element: Lightning
       power: INT x 1020%
       ap: 27
       maxHits: 3
-    - name: "Thunder Flare・God"
+    - name: "Thunder Flare ・ God"
       picture: Skill_Placeholder
       element: Lightning
       power: INT x 820%
@@ -4366,7 +4368,7 @@
     - name: "Orbital Plasma"
       picture: Skill_Placeholder
       element: Lightning
-      power: INT x 1310%
+      power: INT x 1350%
       ap: 44
       maxHits: 4
 
@@ -4375,7 +4377,7 @@
     picture: Rush_Placeholder
     effects:
       - desc: ATK/INT DMG Taken +40% (Enemies/20s)
-    power: INT x 4000%
+    power: INT x 5000%
     maxHits: 5
 
 - name: Erys Jerand (Summer)
@@ -4383,6 +4385,7 @@
   picture: Summer_Erys
   weapon: whip
   ace: true
+  limited: true
   star: 5
 
   stats:
@@ -4445,3 +4448,81 @@
       - desc: Revives incapacitated allies with 50% HP (Attackers/Sharpshooters/Invokers)
     power: INT x 4500%
     maxHits: 8
+
+- name: Gabriel
+  cat: jp
+  picture: Gabriel
+  weapon: tome
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 13098
+    atk: 1846
+    int: 2664
+    def: 1637
+    hit: 1103
+    grd: 1199
+
+  talents:
+    - name: "Talent 1"
+      effects:
+        - desc: Overheal up to 17000 HP (party)
+        - desc: Start with 3 Orders
+        - desc: Stun rate +50% (party)
+    - name: "Talent 2"
+      effects:
+        - desc: Damage taken +40%, +70% when at full HP (enemies)
+        - desc: Imbue attacks with Earth element (party)
+        - desc: Rush damage +40% against enemies of the Divine race (party)
+    - name: "Talent 3"
+      effects:
+        - desc: Reduce resistance to Earth during Order countdown (enemies)
+        - desc: INT +20% at 100% HP
+        - desc: Party gains 30% Rush when an enemy gets stunned
+    - name: "Talent 4"
+      effects:
+        - desc: Recovers 60% HP and 35 AP to the party when casting spells (self)
+        - desc: ATK damage -30%, No flinching while casting (party)
+    - name: "Exceed / Gabriel"
+      effects:
+        - desc: At 1 link, INT+195 and AP+9 to linked characters in God mode
+        - desc: At 2 links, INT+455 and AP+21 to linked characters in God mode
+        - desc: At 3 links, INT+650 and AP+30 to linked characters in God mode
+        - desc: At 4 links, INT+975 and AP+45 to linked characters in God mode
+
+  skills:
+    - name: "Explosion"
+      picture: Skill_Placeholder
+      element: Fire
+      power: INT x 710%
+      ap: 38
+      maxHits: 14
+    - name: "Stone Rain"
+      picture: Skill_Placeholder
+      element: Earth
+      power: INT x 460%
+      ap: 35
+      maxHits: 5
+    - name: "Fire Bolt"
+      picture: Skill_Placeholder
+      element: Fire
+      power: INT x 200%
+      ap: 20
+      maxHits: 6
+    - name: "Earthquake"
+      picture: Skill_Placeholder
+      element: Earth
+      power: INT x 1750%
+      ap: 57
+      maxHits: 3
+
+  rush:
+    name: "Divine Comedy"
+    picture: Rush_Placeholder
+    effects:
+      - desc: Recover 100% HP (party)
+      - desc: Single-target damage +70% (party, 20s)
+    power: INT x 5000%
+    maxHits: 9
