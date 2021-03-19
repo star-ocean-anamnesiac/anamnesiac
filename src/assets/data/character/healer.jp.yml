@@ -4178,6 +4178,85 @@
     power: INT x 4000%
     maxHits: 9
 
+- name: Ioshua Jerand (Awakened)
+  cat: jp
+  picture: Ioshua_Jerand
+  weapon: staff
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 13965
+    atk: 1747
+    int: 2482
+    def: 1365
+    hit: 1057
+    grd: 1134
+
+  talents:
+    - name: "Looking for Sister"
+      effects:
+        - desc: Increase Fairy Light's buff to 50% at 100% HP (party)
+        - desc: AP Recovery +150%
+        - desc: Symbology cast time -90%
+        - desc: Anti flinch while casting symbology
+    - name: "Shy"
+      effects:
+        - desc: Recover 10% HP every 3 seconds (party)
+        - desc: Recover 20% HP every 3 seconds at HC > 100 (party)
+    - name: "Neat Feature"
+      effects:
+        - desc: DMG taken -45% at long range (self)
+        - desc: DMG taken -25% at long range (party)
+        - desc: Critical chance +20% at 100% HP (party)
+    - name: "The Truth Hidden in Ruins"
+      effects:
+        - desc: Rush gauge increases by 50% when allies die (effect doesn't stack if multiple allies die at once)
+    - name: "Overprotective"
+      effects:
+        - desc: Start with 2 Orders and AP cost -70% during Order countdown (party)
+        - desc: Order gain rate +30% at 100% HP (party)
+    - name: "The Weight We Carry as One"
+      effects:
+        - desc: Recover 50% HP to the party when casting Thuderstorm
+        - desc: Recover 20 AP when casting Thunderstorm
+        - desc: 90% chance of surviving a lethal attack when at 10% of max HP or more
+
+  skills:
+    - name: "Thunderbolt"
+      picture: Skill_Placeholder
+      element: Lightning
+      power: INT x 900%
+      ap: 24
+      maxHits: 3
+    - name: "Lightning Blast"
+      picture: Skill_Placeholder
+      element: Lightning
+      power: INT x 300%
+      ap: 14
+      maxHits: 10
+    - name: "Fairy Light"
+      picture: Skill_Placeholder
+      power: INT x 200%
+      ap: 30
+      maxHits: 1
+    - name: "Thunderstrom"
+      picture: Skill_Placeholder
+      element: Lightning
+      power: INT x 1310%
+      ap: 27
+      maxHits: 5
+
+  rush:
+    name: "Thundercloud"
+    picture: Rush_Placeholder
+    element: Lightning
+    effects:
+      - desc: Revives Attackers, Defenders, and Casters with 50% HP
+    power: INT x 5000%
+    maxHits: 9
+
 - name: Evelysse  (Halloween)
   cat: jp
   picture: Char_Placeholder_Witch_Evelyse
