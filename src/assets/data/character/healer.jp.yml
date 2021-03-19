@@ -4343,19 +4343,21 @@
   talents:
     - name: "Brilliant New Departure"
       effects:
-        - desc: Bowstring Rain・AF Effect Increased to 40% at 100% HP (All)
-        - desc: Bowstring Rain・AF Effect Increased to 50% during Order Countdown (All)
+        - desc: Bowstring Rain・AF Effect Increased to 45% at 100% HP (party)
+        - desc: Bowstring Rain・AF Effect Increased to 55% during Order Countdown (party)
     - name: "Blessing of the Sacred Bird"
       effects:
-        - desc: HP Recovery +100% when using Faerie Light・Blessings and Dawn Tri-Star at SC 3+
+        - desc: HP Recovery +100% when using Faerie Light・Blessings and Dawn Tri-Star at SC >= 3
+        - desc: Order gain +30% while at 100% HP (party)
+        - desc: Critical chance +30% during Order Countdown (party)
     - name: "Alike Spouses?"
       effects:
-        - desc: AP cost -20% at SC 2, -40% at SC 3+ (party)
-        - desc: AP Cost -70% at SC 4+
-        - desc: Rush gauge +2% every 1s
+        - desc: AP cost -20% at SC > 2, -40% at SC >= 3 (party)
+        - desc: AP Cost -70% at SC >= 4 (self)
+        - desc: Gain 25% Rush every second (self)
     - name: "Reformed Ceremonial Purification Bow"
       effects:
-        - desc: Order Gauge +1
+        - desc: Start with 1 Order
         - desc: HP +30%
         - desc: Anti flinch while attacking
         - desc: DMG taken -50%
@@ -4363,7 +4365,7 @@
   skills:
     - name: "Bowstring Rain・AF"
       picture: Skill_Placeholder
-      power: INT x 250%
+      power: INT x 270%
       ap: 20
       maxHits: 3
     - name: "Crimson Squall・Blessings"
@@ -4374,11 +4376,11 @@
     - name: "Faerie Light・Blessings"
       picture: Skill_Placeholder
       power: INT x 250%
-      ap: 60
+      ap: 50
       maxHits: 1
     - name: "Dawn Tri-Star"
       picture: Skill_Placeholder
-      power: INT x 710%
+      power: INT x 780%
       ap: 31
       maxHits: 3
 
@@ -4387,7 +4389,7 @@
     picture: Rush_Placeholder
     effects:
       - desc: Revives at 50% HP (Attackers/Defenders/Sharpshooters)
-    power: INT x 4000%
+    power: INT x 4500%
     maxHits: 1
 
 - name: Mastema (Wise God)
