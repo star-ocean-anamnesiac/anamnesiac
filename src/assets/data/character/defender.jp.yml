@@ -4535,6 +4535,80 @@
     power: ATK x 6000%
     maxHits: 3
 
+- name: Precis F. Neumann (Valentine)
+  cat: jp
+  picture: Precis_Valentine
+  weapon: launcher
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 21945
+    atk: 2468
+    int: 1549
+    def: 2336
+    hit: 840
+    grd: 1036
+
+  talents:
+    - name: "Valentine Day's Producer"
+      effects:
+        - desc: Damage taken +45%, +70% at HC > 200 (enemies)
+        - desc: Echo by skills 10% (party)
+    - name: "Mujin-kun Turned Cupid"
+      effects: 
+        - desc: Start with 1 Order
+        - desc: No flinching when taking damage under 25% HP (party)
+        - desc: Damage taken -30%, -50% at HC > 200 (party)
+    - name: "Tasteful Hair Arrangement"
+      effects: 
+        - desc: HC Timer +5s
+        - desc: AP cost -30%/-50% at HC > 100/200 (party)
+        - desc: Rush damage +40% at HC > 400 (party)
+    - name: "Let's Date"
+      effects: 
+        - desc: Recover 10% HP when activating Vanguard
+        - desc: ATK +20% when activating Vanguard (10s)
+        - desc: Recover 50 AP when taking damage
+        - desc: Order gain +50% when taking damage (10s)
+    - name: "Vanguard / Sweet Cannon Precis [MASTERY]"
+      effects: 
+        - desc: ATK damage +30% when activating Vanguard (3s)
+        - desc: No flinching when using Charge Assault
+        - desc: Nullifies Charge Assault Crit. Penalty
+  
+  skills:
+    - name: "Thunder Arm ・ Departure"
+      picture: Skill_Placeholder
+      element: Lightning
+      power: ATK x 500%
+      ap: 24
+      maxHits: 7
+    - name: "Starboard Scratch ・ Departure"
+      picture: Skill_Placeholder
+      power: ATK x 150%
+      ap: 13
+      maxHits: 5
+    - name: "Portside Scratch ・ Departure"
+      picture: Skill_Placeholder
+      power: ATK x 150%
+      ap: 13
+      maxHits: 5
+    - name: "Bloody Mary Love Heart"
+      picture: Skill_Placeholder
+      power: ATK x 630%
+      ap: 34
+      maxHits: 6
+      
+  rush:
+    name: "Happy Happy Chocolate!"
+    picture: Rush_Placeholder
+    effects: 
+      - desc: ATK damage taken +50%, INT damage taken +30% (enemies, 20s)
+    power: ATK x 5500%
+    maxHits: 10
+
 - name: Jeanne Mathwest
   cat: jp
   picture: Jeanne

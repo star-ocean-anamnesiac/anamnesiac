@@ -8070,4 +8070,78 @@
       - desc: Single Target DMG +70% (party/20s)
     power: ATK x 5000%
     maxHits: 8
-    
+
+- name: Millie Chliette (Valentine)
+
+  cat: jp
+  picture: Millie_Valentine
+  weapon: rifle
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 13860
+    atk: 2508
+    int: 1563
+    def: 1747
+    hit: 1260
+    grd: 924
+
+  talents:
+    - name: "Bold Sweet Chocolate"
+      effects:
+        - desc: Damage +40%, +75% at 100% HP (party)
+        - desc: Damage +90% when an enemy gets stunned (party, 30s)
+        - desc: AP recovery +150% (party)
+    - name: "Swaying Earrings"
+      effects:
+        - desc: Stun rate +60% (party)
+        - desc: ATK damage +40% when Millie is at SC 5+ (party)
+        - desc: Assist use +1 (party)
+        - desc: Able to air dodge (self)
+    - name: "I've Diverged From the Standard"
+      effects:
+        - desc: AP cost -30%/-70% when at SC 5+/7+
+        - desc: Recover AP when using Highwind Blast
+    - name: "Presenting You With Eternal Feelings"
+      effects:
+        - desc: 85% chance of surviving a lethal attack when at 15% of max HP or more (party)
+        - desc: Anti-flinch while attacking (self)
+        - desc: Party recovers 30% HP when using Float Heart Burst
+        - desc: Damage taken while attacking -40%
+    - name: "Multilock / Sweetheart Millie [MASTERY]"
+      effects:
+        - desc: 280% damage per lock, max of 4
+        - desc: Recover AP when using Multilock
+        - desc: Nullifies Charge Assault Crit. penalty
+
+  skills:
+    - name: "Highwind Blast ・ Yearning"
+      picture: Skill_Placeholder
+      power: ATK x 230%
+      ap: 16
+      maxHits: 4
+    - name: "Spread Ray ・ Yearning"
+      picture: Skill_Placeholder
+      power: ATK x 610%
+      ap: 31
+      maxHits: 5
+    - name: "Laydown Snipe ・ Yearning"
+      picture: Skill_Placeholder
+      power: ATK x 220%
+      ap: 14
+      maxHits: 3
+    - name: "Float Heart Burst"
+      picture: Skill_Placeholder
+      power: ATK x 640%
+      ap: 34
+      maxHits: 6
+
+  rush:
+    name: "Heavy Chocolate Press"
+    picture: Rush_Placeholder
+    effects:
+      - desc: Critical chance +100% (party, 10s)
+    power: ATK x 5500%
+    maxHits: 5
