@@ -8071,6 +8071,74 @@
     power: ATK x 5000%
     maxHits: 8
 
+- name: Laevonia (New Year)
+  cat: jp
+  picture: Laevonia_NewYear
+  weapon: gun
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 2482
+    int: 1589
+    def: 1523
+    hit: 1260
+    grd: 931
+
+  talents:
+    - name: "Auspicious Dream"
+      effects:
+        - desc: Damage +40%/65%/90% at HC > 0/100/200 (party)
+        - desc: Assist use +2 (party)
+    - name: "Modern Outfit"
+      effects:
+        - desc: Start with full Rush and 1 Order (party)
+        - desc: AP cost -35% at HC > 100 (party)
+        - desc: Able to air dodge (self)
+    - name: "New Year's Gift"
+      effects:
+        - desc: Skills 1 and 2 recover 20 AP
+        - desc: Anti flinch while attacking
+        - desc: Skills drain 2% of damage dealt at SC >= 4
+    - name: "First Date in Sunny Clothes"
+      effects:
+        - desc: Damage taken -100% while using skills (self, 0.5s)
+        - desc: ATK +20% at HC > 200 (self)
+        - desc: Party recovers some AP when using Awaken Stream
+        - desc: AP cost -50% at SC >= 4 (self)
+
+  skills:
+    - name: "Happy Paroniria"
+      picture: Skill_Placeholder
+      power: ATK x 290%
+      ap: 25
+      maxHits: 6
+    - name: "Oneirodynia Bullet"
+      picture: Skill_Placeholder
+      power: ATK x 260%
+      ap: 22
+      maxHits: 3
+    - name: "Howling Nightmare"
+      picture: Skill_Placeholder
+      power: ATK x 320%
+      ap: 28
+      maxHits: 6
+    - name: "Awaken Stream"
+      picture: Skill_Placeholder
+      power: ATK x 1040%
+      ap: 34
+      maxHits: 3
+
+  rush:
+    name: "Sunrise Dreaming Break"
+    picture: Rush_Placeholder
+    effects:
+      - desc: Critical chance +60%, Critical damage +30% (party, 20s)
+    power: ATK x 5000%
+    maxHits: 9
+
 - name: Reimi Saionji (Divine)
   cat: jp
   picture: Reimi_Divine
@@ -8182,17 +8250,17 @@
         - desc: Nullifies Charge Assault Crit. penalty
 
   skills:
-    - name: "Highwind Blast ・ Yearning"
+    - name: "Highwind Blast | Yearning"
       picture: Skill_Placeholder
       power: ATK x 230%
       ap: 16
       maxHits: 4
-    - name: "Spread Ray ・ Yearning"
+    - name: "Spread Ray | Yearning"
       picture: Skill_Placeholder
       power: ATK x 610%
       ap: 31
       maxHits: 5
-    - name: "Laydown Snipe ・ Yearning"
+    - name: "Laydown Snipe | Yearning"
       picture: Skill_Placeholder
       power: ATK x 220%
       ap: 14
