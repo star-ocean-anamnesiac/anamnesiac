@@ -11401,6 +11401,78 @@
     power: ATK x 5000%
     maxHits: 14
 
+- name: Tika (Early Spring)
+  cat: jp
+  picture: Tika_EarlySpring
+  weapon: arm
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 22050
+    atk: 3262
+    int: 1537
+    def: 1930
+    hit: 1148
+    grd: 847
+
+  talents:
+    - name: "Accumulated Happiness"
+      effects:
+        - desc: ATK +1000, +1500 while at 100% HP (party)
+        - desc: Start CB at 200% when using Charge Assault (self)
+        - desc: Able to air dodge (self)
+    - name: "Accompained by Recoro"
+      effects:
+        - desc: Gain 3% Rush every 3 seconds (party)
+        - desc: AP recovery +150% (party)
+        - desc: Order gain rate +30% while at 100% HP (party)
+    - name: "Wish Fulfilled Over Time"
+      effects:
+        - desc: ATK +20% and recovers some AP when triggering Vanguard (self, 10s)
+        - desc: Damage taken -50% while using Charge Assault
+    - name: "Secret Request"
+      effects:
+        - desc: Party recovers 15% HP every 3 seconds when Tika triggers Vanguard (10s)
+        - desc: ATK +20%, HP + 40%
+        - desc: Recovers 30% HP every 3 seconds (self)
+    - name: "Vanguard / Tika (Early Spring) [MASTERY]"
+      effects:
+        - desc: Damage taken +25% when Tika triggers Vanguard (enemies, 3s)
+        - desc: Anti flinch while using Charge Assault
+        - desc: Nullifies Charge Assault Crit. penalty
+
+  skills:
+    - name: "Kotobuki | Arms"
+      picture: Skill_Placeholder
+      power: ATK x 410%
+      ap: 18
+      maxHits: 6
+    - name: "Otoshidama | Shot"
+      picture: Skill_Placeholder
+      power: ATK x 600%
+      ap: 25
+      maxHits: 6
+    - name: "Mochitsuki | Arms"
+      picture: Skill_Placeholder
+      power: ATK x 540%
+      ap: 21
+      maxHits: 6
+    - name: "Mirror | Opening"
+      picture: Skill_Placeholder
+      power: ATK x 1020%
+      ap: 34
+      maxHits: 3
+
+  rush:
+    name: "Twin Kinetsuki Drive"
+    picture: Rush_Placeholder
+    effects:
+      - desc: ATK damage +60%, INT damage +40% (party, 20s)
+    power: ATK x 6000%
+    maxHits: 6
+
 - name: Luther Lansfeld
   cat: jp
   picture: Luther
