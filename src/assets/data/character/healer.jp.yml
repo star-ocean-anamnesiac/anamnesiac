@@ -4275,21 +4275,21 @@
   talents:
     - name: "Flying Broom Witch"
       effects:
-        - desc: Able to heal over max HP
-        - desc: Gains up to 10000 HP over max HP (party), +15000 (long range)
+        - desc: Overheal up to 15000 HP (party)
+        - desc: Order gain +30% at 100% HP (party)
     - name: "Candy Rain"
       effects:
-        - desc: ATK/INT DMG +40% when HP is 100% (party)
-        - desc: Rush DMG +40% at 100% HP and 200+ HC (party)
+        - desc: ATK/INT DMG +45% at 100% HP (party)
+        - desc: Rush damage +55% at 100% HP and HC > 200 (party)
     - name: "Coro Lantern Shimmering in the Dark"
       effects:
         - desc: Cast time -80%
-        - desc: INT +30% at SC 3+
+        - desc: INT +30% at SC >= 3
         - desc: Recover AP while walking, anti flinch while casting
-    - name: "Mischief Iraption and Flame at the Back of the Eyes"
+    - name: "Mischief at the Back of the Eyes"
       effects:
-        - desc: All allies recover some AP after Eruption and Flame Spear skill
-        - desc: All allies recover 20 AP after using Hot Servant
+        - desc: Recovers some AP to the party when using Eruption and Flame Spear
+        - desc: Recovers 20 AP to the party when using Hot Servant
 
   skills:
     - name: "Eruption"
@@ -4300,7 +4300,7 @@
       maxHits: 2
     - name: "Fairy Light"
       picture: Skill_Placeholder
-      power: INT x 180%
+      power: INT x 200%
       ap: 30
       maxHits: 1
       notes: Party Heal
@@ -4312,7 +4312,7 @@
       maxHits: 2
     - name: "Hot Servant"
       picture: Skill_Placeholder
-      power: INT x 1070%
+      power: INT x 1340%
       ap: 43
       maxHits: 3
 
@@ -4321,8 +4321,8 @@
     picture: Rush_Placeholder
     element: Fire
     effects:
-      - desc: Recovers 100% HP, ATK/INT DMG +50% (party/20s)
-    power: INT x 4000%
+      - desc: Recovers 100% HP, ATK/INT DMG +50% (party, 20s)
+    power: INT x 4500%
     maxHits: 4
 
 - name: Reimi Saionji (New Year's)
