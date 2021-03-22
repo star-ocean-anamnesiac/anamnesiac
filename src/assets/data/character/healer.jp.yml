@@ -4530,6 +4530,79 @@
     power: INT x 4500%
     maxHits: 8
 
+- name: Maria Traydor (Halloween)
+  cat: jp
+  picture: Maria_Halloween
+  weapon: gun
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 12495
+    atk: 1811
+    int: 2468
+    def: 1510
+    hit: 1057
+    grd: 1127
+
+  talents:
+    - name: "Vampire Night"
+      effects:
+        - desc: Overheal up to 15000 HP (party)
+        - desc: AP cost -70% during Order countdown (party)
+    - name: "Harvest Festival Actress"
+      effects:
+        - desc: Damage taken +40%, +55% when Maria is at 100% HP (enemies)
+        - desc: Damage taken +70% during Order countdown (enemies)
+        - desc: Critical chance +20% during Order countdown (party)
+    - name: "Scarlet Eyes"
+      effects:
+        - desc: Start with 2 Orders
+        - desc: Order gain rate +30% while at 100% HP (party)
+        - desc: AP recovery +150% (party)
+        - desc: Recovers some AP to the party when using Multilock
+    - name: "Mistress of the Vampire Hall"
+      effects:
+        - desc: Recovers 45% HP to the party when using Nightmare Bullet
+        - desc: Anti flinch while attacking
+        - desc: Recovers 25% HP to the party after using any skill
+    - name: "Multilock / Vampire Maria [MASTERY]"
+      effects:
+        - desc: 280% damage per lock, max of 5
+        - desc: Start CB at 200% when using Charge Assault
+        - desc: Nullifies Charge Assault Crit. penalty
+
+  skills:
+    - name: "Blood Shot"
+      picture: Skill_Placeholder
+      power: INT x 230%
+      ap: 18
+      maxHits: 1
+    - name: "Scream Device"
+      picture: Skill_Placeholder
+      power: INT x 340%
+      ap: 19
+      maxHits: 9
+    - name: "Dead Emission"
+      picture: Skill_Placeholder
+      power: INT x 680%
+      ap: 23
+      maxHits: 8
+    - name: "Nightmare Bullet"
+      picture: Skill_Placeholder
+      power: INT x 900%
+      ap: 29
+      maxHits: 4
+
+  rush:
+    name: "Bloody Legion Device"
+    picture: Rush_Placeholder
+    effects:
+      - desc: Recover 100% HP, ATK/INT damage +50% (party, 20s)
+    power: INT x 4500%
+    maxHits: 12
+
 - name: Gabriel
   cat: jp
   picture: Gabriel
