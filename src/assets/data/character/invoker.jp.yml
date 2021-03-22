@@ -5963,32 +5963,27 @@
   talents:
     - name: "Gloomy Scientist"
       effects:
-        - desc: Critical chance +30%, + 50% at HP 100%
-          all: true
-          meta:
-            priority: 1
-            buff: Crit Rate
-            buffValue: 50
+        - desc: Converts 60% of ATK to INT during Rush (self)
+        - desc: Critical chance +40%, +65% at 100% HP (party)
     - name: "Strange Medicine"
       effects:
-        - desc: HP recovery 5% of DMG when using Popping Necrodance at SC 3+
-        - desc: INT +20%,  +100% Crit DMG during Rush Combo at 100% HP
+        - desc: Absorb 5% of damage dealt by Popping Necrodance as HP at SC >= 3
+        - desc: INT +25% and Critical damage +110% during Rush at 100% HP
     - name: "Muujin-kun in the Shadows"
       effects:
-        - desc: DMG taken -100% on dodge (0.5s)
-        - desc: Dodge cost -80 at 100% HP
-        - desc: CB 200% while Dodging
+        - desc: Damage taken -100% after dodging (0.5s)
+        - desc: Dodge AP cost -80% at 100% HP
+        - desc: Start CB at 200% after dodging
     - name: "Studious for Another"
       effects:
-        - desc: INT +20%
-        - desc: HP +30%
+        - desc: INT +20%, HP +30%
         - desc: AP cost -20% at 100% HP
-        - desc: AP recovery +100 after using heraldy (party/20s)
+        - desc: Party AP recovery +100% after Precis casts a spell (20s)
 
   skills:
     - name: "Popping Necromance"
       picture: Skill_Placeholder
-      power: INT x 1210%
+      power: INT x 1240%
       ap: 35
       maxHits: 4
     - name: "Fireport"
@@ -6000,7 +5995,7 @@
     - name: "Fire Torcher"
       picture: Skill_Placeholder
       element: Fire
-      power: INT x 1480%
+      power: INT x 1510%
       ap: 44
       maxHits: 5
     - name: "Perios Injection"
@@ -6013,14 +6008,8 @@
     name: "Funny Operation"
     picture: Rush_Placeholder
     effects: 
-      - desc: Crit Rate 100%
-        all: true
-        duration: 10
-        meta:
-          priority: 1
-          buff: Crit Rate
-          buffValue: 100
-    power: INT x 5500%
+      - desc: Crit Rate 100% (party, 10s)
+    power: INT x 6000%
     maxHits: 11
 
 - name: Pericci (Winter)
