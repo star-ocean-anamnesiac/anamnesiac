@@ -7263,34 +7263,32 @@
   talents:
     - name: "Exorcist who Eradicates Evil"
       effects:
-        - desc: DMG dealt +40% at 100% HP
-          all: true
-          meta:
-            priority: 1
-            buff: Damage
-            buffValue: 40
-    - name: "Silver Barrett"
+        - desc: Damage +45% at 100% HP (party)
+        - desc: Passing Spirit AF effect increased to 45% at 100% HP (party)
+    - name: "Silver Bullet"
       effects:
-        - desc: HP Recovery 20% to party when using Purrification Blow
+        - desc: Party recovers 25% HP and some AP when using Purification Blow
+        - desc: Maintain CB after dodging once
+        - desc: Dodge AP cost -80%
     - name: "Coat Fluttering in the Moonlight Night"
       effects:
-        - desc: Rush Gauge +3%/3s at 100% HP (party)
-        - desc: AP Cost -40% at skill chain +3 (party)
+        - desc: Gain 3% Rush ever 3 seconds at 100% HP (party)
+        - desc: AP Cost -40% at SC >= 3 (party)
     - name: "Oath to Resist Corruption"
       effects:
         - desc: Anti flinch while attacking
         - desc: DMG taken -50% when attacking
-        - desc: ATK damage +50% at skill chain 3+
+        - desc: ATK damage +50% at SC >= 3
     
   skills:
-    - name: "Passing Spirit"
+    - name: "Passing Spirit - AF"
       picture: Skill_Placeholder
-      power: ATK x 200%
+      power: ATK x 220%
       ap: 18
       maxHits: 3
     - name: "Purification Blow"
       picture: Skill_Placeholder
-      power: ATK x 930%
+      power: ATK x 1050%
       ap: 40
       maxHits: 6
     - name: "Spread Ray"
@@ -7308,8 +7306,8 @@
     name: "Judgement Barrett"
     picture: Rush_Placeholder
     effects:
-      - desc: AP Cost -50% (party/20s)
-    power: ATK x 4500%
+      - desc: AP Cost -50% (party, 20s)
+    power: ATK x 5000%
     maxHits: 10
 
 - name: Verda Kleiman (Anniversary)
@@ -7332,11 +7330,6 @@
     - name: "Radiant Flower Dress"
       effects:
         - desc: DMG dealt +40%, +65%/90% at HC >150/300 (party)
-          all: true
-          meta:
-            priority: 1
-            buff: Damage
-            buffValue: 80
     - name: "Red Dance Shoes"
       effects:
         - desc: Start with 2 Orders
@@ -8070,6 +8063,76 @@
       - desc: Single Target DMG +70% (party/20s)
     power: ATK x 5000%
     maxHits: 8
+
+- name: Peppita Rosetti (Halloween)
+  cat: jp
+  picture: Peppita_Halloween
+  weapon: launcher
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 14280
+    atk: 2482
+    int: 1575
+    def: 1720
+    hit: 1253
+    grd: 924
+
+  talents:
+    - name: "Stardust Illusion"
+      effects:
+        - desc: Magic Accelerator AF effect increased to +55% at 100% HP (party)
+        - desc: Party Rush damage +40% and Damage taken -30% when Peppita uses any skill (10s)
+    - name: "Magician's Tamago"
+      effects:
+        - desc: Assist use +2 (party)
+        - desc: AP recovery on normal attacks +250%
+        - desc: No flinching when taking damage <= 20% of max HP (party)
+        - desc: Damage taken after dodging -100% (self, 0.5s)
+    - name: "Secret Special Training"
+      effects:
+        - desc: Party recovers 25% HP and some AP after using Phantom Juggler
+        - desc: Party AP cost -35% after using Dream Comet of Astro Gimmick (10s)
+    - name: "Fantastic Stage"
+      effects:
+        - desc: 90% chance of surviving a lethal attack when at 10% of max HP or more
+        - desc: ATK +20% at 100% HP and HC > 150
+        - desc: Maintain CB after dodging once
+        - desc: Dodge AP cost -80%
+
+  skills:
+    - name: "Magic Accelerator | AF"
+      picture: Skill_Placeholder
+      power: ATK x 310%
+      ap: 19
+      maxHits: 5
+    - name: "Dream Comet"
+      picture: Skill_Placeholder
+      element: Dark
+      power: ATK x 320%
+      ap: 29
+      maxHits: 10
+    - name: "Astro Gimmick"
+      picture: Skill_Placeholder
+      element: Lightning
+      power: ATK x 350%
+      ap: 35
+      maxHits: 7
+    - name: "Phantom Juggler"
+      picture: Skill_Placeholder
+      power: ATK x 990%
+      ap: 35
+      maxHits: 15
+
+  rush:
+    name: "Surprise Magic Stage"
+    picture: Rush_Placeholder
+    effects:
+      - desc: Critical chance +60%, Critical damage +30% (party, 20s)
+    power: ATK x 5000%
+    maxHits: 12
 
 - name: Laevonia (New Year)
   cat: jp
