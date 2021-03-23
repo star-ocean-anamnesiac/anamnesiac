@@ -11401,6 +11401,79 @@
     power: ATK x 5000%
     maxHits: 14
 
+- name: Caleen Keemosn (Snow Fox)
+  cat: jp
+  picture: Caleen_SnowFox
+  weapon: knuckle
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 2730
+    int: 1537
+    def: 1943
+    hit: 1141
+    grd: 847
+
+  talents:
+    - name: "Empress of Winter"
+      effects:
+        - desc: ATK +45%, +85% at 100% HP (party)
+        - desc: Maintain CB after up to 2 consecutive dodges (self)
+        - desc: Critical chance +40% during Order countdown (party)
+    - name: "Snow White Cape"
+      effects:
+        - desc: Gain 20% Rush and 15% Order after triggering Blindside (self)
+        - desc: Assist use +2 (party)
+        - desc: Dodge AP cost -80% (self)
+    - name: "Secret Gift"
+      effects:
+        - desc: Party AP cost -50% after Caleen triggers Blindside (10s)
+        - desc: AP recovery +150% (party)
+        - desc: Able to air dodge (self)
+    - name: "Holy Christmas Magic"
+      effects:
+        - desc: Recover 150% HP and ATK +35% after triggering Blindside (self, 10s)
+        - desc: Overheal up to 20000 HP (self)
+    - name: "Blindside / Snow Fox Caleen [MASTERY]"
+      effects:
+        - desc: Damage taken -100% when using Blindside
+        - desc: Anti flinch when using Charge Assault
+        - desc: Start CB at 200% when using Charge Assault
+
+  skills:
+    - name: "Earth Render"
+      picture: Skill_Placeholder
+      power: ATK x 830%
+      ap: 24
+      maxHits: 6
+    - name: "Death Palm | Luster"
+      picture: Skill_Placeholder
+      power: ATK x 210%
+      ap: 18
+      maxHits: 1
+    - name: "Hammer Kick"
+      picture: Skill_Placeholder
+      power: ATK x 270%
+      ap: 17
+      maxHits: 2
+    - name: "Snyward Claw"
+      picture: Skill_Placeholder
+      power: ATK x 910%
+      ap: 29
+      maxHits: 4
+
+  rush:
+    name: "Snow Fox Storm Dance"
+    picture: Rush_Placeholder
+    effects:
+      - desc: Recover 50% HP (self)
+      - desc: Critical chance +100% (party, 10s)
+    power: ATK x 5000%
+    maxHits: 11
+
 - name: Tika (Early Spring)
   cat: jp
   picture: Tika_EarlySpring
