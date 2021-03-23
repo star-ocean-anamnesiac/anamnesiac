@@ -4603,6 +4603,76 @@
     power: INT x 4500%
     maxHits: 12
 
+- name: Nel Zelpher (Christmas)
+  cat: jp
+  picture: Nel_Christmas
+  weapon: whip
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 13965
+    atk: 1773
+    int: 2468
+    def: 1365
+    hit: 1043
+    grd: 1141
+
+  talents:
+    - name: "Snow Flower of the Holy Night"
+      effects:
+        - desc: Damage taken +40%, +55% when Nel is at full HP (enemies)
+        - desc: Damage taken +70% during Order countdown (enemies)
+    - name: "Gentle Bell Tone"
+      effects:
+        - desc: Start with 1 Order
+        - desc: AP cost -70% during Order countdown (party)
+        - desc: Rush damage +40% when using Heat Up Order (party)
+    - name: "Longing for Illumination"
+      effects:
+        - desc: ATK/INT damage taken -20% (party)
+        - desc: Gain 3% Order after using Thunder Whip
+        - desc: Recovers 25% HP to the party after using Thunder Whip
+        - desc: Recover some AP after using Thunder Whip
+    - name: "Blessing of Poinsettia"
+      effects:
+        - desc: 90% chance of surviving a lethal attack when at 10% of max HP or more
+        - desc: Rush gauge increases by 50% when allies die (effect doesn't stack if multiple allies die at once)
+        - desc: No flinching while casting spells
+
+  skills:
+    - name: "Dragon Whip | Chant"
+      picture: Skill_Placeholder
+      power: INT x 490%
+      ap: 28
+      maxHits: 1
+    - name: "Fairy Light | Chant"
+      picture: Skill_Placeholder
+      power: INT x 250%
+      ap: 60
+      maxHits: 1
+    - name: "Lightning Blast | Chant"
+      picture: Skill_Placeholder
+      element: Lightning
+      power: INT x 280%
+      ap: 14
+      maxHits: 10
+    - name: "Thunder Whip"
+      picture: Skill_Placeholder
+      element: Lightning
+      power: INT x 1300%
+      ap: 31
+      maxHits: 6
+
+  rush:
+    name: "Sealing Crystal Dream"
+    picture: Rush_Placeholder
+    effects:
+      - desc: Revives with 50% HP (party)
+    power: INT x 4500%
+    maxHits: 8
+
 - name: Gabriel
   cat: jp
   picture: Gabriel
@@ -4647,19 +4717,19 @@
         - desc: At 4 links, INT+975 and AP+45 to linked characters in God mode
 
   skills:
-    - name: "Explosion ・ Wise"
+    - name: "Explosion | Wise"
       picture: Skill_Placeholder
       element: Fire
       power: INT x 710%
       ap: 38
       maxHits: 14
-    - name: "Stone Rain ・ Wise"
+    - name: "Stone Rain | Wise"
       picture: Skill_Placeholder
       element: Earth
       power: INT x 460%
       ap: 35
       maxHits: 5
-    - name: "Fire Bolt ・ Wise"
+    - name: "Fire Bolt | Wise"
       picture: Skill_Placeholder
       element: Fire
       power: INT x 200%
