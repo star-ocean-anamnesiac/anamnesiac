@@ -11690,3 +11690,78 @@
       - desc: Cure condition & Status immunity (Party/20s) | +65% Crit (Party/20s)
     power: ATK x 6500%
     maxHits: 6
+
+- name: Tika (Idol)
+  cat: jp
+  picture: Tika_Idol
+  weapon: ohs
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15750
+    atk: 2718
+    int: 1563
+    def: 1930
+    hit: 1141
+    grd: 840
+
+  talents:
+    - name: "Over the Nights"
+      effects:
+        - desc: ATK +45%/70%/95% at HC > 0/100/250 (party)
+        - desc: ATK damage +40% at SC >= 5 (party)
+        - desc: Start with full Rush (party)
+    - name: "Remnants of Young Leaf Color"
+      effects:
+        - desc: Assist uses +3 (party)
+        - desc: Gain 3% Rush every 3 seconds (party)
+        - desc: AP cost -35% while Tika is airborne (party)
+        - desc: AP cost -50% at SC >= 4 (party)
+    - name: "Thousand Tears"
+      effects:
+        - desc: 90% chance of surviving a lethal attack when at 20% of max HP or more (self)
+        - desc: Able to air dodge (self)
+        - desc: Order gain +50% while Tika is airborne (party)
+    - name: "To the Long-Awaited Tomorrow"
+      effects:
+        - desc: ATK +20% at HC > 200
+        - desc: No flinching while attacking
+        - desc: Drain 3% of damage dealt by Starling Divider as HP when at SC >= 3
+    - name: "Vanguard / Idol Tika [Mastery]"
+      effects:
+        - desc: Start CB at 200% when using Charge Assault
+        - desc: Anti flinch when using Charge Assault
+        - desc: Nullify Charge Assault Crit. penalty
+
+  skills:
+    - name: "Flushing Blade"
+      picture: Skill_Placeholder
+      power: ATK x 360%
+      ap: 19
+      maxHits: 5
+    - name: "Meteor Sword"
+      picture: Skill_Placeholder
+      element: Fire
+      power: ATK x 520%
+      ap: 21
+      maxHits: 2
+    - name: "Sonic Edge Arts"
+      picture: Skill_Placeholder
+      power: ATK x 810%
+      ap: 22
+      maxHits: 1
+    - name: "Starling Divider"
+      picture: Skill_Placeholder
+      power: ATK x 1040%
+      ap: 28
+      maxHits: 2
+
+  rush:
+    name: "Radiant Evolution"
+    picture: Rush_Placeholder
+    effects:
+      - desc: ATK damage taken +50%, INT damage taken +30% (enemies, 20s)
+    power: ATK x 5500%
+    maxHits: 6
