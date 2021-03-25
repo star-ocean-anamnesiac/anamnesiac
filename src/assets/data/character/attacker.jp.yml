@@ -10985,6 +10985,7 @@
   picture: Heath_Bureau
   weapon: dualswords
   ace: true
+  semi: true
   limited: true
   star: 5
 
@@ -11047,6 +11048,83 @@
     effects:
       - desc: ATK DMG +60%, INt DMG +40% (party/20s)
     power: ATK x 7000%
+    maxHits: 16
+
+- name: Heath Bureau (Awakened)
+  cat: jp
+  picture: Heath_Bureau
+  weapon: dualswords
+  ace: true
+  semi: true
+  limited: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 20475
+    atk: 3846
+    int: 1537
+    def: 1878
+    hit: 1120
+    grd: 833
+
+  talents:
+    - name: "Lassa Lt. Gen. Ensign"
+      effects:
+        - desc: Effect of AF increased to +50% at HC ≥ 150
+        - desc: AP cost -80% and ATK +35% after triggering Blindside (20s)
+    - name: "Armed With Pirates"
+      effects:
+        - desc: Start with 100% Rush (party)
+        - desc: AP cost -35%/-45% at HC ≥ 100/200 (party)
+    - name: "Hidden Truth of Genes"
+      effects:
+        - desc: Recover 100% HP when triggering Blindside
+        - desc: Able to overheal up to 20000 HP
+        - desc: Able to airdodge
+    - name: "Father's Letter"
+      effects:
+        - desc: ATK +35%, HP +30% (stat page)
+        - desc: CB will be maintained after 1 non-consecutive dodge
+    - name: "Respect for the Boss"
+      effects:
+        - desc: Damage taken -100% after dodging (1s)
+        - desc: Recovers 50 AP to the party after a perfect dodge
+        - desc: Gain 20% Rush and 15% Order after triggering Blindside
+    - name: "Blindside / Heath [Mastery]"
+      effects:
+        - desc: Damage taken -100% during Blindside
+        - desc: Nullify Charge Assault Crit. penalty
+        - desc: Start CB at 200% when using Charge Assault
+
+  skills:
+    - name: "Piercing Todoroki"
+      picture: Skill_Placeholder
+      power: ATK x 430%
+      ap: 22
+      maxHits: 2
+    - name: "Stinger Edge | AF"
+      picture: Skill_Placeholder
+      power: ATK x 330%
+      ap: 18
+      maxHits: 6
+    - name: "Raging Strike Todoroki"
+      picture: Skill_Placeholder
+      power: ATK x 570%
+      ap: 29
+      maxHits: 1
+    - name: "Composite Arts"
+      picture: Skill_Placeholder
+      power: ATK x 1030%
+      ap: 34
+      maxHits: 7
+
+  rush:
+    name: "Close Range Breaker"
+    picture: Rush_Placeholder
+    effects:
+      - desc: ATK DMG +60%, INt DMG +40% (party/20s)
+    power: ATK x 7500%
     maxHits: 16
 
 - name: Laevonia
@@ -11574,7 +11652,7 @@
     - name: "Definition of Life"
       effects:
         - desc: ATK +30%, HP+20%, AP+40
-        - desc: Skills drain 3% of damage dealt at SC >= 3 (self)
+        - desc: Skills drain 3% of damage dealt at SC ≥ 3 (self)
         - desc: ATK +60% during Rush at 100% HP (self)
     - name: "Interrupt / Luther [MASTERY]"
       effects:
@@ -11711,14 +11789,14 @@
     - name: "Over the Nights"
       effects:
         - desc: ATK +45%/70%/95% at HC > 0/100/250 (party)
-        - desc: ATK damage +40% at SC >= 5 (party)
+        - desc: ATK damage +40% at SC ≥ 5 (party)
         - desc: Start with full Rush (party)
     - name: "Remnants of Young Leaf Color"
       effects:
         - desc: Assist uses +3 (party)
         - desc: Gain 3% Rush every 3 seconds (party)
         - desc: AP cost -35% while Tika is airborne (party)
-        - desc: AP cost -50% at SC >= 4 (party)
+        - desc: AP cost -50% at SC ≥ 4 (party)
     - name: "Thousand Tears"
       effects:
         - desc: 90% chance of surviving a lethal attack when at 20% of max HP or more (self)
@@ -11728,7 +11806,7 @@
       effects:
         - desc: ATK +20% at HC > 200
         - desc: No flinching while attacking
-        - desc: Drain 3% of damage dealt by Starling Divider as HP when at SC >= 3
+        - desc: Drain 3% of damage dealt by Starling Divider as HP when at SC ≥ 3
     - name: "Vanguard / Idol Tika [Mastery]"
       effects:
         - desc: Start CB at 200% when using Charge Assault
