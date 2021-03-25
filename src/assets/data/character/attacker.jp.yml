@@ -10193,17 +10193,12 @@
   talents:
     - name: "Sparkling Sleek Dress"
       effects:
-        - desc: ATK DMG dealt +50% at 150+ HC
-          all: true
-          meta:
-            priority: 1
-            buff: ATK Damage
-            buffValue: 50
-        - desc: Skills maintain CB during dodge once per rotation
+        - desc: ATK Damage +60% at HC > 150 (party)
+        - desc: Maintain CB after up to 2 consecutive dodges (self)
     - name: "Blue Dance Shoes"
       effects:
         - desc: AP cost on dodge -80%
-        - desc: AP recovery +100% on perfect dodge
+        - desc: AP recovery +100% on perfect dodge (self)
         - desc: AP recovery +50% on perfect dodge (party)
     - name: "Passionate Lead"
       effects:
@@ -10211,13 +10206,14 @@
         - desc: Critical chance +100% at SC 5+
     - name: "Superstar Debut"
       effects:
-        - desc: ATK + 30%
-        - desc: ATK +35% during Rush Combo at 300+ HC
+        - desc: ATK +30%
+        - desc: ATK +40% during Rush Combo at HC > 300
+        - desc: Gain 3% Rush every 3 seconds (party)
 
   skills:
     - name: "Noble Star Layer"
       picture: Skill_Placeholder
-      power: ATK x 680%
+      power: ATK x 710%
       ap: 31
       maxHits: 3
     - name: "Grace Smasher"
@@ -10233,18 +10229,16 @@
     - name: "Splend Rambling"
       picture: Skill_Placeholder
       element: Ice
-      power: ATK x 830%
+      power: ATK x 860%
       ap: 29
       maxHits: 3
 
   rush:
     name: "Glorious Trinity Waltz"
     picture: Rush_Placeholder
-    shortEffects: ATK +85%, AP recovery +100% by normals (20s)
     effects:
-      - desc: ATK +85%, AP recovery +100% by normals
-        duration: 20
-    power: ATK x 6500%
+      - desc: ATK +85%, AP recovery by normals +100% (20s)
+    power: ATK x 7000%
     maxHits: 14
 
 - name: Caleen Keemosn (New Year's)
