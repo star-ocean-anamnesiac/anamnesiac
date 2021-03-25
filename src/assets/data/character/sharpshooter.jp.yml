@@ -8341,3 +8341,72 @@
       - desc: Critical chance +100% (party, 10s)
     power: ATK x 5500%
     maxHits: 5
+
+- name: Caleen Keemosn (Idol)
+  cat: jp
+  picture: Caleen_Idol
+  weapon: whip
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 2494
+    int: 1549
+    def: 1549
+    hit: 1239
+    grd: 959
+
+  talents:
+    - name: "Presence of Mine"
+      effects:
+        - desc: Damage +45%/70%/100% at HC > 0/150/300 (party)
+        - desc: Rush damage +40% at HC > 300 (party)
+    - name: "Fox Screaming Under the Moon"
+      effects:
+        - desc: Echo by skills +15% (party)
+        - desc: Hitcount timer +3s (party)
+        - desc: Immunity to status afflictions (party, 180s)
+    - name: "Hesitation Hidden in a Dance Fan"
+      effects:
+        - desc: Recovers 20% HP and some AP to the party when using Skill 4
+        - desc: 90% chance of surviving a lethal attack when at 10% of max HP or more (self)
+        - desc: ATK +20% at HC > 200 (self)
+    - name: "A place to relax"
+      effects:
+        - desc: AP recovery +150%
+        - desc: AP recovery while walking (party)
+        - desc: Party gains Rush when using Skill 4
+
+  skills:
+    - name: "Circular Whip"
+      picture: Skill_Placeholder
+      power: ATK x 370%
+      ap: 18
+      maxHits: 1
+    - name: "Crushing Stars"
+      picture: Skill_Placeholder
+      element: Wind
+      power: ATK x 560%
+      ap: 20
+      maxHits: 5
+    - name: "Wings and Songs"
+      picture: Skill_Placeholder
+      power: ATK x 790%
+      ap: 23
+      maxHits: 12
+    - name: "Great Whip | 100 Fox Dance"
+      picture: Skill_Placeholder
+      power: ATK x 1060%
+      ap: 27
+      maxHits: 10
+
+  rush:
+    name: "Gloss Dance"
+    picture: Rush_Placeholder
+    effects:
+      - desc: Revives Attackers
+      - desc: ATK damage +60% (party, 20s)
+    power: ATK x 5500%
+    maxHits: 10
