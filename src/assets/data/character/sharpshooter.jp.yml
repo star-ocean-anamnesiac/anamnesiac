@@ -3563,6 +3563,82 @@
     power: ATK x 3500%
     maxHits: 5
 
+- name: Sophia Esteed (Youth) (Awakened)
+  cat: jp
+  rating: 6
+  picture: Youth_Sophia
+  weapon: dagger
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 19556
+    atk: 2868
+    int: 1563
+    def: 1549
+    hit: 1253
+    grd: 924
+
+  talents:
+    - name: "Yearning"
+      effects:
+        - desc: Damage +50% (party)
+        - desc: Single target damage +15% at long range (party)
+        - desc: Damage +80% when an enemy gets stunned (party, 30s)
+    - name: "Earnest Love of Learning"
+      effects: 
+        - desc: Stun rate +50% (party)
+        - desc: 90% chance of surviving a lethal attack when at 25% of max HP or more (long range weapons)
+    - name: "Bridge Building"
+      effects:
+        - desc: AP recovery of normal attacks +250% (party)
+        - desc: AP cost -30% (party)
+        - desc: AP cost -70% when an enemy gets stunned (party, 10s)
+    - name: "Obvious Jealousy"
+      effects: 
+        - desc: ATK +15%, HP +25% (stat page)
+    - name: "Space-Time Scholar's Daughter"
+      effects:
+        - desc: Stun rate +100% during Rush
+        - desc: Rush damage +40% at HC ≥ 200
+    - name: "Cute friends from the demon world"
+      effects:
+        - desc: Gain 3% Rush every 3 seconds (party)
+        - desc: Start with full Rush (party)
+          
+  skills:
+    - name: "Flying Guillotine"
+      picture: Guillotine
+      power: ATK x 180%
+      ap: 15
+      maxHits: 2
+    - name: "Sylvan Shot"
+      picture: Sylvan_Shot
+      power: ATK x 160%
+      ap: 13
+      maxHits: 8
+    - name: "Unholy Terror"
+      picture: Unholy_Terror
+      power: ATK x 350%
+      ap: 29
+      maxHits: 5
+    - name: "Gremlin Lair"
+      picture: Gremlin's_Lair_I
+      element: Earth
+      power: ATK x 580%
+      ap: 31
+      maxHits: 10
+
+  rush:
+    name: "Blood Scylla"
+    picture: Blood_Scylla_JKJK
+    effects:
+      - desc: Recovers 30% HP (party)
+      - desc: ATK/INT damage +50% (party, 20s)
+    power: ATK x 5000%
+    maxHits: 5
+
 - name: Opera Vectra
   cat: jp
   rating: 4
@@ -8089,7 +8165,7 @@
       effects:
         - desc: Assist use +2 (party)
         - desc: AP recovery on normal attacks +250%
-        - desc: No flinching when taking damage <= 20% of max HP (party)
+        - desc: No flinching when taking damage ≤ 20% of max HP (party)
         - desc: Damage taken after dodging -100% (self, 0.5s)
     - name: "Secret Special Training"
       effects:
@@ -8430,8 +8506,8 @@
   talents:
     - name: "Presence of Mine"
       effects:
-        - desc: Damage +45%/70%/100% at HC > 0/150/300 (party)
-        - desc: Rush damage +40% at HC > 300 (party)
+        - desc: Damage +45%/70%/100% at HC ≥ 0/150/300 (party)
+        - desc: Rush damage +40% at HC ≥ 300 (party)
     - name: "Fox Screaming Under the Moon"
       effects:
         - desc: Echo by skills +15% (party)
