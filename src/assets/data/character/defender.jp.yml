@@ -4535,6 +4535,78 @@
     power: ATK x 6000%
     maxHits: 3
 
+- name: Rena Lanford (Idol)
+  cat: jp
+  picture: Rena_Idol
+  weapon: orb
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 21630
+    atk: 2429
+    int: 1615
+    def: 2298
+    hit: 847
+    grd: 1057
+
+  talents:
+    - name: "Blue Wishes"
+      effects:
+        - desc: HP +60% (party)
+        - desc: No flinching when taking damage ≤ 20% HP (party)
+        - desc: AP recovery on normal attack +250% (party)
+    - name: "Crescent Moon That Illuminates the Darkness"
+      effects:
+        - desc: Echo by skills 10% (party)
+        - desc: Gain 3% Rush every 3 seconds (party)
+        - desc: Single-target damage +45%, +70% at HC ≥ 250 (party)
+    - name: "Resting and Inspiration"
+      effects:
+        - desc: Damage taken -100% when using Flashing Revolution (1s)
+        - desc: Recover 30 AP to the party when Rena is hit
+        - desc: No flinching and damage taken -40% while attacking
+    - name: "Blue Flower Blooming of Hope"
+      effects:
+        - desc: AP cost -35% at HC ≥ 100 (party)
+        - desc: AP cost -60% at HC ≥ 100 (self)
+        - desc: Recover 10% HP when triggering Interrupt (self)
+    - name: "Interrupt / Idol Rena [MASTERY]"
+      effects: 
+        - desc: Nullifies Charge Assault Crit. penalty
+        - desc: AP cost -20%
+  
+  skills:
+    - name: "Starry Beat"
+      picture: Skill_Placeholder
+      power: ATK x 640%
+      ap: 29
+      maxHits: 5
+    - name: "Scram Star Burst"
+      picture: Skill_Placeholder
+      power: ATK x 670%
+      ap: 23
+      maxHits: 6
+    - name: "Heart Aim Comet"
+      picture: Skill_Placeholder
+      power: ATK x 580%
+      ap: 20
+      maxHits: 2
+    - name: "Flashing Revolution"
+      picture: Skill_Placeholder
+      power: ATK x 980%
+      ap: 33
+      maxHits: 3
+      
+  rush:
+    name: "Bright Star Parade"
+    picture: Rush_Placeholder
+    effects: 
+      - desc: ATK damage taken +50%, INT damage taken +30% (enemies, 20s)
+    power: ATK x 5000%
+    maxHits: 9
+
 - name: Precis F. Neumann (Valentine)
   cat: jp
   picture: Precis_Valentine
@@ -4579,18 +4651,18 @@
         - desc: Nullifies Charge Assault Crit. Penalty
   
   skills:
-    - name: "Thunder Arm ・ Departure"
+    - name: "Thunder Arm | Departure"
       picture: Skill_Placeholder
       element: Lightning
       power: ATK x 500%
       ap: 24
       maxHits: 7
-    - name: "Starboard Scratch ・ Departure"
+    - name: "Starboard Scratch | Departure"
       picture: Skill_Placeholder
       power: ATK x 150%
       ap: 13
       maxHits: 5
-    - name: "Portside Scratch ・ Departure"
+    - name: "Portside Scratch | Departure"
       picture: Skill_Placeholder
       power: ATK x 150%
       ap: 13
