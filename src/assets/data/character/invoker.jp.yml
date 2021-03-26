@@ -6116,42 +6116,28 @@
   talents:
     - name: "Exciting Christmas"
       effects:
-        - desc: Convert 50% ATK to INT 
-          all: Invokers/Healers
-          meta:
-            priority: 1
-            buff: ATK -> INT
-            buffValue: 50
-        - desc: Convert 50% INT to ATK 
-          all: Attackers/Defenders/Sharpshooters
-          meta:
-            priority: 1
-            buff: INT -> ATK
-            buffValue: 50
+        - desc: Converts 60% of ATK to INT (Invokers, Healers)
+        - desc: Converts 60% of INT to ATK (Attackers, Defenders, Shooters)
     - name: "Sake-See Costume"
       effects:
-        - desc: INt +30% at close range
-          all: true
-          meta:
-            priority: 1
-            buff: INT
-            buffValue: 30
-        - desc: AP cost -25% at long range (party)
+        - desc: INT +30% at close range (party)
+        - desc: AP cost -35% at long range (party)
+        - desc: Assist use +1 (party)
     - name: "Presents for Nice Children"
       effects:
-        - desc: HP recovery 10% when charge assault short to long range (party)
-        - desc: Slightly RAise rush gauge to all when charge assault long to short range
+        - desc: Recovers 10% HP to the party when Pericci uses Charge Assault from short to long range
+        - desc: Party gains some Rush when Pericci triggers Vanguard
     - name: "Yearning for Santa"
       effects:
         - desc: Movement speed +30% (party)
         - desc: AP recovery +50% (party)
-        - desc: AP recovery by walking(party)
-        - desc: Air dodge
-    - name: "Vanguard C [MASTERY]"
+        - desc: AP recovery while walking (party)
+        - desc: Able to air dodge (self)
+    - name: "Vanguard / Wiinter Pericci [MASTERY]"
       effects:
-        - desc: Anti flinch while Charge Assault
-        - desc: Nullify Critical DMG penalty while Charge Assault
-        - desc: Critical chance +20% when charge assault long to short range
+        - desc: Anti flinch when using Charge Assault
+        - desc: Nullify Charge Assault Crit. Penalty
+        - desc: Critical chance +20% when triggering Vanguard
 
   skills:
     - name: "Back-Kick Missiles"
@@ -6172,7 +6158,7 @@
       maxHits: 4
     - name: "Rotary Kneading"
       picture: Skill_Placeholder
-      power: INT x 1050%
+      power: INT x 1240%
       ap: 39
       maxHits: 4
 
@@ -6180,14 +6166,8 @@
     name: "Happy Present Bomber"
     picture: Rush_Placeholder
     effects:
-      - desc: Critical chance +60% | Critical DMG +30%
-        all: true
-        duration: 20
-        meta:
-          priority: 1
-          buff: Crit Rate
-          buffValue: 60
-    power: INT x 4500%
+      - desc: Critical chance +60%, Critical damage +30% (party, 20s)
+    power: INT x 5000%
     maxHits: 10
 
 - name: Dizzy
