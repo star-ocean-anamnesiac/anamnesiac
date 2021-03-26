@@ -3678,7 +3678,7 @@
       effects: 
         - desc: Critical damage +40% (party)
         - desc: Recover 5% HP every 3 seconds (party)
-        - desc: Recovers 20% HP to the party every 3 seconds while Reimi is at SC >= 2
+        - desc: Recovers 20% HP to the party every 3 seconds while Reimi is at SC ≥ 2
     - name: "Composed Observation"
       effects:
         - desc: Critical chance +40% when HP is 100%
@@ -6052,7 +6052,7 @@
         - desc: Critical chance +40%, +65% at 100% HP (party)
     - name: "Strange Medicine"
       effects:
-        - desc: Absorb 5% of damage dealt by Popping Necrodance as HP at SC >= 3
+        - desc: Absorb 5% of damage dealt by Popping Necrodance as HP at SC ≥ 3
         - desc: INT +25% and Critical damage +110% during Rush at 100% HP
     - name: "Muujin-kun in the Shadows"
       effects:
@@ -6653,6 +6653,84 @@
     power: INT x 7000%
     maxHits: 5
 
+- name: Evelysse (Dark)
+  cat: jp
+  picture: Evelysse_Dark
+  weapon: tome
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 19048
+    atk: 1637
+    int: 3788
+    def: 1193
+    hit: 1117
+    grd: 881
+
+  talents:
+    - name: "Anamnesis"
+      effects:
+        - desc: Converts 70% of ATK to INT (Invokers, Healers)
+        - desc: Converts 50% of INT to ATK (Attackers, Defenders, Shooters)
+    - name: "Black-dyed Heart"
+      effects:
+        - desc: AP cost -30% (party)
+        - desc: Assist use +2 (party)
+        - desc: Gain 3% Rush every 3 seconds (party)
+        - desc: Critical chance +40% against enemies of the Divine race (party)
+    - name: "Unreachable Mourning"
+      effects:
+        - desc: Start CB at 300% when using Charge Assault
+        - desc: Recover some AP when casting spells
+        - desc: Maintain CB after up to 2 consecutive dodges
+    - name: "The World She Wants to Protect"
+      effects:
+        - desc: INT +30%, HP +30%, AP +20 (stat page)
+        - desc: INT +30% while at 100% HP (self)
+        - desc: Party recovers 30% HP every 3 seconds while Evelysse is at SC ≥ 5
+    - name: "Connect / Dark Evelysse [EXCEED]"
+      effects:
+        - desc: At 1 link, ATK+45, INT+150 and AP+6 to linked characters in God mode
+        - desc: At 2 links, ATK+105, INT+350 and AP+14 to linked characters in God mode
+        - desc: At 3 links, ATK+150, INT+500 and AP+20 to linked characters in God mode
+        - desc: At 4 links, ATK+225, INT+750 and AP+30 to linked characters in God mode
+   
+  skills:
+    - name: "Black Spirit | Dark"
+      picture: Skill_Placeholder
+      element: Dark
+      power: INT x 1090%
+      ap: 42
+      maxHits: 2
+    - name: "Starlight | Dark"
+      picture: Skill_Placeholder
+      element: Light
+      power: INT x 980%
+      ap: 39
+      maxHits: 1
+    - name: "Starry Halo | Dark"
+      picture: Skill_Placeholder
+      element: Fire
+      power: INT x 1200%
+      ap: 44
+      maxHits: 2
+    - name: "Funeral Blizzard"
+      picture: Skill_Placeholder
+      element: Ice
+      power: INT x 1390%
+      ap: 47
+      maxHits: 5
+
+  rush:
+    name: "Dimension Freeze"
+    picture: Rush_Placeholder
+    effects:
+      - desc: Revive all at 1 HP
+    power: INT x 7000%
+    maxHits: 9
+
 - name: Freya (God's Messenger)
   cat: jp
   picture: Freya_GodMessenger
@@ -6692,18 +6770,18 @@
         - desc: Maintain CB after up to 2 consecutive dodges
    
   skills:
-    - name: "Victory Sword ・ AF"
+    - name: "Victory Sword | AF"
       picture: Skill_Placeholder
       power: INT x 310%
       ap: 19
       maxHits: 10
-    - name: "Crimson Strike ・ Purge"
+    - name: "Crimson Strike | Purge"
       picture: Skill_Placeholder
       element: Fire
       power: INT x 590%
       ap: 21
       maxHits: 5
-    - name: "Heavenly Punishment ・ Purge"
+    - name: "Heavenly Punishment | Purge"
       picture: Skill_Placeholder
       power: INT x 900%
       ap: 28
