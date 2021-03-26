@@ -3651,6 +3651,91 @@
     power: INT x 3500%
     maxHits: 13
     
+- name: Reimi Saionji (Official) (Awakened)
+  cat: jp
+  rating: 1
+  picture: Federation_Reimi
+  weapon: staff
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 13860
+    atk: 1563
+    int: 2902
+    def: 1155
+    hit: 1043
+    grd: 840
+
+  talents:
+    - name: "Academy Top Spot"
+      effects:
+        - desc: INT +35% (party)
+        - desc: Convert 60% of INT to ATK (Attackers, Defenders, Shooters)
+        - desc: INT +55% when an enemy gets stunned (party, 30s)
+    - name: "Vital Signs Check"
+      effects: 
+        - desc: Critical damage +40% (party)
+        - desc: Recover 5% HP every 3 seconds (party)
+        - desc: Recovers 20% HP to the party every 3 seconds while Reimi is at SC >= 2
+    - name: "Composed Observation"
+      effects:
+        - desc: Critical chance +40% when HP is 100%
+        - desc: Recover 10% HP after using skills
+        - desc: Rush damage +40% if enemy is weak to wind (party)
+    - name: "Symbol of Good Luck"
+      effects:
+        - desc: Nullifies status ailments (180s)
+        - desc: Symbology cast time -80%
+        - desc: 90% chance of surviving a lethal attack when at 10% of max HP or more
+    - name: "First Mate of the Transportation-Calnus"
+      effects:
+        - desc: Stun rate +50% (party)
+        - desc: Stun rate +70% during Rush and 100% HP (party)
+        - desc: Gain 3% Rush every 3 seconds (party)
+        - desc: AP recovery +150% (party)
+    - name: "Discipline Enforcer"
+      effects:
+        - desc: AP cost -70% when an enemy gets stunned (party, 10s)
+        - desc: Anti flinch while casting (self)
+        - desc: Start CB at 200% when using Charge Assault (self)
+        - desc: Converts 50% of ATK to INT (self)
+          
+  skills:
+    - name: "Wind Blade"
+      picture: Wind_Blade
+      element: Wind
+      power: INT x 210%
+      ap: 20
+      maxHits: 2
+    - name: "Magnum Tornado"
+      picture: Magnum_Tornado
+      element: Wind
+      power: INT x 1220%
+      ap: 30
+      maxHits: 9
+    - name: "Ice Needles"
+      picture: Ice_Needles
+      element: Ice
+      power: INT x 280%
+      ap: 24
+      maxHits: 9
+    - name: "Frigid Saucer"
+      picture: Frigid_Saucer
+      element: Ice
+      power: INT x 220%
+      ap: 19
+      maxHits: 2
+
+  rush:
+    name: "Skyward Ensemble"
+    picture: Skyward_Ensemble_Federation_Reimi
+    element: Wind
+    effects:
+      - desc: Critical hit chance +65% (party, 20s)
+    power: INT x 5000%
+    maxHits: 13
 
 - name: Leon D.S. Gehste
   cat: jp
@@ -5963,32 +6048,27 @@
   talents:
     - name: "Gloomy Scientist"
       effects:
-        - desc: Critical chance +30%, + 50% at HP 100%
-          all: true
-          meta:
-            priority: 1
-            buff: Crit Rate
-            buffValue: 50
+        - desc: Converts 60% of ATK to INT during Rush (self)
+        - desc: Critical chance +40%, +65% at 100% HP (party)
     - name: "Strange Medicine"
       effects:
-        - desc: HP recovery 5% of DMG when using Popping Necrodance at SC 3+
-        - desc: INT +20%,  +100% Crit DMG during Rush Combo at 100% HP
+        - desc: Absorb 5% of damage dealt by Popping Necrodance as HP at SC >= 3
+        - desc: INT +25% and Critical damage +110% during Rush at 100% HP
     - name: "Muujin-kun in the Shadows"
       effects:
-        - desc: DMG taken -100% on dodge (0.5s)
-        - desc: Dodge cost -80 at 100% HP
-        - desc: CB 200% while Dodging
+        - desc: Damage taken -100% after dodging (0.5s)
+        - desc: Dodge AP cost -80% at 100% HP
+        - desc: Start CB at 200% after dodging
     - name: "Studious for Another"
       effects:
-        - desc: INT +20%
-        - desc: HP +30%
+        - desc: INT +20%, HP +30%
         - desc: AP cost -20% at 100% HP
-        - desc: AP recovery +100 after using heraldy (party/20s)
+        - desc: Party AP recovery +100% after Precis casts a spell (20s)
 
   skills:
     - name: "Popping Necromance"
       picture: Skill_Placeholder
-      power: INT x 1210%
+      power: INT x 1240%
       ap: 35
       maxHits: 4
     - name: "Fireport"
@@ -6000,7 +6080,7 @@
     - name: "Fire Torcher"
       picture: Skill_Placeholder
       element: Fire
-      power: INT x 1480%
+      power: INT x 1510%
       ap: 44
       maxHits: 5
     - name: "Perios Injection"
@@ -6013,14 +6093,8 @@
     name: "Funny Operation"
     picture: Rush_Placeholder
     effects: 
-      - desc: Crit Rate 100%
-        all: true
-        duration: 10
-        meta:
-          priority: 1
-          buff: Crit Rate
-          buffValue: 100
-    power: INT x 5500%
+      - desc: Crit Rate 100% (party, 10s)
+    power: INT x 6000%
     maxHits: 11
 
 - name: Pericci (Winter)
@@ -6787,19 +6861,19 @@
         - desc: Nullify Charge Assault crit penalty
    
   skills:
-    - name: "Energy Arrow ・ Crest"
+    - name: "Energy Arrow | Crest"
       picture: Skill_Placeholder
       element: Light
       power: INT x 380%
       ap: 18
       maxHits: 4
-    - name: "Twinkle Bomb ・ Crest"
+    - name: "Twinkle Bomb | Crest"
       picture: Skill_Placeholder
       element: Light
       power: INT x 710%
       ap: 27
       maxHits: 7
-    - name: "Explosion ・ Crest"
+    - name: "Explosion | Crest"
       picture: Skill_Placeholder
       element: Fire
       power: INT x 1180%

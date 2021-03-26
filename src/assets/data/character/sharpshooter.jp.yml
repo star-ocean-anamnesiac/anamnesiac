@@ -7263,34 +7263,32 @@
   talents:
     - name: "Exorcist who Eradicates Evil"
       effects:
-        - desc: DMG dealt +40% at 100% HP
-          all: true
-          meta:
-            priority: 1
-            buff: Damage
-            buffValue: 40
-    - name: "Silver Barrett"
+        - desc: Damage +45% at 100% HP (party)
+        - desc: Passing Spirit AF effect increased to 45% at 100% HP (party)
+    - name: "Silver Bullet"
       effects:
-        - desc: HP Recovery 20% to party when using Purrification Blow
+        - desc: Party recovers 25% HP and some AP when using Purification Blow
+        - desc: Maintain CB after dodging once
+        - desc: Dodge AP cost -80%
     - name: "Coat Fluttering in the Moonlight Night"
       effects:
-        - desc: Rush Gauge +3%/3s at 100% HP (party)
-        - desc: AP Cost -40% at skill chain +3 (party)
+        - desc: Gain 3% Rush ever 3 seconds at 100% HP (party)
+        - desc: AP Cost -40% at SC >= 3 (party)
     - name: "Oath to Resist Corruption"
       effects:
         - desc: Anti flinch while attacking
         - desc: DMG taken -50% when attacking
-        - desc: ATK damage +50% at skill chain 3+
+        - desc: ATK damage +50% at SC >= 3
     
   skills:
-    - name: "Passing Spirit"
+    - name: "Passing Spirit - AF"
       picture: Skill_Placeholder
-      power: ATK x 200%
+      power: ATK x 220%
       ap: 18
       maxHits: 3
     - name: "Purification Blow"
       picture: Skill_Placeholder
-      power: ATK x 930%
+      power: ATK x 1050%
       ap: 40
       maxHits: 6
     - name: "Spread Ray"
@@ -7308,8 +7306,8 @@
     name: "Judgement Barrett"
     picture: Rush_Placeholder
     effects:
-      - desc: AP Cost -50% (party/20s)
-    power: ATK x 4500%
+      - desc: AP Cost -50% (party, 20s)
+    power: ATK x 5000%
     maxHits: 10
 
 - name: Verda Kleiman (Anniversary)
@@ -7332,11 +7330,6 @@
     - name: "Radiant Flower Dress"
       effects:
         - desc: DMG dealt +40%, +65%/90% at HC >150/300 (party)
-          all: true
-          meta:
-            priority: 1
-            buff: Damage
-            buffValue: 80
     - name: "Red Dance Shoes"
       effects:
         - desc: Start with 2 Orders
@@ -8071,8 +8064,211 @@
     power: ATK x 5000%
     maxHits: 8
 
-- name: Millie Chliette (Valentine)
+- name: Peppita Rosetti (Halloween)
+  cat: jp
+  picture: Peppita_Halloween
+  weapon: launcher
+  ace: true
+  limited: true
+  star: 5
 
+  stats:
+    hp: 14280
+    atk: 2482
+    int: 1575
+    def: 1720
+    hit: 1253
+    grd: 924
+
+  talents:
+    - name: "Stardust Illusion"
+      effects:
+        - desc: Magic Accelerator AF effect increased to +55% at 100% HP (party)
+        - desc: Party Rush damage +40% and Damage taken -30% when Peppita uses any skill (10s)
+    - name: "Magician's Tamago"
+      effects:
+        - desc: Assist use +2 (party)
+        - desc: AP recovery on normal attacks +250%
+        - desc: No flinching when taking damage <= 20% of max HP (party)
+        - desc: Damage taken after dodging -100% (self, 0.5s)
+    - name: "Secret Special Training"
+      effects:
+        - desc: Party recovers 25% HP and some AP after using Phantom Juggler
+        - desc: Party AP cost -35% after using Dream Comet of Astro Gimmick (10s)
+    - name: "Fantastic Stage"
+      effects:
+        - desc: 90% chance of surviving a lethal attack when at 10% of max HP or more
+        - desc: ATK +20% at 100% HP and HC > 150
+        - desc: Maintain CB after dodging once
+        - desc: Dodge AP cost -80%
+
+  skills:
+    - name: "Magic Accelerator | AF"
+      picture: Skill_Placeholder
+      power: ATK x 310%
+      ap: 19
+      maxHits: 5
+    - name: "Dream Comet"
+      picture: Skill_Placeholder
+      element: Dark
+      power: ATK x 320%
+      ap: 29
+      maxHits: 10
+    - name: "Astro Gimmick"
+      picture: Skill_Placeholder
+      element: Lightning
+      power: ATK x 350%
+      ap: 35
+      maxHits: 7
+    - name: "Phantom Juggler"
+      picture: Skill_Placeholder
+      power: ATK x 990%
+      ap: 35
+      maxHits: 15
+
+  rush:
+    name: "Surprise Magic Stage"
+    picture: Rush_Placeholder
+    effects:
+      - desc: Critical chance +60%, Critical damage +30% (party, 20s)
+    power: ATK x 5000%
+    maxHits: 12
+
+- name: Laevonia (New Year)
+  cat: jp
+  picture: Laevonia_NewYear
+  weapon: gun
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 2482
+    int: 1589
+    def: 1523
+    hit: 1260
+    grd: 931
+
+  talents:
+    - name: "Auspicious Dream"
+      effects:
+        - desc: Damage +40%/65%/90% at HC > 0/100/200 (party)
+        - desc: Assist use +2 (party)
+    - name: "Modern Outfit"
+      effects:
+        - desc: Start with full Rush and 1 Order (party)
+        - desc: AP cost -35% at HC > 100 (party)
+        - desc: Able to air dodge (self)
+    - name: "New Year's Gift"
+      effects:
+        - desc: Skills 1 and 2 recover 20 AP
+        - desc: Anti flinch while attacking
+        - desc: Skills drain 2% of damage dealt at SC >= 4
+    - name: "First Date in Sunny Clothes"
+      effects:
+        - desc: Damage taken -100% while using skills (self, 0.5s)
+        - desc: ATK +20% at HC > 200 (self)
+        - desc: Party recovers some AP when using Awaken Stream
+        - desc: AP cost -50% at SC >= 4 (self)
+
+  skills:
+    - name: "Happy Paroniria"
+      picture: Skill_Placeholder
+      power: ATK x 290%
+      ap: 25
+      maxHits: 6
+    - name: "Oneirodynia Bullet"
+      picture: Skill_Placeholder
+      power: ATK x 260%
+      ap: 22
+      maxHits: 3
+    - name: "Howling Nightmare"
+      picture: Skill_Placeholder
+      power: ATK x 320%
+      ap: 28
+      maxHits: 6
+    - name: "Awaken Stream"
+      picture: Skill_Placeholder
+      power: ATK x 1040%
+      ap: 34
+      maxHits: 3
+
+  rush:
+    name: "Sunrise Dreaming Break"
+    picture: Rush_Placeholder
+    effects:
+      - desc: Critical chance +60%, Critical damage +30% (party, 20s)
+    power: ATK x 5000%
+    maxHits: 9
+
+- name: Reimi Saionji (Divine)
+  cat: jp
+  picture: Reimi_Divine
+  weapon: bow
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 16758
+    atk: 2978
+    int: 1563
+    def: 1747
+    hit: 1246
+    grd: 945
+
+  talents:
+    - name: "Glitter-Crested Feathers"
+      effects:
+        - desc: Damage taken +40% (enemies)
+        - desc: Damage taken +65%/80% at HC > 200/400 (enemies)
+    - name: "Longing for the Blue Earth"
+      effects:
+        - desc: Assist use +2 (party)
+        - desc: AP cost -50% after 45s in battle (party)
+    - name: "Light of the Devastated Planet"
+      effects:
+        - desc: AP cost -60% after 30s in battle (self)
+        - desc: Can use skills and dodge in the air (self)
+        - desc: Recover 15% HP and some AP to the party when using Crossbow Feather
+    - name: "Talk with the Muah"
+      effects:
+        - desc: ATK +20%, HP +20%, AP+20
+        - desc: ATK +40% after 45s in battle
+        - desc: Rainstorm removes debuffs from the party
+
+  skills:
+    - name: "Heavenly Flight - Sky"
+      picture: Skill_Placeholder
+      power: ATK x 620%
+      ap: 28
+      maxHits: 4
+    - name: "Haze Daze - Sky"
+      picture: Skill_Placeholder
+      power: ATK x 650%
+      ap: 33
+      maxHits: 3
+    - name: "Rainstorm - Sky"
+      picture: Skill_Placeholder
+      power: ATK x 330%
+      ap: 24
+      maxHits: 3
+    - name: "Crossbow Feather"
+      picture: Skill_Placeholder
+      power: ATK x 760%
+      ap: 35
+      maxHits: 10
+
+  rush:
+    name: "Trinary Pacification"
+    picture: Rush_Placeholder
+    effects:
+      - desc: HC starts at 100, ATK damage +60%, INT damage +40% (party, 20s)
+    power: ATK x 6500%
+    maxHits: 14
+
+- name: Millie Chliette (Valentine)
   cat: jp
   picture: Millie_Valentine
   weapon: rifle
@@ -8117,17 +8313,17 @@
         - desc: Nullifies Charge Assault Crit. penalty
 
   skills:
-    - name: "Highwind Blast ・ Yearning"
+    - name: "Highwind Blast | Yearning"
       picture: Skill_Placeholder
       power: ATK x 230%
       ap: 16
       maxHits: 4
-    - name: "Spread Ray ・ Yearning"
+    - name: "Spread Ray | Yearning"
       picture: Skill_Placeholder
       power: ATK x 610%
       ap: 31
       maxHits: 5
-    - name: "Laydown Snipe ・ Yearning"
+    - name: "Laydown Snipe | Yearning"
       picture: Skill_Placeholder
       power: ATK x 220%
       ap: 14
@@ -8145,3 +8341,72 @@
       - desc: Critical chance +100% (party, 10s)
     power: ATK x 5500%
     maxHits: 5
+
+- name: Caleen Keemosn (Idol)
+  cat: jp
+  picture: Caleen_Idol
+  weapon: whip
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 2494
+    int: 1549
+    def: 1549
+    hit: 1239
+    grd: 959
+
+  talents:
+    - name: "Presence of Mine"
+      effects:
+        - desc: Damage +45%/70%/100% at HC > 0/150/300 (party)
+        - desc: Rush damage +40% at HC > 300 (party)
+    - name: "Fox Screaming Under the Moon"
+      effects:
+        - desc: Echo by skills +15% (party)
+        - desc: Hitcount timer +3s (party)
+        - desc: Immunity to status afflictions (party, 180s)
+    - name: "Hesitation Hidden in a Dance Fan"
+      effects:
+        - desc: Recovers 20% HP and some AP to the party when using Skill 4
+        - desc: 90% chance of surviving a lethal attack when at 10% of max HP or more (self)
+        - desc: ATK +20% at HC > 200 (self)
+    - name: "A place to relax"
+      effects:
+        - desc: AP recovery +150%
+        - desc: AP recovery while walking (party)
+        - desc: Party gains Rush when using Skill 4
+
+  skills:
+    - name: "Circular Whip"
+      picture: Skill_Placeholder
+      power: ATK x 370%
+      ap: 18
+      maxHits: 1
+    - name: "Crushing Stars"
+      picture: Skill_Placeholder
+      element: Wind
+      power: ATK x 560%
+      ap: 20
+      maxHits: 5
+    - name: "Wings and Songs"
+      picture: Skill_Placeholder
+      power: ATK x 790%
+      ap: 23
+      maxHits: 12
+    - name: "Great Whip | 100 Fox Dance"
+      picture: Skill_Placeholder
+      power: ATK x 1060%
+      ap: 27
+      maxHits: 10
+
+  rush:
+    name: "Gloss Dance"
+    picture: Rush_Placeholder
+    effects:
+      - desc: Revives Attackers
+      - desc: ATK damage +60% (party, 20s)
+    power: ATK x 5500%
+    maxHits: 10

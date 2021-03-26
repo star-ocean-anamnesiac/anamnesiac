@@ -4178,6 +4178,85 @@
     power: INT x 4000%
     maxHits: 9
 
+- name: Ioshua Jerand (Awakened)
+  cat: jp
+  picture: Ioshua_Jerand
+  weapon: staff
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 13965
+    atk: 1747
+    int: 2482
+    def: 1365
+    hit: 1057
+    grd: 1134
+
+  talents:
+    - name: "Looking for Sister"
+      effects:
+        - desc: Increase Fairy Light's buff to 50% at 100% HP (party)
+        - desc: AP Recovery +150%
+        - desc: Symbology cast time -90%
+        - desc: Anti flinch while casting symbology
+    - name: "Shy"
+      effects:
+        - desc: Recover 10% HP every 3 seconds (party)
+        - desc: Recover 20% HP every 3 seconds at HC > 100 (party)
+    - name: "Neat Feature"
+      effects:
+        - desc: DMG taken -45% at long range (self)
+        - desc: DMG taken -25% at long range (party)
+        - desc: Critical chance +20% at 100% HP (party)
+    - name: "The Truth Hidden in Ruins"
+      effects:
+        - desc: Rush gauge increases by 50% when allies die (effect doesn't stack if multiple allies die at once)
+    - name: "Overprotective"
+      effects:
+        - desc: Start with 2 Orders and AP cost -70% during Order countdown (party)
+        - desc: Order gain rate +30% at 100% HP (party)
+    - name: "The Weight We Carry as One"
+      effects:
+        - desc: Recover 50% HP to the party when casting Thuderstorm
+        - desc: Recover 20 AP when casting Thunderstorm
+        - desc: 90% chance of surviving a lethal attack when at 10% of max HP or more
+
+  skills:
+    - name: "Thunderbolt"
+      picture: Skill_Placeholder
+      element: Lightning
+      power: INT x 900%
+      ap: 24
+      maxHits: 3
+    - name: "Lightning Blast"
+      picture: Skill_Placeholder
+      element: Lightning
+      power: INT x 300%
+      ap: 14
+      maxHits: 10
+    - name: "Fairy Light"
+      picture: Skill_Placeholder
+      power: INT x 200%
+      ap: 30
+      maxHits: 1
+    - name: "Thunderstrom"
+      picture: Skill_Placeholder
+      element: Lightning
+      power: INT x 1310%
+      ap: 27
+      maxHits: 5
+
+  rush:
+    name: "Thundercloud"
+    picture: Rush_Placeholder
+    element: Lightning
+    effects:
+      - desc: Revives Attackers, Defenders, and Casters with 50% HP
+    power: INT x 5000%
+    maxHits: 9
+
 - name: Evelysse  (Halloween)
   cat: jp
   picture: Char_Placeholder_Witch_Evelyse
@@ -4196,21 +4275,21 @@
   talents:
     - name: "Flying Broom Witch"
       effects:
-        - desc: Able to heal over max HP
-        - desc: Gains up to 10000 HP over max HP (party), +15000 (long range)
+        - desc: Overheal up to 15000 HP (party)
+        - desc: Order gain +30% at 100% HP (party)
     - name: "Candy Rain"
       effects:
-        - desc: ATK/INT DMG +40% when HP is 100% (party)
-        - desc: Rush DMG +40% at 100% HP and 200+ HC (party)
+        - desc: ATK/INT DMG +45% at 100% HP (party)
+        - desc: Rush damage +55% at 100% HP and HC > 200 (party)
     - name: "Coro Lantern Shimmering in the Dark"
       effects:
         - desc: Cast time -80%
-        - desc: INT +30% at SC 3+
+        - desc: INT +30% at SC >= 3
         - desc: Recover AP while walking, anti flinch while casting
-    - name: "Mischief Iraption and Flame at the Back of the Eyes"
+    - name: "Mischief at the Back of the Eyes"
       effects:
-        - desc: All allies recover some AP after Eruption and Flame Spear skill
-        - desc: All allies recover 20 AP after using Hot Servant
+        - desc: Recovers some AP to the party when using Eruption and Flame Spear
+        - desc: Recovers 20 AP to the party when using Hot Servant
 
   skills:
     - name: "Eruption"
@@ -4221,7 +4300,7 @@
       maxHits: 2
     - name: "Fairy Light"
       picture: Skill_Placeholder
-      power: INT x 180%
+      power: INT x 200%
       ap: 30
       maxHits: 1
       notes: Party Heal
@@ -4233,7 +4312,7 @@
       maxHits: 2
     - name: "Hot Servant"
       picture: Skill_Placeholder
-      power: INT x 1070%
+      power: INT x 1340%
       ap: 43
       maxHits: 3
 
@@ -4242,8 +4321,8 @@
     picture: Rush_Placeholder
     element: Fire
     effects:
-      - desc: Recovers 100% HP, ATK/INT DMG +50% (party/20s)
-    power: INT x 4000%
+      - desc: Recovers 100% HP, ATK/INT DMG +50% (party, 20s)
+    power: INT x 4500%
     maxHits: 4
 
 - name: Reimi Saionji (New Year's)
@@ -4264,19 +4343,21 @@
   talents:
     - name: "Brilliant New Departure"
       effects:
-        - desc: Bowstring Rain・AF Effect Increased to 40% at 100% HP (All)
-        - desc: Bowstring Rain・AF Effect Increased to 50% during Order Countdown (All)
+        - desc: Bowstring Rain・AF Effect Increased to 45% at 100% HP (party)
+        - desc: Bowstring Rain・AF Effect Increased to 55% during Order Countdown (party)
     - name: "Blessing of the Sacred Bird"
       effects:
-        - desc: HP Recovery +100% when using Faerie Light・Blessings and Dawn Tri-Star at SC 3+
+        - desc: HP Recovery +100% when using Faerie Light・Blessings and Dawn Tri-Star at SC >= 3
+        - desc: Order gain +30% while at 100% HP (party)
+        - desc: Critical chance +30% during Order Countdown (party)
     - name: "Alike Spouses?"
       effects:
-        - desc: AP cost -20% at SC 2, -40% at SC 3+ (party)
-        - desc: AP Cost -70% at SC 4+
-        - desc: Rush gauge +2% every 1s
+        - desc: AP cost -20% at SC > 2, -40% at SC >= 3 (party)
+        - desc: AP Cost -70% at SC >= 4 (self)
+        - desc: Gain 25% Rush every second (self)
     - name: "Reformed Ceremonial Purification Bow"
       effects:
-        - desc: Order Gauge +1
+        - desc: Start with 1 Order
         - desc: HP +30%
         - desc: Anti flinch while attacking
         - desc: DMG taken -50%
@@ -4284,7 +4365,7 @@
   skills:
     - name: "Bowstring Rain・AF"
       picture: Skill_Placeholder
-      power: INT x 250%
+      power: INT x 270%
       ap: 20
       maxHits: 3
     - name: "Crimson Squall・Blessings"
@@ -4295,11 +4376,11 @@
     - name: "Faerie Light・Blessings"
       picture: Skill_Placeholder
       power: INT x 250%
-      ap: 60
+      ap: 50
       maxHits: 1
     - name: "Dawn Tri-Star"
       picture: Skill_Placeholder
-      power: INT x 710%
+      power: INT x 780%
       ap: 31
       maxHits: 3
 
@@ -4308,7 +4389,7 @@
     picture: Rush_Placeholder
     effects:
       - desc: Revives at 50% HP (Attackers/Defenders/Sharpshooters)
-    power: INT x 4000%
+    power: INT x 4500%
     maxHits: 1
 
 - name: Mastema (Wise God)
@@ -4449,6 +4530,149 @@
     power: INT x 4500%
     maxHits: 8
 
+- name: Maria Traydor (Halloween)
+  cat: jp
+  picture: Maria_Halloween
+  weapon: gun
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 12495
+    atk: 1811
+    int: 2468
+    def: 1510
+    hit: 1057
+    grd: 1127
+
+  talents:
+    - name: "Vampire Night"
+      effects:
+        - desc: Overheal up to 15000 HP (party)
+        - desc: AP cost -70% during Order countdown (party)
+    - name: "Harvest Festival Actress"
+      effects:
+        - desc: Damage taken +40%, +55% when Maria is at 100% HP (enemies)
+        - desc: Damage taken +70% during Order countdown (enemies)
+        - desc: Critical chance +20% during Order countdown (party)
+    - name: "Scarlet Eyes"
+      effects:
+        - desc: Start with 2 Orders
+        - desc: Order gain rate +30% while at 100% HP (party)
+        - desc: AP recovery +150% (party)
+        - desc: Recovers some AP to the party when using Multilock
+    - name: "Mistress of the Vampire Hall"
+      effects:
+        - desc: Recovers 45% HP to the party when using Nightmare Bullet
+        - desc: Anti flinch while attacking
+        - desc: Recovers 25% HP to the party after using any skill
+    - name: "Multilock / Vampire Maria [MASTERY]"
+      effects:
+        - desc: 280% damage per lock, max of 5
+        - desc: Start CB at 200% when using Charge Assault
+        - desc: Nullifies Charge Assault Crit. penalty
+
+  skills:
+    - name: "Blood Shot"
+      picture: Skill_Placeholder
+      power: INT x 230%
+      ap: 18
+      maxHits: 1
+    - name: "Scream Device"
+      picture: Skill_Placeholder
+      power: INT x 340%
+      ap: 19
+      maxHits: 9
+    - name: "Dead Emission"
+      picture: Skill_Placeholder
+      power: INT x 680%
+      ap: 23
+      maxHits: 8
+    - name: "Nightmare Bullet"
+      picture: Skill_Placeholder
+      power: INT x 900%
+      ap: 29
+      maxHits: 4
+
+  rush:
+    name: "Bloody Legion Device"
+    picture: Rush_Placeholder
+    effects:
+      - desc: Recover 100% HP, ATK/INT damage +50% (party, 20s)
+    power: INT x 4500%
+    maxHits: 12
+
+- name: Nel Zelpher (Christmas)
+  cat: jp
+  picture: Nel_Christmas
+  weapon: whip
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 13965
+    atk: 1773
+    int: 2468
+    def: 1365
+    hit: 1043
+    grd: 1141
+
+  talents:
+    - name: "Snow Flower of the Holy Night"
+      effects:
+        - desc: Damage taken +40%, +55% when Nel is at full HP (enemies)
+        - desc: Damage taken +70% during Order countdown (enemies)
+    - name: "Gentle Bell Tone"
+      effects:
+        - desc: Start with 1 Order
+        - desc: AP cost -70% during Order countdown (party)
+        - desc: Rush damage +40% when using Heat Up Order (party)
+    - name: "Longing for Illumination"
+      effects:
+        - desc: ATK/INT damage taken -20% (party)
+        - desc: Gain 3% Order after using Thunder Whip
+        - desc: Recovers 25% HP to the party after using Thunder Whip
+        - desc: Recover some AP after using Thunder Whip
+    - name: "Blessing of Poinsettia"
+      effects:
+        - desc: 90% chance of surviving a lethal attack when at 10% of max HP or more
+        - desc: Rush gauge increases by 50% when allies die (effect doesn't stack if multiple allies die at once)
+        - desc: No flinching while casting spells
+
+  skills:
+    - name: "Dragon Whip | Chant"
+      picture: Skill_Placeholder
+      power: INT x 490%
+      ap: 28
+      maxHits: 1
+    - name: "Fairy Light | Chant"
+      picture: Skill_Placeholder
+      power: INT x 250%
+      ap: 60
+      maxHits: 1
+    - name: "Lightning Blast | Chant"
+      picture: Skill_Placeholder
+      element: Lightning
+      power: INT x 280%
+      ap: 14
+      maxHits: 10
+    - name: "Thunder Whip"
+      picture: Skill_Placeholder
+      element: Lightning
+      power: INT x 1300%
+      ap: 31
+      maxHits: 6
+
+  rush:
+    name: "Sealing Crystal Dream"
+    picture: Rush_Placeholder
+    effects:
+      - desc: Revives with 50% HP (party)
+    power: INT x 4500%
+    maxHits: 8
+
 - name: Gabriel
   cat: jp
   picture: Gabriel
@@ -4493,19 +4717,19 @@
         - desc: At 4 links, INT+975 and AP+45 to linked characters in God mode
 
   skills:
-    - name: "Explosion ・ Wise"
+    - name: "Explosion | Wise"
       picture: Skill_Placeholder
       element: Fire
       power: INT x 710%
       ap: 38
       maxHits: 14
-    - name: "Stone Rain ・ Wise"
+    - name: "Stone Rain | Wise"
       picture: Skill_Placeholder
       element: Earth
       power: INT x 460%
       ap: 35
       maxHits: 5
-    - name: "Fire Bolt ・ Wise"
+    - name: "Fire Bolt | Wise"
       picture: Skill_Placeholder
       element: Fire
       power: INT x 200%
