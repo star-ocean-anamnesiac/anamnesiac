@@ -11545,6 +11545,75 @@
     power: ATK x 5000%
     maxHits: 14
 
+- name: Ernest Raviede
+  cat: jp
+  picture: Ernest
+  weapon: whip
+  ace: true
+  star: 5
+
+  stats:
+    hp: 15540
+    atk: 2730
+    int: 1563
+    def: 1943
+    hit: 1148
+    grd: 819
+
+  talents:
+    - name: "Passion for Archeology"
+      effects:
+        - desc: ATK +45%/65%/85% at HC ≥ 0/150/300 (party)
+        - desc: Gain 3% Rush every 3 seconds (party)
+        - desc: HC counter +3s (party)
+    - name: "Adventurer's Degree"
+      effects:
+        - desc: Damage taken -100% after dodging (1s)
+        - desc: Recover 5% HP after using skills
+        - desc: Critical chance +35% at SC ≥ 4
+        - desc: Able to air dodge
+    - name: "Romance Over Love"
+      effects:
+        - desc: AP cost -70% and ATK damage +30% after pefect dodge (party, 7s)
+        - desc: Recover 100% AP and ATK +20% after perfect dodge (self, 10s)
+    - name: "A Strong Sense of Duty"
+      effects:
+        - desc: Dodge AP cost -80%
+        - desc: Start CB at 200% when using Charge Assault
+        - desc: Maintain CB after up to 2 consecutive dodges
+
+  skills:
+    - name: "Dual Whip • Search"
+      picture: Skill_Placeholder
+      power: ATK x 300%
+      ap: 19
+      maxHits: 2
+    - name: "Spiral Whip • Search"
+      picture: Skill_Placeholder
+      power: ATK x 370%
+      ap: 23
+      maxHits: 1
+    - name: "Ark Attack"
+      picture: Skill_Placeholder
+      power: ATK x 950%
+      ap: 28
+      maxHits: 4
+    - name: "Thunder Whip"
+      picture: Skill_Placeholder
+      element: Lightning
+      power: ATK x 760%
+      ap: 38
+      maxHits: 7
+
+  rush:
+    name: "Broken Heart"
+    picture: Rush_Placeholder
+    effects:
+      - desc: HC starts at 100
+      - desc: ATK damage +60%, INT damage +40% (Party, 20s)
+    power: ATK x 5000%
+    maxHits: 14
+
 - name: Caleen Keemosn (Snow Fox)
   cat: jp
   picture: Caleen_SnowFox
