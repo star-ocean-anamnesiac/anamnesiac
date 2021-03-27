@@ -8708,22 +8708,22 @@
     grd: 833
 
   talents:
-    - name: "Rosetti One Dancer"
+    - name: "Rosetti Troupe Dancer"
       effects:
         - desc: Glitter Star - AF's effect increased to ATK/DEF/HIT/GRD +40% when HP is 100%
-    - name: "Ready as a Performer"
+    - name: "Ready to be a Performer"
       shortEffects: Nullifies status effects and normal attack AP recovery +200% after using Frozen Dagger or Rhythmical Tap (Party/10s)
       effects: 
         - desc: Nullifies status effects after using Frozen Dagger or Rhythmical Tap (10s)
           all: true
         - desc: Normal attack AP recovery +200% after using Frozen Dagger or Rhythmical Tap (10s)
           all: true
-    - name: "Memento of Earrings"
+    - name: "Keepsake Earrings"
       effects: 
         - desc: Rush combo damage +50% after using Papapa Slash (10s)
           all: true
           duration: 10
-    - name: "Dazzle of Fairy"
+    - name: "Fairy of Illusions"
       effects:
         - desc: Absorbs 15% of damage dealt by normal attacks as HP
           all: true
@@ -8767,6 +8767,78 @@
     power: ATK x 4500%
     maxHits: 9
 
+- name: Peppita Rosetti (Awakened)
+  cat: jp
+  picture: Peppita_Rosetti
+  weapon: orb
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 2665
+    int: 1615
+    def: 1916
+    hit: 1148
+    grd: 833
+
+  talents:
+    - name: "Rosetti Troupe Dancer"
+      effects:
+        - desc: Glitter Star • AF's effect increased to +55% when HP is 100%
+    - name: "Ready to be a Performer"
+      effects: 
+        - desc: Nullifies status effects after using Frozen Dagger or Rhythmical Tap (party, 10s)
+        - desc: Normal attack AP recovery +250% after using Frozen Dagger or Rhythmical Tap (party, 10s)
+    - name: "Keepsake Earrings"
+      effects: 
+        - desc: Rush combo damage +50% after using Papapa Slash (party, 20s)
+    - name: "Fairy of Illusions"
+      effects:
+        - desc: Drain 15% of damage dealt by normal attacks as HP (party)
+        - desc: Able to air dodge (self)
+    - name: "Encounter With My Father"
+      effects:
+        - desc: Recovers 10% HP to the party when using Papapa Splash
+        - desc: 90% chance of surviving a lethal attack when HP ≥ 10%
+    - name: "Make Everyone Smile"
+      effects:
+        - desc: Start with 2 Orders
+        - desc: AP cost -70% during Order countdown (party)
+        - desc: ATK +30% during Order countdown (self)
+
+  skills:
+    - name: "Papapa Splash"
+      picture: Papapa_Splash
+      power: ATK x 990%
+      ap: 30
+      maxHits: 6
+    - name: "Glitter Star • AF"
+      picture: Glitter_Star_AF
+      element: Lightning
+      power: ATK x 310%
+      ap: 15
+      maxHits: 4
+    - name: "Rhythmical Tap"
+      picture: Rhythmical_Tap
+      power: ATK x 590%
+      ap: 21
+      maxHits: 5
+    - name: "Frozen Daggers"
+      picture: Frozen_Dagger
+      element: Ice
+      power: ATK x 720%
+      ap: 24
+      maxHits: 4
+
+  rush:
+    name: "Shining Dance"
+    picture: Shining_Dance_Peppita_Rosetti
+    effects:
+      - desc: Damage taken -40% and no flinching when taking damage ≤ 15% HP (party, 20s)
+    power: ATK x 5000%
+    maxHits: 9
 
 - name: Tomokazu
   cat: jp
@@ -11103,7 +11175,7 @@
       power: ATK x 430%
       ap: 22
       maxHits: 2
-    - name: "Stinger Edge | AF"
+    - name: "Stinger Edge • AF"
       picture: Skill_Placeholder
       power: ATK x 330%
       ap: 18
@@ -11521,7 +11593,7 @@
       power: ATK x 830%
       ap: 24
       maxHits: 6
-    - name: "Death Palm | Luster"
+    - name: "Death Palm • Luster"
       picture: Skill_Placeholder
       power: ATK x 210%
       ap: 18
@@ -11545,6 +11617,75 @@
       - desc: Critical chance +100% (party, 10s)
     power: ATK x 5000%
     maxHits: 11
+
+- name: Ashton Anchors (Divine)
+  cat: jp
+  picture: Ashton_Divine
+  weapon: dualswords
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 23783
+    atk: 3388
+    int: 1523
+    def: 1904
+    hit: 1127
+    grd: 819
+
+  talents:
+    - name: "Knight Who Controls the Dragons"
+      effects:
+        - desc: Echo by skills 10% (party)
+        - desc: Threefold Blast AF Effect increases to +50% at HC ≥ 150
+    - name: "Smile of Charity"
+      effects:
+        - desc: Order gain +30% at HC ≥ 100 (party)
+        - desc: Start with 1 Order
+        - desc: No flinching while attacking (party)
+        - desc: AP cost -50% after 60 seconds in battle (party)
+    - name: "Proof of Blood Oath"
+      effects:
+        - desc: ATK +35% after getting hit
+        - desc: Party recovers 30 AP when Ashton gets hit
+        - desc: Damage taken -50% while attacking
+    - name: "Alliance of Man and Dragon"
+      effects:
+        - desc: ATK +20%, HP +50% (stat page)
+        - desc: Able to air dodge
+        - desc: Drain 3% of the damage dealt by Twin Dragon Slash as HP at SC ≥ 3
+
+  skills:
+    - name: "Twin Stab • Dragon"
+      picture: Skill_Placeholder
+      element: Fire
+      power: ATK x 340%
+      ap: 20
+      maxHits: 2
+    - name: "Threefold Blast • AF"
+      picture: Skill_Placeholder
+      power: ATK x 220%
+      ap: 21
+      maxHits: 3
+    - name: "Draconic Slaughter"
+      picture: Skill_Placeholder
+      power: ATK x 310%
+      ap: 18
+      maxHits: 2
+    - name: "Twin Dragon Slash"
+      picture: Skill_Placeholder
+      power: ATK x 920%
+      ap: 38
+      maxHits: 7
+
+  rush:
+    name: "Dragon God tri-Ace"
+    picture: Rush_Placeholder
+    effects:
+      - desc: Damage taken +50% (enemies, 20s)
+    power: ATK x 6000%
+    maxHits: 14
 
 - name: Tika (Early Spring)
   cat: jp
@@ -11589,22 +11730,22 @@
         - desc: Nullifies Charge Assault Crit. penalty
 
   skills:
-    - name: "Kotobuki | Arms"
+    - name: "Kotobuki • Arms"
       picture: Skill_Placeholder
       power: ATK x 410%
       ap: 18
       maxHits: 6
-    - name: "Otoshidama | Shot"
+    - name: "Otoshidama • Shot"
       picture: Skill_Placeholder
       power: ATK x 600%
       ap: 25
       maxHits: 6
-    - name: "Mochitsuki | Arms"
+    - name: "Mochitsuki • Arms"
       picture: Skill_Placeholder
       power: ATK x 540%
       ap: 21
       maxHits: 6
-    - name: "Mirror | Opening"
+    - name: "Mirror • Opening"
       picture: Skill_Placeholder
       power: ATK x 1020%
       ap: 34
@@ -11659,7 +11800,7 @@
         - desc: Recover 3 AP when using Interrupt
         - desc: Nullifies Charge Assault Crit. penalty
         - desc: No flinching while attacking
-    - name: "Exceed / Luther"
+    - name: "Connect / Luther [EXCEED]"
       effects:
         - desc: At 1 link, HP+600 and ATK+150 to linked characters in God mode
         - desc: At 2 links, HP+1400 and ATK+350 to linked characters in God mode
