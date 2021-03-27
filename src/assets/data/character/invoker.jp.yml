@@ -5593,6 +5593,7 @@
   picture: Adray_Lasbard
   weapon: bns
   ace: true
+  semi: true
   limited: true
   star: 5
 
@@ -5670,6 +5671,89 @@
           buff: Damage
           buffValue: 80
     power: INT x 4500%
+    maxHits: 10
+
+- name: Adray Lasbard (Awakened)
+  cat: jp
+  picture: Adray_Lasbard
+  weapon: bns
+  ace: true
+  semi: true
+  limited: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 33296
+    atk: 2718
+    int: 2639
+    def: 1995
+    hit: 1120
+    grd: 833
+
+  talents:
+    - name: "Dad's Majesty"
+      effects:
+        - desc: INT +45%, +65% when Adray has aggro (party)
+        - desc: Convert 60% of INT to ATK (Attackes, Defenders, Shooters)
+    - name: "Gift of Training"
+      effects:
+        - desc: No flinching when taking damage ≤ 50% HP when Adray has aggro (party)
+        - desc: Imunity to burn (party, 180s)
+    - name: "Lifetime of Active Duty"
+      effects:
+        - desc: Cast time -90% at close range
+        - desc: Drain 5% of damage dealt by skills as HP at close range when not casting
+    - name: "Guardian of the Sacred Kingdom"
+      effects:
+        - desc: HP +110% (stat page)
+        - desc: Aggro +5
+    - name: "Looking for a Son-in-law"
+      effects:
+        - desc: Recover 50 AP when hit
+        - desc: Convert 50% of ATK to INT when hit (10s)
+        - desc: Rush damage +30% when hit (10s)
+        - desc: No flinching while attacking
+    - name: "Dreadnought Statement"
+      effects:
+        - desc: Damage taken -30% while attacking (party)
+        - desc: AP recovery +100% when Adray has aggro (party)
+        - desc: Gain 3% Rush every 3 seconds (party)
+        - desc: AP recovery of normal attacks +250% (party)
+
+  skills:
+    - name: "Titan Fist"
+      picture: Skill_Placeholder
+      element: Earth
+      power: INT x 790%
+      ap: 24
+      maxHits: 1
+    - name: "Countless Ice Needle"
+      picture: Skill_Placeholder
+      element: Ice
+      power: INT x 260%
+      ap: 17
+      maxHits: 9
+    - name: "Earth Grave"
+      picture: Skill_Placeholder
+      element: Earth
+      power: INT x 220%
+      ap: 15
+      maxHits: 5
+    - name: "Emotion Torrent"
+      picture: Skill_Placeholder
+      element: Ice
+      power: INT x 1480%
+      ap: 52
+      maxHits: 4
+
+  rush:
+    name: "Spicule"
+    picture: Rush_Placeholder
+    effects:
+      - desc: Damage dealt +100% (self, 20s)
+      - desc: Damage dealt +80% (self, 20s)
+    power: INT x 5000%
     maxHits: 10
 
 - name: Erys Jerand
@@ -6698,19 +6782,19 @@
         - desc: At 4 links, ATK+225, INT+750 and AP+30 to linked characters in God mode
    
   skills:
-    - name: "Black Spirit | Dark"
+    - name: "Black Spirit • Dark"
       picture: Skill_Placeholder
       element: Dark
       power: INT x 1090%
       ap: 42
       maxHits: 2
-    - name: "Starlight | Dark"
+    - name: "Starlight • Dark"
       picture: Skill_Placeholder
       element: Light
       power: INT x 980%
       ap: 39
       maxHits: 1
-    - name: "Starry Halo | Dark"
+    - name: "Starry Halo • Dark"
       picture: Skill_Placeholder
       element: Fire
       power: INT x 1200%
@@ -6770,18 +6854,18 @@
         - desc: Maintain CB after up to 2 consecutive dodges
    
   skills:
-    - name: "Victory Sword | AF"
+    - name: "Victory Sword • AF"
       picture: Skill_Placeholder
       power: INT x 310%
       ap: 19
       maxHits: 10
-    - name: "Crimson Strike | Purge"
+    - name: "Crimson Strike • Purge"
       picture: Skill_Placeholder
       element: Fire
       power: INT x 590%
       ap: 21
       maxHits: 5
-    - name: "Heavenly Punishment | Purge"
+    - name: "Heavenly Punishment • Purge"
       picture: Skill_Placeholder
       power: INT x 900%
       ap: 28
@@ -6919,25 +7003,25 @@
         - desc: Nullify Charge Assault crit penalty
    
   skills:
-    - name: "Energy Arrow | Crest"
+    - name: "Energy Arrow • Crest"
       picture: Skill_Placeholder
       element: Light
       power: INT x 380%
       ap: 18
       maxHits: 4
-    - name: "Twinkle Bomb | Crest"
+    - name: "Twinkle Bomb • Crest"
       picture: Skill_Placeholder
       element: Light
       power: INT x 710%
       ap: 27
       maxHits: 7
-    - name: "Explosion | Crest"
+    - name: "Explosion • Crest"
       picture: Skill_Placeholder
       element: Fire
       power: INT x 1180%
       ap: 48
       maxHits: 14
-    - name: "Ray ・ Crest"
+    - name: "Ray • Crest"
       picture: Skill_Placeholder
       element: Light
       power: INT x 1510%
