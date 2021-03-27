@@ -4050,31 +4050,24 @@
   talents:
     - name: "Homely Maiden"
       effects:
-        - desc: ATK and INT damage dealt +30%, +50% at Hit Count > 250
-          all: true
-          meta:
-            priority: 1
-            buffs: 
-              - ATK
-              - INT
-            buffValue: 50
+        - desc: ATK/INT damage dealt +40%, +65% at HC ≥ 250 (party)
     - name: "Jet Black Scythe"
       effects:
-        - desc: ATK and INT damage taken -25% (party)
-        - desc: Anti flinch when taking damage < 20% HP (party)
-        - desc: Damage talen -40% while charge assault
+        - desc: ATK/INT damage taken -35% (party)
+        - desc: No flinching when taking damage ≤ 25% HP (party)
+        - desc: Damage taken -50% when using Charge Assault (self)
     - name: "With Sincerity"
       effects:
-        - desc: ATK +30% at Hit count > 200, +50% at Hit count > 400
+        - desc: ATK +30% at HC ≥ 150, +50% at HC ≥ 300
     - name: "Concealed Secret Ingredient"
       effects:
-        - desc: HP +20%
-        - desc: HP recovery 10% on perfect dodge
-        - desc: Double hit 5% on skills when behind target
-    - name: "Blindside Defender / Maid Fiore [MASTERY]"
+        - desc: HP +20% (stat page)
+        - desc: Recover 40% HP on perfect dodge
+        - desc: Echo by skills 5% when behind target
+    - name: "Blindside D / Maid Fiore [MASTERY]"
       effects:
-        - desc: Nullifies charge assault critical damage penalty
-        - desc: Cancel bonus start at 150% when charge assaulting
+        - desc: Nullifies Charge Assault Crit. penalty
+        - desc: Start CB at 150% when using Charge Assault
         - desc: Critical chance +30% when not facing target
 
   skills:
@@ -4095,18 +4088,16 @@
       maxHits: 2
     - name: "Blood Flavored"
       picture: Skill_Placeholder
-      power: ATK x 920%
+      power: ATK x 1010%
       ap: 33
       maxHits: 7
 
   rush:
     name: "Heaven's Dinner Party"
     picture: Rush_Placeholder
-    shortEffects: ATK +80%, AP cost -30% (20sec)
     effects:
-      - desc: ATK +80%, AP cost -30% (20sec)
-        duration: 20
-    power: ATK x 5000%
+      - desc: ATK +80%, AP cost -30% (20s)
+    power: ATK x 6000%
     maxHits: 17
 
 - name: Yu Narukami
@@ -4651,18 +4642,18 @@
         - desc: Nullifies Charge Assault Crit. Penalty
   
   skills:
-    - name: "Thunder Arm | Departure"
+    - name: "Thunder Arm • Departure"
       picture: Skill_Placeholder
       element: Lightning
       power: ATK x 500%
       ap: 24
       maxHits: 7
-    - name: "Starboard Scratch | Departure"
+    - name: "Starboard Scratch • Departure"
       picture: Skill_Placeholder
       power: ATK x 150%
       ap: 13
       maxHits: 5
-    - name: "Portside Scratch | Departure"
+    - name: "Portside Scratch • Departure"
       picture: Skill_Placeholder
       power: ATK x 150%
       ap: 13
