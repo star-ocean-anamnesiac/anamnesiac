@@ -9246,6 +9246,85 @@
     power: ATK x 5500%
     maxHits: 21
 
+- name: Dhaos (Awakened)
+  cat: jp
+  picture: Dhaos
+  weapon: orb
+  ace: true
+  limited: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 15960
+    atk: 3465
+    int: 1575
+    def: 1943
+    hit: 1127
+    grd: 847
+
+  talents:
+    - name: "Ruthless Demon King"
+      effects:
+        - desc: ATK +1000, +1250 at 100% HP (party)
+        - desc: Start with full Rush and 1 Order (party)
+    - name: "The Man Who Runs Time"
+      effects:
+        - desc: Recovers 100% AP and 40% HP on perfect dodge
+        - desc: Start CB at 200% when using a skill after perfect dodge
+    - name: "King of Illusions"
+      effects:
+        - desc: ATK damage dealt +55% at short range
+        - desc: AP recovery +150% at long range
+    - name: "Carrying the Prayers of the People"
+      effects:
+        - desc: ATK +30% (stat page)
+        - desc: Dodge AP cost -80%
+        - desc: Able to air dodge
+        - desc: AP cost -35% at 100% HP
+    - name: "Longing for Derris-Kharlan"
+      effects:
+        - desc: Recover 20% HP when using Dhaos Collider
+        - desc: AP recovery while walking
+        - desc: No flinching and ATK damage taken -30% while attacking
+    - name: "Lonely Journey"
+      effects:
+        - desc: Overheal up to 17000 HP
+        - desc: ATK +10% while at 100% HP
+        - desc: ATK +50% during Rush while at 100% HP
+
+  skills:
+    - name: "Dhaos Collider"
+      picture: Dhaos_Collider
+      power: ATK x 900%
+      ap: 29
+      maxHits: 7
+    - name: "Thunder Blade"
+      picture: Thunder_Blade
+      element: Lightning
+      power: ATK x 470%
+      ap: 22
+      maxHits: 2
+    - name: "Tetra Assault"
+      picture: Tetra_Assault
+      power: ATK x 410%
+      ap: 17
+      maxHits: 4
+    - name: "Dhaos Laser"
+      picture: Dhaos_Laser
+      power: ATK x 960%
+      ap: 40
+      maxHits: 10    
+
+  rush:
+    name: "Super Dhaos Laser"
+    picture: Rush_Placeholder
+    effects: 
+      - desc: Recovers 50% HP (self)
+      - desc: Critical chance +100% (party, 10s)
+    power: ATK x 7000%
+    maxHits: 21
+
 - name: Bowman
   cat: jp
   picture: Bowman
