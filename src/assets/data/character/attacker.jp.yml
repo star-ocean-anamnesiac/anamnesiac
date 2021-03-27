@@ -8951,48 +8951,21 @@
   talents:
     - name: "Swordsman Who Maintains Justice"
       effects: 
-        - desc: ATK +40%
-          all: true
-          meta:
-            priority: 1
-            buff: ATK
-            buffValue: 40
-        - desc: ATK +70% when HP is 100%
-          all: true
-          meta:
-            priority: 1
-            buff: ATK
-            buffCondition: HP is 100%
-            buffValue: 70  
+        - desc: ATK +45%, +80% at 100% HP (party)
+        - desc: ATK damage +20% at SC ≥ 3 (party)
     - name: "Space-Time Swordsman"
       effects: 
-        - desc: Assist usage +1 at start of battle
-          all: true       
+        - desc: Assist use +1 (party)
+        - desc: Order gain +30% at 100% HP (party)
     - name: "Alvein Sword Arts"
       effects: 
+        - desc: Nullifies Charge Assault Crit. penalty
         - desc: AP recovery +100%
-          all: false
-          meta:
-            priority: 1
-            buff: AP Recovery
-            buffValue: 100
-        - desc: Nullifies charge assault critical damage penalty
-        - desc: Cancel bonus starts at 200% when using charge assault   
+        - desc: Start CB at 200% when using Charge Assault
     - name: "The One to Defeat the Demon King"
       effects:
-        - desc: Evasion possible during air attacks
-        - desc: Critical hit chance +50% when skill chain is >3
-          meta:
-            priority: 1
-            buff: Crit Rate
-            buffCondition: Skill Chain > 3        
-            buffValue: 50
-        - desc: Critical hit chance +100% when skill chain is >5
-          meta:
-            priority: 1
-            buff: Crit Rate
-            buffCondition: Skill Chain > 5
-            buffValue: 100  
+        - desc: Able to air dodge
+        - desc: Critical hit chance +50% at SC ≥ 3, +100% at SC ≥ 5
 
   skills:
     - name: "Demon Fang"
@@ -9008,12 +8981,12 @@
     - name: "Demon Spear"
       picture: Layered_Talon_Heaven_Flash
       element: Lightning
-      power: ATK x 540%
+      power: ATK x 570%
       ap: 27
       maxHits: 7
     - name: "Demonic Sword Rain"
       picture: Thousand_Devil_Flurry
-      power: ATK x 500%
+      power: ATK x 530%
       ap: 25
       maxHits: 5      
 
@@ -9021,14 +8994,8 @@
     name: "Final Fury"
     picture: Ravaging_Blade_Dance_Cress
     effects: 
-      - desc: AP cost -40%
-        all: true
-        duration: 20
-        meta:
-          priority: 1
-          buff: AP Cost Reduction 
-          buffValue: 40
-    power: ATK x 4500%
+      - desc: AP cost -40% (party, 20s)
+    power: ATK x 5000%
     maxHits: 13
 
 - name: Albel Nox (Awakened)
