@@ -11546,6 +11546,75 @@
     power: ATK x 5000%
     maxHits: 11
 
+- name: Ashton Anchors (Divine)
+  cat: jp
+  picture: Ashton_Divine
+  weapon: dualswords
+  ace: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 23783
+    atk: 3388
+    int: 1523
+    def: 1904
+    hit: 1127
+    grd: 819
+
+  talents:
+    - name: "Knight Who Controls the Dragons"
+      effects:
+        - desc: Echo by skills 10% (party)
+        - desc: Threefold Blast AF Effect increases to +50% at HC ≥ 150
+    - name: "Smile of Charity"
+      effects:
+        - desc: Order gain +30% at HC ≥ 100 (party)
+        - desc: Start with 1 Order
+        - desc: No flinching while attacking (party)
+        - desc: AP cost -50% after 60 seconds in battle (party)
+    - name: "Proof of Blood Oath"
+      effects:
+        - desc: ATK +35% after getting hit
+        - desc: Party recovers 30 AP when Ashton gets hit
+        - desc: Damage taken -50% while attacking
+    - name: "Alliance of Man and Dragon"
+      effects:
+        - desc: ATK +20%, HP +50% (stat page)
+        - desc: Able to air dodge
+        - desc: Drain 3% of the damage dealt by Twin Dragon Slash as HP at SC ≥ 3
+
+  skills:
+    - name: "Twin Stab | Dragon"
+      picture: Skill_Placeholder
+      element: Fire
+      power: ATK x 340%
+      ap: 20
+      maxHits: 2
+    - name: "Threefold Blast | AF"
+      picture: Skill_Placeholder
+      power: ATK x 220%
+      ap: 21
+      maxHits: 3
+    - name: "Draconic Slaughter"
+      picture: Skill_Placeholder
+      power: ATK x 310%
+      ap: 18
+      maxHits: 2
+    - name: "Twin Dragon Slash"
+      picture: Skill_Placeholder
+      power: ATK x 920%
+      ap: 38
+      maxHits: 7
+
+  rush:
+    name: "Dragon God tri-Ace"
+    picture: Rush_Placeholder
+    effects:
+      - desc: Damage taken +50% (enemies, 20s)
+    power: ATK x 6000%
+    maxHits: 14
+
 - name: Tika (Early Spring)
   cat: jp
   picture: Tika_EarlySpring
@@ -11659,7 +11728,7 @@
         - desc: Recover 3 AP when using Interrupt
         - desc: Nullifies Charge Assault Crit. penalty
         - desc: No flinching while attacking
-    - name: "Exceed / Luther"
+    - name: "Connect / Luther [EXCEED]"
       effects:
         - desc: At 1 link, HP+600 and ATK+150 to linked characters in God mode
         - desc: At 2 links, HP+1400 and ATK+350 to linked characters in God mode
