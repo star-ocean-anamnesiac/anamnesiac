@@ -9951,24 +9951,20 @@
   talents:
     - name: "Leave The Cleaning To Me"
       effects:
-        - desc: ATK +40%, +60% at 100% HP
-          all: true
-          meta:
-            priority: 1
-            buff: ATK
-            buffCondition: HP is 100%
-            buffValue: 60
-        - desc: 30% Chance for +70% ATK when using Planet Polisher (party/ 5s)
+        - desc: ATK +45%, +75% at 100% HP (party)
+        - desc: 30% chance for ATK +85% when using Planet Polisher (party, 5s)
     - name: "The One & Only Vacuum"
       effects:
-        - desc: 30% Chance for -50% AP Cost when using Planet Polisher (party/ 5s)
-        - desc: 30% Chance to RCV 20% HP to All when using Planet Polisher
+        - desc: 30% chance for AP cost -50% when using Planet Polisher (party, 5s)
+        - desc: 30% chance to recover 20% HP to the party when using Planet Polisher
     - name: "Swinging Hair Parts"
       effects:
-        - desc: Critical hit chance +20% at skill chain > 3, +30% at skill chain > 5 (party)
+        - desc: Critical hit chance +20% at SC ≥ 3, +30% at SC ≥ 5 (party)
     - name: "Minister of Justice"
       effects:
-        - desc: AP recovery +100% by normal attacks
+        - desc: AP recovery of normal attacks +250% (party)
+        - desc: No flinching and damage taken -40% while attacking (self)
+        - desc: 30% chance to recover 30 AP when using Planet Polisher (self)
 
   skills:
     - name: "Crack Hand Claps"
@@ -9978,7 +9974,7 @@
       maxHits: 3
     - name: "Planet Polisher"
       picture: Skill_Placeholder
-      power: ATK x 620%
+      power: ATK x 680%
       ap: 24
       maxHits: 12
     - name: "High-end Press"
@@ -9995,15 +9991,9 @@
   rush:
     name: "Galactica Eraser"
     picture: Rush_Placeholder
-    shortEffects: ATK damage +60% (party/ 20sec)
     effects:
-      - desc: ATK damage +60% (party/ 20sec)
-        duration: 20
-        meta:
-          priority: 1
-          buff: ATK Damage
-          buffValue: 60
-    power: ATK x 4500%
+      - desc: ATK damage +60% (party, 20s)
+    power: ATK x 5000%
     maxHits: 2
 
 - name: Joker
