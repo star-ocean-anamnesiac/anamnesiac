@@ -8049,6 +8049,81 @@
     power: ATK x 5000%
     maxHits: 16
 
+- name: Henri un Loup (Awakened)
+  cat: jp
+  rating: 8
+  picture: Henri
+  weapon: rifle
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 19425
+    atk: 3445
+    int: 1537
+    def: 1943
+    hit: 1155
+    grd: 812
+
+  talents:
+    - name: "Afflicted by Lycanthropy"
+      effects:
+        - desc: ATK +40%, +50%/60% at HC ≥ 100/200 (party)
+        - desc: No flinching when attacking (self)
+        - desc: Damage taken -40% (self)
+    - name: "Arc Chief of the Human Survival Research Institute"
+      effects:
+        - desc: ATK/INT/DEF/HIT/GRD +20% at short range
+        - desc: Damage dealt by Storm Hound +110% at short range
+    - name: "The Wolf in Despair"
+      effects:
+        - desc: Dodge speed and distance +100%
+        - desc: AP recovery +100% at long range
+        - desc: Nullifies Charge Assault Crit. penalty
+    - name: "A Tragic Wish for Humanity's Survival"
+      effects:
+        - desc: ATK +25%, HP +25% (stat page)
+    - name: "Serene Eyes"
+      effects:
+        - desc: Recover 20% HP when using Charge Assault from long to short range
+        - desc: AP recovery while walking
+    - name: "Search for Ornelsen's Hope"
+      effects:
+        - desc: Gain 3% Rush every 3 seconds (party)
+        - desc: HC timer +3s (party)
+        - desc: Start with full Rush (party)
+
+  skills:
+    - name: "Storm Hound"
+      picture: Storm_Hound
+      power: ATK x 650%
+      ap: 33
+      maxHits: 10
+    - name: "Trample Radar"
+      picture: Lay_Down_Snipe
+      power: ATK x 350%
+      ap: 19
+      maxHits: 3
+    - name: "Raptor Assault"
+      picture: Heaven_Air_Raid
+      power: ATK x 390%
+      ap: 23
+      maxHits: 5
+    - name: "Chaser Fang"
+      picture: Alpha_On_One
+      power: ATK x 220%
+      ap: 12
+      maxHits: 5
+
+  rush:
+    name: "Wild Blood Phase"
+    picture: Wild_Blood_Phase_Henri
+    effects: 
+      - desc: ATK +80% and AP cost -30% (self, 20s)
+    power: ATK x 6000%
+    maxHits: 16
+
 - name: Mikasa Ackerman
   cat: jp
   rating: 6
@@ -12034,7 +12109,7 @@
   talents:
     - name: "Over the Nights"
       effects:
-        - desc: ATK +45%/70%/95% at HC > 0/100/250 (party)
+        - desc: ATK +45%/70%/95% at HC ≥ 0/100/250 (party)
         - desc: ATK damage +40% at SC ≥ 5 (party)
         - desc: Start with full Rush (party)
     - name: "Remnants of Young Leaf Color"
@@ -12050,7 +12125,7 @@
         - desc: Order gain +50% while Tika is airborne (party)
     - name: "To the Long-Awaited Tomorrow"
       effects:
-        - desc: ATK +20% at HC > 200
+        - desc: ATK +20% at HC ≥ 200
         - desc: No flinching while attacking
         - desc: Drain 3% of damage dealt by Starling Divider as HP when at SC ≥ 3
     - name: "Vanguard / Idol Tika [Mastery]"
