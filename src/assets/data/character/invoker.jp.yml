@@ -5480,15 +5480,15 @@
 - name: Arche Klein
   cat: jp
   picture: Arche
-  weapon: scythe
+  weapon: orb
   ace: true
   limited: true
   star: 5
 
   stats:
-    hp: 15477
+    hp: 16884
     atk: 1537
-    int: 3293
+    int: 3430
     def: 1129
     hit: 1050
     grd: 840
@@ -5496,56 +5496,21 @@
   talents:
     - name: "Cheerful Magician"
       effects: 
-        - desc: INT +20%
-          all: true
-          meta:
-            priority: 1
-            buff: INT
-            buffValue: 30
-        - desc: INT +40% when HP is 100%
-          all: true
-          meta:
-            priority: 1
-            buff: INT
-            buffCondition: HP is 100%
-            buffValue: 40
-        - desc: Converts 50% of INT to ATK
-          all: Attackers/Sharpshooters/Defenders
-          meta:
-            priority: 1
-            buff: INT -> ATK
-            buffValue: 50
+        - desc: INT +30%, +60% at 100% HP (party)
+        - desc: Converts 60% of INT to ATK (Attackers, Defenders, Shooters)
     - name: "Spellmaster"
       effects: 
-        - desc: Able to move at 90% speed while casting symbology
-          all: false
-        - desc: Absorbs 2% of damage dealt by symbology when not moving and not in front of target
+        - desc: Able to move at 90% speed while casting
+        - desc: Drains 2% of damage dealt by spells when not moving and not in front of target
     - name: "Half-Elf's Wisdom"
       effects: 
-        - desc: INT damage dealt +50% when HP is 100%
-          all: false
-          meta:
-            priority: 1
-            buff: INT Damage
-            buffCondition: HP is 100%
-            buffValue: 50
-        - desc: Imbues attacks with earth when using earth symbology (15s)
-          all: true
+        - desc: INT damage dealt +50% at 100% HP
+        - desc: Imbues attacks with earth when using earth spells (15s)
     - name: "Strong Thoughts Sent to a Dear Friend"
       effects: 
-        - desc: INT +20%
-          all: false
-          meta:
-            priority: 1
-            buff: INT
-            buffValue: 20
-        - desc: HP +10%
-          all: false
-          meta:
-            priority: 1
-            buff: HP
-            buffValue: 10
+        - desc: INT +25%, HP +20% (stat page)
         - desc: Movement speed +30%
+        - desc: Converts 50% of ATK to INT
 
   skills:
     - name: "Lightning"
@@ -5563,13 +5528,13 @@
     - name: "Rock Mountain"
       picture: Stone_Rain
       element: Earth
-      power: INT x 550%
+      power: INT x 750%
       ap: 25
       maxHits: 5
     - name: "Thunder Blade"
       picture: Skill_Placeholder
       element: Lightning
-      power: INT x 750%
+      power: INT x 1020%
       ap: 27
       maxHits: 3
       
@@ -5578,14 +5543,8 @@
     picture: Rush_Placeholder
     element: Lightning
     effects: 
-      - desc: Elemental damage dealt +80%
-        all: true
-        duration: 20
-        meta:
-          priority: 1
-          buff: Elemental Damage
-          buffValue: 80
-    power: INT x 5000%
+      - desc: Elemental damage dealt +80% (party, 20s)
+    power: INT x 6000%
     maxHits: 9
 
 - name: Adray Lasbard
