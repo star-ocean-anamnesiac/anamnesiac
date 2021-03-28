@@ -4048,8 +4048,7 @@
   rating: 11
   picture: Karin
   weapon: scythe
-  ace: false
-  limited: false
+  ace: true
   star: 5
 
   stats:
@@ -4189,7 +4188,82 @@
           buffValue: 30
     power: ATK x 4500%
     maxHits: 6
-    
+
+- name: Caleen Keemosn (Awakened)
+  cat: jp
+  rating: 11
+  picture: Karin
+  weapon: scythe
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 15750
+    atk: 2718
+    int: 1537
+    def: 1943
+    hit: 1134
+    grd: 854
+
+  talents:
+    - name: "Witch of Beasts"
+      effects:
+        - desc: ATK +45%, +60%/+80% at HC ≥ 100/250 (party)
+    - name: "Basshen's Fox"
+      effects:
+        - desc: AP cost -20%/-30%/-50% at HC ≥ 50/100/200 (party)
+        - desc: Echo by skills 10% (party)
+    - name: "Six Tails"
+      effects:
+        - desc: Able to air dodge
+        - desc: Recover 100% AP and 40% AP on perfect dodge
+    - name: "Red Summoning Technique"
+      effects:
+        - desc: ATK/INT/DEF/HIT/GRD +20% at HC ≥ 100
+        - desc: 90% chance of surviving a lethal attack when HP ≥ 10%
+    - name: "Profile of the War God"
+      effects:
+        - desc: Rush damage +60% at HC ≥ 600 (party)
+        - desc: Assist uses +1 (party)
+        - desc: Start with 1 Order
+    - name: "Decision to end the War"
+      effects:
+        - desc: Maintain CB after one dodge
+        - desc: Dodge AP cost -80%
+        - desc: AP cost -70% at HC ≥ 300
+        - desc: Damage taken -100% after dodging (0.5s)
+          
+  skills:
+    - name: "Unholy Maelstrom • Fox"
+      picture: Unholy_Maelstrom
+      power: ATK x 600%
+      ap: 30
+      maxHits: 3
+    - name: "Purgatory Palm • Fox"
+      picture: Purgatory_Palm
+      element: Fire
+      power: ATK x 290%
+      ap: 22
+      maxHits: 5
+    - name: "Wings of Deprivation"
+      picture: Wings_of_Deprivation
+      power: ATK x 330%
+      ap: 27
+      maxHits: 12
+    - name: "Backspin Blade"
+      picture: Backspin_Blade
+      power: ATK x 830%
+      ap: 40
+      maxHits: 6
+
+  rush:
+    name: "Wailing Black Wings"
+    picture: Wailing_Black_Wings_Karin
+    effects:
+      - desc: Critical chance +50%, Critical damage +50% (party, 20s)
+    power: ATK x 5000%
+    maxHits: 6
 
 - name: Maria Traydor (Cherry Blossom)
   cat: jp
