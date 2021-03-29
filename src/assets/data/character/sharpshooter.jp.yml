@@ -6289,69 +6289,20 @@
   talents:
     - name: Feminity Incarnate 
       effects: 
-        - desc: Hitcount timer +1 second
-          all: true
-        - desc: Damage dealt +35%
-          all: true
-          meta:
-            priority: 1
-            buff: Damage
-            buffValue: 35
-        - desc: Damage dealt +55% when hitcount is >100
-          all: true
-          meta:
-            priority: 1
-            buff: Damage
-            buffCondition: Hit Count > 100
-            buffValue: 55
-        - desc: Damage dealt +75% when hitcount is >250
-          all: true
-          meta:
-            priority: 1
-            buff: Damage
-            buffCondition: Hit Count > 250
-            buffValue: 75
+        - desc: HC timer +1s (party)
+        - desc: DMG dealt +40%/60%/80% at HC ≥ 0/100/250 (party)
     - name: Unending Delusion 
       effects: 
-        - desc: No flinching when attacking
-          all: false
-        - desc: Damage taken -20%
-          all: false
-          meta:
-            priority: 1
-            buff: Damage Taken Reduction 
-            buffValue: 20
-        - desc: No flinching when skill chain is >3
-          all: true
-        - desc: Damage taken -50% when skill chain is >3
-          all: true
-          meta:
-            priority: 1
-            buff: Damage Taken Reduction 
-            buffCondition: Skill Chain > 3
-            buffValue: 50
+        - desc: No flinching and DMG taken -20% when attacking (self)
+        - desc: No flinching and DMG taken -50% at SC ≥ 3 (party)
     - name: Love Dilemma
-      shortEffects: Recovers 15% of max HP every 3 seconds for all allies on perfect dodge (20s)
       effects: 
-        - desc: Recovers 15% of max HP every 3 seconds for all allies on perfect dodge (20s)
+        - desc: Recovers 15% HP to the party every 3 seconds on perfect dodge (30s)
     - name: VALENTINE
       effects: 
         - desc: AP recovery +100%
-          all: false
-          meta:
-            priority: 1
-            buff: AP Recovery
-            buffCondition: Perfect Dodge
-            buffValue: 100
-        - desc: Evasion speed & distance +100%
-          all: false
-        - desc: Damage taken -100% on perfect dodge (0.5s)
-          all: false
-          meta:
-            priority: 1
-            buff: Damage Taken Reduction 
-            buffCondition: Perfect Dodge
-            buffValue: 100
+        - desc: Dodge speed & distance +100%
+        - desc: DMG taken -100% on perfect dodge (0.5s)
 
   skills:
     - name: Pineberry
@@ -6371,7 +6322,7 @@
       maxHits: 5
     - name: Reload & Snipe
       picture: Skill_Placeholder
-      power: ATK x 1200%
+      power: ATK x 1320%
       ap: 30
       maxHits: 1
       
@@ -6380,13 +6331,7 @@
     picture: Magnum_Wedding_Elphelt
     element: 
     effects: 
-      - desc: AP cost -50%                
-        all: true
-        duration: 20 
-        meta:
-          priority: 1
-          buff: AP Cost Reduction 
-          buffValue: 50
+      - desc: AP cost -50% (party, 20s)
     power: ATK x 4500%
     maxHits: 2  
     
