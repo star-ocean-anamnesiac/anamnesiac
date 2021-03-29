@@ -8567,44 +8567,19 @@
   talents:
     - name: "Princess of the Great Eagle of the North"
       effects: 
-        - desc: Great Earth Splitter's effect increased to +40% when hitcount is >300
+        - desc: Skill 2 effect increased to ATK +40%/55% at HC ≥ 150/300
+        - desc: AP cost -80% when target is stunned (self)
     - name: "Overprotective Father"
       effects: 
-        - desc: Additional hit that deals 20% more damage during normal attacks
-        - desc: Rush combo damage +30% when hitcount is >300
-          meta:
-            priority: 1
-            buff: Rush Damage
-            buffCondition: Hit Count > 300
-            buffValue: 30
+        - desc: Echo by normal attacks 20%
+        - desc: Rush damage +50% at HC ≥ 300
     - name: "Faithful to Duties"
       effects: 
-        - desc: No flinching when attacking
-        - desc: Damage taken -30%
-          meta:
-            priority: 1
-            buff: Damage Taken Reduction
-            buffValue: 30        
-        - desc: ATK damage taken -20%
-          meta:
-            priority: 1
-            buff: ATK Damage Taken Reduction
-            buffValue: 20
-        - desc: Damage taken +20% when stunned
-          all: Enemies
+        - desc: No flinching, DMG taken -30% and ATK DMG taken -20% when attacking (self)
+        - desc: DMG taken +40% when stunned (enemies)
     - name: "Boon of Special Education"
-      shortEffects: ATK +30% and HP +20%
       effects: 
-        - desc: ATK +30%
-          meta:
-            priority: 1
-            buff: ATK
-            buffValue: 30
-        - desc: HP +20%
-          meta:
-            priority: 1
-            buff: HP
-            buffValue: 20
+        - desc: ATK +30%, HP +20% (stat page)
 
   skills:
     - name: "Downward Thrust"
@@ -8614,38 +8589,27 @@
       maxHits: 8
     - name: "Great Earth Splitter"
       picture: Dragon_Hammer
-      power: ATK x 350%
+      power: ATK x 360%
       ap: 28
       maxHits: 10
       notes: ATK +20% (Party/10s)
-      meta:
-        priority: 2
-        buff: ATK
-        buffValue: 20
     - name: "Spinning Axe • Great Revolution"
       picture: Hurricane
-      power: ATK x 1020%
+      power: ATK x 1050%
       ap: 40
       maxHits: 10
     - name: "Spinning Axe • Consecutive Blows"
       picture: Skill_Placeholder
-      power: ATK x 1150%
+      power: ATK x 1180%
       ap: 52
       maxHits: 14
 
   rush:
     name: "Wild Pitch"
     picture: Wild_Pitch_Ridley_Silverlake
-    shortEffects: Recovers 30% of max HP (Self) and critical hit chance +50% (Party/20s)
     effects: 
-      - desc: Recovers 30% of max HP
-      - desc: Critical hit chance +50%
-        all: true
-        duration: 20
-        meta:
-          priority: 1
-          buff: Crit Rate
-          buffValue: 20
+      - desc: Recovers 30% HP (self)
+      - desc: Critical chance +50% (party, 20s)
     power: ATK x 5500%
     maxHits: 17
 
