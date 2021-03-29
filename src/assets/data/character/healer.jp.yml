@@ -3794,57 +3794,33 @@
   talents:
     - name: "Gentle Healer"
       effects: 
-        - desc: Able to heal over max HP
-        - desc: Gains up to 10000 HP over max HP
-          all: true
-        - desc: AP cost -15% when HP is 100%
-          all: true
-          meta:
-            priority: 3
-            buff: AP Cost Reduction
-            buffCondition: HP is 100%
-            buffValue: 15  
+        - desc: Overheal up to 12500 HP (party)
+        - desc: AP cost -35% at 100% HP (party)
     - name: "Pope"
       effects: 
-        - desc: INT +30% when HP is 100%
-          all: true
-          meta:
-            priority: 3
-            buff: INT
-            buffCondition: HP is 100%
-            buffValue: 30
-        - desc: DEF -30% when hit by Acid Rain (Enemies/15s)           
+        - desc: Rush damage +60% at 100% HP (party)
+        - desc: DEF -30% when hit by Acid Rain (enemies, 15s)
+        - desc: INT +35% at 100% HP (self)
     - name: "Pure Maiden"
       effects: 
-        - desc: Nullifies charge assault critical damage penalty
-        - desc: Cancel bonus increases 1 level every 0.5 seconds during charge assault standby
+        - desc: Nullifies Charge Assault Crit. penalty
+        - desc: CB increases 1 level every 0.5 seconds during Charge Assault standby
     - name: "Inheritor of Mother's Wishes"
       effects: 
-        - desc: Symbology cast time -100% during charge assault standby or when using charge assault after a normal attack
-          all: false
-          meta:
-            priority: 3
-            buff: Cast Time Reduction
-            buffCondition: Charge Assault After Normal Attack, or Charge Assault Standby
-            buffValue: 100      
-        - desc: No flinching while casting symbology
-        - desc: Symbology cast time -50%
-          all: false
-          meta:
-            priority: 3
-            buff: Cast Time Reduction
-            buffValue: 50      
+        - desc: Cast time -100% when using Charge Assault on the 1st spell from standby or normal attack
+        - desc: No flinching while casting spells
+        - desc: Cast time -50% 
 
   skills:
     - name: "Nurse"
       picture: Nurse
-      power: INT x 330%
+      power: INT x 360%
       ap: 50
       maxHits: 1
     - name: "Acid Rain"
       picture: Acid_Rain
       element: Ice
-      power: INT x 1480%
+      power: INT x 1620%
       ap: 39
       maxHits: 8
     - name: "Press • Law"
@@ -3862,20 +3838,11 @@
       
   rush:
     name: "Timestop"
-    picture: Rock_Rain_Noel_Chandler
+    picture: Rush_Placeholder
     element: Ice
-    shortEffects: Recovers 80% of max HP, and single target damage +50% (Party/20s)
     effects: 
-      - desc: Recovers 80% of max HP
-        all: true
-      - desc: Single target damage +50%
-        all: true
-        duration: 20
-        meta:
-          priority: 1
-          buff: Single Target Damage
-          buffValue: 50        
-    power: INT x 4000%
+      - desc: Recovers 80% HP and Single-target damage +50% (party, 20s)
+    power: INT x 4500%
     maxHits: 12
  
  
@@ -4642,17 +4609,17 @@
         - desc: No flinching while casting spells
 
   skills:
-    - name: "Dragon Whip | Chant"
+    - name: "Dragon Whip • Chant"
       picture: Skill_Placeholder
       power: INT x 490%
       ap: 28
       maxHits: 1
-    - name: "Fairy Light | Chant"
+    - name: "Fairy Light • Chant"
       picture: Skill_Placeholder
       power: INT x 250%
       ap: 60
       maxHits: 1
-    - name: "Lightning Blast | Chant"
+    - name: "Lightning Blast • Chant"
       picture: Skill_Placeholder
       element: Lightning
       power: INT x 280%
@@ -4709,7 +4676,7 @@
       effects:
         - desc: Recovers 60% HP and 35 AP to the party when casting spells (self)
         - desc: ATK damage -30%, No flinching while casting (party)
-    - name: "Exceed / Gabriel"
+    - name: "Connect / Gabriel [EXCEED]"
       effects:
         - desc: At 1 link, INT+195 and AP+9 to linked characters in God mode
         - desc: At 2 links, INT+455 and AP+21 to linked characters in God mode
@@ -4717,19 +4684,19 @@
         - desc: At 4 links, INT+975 and AP+45 to linked characters in God mode
 
   skills:
-    - name: "Explosion | Wise"
+    - name: "Explosion • Wise"
       picture: Skill_Placeholder
       element: Fire
       power: INT x 710%
       ap: 38
       maxHits: 14
-    - name: "Stone Rain | Wise"
+    - name: "Stone Rain • Wise"
       picture: Skill_Placeholder
       element: Earth
       power: INT x 460%
       ap: 35
       maxHits: 5
-    - name: "Fire Bolt | Wise"
+    - name: "Fire Bolt • Wise"
       picture: Skill_Placeholder
       element: Fire
       power: INT x 200%

@@ -4048,8 +4048,7 @@
   rating: 11
   picture: Karin
   weapon: scythe
-  ace: false
-  limited: false
+  ace: true
   star: 5
 
   stats:
@@ -4189,7 +4188,82 @@
           buffValue: 30
     power: ATK x 4500%
     maxHits: 6
-    
+
+- name: Caleen Keemosn (Awakened)
+  cat: jp
+  rating: 11
+  picture: Karin
+  weapon: scythe
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 15750
+    atk: 2718
+    int: 1537
+    def: 1943
+    hit: 1134
+    grd: 854
+
+  talents:
+    - name: "Witch of Beasts"
+      effects:
+        - desc: ATK +45%, +60%/+80% at HC ≥ 100/250 (party)
+    - name: "Basshen's Fox"
+      effects:
+        - desc: AP cost -20%/-30%/-50% at HC ≥ 50/100/200 (party)
+        - desc: Echo by skills 10% (party)
+    - name: "Six Tails"
+      effects:
+        - desc: Able to air dodge
+        - desc: Recover 100% AP and 40% AP on perfect dodge
+    - name: "Red Summoning Technique"
+      effects:
+        - desc: ATK/INT/DEF/HIT/GRD +20% at HC ≥ 100
+        - desc: 90% chance of surviving a lethal attack when HP ≥ 10%
+    - name: "Profile of the War God"
+      effects:
+        - desc: Rush damage +60% at HC ≥ 600 (party)
+        - desc: Assist uses +1 (party)
+        - desc: Start with 1 Order
+    - name: "Decision to end the War"
+      effects:
+        - desc: Maintain CB after one dodge
+        - desc: Dodge AP cost -80%
+        - desc: AP cost -70% at HC ≥ 300
+        - desc: Damage taken -100% after dodging (0.5s)
+          
+  skills:
+    - name: "Unholy Maelstrom • Fox"
+      picture: Unholy_Maelstrom
+      power: ATK x 600%
+      ap: 30
+      maxHits: 3
+    - name: "Purgatory Palm • Fox"
+      picture: Purgatory_Palm
+      element: Fire
+      power: ATK x 290%
+      ap: 22
+      maxHits: 5
+    - name: "Wings of Deprivation"
+      picture: Wings_of_Deprivation
+      power: ATK x 330%
+      ap: 27
+      maxHits: 12
+    - name: "Backspin Blade"
+      picture: Backspin_Blade
+      power: ATK x 830%
+      ap: 40
+      maxHits: 6
+
+  rush:
+    name: "Wailing Black Wings"
+    picture: Wailing_Black_Wings_Karin
+    effects:
+      - desc: Critical chance +50%, Critical damage +50% (party, 20s)
+    power: ATK x 5000%
+    maxHits: 6
 
 - name: Maria Traydor (Cherry Blossom)
   cat: jp
@@ -8049,6 +8123,81 @@
     power: ATK x 5000%
     maxHits: 16
 
+- name: Henri un Loup (Awakened)
+  cat: jp
+  rating: 8
+  picture: Henri
+  weapon: rifle
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 19425
+    atk: 3445
+    int: 1537
+    def: 1943
+    hit: 1155
+    grd: 812
+
+  talents:
+    - name: "Afflicted by Lycanthropy"
+      effects:
+        - desc: ATK +40%, +50%/60% at HC ≥ 100/200 (party)
+        - desc: No flinching when attacking (self)
+        - desc: Damage taken -40% (self)
+    - name: "Arc Chief of the Human Survival Research Institute"
+      effects:
+        - desc: ATK/INT/DEF/HIT/GRD +20% at short range
+        - desc: Damage dealt by Storm Hound +110% at short range
+    - name: "The Wolf in Despair"
+      effects:
+        - desc: Dodge speed and distance +100%
+        - desc: AP recovery +100% at long range
+        - desc: Nullifies Charge Assault Crit. penalty
+    - name: "A Tragic Wish for Humanity's Survival"
+      effects:
+        - desc: ATK +25%, HP +25% (stat page)
+    - name: "Serene Eyes"
+      effects:
+        - desc: Recover 20% HP when using Charge Assault from long to short range
+        - desc: AP recovery while walking
+    - name: "Search for Ornelsen's Hope"
+      effects:
+        - desc: Gain 3% Rush every 3 seconds (party)
+        - desc: HC timer +3s (party)
+        - desc: Start with full Rush (party)
+
+  skills:
+    - name: "Storm Hound"
+      picture: Storm_Hound
+      power: ATK x 650%
+      ap: 33
+      maxHits: 10
+    - name: "Trample Radar"
+      picture: Lay_Down_Snipe
+      power: ATK x 350%
+      ap: 19
+      maxHits: 3
+    - name: "Raptor Assault"
+      picture: Heaven_Air_Raid
+      power: ATK x 390%
+      ap: 23
+      maxHits: 5
+    - name: "Chaser Fang"
+      picture: Alpha_On_One
+      power: ATK x 220%
+      ap: 12
+      maxHits: 5
+
+  rush:
+    name: "Wild Blood Phase"
+    picture: Wild_Blood_Phase_Henri
+    effects: 
+      - desc: ATK +80% and AP cost -30% (self, 20s)
+    power: ATK x 6000%
+    maxHits: 16
+
 - name: Mikasa Ackerman
   cat: jp
   rating: 6
@@ -8264,7 +8413,7 @@
     power: ATK x 5000%
     maxHits: 10
 
-- name: Sol
+- name: Sol Badguy
   cat: jp
   picture: Sol
   weapon: ohs
@@ -8279,83 +8428,26 @@
     def: 1969
     hit: 1127
     grd: 812
-    ap: 140
 
   talents:
     - name: Wayfaring Bounty Hunter 
-      effects: 
-        - desc: ATK +20%
-          all: true
-          meta:
-            priority: 1
-            buff: ATK
-            buffValue: 20
-        - desc: ATK +50% when hitcount is >150
-          all: true
-          meta:
-            priority: 1
-            buff: ATK
-            buffValue: 50
-        - desc: Nullifies charge assault critical damage penalty
-          all: false
+      effects:
+        - desc: ATK +25%, +55% at HC ≥ 150 (party)
+        - desc: Nullify Charge Assault Crit. penalty (self)
     - name: Self Taught Martial Artist 
-      effects: 
-        - desc: Critical hit chance +50% when skill chain is >3
-          all: false
-          meta:
-            priority: 1
-            buff: Crit Rate
-            buffCondition: Skill Chain > 3
-            buffValue: 50
-        - desc: Critical hit chance +100% when skill chain is >5
-          all: false
-          meta:
-            priority: 1
-            buff: Crit Rate
-            buffCondition: Skill Chain > 5
-            buffValue: 100
-        - desc: Critical damage dealt +100% when skill chain is >6
-          all: false
-          meta:
-            priority: 1
-            buff: Crit Damage
-            buffCondition: Skill Chain > 6
-            buffValue: 100
+      effects:
+        - desc: Critical chance +50%/+100%/ at SC ≥ 3/5
+        - desc: Critical damage +100% at SC ≥ 6
     - name: Bygone Holy Knight
-      effects: 
-        - desc: Normal attack AP recovery +200%
-          all: false
-          meta:
-            priority: 1
-            buff: AP Recovery From Normal Attacks
-            buffValue: 200
-        - desc: Evasion possible during air attacks
-          all: false
-        - desc: ATK +20% when hitcount is >200
-          all: false
-          meta:
-            priority: 3
-            buff: ATK
-            buffCondition: Hit Count > 200
-            buffValue: 20
+      effects:
+        - desc: Normal attack AP recovery +250%
+        - desc: Able to air dodge
+        - desc: ATK +20% at HC ≥ 200
     - name: GEAR
       effects: 
-        - desc: ATK +20%
-          all: false
-          meta:
-            priority: 4
-            buff: ATK
-            buffValue: 20
-        - desc: AP +40
-          all: false
+        - desc: ATK +20%, AP +50 (stat page)
         - desc: Movement speed +30%
-          all: false
-        - desc: Damage taken -100% when using Volcanic Viper (Self/0.5s)
-          all: false
-          meta:
-            priority: 1
-            buff: Damage Taken Reduction 
-            buffValue: 100
+        - desc: Damage taken -100% when using Volcanic Viper (0.5s)
 
   skills:
     - name: Gun Flame 
@@ -8367,19 +8459,19 @@
     - name: Volcanic Viper
       picture: Skill_Placeholder
       element: Fire
-      power: ATK x 490%
+      power: ATK x 520%
       ap: 23
       maxHits: 2
     - name: Bandit Bringer
       picture: Skill_Placeholder
       element: Fire
-      power: ATK x 520%
+      power: ATK x 550%
       ap: 24
       maxHits: 1
     - name: Shatter 
       picture: Skill_Placeholder
       element: Fire
-      power: ATK x 400%
+      power: ATK x 420%
       ap: 19
       maxHits: 2
       
@@ -8387,18 +8479,10 @@
     name: Tyrant Rave ver.ß
     picture: Tyrant_Rave_Sol
     element: Fire
-    shortEffects: Hitcount starts at 75 (Party) and AP cost -80% (Self/10s)
     effects: 
-      - desc: Hitcount +75
-        all: true
-      - desc: AP cost -80%               
-        all: false
-        duration: 10
-        meta:
-          priority: 1
-          buff: AP Cost Reduction 
-          buffValue: 80
-    power: ATK x 5000%
+      - desc: HC starts at 75
+      - desc: AP cost -80% (10s)
+    power: ATK x 5500%
     maxHits: 4
 
 - name: Jack Russell
@@ -8420,40 +8504,19 @@
   talents:
     - name: "Lively Personality"
       effects: 
-        - desc: ATK +40%
-          all: true
-          meta:
-            priority: 1
-            buff: ATK
-            buffValue: 40
-        - desc: ATK +70% when HP is 100%
-          all: true
-          meta:
-            priority: 1
-            buff: ATK
-            buffCondition: HP is 100%
-            buffValue: 70
+        - desc: ATK +45%, +75% at 100% HP (party)
     - name: "Kenjutsu Training"
       effects: 
-        - desc: Absorbs 5% of damage dealt by normal attacks as HP
-          all: true
-        - desc: Absorbs 15% of damage dealt by normal attacks as HP at short range
-          all: true
+        - desc: Drain 5% of damage dealt by normal attacks (party)
+        - desc: Drain 15% of damage dealt by normal attacks at short range (party)
     - name: "Fearlessness"
       effects: 
-        - desc: Stun rate +30% when HP is 100%
-          all: true
-          meta:
-            priority: 1
-            buff: Stun Rate
-            buffCondition: HP is 100%
-            buffValue: 30
-        - desc: Critical hit chance +50% when stunned
-          all: Enemies
+        - desc: Stun rate +50% when HP is 100% (party)
+        - desc: Critical chance +100% when stunned (enemies)
     - name: "Son of the Dragon Killer"
       effects: 
-        - desc: Normal attack AP recovery +100% at short range
-          all: true
+        - desc: Normal attack AP recovery +100% at short range (party)
+        - desc: Echo by skills 5% at 100% HP (party)
 
   skills:
     - name: "Counter Slash"
@@ -8468,27 +8531,20 @@
       maxHits: 4
     - name: "Soaring Overhead Slash"
       picture: Helmsplitter
-      power: ATK x 720%
+      power: ATK x 750%
       ap: 30
       maxHits: 1
     - name: "Beast King Thrust"
       picture: Skill_Placeholder
-      power: ATK x 1050%
+      power: ATK x 1080%
       ap: 34
       maxHits: 7
 
   rush:
     name: "Limit Exceed"
     picture: Limit_Exceed_Jack_Russell
-    shortEffects: ATK damage dealt +60% (Party/20s)
-    effects: 
-      - desc: ATK damage dealt +60%
-        all: true
-        duration: 20
-        meta:
-          priority: 1
-          buff: ATK Damage
-          buffValue: 60
+    effects:
+      - desc: ATK damage +60% (party, 20s)
     power: ATK x 4500%
     maxHits: 8
 
@@ -8511,44 +8567,19 @@
   talents:
     - name: "Princess of the Great Eagle of the North"
       effects: 
-        - desc: Great Earth Splitter's effect increased to +40% when hitcount is >300
+        - desc: Skill 2 effect increased to ATK +40%/55% at HC ≥ 150/300
+        - desc: AP cost -80% when target is stunned (self)
     - name: "Overprotective Father"
       effects: 
-        - desc: Additional hit that deals 20% more damage during normal attacks
-        - desc: Rush combo damage +30% when hitcount is >300
-          meta:
-            priority: 1
-            buff: Rush Damage
-            buffCondition: Hit Count > 300
-            buffValue: 30
+        - desc: Echo by normal attacks 20%
+        - desc: Rush damage +50% at HC ≥ 300
     - name: "Faithful to Duties"
       effects: 
-        - desc: No flinching when attacking
-        - desc: Damage taken -30%
-          meta:
-            priority: 1
-            buff: Damage Taken Reduction
-            buffValue: 30        
-        - desc: ATK damage taken -20%
-          meta:
-            priority: 1
-            buff: ATK Damage Taken Reduction
-            buffValue: 20
-        - desc: Damage taken +20% when stunned
-          all: Enemies
+        - desc: No flinching, DMG taken -30% and ATK DMG taken -20% when attacking (self)
+        - desc: DMG taken +40% when stunned (enemies)
     - name: "Boon of Special Education"
-      shortEffects: ATK +30% and HP +20%
       effects: 
-        - desc: ATK +30%
-          meta:
-            priority: 1
-            buff: ATK
-            buffValue: 30
-        - desc: HP +20%
-          meta:
-            priority: 1
-            buff: HP
-            buffValue: 20
+        - desc: ATK +30%, HP +20% (stat page)
 
   skills:
     - name: "Downward Thrust"
@@ -8558,38 +8589,27 @@
       maxHits: 8
     - name: "Great Earth Splitter"
       picture: Dragon_Hammer
-      power: ATK x 350%
+      power: ATK x 360%
       ap: 28
       maxHits: 10
       notes: ATK +20% (Party/10s)
-      meta:
-        priority: 2
-        buff: ATK
-        buffValue: 20
     - name: "Spinning Axe • Great Revolution"
       picture: Hurricane
-      power: ATK x 1020%
+      power: ATK x 1050%
       ap: 40
       maxHits: 10
     - name: "Spinning Axe • Consecutive Blows"
       picture: Skill_Placeholder
-      power: ATK x 1150%
+      power: ATK x 1180%
       ap: 52
       maxHits: 14
 
   rush:
     name: "Wild Pitch"
     picture: Wild_Pitch_Ridley_Silverlake
-    shortEffects: Recovers 30% of max HP (Self) and critical hit chance +50% (Party/20s)
     effects: 
-      - desc: Recovers 30% of max HP
-      - desc: Critical hit chance +50%
-        all: true
-        duration: 20
-        meta:
-          priority: 1
-          buff: Crit Rate
-          buffValue: 20
+      - desc: Recovers 30% HP (self)
+      - desc: Critical chance +50% (party, 20s)
     power: ATK x 5500%
     maxHits: 17
 
@@ -8951,48 +8971,21 @@
   talents:
     - name: "Swordsman Who Maintains Justice"
       effects: 
-        - desc: ATK +40%
-          all: true
-          meta:
-            priority: 1
-            buff: ATK
-            buffValue: 40
-        - desc: ATK +70% when HP is 100%
-          all: true
-          meta:
-            priority: 1
-            buff: ATK
-            buffCondition: HP is 100%
-            buffValue: 70  
+        - desc: ATK +45%, +80% at 100% HP (party)
+        - desc: ATK damage +20% at SC ≥ 3 (party)
     - name: "Space-Time Swordsman"
       effects: 
-        - desc: Assist usage +1 at start of battle
-          all: true       
+        - desc: Assist use +1 (party)
+        - desc: Order gain +30% at 100% HP (party)
     - name: "Alvein Sword Arts"
       effects: 
+        - desc: Nullifies Charge Assault Crit. penalty
         - desc: AP recovery +100%
-          all: false
-          meta:
-            priority: 1
-            buff: AP Recovery
-            buffValue: 100
-        - desc: Nullifies charge assault critical damage penalty
-        - desc: Cancel bonus starts at 200% when using charge assault   
+        - desc: Start CB at 200% when using Charge Assault
     - name: "The One to Defeat the Demon King"
       effects:
-        - desc: Evasion possible during air attacks
-        - desc: Critical hit chance +50% when skill chain is >3
-          meta:
-            priority: 1
-            buff: Crit Rate
-            buffCondition: Skill Chain > 3        
-            buffValue: 50
-        - desc: Critical hit chance +100% when skill chain is >5
-          meta:
-            priority: 1
-            buff: Crit Rate
-            buffCondition: Skill Chain > 5
-            buffValue: 100  
+        - desc: Able to air dodge
+        - desc: Critical hit chance +50% at SC ≥ 3, +100% at SC ≥ 5
 
   skills:
     - name: "Demon Fang"
@@ -9008,12 +9001,12 @@
     - name: "Demon Spear"
       picture: Layered_Talon_Heaven_Flash
       element: Lightning
-      power: ATK x 540%
+      power: ATK x 570%
       ap: 27
       maxHits: 7
     - name: "Demonic Sword Rain"
       picture: Thousand_Devil_Flurry
-      power: ATK x 500%
+      power: ATK x 530%
       ap: 25
       maxHits: 5      
 
@@ -9021,14 +9014,8 @@
     name: "Final Fury"
     picture: Ravaging_Blade_Dance_Cress
     effects: 
-      - desc: AP cost -40%
-        all: true
-        duration: 20
-        meta:
-          priority: 1
-          buff: AP Cost Reduction 
-          buffValue: 40
-    power: ATK x 4500%
+      - desc: AP cost -40% (party, 20s)
+    power: ATK x 5000%
     maxHits: 13
 
 - name: Albel Nox (Awakened)
@@ -9277,6 +9264,85 @@
           buff: Crit Rate
           buffValue: 100
     power: ATK x 5500%
+    maxHits: 21
+
+- name: Dhaos (Awakened)
+  cat: jp
+  picture: Dhaos
+  weapon: orb
+  ace: true
+  limited: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 15960
+    atk: 3465
+    int: 1575
+    def: 1943
+    hit: 1127
+    grd: 847
+
+  talents:
+    - name: "Ruthless Demon King"
+      effects:
+        - desc: ATK +1000, +1250 at 100% HP (party)
+        - desc: Start with full Rush and 1 Order (party)
+    - name: "The Man Who Runs Time"
+      effects:
+        - desc: Recovers 100% AP and 40% HP on perfect dodge
+        - desc: Start CB at 200% when using a skill after perfect dodge
+    - name: "King of Illusions"
+      effects:
+        - desc: ATK damage dealt +55% at short range
+        - desc: AP recovery +150% at long range
+    - name: "Carrying the Prayers of the People"
+      effects:
+        - desc: ATK +30% (stat page)
+        - desc: Dodge AP cost -80%
+        - desc: Able to air dodge
+        - desc: AP cost -35% at 100% HP
+    - name: "Longing for Derris-Kharlan"
+      effects:
+        - desc: Recover 20% HP when using Dhaos Collider
+        - desc: AP recovery while walking
+        - desc: No flinching and ATK damage taken -30% while attacking
+    - name: "Lonely Journey"
+      effects:
+        - desc: Overheal up to 17000 HP
+        - desc: ATK +10% while at 100% HP
+        - desc: ATK +50% during Rush while at 100% HP
+
+  skills:
+    - name: "Dhaos Collider"
+      picture: Dhaos_Collider
+      power: ATK x 900%
+      ap: 29
+      maxHits: 7
+    - name: "Thunder Blade"
+      picture: Thunder_Blade
+      element: Lightning
+      power: ATK x 470%
+      ap: 22
+      maxHits: 2
+    - name: "Tetra Assault"
+      picture: Tetra_Assault
+      power: ATK x 410%
+      ap: 17
+      maxHits: 4
+    - name: "Dhaos Laser"
+      picture: Dhaos_Laser
+      power: ATK x 960%
+      ap: 40
+      maxHits: 10    
+
+  rush:
+    name: "Super Dhaos Laser"
+    picture: Rush_Placeholder
+    effects: 
+      - desc: Recovers 50% HP (self)
+      - desc: Critical chance +100% (party, 10s)
+    power: ATK x 7000%
     maxHits: 21
 
 - name: Bowman
@@ -9951,24 +10017,20 @@
   talents:
     - name: "Leave The Cleaning To Me"
       effects:
-        - desc: ATK +40%, +60% at 100% HP
-          all: true
-          meta:
-            priority: 1
-            buff: ATK
-            buffCondition: HP is 100%
-            buffValue: 60
-        - desc: 30% Chance for +70% ATK when using Planet Polisher (party/ 5s)
+        - desc: ATK +45%, +75% at 100% HP (party)
+        - desc: 30% chance for ATK +85% when using Planet Polisher (party, 5s)
     - name: "The One & Only Vacuum"
       effects:
-        - desc: 30% Chance for -50% AP Cost when using Planet Polisher (party/ 5s)
-        - desc: 30% Chance to RCV 20% HP to All when using Planet Polisher
+        - desc: 30% chance for AP cost -50% when using Planet Polisher (party, 5s)
+        - desc: 30% chance to recover 20% HP to the party when using Planet Polisher
     - name: "Swinging Hair Parts"
       effects:
-        - desc: Critical hit chance +20% at skill chain > 3, +30% at skill chain > 5 (party)
+        - desc: Critical hit chance +20% at SC ≥ 3, +30% at SC ≥ 5 (party)
     - name: "Minister of Justice"
       effects:
-        - desc: AP recovery +100% by normal attacks
+        - desc: AP recovery of normal attacks +250% (party)
+        - desc: No flinching and damage taken -40% while attacking (self)
+        - desc: 30% chance to recover 30 AP when using Planet Polisher (self)
 
   skills:
     - name: "Crack Hand Claps"
@@ -9978,7 +10040,7 @@
       maxHits: 3
     - name: "Planet Polisher"
       picture: Skill_Placeholder
-      power: ATK x 620%
+      power: ATK x 680%
       ap: 24
       maxHits: 12
     - name: "High-end Press"
@@ -9995,15 +10057,9 @@
   rush:
     name: "Galactica Eraser"
     picture: Rush_Placeholder
-    shortEffects: ATK damage +60% (party/ 20sec)
     effects:
-      - desc: ATK damage +60% (party/ 20sec)
-        duration: 20
-        meta:
-          priority: 1
-          buff: ATK Damage
-          buffValue: 60
-    power: ATK x 4500%
+      - desc: ATK damage +60% (party, 20s)
+    power: ATK x 5000%
     maxHits: 2
 
 - name: Joker
@@ -10025,55 +10081,53 @@
   talents:
     - name: "Phantom Thief"
       effects:
-        - desc: ATK +700, at HC 100+ ATK +1000
-          all: Attackers/Sharpshooters/Defenders
+        - desc: ATK +700, +1000 at HC ≥ 100 (Attackers, Defenders, Shooters)
+        - desc: INT +700, +1000 at HC ≥ 100 (Invokers)
     - name: "Arsene"
       effects:
-        - desc: -100% DMG Taken when using Edge & Gun Smoke (0.5 s)
-        - desc: -100% DMG Taken when using Forward Slash or Downside Butterfly (1 s)
+        - desc: DMG taken -100% when using Edge & Gun Smoke (0.5s)
+        - desc: DMG taken -100% when using Forward Slash or Downside Butterfly (1s)
     - name: "Rebelious Will"
       effects:
-        - desc: -20% AP Cost when Not Facing Target
-        - desc: +5% Echo on Skills
-        - desc: +50% Crit at HC 200+
+        - desc: AP cost -20% when not in front of target
+        - desc: Echo by skills +5%
+        - desc: Critical chance +50% at HC ≥ 200
     - name: "Thief of World Reformation"
       effects:
-        - desc: +100% AP RCV by Normals
-        - desc: +30% ATK at HC 100+
-        - desc: Air Dodge
-        - desc: -80% AP Cost on Dodge
-        - desc: +100% Speed on Dodge
+        - desc: Normal attack AP recovery +100%
+        - desc: ATK +30% ATK at HC ≥ 100
+        - desc: Able to air dodge
+        - desc: Dodge AP cost -80%
+        - desc: Dodge speed +100%
 
   skills:
     - name: "Forward Slash"
       picture: Skill_Placeholder
-      power: ATK x 1150
+      power: ATK x 1150%
       ap: 40
       maxHits: 5
     - name: "Eiha"
       picture: Skill_Placeholder
       element: Dark
-      power: ATK x 420
+      power: ATK x 420%
       ap: 24
       maxHits: 2
     - name: "Edge and Gun Smoke"
       picture: Skill_Placeholder
-      power: ATK x 350
+      power: ATK x 350%
       ap: 19
       maxHits: 2
     - name: "Downshot Butterfly"
       picture: Skill_Placeholder
-      power: ATK x 830
+      power: ATK x 830%
       ap: 33
       maxHits: 6
 
   rush:
     name: "Arsene Cosmic Flare"
     picture: Rush_Placeholder
-    shortEffects: AP Cost - 65% (20 sec)
     effects:
-      - desc: AP Cost -65% (20 sec)
-        duration: 20
+      - desc: AP cost -65% (20s)
     power: ATK x 5500%
     maxHits: 1
 
@@ -10938,8 +10992,8 @@
         - desc: Converts 70% of INT to ATK (Attackers/ Sharpshooters/ Defenders)
     - name: "Federal Uniform"
       effects:
-        - desc: Fill 100% Rush Guage at mission start
-        - desc: Rush guage regen 3%/ 3s (party)
+        - desc: Fill 100% Rush Gauge at mission start
+        - desc: Rush gauge regen 3%/ 3s (party)
         - desc: HP regen 20%/ 3s while Caleen is at SC ≥ 4 (party)
     - name: "Welch Handmade Bit Mech"
       effects:
@@ -10948,7 +11002,7 @@
     - name: "The Mystery of the Deepening Coat of Arms"
       effects:
         - desc: Maintain SC after 1 dodge
-        - desc: Dodge AP cosr -80%
+        - desc: Dodge AP cost -80%
         - desc: Able to air dodge
 
   skills:
@@ -11545,6 +11599,75 @@
     power: ATK x 5000%
     maxHits: 14
 
+- name: Ernest Raviede
+  cat: jp
+  picture: Ernest
+  weapon: whip
+  ace: true
+  star: 5
+
+  stats:
+    hp: 15540
+    atk: 2730
+    int: 1563
+    def: 1943
+    hit: 1148
+    grd: 819
+
+  talents:
+    - name: "Passion for Archeology"
+      effects:
+        - desc: ATK +45%/65%/85% at HC ≥ 0/150/300 (party)
+        - desc: Gain 3% Rush every 3 seconds (party)
+        - desc: HC counter +3s (party)
+    - name: "Adventurer's Degree"
+      effects:
+        - desc: Damage taken -100% after dodging (1s)
+        - desc: Recover 5% HP after using skills
+        - desc: Critical chance +35% at SC ≥ 4
+        - desc: Able to air dodge
+    - name: "Romance Over Love"
+      effects:
+        - desc: AP cost -70% and ATK damage +30% after pefect dodge (party, 7s)
+        - desc: Recover 100% AP and ATK +20% after perfect dodge (self, 10s)
+    - name: "A Strong Sense of Duty"
+      effects:
+        - desc: Dodge AP cost -80%
+        - desc: Start CB at 200% when using Charge Assault
+        - desc: Maintain CB after up to 2 consecutive dodges
+
+  skills:
+    - name: "Dual Whip • Search"
+      picture: Skill_Placeholder
+      power: ATK x 300%
+      ap: 19
+      maxHits: 2
+    - name: "Spiral Whip • Search"
+      picture: Skill_Placeholder
+      power: ATK x 370%
+      ap: 23
+      maxHits: 1
+    - name: "Ark Attack"
+      picture: Skill_Placeholder
+      power: ATK x 950%
+      ap: 28
+      maxHits: 4
+    - name: "Thunder Whip"
+      picture: Skill_Placeholder
+      element: Lightning
+      power: ATK x 760%
+      ap: 38
+      maxHits: 7
+
+  rush:
+    name: "Broken Heart"
+    picture: Rush_Placeholder
+    effects:
+      - desc: HC starts at 100
+      - desc: ATK damage +60%, INT damage +40% (Party, 20s)
+    power: ATK x 5000%
+    maxHits: 14
+
 - name: Caleen Keemosn (Snow Fox)
   cat: jp
   picture: Caleen_SnowFox
@@ -11929,7 +12052,7 @@
   talents:
     - name: "Over the Nights"
       effects:
-        - desc: ATK +45%/70%/95% at HC > 0/100/250 (party)
+        - desc: ATK +45%/70%/95% at HC ≥ 0/100/250 (party)
         - desc: ATK damage +40% at SC ≥ 5 (party)
         - desc: Start with full Rush (party)
     - name: "Remnants of Young Leaf Color"
@@ -11945,7 +12068,7 @@
         - desc: Order gain +50% while Tika is airborne (party)
     - name: "To the Long-Awaited Tomorrow"
       effects:
-        - desc: ATK +20% at HC > 200
+        - desc: ATK +20% at HC ≥ 200
         - desc: No flinching while attacking
         - desc: Drain 3% of damage dealt by Starling Divider as HP when at SC ≥ 3
     - name: "Vanguard / Idol Tika [Mastery]"

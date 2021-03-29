@@ -6289,69 +6289,20 @@
   talents:
     - name: Feminity Incarnate 
       effects: 
-        - desc: Hitcount timer +1 second
-          all: true
-        - desc: Damage dealt +35%
-          all: true
-          meta:
-            priority: 1
-            buff: Damage
-            buffValue: 35
-        - desc: Damage dealt +55% when hitcount is >100
-          all: true
-          meta:
-            priority: 1
-            buff: Damage
-            buffCondition: Hit Count > 100
-            buffValue: 55
-        - desc: Damage dealt +75% when hitcount is >250
-          all: true
-          meta:
-            priority: 1
-            buff: Damage
-            buffCondition: Hit Count > 250
-            buffValue: 75
+        - desc: HC timer +1s (party)
+        - desc: DMG dealt +40%/60%/80% at HC ≥ 0/100/250 (party)
     - name: Unending Delusion 
       effects: 
-        - desc: No flinching when attacking
-          all: false
-        - desc: Damage taken -20%
-          all: false
-          meta:
-            priority: 1
-            buff: Damage Taken Reduction 
-            buffValue: 20
-        - desc: No flinching when skill chain is >3
-          all: true
-        - desc: Damage taken -50% when skill chain is >3
-          all: true
-          meta:
-            priority: 1
-            buff: Damage Taken Reduction 
-            buffCondition: Skill Chain > 3
-            buffValue: 50
+        - desc: No flinching and DMG taken -20% when attacking (self)
+        - desc: No flinching and DMG taken -50% at SC ≥ 3 (party)
     - name: Love Dilemma
-      shortEffects: Recovers 15% of max HP every 3 seconds for all allies on perfect dodge (20s)
       effects: 
-        - desc: Recovers 15% of max HP every 3 seconds for all allies on perfect dodge (20s)
+        - desc: Recovers 15% HP to the party every 3 seconds on perfect dodge (30s)
     - name: VALENTINE
       effects: 
         - desc: AP recovery +100%
-          all: false
-          meta:
-            priority: 1
-            buff: AP Recovery
-            buffCondition: Perfect Dodge
-            buffValue: 100
-        - desc: Evasion speed & distance +100%
-          all: false
-        - desc: Damage taken -100% on perfect dodge (0.5s)
-          all: false
-          meta:
-            priority: 1
-            buff: Damage Taken Reduction 
-            buffCondition: Perfect Dodge
-            buffValue: 100
+        - desc: Dodge speed & distance +100%
+        - desc: DMG taken -100% on perfect dodge (0.5s)
 
   skills:
     - name: Pineberry
@@ -6371,7 +6322,7 @@
       maxHits: 5
     - name: Reload & Snipe
       picture: Skill_Placeholder
-      power: ATK x 1200%
+      power: ATK x 1320%
       ap: 30
       maxHits: 1
       
@@ -6380,13 +6331,7 @@
     picture: Magnum_Wedding_Elphelt
     element: 
     effects: 
-      - desc: AP cost -50%                
-        all: true
-        duration: 20 
-        meta:
-          priority: 1
-          buff: AP Cost Reduction 
-          buffValue: 50
+      - desc: AP cost -50% (party, 20s)
     power: ATK x 4500%
     maxHits: 2  
     
@@ -7001,51 +6946,22 @@
   talents:
     - name: "Pure-Hearted Archer"
       effects: 
-        - desc: Damage dealt +35%
-          all: true
-          meta:
-            priority: 1
-            buff: Damage
-            buffValue: 35
-        - desc: Damage dealt +75% when HP is 100%
-          all: true
-          meta:
-            priority: 1
-            buff: Damage
-            buffCondition: HP is 100%
-            buffValue: 75
+        - desc: Damage dealt +45%, +85% at 100% HP (party)
+        - desc: Critical damage +30% at SC ≥ 3 (party)
     - name: "Striker"
       effects: 
-        - desc: AP cost -40% when skill chain is >3
-          all: true
-          meta:
-            priority: 1
-            buff: AP Cost Reduction
-            buffCondition: Skill Chain 3+
-            buffValue: 40
-        - desc: AP cost -50% when skill chain is >4
-          all: true
-          meta:
-            priority: 1
-            buff: AP Cost Reduction
-            buffCondition: Skill Chain 4+
-            buffValue: 50
+        - desc: AP cost -40% at SC ≥ 3, -50% at SC ≥ 4 (party)
+        - desc: Echo by skills 10% (party)
     - name: "Pervert Great Demon King"
       effects: 
-        - desc: AP recovery increases while moving when HP is 100%
-          all: true
-        - desc: Critical hit chance +30% when skill chain is >3
-          all: true
-          meta:
-            priority: 1
-            buff: Crit Rate
-            buffCondition: Skill Chain 3+
-            buffValue: 30
+        - desc: AP recovery while walking at 100% HP (party)
+        - desc: Critical chance +30% at SC ≥ 3 (party)
     - name: "Arrow that Pierces in a Flash"
       effects: 
-        - desc: Evasion AP cost -50%
-        - desc: Evasion distance & speed +100%
-        - desc: Evasion possible during air attacks
+        - desc: Dodge AP cost -80%
+        - desc: Dodge speed and distance +100%
+        - desc: Able to air dodge
+        - desc: Damage taken -90% after dodging (party, 1s)
 
   skills:
     - name: "Thunder Blitz"
@@ -7067,7 +6983,7 @@
       maxHits: 9
     - name: "Dragon Slayer"
       picture: Skill_Placeholder
-      power: ATK x 580%
+      power: ATK x 660%
       ap: 30
       maxHits: 5
 
@@ -7075,9 +6991,7 @@
     name: "Wild Rain"
     picture: Rush_Placeholder
     effects:
-      - desc: Recovers 15% of max HP every 3 seconds
-        all: true
-        duration: 20
+      - desc: Recovers 15% of max HP every 3 seconds (party, 20s)
     power: ATK x 4500%
     maxHits: 12
 
@@ -8179,7 +8093,7 @@
         - desc: Dodge AP cost -80%
 
   skills:
-    - name: "Magic Accelerator | AF"
+    - name: "Magic Accelerator • AF"
       picture: Skill_Placeholder
       power: ATK x 310%
       ap: 19
@@ -8458,17 +8372,17 @@
         - desc: Nullifies Charge Assault Crit. penalty
 
   skills:
-    - name: "Highwind Blast | Yearning"
+    - name: "Highwind Blast • Yearning"
       picture: Skill_Placeholder
       power: ATK x 230%
       ap: 16
       maxHits: 4
-    - name: "Spread Ray | Yearning"
+    - name: "Spread Ray • Yearning"
       picture: Skill_Placeholder
       power: ATK x 610%
       ap: 31
       maxHits: 5
-    - name: "Laydown Snipe | Yearning"
+    - name: "Laydown Snipe • Yearning"
       picture: Skill_Placeholder
       power: ATK x 220%
       ap: 14
@@ -8541,7 +8455,7 @@
       power: ATK x 790%
       ap: 23
       maxHits: 12
-    - name: "Great Whip | 100 Fox Dance"
+    - name: "Great Whip • 100 Fox Dance"
       picture: Skill_Placeholder
       power: ATK x 1060%
       ap: 27
