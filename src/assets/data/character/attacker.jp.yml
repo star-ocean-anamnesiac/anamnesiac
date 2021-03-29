@@ -8413,7 +8413,7 @@
     power: ATK x 5000%
     maxHits: 10
 
-- name: Sol
+- name: Sol Badguy
   cat: jp
   picture: Sol
   weapon: ohs
@@ -8428,83 +8428,26 @@
     def: 1969
     hit: 1127
     grd: 812
-    ap: 140
 
   talents:
     - name: Wayfaring Bounty Hunter 
-      effects: 
-        - desc: ATK +20%
-          all: true
-          meta:
-            priority: 1
-            buff: ATK
-            buffValue: 20
-        - desc: ATK +50% when hitcount is >150
-          all: true
-          meta:
-            priority: 1
-            buff: ATK
-            buffValue: 50
-        - desc: Nullifies charge assault critical damage penalty
-          all: false
+      effects:
+        - desc: ATK +25%, +55% at HC ≥ 150 (party)
+        - desc: Nullify Charge Assault Crit. penalty (self)
     - name: Self Taught Martial Artist 
-      effects: 
-        - desc: Critical hit chance +50% when skill chain is >3
-          all: false
-          meta:
-            priority: 1
-            buff: Crit Rate
-            buffCondition: Skill Chain > 3
-            buffValue: 50
-        - desc: Critical hit chance +100% when skill chain is >5
-          all: false
-          meta:
-            priority: 1
-            buff: Crit Rate
-            buffCondition: Skill Chain > 5
-            buffValue: 100
-        - desc: Critical damage dealt +100% when skill chain is >6
-          all: false
-          meta:
-            priority: 1
-            buff: Crit Damage
-            buffCondition: Skill Chain > 6
-            buffValue: 100
+      effects:
+        - desc: Critical chance +50%/+100%/ at SC ≥ 3/5
+        - desc: Critical damage +100% at SC ≥ 6
     - name: Bygone Holy Knight
-      effects: 
-        - desc: Normal attack AP recovery +200%
-          all: false
-          meta:
-            priority: 1
-            buff: AP Recovery From Normal Attacks
-            buffValue: 200
-        - desc: Evasion possible during air attacks
-          all: false
-        - desc: ATK +20% when hitcount is >200
-          all: false
-          meta:
-            priority: 3
-            buff: ATK
-            buffCondition: Hit Count > 200
-            buffValue: 20
+      effects:
+        - desc: Normal attack AP recovery +250%
+        - desc: Able to air dodge
+        - desc: ATK +20% at HC ≥ 200
     - name: GEAR
       effects: 
-        - desc: ATK +20%
-          all: false
-          meta:
-            priority: 4
-            buff: ATK
-            buffValue: 20
-        - desc: AP +40
-          all: false
+        - desc: ATK +20%, AP +50 (stat page)
         - desc: Movement speed +30%
-          all: false
-        - desc: Damage taken -100% when using Volcanic Viper (Self/0.5s)
-          all: false
-          meta:
-            priority: 1
-            buff: Damage Taken Reduction 
-            buffValue: 100
+        - desc: Damage taken -100% when using Volcanic Viper (0.5s)
 
   skills:
     - name: Gun Flame 
@@ -8516,19 +8459,19 @@
     - name: Volcanic Viper
       picture: Skill_Placeholder
       element: Fire
-      power: ATK x 490%
+      power: ATK x 520%
       ap: 23
       maxHits: 2
     - name: Bandit Bringer
       picture: Skill_Placeholder
       element: Fire
-      power: ATK x 520%
+      power: ATK x 550%
       ap: 24
       maxHits: 1
     - name: Shatter 
       picture: Skill_Placeholder
       element: Fire
-      power: ATK x 400%
+      power: ATK x 420%
       ap: 19
       maxHits: 2
       
@@ -8536,18 +8479,10 @@
     name: Tyrant Rave ver.ß
     picture: Tyrant_Rave_Sol
     element: Fire
-    shortEffects: Hitcount starts at 75 (Party) and AP cost -80% (Self/10s)
     effects: 
-      - desc: Hitcount +75
-        all: true
-      - desc: AP cost -80%               
-        all: false
-        duration: 10
-        meta:
-          priority: 1
-          buff: AP Cost Reduction 
-          buffValue: 80
-    power: ATK x 5000%
+      - desc: HC starts at 75
+      - desc: AP cost -80% (10s)
+    power: ATK x 5500%
     maxHits: 4
 
 - name: Jack Russell
@@ -8569,40 +8504,19 @@
   talents:
     - name: "Lively Personality"
       effects: 
-        - desc: ATK +40%
-          all: true
-          meta:
-            priority: 1
-            buff: ATK
-            buffValue: 40
-        - desc: ATK +70% when HP is 100%
-          all: true
-          meta:
-            priority: 1
-            buff: ATK
-            buffCondition: HP is 100%
-            buffValue: 70
+        - desc: ATK +45%, +75% at 100% HP (party)
     - name: "Kenjutsu Training"
       effects: 
-        - desc: Absorbs 5% of damage dealt by normal attacks as HP
-          all: true
-        - desc: Absorbs 15% of damage dealt by normal attacks as HP at short range
-          all: true
+        - desc: Drain 5% of damage dealt by normal attacks (party)
+        - desc: Drain 15% of damage dealt by normal attacks at short range (party)
     - name: "Fearlessness"
       effects: 
-        - desc: Stun rate +30% when HP is 100%
-          all: true
-          meta:
-            priority: 1
-            buff: Stun Rate
-            buffCondition: HP is 100%
-            buffValue: 30
-        - desc: Critical hit chance +50% when stunned
-          all: Enemies
+        - desc: Stun rate +50% when HP is 100% (party)
+        - desc: Critical chance +100% when stunned (enemies)
     - name: "Son of the Dragon Killer"
       effects: 
-        - desc: Normal attack AP recovery +100% at short range
-          all: true
+        - desc: Normal attack AP recovery +100% at short range (party)
+        - desc: Echo by skills 5% at 100% HP (party)
 
   skills:
     - name: "Counter Slash"
@@ -8617,27 +8531,20 @@
       maxHits: 4
     - name: "Soaring Overhead Slash"
       picture: Helmsplitter
-      power: ATK x 720%
+      power: ATK x 750%
       ap: 30
       maxHits: 1
     - name: "Beast King Thrust"
       picture: Skill_Placeholder
-      power: ATK x 1050%
+      power: ATK x 1080%
       ap: 34
       maxHits: 7
 
   rush:
     name: "Limit Exceed"
     picture: Limit_Exceed_Jack_Russell
-    shortEffects: ATK damage dealt +60% (Party/20s)
-    effects: 
-      - desc: ATK damage dealt +60%
-        all: true
-        duration: 20
-        meta:
-          priority: 1
-          buff: ATK Damage
-          buffValue: 60
+    effects:
+      - desc: ATK damage +60% (party, 20s)
     power: ATK x 4500%
     maxHits: 8
 
@@ -10210,55 +10117,53 @@
   talents:
     - name: "Phantom Thief"
       effects:
-        - desc: ATK +700, at HC 100+ ATK +1000
-          all: Attackers/Sharpshooters/Defenders
+        - desc: ATK +700, +1000 at HC ≥ 100 (Attackers, Defenders, Shooters)
+        - desc: INT +700, +1000 at HC ≥ 100 (Invokers)
     - name: "Arsene"
       effects:
-        - desc: -100% DMG Taken when using Edge & Gun Smoke (0.5 s)
-        - desc: -100% DMG Taken when using Forward Slash or Downside Butterfly (1 s)
+        - desc: DMG taken -100% when using Edge & Gun Smoke (0.5s)
+        - desc: DMG taken -100% when using Forward Slash or Downside Butterfly (1s)
     - name: "Rebelious Will"
       effects:
-        - desc: -20% AP Cost when Not Facing Target
-        - desc: +5% Echo on Skills
-        - desc: +50% Crit at HC 200+
+        - desc: AP cost -20% when not in front of target
+        - desc: Echo by skills +5%
+        - desc: Critical chance +50% at HC ≥ 200
     - name: "Thief of World Reformation"
       effects:
-        - desc: +100% AP RCV by Normals
-        - desc: +30% ATK at HC 100+
-        - desc: Air Dodge
-        - desc: -80% AP Cost on Dodge
-        - desc: +100% Speed on Dodge
+        - desc: Normal attack AP recovery +100%
+        - desc: ATK +30% ATK at HC ≥ 100
+        - desc: Able to air dodge
+        - desc: Dodge AP cost -80%
+        - desc: Dodge speed +100%
 
   skills:
     - name: "Forward Slash"
       picture: Skill_Placeholder
-      power: ATK x 1150
+      power: ATK x 1150%
       ap: 40
       maxHits: 5
     - name: "Eiha"
       picture: Skill_Placeholder
       element: Dark
-      power: ATK x 420
+      power: ATK x 420%
       ap: 24
       maxHits: 2
     - name: "Edge and Gun Smoke"
       picture: Skill_Placeholder
-      power: ATK x 350
+      power: ATK x 350%
       ap: 19
       maxHits: 2
     - name: "Downshot Butterfly"
       picture: Skill_Placeholder
-      power: ATK x 830
+      power: ATK x 830%
       ap: 33
       maxHits: 6
 
   rush:
     name: "Arsene Cosmic Flare"
     picture: Rush_Placeholder
-    shortEffects: AP Cost - 65% (20 sec)
     effects:
-      - desc: AP Cost -65% (20 sec)
-        duration: 20
+      - desc: AP cost -65% (20s)
     power: ATK x 5500%
     maxHits: 1
 
@@ -11123,8 +11028,8 @@
         - desc: Converts 70% of INT to ATK (Attackers/ Sharpshooters/ Defenders)
     - name: "Federal Uniform"
       effects:
-        - desc: Fill 100% Rush Guage at mission start
-        - desc: Rush guage regen 3%/ 3s (party)
+        - desc: Fill 100% Rush Gauge at mission start
+        - desc: Rush gauge regen 3%/ 3s (party)
         - desc: HP regen 20%/ 3s while Caleen is at SC ≥ 4 (party)
     - name: "Welch Handmade Bit Mech"
       effects:
@@ -11133,7 +11038,7 @@
     - name: "The Mystery of the Deepening Coat of Arms"
       effects:
         - desc: Maintain SC after 1 dodge
-        - desc: Dodge AP cosr -80%
+        - desc: Dodge AP cost -80%
         - desc: Able to air dodge
 
   skills:
