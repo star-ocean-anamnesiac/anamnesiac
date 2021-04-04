@@ -7557,63 +7557,25 @@
     def: 1852
     hit: 1127
     grd: 840
-    ap: 120
 
   talents:
     - name: "Ami d'enfance"
       effects: 
-        - desc: ATK +40%
-          all: true
-          meta:
-            priority: 1
-            buff: ATK
-            buffValue: 40
-        - desc: ATK +65 when not behind target
-          all: true
-          meta:
-            priority: 1
-            buff: ATK
-            buffCondition: Not Behind Target
-            buffValue: 65
+        - desc: ATK +45% (party)
+        - desc: ATK +70% when not behind target (party)
     - name: "Ooneesan Idol"
       effects: 
-        - desc: Normal attack AP recovery +150%
-          meta:
-            priority: 1
-            buff: AP Recovery From Normal Attacks
-            buffValue: 150
-        - desc: Normal attack AP recovery +100%
-          all: true
-          meta:
-            priority: 1
-            buff: AP Recovery From Normal Attacks
-            buffValue: 100
-        - desc: Evasion AP cost -50%
-          all: true
+        - desc: Normal attack AP recovery +200% (self)
+        - desc: Normal attack AP recovery +150% (party)
+        - desc: Dodge AP cost -50% (party)
     - name: "Blue Oath"
       effects: 
-        - desc: Damage taken -30% when attacking
-          meta:
-            priority: 1
-            buff: Damage Taken Reduction
-            buffCondition: When Attacking
-            buffValue: 30
-        - desc: Evasion possible during air attacks
-        - desc: Critical hit chance +50% when skill chain is >3
-          meta:
-            priority: 1
-            buff: Crit Rate
-            buffCondition: Skill Chain 3+
-            buffValue: 50
-        - desc: Critical hit chance +100% when skill chain is >5
-          meta:
-            priority: 1
-            buff: Crit Rate
-            buffCondition: Skill Chain 5+
-            buffValue: 100
+        - desc: DMG taken -30% when attacking
+        - desc: Able to air dodge
+        - desc: Critical chance +50%/+100% at SC ≥ 3/5
     - name: "Courage to Step Forward"
       effects: 
-        - desc: AP +20
+        - desc: AP +20 (stat page)
             
   skills:
     - name: "Mistral Slash"
@@ -7634,23 +7596,16 @@
       maxHits: 6
     - name: "Starry Rain"
       picture: Starry_Rain
-      power: ATK x 610%
+      power: ATK x 680%
       ap: 35
       maxHits: 3
 
   rush:
     name: "Blue Star Serenade"
     picture: Blue_Star_Serenade_Idol_Reimi
-    shortEffects: Nullifies status ailments (Party), and AP cost -80% (Self/8s)
     effects: 
-      - desc: Nullifies status ailments
-        all: true
-      - desc: AP cost -80%
-        duration: 8
-        meta:
-          priority: 1
-          buff: AP Cost Reduction
-          buffValue: 80
+      - desc: Nullifies status ailments (party)
+      - desc: AP cost -80% (self, 8s)
     power: ATK x 4500%
     maxHits: 5
 
