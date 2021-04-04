@@ -7821,8 +7821,8 @@
   star: 5
 
   stats:
-    hp: 17094
-    atk: 3276
+    hp: 17871
+    atk: 3413
     int: 1563
     def: 1930
     hit: 1148
@@ -7831,56 +7831,33 @@
   talents:
     - name: "Swift Reactions in Hagoita"
       effects: 
-        - desc: Angel Feather's effect increased to +40% when HP is 100% and hitcount is >200
+        - desc: AF effect increased to +50% at 100% HP and HC ≥ 200
     - name: "Victorious Perspective"
       effects: 
-        - desc: Hitcount timer +2 seconds
-          all: true
-        - desc: Hitcount timer +3 seconds when New Year's Eve's HP is 100%
-          all: true
+        - desc: HC timer +2s (party)
+        - desc: HC timer +3s when Eve is at 100% HP (party)
     - name: "Last Stroke's Judgement"
       effects: 
-        - desc: Absorbs 5% of damage dealt by normal attacks as HP
-          all: true
-        - desc: Absorbs 15% of damage dealt by normal attacks as HP when hitcount is >100
-          all: true
+        - desc: Drain 5% of damage dealt by normal attacks (party)
+        - desc: Drain 15% of damage dealt by normal attacks at HC ≥ 100 (party)
     - name: "New Encounters and Adventures"
-      shortEffects: ATK +20% and HP +10%
       effects: 
-        - desc: HP +10%
-          meta:
-            priority: 1
-            buff: HP
-            buffValue: 10
-        - desc: ATK +20%
-          meta:
-            priority: 1
-            buff: ATK
-            buffValue: 20
+        - desc: ATK +25%, HP +15% (stat page)
 
   skills:
-    - name: "Spirit Strike - Angel Feather"
+    - name: "Spirit Strike • Angel Feather"
       picture: Cold_Cannon
-      power: ATK x 150%
+      power: ATK x 170%
       ap: 14
       notes: ATK/INT/DEF/HIT/GRD +20% (Party/20s)
       maxHits: 1
-      meta:
-        priority: 2
-        buffs:
-          - ATK
-          - INT
-          - DEF
-          - HIT
-          - GRD
-        buffValue: 20
-    - name: "Firestorm Blade"
+    - name: "Firestorm Blade • Celebration"
       picture: Firestorm_Blade
       element: Fire
       power: ATK x 580%
       ap: 31
       maxHits: 4
-    - name: "Air Slash of Fury"
+    - name: "Air Slash of Fury • Celebration"
       picture: Air_Slash_of_Fury
       power: ATK x 250%
       ap: 20
@@ -7888,24 +7865,16 @@
     - name: "Helix Splendor"
       picture: Helix_Splendor
       element: Light
-      power: ATK x 1020%
+      power: ATK x 1580%
       ap: 44
       maxHits: 10
 
   rush:
-    name: "Blessing: Rising Sun"
+    name: "Blessing • Rising Sun"
     picture: Blessing_Rising_Sun_New_Years_Eve
-    shortEffects: AP cost -40% and recovers 10% of max HP every 3 seconds (Self/20s)
     effects: 
-      - desc: AP cost -40%
-        duration: 20
-        meta:
-            priority: 1
-            buff: AP Cost Reduction
-            buffValue: 40
-      - desc: Recovers 10% of max HP every 3 seconds
-        duration: 20
-    power: ATK x 5000%
+      - desc: AP cost -40% and recovers 10% HP every 3 seconds (20s)
+    power: ATK x 5500%
     maxHits: 5
 
 - name: Sakura Shinguji
