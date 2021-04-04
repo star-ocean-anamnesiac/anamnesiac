@@ -8468,41 +8468,22 @@
   talents:
     - name: "Dealer Candidate"
       effects:
-        - desc: ATK +20% when HP is 100%
-          meta:
-            priority: 3
-            buff: ATK
-            buffCondition: HP is 100%
-            buffValue: 20
-        - desc: ATK +10% when HP is >50%
-          meta:
-            priority: 3
-            buff: ATK
-            buffCondition: HP > 50%
-            buffValue: 10
-        - desc: Absorbs 15% of damage dealt by normal attacks as HP when behind target
+        - desc: ATK +20% at 100% HP
+        - desc: ATK +10% when HP ≥ 50%
+        - desc: Drains 15% of damage dealt by normal attacks when behind target
     - name: "Speedy Decision"
       effects: 
-        - desc: Evasion AP cost -80%
-        - desc: Evasion AP cost -50%
-          all: true
-        - desc: AP cost -30% after perfect dodge (10s)
+        - desc: Doodge AP cost -80% (self)
+        - desc: Doodge AP cost -50% (party)
+        - desc: AP cost -50% after perfect dodge (self, 20s)
     - name: "Fortune Calling Beast"
       effects: 
-        - desc: Normal attack AP recovery +100% when HP is 100%
-          all: true
-          meta:
-            priority: 1
-            buff: AP Recovery From Normal Attacks
-            buffCondition: HP is 100%
-            buffValue: 100
+        - desc: ATK +30% (party)
+        - desc: Normal attack AP recovery +100% at 100% HP (party)
+        - desc: DMG taken +30% when Maria is at 100% HP (enemies)
     - name: "Quark's Bond"
       effects:
-        - desc: ATK +30%
-          meta:
-            priority: 1
-            buff: ATK
-            buffValue: 30
+        - desc: ATK +30% (stat page)
 
   skills:
     - name: "Mirage Penetrate"
@@ -8522,28 +8503,16 @@
       maxHits: 4
     - name: "Storm Edge"
       picture: Storm_Edge
-      power: ATK x 1240%
+      power: ATK x 1370%
       ap: 54
       maxHits: 5
 
   rush:
     name: "Blackjack Vortex"
     picture: Blackjack_Vortex_Bunny_Maria
-    shortEffects: AP cost -30% and ATK damage dealt +40% (Self/20s)
     effects:
-      - desc: AP cost -30%
-        duration: 20
-        meta:
-          priority: 1
-          buff: AP Cost Reduction
-          buffValue: 30
-      - desc: ATK damage dealt +40%
-        duration: 20
-        meta:
-          priority: 1
-          buff: ATK Damage
-          buffValue: 40
-    power: ATK x 5000%
+      - desc: AP cost -30% and ATK damage dealt +40% (20s)
+    power: ATK x 5500%
     maxHits: 3
 
 
