@@ -7311,8 +7311,8 @@
   star: 5
 
   stats:
-    hp: 16979
-    atk: 3293
+    hp: 18522
+    atk: 3567
     int: 1510
     def: 1995
     hit: 1120
@@ -7321,64 +7321,19 @@
   talents:
     - name: "Starving Wolf"
       effects: 
-        - desc: ATK +20%
-          all: true
-          meta:
-            priority: 1
-            buff: ATK
-            buffValue: 20
-        - desc: DEF -20%
-          all: Enemies
-          meta:
-            priority: 1
-            buff: Enemy DEF Reduction
-            buffValue: 20
-        - desc: DEF -30% when Wolf Albel's HP is 100%
-          all: Enemies
-          meta:
-            priority: 1
-            buff: Enemy DEF Reduction
-            buffCondition: Wolf Albel's HP is 100%
-            buffValue: 30
+        - desc: ATK +20% (party)
+        - desc: DEF -30% (enemies)
+        - desc: DEF -60% when Albel is at 100% HP (enemies)
     - name: "Monster of the Moonlight"
       effects: 
-        - desc: Hitcount timer +2 seconds
-          all: true
-        - desc: AP cost -10% when hitcount is >50
-          all: true
-          meta:
-            priority: 1
-            buff: AP Cost Reduction
-            buffCondition: Hit Count is > 50
-            buffValue: 10
-        - desc: AP cost -20% when hitcount is >100
-          all: true
-          meta:
-            priority: 1
-            buff: AP Cost Reduction
-            buffCondition: Hit Count > 100
-            buffValue: 20
+        - desc: HC timer +2s (party)
+        - desc: AP cost -10%/-20% at HC ≥ 50/100 (party)
     - name: "Lone Wolf"
       effects: 
-        - desc: No flinching when attacking
-        - desc: Damage taken -40%
-          meta:
-            priority: 1
-            buff: Damage Taken Reduction
-            buffValue: 40
+        - desc: No flinching and DMG taken -40% when attacking
     - name: "Deep Twisted Regret"
-      shortEffects: ATK +20% and HP +10%
       effects: 
-        - desc: ATK +20%
-          meta:
-            priority: 1
-            buff: ATK
-            buffValue: 20
-        - desc: HP +10%
-          meta:
-            priority: 1
-            buff: HP
-            buffValue: 10
+        - desc: ATK +30%, HP +20% (stat page)
 
   skills:
     - name: "Gravity Collider"
@@ -7388,7 +7343,7 @@
       maxHits: 6
     - name: "Divine Ring"
       picture: Divine_Ring
-      power: ATK x 780%
+      power: ATK x 1290%
       ap: 39
       maxHits: 8
     - name: "Dragon Hammer"
@@ -7398,23 +7353,15 @@
       maxHits: 10
     - name: "Demon Claw Wave"
       picture: Demon_Claw_Wave
-      power: ATK x 840%
+      power: ATK x 1390%
       ap: 42
       maxHits: 8
 
   rush:
     name: "Dynast's Heaven Piercer"
     picture: Dynast's_Heaven_Piercer_Wolf_Albel
-    shortEffects: AP cost -40% and recovers 10% of max HP every 3 seconds (Self/20s)
     effects: 
-      - desc: AP cost -40%
-        duration: 20
-        meta:
-            priority: 1
-            buff: AP Cost Reduction
-            buffValue: 40
-      - desc: Recovers 10% of max HP every 3 seconds
-        duration: 20
+      - desc: AP cost -40% and recovers 10% HP every 3 seconds (20s)
     power: ATK x 5000%
     maxHits: 6
 
