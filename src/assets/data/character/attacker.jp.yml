@@ -11997,3 +11997,72 @@
       - desc: ATK damage taken +50%, INT damage taken +30% (enemies, 20s)
     power: ATK x 5500%
     maxHits: 6
+
+- name: Roger S. Huxley
+  cat: jp
+  picture: Roger
+  weapon: axe
+  ace: true
+  semi: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 18900
+    atk: 3583
+    int: 1510
+    def: 1969
+    hit: 1134
+    grd: 826
+
+  talents:
+    - name: "Talent 1"
+      effects:
+        - desc: Skill 2 • AF effect increases to 50% at HC ≥ 150 (party)
+        - desc: Party AP cost -50% and Crit. chance +30% after Roger does a perfect dodge (10s)
+    - name: "Talent 2"
+      effects:
+        - desc: Immunity to status afflictions (party, 180s)
+        - desc: Gain 3% Rush every 3 seconds (party)
+        - desc: DMG taken -100% when dodging (party, 1s)
+        - desc: No flinching while attacking (self)
+    - name: "Talent 3"
+      effects:
+        - desc: AP cost -80% and recover 25% HP every 3 seconds after perfect dodge (self, 10s)
+        - desc: Maintain CB after up to 2 consecutive dodges
+    - name: "Talent 4"
+      effects:
+        - desc: ATK +30%, HP +20% (stat page)
+        - desc: ATK +35% after perfect dodge (10s)
+        - desc: Party recovers 100 AP after Roger does a perfect dodge
+
+  skills:
+    - name: "Skill 1"
+      picture: Skill_Placeholder
+      power: ATK x 220%
+      ap: 26
+      maxHits: 2
+    - name: "Skill 2 • AF"
+      picture: Skill_Placeholder
+      power: ATK x 260%
+      ap: 17
+      maxHits: 6
+    - name: "Skill 3"
+      picture: Skill_Placeholder
+      power: ATK x 630%
+      ap: 24
+      maxHits: 1
+    - name: "Skill 4"
+      picture: Skill_Placeholder
+      power: ATK x 1210%
+      ap: 32
+      maxHits: 4
+
+  rush:
+    name: "Star Fall"
+    picture: Rush_Placeholder
+    effects:
+      - desc: HC starts at 100
+      - desc: DMG taken +50% (enemies, 20s)
+    power: ATK x 6500%
+    maxHits: 5
