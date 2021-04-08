@@ -10792,20 +10792,21 @@
   talents:
     - name: "The First Step Towards an Advance Civilization"
       effects:
-        - desc: INT +1000 at 100% HP, +1500 at 100% HP and HC ≥ 250
-        - desc: Converts 70% of INT to ATK (Attackers/ Sharpshooters/ Defenders)
+        - desc: INT +1000 at 100% HP, +1750 at 100% HP and HC ≥ 150 (party)
+        - desc: Converts 70% of INT to ATK (Attackers, Defenders, Shooters)
     - name: "Federal Uniform"
       effects:
-        - desc: Fill 100% Rush Gauge at mission start
-        - desc: Rush gauge regen 3%/ 3s (party)
-        - desc: HP regen 20%/ 3s while Caleen is at SC ≥ 4 (party)
+        - desc: Start with 100% Rush (party)
+        - desc: Gain 3% Rush every 3 seconds (party)
+        - desc: Recover 20% HP every 3 seconds while Caleen is at SC ≥ 4 (party)
     - name: "Welch Handmade Bit Mech"
       effects:
-        - desc: After Slashing Fox (skill 1) and Dancing (skill 2) Recover AP 
-        - desc: Critical chance +50% while behind enemy (self)
+        - desc: Assist use +2 (party)
+        - desc: Recover some AP after using Slashing Fox and Dancing Slash (self)
+        - desc: Critical chance +50% when not in front of enemy (self)
     - name: "The Mystery of the Deepening Coat of Arms"
       effects:
-        - desc: Maintain SC after 1 dodge
+        - desc: Maintain CB after up to 2 consecutive dodges
         - desc: Dodge AP cost -80%
         - desc: Able to air dodge
 
@@ -10815,19 +10816,19 @@
       power: ATK x 220% 
       ap: 16
       maxHits: 2
-    - name: "Dancing"
+    - name: "Dancing Slash"
       picture: Skill_Placeholder
       power: ATK x 210%
       ap: 15
       maxHits: 2
-    - name: "Cardinal"
+    - name: "Cardinal Whirl"
       picture: Skill_Placeholder
       power: ATK x 170%
       ap: 14
       maxHits: 2
-    - name: "Silver Wave"
+    - name: "Silverwave Slash"
       picture: Skill_Placeholder
-      power: ATK x 950%
+      power: ATK x 1040%
       ap: 27
       maxHits: 8
 
@@ -10835,8 +10836,8 @@
     name: "Wing Star Overlord"
     picture: Rush_Placeholder
     effects:
-      - desc: ATK DMG +60%, AP cost -50% (party/20s)
-    power: ATK x 4500%
+      - desc: ATK DMG +60%, AP cost -50% (party, 20s)
+    power: ATK x 5500%
     maxHits: 5
 
 - name: Albel Nox (Oni Kimono)
