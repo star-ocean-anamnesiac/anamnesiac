@@ -4338,27 +4338,29 @@
   talents:
     - name: "Dance of Demon Comfort"
       effects:
-        - desc: DMG taken +35%, +50% at HC ≥ 200, +65% at HC ≥ 400 (enemies)
-        - desc: No flinching when taking damage of 25% HP or less (party)
+        - desc: DMG taken +45%+/60%/75% at HC ≥ 0/150/300 (enemies)
+        - desc: No flinching when taking damage ≤ 25% HP (party)
     - name: "Zanoni Dance"
       effects:
-        - desc: DMG taken -25%, -40% at HC ≥ 150% (party)
-        - desc: 5% double Hit on skills (party)
+        - desc: DMG taken -25%/-50% at HC ≥ 0/150 (party)
+        - desc: Echo by skills 10% (party)
     - name: "Incense"
       effects:
-        - desc: While Oni Kimono Nel is in the air, AP cost -40% and regen 10% HP/3s (party)
+        - desc: AP cost -40% while Nel is in the air (party)
+        - desc: Recover 10% HP every 3 seconds while Nel is in the air (party)
+        - desc: Order gain +30%
         - desc: Rush DMG +40% at HC ≥ 300 (party)
     - name: "Devil's Robe"
       effects:
-        - desc: Critical hit chance +50% at SC ≥ 3
-        - desc: AP +200% on normals
+        - desc: Critical chance +50% at SC ≥ 3
+        - desc: AP recovery of normal attacks +200%
         - desc: Able to air dodge
-        - desc: Nullifies charge assault critical damage penalty
+        - desc: Nullifies Charge Assault Crit. penalty
 
   skills:
     - name: "Eagle Nail Flash"
       picture: Skill_Placeholder
-      power: ATK x 1250%
+      power: ATK x 1280%
       ap: 42
       maxHits: 9
     - name: "Wind Blade"
@@ -4382,9 +4384,8 @@
     name: "Youki Blade Issen"
     picture: Rush_Placeholder
     effects:
-      - desc: HP recovery 30% (self)
-      - desc: ATK DMG +60%, INT DMG +40% (party/20s)
-    power: ATK x 4500%
+      - desc: ATK DMG +60%, INT DMG +40% (party, 20s)
+    power: ATK x 5500%
     maxHits: 6
 
 - name: Alicia
