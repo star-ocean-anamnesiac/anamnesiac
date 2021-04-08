@@ -4742,3 +4742,77 @@
       - desc: ATK/INT damage taken +40% (All enemies, 20s)
     power: ATK x 5500%
     maxHits: 20
+
+- name: T'nique Arcana
+  cat: jp
+  picture: Tnique
+  weapon: scythe
+  ace: true
+  semi: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 24822
+    atk: 3010
+    int: 1510
+    def: 2534
+    hit: 826
+    grd: 1029
+
+  talents:
+    - name: "Recant Rope for Strength"
+      effects: 
+        - desc: DMG taken +45%, +70% at HC ≥ 250 (enemies)
+        - desc: Echo by skills 15% (party)
+    - name: "The Sleeping Child Grows Up"
+      effects: 
+        - desc: DMG taken -30% (party)
+        - desc: No flinching when taking damage ≤ 25% (party)
+        - desc: AP cost -50% at SC ≥ 4 (party)
+    - name: "Full of Energy with Misubi"
+      effects: 
+        - desc: Whirlwind Stick AP cost +600% after using it (3s)
+        - desc: DMG taken -100% when using Whirlwind Stick (1.5s)
+        - desc: Party recovers 30 AP when T'nique is hit
+    - name: "Still in the Middle of the Road"
+      effects: 
+        - desc: ATK +20%, HP +20%, AP +40 (stat page)
+        - desc: Imbue party's attack with Fire after using Red Lotus Whirlwind Stick (5s)
+        - desc: Decreases enemy's Fire resistance when hit by an attack (8s)
+    - name: "Interrupt / T'nique [MASTERY]"
+      effects: 
+        - desc: ATK +15% when triggering Interrupt (5s)
+        - desc: Nullify Charge Assault Crit. penalty
+  
+  skills:
+    - name: "Purgatory Palm"
+      picture: Skill_Placeholder
+      element: Fire
+      power: ATK x 260%
+      ap: 15
+      maxHits: 5
+    - name: "Whirlwind Great Demon Blade"
+      picture: Skill_Placeholder
+      power: ATK x 360%
+      ap: 18
+      maxHits: 3
+    - name: "Whirlwind Stick"
+      picture: Skill_Placeholder
+      power: ATK x 680%
+      ap: 22
+      maxHits: 3
+    - name: "Red Lotus Whirlwind Stick"
+      picture: Skill_Placeholder
+      element: Fire
+      power: ATK x 820%
+      ap: 46
+      maxHits: 3
+      
+  rush:
+    name: "Seven Star Dance"
+    picture: Rush_Placeholder
+    effects: 
+      - desc: Critical chance +65% and DMG taken -30% (party, 20s)
+    power: ATK x 6500%
+    maxHits: 15
