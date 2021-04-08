@@ -12016,43 +12016,43 @@
     grd: 826
 
   talents:
-    - name: "Talent 1"
+    - name: "King of the Hill"
       effects:
-        - desc: Skill 2 • AF effect increases to 50% at HC ≥ 150 (party)
+        - desc: Ground Raider • AF effect increases to 50% at HC ≥ 150 (party)
         - desc: Party AP cost -50% and Crit. chance +30% after Roger does a perfect dodge (10s)
-    - name: "Talent 2"
+    - name: "Unbeatable Game"
       effects:
         - desc: Immunity to status afflictions (party, 180s)
         - desc: Gain 3% Rush every 3 seconds (party)
         - desc: DMG taken -100% when dodging (party, 1s)
         - desc: No flinching while attacking (self)
-    - name: "Talent 3"
+    - name: "Good at Machinery"
       effects:
         - desc: AP cost -80% and recover 25% HP every 3 seconds after perfect dodge (self, 10s)
         - desc: Maintain CB after up to 2 consecutive dodges
-    - name: "Talent 4"
+    - name: "Courage to Face the Strong"
       effects:
         - desc: ATK +30%, HP +20% (stat page)
         - desc: ATK +35% after perfect dodge (10s)
         - desc: Party recovers 100 AP after Roger does a perfect dodge
 
   skills:
-    - name: "Skill 1"
+    - name: "Fin Edge"
       picture: Skill_Placeholder
       power: ATK x 220%
       ap: 26
       maxHits: 2
-    - name: "Skill 2 • AF"
+    - name: "Ground Raider • AF"
       picture: Skill_Placeholder
       power: ATK x 260%
       ap: 17
       maxHits: 6
-    - name: "Skill 3"
+    - name: "Heat Axe"
       picture: Skill_Placeholder
       power: ATK x 630%
       ap: 24
       maxHits: 1
-    - name: "Skill 4"
+    - name: "Stream Attack"
       picture: Skill_Placeholder
       power: ATK x 1210%
       ap: 32
