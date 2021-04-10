@@ -7742,36 +7742,20 @@
   talents:
     - name: "Imperial Flower Assault Troop"
       effects: 
-        - desc: ATK + 50%
-          all: true
-          meta:
-            priority: 1
-            buff: ATK
-            buffValue: 50
-        - desc: ATK + 70% at short range
-          all: true
-          meta:
-            priority: 1
-            buff: ATK
-            buffCondition: Short Range
-            buffValue: 70
+        - desc: ATK +55%, +75% at short range (party)
     - name: "North Star Sword Style"
       effects: 
-        - desc: AP recovery increases while moving
-          all: true
+        - desc: AP recovery while walking (party)
+        - desc: ATK DMG +20% at SC ≥ 3 (party)
     - name: "In Hot Blood"
       effects: 
         - desc: Imbues attacks with light
         - desc: Rush gauge fills 3.5% for all allies when using Sakura Shower or Sakura Ring
     - name: "A Cold Pedigree"
       effects: 
-        - desc: Nullifies charge assault critical damage penalty
+        - desc: Nullifies Charge Assault Crit. penalty
         - desc: AP recovery +100%
-          meta:
-            priority: 1
-            buff: AP Recovery
-            buffValue: 100
-        - desc: Cancel bonus starts at 200% when using charge assault
+        - desc: Start CB at 200% when using Charge Assault
 
   skills:
     - name: "Sakura Viewing"
@@ -7782,7 +7766,7 @@
     - name: "Sakura Ring"
       picture: Air_Raid
       element: Light
-      power: ATK x 720%
+      power: ATK x 770%
       ap: 34
       maxHits: 6
     - name: "Sakura Petals"
@@ -7792,22 +7776,15 @@
       maxHits: 1
     - name: "Sakura Shower"
       picture: Ouka_Kirisho
-      power: ATK x 840%
+      power: ATK x 890%
       ap: 36
       maxHits: 4
 
   rush:
     name: "Heavenly Sakura"
     picture: Ouka_Tenshou_Sakura
-    shortEffects: ATK damage dealt +60% (Party/20s)
     effects: 
-      - desc: ATK damage dealt +60%
-        duration: 20
-        all: true
-        meta:
-            priority: 1
-            buff: ATK Damage
-            buffValue: 60
+      - desc: ATK DMG dealt +60% (party, 20s)
     power: ATK x 4500%
     maxHits: 6
 
