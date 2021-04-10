@@ -6154,7 +6154,77 @@
           buffValue: 40
     power: ATK x 3500%
     maxHits: 10
-  
+
+- name: Chisato Madison (Awakened)
+  cat: jp
+  rating: 1
+  picture: Chisato
+  weapon: knuckle
+  star: 5
+  awakened: true
+
+  stats:
+    hp: 16758
+    atk: 2820
+    int: 1432
+    def: 2080
+    hit: 1277
+    grd: 756
+
+  talents:
+    - name: "Unshakeable Journalism"
+      effects:
+        - desc: Immunity to paralysis (party, 180s)
+        - desc: ATK +45%, +75% at 100% HP (party)
+    - name: "Persistent Reporter Spirit"
+      effects:
+        - desc: AP recovery of normal attacks +100% at 100% HP (party)
+        - desc: Rush damage +40% at 100% HP and HC ≥ 200 (party)
+    - name: "Nede's Hope"
+      effects:
+        - desc: AP cost -40%/-50% at SC ≥ 3/4 (party)
+    - name: "Polished Self-Defense"
+      effects:
+        - desc: Rush gauge fills 5% for all allies when using Rising Dragon
+        - desc: No flinching when using Rising Dragon
+        - desc: DMG taken -70% when using Rising Dragon (2s)
+    - name: "Master of Information Analysis"
+      effects:
+        - desc: Drain 2% of damage dealt by Rising Dragon
+        - desc: Nullifies Charge Assault Crit. penalty
+    - name: "Truth of the Homeland Revealed"
+      effects:
+        - desc: HP/ATK/DEF/HIT +20% (stat page)
+
+  skills:
+    - name: "Twister"
+      picture: Roaring_Cartwheel
+      power: ATK x 980%
+      ap: 32
+      maxHits: 5
+    - name: "Crescent Locus"
+      picture: Crescent_Locus
+      power: ATK x 170%
+      ap: 17
+      maxHits: 4
+    - name: "Palm of Destruction"
+      picture: Palm_of_Destruction
+      power: ATK x 230%
+      ap: 18
+      maxHits: 1
+    - name: "Rising Dragon"
+      picture: Rising_Dragon
+      power: ATK x 1170%
+      ap: 54
+      maxHits: 7
+      
+  rush:
+    name: "Preparation"
+    picture: Preparation_Chisato
+    effects: 
+      - desc: DMG dealt +60% (party, 20s)
+    power: ATK x 4500%
+    maxHits: 10
   
 - name: Roddick Farrence (Summer)
   cat: jp
