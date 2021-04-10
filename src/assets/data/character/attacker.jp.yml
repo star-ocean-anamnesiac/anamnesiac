@@ -3082,30 +3082,15 @@
   talents:
     - name: "Tranquil Spirit"
       effects: 
-        - desc: ATK +30%
-          all: true
-          meta:
-            priority: 1
-            buff: ATK
-            buffValue: 30
-        - desc: ATK +45%
-          all: Short Range Weapons
-          meta:
-            priority: 1
-            buff: ATK
-            buffValue: 45
+        - desc: ATK +40% (party)
+        - desc: ATK +65% (short-range weapons)
     - name: "Dependable Honors Student"
       effects: 
-        - desc: Nullifies movement rate reduction fields
-          all: Short Range Weapons
+        - desc: Nullifies movement rate reduction fields (party)
+        - desc: AP recovery of normal attacks +100% (party)
     - name: "Heir to the Blade"
       effects: 
-        - desc: AP cost -40% when skill chain is >3
-          meta:
-            priority: 4
-            buff: AP Cost Reduction
-            buffCondition: Skill Chain 3+
-            buffValue: 40
+        - desc: AP cost -60% at SC ≥ 3
     - name: "Undying Effort"
       effects: 
         - desc: Movement speed +20%
@@ -3129,10 +3114,10 @@
       power: ATK x 200%
       ap: 20
       maxHits: 2
-    - name: "Blade Flash - Awakened"
+    - name: "Blade Flash • Awakened"
       picture: Blade_Flash
       element: Ice
-      power: ATK x 400%
+      power: ATK x 800%
       ap: 35
       maxHits: 5
       highlight: true
@@ -3142,14 +3127,8 @@
     picture: Azure_Sky_Lasswell
     element: Ice
     effects: 
-      - desc: Damage dealt +30%
-        all: true
-        duration: 20
-        meta:
-          priority: 1
-          buff: Damage
-          buffValue: 30
-    power: ATK x 3500%
+      - desc: DMG dealt +30% (party, 20s)
+    power: ATK x 4500%
     maxHits: 9
     
   notes: >
