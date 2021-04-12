@@ -7718,8 +7718,8 @@
   star: 5
 
   stats:
-    hp: 19152
-    atk: 3010
+    hp: 20748
+    atk: 3135
     int: 1510
     def: 1575
     hit: 1232
@@ -7728,28 +7728,29 @@
   talents:
     - name: "Heavy Armor That Collects the Best of Technologies"
       effects:
-        - desc: DMG taken +40% while Ricardo at 100% HP (Enemies)
-        - desc: DMG taken +65% while Ricardo at 100% HP and HC ≥ 200 (Enemies)
+        - desc: Gain 3% Rush every 3 seconds (party)
+        - desc: DMG taken +45% while Ricardo at 100% HP (enemies)
+        - desc: DMG taken +70% while Ricardo at 100% HP and HC ≥ 200 (enemies)
     - name: "Toward a New Journey"
       effects:
-        - desc: After Star Elimination (skill 1) Recover 30 AP to party
-        - desc: HP recovery 2% from skill damage when SC ≥ 5 (self)
+        - desc: Recovers 30 AP to the party after using Star Elimination
+        - desc: Drain 2% of damage dealt by skills while at SC ≥ 5 (self)
     - name: "Reliable Shooting Controller"
       effects:
-        - desc: Skill DMG +150%
-        - desc: Move speed + 50%
-        - desc: After Star Elimination Skill AP cost +150% (5s)
+        - desc: Star Elimination DMG +150%
+        - desc: Movement speed +50%
+        - desc: Star Elimination AP cost +150% after using it (5s)
     - name: "Former General's eye"
       effects:
-        - desc: ATK +20% | HP +20% (stat page)
-        - desc: ATK +20% at HC ≥ 200 (self)
+        - desc: ATK +25%, HP +30% (stat page)
+        - desc: ATK +20% at HC ≥ 200
         - desc: Able to air dodge
-        - desc: After Starboard Scratch (skill 2) | Portside Scratch Gun (skill 3) recover 20 AP (self)
+        - desc: Recover 20 AP after using Starboard Scratch and Portside Scratch
     
   skills:
     - name: "Star Elimination"
       picture: Skill_Placeholder
-      power: ATK x 800%
+      power: ATK x 830%
       ap: 45
       maxHits: 8
     - name: "Starboard Scratch"
@@ -7773,8 +7774,8 @@
     name: "Galactica Penetration"
     picture: Rush_Placeholder
     effects:
-      - desc: Critical Chance and Critical DMG + 50% (party/20s)
-    power: ATK x 5500%
+      - desc: Critical chance/damage +50% (party, 20s)
+    power: ATK x 6500%
     maxHits: 5
 
 - name: Caleen Keemosn (Bridal)

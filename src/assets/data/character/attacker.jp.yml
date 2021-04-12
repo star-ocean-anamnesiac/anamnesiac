@@ -3082,30 +3082,15 @@
   talents:
     - name: "Tranquil Spirit"
       effects: 
-        - desc: ATK +30%
-          all: true
-          meta:
-            priority: 1
-            buff: ATK
-            buffValue: 30
-        - desc: ATK +45%
-          all: Short Range Weapons
-          meta:
-            priority: 1
-            buff: ATK
-            buffValue: 45
+        - desc: ATK +40% (party)
+        - desc: ATK +65% (short-range weapons)
     - name: "Dependable Honors Student"
       effects: 
-        - desc: Nullifies movement rate reduction fields
-          all: Short Range Weapons
+        - desc: Nullifies movement rate reduction fields (party)
+        - desc: AP recovery of normal attacks +100% (party)
     - name: "Heir to the Blade"
       effects: 
-        - desc: AP cost -40% when skill chain is >3
-          meta:
-            priority: 4
-            buff: AP Cost Reduction
-            buffCondition: Skill Chain 3+
-            buffValue: 40
+        - desc: AP cost -60% at SC ≥ 3
     - name: "Undying Effort"
       effects: 
         - desc: Movement speed +20%
@@ -3129,10 +3114,10 @@
       power: ATK x 200%
       ap: 20
       maxHits: 2
-    - name: "Blade Flash - Awakened"
+    - name: "Blade Flash • Awakened"
       picture: Blade_Flash
       element: Ice
-      power: ATK x 400%
+      power: ATK x 800%
       ap: 35
       maxHits: 5
       highlight: true
@@ -3142,14 +3127,8 @@
     picture: Azure_Sky_Lasswell
     element: Ice
     effects: 
-      - desc: Damage dealt +30%
-        all: true
-        duration: 20
-        meta:
-          priority: 1
-          buff: Damage
-          buffValue: 30
-    power: ATK x 3500%
+      - desc: DMG dealt +30% (party, 20s)
+    power: ATK x 4500%
     maxHits: 9
     
   notes: >
@@ -6175,7 +6154,77 @@
           buffValue: 40
     power: ATK x 3500%
     maxHits: 10
-  
+
+- name: Chisato Madison (Awakened)
+  cat: jp
+  rating: 1
+  picture: Chisato
+  weapon: knuckle
+  star: 5
+  awakened: true
+
+  stats:
+    hp: 16758
+    atk: 2820
+    int: 1432
+    def: 2080
+    hit: 1277
+    grd: 756
+
+  talents:
+    - name: "Unshakeable Journalism"
+      effects:
+        - desc: Immunity to paralysis (party, 180s)
+        - desc: ATK +45%, +75% at 100% HP (party)
+    - name: "Persistent Reporter Spirit"
+      effects:
+        - desc: AP recovery of normal attacks +100% at 100% HP (party)
+        - desc: Rush damage +40% at 100% HP and HC ≥ 200 (party)
+    - name: "Nede's Hope"
+      effects:
+        - desc: AP cost -40%/-50% at SC ≥ 3/4 (party)
+    - name: "Polished Self-Defense"
+      effects:
+        - desc: Rush gauge fills 5% for all allies when using Rising Dragon
+        - desc: No flinching when using Rising Dragon
+        - desc: DMG taken -70% when using Rising Dragon (2s)
+    - name: "Master of Information Analysis"
+      effects:
+        - desc: Drain 2% of damage dealt by Rising Dragon
+        - desc: Nullifies Charge Assault Crit. penalty
+    - name: "Truth of the Homeland Revealed"
+      effects:
+        - desc: HP/ATK/DEF/HIT +20% (stat page)
+
+  skills:
+    - name: "Twister"
+      picture: Roaring_Cartwheel
+      power: ATK x 980%
+      ap: 32
+      maxHits: 5
+    - name: "Crescent Locus"
+      picture: Crescent_Locus
+      power: ATK x 170%
+      ap: 17
+      maxHits: 4
+    - name: "Palm of Destruction"
+      picture: Palm_of_Destruction
+      power: ATK x 230%
+      ap: 18
+      maxHits: 1
+    - name: "Rising Dragon"
+      picture: Rising_Dragon
+      power: ATK x 1170%
+      ap: 54
+      maxHits: 7
+      
+  rush:
+    name: "Preparation"
+    picture: Preparation_Chisato
+    effects: 
+      - desc: DMG dealt +60% (party, 20s)
+    power: ATK x 4500%
+    maxHits: 10
   
 - name: Roddick Farrence (Summer)
   cat: jp
@@ -7311,8 +7360,8 @@
   star: 5
 
   stats:
-    hp: 16979
-    atk: 3293
+    hp: 18522
+    atk: 3567
     int: 1510
     def: 1995
     hit: 1120
@@ -7321,64 +7370,19 @@
   talents:
     - name: "Starving Wolf"
       effects: 
-        - desc: ATK +20%
-          all: true
-          meta:
-            priority: 1
-            buff: ATK
-            buffValue: 20
-        - desc: DEF -20%
-          all: Enemies
-          meta:
-            priority: 1
-            buff: Enemy DEF Reduction
-            buffValue: 20
-        - desc: DEF -30% when Wolf Albel's HP is 100%
-          all: Enemies
-          meta:
-            priority: 1
-            buff: Enemy DEF Reduction
-            buffCondition: Wolf Albel's HP is 100%
-            buffValue: 30
+        - desc: ATK +20% (party)
+        - desc: DEF -30% (enemies)
+        - desc: DEF -60% when Albel is at 100% HP (enemies)
     - name: "Monster of the Moonlight"
       effects: 
-        - desc: Hitcount timer +2 seconds
-          all: true
-        - desc: AP cost -10% when hitcount is >50
-          all: true
-          meta:
-            priority: 1
-            buff: AP Cost Reduction
-            buffCondition: Hit Count is > 50
-            buffValue: 10
-        - desc: AP cost -20% when hitcount is >100
-          all: true
-          meta:
-            priority: 1
-            buff: AP Cost Reduction
-            buffCondition: Hit Count > 100
-            buffValue: 20
+        - desc: HC timer +2s (party)
+        - desc: AP cost -10%/-20% at HC ≥ 50/100 (party)
     - name: "Lone Wolf"
       effects: 
-        - desc: No flinching when attacking
-        - desc: Damage taken -40%
-          meta:
-            priority: 1
-            buff: Damage Taken Reduction
-            buffValue: 40
+        - desc: No flinching and DMG taken -40% when attacking
     - name: "Deep Twisted Regret"
-      shortEffects: ATK +20% and HP +10%
       effects: 
-        - desc: ATK +20%
-          meta:
-            priority: 1
-            buff: ATK
-            buffValue: 20
-        - desc: HP +10%
-          meta:
-            priority: 1
-            buff: HP
-            buffValue: 10
+        - desc: ATK +30%, HP +20% (stat page)
 
   skills:
     - name: "Gravity Collider"
@@ -7388,7 +7392,7 @@
       maxHits: 6
     - name: "Divine Ring"
       picture: Divine_Ring
-      power: ATK x 780%
+      power: ATK x 1290%
       ap: 39
       maxHits: 8
     - name: "Dragon Hammer"
@@ -7398,23 +7402,15 @@
       maxHits: 10
     - name: "Demon Claw Wave"
       picture: Demon_Claw_Wave
-      power: ATK x 840%
+      power: ATK x 1390%
       ap: 42
       maxHits: 8
 
   rush:
     name: "Dynast's Heaven Piercer"
     picture: Dynast's_Heaven_Piercer_Wolf_Albel
-    shortEffects: AP cost -40% and recovers 10% of max HP every 3 seconds (Self/20s)
     effects: 
-      - desc: AP cost -40%
-        duration: 20
-        meta:
-            priority: 1
-            buff: AP Cost Reduction
-            buffValue: 40
-      - desc: Recovers 10% of max HP every 3 seconds
-        duration: 20
+      - desc: AP cost -40% and recovers 10% HP every 3 seconds (20s)
     power: ATK x 5000%
     maxHits: 6
 
@@ -7610,63 +7606,25 @@
     def: 1852
     hit: 1127
     grd: 840
-    ap: 120
 
   talents:
     - name: "Ami d'enfance"
       effects: 
-        - desc: ATK +40%
-          all: true
-          meta:
-            priority: 1
-            buff: ATK
-            buffValue: 40
-        - desc: ATK +65 when not behind target
-          all: true
-          meta:
-            priority: 1
-            buff: ATK
-            buffCondition: Not Behind Target
-            buffValue: 65
+        - desc: ATK +45% (party)
+        - desc: ATK +70% when not behind target (party)
     - name: "Ooneesan Idol"
       effects: 
-        - desc: Normal attack AP recovery +150%
-          meta:
-            priority: 1
-            buff: AP Recovery From Normal Attacks
-            buffValue: 150
-        - desc: Normal attack AP recovery +100%
-          all: true
-          meta:
-            priority: 1
-            buff: AP Recovery From Normal Attacks
-            buffValue: 100
-        - desc: Evasion AP cost -50%
-          all: true
+        - desc: Normal attack AP recovery +200% (self)
+        - desc: Normal attack AP recovery +150% (party)
+        - desc: Dodge AP cost -50% (party)
     - name: "Blue Oath"
       effects: 
-        - desc: Damage taken -30% when attacking
-          meta:
-            priority: 1
-            buff: Damage Taken Reduction
-            buffCondition: When Attacking
-            buffValue: 30
-        - desc: Evasion possible during air attacks
-        - desc: Critical hit chance +50% when skill chain is >3
-          meta:
-            priority: 1
-            buff: Crit Rate
-            buffCondition: Skill Chain 3+
-            buffValue: 50
-        - desc: Critical hit chance +100% when skill chain is >5
-          meta:
-            priority: 1
-            buff: Crit Rate
-            buffCondition: Skill Chain 5+
-            buffValue: 100
+        - desc: DMG taken -30% when attacking
+        - desc: Able to air dodge
+        - desc: Critical chance +50%/+100% at SC ≥ 3/5
     - name: "Courage to Step Forward"
       effects: 
-        - desc: AP +20
+        - desc: AP +20 (stat page)
             
   skills:
     - name: "Mistral Slash"
@@ -7687,23 +7645,16 @@
       maxHits: 6
     - name: "Starry Rain"
       picture: Starry_Rain
-      power: ATK x 610%
+      power: ATK x 680%
       ap: 35
       maxHits: 3
 
   rush:
     name: "Blue Star Serenade"
     picture: Blue_Star_Serenade_Idol_Reimi
-    shortEffects: Nullifies status ailments (Party), and AP cost -80% (Self/8s)
     effects: 
-      - desc: Nullifies status ailments
-        all: true
-      - desc: AP cost -80%
-        duration: 8
-        meta:
-          priority: 1
-          buff: AP Cost Reduction
-          buffValue: 80
+      - desc: Nullifies status ailments (party)
+      - desc: AP cost -80% (self, 8s)
     power: ATK x 4500%
     maxHits: 5
 
@@ -7718,56 +7669,28 @@
 
   stats:
     hp: 15855
-    atk: 3245
+    atk: 3380
     int: 1523
     def: 1995
     hit: 1134
     grd: 819
-    ap: 120
 
   talents:
     - name: "Cooking Master"
       effects: 
-        - desc: Elemental damage dealt +25%
-          all: true
-          meta:
-            priority: 1
-            buff: Elemental Damage
-            buffValue: 25
-        - desc: Elemental damage dealt +45% when HP is 100%
-          all: true
-          meta:
-            priority: 1
-            buff: Elemental Damage
-            buffCondition: HP is 100%
-            buffValue: 45
+        - desc: Elemental damage dealt +30% (party)
+        - desc: Elemental damage dealt +60% at 100% HP (party)
     - name: "Two Headed Dragon's Winter Preparation"
       effects: 
-        - desc: Critical hit chance +20% after using a fire skill (10s)
-          duration: 10
-          meta:
-            priority: 1
-            buff: Crit Rate
-            buffCondition: After Using Fire Skill
-            buffValue: 20
-        - desc: Absorbs 10% of damage dealt by normal attacks as HP after using an ice skill (10s)
+        - desc: Critical chance +20% after using a fire skill (10s)
+        - desc: Drains 10% of damage dealt by normal attacks after using an ice skill (10s)
     - name: "Wild Deer of Abundance"
       effects: 
-        - desc: Normal attack AP recovery +150%
-          all: true
-          meta:
-            priority: 1
-            buff: AP Recovery From Normal Attacks
-            buffValue: 150
-        - desc: Recovers 100% AP on perfect dodge
+        - desc: Normal attack AP recovery +150% (party)
+        - desc: Recovers 100% AP on perfect dodge (self)
     - name: "Finely Decorated Horns"
       effects: 
-        - desc: ATK +20%
-          meta:
-            priority: 1
-            buff: ATK
-            buffValue: 20
-        - desc: AP +20
+        - desc: ATK +25%, AP +30 (stat page)
 
   skills:
     - name: "Flame Dragon Breath"
@@ -7791,24 +7714,16 @@
     - name: "Spinning Scythe"
       picture: Spinning_Scythe
       element: Ice
-      power: ATK x 520%
+      power: ATK x 1070%
       ap: 24
       maxHits: 7
 
   rush:
     name: "Sacred Triangle"
     picture: Sacred_Triangle_Snowy_Sky_Ashton
-    shortEffects: AP cost -30% and recovers 10% of max HP every 3 seconds (Self/20s)
     effects: 
-      - desc: AP cost -30%
-        duration: 20
-        meta:
-            priority: 1
-            buff: AP Cost Reduction
-            buffValue: 30
-      - desc: Recovers 10% of max HP every 3 seconds
-        duration: 20
-    power: ATK x 5000%
+      - desc: AP cost -30% and recovers 10% HP every 3 seconds (20s)
+    power: ATK x 5500%
     maxHits: 7
 
 - name: Evelysse (New Year's)
@@ -7821,8 +7736,8 @@
   star: 5
 
   stats:
-    hp: 17094
-    atk: 3276
+    hp: 17871
+    atk: 3413
     int: 1563
     def: 1930
     hit: 1148
@@ -7831,56 +7746,33 @@
   talents:
     - name: "Swift Reactions in Hagoita"
       effects: 
-        - desc: Angel Feather's effect increased to +40% when HP is 100% and hitcount is >200
+        - desc: AF effect increased to +50% at 100% HP and HC ≥ 200
     - name: "Victorious Perspective"
       effects: 
-        - desc: Hitcount timer +2 seconds
-          all: true
-        - desc: Hitcount timer +3 seconds when New Year's Eve's HP is 100%
-          all: true
+        - desc: HC timer +2s (party)
+        - desc: HC timer +3s when Eve is at 100% HP (party)
     - name: "Last Stroke's Judgement"
       effects: 
-        - desc: Absorbs 5% of damage dealt by normal attacks as HP
-          all: true
-        - desc: Absorbs 15% of damage dealt by normal attacks as HP when hitcount is >100
-          all: true
+        - desc: Drain 5% of damage dealt by normal attacks (party)
+        - desc: Drain 15% of damage dealt by normal attacks at HC ≥ 100 (party)
     - name: "New Encounters and Adventures"
-      shortEffects: ATK +20% and HP +10%
       effects: 
-        - desc: HP +10%
-          meta:
-            priority: 1
-            buff: HP
-            buffValue: 10
-        - desc: ATK +20%
-          meta:
-            priority: 1
-            buff: ATK
-            buffValue: 20
+        - desc: ATK +25%, HP +15% (stat page)
 
   skills:
-    - name: "Spirit Strike - Angel Feather"
+    - name: "Spirit Strike • Angel Feather"
       picture: Cold_Cannon
-      power: ATK x 150%
+      power: ATK x 170%
       ap: 14
       notes: ATK/INT/DEF/HIT/GRD +20% (Party/20s)
       maxHits: 1
-      meta:
-        priority: 2
-        buffs:
-          - ATK
-          - INT
-          - DEF
-          - HIT
-          - GRD
-        buffValue: 20
-    - name: "Firestorm Blade"
+    - name: "Firestorm Blade • Celebration"
       picture: Firestorm_Blade
       element: Fire
       power: ATK x 580%
       ap: 31
       maxHits: 4
-    - name: "Air Slash of Fury"
+    - name: "Air Slash of Fury • Celebration"
       picture: Air_Slash_of_Fury
       power: ATK x 250%
       ap: 20
@@ -7888,24 +7780,16 @@
     - name: "Helix Splendor"
       picture: Helix_Splendor
       element: Light
-      power: ATK x 1020%
+      power: ATK x 1580%
       ap: 44
       maxHits: 10
 
   rush:
-    name: "Blessing: Rising Sun"
+    name: "Blessing • Rising Sun"
     picture: Blessing_Rising_Sun_New_Years_Eve
-    shortEffects: AP cost -40% and recovers 10% of max HP every 3 seconds (Self/20s)
     effects: 
-      - desc: AP cost -40%
-        duration: 20
-        meta:
-            priority: 1
-            buff: AP Cost Reduction
-            buffValue: 40
-      - desc: Recovers 10% of max HP every 3 seconds
-        duration: 20
-    power: ATK x 5000%
+      - desc: AP cost -40% and recovers 10% HP every 3 seconds (20s)
+    power: ATK x 5500%
     maxHits: 5
 
 - name: Sakura Shinguji
@@ -7928,36 +7812,20 @@
   talents:
     - name: "Imperial Flower Assault Troop"
       effects: 
-        - desc: ATK + 50%
-          all: true
-          meta:
-            priority: 1
-            buff: ATK
-            buffValue: 50
-        - desc: ATK + 70% at short range
-          all: true
-          meta:
-            priority: 1
-            buff: ATK
-            buffCondition: Short Range
-            buffValue: 70
+        - desc: ATK +55%, +75% at short range (party)
     - name: "North Star Sword Style"
       effects: 
-        - desc: AP recovery increases while moving
-          all: true
+        - desc: AP recovery while walking (party)
+        - desc: ATK DMG +20% at SC ≥ 3 (party)
     - name: "In Hot Blood"
       effects: 
         - desc: Imbues attacks with light
         - desc: Rush gauge fills 3.5% for all allies when using Sakura Shower or Sakura Ring
     - name: "A Cold Pedigree"
       effects: 
-        - desc: Nullifies charge assault critical damage penalty
+        - desc: Nullifies Charge Assault Crit. penalty
         - desc: AP recovery +100%
-          meta:
-            priority: 1
-            buff: AP Recovery
-            buffValue: 100
-        - desc: Cancel bonus starts at 200% when using charge assault
+        - desc: Start CB at 200% when using Charge Assault
 
   skills:
     - name: "Sakura Viewing"
@@ -7968,7 +7836,7 @@
     - name: "Sakura Ring"
       picture: Air_Raid
       element: Light
-      power: ATK x 720%
+      power: ATK x 770%
       ap: 34
       maxHits: 6
     - name: "Sakura Petals"
@@ -7978,22 +7846,15 @@
       maxHits: 1
     - name: "Sakura Shower"
       picture: Ouka_Kirisho
-      power: ATK x 840%
+      power: ATK x 890%
       ap: 36
       maxHits: 4
 
   rush:
     name: "Heavenly Sakura"
     picture: Ouka_Tenshou_Sakura
-    shortEffects: ATK damage dealt +60% (Party/20s)
     effects: 
-      - desc: ATK damage dealt +60%
-        duration: 20
-        all: true
-        meta:
-            priority: 1
-            buff: ATK Damage
-            buffValue: 60
+      - desc: ATK DMG dealt +60% (party, 20s)
     power: ATK x 4500%
     maxHits: 6
 
@@ -8633,41 +8494,22 @@
   talents:
     - name: "Dealer Candidate"
       effects:
-        - desc: ATK +20% when HP is 100%
-          meta:
-            priority: 3
-            buff: ATK
-            buffCondition: HP is 100%
-            buffValue: 20
-        - desc: ATK +10% when HP is >50%
-          meta:
-            priority: 3
-            buff: ATK
-            buffCondition: HP > 50%
-            buffValue: 10
-        - desc: Absorbs 15% of damage dealt by normal attacks as HP when behind target
+        - desc: ATK +20% at 100% HP
+        - desc: ATK +10% when HP ≥ 50%
+        - desc: Drains 15% of damage dealt by normal attacks when behind target
     - name: "Speedy Decision"
       effects: 
-        - desc: Evasion AP cost -80%
-        - desc: Evasion AP cost -50%
-          all: true
-        - desc: AP cost -30% after perfect dodge (10s)
+        - desc: Doodge AP cost -80% (self)
+        - desc: Doodge AP cost -50% (party)
+        - desc: AP cost -50% after perfect dodge (self, 20s)
     - name: "Fortune Calling Beast"
       effects: 
-        - desc: Normal attack AP recovery +100% when HP is 100%
-          all: true
-          meta:
-            priority: 1
-            buff: AP Recovery From Normal Attacks
-            buffCondition: HP is 100%
-            buffValue: 100
+        - desc: ATK +30% (party)
+        - desc: Normal attack AP recovery +100% at 100% HP (party)
+        - desc: DMG taken +30% when Maria is at 100% HP (enemies)
     - name: "Quark's Bond"
       effects:
-        - desc: ATK +30%
-          meta:
-            priority: 1
-            buff: ATK
-            buffValue: 30
+        - desc: ATK +30% (stat page)
 
   skills:
     - name: "Mirage Penetrate"
@@ -8687,28 +8529,16 @@
       maxHits: 4
     - name: "Storm Edge"
       picture: Storm_Edge
-      power: ATK x 1240%
+      power: ATK x 1370%
       ap: 54
       maxHits: 5
 
   rush:
     name: "Blackjack Vortex"
     picture: Blackjack_Vortex_Bunny_Maria
-    shortEffects: AP cost -30% and ATK damage dealt +40% (Self/20s)
     effects:
-      - desc: AP cost -30%
-        duration: 20
-        meta:
-          priority: 1
-          buff: AP Cost Reduction
-          buffValue: 30
-      - desc: ATK damage dealt +40%
-        duration: 20
-        meta:
-          priority: 1
-          buff: ATK Damage
-          buffValue: 40
-    power: ATK x 5000%
+      - desc: AP cost -30% and ATK damage dealt +40% (20s)
+    power: ATK x 5500%
     maxHits: 3
 
 
@@ -10988,20 +10818,21 @@
   talents:
     - name: "The First Step Towards an Advance Civilization"
       effects:
-        - desc: INT +1000 at 100% HP, +1500 at 100% HP and HC ≥ 250
-        - desc: Converts 70% of INT to ATK (Attackers/ Sharpshooters/ Defenders)
+        - desc: INT +1000 at 100% HP, +1750 at 100% HP and HC ≥ 150 (party)
+        - desc: Converts 70% of INT to ATK (Attackers, Defenders, Shooters)
     - name: "Federal Uniform"
       effects:
-        - desc: Fill 100% Rush Gauge at mission start
-        - desc: Rush gauge regen 3%/ 3s (party)
-        - desc: HP regen 20%/ 3s while Caleen is at SC ≥ 4 (party)
+        - desc: Start with 100% Rush (party)
+        - desc: Gain 3% Rush every 3 seconds (party)
+        - desc: Recover 20% HP every 3 seconds while Caleen is at SC ≥ 4 (party)
     - name: "Welch Handmade Bit Mech"
       effects:
-        - desc: After Slashing Fox (skill 1) and Dancing (skill 2) Recover AP 
-        - desc: Critical chance +50% while behind enemy (self)
+        - desc: Assist use +2 (party)
+        - desc: Recover some AP after using Slashing Fox and Dancing Slash (self)
+        - desc: Critical chance +50% when not in front of enemy (self)
     - name: "The Mystery of the Deepening Coat of Arms"
       effects:
-        - desc: Maintain SC after 1 dodge
+        - desc: Maintain CB after up to 2 consecutive dodges
         - desc: Dodge AP cost -80%
         - desc: Able to air dodge
 
@@ -11011,19 +10842,19 @@
       power: ATK x 220% 
       ap: 16
       maxHits: 2
-    - name: "Dancing"
+    - name: "Dancing Slash"
       picture: Skill_Placeholder
       power: ATK x 210%
       ap: 15
       maxHits: 2
-    - name: "Cardinal"
+    - name: "Cardinal Whirl"
       picture: Skill_Placeholder
       power: ATK x 170%
       ap: 14
       maxHits: 2
-    - name: "Silver Wave"
+    - name: "Silverwave Slash"
       picture: Skill_Placeholder
-      power: ATK x 950%
+      power: ATK x 1040%
       ap: 27
       maxHits: 8
 
@@ -11031,8 +10862,8 @@
     name: "Wing Star Overlord"
     picture: Rush_Placeholder
     effects:
-      - desc: ATK DMG +60%, AP cost -50% (party/20s)
-    power: ATK x 4500%
+      - desc: ATK DMG +60%, AP cost -50% (party, 20s)
+    power: ATK x 5500%
     maxHits: 5
 
 - name: Albel Nox (Oni Kimono)
@@ -11044,8 +10875,8 @@
   star: 5
 
   stats:
-    hp: 18774
-    atk: 3293
+    hp: 20339
+    atk: 3430
     int: 1496
     def: 2009
     hit: 1113
@@ -11054,31 +10885,32 @@
   talents:
     - name: "Onigami Sleeping"
       effects:
-        - desc: ATK +750, +1250 at HC ≥ 150 (party)
-        - desc: Hitcount timer +3s
+        - desc: ATK +1250, +1500 at HC ≥ 150 (party)
+        - desc: HC timer +5s (party)
     - name: "Ghost Sake Gourd"
       effects:
-        - desc: AP cost -30% while not in front enemies (party)
-        - desc: AP cost -50% while not in front enemies (self)
+        - desc: AP cost -30% while not in front of enemies (party)
+        - desc: AP cost -50% while not in front of enemies (self)
         - desc: When using Skill1, DMG taken -50% (self/1.5s)
     - name: "Demon"
       effects:
-        - desc: Using Interrupt recovers some AP and 5% HP
-        - desc: Anti flinch while attacking, ATK DMG taken -30%
-        - desc: Able to air dodge
+        - desc: Using Interrupt recovers some AP and 10% HP (self)
+        - desc: No flinching while attacking (self)
+        - desc: ATK DMG taken -30% while attacking (self)
+        - desc: Able to air dodge (party)
     - name: "Demon Flame Cloth"
       effects:
-        - desc: ATK +20%, HP +20%, AP +40 (Stat Page)
-        - desc: When taking DMG of atleast 1% Max HP, Gain ATK +35% (10s)
-    - name: "Interrupt [MASTERY]"
+        - desc: ATK +25%, HP +30%, AP +40 (stat page)
+        - desc: ATK +35% when taking DMG ≥ 1% HP (10s)
+    - name: "Interrupt / Oni Kimono Albel [MASTERY]"
       effects:
+        - desc: Nullify Charge Assault Crit. penalty
         - desc: AP cost -20%
-        - desc: Nullify critical taken when Charge Assault
 
   skills:
     - name: "Purgatory"
       picture: Skill_Placeholder
-      power: ATK x 910%
+      power: ATK x 1140%
       ap: 51
       maxHits: 10
     - name: "Mugen Air Slash Demon"
@@ -11102,8 +10934,9 @@
     picture: Rush_Placeholder
     element: Earth
     effects:
-      - desc: HC +100 | Critical chance +60% (party/20s)
-    power: ATK x 5500%
+      - desc: HC starts at 100
+      - desc: Critical chance +60% (party, 20s)
+    power: ATK x 6500%
     maxHits: 10
 
 - name: Heath Bureau
@@ -11258,6 +11091,7 @@
   picture: Laevonia
   weapon: whip
   ace: true
+  semi: true
   limited: true
   star: 5
 
@@ -11273,21 +11107,23 @@
     - name: "Pirate Family"
       effects:
         - desc: ATK +40%, +80% at 100% HP (party)
-        - desc: 90% chance of surviving a lethal attack when at 10% of max HP or more
+        - desc: 90% chance of surviving a lethal attack when at 10% of max HP or more (self)
+        - desc: Able to air dodge (self)
     - name: "Secret of the Wings"
       effects:
-        - desc: Assists use +2
-        - desc: Rush regen  3%/3s (party)
-        - desc: AP regen +100% (party)
+        - desc: Assist use +2 (party)
+        - desc: Gain 3% Rush every 3 seconds (party)
+        - desc: AP recovery +100% (party)
+        - desc: Critical chance +20% at SC ≥ 3 (party)
     - name: "Mental Wounds"
       effects:
         - desc: Skill3 (Spiral Whip) Applies AP -60% (self/5s)
         - desc: Skill3 (Spiral Whip) Applies AP -30% to the party 30s
     - name: "Original Spacecraft and dreams"
       effects:
-        - desc: Upon trigering Vanguard, ATK DMG +20% (self/10s)
-        - desc: Drain on skills at SC ≥ 3 (self)
-    - name: "Vanguard [Mastery]"
+        - desc: ATK +20% when triggering Vanguard (10s)
+        - desc: Drain 2% of damage dealt by skills at SC ≥ 3
+    - name: "Vanguard / Laevonia [Mastery]"
       effects:
         - desc: Upon triggering Vanguard, ATK DMG + 30% (self/3s)
         - desc: Antiflinch while CA, nullify CA crit penalty
@@ -11320,6 +11156,86 @@
     effects:
       - desc: Critical chance +100% (party/10s)
     power: ATK x 5000%
+    maxHits: 36
+
+- name: Laevonia (Awakened)
+  cat: jp
+  picture: Laevonia
+  weapon: whip
+  ace: true
+  semi: true
+  limited: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 15540
+    atk: 2704
+    int: 1589
+    def: 1916
+    hit: 1155
+    grd: 833
+
+  talents:
+    - name: "Pirate Family"
+      effects:
+        - desc: ATK +45%, +90% at 100% HP (party)
+        - desc: 90% chance of surviving a lethal attack when at 10% of max HP or more
+        - desc: Able to air dodge
+    - name: "Secret of the Wings"
+      effects:
+        - desc: Assist use +3 (party)
+        - desc: Gain 3% Rush every 3 seconds (party)
+        - desc: AP recovery +150% (party)
+        - desc: Critical chance +25% at SC ≥ 3 (party)
+    - name: "Mental Wounds"
+      effects:
+        - desc: AP cost -60% when using Spiral Whip (self, 5s)
+        - desc: Party AP cost -35% when using Spiral Whip (5s)
+    - name: "Original Spacecraft and dreams"
+      effects:
+        - desc: ATK +25% when triggering Vanguard (10s)
+        - desc: Drain 2% of damage dealt by skills at SC ≥ 3
+    - name: "Vanguard / Laevonia [Mastery]"
+      effects:
+        - desc: ATK DMG +35% when triggering Vanguard (3s)
+        - desc: No flinching while using Charge Assault
+        - desc: Nullifies Charge Assault Crit. penalty
+    - name: "Unexpected Real Face"
+      effects:
+        - desc: Party recovers 20 AP when Laevonia is hit
+        - desc: Party Order gain +30% when Laevonia is hit (10s)
+        - desc: ATK DMG taken -30% while attacking (self)
+        - desc: AP recovery while walking (party)
+
+  skills:
+    - name: "Dual Whip"
+      picture: Skill_Placeholder
+      power: ATK x 370%
+      ap: 23
+      maxHits: 2
+    - name: "Thousand Whip"
+      picture: Skill_Placeholder
+      power: ATK x 520%
+      ap: 26
+      maxHits: 8
+    - name: "Spiral Whip"
+      picture: Skill_Placeholder
+      power: ATK x 550%
+      ap: 28
+      maxHits: 1
+    - name: "Wing Splitter"
+      picture: Skill_Placeholder
+      power: ATK x 1000%
+      ap: 48
+      maxHits: 2
+
+  rush:
+    name: "Heaven and Hell"
+    picture: Rush_Placeholder
+    effects:
+      - desc: Critical chance +100% (party, 10s)
+    power: ATK x 5500%
     maxHits: 36
 
 - name: Clair Lasbard (Summer)
@@ -12107,3 +12023,72 @@
       - desc: ATK damage taken +50%, INT damage taken +30% (enemies, 20s)
     power: ATK x 5500%
     maxHits: 6
+
+- name: Roger S. Huxley
+  cat: jp
+  picture: Roger
+  weapon: axe
+  ace: true
+  semi: true
+  limited: true
+  star: 5
+
+  stats:
+    hp: 18900
+    atk: 3583
+    int: 1510
+    def: 1969
+    hit: 1134
+    grd: 826
+
+  talents:
+    - name: "King of the Hill"
+      effects:
+        - desc: Ground Raider • AF effect increases to 50% at HC ≥ 150 (party)
+        - desc: Party AP cost -50% and Crit. chance +30% after Roger does a perfect dodge (10s)
+    - name: "Unbeatable Game"
+      effects:
+        - desc: Immunity to status afflictions (party, 180s)
+        - desc: Gain 3% Rush every 3 seconds (party)
+        - desc: DMG taken -100% when dodging (party, 1s)
+        - desc: No flinching while attacking (self)
+    - name: "Good at Machinery"
+      effects:
+        - desc: AP cost -80% and recover 25% HP every 3 seconds after perfect dodge (self, 10s)
+        - desc: Maintain CB after up to 2 consecutive dodges
+    - name: "Courage to Face the Strong"
+      effects:
+        - desc: ATK +30%, HP +20% (stat page)
+        - desc: ATK +35% after perfect dodge (10s)
+        - desc: Party recovers 100 AP after Roger does a perfect dodge
+
+  skills:
+    - name: "Fin Edge"
+      picture: Skill_Placeholder
+      power: ATK x 220%
+      ap: 26
+      maxHits: 2
+    - name: "Ground Raider • AF"
+      picture: Skill_Placeholder
+      power: ATK x 260%
+      ap: 17
+      maxHits: 6
+    - name: "Heat Axe"
+      picture: Skill_Placeholder
+      power: ATK x 630%
+      ap: 24
+      maxHits: 1
+    - name: "Stream Attack"
+      picture: Skill_Placeholder
+      power: ATK x 1210%
+      ap: 32
+      maxHits: 4
+
+  rush:
+    name: "Star Fall"
+    picture: Rush_Placeholder
+    effects:
+      - desc: HC starts at 100
+      - desc: DMG taken +50% (enemies, 20s)
+    power: ATK x 6500%
+    maxHits: 5
