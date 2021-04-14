@@ -6550,6 +6550,81 @@
     power: ATK x 4000%
     maxHits: 8
 
+- name: Albel Nox (Dark) (Awakened)
+  cat: jp
+  rating: 4
+  picture: Black_Commander_Albel
+  weapon: greatsword
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 2744
+    int: 1496
+    def: 2009
+    hit: 1113
+    grd: 840
+
+  talents:
+    - name: "Faith in Strength"
+      effects:
+        - desc: ATK +45%/55%/75% at HC ≥ 0/50/200 (party)
+    - name: "Armored Knight Captain"
+      effects:
+        - desc: Echo by normal attacks 20% (party)
+        - desc: HC timer +3s (party)
+        - desc: Echo by skills 5% (party)
+    - name: "Traditional Swordplay"
+      effects:
+        - desc: Drain 20% of damage dealt by normal attacks at HC ≥ 50
+    - name: "Calm Strategies"
+      effects:
+        - desc: DMG dealt +110% by Crescent Moon Slash when using Charge Assault
+        - desc: Nullify Charge Assault Crit. penalty
+    - name: "Hidden Diligence"
+      effects:
+        - desc: AP recovery of normal attacks +200% (party)
+        - desc: No flinching and DMG taken -30% when using Charge Assault (self)
+    - name: "Fightning Spirit"
+      effects:
+        - desc: ATK -20% when using Crescent Moon Slash (enemies, 10s)
+        - desc: ATK DMG +20% when using Crescent Moon Slash (self, 10s)
+
+  skills:
+    - name: "Caving Slash"
+      picture: Firestorm_Blade
+      element: Fire
+      power: ATK x 430%
+      ap: 23
+      maxHits: 4
+      highlight: true
+    - name: "Air Slash of Fury"
+      picture: Air_Slash_of_Fury
+      power: ATK x 380%
+      ap: 21
+      maxHits: 2
+    - name: "Void Claw"
+      picture: Void_Claw
+      power: ATK x 210%
+      ap: 17
+      maxHits: 1
+    - name: "Crescent Moon Slash"
+      picture: Crescent_Moon_Slash
+      power: ATK x 800%
+      ap: 39
+      maxHits: 4
+      highlight: true
+
+  rush:
+    name: "Blade of Doom Kaiken"
+    picture: Black_Commander_Albel
+    effects: 
+      - desc: AP cost -50% (self, 20s)
+      - desc: DEF -50% (enemies, 20s)
+    power: ATK x 4500%
+    maxHits: 8
 
 - name: Zephyr
   cat: jp
