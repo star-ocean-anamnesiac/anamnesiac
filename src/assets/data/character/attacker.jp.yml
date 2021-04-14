@@ -7665,6 +7665,81 @@
     power: ATK x 5500%
     maxHits: 11
 
+- name: Arumat Thanatos (Awakened)
+  cat: jp
+  rating: 8
+  picture: Arumat
+  weapon: scythe
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 3686
+    int: 1537
+    def: 1969
+    hit: 1127
+    grd: 833
+
+  talents:
+    - name: "Eldar's Reaper"
+      effects:
+        - desc: Imbues attacks with fire and wind (self)
+        - desc: ATK DMG +70% at short range (party)
+    - name: "13th Independent Armored Regiment"
+      effects:
+        - desc: Nullify Charge Assault Crit. penalty
+        - desc: Start CB at 200% when using Charge Assault
+    - name: "Soldier's DNA"
+      effects:
+        - desc: AP recovery +150%
+        - desc: Critical chance +20% at SC ≥ 3
+        - desc: Recovers 100% AP on perfect dodge
+    - name: "Permanent Scars"
+      effects:
+        - desc: ATK +35% (stat page)
+    - name: "Lonely Mourning"
+      effects:
+        - desc: Recovers some AP when using Charge Assault from long to short range
+        - desc: Recovers 10% HP when using Charge Assault from short to long range
+    - name: "Endless Condolences"
+      effects:
+         desc: Maintain CB after 1 non-consecutive dodge
+         desc: Dodge AP cost -80%
+         desc: ATK +20% at HC ≥ 200
+
+  skills:
+    - name: "Unholy Maelstorm"
+      picture: Unholy_Maelstrom
+      power: ATK x 460%
+      ap: 25
+      maxHits: 3
+    - name: "Purgatory Palm"
+      picture: Purgatory_Palm
+      element: Fire
+      power: ATK x 200%
+      ap: 16
+      maxHits: 5
+    - name: "Bloodstorm Revolution"
+      picture: Bloodstorm_Revolution
+      power: ATK x 620%
+      ap: 27
+      maxHits: 7
+    - name: "Decapitation"
+      picture: Decapitation
+      power: ATK x 250%
+      ap: 18
+      maxHits: 2
+
+  rush:
+    name: "Aerial Gallows"
+    picture: Aerial_Gallows_Arumat
+    effects: 
+      - desc: AP cost -50%, Elemental damage +50% (20s)
+    power: ATK x 7000%
+    maxHits: 11
+
 - name: Reimi Saionji (Idol)
   cat: jp
   rating: 8
