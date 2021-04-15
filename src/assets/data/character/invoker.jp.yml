@@ -5720,6 +5720,7 @@
   picture: Erys_Jerand
   weapon: staff
   ace: true
+  semi: true
   limited: true
   star: 5
 
@@ -5764,7 +5765,7 @@
       effects:
         - desc: INT +20% HP +25%
         - desc: At skill chain > 4, cast time -90%
-    - name: "Multiple Chant/ Erys [Mastery]"
+    - name: "Multi-chant / Erys [MASTERY]"
       effects:
         - desc: Charge assault starts combos at 150%
         - desc: At skill chain > 3, INT damage +30%
@@ -5786,13 +5787,13 @@
     - name: "Star Light"
       picture: Skill_Placeholder
       element: Light
-      power: INT x 990%%
+      power: INT x 990%
       ap: 34
       maxHits: 1
     - name: "Luna Light"
       picture: Skill_Placeholder
       element: Light
-      power: INT x 1250
+      power: INT x 1250%
       ap: 35
       maxHits: 10
 
@@ -5816,6 +5817,88 @@
           buff: AP Cost Reduction
           buffValue: 30
     power: INT x 5000%
+    maxHits: 9
+
+- name: Erys Jerand (Awakened)
+  cat: jp
+  picture: Erys_Jerand
+  weapon: staff
+  ace: true
+  semi: true
+  limited: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 15834
+    atk: 1537
+    int: 3413
+    def: 1327
+    hit: 1071
+    grd: 840
+
+  talents:
+    - name: "Real Figure"
+      effects:
+        - desc: Converts 65% of ATK to INT (Invokers, Healers)
+        - desc: Converts 65% of INT to ATK (Attackers, Defenders, Shooters)
+    - name: "Blood Painted Past"
+      effects:
+        - desc: 90% chance of surviving a lethal attack when HP ≥ 10%
+        - desc: DEF -40% when hit by Acid Rain (enemies, 15s)
+        - desc: Drain 5% of damage dealt by Energy Arrow at SC ≥ 3
+    - name: "Death Wings"
+      effects:
+        - desc: Rush DMG +50% at 100% HP
+        - desc: Star Light and Luna Light DMG +50% at SC ≥ 3
+    - name: "New Way of Life"
+      effects:
+        - desc: INT +25%, HP +30% (stat page)
+        - desc: Cast time -90% at SC ≥ 4
+    - name: "Multi-chant / Erys [MASTERY]"
+      effects:
+        - desc: Start CB at 200% when using Charge Assault
+        - desc: INT DMG +30% at SC ≥ 3
+        - desc: Nullifies Charge Assault Crit. penalty
+    - name: "To another self"
+      effects:
+        - desc: Reduces enemies' light resistance during Order countdown
+        - desc: Recover some AP to the party when casting spells
+        - desc: Party Order gain +30% when using Multi-chant (20s)
+
+  skills:
+    - name: "Energy Arrow"
+      picture: Skill_Placeholder
+      element: Light
+      power: INT x 270%
+      ap: 14
+      maxHits: 4
+    - name: "Acid Rain"
+      picture: Skill_Placeholder
+      element: Light
+      power: INT x 230%
+      ap: 14
+      maxHits: 6
+    - name: "Star Light"
+      picture: Skill_Placeholder
+      element: Light
+      power: INT x 1020%
+      ap: 34
+      maxHits: 1
+    - name: "Luna Light"
+      picture: Skill_Placeholder
+      element: Light
+      power: INT x 1380%
+      ap: 35
+      maxHits: 10
+
+  rush:
+    name: "Indignation"
+    picture: Rush_Placeholder
+    element: Light
+    effects:
+      - desc: INT +100%, AP cost -30% (20s)
+    power: INT x 6500%
     maxHits: 9
 
 - name: Leon D.S. Gehste (Blue Sphere)
@@ -6955,7 +7038,7 @@
       effects:
         - desc: INT +30%, HP +30%
         - desc: CB skip to 300%
-    - name: "Multi-chant [Mastery] / Divine Sophia"
+    - name: "Multi-chant / Divine Sophia [MASTERY]"
       effects:
         - desc: INT +20% when casting multiple spells (self, 10s)
         - desc: INT damage +30% when casting 3 or more spells
