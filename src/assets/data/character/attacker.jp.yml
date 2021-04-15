@@ -5766,6 +5766,82 @@
     power: ATK x 3500%
     maxHits: 13
 
+- name: Crowe F. Almedio (Awakened)
+  cat: jp
+  rating: 4
+  picture: Crowe
+  weapon: dualswords
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 15750
+    atk: 2730
+    int: 1523
+    def: 1983
+    hit: 1120
+    grd: 833
+
+  talents:
+    - name: "Almighty"
+      effects: 
+        - desc: ATK +35%, +70% at 100% HP (party)
+        - desc: ATK +45%, +80% at 100% HP (Attackers)
+    - name: "SRF Charisma"
+      effects: 
+        - desc: Critical chance +50% when behind target (party)
+    - name: "Fruits of Training"
+      effects: 
+        - desc: Talon Pierce and Tri Zapper DMG +150%/300% at SC ≥ 3/5
+    - name: "Mister Perfect"
+      effects:
+        - desc: AP recovery of normal attacks +200% at 100% HP
+    - name: "A Sword that Opens up the Future"
+      effects:
+        - desc: Drain 15% of damage dealt by normal attacks when behind target (party)
+        - desc: Dodge AP cost -80% (self)
+    - name: "Guided by the Oracle"
+      effects:
+        - desc: AP +40 (stat page)
+        - desc: Maintain CB after one non-consecutive dodge
+
+  skills:
+    - name: "Dextral Edge"
+      picture: Dextral_Edge
+      power: ATK x 160%
+      ap: 14
+      maxHits: 2
+    - name: "Sinistral Edge"
+      picture: Sinistral_Edge
+      power: ATK x 160%
+      ap: 14
+      maxHits: 2
+    - name: "Talon Pierce"
+      picture: Talon_Thrust
+      element: Fire
+      power: ATK x 220%
+      ap: 20
+      maxHits: 2
+    - name: "Tri Zapper"
+      picture: Tri_Zapper
+      power: ATK x 250%
+      ap: 21
+      maxHits: 6
+    - name: "Piercing Swords"
+      picture: Tri_Zapper
+      element: Ice
+      power: ATK x 170%
+      ap: 15
+      maxHits: 6
+      
+  rush:
+    name: "Flash S Alternative"
+    picture: Flash_S_Alternative_Crowe
+    effects: 
+      - desc: AP cost -80% (5s)
+    power: ATK x 4500%
+    maxHits: 13
 
 - name: Leanne (Bridal) (Awakened)
   cat: jp
