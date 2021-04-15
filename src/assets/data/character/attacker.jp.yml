@@ -7705,9 +7705,9 @@
         - desc: Recovers 10% HP when using Charge Assault from short to long range
     - name: "Endless Condolences"
       effects:
-         desc: Maintain CB after 1 non-consecutive dodge
-         desc: Dodge AP cost -80%
-         desc: ATK +20% at HC ≥ 200
+         - desc: Maintain CB after 1 non-consecutive dodge
+         - desc: Dodge AP cost -80%
+         - desc: ATK +20% at HC ≥ 200
 
   skills:
     - name: "Unholy Maelstorm"
