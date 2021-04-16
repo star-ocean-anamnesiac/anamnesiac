@@ -2983,7 +2983,7 @@
 
   talents:
     - name: "Hunter's Intuition"
-      effects: 
+      effects:
         - desc: Critical hit chance +30%
           meta:
             priority: 4
@@ -2997,7 +2997,7 @@
             buffValue: 30
     - name: "Memories of Ocarina"
       shortEffects: AP recovery +50% (Defenders/Self)
-      effects: 
+      effects:
         - desc: AP recovery +50%
           meta:
             priority: 4
@@ -3071,7 +3071,7 @@
   rush:
     name: "Max Shockwave"
     picture: Max_Shockwave_Meracle
-    effects: 
+    effects:
       - desc: AP cost -40%
         duration: 20
         meta:
@@ -3080,34 +3080,85 @@
           buffValue: 40
     power: ATK x 4000%
     maxHits: 7
-    
-  notes: >
-      _WIP._
-      
-      
-      **TL DR**
-      
-      
-      **Pros**
-      
-      - Does a good amount of damage
-      
-      - Some weak utility to the party
-      
-      - Works well with hit counter characters if no ATK buffer
-      
-            
-      **Cons**
-            
-      - Party Utility is weak without the right characters
-      
-      - If no ATK buffer it requires a high hit count to get the most out of her
-            
-      
-      **Rotation**
-      
-      *Normal > Crescent Locus > Gouging Spike > CA Crescent Locus > Spam till out of AP (Damage rotation)*
 
+- name: Meracle Chamlotte (Awakened)
+  cat: jp
+  rating: 1
+  picture: Meracle
+  weapon: knuckle
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 14070
+    atk: 3549
+    int: 1549
+    def: 1930
+    hit: 1155
+    grd: 826
+
+  talents:
+    - name: "Hunter's Intuition"
+      effects:
+        - desc: Critical chance +40% (self)
+        - desc: Critical chance +40% at short range (party)
+    - name: "Memories of Ocarina"
+      effects:
+        - desc: AP recovery +50% (party)
+    - name: "Isolation"
+      effects:
+        - desc: ATK +30% (stat page)
+    - name: "Cat's Interlude"
+      effects:
+        - desc: AP cost -20%
+        - desc: ATK +20%/30%/40% at HC ≥ 100/150/200
+    - name: "Outstanding Sense of Smell"
+      effects:
+        - desc: AP cost -40% at HC ≥ 400
+        - desc: Critical chance +100% at HC ≥ 600
+    - name: "Flowers Blooming in the Star Ocean"
+      effects:
+        - desc: Echo by skills 5%
+        - desc: Repel +1
+        - desc: Able to air dodge
+
+  skills:
+    - name: "Crescent Locus"
+      picture: Crescent_Locus
+      power: ATK x 170%
+      ap: 17
+      maxHits: 4
+      highlight: true  
+    - name: "Gouging Spike"
+      picture: Drill_Spike
+      power: ATK x 180%
+      ap: 16
+      maxHits: 4
+      highlight: true
+    - name: "Eviscerating Claw"
+      picture: Eviscerating_Claw
+      power: ATK x 280%
+      ap: 25
+      maxHits: 6
+    - name: "Claws of Fury"
+      picture: Claws_of_Fury
+      power: ATK x 1500%
+      ap: 40
+      maxHits: 27
+    - name: "Roundhouse"
+      picture: Skill_Placeholder
+      power: ATK x 330%
+      ap: 21
+      maxHits: 2
+
+  rush:
+    name: "Max Shockwave"
+    picture: Max_Shockwave_Meracle
+    effects: 
+      - desc: AP cost -40% (20s)
+    power: ATK x 5500%
+    maxHits: 7
 
 - name: Lasswell
   cat: jp
