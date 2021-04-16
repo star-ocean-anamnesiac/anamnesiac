@@ -1130,36 +1130,83 @@
           buffValue: 40
     power: ATK x 2500%
     maxHits: 12
-    
-  notes: >
-      _WIP._
-      
-      
-      **TL DR**
-      
-      
-      **Pros**
-      
-      - Powerful AP reduction party-wide buff.
-      
-      - Good damage against humanoids.
-      
-      - 5 star non-ace so costs less to limit break and augment.
-      
-      
-      **Cons**
-      
-      - 5 star non-ace so has less stats.
-      
-      - Doesn't bring any utility beyond his AP reduction.
-      
-      - Bad damage against non-humanoids.
-      
-      
-      **Rotation**
-      
-      *Normal > Helm Splitter > Shotgun Blast > Helm Splitter > Spam it till out of AP. (General combo.)*
-    
+
+- name: Daril Camuze (Awakened)
+  cat: jp
+  rating: 1
+  picture: Daril
+  weapon: ohs
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 15824
+    atk: 2799
+    int: 1391
+    def: 2339
+    hit: 1022
+    grd: 824
+
+  talents:
+    - name: "Patriotism at Its Finest"
+      effects:
+        - desc: AP cost -40%, ATK +40% (party)
+    - name: "Finest Instructor of the Blade"
+      effects:
+        - desc: No flinching when taking damage ≤ 25% HP
+    - name: "Camuze's Way"
+      effects:
+        - desc: DMG dealt to humanoids +100% (self)
+        - desc: DMG dealt to humanoids +60% (party)
+    - name: "Tolerance and Rigor"
+      effects:
+        - desc: Critical chance +30% at SC ≥ 5
+    - name: "One Side as a Father"
+      effects:
+        - desc: Able to air dodge
+        - desc: No flinching when using Helm Splitter
+        - desc: DMG taken -70% when using Helm Splitter (1.5s)
+    - name: "Will to be Inherited"
+      effects:
+        - desc: ATK +30%, DEF +30%, GRD +10%, HP +10% (stat page)
+            
+  skills:
+    - name: "Rising Blade"
+      picture: Rising_Blade
+      power: ATK x 460%
+      ap: 32
+      maxHits: 5
+    - name: "Shotgun Blast"
+      picture: Shotgun_Blast
+      element: Lightning
+      power: ATK x 210%
+      ap: 20
+      maxHits: 4
+    - name: "Side Kick"
+      picture: Side_Kick
+      power: ATK x 280%
+      ap: 24
+      maxHits: 3
+    - name: "Helm Splitter"
+      picture: Helmsplitter
+      power: ATK x 990%
+      ap: 35
+      maxHits: 1
+    - name: "Sky Slash"
+      picture: Skill_Placeholder
+      power: ATK x 220%
+      ap: 20
+      maxHits: 1
+
+  rush:
+    name: "Ethereal Blast"
+    picture: Ethereal_Blast_Daril
+    element: Light
+    effects: 
+      - desc: AP cost -80% (self, 20s)
+      - desc: AP cost -50% (party, 20s)
+    power: ATK x 4500%
+    maxHits: 12
     
 - name: Roddick Farrence
   cat: jp
@@ -5829,7 +5876,7 @@
       ap: 21
       maxHits: 6
     - name: "Piercing Swords"
-      picture: Tri_Zapper
+      picture: Skill_Placeholder
       element: Ice
       power: ATK x 170%
       ap: 15
