@@ -4468,7 +4468,7 @@
 
   talents:
     - name: "Cheerful Behaviors"
-      effects: 
+      effects:
         - desc: ATK +45%
           all: true
           meta:
@@ -4476,7 +4476,7 @@
             buff: ATK
             buffValue: 45
     - name: "Cat Martial Arts"
-      effects: 
+      effects:
         - desc: Nullifies charge assault critical damage penalty
           all: true
         - desc: ATK damage dealt +40% when using charge assault
@@ -4487,7 +4487,7 @@
             buffCondition: when using charge assault
             buffValue: 40      
     - name: "Ocarina Player"
-      effects: 
+      effects:
         - desc: Normal attack AP recovery +100%
           all: true
           meta:
@@ -4497,7 +4497,7 @@
         - desc: Movement speed +30%
           all: true
     - name: "Lonely Person"
-      effects: 
+      effects:
         - desc: Evasion AP cost -50%
           all: false
         - desc: Evasion possible during air attacks
@@ -4506,17 +4506,17 @@
           all: false
           
   skills:
-    - name: "JP Somersault"
+    - name: "JP Somersault • Hop"
       picture: Sumersault
       power: ATK x 1020%
       ap: 29
       maxHits: 3
-    - name: "Hammer of Might"
+    - name: "Hammer of Might • Hop"
       picture: Hammer_of_Might
       power: ATK x 320%
       ap: 23
       maxHits: 1      
-    - name: "Palm of Destruction"
+    - name: "Palm of Destruction • Hop"
       picture: Palm_of_Destruction
       power: ATK x 270%
       ap: 20
@@ -4541,6 +4541,84 @@
     power: ATK x 4000%
     maxHits: 1
 
+- name: Pericci (Awakened)
+  cat: jp
+  rating: 4
+  picture: Pericci
+  weapon: knuckle
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 15540
+    atk: 2730
+    int: 1549
+    def: 1930
+    hit: 1155
+    grd: 826
+
+  talents:
+    - name: "Cheerful Behaviors"
+      effects:
+        - desc: ATK +45%, +75% at 100% HP (party)
+        - desc: 80% chance of surviving a lethal attack when HP ≥ 10% (self)
+    - name: "Cat Martial Arts"
+      effects:
+        - desc: Nullifies Charge Assault Crit. penalty (party)
+        - desc: ATK DMG +40% while Pericci uses Charge Assault (party)
+    - name: "Ocarina Player"
+      effects:
+        - desc: Normal attack AP recovery +200% (party)
+        - desc: Movement speed +50% (party)
+        - desc: Gain 3% Rush every 3 seconds while at 100% HP (party)
+    - name: "Lonely Person"
+      effects:
+        - desc: Dodge AP cost -80% (self)
+        - desc: Able to air dodge (self)
+        - desc: AP cost -40% on perfect dodge (party, 10s)
+    - name: "Bunny Tamer"
+      effects:
+        - desc: Recover 100% AP on perfect dodge
+        - desc: Maintain CB after one non-consecutive dodge
+    - name: "Predator Instinct"
+      effects:
+        - desc: Drain 2% of damage dealt by JP Somersault and Infinity Kick when using Charge Assault
+          
+  skills:
+    - name: "JP Somersault • Hop"
+      picture: Sumersault
+      power: ATK x 1130%
+      ap: 29
+      maxHits: 3
+    - name: "Hammer of Might • Hop"
+      picture: Hammer_of_Might
+      power: ATK x 360%
+      ap: 23
+      maxHits: 1      
+    - name: "Palm of Destruction • Hop"
+      picture: Palm_of_Destruction
+      power: ATK x 300%
+      ap: 20
+      maxHits: 1
+    - name: "Heel Stomp"
+      picture: Axe_Kick
+      power: ATK x 330%
+      ap: 21
+      maxHits: 2
+    - name: "Infinity Kick • Hop"
+      picture: Skill_Placeholder
+      power: ATK x 730%
+      ap: 29
+      maxHits: 3
+
+  rush:
+    name: "Dream Hammer"
+    picture: Dream_Combo_Pericci
+    effects:
+      - desc: Critical chance +50% (party, 20s)
+    power: ATK x 4500%
+    maxHits: 1
 
 - name: Fayt Leingod (Awakened)
   cat: jp
