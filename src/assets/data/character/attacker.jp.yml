@@ -3701,7 +3701,7 @@
 
   talents:
     - name: "Devastating Kick"
-      effects: 
+      effects:
         - desc: ATK +20%
           all: true
           meta:
@@ -3709,7 +3709,7 @@
             buff: ATK
             buffValue: 20
     - name: "Klausian Heritage"
-      effects: 
+      effects:
         - desc: ATK damage dealt +20% at short range
           all: true
           meta:
@@ -3718,7 +3718,7 @@
             buffCondition: Short Range
             buffValue: 20
     - name: "Merciful Heart"
-      effects: 
+      effects:
         - desc: Normal attack AP recovery +100% at short range
           all: true
           meta:
@@ -3728,7 +3728,7 @@
             buffValue: 100
     - name: "Father’s Teachings"
       shortEffects: Critical hit chance +30% and critical damage dealt +30% when HP is 100%
-      effects: 
+      effects:
         - desc: Critical hit chance +30% when HP is 100%
           meta:
             priority: 1
@@ -3782,36 +3782,82 @@
         duration: 20
     power: ATK x 4000%
     maxHits: 15
-    
-  notes: >
-      _WIP._
-      
-      
-      **TL DR**
-      
-      
-      **Pros**
-      
-      - Varied buffs that are quite strong.
-      
-      - Deals high damage.
-      
-      - Has post rush regen for sustain.
-      
-      
-      **Cons**
-      
-      - Buff conditions require being built around or are inconsistent.
-      
-      - Lack of a ranged attack can cause issues with cetain bosses.
-      
-      
-      **Rotation**
-      
-      *Normal > Electric Fists > Crescent Lotus > Electric Fists > Spam till out of AP (General combo.)*
-      
-      *Normal > Crescent Lotus  > Electric Fists > Acrobat Locus > Electric Fists > Spam till out of AP (Post Rush combo.)*
 
+- name: Mirage Koas (Awakened)
+  cat: jp
+  rating: 1
+  picture: Mirage
+  weapon: knuckle
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 20475
+    atk: 3243
+    int: 1563
+    def: 1930
+    hit: 1155
+    grd: 819
+
+  talents:
+    - name: "Devastating Kick"
+      effects:
+        - desc: ATK +30% (party)
+    - name: "Klausian Heritage"
+      effects:
+        - desc: ATK DMG +30% at short range (party)
+    - name: "Merciful Heart"
+      effects:
+        - desc: Normal attack AP recovery +150% at short range (party)
+    - name: "Father’s Teachings"
+      effects:
+        - desc: ATK +20% at 100% HP
+        - desc: Critical chance and damage +40% at 100% HP
+    - name: "Anechoic Surface"
+      effects:
+        - desc: Drain 2% of damage dealt by Electric Fists at SC ≥ 3
+        - desc: Nullify Charge Assault Crit. penalty
+    - name: "Perfect Soldier"
+      effects:
+        - desc: HP +30% (stat page)
+        - desc: No flinching and DMG taken -50% while attacking
+
+  skills:
+    - name: "Acrobat Locus"
+      picture: Acrobat_Locus
+      power: ATK x 910%
+      ap: 41
+      maxHits: 7
+    - name: "Crescent Locus"
+      picture: Crescent_Locus
+      power: ATK x 170%
+      ap: 17
+      maxHits: 4
+    - name: "Triple Kick"
+      picture: Triple_Kick
+      power: ATK x 280%
+      ap: 24
+      maxHits: 3
+    - name: "Electric Fists"
+      picture: Current_Knuckle
+      power: ATK x 820%
+      ap: 29
+      maxHits: 3
+    - name: "Impulse Force"
+      picture: Skill_Placeholder
+      power: ATK x 400%
+      ap: 26
+      maxHits: 1
+
+  rush:
+    name: "Avenger Charge"
+    picture: Festive_Avenger_Mirage
+    element: Fire
+    effects: 
+      - desc: AP cost -30% and recover 10% HP every 3 seconds (20s)
+    power: ATK x 5500%
+    maxHits: 15
 
 - name: Ashton Anchors
   cat: jp
