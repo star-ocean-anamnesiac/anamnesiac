@@ -2596,9 +2596,8 @@
     grd: 833
 
   talents:
-
     - name: "Spontaneous Combustion"
-      effects: 
+      effects:
         - desc: ATK +40%
           all: Attackers
           meta:
@@ -2607,14 +2606,14 @@
             buffRole: attacker
             buffValue: 40
     - name: "Lightning-Fast Firewhips"
-      effects: 
+      effects:
         - desc: AP cost -15%
           meta:
             priority: 4
             buff: AP Cost Reduction
             buffValue: 15
     - name: "Hellfire"
-      effects: 
+      effects:
         - desc: Fire damage dealt +10%
           meta:
             priority: 4
@@ -2626,7 +2625,7 @@
             buff: Ice Damage Reduction
             buffValue: 30
     - name: "Fiery Indignation"
-      effects: 
+      effects:
         - desc: ATK/INT/DEF/HIT/GRD +25% for every unique party member dead, up to a maximum of +100%
           meta:
             priority: 3
@@ -2681,38 +2680,88 @@
           buffValue: 50
     power: ATK x 3500%
     maxHits: 8
-    
-  notes: >
-      _WIP._
-      
-      
-      **TL DR**
-      
-      
-      **Pros**
-      
-      - Unique design
-      
-      - Decent ATK buff for attackers
-      
-      - Deals decent damage
-      
-      - Really good against fire weak bosses
-      
-      
-      **Cons**
-            
-      - Has no ranged attack
-      
-      - Needs people to die to be effective
-      
-      - Needs elemental imbue knuckles if enemy resists fire
-            
-      
-      **Rotation**
-      
-      *Normal > Pyroclast Punch > Bosom Blow > Firefest (Damage rotation)*
 
+- name: Michael (Awakened)
+  cat: jp
+  rating: 1
+  picture: Michael
+  weapon: knuckle
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 20339
+    atk: 2692
+    int: 1563
+    def: 1957
+    hit: 1141
+    grd: 833
+
+  talents:
+    - name: "Spontaneous Combustion"
+      effects:
+        - desc: ATK +50%, +80% at 100% HP (Attackers)
+    - name: "Lightning-Fast Firewhips"
+      effects:
+        - desc: AP cost -20%
+        - desc: Nullify Charge Assault Crit. penalty
+        - desc: Able to air dodge
+    - name: "Hellfire"
+      effects:
+        - desc: Fire DMG +20%
+        - desc: Ice resistance -30%
+        - desc: Rush DMG +30% at 100% HP
+    - name: "Fiery Indignation"
+      effects:
+        - desc: All stats +35%/60%/80%/110% when 1/2/3/4 different characters are incapacitated
+    - name: "Tactical Weapons"
+      effects:
+        - desc: Recover 50% AP when taking damage ≥ 1% HP
+        - desc: No flinching while attacking
+        - desc: DMG taken -50% while at close range
+    - name: "High Spirits"
+      effects:
+        - desc: HP +30% (stat page)
+        - desc: Drain 3% of damage dealt by skills in a chain
+            
+  skills:
+    - name: "Pyroclast Punch"
+      picture: Pyroclast_Punch
+      element: Fire
+      power: ATK x 260%
+      ap: 18
+      maxHits: 5
+      highlight: true
+    - name: "Bosom Blow"
+      picture: Bosom_Blow
+      element: Fire
+      power: ATK x 620%
+      ap: 30
+      maxHits: 1
+      highlight: true
+    - name: "Firefest"
+      picture: Fire_Fest
+      element: Fire
+      power: ATK x 1180%
+      ap: 42
+      maxHits: 6
+      highlight: true
+    - name: "Lava Flow"
+      picture: Lava_Flow
+      element: Fire
+      power: ATK x 1280%
+      ap: 52
+      maxHits: 10
+
+  rush:
+    name: "Spicule"
+    picture: Spicule_Michael
+    element: Fire
+    effects: 
+      - desc: AP cost -50% (20s)
+    power: ATK x 5500%
+    maxHits: 8
 
 - name: Fidel Camuze (Winter)
   cat: jp
