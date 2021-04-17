@@ -4100,7 +4100,7 @@
     - name: "How to Live as it is"
       effects:
         - desc: ATK +20%, HP +20% (stat page)
-        - desc: 30% chance of recovering 20 AP when using Jump 'n' Thump
+        - desc: 30% chance to recover 20 AP when using Jump 'n' Thump
         - desc: Able to air dodge
         - desc: Nulify Charge Assault Crit. penalty
 
@@ -7755,7 +7755,7 @@
 
   talents:
     - name: "Genius Blacksmith"
-      effects: 
+      effects:
         - desc: ATK +45%
           all: true
           meta:
@@ -7771,7 +7771,7 @@
             buffValue: 60
     - name: "Explosive"
       shortEffects: DEF -30% when hit by Welch Rock Bomber (Enemies/10s)
-      effects: 
+      effects:
         - desc: DEF -30% when hit by Welch Rock Bomber
           all: Enemies
           duration: 10
@@ -7780,7 +7780,7 @@
             buff: Enemy DEF Reduction
             buffValue: 30
     - name: "Unmatched Daring"
-      effects: 
+      effects:
         - desc: No flinching while attacking
         - desc: Damage taken -40%
           meta:
@@ -7788,7 +7788,7 @@
             buff: Damage Taken Reduction
             buffValue: 40
     - name: "Dextrous Fingers"
-      effects: 
+      effects:
         - desc: ATK/INT/DEF/HIT/GRD +20% when hitcount is >50
           meta:
             priority: 1
@@ -7836,6 +7836,78 @@
           buff: ATK Damage
           buffValue: 20
     power: ATK x 4000%
+    maxHits: 1
+
+- name: Welch Vineyard (Axe) (Awakened)
+  cat: jp
+  rating: 6
+  picture: Axe_Welch
+  weapon: axe
+  ace: true
+  semi: true
+  limited: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 15540
+    atk: 2744
+    int: 1563
+    def: 1916
+    hit: 1141
+    grd: 847
+
+  talents:
+    - name: "Genius Blacksmith"
+      effects:
+        - desc: ATK +45%, +75% at HC ≥ 150 (party)
+        - desc: AP cost -40%/-50% at SC ≥ 4/5 (party)
+    - name: "Explosive"
+      effects:
+        - desc: DEF -40% when hit by Welch Rock Bomber (enemies, 10s)
+    - name: "Unmatched Daring"
+      effects:
+        - desc: No flinching and DMG taken -40% while attacking (self)
+        - desc: HC timer +3s (party)
+    - name: "Dextrous Fingers"
+      effects:
+        - desc: ATK/INT/DEF/HIT/GRD +20% at HC ≥ 50
+    - name: "Looks like someone else?"
+      effects:
+        - desc: Drain 3% of damage dealt by Hurricane and Spinning Chop at SC ≥ 3
+    - name: "Love Left by Parents"
+      effects:
+        - desc: 30% chance to recover 20 AP after using Hurricane or Spinning Chop
+        - desc: Normal attack AP recovery +100%
+
+  skills:
+    - name: "Welch Hurricane"
+      picture: Hurricane
+      power: ATK x 1050%
+      ap: 40
+      maxHits: 10
+    - name: "Welch Cracker"
+      picture: Hammer_Cracker
+      power: ATK x 650%
+      ap: 31
+      maxHits: 6
+    - name: "Welch Rock Bomber"
+      picture: Dragon_Hammer
+      power: ATK x 380%
+      ap: 28
+      maxHits: 10
+    - name: "Welch Spinning Chop"
+      picture: Divine_Ring
+      power: ATK x 1020%
+      ap: 36
+      maxHits: 8
+
+  rush:
+    name: "Gigantic Welch Impact"
+    picture: Gigantic_Welch_Impact_Welch
+    effects: 
+      - desc: ATK DMG +50% (party, 20s)
+    power: ATK x 4500%
     maxHits: 1
 
 - name: Albel Nox (Halloween)
