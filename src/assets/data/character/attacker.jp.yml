@@ -3996,11 +3996,11 @@
 
   talents:
     - name: "Expel's Young Inventor"
-      effects: 
+      effects:
         - desc: Hitcount timer +3 seconds
           all: true      
     - name: "Mujin-kun, Charge!"
-      effects: 
+      effects:
         - desc: ATK +25% when hitcount is >100
           meta:
             priority: 1
@@ -4008,7 +4008,7 @@
             buffCondition: Hit Count > 100
             buffValue: 25    
     - name: "Great Action"
-      effects: 
+      effects:
         - desc: Critical hit chance +30% at short range
           all: true
           meta:
@@ -4017,7 +4017,7 @@
             buffCondition: Short Range
             buffValue: 30    
     - name: "Creative Spirit"
-      effects: 
+      effects:
         - desc: AP cost -40% when skill chain is >3
           all: false
           meta:
@@ -4060,19 +4060,85 @@
         duration: 20
     power: ATK x 4500%
     maxHits: 16
-  
-  notes: >            
-      **TL DR**
-      
-      **Summary**
-      
-      Outdated unit, selfish talents without the damage to back it up.
-   
-      **Rotation**
-      
-      Normal > Rocket Punch > Hammer Slammer > Jump'n'Thump*3 (Replace Hammer Slammer with Force Field if 104 AP or higher)
-      
-      
+
+- name: Precis F. Neumann (Awakened)
+  cat: jp 
+  rating: 1
+  picture: Precis	
+  weapon: arm
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 18774
+    atk: 3088
+    int: 1537
+    def: 1969
+    hit: 1148
+    grd: 833
+
+  talents:
+    - name: "Expel's Young Inventor"
+      effects:
+        - desc: HC timer +3s (party)
+        - desc: Echo by normal attacks 20% (party)
+    - name: "Mujin-kun, Charge!"
+      effects:
+        - desc: ATK +35% at HC ≥ 100
+    - name: "Great Action"
+      effects:
+        - desc: ATK +30% (party)
+        - desc: Critical chance +50% at short range (party)
+    - name: "Creative Spirit"
+      effects:
+        - desc: AP cost -40%/-50% at SC ≥ 3/4
+    - name: "Looking for a Cool Boyfriend"
+      effects:
+        - desc: Critical chance +100% at SC ≥ 5
+        - desc: Critical damage +50%/100% at SC ≥ 7/9
+    - name: "How to Live as it is"
+      effects:
+        - desc: ATK +20%, HP +20% (stat page)
+        - desc: 30% chance of recovering 20 AP when using Jump 'n' Thump
+        - desc: Able to air dodge
+        - desc: Nulify Charge Assault Crit. penalty
+
+  skills:
+    - name: "Hammer Slammer"
+      picture: Hammer_Slammer
+      power: ATK x 380%
+      ap: 22
+      maxHits: 6
+    - name: "Rocket Punch"
+      picture: Rocket_Punch
+      power: ATK x 320%
+      ap: 18
+      maxHits: 1
+    - name: "Jump 'n' Thump"
+      picture: Jump_n_Thump
+      power: ATK x 480%
+      ap: 32
+      maxHits: 1
+    - name: "Force Field"
+      picture: Force_Field
+      power: ATK x 400%
+      ap: 29
+      maxHits: 10
+    - name: "C.Clockwise Arm"
+      picture: Skill_Placeholder
+      power: ATK x 290%
+      ap: 19
+      maxHits: 6
+
+  rush:
+    name: "Bloody Mary"
+    picture: Bloody_Mary
+    effects: 
+      - desc: Recovers 15% HP every 5 seconds (party)
+    power: ATK x 5500%
+    maxHits: 16
+
 - name: Fidel Camuze (Awakened)
   cat: jp
   rating: 4
