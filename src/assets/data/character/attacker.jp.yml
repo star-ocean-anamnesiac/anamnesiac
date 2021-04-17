@@ -1130,36 +1130,83 @@
           buffValue: 40
     power: ATK x 2500%
     maxHits: 12
-    
-  notes: >
-      _WIP._
-      
-      
-      **TL DR**
-      
-      
-      **Pros**
-      
-      - Powerful AP reduction party-wide buff.
-      
-      - Good damage against humanoids.
-      
-      - 5 star non-ace so costs less to limit break and augment.
-      
-      
-      **Cons**
-      
-      - 5 star non-ace so has less stats.
-      
-      - Doesn't bring any utility beyond his AP reduction.
-      
-      - Bad damage against non-humanoids.
-      
-      
-      **Rotation**
-      
-      *Normal > Helm Splitter > Shotgun Blast > Helm Splitter > Spam it till out of AP. (General combo.)*
-    
+
+- name: Daril Camuze (Awakened)
+  cat: jp
+  rating: 1
+  picture: Daril
+  weapon: ohs
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 15824
+    atk: 2799
+    int: 1391
+    def: 2339
+    hit: 1022
+    grd: 824
+
+  talents:
+    - name: "Patriotism at Its Finest"
+      effects:
+        - desc: AP cost -40%, ATK +40% (party)
+    - name: "Finest Instructor of the Blade"
+      effects:
+        - desc: No flinching when taking damage ≤ 25% HP
+    - name: "Camuze's Way"
+      effects:
+        - desc: DMG dealt to humanoids +100% (self)
+        - desc: DMG dealt to humanoids +60% (party)
+    - name: "Tolerance and Rigor"
+      effects:
+        - desc: Critical chance +30% at SC ≥ 5
+    - name: "One Side as a Father"
+      effects:
+        - desc: Able to air dodge
+        - desc: No flinching when using Helm Splitter
+        - desc: DMG taken -70% when using Helm Splitter (1.5s)
+    - name: "Will to be Inherited"
+      effects:
+        - desc: ATK +30%, DEF +30%, GRD +10%, HP +10% (stat page)
+            
+  skills:
+    - name: "Rising Blade"
+      picture: Rising_Blade
+      power: ATK x 460%
+      ap: 32
+      maxHits: 5
+    - name: "Shotgun Blast"
+      picture: Shotgun_Blast
+      element: Lightning
+      power: ATK x 210%
+      ap: 20
+      maxHits: 4
+    - name: "Side Kick"
+      picture: Side_Kick
+      power: ATK x 280%
+      ap: 24
+      maxHits: 3
+    - name: "Helm Splitter"
+      picture: Helmsplitter
+      power: ATK x 990%
+      ap: 35
+      maxHits: 1
+    - name: "Sky Slash"
+      picture: Skill_Placeholder
+      power: ATK x 220%
+      ap: 20
+      maxHits: 1
+
+  rush:
+    name: "Ethereal Blast"
+    picture: Ethereal_Blast_Daril
+    element: Light
+    effects: 
+      - desc: AP cost -80% (self, 20s)
+      - desc: AP cost -50% (party, 20s)
+    power: ATK x 4500%
+    maxHits: 12
     
 - name: Roddick Farrence
   cat: jp
@@ -2549,9 +2596,8 @@
     grd: 833
 
   talents:
-
     - name: "Spontaneous Combustion"
-      effects: 
+      effects:
         - desc: ATK +40%
           all: Attackers
           meta:
@@ -2560,14 +2606,14 @@
             buffRole: attacker
             buffValue: 40
     - name: "Lightning-Fast Firewhips"
-      effects: 
+      effects:
         - desc: AP cost -15%
           meta:
             priority: 4
             buff: AP Cost Reduction
             buffValue: 15
     - name: "Hellfire"
-      effects: 
+      effects:
         - desc: Fire damage dealt +10%
           meta:
             priority: 4
@@ -2579,7 +2625,7 @@
             buff: Ice Damage Reduction
             buffValue: 30
     - name: "Fiery Indignation"
-      effects: 
+      effects:
         - desc: ATK/INT/DEF/HIT/GRD +25% for every unique party member dead, up to a maximum of +100%
           meta:
             priority: 3
@@ -2634,38 +2680,88 @@
           buffValue: 50
     power: ATK x 3500%
     maxHits: 8
-    
-  notes: >
-      _WIP._
-      
-      
-      **TL DR**
-      
-      
-      **Pros**
-      
-      - Unique design
-      
-      - Decent ATK buff for attackers
-      
-      - Deals decent damage
-      
-      - Really good against fire weak bosses
-      
-      
-      **Cons**
-            
-      - Has no ranged attack
-      
-      - Needs people to die to be effective
-      
-      - Needs elemental imbue knuckles if enemy resists fire
-            
-      
-      **Rotation**
-      
-      *Normal > Pyroclast Punch > Bosom Blow > Firefest (Damage rotation)*
 
+- name: Michael (Awakened)
+  cat: jp
+  rating: 1
+  picture: Michael
+  weapon: knuckle
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 20339
+    atk: 2692
+    int: 1563
+    def: 1957
+    hit: 1141
+    grd: 833
+
+  talents:
+    - name: "Spontaneous Combustion"
+      effects:
+        - desc: ATK +50%, +80% at 100% HP (Attackers)
+    - name: "Lightning-Fast Firewhips"
+      effects:
+        - desc: AP cost -20%
+        - desc: Nullify Charge Assault Crit. penalty
+        - desc: Able to air dodge
+    - name: "Hellfire"
+      effects:
+        - desc: Fire DMG +20%
+        - desc: Ice resistance -30%
+        - desc: Rush DMG +30% at 100% HP
+    - name: "Fiery Indignation"
+      effects:
+        - desc: All stats +35%/60%/80%/110% when 1/2/3/4 different characters are incapacitated
+    - name: "Tactical Weapons"
+      effects:
+        - desc: Recover 50% AP when taking damage ≥ 1% HP
+        - desc: No flinching while attacking
+        - desc: DMG taken -50% while at close range
+    - name: "High Spirits"
+      effects:
+        - desc: HP +30% (stat page)
+        - desc: Drain 3% of damage dealt by skills in a chain
+            
+  skills:
+    - name: "Pyroclast Punch"
+      picture: Pyroclast_Punch
+      element: Fire
+      power: ATK x 260%
+      ap: 18
+      maxHits: 5
+      highlight: true
+    - name: "Bosom Blow"
+      picture: Bosom_Blow
+      element: Fire
+      power: ATK x 620%
+      ap: 30
+      maxHits: 1
+      highlight: true
+    - name: "Firefest"
+      picture: Fire_Fest
+      element: Fire
+      power: ATK x 1180%
+      ap: 42
+      maxHits: 6
+      highlight: true
+    - name: "Lava Flow"
+      picture: Lava_Flow
+      element: Fire
+      power: ATK x 1280%
+      ap: 52
+      maxHits: 10
+
+  rush:
+    name: "Spicule"
+    picture: Spicule_Michael
+    element: Fire
+    effects: 
+      - desc: AP cost -50% (20s)
+    power: ATK x 5500%
+    maxHits: 8
 
 - name: Fidel Camuze (Winter)
   cat: jp
@@ -2936,7 +3032,7 @@
 
   talents:
     - name: "Hunter's Intuition"
-      effects: 
+      effects:
         - desc: Critical hit chance +30%
           meta:
             priority: 4
@@ -2950,7 +3046,7 @@
             buffValue: 30
     - name: "Memories of Ocarina"
       shortEffects: AP recovery +50% (Defenders/Self)
-      effects: 
+      effects:
         - desc: AP recovery +50%
           meta:
             priority: 4
@@ -3024,7 +3120,7 @@
   rush:
     name: "Max Shockwave"
     picture: Max_Shockwave_Meracle
-    effects: 
+    effects:
       - desc: AP cost -40%
         duration: 20
         meta:
@@ -3033,34 +3129,85 @@
           buffValue: 40
     power: ATK x 4000%
     maxHits: 7
-    
-  notes: >
-      _WIP._
-      
-      
-      **TL DR**
-      
-      
-      **Pros**
-      
-      - Does a good amount of damage
-      
-      - Some weak utility to the party
-      
-      - Works well with hit counter characters if no ATK buffer
-      
-            
-      **Cons**
-            
-      - Party Utility is weak without the right characters
-      
-      - If no ATK buffer it requires a high hit count to get the most out of her
-            
-      
-      **Rotation**
-      
-      *Normal > Crescent Locus > Gouging Spike > CA Crescent Locus > Spam till out of AP (Damage rotation)*
 
+- name: Meracle Chamlotte (Awakened)
+  cat: jp
+  rating: 1
+  picture: Meracle
+  weapon: knuckle
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 14070
+    atk: 3549
+    int: 1549
+    def: 1930
+    hit: 1155
+    grd: 826
+
+  talents:
+    - name: "Hunter's Intuition"
+      effects:
+        - desc: Critical chance +40% (self)
+        - desc: Critical chance +40% at short range (party)
+    - name: "Memories of Ocarina"
+      effects:
+        - desc: AP recovery +50% (party)
+    - name: "Isolation"
+      effects:
+        - desc: ATK +30% (stat page)
+    - name: "Cat's Interlude"
+      effects:
+        - desc: AP cost -20%
+        - desc: ATK +20%/30%/40% at HC ≥ 100/150/200
+    - name: "Outstanding Sense of Smell"
+      effects:
+        - desc: AP cost -40% at HC ≥ 400
+        - desc: Critical chance +100% at HC ≥ 600
+    - name: "Flowers Blooming in the Star Ocean"
+      effects:
+        - desc: Echo by skills 5%
+        - desc: Repel +1
+        - desc: Able to air dodge
+
+  skills:
+    - name: "Crescent Locus"
+      picture: Crescent_Locus
+      power: ATK x 170%
+      ap: 17
+      maxHits: 4
+      highlight: true  
+    - name: "Gouging Spike"
+      picture: Drill_Spike
+      power: ATK x 180%
+      ap: 16
+      maxHits: 4
+      highlight: true
+    - name: "Eviscerating Claw"
+      picture: Eviscerating_Claw
+      power: ATK x 280%
+      ap: 25
+      maxHits: 6
+    - name: "Claws of Fury"
+      picture: Claws_of_Fury
+      power: ATK x 1500%
+      ap: 40
+      maxHits: 27
+    - name: "Roundhouse"
+      picture: Skill_Placeholder
+      power: ATK x 330%
+      ap: 21
+      maxHits: 2
+
+  rush:
+    name: "Max Shockwave"
+    picture: Max_Shockwave_Meracle
+    effects: 
+      - desc: AP cost -40% (20s)
+    power: ATK x 5500%
+    maxHits: 7
 
 - name: Lasswell
   cat: jp
@@ -3554,7 +3701,7 @@
 
   talents:
     - name: "Devastating Kick"
-      effects: 
+      effects:
         - desc: ATK +20%
           all: true
           meta:
@@ -3562,7 +3709,7 @@
             buff: ATK
             buffValue: 20
     - name: "Klausian Heritage"
-      effects: 
+      effects:
         - desc: ATK damage dealt +20% at short range
           all: true
           meta:
@@ -3571,7 +3718,7 @@
             buffCondition: Short Range
             buffValue: 20
     - name: "Merciful Heart"
-      effects: 
+      effects:
         - desc: Normal attack AP recovery +100% at short range
           all: true
           meta:
@@ -3581,7 +3728,7 @@
             buffValue: 100
     - name: "Father’s Teachings"
       shortEffects: Critical hit chance +30% and critical damage dealt +30% when HP is 100%
-      effects: 
+      effects:
         - desc: Critical hit chance +30% when HP is 100%
           meta:
             priority: 1
@@ -3635,36 +3782,82 @@
         duration: 20
     power: ATK x 4000%
     maxHits: 15
-    
-  notes: >
-      _WIP._
-      
-      
-      **TL DR**
-      
-      
-      **Pros**
-      
-      - Varied buffs that are quite strong.
-      
-      - Deals high damage.
-      
-      - Has post rush regen for sustain.
-      
-      
-      **Cons**
-      
-      - Buff conditions require being built around or are inconsistent.
-      
-      - Lack of a ranged attack can cause issues with cetain bosses.
-      
-      
-      **Rotation**
-      
-      *Normal > Electric Fists > Crescent Lotus > Electric Fists > Spam till out of AP (General combo.)*
-      
-      *Normal > Crescent Lotus  > Electric Fists > Acrobat Locus > Electric Fists > Spam till out of AP (Post Rush combo.)*
 
+- name: Mirage Koas (Awakened)
+  cat: jp
+  rating: 1
+  picture: Mirage
+  weapon: knuckle
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 20475
+    atk: 3243
+    int: 1563
+    def: 1930
+    hit: 1155
+    grd: 819
+
+  talents:
+    - name: "Devastating Kick"
+      effects:
+        - desc: ATK +30% (party)
+    - name: "Klausian Heritage"
+      effects:
+        - desc: ATK DMG +30% at short range (party)
+    - name: "Merciful Heart"
+      effects:
+        - desc: Normal attack AP recovery +150% at short range (party)
+    - name: "Father’s Teachings"
+      effects:
+        - desc: ATK +20% at 100% HP
+        - desc: Critical chance and damage +40% at 100% HP
+    - name: "Anechoic Surface"
+      effects:
+        - desc: Drain 2% of damage dealt by Electric Fists at SC ≥ 3
+        - desc: Nullify Charge Assault Crit. penalty
+    - name: "Perfect Soldier"
+      effects:
+        - desc: HP +30% (stat page)
+        - desc: No flinching and DMG taken -50% while attacking
+
+  skills:
+    - name: "Acrobat Locus"
+      picture: Acrobat_Locus
+      power: ATK x 910%
+      ap: 41
+      maxHits: 7
+    - name: "Crescent Locus"
+      picture: Crescent_Locus
+      power: ATK x 170%
+      ap: 17
+      maxHits: 4
+    - name: "Triple Kick"
+      picture: Triple_Kick
+      power: ATK x 280%
+      ap: 24
+      maxHits: 3
+    - name: "Electric Fists"
+      picture: Current_Knuckle
+      power: ATK x 820%
+      ap: 29
+      maxHits: 3
+    - name: "Impulse Force"
+      picture: Skill_Placeholder
+      power: ATK x 400%
+      ap: 26
+      maxHits: 1
+
+  rush:
+    name: "Avenger Charge"
+    picture: Festive_Avenger_Mirage
+    element: Fire
+    effects: 
+      - desc: AP cost -30% and recover 10% HP every 3 seconds (20s)
+    power: ATK x 5500%
+    maxHits: 15
 
 - name: Ashton Anchors
   cat: jp
@@ -3803,11 +3996,11 @@
 
   talents:
     - name: "Expel's Young Inventor"
-      effects: 
+      effects:
         - desc: Hitcount timer +3 seconds
           all: true      
     - name: "Mujin-kun, Charge!"
-      effects: 
+      effects:
         - desc: ATK +25% when hitcount is >100
           meta:
             priority: 1
@@ -3815,7 +4008,7 @@
             buffCondition: Hit Count > 100
             buffValue: 25    
     - name: "Great Action"
-      effects: 
+      effects:
         - desc: Critical hit chance +30% at short range
           all: true
           meta:
@@ -3824,7 +4017,7 @@
             buffCondition: Short Range
             buffValue: 30    
     - name: "Creative Spirit"
-      effects: 
+      effects:
         - desc: AP cost -40% when skill chain is >3
           all: false
           meta:
@@ -3867,19 +4060,85 @@
         duration: 20
     power: ATK x 4500%
     maxHits: 16
-  
-  notes: >            
-      **TL DR**
-      
-      **Summary**
-      
-      Outdated unit, selfish talents without the damage to back it up.
-   
-      **Rotation**
-      
-      Normal > Rocket Punch > Hammer Slammer > Jump'n'Thump*3 (Replace Hammer Slammer with Force Field if 104 AP or higher)
-      
-      
+
+- name: Precis F. Neumann (Awakened)
+  cat: jp 
+  rating: 1
+  picture: Precis	
+  weapon: arm
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 18774
+    atk: 3088
+    int: 1537
+    def: 1969
+    hit: 1148
+    grd: 833
+
+  talents:
+    - name: "Expel's Young Inventor"
+      effects:
+        - desc: HC timer +3s (party)
+        - desc: Echo by normal attacks 20% (party)
+    - name: "Mujin-kun, Charge!"
+      effects:
+        - desc: ATK +35% at HC ≥ 100
+    - name: "Great Action"
+      effects:
+        - desc: ATK +30% (party)
+        - desc: Critical chance +50% at short range (party)
+    - name: "Creative Spirit"
+      effects:
+        - desc: AP cost -40%/-50% at SC ≥ 3/4
+    - name: "Looking for a Cool Boyfriend"
+      effects:
+        - desc: Critical chance +100% at SC ≥ 5
+        - desc: Critical damage +50%/100% at SC ≥ 7/9
+    - name: "How to Live as it is"
+      effects:
+        - desc: ATK +20%, HP +20% (stat page)
+        - desc: 30% chance to recover 20 AP when using Jump 'n' Thump
+        - desc: Able to air dodge
+        - desc: Nulify Charge Assault Crit. penalty
+
+  skills:
+    - name: "Hammer Slammer"
+      picture: Hammer_Slammer
+      power: ATK x 380%
+      ap: 22
+      maxHits: 6
+    - name: "Rocket Punch"
+      picture: Rocket_Punch
+      power: ATK x 320%
+      ap: 18
+      maxHits: 1
+    - name: "Jump 'n' Thump"
+      picture: Jump_n_Thump
+      power: ATK x 480%
+      ap: 32
+      maxHits: 1
+    - name: "Force Field"
+      picture: Force_Field
+      power: ATK x 400%
+      ap: 29
+      maxHits: 10
+    - name: "C.Clockwise Arm"
+      picture: Skill_Placeholder
+      power: ATK x 290%
+      ap: 19
+      maxHits: 6
+
+  rush:
+    name: "Bloody Mary"
+    picture: Bloody_Mary
+    effects: 
+      - desc: Recovers 15% HP every 5 seconds (party)
+    power: ATK x 5500%
+    maxHits: 16
+
 - name: Fidel Camuze (Awakened)
   cat: jp
   rating: 4
@@ -4370,7 +4629,7 @@
 
   talents:
     - name: "Cheerful Behaviors"
-      effects: 
+      effects:
         - desc: ATK +45%
           all: true
           meta:
@@ -4378,7 +4637,7 @@
             buff: ATK
             buffValue: 45
     - name: "Cat Martial Arts"
-      effects: 
+      effects:
         - desc: Nullifies charge assault critical damage penalty
           all: true
         - desc: ATK damage dealt +40% when using charge assault
@@ -4389,7 +4648,7 @@
             buffCondition: when using charge assault
             buffValue: 40      
     - name: "Ocarina Player"
-      effects: 
+      effects:
         - desc: Normal attack AP recovery +100%
           all: true
           meta:
@@ -4399,7 +4658,7 @@
         - desc: Movement speed +30%
           all: true
     - name: "Lonely Person"
-      effects: 
+      effects:
         - desc: Evasion AP cost -50%
           all: false
         - desc: Evasion possible during air attacks
@@ -4408,17 +4667,17 @@
           all: false
           
   skills:
-    - name: "JP Somersault"
+    - name: "JP Somersault • Hop"
       picture: Sumersault
       power: ATK x 1020%
       ap: 29
       maxHits: 3
-    - name: "Hammer of Might"
+    - name: "Hammer of Might • Hop"
       picture: Hammer_of_Might
       power: ATK x 320%
       ap: 23
       maxHits: 1      
-    - name: "Palm of Destruction"
+    - name: "Palm of Destruction • Hop"
       picture: Palm_of_Destruction
       power: ATK x 270%
       ap: 20
@@ -4443,6 +4702,84 @@
     power: ATK x 4000%
     maxHits: 1
 
+- name: Pericci (Awakened)
+  cat: jp
+  rating: 4
+  picture: Pericci
+  weapon: knuckle
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 15540
+    atk: 2730
+    int: 1549
+    def: 1930
+    hit: 1155
+    grd: 826
+
+  talents:
+    - name: "Cheerful Behaviors"
+      effects:
+        - desc: ATK +45%, +75% at 100% HP (party)
+        - desc: 80% chance of surviving a lethal attack when HP ≥ 10% (self)
+    - name: "Cat Martial Arts"
+      effects:
+        - desc: Nullifies Charge Assault Crit. penalty (party)
+        - desc: ATK DMG +40% while Pericci uses Charge Assault (party)
+    - name: "Ocarina Player"
+      effects:
+        - desc: Normal attack AP recovery +200% (party)
+        - desc: Movement speed +50% (party)
+        - desc: Gain 3% Rush every 3 seconds while at 100% HP (party)
+    - name: "Lonely Person"
+      effects:
+        - desc: Dodge AP cost -80% (self)
+        - desc: Able to air dodge (self)
+        - desc: AP cost -40% on perfect dodge (party, 10s)
+    - name: "Bunny Tamer"
+      effects:
+        - desc: Recover 100% AP on perfect dodge
+        - desc: Maintain CB after one non-consecutive dodge
+    - name: "Predator Instinct"
+      effects:
+        - desc: Drain 2% of damage dealt by JP Somersault and Infinity Kick when using Charge Assault
+          
+  skills:
+    - name: "JP Somersault • Hop"
+      picture: Sumersault
+      power: ATK x 1130%
+      ap: 29
+      maxHits: 3
+    - name: "Hammer of Might • Hop"
+      picture: Hammer_of_Might
+      power: ATK x 360%
+      ap: 23
+      maxHits: 1      
+    - name: "Palm of Destruction • Hop"
+      picture: Palm_of_Destruction
+      power: ATK x 300%
+      ap: 20
+      maxHits: 1
+    - name: "Heel Stomp"
+      picture: Axe_Kick
+      power: ATK x 330%
+      ap: 21
+      maxHits: 2
+    - name: "Infinity Kick • Hop"
+      picture: Skill_Placeholder
+      power: ATK x 730%
+      ap: 29
+      maxHits: 3
+
+  rush:
+    name: "Dream Hammer"
+    picture: Dream_Combo_Pericci
+    effects:
+      - desc: Critical chance +50% (party, 20s)
+    power: ATK x 4500%
+    maxHits: 1
 
 - name: Fayt Leingod (Awakened)
   cat: jp
@@ -5766,6 +6103,82 @@
     power: ATK x 3500%
     maxHits: 13
 
+- name: Crowe F. Almedio (Awakened)
+  cat: jp
+  rating: 4
+  picture: Crowe
+  weapon: dualswords
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 15750
+    atk: 2730
+    int: 1523
+    def: 1983
+    hit: 1120
+    grd: 833
+
+  talents:
+    - name: "Almighty"
+      effects: 
+        - desc: ATK +35%, +70% at 100% HP (party)
+        - desc: ATK +45%, +80% at 100% HP (Attackers)
+    - name: "SRF Charisma"
+      effects: 
+        - desc: Critical chance +50% when behind target (party)
+    - name: "Fruits of Training"
+      effects: 
+        - desc: Talon Pierce and Tri Zapper DMG +150%/300% at SC ≥ 3/5
+    - name: "Mister Perfect"
+      effects:
+        - desc: AP recovery of normal attacks +200% at 100% HP
+    - name: "A Sword that Opens up the Future"
+      effects:
+        - desc: Drain 15% of damage dealt by normal attacks when behind target (party)
+        - desc: Dodge AP cost -80% (self)
+    - name: "Guided by the Oracle"
+      effects:
+        - desc: AP +40 (stat page)
+        - desc: Maintain CB after one non-consecutive dodge
+
+  skills:
+    - name: "Dextral Edge"
+      picture: Dextral_Edge
+      power: ATK x 160%
+      ap: 14
+      maxHits: 2
+    - name: "Sinistral Edge"
+      picture: Sinistral_Edge
+      power: ATK x 160%
+      ap: 14
+      maxHits: 2
+    - name: "Talon Pierce"
+      picture: Talon_Thrust
+      element: Fire
+      power: ATK x 220%
+      ap: 20
+      maxHits: 2
+    - name: "Tri Zapper"
+      picture: Tri_Zapper
+      power: ATK x 250%
+      ap: 21
+      maxHits: 6
+    - name: "Piercing Swords"
+      picture: Skill_Placeholder
+      element: Ice
+      power: ATK x 170%
+      ap: 15
+      maxHits: 6
+      
+  rush:
+    name: "Flash S Alternative"
+    picture: Flash_S_Alternative_Crowe
+    effects: 
+      - desc: AP cost -80% (5s)
+    power: ATK x 4500%
+    maxHits: 13
 
 - name: Leanne (Bridal) (Awakened)
   cat: jp
@@ -6550,6 +6963,81 @@
     power: ATK x 4000%
     maxHits: 8
 
+- name: Albel Nox (Dark) (Awakened)
+  cat: jp
+  rating: 4
+  picture: Black_Commander_Albel
+  weapon: greatsword
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 2744
+    int: 1496
+    def: 2009
+    hit: 1113
+    grd: 840
+
+  talents:
+    - name: "Faith in Strength"
+      effects:
+        - desc: ATK +45%/55%/75% at HC ≥ 0/50/200 (party)
+    - name: "Armored Knight Captain"
+      effects:
+        - desc: Echo by normal attacks 20% (party)
+        - desc: HC timer +3s (party)
+        - desc: Echo by skills 5% (party)
+    - name: "Traditional Swordplay"
+      effects:
+        - desc: Drain 20% of damage dealt by normal attacks at HC ≥ 50
+    - name: "Calm Strategies"
+      effects:
+        - desc: DMG dealt +110% by Crescent Moon Slash when using Charge Assault
+        - desc: Nullify Charge Assault Crit. penalty
+    - name: "Hidden Diligence"
+      effects:
+        - desc: AP recovery of normal attacks +200% (party)
+        - desc: No flinching and DMG taken -30% when using Charge Assault (self)
+    - name: "Fightning Spirit"
+      effects:
+        - desc: ATK -20% when using Crescent Moon Slash (enemies, 10s)
+        - desc: ATK DMG +20% when using Crescent Moon Slash (self, 10s)
+
+  skills:
+    - name: "Caving Slash"
+      picture: Firestorm_Blade
+      element: Fire
+      power: ATK x 430%
+      ap: 23
+      maxHits: 4
+      highlight: true
+    - name: "Air Slash of Fury"
+      picture: Air_Slash_of_Fury
+      power: ATK x 380%
+      ap: 21
+      maxHits: 2
+    - name: "Void Claw"
+      picture: Void_Claw
+      power: ATK x 210%
+      ap: 17
+      maxHits: 1
+    - name: "Crescent Moon Slash"
+      picture: Crescent_Moon_Slash
+      power: ATK x 800%
+      ap: 39
+      maxHits: 4
+      highlight: true
+
+  rush:
+    name: "Blade of Doom Kaiken"
+    picture: Black_Commander_Albel
+    effects: 
+      - desc: AP cost -50% (self, 20s)
+      - desc: DEF -50% (enemies, 20s)
+    power: ATK x 4500%
+    maxHits: 8
 
 - name: Zephyr
   cat: jp
@@ -7267,7 +7755,7 @@
 
   talents:
     - name: "Genius Blacksmith"
-      effects: 
+      effects:
         - desc: ATK +45%
           all: true
           meta:
@@ -7283,7 +7771,7 @@
             buffValue: 60
     - name: "Explosive"
       shortEffects: DEF -30% when hit by Welch Rock Bomber (Enemies/10s)
-      effects: 
+      effects:
         - desc: DEF -30% when hit by Welch Rock Bomber
           all: Enemies
           duration: 10
@@ -7292,7 +7780,7 @@
             buff: Enemy DEF Reduction
             buffValue: 30
     - name: "Unmatched Daring"
-      effects: 
+      effects:
         - desc: No flinching while attacking
         - desc: Damage taken -40%
           meta:
@@ -7300,7 +7788,7 @@
             buff: Damage Taken Reduction
             buffValue: 40
     - name: "Dextrous Fingers"
-      effects: 
+      effects:
         - desc: ATK/INT/DEF/HIT/GRD +20% when hitcount is >50
           meta:
             priority: 1
@@ -7348,6 +7836,78 @@
           buff: ATK Damage
           buffValue: 20
     power: ATK x 4000%
+    maxHits: 1
+
+- name: Welch Vineyard (Axe) (Awakened)
+  cat: jp
+  rating: 6
+  picture: Axe_Welch
+  weapon: axe
+  ace: true
+  semi: true
+  limited: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 15540
+    atk: 2744
+    int: 1563
+    def: 1916
+    hit: 1141
+    grd: 847
+
+  talents:
+    - name: "Genius Blacksmith"
+      effects:
+        - desc: ATK +45%, +75% at HC ≥ 150 (party)
+        - desc: AP cost -40%/-50% at SC ≥ 4/5 (party)
+    - name: "Explosive"
+      effects:
+        - desc: DEF -40% when hit by Welch Rock Bomber (enemies, 10s)
+    - name: "Unmatched Daring"
+      effects:
+        - desc: No flinching and DMG taken -40% while attacking (self)
+        - desc: HC timer +3s (party)
+    - name: "Dextrous Fingers"
+      effects:
+        - desc: ATK/INT/DEF/HIT/GRD +20% at HC ≥ 50
+    - name: "Looks like someone else?"
+      effects:
+        - desc: Drain 3% of damage dealt by Hurricane and Spinning Chop at SC ≥ 3
+    - name: "Love Left by Parents"
+      effects:
+        - desc: 30% chance to recover 20 AP after using Hurricane or Spinning Chop
+        - desc: Normal attack AP recovery +100%
+
+  skills:
+    - name: "Welch Hurricane"
+      picture: Hurricane
+      power: ATK x 1050%
+      ap: 40
+      maxHits: 10
+    - name: "Welch Cracker"
+      picture: Hammer_Cracker
+      power: ATK x 650%
+      ap: 31
+      maxHits: 6
+    - name: "Welch Rock Bomber"
+      picture: Dragon_Hammer
+      power: ATK x 380%
+      ap: 28
+      maxHits: 10
+    - name: "Welch Spinning Chop"
+      picture: Divine_Ring
+      power: ATK x 1020%
+      ap: 36
+      maxHits: 8
+
+  rush:
+    name: "Gigantic Welch Impact"
+    picture: Gigantic_Welch_Impact_Welch
+    effects: 
+      - desc: ATK DMG +50% (party, 20s)
+    power: ATK x 4500%
     maxHits: 1
 
 - name: Albel Nox (Halloween)
@@ -7588,6 +8148,81 @@
             buff: Elemental Damage
             buffValue: 50
     power: ATK x 5500%
+    maxHits: 11
+
+- name: Arumat Thanatos (Awakened)
+  cat: jp
+  rating: 8
+  picture: Arumat
+  weapon: scythe
+  ace: true
+  awakened: true
+  star: 5
+
+  stats:
+    hp: 15645
+    atk: 3686
+    int: 1537
+    def: 1969
+    hit: 1127
+    grd: 833
+
+  talents:
+    - name: "Eldar's Reaper"
+      effects:
+        - desc: Imbues attacks with fire and wind (self)
+        - desc: ATK DMG +70% at short range (party)
+    - name: "13th Independent Armored Regiment"
+      effects:
+        - desc: Nullify Charge Assault Crit. penalty
+        - desc: Start CB at 200% when using Charge Assault
+    - name: "Soldier's DNA"
+      effects:
+        - desc: AP recovery +150%
+        - desc: Critical chance +20% at SC ≥ 3
+        - desc: Recovers 100% AP on perfect dodge
+    - name: "Permanent Scars"
+      effects:
+        - desc: ATK +35% (stat page)
+    - name: "Lonely Mourning"
+      effects:
+        - desc: Recovers some AP when using Charge Assault from long to short range
+        - desc: Recovers 10% HP when using Charge Assault from short to long range
+    - name: "Endless Condolences"
+      effects:
+         - desc: Maintain CB after 1 non-consecutive dodge
+         - desc: Dodge AP cost -80%
+         - desc: ATK +20% at HC ≥ 200
+
+  skills:
+    - name: "Unholy Maelstorm"
+      picture: Unholy_Maelstrom
+      power: ATK x 460%
+      ap: 25
+      maxHits: 3
+    - name: "Purgatory Palm"
+      picture: Purgatory_Palm
+      element: Fire
+      power: ATK x 200%
+      ap: 16
+      maxHits: 5
+    - name: "Bloodstorm Revolution"
+      picture: Bloodstorm_Revolution
+      power: ATK x 620%
+      ap: 27
+      maxHits: 7
+    - name: "Decapitation"
+      picture: Decapitation
+      power: ATK x 250%
+      ap: 18
+      maxHits: 2
+
+  rush:
+    name: "Aerial Gallows"
+    picture: Aerial_Gallows_Arumat
+    effects: 
+      - desc: AP cost -50%, Elemental damage +50% (20s)
+    power: ATK x 7000%
     maxHits: 11
 
 - name: Reimi Saionji (Idol)
@@ -10688,116 +11323,6 @@
       - desc: AP cost -80% (party/5s)
     power: ATK x 6500%
     maxHits: 11
-
-- name: Pericci (Awakened)
-  cat: jp
-  rating: 4
-  picture: Pericci
-  weapon: knuckle
-  ace: true
-  limited: false
-  star: 5
-
-  stats:
-    hp: 15540
-    atk: 2730
-    int: 1549
-    def: 1930
-    hit: 1155
-    grd: 826
-
-  talents:
-    - name: "Cheerful Behaviors"
-      effects: 
-        - desc: ATK +45%, +75% at 100% HP
-          all: true
-          meta:
-            priority: 1
-            buff: ATK
-            buffValue: 45
-        - desc: Guts 80/10
-    - name: "Cat Martial Arts"
-      effects: 
-        - desc: Nullifies charge assault critical damage penalty
-          all: true
-        - desc: ATK damage dealt +40% when using charge assault
-          all: true
-          meta:
-            priority: 1
-            buff: ATK Damage
-            buffCondition: when using charge assault
-            buffValue: 40      
-        - desc: Gain 3% Rush Gauge every 3s at HP 100% (party)  
-    - name: "Ocarina Player"
-      effects: 
-        - desc: Normal attack AP recovery +100%
-          all: true
-          meta:
-            priority: 1
-            buff: AP Recovery From Normal Attacks
-            buffValue: 100
-        - desc: Movement speed +30%
-          all: true
-        - desc: AP recovery 200% on normal attacks (party)
-    - name: "Lonely Person"
-      effects: 
-        - desc: Evasion AP cost -80
-          all: false
-        - desc: Evasion possible during air attacks
-          all: false
-        - desc: AP cost -40% on perfect dodge (10s)
-          all: true
-    - name: "Bunnyan Sympathizer"
-      effects: 
-        - desc: Ap recover 100% on perfect dodge
-          all: false
-        - desc: Skills maintain CB after dodge (once/ rotation)
-          all: false
-    - name: "Instinctive Predator"
-      effects: 
-        - desc: HP recovery @% of DMG Dealt by JP Somersault | Invinity Arts
-          all: false
-          
-  skills:
-    - name: "JP Somersault"
-      picture: Sumersault
-      power: ATK x 1130%
-      ap: 29
-      maxHits: 3
-    - name: "Hammer of Might"
-      picture: Hammer_of_Might
-      power: ATK x 360%
-      ap: 23
-      maxHits: 1      
-    - name: "Palm of Destruction"
-      picture: Palm_of_Destruction
-      power: ATK x 300%
-      ap: 20
-      maxHits: 1
-    - name: "Heel Stomp"
-      picture: Axe_Kick
-      power: ATK x 350%
-      ap: 21
-      maxHits: 2   
-    - name: "Invinity Arts Hop"
-      picture: Skill_Placeholder
-      power: ATK x 730%
-      ap: 29
-      maxHits: 3 
-
-  rush:
-    name: "Dream Hammer"
-    picture: Dream_Combo_Pericci
-    effects:
-      - desc: Critical hit chance +50%
-        duration: 20
-        all: true
-        meta:
-          priority: 1
-          buff: Crit Rate
-          buffValue: 50
-    power: ATK x 4500%
-    maxHits: 1
 
 - name: Caleen Keemosn (Fox General)
   cat: jp
